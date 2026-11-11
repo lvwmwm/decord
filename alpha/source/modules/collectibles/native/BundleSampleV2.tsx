@@ -1,23 +1,23 @@
-// Module ID: 9583
-// Function ID: 9584
+// Module ID: 9421
+// Function ID: 9422
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 9584, 21, 5844, 5142, 575, 38, 2111, 2108, 9585, 9596, 9603, 1187, 2]
+// Dependencies: [19, 17, 9422, 21, 5957, 5243, 575, 38, 2111, 2108, 9423, 9434, 9441, 1187, 2]
 // Exports: default
 
-// Module 9583 (BundleSampleV2)
+// Module 9421 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import utils from "utils" /* 2108 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9584 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9585 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9596 */;
-import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9603 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9422 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9423 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9434 */;
+import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9441 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;

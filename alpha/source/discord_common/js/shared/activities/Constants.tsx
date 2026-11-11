@@ -1,9 +1,9 @@
-// Module ID: 11864
-// Function ID: 11865
+// Module ID: 12616
+// Function ID: 12617
 // Name: Constants
 // Dependencies: [2]
 
-// Module 11864 (Constants)
+// Module 12616 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/activities/Constants.tsx");

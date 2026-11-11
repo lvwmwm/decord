@@ -1,11 +1,11 @@
-// Module ID: 17067
-// Function ID: 17068
+// Module ID: 17230
+// Function ID: 17231
 // Name: ParentalControlledUserSettingsDefinitions
-// Dependencies: [7797, 7796, 504, 2]
+// Dependencies: [8676, 8675, 504, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 17067 (ParentalControlledUserSettingsDefinitions)
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7797 */;
+// Module 17230 (ParentalControlledUserSettingsDefinitions)
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8676 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/family_center/ParentalControlledUserSettingsDefinitions.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 8102
-// Function ID: 8103
+// Module ID: 7922
+// Function ID: 7923
 // Name: IconButton
-// Dependencies: [19, 21, 5142, 575, 5769, 8103, 5753, 2]
+// Dependencies: [19, 21, 5243, 575, 5882, 7923, 5866, 2]
 // Exports: IconButton
 
-// Module 8102 (IconButton)
+// Module 7922 (IconButton)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import Button_BaseButton from "Button/BaseButton" /* 5769 */;
-import BaseIconButton3 from "BaseIconButton" /* 8103 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import Button_BaseButton from "Button/BaseButton" /* 5882 */;
+import BaseIconButton3 from "BaseIconButton" /* 7923 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c3;

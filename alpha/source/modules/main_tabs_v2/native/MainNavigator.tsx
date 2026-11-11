@@ -1,30 +1,30 @@
-// Module ID: 18346
-// Function ID: 18347
+// Module ID: 18518
+// Function ID: 18519
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 18347, 1072, 21, 5142, 1377, 5099, 16210, 18348, 18349, 18416, 19209, 19216, 19249, 19285, 9981, 19351, 19352, 19355, 19359, 19361, 19390, 19396, 19397, 5325, 1497, 1625, 19398, 5891, 9908, 19402, 19461, 563, 11875, 5319, 7234, 11730, 19262, 19464, 19495, 12033, 19497, 10271, 2]
+// Dependencies: [32, 19, 17, 502, 18519, 1072, 21, 5243, 1377, 5200, 16374, 18520, 18521, 18588, 19396, 19403, 19436, 19472, 9061, 19542, 19543, 19546, 19550, 19552, 19581, 19587, 19588, 5438, 1497, 1625, 19589, 6004, 8985, 19593, 19650, 563, 12627, 5432, 7424, 12358, 19449, 19653, 19684, 12827, 19686, 10845, 2]
 // Exports: getChannelScreen
 
-// Module 18346 (MainNavigator)
+// Module 18518 (MainNavigator)
 import react_native from "react-native" /* 17 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1497 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
-import DeviceUtils from "DeviceUtils" /* 5099 */;
-import ChatInputUtils from "ChatInputUtils" /* 5325 */;
-import StartupProfiler from "StartupProfiler" /* 11730 */;
-import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 12033 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 16210 */;
-import NavigationConstants from "NavigationConstants" /* 18347 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 18348 */;
-import AutoAnalytics from "AutoAnalytics" /* 19209 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 19262 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 19464 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19495 */;
+import DeviceUtils from "DeviceUtils" /* 5200 */;
+import ChatInputUtils from "ChatInputUtils" /* 5438 */;
+import StartupProfiler from "StartupProfiler" /* 12358 */;
+import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 12827 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 16374 */;
+import NavigationConstants from "NavigationConstants" /* 18519 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 18520 */;
+import AutoAnalytics from "AutoAnalytics" /* 19396 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 19449 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 19653 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19684 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let closure_12;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const getNavigationModalPresentationDefault = tmp2(10271);
+const getNavigationModalPresentationDefault = tmp2(10845);
 function getId(params) {
   return params.params.screenKey;
 }
@@ -224,7 +224,7 @@ const memoResult = react.memo(function StackNavigator() {
       tmpResult = tmp(WrappedAutoAnalytics, {});
     }
     let items = [tmpResult, ];
-    let obj3 = { profile: tmp5(11730).Profiles.StackNavigator, children: tmp6(Navigator, obj4) };
+    let obj3 = { profile: tmp5(12358).Profiles.StackNavigator, children: tmp6(Navigator, obj4) };
     obj4 = {
       id: "root",
       screenOptions() {
@@ -471,7 +471,7 @@ const memoResult = react.memo(function StackNavigator() {
     };
     items1[14] = tmp(closure_16.Screen, obj25);
     items[1] = tmp(tmp2Result, obj3);
-    items2 = [tmp(tmp8, obj16), tmp5(19497).APP_EXTRA_COMPONENTS, tmp5(19497).APP_EXTRA_COMPONENTS_NEVER_FREEZE, tmp5(19497).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
+    items2 = [tmp(tmp8, obj16), tmp5(19686).APP_EXTRA_COMPONENTS, tmp5(19686).APP_EXTRA_COMPONENTS_NEVER_FREEZE, tmp5(19686).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
     return tmp(tmp4, obj);
   }, items1);
 });

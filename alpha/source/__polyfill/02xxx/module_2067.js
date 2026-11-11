@@ -95,7 +95,7 @@ let fn = function t() {
       const _String = String;
       obj = { class: text };
       const str2 = String(tmp3);
-      return htmlTag("pre", htmlTag("code", str2.replace(re15, f123929), obj));
+      return htmlTag("pre", htmlTag("code", str2.replace(re15, f125176), obj));
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -373,7 +373,7 @@ let fn = function t() {
     if (typeof sanitizeText === "function") {
       const _String = String;
       const str = String(tmp2);
-      return tmp("code", str.replace(re15, f123929));
+      return tmp("code", str.replace(re15, f125176));
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -404,12 +404,12 @@ let fn = function t() {
     if (typeof sanitizeText === "function") {
       const _String = String;
       const str = String(tmp);
-      return str.replace(re15, f123929);
+      return str.replace(re15, f125176);
     } else {
       throw new TypeError("Trying to call a non-function");
     }
   };
-  const f123929 = (arg0) => closure_1_16[arg0];
+  const f125176 = (arg0) => closure_1_16[arg0];
   const re7 = /\r\n?/g;
   const re8 = /\t/g;
   const re9 = /\f/g;
@@ -456,10 +456,10 @@ let fn = function t() {
           let tmp9 = re15;
           if (typeof tmp8 === "function") {
             let _String2 = String;
-            let text = `${" " + str3.replace(re15, f123929)}="`;
+            let text = `${" " + str3.replace(re15, f125176)}="`;
             let str4 = String(tmp15);
             let _HermesInternal = HermesInternal;
-            str = tmp5 + `${" " + str3.replace(re15, f123929)}="` + str4.replace(tmp9, f123929) + "\"";
+            str = tmp5 + `${" " + str3.replace(re15, f125176)}="` + str4.replace(tmp9, f125176) + "\"";
             continue;
           } else {
             let str7 = "Trying to call a non-function";
@@ -507,17 +507,17 @@ let fn = function t() {
   let closure_16 = { "<": "&lt;", ">": "&gt;", "&": "&amp;", "\"": "&quot;", "'": "&#x27;", "/": "&#x2F;", "`": "&#96;" };
   function sanitizeText(arg0) {
     const str = String(arg0);
-    return str.replace(re15, f123929);
+    return str.replace(re15, f125176);
   }
   const re18 = /\\([^0-9A-Za-z\s])/g;
   function unescapeUrl(match) {
     return match.replace(re18, "$1");
   }
-  function parseInline(fn, formatted, inline) {
+  function parseInline(fn, arg1, inline) {
     const tmp = inline.inline || false;
     inline.inline = true;
     inline.inline = tmp;
-    return fn(formatted, inline);
+    return fn(arg1, inline);
   }
   let regExp = new RegExp("^( *)((?:[*+-]|\\d+\\.)) +");
   const regExp1 = new RegExp("( *)((?:[*+-]|\\d+\\.)) +[^\\n]*(?:\\n(?!\\1(?:[*+-]|\\d+\\.) )[^\\n]*)*(\n|$)", "gm");
@@ -1692,13 +1692,13 @@ let fn = function t() {
       let closure_0 = arg0;
       function nestedOutput(arr, arg1) {
         let joined;
-        const f137319 = (arr) => {
+        const f138654 = (arr) => {
           let joined;
           if (!obj) {
             obj = {};
           }
           if (Array.isArray(arr)) {
-            const mapped = arr.map(f137319);
+            const mapped = arr.map(f138654);
             joined = mapped.join("");
           } else {
             joined = closure_0(arr, nestedOutput, obj);
@@ -1707,7 +1707,7 @@ let fn = function t() {
         };
         obj = arg1 || {};
         if (Array.isArray(arr)) {
-          let mapped = arr.map(f137319);
+          let mapped = arr.map(f138654);
           joined = mapped.join("");
         } else {
           joined = obj(arr, nestedOutput, obj);

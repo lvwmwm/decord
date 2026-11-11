@@ -1,12 +1,12 @@
-// Module ID: 17678
-// Function ID: 17679
+// Module ID: 17843
+// Function ID: 17844
 // Name: useDisplayNameStylesNewItems
-// Dependencies: [19, 16815, 1394, 504, 16816, 2]
+// Dependencies: [19, 16976, 1394, 504, 16977, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 17678 (useDisplayNameStylesNewItems)
+// Module 17843 (useDisplayNameStylesNewItems)
 import react from "react" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 16815 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 16976 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
 import size from "module_2" /* 2 */;
 

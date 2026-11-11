@@ -1,19 +1,19 @@
-// Module ID: 19554
-// Function ID: 19555
+// Module ID: 19743
+// Function ID: 19744
 // Name: FramePanelController
-// Dependencies: [19, 2162, 6904, 6905, 5783, 21, 504, 16709, 11070, 19527, 19555, 2]
+// Dependencies: [19, 2162, 6956, 6957, 5896, 21, 504, 16870, 12653, 19716, 19744, 2]
 // Exports: default
 
-// Module 19554 (FramePanelController)
+// Module 19743 (FramePanelController)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5783 */;
-import FramesConstants from "FramesConstants" /* 6905 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11070 */;
-import conjureBackgroundFrames from "conjureBackgroundFrames" /* 16709 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19555 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5896 */;
+import FramesConstants from "FramesConstants" /* 6957 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 12653 */;
+import conjureBackgroundFrames from "conjureBackgroundFrames" /* 16870 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19744 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import FramesStore from "FramesStore" /* 6904 */;
+import FramesStore from "FramesStore" /* 6956 */;
 import size from "module_2" /* 2 */;
 
 const asLaunched = FramesConstants.asLaunched;
@@ -76,6 +76,6 @@ export default function FramePanelController(children) {
       }
     }
   }, items1);
-  const BaseActivityPanelController = mainFrameId(19527).BaseActivityPanelController;
+  const BaseActivityPanelController = mainFrameId(19716).BaseActivityPanelController;
   return <BaseActivityPanelController context={FramePanelStateContextDefault} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={null != mainFrameId} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={callback}>{children}</BaseActivityPanelController>;
 };

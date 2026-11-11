@@ -1,8 +1,8 @@
-// Module ID: 6437
-// Function ID: 6438
+// Module ID: 6550
+// Function ID: 6551
 // Dependencies: [2]
 
-// Module 6437
+// Module 6550
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/knight_petal.png.js");

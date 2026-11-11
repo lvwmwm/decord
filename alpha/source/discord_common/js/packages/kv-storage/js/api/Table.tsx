@@ -1,11 +1,11 @@
-// Module ID: 5025
-// Function ID: 5026
+// Module ID: 5126
+// Function ID: 5127
 // Name: Table
-// Dependencies: [5, 5026, 5027, 2]
+// Dependencies: [5, 5127, 5128, 2]
 
-// Module 5025 (Table)
-import Key from "Key" /* 5026 */;
-import TableId from "TableId" /* 5027 */;
+// Module 5126 (Table)
+import Key from "Key" /* 5127 */;
+import TableId from "TableId" /* 5128 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -138,10 +138,10 @@ class TableTransaction {
     let prefix;
     let Replace = arg1;
     if (arg1 === undefined) {
-      Replace = prefix(5027).ConflictOptions.Replace;
+      Replace = prefix(5128).ConflictOptions.Replace;
     }
     const transaction = this.transaction;
-    const obj = { type: "kv.put_many", table: this.tableId, cells: mapped, overwrite: Replace === prefix(5027).ConflictOptions.Replace };
+    const obj = { type: "kv.put_many", table: this.tableId, cells: mapped, overwrite: Replace === prefix(5128).ConflictOptions.Replace };
     prefix = this.prefix;
     mapped = arr;
     const add = transaction.add;
@@ -355,10 +355,10 @@ class Table {
     if (arg1 === undefined) {
       const tmp = prefix;
       let tmp2 = dependencyMap;
-      Replace = prefix(5027).ConflictOptions.Replace;
+      Replace = prefix(5128).ConflictOptions.Replace;
     }
     const database = this.database;
-    let obj = { type: "kv.put_many", table: this.tableId, cells: mapped, overwrite: Replace === prefix(5027).ConflictOptions.Replace };
+    let obj = { type: "kv.put_many", table: this.tableId, cells: mapped, overwrite: Replace === prefix(5128).ConflictOptions.Replace };
     prefix = this.prefix;
     mapped = arr;
     const execute = database.execute;

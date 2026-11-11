@@ -1,23 +1,23 @@
-// Module ID: 14540
-// Function ID: 14541
+// Module ID: 14914
+// Function ID: 14915
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 5177, 1072, 14541, 7214, 21, 6960, 14312, 11658, 14542, 14620, 1252, 1260, 7067, 14516, 1099, 14544, 14573, 14141, 1113, 14587, 14588, 14621, 14599, 7234, 2]
+// Dependencies: [5, 19, 17, 5290, 1072, 14915, 7731, 21, 6854, 14795, 12491, 14916, 14999, 1252, 1260, 7427, 14890, 1099, 14918, 14947, 14621, 1113, 14964, 14965, 15000, 14978, 7424, 2]
 // Exports: default
 
-// Module 14540 (NUFGuildTemplates)
+// Module 14914 (NUFGuildTemplates)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
-import NavigatorHeader from "NavigatorHeader" /* 7067 */;
-import Navigator2 from "Navigator" /* 7234 */;
-import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14541 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
+import Navigator2 from "Navigator" /* 7424 */;
+import NavigatorHeader from "NavigatorHeader" /* 7427 */;
+import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14915 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5177 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5290 */;
 import Constants from "Constants" /* 1072 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7214 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7731 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -144,9 +144,9 @@ obj = function _onCreateServer() {
           }
           c3 = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp7) {
+        } catch (tmp10) {
           c3 = 3;
-          throw tmp7;
+          throw tmp10;
         }
       }
     })();

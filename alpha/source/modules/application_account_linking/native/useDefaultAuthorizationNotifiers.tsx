@@ -1,14 +1,14 @@
-// Module ID: 18689
-// Function ID: 18690
+// Module ID: 18861
+// Function ID: 18862
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 2117, 1072, 504, 5868, 6789, 5839, 1113, 3478, 2]
+// Dependencies: [19, 2117, 1072, 504, 5981, 6773, 5952, 1113, 3499, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 18689 (useDefaultAuthorizationNotifiers)
+// Module 18861 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3478 from "module_3478" /* 3478 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
+import _modDef3499 from "module_3499" /* 3499 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
 import react_mod from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ export function useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyL
           if (tmp3) {
             tmp.current = false;
             if (false) {
-              const obj = { text: intl.string(_modDef3478.uG6teD) };
+              const obj = { text: intl.string(_modDef3499.uG6teD) };
               const open = ToastActionCreatorsDefault.open;
               ToastActionCreatorsDefault;
               intl = intl2.intl;

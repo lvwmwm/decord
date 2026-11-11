@@ -1,18 +1,18 @@
-// Module ID: 18911
-// Function ID: 18912
+// Module ID: 19101
+// Function ID: 19102
 // Name: ICYMICustomScoresOverviewScreen
-// Dependencies: [19, 17, 5013, 6830, 8986, 21, 5142, 575, 504, 1627, 7129, 7041, 7023, 9003, 1113, 2]
+// Dependencies: [19, 17, 5114, 6893, 10137, 21, 5243, 575, 504, 1627, 7680, 7379, 7654, 10149, 1113, 2]
 // Exports: default
 
-// Module 18911 (ICYMICustomScoresOverviewScreen)
+// Module 19101 (ICYMICustomScoresOverviewScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import SortedGuildStore from "SortedGuildStore" /* 6830 */;
-import ICYMIStore from "ICYMIStore" /* 8986 */;
-import createStyles from "createStyles" /* 5142 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import SortedGuildStore from "SortedGuildStore" /* 6893 */;
+import ICYMIStore from "ICYMIStore" /* 10137 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -26,7 +26,6 @@ const result = size.fileFinishedImporting("modules/icymi/native/custom_scores/IC
 
 export default function ICYMICustomScoresOverviewScreen(navigation) {
   let closure_3;
-  let customGuildScores;
   let flattenedGuildIds;
   let guilds;
   navigation = navigation.navigation;

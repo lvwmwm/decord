@@ -1,26 +1,26 @@
-// Module ID: 17163
-// Function ID: 17164
+// Module ID: 17327
+// Function ID: 17328
 // Name: WizardHatAndBookSpotIllustration
-// Dependencies: [19, 21, 17164, 17165, 17166, 7138, 5844, 2]
+// Dependencies: [19, 21, 17328, 17329, 17330, 7689, 5957, 2]
 // Exports: WizardHatAndBookSpotIllustration
 
-// Module 17163 (WizardHatAndBookSpotIllustration)
+// Module 17327 (WizardHatAndBookSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7138 */;
-import _modDef17164 from "module_17164" /* 17164 */;
-import _modDef17165 from "module_17165" /* 17165 */;
-import _modDef17166 from "module_17166" /* 17166 */;
+import react_native from "react-native" /* 7689 */;
+import _modDef17328 from "module_17328" /* 17328 */;
+import _modDef17329 from "module_17329" /* 17329 */;
+import _modDef17330 from "module_17330" /* 17330 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef17164 };
+let obj2 = { uri: _modDef17328 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef17165 };
+let obj3 = { uri: _modDef17329 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef17166 };
-({ uri: _modDef17166 });
+obj[3] = { uri: _modDef17330 };
+({ uri: _modDef17330 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/WizardHatAndBookSpotIllustration.native.tsx");
 

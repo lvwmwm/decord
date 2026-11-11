@@ -1,37 +1,48 @@
-// Module ID: 10751
-// Function ID: 10752
+// Module ID: 11623
+// Function ID: 11624
 // Name: MarketingComponentHooks
-// Dependencies: [5143, 5371, 504, 5164, 2]
-// Exports: useThemeAndReducedMotionAwareAssetUrl
+// Dependencies: [5244, 5484, 504, 5265, 2]
+// Exports: getThemeAndReducedMotionAwareAssetUrl, useThemeAndReducedMotionAwareAssetUrl
 
-// Module 10751 (MarketingComponentHooks)
+// Module 11623 (MarketingComponentHooks)
 import get_initialized from "get initialized" /* 504 */;
-import useThemeDefault from "useTheme" /* 5371 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import themes from "themes" /* 5265 */;
+import useThemeDefault from "useTheme" /* 5484 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import size from "module_2" /* 2 */;
 
-let tmp3;
-const themes = tmp3(5164);
 const result = size.fileFinishedImporting("modules/premium/promotions/MarketingComponentHooks.tsx");
 
 export function useThemeAndReducedMotionAwareAssetUrl(asset, arg1) {
   let useReducedMotion;
   const items = [AccessibilityStore];
-  const tmp2 = useThemeDefault();
+  const tmp = useThemeDefault();
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj2 = themes;
   let tmp5 = null;
+  const isThemeDarkResult = obj2.isThemeDark(tmp) || true === arg1;
   if (null != asset) {
-    const tmp3Result = themes;
-    if (!tmp3Result.isThemeDark(tmp2)) {
-      let tmp7;
-      const tmp6 = arg1;
-      if (!tmp6) {
-        tmp7 = stateFromStores ? asset.lightStaticUrl : asset.lightUrl;
-      }
-      tmp5 = tmp7;
+    let tmp6;
+    if (isThemeDarkResult) {
+      tmp6 = stateFromStores ? asset.darkStaticUrl : asset.darkUrl;
+    } else {
+      tmp6 = stateFromStores ? asset.lightStaticUrl : asset.lightUrl;
     }
-    tmp7 = stateFromStores ? asset.darkStaticUrl : asset.darkUrl;
+    tmp5 = tmp6;
   }
   return tmp5;
+}
+export function getThemeAndReducedMotionAwareAssetUrl(darkStaticUrl, arg1, arg2) {
+  let tmp = null;
+  if (null != darkStaticUrl) {
+    let tmp4;
+    if (arg1) {
+      tmp4 = arg2 ? darkStaticUrl.darkStaticUrl : darkStaticUrl.darkUrl;
+    } else {
+      tmp4 = arg2 ? darkStaticUrl.lightStaticUrl : darkStaticUrl.lightUrl;
+    }
+    tmp = tmp4;
+  }
+  return tmp;
 }

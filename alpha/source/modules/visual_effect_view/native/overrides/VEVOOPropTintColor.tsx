@@ -1,20 +1,20 @@
-// Module ID: 18343
-// Function ID: 18344
+// Module ID: 18515
+// Function ID: 18516
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5731, 21, 5142, 575, 18340, 5139, 8250, 7433, 18342, 16792, 1090, 2]
+// Dependencies: [32, 19, 17, 5844, 21, 5243, 575, 18512, 5240, 8041, 7889, 18514, 16953, 1090, 2]
 
-// Module 18343 (VEVOOPropTintColor)
+// Module 18515 (VEVOOPropTintColor)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import ColorUtils from "ColorUtils" /* 5139 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16792 */;
-import VEVOO from "VEVOO" /* 18340 */;
+import ColorUtils from "ColorUtils" /* 5240 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16953 */;
+import VEVOO from "VEVOO" /* 18512 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5731 */;
+import VEVOOStore from "VEVOOStore" /* 5844 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -97,7 +97,7 @@ const memoResult = react.memo(function VEVOOPropTintColor() {
     style: visualEffectViewOverrideSharedStyles.zeroPaddingVertical,
     labelStyle: visualEffectViewOverrideSharedStyles.zeroHeight,
     leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle,
-    leading: closure_8(tmp2(7433).FormSwitch, obj4),
+    leading: closure_8(tmp2(7889).FormSwitch, obj4),
     subLabel: tmp14(tmp15, obj8),
     disabled: !tmp7,
     onPress() {
@@ -114,7 +114,7 @@ const memoResult = react.memo(function VEVOOPropTintColor() {
       tmp(obj);
     }
   };
-  const FormRow = tmp2(8250).FormRow;
+  const FormRow = tmp2(8041).FormRow;
   obj4 = {
     value: tmp7,
     onValueChange(arg0) {
@@ -129,11 +129,11 @@ const memoResult = react.memo(function VEVOOPropTintColor() {
   const obj5 = { style: visualEffectViewOverrideSharedStyles.zeroPadding, label: "Blur Tint", trailing: closure_8(closure_5, obj6) };
   obj6 = { style: items };
   items = [tmp.tintColor, { backgroundColor }];
-  const FormRow2 = tmp2(8250).FormRow;
+  const FormRow2 = tmp2(8041).FormRow;
   const items1 = [closure_8(FormRow2, obj5), ];
-  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(18342), obj9) };
+  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(18514), obj9) };
   str2 = undefined;
-  const FormRow3 = tmp2(8250).FormRow;
+  const FormRow3 = tmp2(8041).FormRow;
   tmp14 = closure_10;
   tmp15 = closure_9;
   if (first1 != null) {

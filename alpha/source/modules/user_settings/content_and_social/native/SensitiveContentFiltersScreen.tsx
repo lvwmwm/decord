@@ -1,16 +1,16 @@
-// Module ID: 17060
-// Function ID: 17061
+// Module ID: 17223
+// Function ID: 17224
 // Name: SensitiveContentFiltersScreen
-// Dependencies: [19, 8507, 21, 1113, 17061, 11694, 16932, 2]
+// Dependencies: [19, 9136, 21, 1113, 17224, 12317, 17095, 2]
 // Exports: default
 
-// Module 17060 (SensitiveContentFiltersScreen)
+// Module 17223 (SensitiveContentFiltersScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8507 */;
-import SettingBuilders from "SettingBuilders" /* 11694 */;
-import SettingLayoutDefault from "SettingLayout" /* 16932 */;
-import SettingsScreenNotices from "SettingsScreenNotices" /* 17061 */;
+import SettingsConstants from "SettingsConstants" /* 9136 */;
+import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingLayoutDefault from "SettingLayout" /* 17095 */;
+import SettingsScreenNotices from "SettingsScreenNotices" /* 17224 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

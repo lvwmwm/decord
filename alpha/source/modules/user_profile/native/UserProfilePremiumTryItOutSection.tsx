@@ -1,21 +1,21 @@
-// Module ID: 16858
-// Function ID: 16859
+// Module ID: 17021
+// Function ID: 17022
 // Name: UserProfilePremiumTryItOutSection
-// Dependencies: [19, 17, 21, 5142, 575, 7390, 16859, 10033, 10034, 16881, 1113, 8744, 16882, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 7852, 17022, 9513, 10891, 17044, 1113, 8027, 17045, 2]
 // Exports: default
 
-// Module 16858 (UserProfilePremiumTryItOutSection)
+// Module 17021 (UserProfilePremiumTryItOutSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7390 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10033 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10034 */;
-import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 16859 */;
-import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 16881 */;
-import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 16882 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
+import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 17022 */;
+import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 17044 */;
+import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 17045 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -69,7 +69,7 @@ export default function UserProfilePremiumTryItOutSection(arg0) {
   items1[0] = closure_5(View, obj3);
   const obj4 = { style: tmp.lockCircle, children: closure_5(LockIcon, obj5) };
   obj5 = { size: "xs", color: nativeDefault.colors.ICON_MUTED, style: tmp.lockIcon };
-  LockIcon = analyticsLocations(8744).LockIcon;
+  LockIcon = analyticsLocations(8027).LockIcon;
   items1[1] = closure_5(View, obj4);
   items2 = [closure_6(View, obj2), closure_5(UserProfileTryItOutFieldsDefault, { currentUser, mode: "entrypoint" })];
   return closure_6(tmp4, obj);

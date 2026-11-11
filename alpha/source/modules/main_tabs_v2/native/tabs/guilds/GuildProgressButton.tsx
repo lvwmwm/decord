@@ -1,16 +1,16 @@
-// Module ID: 18618
-// Function ID: 18619
+// Module ID: 18790
+// Function ID: 18791
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 12739, 575, 5885, 14312, 14315, 8252, 18619, 1113, 14434, 2]
+// Dependencies: [19, 21, 13426, 575, 5998, 14795, 14798, 8043, 18791, 1113, 14806, 2]
 // Exports: default, getScaledGuildProgressButtonHeight
 
-// Module 18618 (GuildProgressButton)
+// Module 18790 (GuildProgressButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5885 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12739 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 14312 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14315 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5998 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13426 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 14795 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14798 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export default function GuildProgressButton(guild) {
   let percentComplete;
   let subtitle;
   guild = guild.guild;
-  let obj = guild(14312);
+  let obj = guild(14795);
   const guildProgressStep = obj.useGuildProgressStep(guild);
   const completed = guildProgressStep.completed;
   const items = [completed, guild.id];
@@ -43,9 +43,9 @@ export default function GuildProgressButton(guild) {
     const obj2 = GuildProgressUtils;
     obj2.openActionSheet(guild);
   }, items1);
-  const RowButton = guild(8252).RowButton;
-  ({ source: completed(18619) });
-  const Icon = guild(8252).RowButton.Icon;
+  const RowButton = guild(8043).RowButton;
+  ({ source: completed(18791) });
+  const Icon = guild(8043).RowButton.Icon;
   const intl = guild(1113).intl;
   return <RowButton icon={null} label={intl.string(guild(1113).t.o3HK3d)} subLabel={subtitle} onPress={callback} trailing={null} />;
 };

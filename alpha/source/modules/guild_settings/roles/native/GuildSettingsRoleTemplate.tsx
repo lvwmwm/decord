@@ -1,28 +1,28 @@
-// Module ID: 20214
-// Function ID: 20215
+// Module ID: 20409
+// Function ID: 20410
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 5143, 5013, 20210, 1072, 21, 5142, 575, 7186, 1493, 5392, 1652, 1252, 5891, 8932, 7046, 5753, 10757, 1187, 11759, 5760, 1113, 2]
+// Dependencies: [32, 19, 17, 5244, 5114, 20405, 1072, 21, 5243, 575, 7705, 1493, 5505, 1652, 1252, 6004, 12917, 7364, 5866, 11629, 1187, 12392, 5873, 1113, 2]
 // Exports: default
 
-// Module 20214 (GuildSettingsRoleTemplate)
+// Module 20409 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5392 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5891 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11759 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5505 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7705 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12392 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20210 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20405 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let title;
@@ -42,8 +42,8 @@ let tmp11;
 let tmp2;
 let unpackModuleId;
 const _mod1652 = tmp11(1652);
-const _modDef8932 = tmp2(8932);
-const PaginationDefault = tmp2(10757);
+const PaginationDefault = tmp2(11629);
+const _modDef12917 = tmp2(12917);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, Dimensions, ScrollView: metroRequire } = react_native);
 ({ PermissionTemplateTypes: c9, PermissionTemplates: c10, DEFAULT_TEMPLATE_TYPE: unpackModuleId } = GuildSettingsRoleConstants);
@@ -172,7 +172,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   const values = Object.values(closure_10);
   let obj3 = { ref, style: tmp.container, children: items5 };
   let obj4 = { style: tmp.sliderContainer, children: items4 };
-  let obj5 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8932, obj6) };
+  let obj5 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef12917, obj6) };
   obj6 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   items4 = [closure_14(ref1, obj5), ];
   let obj7 = {
@@ -262,7 +262,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
           items = [gesture(Icon, obj2), ];
           const obj3 = { style: closure_3.templateContentText, variant: "body-sm/medium", children };
           items[1] = gesture(Text_Text.Text, obj3);
-          return clientStatuses(hasOwnProperty, obj, "" + item.key + "_content_" + index);
+          return closure_15(hasOwnProperty, obj, "" + item.key + "_content_" + index);
         })
       };
       contentsResult = item.contents();

@@ -1,13 +1,13 @@
-// Module ID: 13214
-// Function ID: 13215
+// Module ID: 10455
+// Function ID: 10456
 // Name: useConjureHomeOwnProjects
-// Dependencies: [10979, 6902, 504, 13215, 10980, 12819, 2]
+// Dependencies: [7257, 6954, 504, 10456, 7258, 10457, 2]
 // Exports: default, useConjureProjectsByActivity
 
-// Module 13214 (useConjureHomeOwnProjects)
-import conjureHomeProjectOrder from "conjureHomeProjectOrder" /* 13215 */;
-import ConjureChatStore from "ConjureChatStore" /* 10979 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
+// Module 10455 (useConjureHomeOwnProjects)
+import conjureHomeProjectOrder from "conjureHomeProjectOrder" /* 10456 */;
+import ConjureChatStore from "ConjureChatStore" /* 7257 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,14 +17,14 @@ const result = size.fileFinishedImporting("modules/conjure/home/useConjureHomeOw
 
 export default function useConjureHomeOwnProjects() {
   let ownedProjects;
-  const f105250 = () => ownedProjects.getOwnedProjects();
-  let obj = f105250(504);
+  const f99385 = () => ownedProjects.getOwnedProjects();
+  let obj = f99385(504);
   const items = [ConjureProjectStore, ConjureChatStore];
   return obj.useStateFromStoresArray(items, () => {
     let messages;
     let tmp = conjureHomeProjectOrder;
     const sortConjureProjectsByActivity = tmp.sortConjureProjectsByActivity;
-    const arr = f105250();
+    const arr = f99385();
     return sortConjureProjectsByActivity(arr.map((id) => {
       let conjureTurnStartedAtResult;
       let obj2;
@@ -54,7 +54,7 @@ export function useConjureProjectsByActivity(getListedConjureProjects, items) {
     let messages;
     let tmp = conjureHomeProjectOrder;
     const sortConjureProjectsByActivity = tmp.sortConjureProjectsByActivity;
-    const arr = f105250();
+    const arr = f99385();
     return sortConjureProjectsByActivity(arr.map((id) => {
       let conjureTurnStartedAtResult;
       let obj2;

@@ -1,16 +1,16 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 10377
+// Function ID: 10378
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 5142, 575, 1652, 5372, 2]
+// Dependencies: [19, 21, 5243, 575, 1652, 5485, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 9658 (CollectiblesShopPricePlaceholder)
+// Module 10377 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
+import timing_timing from "timing/timing" /* 5485 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
@@ -19,7 +19,7 @@ let set;
 let obj2;
 const jsx = Fragment.jsx;
 let obj = { skeletonContainer: obj2 };
-obj2 = { height: 16, flex: 1, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+obj2 = { height: 16, flex: 1, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_5 = createStyles.createStyles(obj);
 let closure_6 = { code: "(function CollectiblesShopPricePlaceholderTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
 let result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopPricePlaceholder.tsx");

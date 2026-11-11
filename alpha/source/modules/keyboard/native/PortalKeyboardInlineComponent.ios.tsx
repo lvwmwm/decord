@@ -1,12 +1,12 @@
-// Module ID: 14476
-// Function ID: 14477
+// Module ID: 14850
+// Function ID: 14851
 // Name: PortalKeyboardInlineComponent
-// Dependencies: [19, 17, 5143, 5327, 2020, 7175, 1625, 5723, 5328, 5325, 5331, 11396, 2]
+// Dependencies: [19, 17, 5244, 5440, 2020, 7577, 1625, 5836, 5441, 5438, 5444, 11954, 2]
 
-// Module 14476 (PortalKeyboardInlineComponent)
+// Module 14850 (PortalKeyboardInlineComponent)
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -22,14 +22,14 @@ const memoResult = react.memo(function InlinePortalKeyboard(messagesRef) {
   react = undefined;
   const channelId = messagesRef.channelId;
   const id = react.useId();
-  const tmp2 = id(5327)();
+  const tmp2 = id(5440)();
   dependencyMap = tmp2;
   const tmp3 = id(2020)();
-  let tmp4 = id(7175)({ includeCustomKeyboard: false });
+  let tmp4 = id(7577)({ includeCustomKeyboard: false });
   react = tmp4;
-  let obj = messagesRef(5327);
+  let obj = messagesRef(5440);
   const keyboardContextForType = obj.useKeyboardContextForType(messagesRef(1625).KeyboardTypes.SYSTEM);
-  id(5723)(() => () => {
+  id(5836)(() => () => {
     const PortalKeyboardUIStore = messagesRef(closure_2[8]).PortalKeyboardUIStore;
     field = PortalKeyboardUIStore.getField("keyboard");
     const tmp4 = null != field && field.handlerId === id;
@@ -40,9 +40,9 @@ const memoResult = react.memo(function InlinePortalKeyboard(messagesRef) {
       tmpResult2.closePortalKeyboard();
     }
   });
-  let PortalKeyboardUIStore = messagesRef(5328).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = messagesRef(5441).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = messagesRef(5328).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = messagesRef(5441).PortalKeyboardUIStore;
   const field1 = PortalKeyboardUIStore2.useField("state");
   const ref = react.useRef(false);
   const items = [channelId, id, field, field1, tmp2, messagesRef, keyboardContextForType, tmp3, tmp4];

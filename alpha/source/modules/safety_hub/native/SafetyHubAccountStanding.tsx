@@ -1,29 +1,29 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 17153
+// Function ID: 17154
 // Name: SafetyHubAccountStanding
-// Dependencies: [32, 19, 17, 1385, 8068, 8043, 21, 8044, 16991, 5142, 575, 1113, 16983, 7404, 7155, 11952, 7161, 7180, 504, 1411, 9597, 1187, 5753, 2]
+// Dependencies: [32, 19, 17, 1385, 8165, 8140, 21, 8141, 17154, 5243, 575, 1113, 17146, 7864, 7557, 12744, 7563, 7582, 504, 1411, 9435, 1187, 5866, 2]
 // Exports: default
 
-// Module 16990 (SafetyHubAccountStanding)
+// Module 17153 (SafetyHubAccountStanding)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7155 */;
-import CircleXIcon from "CircleXIcon" /* 7161 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7180 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7404 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8043 */;
-import SafetyHubModels from "SafetyHubModels" /* 8044 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11952 */;
-import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 16983 */;
-import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 16991 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7557 */;
+import CircleXIcon from "CircleXIcon" /* 7563 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7582 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7864 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8140 */;
+import SafetyHubModels from "SafetyHubModels" /* 8141 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12744 */;
+import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 17146 */;
+import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 17154 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import SafetyHubStore from "SafetyHubStore" /* 8068 */;
+import SafetyHubStore from "SafetyHubStore" /* 8165 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -178,7 +178,7 @@ export default function SafetyHubAccountStanding() {
     let obj2 = height(1411);
     userAvatarSource = obj2.getUserAvatarSource(stateFromStores);
   } else {
-    userAvatarSource = height(9597);
+    userAvatarSource = height(9435);
   }
   const style = tmp13.style;
   let obj3 = { style: tmp4.container, children: items3 };
@@ -197,7 +197,7 @@ export default function SafetyHubAccountStanding() {
   let obj6 = { style: tmp4.body, children: items5 };
   let obj7 = { style: tmp4.bodyText, children: items4 };
   const obj8 = { variant: "heading-lg/medium", color: "text-default", style: { textAlign: "center" }, children: intl.format(title, obj9) };
-  const Text = tmp7(5753).Text;
+  const Text = tmp7(5866).Text;
   intl = tmp7(1113).intl;
   obj9 = {
     hook(children, arg1) {
@@ -205,7 +205,7 @@ export default function SafetyHubAccountStanding() {
       return React4(Text_Text.Text, obj, arg1);
     }
   };
-  items4 = [closure_9(Text, obj8), closure_9(accountStanding(5753).Text, { variant: "body-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
+  items4 = [closure_9(Text, obj8), closure_9(accountStanding(5866).Text, { variant: "body-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
   items5 = [closure_10(style, obj7), ];
   const obj10 = { style: items6, children: items7 };
   items6 = [tmp4.health, { height }];

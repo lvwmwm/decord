@@ -1,18 +1,18 @@
-// Module ID: 14928
-// Function ID: 14929
+// Module ID: 10108
+// Function ID: 10109
 // Name: AppStoreOverlayBottomSheet
-// Dependencies: [32, 19, 21, 5142, 1493, 8818, 5723, 7943, 5832, 14924, 14929, 5390, 5725, 5394, 2]
+// Dependencies: [32, 19, 21, 5243, 1493, 8493, 5836, 8759, 5945, 10104, 10109, 5503, 5838, 5507, 2]
 // Exports: default
 
-// Module 14928 (AppStoreOverlayBottomSheet)
-import openURLDefault from "openURL" /* 5832 */;
-import AnalyticsActions from "AnalyticsActions" /* 7943 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14924 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14929 */;
+// Module 10108 (AppStoreOverlayBottomSheet)
+import openURLDefault from "openURL" /* 5945 */;
+import AnalyticsActions from "AnalyticsActions" /* 8759 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 10104 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 10109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

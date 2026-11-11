@@ -1,20 +1,20 @@
-// Module ID: 18203
-// Function ID: 18204
+// Module ID: 18374
+// Function ID: 18375
 // Name: HeroBlockHeader
-// Dependencies: [19, 17, 1072, 21, 9546, 5142, 575, 9775, 6844, 1499, 9549, 5371, 5726, 5139, 9770, 5149, 18204, 18205, 5717, 5844, 5753, 5760, 1113, 7046, 1252, 7441, 2]
+// Dependencies: [19, 17, 1072, 21, 10349, 5243, 575, 10061, 5280, 1499, 9353, 5484, 5839, 5240, 10065, 5250, 18375, 18376, 5830, 5957, 5866, 5873, 1113, 7364, 1252, 7897, 2]
 // Exports: default
 
-// Module 18203 (HeroBlockHeader)
+// Module 18374 (HeroBlockHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import QuestContent from "QuestContent" /* 6844 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9546 */;
-import QuestUtils from "QuestUtils" /* 9775 */;
+import QuestContent from "QuestContent" /* 5280 */;
+import QuestUtils from "QuestUtils" /* 10061 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 10349 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -72,20 +72,20 @@ export default function HeroBlockHeader(heroBlock) {
   const tmp2 = dependencyMap;
   let obj = heroBlock(1499);
   dependencyMap = obj.useNavigation();
-  let obj2 = heroBlock(9549);
+  let obj2 = heroBlock(9353);
   const analyticsContext = obj2.useCollectiblesAnalyticsContext();
-  const tmp4 = category(5371)();
+  const tmp4 = category(5484)();
   const tmp5 = closure_10();
-  const obj3 = heroBlock(5726);
+  const obj3 = heroBlock(5839);
   const token = obj3.useToken(category(575).colors.BACKGROUND_BASE_LOW);
-  const hexToRgbaString = heroBlock(5139).hexToRgbaString;
-  heroBlock(5139);
-  const obj4 = heroBlock(5139);
+  const hexToRgbaString = heroBlock(5240).hexToRgbaString;
+  heroBlock(5240);
+  const obj4 = heroBlock(5240);
   const isOrbsExclusive = category.isOrbsExclusive;
   const hexToRgbaStringResult = hexToRgbaString(obj4.hexWithOpacity(token, 0));
-  const obj5 = heroBlock(5726);
+  const obj5 = heroBlock(5839);
   const token1 = obj5.useToken(category(575).colors.BACKGROUND_BASE_LOWEST);
-  const obj6 = heroBlock(9770);
+  const obj6 = heroBlock(10065);
   let isEligibleForQuests = obj6.getIsEligibleForQuests();
   let heroBannerUrl = heroBlock.mobileHeroUrl;
   if (heroBannerUrl == null) {
@@ -96,11 +96,11 @@ export default function HeroBlockHeader(heroBlock) {
   const tmp12 = null != heroBlock.mobileSummary ? heroBlock.mobileSummary : heroBlock.summary;
   if (isOrbsExclusive) {
     let tmp3Result;
-    const tmpResult = tmp(5149);
+    const tmpResult = tmp(5250);
     if (tmpResult.isThemeDark(tmp4)) {
-      tmp3Result = tmp3(18204);
+      tmp3Result = tmp3(18375);
     } else {
-      tmp3Result = tmp3(18205);
+      tmp3Result = tmp3(18376);
     }
     heroBannerUrl = tmp3Result;
   }
@@ -111,17 +111,17 @@ export default function HeroBlockHeader(heroBlock) {
     if (tmp16Result) {
       const obj8 = { colors: ["rgba(39, 30, 173, 0.3)", "transparent"], start: null, end: null, style: tmp5.orbsBackgroundGradient };
       ({ START: obj9.start, END: obj9.end } = closure_6);
-      tmp16Result = tmp16(tmp3(5717), obj8);
+      tmp16Result = tmp16(tmp3(5830), obj8);
     }
     const obj10 = { children: items };
     items = [tmp16Result, , ];
     const obj11 = { style: tmp5.heroBannerImage, source: obj12 };
     obj12 = { uri: heroBannerUrl };
-    items[1] = closure_7(category(5844), obj11);
+    items[1] = closure_7(category(5957), obj11);
     const obj14 = { colors: items1, start: null, end: null, style: tmp5.fadeOutGradient };
     items1 = [hexToRgbaStringResult, token1];
     ({ START: obj13.start, END: obj13.end } = closure_6);
-    items[2] = closure_7(category(5717), obj14);
+    items[2] = closure_7(category(5830), obj14);
     tmp14Result = tmp14(tmp15, obj10);
   }
   const items2 = [closure_7(analyticsContext, obj7), ];
@@ -131,20 +131,20 @@ export default function HeroBlockHeader(heroBlock) {
     const obj16 = { style: tmp5.orbsInnerContainer, children: items4 };
     if (tmp16Result4) {
       const obj17 = { variant: "display-md", color: "mobile-text-heading-primary", style: tmp5.orbsTitle, children: tmp11 };
-      tmp16Result4 = tmp16(tmp(5753).Text, obj17);
+      tmp16Result4 = tmp16(tmp(5866).Text, obj17);
     }
     const items3 = [tmp16Result4, ];
     let tmp16Result5 = null != tmp12 && "" !== tmp12;
     if (tmp16Result5) {
       const obj18 = { variant: "body-md/medium", children: tmp12 };
-      tmp16Result5 = tmp16(tmp(5753).Text, obj18);
+      tmp16Result5 = tmp16(tmp(5866).Text, obj18);
     }
     const obj19 = { children: items3 };
     items3[1] = tmp16Result5;
     items4 = [closure_9(analyticsContext, obj19), ];
     if (isEligibleForQuests) {
       const obj20 = { variant: "tertiary", shrink: true, grow: false, size: "sm", text: intl3.string(tmp(1113).t.ynollq), onPress: onTapEarnOrbs };
-      const Button = tmp(5760).Button;
+      const Button = tmp(5873).Button;
       intl3 = tmp(1113).intl;
       isEligibleForQuests = tmp16(Button, obj20);
     }
@@ -190,7 +190,7 @@ export default function HeroBlockHeader(heroBlock) {
         },
       children: closure_9(analyticsContext, obj24)
     };
-    const PressableOpacity = tmp(7046).PressableOpacity;
+    const PressableOpacity = tmp(7364).PressableOpacity;
     intl = tmp(1113).intl;
     obj22 = { category: category.name };
     intl2 = tmp(1113).intl;
@@ -198,13 +198,13 @@ export default function HeroBlockHeader(heroBlock) {
     obj23 = { radius: category(575).radii.lg };
     obj24 = { style: tmp5.innerContainer, children: items5 };
     if (tmp16Result6) {
-      const obj25 = { style: tmp5.heroLogoContainer, children: closure_7(category(5844), obj26) };
+      const obj25 = { style: tmp5.heroLogoContainer, children: closure_7(category(5957), obj26) };
       obj26 = { style: tmp5.heroLogo, source: obj27 };
       obj27 = { uri: heroLogoUrl };
       tmp16Result6 = tmp16(tmp17, obj25);
     }
     items5 = [tmp16Result6, ];
-    const obj28 = { style: tmp5.heroViewAllIcon, children: closure_7(tmp(7441).ChevronSmallRightIcon, { size: "sm", color: "white" }) };
+    const obj28 = { style: tmp5.heroViewAllIcon, children: closure_7(tmp(7897).ChevronSmallRightIcon, { size: "sm", color: "white" }) };
     items5[1] = closure_7(analyticsContext, obj28);
     tmp14Result2 = tmp16(PressableOpacity, obj21, category.storeListingId);
   }

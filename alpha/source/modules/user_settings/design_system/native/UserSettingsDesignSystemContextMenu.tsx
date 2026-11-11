@@ -1,27 +1,27 @@
-// Module ID: 18143
-// Function ID: 18144
+// Module ID: 18314
+// Function ID: 18315
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [19, 17, 21, 14648, 7328, 8499, 11764, 5867, 18144, 18145, 11759, 5142, 575, 12, 10002, 5760, 7043, 5753, 2]
+// Dependencies: [19, 17, 21, 15028, 15951, 9128, 12397, 5980, 18315, 18316, 12392, 5243, 575, 12, 9082, 5873, 7381, 5866, 2]
 // Exports: default
 
-// Module 18143 (UserSettingsDesignSystemContextMenu)
+// Module 18314 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import components_Button_Button from "components/Button/Button" /* 5760 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5867 */;
-import Card_Card from "Card/Card" /* 7043 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7328 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8499 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11759 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11764 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14648 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 18144 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 18145 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import components_Button_Button from "components/Button/Button" /* 5873 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5980 */;
+import Card_Card from "Card/Card" /* 7381 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9128 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12392 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12397 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15028 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 15951 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 18315 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 18316 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -133,7 +133,7 @@ function DemoContextMenu(align) {
 }
 ({ View: c3, ScrollView: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let items = [AssetRegistryDefault6, AssetRegistryDefault2, AssetRegistryDefault3, AssetRegistryDefault5, AssetRegistryDefault, AssetRegistryDefault7, AssetRegistryDefault8, AssetRegistryDefault4];
+let items = [AssetRegistryDefault5, AssetRegistryDefault6, AssetRegistryDefault2, AssetRegistryDefault4, AssetRegistryDefault, AssetRegistryDefault7, AssetRegistryDefault8, AssetRegistryDefault3];
 let closure_8 = ["Launch Probe!", "Activate Laser", "Teleport Widget", "Engage Hyperdrive", "Deploy Robots", "Initiate Time Warp", "Beam Up Snacks", "Hack Database", "Trigger Cosmic Boom", "Unleash Space Vortex", "Activate Cloaking Device"];
 let obj = { container: { flexDirection: "column", gap: 12, padding: 16 }, card: { gap: 12 }, divider: obj2 };
 obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 12 };

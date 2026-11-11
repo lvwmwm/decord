@@ -1,26 +1,26 @@
-// Module ID: 15466
-// Function ID: 15467
+// Module ID: 12023
+// Function ID: 12024
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 5142, 575, 8894, 7858, 15263, 7854, 15232, 5753, 1113, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 8540, 7294, 12024, 7290, 12047, 5866, 1113, 2]
 // Exports: default
 
-// Module 15466 (InAppReportsWidgetPreviewElement)
+// Module 12023 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7854 */;
-import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7858 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8894 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7290 */;
+import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7294 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8540 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp2;
-const UserProfilePersonalWidgetCardDefault = tmp2(15263);
+const UserProfilePersonalWidgetCardDefault = tmp2(12024);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: obj2 };
@@ -51,7 +51,7 @@ export default function WidgetPreview(arg0) {
       if (widget.games.length > 0) {
         const obj2 = { userId, widget, disableInteraction: true, cardStyle: items1 };
         items1 = [tmp4.card, tmp.card];
-        tmp6 = React3(tmp5(15232).WidgetSection, obj2);
+        tmp6 = React3(tmp5(12047).WidgetSection, obj2);
       }
     }
   }
@@ -59,7 +59,7 @@ export default function WidgetPreview(arg0) {
   if (null !== tmp6) {
     const obj3 = { style: tmp.container, children: items2 };
     const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "body-sm/medium", children: intl.string(intl2.t.SpsnDY) };
-    const Text = tmp5(5753).Text;
+    const Text = tmp5(5866).Text;
     intl = tmp5(1113).intl;
     items2 = [React3(Text, obj4), tmp6];
     tmp9 = hasOwnProperty(View, obj3);

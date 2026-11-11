@@ -1,18 +1,18 @@
-// Module ID: 16349
-// Function ID: 16350
+// Module ID: 16510
+// Function ID: 16511
 // Name: CarouselPagination
-// Dependencies: [19, 17, 21, 5142, 575, 1652, 5372, 16156, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 1652, 5485, 16318, 2]
 // Exports: default
 
-// Module 16349 (CarouselPagination)
+// Module 16510 (CarouselPagination)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import Easing_Easing from "Easing/Easing" /* 16156 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import Easing_Easing from "Easing/Easing" /* 16318 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let num;
@@ -72,7 +72,7 @@ let closure_8 = react.memo(function Dot(active) {
   const BRAND_500 = nativeDefault.unsafe_rawColors.BRAND_500;
   const backgroundColor = tmp.dot.backgroundColor;
   const items2 = [closure_7, , , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  const useAnimatedStyle = tmp2(1652).useAnimatedStyle;
   _mod1652;
   items2[1] = _mod1652.interpolate;
   items2[2] = derivedValue;

@@ -1,8 +1,8 @@
-// Module ID: 13732
-// Function ID: 13733
+// Module ID: 14213
+// Function ID: 14214
 // Dependencies: [2]
 
-// Module 13732
+// Module 14213
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_aura_13_shimmer.webp.js");

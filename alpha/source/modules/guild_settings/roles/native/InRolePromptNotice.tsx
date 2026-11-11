@@ -1,20 +1,20 @@
-// Module ID: 20233
-// Function ID: 20234
+// Module ID: 20428
+// Function ID: 20429
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1072, 21, 5142, 575, 1403, 20234, 1187, 11952, 5753, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 1403, 20429, 1187, 12744, 5866, 1113, 2]
 // Exports: default
 
-// Module 20233 (InRolePromptNotice)
+// Module 20428 (InRolePromptNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11952 */;
-import GuildSettingsUtils from "GuildSettingsUtils" /* 20234 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12744 */;
+import GuildSettingsUtils from "GuildSettingsUtils" /* 20429 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,7 +49,7 @@ export default function InRolePromptNotice(role) {
       const obj3 = { style: tmp.icon, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
       const items = [hasOwnProperty(Icon, obj3), ];
       const obj4 = { style: tmp.promptText, variant: "body-sm/medium", children: intl2.string(intl3.t.YRbgXz) };
-      const Text2 = tmp2(5753).Text;
+      const Text2 = tmp2(5866).Text;
       intl2 = tmp2(1113).intl;
       items[1] = hasOwnProperty(Text2, obj4);
       obj2.children = items;
@@ -58,7 +58,7 @@ export default function InRolePromptNotice(role) {
       const obj5 = { style: tmp.icon, source: AssetRegistryDefault };
       const items1 = [hasOwnProperty(Icon, obj5), ];
       const obj6 = { style: tmp.promptText, variant: "body-sm/medium", children: intl.string(intl3.t.mqeO2v) };
-      const Text = tmp2(5753).Text;
+      const Text = tmp2(5866).Text;
       intl = tmp2(1113).intl;
       items1[1] = hasOwnProperty(Text, obj6);
       obj2.children = items1;

@@ -1,16 +1,16 @@
-// Module ID: 7753
-// Function ID: 7754
+// Module ID: 8631
+// Function ID: 8632
 // Name: GuildMemberSafetyPageStore
-// Dependencies: [32, 5054, 1385, 1089, 7754, 7777, 7783, 7756, 12, 7758, 2]
+// Dependencies: [32, 5155, 1385, 1089, 8632, 8655, 8661, 8634, 12, 8636, 2]
 
-// Module 7753 (GuildMemberSafetyPageStore)
+// Module 8631 (GuildMemberSafetyPageStore)
 import _mod12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import GuildMemberSafetyMembers from "GuildMemberSafetyMembers" /* 7754 */;
-import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7756 */;
-import GuildMemberSafetySearch from "GuildMemberSafetySearch" /* 7777 */;
+import GuildMemberSafetyMembers from "GuildMemberSafetyMembers" /* 8632 */;
+import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 8634 */;
+import GuildMemberSafetySearch from "GuildMemberSafetySearch" /* 8655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

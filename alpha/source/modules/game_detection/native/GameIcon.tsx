@@ -1,19 +1,19 @@
-// Module ID: 7398
-// Function ID: 7399
+// Module ID: 7858
+// Function ID: 7859
 // Name: GameIcon
-// Dependencies: [19, 17, 1387, 21, 5142, 575, 7399, 7400, 7401, 7402, 5844, 2]
+// Dependencies: [19, 17, 1387, 21, 5243, 575, 7859, 7860, 7861, 7862, 5957, 2]
 
-// Module 7398 (GameIcon)
+// Module 7858 (GameIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7399 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7400 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7401 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 7402 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7859 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7860 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7861 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 7862 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj;

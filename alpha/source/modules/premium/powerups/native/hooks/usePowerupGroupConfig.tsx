@@ -1,18 +1,18 @@
-// Module ID: 14392
-// Function ID: 14393
+// Module ID: 10693
+// Function ID: 10694
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 5013, 504, 8813, 1113, 2696, 14393, 14394, 1380, 2]
+// Dependencies: [19, 5114, 504, 8343, 1113, 2717, 10694, 10695, 1380, 2]
 // Exports: default
 
-// Module 14392 (usePowerupGroupConfig)
+// Module 10693 (usePowerupGroupConfig)
 import intl4 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import _modDef2696 from "module_2696" /* 2696 */;
-import GuildTagUtils from "GuildTagUtils" /* 8813 */;
-import _modDef14393 from "module_14393" /* 14393 */;
-import _modDef14394 from "module_14394" /* 14394 */;
+import _modDef2717 from "module_2717" /* 2717 */;
+import GuildTagUtils from "GuildTagUtils" /* 8343 */;
+import _modDef10694 from "module_10694" /* 10694 */;
+import _modDef10695 from "module_10695" /* 10695 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,15 +43,15 @@ export default function usePowerupGroupConfig(arg0, arg1) {
     let obj3;
     let stringResult;
     if ("guildTagsBadgePacks" === group.group) {
-      const obj2 = { title: intl.string(_modDef2696.KC9HRW), description: intl2.string(_modDef2696.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
+      const obj2 = { title: intl.string(_modDef2717.KC9HRW), description: intl2.string(_modDef2717.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
       intl = intl4.intl;
       intl2 = intl4.intl;
       stringResult = undefined;
-      obj3 = { staticUrl: _modDef14393, animatedUrl: _modDef14394 };
+      obj3 = { staticUrl: _modDef10694, animatedUrl: _modDef10695 };
       const tmp7 = importDefault;
       if (!stateFromStores) {
         const intl3 = intl4.intl;
-        stringResult = intl3.string(tmp7(2696).lvk1Gc);
+        stringResult = intl3.string(tmp7(2717).lvk1Gc);
       }
       return obj2;
     } else {

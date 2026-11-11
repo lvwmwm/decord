@@ -1,49 +1,44 @@
-// Module ID: 16813
-// Function ID: 16814
+// Module ID: 16974
+// Function ID: 16975
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1072, 4988, 5167, 21, 5142, 575, 1499, 7644, 4975, 8814, 6574, 10903, 1396, 5170, 16806, 6842, 16814, 1252, 1113, 16817, 1187, 15377, 10900, 16818, 16820, 3056, 16821, 2]
+// Dependencies: [32, 19, 17, 1072, 5089, 21, 5243, 575, 1499, 9494, 5076, 8475, 6687, 10002, 1396, 16975, 1252, 1113, 16978, 1187, 15417, 9998, 16979, 16981, 3077, 16982, 2]
 // Exports: default
 
-// Module 16813 (UserProfileDisplayNameStylesEditButton)
+// Module 16974 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15377 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 16817 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 16818 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15417 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 16978 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 16979 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5167 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
-let c10;
-let closure_12;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let size;
-let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 ({ useCallback: closure_4, useMemo: hasOwnProperty } = react);
 const View = react_native.View;
 ({ AnalyticEvents: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-({ HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT: c10, HexagonCampaignPerk: unpackModuleId, HexagonCampaignPerkAvailability: closure_12 } = HexagonCampaignConstants);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { ggContainer: size, noneIcon: obj2 };
 size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center", paddingBottom: 4 };
 createStyles = createStyles.createStyles;
 obj2 = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
-let closure_14 = createStyles(obj);
+let closure_11 = createStyles(obj);
 size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDisplayNameStylesEditButton.tsx");
 
@@ -56,62 +51,52 @@ export default function UserProfileDisplayNameStylesEditButton(user) {
   const isTryItOut = user.isTryItOut;
   let closure_6;
   let displayNameStylesEffectConfig;
-  const tmp = closure_14();
+  const tmp = closure_11();
   _slicedToArray = tmp;
   let tmp3 = isTryItOut;
-  let obj = user(isTryItOut[9]);
+  let obj = user(isTryItOut[8]);
   const nativeStackNavigation = obj.useNativeStackNavigation();
-  const useSelectedDismissibleContent = user(isTryItOut[10]).useSelectedDismissibleContent;
-  const tmp5 = user(isTryItOut[10]);
-  const items = [user(isTryItOut[11]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
+  const useSelectedDismissibleContent = user(isTryItOut[9]).useSelectedDismissibleContent;
+  const tmp5 = user(isTryItOut[9]);
+  const items = [user(isTryItOut[10]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
   [first, tmp8] = useSelectedDismissibleContent(items, { bypassAutoDismiss: true });
   let closure_5 = tmp8;
-  let obj2 = user(isTryItOut[12]);
+  let obj2 = user(isTryItOut[11]);
   const guildMemberOrUserPendingDisplayNameStyles = obj2.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
   let pendingDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.pendingDisplayNameStyles;
   let tmp10 = guildId;
   const tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.tryItOutDisplayNameStyles;
   const obj3 = { userId: user.id, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting: true };
-  const tmp11 = guildId(isTryItOut[13]);
+  const tmp11 = guildId(isTryItOut[12]);
   if (isTryItOut) {
     pendingDisplayNameStyles = tryItOutDisplayNameStyles;
   }
   const tmp11Result = tmp11(obj3);
   closure_6 = tmp11Result;
   let effectId;
-  const useDisplayNameStylesEffectConfig = tmp2(tmp3[14]).useDisplayNameStylesEffectConfig;
-  user(tmp3[14]);
+  const useDisplayNameStylesEffectConfig = tmp2(tmp3[13]).useDisplayNameStylesEffectConfig;
+  user(tmp3[13]);
   if (tmp11Result != null) {
     effectId = tmp11Result.effectId;
   }
   if (effectId == null) {
-    effectId = tmp2(tmp3[15]).DisplayNameEffect.SOLID;
+    effectId = tmp2(tmp3[14]).DisplayNameEffect.SOLID;
   }
   displayNameStylesEffectConfig = useDisplayNameStylesEffectConfig(effectId);
-  const tmp2Result4 = user(tmp3[16]);
-  let tmp16 = tmp2Result4.useHexagonCampaignPerkAvailability(constants3.DISPLAY_NAME_STYLE, "UserProfileDisplayNameStylesEditButton") === constants4.SELECTABLE && true !== isTryItOut;
-  if (tmp16) {
-    let fontId;
-    if (tmp11Result != null) {
-      fontId = tmp11Result.fontId;
-    }
-    tmp16 = fontId !== closure_10;
-  }
-  const useTrackHexagonCampaignContentViewed = tmp2(tmp3[17]).useTrackHexagonCampaignContentViewed;
-  user(tmp3[17]);
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp2(tmp3[18]).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp2(tmp3[17]).HexagonCampaignContentSurface.PROFILE_ROW_PROMO, tmp16);
+  const tmp2Result2 = user(tmp3[15]);
+  const hexagonCampaignDisplayNameStylePromo = tmp2Result2.useHexagonCampaignDisplayNameStylePromo({ location: "UserProfileDisplayNameStylesEditButton", displayNameStyles: tmp11Result, isTryItOut });
+  let showCampaignNewBadge = hexagonCampaignDisplayNameStylePromo.showCampaignNewBadge;
   const items1 = [guildId, isTryItOut, nativeStackNavigation, tmp8];
-  const tmp2Result6 = user(tmp3[19]);
-  const hexagonCampaignHasVisitedDisplayNameStyles = tmp2Result6.useHexagonCampaignHasVisitedDisplayNameStyles();
+  const showCampaignPromo = hexagonCampaignDisplayNameStylePromo.showCampaignPromo;
   const items2 = [displayNameStylesEffectConfig, tmp11Result];
-  const tmp22 = nativeStackNavigation(() => {
+  const tmp17 = nativeStackNavigation(() => {
     const obj = AnalyticsUtilsDefault;
     obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
     const obj2 = { guildId, isTryItOut };
     nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
     closure_5(ContentDismissActionType.TAKE_ACTION);
   }, items1);
-  const tmp23 = closure_5(() => {
+  const tmp18 = closure_5(() => {
     let stringResult;
     if (null == closure_6) {
       const intl2 = intl3.intl;
@@ -125,7 +110,7 @@ export default function UserProfileDisplayNameStylesEditButton(user) {
   }, items2);
   const items3 = [tmp11Result, guildId, user.id, tmp];
   const items4 = [tmp11Result];
-  const tmp24 = nativeStackNavigation(() => {
+  const tmp19 = nativeStackNavigation(() => {
     let tmp10;
     if (null == closure_6) {
       const Icon = native.Icon;
@@ -135,7 +120,7 @@ export default function UserProfileDisplayNameStylesEditButton(user) {
     }
     return tmp10;
   }, items3);
-  const tmp25 = nativeStackNavigation(() => {
+  const tmp20 = nativeStackNavigation(() => {
     let effectId;
     let tmp3Result = null;
     if (null != closure_6) {
@@ -157,19 +142,15 @@ export default function UserProfileDisplayNameStylesEditButton(user) {
     }
     return tmp3Result;
   }, items4);
-  const UserProfileEditFormButton = tmp2(tmp3[27]).UserProfileEditFormButton;
-  let intl = tmp2(tmp3[21]).intl;
-  let tmp27 = tmp16;
-  const UserProfileEditFormLabelBadges = tmp2(tmp3[27]).UserProfileEditFormLabelBadges;
-  if (tmp16) {
-    tmp27 = !hexagonCampaignHasVisitedDisplayNameStyles;
+  const UserProfileEditFormButton = tmp2(tmp3[23]).UserProfileEditFormButton;
+  let intl = tmp2(tmp3[17]).intl;
+  const UserProfileEditFormLabelBadges = tmp2(tmp3[23]).UserProfileEditFormLabelBadges;
+  if (!showCampaignNewBadge) {
+    showCampaignNewBadge = first === tmp2(tmp3[10]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
   }
-  if (!tmp27) {
-    tmp27 = first === tmp2(tmp3[11]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
+  let tmp21Result;
+  if (showCampaignPromo) {
+    tmp21Result = tmp21(tmp10(tmp3[25]), {});
   }
-  let tmp26Result;
-  if (tmp16) {
-    tmp26Result = tmp26(tmp10(tmp3[29]), {});
-  }
-  return <UserProfileEditFormButton label={intl.string(tmp10(tmp3[28])["86GtGH"])} labelTrailing={null} buttonText={tmp23} accessibilityValue={{ text: tmp23 }} onPress={tmp22} leading={tmp24()} trailing={tmp25()} footer={tmp26Result} />;
+  return <UserProfileEditFormButton label={intl.string(tmp10(tmp3[24])["86GtGH"])} labelTrailing={null} buttonText={tmp18} accessibilityValue={{ text: tmp18 }} onPress={tmp17} leading={tmp19()} trailing={tmp20()} footer={tmp21Result} />;
 };

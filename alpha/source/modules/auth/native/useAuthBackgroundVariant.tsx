@@ -1,10 +1,10 @@
-// Module ID: 7012
-// Function ID: 7013
+// Module ID: 7647
+// Function ID: 7648
 // Name: useAuthBackgroundVariant
 // Dependencies: [32, 19, 1493, 2]
 // Exports: default, getInitialAuthBackgroundVariant, getNextAuthBackgroundVariant
 
-// Module 7012 (useAuthBackgroundVariant)
+// Module 7647 (useAuthBackgroundVariant)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

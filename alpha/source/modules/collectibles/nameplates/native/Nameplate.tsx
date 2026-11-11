@@ -1,16 +1,16 @@
-// Module ID: 9604
-// Function ID: 9605
+// Module ID: 9442
+// Function ID: 9443
 // Name: Nameplate
-// Dependencies: [19, 5143, 21, 5142, 504, 5371, 1652, 5372, 2108, 9605, 5717, 1377, 9594, 5844, 2]
+// Dependencies: [19, 5244, 21, 5243, 504, 5484, 1652, 5485, 2108, 9443, 5830, 1377, 9432, 5957, 2]
 // Exports: default
 
-// Module 9604 (Nameplate)
+// Module 9442 (Nameplate)
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
+import timing_timing from "timing/timing" /* 5485 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -67,7 +67,7 @@ function NameplateInner(isFocused) {
   const tmp4 = closure_7(flag3, isPressed, flag, flag2, flag5);
   const tmp5 = sharedValue;
   let num = 1;
-  const tmp6 = sharedValue(5371)();
+  const tmp6 = sharedValue(5484)();
   const useSharedValue = flag6(1652).useSharedValue;
   flag6(1652);
   if (flag6) {
@@ -104,7 +104,7 @@ function NameplateInner(isFocused) {
   const animatedStyle = tmpResult.useAnimatedStyle(NameplateTsx1);
   const tmpResult4 = tmp(2108);
   const backgroundGradientColors = tmpResult4.getBackgroundGradientColors(nameplate.palette, tmp6);
-  const tmpResult5 = tmp(9605);
+  const tmpResult5 = tmp(9443);
   const nameplateAssets = tmpResult5.getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp15 = true === flag7;
@@ -130,7 +130,7 @@ function NameplateInner(isFocused) {
     let num2 = 0;
     const obj3 = { style: tmp4.gradient, start: point, end: { x: 1, y: 0 }, colors: items5 };
     const tmp18 = closure_5;
-    const tmp5Result = tmp5(5717);
+    const tmp5Result = tmp5(5830);
     if (flag4) {
       num2 = -2;
     }
@@ -145,14 +145,14 @@ function NameplateInner(isFocused) {
     let tmp20;
     if (tmp15) {
       const obj4 = { url: str, style: tmp4.img, autoplay: true };
-      tmp20 = closure_5(tmp(9594).APNGPlayer, obj4);
+      tmp20 = closure_5(tmp(9432).APNGPlayer, obj4);
     }
     items6[1] = tmp20;
     obj2.children = items6;
     return tmp16(View, obj2);
   }
   const obj5 = { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" };
-  tmp20 = closure_5(tmp5(5844), obj5);
+  tmp20 = closure_5(tmp5(5957), obj5);
 }
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4) => {

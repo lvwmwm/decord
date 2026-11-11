@@ -1,65 +1,106 @@
 // Module ID: 5605
 // Function ID: 5606
-// Dependencies: [19, 17, 21, 5606, 5607]
+// Dependencies: []
+// Exports: containsDuplicates, isComposedGesture, prepareRelations
 
 // Module 5605
-import react_native from "react-native" /* 5607 */;
-import react_mod from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+let set;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-let react = react_mod;
-const useMemo = react.useMemo;
-const memo = react.memo;
-react = react_mod;
-({ StyleSheet: c3, View: closure_4 } = react_native2);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const memoResult = memo(function BottomSheetHandleComponent(style) {
+
+export function isComposedGesture(gesture) {
+  return "handlerTags" in gesture;
+}
+export function prepareRelations(config, handlerTag) {
+  let items;
+  let items1;
   let items2;
-  style = style.style;
-  const indicatorStyle = style.indicatorStyle;
-  let DEFAULT_ACCESSIBLE = style.accessible;
-  if (DEFAULT_ACCESSIBLE === undefined) {
-    DEFAULT_ACCESSIBLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBLE;
-  }
-  let DEFAULT_ACCESSIBILITY_ROLE = style.accessibilityRole;
-  if (DEFAULT_ACCESSIBILITY_ROLE === undefined) {
-    DEFAULT_ACCESSIBILITY_ROLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_ROLE;
-  }
-  let DEFAULT_ACCESSIBILITY_LABEL = style.accessibilityLabel;
-  if (DEFAULT_ACCESSIBILITY_LABEL === undefined) {
-    DEFAULT_ACCESSIBILITY_LABEL = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_LABEL;
-  }
-  let DEFAULT_ACCESSIBILITY_HINT = style.accessibilityHint;
-  if (DEFAULT_ACCESSIBILITY_HINT === undefined) {
-    DEFAULT_ACCESSIBILITY_HINT = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_HINT;
-  }
-  let items = [style];
-  const children = style.children;
-  const items1 = [indicatorStyle];
-  const obj = {
-    style: useMemo(() => {
-      const items = [react_native.styles.container, _false.flatten(style)];
-      return items;
-    }, items),
-    accessible: DEFAULT_ACCESSIBLE,
-    accessibilityRole: DEFAULT_ACCESSIBILITY_ROLE,
-    accessibilityLabel: DEFAULT_ACCESSIBILITY_LABEL,
-    accessibilityHint: DEFAULT_ACCESSIBILITY_HINT,
-    collapsable: true,
-    children: items2
+  const f89936 = (handlerTags) => {
+    if ("handlerTags" in handlerTags) {
+      handlerTags = handlerTags.handlerTags;
+    } else {
+      handlerTags = [handlerTags.handlerTag];
+    }
+    return handlerTags;
   };
-  const tmp10 = useMemo(() => {
-    const items = [react_native.styles.indicator, _false.flatten(indicatorStyle)];
-    return items;
-  }, items1);
-  items2 = [closure_5(closure_4, { style: tmp10 }), children];
-  return closure_6(closure_4, obj);
-});
-memoResult.displayName = "BottomSheetHandle";
-
-export default memoResult;
+  const simultaneousWith1 = config.simultaneousWith;
+  let closure_0 = handlerTag;
+  if (simultaneousWith1) {
+    let tmp = globalThis;
+    const _Array = Array;
+    if (Array.isArray(simultaneousWith1)) {
+      const item = simultaneousWith1.forEach(function processSingleGesture(externalSimultaneousHandlers) {
+        let prop;
+        if ("handlerTags" in externalSimultaneousHandlers) {
+          prop = externalSimultaneousHandlers.externalSimultaneousHandlers;
+        } else {
+          prop = externalSimultaneousHandlers.gestureRelations.simultaneousHandlers;
+        }
+        const tmp = handlerTag;
+        if (!prop.includes(handlerTag)) {
+          prop.push(tmp);
+        }
+      });
+    } else {
+      let prop;
+      if ("handlerTags" in simultaneousWith1) {
+        prop = simultaneousWith1.externalSimultaneousHandlers;
+      } else {
+        prop = simultaneousWith1.gestureRelations.simultaneousHandlers;
+      }
+      if (!prop.includes(handlerTag)) {
+        prop.push(handlerTag);
+      }
+    }
+  }
+  const simultaneousWith = config.simultaneousWith;
+  if (simultaneousWith) {
+    let flatMapResult;
+    const _Array2 = Array;
+    if (Array.isArray(simultaneousWith)) {
+      flatMapResult = simultaneousWith.flatMap(f89936);
+    } else if ("handlerTags" in simultaneousWith) {
+      flatMapResult = simultaneousWith.handlerTags;
+    } else {
+      flatMapResult = [simultaneousWith.handlerTag];
+    }
+    items = flatMapResult;
+  } else {
+    items = [];
+  }
+  const requireToFail = config.requireToFail;
+  const obj = { simultaneousHandlers: items, waitFor: items1, blocksHandlers: items2 };
+  if (requireToFail) {
+    let flatMapResult1;
+    const _Array3 = Array;
+    if (Array.isArray(requireToFail)) {
+      flatMapResult1 = requireToFail.flatMap(f89936);
+    } else if ("handlerTags" in requireToFail) {
+      flatMapResult1 = requireToFail.handlerTags;
+    } else {
+      flatMapResult1 = [requireToFail.handlerTag];
+    }
+    items1 = flatMapResult1;
+  } else {
+    items1 = [];
+  }
+  const block = config.block;
+  if (block) {
+    let flatMapResult2;
+    const _Array4 = Array;
+    if (Array.isArray(block)) {
+      flatMapResult2 = block.flatMap(f89936);
+    } else if ("handlerTags" in block) {
+      flatMapResult2 = block.handlerTags;
+    } else {
+      flatMapResult2 = [block.handlerTag];
+    }
+    items2 = flatMapResult2;
+  } else {
+    items2 = [];
+  }
+  return obj;
+}
+export function containsDuplicates(flatMapResult1) {
+  set = new Set(flatMapResult1);
+  return set.size !== flatMapResult1.length;
+}

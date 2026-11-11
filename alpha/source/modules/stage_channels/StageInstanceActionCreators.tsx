@@ -1,10 +1,10 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8375
+// Function ID: 8376
 // Name: StageInstanceActionCreators
 // Dependencies: [5, 1072, 1282, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 8026 (StageInstanceActionCreators)
+// Module 8375 (StageInstanceActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

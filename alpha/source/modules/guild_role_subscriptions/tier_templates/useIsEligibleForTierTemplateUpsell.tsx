@@ -1,12 +1,12 @@
-// Module ID: 18677
-// Function ID: 18678
+// Module ID: 18849
+// Function ID: 18850
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [5013, 1072, 504, 16057, 7501, 2]
+// Dependencies: [5114, 1072, 504, 16216, 7212, 2]
 // Exports: default
 
-// Module 18677 (useIsEligibleForTierTemplateUpsell)
+// Module 18849 (useIsEligibleForTierTemplateUpsell)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ export default function useIsEligibleForTierTemplateUpsell(guildId) {
     }
     result = false === hasItem1;
   }
-  const tmpResult = tmp(7501);
+  const tmpResult = tmp(7212);
   if (result) {
     result = tmpResult.canManageGuildRoleSubscriptions(stateFromStores);
   }

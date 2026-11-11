@@ -1,19 +1,19 @@
-// Module ID: 17113
-// Function ID: 17114
+// Module ID: 17276
+// Function ID: 17277
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1072, 21, 17114, 17115, 8100, 575, 1113, 2664, 11694, 8738, 17118, 2]
+// Dependencies: [19, 1072, 21, 17277, 17278, 8095, 575, 1113, 2685, 12317, 7372, 17281, 2]
 
-// Module 17113 (FamilyCenterSetting)
+// Module 17276 (FamilyCenterSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef2664 from "module_2664" /* 2664 */;
-import GroupIcon from "GroupIcon" /* 8738 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 17114 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 17115 */;
+import _modDef2685 from "module_2685" /* 2685 */;
+import GroupIcon from "GroupIcon" /* 7372 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 17277 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 17278 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11694 */;
+import SettingBuilders from "SettingBuilders" /* 12317 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ const jsx = Fragment.jsx;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2664.RZqaJn);
+    return intl.string(_modDef2685.RZqaJn);
   },
   parent: null,
   IconComponent: GroupIcon.GroupIcon,
@@ -45,9 +45,9 @@ let obj = {
       if (null != daysRemaining) {
         tmp6 = null;
         if (daysRemaining >= 0) {
-          const WarningIcon = tmp(8100).WarningIcon;
+          const WarningIcon = tmp(8095).WarningIcon;
           const intl = tmp(1113).intl;
-          tmp6 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2664.wucWfE)} />;
+          tmp6 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2685.wucWfE)} />;
         }
       }
     }

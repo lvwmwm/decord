@@ -1,14 +1,14 @@
-// Module ID: 10904
-// Function ID: 10905
+// Module ID: 10003
+// Function ID: 10004
 // Name: useDisplayNameStylesEffectDefaultColors
-// Dependencies: [19, 1394, 1090, 5726, 575, 1396, 2]
+// Dependencies: [19, 1394, 1090, 5839, 575, 1396, 2]
 // Exports: default
 
-// Module 10904 (useDisplayNameStylesEffectDefaultColors)
+// Module 10003 (useDisplayNameStylesEffectDefaultColors)
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import useToken from "useToken" /* 5726 */;
+import useToken from "useToken" /* 5839 */;
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
 import size from "module_2" /* 2 */;

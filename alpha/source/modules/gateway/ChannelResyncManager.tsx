@@ -1,24 +1,24 @@
-// Module ID: 19849
-// Function ID: 19850
+// Module ID: 20041
+// Function ID: 20042
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 4991, 6832, 5013, 6625, 1072, 4998, 3, 1089, 7353, 1252, 572, 7874, 15879, 1403, 1266, 2]
+// Dependencies: [5, 502, 5092, 6894, 5114, 6737, 1072, 5099, 3, 1089, 7816, 1252, 572, 8692, 16038, 1403, 1266, 2]
 
-// Module 19849 (ChannelResyncManager)
+// Module 20041 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import ChannelConstants from "ChannelConstants" /* 4998 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7874 */;
-import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 15879 */;
+import ChannelConstants from "ChannelConstants" /* 5099 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 8692 */;
+import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 16038 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6832 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6625 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6894 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,14 +1,14 @@
-// Module ID: 10700
-// Function ID: 10701
+// Module ID: 9556
+// Function ID: 9557
 // Name: useIsEligibleForBogoOffer
-// Dependencies: [19, 2176, 9720, 1387, 504, 7706, 10699, 7681, 10701, 2]
+// Dependencies: [19, 2176, 9557, 1387, 504, 9244, 9555, 9519, 9613, 2]
 // Exports: useIsEligibleForBogoOffer
 
-// Module 10700 (useIsEligibleForBogoOffer)
+// Module 9556 (useIsEligibleForBogoOffer)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import PromotionsStore from "PromotionsStore" /* 9720 */;
+import PromotionsStore from "PromotionsStore" /* 9557 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -26,13 +26,13 @@ export function useIsEligibleForBogoOffer() {
   const items1 = [SubscriptionStore];
   const obj2 = forceUpdate(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
-  const obj4 = forceUpdate(7706);
+  const obj4 = forceUpdate(9244);
   const premiumTrialOffer = obj4.usePremiumTrialOffer();
-  const obj5 = forceUpdate(10699);
+  const obj5 = forceUpdate(9555);
   const premiumDiscountOffer = obj5.usePremiumDiscountOffer();
-  const obj6 = forceUpdate(7681);
+  const obj6 = forceUpdate(9519);
   const isPaymentsBlocked = obj6.useIsPaymentsBlocked();
-  const obj7 = forceUpdate(10701);
+  const obj7 = forceUpdate(9613);
   forceUpdate = obj7.useForceUpdate();
   let valueOfResult = null;
   if (null != stateFromStores) {

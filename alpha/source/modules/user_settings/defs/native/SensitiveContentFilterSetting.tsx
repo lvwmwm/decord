@@ -1,14 +1,14 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17222
+// Function ID: 17223
 // Name: SensitiveContentFilterSetting
-// Dependencies: [8507, 1072, 11694, 1113, 8730, 17060, 2]
+// Dependencies: [9136, 1072, 12317, 1113, 8014, 17223, 2]
 
-// Module 17059 (SensitiveContentFilterSetting)
+// Module 17222 (SensitiveContentFilterSetting)
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8507 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8730 */;
-import SettingBuilders from "SettingBuilders" /* 11694 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8014 */;
+import SettingsConstants from "SettingsConstants" /* 9136 */;
+import SettingBuilders from "SettingBuilders" /* 12317 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

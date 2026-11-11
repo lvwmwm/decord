@@ -1,30 +1,30 @@
-// Module ID: 6201
-// Function ID: 6202
+// Module ID: 6314
+// Function ID: 6315
 // Name: CheckpointConstants
-// Dependencies: [3248, 6202, 2]
+// Dependencies: [3269, 6315, 2]
 
-// Module 6201 (CheckpointConstants)
-import _modDef3248 from "module_3248" /* 3248 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6202 */;
+// Module 6314 (CheckpointConstants)
+import _modDef3269 from "module_3269" /* 3269 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6315 */;
 import size from "module_2" /* 2 */;
 
-const items = [{ list: "gamesByPlayers", label: _modDef3248.b4s18j }, , , ];
-({ list: "gamesByPlayers", label: _modDef3248.b4s18j });
-items[1] = { list: "newGamesByPlayers", label: _modDef3248.DcxpNj };
-({ list: "newGamesByPlayers", label: _modDef3248.DcxpNj });
-items[2] = { list: "indieGamesByPlayers", label: _modDef3248.OAUTki };
-({ list: "indieGamesByPlayers", label: _modDef3248.OAUTki });
-items[3] = { list: "gamesByStreamWatchMinutes", label: _modDef3248.M1L00s };
-({ list: "gamesByStreamWatchMinutes", label: _modDef3248.M1L00s });
+const items = [{ list: "gamesByPlayers", label: _modDef3269.b4s18j }, , , ];
+({ list: "gamesByPlayers", label: _modDef3269.b4s18j });
+items[1] = { list: "newGamesByPlayers", label: _modDef3269.DcxpNj };
+({ list: "newGamesByPlayers", label: _modDef3269.DcxpNj });
+items[2] = { list: "indieGamesByPlayers", label: _modDef3269.OAUTki };
+({ list: "indieGamesByPlayers", label: _modDef3269.OAUTki });
+items[3] = { list: "gamesByStreamWatchMinutes", label: _modDef3269.M1L00s };
+({ list: "gamesByStreamWatchMinutes", label: _modDef3269.M1L00s });
 const obj5 = { [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT]: "#FFE047", [CheckpointTraitRarity.CheckpointTraitRarity.COMMON]: "#35ED7E", [CheckpointTraitRarity.CheckpointTraitRarity.RARE]: "#EF3054", [CheckpointTraitRarity.CheckpointTraitRarity.EPIC]: "#7D53DE", [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA]: "#FC7A1E" };
 obj5[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = "url(#" + "checkpointRarityBadgeNitroGradient" + ")";
 const obj6 = {};
-obj6[CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT] = _modDef3248.bP4GV1;
-obj6[CheckpointTraitRarity.CheckpointTraitRarity.COMMON] = _modDef3248.QwkKWr;
-obj6[CheckpointTraitRarity.CheckpointTraitRarity.RARE] = _modDef3248.KLmNgL;
-obj6[CheckpointTraitRarity.CheckpointTraitRarity.EPIC] = _modDef3248.hAmdLZ;
-obj6[CheckpointTraitRarity.CheckpointTraitRarity.ULTRA] = _modDef3248.Tv4xyf;
-obj6[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = _modDef3248["0ModIv"];
+obj6[CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT] = _modDef3269.bP4GV1;
+obj6[CheckpointTraitRarity.CheckpointTraitRarity.COMMON] = _modDef3269.QwkKWr;
+obj6[CheckpointTraitRarity.CheckpointTraitRarity.RARE] = _modDef3269.KLmNgL;
+obj6[CheckpointTraitRarity.CheckpointTraitRarity.EPIC] = _modDef3269.hAmdLZ;
+obj6[CheckpointTraitRarity.CheckpointTraitRarity.ULTRA] = _modDef3269.Tv4xyf;
+obj6[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = _modDef3269["0ModIv"];
 const items1 = [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA, CheckpointTraitRarity.CheckpointTraitRarity.EPIC, CheckpointTraitRarity.CheckpointTraitRarity.RARE, CheckpointTraitRarity.CheckpointTraitRarity.COMMON, CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT, CheckpointTraitRarity.CheckpointTraitRarity.NITRO];
 const items2 = [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT, CheckpointTraitRarity.CheckpointTraitRarity.COMMON, CheckpointTraitRarity.CheckpointTraitRarity.RARE, CheckpointTraitRarity.CheckpointTraitRarity.EPIC, CheckpointTraitRarity.CheckpointTraitRarity.ULTRA, CheckpointTraitRarity.CheckpointTraitRarity.NITRO];
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointConstants.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 17645
-// Function ID: 17646
+// Module ID: 17810
+// Function ID: 17811
 // Name: useSyncedModeThemeName
-// Dependencies: [1192, 1240, 504, 1239, 1113, 2896, 2]
+// Dependencies: [1192, 1240, 504, 1239, 1113, 2917, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 17645 (useSyncedModeThemeName)
+// Module 17810 (useSyncedModeThemeName)
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import _modDef2896 from "module_2896" /* 2896 */;
+import _modDef2917 from "module_2917" /* 2917 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export function useSyncedModeThemeName(DARK) {
     }
     if (null != prop) {
       const intl = intl2.intl;
-      stringResult = intl.string(_modDef2896.yl1iMm);
+      stringResult = intl.string(_modDef2917.yl1iMm);
     } else {
       let prop1;
       if (syncedClientTheme != null) {

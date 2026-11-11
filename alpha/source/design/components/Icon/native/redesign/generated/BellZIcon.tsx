@@ -1,14 +1,14 @@
-// Module ID: 11313
-// Function ID: 11314
+// Module ID: 11868
+// Function ID: 11869
 // Name: BellZIcon
-// Dependencies: [19, 21, 575, 5843, 11314, 2]
+// Dependencies: [19, 21, 575, 5956, 11869, 2]
 // Exports: BellZIcon
 
-// Module 11313 (BellZIcon)
+// Module 11868 (BellZIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 11314 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 11869 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

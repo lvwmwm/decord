@@ -1,10 +1,10 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12835
+// Function ID: 12836
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 11139, 11140, 1072, 21, 1377, 5142, 575, 6780, 1187, 1627, 1652, 12038, 1092, 1113, 5725, 5372, 5422, 1705, 10376, 1493, 11888, 1108, 5201, 5730, 5149, 11359, 2]
+// Dependencies: [32, 19, 17, 10940, 10941, 1072, 21, 1377, 5243, 575, 6763, 1187, 1627, 1652, 12836, 1092, 1113, 5838, 5485, 5535, 1705, 11284, 1493, 12640, 1108, 5314, 5843, 5250, 11914, 2]
 // Exports: default
 
-// Module 12037 (FocusedControlsBottomControls)
+// Module 12835 (FocusedControlsBottomControls)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
@@ -12,18 +12,18 @@ import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import CallPTTButton from "CallPTTButton" /* 11359 */;
-import useCanShowTooltip from "useCanShowTooltip" /* 12038 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import CallPTTButton from "CallPTTButton" /* 11914 */;
+import useCanShowTooltip from "useCanShowTooltip" /* 12836 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 11139 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 11140 */;
+import ChannelCallStore from "ChannelCallStore" /* 10940 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10941 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
-import TextStyles from "TextStyles" /* 6780 */;
+import createStyles_mod from "createStyles" /* 5243 */;
+import TextStyles from "TextStyles" /* 6763 */;
 import size_mod from "module_2" /* 2 */;
 
 const CallPTTButtonDefault = CallPTTButton;
@@ -46,7 +46,7 @@ let rect;
 let tmp2;
 let unpackModuleId;
 const _modDef1652 = tmp2(1652);
-const ActionSheetHeaderBar = tmp2(5725);
+const ActionSheetHeaderBar = tmp2(5838);
 function FocusedControlsExpanded(availableHeight) {
   let closure_3;
   let expandedControls;

@@ -1,27 +1,27 @@
-// Module ID: 8263
-// Function ID: 8264
+// Module ID: 8052
+// Function ID: 8053
 // Name: FormSwitchRow
-// Dependencies: [32, 19, 17, 21, 5142, 1377, 7373, 7375, 8261, 7128, 7432, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 1377, 7835, 7837, 8050, 7552, 7888, 2]
 // Exports: default
 
-// Module 8263 (FormSwitchRow)
+// Module 8052 (FormSwitchRow)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import RedesignCompat from "RedesignCompat" /* 7128 */;
-import FormRowDefault from "FormRow" /* 7373 */;
-import FormLabelDefault from "FormLabel" /* 7375 */;
+import RedesignCompat from "RedesignCompat" /* 7552 */;
+import FormRowDefault from "FormRow" /* 7835 */;
+import FormLabelDefault from "FormLabel" /* 7837 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp13;
-const TableSwitchRow2 = tmp(7432);
-const FormSwitchDefault = tmp13(8261);
+const TableSwitchRow2 = tmp(7888);
+const FormSwitchDefault = tmp13(8050);
 function FormSwitchRow(onValueChange) {
   let accessibilityHint;
   let closure_3;

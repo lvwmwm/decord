@@ -1,28 +1,28 @@
-// Module ID: 17161
-// Function ID: 17162
+// Module ID: 17325
+// Function ID: 17326
 // Name: FamilyCenterRequestsPage
-// Dependencies: [19, 17, 7795, 11405, 21, 5142, 575, 8444, 8445, 13607, 1113, 2664, 5753, 11447, 7358, 17122, 17162, 17167, 17175, 2]
+// Dependencies: [19, 17, 8674, 11963, 21, 5243, 575, 9550, 9551, 14124, 1113, 2685, 5866, 12216, 7351, 17285, 17326, 17331, 17339, 2]
 // Exports: default
 
-// Module 17161 (FamilyCenterRequestsPage)
+// Module 17325 (FamilyCenterRequestsPage)
 import nativeDefault from "native" /* 575 */;
-import _modDef2664 from "module_2664" /* 2664 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7358 */;
-import useUserLinks from "useUserLinks" /* 8444 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8445 */;
-import Constants from "Constants" /* 11405 */;
-import useHelpLineVisibility from "useHelpLineVisibility" /* 11447 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 13607 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 17122 */;
-import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 17162 */;
-import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 17167 */;
-import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 17175 */;
+import _modDef2685 from "module_2685" /* 2685 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7351 */;
+import useUserLinks from "useUserLinks" /* 9550 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9551 */;
+import Constants from "Constants" /* 11963 */;
+import useHelpLineVisibility from "useHelpLineVisibility" /* 12216 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 14124 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 17285 */;
+import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 17326 */;
+import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 17331 */;
+import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 17339 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7795 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8674 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -42,7 +42,7 @@ function FamilyCenterMaxConnectionsBlurb() {
   const tmp6 = useIsInAdultAgeGroupDefault() ? hasOwnProperty : metroRequire;
   useAgeSpecificText;
   const intl = tmp2(1113).intl;
-  intl.formatToPlainString(_modDef2664["1/PzIj"], { maxConnections: tmp6 });
+  intl.formatToPlainString(_modDef2685["1/PzIj"], { maxConnections: tmp6 });
   const intl2 = tmp2(1113).intl;
   let tmp10 = null;
   if (hasMaxConnections) {
@@ -62,20 +62,20 @@ function FamilyCenterHelpLineInfo() {
   useHelpLineVisibility;
   if (shouldShowHelplineLink) {
     const intl2 = tmp2(1113).intl;
-    formatResult = intl2.format(_modDef2664["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
+    formatResult = intl2.format(_modDef2685["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
   } else {
     formatResult = null;
     if (tmp6) {
       const intl = tmp2(1113).intl;
       const obj2 = { helpLink: THROUGHLINE_URL };
-      formatResult = intl.format(_modDef2664["6tsC8u"], obj2);
+      formatResult = intl.format(_modDef2685["6tsC8u"], obj2);
     }
   }
   let tmp11 = null;
   if (null != formatResult) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { style: tmp.supportHeader, variant: "heading-xs/semibold", children: intl3.string(_modDef2664["7/tVhv"]) };
-    const Text = tmp2(5753).Text;
+    const obj4 = { style: tmp.supportHeader, variant: "heading-xs/semibold", children: intl3.string(_modDef2685["7/tVhv"]) };
+    const Text = tmp2(5866).Text;
     intl3 = tmp2(1113).intl;
     items = [metroImportAll(Text, obj4), ];
     const obj5 = { variant: "body-xs/medium", color: "text-muted", children: formatResult };

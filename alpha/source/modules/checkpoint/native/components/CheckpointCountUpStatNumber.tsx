@@ -1,17 +1,20 @@
-// Module ID: 13910
-// Function ID: 13911
+// Module ID: 14386
+// Function ID: 14387
 // Name: CheckpointCountUpStatNumber
-// Dependencies: [32, 19, 17, 5143, 21, 504, 13900, 2]
+// Dependencies: [32, 19, 17, 5244, 21, 504, 14387, 14377, 2]
 // Exports: default
 
-// Module 13910 (CheckpointCountUpStatNumber)
+// Module 14386 (CheckpointCountUpStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 13900 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 14377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import size from "module_2" /* 2 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import size_mod from "module_2" /* 2 */;
+
+const CheckpointStatNumberDefault = CheckpointStatNumber;
+let importDefault;
 
 let closure_4;
 let hasOwnProperty;
@@ -19,29 +22,34 @@ let metroRequire;
 ({ useEffect: closure_4, useMemo: hasOwnProperty, useState: metroRequire } = react);
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointCountUpStatNumber.tsx");
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointCountUpStatNumber.tsx");
 
 export default function CheckpointCountUpStatNumber(start) {
+  let c1;
   let c3;
-  let tmp4;
+  let end;
+  let tmp5;
+  let tmpResult2;
   let useReducedMotion;
   let num = start.start;
   if (num === undefined) {
     num = 0;
   }
-  const end = start.end;
-  let num2 = start.size;
-  if (num2 === undefined) {
-    num2 = 100;
+  ({ end, size } = start);
+  if (size === undefined) {
+    size = 100;
   }
+  importDefault = undefined;
   c3 = undefined;
-  let tmp = dependencyMap;
-  let obj = end(504);
+  let tmp = size;
+  let tmp2 = dependencyMap;
+  let obj = size(504);
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  [tmp4, c3] = _slicedToArray(closure_6(num), 2);
+  [tmp5, c3] = _slicedToArray(closure_6(num), 2);
   const items1 = [end, stateFromStores, num];
-  const tmp3 = _slicedToArray(closure_6(num), 2);
+  const tmp4 = _slicedToArray(closure_6(num), 2);
   closure_4(() => {
     let closure_1;
     const tmp = stateFromStores;
@@ -71,13 +79,19 @@ export default function CheckpointCountUpStatNumber(start) {
     }
   }, items1);
   if (stateFromStores) {
-    tmp4 = end;
+    tmp5 = end;
   }
-  const items2 = [end, num2];
+  const tmpResult = tmp(14387);
+  const result = tmpResult.formatCheckpointStatNumber(end);
+  importDefault = result;
+  const items2 = [result, size];
+  ({ value: tmpResult2.formatCheckpointStatNumber(tmp5), size });
+  CheckpointStatNumberDefault;
+  tmpResult2 = tmp(14387);
   return <View style={closure_5(() => {
     let obj2;
-    const obj = { width: obj2.getCheckpointStatNumberWidth(end, num2) };
+    const obj = { width: obj2.getCheckpointStatNumberWidth(c1, size) };
     obj2 = CheckpointStatNumber;
     return obj;
-  }, items2)}>{jsx(num2(13900), { value: tmp4, size: num2 })}</View>;
+  }, items2)}>{null}</View>;
 };

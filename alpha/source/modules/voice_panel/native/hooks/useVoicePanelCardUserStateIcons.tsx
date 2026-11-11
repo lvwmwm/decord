@@ -1,27 +1,27 @@
-// Module ID: 19647
-// Function ID: 19648
+// Module ID: 19839
+// Function ID: 19840
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 6815, 4991, 5895, 5805, 5807, 11371, 9320, 563, 12177, 5920, 12118, 18659, 11336, 19566, 5839, 1113, 7155, 575, 2]
+// Dependencies: [19, 6879, 5092, 6008, 5918, 5920, 11924, 10529, 563, 12970, 6033, 12912, 18831, 11891, 19755, 5952, 1113, 7557, 575, 2]
 // Exports: default
 
-// Module 19647 (useVoicePanelCardUserStateIcons)
-import CallConstants from "CallConstants" /* 5807 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9320 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11371 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19566 */;
+// Module 19839 (useVoicePanelCardUserStateIcons)
+import CallConstants from "CallConstants" /* 5920 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 10529 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11924 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19755 */;
 import react from "react" /* 19 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6815 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
-import VoiceStateStore from "VoiceStateStore" /* 5805 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6879 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
+import VoiceStateStore from "VoiceStateStore" /* 5918 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(12118);
-const useMuteAwareLocalVolumeDefault = tmp2(12177);
+const MobileAudioOutputExperimentDefault = tmp2(12912);
+const useMuteAwareLocalVolumeDefault = tmp2(12970);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON", STAGE_MODERATOR_ICON: "STAGE_MODERATOR_ICON" };
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelCardUserStateIcons.tsx");
@@ -61,8 +61,8 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   }
   muteDeafenIconState = useMuteDeafenIconState(tmp7, guildId);
   let tmp10;
-  const useVideoIconState = tmp4(9320).useVideoIconState;
-  tmp4(9320);
+  const useVideoIconState = tmp4(10529).useVideoIconState;
+  tmp4(10529);
   if (arg0 === tmp6.USER) {
     tmp10 = id;
   }
@@ -88,7 +88,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (arg0 === tmp6.STREAM) {
     tmp15 = id;
   }
-  const effectiveVolume = tmp2Result(tmp15, tmp4(5920).MediaEngineContextTypes.STREAM).effectiveVolume;
+  const effectiveVolume = tmp2Result(tmp15, tmp4(6033).MediaEngineContextTypes.STREAM).effectiveVolume;
   const tmp2Result2 = MobileAudioOutputExperimentDefault;
   showTileVolumeIndicator = tmp2Result2.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
@@ -97,13 +97,13 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result9 = tmp4(18659);
+  const tmp4Result9 = tmp4(18831);
   isRTCDisconnectedUIVisible = tmp4Result9.useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [videoIconState];
   const items4 = [tmp];
   const tmp4Result10 = tmp4(563);
   const stateFromStores2 = tmp4Result10.useStateFromStores(items3, () => ChannelStore.getChannel(c2), items4);
-  const tmp4Result11 = tmp4(11336);
+  const tmp4Result11 = tmp4(11891);
   isStageUnifiedCall = tmp4Result11.useIsStageUnifiedCall(stateFromStores2, "useVoicePanelCardUserStateIcons");
   const items5 = [muteDeafenIconState];
   const items6 = [isStageUnifiedCall, arg0, id, tmp];

@@ -1,24 +1,23 @@
-// Module ID: 19827
-// Function ID: 19828
+// Module ID: 20019
+// Function ID: 20020
 // Name: AgeVerificationManager
-// Dependencies: [6920, 4991, 6196, 5045, 1385, 1072, 7557, 3, 1094, 13597, 8245, 7715, 7542, 7353, 6783, 6620, 2]
+// Dependencies: [6973, 5092, 6309, 5146, 1385, 1072, 3, 1094, 14117, 8337, 8593, 11836, 7816, 6767, 6732, 2]
 
-// Module 19827 (AgeVerificationManager)
+// Module 20019 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1094 */;
 import UserStore2 from "UserStore" /* 1385 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6620 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6783 */;
-import Constants2 from "Constants" /* 7557 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7715 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8245 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 13597 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6920 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import MessageStore from "MessageStore" /* 6196 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6732 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6767 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8337 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8593 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 14117 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6973 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import MessageStore from "MessageStore" /* 6309 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 const UserStore = UserStore2;
@@ -69,7 +68,6 @@ function handleLoadChannelMessages(channelId) {
 }
 const transformUser = UserStore2.transformUser;
 ({ ChannelTypes: c9, MAX_MESSAGES_PER_CHANNEL: c10 } = Constants);
-const SafetyToastType = Constants2.SafetyToastType;
 let tmp3 = new LoggerDefault("AgeVerificationManager");
 let closure_11 = tmp3;
 class AgeVerificationManager extends AutomaticLifecycleManager {
@@ -105,7 +103,7 @@ class AgeVerificationManager extends AutomaticLifecycleManager {
           tmp4 = type1 !== tmp3.GUILD_MEDIA;
         }
         if (!tmp4) {
-          const obj = closure_1_0(closure_1_2[12]);
+          const obj = closure_1_0(closure_1_2[11]);
           obj.preloadForumThreads(channel);
         }
       }
@@ -128,7 +126,7 @@ class AgeVerificationManager extends AutomaticLifecycleManager {
           const arr = ChannelMessagesDefault;
           const item = arr.forEach((channelId) => {
             channelId = channelId.channelId;
-            const obj = closure_1_1(closure_1_2[15]);
+            const obj = closure_1_1(closure_1_2[14]);
             return obj.clear(channelId);
           });
           let channelId = SelectedChannelStore.getChannelId();

@@ -1,9 +1,9 @@
-// Module ID: 12565
-// Function ID: 12566
+// Module ID: 12032
+// Function ID: 12033
 // Name: WidgetActionCreators
-// Dependencies: [5, 1385, 1072, 572, 1282, 7860, 1242, 2]
+// Dependencies: [5, 1385, 1072, 572, 1282, 7296, 1242, 2]
 
-// Module 12565 (WidgetActionCreators)
+// Module 12032 (WidgetActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

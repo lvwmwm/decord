@@ -1,29 +1,29 @@
-// Module ID: 18439
-// Function ID: 18440
+// Module ID: 18611
+// Function ID: 18612
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 18440, 1072, 18429, 21, 18442, 7025, 5142, 575, 18417, 5319, 1627, 18443, 18444, 18445, 18527, 18720, 1652, 18446, 18426, 18431, 18428, 18815, 5322, 11730, 2]
+// Dependencies: [32, 19, 17, 18612, 1072, 18601, 21, 18614, 7352, 5243, 575, 18589, 5432, 1627, 18615, 18616, 18617, 18699, 18910, 1652, 18618, 18598, 18603, 18600, 19005, 5435, 12358, 2]
 
-// Module 18439 (MainChannels)
+// Module 18611 (MainChannels)
 import nativeDefault from "native" /* 575 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5322 */;
-import StartupProfiler from "StartupProfiler" /* 11730 */;
-import useAppFrameDefault from "useAppFrame" /* 18417 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 18426 */;
-import getJankScreenName from "getJankScreenName" /* 18428 */;
-import JankScreenConstants from "JankScreenConstants" /* 18429 */;
-import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 18431 */;
-import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 18442 */;
-import messages_MessagesDefault from "messages/Messages" /* 18445 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18446 */;
-import RedesignChannelListDefault from "RedesignChannelList" /* 18527 */;
-import HomePanelContent from "HomePanelContent" /* 18720 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5435 */;
+import StartupProfiler from "StartupProfiler" /* 12358 */;
+import useAppFrameDefault from "useAppFrame" /* 18589 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 18598 */;
+import getJankScreenName from "getJankScreenName" /* 18600 */;
+import JankScreenConstants from "JankScreenConstants" /* 18601 */;
+import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 18603 */;
+import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 18614 */;
+import messages_MessagesDefault from "messages/Messages" /* 18617 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18618 */;
+import RedesignChannelListDefault from "RedesignChannelList" /* 18699 */;
+import HomePanelContent from "HomePanelContent" /* 18910 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 18440 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 18612 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const StartupProfilerDefault = StartupProfiler;
@@ -56,11 +56,11 @@ function LeftPanelContent(panelStyles) {
   const effect = react.useEffect(() => {
     ref.current = current;
   }, items);
-  let tmp12 = tmp(7025)(ref);
+  let tmp12 = tmp(7352)(ref);
   if (null != first && first !== React4) {
     tmp12 = first;
   }
-  isChatBesideChannelList = tmp(5319)().isChatBesideChannelList;
+  isChatBesideChannelList = tmp(5432)().isChatBesideChannelList;
   top = tmp(1627)().top;
   const items1 = [tmp3, top];
   const memo = obj2.useMemo(() => {
@@ -74,9 +74,9 @@ function LeftPanelContent(panelStyles) {
     const items = [closure_0.side, isChatBesideChannelList && closure_0.sideTablet];
     return items;
   }, items2);
-  const sum = metroImportAll + tmp(18443)();
+  const sum = metroImportAll + tmp(18615)();
   let num = 0;
-  const NativeFreezeScreens = tmp4(18444).NativeFreezeScreens;
+  const NativeFreezeScreens = tmp4(18616).NativeFreezeScreens;
   if (null != first && first !== React4) {
     num = 1;
   }
@@ -140,7 +140,7 @@ function LeftPanelHomeDrawerContainer() {
   }
   items = [tmp7, ];
   const obj5 = { gesture, children: unpackModuleId(LeftPanelContent, { panelStyles }) };
-  const NonCollapsableGestureDetector = tmp(18815).NonCollapsableGestureDetector;
+  const NonCollapsableGestureDetector = tmp(19005).NonCollapsableGestureDetector;
   items[1] = unpackModuleId(NonCollapsableGestureDetector, obj5);
   return tmp6(Provider, obj2);
 }

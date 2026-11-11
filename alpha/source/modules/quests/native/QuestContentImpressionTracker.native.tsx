@@ -1,14 +1,14 @@
-// Module ID: 14961
-// Function ID: 14962
+// Module ID: 15153
+// Function ID: 15154
 // Name: QuestContentImpressionTracker
-// Dependencies: [32, 19, 2117, 9783, 1072, 21, 7360, 6789, 504, 9813, 14962, 6846, 2]
+// Dependencies: [32, 19, 2117, 10070, 1072, 21, 7822, 6773, 504, 10100, 15154, 5282, 2]
 // Exports: BillableAdPlacementImpressionTrackerNative, QuestContentImpressionTrackerNative
 
-// Module 14961 (QuestContentImpressionTracker)
+// Module 15153 (QuestContentImpressionTracker)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9783 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 10070 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
 import size from "module_2" /* 2 */;
@@ -29,8 +29,8 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   let tmp3 = obj.useStateFromStores(items, () => state.getState()) === AppStates.ACTIVE;
   const tmp5 = visibilityRef;
   const ref = react.useRef(null);
-  let tmp6 = visibilityRef(6789)(tmp3);
-  const obj2 = adContentIds2(9813);
+  let tmp6 = visibilityRef(6773)(tmp3);
+  const obj2 = adContentIds2(10100);
   const adContentImpressionTrackerProps = obj2.useAdContentImpressionTrackerProps(skipRemountKey);
   const adContentIds = adContentImpressionTrackerProps.adContentIds;
   const obj3 = { adContentIds };
@@ -41,7 +41,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   let overrideVisibility = obj3.overrideVisibility;
   const joined = adContentIds2.join("_");
   let items1 = [joined];
-  const obj4 = adContentIds2(7360);
+  const obj4 = adContentIds2(7822);
   const tmp10 = _slicedToArray(obj4.useRecyclingState(false, items1), 2);
   dependencyMap = tmp12;
   let items2 = [adContentIds2, tmp10[1], visibilityRef];
@@ -163,7 +163,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
     overrideVisibility = first;
   }
   const obj6 = { focused: tmp3, focusedChanged: tmp3 !== tmp6, reference: ref, isFocused: tmp3 };
-  const obj5 = { visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(6789)(overrideVisibility) };
+  const obj5 = { visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(6773)(overrideVisibility) };
   const merged1 = Object.assign(skipRemountKey);
   const merged2 = Object.assign(obj5);
   let tmp16;
@@ -171,12 +171,12 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
     tmp16 = key;
   }
   const obj7 = { key: tmp16, adContentIds };
-  const QuestContentImpressionTracker = tmp(14962).QuestContentImpressionTracker;
+  const QuestContentImpressionTracker = tmp(15154).QuestContentImpressionTracker;
   const tmp18 = "questOrQuests" in skipRemountKey;
   const merged3 = Object.assign(obj6);
   const tmp17 = createElement;
   if (tmp18) {
-    obj7.adCreativeType = tmp(6846).AdCreativeType.QUEST;
+    obj7.adCreativeType = tmp(5282).AdCreativeType.QUEST;
     tmp20 = obj7;
   } else {
     obj7.adCreativeType = skipRemountKey.adCreativeType;

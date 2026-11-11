@@ -1,19 +1,19 @@
-// Module ID: 11192
-// Function ID: 11193
+// Module ID: 10994
+// Function ID: 10995
 // Name: MarkupReactGameMentionRule
-// Dependencies: [19, 17, 5884, 21, 575, 5142, 5753, 5885, 8756, 11193, 5768, 2149, 1113, 11194, 6161, 2150, 8217, 5844, 9407, 9427, 7547, 2]
+// Dependencies: [19, 17, 5997, 21, 575, 5243, 5866, 5998, 9311, 10995, 5881, 2149, 1113, 10996, 6274, 2150, 8309, 5957, 10214, 10219, 9467, 2]
 // Exports: createFetchingGameMentionRule
 
-// Module 11192 (MarkupReactGameMentionRule)
+// Module 10994 (MarkupReactGameMentionRule)
 import nativeDefault from "native" /* 575 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5884 */;
-import useGame from "useGame" /* 7547 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9407 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9427 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
+import useGame from "useGame" /* 9467 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10214 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -40,12 +40,12 @@ class MarkupGameMention {
     }
     const gameId = node.gameId;
     const muted = state.muted;
-    let obj = state(8756);
+    let obj = state(9311);
     const gameMentionData = obj.useGameMentionData(gameId);
-    let obj2 = state(11193);
+    let obj2 = state(10995);
     const previewMentionLayout = obj2.usePreviewMentionLayout();
     let variant;
-    const obj3 = state(5768);
+    const obj3 = state(5881);
     const fontScale = obj3.useFontScale();
     if (previewMentionLayout != null) {
       variant = previewMentionLayout.variant;
@@ -57,7 +57,7 @@ class MarkupGameMention {
     if (previewMentionLayout != null) {
       prop = previewMentionLayout.maxFontSizeMultiplier;
     }
-    const fontSize = tmp(5753).TextStyleSheet[variant].fontSize;
+    const fontSize = tmp(5866).TextStyleSheet[variant].fontSize;
     let num = Infinity;
     if (null != prop) {
       num = Infinity;
@@ -65,7 +65,7 @@ class MarkupGameMention {
         num = prop;
       }
     }
-    const tmpResult = state(5885);
+    const tmpResult = state(5998);
     const minResult = min(tmpResult.scaleLineHeight(fontSize, fontScale), fontSize * num);
     let value;
     if (previewMentionLayout != null) {
@@ -96,14 +96,14 @@ class MarkupGameMention {
     if (mentionPillOffsetY == null) {
       let prop1;
       if (true === state.noStyleAndInteraction) {
-        prop1 = tmp(11194).MENTION_PILL_OFFSET_Y;
+        prop1 = tmp(10996).MENTION_PILL_OFFSET_Y;
       }
       mentionPillOffsetY = prop1;
     }
     let result1;
     if (null != mentionPillOffsetY) {
       const result = mentionPillOffsetY * minResult;
-      result1 = result / tmp(5753).TextStyleSheet[variant].fontSize;
+      result1 = result / tmp(5866).TextStyleSheet[variant].fontSize;
     }
     if (null != result1) {
       const items = [tmp11.inlineRoot, ];
@@ -115,7 +115,7 @@ class MarkupGameMention {
     } else {
       inlineRoot = tmp11.inlineRoot;
     }
-    const Stack = tmp(6161).Stack;
+    const Stack = tmp(6274).Stack;
     const tmp20 = closure_7;
     if (null != value) {
       const items2 = [tmp11.pill, ];
@@ -129,18 +129,18 @@ class MarkupGameMention {
     const tmpResult2 = state(2150);
     if (tmpResult2.isNullOrEmpty(tmp13Result)) {
       const obj8 = { size: "custom", color: str, style: tmp11.icon, accessible: false };
-      tmp21Result = tmp21(tmp(8217).UnknownGameIcon, obj8);
+      tmp21Result = tmp21(tmp(8309).UnknownGameIcon, obj8);
       tmp23 = tmp21;
     } else {
       const obj9 = { source: obj10, resizeMode: "contain", style: tmp11.icon, accessible: false };
       obj10 = { uri: tmp13Result };
-      tmp21Result = tmp21(tmp12(5844), obj9);
+      tmp21Result = tmp21(tmp12(5957), obj9);
       tmp23 = tmp21;
     }
     items3 = [tmp21Result, ];
     const obj11 = { variant, color: str, lineClamp: 1, ellipsizeMode: str2, maxFontSizeMultiplier: prop, style: tmp11.name, children: gameName };
     str2 = "tail";
-    const Text = tmp(5753).Text;
+    const Text = tmp(5866).Text;
     if (null != value) {
       str2 = "clip";
     }

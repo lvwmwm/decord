@@ -1,33 +1,33 @@
-// Module ID: 16912
-// Function ID: 16913
+// Module ID: 17075
+// Function ID: 17076
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 5054, 7852, 1072, 1387, 21, 2171, 7390, 7415, 16801, 5376, 16789, 2118, 8814, 1113, 8812, 16800, 16800, 9881, 16809, 16803, 5737, 16893, 16833, 575, 5753, 8894, 8810, 7175, 11555, 16907, 504, 8834, 11544, 8895, 8817, 16125, 16913, 8879, 8891, 5201, 16914, 11545, 11546, 11563, 16812, 5196, 16813, 16835, 16839, 16840, 16844, 16848, 10033, 10034, 2]
+// Dependencies: [109, 19, 17, 5155, 7288, 1072, 1387, 21, 2171, 7852, 7871, 16962, 5489, 16950, 2118, 8475, 1113, 9332, 16961, 16961, 11109, 16970, 16964, 5850, 17056, 16996, 575, 5866, 8540, 8478, 7577, 11791, 17070, 504, 8416, 9463, 8541, 9335, 16284, 17076, 8524, 8535, 5314, 17077, 9464, 9465, 15356, 16973, 5309, 16974, 16998, 17002, 17003, 17007, 17011, 9513, 10891, 2]
 // Exports: default
 
-// Module 16912 (GuildProfileEditForm)
+// Module 17075 (GuildProfileEditForm)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7390 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8812 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8814 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9881 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10033 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10034 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16801 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16803 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16809 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16833 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16893 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8475 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9332 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11109 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16962 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16964 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16970 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16996 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 17056 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
-import UserProfileStore from "UserProfileStore" /* 7852 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import UserProfileStore from "UserProfileStore" /* 7288 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ function EditGuildProfileBanner(user) {
   let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(7390).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(7852).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -102,7 +102,7 @@ function EditGuildProfileBanner(user) {
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(16789, dependencyMap.paths);
+        const tmp14 = asyncRequire(16950, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;
@@ -158,7 +158,7 @@ function GuildProfileTryItOutUpsellExperimentWrapper(onButtonPress) {
     const tmp3Result2 = UserProfileUpsellCardDefault;
     intl = tmp(1113).intl;
     obj5 = { variant: "body-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(5753).Text;
+    Text = tmp(5866).Text;
     intl2 = tmp(1113).intl;
     tmp6Result = tmp6(tmp3Result2, obj3);
   }

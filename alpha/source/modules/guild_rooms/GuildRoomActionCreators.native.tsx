@@ -1,11 +1,11 @@
-// Module ID: 7985
-// Function ID: 7986
+// Module ID: 6802
+// Function ID: 6803
 // Name: GuildRoomActionCreators
-// Dependencies: [5, 7986, 2]
+// Dependencies: [5, 6803, 2]
 // Exports: guildRoomConnect, guildRoomUpdate
 
-// Module 7985 (GuildRoomActionCreators)
-import guildRoomConnect2 from "guildRoomConnect" /* 7986 */;
+// Module 6802 (GuildRoomActionCreators)
+import guildRoomConnect2 from "guildRoomConnect" /* 6803 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

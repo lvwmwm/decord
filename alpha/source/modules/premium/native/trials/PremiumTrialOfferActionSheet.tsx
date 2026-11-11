@@ -1,21 +1,21 @@
-// Module ID: 18045
-// Function ID: 18046
+// Module ID: 18211
+// Function ID: 18212
 // Name: PremiumTrialOfferActionSheet
-// Dependencies: [19, 1387, 1072, 4988, 21, 7390, 7415, 1252, 15544, 10033, 2171, 5390, 18046, 2]
+// Dependencies: [19, 1387, 1072, 5089, 21, 7852, 7871, 1252, 9866, 9513, 2171, 5503, 18212, 2]
 // Exports: default
 
-// Module 18045 (PremiumTrialOfferActionSheet)
+// Module 18211 (PremiumTrialOfferActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
-import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 15544 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 9866 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const openPremiumModalDefault = tmp(10033);
+const openPremiumModalDefault = tmp(9513);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

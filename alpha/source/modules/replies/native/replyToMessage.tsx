@@ -1,19 +1,19 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 12562
+// Function ID: 12563
 // Name: replyToMessage
-// Dependencies: [7903, 1385, 7902, 1072, 1252, 10324, 7715, 10326, 5891, 2]
+// Dependencies: [8719, 1385, 8718, 1072, 1252, 12549, 8593, 12551, 6004, 2]
 // Exports: default
 
-// Module 11841 (replyToMessage)
+// Module 12562 (replyToMessage)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5891 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7715 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 10324 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10326 */;
-import EditMessageStore from "EditMessageStore" /* 7903 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8593 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 12549 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 12551 */;
+import EditMessageStore from "EditMessageStore" /* 8719 */;
 import UserStore from "UserStore" /* 1385 */;
-import PendingReplyStore from "PendingReplyStore" /* 7902 */;
+import PendingReplyStore from "PendingReplyStore" /* 8718 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

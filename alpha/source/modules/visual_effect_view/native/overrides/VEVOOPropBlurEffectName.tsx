@@ -1,14 +1,14 @@
-// Module ID: 18344
-// Function ID: 18345
+// Module ID: 18516
+// Function ID: 18517
 // Name: VEVOOPropBlurEffectName
-// Dependencies: [32, 19, 5731, 21, 5142, 18340, 8250, 7433, 5732, 2]
+// Dependencies: [32, 19, 5844, 21, 5243, 18512, 8041, 7889, 5845, 2]
 
-// Module 18344 (VEVOOPropBlurEffectName)
+// Module 18516 (VEVOOPropBlurEffectName)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5731 */;
+import VEVOOStore from "VEVOOStore" /* 5844 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ const memoResult = react.memo(function VEVOOPropBlurEffectName() {
     hasOwnProperty(obj);
   }, []);
   const obj2 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingVertical, label: "Blur Effect Name", disabled: !first1, leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle, leading: closure_6(require("FormSwitch").FormSwitch, obj3), subLabel: closure_8(closure_7, obj4) };
-  const FormRow = require("module_8250").FormRow;
+  const FormRow = require("module_8041").FormRow;
   obj3 = {
     value: first1,
     onValueChange(arg0) {
@@ -80,7 +80,7 @@ const memoResult = react.memo(function VEVOOPropBlurEffectName() {
       tmp(str);
     }
   };
-  const FormSwitchRow = require("module_8250").FormSwitchRow;
+  const FormSwitchRow = require("module_8041").FormSwitchRow;
   items = [closure_6(FormSwitchRow, obj5), ];
   const BLUR_EFFECT_NAMES = require("VisualEffectViewIOS").BLUR_EFFECT_NAMES;
   const found = BLUR_EFFECT_NAMES.filter((arr) => -1 !== arr.indexOf(first));

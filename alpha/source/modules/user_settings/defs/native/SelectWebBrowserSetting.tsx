@@ -1,16 +1,16 @@
-// Module ID: 17819
-// Function ID: 17820
+// Module ID: 17985
+// Function ID: 17986
 // Name: SelectWebBrowserSetting
-// Dependencies: [8507, 5868, 1113, 1092, 1377, 11694, 2]
+// Dependencies: [9136, 5981, 1113, 1092, 1377, 12317, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 17819 (SelectWebBrowserSetting)
+// Module 17985 (SelectWebBrowserSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import BrowserManager from "BrowserManager" /* 5868 */;
-import SettingsConstants from "SettingsConstants" /* 8507 */;
-import SettingBuilders from "SettingBuilders" /* 11694 */;
+import BrowserManager from "BrowserManager" /* 5981 */;
+import SettingsConstants from "SettingsConstants" /* 9136 */;
+import SettingBuilders from "SettingBuilders" /* 12317 */;
 import size from "module_2" /* 2 */;
 
 function useWebBrowserSettingOptions() {
@@ -53,6 +53,7 @@ function useWebBrowserSettingOptions() {
 }
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
+  hideTitle: true,
   useTitle() {
     const intl = intl4.intl;
     return intl.string(intl4.t["C+DkPu"]);

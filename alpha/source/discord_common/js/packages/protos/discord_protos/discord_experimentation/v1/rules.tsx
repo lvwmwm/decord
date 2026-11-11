@@ -1,16 +1,16 @@
-// Module ID: 8666
-// Function ID: 8667
+// Module ID: 8586
+// Function ID: 8587
 // Name: rules
 // Dependencies: [32, 1197, 1227, 2]
 
-// Module 8666 (rules)
+// Module 8586 (rules)
 import _mod1197 from "module_1197" /* 1197 */;
 import wrappers from "wrappers" /* 1227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite12, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
+let internalBinaryWrite10, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
 
 let tmp;
 let tmp2;
@@ -659,7 +659,7 @@ class Filter$Type extends MessageType3 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { filter: { oneofKind: "r" }, negate: false };
+    obj = { filter: { oneofKind: "Array" }, negate: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -753,14 +753,14 @@ class Filter$Type extends MessageType3 {
       const joined9 = result.join();
     }
     if ("userAgeRange" === negate.filter.oneofKind) {
-      internalBinaryWrite11 = clientRequiredChangesType1.internalBinaryWrite;
+      const internalBinaryWrite11 = clientRequiredChangesType1.internalBinaryWrite;
       const userAgeRange = negate.filter.userAgeRange;
       const tagResult10 = tag.tag(12, _mod1197.WireType.LengthDelimited);
       const result1 = internalBinaryWrite11(userAgeRange, tagResult10.fork(), writeUnknownFields);
       const joined10 = result1.join();
     }
     if ("userIdRange" === negate.filter.oneofKind) {
-      internalBinaryWrite12 = fixed64ValueType.internalBinaryWrite;
+      const internalBinaryWrite12 = fixed64ValueType.internalBinaryWrite;
       const userIdRange = negate.filter.userIdRange;
       const tagResult11 = tag.tag(13, _mod1197.WireType.LengthDelimited);
       const result2 = internalBinaryWrite12(userIdRange, tagResult11.fork(), writeUnknownFields);
@@ -1736,7 +1736,7 @@ class ClientLocation_Location$Type extends MessageType13 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { location: { oneofKind: "r" } };
+    obj = { location: { oneofKind: "Array" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);

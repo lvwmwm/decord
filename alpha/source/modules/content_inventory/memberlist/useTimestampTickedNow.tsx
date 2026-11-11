@@ -1,14 +1,14 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15607
+// Function ID: 15608
 // Name: useTimestampTickedNow
-// Dependencies: [32, 19, 5143, 1089, 504, 4986, 2]
+// Dependencies: [32, 19, 5244, 1089, 504, 5087, 2]
 // Exports: useTimestampTickedNow
 
-// Module 15117 (useTimestampTickedNow)
+// Module 15607 (useTimestampTickedNow)
 import DurationsDefault from "Durations" /* 1089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,23 +1,23 @@
 // Module ID: 2136
 // Function ID: 2137
 // Name: ClipsStore
-// Dependencies: [5, 2137, 502, 8288, 1072, 5995, 16218, 4953, 16219, 1403, 16220, 16222, 16223, 504, 572, 2]
+// Dependencies: [5, 2137, 502, 8779, 1072, 6108, 16380, 5053, 16381, 1403, 16382, 16384, 16385, 504, 572, 2]
 
 // Module 2136 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import DiscordNativeDefault from "DiscordNative" /* 4953 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16218 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 16220 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16222 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16223 */;
+import DiscordNativeDefault from "DiscordNative" /* 5053 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16380 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 16382 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16384 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16385 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2137 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8288 */;
+import ClipsConstants from "ClipsConstants" /* 8779 */;
 import Constants from "Constants" /* 1072 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5995 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 6108 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2;

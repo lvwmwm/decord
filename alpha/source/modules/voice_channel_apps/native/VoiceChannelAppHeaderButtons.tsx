@@ -1,14 +1,14 @@
-// Module ID: 19659
-// Function ID: 19660
+// Module ID: 19851
+// Function ID: 19852
 // Name: VoiceChannelAppHeaderButtons
-// Dependencies: [19, 21, 19660, 19550, 18144, 8685, 1113, 4126, 14661, 12056, 2]
+// Dependencies: [19, 21, 19852, 19739, 18315, 7973, 1113, 4177, 15041, 12207, 2]
 // Exports: default
 
-// Module 19659 (VoiceChannelAppHeaderButtons)
-import _modDef4126 from "module_4126" /* 4126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12056 */;
-import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 14661 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19550 */;
+// Module 19851 (VoiceChannelAppHeaderButtons)
+import _modDef4177 from "module_4177" /* 4177 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12207 */;
+import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 15041 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19739 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -27,17 +27,17 @@ export default function VoiceChannelAppHeaderButtons(arg0) {
   let string;
   ({ channel, inCall } = arg0);
   let id;
-  let obj = id(19660);
+  let obj = id(19852);
   const voiceChannelAppAvailable = obj.useVoiceChannelAppAvailable(channel, inCall);
-  const obj2 = id(19660);
+  const obj2 = id(19852);
   const voiceChannelAppOpen = obj2.useVoiceChannelAppOpen(channel, inCall);
-  const obj3 = id(19660);
+  const obj3 = id(19852);
   const voiceChannelAppVisible = obj3.useVoiceChannelAppVisible(channel);
   id = channel.id;
   let tmp7Result = null;
   if (voiceChannelAppAvailable) {
     const obj4 = {
-      icon: importDefault(voiceChannelAppVisible ? 18144 : 8685),
+      icon: importDefault(voiceChannelAppVisible ? 18315 : 7973),
       accessibilityLabel: string(ZtYyOx),
       onPress() {
           const obj = VoiceChannelAppActionCreators;
@@ -52,14 +52,14 @@ export default function VoiceChannelAppHeaderButtons(arg0) {
     if (voiceChannelAppVisible) {
       ZtYyOx = tmp(1113).t["3jrUBj"];
     } else {
-      ZtYyOx = tmp10(4126).ZtYyOx;
+      ZtYyOx = tmp10(4177).ZtYyOx;
     }
     const items = [closure_3(tmp11, obj4), ];
     let tmp9Result = null;
     if (voiceChannelAppOpen) {
       const obj5 = {
         icon: AssetRegistryDefault,
-        accessibilityLabel: intl2.string(_modDef4126["D+wwh8"]),
+        accessibilityLabel: intl2.string(_modDef4177["D+wwh8"]),
         onPress() {
               const obj = VoiceChannelAppActionCreators;
               return obj.closeVoiceChannelApp(id);

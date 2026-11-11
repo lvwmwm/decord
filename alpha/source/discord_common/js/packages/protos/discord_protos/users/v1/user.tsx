@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite12, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
+let internalBinaryWrite10, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
 
 let obj40;
 let tmp;
@@ -1187,7 +1187,7 @@ class TypingIndicatorEmoji$Type extends MessageType8 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { emoji: { oneofKind: "r" }, animated: false };
+    obj = { emoji: { oneofKind: "Array" }, animated: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -2068,7 +2068,7 @@ class Badge$Type extends MessageType16 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { badge: { oneofKind: "r" } };
+    obj = { badge: { oneofKind: "Array" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -2794,14 +2794,14 @@ class UserData$Type extends MessageType19 {
       const joined15 = result.join();
     }
     if (linkedUsers.perks) {
-      internalBinaryWrite11 = items321.internalBinaryWrite;
+      const internalBinaryWrite11 = items321.internalBinaryWrite;
       const perks = linkedUsers.perks;
       const tagResult19 = tag.tag(14, _mod1197.WireType.LengthDelimited);
       const result1 = internalBinaryWrite11(perks, tagResult19.fork(), writeUnknownFields);
       const joined16 = result1.join();
     }
     if (linkedUsers.badges) {
-      internalBinaryWrite12 = mediumUserType13.internalBinaryWrite;
+      const internalBinaryWrite12 = mediumUserType13.internalBinaryWrite;
       const badges = linkedUsers.badges;
       const tagResult20 = tag.tag(15, _mod1197.WireType.LengthDelimited);
       const result2 = internalBinaryWrite12(badges, tagResult20.fork(), writeUnknownFields);
@@ -3917,7 +3917,7 @@ class PerkConfig$Type extends MessageType29 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { source: [], kind: { oneofKind: "r" } };
+    obj = { source: [], kind: { oneofKind: "Array" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);

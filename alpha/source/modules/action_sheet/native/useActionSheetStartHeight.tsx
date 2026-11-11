@@ -1,12 +1,12 @@
-// Module ID: 10355
-// Function ID: 10356
+// Module ID: 11178
+// Function ID: 11179
 // Name: useActionSheetStartHeight
-// Dependencies: [5391, 1493, 2]
+// Dependencies: [5504, 1493, 2]
 // Exports: default
 
-// Module 10355 (useActionSheetStartHeight)
+// Module 11178 (useActionSheetStartHeight)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5391 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ActionSheetConstants.ACTION_SHEET_START_HEIGHT_RATIO;

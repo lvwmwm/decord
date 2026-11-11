@@ -1,11 +1,11 @@
-// Module ID: 8865
-// Function ID: 8866
+// Module ID: 8509
+// Function ID: 8510
 // Name: useMaybeFetchEquippedCollectibleProducts
-// Dependencies: [19, 1385, 504, 8834, 6911, 8866, 8867, 2]
+// Dependencies: [19, 1385, 504, 8416, 6964, 8510, 8511, 2]
 // Exports: default
 
-// Module 8865 (useMaybeFetchEquippedCollectibleProducts)
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8867 */;
+// Module 8509 (useMaybeFetchEquippedCollectibleProducts)
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8511 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

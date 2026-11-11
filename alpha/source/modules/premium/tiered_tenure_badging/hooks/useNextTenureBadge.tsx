@@ -1,11 +1,11 @@
-// Module ID: 15627
-// Function ID: 15628
+// Module ID: 10018
+// Function ID: 10019
 // Name: useNextTenureBadge
-// Dependencies: [1387, 11595, 2]
+// Dependencies: [1387, 10013, 2]
 // Exports: useNextTenureBadge
 
-// Module 15627 (useNextTenureBadge)
-import useTenureBadging from "useTenureBadging" /* 11595 */;
+// Module 10018 (useNextTenureBadge)
+import useTenureBadging from "useTenureBadging" /* 10013 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
 

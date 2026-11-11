@@ -1,24 +1,24 @@
-// Module ID: 12747
-// Function ID: 12748
+// Module ID: 13434
+// Function ID: 13435
 // Name: AppLauncherViewAllScreen
-// Dependencies: [19, 17, 1498, 21, 5142, 575, 12677, 1627, 11655, 12595, 5809, 7046, 1113, 7071, 5753, 1187, 12638, 12600, 12675, 12643, 12646, 12647, 12596, 11656, 2]
+// Dependencies: [19, 17, 1498, 21, 5243, 575, 13363, 1627, 12488, 13284, 5922, 7364, 1113, 7431, 5866, 1187, 13325, 13289, 13361, 13330, 13333, 13334, 13285, 12489, 2]
 // Exports: default
 
-// Module 12747 (AppLauncherViewAllScreen)
+// Module 13434 (AppLauncherViewAllScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import Pressables from "Pressables" /* 7046 */;
-import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 7071 */;
-import AppLauncherContext from "AppLauncherContext" /* 11655 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12595 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 12677 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import Pressables from "Pressables" /* 7364 */;
+import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 7431 */;
+import AppLauncherContext from "AppLauncherContext" /* 12488 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 13284 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 13363 */;
 import react from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -30,7 +30,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const ApplicationCommandTypes = tmp(5809);
+const ApplicationCommandTypes = tmp(5922);
 const View = react_native.View;
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG = AppLauncherNativeConstants.FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG;

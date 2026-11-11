@@ -1,43 +1,40 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17320
+// Function ID: 17321
 // Name: ChangeSpendingLimitFormState
-// Dependencies: [5, 32, 19, 7794, 17142, 17066, 504, 7481, 17068, 7796, 2]
+// Dependencies: [5, 32, 19, 8673, 17229, 504, 7191, 17231, 17321, 8675, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 17157 (ChangeSpendingLimitFormState)
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7796 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 17068 */;
+// Module 17320 (ChangeSpendingLimitFormState)
+import SpendingLimitUtils from "SpendingLimitUtils" /* 17231 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7794 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c4, closure_6;
+let _require, c1, c4, closure_6, importDefault;
 
-let react = react_mod;
+let _slicedToArray = _slicedToArray_mod;
 let result = size.fileFinishedImporting("modules/parent_tools/ChangeSpendingLimitFormState.tsx");
 
 export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimitModal) {
   let callback1;
-  let closure_5;
-  let closure_7;
-  let hasLoadedSettingsForTeen;
-  let tmp15;
-  let tmp30;
+  let closure_4;
+  let formatted;
+  let tmp14;
+  let tmp29;
   _require = teenId;
+  importDefault = closeChangeSpendingLimitModal;
   const tmp = _require;
-  let obj = require("useSelectedTeenUser");
-  hasLoadedSettingsForTeen = obj.useHasLoadedSettingsForTeen(teenId);
   let ParentalControlledSpendingLimit = require("ParentalControlledUserSettings").ParentalControlledSpendingLimit;
   const controlledSetting = ParentalControlledSpendingLimit.useControlledSetting(teenId);
-  let obj2 = require("get initialized");
+  let obj = require("get initialized");
   const items = [closure_6];
-  const stateFromStores = obj2.useStateFromStores(items, () => closure_6.getSpendingLimit());
-  let obj3 = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => closure_6.getSpendingLimit());
+  let obj2 = require("get initialized");
   const items1 = [closure_6];
-  const stateFromStores1 = obj3.useStateFromStores(items1, () => {
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     const monthlyPurchases = closure_6.getMonthlyPurchases();
     let total_amount;
     if (monthlyPurchases != null) {
@@ -62,86 +59,76 @@ export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimit
   if (str == null) {
     str = "usd";
   }
-  const formatted = str.toLowerCase();
-  let num = tmp(tmp2[7]).CurrencyExponents[formatted];
+  formatted = str.toLowerCase();
+  let num = tmp(tmp2[6]).CurrencyExponents[formatted];
   if (num == null) {
     num = 2;
   }
-  let obj4 = react;
+  let obj3 = react;
   const items2 = [formatted];
   const memo = react.useMemo(() => {
     const obj = SpendingLimitUtils;
     return obj.getCurrencySymbol(formatted);
   }, items2);
-  const memo1 = react.useMemo(tmp(tmp2[8]).getNextRenewalDateLabel, []);
-  react = react.useRef(false);
-  closure_6 = react.useEffectEvent(() => {
-    closure_5.current = true;
+  const memo1 = react.useMemo(tmp(tmp2[7]).getNextRenewalDateLabel, []);
+  _slicedToArray = react.useRef(false);
+  const tmp10 = require("useLoadTeenSettings")(teenId, () => {
+    closure_4.current = true;
     closeChangeSpendingLimitModal();
   });
-  const items3 = [teenId, hasLoadedSettingsForTeen];
   const effect = react.useEffect(() => {
-    if (!hasLoadedSettingsForTeen) {
-      const obj = FamilyCenterActionCreatorsDefault;
-      const result = obj.onTeenSettingsLoadFailure(teenId, closure_6);
-      const obj2 = FamilyCenterActionCreatorsDefault;
-      const teenSettingsAndConsents = obj2.fetchTeenSettingsAndConsents(teenId);
-      return result;
-    }
-  }, items3);
-  const effect1 = react.useEffect(() => {
     let ref;
     return () => {
       if (ref.current) {
-        const obj = closeChangeSpendingLimitModal(hasLoadedSettingsForTeen[9]);
+        const obj = closeChangeSpendingLimitModal(formatted[9]);
         const result = obj.showTeenSettingsLoadErrorToast();
       }
     };
   }, []);
-  const tmp13 = num;
-  [tmp15, closure_7] = num(react.useState(null), 2);
-  const tmp14 = num(react.useState(null), 2);
-  if (tmp15 == null) {
+  let tmp12 = _slicedToArray;
+  const tmp13 = _slicedToArray(react.useState(null), 2);
+  [tmp14, react] = tmp13;
+  if (tmp14 == null) {
     let str2 = "";
     if (null != controlledSetting) {
       const _String = String;
       str2 = String(controlledSetting.amount / 10 ** num);
     }
   }
-  const items4 = [num];
-  let tmp19 = "" === tmp15;
-  const callback = obj4.useCallback((arg0) => {
+  const items3 = [num];
+  let tmp18 = "" === tmp14;
+  const callback = obj3.useCallback((arg0) => {
     const obj = SpendingLimitUtils;
-    return closure_7(obj.sanitizeAmountInput(arg0, num));
-  }, items4);
-  if (tmp19) {
-    tmp19 = null != controlledSetting;
+    return react(obj.sanitizeAmountInput(arg0, num));
+  }, items3);
+  if (tmp18) {
+    tmp18 = null != controlledSetting;
   }
-  let closure_8 = tmp19;
-  const parsed = parseFloat(tmp15);
-  let tmp22 = !Number.isNaN(parsed);
+  closure_6 = tmp18;
+  const parsed = parseFloat(tmp14);
+  let tmp21 = !Number.isNaN(parsed);
   Number.isNaN(parsed);
+  if (tmp21) {
+    tmp21 = parsed >= 0;
+  }
+  let tmp22 = tmp10;
   if (tmp22) {
-    tmp22 = parsed >= 0;
+    tmp22 = tmp18 || tmp21;
+    const tmp23 = tmp18 || tmp21;
   }
-  let tmp23 = hasLoadedSettingsForTeen;
-  if (tmp23) {
-    const tmp24 = tmp19 || tmp22;
-    tmp23 = tmp24;
-  }
-  let closure_9 = tmp23;
+  let closure_7 = tmp22;
   let rounded = null;
-  if (tmp22) {
+  if (tmp21) {
     const _Math = Math;
     rounded = Math.round(parsed * 10 ** num);
   }
-  const tmp13Result = tmp13(obj4.useState(false), 2);
-  let closure_11 = tmp13Result[1];
-  const first = tmp13Result[0];
-  const items5 = [tmp23, tmp19, rounded, teenId, formatted];
-  let obj5 = { isLoaded: hasLoadedSettingsForTeen, amountInput: tmp15, handleAmountChange: callback, currency: formatted, currencySymbol: memo, exponent: num, isClearingCap: tmp19, isOverspending: tmp30, canSave: tmp23, isSubmitting: first, renewalDate: memo1, monthlySpend: stateFromStores1, save: callback1 };
-  tmp30 = null != stateFromStores1;
-  callback1 = obj4.useCallback(formatted(function*(arg0, value) {
+  const tmp12Result = tmp12(obj3.useState(false), 2);
+  let closure_9 = tmp12Result[1];
+  const first = tmp12Result[0];
+  const items4 = [tmp22, tmp18, rounded, teenId, formatted];
+  let obj4 = { isLoaded: tmp10, amountInput: tmp14, handleAmountChange: callback, currency: formatted, currencySymbol: memo, exponent: num, isClearingCap: tmp18, isOverspending: tmp29, canSave: tmp22, isSubmitting: first, renewalDate: memo1, monthlySpend: stateFromStores1, save: callback1 };
+  tmp29 = null != stateFromStores1;
+  callback1 = obj3.useCallback(num(function*(arg0, value) {
     let closure_0;
     let closure_2;
     if (c4 === 2) {
@@ -169,19 +156,19 @@ export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimit
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const tmp37 = closure_9;
+            const tmp37 = closure_7;
             if (tmp37) {
-              closure_11(true);
+              closure_9(true);
               c3 = 1;
-              const tmp12 = closure_8;
+              const tmp12 = closure_6;
               if (tmp12) {
-                const ParentalControlledSpendingLimit2 = tmp(hasLoadedSettingsForTeen[5]).ParentalControlledSpendingLimit;
+                const ParentalControlledSpendingLimit2 = tmp(formatted[4]).ParentalControlledSpendingLimit;
                 c1 = 2;
                 c4 = 1;
                 const obj4 = { value: ParentalControlledSpendingLimit2.updateControlledSetting(tmp, null), done: false };
                 return obj4;
               } else if (null != rounded) {
-                const ParentalControlledSpendingLimit = tmp(hasLoadedSettingsForTeen[5]).ParentalControlledSpendingLimit;
+                const ParentalControlledSpendingLimit = tmp(formatted[4]).ParentalControlledSpendingLimit;
                 const obj5 = { amount: tmp13, currency: formatted };
                 c1 = 3;
                 c4 = 1;
@@ -194,15 +181,15 @@ export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimit
           }
         } else if (1 === c1) {
           c3 = 0;
-          closure_128_11(false);
-          throw hasLoadedSettingsForTeen;
+          closure_128_9(false);
+          throw formatted;
         } else if (2 === c1) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 0;
-            closure_128_11(false);
+            closure_128_9(false);
             c4 = 3;
             const obj7 = { value, done: true };
             return obj7;
@@ -212,15 +199,15 @@ export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimit
           throw value;
         } else if (arg0 === 2) {
           c3 = 0;
-          closure_128_11(false);
+          closure_128_9(false);
           c4 = 3;
           const obj = { value, done: true };
           return obj;
         }
         c3 = 0;
-        closure_128_11(false);
+        closure_128_9(false);
       } catch (tmp24) {
-        hasLoadedSettingsForTeen = tmp24;
+        formatted = tmp24;
         if (0 === c3) {
           c4 = 3;
           throw tmp24;
@@ -229,15 +216,15 @@ export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimit
         }
       }
     }
-  }), items5);
-  if (tmp30) {
-    tmp30 = stateFromStores1 > 0;
+  }), items4);
+  if (tmp29) {
+    tmp29 = stateFromStores1 > 0;
   }
-  if (tmp30) {
-    tmp30 = null != rounded;
+  if (tmp29) {
+    tmp29 = null != rounded;
   }
-  if (tmp30) {
-    tmp30 = rounded <= stateFromStores1;
+  if (tmp29) {
+    tmp29 = rounded <= stateFromStores1;
   }
-  return obj5;
+  return obj4;
 }

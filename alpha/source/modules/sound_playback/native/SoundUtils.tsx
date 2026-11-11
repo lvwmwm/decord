@@ -1,15 +1,15 @@
-// Module ID: 11173
-// Function ID: 11174
+// Module ID: 10974
+// Function ID: 10975
 // Name: sound_playback/SoundUtils
-// Dependencies: [5, 17, 3, 1624, 11174, 11175, 559, 1377, 2]
+// Dependencies: [5, 17, 3, 1624, 10975, 10976, 559, 1377, 2]
 
-// Module 11173 (sound_playback/SoundUtils)
+// Module 10974 (sound_playback/SoundUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import _modDef11174 from "module_11174" /* 11174 */;
-import _modDef11175 from "module_11175" /* 11175 */;
+import _modDef10975 from "module_10975" /* 10975 */;
+import _modDef10976 from "module_10976" /* 10976 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import "MetaQuestUtils";
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1624 */;
@@ -126,7 +126,7 @@ let obj = { NOTIFICATION: "notification", VOICE: "voice", RING_TONE: "ring_tone"
 let obj3 = { call_calling: obj.VOICE, call_ringing: MetaQuestUtils.isMetaQuest() ? obj.MEDIA : obj.RING_TONE, call_ringing_halloween: MetaQuestUtils.isMetaQuest() ? obj.MEDIA : obj.RING_TONE, camera_on: null, camera_off: null, deafen: null, disconnect: null, mention1: null, mention2: null, mention3: null, message1: null, message2: null, message3: null, mute: null, ptt_start: null, ptt_stop: null, reconnect: null, stage_waiting: null, stream_ended: null, stream_started: null, stream_user_joined: null, stream_user_left: null, soundboard_sound: null, undeafen: null, unmute: null, user_join: null, user_leave: null, user_moved: null, vibing_wumpus: null, activity_end: null, activity_launch: null, activity_user_join: null, activity_user_left: null };
 MetaQuestUtils = MetaQuestUtils_mod;
 ({ VOICE: obj2.camera_on, VOICE: obj2.camera_off, VOICE: obj2.deafen, VOICE: obj2.disconnect, NOTIFICATION: obj2.mention1, NOTIFICATION: obj2.mention2, NOTIFICATION: obj2.mention3, NOTIFICATION: obj2.message1, NOTIFICATION: obj2.message2, NOTIFICATION: obj2.message3, VOICE: obj2.mute, VOICE: obj2.ptt_start, VOICE: obj2.ptt_stop, VOICE: obj2.reconnect, VOICE: obj2.stage_waiting, VOICE: obj2.stream_ended, VOICE: obj2.stream_started, VOICE: obj2.stream_user_joined, VOICE: obj2.stream_user_left, VOICE: obj2.soundboard_sound, VOICE: obj2.undeafen, VOICE: obj2.unmute, VOICE: obj2.user_join, VOICE: obj2.user_leave, VOICE: obj2.user_moved, MEDIA: obj2.vibing_wumpus, NOTIFICATION_NO_VIBRATION: obj2.activity_end, NOTIFICATION_NO_VIBRATION: obj2.activity_launch, NOTIFICATION_NO_VIBRATION: obj2.activity_user_join, NOTIFICATION_NO_VIBRATION: obj2.activity_user_left } = obj);
-let obj4 = { stage_waiting: _modDef11174, vibing_wumpus: _modDef11175 };
+let obj4 = { stage_waiting: _modDef10975, vibing_wumpus: _modDef10976 };
 const result = size.fileFinishedImporting("modules/sound_playback/native/SoundUtils.tsx");
 class tmp4 {
   constructor(arg0, arg1, _volume, outputChannel) {

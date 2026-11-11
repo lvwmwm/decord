@@ -1,35 +1,35 @@
-// Module ID: 18955
-// Function ID: 18956
+// Module ID: 19142
+// Function ID: 19143
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 5143, 4991, 5084, 1385, 8986, 1072, 21, 5142, 575, 6185, 1092, 504, 8953, 1652, 5372, 18956, 5844, 5753, 1113, 8928, 8294, 7046, 9004, 12125, 8750, 18908, 8919, 8999, 1380, 12, 7345, 8913, 5778, 2]
+// Dependencies: [32, 19, 17, 5244, 5092, 5185, 1385, 10137, 1072, 21, 5243, 575, 6298, 1092, 504, 9664, 1652, 5485, 19143, 5957, 5866, 1113, 7540, 8813, 7364, 10150, 12928, 7368, 19098, 8566, 10142, 1380, 12, 7808, 8560, 5891, 2]
 // Exports: default
 
-// Module 18955 (ICYMIMediaMosaic)
+// Module 19142 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7345 */;
-import openMediaModal2 from "openMediaModal" /* 8913 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8919 */;
-import common_VideoDefault from "common/Video" /* 8953 */;
-import ICYMITypes from "ICYMITypes" /* 8999 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9004 */;
-import ICYMIContext from "ICYMIContext" /* 18908 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 18956 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7808 */;
+import openMediaModal2 from "openMediaModal" /* 8560 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8566 */;
+import common_VideoDefault from "common/Video" /* 9664 */;
+import ICYMITypes from "ICYMITypes" /* 10142 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10150 */;
+import ICYMIContext from "ICYMIContext" /* 19098 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 19143 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
-import ICYMIStore from "ICYMIStore" /* 8986 */;
+import ICYMIStore from "ICYMIStore" /* 10137 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp4;
-const useChannelName = tmp4(5778);
+const useChannelName = tmp4(5891);
 function MediaMosaicVideo(source) {
   let autoplay;
   let height;
@@ -58,7 +58,7 @@ function MediaMosaicVideo(source) {
   const obj = get_initialized;
   let isGIFV = obj.useStateFromStores(items, () => ICYMIStore.videosMuted());
   let uri = source.videoURI;
-  const tmp2 = clientStatuses;
+  const tmp2 = closure_15;
   const tmp3 = common_VideoDefault;
   if (uri == null) {
     uri = source.sourceURI;
@@ -96,7 +96,7 @@ function MediaMosaicImage(source) {
   const items = [closure_20, , ];
   const useAnimatedStyle = source(1652).useAnimatedStyle;
   source(1652);
-  items[1] = source(5372).withTiming;
+  items[1] = source(5485).withTiming;
   items[2] = first;
   let c0;
   let c1;
@@ -311,12 +311,12 @@ function OneImageRow(widthOverride) {
     }
     widthOverride = width - context.inset - 2 * context.margin;
   }
-  const obj = { style: items, children: clientStatuses(Media, obj2) };
+  const obj = { style: items, children: closure_15(Media, obj2) };
   items = [, ];
   ({ imageRow: arr[0], topRow: arr[1] } = tmp);
   obj2 = { handlePressMedia, initialIndex: 0, source, dimensions: size };
   size = { width: widthOverride, height: widthOverride / 1.5 };
-  return clientStatuses(metroRequire, obj);
+  return closure_15(metroRequire, obj);
 }
 function ThreeImagesRow(arg0) {
   let end;
@@ -350,7 +350,7 @@ function ThreeImagesRow(arg0) {
     children: sources.map((source, index) => {
       const obj = { handlePressMedia: importDefault, initialIndex: require + index, source, dimensions: size };
       size = { width: (widthOverride - 8) / 3, height: (widthOverride - 8) / 3 };
-      return clientStatuses(Media, obj, require + index);
+      return closure_15(Media, obj, require + index);
     })
   };
   items[2] = end;
@@ -384,7 +384,7 @@ function TwoImagesRow(arg0) {
     style: items,
     children: sources.map((source, initialIndex) => {
       const obj = { handlePressMedia: require, initialIndex, source, dimensions: size };
-      return clientStatuses(Media, obj, initialIndex);
+      return closure_15(Media, obj, initialIndex);
     })
   };
   items[2] = end;
@@ -411,16 +411,16 @@ function ThreeImages(arg0) {
   const obj = { style: items, children: items1 };
   items = [, ];
   ({ imagesContainer: arr[0], imageRow: arr[1] } = tmp);
-  const obj2 = { style: tmp.leftColumn, children: clientStatuses(Media, obj3) };
+  const obj2 = { style: tmp.leftColumn, children: closure_15(Media, obj3) };
   obj3 = { handlePressMedia, initialIndex: 0, source: sources[0], dimensions: size };
   size = { width: 2 * widthOverride / 3 - 4, height: 2 * widthOverride / 3 };
-  items1 = [clientStatuses(metroRequire, obj2), ];
+  items1 = [closure_15(metroRequire, obj2), ];
   const obj4 = { style: tmp.rightColumn, children: items2 };
   items2 = [, ];
   const obj5 = { handlePressMedia, initialIndex: 1, source: sources[1], dimensions: { width: widthOverride / 3, height: widthOverride / 3 } };
-  items2[0] = clientStatuses(Media, obj5);
+  items2[0] = closure_15(Media, obj5);
   const obj6 = { handlePressMedia, initialIndex: 2, source: sources[2], dimensions: { width: widthOverride / 3, height: widthOverride / 3 } };
-  items2[1] = clientStatuses(Media, obj6);
+  items2[1] = closure_15(Media, obj6);
   items1[1] = closure_17(metroRequire, obj4);
   return closure_17(metroRequire, obj);
 }
@@ -450,18 +450,18 @@ function FourImages(arg0) {
   ({ imageRow: arr[0], topRow: arr[1] } = tmp);
   items1 = [, ];
   const obj3 = { handlePressMedia, initialIndex: 0, source: sources[0], dimensions: size };
-  items1[0] = clientStatuses(Media, obj3);
+  items1[0] = closure_15(Media, obj3);
   const obj4 = { handlePressMedia, initialIndex: 1, source: sources[1], dimensions: size };
-  items1[1] = clientStatuses(Media, obj4);
+  items1[1] = closure_15(Media, obj4);
   items2 = [closure_17(metroRequire, obj2), ];
   const obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ imageRow: arr4[0], bottomRow: arr4[1] } = tmp);
   items4 = [, ];
   const obj6 = { handlePressMedia, initialIndex: 2, source: sources[2], dimensions: size };
-  items4[0] = clientStatuses(Media, obj6);
+  items4[0] = closure_15(Media, obj6);
   const obj7 = { handlePressMedia, initialIndex: 3, source: sources[3], dimensions: size };
-  items4[1] = clientStatuses(Media, obj7);
+  items4[1] = closure_15(Media, obj7);
   items2[1] = closure_17(metroRequire, obj5);
   return closure_17(metroRequire, obj);
 }
@@ -486,7 +486,7 @@ function SingleImage(source) {
   const items = [, , ];
   ({ width: arr[0], height: arr[1] } = source);
   items[2] = widthOverride;
-  const obj2 = { style: tmp.imagesContainer, children: clientStatuses(Media, obj3) };
+  const obj2 = { style: tmp.imagesContainer, children: closure_15(Media, obj3) };
   obj3 = {
     handlePressMedia,
     initialIndex,
@@ -516,7 +516,7 @@ function SingleImage(source) {
     style: tmp.singleImage,
     visible
   };
-  return clientStatuses(metroRequire, obj2);
+  return closure_15(metroRequire, obj2);
 }
 class GravityAttachmentMediaMosaic {
   constructor(sources) {
@@ -569,17 +569,17 @@ class GravityAttachmentMediaMosaic {
             children: memo.map((sources, index) => {
                     if (1 === sources.length) {
                       const obj2 = { handlePressMedia, source: sources[0] };
-                      return clientStatuses(OneImageRow, obj2, index);
+                      return closure_15(OneImageRow, obj2, index);
                     } else if (2 === sources.length) {
                       const obj3 = { widthOverride, sources, handlePressMedia, end: index === memo.length - 1 };
-                      return clientStatuses(TwoImagesRow, obj3, index);
+                      return closure_15(TwoImagesRow, obj3, index);
                     } else {
                       let num = 0;
                       if (0 !== index) {
                         num = memo[0].length + 3 * (index - 1);
                       }
                       const obj = { widthOverride, handlePressMedia, offset: num, sources, start: 0 === index, end: index === memo.length - 1 };
-                      return clientStatuses(ThreeImagesRow, obj, index);
+                      return closure_15(ThreeImagesRow, obj, index);
                     }
                   })
           };
@@ -702,7 +702,7 @@ export default function ICYMIMediaMosaic(message) {
     if (embedSources != null) {
       mapped = embedSources.map((source, index) => {
         const obj = { widthOverride, handlePressMedia, initialIndex: index + nonEmbedSources.length, source, visible };
-        return clientStatuses(SingleImage, obj, "gif-" + index);
+        return closure_15(SingleImage, obj, "gif-" + index);
       });
     }
     items3[1] = mapped;

@@ -1,22 +1,22 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 6045
+// Function ID: 6046
 // Name: Connection
-// Dependencies: [32, 5, 5899, 5922, 5933, 2132, 4, 5937, 5981, 5982, 5983, 5931, 5985, 5934, 5986, 5938, 5987, 5990, 2]
+// Dependencies: [32, 5, 6012, 6035, 6046, 2132, 4, 6050, 6094, 6095, 6096, 6044, 6098, 6047, 6099, 6051, 6100, 6103, 2]
 
-// Module 5932 (Connection)
+// Module 6045 (Connection)
 import inject from "inject" /* 2132 */;
-import VideoQualityManager from "VideoQualityManager" /* 5934 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5937 */;
-import cloneDeepDefault from "cloneDeep" /* 5938 */;
-import VideoCodecUtils from "VideoCodecUtils" /* 5981 */;
-import isEqualDefault from "isEqual" /* 5985 */;
-import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 5986 */;
-import reduceDefault from "reduce" /* 5987 */;
+import VideoQualityManager from "VideoQualityManager" /* 6047 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 6050 */;
+import cloneDeepDefault from "cloneDeep" /* 6051 */;
+import VideoCodecUtils from "VideoCodecUtils" /* 6094 */;
+import isEqualDefault from "isEqual" /* 6098 */;
+import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 6099 */;
+import reduceDefault from "reduce" /* 6100 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5899 */;
-import Constants_mod2 from "Constants" /* 5922 */;
-import BaseConnection from "BaseConnection" /* 5933 */;
+import Constants_mod from "Constants" /* 6012 */;
+import Constants_mod2 from "Constants" /* 6035 */;
+import BaseConnection from "BaseConnection" /* 6046 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -151,7 +151,7 @@ class Connection extends BaseConnection {
           tmp11 = false === obj.soundshareSentSpeakingEvent;
         }
         if (tmp11) {
-          closure_0.emit(tmp3(5937).BaseConnectionEvent.SoundshareSpeaking);
+          closure_0.emit(tmp3(6050).BaseConnectionEvent.SoundshareSpeaking);
           closure_0.soundshareSentSpeakingEvent = true;
         }
       }
@@ -404,7 +404,7 @@ class Connection extends BaseConnection {
               if (diff1 >= 0) {
                 let num = 1;
                 let num2 = 100;
-                const tmp6 = tmp24(5990)(diff1 / (diff + diff1), 0, 1);
+                const tmp6 = tmp24(6103)(diff1 / (diff + diff1), 0, 1);
                 closure_0.emit(discord_common_BaseConnectionEvent.BaseConnectionEvent.OutboundLossRate, 100 * tmp6);
               }
             }
@@ -1712,7 +1712,7 @@ class Connection extends BaseConnection {
           FIXED = constants7.FIXED;
         }
         const emit = self.emit;
-        const Video = tmp8(5937).BaseConnectionEvent.Video;
+        const Video = tmp8(6050).BaseConnectionEvent.Video;
         ({ userId, audioSSRC } = self);
         const ssrc = self.videoStreamParameters[num5].ssrc;
         const ssrc2 = self.videoStreamParameters[num5].ssrc;
@@ -1854,7 +1854,7 @@ class Connection extends BaseConnection {
           const self2 = this;
           const error = new Error("Invalid rid");
           closure_0(error);
-          return { v: "r" };
+          return { v: "Array" };
         } else {
           const items = [];
           if (!isEqualDefault(self.videoStreamParameters[findIndexResult], closure_1[findIndexResult])) {
@@ -2222,13 +2222,6 @@ class Connection extends BaseConnection {
     const processMLSWelcome = conn.processMLSWelcome;
     if (processMLSWelcome != null) {
       processMLSWelcome(lastPreparedTransitionId, arg1, arg2);
-    }
-  }
-  getMLSPairwiseFingerprint(arg0, arg1, arg2) {
-    const conn = this.conn;
-    const getMLSPairwiseFingerprint = conn.getMLSPairwiseFingerprint;
-    if (getMLSPairwiseFingerprint != null) {
-      const mLSPairwiseFingerprint = getMLSPairwiseFingerprint(arg0, arg1, arg2);
     }
   }
   presentDesktopSourcePicker(arg0) {

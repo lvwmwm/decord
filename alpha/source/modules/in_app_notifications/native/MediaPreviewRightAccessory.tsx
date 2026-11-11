@@ -1,36 +1,36 @@
-// Module ID: 11221
-// Function ID: 11222
+// Module ID: 11028
+// Function ID: 11029
 // Name: MediaPreviewRightAccessory
-// Dependencies: [19, 17, 5143, 11162, 21, 5142, 575, 8928, 5753, 5726, 1377, 5730, 8730, 7167, 563, 8764, 11222, 11200, 8786, 8919, 1492, 5844, 7530, 7536, 8953, 10407, 1187, 9599, 2]
+// Dependencies: [19, 17, 5244, 10963, 21, 5243, 575, 7540, 5866, 5839, 1377, 5843, 8014, 7569, 563, 8787, 11029, 11007, 10162, 8566, 1492, 5957, 8567, 8573, 9664, 11030, 1187, 9437, 2]
 // Exports: MediaPreviewRightAccessory
 
-// Module 11221 (MediaPreviewRightAccessory)
+// Module 11028 (MediaPreviewRightAccessory)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import utils_ImageUtils from "utils/ImageUtils" /* 1492 */;
-import useToken from "useToken" /* 5726 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import EyeIcon from "EyeIcon" /* 7167 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7530 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7536 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8764 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8786 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8919 */;
-import PlayIcon from "PlayIcon" /* 8928 */;
-import common_VideoDefault from "common/Video" /* 8953 */;
-import ClipView from "ClipView" /* 9599 */;
-import StickerDefault from "Sticker" /* 10407 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11162 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 11200 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 11222 */;
+import useToken from "useToken" /* 5839 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import PlayIcon from "PlayIcon" /* 7540 */;
+import EyeIcon from "EyeIcon" /* 7569 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8566 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8567 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8573 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8787 */;
+import ClipView from "ClipView" /* 9437 */;
+import common_VideoDefault from "common/Video" /* 9664 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 10162 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10963 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 11007 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 11029 */;
+import StickerDefault from "Sticker" /* 11030 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
@@ -48,7 +48,7 @@ let obj8;
 let size;
 let size1;
 let tmp4;
-const VisualEffectViewDefault = tmp4(5730);
+const VisualEffectViewDefault = tmp4(5843);
 function VideoBadge() {
   let obj2;
   const tmp = closure_11();
@@ -97,7 +97,7 @@ function ObscuredMediaOverlay(isSpoiler) {
   items[2] = tmp11;
   const obj4 = { style: tmp.spoilerIconContainer, children: tmp14Result };
   if (isObscured) {
-    tmp14Result = tmp14(tmp2(8730).ImageWarningIcon, { size: "sm", color: "white" });
+    tmp14Result = tmp14(tmp2(8014).ImageWarningIcon, { size: "sm", color: "white" });
   } else {
     const obj5 = { style: tmp.spoilerPill, children: metroImportAll(EyeIcon.EyeIcon, { size: "sm", color: "white" }) };
     tmp14Result = tmp14(tmp15, obj5);

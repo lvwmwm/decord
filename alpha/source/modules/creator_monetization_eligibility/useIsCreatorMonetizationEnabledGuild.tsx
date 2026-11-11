@@ -1,12 +1,12 @@
-// Module ID: 7492
-// Function ID: 7493
+// Module ID: 7203
+// Function ID: 7204
 // Name: useIsCreatorMonetizationEnabledGuild
-// Dependencies: [5013, 1072, 504, 2]
+// Dependencies: [5114, 1072, 504, 2]
 // Exports: default, isCreatorMonetizationEnabledGuild
 
-// Module 7492 (useIsCreatorMonetizationEnabledGuild)
+// Module 7203 (useIsCreatorMonetizationEnabledGuild)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

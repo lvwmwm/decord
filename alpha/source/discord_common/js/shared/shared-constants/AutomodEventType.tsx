@@ -1,9 +1,9 @@
-// Module ID: 13540
-// Function ID: 13541
+// Module ID: 14065
+// Function ID: 14066
 // Name: AutomodEventType
 // Dependencies: [2]
 
-// Module 13540 (AutomodEventType)
+// Module 14065 (AutomodEventType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodEventType.tsx");

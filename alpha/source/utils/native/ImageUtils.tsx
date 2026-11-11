@@ -27,8 +27,10 @@ function getSrcWithWidthAndHeight(animated) {
   let src;
   let targetHeight;
   let targetWidth;
-  let tmp6;
-  let tmp7;
+  let tmp2;
+  let tmp3;
+  let tmp8;
+  let tmp9;
   function getAttachmentLadderConfig(arg0) {
     try {
       const obj = { location: "native/ImageUtils.getSrcWithWidthAndHeight" };
@@ -50,48 +52,50 @@ function getSrcWithWidthAndHeight(animated) {
   if (flag === undefined) {
     flag = false;
   }
+  let tmp5 = dependencyMap;
+  [tmp2, tmp3] = _slicedToArray(src.split("?"), 2);
   const tmp = _slicedToArray(src.split("?"), 2);
-  const items = [tmp[0], ];
-  const tmp2 = tmp[1];
   let obj = _modDef1487;
-  items[1] = obj.parse(tmp2);
-  let tmp5 = _slicedToArray(items, 2);
-  [tmp6, tmp7] = tmp5;
-  if (re7.test(tmp6)) {
-    tmp7.format = "webp";
+  const parsed = obj.parse(tmp3);
+  delete tmp6[""];
+  const items = [tmp2, parsed];
+  [tmp8, tmp9] = items;
+  _slicedToArray(items, 2);
+  if (re7.test(tmp8)) {
+    tmp9.format = "webp";
   } else if (null != format) {
-    tmp7.format = format;
+    tmp9.format = format;
   }
   if (targetWidth > closure_5) {
-    targetWidth = tmp9;
+    targetWidth = tmp11;
   }
   if (targetHeight > closure_5) {
-    targetHeight = tmp9;
+    targetHeight = tmp11;
   }
   if (targetWidth !== sourceWidth) {
-    const tmp10 = getAttachmentLadderConfig("native/ImageUtils.getSrcWithWidthAndHeight");
+    const tmp12 = getAttachmentLadderConfig("native/ImageUtils.getSrcWithWidthAndHeight");
     size = { width: targetWidth, height: targetHeight };
-    if (null != tmp10) {
-      const obj2 = { targetWidth, targetHeight, sourceWidth, sourceHeight, maxUpscale: obj3.getSnapDownMaxUpscale(tmp10, react_nativeDefault()), ladder: tmp10.ladder };
+    if (null != tmp12) {
+      const obj2 = { targetWidth, targetHeight, sourceWidth, sourceHeight, maxUpscale: obj3.getSnapDownMaxUpscale(tmp12, react_nativeDefault()), ladder: tmp12.ladder };
       const snapAttachmentDimensions = AttachmentImageLadder.snapAttachmentDimensions;
       AttachmentImageLadder;
       obj3 = AttachmentImageLadder;
       size = snapAttachmentDimensions(obj2);
     }
-    const tmp14 = size.width === sourceWidth && size.height === sourceHeight;
-    if (!tmp14) {
-      tmp7.width = size.width | 0;
-      tmp7.height = size.height | 0;
+    const tmp16 = size.width === sourceWidth && size.height === sourceHeight;
+    if (!tmp16) {
+      tmp9.width = size.width | 0;
+      tmp9.height = size.height | 0;
     }
   }
   if (flag) {
-    tmp7.animated = true;
+    tmp9.animated = true;
   }
-  let text = tmp6;
-  const tmp3Result = _modDef12;
-  if (!tmp3Result.isEmpty(tmp7)) {
+  let text = tmp8;
+  const tmp4Result = _modDef12;
+  if (!tmp4Result.isEmpty(tmp9)) {
     _modDef1487;
-    text = `${tmp6}?${obj5.stringify(tmp7)}`;
+    text = `${tmp8}?${obj5.stringify(tmp9)}`;
   }
   return text;
 }
@@ -129,7 +133,7 @@ function getPaletteForAvatarMobile(automodAvatarURL) {
 }
 const PixelRatio = react_native.PixelRatio;
 let closure_5 = Constants.MEDIA_PROXY_MAX_TARGET_RESOLUTION;
-let tmp2 = /\.(gif)$/i;
+const tmp2 = /\.(gif)$/i;
 const re6 = tmp2;
 const tmp3 = /\.(avif)$/i;
 const re7 = tmp3;

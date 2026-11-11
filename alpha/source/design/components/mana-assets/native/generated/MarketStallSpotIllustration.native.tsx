@@ -1,26 +1,26 @@
-// Module ID: 20368
-// Function ID: 20369
+// Module ID: 20563
+// Function ID: 20564
 // Name: MarketStallSpotIllustration
-// Dependencies: [19, 21, 20369, 20370, 20371, 7138, 5844, 2]
+// Dependencies: [19, 21, 20564, 20565, 20566, 7689, 5957, 2]
 // Exports: MarketStallSpotIllustration
 
-// Module 20368 (MarketStallSpotIllustration)
+// Module 20563 (MarketStallSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7138 */;
-import _modDef20369 from "module_20369" /* 20369 */;
-import _modDef20370 from "module_20370" /* 20370 */;
-import _modDef20371 from "module_20371" /* 20371 */;
+import react_native from "react-native" /* 7689 */;
+import _modDef20564 from "module_20564" /* 20564 */;
+import _modDef20565 from "module_20565" /* 20565 */;
+import _modDef20566 from "module_20566" /* 20566 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef20369 };
+let obj2 = { uri: _modDef20564 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef20370 };
+let obj3 = { uri: _modDef20565 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef20371 };
-({ uri: _modDef20371 });
+obj[3] = { uri: _modDef20566 };
+({ uri: _modDef20566 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/MarketStallSpotIllustration.native.tsx");
 

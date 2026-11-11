@@ -1,27 +1,27 @@
-// Module ID: 8646
-// Function ID: 8647
+// Module ID: 9287
+// Function ID: 9288
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5142, 575, 6836, 6165, 5753, 8647, 8648, 8649, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 6898, 6278, 5866, 9288, 9289, 9290, 2]
 
-// Module 8646 (utils/ChangeLogUtils)
+// Module 9287 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import LegacyTokens from "LegacyTokens" /* 6836 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8649 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import LegacyTokens from "LegacyTokens" /* 6898 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 9290 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5142 */;
-import CustomMarkup from "CustomMarkup" /* 6165 */;
+import createStyles_mod from "createStyles" /* 5243 */;
+import CustomMarkup from "CustomMarkup" /* 6278 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_4, item, length;
+let closure_4, dependencyMap, item, length;
 
 let obj2;
 let obj3;
 let tmp2;
-const MarkupRulesUtils = tmp2(8648);
+const MarkupRulesUtils = tmp2(9289);
 function ChangeLogLink(arg0) {
   let node;
   let output;
@@ -100,15 +100,15 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5753).Text;
+    Paragraph = output(5866).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8647);
+  const obj = output(9288);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8647);
+    const tmp5Result = tmp5(9288);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;
@@ -172,25 +172,26 @@ obj3 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: 
 ({ fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED });
 let closure_6 = createStyles(obj);
 const obj5 = {
-  link(inlineStoreParams) {
-    const styling = inlineStoreParams;
+  link(styling) {
     return {
       react(node, output, state) {
         return <ChangeLogLink key={arg2.key} accessibilityRole="link" node={arg0} output={arg1} state={arg2} styling={styling} />;
       }
     };
   },
-  lheading(dependencyMap) {
+  lheading(arg0) {
+    const components = arg0;
     return {
       react(className, fn, key) {
-        return jsx(dependencyMap.components.LHeading, { className: className.className, children: fn(className.content, key) }, key.key);
+        return jsx(components.components.LHeading, { className: className.className, children: fn(className.content, key) }, key.key);
       }
     };
   },
-  heading(dependencyMap) {
+  heading(arg0) {
+    const components = arg0;
     return {
       react(className, fn, key) {
-        return jsx(dependencyMap.components.Heading, { className: className.className, level: className.level, children: fn(className.content, key) }, key.key);
+        return jsx(components.components.Heading, { className: className.className, level: className.level, children: fn(className.content, key) }, key.key);
       }
     };
   },
@@ -222,10 +223,10 @@ const obj5 = {
       return <ChangeLogStrong key={arg2.key} node={arg0} output={arg1} state={arg2} />;
     }
   },
-  paragraph(dependencyMap) {
+  paragraph(styling) {
     return {
       react(node, output, state) {
-        return <ChangeLogParagraph key={arg2.key} node={arg0} output={arg1} state={arg2} styling={dependencyMap} />;
+        return <ChangeLogParagraph key={arg2.key} node={arg0} output={arg1} state={arg2} styling={styling} />;
       }
     };
   }

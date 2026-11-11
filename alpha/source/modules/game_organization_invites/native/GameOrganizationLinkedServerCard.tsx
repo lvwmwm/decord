@@ -1,21 +1,21 @@
-// Module ID: 13467
-// Function ID: 13468
+// Module ID: 13981
+// Function ID: 13982
 // Name: GameOrganizationLinkedServerCard
-// Dependencies: [19, 17, 21, 7023, 5142, 575, 1411, 7043, 6161, 5753, 1113, 2]
+// Dependencies: [19, 17, 21, 7654, 5243, 575, 1411, 7381, 6274, 5866, 1113, 2]
 // Exports: default
 
-// Module 13467 (GameOrganizationLinkedServerCard)
+// Module 13981 (GameOrganizationLinkedServerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import Stack_Stack from "Stack/Stack" /* 6161 */;
-import GuildIcon from "GuildIcon" /* 7023 */;
-import Card_Card from "Card/Card" /* 7043 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import Stack_Stack from "Stack/Stack" /* 6274 */;
+import Card_Card from "Card/Card" /* 7381 */;
+import GuildIcon from "GuildIcon" /* 7654 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -83,13 +83,13 @@ export default function GameOrganizationLinkedServerCard(linkedGuild) {
   let tmp7Result = null;
   if (null != presenceCount) {
     const obj8 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_6, style: tmp.autoWidth, children: items3 };
-    const Stack4 = tmp4(6161).Stack;
+    const Stack4 = tmp4(6274).Stack;
     const obj9 = { style: items2 };
     items2 = [, ];
     ({ dot: arr3[0], onlineDot: arr3[1] } = tmp);
     items3 = [React3(View, obj9), ];
     const obj10 = { variant: "body-md/medium", color: "text-muted", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj11) };
-    const Text = tmp4(5753).Text;
+    const Text = tmp4(5866).Text;
     intl = tmp4(1113).intl;
     obj11 = { membersOnline: presenceCount };
     items3[1] = React3(Text, obj10);
@@ -99,13 +99,13 @@ export default function GameOrganizationLinkedServerCard(linkedGuild) {
   let tmp7Result2 = null;
   if (null != memberCount) {
     const obj12 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_6, style: tmp.autoWidth, children: items6 };
-    const Stack5 = tmp4(6161).Stack;
+    const Stack5 = tmp4(6274).Stack;
     const obj13 = { style: items5 };
     items5 = [, ];
     ({ dot: arr6[0], membersDot: arr6[1] } = tmp);
     items6 = [React3(View, obj13), ];
     const obj14 = { variant: "body-md/medium", color: "text-muted", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj15) };
-    const Text2 = tmp4(5753).Text;
+    const Text2 = tmp4(5866).Text;
     intl2 = tmp4(1113).intl;
     obj15 = { count: memberCount };
     items6[1] = React3(Text2, obj14);

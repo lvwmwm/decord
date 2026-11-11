@@ -1,9 +1,9 @@
-// Module ID: 6589
-// Function ID: 6590
+// Module ID: 6702
+// Function ID: 6703
 // Name: UploadVoiceDebugLogsError
 // Dependencies: [1113, 2]
 
-// Module 6589 (UploadVoiceDebugLogsError)
+// Module 6702 (UploadVoiceDebugLogsError)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

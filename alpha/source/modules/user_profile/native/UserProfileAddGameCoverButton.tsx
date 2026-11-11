@@ -1,16 +1,16 @@
-// Module ID: 15245
-// Function ID: 15246
+// Module ID: 12061
+// Function ID: 12062
 // Name: UserProfileAddGameCoverButton
-// Dependencies: [19, 21, 5142, 15233, 575, 7046, 15237, 1113, 10956, 2]
+// Dependencies: [19, 21, 5243, 12048, 575, 7364, 12052, 1113, 10878, 2]
 // Exports: default
 
-// Module 15245 (UserProfileAddGameCoverButton)
+// Module 12061 (UserProfileAddGameCoverButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15233 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15237 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12048 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 12052 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -25,11 +25,11 @@ export default function UserProfileAddGameCoverButton(ref) {
   const widgetType = ref.widgetType;
   const coverWidth = ref.coverWidth;
   const tmp = closure_4();
-  const PressableOpacity = ref(7046).PressableOpacity;
+  const PressableOpacity = ref(7364).PressableOpacity;
   const intl = ref(1113).intl;
   const items = [tmp.button, { width: coverWidth }];
   ({ size: "md", color: widgetType(575).colors.ICON_MUTED });
-  const PlusLargeIcon = ref(10956).PlusLargeIcon;
+  const PlusLargeIcon = ref(10878).PlusLargeIcon;
   return <PressableOpacity ref={ref} onPress={function onPress() {
     const obj = { widgetType, returnFocusRef: ref };
     return openUserProfileAddGameActionSheetDefault(obj);

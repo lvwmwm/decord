@@ -1,15 +1,15 @@
-// Module ID: 11085
-// Function ID: 11086
+// Module ID: 12181
+// Function ID: 12182
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 11086, 1072, 5260, 559, 1089, 572, 1282, 1242, 2]
+// Dependencies: [5, 12180, 1072, 5373, 559, 1089, 572, 1282, 1242, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 11085 (ApplicationWidgetConfigActions)
+// Module 12181 (ApplicationWidgetConfigActions)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5260 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11086 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5373 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 12180 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Backoff from "Backoff" /* 559 */;
 import Dispatcher from "Dispatcher" /* 572 */;
@@ -43,8 +43,8 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj4 = { value, done: true };
-        return obj4;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
         return { value: "HermesInternal", done: null };
       }
@@ -60,8 +60,8 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
             closure_1 = tmp;
             closure_0 = undefined;
@@ -72,14 +72,14 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
             const obj6 = { url: constants.WIDGET_CONFIGS_FEATURED, rejectWithError: true };
             c4 = 2;
             c5 = 1;
-            const obj8 = { value: HTTP.get(obj6), done: false };
-            return obj8;
+            const obj7 = { value: HTTP.get(obj6), done: false };
+            return obj7;
           }
         } else if (1 === c4) {
           c3 = 0;
           closure_1 = closure_2;
-          const obj2 = closure_129_1(closure_129_2[6]);
-          obj2.dispatch({ type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_FAILURE" });
+          const obj4 = closure_129_1(closure_129_2[6]);
+          obj4.dispatch({ type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_FAILURE" });
           if (!closure_129_9.pending) {
             closure_129_9.fail(() => {
               const oneResult = closure_1_8.one(undefined, closure_1_10);
@@ -88,8 +88,8 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
               });
             });
           }
-          const obj3 = closure_129_1(closure_129_2[8]);
-          obj3.captureException(closure_1);
+          const obj5 = closure_129_1(closure_129_2[8]);
+          obj5.captureException(closure_1);
           throw closure_1;
         } else if (arg0 === 1) {
           c5 = 3;
@@ -97,23 +97,23 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
         } else if (arg0 === 2) {
           c3 = 0;
           c5 = 3;
-          obj = { value, done: true };
-          return obj;
+          const obj8 = { value, done: true };
+          return obj8;
         } else {
           closure_0 = value;
           const obj10 = { type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS", applications: closure_0.body.applications, configs: closure_0.body.configs };
-          const obj7 = closure_129_1(closure_129_2[6]);
-          obj7.dispatch(obj10);
+          obj = closure_129_1(closure_129_2[6]);
+          obj.dispatch(obj10);
           closure_129_9.succeed();
           c3 = 0;
           c5 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp24) {
-        closure_2 = tmp24;
+      } catch (tmp33) {
+        closure_2 = tmp33;
         if (0 === c3) {
           c5 = 3;
-          throw tmp24;
+          throw tmp33;
         } else {
           c4 = 1;
         }

@@ -1,16 +1,16 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 13477
+// Function ID: 13478
 // Name: ConjureTimelineTree
-// Dependencies: [32, 4028, 1113, 2]
+// Dependencies: [32, 4079, 1113, 2]
 // Exports: currentStep, describeNode, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 12807 (ConjureTimelineTree)
+// Module 13477 (ConjureTimelineTree)
 import intl2 from "intl" /* 1113 */;
-import _modDef4028 from "module_4028" /* 4028 */;
+import _modDef4079 from "module_4079" /* 4079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let error, map, map1, map2, map3, set, set2;
+let error, map, map1, set, set2;
 
 function isLegacyControlLineNode(label_key) {
   label_key = undefined;
@@ -149,8 +149,8 @@ function buildTimelineTree(steps, arg1) {
   map = new Map();
   map1 = new Map();
   let sum1 = 0;
-  map2 = new Map();
-  map3 = new Map();
+  const map2 = new Map();
+  const map3 = new Map();
   const segmentOf = ensure(steps).segmentOf;
   let closure_9 = cancelledLaneIds(steps);
   let closure_10 = legacyControlLineIds(steps);
@@ -599,7 +599,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef4028.iwOTgo, preview_ready: _modDef4028.okkgSB, working: _modDef4028.t8skVB, error: _modDef4028.avt0ax, error_service_unavailable: _modDef4028.yreXyD, error_rate_limited: _modDef4028.d8lNBq, error_timeout: _modDef4028.t1R7Rt, error_usage_limit: _modDef4028["9zBM8L"], error_internal_error: _modDef4028.ZnbiGS };
+let obj = { healthcheck_failed: _modDef4079.iwOTgo, preview_ready: _modDef4079.okkgSB, working: _modDef4079.t8skVB, error: _modDef4079.avt0ax, error_service_unavailable: _modDef4079.yreXyD, error_rate_limited: _modDef4079.d8lNBq, error_timeout: _modDef4079.t1R7Rt, error_usage_limit: _modDef4079["9zBM8L"], error_internal_error: _modDef4079.ZnbiGS };
 const weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
@@ -624,7 +624,7 @@ export function describeNode(currentStepResult) {
   const intl = intl2.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef4028.t8skVB;
+    t8skVB = _modDef4079.t8skVB;
   }
   return string(t8skVB);
 }

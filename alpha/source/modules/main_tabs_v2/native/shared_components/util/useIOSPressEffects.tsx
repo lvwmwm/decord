@@ -1,10 +1,10 @@
-// Module ID: 7048
-// Function ID: 7049
+// Module ID: 7384
+// Function ID: 7385
 // Name: useIOSPressEffects
-// Dependencies: [19, 1493, 1652, 1377, 5763, 2]
+// Dependencies: [19, 1493, 1652, 1377, 5876, 2]
 // Exports: useIOSPressEffects
 
-// Module 7048 (useIOSPressEffects)
+// Module 7384 (useIOSPressEffects)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

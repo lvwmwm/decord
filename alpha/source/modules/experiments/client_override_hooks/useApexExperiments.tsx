@@ -1,13 +1,13 @@
-// Module ID: 11705
-// Function ID: 11706
+// Module ID: 12328
+// Function ID: 12329
 // Name: useApexExperiments
-// Dependencies: [32, 19, 1246, 8665, 5361, 1452, 11706, 504, 2]
+// Dependencies: [32, 19, 1246, 8585, 5474, 1452, 12329, 504, 2]
 // Exports: getApexExperiments, useApexExperiments
 
-// Module 11705 (useApexExperiments)
+// Module 12328 (useApexExperiments)
 import apex_ApexTypes from "apex/ApexTypes" /* 1452 */;
-import ExperimentManager from "ExperimentManager" /* 5361 */;
-import experiment from "experiment" /* 8665 */;
+import ExperimentManager from "ExperimentManager" /* 5474 */;
+import experiment from "experiment" /* 8585 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;

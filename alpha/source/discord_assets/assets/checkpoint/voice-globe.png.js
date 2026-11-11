@@ -1,8 +1,8 @@
-// Module ID: 13903
-// Function ID: 13904
+// Module ID: 14379
+// Function ID: 14380
 // Dependencies: [2]
 
-// Module 13903
+// Module 14379
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/voice-globe.png.js");

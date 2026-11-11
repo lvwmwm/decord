@@ -1,23 +1,23 @@
-// Module ID: 9872
-// Function ID: 9873
+// Module ID: 11103
+// Function ID: 11104
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7543, 502, 4991, 7780, 6196, 7910, 1112, 1072, 5147, 7510, 7904, 7522, 1113, 9873, 11, 1282, 8417, 9874, 7906, 1403, 8285, 9876, 8277, 5891, 7715, 6092, 572, 5149, 1089, 10440, 14871, 2]
+// Dependencies: [32, 5, 19, 9042, 502, 5092, 8658, 6309, 8726, 1112, 1072, 5248, 7223, 8720, 8082, 1113, 11104, 11, 1282, 8938, 11092, 8722, 1403, 8780, 11105, 8800, 6004, 8593, 6205, 572, 5250, 1089, 8786, 11156, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 9872 (ThreadCreationHooks)
+// Module 11103 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import MessageConstants from "MessageConstants" /* 5147 */;
-import ThreadHooks from "ThreadHooks" /* 7510 */;
-import DraftStore from "DraftStore" /* 7780 */;
-import MessageParserDefault from "MessageParser" /* 7904 */;
-import SlowmodeStore from "SlowmodeStore" /* 7910 */;
+import MessageConstants from "MessageConstants" /* 5248 */;
+import ThreadHooks from "ThreadHooks" /* 7223 */;
+import DraftStore from "DraftStore" /* 8658 */;
+import MessageParserDefault from "MessageParser" /* 8720 */;
+import SlowmodeStore from "SlowmodeStore" /* 8726 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7543 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 9042 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import MessageStore from "MessageStore" /* 6196 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import MessageStore from "MessageStore" /* 6309 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -103,7 +103,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7522);
+    const tmp17Result = tmp17(8082);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];

@@ -1,9 +1,9 @@
-// Module ID: 9007
-// Function ID: 9008
+// Module ID: 10148
+// Function ID: 10149
 // Name: ICYMILabFeature
 // Dependencies: [2]
 
-// Module 9007 (ICYMILabFeature)
+// Module 10148 (ICYMILabFeature)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/ICYMILabFeature.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 19098
-// Function ID: 19099
+// Module ID: 19285
+// Function ID: 19286
 // Name: usePlaceholderStyles
-// Dependencies: [5143, 9923, 1493, 504, 1652, 5372, 1187, 2]
+// Dependencies: [5244, 9000, 1493, 504, 1652, 5485, 1187, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 19098 (usePlaceholderStyles)
+// Module 19285 (usePlaceholderStyles)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import SearchConstants from "SearchConstants" /* 9923 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import SearchConstants from "SearchConstants" /* 9000 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = SearchConstants.FADE_LAYOUT_ANIMATION_DURATION;

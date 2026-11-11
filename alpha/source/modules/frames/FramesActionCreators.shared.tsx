@@ -1,20 +1,20 @@
-// Module ID: 11072
-// Function ID: 11073
+// Module ID: 12655
+// Function ID: 12656
 // Name: launchFrame
-// Dependencies: [32, 5, 6904, 6905, 5783, 11073, 572, 11016, 6907, 11017, 11075, 11080, 11024, 2]
+// Dependencies: [32, 5, 6956, 6957, 5896, 12656, 572, 7277, 6959, 7278, 12658, 12663, 7285, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 11072 (launchFrame)
+// Module 12655 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5783 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6907 */;
-import createProxyTicket from "createProxyTicket" /* 11016 */;
-import leaveFrame from "leaveFrame" /* 11024 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11073 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5896 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6959 */;
+import createProxyTicket from "createProxyTicket" /* 7277 */;
+import leaveFrame from "leaveFrame" /* 7285 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 12656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6904 */;
-import FramesConstants from "FramesConstants" /* 6905 */;
+import FramesStore from "FramesStore" /* 6956 */;
+import FramesConstants from "FramesConstants" /* 6957 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, closure_1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -244,7 +244,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === metroRequire.MAIN) {
-        const tmp4Result = tmp4(11024);
+        const tmp4Result = tmp4(7285);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);

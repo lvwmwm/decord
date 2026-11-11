@@ -1,12 +1,12 @@
-// Module ID: 6987
-// Function ID: 6988
+// Module ID: 7627
+// Function ID: 7628
 // Name: SpellcheckUtils
-// Dependencies: [5, 6988, 4953, 1377, 6990, 2]
+// Dependencies: [5, 7595, 5053, 1377, 7628, 2]
 // Exports: addResultListener, clearCachedMisspelling, getCachedMisspelling, getCorrections, isMisspelled, isSupported, isSupportedInPopouts, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 6987 (SpellcheckUtils)
-import DiscordNativeDefault from "DiscordNative" /* 4953 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6988 */;
+// Module 7627 (SpellcheckUtils)
+import DiscordNativeDefault from "DiscordNative" /* 5053 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7595 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;

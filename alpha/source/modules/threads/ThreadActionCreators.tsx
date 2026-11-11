@@ -1,25 +1,25 @@
-// Module ID: 8275
-// Function ID: 8276
+// Module ID: 8798
+// Function ID: 8799
 // Name: ThreadActionCreators
-// Dependencies: [5, 4995, 502, 4991, 5074, 8276, 5076, 8416, 1072, 4998, 1282, 572, 6092, 1113, 5891, 8417, 8418, 8421, 8422, 8423, 1380, 5002, 2]
+// Dependencies: [5, 5096, 502, 5092, 5175, 8799, 5177, 8937, 1072, 5099, 1282, 572, 6205, 1113, 6004, 8938, 8939, 8942, 8943, 8944, 1380, 5103, 2]
 
-// Module 8275 (ThreadActionCreators)
+// Module 8798 (ThreadActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl11 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
-import ChannelConstants from "ChannelConstants" /* 4998 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5891 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6092 */;
-import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8276 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8417 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
+import ChannelConstants from "ChannelConstants" /* 5099 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
+import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8799 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8938 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5076 */;
-import ThreadSummaryStore from "ThreadSummaryStore" /* 8416 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5177 */;
+import ThreadSummaryStore from "ThreadSummaryStore" /* 8937 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,8 @@ let closure_14;
 let closure_15;
 let map1;
 let tmp;
-const ApplicationCommandActionCreators = tmp(8418);
-const f94081 = (body) => {
+const ApplicationCommandActionCreators = tmp(8939);
+const f95904 = (body) => {
   const obj = DispatcherDefault;
   const obj2 = { type: "THREAD_UPDATE", channel: closure_4(body.body) };
   obj.dispatch(obj2);
@@ -56,7 +56,7 @@ function patchThread(id, body) {
   const patch = HTTP.patch;
   obj2 = require("HTTPUtils");
   const patchResult = patch(request);
-  return patchResult.then(f94081);
+  return patchResult.then(f95904);
 }
 function dispatchThreadMemberLocalUpdate(id, isJoining) {
   const obj = DispatcherDefault;
@@ -82,7 +82,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f94081);
+    return patchResult.then(f95904);
   },
   lockThread(channel) {
     let closure_0 = channel;
@@ -445,7 +445,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f94081);
+    return patchResult.then(f95904);
   },
   joinThread(channel, arg1) {
     let closure_0 = channel;

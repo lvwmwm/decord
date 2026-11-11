@@ -1,17 +1,17 @@
-// Module ID: 14921
-// Function ID: 14922
+// Module ID: 7585
+// Function ID: 7586
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1072, 21, 5142, 6631, 1113, 7411, 5836, 14922, 7358, 5753, 7150, 1187, 5760, 7067, 7234, 2]
+// Dependencies: [5, 32, 19, 1072, 21, 5243, 7024, 1113, 7400, 5949, 7586, 7351, 5866, 7551, 1187, 5873, 7427, 7424, 2]
 // Exports: default
 
-// Module 14921 (FederatedSocialModal)
+// Module 7585 (FederatedSocialModal)
 import Constants from "Constants" /* 1072 */;
-import PlatformsDefault from "Platforms" /* 6631 */;
+import PlatformsDefault from "Platforms" /* 7024 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,22 +1,22 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 12620
+// Function ID: 12621
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4990, 6901, 4991, 5892, 1072, 6905, 7550, 11859, 11865, 11869, 5063, 13424, 2148, 5801, 11901, 11900, 11070, 6909, 13427, 13428, 7552, 2]
+// Dependencies: [5, 5091, 6953, 5092, 6005, 1072, 6957, 8404, 12607, 12617, 12621, 5164, 13938, 2148, 5914, 12665, 12664, 12653, 6962, 13941, 13942, 8069, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 11868 (tryJoinAsFrame)
+// Module 12620 (tryJoinAsFrame)
 import Constants from "Constants" /* 1072 */;
-import FramesConstants from "FramesConstants" /* 6905 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7552 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11859 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11865 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11869 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 13428 */;
+import FramesConstants from "FramesConstants" /* 6957 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 12607 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12617 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 12621 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 13942 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6901 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import PresenceStore from "PresenceStore" /* 5892 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import PresenceStore from "PresenceStore" /* 6005 */;
 import size from "module_2" /* 2 */;
 
 let application, c8, c9, channelId2, customId, embeddedActivitiesForChannel, inviterUserId, referrerId, source, user;

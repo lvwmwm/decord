@@ -1,14 +1,14 @@
-// Module ID: 11911
-// Function ID: 11912
+// Module ID: 12679
+// Function ID: 12680
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 4991, 4990, 1072, 11912, 11906, 572, 6581, 5063, 11915, 11074, 11916, 6941, 11918, 2]
+// Dependencies: [5, 5092, 5091, 1072, 12680, 12670, 572, 6694, 5164, 12683, 12657, 12684, 6994, 12686, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 11911 (confirmActivityLaunchChecks)
+// Module 12679 (confirmActivityLaunchChecks)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let c5, channelId, closure_5, selfEmbeddedActivities;

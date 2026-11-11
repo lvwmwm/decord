@@ -1,13 +1,13 @@
-// Module ID: 5740
-// Function ID: 5741
+// Module ID: 5853
+// Function ID: 5854
 // Name: LayerScope
-// Dependencies: [32, 19, 17, 1072, 21, 5741, 5742, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5854, 5855, 2]
 // Exports: LayerScope
 
-// Module 5740 (LayerScope)
+// Module 5853 (LayerScope)
 import Constants from "Constants" /* 1072 */;
-import reactDefault from "react" /* 5741 */;
-import LayerContext from "LayerContext" /* 5742 */;
+import reactDefault from "react" /* 5854 */;
+import LayerContext from "LayerContext" /* 5855 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -25,7 +25,7 @@ function Layer(zIndex) {
   let closure_3;
   zIndex = zIndex.zIndex;
   _slicedToArray = undefined;
-  const context = react.useContext(zIndex(5742).LayerContext);
+  const context = react.useContext(zIndex(5855).LayerContext);
   dependencyMap = _slicedToArray(react.useState({}), 2)[1];
   _slicedToArray = react.useRef(null);
   const items = [context];

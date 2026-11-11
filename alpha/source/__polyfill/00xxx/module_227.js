@@ -324,7 +324,7 @@ let items = [
   {
     key: "sort",
     value: function sort() {
-      const f122083 = (arg0, arg1) => {
+      const f123330 = (arg0, arg1) => {
         let obj;
         let tmp;
         [obj] = arg0;
@@ -333,8 +333,8 @@ let items = [
       };
       const _searchParams = this._searchParams;
       const items = [..._searchParams.entries()];
-      this._searchParams = new Map(items.sort(f122083));
-      new Map(items.sort(f122083));
+      this._searchParams = new Map(items.sort(f123330));
+      new Map(items.sort(f123330));
     }
   },
 ,

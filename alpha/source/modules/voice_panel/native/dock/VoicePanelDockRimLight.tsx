@@ -1,13 +1,13 @@
-// Module ID: 14261
-// Function ID: 14262
+// Module ID: 14744
+// Function ID: 14745
 // Name: VoicePanelDockRimLight
-// Dependencies: [19, 21, 1652, 14262, 14263, 2]
+// Dependencies: [19, 21, 1652, 14745, 14746, 2]
 // Exports: VoicePanelDockRimLevel
 
-// Module 14261 (VoicePanelDockRimLight)
+// Module 14744 (VoicePanelDockRimLight)
 import Fragment from "Fragment" /* 21 */;
-import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 14262 */;
-import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 14263 */;
+import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 14745 */;
+import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 14746 */;
 import react from "react" /* 19 */;
 import module_1652 from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 16214
-// Function ID: 16215
+// Module ID: 10015
+// Function ID: 10016
 // Name: PremiumPerkGates
-// Dependencies: [1387, 8286, 6586, 16215, 1398, 2107, 1391, 2]
-// Exports: canEditDiscriminator, canInstallPremiumApplications, canRedeemPremiumPerks, canStreamQuality, canUploadLargeFiles, canUseAnimatedAvatar, canUseAnimatedEmojis, canUseBadges, canUseClientThemes, canUseCollectibles, canUseCustomBackgrounds, canUseCustomCallSounds, canUseCustomStickersEverywhere, canUseEmojisEverywhere, canUseHighVideoUploadQuality, canUseIncreasedGuildCap, canUseIncreasedMessageLength, canUseMonthlyOrbs, canUseMoreQuestOrbs, canUsePremiumAppIcons, canUsePremiumGuildMemberProfile, canUsePremiumProfileCustomization, canUseQuestOrbMultiplier, canUseShopDiscounts, canUseSoundboardEverywhere, getMaxFileSizeForPremiumType, hasBoostDiscount, hasFreeBoosts
+// Dependencies: [1387, 8781, 6699, 10016, 1398, 2107, 1391, 2]
+// Exports: canEditDiscriminator, canInstallPremiumApplications, canRedeemPremiumPerks, canStreamQuality, canUploadLargeFiles, canUseAnimatedAvatar, canUseAnimatedEmojis, canUseBadges, canUseClientThemes, canUseCollectibles, canUseCustomBackgrounds, canUseCustomCallSounds, canUseCustomStickersEverywhere, canUseEmojisEverywhere, canUseHighVideoUploadQuality, canUseIncreasedGuildCap, canUseIncreasedMessageLength, canUseMonthlyOrbs, canUseMoreQuestOrbs, canUsePremiumAppIcons, canUsePremiumGuildMemberProfile, canUsePremiumProfileCustomization, canUseQuestOrbMultiplier, canUseShopDiscounts, canUseSoundboardEverywhere, canUseTenureBadge, getMaxFileSizeForPremiumType, hasBoostDiscount, hasFreeBoosts
 
-// Module 16214 (PremiumPerkGates)
+// Module 10015 (PremiumPerkGates)
 import PerksStateUtils from "PerksStateUtils" /* 1391 */;
 import user2 from "user" /* 1398 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import FileSizeUtils from "FileSizeUtils" /* 6586 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8286 */;
-import ProductCatalog from "ProductCatalog" /* 16215 */;
+import FileSizeUtils from "FileSizeUtils" /* 6699 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8781 */;
+import ProductCatalog from "ProductCatalog" /* 10016 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
 
@@ -144,6 +144,10 @@ export function canUseCustomBackgrounds(currentUser) {
 export function canUseCollectibles(user) {
   const obj = ProductCatalog;
   return obj.canUserUse(user2.Perk.PREMIUM_COLLECTIBLES, user);
+}
+export function canUseTenureBadge(currentUser) {
+  const obj = ProductCatalog;
+  return obj.canUserUse(user2.Perk.PREMIUM_TENURE_BADGE, currentUser);
 }
 export function canUseMonthlyOrbs(stateFromStores) {
   let perks;

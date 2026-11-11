@@ -1,38 +1,38 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16794
+// Function ID: 16795
 // Name: RPCServerManager
-// Dependencies: [32, 7926, 4991, 5054, 5013, 2130, 5892, 5895, 5084, 5045, 1385, 5805, 6585, 1072, 6905, 11864, 5899, 1377, 572, 1252, 16634, 504, 1380, 11986, 16639, 11987, 9413, 7583, 16640, 16642, 9418, 11985, 7949, 2]
+// Dependencies: [32, 8742, 5092, 5155, 5114, 2130, 6005, 6008, 5185, 5146, 1385, 5918, 6698, 1072, 6957, 12616, 6012, 1377, 572, 1252, 16795, 504, 1380, 12780, 16800, 12781, 7232, 15878, 16801, 16803, 7237, 12779, 8765, 2]
 
-// Module 16633 (RPCServerManager)
+// Module 16794 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import Constants2 from "Constants" /* 5899 */;
-import Constants3 from "Constants" /* 6585 */;
-import FramesConstants from "FramesConstants" /* 6905 */;
-import frameDeepLinks from "frameDeepLinks" /* 7583 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7949 */;
-import transformUserDefault from "transformUser" /* 9418 */;
-import Constants4 from "Constants" /* 11864 */;
-import RPCHelpers from "RPCHelpers" /* 11985 */;
-import transformMessage from "transformMessage" /* 11986 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 11987 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16634 */;
-import useThermalState from "useThermalState" /* 16640 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16642 */;
+import Constants2 from "Constants" /* 6012 */;
+import Constants3 from "Constants" /* 6698 */;
+import FramesConstants from "FramesConstants" /* 6957 */;
+import transformUserDefault from "transformUser" /* 7237 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8765 */;
+import Constants4 from "Constants" /* 12616 */;
+import RPCHelpers from "RPCHelpers" /* 12779 */;
+import transformMessage from "transformMessage" /* 12780 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 12781 */;
+import frameDeepLinks from "frameDeepLinks" /* 15878 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16795 */;
+import useThermalState from "useThermalState" /* 16801 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16803 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import QuestStore from "QuestStore" /* 7926 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import QuestStore from "QuestStore" /* 8742 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import PresenceStore from "PresenceStore" /* 5892 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import PresenceStore from "PresenceStore" /* 6005 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5805 */;
+import VoiceStateStore from "VoiceStateStore" /* 5918 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

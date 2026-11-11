@@ -1,16 +1,16 @@
-// Module ID: 18578
-// Function ID: 18579
+// Module ID: 18750
+// Function ID: 18751
 // Name: useShouldShowGuildThemeMemberCoachmark
-// Dependencies: [5348, 14356, 5353, 5352, 18579, 8545, 2]
+// Dependencies: [5461, 10609, 5466, 5465, 18751, 9175, 2]
 // Exports: default
 
-// Module 18578 (useShouldShowGuildThemeMemberCoachmark)
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5348 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5352 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 5353 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8545 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14356 */;
-import useIsGuildThemePerkEnabledDefault from "useIsGuildThemePerkEnabled" /* 18579 */;
+// Module 18750 (useShouldShowGuildThemeMemberCoachmark)
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5461 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5465 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 5466 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 9175 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 10609 */;
+import useIsGuildThemePerkEnabledDefault from "useIsGuildThemePerkEnabled" /* 18751 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = GuildPowerupsConstants.GUILD_THEME_POWERUP_BOOST_PRICE;

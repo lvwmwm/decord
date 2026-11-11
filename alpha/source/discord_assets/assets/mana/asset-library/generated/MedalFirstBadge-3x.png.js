@@ -1,8 +1,8 @@
-// Module ID: 10916
-// Function ID: 10917
+// Module ID: 10817
+// Function ID: 10818
 // Dependencies: [2]
 
-// Module 10916
+// Module 10817
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MedalFirstBadge-3x.png.js");

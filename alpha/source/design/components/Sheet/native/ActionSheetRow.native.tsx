@@ -1,16 +1,16 @@
-// Module ID: 7431
-// Function ID: 7432
+// Module ID: 7887
+// Function ID: 7888
 // Name: ActionSheetRow
-// Dependencies: [19, 17, 21, 7041, 7049, 7129, 7432, 2]
+// Dependencies: [19, 17, 21, 7379, 7387, 7680, 7888, 2]
 // Exports: ActionSheetSwitchRow
 
-// Module 7431 (ActionSheetRow)
+// Module 7887 (ActionSheetRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import TableRow2 from "TableRow" /* 7041 */;
-import TableRowIcon2 from "TableRowIcon" /* 7049 */;
-import TableRowGroup from "TableRowGroup" /* 7129 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7432 */;
+import TableRow2 from "TableRow" /* 7379 */;
+import TableRowIcon2 from "TableRowIcon" /* 7387 */;
+import TableRowGroup from "TableRowGroup" /* 7680 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7888 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

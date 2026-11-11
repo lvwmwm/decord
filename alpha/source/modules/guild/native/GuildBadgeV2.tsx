@@ -1,19 +1,19 @@
-// Module ID: 9393
-// Function ID: 9394
+// Module ID: 10323
+// Function ID: 10324
 // Name: GuildBadgeV2
-// Dependencies: [19, 21, 5142, 1187, 5149, 9392, 9391, 9394, 575, 9397, 2]
+// Dependencies: [19, 21, 5243, 1187, 5250, 10324, 10325, 10326, 575, 10329, 2]
 // Exports: default, hasGuildBadge
 
-// Module 9393 (GuildBadgeV2)
+// Module 10323 (GuildBadgeV2)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import shared from "shared" /* 5149 */;
-import GuildTraits from "GuildTraits" /* 9391 */;
-import BadgeCategory from "BadgeCategory" /* 9392 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9397 */;
+import shared from "shared" /* 5250 */;
+import BadgeCategory from "BadgeCategory" /* 10324 */;
+import GuildTraits from "GuildTraits" /* 10325 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 10329 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -42,7 +42,7 @@ export default function GuildBadgeV2(arg0) {
       const tmp5Result5 = native;
       const iconSize = tmp5Result5.getIconSize(size);
       const obj = { size: "custom", color: nativeDefault.colors.BADGE_INVERTED_BACKGROUND, secondaryColor: nativeDefault.colors.BADGE_INVERTED_TEXT, style: items };
-      const ExperimentalWebBadgeIcon = tmp5(9394).ExperimentalWebBadgeIcon;
+      const ExperimentalWebBadgeIcon = tmp5(10326).ExperimentalWebBadgeIcon;
       const size1 = { width: iconSize, height: iconSize };
       items = [size1, ];
       let icon = merged.style;

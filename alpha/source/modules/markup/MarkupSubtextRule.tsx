@@ -1,9 +1,9 @@
-// Module ID: 8652
-// Function ID: 8653
+// Module ID: 9292
+// Function ID: 9293
 // Name: MarkupSubtextRule
 // Dependencies: [2067, 2]
 
-// Module 8652 (MarkupSubtextRule)
+// Module 9292 (MarkupSubtextRule)
 import _mod2067 from "module_2067" /* 2067 */;
 import size from "module_2" /* 2 */;
 
@@ -29,11 +29,11 @@ let obj = {
     }
     return tmp;
   },
-  parse(arg0, fn, arg2) {
+  parse(arg0, arg1, arg2) {
     let obj2;
     let parseInline;
     let trimmed;
-    const obj = { content: parseInline(fn, trimmed, obj2) };
+    const obj = { content: parseInline(arg1, trimmed, obj2) };
     parseInline = _mod2067.parseInline;
     obj2 = { allowSubtext: false };
     const str = arg0[1];

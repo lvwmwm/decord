@@ -1,12 +1,12 @@
-// Module ID: 7549
-// Function ID: 7550
+// Module ID: 14047
+// Function ID: 14048
 // Name: subscribeGuildMembers
-// Dependencies: [19, 6818, 12, 1242, 7518, 2]
+// Dependencies: [19, 6881, 12, 1242, 12437, 2]
 // Exports: useEnsureHydratedGuildUsers, useSubscribeGuildMembers
 
-// Module 7549 (subscribeGuildMembers)
+// Module 14047 (subscribeGuildMembers)
 import react from "react" /* 19 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6818 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6881 */;
 import size from "module_2" /* 2 */;
 
 let c5 = false;

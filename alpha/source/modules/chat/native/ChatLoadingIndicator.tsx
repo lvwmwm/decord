@@ -1,29 +1,29 @@
-// Module ID: 14839
-// Function ID: 14840
+// Module ID: 15532
+// Function ID: 15533
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 5143, 6625, 6196, 5045, 1385, 2117, 1072, 21, 5142, 575, 6093, 6164, 2118, 504, 5753, 14840, 1652, 5372, 1113, 7046, 2]
+// Dependencies: [32, 19, 17, 5244, 6737, 6309, 5146, 1385, 2117, 1072, 21, 5243, 575, 6206, 6277, 2118, 504, 5866, 15533, 1652, 5485, 1113, 7364, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 14839 (ChatLoadingIndicator)
+// Module 15532 (ChatLoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6093 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6625 */;
-import MessageStore from "MessageStore" /* 6196 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
+import MessageStore from "MessageStore" /* 6309 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
 import UserStore from "UserStore" /* 1385 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -117,13 +117,13 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   if (messagesCached !== false) {
     const obj3 = { variant: "body-md/normal", color: "text-muted", children: items2 };
     items2 = [" ", "(should be ", str3, " to hide loading indicator)"];
-    tmp4Result = tmp4(tmp(5753).Text, obj3);
+    tmp4Result = tmp4(tmp(5866).Text, obj3);
   }
   items1[4] = tmp4Result;
-  const items3 = [gesture(clientStatuses, { children: items1 }), "\n", , , , , ];
+  const items3 = [gesture(closure_15, { children: items1 }), "\n", , , , , ];
   const items4 = ["messages.ready", ":", " ", , ];
   let str6 = str;
-  const Text3 = tmp(5753).Text;
+  const Text3 = tmp(5866).Text;
   if (messagesReady) {
     str6 = "text-feedback-positive";
   }
@@ -137,14 +137,14 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   if (messagesReady !== true) {
     const obj5 = { variant: "body-md/normal", color: "text-muted", children: items5 };
     items5 = [" ", "(should be ", "true", " to hide loading indicator)"];
-    tmp4Result3 = tmp4(tmp(5753).Text, obj5);
+    tmp4Result3 = tmp4(tmp(5866).Text, obj5);
   }
   items4[4] = tmp4Result3;
-  items3[2] = gesture(clientStatuses, { children: items4 });
+  items3[2] = gesture(closure_15, { children: items4 });
   items3[3] = "\n";
   const items6 = ["connected", ":", " ", , ];
   let str10 = str;
-  const Text4 = tmp(5753).Text;
+  const Text4 = tmp(5866).Text;
   if (connected) {
     str10 = "text-feedback-positive";
   }
@@ -158,10 +158,10 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   if (connected !== true) {
     const obj7 = { variant: "body-md/normal", color: "text-muted", children: items7 };
     items7 = [" ", "(should be ", "true", " to hide loading indicator)"];
-    tmp4Result4 = tmp4(tmp(5753).Text, obj7);
+    tmp4Result4 = tmp4(tmp(5866).Text, obj7);
   }
   items6[4] = tmp4Result4;
-  items3[4] = gesture(clientStatuses, { children: items6 });
+  items3[4] = gesture(closure_15, { children: items6 });
   items3[5] = "\n";
   if (!messagesCached) {
     messagesCached = !messagesReady;
@@ -170,7 +170,7 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
     messagesCached = !connected;
   }
   const items8 = ["should show chat indicator", ":", " ", , ];
-  const Text5 = tmp(5753).Text;
+  const Text5 = tmp(5866).Text;
   if (messagesCached) {
     str = "text-feedback-positive";
   }
@@ -181,7 +181,7 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   items8[3] = map1(Text5, obj8);
   const obj9 = { variant: "body-md/normal", color: "text-default", children: items3 };
   items8[4] = null;
-  items3[6] = gesture(clientStatuses, { children: items8 });
+  items3[6] = gesture(closure_15, { children: items8 });
   return gesture(Text, obj9);
 });
 let closure_19 = { code: "(function ChatLoadingIndicatorTsx1(){let[useReducedMotion,withRepeat,withSequence,withTiming,Easing]=this.__closure;if(useReducedMotion){return{transform:[]};}return{transform:[{scale:withRepeat(withSequence(withTiming(1,{duration:0}),withTiming(0.5,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)}),withTiming(1,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)})),-1)}]};})" };
@@ -316,7 +316,7 @@ export function ChannelHeaderLoadingIndicator() {
   items4 = [tmp.pulse, animatedStyle];
   items5 = [map1(_modDef1652.View, obj4), ];
   const obj5 = { variant: "body-xs/medium", color: "text-muted", children: intl.string(intl2.t.JwIJMV) };
-  const Text = tmp2(5753).Text;
+  const Text = tmp2(5866).Text;
   intl = tmp2(1113).intl;
   items5[1] = map1(Text, obj5);
   const tmp15 = gesture(View, obj3);
@@ -324,7 +324,7 @@ export function ChannelHeaderLoadingIndicator() {
   const tmp14 = map1;
   if (stateFromStores1) {
     const obj6 = { onPress: openLoadingIndicatorDebugBody, children: tmp15 };
-    tmp14Result = tmp14(tmp2(7046).PressableOpacity, obj6);
+    tmp14Result = tmp14(tmp2(7364).PressableOpacity, obj6);
   }
   return tmp14Result;
 }

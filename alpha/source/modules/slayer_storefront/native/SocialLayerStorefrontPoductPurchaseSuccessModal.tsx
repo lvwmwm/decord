@@ -1,30 +1,30 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 11732
+// Function ID: 11733
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5143, 6954, 7474, 1072, 21, 5142, 575, 1652, 5763, 5372, 5378, 1493, 504, 8850, 7471, 5753, 5760, 1113, 5844, 5717, 7358, 7074, 7123, 9611, 7394, 7391, 11537, 7415, 1252, 5723, 10797, 3898, 9527, 5196, 2]
+// Dependencies: [32, 717, 19, 17, 5244, 7007, 7184, 1072, 21, 5243, 575, 1652, 5876, 5485, 5491, 1493, 504, 8494, 7181, 5866, 5873, 1113, 5957, 5830, 7351, 7434, 7483, 9449, 7196, 7853, 11733, 7871, 1252, 5836, 11669, 3949, 10319, 5309, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 14688 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 11732 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef3898 from "module_3898" /* 3898 */;
-import UserUtilsDefault from "UserUtils" /* 5196 */;
-import HapticUtils from "HapticUtils" /* 5378 */;
-import XSmallIcon from "XSmallIcon" /* 7123 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7471 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7474 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10797 */;
+import _modDef3949 from "module_3949" /* 3949 */;
+import UserUtilsDefault from "UserUtils" /* 5309 */;
+import HapticUtils from "HapticUtils" /* 5491 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7181 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7184 */;
+import XSmallIcon from "XSmallIcon" /* 7483 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11669 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import SKUStore from "SKUStore" /* 6954 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import SKUStore from "SKUStore" /* 7007 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -608,7 +608,7 @@ export function SocialLayerStorefrontProductSelfPurchaseSuccessModal(skuId) {
         formatToPlainString2Result = formatToPlainString(prop, obj3);
       } else {
         let str;
-        const eNNnIG = _modDef3898.eNNnIG;
+        const eNNnIG = _modDef3949.eNNnIG;
         if (getOrFetchApplication != null) {
           str = getOrFetchApplication.name;
         }

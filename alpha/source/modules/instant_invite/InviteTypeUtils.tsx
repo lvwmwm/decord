@@ -1,14 +1,14 @@
-// Module ID: 7959
-// Function ID: 7960
+// Module ID: 8775
+// Function ID: 8776
 // Name: InviteTypeUtils
-// Dependencies: [6913, 4995, 7960, 7961, 7962, 2]
+// Dependencies: [6966, 5096, 8776, 7599, 8777, 2]
 // Exports: getGuildInviteExtendedType, getInviteType, isEmbeddedApplicationInvite, isFriendInvite, isGroupDMInvite, isGuildScheduledEventInviteEmbed, isRoleSubscriptionInvite, isStreamInvite, isVoiceChannelInvite
 
-// Module 7959 (InviteTypeUtils)
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6913 */;
-import Constants from "Constants" /* 7960 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 7961 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
+// Module 8775 (InviteTypeUtils)
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6966 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7599 */;
+import Constants from "Constants" /* 8776 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -88,7 +88,7 @@ export function getGuildInviteExtendedType(invite) {
     if (invite.target_type === InviteTargetTypes.InviteTargetTypes.EMBEDDED_APPLICATION) {
       PROFILE = obj.APPLICATION;
     } else {
-      const tmp3Result = tmp3(7962);
+      const tmp3Result = tmp3(8777);
       if (tmp3Result.guildInviteCanEmbedProfile(invite)) {
         PROFILE = obj.PROFILE;
       } else {

@@ -1,15 +1,15 @@
-// Module ID: 19592
-// Function ID: 19593
+// Module ID: 19781
+// Function ID: 19782
 // Name: useVoicePanelDockMorphState
-// Dependencies: [19, 11372, 11390, 1652, 5763, 11398, 5372, 2]
+// Dependencies: [19, 11925, 11948, 1652, 5876, 11956, 5485, 2]
 // Exports: default
 
-// Module 19592 (useVoicePanelDockMorphState)
-import spring_spring from "spring/spring" /* 5763 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11372 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11398 */;
+// Module 19781 (useVoicePanelDockMorphState)
+import spring_spring from "spring/spring" /* 5876 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11956 */;
 import react_mod from "react" /* 19 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11390 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11948 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -358,7 +358,7 @@ export default function useVoicePanelDockMorphState(arg0) {
   const items24 = [closure_17, , , ];
   const useDerivedValue = tmp(1652).useDerivedValue;
   tmp(1652);
-  items24[1] = tmp(5763).withSpring;
+  items24[1] = tmp(5876).withSpring;
   items24[2] = derivedValue4;
   items24[3] = closure_4;
   [tmp58, tmp59, tmp60, tmp61] = items24;
@@ -378,11 +378,11 @@ export default function useVoicePanelDockMorphState(arg0) {
   const items26 = [closure_18, , , , , ];
   const useDerivedValue2 = tmp(1652).useDerivedValue;
   tmp(1652);
-  items26[1] = tmp(5763).withSpring;
+  items26[1] = tmp(5876).withSpring;
   items26[2] = mode;
   items26[3] = VoicePanelModes;
   items26[4] = isDockConnected;
-  items26[5] = tmp(11398).DOCK_SPACE_SPRING_CONFIG;
+  items26[5] = tmp(11956).DOCK_SPACE_SPRING_CONFIG;
   [tmp64, tmp65, tmp66, tmp67, tmp68, tmp69] = items26;
   function useVoicePanelDockMorphStateTsx13() {
     let num = 0;
@@ -408,8 +408,8 @@ export default function useVoicePanelDockMorphState(arg0) {
   items28[7] = tmp(1652).clamp;
   items28[8] = derivedValue2;
   items28[9] = sharedValue6;
-  items28[10] = tmp(5763).withSpring;
-  items28[11] = tmp(11398).SHEET_MORPH_PHYSICS;
+  items28[10] = tmp(5876).withSpring;
+  items28[11] = tmp(11956).SHEET_MORPH_PHYSICS;
   let c7;
   let c8;
   let c9;
@@ -476,7 +476,7 @@ export default function useVoicePanelDockMorphState(arg0) {
   const items34 = [closure_22, dockJoinMorphOrigin, connected, dockMinimizeProgress, , , , ];
   const useAnimatedReaction = tmp(1652).useAnimatedReaction;
   tmp(1652);
-  items34[4] = tmp(11398).SHEET_MORPH_PHYSICS;
+  items34[4] = tmp(11956).SHEET_MORPH_PHYSICS;
   items34[5] = sharedValue;
   items34[6] = mode;
   items34[7] = VoicePanelModes;
@@ -512,7 +512,7 @@ export default function useVoicePanelDockMorphState(arg0) {
   const items38 = [closure_24, sharedValue, mode, VoicePanelModes, isDockExpanding, dockMinimizeProgress, ];
   const useAnimatedReaction2 = tmp(1652).useAnimatedReaction;
   tmp(1652);
-  items38[6] = tmp(11398).SHEET_MORPH_PHYSICS;
+  items38[6] = tmp(11956).SHEET_MORPH_PHYSICS;
   let c3;
   let c4;
   let c5;
@@ -542,7 +542,7 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx19.__closure = items39;
   useVoicePanelDockMorphStateTsx19.__workletHash = 6416964197268;
   useVoicePanelDockMorphStateTsx19.__initData = tmp108;
-  const items40 = [closure_25, dockContentSwap, tmp(5372).withTiming, tmp(11398).DOCK_CONTENT_SWAP_TIMING];
+  const items40 = [closure_25, dockContentSwap, tmp(5485).withTiming, tmp(11956).DOCK_CONTENT_SWAP_TIMING];
   let c0;
   let c1;
   let c2;

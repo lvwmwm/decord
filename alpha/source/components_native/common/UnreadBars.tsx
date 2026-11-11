@@ -1,26 +1,26 @@
-// Module ID: 18808
-// Function ID: 18809
+// Module ID: 18998
+// Function ID: 18999
 // Name: UnreadBars
-// Dependencies: [19, 17, 5143, 1072, 21, 5142, 6780, 575, 5139, 5201, 5378, 5379, 1187, 1113, 504, 14247, 2]
+// Dependencies: [19, 17, 5244, 1072, 21, 5243, 6763, 575, 5240, 5314, 5491, 5492, 1187, 1113, 504, 14730, 2]
 // Exports: default
 
-// Module 18808 (UnreadBars)
+// Module 18998 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import native2 from "native" /* 5201 */;
-import HapticUtils from "HapticUtils" /* 5378 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5379 */;
-import TransitionGroup2 from "TransitionGroup" /* 14247 */;
+import native2 from "native" /* 5314 */;
+import HapticUtils from "HapticUtils" /* 5491 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5492 */;
+import TransitionGroup2 from "TransitionGroup" /* 14730 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
-import TextStyles from "TextStyles" /* 6780 */;
-import ColorUtils_mod from "ColorUtils" /* 5139 */;
+import createStyles from "createStyles" /* 5243 */;
+import TextStyles from "TextStyles" /* 6763 */;
+import ColorUtils_mod from "ColorUtils" /* 5240 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;

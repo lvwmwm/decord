@@ -1,19 +1,19 @@
-// Module ID: 12170
-// Function ID: 12171
+// Module ID: 12963
+// Function ID: 12964
 // Name: LabeledActionBarButton
-// Dependencies: [19, 17, 1083, 21, 5142, 6836, 575, 7046, 5844, 1187, 2]
+// Dependencies: [19, 17, 1083, 21, 5243, 6898, 575, 7364, 5957, 1187, 2]
 // Exports: LabeledActionButton
 
-// Module 12170 (LabeledActionBarButton)
+// Module 12963 (LabeledActionBarButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import LegacyTokens from "LegacyTokens" /* 6836 */;
-import Pressables from "Pressables" /* 7046 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import LegacyTokens from "LegacyTokens" /* 6898 */;
+import Pressables from "Pressables" /* 7364 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,14 +1,14 @@
-// Module ID: 5821
-// Function ID: 5822
+// Module ID: 5934
+// Function ID: 5935
 // Name: CountryCodeUtils
-// Dependencies: [5822, 38, 1113, 5823, 5824, 2]
+// Dependencies: [5935, 38, 1113, 5936, 5937, 2]
 // Exports: convertToAlpha2, getCountryCodeByAlpha2, getCountryCodeByCountryName, getDefaultCountryCode, getI18NCountryName, getI18NCountryNameSafe
 
-// Module 5821 (CountryCodeUtils)
+// Module 5934 (CountryCodeUtils)
 import intl2 from "intl" /* 1113 */;
-import CountriesDefault from "Countries" /* 5822 */;
-import CountryCodes from "CountryCodes" /* 5823 */;
-import CountryCodesISO3to2 from "CountryCodesISO3to2" /* 5824 */;
+import CountriesDefault from "Countries" /* 5935 */;
+import CountryCodes from "CountryCodes" /* 5936 */;
+import CountryCodesISO3to2 from "CountryCodesISO3to2" /* 5937 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

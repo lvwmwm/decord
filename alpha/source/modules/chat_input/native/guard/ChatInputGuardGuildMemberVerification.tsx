@@ -1,26 +1,26 @@
-// Module ID: 14294
-// Function ID: 14295
+// Module ID: 14776
+// Function ID: 14777
 // Name: ChatInputGuardGuildMemberVerification
-// Dependencies: [19, 5143, 13037, 1072, 21, 5142, 6978, 5176, 14295, 1113, 5891, 6966, 14296, 7123, 7002, 504, 14286, 5844, 5747, 14297, 2]
+// Dependencies: [19, 5244, 13703, 1072, 21, 5243, 14777, 5289, 14778, 1113, 6004, 6861, 14779, 7483, 7618, 504, 14768, 5957, 5860, 14780, 2]
 
-// Module 14294 (ChatInputGuardGuildMemberVerification)
+// Module 14776 (ChatInputGuardGuildMemberVerification)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5891 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6966 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7002 */;
-import ChatInputConstants from "ChatInputConstants" /* 13037 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 14286 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14295 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14296 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6861 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7618 */;
+import ChatInputConstants from "ChatInputConstants" /* 13703 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14768 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14778 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14779 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import createStyles from "createStyles" /* 5142 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let tmp15;
-const LottieAnimationViewDefault = tmp15(5747);
+const LottieAnimationViewDefault = tmp15(5860);
 const TextAreaCta = ChatInputConstants.TextAreaCta;
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
@@ -34,13 +34,13 @@ const memoResult = react.memo(function ChatInputGuardGuildMemberVerification(gui
   guildId = guildId.guildId;
   const tmp = closure_7();
   const tmp2 = guildId;
-  let obj = guildId(6978);
+  let obj = guildId(14777);
   const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  if (tmp2(5176).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+  if (tmp2(5289).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
     tmp8 = AssetRegistryDefault;
     const intl3 = tmp2(1113).intl;
     stringResult = intl3.string(tmp2(1113).t.lk30cY);
@@ -54,9 +54,9 @@ const memoResult = react.memo(function ChatInputGuardGuildMemberVerification(gui
         const result = obj3.openMemberVerificationRejectedAlert(obj4);
       }
     }
-  } else if (tmp2(5176).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+  } else if (tmp2(5289).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
     tmp8 = AssetRegistryDefault2;
-    tmp7 = jsx(tmp2(7123).XSmallIcon, {});
+    tmp7 = jsx(tmp2(7483).XSmallIcon, {});
     const intl2 = tmp2(1113).intl;
     class I {
       constructor() {

@@ -1,16 +1,16 @@
-// Module ID: 13717
-// Function ID: 13718
+// Module ID: 14159
+// Function ID: 14160
 // Name: CheckpointStepHeaderRefContext
-// Dependencies: [19, 21, 5392, 6155, 2]
+// Dependencies: [32, 19, 21, 5505, 6268, 2]
 // Exports: CheckpointStepFocusProvider
 
-// Module 13717 (CheckpointStepHeaderRefContext)
+// Module 14159 (CheckpointStepHeaderRefContext)
 import Fragment from "Fragment" /* 21 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
+let dependencyMap;
 
 const jsx = Fragment.jsx;
 const context = react.createContext(undefined);
@@ -19,26 +19,42 @@ const result = size.fileFinishedImporting("modules/checkpoint/native/components/
 export default context;
 export function CheckpointStepFocusProvider(arg0) {
   let children;
-  let closure_0;
+  let closure_1;
   let route;
   let isScreenReaderEnabled;
   ({ route, children } = arg0);
-  _require = react.useRef(null);
-  const value = react.useCallback((current) => {
-    closure_0.current = current;
+  let tmp = isScreenReaderEnabled(react.useState(null), 2);
+  const first = tmp[0];
+  dependencyMap = tmp[1];
+  const value = react.useCallback((arg0) => {
+    let closure_0 = arg0;
+    let tmp = closure_1(arg0);
+    return () => closure_1((arg0) => {
+      let tmp = null;
+      if (arg0 !== closure_1_0) {
+        tmp = arg0;
+      }
+      return tmp;
+    });
   }, []);
-  let obj = require("useIsScreenReaderEnabled");
+  let obj = first(5505);
   isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
-  const items = [route, isScreenReaderEnabled];
+  const items = [route, first, isScreenReaderEnabled];
   const effect = react.useEffect(() => {
-    if (isScreenReaderEnabled) {
-      const _setTimeout = setTimeout;
-      const ref = setTimeout(() => {
-        const obj = ref(isScreenReaderEnabled[3]);
-        const obj2 = { ref };
-        return obj.setAccessibilityFocus(obj2);
-      }, 100);
-      return () => clearTimeout(ref);
+    let current;
+    const tmp = isScreenReaderEnabled;
+    if (tmp) {
+      if (null != current) {
+        const _setTimeout = setTimeout;
+        current = setTimeout(() => {
+          let obj3;
+          const obj2 = { ref: obj3 };
+          obj3 = { current };
+          const obj = first(closure_1[4]);
+          return obj.setAccessibilityFocus(obj2);
+        }, 100);
+        return () => clearTimeout(current);
+      }
     }
   }, items);
   return <context.Provider value={value}>{children}</context.Provider>;

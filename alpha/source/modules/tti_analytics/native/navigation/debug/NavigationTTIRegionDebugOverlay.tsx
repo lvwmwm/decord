@@ -1,19 +1,19 @@
-// Module ID: 18999
-// Function ID: 19000
+// Module ID: 19185
+// Function ID: 19186
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 5142, 575, 13575, 13576, 18997, 13578, 5753, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 14095, 14096, 19183, 14098, 5866, 2]
 // Exports: NavigationTTIRegionDebugOverlay
 
-// Module 18999 (NavigationTTIRegionDebugOverlay)
+// Module 19185 (NavigationTTIRegionDebugOverlay)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13576 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 13578 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 14096 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 14098 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -110,10 +110,10 @@ function NavigationTTIMilestoneReadout(surface) {
   }
   const obj2 = { style: tmp.milestoneReadout, pointerEvents: "none", accessible: false, children: closure_7(Text, obj3) };
   obj3 = { variant: "body-xs/normal", color: "text-default", style: tmp.badgeText, lineClamp: 1, accessible: false, children: items2 };
-  Text = surface(5753).Text;
+  Text = surface(5866).Text;
   const obj4 = { variant: "body-xs/semibold", color: "none", children: items1 };
   items1 = ["FP ", str5];
-  items2 = [closure_7(surface(5753).Text, obj4), " \u00B7 FCP ", str4];
+  items2 = [closure_7(surface(5866).Text, obj4), " \u00B7 FCP ", str4];
   return closure_8(closure_6, obj2);
 }
 function NavigationTTIDebugFreezeControl(arg0) {
@@ -274,14 +274,14 @@ export function NavigationTTIRegionDebugOverlay(name) {
   let tmp = closure_11();
   let tmp3 = dependencyMap;
   let tmp2 = name;
-  let obj = name(13575);
+  let obj = name(14095);
   const navTTISurface = obj.useNavTTISurface();
   [tmp6, c2] = _slicedToArray(react.useState(false), 2);
   const useSyncExternalStore = react.useSyncExternalStore;
   const tmp5 = _slicedToArray(react.useState(false), 2);
-  const subscribeNavigationTTIDebugFreezeTarget = name(13578).subscribeNavigationTTIDebugFreezeTarget;
-  const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, name(13578).getNavigationTTIDebugFreezeTarget, name(13578).getNavigationTTIDebugFreezeTarget);
-  let obj2 = name(13575);
+  const subscribeNavigationTTIDebugFreezeTarget = name(14098).subscribeNavigationTTIDebugFreezeTarget;
+  const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, name(14098).getNavigationTTIDebugFreezeTarget, name(14098).getNavigationTTIDebugFreezeTarget);
+  let obj2 = name(14095);
   const navTTISurface1 = obj2.useNavTTISurface();
   const items = [name, regionId, navTTISurface1, tracking];
   const callback = react.useCallback((arg0) => {
@@ -545,7 +545,7 @@ export function NavigationTTIRegionDebugOverlay(name) {
     }
     obj6 = { variant: "body-xs/semibold", color: str26, style: tmp.badgeText, lineClamp: num2, accessible: false, children: combined1 };
     num2 = 1;
-    Text = tmp2(5753).Text;
+    Text = tmp2(5866).Text;
     if (tmp6) {
       num2 = 3;
     }

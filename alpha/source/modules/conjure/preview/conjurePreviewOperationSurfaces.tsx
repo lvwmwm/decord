@@ -1,11 +1,11 @@
-// Module ID: 11068
-// Function ID: 11069
+// Module ID: 15861
+// Function ID: 15862
 // Name: conjurePreviewOperationSurfaces
-// Dependencies: [11058, 2]
+// Dependencies: [13053, 2]
 // Exports: createPreviewOperationSurfaces
 
-// Module 11068 (conjurePreviewOperationSurfaces)
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11058 */;
+// Module 15861 (conjurePreviewOperationSurfaces)
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 13053 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, map;

@@ -1,10 +1,10 @@
-// Module ID: 10160
-// Function ID: 10161
+// Module ID: 11220
+// Function ID: 11221
 // Name: useShowNitroUpsellCallback
 // Dependencies: [19, 1652, 2]
 // Exports: default
 
-// Module 10160 (useShowNitroUpsellCallback)
+// Module 11220 (useShowNitroUpsellCallback)
 import _mod1652 from "module_1652" /* 1652 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

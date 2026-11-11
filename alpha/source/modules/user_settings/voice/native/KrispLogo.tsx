@@ -1,16 +1,16 @@
-// Module ID: 12135
-// Function ID: 12136
+// Module ID: 12946
+// Function ID: 12947
 // Name: KrispLogo
-// Dependencies: [19, 17, 1192, 1072, 21, 2185, 1252, 1113, 5836, 504, 5149, 12136, 12137, 5844, 5753, 2]
+// Dependencies: [19, 17, 1192, 1072, 21, 2185, 1252, 1113, 5949, 504, 5250, 12947, 12948, 5957, 5866, 2]
 // Exports: default
 
-// Module 12135 (KrispLogo)
+// Module 12946 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import shared from "shared" /* 5149 */;
-import LinkingDefault from "Linking" /* 5836 */;
+import shared from "shared" /* 5250 */;
+import LinkingDefault from "Linking" /* 5949 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
@@ -62,21 +62,21 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(12136);
+    tmp4Result = tmp4(12947);
     tmp6 = tmp4;
   } else {
-    tmp4Result = tmp4(12137);
+    tmp4Result = tmp4(12948);
     tmp6 = tmp4;
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };
   const obj4 = { style: closure_12.logo, source: tmp4Result, accessibilityLabel: intl.string(intl4.t.vFiCSx) };
-  const tmp6Result = tmp6(5844);
+  const tmp6Result = tmp6(5957);
   intl = tmp(1113).intl;
   items1 = [authStore(tmp6Result, obj4), ];
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: authStore(Text, obj6) };
   intl2 = tmp(1113).intl;
   obj6 = { variant: "body-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-  Text = tmp(5753).Text;
+  Text = tmp(5866).Text;
   intl3 = tmp(1113).intl;
   items1[1] = authStore(React3, obj5);
   return unpackModuleId(_false, obj3);

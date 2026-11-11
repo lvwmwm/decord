@@ -1,22 +1,22 @@
-// Module ID: 19868
-// Function ID: 19869
+// Module ID: 20060
+// Function ID: 20061
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 5013, 21, 5142, 575, 504, 19865, 19869, 7429, 5844, 11422, 5753, 1113, 7023, 5760, 7230, 4967, 5839, 5376, 16070, 2]
+// Dependencies: [19, 17, 5114, 21, 5243, 575, 504, 20057, 20061, 7885, 5957, 11981, 5866, 1113, 7654, 5873, 7747, 5068, 5952, 5489, 16229, 2]
 // Exports: default
 
-// Module 19868 (DmSettingsUpsellActionSheet)
+// Module 20060 (DmSettingsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import UserSettings from "UserSettings" /* 4967 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7230 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 16070 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 19865 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19869 */;
+import UserSettings from "UserSettings" /* 5068 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7747 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 16229 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 20057 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 20061 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -66,30 +66,30 @@ export default function DmSettingsUpsellActionSheet(guildId) {
   if (null != stateFromStores) {
     let obj2 = { startExpanded: true, children: closure_7(View, obj3) };
     obj3 = { style: tmp.container, children: items2 };
-    const ActionSheet = tmp2(7429).ActionSheet;
-    let obj4 = { source: stateFromStores(11422), style: tmp.headerImage };
-    const tmp11 = stateFromStores(5844);
+    const ActionSheet = tmp2(7885).ActionSheet;
+    let obj4 = { source: stateFromStores(11981), style: tmp.headerImage };
+    const tmp11 = stateFromStores(5957);
     items2 = [closure_6(tmp11, obj4), , , , , , ];
     const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(guildId(1113).t.w2BvnL) };
-    const Text = tmp2(5753).Text;
+    const Text = tmp2(5866).Text;
     intl = tmp2(1113).intl;
     items2[1] = closure_6(Text, obj5);
     const obj6 = { variant: "body-md/normal", color: "text-default", style: tmp.body, children: intl2.format(guildId(1113).t.Depjkv, obj7) };
-    const Text2 = tmp2(5753).Text;
+    const Text2 = tmp2(5866).Text;
     intl2 = tmp2(1113).intl;
     obj7 = { guild_name: stateFromStores.name };
     items2[2] = closure_6(Text2, obj6);
     const obj8 = { style: tmp.guildContainer, children: items3 };
     const obj9 = { variant: "body-sm/medium", color: "text-default", children: intl3.string(guildId(1113).t.KPB2iw) };
-    const Text3 = tmp2(5753).Text;
+    const Text3 = tmp2(5866).Text;
     intl3 = tmp2(1113).intl;
     items3 = [closure_6(Text3, obj9), ];
     const obj10 = { style: tmp.guildInfo, children: items4 };
-    const obj11 = { guild: stateFromStores, size: guildId(7023).GuildIconSizes.SMALL_32 };
-    const tmp12 = stateFromStores(7023);
+    const obj11 = { guild: stateFromStores, size: guildId(7654).GuildIconSizes.SMALL_32 };
+    const tmp12 = stateFromStores(7654);
     items4 = [closure_6(tmp12, obj11), ];
     const obj12 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
-    items4[1] = closure_6(guildId(5753).Text, obj12);
+    items4[1] = closure_6(guildId(5866).Text, obj12);
     items3[1] = closure_7(View, obj10);
     items2[3] = closure_7(View, obj8);
     const obj13 = {
@@ -115,7 +115,7 @@ export default function DmSettingsUpsellActionSheet(guildId) {
         },
       text: intl4.string(guildId(1113).t.TD7iUx)
     };
-    const Button = tmp2(5760).Button;
+    const Button = tmp2(5873).Button;
     intl4 = tmp2(1113).intl;
     items2[4] = closure_6(Button, obj13);
     const obj14 = {
@@ -129,11 +129,11 @@ export default function DmSettingsUpsellActionSheet(guildId) {
         },
       text: intl5.string(guildId(1113).t.PsWbcp)
     };
-    const Button2 = tmp2(5760).Button;
+    const Button2 = tmp2(5873).Button;
     intl5 = tmp2(1113).intl;
     items2[5] = closure_6(Button2, obj14);
     const obj15 = { variant: "body-xs/normal", style: tmp.footer, children: intl6.format(guildId(1113).t.IzZxXW, obj16) };
-    const Text4 = tmp2(5753).Text;
+    const Text4 = tmp2(5866).Text;
     intl6 = tmp2(1113).intl;
     obj16 = {
       onClick: function handleGotoServerPrivacySettings() {

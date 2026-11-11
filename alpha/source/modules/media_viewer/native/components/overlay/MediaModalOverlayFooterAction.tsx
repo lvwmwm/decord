@@ -1,20 +1,20 @@
-// Module ID: 15041
-// Function ID: 15042
+// Module ID: 15098
+// Function ID: 15099
 // Name: MediaModalOverlayFooterAction
-// Dependencies: [19, 17, 21, 5142, 575, 7358, 1377, 5730, 15034, 5760, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 7351, 1377, 5843, 15091, 5873, 2]
 // Exports: MediaModalOverlayFooterAction
 
-// Module 15041 (MediaModalOverlayFooterAction)
+// Module 15098 (MediaModalOverlayFooterAction)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5730 */;
-import components_Button_Button from "components/Button/Button" /* 5760 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7358 */;
-import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 15034 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5843 */;
+import components_Button_Button from "components/Button/Button" /* 5873 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7351 */;
+import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 15091 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,20 +1,20 @@
-// Module ID: 20540
-// Function ID: 20541
+// Module ID: 20735
+// Function ID: 20736
 // Name: RestrictedHoursManager
-// Dependencies: [11150, 1385, 7794, 1113, 2664, 1409, 11152, 572, 19808, 7353, 2]
+// Dependencies: [10951, 1385, 8673, 1113, 2685, 1409, 10953, 572, 20000, 7816, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 20540 (RestrictedHoursManager)
+// Module 20735 (RestrictedHoursManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import FamilyCenterModels from "FamilyCenterModels" /* 1409 */;
-import _modDef2664 from "module_2664" /* 2664 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11152 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19808 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 11150 */;
+import _modDef2685 from "module_2685" /* 2685 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10953 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 20000 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 10951 */;
 import UserStore from "UserStore" /* 1385 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7794 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 let isInRestrictedHours, map;
@@ -62,7 +62,7 @@ function scheduleUpcomingWarning() {
         const _Date2 = Date;
         const self3 = this;
         const self4 = this;
-        const stringResult = intl.string(_modDef2664["0JlDg0"]);
+        const stringResult = intl.string(_modDef2685["0JlDg0"]);
         const JS_DAY_TO_DAY_OF_WEEK = FamilyCenterModels.JS_DAY_TO_DAY_OF_WEEK;
         const date2 = new Date(startAtMs);
         const items = [JS_DAY_TO_DAY_OF_WEEK[date2.getDay(date2)]];

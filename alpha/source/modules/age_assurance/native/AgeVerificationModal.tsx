@@ -1,20 +1,17 @@
-// Module ID: 8066
-// Function ID: 8067
+// Module ID: 8163
+// Function ID: 8164
 // Name: AgeVerificationModal
-// Dependencies: [19, 6785, 21, 5316, 6783, 5836, 8053, 1113, 3252, 5142, 575, 6801, 7633, 7234, 2]
+// Dependencies: [19, 21, 5949, 8150, 1113, 3273, 5243, 575, 6785, 7363, 7424, 2]
 // Exports: default
 
-// Module 8066 (AgeVerificationModal)
+// Module 8163 (AgeVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5316 */;
-import LinkingDefault from "Linking" /* 5836 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6785 */;
+import LinkingDefault from "Linking" /* 5949 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
-let obj2;
 function isOwnDeepLinkUrl(url) {
   if (typeof url !== "string") {
     return false;
@@ -33,28 +30,14 @@ function isOwnDeepLinkUrl(url) {
 function AgeVerifyScreen(onComplete) {
   onComplete = onComplete.onComplete;
   const onClose = onComplete.onClose;
-  const isExpressiveModalV2 = onComplete.isExpressiveModalV2;
-  let callback;
   const items = [onComplete, onClose];
   const webviewUrl = onComplete.webviewUrl;
-  callback = callback.useCallback(() => {
+  const callback = react.useCallback(() => {
     onComplete();
     onClose();
   }, items);
-  const items1 = [callback, isExpressiveModalV2];
-  const callback1 = callback.useCallback(() => {
-    const obj = NavigationRouteUtils;
-    if (obj.isModalOpen(closure_4)) {
-      const tmp = isExpressiveModalV2;
-      if (!tmp) {
-        callback();
-      }
-    }
-  }, items1);
-  let obj = onComplete(isExpressiveModalV2[4]);
-  const watchAgeVerificationStatusChange = obj.useWatchAgeVerificationStatusChange(callback1);
-  const items2 = [callback];
-  const callback2 = callback.useCallback((nativeEvent) => {
+  const items1 = [callback];
+  const callback1 = react.useCallback((nativeEvent) => {
     function isSafeBreakoutUrl(url) {
       if (typeof url !== "string") {
         return false;
@@ -101,14 +84,14 @@ function AgeVerifyScreen(onComplete) {
       } catch (err) {
       }
     }
-  }, items2);
-  const callback3 = callback.useCallback((isTopFrame) => {
+  }, items1);
+  const callback2 = react.useCallback((isTopFrame) => {
     let tmp2 = !tmp;
     if (null == isTopFrame.isTopFrame || isTopFrame.isTopFrame) {
       const tmp4 = isOwnDeepLinkUrl(isTopFrame.url);
       let flag = !tmp4;
       if (tmp4) {
-        const obj = onClose(isExpressiveModalV2[5]);
+        const obj = onClose(callback[2]);
         obj.openURL(isTopFrame.url);
         flag = false;
       }
@@ -116,19 +99,19 @@ function AgeVerifyScreen(onComplete) {
     }
     return tmp2;
   }, []);
-  onClose(isExpressiveModalV2[6]);
-  const intl = onComplete(isExpressiveModalV2[7]).intl;
-  return <tmp6 accessibilityLabel={intl.string(onClose(isExpressiveModalV2[8]).eKo6mw)} allowsInlineMediaPlayback mediaPlaybackRequiresUserAction={false} domStorageEnabled javaScriptEnabled javaScriptCanOpenWindowsAutomatically source={{ uri: webviewUrl }} onMessage={callback2} onShouldStartLoadWithRequest={callback3} injectedJavaScript="\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n" injectedJavaScriptBeforeContentLoaded="\n  window.open = function(url) {\n    window.ReactNativeWebView.postMessage(JSON.stringify({type: 'AGEKEY_BREAKOUT', url: url}));\n    return null;\n  };\n" />;
+  let tmp4 = onClose(callback[3]);
+  const intl = onComplete(callback[4]).intl;
+  return <tmp4 accessibilityLabel={intl.string(onClose(callback[5]).eKo6mw)} allowsInlineMediaPlayback mediaPlaybackRequiresUserAction={false} domStorageEnabled javaScriptEnabled javaScriptCanOpenWindowsAutomatically source={{ uri: webviewUrl }} onMessage={callback1} onShouldStartLoadWithRequest={callback2} injectedJavaScript="\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n" injectedJavaScriptBeforeContentLoaded="\n  window.open = function(url) {\n    window.ReactNativeWebView.postMessage(JSON.stringify({type: 'AGEKEY_BREAKOUT', url: url}));\n    return null;\n  };\n" />;
 }
-let closure_4 = AgeVerificationConstants.AGE_VERIFICATION_MODAL_KEY;
 let jsx = Fragment.jsx;
 const constants = { VERIFY_AGE: "VERIFY_AGE" };
-let obj = { headerStyle: obj2 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-let closure_9 = createStyles.createStyles(obj);
+let obj = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
+({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER });
+let closure_8 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationModal.tsx");
 
 export default function AgeVerificationModal(webviewUrl) {
+  let headerStyle;
   let headerTitle;
   webviewUrl = webviewUrl.webviewUrl;
   let onComplete = webviewUrl.onComplete;
@@ -137,28 +120,28 @@ export default function AgeVerificationModal(webviewUrl) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = closure_9();
-  const headerStyle = tmp;
-  let intl = webviewUrl(onClose[7]).intl;
-  const stringResult = intl.string(webviewUrl(onClose[7]).t.wJVyYR);
-  jsx = stringResult;
+  const tmp = closure_8();
+  jsx = tmp;
+  let intl = webviewUrl(onClose[4]).intl;
+  const stringResult = intl.string(webviewUrl(onClose[4]).t.wJVyYR);
+  let c5 = stringResult;
   const items = [tmp, webviewUrl, onComplete, onClose, stringResult, flag];
   const memo = flag.useMemo(() => {
     let closure_3 = flag;
     function handleClose() {
       closure_2();
-      const arr = onComplete(onClose[11]);
+      const arr = onComplete(onClose[8]);
       arr.pop();
     }
     function handleCloseAfterCompletion() {
       closure_2();
-      const arr = onComplete(onClose[11]);
+      const arr = onComplete(onClose[8]);
       arr.pop();
       const tmp2 = onComplete;
       const tmp3 = onClose;
       const tmp5 = isExpressiveModalV2;
       if (tmp5) {
-        const tmp2Result = tmp2(tmp3[11]);
+        const tmp2Result = tmp2(tmp3[8]);
         tmp2Result.pop();
       }
     }
@@ -167,19 +150,19 @@ export default function AgeVerificationModal(webviewUrl) {
       headerTitle,
       headerLeft() {
         let intl;
-        const obj = { onPress: handleClose, text: intl.string(webviewUrl(onClose[7]).t.cpT0Cq) };
-        const HeaderActionButton = webviewUrl(onClose[12]).HeaderActionButton;
-        intl = webviewUrl(onClose[7]).intl;
-        return headerTitle(HeaderActionButton, obj);
+        const obj = { onPress: handleClose, text: intl.string(webviewUrl(onClose[4]).t.cpT0Cq) };
+        const HeaderActionButton = webviewUrl(onClose[9]).HeaderActionButton;
+        intl = webviewUrl(onClose[4]).intl;
+        return headerStyle(HeaderActionButton, obj);
       },
       render() {
         const obj = { webviewUrl, onComplete, onClose: handleCloseAfterCompletion, isExpressiveModalV2 };
-        return headerTitle(closure_2_8, obj);
+        return headerStyle(closure_2_7, obj);
       }
     };
-    return { [closure_2_7.VERIFY_AGE]: obj };
+    return { [closure_2_6.VERIFY_AGE]: obj };
   }, items);
-  const Navigator = webviewUrl(onClose[13]).Navigator;
-  const intl2 = webviewUrl(onClose[7]).intl;
-  return <Navigator screens={memo} initialRouteName={constants.VERIFY_AGE} headerBackTitle={intl2.string(webviewUrl(onClose[7]).t["13/7kX"])} />;
+  const Navigator = webviewUrl(onClose[10]).Navigator;
+  const intl2 = webviewUrl(onClose[4]).intl;
+  return <Navigator screens={memo} initialRouteName={constants.VERIFY_AGE} headerBackTitle={intl2.string(webviewUrl(onClose[4]).t["13/7kX"])} />;
 };

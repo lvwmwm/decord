@@ -1,17 +1,17 @@
-// Module ID: 18577
-// Function ID: 18578
+// Module ID: 18749
+// Function ID: 18750
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 5074, 1072, 4988, 21, 504, 18578, 18580, 14356, 18587, 14349, 14350, 8545, 4975, 7644, 14342, 18588, 18589, 18591, 2]
+// Dependencies: [32, 19, 5175, 1072, 5089, 21, 504, 18750, 18752, 10609, 18759, 10642, 10643, 9175, 5076, 9494, 10634, 18760, 18761, 18763, 2]
 // Exports: default
 
-// Module 18577 (GuildHeaderCoachmarks)
+// Module 18749 (GuildHeaderCoachmarks)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import dismissible_content from "dismissible_content" /* 4975 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
+import dismissible_content from "dismissible_content" /* 5076 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -34,14 +34,14 @@ export default function GuildHeaderCoachmarks(arg0) {
   const items1 = [guild];
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(Permissions.MANAGE_GUILD, guild), items1);
-  const tmp5 = stateFromStores(18578)(guild.id);
+  const tmp5 = stateFromStores(18750)(guild.id);
   dependencyMap = tmp5;
-  let tmp6 = stateFromStores(18580)(guild.id);
-  const tmp7 = stateFromStores(14356)(guild.id);
-  const tmp8 = stateFromStores(18587)();
-  const tmp9 = stateFromStores(14349)(guild.id);
+  let tmp6 = stateFromStores(18752)(guild.id);
+  const tmp7 = stateFromStores(10609)(guild.id);
+  const tmp8 = stateFromStores(18759)();
+  const tmp9 = stateFromStores(10642)(guild.id);
   let num = 0;
-  const tmp10 = stateFromStores(14350)();
+  const tmp10 = stateFromStores(10643)();
   if (null != tmp9) {
     num = tmp9.cost - tmp11;
   }
@@ -59,12 +59,12 @@ export default function GuildHeaderCoachmarks(arg0) {
     return items;
   }, items2);
   const obj2 = { groupName: constants.GUILD_HEADER_TOOLTIPS };
-  const tmpResult = tmp(7644);
+  const tmpResult = tmp(9494);
   [tmp16, tmp17] = tmpResult.useSelectedDismissibleContent(memo, obj2);
   _slicedToArray(tmpResult.useSelectedDismissibleContent(memo, obj2), 2);
   let tmp19 = false === tmp7;
-  const useBoostToUnlockCoachmarkDCF = tmp(14342).useBoostToUnlockCoachmarkDCF;
-  tmp(14342);
+  const useBoostToUnlockCoachmarkDCF = tmp(10634).useBoostToUnlockCoachmarkDCF;
+  tmp(10634);
   const tmp13 = constants;
   const tmp14 = _slicedToArray;
   if (tmp19) {
@@ -81,14 +81,14 @@ export default function GuildHeaderCoachmarks(arg0) {
   if (first == null) {
     first = tmp14Result[0];
   }
-  if (tmp(4975).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK === first) {
-    return jsx(stateFromStores(18588), { targetRef, guild, markAsDismissed: tmp17 });
-  } else if (tmp(4975).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK === first) {
-    return jsx(stateFromStores(18589), { guildId: guild.id, targetRef, markAsDismissed: tmp17 });
-  } else if (tmp(4975).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK === first) {
+  if (tmp(5076).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK === first) {
+    return jsx(stateFromStores(18760), { targetRef, guild, markAsDismissed: tmp17 });
+  } else if (tmp(5076).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK === first) {
+    return jsx(stateFromStores(18761), { guildId: guild.id, targetRef, markAsDismissed: tmp17 });
+  } else if (tmp(5076).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK === first) {
     let tmp22 = null;
     if (null != tmp9) {
-      tmp22 = jsx(tmp4(18591), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
+      tmp22 = jsx(tmp4(18763), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
     }
     return tmp22;
   } else {

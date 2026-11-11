@@ -1,25 +1,25 @@
-// Module ID: 18995
-// Function ID: 18996
+// Module ID: 19181
+// Function ID: 19182
 // Name: NavTTIView
-// Dependencies: [109, 19, 17, 5756, 21, 18996, 18998, 18999, 504, 18989, 2]
+// Dependencies: [109, 19, 17, 5869, 21, 19182, 19184, 19185, 504, 19175, 2]
 // Exports: NavTTIView
 
-// Module 18995 (NavTTIView)
+// Module 19181 (NavTTIView)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import useComponentRenderSpan from "useComponentRenderSpan" /* 18996 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 18998 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 18999 */;
+import useComponentRenderSpan from "useComponentRenderSpan" /* 19182 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 19184 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 19185 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5756 */;
+import DevSettingsStore from "DevSettingsStore" /* 5869 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
 let c10;
 let c9;
 let tmp;
-const navigationTTIEnabled = tmp(18989);
+const navigationTTIEnabled = tmp(19175);
 function NavTTIMeasuredView(onLayout) {
   let children;
   let measurementProps;

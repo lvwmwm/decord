@@ -1,42 +1,40 @@
-// Module ID: 17876
-// Function ID: 17877
+// Module ID: 18042
+// Function ID: 18043
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 10107, 5167, 21, 5142, 504, 15653, 2107, 7390, 16805, 5839, 1113, 17353, 16806, 6842, 10108, 5170, 10033, 10034, 9881, 8250, 17877, 10415, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 11118, 5268, 21, 5243, 504, 15203, 2107, 7852, 16966, 5952, 1113, 16967, 5278, 5269, 5271, 5273, 9513, 10891, 11109, 8041, 18043, 10008, 2]
 
-// Module 17876 (UserSettingsAppIcons)
+// Module 18042 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5167 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7390 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10033 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10034 */;
-import AppIconRowsDefault from "AppIconRows" /* 17877 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
+import AppIconConstants from "AppIconConstants" /* 11118 */;
+import AppIconRowsDefault from "AppIconRows" /* 18043 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import AppIconConstants from "AppIconConstants" /* 10107 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c7, c8, closure_1, closure_2, dependencyMap, importDefault;
 
-let c10;
 let c9;
+let closure_12;
 let closure_14;
-let closure_15;
 let map1;
 let metroImportAll;
 let tmp6;
-let unpackModuleId;
-const NitroUpsellButtonDefault = tmp6(10415);
+const NitroUpsellButtonDefault = tmp6(10008);
 const View = react_native.View;
 ({ UpsellTypes: metroImportAll, AnalyticsPages: c9 } = Constants);
-({ getIconById: c10, isHexagonCampaignAppIcon: unpackModuleId } = AppIconConstants);
+const getIconById = AppIconConstants.getIconById;
 const HexagonCampaignPerk = HexagonCampaignConstants.HexagonCampaignPerk;
-({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = createStyles.createStyles({ upsellButtonContainer: { padding: 0, position: "absolute", bottom: 56, width: 350, alignSelf: "center" } });
+({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = Fragment);
+let closure_15 = createStyles.createStyles({ upsellButtonContainer: { padding: 0, position: "absolute", bottom: 56, width: 350, alignSelf: "center" } });
 const memoResult = react.memo(function UserSettingsAppIcons() {
   let intl;
   let obj6;
@@ -106,7 +104,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
               const obj5 = { value, done: true };
               return obj5;
             } else if (value) {
-              const tmp51 = closure_0(closure_2[17]);
+              const tmp51 = closure_0(closure_2[14]);
               closure_2 = tmp51;
               closure_1 = tmp51.saveHexagonCampaignPreviousAppIcon;
               c7 = 3;
@@ -163,10 +161,10 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             if (value) {
               obj = closure_0(closure_2[14]);
               const result = obj.markHexagonCampaignPerkApplied(constants.APP_ICON);
-              const obj14 = { perks: items, content: closure_0(closure_2[19]).QuestContent.APP_ICON_SETTINGS, contentSurface: closure_0(closure_2[18]).HexagonCampaignContentSurface.APP_ICON_PICKER };
+              const obj14 = { perks: items, content: closure_0(closure_2[18]).QuestContent.APP_ICON_SETTINGS, contentSurface: closure_0(closure_2[17]).HexagonCampaignContentSurface.APP_ICON_PICKER };
               items = [constants.APP_ICON];
-              const trackHexagonCampaignPerkAction = closure_0(closure_2[18]).trackHexagonCampaignPerkAction;
-              const tmp12 = closure_0(closure_2[18]);
+              const trackHexagonCampaignPerkAction = closure_0(closure_2[17]).trackHexagonCampaignPerkAction;
+              const tmp12 = closure_0(closure_2[17]);
               const result1 = trackHexagonCampaignPerkAction(obj14);
             }
             c5 = 0;
@@ -220,38 +218,38 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
               const obj3 = { value, done: true };
               return obj3;
             } else if (null == ref.current) {
-              const tmp35 = closure_1_10(closure_0);
-              if (null != tmp35) {
-                const id = tmp35.id;
+              const tmp31 = closure_1_10(closure_0);
+              if (null != tmp31) {
+                const id = tmp31.id;
                 if (id === closure_0) {
-                  const tmp8 = closure_1_11;
-                  if (closure_1_11(id)) {
-                    const obj6 = closure_0(c2[21]);
-                    const tmp9 = closure_0;
-                    if (obj6.isHexagonCampaignPerkExpiredForCurrentUser(constants2.APP_ICON)) {
-                      obj4 = { analyticsLocation, analyticsLocations, premiumFeatureCardOrder: tmp9(c2[23]).PremiumFeatureCardOrder.TIER_2_LEADING };
-                      const tmp23 = c1(c2[22]);
-                      tmp23(obj4);
+                  const obj6 = closure_0(c2[20]);
+                  if (obj6.isHexagonCampaignAppIcon(id)) {
+                    const tmp8Result = closure_0(c2[21]);
+                    if (tmp8Result.isHexagonCampaignPerkExpiredForCurrentUser(constants2.APP_ICON)) {
+                      obj4 = { analyticsLocation, analyticsLocations, premiumFeatureCardOrder: closure_0(c2[23]).PremiumFeatureCardOrder.TIER_2_LEADING };
+                      const tmp19 = c1(c2[22]);
+                      tmp19(obj4);
                     }
                   }
                   if (closure_2_1 !== id) {
-                    if (tmp36) {
-                      const tmp13 = dependencyMap;
-                      if (!tmp13) {
-                        const obj5 = { initialUpsellKey: constants.APP_ICONS, imageSource: tmp37 };
-                        const obj7 = c1(c2[24]);
-                        const result = obj7.handleShowUpsellAlert(obj5);
+                    if (tmp32) {
+                      const tmp12 = dependencyMap;
+                      if (!tmp12) {
+                        const obj5 = { initialUpsellKey: constants.APP_ICONS, imageSource: tmp33 };
+                        const obj8 = c1(c2[24]);
+                        const result = obj8.handleShowUpsellAlert(obj5);
                       }
                     }
-                    if (tmp8(id)) {
+                    const tmp8Result3 = closure_0(c2[20]);
+                    if (tmp8Result3.isHexagonCampaignAppIcon(id)) {
                       c2 = 1;
                       c1 = 1;
-                      const obj8 = { value: selectHexagonCampaignAppIcon(id), done: false };
-                      return obj8;
+                      const obj7 = { value: selectHexagonCampaignAppIcon(id), done: false };
+                      return obj7;
                     } else {
                       let premiumType;
                       const setAppIcon2 = closure_0(c2[11]).setAppIcon;
-                      const tmp20 = closure_0(c2[11]);
+                      const tmp8Result4 = closure_0(c2[11]);
                       if (stateFromStores != null) {
                         premiumType = stateFromStores.premiumType;
                       }
@@ -265,7 +263,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
                   const setAppIcon = closure_0(c2[11]).setAppIcon;
                   let premiumType1;
                   const tmp6 = closure_0(c2[11]);
-                  const DEFAULT = closure_0(c2[20]).FreemiumAppIconIds.DEFAULT;
+                  const DEFAULT = closure_0(c2[19]).FreemiumAppIconIds.DEFAULT;
                   if (stateFromStores != null) {
                     premiumType1 = stateFromStores.premiumType;
                   }
@@ -308,9 +306,9 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
           }
           c1 = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp27) {
+        } catch (tmp23) {
           c1 = 3;
-          throw tmp27;
+          throw tmp23;
         }
       }
     });
@@ -318,11 +316,11 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   };
   const tmp2 = stateFromStores;
   const tmp3 = dependencyMap;
-  let tmp = closure_16();
+  let tmp = closure_15();
   obj = stateFromStores(504);
   let items = [setPending];
   stateFromStores = obj.useStateFromStores(items, () => setPending.getCurrentUser());
-  let obj2 = stateFromStores(15653);
+  let obj2 = stateFromStores(15203);
   importDefault = obj2.useCurrentAppIcon();
   let obj3 = stateFromStores(2107);
   const isPremiumResult = obj3.isPremium(stateFromStores);
@@ -333,10 +331,9 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   const tmp7 = obj4(react.useState(null), 2);
   [tmp8, react] = tmp7;
   let closure_6 = react.useRef(null);
-  let tmp9 = closure_15;
-  let obj5 = { children: closure_13(closure_6, obj6) };
-  obj6 = { accessibilityRole: "radiogroup", children: closure_13(AppIconRowsDefault, obj7) };
-  const Form = stateFromStores(8250).Form;
+  let obj5 = { children: closure_12(closure_6, obj6) };
+  obj6 = { accessibilityRole: "radiogroup", children: closure_12(AppIconRowsDefault, obj7) };
+  const Form = stateFromStores(8041).Form;
   let tmp12 = closure_6;
   obj7 = {
     onSelect(arg0) {
@@ -344,9 +341,10 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
     },
     pendingAppIconId: tmp8
   };
-  const children = [closure_13(Form, obj5), ];
+  const children = [closure_12(Form, obj5), ];
   let tmp11Result = !isPremiumResult;
-  const tmp10 = closure_14;
+  const tmp10 = closure_13;
+  const tmp9 = closure_14;
   if (tmp11Result) {
     let obj8 = { style: tmp.upsellButtonContainer, children: tmp11(tmp6Result, obj9) };
     obj9 = {

@@ -1,14 +1,14 @@
-// Module ID: 14291
-// Function ID: 14292
+// Module ID: 14773
+// Function ID: 14774
 // Name: ChatWarningIcon
-// Dependencies: [19, 21, 575, 5843, 8562, 2]
+// Dependencies: [19, 21, 575, 5956, 9192, 2]
 // Exports: ChatWarningIcon
 
-// Module 14291 (ChatWarningIcon)
+// Module 14773 (ChatWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 8562 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 9192 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,27 +1,27 @@
-// Module ID: 20051
-// Function ID: 20052
+// Module ID: 20246
+// Function ID: 20247
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4991, 1385, 15963, 1072, 21, 5142, 575, 5753, 6175, 1113, 504, 1380, 1187, 12295, 10927, 7404, 5861, 1252, 7429, 5844, 11422, 7129, 7041, 5760, 5376, 20052, 7552, 2]
+// Dependencies: [19, 17, 5092, 1385, 16122, 1072, 21, 5243, 575, 5866, 6288, 1113, 504, 1380, 1187, 10486, 10828, 7864, 5974, 1252, 7885, 5957, 11981, 7680, 7379, 5873, 5489, 20247, 8069, 2]
 // Exports: default
 
-// Module 20051 (BlockedUserInGdmActionSheet)
+// Module 20246 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6175 */;
-import TableRow2 from "TableRow" /* 7041 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7552 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 20052 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
+import TableRow2 from "TableRow" /* 7379 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 20247 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import UserStore from "UserStore" /* 1385 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15963 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 16122 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -146,12 +146,12 @@ function UserCalloutAvatars(userIds) {
       const Avatar = tmp(1187).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(12295).UserIcon, {});
+      tmp8 = closure_10(tmp(10486).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1187).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10927).FacepileGroupDMAvatar;
+    const FacepileGroupDMAvatar = tmp(10828).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;

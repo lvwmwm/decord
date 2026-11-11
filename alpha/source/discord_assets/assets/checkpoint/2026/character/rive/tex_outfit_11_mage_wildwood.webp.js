@@ -1,8 +1,8 @@
-// Module ID: 13836
-// Function ID: 13837
+// Module ID: 14317
+// Function ID: 14318
 // Dependencies: [2]
 
-// Module 13836
+// Module 14317
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_11_mage_wildwood.webp.js");

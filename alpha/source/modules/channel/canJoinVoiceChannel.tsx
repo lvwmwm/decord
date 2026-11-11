@@ -1,12 +1,12 @@
-// Module ID: 6768
-// Function ID: 6769
+// Module ID: 6765
+// Function ID: 6766
 // Name: canJoinVoiceChannel
-// Dependencies: [4995, 1072, 2]
+// Dependencies: [5096, 1072, 2]
 // Exports: default
 
-// Module 6768 (canJoinVoiceChannel)
+// Module 6765 (canJoinVoiceChannel)
 import Constants from "Constants" /* 1072 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
 import size from "module_2" /* 2 */;
 
 const isPrivate = ChannelRecord.isPrivate;

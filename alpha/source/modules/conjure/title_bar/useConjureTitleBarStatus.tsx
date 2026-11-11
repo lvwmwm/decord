@@ -1,11 +1,11 @@
-// Module ID: 14974
-// Function ID: 14975
+// Module ID: 10453
+// Function ID: 10454
 // Name: useConjureTitleBarStatus
-// Dependencies: [13244, 11007, 13214, 504, 2]
+// Dependencies: [10454, 7267, 10455, 504, 2]
 // Exports: default
 
-// Module 14974 (useConjureTitleBarStatus)
-import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 13214 */;
+// Module 10453 (useConjureTitleBarStatus)
+import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 10455 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

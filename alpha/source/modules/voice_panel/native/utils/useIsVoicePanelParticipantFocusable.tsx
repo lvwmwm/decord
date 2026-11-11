@@ -1,17 +1,17 @@
-// Module ID: 19593
-// Function ID: 19594
+// Module ID: 19782
+// Function ID: 19783
 // Name: useIsVoicePanelParticipantFocusable
-// Dependencies: [4990, 6901, 6771, 2130, 5807, 11377, 1380, 504, 2]
+// Dependencies: [5091, 6953, 6757, 2130, 5920, 11930, 1380, 504, 2]
 // Exports: default
 
-// Module 19593 (useIsVoicePanelParticipantFocusable)
+// Module 19782 (useIsVoicePanelParticipantFocusable)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import participantHasVideo from "participantHasVideo" /* 11377 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6901 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6771 */;
+import participantHasVideo from "participantHasVideo" /* 11930 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import CallConstants from "CallConstants" /* 5807 */;
+import CallConstants from "CallConstants" /* 5920 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

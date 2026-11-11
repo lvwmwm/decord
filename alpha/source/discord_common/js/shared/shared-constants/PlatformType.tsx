@@ -1,9 +1,9 @@
-// Module ID: 8993
-// Function ID: 8994
+// Module ID: 9411
+// Function ID: 9412
 // Name: PlatformType
 // Dependencies: [2]
 
-// Module 8993 (PlatformType)
+// Module 9411 (PlatformType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/PlatformType.tsx");

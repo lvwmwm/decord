@@ -1,11 +1,11 @@
 // Module ID: 2163
 // Function ID: 2164
 // Name: EntitlementRecord
-// Dependencies: [1405, 2164, 1404, 2170, 2171, 16216, 2]
+// Dependencies: [1405, 2164, 1404, 2170, 2171, 16378, 2]
 
 // Module 2163 (EntitlementRecord)
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 16216 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 16378 */;
 import Record from "Record" /* 1405 */;
 import SKURecord from "SKURecord" /* 2164 */;
 import UserRecord from "UserRecord" /* 1404 */;

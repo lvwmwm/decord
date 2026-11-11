@@ -1,17 +1,17 @@
-// Module ID: 20060
-// Function ID: 20061
+// Module ID: 20255
+// Function ID: 20256
 // Name: SubscriptionManager
-// Dependencies: [5, 1385, 2172, 2176, 7657, 1387, 7353, 2107, 6591, 7660, 2]
+// Dependencies: [5, 1385, 2172, 2176, 8464, 1387, 7816, 2107, 6704, 8467, 2]
 
-// Module 20060 (SubscriptionManager)
+// Module 20255 (SubscriptionManager)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
 import BillingInfoStore from "BillingInfoStore" /* 2172 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import EntitlementStore from "EntitlementStore" /* 7657 */;
+import EntitlementStore from "EntitlementStore" /* 8464 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, currentUser, isFetchingMostRecentSubscription;

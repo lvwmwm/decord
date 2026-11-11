@@ -1,9 +1,9 @@
-// Module ID: 15909
-// Function ID: 15910
+// Module ID: 16068
+// Function ID: 16069
 // Name: WidgetRecord
 // Dependencies: [1405, 2]
 
-// Module 15909 (WidgetRecord)
+// Module 16068 (WidgetRecord)
 import Record from "Record" /* 1405 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 9811
-// Function ID: 9812
+// Module ID: 10098
+// Function ID: 10099
 // Name: apexExperiment
-// Dependencies: [1449, 9798, 9799, 9812, 2]
+// Dependencies: [1449, 10085, 10086, 10099, 2]
 // Exports: useQuestOrbsMultiplierMarketing
 
-// Module 9811 (apexExperiment)
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9798 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9799 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 9812 */;
+// Module 10098 (apexExperiment)
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 10085 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10086 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 10099 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
@@ -18,6 +18,7 @@ let obj20;
 let obj23;
 let obj25;
 let obj27;
+let obj30;
 let obj4;
 let obj6;
 let obj8;
@@ -82,7 +83,46 @@ ApexExperiment = ApexExperiment_mod;
 const obj26 = { name: "2026-10-clickable-hero-banner", kind: "user", defaultConfig: { enabled: false }, variations: obj27 };
 obj27 = { 1: null };
 obj27[1] = { enabled: true };
+const obj28 = { newLayoutWithSearch: false, iconOnlyCTA: false, badge: { duration: false, new: false, countdown: false }, showGameLogo: true, showQuestTitle: true, compactReward: false, shorterHeight: false, gameIconReward: false };
 const apexExperiment12 = ApexExperiment.createApexExperiment(obj26);
+ApexExperiment = ApexExperiment_mod;
+const obj29 = { name: "2026-11-quest-home-tile-single-elements", kind: "user", defaultConfig: obj28, variations: obj30 };
+obj30 = { 0: obj28, 1: null, 2: null, 3: null, 4: null, 5: null, 6: null, 7: null, 8: null, 9: null, 10: null, 11: null };
+const createApexExperiment = ApexExperiment.createApexExperiment;
+const obj31 = { newLayoutWithSearch: true };
+const merged = Object.assign(obj28);
+obj30[1] = obj31;
+const obj32 = { newLayoutWithSearch: true, iconOnlyCTA: true };
+const merged1 = Object.assign(obj28);
+obj30[2] = obj32;
+const obj33 = { newLayoutWithSearch: true, badge: { duration: true, new: false, countdown: false } };
+const merged2 = Object.assign(obj28);
+obj30[3] = obj33;
+const obj34 = { newLayoutWithSearch: true, badge: { duration: false, new: true, countdown: false } };
+const merged3 = Object.assign(obj28);
+obj30[4] = obj34;
+const obj35 = { newLayoutWithSearch: true, badge: { duration: false, new: false, countdown: true } };
+const merged4 = Object.assign(obj28);
+obj30[5] = obj35;
+const obj36 = { newLayoutWithSearch: true, showGameLogo: false };
+const merged5 = Object.assign(obj28);
+obj30[6] = obj36;
+const obj37 = { newLayoutWithSearch: true, showQuestTitle: false };
+const merged6 = Object.assign(obj28);
+obj30[7] = obj37;
+const obj38 = { newLayoutWithSearch: true, compactReward: true };
+const merged7 = Object.assign(obj28);
+obj30[8] = obj38;
+const obj39 = { newLayoutWithSearch: true, shorterHeight: true };
+const merged8 = Object.assign(obj28);
+obj30[9] = obj39;
+const obj40 = { newLayoutWithSearch: true, gameIconReward: true };
+const merged9 = Object.assign(obj28);
+obj30[10] = obj40;
+const obj41 = { newLayoutWithSearch: true, badge: { duration: true, new: true, countdown: false } };
+const merged10 = Object.assign(obj28);
+obj30[11] = obj41;
+const apexExperiment13 = createApexExperiment(obj29);
 const result = size.fileFinishedImporting("modules/quests/experiments/index.tsx");
 
 export const VideoEndCardV2Experiment = apexExperiment;
@@ -110,3 +150,5 @@ export const QuestOrbTierVariant = obj21;
 export const QuestOrbTierExperiment = apexExperiment10;
 export const MobileQuestRewardButtonToSecondaryButtonExperiment = apexExperiment11;
 export const ClickableHeroBannerExperiment = apexExperiment12;
+export const QUEST_HOME_TILE_SINGLE_ELEMENTS_CONTROL = obj28;
+export const QuestHomeTileSingleElementsExperiment = apexExperiment13;

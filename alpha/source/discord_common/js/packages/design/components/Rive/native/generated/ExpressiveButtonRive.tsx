@@ -1,13 +1,13 @@
-// Module ID: 5285
-// Function ID: 5286
+// Module ID: 5398
+// Function ID: 5399
 // Name: ExpressiveButtonRive
-// Dependencies: [109, 19, 21, 5209, 5286, 5262, 2]
+// Dependencies: [109, 19, 21, 5322, 5399, 5375, 2]
 // Exports: ExpressiveButtonRive
 
-// Module 5285 (ExpressiveButtonRive)
+// Module 5398 (ExpressiveButtonRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5209 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5262 */;
+import BaseRive2 from "BaseRive" /* 5322 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5375 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

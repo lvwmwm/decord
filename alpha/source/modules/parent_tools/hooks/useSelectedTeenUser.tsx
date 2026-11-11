@@ -1,14 +1,14 @@
-// Module ID: 17142
-// Function ID: 17143
+// Module ID: 17305
+// Function ID: 17306
 // Name: useSelectedTeenUser
-// Dependencies: [1385, 7797, 7794, 8445, 563, 2]
+// Dependencies: [1385, 8676, 8673, 9551, 563, 2]
 // Exports: useHasLoadedSettingsForTeen, useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 17142 (useSelectedTeenUser)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8445 */;
+// Module 17305 (useSelectedTeenUser)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9551 */;
 import UserStore from "UserStore" /* 1385 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7797 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7794 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8676 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

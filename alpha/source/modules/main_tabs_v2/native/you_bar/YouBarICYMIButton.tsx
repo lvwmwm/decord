@@ -1,19 +1,19 @@
-// Module ID: 18847
-// Function ID: 18848
+// Module ID: 19037
+// Function ID: 19038
 // Name: YouBarICYMIButton
-// Dependencies: [19, 17423, 21, 5142, 575, 18848, 18846, 15122, 5317, 1113, 2]
+// Dependencies: [19, 17588, 21, 5243, 575, 19038, 19036, 15612, 5430, 1113, 2]
 
-// Module 18847 (YouBarICYMIButton)
+// Module 19037 (YouBarICYMIButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import RootNavigationRef from "RootNavigationRef" /* 5317 */;
-import FlashIcon2 from "FlashIcon" /* 15122 */;
-import YouBarConstants from "YouBarConstants" /* 17423 */;
-import YouBarButtonDefault from "YouBarButton" /* 18846 */;
-import useICYMITabBadgeDefault from "useICYMITabBadge" /* 18848 */;
+import RootNavigationRef from "RootNavigationRef" /* 5430 */;
+import FlashIcon2 from "FlashIcon" /* 15612 */;
+import YouBarConstants from "YouBarConstants" /* 17588 */;
+import YouBarButtonDefault from "YouBarButton" /* 19036 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 19038 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

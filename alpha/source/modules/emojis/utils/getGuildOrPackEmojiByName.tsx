@@ -1,11 +1,11 @@
-// Module ID: 7907
-// Function ID: 7908
+// Module ID: 8723
+// Function ID: 8724
 // Name: getGuildOrPackEmojiByName
-// Dependencies: [5091, 2]
+// Dependencies: [5192, 2]
 // Exports: default
 
-// Module 7907 (getGuildOrPackEmojiByName)
-import EmojiTypes from "EmojiTypes" /* 5091 */;
+// Module 8723 (getGuildOrPackEmojiByName)
+import EmojiTypes from "EmojiTypes" /* 5192 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emojis/utils/getGuildOrPackEmojiByName.tsx");

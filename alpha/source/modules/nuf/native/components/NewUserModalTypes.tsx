@@ -1,9 +1,9 @@
-// Module ID: 19988
-// Function ID: 19989
+// Module ID: 20182
+// Function ID: 20183
 // Name: NewUserModalTypes
 // Dependencies: [2]
 
-// Module 19988 (NewUserModalTypes)
+// Module 20182 (NewUserModalTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/nuf/native/components/NewUserModalTypes.tsx");

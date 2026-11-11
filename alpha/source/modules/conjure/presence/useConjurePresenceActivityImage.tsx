@@ -1,13 +1,13 @@
-// Module ID: 15109
-// Function ID: 15110
+// Module ID: 15599
+// Function ID: 15600
 // Name: useConjurePresenceActivityImage
-// Dependencies: [5149, 5371, 15110, 2]
+// Dependencies: [5250, 5484, 15600, 2]
 // Exports: default
 
-// Module 15109 (useConjurePresenceActivityImage)
-import shared from "shared" /* 5149 */;
-import useThemeDefault from "useTheme" /* 5371 */;
-import conjurePresenceActivityImageDefault from "conjurePresenceActivityImage" /* 15110 */;
+// Module 15599 (useConjurePresenceActivityImage)
+import shared from "shared" /* 5250 */;
+import useThemeDefault from "useTheme" /* 5484 */;
+import conjurePresenceActivityImageDefault from "conjurePresenceActivityImage" /* 15600 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/presence/useConjurePresenceActivityImage.tsx");

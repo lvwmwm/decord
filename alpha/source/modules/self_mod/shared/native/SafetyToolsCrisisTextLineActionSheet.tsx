@@ -1,19 +1,19 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 12221
+// Function ID: 12222
 // Name: SafetyToolsCrisisTextLineActionSheet
-// Dependencies: [19, 17, 11405, 21, 5142, 575, 11453, 1113, 5753, 5760, 5836, 11418, 2]
+// Dependencies: [19, 17, 11963, 21, 5243, 575, 12222, 1113, 5866, 5873, 5949, 11977, 2]
 // Exports: default
 
-// Module 11452 (SafetyToolsCrisisTextLineActionSheet)
+// Module 12221 (SafetyToolsCrisisTextLineActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 5836 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11418 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 11453 */;
+import LinkingDefault from "Linking" /* 5949 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11977 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 12222 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11405 */;
+import Constants from "Constants" /* 11963 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -53,7 +53,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
   intl = trackAnalyticsEvent(1113).intl;
   obj2 = { style: tmp.container, children: items };
   const obj3 = { variant: "body-md/medium", color: "text-default", style: tmp.description, children: intl2.string(trackAnalyticsEvent(1113).t.uicS5l) };
-  const Text = trackAnalyticsEvent(5753).Text;
+  const Text = trackAnalyticsEvent(5866).Text;
   intl2 = trackAnalyticsEvent(1113).intl;
   items = [closure_6(Text, obj3), , ];
   const obj4 = {
@@ -67,7 +67,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
       trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_SMS);
     }
   };
-  const Button = trackAnalyticsEvent(5760).Button;
+  const Button = trackAnalyticsEvent(5873).Button;
   intl3 = trackAnalyticsEvent(1113).intl;
   items[1] = closure_6(Button, obj4);
   const obj5 = {
@@ -81,7 +81,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
       trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_WEB);
     }
   };
-  const Button2 = trackAnalyticsEvent(5760).Button;
+  const Button2 = trackAnalyticsEvent(5873).Button;
   intl4 = trackAnalyticsEvent(1113).intl;
   items[2] = closure_6(Button2, obj5);
   return closure_6(tmp2, obj);

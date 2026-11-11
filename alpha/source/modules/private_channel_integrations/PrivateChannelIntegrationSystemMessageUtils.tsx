@@ -1,10 +1,10 @@
-// Module ID: 8530
-// Function ID: 8531
+// Module ID: 9159
+// Function ID: 9160
 // Name: PrivateChannelIntegrationSystemMessageUtils
 // Dependencies: [1072, 1113, 2185, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 8530 (PrivateChannelIntegrationSystemMessageUtils)
+// Module 9159 (PrivateChannelIntegrationSystemMessageUtils)
 import intl3 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import Constants from "Constants" /* 1072 */;

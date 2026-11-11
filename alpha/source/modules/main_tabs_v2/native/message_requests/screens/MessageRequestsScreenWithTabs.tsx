@@ -1,22 +1,22 @@
-// Module ID: 19362
-// Function ID: 19363
+// Module ID: 19553
+// Function ID: 19554
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [19, 17, 21, 5142, 575, 9075, 9065, 1113, 19363, 19379, 9300, 14462, 13581, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 7929, 7917, 1113, 19554, 19570, 11190, 14834, 14101, 2]
 
-// Module 19362 (MessageRequestsScreenWithTabs)
+// Module 19553 (MessageRequestsScreenWithTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import SegmentedControlState from "SegmentedControlState" /* 9065 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9075 */;
-import SegmentedControl from "SegmentedControl" /* 9300 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13581 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 14462 */;
-import MessageRequestListDefault from "MessageRequestList" /* 19363 */;
-import SpamMessageListDefault from "SpamMessageList" /* 19379 */;
+import SegmentedControlState from "SegmentedControlState" /* 7917 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7929 */;
+import SegmentedControl from "SegmentedControl" /* 11190 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 14101 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 14834 */;
+import MessageRequestListDefault from "MessageRequestList" /* 19554 */;
+import SpamMessageListDefault from "SpamMessageList" /* 19570 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

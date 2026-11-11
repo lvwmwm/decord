@@ -1,13 +1,13 @@
-// Module ID: 13427
-// Function ID: 13428
+// Module ID: 13941
+// Function ID: 13942
 // Name: focusVoiceChannelActivity
-// Dependencies: [6901, 1072, 5890, 2]
+// Dependencies: [6953, 1072, 6003, 2]
 // Exports: default
 
-// Module 13427 (focusVoiceChannelActivity)
+// Module 13941 (focusVoiceChannelActivity)
 import Constants from "Constants" /* 1072 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5890 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6901 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
 import size from "module_2" /* 2 */;
 
 const ChannelLayouts = Constants.ChannelLayouts;

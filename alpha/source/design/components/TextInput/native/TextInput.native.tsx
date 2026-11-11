@@ -1,13 +1,13 @@
-// Module ID: 7151
-// Function ID: 7152
+// Module ID: 7553
+// Function ID: 7554
 // Name: TextInput/TextInput
-// Dependencies: [109, 19, 21, 5203, 7152, 7158, 7153, 2]
+// Dependencies: [109, 19, 21, 5316, 7554, 7560, 7555, 2]
 // Exports: TextInput
 
-// Module 7151 (TextInput/TextInput)
+// Module 7553 (TextInput/TextInput)
 import Fragment from "Fragment" /* 21 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5203 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7153 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5316 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7555 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -35,9 +35,9 @@ export function TextInput(ref) {
     }
     status = str;
   }
-  const Input = tmp2(7152).Input;
+  const Input = tmp2(7554).Input;
   const merged1 = Object.assign(merged);
-  const TextField = tmp2(7158).TextField;
+  const TextField = tmp2(7560).TextField;
   const merged2 = Object.assign(merged);
   const merged3 = Object.assign(tmp5);
   const tmp2Result = getRequiredFieldA11yName;

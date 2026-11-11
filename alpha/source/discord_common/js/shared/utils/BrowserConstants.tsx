@@ -1,9 +1,9 @@
-// Module ID: 5996
-// Function ID: 5997
+// Module ID: 6109
+// Function ID: 6110
 // Name: BrowserConstants
 // Dependencies: [1353, 2]
 
-// Module 5996 (BrowserConstants)
+// Module 6109 (BrowserConstants)
 import _modDef1353 from "module_1353" /* 1353 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 5894
-// Function ID: 5895
+// Module ID: 6007
+// Function ID: 6008
 // Name: hasRichActivity
-// Dependencies: [5893, 2]
+// Dependencies: [6006, 2]
 // Exports: default
 
-// Module 5894 (hasRichActivity)
-import ActivityTypes from "ActivityTypes" /* 5893 */;
+// Module 6007 (hasRichActivity)
+import ActivityTypes from "ActivityTypes" /* 6006 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/hasRichActivity.tsx");

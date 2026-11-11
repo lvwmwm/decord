@@ -1,10 +1,10 @@
-// Module ID: 18790
-// Function ID: 18791
+// Module ID: 18980
+// Function ID: 18981
 // Name: InterestPickerExperiment
 // Dependencies: [19, 1449, 2]
 // Exports: isInterestPickerExperimentEnabled, useInterestPickerGameList
 
-// Module 18790 (InterestPickerExperiment)
+// Module 18980 (InterestPickerExperiment)
 import react_mod from "react" /* 19 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;

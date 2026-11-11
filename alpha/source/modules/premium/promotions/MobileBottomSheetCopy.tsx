@@ -1,24 +1,24 @@
-// Module ID: 19457
-// Function ID: 19458
+// Module ID: 18237
+// Function ID: 18238
 // Name: MobileBottomSheetCopy
-// Dependencies: [1113, 17231, 15623, 2]
+// Dependencies: [1113, 9610, 10007, 2]
 // Exports: getMobileBottomSheetCopy
 
-// Module 19457 (MobileBottomSheetCopy)
+// Module 18237 (MobileBottomSheetCopy)
 import intl from "intl" /* 1113 */;
-import PromotionStringUtils from "PromotionStringUtils" /* 15623 */;
-import MarketingStringFormat from "MarketingStringFormat" /* 17231 */;
+import MarketingStringFormat from "MarketingStringFormat" /* 9610 */;
+import PromotionStringUtils from "PromotionStringUtils" /* 10007 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/promotions/MobileBottomSheetCopy.tsx");
 
-export function getMobileBottomSheetCopy(promotionMarketingComponent) {
+export function getMobileBottomSheetCopy(component) {
   let tmp7Result4;
-  if ("mobileBottomSheet" !== promotionMarketingComponent.properties.properties.oneofKind) {
+  if ("mobileBottomSheet" !== component.properties.properties.oneofKind) {
     return null;
   } else {
-    const mobileBottomSheet = promotionMarketingComponent.properties.properties.mobileBottomSheet;
-    const formatVariableValues = promotionMarketingComponent.getFormatVariableValues(intl.intl.currentLocale);
+    const mobileBottomSheet = component.properties.properties.mobileBottomSheet;
+    const formatVariableValues = component.getFormatVariableValues(intl.intl.currentLocale);
     const obj5 = MarketingStringFormat;
     const result = obj5.formatMarketingPlainString(mobileBottomSheet.header, formatVariableValues);
     if (result.ok) {

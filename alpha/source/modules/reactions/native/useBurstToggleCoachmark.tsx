@@ -1,21 +1,21 @@
-// Module ID: 10081
-// Function ID: 10082
+// Module ID: 9491
+// Function ID: 9492
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1385, 4988, 21, 4975, 5142, 575, 10046, 504, 2171, 7644, 1113, 10082, 2]
+// Dependencies: [32, 19, 17, 1385, 5089, 21, 5076, 5243, 575, 9492, 504, 2171, 9494, 1113, 9501, 2]
 // Exports: default
 
-// Module 10081 (useBurstToggleCoachmark)
+// Module 9491 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4975 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
-import SuperReactionIcon2 from "SuperReactionIcon" /* 10046 */;
+import dismissible_content from "dismissible_content" /* 5076 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import SuperReactionIcon2 from "SuperReactionIcon" /* 9492 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -48,7 +48,7 @@ export default function useBurstToggleCoachmark(targetRef) {
   } else {
     items2 = [];
   }
-  const tmpResult = first(7644);
+  const tmpResult = first(9494);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   let closure_1 = tmp7;
@@ -72,7 +72,7 @@ export default function useBurstToggleCoachmark(targetRef) {
     intl2 = intl3.intl;
     return obj;
   }, items3);
-  const tmpResult2 = first(10082);
+  const tmpResult2 = first(9501);
   const coachmark = tmpResult2.useCoachmark(targetRef, memo);
   return tmp5[1];
 };

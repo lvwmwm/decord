@@ -1,21 +1,21 @@
-// Module ID: 9281
-// Function ID: 9282
+// Module ID: 15808
+// Function ID: 15809
 // Name: ImageButton
-// Dependencies: [19, 17, 21, 5142, 5766, 575, 5767, 1652, 5763, 5764, 5844, 5769, 8103, 5753, 2]
+// Dependencies: [19, 17, 21, 5243, 5879, 575, 5880, 1652, 5876, 5877, 5957, 5882, 7923, 5866, 2]
 // Exports: ImageButton
 
-// Module 9281 (ImageButton)
+// Module 15808 (ImageButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5763 */;
-import springPresets from "springPresets" /* 5764 */;
-import ButtonConstants from "ButtonConstants" /* 5766 */;
-import ButtonHooks from "ButtonHooks" /* 5767 */;
-import FastImageDefault from "FastImage" /* 5844 */;
+import spring_spring from "spring/spring" /* 5876 */;
+import springPresets from "springPresets" /* 5877 */;
+import ButtonConstants from "ButtonConstants" /* 5879 */;
+import ButtonHooks from "ButtonHooks" /* 5880 */;
+import FastImageDefault from "FastImage" /* 5957 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
@@ -23,9 +23,9 @@ const _modDef1652 = _mod1652;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const Text_Text = tmp2(5753);
-const Button_BaseButton = tmp2(5769);
-const BaseIconButton3 = tmp2(8103);
+const Text_Text = tmp2(5866);
+const Button_BaseButton = tmp2(5882);
+const BaseIconButton3 = tmp2(7923);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((arg0, arg1, arg2) => {
@@ -33,9 +33,9 @@ let closure_7 = createStyles.createStyles((arg0, arg1, arg2) => {
   let rect;
   let MEDIUM_BUTTON_PADDING = ButtonConstants.LARGE_BUTTON_PADDING;
   if ("sm" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5766).SMALL_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5879).SMALL_BUTTON_PADDING;
   } else if ("md" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5766).MEDIUM_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5879).MEDIUM_BUTTON_PADDING;
   }
   const sum = arg1 + 2 * MEDIUM_BUTTON_PADDING;
   const tmpResult = ButtonConstants;

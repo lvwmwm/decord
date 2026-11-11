@@ -1,12 +1,12 @@
-// Module ID: 9721
-// Function ID: 9722
+// Module ID: 9558
+// Function ID: 9559
 // Name: PromotionRecord
-// Dependencies: [1405, 9722, 9762, 1403, 2]
+// Dependencies: [1405, 9559, 9603, 1403, 2]
 
-// Module 9721 (PromotionRecord)
+// Module 9558 (PromotionRecord)
 import FlagUtils from "FlagUtils" /* 1403 */;
 import Record from "Record" /* 1405 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9722 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9559 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

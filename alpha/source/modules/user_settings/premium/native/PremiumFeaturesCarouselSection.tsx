@@ -1,24 +1,24 @@
-// Module ID: 15674
-// Function ID: 15675
+// Module ID: 15233
+// Function ID: 15234
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1072, 7696, 1387, 21, 575, 5142, 5717, 1092, 5753, 5844, 1113, 15675, 15676, 15677, 15678, 5392, 1624, 10757, 1187, 7390, 9075, 1493, 1252, 2]
+// Dependencies: [32, 19, 17, 1072, 9368, 1387, 21, 575, 5243, 5830, 1092, 5866, 5957, 1113, 15234, 15235, 15236, 15237, 5505, 1624, 11629, 1187, 7852, 7929, 1493, 1252, 2]
 // Exports: default
 
-// Module 15674 (PremiumFeaturesCarouselSection)
+// Module 15233 (PremiumFeaturesCarouselSection)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import LinearGradientDefault from "LinearGradient" /* 5717 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import ColorConstants from "ColorConstants" /* 7696 */;
+import LinearGradientDefault from "LinearGradient" /* 5830 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import ColorConstants from "ColorConstants" /* 9368 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -73,7 +73,7 @@ function PremiumFeaturesCarousel(arg0) {
   let mapped;
   react = undefined;
   const tmp = closure_14();
-  let obj = onEndReached(5392);
+  let obj = onEndReached(5505);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const tmp5 = mapped(react.useState(0), 2);
   dependencyMap = tmp7;
@@ -162,7 +162,7 @@ function PremiumFeaturesCarousel(arg0) {
         modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
         onSnapToItem: tmp5[1]
       };
-      tmp19 = closure_10(currentIndex(10757), obj3);
+      tmp19 = closure_10(currentIndex(11629), obj3);
     }
     let items3 = [tmp19, ];
     let obj4 = { containerStyle: tmp.indicators, numberOfItems: mapped.length, currentIndex };
@@ -193,7 +193,7 @@ let obj4 = { cardContainer: { flex: 1 }, card: obj5, image: { alignSelf: "center
 obj5 = { flex: 1, alignSelf: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
 const createStyles2 = createStyles.createStyles;
 ({ marginTop: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_24 });
-const clientStatuses = createStyles2(obj4);
+let closure_15 = createStyles2(obj4);
 createStyles = createStyles_mod;
 let closure_16 = createStyles.createStyles({ emojiImage: { alignSelf: "flex-end" } });
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesCarouselSection.tsx");
@@ -211,11 +211,11 @@ export default function PremiumFeaturesCarouselSection(style) {
   dependencyMap = undefined;
   style = style.style;
   let tmp = closure_14();
-  const analyticsLocations = first(7390)().analyticsLocations;
+  const analyticsLocations = first(7852)().analyticsLocations;
   let obj = react;
   [first, dependencyMap] = react.useState(false);
-  ({ width, ref, onLayout } = first(9075)());
-  const tmp5 = first(9075)();
+  ({ width, ref, onLayout } = first(7929)());
+  const tmp5 = first(7929)();
   if (undefined === width) {
     let obj2 = analyticsLocations(1493);
     width = obj2.getWindowDimensions().width;
@@ -233,7 +233,7 @@ export default function PremiumFeaturesCarouselSection(style) {
     }
   }, items);
   const obj4 = { style: tmp.headerText, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(analyticsLocations(1113).t.RGadQR) };
-  const Text = analyticsLocations(5753).Text;
+  const Text = analyticsLocations(5866).Text;
   intl = analyticsLocations(1113).intl;
   items2 = [closure_10(Text, obj4), closure_10(PremiumFeaturesCarousel, { width, onEndReached: callback })];
   return closure_11(closure_6, obj3);

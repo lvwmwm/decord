@@ -1,13 +1,13 @@
-// Module ID: 14389
-// Function ID: 14390
+// Module ID: 10690
+// Function ID: 10691
 // Name: openGuildPowerupsMultiPerkBottomSheet
-// Dependencies: [5376, 14390, 2118, 14360, 2]
+// Dependencies: [5489, 10691, 2118, 10653, 2]
 // Exports: default
 
-// Module 14389 (openGuildPowerupsMultiPerkBottomSheet)
+// Module 10690 (openGuildPowerupsMultiPerkBottomSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import openGuildPowerupsBottomSheet from "openGuildPowerupsBottomSheet" /* 14360 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import openGuildPowerupsBottomSheet from "openGuildPowerupsBottomSheet" /* 10653 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsMultiPerkBottomSheet.tsx");
@@ -15,6 +15,6 @@ const result = size.fileFinishedImporting("modules/premium/powerups/native/utils
 export default function openGuildPowerupsMultiPerkBottomSheet(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(14390, dependencyMap.paths);
+  const tmp2 = asyncRequire(10691, dependencyMap.paths);
   openLazy(tmp2, openGuildPowerupsBottomSheet.GUILD_POWERUPS_BOTTOM_SHEET_KEY, arg0);
 };

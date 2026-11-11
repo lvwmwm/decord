@@ -1,17 +1,17 @@
-// Module ID: 9087
-// Function ID: 9088
+// Module ID: 7943
+// Function ID: 7944
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 9079, 21, 5142, 575, 1113, 1652, 2]
+// Dependencies: [19, 17, 7933, 21, 5243, 575, 1113, 1652, 2]
 
-// Module 9087 (ActionSheetDragHandle)
+// Module 7943 (ActionSheetDragHandle)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 9079 */;
-import createStyles from "createStyles" /* 5142 */;
+import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 7933 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let DRAG_HANDLE_BAR_HEIGHT;

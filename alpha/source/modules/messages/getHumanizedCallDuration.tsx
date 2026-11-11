@@ -1,10 +1,10 @@
-// Module ID: 8514
-// Function ID: 8515
+// Module ID: 9143
+// Function ID: 9144
 // Name: getHumanizedCallDuration
 // Dependencies: [2]
 // Exports: default
 
-// Module 8514 (getHumanizedCallDuration)
+// Module 9143 (getHumanizedCallDuration)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/getHumanizedCallDuration.tsx");

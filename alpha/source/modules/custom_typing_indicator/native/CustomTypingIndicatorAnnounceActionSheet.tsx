@@ -1,23 +1,23 @@
-// Module ID: 13994
-// Function ID: 13995
+// Module ID: 14474
+// Function ID: 14475
 // Name: CustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [32, 19, 17, 1072, 5391, 4988, 21, 1398, 1113, 4030, 13991, 5142, 575, 7390, 7415, 4972, 4975, 7638, 5390, 7358, 8046, 5725, 13995, 13996, 13997, 13998, 13999, 14000, 14001, 14002, 1187, 5753, 5760, 2]
+// Dependencies: [32, 19, 17, 1072, 5504, 5089, 21, 1398, 1113, 4081, 14471, 5243, 575, 7852, 7871, 5073, 5076, 8537, 5503, 7351, 8143, 5838, 14475, 14476, 14477, 14478, 14479, 14480, 14481, 14482, 1187, 5866, 5873, 2]
 // Exports: default
 
-// Module 13994 (CustomTypingIndicatorAnnounceActionSheet)
+// Module 14474 (CustomTypingIndicatorAnnounceActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import user from "user" /* 1398 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4972 */;
-import dismissible_content from "dismissible_content" /* 4975 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5391 */;
-import openUserSettings from "openUserSettings" /* 7638 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5073 */;
+import dismissible_content from "dismissible_content" /* 5076 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
+import openUserSettings from "openUserSettings" /* 8537 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c10;

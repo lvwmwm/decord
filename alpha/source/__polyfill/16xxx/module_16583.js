@@ -1,62 +1,23 @@
 // Module ID: 16583
 // Function ID: 16584
-// Dependencies: []
+// Dependencies: [16573, 16576]
+// Exports: LookupSupportedLocales
 
 // Module 16583
-let map;
+import _mod16573 from "module_16573" /* 16573 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 16576 */;
 
 
-export default function(arg0) {
-  map = arg0;
-  if (!map) {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    map = new Map();
-  }
-  let obj = {
-    all: map,
-    on(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        value.push(arg1);
-      } else {
-        const items = [arg1];
-        const result = obj.set(arg0, items);
-      }
-    },
-    off(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const tmp = arg1;
-        if (tmp) {
-          value.splice(value.indexOf(arg1) >>> 0, 1);
-        } else {
-          const result = obj.set(arg0, []);
-        }
-      }
-    },
-    emit(arg0, arg1) {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const substr = value.slice();
-        const mapped = substr.map((fn) => {
-          fn(closure_1);
-        });
-      }
-      const value2 = obj.get("*");
-      if (value2) {
-        const substr1 = value2.slice();
-        const mapped1 = substr1.map((fn) => {
-          fn(closure_0, closure_1);
-        });
-      }
+export function LookupSupportedLocales(arg0, arg1) {
+  let num;
+  const items = [];
+  for (let num = 0; num < arg1.length; num = num + 1) {
+    let str = arg1[num];
+    let replaced = str.replace(_mod16573.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    if (BestAvailableLocaleResult) {
+      let arr = items.push(BestAvailableLocaleResult);
     }
-  };
-  return obj;
-};
+  }
+  return items;
+}

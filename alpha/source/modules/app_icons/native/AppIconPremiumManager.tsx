@@ -1,33 +1,31 @@
-// Module ID: 19829
-// Function ID: 19830
+// Module ID: 20021
+// Function ID: 20022
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1385, 10107, 1072, 5167, 3, 10108, 7353, 1377, 15653, 5170, 2171, 1252, 2]
+// Dependencies: [5, 1385, 11118, 1072, 5268, 3, 5269, 7816, 1377, 15203, 5271, 5273, 2171, 1252, 2]
 
-// Module 19829 (AppIconPremiumManager)
+// Module 20021 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5167 */;
-import AppIconTypes from "AppIconTypes" /* 10108 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
+import AppIconTypes from "AppIconTypes" /* 5269 */;
+import AppIconConstants from "AppIconConstants" /* 11118 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
-import AppIconConstants from "AppIconConstants" /* 10107 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c5, c6;
 
-let hasOwnProperty;
-let metroRequire;
-({ getIconById: hasOwnProperty, isHexagonCampaignAppIcon: metroRequire } = AppIconConstants);
+const getIconById = AppIconConstants.getIconById;
 const AnalyticEvents = Constants.AnalyticEvents;
 const HexagonCampaignPerk = HexagonCampaignConstants.HexagonCampaignPerk;
-const tmp3 = new LoggerDefault("AppIconPremiumManager");
-let closure_9 = tmp3;
+let closure_8 = new LoggerDefault("AppIconPremiumManager");
+const tmp2 = new LoggerDefault("AppIconPremiumManager");
 const DEFAULT = AppIconTypes.FreemiumAppIconIds.DEFAULT;
-let closure_11 = { ORPHANED: "orphaned", PREMIUM_LOST: "premium_lost", CAMPAIGN_EXPIRED: "campaign_expired" };
+let closure_10 = { ORPHANED: "orphaned", PREMIUM_LOST: "premium_lost", CAMPAIGN_EXPIRED: "campaign_expired" };
 class AppIconPremiumManager extends AutomaticLifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
@@ -57,7 +55,6 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
     return (async (arg0, value) => {
       let obj5;
       let v1;
-      let v3;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -107,8 +104,9 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
             closure_1 = value;
             if (closure_1 !== DEFAULT) {
               let _undefined2;
-              if (c6(closure_1)) {
-                const obj = _undefined(_undefined3[10]);
+              const obj9 = _undefined(_undefined3[10]);
+              if (obj9.isHexagonCampaignAppIcon(closure_1)) {
+                const obj = _undefined(_undefined3[11]);
                 if (obj.isHexagonCampaignPerkExpiredForCurrentUser(constants.APP_ICON)) {
                   const _HermesInternal3 = HermesInternal;
                   logger.info("Campaign icon " + closure_1 + " has expired for this user, resetting to default");
@@ -147,8 +145,8 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
                 const obj8 = { value: undefined, done: true };
                 return obj8;
               } else {
-                const obj9 = _undefined2(_undefined3[11]);
-                const result = obj9.canUsePremiumAppIcons(_undefined);
+                const obj10 = _undefined2(_undefined3[12]);
+                const result = obj10.canUsePremiumAppIcons(_undefined);
                 const isPremium = !result && _undefined3.isPremium;
                 if (isPremium) {
                   const _HermesInternal = HermesInternal;

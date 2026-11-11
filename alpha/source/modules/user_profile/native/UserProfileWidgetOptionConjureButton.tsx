@@ -1,18 +1,18 @@
-// Module ID: 15225
-// Function ID: 15226
+// Module ID: 15710
+// Function ID: 15711
 // Name: UserProfileWidgetOptionConjureButton
-// Dependencies: [19, 17, 21, 5142, 575, 5376, 15226, 11114, 5753, 1113, 4028, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5489, 15711, 10461, 5866, 1113, 4079, 2]
 // Exports: default
 
-// Module 15225 (UserProfileWidgetOptionConjureButton)
+// Module 15710 (UserProfileWidgetOptionConjureButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import MagicWandIcon2 from "MagicWandIcon" /* 11114 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import MagicWandIcon2 from "MagicWandIcon" /* 10461 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -70,7 +70,7 @@ export default function UserProfileWidgetOptionConjureButton(arg0) {
   let obj2 = { size: "md", color: padding(575).colors.TEXT_DEFAULT };
   const MagicWandIcon = MagicWandIcon2.MagicWandIcon;
   items = [closure_5(MagicWandIcon, obj2), ];
-  const obj3 = { variant: "body-md/medium", color: "text-strong", children: intl.string(padding(4028)["5WHmVU"]) };
+  const obj3 = { variant: "body-md/medium", color: "text-strong", children: intl.string(padding(4079)["5WHmVU"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = closure_5(Text, obj3);

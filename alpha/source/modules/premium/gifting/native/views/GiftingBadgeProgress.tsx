@@ -1,19 +1,19 @@
-// Module ID: 14712
-// Function ID: 14713
+// Module ID: 11758
+// Function ID: 11759
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 8840, 21, 5142, 575, 10745, 10747, 5753, 1113, 2760, 2]
+// Dependencies: [19, 17, 8481, 21, 5243, 575, 11617, 11619, 5866, 1113, 2781, 2]
 // Exports: default
 
-// Module 14712 (GiftingBadgeProgress)
+// Module 11758 (GiftingBadgeProgress)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2760 from "module_2760" /* 2760 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8840 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10745 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10747 */;
+import _modDef2781 from "module_2781" /* 2781 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8481 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11617 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11619 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -87,14 +87,14 @@ export default function GiftingBadgeProgress(currentTier) {
   const obj5 = { style: tmp.content, children: items1 };
   if (tmp14) {
     const obj6 = { variant: "body-md/semibold", children: title };
-    tmp14 = hasOwnProperty(tmp2(5753).Text, obj6);
+    tmp14 = hasOwnProperty(tmp2(5866).Text, obj6);
   }
   items1 = [tmp14, hasOwnProperty(GiftingBadgeProgressBar, { percent: num2 }), ];
   const obj7 = { style: tmp.labels, children: tmp16Result };
   tmp16Result = null != nextTier;
   if (tmp16Result) {
-    const obj8 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(_modDef2760.iIpfQe, obj9) };
-    const Text = tmp2(5753).Text;
+    const obj8 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(_modDef2781.iIpfQe, obj9) };
+    const Text = tmp2(5866).Text;
     intl = tmp2(1113).intl;
     obj9 = { count: progress, threshold: tmp6 };
     tmp16Result = tmp16(Text, obj8);

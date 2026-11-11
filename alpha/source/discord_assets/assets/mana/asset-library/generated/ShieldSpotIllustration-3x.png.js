@@ -1,8 +1,8 @@
-// Module ID: 8051
-// Function ID: 8052
+// Module ID: 8148
+// Function ID: 8149
 // Dependencies: [2]
 
-// Module 8051
+// Module 8148
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShieldSpotIllustration-3x.png.js");

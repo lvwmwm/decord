@@ -1,7 +1,7 @@
 // Module ID: 2129
 // Function ID: 2130
 // Name: RTCControlSocket
-// Dependencies: [1359, 2130, 5899, 1089, 5923, 559, 3, 5903, 16302, 6091, 1377, 38, 2]
+// Dependencies: [1359, 2130, 6012, 1089, 6036, 559, 3, 6016, 16463, 6204, 1377, 38, 2]
 
 // Module 2129 (RTCControlSocket)
 import LoggerDefault from "Logger" /* 3 */;
@@ -9,20 +9,20 @@ import _modDef38 from "module_38" /* 38 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import TimeUtils from "TimeUtils" /* 5903 */;
-import DaveMessageValidator from "DaveMessageValidator" /* 6091 */;
+import TimeUtils from "TimeUtils" /* 6016 */;
+import DaveMessageValidator from "DaveMessageValidator" /* 6204 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1359 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import Constants from "Constants" /* 5899 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5923 */;
+import Constants from "Constants" /* 6012 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 6036 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f84481 = (name) => ({ name: name.name, type: name.type, priority: 1000 * name.priority, payload_type: name.payloadType, rtx_payload_type: name.rtxPayloadType, encode: name.encode, decode: name.decode });
-const f84482 = (type) => {
+const f85266 = (name) => ({ name: name.name, type: name.type, priority: 1000 * name.priority, payload_type: name.payloadType, rtx_payload_type: name.rtxPayloadType, encode: name.encode, decode: name.decode });
+const f85267 = (type) => {
   let tmp;
   const obj = { type: type.type, rid: type.rid, ssrc: type.ssrc, active: type.active, quality: type.quality, rtx_ssrc: type.rtxSsrc, max_bitrate: type.maxBitrate, max_framerate: type.maxFrameRate, max_resolution: tmp };
   tmp = undefined;
@@ -32,7 +32,7 @@ const f84482 = (type) => {
   }
   return obj;
 };
-const f84483 = (rid) => {
+const f85268 = (rid) => {
   let VIDEO;
   let tmp5;
   const type = rid.type;
@@ -56,14 +56,24 @@ const f84483 = (rid) => {
 function noop() {
 
 }
+function convertStreamParametersFromWire(streams) {
+  let mapped;
+  if (streams != null) {
+    mapped = streams.map(f85268);
+  }
+  if (mapped == null) {
+    mapped = [];
+  }
+  return mapped;
+}
 ({ Features: hasOwnProperty, MediaEngineContextTypes: metroRequire, MediaTypes: metroImportDefault, SpeakingFlags: metroImportAll } = Constants);
-const RTCSocketOpcode = { IDENTIFY: 0, [0]: "IDENTIFY", SELECT_PROTOCOL: 1, [1]: "SELECT_PROTOCOL", READY: 2, [2]: "READY", HEARTBEAT: 3, [3]: "HEARTBEAT", SELECT_PROTOCOL_ACK: 4, [4]: "SELECT_PROTOCOL_ACK", SPEAKING: 5, [5]: "SPEAKING", HEARTBEAT_ACK: 6, [6]: "HEARTBEAT_ACK", RESUME: 7, [7]: "RESUME", HELLO: 8, [8]: "HELLO", RESUMED: 9, [9]: "RESUMED", CLIENT_CONNECT: 11, [11]: "CLIENT_CONNECT", VIDEO: 12, [12]: "VIDEO", CLIENT_DISCONNECT: 13, [13]: "CLIENT_DISCONNECT", SESSION_UPDATE: 14, [14]: "SESSION_UPDATE", MEDIA_SINK_WANTS: 15, [15]: "MEDIA_SINK_WANTS", VOICE_BACKEND_VERSION: 16, [16]: "VOICE_BACKEND_VERSION", CHANNEL_OPTIONS_UPDATE: 17, [17]: "CHANNEL_OPTIONS_UPDATE", FLAGS: 18, [18]: "FLAGS", PLATFORM: 20, [20]: "PLATFORM", DAVE_PROTOCOL_PREPARE_TRANSITION: 21, [21]: "DAVE_PROTOCOL_PREPARE_TRANSITION", DAVE_PROTOCOL_EXECUTE_TRANSITION: 22, [22]: "DAVE_PROTOCOL_EXECUTE_TRANSITION", DAVE_PROTOCOL_READY_FOR_TRANSITION: 23, [23]: "DAVE_PROTOCOL_READY_FOR_TRANSITION", DAVE_PROTOCOL_PREPARE_EPOCH: 24, [24]: "DAVE_PROTOCOL_PREPARE_EPOCH", MLS_EXTERNAL_SENDER_PACKAGE: 25, [25]: "MLS_EXTERNAL_SENDER_PACKAGE", MLS_KEY_PACKAGE: 26, [26]: "MLS_KEY_PACKAGE", MLS_PROPOSALS: 27, [27]: "MLS_PROPOSALS", MLS_COMMIT_WELCOME: 28, [28]: "MLS_COMMIT_WELCOME", MLS_PREPARE_COMMIT_TRANSITION: 29, [29]: "MLS_PREPARE_COMMIT_TRANSITION", MLS_WELCOME: 30, [30]: "MLS_WELCOME", MLS_INVALID_COMMIT_WELCOME: 31, [31]: "MLS_INVALID_COMMIT_WELCOME", CLIENT_CANNOT_REACH_RTC_SERVER: 32, [32]: "CLIENT_CANNOT_REACH_RTC_SERVER", SFU_UPDATE: 33, [33]: "SFU_UPDATE" };
+const RTCSocketOpcode = { IDENTIFY: 0, [0]: "IDENTIFY", SELECT_PROTOCOL: 1, [1]: "SELECT_PROTOCOL", READY: 2, [2]: "READY", HEARTBEAT: 3, [3]: "HEARTBEAT", SELECT_PROTOCOL_ACK: 4, [4]: "SELECT_PROTOCOL_ACK", SPEAKING: 5, [5]: "SPEAKING", HEARTBEAT_ACK: 6, [6]: "HEARTBEAT_ACK", RESUME: 7, [7]: "RESUME", HELLO: 8, [8]: "HELLO", RESUMED: 9, [9]: "RESUMED", CLIENT_CONNECT: 11, [11]: "CLIENT_CONNECT", VIDEO: 12, [12]: "VIDEO", CLIENT_DISCONNECT: 13, [13]: "CLIENT_DISCONNECT", SESSION_UPDATE: 14, [14]: "SESSION_UPDATE", MEDIA_SINK_WANTS: 15, [15]: "MEDIA_SINK_WANTS", VOICE_BACKEND_VERSION: 16, [16]: "VOICE_BACKEND_VERSION", CHANNEL_OPTIONS_UPDATE: 17, [17]: "CHANNEL_OPTIONS_UPDATE", FLAGS: 18, [18]: "FLAGS", PLATFORM: 20, [20]: "PLATFORM", DAVE_PROTOCOL_PREPARE_TRANSITION: 21, [21]: "DAVE_PROTOCOL_PREPARE_TRANSITION", DAVE_PROTOCOL_EXECUTE_TRANSITION: 22, [22]: "DAVE_PROTOCOL_EXECUTE_TRANSITION", DAVE_PROTOCOL_READY_FOR_TRANSITION: 23, [23]: "DAVE_PROTOCOL_READY_FOR_TRANSITION", DAVE_PROTOCOL_PREPARE_EPOCH: 24, [24]: "DAVE_PROTOCOL_PREPARE_EPOCH", MLS_EXTERNAL_SENDER_PACKAGE: 25, [25]: "MLS_EXTERNAL_SENDER_PACKAGE", MLS_KEY_PACKAGE: 26, [26]: "MLS_KEY_PACKAGE", MLS_PROPOSALS: 27, [27]: "MLS_PROPOSALS", MLS_COMMIT_WELCOME: 28, [28]: "MLS_COMMIT_WELCOME", MLS_PREPARE_COMMIT_TRANSITION: 29, [29]: "MLS_PREPARE_COMMIT_TRANSITION", MLS_WELCOME: 30, [30]: "MLS_WELCOME", MLS_INVALID_COMMIT_WELCOME: 31, [31]: "MLS_INVALID_COMMIT_WELCOME", CLIENT_CANNOT_REACH_RTC_SERVER: 32, [32]: "CLIENT_CANNOT_REACH_RTC_SERVER", SFU_UPDATE: 33, [33]: "SFU_UPDATE", WEBTRANSPORT_START_SESSION: 34, [34]: "WEBTRANSPORT_START_SESSION", WEBTRANSPORT_START_SESSION_ACK: 35, [35]: "WEBTRANSPORT_START_SESSION_ACK" };
 let obj2 = { AUTHENTICATION_FAILED: 4004, [4004]: "AUTHENTICATION_FAILED", INVALID_SESSION: 4006, [4006]: "INVALID_SESSION", SERVER_NOT_FOUND: 4011, [4011]: "SERVER_NOT_FOUND", SERVER_CRASH: 4015, [4015]: "SERVER_CRASH", CANCELED: 4016, [4016]: "CANCELED", HEARTBEAT_TIMEOUT: 4800, [4800]: "HEARTBEAT_TIMEOUT", UNRESUMABLE: 4801, [4801]: "UNRESUMABLE", RESET_BACKOFF: 4802, [4802]: "RESET_BACKOFF", REPEATED_MLS_INVALID_MESSAGES: 4803, [4803]: "REPEATED_MLS_INVALID_MESSAGES", DAVE_DOWNGRADE_REFUSED: 4804, [4804]: "DAVE_DOWNGRADE_REFUSED", DAVE_INVALID_MESSAGE: 4805, [4805]: "DAVE_INVALID_MESSAGE" };
 const authStore2 = { DISCONNECTED: 0, [0]: "DISCONNECTED", CONNECTING: 1, [1]: "CONNECTING", IDENTIFYING: 2, [2]: "IDENTIFYING", RESUMING: 3, [3]: "RESUMING", CONNECTED: 4, [4]: "CONNECTED", RECONNECTING: 5, [5]: "RECONNECTING" };
 let closure_13 = 20 * DurationsDefault.Millis.SECOND;
 const MINUTE = DurationsDefault.Millis.MINUTE;
 let closure_15 = 5 * DurationsDefault.Millis.SECOND;
-let obj3 = { Connecting: "connecting", Connect: "connect", Disconnect: "disconnect", Resuming: "resuming", Ready: "ready", SelectProtocolAck: "select-protocol-ack", SfuUpdate: "sfu-update", Speaking: "speaking", Video: "video", Ping: "ping", ClientConnect: "client-connect", ClientDisconnect: "client-disconnect", Codecs: "codecs", MediaSessionId: "media-session-id", MediaSinkWants: "media-sink-wants", VoiceBackendVersion: "voice-backend-version", KeyframeInterval: "keyframe-interval", ChannelOptionsUpdateSecureFramesProtocol: "update-secure-frames-protocol", Flags: "flags", Platform: "platform", SDP: "sdp", Encryption: "encryption", BandwidthEstimationExperiment: "bandwidth-estimation-experiment", SecureFramesInit: "secure-frames-init", SecureFramesPrepareTransition: "secure-frames-prepare-transition", SecureFramesExecuteTransition: "secure-frames-execute-transition", SecureFramesPrepareEpoch: "secure-frames-prepare-epoch", MLSExternalSenderPackage: "mls-external-sender-package", MLSProposals: "mls-proposals", MLSPrepareCommitTransition: "mls-prepare-commit-transition", MLSWelcome: "mls-welcome", ReceiveMessage: "receive-message", SendMessage: "send-message" };
+let obj3 = { Connecting: "connecting", Connect: "connect", Disconnect: "disconnect", Resuming: "resuming", Ready: "ready", SelectProtocolAck: "select-protocol-ack", SfuUpdate: "sfu-update", Speaking: "speaking", Video: "video", Ping: "ping", ClientConnect: "client-connect", ClientDisconnect: "client-disconnect", Codecs: "codecs", MediaSessionId: "media-session-id", MediaSinkWants: "media-sink-wants", VoiceBackendVersion: "voice-backend-version", KeyframeInterval: "keyframe-interval", ChannelOptionsUpdateSecureFramesProtocol: "update-secure-frames-protocol", Flags: "flags", Platform: "platform", SDP: "sdp", Encryption: "encryption", BandwidthEstimationExperiment: "bandwidth-estimation-experiment", SecureFramesInit: "secure-frames-init", SecureFramesPrepareTransition: "secure-frames-prepare-transition", SecureFramesExecuteTransition: "secure-frames-execute-transition", SecureFramesPrepareEpoch: "secure-frames-prepare-epoch", MLSExternalSenderPackage: "mls-external-sender-package", MLSProposals: "mls-proposals", MLSPrepareCommitTransition: "mls-prepare-commit-transition", MLSWelcome: "mls-welcome", ReceiveMessage: "receive-message", SendMessage: "send-message", WebTransportAck: "web-transport-ack" };
 class RTCControlSocket extends TypedEventEmitter {
   constructor(url, DEFAULT) {
     if (DEFAULT === undefined) {
@@ -107,13 +117,13 @@ class RTCControlSocket extends TypedEventEmitter {
       logger2.error("Connect called with already existing websocket");
       self.cleanupWebSocket((close) => close.close(4000));
     }
-    let obj = self(5903);
+    let obj = self(6016);
     self.connectionStartTime = obj.now();
     self.helloTimeout = setTimeout(() => {
       const obj = TimeUtils;
       self.handleClose(false, 0, "The connection timed out after " + obj.now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
     }, closure_13);
-    obj2 = self(16302);
+    obj2 = self(16463);
     obj3 = { location: "RTCControlSocket", supportsSfuUpdate: MediaEngineStore.supports(constants.UDP_ENDPOINT_UPDATE) };
     const webSocket = new WebSocket("" + self.url + "?v=" + obj2.getVoiceGatewayProtocolVersion(obj3));
     self.webSocket = webSocket;
@@ -134,15 +144,12 @@ class RTCControlSocket extends TypedEventEmitter {
     webSocket.onmessage = (data) => {
       let audio_ssrc;
       let d;
-      let obj;
       let op;
       let parseBinaryMessageResult;
       let seq;
-      let streams;
       let user_id;
       let video_ssrc;
       if (data.data instanceof ArrayBuffer) {
-        obj = self;
         parseBinaryMessageResult = self.parseBinaryMessage(data.data);
         if (null == parseBinaryMessageResult) {
           const result = obj.disconnectForInvalidDaveMessage("binary frame shorter than its header");
@@ -202,8 +209,8 @@ class RTCControlSocket extends TypedEventEmitter {
         if (d.keyframe_interval) {
           self.emit(obj3.KeyframeInterval, d.keyframe_interval);
         }
-        const obj9 = DaveMessageValidator;
-        const parseDaveInitResult = obj9.parseDaveInit(d);
+        const obj10 = DaveMessageValidator;
+        const parseDaveInitResult = obj10.parseDaveInit(d);
         if (null == parseDaveInitResult) {
           const _HermesInternal9 = HermesInternal;
           const result1 = obj2.disconnectForInvalidDaveMessage("op " + op + " dave_protocol_version");
@@ -213,34 +220,26 @@ class RTCControlSocket extends TypedEventEmitter {
         }
       } else if (obj.SPEAKING === op) {
         const speaking = d.speaking;
-        let tmp72 = speaking;
+        let tmp78 = speaking;
         if (typeof speaking === "boolean") {
-          tmp72 = speaking ? tmp95.VOICE : tmp95.NONE;
+          tmp78 = speaking ? tmp102.VOICE : tmp102.NONE;
         }
-        self.emit(obj3.Speaking, d.user_id, d.ssrc, tmp72);
+        self.emit(obj3.Speaking, d.user_id, d.ssrc, tmp78);
       } else if (obj.HEARTBEAT === op) {
         self.sendHeartbeat();
       } else if (obj.HEARTBEAT_ACK === op) {
         self.handleHeartbeatAck(d);
       } else if (obj.VIDEO === op) {
         const Video = tmp4.Video;
-        ({ user_id, audio_ssrc, video_ssrc, streams } = d);
-        let mapped1;
-        const emit = obj2.emit;
-        if (streams != null) {
-          mapped1 = streams.map(f84483);
-        }
-        if (mapped1 == null) {
-          mapped1 = [];
-        }
-        emit(Video, user_id, audio_ssrc, video_ssrc, mapped1);
+        ({ user_id, audio_ssrc, video_ssrc } = d);
+        self.emit(Video, user_id, audio_ssrc, video_ssrc, convertStreamParametersFromWire(d.streams));
       } else if (obj.CLIENT_CONNECT === op) {
         self.emit(obj3.ClientConnect, d.user_ids);
       } else if (obj.CLIENT_DISCONNECT === op) {
         self.emit(obj3.ClientDisconnect, d.user_id);
       } else if (obj.SESSION_UPDATE === op) {
-        const tmp56 = null == d.audio_codec && null == d.video_codec;
-        if (!tmp56) {
+        const tmp66 = null == d.audio_codec && null == d.video_codec;
+        if (!tmp66) {
           self.emit(obj3.Codecs, d.audio_codec, d.video_codec);
         }
         if (null != d.media_session_id) {
@@ -252,23 +251,23 @@ class RTCControlSocket extends TypedEventEmitter {
       } else if (obj.MEDIA_SINK_WANTS === op) {
         self.emit(obj3.MediaSinkWants, d);
       } else if (obj.VOICE_BACKEND_VERSION === op) {
-        const tmp52 = null != d.voice && null != d.rtc_worker;
-        if (tmp52) {
+        const tmp62 = null != d.voice && null != d.rtc_worker;
+        if (tmp62) {
           self.emit(obj3.VoiceBackendVersion, d.voice, d.rtc_worker);
         }
       } else if (obj.FLAGS === op) {
-        const tmp49 = null != d.flags && null != d.user_id;
-        if (tmp49) {
+        const tmp59 = null != d.flags && null != d.user_id;
+        if (tmp59) {
           self.emit(obj3.Flags, d.user_id, d.flags);
         }
       } else if (obj.PLATFORM === op) {
-        const tmp46 = null != d.platform && null != d.user_id;
-        if (tmp46) {
+        const tmp56 = null != d.platform && null != d.user_id;
+        if (tmp56) {
           self.emit(obj3.Platform, d.user_id, d.platform);
         }
       } else if (obj.DAVE_PROTOCOL_PREPARE_TRANSITION === op) {
-        const obj8 = DaveMessageValidator;
-        const result2 = obj8.parseDavePrepareTransition(d);
+        const obj9 = DaveMessageValidator;
+        const result2 = obj9.parseDavePrepareTransition(d);
         if (null == result2) {
           const _HermesInternal8 = HermesInternal;
           const result3 = obj2.disconnectForInvalidDaveMessage("op " + op);
@@ -276,8 +275,8 @@ class RTCControlSocket extends TypedEventEmitter {
           self.emit(obj3.SecureFramesPrepareTransition, result2.transitionId, result2.protocolVersion);
         }
       } else if (obj.DAVE_PROTOCOL_EXECUTE_TRANSITION === op) {
-        const obj7 = DaveMessageValidator;
-        const result4 = obj7.parseDaveExecuteTransition(d);
+        const obj8 = DaveMessageValidator;
+        const result4 = obj8.parseDaveExecuteTransition(d);
         if (null == result4) {
           const _HermesInternal7 = HermesInternal;
           const result5 = obj2.disconnectForInvalidDaveMessage("op " + op);
@@ -285,8 +284,8 @@ class RTCControlSocket extends TypedEventEmitter {
           self.emit(obj3.SecureFramesExecuteTransition, result4);
         }
       } else if (obj.DAVE_PROTOCOL_PREPARE_EPOCH === op) {
-        const obj6 = DaveMessageValidator;
-        const result6 = obj6.parseDavePrepareEpoch(d);
+        const obj7 = DaveMessageValidator;
+        const result6 = obj7.parseDavePrepareEpoch(d);
         if (null == result6) {
           const _HermesInternal6 = HermesInternal;
           const result7 = obj2.disconnectForInvalidDaveMessage("op " + op);
@@ -298,8 +297,8 @@ class RTCControlSocket extends TypedEventEmitter {
       } else if (obj.MLS_PROPOSALS === op) {
         self.emit(obj3.MLSProposals, d);
       } else if (obj.MLS_PREPARE_COMMIT_TRANSITION === op) {
-        const obj5 = DaveMessageValidator;
-        const result8 = obj5.parseMLSTransitionFrame(d);
+        const obj6 = DaveMessageValidator;
+        const result8 = obj6.parseMLSTransitionFrame(d);
         if (null == result8) {
           const _HermesInternal5 = HermesInternal;
           const result9 = obj2.disconnectForInvalidDaveMessage("op " + op);
@@ -307,13 +306,36 @@ class RTCControlSocket extends TypedEventEmitter {
           self.emit(obj3.MLSPrepareCommitTransition, result8.transitionId, result8.message);
         }
       } else if (obj.MLS_WELCOME === op) {
-        const obj4 = DaveMessageValidator;
-        const result10 = obj4.parseMLSTransitionFrame(d);
+        const obj5 = DaveMessageValidator;
+        const result10 = obj5.parseMLSTransitionFrame(d);
         if (null == result10) {
           const _HermesInternal4 = HermesInternal;
           const result11 = obj2.disconnectForInvalidDaveMessage("op " + op);
         } else {
           self.emit(obj3.MLSWelcome, result10.transitionId, result10.message);
+        }
+      } else if (obj.WEBTRANSPORT_START_SESSION_ACK === op) {
+        if (null != d.certificates) {
+          if (null != d.token) {
+            const items1 = [];
+            const certificates = d.certificates;
+            for (const item10069 of certificates) {
+              let tmp15 = item10069;
+              let tmp16 = null != item10069.algorithm;
+              if (tmp16) {
+                tmp16 = null != tmp15.hash;
+              }
+              if (tmp16) {
+                obj3 = { algorithm: tmp15.algorithm, value: Uint8Array.from(atob(tmp15.hash), (str) => str.charCodeAt(0)) };
+                let _Uint8Array2 = Uint8Array;
+                let _atob = atob;
+                let push = items1.push;
+                let arr = push(obj3);
+              }
+              continue;
+            }
+            self.emit(obj3.WebTransportAck, d.token, items1);
+          }
         }
       } else {
         const logger3 = obj2.logger;
@@ -446,7 +468,7 @@ class RTCControlSocket extends TypedEventEmitter {
         tmp4 = tmp;
       }
     }
-    const tmp4Result = tmp4(5903);
+    const tmp4Result = tmp4(6016);
     const diff = tmp4Result.now() - self.connectionStartTime;
     ({ logger, heartbeatInterval } = self);
     const info = logger.info;
@@ -465,7 +487,7 @@ class RTCControlSocket extends TypedEventEmitter {
     const self = this;
     const backoff = this.backoff;
     backoff.succeed();
-    const obj = TimeUtils;
+    let obj = TimeUtils;
     const logger = this.logger;
     logger.info("[READY] took " + obj.now() - this.connectionStartTime + " ms");
     if (this.serverVersion >= 6) {
@@ -476,7 +498,7 @@ class RTCControlSocket extends TypedEventEmitter {
     let mapped;
     const emit = self.emit;
     if (streams != null) {
-      mapped = streams.map(f84483);
+      mapped = streams.map(f85268);
     }
     if (mapped == null) {
       mapped = [];
@@ -721,7 +743,7 @@ class RTCControlSocket extends TypedEventEmitter {
     const send = this.send;
     const IDENTIFY = obj.IDENTIFY;
     if (streamParameters != null) {
-      mapped = streamParameters.map(f84482);
+      mapped = streamParameters.map(f85267);
     }
     send(IDENTIFY, obj);
   }
@@ -814,7 +836,7 @@ class RTCControlSocket extends TypedEventEmitter {
         if (null != sdp.sdp) {
           if ("" !== sdp.sdp) {
             sdp = sdp.sdp;
-            obj3 = { codecs: codecs.map(f84481), rtc_connection_id: rTCConnectionId };
+            obj3 = { codecs: codecs.map(f85266), rtc_connection_id: rTCConnectionId };
             const merged = Object.assign(sdp);
             codecs = sdp.codecs;
             tmp = obj3;
@@ -836,7 +858,7 @@ class RTCControlSocket extends TypedEventEmitter {
       if (BooleanResult) {
         const obj4 = { address: null, port: null, mode: null };
         ({ address: obj2.address, port: obj2.port, mode: obj2.mode } = sdp);
-        const obj5 = { codecs: codecs1.map(f84481), rtc_connection_id: rTCConnectionId, experiments: _selectedExperiments };
+        const obj5 = { codecs: codecs1.map(f85266), rtc_connection_id: rTCConnectionId, experiments: _selectedExperiments };
         const merged1 = Object.assign(sdp);
         codecs1 = sdp.codecs;
         tmp = obj5;
@@ -850,7 +872,7 @@ class RTCControlSocket extends TypedEventEmitter {
     send(SELECT_PROTOCOL, obj9);
   }
   updateSession(codecs) {
-    const obj = { codecs: codecs.map(f84481) };
+    const obj = { codecs: codecs.map(f85266) };
     codecs = codecs.codecs;
     const send = this.send;
     const SESSION_UPDATE = obj.SESSION_UPDATE;
@@ -881,7 +903,7 @@ class RTCControlSocket extends TypedEventEmitter {
     const send = this.send;
     const VIDEO = obj.VIDEO;
     if (arr != null) {
-      mapped = arr.map(f84482);
+      mapped = arr.map(f85267);
     }
     send(VIDEO, obj);
   }
@@ -932,6 +954,9 @@ class RTCControlSocket extends TypedEventEmitter {
   }
   setHeartbeatIntervalModifier(heartbeatIntervalModifier) {
     this.heartbeatIntervalModifier = heartbeatIntervalModifier;
+  }
+  startWebTransport() {
+    this.send(obj.WEBTRANSPORT_START_SESSION, {});
   }
 }
 const prototype = RTCControlSocket.prototype;

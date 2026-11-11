@@ -1,22 +1,22 @@
-// Module ID: 18805
-// Function ID: 18806
+// Module ID: 18995
+// Function ID: 18996
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 5173, 1072, 1387, 21, 5142, 10376, 2118, 14542, 7443, 9881, 7415, 18733, 504, 18748, 1113, 18806, 11643, 575, 2]
+// Dependencies: [5, 19, 17, 5286, 1072, 1387, 21, 5243, 11284, 2118, 14916, 14009, 11109, 7871, 18923, 504, 18893, 1113, 18996, 13367, 575, 2]
 
-// Module 18805 (GuildsBarCreateJoinButton)
+// Module 18995 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 11643 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18733 */;
+import CirclePlusIcon2 from "CirclePlusIcon" /* 13367 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18923 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5173 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -152,7 +152,7 @@ const memoResult = react.memo(function GuildsBarCreateJoinButton() {
     };
     return obj;
   }, []);
-  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: false, children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "body-sm/normal", children: jsx(CirclePlusIcon, obj5) };
   tmp7 = GuildsBarAnimatedItemWrapperDefault;
   intl = intl2.intl;
   CirclePlusIcon = CirclePlusIcon2.CirclePlusIcon;

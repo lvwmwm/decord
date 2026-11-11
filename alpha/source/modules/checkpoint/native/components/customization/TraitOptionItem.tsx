@@ -1,24 +1,24 @@
-// Module ID: 13945
-// Function ID: 13946
+// Module ID: 14422
+// Function ID: 14423
 // Name: TraitOptionItem
-// Dependencies: [17, 6201, 21, 575, 6568, 5142, 6202, 7107, 9618, 5717, 8105, 6247, 5844, 5202, 2]
+// Dependencies: [17, 6314, 21, 575, 6681, 5243, 6315, 7467, 9369, 5830, 8197, 6360, 5957, 5315, 2]
 // Exports: default
 
-// Module 13945 (TraitOptionItem)
+// Module 14422 (TraitOptionItem)
 import nativeDefault from "native" /* 575 */;
-import react_native from "react-native" /* 5202 */;
-import LinearGradientDefault from "LinearGradient" /* 5717 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6202 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6247 */;
-import _modDef7107 from "module_7107" /* 7107 */;
-import inlineStyles from "inlineStyles" /* 8105 */;
+import react_native from "react-native" /* 5315 */;
+import LinearGradientDefault from "LinearGradient" /* 5830 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6315 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6360 */;
+import _modDef7467 from "module_7467" /* 7467 */;
+import inlineStyles from "inlineStyles" /* 8197 */;
 import react_native2 from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import Fragment from "Fragment" /* 21 */;
 import "CheckpointCustomizationUtils";
-import CheckpointCustomizationUtils_mod from "CheckpointCustomizationUtils" /* 6568 */;
-import createStyles from "createStyles" /* 5142 */;
+import CheckpointCustomizationUtils_mod from "CheckpointCustomizationUtils" /* 6681 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -35,7 +35,7 @@ let metroImportDefault;
 let metroRequire;
 let obj4;
 let tmp2;
-const NitroWheelIcon = tmp2(9618);
+const NitroWheelIcon = tmp2(9369);
 function RarityIndicator(rarity) {
   let items;
   let obj3;
@@ -47,7 +47,7 @@ function RarityIndicator(rarity) {
     items = [, ];
     ({ rarityIndicator: arr2[0], cornerNitroIcon: arr2[1] } = tmp);
     obj3 = { colors: metroRequire, start, end, style: tmp.cornerNitroIconGradient };
-    const tmp12 = _modDef7107;
+    const tmp12 = _modDef7467;
     tmp4Result = React4(tmp12, obj2);
   } else {
     const items1 = [, , ];
@@ -129,14 +129,14 @@ function AssetShape(arg0) {
   num = 1;
   const Polygon = inlineStyles.Polygon;
   if (isSelected) {
-    num = tmp14(6568).TRAIT_OPTION_STROKE_WIDTH;
+    num = tmp14(6681).TRAIT_OPTION_STROKE_WIDTH;
   }
   items1[1] = React4(Polygon, obj5);
   let tmp13Result = !isNoneOption;
   if (tmp13Result) {
     const _HermesInternal = HermesInternal;
     const obj6 = { points: obj2[size], fill: "url(#" + checkpointTraitGradient + ")" };
-    const Polygon2 = tmp14(8105).Polygon;
+    const Polygon2 = tmp14(8197).Polygon;
     tmp13Result = tmp13(Polygon2, obj6);
   }
   items1[2] = tmp13Result;

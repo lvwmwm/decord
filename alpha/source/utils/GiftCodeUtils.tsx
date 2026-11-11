@@ -1,23 +1,23 @@
-// Module ID: 6579
-// Function ID: 6580
+// Module ID: 6692
+// Function ID: 6693
 // Name: GiftCodeUtils
-// Dependencies: [5, 32, 6580, 1385, 1072, 1387, 5782, 6086, 6590, 1252, 4963, 6612, 1113, 6613, 1380, 504, 2171, 2]
+// Dependencies: [5, 32, 6693, 1385, 1072, 1387, 5895, 6199, 6703, 1252, 5064, 6724, 1113, 6725, 1380, 504, 2171, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 6579 (GiftCodeUtils)
+// Module 6692 (GiftCodeUtils)
 import intl12 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6086 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6612 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 6199 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6724 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6580 */;
+import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6693 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import RegexUtils from "RegexUtils" /* 5782 */;
+import RegexUtils from "RegexUtils" /* 5895 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f90469 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
+const f91352 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
 let obj = function _resolveGiftCode() {
   obj = _asyncToGenerator(async (gift_code) => {
     let closure_1 = arg1;
@@ -212,16 +212,16 @@ const items3 = [
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const ArrayResult = Array(4);
 const fillResult = ArrayResult.fill(undefined);
-let mapped = fillResult.map(f90469);
+let mapped = fillResult.map(f91352);
 const items4 = [mapped.join("-?"), , , ];
 const ArrayResult1 = Array(6);
 const fillResult1 = ArrayResult1.fill(undefined);
-const mapped1 = fillResult1.map(f90469);
+const mapped1 = fillResult1.map(f91352);
 items4[1] = mapped1.join("-?");
 let c0 = 5;
 const ArrayResult2 = Array(3);
 const fillResult2 = ArrayResult2.fill(undefined);
-const mapped2 = fillResult2.map(f90469);
+const mapped2 = fillResult2.map(f91352);
 items4[2] = mapped2.join("-?");
 items4[3] = "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}";
 const regExp2 = new RegExp("^(WUMP-?)?(" + items4.join("|") + ")$");
@@ -614,7 +614,7 @@ export function getBodyText(arg0) {
   } else if (constants3.SUCCESS === step) {
     let otherwiseResult;
     if (null != subscriptionPlan) {
-      const str = subscriptionPlan(6613);
+      const str = subscriptionPlan(6725);
       const match = str.match(subscriptionPlan);
       const obj3 = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
       const obj4 = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };

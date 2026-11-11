@@ -1,12 +1,12 @@
-// Module ID: 18320
-// Function ID: 18321
+// Module ID: 18491
+// Function ID: 18492
 // Name: MobileNotifSettingsRendererConfig
-// Dependencies: [17830, 18321, 18336, 2]
+// Dependencies: [17996, 18492, 18508, 2]
 
-// Module 18320 (MobileNotifSettingsRendererConfig)
-import MobileNotifSettings from "MobileNotifSettings" /* 17830 */;
-import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 18321 */;
-import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 18336 */;
+// Module 18491 (MobileNotifSettingsRendererConfig)
+import MobileNotifSettings from "MobileNotifSettings" /* 17996 */;
+import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 18492 */;
+import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 18508 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
@@ -16,10 +16,12 @@ obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS]
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY] = MobileNotifSettingsRoutesAll.CategoryFriendsActivityRoute;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_ACTIVITY_TITLE] = MobileNotifSettingsRoutesAll.FriendActivityTitleRoute;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_SERVERS] = MobileNotifSettingsRoutesAll.CategoryServersRoute;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS_CHOICE_ROUTE] = MobileNotifSettingsRoutesAll.ReactionsChoiceRoute;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUESTS] = MobileNotifSettingsNodesAll.FriendRequests;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CALLS] = MobileNotifSettingsNodesAll.Calls;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_LOW] = MobileNotifSettingsNodesAll.MissedMessagesLow;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_DEFAULT] = MobileNotifSettingsNodesAll.MissedMessagesDefault;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS_CHOICE] = MobileNotifSettingsNodesAll.ReactionsChoice;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_INVITES_RECONNECTING] = MobileNotifSettingsNodesAll.InvitesReconnecting;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_TRENDING_SUGGESTIONS] = MobileNotifSettingsNodesAll.TrendingSuggestions;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_UPDATES_OFFERS] = MobileNotifSettingsNodesAll.UpdatesOffers;

@@ -1,10 +1,10 @@
-// Module ID: 14339
-// Function ID: 14340
+// Module ID: 10631
+// Function ID: 10632
 // Name: getGuildPowerupFormattedDateString
 // Dependencies: [2186, 2]
 // Exports: default
 
-// Module 14339 (getGuildPowerupFormattedDateString)
+// Module 10631 (getGuildPowerupFormattedDateString)
 import LocaleStore from "LocaleStore" /* 2186 */;
 import size from "module_2" /* 2 */;
 

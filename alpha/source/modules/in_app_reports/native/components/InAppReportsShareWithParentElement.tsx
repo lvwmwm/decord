@@ -1,13 +1,13 @@
-// Module ID: 15475
-// Function ID: 15476
+// Module ID: 12199
+// Function ID: 12200
 // Name: InAppReportsShareWithParentElement
-// Dependencies: [32, 19, 21, 7796, 5838, 1113, 7571, 15474, 12423, 2]
+// Dependencies: [32, 19, 21, 8675, 5951, 1113, 6852, 12198, 12200, 2]
 // Exports: default
 
-// Module 15475 (InAppReportsShareWithParentElement)
+// Module 12199 (InAppReportsShareWithParentElement)
 import Fragment from "Fragment" /* 21 */;
-import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7796 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15474 */;
+import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 8675 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12198 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ export default function _default(parents) {
     if (tmp5 != null) {
       username1 = tmp5.username;
     }
-    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(12423).ShareIcon, {}), description: intl2.string(parents(1113).t["5l/hlt"]), disabled: first, onPress: tmp3 };
+    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(12200).ShareIcon, {}), description: intl2.string(parents(1113).t["5l/hlt"]), disabled: first, onPress: tmp3 };
     formatToPlainString2(HqyWeO, obj2);
     const tmp10 = InAppReportsUpsellsTableRowDefault;
     let intl = tmp16(1113).intl;

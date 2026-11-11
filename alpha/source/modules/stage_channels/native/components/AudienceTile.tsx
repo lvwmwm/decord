@@ -1,18 +1,18 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 13018
+// Function ID: 13019
 // Name: AudienceTile
-// Dependencies: [19, 17, 5054, 21, 5142, 575, 6182, 1187, 12081, 1493, 504, 6817, 6175, 5422, 1113, 8023, 12206, 5149, 12227, 2]
+// Dependencies: [19, 17, 5155, 21, 5243, 575, 6295, 1187, 12878, 1493, 504, 6880, 6288, 5535, 1113, 7612, 13000, 5250, 13019, 2]
 // Exports: getTileWidthStyle
 
-// Module 12226 (AudienceTile)
+// Module 13018 (AudienceTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6182 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8023 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6295 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7612 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -45,7 +45,7 @@ function RaisedHandIcon(rtsState) {
   }
   items[1] = activeBackground;
   const obj = { style: items, children: hasOwnProperty(Icon, obj2) };
-  obj2 = { style: tmp.raisedHand, source: tmp5(12081), color: PRIMARY_800 };
+  obj2 = { style: tmp.raisedHand, source: tmp5(12878), color: PRIMARY_800 };
   Icon = native.Icon;
   return hasOwnProperty(tmp7, obj);
 }

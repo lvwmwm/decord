@@ -1,7 +1,7 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1071, 1072, 1097, 3, 1098, 510, 1099, 1252, 16360, 572, 16361, 7189, 6582, 1265, 16362, 1242, 14239, 504, 11706, 2118, 16363, 7890, 2116, 2]
+// Dependencies: [503, 1071, 1072, 1097, 3, 1098, 510, 1099, 1252, 16521, 572, 16522, 7708, 6695, 1265, 16523, 1242, 14722, 504, 12329, 2118, 16524, 8706, 2116, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -14,13 +14,13 @@ import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import FingerprintUtils from "FingerprintUtils" /* 1265 */;
 import Server from "Server" /* 2116 */;
-import APIErrorDefault from "APIError" /* 6582 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7189 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7890 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 14239 */;
-import fetchExperiments2 from "fetchExperiments" /* 16360 */;
-import awaitExperiments from "awaitExperiments" /* 16361 */;
-import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 16362 */;
+import APIErrorDefault from "APIError" /* 6695 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7708 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 8706 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 14722 */;
+import fetchExperiments2 from "fetchExperiments" /* 16521 */;
+import awaitExperiments from "awaitExperiments" /* 16522 */;
+import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 16523 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
 import Constants from "Constants" /* 1072 */;
@@ -38,7 +38,7 @@ let c10;
 let closure_12;
 let metroImportAll;
 let unpackModuleId;
-const f80168 = (body) => {
+const f80953 = (body) => {
   let assignments;
   let guild_experiments;
   body = body.body;
@@ -64,12 +64,12 @@ const f80168 = (body) => {
   const obj6 = awaitExperiments;
   obj6.onExperimentsLoaded();
 };
-const f80169 = () => {
+const f80954 = () => {
   c33 = null;
   const obj = Dispatcher;
   obj.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
 };
-const f80170 = () => {
+const f80955 = () => {
   const obj = router_utils;
   obj.transitionTo(constants.REGISTER);
 };
@@ -132,7 +132,7 @@ function fetchFingerprint(arg0) {
           fetchExperiments2;
           tmpResult4 = router_utils;
           const experiments = fetchExperiments(obj3);
-          nextPromise = experiments.then(f80168, f80169);
+          nextPromise = experiments.then(f80953, f80954);
           closure_33 = nextPromise;
         }
         return nextPromise;
@@ -467,7 +467,7 @@ let obj = {
         c26 = true;
         handleLogout();
         const obj4 = Dispatcher;
-        obj4.wait(f80170);
+        obj4.wait(f80955);
       } else {
         const obj3 = { user_id: Storage2.get(user_id_cache) };
         const track = AnalyticsUtilsDefault.track;
@@ -775,7 +775,7 @@ let obj = {
     const fetchExperiments = tmp5.fetchExperiments;
     obj5 = router_utils;
     const experiments = fetchExperiments(obj3);
-    closure_33 = experiments.then(f80168, f80169);
+    closure_33 = experiments.then(f80953, f80954);
   },
   CURRENT_USER_UPDATE: function handleUserUpdate(user) {
     user = user.user;
@@ -790,7 +790,7 @@ let obj = {
     c26 = true;
     handleLogout();
     const obj = Dispatcher;
-    obj.wait(f80170);
+    obj.wait(f80955);
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
     c34 = null;
@@ -821,6 +821,7 @@ let obj = {
   },
   PASSWORDLESS_START: function handlePasswordlessStart() {
     c35 = true;
+    NONE = LoginStates.LOGGING_IN;
   }
 };
 const authenticationStore = new AuthenticationStore(Dispatcher, obj, Dispatcher2.DispatchBand.Early);

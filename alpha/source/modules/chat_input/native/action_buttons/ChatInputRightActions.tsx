@@ -1,21 +1,21 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 14738
+// Function ID: 14739
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 13037, 21, 5142, 575, 5726, 5201, 14256, 1625, 12722, 13038, 1652, 13036, 14064, 2]
+// Dependencies: [32, 19, 17, 13703, 21, 5243, 575, 5839, 5314, 14739, 1625, 13412, 13704, 1652, 13702, 14544, 2]
 
-// Module 14255 (ChatInputRightActions)
+// Module 14738 (ChatInputRightActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import native from "native" /* 5201 */;
-import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13036 */;
-import ChatInputConstants from "ChatInputConstants" /* 13037 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13038 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14064 */;
+import native from "native" /* 5314 */;
+import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13702 */;
+import ChatInputConstants from "ChatInputConstants" /* 13703 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13704 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14544 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -43,9 +43,9 @@ class ChatInputRightActions {
     ({ onPressExpression, suggestedExpressions } = channel);
     react = undefined;
     ({ shouldShowGiftButton, suggestedExpressionsRef, ref } = channel);
-    let obj = channel(5726);
+    let obj = channel(5839);
     const token = obj.useToken(onPressAction(575).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-    const obj2 = channel(5726);
+    const obj2 = channel(5839);
     const sum = token + 2 * obj2.useToken(onPressAction(575).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
     dependencyMap = sum;
     const tmp6 = closure_9();
@@ -69,7 +69,7 @@ class ChatInputRightActions {
     const tmp3 = onPressAction;
     if (shouldShowGiftButton) {
       let tmp16;
-      const TransitionItem = tmp(5201).TransitionItem;
+      const TransitionItem = tmp(5314).TransitionItem;
       const tmp15 = closure_7;
       if (tmp8) {
         tmp16 = memo;
@@ -80,12 +80,12 @@ class ChatInputRightActions {
     items1 = [tmp15Result, ];
     if (null != suggestedExpressions) {
       const obj5 = { ref: suggestedExpressionsRef, active: keyboardType === channel(1625).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression, channel };
-      const EmojiSuggestionChatButton = tmp(14256).EmojiSuggestionChatButton;
+      const EmojiSuggestionChatButton = tmp(14739).EmojiSuggestionChatButton;
       const merged = Object.assign(suggestedExpressions);
       tmp19 = closure_7(EmojiSuggestionChatButton, obj5);
     } else {
       const obj6 = { active: keyboardType === channel(1625).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
-      const tmp3Result = tmp3(12722);
+      const tmp3Result = tmp3(13412);
       tmp19 = closure_7(tmp3Result, obj6);
     }
     items1[1] = tmp19;
@@ -106,7 +106,7 @@ function LeftSlot(state) {
   const YEETED = native.TransitionStates.YEETED;
   const obj = { visible: state !== YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup };
   ({ animatedStyle, isInteractive } = useChatInputFloatingBounceDefault(obj));
-  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flexDirection", shouldShowThread: "en-BE" }) };
+  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flexDirection", shouldShowThread: "flag_vi" }) };
   items = [wrapperStyle, { width: slotWidth }, animatedStyle];
   useChatInputFloatingBounceDefault(obj);
   View = _modDef1652.View;

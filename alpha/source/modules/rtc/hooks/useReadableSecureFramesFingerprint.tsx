@@ -1,12 +1,12 @@
-// Module ID: 9359
-// Function ID: 9360
+// Module ID: 10568
+// Function ID: 10569
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: [19, 206, 9336, 2]
+// Dependencies: [19, 206, 10545, 2]
 // Exports: useReadableSecureFramesFingerprint
 
-// Module 9359 (useReadableSecureFramesFingerprint)
+// Module 10568 (useReadableSecureFramesFingerprint)
 import byteLengthDefault from "byteLength" /* 206 */;
-import _mod9336 from "module_9336" /* 9336 */;
+import _mod10545 from "module_10545" /* 10545 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export function useReadableSecureFramesFingerprint(fingerprintBase64) {
       if ("" !== fingerprintBase64) {
         const obj = byteLengthDefault;
         const toByteArrayResult = obj.toByteArray(fingerprintBase64);
-        const obj2 = _mod9336;
+        const obj2 = _mod10545;
         const str5 = obj2.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
         const tmp12 = chunkSize;
         if (null == str5) {

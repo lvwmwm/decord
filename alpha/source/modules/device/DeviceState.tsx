@@ -1,12 +1,12 @@
-// Module ID: 6036
-// Function ID: 6037
+// Module ID: 6149
+// Function ID: 6150
 // Name: DeviceState
-// Dependencies: [6037, 2, 6038]
+// Dependencies: [6150, 2, 6151]
 // Exports: logDeviceState
 
-// Module 6036 (DeviceState)
-import device_DeviceState from "device/DeviceState" /* 6037 */;
-import constants_DeviceState from "constants/DeviceState" /* 6038 */;
+// Module 6149 (DeviceState)
+import device_DeviceState from "device/DeviceState" /* 6150 */;
+import constants_DeviceState from "constants/DeviceState" /* 6151 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/device/DeviceState.tsx");

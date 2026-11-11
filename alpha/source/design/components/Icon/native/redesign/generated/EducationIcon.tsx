@@ -1,14 +1,14 @@
-// Module ID: 11461
-// Function ID: 11462
+// Module ID: 12232
+// Function ID: 12233
 // Name: EducationIcon
-// Dependencies: [19, 21, 575, 5843, 11460, 2]
+// Dependencies: [19, 21, 575, 5956, 12231, 2]
 // Exports: EducationIcon
 
-// Module 11461 (EducationIcon)
+// Module 12232 (EducationIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 11460 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 12231 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

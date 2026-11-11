@@ -1,12 +1,12 @@
-// Module ID: 6174
-// Function ID: 6175
+// Module ID: 6287
+// Function ID: 6288
 // Name: useHasEnhancedRoleColors
-// Dependencies: [5013, 1072, 504, 2]
+// Dependencies: [5114, 1072, 504, 2]
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
-// Module 6174 (useHasEnhancedRoleColors)
+// Module 6287 (useHasEnhancedRoleColors)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

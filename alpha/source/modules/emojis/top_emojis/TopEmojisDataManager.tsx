@@ -1,13 +1,13 @@
-// Module ID: 19870
-// Function ID: 19871
+// Module ID: 20062
+// Function ID: 20063
 // Name: TopEmojisDataManager
-// Dependencies: [5173, 1388, 7353, 10073, 2]
+// Dependencies: [5286, 1388, 7816, 9483, 2]
 
-// Module 19870 (TopEmojisDataManager)
+// Module 20062 (TopEmojisDataManager)
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 10073 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5173 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9483 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 const EmojiInteractionPoint = EmojiConstants.EmojiInteractionPoint;

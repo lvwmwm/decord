@@ -1,13 +1,13 @@
-// Module ID: 18398
-// Function ID: 18399
+// Module ID: 18570
+// Function ID: 18571
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1072, 3, 18397, 559, 7205, 15847, 18399, 1108, 1282, 6797, 18401, 2]
+// Dependencies: [5, 32, 19, 1072, 3, 18569, 559, 7724, 16006, 18571, 1108, 1282, 6781, 18573, 2]
 // Exports: useAuthWebsocket
 
-// Module 18398 (useAuthWebsocket)
+// Module 18570 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
-import typing from "typing" /* 18397 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 18399 */;
+import typing from "typing" /* 18569 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 18571 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -452,8 +452,9 @@ export function useAuthWebsocket(callback, arg1) {
     }
     obj = function _onopen() {
       obj = _asyncToGenerator(async (arg0, value) => {
-        let obj5;
-        let obj8;
+        let obj3;
+        let obj6;
+        let obj9;
         if (c3 === 2) {
           c3 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
@@ -461,8 +462,8 @@ export function useAuthWebsocket(callback, arg1) {
           if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
-            return obj3;
+            obj2 = { value, done: true };
+            return obj2;
           } else {
             return { value: "HermesInternal", done: null };
           }
@@ -481,9 +482,9 @@ export function useAuthWebsocket(callback, arg1) {
                 closure_1 = tmp3;
                 c2 = 1;
                 c3 = 1;
-                const obj6 = { value: obj8.generateRsaKeyPair(), done: false };
-                obj8 = info(closure_2_2[9]);
-                return obj6;
+                const obj5 = { value: obj9.generateRsaKeyPair(), done: false };
+                obj9 = info(closure_2_2[9]);
+                return obj5;
               }
             } else {
               let current;
@@ -499,9 +500,9 @@ export function useAuthWebsocket(callback, arg1) {
                   current = value;
                   c2 = 2;
                   c3 = 1;
-                  const obj9 = { value: obj5.serializePublicKey(current), done: false };
-                  obj5 = info(closure_2_2[9]);
-                  return obj9;
+                  const obj8 = { value: obj6.serializePublicKey(current), done: false };
+                  obj6 = info(closure_2_2[9]);
+                  return obj8;
                 }
               } else {
                 let encoded_public_key;
@@ -518,8 +519,8 @@ export function useAuthWebsocket(callback, arg1) {
                     closure_0 = closure_129_1;
                     c2 = 3;
                     c3 = 1;
-                    const obj11 = { value: obj2.publicKeyFingerprint(current), done: false };
-                    obj2 = info(closure_2_2[9]);
+                    const obj11 = { value: obj3.publicKeyFingerprint(current), done: false };
+                    obj3 = info(closure_2_2[9]);
                     return obj11;
                   }
                 } else if (arg0 === 1) {
@@ -527,23 +528,23 @@ export function useAuthWebsocket(callback, arg1) {
                   throw value;
                 } else if (arg0 === 2) {
                   c3 = 3;
-                  obj = { value, done: true };
-                  return obj;
+                  const obj12 = { value, done: true };
+                  return obj12;
                 } else {
                   const _HermesInternal = HermesInternal;
                   closure_0("connected, handshaking with fingerprint: " + value);
                   const _JSON = JSON;
-                  const obj12 = { op: "init", encoded_public_key };
-                  closure_129_2.send(JSON.stringify(obj12));
+                  obj = { op: "init", encoded_public_key };
+                  closure_129_2.send(JSON.stringify(obj));
                   getKeyPair.current = current;
                   c3 = 3;
                   return { value: "HermesInternal", done: null };
                 }
               }
             }
-          } catch (tmp15) {
+          } catch (tmp24) {
             c3 = 3;
-            throw tmp15;
+            throw tmp24;
           }
         }
       });

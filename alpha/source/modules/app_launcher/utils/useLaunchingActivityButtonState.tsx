@@ -1,13 +1,13 @@
-// Module ID: 12687
-// Function ID: 12688
+// Module ID: 13375
+// Function ID: 13376
 // Name: useLaunchingActivityButtonState
-// Dependencies: [19, 4990, 6904, 7394, 504, 11899, 6789, 2]
+// Dependencies: [19, 5091, 6956, 7196, 504, 12652, 6773, 2]
 // Exports: default
 
-// Module 12687 (useLaunchingActivityButtonState)
+// Module 13375 (useLaunchingActivityButtonState)
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
-import FramesStore from "FramesStore" /* 6904 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import FramesStore from "FramesStore" /* 6956 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

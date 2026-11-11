@@ -1,11 +1,11 @@
-// Module ID: 12883
-// Function ID: 12884
+// Module ID: 13555
+// Function ID: 13556
 // Name: chat/ConjureAwaitingUser
-// Dependencies: [10980, 2]
+// Dependencies: [7258, 2]
 // Exports: activeAwaitingUser
 
-// Module 12883 (chat/ConjureAwaitingUser)
-import conjureChatTurns from "conjureChatTurns" /* 10980 */;
+// Module 13555 (chat/ConjureAwaitingUser)
+import conjureChatTurns from "conjureChatTurns" /* 7258 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureAwaitingUser.tsx");

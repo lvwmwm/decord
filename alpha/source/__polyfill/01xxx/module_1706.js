@@ -18,7 +18,7 @@ let tmp4;
 let tmp5;
 let tmp6;
 let tmp7;
-const f83383 = (item) => {
+const f84168 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -107,7 +107,7 @@ export function getMemorySafeCapturableConsole() {
     const _Object2 = Object;
     const _console = console;
     const entries = Object.entries(console);
-    fromEntriesResult = fromEntries(entries.map(f83383));
+    fromEntriesResult = fromEntries(entries.map(f84168));
     return fromEntriesResult;
   }
 }
@@ -176,7 +176,7 @@ export function init() {
               const _Object2 = Object;
               const _console = console;
               const entries = Object.entries(console);
-              fromEntriesResult = fromEntries(entries.map(f83383));
+              fromEntriesResult = fromEntries(entries.map(f84168));
               tmp17 = fromEntriesResult;
             }
             tmp16 = tmp17;

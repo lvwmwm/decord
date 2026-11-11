@@ -1,11 +1,11 @@
-// Module ID: 11053
-// Function ID: 11054
+// Module ID: 12833
+// Function ID: 12834
 // Name: react-native
-// Dependencies: [7184, 2]
+// Dependencies: [7703, 2]
 // Exports: default
 
-// Module 11053 (react-native)
-import react_nativeDefault from "react-native" /* 7184 */;
+// Module 12833 (react-native)
+import react_nativeDefault from "react-native" /* 7703 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/native_permissions/mobile/openNotificationSettings.native.tsx");

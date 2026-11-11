@@ -1,22 +1,22 @@
-// Module ID: 15256
-// Function ID: 15257
+// Module ID: 12073
+// Function ID: 12074
 // Name: UserProfileWidgetGameTags
-// Dependencies: [19, 17, 502, 8831, 21, 5142, 575, 15233, 12562, 5151, 1113, 8839, 6155, 5753, 7123, 15257, 2]
+// Dependencies: [19, 17, 502, 8413, 21, 5243, 575, 12048, 12029, 5252, 1113, 8480, 6268, 5866, 7483, 12074, 2]
 
-// Module 15256 (UserProfileWidgetGameTags)
+// Module 12073 (UserProfileWidgetGameTags)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5151 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import Constants from "Constants" /* 8831 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8839 */;
-import WidgetUtils from "WidgetUtils" /* 12562 */;
-import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 15257 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import Constants from "Constants" /* 8413 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8480 */;
+import WidgetUtils from "WidgetUtils" /* 12029 */;
+import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 12074 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,21 +1,21 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9395
+// Function ID: 9396
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 575, 5142, 5839, 9558, 5201, 8891, 5726, 9560, 1113, 1380, 9371, 8744, 9581, 2]
+// Dependencies: [19, 17, 21, 575, 5243, 5952, 9390, 5314, 8535, 5839, 9396, 1113, 1380, 9417, 8027, 9419, 2]
 // Exports: default
 
-// Module 9557 (WishlistItemCardBase)
+// Module 9395 (WishlistItemCardBase)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import native from "native" /* 5201 */;
-import useToken from "useToken" /* 5726 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
-import useUserProfileColors from "useUserProfileColors" /* 8891 */;
-import IndicatorDot from "IndicatorDot" /* 9581 */;
+import native from "native" /* 5314 */;
+import useToken from "useToken" /* 5839 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
+import useUserProfileColors from "useUserProfileColors" /* 8535 */;
+import IndicatorDot from "IndicatorDot" /* 9419 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -46,7 +46,7 @@ function SourceIcon(toastText) {
     children: closure_5(HeartIcon, obj2)
   };
   obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  HeartIcon = toastText(9558).HeartIcon;
+  HeartIcon = toastText(9390).HeartIcon;
   return closure_5(closure_3, obj);
 }
 ({ Pressable: c3, View: closure_4, StyleSheet } = react_native);
@@ -69,15 +69,15 @@ let obj7 = { OWNED: "owned", LOCKED: "locked" };
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/wishlists/native/WishlistItemCardBase.tsx");
 
-export default function WishlistItemCardBase(arg0) {
+export default function WishlistItemCardBase(backgroundColor) {
   let CheckmarkLargeBoldIcon;
   let LockIcon;
   let accessibilityHidden;
   let accessibilityLabel;
   let isNew;
-  let obj11;
-  let obj5;
-  let obj9;
+  let obj10;
+  let obj12;
+  let obj6;
   let onPress;
   let overlay;
   let primaryColor;
@@ -89,37 +89,43 @@ export default function WishlistItemCardBase(arg0) {
   let str3;
   let stringResult;
   let theme;
-  let tmp24;
-  ({ onPress, size } = arg0);
-  ({ accessibilityLabel, renderPreview, source } = arg0);
+  let tmp25;
+  ({ onPress, size } = backgroundColor);
+  ({ accessibilityLabel, renderPreview, source } = backgroundColor);
   if (size === undefined) {
     size = 170;
   }
-  ({ overlay, accessibilityHidden, isNew, recipientName } = arg0);
+  ({ overlay, accessibilityHidden, isNew, recipientName } = backgroundColor);
   if (isNew === undefined) {
     isNew = false;
   }
+  backgroundColor = backgroundColor.backgroundColor;
   const tmp = closure_8();
   const obj = native;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, theme, secondaryColor } = themeContext);
   const obj2 = useUserProfileColors;
-  const containerBackground = obj2.useUserProfileColors({ theme, primaryColor, secondaryColor }).containerBackground;
+  let containerBackground = obj2.useUserProfileColors({ theme, primaryColor, secondaryColor }).containerBackground;
   const obj3 = useToken;
-  let token = obj3.useToken(nativeDefault.colors.BG_SURFACE_RAISED);
-  if (null != primaryColor) {
-    token = containerBackground;
+  const token = obj3.useToken(nativeDefault.colors.BG_SURFACE_RAISED);
+  const obj4 = useToken;
+  let token1 = obj4.useToken(backgroundColor);
+  if (null == primaryColor) {
+    if (token1 == null) {
+      token1 = token;
+    }
+    containerBackground = token1;
   }
-  const items = [tmp.card, { backgroundColor: token }, ];
+  const items = [tmp.card, { backgroundColor: containerBackground }, ];
   if (typeof size === "object") {
     const size1 = { width: null, height: null };
-    ({ width: obj4.width, height: obj4.height } = size);
-    obj5 = size1;
+    ({ width: obj5.width, height: obj5.height } = size);
+    obj6 = size1;
   } else {
-    obj5 = { width: size, aspectRatio: 1 };
+    obj6 = { width: size, aspectRatio: 1 };
   }
-  items[2] = obj5;
-  const WISHLIST = tmp2(9560).WishlistItemSource.WISHLIST;
+  items[2] = obj6;
+  const WISHLIST = tmp2(9396).WishlistItemSource.WISHLIST;
   const intl = tmp2(1113).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl5.t.p3RmJF, { username: recipientName });
   const items1 = [accessibilityLabel, , ];
@@ -133,77 +139,78 @@ export default function WishlistItemCardBase(arg0) {
       stringResult = intl2.string(tmp2(1113).t.wu4gyV);
     }
   }
-  let tmp16Result4 = source === WISHLIST;
+  let tmp17Result4 = source === WISHLIST;
   items1[1] = stringResult;
-  let tmp11 = null;
-  if (tmp16Result4) {
-    tmp11 = formatToPlainStringResult;
+  let tmp12 = null;
+  if (tmp17Result4) {
+    tmp12 = formatToPlainStringResult;
   }
-  items1[2] = tmp11;
+  items1[2] = tmp12;
   const found = items1.filter(tmp2(1380).isNotNullish);
   const joined = found.join(", ");
   let formatToPlainStringResult1 = joined;
   if (isNew) {
     const intl4 = tmp2(1113).intl;
-    const obj6 = { label: joined };
-    formatToPlainStringResult1 = intl4.formatToPlainString(tmp2(1113).t.s9RZ1r, obj6);
+    obj7 = { label: joined };
+    formatToPlainStringResult1 = intl4.formatToPlainString(tmp2(1113).t.s9RZ1r, obj7);
   }
   const items2 = [tmp.previewWrap, ];
-  let dimmedPreview = overlay === tmp8.OWNED;
-  const tmp14 = metroImportDefault;
-  const tmp15 = metroRequire;
+  let dimmedPreview = overlay === tmp9.OWNED;
+  const tmp15 = metroImportDefault;
+  const tmp16 = metroRequire;
   if (dimmedPreview) {
     dimmedPreview = tmp.dimmedPreview;
   }
-  obj7 = { style: items2, "aria-hidden": true, children: renderPreview() };
   items2[1] = dimmedPreview;
-  const items3 = [hasOwnProperty(React3, obj7), , , , ];
-  let tmp16Result = overlay === tmp8.OWNED;
-  if (tmp16Result) {
-    const obj8 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj9) };
-    obj9 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-    CheckmarkLargeBoldIcon = tmp2(9371).CheckmarkLargeBoldIcon;
-    tmp16Result = tmp16(tmp17, obj8);
+  const items3 = [, , , , ];
+  const obj8 = { style: items2, "aria-hidden": true, children: renderPreview() };
+  items3[0] = hasOwnProperty(React3, obj8);
+  let tmp17Result = overlay === tmp9.OWNED;
+  if (tmp17Result) {
+    const obj9 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj10) };
+    obj10 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
+    CheckmarkLargeBoldIcon = tmp2(9417).CheckmarkLargeBoldIcon;
+    tmp17Result = tmp17(tmp18, obj9);
   }
-  items3[1] = tmp16Result;
-  let tmp16Result3 = overlay === tmp8.LOCKED;
-  if (tmp16Result3) {
-    const obj10 = { style: tmp.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj11) };
-    obj11 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-    LockIcon = tmp2(8744).LockIcon;
-    tmp16Result3 = tmp16(tmp17, obj10);
+  items3[1] = tmp17Result;
+  let tmp17Result3 = overlay === tmp9.LOCKED;
+  if (tmp17Result3) {
+    const obj11 = { style: tmp.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj12) };
+    obj12 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
+    LockIcon = tmp2(8027).LockIcon;
+    tmp17Result3 = tmp17(tmp18, obj11);
   }
-  items3[2] = tmp16Result3;
-  if (tmp16Result4) {
-    const obj12 = { toastText: formatToPlainStringResult };
-    tmp16Result4 = tmp16(SourceIcon, obj12);
+  items3[2] = tmp17Result3;
+  if (tmp17Result4) {
+    const obj13 = { toastText: formatToPlainStringResult };
+    tmp17Result4 = tmp17(SourceIcon, obj13);
   }
-  items3[3] = tmp16Result4;
+  items3[3] = tmp17Result4;
   if (isNew) {
-    const obj13 = { style: tmp.newContentDot, pointerEvents: "none", children: hasOwnProperty(IndicatorDot.IndicatorDot, {}) };
-    isNew = tmp16(tmp17, obj13);
+    const obj14 = { style: tmp.newContentDot, pointerEvents: "none", children: hasOwnProperty(IndicatorDot.IndicatorDot, {}) };
+    isNew = tmp17(tmp18, obj14);
   }
   items3[4] = isNew;
-  const tmp14Result = tmp14(tmp15, { children: items3 });
+  const tmp15Result = tmp15(tmp16, { children: items3 });
   if (null == onPress) {
-    const obj14 = { style: items, accessible: "" !== formatToPlainStringResult1 || undefined, accessibilityLabel: tmp24, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str3, children: tmp14Result };
-    tmp24 = undefined;
+    const obj15 = { style: items, accessible: "" !== formatToPlainStringResult1 || undefined, accessibilityLabel: tmp25, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str3, children: tmp15Result };
+    tmp25 = undefined;
     if ("" !== formatToPlainStringResult1) {
-      tmp24 = formatToPlainStringResult1;
+      tmp25 = formatToPlainStringResult1;
     }
     str3 = "auto";
     if (accessibilityHidden) {
       str3 = "no-hide-descendants";
     }
-    return hasOwnProperty(React3, obj14);
+    return hasOwnProperty(React3, obj15);
   } else {
-    const obj15 = { accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult1, style: items, onPress, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str, children: tmp14Result };
+    const obj16 = { accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult1, style: items, onPress, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str, children: tmp15Result };
     str = "auto";
-    const tmp22 = _false;
+    const tmp23 = _false;
     if (accessibilityHidden) {
       str = "no-hide-descendants";
     }
-    return hasOwnProperty(tmp22, obj15);
+    return hasOwnProperty(tmp23, obj16);
   }
 };
 export const DEFAULT_ITEM_SIZE = 170;

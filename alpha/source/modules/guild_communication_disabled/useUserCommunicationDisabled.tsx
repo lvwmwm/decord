@@ -1,12 +1,12 @@
-// Module ID: 8509
-// Function ID: 8510
+// Module ID: 9138
+// Function ID: 9139
 // Name: useUserCommunicationDisabled
-// Dependencies: [5054, 1385, 504, 5061, 2]
+// Dependencies: [5155, 1385, 504, 5162, 2]
 // Exports: default, useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 8509 (useUserCommunicationDisabled)
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5061 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+// Module 9138 (useUserCommunicationDisabled)
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5162 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ export default function useUserCommunicationDisabled(arg0, arg1) {
     prop = null;
   }
   const items2 = [prop, ];
-  const tmpResult = tmp(5061);
+  const tmpResult = tmp(5162);
   items2[1] = tmpResult.isMemberCommunicationDisabled(stateFromStores);
   return items2;
 };
@@ -82,7 +82,7 @@ export function useCurrentUserCommunicationDisabled(guild_id) {
     prop = null;
   }
   const items3 = [prop, ];
-  const tmpResult2 = tmp(5061);
+  const tmpResult2 = tmp(5162);
   items3[1] = tmpResult2.isMemberCommunicationDisabled(stateFromStores1);
   return items3;
 }

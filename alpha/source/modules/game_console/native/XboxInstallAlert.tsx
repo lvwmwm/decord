@@ -1,19 +1,19 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 10773
+// Function ID: 10774
 // Name: XboxInstallAlert
-// Dependencies: [19, 9833, 21, 5142, 575, 6164, 1113, 1187, 12169, 1377, 5836, 2]
+// Dependencies: [19, 7405, 21, 5243, 575, 6277, 1113, 1187, 7416, 1377, 5949, 2]
 // Exports: default
 
-// Module 12168 (XboxInstallAlert)
+// Module 10773 (XboxInstallAlert)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import LinkingDefault from "Linking" /* 5836 */;
-import AlertDefault from "Alert" /* 6164 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12169 */;
+import LinkingDefault from "Linking" /* 5949 */;
+import AlertDefault from "Alert" /* 6277 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7416 */;
 import react from "react" /* 19 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9833 */;
-import createStyles from "createStyles" /* 5142 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 7405 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

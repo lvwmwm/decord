@@ -1,12 +1,12 @@
-// Module ID: 13449
-// Function ID: 13450
+// Module ID: 13963
+// Function ID: 13964
 // Name: gameOrganizationAccountLinkStatus
-// Dependencies: [2162, 7342, 7393, 504, 2]
+// Dependencies: [2162, 7158, 7855, 504, 2]
 // Exports: useGameOrganizationAccountLinkStatus
 
-// Module 13449 (gameOrganizationAccountLinkStatus)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7342 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7393 */;
+// Module 13963 (gameOrganizationAccountLinkStatus)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7158 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7855 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;
 

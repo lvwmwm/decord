@@ -1,9 +1,9 @@
-// Module ID: 7566
-// Function ID: 7567
+// Module ID: 6830
+// Function ID: 6831
 // Name: QualtricsStore
 // Dependencies: [504, 572, 2]
 
-// Module 7566 (QualtricsStore)
+// Module 6830 (QualtricsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

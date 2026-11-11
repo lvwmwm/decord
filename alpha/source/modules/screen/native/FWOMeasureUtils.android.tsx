@@ -1,10 +1,10 @@
-// Module ID: 10006
-// Function ID: 10007
+// Module ID: 9086
+// Function ID: 9087
 // Name: FWOMeasureUtils
 // Dependencies: [2]
 // Exports: measureInWindowForFWO
 
-// Module 10006 (FWOMeasureUtils)
+// Module 9086 (FWOMeasureUtils)
 import size from "module_2" /* 2 */;
 
 let tmp2;

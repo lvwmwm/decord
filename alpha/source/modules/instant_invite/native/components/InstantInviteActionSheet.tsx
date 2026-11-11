@@ -1,29 +1,31 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 8407
+// Function ID: 8408
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 4996, 9205, 5013, 5074, 1072, 21, 5142, 575, 9214, 1627, 7390, 7415, 7394, 504, 5877, 9215, 9204, 7961, 5376, 8827, 9216, 1196, 9218, 5390, 7385, 1113, 1187, 9239, 9243, 9245, 7285, 9236, 9282, 9283, 2]
+// Dependencies: [32, 19, 17, 5097, 8396, 5114, 5175, 1072, 21, 5243, 575, 8408, 1627, 7852, 7871, 7196, 504, 5990, 8409, 8394, 7599, 5489, 8410, 14626, 1196, 15769, 5503, 7847, 1113, 1187, 15771, 15775, 15777, 7759, 14622, 14963, 15809, 2]
 // Exports: default
 
-// Module 9213 (InstantInviteActionSheet)
+// Module 8407 (InstantInviteActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5877 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8827 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9204 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9214 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9216 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5990 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8394 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8408 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 14626 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 4996 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9205 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
+import StageInstanceStore from "StageInstanceStore" /* 5097 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8396 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
+
+let vanityURLCode;
 
 let closure_12;
 let closure_14;
@@ -88,7 +90,7 @@ export default function InstantInviteActionSheet(channel) {
   let tmp39;
   channel = channel.channel;
   const source = channel.source;
-  const vanityURLCode = channel.vanityURLCode;
+  vanityURLCode = channel.vanityURLCode;
   ({ guildScheduledEventId: _slicedToArray, targetApplicationId, code } = channel);
   let stateFromStores;
   let str;

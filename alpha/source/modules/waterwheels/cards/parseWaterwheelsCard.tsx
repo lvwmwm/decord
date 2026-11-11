@@ -1,13 +1,13 @@
-// Module ID: 9012
-// Function ID: 9013
+// Module ID: 10157
+// Function ID: 10158
 // Name: parseWaterwheelsCard
-// Dependencies: [109, 3, 12, 9013, 2]
+// Dependencies: [109, 3, 12, 10158, 2]
 // Exports: parseWaterwheelsCard
 
-// Module 9012 (parseWaterwheelsCard)
+// Module 10157 (parseWaterwheelsCard)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod12 from "module_12" /* 12 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9013 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10158 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
@@ -16,6 +16,19 @@ let server;
 function isRecord(id) {
   const obj = _mod12;
   return obj.isPlainObject(id);
+}
+function isTypedWaterwheelsId(id, type) {
+  if (0 !== type.length) {
+    const obj = re6;
+    if (!re6.test(type)) {
+      const _HermesInternal = HermesInternal;
+      const combined = "" + type + ":";
+      const substr = id.slice(combined.length);
+      const tmp3 = id.startsWith(combined) && substr.length > 0 && !obj.test(substr);
+      return tmp3;
+    }
+  }
+  return false;
 }
 function isActionValid(value) {
   value = value.value;
@@ -108,10 +121,12 @@ function reject(reason) {
 let closure_2 = ["image_url", "action_label"];
 let closure_3 = ["header", "items"];
 let closure_5 = ["post", "carousel", "server_row"];
+const re6 = /[\0- :\x7F\xA0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000\uFEFF]/;
 let tmp2 = new LoggerDefault("WaterwheelsCardParser");
 const logger = tmp2;
 const result = size.fileFinishedImporting("modules/waterwheels/cards/parseWaterwheelsCard.tsx");
 
+export { isTypedWaterwheelsId };
 export function parseWaterwheelsCard(id) {
   let client_eligibility;
   try {
@@ -120,45 +135,47 @@ export function parseWaterwheelsCard(id) {
     if (isRecord(id)) {
       if (typeof id.id === "string") {
         if (typeof id.type === "string") {
-          if (tmp2(id.layout)) {
-            const _Array = Array;
-            if (Array.isArray(id.actions)) {
-              if (closure_5.includes(id.layout.type)) {
-                const actions = id.actions;
-                if (actions.every((type) => {
-                  const obj = _mod12;
-                  let isPlainObjectResult = obj.isPlainObject(type);
-                  const tmp = require;
-                  const tmp2 = dependencyMap;
-                  if (isPlainObjectResult) {
-                    const _Object = Object;
-                    const values = Object.values(tmp(tmp2[3]).WaterwheelsActionType);
-                    isPlainObjectResult = values.includes(type.type);
-                  }
-                  return isPlainObjectResult;
-                })) {
-                  if (undefined !== id.client_eligibility) {
-                    if ("notifications_permission" !== id.client_eligibility) {
-                      return reject("unknown_eligibility");
+          if (isTypedWaterwheelsId(id.id, id.type)) {
+            if (tmp2(id.layout)) {
+              const _Array = Array;
+              if (Array.isArray(id.actions)) {
+                if (closure_5.includes(id.layout.type)) {
+                  const actions = id.actions;
+                  if (actions.every((type) => {
+                    const obj = _mod12;
+                    let isPlainObjectResult = obj.isPlainObject(type);
+                    const tmp = require;
+                    const tmp2 = dependencyMap;
+                    if (isPlainObjectResult) {
+                      const _Object = Object;
+                      const values = Object.values(tmp(tmp2[3]).WaterwheelsActionType);
+                      isPlainObjectResult = values.includes(type.type);
                     }
-                  }
-                  const actions2 = id.actions;
-                  if (actions2.every(isActionValid)) {
-                    let obj = { id: null, type: null, layout: mapLayout(id.layout), actions: null, clientEligibility: client_eligibility };
-                    ({ id: obj.id, type: obj.type } = id);
-                    ({ actions: obj.actions, client_eligibility } = id);
-                    if (client_eligibility == null) {
-                      client_eligibility = null;
+                    return isPlainObjectResult;
+                  })) {
+                    if (undefined !== id.client_eligibility) {
+                      if ("notifications_permission" !== id.client_eligibility) {
+                        return reject("unknown_eligibility");
+                      }
                     }
-                    return { ok: true, card: obj };
+                    const actions2 = id.actions;
+                    if (actions2.every(isActionValid)) {
+                      let obj = { id: null, type: null, layout: mapLayout(id.layout), actions: null, clientEligibility: client_eligibility };
+                      ({ id: obj.id, type: obj.type } = id);
+                      ({ actions: obj.actions, client_eligibility } = id);
+                      if (client_eligibility == null) {
+                        client_eligibility = null;
+                      }
+                      return { ok: true, card: obj };
+                    } else {
+                      return reject("invalid_card");
+                    }
                   } else {
-                    return reject("invalid_card");
+                    return reject("unknown_action");
                   }
                 } else {
-                  return reject("unknown_action");
+                  return reject("unknown_layout");
                 }
-              } else {
-                return reject("unknown_layout");
               }
             }
           }

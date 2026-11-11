@@ -1,12 +1,12 @@
-// Module ID: 12663
-// Function ID: 12664
+// Module ID: 13350
+// Function ID: 13351
 // Name: useFetchDeveloperActivityShelfItems
-// Dependencies: [19, 5800, 11892, 4967, 504, 11077, 2]
+// Dependencies: [19, 5913, 12644, 5068, 504, 12660, 2]
 // Exports: useFetchDeveloperActivityShelfItems
 
-// Module 12663 (useFetchDeveloperActivityShelfItems)
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5800 */;
-import fetchDeveloperApplications from "fetchDeveloperApplications" /* 11077 */;
+// Module 13350 (useFetchDeveloperActivityShelfItems)
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5913 */;
+import fetchDeveloperApplications from "fetchDeveloperApplications" /* 12660 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

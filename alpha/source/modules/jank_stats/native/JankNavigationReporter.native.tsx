@@ -1,20 +1,20 @@
-// Module ID: 19942
-// Function ID: 19943
+// Module ID: 20134
+// Function ID: 20135
 // Name: JankNavigationReporter
-// Dependencies: [5317, 18428, 18432, 18433, 5319, 2]
+// Dependencies: [5430, 18600, 18604, 18605, 5432, 2]
 
-// Module 19942 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 5317 */;
-import getJankScreenName from "getJankScreenName" /* 18428 */;
-import react_nativeDefault from "react-native" /* 18432 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18433 */;
+// Module 20134 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 5430 */;
+import getJankScreenName from "getJankScreenName" /* 18600 */;
+import react_nativeDefault from "react-native" /* 18604 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18605 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "channel" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "channelId" });
   }
   attach() {
     const self = this;
@@ -102,7 +102,7 @@ class JankNavigationReporter {
         }
         let isChatLockedOpen = null != chatScreens && _screensBeforeDispatch.chatScreens === chatScreens2.chatScreens && _screensBeforeDispatch.expectedScreenIds === chatScreens2.expectedScreenIds;
         if (!isChatLockedOpen) {
-          const tmp4Result = tmp4(5319);
+          const tmp4Result = tmp4(5432);
           isChatLockedOpen = tmp4Result.getChatLayout().isChatLockedOpen;
         }
         tmp6 = isChatLockedOpen;
@@ -116,4 +116,4 @@ const prototype = JankNavigationReporter.prototype;
 const prototype2 = JankNavigationReporter.prototype;
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.native.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "channel" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "channelId" });

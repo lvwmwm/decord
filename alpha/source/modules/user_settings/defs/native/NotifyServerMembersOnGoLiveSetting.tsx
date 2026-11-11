@@ -1,26 +1,26 @@
-// Module ID: 18317
-// Function ID: 18318
+// Module ID: 18488
+// Function ID: 18489
 // Name: NotifyServerMembersOnGoLiveSetting
-// Dependencies: [8507, 11694, 1113, 2832, 4967, 18318, 2]
+// Dependencies: [9136, 12317, 1113, 2853, 5068, 18489, 2]
 
-// Module 18317 (NotifyServerMembersOnGoLiveSetting)
+// Module 18488 (NotifyServerMembersOnGoLiveSetting)
 import intl2 from "intl" /* 1113 */;
-import _modDef2832 from "module_2832" /* 2832 */;
-import UserSettings from "UserSettings" /* 4967 */;
-import SettingsConstants from "SettingsConstants" /* 8507 */;
-import go_live_GoLiveNotificationUtils from "go_live/GoLiveNotificationUtils" /* 18318 */;
-import SettingBuilders from "SettingBuilders" /* 11694 */;
+import _modDef2853 from "module_2853" /* 2853 */;
+import UserSettings from "UserSettings" /* 5068 */;
+import SettingsConstants from "SettingsConstants" /* 9136 */;
+import go_live_GoLiveNotificationUtils from "go_live/GoLiveNotificationUtils" /* 18489 */;
+import SettingBuilders from "SettingBuilders" /* 12317 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2832["9l5u6A"]);
+    return intl.string(_modDef2853["9l5u6A"]);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2832.QcmgBF);
+    return intl.string(_modDef2853.QcmgBF);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: UserSettings.NotifyServerMembersOnGoLive.useSetting,

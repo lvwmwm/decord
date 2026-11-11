@@ -1,11 +1,11 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 12556
+// Function ID: 12557
 // Name: ChannelPinActionCreators
-// Dependencies: [5, 14797, 1072, 8275, 1282, 6581, 1113, 6092, 572, 2]
+// Dependencies: [5, 12557, 1072, 8798, 1282, 6694, 1113, 6205, 572, 2]
 
-// Module 14796 (ChannelPinActionCreators)
+// Module 12556 (ChannelPinActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 14797 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 12557 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -36,8 +36,8 @@ let obj = {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          let obj3 = { value, done: true };
-          return obj3;
+          let obj2 = { value, done: true };
+          return obj2;
         } else {
           return { value: "HermesInternal", done: null };
         }
@@ -56,10 +56,10 @@ let obj = {
               c0 = undefined;
               c1 = undefined;
               ({ id: c0, name: c1 } = tmp2);
-              let obj2 = tmp(c2[3]);
+              let obj3 = tmp(c2[3]);
               c2 = 1;
               c3 = 1;
-              const obj5 = { value: obj2.unarchiveThreadIfNecessary(tmp2.id), done: false };
+              const obj5 = { value: obj3.unarchiveThreadIfNecessary(tmp2.id), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -67,13 +67,13 @@ let obj = {
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            obj = { value, done: true };
-            return obj;
+            const obj6 = { value, done: true };
+            return obj6;
           } else {
             const HTTP = tmp2(c2[4]).HTTP;
-            const obj6 = { url: closure_1_7.PIN(c0, closure_129_1), rejectWithError: true };
+            obj = { url: closure_1_7.PIN(c0, closure_129_1), rejectWithError: true };
             const put = HTTP.put;
-            const putResult = put(obj6);
+            const putResult = put(obj);
             putResult.catch((error) => {
               let intl17;
               const aPIError = new _private(dependencyMap[5]).APIError(error);
@@ -147,9 +147,9 @@ let obj = {
             c3 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp9) {
+        } catch (tmp17) {
           c3 = 3;
-          throw tmp9;
+          throw tmp17;
         }
       }
     })();

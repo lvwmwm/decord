@@ -1,24 +1,24 @@
-// Module ID: 20435
-// Function ID: 20436
+// Module ID: 20630
+// Function ID: 20631
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
-// Dependencies: [19, 17, 1385, 21, 5142, 575, 1113, 563, 6175, 5844, 5753, 1090, 1187, 7437, 2]
+// Dependencies: [19, 17, 1385, 21, 5243, 575, 1113, 563, 6288, 5957, 5866, 1090, 1187, 7893, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 20435 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 20630 (GuildRoleSubscriptionTierTemplateRolePreview)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtilsAll from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6175 */;
-import RoleIconDefault from "RoleIcon" /* 7437 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
+import RoleIconDefault from "RoleIcon" /* 7893 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

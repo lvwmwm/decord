@@ -1,10 +1,10 @@
-// Module ID: 15593
-// Function ID: 15594
+// Module ID: 9921
+// Function ID: 9922
 // Name: useSubscriptionPlansLoaded
 // Dependencies: [2173, 2175, 2176, 1387, 3, 504, 2]
 // Exports: useSubscriptionPlansLoaded
 
-// Module 15593 (useSubscriptionPlansLoaded)
+// Module 9921 (useSubscriptionPlansLoaded)
 import LoggerDefault from "Logger" /* 3 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PaymentSourceStore from "PaymentSourceStore" /* 2173 */;

@@ -1,14 +1,14 @@
-// Module ID: 20275
-// Function ID: 20276
+// Module ID: 20470
+// Function ID: 20471
 // Name: ChannelSetup
-// Dependencies: [19, 21, 8886, 20276, 20277, 20278, 5149, 5844, 2]
+// Dependencies: [19, 21, 8117, 20471, 20472, 20473, 5250, 5957, 2]
 // Exports: ChannelSetup, getChannelSetupSource, useChannelSetupSource
 
-// Module 20275 (ChannelSetup)
+// Module 20470 (ChannelSetup)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5149 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import _mod8886 from "module_8886" /* 8886 */;
+import shared from "shared" /* 5250 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import _mod8117 from "module_8117" /* 8117 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/ChannelSetup.tsx");
 
 export function getChannelSetupSource(theme) {
-  const obj = _mod8886;
+  const obj = _mod8117;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useChannelSetupSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8886;
+  const obj2 = _mod8117;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function ChannelSetup(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8886;
+  const obj2 = _mod8117;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

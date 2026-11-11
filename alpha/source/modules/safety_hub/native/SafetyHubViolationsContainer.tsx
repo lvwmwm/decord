@@ -1,29 +1,29 @@
-// Module ID: 16992
-// Function ID: 16993
+// Module ID: 17155
+// Function ID: 17156
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 8068, 8043, 1072, 21, 5142, 575, 9195, 8100, 5753, 1113, 15778, 11564, 8042, 11, 16993, 8044, 6801, 13557, 2118, 13561, 504, 1252, 13559, 2]
+// Dependencies: [32, 19, 17, 8165, 8140, 1072, 21, 5243, 575, 8385, 8095, 5866, 1113, 15348, 10493, 8139, 11, 17156, 8141, 6785, 14077, 2118, 14081, 504, 1252, 14079, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 16992 (SafetyHubViolationsContainer)
+// Module 17155 (SafetyHubViolationsContainer)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8042 */;
-import SafetyHubModels from "SafetyHubModels" /* 8044 */;
-import WarningIcon2 from "WarningIcon" /* 8100 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9195 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 13559 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
+import WarningIcon2 from "WarningIcon" /* 8095 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8139 */;
+import SafetyHubModels from "SafetyHubModels" /* 8141 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8385 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 14079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubStore from "SafetyHubStore" /* 8068 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8043 */;
+import SafetyHubStore from "SafetyHubStore" /* 8165 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8140 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -68,7 +68,7 @@ function SafetyHubViolationsHeader(count) {
   obj3 = { color: "active" === status ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED, size: "xs" };
   items = [unpackModuleId(metroRequire, obj2), , ];
   const obj4 = { style: tmp.headerTextContainer, children: items1 };
-  const Text = tmp7(5753).Text;
+  const Text = tmp7(5866).Text;
   const intl = tmp7(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp7(1113).t;
@@ -82,7 +82,7 @@ function SafetyHubViolationsHeader(count) {
     formatToPlainStringResult = formatToPlainString(fZAHBT, obj6);
   }
   items1 = [unpackModuleId(Text, { variant: "heading-xs/semibold", children: formatToPlainStringResult }), ];
-  const Text2 = tmp7(5753).Text;
+  const Text2 = tmp7(5866).Text;
   const intl2 = tmp7(1113).intl;
   const string = intl2.string;
   const t2 = tmp7(1113).t;
@@ -94,9 +94,9 @@ function SafetyHubViolationsHeader(count) {
   items1[1] = unpackModuleId(Text2, { variant: "footnote/normal", color: "text-muted", children: stringResult });
   items[1] = authStore2(metroRequire, obj4);
   if (opened) {
-    ChevronSmallDownIcon = tmp7(15778).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp7(15348).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(11564).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(10493).ChevronSmallDownIcon;
   }
   const obj7 = { size: "md", style: tmp.chevron };
   items[2] = unpackModuleId(ChevronSmallDownIcon, obj7);
@@ -226,7 +226,7 @@ function ClassificationDetail(classification) {
     onPress() {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { classificationId: id, source: metroImportAll.StandingTab };
-      obj.pushLazy(asyncRequire(13557, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(14077, dependencyMap.paths), obj2);
     },
     children: tmp12(closure_6, obj5)
   };
@@ -255,7 +255,7 @@ class SafetyHubViolationsContainer {
     let obj11;
     let obj9;
     let status;
-    const f112580 = (classification) => {
+    const f113693 = (classification) => {
       const obj = { classification };
       return closure_1_11(ClassificationDetail, obj, classification.id);
     };
@@ -270,7 +270,7 @@ class SafetyHubViolationsContainer {
     const tmp4 = first1(react.useState(3), 2);
     first1 = tmp4[0];
     react = tmp4[1];
-    let obj = classifications(13561);
+    let obj = classifications(14081);
     const safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
     const items = [memo];
     const obj2 = classifications(504);
@@ -305,9 +305,9 @@ class SafetyHubViolationsContainer {
     items3[0] = closure_11(SafetyHubViolationsHeader, obj4);
     if (opened) {
       const obj5 = { style: tmp.separator };
-      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f112580), , , ];
+      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f113693), , , ];
       let tmp11Result = memo.length < classifications.length;
-      memo.length > 0 && memo.map(f112580);
+      memo.length > 0 && memo.map(f113693);
       if (tmp11Result) {
         const obj6 = { children: items5 };
         const obj7 = { style: tmp.separator };
@@ -321,7 +321,7 @@ class SafetyHubViolationsContainer {
           children: closure_11(Text, obj10)
         };
         obj10 = { variant: "heading-xs/semibold", children: intl.format(classifications(1113).t["9Ml56H"], obj11) };
-        Text = tmp6(5753).Text;
+        Text = tmp6(5866).Text;
         intl = tmp6(1113).intl;
         obj11 = { nextPageSize: num };
         items5[1] = closure_11(stateFromStores, obj8);

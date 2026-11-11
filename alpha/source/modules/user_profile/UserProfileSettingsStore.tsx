@@ -1,15 +1,15 @@
-// Module ID: 8808
-// Function ID: 8809
+// Module ID: 8476
+// Function ID: 8477
 // Name: UserProfileSettingsStore
-// Dependencies: [1072, 5004, 8809, 1073, 504, 8810, 572, 2]
+// Dependencies: [1072, 5105, 8477, 1073, 504, 8478, 572, 2]
 
-// Module 8808 (UserProfileSettingsStore)
+// Module 8476 (UserProfileSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import RouteConstants from "RouteConstants" /* 1073 */;
-import FavoritesConstants from "FavoritesConstants" /* 5004 */;
-import NotificationsInboxConstants from "NotificationsInboxConstants" /* 8809 */;
-import BioMaxLengthExperiment from "BioMaxLengthExperiment" /* 8810 */;
+import FavoritesConstants from "FavoritesConstants" /* 5105 */;
+import NotificationsInboxConstants from "NotificationsInboxConstants" /* 8477 */;
+import BioMaxLengthExperiment from "BioMaxLengthExperiment" /* 8478 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -19,13 +19,13 @@ let c3;
 let closure_4;
 function handleFormOpen() {
   CLOSED = FormStates.OPEN;
-  closure_13 = {};
+  closure_14 = {};
 }
 function handleReset() {
-  closure_9 = {};
-  closure_13 = {};
+  closure_10 = {};
+  closure_14 = {};
   CLOSED = FormStates.CLOSED;
-  closure_13 = {};
+  closure_14 = {};
 }
 const FormStates = Constants.FormStates;
 ({ ME: c3, UserSettingsSections: closure_4 } = Constants);
@@ -33,12 +33,13 @@ const FAVORITES_RAW_GUILD_ID = FavoritesConstants.FAVORITES_RAW_GUILD_ID;
 let closure_5 = {};
 let obj = {};
 let closure_7 = {};
+let closure_8 = { pendingGlobalName: "global_name", pendingNickname: "nick", pendingPronouns: "pronouns", pendingBio: "bio" };
 let items = [...RouteConstants.PSEUDO_GUILD_IDS, FAVORITES_RAW_GUILD_ID, NotificationsInboxConstants.NOTIFICATIONS_INBOX_RAW_GUILD_ID];
 const set = new Set(items);
-let closure_9 = {};
+let closure_10 = {};
 let guildId;
 let CLOSED = FormStates.CLOSED;
-let closure_13 = {};
+let closure_14 = {};
 const Store = get_initializedDefault.Store;
 class UserProfileSettingsStore extends Store {
   getFormState() {
@@ -46,7 +47,7 @@ class UserProfileSettingsStore extends Store {
   }
   getErrors(arg0) {
     let tmp = arg0;
-    const tmp2 = closure_13;
+    const tmp2 = closure_14;
     if (arg0 == null) {
       tmp = _false;
     }
@@ -58,7 +59,7 @@ class UserProfileSettingsStore extends Store {
   }
   getPendingChanges(guildId) {
     let tmp = guildId;
-    const tmp2 = closure_9;
+    const tmp2 = closure_10;
     if (guildId == null) {
       tmp = _false;
     }
@@ -76,7 +77,7 @@ class UserProfileSettingsStore extends Store {
     return values.some((item) => undefined !== item);
   }
   hasUnsavedChanges() {
-    let values = Object.values(closure_9);
+    let values = Object.values(closure_10);
     return values.some((item) => {
       const values = Object.values(item);
       return values.some((item) => undefined !== item);
@@ -126,7 +127,7 @@ let obj2 = {
       return false;
     } else {
       CLOSED = FormStates.OPEN;
-      closure_13 = {};
+      closure_14 = {};
     }
   },
   USER_PROFILE_SETTINGS_INIT: function handleInit(guildId) {
@@ -139,7 +140,7 @@ let obj2 = {
     }
     guildId = tmp;
     CLOSED = FormStates.OPEN;
-    closure_13 = {};
+    closure_14 = {};
   },
   USER_PROFILE_SETTINGS_SET_GUILD: function handleSetGuild(guildId) {
     guildId = guildId.guildId;
@@ -150,16 +151,16 @@ let obj2 = {
       }
     }
     guildId = tmp;
-    closure_13 = {};
+    closure_14 = {};
   },
   USER_PROFILE_SETTINGS_CLOSE: function handleFormClose() {
     CLOSED = FormStates.CLOSED;
-    closure_13 = {};
+    closure_14 = {};
   },
   USER_PROFILE_SETTINGS_RESET_AND_CLOSE_FORM: handleReset,
   USER_PROFILE_SETTINGS_SUBMIT: function handleFormSubmit() {
     CLOSED = FormStates.SUBMITTING;
-    closure_13 = {};
+    closure_14 = {};
   },
   USER_PROFILE_SETTINGS_SUBMIT_SUCCESS: function handleFormSubmitSuccess(guildId) {
     guildId = guildId.guildId;
@@ -167,7 +168,7 @@ let obj2 = {
       return false;
     } else {
       CLOSED = tmp.OPEN;
-      const tmp2 = closure_13;
+      const tmp2 = closure_14;
       if (guildId == null) {
         guildId = _false;
       }
@@ -180,7 +181,7 @@ let obj2 = {
       return false;
     } else {
       CLOSED = tmp.OPEN;
-      const tmp2 = closure_13;
+      const tmp2 = closure_14;
       if (guildId == null) {
         guildId = _false;
       }
@@ -192,21 +193,40 @@ let obj2 = {
   },
   USER_PROFILE_SETTINGS_SET_PENDING_CHANGES: function handleSetPendingChanges(arg0) {
     let type;
-    ({ type, guildId } = arg0);
-    const merged = Object.assign(arg0, Object.assign({ type: 0, guildId: 0 }));
-    let tmp3 = guildId;
-    const tmp2 = closure_9;
-    if (guildId == null) {
-      tmp3 = _false;
+    function clearStaleFieldErrors(guildId, merged) {
+      const tmp = closure_14[guildId];
+      let closure_0 = tmp;
+      if (null != tmp) {
+        const _Object2 = Object;
+        const keys = Object.keys(merged);
+        const mapped = keys.map((item) => closure_1_8[item]);
+        const found = mapped.filter((item) => null != item && item in closure_0);
+        if (0 !== found.length) {
+          obj = {};
+          merged = Object.assign(tmp);
+          for (const item10012 of found) {
+            delete obj[item10012];
+            continue;
+          }
+          const _Object = Object;
+          const tmp7 = closure_14;
+          if (Object.keys(obj).length <= 0) {
+            obj = closure_7;
+          }
+          tmp7[guildId] = obj;
+        }
+      }
     }
-    const tmp4 = closure_9;
+    ({ type, guildId } = arg0);
+    let merged = Object.assign(arg0, Object.assign({ type: 0, guildId: 0 }));
     if (guildId == null) {
       guildId = _false;
     }
     obj = {};
-    const merged1 = Object.assign(tmp4[guildId]);
+    const merged1 = Object.assign(closure_10[guildId]);
     const merged2 = Object.assign(merged);
-    tmp2[tmp3] = obj;
+    closure_10[guildId] = obj;
+    clearStaleFieldErrors(guildId, merged);
   },
   USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_AVATAR: function handleSetTryItOutAvatar(avatar) {
     obj = { tryItOutAvatar: avatar };
@@ -261,11 +281,11 @@ let obj2 = {
     }
   },
   USER_PROFILE_SETTINGS_CLEAR_ERRORS: function handleResetErrors() {
-    closure_13 = {};
+    closure_14 = {};
   },
   USER_PROFILE_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: function handleResetPendingAccountChanges() {
-    const entries = Object.entries(closure_9);
-    closure_9 = fromEntries(entries.map((item) => {
+    const entries = Object.entries(closure_10);
+    closure_10 = fromEntries(entries.map((item) => {
       let tmp;
       let tmp2;
       [tmp, tmp2] = item;
@@ -277,8 +297,8 @@ let obj2 = {
     }));
   },
   USER_PROFILE_SETTINGS_RESET_PENDING_PROFILE_CHANGES: function handleResetPendingProfileChanges() {
-    const entries = Object.entries(closure_9);
-    closure_9 = fromEntries(entries.map((item) => {
+    const entries = Object.entries(closure_10);
+    closure_10 = fromEntries(entries.map((item) => {
       let tmp;
       let tmp2;
       [tmp, tmp2] = item;
@@ -290,14 +310,14 @@ let obj2 = {
     }));
   },
   USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES: function handleResetPendingChanges() {
-    closure_9 = {};
-    closure_13 = {};
+    closure_10 = {};
+    closure_14 = {};
   },
   USER_PROFILE_SETTINGS_RESET_TRY_IT_OUT_CHANGES: function handleResetTryItOutChanges() {
 
   },
   USER_PROFILE_SETTINGS_RESET_PENDING_LEGACY_USERNAME_DISABLED: function handleResetPendingLegacyUsernameDisabled() {
-    obj = closure_9[_false];
+    obj = closure_10[_false];
     if (obj == null) {
       obj = {};
     }
@@ -309,12 +329,12 @@ let obj2 = {
       return false;
     } else {
       const obj2 = { pendingLegacyUsernameDisabled: undefined };
-      const merged = Object.assign(closure_9[tmp]);
-      closure_9[_false] = obj2;
+      const merged = Object.assign(closure_10[tmp]);
+      closure_10[_false] = obj2;
     }
   },
   USER_PROFILE_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES: function handleResetPendingPrimaryGuildChanges() {
-    obj = closure_9[_false];
+    obj = closure_10[_false];
     if (obj == null) {
       obj = {};
     }
@@ -326,14 +346,14 @@ let obj2 = {
       return false;
     } else {
       const obj2 = { pendingPrimaryGuildId: undefined };
-      const merged = Object.assign(closure_9[tmp]);
-      closure_9[_false] = obj2;
+      const merged = Object.assign(closure_10[tmp]);
+      closure_10[_false] = obj2;
     }
   },
   USER_PROFILE_UPDATE_FAILURE: function handleProfileUpdateFailure(arg0) {
     ({ guildId, errors } = arg0);
     CLOSED = FormStates.OPEN;
-    const tmp = closure_13;
+    const tmp = closure_14;
     if (guildId == null) {
       guildId = _false;
     }

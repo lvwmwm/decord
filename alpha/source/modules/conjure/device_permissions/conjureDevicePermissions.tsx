@@ -1,18 +1,18 @@
-// Module ID: 11064
-// Function ID: 11065
+// Module ID: 13064
+// Function ID: 13065
 // Name: conjureDevicePermissions
-// Dependencies: [1377, 1113, 4028, 2]
+// Dependencies: [1377, 1113, 4079, 2]
 // Exports: getConjureDevicePermissionLabel, getConjureDevicePermissionPromptTitle, isConjureDevicePermissionName, isConjureDevicePermissionSupported
 
-// Module 11064 (conjureDevicePermissions)
+// Module 13064 (conjureDevicePermissions)
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import _modDef4028 from "module_4028" /* 4028 */;
+import _modDef4079 from "module_4079" /* 4079 */;
 import size from "module_2" /* 2 */;
 
 function getLabel() {
   const intl = intl2.intl;
-  return intl.string(_modDef4028["2KIefJ"]);
+  return intl.string(_modDef4079["2KIefJ"]);
 }
 let obj = {
   screen_capture: { isSupported: PlatformUtils.isDesktop, getLabel },
@@ -22,7 +22,7 @@ let obj = {
     },
     getLabel() {
       const intl = intl2.intl;
-      return intl.string(_modDef4028["5Hp3Nx"]);
+      return intl.string(_modDef4079["5Hp3Nx"]);
     }
   }
 };
@@ -48,5 +48,5 @@ export function getConjureDevicePermissionLabel(permission) {
 export function getConjureDevicePermissionPromptTitle(app) {
   const intl = intl2.intl;
   obj = { app };
-  return intl.formatToPlainString(_modDef4028.vBSfKU, obj);
+  return intl.formatToPlainString(_modDef4079.vBSfKU, obj);
 }

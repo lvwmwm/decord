@@ -1,33 +1,33 @@
-// Module ID: 12754
-// Function ID: 12755
+// Module ID: 13441
+// Function ID: 13442
 // Name: PollCreation
-// Dependencies: [19, 17, 8481, 21, 5142, 575, 1377, 6098, 1113, 7151, 1187, 11639, 5753, 12755, 5376, 12756, 2118, 7041, 5325, 6162, 1260, 5737, 12753, 5839, 10661, 5151, 12757, 12775, 7073, 8478, 6094, 12776, 7633, 7124, 12777, 9903, 9905, 12779, 8250, 12781, 7040, 2]
+// Dependencies: [19, 17, 8945, 21, 5243, 575, 1377, 6211, 1113, 7553, 1187, 13442, 5866, 13443, 5489, 13444, 2118, 7379, 5438, 6275, 1260, 5850, 13440, 5952, 11577, 5252, 13445, 13450, 7433, 8795, 6207, 13451, 7363, 7484, 13452, 8982, 8966, 13454, 8041, 13456, 7667, 2]
 // Exports: default
 
-// Module 12754 (PollCreation)
+// Module 13441 (PollCreation)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5151 */;
-import ChatInputUtils from "ChatInputUtils" /* 5325 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
-import useAlertStore from "useAlertStore" /* 6094 */;
-import AlertModal2 from "AlertModal" /* 6098 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7151 */;
-import PollsUtils from "PollsUtils" /* 8478 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9903 */;
-import PollsIcon from "PollsIcon" /* 10661 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11639 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 12753 */;
-import PollAnswerInputDefault from "PollAnswerInput" /* 12781 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
+import ChatInputUtils from "ChatInputUtils" /* 5438 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
+import useAlertStore from "useAlertStore" /* 6207 */;
+import AlertModal2 from "AlertModal" /* 6211 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7553 */;
+import PollsUtils from "PollsUtils" /* 8795 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 8982 */;
+import PollsIcon from "PollsIcon" /* 11577 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 13440 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13442 */;
+import PollAnswerInputDefault from "PollAnswerInput" /* 13456 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PollsConstants from "PollsConstants" /* 8481 */;
+import PollsConstants from "PollsConstants" /* 8945 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const ScheduledMessageTypes = tmp(9905);
+const ScheduledMessageTypes = tmp(8966);
 function UnsavedChangesAlertModal(onConfirm) {
   let intl;
   let intl2;
@@ -126,7 +126,7 @@ function PollDurationSelectionRow(selectedDuration) {
   let intl3;
   selectedDuration = selectedDuration.selectedDuration;
   const onChange = selectedDuration.onChange;
-  const tmp = onChange(12755)()[selectedDuration];
+  const tmp = onChange(13443)()[selectedDuration];
   let obj = {
     label: intl.string(selectedDuration(1113).t.bGHzxb),
     accessibilityLabel: "" + intl2.string(selectedDuration(1113).t.bGHzxb) + " " + tmp,
@@ -136,12 +136,12 @@ function PollDurationSelectionRow(selectedDuration) {
       obj.dismissKeyboard();
       const obj2 = ActionSheetActionCreatorsDefault;
       const obj3 = { selectedDuration, onChange };
-      obj2.openLazy(asyncRequire(12756, dependencyMap.paths), metroImportAll, obj3);
+      obj2.openLazy(asyncRequire(13444, dependencyMap.paths), metroImportAll, obj3);
     },
-    trailing: closure_9(selectedDuration(5753).Text, { variant: "body-md/normal", color: "text-muted", children: tmp }),
+    trailing: closure_9(selectedDuration(5866).Text, { variant: "body-md/normal", color: "text-muted", children: tmp }),
     arrow: true
   };
-  const TableRow = selectedDuration(7041).TableRow;
+  const TableRow = selectedDuration(7379).TableRow;
   intl = selectedDuration(1113).intl;
   intl2 = selectedDuration(1113).intl;
   intl3 = selectedDuration(1113).intl;
@@ -240,7 +240,7 @@ export default function PollCreation(channel) {
   let tmp2 = dependencyMap;
   let obj = { type: channel(1260).ImpressionTypes.VIEW, name: channel(1260).ImpressionNames.POLL_EDITOR_VIEWED };
   let tmp4 = channel;
-  const tmp3 = onCancel(6162);
+  const tmp3 = onCancel(6275);
   tmp3(obj);
   const items = [onCancel];
   const effect = answers.useEffect(() => {
@@ -254,7 +254,7 @@ export default function PollCreation(channel) {
     };
   }, items);
   const tmp7 = c12();
-  const insets = onCancel(5737)({ includeKeyboardHeight: true }).insets;
+  const insets = onCancel(5850)({ includeKeyboardHeight: true }).insets;
   dependencyMap = answers.useRef(false);
   const callback = answers.useCallback((arg0) => {
     let intl;
@@ -277,7 +277,7 @@ export default function PollCreation(channel) {
     const obj = { number: indexToRemove + 1 };
     announce(intl.formatToPlainString(channel(closure_2[8]).t.BByGU4, obj));
   }, []);
-  const tmp10 = onCancel(12757)(channel, callback, callback1);
+  const tmp10 = onCancel(13445)(channel, callback, callback1);
   answers = tmp10.answers;
   ({ question: c4, allowMultiSelect } = tmp10);
   ({ setAllowMultiSelect: c6, canAddMoreAnswers, canRemoveMoreAnswers: c7, handleAnswerTextChange: c8, handleEmojiSelect: c9, handleAddAnswer } = tmp10);
@@ -286,15 +286,15 @@ export default function PollCreation(channel) {
   ({ createPollError, submitting, shouldFocusOnInvalidField } = tmp10);
   const setShouldFocusOnInvalidField = tmp10.setShouldFocusOnInvalidField;
   ({ handleQuestionChange, handleSubmitPoll, duration, setDuration } = tmp10);
-  let obj2 = channel(12775);
+  let obj2 = channel(13450);
   let closure_18 = obj2.useTrackPollCreationEvents(answers, allowMultiSelect).trackPollCreationCancelled;
-  const obj3 = channel(7073);
+  const obj3 = channel(7433);
   obj3.useNavigatorBackPressHandler(() => {
     let flag;
     const obj = PollsUtils;
     if (obj.isPollCreationEmpty(c4, answers)) {
       closure_18();
-      const AccessibilityAnnouncer = tmp(5151).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(5252).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp(1113).intl;
       announce(intl.string(intl7.t["+G3oRq"]));
@@ -312,7 +312,7 @@ export default function PollCreation(channel) {
       handleAddAnswer();
     }
   };
-  const obj5 = onCancel(12776)(obj4);
+  const obj5 = onCancel(13451)(obj4);
   const items1 = [fieldErrors, obj5, setShouldFocusOnInvalidField, shouldFocusOnInvalidField];
   const effect1 = answers.useEffect(() => {
     const keys = Object.keys(fieldErrors);
@@ -340,7 +340,7 @@ export default function PollCreation(channel) {
         closure_18();
         const tmpResult = PollCreationModalActionCreators;
         tmpResult.closeCreatePollModal();
-        const AccessibilityAnnouncer = tmp(5151).AccessibilityAnnouncer;
+        const AccessibilityAnnouncer = tmp(5252).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = tmp(1113).intl;
         announce(intl.string(intl7.t["+G3oRq"]));
@@ -350,14 +350,14 @@ export default function PollCreation(channel) {
         tmpResult2.openAlert("poll-creation-unsaved-changes", React4(UnsavedChangesAlertModal, obj2));
       }
     },
-    source: onCancel(7124),
+    source: onCancel(7484),
     style: tmp7.actionButton
   };
-  const HeaderActionButton = channel(7633).HeaderActionButton;
+  const HeaderActionButton = channel(7363).HeaderActionButton;
   intl = channel(1113).intl;
   items3 = [c9(HeaderActionButton, obj8), , , ];
   const obj9 = { accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp7.title, children: intl2.string(channel(1113).t.Flr51u) };
-  const Text = channel(5753).Text;
+  const Text = channel(5866).Text;
   intl2 = channel(1113).intl;
   items3[1] = c9(Text, obj9);
   const obj10 = {
@@ -377,17 +377,17 @@ export default function PollCreation(channel) {
       return pickScheduledMessageTime(obj);
     }
   };
-  const HeaderActionButton2 = channel(7633).HeaderActionButton;
+  const HeaderActionButton2 = channel(7363).HeaderActionButton;
   intl3 = channel(1113).intl;
   TEXT_BRAND = undefined;
-  CalendarPlusIcon = channel(12777).CalendarPlusIcon;
+  CalendarPlusIcon = channel(13452).CalendarPlusIcon;
   tmp16 = handleAddAnswer;
   if (null != scheduledTimestamp) {
     TEXT_BRAND = tmp(575).colors.TEXT_BRAND;
   }
   items3[2] = c9(HeaderActionButton2, obj10);
   const obj11 = { text: intl4.string(tmp4(1113).t.JOj8Zk), style: items4, disabled: submitting, onPress: handleSubmitPoll };
-  const HeaderActionButton3 = tmp4(7633).HeaderActionButton;
+  const HeaderActionButton3 = tmp4(7363).HeaderActionButton;
   intl4 = tmp4(1113).intl;
   items4 = [, ];
   ({ actionButton: arr6[0], postButton: arr6[1] } = tmp7);
@@ -398,7 +398,7 @@ export default function PollCreation(channel) {
   const tmp18 = c6;
   if (tmp13Result) {
     let anyErrorMessage;
-    let tmpResult = tmp(12779);
+    let tmpResult = tmp(13454);
     if (createPollError != null) {
       anyErrorMessage = createPollError.getAnyErrorMessage();
     }
@@ -415,7 +415,7 @@ export default function PollCreation(channel) {
   items6[1] = c9(tmp22, obj14);
   const obj15 = { style: tmp7.answerInputsContainer, children: items7 };
   const obj16 = { text: intl5.string(tmp4(1113).t.oMBfeS), color: "text-subtle", style: tmp7.label };
-  const FormLabel = tmp4(8250).FormLabel;
+  const FormLabel = tmp4(8041).FormLabel;
   intl5 = tmp4(1113).intl;
   items7 = [
     c9(FormLabel, obj16),
@@ -450,7 +450,7 @@ export default function PollCreation(channel) {
       return _undefined(!allowMultiSelect);
     }
   };
-  const TableCheckboxRow = tmp4(7040).TableCheckboxRow;
+  const TableCheckboxRow = tmp4(7667).TableCheckboxRow;
   intl6 = tmp4(1113).intl;
   items8[1] = c9(TableCheckboxRow, obj20);
   items5[2] = c11(allowMultiSelect, obj19);

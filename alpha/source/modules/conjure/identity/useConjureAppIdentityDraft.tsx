@@ -1,11 +1,11 @@
-// Module ID: 12285
-// Function ID: 12286
+// Module ID: 13087
+// Function ID: 13088
 // Name: useConjureAppIdentityDraft
-// Dependencies: [32, 19, 12286, 11005, 2]
+// Dependencies: [32, 19, 13088, 7265, 2]
 // Exports: default
 
-// Module 12285 (useConjureAppIdentityDraft)
-import ConjureActionCreators from "ConjureActionCreators" /* 11005 */;
+// Module 13087 (useConjureAppIdentityDraft)
+import ConjureActionCreators from "ConjureActionCreators" /* 7265 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ export default function useConjureAppIdentityDraft(arg0) {
   let tmp7;
   let trimmed;
   let closure_0 = arg0;
-  const tmp = first(12286)(arg0);
+  const tmp = first(13088)(arg0);
   let obj = trimmed;
   const items = [arg0];
   const effect = trimmed.useEffect(() => {

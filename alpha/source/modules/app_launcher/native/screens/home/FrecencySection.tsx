@@ -1,27 +1,27 @@
-// Module ID: 12596
-// Function ID: 12597
+// Module ID: 13285
+// Function ID: 13286
 // Name: FrecencySection
-// Dependencies: [32, 19, 17, 4990, 12597, 1072, 21, 5142, 575, 9857, 1380, 7394, 12598, 11655, 504, 11656, 5891, 1652, 5372, 1113, 9289, 12599, 12595, 2116, 9078, 12600, 5753, 10002, 11564, 7046, 12601, 5809, 5844, 12604, 2]
+// Dependencies: [32, 19, 17, 5091, 13286, 1072, 21, 5243, 575, 12608, 1380, 7196, 13287, 12488, 504, 12489, 6004, 1652, 5485, 1113, 10808, 13288, 13284, 2116, 7932, 13289, 5866, 9082, 10493, 7364, 13290, 5922, 5957, 13293, 2]
 // Exports: default
 
-// Module 12596 (FrecencySection)
+// Module 13285 (FrecencySection)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5891 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9857 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11656 */;
-import FrecencySectionStore2 from "FrecencySectionStore" /* 12597 */;
-import react2 from "react" /* 12598 */;
-import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 12599 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 12489 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 12608 */;
+import FrecencySectionStore2 from "FrecencySectionStore" /* 13286 */;
+import react2 from "react" /* 13287 */;
+import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 13288 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ let size1;
 let size2;
 let tmp6;
 let unpackModuleId;
-const ChevronSmallDownIcon = tmp6(11564);
+const ChevronSmallDownIcon = tmp6(10493);
 function Placeholder() {
   let items;
   let items1;
@@ -72,7 +72,7 @@ function FrecentActivityOneClickCTA(context) {
   let onActivityItemSelected;
   let tmp6;
   let tmp7;
-  const f103785 = () => {
+  const f105976 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -92,8 +92,8 @@ function FrecentActivityOneClickCTA(context) {
   let id = react.useId();
   let items = [EmbeddedActivitiesStore];
   const obj3 = context(handleActivityItemSelected[14]);
-  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f103785);
-  _slicedToArray(obj3.useStateFromStoresArray(items, f103785), 2);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f105976);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f105976), 2);
   let isLaunching = null != tmp7;
   const obj4 = context(handleActivityItemSelected[30]);
   const obj5 = { context, applicationId: app.applicationId };
@@ -135,7 +135,7 @@ function FrecentApp(app) {
   if (null == app.section) {
     return null;
   } else {
-    const obj4 = app(12595);
+    const obj4 = app(13284);
     const appLauncherIconSource = obj4.getAppLauncherIconSource(app.section.application);
     let obj = {
       style: disabled ? tmp.appContainerDisabled : tmp.appContainer,
@@ -158,7 +158,7 @@ function FrecentApp(app) {
     };
     const application = app.section.application;
     name = undefined;
-    const PressableOpacity = app(7046).PressableOpacity;
+    const PressableOpacity = app(7364).PressableOpacity;
     const tmp10 = closure_12;
     const tmp7 = app;
     if (application != null) {
@@ -167,11 +167,11 @@ function FrecentApp(app) {
     let tmp3 = null != appLauncherIconSource;
     if (tmp3) {
       const obj2 = { style: tmp.appIcon, source: appLauncherIconSource };
-      tmp3 = closure_11(onAppSelected(5844), obj2);
+      tmp3 = closure_11(onAppSelected(5957), obj2);
     }
     items = [tmp3, ];
     const obj3 = { submitting, style: tmp.submittingOverlay };
-    items[1] = closure_11(tmp7(12604).SubmittingOverlay, obj3);
+    items[1] = closure_11(tmp7(13293).SubmittingOverlay, obj3);
     return tmp10(PressableOpacity, obj, app.applicationId);
   }
 }
@@ -282,9 +282,9 @@ export default function FrecencySection(loading) {
         }
         const obj = { num: length, section_name: RECENT_COMMANDS, location: AppLauncherTypes.AppLauncherLocations.HOME };
         if (tmp9 === tmp10.APPS) {
-          RECENT_COMMANDS = tmp5(11656).AppLauncherSectionName.RECENT_APPS;
+          RECENT_COMMANDS = tmp5(12489).AppLauncherSectionName.RECENT_APPS;
         } else {
-          RECENT_COMMANDS = tmp5(11656).AppLauncherSectionName.RECENT_COMMANDS;
+          RECENT_COMMANDS = tmp5(12489).AppLauncherSectionName.RECENT_COMMANDS;
         }
         trackWithMetadata(APP_LAUNCHER_FRECENTS_SEEN, obj);
       }

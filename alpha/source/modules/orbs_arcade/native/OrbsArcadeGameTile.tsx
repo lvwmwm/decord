@@ -1,25 +1,25 @@
-// Module ID: 17376
-// Function ID: 17377
+// Module ID: 17542
+// Function ID: 17543
 // Name: OrbsArcadeGameTile
-// Dependencies: [32, 19, 17, 5143, 17368, 17371, 1072, 21, 5142, 575, 5139, 504, 9791, 17344, 1500, 17377, 17378, 17379, 7043, 8953, 5844, 5717, 5753, 17405, 6825, 17387, 8102, 17410, 1113, 5760, 17411, 5201, 2]
+// Dependencies: [32, 19, 17, 5244, 17534, 17537, 1072, 21, 5243, 575, 5240, 504, 10078, 17507, 1500, 17543, 17544, 17545, 7381, 9664, 5957, 5830, 5866, 17570, 6888, 17558, 7922, 17575, 1113, 5873, 17576, 5314, 2]
 // Exports: default
 
-// Module 17376 (OrbsArcadeGameTile)
+// Module 17542 (OrbsArcadeGameTile)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ColorUtils from "ColorUtils" /* 5139 */;
-import native from "native" /* 5201 */;
-import AssetUtils from "AssetUtils" /* 9791 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17378 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17379 */;
+import ColorUtils from "ColorUtils" /* 5240 */;
+import native from "native" /* 5314 */;
+import AssetUtils from "AssetUtils" /* 10078 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17544 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17545 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17368 */;
-import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 17371 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17534 */;
+import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 17537 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let theme;
@@ -141,7 +141,7 @@ function OrbsArcadeGameTileContent(game) {
     OrbsArcadeAnalytics;
     const result = trackOrbsArcadeCtaClicked(game, OrbsArcadeAnalytics.OrbsArcadeCta.HOW_TO_PLAY, OrbsArcadeAnalytics.OrbsArcadeCtaLocation.GAME_TILE, surface);
     const obj = openOrbsArcadeSheets;
-    const result1 = obj.openOrbsArcadeHowToPlaySheet(game.id, surface);
+    const result1 = obj.openOrbsArcadeInfoSheet(game.id, surface);
   }, items4);
   const obj4 = { style: tmp3.card, radius: 12, border: "faint", children: null };
   const obj5 = { ref: containerRef, style: tmp3.hero, onLayout: callback, children: null };

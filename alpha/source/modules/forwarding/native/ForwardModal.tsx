@@ -1,38 +1,38 @@
-// Module ID: 13627
-// Function ID: 13628
+// Module ID: 10175
+// Function ID: 10176
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7847, 7850, 8986, 4991, 6196, 9015, 13628, 10855, 21, 5142, 575, 1493, 13629, 504, 13625, 13624, 7073, 13631, 5839, 1113, 1380, 13633, 6094, 13634, 9926, 5887, 13635, 13636, 6180, 5378, 5379, 5838, 7421, 1377, 13639, 7633, 5853, 10864, 13640, 13649, 13664, 2]
+// Dependencies: [5, 32, 19, 17, 8678, 8681, 10137, 5092, 6309, 10161, 10176, 10177, 21, 5243, 575, 1493, 10178, 504, 10173, 10172, 7433, 10195, 5952, 1113, 1380, 10197, 6207, 10198, 9003, 6000, 10199, 10200, 6293, 5491, 5492, 5951, 7877, 1377, 10203, 7363, 5966, 10204, 10205, 15068, 15048, 2]
 // Exports: default
 
-// Module 13627 (ForwardModal)
+// Module 10175 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import HapticUtils from "HapticUtils" /* 5378 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5379 */;
-import ToastUtils from "ToastUtils" /* 5838 */;
-import LinkIcon from "LinkIcon" /* 5853 */;
-import ChannelUtils from "ChannelUtils" /* 6180 */;
-import ClipboardUtils from "ClipboardUtils" /* 7421 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7633 */;
-import UserRowConstants from "UserRowConstants" /* 10855 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13624 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 13625 */;
-import ForwardConstants from "ForwardConstants" /* 13628 */;
-import formatResults from "formatResults" /* 13629 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 13631 */;
+import HapticUtils from "HapticUtils" /* 5491 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5492 */;
+import ToastUtils from "ToastUtils" /* 5951 */;
+import LinkIcon from "LinkIcon" /* 5966 */;
+import ChannelUtils from "ChannelUtils" /* 6293 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7363 */;
+import ClipboardUtils from "ClipboardUtils" /* 7877 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 10172 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 10173 */;
+import ForwardConstants from "ForwardConstants" /* 10176 */;
+import UserRowConstants from "UserRowConstants" /* 10177 */;
+import formatResults from "formatResults" /* 10178 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 10195 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7847 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7850 */;
-import ICYMIStore from "ICYMIStore" /* 8986 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import MessageStore from "MessageStore" /* 6196 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 9015 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8678 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8681 */;
+import ICYMIStore from "ICYMIStore" /* 10137 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import MessageStore from "MessageStore" /* 6309 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 10161 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let failedDestinations;
@@ -243,8 +243,8 @@ export default function ForwardModal(message) {
               } else {
                 c3 = 1;
                 c4 = 1;
-                const obj7 = { withMessage: tmp114 };
-                const obj9 = { value: tmp115(closure_1_18, obj7, closure_1_7), done: false };
+                const obj7 = { withMessage: tmp122 };
+                const obj9 = { value: tmp123(closure_1_18, obj7, closure_1_7), done: false };
                 return obj9;
               }
             }
@@ -368,9 +368,9 @@ export default function ForwardModal(message) {
           }
           c4 = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp94) {
+        } catch (tmp102) {
           c4 = 3;
-          throw tmp94;
+          throw tmp102;
         }
       }
     })();
@@ -430,7 +430,7 @@ export default function ForwardModal(message) {
         const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
         const merged = Object.assign(arg0);
         intl = intl7.intl;
-        tmp = clientStatuses(HeaderActionButton, obj);
+        tmp = first(HeaderActionButton, obj);
       }
       return tmp;
     },

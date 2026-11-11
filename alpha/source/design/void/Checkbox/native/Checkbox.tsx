@@ -1,14 +1,14 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16472
+// Function ID: 16473
 // Name: Checkbox
-// Dependencies: [19, 21, 5844, 16312, 16313, 2]
+// Dependencies: [19, 21, 5957, 16473, 16474, 2]
 // Exports: default
 
-// Module 16311 (Checkbox)
+// Module 16472 (Checkbox)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16312 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16313 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16473 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16474 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

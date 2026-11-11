@@ -1,9 +1,9 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9403
+// Function ID: 9404
 // Name: WishlistFetchSource
 // Dependencies: [2]
 
-// Module 9567 (WishlistFetchSource)
+// Module 9403 (WishlistFetchSource)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/wishlists/WishlistFetchSource.tsx");

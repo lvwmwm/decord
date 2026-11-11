@@ -1,10 +1,10 @@
-// Module ID: 4028
-// Function ID: 4029
-// Dependencies: [1117, 4029, 1152, 2]
+// Module ID: 4079
+// Function ID: 4080
+// Dependencies: [1117, 4080, 1152, 2]
 
-// Module 4028
+// Module 4079
 import AssetJsonUtils from "AssetJsonUtils" /* 1117 */;
-import AssetRegistry from "AssetRegistry" /* 4029 */;
+import AssetRegistry from "AssetRegistry" /* 4080 */;
 import module_1152_mod from "module_1152" /* 1152 */;
 import size from "module_2" /* 2 */;
 

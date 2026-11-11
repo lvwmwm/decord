@@ -1,16 +1,16 @@
-// Module ID: 17088
-// Function ID: 17089
+// Module ID: 17251
+// Function ID: 17252
 // Name: useDerivedDMSpamFilterSetting
-// Dependencies: [1385, 4969, 4967, 504, 5819, 5827, 1196, 2]
+// Dependencies: [1385, 5070, 5068, 504, 5932, 5940, 1196, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 17088 (useDerivedDMSpamFilterSetting)
+// Module 17251 (useDerivedDMSpamFilterSetting)
 import get_initialized from "get initialized" /* 504 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 4967 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4969 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5819 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5827 */;
+import UserSettings from "UserSettings" /* 5068 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 5070 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5932 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5940 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

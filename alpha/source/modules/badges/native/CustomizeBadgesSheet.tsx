@@ -1,46 +1,46 @@
-// Module ID: 16831
-// Function ID: 16832
+// Module ID: 16994
+// Function ID: 16995
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8808, 1385, 8840, 1072, 5391, 1387, 21, 5142, 575, 5378, 10004, 16832, 10002, 1113, 7167, 7165, 5861, 7043, 11600, 5753, 11611, 9078, 7205, 1652, 5372, 5375, 15279, 1705, 10003, 5422, 5151, 11602, 1627, 504, 2171, 7390, 7415, 5721, 10033, 10034, 8839, 1252, 8845, 5839, 5390, 12627, 16833, 7018, 7385, 5394, 2]
+// Dependencies: [19, 17, 8476, 1385, 8481, 1072, 5504, 1387, 21, 5243, 575, 5491, 9084, 16995, 9082, 1113, 7569, 7567, 5974, 7381, 15165, 5866, 10046, 7932, 7724, 1652, 5485, 5488, 15729, 1705, 9083, 5535, 5252, 10012, 1627, 504, 2171, 7852, 7871, 5834, 9513, 10891, 8480, 1252, 8486, 5952, 5503, 10509, 16996, 7354, 7847, 5507, 2]
 // Exports: default
 
-// Module 16831 (CustomizeBadgesSheet)
+// Module 16994 (CustomizeBadgesSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5151 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import timingPresets from "timingPresets" /* 5375 */;
-import HapticUtils from "HapticUtils" /* 5378 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5391 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5861 */;
-import Card_Card from "Card/Card" /* 7043 */;
-import EyeSlashIcon2 from "EyeSlashIcon" /* 7165 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8839 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8845 */;
-import native from "native" /* 9078 */;
-import ContextMenu2 from "ContextMenu" /* 10002 */;
-import ContextMenuState from "ContextMenuState" /* 10003 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 10004 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10033 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10034 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11600 */;
-import BadgeUtils from "BadgeUtils" /* 11611 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 15279 */;
-import BadgeGrid from "BadgeGrid" /* 16832 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import timingPresets from "timingPresets" /* 5488 */;
+import HapticUtils from "HapticUtils" /* 5491 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5974 */;
+import Card_Card from "Card/Card" /* 7381 */;
+import EyeSlashIcon2 from "EyeSlashIcon" /* 7567 */;
+import native from "native" /* 7932 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8480 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8486 */;
+import ContextMenu2 from "ContextMenu" /* 9082 */;
+import ContextMenuState from "ContextMenuState" /* 9083 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9084 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
+import BadgeUtils from "BadgeUtils" /* 10046 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 15165 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 15729 */;
+import BadgeGrid from "BadgeGrid" /* 16995 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8808 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8476 */;
 import UserStore from "UserStore" /* 1385 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8840 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8481 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let gesture, set, set2;
@@ -92,13 +92,13 @@ function BadgeVisibilityMenu(badge) {
   };
   const tmp = gesture;
   if (flag) {
-    EyeSlashIcon = tmp2(7167).EyeIcon;
+    EyeSlashIcon = tmp2(7569).EyeIcon;
   } else {
-    EyeSlashIcon = tmp2(7165).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7567).EyeSlashIcon;
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(16832).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(16995).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";
@@ -140,7 +140,7 @@ function BadgeTileContent(badge) {
   items1 = [gesture(tmp15, obj4), , ];
   let str = "text-default";
   const Text = Text_Text.Text;
-  const tmp11 = clientStatuses;
+  const tmp11 = closure_15;
   if (flag) {
     str = "text-muted";
   }
@@ -661,7 +661,7 @@ let closure_34 = react.memo(function DraggableBadgeTile(badge) {
       handleChange.__closure = items3;
       handleChange.__workletHash = 3274388629829;
       handleChange.__initData = tmp27;
-      const items4 = [closure_29, tmp2, autoScrollSpeed, tmp7, orderShared, badge_id, getSlotOffset, slotOffset, tileSize, sharedValue2, tmp3(5372).withTiming, tmp3(5375).timingStandard, tmp6, sharedValue5, isDragActive, tmp3(1705).scheduleOnRN, tmp3(5378).triggerHapticFeedback, tmp3(5378).HapticFeedbackTypes, onCommitOrder];
+      const items4 = [closure_29, tmp2, autoScrollSpeed, tmp7, orderShared, badge_id, getSlotOffset, slotOffset, tileSize, sharedValue2, tmp3(5485).withTiming, tmp3(5488).timingStandard, tmp6, sharedValue5, isDragActive, tmp3(1705).scheduleOnRN, tmp3(5491).triggerHapticFeedback, tmp3(5491).HapticFeedbackTypes, onCommitOrder];
       let c1;
       let c2;
       let c3;
@@ -703,7 +703,7 @@ let closure_34 = react.memo(function DraggableBadgeTile(badge) {
       handleFinalize.__closure = items5;
       handleFinalize.__workletHash = 3320936971344;
       handleFinalize.__initData = tmp36;
-      const Gesture = tmp3(5422).Gesture;
+      const Gesture = tmp3(5535).Gesture;
       const items6 = [closure_30, handleStart];
       let c0;
       [tmp55, tmp56] = items6;
@@ -817,7 +817,7 @@ let closure_34 = react.memo(function DraggableBadgeTile(badge) {
         if (result !== value) {
           const result1 = obj.set(result);
           onCommitOrder(result);
-          const AccessibilityAnnouncer = tmp4(5151).AccessibilityAnnouncer;
+          const AccessibilityAnnouncer = tmp4(5252).AccessibilityAnnouncer;
           const announce = AccessibilityAnnouncer.announce;
           const intl = tmp4(1113).intl;
           const obj2 = { from: index + slotOffset + 1, to: clampResult + slotOffset + 1 };

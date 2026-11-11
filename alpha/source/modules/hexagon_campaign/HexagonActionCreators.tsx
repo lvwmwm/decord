@@ -1,16 +1,16 @@
-// Module ID: 16805
-// Function ID: 16806
+// Module ID: 16966
+// Function ID: 16967
 // Name: HexagonActionCreators
-// Dependencies: [5, 1385, 5167, 3, 1089, 1282, 5169, 572, 2]
-// Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
+// Dependencies: [5, 1385, 5268, 3, 1089, 1282, 5271, 572, 2]
+// Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousAppIcon, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
 
-// Module 16805 (HexagonActionCreators)
+// Module 16966 (HexagonActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5167 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5169 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5271 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
@@ -269,7 +269,7 @@ obj = function _enrollAndClearPendingHexagonCampaignEnrollment() {
 let closure_5 = HexagonCampaignConstants.HEXAGON_CAMPAIGN_ENROLL_ENDPOINT;
 const tmp2 = new LoggerDefault("HexagonActionCreators");
 let closure_6 = tmp2;
-const result = 5 * DurationsDefault.Millis.SECOND;
+const result = 10 * DurationsDefault.Millis.SECOND;
 const metroImportDefault = result;
 let closure_10 = null;
 const result1 = size.fileFinishedImporting("modules/hexagon_campaign/HexagonActionCreators.tsx");
@@ -325,6 +325,14 @@ export function saveHexagonCampaignPreviousDisplayNameStyles() {
   obj = HexagonCampaignUtils;
   if (!obj.hasHexagonCampaignDisplayNameFont(displayNameStyles)) {
     const obj4 = { type: "HEXAGON_CAMPAIGN_PREVIOUS_PERK_VALUES_SAVED", previousPerkValues: { displayNameStyles } };
+    const obj3 = DispatcherDefault;
+    obj3.dispatch(obj4);
+  }
+}
+export function saveHexagonCampaignPreviousAppIcon(appIconId) {
+  obj = HexagonCampaignUtils;
+  if (!obj.isHexagonCampaignAppIcon(appIconId)) {
+    const obj4 = { type: "HEXAGON_CAMPAIGN_PREVIOUS_PERK_VALUES_SAVED", previousPerkValues: { appIconId } };
     const obj3 = DispatcherDefault;
     obj3.dispatch(obj4);
   }

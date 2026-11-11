@@ -1,182 +1,33 @@
-// Module ID: 16828
-// Function ID: 16829
+// Module ID: 16990
+// Function ID: 16991
 // Name: HexagonCampaignDaysLeftBadge
-// Dependencies: [19, 17, 1385, 5167, 21, 1089, 5142, 575, 504, 5169, 7703, 5201, 5149, 5753, 5866, 1113, 4413, 2]
-// Exports: default, useHexagonCampaignDaysLeft
+// Dependencies: [19, 21, 16991, 7391, 1113, 4464, 5979, 2]
+// Exports: default
 
-// Module 16828 (HexagonCampaignDaysLeftBadge)
-import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 575 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import shared from "shared" /* 5149 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5167 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5169 */;
-import native from "native" /* 5201 */;
-import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+// Module 16990 (HexagonCampaignDaysLeftBadge)
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef4464 from "module_4464" /* 4464 */;
+import ClockIcon from "ClockIcon" /* 5979 */;
+import Badge_Badge from "Badge/Badge" /* 7391 */;
+import useHexagonCampaignDaysLeft from "useHexagonCampaignDaysLeft" /* 16991 */;
+import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, currentUser;
-
-let metroImportDefault;
-let metroRequire;
-let obj2;
-let obj3;
-let obj4;
-let obj5;
-let tmp2;
-const Text_Text = tmp2(5753);
-const f112221 = () => {
-  currentUser = currentUser.getCurrentUser();
-  let premiumType;
-  if (currentUser != null) {
-    premiumType = currentUser.premiumType;
-  }
-  return premiumType;
-};
-function HexagonCampaignBadge(variant) {
-  let iconColor;
-  let items1;
-  let obj6;
-  let renderIcon;
-  let text;
-  let textColor;
-  let str = variant.variant;
-  if (str === undefined) {
-    str = "default";
-  }
-  ({ renderIcon, text } = variant);
-  const tmp = closure_10();
-  const obj = native;
-  const theme = obj.useThemeContext().theme;
-  const obj2 = shared;
-  const isThemeDarkResult = obj2.isThemeDark(theme);
-  if ("overlay" === str) {
-    obj6 = { iconColor: nativeDefault.colors.TEXT_OVERLAY_LIGHT, textColor: "text-overlay-light" };
-    const obj3 = { iconColor: nativeDefault.colors.TEXT_OVERLAY_LIGHT, textColor: "text-overlay-light" };
-  } else if ("expressive" === str) {
-    let obj5;
-    if (isThemeDarkResult) {
-      obj5 = { iconColor: nativeDefault.colors.TEXT_OVERLAY_DARK, textColor: "text-overlay-dark" };
-      const obj4 = { iconColor: nativeDefault.colors.TEXT_OVERLAY_DARK, textColor: "text-overlay-dark" };
-    } else {
-      obj5 = { iconColor: nativeDefault.colors.TEXT_OVERLAY_LIGHT, textColor: "text-overlay-light" };
-    }
-    obj6 = obj5;
-  } else {
-    obj6 = { iconColor: nativeDefault.colors.TEXT_DEFAULT, textColor: "text-default" };
-  }
-  const items = [tmp.badge, , ];
-  let badgeOverlay = "overlay" === str;
-  ({ iconColor, textColor } = obj6);
-  const tmp10 = View;
-  const tmp9 = metroImportDefault;
-  if (badgeOverlay) {
-    badgeOverlay = tmp.badgeOverlay;
-  }
-  items[1] = badgeOverlay;
-  const obj7 = { style: items, children: items1 };
-  const tmp11 = "expressive" === str && (isThemeDarkResult ? tmp.badgeExpressiveDark : tmp.badgeExpressiveLight);
-  items[2] = tmp11;
-  items1 = [renderIcon(iconColor), metroRequire(Text_Text.Text, { variant: "footnote/semibold", color: textColor, children: text })];
-  return tmp9(tmp10, obj7);
-}
-const View = react_native.View;
-const HexagonCampaignPerk = HexagonCampaignConstants.HexagonCampaignPerk;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = 60 * DurationsDefault.Millis.SECOND;
-let closure_9 = Object.values(HexagonCampaignPerk);
-let createStyles = createStyles_mod;
-let obj = { badge: obj2, badgeOverlay: obj3, badgeExpressiveDark: obj4, badgeExpressiveLight: obj5 };
-obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_6, paddingVertical: 3, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
-createStyles = createStyles.createStyles;
-obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.OPACITY_BLACK_40 };
-obj4 = { backgroundColor: nativeDefault.unsafe_rawColors.WHITE };
-obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-let closure_10 = createStyles(obj);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/hexagon_campaign/native/HexagonCampaignDaysLeftBadge.tsx");
 
-export default function HexagonCampaignDaysLeftBadge(perk) {
+export default function HexagonCampaignDaysLeftBadge(variant) {
   let intl;
-  let maxResult;
-  perk = perk.perk;
-  const tmp2 = dependencyMap;
-  const variant = perk.variant;
-  let obj = perk(504);
-  let items = [UserStore];
-  const stateFromStores = obj.useStateFromStores(items, f112221);
-  const items1 = [perk, stateFromStores];
-  const memo = react.useMemo(() => {
-    let hexagonCampaignPerkCutoffMs;
-    if (null != perk) {
-      let obj = HexagonCampaignUtils;
-      hexagonCampaignPerkCutoffMs = obj.getHexagonCampaignPerkCutoffMs(tmp2, stateFromStores);
-    } else {
-      const _Math = Math;
-      const items = [];
-      HermesBuiltin.arraySpread(items, closure_9.map((item) => {
-        const obj = perk(dependencyMap[9]);
-        return obj.getHexagonCampaignPerkCutoffMs(item, stateFromStores);
-      }), 0);
-      const _Math2 = Math;
-      hexagonCampaignPerkCutoffMs = HermesBuiltin.apply(min, items, Math);
-    }
-    return hexagonCampaignPerkCutoffMs;
-  }, items1);
-  const tmp6 = stateFromStores(7703)(memo, closure_8);
-  let num = 0;
-  const days = tmp6.days;
-  let _Math = Math;
-  const tmp = perk;
-  const tmp5 = stateFromStores;
-  if (tmp6.hours > 0) {
-    num = 1;
+  let str = variant.variant;
+  const perk = variant.perk;
+  if (str === undefined) {
+    str = "secondary";
   }
-  const obj2 = {
-    variant,
-    renderIcon(color) {
-      const obj = { size: "xxs", color };
-      return closure_1_6(perk(dependencyMap[14]).ClockIcon, obj);
-    },
-    text: intl.formatToPlainString(tmp5(4413)["noGK/D"], { days: maxResult })
-  };
-  maxResult = max(days + num, 1);
-  intl = tmp(1113).intl;
-  return closure_6(HexagonCampaignBadge, obj2);
+  const obj = useHexagonCampaignDaysLeft;
+  const hexagonCampaignDaysLeft = obj.useHexagonCampaignDaysLeft(perk);
+  const obj3 = { text: intl.formatToPlainString(_modDef4464["noGK/D"], { days: hexagonCampaignDaysLeft }) };
+  const Badge = Badge_Badge.Badge;
+  intl = intl2.intl;
+  return <Badge type={obj3} variant={str} icon={ClockIcon.ClockIcon} />;
 };
-export function useHexagonCampaignDaysLeft(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [UserStore];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f112221);
-  const items1 = [arg0, stateFromStores];
-  const memo = react.useMemo(() => {
-    let hexagonCampaignPerkCutoffMs;
-    if (null != perk) {
-      let obj = HexagonCampaignUtils;
-      hexagonCampaignPerkCutoffMs = obj.getHexagonCampaignPerkCutoffMs(tmp2, stateFromStores);
-    } else {
-      const _Math = Math;
-      const items = [];
-      HermesBuiltin.arraySpread(items, closure_9.map((item) => {
-        const obj = perk(dependencyMap[9]);
-        return obj.getHexagonCampaignPerkCutoffMs(item, stateFromStores);
-      }), 0);
-      const _Math2 = Math;
-      hexagonCampaignPerkCutoffMs = HermesBuiltin.apply(min, items, Math);
-    }
-    return hexagonCampaignPerkCutoffMs;
-  }, items1);
-  const tmp3 = stateFromStores(7703)(memo, closure_8);
-  let num = 0;
-  const days = tmp3.days;
-  const _Math = Math;
-  if (tmp3.hours > 0) {
-    num = 1;
-  }
-  return max(days + num, 1);
-}

@@ -1,14 +1,14 @@
-// Module ID: 14343
-// Function ID: 14344
+// Module ID: 10635
+// Function ID: 10636
 // Name: useHasGuildAffinityForBoostUpsell
-// Dependencies: [6799, 8996, 1072, 504, 14344, 2]
+// Dependencies: [6783, 10139, 1072, 504, 10636, 2]
 // Exports: default
 
-// Module 14343 (useHasGuildAffinityForBoostUpsell)
+// Module 10635 (useHasGuildAffinityForBoostUpsell)
 import Constants from "Constants" /* 1072 */;
-import hasGuildAffinityForBoostUpsellDefault from "hasGuildAffinityForBoostUpsell" /* 14344 */;
-import ConsentStore from "ConsentStore" /* 6799 */;
-import GuildAffinitiesStore from "GuildAffinitiesStore" /* 8996 */;
+import hasGuildAffinityForBoostUpsellDefault from "hasGuildAffinityForBoostUpsell" /* 10636 */;
+import ConsentStore from "ConsentStore" /* 6783 */;
+import GuildAffinitiesStore from "GuildAffinitiesStore" /* 10139 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

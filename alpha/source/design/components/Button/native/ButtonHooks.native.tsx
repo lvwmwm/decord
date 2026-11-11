@@ -1,22 +1,22 @@
-// Module ID: 5767
-// Function ID: 5768
+// Module ID: 5880
+// Function ID: 5881
 // Name: ButtonHooks
-// Dependencies: [19, 5142, 5201, 575, 5149, 5726, 1652, 5763, 5764, 5766, 5768, 5762, 5753, 1377, 2]
+// Dependencies: [19, 5243, 5314, 575, 5250, 5839, 1652, 5876, 5877, 5879, 5881, 5875, 5866, 1377, 2]
 // Exports: useButtonPillStyles, useButtonPressAnimationProps, useButtonTextColorStyles, useForegroundColor, useGradientPillStyles, useIconSizeStyles, useIconTintStyles, useProfileThemedButtonStyles
 
-// Module 5767 (ButtonHooks)
+// Module 5880 (ButtonHooks)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import shared from "shared" /* 5149 */;
-import native from "native" /* 5201 */;
-import useToken from "useToken" /* 5726 */;
-import Icon from "Icon" /* 5762 */;
-import spring_spring from "spring/spring" /* 5763 */;
-import springPresets from "springPresets" /* 5764 */;
-import ButtonConstants from "ButtonConstants" /* 5766 */;
+import shared from "shared" /* 5250 */;
+import native from "native" /* 5314 */;
+import useToken from "useToken" /* 5839 */;
+import Icon from "Icon" /* 5875 */;
+import spring_spring from "spring/spring" /* 5876 */;
+import springPresets from "springPresets" /* 5877 */;
+import ButtonConstants from "ButtonConstants" /* 5879 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -285,7 +285,7 @@ export function useProfileThemedButtonStyles(arg0) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -311,7 +311,7 @@ export function useProfileThemedButtonStyles(arg0) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -375,7 +375,7 @@ export function useButtonTextColorStyles(primary) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -401,7 +401,7 @@ export function useButtonTextColorStyles(primary) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -475,7 +475,7 @@ export function useIconTintStyles(variant, sharedValue) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -501,7 +501,7 @@ export function useIconTintStyles(variant, sharedValue) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -606,7 +606,7 @@ export function useButtonPillStyles(variant, pressed) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -632,7 +632,7 @@ export function useButtonPillStyles(variant, pressed) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -744,19 +744,19 @@ export const useIconSizeStyles = (arg0) => {
     Icon;
     if ("sm" === closure_0) {
       const tmpResult = Icon;
-      iconSize = tmpResult.getIconSize(tmp(5766).SMALL_BUTTON_ICON_SIZE);
+      iconSize = tmpResult.getIconSize(tmp(5879).SMALL_BUTTON_ICON_SIZE);
     } else {
       iconSize = tmp4;
       if ("lg" === closure_0) {
         const tmpResult4 = Icon;
-        iconSize = tmpResult4.getIconSize(tmp(5766).LARGE_BUTTON_ICON_SIZE);
+        iconSize = tmpResult4.getIconSize(tmp(5879).LARGE_BUTTON_ICON_SIZE);
       }
     }
     let width = iconSize;
     if (flag) {
       width = iconSize;
       if (fontScale > 1) {
-        const TextStyleSheet = tmp(5753).TextStyleSheet;
+        const TextStyleSheet = tmp(5866).TextStyleSheet;
         const tmpResult5 = ButtonConstants;
         const tmp13 = TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, closure_0)];
         const tmpResult6 = PlatformUtils;

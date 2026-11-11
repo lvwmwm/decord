@@ -1,9 +1,9 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 11790
+// Function ID: 11791
 // Name: AttachmentConstants
 // Dependencies: [2]
 
-// Module 14786 (AttachmentConstants)
+// Module 11790 (AttachmentConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AttachmentConstants.tsx");

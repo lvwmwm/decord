@@ -1,18 +1,18 @@
-// Module ID: 16315
-// Function ID: 16316
+// Module ID: 16476
+// Function ID: 16477
 // Name: Ellipsis
-// Dependencies: [19, 17, 5143, 21, 5142, 575, 1652, 5372, 504, 2]
+// Dependencies: [19, 17, 5244, 21, 5243, 575, 1652, 5485, 504, 2]
 
-// Module 16315 (Ellipsis)
+// Module 16476 (Ellipsis)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
+import timing_timing from "timing/timing" /* 5485 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import createStyles from "createStyles" /* 5142 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set2;

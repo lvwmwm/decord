@@ -1,17 +1,17 @@
-// Module ID: 9786
-// Function ID: 9787
+// Module ID: 10073
+// Function ID: 10074
 // Name: QuestDecisionRoundtripTracker
-// Dependencies: [7923, 6034, 1072, 6846, 7924, 7718, 1252, 7899, 7721, 2]
+// Dependencies: [8739, 6147, 1072, 5282, 8740, 8596, 1252, 8715, 8599, 2]
 
-// Module 9786 (QuestDecisionRoundtripTracker)
+// Module 10073 (QuestDecisionRoundtripTracker)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AdCreativeType from "AdCreativeType" /* 6846 */;
-import NetStats from "NetStats" /* 7718 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7899 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7924 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7923 */;
-import NetworkStore from "NetworkStore" /* 6034 */;
+import AdCreativeType from "AdCreativeType" /* 5282 */;
+import NetStats from "NetStats" /* 8596 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8715 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 8740 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8739 */;
+import NetworkStore from "NetworkStore" /* 6147 */;
 import size from "module_2" /* 2 */;
 
 function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
@@ -58,7 +58,7 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     if (fetchedAt == null) {
       fetchedAt = null;
     }
-    tmp2Result = tmp2(7721);
+    tmp2Result = tmp2(8599);
     track(QUEST_DECISION_ROUNDTRIP, obj3);
   }
 }
@@ -200,7 +200,7 @@ class QuestDecisionRoundtripTracker {
             }
             const deliveredAdCreativeId = getDeliveredAdCreativeId(creative);
             let creative1;
-            const getDeliveredAdCreativeId2 = tmp12(7924).getDeliveredAdCreativeId;
+            const getDeliveredAdCreativeId2 = tmp12(8740).getDeliveredAdCreativeId;
             AdDecisionUtils;
             if (tmp6 != null) {
               creative1 = tmp6.creative;

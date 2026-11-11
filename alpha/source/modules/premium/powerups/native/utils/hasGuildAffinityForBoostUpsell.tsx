@@ -1,10 +1,10 @@
-// Module ID: 14344
-// Function ID: 14345
+// Module ID: 10636
+// Function ID: 10637
 // Name: hasGuildAffinityForBoostUpsell
 // Dependencies: [2]
 // Exports: default
 
-// Module 14344 (hasGuildAffinityForBoostUpsell)
+// Module 10636 (hasGuildAffinityForBoostUpsell)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/native/utils/hasGuildAffinityForBoostUpsell.tsx");

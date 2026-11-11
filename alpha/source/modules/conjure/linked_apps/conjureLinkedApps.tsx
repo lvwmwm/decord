@@ -1,13 +1,13 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 13145
+// Function ID: 13146
 // Name: conjureLinkedApps
-// Dependencies: [5, 4028, 1113, 11090, 2]
+// Dependencies: [5, 4079, 1113, 13119, 2]
 // Exports: fetchLinkedAppCallers, linkConjureApp, linkedAppBuildDescription, linkedAppBuildLabel, unlinkConjureApp
 
-// Module 12338 (conjureLinkedApps)
+// Module 13145 (conjureLinkedApps)
 import intl2 from "intl" /* 1113 */;
-import _modDef4028 from "module_4028" /* 4028 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11090 */;
+import _modDef4079 from "module_4079" /* 4079 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 13119 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -235,9 +235,9 @@ obj = function _unlinkConjureApp() {
   return obj(...arguments);
 };
 obj = { auto: obj2, preview: obj3, published: obj4 };
-obj2 = { label: _modDef4028["2TTprm"], description: _modDef4028["1ck6o0"] };
-obj3 = { label: _modDef4028.bUZ6jT, description: _modDef4028.DP2NVW };
-obj4 = { label: _modDef4028.yXd0cc, description: _modDef4028["YY+UD8"] };
+obj2 = { label: _modDef4079["2TTprm"], description: _modDef4079["1ck6o0"] };
+obj3 = { label: _modDef4079.bUZ6jT, description: _modDef4079.DP2NVW };
+obj4 = { label: _modDef4079.yXd0cc, description: _modDef4079["YY+UD8"] };
 const result = size.fileFinishedImporting("modules/conjure/linked_apps/conjureLinkedApps.tsx");
 
 export const CONJURE_LINKED_APP_BUILDS = ["auto", "preview", "published"];

@@ -1,12 +1,12 @@
-// Module ID: 10088
-// Function ID: 10089
+// Module ID: 9364
+// Function ID: 9365
 // Name: AnimatedEnterExitItem
-// Dependencies: [19, 21, 1652, 5201, 1705, 2]
+// Dependencies: [19, 21, 1652, 5314, 1705, 2]
 // Exports: default
 
-// Module 10088 (AnimatedEnterExitItem)
+// Module 9364 (AnimatedEnterExitItem)
 import react2 from "react" /* 19 */;
-import native from "native" /* 5201 */;
+import native from "native" /* 5314 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

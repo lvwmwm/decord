@@ -1,29 +1,29 @@
-// Module ID: 9680
-// Function ID: 9681
+// Module ID: 10399
+// Function ID: 10400
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 9002, 21, 8993, 9681, 7201, 9449, 9683, 9685, 9439, 5142, 575, 5836, 9687, 9688, 9460, 1113, 2116, 4964, 9689, 5753, 2]
+// Dependencies: [19, 17, 10145, 21, 9411, 10400, 7720, 10241, 10402, 10404, 10231, 5243, 575, 5949, 10406, 10407, 10252, 1113, 2116, 5065, 10408, 5866, 2]
 // Exports: default
 
-// Module 9680 (GameProfileDetails)
+// Module 10399 (GameProfileDetails)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
 import Server from "Server" /* 2116 */;
-import DateUtilsAll from "DateUtils" /* 4964 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import LinkingDefault from "Linking" /* 5836 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7201 */;
-import PlatformType from "PlatformType" /* 8993 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 9002 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9439 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9449 */;
-import SKUUtils from "SKUUtils" /* 9460 */;
-import ScreenIcon from "ScreenIcon" /* 9681 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9683 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9685 */;
+import DateUtilsAll from "DateUtils" /* 5065 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import LinkingDefault from "Linking" /* 5949 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7720 */;
+import PlatformType from "PlatformType" /* 9411 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 10145 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 10231 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 10241 */;
+import SKUUtils from "SKUUtils" /* 10252 */;
+import ScreenIcon from "ScreenIcon" /* 10400 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 10402 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 10404 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -38,7 +38,7 @@ let obj6;
 let obj7;
 let obj8;
 let obj9;
-function GameProfileWebsiteButton(action) {
+function GameProfileWebsiteLink(action) {
   let icon;
   let title;
   action = action.action;
@@ -47,7 +47,7 @@ function GameProfileWebsiteButton(action) {
   const items = [trackAction, action, url];
   ({ icon, title } = action);
   obj = {
-    accessibilityRole: "button",
+    accessibilityRole: "link",
     accessibilityLabel: title,
     onPress: react.useCallback(() => {
       obj = LinkingDefault;
@@ -234,7 +234,7 @@ export default function GameProfileDetails(game) {
           children: found.map((icon) => {
                 const url = icon.url;
                 obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-                return closure_2_8(GameProfileWebsiteButton, obj, url);
+                return closure_2_8(GameProfileWebsiteLink, obj, url);
               })
         };
         push6(obj8);

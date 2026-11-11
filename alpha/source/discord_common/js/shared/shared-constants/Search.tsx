@@ -1,9 +1,9 @@
-// Module ID: 19150
-// Function ID: 19151
+// Module ID: 19337
+// Function ID: 19338
 // Name: Search
 // Dependencies: [2]
 
-// Module 19150 (Search)
+// Module 19337 (Search)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/Search.tsx");

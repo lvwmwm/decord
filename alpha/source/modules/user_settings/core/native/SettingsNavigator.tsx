@@ -1,25 +1,25 @@
-// Module ID: 19391
-// Function ID: 19392
+// Module ID: 19582
+// Function ID: 19583
 // Name: SettingsNavigator
-// Dependencies: [19, 17, 2186, 16934, 1072, 21, 9982, 5142, 575, 19392, 1187, 5753, 1500, 15655, 19393, 7230, 563, 7390, 7415, 16936, 7733, 16937, 7234, 16209, 5726, 16917, 19394, 16779, 1113, 19395, 38, 2]
+// Dependencies: [19, 17, 2186, 17097, 1072, 21, 9062, 5243, 575, 19583, 1187, 5866, 1500, 15205, 19584, 7747, 563, 7852, 7871, 17099, 8611, 17100, 7424, 16373, 5839, 17080, 19585, 16940, 1113, 19586, 38, 2]
 
-// Module 19391 (SettingsNavigator)
+// Module 19582 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7230 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16936 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 19392 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7747 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 17099 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 19583 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16934 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 17097 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9982 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import NativeStackView from "NativeStackView" /* 9062 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_5, component, state;

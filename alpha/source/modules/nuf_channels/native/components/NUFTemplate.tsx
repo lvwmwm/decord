@@ -1,18 +1,18 @@
-// Module ID: 15497
-// Function ID: 15498
+// Module ID: 15970
+// Function ID: 15971
 // Name: NUFTemplate
-// Dependencies: [19, 17, 21, 5142, 575, 5753, 5844, 5760, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5866, 5957, 5873, 2]
 // Exports: default
 
-// Module 15497 (NUFTemplate)
+// Module 15970 (NUFTemplate)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import components_Button_Button from "components/Button/Button" /* 5760 */;
-import FastImageDefault from "FastImage" /* 5844 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import components_Button_Button from "components/Button/Button" /* 5873 */;
+import FastImageDefault from "FastImage" /* 5957 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

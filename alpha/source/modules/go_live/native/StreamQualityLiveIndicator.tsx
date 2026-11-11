@@ -1,21 +1,21 @@
-// Module ID: 11947
-// Function ID: 11948
+// Module ID: 12715
+// Function ID: 12716
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1072, 1387, 5899, 21, 5142, 575, 11873, 10176, 7390, 1652, 5372, 1187, 6076, 11948, 1252, 10033, 10034, 2171, 7046, 5844, 10143, 2]
+// Dependencies: [19, 17, 1072, 1387, 6012, 21, 5243, 575, 12625, 11236, 7852, 1652, 5485, 1187, 6189, 12716, 1252, 9513, 10891, 2171, 7364, 5957, 11153, 2]
 // Exports: default
 
-// Module 11947 (StreamQualityLiveIndicator)
+// Module 12715 (StreamQualityLiveIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 5899 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10033 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10034 */;
+import Constants2 from "Constants" /* 6012 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

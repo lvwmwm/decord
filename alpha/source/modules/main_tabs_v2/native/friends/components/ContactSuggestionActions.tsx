@@ -1,17 +1,17 @@
-// Module ID: 18894
-// Function ID: 18895
+// Module ID: 19084
+// Function ID: 19085
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 1652, 5142, 575, 18467, 1705, 5372, 5763, 1187, 18895, 5760, 1113, 2]
+// Dependencies: [19, 17, 21, 1652, 5243, 575, 18639, 1705, 5485, 5876, 1187, 19085, 5873, 1113, 2]
 // Exports: ContactSuggestionActions
 
-// Module 18894 (ContactSuggestionActions)
+// Module 19084 (ContactSuggestionActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18467 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18639 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let _undefined2, _undefined4, _undefined5, _undefined6, _undefined7, _undefined8, _undefined9, closure_0, closure_1, num, num2, num3, num4, num5, tmp13, tmp7, tmp8;

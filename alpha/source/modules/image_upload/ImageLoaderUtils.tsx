@@ -39,10 +39,11 @@ function getSrcWithWidthAndHeight(quality) {
   let src;
   let targetHeight;
   let targetWidth;
-  let tmp15Result2;
+  let tmp10;
+  let tmp11;
+  let tmp17Result2;
   let tmp6;
-  let tmp8;
-  let tmp9;
+  let tmp7;
   let width;
   function getAttachmentLadderConfig(arg0) {
     try {
@@ -78,17 +79,18 @@ function getSrcWithWidthAndHeight(quality) {
     let obj = URLUtilsDefault;
     if (!obj.isDiscordCdnUrl(src)) {
       let tmp5 = _slicedToArray(src.split("?"), 2);
-      const items = [, ];
-      [arr[0], tmp6] = tmp5;
+      [tmp6, tmp7] = tmp5;
       const tmp2Result = _modDef1487;
-      items[1] = tmp2Result.parse(tmp6);
-      [tmp8, tmp9] = items;
+      const parsed = tmp2Result.parse(tmp7);
+      delete tmp8[""];
+      const items = [tmp6, parsed];
+      [tmp10, tmp11] = items;
       _slicedToArray(items, 2);
       if (null != format) {
-        tmp9.format = format;
+        tmp11.format = format;
       }
       if (null != quality) {
-        tmp9.quality = quality;
+        tmp11.quality = quality;
       }
       if (flag) {
         flag = flag2;
@@ -98,36 +100,36 @@ function getSrcWithWidthAndHeight(quality) {
         flag = isMatch;
       }
       if (flag) {
-        tmp9.animated = true;
+        tmp11.animated = true;
       }
       if (re8.test(src)) {
-        tmp9.format = "webp";
+        tmp11.format = "webp";
       }
       const size1 = { width: targetWidth, height: targetHeight, maxWidth: maxHeight, maxHeight };
       const obj3 = ImageUtils;
       ({ width, height } = obj3.fit(size1));
       obj3.fit(size1);
       if (width !== sourceWidth) {
-        const tmp18 = getAttachmentLadderConfig("ImageLoaderUtils.getSrcWithWidthAndHeight");
+        const tmp20 = getAttachmentLadderConfig("ImageLoaderUtils.getSrcWithWidthAndHeight");
         size = { width, height };
-        if (null != tmp18) {
-          const obj2 = { targetWidth: width, targetHeight: height, sourceWidth, sourceHeight, maxUpscale: tmp15Result2.getSnapDownMaxUpscale(tmp18, react_nativeDefault()), ladder: tmp18.ladder };
+        if (null != tmp20) {
+          const obj2 = { targetWidth: width, targetHeight: height, sourceWidth, sourceHeight, maxUpscale: tmp17Result2.getSnapDownMaxUpscale(tmp20, react_nativeDefault()), ladder: tmp20.ladder };
           const snapAttachmentDimensions = AttachmentImageLadder.snapAttachmentDimensions;
           AttachmentImageLadder;
-          tmp15Result2 = AttachmentImageLadder;
+          tmp17Result2 = AttachmentImageLadder;
           size = snapAttachmentDimensions(obj2);
         }
-        const tmp20 = size.width === sourceWidth && size.height === sourceHeight;
-        if (!tmp20) {
-          tmp9.width = size.width | 0;
-          tmp9.height = size.height | 0;
+        const tmp22 = size.width === sourceWidth && size.height === sourceHeight;
+        if (!tmp22) {
+          tmp11.width = size.width | 0;
+          tmp11.height = size.height | 0;
         }
       }
-      let text = tmp8;
+      let text = tmp10;
       const tmp2Result3 = _modDef12;
-      if (!tmp2Result3.isEmpty(tmp9)) {
+      if (!tmp2Result3.isEmpty(tmp11)) {
         _modDef1487;
-        text = `${tmp8}?${obj8.stringify(tmp9)}`;
+        text = `${tmp10}?${obj8.stringify(tmp11)}`;
       }
       return text;
     }
@@ -150,7 +152,7 @@ export function isImageLoaded(arg0) {
 }
 export function loadImage(url, bind) {
   let image;
-  const f123233 = async (arg0, value) => {
+  const f124480 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -223,7 +225,7 @@ export function loadImage(url, bind) {
                 let tmp12 = backoff;
                 let tmp13 = tmp;
                 let tmp14 = closure_129_2;
-                let failResult = closure_129_2.fail(f141959);
+                let failResult = closure_129_2.fail(f143330);
               } else {
                 let tmp7 = tmp;
                 let tmp8 = closure_1_11;
@@ -291,7 +293,7 @@ export function loadImage(url, bind) {
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f123233);
+    image.onerror = _asyncToGenerator(f124480);
     image.onload = () => {
       let callbacks;
       let url;

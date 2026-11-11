@@ -1,10 +1,10 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 14683
+// Function ID: 14684
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5143, 6854, 1072, 1388, 21, 5142, 1377, 575, 1652, 5372, 5723, 504, 5763, 4967, 5088, 8501, 1411, 7366, 1252, 7415, 10079, 1705, 5376, 7429, 5753, 1113, 14099, 14201, 5760, 2]
+// Dependencies: [5, 32, 19, 17, 5244, 6906, 1072, 1388, 21, 5243, 1377, 575, 1652, 5485, 5836, 504, 5876, 5068, 5189, 9130, 1411, 7828, 1252, 7871, 9489, 1705, 5489, 7885, 5866, 1113, 14579, 14684, 5873, 2]
 // Exports: default
 
-// Module 14200 (DoubleTapToReactActionSheet)
+// Module 14683 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,16 +12,16 @@ import EmojiConstants from "EmojiConstants" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import UserSettings from "UserSettings" /* 4967 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5088 */;
-import timing_timing from "timing/timing" /* 5372 */;
+import UserSettings from "UserSettings" /* 5068 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5189 */;
+import timing_timing from "timing/timing" /* 5485 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import EmojiStore from "EmojiStore" /* 6854 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import EmojiStore from "EmojiStore" /* 6906 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(8501);
+const DoubleTapToReactUtils = tmp(9130);
 function EmojiConfetti(arg0) {
   let bottom;
   let emojiComponent;
@@ -483,7 +483,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
       DoubleTapToReactActionSheetTsx4.__workletHash = 601184467601;
       DoubleTapToReactActionSheetTsx4.__initData = tmp14;
       const withTiming2Result = withTiming2(1, { duration: 100 }, undefined, DoubleTapToReactActionSheetTsx4);
-      const tmp4Result = tmp4(5763);
+      const tmp4Result = tmp4(5876);
       const result1 = set(withSequence(withTimingResult, withTimingResult1, withTiming2Result, tmp4Result.withSpring(0, { stiffness: 2000, damping: 70, mass: 3 })));
     }
     if (null != ref.current) {

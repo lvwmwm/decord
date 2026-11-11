@@ -1,15 +1,15 @@
-// Module ID: 11635
-// Function ID: 11636
+// Module ID: 15174
+// Function ID: 15175
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 5142, 575, 5753, 1113, 10196, 11611, 11601, 8744, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5866, 1113, 11252, 10046, 15166, 8027, 2]
 // Exports: default
 
-// Module 11635 (BadgeTierGrid)
+// Module 15174 (BadgeTierGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let owned;
@@ -56,7 +56,7 @@ export default function BadgeTierGrid(badge) {
     const tmp6 = badge;
     const tmp7 = dependencyMap;
     let obj2 = { variant: "body-sm/medium", color: "text-default", style: tmp.progressLabel, children: intl.formatToPlainString(badge(1113).t.KyTwIh, obj3) };
-    let Text = badge(5753).Text;
+    let Text = badge(5866).Text;
     intl = badge(1113).intl;
     obj3 = { username: targetUsername };
     isViewingOtherUser = closure_4(Text, obj2);
@@ -146,7 +146,7 @@ export default function BadgeTierGrid(badge) {
     })
   };
   let tiers = badge.tiers;
-  let tmp9 = isViewingOtherUser(10196);
+  let tmp9 = isViewingOtherUser(11252);
   const tmp8 = closure_4;
   if (tiers == null) {
     tiers = [];

@@ -1,18 +1,18 @@
-// Module ID: 7592
-// Function ID: 7593
+// Module ID: 7163
+// Function ID: 7164
 // Name: SoundboardActionCreators
-// Dependencies: [5, 6193, 6195, 1072, 1082, 1282, 7593, 572, 7594, 6582, 7595, 1252, 4972, 12, 6092, 1113, 7596, 2]
+// Dependencies: [5, 6306, 6308, 1072, 1082, 1282, 7164, 572, 7165, 6695, 7166, 1252, 5073, 12, 6205, 1113, 7167, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7592 (SoundboardActionCreators)
+// Module 7163 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4972 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6092 */;
-import SoundboardConstants from "SoundboardConstants" /* 6195 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5073 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
+import SoundboardConstants from "SoundboardConstants" /* 6308 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 6193 */;
+import SoundboardStore from "SoundboardStore" /* 6306 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
@@ -141,7 +141,7 @@ function _maybeFetchDefaultSounds() {
 }
 function _maybeFetchGuildSoundboardSounds() {
   let SOUNDBOARD_SOUNDS_RECEIVED;
-  obj = SOUNDBOARD_SOUNDS_RECEIVED(7595);
+  obj = SOUNDBOARD_SOUNDS_RECEIVED(7166);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
@@ -561,7 +561,7 @@ export function addFavoriteSound(soundId) {
     obj = _modDef12;
     if (obj.size(soundIds.soundIds) >= metroImportAll) {
       const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
-      const show = tmp(6092).show;
+      const show = tmp(6205).show;
       AlertActionCreatorsDefault;
       intl = intl3.intl;
       intl2 = intl3.intl;

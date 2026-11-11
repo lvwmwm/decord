@@ -1,14 +1,14 @@
-// Module ID: 20158
-// Function ID: 20159
+// Module ID: 20353
+// Function ID: 20354
 // Name: EmptyServerSettingsAuditLog
-// Dependencies: [19, 21, 8886, 20159, 20160, 20161, 5149, 5844, 2]
+// Dependencies: [19, 21, 8117, 20354, 20355, 20356, 5250, 5957, 2]
 // Exports: EmptyServerSettingsAuditLog, getEmptyServerSettingsAuditLogSource, useEmptyServerSettingsAuditLogSource
 
-// Module 20158 (EmptyServerSettingsAuditLog)
+// Module 20353 (EmptyServerSettingsAuditLog)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5149 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import _mod8886 from "module_8886" /* 8886 */;
+import shared from "shared" /* 5250 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import _mod8117 from "module_8117" /* 8117 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsAuditLog.tsx");
 
 export function getEmptyServerSettingsAuditLogSource(theme) {
-  const obj = _mod8886;
+  const obj = _mod8117;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useEmptyServerSettingsAuditLogSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8886;
+  const obj2 = _mod8117;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function EmptyServerSettingsAuditLog(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8886;
+  const obj2 = _mod8117;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

@@ -1,15 +1,16 @@
-// Module ID: 9005
-// Function ID: 9006
+// Module ID: 10151
+// Function ID: 10152
 // Name: InterestPickerSessionStore
 // Dependencies: [504, 572, 2]
 
-// Module 9005 (InterestPickerSessionStore)
+// Module 10151 (InterestPickerSessionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const React = [];
 let c1 = false;
+let c2 = false;
 let id = null;
 const Store = get_initializedDefault.Store;
 class InterestPickerSessionStore extends Store {
@@ -19,6 +20,9 @@ class InterestPickerSessionStore extends Store {
   }
   hasSeenPicker() {
     return c1 || length.length > 0;
+  }
+  isPickerOpen() {
+    return c2;
   }
 }
 const prototype = InterestPickerSessionStore.prototype;
@@ -31,9 +35,18 @@ const obj = {
   WATERWHEELS_INTEREST_PICKER_SEEN: function handleSeen() {
     c1 = true;
   },
+  WATERWHEELS_INTEREST_PICKER_OPEN_CHANGE: function handleOpenChange(open) {
+    open = open.open;
+    if (c2 === open) {
+      return false;
+    } else {
+      c2 = open;
+    }
+  },
   LOGOUT: function handleLogout() {
     let closure_0 = [];
     c1 = false;
+    c2 = false;
     id = null;
   },
   CONNECTION_OPEN: function handleConnectionOpen(user) {
@@ -42,6 +55,7 @@ const obj = {
     if (tmp) {
       let closure_0 = [];
       c1 = false;
+      c2 = false;
     }
     id = user.id;
   }

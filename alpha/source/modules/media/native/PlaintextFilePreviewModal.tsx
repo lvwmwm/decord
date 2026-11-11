@@ -1,24 +1,25 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 12419
+// Function ID: 12420
 // Name: PlaintextFilePreviewModal
-// Dependencies: [32, 19, 17, 1083, 21, 5142, 575, 6801, 11782, 8788, 11784, 5836, 11786, 5753, 1113, 7018, 7369, 7067, 10002, 7633, 9852, 11636, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5243, 575, 6785, 12418, 12420, 12422, 5949, 12424, 5866, 1113, 7354, 12425, 12433, 7831, 7427, 9082, 7363, 7356, 12434, 2]
 // Exports: default
 
-// Module 11783 (PlaintextFilePreviewModal)
+// Module 12419 (PlaintextFilePreviewModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7018 */;
-import NavigatorHeader from "NavigatorHeader" /* 7067 */;
-import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11782 */;
-import useDownloadedFile from "useDownloadedFile" /* 11786 */;
+import intl4 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7354 */;
+import NavigatorHeader from "NavigatorHeader" /* 7427 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7831 */;
+import openPlaintextFilePreview from "openPlaintextFilePreview" /* 12418 */;
+import useDownloadedFile from "useDownloadedFile" /* 12424 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -34,45 +35,51 @@ function closeModal() {
 }
 function PlaintextFilePreviewContent(arg0) {
   let intl;
+  let renderMarkdown;
   let url;
   let wordWrap;
-  ({ url, wordWrap } = arg0);
+  ({ url, wordWrap, renderMarkdown } = arg0);
   const tmp = closure_9();
   const obj = useDownloadedFile;
   const downloadedFile = obj.useDownloadedFile(url, undefined);
   const fileContents = downloadedFile.fileContents;
   if (downloadedFile.hadError) {
-    ({ variant: "body-md/normal", color: "text-muted", children: intl.string(intl3.t.fEptJP) });
-    const Text = tmp2(5753).Text;
+    ({ variant: "body-md/normal", color: "text-muted", children: intl.string(intl4.t.fEptJP) });
+    const Text = tmp2(5866).Text;
     intl = tmp2(1113).intl;
     return <metroRequire style={tmp.errorContainer}>{null}</metroRequire>;
   } else if (null == fileContents) {
     return <metroRequire style={tmp.loadingContainer}>{jsx(ActivityIndicator_ActivityIndicator.ActivityIndicator, {})}</metroRequire>;
   } else {
-    let obj8;
     const tmp2Result = useDownloadedFile;
     const bytesLeftNotice = tmp2Result.getBytesLeftNotice(tmp5);
-    let combined = fileContents;
-    if ("" !== bytesLeftNotice) {
-      const _HermesInternal = HermesInternal;
-      combined = "" + fileContents + "\n" + bytesLeftNotice;
-    }
-    const tmp10 = jsx(Text_Text.Text, { variant: "body-sm/normal", color: "text-default", style: tmp.code, selectable: true, children: combined });
-    if (wordWrap) {
-      const obj7 = { style: null, contentContainerStyle: null, children: tmp10 };
-      ({ scroller: obj5.style, scrollerContent: obj5.contentContainerStyle } = tmp);
-      obj8 = obj7;
+    if (renderMarkdown) {
+      ({ scroller: obj6.style, scrollerContent: obj6.contentContainerStyle } = tmp);
+      return <hasOwnProperty style={null} contentContainerStyle={null}>{null}</hasOwnProperty>;
     } else {
-      obj8 = { style: tmp.scroller, children: null };
+      let obj11;
+      let combined = fileContents;
+      if ("" !== bytesLeftNotice) {
+        const _HermesInternal = HermesInternal;
+        combined = "" + fileContents + "\n" + bytesLeftNotice;
+      }
+      const tmp10 = jsx(Text_Text.Text, { variant: "body-sm/normal", color: "text-default", style: tmp.code, selectable: true, children: combined });
+      if (wordWrap) {
+        const obj10 = { style: null, contentContainerStyle: null, children: tmp10 };
+        ({ scroller: obj5.style, scrollerContent: obj5.contentContainerStyle } = tmp);
+        obj11 = obj10;
+      } else {
+        obj11 = { style: tmp.scroller, children: null };
+      }
+      return <hasOwnProperty {...obj11} />;
     }
-    return <hasOwnProperty {...obj8} />;
   }
 }
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const Fonts = Constants.Fonts;
-const jsx = Fragment.jsx;
-const constants = { PREVIEW: "PREVIEW" };
+let jsx = Fragment.jsx;
+let closure_8 = { PREVIEW: "PREVIEW" };
 let createStyles = createStyles_mod;
 let obj = { container: obj2, loadingContainer: { flex: 1, alignItems: "center", justifyContent: "center" }, scroller: { flex: 1 }, scrollerContent: obj3, code: { fontFamily: Fonts.CODE_NORMAL }, errorContainer: obj4 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -85,83 +92,127 @@ const result = size.fileFinishedImporting("modules/media/native/PlaintextFilePre
 export default function PlaintextFilePreviewModal(url) {
   let closure_2;
   let closure_4;
+  let closure_7;
   url = url.url;
-  const fileName = url.fileName;
+  const str = url.fileName;
   let first;
   react = undefined;
   const tmp = closure_9();
   dependencyMap = tmp;
-  const tmp2 = first(react.useState(true), 2);
+  let obj = react;
+  let tmp2 = first(react.useState(true), 2);
   first = tmp2[0];
   react = tmp2[1];
-  let items = [url, first];
-  const memo = react.useMemo(() => {
+  const MARKDOWN_LANGUAGES = url(12433).MARKDOWN_LANGUAGES;
+  const has = MARKDOWN_LANGUAGES.has;
+  const parts = str.split(".");
+  const hasItem = has(parts.slice(-1)[0]);
+  const tmp7 = first(react.useState(true), 2);
+  let closure_6 = tmp7[1];
+  jsx = tmp8;
+  let items = [hasItem, hasItem && tmp7[0], url, first];
+  const memo = obj.useMemo(() => {
     let CheckmarkSmallIcon;
+    let CheckmarkSmallIcon1;
     let intl;
     let intl2;
-    let obj = {
-      label: intl.string(intl3.t.AMKNT1),
-      trailingIndicator: CheckmarkSmallIcon,
-      action() {
-        return closure_1_4((arg0) => !arg0);
+    let intl3;
+    let items1;
+    let items3;
+    const tmp2 = hasItem;
+    if (tmp2) {
+      let obj = {
+        label: intl.string(intl4.t.zstmkn),
+        trailingIndicator: CheckmarkSmallIcon,
+        action() {
+            return closure_1_6((arg0) => !arg0);
+          }
+      };
+      intl = intl4.intl;
+      CheckmarkSmallIcon = undefined;
+      if (closure_7) {
+        CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;
       }
-    };
-    intl = intl3.intl;
-    CheckmarkSmallIcon = undefined;
-    if (first) {
-      CheckmarkSmallIcon = tmp(7369).CheckmarkSmallIcon;
+      const items = [obj];
+      items1 = items;
+    } else {
+      items1 = [];
     }
-    const items = [obj, ];
-    let obj2 = {
-      label: intl2.string(tmp(1113).t["1WjMbC"]),
+    const items2 = [...items1];
+    const tmp12 = closure_7;
+    if (tmp12) {
+      items3 = [];
+    } else {
+      let obj2 = {
+        label: intl2.string(intl4.t.AMKNT1),
+        trailingIndicator: CheckmarkSmallIcon1,
+        action() {
+            return closure_1_4((arg0) => !arg0);
+          }
+      };
+      intl2 = intl4.intl;
+      CheckmarkSmallIcon1 = undefined;
+      if (first) {
+        CheckmarkSmallIcon1 = CheckmarkSmallIcon2.CheckmarkSmallIcon;
+      }
+      items3 = [obj2];
+    }
+    let obj3 = {
+      label: intl3.string(intl4.t["1WjMbC"]),
       action() {
         const obj = url(closure_2[9]);
         if (null == obj.isSuspiciousDownload(closure_1_0)) {
-          const obj3 = fileName(closure_2[11]);
+          const obj3 = str(closure_2[11]);
           obj3.openURL(closure_1_0);
         } else {
-          const obj2 = fileName(closure_2[10]);
+          const obj2 = str(closure_2[10]);
           obj2.show(closure_1_0);
         }
       }
     };
-    intl2 = tmp(1113).intl;
-    items[1] = obj2;
-    return items;
+    const arraySpreadResult = HermesBuiltin.arraySpread(items2, items3, tmp11);
+    intl3 = intl4.intl;
+    items2[arraySpreadResult] = obj3;
+    return items2;
   }, items);
-  const items1 = [fileName, memo, tmp.container, url, first];
-  const memo1 = react.useMemo(() => {
+  let items1 = [str, memo, hasItem && tmp7[0], tmp.container, url, first];
+  const memo1 = obj.useMemo(() => {
     let container;
     let items;
     let obj3;
+    let renderMarkdown;
     let wordWrap;
     let obj = {};
-    const obj2 = {
-      title: fileName,
+    let obj2 = {
+      title: str,
       headerLeft: obj3.getHeaderCloseButton(closeModal),
       headerRight() {
-        return jsx(url(container[18]).ContextMenu, {
+        let obj = {
           items,
           children(ref) {
             let intl;
             ref = ref.ref;
             const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-            const obj = { IconComponent: url(container[20]).MoreHorizontalIcon, accessibilityLabel: intl.string(url(container[14]).t.PdRCRg), ref };
-            const HeaderActionButton = url(container[19]).HeaderActionButton;
+            const obj = { IconComponent: url(container[22]).MoreHorizontalIcon, accessibilityLabel: intl.string(url(container[14]).t.PdRCRg), ref };
+            const HeaderActionButton = url(container[21]).HeaderActionButton;
             intl = url(container[14]).intl;
             const merged1 = Object.assign(merged);
-            return closure_1_7(HeaderActionButton, obj);
+            return renderMarkdown(HeaderActionButton, obj);
           }
-        });
+        };
+        return renderMarkdown(url(container[20]).ContextMenu, obj);
       },
       render() {
-        return <closure_2_6 style={container.container}>{null}</closure_2_6>;
+        let obj2;
+        const obj = { style: container.container, children: renderMarkdown(PlaintextFilePreviewContent, obj2) };
+        obj2 = { url, wordWrap, renderMarkdown };
+        return renderMarkdown(closure_6, obj);
       }
     };
-    const PREVIEW = constants.PREVIEW;
+    const PREVIEW = memo.PREVIEW;
     obj[PREVIEW] = obj2;
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  return jsx(url(11636).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
+  return jsx(url(12434).Modal, { screens: memo1, initialRouteName: memo.PREVIEW });
 };

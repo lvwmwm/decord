@@ -1,13 +1,13 @@
-// Module ID: 14529
-// Function ID: 14530
+// Module ID: 14903
+// Function ID: 14904
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 14511, 7073, 2]
+// Dependencies: [17, 14885, 7433, 2]
 // Exports: default, useBackHandlerMinimizeApp
 
-// Module 14529 (useBackHandlerSkipPhoneScreens)
+// Module 14903 (useBackHandlerSkipPhoneScreens)
 import react_native from "react-native" /* 17 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7073 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14511 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7433 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

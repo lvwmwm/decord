@@ -1,9 +1,9 @@
-// Module ID: 18693
-// Function ID: 18694
+// Module ID: 18865
+// Function ID: 18866
 // Name: MobileGameCommunitiesConstants
 // Dependencies: [2]
 
-// Module 18693 (MobileGameCommunitiesConstants)
+// Module 18865 (MobileGameCommunitiesConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesConstants.tsx");

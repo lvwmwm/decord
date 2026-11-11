@@ -1,19 +1,19 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 13096
+// Function ID: 13097
 // Name: useConjureShareToServer
-// Dependencies: [5, 32, 19, 5074, 6902, 10996, 1072, 504, 12298, 1113, 4028, 11083, 11005, 6903, 12269, 11003, 2]
+// Dependencies: [5, 32, 19, 5175, 6954, 7313, 1072, 504, 13097, 1113, 4079, 13098, 7265, 6955, 13073, 7320, 2]
 // Exports: default
 
-// Module 12297 (useConjureShareToServer)
+// Module 13096 (useConjureShareToServer)
 import Constants from "Constants" /* 1072 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6902 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 11003 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11005 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6954 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7265 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 7320 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PermissionStore_mod from "PermissionStore" /* 5074 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10996 */;
+import PermissionStore_mod from "PermissionStore" /* 5175 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7313 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ const ConjureProjectStore = ConjureProjectStore2;
 let _require, c4, c5;
 
 function refreshUntilBotJoins(arg0, arg1) {
-  const f102622 = () => {
+  const f105453 = () => {
     const integrationStatus = ConjureProjectStore.getIntegrationStatus(closure_0);
     let prop;
     if (integrationStatus != null) {
@@ -34,13 +34,13 @@ function refreshUntilBotJoins(arg0, arg1) {
         closure_0 = tmp;
         let closure_1 = tmp7 - 1;
         const _setTimeout = setTimeout;
-        const timerId = setTimeout(f102622, 1500);
+        const timerId = setTimeout(f105453, 1500);
       }
     }
   };
   let closure_0 = arg0;
   let c1 = 6;
-  let timerId = setTimeout(f102622, 1500);
+  let timerId = setTimeout(f105453, 1500);
 }
 let obj = function _waitForPublishStatus() {
   obj = _asyncToGenerator(async function(arg0, value) {
@@ -159,9 +159,6 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
   if (available) {
     let str = "user";
     available = "user" === stateFromStores.install_scope;
-  }
-  if (available) {
-    available = null == stateFromStores.install_scope_setup;
   }
   if (available) {
     available = isProjectOwner(stateFromStores);

@@ -1,13 +1,13 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11947
+// Function ID: 11948
 // Name: useVoicePanelDockHeight
-// Dependencies: [5895, 6933, 11390, 504, 1627, 2]
+// Dependencies: [6008, 6838, 11948, 504, 1627, 2]
 // Exports: default
 
-// Module 11389 (useVoicePanelDockHeight)
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11390 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
-import VoicePanelStore from "VoicePanelStore" /* 6933 */;
+// Module 11947 (useVoicePanelDockHeight)
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11948 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
+import VoicePanelStore from "VoicePanelStore" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

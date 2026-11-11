@@ -1,17 +1,16 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 9540
+// Function ID: 9541
 // Name: MobileTrialUtils
-// Dependencies: [1387, 7706, 5172, 4975, 15530, 2171, 1113, 2]
+// Dependencies: [1387, 9244, 5285, 5076, 2171, 1113, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 7705 (MobileTrialUtils)
+// Module 9540 (MobileTrialUtils)
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import dismissible_content from "dismissible_content" /* 4975 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5172 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7706 */;
-import AndroidTwoWeekTrialsExperiment from "AndroidTwoWeekTrialsExperiment" /* 15530 */;
+import dismissible_content from "dismissible_content" /* 5076 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5285 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 9244 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = PremiumConstants.PremiumSubscriptionSKUToPremiumType;
@@ -47,7 +46,7 @@ export function usePremiumTrialOfferPremiumType() {
   }
   return closure_2[skuId];
 }
-export function useNitroTrialCtaOverride(user_profile_premium_upsell_card) {
+export function useNitroTrialCtaOverride() {
   const obj = usePremiumTrialOffer;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let subscriptionTrial;
@@ -57,18 +56,12 @@ export function useNitroTrialCtaOverride(user_profile_premium_upsell_card) {
   if (null == subscriptionTrial) {
     return null;
   } else {
-    const obj2 = { location: user_profile_premium_upsell_card };
-    const tmpResult = AndroidTwoWeekTrialsExperiment;
-    if (tmpResult.isAndroidTwoWeekTrialsTrialCTAEnabled(obj2)) {
-      const obj4 = { intervalType: null, intervalCount: null };
-      ({ interval: obj3.intervalType, intervalCount: obj3.intervalCount } = subscriptionTrial);
-      const tmpResult2 = PremiumUtils;
-      const result = tmpResult2.formatIntervalDuration(obj4);
-      const intl = tmp(1113).intl;
-      const obj5 = { duration: result };
-      return intl.formatToPlainString(intl2.t["6xpY54"], obj5);
-    } else {
-      return null;
-    }
+    const obj2 = { intervalType: null, intervalCount: null };
+    ({ interval: obj3.intervalType, intervalCount: obj3.intervalCount } = subscriptionTrial);
+    const tmpResult = PremiumUtils;
+    const result = tmpResult.formatIntervalDuration(obj2);
+    const intl = tmp(1113).intl;
+    const obj4 = { duration: result };
+    return intl.formatToPlainString(intl2.t["6xpY54"], obj4);
   }
 }

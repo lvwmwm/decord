@@ -1,25 +1,25 @@
-// Module ID: 18244
-// Function ID: 18245
+// Module ID: 18415
+// Function ID: 18416
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [5, 32, 19, 17, 5756, 9674, 7676, 1074, 1072, 21, 5142, 575, 1499, 18245, 504, 2183, 9641, 10039, 7415, 9662, 18246, 1113, 5753, 5760, 18197, 14759, 7390, 1627, 17336, 1652, 5763, 5764, 1252, 7843, 9549, 10817, 18247, 18226, 2]
+// Dependencies: [5, 32, 19, 17, 5869, 9384, 9236, 1074, 1072, 21, 5243, 575, 1499, 18416, 504, 2183, 10366, 9620, 7871, 10379, 18417, 1113, 5866, 5873, 18368, 9956, 7852, 1627, 17499, 1652, 5876, 5877, 1252, 8468, 9353, 11683, 18418, 18397, 2]
 
-// Module 18244 (CollectiblesShopViewAllCategoryItems)
+// Module 18415 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import spring_spring from "spring/spring" /* 5763 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7843 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9641 */;
+import spring_spring from "spring/spring" /* 5876 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 8468 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 10366 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5756 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9674 */;
-import IAPStore from "IAPStore" /* 7676 */;
+import DevSettingsStore from "DevSettingsStore" /* 5869 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9384 */;
+import IAPStore from "IAPStore" /* 9236 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, constants, set;
@@ -36,8 +36,8 @@ let obj3;
 let obj4;
 let tmp;
 let tmp2;
-const springPresets = tmp2(5764);
-const AnalyticsLocationDefault = tmp(7415);
+const springPresets = tmp2(5877);
+const AnalyticsLocationDefault = tmp(7871);
 function CategoryItemsBySku(categorySkuId) {
   let _undefined;
   let _undefined2;
@@ -490,11 +490,11 @@ const memoResult = react.memo(function CollectiblesShopViewAllCategoryItems(cate
   if (null != category.category) {
     const obj3 = { category: null, analyticsContext: null };
     ({ category: obj2.category, analyticsContext: obj2.analyticsContext } = category);
-    tmp6 = clientStatuses(CategoryItemsContent, obj3);
+    tmp6 = closure_15(CategoryItemsContent, obj3);
   } else {
     const obj = {};
     const merged = Object.assign(category);
-    tmp6 = clientStatuses(CategoryItemsBySku, obj);
+    tmp6 = closure_15(CategoryItemsBySku, obj);
   }
   return tmp6;
 });

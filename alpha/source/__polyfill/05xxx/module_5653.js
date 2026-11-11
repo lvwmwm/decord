@@ -1,41 +1,17 @@
 // Module ID: 5653
 // Function ID: 5654
-// Dependencies: [5635, 19, 5654]
-// Exports: useLayoutState
+// Dependencies: [5651, 5597]
+// Exports: useSimultaneousGestures
 
 // Module 5653
-import react2 from "react" /* 5654 */;
-import _slicedToArray from "_slicedToArray" /* 5635 */;
-import react from "react" /* 19 */;
+import ComposedGestureName from "ComposedGestureName" /* 5597 */;
+import _mod5651 from "module_5651" /* 5651 */;
 
-let c3;
-let closure_4;
-({ useState: c3, useCallback: closure_4 } = react);
 
-export function useLayoutState(arg0) {
-  let closure_0;
-  let first;
-  [first, closure_0] = _false(arg0);
-  let obj = react2;
-  const recyclerViewContext = obj.useRecyclerViewContext();
-  const items = [first, ];
-  const items1 = [recyclerViewContext];
-  items[1] = React3((arg0, arg1) => {
-    closure_0 = arg0;
-    const tmp = closure_0((arg0) => {
-      let tmpResult = closure_0;
-      if (typeof closure_0 === "function") {
-        tmpResult = tmp(arg0);
-      }
-      return tmpResult;
-    });
-    const tmp2 = arg1;
-    if (!tmp2) {
-      const obj = recyclerViewContext;
-      if (recyclerViewContext != null) {
-        obj.layout();
-      }
-    }
-  }, items1);
-  return items;
+export function useSimultaneousGestures() {
+  const items = [...arguments];
+  const useComposedGesture = _mod5651.useComposedGesture;
+  _mod5651;
+  const items1 = [ComposedGestureName.ComposedGestureName.Simultaneous, ...items];
+  return useComposedGesture.apply(items1);
 }

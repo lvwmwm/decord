@@ -1,16 +1,16 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 15021
+// Function ID: 15022
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 5142, 5149, 1627, 5844, 14642, 14643, 5753, 1113, 2]
+// Dependencies: [19, 17, 21, 5243, 5250, 1627, 5957, 15022, 15023, 5866, 1113, 2]
 
-// Module 14641 (ForumChannelEmptyState)
+// Module 15021 (ForumChannelEmptyState)
 import react_native from "react-native" /* 17 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import shared from "shared" /* 5149 */;
-import FastImageDefault from "FastImage" /* 5844 */;
+import shared from "shared" /* 5250 */;
+import FastImageDefault from "FastImage" /* 5957 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,15 +41,15 @@ const memoResult = react.memo(function ForumChannelEmptyState(topViewHeight) {
   const tmp6 = hasOwnProperty;
   const tmp7 = View;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(14642);
+    tmp4Result = tmp4(15022);
   } else {
-    tmp4Result = tmp4(14643);
+    tmp4Result = tmp4(15023);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };
   items1[0] = React3(tmp9, obj4);
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
-  const Text = tmp2(5753).Text;
+  const Text = tmp2(5866).Text;
   const intl = tmp2(1113).intl;
   if (tagFilter.size > 0) {
     const obj6 = { numTags: tagFilter.size };
@@ -59,7 +59,7 @@ const memoResult = react.memo(function ForumChannelEmptyState(topViewHeight) {
   }
   items1[1] = React3(Text, obj5);
   const obj7 = { style: tmp.subtext, variant: "body-sm/medium", color: "text-default", children: formatToPlainStringResult1 };
-  const Text2 = tmp2(5753).Text;
+  const Text2 = tmp2(5866).Text;
   const intl2 = tmp2(1113).intl;
   const formatToPlainString = intl2.formatToPlainString;
   const t = tmp2(1113).t;

@@ -1,12 +1,12 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 10000
+// Function ID: 10001
 // Name: useDisplayNameStylesFont
-// Dependencies: [1395, 6575, 2]
+// Dependencies: [1395, 6688, 2]
 // Exports: useDisplayNameStylesFont
 
-// Module 9376 (useDisplayNameStylesFont)
+// Module 10000 (useDisplayNameStylesFont)
 import DisplayNameFont from "DisplayNameFont" /* 1395 */;
-import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 6575 */;
+import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 6688 */;
 import size from "module_2" /* 2 */;
 
 const DISPLAY_NAME_STYLES_FONT_FAMILY_MAP = { [DisplayNameFont.DisplayNameFont.CHERRY_BOMB]: "Sakura-Normal", [DisplayNameFont.DisplayNameFont.CHICLE]: "Jellybean-Normal", [DisplayNameFont.DisplayNameFont.MUSEO_MODERNO]: "Modern-Medium", [DisplayNameFont.DisplayNameFont.NEO_CASTEL]: "Medieval-Normal", [DisplayNameFont.DisplayNameFont.PIXELIFY]: "8Bit-Normal", [DisplayNameFont.DisplayNameFont.SINISTRE]: "Vampyre-Normal", [DisplayNameFont.DisplayNameFont.ZILLA_SLAB]: "Tempo-SemiBold", [DisplayNameFont.DisplayNameFont.PLAYPEN_SANS]: "MonkeyBars-Bold", [DisplayNameFont.DisplayNameFont.ORBITRON]: "Mainframe-Bold", [DisplayNameFont.DisplayNameFont.NEW_ROCKER]: "Headbang-Normal", [DisplayNameFont.DisplayNameFont.KALAM]: "Journal-Bold", [DisplayNameFont.DisplayNameFont.HEXAGON]: "Pricedown-Bold" };

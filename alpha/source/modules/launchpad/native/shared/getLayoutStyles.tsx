@@ -1,14 +1,14 @@
-// Module ID: 19114
-// Function ID: 19115
+// Module ID: 19301
+// Function ID: 19302
 // Name: getLayoutStyles
-// Dependencies: [575, 1187, 7023, 7398, 2]
+// Dependencies: [575, 1187, 7654, 7858, 2]
 // Exports: default
 
-// Module 19114 (getLayoutStyles)
+// Module 19301 (getLayoutStyles)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import GuildIcon from "GuildIcon" /* 7023 */;
-import GameIcon from "GameIcon" /* 7398 */;
+import GuildIcon from "GuildIcon" /* 7654 */;
+import GameIcon from "GameIcon" /* 7858 */;
 import size from "module_2" /* 2 */;
 
 let items;

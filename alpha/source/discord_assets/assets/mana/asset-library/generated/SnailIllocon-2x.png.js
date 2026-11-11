@@ -1,8 +1,8 @@
-// Module ID: 12889
-// Function ID: 12890
+// Module ID: 13561
+// Function ID: 13562
 // Dependencies: [2]
 
-// Module 12889
+// Module 13561
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SnailIllocon-2x.png.js");

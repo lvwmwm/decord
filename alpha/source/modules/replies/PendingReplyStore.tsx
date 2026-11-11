@@ -1,15 +1,15 @@
-// Module ID: 7902
-// Function ID: 7903
+// Module ID: 8718
+// Function ID: 8719
 // Name: PendingReplyStore
-// Dependencies: [32, 4991, 6196, 11, 504, 572, 2]
+// Dependencies: [32, 5092, 6309, 11, 504, 572, 2]
 
-// Module 7902 (PendingReplyStore)
+// Module 8718 (PendingReplyStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import MessageStore from "MessageStore" /* 6196 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import MessageStore from "MessageStore" /* 6309 */;
 import size from "module_2" /* 2 */;
 
 let closure_5, closure_7;

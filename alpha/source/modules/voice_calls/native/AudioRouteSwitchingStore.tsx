@@ -1,16 +1,16 @@
-// Module ID: 19652
-// Function ID: 19653
+// Module ID: 19844
+// Function ID: 19845
 // Name: AudioRouteSwitchingStore
-// Dependencies: [17, 4991, 5895, 5915, 5916, 504, 572, 2]
+// Dependencies: [17, 5092, 6008, 6028, 6029, 504, 572, 2]
 
-// Module 19652 (AudioRouteSwitchingStore)
+// Module 19844 (AudioRouteSwitchingStore)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 5916 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
-import AudioRouteStore from "AudioRouteStore" /* 5915 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 6029 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
+import AudioRouteStore from "AudioRouteStore" /* 6028 */;
 import size from "module_2" /* 2 */;
 
 function handleAudioRouteChanged() {

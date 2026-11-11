@@ -1,16 +1,16 @@
-// Module ID: 13461
-// Function ID: 13462
+// Module ID: 13975
+// Function ID: 13976
 // Name: ViewStep
-// Dependencies: [32, 19, 11513, 13460, 21, 5142, 1499, 13457, 13454, 13458, 8045, 8047, 6161, 575, 13462, 5753, 1113, 2530, 8738, 13463, 13465, 5760, 2]
+// Dependencies: [32, 19, 12280, 13974, 21, 5243, 1499, 13971, 13968, 13972, 8142, 8144, 6274, 575, 13976, 5866, 1113, 2549, 7372, 13977, 13979, 5873, 2]
 // Exports: ViewStep
 
-// Module 13461 (ViewStep)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11513 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13460 */;
+// Module 13975 (ViewStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12280 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13974 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -83,13 +83,13 @@ export function ViewStep(code) {
     const ModalContent = tmp2(tmp3[11]).ModalContent;
     const obj3 = { spacing: require("native").space.PX_48, children: items5 };
     const Stack2 = tmp2(tmp3[12]).Stack;
-    const obj4 = { spacing: require("native").space.PX_24, children: items1 };
+    const obj4 = { spacing: require("native").space.PX_8, children: items1 };
     const Stack3 = tmp2(tmp3[12]).Stack;
     const obj5 = { spacing: require("native").space.PX_16, align: "center", children: items };
     const Stack4 = tmp2(tmp3[12]).Stack;
     const obj6 = { iconUrl: organization.iconUrl, size: 64 };
     items = [closure_7(tmp4(tmp3[14]), obj6), ];
-    const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(require("module_2530").gptW7Y, obj8) };
+    const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(require("module_2549").gptW7Y, obj8) };
     const Text2 = tmp2(tmp3[15]).Text;
     intl3 = tmp2(tmp3[16]).intl;
     obj8 = { noun: tmp16, orgName: organization.name };
@@ -112,7 +112,7 @@ export function ViewStep(code) {
       const obj14 = { size: "xs", color: require("native").colors.ICON_MUTED };
       const GroupIcon = tmp2(tmp3[18]).GroupIcon;
       items4 = [closure_7(GroupIcon, obj14), ];
-      const obj15 = { variant: "heading-sm/medium", children: intl.formatToPlainString(require("module_2530").VuENGl, obj16) };
+      const obj15 = { variant: "heading-sm/medium", children: intl.formatToPlainString(require("module_2549").VuENGl, obj16) };
       const Text = tmp2(tmp3[15]).Text;
       intl = tmp2(tmp3[16]).intl;
       obj16 = { count: memberCount, max: maxMembers };

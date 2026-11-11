@@ -1,19 +1,19 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 12210
+// Function ID: 12211
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 5142, 575, 5753, 1113, 8436, 15483, 5836, 2]
+// Dependencies: [17, 21, 5243, 575, 5866, 1113, 12011, 12211, 5949, 2]
 // Exports: default
 
-// Module 15482 (InAppReportsExternalLinkElement)
+// Module 12210 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import LinkingDefault from "Linking" /* 5836 */;
-import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 8436 */;
-import LinkExternalMediumIcon2 from "LinkExternalMediumIcon" /* 15483 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import LinkingDefault from "Linking" /* 5949 */;
+import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 12011 */;
+import LinkExternalMediumIcon2 from "LinkExternalMediumIcon" /* 12211 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -53,7 +53,7 @@ function ExternalLinkItem(data) {
     const tmp8 = require;
     if (tmp3Result) {
       const obj4 = { style: tmp.linkDescription, variant: "body-xs/medium", color: "text-subtle", children: link_description };
-      tmp3Result = tmp3(tmp8(5753).Text, obj4);
+      tmp3Result = tmp3(tmp8(5866).Text, obj4);
     }
     tmp3Result2 = tmp3(tmp6, obj);
   }

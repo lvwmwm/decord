@@ -1,16 +1,16 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 16112
+// Function ID: 16113
 // Name: ProgramRewardsStore
-// Dependencies: [32, 1385, 15951, 4587, 4615, 4570, 504, 1089, 15954, 15956, 572, 2]
+// Dependencies: [32, 1385, 16110, 4687, 4715, 4670, 504, 1089, 16113, 16115, 572, 2]
 
-// Module 15953 (ProgramRewardsStore)
+// Module 16112 (ProgramRewardsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import addMinutesDefault from "addMinutes" /* 4587 */;
-import NetworkTtlCache from "NetworkTtlCache" /* 15951 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15954 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15956 */;
+import addMinutesDefault from "addMinutes" /* 4687 */;
+import NetworkTtlCache from "NetworkTtlCache" /* 16110 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 16113 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 16115 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

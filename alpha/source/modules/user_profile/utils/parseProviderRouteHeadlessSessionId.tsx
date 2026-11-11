@@ -1,11 +1,11 @@
-// Module ID: 15126
-// Function ID: 15127
+// Module ID: 15616
+// Function ID: 15617
 // Name: parseProviderRouteHeadlessSessionId
-// Dependencies: [32, 6631, 2]
+// Dependencies: [32, 7024, 2]
 // Exports: default
 
-// Module 15126 (parseProviderRouteHeadlessSessionId)
-import PlatformsDefault from "Platforms" /* 6631 */;
+// Module 15616 (parseProviderRouteHeadlessSessionId)
+import PlatformsDefault from "Platforms" /* 7024 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

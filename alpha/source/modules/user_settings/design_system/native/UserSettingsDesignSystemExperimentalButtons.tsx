@@ -1,25 +1,25 @@
-// Module ID: 18131
-// Function ID: 18132
+// Module ID: 18302
+// Function ID: 18303
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 1072, 21, 5726, 575, 9078, 6161, 7129, 7051, 7287, 5858, 5760, 5753, 5201, 5717, 8252, 7637, 2]
+// Dependencies: [19, 17, 1072, 21, 5839, 575, 7932, 6274, 7680, 7389, 7761, 5971, 5873, 5866, 5314, 5830, 8043, 10503, 2]
 // Exports: default
 
-// Module 18131 (UserSettingsDesignSystemExperimentalButtons)
+// Module 18302 (UserSettingsDesignSystemExperimentalButtons)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 5201 */;
-import LinearGradientDefault from "LinearGradient" /* 5717 */;
-import useToken from "useToken" /* 5726 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import components_Button_Button from "components/Button/Button" /* 5760 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5858 */;
-import Stack_Stack from "Stack/Stack" /* 6161 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7051 */;
-import TableRowGroup7 from "TableRowGroup" /* 7129 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7287 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 7637 */;
-import RowButton2 from "RowButton" /* 8252 */;
-import native2 from "native" /* 9078 */;
+import native from "native" /* 5314 */;
+import LinearGradientDefault from "LinearGradient" /* 5830 */;
+import useToken from "useToken" /* 5839 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import components_Button_Button from "components/Button/Button" /* 5873 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5971 */;
+import Stack_Stack from "Stack/Stack" /* 6274 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7389 */;
+import TableRowGroup7 from "TableRowGroup" /* 7680 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7761 */;
+import native2 from "native" /* 7932 */;
+import RowButton2 from "RowButton" /* 8043 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10503 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

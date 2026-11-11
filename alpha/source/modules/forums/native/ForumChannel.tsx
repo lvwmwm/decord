@@ -1,40 +1,40 @@
-// Module ID: 14635
-// Function ID: 14636
+// Module ID: 15015
+// Function ID: 15016
 // Name: ForumChannel
-// Dependencies: [19, 17, 5075, 6919, 4991, 7780, 6765, 14022, 1072, 11390, 1083, 21, 5142, 575, 6780, 9917, 5753, 1113, 9964, 7542, 504, 14636, 7520, 9, 9404, 9427, 7046, 9407, 7398, 5376, 14638, 2118, 5760, 12698, 14639, 9659, 9968, 14640, 5778, 14049, 14021, 14641, 7360, 8277, 10864, 5839, 5861, 7510, 7390, 7415, 8709, 11507, 11468, 11496, 9966, 14644, 8417, 10327, 10356, 5378, 5379, 10354, 7002, 5737, 11389, 11505, 5766, 14079, 9085, 14648, 14095, 2]
+// Dependencies: [19, 17, 5176, 6972, 5092, 8658, 6874, 14502, 1072, 11948, 1083, 21, 5243, 575, 6763, 8994, 5866, 1113, 9041, 11836, 504, 15016, 14524, 9, 10394, 10219, 7364, 10214, 7858, 5489, 15018, 2118, 5873, 13388, 15019, 9455, 9048, 15020, 5891, 14529, 14501, 15021, 7822, 8800, 10204, 5952, 5974, 7223, 7852, 7871, 7617, 12274, 12239, 12262, 9046, 15024, 8938, 11090, 11179, 5491, 5492, 11177, 7618, 5850, 11947, 12272, 5879, 15012, 7939, 15028, 14575, 2]
 // Exports: default
 
-// Module 14635 (ForumChannel)
+// Module 15015 (ForumChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5861 */;
-import Tracking from "Tracking" /* 8277 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8417 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9407 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9427 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9917 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10327 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11390 */;
-import ForumPostDefault from "ForumPost" /* 14021 */;
-import ForumChannelStore from "ForumChannelStore" /* 14022 */;
-import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 14049 */;
-import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 14644 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5974 */;
+import Tracking from "Tracking" /* 8800 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8938 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8994 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10214 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 11090 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11948 */;
+import ForumPostDefault from "ForumPost" /* 14501 */;
+import ForumChannelStore from "ForumChannelStore" /* 14502 */;
+import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 14529 */;
+import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 15024 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 5075 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6919 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import DraftStore from "DraftStore" /* 7780 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6765 */;
+import LurkingStore from "LurkingStore" /* 5176 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6972 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import DraftStore from "DraftStore" /* 8658 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6874 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
-import TextStyles_mod from "TextStyles" /* 6780 */;
+import createStyles_mod from "createStyles" /* 5243 */;
+import TextStyles_mod from "TextStyles" /* 6763 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ let obj5;
 let size;
 let tmp;
 let unpackModuleId;
-const MemberVerificationModalActionCreators = tmp(7002);
+const MemberVerificationModalActionCreators = tmp(7618);
 function forumKeyExtractor(arg0, arg1) {
   let combined = arg0;
   if (arg0 === loading_section) {
@@ -67,14 +67,14 @@ function ArchivedSection() {
   let items;
   let obj3;
   const tmp = closure_25();
-  const obj2 = { style: items, children: clientStatuses(Text, obj3) };
+  const obj2 = { style: items, children: closure_15(Text, obj3) };
   items = [tmp.section, ];
   const obj = ClientThemesOverrides;
   items[1] = obj.useClientThemesOverride();
   obj3 = { style: tmp.divider, variant: "body-xs/semibold", color: "text-muted", children: intl.string(intl3.t["3+LO1w"]) };
   Text = Text_Text.Text;
   intl = intl3.intl;
-  return clientStatuses(View, obj2);
+  return closure_15(View, obj2);
 }
 function SearchSection(numPosts) {
   let Text;
@@ -83,7 +83,7 @@ function SearchSection(numPosts) {
   numPosts = numPosts.numPosts;
   const searchQuery = numPosts.searchQuery;
   const tmp = closure_25();
-  const obj = { style: tmp.section, children: clientStatuses(Text, obj2) };
+  const obj = { style: tmp.section, children: closure_15(Text, obj2) };
   obj2 = { style: tmp.divider, variant: "body-xs/semibold", color: "text-muted", children: stringResult };
   Text = Text_Text.Text;
   const tmp3 = View;
@@ -95,7 +95,7 @@ function SearchSection(numPosts) {
     const obj3 = { numPosts, query: searchQuery };
     stringResult = intl.formatToPlainString(tmp4(1113).t["tBz/8b"], obj3);
   }
-  return clientStatuses(tmp3, obj);
+  return closure_15(tmp3, obj);
 }
 function ArchivedMissingReadHistoryPermission(channelName) {
   let Text;
@@ -103,11 +103,11 @@ function ArchivedMissingReadHistoryPermission(channelName) {
   let obj2;
   channelName = channelName.channelName;
   const tmp = closure_25();
-  const obj = { style: tmp.missingPermissionContainer, children: clientStatuses(Text, obj2) };
+  const obj = { style: tmp.missingPermissionContainer, children: closure_15(Text, obj2) };
   obj2 = { style: tmp.missingPermissionText, variant: "body-xs/normal", color: "text-muted", children: intl.format(intl3.t.TycmzM, { channelName }) };
   Text = Text_Text.Text;
   intl = intl3.intl;
-  return clientStatuses(View, obj);
+  return closure_15(View, obj);
 }
 function SearchMissingReadHistoryPermission(channelName) {
   let Text;
@@ -115,11 +115,11 @@ function SearchMissingReadHistoryPermission(channelName) {
   let obj2;
   channelName = channelName.channelName;
   const tmp = closure_25();
-  const obj = { style: tmp.section, children: clientStatuses(Text, obj2) };
+  const obj = { style: tmp.section, children: closure_15(Text, obj2) };
   obj2 = { style: tmp.missingPermissionText, variant: "body-xs/normal", color: "text-muted", children: intl.format(intl3.t.OWZJdS, { channelName }) };
   Text = Text_Text.Text;
   intl = intl3.intl;
-  return clientStatuses(View, obj);
+  return closure_15(View, obj);
 }
 function GameInvitesChannelHeaderGameIcon(channel) {
   let gameProfileModalChecks;
@@ -187,10 +187,10 @@ function SortAndViewOptions(channel) {
         obj.hideActionSheet(combined);
       }
     };
-    obj.openLazy(asyncRequire(14638, dependencyMap.paths), combined, obj2);
+    obj.openLazy(asyncRequire(15018, dependencyMap.paths), combined, obj2);
   }, items);
   const isMediaChannelResult = channel.isMediaChannel();
-  const Button = id(5760).Button;
+  const Button = id(5873).Button;
   const intl = id(1113).intl;
   const string = intl.string;
   const t = id(1113).t;
@@ -200,7 +200,7 @@ function SortAndViewOptions(channel) {
   } else {
     stringResult = string(t.xyYt8A);
   }
-  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(12698).ArrowsUpDownIcon, { size: "xxs" }) };
+  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(13388).ArrowsUpDownIcon, { size: "xxs" }) };
   return closure_15(Button, obj);
 }
 function TagFilter(channel) {
@@ -212,12 +212,12 @@ function TagFilter(channel) {
     onPress: function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel };
-      obj.openLazy(asyncRequire(14639, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
+      obj.openLazy(asyncRequire(15019, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
     },
     size: "sm",
-    icon: closure_15(channel(9659).TagIcon, { size: "xxs" })
+    icon: closure_15(channel(9455).TagIcon, { size: "xxs" })
   };
-  const Button = channel(5760).Button;
+  const Button = channel(5873).Button;
   intl = channel(1113).intl;
   return closure_15(Button, obj);
 }
@@ -503,7 +503,7 @@ const loading_section = "loading_section";
 let items = ["archived_section", "search_section", "missing_permission_search", "missing_permission_archived_threads", "loading_section"];
 const set = new Set(items);
 let createStyles = createStyles_mod;
-let obj = { background: obj2, headerRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8 }, headerLeftContainer: { flexDirection: "row", alignItems: "center", gap: 8 }, headerDivider: size, container: { flex: 1, alignSelf: "stretch", alignItems: "center", position: "relative" }, noHeight: { height: 0 }, fabScrim: { position: "absolute", left: 0, right: 0, bottom: 0 }, list: { flex: 1, paddingTop: 8, paddingHorizontal: 12, alignSelf: "stretch", marginBottom: 0 }, section: { alignItems: "flex-start", justifyContent: "flex-end" }, divider: obj3, missingPermissionContainer: obj4, missingPermissionText: obj5 };
+let obj = { background: obj2, headerRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8 }, headerLeftContainer: { flexDirection: "row", alignItems: "center", gap: 8 }, headerDivider: size, container: { flex: 1, alignSelf: "stretch", alignItems: "center", position: "relative" }, noHeight: { height: 0 }, list: { flex: 1, paddingTop: 8, paddingHorizontal: 12, alignSelf: "stretch", marginBottom: 0 }, section: { alignItems: "flex-start", justifyContent: "flex-end" }, divider: obj3, missingPermissionContainer: obj4, missingPermissionText: obj5 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
 size = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, width: "100%", height: 1 };
@@ -521,20 +521,17 @@ size = size_mod;
 let result = size.fileFinishedImporting("modules/forums/native/ForumChannel.tsx");
 
 export default function ForumChannel(channel) {
-  let ChatInputScrimGradient;
   let bottom;
   let bottom2;
   let closure_1;
   let constants2;
   let constants3;
   let intl;
-  let items10;
   let items6;
   let items7;
   let items8;
   let items9;
   let obj13;
-  let obj16;
   let stringResult;
   let tmp37;
   channel = channel.channel;
@@ -611,7 +608,7 @@ export default function ForumChannel(channel) {
       }
       if (!tmp8) {
         let trimmed1;
-        const changeThreadSettings = tmp2(8417).changeThreadSettings;
+        const changeThreadSettings = tmp2(8938).changeThreadSettings;
         const id = tmp.id;
         DraftActionCreatorsDefault;
         if (null != searchQuery) {
@@ -673,9 +670,8 @@ export default function ForumChannel(channel) {
   const insets = tmp7(tmp3[63])({ includeKeyboardHeight: true }).insets;
   const tmp2Result10 = tmp2(tmp3[15]);
   const clientThemesOverride = tmp2Result10.useClientThemesOverride(tmp.noHeight);
-  const tmp20 = tmp7(tmp3[64])();
-  const tmp22 = closure_14(tmp20);
-  if (tmp20 > 0) {
+  const tmp21 = tmp7(tmp3[64])() > 0;
+  if (tmp21) {
     const _Math = Math;
     bottom = Math.max(tmp22, insets.bottom);
   } else {
@@ -717,24 +713,14 @@ export default function ForumChannel(channel) {
   const obj12 = { style: tmp.container, children: closure_15(tmp37, obj13) };
   obj13 = { channel, paddingBottom: bottom2 + require("native").space.PX_16, searchQuery };
   tmp37 = ForumChannelContent;
-  if (tmp20 > 0) {
+  if (tmp21) {
     bottom2 = sum + tmp2(tmp3[66]).FAB_BUTTON_SIZE;
   } else {
     bottom2 = insets.bottom;
   }
   items6[4] = closure_15(showMemberVerificationGate, obj12);
-  let tmp34Result3 = null;
-  if (tmp20 > 0) {
-    const obj14 = { style: items10, pointerEvents: "none", children: closure_15(ChatInputScrimGradient, obj16) };
-    items10 = [tmp.fabScrim, ];
-    const obj15 = { height: tmp22 };
-    items10[1] = obj15;
-    obj16 = { inline: true, gradientHeight: require("native").space.PX_64 };
-    ChatInputScrimGradient = tmp2(tmp3[67]).ChatInputScrimGradient;
-    tmp34Result3 = tmp34(tmp26, obj14);
-  }
-  items6[5] = tmp34Result3;
-  const obj17 = { accessibilityLabel: intl.string(tmp2(tmp3[17]).t.TyAuoT), icon: require("AssetRegistry"), disabled: tmp17, positionBottom: sum, onPress: callback1, onPressDisabled: onCreatePostWithoutPermission, accessibilityHint: stringResult };
+  items6[5] = closure_15(require("VoicePanelDockScrim"), {});
+  const obj14 = { accessibilityLabel: intl.string(tmp2(tmp3[17]).t.TyAuoT), icon: require("AssetRegistry"), disabled: tmp17, positionBottom: sum, onPress: callback1, onPressDisabled: onCreatePostWithoutPermission, accessibilityHint: stringResult };
   const FloatingActionButton = tmp2(tmp3[68]).FloatingActionButton;
   intl = tmp2(tmp3[17]).intl;
   stringResult = undefined;
@@ -742,12 +728,12 @@ export default function ForumChannel(channel) {
     const intl2 = tmp2(tmp3[17]).intl;
     stringResult = intl2.string(tmp2(tmp3[17]).t.iyzwnD);
   }
-  items6[6] = closure_15(FloatingActionButton, obj17);
-  let tmp34Result4 = null;
+  items6[6] = closure_15(FloatingActionButton, obj14);
+  let tmp34Result2 = null;
   if (null != channel.guild_id) {
-    const obj18 = { channel };
-    tmp34Result4 = tmp34(tmp2(tmp3[70]).MemberActionChatInputBannerGuarded, obj18);
+    const obj15 = { channel };
+    tmp34Result2 = tmp34(tmp2(tmp3[70]).MemberActionChatInputBannerGuarded, obj15);
   }
-  items6[7] = tmp34Result4;
+  items6[7] = tmp34Result2;
   return closure_17(showMemberVerificationGate, obj4);
 };

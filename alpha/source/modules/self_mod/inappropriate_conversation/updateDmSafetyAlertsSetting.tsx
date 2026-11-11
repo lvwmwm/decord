@@ -1,10 +1,10 @@
-// Module ID: 17084
-// Function ID: 17085
+// Module ID: 17247
+// Function ID: 17248
 // Name: updateDmSafetyAlertsSetting
-// Dependencies: [4972, 1227, 2]
+// Dependencies: [5073, 1227, 2]
 // Exports: updateDmSafetyAlertsSetting
 
-// Module 17084 (updateDmSafetyAlertsSetting)
+// Module 17247 (updateDmSafetyAlertsSetting)
 import wrappers from "wrappers" /* 1227 */;
 import size from "module_2" /* 2 */;
 

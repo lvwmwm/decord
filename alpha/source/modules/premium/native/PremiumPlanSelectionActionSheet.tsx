@@ -1,10 +1,10 @@
-// Module ID: 7687
-// Function ID: 7688
+// Module ID: 9525
+// Function ID: 9526
 // Name: PremiumPlanSelectionActionSheet
-// Dependencies: [109, 5, 32, 19, 17, 7688, 2186, 7676, 7685, 1387, 1072, 1191, 5874, 1083, 21, 5142, 575, 2171, 5753, 1113, 38, 7695, 2024, 504, 15531, 7480, 5760, 5392, 6155, 10695, 7681, 5371, 7706, 8605, 10052, 8818, 7390, 7415, 5741, 10688, 7668, 5723, 10805, 1252, 5376, 7667, 1624, 6093, 10696, 6591, 7671, 5149, 10721, 10722, 10723, 10724, 10725, 10726, 1377, 2185, 5390, 11526, 5725, 5844, 8259, 15532, 1187, 10037, 10700, 10804, 2]
+// Dependencies: [109, 5, 32, 19, 17, 9526, 2186, 9236, 9523, 1387, 1072, 1191, 5987, 1083, 21, 5243, 575, 2171, 5866, 1113, 38, 9533, 2024, 504, 9544, 7190, 5873, 5505, 6268, 9546, 9519, 5484, 9244, 9247, 9645, 8493, 7852, 7871, 5854, 9618, 9647, 5836, 9648, 1252, 5489, 9650, 1624, 6206, 9548, 6704, 9545, 5250, 9634, 9635, 9636, 9637, 9638, 9639, 1377, 2185, 5503, 9652, 5838, 5957, 8048, 9655, 1187, 9344, 9556, 9656, 2]
 // Exports: default, getItemsByPremiumTypePredicate
 
-// Module 7687 (PremiumPlanSelectionActionSheet)
+// Module 9525 (PremiumPlanSelectionActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
@@ -13,29 +13,29 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import components_Button_Button from "components/Button/Button" /* 5760 */;
-import react_native from "react-native" /* 6155 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7688 */;
-import PremiumPlanActionSheetHeaderDefault from "PremiumPlanActionSheetHeader" /* 7695 */;
-import ACOMExperiments from "ACOMExperiments" /* 10037 */;
-import NativeCheckoutStoreProviderDefault from "NativeCheckoutStoreProvider" /* 10804 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10805 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import components_Button_Button from "components/Button/Button" /* 5873 */;
+import react_native from "react-native" /* 6268 */;
+import ACOMExperiments from "ACOMExperiments" /* 9344 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 9526 */;
+import PremiumPlanActionSheetHeaderDefault from "PremiumPlanActionSheetHeader" /* 9533 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 9648 */;
+import NativeCheckoutStoreProviderDefault from "NativeCheckoutStoreProvider" /* 9656 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import IAPStore from "IAPStore" /* 7676 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7685 */;
+import IAPStore from "IAPStore" /* 9236 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 9523 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants_mod from "Constants" /* 1072 */;
-import PaymentConstants from "PaymentConstants" /* 5874 */;
+import PaymentConstants from "PaymentConstants" /* 5987 */;
 import Constants_mod2 from "Constants" /* 1083 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -72,10 +72,10 @@ let obj3;
 let size;
 let tmp;
 const PremiumUtils = tmp(2171);
-const MobileWebRedirectCheckoutUtils = tmp(7668);
-const PremiumBundledPlansUtils = tmp(7671);
-const usePremiumTrialOffer = tmp(7706);
-const useIsEligibleForBogoOffer = tmp(10700);
+const usePremiumTrialOffer = tmp(9244);
+const PremiumBundledPlansUtils = tmp(9545);
+const useIsEligibleForBogoOffer = tmp(9556);
+const MobileWebRedirectCheckoutUtils = tmp(9647);
 function Header(arg0) {
   let discountOffer;
   let intl;
@@ -85,12 +85,12 @@ function Header(arg0) {
   let premiumType;
   let selectedPremiumType;
   let trialOffer;
-  const f92688 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f97272 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   ({ premiumType, isPaymentSuccess, trialOffer } = arg0);
   ({ selectedPremiumType, discountOffer } = arg0);
   const tmp = closure_38();
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f92688));
-  useNativeCheckoutStore(f92688);
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f97272));
+  useNativeCheckoutStore(f97272);
   if (null == premiumType) {
     if (!isPaymentSuccess) {
       const obj = { style: tmp.headerText, variant: "body-md/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(intl9.t.vLz3Zs) };
@@ -204,7 +204,7 @@ function PlanOption(premiumItem) {
   let trialOffer;
   let userIsEligibleForBogoPromotion;
   let v02Gmgm;
-  const f92690 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f97274 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   premiumItem = premiumItem.premiumItem;
   ({ customBadgeComponent, trialOffer, discountOffer, userIsEligibleForBogoPromotion } = premiumItem);
   ({ selectedProductId, optionNeedsProductNameLabel, discountedPriceString } = premiumItem);
@@ -220,21 +220,21 @@ function PlanOption(premiumItem) {
   const items = [IAPStore];
   const obj = premiumItem(504);
   const stateFromStores = obj.useStateFromStores(items, () => IAPStore.getProduct(premiumItem.productId));
-  const obj2 = premiumItem(15531);
+  const obj2 = premiumItem(9544);
   let checkoutPlanPriceString = obj2.useCheckoutPlanPriceString(premiumItem.productId, stateFromStores);
   const obj3 = { discountedPriceString, regularPriceString: priceString };
   priceString = undefined;
-  const useCheckoutPlanDiscountPrices = premiumItem(15531).useCheckoutPlanDiscountPrices;
+  const useCheckoutPlanDiscountPrices = premiumItem(9544).useCheckoutPlanDiscountPrices;
   const productId = premiumItem.productId;
-  premiumItem(15531);
+  premiumItem(9544);
   if (stateFromStores != null) {
     priceString = stateFromStores.priceString;
   }
   const checkoutPlanDiscountPrices = useCheckoutPlanDiscountPrices(productId, obj3);
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f92690));
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f97274));
   const premiumTier = premiumItem.premiumTier;
   let tmp12 = null != trialOffer && null != premiumTier;
-  useNativeCheckoutStore(f92690);
+  useNativeCheckoutStore(f97274);
   if (tmp12) {
     const subscriptionTrial = trialOffer.subscriptionTrial;
     let skuId;
@@ -298,7 +298,7 @@ function PlanOption(premiumItem) {
   }
   let formatRateResult = null;
   if (null != checkoutPlanDiscountPrices) {
-    const tmp4Result5 = premiumItem(7480);
+    const tmp4Result5 = premiumItem(7190);
     formatRateResult = tmp4Result5.formatRate(checkoutPlanDiscountPrices.discountedPrice, tmp27.interval, tmp27.intervalCount);
   }
   if (tmp15) {
@@ -306,7 +306,7 @@ function PlanOption(premiumItem) {
     const formatToPlainString = intl.formatToPlainString;
     const obj5 = { price: tmp4Result6.formatPrice(0, USD, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) };
     const hXcaLT = tmp4(1113).t.hXcaLT;
-    tmp4Result6 = premiumItem(7480);
+    tmp4Result6 = premiumItem(7190);
     formatToPlainStringResult = formatToPlainString(hXcaLT, obj5);
   } else {
     formatToPlainStringResult = undefined;
@@ -321,8 +321,8 @@ function PlanOption(premiumItem) {
     }
   }
   let regularPrice;
-  const formatRate = premiumItem(7480).formatRate;
-  premiumItem(7480);
+  const formatRate = premiumItem(7190).formatRate;
+  premiumItem(7190);
   if (checkoutPlanDiscountPrices != null) {
     regularPrice = checkoutPlanDiscountPrices.regularPrice;
   }
@@ -344,7 +344,7 @@ function PlanOption(premiumItem) {
     planOptionPriceContainer = tmp.planOptionPriceContainer;
   }
   const obj9 = { style: tmp.planOptionContainer, children: items3 };
-  const Text = tmp4(5753).Text;
+  const Text = tmp4(5866).Text;
   if (null != discountOffer) {
     str3 = "body-lg/medium";
   } else {
@@ -391,7 +391,7 @@ function PlanOption(premiumItem) {
   items4 = [customBadgeComponent, ];
   const obj16 = { style: tmp.priceText, variant: "body-lg/medium", color: str8, children: formatToPlainStringResult };
   str8 = str4;
-  const Text2 = tmp4(5753).Text;
+  const Text2 = tmp4(5866).Text;
   if (productId2 === selectedProductId) {
     str8 = "interactive-text-active";
   }
@@ -400,7 +400,7 @@ function PlanOption(premiumItem) {
   let tmp35Result4 = null;
   if (tmp15) {
     let str9 = str4;
-    const Text3 = tmp4(5753).Text;
+    const Text3 = tmp4(5866).Text;
     if (productId2 === selectedProductId) {
       str9 = "text-default";
     }
@@ -445,7 +445,7 @@ function PlanOption(premiumItem) {
       tmp35Result5 = null;
       if (null == selectedPremiumType) {
         let str10 = str4;
-        const Text4 = tmp4(5753).Text;
+        const Text4 = tmp4(5866).Text;
         if (productId2 === selectedProductId) {
           str10 = "text-default";
         }
@@ -469,7 +469,7 @@ function PlanOption(premiumItem) {
   items6 = [tmp35Result5, ];
   let tmp35Result6 = null != checkoutPlanDiscountPrices && null != discountOffer;
   if (tmp35Result6) {
-    const Text5 = tmp4(5753).Text;
+    const Text5 = tmp4(5866).Text;
     if (productId2 === selectedProductId) {
       str4 = "text-default";
     }
@@ -566,8 +566,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   let tmp83;
   let userIsEligibleForBogoPromotion;
   let v9hnZoK;
-  const f92692 = (premiumTier) => premiumTier.premiumTier;
-  const f92703 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
+  const f97276 = (premiumTier) => premiumTier.premiumTier;
+  const f97287 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
   ({ applicationId: require, analyticsLocation, premiumType } = premiumItems);
   premiumItems = premiumItems.premiumItems;
   const onPaymentStart = premiumItems.onPaymentStart;
@@ -741,8 +741,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   const tmp16 = premiumType(premiumItems[31])();
   const tmp17 = ref((orderRecord) => orderRecord.orderRecord);
   let closure_13 = tmp17;
-  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f92703));
-  const tmp18 = ref(f92703);
+  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f97287));
+  const tmp18 = ref(f97287);
   if (!isPatchOrderLoading) {
     isPatchOrderLoading = ref((isCreateOrderLoading) => isCreateOrderLoading.isCreateOrderLoading);
   }
@@ -1279,8 +1279,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        react = new Set(premiumItems.map(f92692)).size > 1;
-        set = new Set(premiumItems.map(f92692));
+        react = new Set(premiumItems.map(f97276)).size > 1;
+        set = new Set(premiumItems.map(f97276));
         items17[1] = tmp48(product_id, obj28);
         items15[1] = closure_36(tmp15Result13, obj25);
         tmp49Result2 = tmp49(tmp54, obj20);

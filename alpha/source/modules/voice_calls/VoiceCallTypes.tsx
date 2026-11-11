@@ -1,9 +1,9 @@
-// Module ID: 5916
-// Function ID: 5917
+// Module ID: 6029
+// Function ID: 6030
 // Name: VoiceCallTypes
 // Dependencies: [2]
 
-// Module 5916 (VoiceCallTypes)
+// Module 6029 (VoiceCallTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_calls/VoiceCallTypes.tsx");

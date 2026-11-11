@@ -1,16 +1,16 @@
-// Module ID: 4978
-// Function ID: 4979
+// Module ID: 5079
+// Function ID: 5080
 // Name: DismissibleContentFrameworkStore
-// Dependencies: [1072, 3, 4979, 4982, 1252, 504, 572, 2]
+// Dependencies: [1072, 3, 5080, 5083, 1252, 504, 572, 2]
 
-// Module 4978 (DismissibleContentFrameworkStore)
+// Module 5079 (DismissibleContentFrameworkStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4979 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4982 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 5080 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 5083 */;
 import size from "module_2" /* 2 */;
 
 let map;

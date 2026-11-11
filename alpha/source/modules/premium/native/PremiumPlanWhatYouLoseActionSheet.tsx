@@ -1,26 +1,26 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 9892
+// Function ID: 9893
 // Name: PremiumPlanWhatYouLoseActionSheet
-// Dependencies: [19, 17, 1387, 21, 5142, 575, 5844, 5753, 2171, 7390, 15571, 38, 15575, 1113, 15576, 14866, 15577, 15578, 5376, 5390, 7695, 5760, 10688, 2]
+// Dependencies: [19, 17, 1387, 21, 5243, 575, 5957, 5866, 2171, 7852, 9893, 38, 9897, 1113, 9898, 9899, 9900, 9901, 5489, 5503, 9533, 5873, 9618, 2]
 // Exports: default
 
-// Module 15570 (PremiumPlanWhatYouLoseActionSheet)
+// Module 9892 (PremiumPlanWhatYouLoseActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10688 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14866 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15575 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15576 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15577 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15578 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9618 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9897 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9898 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9899 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9900 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9901 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,10 +90,10 @@ export default function PremiumPlanWhatYouLoseActionSheet(arg0) {
     let intl7;
     let intl8;
     if (PremiumTypes.TIER_0 === premiumTypeFromSubscription) {
-      const obj2 = { imageSource: AssetRegistryDefault2, text: intl7.format(intl9.t["0hUHi6"], {}) };
+      const obj2 = { imageSource: AssetRegistryDefault, text: intl7.format(intl9.t["0hUHi6"], {}) };
       intl7 = intl9.intl;
       const items = [obj2, ];
-      const obj3 = { imageSource: AssetRegistryDefault3, text: intl8.format(intl9.t.wFWO6D, {}) };
+      const obj3 = { imageSource: AssetRegistryDefault2, text: intl8.format(intl9.t.wFWO6D, {}) };
       intl8 = intl9.intl;
       items[1] = obj3;
       return items;
@@ -101,7 +101,7 @@ export default function PremiumPlanWhatYouLoseActionSheet(arg0) {
       const obj4 = { imageSource: whatYouLoseProfileTier1Source, text: intl4.format(intl9.t.xCaYwE, {}) };
       intl4 = intl9.intl;
       const items1 = [obj4, , ];
-      const obj5 = { imageSource: AssetRegistryDefault, text: intl5.format(intl9.t.wK04T1, {}) };
+      const obj5 = { imageSource: AssetRegistryDefault3, text: intl5.format(intl9.t.wK04T1, {}) };
       intl5 = intl9.intl;
       items1[1] = obj5;
       obj6 = { imageSource: AssetRegistryDefault4, text: intl6.format(intl9.t.K4Hv69, {}) };
@@ -115,7 +115,7 @@ export default function PremiumPlanWhatYouLoseActionSheet(arg0) {
       const obj7 = { imageSource: AssetRegistryDefault4, text: intl2.format(intl9.t.wRxEDW, {}) };
       intl2 = intl9.intl;
       items2[1] = obj7;
-      const obj8 = { imageSource: AssetRegistryDefault, text: intl3.format(intl9.t["4WZ7T2"], {}) };
+      const obj8 = { imageSource: AssetRegistryDefault3, text: intl3.format(intl9.t["4WZ7T2"], {}) };
       intl3 = intl9.intl;
       items2[2] = obj8;
       return items2;

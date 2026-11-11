@@ -1,16 +1,16 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17663
+// Function ID: 17664
 // Name: QuestEmbedPreview
-// Dependencies: [19, 5085, 1385, 1072, 21, 8452, 504, 5879, 9801, 17497, 1113, 10013, 2]
+// Dependencies: [19, 5186, 1385, 1072, 21, 9093, 504, 5992, 10088, 17662, 1113, 11002, 2]
 // Exports: QuestEmbedPreview
 
-// Module 17498 (QuestEmbedPreview)
+// Module 17663 (QuestEmbedPreview)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import CodedLink from "CodedLink" /* 5879 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9801 */;
+import CodedLink from "CodedLink" /* 5992 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 10088 */;
 import react from "react" /* 19 */;
-import MessageRecord from "MessageRecord" /* 5085 */;
+import MessageRecord from "MessageRecord" /* 5186 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ export function QuestEmbedPreview(questId) {
   }, items1);
   let tmp6 = null;
   if (null != memo1) {
-    stateFromStores(17497);
+    stateFromStores(17662);
     const intl = tmp2(1113).intl;
     let obj3 = { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" };
     tmp6 = <tmp9 title={intl.string(tmp2(1113).t["habP/M"])}>{null}</tmp9>;

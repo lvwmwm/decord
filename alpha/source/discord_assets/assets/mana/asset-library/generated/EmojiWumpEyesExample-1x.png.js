@@ -1,8 +1,8 @@
-// Module ID: 14000
-// Function ID: 14001
+// Module ID: 14480
+// Function ID: 14481
 // Dependencies: [2]
 
-// Module 14000
+// Module 14480
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiWumpEyesExample-1x.png.js");

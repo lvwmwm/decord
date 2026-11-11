@@ -1,23 +1,23 @@
-// Module ID: 16774
-// Function ID: 16775
+// Module ID: 16935
+// Function ID: 16936
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11511, 21, 5142, 504, 13444, 5760, 1113, 5201, 1242, 572, 1187, 9239, 5753, 2]
+// Dependencies: [5, 32, 19, 17, 12278, 21, 5243, 504, 13958, 5873, 1113, 5314, 1242, 572, 1187, 15771, 5866, 2]
 
-// Module 16774 (components_native/ErrorBoundary)
+// Module 16935 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import native2 from "native" /* 5201 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import AppCrash from "AppCrash" /* 9239 */;
+import native2 from "native" /* 5314 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import AppCrash from "AppCrash" /* 15771 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11511 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 12278 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -125,7 +125,7 @@ function MaybeClearBuildOverride() {
           return obj(...arguments);
         }
     };
-    const Button = tmp3(5760).Button;
+    const Button = tmp3(5873).Button;
     intl = tmp3(1113).intl;
     return closure_9(Button, obj2);
   }
@@ -214,7 +214,7 @@ class ErrorBoundary extends PureComponent {
       const obj3 = { style: tmp.buttons, children: items1 };
       items1 = [React4(MaybeClearBuildOverride, {}), ];
       const obj4 = { text: intl3.string(intl4.t["4n8OJn"]), onPress: self.handleReload };
-      const Button = tmp3(5760).Button;
+      const Button = tmp3(5873).Button;
       intl3 = tmp3(1113).intl;
       items1[1] = React4(Button, obj4);
       items[1] = authStore(metroImportDefault, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 4980
-// Function ID: 4981
+// Module ID: 5081
+// Function ID: 5082
 // Name: ShopMarketingFatigueExperiment
 // Dependencies: [1449, 2]
 // Exports: getShopMarketingEnforcesFatigue
 
-// Module 4980 (ShopMarketingFatigueExperiment)
+// Module 5081 (ShopMarketingFatigueExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

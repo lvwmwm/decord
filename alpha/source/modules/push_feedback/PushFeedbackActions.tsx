@@ -1,10 +1,10 @@
-// Module ID: 10286
-// Function ID: 10287
+// Module ID: 12507
+// Function ID: 12508
 // Name: PushFeedbackActions
 // Dependencies: [572, 2]
 // Exports: handleSurveyCleanup, receivedNotification
 
-// Module 10286 (PushFeedbackActions)
+// Module 12507 (PushFeedbackActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

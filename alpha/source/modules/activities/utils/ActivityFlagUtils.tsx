@@ -1,14 +1,14 @@
-// Module ID: 11688
-// Function ID: 11689
+// Module ID: 12605
+// Function ID: 12606
 // Name: ActivityFlagUtils
-// Dependencies: [1072, 4967, 510, 1403, 7964, 2]
+// Dependencies: [1072, 5068, 510, 1403, 8403, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 11688 (ActivityFlagUtils)
+// Module 12605 (ActivityFlagUtils)
 import Storage2 from "Storage" /* 510 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import UserSettings from "UserSettings" /* 4967 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7964 */;
+import UserSettings from "UserSettings" /* 5068 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8403 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -107,16 +107,16 @@ export function computeActivityFlags(secrets, hasFlagResult, arg2, isFrameAppRes
   }
   return tmp12;
 }
-export function isContextlessEmbeddedActivity(remoteApplicationActivity) {
+export function isContextlessEmbeddedActivity(activity) {
   let num;
   const hasFlag = FlagUtils.hasFlag;
   FlagUtils;
-  if (remoteApplicationActivity != null) {
-    num = remoteApplicationActivity.flags;
+  if (activity != null) {
+    num = activity.flags;
   }
   if (num == null) {
     num = 0;
   }
-  const hasFlagResult = hasFlag(num, constants.CONTEXTLESS) && isEmbeddedActivityDefault(remoteApplicationActivity);
+  const hasFlagResult = hasFlag(num, constants.CONTEXTLESS) && isEmbeddedActivityDefault(activity);
   return hasFlagResult;
 }

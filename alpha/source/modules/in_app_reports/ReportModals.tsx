@@ -1,19 +1,19 @@
-// Module ID: 8426
-// Function ID: 8427
+// Module ID: 12002
+// Function ID: 12003
 // Name: ReportModals
-// Dependencies: [5, 4996, 5085, 1404, 1072, 8427, 8428, 8430, 5005, 5891, 2]
+// Dependencies: [5, 5097, 5186, 1404, 1072, 12003, 12004, 12006, 5106, 6004, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 8426 (ReportModals)
+// Module 12002 (ReportModals)
 import Constants from "Constants" /* 1072 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5005 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5891 */;
-import MenuTypes from "MenuTypes" /* 8427 */;
-import showReportModal2 from "showReportModal" /* 8428 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8430 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5106 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
+import MenuTypes from "MenuTypes" /* 12003 */;
+import showReportModal2 from "showReportModal" /* 12004 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 12006 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StageInstanceStore from "StageInstanceStore" /* 4996 */;
-import MessageRecord from "MessageRecord" /* 5085 */;
+import StageInstanceStore from "StageInstanceStore" /* 5097 */;
+import MessageRecord from "MessageRecord" /* 5186 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import size from "module_2" /* 2 */;
 

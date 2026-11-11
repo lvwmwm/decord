@@ -1,20 +1,20 @@
-// Module ID: 15719
-// Function ID: 15720
+// Module ID: 15278
+// Function ID: 15279
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 2184, 21, 5142, 575, 5390, 7155, 5753, 1113, 3444, 2]
+// Dependencies: [17, 2184, 21, 5243, 575, 5503, 7557, 5866, 1113, 3465, 2]
 // Exports: default
 
-// Module 15719 (PremiumGroupEducationActionSheet)
+// Module 15278 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2184 */;
-import _modDef3444 from "module_3444" /* 3444 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5390 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7155 */;
+import _modDef3465 from "module_3465" /* 3465 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5503 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7557 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -46,7 +46,7 @@ export default function PremiumGroupEducationActionSheet(aboutText) {
   const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", color: "text-overlay-light", children: aboutText }) };
   items[1] = hasOwnProperty(View, obj5);
   items1 = [metroRequire(View, obj3), ];
-  const obj6 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3444.ah1Ecm, obj7) };
+  const obj6 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3465.ah1Ecm, obj7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   obj7 = { helpCenterLink: HELP_CENTER_LINK };

@@ -1,10 +1,10 @@
-// Module ID: 7849
-// Function ID: 7850
+// Module ID: 8680
+// Function ID: 8681
 // Name: ConversationsUtils
 // Dependencies: [12, 2]
 // Exports: mapConversation
 
-// Module 7849 (ConversationsUtils)
+// Module 8680 (ConversationsUtils)
 import _mod12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

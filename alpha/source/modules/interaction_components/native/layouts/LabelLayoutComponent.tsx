@@ -1,19 +1,19 @@
-// Module ID: 19928
-// Function ID: 19929
+// Module ID: 20120
+// Function ID: 20121
 // Name: LabelLayoutComponent
-// Dependencies: [19, 17, 21, 8773, 2116, 7152, 2]
+// Dependencies: [19, 17, 21, 8591, 2116, 7554, 2]
 // Exports: default
 
-// Module 19928 (LabelLayoutComponent)
+// Module 20120 (LabelLayoutComponent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Server from "Server" /* 2116 */;
-import ComponentStateContext from "ComponentStateContext" /* 8773 */;
+import ComponentStateContext from "ComponentStateContext" /* 8591 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Input2 = tmp(7152);
+const Input2 = tmp(7554);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/interaction_components/native/layouts/LabelLayoutComponent.tsx");

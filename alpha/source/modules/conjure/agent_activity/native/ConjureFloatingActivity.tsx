@@ -1,21 +1,21 @@
-// Module ID: 12997
-// Function ID: 12998
+// Module ID: 13663
+// Function ID: 13664
 // Name: ConjureFloatingActivity
-// Dependencies: [32, 19, 17, 21, 5142, 575, 1652, 5372, 12935, 7046, 1113, 4028, 11114, 5753, 12998, 6972, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1652, 5485, 13607, 7364, 1113, 4079, 10461, 5866, 13664, 6867, 2]
 // Exports: default
 
-// Module 12997 (ConjureFloatingActivity)
+// Module 13663 (ConjureFloatingActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import _modDef4028 from "module_4028" /* 4028 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6972 */;
-import ConjureTodoListDefault from "ConjureTodoList" /* 12935 */;
+import _modDef4079 from "module_4079" /* 4079 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6867 */;
+import ConjureTodoListDefault from "ConjureTodoList" /* 13607 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set;
@@ -116,20 +116,20 @@ export default function ConjureFloatingActivity(agents) {
   }
   items4 = [tmp14, ];
   const obj7 = { style: tmp.pill, children: items6 };
-  const obj8 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef4028.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items5 };
-  const PressableOpacity = tmp2(7046).PressableOpacity;
+  const obj8 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef4079.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items5 };
+  const PressableOpacity = tmp2(7364).PressableOpacity;
   intl = tmp2(1113).intl;
   const obj9 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const MagicWandIcon = tmp2(11114).MagicWandIcon;
+  const MagicWandIcon = tmp2(10461).MagicWandIcon;
   items5 = [closure_6(MagicWandIcon, obj9), ];
-  const obj10 = { style: tmp.label, children: closure_6(sharedValue(5753).Text, { variant: "body-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
+  const obj10 = { style: tmp.label, children: closure_6(sharedValue(5866).Text, { variant: "body-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
   items5[1] = closure_6(View, obj10);
   items6 = [closure_7(PressableOpacity, obj8), ];
   let tmp18Result = null;
   if (null != todos) {
     const obj11 = { style: tmp.checklistButton, children: closure_6(ToggleIconButton, obj12) };
-    obj12 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp10, accessibilityLabel: intl2.string(_modDef4028.Qp2isI), onPress: callback };
-    ToggleIconButton = tmp2(12998).ToggleIconButton;
+    obj12 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp10, accessibilityLabel: intl2.string(_modDef4079.Qp2isI), onPress: callback };
+    ToggleIconButton = tmp2(13664).ToggleIconButton;
     intl2 = tmp2(1113).intl;
     tmp18Result = tmp18(tmp17, obj11);
   }

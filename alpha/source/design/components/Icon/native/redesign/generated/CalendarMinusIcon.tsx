@@ -1,14 +1,14 @@
-// Module ID: 19078
-// Function ID: 19079
+// Module ID: 19264
+// Function ID: 19265
 // Name: CalendarMinusIcon
-// Dependencies: [19, 21, 575, 5843, 19079, 2]
+// Dependencies: [19, 21, 575, 5956, 19265, 2]
 // Exports: CalendarMinusIcon
 
-// Module 19078 (CalendarMinusIcon)
+// Module 19264 (CalendarMinusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 19079 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 19265 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

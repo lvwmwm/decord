@@ -1,9 +1,9 @@
-// Module ID: 14264
-// Function ID: 14265
+// Module ID: 14747
+// Function ID: 14748
 // Name: LiveVoiceLevelViewNativeComponent
 // Dependencies: [65, 2]
 
-// Module 14264 (LiveVoiceLevelViewNativeComponent)
+// Module 14747 (LiveVoiceLevelViewNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

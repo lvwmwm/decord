@@ -1,14 +1,14 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8180
+// Function ID: 8181
 // Name: IdCardIcon
-// Dependencies: [19, 21, 575, 5843, 8084, 2]
+// Dependencies: [19, 21, 575, 5956, 8181, 2]
 // Exports: IdCardIcon
 
-// Module 8083 (IdCardIcon)
+// Module 8180 (IdCardIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 8084 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 8181 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

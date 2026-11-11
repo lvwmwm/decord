@@ -1,12 +1,12 @@
-// Module ID: 14008
-// Function ID: 14009
+// Module ID: 14488
+// Function ID: 14489
 // Name: useTextareaPlaceholderAndLabels
-// Dependencies: [1072, 5778, 1113, 2]
+// Dependencies: [1072, 5891, 1113, 2]
 // Exports: default
 
-// Module 14008 (useTextareaPlaceholderAndLabels)
+// Module 14488 (useTextareaPlaceholderAndLabels)
 import intl15 from "intl" /* 1113 */;
-import useChannelNameDefault from "useChannelName" /* 5778 */;
+import useChannelNameDefault from "useChannelName" /* 5891 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

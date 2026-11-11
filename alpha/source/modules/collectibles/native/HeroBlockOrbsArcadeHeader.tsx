@@ -1,28 +1,28 @@
-// Module ID: 18206
-// Function ID: 18207
+// Module ID: 18377
+// Function ID: 18378
 // Name: HeroBlockOrbsArcadeHeader
-// Dependencies: [32, 19, 17, 5143, 1072, 21, 575, 9791, 18207, 5142, 9775, 6844, 8105, 5726, 671, 5139, 504, 17344, 1500, 5768, 8953, 5844, 18208, 5717, 5753, 1113, 5760, 5371, 5149, 5201, 2]
+// Dependencies: [32, 19, 17, 5244, 1072, 21, 575, 10078, 18378, 5243, 10061, 5280, 8197, 5839, 671, 5240, 504, 17507, 1500, 5881, 9664, 5957, 18379, 5830, 5866, 1113, 5873, 5484, 5250, 5314, 2]
 // Exports: default
 
-// Module 18206 (HeroBlockOrbsArcadeHeader)
+// Module 18377 (HeroBlockOrbsArcadeHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import shared from "shared" /* 5149 */;
-import native from "native" /* 5201 */;
-import useThemeDefault from "useTheme" /* 5371 */;
-import useToken from "useToken" /* 5726 */;
-import QuestContent from "QuestContent" /* 6844 */;
-import inlineStyles from "inlineStyles" /* 8105 */;
-import QuestUtils from "QuestUtils" /* 9775 */;
-import _modDef18207 from "module_18207" /* 18207 */;
+import shared from "shared" /* 5250 */;
+import QuestContent from "QuestContent" /* 5280 */;
+import native from "native" /* 5314 */;
+import useThemeDefault from "useTheme" /* 5484 */;
+import useToken from "useToken" /* 5839 */;
+import inlineStyles from "inlineStyles" /* 8197 */;
+import QuestUtils from "QuestUtils" /* 10061 */;
+import _modDef18378 from "module_18378" /* 18378 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import AssetUtils from "AssetUtils" /* 9791 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import AssetUtils from "AssetUtils" /* 10078 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ let obj5;
 let obj6;
 let tmp4;
 let unpackModuleId;
-const Text_Text = tmp4(5753);
+const Text_Text = tmp4(5866);
 function handleTakeMeHere() {
   const obj = QuestUtils;
   const obj2 = { mergeExistingRoutes: true, fromContent: QuestContent.QuestContent.ORBS_SHOP_HERO_CTA };
@@ -103,7 +103,7 @@ function RadialGradientLayer(color) {
       items1 = [React4(Defs, obj4), ];
       const size2 = { width: "100%", height: "100%", fill: "url(#" + id + ")" };
       const _HermesInternal3 = HermesInternal;
-      const Rect = tmp11(8105).Rect;
+      const Rect = tmp11(8197).Rect;
       items1[1] = React4(Rect, size2);
       tmp6Result = tmp6(tmp9, size1);
     }
@@ -217,7 +217,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
         preventsDisplaySleepDuringVideoPlayback: false,
         importantForAccessibility: "no-hide-descendants"
       };
-      obj9 = { uri: require("module_18207") };
+      obj9 = { uri: require("module_18378") };
       const VideoComponent = tmp2(tmp3[20]).VideoComponent;
       tmp28 = !isInView;
       if (isInView) {
@@ -277,7 +277,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
     return closure_10(fontScale, obj5);
   }
   const obj21 = { source: obj22, style: tmp.image, accessible: false };
-  obj22 = { uri: require("module_18208") };
+  obj22 = { uri: require("module_18379") };
   const tmp4Result = require("FastImage");
   tmp26Result = tmp26(tmp4Result, obj21);
 }
@@ -288,7 +288,7 @@ let react = react_mod;
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
 let c12 = 289;
 const PX_16 = nativeDefault.space.PX_16;
-const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef18207);
+const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef18378);
 const PX_48 = nativeDefault.space.PX_48;
 const ellipse = { cx: 85.5, cy: 267.5, rx: 329, ry: 217, rotation: 63 };
 const ellipse2 = { cx: 67, cy: 231, rx: 185, ry: 155 };

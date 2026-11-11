@@ -1,17 +1,17 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14487
+// Function ID: 14488
 // Name: SlowModeIndicator
-// Dependencies: [19, 7910, 21, 5142, 575, 504, 7911, 5839, 11809, 7046, 5753, 2]
+// Dependencies: [19, 8726, 21, 5243, 575, 504, 8727, 5952, 12465, 7364, 5866, 2]
 
-// Module 14007 (SlowModeIndicator)
+// Module 14487 (SlowModeIndicator)
 import nativeDefault from "native" /* 575 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7911 */;
-import TimerIcon from "TimerIcon" /* 11809 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 8727 */;
+import TimerIcon from "TimerIcon" /* 12465 */;
 import react from "react" /* 19 */;
-import SlowmodeStore from "SlowmodeStore" /* 7910 */;
+import SlowmodeStore from "SlowmodeStore" /* 8726 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

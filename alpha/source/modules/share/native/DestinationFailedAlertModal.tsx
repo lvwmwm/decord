@@ -1,28 +1,28 @@
-// Module ID: 13667
-// Function ID: 13668
+// Module ID: 15083
+// Function ID: 15084
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 4991, 5013, 5892, 5084, 1385, 1083, 21, 5142, 575, 5778, 10927, 1187, 5753, 504, 5196, 13668, 6098, 6098, 1113, 2]
+// Dependencies: [19, 17, 5092, 5114, 6005, 5185, 1385, 1083, 21, 5243, 575, 5891, 10828, 1187, 5866, 504, 5309, 15063, 6211, 6211, 1113, 2]
 // Exports: default
 
-// Module 13667 (DestinationFailedAlertModal)
+// Module 15083 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5196 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import useChannelNameDefault from "useChannelName" /* 5778 */;
-import AlertModal2 from "AlertModal" /* 6098 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10927 */;
+import UserUtilsDefault from "UserUtils" /* 5309 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import useChannelNameDefault from "useChannelName" /* 5891 */;
+import AlertModal2 from "AlertModal" /* 6211 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10828 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import PresenceStore from "PresenceStore" /* 5892 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import PresenceStore from "PresenceStore" /* 6005 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -71,7 +71,7 @@ function FailedUserRow(user) {
     }
     items2 = [closure_10(Avatar, obj4), ];
     const obj5 = { style: tmp.label, variant: "body-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores };
-    const Text = tmp2(5753).Text;
+    const Text = tmp2(5866).Text;
     if (stateFromStores == null) {
       const obj6 = UserUtilsDefault;
       stateFromStores = obj6.getName(user);
@@ -96,12 +96,12 @@ function FailedChannelRow(channel) {
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(13668).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(15063).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(13668).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(15063).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "body-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
-  items1[1] = closure_10(channel(5753).Text, obj4);
+  items1[1] = closure_10(channel(5866).Text, obj4);
   return closure_11(View, obj2);
 }
 function FailedDestinationRow(destination) {
@@ -182,17 +182,17 @@ export default function DestinationFailedAlertModal(arg0) {
   if (null != onRetry) {
     const obj3 = { children: items };
     const obj4 = { variant: "primary", onPress: onRetry, text: intl2.string(intl4.t["5911Lb"]) };
-    const AlertActionButton2 = tmp3(6098).AlertActionButton;
+    const AlertActionButton2 = tmp3(6211).AlertActionButton;
     intl2 = tmp3(1113).intl;
     items = [authStore(AlertActionButton2, obj4, "confirm"), ];
     const obj5 = { variant: "secondary", text: intl3.string(intl4.t.WAI6xu) };
-    const AlertActionButton3 = tmp3(6098).AlertActionButton;
+    const AlertActionButton3 = tmp3(6211).AlertActionButton;
     intl3 = tmp3(1113).intl;
     items[1] = authStore(AlertActionButton3, obj5, "cancel");
     tmp2Result = unpackModuleId(authStore2, obj3);
   } else {
     const obj6 = { variant: "primary", text: intl.string(intl4.t.BddRzS) };
-    const AlertActionButton = tmp3(6098).AlertActionButton;
+    const AlertActionButton = tmp3(6211).AlertActionButton;
     intl = tmp3(1113).intl;
     tmp2Result = tmp2(AlertActionButton, obj6, "confirm");
   }

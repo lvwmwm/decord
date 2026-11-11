@@ -1,37 +1,37 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 16810
+// Function ID: 16811
 // Name: crossPlatformRPCCommands
-// Dependencies: [16650, 16654, 16656, 16657, 16658, 16659, 16660, 16661, 16663, 16672, 16673, 16674, 16675, 16676, 16677, 16678, 16685, 16687, 16690, 16691, 16692, 16693, 16694, 16695, 16696, 16697, 16698, 16699, 2]
+// Dependencies: [16811, 16815, 16817, 16818, 16819, 16820, 16821, 16822, 16824, 16833, 16834, 16835, 16836, 16837, 16838, 16839, 16846, 16848, 16851, 16852, 16853, 16854, 16855, 16856, 16857, 16858, 16859, 16860, 2]
 
-// Module 16649 (crossPlatformRPCCommands)
-import applicationDefault from "application" /* 16650 */;
-import certifiedDevicesDefault from "certifiedDevices" /* 16654 */;
-import channelsDefault from "channels" /* 16656 */;
-import commands_configDefault from "commands/config" /* 16657 */;
-import contextDefault from "context" /* 16658 */;
-import guildsDefault from "guilds" /* 16659 */;
-import imagesDefault from "images" /* 16660 */;
-import invitesDefault from "invites" /* 16661 */;
-import linksDefault from "links" /* 16663 */;
-import logsDefault from "logs" /* 16672 */;
-import networkingDefault from "networking" /* 16673 */;
-import providersDefault from "providers" /* 16674 */;
-import relationshipsDefault from "relationships" /* 16675 */;
-import setActivityDefault from "setActivity" /* 16676 */;
-import setOrientationLockStateDefault from "setOrientationLockState" /* 16677 */;
-import merged15Default from "merged15" /* 16678 */;
-import subscriptionsDefault from "subscriptions" /* 16685 */;
-import commands_userProfileDefault from "commands/userProfile" /* 16687 */;
-import usersDefault from "users" /* 16690 */;
-import userSettingsDefault from "userSettings" /* 16691 */;
-import platformBehaviorsDefault from "platformBehaviors" /* 16692 */;
-import soundboardDefault from "soundboard" /* 16693 */;
-import commands_conjureDevicePermissionsDefault from "commands/conjureDevicePermissions" /* 16694 */;
-import conjureLivePreviewDefault from "conjureLivePreview" /* 16695 */;
-import conjureVoiceDefault from "conjureVoice" /* 16696 */;
-import activitiesDefault from "activities" /* 16697 */;
-import questsDefault from "quests" /* 16698 */;
-import voiceChannelChatDefault from "voiceChannelChat" /* 16699 */;
+// Module 16810 (crossPlatformRPCCommands)
+import applicationDefault from "application" /* 16811 */;
+import certifiedDevicesDefault from "certifiedDevices" /* 16815 */;
+import channelsDefault from "channels" /* 16817 */;
+import commands_configDefault from "commands/config" /* 16818 */;
+import contextDefault from "context" /* 16819 */;
+import guildsDefault from "guilds" /* 16820 */;
+import imagesDefault from "images" /* 16821 */;
+import invitesDefault from "invites" /* 16822 */;
+import linksDefault from "links" /* 16824 */;
+import logsDefault from "logs" /* 16833 */;
+import networkingDefault from "networking" /* 16834 */;
+import providersDefault from "providers" /* 16835 */;
+import relationshipsDefault from "relationships" /* 16836 */;
+import setActivityDefault from "setActivity" /* 16837 */;
+import setOrientationLockStateDefault from "setOrientationLockState" /* 16838 */;
+import merged15Default from "merged15" /* 16839 */;
+import subscriptionsDefault from "subscriptions" /* 16846 */;
+import commands_userProfileDefault from "commands/userProfile" /* 16848 */;
+import usersDefault from "users" /* 16851 */;
+import userSettingsDefault from "userSettings" /* 16852 */;
+import platformBehaviorsDefault from "platformBehaviors" /* 16853 */;
+import soundboardDefault from "soundboard" /* 16854 */;
+import commands_conjureDevicePermissionsDefault from "commands/conjureDevicePermissions" /* 16855 */;
+import conjureLivePreviewDefault from "conjureLivePreview" /* 16856 */;
+import conjureVoiceDefault from "conjureVoice" /* 16857 */;
+import activitiesDefault from "activities" /* 16858 */;
+import questsDefault from "quests" /* 16859 */;
+import voiceChannelChatDefault from "voiceChannelChat" /* 16860 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

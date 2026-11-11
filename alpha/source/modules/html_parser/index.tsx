@@ -1,14 +1,14 @@
-// Module ID: 9491
-// Function ID: 9492
+// Module ID: 10283
+// Function ID: 10284
 // Name: DEFAULT_MAX_HTML_LENGTH
-// Dependencies: [9492, 9493, 9517, 9518, 2]
+// Dependencies: [10284, 10285, 10309, 10310, 2]
 // Exports: parseHTMLFromText
 
-// Module 9491 (DEFAULT_MAX_HTML_LENGTH)
-import _mod9493 from "module_9493" /* 9493 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9517 */;
-import HTMLParserLinkUtils from "HTMLParserLinkUtils" /* 9518 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 9492 */;
+// Module 10283 (DEFAULT_MAX_HTML_LENGTH)
+import _mod10285 from "module_10285" /* 10285 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 10309 */;
+import HTMLParserLinkUtils from "HTMLParserLinkUtils" /* 10310 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 10284 */;
 import size from "module_2" /* 2 */;
 
 let c1, constants, map, regex;
@@ -355,7 +355,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
     keepInvalidAnchors = keepInvalidAnchors.keepInvalidAnchors;
   }
   const tmp2 = obj;
-  const Parser = obj(9493).Parser;
+  const Parser = obj(10285).Parser;
   class tmp4 extends Parser {
     onclosetag(arg0, arg1) {
       const markup = obj.markup;
@@ -523,7 +523,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
                     };
                     const self5 = this;
                     const self6 = this;
-                    const parser = new _mod9493.Parser(obj, { decodeEntities: true, recognizeSelfClosing: true });
+                    const parser = new _mod10285.Parser(obj, { decodeEntities: true, recognizeSelfClosing: true });
                     parser.end(markup);
                     map1 = map;
                   } else {
@@ -640,7 +640,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
     };
     let self = this;
     let self2 = this;
-    let parser = new tmp2(9493).Parser(obj3, { decodeEntities: true });
+    let parser = new tmp2(10285).Parser(obj3, { decodeEntities: true });
     let str2 = "&lt;";
     parser.end(str.replace(/</g, "&lt;"));
   }
@@ -662,7 +662,7 @@ const DEFAULT_MAX_HTML_LENGTH = HTMLParserConstants.DEFAULT_MAX_HTML_LENGTH;
 let result = size.fileFinishedImporting("modules/html_parser/index.tsx");
 
 export { DEFAULT_MAX_HTML_LENGTH };
-export function parseHTMLFromText(arr, arg1) {
+export function parseHTMLFromText(description, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -675,17 +675,17 @@ export function parseHTMLFromText(arr, arg1) {
   if (flag === undefined) {
     flag = false;
   }
-  const hasItem = arr.includes("<") || arr.includes("&");
+  const hasItem = description.includes("<") || description.includes("&");
   if (flag) {
     let items1;
     const _Math3 = Math;
     const _Math4 = Math;
     const bound = Math.max(0, Math.floor(maxLength));
     let diff = bound;
-    if (metroRequire.test(arr.charAt(bound - 1))) {
+    if (metroRequire.test(description.charAt(bound - 1))) {
       diff = bound - 1;
     }
-    const str7 = arr.slice(0, diff);
+    const str7 = description.slice(0, diff);
     let str9 = str7;
     if (str7.includes("\r")) {
       str9 = str7.replace(/\r\n?/g, "\n");
@@ -722,20 +722,20 @@ export function parseHTMLFromText(arr, arg1) {
       const bound1 = Math.max(0, Math.floor(maxLength));
       let diff1 = bound1;
       const tmp14 = parseMarkupRuns;
-      if (metroRequire.test(arr.charAt(bound1 - 1))) {
+      if (metroRequire.test(description.charAt(bound1 - 1))) {
         diff1 = bound1 - 1;
       }
-      const str4 = arr.slice(0, diff1);
+      const str4 = description.slice(0, diff1);
       let replaced1 = str4;
       if (str4.includes("\r")) {
         replaced1 = str4.replace(/\r\n?/g, "\n");
       }
       addTextLinksResult = addTextLinks(tmp14(replaced1), false);
     } else {
-      let replaced2 = arr;
+      let replaced2 = description;
       const tmp2 = collapseBlankLines;
-      if (arr.includes("\r")) {
-        replaced2 = arr.replace(/\r\n?/g, "\n");
+      if (description.includes("\r")) {
+        replaced2 = description.replace(/\r\n?/g, "\n");
       }
       const tmp2Result = tmp2(replaced2, 0);
       const tmp5 = findTextStart(tmp2Result);

@@ -1,16 +1,16 @@
-// Module ID: 14358
-// Function ID: 14359
+// Module ID: 10650
+// Function ID: 10651
 // Name: GuildPowerupRollbackSheet
-// Dependencies: [21, 10965, 5760, 2]
+// Dependencies: [21, 10651, 5873, 2]
 // Exports: default
 
-// Module 14358 (GuildPowerupRollbackSheet)
+// Module 10650 (GuildPowerupRollbackSheet)
 import Fragment from "Fragment" /* 21 */;
-import PromoSheet2 from "PromoSheet" /* 10965 */;
+import PromoSheet2 from "PromoSheet" /* 10651 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const components_Button_Button = tmp2(5760);
+const components_Button_Button = tmp2(5873);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupRollbackSheet.tsx");
 

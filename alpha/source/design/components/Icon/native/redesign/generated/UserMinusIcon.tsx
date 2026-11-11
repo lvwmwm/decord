@@ -1,14 +1,14 @@
-// Module ID: 5851
-// Function ID: 5852
+// Module ID: 5964
+// Function ID: 5965
 // Name: UserMinusIcon
-// Dependencies: [19, 21, 575, 5843, 5852, 2]
+// Dependencies: [19, 21, 575, 5956, 5965, 2]
 // Exports: UserMinusIcon
 
-// Module 5851 (UserMinusIcon)
+// Module 5964 (UserMinusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 5852 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 5965 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

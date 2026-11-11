@@ -1,10 +1,10 @@
-// Module ID: 20144
-// Function ID: 20145
+// Module ID: 20339
+// Function ID: 20340
 // Name: AuditLogRecord
 // Dependencies: [1405, 1072, 1242, 2166, 11, 2]
 // Exports: AuditLogChange
 
-// Module 20144 (AuditLogRecord)
+// Module 20339 (AuditLogRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import _modDef2166 from "module_2166" /* 2166 */;

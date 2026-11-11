@@ -1,28 +1,28 @@
-// Module ID: 19439
-// Function ID: 19440
+// Module ID: 19629
+// Function ID: 19630
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1074, 5391, 4988, 21, 5142, 575, 1493, 5394, 1627, 1652, 5844, 19440, 5753, 7798, 7415, 5390, 19441, 1113, 14565, 14553, 19442, 5760, 2]
+// Dependencies: [19, 17, 1074, 5504, 5089, 21, 5243, 575, 1493, 5507, 1627, 1652, 5957, 19630, 5866, 8418, 7871, 5503, 19631, 1113, 14939, 14927, 19632, 5873, 2]
 // Exports: default
 
-// Module 19439 (CollectiblesMobileAnnouncementActionSheet)
+// Module 19629 (CollectiblesMobileAnnouncementActionSheet)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5391 */;
-import BottomSheetModal from "BottomSheetModal" /* 5394 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7798 */;
-import _modDef19440 from "module_19440" /* 19440 */;
-import _modDef19441 from "module_19441" /* 19441 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
+import BottomSheetModal from "BottomSheetModal" /* 5507 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8418 */;
+import _modDef19630 from "module_19630" /* 19630 */;
+import _modDef19631 from "module_19631" /* 19631 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, obj1;
@@ -85,7 +85,7 @@ function CatEarsBackdrop() {
   items3[1] = rect;
   const View = tmp2(1652).View;
   obj5 = { source: obj6, style: tmp.mascotImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj6 = { uri: _modDef19440 };
+  obj6 = { uri: _modDef19630 };
   tmp2Result = FastImageDefault;
   return metroImportAll(View, obj3);
 }
@@ -166,28 +166,28 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   const memo = react.useMemo(() => closure_1_8(CatEarsBackdrop, {}), []);
   let obj = { onDismiss: callback1, backdropChildren: memo, children: closure_9(closure_4, obj2) };
   obj2 = { style: tmp.container, children: items3 };
-  const BottomSheet = markAsDismissed(5390).BottomSheet;
+  const BottomSheet = markAsDismissed(5503).BottomSheet;
   const obj3 = { source: obj4, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj4 = { uri: _modDef19441 };
+  obj4 = { uri: _modDef19631 };
   const tmp7 = FastImageDefault;
   items3 = [closure_8(tmp7, obj3), , , ];
   const obj5 = { variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", style: tmp.headerText, children: intl.string(markAsDismissed(1113).t.vRCvqo) };
-  const Text = markAsDismissed(5753).Text;
+  const Text = markAsDismissed(5866).Text;
   intl = markAsDismissed(1113).intl;
   items3[1] = closure_8(Text, obj5);
   const obj6 = { style: tmp.featureRows, children: items4 };
-  const obj7 = { icon: closure_8(markAsDismissed(14565).PaintIllocon, { size: 32 }), text: intl2.string(markAsDismissed(1113).t["6ZWB0C"]) };
+  const obj7 = { icon: closure_8(markAsDismissed(14939).PaintIllocon, { size: 32 }), text: intl2.string(markAsDismissed(1113).t["6ZWB0C"]) };
   intl2 = markAsDismissed(1113).intl;
   items4 = [closure_8(FeatureRow, obj7), , ];
-  const obj8 = { icon: closure_8(markAsDismissed(14553).HeartIllocon, { size: 32 }), text: intl3.string(markAsDismissed(1113).t.MkVbBY) };
+  const obj8 = { icon: closure_8(markAsDismissed(14927).HeartIllocon, { size: 32 }), text: intl3.string(markAsDismissed(1113).t.MkVbBY) };
   intl3 = markAsDismissed(1113).intl;
   items4[1] = closure_8(FeatureRow, obj8);
-  const obj9 = { icon: closure_8(markAsDismissed(19442).ShopIllocon, { size: 32 }), text: intl4.string(markAsDismissed(1113).t["/4bQuG"]) };
+  const obj9 = { icon: closure_8(markAsDismissed(19632).ShopIllocon, { size: 32 }), text: intl4.string(markAsDismissed(1113).t["/4bQuG"]) };
   intl4 = markAsDismissed(1113).intl;
   items4[2] = closure_8(FeatureRow, obj9);
   items3[2] = closure_9(closure_4, obj6);
   const obj10 = { size: "lg", text: intl5.string(markAsDismissed(1113).t.S9hXPI), onPress: callback };
-  const Button = markAsDismissed(5760).Button;
+  const Button = markAsDismissed(5873).Button;
   intl5 = markAsDismissed(1113).intl;
   items3[3] = closure_8(Button, obj10);
   return closure_8(BottomSheet, obj);

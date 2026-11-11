@@ -1,9 +1,9 @@
-// Module ID: 7019
-// Function ID: 7020
+// Module ID: 7408
+// Function ID: 7409
 // Name: KeyboardAwareView
-// Dependencies: [32, 19, 17, 1495, 21, 2020, 5327, 1625, 5738, 7020, 1652, 2]
+// Dependencies: [32, 19, 17, 1495, 21, 2020, 5440, 1625, 5851, 7409, 1652, 2]
 
-// Module 7019 (KeyboardAwareView)
+// Module 7408 (KeyboardAwareView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -40,11 +40,11 @@ const memoResult = react.memo(function KeyboardAwareView(keyboardHeightOffset) {
   const obj2 = num(2020);
   let systemKeyboardHeight = obj2.getSystemKeyboardHeight();
   if (0 === systemKeyboardHeight) {
-    const tmpResult = tmp(5327);
+    const tmpResult = tmp(5440);
     let keyboardType = tmpResult.getKeyboardType();
     let num2 = 0;
     if (keyboardType !== tmp(1625).KeyboardTypes.SYSTEM) {
-      const tmpResult3 = tmp(5738);
+      const tmpResult3 = tmp(5851);
       num2 = tmpResult3.getCustomKeyboardHeight();
     }
     systemKeyboardHeight = num2;
@@ -73,7 +73,7 @@ const memoResult = react.memo(function KeyboardAwareView(keyboardHeightOffset) {
       closure_1_2(maxResult);
     }
   }), items);
-  const tmp10 = ref(7020)(first, animated);
+  const tmp10 = ref(7409)(first, animated);
   const flattenResult = StyleSheet.flatten(style);
   let marginBottom;
   const tmp9 = ref;

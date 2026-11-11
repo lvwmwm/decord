@@ -1,27 +1,27 @@
-// Module ID: 18951
-// Function ID: 18952
+// Module ID: 19138
+// Function ID: 19139
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 4991, 5054, 5013, 1072, 21, 18907, 575, 9599, 7023, 1187, 5768, 504, 6574, 9376, 6175, 5753, 5778, 18952, 1113, 8729, 18950, 7046, 6918, 9852, 2]
+// Dependencies: [19, 17, 5092, 5155, 5114, 1072, 21, 19097, 575, 9437, 7654, 1187, 5881, 504, 6687, 10000, 6288, 5866, 5891, 19139, 1113, 8013, 19137, 7364, 6971, 7356, 2]
 // Exports: default
 
-// Module 18951 (ICYMICardInCard)
+// Module 19138 (ICYMICardInCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import GuildIcon from "GuildIcon" /* 7023 */;
-import TextIcon2 from "TextIcon" /* 8729 */;
-import ClipView from "ClipView" /* 9599 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 18950 */;
-import getIconForChannel from "getIconForChannel" /* 18952 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import GuildIcon from "GuildIcon" /* 7654 */;
+import TextIcon2 from "TextIcon" /* 8013 */;
+import ClipView from "ClipView" /* 9437 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 19137 */;
+import getIconForChannel from "getIconForChannel" /* 19139 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18907 */;
+import createICYMIStyles from "createICYMIStyles" /* 19097 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

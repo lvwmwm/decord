@@ -1,15 +1,15 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 13934
+// Function ID: 13935
 // Name: ConjureDebugGit
-// Dependencies: [32, 19, 10985, 13266, 504, 11027, 572, 2]
+// Dependencies: [32, 19, 7302, 13914, 504, 7322, 572, 2]
 // Exports: gitInfoRows, gitInfoStatus, restartAgentStatusLine, useConjureDebugGitInfo, useConjureRestartAgent
 
-// Module 13286 (ConjureDebugGit)
-import conjureDebugConnection from "conjureDebugConnection" /* 11027 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 13266 */;
+// Module 13934 (ConjureDebugGit)
+import conjureDebugConnection from "conjureDebugConnection" /* 7322 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 13914 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10985 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 7302 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -270,7 +270,7 @@ export function gitInfoRows(info) {
           const tmp36 = require;
           if (objects.garbage > 0) {
             const _HermesInternal7 = HermesInternal;
-            const tmp36Result = tmp36(13266);
+            const tmp36Result = tmp36(13914);
             combined1 = "" + tmp36Result.formatCount(objects.garbage) + " garbage files";
           }
           push5(obj14);

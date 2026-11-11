@@ -1,19 +1,19 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 13229
+// Function ID: 13230
 // Name: showConjureShareToServerSheet
-// Dependencies: [5, 19, 17, 6902, 21, 5142, 575, 504, 12297, 1113, 4028, 5376, 5839, 7429, 7385, 7127, 7130, 12411, 12409, 5753, 5760, 2]
+// Dependencies: [5, 19, 17, 6954, 21, 5243, 575, 504, 13096, 1113, 4079, 5489, 5952, 7885, 7847, 7679, 7681, 13218, 13216, 5866, 5873, 2]
 // Exports: default
 
-// Module 12422 (showConjureShareToServerSheet)
+// Module 13229 (showConjureShareToServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5376 */;
-import TableRadioRow from "TableRadioRow" /* 7130 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5489 */;
+import TableRadioRow from "TableRadioRow" /* 7681 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, closure_2, dependencyMap;
@@ -153,13 +153,13 @@ function ShareToServerSheet(projectId) {
   if (str == null) {
     str = "";
   }
-  const tmp6 = str(12297)(projectId, guildId, publishOptions);
+  const tmp6 = str(13096)(projectId, guildId, publishOptions);
   dependencyMap = tmp6;
   ({ guilds, guild } = tmp6);
   sharing = tmp6.sharing;
   const error = tmp6.error;
   let intl = tmp2(1113).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(str(4028).N3Ryqz, { app: str });
+  const formatToPlainStringResult = intl.formatToPlainString(str(4079).N3Ryqz, { app: str });
   closure_5 = sharing.useRef(false);
   const effect = sharing.useEffect(() => {
     closure_5.current = false;
@@ -167,8 +167,8 @@ function ShareToServerSheet(projectId) {
       closure_1_5.current = true;
     };
   }, []);
-  let obj2 = { header: closure_7(tmp2(7385).BottomSheetTitleHeader, { title: formatToPlainStringResult }), children: tmp10(tmp11, obj3) };
-  const ActionSheet = tmp2(7429).ActionSheet;
+  let obj2 = { header: closure_7(tmp2(7847).BottomSheetTitleHeader, { title: formatToPlainStringResult }), children: tmp10(tmp11, obj3) };
+  const ActionSheet = tmp2(7885).ActionSheet;
   obj3 = { style: tmp.content, children: items2 };
   let tmp9Result = null;
   tmp10 = closure_8;
@@ -177,7 +177,7 @@ function ShareToServerSheet(projectId) {
     tmp9Result = null;
     if (guilds.length > 1) {
       let obj4 = {
-        title: intl2.string(tmp5(4028).Uq5hU9),
+        title: intl2.string(tmp5(4079).Uq5hU9),
         hasIcons: false,
         value: guild.id,
         onChange: tmp6.pickGuild,
@@ -186,32 +186,32 @@ function ShareToServerSheet(projectId) {
               return metroImportDefault(TableRadioRow.TableRadioRow, obj, id.id);
             })
       };
-      const TableRadioGroup = tmp2(7127).TableRadioGroup;
+      const TableRadioGroup = tmp2(7679).TableRadioGroup;
       intl2 = tmp2(1113).intl;
       tmp9Result = tmp9(TableRadioGroup, obj4);
     }
   }
   items2 = [tmp9Result, , , , ];
   let obj5 = { rows: tmp2Result.conjureShareRows(stateFromStores) };
-  const tmp5Result = str(12411);
-  tmp2Result = projectId(12409);
+  const tmp5Result = str(13218);
+  tmp2Result = projectId(13216);
   items2[1] = closure_7(tmp5Result, obj5);
   let tmp9Result2 = null;
   if (null != error) {
     let obj6 = { variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp9Result2 = tmp9(tmp2(5753).Text, obj6);
+    tmp9Result2 = tmp9(tmp2(5866).Text, obj6);
   }
   items2[2] = tmp9Result2;
   let obj7 = {
     variant: "primary",
-    text: intl3.string(tmp5(4028)["+ysSG7"]),
+    text: intl3.string(tmp5(4079)["+ysSG7"]),
     loading: sharing,
     disabled: null == guild,
     onPress: function confirm() {
       return obj(...arguments);
     }
   };
-  const Button = tmp2(5760).Button;
+  const Button = tmp2(5873).Button;
   intl3 = tmp2(1113).intl;
   items2[3] = closure_7(Button, obj7);
   let obj8 = {
@@ -223,7 +223,7 @@ function ShareToServerSheet(projectId) {
       return obj.hideActionSheet(ConjureShareToServerSheet);
     }
   };
-  const Button2 = tmp2(5760).Button;
+  const Button2 = tmp2(5873).Button;
   intl4 = tmp2(1113).intl;
   items2[4] = closure_7(Button2, obj8);
   return closure_7(ActionSheet, obj2);

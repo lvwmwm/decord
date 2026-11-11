@@ -1,22 +1,22 @@
-// Module ID: 11319
-// Function ID: 11320
+// Module ID: 11874
+// Function ID: 11875
 // Name: ForLaterIntro
-// Dependencies: [17, 5391, 21, 5142, 575, 10317, 11320, 11324, 5753, 1113, 5844, 11328, 11302, 5866, 7441, 2]
+// Dependencies: [17, 5504, 21, 5243, 575, 11845, 11875, 11879, 5866, 1113, 5957, 11883, 11857, 5979, 7897, 2]
 // Exports: default
 
-// Module 11319 (ForLaterIntro)
+// Module 11874 (ForLaterIntro)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5391 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import ClockIcon from "ClockIcon" /* 5866 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 10317 */;
-import BookmarkIcon from "BookmarkIcon" /* 11302 */;
-import _modDef11328 from "module_11328" /* 11328 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import ClockIcon from "ClockIcon" /* 5979 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 11845 */;
+import BookmarkIcon from "BookmarkIcon" /* 11857 */;
+import _modDef11883 from "module_11883" /* 11883 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -35,7 +35,7 @@ let obj9;
 let size;
 let size1;
 let tmp8;
-const ChevronSmallRightIcon2 = tmp8(7441);
+const ChevronSmallRightIcon2 = tmp8(7897);
 function IntroDemo(isReminder) {
   let intl;
   let intl2;
@@ -53,7 +53,7 @@ function IntroDemo(isReminder) {
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items2 };
   const obj2 = { style: tmp.messages, children: items };
   const obj3 = { source: obj4, style: tmp.avatar };
-  obj4 = { uri: _modDef11328 };
+  obj4 = { uri: _modDef11883 };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj3), ];
   const obj5 = { style: tmp.messageLines, children: items1 };
@@ -158,9 +158,9 @@ export default function ForLaterIntro(type) {
   const tmp = closure_7();
   const tmp4 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   if (tmp4) {
-    BookmarksSpotIllustration = tmp2(11320).ReminderWatchSpotIllustration;
+    BookmarksSpotIllustration = tmp2(11875).ReminderWatchSpotIllustration;
   } else {
-    BookmarksSpotIllustration = tmp2(11324).BookmarksSpotIllustration;
+    BookmarksSpotIllustration = tmp2(11879).BookmarksSpotIllustration;
   }
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroRequire(React3, obj2) };
   obj2 = { style: tmp.container, children: items };
@@ -169,13 +169,13 @@ export default function ForLaterIntro(type) {
   items[0] = hasOwnProperty(React3, obj3);
   const obj4 = { style: tmp.textContainer, children: items1 };
   const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: string(tmp4 ? t["5Iw19e"] : t["93WOd1"]) };
-  const Heading = tmp2(5753).Heading;
+  const Heading = tmp2(5866).Heading;
   const intl = tmp2(1113).intl;
   string = intl.string;
   t = tmp2(1113).t;
   items1 = [hasOwnProperty(Heading, obj5), ];
   const obj6 = { variant: "body-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: format(tmp9, obj7) };
-  const Text = tmp2(5753).Text;
+  const Text = tmp2(5866).Text;
   const intl2 = tmp2(1113).intl;
   format = intl2.format;
   const t2 = tmp2(1113).t;

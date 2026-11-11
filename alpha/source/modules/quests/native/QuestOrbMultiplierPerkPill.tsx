@@ -1,24 +1,24 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17654
+// Function ID: 17655
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1072, 21, 5142, 575, 5371, 5164, 5726, 5139, 9778, 9799, 1113, 9618, 5753, 7046, 17490, 5717, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 5484, 5265, 5839, 5240, 10064, 10086, 1113, 9369, 5866, 7364, 17655, 5830, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 17489 (QuestOrbMultiplierPerkPill)
+// Module 17654 (QuestOrbMultiplierPerkPill)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ColorUtils from "ColorUtils" /* 5139 */;
-import themes from "themes" /* 5164 */;
-import useTheme from "useTheme" /* 5371 */;
-import useToken from "useToken" /* 5726 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9778 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9799 */;
-import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 17490 */;
+import ColorUtils from "ColorUtils" /* 5240 */;
+import themes from "themes" /* 5265 */;
+import useTheme from "useTheme" /* 5484 */;
+import useToken from "useToken" /* 5839 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10064 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10086 */;
+import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 17655 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -102,7 +102,7 @@ export function QuestOrbMultiplierPerkPill(questId) {
     let tmp19 = tmp21Result;
     const tmp17 = closure_7;
     if (!tmp13) {
-      tmp19 = closure_6(tmp2(9618).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = closure_6(tmp2(9369).NitroWheelIcon, { size: "xs", color: "white" });
     }
     const obj13 = { children: items2 };
     items2 = [tmp19, ];
@@ -127,10 +127,10 @@ export function QuestOrbMultiplierPerkPill(questId) {
     const obj17 = { backgroundColor: tmp14 };
     items3[1] = obj17;
     const tmp16Result = closure_8(tmp17, obj13);
-    const PressableOpacity = tmp2(7046).PressableOpacity;
+    const PressableOpacity = tmp2(7364).PressableOpacity;
     if (!tmp13) {
       const obj18 = { style: tmp.fullGradient, colors: items, start, end };
-      tmp21Result = tmp21(tmp6(5717), obj18);
+      tmp21Result = tmp21(tmp6(5830), obj18);
     }
     items4 = [tmp21Result, ];
     const obj19 = { style: tmp.fullGradientContent, children: tmp16Result };

@@ -167,8 +167,8 @@ let obj = {
                                   if (charCodeAtResult >= 55296) {
                                     if (charCodeAtResult < 57344) {
                                       sum = num + 1;
-                                      let tmp17 = 1023 & charCodeAtResult;
-                                      let sum1 = 65536 + (tmp17 << 10 | 1023 & substr.charCodeAt(sum));
+                                      let tmp11 = 1023 & charCodeAtResult;
+                                      let sum1 = 65536 + (tmp11 << 10 | 1023 & substr.charCodeAt(sum));
                                       items[items.length] = items[240 | sum1 >> 18] + items[128 | sum1 >> 12 & 63] + items[128 | sum1 >> 6 & 63] + items[128 | 63 & sum1];
                                     }
                                   }

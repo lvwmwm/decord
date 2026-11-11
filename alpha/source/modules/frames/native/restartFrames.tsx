@@ -1,13 +1,13 @@
-// Module ID: 11069
-// Function ID: 11070
+// Module ID: 13195
+// Function ID: 13196
 // Name: restartFrames
-// Dependencies: [6904, 6905, 11070, 2]
+// Dependencies: [6956, 6957, 12653, 2]
 // Exports: restartAppFrames
 
-// Module 11069 (restartFrames)
-import FramesConstants from "FramesConstants" /* 6905 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11070 */;
-import FramesStore from "FramesStore" /* 6904 */;
+// Module 13195 (restartFrames)
+import FramesConstants from "FramesConstants" /* 6957 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 12653 */;
+import FramesStore from "FramesStore" /* 6956 */;
 import size from "module_2" /* 2 */;
 
 function restartFrame(frame) {

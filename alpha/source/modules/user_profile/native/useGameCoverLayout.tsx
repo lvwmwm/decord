@@ -1,12 +1,12 @@
-// Module ID: 15244
-// Function ID: 15245
+// Module ID: 12060
+// Function ID: 12061
 // Name: useGameCoverLayout
-// Dependencies: [9075, 15233, 2]
+// Dependencies: [7929, 12048, 2]
 // Exports: default
 
-// Module 15244 (useGameCoverLayout)
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9075 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15233 */;
+// Module 12060 (useGameCoverLayout)
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7929 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12048 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/native/useGameCoverLayout.tsx");

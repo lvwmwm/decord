@@ -1,19 +1,19 @@
-// Module ID: 18363
-// Function ID: 18364
+// Module ID: 18535
+// Function ID: 18536
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 18352, 18353, 1072, 1499, 18349, 1113, 18364, 6594, 7189, 18361, 1092, 18351, 1500, 7204, 7198, 7561, 2]
+// Dependencies: [5, 32, 19, 18524, 18525, 1072, 1499, 18521, 1113, 18536, 6706, 7708, 18533, 1092, 18523, 1500, 7723, 7717, 7592, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 18363 (useIdentityRegistrationStep)
+// Module 18535 (useIdentityRegistrationStep)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7204 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 7561 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7592 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7723 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18352 */;
-import RegistrationConstants from "RegistrationConstants" /* 18353 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18524 */;
+import RegistrationConstants from "RegistrationConstants" /* 18525 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

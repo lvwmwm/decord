@@ -1,12 +1,12 @@
-// Module ID: 18921
-// Function ID: 18922
+// Module ID: 19111
+// Function ID: 19112
 // Name: ICYMIInfoModal
-// Dependencies: [19, 21, 7234, 18922, 7067, 18923, 1260, 6801, 7633, 1113, 16572, 18931, 18937, 11636, 13471, 2]
+// Dependencies: [19, 21, 7424, 19112, 7427, 19113, 1260, 6785, 7363, 1113, 16733, 19121, 19127, 12434, 13995, 2]
 // Exports: default
 
-// Module 18921 (ICYMIInfoModal)
+// Module 19111 (ICYMIInfoModal)
 import Fragment from "Fragment" /* 21 */;
-import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 18922 */;
+import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 19112 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ export default function ICYMIInfoModal(extendedOnboarding) {
   const skipIntro = extendedOnboarding.skipIntro;
   let tmp = extendedOnboarding;
   const tmp2 = dependencyMap;
-  let obj = extendedOnboarding(7234);
+  let obj = extendedOnboarding(7424);
   let items = [extendedOnboarding, skipIntro];
   const navigatorScreens = obj.useNavigatorScreens(() => {
     let headerCloseButton;
@@ -106,12 +106,12 @@ export default function ICYMIInfoModal(extendedOnboarding) {
   let items1 = [extendedOnboarding, skipIntro];
   if (extendedOnboarding) {
     let obj2 = { screens: navigatorScreens, steps: tmp4, initialRouteName: skipIntro ? ICYMIInfoScreens.TOPICS_CLOUD : ICYMIInfoScreens.DEFAULT };
-    const StepModal = tmp(13471).StepModal;
-    ICYMIInfoScreens = tmp(18922).ICYMIInfoScreens;
+    const StepModal = tmp(13995).StepModal;
+    ICYMIInfoScreens = tmp(19112).ICYMIInfoScreens;
     tmp5Result = tmp5(StepModal, obj2);
   } else {
-    let obj3 = { screens: navigatorScreens, initialRouteName: tmp(18922).ICYMIInfoScreens.DEFAULT };
-    const Modal = tmp(11636).Modal;
+    let obj3 = { screens: navigatorScreens, initialRouteName: tmp(19112).ICYMIInfoScreens.DEFAULT };
+    const Modal = tmp(12434).Modal;
     tmp5Result = tmp5(Modal, obj3);
   }
   return tmp5Result;

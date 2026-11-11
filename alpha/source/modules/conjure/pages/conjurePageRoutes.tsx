@@ -1,14 +1,14 @@
-// Module ID: 7461
-// Function ID: 7462
+// Module ID: 7175
+// Function ID: 7176
 // Name: conjurePageRoutes
-// Dependencies: [1072, 4998, 5178, 5191, 2]
+// Dependencies: [1072, 5099, 5291, 5304, 2]
 // Exports: conjureOpenProjectId, conjurePageProjectId, conjurePageRoute, conjureServerHomeRoute, conjureServerProjectRoute, isConjurePagePath
 
-// Module 7461 (conjurePageRoutes)
+// Module 7175 (conjurePageRoutes)
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4998 */;
-import matchPathCompat from "matchPathCompat" /* 5178 */;
-import RouteUtils from "RouteUtils" /* 5191 */;
+import ChannelConstants from "ChannelConstants" /* 5099 */;
+import matchPathCompat from "matchPathCompat" /* 5291 */;
+import RouteUtils from "RouteUtils" /* 5304 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

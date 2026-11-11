@@ -1,19 +1,19 @@
-// Module ID: 20283
-// Function ID: 20284
+// Module ID: 20478
+// Function ID: 20479
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 9161, 5048, 8580, 1072, 21, 5726, 575, 504, 5079, 9160, 1084, 20225, 20272, 20271, 20269, 1113, 5753, 5844, 6161, 7129, 20281, 7432, 2185, 2]
+// Dependencies: [32, 19, 17, 8339, 5149, 8341, 1072, 21, 5839, 575, 504, 5180, 8338, 1084, 20420, 20467, 20466, 20464, 1113, 5866, 5957, 6274, 7680, 20476, 7888, 2185, 2]
 // Exports: default
 
-// Module 20283 (FinishingTouchesScreen)
+// Module 20478 (FinishingTouchesScreen)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5079 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9160 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5180 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8338 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9161 */;
-import GuildRoleStore from "GuildRoleStore" /* 5048 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8580 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8339 */;
+import GuildRoleStore from "GuildRoleStore" /* 5149 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8341 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -67,13 +67,13 @@ export default function FinishingTouchesScreen() {
   let tmp14;
   let tmp4Result5;
   let tmp4Result6;
-  const f120961 = (item) => {
+  const f122208 = (item) => {
     const obj = PermissionUtilsAll;
     return obj.canEveryone(item, guild);
   };
   let obj = react;
   const ref = react.useRef(null);
-  let obj2 = guild(5726);
+  let obj2 = guild(5839);
   const tmp4 = defaultMessageNotifications;
   const token = obj2.useToken(defaultMessageNotifications(575).modules.mobile.TABLE_ROW_PADDING);
   let obj3 = guild(504);
@@ -87,8 +87,8 @@ export default function FinishingTouchesScreen() {
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
   const ONLY_MENTIONS = constants2.ONLY_MENTIONS;
   [first1, tmp11] = obj.useState(false);
-  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_9.some(f120961)), 2);
-  const tmp12 = _slicedToArray(obj.useState(!closure_9.some(f120961)), 2);
+  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_9.some(f122208)), 2);
+  const tmp12 = _slicedToArray(obj.useState(!closure_9.some(f122208)), 2);
   const first2 = _slicedToArray(obj.useState(tmp13), 1)[0];
   let prop1;
   const tmp8 = constants2;
@@ -146,35 +146,35 @@ export default function FinishingTouchesScreen() {
       }
     }
   }, []);
-  const tmp20 = tmp4(20272)();
-  const tmp2Result = guild(20271);
+  const tmp20 = tmp4(20467)();
+  const tmp2Result = guild(20466);
   const enableCommunitySharedStyles = tmp2Result.useEnableCommunitySharedStyles();
-  let obj4 = { headerRef: ref, currentStep: tmp2(20269).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1113).t.XGl4ba), children: items3 };
-  const EnableCommunityModalScreen = tmp2(20269).EnableCommunityModalScreen;
+  let obj4 = { headerRef: ref, currentStep: tmp2(20464).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1113).t.XGl4ba), children: items3 };
+  const EnableCommunityModalScreen = tmp2(20464).EnableCommunityModalScreen;
   intl = tmp2(1113).intl;
   let obj5 = { style: enableCommunitySharedStyles.content, children: items2 };
   const obj6 = { ref, accessibilityRole: "header", variant: "body-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(tmp2(1113).t.tInpJj, { number: 3, total: 3 }) };
-  const Text = tmp2(5753).Text;
+  const Text = tmp2(5866).Text;
   intl2 = tmp2(1113).intl;
   items2 = [closure_14(Text, obj6), , , ];
   const obj7 = { resizeMode: "contain", source: tmp20.finishingTouches };
-  items2[1] = closure_14(tmp4(5844), obj7);
+  items2[1] = closure_14(tmp4(5957), obj7);
   const obj8 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl3.string(guild(1113).t["Pj/s/a"]) };
-  const Heading = tmp2(5753).Heading;
+  const Heading = tmp2(5866).Heading;
   intl3 = tmp2(1113).intl;
   items2[2] = closure_14(Heading, obj8);
   const obj9 = { style: enableCommunitySharedStyles.description, variant: "body-md/medium", color: "text-subtle", children: intl4.string(guild(1113).t["IL7/no"]) };
-  const Text2 = tmp2(5753).Text;
+  const Text2 = tmp2(5866).Text;
   intl4 = tmp2(1113).intl;
   items2[3] = closure_14(Text2, obj9);
   items3 = [closure_15(View, obj5), , ];
   const obj10 = { spacing: 24, style: { paddingHorizontal: token }, children: items5 };
-  const Stack = tmp2(6161).Stack;
-  const TableRowGroup = tmp2(7129).TableRowGroup;
+  const Stack = tmp2(6274).Stack;
+  const TableRowGroup = tmp2(7680).TableRowGroup;
   const obj11 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: closure_14(TableSwitchRow, obj12) };
   obj12 = { label: intl5.format(guild(1113).t.K8Eg4P, obj13), value: prop2 === tmp8.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: callback };
-  const tmp4Result = tmp4(20281);
-  TableSwitchRow = tmp2(7432).TableSwitchRow;
+  const tmp4Result = tmp4(20476);
+  TableSwitchRow = tmp2(7888).TableSwitchRow;
   intl5 = tmp2(1113).intl;
   prop2 = undefined;
   obj13 = {
@@ -189,8 +189,8 @@ export default function FinishingTouchesScreen() {
   items4 = [closure_14(tmp4Result, obj11), ];
   const obj15 = { formSwitchDisabled: first2, children: closure_14(TableSwitchRow2, obj16) };
   obj16 = { label: intl6.format(guild(1113).t.v8qCoG, obj17), value: tmp13, disabled: first2, onValueChange: tmp14 };
-  const tmp4Result4 = tmp4(20281);
-  TableSwitchRow2 = tmp2(7432).TableSwitchRow;
+  const tmp4Result4 = tmp4(20476);
+  TableSwitchRow2 = tmp2(7888).TableSwitchRow;
   intl6 = tmp2(1113).intl;
   obj17 = {
     infoHook() {
@@ -200,15 +200,15 @@ export default function FinishingTouchesScreen() {
   items4[1] = closure_14(tmp4Result4, obj15);
   items5 = [closure_15(TableRowGroup, obj14), ];
   const obj18 = { title: intl7.string(guild(1113).t["k+b2Cf"]), hasIcons: false, children: closure_14(TableSwitchRow3, obj19) };
-  const TableRowGroup2 = tmp2(7129).TableRowGroup;
+  const TableRowGroup2 = tmp2(7680).TableRowGroup;
   intl7 = tmp2(1113).intl;
   obj19 = { label: intl8.string(guild(1113).t["9AG3wI"]), value: first1, onValueChange: tmp11 };
-  TableSwitchRow3 = tmp2(7432).TableSwitchRow;
+  TableSwitchRow3 = tmp2(7888).TableSwitchRow;
   intl8 = tmp2(1113).intl;
   items5[1] = closure_14(TableRowGroup2, obj18);
   items3[1] = closure_15(Stack, obj10);
   const obj20 = { style: enableCommunitySharedStyles.formHint, variant: "body-xs/medium", color: "text-subtle", children: format(prop3, obj21) };
-  const Text3 = tmp2(5753).Text;
+  const Text3 = tmp2(5866).Text;
   const intl9 = tmp2(1113).intl;
   format = intl9.format;
   obj21 = { communityGuidelines: tmp4Result5.getArticleURL(constants.PUBLIC_GUILD_GUILDLINES), typesOfGuilds: tmp4Result6.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };

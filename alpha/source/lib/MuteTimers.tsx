@@ -1,10 +1,10 @@
-// Module ID: 5077
-// Function ID: 5078
+// Module ID: 5178
+// Function ID: 5179
 // Name: MuteTimers
 // Dependencies: [2]
 // Exports: computeIsMuted, isTemporarilyMuted
 
-// Module 5077 (MuteTimers)
+// Module 5178 (MuteTimers)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/MuteTimers.tsx");
@@ -19,19 +19,19 @@ class MuteTimers {
     const item = values.forEach((item) => clearTimeout(item));
     this.timers = {};
   }
-  setTimer(id2, muteConfig, arg2) {
-    if (null == id2) {
+  setTimer(arg0, end_time, arg2) {
+    if (null == arg0) {
       return false;
-    } else if (null == muteConfig) {
+    } else if (null == end_time) {
       return false;
     } else {
       let diff = null;
-      if (null != muteConfig.end_time) {
+      if (null != end_time.end_time) {
         const _Date = Date;
         const self = this;
         const self2 = this;
         const _Date2 = Date;
-        const date = new Date(muteConfig.end_time);
+        const date = new Date(end_time.end_time);
         const time = date.getTime();
         diff = time - Date.now();
       }
@@ -42,7 +42,7 @@ class MuteTimers {
           const self3 = this;
           const _setTimeout = setTimeout;
           const _Math = Math;
-          this.timers[id2] = setTimeout(arg2, Math.max(0, diff));
+          this.timers[arg0] = setTimeout(arg2, Math.max(0, diff));
           flag = false;
         }
         tmp5 = flag;

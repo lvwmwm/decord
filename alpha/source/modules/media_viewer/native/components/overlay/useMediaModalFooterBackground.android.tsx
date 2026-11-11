@@ -1,13 +1,13 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15100
+// Function ID: 15101
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 671, 5726, 575, 2]
+// Dependencies: [32, 671, 5839, 575, 2]
 // Exports: default
 
-// Module 15043 (useMediaModalFooterBackground)
+// Module 15100 (useMediaModalFooterBackground)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import useToken from "useToken" /* 5726 */;
+import useToken from "useToken" /* 5839 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -18,5 +18,5 @@ export default function useMediaModalFooterBackground() {
   const obj = useToken;
   const tmpResult = tmp(obj.useToken(nativeDefault.colors.THEME_LOCKED_BLUR_FALLBACK));
   const tmp2 = _slicedToArray(tmpResult.rgba(), 4);
-  return { mediaModalFooterBackgroundColorRgba: { r: tmp2[0], g: tmp2[1], b: tmp2[2], a: tmp2[3] }, MediaModalFooterUnderlay: "r" };
+  return { mediaModalFooterBackgroundColorRgba: { r: tmp2[0], g: tmp2[1], b: tmp2[2], a: tmp2[3] }, MediaModalFooterUnderlay: "Array" };
 };

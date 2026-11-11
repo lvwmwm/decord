@@ -1,43 +1,93 @@
 // Module ID: 5587
 // Function ID: 5588
-// Dependencies: [19, 21, 5399, 1652, 5395, 5405]
-// Exports: default
+// Dependencies: [5559, 5568, 5564, 5566, 5538]
+// Exports: updateHandlers
 
 // Module 5587
-import react2 from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5395 */;
-import _mod5399 from "module_5399" /* 5399 */;
-import BottomSheetContext from "BottomSheetContext" /* 5405 */;
+import handlerIDToTag from "handlerIDToTag" /* 5538 */;
+import ALLOWED_PROPS from "ALLOWED_PROPS" /* 5559 */;
+import react_nativeDefault from "react-native" /* 5564 */;
+import selectProperties from "selectProperties" /* 5566 */;
 
-const useMemo = react2.useMemo;
-const jsx = Fragment.jsx;
+const require = globalThis.__r;
+let _require;
 
-export default function _default(gestureEventsHandlersHook) {
-  let animatedContentGestureState;
-  let animatedHandleGestureState;
-  let handleOnChange;
-  let handleOnEnd;
-  let handleOnFinalize;
-  let handleOnStart;
-  let useGestureEventsHandlersDefault = gestureEventsHandlersHook.gestureEventsHandlersHook;
-  if (useGestureEventsHandlersDefault === undefined) {
-    useGestureEventsHandlersDefault = _mod5399.useGestureEventsHandlersDefault;
+
+export function updateHandlers(attachedGestures, prepare, arg2) {
+  let num;
+  _require = attachedGestures;
+  let closure_1 = arg2;
+  prepare.prepare();
+  for (let num = 0; num < arg2.length; num = num + 1) {
+    let tmp2 = attachedGestures.attachedGestures[num];
+    let tmp3 = _require;
+    let tmp4 = attachedGestures;
+    let obj = require("ALLOWED_PROPS");
+    let result = obj.checkGestureCallbacksForWorklets(tmp2);
+    let tmp6 = num;
+    if (arg2[num].handlerTag !== tmp2.handlerTag) {
+      ({ handlerTag: arg2[num].handlerTag, handlerTag: arg2[num].handlers.handlerTag } = tmp2);
+    }
   }
-  const children = gestureEventsHandlersHook.children;
-  const obj = _mod1652;
-  const sharedValue = obj.useSharedValue(GESTURE_SOURCE.GESTURE_SOURCE.UNDETERMINED);
-  const obj2 = _mod5399;
-  const bottomSheetInternal = obj2.useBottomSheetInternal();
-  ({ animatedHandleGestureState, animatedContentGestureState } = bottomSheetInternal);
-  ({ handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize } = useGestureEventsHandlersDefault());
-  useGestureEventsHandlersDefault();
-  const obj3 = _mod5399;
-  const gestureHandler = obj3.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.CONTENT, animatedContentGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
-  const obj4 = _mod5399;
-  const gestureHandler1 = obj4.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.HANDLE, animatedHandleGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
-  const items = [gestureHandler, gestureHandler1, sharedValue];
-  const value = useMemo(() => ({ contentPanGestureHandler: gestureHandler, handlePanGestureHandler: gestureHandler1, animatedGestureSource: sharedValue }), items);
-  return jsx(BottomSheetContext.BottomSheetGestureHandlersContext.Provider, { value, children });
-};
+  attachedGestures = attachedGestures.attachedGestures;
+  attachedGestures.hasExternalRelations = true;
+  let obj2 = require("ghQueueMicrotask");
+  obj2.ghQueueMicrotask(() => {
+    let arr2;
+    if (attachedGestures.isMounted) {
+      let arr = attachedGestures;
+      if (attachedGestures === tmp.attachedGestures) {
+        let tmp25 = closure_1;
+        let tmp23 = arr.length !== closure_1.length;
+        let num = 0;
+        let tmp24 = tmp23;
+        if (0 < closure_1.length) {
+          do {
+            let tmp3 = attachedGestures[num];
+            arr2 = closure_1;
+            let tmp4 = tmp3.handlers.gestureId !== closure_1[num].handlers.gestureId;
+            let flag = tmp23;
+            let tmp2 = attachedGestures;
+            if (tmp4) {
+              let tmp6 = arr2[num].shouldUseReanimated || tmp3.shouldUseReanimated;
+              tmp4 = tmp6;
+            }
+            if (tmp4) {
+              flag = true;
+            }
+            tmp3.config = arr2[num].config;
+            tmp3.handlers = arr2[num].handlers;
+            let tmp9 = react_nativeDefault;
+            let setGestureHandlerConfig = tmp9.setGestureHandlerConfig;
+            let handlerTag = tmp3.handlerTag;
+            let obj = selectProperties;
+            let result = setGestureHandlerConfig(handlerTag, obj.filterConfig(tmp3.config, ALLOWED_PROPS.ALLOWED_PROPS));
+            let tmp16 = react_nativeDefault;
+            let configureRelations = tmp16.configureRelations;
+            let handlerTag2 = tmp3.handlerTag;
+            let obj2 = ALLOWED_PROPS;
+            let configureRelationsResult = configureRelations(handlerTag2, obj2.extractGestureRelations(tmp3));
+            let obj3 = handlerIDToTag;
+            let registerHandlerResult = obj3.registerHandler(tmp3.handlerTag, tmp3, tmp3.config.testId);
+            num = num + 1;
+            tmp23 = flag;
+            tmp24 = flag;
+            tmp25 = arr2;
+            arr = tmp2;
+          } while (num < arr2.length);
+        }
+        const obj4 = ALLOWED_PROPS;
+        attachedGestures.hasExternalRelations = obj4.hasExternalRelations(tmp25);
+        const tmp26 = attachedGestures;
+        if (attachedGestures.animatedHandlers) {
+          if (tmp24) {
+            const found = arr.filter((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
+            tmp26.animatedHandlers.value = found.map((handlers) => handlers.handlers);
+          }
+        }
+        const obj5 = selectProperties;
+        const result1 = obj5.scheduleFlushOperations();
+      }
+    }
+  });
+}

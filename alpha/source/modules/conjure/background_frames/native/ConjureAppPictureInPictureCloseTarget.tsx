@@ -1,18 +1,18 @@
-// Module ID: 19523
-// Function ID: 19524
+// Module ID: 19712
+// Function ID: 19713
 // Name: ConjureAppPictureInPictureCloseTarget
-// Dependencies: [19, 21, 5142, 19520, 575, 1652, 5372, 5763, 12055, 2]
+// Dependencies: [19, 21, 5243, 19709, 575, 1652, 5485, 5876, 12206, 2]
 // Exports: default
 
-// Module 19523 (ConjureAppPictureInPictureCloseTarget)
+// Module 19712 (ConjureAppPictureInPictureCloseTarget)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import spring_spring from "spring/spring" /* 5763 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19520 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import spring_spring from "spring/spring" /* 5876 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19709 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
@@ -23,7 +23,7 @@ let closure_4;
 let rect;
 let size;
 let tmp2;
-const DoorExitIcon3 = tmp2(12055);
+const DoorExitIcon3 = tmp2(12206);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = { mass: 0.4, damping: 18, stiffness: 300 };
 let closure_6 = { duration: 150 };

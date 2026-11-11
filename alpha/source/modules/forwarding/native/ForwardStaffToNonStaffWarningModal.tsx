@@ -1,12 +1,12 @@
-// Module ID: 13634
-// Function ID: 13635
+// Module ID: 10198
+// Function ID: 10199
 // Name: ForwardStaffToNonStaffWarningModal
-// Dependencies: [21, 6098, 1113, 2]
+// Dependencies: [21, 6211, 1113, 2]
 // Exports: default
 
-// Module 13634 (ForwardStaffToNonStaffWarningModal)
+// Module 10198 (ForwardStaffToNonStaffWarningModal)
 import intl5 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 6098 */;
+import AlertModal2 from "AlertModal" /* 6211 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

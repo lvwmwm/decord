@@ -1,18 +1,18 @@
-// Module ID: 14160
-// Function ID: 14161
+// Module ID: 14645
+// Function ID: 14646
 // Name: SearchQueryStore
-// Dependencies: [4991, 5084, 1385, 9923, 9922, 1072, 5778, 1113, 14153, 14161, 2158, 504, 572, 2]
+// Dependencies: [5092, 5185, 1385, 9000, 8999, 1072, 5891, 1113, 14638, 14646, 2158, 504, 572, 2]
 
-// Module 14160 (SearchQueryStore)
+// Module 14645 (SearchQueryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import TrackingConstants from "TrackingConstants" /* 9922 */;
-import SearchUtils from "SearchUtils" /* 14153 */;
-import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 14161 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
+import TrackingConstants from "TrackingConstants" /* 8999 */;
+import SearchUtils from "SearchUtils" /* 14638 */;
+import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 14646 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
-import SearchConstants from "SearchConstants" /* 9923 */;
+import SearchConstants from "SearchConstants" /* 9000 */;
 import Constants from "Constants" /* 1072 */;
 import FunctionUtils from "FunctionUtils" /* 2158 */;
 import size from "module_2" /* 2 */;
@@ -193,7 +193,7 @@ class SearchQueryStateManager {
       let items1;
       let channelName;
       if (null != channel) {
-        const obj2 = obj(5778);
+        const obj2 = obj(5891);
         channelName = obj2.computeChannelName(channel, UserStore, RelationshipStore);
       }
       if (null == channelName) {
@@ -205,7 +205,7 @@ class SearchQueryStateManager {
         let str = ": ";
         stringResult = intl.string(obj(1113).t.WNpFHa);
         items1 = [obj3];
-        obj4 = obj(14153);
+        obj4 = obj(14638);
       }
       items = items1;
     }

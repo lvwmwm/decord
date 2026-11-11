@@ -1,18 +1,18 @@
-// Module ID: 19653
-// Function ID: 19654
+// Module ID: 19845
+// Function ID: 19846
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 19651, 11370, 4988, 21, 19654, 19570, 11335, 11371, 1652, 1705, 7644, 19606, 1113, 4975, 19656, 10082, 2]
+// Dependencies: [32, 19, 19843, 11923, 5089, 21, 19846, 19759, 11890, 11924, 1652, 1705, 9494, 19795, 1113, 5076, 19848, 9501, 2]
 // Exports: default
 
-// Module 19653 (useSpeakerTooltips)
+// Module 19845 (useSpeakerTooltips)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11370 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 19656 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11923 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 19848 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19651 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19843 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let _require, closure_6, importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const dismissible_content = tmp(4975);
+const dismissible_content = tmp(5076);
 let _slicedToArray = _slicedToArray_mod;
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
@@ -46,13 +46,13 @@ export default function useSpeakerTooltips(targetRef, arg1) {
   let tmp17;
   let tmp18;
   let voiceUpsellDismissed;
-  const f119172 = () => {
+  const f120417 = () => {
     const obj = memo2;
     if (memo2.visible) {
       obj.onDismiss();
     }
   };
-  const f119173 = () => {
+  const f120418 = () => {
     const tmp = closure_1;
     if (!tmp) {
       callback1();
@@ -195,16 +195,16 @@ export default function useSpeakerTooltips(targetRef, arg1) {
     }
   }, items7);
   const items8 = [memo1];
-  const callback = obj2.useCallback(f119172, items8);
+  const callback = obj2.useCallback(f120417, items8);
   const items9 = [tmp, callback];
-  const effect1 = obj2.useEffect(f119173, items9);
+  const effect1 = obj2.useEffect(f120418, items9);
   const tmp6Result3 = require("useCoachmark");
   const coachmark = tmp6Result3.useCoachmark(targetRef, memo1);
   importDefault = tmp;
   const items10 = [memo2];
-  const callback1 = obj2.useCallback(f119172, items10);
+  const callback1 = obj2.useCallback(f120417, items10);
   const items11 = [tmp, callback1];
-  const effect2 = obj2.useEffect(f119173, items11);
+  const effect2 = obj2.useEffect(f120418, items11);
   const tmp6Result4 = require("useCoachmark");
   const coachmark1 = tmp6Result4.useCoachmark(targetRef, memo2);
 };

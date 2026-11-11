@@ -1,12 +1,13 @@
-// Module ID: 16572
-// Function ID: 16573
+// Module ID: 16733
+// Function ID: 16734
 // Name: ICYMIAnalytics
-// Dependencies: [8986, 1072, 8791, 1252, 2]
+// Dependencies: [10137, 1072, 8355, 1252, 10159, 2]
 
-// Module 16572 (ICYMIAnalytics)
+// Module 16733 (ICYMIAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8791 */;
-import ICYMIStore from "ICYMIStore" /* 8986 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8355 */;
+import ICYMIAnalyticsItemId from "ICYMIAnalyticsItemId" /* 10159 */;
+import ICYMIStore from "ICYMIStore" /* 10137 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -22,11 +23,15 @@ let obj = {
     obj.track(hasOwnProperty.FEED_ITEM_INTERACTED, obj2);
   },
   trackItemShortImpression(viewableItems, arr2, stateFromStores) {
-    const obj = AnalyticsUtilsDefault;
+    let obj = AnalyticsUtilsDefault;
     const obj2 = {
       load_id: ICYMIStore.getLoadId(),
       home_session_id: "gravity",
-      feed_item_ids: viewableItems.map((item) => item.item.id),
+      feed_item_ids: viewableItems.map((item) => {
+        item = item.item;
+        const obj = ICYMIAnalyticsItemId;
+        return obj.getListAnalyticsItemId(item);
+      }),
       feed_item_types: viewableItems.map((item) => {
         let str4;
         item = item.item;
@@ -76,11 +81,15 @@ let obj = {
     obj.track(hasOwnProperty.FEED_ITEM_SEEN_BATCH, obj2);
   },
   trackItemLongImpression(viewableItems, arr2, stateFromStores) {
-    const obj = AnalyticsUtilsDefault;
+    let obj = AnalyticsUtilsDefault;
     const obj2 = {
       load_id: ICYMIStore.getLoadId(),
       home_session_id: "gravity",
-      feed_item_ids: viewableItems.map((item) => item.item.id),
+      feed_item_ids: viewableItems.map((item) => {
+        item = item.item;
+        const obj = ICYMIAnalyticsItemId;
+        return obj.getListAnalyticsItemId(item);
+      }),
       feed_item_types: viewableItems.map((item) => {
         let str4;
         item = item.item;

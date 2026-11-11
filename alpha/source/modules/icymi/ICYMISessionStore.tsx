@@ -1,19 +1,19 @@
-// Module ID: 16571
-// Function ID: 16572
+// Module ID: 16732
+// Function ID: 16733
 // Name: ICYMISessionStore
-// Dependencies: [5356, 1246, 8639, 502, 8986, 1266, 16572, 504, 572, 2]
+// Dependencies: [5469, 1246, 9280, 502, 10137, 1266, 16733, 504, 572, 2]
 // Exports: resetGlobalState
 
-// Module 16571 (ICYMISessionStore)
+// Module 16732 (ICYMISessionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import v1 from "v1" /* 1266 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16572 */;
-import ExperimentStore from "ExperimentStore" /* 5356 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16733 */;
+import ExperimentStore from "ExperimentStore" /* 5469 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import LabFeatureStore from "LabFeatureStore" /* 8639 */;
+import LabFeatureStore from "LabFeatureStore" /* 9280 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ICYMIStore from "ICYMIStore" /* 8986 */;
+import ICYMIStore from "ICYMIStore" /* 10137 */;
 import size from "module_2" /* 2 */;
 
 let _null, c10, set;
@@ -148,7 +148,7 @@ class ICYMISession {
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, uxVariation } = tmp7);
       if (uxVariation == null) {
-        uxVariation = tmp11(16572).DEFAULT_UX_VARIATION;
+        uxVariation = tmp11(16733).DEFAULT_UX_VARIATION;
       }
       let trackFeedItemDwell1sResult = trackFeedItemDwell1s(obj);
       continue;
@@ -344,7 +344,7 @@ class ICYMISession {
       }
       DEFAULT_UX_VARIATION = tmp2.uxVariation;
       if (DEFAULT_UX_VARIATION == null) {
-        DEFAULT_UX_VARIATION = tmp5(16572).DEFAULT_UX_VARIATION;
+        DEFAULT_UX_VARIATION = tmp5(16733).DEFAULT_UX_VARIATION;
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, sessionImpressionIndex: obj.sessionImpressionIndex } = this._activeItems[findIndexResult]);
       trackFeedItemDwelled(obj);

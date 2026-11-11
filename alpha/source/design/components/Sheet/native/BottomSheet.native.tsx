@@ -1,27 +1,27 @@
-// Module ID: 5390
-// Function ID: 5391
+// Module ID: 5503
+// Function ID: 5504
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 19, 17, 5391, 21, 5142, 575, 1377, 1627, 5392, 5393, 5394, 5716, 5717, 1092, 1493, 1652, 5721, 5156, 5722, 5723, 1705, 5725, 5727, 5736, 5312, 5739, 5740, 5201, 2]
+// Dependencies: [32, 19, 17, 5504, 21, 5243, 575, 1377, 1627, 5505, 5506, 5507, 5829, 5830, 1092, 1493, 1652, 5834, 5257, 5835, 5836, 1705, 5838, 5840, 5849, 5425, 5852, 5853, 5314, 2]
 // Exports: BottomSheet, useBottomSheetContainerStyle, useBottomSheetWidth
 
-// Module 5390 (Sheet/BottomSheet)
+// Module 5503 (Sheet/BottomSheet)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5392 */;
-import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5393 */;
-import BottomSheetModal from "BottomSheetModal" /* 5394 */;
-import LinearGradientDefault from "LinearGradient" /* 5717 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5725 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5727 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5505 */;
+import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5506 */;
+import BottomSheetModal from "BottomSheetModal" /* 5507 */;
+import LinearGradientDefault from "LinearGradient" /* 5830 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5838 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5840 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5391 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
@@ -40,9 +40,9 @@ let metroRequire;
 let tmp2;
 let tmp4;
 let unpackModuleId;
-const BottomSheetModalDefault = tmp2(5394);
-const NavigatorConstants = tmp4(5716);
-const NavScrim = tmp2(5736);
+const BottomSheetModalDefault = tmp2(5507);
+const NavigatorConstants = tmp4(5829);
+const NavScrim = tmp2(5849);
 function Background(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);

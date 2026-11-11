@@ -1,17 +1,17 @@
-// Module ID: 9818
-// Function ID: 9819
+// Module ID: 7361
+// Function ID: 7362
 // Name: XboxLinkModal
-// Dependencies: [19, 9819, 1072, 21, 7633, 8433, 9817, 1113, 9820, 9827, 9828, 9832, 14887, 14890, 14892, 9826, 14896, 7234, 2]
+// Dependencies: [19, 7362, 1072, 21, 7363, 7366, 7360, 1113, 7367, 7396, 7397, 7404, 7412, 7417, 7419, 7378, 7423, 7424, 2]
 // Exports: default
 
-// Module 9818 (XboxLinkModal)
+// Module 7361 (XboxLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7633 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8433 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9817 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9819 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7360 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 7362 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7363 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7366 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export default function XboxLinkModal(startAtSignIn) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = flag(9826);
+  let obj = flag(7378);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles, flag];
   const tmp6 = flag ? XboxLinkModalScenes.PRE_CONNECT : XboxLinkModalScenes.LANDING;
@@ -115,9 +115,9 @@ export default function XboxLinkModal(startAtSignIn) {
       }
     };
   }, items);
-  const tmpResult = flag(14896);
+  const tmpResult = flag(7423);
   const accountLinkStepTracking = tmpResult.useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack, tmp6);
-  const Navigator = tmp(7234).Navigator;
+  const Navigator = tmp(7424).Navigator;
   const intl = tmp(1113).intl;
   return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={tmp6} headerBackTitle={intl.string(flag(1113).t["13/7kX"])} />;
 };

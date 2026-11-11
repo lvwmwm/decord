@@ -1,11 +1,11 @@
-// Module ID: 5162
-// Function ID: 5163
+// Module ID: 5263
+// Function ID: 5264
 // Name: ThemeContextFlags
-// Dependencies: [5159, 2]
+// Dependencies: [5260, 2]
 // Exports: hasThemeFlag, setThemeFlag, useThemeFlag
 
-// Module 5162 (ThemeContextFlags)
-import ThemeContext from "ThemeContext" /* 5159 */;
+// Module 5263 (ThemeContextFlags)
+import ThemeContext from "ThemeContext" /* 5260 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeContextFlags.tsx");

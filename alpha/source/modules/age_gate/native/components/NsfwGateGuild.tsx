@@ -1,21 +1,21 @@
-// Module ID: 7450
-// Function ID: 7451
+// Module ID: 15824
+// Function ID: 15825
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 5054, 1385, 7451, 1072, 21, 5142, 575, 1113, 2185, 1252, 7452, 7013, 5844, 7454, 5753, 5760, 2]
+// Dependencies: [19, 17, 5155, 1385, 10744, 1072, 21, 5243, 575, 1113, 2185, 1252, 10745, 7648, 5957, 15825, 5866, 5873, 2]
 // Exports: default
 
-// Module 7450 (NsfwGateGuild)
+// Module 15824 (NsfwGateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 7451 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7452 */;
+import Constants2 from "Constants" /* 10744 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10745 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -83,18 +83,18 @@ export default function NsfwGateGuild(guildId) {
     track(GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   const obj3 = { style: tmp.container, children: items1 };
-  items1 = [closure_10(currentUser(7013), {}), , , , , ];
-  const obj4 = { source: currentUser(7454), style: tmp.image };
-  const tmp7 = currentUser(5844);
+  items1 = [closure_10(currentUser(7648), {}), , , , , ];
+  const obj4 = { source: currentUser(15825), style: tmp.image };
+  const tmp7 = currentUser(5957);
   items1[1] = closure_10(tmp7, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult };
-  items1[2] = closure_10(guildId(5753).Heading, obj5);
+  items1[2] = closure_10(guildId(5866).Heading, obj5);
   const obj6 = { style: tmp.description, variant: "body-md/normal", color: "text-default", children: stringResult1 };
-  items1[3] = closure_10(guildId(5753).Text, obj6);
+  items1[3] = closure_10(guildId(5866).Text, obj6);
   const obj7 = { style: tmp.description, variant: "body-md/normal", color: "text-default", children: formatResult };
-  items1[4] = closure_10(guildId(5753).Text, obj7);
+  items1[4] = closure_10(guildId(5866).Text, obj7);
   const obj8 = { onPress: onClose, size: "md", text: intl4.string(guildId(1113).t.gRqiWV) };
-  const Button = guildId(5760).Button;
+  const Button = guildId(5873).Button;
   intl4 = guildId(1113).intl;
   items1[5] = closure_10(Button, obj8);
   return closure_11(View, obj3);

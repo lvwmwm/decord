@@ -1,12 +1,12 @@
-// Module ID: 8987
-// Function ID: 8988
+// Module ID: 10138
+// Function ID: 10139
 // Name: ContentInventoryStore
-// Dependencies: [504, 8988, 572, 2]
+// Dependencies: [504, 9409, 572, 2]
 
-// Module 8987 (ContentInventoryStore)
+// Module 10138 (ContentInventoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import matchUtils from "matchUtils" /* 8988 */;
+import matchUtils from "matchUtils" /* 9409 */;
 import size from "module_2" /* 2 */;
 
 let set;

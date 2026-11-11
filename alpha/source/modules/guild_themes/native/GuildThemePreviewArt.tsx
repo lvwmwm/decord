@@ -1,25 +1,25 @@
-// Module ID: 18584
-// Function ID: 18585
+// Module ID: 18756
+// Function ID: 18757
 // Name: GuildThemePreviewArt
-// Dependencies: [19, 17, 21, 5142, 575, 5313, 18585, 5371, 5717, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5426, 18757, 5484, 5830, 2]
 // Exports: default
 
-// Module 18584 (GuildThemePreviewArt)
+// Module 18756 (GuildThemePreviewArt)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GuildThemePresets from "GuildThemePresets" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5371 */;
-import GuildThemePreviewOverlayDefault from "GuildThemePreviewOverlay" /* 18585 */;
+import GuildThemePresets from "GuildThemePresets" /* 5426 */;
+import useThemeDefault from "useTheme" /* 5484 */;
+import GuildThemePreviewOverlayDefault from "GuildThemePreviewOverlay" /* 18757 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let obj2;
 let tmp2;
-const LinearGradientDefault = tmp2(5717);
+const LinearGradientDefault = tmp2(5830);
 function PreviewOverlay() {
   return <View pointerEvents="none" style={closure_6().previewOverlay}>{jsx(GuildThemePreviewOverlayDefault, {})}</View>;
 }

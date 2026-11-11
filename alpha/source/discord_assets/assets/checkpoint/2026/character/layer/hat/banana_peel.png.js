@@ -1,8 +1,8 @@
-// Module ID: 6495
-// Function ID: 6496
+// Module ID: 6608
+// Function ID: 6609
 // Dependencies: [2]
 
-// Module 6495
+// Module 6608
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/hat/banana_peel.png.js");

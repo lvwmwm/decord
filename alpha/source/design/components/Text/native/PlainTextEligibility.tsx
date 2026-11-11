@@ -1,10 +1,10 @@
-// Module ID: 5758
-// Function ID: 5759
+// Module ID: 5871
+// Function ID: 5872
 // Name: PlainTextEligibility
 // Dependencies: [17, 2]
 // Exports: getPlainTextEligibility, isPlainTextEligible
 
-// Module 5758 (PlainTextEligibility)
+// Module 5871 (PlainTextEligibility)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

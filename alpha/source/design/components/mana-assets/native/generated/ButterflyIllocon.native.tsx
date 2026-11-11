@@ -1,27 +1,27 @@
-// Module ID: 12911
-// Function ID: 12912
+// Module ID: 13583
+// Function ID: 13584
 // Name: ButterflyIllocon
-// Dependencies: [19, 21, 12912, 12913, 12914, 7138, 5844, 2]
+// Dependencies: [19, 21, 13584, 13585, 13586, 7689, 5957, 2]
 // Exports: ButterflyIllocon
 
-// Module 12911 (ButterflyIllocon)
+// Module 13583 (ButterflyIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import react_native from "react-native" /* 7138 */;
-import _modDef12912 from "module_12912" /* 12912 */;
-import _modDef12913 from "module_12913" /* 12913 */;
-import _modDef12914 from "module_12914" /* 12914 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import react_native from "react-native" /* 7689 */;
+import _modDef13584 from "module_13584" /* 13584 */;
+import _modDef13585 from "module_13585" /* 13585 */;
+import _modDef13586 from "module_13586" /* 13586 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12912 };
+let obj2 = { uri: _modDef13584 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12913 };
-({ uri: _modDef12913 });
-obj[3] = { uri: _modDef12914 };
-({ uri: _modDef12914 });
+obj[2] = { uri: _modDef13585 };
+({ uri: _modDef13585 });
+obj[3] = { uri: _modDef13586 };
+({ uri: _modDef13586 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ButterflyIllocon.native.tsx");
 
@@ -43,6 +43,6 @@ export function ButterflyIllocon(size) {
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(7138);
+  obj2 = num(7689);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 }

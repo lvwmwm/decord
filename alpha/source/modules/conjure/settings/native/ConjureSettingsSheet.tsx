@@ -1,21 +1,21 @@
-// Module ID: 12301
-// Function ID: 12302
+// Module ID: 13101
+// Function ID: 13102
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10978, 10994, 6902, 21, 4028, 5142, 575, 504, 12302, 12314, 12337, 7429, 1113, 7385, 7430, 6161, 12339, 12342, 12344, 5753, 7018, 5760, 9075, 9065, 12350, 9300, 2]
+// Dependencies: [5, 32, 19, 17, 7301, 7311, 6954, 21, 4079, 5243, 575, 504, 13102, 13115, 13144, 7885, 1113, 7847, 7886, 6274, 13146, 13151, 13153, 5866, 7354, 5873, 7929, 7917, 13159, 11190, 2]
 // Exports: default
 
-// Module 12301 (ConjureSettingsSheet)
+// Module 13101 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4028 from "module_4028" /* 4028 */;
+import _modDef4079 from "module_4079" /* 4079 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10994 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6902 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 7301 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 7311 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6954 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,7 +90,7 @@ let ConjureProjectStore = ConjureProjectStore_mod;
 ({ canPublishProject: c9, isProjectOwner: c10 } = ConjureProjectStore);
 ConjureProjectStore = ConjureProjectStore_mod;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let obj = { project: _modDef4028.W0eQfN, app: _modDef4028.lFaJYF, secrets: _modDef4028.vDpCPU, model: _modDef4028.Rs3qc9, linked: _modDef4028.fBEHdq, experimental: _modDef4028["0Pe9uw"] };
+let obj = { project: _modDef4079.W0eQfN, app: _modDef4079.lFaJYF, secrets: _modDef4079.vDpCPU, model: _modDef4079.Rs3qc9, linked: _modDef4079.fBEHdq, experimental: _modDef4079["0Pe9uw"] };
 let obj2 = { container: obj3 };
 obj3 = { gap: nativeDefault.space.PX_16 };
 let closure_15 = createStyles.createStyles(obj2);

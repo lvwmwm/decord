@@ -1,14 +1,14 @@
-// Module ID: 12303
-// Function ID: 12304
+// Module ID: 13103
+// Function ID: 13104
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6902, 504, 12304, 12285, 12306, 11029, 6903, 7486, 12307, 11025, 12269, 1113, 4028, 12288, 11005, 2]
+// Dependencies: [5, 32, 19, 6954, 504, 13104, 13087, 13106, 7324, 6955, 7197, 13108, 7287, 13073, 1113, 4079, 13090, 7265, 2]
 // Exports: default
 
-// Module 12303 (useConjureProjectSettingsDraft)
+// Module 13103 (useConjureProjectSettingsDraft)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -273,21 +273,19 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
             if (null != stateFromStores) {
               if (null != closure_1) {
                 if (null != stateFromStores.preview_application_id) {
-                  if (null == stateFromStores.install_scope_setup) {
-                    if (ref.current !== closure_1) {
-                      if (ref2.current) {
-                        c5 = 3;
-                        return { value: false, done: true };
-                      } else {
-                        ref2.current = true;
-                        closure_23(true);
-                        c3 = 1;
-                        c4 = 2;
-                        c5 = 1;
-                        const obj5 = { value: obj9.fetchConjureAppInGuild(stateFromStores, closure_1), done: false };
-                        obj9 = closure_0(stateFromStores[12]);
-                        return obj5;
-                      }
+                  if (ref.current !== closure_1) {
+                    if (ref2.current) {
+                      c5 = 3;
+                      return { value: false, done: true };
+                    } else {
+                      ref2.current = true;
+                      closure_23(true);
+                      c3 = 1;
+                      c4 = 2;
+                      c5 = 1;
+                      const obj5 = { value: obj9.fetchConjureAppInGuild(stateFromStores, closure_1), done: false };
+                      obj9 = closure_0(stateFromStores[12]);
+                      return obj5;
                     }
                   }
                 }

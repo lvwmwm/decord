@@ -1,22 +1,22 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15419
+// Function ID: 15420
 // Name: EditCollectiblesPreviewDetails
-// Dependencies: [19, 17, 2186, 21, 5142, 504, 2171, 7811, 4964, 5753, 1113, 8821, 2]
+// Dependencies: [19, 17, 2186, 21, 5243, 504, 2171, 8431, 5065, 5866, 1113, 9338, 2]
 // Exports: default
 
-// Module 15379 (EditCollectiblesPreviewDetails)
+// Module 15419 (EditCollectiblesPreviewDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl6 from "intl" /* 1113 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import DateUtils from "DateUtils" /* 4964 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7811 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8821 */;
+import DateUtils from "DateUtils" /* 5065 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 9338 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -80,7 +80,7 @@ function EditCollectiblesPreviewDescription(arg0) {
       const tmp15 = metroRequire;
       if (tmp16) {
         const obj4 = { variant: "body-sm/medium", color: "text-default", children: format(Io7ozn, obj5) };
-        const Text = tmp(5753).Text;
+        const Text = tmp(5866).Text;
         const intl = tmp(1113).intl;
         format = intl.format;
         obj5 = { days: str.toString() };
@@ -89,7 +89,7 @@ function EditCollectiblesPreviewDescription(arg0) {
         tmp16 = hasOwnProperty(Text, obj4);
       }
       const items1 = [tmp16, , ];
-      const Text2 = tmp(5753).Text;
+      const Text2 = tmp(5866).Text;
       const intl2 = tmp(1113).intl;
       const format2 = intl2.format;
       let toLocaleDateStringResult;
@@ -108,7 +108,7 @@ function EditCollectiblesPreviewDescription(arg0) {
       let tmp18Result = null != expiresAt2;
       if (tmp18Result) {
         const obj8 = { variant: "body-sm/medium", color: "text-default", children: format3(eZSTa5, obj9) };
-        const Text3 = tmp(5753).Text;
+        const Text3 = tmp(5866).Text;
         const intl3 = tmp(1113).intl;
         format3 = intl3.format;
         obj9 = { date: expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" }) };
@@ -125,13 +125,13 @@ function EditCollectiblesPreviewDescription(arg0) {
     let tmp25Result;
     if (canUseCollectiblesResult) {
       const obj11 = { variant: "body-sm/medium", color: "text-default", children: intl5.string(intl6.t.hmyYK8) };
-      const Text6 = tmp(5753).Text;
+      const Text6 = tmp(5866).Text;
       intl5 = tmp(1113).intl;
       tmp25Result = hasOwnProperty(Text6, obj11);
     } else {
       const tmp4Result = PremiumUtilsDefault;
       const isPremiumResult = tmp4Result.isPremium(user);
-      const Text5 = tmp(5753).Text;
+      const Text5 = tmp(5866).Text;
       const obj12 = { variant: "body-sm/medium", color: "text-default", children: null };
       if (isPremiumResult) {
         obj12.children = nitroUpgradeCTA;
@@ -144,7 +144,7 @@ function EditCollectiblesPreviewDescription(arg0) {
     tmp23 = tmp25Result;
   } else {
     const obj13 = { variant: "body-sm/medium", color: "text-default", children: intl4.string(intl6.t.fEGjVQ) };
-    const Text4 = tmp(5753).Text;
+    const Text4 = tmp(5866).Text;
     intl4 = tmp(1113).intl;
     tmp23 = hasOwnProperty(Text4, obj13);
   }

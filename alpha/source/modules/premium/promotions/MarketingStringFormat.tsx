@@ -1,22 +1,22 @@
-// Module ID: 17231
-// Function ID: 17232
+// Module ID: 9610
+// Function ID: 9611
 // Name: MarketingStringFormat
 // Dependencies: [3, 1115, 1113, 2]
 // Exports: formatMarketingPlainString, formatMarketingString
 
-// Module 17231 (MarketingStringFormat)
+// Module 9610 (MarketingStringFormat)
 import LoggerDefault from "Logger" /* 3 */;
 import intl2 from "intl" /* 1113 */;
 import intl_util from "intl/util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
-function formatWith(acknowledgedBadgeLabel, arg1, fn) {
+function formatWith(header, arg1, fn) {
   let obj2;
-  if ("" === acknowledgedBadgeLabel) {
+  if ("" === header) {
     return { ok: true, content: "" };
   } else {
     try {
-      const obj = { ok: true, content: fn(obj2.parseRuntimeIcuAsIntlMessage(acknowledgedBadgeLabel, intl2.intl.currentLocale)) };
+      const obj = { ok: true, content: fn(obj2.parseRuntimeIcuAsIntlMessage(header, intl2.intl.currentLocale)) };
       obj2 = intl_util;
       return obj;
     } catch (tmp4) {
@@ -31,17 +31,17 @@ const logger = new LoggerDefault("MarketingStringFormat.tsx");
 const tmp2 = new LoggerDefault("MarketingStringFormat.tsx");
 const result = size.fileFinishedImporting("modules/premium/promotions/MarketingStringFormat.tsx");
 
-export function formatMarketingString(acknowledgedBadgeLabel, arg1) {
+export function formatMarketingString(header, arg1) {
   let closure_0 = arg1;
-  return formatWith(acknowledgedBadgeLabel, "", (arg0) => {
+  return formatWith(header, "", (arg0) => {
     closure_0 = arg0;
     const intl = intl2.intl;
     return intl.format(() => closure_0, closure_0);
   });
 }
-export function formatMarketingPlainString(acknowledgedBadgeLabel, formatVariableValues) {
+export function formatMarketingPlainString(header, formatVariableValues) {
   let closure_0 = formatVariableValues;
-  return formatWith(acknowledgedBadgeLabel, "", (time) => {
+  return formatWith(header, "", (time) => {
     let closure_0 = time;
     const intl = intl2.intl;
     return intl.formatToPlainString(() => closure_0, closure_0);

@@ -1,13 +1,13 @@
-// Module ID: 11735
-// Function ID: 11736
+// Module ID: 12365
+// Function ID: 12366
 // Name: useChannelLoading
-// Dependencies: [32, 19, 11736, 10022, 5724, 2]
+// Dependencies: [32, 19, 12366, 11804, 5837, 2]
 // Exports: default
 
-// Module 11735 (useChannelLoading)
-import reactDefault from "react" /* 5724 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10022 */;
-import ChannelLatestMessageLoadingStatsManagerDefault from "ChannelLatestMessageLoadingStatsManager" /* 11736 */;
+// Module 12365 (useChannelLoading)
+import reactDefault from "react" /* 5837 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 11804 */;
+import ChannelLatestMessageLoadingStatsManagerDefault from "ChannelLatestMessageLoadingStatsManager" /* 12366 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

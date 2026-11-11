@@ -1,21 +1,21 @@
-// Module ID: 19721
-// Function ID: 19722
+// Module ID: 19913
+// Function ID: 19914
 // Name: VoicePanelDockPIPWatchPrompt
-// Dependencies: [19, 17, 6771, 1385, 21, 5142, 575, 11371, 504, 6175, 7982, 19720, 5201, 1652, 5372, 1705, 7053, 1113, 5753, 3184, 7026, 5760, 8102, 7123, 2]
+// Dependencies: [19, 17, 6757, 1385, 21, 5243, 575, 11924, 504, 6288, 6799, 19912, 5314, 1652, 5485, 1705, 7391, 1113, 5866, 3205, 7656, 5873, 7922, 7483, 2]
 
-// Module 19721 (VoicePanelDockPIPWatchPrompt)
+// Module 19913 (VoicePanelDockPIPWatchPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import native from "native" /* 5201 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import StreamActionCreators from "StreamActionCreators" /* 7982 */;
-import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 19720 */;
+import native from "native" /* 5314 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import StreamActionCreators from "StreamActionCreators" /* 6799 */;
+import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 19912 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6771 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

@@ -1,20 +1,20 @@
-// Module ID: 10646
-// Function ID: 10647
+// Module ID: 11562
+// Function ID: 11563
 // Name: verifyGuildMembers
-// Dependencies: [32, 6625, 502, 5054, 1385, 5060, 1403, 572, 10444, 559, 6960, 4986, 2]
+// Dependencies: [32, 6737, 502, 5155, 1385, 5161, 1403, 572, 8785, 559, 6854, 5087, 2]
 // Exports: verifyGuildMembers
 
-// Module 10646 (verifyGuildMembers)
+// Module 11562 (verifyGuildMembers)
 import BackoffDefault from "Backoff" /* 559 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import Timers from "Timers" /* 4986 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5060 */;
-import GatewayConnectionStore2 from "GatewayConnectionStore" /* 6625 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
-import createMessage from "createMessage" /* 10444 */;
+import Timers from "Timers" /* 5087 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5161 */;
+import GatewayConnectionStore2 from "GatewayConnectionStore" /* 6737 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
+import createMessage from "createMessage" /* 8785 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import UserStore from "UserStore" /* 1385 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,24 +1,24 @@
-// Module ID: 12988
-// Function ID: 12989
+// Module ID: 13654
+// Function ID: 13655
 // Name: ConjurePublishRating
-// Dependencies: [32, 19, 17, 5143, 21, 5142, 575, 1652, 5372, 5763, 5764, 10190, 10188, 7046, 12989, 504, 12448, 5753, 5376, 12990, 2118, 12990, 1113, 4028, 2]
+// Dependencies: [32, 19, 17, 5244, 21, 5243, 575, 1652, 5485, 5876, 5877, 10115, 10113, 7364, 13655, 504, 13254, 5866, 5489, 13656, 2118, 13656, 1113, 4079, 2]
 // Exports: default
 
-// Module 12988 (ConjurePublishRating)
+// Module 13654 (ConjurePublishRating)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import spring_spring from "spring/spring" /* 5763 */;
-import springPresets from "springPresets" /* 5764 */;
-import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12990 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import spring_spring from "spring/spring" /* 5876 */;
+import springPresets from "springPresets" /* 5877 */;
+import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 13656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -86,13 +86,13 @@ function Star(rating) {
   ConjurePublishRatingTsx1.__initData = tmp7;
   const animatedStyle = obj2.useAnimatedStyle(ConjurePublishRatingTsx1);
   if (tmp2) {
-    StarOutlineIcon = tmp3(10190).StarIcon;
+    StarOutlineIcon = tmp3(10115).StarIcon;
   } else {
-    StarOutlineIcon = tmp3(10188).StarOutlineIcon;
+    StarOutlineIcon = tmp3(10113).StarOutlineIcon;
   }
   const obj3 = { style: tmp.star, accessibilityRole: "button", accessibilityLabel: tmp3Result.conjurePublishRatingOptionLabel(rating), disabled: null != picked, hitSlop: reducedMotion(575).space.PX_8, onPress, children: closure_7(View, obj4) };
-  const PressableOpacity = tmp3(7046).PressableOpacity;
-  tmp3Result = rating(12989);
+  const PressableOpacity = tmp3(7364).PressableOpacity;
+  tmp3Result = rating(13655);
   obj4 = { style: animatedStyle, children: closure_7(StarOutlineIcon, obj5) };
   View = reducedMotion(1652).View;
   const colors = reducedMotion(575).colors;
@@ -191,7 +191,7 @@ export default function ConjurePublishRating(arg0) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             ActionSheetActionCreatorsDefault;
             const obj = { rating: tmp2 };
-            const tmp7 = asyncRequire(12990, dependencyMap.paths);
+            const tmp7 = asyncRequire(13656, dependencyMap.paths);
             openLazy(tmp7, ConjureRatingFeedbackSheet.CONJURE_RATING_FEEDBACK_SHEET_KEY, obj);
           }
         }

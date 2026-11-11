@@ -1,13 +1,13 @@
-// Module ID: 7898
-// Function ID: 7899
+// Module ID: 8714
+// Function ID: 8715
 // Name: ArtProfileAnalytics
-// Dependencies: [32, 5, 1072, 7895, 4986, 1252, 2]
+// Dependencies: [32, 5, 1072, 8711, 5087, 1252, 2]
 // Exports: trackAndroidArtProfileSnapshot
 
-// Module 7898 (ArtProfileAnalytics)
+// Module 8714 (ArtProfileAnalytics)
 import Constants from "Constants" /* 1072 */;
-import Timers from "Timers" /* 4986 */;
-import react_nativeDefault from "react-native" /* 7895 */;
+import Timers from "Timers" /* 5087 */;
+import react_nativeDefault from "react-native" /* 8711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

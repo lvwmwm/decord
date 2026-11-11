@@ -1,21 +1,21 @@
-// Module ID: 10158
-// Function ID: 10159
+// Module ID: 11218
+// Function ID: 11219
 // Name: usePremiumFeatureUpsellGetNitro
-// Dependencies: [32, 19, 2176, 7709, 1387, 1072, 7390, 7686, 6591, 8607, 5838, 1113, 5325, 2]
+// Dependencies: [32, 19, 2176, 9232, 1387, 1072, 7852, 9524, 6704, 9249, 5951, 1113, 5438, 2]
 // Exports: default
 
-// Module 10158 (usePremiumFeatureUpsellGetNitro)
+// Module 11218 (usePremiumFeatureUpsellGetNitro)
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import ChatInputUtils from "ChatInputUtils" /* 5325 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6591 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7390 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7686 */;
-import UserOfferActionCreators from "UserOfferActionCreators" /* 8607 */;
+import ChatInputUtils from "ChatInputUtils" /* 5438 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6704 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 9249 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9524 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import UserOfferStore from "UserOfferStore" /* 7709 */;
+import UserOfferStore from "UserOfferStore" /* 9232 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;

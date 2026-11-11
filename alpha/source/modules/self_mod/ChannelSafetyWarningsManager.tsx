@@ -1,15 +1,15 @@
-// Module ID: 19850
-// Function ID: 19851
+// Module ID: 20042
+// Function ID: 20043
 // Name: ChannelSafetyWarningsManager
-// Dependencies: [4991, 5045, 11412, 11451, 19851, 7353, 2]
+// Dependencies: [5092, 5146, 11971, 12220, 20043, 7816, 2]
 
-// Module 19850 (ChannelSafetyWarningsManager)
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11412 */;
-import InappropriateConversationUtils from "InappropriateConversationUtils" /* 11451 */;
-import showTakeoverModal2 from "showTakeoverModal" /* 19851 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+// Module 20042 (ChannelSafetyWarningsManager)
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11971 */;
+import InappropriateConversationUtils from "InappropriateConversationUtils" /* 12220 */;
+import showTakeoverModal2 from "showTakeoverModal" /* 20043 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 function handleChannelSelect(channelId) {

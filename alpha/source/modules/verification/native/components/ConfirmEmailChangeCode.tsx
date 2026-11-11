@@ -1,13 +1,13 @@
-// Module ID: 7148
-// Function ID: 7149
+// Module ID: 7699
+// Function ID: 7700
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 7066, 21, 1499, 1092, 7149, 7146, 1113, 2]
+// Dependencies: [5, 19, 7676, 21, 1499, 1092, 7700, 7697, 1113, 2]
 // Exports: default
 
-// Module 7148 (ConfirmEmailChangeCode)
+// Module 7699 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7066 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7676 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(7149);
+  navigation(7700);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;

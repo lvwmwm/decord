@@ -1,227 +1,78 @@
-// Module ID: 9357
-// Function ID: 9358
+// Module ID: 10566
+// Function ID: 10567
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 2130, 5895, 9352, 5899, 206, 504, 38, 9358, 2]
+// Dependencies: [32, 19, 502, 6008, 504, 38, 10567, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 9357 (useSecureFramesPairwiseFingerprint)
-import Constants from "Constants" /* 5899 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9352 */;
+// Module 10566 (useSecureFramesPairwiseFingerprint)
+import SecureFramesBoundPairwiseFingerprint from "SecureFramesBoundPairwiseFingerprint" /* 10567 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4, constants, obj;
-
-let SecureFramesPairwiseFingerprintMode = function _computeNativeDisplayPair() {
-  obj = _asyncToGenerator(async function(arg0, value) {
-    let obj2;
-    let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let closure_3;
-        let secureFramesRosterMapEntry;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let closure_2 = tmp3;
-            let c1 = 0;
-            closure_3 = undefined;
-            secureFramesRosterMapEntry = RTCConnectionStore.getSecureFramesRosterMapEntry(closure_0);
-            const rTCConnection = RTCConnectionStore.getRTCConnection();
-            if (null != secureFramesRosterMapEntry) {
-              if (null != rTCConnection) {
-                const self = this;
-                const self2 = this;
-                const promise = new Promise((arg0) => {
-                  closure_0 = arg0;
-                  const mLSPairwiseFingerprint = rTCConnection.getMLSPairwiseFingerprint(closure_2_9, closure_0, (arg0) => {
-                    const uint8Array = new Uint8Array(arg0);
-                    return closure_0(uint8Array);
-                  });
-                });
-                c3 = 1;
-                c4 = 1;
-                const obj5 = { value: promise, done: false };
-                return obj5;
-              }
-            }
-            c4 = 3;
-            return { value: null, done: true };
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj6 = { value, done: true };
-          return obj6;
-        } else {
-          closure_3 = value;
-          value = { fingerprint: obj2.fromByteArray(closure_3), fingerprintUserKey: secureFramesRosterMapEntry };
-          obj2 = closure_130_1(closure_130_2[8]);
-          c4 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        }
-      } catch (tmp13) {
-        c4 = 3;
-        throw tmp13;
-      }
-    }
-  });
-  return obj(...arguments);
-};
-let _asyncToGenerator = _asyncToGenerator_mod;
-let closure_9 = SecureFramesConstants.SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION;
-const Features = Constants.Features;
-SecureFramesPairwiseFingerprintMode = { FROZEN: "frozen", LIVE: "live" };
+let react = react_mod;
+const SecureFramesPairwiseFingerprintMode = { FROZEN: "frozen", LIVE: "live" };
 const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesPairwiseFingerprint.tsx");
 
 export { SecureFramesPairwiseFingerprintMode };
 export function useSecureFramesPairwiseFingerprint(userId) {
   let closure_4;
+  let stateFromStores1;
   userId = userId.userId;
   let FROZEN = userId.mode;
   if (FROZEN === undefined) {
-    let tmp = constants;
-    FROZEN = constants.FROZEN;
+    let tmp = stateFromStores1;
+    FROZEN = stateFromStores1.FROZEN;
   }
   let stateFromStores;
   let first;
+  react = undefined;
   let first1;
-  let id;
-  let stateFromStores2;
-  obj = userId(stateFromStores[9]);
-  const items = [id];
-  stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  const tmp3 = FROZEN(stateFromStores[10])(stateFromStores !== userId, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
-  const tmp4 = first(first1.useState(null), 2);
+  let obj = userId(stateFromStores[4]);
+  const items = [first1];
+  stateFromStores = obj.useStateFromStores(items, () => first1.getId());
+  const tmp3 = FROZEN(stateFromStores[5])(stateFromStores !== userId, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
+  const tmp4 = first(react.useState(null), 2);
   first = tmp4[0];
-  _asyncToGenerator = tmp4[1];
-  const tmp6 = first(first1.useState(false), 2);
+  react = tmp4[1];
+  const tmp6 = first(react.useState(false), 2);
   first1 = tmp6[0];
-  id = tmp6[1];
-  let obj2 = userId(stateFromStores[9]);
-  const items1 = [stateFromStores2];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => RTCConnectionStore.getSecureFramesRosterMapEntry(userId));
-  let obj3 = userId(stateFromStores[9]);
-  const items2 = [stateFromStores2];
-  stateFromStores2 = obj3.useStateFromStores(items2, () => RTCConnectionStore.getSecureFramesRosterMapEntry(stateFromStores));
+  let closure_6 = tmp6[1];
+  const items1 = [closure_6];
+  const obj2 = userId(stateFromStores[4]);
+  stateFromStores1 = obj2.useStateFromStores(items1, () => RTCConnectionStore.getSecureFramesRosterMapEntry(userId));
+  const items2 = [closure_6];
+  const obj3 = userId(stateFromStores[4]);
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => RTCConnectionStore.getSecureFramesRosterMapEntry(stateFromStores));
   const items3 = [userId];
-  const callback = first1.useCallback(_asyncToGenerator(async (arg0, value) => {
-    let v3;
-    function computeNativeDisplayPair() {
-      return closure_1_12(...arguments);
-    }
-    if (userId === 2) {
-      userId = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        userId = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
-            userId = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            userId = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else if (stateFromStores1.supports(constants.MLS_PAIRWISE_FINGERPRINTS)) {
-            c1 = 2;
-            userId = 1;
-            const obj5 = { value: computeNativeDisplayPair(userId), done: false };
-            return obj5;
-          } else {
-            c1 = 1;
-            const obj4 = userId(stateFromStores[11]);
-            userId = 1;
-            const obj6 = { value: obj4.computeBoundPairwiseFingerprint(userId), done: false };
-            return obj6;
-          }
-        } else {
-          if (1 === tmp3) {
-            if (arg0 === 1) {
-              userId = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              userId = 3;
-              const obj7 = { value, done: true };
-              return obj7;
-            }
-          } else if (arg0 === 1) {
-            userId = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            userId = 3;
-            obj = { value, done: true };
-            return obj;
-          }
-          userId = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        }
-      } catch (tmp8) {
-        userId = 3;
-        throw tmp8;
-      }
-    }
-  }), items3);
-  const ref = first1.useRef(0);
-  constants = first1.useRef(null);
-  const ref2 = first1.useRef(false);
+  const callback = react.useCallback(() => {
+    const obj = SecureFramesBoundPairwiseFingerprint;
+    return obj.computeBoundPairwiseFingerprint(userId);
+  }, items3);
+  const ref = react.useRef(0);
+  let closure_11 = react.useRef(null);
+  const ref2 = react.useRef(false);
   const items4 = [FROZEN, callback, stateFromStores1, stateFromStores2];
-  const effect = first1.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (null != stateFromStores1) {
       if (null != stateFromStores2) {
-        if (FROZEN !== constants.FROZEN) {
+        if (FROZEN !== stateFromStores1.FROZEN) {
           ref2.current = true;
           const sum = ref.current + 1;
           ref.current = sum;
           userId = sum;
           const _setTimeout = setTimeout;
-          constants.current = setTimeout(() => {
-            id(true);
+          closure_11.current = setTimeout(() => {
+            closure_6(true);
             const promise = callback();
             promise.then((result) => {
               if (closure_1_0 === ref.current) {
                 if (null != result) {
                   closure_2_4(result);
                 }
-                id(false);
+                closure_2_6(false);
               }
             });
           }, 0);
@@ -229,14 +80,14 @@ export function useSecureFramesPairwiseFingerprint(userId) {
       }
     }
   }, items4);
-  const effect1 = first1.useEffect(() => () => {
+  const effect1 = react.useEffect(() => () => {
     if (null != ref.current) {
       const _clearTimeout = clearTimeout;
       clearTimeout(tmp.current);
     }
   }, []);
   const items5 = [first, first1];
-  return first1.useMemo(() => {
+  return react.useMemo(() => {
     let fingerprintUserKey;
     let fingerprint;
     if (first != null) {
@@ -245,7 +96,7 @@ export function useSecureFramesPairwiseFingerprint(userId) {
     if (fingerprint == null) {
       fingerprint = null;
     }
-    obj = { fingerprint, fingerprintUserKey, loading: first1 };
+    const obj = { fingerprint, fingerprintUserKey, loading: first1 };
     fingerprintUserKey = undefined;
     if (first != null) {
       fingerprintUserKey = tmp.fingerprintUserKey;

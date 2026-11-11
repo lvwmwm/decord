@@ -1,19 +1,19 @@
-// Module ID: 12959
-// Function ID: 12960
+// Module ID: 13631
+// Function ID: 13632
 // Name: ConjurePlanAutomodExamples
-// Dependencies: [19, 17, 21, 5142, 575, 12960, 1187, 1411, 5753, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 13632, 1187, 1411, 5866, 2]
 // Exports: default
 
-// Module 12959 (ConjurePlanAutomodExamples)
+// Module 13631 (ConjurePlanAutomodExamples)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 12960 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 13632 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,14 +71,14 @@ function ExampleRow(showReason) {
   const obj4 = { style: tmp.rowBody, children: items3 };
   items3 = [_false(Text_Text.Text, { variant: "body-sm/semibold", color: "text-strong", children: username }), , ];
   const obj5 = { variant: "body-sm/normal", color: "text-default", children: tmp2Result6.renderPlanAutomodExampleContent(example.content) };
-  const Text = tmp2(5753).Text;
+  const Text = tmp2(5866).Text;
   tmp2Result6 = ConjurePlanAutomodOutcomes;
   items3[1] = _false(Text, obj5);
   let tmp11Result = null;
   const tmp11 = _false;
   if (null != result) {
     const obj6 = { variant: "body-xs/normal", color: "text-muted", lineClamp: 2, children: result };
-    tmp11Result = tmp11(tmp2(5753).Text, obj6);
+    tmp11Result = tmp11(tmp2(5866).Text, obj6);
   }
   items3[2] = tmp11Result;
   items2[2] = React3(View, obj4);
@@ -167,7 +167,7 @@ export default function ConjurePlanAutomodExamples(automod) {
   const obj2 = { style: tmp.card, children: items };
   const tmp5 = closure_4;
   if ("" !== trimmed) {
-    const obj3 = { style: tmp.rule, children: closure_3(tmp2(5753).Text, obj4) };
+    const obj3 = { style: tmp.rule, children: closure_3(tmp2(5866).Text, obj4) };
     obj4 = { variant: "body-sm/normal", color: "text-default", lineClamp: 1, children: trimmed };
     tmp7 = closure_3(tmp6, obj3);
   }

@@ -1,23 +1,23 @@
-// Module ID: 5921
-// Function ID: 5922
+// Module ID: 6034
+// Function ID: 6035
 // Name: MediaEngineNative
-// Dependencies: [109, 32, 5, 5899, 5922, 5923, 5924, 5928, 4, 2132, 5929, 5930, 1353, 1357, 5932, 5937, 5992, 2]
+// Dependencies: [109, 32, 5, 6012, 6035, 6036, 6037, 6041, 4, 2132, 6042, 6043, 1353, 1357, 6045, 6050, 6105, 2]
 
-// Module 5921 (MediaEngineNative)
+// Module 6034 (MediaEngineNative)
 import _modDef1353 from "module_1353" /* 1353 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import inject from "inject" /* 2132 */;
-import VideoDefault from "Video" /* 5924 */;
-import CameraDefault from "Camera" /* 5928 */;
-import MediaEngineEvent from "MediaEngineEvent" /* 5929 */;
-import ConnectionDefault from "Connection" /* 5932 */;
-import Devices from "Devices" /* 5992 */;
+import VideoDefault from "Video" /* 6037 */;
+import CameraDefault from "Camera" /* 6041 */;
+import MediaEngineEvent from "MediaEngineEvent" /* 6042 */;
+import ConnectionDefault from "Connection" /* 6045 */;
+import Devices from "Devices" /* 6105 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5899 */;
-import Constants_mod2 from "Constants" /* 5922 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5923 */;
+import Constants_mod from "Constants" /* 6012 */;
+import Constants_mod2 from "Constants" /* 6035 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 6036 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp10;
 let unpackModuleId;
-const pollConnectionStatsDefault = tmp10(5930);
+const pollConnectionStatsDefault = tmp10(6043);
 let closure_3 = ["id", "useGraphicsCapture", "useGraphicsCaptureApiLevel"];
 let Constants = Constants_mod2;
 ({ QUEUE_METRICS_INTERVAL_MS: metroImportDefault, SIDECHAIN_COMPRESSION_MAX_RATIO: metroImportAll, SIDECHAIN_COMPRESSION_MAX_THRESHOLD: c9, SIDECHAIN_COMPRESSION_MIN_RATIO: c10, SIDECHAIN_COMPRESSION_MIN_THRESHOLD: unpackModuleId, ProcessPriority: closure_12 } = Constants);
@@ -331,7 +331,7 @@ class MediaEngineNative extends TypedEventEmitter {
       return obj(...arguments);
     };
     let c1 = false;
-    obj.on(obj(5929).MediaEngineEvent.Destroy, () => {
+    obj.on(obj(6042).MediaEngineEvent.Destroy, () => {
       c1 = true;
       return true;
     });
@@ -356,129 +356,126 @@ class MediaEngineNative extends TypedEventEmitter {
   supports(arg0) {
     const tmp = constants3;
     if (constants3.LEGACY_AUDIO_SUBSYSTEM === arg0) {
-      const obj49 = inject;
-      return obj49.supportsFeature(constants5.VOICE_LEGACY_SUBSYSTEM);
-    } else if (tmp.EXPERIMENTAL_AUDIO_SUBSYSTEM === arg0) {
       const obj48 = inject;
-      return obj48.supportsFeature(constants5.VOICE_EXPERIMENTAL_SUBSYSTEM);
-    } else if (tmp.AUTOMATIC_AUDIO_SUBSYSTEM === arg0) {
+      return obj48.supportsFeature(constants5.VOICE_LEGACY_SUBSYSTEM);
+    } else if (tmp.EXPERIMENTAL_AUDIO_SUBSYSTEM === arg0) {
       const obj47 = inject;
-      return obj47.supportsFeature(constants5.VOICE_AUTOMATIC_SUBSYSTEM);
-    } else if (tmp.AUDIO_SUBSYSTEM_DEFERRED_SWITCH === arg0) {
+      return obj47.supportsFeature(constants5.VOICE_EXPERIMENTAL_SUBSYSTEM);
+    } else if (tmp.AUTOMATIC_AUDIO_SUBSYSTEM === arg0) {
       const obj46 = inject;
-      return obj46.supportsFeature(constants5.VOICE_SUBSYSTEM_DEFERRED_SWITCH);
-    } else if (tmp.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING === arg0) {
+      return obj46.supportsFeature(constants5.VOICE_AUTOMATIC_SUBSYSTEM);
+    } else if (tmp.AUDIO_SUBSYSTEM_DEFERRED_SWITCH === arg0) {
       const obj45 = inject;
-      return obj45.supportsFeature(constants5.VOICE_BYPASS_SYSTEM_AUDIO_INPUT_PROCESSING);
-    } else if (tmp.DEBUG_LOGGING === arg0) {
+      return obj45.supportsFeature(constants5.VOICE_SUBSYSTEM_DEFERRED_SWITCH);
+    } else if (tmp.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING === arg0) {
       const obj44 = inject;
-      return obj44.supportsFeature(constants5.DEBUG_LOGGING);
-    } else if (tmp.SOUNDSHARE === arg0) {
+      return obj44.supportsFeature(constants5.VOICE_BYPASS_SYSTEM_AUDIO_INPUT_PROCESSING);
+    } else if (tmp.DEBUG_LOGGING === arg0) {
       const obj43 = inject;
-      return obj43.supportsFeature(constants5.SOUNDSHARE);
-    } else if (tmp.SCREEN_SOUNDSHARE === arg0) {
+      return obj43.supportsFeature(constants5.DEBUG_LOGGING);
+    } else if (tmp.SOUNDSHARE === arg0) {
       const obj42 = inject;
-      return obj42.supportsFeature(constants5.SCREEN_SOUNDSHARE);
-    } else if (tmp.ELEVATED_HOOK === arg0) {
+      return obj42.supportsFeature(constants5.SOUNDSHARE);
+    } else if (tmp.SCREEN_SOUNDSHARE === arg0) {
       const obj41 = inject;
-      return obj41.supportsFeature(constants5.ELEVATED_HOOK);
-    } else if (tmp.LOOPBACK === arg0) {
+      return obj41.supportsFeature(constants5.SCREEN_SOUNDSHARE);
+    } else if (tmp.ELEVATED_HOOK === arg0) {
       const obj40 = inject;
-      return obj40.supportsFeature(constants5.LOOPBACK);
-    } else if (tmp.WUMPUS_VIDEO === arg0) {
+      return obj40.supportsFeature(constants5.ELEVATED_HOOK);
+    } else if (tmp.LOOPBACK === arg0) {
       const obj39 = inject;
-      return obj39.supportsFeature(constants5.WUMPUS_VIDEO);
-    } else if (tmp.HYBRID_VIDEO === arg0) {
+      return obj39.supportsFeature(constants5.LOOPBACK);
+    } else if (tmp.WUMPUS_VIDEO === arg0) {
       const obj38 = inject;
-      return obj38.supportsFeature(constants5.HYBRID_VIDEO);
+      return obj38.supportsFeature(constants5.WUMPUS_VIDEO);
+    } else if (tmp.HYBRID_VIDEO === arg0) {
+      const obj37 = inject;
+      return obj37.supportsFeature(constants5.HYBRID_VIDEO);
     } else {
       if (tmp.ATTENUATION !== arg0) {
         if (tmp.VIDEO_HOOK !== arg0) {
           if (tmp.EXPERIMENTAL_SOUNDSHARE === arg0) {
-            const obj36 = inject;
-            return obj36.supportsFeature(constants5.SOUNDSHARE_LOOPBACK);
-          } else if (tmp.REMOTE_LOCUS_NETWORK_CONTROL === arg0) {
             const obj35 = inject;
-            return obj35.supportsFeature(constants5.REMOTE_LOCUS_NETWORK_CONTROL);
-          } else if (tmp.SCREEN_PREVIEWS === arg0) {
+            return obj35.supportsFeature(constants5.SOUNDSHARE_LOOPBACK);
+          } else if (tmp.REMOTE_LOCUS_NETWORK_CONTROL === arg0) {
             const obj34 = inject;
-            return obj34.supportsFeature(constants5.SCREEN_PREVIEWS);
-          } else if (tmp.CLIPS === arg0) {
+            return obj34.supportsFeature(constants5.REMOTE_LOCUS_NETWORK_CONTROL);
+          } else if (tmp.SCREEN_PREVIEWS === arg0) {
             const obj33 = inject;
-            return obj33.supportsFeature(constants5.CLIPS);
-          } else if (tmp.CLIPS_RECORDING_READY_EVENTS === arg0) {
+            return obj33.supportsFeature(constants5.SCREEN_PREVIEWS);
+          } else if (tmp.CLIPS === arg0) {
             const obj32 = inject;
-            return obj32.supportsFeature(constants5.CLIPS_RECORDING_READY_EVENTS);
-          } else if (tmp.UNIFIED_CAPTURE_BROKER === arg0) {
+            return obj32.supportsFeature(constants5.CLIPS);
+          } else if (tmp.CLIPS_RECORDING_READY_EVENTS === arg0) {
             const obj31 = inject;
-            return obj31.supportsFeature(constants5.UNIFIED_CAPTURE_BROKER);
-          } else if (tmp.CONJURE_SNAPSHOT === arg0) {
+            return obj31.supportsFeature(constants5.CLIPS_RECORDING_READY_EVENTS);
+          } else if (tmp.UNIFIED_CAPTURE_BROKER === arg0) {
             const obj30 = inject;
-            return obj30.supportsFeature(constants5.CONJURE_SNAPSHOT);
-          } else if (tmp.WINDOW_PREVIEWS === arg0) {
+            return obj30.supportsFeature(constants5.UNIFIED_CAPTURE_BROKER);
+          } else if (tmp.CONJURE_SNAPSHOT === arg0) {
             const obj29 = inject;
-            return obj29.supportsFeature(constants5.WINDOW_PREVIEWS);
-          } else if (tmp.AUDIO_DEBUG_STATE === arg0) {
+            return obj29.supportsFeature(constants5.CONJURE_SNAPSHOT);
+          } else if (tmp.WINDOW_PREVIEWS === arg0) {
             const obj28 = inject;
-            return obj28.supportsFeature(constants5.AUDIO_DEBUG_STATE);
-          } else if (tmp.CONNECTION_REPLAY === arg0) {
+            return obj28.supportsFeature(constants5.WINDOW_PREVIEWS);
+          } else if (tmp.AUDIO_DEBUG_STATE === arg0) {
             const obj27 = inject;
-            return obj27.supportsFeature(constants5.CONNECTION_REPLAY);
+            return obj27.supportsFeature(constants5.AUDIO_DEBUG_STATE);
+          } else if (tmp.CONNECTION_REPLAY === arg0) {
+            const obj26 = inject;
+            return obj26.supportsFeature(constants5.CONNECTION_REPLAY);
           } else if (tmp.SIMULCAST === arg0) {
-            const obj25 = inject;
-            let supportsFeatureResult = obj25.supportsFeature(constants5.SIMULCAST);
-            const tmp70 = require;
-            const tmp72 = constants5;
+            const obj24 = inject;
+            let supportsFeatureResult = obj24.supportsFeature(constants5.SIMULCAST);
+            const tmp67 = require;
+            const tmp69 = constants5;
             if (supportsFeatureResult) {
-              const tmp70Result = tmp70(2132);
-              supportsFeatureResult = tmp70Result.supportsFeature(tmp72.SIMULCAST_BUGFIX);
+              const tmp67Result = tmp67(2132);
+              supportsFeatureResult = tmp67Result.supportsFeature(tmp69.SIMULCAST_BUGFIX);
             }
             return supportsFeatureResult;
           } else if (tmp.RTC_REGION_RANKING === arg0) {
-            const obj24 = inject;
-            return obj24.supportsFeature(constants5.RTC_REGION_RANKING);
-          } else if (tmp.ELECTRON_VIDEO === arg0) {
             const obj23 = inject;
-            return obj23.supportsFeature(constants5.ELECTRON_VIDEO);
-          } else if (tmp.MEDIAPIPE === arg0) {
+            return obj23.supportsFeature(constants5.RTC_REGION_RANKING);
+          } else if (tmp.ELECTRON_VIDEO === arg0) {
             const obj22 = inject;
-            return obj22.supportsFeature(constants5.MEDIAPIPE);
+            return obj22.supportsFeature(constants5.ELECTRON_VIDEO);
+          } else if (tmp.MEDIAPIPE === arg0) {
+            const obj21 = inject;
+            return obj21.supportsFeature(constants5.MEDIAPIPE);
           } else if (tmp.VIDEO_BACKGROUND_FILTER === arg0) {
-            const obj19 = utils_PlatformUtils;
-            let isDesktopResult = obj19.isDesktop();
+            const obj18 = utils_PlatformUtils;
+            let isDesktopResult = obj18.isDesktop();
             if (isDesktopResult) {
-              const tmp56Result = inject;
-              isDesktopResult = tmp56Result.supportsFeature(constants5.MEDIAPIPE);
+              const tmp53Result = inject;
+              isDesktopResult = tmp53Result.supportsFeature(constants5.MEDIAPIPE);
             }
             if (!isDesktopResult) {
-              const tmp56Result2 = inject;
-              isDesktopResult = tmp56Result2.supportsFeature(constants5.VIDEO_BACKGROUND_FILTER);
+              const tmp53Result2 = inject;
+              isDesktopResult = tmp53Result2.supportsFeature(constants5.VIDEO_BACKGROUND_FILTER);
             }
             return isDesktopResult;
           } else if (tmp.FIXED_KEYFRAME_INTERVAL === arg0) {
-            const obj18 = inject;
-            return obj18.supportsFeature(constants5.FIXED_KEYFRAME_INTERVAL);
-          } else if (tmp.FIRST_FRAME_CALLBACK === arg0) {
             const obj17 = inject;
-            return obj17.supportsFeature(constants5.FIRST_FRAME_CALLBACK);
-          } else if (tmp.REMOTE_USER_MULTI_STREAM === arg0) {
+            return obj17.supportsFeature(constants5.FIXED_KEYFRAME_INTERVAL);
+          } else if (tmp.FIRST_FRAME_CALLBACK === arg0) {
             const obj16 = inject;
-            return obj16.supportsFeature(constants5.REMOTE_USER_MULTI_STREAM);
-          } else if (tmp.IMAGE_QUALITY_MEASUREMENT === arg0) {
+            return obj16.supportsFeature(constants5.FIRST_FRAME_CALLBACK);
+          } else if (tmp.REMOTE_USER_MULTI_STREAM === arg0) {
             const obj15 = inject;
-            return obj15.supportsFeature(constants5.IMAGE_QUALITY_MEASUREMENT);
-          } else if (tmp.GO_LIVE_HARDWARE === arg0) {
+            return obj15.supportsFeature(constants5.REMOTE_USER_MULTI_STREAM);
+          } else if (tmp.IMAGE_QUALITY_MEASUREMENT === arg0) {
             const obj14 = inject;
-            return obj14.supportsFeature(constants5.GO_LIVE_HARDWARE);
-          } else if (tmp.SCREEN_CAPTURE_KIT === arg0) {
+            return obj14.supportsFeature(constants5.IMAGE_QUALITY_MEASUREMENT);
+          } else if (tmp.GO_LIVE_HARDWARE === arg0) {
             const obj13 = inject;
-            return obj13.supportsFeature(constants5.SCREEN_CAPTURE_KIT);
-          } else if (tmp.NATIVE_SCREENSHARE_PICKER === arg0) {
+            return obj13.supportsFeature(constants5.GO_LIVE_HARDWARE);
+          } else if (tmp.SCREEN_CAPTURE_KIT === arg0) {
             const obj12 = inject;
-            return obj12.supportsFeature(constants5.NATIVE_SCREENSHARE_PICKER);
-          } else if (tmp.MLS_PAIRWISE_FINGERPRINTS === arg0) {
+            return obj12.supportsFeature(constants5.SCREEN_CAPTURE_KIT);
+          } else if (tmp.NATIVE_SCREENSHARE_PICKER === arg0) {
             const obj11 = inject;
-            return obj11.supportsFeature(constants5.MLS_PAIRWISE_FINGERPRINTS);
+            return obj11.supportsFeature(constants5.NATIVE_SCREENSHARE_PICKER);
           } else if (tmp.DAVE_PAIRWISE_FINGERPRINT === arg0) {
             const obj10 = inject;
             return obj10.supportsFeature(constants5.DAVE_PAIRWISE_FINGERPRINT);
@@ -553,19 +550,19 @@ class MediaEngineNative extends TypedEventEmitter {
           }
         }
       }
-      const tmp106 = _modDef1353;
+      const tmp103 = _modDef1353;
       let family;
-      const tmp104 = importDefault;
-      if (tmp106 != null) {
-        const os = tmp106.os;
+      const tmp101 = importDefault;
+      if (tmp103 != null) {
+        const os = tmp103.os;
         if (os != null) {
           family = os.family;
         }
       }
       let isMatch = null != family;
       if (isMatch) {
-        const obj37 = /^win/i;
-        isMatch = obj37.test(tmp104(1353).os.family);
+        const obj36 = /^win/i;
+        isMatch = obj36.test(tmp101(1353).os.family);
       }
       return isMatch;
     }
@@ -578,8 +575,8 @@ class MediaEngineNative extends TypedEventEmitter {
       videoSupported.experiments = undefined;
     }
     let flag = videoSupported.videoSupported;
-    const create = self(5932).create;
-    const tmp3 = self(5932);
+    const create = self(6045).create;
+    const tmp3 = self(6045);
     if (flag == null) {
       flag = true;
     }
@@ -587,7 +584,7 @@ class MediaEngineNative extends TypedEventEmitter {
       flag = self.supports(constants3.VIDEO);
     }
     obj2 = create(arg0, arg1, videoSupported, flag);
-    obj2.on(obj2(5937).BaseConnectionEvent.Destroy, (arg0) => {
+    obj2.on(obj2(6050).BaseConnectionEvent.Destroy, (arg0) => {
       const connections = self.connections;
       connections.delete(arg0);
       if (self.connectionsEmpty()) {
@@ -601,10 +598,10 @@ class MediaEngineNative extends TypedEventEmitter {
         }
       }
     });
-    obj2.on(obj2(5937).BaseConnectionEvent.Connected, () => {
+    obj2.on(obj2(6050).BaseConnectionEvent.Connected, () => {
       obj2.setVideoBroadcast(self.shouldConnectionBroadcastVideo(obj2));
     });
-    obj2.on(obj2(5937).BaseConnectionEvent.Silence, (arg0) => {
+    obj2.on(obj2(6050).BaseConnectionEvent.Silence, (arg0) => {
       self.emit(MediaEngineEvent.MediaEngineEvent.Silence, arg0);
     });
     let connections = self.connections;
@@ -624,7 +621,7 @@ class MediaEngineNative extends TypedEventEmitter {
         let result = setNativeThreadsPriority(videoSupported.threadPriorityConfiguration);
       }
     }
-    self.emit(tmp(5929).MediaEngineEvent.Connection, obj2);
+    self.emit(tmp(6042).MediaEngineEvent.Connection, obj2);
     return obj2;
   }
   shouldConnectionBroadcastVideo(context) {
@@ -1898,7 +1895,7 @@ class MediaEngineNative extends TypedEventEmitter {
       const voiceEngine1 = tmp2Result5.getVoiceEngine();
       const setEmitVADLevel2 = voiceEngine1.setEmitVADLevel2;
       if (!tmp) {
-        tmp = self.listenerCount(tmp2(5929).MediaEngineEvent.VoiceActivity) > 0;
+        tmp = self.listenerCount(tmp2(6042).MediaEngineEvent.VoiceActivity) > 0;
       }
       setEmitVADLevel2(tmp);
     } else {
@@ -1907,7 +1904,7 @@ class MediaEngineNative extends TypedEventEmitter {
       let tmp7 = tmp;
       const setEmitVADLevel = voiceEngine2.setEmitVADLevel;
       if (!tmp) {
-        tmp7 = self.listenerCount(tmp2(5929).MediaEngineEvent.VoiceActivity) > 0;
+        tmp7 = self.listenerCount(tmp2(6042).MediaEngineEvent.VoiceActivity) > 0;
       }
       const obj4 = { echoCancellation: null, noiseSuppression: null, automaticGainControl: enabled1, noiseCancellation: null, noiseCancellationDuringProcessing: null };
       ({ echoCancellation: obj5.echoCancellation, noiseSuppression: obj5.noiseSuppression, automaticGainControlConfig: automaticGainControlConfig2 } = arg1);
@@ -2037,7 +2034,7 @@ class MediaEngineNative extends TypedEventEmitter {
     const replay = obj.createReplay(arg0, arg1);
     let tmp2 = null;
     if (null != replay) {
-      replay.on(self(5937).BaseConnectionEvent.Destroy, (arg0) => {
+      replay.on(self(6050).BaseConnectionEvent.Destroy, (arg0) => {
         const connections = self.connections;
         connections.delete(arg0);
         if (self.connectionsEmpty()) {
@@ -2049,7 +2046,7 @@ class MediaEngineNative extends TypedEventEmitter {
       connections.add(replay);
       const obj3 = self(2132);
       obj3.setProcessPriority(constants.HIGH);
-      self.emit(self(5929).MediaEngineEvent.Connection, replay);
+      self.emit(self(6042).MediaEngineEvent.Connection, replay);
       tmp2 = replay;
     }
     return tmp2;
@@ -2127,7 +2124,7 @@ class MediaEngineNative extends TypedEventEmitter {
         closure_0(arg0, arg1);
       });
     }
-    let tmp5 = this.listenerCount(tmp(5929).MediaEngineEvent.VoiceActivity) > 0;
+    let tmp5 = this.listenerCount(tmp(6042).MediaEngineEvent.VoiceActivity) > 0;
     if (tmp5) {
       const tmpResult = inject;
       tmp5 = null != tmpResult.getVoiceEngine().setEmitVADLevel2;

@@ -1,15 +1,15 @@
-// Module ID: 7045
-// Function ID: 7046
+// Module ID: 7383
+// Function ID: 7384
 // Name: AnimatedPressableHighlight
-// Dependencies: [19, 17, 21, 1652, 7046, 7048, 5726, 575, 1377, 2]
+// Dependencies: [19, 17, 21, 1652, 7364, 7384, 5839, 575, 1377, 2]
 
-// Module 7045 (AnimatedPressableHighlight)
+// Module 7383 (AnimatedPressableHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5726 */;
-import Pressables from "Pressables" /* 7046 */;
-import useIOSPressEffects from "useIOSPressEffects" /* 7048 */;
+import useToken from "useToken" /* 5839 */;
+import Pressables from "Pressables" /* 7364 */;
+import useIOSPressEffects from "useIOSPressEffects" /* 7384 */;
 import react from "react" /* 19 */;
 import module_1652 from "module_1652" /* 1652 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;

@@ -1,19 +1,19 @@
-// Module ID: 5325
-// Function ID: 5326
+// Module ID: 5438
+// Function ID: 5439
 // Name: ChatInputUtils
-// Dependencies: [5326, 2017, 5327, 1625, 1497, 5328, 2]
+// Dependencies: [5439, 2017, 5440, 1625, 1497, 5441, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInput, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 5325 (ChatInputUtils)
+// Module 5438 (ChatInputUtils)
 import KeyboardUIStore from "KeyboardUIStore" /* 1497 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 5326 */;
-import useKeyboardType from "useKeyboardType" /* 5327 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 5328 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 5439 */;
+import useKeyboardType from "useKeyboardType" /* 5440 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 5441 */;
 import size from "module_2" /* 2 */;
 
-const f88771 = (item) => {
+const f89654 = (item) => {
   let tmp = typeof item === "number";
   if (typeof item === "number") {
     const obj = ScreenIndexFrozen;
@@ -40,7 +40,7 @@ function getHighestIndexForScreenIndexMap(map1) {
             if (!obj.has("conjure-preview")) {
               const _Array = Array;
               const arr = Array.from(obj.keys());
-              const found = arr.filter(f88771);
+              const found = arr.filter(f89654);
               if (0 !== found.length) {
                 const _Math = Math;
                 const items = [];
@@ -165,7 +165,7 @@ export function getHighestActiveScreenIndex() {
     } else {
       const _Array = Array;
       const arr = Array.from(obj.keys());
-      const found = arr.filter(f88771);
+      const found = arr.filter(f89654);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];

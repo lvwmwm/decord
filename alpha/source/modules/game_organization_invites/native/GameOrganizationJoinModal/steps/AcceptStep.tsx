@@ -1,16 +1,16 @@
-// Module ID: 13466
-// Function ID: 13467
+// Module ID: 13980
+// Function ID: 13981
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 13460, 21, 5142, 13457, 1499, 7067, 11824, 5839, 1113, 8045, 8047, 6161, 575, 5753, 2530, 13467, 13468, 13465, 6825, 5760, 2]
+// Dependencies: [5, 32, 19, 13974, 21, 5243, 13971, 1499, 7427, 12447, 5952, 1113, 8142, 8144, 6274, 575, 5866, 2549, 13981, 13982, 13979, 6888, 5873, 2]
 // Exports: AcceptStep
 
-// Module 13466 (AcceptStep)
+// Module 13980 (AcceptStep)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13460 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13974 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, id, navigation;
@@ -43,7 +43,7 @@ export function AcceptStep(code) {
   let obj12;
   let obj7;
   code = code.code;
-  const character = code.character;
+  let character = code.character;
   navigation = undefined;
   disabled = undefined;
   _slicedToArray = undefined;
@@ -65,7 +65,6 @@ export function AcceptStep(code) {
       } else {
         let c4;
         try {
-          let characterName;
           let joinStatus;
           let failureReason;
           let guild_join_status;
@@ -79,7 +78,7 @@ export function AcceptStep(code) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              characterName = undefined;
+              character = undefined;
               joinStatus = undefined;
               failureReason = undefined;
               guild_join_status = undefined;
@@ -104,10 +103,10 @@ export function AcceptStep(code) {
           } else {
             if (2 === c5) {
               c4 = 1;
-              const obj5 = { text: intl.string(characterName(failureReason[11]).t.fEptJP) };
+              const obj5 = { text: intl.string(character(failureReason[11]).t.fEptJP) };
               const open = joinStatus(failureReason[10]).open;
-              const tmp14 = joinStatus(failureReason[10]);
-              intl = characterName(failureReason[11]).intl;
+              const tmp13 = joinStatus(failureReason[10]);
+              intl = character(failureReason[11]).intl;
               open("GAME_ORGANIZATION_INVITE_ACCEPT_ERROR", obj5);
             } else if (arg0 === 1) {
               c6 = 3;
@@ -119,20 +118,16 @@ export function AcceptStep(code) {
               obj = { value, done: true };
               return obj;
             } else {
-              characterName = value;
-              joinStatus = characterName.game_organization_join_status;
-              failureReason = characterName.game_organization_join_failure_reason;
-              guild_join_status = characterName.guild_join_status;
-              const obj6 = { joinStatus, failureReason, guildJoinStatus: guild_join_status, characterName };
-              let name;
+              character = value;
+              joinStatus = character.game_organization_join_status;
+              failureReason = character.game_organization_join_failure_reason;
+              guild_join_status = character.guild_join_status;
+              const obj6 = { joinStatus, failureReason, guildJoinStatus: guild_join_status, character };
+              character = closure_130_1;
               const push = closure_130_2.push;
               const OUTCOME = constants.OUTCOME;
-              if (closure_130_1 != null) {
-                name = closure_130_1.name;
-              }
-              characterName = name;
-              if (name == null) {
-                characterName = null;
+              if (closure_130_1 == null) {
+                character = null;
               }
               push(OUTCOME, obj6);
               c4 = 1;
@@ -142,12 +137,12 @@ export function AcceptStep(code) {
             c6 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp28) {
-          closure_3 = tmp28;
+        } catch (tmp27) {
+          closure_3 = tmp27;
           if (0 === c4) {
             c6 = 3;
-            throw tmp28;
-          } else if (1 === tmp30) {
+            throw tmp27;
+          } else if (1 === tmp29) {
             c5 = 1;
           } else {
             c5 = 2;

@@ -1,19 +1,19 @@
-// Module ID: 19343
-// Function ID: 19344
+// Module ID: 19534
+// Function ID: 19535
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 4991, 21, 5142, 575, 8272, 7127, 1113, 5001, 7130, 19302, 7327, 5753, 7129, 5844, 19344, 19345, 504, 2]
+// Dependencies: [32, 19, 17, 5092, 21, 5243, 575, 10856, 7679, 1113, 5102, 7681, 19490, 15950, 5866, 7680, 5957, 19535, 19536, 504, 2]
 // Exports: default
 
-// Module 19343 (ChannelSettingsChangeDefaultForumLayout)
+// Module 19534 (ChannelSettingsChangeDefaultForumLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8272 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10856 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -53,37 +53,37 @@ class ChannelSettingsChangeDefaultForumLayout {
       obj3.saveChannel(channel.id, obj4);
     }, items);
     let obj2 = { title: intl.string(channel(1113).t.mFMDSq), defaultValue: LIST, onChange: callback, hasIcons: true, children: items1 };
-    const TableRadioGroup = channel(7127).TableRadioGroup;
+    const TableRadioGroup = channel(7679).TableRadioGroup;
     intl = channel(1113).intl;
     LIST = tmp3;
     const tmp6 = View;
     if (tmp3 == null) {
-      LIST = tmp7(5001).ForumLayout.LIST;
+      LIST = tmp7(5102).ForumLayout.LIST;
     }
-    let obj3 = { icon: closure_7(channel(19302).GridSquareIcon, {}), label: intl2.string(channel(1113).t["U+rQfW"]), value: channel(5001).ForumLayout.GRID };
-    const TableRadioRow = tmp7(7130).TableRadioRow;
+    let obj3 = { icon: closure_7(channel(19490).GridSquareIcon, {}), label: intl2.string(channel(1113).t["U+rQfW"]), value: channel(5102).ForumLayout.GRID };
+    const TableRadioRow = tmp7(7681).TableRadioRow;
     intl2 = tmp7(1113).intl;
     items1 = [closure_7(TableRadioRow, obj3), ];
-    let obj4 = { icon: closure_7(channel(7327).ListViewIcon, {}), label: intl3.string(channel(1113).t.tuHPRX), value: channel(5001).ForumLayout.LIST };
-    const TableRadioRow2 = tmp7(7130).TableRadioRow;
+    let obj4 = { icon: closure_7(channel(15950).ListViewIcon, {}), label: intl3.string(channel(1113).t.tuHPRX), value: channel(5102).ForumLayout.LIST };
+    const TableRadioRow2 = tmp7(7681).TableRadioRow;
     intl3 = tmp7(1113).intl;
     items1[1] = closure_7(TableRadioRow2, obj4);
     items2 = [closure_8(TableRadioGroup, obj2), , , ];
     const obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-muted", children: intl4.string(channel(1113).t.MbX5Hu) };
-    const Text = tmp7(5753).Text;
+    const Text = tmp7(5866).Text;
     intl4 = tmp7(1113).intl;
     items2[1] = closure_7(Text, obj5);
     const obj6 = { title: intl5.string(channel(1113).t.e4oMl4) };
-    const TableRowGroupTitle = tmp7(7129).TableRowGroupTitle;
+    const TableRowGroupTitle = tmp7(7680).TableRowGroupTitle;
     intl5 = tmp7(1113).intl;
     items2[2] = closure_7(TableRowGroupTitle, obj6);
     const obj7 = { style: tmp.thumbnailImagePortrait, source: tmp10Result };
     const tmp11 = FastImageDefault;
     const tmp9 = closure_7;
-    if (tmp3 === channel(5001).ForumLayout.GRID) {
-      tmp10Result = tmp10(19344);
+    if (tmp3 === channel(5102).ForumLayout.GRID) {
+      tmp10Result = tmp10(19535);
     } else {
-      tmp10Result = tmp10(19345);
+      tmp10Result = tmp10(19536);
     }
     items2[3] = tmp9(tmp11, obj7);
     return closure_8(tmp6, obj);

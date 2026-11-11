@@ -1,17 +1,17 @@
-// Module ID: 6995
-// Function ID: 6996
+// Module ID: 7633
+// Function ID: 7634
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1072, 38, 5367, 1377, 510, 6996, 6997, 4, 6998, 6999, 1378, 1282, 5900, 2]
+// Dependencies: [32, 5, 1072, 38, 5480, 1377, 510, 7634, 7635, 4, 7636, 7637, 1378, 1282, 6013, 2]
 
-// Module 6995 (DesktopNativeUtils)
+// Module 7633 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import flow_Client from "flow/Client" /* 5367 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5900 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 6996 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6997 */;
-import IPCEvents from "IPCEvents" /* 6998 */;
+import flow_Client from "flow/Client" /* 5480 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 6013 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 7634 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 7635 */;
+import IPCEvents from "IPCEvents" /* 7636 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(6999);
+const FileExtensionUtils = tmp2(7637);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -1044,7 +1044,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(6999);
+        const tmpResult = tmp(7637);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;

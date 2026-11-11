@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/overlay/web/v3", scales: [1], hash: "1dfffbe50bba9b687efe0a9e35609701", name: "OverlayWidgets.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==", scales: [1], hash: "f7a76d5ed8f09e68468fde61c9fe1ff1", name: "fr.messages.f7a76d5ed8f09e68468fde61c9fe1ff1.compiled.messages", type: "jsona" });

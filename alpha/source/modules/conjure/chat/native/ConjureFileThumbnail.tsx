@@ -1,20 +1,20 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 13129
+// Function ID: 13130
 // Name: ConjureFileThumbnail
-// Dependencies: [19, 21, 575, 12290, 11203, 12325, 5844, 2]
+// Dependencies: [19, 21, 575, 13092, 11010, 13130, 5957, 2]
 // Exports: default
 
-// Module 12324 (ConjureFileThumbnail)
+// Module 13129 (ConjureFileThumbnail)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 12290 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12325 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 13092 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 13130 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const FileIcon = tmp(11203);
+const FileIcon = tmp(11010);
 function ImageThumbnail(style) {
   let attachmentId;
   let iconColor;

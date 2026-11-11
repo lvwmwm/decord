@@ -1,9 +1,9 @@
-// Module ID: 14152
-// Function ID: 14153
+// Module ID: 14637
+// Function ID: 14638
 // Name: QueryTokenizer
 // Dependencies: [2]
 
-// Module 14152 (QueryTokenizer)
+// Module 14637 (QueryTokenizer)
 import size from "module_2" /* 2 */;
 
 let map;
@@ -393,29 +393,29 @@ class QueryTokenizer {
 }
 const prototype = QueryTokenizer.prototype;
 class Token {
-  constructor(items, type) {
+  constructor(_data, type) {
     const obj = Object.create(new.target.prototype);
-    if (items instanceof Token) {
-      items = [];
-      HermesBuiltin.arraySpread(items, items.match, 0);
+    if (_data instanceof Token) {
+      const items = [];
+      HermesBuiltin.arraySpread(items, _data.match, 0);
       obj.match = items;
-      ({ start: tmp2.start, type: tmp2.type } = items);
-      if (null != items._data) {
-        obj._data = items._data;
+      ({ start: tmp2.start, type: tmp2.type } = _data);
+      if (null != _data._data) {
+        obj._data = _data._data;
       }
-    } else if (null != items) {
+    } else if (null != _data) {
       let items2;
-      if (typeof items === "string") {
-        const items1 = [items];
+      if (typeof _data === "string") {
+        const items1 = [_data];
         items2 = items1;
       } else {
         items2 = [];
-        HermesBuiltin.arraySpread(items2, items, 0);
+        HermesBuiltin.arraySpread(items2, _data, 0);
       }
       obj.match = items2;
       let num2 = 0;
-      if (typeof items !== "string") {
-        let num3 = items.index;
+      if (typeof _data !== "string") {
+        let num3 = _data.index;
         if (num3 == null) {
           num3 = 0;
         }

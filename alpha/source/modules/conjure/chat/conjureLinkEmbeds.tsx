@@ -1,12 +1,12 @@
-// Module ID: 11111
-// Function ID: 11112
+// Module ID: 13693
+// Function ID: 13694
 // Name: conjureLinkEmbeds
-// Dependencies: [5, 32, 19, 1378, 11112, 2]
+// Dependencies: [5, 32, 19, 1378, 13694, 2]
 // Exports: readyConjureLinkEmbeds, resetConjureLinkEmbedsForTests, useConjureLinkPrefetch
 
-// Module 11111 (conjureLinkEmbeds)
+// Module 13693 (conjureLinkEmbeds)
 import URLUtilsDefault from "URLUtils" /* 1378 */;
-import MediaChannelActionCreators from "MediaChannelActionCreators" /* 11112 */;
+import MediaChannelActionCreators from "MediaChannelActionCreators" /* 13694 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 
 let c0, c1, c11, c12, set2;
 
-const f100360 = (item) => {
+const f107125 = (item) => {
   obj = /^https?:\/\//i;
   return obj.test(item);
 };
@@ -28,7 +28,7 @@ function conjureLinkUrls(arr) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f100360));
+    set = new Set(match.filter(f107125));
     HermesBuiltin.arraySpread(items, set, 0);
     return items.slice(0, 4);
   } else {
@@ -284,7 +284,7 @@ export function readyConjureLinkEmbeds(trimmed) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f100360));
+    set = new Set(match.filter(f107125));
     HermesBuiltin.arraySpread(items, set, 0);
     substr = items.slice(0, 4);
   } else {
@@ -315,7 +315,7 @@ export function useConjureLinkPrefetch(arg0) {
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(match.filter(f100360));
+      set = new Set(match.filter(f107125));
       const items = [];
       const tmp6 = set;
       HermesBuiltin.arraySpread(items, set, 0);

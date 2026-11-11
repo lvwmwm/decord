@@ -1,14 +1,14 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 12458
+// Function ID: 12459
 // Name: useGroupDMNitroUpsellAction
-// Dependencies: [19, 1072, 11795, 1252, 7638, 11801, 2]
+// Dependencies: [19, 1072, 12451, 1252, 8537, 12457, 2]
 // Exports: default
 
-// Module 11802 (useGroupDMNitroUpsellAction)
+// Module 12458 (useGroupDMNitroUpsellAction)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import openUserSettings from "openUserSettings" /* 7638 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11795 */;
-import PremiumMarketingUtil from "PremiumMarketingUtil" /* 11801 */;
+import openUserSettings from "openUserSettings" /* 8537 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 12451 */;
+import PremiumMarketingUtil from "PremiumMarketingUtil" /* 12457 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

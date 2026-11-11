@@ -1,30 +1,30 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 16130
+// Function ID: 16131
 // Name: ActivityInviteModalStore
-// Dependencies: [4991, 5013, 11679, 5892, 5084, 1385, 7462, 1072, 9221, 1113, 5778, 11698, 504, 572, 2]
+// Dependencies: [5092, 5114, 7253, 6005, 5185, 1385, 7177, 1072, 10180, 1113, 5891, 12321, 504, 572, 2]
 
-// Module 15971 (ActivityInviteModalStore)
+// Module 16130 (ActivityInviteModalStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
-import _mod9221 from "module_9221" /* 9221 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import LocalActivityStore from "LocalActivityStore" /* 11679 */;
-import PresenceStore from "PresenceStore" /* 5892 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
+import _mod10180 from "module_10180" /* 10180 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import LocalActivityStore from "LocalActivityStore" /* 7253 */;
+import PresenceStore from "PresenceStore" /* 6005 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7462 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7177 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-const _modDef9221 = _mod9221;
+const _modDef10180 = _mod10180;
 let _null, _null2, activity, channel, guild, privateChannelIds, set, user;
 
 let closure_12;
 let unpackModuleId;
-const f110949 = (type) => {
-  if (type.type === _mod9221.AutocompleterResultTypes.USER) {
+const f112056 = (type) => {
+  if (type.type === _mod10180.AutocompleterResultTypes.USER) {
     let tmp7;
     const status = PresenceStore.getStatus(type.data.record.id);
     const id = type.data.record.id;
@@ -46,8 +46,8 @@ const f110949 = (type) => {
 };
 function toHeaderResult(intl) {
   let obj2;
-  const obj = { type: _mod9221.AutocompleterResultTypes.HEADER, sent: false, data: obj2.createHeaderResult(intl) };
-  obj2 = _mod9221;
+  const obj = { type: _mod10180.AutocompleterResultTypes.HEADER, sent: false, data: obj2.createHeaderResult(intl) };
+  obj2 = _mod10180;
   return obj;
 }
 function withSameGameSection(mapped) {
@@ -64,7 +64,7 @@ function withSameGameSection(mapped) {
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp6 = nextResult;
-      if (nextResult.type === _mod9221.AutocompleterResultTypes.USER) {
+      if (nextResult.type === _mod10180.AutocompleterResultTypes.USER) {
         if (true === tmp6.playingSameGame) {
           let arr = items.push(tmp6);
           continue;
@@ -95,7 +95,7 @@ function handlePresenceReset() {
     flag = false;
     if (null != c3) {
       let c0 = null;
-      mapped = mapped.map(f110949);
+      mapped = mapped.map(f112056);
       let flag2 = !mapped.every((item, index) => item === mapped[index]);
       mapped.every((item, index) => item === mapped[index]);
       if (flag2) {
@@ -139,7 +139,7 @@ function handleLocalActivityUpdate() {
   return tmp5;
 }
 ({ ChannelTypes: unpackModuleId, ActivityActionTypes: closure_12 } = Constants);
-let items = [_mod9221.AutocompleterResultTypes.TEXT_CHANNEL, _mod9221.AutocompleterResultTypes.GROUP_DM, _mod9221.AutocompleterResultTypes.USER];
+let items = [_mod10180.AutocompleterResultTypes.TEXT_CHANNEL, _mod10180.AutocompleterResultTypes.GROUP_DM, _mod10180.AutocompleterResultTypes.USER];
 let c14 = null;
 let c15 = null;
 items = [];
@@ -178,7 +178,7 @@ let obj = {
     if (null == _null) {
       const self = this;
       const self2 = this;
-      const tmp4 = new _modDef9221((arg0, str) => {
+      const tmp4 = new _modDef10180((arg0, str) => {
         let status;
         let arr = arg0;
         if ("" === str.trim()) {
@@ -195,12 +195,12 @@ let obj = {
                 }
                 if (null != user) {
                   const push2 = items.push;
-                  const obj = { type: _mod9221.AutocompleterResultTypes.USER, record: user, score: 0 };
+                  const obj = { type: _mod10180.AutocompleterResultTypes.USER, record: user, score: 0 };
                   push2(obj);
                 }
               } else if (channel.isMultiUserDM()) {
                 const push = items.push;
-                const obj2 = { type: _mod9221.AutocompleterResultTypes.GROUP_DM, record: channel, score: 0 };
+                const obj2 = { type: _mod10180.AutocompleterResultTypes.GROUP_DM, record: channel, score: 0 };
                 push(obj2);
               }
             }
@@ -267,7 +267,7 @@ let obj = {
     return false;
   },
   ACTIVITY_INVITE_MODAL_SEND: function handleActivityInviteSend(channelId) {
-    const f110944 = (type) => {
+    const f112051 = (type) => {
       let tmp = type;
       if (type.type !== channelId(closure_1_2[8]).AutocompleterResultTypes.HEADER) {
         const obj = { sent: closure_1_16.includes(type.data.record.id) };
@@ -283,24 +283,24 @@ let obj = {
       const userId = channelId.userId;
       if (null != channelId) {
         let tmp = userId;
-        let obj = userId(11698);
+        let obj = userId(12321);
         const obj2 = { channelId, type: constants.JOIN, activity, location: "Channel Text Area - Invite to Join Modal" };
         const sendActivityInviteResult = obj.sendActivityInvite(obj2);
         sendActivityInviteResult.then(() => {
           items = [];
           items[HermesBuiltin.arraySpread(items, items, 0)] = channelId;
-          mapped = mapped.map(f110944);
+          mapped = mapped.map(f112051);
           closure_18 = withSameGameSection(mapped);
           activityInviteModalStoreClass.emitChange();
         });
       } else if (null != userId) {
         const obj4 = { userId, type: constants.JOIN, activity, location: "Channel Text Area - Invite to Join Modal" };
-        const obj3 = userId(11698);
+        const obj3 = userId(12321);
         const result = obj3.sendActivityInviteUser(obj4);
         result.then(() => {
           items = [];
           items[HermesBuiltin.arraySpread(items, items, 0)] = userId;
-          mapped = mapped.map(f110944);
+          mapped = mapped.map(f112051);
           closure_18 = withSameGameSection(mapped);
           activityInviteModalStoreClass.emitChange();
         });
@@ -366,7 +366,7 @@ let obj = {
           const self2 = this;
           set = new Set(updates.map((user) => user.user.id));
         }
-        mapped = mapped.map(f110949);
+        mapped = mapped.map(f112056);
         let flag2 = !mapped.every((item, index) => item === mapped[index]);
         mapped.every((item, index) => item === mapped[index]);
         if (flag2) {

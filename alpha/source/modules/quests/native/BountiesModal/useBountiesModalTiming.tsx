@@ -1,11 +1,11 @@
-// Module ID: 17282
-// Function ID: 17283
+// Module ID: 17445
+// Function ID: 17446
 // Name: useBountiesModalTiming
-// Dependencies: [32, 19, 6839, 2]
+// Dependencies: [32, 19, 5275, 2]
 // Exports: useBountiesModalTiming
 
-// Module 17282 (useBountiesModalTiming)
-import QuestConstants from "QuestConstants" /* 6839 */;
+// Module 17445 (useBountiesModalTiming)
+import QuestConstants from "QuestConstants" /* 5275 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ export function useBountiesModalTiming(endMode) {
   let tmp5;
   let tmp7;
   let tmp9;
-  const f113130 = () => {
+  const f114241 = () => {
     num = 0;
     if (null != num3) {
       num = num / tmp;
@@ -88,8 +88,8 @@ export function useBountiesModalTiming(endMode) {
   }
   [tmp5, c11] = endMode(useState(tmp), 2);
   const tmp4 = endMode(useState(tmp), 2);
-  [tmp7, c12] = endMode(obj.useState(f113130), 2);
-  const tmp6 = endMode(obj.useState(f113130), 2);
+  [tmp7, c12] = endMode(obj.useState(f114241), 2);
+  const tmp6 = endMode(obj.useState(f114241), 2);
   let tmp8 = endMode(obj.useState(null), 2);
   [tmp9, c13] = tmp8;
   [tmp11, c14] = endMode(obj.useState(num2), 2);

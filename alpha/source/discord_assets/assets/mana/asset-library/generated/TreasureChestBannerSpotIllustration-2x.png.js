@@ -1,8 +1,8 @@
-// Module ID: 15749
-// Function ID: 15750
+// Module ID: 15308
+// Function ID: 15309
 // Dependencies: [2]
 
-// Module 15749
+// Module 15308
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TreasureChestBannerSpotIllustration-2x.png.js");

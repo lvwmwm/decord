@@ -1,14 +1,14 @@
-// Module ID: 10357
-// Function ID: 10358
+// Module ID: 10838
+// Function ID: 10839
 // Name: PencilIcon
-// Dependencies: [19, 21, 575, 5843, 8499, 2]
+// Dependencies: [19, 21, 575, 5956, 9128, 2]
 // Exports: PencilIcon
 
-// Module 10357 (PencilIcon)
+// Module 10838 (PencilIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 8499 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 9128 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,37 +1,37 @@
-// Module ID: 9858
-// Function ID: 9859
+// Module ID: 11345
+// Function ID: 11346
 // Name: ApplicationCommandIndexStore
-// Dependencies: [32, 5, 19, 9859, 2186, 502, 4991, 5054, 5013, 1385, 9860, 6169, 1072, 3, 9861, 9862, 7779, 7782, 6960, 38, 504, 9863, 1252, 2116, 9864, 572, 9865, 9866, 4972, 10442, 5809, 6957, 2]
+// Dependencies: [32, 5, 19, 11346, 2186, 502, 5092, 5155, 5114, 1385, 11347, 6282, 1072, 3, 11348, 11349, 8657, 8660, 6854, 38, 504, 11350, 1252, 2116, 11351, 572, 11352, 11353, 5073, 11359, 5922, 7010, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, isStale, useContextIndexState, useDiscoveryState, useGuildIndexState, useUserIndexState
 
-// Module 9858 (ApplicationCommandIndexStore)
+// Module 11345 (ApplicationCommandIndexStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import Server from "Server" /* 2116 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5809 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6957 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7779 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9862 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9863 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9864 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9866 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 10442 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5922 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
+import fuzzysearchDefault from "fuzzysearch" /* 7010 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8657 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 11349 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 11350 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 11351 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 11353 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 11359 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9859 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 11346 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9860 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6169 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 11347 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
-const f97140 = () => {
+const f100848 = () => {
   let contextState;
   if ("channel" === closure_0.type) {
     contextState = authStore.getContextState(tmp);
@@ -51,7 +51,7 @@ const f97140 = () => {
   }
   return contextState;
 };
-const f97142 = () => authStore.getUserState();
+const f100850 = () => authStore.getUserState();
 function getIndexKey(type) {
   type = type.type;
   if ("guild" === type) {
@@ -343,11 +343,11 @@ function handleFetchSuccess(arg0, flag) {
           }
           obj = { permissions: keyPermissionsResult, botId: tmp6.bot_id };
           let tmp19 = id;
-          let obj2 = id(7779);
+          let obj2 = id(8657);
           let merged = Object.assign(obj2.getApplicationCommandSection(toApplication(tmp6), false));
           keyPermissionsResult = undefined;
           if (null != tmp6.permissions) {
-            let tmp19Result = tmp19(7782);
+            let tmp19Result = tmp19(8660);
             keyPermissionsResult = tmp19Result.keyPermissions(toServerPermissions(tmp6.permissions, id));
           }
           let obj6 = { descriptor: obj, commands: {} };
@@ -370,7 +370,7 @@ function handleFetchSuccess(arg0, flag) {
       const membersById = requestMembersById(guildId, items);
     }
     const application_commands = index.application_commands;
-    const obj5 = id(7779);
+    const obj5 = id(8657);
     const applicationCommands = obj5.buildApplicationCommands(application_commands.map((description_default) => {
       let mapped;
       let name_default;
@@ -507,7 +507,7 @@ function useQueryState(type, commandTypes, allowFetch) {
   [first, _slicedToArray] = stateFromStoresObject1.useState(true);
   let obj2 = require("get initialized");
   const items = [applicationCommandIndexStore];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f97140);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f100848);
   const items1 = [stateFromStoresObject, allowFetch, type, tmp3, first];
   const effect = stateFromStoresObject1.useEffect(() => {
     const tmp = first;
@@ -617,7 +617,7 @@ function useQueryState(type, commandTypes, allowFetch) {
   [first1, closure_3] = stateFromStoresObject1.useState(true);
   let obj3 = require("get initialized");
   const items2 = [applicationCommandIndexStore];
-  stateFromStoresObject1 = obj3.useStateFromStoresObject(items2, f97142);
+  stateFromStoresObject1 = obj3.useStateFromStoresObject(items2, f100850);
   const items3 = [stateFromStoresObject1, allowFetch2, tmp3, first1];
   const effect1 = stateFromStoresObject1.useEffect(() => {
     const tmp = first1;
@@ -746,7 +746,7 @@ function queryIndex(allowApplicationCommands) {
   ({ permissionContext, contextState, userState, applicationStates, text, builtIns } = allowApplicationCommands);
   if (builtIns === undefined) {
     let tmp = NONE;
-    builtIns = NONE(9864).BuiltInCommandFilter.ALLOW;
+    builtIns = NONE(11351).BuiltInCommandFilter.ALLOW;
   }
   let flag = allowApplicationCommands.allowApplicationCommands;
   if (flag === undefined) {
@@ -762,7 +762,7 @@ function queryIndex(allowApplicationCommands) {
   }
   NONE = allowApplicationCommands.scoreMethod;
   if (NONE === undefined) {
-    NONE = NONE(9864).ScoreMethod.NONE;
+    NONE = NONE(11351).ScoreMethod.NONE;
   }
   let sortOptions = allowApplicationCommands.sortOptions;
   if (sortOptions === undefined) {
@@ -782,11 +782,11 @@ function queryIndex(allowApplicationCommands) {
   if (formatted != null) {
     parts = formatted.split(" ");
   }
-  const ONLY_TEXT = NONE(9864).BuiltInCommandFilter.ONLY_TEXT;
+  const ONLY_TEXT = NONE(11351).BuiltInCommandFilter.ONLY_TEXT;
   const tmp9 = NONE;
-  if (builtIns !== NONE(9864).BuiltInCommandFilter.DENY) {
+  if (builtIns !== NONE(11351).BuiltInCommandFilter.DENY) {
     const tmp12 = builtIns === ONLY_TEXT;
-    const tmp9Result = tmp9(9866);
+    const tmp9Result = tmp9(11353);
     builtInCommands = tmp9Result.getBuiltInCommands(commandTypes, true, tmp12);
   } else {
     builtInCommands = [];
@@ -914,7 +914,7 @@ function queryIndex(allowApplicationCommands) {
   }
   const tmp75 = flag2 && sortOptions.applications.useFrecency;
   if (tmp75) {
-    const FrecencyUserSettingsActionCreators = NONE(4972).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = NONE(5073).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }
   const sorted = items.sort((section, section2) => {
@@ -956,7 +956,7 @@ function queryIndex(allowApplicationCommands) {
   });
   if (builtInCommands.length > 0) {
     let num2 = 0;
-    const tmp88 = queryIndexSection(NONE(9866).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
+    const tmp88 = queryIndexSection(NONE(11353).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
     if (null != tmp88) {
       items.push(tmp88);
     }
@@ -969,7 +969,7 @@ function queryIndex(allowApplicationCommands) {
       return obj;
     });
   });
-  if (NONE === NONE(9864).ScoreMethod.COMMAND_ONLY) {
+  if (NONE === NONE(11351).ScoreMethod.COMMAND_ONLY) {
     const context = permissionContext.context;
     let guild_id;
     const getGuild = GuildStore.getGuild;
@@ -988,7 +988,7 @@ function queryIndex(allowApplicationCommands) {
       flag2 = someResult;
     }
     if (flag2) {
-      const FrecencyUserSettingsActionCreators2 = tmp90(4972).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators2 = tmp90(5073).FrecencyUserSettingsActionCreators;
       const ifNecessary1 = FrecencyUserSettingsActionCreators2.loadIfNecessary();
     }
     let tmp99;
@@ -1418,7 +1418,7 @@ function scoreCommand(untranslatedName, arg1, arg2, arg3) {
               if (!toLocaleLowerCaseResult1.includes(arg1)) {
                 const tmp25 = importDefault;
                 if (!fuzzysearchDefault(arg1, str)) {
-                  if (!tmp25(6957)(arg1, str2)) {
+                  if (!tmp25(7010)(arg1, str2)) {
                     let COMMAND_DESCRIPTION_FUZZY_MATCHES;
                     let options1 = untranslatedName.options;
                     if (options1 == null) {
@@ -2019,7 +2019,7 @@ export function useContextIndexState(arg0, arg1, arg2) {
   [first, _slicedToArray] = react.useState(true);
   const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f97140);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f100848);
   const items1 = [stateFromStoresObject, arg2, arg0, arg1, first];
   const effect = react.useEffect(() => {
     const tmp = first;
@@ -2193,7 +2193,7 @@ export function useUserIndexState(arg0, arg1) {
   dependencyMap = tmp[1];
   const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  stateFromStoresObject = obj.useStateFromStoresObject(items, f97142);
+  stateFromStoresObject = obj.useStateFromStoresObject(items, f100850);
   const items1 = [stateFromStoresObject, arg1, arg0, first];
   const effect = react.useEffect(() => {
     const tmp = first1;

@@ -1,12 +1,12 @@
-// Module ID: 7665
-// Function ID: 7666
+// Module ID: 10639
+// Function ID: 10640
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2176, 1072, 1387, 6093, 1113, 1252, 7666, 6591, 7671, 7672, 7673, 2171, 2]
+// Dependencies: [5, 2176, 1072, 1387, 6206, 1113, 1252, 9912, 6704, 9545, 8514, 9902, 2171, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7665 (GuildBoostPurchasingUtils)
+// Module 10639 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1113 */;
-import PremiumManagementUtils from "PremiumManagementUtils" /* 7666 */;
+import PremiumManagementUtils from "PremiumManagementUtils" /* 9912 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,62 +1,65 @@
-// Module ID: 12679
-// Function ID: 12680
+// Module ID: 13365
+// Function ID: 13366
 // Name: AppDetailsOverflowMenu
-// Dependencies: [19, 21, 9857, 11910, 1113, 11643, 4967, 7421, 5838, 10652, 10002, 8102, 9293, 2]
+// Dependencies: [19, 21, 12608, 13366, 1113, 13367, 5068, 7877, 5951, 11568, 9082, 7922, 7357, 2]
 // Exports: default
 
-// Module 12679 (AppDetailsOverflowMenu)
+// Module 13365 (AppDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5838 */;
-import ClipboardUtils from "ClipboardUtils" /* 7421 */;
+import ToastUtils from "ToastUtils" /* 5951 */;
+import ClipboardUtils from "ClipboardUtils" /* 7877 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
+let dependencyMap;
+
 const jsx = Fragment.jsx;
-let result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailsOverflowMenu.tsx");
+const result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailsOverflowMenu.tsx");
 
 export default function AppDetailsOverflowMenu(application) {
+  let installAppProps;
   let intl;
   let intl2;
   application = application.application;
   const onAddAppMenuClick = application.onAddAppMenuClick;
-  let installAppProps;
-  let obj = application(installAppProps[2]);
-  installAppProps = obj.getInstallAppProps(application);
-  let obj2 = application(installAppProps[3]);
-  const result = obj2.canInstallApplication(installAppProps) && null != onAddAppMenuClick;
+  let obj = application(12608);
+  dependencyMap = obj.getInstallAppProps(application);
+  const tmp3 = onAddAppMenuClick(13366);
+  let obj2 = application(12608);
   const items = [];
-  if (result) {
+  const tmp3Result = tmp3(obj2.getInstallableApplication(application)) && null != onAddAppMenuClick;
+  if (tmp3Result) {
     const push = items.push;
     const obj3 = {
-      label: intl.string(application(installAppProps[4]).t.NgXl3C),
+      label: intl.string(application(1113).t.NgXl3C),
       action() {
           const obj = { installAppProps };
           return onAddAppMenuClick(obj);
         },
-      IconComponent: application(installAppProps[5]).CirclePlusIcon
+      IconComponent: application(13367).CirclePlusIcon
     };
-    intl = tmp(tmp2[4]).intl;
+    intl = tmp(1113).intl;
     push(obj3);
   }
-  const DeveloperMode = tmp(tmp2[6]).DeveloperMode;
+  const DeveloperMode = tmp(5068).DeveloperMode;
   if (DeveloperMode.getSetting()) {
     const push2 = items.push;
     const obj4 = {
-      label: intl2.string(application(installAppProps[4]).t["+NP/b2"]),
+      label: intl2.string(application(1113).t["+NP/b2"]),
       action() {
           const obj = ClipboardUtils;
           obj.copy(application.id);
           const obj2 = ToastUtils;
           obj2.presentIdCopied();
         },
-      IconComponent: application(installAppProps[9]).IdIcon
+      IconComponent: application(11568).IdIcon
     };
-    intl2 = tmp(tmp2[4]).intl;
+    intl2 = tmp(1113).intl;
     push2(obj4);
   }
   let tmp8 = null;
   if (0 !== items.length) {
-    tmp8 = jsx(tmp(tmp2[10]).ContextMenu, {
+    tmp8 = jsx(tmp(9082).ContextMenu, {
       items,
       children(ref) {
           ref = ref.ref;

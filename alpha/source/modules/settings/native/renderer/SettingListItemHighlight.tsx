@@ -1,15 +1,15 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 17102
+// Function ID: 17103
 // Name: SettingListItemHighlight
-// Dependencies: [19, 17, 16934, 21, 5142, 575, 1652, 5372, 1705, 2]
+// Dependencies: [19, 17, 17097, 21, 5243, 575, 1652, 5485, 1705, 2]
 
-// Module 16939 (SettingListItemHighlight)
+// Module 17102 (SettingListItemHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16934 */;
-import createStyles from "createStyles" /* 5142 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 17097 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let _undefined2, tmp2;
@@ -69,7 +69,7 @@ const memoResult = react.memo(function SettingListItemHighlight(start) {
   const useAnimatedStyle = tmp5.useAnimatedStyle;
   items1[1] = start(1652).withSequence;
   items1[2] = start(1652).withDelay;
-  items1[3] = start(5372).withTiming;
+  items1[3] = start(5485).withTiming;
   items1[4] = start(1652).Easing;
   items1[5] = closure_8;
   items1[6] = start(1705).scheduleOnRN;

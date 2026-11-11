@@ -1,13 +1,13 @@
-// Module ID: 10860
-// Function ID: 10861
+// Module ID: 11727
+// Function ID: 11728
 // Name: useScaledActionHeight
-// Dependencies: [5768, 5726, 575, 2]
+// Dependencies: [5881, 5839, 575, 2]
 // Exports: default
 
-// Module 10860 (useScaledActionHeight)
+// Module 11727 (useScaledActionHeight)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5726 */;
-import useFontScale from "useFontScale" /* 5768 */;
+import useToken from "useToken" /* 5839 */;
+import useFontScale from "useFontScale" /* 5881 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledActionHeight.tsx");

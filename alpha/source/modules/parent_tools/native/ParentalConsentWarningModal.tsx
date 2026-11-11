@@ -1,29 +1,29 @@
-// Module ID: 20021
-// Function ID: 20022
+// Module ID: 20216
+// Function ID: 20217
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 7794, 7795, 1072, 4988, 21, 4975, 7796, 5317, 7638, 6803, 5142, 575, 1627, 1113, 2664, 1252, 572, 4976, 5376, 6801, 20022, 2118, 5390, 6161, 20023, 5753, 5760, 2]
+// Dependencies: [19, 17, 8673, 8674, 1072, 5089, 21, 5076, 8675, 5430, 8537, 6787, 5243, 575, 1627, 1113, 2685, 1252, 572, 5077, 5489, 6785, 20217, 2118, 5503, 6274, 20218, 5866, 5873, 2]
 // Exports: default
 
-// Module 20021 (ParentalConsentWarningModal)
+// Module 20216 (ParentalConsentWarningModal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import dismissible_content from "dismissible_content" /* 4975 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4976 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
-import RootNavigationRef from "RootNavigationRef" /* 5317 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
-import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6803 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7796 */;
+import dismissible_content from "dismissible_content" /* 5076 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 5077 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import RootNavigationRef from "RootNavigationRef" /* 5430 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
+import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6787 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8675 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7794 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7795 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8674 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -125,7 +125,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       if (null != rootNavigationRef) {
         if (rootNavigationRef.isReady()) {
           let obj2 = { screen: constants2.FAMILY_CENTER };
-          const tmp9Result = tmp9(7638);
+          const tmp9Result = tmp9(8537);
           tmp9Result.openUserSettings(obj2);
         }
       }
@@ -137,7 +137,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       });
     } else {
       const tmp2Result4 = ModalActionCreatorsDefault;
-      tmp2Result4.pushLazy(asyncRequire(20022, tmp3.paths));
+      tmp2Result4.pushLazy(asyncRequire(20217, tmp3.paths));
     }
   }, items2);
   const intl = daysRemaining(callback[15]).intl;

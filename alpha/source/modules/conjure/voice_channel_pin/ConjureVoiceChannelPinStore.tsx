@@ -1,9 +1,9 @@
-// Module ID: 11000
-// Function ID: 11001
+// Module ID: 7317
+// Function ID: 7318
 // Name: ConjureVoiceChannelPinStore
 // Dependencies: [504, 572, 2]
 
-// Module 11000 (ConjureVoiceChannelPinStore)
+// Module 7317 (ConjureVoiceChannelPinStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

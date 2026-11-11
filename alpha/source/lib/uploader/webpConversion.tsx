@@ -1,10 +1,10 @@
-// Module ID: 8321
-// Function ID: 8322
+// Module ID: 8840
+// Function ID: 8841
 // Name: webpConversion
-// Dependencies: [5, 3, 8322, 1251, 2]
+// Dependencies: [5, 3, 8841, 1251, 2]
 // Exports: maybeConvertToWebP
 
-// Module 8321 (webpConversion)
+// Module 8840 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef1251 from "module_1251" /* 1251 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

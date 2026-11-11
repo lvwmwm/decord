@@ -1,19 +1,19 @@
-// Module ID: 18924
-// Function ID: 18925
+// Module ID: 19114
+// Function ID: 19115
 // Name: GuildDiscoveryCategoryActionCreators
-// Dependencies: [5, 2186, 18925, 1072, 1282, 572, 2]
+// Dependencies: [5, 2186, 19115, 1072, 1282, 572, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 18924 (GuildDiscoveryCategoryActionCreators)
+// Module 19114 (GuildDiscoveryCategoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 18925 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 19115 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, emoji_discoverability_enabled, is_published, locale, partnerActionedTimestamp, partnerApplicationTimestamp, partner_actioned_timestamp, partner_application_timestamp, primary_category_id, reasons_to_join, slug, social_links;
+let _false, _require, automaticPages, emoji_discoverability_enabled, is_published, locale, partnerActionedTimestamp, partnerApplicationTimestamp, partner_actioned_timestamp, partner_application_timestamp, reasons_to_join, slug, social_links;
 
 let obj = function _maybeFetchGuildDiscoveryCategories() {
   let fetchedLocale;
@@ -86,26 +86,31 @@ let obj = function _maybeFetchGuildDiscoveryCategories() {
 };
 obj = function _fetchMetadataForGuild() {
   obj = _asyncToGenerator(async (guildId) => {
-    let closure_1;
     let closure_2;
     let closure_3;
-    let c5 = 0;
+    let closure_4;
     let c6 = 0;
-    let c4 = 0;
+    let c7 = 0;
+    let c5 = 0;
     return (async (arg0, value) => {
       const HTTP = require("HTTPUtils").HTTP;
       const get = HTTP.get;
-      const obj5 = { url: Endpoints.GUILD_DISCOVERY_METADATA(guildId), oldFormErrors: true, rejectWithError: true };
-      await get(obj5);
-      const obj3 = closure_130_1(closure_130_2[5]);
-      obj3.dispatch({ type: "GUILD_DISCOVERY_METADATA_FETCH_FAIL" });
+      const obj4 = { url: Endpoints.GUILD_DISCOVERY_METADATA(guildId), oldFormErrors: true, rejectWithError: true };
+      await get(obj4);
+      const obj5 = closure_131_1(closure_131_2[5]);
+      obj5.dispatch({ type: "GUILD_DISCOVERY_METADATA_FETCH_FAIL" });
       await "HermesInternal";
       const body = value.body;
-      const obj9 = { primaryCategoryId: body.primary_category_id, secondaryCategoryIds: body.category_ids, keywords: body.keywords, emojiDiscoverabilityEnabled: body.emoji_discoverability_enabled, partnerActionedTimestamp: body.partner_actioned_timestamp, partnerApplicationTimestamp: body.partner_application_timestamp, isPublished: body.is_published, reasonsToJoin: body.reasons_to_join, socialLinks: body.social_links, about: body.about };
-      const obj10 = { type: "GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER", guildId, metadata: obj9 };
-      const obj8 = closure_130_1(closure_130_2[5]);
-      obj8.dispatch(obj10);
-      return obj9;
+      const obj8 = { primaryCategoryId: body.primary_category_id, secondaryCategoryIds: body.category_ids, keywords: body.keywords, emojiDiscoverabilityEnabled: body.emoji_discoverability_enabled, partnerActionedTimestamp: body.partner_actioned_timestamp, partnerApplicationTimestamp: body.partner_application_timestamp, isPublished: body.is_published, automaticPages, reasonsToJoin: body.reasons_to_join, socialLinks: body.social_links, about: body.about };
+      const automatic_pages = body.automatic_pages;
+      automaticPages = automatic_pages;
+      if (automatic_pages == null) {
+        automaticPages = false;
+      }
+      const obj9 = { type: "GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER", guildId, metadata: obj8 };
+      obj = closure_131_1(closure_131_2[5]);
+      obj.dispatch(obj9);
+      return obj8;
     })();
   });
   return obj(...arguments);
@@ -193,9 +198,9 @@ obj = function _fetchSlugForGuild() {
 };
 obj = function _saveGuildMetadata() {
   obj = _asyncToGenerator(async (guildId) => {
-    let c5 = 0;
     let c6 = 0;
-    let c4 = 0;
+    let c7 = 0;
+    let c5 = 0;
     const iter = (async (arg0, value) => {
       let c0;
       let c1;
@@ -207,11 +212,11 @@ obj = function _saveGuildMetadata() {
       let c7;
       let c8;
       let c9;
-      let obj11;
       let obj13;
       let obj6;
-      if (is_published === 2) {
-        is_published = 3;
+      let obj7;
+      if (reasons_to_join === 2) {
+        reasons_to_join = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -223,21 +228,25 @@ obj = function _saveGuildMetadata() {
         }
       } else {
         try {
+          let primary_category_id;
           let category_ids;
-          is_published = 2;
-          if (0 === partner_application_timestamp) {
+          let automatic_pages;
+          reasons_to_join = 2;
+          if (0 === is_published) {
             if (arg0 === 1) {
-              is_published = 3;
+              reasons_to_join = 3;
               throw value;
             } else if (arg0 === 2) {
-              is_published = 3;
+              reasons_to_join = 3;
               return { value, done: true };
             } else {
-              let closure_2 = tmp;
-              let closure_1 = tmp4;
+              let closure_3 = tmp;
+              let closure_2 = tmp4;
               guildId = undefined;
+              _false = undefined;
               emoji_discoverability_enabled = undefined;
               partner_actioned_timestamp = undefined;
+              partner_application_timestamp = undefined;
               ({ guildId: c0, primaryCategoryId: c1, keywords: c2, emojiDiscoverabilityEnabled: c3, partnerActionedTimestamp: c4, partnerApplicationTimestamp: c5, isPublished: c6, reasonsToJoin: c7, socialLinks: c8, about: c9 } = closure_0);
               body = undefined;
               primary_category_id = undefined;
@@ -246,45 +255,53 @@ obj = function _saveGuildMetadata() {
               emojiDiscoverabilityEnabled = undefined;
               partnerActionedTimestamp = undefined;
               partnerApplicationTimestamp = undefined;
-              reasons_to_join = undefined;
+              automatic_pages = undefined;
               social_links = undefined;
               about = undefined;
-              partner_application_timestamp = 1;
               is_published = 1;
+              reasons_to_join = 1;
               return { value: "flexDirection", done: true };
             }
-          } else if (1 === partner_application_timestamp) {
+          } else if (1 === is_published) {
             if (arg0 === 1) {
-              is_published = 3;
+              reasons_to_join = 3;
               throw value;
             } else if (arg0 === 2) {
-              is_published = 3;
+              reasons_to_join = 3;
               return { value, done: true };
             } else {
-              partner_actioned_timestamp = 1;
-              const HTTP = closure_130_0(closure_130_2[4]).HTTP;
-              const request = { url: closure_130_6.GUILD_DISCOVERY_METADATA(guildId), body: obj6, oldFormErrors: true, rejectWithError: obj13.rejectWithMigratedError() };
+              let obj9;
+              partner_application_timestamp = 1;
+              const HTTP = closure_131_0(closure_131_2[4]).HTTP;
+              const request = { url: closure_131_6.GUILD_DISCOVERY_METADATA(guildId), body: obj7, oldFormErrors: true, rejectWithError: obj6.rejectWithMigratedError() };
               const patch = HTTP.patch;
-              obj6 = { primary_category_id, emoji_discoverability_enabled, partner_actioned_timestamp, partner_application_timestamp, keywords, is_published, reasons_to_join, social_links, about };
-              partner_application_timestamp = 3;
-              is_published = 1;
-              obj13 = closure_130_0(closure_130_2[4]);
-              const obj7 = { value: patch(request), done: false };
-              return obj7;
+              obj7 = { primary_category_id: _false, emoji_discoverability_enabled, partner_actioned_timestamp, partner_application_timestamp, keywords, reasons_to_join, social_links, about };
+              if (undefined !== is_published) {
+                obj9 = { is_published };
+                const obj8 = { is_published };
+              } else {
+                obj9 = {};
+              }
+              const merged = Object.assign(obj9);
+              is_published = 3;
+              reasons_to_join = 1;
+              obj6 = closure_131_0(closure_131_2[4]);
+              const obj10 = { value: patch(request), done: false };
+              return obj10;
             }
-          } else if (2 === partner_application_timestamp) {
-            partner_actioned_timestamp = 0;
-            body = closure_3;
-            const obj9 = { type: "GUILD_DISCOVERY_CATEGORY_UPDATE_FAIL", guildId, errors: body.body };
-            const obj2 = closure_130_1(closure_130_2[5]);
-            obj2.dispatch(obj9);
+          } else if (2 === is_published) {
+            partner_application_timestamp = 0;
+            body = closure_4;
+            const obj11 = { type: "GUILD_DISCOVERY_CATEGORY_UPDATE_FAIL", guildId, errors: body.body };
+            const obj2 = closure_131_1(closure_131_2[5]);
+            obj2.dispatch(obj11);
             throw body;
           } else if (arg0 === 1) {
-            is_published = 3;
+            reasons_to_join = 3;
             throw value;
           } else if (arg0 === 2) {
-            partner_actioned_timestamp = 0;
-            is_published = 3;
+            partner_application_timestamp = 0;
+            reasons_to_join = 3;
             return { value, done: true };
           } else {
             body = value.body;
@@ -295,24 +312,30 @@ obj = function _saveGuildMetadata() {
             partnerActionedTimestamp = body.partner_actioned_timestamp;
             partnerApplicationTimestamp = body.partner_application_timestamp;
             is_published = body.is_published;
+            automatic_pages = body.automatic_pages;
             reasons_to_join = body.reasons_to_join;
             social_links = body.social_links;
             about = body.about;
-            const obj10 = { type: "GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER", guildId, metadata: obj11 };
-            obj11 = { primaryCategoryId: primary_category_id, secondaryCategoryIds: category_ids, keywords, emojiDiscoverabilityEnabled, partnerActionedTimestamp, partnerApplicationTimestamp, isPublished: is_published, reasonsToJoin: reasons_to_join, socialLinks: social_links, about };
-            const obj8 = closure_130_1(closure_130_2[5]);
-            obj8.dispatch(obj10);
-            partner_actioned_timestamp = 0;
-            is_published = 3;
+            const obj12 = { type: "GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER", guildId, metadata: obj13 };
+            obj13 = { primaryCategoryId: primary_category_id, secondaryCategoryIds: category_ids, keywords, emojiDiscoverabilityEnabled, partnerActionedTimestamp, partnerApplicationTimestamp, isPublished: is_published, automaticPages: _false, reasonsToJoin: reasons_to_join, socialLinks: social_links, about };
+            _false = automatic_pages;
+            const dispatch = closure_131_1(closure_131_2[5]).dispatch;
+            closure_131_1(closure_131_2[5]);
+            if (automatic_pages == null) {
+              _false = false;
+            }
+            dispatch(obj12);
+            partner_application_timestamp = 0;
+            reasons_to_join = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp15) {
-          closure_3 = tmp15;
-          if (0 === partner_actioned_timestamp) {
-            is_published = 3;
-            throw tmp15;
+        } catch (tmp33) {
+          closure_4 = tmp33;
+          if (0 === partner_application_timestamp) {
+            reasons_to_join = 3;
+            throw tmp33;
           } else {
-            partner_application_timestamp = 2;
+            is_published = 2;
           }
         }
       }

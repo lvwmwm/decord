@@ -1,20 +1,20 @@
-// Module ID: 7385
-// Function ID: 7386
+// Module ID: 7847
+// Function ID: 7848
 // Name: BottomSheetTitleHeader
-// Dependencies: [32, 19, 17, 21, 5142, 575, 1493, 5726, 5753, 7068, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1493, 5839, 5866, 7428, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 7385 (BottomSheetTitleHeader)
+// Module 7847 (BottomSheetTitleHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useToken from "useToken" /* 5726 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7068 */;
+import useToken from "useToken" /* 5839 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7428 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

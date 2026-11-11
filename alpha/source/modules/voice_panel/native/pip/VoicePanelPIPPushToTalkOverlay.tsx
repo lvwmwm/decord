@@ -1,24 +1,24 @@
-// Module ID: 19715
-// Function ID: 19716
+// Module ID: 19907
+// Function ID: 19908
 // Name: VoicePanelPIPPushToTalkOverlay
-// Dependencies: [32, 19, 17, 2130, 11372, 21, 1652, 7026, 1187, 5142, 575, 11360, 19604, 5763, 19514, 5422, 1705, 19716, 2]
+// Dependencies: [32, 19, 17, 2130, 11925, 21, 1652, 7656, 1187, 5243, 575, 11915, 19793, 5876, 19703, 5535, 1705, 19908, 2]
 // Exports: default
 
-// Module 19715 (VoicePanelPIPPushToTalkOverlay)
+// Module 19907 (VoicePanelPIPPushToTalkOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import spring_spring from "spring/spring" /* 5763 */;
-import NativeViewDefault from "NativeView" /* 7026 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11372 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19604 */;
+import spring_spring from "spring/spring" /* 5876 */;
+import NativeViewDefault from "NativeView" /* 7656 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19793 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const module_1652_mod = _mod1652;
@@ -31,9 +31,9 @@ let obj2;
 let size;
 let tmp;
 let tmp9;
-const LegacyBaseButton = tmp(5422);
-const VoicePanelPIPUtils = tmp(19514);
-const AssetRegistryDefault = tmp9(19716);
+const LegacyBaseButton = tmp(5535);
+const VoicePanelPIPUtils = tmp(19703);
+const AssetRegistryDefault = tmp9(19908);
 const StyleSheet = react_native.StyleSheet;
 const PUSH_TO_TALK_PIP_PHYSICS = VoicePanelConstants.PUSH_TO_TALK_PIP_PHYSICS;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);

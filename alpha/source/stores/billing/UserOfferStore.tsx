@@ -1,21 +1,21 @@
-// Module ID: 7709
-// Function ID: 7710
+// Module ID: 9232
+// Function ID: 9233
 // Name: UserOfferStore
-// Dependencies: [7710, 7711, 8608, 7713, 1385, 7657, 2176, 1387, 1083, 12, 504, 15529, 2171, 572, 2]
+// Dependencies: [9233, 9227, 9234, 9229, 1385, 8464, 2176, 1387, 1083, 12, 504, 9235, 2171, 572, 2]
 
-// Module 7709 (UserOfferStore)
+// Module 9232 (UserOfferStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1083 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 15529 */;
-import DiscountRecord from "DiscountRecord" /* 7710 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7711 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8608 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7713 */;
+import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 9235 */;
+import DiscountRecord from "DiscountRecord" /* 9233 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9227 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9234 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9229 */;
 import UserStore from "UserStore" /* 1385 */;
-import EntitlementStore from "EntitlementStore" /* 7657 */;
+import EntitlementStore from "EntitlementStore" /* 8464 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
@@ -103,7 +103,7 @@ function handleReferralTrialStoreUpdate() {
 ({ ANNUAL_DISCOUNT_IDS: c10, CHURN_DISCOUNT_IDS: unpackModuleId, DISCOUNT_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_12, SubscriptionPlanInfo: map1, SubscriptionTrials: closure_14, TRIAL_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_15 } = PremiumConstants);
 const OfferTriggerTypes = Constants.OfferTriggerTypes;
 let closure_17 = performance.now();
-let cooldownExpirationTimestamps = { userOffersLastFetchedAtDate: "r", userTrialOffers: {}, userDiscountOffers: {}, userDiscounts: "\u{1F469}\u{1F3FE}\u200D\u{1F33E}", isFetching: true, lastFetchSuccessful: null, shouldTriggerOffer: 8, cooldownExpirationTimestamps: { [OfferTriggerTypes.CHANNEL_OPENED]: 0, [OfferTriggerTypes.JOIN_VOICE_CHANNEL]: 0, [OfferTriggerTypes.PREMIUM_UPSELL_VIEWED]: 0, [OfferTriggerTypes.USER_PROFILE_ACTION]: 0, [OfferTriggerTypes.VIDEO_STREAM_ENDED]: 0 } };
+let cooldownExpirationTimestamps = { userOffersLastFetchedAtDate: "r", userTrialOffers: {}, userDiscountOffers: {}, userDiscounts: "\u{1F9D9}\u{1F3FC}\u200D\u2640\uFE0F", isFetching: true, lastFetchSuccessful: null, shouldTriggerOffer: 10, cooldownExpirationTimestamps: { [OfferTriggerTypes.CHANNEL_OPENED]: 0, [OfferTriggerTypes.JOIN_VOICE_CHANNEL]: 0, [OfferTriggerTypes.PREMIUM_UPSELL_VIEWED]: 0, [OfferTriggerTypes.USER_PROFILE_ACTION]: 0, [OfferTriggerTypes.VIDEO_STREAM_ENDED]: 0 } };
 let closure_19 = cooldownExpirationTimestamps;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class UserOfferStore extends PersistedStore {
@@ -252,7 +252,7 @@ class UserOfferStore extends PersistedStore {
     }
   }
   shouldShowTrialOfferReminder(trialId) {
-    const hasItem = clientStatuses.includes(trialId.trialId);
+    const hasItem = closure_15.includes(trialId.trialId);
     let result = !hasItem;
     if (hasItem) {
       const obj = PremiumOfferReminderExperiment;

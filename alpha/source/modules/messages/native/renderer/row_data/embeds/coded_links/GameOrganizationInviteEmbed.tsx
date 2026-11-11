@@ -1,27 +1,28 @@
-// Module ID: 15436
-// Function ID: 15437
+// Module ID: 15474
+// Function ID: 15475
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [11512, 5013, 10244, 11513, 7960, 8469, 1113, 2530, 13458, 8456, 575, 8471, 7316, 15437, 13448, 8686, 5139, 2]
+// Dependencies: [12279, 5114, 11831, 12280, 8776, 9104, 1113, 2549, 13972, 9097, 575, 8588, 7790, 15475, 13962, 12449, 7373, 5240, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 15436 (GameOrganizationInviteEmbed)
+// Module 15474 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import _modDef2530 from "module_2530" /* 2530 */;
-import ColorUtils from "ColorUtils" /* 5139 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7316 */;
-import Constants from "Constants" /* 7960 */;
-import react_native from "react-native" /* 8456 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8469 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8471 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8686 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10244 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11513 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 13448 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 13458 */;
-import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15437 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11512 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import _modDef2549 from "module_2549" /* 2549 */;
+import ColorUtils from "ColorUtils" /* 5240 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7373 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7790 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
+import Constants from "Constants" /* 8776 */;
+import react_native from "react-native" /* 9097 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9104 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 11831 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12280 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12449 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 13962 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 13972 */;
+import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15475 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12279 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
@@ -42,14 +43,14 @@ export function createGameOrganizationInviteEmbed(code, theme, id1) {
   let iconUrl;
   let iconUrl2;
   let internal3;
-  let intl;
-  let intl4;
+  let intl3;
+  let intl6;
   let inviterId;
   let items;
   let maxMembers;
   let memberCount;
-  let obj10;
   let obj23;
+  let obj5;
   let obj6;
   let obj7;
   let organization;
@@ -57,7 +58,7 @@ export function createGameOrganizationInviteEmbed(code, theme, id1) {
   let prop;
   let prop1;
   let str;
-  let tmp14Result;
+  let tmp34Result;
   let tmpResult2;
   ({ colors, baseColors } = getEmbedThemeColorsDefault(theme));
   getEmbedThemeColorsDefault(theme);
@@ -68,54 +69,56 @@ export function createGameOrganizationInviteEmbed(code, theme, id1) {
   } else {
     const obj2 = { extendedType: CodedLinkExtendedType.GAME_ORGANIZATION_INVITE, type: InviteTypes.GUILD };
     const merged = Object.assign(baseColors);
-    ({ titleColor: obj12.titleColor, bodyTextColor: obj12.bodyTextColor } = colors);
+    ({ titleColor: obj9.titleColor, bodyTextColor: obj9.bodyTextColor } = colors);
     if (invite.state === constants.RESOLVING) {
-      const obj4 = { headerText: str.toUpperCase(), embedCanBeTapped: false, canBeAccepted: false };
+      const obj3 = { headerText: str.toUpperCase(), embedCanBeTapped: false, canBeAccepted: false };
       const merged1 = Object.assign(obj2);
-      const intl6 = intl7.intl;
-      ({ resolvingGradientStart: obj11.resolvingGradientStart, resolvingGradientEnd: obj11.resolvingGradientEnd } = colors);
-      str = intl6.string(intl7.t["N/g9Z4"]);
-      return obj4;
-    } else if (invite.state === tmp34.ERROR) {
-      const obj5 = { headerText: formatToPlainString(prop, obj6), titleText: intl4.string(_modDef2530["2/aTr2"]), subtitle: formatToPlainString2(prop1, obj7), titleColor: processColorOrThrow(internal3.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), showInvalidIcon: true, invalidIconUrl: obj10.getAssetUriForEmbed(AssetRegistryDefault), embedCanBeTapped: false, canBeAccepted: false };
-      const merged2 = Object.assign(obj2);
-      const intl3 = intl7.intl;
-      formatToPlainString = intl3.formatToPlainString;
-      obj6 = { noun: getGameOrganizationDisplayNounDefault({ displayNoun: null }) };
-      prop = tmp(2530)["jKi+kc"];
-      intl4 = intl7.intl;
       const intl5 = intl7.intl;
-      formatToPlainString2 = intl5.formatToPlainString;
-      obj7 = { noun: getGameOrganizationDisplayNounDefault({ displayNoun: null, lowercase: true }) };
-      prop1 = tmp(2530)["L/fHgw"];
+      ({ resolvingGradientStart: obj8.resolvingGradientStart, resolvingGradientEnd: obj8.resolvingGradientEnd } = colors);
+      str = intl5.string(intl7.t["N/g9Z4"]);
+      return obj3;
+    } else if (invite.state === tmp24.ERROR) {
+      const obj4 = { headerText: formatToPlainString(prop, obj5), titleText: intl3.string(_modDef2549["2/aTr2"]), subtitle: formatToPlainString2(prop1, obj6), titleColor: processColorOrThrow(internal3.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), showInvalidIcon: true, invalidIconUrl: obj7.getAssetUriForEmbed(AssetRegistryDefault2), embedCanBeTapped: false, canBeAccepted: false };
+      const merged2 = Object.assign(obj2);
+      const intl2 = intl7.intl;
+      formatToPlainString = intl2.formatToPlainString;
+      obj5 = { noun: getGameOrganizationDisplayNounDefault({ displayNoun: null }) };
+      prop = tmp(2549)["jKi+kc"];
+      intl3 = intl7.intl;
+      const intl4 = intl7.intl;
+      formatToPlainString2 = intl4.formatToPlainString;
+      obj6 = { noun: getGameOrganizationDisplayNounDefault({ displayNoun: null, lowercase: true }) };
+      prop1 = tmp(2549)["L/fHgw"];
       processColorOrThrow = react_native.processColorOrThrow;
       react_native;
       internal3 = tmp(575).internal;
-      obj10 = renderer_EmbedUtils;
-      return obj5;
+      obj7 = renderer_EmbedUtils;
+      return obj4;
     } else {
       ({ organization, application, displayNoun, accepted, inviterId } = invite);
-      const obj8 = { displayNoun };
-      const tmp35 = getGameOrganizationDisplayNounDefault(obj8);
+      const obj10 = { displayNoun };
+      const tmp26 = getGameOrganizationDisplayNounDefault(obj10);
       ({ memberCount, maxMembers } = organization);
-      const obj9 = { accepted, isInviter: id1 === inviterId, canGoToGuild: tmpResult2(invite, id1, null != GuildStore.getGuild(invite.guildId)), noun: tmp35, isGameOrganizationFull: null != memberCount && null != maxMembers && memberCount >= maxMembers };
+      const obj11 = { accepted, isInviter: id1 === inviterId, canGoToGuild: tmpResult2(invite, id1, null != GuildStore.getGuild(invite.guildId)), noun: tmp26, isGameOrganizationFull: isGameOrganizationFullDefault(organization) };
       const tmpResult = getGameOrganizationInviteCtaStateDefault;
       tmpResult2 = canGoToGameOrganizationGuildDefault;
-      const obj13 = { headerText: intl.formatToPlainString(_modDef2530["jKi+kc"], obj23), thumbnailUrl: iconUrl, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, gameIconUrl: iconUrl2, memberCountText: formatToPlainStringResult, memberCountIconUrl: tmp14Result.getAssetUriForEmbed(AssetRegistryDefault2), bodyText: description, gradientColors: items, isCtaLoading: obj.isJoinFlowPending(code) };
-      const tmpResultResult = tmpResult(obj9);
+      const obj13 = { headerText: intl6.formatToPlainString(_modDef2549["jKi+kc"], obj23), thumbnailUrl: iconUrl, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, gameIconUrl: iconUrl2, memberCountText: formatToPlainStringResult, memberCountIconUrl: tmp34Result.getAssetUriForEmbed(AssetRegistryDefault), bodyText: description, gradientColors: items, isCtaLoading: obj.isJoinFlowPending(code) };
+      const tmpResultResult = tmpResult(obj11);
       const merged3 = Object.assign(obj2);
-      intl = intl7.intl;
-      obj23 = { noun: tmp35 };
-      ({ name: obj3.titleText, iconUrl } = organization);
-      ({ name: obj3.gameName, iconUrl: iconUrl2 } = application);
+      intl6 = intl7.intl;
+      obj23 = { noun: tmp26 };
+      ({ name: obj12.titleText, iconUrl } = organization);
+      ({ name: obj12.gameName, iconUrl: iconUrl2 } = application);
       formatToPlainStringResult = undefined;
-      if (null != memberCount && null != maxMembers) {
-        const intl2 = tmp14(1113).intl;
-        const obj24 = { count: memberCount, max: maxMembers };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp(2530).VuENGl, obj24);
+      if (null != memberCount) {
+        if (null != maxMembers) {
+          const intl = tmp34(1113).intl;
+          const obj24 = { count: memberCount, max: maxMembers };
+          formatToPlainStringResult = intl.formatToPlainString(tmp(2549).VuENGl, obj24);
+        }
       }
       description = organization.description;
-      tmp14Result = renderer_EmbedUtils;
+      tmp34Result = renderer_EmbedUtils;
       const hexToRgba = ColorUtils.hexToRgba;
       ColorUtils;
       const internal = tmp(575).internal;
@@ -124,7 +127,7 @@ export function createGameOrganizationInviteEmbed(code, theme, id1) {
       ColorUtils;
       const internal2 = tmp(575).internal;
       items[1] = hexToRgba2(internal2.resolveSemanticColor(theme, nativeDefault.colors.EXPRESSIVE_GRADIENT_PURPLE_END));
-      ({ label: obj3.acceptLabelText, actionable: obj3.canBeAccepted, actionable: obj3.embedCanBeTapped } = tmpResultResult);
+      ({ label: obj12.acceptLabelText, actionable: obj12.canBeAccepted, actionable: obj12.embedCanBeTapped } = tmpResultResult);
       return obj13;
     }
   }

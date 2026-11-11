@@ -1,13 +1,13 @@
-// Module ID: 15935
-// Function ID: 15936
+// Module ID: 16094
+// Function ID: 16095
 // Name: GlobalDiscoveryServersSearchResultsStore
-// Dependencies: [9162, 6581, 504, 572, 2]
+// Dependencies: [8340, 6694, 504, 572, 2]
 
-// Module 15935 (GlobalDiscoveryServersSearchResultsStore)
+// Module 16094 (GlobalDiscoveryServersSearchResultsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6581 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9162 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6694 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8340 */;
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,14 +1,14 @@
-// Module ID: 8614
-// Function ID: 8615
+// Module ID: 9255
+// Function ID: 9256
 // Name: VoiceSessionSystemMessage
-// Dependencies: [4991, 8514, 8493, 8615, 1113, 8495, 8497, 2]
+// Dependencies: [5092, 9143, 9122, 9256, 1113, 9124, 9126, 2]
 // Exports: createVoiceSessionSystemMessage
 
-// Module 8614 (VoiceSessionSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8493 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8495 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8514 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+// Module 9255 (VoiceSessionSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9122 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9124 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 9143 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +60,7 @@ export function createVoiceSessionSystemMessage(message) {
     tmp7 = undefined;
     if (null != mapped[0]) {
       const obj7 = { userId: mapped[0].user.id, message, author: mapped[0].messageAuthor, roleStyle };
-      tmp7 = tmp(8495)(obj7);
+      tmp7 = tmp(9124)(obj7);
     }
     nick1 = undefined;
     if (mapped[1] != null) {
@@ -69,11 +69,11 @@ export function createVoiceSessionSystemMessage(message) {
     tmp10 = undefined;
     if (null != mapped[1]) {
       const obj8 = { userId: mapped[1].user.id, message, author: mapped[1].messageAuthor, roleStyle };
-      tmp10 = tmp(8495)(obj8);
+      tmp10 = tmp(9124)(obj8);
     }
     formatToPartsResult = formatToParts2(atbXuX, obj5);
   }
   const obj9 = { content: formatToPartsResult };
-  const merged = Object.assign(tmp(8497)(message));
+  const merged = Object.assign(tmp(9126)(message));
   return obj9;
 }

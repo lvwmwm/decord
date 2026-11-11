@@ -1,18 +1,18 @@
-// Module ID: 9464
-// Function ID: 9465
+// Module ID: 10256
+// Function ID: 10257
 // Name: GameProfileRankPill
-// Dependencies: [19, 17, 21, 5142, 575, 9465, 5753, 1113, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 10257, 5866, 1113, 2]
 // Exports: default
 
-// Module 9464 (GameProfileRankPill)
+// Module 10256 (GameProfileRankPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import TrophyIcon2 from "TrophyIcon" /* 9465 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import TrophyIcon2 from "TrophyIcon" /* 10257 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

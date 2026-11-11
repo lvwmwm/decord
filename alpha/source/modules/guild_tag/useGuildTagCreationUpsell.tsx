@@ -1,17 +1,17 @@
-// Module ID: 14994
-// Function ID: 14995
+// Module ID: 10607
+// Function ID: 10608
 // Name: useGuildTagCreationUpsell
-// Dependencies: [19, 5013, 5074, 1385, 2172, 2176, 14995, 504, 12, 8813, 14356, 2107, 6591, 2]
+// Dependencies: [19, 5114, 5175, 1385, 2172, 2176, 10608, 504, 12, 8343, 10609, 2107, 6704, 2]
 // Exports: useGuildTagCreationUpsell
 
-// Module 14994 (useGuildTagCreationUpsell)
+// Module 10607 (useGuildTagCreationUpsell)
 import _modDef12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import ServerTagUpsellOnProfileExperimentDefault from "ServerTagUpsellOnProfileExperiment" /* 14995 */;
+import ServerTagUpsellOnProfileExperimentDefault from "ServerTagUpsellOnProfileExperiment" /* 10608 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
 import UserStore from "UserStore" /* 1385 */;
 import BillingInfoStore from "BillingInfoStore" /* 2172 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;

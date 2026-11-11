@@ -1,17 +1,17 @@
-// Module ID: 13600
-// Function ID: 13601
+// Module ID: 11160
+// Function ID: 11161
 // Name: ExplicitMediaSenderFalsePositiveActionSheet
-// Dependencies: [19, 7531, 7533, 21, 563, 13554, 13555, 13599, 13556, 5376, 8764, 2]
+// Dependencies: [19, 8568, 8570, 21, 563, 11161, 11162, 11159, 11165, 5489, 8787, 2]
 // Exports: default
 
-// Module 13600 (ExplicitMediaSenderFalsePositiveActionSheet)
+// Module 11160 (ExplicitMediaSenderFalsePositiveActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7533 */;
-import ExplicitMediaFalsePositiveActionSheet2 from "ExplicitMediaFalsePositiveActionSheet" /* 13555 */;
-import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 13556 */;
-import ExplicitMediaFalsePositiveActionCreatorsDefault from "ExplicitMediaFalsePositiveActionCreators" /* 13599 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 8570 */;
+import ExplicitMediaFalsePositiveActionCreatorsDefault from "ExplicitMediaFalsePositiveActionCreators" /* 11159 */;
+import ExplicitMediaFalsePositiveActionSheet2 from "ExplicitMediaFalsePositiveActionSheet" /* 11162 */;
+import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 11165 */;
 import react_mod from "react" /* 19 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7531 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 8568 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -34,7 +34,7 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
   dependencyMap = attachments.map((id) => id.id);
   const attachments1 = stateFromStores.attachments;
   react = attachments1.map((filename) => filename.filename);
-  let obj2 = channelId(13554);
+  let obj2 = channelId(11161);
   const obj3 = {
     onSuccess() {
       const obj = ExplicitMediaFalsePositiveActionSheet2;
@@ -55,13 +55,13 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
   reportFalsePositive = explicitMediaActions.reportFalsePositive;
   const isReportFalsePositiveLoading = explicitMediaActions.isReportFalsePositiveLoading;
   if (stateFromStores.attachments.length <= 0) {
-    const obj4 = messageId(5376);
+    const obj4 = messageId(5489);
     obj4.hideActionSheet();
   }
   const items1 = [reportFalsePositive];
   const callback = react.useCallback(() => {
     reportFalsePositive();
   }, items1);
-  const ExplicitMediaFalsePositiveActionSheet = tmp(13555).ExplicitMediaFalsePositiveActionSheet;
-  return <ExplicitMediaFalsePositiveActionSheet channelId={channelId} messageId={messageId} isReportFalsePositiveLoading={isReportFalsePositiveLoading} onConfirmPress={callback} analyticsContext={channelId(8764).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW} />;
+  const ExplicitMediaFalsePositiveActionSheet = tmp(11162).ExplicitMediaFalsePositiveActionSheet;
+  return <ExplicitMediaFalsePositiveActionSheet channelId={channelId} messageId={messageId} isReportFalsePositiveLoading={isReportFalsePositiveLoading} onConfirmPress={callback} analyticsContext={channelId(8787).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW} />;
 };

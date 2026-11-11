@@ -1,24 +1,24 @@
-// Module ID: 10429
-// Function ID: 10430
+// Module ID: 11330
+// Function ID: 11331
 // Name: StickerPickerCategories
-// Dependencies: [32, 19, 17, 5013, 10394, 1072, 1228, 21, 5142, 575, 4967, 6617, 6618, 1252, 7046, 1187, 1411, 7023, 10407, 8744, 5378, 5379, 10213, 10214, 7290, 1113, 10430, 2]
+// Dependencies: [32, 19, 17, 5114, 11299, 1072, 1228, 21, 5243, 575, 5068, 6729, 6730, 1252, 7364, 1187, 1411, 7654, 11030, 8027, 5491, 5492, 11269, 11270, 7764, 1113, 11331, 2]
 // Exports: default
 
-// Module 10429 (StickerPickerCategories)
+// Module 11330 (StickerPickerCategories)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HapticUtils from "HapticUtils" /* 5378 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5379 */;
-import StickersTypes from "StickersTypes" /* 6618 */;
-import StickerPickerStore from "StickerPickerStore" /* 10394 */;
+import HapticUtils from "HapticUtils" /* 5491 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5492 */;
+import StickersTypes from "StickersTypes" /* 6730 */;
+import StickerPickerStore from "StickerPickerStore" /* 11299 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -251,20 +251,20 @@ export default function _default(categories) {
   }, items8);
   let obj = { portalHostName: "expression-footer", style, children: items9 };
   items9 = [, ];
-  const obj2 = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: categoryIndex(10213)(), ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
-  const tmp21 = categoryIndex(10214);
-  items9[0] = closure_14(categoryIndex(7290), obj2);
+  const obj2 = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: categoryIndex(11269)(), ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
+  const tmp21 = categoryIndex(11270);
+  items9[0] = closure_14(categoryIndex(7764), obj2);
   let tmp22Result = null != first && first1;
   const tmp17 = categoryIndex;
   const tmp20 = closure_15;
   if (tmp22Result) {
     const obj3 = { onPress: callback3, accessibilityRole: "button", accessibilityLabel: intl.string(categories(1113).t.rzCcjK), children: closure_14(closure_5, obj4) };
-    const PressableOpacity = categories(7046).PressableOpacity;
+    const PressableOpacity = categories(7364).PressableOpacity;
     intl = categories(1113).intl;
     obj4 = { style: items10, children: closure_14(Icon, obj5) };
     items10 = [, ];
     ({ item: arr11[0], fadedItem: arr11[1] } = tmp);
-    obj5 = { style: tmp.guildIcon, source: tmp17(10430) };
+    obj5 = { style: tmp.guildIcon, source: tmp17(11331) };
     Icon = categories(1187).Icon;
     tmp22Result = tmp22(PressableOpacity, obj3);
   }

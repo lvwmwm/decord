@@ -1,28 +1,28 @@
-// Module ID: 15296
-// Function ID: 15297
+// Module ID: 15746
+// Function ID: 15747
 // Name: EditWishlistActionSheet
-// Dependencies: [32, 19, 17, 5143, 9561, 9562, 1385, 7852, 8831, 5391, 21, 5142, 575, 1652, 5372, 504, 1627, 7390, 7415, 15088, 15276, 15176, 9568, 8839, 11562, 1113, 5394, 7129, 7432, 14714, 8102, 5864, 2]
+// Dependencies: [32, 19, 17, 5244, 9397, 9398, 1385, 7288, 8413, 5504, 21, 5243, 575, 1652, 5485, 504, 1627, 7852, 7871, 15578, 15726, 15664, 9404, 8480, 14822, 1113, 5507, 7680, 7888, 11761, 7922, 5977, 2]
 // Exports: default
 
-// Module 15296 (EditWishlistActionSheet)
+// Module 15746 (EditWishlistActionSheet)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5391 */;
-import Constants from "Constants" /* 8831 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8839 */;
-import WishlistRecord from "WishlistRecord" /* 9562 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9568 */;
-import WishlistVisibility2 from "WishlistVisibility" /* 15276 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
+import Constants from "Constants" /* 8413 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8480 */;
+import WishlistRecord from "WishlistRecord" /* 9398 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9404 */;
+import WishlistVisibility2 from "WishlistVisibility" /* 15726 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import WishlistStore from "WishlistStore" /* 9561 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import WishlistStore from "WishlistStore" /* 9397 */;
 import UserStore from "UserStore" /* 1385 */;
-import UserProfileStore from "UserProfileStore" /* 7852 */;
+import UserProfileStore from "UserProfileStore" /* 7288 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -113,14 +113,14 @@ export default function EditWishlistActionSheet(wishlistId) {
   _slicedToArray = obj.useStateFromStores(items, () => stateFromStores2.useReducedMotion);
   const tmp4 = analyticsContext;
   const bottom = analyticsContext(1627)().bottom;
-  let tmp5 = analyticsContext(7390);
+  let tmp5 = analyticsContext(7852);
   if (analyticsLocations1 == null) {
     analyticsLocations1 = [];
   }
-  analyticsLocations = tmp5(analyticsLocations1, tmp4(7415).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = tmp5(analyticsLocations1, tmp4(7871).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c5, rowWidth } = tmp4(15088)(obj2));
-  const tmp6 = tmp4(15088)(obj2);
+  ({ cardWidth: c5, rowWidth } = tmp4(15578)(obj2));
+  const tmp6 = tmp4(15578)(obj2);
   if (null != rowWidth) {
     let obj3 = { width: rowWidth };
     tmp7 = obj3;
@@ -196,23 +196,23 @@ export default function EditWishlistActionSheet(wishlistId) {
     const result = obj.removeSkuFromWishlist(wishlistId, skuId, analyticsLocations);
   }, items7);
   let obj4 = { scrollable: true, startExpanded: true, title: intl.string(tmp2(1113).t["OEgx/4"]), children: null };
-  const tmp4Result = tmp4(11562);
+  const tmp4Result = tmp4(14822);
   intl = tmp2(1113).intl;
   let obj5 = { contentContainerStyle: { paddingBottom: bottom }, children: null };
   let obj6 = { style: tmp.container, children: null };
   const obj8 = { style: tmp.toggleRow, children: closure_14(TableRowGroup, obj9) };
-  const BottomSheetScrollView = tmp2(5394).BottomSheetScrollView;
+  const BottomSheetScrollView = tmp2(5507).BottomSheetScrollView;
   obj9 = { hasIcons: false, children: closure_14(TableSwitchRow, obj10) };
-  TableRowGroup = tmp2(7129).TableRowGroup;
+  TableRowGroup = tmp2(7680).TableRowGroup;
   obj10 = { label: intl2.string(tmp2(1113).t.b2nFyA), subLabel: intl3.string(tmp2(1113).t.dw58pE), value, onValueChange: callback };
-  TableSwitchRow = tmp2(7432).TableSwitchRow;
+  TableSwitchRow = tmp2(7888).TableSwitchRow;
   intl2 = tmp2(1113).intl;
   intl3 = tmp2(1113).intl;
   const items8 = [closure_14(stateFromStores, obj8), ];
   const tmp18 = closure_15;
   if (stateFromStores1) {
     if (null == stateFromStores) {
-      let obj11 = { style: tmp.loadingContainer, children: closure_14(c5, {}) };
+      let obj11 = { style: tmp.loadingContainer, children: tmp16(c5, {}) };
       tmp16Result = tmp16(tmp19, obj11);
     }
     items8[1] = tmp16Result;
@@ -248,9 +248,10 @@ export default function EditWishlistActionSheet(wishlistId) {
             if (!closure_3) {
               tmp8 = closure_1_17;
             }
-            const obj3 = { sku: null, isOwned: null, size, accessibilityHidden: true };
             ({ sku: obj2.sku, isOwned: obj2.isOwned } = sku);
-            items = [closure_1_14(analyticsContext(itemWrapper[29]), obj3), ];
+            const obj3 = { sku: null, isOwned: null, size, backgroundColor: analyticsContext(itemWrapper[12]).colors.BACKGROUND_SURFACE_HIGHEST, accessibilityHidden: true };
+            const tmp3Result = analyticsContext(itemWrapper[29]);
+            items = [closure_1_14(tmp3Result, obj3), ];
             const obj4 = { style: tmp5.deleteButton, children: closure_1_14(IconButton, obj5) };
             obj5 = {
               variant: "primary-overlay",
@@ -268,15 +269,15 @@ export default function EditWishlistActionSheet(wishlistId) {
             const intl = wishlistId(tmp4[25]).intl;
             const obj11 = { productName: sku.skuName };
             const formatToPlainStringResult = intl.formatToPlainString(wishlistId(itemWrapper[25]).t["IBBF8/"], obj11);
-            const tmp11 = stateFromStores;
+            const tmp12 = stateFromStores;
             if (isOwned) {
-              const intl2 = tmp12(tmp4[25]).intl;
+              const intl2 = tmp13(tmp4[25]).intl;
               const _HermesInternal = HermesInternal;
-              combined = "" + formatToPlainStringResult + ", " + intl2.string(tmp12(tmp4[25]).t["6cfuDj"]);
+              combined = "" + formatToPlainStringResult + ", " + intl2.string(tmp13(tmp4[25]).t["6cfuDj"]);
             } else {
               combined = formatToPlainStringResult;
             }
-            items[1] = closure_1_14(tmp11, obj4);
+            items[1] = closure_1_14(tmp12, obj4);
             tmp = tmp2(View, obj, sku.skuId);
           }
           return tmp;

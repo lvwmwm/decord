@@ -1,10 +1,10 @@
-// Module ID: 5738
-// Function ID: 5739
+// Module ID: 5851
+// Function ID: 5852
 // Name: useCustomKeyboardHeight
 // Dependencies: [1496, 1497, 2]
 // Exports: default, getCustomKeyboardHeight
 
-// Module 5738 (useCustomKeyboardHeight)
+// Module 5851 (useCustomKeyboardHeight)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1496 */;
 import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1497 */;
 import size from "module_2" /* 2 */;

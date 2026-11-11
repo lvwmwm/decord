@@ -1,267 +1,280 @@
-// Module ID: 19316
-// Function ID: 19317
+// Module ID: 19504
+// Function ID: 19505
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 5009, 4991, 5048, 5013, 5074, 5084, 1385, 1072, 21, 5142, 575, 1499, 1627, 504, 7487, 11814, 5079, 1084, 9119, 7552, 2116, 5196, 6092, 1113, 5836, 2185, 4999, 19317, 9908, 5753, 5778, 10947, 7041, 8099, 7129, 19321, 1377, 19322, 2]
+// Dependencies: [32, 5, 19, 17, 19505, 5110, 5092, 5149, 5114, 5175, 5185, 1385, 1072, 21, 5243, 575, 504, 19507, 1499, 1627, 7198, 12470, 19506, 19510, 5180, 8068, 1084, 2116, 5309, 6205, 1113, 5949, 2185, 5100, 19511, 8985, 5866, 5891, 10866, 7379, 8094, 7680, 19515, 1377, 2]
 // Exports: default
 
-// Module 19316 (ChannelSettingsPermissionsOverrides)
-import get_initialized from "get initialized" /* 504 */;
+// Module 19504 (ChannelSettingsPermissionsOverrides)
 import nativeDefault from "native" /* 575 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import useNavigation from "useNavigation" /* 1499 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4999 */;
-import GuildRecord from "GuildRecord" /* 5009 */;
-import PermissionUtils from "PermissionUtils" /* 5079 */;
-import TableRowGroup2 from "TableRowGroup" /* 7129 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 7487 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11814 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19317 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 5100 */;
+import GuildRecord from "GuildRecord" /* 5110 */;
+import TableRowGroup2 from "TableRowGroup" /* 7680 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12470 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19511 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildRoleStore from "GuildRoleStore" /* 5048 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
+import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19505 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildRoleStore from "GuildRoleStore" /* 5149 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let c4, c5, dependencyMap, description, navigation, permissions;
+let c0, c1, channel, dependencyMap, description, guild, navigation, permissions, user;
 
-let closure_16;
 let closure_17;
 let closure_18;
 let closure_19;
 let closure_20;
 let closure_21;
+let closure_22;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
-let tmp2;
-const intl5 = tmp2(1113);
-const Text_Text = tmp2(5753);
-const useChannelName = tmp2(5778);
-const TableRow2 = tmp2(7041);
-const InlineNotice2 = tmp2(8099);
 ({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
 const isGuildOwner = GuildRecord.isGuildOwner;
-({ PermissionOverrideType: closure_16, HelpdeskArticles: closure_17, Permissions: closure_18 } = Constants);
-({ jsx: closure_19, Fragment: closure_20, jsxs: closure_21 } = Fragment);
+({ PermissionOverrideType: closure_17, HelpdeskArticles: closure_18, Permissions: closure_19 } = Constants);
+({ jsx: closure_20, Fragment: closure_21, jsxs: closure_22 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, containerContent: obj3, section: obj4 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_12 };
 obj4 = { marginBottom: nativeDefault.space.PX_16 };
-let closure_22 = createStyles(obj);
+let closure_23 = createStyles(obj);
+let closure_24 = react.memo(function ChannelPermissionOverrideControl(channelId) {
+  let disabled;
+  let permissionTitle;
+  let savedValue;
+  channelId = channelId.channelId;
+  const overwriteId = channelId.overwriteId;
+  const flag = channelId.flag;
+  const onValueChange = channelId.onValueChange;
+  ({ savedValue, permissionTitle, disabled } = channelId);
+  const items = [ChannelPermissionOverwriteEditStore];
+  const items1 = [channelId, overwriteId, flag];
+  const obj = channelId(onValueChange[16]);
+  let stateFromStores = obj.useStateFromStores(items, () => {
+    const pendingEdits = ChannelPermissionOverwriteEditStore.getPendingEdits(channelId, overwriteId);
+    const iter = pendingEdits[String(undefined, flag)];
+    let value;
+    if (iter != null) {
+      value = iter.value;
+    }
+    return value;
+  }, items1);
+  const obj2 = {
+    permissionTitle,
+    value: stateFromStores,
+    disabled,
+    onValueChange(arg0) {
+      return onValueChange(flag, arg0);
+    }
+  };
+  const tmp2 = closure_20;
+  const tmp3 = overwriteId(onValueChange[17]);
+  if (stateFromStores == null) {
+    stateFromStores = savedValue;
+  }
+  return tmp2(tmp3, obj2);
+});
 let result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsPermissionsOverrides.tsx");
 
-export default function ChannelSettingsPermissionsOverrides(fromCreate) {
+export default function ChannelSettingsPermissionsOverrides(channelId) {
   let InlineNotice;
-  let id;
   let intl;
+  let items4;
   let items5;
-  let items6;
   let obj11;
   let obj12;
   let section;
-  let tmp12Result;
+  let tmp11Result;
   let tmp2Result;
-  ({ channelId: require, id } = fromCreate);
-  fromCreate = fromCreate.fromCreate;
+  channelId = channelId.channelId;
+  const id = channelId.id;
+  const fromCreate = channelId.fromCreate;
   let closure_7;
   let closure_8;
-  let closure_9;
   let first;
-  let type = fromCreate.type;
-  let tmp = closure_22();
+  let type = channelId.type;
+  let tmp = closure_23();
   dependencyMap = tmp;
-  let tmp2 = require;
+  let tmp2 = channelId;
   let tmp3 = dependencyMap;
-  let obj = useNavigation;
+  let obj = channelId(1499);
   navigation = obj.useNavigation();
-  let tmp5 = id;
+  const tmp5 = id;
   const bottom = id(1627)().bottom;
-  let obj2 = get_initialized;
-  let items = [first];
-  const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(require));
-  let obj3 = useAppChannelApplication;
+  let obj2 = channelId(504);
+  let items = [ChannelStore];
+  const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
+  let obj3 = channelId(7198);
   const appChannelApplication = obj3.useAppChannelApplication(stateFromStores);
-  let obj4 = AppChannelPermissionUtils;
+  let obj4 = channelId(12470);
   const appChannelBotUserId = obj4.useAppChannelBotUserId(stateFromStores);
   let tmp9 = null;
   if (appChannelBotUserId === id) {
     tmp9 = appChannelApplication;
   }
-  const useCallback = appChannelBotUserId.useCallback;
-  let closure_0 = stateFromStores(function*(arg0, value) {
+  const items1 = [channelId, id];
+  closure_7 = appChannelBotUserId.useCallback((flag, value) => {
     let intl;
     let intl2;
     let intl3;
     let intl4;
-    let obj18;
-    let obj4;
-    let obj5;
-    let obj7;
-    closure_0 = arg0;
-    let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let obj10;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
-          } else {
-            let closure_3 = tmp4;
-            let closure_2 = tmp;
-            obj10 = undefined;
-            let name;
-            let user2;
-            id = undefined;
-            let role2;
-            closure_1 = tmp125;
-            let tmp9 = c5.permissionOverwrites[closure_1];
-            let everyoneOverwrite = tmp9;
-            let tmp5 = null == tmp9;
-            const tmp123 = closure_1;
-            if (tmp5) {
-              tmp5 = tmp125;
-            }
-            if (tmp5) {
-              const obj2 = fromCreate(section[20]);
-              everyoneOverwrite = obj2.makeEveryoneOverwrite(tmp123);
-              tmp9 = everyoneOverwrite;
-            }
-            obj10 = { deny: obj4.remove(obj10.deny, closure_0), allow: obj5.remove(obj10.allow, closure_0) };
-            const merged = Object.assign(tmp9);
-            obj4 = fromCreate(section[21]);
-            obj5 = fromCreate(section[21]);
-            if (closure_1 === closure_0(section[20]).ALLOW) {
-              const obj9 = fromCreate(section[21]);
-              obj10.allow = obj9.add(obj10.allow, closure_0);
-            } else if (closure_1 === closure_0(section[20]).DENY) {
-              if (null != c5.guild_id) {
-                if (closure_1 === c5.guild_id) {
-                  c4 = 1;
-                  c5 = 1;
-                  const obj14 = { value: obj7.checkChattableChannelThresholdMetAfterChannelPermissionDeny(c5, closure_0), done: false };
-                  obj7 = closure_0(section[22]);
-                  return obj14;
-                }
-              }
-            }
-            const obj15 = {};
-            obj15[obj10.id] = obj10;
-            if (PermissionStore.can(closure_0, c5, obj15)) {
-              const obj16 = id(section[23]);
-              const result = obj16.updatePermissionOverwrite(c5.id, obj10);
-            } else {
-              if (PermissionStore.can(closure_0, c5)) {
-                const tmp44 = closure_1;
-                if (!tmp44) {
-                  const obj11 = fromCreate(section[21]);
-                  if (!obj11.has(everyoneOverwrite.allow, closure_0)) {
-                    const obj12 = fromCreate(section[21]);
-                    if (!obj12.has(everyoneOverwrite.deny, closure_0)) {
-                      closure_1_7(closure_0, closure_0(section[20]).ALLOW);
+    let obj6;
+    let tmp16;
+    let closure_0 = flag;
+    channel = channel.getChannel(closure_0);
+    if (null != channel) {
+      const guild_id = channel.guild_id;
+      const obj7 = channelId(section[22]);
+      const channelPermissionOverwrite = obj7.getChannelPermissionOverwrite(channel, id);
+      if (null != channelPermissionOverwrite) {
+        const effectiveOverwrite = first.getEffectiveOverwrite(channel.id, tmp19, channelPermissionOverwrite);
+        const tmp20Result = channelId(section[22]);
+        if (tmp20Result.getChannelPermissionOverwriteValue(effectiveOverwrite, flag) !== value) {
+          const tmp20Result3 = channelId(section[22]);
+          const result = tmp20Result3.applyChannelPermissionOverwriteEdit(effectiveOverwrite, flag, value);
+          let obj2 = {};
+          obj2[result.id] = result;
+          const obj10 = PermissionStore;
+          if (PermissionStore.can(flag, channel, obj2)) {
+            let obj4 = { channelId: channel.id, overwriteId: id, flag, value, validate: tmp16 };
+            const updateChannelPermissionOverwrite = channelId(section[23]).updateChannelPermissionOverwrite;
+            tmp16 = undefined;
+            channelId(section[23]);
+            if (value === channelId(section[24]).DENY) {
+              if (id === guild_id) {
+                tmp16 = stateFromStores(function*(arg0, value) {
+                  let obj3;
+                  if (c0 === 2) {
+                    c0 = 3;
+                    throw new TypeError("Generator functions may not be called on executing generators");
+                  } else if (tmp2 === 3) {
+                    if (arg0 === 1) {
+                      throw value;
+                    } else if (arg0 === 2) {
+                      const obj2 = { value, done: true };
+                      return obj2;
+                    } else {
+                      return { value: "HermesInternal", done: null };
+                    }
+                  } else {
+                    try {
+                      let tmp4;
+                      c0 = 2;
+                      if (0 === c1) {
+                        if (arg0 === 1) {
+                          c0 = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c0 = 3;
+                          const obj4 = { value, done: true };
+                          return obj4;
+                        } else {
+                          channel = channel.getChannel(c0);
+                          tmp4 = null != channel;
+                          if (tmp4) {
+                            c1 = 1;
+                            c0 = 1;
+                            const obj5 = { value: obj3.checkChattableChannelThresholdMetAfterChannelPermissionDeny(channel, v3), done: false };
+                            obj3 = v3(section[25]);
+                            return obj5;
+                          }
+                        }
+                      } else if (arg0 === 1) {
+                        c0 = 3;
+                        throw value;
+                      } else {
+                        tmp4 = value;
+                        if (arg0 === 2) {
+                          c0 = 3;
+                          const obj = { value, done: true };
+                          return obj;
+                        }
+                      }
+                      c0 = 3;
+                      const obj6 = { value: tmp4, done: true };
+                      return obj6;
+                    } catch (tmp8) {
+                      c0 = 3;
+                      throw tmp8;
                     }
                   }
-                }
+                });
               }
-              const type = everyoneOverwrite.type;
-              if (closure_0(section[24]).PermissionOverwriteType.MEMBER === type) {
-                user2 = user.getUser(everyoneOverwrite.id);
-                if (null != user2) {
-                  const obj13 = id(section[25]);
-                  name = obj13.getName(user2);
-                }
-              } else if (closure_0(section[24]).PermissionOverwriteType.ROLE === type) {
-                id = guild.getGuild(c5.guild_id);
-                if (null != id) {
-                  role2 = role.getRole(id.id, everyoneOverwrite.id);
-                  if (null != role2) {
-                    name = role2.name;
+            }
+            const result1 = updateChannelPermissionOverwrite(obj4);
+          } else {
+            let name;
+            if (obj10.can(flag, channel)) {
+              if (id !== guild_id) {
+                const tmp2 = fromCreate;
+                let obj = fromCreate(tmp21[26]);
+                if (!obj.has(effectiveOverwrite.allow, flag)) {
+                  const tmp2Result = tmp2(section[26]);
+                  if (!tmp2Result.has(effectiveOverwrite.deny, flag)) {
+                    let tmp4 = closure_7(flag, tmp20(tmp21[24]).ALLOW);
                   }
                 }
-              } else {
-                const type2 = everyoneOverwrite.type;
               }
-              const obj17 = {
-                title: intl.string(closure_0(section[27]).t.vElC9b),
-                body: intl2.format(closure_0(section[27]).t.yslqFM, obj18),
-                cancelText: intl3.string(closure_0(section[27]).t["ETE/oC"]),
-                confirmText: intl4.string(closure_0(section[27]).t.psXQHP),
-                onConfirm() {
-                            const openURL = closure_1_1(closure_1_3[28]).openURL;
-                            closure_1_1(closure_1_3[28]);
-                            const obj = closure_1_1(closure_1_3[29]);
-                            openURL(obj.getArticleURL(constants.PERMISSIONS_TUTORIAL));
-                          }
-              };
-              const show = id(section[26]).show;
-              const tmp93 = id(section[26]);
-              intl = closure_0(section[27]).intl;
-              intl2 = closure_0(section[27]).intl;
-              obj18 = { name };
-              intl3 = closure_0(section[27]).intl;
-              intl4 = closure_0(section[27]).intl;
-              show(obj17);
             }
-            c5 = 3;
-            return { value: "HermesInternal", done: null };
+            const type = effectiveOverwrite.type;
+            if (channelId(section[27]).PermissionOverwriteType.MEMBER === type) {
+              user = user.getUser(effectiveOverwrite.id);
+              if (null != user) {
+                let obj3 = id(tmp21[28]);
+                name = obj3.getName(user);
+              }
+            } else if (channelId(section[27]).PermissionOverwriteType.ROLE === type) {
+              guild = guild.getGuild(channel.guild_id);
+              if (null != guild) {
+                role = role.getRole(guild.id, effectiveOverwrite.id);
+                if (null != role) {
+                  name = role.name;
+                }
+              }
+            } else {
+              const type2 = effectiveOverwrite.type;
+            }
+            const tmp13 = id(tmp21[29]);
+            let obj5 = {
+              title: intl.string(channelId(section[30]).t.vElC9b),
+              body: intl2.format(channelId(section[30]).t.yslqFM, obj6),
+              cancelText: intl3.string(channelId(section[30]).t["ETE/oC"]),
+              confirmText: intl4.string(channelId(section[30]).t.psXQHP),
+              onConfirm() {
+                        const openURL = id(section[31]).openURL;
+                        id(section[31]);
+                        const obj = id(section[32]);
+                        openURL(obj.getArticleURL(constants.PERMISSIONS_TUTORIAL));
+                      }
+            };
+            const show = tmp13.show;
+            intl = tmp20(tmp21[30]).intl;
+            intl2 = tmp20(tmp21[30]).intl;
+            obj6 = { name };
+            intl3 = tmp20(tmp21[30]).intl;
+            intl4 = tmp20(tmp21[30]).intl;
+            show(obj5);
           }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          let obj = { value, done: true };
-          return obj;
-        } else if (!value) {
-          c5 = 3;
-          return { value: "HermesInternal", done: null };
         }
-        const obj6 = fromCreate(section[21]);
-        obj10.deny = obj6.add(obj10.deny, closure_0);
-      } catch (tmp117) {
-        c5 = 3;
-        throw tmp117;
       }
     }
-  });
-  const items1 = [stateFromStores, id];
-  closure_7 = useCallback(function() {
-    return closure_0(...arguments);
   }, items1);
   const items2 = [stateFromStores, id, appChannelBotUserId];
   closure_8 = appChannelBotUserId.useCallback((arg0) => {
-    const guild = GuildStore.getGuild(stateFromStores.guild_id);
+    guild = GuildStore.getGuild(stateFromStores.guild_id);
     const currentUser = UserStore.getCurrentUser();
     if (null != guild) {
       if (null != currentUser) {
@@ -282,8 +295,8 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         } else {
           stringResult = arg0 === constants.MANAGE_ROLES && !canResult;
           if (!stringResult) {
-            stringResult = null != arg0 && !PermissionStore.can(arg0, guild) && !canResult;
-            const tmp19 = null != arg0 && !PermissionStore.can(arg0, guild) && !canResult;
+            stringResult = !PermissionStore.can(arg0, guild) && !canResult;
+            !PermissionStore.can(arg0, guild) && !canResult;
           }
           if (stringResult) {
             const intl = tmp13(1113).intl;
@@ -294,37 +307,12 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
     }
     return false;
   }, items2);
-  const items3 = [stateFromStores, id];
-  closure_9 = appChannelBotUserId.useCallback((arg0) => {
-    let ALLOW;
-    let allow;
-    const has = BigFlagUtilsAll.has;
-    BigFlagUtilsAll;
-    if (stateFromStores.permissionOverwrites[id] != null) {
-      allow = tmp.allow;
-    }
-    if (has(allow, arg0)) {
-      ALLOW = PermissionUtils.ALLOW;
-    } else {
-      let deny;
-      const has2 = tmp2(1084).has;
-      BigFlagUtilsAll;
-      if (stateFromStores.permissionOverwrites[id] != null) {
-        deny = tmp.deny;
-      }
-      const has2Result = has2(deny, arg0);
-      const tmp10 = PermissionUtils;
-      ALLOW = has2Result ? tmp10.DENY : tmp10.PASSTHROUGH;
-    }
-    return ALLOW;
-  }, items3);
-  let tmp10 = navigation(appChannelBotUserId.useState(() => {
+  first = navigation(appChannelBotUserId.useState(() => {
     const guild_id = stateFromStores.guild_id;
     const obj = PermissionSpecUtilsDefault;
     return obj.generateChannelPermissionSpec(stateFromStores.guild_id, stateFromStores, id === guild_id);
-  }), 2);
-  first = tmp10[0];
-  const items4 = [fromCreate, navigation];
+  }), 1)[0];
+  const items3 = [fromCreate, navigation];
   const effect = appChannelBotUserId.useEffect(() => {
     const tmp = fromCreate;
     if (tmp) {
@@ -335,26 +323,28 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
               onPress() {
                 closure_1_4.pop();
               },
-              label: intl.string(require("intl").t.i4jeWR)
+              label: intl.string(channelId(section[30]).t.i4jeWR)
             };
-            const HeaderTextButton = require("HeaderShared").HeaderTextButton;
-            intl = require("intl").intl;
-            return closure_2_19(HeaderTextButton, obj);
+            const HeaderTextButton = channelId(section[35]).HeaderTextButton;
+            intl = channelId(section[30]).intl;
+            return closure_2_20(HeaderTextButton, obj);
           }
       };
       navigation.setOptions(obj);
     }
-  }, items4);
+  }, items3);
+  const tmp11 = closure_20;
   let obj5 = { variant: "body-md/medium", color: "text-muted", children: tmp2Result.computeChannelName(stateFromStores, UserStore, RelationshipStore, true) };
-  let Text = Text_Text.Text;
-  tmp2Result = useChannelName;
-  const tmp13 = closure_19(Text, obj5);
+  let Text = tmp2(5866).Text;
+  tmp2Result = tmp2(5891);
+  const tmp12 = closure_20(Text, obj5);
   if (type === constants.MEMBER) {
-    let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp13 };
-    tmp12Result = tmp12(tmp5(10947), obj6);
+    let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp12 };
+    tmp11Result = tmp11(tmp5(10866), obj6);
   } else {
-    let TableRow = TableRow2.TableRow;
-    const role = GuildRoleStore.getRole(stateFromStores.guild_id, id);
+    let tmp13 = GuildRoleStore;
+    let TableRow = tmp2(7379).TableRow;
+    let role = GuildRoleStore.getRole(stateFromStores.guild_id, id);
     let str;
     if (role != null) {
       str = role.name;
@@ -362,31 +352,35 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
     if (str == null) {
       str = "";
     }
-    let obj7 = { end: true, label: str, start: true, trailing: tmp13 };
-    tmp12Result = tmp12(TableRow, obj7);
+    let obj7 = { end: true, label: str, start: true, trailing: tmp12 };
+    tmp11Result = tmp11(TableRow, obj7);
   }
-  let obj8 = { style: tmp.container, contentContainerStyle: items5, children: items6 };
-  items5 = [tmp.containerContent, { paddingBottom: tmp.containerContent.paddingBottom + bottom }];
-  let obj9 = { style: tmp.section, children: tmp12Result };
-  let tmp19 = closure_7;
-  items6 = [tmp12(closure_7, obj9), , ];
-  let tmp12Result2 = null;
-  const tmp17 = closure_21;
-  const tmp18 = closure_8;
+  const obj8 = { style: tmp.container, contentContainerStyle: items4, children: items5 };
+  items4 = [tmp.containerContent, { paddingBottom: tmp.containerContent.paddingBottom + bottom }];
+  let tmp16 = closure_22;
+  items5 = [, , ];
+  const obj9 = { style: tmp.section, children: tmp11Result };
+  items5[0] = tmp11(closure_7, obj9);
+  let tmp11Result2 = null;
+  const tmp17 = closure_8;
+  const tmp18 = closure_7;
   if (null != tmp9) {
-    let obj10 = { style: tmp.section, children: tmp12(InlineNotice, obj11) };
-    obj11 = { type: "info", message: intl.format(intl5.t["Xq++FA"], obj12), role: "none" };
-    InlineNotice = InlineNotice2.InlineNotice;
-    intl = intl5.intl;
+    let obj10 = { style: tmp.section, children: tmp11(InlineNotice, obj11) };
+    obj11 = { type: "info", message: intl.format(tmp2(1113).t["Xq++FA"], obj12), role: "none" };
+    InlineNotice = tmp2(8094).InlineNotice;
+    intl = tmp2(1113).intl;
     obj12 = { appName: tmp9.name };
-    tmp12Result2 = tmp12(tmp19, obj10);
+    tmp11Result2 = tmp11(tmp18, obj10);
   }
-  items6[1] = tmp12Result2;
-  items6[2] = first.map((permissions, index) => {
+  items5[1] = tmp11Result2;
+  items5[2] = first.map((permissions, index) => {
     let TableRowGroup;
     let obj2;
+    let onValueChange;
+    let overwriteId;
+    let permissionOverwrites;
     permissions = permissions.permissions;
-    let tmp = closure_19;
+    let tmp = closure_20;
     let obj = { style: section.section, children: tmp(TableRowGroup, obj2) };
     const title = permissions.title;
     let tmp3;
@@ -403,42 +397,35 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         let obj2;
         let obj5;
         let title;
-        let tmp11;
+        let tmp6Result2;
         ({ title, flag } = description);
         description = description.description;
-        const tmp = closure_8(flag);
+        const tmp = closure_1_8(flag);
         const obj = { variant: "body-xs/medium", color: "text-subtle", children: obj2.renderDescription(description) };
-        const Text = closure_1_0(section[33]).Text;
-        obj2 = closure_1_0(section[39]);
-        const items = [closure_1_19(Text, obj), ];
+        const Text = channelId(section[36]).Text;
+        obj2 = channelId(section[42]);
+        const items = [closure_2_20(Text, obj), ];
         let tmp5Result = null;
-        const tmp3 = closure_1_21;
-        const tmp4 = closure_1_20;
+        const tmp3 = closure_2_22;
+        const tmp4 = closure_2_21;
         if (false !== tmp) {
           tmp5Result = null;
           if ("" !== tmp) {
             const obj3 = { variant: "body-xs/medium", color: "text-feedback-critical", children: tmp };
-            tmp5Result = tmp5(tmp6(tmp7[33]).Text, obj3);
+            tmp5Result = tmp5(tmp6(tmp7[36]).Text, obj3);
           }
         }
         items[1] = tmp5Result;
         const tmp3Result = tmp3(tmp4, { children: items });
-        const TableRow = tmp6(tmp7[36]).TableRow;
-        const tmp6Result = closure_1_0(section[40]);
-        const obj4 = { accessible: tmp6Result.isAndroid() || undefined, disabled: false !== tmp, label: title, subLabel: tmp3Result, trailing: closure_1_19(tmp11, obj5) };
-        obj5 = {
-          permissionTitle: title,
-          value: closure_9(flag),
-          disabled: false !== tmp,
-          onValueChange(arg0) {
-            closure_2_7(flag, arg0);
-          }
-        };
-        tmp11 = id(section[41]);
-        return closure_1_19(TableRow, obj4, "row-" + index);
+        const TableRow = tmp6(tmp7[39]).TableRow;
+        const tmp6Result = channelId(section[43]);
+        const obj4 = { accessible: tmp6Result.isAndroid() || undefined, disabled: false !== tmp, label: title, subLabel: tmp3Result, trailing: closure_2_20(closure_2_24, obj5) };
+        obj5 = { channelId, overwriteId, flag, permissionTitle: title, savedValue: tmp6Result2.getChannelPermissionOverwriteValue(permissionOverwrites.permissionOverwrites[overwriteId], flag), disabled: false !== tmp, onValueChange };
+        tmp6Result2 = channelId(section[22]);
+        return closure_2_20(TableRow, obj4, "row-" + index);
       })
     };
     return tmp(tmp2, obj, "section-" + index);
   });
-  return tmp17(tmp18, obj8);
+  return tmp16(tmp17, obj8);
 };

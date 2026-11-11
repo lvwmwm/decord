@@ -1,21 +1,21 @@
-// Module ID: 14933
-// Function ID: 14934
+// Module ID: 10117
+// Function ID: 10118
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 5143, 1083, 21, 575, 5142, 14934, 14935, 1113, 5844, 504, 8953, 9469, 7943, 7952, 5422, 2]
+// Dependencies: [32, 19, 17, 5244, 1083, 21, 575, 5243, 10118, 10119, 1113, 5957, 504, 9664, 10261, 8759, 8768, 5535, 2]
 // Exports: default
 
-// Module 14933 (AppStoreOverlayMediaCarousel)
+// Module 10117 (AppStoreOverlayMediaCarousel)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import AnalyticsActions from "AnalyticsActions" /* 7943 */;
-import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 14934 */;
-import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 14935 */;
+import AnalyticsActions from "AnalyticsActions" /* 8759 */;
+import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 10118 */;
+import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 10119 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -307,9 +307,9 @@ export default function AppStoreOverlayMediaCarousel(media) {
           if (num5 !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
             if (num5 > current) {
-              LEFT = tmp12(7952).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp12(8768).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp12(7952).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp12(8768).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = num5;

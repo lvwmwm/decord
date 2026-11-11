@@ -1,13 +1,13 @@
-// Module ID: 6578
-// Function ID: 6579
+// Module ID: 6691
+// Function ID: 6692
 // Name: isMessageMentioned
-// Dependencies: [4991, 5054, 5013, 2]
+// Dependencies: [5092, 5155, 5114, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 6578 (isMessageMentioned)
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
-import GuildStore from "GuildStore" /* 5013 */;
+// Module 6691 (isMessageMentioned)
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 function isMentioned(suppressRoles) {

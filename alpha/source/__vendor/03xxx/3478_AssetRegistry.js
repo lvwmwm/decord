@@ -1,0 +1,10 @@
+// Module ID: 3478
+// Function ID: 3479
+// Name: AssetRegistry
+// Dependencies: [1119]
+
+// Module 3478 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1119 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3ByZW1pdW1fZ3JvdXA=", scales: [1], hash: "63bc63185c0a296192c7178fb3339f0b", name: "hu.messages.63bc63185c0a296192c7178fb3339f0b.compiled.messages", type: "jsona" });

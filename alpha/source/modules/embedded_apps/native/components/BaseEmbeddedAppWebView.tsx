@@ -1,24 +1,24 @@
-// Module ID: 11993
-// Function ID: 11994
+// Module ID: 12787
+// Function ID: 12788
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [32, 5, 19, 5800, 1072, 21, 5142, 3, 11994, 11995, 8053, 11996, 11997, 1376, 11981, 11998, 11999, 1378, 12000, 12001, 1252, 563, 6092, 1113, 12007, 11055, 6789, 2]
+// Dependencies: [32, 5, 19, 5913, 1072, 21, 5243, 3, 12788, 12789, 8150, 12790, 12791, 1376, 12775, 12792, 12793, 1378, 12794, 12795, 1252, 563, 6205, 1113, 12801, 12766, 6773, 2]
 // Exports: BaseEmbeddedAppWebView
 
-// Module 11993 (BaseEmbeddedAppWebView)
+// Module 12787 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6092 */;
-import WebView2 from "WebView" /* 8053 */;
-import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 11994 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
+import WebView2 from "WebView" /* 8150 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 12788 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5800 */;
-import createStyles from "createStyles" /* 5142 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5913 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c3, c8, c9, closure_6, constants;

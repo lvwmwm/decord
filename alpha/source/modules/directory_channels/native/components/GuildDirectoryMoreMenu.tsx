@@ -1,19 +1,19 @@
-// Module ID: 14121
-// Function ID: 14122
+// Module ID: 14601
+// Function ID: 14602
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [19, 21, 14115, 14122, 6093, 1113, 14124, 1187, 8426, 10357, 5864, 10211, 10002, 8102, 9852, 575, 2]
+// Dependencies: [19, 21, 14595, 14602, 6206, 1113, 14604, 1187, 12002, 10838, 5977, 11267, 9082, 7922, 7356, 575, 2]
 // Exports: default
 
-// Module 14121 (GuildDirectoryMoreMenu)
+// Module 14601 (GuildDirectoryMoreMenu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6093 */;
-import ReportModals from "ReportModals" /* 8426 */;
-import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 14115 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 14122 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 14124 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
+import ReportModals from "ReportModals" /* 12002 */;
+import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 14595 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 14602 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 14604 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ export default function GuildDirectoryMoreMenu(entry) {
   if (tmp2.canEdit) {
     let obj = {
       label: intl.string(entry(1113).t.XnuOvN),
-      IconComponent: entry(10357).PencilIcon,
+      IconComponent: entry(10838).PencilIcon,
       action: function handleEdit() {
           const obj = GuildDirectoryEditDescriptionModalActionCreatorsDefault;
           const obj2 = { entry };
@@ -47,7 +47,7 @@ export default function GuildDirectoryMoreMenu(entry) {
   if (canRemove) {
     let obj2 = {
       label: intl2.string(entry(1113).t.KUxYWH),
-      IconComponent: entry(5864).TrashIcon,
+      IconComponent: entry(5977).TrashIcon,
       variant: "destructive",
       action: function handleRemove() {
           let intl;
@@ -89,7 +89,7 @@ export default function GuildDirectoryMoreMenu(entry) {
     const push3 = items.push;
     const obj3 = {
       label: intl3.string(entry(1113).t.Aen9eh),
-      IconComponent: entry(10211).FlagIcon,
+      IconComponent: entry(11267).FlagIcon,
       variant: "destructive",
       action: function handleReport() {
           const obj = ReportModals;
@@ -101,7 +101,7 @@ export default function GuildDirectoryMoreMenu(entry) {
   }
   let tmp9 = null;
   if (0 !== items.length) {
-    tmp9 = jsx(entry(10002).ContextMenu, {
+    tmp9 = jsx(entry(9082).ContextMenu, {
       items,
       children(ref) {
           ref = ref.ref;

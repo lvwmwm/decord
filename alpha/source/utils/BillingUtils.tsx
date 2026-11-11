@@ -1,15 +1,16 @@
-// Module ID: 4955
-// Function ID: 4956
+// Module ID: 5055
+// Function ID: 5056
 // Name: BillingUtils
-// Dependencies: [5, 1083, 4956, 1242, 1282, 4962, 2]
-// Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError
+// Dependencies: [5, 5056, 1083, 5057, 1242, 1282, 5063, 2]
+// Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError, isOfTypeStripeError, shouldReportExpressCheckoutError
 
-// Module 4955 (BillingUtils)
+// Module 5055 (BillingUtils)
 import Constants from "Constants" /* 1083 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import BraintreeUtils from "BraintreeUtils" /* 4956 */;
-import BillingErrorDefault from "BillingError" /* 4962 */;
+import Constants2 from "Constants" /* 5056 */;
+import BraintreeUtils from "BraintreeUtils" /* 5057 */;
+import BillingErrorDefault from "BillingError" /* 5063 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +81,9 @@ let obj = function _createGatewayCheckoutContext() {
   });
   return obj(...arguments);
 };
+const StripeErrorTypes = Constants2.StripeErrorTypes;
 const PaymentGateways = Constants.PaymentGateways;
+const set = new Set(["card_error", "api_connection_error", "validation_error"]);
 const result = size.fileFinishedImporting("utils/BillingUtils.tsx");
 
 export function getLocalizedDisplayMonth(arg0, arg1) {
@@ -112,6 +115,32 @@ export function isExpectedHttpClientError(status) {
     const tmp4 = status instanceof BillingErrorDefault && null != status.status && status.status >= 400 && status.status < 500;
   }
   return tmp2;
+}
+export function isOfTypeStripeError(type) {
+  const hasItem = null != type && StripeErrorTypes.includes(type.type);
+  return hasItem;
+}
+export function shouldReportExpressCheckoutError(code) {
+  let tmp6;
+  if (code instanceof BillingErrorDefault) {
+    let tmp8 = code.code !== tmp(5063).ErrorCodes.INVALID_PAYMENT_SOURCE;
+    if (tmp8) {
+      let tmp10 = code instanceof HTTPUtils.HTTPResponseError && code.status >= 400 && code.status < 500;
+      if (!tmp10) {
+        tmp10 = code instanceof tmp(5063) && null != code.status && code.status >= 400 && code.status < 500;
+        const tmp11 = code instanceof tmp(5063) && null != code.status && code.status >= 400 && code.status < 500;
+      }
+      tmp8 = !tmp10;
+    }
+    tmp6 = tmp8;
+  } else {
+    const hasItem = null != code && StripeErrorTypes.includes(code.type);
+    tmp6 = !hasItem;
+    if (hasItem) {
+      tmp6 = !set.has(code.type);
+    }
+  }
+  return tmp6;
 }
 export function captureBillingMessage(arg0, tags) {
   let obj2;

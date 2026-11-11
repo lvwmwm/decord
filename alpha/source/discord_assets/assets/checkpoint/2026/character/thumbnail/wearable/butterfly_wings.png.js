@@ -1,8 +1,8 @@
-// Module ID: 6533
-// Function ID: 6534
+// Module ID: 6646
+// Function ID: 6647
 // Dependencies: [2]
 
-// Module 6533
+// Module 6646
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/wearable/butterfly_wings.png.js");

@@ -1,22 +1,22 @@
-// Module ID: 18389
-// Function ID: 18390
+// Module ID: 18561
+// Function ID: 18562
 // Name: RegisterAgeGate
-// Dependencies: [32, 19, 17, 6799, 18352, 18353, 1072, 21, 5142, 575, 2166, 18390, 5201, 1499, 18349, 504, 7198, 18370, 18351, 38, 7209, 1113, 7152, 9078, 18391, 5760, 7181, 9097, 5149, 2]
+// Dependencies: [32, 19, 17, 6783, 18524, 18525, 1072, 21, 5243, 575, 2166, 18562, 5314, 1499, 18521, 504, 7717, 18542, 18523, 38, 7726, 1113, 7554, 7932, 18563, 5873, 7583, 7956, 5250, 2]
 // Exports: default
 
-// Module 18389 (RegisterAgeGate)
+// Module 18561 (RegisterAgeGate)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18351 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18523 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 6799 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18352 */;
-import RegistrationConstants from "RegistrationConstants" /* 18353 */;
+import ConsentStore from "ConsentStore" /* 6783 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18524 */;
+import RegistrationConstants from "RegistrationConstants" /* 18525 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import module_2166_mod from "module_2166" /* 2166 */;
 import size from "module_2" /* 2 */;
 

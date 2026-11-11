@@ -1,17 +1,17 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 15014
+// Function ID: 15015
 // Name: TabsGradient
-// Dependencies: [19, 1072, 21, 1652, 5717, 5142, 5763, 2]
+// Dependencies: [19, 1072, 21, 1652, 5830, 5243, 5876, 2]
 // Exports: default
 
-// Module 14634 (TabsGradient)
+// Module 15014 (TabsGradient)
 import Constants from "Constants" /* 1072 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import LinearGradientDefault from "LinearGradient" /* 5717 */;
-import spring_spring from "spring/spring" /* 5763 */;
+import LinearGradientDefault from "LinearGradient" /* 5830 */;
+import spring_spring from "spring/spring" /* 5876 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const module_1652 = _mod1652;

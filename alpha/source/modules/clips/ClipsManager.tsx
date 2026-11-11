@@ -1,32 +1,32 @@
-// Module ID: 20452
-// Function ID: 20453
+// Module ID: 20647
+// Function ID: 20648
 // Name: clips/ClipsManager
-// Dependencies: [32, 5, 5914, 1231, 502, 4991, 2130, 5895, 7966, 1385, 2136, 8288, 1072, 6772, 5899, 20453, 7353, 15210, 5920, 6774, 1252, 4967, 572, 20454, 20455, 15521, 2]
+// Dependencies: [32, 5, 6027, 1231, 502, 5092, 2130, 6008, 6739, 1385, 2136, 8779, 1072, 6740, 6012, 20648, 7816, 15696, 6033, 6745, 1252, 5068, 572, 20649, 20650, 15993, 2]
 
-// Module 20452 (clips/ClipsManager)
+// Module 20647 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 4967 */;
-import Constants2 from "Constants" /* 5899 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5914 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5920 */;
-import Constants3 from "Constants" /* 6772 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6774 */;
-import ClipsExperiment from "ClipsExperiment" /* 15210 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20454 */;
+import UserSettings from "UserSettings" /* 5068 */;
+import Constants2 from "Constants" /* 6012 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 6027 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 6033 */;
+import Constants3 from "Constants" /* 6740 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
+import ClipsExperiment from "ClipsExperiment" /* 15696 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20649 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7966 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6739 */;
 import UserStore from "UserStore" /* 1385 */;
 import ClipsStore from "ClipsStore" /* 2136 */;
-import ClipsConstants from "ClipsConstants" /* 8288 */;
+import ClipsConstants from "ClipsConstants" /* 8779 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -40,7 +40,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(15521);
+const isClipsEnabled = tmp(15993);
 function getCodecSurvey() {
   return obj(...arguments);
 }
@@ -298,20 +298,30 @@ class ClipsManager extends AutomaticLifecycleManager {
     if (null != channelId) {
       const obj3 = ClipsStore;
       if (!ClipsStore.getClipsWarningShown(channelId)) {
-        let setting = userId !== AuthenticationStore.getId() && obj3.isClipsEnabledForUser(userId);
-        if (setting) {
-          const ClipsAllowVoiceRecording = UserSettings.ClipsAllowVoiceRecording;
-          setting = ClipsAllowVoiceRecording.getSetting();
-        }
-        if (setting) {
-          const self = this;
-          const obj2 = { type: "CLIPS_SHOW_CALL_WARNING", channelId };
-          obj = DispatcherDefault;
-          obj.dispatch(obj2);
-          this.showClipsToast();
+        if (userId !== AuthenticationStore.getId()) {
+          if (obj3.isClipsEnabledForUser(userId)) {
+            const self = this;
+            const result = this.shouldUseClipsInUseNotice();
+            let setting = result;
+            if (!setting) {
+              const ClipsAllowVoiceRecording = UserSettings.ClipsAllowVoiceRecording;
+              setting = ClipsAllowVoiceRecording.getSetting();
+            }
+            if (setting) {
+              const obj2 = { type: "CLIPS_SHOW_CALL_WARNING", channelId };
+              obj = DispatcherDefault;
+              obj.dispatch(obj2);
+              if (!result) {
+                self.showClipsToast();
+              }
+            }
+          }
         }
       }
     }
+  }
+  shouldUseClipsInUseNotice() {
+    return false;
   }
   handleClipsAllowVoiceRecordingUpdate() {
     const self = this;
@@ -503,7 +513,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp7 = tmp6 && classification === tmp.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmp2Result = tmp2(20455);
+            const tmp2Result = tmp2(20650);
             allowDefaultOn = tmp2Result.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp7, enableAutoclipping: tmp7, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };

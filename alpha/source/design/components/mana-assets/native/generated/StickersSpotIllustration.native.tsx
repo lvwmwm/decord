@@ -1,26 +1,26 @@
-// Module ID: 9897
-// Function ID: 9898
+// Module ID: 8976
+// Function ID: 8977
 // Name: StickersSpotIllustration
-// Dependencies: [19, 21, 9898, 9899, 9900, 7138, 5844, 2]
+// Dependencies: [19, 21, 8977, 8978, 8979, 7689, 5957, 2]
 // Exports: StickersSpotIllustration
 
-// Module 9897 (StickersSpotIllustration)
+// Module 8976 (StickersSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7138 */;
-import _modDef9898 from "module_9898" /* 9898 */;
-import _modDef9899 from "module_9899" /* 9899 */;
-import _modDef9900 from "module_9900" /* 9900 */;
+import react_native from "react-native" /* 7689 */;
+import _modDef8977 from "module_8977" /* 8977 */;
+import _modDef8978 from "module_8978" /* 8978 */;
+import _modDef8979 from "module_8979" /* 8979 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef9898 };
+let obj2 = { uri: _modDef8977 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef9899 };
+let obj3 = { uri: _modDef8978 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef9900 };
-({ uri: _modDef9900 });
+obj[3] = { uri: _modDef8979 };
+({ uri: _modDef8979 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/StickersSpotIllustration.native.tsx");
 

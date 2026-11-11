@@ -1,21 +1,21 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 9982
+// Function ID: 9983
 // Name: LottieIcon
-// Dependencies: [19, 17, 21, 575, 7170, 5156, 5726, 5748, 2]
+// Dependencies: [19, 17, 21, 575, 7572, 5257, 5839, 5861, 2]
 // Exports: LottieIcon
 
-// Module 12092 (LottieIcon)
+// Module 9982 (LottieIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import LottieViewDefault from "LottieView" /* 5748 */;
-import IconSize from "IconSize" /* 7170 */;
+import LottieViewDefault from "LottieView" /* 5861 */;
+import IconSize from "IconSize" /* 7572 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp3;
-const react2 = tmp3(5156);
-const useToken = tmp3(5726);
+const react2 = tmp3(5257);
+const useToken = tmp3(5839);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let size = size_mod;

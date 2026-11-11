@@ -1,19 +1,19 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 16939
+// Function ID: 16940
 // Name: DevToolsNavigator
-// Dependencies: [19, 17, 21, 9982, 7234, 16779, 9908, 18111, 13226, 5753, 575, 17933, 16936, 5376, 6801, 5324, 2]
+// Dependencies: [19, 17, 21, 9062, 7424, 16940, 8985, 18282, 13890, 5866, 575, 18099, 17099, 5489, 6785, 5437, 2]
 // Exports: navigateToDevTools
 
-// Module 16778 (DevToolsNavigator)
+// Module 16939 (DevToolsNavigator)
 import react_native from "react-native" /* 17 */;
-import Types from "Types" /* 5324 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
-import HeaderShared from "HeaderShared" /* 9908 */;
-import SettingHookHarnessDefault from "SettingHookHarness" /* 16779 */;
+import Types from "Types" /* 5437 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
+import HeaderShared from "HeaderShared" /* 8985 */;
+import SettingHookHarnessDefault from "SettingHookHarness" /* 16940 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9982 */;
+import NativeStackView from "NativeStackView" /* 9062 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp6;
-const DevToolsContentDefault = tmp6(18111);
+const DevToolsContentDefault = tmp6(18282);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let Navigator = NativeStackView.createNativeStackNavigator();
@@ -94,8 +94,8 @@ let closure_8 = react.memo(function DevToolsNavigator(screenKey) {
   };
   items1[0] = tmp5(tmp7.Screen, obj4);
   const obj5 = {};
-  let merged = Object.assign(tmp(17933).DevToolsScreens);
-  let merged1 = Object.assign(tmp(17933).PerformanceTestingScreens);
+  let merged = Object.assign(tmp(18099).DevToolsScreens);
+  let merged1 = Object.assign(tmp(18099).PerformanceTestingScreens);
   const entries1 = entries(obj5);
   items1[1] = entries1.map((item) => {
     let tmp;
@@ -113,7 +113,7 @@ let closure_8 = react.memo(function DevToolsNavigator(screenKey) {
     }
     return tmp3;
   });
-  let tmpResult = tmp(16936);
+  let tmpResult = tmp(17099);
   const designSystemScreens = tmpResult.getDesignSystemScreens();
   items1[2] = designSystemScreens.map((item) => {
     let tmp;

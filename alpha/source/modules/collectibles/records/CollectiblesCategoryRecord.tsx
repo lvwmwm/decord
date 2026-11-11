@@ -1,14 +1,14 @@
-// Module ID: 7800
-// Function ID: 7801
+// Module ID: 8420
+// Function ID: 8421
 // Name: CollectiblesCategoryRecord
-// Dependencies: [7801, 7808, 2111, 7810, 7811, 2]
+// Dependencies: [8421, 8428, 2111, 8430, 8431, 2]
 
-// Module 7800 (CollectiblesCategoryRecord)
+// Module 8420 (CollectiblesCategoryRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7810 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7811 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7801 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7808 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8430 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 8421 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 8428 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesCategoryRecord extends CollectiblesStoreListingRecord {

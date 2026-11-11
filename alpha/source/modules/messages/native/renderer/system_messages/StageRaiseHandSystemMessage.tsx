@@ -1,18 +1,18 @@
-// Module ID: 8574
-// Function ID: 8575
+// Module ID: 9204
+// Function ID: 9205
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [6770, 4991, 5074, 1072, 1113, 2185, 8493, 11, 6182, 8495, 8497, 2]
+// Dependencies: [6877, 5092, 5175, 1072, 1113, 2185, 9122, 11, 6295, 9124, 9126, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8574 (StageRaiseHandSystemMessage)
+// Module 9204 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl5 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8493 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8495 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6770 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9122 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9124 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6877 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ export function createStageRaiseHandSystemMessage(message) {
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(6182).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(6295).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
@@ -84,6 +84,6 @@ export function createStageRaiseHandSystemMessage(message) {
       tmp10 = obj5;
     }
   }
-  const merged = Object.assign(tmp6(8497)(message));
+  const merged = Object.assign(tmp6(9126)(message));
   return obj3;
 }

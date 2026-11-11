@@ -1,14 +1,14 @@
-// Module ID: 5315
-// Function ID: 5316
+// Module ID: 5428
+// Function ID: 5429
 // Name: useRoutedActiveGuildTheme
-// Dependencies: [32, 19, 1072, 5316, 5317, 5342, 5343, 2]
+// Dependencies: [32, 19, 1072, 5429, 5430, 5455, 5456, 2]
 // Exports: default
 
-// Module 5315 (useRoutedActiveGuildTheme)
+// Module 5428 (useRoutedActiveGuildTheme)
 import Constants from "Constants" /* 1072 */;
-import RootNavigationRef from "RootNavigationRef" /* 5317 */;
-import reactDefault from "react" /* 5342 */;
-import GuildThemeResolver from "GuildThemeResolver" /* 5343 */;
+import RootNavigationRef from "RootNavigationRef" /* 5430 */;
+import reactDefault from "react" /* 5455 */;
+import GuildThemeResolver from "GuildThemeResolver" /* 5456 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 let tmp;
-const NavigationRouteUtils = tmp(5316);
+const NavigationRouteUtils = tmp(5429);
 function getGuildIdFromNavigationState(routes) {
   if (null != routes) {
     routes = routes.routes;

@@ -1,15 +1,15 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 12629
+// Function ID: 12630
 // Name: ChannelCallLifecycleStore
-// Dependencies: [5045, 11140, 8983, 1342, 504, 572, 2]
+// Dependencies: [5146, 10941, 9975, 1342, 504, 572, 2]
 
-// Module 11877 (ChannelCallLifecycleStore)
+// Module 12629 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1342 from "module_1342" /* 1342 */;
-import DeviceOrientation from "DeviceOrientation" /* 8983 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 11140 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import DeviceOrientation from "DeviceOrientation" /* 9975 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10941 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
 import size_mod from "module_2" /* 2 */;
 
 let voiceChannelId;
@@ -20,10 +20,10 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "Path", width: "channel", height: "space", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: 619025, isInitialized: 13369344, isVisible: 1359020032 };
+let size = { x: "Array", y: "Path", width: "channel", height: "ip", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "FAMILY_CENTER", isInitialized: "isArray", isVisible: "<string:74596320>" };
 const VOICE_CONTROLS_TOGGLE_BUTTON = VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON;
 obj[VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "Path", width: "channel", height: "space", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: 619025, isInitialized: 13369344, isVisible: 1359020032 };
+const size1 = { x: "Array", y: "Path", width: "channel", height: "ip", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "FAMILY_CENTER", isInitialized: "isArray", isVisible: "<string:74596320>" };
 const CAMERA_PREVIEW_PICTURE_IN_PICTURE = VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE;
 obj[CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;

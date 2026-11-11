@@ -1,38 +1,38 @@
-// Module ID: 17199
-// Function ID: 17200
+// Module ID: 17363
+// Function ID: 17364
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 4990, 7342, 4991, 5084, 6833, 2186, 1072, 10264, 11436, 21, 5142, 575, 5861, 5753, 1499, 1500, 1113, 7396, 11074, 9844, 504, 14443, 1411, 6094, 14441, 5376, 11437, 2118, 1260, 7555, 7571, 7226, 7230, 9025, 5317, 7354, 7349, 11, 12600, 11648, 7129, 7432, 2265, 7041, 2]
+// Dependencies: [19, 17, 5091, 7158, 5092, 5185, 6895, 2186, 1072, 10834, 11993, 21, 5243, 575, 5974, 5866, 1499, 1500, 1113, 7346, 12657, 7344, 504, 14815, 1411, 6207, 14813, 5489, 11994, 2118, 1260, 8072, 6852, 7743, 7747, 7587, 5430, 7817, 7812, 11, 13289, 13382, 7680, 7888, 2265, 7379, 2]
 // Exports: default, handleDeleteApp
 
-// Module 17199 (UserSettingsAuthedApp)
+// Module 17363 (UserSettingsAuthedApp)
 import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
 import Link from "Link" /* 1500 */;
-import RootNavigationRef from "RootNavigationRef" /* 5317 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5861 */;
-import useAlertStore from "useAlertStore" /* 6094 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7226 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7230 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7349 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7354 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7396 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 9025 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10264 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11074 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11436 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 14441 */;
+import RootNavigationRef from "RootNavigationRef" /* 5430 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5974 */;
+import useAlertStore from "useAlertStore" /* 6207 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7346 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7587 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7743 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7747 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7812 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7817 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10834 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11993 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 12657 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 14813 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7342 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6833 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7158 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;

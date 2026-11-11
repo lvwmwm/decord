@@ -1,32 +1,32 @@
-// Module ID: 19839
-// Function ID: 19840
+// Module ID: 20031
+// Function ID: 20032
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 4995, 4991, 6900, 2117, 7737, 1072, 6895, 6854, 5013, 3, 1089, 510, 10335, 1377, 572, 1242, 1252, 5020, 1282, 5021, 11, 12, 7875, 7878, 7876, 15879, 17925, 7735, 1380, 7745, 2]
+// Dependencies: [32, 5, 5096, 5092, 6952, 2117, 8615, 1072, 6947, 6906, 5114, 3, 1089, 510, 8790, 1377, 572, 1242, 1252, 5121, 1282, 5122, 11, 12, 8693, 8696, 8694, 16038, 18091, 8613, 1380, 8623, 2]
 // Exports: backgroundSync
 
-// Module 19839 (background_sync/BackgroundSync)
+// Module 20031 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 5020 */;
-import modules_Messages from "modules/Messages" /* 7735 */;
-import GuildVersionsDefault from "GuildVersions" /* 7875 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7876 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7878 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 5121 */;
+import modules_Messages from "modules/Messages" /* 8613 */;
+import GuildVersionsDefault from "GuildVersions" /* 8693 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 8694 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 8696 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 6900 */;
+import ReadStateStore from "ReadStateStore" /* 6952 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import FileSystemStore from "FileSystemStore" /* 7737 */;
+import FileSystemStore from "FileSystemStore" /* 8615 */;
 import Constants from "Constants" /* 1072 */;
-import StickersStore from "StickersStore" /* 6895 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import EmojiStore from "EmojiStore" /* 6854 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import StickersStore from "StickersStore" /* 6947 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import EmojiStore from "EmojiStore" /* 6906 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 let c1, c11, c12, c21, c22, closure_13, config, readStatesByChannel;
@@ -47,9 +47,7 @@ let obj = function _backgroundSync() {
       let closure_5;
       let closure_6;
       let closure_7;
-      let flag;
       let obj18;
-      let tmp;
       closure_131_14.verbose("Starting Background Sync");
       const tmp184 = flag;
       if (!tmp184) {
@@ -65,7 +63,7 @@ let obj = function _backgroundSync() {
           closure_131_14.log("Skipping Background Sync because of clock skew");
           const Storage2 = closure_131_0(closure_131_2[13]).Storage;
           const _Date4 = Date;
-          let result = Storage2.set(closure_131_16, Date.now());
+          const result = Storage2.set(closure_131_16, Date.now());
           c7 = 3;
           return { value: undefined, done: true };
         } else {
@@ -197,7 +195,6 @@ let obj = function _backgroundSync() {
       }
       await "HermesInternal";
       closure_3 = tmp;
-      flag = force.force ?? false;
       return "flexDirection";
     })();
     iter.next();
@@ -289,7 +286,7 @@ obj = function _backgroundSyncPrivateChannels() {
               closure_1.size_private_channel_messages = JSON.stringify(body).length;
               if (null != body.latest_message_id) {
                 const Storage = closure_132_0(closure_132_2[13]).Storage;
-                const result = Storage.set(closure_132_18, body.latest_message_id);
+                let result = Storage.set(closure_132_18, body.latest_message_id);
               }
               closure_6 = {};
               const obj6 = closure_132_1(closure_132_2[22]);

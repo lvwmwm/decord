@@ -1,9 +1,9 @@
-// Module ID: 13977
-// Function ID: 13978
+// Module ID: 14457
+// Function ID: 14458
 // Name: NavigationTTIDefinition
 // Dependencies: [1260, 1346, 2]
 
-// Module 13977 (NavigationTTIDefinition)
+// Module 14457 (NavigationTTIDefinition)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import AnalyticsSchema from "AnalyticsSchema" /* 1346 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 12656
-// Function ID: 12657
+// Module ID: 13343
+// Function ID: 13344
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 5142, 12595, 11656, 1113, 5151, 5753, 2]
+// Dependencies: [19, 17, 21, 5243, 13284, 12489, 1113, 5252, 5866, 2]
 // Exports: default
 
-// Module 12656 (EmptyState)
+// Module 13343 (EmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5151 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -25,8 +25,8 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = closure_5();
-  const obj = flag(12595);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(11656).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
+  const obj = flag(13284);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(12489).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
   const items = [flag];
   const effect = react.useEffect(() => {
     let stringResult;
@@ -41,7 +41,7 @@ export default function EmptyState(showsGenericMessage) {
     const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(stringResult, "polite");
   }, items);
-  const Text = flag(5753).Text;
+  const Text = flag(5866).Text;
   let intl = flag(1113).intl;
   let string = intl.string;
   let t = flag(1113).t;

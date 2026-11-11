@@ -1,14 +1,14 @@
-// Module ID: 10882
-// Function ID: 10883
+// Module ID: 10790
+// Function ID: 10791
 // Name: ActivityStatusText
-// Dependencies: [19, 21, 5142, 5753, 2]
+// Dependencies: [19, 21, 5243, 5866, 2]
 // Exports: default
 
-// Module 10882 (ActivityStatusText)
+// Module 10790 (ActivityStatusText)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5753 */;
+import Text_Text from "Text/Text" /* 5866 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

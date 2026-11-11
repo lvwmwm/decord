@@ -1,14 +1,14 @@
-// Module ID: 12777
-// Function ID: 12778
+// Module ID: 13452
+// Function ID: 13453
 // Name: CalendarPlusIcon
-// Dependencies: [19, 21, 575, 5843, 12778, 2]
+// Dependencies: [19, 21, 575, 5956, 13453, 2]
 // Exports: CalendarPlusIcon
 
-// Module 12777 (CalendarPlusIcon)
+// Module 13452 (CalendarPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 12778 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 13453 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

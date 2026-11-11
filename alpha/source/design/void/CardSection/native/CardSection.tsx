@@ -1,18 +1,18 @@
-// Module ID: 8266
-// Function ID: 8267
+// Module ID: 8055
+// Function ID: 8056
 // Name: CardSection
-// Dependencies: [19, 17, 1072, 21, 5142, 6780, 575, 8267, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 6763, 575, 8056, 2]
 // Exports: default
 
-// Module 8266 (CardSection)
+// Module 8055 (CardSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8267 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8056 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
-import TextStyles_mod from "TextStyles" /* 6780 */;
+import createStyles_mod from "createStyles" /* 5243 */;
+import TextStyles_mod from "TextStyles" /* 6763 */;
 import size from "module_2" /* 2 */;
 
 let DISPLAY_EXTRABOLD;

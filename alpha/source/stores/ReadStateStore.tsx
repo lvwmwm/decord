@@ -1,10 +1,10 @@
-// Module ID: 6900
-// Function ID: 6901
+// Module ID: 6952
+// Function ID: 6953
 // Name: ReadStateStore
-// Dependencies: [5, 32, 4990, 6901, 5046, 5356, 6913, 6914, 6915, 6916, 6919, 5076, 1231, 4995, 502, 6920, 4991, 6619, 6832, 5013, 6762, 6196, 5074, 5084, 5045, 6833, 1385, 6925, 1072, 5783, 4998, 4997, 6834, 1112, 3, 11, 1089, 572, 6578, 6927, 1282, 4986, 6928, 6929, 6930, 6931, 6810, 5083, 6942, 6943, 6944, 6948, 2118, 1403, 2166, 12, 1380, 6622, 5317, 6949, 6950, 5082, 5003, 504, 2117, 6951, 2]
+// Dependencies: [5, 32, 5091, 6953, 5147, 5469, 6966, 6967, 6968, 6969, 6972, 5177, 1231, 5096, 502, 6973, 5092, 6731, 6894, 5114, 6978, 6309, 5175, 5185, 5146, 6895, 1385, 6979, 1072, 5896, 5099, 5098, 6896, 1112, 3, 11, 1089, 572, 6691, 6981, 1282, 5087, 6982, 6983, 6984, 6985, 6794, 5184, 6995, 6996, 6997, 7001, 2118, 1403, 2166, 12, 1380, 6734, 5430, 7002, 7003, 5183, 5104, 504, 2117, 7004, 2]
 // Exports: isNonMutedPrivateMessage
 
-// Module 6900 (ReadStateStore)
+// Module 6952 (ReadStateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -15,55 +15,55 @@ import GlobalUtils from "GlobalUtils" /* 1380 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4997 */;
-import ThreadActionUtils from "ThreadActionUtils" /* 5082 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 5083 */;
-import RootNavigationRef from "RootNavigationRef" /* 5317 */;
-import isMessageMentioned from "isMessageMentioned" /* 6578 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6622 */;
-import NSFWContentGate from "NSFWContentGate" /* 6810 */;
-import ReadStateConstants from "ReadStateConstants" /* 6834 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6913 */;
-import networkAwareRetryDefault from "networkAwareRetry" /* 6927 */;
-import OverlaySupported from "OverlaySupported" /* 6928 */;
-import OverlayVisibility from "OverlayVisibility" /* 6929 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6930 */;
-import isChannelFocused from "isChannelFocused" /* 6931 */;
-import MessageRequestUtils from "MessageRequestUtils" /* 6942 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6944 */;
-import visibleInlineChannels from "visibleInlineChannels" /* 6949 */;
-import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6950 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6951 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5098 */;
+import ThreadActionUtils from "ThreadActionUtils" /* 5183 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 5184 */;
+import RootNavigationRef from "RootNavigationRef" /* 5430 */;
+import isMessageMentioned from "isMessageMentioned" /* 6691 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6734 */;
+import NSFWContentGate from "NSFWContentGate" /* 6794 */;
+import ReadStateConstants from "ReadStateConstants" /* 6896 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6966 */;
+import networkAwareRetryDefault from "networkAwareRetry" /* 6981 */;
+import OverlaySupported from "OverlaySupported" /* 6982 */;
+import OverlayVisibility from "OverlayVisibility" /* 6983 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6984 */;
+import isChannelFocused from "isChannelFocused" /* 6985 */;
+import MessageRequestUtils from "MessageRequestUtils" /* 6995 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6997 */;
+import visibleInlineChannels from "visibleInlineChannels" /* 7002 */;
+import ThreadNotificationSettings from "ThreadNotificationSettings" /* 7003 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 7004 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6901 */;
-import GatedChannelStore from "GatedChannelStore" /* 5046 */;
-import ExperimentStore from "ExperimentStore" /* 5356 */;
-import MessageRequestStore from "MessageRequestStore" /* 6914 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6915 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6916 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6919 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5076 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
+import GatedChannelStore from "GatedChannelStore" /* 5147 */;
+import ExperimentStore from "ExperimentStore" /* 5469 */;
+import MessageRequestStore from "MessageRequestStore" /* 6967 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6968 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6969 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6972 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5177 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6920 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import DimensionStore from "DimensionStore" /* 6619 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6832 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import IdleStore from "IdleStore" /* 6762 */;
-import MessageStore from "MessageStore" /* 6196 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6833 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6973 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import DimensionStore from "DimensionStore" /* 6731 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6894 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import IdleStore from "IdleStore" /* 6978 */;
+import MessageStore from "MessageStore" /* 6309 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
 import UserStore from "UserStore" /* 1385 */;
-import WindowStore from "WindowStore" /* 6925 */;
+import WindowStore from "WindowStore" /* 6979 */;
 import Constants from "Constants" /* 1072 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5783 */;
-import ChannelConstants from "ChannelConstants" /* 4998 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5896 */;
+import ChannelConstants from "ChannelConstants" /* 5099 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -98,12 +98,12 @@ let closure_53;
 let closure_54;
 let closure_55;
 let tmp;
-const isOptInEnabled = tmp(6943);
-const f91045 = () => {
+const isOptInEnabled = tmp(6996);
+const f92059 = () => {
   obj = DispatcherDefault;
   obj.dispatch({ type: "DECAY_READ_STATES" });
 };
-const f91048 = (type) => {
+const f92062 = (type) => {
   let last_pin_timestamp;
   if (closure_1_18(type.type)) {
     const value = closure_1_83.get(type.id);
@@ -143,7 +143,7 @@ function setDecayedReadStateTimer() {
   const timestamp1 = Date.now();
   closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
   clearTimeout(timeout);
-  timeout = setTimeout(f91045, DurationsDefault.Millis.HOUR);
+  timeout = setTimeout(f92059, DurationsDefault.Millis.HOUR);
 }
 function parseTimestamp(arg0) {
   if (null == arg0) {
@@ -745,7 +745,7 @@ function handleMessageDelete(channelId) {
 }
 function handleLoadArchivedThreadsSuccess(threads) {
   threads = threads.threads;
-  const item = threads.forEach(f91048);
+  const item = threads.forEach(f92062);
 }
 function handleSearchMessagesSuccess(data) {
   data = data.data;
@@ -756,9 +756,9 @@ function handleSearchMessagesSuccess(data) {
     item = messages.forEach((arr) => {
       const mapped = arr.map((thread) => thread.thread);
       const found = mapped.filter(closure_1_0(closure_1_2[56]).isNotNullish);
-      const item = found.forEach(f91048);
+      const item = found.forEach(f92062);
     });
-    const item1 = threads.forEach(f91048);
+    const item1 = threads.forEach(f92062);
   });
 }
 function handleChannelDelete(channel) {
@@ -956,7 +956,7 @@ class ReadState {
     if (arg1 === undefined) {
       CHANNEL = ReadStateTypes.CHANNEL;
     }
-    merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "a" });
+    merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "Array" });
     merged[0] = ReadStateTypes.CHANNEL;
     merged.channelId = channelId;
     merged.type = CHANNEL;
@@ -1016,7 +1016,7 @@ class ReadState {
         if (CHANNEL === undefined) {
           CHANNEL2 = ReadStateTypes.CHANNEL;
         }
-        merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "a" });
+        merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "Array" });
         merged[0] = ReadStateTypes.CHANNEL;
         merged.channelId = channelId;
         merged.type = CHANNEL2;
@@ -1500,7 +1500,7 @@ class ReadState {
         let tmp9 = !result;
         const tmp4 = require;
         if (tmp9) {
-          const tmp4Result = tmp4(6943);
+          const tmp4Result = tmp4(6996);
           const result1 = tmp4Result.isOptInEnabledForGuild(self._guildId) && self._lastMessageTimestamp < closure_73;
           tmp9 = !result1 && self.canTrackUnreads();
           !result1 && self.canTrackUnreads();
@@ -1597,7 +1597,7 @@ class ReadState {
           self._persisted = true;
           networkAwareRetryDefault(() => {
             const HTTP = HTTPUtils.HTTP;
-            obj = { url: customChannelScoresByGuild.PINS_ACK(self.channelId), oldFormErrors: true, rejectWithError: true };
+            obj = { url: customGuildScores.PINS_ACK(self.channelId), oldFormErrors: true, rejectWithError: true };
             return HTTP.post(obj);
           });
         }
@@ -1814,7 +1814,7 @@ class ReadState {
       let promise = networkAwareRetryDefault(() => {
         let body;
         const HTTP = HTTPUtils.HTTP;
-        const request = { url: customChannelScoresByGuild.MESSAGE_ACK(self.channelId, outgoingAck), body, oldFormErrors: true, rejectWithError: true };
+        const request = { url: customGuildScores.MESSAGE_ACK(self.channelId, outgoingAck), body, oldFormErrors: true, rejectWithError: true };
         body = { token, last_viewed: self.lastViewed, flags: require };
         return HTTP.post(request);
       });
@@ -1829,7 +1829,7 @@ class ReadState {
           const tmp5 = dependencyMap;
           const tmp7 = closure_2;
           if (tmp7) {
-            const promise = asyncRequire(6948, tmp5.paths);
+            const promise = asyncRequire(7001, tmp5.paths);
             promise.then((result) => {
               obj = closure_1_1;
               channelId = channelId.channelId;
@@ -1942,7 +1942,7 @@ class ReadState {
     }
     if (flag) {
       const HTTP = HTTPUtils.HTTP;
-      const request = { url: customChannelScoresByGuild.CHANNEL_ACK(self.channelId), body: obj3, oldFormErrors: true, rejectWithError: true };
+      const request = { url: customGuildScores.CHANNEL_ACK(self.channelId), body: obj3, oldFormErrors: true, rejectWithError: true };
       const del = HTTP.del;
       obj3 = { version: 2, read_state_type: self.type };
       del(request);
@@ -2906,7 +2906,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f91045, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f92059, DurationsDefault.Millis.HOUR);
     token = null;
     const tmp5 = channelId !== selectedChannelId && null != channelId;
     if (tmp5) {
@@ -2936,7 +2936,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f91045, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f92059, DurationsDefault.Millis.HOUR);
     const item = readStates.forEach(function(type) {
       let CHANNEL = type.type;
       if (CHANNEL == null) {
@@ -3042,7 +3042,7 @@ obj = {
     }
     const mapped = messages.map((thread) => thread.thread);
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const item = found.forEach(f91048);
+    const item = found.forEach(f92062);
   },
   LOCAL_MESSAGES_LOADED: function handleLocalMessagesLoaded(messages) {
     messages = messages.messages;
@@ -3323,7 +3323,7 @@ obj = {
   },
   CHANNEL_LOCAL_ACK: function handleChannelLocalAck(channelId) {
     const value = ReadState.get(channelId.channelId);
-    return value.ack({ messageId: "HermesInternal", local: "HermesInternal", immediate: "flexDirection", force: "1000000000000000000", isExplicitUserAction: null, trackAnalytics: "1000000000000000001" });
+    return value.ack({ messageId: "HermesInternal", local: "HermesInternal", immediate: "flexDirection", force: "CALL_CONNECT", isExplicitUserAction: null, trackAnalytics: "heading-md/semibold" });
   },
   CHANNEL_PINS_ACK: function handleChannelPinsAck(timestamp) {
     timestamp = timestamp.timestamp;
@@ -3723,7 +3723,7 @@ obj = {
     const item = found.forEach((messageId) => {
       messageId = messageId.messageId;
       const value = ReadState.get(messageId.channelId, messageId.readStateType);
-      value.ack({ messageId, local: true, immediate: "HermesInternal", force: "flexDirection", isExplicitUserAction: "raw", trackAnalytics: null });
+      value.ack({ messageId, local: true, immediate: "HermesInternal", force: "flexDirection", isExplicitUserAction: "full", trackAnalytics: null });
     });
     if (context === closure_42) {
       const push = navigation.push;

@@ -46,13 +46,13 @@ export default function createApexExperimentCommon(definition, registerExperimen
   let closure_8 = null;
   let obj = {
     definition,
-    useConfig(location) {
+    useConfig(location, autoTrackExposure) {
       let _location;
       let revision;
       registerExperiment = location;
-      const tmp = closure_2(revision, location);
+      let tmp = closure_2(revision, location);
       closure_1 = tmp;
-      let tmp2 = closure_2("user", location);
+      const tmp2 = closure_2("user", location);
       closure_2 = tmp2;
       const items = [registerExperiment];
       const items1 = [tmp, tmp2];
@@ -95,11 +95,16 @@ export default function createApexExperimentCommon(definition, registerExperimen
         tmp12 = useAsEligibility;
       }
       let closure_9 = tmp14;
-      const items2 = [tmp, first, trackedVariantId, revision, location.location, isOverride, prop, useAsEligibility, tmp14];
+      autoTrackExposure = undefined;
+      if (autoTrackExposure != null) {
+        autoTrackExposure = autoTrackExposure.autoTrackExposure;
+      }
+      let closure_10 = tmp16;
+      const items2 = [tmp16, tmp, first, trackedVariantId, revision, location.location, isOverride, prop, useAsEligibility, tmp14];
       tmp8(() => {
-        const tmp2 = null == first || null == trackedVariantId || null == revision || false !== isOverride || true !== prop || true === useAsEligibility || closure_9;
-        if (!tmp2) {
-          const result = _location.trackExperimentExposure(tmp, logger, _location.location, closure_5, revision, trackedVariantId, closure_1);
+        const tmp = closure_10 && null != first && null != trackedVariantId && null != revision && false === isOverride && true === prop && true !== useAsEligibility && !closure_9;
+        if (tmp) {
+          const result = _location.trackExperimentExposure(first, logger, _location.location, closure_5, revision, trackedVariantId, closure_1);
         }
       }, items2);
       if (null != variantId) {

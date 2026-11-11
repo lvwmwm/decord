@@ -1,18 +1,18 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17993
+// Function ID: 17994
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 1072, 14234, 21, 5142, 575, 14235, 1252, 7043, 11131, 5753, 1113, 5760, 2]
+// Dependencies: [19, 17, 1072, 14717, 21, 5243, 575, 14718, 1252, 7381, 10931, 5866, 1113, 5873, 2]
 // Exports: default
 
-// Module 17827 (NotificationPermissionSettingsHeader)
+// Module 17993 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14234 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14717 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -56,7 +56,7 @@ export default function NotificationPermissionSettingsHeader() {
   let obj4;
   let obj6;
   let tmp = closure_13();
-  let obj = canSeePushNotificationNudge(14235);
+  let obj = canSeePushNotificationNudge(14718);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = react.useEffect(() => {
@@ -73,21 +73,21 @@ export default function NotificationPermissionSettingsHeader() {
     obj3 = { border: "none", shadow: "none", children: closure_12(View, obj4) };
     obj4 = { style: tmp.cardContent, children: items1 };
     const obj5 = { style: tmp.iconCircle, children: closure_11(BellSlashIcon, obj6) };
-    Card = tmp2(7043).Card;
+    Card = tmp2(7381).Card;
     obj6 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-    BellSlashIcon = tmp2(11131).BellSlashIcon;
+    BellSlashIcon = tmp2(10931).BellSlashIcon;
     items1 = [closure_11(View, obj5), , , ];
     const obj7 = { variant: "heading-lg/semibold", color: "text-default", children: intl.string(canSeePushNotificationNudge(1113).t.MUwOvc) };
-    const Text = tmp2(5753).Text;
+    const Text = tmp2(5866).Text;
     intl = tmp2(1113).intl;
     items1[1] = closure_11(Text, obj7);
     const obj8 = { variant: "body-sm/medium", style: tmp.body, color: "text-muted", children: intl2.string(canSeePushNotificationNudge(1113).t.G4uKoe) };
-    const Text2 = tmp2(5753).Text;
+    const Text2 = tmp2(5866).Text;
     intl2 = tmp2(1113).intl;
     items1[2] = closure_11(Text2, obj8);
     const obj9 = { style: { alignSelf: "stretch" }, children: closure_11(Button, obj10) };
     obj10 = { variant: "primary", text: intl3.string(canSeePushNotificationNudge(1113).t["5xWOXv"]), onPress: tmp6 };
-    Button = tmp2(5760).Button;
+    Button = tmp2(5873).Button;
     intl3 = tmp2(1113).intl;
     items1[3] = closure_11(View, obj9);
     tmp7 = closure_11(View, obj2);

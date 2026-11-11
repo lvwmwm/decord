@@ -1,12 +1,12 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12185
+// Function ID: 12186
 // Name: refreshApplicationWidget
-// Dependencies: [5, 1072, 5260, 1282, 2]
+// Dependencies: [5, 1072, 5373, 1282, 2]
 // Exports: refreshApplicationWidget
 
-// Module 12388 (refreshApplicationWidget)
+// Module 12185 (refreshApplicationWidget)
 import Constants from "Constants" /* 1072 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5260 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5373 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

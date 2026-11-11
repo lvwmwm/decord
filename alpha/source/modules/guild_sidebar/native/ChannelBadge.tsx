@@ -1,18 +1,18 @@
-// Module ID: 18653
-// Function ID: 18654
+// Module ID: 18825
+// Function ID: 18826
 // Name: ChannelBadge
-// Dependencies: [19, 17, 2186, 21, 5142, 563, 18654, 14104, 5753, 2024, 2]
+// Dependencies: [19, 17, 2186, 21, 5243, 563, 18826, 14584, 5866, 2024, 2]
 // Exports: default
 
-// Module 18653 (ChannelBadge)
+// Module 18825 (ChannelBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import NumberUtils from "NumberUtils" /* 2024 */;
-import NewBadgeDefault from "NewBadge" /* 14104 */;
+import NewBadgeDefault from "NewBadge" /* 14584 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -53,7 +53,7 @@ export default function ChannelBadge(arg0) {
           tmp5 = null;
           if (postsWithUnreadsCount > 0) {
             ({ variant: "body-xs/semibold", color: "text-muted", children: tmp2Result.humanizeValue(postsWithUnreadsCount, stateFromStores) });
-            const Text = tmp2(5753).Text;
+            const Text = tmp2(5866).Text;
             tmp5 = <View style={tmp.channelInfoContainer}>{null}</View>;
             tmp2Result = NumberUtils;
           }

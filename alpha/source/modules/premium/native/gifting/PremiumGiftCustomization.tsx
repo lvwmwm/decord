@@ -1,10 +1,10 @@
-// Module ID: 14723
-// Function ID: 14724
+// Module ID: 11773
+// Function ID: 11774
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1387, 21, 5142, 575, 1499, 10690, 14724, 1113, 10824, 14725, 5753, 10851, 10853, 14726, 2]
+// Dependencies: [32, 19, 17, 1387, 21, 5243, 575, 1499, 11603, 11774, 1113, 11690, 11775, 5866, 11717, 11719, 11776, 2]
 // Exports: default
 
-// Module 14723 (PremiumGiftCustomization)
+// Module 11773 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -12,7 +12,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

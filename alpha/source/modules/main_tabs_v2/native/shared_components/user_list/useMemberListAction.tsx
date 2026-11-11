@@ -1,27 +1,27 @@
-// Module ID: 11789
-// Function ID: 11790
+// Module ID: 12439
+// Function ID: 12440
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4991, 5074, 5084, 1385, 10862, 1072, 21, 5142, 563, 11790, 11791, 9117, 7284, 11794, 11803, 11804, 1113, 11117, 11116, 5172, 4975, 11806, 11811, 7636, 11812, 2017, 9204, 6161, 8252, 9823, 11816, 2530, 2]
+// Dependencies: [32, 19, 17, 5092, 5175, 5185, 1385, 10511, 1072, 21, 5243, 563, 12440, 12441, 8066, 12444, 12448, 7758, 12450, 12459, 12460, 1113, 10919, 10918, 5285, 5076, 12462, 12467, 10502, 12468, 2017, 8394, 6274, 8043, 7374, 12472, 2549, 2]
 // Exports: default
 
-// Module 11789 (useMemberListAction)
+// Module 12439 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10862 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 11790 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11794 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10511 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12440 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12450 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import PermissionStore_mod from "PermissionStore" /* 5074 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let constants, importDefault;
+let importDefault;
 
 let closure_12;
 let closure_14;
@@ -30,19 +30,18 @@ let map1;
 let unpackModuleId;
 let react = react_mod;
 const View = react_native.View;
-let PermissionStore = PermissionStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
 let closure_16 = { listActionRenderer: "Array", listActionHeight: "flexDirection" };
+let closure_17 = [];
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
-let closure_17 = createStyles.createStyles(obj);
+let closure_18 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 
 export default function useMemberListAction(channel) {
   let c4;
   let closure_1;
-  let closure_7;
   channel = channel.channel;
   let flag = channel.disable;
   if (flag === undefined) {
@@ -53,23 +52,25 @@ export default function useMemberListAction(channel) {
   react = undefined;
   let c5;
   let closure_6;
-  PermissionStore = undefined;
-  let c8;
+  let invitableGameOrganizationsFullSubLabel;
+  let closure_8;
+  let c9;
+  let combined;
   let flag2;
   let flag3;
   let id;
-  constants = undefined;
-  let first;
   let closure_14;
+  let first;
+  closure_16 = undefined;
   let onLayout;
   let callback1;
-  let tmp = closure_17();
+  let tmp = callback1();
   importDefault = tmp;
   let tmp2 = channel;
   const tmp3 = stateFromStores;
   let obj = channel(stateFromStores[11]);
-  let items = [flag2];
-  const tmp4 = flag2;
+  let items = [c9];
+  const tmp4 = c9;
   stateFromStores = obj.useStateFromStores(items, () => {
     let isDMResult;
     if (channel != null) {
@@ -95,8 +96,9 @@ export default function useMemberListAction(channel) {
     recipientId = channel.getRecipientId();
   }
   const items1 = [tmp4, ];
-  let obj3 = c8;
-  items1[1] = c8;
+  let obj3 = closure_8;
+  items1[1] = closure_8;
+  const tmp9 = importDefault;
   const tmp2Result = tmp2(tmp3[11]);
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => {
     let tmp5Result = null != recipientId;
@@ -112,43 +114,55 @@ export default function useMemberListAction(channel) {
     }
     return tmp5Result;
   });
-  const tmp9 = importDefault;
-  let obj4 = PermissionStore;
-  let tmp10 = require("useCanInviteToAnyLinkedGameOrganization")("dm_member_list");
-  let canResult = PermissionStore.can(id.MANAGE_ROLES, channel);
-  const tmp11 = id;
+  let arr3 = require("useCanInviteGuildIds")("dm_member_list");
+  let obj4 = invitableGameOrganizationsFullSubLabel;
+  let tmp10 = flag2;
+  let canResult = invitableGameOrganizationsFullSubLabel.can(flag2.MANAGE_ROLES, channel);
   if (canResult) {
-    const tmp2Result2 = tmp2(tmp3[14]);
-    canResult = tmp2Result2.isPrivateGuildChannel(channel);
+    const tmp2Result4 = tmp2(tmp3[14]);
+    canResult = tmp2Result4.isPrivateGuildChannel(channel);
   }
   react = canResult;
-  let tmp13 = null != channel && !flag;
-  if (tmp13) {
-    let tmp14 = canResult;
-    if (!tmp14) {
+  let tmp12 = null != channel && !flag;
+  if (tmp12) {
+    let tmp13 = canResult;
+    if (!tmp13) {
       let isFriendResult;
       if (channel.isDM()) {
         isFriendResult = obj3.isFriend(channel.getRecipientId());
       } else {
-        isFriendResult = channel.isMultiUserDM() || obj4.can(tmp11.CREATE_INSTANT_INVITE, channel);
+        isFriendResult = channel.isMultiUserDM() || obj4.can(tmp10.CREATE_INSTANT_INVITE, channel);
       }
-      tmp14 = isFriendResult;
+      tmp13 = isFriendResult;
     }
-    tmp13 = tmp14;
+    tmp12 = tmp13;
   }
-  c5 = tmp13;
-  closure_6 = tmp16;
-  PermissionStore = tmp17;
-  let num = 0;
-  if (tmp13) {
-    num = 1;
+  c5 = tmp12;
+  let tmp15 = !flag && stateFromStores1;
+  if (tmp15) {
+    tmp15 = arr3.length > 0;
   }
+  closure_6 = tmp15;
+  const useInvitableGameOrganizationsFetch = tmp2(tmp3[15]).useInvitableGameOrganizationsFetch;
+  tmp2(tmp3[15]);
+  if (!tmp15) {
+    arr3 = onLayout;
+  }
+  const data = useInvitableGameOrganizationsFetch(arr3).data;
+  const tmp2Result6 = tmp2(tmp3[16]);
+  invitableGameOrganizationsFullSubLabel = tmp2Result6.getInvitableGameOrganizationsFullSubLabel(tmp9(tmp3[16])(data));
+  closure_8 = tmp18;
   let num2 = 0;
-  if (!flag && stateFromStores1 && tmp10) {
+  if (tmp12) {
     num2 = 1;
   }
-  const sum = num + num2;
-  c8 = sum;
+  let num3 = 0;
+  if (tmp15) {
+    num3 = 1;
+  }
+  const sum = num2 + num3;
+  c9 = sum;
+  combined = "" + sum + ":" + null != invitableGameOrganizationsFullSubLabel;
   flag2 = undefined;
   if (channel != null) {
     flag2 = channel.isDM();
@@ -167,23 +181,23 @@ export default function useMemberListAction(channel) {
   if (channel != null) {
     id = channel.id;
   }
-  const tmp20 = tmp9(tmp3[15])();
-  constants = tmp20;
-  const tmp21 = recipientId(react.useState(undefined), 2);
-  first = tmp21[0];
-  closure_14 = tmp21[1];
-  const items2 = [sum];
+  const tmp22 = tmp9(tmp3[17])();
+  closure_14 = tmp22;
+  const tmp23 = recipientId(react.useState(undefined), 2);
+  first = tmp23[0];
+  closure_16 = tmp23[1];
+  const items2 = [combined];
   onLayout = react.useCallback((nativeEvent) => {
     const height = nativeEvent.nativeEvent.layout.height;
-    let tmp = closure_14((arg0) => {
+    let tmp = closure_16((arg0) => {
       let tmp = arg0;
-      let actionCount;
+      let layoutKey;
       if (arg0 != null) {
-        actionCount = tmp.actionCount;
+        layoutKey = tmp.layoutKey;
       }
-      if (actionCount !== c8) {
-        tmp = { actionCount: tmp3, height };
-        const obj = { actionCount: tmp3, height };
+      if (layoutKey !== combined) {
+        tmp = { layoutKey: tmp3, height };
+        const obj = { layoutKey: tmp3, height };
       }
       return tmp;
     });
@@ -194,7 +208,7 @@ export default function useMemberListAction(channel) {
       openGroupDMAddMembersDefault(tmp, constants.MEMBER_LIST);
     }
   }, items3);
-  const items4 = [sum, canResult, id, callback1, flag2, flag3, first, onLayout, recipientId, stateFromStores, tmp20, tmp17, tmp16, tmp13, tmp];
+  const items4 = [sum, canResult, id, combined, callback1, flag2, flag3, invitableGameOrganizationsFullSubLabel, first, onLayout, recipientId, stateFromStores, tmp22, tmp18, tmp15, tmp12, tmp];
   return react.useMemo(() => {
     let Icon;
     let IconComponent;
@@ -214,74 +228,74 @@ export default function useMemberListAction(channel) {
     let sublabel;
     let tmp46;
     if (null != id) {
-      const tmp73 = closure_7;
-      if (tmp73) {
+      const tmp75 = closure_8;
+      if (tmp75) {
         let tmp12;
         let tmp = flag2;
         if (tmp) {
-          let obj2 = { iconSource: height(stateFromStores[17]), IconComponent: channel(stateFromStores[18]).ChatPlusIcon, label: intl4.string(channel(stateFromStores[19]).t["3hF1W4"]), sublabel: formatToPlainStringResult, handlePress: callback1 };
-          intl4 = channel(stateFromStores[19]).intl;
+          let obj2 = { iconSource: height(stateFromStores[19]), IconComponent: channel(stateFromStores[20]).ChatPlusIcon, label: intl4.string(channel(stateFromStores[21]).t["3hF1W4"]), sublabel: formatToPlainStringResult, handlePress: callback1 };
+          intl4 = channel(stateFromStores[21]).intl;
           formatToPlainStringResult = undefined;
           if (null != stateFromStores) {
-            const intl5 = channel(stateFromStores[19]).intl;
+            const intl5 = channel(stateFromStores[21]).intl;
             let obj3 = { recipient: tmp35 };
-            formatToPlainStringResult = intl5.formatToPlainString(channel(stateFromStores[19]).t["Sh/xNN"], obj3);
+            formatToPlainStringResult = intl5.formatToPlainString(channel(stateFromStores[21]).t["Sh/xNN"], obj3);
           }
           tmp12 = obj2;
         } else {
           let obj = { iconSource: null, IconComponent: null, label: null, handlePress: null };
           if (flag3) {
-            obj.iconSource = height(stateFromStores[20]);
-            obj.IconComponent = channel(stateFromStores[21]).GroupPlusIcon;
-            const intl3 = channel(stateFromStores[19]).intl;
-            obj.label = intl3.string(channel(stateFromStores[19]).t["LR+Ptf"]);
+            obj.iconSource = height(stateFromStores[22]);
+            obj.IconComponent = channel(stateFromStores[23]).GroupPlusIcon;
+            const intl3 = channel(stateFromStores[21]).intl;
+            obj.label = intl3.string(channel(stateFromStores[21]).t["LR+Ptf"]);
             obj.handlePress = function handlePress() {
               const tmp = id;
               if (null != closure_6.getChannel(id)) {
-                const obj4 = channel(stateFromStores[16]);
-                const groupDMAddMembersAction = obj4.getGroupDMAddMembersAction(tmp, constants.MEMBER_LIST);
-                const tmp10 = constants;
+                const obj4 = channel(stateFromStores[18]);
+                const groupDMAddMembersAction = obj4.getGroupDMAddMembersAction(tmp, flag3.MEMBER_LIST);
+                const tmp10 = flag3;
                 if ("open" === groupDMAddMembersAction) {
-                  const tmp8Result = channel(stateFromStores[22]);
-                  if (tmp8Result.UNSAFE_isDismissibleContentDismissed(channel(stateFromStores[23]).DismissibleContent.GDM_INVITE_REMINDER)) {
+                  const tmp8Result = channel(stateFromStores[24]);
+                  if (tmp8Result.UNSAFE_isDismissibleContentDismissed(channel(stateFromStores[25]).DismissibleContent.GDM_INVITE_REMINDER)) {
                     onClick();
                   } else {
                     const obj = { onClick };
-                    height(stateFromStores[24])(obj);
+                    height(stateFromStores[26])(obj);
                   }
                 } else {
-                  const tmp8Result2 = channel(stateFromStores[16]);
+                  const tmp8Result2 = channel(stateFromStores[18]);
                   const result = tmp8Result2.showGroupDMAddMembersRoadblock(groupDMAddMembersAction, tmp10.MEMBER_LIST);
                 }
               }
             };
             tmp12 = obj;
           } else if (c4) {
-            obj.iconSource = height(stateFromStores[25]);
-            obj.IconComponent = channel(stateFromStores[26]).SettingsIcon;
-            const intl2 = channel(stateFromStores[19]).intl;
-            obj.label = intl2.string(channel(stateFromStores[19]).t.z9Mqln);
+            obj.iconSource = height(stateFromStores[27]);
+            obj.IconComponent = channel(stateFromStores[28]).SettingsIcon;
+            const intl2 = channel(stateFromStores[21]).intl;
+            obj.label = intl2.string(channel(stateFromStores[21]).t.z9Mqln);
             obj.handlePress = function handlePress() {
               channel = closure_6.getChannel(id);
               if (null != channel) {
-                const obj = channel(stateFromStores[27]);
+                const obj = channel(stateFromStores[29]);
                 const result = obj.openChannelMembersActionSheet(channel.id, channel.guild_id);
               }
             };
             tmp12 = obj;
           } else {
-            obj.iconSource = height(stateFromStores[20]);
-            obj.IconComponent = channel(stateFromStores[21]).GroupPlusIcon;
-            const intl = channel(stateFromStores[19]).intl;
+            obj.iconSource = height(stateFromStores[22]);
+            obj.IconComponent = channel(stateFromStores[23]).GroupPlusIcon;
+            const intl = channel(stateFromStores[21]).intl;
             let tmp10 = channel;
-            obj.label = intl.string(channel(stateFromStores[19]).t["Ab/6S0"]);
+            obj.label = intl.string(channel(stateFromStores[21]).t["Ab/6S0"]);
             obj.handlePress = function handlePress() {
-              channel = closure_6.getChannel(id);
+              channel = closure_6.getChannel(closure_1_13);
               if (null != channel) {
-                const obj = channel(stateFromStores[28]);
+                const obj = channel(stateFromStores[30]);
                 const result = obj.dismissGlobalKeyboard();
-                const obj3 = { source: first.CHAT_SIDEBAR };
-                const obj2 = channel(stateFromStores[29]);
+                const obj3 = { source: id.CHAT_SIDEBAR };
+                const obj2 = channel(stateFromStores[31]);
                 const result1 = obj2.showInstantInviteActionSheet(channel, obj3);
               }
             };
@@ -291,15 +305,15 @@ export default function useMemberListAction(channel) {
         let obj4 = { style: height.wrapper, onLayout, children: tmp46(Stack, obj5) };
         ({ label, iconSource, IconComponent, handlePress, sublabel } = tmp12);
         let tmp42Result = null;
-        obj5 = { spacing: flag3, children: items };
-        Stack = channel(stateFromStores[30]).Stack;
+        obj5 = { spacing: combined, children: items };
+        Stack = channel(stateFromStores[32]).Stack;
         const tmp43 = c5;
         const tmp44 = height;
-        tmp46 = onLayout;
-        const tmp49 = flag3;
+        tmp46 = first;
+        const tmp49 = combined;
         if (c5) {
-          const obj6 = { icon: closure_14(channel(stateFromStores[31]).RowButton.Icon, obj7), onPress: handlePress, label, subLabel: sublabel, arrow: true };
-          const RowButton = channel(stateFromStores[31]).RowButton;
+          const obj6 = { icon: closure_14(channel(stateFromStores[33]).RowButton.Icon, obj7), onPress: handlePress, label, subLabel: sublabel, arrow: true };
+          const RowButton = channel(stateFromStores[33]).RowButton;
           obj7 = { source: iconSource, IconComponent };
           tmp42Result = tmp42(RowButton, obj6);
         }
@@ -311,28 +325,29 @@ export default function useMemberListAction(channel) {
             const obj8 = {
               icon: closure_14(Icon, obj9),
               onPress() {
-                        return height(stateFromStores[33])(recipientId);
+                        return height(stateFromStores[35])(recipientId);
                       },
-              label: intl6.string(height(stateFromStores[34])["wkSug+"]),
+              label: intl6.string(height(stateFromStores[36])["wkSug+"]),
+              subLabel: invitableGameOrganizationsFullSubLabel,
+              disabled: null != invitableGameOrganizationsFullSubLabel,
               arrow: true
             };
-            const RowButton2 = channel(stateFromStores[31]).RowButton;
-            obj9 = { IconComponent: channel(stateFromStores[32]).GameControllerIcon };
-            Icon = channel(stateFromStores[31]).RowButton.Icon;
-            intl6 = channel(stateFromStores[19]).intl;
+            const RowButton2 = channel(stateFromStores[33]).RowButton;
+            obj9 = { IconComponent: channel(stateFromStores[34]).GameControllerIcon };
+            Icon = channel(stateFromStores[33]).RowButton.Icon;
+            intl6 = channel(stateFromStores[21]).intl;
             tmp42Result2 = tmp42(RowButton2, obj8);
           }
         }
         items[1] = tmp42Result2;
         let closure_0 = tmp42(tmp43, obj4);
-        height = c8 * constants + (c8 - 1) * tmp49 + tmp44.wrapper.paddingTop;
-        let actionCount;
-        const tmp69 = c8;
+        height = c9 * closure_14 + (c9 - 1) * tmp49 + tmp44.wrapper.paddingTop;
+        let layoutKey;
         if (first != null) {
-          actionCount = tmp71.actionCount;
+          layoutKey = tmp72.layoutKey;
         }
-        if (actionCount === tmp69) {
-          height = tmp71.height;
+        if (layoutKey === combined) {
+          height = tmp72.height;
         }
         return {
           listActionRenderer() {
@@ -344,6 +359,6 @@ export default function useMemberListAction(channel) {
         };
       }
     }
-    return callback1;
+    return closure_16;
   }, items4);
 };

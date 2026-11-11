@@ -1,37 +1,37 @@
-// Module ID: 6168
-// Function ID: 6169
+// Module ID: 6281
+// Function ID: 6282
 // Name: MarkupRules
-// Dependencies: [32, 717, 4991, 5048, 5013, 1385, 1072, 6169, 6170, 6171, 1113, 6174, 5051, 6175, 5196, 6176, 2067, 6177, 6178, 6190, 5088, 6192, 8677, 15995, 8651, 8652, 6167, 8679, 12, 8648, 2]
+// Dependencies: [32, 717, 5092, 5149, 5114, 1385, 1072, 6282, 6283, 6284, 1113, 6287, 5152, 6288, 5309, 6289, 2067, 6290, 6291, 6303, 5189, 6305, 9308, 16154, 9291, 9292, 6280, 9310, 12, 9289, 2]
 // Exports: hydrateCommandMention
 
-// Module 6168 (MarkupRules)
+// Module 6281 (MarkupRules)
 import intl2 from "intl" /* 1113 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5088 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6169 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6170 */;
-import MarkupLinkRule from "MarkupLinkRule" /* 6171 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6174 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6175 */;
-import StaticRouteRendering from "StaticRouteRendering" /* 6176 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 6177 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 6178 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 6190 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 6192 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8648 */;
-import MarkupListRuleDefault from "MarkupListRule" /* 8651 */;
-import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8652 */;
-import TimestampUtils from "TimestampUtils" /* 8677 */;
-import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 8679 */;
-import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 15995 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5189 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6283 */;
+import MarkupLinkRule from "MarkupLinkRule" /* 6284 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6287 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
+import StaticRouteRendering from "StaticRouteRendering" /* 6289 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 6290 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 6291 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 6303 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 6305 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 9289 */;
+import MarkupListRuleDefault from "MarkupListRule" /* 9291 */;
+import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 9292 */;
+import TimestampUtils from "TimestampUtils" /* 9308 */;
+import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 9310 */;
+import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 16154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildRoleStore from "GuildRoleStore" /* 5048 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildRoleStore from "GuildRoleStore" /* 5149 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import module_2067_mod from "module_2067" /* 2067 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 6167 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 6280 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ const parse6 = function parse(arg0, arg1, returnMentionIds) {
     const items = [];
     const arr = _toArray(arg0[1].split(" "));
     HermesBuiltin.arraySpread(items, arr.slice(1), 0);
-    const mapped = items.map(f90362);
+    const mapped = items.map(f91245);
     const _HermesInternal = HermesInternal;
     obj2 = { type: "commandMention", channelId: returnMentionIds.channelId, commandId: arg0[2], commandName: arg0[1], commandKey: "" + arg0[2] + mapped.join(""), content: items1 };
     const _HermesInternal2 = HermesInternal;
@@ -245,7 +245,7 @@ const parse14 = function parse(arg0, arg1, guildId) {
   const tmp = _slicedToArray(arg0, 3);
   return hydrateStaticRouteLink(tmp[1], tmp[2], guildId);
 };
-const f90362 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
+const f91245 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
 function parseLink(arg0) {
   let items;
   let obj3;
@@ -302,7 +302,7 @@ function hydrateRoleMention(roleId, guildId) {
     }
     let hasEnhancedRoleColorsForRole = getHasEnhancedRoleColorsForRole(id, role);
     if (hasEnhancedRoleColorsForRole) {
-      const tmp19Result = tmp19(5051);
+      const tmp19Result = tmp19(5152);
       hasEnhancedRoleColorsForRole = !tmp19Result.getIsDefaultErc(role);
     }
     const obj2 = { type: "mention", channelId: guildId.channelId, guildId: id1, roleId, roleColor: role.color, roleColors: tmp11, roleName: "@" + role.name, color: null, colorString: null, content: items };
@@ -358,7 +358,7 @@ function hydrateUserMention(everyoneOrHere, channelId) {
       let nickname = obj2.getNickname(channel.getGuildId(), channelId.channelId, str);
       const tmp4 = importDefault;
       if (nickname == null) {
-        const tmp4Result = tmp4(5196);
+        const tmp4Result = tmp4(5309);
         nickname = tmp4Result.getName(str);
       }
       str1 = nickname;
@@ -764,7 +764,7 @@ export function hydrateCommandMention(name, commandId, channelId) {
   let items1;
   const items = [..._toArray(name.split(" ")).slice(1)];
   _toArray(name.split(" "));
-  const mapped = items.map(f90362);
+  const mapped = items.map(f91245);
   const obj = { type: "commandMention", channelId: channelId.channelId, commandId, commandName: name, commandKey: "" + commandId + mapped.join(""), content: items1 };
   items1 = [{ type: "text", content: "" + name }];
   ({ type: "text", content: "" + name });

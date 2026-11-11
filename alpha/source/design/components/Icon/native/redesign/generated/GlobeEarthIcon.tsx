@@ -1,14 +1,14 @@
-// Module ID: 9136
-// Function ID: 9137
+// Module ID: 8098
+// Function ID: 8099
 // Name: GlobeEarthIcon
-// Dependencies: [19, 21, 575, 5843, 9137, 2]
+// Dependencies: [19, 21, 575, 5956, 8099, 2]
 // Exports: GlobeEarthIcon
 
-// Module 9136 (GlobeEarthIcon)
+// Module 8098 (GlobeEarthIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 9137 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 8099 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

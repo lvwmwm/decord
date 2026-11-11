@@ -1,19 +1,19 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 10316
+// Function ID: 10317
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 5142, 575, 9525, 5753, 5760, 1113, 7441, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 10317, 5866, 5873, 1113, 7897, 2]
 // Exports: GameProfileSectionSkeleton, default
 
-// Module 9524 (GameProfileSection)
+// Module 10316 (GameProfileSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7441 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9525 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7897 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 10317 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -54,7 +54,7 @@ export default function GameProfileSection(onPressViewAll) {
   let tmp4Result = null != onPressViewAll;
   if (tmp4Result) {
     const obj3 = { text: intl.string(intl2.t.budhsM), variant: "tertiary", size: "sm", icon: React3(ChevronSmallRightIcon.ChevronSmallRightIcon, { size: "sm" }), iconPosition: "end", onPress: onPressViewAll };
-    const Button = tmp5(5760).Button;
+    const Button = tmp5(5873).Button;
     intl = tmp5(1113).intl;
     tmp4Result = tmp4(Button, obj3);
   }

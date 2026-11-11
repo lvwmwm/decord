@@ -1,12 +1,12 @@
-// Module ID: 15783
-// Function ID: 15784
+// Module ID: 15888
+// Function ID: 15889
 // Name: orderMarketablePerksForDisplay
-// Dependencies: [32, 5349, 5351, 2]
+// Dependencies: [32, 5462, 5464, 2]
 // Exports: default
 
-// Module 15783 (orderMarketablePerksForDisplay)
-import GameServerConstants from "GameServerConstants" /* 5349 */;
-import Powerups from "Powerups" /* 5351 */;
+// Module 15888 (orderMarketablePerksForDisplay)
+import GameServerConstants from "GameServerConstants" /* 5462 */;
+import Powerups from "Powerups" /* 5464 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

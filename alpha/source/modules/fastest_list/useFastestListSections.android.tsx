@@ -1,11 +1,11 @@
-// Module ID: 7298
-// Function ID: 7299
+// Module ID: 7772
+// Function ID: 7773
 // Name: useFastestListSections
-// Dependencies: [19, 5741, 7299, 7300, 2]
+// Dependencies: [19, 5854, 7773, 7774, 2]
 // Exports: default
 
-// Module 7298 (useFastestListSections)
-import FastestListItemTypeDefault from "FastestListItemType" /* 7299 */;
+// Module 7772 (useFastestListSections)
+import FastestListItemTypeDefault from "FastestListItemType" /* 7773 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

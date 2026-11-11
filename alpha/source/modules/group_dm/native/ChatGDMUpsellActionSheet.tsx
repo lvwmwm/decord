@@ -1,21 +1,21 @@
-// Module ID: 11807
-// Function ID: 11808
+// Module ID: 12463
+// Function ID: 12464
 // Name: ChatGDMUpsellActionSheet
-// Dependencies: [19, 17, 21, 5142, 575, 1627, 5172, 4975, 5376, 5390, 5844, 11808, 5760, 1113, 5394, 5753, 11809, 5853, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 1627, 5285, 5076, 5489, 5503, 5957, 12464, 5873, 1113, 5507, 5866, 12465, 5966, 2]
 // Exports: default
 
-// Module 11807 (ChatGDMUpsellActionSheet)
+// Module 12463 (ChatGDMUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import dismissible_content from "dismissible_content" /* 4975 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5172 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11808 */;
+import dismissible_content from "dismissible_content" /* 5076 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5285 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12464 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -73,7 +73,7 @@ export default function ChatGDMUpsellActionSheet(onClick) {
   }, items);
   let obj = { showGradient: true, scrollable: true, startExpanded: true, header: closure_5(View, obj2), footer: closure_6(View, obj4), children: closure_6(BottomSheetScrollView, obj9) };
   obj2 = { style: tmp.titleImage, children: closure_5(tmp3, obj3) };
-  const BottomSheet = onClick(5390).BottomSheet;
+  const BottomSheet = onClick(5503).BottomSheet;
   obj3 = { source: AssetRegistryDefault, resizeMode: "contain" };
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.footer, ];
@@ -81,7 +81,7 @@ export default function ChatGDMUpsellActionSheet(onClick) {
   items1[1] = obj5;
   tmp3 = FastImageDefault;
   const obj6 = { text: intl.string(onClick(1113).t["3PatSz"]), onPress: callback };
-  const Button = onClick(5760).Button;
+  const Button = onClick(5873).Button;
   intl = onClick(1113).intl;
   items2 = [closure_5(Button, obj6), ];
   const obj7 = { style: tmp.button, children: closure_5(Button2, obj8) };
@@ -93,35 +93,35 @@ export default function ChatGDMUpsellActionSheet(onClick) {
     },
     variant: "tertiary"
   };
-  Button2 = onClick(5760).Button;
+  Button2 = onClick(5873).Button;
   intl2 = onClick(1113).intl;
   items2[1] = closure_5(View, obj7);
   obj9 = { children: items3 };
-  BottomSheetScrollView = onClick(5394).BottomSheetScrollView;
+  BottomSheetScrollView = onClick(5507).BottomSheetScrollView;
   const obj10 = { style: tmp.title, variant: "heading-lg/semibold", accessibilityRole: "header", children: intl3.string(onClick(1113).t["bkqux/"]) };
-  const Text = onClick(5753).Text;
+  const Text = onClick(5866).Text;
   intl3 = onClick(1113).intl;
   items3 = [closure_5(Text, obj10), , ];
   const obj11 = { style: tmp.body, variant: "body-md/medium", color: "text-muted", children: intl4.string(onClick(1113).t.N6TdqN) };
-  const Text2 = onClick(5753).Text;
+  const Text2 = onClick(5866).Text;
   intl4 = onClick(1113).intl;
   items3[1] = closure_5(Text2, obj11);
   const obj13 = { style: tmp.innerContainer, children: items4 };
   items4 = [, ];
   const obj12 = { style: tmp.noticeContainer, children: items5 };
-  const obj14 = { style: tmp.item, children: closure_5(onClick(11809).TimerIcon, { size: "sm" }) };
+  const obj14 = { style: tmp.item, children: closure_5(onClick(12465).TimerIcon, { size: "sm" }) };
   items4[0] = closure_5(View, obj14);
   const obj15 = { style: tmp.text, variant: "body-sm/medium", color: "text-default", children: intl5.string(onClick(1113).t.Fq3DJb) };
-  const Text3 = onClick(5753).Text;
+  const Text3 = onClick(5866).Text;
   intl5 = onClick(1113).intl;
   items4[1] = closure_5(Text3, obj15);
   items5 = [closure_6(View, obj13), ];
   const obj16 = { style: tmp.secondInnerContainer, children: items6 };
   items6 = [, ];
-  const obj17 = { style: tmp.item, children: closure_5(onClick(5853).LinkIcon, { size: "sm" }) };
+  const obj17 = { style: tmp.item, children: closure_5(onClick(5966).LinkIcon, { size: "sm" }) };
   items6[0] = closure_5(View, obj17);
   const obj18 = { style: tmp.text, variant: "body-sm/medium", color: "text-default", children: intl6.string(onClick(1113).t.XKbf2G) };
-  const Text4 = onClick(5753).Text;
+  const Text4 = onClick(5866).Text;
   intl6 = onClick(1113).intl;
   items6[1] = closure_5(Text4, obj18);
   items5[1] = closure_6(View, obj16);

@@ -1,19 +1,19 @@
-// Module ID: 13921
-// Function ID: 13922
+// Module ID: 14398
+// Function ID: 14399
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [32, 19, 17, 5143, 13681, 6201, 21, 5142, 575, 1377, 504, 6571, 13922, 13923, 1113, 3216, 3248, 13924, 13691, 13895, 13926, 13897, 13909, 13910, 13911, 1411, 1342, 13927, 7366, 2]
+// Dependencies: [32, 19, 17, 5244, 14150, 6314, 21, 5243, 575, 1377, 504, 6684, 14399, 14400, 1113, 3237, 3269, 14401, 14174, 14163, 14403, 14164, 14385, 14387, 14386, 14388, 1411, 1342, 14404, 7828, 2]
 // Exports: default
 
-// Module 13921 (CheckpointEmojiStatsScreen)
+// Module 14398 (CheckpointEmojiStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import CheckpointStore from "CheckpointStore" /* 13681 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import CheckpointStore from "CheckpointStore" /* 14150 */;
+import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,8 @@ export default function CheckpointEmojiStatsScreen() {
   let items7;
   let obj14;
   let stringResult;
-  let tmp2Result2;
+  let tmp2Result3;
+  let tmp2Result4;
   let useReducedMotion;
   const tmp = closure_12();
   _require = tmp;
@@ -134,7 +135,7 @@ export default function CheckpointEmojiStatsScreen() {
   }
   [emoji, _slicedToArray] = react.useState(tmp12 ? closure_11 : emojis[0]);
   const tmp16 = require("useCheckpointSound");
-  react = tmp16(require("module_13923"));
+  react = tmp16(require("module_14400"));
   let intl = tmp2(tmp3[14]).intl;
   const string = intl.string;
   if (tmp12) {
@@ -181,11 +182,10 @@ export default function CheckpointEmojiStatsScreen() {
   }
   items7[1] = tmp18Result;
   if (stateFromStores2) {
-    const _HermesInternal = HermesInternal;
-    let str = " ";
-    let str2 = "";
-    const obj13 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: closure_9(require("CheckpointCountUpStatNumber"), obj14) };
+    let str = "emoji";
+    const obj13 = { accessible: true, accessibilityLabel: tmp2Result3.formatCheckpointStatAccessibilityLabel("emoji", roundResult), style: tmp.number, children: closure_9(require("CheckpointCountUpStatNumber"), obj14) };
     obj14 = { end: roundResult };
+    tmp2Result3 = tmp2(emoji[23]);
     stateFromStores2 = tmp18(tmp21, obj13);
   }
   items7[2] = stateFromStores2;
@@ -194,9 +194,9 @@ export default function CheckpointEmojiStatsScreen() {
   if (!stateFromStores2 && null != stateFromStores1) {
     const intl6 = tmp2(tmp3[14]).intl;
     const formatToPlainString = intl6.formatToPlainString;
-    const obj16 = { numEmojis: tmp2Result2.formatCheckpointCompactNumber(stateFromStores1.numEmojisSent) };
+    const obj16 = { numEmojis: tmp2Result4.formatCheckpointCompactNumber(stateFromStores1.numEmojisSent) };
     const prop1 = tmp15(tmp3[16])["660/Rr"];
-    tmp2Result2 = tmp2(emoji[11]);
+    tmp2Result4 = tmp2(emoji[11]);
     formatToPlainStringResult1 = formatToPlainString(prop1, obj16);
   } else if (tmp12) {
     const intl5 = tmp2(tmp3[14]).intl;
@@ -207,7 +207,7 @@ export default function CheckpointEmojiStatsScreen() {
       percent: checkpointTopPercent,
       percentHook(children, arg1) {
           const obj = { children };
-          return closure_1_9(closure_1(first[24]), obj, arg1);
+          return closure_1_9(closure_1(first[25]), obj, arg1);
         }
     };
     formatToPlainStringResult1 = intl4.format(tmp15(tmp3[16]).o7vDrk, obj17);
@@ -233,14 +233,14 @@ export default function CheckpointEmojiStatsScreen() {
           if (null != emojiName.id) {
             const obj = { id: emojiName.id, animated: tmp6, size: 48 };
             tmp6 = !closure_1;
-            const getEmojiURL = closure_1(first[25]).getEmojiURL;
-            closure_1(first[25]);
+            const getEmojiURL = closure_1(first[26]).getEmojiURL;
+            closure_1(first[26]);
             if (!closure_1) {
               tmp6 = true === emojiName.animated;
             }
             emojiURL = getEmojiURL(obj);
           }
-          const tmp7 = closure_1(first[26])(first, emojiName);
+          const tmp7 = closure_1(first[27])(first, emojiName);
           const obj2 = {
             size: "sm",
             style: closure_0.emojiChip,
@@ -256,7 +256,7 @@ export default function CheckpointEmojiStatsScreen() {
           };
           str = "transparent";
           const tmp8 = closure_1_10;
-          const tmp9 = closure_1(first[27]);
+          const tmp9 = closure_1(first[28]);
           if (!tmp7) {
             str = color;
           }
@@ -264,7 +264,7 @@ export default function CheckpointEmojiStatsScreen() {
           const obj4 = { style: closure_0.emoji, fastImageStyle: closure_0.customEmoji, textEmojiStyle: closure_0.textEmoji, name: str2, src: emojiURL };
           str2 = "";
           obj3 = { emojiName: emojiName.name, rank: index + 1 };
-          const tmp12 = closure_1(first[28]);
+          const tmp12 = closure_1(first[29]);
           if (null == emojiName.id) {
             str2 = emojiName.name;
           }

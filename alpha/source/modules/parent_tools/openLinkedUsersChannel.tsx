@@ -1,14 +1,14 @@
-// Module ID: 10698
-// Function ID: 10699
+// Module ID: 9554
+// Function ID: 9555
 // Name: openLinkedUsersChannel
-// Dependencies: [5, 4991, 5887, 7552, 2]
+// Dependencies: [5, 5092, 6000, 8069, 2]
 // Exports: default
 
-// Module 10698 (openLinkedUsersChannel)
-import transitionToChannel from "transitionToChannel" /* 5887 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7552 */;
+// Module 9554 (openLinkedUsersChannel)
+import transitionToChannel from "transitionToChannel" /* 6000 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let c4, c6, onBeforeTransition, recipientIds, set, sortedPrivateChannels;

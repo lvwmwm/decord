@@ -1,16 +1,16 @@
-// Module ID: 14892
-// Function ID: 14893
+// Module ID: 7419
+// Function ID: 7420
 // Name: XboxLinkError
-// Dependencies: [19, 9819, 21, 1499, 14893, 14894, 1113, 2]
+// Dependencies: [19, 7362, 21, 1499, 7420, 7421, 1113, 2]
 // Exports: default
 
-// Module 14892 (XboxLinkError)
+// Module 7419 (XboxLinkError)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9819 */;
-import react2 from "react" /* 14893 */;
-import TwoWayLinkError2 from "TwoWayLinkError" /* 14894 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 7362 */;
+import react2 from "react" /* 7420 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 7421 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

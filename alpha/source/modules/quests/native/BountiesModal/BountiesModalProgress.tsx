@@ -1,19 +1,19 @@
-// Module ID: 17291
-// Function ID: 17292
+// Module ID: 17454
+// Function ID: 17455
 // Name: BountiesModalProgress
-// Dependencies: [32, 19, 17, 21, 5142, 575, 1652, 5372, 5375, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1652, 5485, 5488, 2]
 // Exports: default
 
-// Module 17291 (BountiesModalProgress)
+// Module 17454 (BountiesModalProgress)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import timingPresets from "timingPresets" /* 5375 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import timingPresets from "timingPresets" /* 5488 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;

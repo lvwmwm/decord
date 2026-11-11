@@ -1,16 +1,16 @@
-// Module ID: 11880
-// Function ID: 11881
+// Module ID: 12632
+// Function ID: 12633
 // Name: useShouldForcePipOrientation
-// Dependencies: [4990, 6901, 502, 5807, 11881, 504, 6909, 2143, 8983, 2]
+// Dependencies: [5091, 6953, 502, 5920, 12633, 504, 6962, 2143, 9975, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 11880 (useShouldForcePipOrientation)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6909 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 11881 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6901 */;
+// Module 12632 (useShouldForcePipOrientation)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6962 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 12633 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallConstants from "CallConstants" /* 5807 */;
+import CallConstants from "CallConstants" /* 5920 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -89,17 +89,17 @@ export function useShouldForcePipOrientation(channel) {
     if (closure_6(focusedEmbeddedActivityParticipant)) {
       let LANDSCAPE;
       if (null == stateFromStores) {
-        LANDSCAPE = tmp3(8983).OrientationType.LANDSCAPE;
+        LANDSCAPE = tmp3(9975).OrientationType.LANDSCAPE;
       }
       return LANDSCAPE;
     }
   }
   if (activityLockOrientation === channel(2143).EmbeddedActivityOrientationLockState.LANDSCAPE) {
-    LANDSCAPE1 = tmp3(8983).OrientationType.LANDSCAPE;
+    LANDSCAPE1 = tmp3(9975).OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE1 = null;
     if (activityLockOrientation === channel(2143).EmbeddedActivityOrientationLockState.PORTRAIT) {
-      LANDSCAPE1 = tmp3(8983).OrientationType.PORTRAIT;
+      LANDSCAPE1 = tmp3(9975).OrientationType.PORTRAIT;
     }
   }
   LANDSCAPE = LANDSCAPE1;

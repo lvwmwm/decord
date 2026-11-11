@@ -1,26 +1,26 @@
-// Module ID: 6049
-// Function ID: 6050
+// Module ID: 6162
+// Function ID: 6163
 // Name: AudioActionCreators
-// Dependencies: [5, 6050, 6053, 4991, 2130, 5895, 5045, 1385, 1072, 6054, 5899, 3, 1252, 551, 572, 6055, 6012, 6059, 6076, 2]
+// Dependencies: [5, 6163, 6166, 5092, 2130, 6008, 5146, 1385, 1072, 6167, 6012, 3, 1252, 551, 572, 6168, 6125, 6172, 6189, 2]
 
-// Module 6049 (AudioActionCreators)
+// Module 6162 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 5899 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 6012 */;
-import Constants3 from "Constants" /* 6054 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 6055 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 6059 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 6076 */;
+import Constants2 from "Constants" /* 6012 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 6125 */;
+import Constants3 from "Constants" /* 6167 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 6168 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 6172 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 6189 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SpatialAudioStore from "SpatialAudioStore" /* 6050 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 6053 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 6163 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 6166 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

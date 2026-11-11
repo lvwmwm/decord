@@ -1,28 +1,28 @@
-// Module ID: 20245
-// Function ID: 20246
+// Module ID: 20440
+// Function ID: 20441
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 20246, 5013, 9161, 1072, 21, 5142, 575, 7067, 7633, 1113, 20247, 9215, 5753, 20088, 7151, 5844, 20248, 1499, 504, 5736, 2]
+// Dependencies: [19, 17, 20441, 5114, 8339, 1072, 21, 5243, 575, 7427, 7363, 1113, 20442, 8409, 5866, 20283, 7553, 5957, 20443, 1499, 504, 5849, 2]
 // Exports: default
 
-// Module 20245 (GuildSettingsModalVanityURL)
+// Module 20440 (GuildSettingsModalVanityURL)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7151 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7633 */;
-import getInviteURLDefault from "getInviteURL" /* 9215 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 20088 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 20247 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20248 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7363 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7553 */;
+import getInviteURLDefault from "getInviteURL" /* 8409 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 20283 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 20442 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20443 */;
 import react from "react" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 20246 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9161 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 20441 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8339 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let navigation, props;
@@ -107,7 +107,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
       if (submitting) {
         fn = () => null;
       } else if (isEditing) {
-        let obj = self(7067);
+        let obj = self(7427);
         fn = obj.getHeaderConditionalBackButton(this.handleCancel);
       }
       const obj2 = { headerLeft: fn, headerRight: fn2 };
@@ -152,7 +152,6 @@ class GuildSettingsModalVanityURL extends PureComponent {
     let obj3;
     let styles;
     let tmp20;
-    let vanityURLCode;
     const self = this;
     ({ errorDetails, guild, styles } = this.props);
     ({ isEditing, vanityURLCode } = this.state);
@@ -219,7 +218,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
     items2[2] = metroImportAll(Text3, obj10);
     if (tmp17Result) {
       const obj11 = { variant: "body-sm/medium", color: "text-muted", children: intl5.string(intl7.t.o3kmm3) };
-      const Text4 = tmp18(5753).Text;
+      const Text4 = tmp18(5866).Text;
       intl5 = tmp18(1113).intl;
       tmp17Result = tmp17(Text4, obj11);
     }
@@ -262,7 +261,7 @@ export default function ConnectedGuildSettingsModalVanityURL(guildId) {
   if (null != stateFromStores) {
     const obj5 = { children: items3 };
     const obj6 = { guild: stateFromStores, vanityURLCode: stateFromStores1, submitting: tmp8, errorDetails: tmp9, navigation, styles: tmp, contentContainerStyle };
-    items3 = [closure_8(GuildSettingsModalVanityURL, obj6), closure_8(tmp2(5736).NavScrim, {})];
+    items3 = [closure_8(GuildSettingsModalVanityURL, obj6), closure_8(tmp2(5849).NavScrim, {})];
     tmp10 = closure_9(closure_10, obj5);
   }
   return tmp10;

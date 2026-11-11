@@ -1,38 +1,38 @@
-// Module ID: 6225
-// Function ID: 6226
+// Module ID: 6338
+// Function ID: 6339
 // Name: CheckpointCardColors
-// Dependencies: [6226, 6227, 6228, 6229, 6230, 6231, 6232, 6233, 6234, 6235, 6236, 6237, 6238, 6239, 6240, 6241, 6242, 6243, 6223, 6244, 2]
+// Dependencies: [6339, 6340, 6341, 6342, 6343, 6344, 6345, 6346, 6347, 6348, 6349, 6350, 6351, 6352, 6353, 6354, 6355, 6356, 6336, 6357, 2]
 // Exports: getCardColors, getCharacterCardColorPalette
 
-// Module 6225 (CheckpointCardColors)
-import CheckpointCardColorPalette from "CheckpointCardColorPalette" /* 6223 */;
-import _modDef6226 from "module_6226" /* 6226 */;
-import _modDef6227 from "module_6227" /* 6227 */;
-import _modDef6228 from "module_6228" /* 6228 */;
-import _modDef6229 from "module_6229" /* 6229 */;
-import _modDef6230 from "module_6230" /* 6230 */;
-import _modDef6231 from "module_6231" /* 6231 */;
-import _modDef6232 from "module_6232" /* 6232 */;
-import _modDef6233 from "module_6233" /* 6233 */;
-import _modDef6234 from "module_6234" /* 6234 */;
-import _modDef6235 from "module_6235" /* 6235 */;
-import _modDef6236 from "module_6236" /* 6236 */;
-import _modDef6237 from "module_6237" /* 6237 */;
-import _modDef6238 from "module_6238" /* 6238 */;
-import _modDef6239 from "module_6239" /* 6239 */;
-import _modDef6240 from "module_6240" /* 6240 */;
-import _modDef6241 from "module_6241" /* 6241 */;
-import _modDef6242 from "module_6242" /* 6242 */;
-import _modDef6243 from "module_6243" /* 6243 */;
-import CheckpointTraitConfig from "CheckpointTraitConfig" /* 6244 */;
+// Module 6338 (CheckpointCardColors)
+import CheckpointCardColorPalette from "CheckpointCardColorPalette" /* 6336 */;
+import _modDef6339 from "module_6339" /* 6339 */;
+import _modDef6340 from "module_6340" /* 6340 */;
+import _modDef6341 from "module_6341" /* 6341 */;
+import _modDef6342 from "module_6342" /* 6342 */;
+import _modDef6343 from "module_6343" /* 6343 */;
+import _modDef6344 from "module_6344" /* 6344 */;
+import _modDef6345 from "module_6345" /* 6345 */;
+import _modDef6346 from "module_6346" /* 6346 */;
+import _modDef6347 from "module_6347" /* 6347 */;
+import _modDef6348 from "module_6348" /* 6348 */;
+import _modDef6349 from "module_6349" /* 6349 */;
+import _modDef6350 from "module_6350" /* 6350 */;
+import _modDef6351 from "module_6351" /* 6351 */;
+import _modDef6352 from "module_6352" /* 6352 */;
+import _modDef6353 from "module_6353" /* 6353 */;
+import _modDef6354 from "module_6354" /* 6354 */;
+import _modDef6355 from "module_6355" /* 6355 */;
+import _modDef6356 from "module_6356" /* 6356 */;
+import CheckpointTraitConfig from "CheckpointTraitConfig" /* 6357 */;
 import size from "module_2" /* 2 */;
 
-const obj = { primaryBackgroundColor: "#7D53DE", secondaryBackgroundColor: "#BCB1D5", tertiaryBackgroundColor: "#CFC3EB", shadowColor: "#411D96", backgroundGradientStartColor: "#2F156B", recapCardBackgroundImage: _modDef6226, clydeLogoImage: _modDef6227, clydeLogoStaticImage: _modDef6228 };
-const obj2 = { primaryBackgroundColor: "#34E2F1", secondaryBackgroundColor: "#94CCD1", tertiaryBackgroundColor: "#A5E3E9", shadowColor: "#0C9BA7", backgroundGradientStartColor: "#12606D", recapCardBackgroundImage: _modDef6229, clydeLogoImage: _modDef6230, clydeLogoStaticImage: _modDef6231 };
-const obj3 = { primaryBackgroundColor: "#FF4CD2", secondaryBackgroundColor: "#D5A9D6", tertiaryBackgroundColor: "#E9BBE9", shadowColor: "#B20086", backgroundGradientStartColor: "#80005F", recapCardBackgroundImage: _modDef6232, clydeLogoImage: _modDef6233, clydeLogoStaticImage: _modDef6234 };
-const obj4 = { primaryBackgroundColor: "#35ED7E", secondaryBackgroundColor: "#B2C5B1", tertiaryBackgroundColor: "#B5DCB3", shadowColor: "#0FA44A", backgroundGradientStartColor: "#0A7535", recapCardBackgroundImage: _modDef6235, clydeLogoImage: _modDef6236, clydeLogoStaticImage: _modDef6237 };
-const obj5 = { primaryBackgroundColor: "#EF3054", secondaryBackgroundColor: "#E5A1AE", tertiaryBackgroundColor: "#F6AFBC", shadowColor: "#A60D2A", backgroundGradientStartColor: "#76091E", recapCardBackgroundImage: _modDef6238, clydeLogoImage: _modDef6239, clydeLogoStaticImage: _modDef6240 };
-const obj6 = { primaryBackgroundColor: "#FFE047", secondaryBackgroundColor: "#E6CBA8", tertiaryBackgroundColor: "#FFE0B8", shadowColor: "#B29400", backgroundGradientStartColor: "#806A00", recapCardBackgroundImage: _modDef6241, clydeLogoImage: _modDef6242, clydeLogoStaticImage: _modDef6243 };
+const obj = { primaryBackgroundColor: "#7D53DE", secondaryBackgroundColor: "#BCB1D5", tertiaryBackgroundColor: "#CFC3EB", shadowColor: "#411D96", backgroundGradientStartColor: "#2F156B", recapCardBackgroundImage: _modDef6339, clydeLogoImage: _modDef6340, clydeLogoStaticImage: _modDef6341 };
+const obj2 = { primaryBackgroundColor: "#34E2F1", secondaryBackgroundColor: "#94CCD1", tertiaryBackgroundColor: "#A5E3E9", shadowColor: "#0C9BA7", backgroundGradientStartColor: "#12606D", recapCardBackgroundImage: _modDef6342, clydeLogoImage: _modDef6343, clydeLogoStaticImage: _modDef6344 };
+const obj3 = { primaryBackgroundColor: "#FF4CD2", secondaryBackgroundColor: "#D5A9D6", tertiaryBackgroundColor: "#E9BBE9", shadowColor: "#B20086", backgroundGradientStartColor: "#80005F", recapCardBackgroundImage: _modDef6345, clydeLogoImage: _modDef6346, clydeLogoStaticImage: _modDef6347 };
+const obj4 = { primaryBackgroundColor: "#35ED7E", secondaryBackgroundColor: "#B2C5B1", tertiaryBackgroundColor: "#B5DCB3", shadowColor: "#0FA44A", backgroundGradientStartColor: "#0A7535", recapCardBackgroundImage: _modDef6348, clydeLogoImage: _modDef6349, clydeLogoStaticImage: _modDef6350 };
+const obj5 = { primaryBackgroundColor: "#EF3054", secondaryBackgroundColor: "#E5A1AE", tertiaryBackgroundColor: "#F6AFBC", shadowColor: "#A60D2A", backgroundGradientStartColor: "#76091E", recapCardBackgroundImage: _modDef6351, clydeLogoImage: _modDef6352, clydeLogoStaticImage: _modDef6353 };
+const obj6 = { primaryBackgroundColor: "#FFE047", secondaryBackgroundColor: "#E6CBA8", tertiaryBackgroundColor: "#FFE0B8", shadowColor: "#B29400", backgroundGradientStartColor: "#806A00", recapCardBackgroundImage: _modDef6354, clydeLogoImage: _modDef6355, clydeLogoStaticImage: _modDef6356 };
 let closure_3 = { [CheckpointCardColorPalette.CheckpointCardColorPalette.NONE]: obj2, [CheckpointCardColorPalette.CheckpointCardColorPalette.CYAN]: obj2, [CheckpointCardColorPalette.CheckpointCardColorPalette.PURPLE]: obj, [CheckpointCardColorPalette.CheckpointCardColorPalette.PINK]: obj3, [CheckpointCardColorPalette.CheckpointCardColorPalette.GREEN]: obj4, [CheckpointCardColorPalette.CheckpointCardColorPalette.RED]: obj5, [CheckpointCardColorPalette.CheckpointCardColorPalette.YELLOW]: obj6 };
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointCardColors.tsx");
 
@@ -44,7 +44,7 @@ export function getCharacterCardColorPalette(character) {
     NONE = CheckpointTraitConfig.CHECKPOINT_BASE_TO_CARD_COLOR_PALETTE[character.base];
     const tmp = require;
     if (NONE == null) {
-      NONE = tmp(6223).CheckpointCardColorPalette.NONE;
+      NONE = tmp(6336).CheckpointCardColorPalette.NONE;
     }
   }
   return NONE;

@@ -1,12 +1,12 @@
-// Module ID: 12706
-// Function ID: 12707
+// Module ID: 13396
+// Function ID: 13397
 // Name: FileTypeFiltering
-// Dependencies: [32, 19, 2186, 1377, 1113, 504, 6092, 2]
+// Dependencies: [32, 19, 2186, 1377, 1113, 504, 6205, 2]
 // Exports: getFileTypeFiltering, useFileTypeFiltering, useFileTypesFormattedString
 
-// Module 12706 (FileTypeFiltering)
+// Module 13396 (FileTypeFiltering)
 import intl4 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6092 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
@@ -15,17 +15,17 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, set;
 
-const f104078 = (item) => item.startsWith(".");
-const f104079 = (arr) => arr.slice(1);
-const f104082 = () => locale.locale;
-const f104084 = (item) => {
+const f106276 = (item) => item.startsWith(".");
+const f106277 = (arr) => arr.slice(1);
+const f106280 = () => locale.locale;
+const f106282 = (item) => {
   closure_0 = item;
   return closure_0.some((item) => {
     const formatted = closure_0.toLowerCase();
     return formatted.endsWith("." + item);
   });
 };
-const f104085 = (item) => {
+const f106283 = (item) => {
   const hasItem = closure_1_6.includes(item) || closure_1_7.includes(item);
   return hasItem;
 };
@@ -77,7 +77,7 @@ export function useFileTypesFormattedString(fileTypes) {
   _require = fileTypes;
   const items = [LocaleStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f104082);
+  const stateFromStores = obj.useStateFromStores(items, f106280);
   const items1 = [fileTypes, stateFromStores];
   return react.useMemo(() => fileTypesFormattedStringHelper(closure_0, stateFromStores), items1);
 }
@@ -85,8 +85,8 @@ export function getFileTypeFiltering(fileTypes) {
   if (null != fileTypes) {
     let items3;
     if (0 !== fileTypes.length) {
-      const found = fileTypes.filter(f104078);
-      const mapped = found.map(f104079);
+      const found = fileTypes.filter(f106276);
+      const mapped = found.map(f106277);
       if (fileTypes.includes("image")) {
         const push = mapped.push;
         const items = [];
@@ -138,7 +138,7 @@ export function getFileTypeFiltering(fileTypes) {
       typesFormattedString: tmp25,
       validateFilenames(arr) {
           let closure_0 = items3;
-          const everyResult = 0 === items3.length || arr.every(f104084);
+          const everyResult = 0 === items3.length || arr.every(f106282);
           return everyResult;
         },
       showInvalidFileTypeAlert() {
@@ -153,9 +153,9 @@ export function getFileTypeFiltering(fileTypes) {
           obj2 = { types };
           show(obj);
         },
-      mediaFilesAllowed: 0 === items3.length || items3.some(f104085)
+      mediaFilesAllowed: 0 === items3.length || items3.some(f106283)
     };
-    0 === items3.length || items3.some(f104085);
+    0 === items3.length || items3.some(f106283);
     return obj;
   }
   items3 = [];
@@ -167,8 +167,8 @@ export function useFileTypeFiltering(fileTypes) {
   const memo = react.useMemo(() => {
     if (null != fileTypes) {
       if (0 !== fileTypes.length) {
-        const found = arr.filter(f104078);
-        const mapped = found.map(f104079);
+        const found = arr.filter(f106276);
+        const mapped = found.map(f106277);
         if (fileTypes.includes("image")) {
           const push = mapped.push;
           const items = [];
@@ -227,14 +227,14 @@ export function useFileTypeFiltering(fileTypes) {
   _require = fileTypes;
   let obj = require("get initialized");
   let items1 = [LocaleStore];
-  const stateFromStores = obj.useStateFromStores(items1, f104082);
+  const stateFromStores = obj.useStateFromStores(items1, f106280);
   let items2 = [fileTypes, stateFromStores];
   memo1 = react.useMemo(() => fileTypesFormattedStringHelper(closure_0, stateFromStores), items2);
   const items3 = [memo];
   const items4 = [memo1];
   const callback = react.useCallback((arr) => {
     let closure_0 = memo;
-    const everyResult = 0 === memo.length || arr.every(f104084);
+    const everyResult = 0 === memo.length || arr.every(f106282);
     return everyResult;
   }, items3);
   const items5 = [memo];
@@ -256,7 +256,7 @@ export function useFileTypeFiltering(fileTypes) {
     validateFilenames: callback,
     showInvalidFileTypeAlert: callback1,
     mediaFilesAllowed: react.useMemo(() => {
-      const tmp = 0 === memo.length || memo.some(f104085);
+      const tmp = 0 === memo.length || memo.some(f106283);
       return tmp;
     }, items5)
   };

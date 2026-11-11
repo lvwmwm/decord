@@ -1,16 +1,16 @@
-// Module ID: 17872
-// Function ID: 17873
+// Module ID: 18038
+// Function ID: 18039
 // Name: HighlightNotificationsSetting
-// Dependencies: [5013, 8507, 1072, 504, 11694, 1113, 17873, 2]
+// Dependencies: [5114, 9136, 1072, 504, 12317, 1113, 18039, 2]
 // Exports: useHighlightNotifications
 
-// Module 17872 (HighlightNotificationsSetting)
+// Module 18038 (HighlightNotificationsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8507 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import SettingBuilders from "SettingBuilders" /* 11694 */;
+import SettingsConstants from "SettingsConstants" /* 9136 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import SettingBuilders from "SettingBuilders" /* 12317 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

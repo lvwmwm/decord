@@ -1,16 +1,16 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 12241
+// Function ID: 12242
 // Name: useIsChannelPinotPromotable
-// Dependencies: [4995, 4991, 5048, 5013, 1072, 9141, 504, 9139, 2]
+// Dependencies: [5096, 5092, 5149, 5114, 1072, 8103, 504, 8101, 2]
 // Exports: useIsChannelPinotPromotable, usePinotPromotableChannelId
 
-// Module 11470 (useIsChannelPinotPromotable)
+// Module 12241 (useIsChannelPinotPromotable)
 import Constants from "Constants" /* 1072 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
-import PinotEligibility from "PinotEligibility" /* 9139 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildRoleStore from "GuildRoleStore" /* 5048 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
+import PinotEligibility from "PinotEligibility" /* 8101 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildRoleStore from "GuildRoleStore" /* 5149 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

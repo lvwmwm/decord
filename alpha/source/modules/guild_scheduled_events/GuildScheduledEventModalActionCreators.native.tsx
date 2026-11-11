@@ -1,21 +1,21 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 7899
+// Function ID: 7900
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 4997, 9048, 5376, 9049, 2118, 9054, 9306, 2]
+// Dependencies: [5, 5098, 7900, 5489, 7901, 2118, 7906, 15818, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 9047 (GuildScheduledEventModalActionCreators)
+// Module 7899 (GuildScheduledEventModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2118 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4997 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 9048 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5098 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 7900 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(9054);
+const ScheduleUtils = tmp3(7906);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(9049, dependencyMap.paths);
+  const tmp4 = asyncRequire(7901, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -106,5 +106,5 @@ export function transitionToEventDetailsFromInvite() {
 export function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(9306, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(15818, dependencyMap.paths), closure_4, obj2);
 }

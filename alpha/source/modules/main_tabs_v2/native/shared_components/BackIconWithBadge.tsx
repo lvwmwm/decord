@@ -1,20 +1,20 @@
-// Module ID: 16918
-// Function ID: 16919
+// Module ID: 17081
+// Function ID: 17082
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 6944, 21, 5142, 575, 504, 16919, 1187, 9599, 1357, 7071, 7123, 10896, 2]
+// Dependencies: [19, 17, 6997, 21, 5243, 575, 504, 17082, 1187, 9437, 1357, 7431, 7483, 10803, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 16918 (BackIconWithBadge)
+// Module 17081 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7071 */;
-import XSmallIcon from "XSmallIcon" /* 7123 */;
-import ClipView from "ClipView" /* 9599 */;
-import XLargeIcon from "XLargeIcon" /* 10896 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7431 */;
+import XSmallIcon from "XSmallIcon" /* 7483 */;
+import ClipView from "ClipView" /* 9437 */;
+import XLargeIcon from "XLargeIcon" /* 10803 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6944 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6997 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

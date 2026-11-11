@@ -1,16 +1,16 @@
-// Module ID: 13889
-// Function ID: 13890
+// Module ID: 14370
+// Function ID: 14371
 // Name: useCheckpointCharacterTextureSwaps
 // Dependencies: [32, 5, 19, 2]
 // Exports: useCheckpointCharacterTextureSwaps
 
-// Module 13889 (useCheckpointCharacterTextureSwaps)
+// Module 14370 (useCheckpointCharacterTextureSwaps)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let c4, map, map1, map2, set;
+let c4, map, map1, set;
 
 let obj = function _swapTextures() {
   obj = _asyncToGenerator(async function(arg0, value) {
@@ -132,7 +132,7 @@ let obj = function _swapTextures() {
         const _Map = Map;
         const self = this;
         const self2 = this;
-        map2 = new Map();
+        const map2 = new Map();
         const item1 = map.forEach((item, index) => {
           const value = closure_1_5.get(item);
           if (null != value) {

@@ -1,17 +1,17 @@
-// Module ID: 7068
-// Function ID: 7069
+// Module ID: 7428
+// Function ID: 7429
 // Name: HeaderDebugOverlay
-// Dependencies: [19, 17, 21, 5142, 575, 7069, 5753, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 7429, 5866, 2]
 // Exports: default
 
-// Module 7068 (HeaderDebugOverlay)
+// Module 7428 (HeaderDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import useDesignToggleDefault from "useDesignToggle" /* 7069 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import useDesignToggleDefault from "useDesignToggle" /* 7429 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

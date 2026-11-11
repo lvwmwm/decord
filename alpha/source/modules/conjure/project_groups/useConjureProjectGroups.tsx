@@ -1,16 +1,16 @@
-// Module ID: 13235
-// Function ID: 13236
+// Module ID: 10466
+// Function ID: 10467
 // Name: useConjureProjectGroups
-// Dependencies: [19, 6830, 1385, 6902, 13214, 504, 13236, 13237, 2]
+// Dependencies: [19, 6893, 1385, 6954, 10455, 504, 10467, 10468, 2]
 // Exports: default
 
-// Module 13235 (useConjureProjectGroups)
-import conjureProjectGroups from "conjureProjectGroups" /* 13236 */;
-import filterConjureProjectsByName from "filterConjureProjectsByName" /* 13237 */;
+// Module 10466 (useConjureProjectGroups)
+import conjureProjectGroups from "conjureProjectGroups" /* 10467 */;
+import filterConjureProjectsByName from "filterConjureProjectsByName" /* 10468 */;
 import react from "react" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 6830 */;
+import SortedGuildStore from "SortedGuildStore" /* 6893 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

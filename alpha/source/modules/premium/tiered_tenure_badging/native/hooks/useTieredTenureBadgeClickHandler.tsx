@@ -1,18 +1,18 @@
-// Module ID: 11566
-// Function ID: 11567
+// Module ID: 15357
+// Function ID: 15358
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: [19, 1385, 1387, 8842, 1072, 7440, 11567, 7861, 504, 7638, 5376, 11568, 2118, 11568, 1252, 2]
+// Dependencies: [19, 1385, 1387, 8483, 1072, 7896, 15358, 15177, 7297, 504, 8537, 5489, 15175, 2118, 15175, 1252, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 11566 (useTieredTenureBadgeClickHandler)
+// Module 15357 (useTieredTenureBadgeClickHandler)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import Constants2 from "Constants" /* 7440 */;
-import openUserSettings from "openUserSettings" /* 7638 */;
-import Constants3 from "Constants" /* 8842 */;
-import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 11568 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import Constants2 from "Constants" /* 7896 */;
+import Constants3 from "Constants" /* 8483 */;
+import openUserSettings from "openUserSettings" /* 8537 */;
+import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 15175 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
@@ -34,33 +34,35 @@ export function useTieredTenureBadgeClickHandler(id, userId, themeType) {
   _require = id;
   dependencyMap = themeType;
   let obj = require("useIsPremiumSubscriber");
-  let isPremiumSubscriber = obj.useIsPremiumSubscriber(PremiumTypes.TIER_2);
-  let tmp4 = typeof id === "string";
+  const isPremiumSubscriber = obj.useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  let obj2 = require("useCanUseTenureBadge");
+  let tmp5 = typeof id === "string";
+  let canUseTenureBadge = obj2.useCanUseTenureBadge();
   if (typeof id === "string") {
     const tmpResult = require("TieredTenureBadgeUtils");
-    tmp4 = null != tmpResult.getTieredTenureBadge(id);
+    tmp5 = null != tmpResult.getTieredTenureBadge(id);
   }
-  const items = [isPremiumSubscriber];
+  const items = [canUseTenureBadge];
   const tmpResult2 = require("get initialized");
-  const stateFromStores = tmpResult2.useStateFromStores(items, () => isPremiumSubscriber.getCurrentUser());
-  if (!tmp4) {
-    let tmp7 = id === DEFAULT_PREMIUM_BADGE_ID;
-    if (tmp7) {
+  const stateFromStores = tmpResult2.useStateFromStores(items, () => canUseTenureBadge.getCurrentUser());
+  if (!tmp5) {
+    let tmp8 = id === DEFAULT_PREMIUM_BADGE_ID;
+    if (tmp8) {
       id = undefined;
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }
-      tmp7 = userId === id;
+      tmp8 = userId === id;
     }
-    if (tmp7) {
-      tmp7 = isPremiumSubscriber;
+    if (tmp8) {
+      tmp8 = canUseTenureBadge;
     }
-    tmp4 = tmp7;
+    tmp5 = tmp8;
   }
-  isPremiumSubscriber = tmp4;
-  const items1 = [themeType, userId, tmp4, id, isPremiumSubscriber];
+  canUseTenureBadge = tmp5;
+  const items1 = [themeType, userId, tmp5, id, isPremiumSubscriber];
   let callback = null;
-  if (tmp4) {
+  if (tmp5) {
     callback = isPremiumSubscriber.useCallback(() => {
       if (themeType === UserProfileThemeTypes.YOU_SCREEN) {
         const obj3 = { screen: metroImportAll.PREMIUM };
@@ -69,10 +71,10 @@ export function useTieredTenureBadgeClickHandler(id, userId, themeType) {
       } else {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         const obj = { userId };
-        const tmp5 = asyncRequire(11568, dependencyMap.paths);
+        const tmp5 = asyncRequire(15175, dependencyMap.paths);
         openLazy(tmp5, TieredTenureBadgeActionSheet.TIERED_TENURE_BADGE_ACTION_SHEET_KEY, obj, "stack");
       }
-      const tmp15 = isPremiumSubscriber;
+      const tmp15 = canUseTenureBadge;
       if (tmp15) {
         const obj5 = { badge, viewed_user_id: userId, premium_type: isPremiumSubscriber };
         const obj4 = AnalyticsUtilsDefault;

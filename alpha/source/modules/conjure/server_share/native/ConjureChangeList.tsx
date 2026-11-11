@@ -1,25 +1,25 @@
-// Module ID: 12411
-// Function ID: 12412
+// Module ID: 13218
+// Function ID: 13219
 // Name: ConjureChangeList
-// Dependencies: [19, 17, 21, 12277, 8755, 12412, 8083, 9823, 8738, 12295, 5142, 575, 6161, 5753, 1113, 4028, 2]
+// Dependencies: [19, 17, 21, 12592, 8036, 13219, 8180, 7374, 7372, 10486, 5243, 575, 6274, 5866, 1113, 4079, 2]
 // Exports: default
 
-// Module 12411 (ConjureChangeList)
+// Module 13218 (ConjureChangeList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4028 from "module_4028" /* 4028 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import Stack_Stack from "Stack/Stack" /* 6161 */;
-import IdCardIcon from "IdCardIcon" /* 8083 */;
-import GroupIcon from "GroupIcon" /* 8738 */;
-import AppsIcon from "AppsIcon" /* 8755 */;
-import GameControllerIcon from "GameControllerIcon" /* 9823 */;
-import RobotIcon from "RobotIcon" /* 12277 */;
-import UserIcon from "UserIcon" /* 12295 */;
-import BeakerIcon from "BeakerIcon" /* 12412 */;
+import _modDef4079 from "module_4079" /* 4079 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import Stack_Stack from "Stack/Stack" /* 6274 */;
+import GroupIcon from "GroupIcon" /* 7372 */;
+import GameControllerIcon from "GameControllerIcon" /* 7374 */;
+import AppsIcon from "AppsIcon" /* 8036 */;
+import IdCardIcon from "IdCardIcon" /* 8180 */;
+import UserIcon from "UserIcon" /* 10486 */;
+import RobotIcon from "RobotIcon" /* 12592 */;
+import BeakerIcon from "BeakerIcon" /* 13219 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ export default function ConjureChangeList(rows) {
   _require = tmp;
   obj = { spacing: 8, children: items };
   let Stack = require("Stack/Stack").Stack;
-  let obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4028["kG/2e8"]) };
+  let obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4079["kG/2e8"]) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items = [closure_4(Text, obj2), ];

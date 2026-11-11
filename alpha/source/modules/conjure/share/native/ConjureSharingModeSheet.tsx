@@ -1,17 +1,17 @@
-// Module ID: 12429
-// Function ID: 12430
+// Module ID: 13235
+// Function ID: 13236
 // Name: ConjureSharingModeSheet
-// Dependencies: [19, 21, 5376, 7429, 7385, 1113, 4028, 7127, 7130, 2]
+// Dependencies: [19, 21, 5489, 7885, 7847, 1113, 4079, 7679, 7681, 2]
 // Exports: default
 
-// Module 12429 (ConjureSharingModeSheet)
+// Module 13235 (ConjureSharingModeSheet)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7127 */;
-import TableRadioRow from "TableRadioRow" /* 7130 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7385 */;
-import ActionSheet2 from "ActionSheet" /* 7429 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7679 */;
+import TableRadioRow from "TableRadioRow" /* 7681 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7847 */;
+import ActionSheet2 from "ActionSheet" /* 7885 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ export default function ConjureSharingModeSheet(onChange) {
   }, items);
   let obj = { header: null, children: tmp2(TableRadioGroup, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  ({ title: intl.string(onChange(4028).ujIxRm) });
+  ({ title: intl.string(onChange(4079).ujIxRm) });
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl2.intl;
   TableRadioGroup = TableRadioGroup2.TableRadioGroup;

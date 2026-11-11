@@ -1,26 +1,26 @@
-// Module ID: 14695
-// Function ID: 14696
+// Module ID: 11740
+// Function ID: 11741
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8840, 7688, 1072, 1387, 21, 5142, 575, 5737, 10740, 504, 8832, 7390, 14687, 1252, 14696, 572, 6801, 6093, 14697, 2118, 1377, 10756, 10745, 5753, 1113, 5760, 2]
+// Dependencies: [5, 32, 19, 17, 8481, 9526, 1072, 1387, 21, 5243, 575, 5850, 11612, 504, 8414, 7852, 11731, 1252, 11741, 572, 6785, 6206, 11742, 2118, 1377, 11628, 11617, 5866, 1113, 5873, 2]
 // Exports: default
 
-// Module 14695 (CollectiblesShopGiftPurchaseSection)
+// Module 11740 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6093 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7688 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 9526 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8840 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8481 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;

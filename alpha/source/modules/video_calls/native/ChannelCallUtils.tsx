@@ -1,25 +1,25 @@
-// Module ID: 19770
-// Function ID: 19771
+// Module ID: 19962
+// Function ID: 19963
 // Name: ChannelCallUtils
-// Dependencies: [19, 7966, 1072, 21, 1113, 19771, 7638, 5376, 5890, 6093, 19768, 2118, 19772, 6774, 19773, 9204, 11794, 12143, 8424, 7, 5839, 9016, 2]
+// Dependencies: [19, 6739, 1072, 21, 1113, 19963, 8537, 5489, 6003, 6206, 19960, 2118, 19964, 6745, 19965, 8394, 12450, 12954, 15957, 7, 5952, 10163, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 19770 (ChannelCallUtils)
+// Module 19962 (ChannelCallUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5890 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6093 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6774 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8424 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9204 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11794 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12143 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 19771 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19772 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8394 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12450 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12954 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15957 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19963 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19964 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7966 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6739 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ export function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
     importer() {
       let onConfirm;
       let type;
-      const promise = asyncRequire(19768, dependencyMap.paths);
+      const promise = asyncRequire(19960, dependencyMap.paths);
       return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {
@@ -121,7 +121,7 @@ export function reportStreamIssue(stream) {
       const merged = Object.assign(videoStats);
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp7 = asyncRequire(19773, tmp2.paths);
+      const tmp7 = asyncRequire(19965, tmp2.paths);
       openLazy(tmp7, "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj3 });
     }
   };
@@ -159,7 +159,7 @@ export function invite(dependencyMap, stream, targetApplicationId) {
       return openGroupDMAddMembersDefault(dependencyMap.id, hasOwnProperty.CHANNEL_CALL);
     };
   }
-  let obj = { label: intl.string(require("intl").t.VINpSK), icon: AssetRegistryDefault2, onPress };
+  let obj = { label: intl.string(require("intl").t.VINpSK), icon: AssetRegistryDefault, onPress };
   intl = require("intl").intl;
   return obj;
 }
@@ -169,7 +169,7 @@ export function rtcDebugPanel(arg0) {
   _require = arg0;
   let obj = {
     label: intl.string(require("intl").t.X8bCMe),
-    icon: AssetRegistryDefault,
+    icon: AssetRegistryDefault2,
     onPress() {
       closure_0();
       const obj = ActionSheetActionCreatorsDefault;
@@ -183,7 +183,7 @@ export function shareActivityLogs() {
   let intl;
   let obj = {
     label: intl.string(intl2.t.iQzQs3),
-    icon: AssetRegistryDefault,
+    icon: AssetRegistryDefault2,
     onPress() {
       let intl;
       const items = [closure_1_7];

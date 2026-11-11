@@ -1,17 +1,17 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 10942
+// Function ID: 10943
 // Name: useIsPrivateAudioOnlyCall
-// Dependencies: [32, 4990, 6901, 6771, 2130, 5805, 5807, 504, 2]
+// Dependencies: [32, 5091, 6953, 6757, 2130, 5918, 5920, 504, 2]
 // Exports: default
 
-// Module 11141 (useIsPrivateAudioOnlyCall)
-import CallConstants from "CallConstants" /* 5807 */;
+// Module 10942 (useIsPrivateAudioOnlyCall)
+import CallConstants from "CallConstants" /* 5920 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6901 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6771 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import VoiceStateStore from "VoiceStateStore" /* 5805 */;
+import VoiceStateStore from "VoiceStateStore" /* 5918 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

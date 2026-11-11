@@ -1,10 +1,10 @@
-// Module ID: 9967
-// Function ID: 9968
+// Module ID: 9047
+// Function ID: 9048
 // Name: AnalyticsFeedItemSeenActionCreators
 // Dependencies: [572, 2]
 // Exports: flushAnalyticsFeedItems, markAnalyticsFeedItemSeen, markAnalyticsFeedItemUnseen
 
-// Module 9967 (AnalyticsFeedItemSeenActionCreators)
+// Module 9047 (AnalyticsFeedItemSeenActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

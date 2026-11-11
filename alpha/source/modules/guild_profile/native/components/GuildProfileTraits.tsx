@@ -1,19 +1,19 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 10604
+// Function ID: 10605
 // Name: GuildProfileTraits
-// Dependencies: [19, 17, 21, 5142, 575, 1411, 5092, 7366, 5753, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 1411, 5193, 7828, 5866, 2]
 // Exports: default
 
-// Module 14991 (GuildProfileTraits)
+// Module 10604 (GuildProfileTraits)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 5092 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import EmojiDefault from "Emoji" /* 7366 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 5193 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import EmojiDefault from "Emoji" /* 7828 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

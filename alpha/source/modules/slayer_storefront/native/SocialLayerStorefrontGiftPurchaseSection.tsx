@@ -1,10 +1,10 @@
-// Module ID: 14686
-// Function ID: 14687
+// Module ID: 11730
+// Function ID: 11731
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7688, 1385, 1072, 1387, 21, 5142, 575, 5737, 7394, 504, 1252, 14687, 10809, 1377, 572, 10797, 1113, 10815, 5753, 5760, 2]
+// Dependencies: [5, 32, 19, 17, 9526, 1385, 1072, 1387, 21, 5243, 575, 5850, 7196, 504, 1252, 11731, 11676, 1377, 572, 11669, 1113, 11681, 5866, 5873, 2]
 // Exports: default
 
-// Module 14686 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 11730 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,14 +12,14 @@ import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7688 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10797 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 9526 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11669 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;

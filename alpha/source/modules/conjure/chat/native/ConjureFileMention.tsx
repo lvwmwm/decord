@@ -1,16 +1,16 @@
-// Module ID: 12320
-// Function ID: 12321
+// Module ID: 13125
+// Function ID: 13126
 // Name: ConjureFileMention
-// Dependencies: [5, 19, 17, 21, 5142, 575, 12319, 12321, 12324, 5753, 1113, 4028, 12290, 12326, 2118, 2]
+// Dependencies: [5, 19, 17, 21, 5243, 575, 13124, 13126, 13129, 5866, 1113, 4079, 13092, 13131, 2118, 2]
 // Exports: default
 
-// Module 12320 (ConjureFileMention)
+// Module 13125 (ConjureFileMention)
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3, paths;
@@ -50,16 +50,16 @@ export default function ConjureFileMention(variant) {
   let context;
   const tmp = closure_9();
   const tmp3 = dependencyMap;
-  context = react.useContext(context(12319).ConjureFileMentionProjectContext);
-  let obj = context(12321);
+  context = react.useContext(context(13124).ConjureFileMentionProjectContext);
+  let obj = context(13126);
   const conjureStoredAttachment = obj.useConjureStoredAttachment(context, attachmentId);
   const obj2 = { style: tmp.chip, children: items };
   let obj3 = { projectId: context, file: conjureStoredAttachment, style: tmp.thumbnail, iconColor: conjureStoredAttachment(575).colors.MENTION_FOREGROUND };
-  const tmp10 = conjureStoredAttachment(12324);
+  const tmp10 = conjureStoredAttachment(13129);
   items = [closure_7(tmp10, obj3), ];
   let obj4 = { variant: str, style: tmp.name, children: name };
   name = undefined;
-  const Text = context(5753).Text;
+  const Text = context(5866).Text;
   const tmp6 = closure_8;
   const tmp7 = closure_6;
   if (conjureStoredAttachment != null) {
@@ -67,7 +67,7 @@ export default function ConjureFileMention(variant) {
   }
   if (name == null) {
     const intl = tmp2(1113).intl;
-    name = intl.string(tmp9(4028).ff9Q4C);
+    name = intl.string(tmp9(4079).ff9Q4C);
   }
   items[1] = closure_7(Text, obj4);
   const tmp6Result = tmp6(tmp7, obj2);
@@ -75,7 +75,7 @@ export default function ConjureFileMention(variant) {
   if (null != context) {
     tmp8Result = tmp6Result;
     if (null != conjureStoredAttachment) {
-      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp2(12290).CONJURE_VIEWABLE_IMAGE_TYPES;
+      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp2(13092).CONJURE_VIEWABLE_IMAGE_TYPES;
       tmp8Result = tmp6Result;
       if (CONJURE_VIEWABLE_IMAGE_TYPES.has(conjureStoredAttachment.content_type)) {
         let obj5 = {
@@ -149,7 +149,7 @@ export default function ConjureFileMention(variant) {
                   }
                 }),
           accessibilityRole: "button",
-          accessibilityLabel: intl2.formatToPlainString(tmp9(4028).GtNukg, obj6),
+          accessibilityLabel: intl2.formatToPlainString(tmp9(4079).GtNukg, obj6),
           children: tmp6Result
         };
         intl2 = tmp2(1113).intl;

@@ -1,30 +1,30 @@
-// Module ID: 6899
-// Function ID: 6900
+// Module ID: 6951
+// Function ID: 6952
 // Name: ActiveJoinedThreadsStore
-// Dependencies: [4995, 4991, 5013, 6900, 5045, 6919, 5076, 4998, 11, 6791, 6952, 572, 12, 504, 2]
+// Dependencies: [5096, 5092, 5114, 6952, 5146, 6972, 5177, 5099, 11, 6775, 7005, 572, 12, 504, 2]
 
-// Module 6899 (ActiveJoinedThreadsStore)
+// Module 6951 (ActiveJoinedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 4998 */;
-import AgeGateUtils from "AgeGateUtils" /* 6791 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6952 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import ReadStateStore from "ReadStateStore" /* 6900 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6919 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5076 */;
+import ChannelConstants from "ChannelConstants" /* 5099 */;
+import AgeGateUtils from "AgeGateUtils" /* 6775 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 7005 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import ReadStateStore from "ReadStateStore" /* 6952 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6972 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5177 */;
 import size_mod from "module_2" /* 2 */;
 
-let closure_12, closure_13, closure_14, closure_15, closure_16;
+let closure_12, closure_13, closure_14, closure_16;
 
 let c3;
 let closure_4;
-const f125584 = () => {
+const f126913 = () => {
   channel = ChannelStore.getChannel(channel.id);
   if (null != channel) {
     const obj2 = { type: "THREAD_UPDATE", channel };
@@ -119,7 +119,7 @@ function rebuildGuild_(guildId) {
               let id2 = channel.id;
               let _Date = Date;
               let tmp46 = getThreadAutoArchiveTimeOnceDefault(channel);
-              closure_19[id2] = setTimeout(f125584, tmp46 - Date.now() + 1);
+              closure_19[id2] = setTimeout(f126913, tmp46 - Date.now() + 1);
               continue;
             }
             continue;
@@ -250,7 +250,7 @@ function updateThread(guild_id, parent_id, id) {
             const id3 = channel.id;
             const _Date = Date;
             const tmp97 = getThreadAutoArchiveTimeOnceDefault(channel);
-            closure_19[id3] = setTimeout(f125584, tmp97 - Date.now() + 1);
+            closure_19[id3] = setTimeout(f126913, tmp97 - Date.now() + 1);
           }
         } else {
           const isForumPostUnreadResult = ReadStateStore.isForumPostUnread(channel.id);
@@ -459,7 +459,7 @@ function handleReadStateChannelAction(channelId) {
             const id3 = channel.id;
             const _Date = Date;
             const tmp30 = getThreadAutoArchiveTimeOnceDefault(channel);
-            closure_19[id3] = setTimeout(f125584, tmp30 - Date.now() + 1);
+            closure_19[id3] = setTimeout(f126913, tmp30 - Date.now() + 1);
           }
           ({ guild_id: guild_id2, parent_id: parent_id2 } = channel);
           let tmp32 = guild_id2 in closure_13;
@@ -576,7 +576,7 @@ function rebuildReadStates() {
               let id2 = channel.id;
               let _Date = Date;
               let tmp19 = getThreadAutoArchiveTimeOnceDefault(channel);
-              closure_19[id2] = setTimeout(f125584, tmp19 - Date.now() + 1);
+              closure_19[id2] = setTimeout(f126913, tmp19 - Date.now() + 1);
               continue;
             }
             continue;
@@ -723,7 +723,7 @@ function updateIn(arg0, channel, channel2, arg3) {
 const ChannelFlags = ChannelConstants.ChannelFlags;
 const authStore2 = {};
 const gesture = {};
-const clientStatuses = {};
+let closure_15 = {};
 const authStore3 = {};
 let closure_17 = {};
 let channelId = null;

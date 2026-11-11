@@ -1,13 +1,13 @@
-// Module ID: 5279
-// Function ID: 5280
+// Module ID: 5392
+// Function ID: 5393
 // Name: CheckpointIntroRive
-// Dependencies: [109, 19, 21, 5209, 5280, 5262, 2]
+// Dependencies: [109, 19, 21, 5322, 5393, 5375, 2]
 // Exports: CheckpointIntroRive
 
-// Module 5279 (CheckpointIntroRive)
+// Module 5392 (CheckpointIntroRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5209 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5262 */;
+import BaseRive2 from "BaseRive" /* 5322 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5375 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

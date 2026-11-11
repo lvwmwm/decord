@@ -1,13 +1,13 @@
-// Module ID: 16687
-// Function ID: 16688
+// Module ID: 16848
+// Function ID: 16849
 // Name: commands/userProfile
-// Dependencies: [5, 6585, 1072, 16643, 16636, 16688, 16689, 2]
+// Dependencies: [5, 6698, 1072, 16804, 16797, 16849, 16850, 2]
 
-// Module 16687 (commands/userProfile)
+// Module 16848 (commands/userProfile)
 import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 6585 */;
+import Constants2 from "Constants" /* 6698 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16643 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16804 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c3, iframeId;

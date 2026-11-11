@@ -1,40 +1,40 @@
-// Module ID: 16935
-// Function ID: 16936
+// Module ID: 17098
+// Function ID: 17099
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2186, 16934, 5013, 11695, 21, 5142, 575, 1187, 7041, 504, 1499, 16936, 1113, 10813, 7023, 16938, 16939, 5753, 7433, 7432, 5156, 7127, 7130, 7421, 5838, 12124, 5378, 5379, 7043, 6161, 2024, 1377, 16196, 7046, 5760, 5726, 16940, 2017, 2]
+// Dependencies: [32, 109, 19, 17, 2186, 17097, 5114, 12318, 21, 5243, 575, 1187, 7379, 504, 1499, 17099, 1113, 11679, 7654, 17101, 17102, 5866, 7889, 7888, 5257, 7679, 7681, 7877, 5951, 12927, 5491, 5492, 7381, 6274, 2024, 1377, 16358, 7364, 5873, 5839, 17103, 2017, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 16935 (SettingRenderer)
+// Module 17098 (SettingRenderer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import react2 from "react" /* 5156 */;
-import HapticUtils from "HapticUtils" /* 5378 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5379 */;
-import useToken from "useToken" /* 5726 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import ToastUtils from "ToastUtils" /* 5838 */;
-import GuildIcon from "GuildIcon" /* 7023 */;
-import TableRadioRow from "TableRadioRow" /* 7130 */;
-import ClipboardUtils from "ClipboardUtils" /* 7421 */;
-import FormSwitch from "FormSwitch" /* 7433 */;
-import ClydeIcon from "ClydeIcon" /* 10813 */;
-import VolumeSliderDefault from "VolumeSlider" /* 12124 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16936 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 16938 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 16939 */;
-import Tracking from "Tracking" /* 16940 */;
+import react2 from "react" /* 5257 */;
+import HapticUtils from "HapticUtils" /* 5491 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5492 */;
+import useToken from "useToken" /* 5839 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import ToastUtils from "ToastUtils" /* 5951 */;
+import GuildIcon from "GuildIcon" /* 7654 */;
+import TableRadioRow from "TableRadioRow" /* 7681 */;
+import ClipboardUtils from "ClipboardUtils" /* 7877 */;
+import FormSwitch from "FormSwitch" /* 7889 */;
+import ClydeIcon from "ClydeIcon" /* 11679 */;
+import VolumeSliderDefault from "VolumeSlider" /* 12927 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 17099 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 17101 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 17102 */;
+import Tracking from "Tracking" /* 17103 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16934 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11695 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 17097 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 12318 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -51,8 +51,8 @@ let obj4;
 let size;
 let tmp;
 let tmp2;
-const TableRow2 = tmp(7041);
-const TableRadioGroup2 = tmp2(7127);
+const TableRow2 = tmp(7379);
+const TableRadioGroup2 = tmp2(7679);
 class GuildSelectDefaultIcon {
   constructor(size) {
     let obj2;
@@ -444,19 +444,19 @@ let closure_21 = react.memo(function PressableSetting(arg0) {
   }
   const obj3 = { label: title, subLabel: description, arrow: withArrow, variant, icon: tmp11Result, onPress, disabled: true === isDisabled, trailing: tmp13, start, end };
   tmp11Result = null;
-  const TableRow = tmp(7041).TableRow;
-  const tmp10 = clientStatuses;
+  const TableRow = tmp(7379).TableRow;
+  const tmp10 = closure_15;
   const tmp9 = authStore3;
   if (null != IconComponent) {
     const obj4 = { IconComponent, variant };
-    tmp11Result = tmp11(tmp(7041).TableRow.Icon, obj4);
+    tmp11Result = tmp11(tmp(7379).TableRow.Icon, obj4);
   }
   tmp13 = undefined;
   if (null != trailing) {
     let tmp11Result2 = trailing;
     if (typeof trailing === "string") {
       const obj5 = { text: trailing };
-      tmp11Result2 = tmp11(tmp(7041).TableRow.TrailingText, obj5);
+      tmp11Result2 = tmp11(tmp(7379).TableRow.TrailingText, obj5);
     }
     tmp13 = tmp11Result2;
   }
@@ -507,11 +507,11 @@ let closure_23 = react.memo(function ToggleSetting(arg0) {
   tmp9 = null;
   if (null != IconComponent) {
     const obj4 = { IconComponent, variant };
-    tmp9 = gesture(tmp(7041).TableRow.Icon, obj4);
+    tmp9 = gesture(tmp(7379).TableRow.Icon, obj4);
   }
   if (typeof isDisabled === "object") {
     const obj6 = { subLabel: gesture(DisabledActionDescriptionWithLink, obj7), accessible: true, trailing: gesture(View, obj8) };
-    const TableRow = tmp(7041).TableRow;
+    const TableRow = tmp(7379).TableRow;
     const merged = Object.assign(obj3);
     obj7 = { disabledActionLabel: isDisabled.label, description };
     ({ accessibilityHint: obj5.accessibilityHint, onPress: obj5.onPress } = isDisabled);
@@ -521,14 +521,14 @@ let closure_23 = react.memo(function ToggleSetting(arg0) {
     tmp18 = gesture;
   } else {
     const obj10 = { disabled: isDisabled, onValueChange, value };
-    const TableSwitchRow = tmp(7432).TableSwitchRow;
+    const TableSwitchRow = tmp(7888).TableSwitchRow;
     const merged1 = Object.assign(obj3);
     tmp17 = gesture(TableSwitchRow, obj10);
     tmp18 = gesture;
   }
   let tmp18Result = tmp17;
   const tmp19 = authStore3;
-  const tmp20 = clientStatuses;
+  const tmp20 = closure_15;
   if (true === hasIcon) {
     const obj11 = { children: tmp17 };
     tmp18Result = tmp18(ForceSwitchIcons, obj11);
@@ -541,13 +541,15 @@ let closure_23 = react.memo(function ToggleSetting(arg0) {
   children[1] = highlightSettingItem;
   return tmp19(tmp20, { children });
 });
-let closure_25 = react.memo(function RadioSetting(arg0) {
+let closure_25 = react.memo(function RadioSetting(hideTitle) {
   let onValueChange;
   let setting;
+  let tmp14;
   let useOptions;
   let useTitle;
   let useValue;
-  ({ setting, useTitle, useValue, useOptions, onValueChange } = arg0);
+  hideTitle = hideTitle.hideTitle;
+  ({ setting, useTitle, useValue, useOptions, onValueChange } = hideTitle);
   const tmp = closure_17();
   let obj = useHighlightSettingItem;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
@@ -562,11 +564,20 @@ let closure_25 = react.memo(function RadioSetting(arg0) {
     let _HermesInternal = HermesInternal;
     combined = "" + value;
   }
+  let tmp13;
+  const someResult = options.some((icon) => null != icon.icon);
+  const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
+  const tmp10 = authStore3;
+  const tmp11 = closure_15;
+  if (!hideTitle) {
+    tmp13 = title;
+  }
   const obj3 = {
-    title,
+    title: tmp13,
+    accessibilityLabel: tmp14,
     defaultValue: combined,
     onChange: onValueChange,
-    hasIcons: options.some((icon) => null != icon.icon),
+    hasIcons: someResult,
     children: options.map((label) => {
       let combined;
       if (typeof label.value === "number") {
@@ -579,11 +590,11 @@ let closure_25 = react.memo(function RadioSetting(arg0) {
       return closure_1_14(TableRadioRow.TableRadioRow, obj, label.value);
     })
   };
-  const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
+  tmp14 = undefined;
+  if (hideTitle) {
+    tmp14 = title;
+  }
   const children = [gesture(TableRadioGroup, obj3, combined), ];
-  const tmp10 = authStore3;
-  const tmp11 = clientStatuses;
-  const tmp12 = gesture;
   if (highlightSettingItem) {
     const obj4 = { start: true, end: true, style: tmp.radioSettingHighlight };
     highlightSettingItem = tmp12(SettingListItemHighlightDefault, obj4);
@@ -608,7 +619,7 @@ let closure_26 = react.memo(function StaticSetting(arg0) {
   let trailing;
   const tmp = trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(16938);
+  let obj = trailing(17101);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let obj2 = trailing(504);
   const items = [LocaleStore];
@@ -637,7 +648,7 @@ let closure_26 = react.memo(function StaticSetting(arg0) {
   }, items1);
   const obj3 = { label: title, subLabel: description, onPress: tmp13, variant, disabled: isDisabled, icon: tmp12Result, trailing: tmp12Result2, start, end };
   tmp13 = null;
-  const TableRow = tmp(7041).TableRow;
+  const TableRow = tmp(7379).TableRow;
   const tmp10 = closure_16;
   const tmp11 = closure_15;
   if (null != trailing) {
@@ -646,12 +657,12 @@ let closure_26 = react.memo(function StaticSetting(arg0) {
   tmp12Result = null;
   if (null != IconComponent) {
     const obj4 = { IconComponent, variant };
-    tmp12Result = tmp12(tmp(7041).TableRow.Icon, obj4);
+    tmp12Result = tmp12(tmp(7379).TableRow.Icon, obj4);
   }
   tmp12Result2 = null;
   if (null != trailing) {
     const obj5 = { text: trailing };
-    tmp12Result2 = tmp12(tmp(7041).TableRow.TrailingText, obj5);
+    tmp12Result2 = tmp12(tmp(7379).TableRow.TrailingText, obj5);
   }
   const children = [closure_14(TableRow, obj3), ];
   if (highlightSettingItem) {
@@ -689,7 +700,7 @@ let closure_27 = react.memo(function VolumeSliderSetting(arg0) {
   const children = [gesture(TableRow, obj3), ];
   const tmp10 = gesture;
   const tmp8 = authStore3;
-  const tmp9 = clientStatuses;
+  const tmp9 = closure_15;
   if (highlightSettingItem) {
     const obj5 = { start, end };
     highlightSettingItem = tmp10(SettingListItemHighlightDefault, obj5);

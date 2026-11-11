@@ -1,34 +1,34 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 17485
+// Function ID: 17486
 // Name: BountiesModalContent
-// Dependencies: [5, 32, 19, 17, 7925, 6839, 17270, 1072, 1083, 21, 1493, 1627, 5142, 575, 1377, 14772, 5380, 504, 9647, 17279, 14953, 17284, 9787, 17287, 17282, 7943, 6846, 7952, 6844, 14946, 17266, 17290, 14961, 17323, 17321, 7358, 17314, 1652, 5372, 5375, 14923, 1108, 17280, 17320, 7922, 5201, 2]
+// Dependencies: [5, 32, 19, 17, 8741, 5275, 17433, 1072, 1083, 21, 1493, 1627, 5243, 575, 1377, 9987, 5493, 504, 10370, 17442, 15145, 17447, 10074, 17450, 17445, 8759, 5282, 8768, 5280, 15138, 17429, 17453, 15153, 17486, 17484, 7351, 17477, 1652, 5485, 5488, 10103, 1108, 17443, 17483, 8738, 5314, 2]
 // Exports: default
 
-// Module 17322 (BountiesModalContent)
+// Module 17485 (BountiesModalContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import timingPresets from "timingPresets" /* 5375 */;
-import QuestContent from "QuestContent" /* 6844 */;
-import AdCreativeType from "AdCreativeType" /* 6846 */;
-import QuestDataUtils from "QuestDataUtils" /* 7922 */;
-import AnalyticsActions from "AnalyticsActions" /* 7943 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7952 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14923 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 14946 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14961 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17266 */;
+import QuestContent from "QuestContent" /* 5280 */;
+import AdCreativeType from "AdCreativeType" /* 5282 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import timingPresets from "timingPresets" /* 5488 */;
+import QuestDataUtils from "QuestDataUtils" /* 8738 */;
+import AnalyticsActions from "AnalyticsActions" /* 8759 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8768 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 10103 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 15138 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 15153 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17429 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7925 */;
-import QuestConstants from "QuestConstants" /* 6839 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 17270 */;
+import BountyStore from "BountyStore" /* 8741 */;
+import QuestConstants from "QuestConstants" /* 5275 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 17433 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5, set;
@@ -391,7 +391,7 @@ function BountiesModalContentInner(bounty) {
         }
       };
       const QuestContentImpressionTrackerNative = QuestContentImpressionTracker.QuestContentImpressionTrackerNative;
-      return clientStatuses(QuestContentImpressionTrackerNative, obj);
+      return closure_15(QuestContentImpressionTrackerNative, obj);
     }
   };
   BountyVideo = bounty(dismissVideoEndAppStoreOverlay[31]).BountyVideo;
@@ -595,7 +595,7 @@ export default function BountiesModalContent(bountyId) {
       overrideVisibility: true,
       children() {
           const obj = { bounty, sourceQuestContent };
-          return clientStatuses(BountiesModalContentWithAppStore, obj);
+          return closure_15(BountiesModalContentWithAppStore, obj);
         }
     };
     BillableAdPlacementImpressionTrackerNative = bountyId(bounty[32]).BillableAdPlacementImpressionTrackerNative;

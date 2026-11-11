@@ -1,21 +1,21 @@
-// Module ID: 19468
-// Function ID: 19469
+// Module ID: 19657
+// Function ID: 19658
 // Name: LaunchPadWrapper
-// Dependencies: [32, 19, 17, 11690, 1072, 21, 5142, 575, 12239, 1108, 5316, 19469, 8921, 1252, 19466, 5378, 6156, 7025, 1652, 19470, 6152, 1113, 6123, 19472, 2]
+// Dependencies: [32, 19, 17, 12313, 1072, 21, 5243, 575, 13031, 1108, 5429, 19658, 11192, 1252, 19655, 5491, 6269, 7352, 1652, 19659, 6265, 1113, 6236, 19661, 2]
 // Exports: default
 
-// Module 19468 (LaunchPadWrapper)
+// Module 19657 (LaunchPadWrapper)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HapticUtils from "HapticUtils" /* 5378 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11690 */;
-import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 19466 */;
+import HapticUtils from "HapticUtils" /* 5491 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 12313 */;
+import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 19655 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -109,7 +109,7 @@ export default function LaunchPadWrapper(launchPadType) {
         const tmp5 = closure_3;
         if (tmp5) {
           const tmp2Result = HapticUtils;
-          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5378).HapticFeedbackTypes.IMPACT_LIGHT);
+          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5491).HapticFeedbackTypes.IMPACT_LIGHT);
         }
       }
     }

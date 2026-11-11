@@ -1,19 +1,19 @@
-// Module ID: 15465
-// Function ID: 15466
+// Module ID: 12022
+// Function ID: 12023
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 5142, 575, 5139, 5753, 1113, 1187, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5240, 5866, 1113, 1187, 2]
 // Exports: default
 
-// Module 15465 (InAppReportsUserPreview)
+// Module 12022 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import ColorUtils from "ColorUtils" /* 5139 */;
-import Text_Text from "Text/Text" /* 5753 */;
+import ColorUtils from "ColorUtils" /* 5240 */;
+import Text_Text from "Text/Text" /* 5866 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -47,14 +47,14 @@ export default function UserPreview(user) {
   items = [_false(Text, obj3), ];
   const obj4 = { style: items1, children: items2 };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj5 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
+  const obj5 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
   const Avatar = native.Avatar;
   items2 = [_false(Avatar, obj5), ];
   let tmp7Result = null != user.globalName;
   const obj6 = { style: tmp.userProfileInfo, children: items3 };
   if (tmp7Result) {
     const obj7 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-    tmp7Result = tmp7(tmp2(5753).Text, obj7);
+    tmp7Result = tmp7(tmp2(5866).Text, obj7);
   }
   items3 = [tmp7Result, ];
   const obj8 = { color: "text-default", variant: "body-sm/normal", children: user.username };

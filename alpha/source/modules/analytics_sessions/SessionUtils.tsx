@@ -1,10 +1,10 @@
-// Module ID: 7730
-// Function ID: 7731
+// Module ID: 8608
+// Function ID: 8609
 // Name: SessionUtils
 // Dependencies: [1089, 2]
 // Exports: isSessionExpired, timestampOrZero
 
-// Module 7730 (SessionUtils)
+// Module 8608 (SessionUtils)
 import DurationsDefault from "Durations" /* 1089 */;
 import size from "module_2" /* 2 */;
 

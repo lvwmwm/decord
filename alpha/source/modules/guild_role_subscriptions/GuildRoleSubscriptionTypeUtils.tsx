@@ -1,15 +1,15 @@
-// Module ID: 17568
-// Function ID: 17569
+// Module ID: 17733
+// Function ID: 17734
 // Name: GuildRoleSubscriptionTypeUtils
-// Dependencies: [17544, 1387, 1083, 1113, 7480, 2]
+// Dependencies: [17709, 1387, 1083, 1113, 7190, 2]
 // Exports: formatMonthlyPriceLabel, formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 17568 (GuildRoleSubscriptionTypeUtils)
+// Module 17733 (GuildRoleSubscriptionTypeUtils)
 import Constants from "Constants" /* 1083 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import PriceUtils from "PriceUtils" /* 7480 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17544 */;
+import PriceUtils from "PriceUtils" /* 7190 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17709 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;

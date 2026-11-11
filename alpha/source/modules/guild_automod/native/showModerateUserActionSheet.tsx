@@ -1,17 +1,17 @@
-// Module ID: 13505
-// Function ID: 13506
+// Module ID: 14030
+// Function ID: 14031
 // Name: showModerateUserActionSheet
-// Dependencies: [5376, 13506, 2118, 2]
+// Dependencies: [5489, 14031, 2118, 2]
 // Exports: default
 
-// Module 13505 (showModerateUserActionSheet)
+// Module 14030 (showModerateUserActionSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/native/showModerateUserActionSheet.tsx");
 
 export default function showModerateUserActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(13506, dependencyMap.paths), "ModerateUserActionSheet", arg0);
+  obj.openLazy(asyncRequire(14031, dependencyMap.paths), "ModerateUserActionSheet", arg0);
 };

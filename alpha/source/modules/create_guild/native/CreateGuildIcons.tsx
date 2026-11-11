@@ -1,23 +1,23 @@
-// Module ID: 14545
-// Function ID: 14546
+// Module ID: 14919
+// Function ID: 14920
 // Name: CreateGuildIcons
-// Dependencies: [14134, 14138, 14136, 14137, 14139, 14140, 14135, 14546, 14549, 14553, 14557, 14561, 14565, 14569, 2]
+// Dependencies: [14614, 14618, 14616, 14617, 14619, 14620, 14615, 14920, 14923, 14927, 14931, 14935, 14939, 14943, 2]
 
-// Module 14545 (CreateGuildIcons)
-import AssetRegistryDefault from "AssetRegistry" /* 14134 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14135 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14136 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14137 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14138 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14139 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14140 */;
-import PencilIllocon from "PencilIllocon" /* 14546 */;
-import ControllerIllocon from "ControllerIllocon" /* 14549 */;
-import HeartIllocon from "HeartIllocon" /* 14553 */;
-import AppleIllocon from "AppleIllocon" /* 14557 */;
-import BookIllocon from "BookIllocon" /* 14561 */;
-import PaintIllocon from "PaintIllocon" /* 14565 */;
-import LeafIllocon from "LeafIllocon" /* 14569 */;
+// Module 14919 (CreateGuildIcons)
+import AssetRegistryDefault from "AssetRegistry" /* 14614 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14615 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14616 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14617 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14618 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14619 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 14620 */;
+import PencilIllocon from "PencilIllocon" /* 14920 */;
+import ControllerIllocon from "ControllerIllocon" /* 14923 */;
+import HeartIllocon from "HeartIllocon" /* 14927 */;
+import AppleIllocon from "AppleIllocon" /* 14931 */;
+import BookIllocon from "BookIllocon" /* 14935 */;
+import PaintIllocon from "PaintIllocon" /* 14939 */;
+import LeafIllocon from "LeafIllocon" /* 14943 */;
 import size from "module_2" /* 2 */;
 
 const obj = { CREATE: AssetRegistryDefault, GAMING: AssetRegistryDefault5, FRIENDS: AssetRegistryDefault3, STUDY: AssetRegistryDefault4, CLUBS: AssetRegistryDefault6, CREATORS: AssetRegistryDefault7, LOCAL_COMMUNITY: AssetRegistryDefault2, SCHOOL_CLUB: AssetRegistryDefault6 };

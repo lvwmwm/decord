@@ -1,12 +1,12 @@
-// Module ID: 7589
-// Function ID: 7590
+// Module ID: 7160
+// Function ID: 7161
 // Name: useGuildOnboardingAvailable
-// Dependencies: [5047, 1072, 504, 2]
+// Dependencies: [5148, 1072, 504, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 7589 (useGuildOnboardingAvailable)
+// Module 7160 (useGuildOnboardingAvailable)
 import Constants from "Constants" /* 1072 */;
-import ImpersonateStore from "ImpersonateStore" /* 5047 */;
+import ImpersonateStore from "ImpersonateStore" /* 5148 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

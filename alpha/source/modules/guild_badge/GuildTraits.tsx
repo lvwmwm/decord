@@ -1,11 +1,11 @@
-// Module ID: 9391
-// Function ID: 9392
+// Module ID: 10325
+// Function ID: 10326
 // Name: GuildTraits
-// Dependencies: [1072, 5005, 2]
+// Dependencies: [1072, 5106, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 9391 (GuildTraits)
-import GuildRecordUtils from "GuildRecordUtils" /* 5005 */;
+// Module 10325 (GuildTraits)
+import GuildRecordUtils from "GuildRecordUtils" /* 5106 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

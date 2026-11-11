@@ -1,14 +1,14 @@
-// Module ID: 11151
-// Function ID: 11152
+// Module ID: 10952
+// Function ID: 10953
 // Name: RestrictedScheduleNotificationUtils
-// Dependencies: [12, 2664, 1113, 11152, 2]
+// Dependencies: [12, 2685, 1113, 10953, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 11151 (RestrictedScheduleNotificationUtils)
+// Module 10952 (RestrictedScheduleNotificationUtils)
 import _modDef12 from "module_12" /* 12 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef2664 from "module_2664" /* 2664 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11152 */;
+import _modDef2685 from "module_2685" /* 2685 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10953 */;
 import size from "module_2" /* 2 */;
 
 let _require, c0, c3, closure_5, dependencyMap, importDefault, set;
@@ -48,7 +48,7 @@ function isOnlyDayLoss(label, label2) {
 }
 let obj = { Created: "created", Enabled: "enabled", Disabled: "disabled", Updated: "updated", Removed: "removed", Multiple: "multiple" };
 let map = new Map();
-let obj2 = { [Created]: _modDef2664["5V7eBH"], [Enabled]: _modDef2664.iefrVg, [Disabled]: _modDef2664["k+s9cM"], [Updated]: _modDef2664.Nm6hZV, [Multiple]: _modDef2664.Nm6hZV, [Removed]: _modDef2664.jR6uOs };
+let obj2 = { [Created]: _modDef2685["5V7eBH"], [Enabled]: _modDef2685.iefrVg, [Disabled]: _modDef2685["k+s9cM"], [Updated]: _modDef2685.Nm6hZV, [Multiple]: _modDef2685.Nm6hZV, [Removed]: _modDef2685.jR6uOs };
 ({ Created, Enabled, Disabled, Updated, Multiple, Removed } = obj);
 let result = size.fileFinishedImporting("modules/parent_tools/RestrictedScheduleNotificationUtils.tsx");
 
@@ -233,7 +233,7 @@ export function getRestrictedScheduleNotificationSubtitle(rule) {
   }
   if (result == null) {
     const intl = intl2.intl;
-    result = intl.string(_modDef2664["8OlpoY"]);
+    result = intl.string(_modDef2685["8OlpoY"]);
   }
   return result;
 }

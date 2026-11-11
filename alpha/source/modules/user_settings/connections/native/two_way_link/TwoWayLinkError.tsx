@@ -1,22 +1,22 @@
-// Module ID: 14894
-// Function ID: 14895
+// Module ID: 7421
+// Function ID: 7422
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 5142, 9826, 5844, 14895, 5753, 7358, 6161, 5760, 1113, 2]
+// Dependencies: [19, 17, 21, 5243, 7378, 5957, 7422, 5866, 7351, 6274, 5873, 1113, 2]
 // Exports: TwoWayLinkError
 
-// Module 14894 (TwoWayLinkError)
+// Module 7421 (TwoWayLinkError)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import components_Button_Button from "components/Button/Button" /* 5760 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import Stack_Stack from "Stack/Stack" /* 6161 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7358 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9826 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14895 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import components_Button_Button from "components/Button/Button" /* 5873 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import Stack_Stack from "Stack/Stack" /* 6274 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7351 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 7378 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7422 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

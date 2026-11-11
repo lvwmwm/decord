@@ -1,20 +1,20 @@
-// Module ID: 18323
-// Function ID: 18324
+// Module ID: 18494
+// Function ID: 18495
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 17824, 8507, 21, 18324, 1113, 2992, 17825, 11694, 17827, 5723, 18325, 18329, 2]
+// Dependencies: [19, 17990, 9136, 21, 18495, 1113, 3013, 17991, 12317, 17993, 5836, 18496, 18500, 2]
 
-// Module 18323 (RedesignSettingsNotificationScreen)
+// Module 18494 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef2992 from "module_2992" /* 2992 */;
-import useMountEffectDefault from "useMountEffect" /* 5723 */;
-import SettingsConstants from "SettingsConstants" /* 8507 */;
-import SettingBuilders from "SettingBuilders" /* 11694 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17824 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17825 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17827 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18324 */;
-import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18329 */;
+import _modDef3013 from "module_3013" /* 3013 */;
+import useMountEffectDefault from "useMountEffect" /* 5836 */;
+import SettingsConstants from "SettingsConstants" /* 9136 */;
+import SettingBuilders from "SettingBuilders" /* 12317 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17990 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17991 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17993 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18495 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18500 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ function getNotificationSettings() {
   const items = [, , , ];
   const obj = MobileNotifSettingsRouteBuilders;
   items[0] = obj.buildOverviewCategoriesSection();
-  const obj2 = { label: intl.string(_modDef2992.nvBHcD), settings: items1 };
+  const obj2 = { label: intl.string(_modDef3013.nvBHcD), settings: items1 };
   intl = intl3.intl;
   items1 = [, , , , , , ];
   ({ REDESIGN_IN_APP_NOTIFICATIONS: arr2[0], REDESIGN_IN_APP_MESSAGE_SOUNDS: arr2[1], REDESIGN_ANDROID_MESSAGE_NOTIFICATIONS: arr2[2], REDESIGN_IOS_NATIVE_PHONE_INTEGRATION: arr2[3], REDESIGN_ANDROID_NOTIFICATION_LIGHTS: arr2[4], REDESIGN_ANDROID_NOTIFICATION_VIBRATIONS: arr2[5], REDESIGN_ANDROID_NOTIFICATION_SOUNDS: arr2[6] } = MobileUserSettings);
@@ -35,10 +35,10 @@ function getNotificationSettings() {
   const obj3 = { settings: items2 };
   items2 = [MobileUserSettings.REDESIGN_EMAIL_NOTIFICATIONS];
   items[2] = obj3;
-  const obj4 = { label: intl2.string(_modDef2992["1S8d9h"]), settings: items3 };
+  const obj4 = { label: intl2.string(_modDef3013["1S8d9h"]), settings: items3 };
   intl2 = intl3.intl;
-  items3 = [, , , , ];
-  ({ REACTION_NOTIFICATIONS: arr4[0], HIGHLIGHT_NOTIFICATIONS: arr4[1], FRIEND_ANNIVERSARY_NOTIFICATIONS: arr4[2], UPCOMING_SERVER_EVENT_NOTIFICATIONS: arr4[3], SUMMARY_REMINDER_NOTIFICATIONS: arr4[4] } = MobileUserSettings);
+  items3 = [, , , ];
+  ({ HIGHLIGHT_NOTIFICATIONS: arr4[0], FRIEND_ANNIVERSARY_NOTIFICATIONS: arr4[1], UPCOMING_SERVER_EVENT_NOTIFICATIONS: arr4[2], SUMMARY_REMINDER_NOTIFICATIONS: arr4[3] } = MobileUserSettings);
   items[3] = obj4;
   return items;
 }

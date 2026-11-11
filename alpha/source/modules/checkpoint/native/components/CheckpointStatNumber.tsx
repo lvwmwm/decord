@@ -1,16 +1,16 @@
-// Module ID: 13900
-// Function ID: 13901
+// Module ID: 14377
+// Function ID: 14378
 // Name: CheckpointStatNumber
-// Dependencies: [19, 17, 6201, 21, 5142, 5283, 13897, 2]
+// Dependencies: [19, 17, 6314, 21, 5243, 5396, 14164, 2]
 // Exports: default, getCheckpointStatNumberWidth, isCheckpointStatNumberShrunk
 
-// Module 13900 (CheckpointStatNumber)
+// Module 14377 (CheckpointStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointNumbersRive2 from "CheckpointNumbersRive" /* 5283 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import CheckpointNumbersRive2 from "CheckpointNumbersRive" /* 5396 */;
+import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 function getTextPixels(value) {
@@ -31,7 +31,7 @@ const View = react_native.View;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const jsx = Fragment.jsx;
 let c7 = 28.7;
-let closure_8 = { 1: 3, 2: 4, 3: 4, 5: 4, 7: 4, ".": 2, ",": 2, ":": 2, A: 4, M: 6, P: 4, a: 4, m: 6, p: 4 };
+let closure_8 = { 1: 3, 2: 4, 3: 4, 5: 4, 7: 4, ".": 2, ",": 2, "\u00a0": 2, "\u202f": 2, ":": 2, A: 4, M: 6, P: 4, a: 4, m: 6, p: 4 };
 let closure_9 = createStyles.createStyles({ rive: { position: "absolute", top: 0, left: 0 } });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointStatNumber.tsx");
@@ -82,18 +82,18 @@ export default function CheckpointStatNumber(value) {
   const CheckpointNumbersRive = CheckpointNumbersRive2.CheckpointNumbersRive;
   return <View style={memo}>{null}</View>;
 };
-export function isCheckpointStatNumberShrunk(value) {
-  const tmp = getTextPixels(value);
+export function isCheckpointStatNumberShrunk(result) {
+  const tmp = getTextPixels(result);
   let num = 1;
   if (tmp > c7) {
     num = c7 / tmp;
   }
   return num < 1;
 }
-export function getCheckpointStatNumberWidth(end, arg1) {
-  let num = arg1;
-  if (arg1 === undefined) {
+export function getCheckpointStatNumberWidth(c1, size) {
+  let num = size;
+  if (size === undefined) {
     num = 40;
   }
-  return Math.min(getTextPixels(end), c7) * num * 0.08675000000000001;
+  return Math.min(getTextPixels(c1), c7) * num * 0.08675000000000001;
 }

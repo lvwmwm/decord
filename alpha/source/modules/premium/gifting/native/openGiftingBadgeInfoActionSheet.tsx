@@ -1,17 +1,17 @@
-// Module ID: 10743
-// Function ID: 10744
+// Module ID: 11615
+// Function ID: 11616
 // Name: openGiftingBadgeInfoActionSheet
-// Dependencies: [5376, 10744, 2118, 2]
+// Dependencies: [5489, 11616, 2118, 2]
 // Exports: default
 
-// Module 10743 (openGiftingBadgeInfoActionSheet)
+// Module 11615 (openGiftingBadgeInfoActionSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/native/openGiftingBadgeInfoActionSheet.tsx");
 
 export default function openGiftingBadgeInfoActionSheet() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(10744, dependencyMap.paths), "GiftingBadgeInfoActionSheet");
+  obj.openLazy(asyncRequire(11616, dependencyMap.paths), "GiftingBadgeInfoActionSheet");
 };

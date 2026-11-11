@@ -1,16 +1,16 @@
-// Module ID: 19817
-// Function ID: 19818
+// Module ID: 20009
+// Function ID: 20010
 // Name: FriendInviteUtils
-// Dependencies: [4991, 5084, 9031, 5839, 1113, 572, 11658, 2]
+// Dependencies: [5092, 5185, 7594, 5952, 1113, 572, 12491, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 19817 (FriendInviteUtils)
+// Module 20009 (FriendInviteUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9031 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7594 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/friend_invites/native/FriendInviteUtils.tsx");
@@ -30,7 +30,7 @@ export function revokeAllFriendInvites() {
   });
 }
 export function acceptFriendInvite(invite, context) {
-  const f119625 = () => closure_1_1(closure_1_2[6])();
+  const f120870 = () => closure_1_1(closure_1_2[6])();
   let tmp = null == invite.channel && null == invite.guild && null != invite.inviter;
   if (tmp) {
     let dMFromUserId = null;
@@ -41,7 +41,7 @@ export function acceptFriendInvite(invite, context) {
       const obj3 = InstantInviteActionCreatorsDefault;
       obj3.transitionToInvite(invite, { forceTransition: true });
       const obj4 = DispatcherDefault;
-      obj4.wait(f119625);
+      obj4.wait(f120870);
     } else {
       let obj = InstantInviteActionCreatorsDefault;
       const obj2 = {
@@ -61,7 +61,7 @@ export function acceptFriendInvite(invite, context) {
               const obj = { text: formatToPlainString(st2dcs, { username }), variant: "success" };
               open("FRIEND_INVITE_ACCEPT_CONFIRMATION", obj);
               const tmpResult = DispatcherDefault;
-              tmpResult.wait(f119625);
+              tmpResult.wait(f120870);
             }
       };
       const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);

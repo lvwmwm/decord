@@ -82,11 +82,11 @@ class OverridePremiumTypeStore extends PersistedStore {
   getPremiumTypeOverride() {
     return closure_5.premiumTypeOverride;
   }
-  hasPremiumTypeOverride(id) {
-    let isStaffEnvResult = closure_5.premiumTypeOverride !== UNSELECTED_PREMIUM_TYPE_OVERRIDE && null != id && id.id === AuthenticationStore.getId();
+  hasPremiumTypeOverride(currentUser) {
+    let isStaffEnvResult = closure_5.premiumTypeOverride !== UNSELECTED_PREMIUM_TYPE_OVERRIDE && null != currentUser && currentUser.id === AuthenticationStore.getId();
     if (isStaffEnvResult) {
       const obj = UserStoreUtils;
-      isStaffEnvResult = obj.isStaffEnv(id);
+      isStaffEnvResult = obj.isStaffEnv(currentUser);
     }
     return isStaffEnvResult;
   }

@@ -1,22 +1,22 @@
-// Module ID: 18941
-// Function ID: 18942
+// Module ID: 18883
+// Function ID: 18884
 // Name: WaterwheelsCard
-// Dependencies: [19, 17, 14233, 1072, 8013, 21, 5142, 575, 504, 18942, 5844, 5753, 5760, 9013, 7027, 1113, 7441, 2]
+// Dependencies: [19, 17, 14716, 1072, 6839, 21, 5243, 575, 504, 18884, 5957, 5866, 5873, 10158, 7657, 1113, 7897, 2]
 // Exports: WaterwheelsCard, getWaterwheelsCardEligible, useWaterwheelsCardEligible
 
-// Module 18941 (WaterwheelsCard)
+// Module 18883 (WaterwheelsCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8013 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9013 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18942 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6839 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10158 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18884 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14233 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14716 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,14 +80,14 @@ function WaterwheelsCardContent(card) {
       if (null != layout.header.iconUrl) {
         let obj6 = { style: tmp.icon, source: obj7 };
         obj7 = { uri: layout.header.iconUrl };
-        tmp10 = closure_9(onAction(5844), obj6);
+        tmp10 = closure_9(onAction(5957), obj6);
       }
       items = [tmp10, ];
       const obj8 = { children: items1 };
       const obj9 = { variant: "heading-xs/semibold", children: layout.header.title };
-      items1 = [closure_9(tmp2(5753).Heading, obj9), ];
+      items1 = [closure_9(tmp2(5866).Heading, obj9), ];
       const obj10 = { variant: "body-sm/normal", children: layout.header.subtitle };
-      items1[1] = closure_9(tmp2(5753).Text, obj10);
+      items1[1] = closure_9(tmp2(5866).Text, obj10);
       items[1] = closure_10(closure_5, obj8);
       items2 = [tmp8(closure_5, obj5), ];
       const obj11 = {
@@ -130,16 +130,16 @@ function WaterwheelsCardContent(card) {
       first = card.actions[0];
       const obj12 = { style: tmp.card, children: items4 };
       const obj13 = { variant: "heading-sm/semibold", children: layout.title };
-      items4 = [closure_9(tmp2(5753).Heading, obj13), , , ];
+      items4 = [closure_9(tmp2(5866).Heading, obj13), , , ];
       const obj14 = { variant: "body-md/normal", children: layout.body };
-      items4[1] = closure_9(tmp2(5753).Text, obj14);
+      items4[1] = closure_9(tmp2(5866).Text, obj14);
       let tmp21Result = null;
       const tmp19 = closure_10;
       const tmp20 = closure_5;
       if (null != layout.imageUrl) {
         const obj15 = { style: tmp.media, source: obj16 };
         obj16 = { uri: layout.imageUrl };
-        tmp21Result = tmp21(onAction(5844), obj15);
+        tmp21Result = tmp21(onAction(5957), obj15);
       }
       items4[2] = tmp21Result;
       let tmp21Result2 = null;
@@ -152,7 +152,7 @@ function WaterwheelsCardContent(card) {
                       onAction(first, card);
                     }
           };
-          tmp21Result2 = tmp21(tmp2(5760).Button, obj17);
+          tmp21Result2 = tmp21(tmp2(5873).Button, obj17);
         }
       }
       items4[3] = tmp21Result2;

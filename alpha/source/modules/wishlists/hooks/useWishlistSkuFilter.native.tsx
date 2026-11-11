@@ -1,12 +1,12 @@
-// Module ID: 10795
-// Function ID: 10796
+// Module ID: 11667
+// Function ID: 11668
 // Name: useWishlistSkuFilter
-// Dependencies: [19, 7472, 1072, 9580, 7476, 2]
+// Dependencies: [19, 7182, 1072, 9416, 7186, 2]
 // Exports: useWishlistSkuFilter
 
-// Module 10795 (useWishlistSkuFilter)
+// Module 11667 (useWishlistSkuFilter)
 import Constants from "Constants" /* 1072 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7472 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7182 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

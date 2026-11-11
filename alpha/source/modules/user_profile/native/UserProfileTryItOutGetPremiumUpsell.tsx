@@ -1,15 +1,15 @@
-// Module ID: 16896
-// Function ID: 16897
+// Module ID: 17059
+// Function ID: 17060
 // Name: UserProfileTryItOutGetPremiumUpsell
-// Dependencies: [19, 1072, 21, 7705, 7390, 10033, 10034, 16893, 1113, 2]
+// Dependencies: [19, 1072, 21, 9540, 7852, 9513, 10891, 17056, 1113, 2]
 // Exports: default
 
-// Module 16896 (UserProfileTryItOutGetPremiumUpsell)
+// Module 17059 (UserProfileTryItOutGetPremiumUpsell)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7390 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10033 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10034 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16893 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 17056 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -26,8 +26,8 @@ export default function UserProfileTryItOutGetPremiumUpsell(onLayout) {
   let analyticsLocations;
   let tmp = analyticsLocations;
   onLayout = onLayout.onLayout;
-  let obj = analyticsLocations(7705);
-  let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
+  let obj = analyticsLocations(9540);
+  let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const items = [analyticsLocations];
   const callback = react.useCallback(() => {

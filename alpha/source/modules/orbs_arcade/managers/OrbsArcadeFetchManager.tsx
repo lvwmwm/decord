@@ -1,15 +1,15 @@
-// Module ID: 20463
-// Function ID: 20464
+// Module ID: 20658
+// Function ID: 20659
 // Name: OrbsArcadeFetchManager
-// Dependencies: [17368, 1089, 7353, 17374, 17375, 17369, 2]
+// Dependencies: [17534, 1089, 7816, 17540, 17541, 17535, 2]
 
-// Module 20463 (OrbsArcadeFetchManager)
+// Module 20658 (OrbsArcadeFetchManager)
 import DurationsDefault from "Durations" /* 1089 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17369 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17374 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17375 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17368 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17535 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17540 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17541 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17534 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 let game, gameStateForGame;

@@ -1,16 +1,16 @@
-// Module ID: 15491
-// Function ID: 15492
+// Module ID: 15964
+// Function ID: 15965
 // Name: NUFTemplateV2
-// Dependencies: [19, 17, 21, 5142, 5753, 5760, 2]
+// Dependencies: [19, 17, 21, 5243, 5866, 5873, 2]
 // Exports: default
 
-// Module 15491 (NUFTemplateV2)
+// Module 15964 (NUFTemplateV2)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import components_Button_Button from "components/Button/Button" /* 5760 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import components_Button_Button from "components/Button/Button" /* 5873 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c3;

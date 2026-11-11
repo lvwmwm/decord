@@ -1,10 +1,10 @@
-// Module ID: 15054
-// Function ID: 15055
+// Module ID: 15111
+// Function ID: 15112
 // Name: EmbedIFrameConfig
 // Dependencies: [1072, 1378, 2]
 // Exports: formatProviderSrc
 
-// Module 15054 (EmbedIFrameConfig)
+// Module 15111 (EmbedIFrameConfig)
 import Constants from "Constants" /* 1072 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import size from "module_2" /* 2 */;

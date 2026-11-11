@@ -1,30 +1,30 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 17303
+// Function ID: 17304
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [19, 17, 7795, 21, 8720, 13608, 5842, 15793, 8722, 8089, 5866, 13610, 5142, 575, 5753, 13607, 1113, 2664, 8445, 8447, 8045, 8047, 13465, 5760, 6801, 7067, 11636, 2]
+// Dependencies: [19, 17, 8674, 21, 8004, 14125, 5955, 15898, 8006, 8186, 5979, 11757, 5243, 575, 5866, 14124, 1113, 2685, 9551, 9553, 8142, 8144, 13979, 5873, 6785, 7427, 12434, 2]
 // Exports: default
 
-// Module 17140 (FamilyCenterModalDataTooltip)
+// Module 17303 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2664 from "module_2664" /* 2664 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FriendsIcon from "FriendsIcon" /* 5842 */;
-import ClockIcon from "ClockIcon" /* 5866 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7795 */;
-import CreditCardIcon from "CreditCardIcon" /* 8089 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8445 */;
-import ChatIcon from "ChatIcon" /* 8720 */;
-import ThreadIcon from "ThreadIcon" /* 8722 */;
-import Modal2 from "Modal" /* 11636 */;
-import PhoneIcon from "PhoneIcon" /* 13608 */;
-import GiftIcon from "GiftIcon" /* 13610 */;
-import ServerGridIcon from "ServerGridIcon" /* 15793 */;
+import _modDef2685 from "module_2685" /* 2685 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FriendsIcon from "FriendsIcon" /* 5955 */;
+import ClockIcon from "ClockIcon" /* 5979 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
+import ChatIcon from "ChatIcon" /* 8004 */;
+import ThreadIcon from "ThreadIcon" /* 8006 */;
+import CreditCardIcon from "CreditCardIcon" /* 8186 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8674 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9551 */;
+import GiftIcon from "GiftIcon" /* 11757 */;
+import Modal2 from "Modal" /* 12434 */;
+import PhoneIcon from "PhoneIcon" /* 14125 */;
+import ServerGridIcon from "ServerGridIcon" /* 15898 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -78,9 +78,9 @@ function FamilyCenterModalDataTooltipScreen() {
   const tmp2 = require("useAgeSpecificText");
   const useAgeSpecificText = tmp2.useAgeSpecificText;
   const intl = require("intl").intl;
-  const stringResult = intl.string(_modDef2664.n6LOrh);
+  const stringResult = intl.string(_modDef2685.n6LOrh);
   const intl2 = require("intl").intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2664.JNLpDZ));
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2685.JNLpDZ));
   _require = useIsInAdultAgeGroupDefault();
   obj = require("FamilyCenterUtils");
   const sortedActivityTypeConfigs = obj.getSortedActivityTypeConfigs();

@@ -1,20 +1,20 @@
-// Module ID: 14827
-// Function ID: 14828
+// Module ID: 15520
+// Function ID: 15521
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 4988, 21, 4975, 5142, 575, 5753, 1113, 7644, 10082, 2]
+// Dependencies: [32, 19, 17, 5089, 21, 5076, 5243, 575, 5866, 1113, 9494, 9501, 2]
 // Exports: ConversationCoachmark
 
-// Module 14827 (ConversationCoachmark)
+// Module 15520 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4975 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
-import Text_Text from "Text/Text" /* 5753 */;
+import dismissible_content from "dismissible_content" /* 5076 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import Text_Text from "Text/Text" /* 5866 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -49,7 +49,7 @@ export function ConversationCoachmark(arg0) {
   ({ children, isLast } = arg0);
   const tmp = closure_9();
   const ref = react.useRef(null);
-  let obj = first(7644);
+  let obj = first(9494);
   const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -73,7 +73,7 @@ export function ConversationCoachmark(arg0) {
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(10082);
+  const obj2 = first(9501);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;

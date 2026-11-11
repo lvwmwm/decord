@@ -1,20 +1,20 @@
-// Module ID: 18635
-// Function ID: 18636
+// Module ID: 18807
+// Function ID: 18808
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 1072, 4998, 5884, 21, 5142, 575, 18636, 6974, 5176, 1099, 14197, 1113, 8738, 1187, 2]
+// Dependencies: [19, 1072, 5099, 5997, 21, 5243, 575, 18808, 6869, 5289, 1099, 14680, 1113, 7372, 1187, 2]
 // Exports: default
 
-// Module 18635 (GuildMemberDashChannelRow)
+// Module 18807 (GuildMemberDashChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
-import ChannelConstants from "ChannelConstants" /* 4998 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5176 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5884 */;
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6974 */;
+import ChannelConstants from "ChannelConstants" /* 5099 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5289 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6869 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -43,7 +43,7 @@ export default function GuildMemberDashChannelRow(arg0) {
   let hasItem;
   let tmp = closure_8();
   const id = guild.id;
-  let obj = id(18636);
+  let obj = id(18808);
   let num = obj.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;
@@ -65,15 +65,15 @@ export default function GuildMemberDashChannelRow(arg0) {
     const obj = router_utils;
     obj.transitionTo(hasOwnProperty.CHANNEL(id, StaticChannelRoute.MEMBER_SAFETY));
   }, items1);
-  const ChannelModes = tmp2(14197).ChannelModes;
+  const ChannelModes = tmp2(14680).ChannelModes;
   const tmp7 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
-  hasItem(14197);
+  hasItem(14680);
   const intl = tmp2(1113).intl;
   ({ name: intl2.string(id(1113).t["9Oq93m"]), mode: tmp7 });
-  const BaseChannelName = tmp2(14197).BaseChannelName;
+  const BaseChannelName = tmp2(14680).BaseChannelName;
   intl2 = tmp2(1113).intl;
-  ({ mode: tmp7, IconComponent: id(8738).GroupIcon });
-  const BaseChannelIcon = tmp2(14197).BaseChannelIcon;
+  ({ mode: tmp7, IconComponent: id(7372).GroupIcon });
+  const BaseChannelIcon = tmp2(14680).BaseChannelIcon;
   let tmp8Result = null;
   if (num > 0) {
     const obj9 = { style: null, textStyle: null, value: num };

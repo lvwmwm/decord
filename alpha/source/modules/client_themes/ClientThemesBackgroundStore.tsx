@@ -1,25 +1,25 @@
-// Module ID: 5166
-// Function ID: 5167
+// Module ID: 5267
+// Function ID: 5268
 // Name: ClientThemesBackgroundStore
-// Dependencies: [1193, 1192, 1194, 1231, 4995, 4991, 1385, 1240, 5167, 1195, 5169, 5170, 4967, 5172, 4975, 5196, 2171, 5199, 5200, 504, 1239, 572, 2]
+// Dependencies: [1193, 1192, 1194, 1231, 5096, 5092, 1385, 1240, 5268, 1195, 5271, 5273, 5068, 5285, 5076, 5309, 2171, 5312, 5313, 504, 1239, 572, 2]
 
-// Module 5166 (ClientThemesBackgroundStore)
+// Module 5267 (ClientThemesBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import dismissible_content from "dismissible_content" /* 4975 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5167 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5172 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5200 */;
+import dismissible_content from "dismissible_content" /* 5076 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5285 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5313 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -67,36 +67,39 @@ function reset() {
 function handleUserStoreChange() {
   let flag;
   if (null != user) {
-    const obj = require("HexagonCampaignUtils");
-    const result = obj.isHexagonCampaignClientThemePreset(user.id);
-    let tmp5 = !result;
-    const tmp2 = require;
-    if (result) {
-      tmp5 = null == UserStore.getCurrentUser();
-    }
-    if (!tmp5) {
-      const tmp2Result = tmp2(5170);
-      tmp5 = !tmp2Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
-    }
-    if (!tmp5) {
-      user = undefined;
-      flag = true;
-    }
-    const obj3 = PremiumUtilsDefault;
-    const tmp13 = !obj3.canUseClientThemes(UserStore.getCurrentUser());
-    if (tmp13 === closure_15) {
-      return flag;
-    } else {
-      closure_15 = tmp13;
-      c17 = false;
+    const tmp = c17;
+    if (!tmp) {
+      const obj = require("HexagonCampaignUtils");
+      const result = obj.isHexagonCampaignClientThemePreset(user.id);
+      let tmp6 = !result;
+      const tmp3 = require;
+      if (result) {
+        tmp6 = null == UserStore.getCurrentUser();
+      }
+      if (!tmp6) {
+        const tmp3Result = tmp3(5273);
+        tmp6 = !tmp3Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
+      }
+      if (!tmp6) {
+        user = undefined;
+        flag = true;
+      }
+      const obj3 = PremiumUtilsDefault;
+      const tmp14 = !obj3.canUseClientThemes(UserStore.getCurrentUser());
+      if (tmp14 === closure_15) {
+        return flag;
+      } else {
+        closure_15 = tmp14;
+        c17 = false;
+      }
     }
   }
   flag = false;
   if (null == user) {
-    const tmp9 = getAppliedHexagonCampaignPreset();
+    const tmp10 = getAppliedHexagonCampaignPreset();
     flag = false;
-    if (null != tmp9) {
-      user = tmp9;
+    if (null != tmp10) {
+      user = tmp10;
       flag = true;
     }
   }
@@ -231,7 +234,7 @@ class ClientThemesBackgroundStore extends PersistedStore {
             tmp7 = null == UserStore.getCurrentUser();
           }
           if (!tmp7) {
-            const tmp4Result = tmp4(5170);
+            const tmp4Result = tmp4(5273);
             tmp7 = !tmp4Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
           }
           if (tmp7) {
@@ -293,56 +296,58 @@ Object.defineProperty(prototype, "gradientPreset", {
       if (syncedClientTheme != null) {
         prop = syncedClientTheme.backgroundGradientPresetId;
       }
-      let tmp15;
+      let tmp16;
       if (null != prop) {
-        let tmp18;
+        let tmp19;
         if (null != closure_12[prop]) {
           const tmpResult = require("HexagonCampaignUtils");
-          const result = tmpResult.isHexagonCampaignClientThemePreset(tmp17.id);
-          let tmp20 = !result;
+          const result = tmpResult.isHexagonCampaignClientThemePreset(tmp18.id);
+          let tmp21 = !result;
           if (result) {
-            tmp20 = null == UserStore.getCurrentUser();
+            tmp21 = null == UserStore.getCurrentUser();
           }
-          if (!tmp20) {
+          if (!tmp21) {
             const tmpResult5 = require("HexagonCampaignPerkAvailability");
-            tmp20 = !tmpResult5.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
+            tmp21 = !tmpResult5.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
           }
-          if (tmp20) {
-            tmp18 = tmp17;
+          if (tmp21) {
+            tmp19 = tmp18;
           }
         }
-        tmp15 = tmp18;
+        tmp16 = tmp19;
       }
-      let tmp24 = tmp15;
+      let tmp25 = tmp16;
       if (closure_15) {
-        let tmp26;
-        const tmp25 = c17;
-        if (tmp25) {
-          tmp26 = user;
-        } else if (null != tmp15) {
+        let tmp27;
+        const tmp26 = c17;
+        if (tmp26) {
+          tmp27 = user;
+        } else if (null != tmp16) {
           const tmpResult6 = require("HexagonCampaignUtils");
-          if (tmpResult6.isHexagonCampaignClientThemePreset(tmp15.id)) {
-            tmp26 = tmp15;
+          if (tmpResult6.isHexagonCampaignClientThemePreset(tmp16.id)) {
+            tmp27 = tmp16;
           }
         }
-        tmp24 = tmp26;
+        tmp25 = tmp27;
       }
-      return tmp24;
+      return tmp25;
     } else {
       let tmp5;
       if (null != user) {
-        const tmpResult7 = require("HexagonCampaignUtils");
-        const result1 = tmpResult7.isHexagonCampaignClientThemePreset(user.id);
-        let tmp8 = !result1;
-        if (result1) {
-          tmp8 = null == UserStore.getCurrentUser();
-        }
-        if (!tmp8) {
-          const tmpResult8 = require("HexagonCampaignPerkAvailability");
-          tmp8 = !tmpResult8.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
-        }
-        if (tmp8) {
+        const tmp6 = c17;
+        if (tmp6) {
           tmp5 = user;
+        } else {
+          const tmpResult7 = require("HexagonCampaignUtils");
+          const result1 = tmpResult7.isHexagonCampaignClientThemePreset(user.id);
+          let tmp9 = !result1;
+          if (result1) {
+            tmp9 = null == UserStore.getCurrentUser();
+          }
+          if (!tmp9) {
+            const tmpResult8 = require("HexagonCampaignPerkAvailability");
+            tmp9 = !tmpResult8.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
+          }
         }
       }
       return tmp5;
@@ -390,14 +395,20 @@ let obj = {
     let tmp = closure_15 && null != presetId;
     if (tmp) {
       const obj = require("HexagonCampaignUtils");
-      tmp = !obj.isHexagonCampaignClientThemePreset(presetId);
+      let result = obj.isHexagonCampaignClientThemePreset(presetId);
+      const tmp3 = require;
+      if (result) {
+        const tmp3Result = tmp3(5273);
+        result = !tmp3Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
+      }
+      tmp = !result;
     }
     c17 = tmp;
-    let tmp5;
+    let tmp7;
     if (null != presetId) {
-      tmp5 = closure_12[presetId];
+      tmp7 = closure_12[presetId];
     }
-    let closure_3 = tmp5;
+    let closure_3 = tmp7;
   },
   UPDATE_MOBILE_PENDING_THEME_INDEX: function handleUpdateMobilePendingThemeIndex(mobileThemesIndex) {
     mobileThemesIndex = mobileThemesIndex.mobileThemesIndex;
@@ -424,7 +435,7 @@ let obj = {
         const obj2 = DismissibleContentUnsafeUtils;
         const tmp6 = require;
         if (!obj2.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.CLIENT_THEMES_COACHMARK)) {
-          const tmp6Result = tmp6(5196);
+          const tmp6Result = tmp6(5309);
           if (tmp6Result.ageEligibleForPremiumUpsell(tmp)) {
             const channel = ChannelStore.getChannel(channelId);
             const tmp4 = null != channel && isGuildTextChannelType(channel.type);

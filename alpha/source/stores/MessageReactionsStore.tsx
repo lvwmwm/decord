@@ -1,15 +1,15 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8796
+// Function ID: 8797
 // Name: MessageReactionsStore
-// Dependencies: [5075, 1404, 4991, 1385, 504, 8480, 572, 2]
+// Dependencies: [5176, 1404, 5092, 1385, 504, 8797, 572, 2]
 
-// Module 8479 (MessageReactionsStore)
+// Module 8796 (MessageReactionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8480 */;
-import LurkingStore from "LurkingStore" /* 5075 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8797 */;
+import LurkingStore from "LurkingStore" /* 5176 */;
 import UserRecord from "UserRecord" /* 1404 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

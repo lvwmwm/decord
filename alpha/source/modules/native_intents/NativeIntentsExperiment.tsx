@@ -1,10 +1,10 @@
-// Module ID: 20508
-// Function ID: 20509
+// Module ID: 20703
+// Function ID: 20704
 // Name: NativeIntentsExperiment
-// Dependencies: [5354, 2]
+// Dependencies: [5467, 2]
 
-// Module 20508 (NativeIntentsExperiment)
-import createExperiment from "module_5354" /* 5354 */;
+// Module 20703 (NativeIntentsExperiment)
+import createExperiment from "module_5467" /* 5467 */;
 import size from "module_2" /* 2 */;
 
 let items;

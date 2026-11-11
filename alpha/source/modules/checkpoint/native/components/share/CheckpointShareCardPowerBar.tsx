@@ -1,17 +1,17 @@
-// Module ID: 13696
-// Function ID: 13697
+// Module ID: 14179
+// Function ID: 14180
 // Name: CheckpointShareCardPowerBar
-// Dependencies: [19, 17, 6201, 21, 5142, 575, 13694, 5726, 5753, 8105, 2]
+// Dependencies: [19, 17, 6314, 21, 5243, 575, 14177, 5839, 5866, 8197, 2]
 // Exports: default
 
-// Module 13696 (CheckpointShareCardPowerBar)
+// Module 14179 (CheckpointShareCardPowerBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
-import inlineStyles from "inlineStyles" /* 8105 */;
+import CheckpointConstants from "CheckpointConstants" /* 6314 */;
+import inlineStyles from "inlineStyles" /* 8197 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -48,17 +48,17 @@ export default function CheckpointShareCardPowerBar(stats) {
   let items2;
   stats = stats.stats;
   const tmp = closure_9();
-  const tertiaryBackgroundColor = react.useContext(stats(13694).CheckpointShareCardColorsContext).tertiaryBackgroundColor;
-  let obj = stats(5726);
+  const tertiaryBackgroundColor = react.useContext(stats(14177).CheckpointShareCardColorsContext).tertiaryBackgroundColor;
+  let obj = stats(5839);
   importDefault = obj.useToken(nativeDefault.colors.BLACK);
   let obj2 = { style: items, children: items2 };
   items = [tmp.powerBar, { backgroundColor: tertiaryBackgroundColor }];
   const obj3 = { style: tmp.powerLevel, children: items1 };
   items1 = [, ];
   const obj4 = { variant: "mono-md/normal", style: tmp.powerText, allowFontScaling: false, children: "LVL" };
-  items1[0] = closure_5(stats(5753).Text, obj4);
+  items1[0] = closure_5(stats(5866).Text, obj4);
   const obj5 = { variant: "mono-md/bold", style: tmp.powerText, allowFontScaling: false, children: stats.powerLevel };
-  items1[1] = closure_5(stats(5753).Text, obj5);
+  items1[1] = closure_5(stats(5866).Text, obj5);
   items2 = [closure_6(View, obj3), ];
   const obj6 = {
     style: tmp.powerUnits,

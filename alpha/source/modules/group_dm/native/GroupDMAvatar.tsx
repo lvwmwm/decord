@@ -1,18 +1,18 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10828
+// Function ID: 10829
 // Name: GroupDMAvatar
-// Dependencies: [19, 17, 1385, 21, 1187, 5142, 9599, 504, 1380, 2]
+// Dependencies: [19, 17, 1385, 21, 1187, 5243, 9437, 504, 1380, 2]
 // Exports: default
 
-// Module 10927 (GroupDMAvatar)
+// Module 10828 (GroupDMAvatar)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1187 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ClipView from "ClipView" /* 9599 */;
+import ClipView from "ClipView" /* 9437 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 17576
-// Function ID: 17577
+// Module ID: 17741
+// Function ID: 17742
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1385, 21, 5142, 575, 1113, 504, 6175, 1411, 7420, 5844, 5753, 1090, 1187, 7437, 2]
+// Dependencies: [19, 17, 1385, 21, 5243, 575, 1113, 504, 6288, 1411, 7876, 5957, 5866, 1090, 1187, 7893, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 17576 (GuildRoleSubscriptionMemberPreview)
+// Module 17741 (GuildRoleSubscriptionMemberPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,15 +12,15 @@ import utils_ColorUtilsAll from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6175 */;
-import RoleIconUtils from "RoleIconUtils" /* 7420 */;
-import RoleIconDefault from "RoleIcon" /* 7437 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
+import RoleIconUtils from "RoleIconUtils" /* 7876 */;
+import RoleIconDefault from "RoleIcon" /* 7893 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -88,7 +88,7 @@ export function GuildRoleSubscriptionMemberPreview(content) {
     const obj5 = { style: tmp3.contextRow, children: items3 };
     const obj6 = { variant: "body-md/semibold", color: "interactive-text-active", style: obj7, children: tmp8 };
     obj7 = { color: obj11.int2hex(color) };
-    const Text = tmp4(5753).Text;
+    const Text = tmp4(5866).Text;
     obj11 = utils_ColorUtilsAll;
     items3 = [metroRequire(Text, obj6), , , ];
     let tmp12Result = null;

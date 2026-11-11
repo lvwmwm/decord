@@ -1,18 +1,18 @@
-// Module ID: 18299
-// Function ID: 18300
+// Module ID: 18470
+// Function ID: 18471
 // Name: ParentalControlsFriendRequestsEveryoneSetting
-// Dependencies: [19, 7794, 8507, 1072, 8446, 17066, 7230, 17070, 11694, 1113, 2]
+// Dependencies: [19, 8673, 9136, 1072, 9552, 17229, 7747, 17233, 12317, 1113, 2]
 
-// Module 18299 (ParentalControlsFriendRequestsEveryoneSetting)
+// Module 18470 (ParentalControlsFriendRequestsEveryoneSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7230 */;
-import SettingsConstants from "SettingsConstants" /* 8507 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17066 */;
-import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 17070 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7747 */;
+import SettingsConstants from "SettingsConstants" /* 9136 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17229 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 17233 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7794 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
 import Constants from "Constants" /* 1072 */;
-import SettingBuilders from "SettingBuilders" /* 11694 */;
+import SettingBuilders from "SettingBuilders" /* 12317 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -27,9 +27,9 @@ let obj = {
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsEveryoneSettingValue() {
     let controlledSetting;
-    let obj = controlledSetting(8446);
+    let obj = controlledSetting(9552);
     const selectedTeenId = obj.useSelectedTeenId();
-    const ParentalControlledFriendSourceFlags = controlledSetting(17066).ParentalControlledFriendSourceFlags;
+    const ParentalControlledFriendSourceFlags = controlledSetting(17229).ParentalControlledFriendSourceFlags;
     controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
     const items = [controlledSetting];
     return react.useMemo(() => {

@@ -1,12 +1,12 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14674
+// Function ID: 14675
 // Name: useIsHubForGuild
-// Dependencies: [5013, 1072, 504, 2]
+// Dependencies: [5114, 1072, 504, 2]
 // Exports: default
 
-// Module 14191 (useIsHubForGuild)
+// Module 14674 (useIsHubForGuild)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 9161
-// Function ID: 9162
+// Module ID: 8339
+// Function ID: 8340
 // Name: GuildSettingsStore
-// Dependencies: [5006, 9132, 4995, 5009, 8274, 1404, 5013, 1385, 1072, 9162, 8580, 11, 9163, 1282, 572, 9164, 5005, 9165, 2166, 9166, 504, 12, 510, 2]
+// Dependencies: [5107, 8091, 5096, 5110, 7598, 1404, 5114, 1385, 1072, 8340, 8341, 11, 8342, 1282, 572, 8345, 5106, 8346, 2166, 8347, 504, 12, 510, 2]
 
-// Module 9161 (GuildSettingsStore)
+// Module 8339 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,25 +11,25 @@ import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5005 */;
-import PlainRecord from "PlainRecord" /* 5006 */;
-import GuildRecord from "GuildRecord" /* 5009 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9162 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9163 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 9164 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9165 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9166 */;
-import GuildProfileStore from "GuildProfileStore" /* 9132 */;
-import InviteRecord from "InviteRecord" /* 8274 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5106 */;
+import PlainRecord from "PlainRecord" /* 5107 */;
+import GuildRecord from "GuildRecord" /* 5110 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8340 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8342 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8345 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8346 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8347 */;
+import GuildProfileStore from "GuildProfileStore" /* 8091 */;
+import InviteRecord from "InviteRecord" /* 7598 */;
 import UserRecord from "UserRecord" /* 1404 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8580 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8341 */;
 import size from "module_2" /* 2 */;
 
-let c11, c12, closure_56, closure_9, defaultGuildSettingsSection, map;
+let c11, c12, c52, closure_56, closure_9, defaultGuildSettingsSection, map;
 
 let closure_23;
 let closure_24;
@@ -165,7 +165,7 @@ let c35 = false;
 let CLOSED = FormStates.CLOSED;
 let errors = {};
 let c38 = null;
-let c39 = false;
+const fetchedEmbed = false;
 let enabled = false;
 let channelId = null;
 let settings = null;
@@ -174,8 +174,8 @@ let code = null;
 let c48 = 0;
 let NONE = MFALevels.NONE;
 let _location = null;
-let obj = { primaryCategoryId: DEFAULT_DISCOVERY_CATEGORY_ID, secondaryCategoryIds: [], keywords: [], emojiDiscoverabilityEnabled: true, partnerActionedTimestamp: null, partnerApplicationTimestamp: null, isPublished: false, reasonsToJoin: [], socialLinks: [], about: "" };
-let c52 = false;
+let obj = { primaryCategoryId: DEFAULT_DISCOVERY_CATEGORY_ID, secondaryCategoryIds: [], keywords: [], emojiDiscoverabilityEnabled: true, partnerActionedTimestamp: null, partnerApplicationTimestamp: null, isPublished: false, automaticPages: false, reasonsToJoin: [], socialLinks: [], about: "" };
+const isGuildMetadataLoaded = false;
 let obj2 = obj;
 let bans = null;
 const bansVersion = 0;
@@ -912,6 +912,10 @@ obj2 = {
       let flag3 = metadata.isPublished;
       if (flag3 == null) {
         flag3 = false;
+      }
+      let flag4 = metadata.automaticPages;
+      if (flag4 == null) {
+        flag4 = false;
       }
       let reasonsToJoin = metadata.reasonsToJoin;
       if (reasonsToJoin == null) {

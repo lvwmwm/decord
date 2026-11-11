@@ -1,13 +1,13 @@
-// Module ID: 7006
-// Function ID: 7007
+// Module ID: 7641
+// Function ID: 7642
 // Name: MemberVerificationFormStore
-// Dependencies: [504, 12, 5176, 572, 2]
+// Dependencies: [504, 12, 5289, 572, 2]
 
-// Module 7006 (MemberVerificationFormStore)
+// Module 7641 (MemberVerificationFormStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5176 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5289 */;
 import size from "module_2" /* 2 */;
 
 const NO_MEMBER_VERIFICATION_FORM = { version: "", description: "", formFields: [] };

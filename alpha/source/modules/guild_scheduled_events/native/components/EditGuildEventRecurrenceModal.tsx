@@ -1,27 +1,27 @@
-// Module ID: 9071
-// Function ID: 9072
+// Module ID: 7925
+// Function ID: 7926
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 32, 19, 17, 21, 5142, 575, 1627, 9061, 9054, 9064, 2017, 9072, 5760, 1113, 9073, 9053, 9074, 9076, 5753, 7234, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5243, 575, 1627, 7913, 7906, 7916, 2017, 7926, 5873, 1113, 7927, 7905, 7928, 7930, 5866, 7424, 2]
 // Exports: default
 
-// Module 9071 (EditGuildEventRecurrenceModal)
+// Module 7925 (EditGuildEventRecurrenceModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9053 */;
-import useEventExceptionDefault from "useEventException" /* 9061 */;
-import LazyAPIPromiseDefault from "LazyAPIPromise" /* 9064 */;
-import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 9072 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 9073 */;
-import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 9074 */;
-import GuildEventScheduleDefault from "GuildEventSchedule" /* 9076 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 7905 */;
+import useEventExceptionDefault from "useEventException" /* 7913 */;
+import LazyAPIPromiseDefault from "LazyAPIPromise" /* 7916 */;
+import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 7926 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 7927 */;
+import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 7928 */;
+import GuildEventScheduleDefault from "GuildEventSchedule" /* 7930 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, dependencyMap;
@@ -140,9 +140,9 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
   ({ left, right } = tmp2);
   let tmp3 = useEventExceptionDefault(recurrenceId, guildEvent.id);
   dependencyMap = tmp3;
-  obj = guildEvent(9054);
+  obj = guildEvent(7906);
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  let obj2 = guildEvent(9054);
+  let obj2 = guildEvent(7906);
   const scheduleForRecurrenceWithException = obj2.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp3);
   [c5, c6] = _slicedToArray(react.useState(scheduleForRecurrenceWithException), 2);
   const tmp6 = _slicedToArray(react.useState(scheduleForRecurrenceWithException), 2);
@@ -175,7 +175,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     },
     disabled: null != first
   };
-  const Button = guildEvent(5760).Button;
+  const Button = guildEvent(5873).Button;
   intl = guildEvent(1113).intl;
   const action = closure_8(Button, obj3);
   let obj4 = {
@@ -207,7 +207,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     },
     fullscreen: true
   };
-  let obj5 = { style: items1, children: closure_8(guildEvent(7234).Navigator, obj6) };
+  let obj5 = { style: items1, children: closure_8(guildEvent(7424).Navigator, obj6) };
   items1 = [tmp.container, { paddingLeft: left, paddingRight: right }];
   obj6 = { screens: { [closure_11.TIME]: obj4 }, initialRouteName: obj.TIME, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: tmp.cardStyle };
   return closure_8(first, obj5);

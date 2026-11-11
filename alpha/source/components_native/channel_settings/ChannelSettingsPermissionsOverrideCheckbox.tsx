@@ -1,15 +1,15 @@
-// Module ID: 19322
-// Function ID: 19323
+// Module ID: 19507
+// Function ID: 19508
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 575, 5142, 5079, 1113, 10011, 9371, 19323, 5202, 2]
+// Dependencies: [19, 17, 21, 575, 5243, 5180, 1113, 9091, 9417, 19508, 5315, 2]
 
-// Module 19322 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 19507 (ChannelSettingsPermissionsOverrideCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PermissionUtils from "PermissionUtils" /* 5079 */;
+import PermissionUtils from "PermissionUtils" /* 5180 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -24,6 +24,7 @@ function OverrideOption(type) {
   let colors2;
   let colors3;
   let found;
+  let hitSlop;
   let onPress;
   let permissionTitle;
   let stringResult;
@@ -32,7 +33,7 @@ function OverrideOption(type) {
   const selected = type.selected;
   const styles = type.styles;
   const tmp = type;
-  ({ permissionTitle, onPress } = type);
+  ({ permissionTitle, hitSlop, onPress } = type);
   const obj = type(styles[10]);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   const tmp4 = jsx;
@@ -41,6 +42,7 @@ function OverrideOption(type) {
     accessibilityRole: radioA11yNative.accessibilityRole,
     accessibilityLabel: found.join(", "),
     accessibilityState,
+    hitSlop,
     style(pressed) {
       let tmp7;
       if (!selected) {
@@ -102,6 +104,12 @@ function OverrideOption(type) {
 const jsx = Fragment.jsx;
 const PX_4 = nativeDefault.space.PX_4;
 const md = nativeDefault.radii.md;
+const rect = { top: PX_4, right: PX_4 / 2, bottom: PX_4, left: PX_4 };
+let closure_6 = Object.freeze(rect);
+const rect1 = { top: PX_4, right: PX_4 / 2, bottom: PX_4, left: PX_4 / 2 };
+let closure_7 = Object.freeze(rect1);
+const rect2 = { top: PX_4, right: PX_4, bottom: PX_4, left: PX_4 / 2 };
+let closure_8 = Object.freeze(rect2);
 let createStyles = createStyles_mod;
 let obj = { ternaryCheckBox: obj2, iconWrapper: { borderRadius: md - PX_4, marginHorizontal: PX_4 / 2, justifyContent: "center", height: "100%" }, icon: obj3, denyActive: obj4, denySelected: obj5, allowActive: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_POSITIVE }, allowSelected: { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE }, passthroughSelected: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED }, passthroughActive: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER }, disabled: { opacity: 0.3 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: nativeDefault.space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" };
@@ -113,10 +121,11 @@ obj5 = { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, borderRad
 ({ backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE });
 ({ backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED });
 ({ backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER });
-let closure_6 = createStyles(obj);
+let closure_9 = createStyles(obj);
 let items = [PermissionUtils.DENY, PermissionUtils.PASSTHROUGH, PermissionUtils.ALLOW];
 const memoResult = react.memo(function ChannelSettingsPermissionsOverrideCheckbox(permissionTitle) {
   let disabled;
+  let length;
   let str;
   permissionTitle = permissionTitle.permissionTitle;
   ({ value: importDefault, disabled } = permissionTitle);
@@ -124,7 +133,7 @@ const memoResult = react.memo(function ChannelSettingsPermissionsOverrideCheckbo
     disabled = false;
   }
   const onValueChange = permissionTitle.onValueChange;
-  let tmp = closure_6();
+  let tmp = closure_9();
   const styles = tmp;
   items = [tmp.ternaryCheckBox, ];
   let disabled2 = disabled;
@@ -133,26 +142,37 @@ const memoResult = react.memo(function ChannelSettingsPermissionsOverrideCheckbo
   if (disabled) {
     disabled2 = tmp.disabled;
   }
-  items[1] = disabled2;
-  const obj = {
+  let obj = {
     style: items,
     pointerEvents: str,
     accessibilityRole: "radiogroup",
     accessibilityLabel: permissionTitle,
     children: items.map((type, index) => {
+      let tmp4;
       permissionTitle = type;
-      return <OverrideOption key={"checkbox-" + arg1} permissionTitle={permissionTitle} type={arg0} selected={closure_1 === arg0} styles={styles} onPress={function onPress() {
-        let tmp2 = null != onValueChange;
-        const tmp = onValueChange;
-        if (tmp2) {
-          tmp2 = importDefault !== type;
+      const tmp = jsx;
+      const obj = {
+        permissionTitle,
+        type,
+        selected: closure_1 === type,
+        styles,
+        hitSlop: tmp4,
+        onPress() {
+          if (onValueChange != null) {
+            tmp(type);
+          }
         }
-        if (tmp2) {
-          tmp(type);
-        }
-      }} />;
+      };
+      const tmp2 = OverrideOption;
+      if (0 === index) {
+        tmp4 = closure_1_6;
+      } else {
+        tmp4 = index === items.length - 1 ? closure_1_8 : closure_1_7;
+      }
+      return tmp(tmp2, obj, "checkbox-" + index);
     })
   };
+  items[1] = disabled2;
   str = "auto";
   if (disabled) {
     str = "none";

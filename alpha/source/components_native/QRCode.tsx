@@ -1,19 +1,19 @@
-// Module ID: 9255
-// Function ID: 9256
+// Module ID: 15782
+// Function ID: 15783
 // Name: components_native/QRCode
-// Dependencies: [109, 19, 17, 21, 5142, 575, 5201, 9256, 5730, 5844, 9270, 8898, 2]
+// Dependencies: [109, 19, 17, 21, 5243, 575, 5314, 15783, 5843, 5957, 15797, 8544, 2]
 
-// Module 9255 (components_native/QRCode)
+// Module 15782 (components_native/QRCode)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5201 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import QRCodeDefault from "QRCode" /* 9256 */;
-import AssetRegistry from "AssetRegistry" /* 9270 */;
+import native from "native" /* 5314 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import QRCodeDefault from "QRCode" /* 15783 */;
+import AssetRegistry from "AssetRegistry" /* 15797 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -23,8 +23,8 @@ let metroRequire;
 let obj2;
 let tmp10;
 let tmp7;
-const VisualEffectViewDefault = tmp7(5730);
-const VisualEffectViewThemedDefault = tmp10(8898);
+const VisualEffectViewDefault = tmp7(5843);
+const VisualEffectViewThemedDefault = tmp10(8544);
 let closure_3 = ["style", "text", "blur", "accessibilityLabel"];
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

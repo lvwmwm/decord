@@ -1,10 +1,10 @@
-// Module ID: 16215
-// Function ID: 16216
+// Module ID: 10016
+// Function ID: 10017
 // Name: ProductCatalog
 // Dependencies: [1386, 1387, 3, 1398, 1391, 2]
 // Exports: canUserUse
 
-// Module 16215 (ProductCatalog)
+// Module 10016 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PerksStateUtils from "PerksStateUtils" /* 1391 */;
@@ -34,7 +34,7 @@ items1[8] = user.Perk.INCREASED_FILE_UPLOAD_SIZE;
 items1[9] = user.Perk.APP_ICONS;
 obj[TIER_1] = new Set(items1);
 const TIER_2 = PremiumTypes.TIER_2;
-const items2 = [, , , , , , , , , , , , , , , , , , , , , , ];
+const items2 = [, , , , , , , , , , , , , , , , , , , , , , , ];
 new Set(items1);
 items2[0] = user.Perk.ANIMATED_EMOJIS;
 items2[1] = user.Perk.EMOJIS_EVERYWHERE;
@@ -59,11 +59,13 @@ items2[19] = user.Perk.INCREASED_VIDEO_UPLOAD_QUALITY;
 items2[20] = user.Perk.INCREASED_FILE_UPLOAD_SIZE;
 items2[21] = user.Perk.APP_ICONS;
 items2[22] = user.Perk.PREMIUM_COLLECTIBLES;
+items2[23] = user.Perk.PREMIUM_TENURE_BADGE;
 obj[TIER_2] = new Set(items2);
-const items3 = [, ];
+const items3 = [, , ];
 new Set(items2);
 items3[0] = user.Perk.BOOST_DISCOUNT;
 items3[1] = user.Perk.FREE_BOOSTS;
+items3[2] = user.Perk.PREMIUM_TENURE_BADGE;
 const set3 = new Set(items3);
 const result = size.fileFinishedImporting("modules/premium/ProductCatalog.tsx");
 

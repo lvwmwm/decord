@@ -1,19 +1,19 @@
-// Module ID: 16196
-// Function ID: 16197
+// Module ID: 16358
+// Function ID: 16359
 // Name: Slider
-// Dependencies: [32, 19, 17, 21, 5142, 575, 8932, 5378, 5379, 1377, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 12917, 5491, 5492, 1377, 2]
 // Exports: Slider, useLatestSliderValue
 
-// Module 16196 (Slider)
+// Module 16358 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5378 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5379 */;
-import _modDef8932 from "module_8932" /* 8932 */;
+import HapticUtils from "HapticUtils" /* 5491 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5492 */;
+import _modDef12917 from "module_12917" /* 12917 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -154,7 +154,7 @@ export function Slider(maxValue) {
     testID,
     onResponderGrant: fn
   };
-  const tmp20 = _modDef8932;
+  const tmp20 = _modDef12917;
   if (value == null) {
     value = first;
   }

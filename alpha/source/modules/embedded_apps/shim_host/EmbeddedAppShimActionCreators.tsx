@@ -1,10 +1,10 @@
-// Module ID: 11974
-// Function ID: 11975
+// Module ID: 12768
+// Function ID: 12769
 // Name: EmbeddedAppShimActionCreators
 // Dependencies: [572, 2]
 // Exports: disconnectShim, shimPipeOpened, updateShimState
 
-// Module 11974 (EmbeddedAppShimActionCreators)
+// Module 12768 (EmbeddedAppShimActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

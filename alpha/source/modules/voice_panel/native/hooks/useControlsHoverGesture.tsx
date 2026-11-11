@@ -1,14 +1,14 @@
-// Module ID: 19641
-// Function ID: 19642
+// Module ID: 19833
+// Function ID: 19834
 // Name: useControlsHoverGesture
-// Dependencies: [19, 11372, 11370, 11371, 1652, 5422, 1705, 2]
+// Dependencies: [19, 11925, 11923, 11924, 1652, 5535, 1705, 2]
 // Exports: default
 
-// Module 19641 (useControlsHoverGesture)
+// Module 19833 (useControlsHoverGesture)
 import _mod1705 from "module_1705" /* 1705 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5422 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11370 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11372 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11923 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 10310
+// Function ID: 10311
 // Name: HTMLParserLinkUtils
-// Dependencies: [109, 9492, 6172, 5875, 1378, 2067, 6171, 9517, 2]
+// Dependencies: [109, 10284, 6285, 5988, 1378, 2067, 6284, 10309, 2]
 // Exports: addTextLinks
 
-// Module 9518 (HTMLParserLinkUtils)
-import MarkupLinkRule2 from "MarkupLinkRule" /* 6171 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6172 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9517 */;
+// Module 10310 (HTMLParserLinkUtils)
+import MarkupLinkRule2 from "MarkupLinkRule" /* 6284 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6285 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 10309 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 9492 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 10284 */;
 import module_2067_mod from "module_2067" /* 2067 */;
 import size from "module_2" /* 2 */;
 
@@ -74,9 +74,9 @@ function getLink(arr3, flag) {
   }
   return tmp;
 }
-function normalizeLabelForComparison(content) {
+function normalizeLabelForComparison(text) {
   const obj = UnicodeSanitizationUtils;
-  const str = obj.sanitizeWhitespace(content);
+  const str = obj.sanitizeWhitespace(text);
   const sanitizeUnicodeConfusables = UnicodeSanitizationUtils.sanitizeUnicodeConfusables;
   UnicodeSanitizationUtils;
   const normalizer = str.replace(gesture, "");
@@ -186,10 +186,10 @@ function hasMisleadingURLLabel(str, href) {
           require("URLUtils");
           const uRL = new URL(href);
           let tmp12 = uRL;
-          const str9 = safeDecodeURIComponent(uRL.pathname);
+          const str10 = safeDecodeURIComponent(uRL.pathname);
           formatted = undefined;
-          if (str9 != null) {
-            formatted = str9.toLowerCase();
+          if (str10 != null) {
+            formatted = str10.toLowerCase();
           }
           let tmp14 = null == formatted || fromResult.some((item) => item.toLowerCase() !== formatted);
           return tmp14;

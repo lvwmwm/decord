@@ -1,24 +1,24 @@
-// Module ID: 9318
-// Function ID: 9319
+// Module ID: 10527
+// Function ID: 10528
 // Name: FormComponents
-// Dependencies: [19, 5892, 21, 5142, 575, 7026, 7129, 9319, 1187, 7390, 9320, 9332, 7572, 6574, 9376, 8827, 504, 7963, 9377, 9379, 5753, 1113, 7041, 5760, 7554, 9380, 5196, 9381, 15001, 2]
+// Dependencies: [19, 6005, 21, 5243, 575, 7656, 7680, 10528, 1187, 7852, 10529, 10541, 8077, 6687, 10000, 8410, 504, 8402, 10583, 10585, 5866, 1113, 7379, 5873, 8071, 10586, 5309, 10587, 10752, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9318 (FormComponents)
+// Module 10527 (FormComponents)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import NativeViewDefault from "NativeView" /* 7026 */;
-import TableRowGroup2 from "TableRowGroup" /* 7129 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7554 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7963 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8827 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9319 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import NativeViewDefault from "NativeView" /* 7656 */;
+import TableRowGroup2 from "TableRowGroup" /* 7680 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 8071 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8402 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 10528 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5892 */;
+import PresenceStore from "PresenceStore" /* 6005 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

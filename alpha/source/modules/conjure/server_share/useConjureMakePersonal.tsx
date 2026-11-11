@@ -1,13 +1,13 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 13215
+// Function ID: 13216
 // Name: useConjureMakePersonal
-// Dependencies: [5, 32, 19, 6902, 11005, 12393, 12409, 1113, 4028, 2]
+// Dependencies: [5, 32, 19, 6954, 7265, 13199, 13216, 1113, 4079, 2]
 // Exports: canMakeConjureProjectPersonal, default
 
-// Module 12408 (useConjureMakePersonal)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6902 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11005 */;
-import conjureChangeRows from "conjureChangeRows" /* 12409 */;
+// Module 13215 (useConjureMakePersonal)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6954 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7265 */;
+import conjureChangeRows from "conjureChangeRows" /* 13216 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -152,12 +152,12 @@ export default function useConjureMakePersonal(id) {
     }
   }), items2);
   if (null != target) {
-    const tmp6Result = tmp6(12393);
+    const tmp6Result = tmp6(13199);
     result = tmp6Result.conjureRemoveAppKeptChannels(target);
   }
   return obj3;
 };
 export function canMakeConjureProjectPersonal(project) {
-  const tmp = "guild" === project.install_scope && null == project.install_scope_setup && null != project.guild_id && isProjectOwner(project);
+  const tmp = "guild" === project.install_scope && isProjectOwner(project);
   return tmp;
 }

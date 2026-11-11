@@ -1,26 +1,26 @@
-// Module ID: 18446
-// Function ID: 18447
+// Module ID: 18618
+// Function ID: 18619
 // Name: useHomeDrawerGesture
-// Dependencies: [32, 19, 18440, 18447, 1072, 11391, 11690, 5322, 1652, 1500, 1252, 5372, 1705, 5378, 1493, 1627, 5319, 11691, 18448, 5316, 5374, 18441, 5422, 7308, 2]
+// Dependencies: [32, 19, 18612, 18619, 1072, 11949, 12313, 5435, 1652, 1500, 1252, 5485, 1705, 5491, 1493, 1627, 5432, 12314, 18620, 5429, 5487, 18613, 5535, 7782, 2]
 // Exports: useDoesLandOnHomeDrawer, useHomeDrawerState, useHomeGesture, useIsHomeDrawerEnabled
 
-// Module 18446 (useHomeDrawerGesture)
+// Module 18618 (useHomeDrawerGesture)
 import Constants from "Constants" /* 1072 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5316 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import HapticUtils from "HapticUtils" /* 5378 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5422 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11690 */;
-import HomeDrawerStore2 from "HomeDrawerStore" /* 18440 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18441 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5429 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import HapticUtils from "HapticUtils" /* 5491 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 12313 */;
+import HomeDrawerStore2 from "HomeDrawerStore" /* 18612 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18613 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 18447 */;
-import GestureConstants from "GestureConstants" /* 11391 */;
+import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 18619 */;
+import GestureConstants from "GestureConstants" /* 11949 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7308 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7782 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set;
@@ -717,7 +717,7 @@ export function useHomeGesture() {
     shouldOpenFromPosition.__closure = items9;
     shouldOpenFromPosition.__workletHash = 345325928396;
     shouldOpenFromPosition.__initData = tmp47;
-    const Gesture = tmp8(5422).Gesture;
+    const Gesture = tmp8(5535).Gesture;
     const PanResult = Gesture.Pan();
     const enabledResult = PanResult.enabled(closure_24);
     const manualActivationResult = enabledResult.manualActivation(true);

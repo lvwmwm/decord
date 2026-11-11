@@ -1,8 +1,8 @@
-// Module ID: 14704
-// Function ID: 14705
+// Module ID: 11749
+// Function ID: 11750
 // Dependencies: [2]
 
-// Module 14704
+// Module 11749
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/gifting/halloween-card-small.png.js");

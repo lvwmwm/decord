@@ -1,17 +1,17 @@
-// Module ID: 10393
-// Function ID: 10394
+// Module ID: 11298
+// Function ID: 11299
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 5013, 1385, 10394, 1072, 1228, 10391, 504, 6618, 10395, 10396, 10397, 1625, 2]
+// Dependencies: [19, 17, 5114, 1385, 11299, 1072, 1228, 11296, 504, 6730, 11300, 11301, 11302, 1625, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 10393 (stickers/StickersUtils)
+// Module 11298 (stickers/StickersUtils)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
-import StickerPickerStore from "StickerPickerStore" /* 10394 */;
+import StickerPickerStore from "StickerPickerStore" /* 11299 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

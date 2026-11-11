@@ -1,16 +1,16 @@
-// Module ID: 19239
-// Function ID: 19240
+// Module ID: 19426
+// Function ID: 19427
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1072, 21, 5142, 575, 1252, 5737, 5392, 9917, 1377, 7019, 10864, 16015, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 1252, 5850, 5505, 8994, 1377, 7408, 10204, 16174, 1113, 2]
 // Exports: default
 
-// Module 19239 (UsernameSearchScreen)
+// Module 19426 (UsernameSearchScreen)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -56,7 +56,7 @@ export default function UsernameSearchScreen(navigation) {
     const obj2 = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj2);
   }, []);
-  const insets = ref(5737)().insets;
+  const insets = ref(5850)().insets;
   ref = react.useRef(null);
   const items = [navigation];
   const effect1 = react.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -72,7 +72,7 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(9917);
+  let obj = navigation(8994);
   const clientThemesOverride = obj.useClientThemesOverride();
   let obj2 = navigation(1377);
   let prop = null;
@@ -89,13 +89,13 @@ export default function UsernameSearchScreen(navigation) {
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.content, clientThemesOverride];
   items2 = [, ];
-  tmp3Result = ref(7019);
-  items2[0] = closure_8(ref(10864), { absolute: true });
+  tmp3Result = ref(7408);
+  items2[0] = closure_8(ref(10204), { absolute: true });
   const obj5 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: items3, children: closure_8(tmp3Result2, obj7) };
   items3 = [tmp.container, prop, { paddingBottom: insets.bottom + tmp3(575).space.PX_16 }];
   obj7 = { style: tmp.inputContainer, autoFocusInput: false, headerText: intl.string(navigation(1113).t.YEOwDM), headerTextStyle: tmp.headerText, ref };
   ({ paddingBottom: insets.bottom + ref(575).space.PX_16 });
-  tmp3Result2 = ref(16015);
+  tmp3Result2 = ref(16174);
   intl = tmp7(1113).intl;
   items2[1] = closure_8(closure_4, obj5);
   return closure_8(closure_5, obj3);

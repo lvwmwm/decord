@@ -1,16 +1,16 @@
-// Module ID: 7674
-// Function ID: 7675
+// Module ID: 9514
+// Function ID: 9515
 // Name: PremiumModal
-// Dependencies: [19, 1072, 21, 1113, 7067, 7675, 15700, 15703, 15745, 15761, 7390, 7234, 2]
+// Dependencies: [19, 1072, 21, 1113, 7427, 9515, 15259, 15262, 15304, 15320, 7852, 7424, 2]
 // Exports: default
 
-// Module 7674 (PremiumModal)
+// Module 9514 (PremiumModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import NavigatorHeader from "NavigatorHeader" /* 7067 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7675 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 15745 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 15761 */;
+import NavigatorHeader from "NavigatorHeader" /* 7427 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 9515 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 15304 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 15320 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

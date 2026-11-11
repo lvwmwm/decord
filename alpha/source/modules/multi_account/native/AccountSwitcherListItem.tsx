@@ -1,24 +1,24 @@
-// Module ID: 18359
-// Function ID: 18360
+// Module ID: 18531
+// Function ID: 18532
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1404, 5197, 1385, 14237, 21, 5142, 504, 7404, 575, 5861, 5753, 1113, 7046, 5202, 1187, 5196, 2]
+// Dependencies: [19, 17, 1404, 5310, 1385, 14720, 21, 5243, 504, 7864, 575, 5974, 5866, 1113, 7364, 5315, 1187, 5309, 2]
 // Exports: default
 
-// Module 18359 (AccountSwitcherListItem)
+// Module 18531 (AccountSwitcherListItem)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5196 */;
-import react_native from "react-native" /* 5202 */;
-import MultiAccountStore from "MultiAccountStore" /* 14237 */;
+import UserUtilsDefault from "UserUtils" /* 5309 */;
+import react_native from "react-native" /* 5315 */;
+import MultiAccountStore from "MultiAccountStore" /* 14720 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1404 */;
-import StreamerModeStore from "StreamerModeStore" /* 5197 */;
+import StreamerModeStore from "StreamerModeStore" /* 5310 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -40,13 +40,13 @@ class AccountStatusIcon {
     }
     if (id === id1) {
       const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-      const CircleCheckIcon = tmp(7404).CircleCheckIcon;
+      const CircleCheckIcon = tmp(7864).CircleCheckIcon;
       tmp6 = React4(CircleCheckIcon, obj2);
     } else {
       tmp6 = null;
       if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
         const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-        const CircleInformationIcon = tmp(5861).CircleInformationIcon;
+        const CircleInformationIcon = tmp(5974).CircleInformationIcon;
         tmp6 = React4(CircleInformationIcon, obj3);
       }
     }
@@ -101,14 +101,14 @@ export default function AccountSwitcherListItem(arg0) {
     let PressableOpacity;
     if (showActiveAccountLabel) {
       const obj4 = { variant: "body-sm/semibold", color: "text-brand", children: intl.string(intl4.t.seV8yt) };
-      const Text = tmp2(5753).Text;
+      const Text = tmp2(5866).Text;
       intl = tmp2(1113).intl;
       tmp8 = React4(Text, obj4);
     }
     if (null == onPressUser) {
       PressableOpacity = _false;
     } else {
-      PressableOpacity = tmp2(7046).PressableOpacity;
+      PressableOpacity = tmp2(7364).PressableOpacity;
     }
     const obj5 = { selected: id === id1 };
     const tmp2Result = react_native;
@@ -123,12 +123,12 @@ export default function AccountSwitcherListItem(arg0) {
     const merged = Object.assign(sortHandlers);
     items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: items3 };
-    const obj9 = { user: obj3, guildId: "r" };
+    const obj9 = { user: obj3, guildId: "Array" };
     items3 = [React4(native.Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: items5 };
     const obj11 = { style: tmp.tagContainer, children: items4 };
     const obj12 = { variant: "body-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1, children: getUserTag(obj3, obj13) };
-    const Text2 = tmp2(5753).Text;
+    const Text2 = tmp2(5866).Text;
     let str = "always";
     getUserTag = UserUtilsDefault.getUserTag;
     UserUtilsDefault;
@@ -141,7 +141,7 @@ export default function AccountSwitcherListItem(arg0) {
     if (tmp18Result) {
       const _HermesInternal = HermesInternal;
       const obj14 = { variant: "body-md/normal", color: "text-muted", children: "#" + obj3.discriminator };
-      const Text3 = tmp2(5753).Text;
+      const Text3 = tmp2(5866).Text;
       tmp18Result = tmp18(Text3, obj14);
     }
     items4[1] = tmp18Result;
@@ -158,7 +158,7 @@ export default function AccountSwitcherListItem(arg0) {
   tmp8 = null;
   if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
     const obj16 = { variant: "body-sm/semibold", color: "text-feedback-critical", children: intl3.string(intl4.t.tYX2ps) };
-    const Text4 = tmp2(5753).Text;
+    const Text4 = tmp2(5866).Text;
     intl3 = tmp2(1113).intl;
     tmp8 = React4(Text4, obj16);
   }

@@ -1,19 +1,18 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 14048
+// Function ID: 14049
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 5013, 1385, 21, 5142, 575, 5737, 11555, 504, 13524, 6960, 5844, 13525, 5753, 1113, 5196, 12405, 4028, 7319, 5760, 13526, 2]
+// Dependencies: [32, 19, 17, 5114, 1385, 21, 5243, 575, 5850, 11791, 504, 14049, 6854, 5957, 14050, 5866, 1113, 5309, 13212, 4079, 14051, 13211, 7793, 5873, 2]
 
-// Module 13523 (KickConfirm)
+// Module 14048 (KickConfirm)
 import nativeDefault from "native" /* 575 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
-import removeConjureServerAppDefault from "removeConjureServerApp" /* 13526 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -34,7 +33,7 @@ let unpackModuleId;
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
-const obj = { container: obj2, iconLabelBlock: obj3, iconStyles: obj4, redText: obj5, conjureTitle: obj6, conjureServerName: obj7, blurb: obj8, removeEverything: obj9, errorText: obj10, actions: obj11 };
+const obj = { container: obj2, iconLabelBlock: obj3, iconStyles: obj4, redText: obj5, conjureTitle: obj6, conjureServerName: obj7, blurb: obj8, conjureRemove: obj9, errorText: obj10, actions: obj11 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16, alignItems: "center" };
@@ -43,7 +42,7 @@ obj5 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space
 obj6 = { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, textAlign: "center" };
 obj7 = { marginTop: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16, textAlign: "center" };
 obj8 = { marginVertical: nativeDefault.space.PX_16 };
-obj9 = { marginBottom: nativeDefault.space.PX_16 };
+obj9 = { marginVertical: nativeDefault.space.PX_16 };
 obj10 = { marginBottom: nativeDefault.space.PX_16 };
 obj11 = { marginBottom: nativeDefault.space.PX_16 };
 let closure_12 = createStyles(obj);
@@ -51,239 +50,175 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let Button;
   let UktD5J;
   let _undefined;
-  let c10;
+  let c6;
   let format2;
   let formatResult;
   let formatToPlainString;
   let intl4;
-  let intl5;
-  let intl6;
   let items;
+  let items4;
   let items5;
   let items6;
-  let items7;
   let obj11;
-  let obj19;
-  let obj21;
-  let obj23;
-  let obj26;
+  let obj17;
+  let obj22;
+  let obj25;
   let obj27;
+  let obj28;
   let obj6;
-  let tmp21;
-  let tmp4Result4;
+  let tmp16;
   let tmp4Result5;
   let tmp4Result6;
+  let tmp4Result7;
+  let tmp4Result8;
+  let tmp7Result3;
   let tmp7Result4;
   let v1Ie87p;
-  const f106116 = () => ({ kicking: false, kickError: false });
+  const f107853 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
   let stateFromStores1;
-  let conjureServerApp;
-  let items3;
-  let checked;
-  let closure_8;
-  c10 = undefined;
-  let closure_11;
-  let tmp = closure_12();
+  c6 = undefined;
+  const tmp = closure_12();
   let ref = stateFromStores1.useRef(null);
   const ref1 = stateFromStores1.useRef(null);
-  const tmp4 = userId;
-  const tmp5 = onKick;
   const insets = userId(onKick[8])({ includeKeyboardHeight: true }).insets;
   const obj2 = { insets, inputs: items, scrollViewRef: ref };
   items = [{ ref: ref1, offset: { type: "toBottom" } }];
-  const tmp6 = userId(onKick[9])(obj2);
-  const tmp7 = guildId;
-  const items1 = [checked];
+  userId(onKick[9])(obj2);
+  const items1 = [GuildStore];
   const obj3 = guildId(onKick[10]);
   const stateFromStores = obj3.useStateFromStores(items1, () => GuildStore.getGuild(guildId));
-  const items2 = [closure_8];
+  const items2 = [UserStore];
   const obj4 = guildId(onKick[10]);
   stateFromStores1 = obj4.useStateFromStores(items2, () => UserStore.getUser(userId));
   let bot;
   const useConjureServerApp = guildId(onKick[11]).useConjureServerApp;
-  const tmp10 = guildId(onKick[11]);
+  guildId(onKick[11]);
   if (stateFromStores1 != null) {
     bot = stateFromStores1.bot;
   }
   let result = null;
   if (true === bot) {
-    const tmp7Result = tmp7(tmp5[11]);
+    const tmp7Result = guildId(onKick[11]);
     result = tmp7Result.conjureApplicationIdForBot(userId);
   }
-  conjureServerApp = useConjureServerApp(guildId, result);
-  let rest;
-  if (conjureServerApp != null) {
-    rest = conjureServerApp.rest;
-  }
-  if (null == rest) {
-    items3 = [];
-  } else {
-    const tmp7Result3 = tmp7(tmp5[11]);
-    items3 = tmp7Result3.conjureKickAppItems(conjureServerApp.rest);
-  }
-  const tmp15 = stateFromStores(stateFromStores1.useState(true), 2);
-  checked = tmp15[0];
-  const tmp17 = tmp15[1];
-  const tmp18 = stateFromStores(stateFromStores1.useState(false), 2);
-  closure_8 = tmp18[1];
-  const first1 = tmp18[0];
+  const conjureServerApp = useConjureServerApp(guildId, result);
+  const tmp14 = null != conjureServerApp && !conjureServerApp.targetIsPreview;
   ref = obj.useRef("");
-  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f106116), 2);
-  const items4 = [stateFromStores, onKick, stateFromStores1];
-  stateFromStores(stateFromStores1.useState(f106116), 2);
-  closure_11 = obj.useCallback(() => {
-    const tmp2 = null != stateFromStores && null != stateFromStores1;
-    if (tmp2) {
-      _undefined({ kicking: true, kickError: false });
-      let id;
-      const kickUser = GuildActionCreatorsDefault.kickUser;
-      GuildActionCreatorsDefault;
-      if (stateFromStores != null) {
-        id = tmp.id;
-      }
-      let id1;
-      if (stateFromStores1 != null) {
-        id1 = stateFromStores1.id;
-      }
-      const kickUserResult = kickUser(id, id1, ref.current);
-      const nextPromise = kickUserResult.then(onKick);
-      nextPromise.catch(() => {
-        _undefined({ kicking: false, kickError: true });
-      });
-    }
-  }, items4);
-  let tmp23Result6 = null;
+  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f107853), 2);
+  const items3 = [stateFromStores, onKick, stateFromStores1];
+  let tmp19Result6 = null;
+  stateFromStores(stateFromStores1.useState(f107853), 2);
   if (null != stateFromStores1) {
-    tmp23Result6 = null;
+    tmp19Result6 = null;
     if (null != stateFromStores) {
       let obj13;
-      const obj5 = { style: tmp.container, ref, contentContainerStyle: obj6, children: closure_11(c10, obj27) };
-      obj6 = { paddingHorizontal: tmp4(tmp5[7]).space.PX_24, paddingBottom: insets.bottom };
-      const obj7 = { style: tmp.iconLabelBlock, children: items5 };
-      const obj8 = { style: tmp.iconStyles, source: tmp4(tmp5[14]), resizeMode: "contain" };
-      const tmp4Result = tmp4(tmp5[13]);
-      items5 = [ref(tmp4Result, obj8), ];
-      const tmp24 = items3;
+      let tmp21Result;
+      const obj5 = { style: tmp.container, ref, contentContainerStyle: obj6, children: closure_11(closure_10, obj28) };
+      obj6 = { paddingHorizontal: userId(onKick[7]).space.PX_24, paddingBottom: insets.bottom };
+      const obj7 = { style: tmp.iconLabelBlock, children: items4 };
+      const obj8 = { style: tmp.iconStyles, source: userId(onKick[14]), resizeMode: "contain" };
+      const tmp4Result = userId(onKick[13]);
+      items4 = [closure_9(tmp4Result, obj8), ];
+      const tmp20 = c6;
       if (null == conjureServerApp) {
-        const obj9 = { children: items6 };
+        const obj9 = { children: items5 };
         const obj10 = { style: tmp.redText, variant: "body-md/semibold", children: formatToPlainString(v1Ie87p, obj11) };
         const Text = tmp7(tmp5[15]).Text;
         const intl = tmp7(tmp5[16]).intl;
         formatToPlainString = intl.formatToPlainString;
-        obj11 = { user: tmp4Result4.getName(stateFromStores1) };
+        obj11 = { user: tmp4Result5.getName(stateFromStores1) };
         v1Ie87p = tmp7(tmp5[16]).t["1Ie87p"];
-        tmp4Result4 = tmp4(tmp5[17]);
-        items6 = [ref(Text, obj10), ];
+        tmp4Result5 = userId(onKick[17]);
+        items5 = [closure_9(Text, obj10), ];
         const obj12 = { variant: "body-lg/semibold", color: "text-feedback-warning", children: stateFromStores.name };
-        items6[1] = ref(tmp7(tmp5[15]).Text, obj12);
+        items5[1] = closure_9(guildId(onKick[15]).Text, obj12);
         obj13 = obj9;
       } else {
-        obj13 = { children: items7 };
-        const obj14 = { style: tmp.conjureTitle, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: tmp7Result4.formatWithAppTag(tmp4(tmp5[19]).wVNCN7, conjureServerApp.targetAppName) };
-        const Text5 = tmp7(tmp5[15]).Text;
-        tmp7Result4 = tmp7(tmp5[18]);
-        items7 = [ref(Text5, obj14), ];
-        const obj15 = { style: tmp.conjureServerName, variant: "body-md/semibold", color: "text-muted", children: stateFromStores.name };
-        items7[1] = ref(tmp7(tmp5[15]).Text, obj15);
-      }
-      items5[1] = closure_11(c10, obj13);
-      const items8 = [closure_11(conjureServerApp, obj7), , , , , , ];
-      const obj16 = { style: tmp.blurb, variant: "heading-sm/medium", color: "text-feedback-warning", children: formatResult };
-      const Text2 = tmp7(tmp5[15]).Text;
-      if (null == conjureServerApp) {
-        const intl3 = tmp7(tmp5[16]).intl;
-        const format = intl3.format;
-        const obj17 = { user: tmp4Result5.getName(stateFromStores1) };
-        const prop = tmp7(tmp5[16]).t["/yH0UT"];
-        tmp4Result5 = tmp4(tmp5[17]);
-        formatResult = format(prop, obj17);
-      } else {
-        const intl2 = tmp7(tmp5[16]).intl;
-        formatResult = intl2.string(tmp4(tmp5[19])["tw+iyx"]);
-      }
-      items8[1] = ref(Text2, obj16);
-      let tmp23Result = null;
-      if (items3.length > 0) {
-        const obj18 = { style: tmp.removeEverything, children: ref(tmp7(tmp5[18]).ConjureRemoveEverythingField, obj19) };
-        obj19 = { checked, onChange: tmp17, items: items3 };
-        tmp23Result = tmp23(tmp27, obj18);
-      }
-      items8[2] = tmp23Result;
-      const obj20 = {
-        ref: ref1,
-        containerStyle: obj21,
-        label: intl4.string(tmp7(tmp5[16]).t["+2QEPt"]),
-        maxLength: 512,
-        onChange(current) {
-              ref.current = current;
-            }
-      };
-      obj21 = { marginBottom: tmp4(tmp5[7]).space.PX_16 };
-      const TextArea = tmp7(tmp5[20]).TextArea;
-      intl4 = tmp7(tmp5[16]).intl;
-      items8[3] = ref(TextArea, obj20);
-      const obj22 = { style: tmp.actions, children: ref(Button, obj23) };
-      obj23 = {
-        variant: "destructive",
-        text: intl5.string(tmp7(tmp5[16]).t["3glT6Z"]),
-        onPress: function handleConfirm() {
-              let tmp;
-              if (null != conjureServerApp) {
-                if (0 !== items3.length) {
-                  const tmp3 = first;
-                  if (tmp3) {
-                    _undefined({ kicking: true, kickError: false });
-                    closure_8(false);
-                    const promise = removeConjureServerAppDefault(tmp);
-                    promise.then((result) => {
-                      const tmp = result;
-                      if (tmp) {
-                        onKick();
-                      } else {
-                        _undefined({ kicking: false, kickError: false });
-                        closure_1_8(true);
-                      }
-                    }, () => {
-
-                    });
-                  }
-                }
-              }
-              closure_11();
-            },
-        disabled: tmp21.kicking
-      };
-      Button = tmp7(tmp5[21]).Button;
-      intl5 = tmp7(tmp5[16]).intl;
-      items8[4] = ref(conjureServerApp, obj22);
-      let tmp23Result4 = null;
-      if (first1) {
-        const obj24 = { style: tmp.errorText, variant: "body-md/semibold", color: "input-text-error-default", children: intl6.string(tmp4(tmp5[19]).PJ2Fkn) };
-        const Text3 = tmp7(tmp5[15]).Text;
-        intl6 = tmp7(tmp5[16]).intl;
-        tmp23Result4 = tmp23(Text3, obj24);
-      }
-      items8[5] = tmp23Result4;
-      let tmp23Result5 = null;
-      if (tmp21.kickError) {
-        const obj25 = { style: tmp.errorText, variant: "body-md/semibold", color: "input-text-error-default", children: format2(UktD5J, obj26) };
+        obj13 = { children: items6 };
+        const obj14 = { style: tmp.conjureTitle, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: tmp7Result3.formatWithAppTag(userId(onKick[19]).x6FvsZ, conjureServerApp.targetAppName) };
         const Text4 = tmp7(tmp5[15]).Text;
-        const intl7 = tmp7(tmp5[16]).intl;
-        format2 = intl7.format;
-        obj26 = { user: tmp4Result6.getName(stateFromStores1) };
-        UktD5J = tmp7(tmp5[16]).t.UktD5J;
-        tmp4Result6 = tmp4(tmp5[17]);
-        tmp23Result5 = tmp23(Text4, obj25);
+        tmp7Result3 = guildId(onKick[18]);
+        items6 = [closure_9(Text4, obj14), ];
+        const obj15 = { style: tmp.conjureServerName, variant: "body-md/semibold", color: "text-muted", children: stateFromStores.name };
+        items6[1] = closure_9(guildId(onKick[15]).Text, obj15);
       }
-      obj27 = { children: items8 };
-      items8[6] = tmp23Result5;
-      tmp23Result6 = tmp23(tmp24, obj5);
+      items4[1] = closure_11(closure_10, obj13);
+      const items7 = [closure_11(ref, obj7), , ];
+      if (tmp14) {
+        const obj16 = { style: tmp.conjureRemove, children: closure_9(tmp4Result6, obj17) };
+        obj17 = { target: tmp7Result4.conjureRemoveTargetFromServerApp(conjureServerApp), onRemoved: onKick };
+        tmp4Result6 = userId(onKick[20]);
+        tmp7Result4 = guildId(onKick[21]);
+        tmp21Result = tmp19(tmp23, obj16);
+      } else {
+        let BGF8VT;
+        const obj18 = { style: tmp.blurb, variant: "heading-sm/medium", color: "text-feedback-warning", children: formatResult };
+        const Text2 = tmp7(tmp5[15]).Text;
+        if (null == conjureServerApp) {
+          const intl3 = tmp7(tmp5[16]).intl;
+          const format = intl3.format;
+          const obj19 = { user: tmp4Result7.getName(stateFromStores1) };
+          const prop = tmp7(tmp5[16]).t["/yH0UT"];
+          tmp4Result7 = userId(onKick[17]);
+          formatResult = format(prop, obj19);
+        } else {
+          const intl2 = tmp7(tmp5[16]).intl;
+          const obj20 = { server: stateFromStores.name };
+          formatResult = intl2.formatToPlainString(tmp4(tmp5[19]).f22PGK, obj20);
+        }
+        const items8 = [closure_9(Text2, obj18), , ];
+        let tmp19Result4 = null;
+        if (null == conjureServerApp) {
+          const obj21 = {
+            ref: ref1,
+            containerStyle: obj22,
+            label: intl4.string(guildId(onKick[16]).t["+2QEPt"]),
+            maxLength: 512,
+            onChange(current) {
+                      ref.current = current;
+                    }
+          };
+          obj22 = { marginBottom: userId(onKick[7]).space.PX_16 };
+          const TextArea = tmp7(tmp5[22]).TextArea;
+          intl4 = tmp7(tmp5[16]).intl;
+          tmp19Result4 = tmp19(TextArea, obj21);
+        }
+        items8[1] = tmp19Result4;
+        const obj23 = { style: tmp.actions, children: closure_9(Button, obj25) };
+        Button = tmp7(tmp5[23]).Button;
+        const intl5 = tmp7(tmp5[16]).intl;
+        const string = intl5.string;
+        if (null == conjureServerApp) {
+          BGF8VT = tmp7(tmp5[16]).t["3glT6Z"];
+        } else {
+          BGF8VT = tmp4(tmp5[19]).BGF8VT;
+        }
+        const obj24 = { children: items8 };
+        obj25 = { variant: "destructive", text: string(BGF8VT), onPress: tmp17, disabled: tmp16.kicking };
+        items8[2] = closure_9(ref, obj23);
+        tmp21Result = tmp21(tmp22, obj24);
+      }
+      items7[1] = tmp21Result;
+      let tmp19Result5 = null;
+      if (tmp16.kickError) {
+        const obj26 = { style: tmp.errorText, variant: "body-md/semibold", color: "input-text-error-default", children: format2(UktD5J, obj27) };
+        const Text3 = tmp7(tmp5[15]).Text;
+        const intl6 = tmp7(tmp5[16]).intl;
+        format2 = intl6.format;
+        obj27 = { user: tmp4Result8.getName(stateFromStores1) };
+        UktD5J = tmp7(tmp5[16]).t.UktD5J;
+        tmp4Result8 = userId(onKick[17]);
+        tmp19Result5 = tmp19(Text3, obj26);
+      }
+      obj28 = { children: items7 };
+      items7[2] = tmp19Result5;
+      tmp19Result6 = tmp19(tmp20, obj5);
     }
   }
-  return tmp23Result6;
+  return tmp19Result6;
 });
 let result = size.fileFinishedImporting("modules/guild_moderation/native/KickConfirm.tsx");
 

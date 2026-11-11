@@ -1,15 +1,15 @@
-// Module ID: 8243
-// Function ID: 8244
+// Module ID: 8335
+// Function ID: 8336
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 6098, 1113, 3348, 6098, 1260, 2]
+// Dependencies: [19, 21, 6211, 1113, 3369, 6211, 1260, 2]
 // Exports: default
 
-// Module 8243 (ManualReviewPendingAlertModal)
+// Module 8335 (ManualReviewPendingAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import _modDef3348 from "module_3348" /* 3348 */;
-import AlertModal2 from "AlertModal" /* 6098 */;
+import _modDef3369 from "module_3369" /* 3369 */;
+import AlertModal2 from "AlertModal" /* 6211 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,5 +27,5 @@ export default function ManualReviewPendingAlertModal() {
   intl3 = intl4.intl;
   const obj4 = { impression: { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_AGE_VERIFICATION_MANUAL_REVIEW_PENDING } };
   ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_AGE_VERIFICATION_MANUAL_REVIEW_PENDING });
-  return <AlertModal title={intl.string(_modDef3348.CNm4w6)} content={intl2.string(_modDef3348["14Fje3"])} actions={null} trackingProps={obj4} />;
+  return <AlertModal title={intl.string(_modDef3369.CNm4w6)} content={intl2.string(_modDef3369["14Fje3"])} actions={null} trackingProps={obj4} />;
 };

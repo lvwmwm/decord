@@ -1,21 +1,21 @@
-// Module ID: 19484
-// Function ID: 19485
+// Module ID: 19673
+// Function ID: 19674
 // Name: shared/TextChannel
-// Dependencies: [19, 17, 6899, 2186, 4991, 1191, 6834, 21, 5142, 19114, 575, 18779, 7510, 504, 5778, 9964, 17658, 6811, 5768, 19485, 6179, 12603, 11180, 5818, 19487, 9046, 18656, 19481, 7046, 19488, 19113, 19482, 19483, 2]
+// Dependencies: [19, 17, 6951, 2186, 5092, 1191, 6896, 21, 5243, 19301, 575, 18968, 7223, 504, 5891, 9041, 17823, 6795, 5881, 19674, 6292, 13292, 10982, 5931, 19676, 7798, 18828, 19670, 7364, 19677, 19300, 19671, 19672, 2]
 
-// Module 19484 (shared/TextChannel)
+// Module 19673 (shared/TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
-import ReadStateConstants from "ReadStateConstants" /* 6834 */;
-import ChannelItemEmbeddedActivitiesDefault from "ChannelItemEmbeddedActivities" /* 18656 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19114 */;
+import ReadStateConstants from "ReadStateConstants" /* 6896 */;
+import ChannelItemEmbeddedActivitiesDefault from "ChannelItemEmbeddedActivities" /* 18828 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19301 */;
 import react from "react" /* 19 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6899 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6951 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -74,12 +74,12 @@ const memoResult = react.memo(function TextChannel(channel) {
   const id = channel.id;
   const isForumLikeChannelResult = channel.isForumLikeChannel();
   const guild_id = channel.guild_id;
-  let obj = channel(18779);
+  let obj = channel(18968);
   const channelUnreadBadgeState = obj.useChannelUnreadBadgeState(channel, flag);
   ({ newChannel, unread, resolvedUnreadSetting, mentionCount } = channelUnreadBadgeState);
   ({ optInEnabled, isMentionLowImportance } = channelUnreadBadgeState);
   const tmp5 = closure_12(flag, unread);
-  const obj2 = channel(7510);
+  const obj2 = channel(7223);
   const hasActiveThreads = obj2.useHasActiveThreads(channel).hasActiveThreads;
   const items = [ActiveJoinedThreadsStore];
   const obj3 = channel(504);
@@ -87,36 +87,36 @@ const memoResult = react.memo(function TextChannel(channel) {
   const items1 = [ChannelStore];
   const obj4 = channel(504);
   const stateFromStores1 = obj4.useStateFromStores(items1, () => ChannelStore.getChannel(channel.parent_id));
-  const tmp9 = arr4(5778)(stateFromStores1);
-  const tmp2Result = channel(9964);
+  const tmp9 = arr4(5891)(stateFromStores1);
+  const tmp2Result = channel(9041);
   const unreadThreadsCountForParent = tmp2Result.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   let tmp12 = unread;
-  const tmp8Result = arr4(17658);
+  const tmp8Result = arr4(17823);
   if (unread) {
     tmp12 = !flag;
   }
   const tmp8ResultResult = tmp8Result(channel, { unread: tmp12 });
-  const tmp2Result8 = channel(6811);
+  const tmp2Result8 = channel(6795);
   const isChannelSpoilerGated = tmp2Result8.useIsChannelSpoilerGated(channel);
-  const tmp2Result9 = channel(5768);
+  const tmp2Result9 = channel(5881);
   const fontScale = tmp2Result9.useFontScale();
   const items2 = [LocaleStore];
   const tmp2Result10 = channel(504);
   const stateFromStores2 = tmp2Result10.useStateFromStores(items2, () => locale.locale);
-  const tmp17 = arr4(19485)();
-  ({ isSubscriptionGated, needSubscriptionToAccess } = arr4(6179)(channel.id));
-  arr4(6179)(channel.id);
-  arr4 = tmp8(12603)(channel);
+  const tmp17 = arr4(19674)();
+  ({ isSubscriptionGated, needSubscriptionToAccess } = arr4(6292)(channel.id));
+  arr4(6292)(channel.id);
+  arr4 = tmp8(13292)(channel);
   if (null != tmp8ResultResult) {
     let result;
     if (!isChannelSpoilerGated) {
-      const obj5 = { channel, message: tmp8ResultResult, color: "text-muted", muted: flag, layout: channel(5818).ChannelListLayoutTypes.COMPACT };
-      const ChannelRowPreview = tmp2(11180).ChannelRowPreview;
+      const obj5 = { channel, message: tmp8ResultResult, color: "text-muted", muted: flag, layout: channel(5931).ChannelListLayoutTypes.COMPACT };
+      const ChannelRowPreview = tmp2(10982).ChannelRowPreview;
       result = closure_10(ChannelRowPreview, obj5);
     }
     dependencyMap = tmp22;
     const items3 = [arr4.length > 0, arr4];
-    const tmp2Result11 = channel(9046);
+    const tmp2Result11 = channel(7798);
     const isActivitiesInTextEnabled = tmp2Result11.useIsActivitiesInTextEnabled(channel.id);
     const memo = react.useMemo(() => {
       let tmp = null;
@@ -128,8 +128,8 @@ const memoResult = react.memo(function TextChannel(channel) {
     }, items3);
     const items4 = [tmp5.pressable, ];
     let rowSelected;
-    const tmp8Result4 = arr4(19481);
-    const PressableHighlight = tmp2(7046).PressableHighlight;
+    const tmp8Result4 = arr4(19670);
+    const PressableHighlight = tmp2(7364).PressableHighlight;
     const tmp26 = closure_11;
     if (selected) {
       rowSelected = tmp5.rowSelected;
@@ -137,20 +137,20 @@ const memoResult = react.memo(function TextChannel(channel) {
     items4[1] = rowSelected;
     const obj6 = { style: items4, underlayColor: tmp17, androidRippleConfig: getThemedRippleConfig(obj7), children: items5 };
     obj7 = { color: tmp17 };
-    const tmp2Result12 = channel(19488);
+    const tmp2Result12 = channel(19677);
     const merged = Object.assign(tmp2Result12.useTextChannelPressEvents(channel, flag2));
     const obj8 = { channel, unread, mentionCount };
-    const tmp2Result13 = channel(19113);
+    const tmp2Result13 = channel(19300);
     const merged1 = Object.assign(tmp2Result13.getChannelAccessibilityProps(obj8));
     if (selected) {
       const obj9 = { style: tmp5.selectedBorder, pointerEvents: "none" };
       selected = closure_10(View, obj9);
     }
     items5 = [selected, ];
-    const obj10 = { channel, channelCategoryName: tmp9, subtitle: result, hasActiveThreads, unreadBadge: closure_10(arr4(19482), obj11), mentionBadge: tmp8Result6(obj12), unread, resolvedUnreadSetting, mentionCount, muted: flag, channelName: arr4(5778)(channel), fontScale, isSubscriptionGated, needSubscriptionToAccess, showGuildBadgeIcon, end: tmp41 };
+    const obj10 = { channel, channelCategoryName: tmp9, subtitle: result, hasActiveThreads, unreadBadge: closure_10(arr4(19671), obj11), mentionBadge: tmp8Result6(obj12), unread, resolvedUnreadSetting, mentionCount, muted: flag, channelName: arr4(5891)(channel), fontScale, isSubscriptionGated, needSubscriptionToAccess, showGuildBadgeIcon, end: tmp41 };
     obj11 = { unread, resolvedUnreadSetting, muted: flag };
-    const tmp8Result5 = arr4(19113);
-    tmp8Result6 = arr4(19483);
+    const tmp8Result5 = arr4(19300);
+    tmp8Result6 = arr4(19672);
     if (newChannel) {
       newChannel = optInEnabled;
     }
@@ -180,7 +180,7 @@ const memoResult = react.memo(function TextChannel(channel) {
     items5[1] = tmp8Result5(obj10);
     return tmp8Result4(tmp26(PressableHighlight, obj6));
   }
-  const tmp2Result14 = channel(19487);
+  const tmp2Result14 = channel(19676);
   result = tmp2Result14.renderChannelSubtitle({ subtitle, muted: flag, channelId: id, guildId: guild_id });
 });
 let result = size.fileFinishedImporting("modules/launchpad/native/shared/TextChannel.tsx");

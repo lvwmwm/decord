@@ -1,19 +1,19 @@
-// Module ID: 7129
-// Function ID: 7130
+// Module ID: 7680
+// Function ID: 7681
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 5142, 575, 5753, 5726, 7038, 7042, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5866, 5839, 7385, 7380, 2]
 // Exports: TableRowGroup
 
-// Module 7129 (TableRowGroup)
+// Module 7680 (TableRowGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5726 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import TableRowDivider from "TableRowDivider" /* 7038 */;
-import react2 from "react" /* 7042 */;
+import useToken from "useToken" /* 5839 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import react2 from "react" /* 7380 */;
+import TableRowDivider from "TableRowDivider" /* 7385 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c1, importDefault;

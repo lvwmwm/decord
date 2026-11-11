@@ -1,17 +1,17 @@
-// Module ID: 15253
-// Function ID: 15254
+// Module ID: 12070
+// Function ID: 12071
 // Name: UserProfileWidgetGameCommentInput
-// Dependencies: [32, 19, 502, 8831, 21, 8839, 7319, 12562, 1113, 7856, 2]
+// Dependencies: [32, 19, 502, 8413, 21, 8480, 7793, 12029, 1113, 7292, 2]
 // Exports: default
 
-// Module 15253 (UserProfileWidgetGameCommentInput)
+// Module 12070 (UserProfileWidgetGameCommentInput)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import TextArea2 from "TextArea" /* 7319 */;
-import GameWidgetLimits from "GameWidgetLimits" /* 7856 */;
-import Constants from "Constants" /* 8831 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8839 */;
-import WidgetUtils from "WidgetUtils" /* 12562 */;
+import GameWidgetLimits from "GameWidgetLimits" /* 7292 */;
+import TextArea2 from "TextArea" /* 7793 */;
+import Constants from "Constants" /* 8413 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8480 */;
+import WidgetUtils from "WidgetUtils" /* 12029 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

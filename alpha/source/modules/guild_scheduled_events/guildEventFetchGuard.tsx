@@ -1,14 +1,14 @@
-// Module ID: 9058
-// Function ID: 9059
+// Module ID: 7910
+// Function ID: 7911
 // Name: guildEventFetchGuard
-// Dependencies: [1089, 11, 9059, 559, 2]
+// Dependencies: [1089, 11, 7911, 559, 2]
 // Exports: forgetTransientGuildEventFetchFailures, guardGuildEventFetch, isGuildEventUnavailableError, isPlausibleGuildEventTarget, onGuildEventFetchRetryable, resetGuildEventFetchGuardForTest
 
-// Module 9058 (guildEventFetchGuard)
+// Module 7910 (guildEventFetchGuard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 9059 */;
+import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 7911 */;
 import size from "module_2" /* 2 */;
 
 let set3;
@@ -18,7 +18,7 @@ const notifyRetryable2 = function notifyRetryable(arg0) {
   obj = map7;
   if (null != value) {
     obj.delete(arg0);
-    const item = value.forEach(f127106);
+    const item = value.forEach(f127715);
   }
 };
 const guard2 = function guard(arg0, arg1, arg2) {
@@ -123,7 +123,7 @@ const guard2 = function guard(arg0, arg1, arg2) {
         let value20 = map7.get(value);
         if (null != value20) {
           let deleteResult6 = obj7.delete(value);
-          let item = value20.forEach(f127106);
+          let item = value20.forEach(f127715);
         }
         if (obj5.size <= map6) {
           break;
@@ -238,7 +238,7 @@ const guard2 = function guard(arg0, arg1, arg2) {
               let value10 = map7.get(value);
               if (null != value10) {
                 let deleteResult5 = obj4.delete(value);
-                let item = value10.forEach(f127106);
+                let item = value10.forEach(f127715);
               }
               if (obj2.size <= map6) {
                 break;
@@ -252,7 +252,7 @@ const guard2 = function guard(arg0, arg1, arg2) {
             const tmp = closure_1_0;
             if (null != value) {
               obj.delete(tmp);
-              const item = value.forEach(f127106);
+              const item = value.forEach(f127715);
             }
           }));
           throw error;
@@ -352,7 +352,7 @@ function reset() {
   }
   map5.clear();
 }
-const f127106 = (fn) => fn();
+const f127715 = (fn) => fn();
 let c3 = 1024;
 const UTCResult = Date.UTC(2021, 0, 1);
 let result = 15 * DurationsDefault.Millis.MINUTE;

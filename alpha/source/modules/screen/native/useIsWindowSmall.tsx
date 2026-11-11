@@ -1,11 +1,11 @@
-// Module ID: 9970
-// Function ID: 9971
+// Module ID: 9050
+// Function ID: 9051
 // Name: useIsWindowSmall
-// Dependencies: [5320, 2]
+// Dependencies: [5433, 2]
 // Exports: default, useIsWindowSmall
 
-// Module 9970 (useIsWindowSmall)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5320 */;
+// Module 9050 (useIsWindowSmall)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5433 */;
 import size from "module_2" /* 2 */;
 
 const useWindowSizeClassifierDefault = useWindowSizeClassifier;

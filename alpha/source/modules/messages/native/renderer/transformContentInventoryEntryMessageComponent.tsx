@@ -1,25 +1,25 @@
-// Module ID: 8790
-// Function ID: 8791
+// Module ID: 12337
+// Function ID: 12338
 // Name: transformContentInventoryEntryMessageComponent
-// Dependencies: [17, 2162, 2186, 1385, 2142, 8791, 6175, 1414, 8218, 8792, 8793, 5139, 8795, 1089, 1113, 8633, 8797, 8685, 8798, 8800, 8801, 8796, 2]
+// Dependencies: [17, 2162, 2186, 1385, 2142, 8355, 6288, 1414, 8310, 8472, 12338, 5240, 8353, 1089, 1113, 9274, 7375, 7973, 7249, 12340, 12341, 8354, 2]
 // Exports: transformToRowGeneratedContentInventoryEntryComponent
 
-// Module 8790 (transformContentInventoryEntryMessageComponent)
+// Module 12337 (transformContentInventoryEntryMessageComponent)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
 import Constants from "Constants" /* 2142 */;
-import ColorUtils from "ColorUtils" /* 5139 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6175 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8218 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8633 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8791 */;
-import useAvatarColor from "useAvatarColor" /* 8792 */;
-import useHeroColors from "useHeroColors" /* 8793 */;
-import utils from "utils" /* 8795 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8797 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8798 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 8801 */;
+import ColorUtils from "ColorUtils" /* 5240 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7249 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7375 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8310 */;
+import utils from "utils" /* 8353 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8355 */;
+import useAvatarColor from "useAvatarColor" /* 8472 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9274 */;
+import useHeroColors from "useHeroColors" /* 12338 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12341 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -71,7 +71,7 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
           iconURL = application.getIconURL(tmp39.LARGE);
         }
         if (iconURL == null) {
-          iconURL = Image.resolveAssetSource(AssetRegistryDefault).uri;
+          iconURL = Image.resolveAssetSource(AssetRegistryDefault2).uri;
         }
         let tmp46 = assetImage;
         if (assetImage == null) {
@@ -79,7 +79,7 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
         }
         const obj27 = Image;
         const tmp47 = importDefault;
-        if (tmp46 === Image.resolveAssetSource(AssetRegistryDefault).uri) {
+        if (tmp46 === Image.resolveAssetSource(AssetRegistryDefault2).uri) {
           tmp48 = items;
         } else {
           const tmpResult29 = useAvatarColor;
@@ -116,8 +116,8 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
             const obj3 = { text: sum };
             items2.push(obj3);
           }
-          tmp50 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8800)).uri };
-          const obj4 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8800)).uri };
+          tmp50 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(12340)).uri };
+          const obj4 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(12340)).uri };
         }
         tmp21 = tmp50;
       } else if (ContentInventoryEntryType.ContentInventoryEntryType.TOP_ARTIST === content_type) {
@@ -135,7 +135,7 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
             const tmpResult36 = ColorUtils;
             items3[1] = tmpResult36.hexToRgba(secondaryColor3);
             const tmpResult37 = utils;
-            const trait = tmpResult37.getTrait(contentInventoryEntry, tmp(8796).ContentInventoryTraitType.AGGREGATE_COUNT);
+            const trait = tmpResult37.getTrait(contentInventoryEntry, tmp(8354).ContentInventoryTraitType.AGGREGATE_COUNT);
             let count;
             if (trait != null) {
               count = trait.count;
@@ -145,7 +145,7 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
               const intl = tmp(1113).intl;
               const obj5 = { count };
               const push2 = items4.push;
-              const obj6 = { badgeUrl: Image.resolveAssetSource(AssetRegistryDefault2).uri, text: formatToPlainStringResult1 };
+              const obj6 = { badgeUrl: Image.resolveAssetSource(AssetRegistryDefault3).uri, text: formatToPlainStringResult1 };
               formatToPlainStringResult1 = intl.formatToPlainString(intl5.t.HtifnG, obj5);
               push2(obj6);
               tmp31 = { imageUrl: image_url2, title: contentInventoryEntry.extra.artist.name, subtitles: items4, gradientColors: items3, platformIconUrl: Image.resolveAssetSource(AssetRegistryDefault4).uri };
@@ -192,11 +192,11 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
           let tmp7;
           let uri = application1.getIconURL(ImageSizes.LARGE);
           if (uri == null) {
-            uri = Image.resolveAssetSource(AssetRegistryDefault).uri;
+            uri = Image.resolveAssetSource(AssetRegistryDefault2).uri;
           }
           const obj = Image;
           const tmp6 = importDefault;
-          if (uri === Image.resolveAssetSource(AssetRegistryDefault).uri) {
+          if (uri === Image.resolveAssetSource(AssetRegistryDefault2).uri) {
             tmp7 = items;
           } else {
             const tmpResult42 = useAvatarColor;
@@ -216,7 +216,7 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
             const items8 = [];
             const push = items8.push;
             const timestamp = message.timestamp;
-            const obj10 = { badgeUrl: obj.resolveAssetSource(tmp6(8685)).uri };
+            const obj10 = { badgeUrl: obj.resolveAssetSource(tmp6(7973)).uri };
             const time = timestamp.getTime();
             const obj11 = { text: tmpResult46.formatEntryTimestamp(contentInventoryEntry, LocaleStore.locale, time), ariaDescription: formatEntryTimestamp(contentInventoryEntry, locale, time, obj12) };
             const merged = Object.assign(obj10);
@@ -260,9 +260,9 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
     let tmp61;
     let uri2 = application2.getIconURL(ImageSizes.LARGE);
     if (uri2 == null) {
-      uri2 = Image.resolveAssetSource(AssetRegistryDefault).uri;
+      uri2 = Image.resolveAssetSource(AssetRegistryDefault2).uri;
     }
-    if (uri2 === Image.resolveAssetSource(AssetRegistryDefault).uri) {
+    if (uri2 === Image.resolveAssetSource(AssetRegistryDefault2).uri) {
       tmp61 = items;
     } else {
       const tmpResult49 = useAvatarColor;
@@ -292,7 +292,7 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
           const intl3 = tmp(1113).intl;
           const _HermesInternal2 = HermesInternal;
           const obj17 = { hours: rounded };
-          const obj18 = { badgeUrl: Image.resolveAssetSource(AssetRegistryDefault2).uri, text: combined };
+          const obj18 = { badgeUrl: Image.resolveAssetSource(AssetRegistryDefault3).uri, text: combined };
           combined = "" + stringResult + " - " + intl3.formatToPlainString(tmp(1113).t.C0AxoR, obj17);
           const push4 = items10.push;
           push4(obj18);
@@ -300,7 +300,7 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
       } else {
         const push3 = items10.push;
         const timestamp2 = message.timestamp;
-        const obj19 = { badgeUrl: Image.resolveAssetSource(AssetRegistryDefault3).uri };
+        const obj19 = { badgeUrl: Image.resolveAssetSource(AssetRegistryDefault).uri };
         const time1 = timestamp2.getTime();
         const obj20 = { text: tmpResult55.formatEntryTimestamp(contentInventoryEntry, LocaleStore.locale, time1), ariaDescription: formatEntryTimestamp2(contentInventoryEntry, locale2, time1, obj21) };
         const merged3 = Object.assign(obj19);

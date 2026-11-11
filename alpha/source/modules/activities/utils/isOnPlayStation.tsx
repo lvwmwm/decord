@@ -1,11 +1,11 @@
-// Module ID: 15114
-// Function ID: 15115
+// Module ID: 15604
+// Function ID: 15605
 // Name: isOnPlayStation
-// Dependencies: [9834, 2]
+// Dependencies: [7406, 2]
 // Exports: default
 
-// Module 15114 (isOnPlayStation)
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9834 */;
+// Module 15604 (isOnPlayStation)
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7406 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isOnPlayStation.tsx");

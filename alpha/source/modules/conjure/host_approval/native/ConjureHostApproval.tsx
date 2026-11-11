@@ -1,21 +1,21 @@
-// Module ID: 12311
-// Function ID: 12312
+// Module ID: 13112
+// Function ID: 13113
 // Name: host_approval/ConjureHostApproval
-// Dependencies: [19, 17, 21, 5142, 575, 12312, 12313, 5753, 1113, 4028, 6161, 5760, 11029, 7129, 7041, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 13113, 13114, 5866, 1113, 4079, 6274, 5873, 7324, 7680, 7379, 2]
 // Exports: ConjureAllowedHostsSetting, ConjureHostApprovalCards
 
-// Module 12311 (host_approval/ConjureHostApproval)
+// Module 13112 (host_approval/ConjureHostApproval)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import _modDef4028 from "module_4028" /* 4028 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import ConjureHostApproval from "ConjureHostApproval" /* 11029 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12312 */;
-import ConjureAwaitingUser from "ConjureAwaitingUser" /* 12313 */;
+import _modDef4079 from "module_4079" /* 4079 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import ConjureHostApproval from "ConjureHostApproval" /* 7324 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 13113 */;
+import ConjureAwaitingUser from "ConjureAwaitingUser" /* 13114 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -46,25 +46,25 @@ function ConjureHostApprovalCard(arg0) {
   items = [, , , , ];
   const tmp5 = ConjureNativeCardSurfaceDefault;
   items[0] = closure_4(ConjureAwaitingUser.ConjureAwaitingPulseRing, {});
-  const obj2 = { variant: "body-xs/semibold", color: "text-brand", children: intl.string(_modDef4028.W4DsVo) };
+  const obj2 = { variant: "body-xs/semibold", color: "text-brand", children: intl.string(_modDef4079.W4DsVo) };
   const Text = Text_Text.Text;
   intl = intl7.intl;
   items[1] = closure_4(Text, obj2);
-  const obj3 = { variant: "body-sm/normal", color: "text-default", children: intl2.format(_modDef4028.E4Gc7e, { host }) };
+  const obj3 = { variant: "body-sm/normal", color: "text-default", children: intl2.format(_modDef4079.E4Gc7e, { host }) };
   const Text2 = Text_Text.Text;
   intl2 = intl7.intl;
   items[2] = closure_4(Text2, obj3);
   let tmp6Result = null;
   if ("" !== reason) {
-    const obj4 = { variant: "body-sm/normal", color: "text-muted", children: intl3.format(_modDef4028["5poqiN"], obj5) };
-    const Text3 = tmp7(5753).Text;
+    const obj4 = { variant: "body-sm/normal", color: "text-muted", children: intl3.format(_modDef4079["5poqiN"], obj5) };
+    const Text3 = tmp7(5866).Text;
     intl3 = tmp7(1113).intl;
     obj5 = { reason };
     tmp6Result = tmp6(Text3, obj4);
   }
   items[3] = tmp6Result;
   const obj6 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = tmp7(6161).Stack;
+  const Stack = tmp7(6274).Stack;
   const obj7 = {
     variant: "primary",
     size: "sm",
@@ -72,9 +72,9 @@ function ConjureHostApprovalCard(arg0) {
       const obj = ConjureHostApproval;
       return obj.answerHostApproval(require, c1, "once");
     },
-    text: intl4.string(_modDef4028.B05C3K)
+    text: intl4.string(_modDef4079.B05C3K)
   };
-  const Button = tmp7(5760).Button;
+  const Button = tmp7(5873).Button;
   intl4 = tmp7(1113).intl;
   items1 = [closure_4(Button, obj7), , ];
   const obj8 = {
@@ -84,9 +84,9 @@ function ConjureHostApprovalCard(arg0) {
       const obj = ConjureHostApproval;
       return obj.answerHostApproval(require, c1, "always");
     },
-    text: intl5.string(_modDef4028["rGv+om"])
+    text: intl5.string(_modDef4079["rGv+om"])
   };
-  const Button2 = tmp7(5760).Button;
+  const Button2 = tmp7(5873).Button;
   intl5 = tmp7(1113).intl;
   items1[1] = closure_4(Button2, obj8);
   const obj9 = {
@@ -96,9 +96,9 @@ function ConjureHostApprovalCard(arg0) {
       const obj = ConjureHostApproval;
       return obj.answerHostApproval(require, c1, "deny");
     },
-    text: intl6.string(_modDef4028.vWkaSE)
+    text: intl6.string(_modDef4079.vWkaSE)
   };
-  const Button3 = tmp7(5760).Button;
+  const Button3 = tmp7(5873).Button;
   intl6 = tmp7(1113).intl;
   items1[2] = closure_4(Button3, obj9);
   items[4] = closure_5(Stack, obj6);
@@ -117,7 +117,7 @@ const result = size.fileFinishedImporting("modules/conjure/host_approval/native/
 export function ConjureHostApprovalCards(projectId) {
   projectId = projectId.projectId;
   const tmp = closure_6();
-  let obj = projectId(11029);
+  let obj = projectId(7324);
   const conjureHostApprovals = obj.useConjureHostApprovals(projectId);
   let tmp2 = null;
   if (0 !== conjureHostApprovals.length) {
@@ -138,18 +138,18 @@ export function ConjureAllowedHostsSetting(projectId) {
   let intl3;
   let mapped;
   projectId = projectId.projectId;
-  let obj = projectId(11029);
+  let obj = projectId(7324);
   const conjureAllowedHosts = obj.useConjureAllowedHosts(projectId);
   let tmp4Result2 = null;
   if (null != conjureAllowedHosts) {
-    let obj2 = { title: intl.string(_modDef4028.Ufr2wk), description: intl2.string(_modDef4028.wremls), hasIcons: false, children: mapped };
-    const TableRowGroup = tmp(7129).TableRowGroup;
+    let obj2 = { title: intl.string(_modDef4079.Ufr2wk), description: intl2.string(_modDef4079.wremls), hasIcons: false, children: mapped };
+    const TableRowGroup = tmp(7680).TableRowGroup;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     const tmp5 = importDefault;
     if (0 === conjureAllowedHosts.length) {
-      let obj3 = { label: intl3.string(tmp5(4028).AweHIi) };
-      let TableRow = tmp(7041).TableRow;
+      let obj3 = { label: intl3.string(tmp5(4079).AweHIi) };
+      let TableRow = tmp(7379).TableRow;
       intl3 = tmp(1113).intl;
       mapped = tmp4(TableRow, obj3);
     } else {
@@ -165,8 +165,8 @@ export function ConjureAllowedHostsSetting(projectId) {
         obj2 = {
           variant: "secondary",
           size: "sm",
-          text: intl.string(_modDef4028["4r+tVj"]),
-          accessibilityLabel: intl2.formatToPlainString(_modDef4028.mocW6h, obj3),
+          text: intl.string(_modDef4079["4r+tVj"]),
+          accessibilityLabel: intl2.formatToPlainString(_modDef4079.mocW6h, obj3),
           onPress() {
             const obj = ConjureHostApproval;
             return obj.removeAllowedHost(projectId, label);

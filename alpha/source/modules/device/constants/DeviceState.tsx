@@ -1,9 +1,9 @@
-// Module ID: 6038
-// Function ID: 6039
+// Module ID: 6151
+// Function ID: 6152
 // Name: constants/DeviceState
 // Dependencies: [2]
 
-// Module 6038 (constants/DeviceState)
+// Module 6151 (constants/DeviceState)
 import size from "module_2" /* 2 */;
 
 const obj = { NOMINAL: "NOMINAL", FAIR: "FAIR", SERIOUS: "SERIOUS", CRITICAL: "CRITICAL", UNKNOWN: "UNKNOWN" };

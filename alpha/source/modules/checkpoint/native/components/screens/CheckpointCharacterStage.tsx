@@ -1,35 +1,25 @@
-// Module ID: 13716
-// Function ID: 13717
+// Module ID: 14198
+// Function ID: 14199
 // Name: CheckpointCharacterStage
-// Dependencies: [32, 19, 17, 13681, 21, 5142, 13717, 1493, 504, 5741, 13718, 13884, 13886, 13888, 13889, 13890, 6567, 5207, 2]
+// Dependencies: [32, 19, 17, 14150, 21, 5243, 14159, 1493, 504, 5854, 14199, 14365, 14367, 14369, 14370, 14371, 6680, 5320, 2]
 // Exports: default
 
-// Module 13716 (CheckpointCharacterStage)
+// Module 14198 (CheckpointCharacterStage)
 import Fragment from "Fragment" /* 21 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13718 */;
-import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 13884 */;
+import get_initialized from "get initialized" /* 504 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 14199 */;
+import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 14365 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 13681 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import CheckpointStore from "CheckpointStore" /* 14150 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
 let hasOwnProperty;
 let obj2;
-let react = react_mod;
-({ View: hasOwnProperty, StyleSheet } = react_native);
-const jsx = Fragment.jsx;
-let createStyles = createStyles_mod;
-let obj = { container: { flexGrow: 1 }, rive: obj2 };
-obj2 = {};
-createStyles = createStyles.createStyles;
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-let closure_8 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/CheckpointCharacterStage.tsx");
-
-export default function CheckpointCharacterStage(stage) {
+function CheckpointCharacterStage(stage) {
   let c4;
   let dataBinding;
   let height;
@@ -128,4 +118,25 @@ export default function CheckpointCharacterStage(stage) {
   obj9 = { ref, artboard: "AB_Master", stateMachine: "SM_Master", fit: "layout", alignment: "center", referencedAssets: tmp13, onRiveFileChange: tmp16, dataBinding, onDataBindingChange, style: tmp.rive };
   tmp5Result = stage(tmp2[16]);
   return textureScale(tmp23, obj8);
+}
+let react = react_mod;
+({ View: hasOwnProperty, StyleSheet } = react_native);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { container: { flexGrow: 1 }, rive: obj2 };
+obj2 = {};
+createStyles = createStyles.createStyles;
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+let closure_8 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/CheckpointCharacterStage.tsx");
+
+export default function CheckpointCharacterStageGate(arg0) {
+  const items = [CheckpointStore];
+  let tmp = null;
+  const obj = get_initialized;
+  if (obj.useStateFromStores(items, () => CheckpointStore.isCharacterCreatorEnabled)) {
+    const merged = Object.assign(arg0);
+    tmp = <CheckpointCharacterStage />;
+  }
+  return tmp;
 };

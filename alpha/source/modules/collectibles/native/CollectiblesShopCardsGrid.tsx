@@ -1,18 +1,18 @@
-// Module ID: 18226
-// Function ID: 18227
+// Module ID: 18397
+// Function ID: 18398
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 7799, 21, 5142, 9546, 9549, 18225, 12, 2]
+// Dependencies: [19, 17, 8419, 21, 5243, 10349, 9353, 18396, 12, 2]
 // Exports: default
 
-// Module 18226 (CollectiblesShopCardsGrid)
+// Module 18397 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9546 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9549 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9353 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 10349 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7799 */;
-import createStyles from "createStyles" /* 5142 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8419 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -60,7 +60,7 @@ export default function CollectiblesShopCardsGrid(products) {
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom } = products);
   const rowContainer = closure_8();
-  let obj = products(18225);
+  let obj = products(18396);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;
@@ -78,7 +78,7 @@ export default function CollectiblesShopCardsGrid(products) {
     onScroll,
     ref,
     onLayout,
-    contentContainerStyle: { gap: products(9546).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" },
+    contentContainerStyle: { gap: products(10349).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" },
     children: memo.map((arr, index) => {
       let closure_0 = index;
       let obj = {
@@ -102,6 +102,6 @@ export default function CollectiblesShopCardsGrid(products) {
       return cardWidth(muteBundleStaticBackground, obj, index);
     })
   };
-  ({ gap: products(9546).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
+  ({ gap: products(10349).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
   return cardWidth(rowContainer, obj2);
 };

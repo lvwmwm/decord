@@ -1,13 +1,13 @@
-// Module ID: 9006
-// Function ID: 9007
+// Module ID: 10147
+// Function ID: 10148
 // Name: WaterwheelsDiscoverExperiment
-// Dependencies: [1246, 8639, 502, 1385, 1449, 9007, 504, 2]
+// Dependencies: [1246, 9280, 502, 1385, 1449, 10148, 504, 2]
 // Exports: getWaterwheelsDiscoverEnabled, useWaterwheelsDiscoverEnabled
 
-// Module 9006 (WaterwheelsDiscoverExperiment)
-import ICYMILabFeature from "ICYMILabFeature" /* 9007 */;
+// Module 10147 (WaterwheelsDiscoverExperiment)
+import ICYMILabFeature from "ICYMILabFeature" /* 10148 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import LabFeatureStore from "LabFeatureStore" /* 8639 */;
+import LabFeatureStore from "LabFeatureStore" /* 9280 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
@@ -41,15 +41,15 @@ export function getWaterwheelsDiscoverEnabled(fetchDehydrated) {
   }
   return enabled;
 }
-export function useWaterwheelsDiscoverEnabled(guilds_bar) {
-  _require = guilds_bar;
+export function useWaterwheelsDiscoverEnabled(WaterwheelsDiscoverPanel_str) {
+  _require = WaterwheelsDiscoverPanel_str;
   let obj = require("get initialized");
   const items = [ApexExperimentStore, AuthenticationStore, LabFeatureStore, UserStore];
-  const items1 = [guilds_bar];
+  const items1 = [WaterwheelsDiscoverPanel_str];
   return obj.useStateFromStores(items, () => {
     const currentUser = UserStore.getCurrentUser();
     let flag;
-    const tmp = guilds_bar;
+    const tmp = WaterwheelsDiscoverPanel_str;
     if (currentUser != null) {
       flag = currentUser.isStaff();
     }

@@ -1,19 +1,21 @@
-// Module ID: 13245
-// Function ID: 13246
+// Module ID: 10485
+// Function ID: 10486
 // Name: useConjureProjectShareTarget
-// Dependencies: [5013, 504, 1113, 4028, 2]
-// Exports: default, isConjureProjectWithoutServer
+// Dependencies: [5114, 504, 1113, 4079, 2]
+// Exports: default, isConjureProjectWithoutServer, useConjureProjectShareTargetDetails
 
-// Module 13245 (useConjureProjectShareTarget)
-import _modDef4028 from "module_4028" /* 4028 */;
-import GuildStore from "GuildStore" /* 5013 */;
+// Module 10485 (useConjureProjectShareTarget)
+import _modDef4079 from "module_4079" /* 4079 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
-function useConjureProjectShareTargetDetails(project) {
+const result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectShareTarget.tsx");
+
+export default function useConjureProjectShareTarget(guild_id) {
   let intl;
-  let guild_id;
-  if (project != null) {
-    guild_id = project.guild_id;
+  guild_id = undefined;
+  if (guild_id != null) {
+    guild_id = guild_id.guild_id;
   }
   let tmp2 = guild_id;
   const items = [GuildStore];
@@ -31,43 +33,69 @@ function useConjureProjectShareTargetDetails(project) {
     return tmp2;
   }, items1);
   let tmp5 = null;
-  if (null != project) {
-    tmp5 = null;
-    if (null == project.install_scope_setup) {
-      let tmp6;
-      if ("user" === project.install_scope) {
-        const obj2 = { kind: "user", label: intl.string(_modDef4028.KxFFKT) };
-        intl = tmp2(1113).intl;
-        tmp6 = obj2;
-      } else {
-        tmp6 = null;
-        if ("guild" === project.install_scope) {
-          tmp6 = null;
-          if (null != stateFromStores) {
-            tmp6 = { kind: "guild", label: stateFromStores.name, guild: stateFromStores };
-            const obj3 = { kind: "guild", label: stateFromStores.name, guild: stateFromStores };
-          }
-        }
+  if (null != guild_id) {
+    let tmp6;
+    if ("user" === guild_id.install_scope) {
+      const obj2 = { kind: "user", label: intl.string(_modDef4079.KxFFKT) };
+      intl = tmp2(1113).intl;
+      tmp6 = obj2;
+    } else {
+      tmp6 = null;
+      if (null != stateFromStores) {
+        tmp6 = { kind: "guild", label: stateFromStores.name, guild: stateFromStores };
+        const obj3 = { kind: "guild", label: stateFromStores.name, guild: stateFromStores };
       }
-      tmp5 = tmp6;
     }
+    tmp5 = tmp6;
   }
-  return tmp5;
-}
-const result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectShareTarget.tsx");
-
-export default function useConjureProjectShareTarget(project) {
-  const tmp = useConjureProjectShareTargetDetails(project);
   let label;
-  if (tmp != null) {
-    label = tmp.label;
+  if (tmp5 != null) {
+    label = tmp5.label;
   }
   if (label == null) {
     label = null;
   }
   return label;
 };
-export { useConjureProjectShareTargetDetails };
+export function useConjureProjectShareTargetDetails(project) {
+  let intl;
+  let guild_id;
+  if (project != null) {
+    guild_id = project.guild_id;
+  }
+  const items = [GuildStore];
+  const items1 = [guild_id];
+  const obj = guild_id(504);
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let tmp2 = null;
+    if (null != guild_id) {
+      let guild = GuildStore.getGuild(tmp);
+      if (guild == null) {
+        guild = null;
+      }
+      tmp2 = guild;
+    }
+    return tmp2;
+  }, items1);
+  let tmp5 = null;
+  const tmp2 = guild_id;
+  if (null != project) {
+    let tmp6;
+    if ("user" === project.install_scope) {
+      const obj2 = { kind: "user", label: intl.string(_modDef4079.KxFFKT) };
+      intl = tmp2(1113).intl;
+      tmp6 = obj2;
+    } else {
+      tmp6 = null;
+      if (null != stateFromStores) {
+        tmp6 = { kind: "guild", label: stateFromStores.name, guild: stateFromStores };
+        const obj3 = { kind: "guild", label: stateFromStores.name, guild: stateFromStores };
+      }
+    }
+    tmp5 = tmp6;
+  }
+  return tmp5;
+}
 export function isConjureProjectWithoutServer(project) {
-  return "guild" === project.install_scope && null == project.guild_id && null == project.install_scope_setup;
+  return "guild" === project.install_scope && null == project.guild_id;
 }

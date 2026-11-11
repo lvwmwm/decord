@@ -1,10 +1,10 @@
-// Module ID: 17369
-// Function ID: 17370
+// Module ID: 17535
+// Function ID: 17536
 // Name: OrbsArcadeTypes
 // Dependencies: [32, 2]
 // Exports: orbsArcadeApplicationGameFromServer, orbsArcadeClaimedRewardFromServer, orbsArcadeGamesFromServer
 
-// Module 17369 (OrbsArcadeTypes)
+// Module 17535 (OrbsArcadeTypes)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,12 +25,19 @@ function _rewardFromServer(type) {
 function orbsArcadeGameFromServer(game) {
   let rewards;
   let tmp;
-  obj = { id: game.id, versionId: game.version_id, applicationId: game.application_id, name: game.name, instructions: game.instructions, startsAt: game.starts_at, endsAt: game.ends_at, orbCost: game.orb_cost, numFreePlays: game.num_free_plays, windowDurationHours: game.window_duration_hours, windowStartsAt: game.window_starts_at, windowEndsAt: game.window_ends_at, enrollmentClosesAt: game.enrollment_closes_at, asset: game.asset, heroVideoAsset: tmp, rewards: rewards.map(_rewardFromServer) };
+  let tmp2;
+  obj = { id: game.id, versionId: game.version_id, applicationId: game.application_id, name: game.name, instructions: game.instructions, startsAt: game.starts_at, endsAt: game.ends_at, orbCost: game.orb_cost, numFreePlays: game.num_free_plays, windowDurationHours: game.window_duration_hours, windowStartsAt: game.window_starts_at, windowEndsAt: game.window_ends_at, enrollmentClosesAt: game.enrollment_closes_at, asset: game.asset, heroVideoAsset: tmp, sheetVideoAsset: tmp2, rewards: rewards.map(_rewardFromServer) };
   tmp = null;
   if (null != game.hero_video_asset) {
     size = { url: null, altText: null, mimeType: null, width: null, height: null };
     ({ url: obj2.url, alt_text: obj2.altText, mime_type: obj2.mimeType, width: obj2.width, height: obj2.height } = game.hero_video_asset);
     tmp = size;
+  }
+  tmp2 = null;
+  if (null != game.sheet_video_asset) {
+    const size1 = { url: null, altText: null, mimeType: null, width: null, height: null };
+    ({ url: obj3.url, alt_text: obj3.altText, mime_type: obj3.mimeType, width: obj3.width, height: obj3.height } = game.sheet_video_asset);
+    tmp2 = size1;
   }
   rewards = game.rewards;
   return obj;

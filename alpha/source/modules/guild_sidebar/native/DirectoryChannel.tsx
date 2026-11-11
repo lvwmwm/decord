@@ -1,19 +1,19 @@
-// Module ID: 18630
-// Function ID: 18631
+// Module ID: 18802
+// Function ID: 18803
 // Name: DirectoryChannel
-// Dependencies: [19, 4991, 5072, 5884, 6834, 21, 5142, 575, 563, 1099, 10930, 18540, 9171, 2]
+// Dependencies: [19, 5092, 5173, 5997, 6896, 21, 5243, 575, 563, 1099, 10831, 18712, 8352, 2]
 
-// Module 18630 (DirectoryChannel)
+// Module 18802 (DirectoryChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5884 */;
-import ReadStateConstants from "ReadStateConstants" /* 6834 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10930 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
+import ReadStateConstants from "ReadStateConstants" /* 6896 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10831 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildChannelStore from "GuildChannelStore" /* 5072 */;
-import createStyles from "createStyles" /* 5142 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildChannelStore from "GuildChannelStore" /* 5173 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -54,9 +54,9 @@ const memoResult = react.memo(function DirectoryChannel(guildId) {
   let tmp7 = null;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
-    id(18540);
+    id(18712);
     const obj4 = { selected };
-    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(9171)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
+    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(8352)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
   }
   return tmp7;
 });

@@ -1,22 +1,22 @@
-// Module ID: 12142
-// Function ID: 12143
+// Module ID: 12953
+// Function ID: 12954
 // Name: VoiceChatHeaderIcon
-// Dependencies: [19, 17, 6900, 1072, 21, 5142, 575, 5716, 504, 12071, 12, 5201, 7046, 1187, 2]
+// Dependencies: [19, 17, 6952, 1072, 21, 5243, 575, 5829, 504, 12868, 12, 5314, 7364, 1187, 2]
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 12142 (VoiceChatHeaderIcon)
+// Module 12953 (VoiceChatHeaderIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import native2 from "native" /* 5201 */;
-import NavigatorConstants from "NavigatorConstants" /* 5716 */;
-import Pressables from "Pressables" /* 7046 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 12071 */;
+import native2 from "native" /* 5314 */;
+import NavigatorConstants from "NavigatorConstants" /* 5829 */;
+import Pressables from "Pressables" /* 7364 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 12868 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6900 */;
+import ReadStateStore from "ReadStateStore" /* 6952 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

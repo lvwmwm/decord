@@ -1,26 +1,26 @@
-// Module ID: 5079
-// Function ID: 5080
+// Module ID: 5180
+// Function ID: 5181
 // Name: PermissionUtils
-// Dependencies: [5047, 5075, 5076, 4995, 5009, 5049, 502, 4991, 5054, 5048, 5013, 1385, 1072, 1084, 12, 5080, 5061, 11, 2116, 5081, 5052, 2]
+// Dependencies: [5148, 5176, 5177, 5096, 5110, 5150, 502, 5092, 5155, 5149, 5114, 1385, 1072, 1084, 12, 5181, 5162, 11, 2116, 5182, 5153, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 5079 (PermissionUtils)
+// Module 5180 (PermissionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Server from "Server" /* 2116 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 5049 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 5052 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5080 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 5081 */;
-import ImpersonateStore from "ImpersonateStore" /* 5047 */;
-import LurkingStore from "LurkingStore" /* 5075 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5076 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
-import GuildRecord from "GuildRecord" /* 5009 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5150 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 5153 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5181 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 5182 */;
+import ImpersonateStore from "ImpersonateStore" /* 5148 */;
+import LurkingStore from "LurkingStore" /* 5176 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5177 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
+import GuildRecord from "GuildRecord" /* 5110 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildMemberStore from "GuildMemberStore" /* 5054 */;
-import GuildRoleStore from "GuildRoleStore" /* 5048 */;
-import GuildStore from "GuildStore" /* 5013 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import GuildRoleStore from "GuildRoleStore" /* 5149 */;
+import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
@@ -91,7 +91,7 @@ function applyOverwrites(id, member, deserializeResult, overwrites) {
       found = tmp19Result7.filter(addResult4, closure_29);
     }
     found1 = found;
-    const tmp28Result = tmp28(5061);
+    const tmp28Result = tmp28(5162);
     const tmp34 = tmp28Result.isMemberCommunicationDisabled(member) && !hasItem;
     if (tmp34) {
       const tmp19Result8 = BigFlagUtils;

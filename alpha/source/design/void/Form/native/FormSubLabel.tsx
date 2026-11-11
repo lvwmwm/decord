@@ -1,12 +1,12 @@
-// Module ID: 7376
-// Function ID: 7377
+// Module ID: 7838
+// Function ID: 7839
 // Name: FormSubLabel
-// Dependencies: [19, 21, 5753, 2]
+// Dependencies: [19, 21, 5866, 2]
 // Exports: default
 
-// Module 7376 (FormSubLabel)
+// Module 7838 (FormSubLabel)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5753 */;
+import Text_Text from "Text/Text" /* 5866 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

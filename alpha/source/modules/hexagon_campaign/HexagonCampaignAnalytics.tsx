@@ -1,24 +1,117 @@
-// Module ID: 16806
-// Function ID: 16807
+// Module ID: 16967
+// Function ID: 16968
 // Name: HexagonCampaignAnalytics
-// Dependencies: [19, 5167, 1072, 7943, 6846, 7952, 7899, 1252, 2]
-// Exports: trackHexagonCampaignContentViewed, trackHexagonCampaignPerkAction, useTrackHexagonCampaignContentViewed
+// Dependencies: [5, 19, 5268, 1072, 8759, 5282, 8768, 8715, 1252, 2]
+// Exports: trackHexagonCampaignContentClicked, trackHexagonCampaignContentViewed, trackHexagonCampaignPerkAction, useTrackHexagonCampaignContentViewed
 
-// Module 16806 (HexagonCampaignAnalytics)
+// Module 16967 (HexagonCampaignAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AdCreativeType from "AdCreativeType" /* 6846 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7899 */;
-import AnalyticsActions from "AnalyticsActions" /* 7943 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7952 */;
+import AdCreativeType from "AdCreativeType" /* 5282 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8715 */;
+import AnalyticsActions from "AnalyticsActions" /* 8759 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8768 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5167 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
+let closure_3, closure_4, closure_5, questContentCTA;
+
 let hasOwnProperty;
 let metroRequire;
-({ HEXAGON_CAMPAIGN_AD_CONTENT_ID: closure_4, HEXAGON_CAMPAIGN_PERK_ANALYTICS_ACTION: hasOwnProperty, HEXAGON_SPECIAL_EVENT_ID: metroRequire } = HexagonCampaignConstants);
+let obj = function _trackHexagonCampaignContentClicked() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let content = arg0;
+    let c6 = 0;
+    let c7 = 0;
+    const iter = (async (arg0, value) => {
+      let c1;
+      let obj7;
+      let sourceQuestContent;
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp4;
+              closure_4 = tmp;
+              content = undefined;
+              questContentCTA = undefined;
+              sourceQuestContent = undefined;
+              content = content.content;
+              ({ questContentCTA: c1, sourceQuestContent } = content);
+              if (sourceQuestContent === undefined) {
+                sourceQuestContent = content;
+              }
+              c6 = 1;
+              c7 = 1;
+              return { value: "flexDirection", done: true };
+            }
+          } else {
+            let obj5;
+            if (1 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                return { value, done: true };
+              } else {
+                const tmp20 = closure_131_0(closure_131_2[4]);
+                closure_5 = tmp20;
+                trackAdContentEvent = tmp20.trackAdContentEvent;
+                obj5 = { adContentId: closure_131_5, adCreativeType: closure_131_0(closure_131_2[5]).AdCreativeType.QUEST_HOME_HERO, event: closure_131_7.QUEST_CONTENT_CLICKED };
+                c6 = 2;
+                c7 = 1;
+                const obj6 = { questContent: content, questContentCTA };
+                const obj8 = { value: obj7.getCommonClickEventProperties(obj6), done: false };
+                obj7 = closure_131_0(closure_131_2[4]);
+                return obj8;
+              }
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              obj5.properties = value;
+              obj5.sourceQuestContent = sourceQuestContent;
+              trackAdContentEvent(obj5);
+              c7 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          }
+        } catch (tmp12) {
+          c7 = 3;
+          throw tmp12;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
+};
+({ HEXAGON_CAMPAIGN_AD_CONTENT_ID: hasOwnProperty, HEXAGON_CAMPAIGN_PERK_ANALYTICS_ACTION: metroRequire } = HexagonCampaignConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignAnalytics.tsx");
 
@@ -34,7 +127,7 @@ export function trackHexagonCampaignContentViewed(contentSurface) {
   contentSurface = contentSurface.contentSurface;
   const tmp = AnalyticsActions;
   const trackAdContentEvent = tmp.trackAdContentEvent;
-  const obj = { adContentId, adCreativeType: AdCreativeType.AdCreativeType.QUEST_HOME_HERO, event: AnalyticEvents.QUEST_CONTENT_VIEWED, properties: obj2, sourceQuestContent };
+  obj = { adContentId, adCreativeType: AdCreativeType.AdCreativeType.QUEST_HOME_HERO, event: AnalyticEvents.QUEST_CONTENT_VIEWED, properties: obj2, sourceQuestContent };
   obj2 = { content_surface: contentSurface };
   const obj3 = AnalyticsTypes;
   const merged = Object.assign(obj3.getContentProperties(content));
@@ -51,7 +144,7 @@ export function useTrackHexagonCampaignContentViewed(DISPLAY_NAME_STYLES_SETTING
     let sourceQuestContent;
     const tmp = isThumbstickScrollDevice;
     if (tmp) {
-      const obj = { content, contentSurface };
+      obj = { content, contentSurface };
       ({ content, sourceQuestContent } = obj);
       if (sourceQuestContent === undefined) {
         sourceQuestContent = content;
@@ -68,6 +161,9 @@ export function useTrackHexagonCampaignContentViewed(DISPLAY_NAME_STYLES_SETTING
     }
   }, items);
 }
+export function trackHexagonCampaignContentClicked() {
+  return obj(...arguments);
+}
 export function trackHexagonCampaignPerkAction(contentSurface) {
   let content;
   let obj3;
@@ -78,7 +174,7 @@ export function trackHexagonCampaignPerkAction(contentSurface) {
     sourceQuestContent = content;
   }
   contentSurface = contentSurface.contentSurface;
-  const obj = { actions: perks.map((item) => closure_1_5[item]), content_id: content, content_name: obj3.getQuestContentName(content), content_surface: contentSurface, ad_content_id: metroRequire };
+  obj = { actions: perks.map((item) => closure_1_6[item]), content_id: content, content_name: obj3.getQuestContentName(content), content_surface: contentSurface, ad_content_id };
   const track = AnalyticsUtilsDefault.track;
   const QUEST_PROMOTIONAL_EVENT_USER_ACTION = AnalyticEvents.QUEST_PROMOTIONAL_EVENT_USER_ACTION;
   AnalyticsUtilsDefault;

@@ -1,9 +1,9 @@
-// Module ID: 5815
-// Function ID: 5816
+// Module ID: 5928
+// Function ID: 5929
 // Name: ShopBlockType
 // Dependencies: [2]
 
-// Module 5815 (ShopBlockType)
+// Module 5928 (ShopBlockType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopBlockType.tsx");

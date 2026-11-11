@@ -1,16 +1,16 @@
-// Module ID: 7065
-// Function ID: 7066
+// Module ID: 7675
+// Function ID: 7676
 // Name: EmailVerificationModal
-// Dependencies: [32, 19, 1385, 7066, 1072, 21, 7064, 1260, 7067, 7125, 7133, 7139, 7145, 7148, 7215, 7228, 7233, 504, 5741, 7234, 1113, 2]
+// Dependencies: [32, 19, 1385, 7676, 1072, 21, 7674, 1260, 7427, 7677, 7684, 7690, 7696, 7699, 7732, 7745, 7750, 504, 5854, 7424, 1113, 2]
 // Exports: default
 
-// Module 7065 (EmailVerificationModal)
+// Module 7675 (EmailVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7064 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7066 */;
-import NavigatorHeader from "NavigatorHeader" /* 7067 */;
+import NavigatorHeader from "NavigatorHeader" /* 7427 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7674 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7676 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;

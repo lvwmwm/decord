@@ -1,18 +1,18 @@
-// Module ID: 17833
-// Function ID: 17834
+// Module ID: 17999
+// Function ID: 18000
 // Name: CustomStatusNotificationSettings
-// Dependencies: [8507, 1072, 5087, 4967, 1196, 1252, 11694, 1113, 2]
+// Dependencies: [9136, 1072, 5188, 5068, 1196, 1252, 12317, 1113, 2]
 // Exports: onChange
 
-// Module 17833 (CustomStatusNotificationSettings)
+// Module 17999 (CustomStatusNotificationSettings)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 4967 */;
-import NotificationConstants from "NotificationConstants" /* 5087 */;
-import SettingsConstants from "SettingsConstants" /* 8507 */;
-import SettingBuilders from "SettingBuilders" /* 11694 */;
+import UserSettings from "UserSettings" /* 5068 */;
+import NotificationConstants from "NotificationConstants" /* 5188 */;
+import SettingsConstants from "SettingsConstants" /* 9136 */;
+import SettingBuilders from "SettingBuilders" /* 12317 */;
 import size from "module_2" /* 2 */;
 
 function onChange(custom_status_push_notifications) {

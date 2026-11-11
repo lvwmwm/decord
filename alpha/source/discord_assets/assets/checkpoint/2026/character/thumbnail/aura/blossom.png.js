@@ -1,8 +1,8 @@
-// Module ID: 6542
-// Function ID: 6543
+// Module ID: 6655
+// Function ID: 6656
 // Dependencies: [2]
 
-// Module 6542
+// Module 6655
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/aura/blossom.png.js");

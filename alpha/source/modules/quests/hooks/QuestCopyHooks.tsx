@@ -1,31 +1,31 @@
-// Module ID: 14958
-// Function ID: 14959
+// Module ID: 15150
+// Function ID: 15151
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2186, 1385, 6839, 1072, 1387, 1113, 9796, 7949, 7947, 2185, 14959, 2107, 504, 9778, 14960, 9403, 9427, 6842, 9801, 2024, 11963, 14947, 9815, 7952, 7951, 2]
+// Dependencies: [5, 32, 19, 2186, 1385, 5275, 1072, 1387, 1113, 10083, 8765, 8763, 2185, 15151, 2107, 504, 10064, 15152, 10597, 10219, 5278, 10088, 2024, 12755, 15139, 10102, 8768, 8767, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription
 
-// Module 14958 (QuestCopyHooks)
+// Module 15150 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import NumberUtils from "NumberUtils" /* 2024 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import QuestTypes from "QuestTypes" /* 6842 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7949 */;
-import QuestType from "QuestType" /* 7951 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9403 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9778 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9796 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9801 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11963 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14960 */;
+import QuestTypes from "QuestTypes" /* 5278 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8765 */;
+import QuestType from "QuestType" /* 8767 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10064 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10083 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 10088 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 10597 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 12755 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 15152 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import UserStore from "UserStore" /* 1385 */;
-import QuestConstants from "QuestConstants" /* 6839 */;
+import QuestConstants from "QuestConstants" /* 5275 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -36,9 +36,9 @@ let metroImportAll;
 let tmp;
 let tmp2;
 const intl13 = tmp(1113);
-const utils_QuestUtils = tmp(7947);
-const GameProfileAnalyticUtils = tmp2(9427);
-const SponsoredQuestUtils = tmp(14959);
+const utils_QuestUtils = tmp(8763);
+const GameProfileAnalyticUtils = tmp2(10219);
+const SponsoredQuestUtils = tmp(15151);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -815,7 +815,7 @@ export function usePrimaryCtaCopy(arg0) {
     }
     PLAY = constants.PLAY;
   }, items);
-  const tmp4 = quest(9778);
+  const tmp4 = quest(10064);
   if (constants3.PLAY === memo) {
     const features2 = quest.config.features;
     let hasItem = features2.includes(constants2.MOBILE_ACTIVITY_QUEST);
@@ -841,7 +841,7 @@ export function usePrimaryCtaCopy(arg0) {
         const intl6 = tmp2(1113).intl;
         return intl6.string(quest(1113).t["+qoymD"]);
       } else {
-        let tmp2Result = tmp2(7947);
+        let tmp2Result = tmp2(8763);
         if (tmp2Result.canLaunchActivity(quest)) {
           const intl5 = tmp2(1113).intl;
           const string2 = intl5.string;
@@ -856,10 +856,10 @@ export function usePrimaryCtaCopy(arg0) {
     const intl3 = tmp2(1113).intl;
     return intl3.string(quest(1113).t.l7E81v);
   } else if (constants3.WATCH_VIDEO === memo) {
-    const tmp2Result3 = quest(14947);
+    const tmp2Result3 = quest(15139);
     return tmp2Result3.getVideoQuestWatchCtaText(tmp5);
   } else if (constants3.IN_GAME === memo) {
-    let tmp2Result4 = tmp2(7947);
+    let tmp2Result4 = tmp2(8763);
     if (tmp2Result4.canLaunchActivity(quest)) {
       let stringResult;
       const features = quest.config.features;
@@ -903,7 +903,7 @@ export function getRewardCodeRedemptionInstructions(arg0) {
     platform = rewardCode.platform;
   }
   if (platform == null) {
-    platform = tmp(6842).QuestRewardCodePlatforms.CROSS_PLATFORM;
+    platform = tmp(5278).QuestRewardCodePlatforms.CROSS_PLATFORM;
   }
   let rewardCodeQuestReward = null;
   if (result) {
@@ -1054,6 +1054,6 @@ export function useModalCtaConfig(quest) {
     }
     return subtitle;
   }, items);
-  obj2 = quest(9801);
+  obj2 = quest(10088);
   return obj;
 }

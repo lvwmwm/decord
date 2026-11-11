@@ -1,18 +1,18 @@
-// Module ID: 18273
-// Function ID: 18274
+// Module ID: 18444
+// Function ID: 18445
 // Name: SettingsPrivacyAndSafetyGuildSelectActionSheet
-// Dependencies: [32, 19, 5013, 6830, 18272, 21, 5142, 575, 6208, 5005, 1113, 504, 5376, 12334, 16935, 7023, 6837, 2]
+// Dependencies: [32, 19, 5114, 6893, 18443, 21, 5243, 575, 6321, 5106, 1113, 504, 5489, 13139, 17098, 7654, 6899, 2]
 // Exports: default
 
-// Module 18273 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
+// Module 18444 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import SortedGuildStore from "SortedGuildStore" /* 6830 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18272 */;
-import createStyles from "createStyles" /* 5142 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import SortedGuildStore from "SortedGuildStore" /* 6893 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18443 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let flattenedGuildIds, record;

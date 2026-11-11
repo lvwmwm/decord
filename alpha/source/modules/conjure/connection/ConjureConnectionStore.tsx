@@ -1,52 +1,52 @@
-// Module ID: 10978
-// Function ID: 10979
+// Module ID: 7301
+// Function ID: 7302
 // Name: ConjureConnectionStore
-// Dependencies: [32, 5, 1385, 10979, 10985, 6902, 10988, 10989, 10990, 10992, 10993, 10994, 10995, 10996, 10997, 10998, 10999, 11000, 572, 11001, 11026, 11027, 11029, 11031, 11032, 11033, 11034, 11092, 11098, 11100, 11101, 11103, 11104, 11105, 11106, 11002, 11107, 11082, 11011, 11108, 559, 11109, 11004, 11110, 11037, 11111, 10440, 11063, 504, 2]
+// Dependencies: [32, 5, 1385, 7257, 7302, 6954, 7305, 7306, 7307, 7309, 7310, 7311, 7312, 7313, 7314, 7315, 7316, 7317, 572, 7318, 7321, 7322, 7324, 7326, 7327, 7328, 7329, 13061, 13148, 10917, 13118, 13107, 15864, 15865, 15866, 7319, 15867, 15863, 7272, 13489, 559, 15868, 7271, 15869, 7332, 13693, 8786, 13120, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, optimisticMessageId, prepareTemplate, resetHistoryPaging, sendUserMessage, showUserMessage, stageModelSettings, subscribeDebugBacklog, withdrawUserMessage
 
-// Module 10978 (ConjureConnectionStore)
+// Module 7301 (ConjureConnectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import createNonce from "createNonce" /* 10440 */;
-import ConjureChatStore2 from "ConjureChatStore" /* 10979 */;
-import conjureChatConnection from "conjureChatConnection" /* 11001 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11004 */;
-import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 11026 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 11027 */;
-import ConjureHostApproval from "ConjureHostApproval" /* 11029 */;
-import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 11031 */;
-import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 11032 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 11033 */;
-import conjurePreviewConnection from "conjurePreviewConnection" /* 11034 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11037 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 11063 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 11082 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 11092 */;
-import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 11098 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 11100 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 11101 */;
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 11103 */;
-import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 11104 */;
-import conjureProjectConnection from "conjureProjectConnection" /* 11105 */;
-import conjureUsageConnection from "conjureUsageConnection" /* 11106 */;
-import conjureLinkEmbeds from "conjureLinkEmbeds" /* 11111 */;
+import ConjureChatStore2 from "ConjureChatStore" /* 7257 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 7271 */;
+import conjureChatConnection from "conjureChatConnection" /* 7318 */;
+import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 7321 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 7322 */;
+import ConjureHostApproval from "ConjureHostApproval" /* 7324 */;
+import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 7326 */;
+import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 7327 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 7328 */;
+import conjurePreviewConnection from "conjurePreviewConnection" /* 7329 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7332 */;
+import createNonce from "createNonce" /* 8786 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10917 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 13061 */;
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 13107 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 13118 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 13120 */;
+import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 13148 */;
+import conjureLinkEmbeds from "conjureLinkEmbeds" /* 13693 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 15863 */;
+import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 15864 */;
+import conjureProjectConnection from "conjureProjectConnection" /* 15865 */;
+import conjureUsageConnection from "conjureUsageConnection" /* 15866 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10985 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
-import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 10988 */;
-import ConjureSmartContextStore from "ConjureSmartContextStore" /* 10989 */;
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 10990 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 10992 */;
-import ConjureManagedCopyStore from "ConjureManagedCopyStore" /* 10993 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10994 */;
-import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 10995 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10996 */;
-import ConjureRemixStore from "ConjureRemixStore" /* 10997 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10998 */;
-import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 10999 */;
-import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 11000 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 7302 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
+import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 7305 */;
+import ConjureSmartContextStore from "ConjureSmartContextStore" /* 7306 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 7307 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 7309 */;
+import ConjureManagedCopyStore from "ConjureManagedCopyStore" /* 7310 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 7311 */;
+import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 7312 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7313 */;
+import ConjureRemixStore from "ConjureRemixStore" /* 7314 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 7315 */;
+import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 7316 */;
+import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 7317 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,7 +58,7 @@ function setConnState(projectId, open) {
   obj2 = { type: "CONJURE_CHAT_CONN_STATE", projectId, connState: open };
   obj.dispatch(obj2);
 }
-function appendLocalUserMessage(projectId, nonce, arg2) {
+function appendLocalUserMessage(projectId, nonce) {
   let attachments;
   let content;
   let date;
@@ -75,7 +75,7 @@ function appendLocalUserMessage(projectId, nonce, arg2) {
   const result = set(nonce, id);
   const tmp5 = DispatcherDefault;
   const dispatch = tmp5.dispatch;
-  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: undefined };
+  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments };
   const currentUser1 = obj.getCurrentUser();
   id1 = undefined;
   if (currentUser1 != null) {
@@ -101,7 +101,7 @@ function appendFailedUserMessage(projectId, nonce, message) {
   const result = set(nonce, id);
   const tmp6 = DispatcherDefault;
   const dispatch = tmp6.dispatch;
-  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: "description" };
+  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments };
   const currentUser1 = obj.getCurrentUser();
   id1 = undefined;
   if (currentUser1 != null) {
@@ -905,18 +905,9 @@ export function sendUserMessage(projectId, trimmed, arg2) {
 }
 export function showUserMessage(projectId, str, arg2) {
   let date;
-  let held;
   let id1;
-  let nonce;
-  obj = arg3;
-  if (arg3 === undefined) {
-    obj = {};
-  }
-  ({ nonce, held } = obj);
-  if (nonce === undefined) {
-    obj2 = createNonce;
-    nonce = obj2.createNonce();
-  }
+  obj = createNonce;
+  const nonce = obj.createNonce();
   let tmp4;
   const trimmed = str.trim();
   if (null != arg2) {
@@ -927,23 +918,23 @@ export function showUserMessage(projectId, str, arg2) {
   set = map2.set;
   const currentUser = UserStore.getCurrentUser();
   let id;
-  const obj3 = UserStore;
+  obj2 = UserStore;
   if (currentUser != null) {
     id = currentUser.id;
   }
   const result = set(nonce, id);
   const tmp9 = DispatcherDefault;
   const dispatch = tmp9.dispatch;
-  const obj4 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content: trimmed, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments: tmp4, held };
-  const currentUser1 = obj3.getCurrentUser();
+  const obj3 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content: trimmed, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments: tmp4 };
+  const currentUser1 = obj2.getCurrentUser();
   id1 = undefined;
   if (currentUser1 != null) {
     id1 = currentUser1.id;
   }
   date = new Date();
-  dispatch(obj4);
-  const obj5 = { nonce, messageKey: "optimistic:" + nonce };
-  return obj5;
+  dispatch(obj3);
+  const obj4 = { nonce, messageKey: "optimistic:" + nonce };
+  return obj4;
 }
 export function withdrawUserMessage(projectId, arg1) {
   map2.delete(arg1);

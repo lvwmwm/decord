@@ -1,8 +1,8 @@
-// Module ID: 7998
-// Function ID: 7999
+// Module ID: 6815
+// Function ID: 6816
 // Dependencies: [2]
 
-// Module 7998
+// Module 6815
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/plant_live.png.js");

@@ -1,28 +1,28 @@
-// Module ID: 13943
-// Function ID: 13944
+// Module ID: 14420
+// Function ID: 14421
 // Name: TraitPicker
-// Dependencies: [19, 17, 6201, 21, 5142, 13944, 575, 6568, 1113, 3248, 5753, 13897, 13946, 1493, 13948, 13949, 13684, 5320, 13950, 2]
+// Dependencies: [19, 17, 6314, 21, 5243, 14421, 575, 6681, 1113, 3269, 5866, 14164, 14423, 1493, 14425, 14426, 14154, 5433, 14427, 2]
 // Exports: default
 
-// Module 13943 (TraitPicker)
+// Module 14420 (TraitPicker)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import _modDef3248 from "module_3248" /* 3248 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5320 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6568 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 13684 */;
-import CheckpointTextDefault from "CheckpointText" /* 13897 */;
-import TraitOptionList from "TraitOptionList" /* 13944 */;
-import TraitOptionDetails from "TraitOptionDetails" /* 13946 */;
-import useTraitPickerOptions from "useTraitPickerOptions" /* 13948 */;
-import react2 from "react" /* 13949 */;
+import _modDef3269 from "module_3269" /* 3269 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5433 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import CheckpointConstants from "CheckpointConstants" /* 6314 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6681 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 14154 */;
+import CheckpointTextDefault from "CheckpointText" /* 14164 */;
+import TraitOptionList from "TraitOptionList" /* 14421 */;
+import TraitOptionDetails from "TraitOptionDetails" /* 14423 */;
+import useTraitPickerOptions from "useTraitPickerOptions" /* 14425 */;
+import react2 from "react" /* 14426 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const TraitOptionDetailsDefault = TraitOptionDetails;
@@ -37,7 +37,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const TraitOptionListDefault = tmp(13944);
+const TraitOptionListDefault = tmp(14421);
 function EarnedCountHeader(customizationOption) {
   let earnedCount;
   let intl2;
@@ -56,8 +56,8 @@ function EarnedCountHeader(customizationOption) {
       return arg0;
     }
   };
-  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3248.Vfq58K, obj2);
-  const obj3 = { variant: "body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3248.Vfq58K, obj4) };
+  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3269.Vfq58K, obj2);
+  const obj3 = { variant: "body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3269.Vfq58K, obj4) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   obj4 = {
@@ -201,7 +201,7 @@ export default function TraitPicker(selectedOptionId) {
   }
   if (isFinalizeRoute) {
     const obj6 = { activeCustomizationOption: customizationOption, onSelectOption: onSelectFinalizeOption, disableSwitching: isCurrentTraitBlocked, disabled };
-    tmp8Result = tmp8(tmp3(13950).FinalizeTraitTabs, obj6);
+    tmp8Result = tmp8(tmp3(14427).FinalizeTraitTabs, obj6);
     tmp11 = tmp8;
   } else {
     const obj7 = { customizationOption, earnedCount, totalCount };

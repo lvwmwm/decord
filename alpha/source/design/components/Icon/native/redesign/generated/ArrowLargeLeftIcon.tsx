@@ -1,14 +1,14 @@
-// Module ID: 7071
-// Function ID: 7072
+// Module ID: 7431
+// Function ID: 7432
 // Name: ArrowLargeLeftIcon
-// Dependencies: [19, 21, 575, 5843, 7072, 2]
+// Dependencies: [19, 21, 575, 5956, 7432, 2]
 // Exports: ArrowLargeLeftIcon
 
-// Module 7071 (ArrowLargeLeftIcon)
+// Module 7431 (ArrowLargeLeftIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 7072 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 7432 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

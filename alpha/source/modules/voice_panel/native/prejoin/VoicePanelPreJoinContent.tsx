@@ -1,48 +1,48 @@
-// Module ID: 19697
-// Function ID: 19698
+// Module ID: 19889
+// Function ID: 19890
 // Name: VoicePanelPreJoinContent
-// Dependencies: [5, 32, 19, 17, 4990, 5896, 15959, 6771, 502, 4991, 2130, 5074, 5897, 1385, 5805, 5898, 11372, 11375, 1072, 15963, 5899, 21, 5142, 11378, 575, 11371, 504, 6791, 8023, 6763, 7982, 6774, 7026, 5753, 1113, 15155, 7394, 5063, 19685, 1493, 1652, 1705, 11962, 11965, 12014, 7046, 19683, 5760, 6162, 1260, 7155, 9318, 6175, 7041, 12627, 11507, 7390, 7415, 1252, 19606, 19626, 19698, 5763, 5201, 5764, 19551, 19700, 2]
+// Dependencies: [5, 32, 19, 17, 5091, 6009, 16118, 6757, 502, 5092, 2130, 5175, 6010, 1385, 5918, 6011, 11925, 11928, 1072, 16122, 6012, 21, 5243, 11931, 575, 11924, 504, 6775, 7612, 6872, 6799, 6745, 7656, 5866, 1113, 15643, 7196, 5164, 19877, 1493, 1652, 1705, 12754, 12757, 12808, 7364, 19875, 5873, 6275, 1260, 7557, 10527, 6288, 7379, 10509, 12274, 7852, 7871, 1252, 19795, 19815, 19890, 5876, 5314, 5877, 19740, 19892, 2]
 
-// Module 19697 (VoicePanelPreJoinContent)
+// Module 19889 (VoicePanelPreJoinContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import Constants2 from "Constants" /* 5899 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6162 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6175 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6763 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6774 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7155 */;
-import StreamActionCreators from "StreamActionCreators" /* 7982 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8023 */;
-import FormComponents from "FormComponents" /* 9318 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11371 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11372 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11375 */;
-import calculateVoicePanelHeaderSpecs from "calculateVoicePanelHeaderSpecs" /* 11378 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12627 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15963 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import Constants2 from "Constants" /* 6012 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6275 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
+import StreamActionCreators from "StreamActionCreators" /* 6799 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6872 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7557 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7612 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10509 */;
+import FormComponents from "FormComponents" /* 10527 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11924 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11928 */;
+import calculateVoicePanelHeaderSpecs from "calculateVoicePanelHeaderSpecs" /* 11931 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 16122 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
-import GameConsoleStore from "GameConsoleStore" /* 5896 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 15959 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6771 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import GameConsoleStore from "GameConsoleStore" /* 6009 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 16118 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
-import SessionsStore from "SessionsStore" /* 5897 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
+import SessionsStore from "SessionsStore" /* 6010 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5805 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5898 */;
+import VoiceStateStore from "VoiceStateStore" /* 5918 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6011 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined, _undefined3, _undefined4, dependencyMap, embeddedActivitiesForChannel, flag;
@@ -60,7 +60,7 @@ let obj5;
 let obj6;
 let tmp3;
 const _modDef1652 = tmp3(1652);
-const NativeViewDefault = tmp3(7026);
+const NativeViewDefault = tmp3(7656);
 function StreamPreview(channelId) {
   let I0mOAs;
   let format;
@@ -152,7 +152,7 @@ function ActivityInfo(activity) {
   let tmp14;
   let tmp15;
   let tmp8;
-  const f119275 = () => {
+  const f120520 = () => {
     const obj = activity(first[39]);
     return obj.getWindowDimensions().width - 2 * (EDGE_GUTTER + 16);
   };
@@ -172,8 +172,8 @@ function ActivityInfo(activity) {
   const context = react.useContext(analyticsLocations(application[25]));
   const channelId = context.channelId;
   const windowDimensions = context.windowDimensions;
-  [r10039, tmp8] = embeddedActivityJoinability(react.useState(f119275), 2);
-  embeddedActivityJoinability(react.useState(f119275), 2);
+  [r10039, tmp8] = embeddedActivityJoinability(react.useState(f120520), 2);
+  embeddedActivityJoinability(react.useState(f120520), 2);
   const items1 = [closure_31, windowDimensions];
   let c0;
   [tmp10, tmp11] = items1;
@@ -511,10 +511,10 @@ function PreJoinTransitioner(arg0) {
   items[2] = roundToNearestPixelDefault;
   items[3] = controlsSpecs;
   items[4] = safeArea;
-  items[5] = preJoinContentSize(5763).withSpring;
+  items[5] = preJoinContentSize(5876).withSpring;
   items[6] = transitionState;
-  items[7] = preJoinContentSize(5201).TransitionStates;
-  items[8] = preJoinContentSize(5764).Reanimated3DefaultSpringConfig;
+  items[7] = preJoinContentSize(5314).TransitionStates;
+  items[8] = preJoinContentSize(5877).Reanimated3DefaultSpringConfig;
   items[9] = preJoinContentSize(1652).interpolate;
   items[10] = useReducedMotion;
   items[11] = MODE_CHANGE_PHYSICS;
@@ -689,11 +689,11 @@ let closure_34 = react.memo(function BlockedMembersWarning(blockedUserIds) {
     const obj4 = { variant: "body-sm/semibold", color: "interactive-text-active", style: { flexShrink: 1 }, children: items1 };
     items1 = [stringResult1, " ", ];
     let tmp11Result = null;
-    const Text = tmp5(5753).Text;
+    const Text = tmp5(5866).Text;
     const tmp11 = closure_25;
     if (null != stringResult) {
       const obj5 = { variant: "heading-xs/semibold", children: stringResult };
-      tmp11Result = tmp11(tmp5(5753).Text, obj5);
+      tmp11Result = tmp11(tmp5(5866).Text, obj5);
     }
     items1[2] = tmp11Result;
     items[1] = closure_26(Text, obj4);
@@ -826,10 +826,10 @@ let closure_40 = { code: "(function VoicePanelPreJoinContentTsx4(){let[windowDim
 const memoResult = react.memo(function VoicePanelPreJoinWrapper() {
   let closure_2;
   let guildId;
-  const context = react.useContext(guildId(11371));
+  const context = react.useContext(guildId(11924));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(19551)(channelId);
+  const tmp2 = guildId(19740)(channelId);
   dependencyMap = tmp2;
   let obj = channelId(504);
   let items = [SortedVoiceStateStore, VoiceChannelBlockedUserStore, EmbeddedActivitiesStore, MediaEngineStore, ApplicationStreamingStore];
@@ -874,9 +874,9 @@ const memoResult = react.memo(function VoicePanelPreJoinWrapper() {
       };
       return obj;
     }
-  }, items1, channelId(19700).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(19892).areVoicePanelPreJoinContentPropsEqual);
   const obj2 = { item: stateFromStores, renderItem };
-  return closure_25(channelId(5201).TransitionItem, obj2);
+  return closure_25(channelId(5314).TransitionItem, obj2);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinContent.tsx");

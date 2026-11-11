@@ -1,15 +1,15 @@
-// Module ID: 19683
-// Function ID: 19684
+// Module ID: 19875
+// Function ID: 19876
 // Name: ActivityShelfItemBackground
-// Dependencies: [32, 19, 21, 5142, 7026, 12629, 5844, 2]
+// Dependencies: [32, 19, 21, 5243, 7656, 13317, 5957, 2]
 
-// Module 19683 (ActivityShelfItemBackground)
+// Module 19875 (ActivityShelfItemBackground)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import NativeViewDefault from "NativeView" /* 7026 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import NativeViewDefault from "NativeView" /* 7656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

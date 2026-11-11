@@ -1,25 +1,25 @@
-// Module ID: 7552
-// Function ID: 7553
+// Module ID: 8069
+// Function ID: 8070
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7553, 4995, 4991, 6900, 1072, 7554, 1282, 7562, 7569, 6962, 5317, 5887, 6763, 572, 6951, 1252, 1099, 5149, 1113, 7573, 5889, 6590, 2]
+// Dependencies: [32, 5, 8070, 5096, 5092, 6952, 1072, 8071, 1282, 6826, 6833, 6857, 5430, 6000, 6872, 572, 7004, 1252, 1099, 5250, 1113, 8062, 6002, 6703, 2]
 
-// Module 7552 (ChannelActionCreators)
+// Module 8069 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
-import shared from "shared" /* 5149 */;
-import RootNavigationRef from "RootNavigationRef" /* 5317 */;
-import preloadChannelDefault from "preloadChannel" /* 5889 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6763 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6951 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7562 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
+import shared from "shared" /* 5250 */;
+import RootNavigationRef from "RootNavigationRef" /* 5430 */;
+import preloadChannelDefault from "preloadChannel" /* 6002 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 6826 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6872 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 7004 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7553 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import ReadStateStore from "ReadStateStore" /* 6900 */;
+import ChangelogStore from "ChangelogStore" /* 8070 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import ReadStateStore from "ReadStateStore" /* 6952 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,8 @@ let map1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(5887);
-const SurveyActionTypes = tmp(7569);
+const transitionToChannel = tmp5(6000);
+const SurveyActionTypes = tmp(6833);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -316,7 +316,7 @@ let obj = {
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
           const obj4 = { navigationReplace: flag2 };
-          const tmp6Result = tmp6(5887);
+          const tmp6Result = tmp6(6000);
           tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
@@ -492,7 +492,7 @@ let obj = {
     if (flag3 == null) {
       flag3 = false;
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "r", parent_id: "isArray" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "onPress" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {

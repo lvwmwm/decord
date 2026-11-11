@@ -1,9 +1,9 @@
-// Module ID: 9122
-// Function ID: 9123
+// Module ID: 8080
+// Function ID: 8081
 // Name: PinotConstants
 // Dependencies: [2]
 
-// Module 9122 (PinotConstants)
+// Module 8080 (PinotConstants)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ SWP_CHANNEL_SUMMARIES_DISABLED: "SWP_CHANNEL_SUMMARIES_DISABLED", SWP_CHANNEL_MESSAGES_DISABLED: "SWP_CHANNEL_MESSAGES_DISABLED" });

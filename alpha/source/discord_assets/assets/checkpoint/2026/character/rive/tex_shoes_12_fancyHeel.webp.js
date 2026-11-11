@@ -1,8 +1,8 @@
-// Module ID: 13864
-// Function ID: 13865
+// Module ID: 14345
+// Function ID: 14346
 // Dependencies: [2]
 
-// Module 13864
+// Module 14345
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_shoes_12_fancyHeel.webp.js");

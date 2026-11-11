@@ -1,14 +1,14 @@
-// Module ID: 14404
-// Function ID: 14405
+// Module ID: 10705
+// Function ID: 10706
 // Name: useGuildPowerupsWarningConfig
-// Dependencies: [19, 14405, 8545, 504, 1113, 2696, 2]
+// Dependencies: [19, 10706, 9175, 504, 1113, 2717, 2]
 // Exports: default
 
-// Module 14404 (useGuildPowerupsWarningConfig)
+// Module 10705 (useGuildPowerupsWarningConfig)
 import intl3 from "intl" /* 1113 */;
-import _modDef2696 from "module_2696" /* 2696 */;
+import _modDef2717 from "module_2717" /* 2717 */;
 import react_mod from "react" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14405 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 10706 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,12 +57,12 @@ export default function useGuildPowerupsWarningConfig(arg0, arg1) {
     if (react <= 0) {
       obj = { shouldShow: false, title: "", description: "", requiredBoostCount: 0 };
     } else {
-      obj = { shouldShow: true, title: intl.string(_modDef2696.n5hQhc), description: formatToPlainString(iAaAiG, obj2), requiredBoostCount: react };
+      obj = { shouldShow: true, title: intl.string(_modDef2717.n5hQhc), description: formatToPlainString(iAaAiG, obj2), requiredBoostCount: react };
       intl = intl3.intl;
       const intl2 = intl3.intl;
       formatToPlainString = intl2.formatToPlainString;
       obj2 = { boostCount: react, perksString: closure_1.join(", ") };
-      iAaAiG = _modDef2696.iAaAiG;
+      iAaAiG = _modDef2717.iAaAiG;
     }
     return obj;
   }, items3);

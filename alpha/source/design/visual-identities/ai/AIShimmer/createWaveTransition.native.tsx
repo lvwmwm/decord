@@ -1,13 +1,13 @@
-// Module ID: 13005
-// Function ID: 13006
+// Module ID: 13671
+// Function ID: 13672
 // Name: createWaveTransition
-// Dependencies: [13003, 5372, 1652, 1705, 2]
+// Dependencies: [13669, 5485, 1652, 1705, 2]
 // Exports: createWaveTransition
 
-// Module 13005 (createWaveTransition)
+// Module 13671 (createWaveTransition)
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import waveTransition from "waveTransition" /* 13003 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import waveTransition from "waveTransition" /* 13669 */;
 import size from "module_2" /* 2 */;
 
 let c1, c7, closure_1, dependencyMap, set, set2;
@@ -45,7 +45,7 @@ export function createWaveTransition(duration) {
   let DEFAULT_PASS_DURATION = duration.duration;
   if (DEFAULT_PASS_DURATION == null) {
     let tmp = obj;
-    DEFAULT_PASS_DURATION = obj(13003).DEFAULT_PASS_DURATION;
+    DEFAULT_PASS_DURATION = obj(13669).DEFAULT_PASS_DURATION;
   }
   obj = { duration: DEFAULT_PASS_DURATION, random, reducedMotion: null, respectReducedMotion, animationProgress: null, crossFadeOpacity: null, glyphCount: null, onPass: null, onStart: null, onComplete: null };
   random = duration.rng;
@@ -78,7 +78,7 @@ export function createWaveTransition(duration) {
   if (0 < glyphCountResult) {
     do {
       let tmp6 = obj;
-      let str3 = obj(13003).GLYPH_PEAK;
+      let str3 = obj(13669).GLYPH_PEAK;
       let charAt = str3.charAt;
       let tmp5Result = tmp5();
       str = `${charAt(tmp8 * obj(c1[0]).GLYPH_PEAK.length | 0)}`;

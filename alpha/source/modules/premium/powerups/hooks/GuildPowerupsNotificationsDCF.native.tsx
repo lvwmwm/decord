@@ -1,19 +1,19 @@
-// Module ID: 14342
-// Function ID: 14343
+// Module ID: 10634
+// Function ID: 10635
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [7644, 4975, 14336, 14343, 14345, 14347, 2]
+// Dependencies: [9494, 5076, 10628, 10635, 10637, 10640, 2]
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 14342 (GuildPowerupsNotificationsDCF)
-import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 7644 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14336 */;
-import useHasGuildAffinityForBoostUpsellDefault from "useHasGuildAffinityForBoostUpsell" /* 14343 */;
-import useCanBoostGuildFromMobileDefault from "useCanBoostGuildFromMobile" /* 14345 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 14347 */;
+// Module 10634 (GuildPowerupsNotificationsDCF)
+import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9494 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 10628 */;
+import useHasGuildAffinityForBoostUpsellDefault from "useHasGuildAffinityForBoostUpsell" /* 10635 */;
+import useCanBoostGuildFromMobileDefault from "useCanBoostGuildFromMobile" /* 10637 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 10640 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const dismissible_content = tmp(4975);
+const dismissible_content = tmp(5076);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/GuildPowerupsNotificationsDCF.native.tsx");
 
 export function usePerksCoachmarkDCF(arg0) {
@@ -45,7 +45,7 @@ export function useGuildPowerupNotificationDCF(arg0) {
   const useSelectedTimeRecurringDismissibleContent = useSelectedDismissibleContent2.useSelectedTimeRecurringDismissibleContent;
   useSelectedDismissibleContent2;
   if (arg0) {
-    prop = tmp(4975).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
+    prop = tmp(5076).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
   }
   const obj = { cooldownDurationMs: GuildPowerupsNotification.GUILD_POWERUP_NOTIFICATION_COOLDOWN };
   return useSelectedTimeRecurringDismissibleContent(prop, obj);
@@ -70,7 +70,7 @@ export function useBoostToUnlockCoachmarkDCF(arg0, id, arg2, GUILD_HEADER_TOOLTI
     tmp = tmp5;
   }
   let str = "useBoostToUnlockCoachmarkDCF-ineligible";
-  const useConfig = tmp2(14347).useConfig;
+  const useConfig = tmp2(10640).useConfig;
   BoostToUnlockMobileCoachmarkExperimentDefault;
   if (tmp) {
     str = "useBoostToUnlockCoachmarkDCF-eligible";
@@ -82,7 +82,7 @@ export function useBoostToUnlockCoachmarkDCF(arg0, id, arg2, GUILD_HEADER_TOOLTI
   if (tmp) {
     prop = null;
     if (showCoachmark) {
-      prop = tmp7(4975).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
+      prop = tmp7(5076).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
     }
   }
   const obj = { cooldownDurationMs: GuildPowerupsNotification.BOOST_TO_UNLOCK_COACHMARK_COOLDOWN, numTimesToRecur: GuildPowerupsNotification.BOOST_TO_UNLOCK_COACHMARK_MAX_TIMES_TO_RECUR };

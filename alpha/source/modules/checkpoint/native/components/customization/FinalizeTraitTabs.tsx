@@ -1,21 +1,21 @@
-// Module ID: 13950
-// Function ID: 13951
+// Module ID: 14427
+// Function ID: 14428
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 6201, 21, 5376, 13951, 2118, 5142, 575, 1377, 1113, 13927, 5753, 6568, 13952, 5726, 13953, 3248, 11564, 2]
+// Dependencies: [19, 17, 6314, 21, 5489, 14428, 2118, 5243, 575, 1377, 1113, 14404, 5866, 6681, 14429, 5839, 14430, 3269, 10493, 2]
 // Exports: FinalizeTraitTabs
 
-// Module 13950 (FinalizeTraitTabs)
+// Module 14427 (FinalizeTraitTabs)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import CheckpointPressable from "CheckpointPressable" /* 13927 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13953 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import CheckpointPressable from "CheckpointPressable" /* 14404 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 14430 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointPressableDefault = CheckpointPressable;
@@ -70,7 +70,7 @@ function TraitTab(arg0) {
   const obj3 = { size: "sm", containerStyle: tabContainerActive, style: items1, disabled: isActive || disabled, onPress, accessibilityRole: "tab", accessibilityHint: joined, accessibilityState: { selected: isActive, disabled }, shadowColor: hasOwnProperty, children: items3 };
   items1 = [tmp.tab, isActive && tmp.tabActive, disabled && tmp.tabDisabled];
   const obj4 = { variant: CheckpointPressable.CHECKPOINT_PRESSABLE_SIZES.sm.textVariant, style: items2, children: label };
-  const Text = tmp2(5753).Text;
+  const Text = tmp2(5866).Text;
   items2 = [tmp.tabLabel, , ];
   const tmp8 = metroImportDefault;
   if (isActive) {
@@ -213,7 +213,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
         } else {
           const obj = { selectedOption: activeCustomizationOption, onSelectOption };
           const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.openLazy(asyncRequire(13951, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+          obj2.openLazy(asyncRequire(14428, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
         }
       }
     },

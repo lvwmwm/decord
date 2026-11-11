@@ -1,24 +1,24 @@
-// Module ID: 11084
-// Function ID: 11085
+// Module ID: 13069
+// Function ID: 13070
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1385, 6902, 10996, 1072, 11002, 1282, 11005, 572, 8829, 11085, 11035, 11087, 2]
+// Dependencies: [5, 1385, 6954, 7313, 1072, 7319, 1282, 7265, 572, 7286, 12181, 7330, 13070, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 11084 (ConjurePublishActionCreators)
+// Module 13069 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 11002 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11005 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11035 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11085 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11087 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7265 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 7319 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7330 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 12181 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 13070 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10996 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7313 */;
 import size from "module_2" /* 2 */;
 
-let also_remove_preview_bot, closure_4, ok;
+let also_remove_preview_bot, closure_4, delete_channels, ok;
 
 function unpublishProject() {
   return obj(...arguments);
@@ -32,6 +32,7 @@ let obj = function _unpublishProject() {
     const iter = (async (arg0, value) => {
       let c1;
       let c2;
+      let c3;
       let obj7;
       if (c7 === 2) {
         c7 = 3;
@@ -55,10 +56,11 @@ let obj = function _unpublishProject() {
               c7 = 3;
               return { value, done: true };
             } else {
-              closure_3 = tmp;
+              let closure_3 = tmp;
               guild_id = undefined;
               also_remove_preview_bot = undefined;
-              ({ guildId: c1, alsoRemovePreviewBot: c2 } = closure_1);
+              delete_channels = undefined;
+              ({ guildId: c1, alsoRemovePreviewBot: c2, deleteChannels: c3 } = closure_1);
               c6 = 1;
               c7 = 1;
               return { value: "flexDirection", done: true };
@@ -77,7 +79,7 @@ let obj = function _unpublishProject() {
               const post = HTTP.post;
               c6 = 3;
               c7 = 1;
-              obj7 = { guild_id, also_remove_preview_bot };
+              obj7 = { guild_id, also_remove_preview_bot, delete_channels };
               const obj8 = { value: post(request), done: false };
               return obj8;
             }

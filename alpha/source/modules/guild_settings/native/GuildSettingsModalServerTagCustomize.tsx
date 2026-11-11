@@ -1,23 +1,23 @@
-// Module ID: 20189
-// Function ID: 20190
+// Module ID: 20384
+// Function ID: 20385
 // Name: GuildSettingsModalServerTagCustomize
-// Dependencies: [32, 19, 17, 9132, 9161, 8468, 21, 575, 5142, 9163, 1493, 9133, 504, 9134, 9160, 5376, 20190, 2118, 7274, 14992, 8250, 6161, 7151, 1113, 5861, 5753, 20191, 20195, 2]
+// Dependencies: [32, 19, 17, 8091, 8339, 8344, 21, 575, 5243, 8342, 1493, 8092, 504, 8093, 8338, 5489, 20385, 2118, 7522, 10605, 8041, 6274, 7553, 1113, 5974, 5866, 20386, 20390, 2]
 // Exports: default
 
-// Module 20189 (GuildSettingsModalServerTagCustomize)
+// Module 20384 (GuildSettingsModalServerTagCustomize)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import GuildTagConstants from "GuildTagConstants" /* 8468 */;
-import GuildProfileStore from "GuildProfileStore" /* 9132 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9134 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9160 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import GuildProfileStore from "GuildProfileStore" /* 8091 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8093 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8338 */;
+import GuildTagConstants from "GuildTagConstants" /* 8344 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9161 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8339 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c10;

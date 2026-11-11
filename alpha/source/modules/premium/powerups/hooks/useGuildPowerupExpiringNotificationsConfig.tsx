@@ -1,16 +1,16 @@
-// Module ID: 14400
-// Function ID: 14401
+// Module ID: 10701
+// Function ID: 10702
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [14401, 14402, 1113, 3120, 5351, 2696, 2]
+// Dependencies: [10702, 10703, 1113, 3141, 5464, 2717, 2]
 // Exports: default
 
-// Module 14400 (useGuildPowerupExpiringNotificationsConfig)
+// Module 10701 (useGuildPowerupExpiringNotificationsConfig)
 import intl4 from "intl" /* 1113 */;
-import _modDef2696 from "module_2696" /* 2696 */;
-import _modDef3120 from "module_3120" /* 3120 */;
-import Powerups from "Powerups" /* 5351 */;
-import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 14401 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 14402 */;
+import _modDef2717 from "module_2717" /* 2717 */;
+import _modDef3141 from "module_3141" /* 3141 */;
+import Powerups from "Powerups" /* 5464 */;
+import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 10702 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 10703 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx");
@@ -23,7 +23,7 @@ export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
     let stringResult;
     if (arr2.length > 0) {
       const intl = intl4.intl;
-      stringResult = intl.string(tmp2(3120)["B3OfL/"]);
+      stringResult = intl.string(tmp2(3141)["B3OfL/"]);
     }
     const items = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(items, arr.map((title) => title.title), 0);
@@ -38,12 +38,12 @@ export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
     if (arr.some((skuId) => skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID)) {
       const push = items3.push;
       const intl2 = intl4.intl;
-      push(intl2.string(_modDef2696.Sfr0Jw));
+      push(intl2.string(_modDef2717.Sfr0Jw));
     }
     if (arr2.length > 0) {
       const push2 = items3.push;
       const intl3 = intl4.intl;
-      push2(intl3.string(_modDef3120.wiungr));
+      push2(intl3.string(_modDef3141.wiungr));
     }
     return { shouldShow: arr.length > 0 || arr2.length > 0, expiringPowerups: arr, expiringPowerupNames: items, warnings: items3 };
   } else {

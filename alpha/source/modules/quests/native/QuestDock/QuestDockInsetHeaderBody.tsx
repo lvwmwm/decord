@@ -1,23 +1,23 @@
-// Module ID: 17521
-// Function ID: 17522
+// Module ID: 17686
+// Function ID: 17687
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 17420, 21, 575, 5142, 14955, 14954, 17417, 1627, 17488, 17485, 5753, 5760, 1187, 2]
+// Dependencies: [19, 17, 17585, 21, 575, 5243, 15147, 15146, 17582, 1627, 17653, 17650, 5866, 5873, 1187, 2]
 // Exports: QuestDockBodyQuestRewardTile, QuestDockBodyRewardTile
 
-// Module 17521 (QuestDockInsetHeaderBody)
+// Module 17686 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 14954 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14955 */;
-import QuestDockHooks from "QuestDockHooks" /* 17417 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17485 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 17488 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 15146 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 15147 */;
+import QuestDockHooks from "QuestDockHooks" /* 17582 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17650 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 17653 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 17420 */;
+import QuestDockConstants from "QuestDockConstants" /* 17585 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -123,7 +123,7 @@ const memoResult = react.memo(function QuestDockInsetHeaderBody(showBonusOrbsGra
   if ("primary" === ctaButtonVariant) {
     const obj14 = { variant: "primary", grow: true, onPress: onCtaPress, loading: ctaLoading, icon: renderCtaIconResult, text: ctaText };
     renderCtaIconResult = undefined;
-    const Button = tmp2(5760).Button;
+    const Button = tmp2(5873).Button;
     if (renderCtaIcon != null) {
       renderCtaIconResult = renderCtaIcon();
     }

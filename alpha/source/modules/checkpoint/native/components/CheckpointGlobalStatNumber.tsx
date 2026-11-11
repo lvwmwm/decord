@@ -1,18 +1,18 @@
-// Module ID: 13909
-// Function ID: 13910
+// Module ID: 14385
+// Function ID: 14386
 // Name: CheckpointGlobalStatNumber
-// Dependencies: [17, 21, 5142, 575, 13900, 13910, 1113, 13901, 2]
+// Dependencies: [17, 21, 5243, 575, 14377, 14386, 14387, 14378, 2]
 // Exports: default
 
-// Module 13909 (CheckpointGlobalStatNumber)
+// Module 14385 (CheckpointGlobalStatNumber)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl from "intl" /* 1113 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 13900 */;
-import CheckpointGlobeAnimationDefault from "CheckpointGlobeAnimation" /* 13901 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13910 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 14377 */;
+import CheckpointGlobeAnimationDefault from "CheckpointGlobeAnimation" /* 14378 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 14386 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStatNumberDefault = CheckpointStatNumber;
@@ -47,7 +47,7 @@ obj4 = { marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.spac
 obj5 = { height: 96 - 2 * nativeDefault.space.PX_24, marginVertical: nativeDefault.space.PX_24, paddingRight: nativeDefault.space.PX_8, marginRight: -nativeDefault.space.PX_8, overflow: "hidden" };
 obj6 = { marginTop: -nativeDefault.space.PX_24 };
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointGlobalStatNumber.tsx");
+let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointGlobalStatNumber.tsx");
 
 export default function CheckpointGlobalStatNumber(arg0) {
   let accessibilityLabel;
@@ -57,17 +57,18 @@ export default function CheckpointGlobalStatNumber(arg0) {
   let value;
   ({ value, accessibilityLabel } = arg0);
   const iter = closure_6();
+  let result = value;
+  if (typeof value === "number") {
+    const obj9 = CheckpointNumberUtils;
+    result = obj9.formatCheckpointStatNumber(value);
+  }
   if (accessibilityLabel == null) {
-    let toLocaleStringResult = value;
-    if (typeof value === "number") {
-      toLocaleStringResult = value.toLocaleString(intl.intl.currentLocale);
-    }
-    accessibilityLabel = toLocaleStringResult;
+    accessibilityLabel = result;
   }
   const obj2 = { accessible: true, accessibilityLabel, style: null, children: null };
   const items = [iter.container, ];
   const obj = CheckpointStatNumber;
-  if (obj.isCheckpointStatNumberShrunk(value)) {
+  if (obj.isCheckpointStatNumberShrunk(result)) {
     items[1] = iter.croppedContainer;
     obj2.style = items;
     const obj3 = { style: iter.clip, children: React3(View, obj4) };

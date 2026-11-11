@@ -1,21 +1,21 @@
-// Module ID: 17488
-// Function ID: 17489
+// Module ID: 17653
+// Function ID: 17654
 // Name: PremiumRewardGradient
-// Dependencies: [19, 17, 21, 5142, 5139, 575, 5726, 5371, 5150, 5717, 7107, 2]
+// Dependencies: [19, 17, 21, 5243, 5240, 575, 5839, 5484, 5251, 5830, 7467, 2]
 // Exports: default
 
-// Module 17488 (PremiumRewardGradient)
+// Module 17653 (PremiumRewardGradient)
 import nativeDefault from "native" /* 575 */;
-import design_shared from "design/shared" /* 5150 */;
-import useThemeDefault from "useTheme" /* 5371 */;
-import LinearGradientDefault from "LinearGradient" /* 5717 */;
-import useToken from "useToken" /* 5726 */;
-import _modDef7107 from "module_7107" /* 7107 */;
+import design_shared from "design/shared" /* 5251 */;
+import useThemeDefault from "useTheme" /* 5484 */;
+import LinearGradientDefault from "LinearGradient" /* 5830 */;
+import useToken from "useToken" /* 5839 */;
+import _modDef7467 from "module_7467" /* 7467 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
-import ColorUtils_mod from "ColorUtils" /* 5139 */;
+import createStyles_mod from "createStyles" /* 5243 */;
+import ColorUtils_mod from "ColorUtils" /* 5240 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -95,7 +95,7 @@ function PremiumRewardGlowGradient(arg0) {
   const items2 = [tmp.glow, ];
   let glowLight = !isThemeDarkResult;
   const tmp10 = hasOwnProperty;
-  const tmp12 = _modDef7107;
+  const tmp12 = _modDef7467;
   const tmp9 = metroImportDefault;
   if (!isThemeDarkResult) {
     glowLight = tmp.glowLight;

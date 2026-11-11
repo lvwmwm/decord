@@ -1,17 +1,17 @@
-// Module ID: 14955
-// Function ID: 14956
+// Module ID: 15147
+// Function ID: 15148
 // Name: QuestDockRewardTile
-// Dependencies: [32, 19, 17, 5143, 21, 5142, 575, 1377, 504, 9791, 8953, 5844, 2]
+// Dependencies: [32, 19, 17, 5244, 21, 5243, 575, 1377, 504, 10078, 9664, 5957, 2]
 
-// Module 14955 (QuestDockRewardTile)
+// Module 15147 (QuestDockRewardTile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AssetUtils from "AssetUtils" /* 9791 */;
+import AssetUtils from "AssetUtils" /* 10078 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import createStyles from "createStyles" /* 5142 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

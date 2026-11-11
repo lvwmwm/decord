@@ -1,10 +1,10 @@
-// Module ID: 12384
-// Function ID: 12385
+// Module ID: 13193
+// Function ID: 13194
 // Name: ConjureMcpUiExperiment
 // Dependencies: [1449, 2]
 // Exports: useIsConjureMcpUiEnabled
 
-// Module 12384 (ConjureMcpUiExperiment)
+// Module 13193 (ConjureMcpUiExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

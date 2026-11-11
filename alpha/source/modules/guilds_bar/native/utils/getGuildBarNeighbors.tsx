@@ -1,12 +1,12 @@
-// Module ID: 18774
-// Function ID: 18775
+// Module ID: 18963
+// Function ID: 18964
 // Name: getGuildBarNeighbors
-// Dependencies: [6830, 6835, 2]
+// Dependencies: [6893, 6897, 2]
 // Exports: default
 
-// Module 18774 (getGuildBarNeighbors)
-import GuildsTree from "GuildsTree" /* 6835 */;
-import SortedGuildStore from "SortedGuildStore" /* 6830 */;
+// Module 18963 (getGuildBarNeighbors)
+import GuildsTree from "GuildsTree" /* 6897 */;
+import SortedGuildStore from "SortedGuildStore" /* 6893 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/getGuildBarNeighbors.tsx");

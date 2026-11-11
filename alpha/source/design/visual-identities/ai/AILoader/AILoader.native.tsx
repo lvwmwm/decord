@@ -1,17 +1,17 @@
-// Module ID: 12444
-// Function ID: 12445
+// Module ID: 13250
+// Function ID: 13251
 // Name: AILoader
-// Dependencies: [19, 17, 12445, 21, 5142, 1652, 5372, 12446, 5201, 2]
+// Dependencies: [19, 17, 13251, 21, 5243, 1652, 5485, 13252, 5314, 2]
 
-// Module 12444 (AILoader)
+// Module 13250 (AILoader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5372 */;
-import AIGlyphText from "AIGlyphText" /* 12446 */;
+import timing_timing from "timing/timing" /* 5485 */;
+import AIGlyphText from "AIGlyphText" /* 13252 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 12445 */;
-import createStyles from "createStyles" /* 5142 */;
+import AILoaderConstants from "AILoaderConstants" /* 13251 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -129,7 +129,7 @@ const memoResult = react.memo(function AILoader(size) {
   let num2;
   const style = size.style;
   const tmp = closure_13(num);
-  const reducedMotion = num2.useContext(num(5201).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(num(5314).AccessibilityPreferencesContext).reducedMotion;
   dependencyMap = reducedMotion.enabled ? closure_8 : closure_5;
   num2 = 0;
   if (!reducedMotion.enabled) {

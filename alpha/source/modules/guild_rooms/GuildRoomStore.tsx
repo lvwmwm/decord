@@ -1,16 +1,16 @@
-// Module ID: 7987
-// Function ID: 7988
+// Module ID: 6804
+// Function ID: 6805
 // Name: GuildRoomStore
-// Dependencies: [109, 502, 5895, 5045, 7988, 504, 572, 2]
+// Dependencies: [109, 502, 6008, 5146, 6805, 504, 572, 2]
 
-// Module 7987 (GuildRoomStore)
+// Module 6804 (GuildRoomStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 7988 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 6805 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -67,7 +67,7 @@ let closure_11 = [];
 new Map();
 const map1 = {};
 const gesture = {};
-const clientStatuses = {};
+let closure_15 = {};
 let c16 = null;
 let c17 = null;
 const authStore4 = {};

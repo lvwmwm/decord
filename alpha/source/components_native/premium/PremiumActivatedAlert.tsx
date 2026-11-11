@@ -1,24 +1,24 @@
-// Module ID: 10708
-// Function ID: 10709
+// Module ID: 9622
+// Function ID: 9623
 // Name: PremiumActivatedAlert
-// Dependencies: [19, 17, 1072, 21, 5142, 6836, 2171, 10709, 10710, 10711, 10712, 10713, 10058, 10714, 10715, 10716, 10717, 10718, 10719, 8612, 10720, 5149, 10721, 10722, 10723, 10724, 10725, 10726, 10727, 10728, 10729, 1113, 5371, 6164, 5844, 10730, 10731, 1187, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 6898, 2171, 9623, 9624, 9625, 9626, 9627, 9541, 9542, 9628, 9629, 9630, 9631, 9632, 9253, 9633, 5250, 9634, 9635, 9636, 9637, 9638, 9639, 9640, 9641, 9642, 1113, 5484, 6277, 5957, 9643, 9644, 1187, 2]
 // Exports: default
 
-// Module 10708 (PremiumActivatedAlert)
+// Module 9622 (PremiumActivatedAlert)
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import shared from "shared" /* 5149 */;
-import useThemeDefault from "useTheme" /* 5371 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import AlertDefault from "Alert" /* 6164 */;
-import LegacyTokens from "LegacyTokens" /* 6836 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10730 */;
-import ShineAnimationDefault from "ShineAnimation" /* 10731 */;
+import shared from "shared" /* 5250 */;
+import useThemeDefault from "useTheme" /* 5484 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import AlertDefault from "Alert" /* 6277 */;
+import LegacyTokens from "LegacyTokens" /* 6898 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9643 */;
+import ShineAnimationDefault from "ShineAnimation" /* 9644 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -127,33 +127,33 @@ export default function PremiumActivatedAlert(subscription) {
   const obj7 = { style: tmp.header, children: items };
   const tmp4Result14 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result15 = tmp4(10709);
+    tmp4Result15 = tmp4(9623);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result15 = tmp4(10710);
+    tmp4Result15 = tmp4(9624);
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-    tmp4Result15 = tmp4(10711);
+    tmp4Result15 = tmp4(9625);
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-    tmp4Result15 = tmp4(10712);
+    tmp4Result15 = tmp4(9626);
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result15 = tmp4(10713);
+    tmp4Result15 = tmp4(9627);
   }
   items = [, , , ];
   const obj8 = { source: tmp4Result15, style: tmp.headerBackground };
   items[0] = hasOwnProperty(tmp4Result14, obj8);
   const tmp4Result16 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result17 = tmp4(10718);
+    tmp4Result17 = tmp4(9631);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result17 = tmp4(10719);
+    tmp4Result17 = tmp4(9632);
   } else {
     if (PremiumUtils.Branding.BUNDLE !== premiumBranding) {
       if (PremiumUtils.Branding.TIER_2 !== premiumBranding) {
         if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-          tmp4Result17 = tmp4(10720);
+          tmp4Result17 = tmp4(9633);
         }
       }
     }
-    tmp4Result17 = tmp4(8612);
+    tmp4Result17 = tmp4(9253);
   }
   const obj9 = { source: tmp4Result17, style: tmp9.logo };
   items[1] = hasOwnProperty(tmp4Result16, obj9);
@@ -166,15 +166,15 @@ export default function PremiumActivatedAlert(subscription) {
   items[2] = tmp15Result;
   const tmp4Result19 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result20 = tmp4(10058);
+    tmp4Result20 = tmp4(9541);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result20 = tmp4(10714);
+    tmp4Result20 = tmp4(9542);
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-    tmp4Result20 = tmp4(10715);
+    tmp4Result20 = tmp4(9628);
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-    tmp4Result20 = tmp4(10716);
+    tmp4Result20 = tmp4(9629);
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result20 = tmp4(10717);
+    tmp4Result20 = tmp4(9630);
   }
   const obj11 = { source: tmp4Result20, style: items1 };
   items1 = [tmp10.headerImage, tmp.headerImage];
@@ -186,40 +186,40 @@ export default function PremiumActivatedAlert(subscription) {
     let tmp4Result22;
     const tmp7Result = shared;
     if (tmp7Result.isThemeDark(tmp6)) {
-      tmp4Result22 = tmp4(10721);
+      tmp4Result22 = tmp4(9634);
     } else {
-      tmp4Result22 = tmp4(10722);
+      tmp4Result22 = tmp4(9635);
     }
     tmp4Result26 = tmp4Result22;
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
     let tmp4Result23;
     const tmp7Result5 = shared;
     if (tmp7Result5.isThemeDark(tmp6)) {
-      tmp4Result23 = tmp4(10723);
+      tmp4Result23 = tmp4(9636);
     } else {
-      tmp4Result23 = tmp4(10724);
+      tmp4Result23 = tmp4(9637);
     }
     tmp4Result26 = tmp4Result23;
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
     let tmp4Result24;
     const tmp7Result6 = shared;
     if (tmp7Result6.isThemeDark(tmp6)) {
-      tmp4Result24 = tmp4(10725);
+      tmp4Result24 = tmp4(9638);
     } else {
-      tmp4Result24 = tmp4(10726);
+      tmp4Result24 = tmp4(9639);
     }
     tmp4Result26 = tmp4Result24;
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
     let tmp4Result25;
     const tmp7Result7 = shared;
     if (tmp7Result7.isThemeDark(tmp6)) {
-      tmp4Result25 = tmp4(10727);
+      tmp4Result25 = tmp4(9640);
     } else {
-      tmp4Result25 = tmp4(10728);
+      tmp4Result25 = tmp4(9641);
     }
     tmp4Result26 = tmp4Result25;
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result26 = tmp4(10729);
+    tmp4Result26 = tmp4(9642);
   }
   const items3 = [, ];
   const obj13 = { source: tmp4Result26, style: tmp11.animation };

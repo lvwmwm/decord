@@ -1,10 +1,10 @@
-// Module ID: 6915
-// Function ID: 6916
+// Module ID: 6968
+// Function ID: 6969
 // Name: SpamMessageRequestStore
-// Dependencies: [4991, 1071, 2]
+// Dependencies: [5092, 1071, 2]
 
-// Module 6915 (SpamMessageRequestStore)
-import ChannelStore from "ChannelStore" /* 4991 */;
+// Module 6968 (SpamMessageRequestStore)
+import ChannelStore from "ChannelStore" /* 5092 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
 import size from "module_2" /* 2 */;
 

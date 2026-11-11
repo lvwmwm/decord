@@ -1,11 +1,11 @@
-// Module ID: 16739
-// Function ID: 16740
+// Module ID: 16900
+// Function ID: 16901
 // Name: isPostMessageDisconnect
-// Dependencies: [6585, 2]
+// Dependencies: [6698, 2]
 // Exports: default
 
-// Module 16739 (isPostMessageDisconnect)
-import Constants from "Constants" /* 6585 */;
+// Module 16900 (isPostMessageDisconnect)
+import Constants from "Constants" /* 6698 */;
 import size from "module_2" /* 2 */;
 
 const TransportTypes = Constants.TransportTypes;

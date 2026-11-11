@@ -1,22 +1,22 @@
-// Module ID: 18589
-// Function ID: 18590
+// Module ID: 18761
+// Function ID: 18762
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [19, 5143, 5347, 5348, 4988, 21, 5142, 575, 504, 5351, 14363, 18590, 8545, 6826, 1113, 2696, 14366, 10082, 2]
+// Dependencies: [19, 5244, 5460, 5461, 5089, 21, 5243, 575, 504, 5464, 10656, 18762, 9175, 6889, 1113, 2717, 10659, 9501, 2]
 // Exports: default
 
-// Module 18589 (GuildThemeMemberCoachmark)
+// Module 18761 (GuildThemeMemberCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2696 from "module_2696" /* 2696 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5348 */;
-import Powerups from "Powerups" /* 5351 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6826 */;
+import _modDef2717 from "module_2717" /* 2717 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5461 */;
+import Powerups from "Powerups" /* 5464 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6889 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5347 */;
-import createStyles from "createStyles" /* 5142 */;
+import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5460 */;
+import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -57,12 +57,12 @@ export default function GuildThemeMemberCoachmark(guildId) {
   const items2 = [guildPowerupBannerImage];
   const obj2 = guildId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => guildPowerupBannerImage.useReducedMotion);
-  const obj3 = guildId(14363);
+  const obj3 = guildId(10656);
   guildPowerupBannerImage = obj3.getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
-    guildPowerupBannerImage = markAsDismissed(18590);
+    guildPowerupBannerImage = markAsDismissed(18762);
   }
-  const diff = onDismiss - markAsDismissed(8545)(guildId).available;
+  const diff = onDismiss - markAsDismissed(9175)(guildId).available;
   c5 = diff;
   const items3 = [markAsDismissed];
   onDismiss = stateFromStores1.useCallback(() => {
@@ -84,8 +84,8 @@ export default function GuildThemeMemberCoachmark(guildId) {
     let intl2;
     let intl3;
     const obj = {
-      title: intl.string(_modDef2696.RK6NbY),
-      description: intl2.string(_modDef2696.xlAqGk),
+      title: intl.string(_modDef2717.RK6NbY),
+      description: intl2.string(_modDef2717.xlAqGk),
       visible: true,
       position: "bottom",
       offsetY: 8,
@@ -102,7 +102,7 @@ export default function GuildThemeMemberCoachmark(guildId) {
     intl3 = intl4.intl;
     return obj;
   }, items5);
-  const tmp2Result = tmp2(10082);
+  const tmp2Result = tmp2(9501);
   const coachmark = tmp2Result.useCoachmark(targetRef, memo);
   return null;
 };

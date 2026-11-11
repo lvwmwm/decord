@@ -1,32 +1,32 @@
-// Module ID: 10931
-// Function ID: 10932
+// Module ID: 10832
+// Function ID: 10833
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10932, 6812, 4996, 6919, 4995, 7352, 4991, 7785, 5013, 5074, 6900, 5084, 5045, 6833, 1385, 1072, 10264, 21, 8023, 2118, 8012, 1113, 10933, 8827, 5851, 7552, 5778, 9869, 10357, 10265, 5853, 6801, 10935, 3608, 9854, 1099, 10956, 8723, 10958, 10973, 4028, 10974, 5376, 10976, 11113, 11114, 11116, 9204, 11118, 7348, 5317, 7123, 11120, 8100, 11121, 11122, 11124, 11126, 11127, 11129, 7167, 7345, 11131, 9294, 7354, 7349, 11133, 8272, 8722, 11135, 11136, 8746, 8720, 11137, 14656, 5890, 8014, 10211, 8426, 14657, 14658, 12055, 14659, 7165, 6960, 7636, 5857, 9120, 10652, 7421, 5838, 7390, 7415, 10960, 504, 4999, 6943, 9963, 4967, 7023, 1187, 14662, 11284, 14663, 14669, 7486, 14674, 14675, 1449, 11997, 14677, 9773, 7429, 1624, 11285, 7431, 2]
+// Dependencies: [5, 19, 10833, 6796, 5097, 6972, 5096, 7815, 5092, 8663, 5114, 5175, 6952, 5185, 5146, 6895, 1385, 1072, 10834, 21, 7612, 2118, 6837, 1113, 10835, 8410, 5964, 8069, 5891, 10837, 10838, 10839, 5966, 6785, 10851, 3629, 10876, 1099, 10878, 8007, 10880, 10912, 4079, 10913, 5489, 10915, 10469, 10461, 10918, 8394, 10472, 7811, 5430, 7483, 10920, 8095, 10921, 10922, 10924, 10926, 10927, 10929, 7569, 7808, 10931, 10933, 7817, 7812, 10934, 10856, 8006, 10936, 10937, 7952, 8004, 10938, 15036, 6003, 6840, 11267, 12002, 15037, 15038, 12206, 15039, 7567, 6854, 10502, 5970, 8078, 11568, 7877, 5951, 7852, 7871, 10882, 504, 5100, 6996, 9040, 5068, 7654, 1187, 15042, 11837, 15043, 15051, 7197, 15056, 15057, 1449, 12791, 15059, 10449, 7885, 1624, 11838, 7887, 2]
 // Exports: default
 
-// Module 10931 (ChannelLongPressActionSheet)
+// Module 10832 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4999 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7431 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10264 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10932 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 11997 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 5100 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7887 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10833 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10834 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 12791 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6812 */;
-import StageInstanceStore from "StageInstanceStore" /* 4996 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6919 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7352 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7785 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
-import ReadStateStore from "ReadStateStore" /* 6900 */;
-import RelationshipStore from "RelationshipStore" /* 5084 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6833 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6796 */;
+import StageInstanceStore from "StageInstanceStore" /* 5097 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6972 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7815 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8663 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
+import ReadStateStore from "ReadStateStore" /* 6952 */;
+import RelationshipStore from "RelationshipStore" /* 5185 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -218,7 +218,7 @@ function ChannelLongPressActionSheetConnected(channel) {
     isFavorite = obj2.isFavorite;
     null != channel.parent_id && UserGuildSettingsStore.isChannelOptedIn(tmp, channel.parent_id);
     if (tmp == null) {
-      tmp = map2;
+      tmp = dehydratedItems;
     }
     return obj;
   });

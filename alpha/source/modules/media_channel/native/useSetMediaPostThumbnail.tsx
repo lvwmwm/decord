@@ -1,15 +1,15 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 11785
+// Function ID: 11786
 // Name: useSetMediaPostThumbnail
-// Dependencies: [19, 7780, 8281, 563, 8284, 9874, 5376, 2]
+// Dependencies: [19, 8658, 8806, 563, 8784, 11092, 5489, 2]
 // Exports: default
 
-// Module 14783 (useSetMediaPostThumbnail)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import DraftStore from "DraftStore" /* 7780 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9874 */;
+// Module 11785 (useSetMediaPostThumbnail)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import DraftStore from "DraftStore" /* 8658 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11092 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8281 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8806 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

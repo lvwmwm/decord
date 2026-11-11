@@ -1,7 +1,7 @@
 // Module ID: 1238
 // Function ID: 1239
 // Name: CustomThemeMobileStore
-// Dependencies: [1193, 1192, 1194, 1231, 1082, 1239, 5199, 1196, 572, 504, 2]
+// Dependencies: [1193, 1192, 1194, 1231, 1082, 1239, 5312, 1196, 572, 504, 2]
 
 // Module 1238 (CustomThemeMobileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -9,7 +9,7 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 5199 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 5312 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;

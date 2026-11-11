@@ -1,8 +1,8 @@
-// Module ID: 13756
-// Function ID: 13757
+// Module ID: 14237
+// Function ID: 14238
 // Dependencies: [2]
 
-// Module 13756
+// Module 14237
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_env_labNight_mgBottomMobile.webp.js");

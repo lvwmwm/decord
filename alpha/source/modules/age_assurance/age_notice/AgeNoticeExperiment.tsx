@@ -1,10 +1,10 @@
-// Module ID: 6795
-// Function ID: 6796
+// Module ID: 6779
+// Function ID: 6780
 // Name: AgeNoticeExperiment
 // Dependencies: [1449, 2]
 // Exports: isAgeNoticeEnabled, useIsAgeNoticeEnabled
 
-// Module 6795 (AgeNoticeExperiment)
+// Module 6779 (AgeNoticeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

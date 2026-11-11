@@ -1,9 +1,9 @@
-// Module ID: 6960
-// Function ID: 6961
+// Module ID: 6854
+// Function ID: 6855
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 6961, 502, 6831, 5072, 5013, 5045, 5173, 1385, 1072, 1097, 6092, 1113, 572, 6962, 6964, 1282, 6965, 7329, 2118, 6796, 7443, 7449, 7455, 7488, 7584, 6804, 1260, 5079, 1084, 7573, 4963, 1252, 7585, 1099, 6791, 6811, 2]
+// Dependencies: [109, 5, 6855, 502, 6856, 5173, 5114, 5146, 5286, 1385, 1072, 1097, 6205, 1113, 572, 6857, 6859, 1282, 6860, 7799, 2118, 6780, 14009, 15823, 7169, 7199, 7613, 6788, 1260, 5180, 1084, 8062, 5064, 1252, 15952, 1099, 6775, 6795, 2]
 
-// Module 6960 (GuildActionCreators)
+// Module 6854 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -11,22 +11,22 @@ import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6092 */;
-import AgeGateUtils from "AgeGateUtils" /* 6791 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6804 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6811 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7573 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7584 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7585 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
+import AgeGateUtils from "AgeGateUtils" /* 6775 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6788 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6795 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7613 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 8062 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 15952 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 6961 */;
+import BulkBanStore from "BulkBanStore" /* 6855 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6831 */;
-import GuildChannelStore from "GuildChannelStore" /* 5072 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5173 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6856 */;
+import GuildChannelStore from "GuildChannelStore" /* 5173 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -1066,10 +1066,10 @@ obj = {
         if (null != defaultChannel) {
           const obj3 = AgeGateUtils;
           if (!obj3.isChannelContentGated(defaultChannel)) {
-            const tmp11Result = SpoilerChannelUtils;
-            if (!tmp11Result.isChannelSpoilerGated(defaultChannel)) {
-              const tmp11Result2 = router_utils;
-              tmp11Result2.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
+            const tmp10Result = SpoilerChannelUtils;
+            if (!tmp10Result.isChannelSpoilerGated(defaultChannel)) {
+              const tmp10Result2 = router_utils;
+              tmp10Result2.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
             }
           }
         }
@@ -1081,7 +1081,7 @@ obj = {
       }
     } else {
       obj = router_utils;
-      obj.transitionTo(closure_21.CHANNEL(tmp2.guildId, tmp2.channelId));
+      obj.transitionTo(tmp2);
     }
   },
   spoilerAgree(channelId) {

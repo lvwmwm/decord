@@ -1,14 +1,14 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 11793
+// Function ID: 11794
 // Name: generated/SpoilerIcon
-// Dependencies: [19, 21, 575, 5843, 14788, 2]
+// Dependencies: [19, 21, 575, 5956, 11794, 2]
 // Exports: SpoilerIcon
 
-// Module 14787 (generated/SpoilerIcon)
+// Module 11793 (generated/SpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5843 */;
-import AssetRegistry from "AssetRegistry" /* 14788 */;
+import BaseIconImage2 from "BaseIconImage" /* 5956 */;
+import AssetRegistry from "AssetRegistry" /* 11794 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

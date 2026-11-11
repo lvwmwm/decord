@@ -1,12 +1,12 @@
-// Module ID: 19174
-// Function ID: 19175
+// Module ID: 19361
+// Function ID: 19362
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 9923, 2]
+// Dependencies: [19, 9000, 2]
 // Exports: useFileOrLinkImageDimensions
 
-// Module 19174 (useFileOrLinkImageDimensions)
+// Module 19361 (useFileOrLinkImageDimensions)
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 9923 */;
+import SearchConstants from "SearchConstants" /* 9000 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;

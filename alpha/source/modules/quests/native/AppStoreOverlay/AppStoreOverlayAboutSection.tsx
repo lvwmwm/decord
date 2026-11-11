@@ -1,18 +1,17 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 15130
+// Function ID: 15131
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 575, 5142, 1113, 5753, 2]
+// Dependencies: [32, 19, 17, 21, 575, 5243, 10283, 1113, 5866, 10311, 2]
 // Exports: default
 
-// Module 14938 (AppStoreOverlayAboutSection)
+// Module 15130 (AppStoreOverlayAboutSection)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 10283 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -20,6 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const rect = { top: nativeDefault.space.PX_12, bottom: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12 };
@@ -28,32 +28,39 @@ obj2 = { borderRadius: nativeDefault.space.PX_16, backgroundColor: nativeDefault
 let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayAboutSection.tsx");
 
-export default function AppStoreOverlayAboutSection(onSeeMorePress) {
-  let c1;
-  let closure_3;
+export default function AppStoreOverlayAboutSection(description) {
+  let _undefined;
+  let c2;
+  let closure_4;
   let first;
   let intl2;
-  let items2;
+  let items3;
   let obj4;
-  let obj5;
+  let obj6;
+  let obj7;
   let tmp3;
-  onSeeMorePress = onSeeMorePress.onSeeMorePress;
-  c1 = undefined;
+  description = description.description;
+  const onSeeMorePress = description.onSeeMorePress;
+  _slicedToArray = undefined;
   first = undefined;
-  closure_3 = undefined;
-  const description = onSeeMorePress.description;
+  closure_4 = undefined;
   let tmp = closure_9();
-  const tmp2 = _slicedToArray(react.useState(false), 2);
-  [tmp3, c1] = tmp2;
-  [first, closure_3] = react.useState(null);
-  const items = [first];
-  const items1 = [onSeeMorePress];
-  const callback = react.useCallback((nativeEvent) => {
-    if (null == first) {
-      closure_3(nativeEvent.nativeEvent.lines.length > 3);
-    }
+  const tmp2 = _slicedToArray(first.useState(false), 2);
+  [tmp3, c2] = tmp2;
+  [first, closure_4] = first.useState(null);
+  const items = [description];
+  const memo = first.useMemo(() => {
+    const obj = DEFAULT_MAX_HTML_LENGTH;
+    return obj.parseHTMLFromText(description, { parseTextLinks: true });
   }, items);
-  const callback1 = react.useCallback(() => {
+  const items1 = [first];
+  const items2 = [onSeeMorePress];
+  const callback = first.useCallback((nativeEvent) => {
+    if (null == first) {
+      closure_4(nativeEvent.nativeEvent.lines.length > 3);
+    }
+  }, items1);
+  const callback1 = first.useCallback(() => {
     let tmp = _undefined((arg0) => {
       const tmp = arg0;
       if (!tmp) {
@@ -63,27 +70,33 @@ export default function AppStoreOverlayAboutSection(onSeeMorePress) {
       }
       return !arg0;
     });
-  }, items1);
-  const intl = intl3.intl;
+  }, items2);
+  const intl = description(onSeeMorePress[7]).intl;
   const string = intl.string;
-  const t = intl3.t;
+  const t = description(onSeeMorePress[7]).t;
   const stringResult = string(tmp3 ? t["6MwJo/"] : t.lBeKY2);
-  const obj = { style: tmp.aboutSection, children: items2 };
-  const obj2 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.CI0vSJ) };
-  const Text = tmp8(5753).Text;
-  intl2 = tmp8(1113).intl;
-  items2 = [metroRequire(Text, obj2), , ];
-  const Text2 = tmp8(5753).Text;
-  const tmp11 = metroImportDefault;
-  const tmp12 = hasOwnProperty;
-  items2[1] = metroRequire(Text2, { variant: "body-sm/medium", color: "text-default", lineClamp: num, onTextLayout: callback, children: description });
-  let tmp13Result = true === first;
-  if (tmp13Result) {
-    const obj3 = { hitSlop: rect, accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj4, onPress: callback1, children: metroRequire(Text_Text.Text, obj5) };
-    obj4 = { expanded: tmp3 };
-    obj5 = { variant: "body-sm/medium", color: "text-link", children: stringResult };
-    tmp13Result = tmp13(React3, obj3);
+  let tmp15Result = null;
+  if (0 !== memo.length) {
+    const obj2 = { style: tmp.aboutSection, children: items3 };
+    const obj3 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(description(onSeeMorePress[7]).t.CI0vSJ) };
+    const Text = tmp8(tmp9[8]).Text;
+    intl2 = tmp8(tmp9[7]).intl;
+    items3 = [closure_6(Text, obj3), , ];
+    const Text2 = tmp8(tmp9[8]).Text;
+    const tmp15 = closure_7;
+    const tmp16 = closure_5;
+    let obj = { variant: "body-sm/medium", color: "text-default", lineClamp: num, onTextLayout: callback, children: closure_6(description(onSeeMorePress[9]).HTMLText, obj4) };
+    obj4 = { runs: memo, textVariant: "body-sm/medium", boldTextVariant: "body-sm/semibold" };
+    items3[1] = closure_6(Text2, obj);
+    let tmp17Result = true === first;
+    if (tmp17Result) {
+      const obj5 = { hitSlop: rect, accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj6, onPress: callback1, children: closure_6(description(onSeeMorePress[8]).Text, obj7) };
+      obj6 = { expanded: tmp3 };
+      obj7 = { variant: "body-sm/medium", color: "text-link", children: stringResult };
+      tmp17Result = tmp17(closure_4, obj5);
+    }
+    items3[2] = tmp17Result;
+    tmp15Result = tmp15(tmp16, obj2);
   }
-  items2[2] = tmp13Result;
-  return tmp11(tmp12, obj);
+  return tmp15Result;
 };

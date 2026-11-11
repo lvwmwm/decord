@@ -1,87 +1,140 @@
-// Module ID: 18329
-// Function ID: 18330
+// Module ID: 18500
+// Function ID: 18501
 // Name: EffectiveNotifSettingsLayout
-// Dependencies: [19, 1231, 502, 15888, 21, 5142, 15902, 504, 572, 16932, 6161, 5753, 1113, 2992, 5760, 18330, 2]
+// Dependencies: [19, 1231, 502, 16047, 21, 5243, 575, 18501, 6274, 8094, 1113, 3013, 16061, 504, 572, 17095, 2]
 // Exports: default
 
-// Module 18329 (EffectiveNotifSettingsLayout)
+// Module 18500 (EffectiveNotifSettingsLayout)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import _modDef2992 from "module_2992" /* 2992 */;
-import SettingLayoutDefault from "SettingLayout" /* 16932 */;
+import nativeDefault from "native" /* 575 */;
+import _modDef3013 from "module_3013" /* 3013 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 18501 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15888 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 16047 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
+let c9;
 let metroImportAll;
 let metroImportDefault;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let closure_9 = createStyles.createStyles({ root: { flex: 1 } });
-const result = size.fileFinishedImporting("modules/notifications/settings/native/EffectiveNotifSettingsLayout.tsx");
-
-export default function EffectiveNotifSettingsLayout(unavailableNode) {
+let obj2;
+function EffectiveSettingsHeader() {
+  let Header;
+  let InlineNotice;
   let intl2;
-  let items3;
-  unavailableNode = unavailableNode.unavailableNode;
+  let loading;
+  let obj2;
+  let obj3;
+  let string;
+  let tmp13;
+  let tmp = closure_10();
+  const context = react.useContext(closure_11);
+  ({ Header, loading } = context);
+  const items = [loading];
+  const unavailable = context.unavailable;
+  let tmp6 = null;
+  const callback = react.useCallback(() => {
+    const tmp = loading;
+    if (!tmp) {
+      const obj = EffectiveNotifSettingsActionCreators;
+      const result = obj.retryEffectiveNotifSettings();
+    }
+  }, items);
+  const tmp4 = closure_9;
+  const tmp5 = closure_8;
+  if (null != Header) {
+    tmp6 = closure_7(Header, {});
+  }
+  const children = [tmp6, ];
+  let tmp9Result = null;
+  if (unavailable) {
+    let obj = { style: tmp.notice, children: closure_7(InlineNotice, obj2) };
+    const Stack = loading(6274).Stack;
+    let str = "warning";
+    InlineNotice = loading(8094).InlineNotice;
+    if (loading) {
+      str = "info";
+    }
+    obj2 = { type: str, role: "status", message: string(loading ? tmp13.Ns127F : tmp13.Nu2TMI), action: obj3 };
+    const intl = tmp10(1113).intl;
+    string = intl.string;
+    tmp13 = _modDef3013;
+    obj3 = { text: intl2.string(loading(1113).t["5911Lb"]), onPress: callback, loading };
+    intl2 = tmp10(1113).intl;
+    tmp9Result = tmp9(Stack, obj);
+  }
+  children[1] = tmp9Result;
+  return tmp4(tmp5, { children });
+}
+({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
+let obj = { notice: obj2 };
+obj2 = { paddingTop: nativeDefault.space.PX_16 };
+let closure_10 = createStyles.createStyles(obj);
+const redux = react.createContext({ unavailable: false, loading: false });
+let result = size.fileFinishedImporting("modules/notifications/settings/native/EffectiveNotifSettingsLayout.tsx");
+
+export default function EffectiveNotifSettingsLayout(node) {
+  let obj5;
+  let tmp9Result;
+  node = node.node;
+  const unavailableNode = node.unavailableNode;
   let isDeclarativeNotificationSettingsRedesignEnabled;
-  const node = unavailableNode.node;
-  const tmp = closure_9();
-  let obj = isDeclarativeNotificationSettingsRedesignEnabled(15902);
+  let stateFromStores1;
+  let memo;
+  let tmp = isDeclarativeNotificationSettingsRedesignEnabled;
+  let obj = node(isDeclarativeNotificationSettingsRedesignEnabled[12]);
   isDeclarativeNotificationSettingsRedesignEnabled = obj.useIsDeclarativeNotificationSettingsRedesignEnabled("EffectiveNotifSettingsLayout");
-  const items = [NotifSettingsProtoStore, AuthenticationStore, UserSettingsProtoStore];
-  const obj2 = isDeclarativeNotificationSettingsRedesignEnabled(504);
+  const items = [NotifSettingsProtoStore, memo, stateFromStores1];
+  const obj2 = node(isDeclarativeNotificationSettingsRedesignEnabled[13]);
   const stateFromStores = obj2.useStateFromStores(items, () => NotifSettingsProtoStore.hasValidEffectiveSettings);
   const items1 = [NotifSettingsProtoStore];
-  const obj3 = isDeclarativeNotificationSettingsRedesignEnabled(504);
-  const stateFromStores1 = obj3.useStateFromStores(items1, () => NotifSettingsProtoStore.isEffectiveSettingsLoading);
+  const obj3 = node(isDeclarativeNotificationSettingsRedesignEnabled[13]);
+  stateFromStores1 = obj3.useStateFromStores(items1, () => NotifSettingsProtoStore.isEffectiveSettingsLoading);
   const items2 = [isDeclarativeNotificationSettingsRedesignEnabled];
-  const effect = react.useEffect(() => {
+  const effect = stateFromStores.useEffect(() => {
     if (isDeclarativeNotificationSettingsRedesignEnabled) {
       let obj = DispatcherDefault;
       obj.dispatch({ type: "EFFECTIVE_NOTIFICATION_SETTINGS_SCREEN_OPEN" });
       return () => {
-        const obj = closure_1_1(closure_1_2[8]);
+        const obj = unavailableNode(isDeclarativeNotificationSettingsRedesignEnabled[14]);
         obj.dispatch({ type: "EFFECTIVE_NOTIFICATION_SETTINGS_SCREEN_CLOSE" });
       };
     }
   }, items2);
-  if (isDeclarativeNotificationSettingsRedesignEnabled) {
-    let tmp8Result;
-    if (!stateFromStores) {
-      let Nu2TMI;
-      let tmp12;
-      const obj4 = { style: tmp.root, children: items3 };
-      const Stack = tmp2(6161).Stack;
-      const Text = tmp2(5753).Text;
-      const intl = tmp2(1113).intl;
-      const string = intl.string;
-      const tmp11 = _modDef2992;
-      const tmp8 = closure_8;
-      if (stateFromStores1) {
-        Nu2TMI = tmp11.Ns127F;
-        tmp12 = tmp10;
-      } else {
-        Nu2TMI = tmp11.Nu2TMI;
-        tmp12 = tmp10;
+  const items3 = [stateFromStores, node, unavailableNode];
+  memo = stateFromStores.useMemo(() => {
+    let tmp2;
+    const tmp = stateFromStores;
+    if (tmp) {
+      tmp2 = node;
+    } else {
+      tmp2 = unavailableNode;
+      if (unavailableNode == null) {
+        const obj = { sections: [] };
+        const merged = Object.assign(node);
+        tmp2 = obj;
       }
-      const obj5 = { variant: "body-md/medium", accessibilityLiveRegion: "polite", children: string(Nu2TMI) };
-      items3 = [closure_7(Text, obj5), , ];
-      const obj6 = { text: intl2.string(isDeclarativeNotificationSettingsRedesignEnabled(1113).t["5911Lb"]), variant: "secondary", disabled: stateFromStores1, onPress: isDeclarativeNotificationSettingsRedesignEnabled(18330).retryEffectiveNotifSettings };
-      const Button = tmp2(5760).Button;
-      intl2 = tmp2(1113).intl;
-      items3[1] = closure_7(Button, obj6);
-      let tmp9Result = null;
-      if (null != unavailableNode) {
-        const obj7 = { node: unavailableNode };
-        tmp9Result = tmp9(tmp12(16932), obj7);
-      }
-      items3[2] = tmp9Result;
-      tmp8Result = tmp8(Stack, obj4);
     }
-    return tmp8Result;
+    return tmp2;
+  }, items3);
+  const items4 = [memo];
+  const items5 = [memo.ListHeaderComponent, stateFromStores, stateFromStores1];
+  const memo1 = stateFromStores.useMemo(() => {
+    const obj = { ListHeaderComponent: EffectiveSettingsHeader };
+    const merged = Object.assign(memo);
+    return obj;
+  }, items4);
+  if (isDeclarativeNotificationSettingsRedesignEnabled) {
+    const Provider = redux.Provider;
+    const obj4 = { value: tmp8, children: closure_7(unavailableNode(tmp[15]), obj5) };
+    obj5 = { node: memo1 };
+    tmp9Result = tmp9(Provider, obj4);
+  } else {
+    const obj6 = { node };
+    tmp9Result = tmp9(unavailableNode(tmp[15]), obj6);
   }
-  tmp8Result = closure_7(SettingLayoutDefault, { node });
+  return tmp9Result;
 };

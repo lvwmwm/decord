@@ -1,13 +1,13 @@
-// Module ID: 19071
-// Function ID: 19072
+// Module ID: 19257
+// Function ID: 19258
 // Name: useSearchSuggestionsGesture
-// Dependencies: [19, 1652, 14146, 5422, 2]
+// Dependencies: [19, 1652, 14631, 5535, 2]
 // Exports: useSearchSuggestionsContext, useSearchSuggestionsGesture
 
-// Module 19071 (useSearchSuggestionsGesture)
+// Module 19257 (useSearchSuggestionsGesture)
 import _mod1652 from "module_1652" /* 1652 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5422 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14146 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14631 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

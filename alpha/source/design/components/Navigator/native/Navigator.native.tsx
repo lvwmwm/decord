@@ -1,26 +1,26 @@
-// Module ID: 7234
-// Function ID: 7235
+// Module ID: 7424
+// Function ID: 7425
 // Name: Navigator
-// Dependencies: [32, 19, 17, 21, 5142, 575, 7235, 7236, 7067, 5726, 7237, 1627, 5753, 1113, 12, 7270, 1500, 6159, 5371, 7276, 7074, 1243, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 7425, 7426, 7427, 5839, 7485, 1627, 5866, 1113, 12, 7518, 1500, 6272, 5484, 7524, 7434, 1243, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 7234 (Navigator)
+// Module 7424 (Navigator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import SentryInitUtils from "SentryInitUtils" /* 1243 */;
 import Link from "Link" /* 1500 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import BackPressTracking from "BackPressTracking" /* 6159 */;
-import NavigatorHeader from "NavigatorHeader" /* 7067 */;
-import _mod7074 from "module_7074" /* 7074 */;
-import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7235 */;
-import react2 from "react" /* 7236 */;
-import NavigatorScreen2 from "NavigatorScreen" /* 7270 */;
-import useNavigationTheme from "useNavigationTheme" /* 7276 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import BackPressTracking from "BackPressTracking" /* 6272 */;
+import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7425 */;
+import react2 from "react" /* 7426 */;
+import NavigatorHeader from "NavigatorHeader" /* 7427 */;
+import _mod7434 from "module_7434" /* 7434 */;
+import NavigatorScreen2 from "NavigatorScreen" /* 7518 */;
+import useNavigationTheme from "useNavigationTheme" /* 7524 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -188,13 +188,13 @@ function NavigationStack(screens) {
           return obj;
         };
       } else {
-        fn2 = tmp4(7237).CardStyleInterpolators.forHorizontalIOS;
+        fn2 = tmp4(7485).CardStyleInterpolators.forHorizontalIOS;
       }
       const tmp9 = disableHeaderAnimation;
       if (tmp9) {
-        fn3 = tmp4(7237).HeaderStyleInterpolators.forNoAnimation;
+        fn3 = tmp4(7485).HeaderStyleInterpolators.forNoAnimation;
       } else if (navigatorShouldCrossfade) {
-        fn3 = tmp4(7237).HeaderStyleInterpolators.forFade;
+        fn3 = tmp4(7485).HeaderStyleInterpolators.forFade;
       } else {
         fn3 = (arg0) => {
           let current;
@@ -281,11 +281,11 @@ function WrappedNavigationStack(arg0) {
     }
     return tmp2;
   }), 1)[0];
-  const tmp5 = navigationContainerRef(5371)();
+  const tmp5 = navigationContainerRef(5484)();
   const obj3 = useNavigationTheme;
   let navigationTheme1 = obj3.useNavigationTheme(tmp5);
   const NavigationIndependentTree = Link.NavigationIndependentTree;
-  const Provider = _mod7074.HeaderBackContext.Provider;
+  const Provider = _mod7434.HeaderBackContext.Provider;
   const NavigationContainer = Link.NavigationContainer;
   if (null != navigationTheme) {
     navigationTheme1 = navigationTheme;

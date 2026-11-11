@@ -1,16 +1,16 @@
-// Module ID: 9138
-// Function ID: 9139
+// Module ID: 8100
+// Function ID: 8101
 // Name: usePinotDiscoverableRowState
-// Dependencies: [5013, 5074, 9122, 1072, 9121, 9139, 9141, 504, 2]
+// Dependencies: [5114, 5175, 8080, 1072, 8079, 8101, 8103, 504, 2]
 // Exports: getPinotDiscoverableOption, usePinotDiscoverableRowState
 
-// Module 9138 (usePinotDiscoverableRowState)
+// Module 8100 (usePinotDiscoverableRowState)
 import Constants from "Constants" /* 1072 */;
-import PinotDiscoverable from "PinotDiscoverable" /* 9121 */;
-import PinotConstants from "PinotConstants" /* 9122 */;
-import PinotEligibility from "PinotEligibility" /* 9139 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
+import PinotDiscoverable from "PinotDiscoverable" /* 8079 */;
+import PinotConstants from "PinotConstants" /* 8080 */;
+import PinotEligibility from "PinotEligibility" /* 8101 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ function getPinotDiscoverableRowState(guild) {
   guild = guild.guild;
   let tmp = guild;
   ({ flags, isPrivate, canManageGuild } = guild);
-  const values = Object.values(guild(9139).PINOT_FEATURES);
+  const values = Object.values(guild(8101).PINOT_FEATURES);
   const reduced = values.reduce((acc, channelFlag) => {
     let tmp = acc;
     obj = PinotEligibility;
@@ -35,7 +35,7 @@ function getPinotDiscoverableRowState(guild) {
   }, 0);
   if (!(reduced & PinotChannelFlags.SWP_CHANNEL_SUMMARIES_EXCLUDED)) {
     if (!(reduced & PinotChannelFlags.SWP_CHANNEL_MESSAGES_EXCLUDED)) {
-      SUMMARIES = tmp(9121).PinotDiscoverableOption.ALL_CONTENT;
+      SUMMARIES = tmp(8079).PinotDiscoverableOption.ALL_CONTENT;
     }
     if (0 === tmp4[SUMMARIES].length) {
       obj = { kind: "hidden" };
@@ -45,11 +45,11 @@ function getPinotDiscoverableRowState(guild) {
       let SUMMARIES2;
       if (!((flags | reduced) & PinotChannelFlags.SWP_CHANNEL_SUMMARIES_EXCLUDED)) {
         if (!((flags | reduced) & PinotChannelFlags.SWP_CHANNEL_MESSAGES_EXCLUDED)) {
-          SUMMARIES2 = tmp(9121).PinotDiscoverableOption.ALL_CONTENT;
+          SUMMARIES2 = tmp(8079).PinotDiscoverableOption.ALL_CONTENT;
         }
         obj = { kind: "select", value: SUMMARIES2, options: tmp4[SUMMARIES], serverFlags: reduced, readOnly: !canManageGuild };
       }
-      const PinotDiscoverableOption2 = tmp(9121).PinotDiscoverableOption;
+      const PinotDiscoverableOption2 = tmp(8079).PinotDiscoverableOption;
       if (!((flags | reduced) & PinotChannelFlags.SWP_CHANNEL_SUMMARIES_EXCLUDED)) {
         SUMMARIES2 = PinotDiscoverableOption2.SUMMARIES;
       } else {
@@ -58,7 +58,7 @@ function getPinotDiscoverableRowState(guild) {
     }
     return obj;
   }
-  const PinotDiscoverableOption = tmp(9121).PinotDiscoverableOption;
+  const PinotDiscoverableOption = tmp(8079).PinotDiscoverableOption;
   if (!(reduced & PinotChannelFlags.SWP_CHANNEL_SUMMARIES_EXCLUDED)) {
     SUMMARIES = PinotDiscoverableOption.SUMMARIES;
   } else {

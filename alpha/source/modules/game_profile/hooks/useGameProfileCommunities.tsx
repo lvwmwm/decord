@@ -1,14 +1,14 @@
-// Module ID: 9707
-// Function ID: 9708
+// Module ID: 10431
+// Function ID: 10432
 // Name: useGameProfileCommunities
-// Dependencies: [5, 2138, 9708, 504, 9709, 1089, 2]
+// Dependencies: [5, 2138, 10432, 504, 10433, 1089, 2]
 
-// Module 9707 (useGameProfileCommunities)
+// Module 10431 (useGameProfileCommunities)
 import DurationsDefault from "Durations" /* 1089 */;
-import DiscoverableGuildsActionCreators from "DiscoverableGuildsActionCreators" /* 9709 */;
+import DiscoverableGuildsActionCreators from "DiscoverableGuildsActionCreators" /* 10433 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GameStore from "GameStore" /* 2138 */;
-import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9708 */;
+import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 10432 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 

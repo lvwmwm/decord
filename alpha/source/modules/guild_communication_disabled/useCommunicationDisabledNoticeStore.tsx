@@ -1,14 +1,14 @@
-// Module ID: 5055
-// Function ID: 5056
+// Module ID: 5156
+// Function ID: 5157
 // Name: useCommunicationDisabledNoticeStore
-// Dependencies: [32, 5056, 510, 561, 1259, 1254, 5057, 2]
+// Dependencies: [32, 5157, 510, 561, 1259, 1254, 5158, 2]
 // Exports: clearCommunicationDisabledNotice, useCommunicationDisabledNoticeStore
 
-// Module 5055 (useCommunicationDisabledNoticeStore)
+// Module 5156 (useCommunicationDisabledNoticeStore)
 import Storage2 from "Storage" /* 510 */;
 import _mod1254 from "module_1254" /* 1254 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5056 */;
-import _slicedToArray2 from "_slicedToArray" /* 5057 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5157 */;
+import _slicedToArray2 from "_slicedToArray" /* 5158 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_561 from "module_561" /* 561 */;
 import size from "module_2" /* 2 */;

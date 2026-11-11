@@ -1,9 +1,9 @@
-// Module ID: 5367
-// Function ID: 5368
+// Module ID: 5480
+// Function ID: 5481
 // Name: flow/Client
 // Dependencies: [2, 1196]
 
-// Module 5367 (flow/Client)
+// Module 5480 (flow/Client)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import size from "module_2" /* 2 */;
 

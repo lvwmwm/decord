@@ -1,23 +1,23 @@
-// Module ID: 12267
-// Function ID: 12268
+// Module ID: 13071
+// Function ID: 13072
 // Name: ConjurePublishDestinationSheet
-// Dependencies: [32, 19, 17, 21, 5142, 575, 1113, 4028, 5376, 7429, 7385, 7127, 7130, 5760, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1113, 4079, 5489, 7885, 7847, 7679, 7681, 5873, 2]
 // Exports: default
 
-// Module 12267 (ConjurePublishDestinationSheet)
+// Module 13071 (ConjurePublishDestinationSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5376 */;
-import components_Button_Button from "components/Button/Button" /* 5760 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7127 */;
-import TableRadioRow from "TableRadioRow" /* 7130 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7385 */;
-import ActionSheet2 from "ActionSheet" /* 7429 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5489 */;
+import components_Button_Button from "components/Button/Button" /* 5873 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7679 */;
+import TableRadioRow from "TableRadioRow" /* 7681 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7847 */;
+import ActionSheet2 from "ActionSheet" /* 7885 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,7 +40,7 @@ function PublishDestinationSheet(arg0) {
   const tmp = closure_9();
   [value, tmp4] = react.useState(options.selected_destination_id);
   const intl = intl4.intl;
-  const stringResult = intl.string(value(4028).lJrOGW);
+  const stringResult = intl.string(value(4079).lJrOGW);
   let obj = {
     header: closure_6(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: stringResult }),
     onDismiss() {
@@ -65,7 +65,7 @@ function PublishDestinationSheet(arg0) {
   items = [closure_6(TableRadioGroup, obj3), , ];
   const obj4 = {
     variant: "primary",
-    text: intl2.string(value(4028).zh1Izp),
+    text: intl2.string(value(4079).zh1Izp),
     onPress() {
       require(first);
       const obj = ActionSheetActionCreatorsDefault;
@@ -77,7 +77,7 @@ function PublishDestinationSheet(arg0) {
   items[1] = closure_6(Button, obj4);
   const obj5 = {
     variant: "secondary",
-    text: intl3.string(value(4028).y83r6D),
+    text: intl3.string(value(4079).y83r6D),
     onPress() {
       require(null);
       const obj = ActionSheetActionCreatorsDefault;

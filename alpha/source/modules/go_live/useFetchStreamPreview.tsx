@@ -1,17 +1,17 @@
-// Module ID: 12217
-// Function ID: 12218
+// Module ID: 13011
+// Function ID: 13012
 // Name: useFetchStreamPreview
-// Dependencies: [19, 7984, 4991, 5074, 5045, 1083, 504, 7982, 2]
+// Dependencies: [19, 6801, 5092, 5175, 5146, 1083, 504, 6799, 2]
 // Exports: default
 
-// Module 12217 (useFetchStreamPreview)
+// Module 13011 (useFetchStreamPreview)
 import Constants from "Constants" /* 1083 */;
-import StreamActionCreators from "StreamActionCreators" /* 7982 */;
+import StreamActionCreators from "StreamActionCreators" /* 6799 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7984 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 6801 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

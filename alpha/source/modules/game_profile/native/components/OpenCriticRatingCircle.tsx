@@ -1,12 +1,12 @@
-// Module ID: 9487
-// Function ID: 9488
+// Module ID: 10279
+// Function ID: 10280
 // Name: OpenCriticRatingCircle
-// Dependencies: [21, 8105, 2]
+// Dependencies: [21, 8197, 2]
 // Exports: default
 
-// Module 9487 (OpenCriticRatingCircle)
+// Module 10279 (OpenCriticRatingCircle)
 import Fragment from "Fragment" /* 21 */;
-import inlineStyles from "inlineStyles" /* 8105 */;
+import inlineStyles from "inlineStyles" /* 8197 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;

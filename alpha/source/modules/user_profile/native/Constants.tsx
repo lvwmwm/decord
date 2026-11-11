@@ -1,11 +1,11 @@
-// Module ID: 7440
-// Function ID: 7441
+// Module ID: 7896
+// Function ID: 7897
 // Name: Constants
-// Dependencies: [1187, 7170, 2]
+// Dependencies: [1187, 7572, 2]
 
-// Module 7440 (Constants)
+// Module 7896 (Constants)
 import native from "native" /* 1187 */;
-import IconSize from "IconSize" /* 7170 */;
+import IconSize from "IconSize" /* 7572 */;
 import size from "module_2" /* 2 */;
 
 const XXLARGE = native.AvatarSizes.XXLARGE;

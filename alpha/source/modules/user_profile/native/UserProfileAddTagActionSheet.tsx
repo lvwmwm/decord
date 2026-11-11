@@ -1,20 +1,20 @@
-// Module ID: 15258
-// Function ID: 15259
+// Module ID: 12075
+// Function ID: 12076
 // Name: UserProfileAddTagActionSheet
-// Dependencies: [19, 502, 8831, 21, 5142, 575, 7127, 15234, 7130, 1113, 15233, 7129, 7040, 5737, 504, 15203, 7854, 6095, 12562, 8839, 5390, 7385, 5394, 6161, 2]
+// Dependencies: [19, 502, 8413, 21, 5243, 575, 7679, 12049, 7681, 1113, 12048, 7680, 7667, 5850, 504, 12054, 7290, 6208, 12029, 8480, 5503, 7847, 5507, 6274, 2]
 // Exports: default
 
-// Module 15258 (UserProfileAddTagActionSheet)
+// Module 12075 (UserProfileAddTagActionSheet)
 import nativeDefault from "native" /* 575 */;
-import TableRowGroup2 from "TableRowGroup" /* 7129 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7854 */;
-import Constants from "Constants" /* 8831 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15233 */;
-import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 15234 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7290 */;
+import TableRowGroup2 from "TableRowGroup" /* 7680 */;
+import Constants from "Constants" /* 8413 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12048 */;
+import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 12049 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let widgetEdited;
@@ -51,9 +51,9 @@ function RadioTagSection(section) {
     },
     children: items
   };
-  const TableRadioGroup = section(7127).TableRadioGroup;
+  const TableRadioGroup = section(7679).TableRadioGroup;
   let obj2 = { label: intl.string(section(1113).t.PoWNfe), value: none };
-  let TableRadioRow = section(7130).TableRadioRow;
+  let TableRadioRow = section(7681).TableRadioRow;
   intl = section(1113).intl;
   items = [closure_6(TableRadioRow, obj2), ];
   const tags1 = section.tags;

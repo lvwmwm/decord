@@ -1,30 +1,67 @@
-// Module ID: 9720
-// Function ID: 9721
+// Module ID: 9557
+// Function ID: 9558
 // Name: PromotionsStore
-// Dependencies: [1231, 9721, 1385, 9722, 9762, 504, 9763, 9723, 9724, 572, 2]
+// Dependencies: [2186, 1231, 9558, 1385, 1386, 9559, 9603, 2158, 9604, 12, 504, 9560, 9561, 9612, 572, 2]
 
-// Module 9720 (PromotionsStore)
+// Module 9557 (PromotionsStore)
+import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9723 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9763 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9560 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9604 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9612 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9721 */;
+import PromotionRecord from "PromotionRecord" /* 9558 */;
 import UserStore from "UserStore" /* 1385 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9722 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1386 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9559 */;
+import FunctionUtils from "FunctionUtils" /* 2158 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_12, hasBogoReward;
+let closure_14, hasBogoReward;
 
 let tmp;
-const MarketingSurfaceType = tmp(9724);
+const MarketingSurfaceType = tmp(9561);
 function createEmptyPromotionsByType() {
-  return { [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
+  return { [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
+}
+function syncCampaignOverrideComponents() {
+  let tmp = null != c17;
+  if (tmp) {
+    const currentUser = UserStore.getCurrentUser();
+    const items = [];
+    let tmp4 = items;
+    if (null != c17) {
+      let isStaffResult;
+      if (currentUser != null) {
+        isStaffResult = currentUser.isStaff();
+      }
+      tmp4 = items;
+      if (true === isStaffResult) {
+        let premiumTypeOverride;
+        const obj2 = OverridePremiumTypeStore;
+        if (OverridePremiumTypeStore.hasPremiumTypeOverride(currentUser)) {
+          premiumTypeOverride = obj2.getPremiumTypeOverride();
+        }
+        tmp4 = closure_19(c17, currentUser, LocaleStore.locale, premiumTypeOverride);
+      }
+    }
+    const obj3 = _modDef12;
+    let flag2 = !obj3.isEqual(tmp4, closure_18);
+    obj3.isEqual(tmp4, closure_18);
+    if (flag2) {
+      closure_18 = tmp4;
+      flag2 = true;
+    }
+    tmp = flag2;
+  }
+  return tmp;
 }
 function getLatestActiveOutboundPromotionStartDate() {
   let startDate = null;
-  const values = Object.values(closure_12[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
+  const values = Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
   for (const item10019 of values) {
     let tmp3 = item10019;
     let tmp5 = null == startDate;
@@ -56,145 +93,146 @@ function initializeFromUserSettings() {
   if (value == null) {
     value = null;
   }
-  closure_13 = value;
+  closure_15 = value;
 }
-let closure_7 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
-let c9 = false;
-let c10 = null;
+let closure_9 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
+let c11 = false;
+let c12 = null;
 let locale = null;
-const authStore2 = createEmptyPromotionsByType();
-let closure_13 = null;
+const gesture = createEmptyPromotionsByType();
+let closure_15 = null;
 let map = new Map();
-let map1 = new Map();
-let map2 = new Map();
-map = map2;
-let closure_17 = null;
+let c17 = null;
 let closure_18 = [];
-let c19 = false;
+let closure_19 = FunctionUtils.cachedFunction((components, arg1, arg2, arg3) => CampaignDevToolsUtils.resolveCampaignComponents(components.components, arg1, arg2, components.endDate, arg3));
+let closure_21 = null;
+let closure_22 = [];
+let c23 = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class PromotionsStore extends PersistedStore {
   initialize(arg0) {
     if (null != arg0) {
-      closure_7 = arg0;
+      closure_9 = arg0;
     }
-    this.waitFor(UserSettingsProtoStore, UserStore);
-    const items = [UserSettingsProtoStore];
-    this.syncWith(items, initializeFromUserSettings);
+    this.waitFor(UserSettingsProtoStore, UserStore, LocaleStore, OverridePremiumTypeStore);
+    const items = [UserStore, LocaleStore, OverridePremiumTypeStore];
+    this.syncWith(items, syncCampaignOverrideComponents);
+    const items1 = [UserSettingsProtoStore];
+    this.syncWith(items1, initializeFromUserSettings);
   }
   getPromotionByTypeAndId(MARKETING_MOMENT, promotionId) {
     let tmp2;
-    if (closure_12[MARKETING_MOMENT] != null) {
+    if (closure_14[MARKETING_MOMENT] != null) {
       tmp2 = tmp[promotionId];
     }
     return tmp2;
   }
+  getMarketingPromotionForEligibility(promotionId) {
+    const self = this;
+    let promotionByTypeAndId = null;
+    if (this.campaignOverrideId !== promotionId) {
+      promotionByTypeAndId = self.getPromotionByTypeAndId(require("promotions/constants").PromotionTypes.MARKETING_MOMENT, promotionId);
+    }
+    return promotionByTypeAndId;
+  }
   getPromotionByTypeAndKey(arg0, arg1) {
     let closure_0 = arg1;
-    const values = Object.values(closure_12[arg0]);
+    const values = Object.values(closure_14[arg0]);
     return values.find((promotionKey) => promotionKey.promotionKey === closure_0);
   }
   getState() {
-    return closure_7;
+    return closure_9;
   }
-  getAllMarketingComponentsByType(arg0, arg1) {
-    let value2;
-    let componentType;
-    if (closure_17 != null) {
-      componentType = closure_17.componentType;
-    }
-    if (componentType === arg0) {
-      if (closure_17.promotionId === arg1) {
-        const items = [closure_17];
-        value2 = items;
+  getMarketingComponentsBySurfaceAcrossPromotions(items) {
+    const obj = MarketingSurfaceTypeUtils;
+    if (obj.isMarketingSurfaceType(items)) {
+      let found;
+      const tmp3 = MarketingSurfaceType.MarketingSurfaceKindByType[items];
+      let closure_0 = tmp3;
+      if (null != c17) {
+        const currentUser = UserStore.getCurrentUser();
+        let isStaffResult;
+        if (currentUser != null) {
+          isStaffResult = currentUser.isStaff();
+        }
+        if (true === isStaffResult) {
+          const self = this;
+          const prop = this.campaignOverrideComponents;
+          found = prop.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+        }
+        return found;
       }
-      return value2;
-    }
-    const value = map2.get(arg1);
-    value2 = undefined;
-    if (value != null) {
-      value2 = value.get(arg0);
-    }
-    if (value2 == null) {
-      value2 = [];
-    }
-  }
-  getMarketingComponentsByTypeAcrossPromotions(arg0) {
-    let items1;
-    let componentType;
-    if (closure_17 != null) {
-      componentType = closure_17.componentType;
-    }
-    if (componentType === arg0) {
-      const items = [closure_17];
-      items1 = items;
+      let oneofKind;
+      if (closure_21 != null) {
+        oneofKind = closure_21.properties.properties.oneofKind;
+      }
+      if (oneofKind === tmp3) {
+        items = [closure_21];
+        found = items;
+      } else {
+        found = map.get(tmp3);
+        if (found == null) {
+          found = [];
+        }
+      }
     } else {
-      items1 = map1.get(arg0);
-      if (items1 == null) {
-        items1 = [];
-      }
-    }
-    return items1;
-  }
-  getMarketingComponentByType(GIFT_CUSTOMIZATION_BANNER) {
-    let componentType;
-    if (closure_17 != null) {
-      componentType = closure_17.componentType;
-    }
-    if (componentType === GIFT_CUSTOMIZATION_BANNER) {
-      return closure_17;
-    } else {
-      const currentUser = UserStore.getCurrentUser();
-      const _Date = Date;
-      const self = this;
-      const self2 = this;
-      const date = new Date();
-      const tmp8 = selectActiveMarketingComponentDefault;
-      let items = map1.get(GIFT_CUSTOMIZATION_BANNER);
-      if (items == null) {
-        items = [];
-      }
-      return tmp8(items, date, (isIncludedInRollout) => {
-        const isIncludedInRolloutResult = null != closure_0 && isIncludedInRollout.isIncludedInRollout(tmp.id, date);
-        return isIncludedInRolloutResult;
-      });
+      return [];
     }
   }
-  getMarketingComponentBySurface(arg0) {
+  getMarketingComponentBySurface(GIFT_CUSTOMIZATION_BANNER) {
     let marketingComponentByKind = null;
     const obj = MarketingSurfaceTypeUtils;
-    if (obj.isMarketingSurfaceType(arg0)) {
+    if (obj.isMarketingSurfaceType(GIFT_CUSTOMIZATION_BANNER)) {
       const self = this;
-      marketingComponentByKind = this.getMarketingComponentByKind(MarketingSurfaceType.MarketingSurfaceKindByType[arg0]);
+      marketingComponentByKind = this.getMarketingComponentByKind(MarketingSurfaceType.MarketingSurfaceKindByType[GIFT_CUSTOMIZATION_BANNER]);
     }
     return marketingComponentByKind;
   }
   getMarketingComponentByKind(arg0) {
+    let closure_0 = arg0;
+    if (null != c17) {
+      const tmp = UserStore;
+      const currentUser = UserStore.getCurrentUser();
+      let isStaffResult;
+      if (currentUser != null) {
+        isStaffResult = currentUser.isStaff();
+      }
+      if (true === isStaffResult) {
+        const self3 = this;
+        const prop = this.campaignOverrideComponents;
+        let found = prop.find((properties) => properties.properties.properties.oneofKind === closure_0);
+        if (found == null) {
+          found = null;
+        }
+        return found;
+      }
+    }
     let oneofKind;
-    if (closure_17 != null) {
-      oneofKind = closure_17.properties.properties.oneofKind;
+    if (closure_21 != null) {
+      oneofKind = closure_21.properties.properties.oneofKind;
     }
     if (oneofKind === arg0) {
-      return closure_17;
+      return closure_21;
     } else {
-      const currentUser = UserStore.getCurrentUser();
+      const currentUser2 = UserStore.getCurrentUser();
       const _Date = Date;
       const self = this;
       const self2 = this;
       const date = new Date();
-      const tmp8 = selectActiveMarketingComponentDefault;
+      const tmp10 = selectActiveMarketingComponentDefault;
       let items = map.get(arg0);
       if (items == null) {
         items = [];
       }
-      return tmp8(items, date, (isIncludedInRollout) => {
-        const isIncludedInRolloutResult = null != closure_0 && isIncludedInRollout.isIncludedInRollout(tmp.id, date);
+      return tmp10(items, date, (isIncludedInRollout) => {
+        const isIncludedInRolloutResult = null != closure_1 && isIncludedInRollout.isIncludedInRollout(tmp.id, date);
         return isIncludedInRolloutResult;
       });
     }
   }
   hasPromotion(arg0) {
     let closure_0 = arg0;
-    let values = Object.values(closure_12);
+    let values = Object.values(closure_14);
     return values.some((item) => {
       const values = Object.values(item);
       return values.some((promotionKey) => promotionKey.promotionKey === closure_1_0);
@@ -205,12 +243,12 @@ class PromotionsStore extends PersistedStore {
     let values2;
     let closure_0 = arg0;
     const obj = { oneTime: values.filter((partnerId) => partnerId.partnerId === closure_0), recurring: values2.filter((partnerId) => partnerId.partnerId === closure_0) };
-    values = Object.values(closure_12[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
-    values2 = Object.values(closure_12[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+    values = Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
+    values2 = Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
     return obj;
   }
   getGiftPromotion() {
-    const tmp = closure_12[require("promotions/constants").PromotionTypes.GIFT_PROMOTION];
+    const tmp = closure_14[require("promotions/constants").PromotionTypes.GIFT_PROMOTION];
     const keys = Object.keys(tmp);
     let tmp2 = null;
     if (0 !== keys.length) {
@@ -230,7 +268,7 @@ class PromotionsStore extends PersistedStore {
     return rewardSkuIds;
   }
   getMarketingMomentPromotion() {
-    const tmp = closure_12[require("promotions/constants").PromotionTypes.MARKETING_MOMENT];
+    const tmp = closure_14[require("promotions/constants").PromotionTypes.MARKETING_MOMENT];
     const keys = Object.keys(tmp);
     if (0 === keys.length) {
       return null;
@@ -260,7 +298,7 @@ class PromotionsStore extends PersistedStore {
   }
   getActiveBogoRewardPromotion() {
     const date = new Date();
-    const values = Object.values(closure_12[require("promotions/constants").PromotionTypes.MARKETING_MOMENT]);
+    const values = Object.values(closure_14[require("promotions/constants").PromotionTypes.MARKETING_MOMENT]);
     let found = values.find((hasBogoReward) => {
       hasBogoReward = hasBogoReward.hasBogoReward && hasBogoReward.endDate >= date;
       return hasBogoReward;
@@ -277,31 +315,31 @@ class PromotionsStore extends PersistedStore {
 const prototype = PromotionsStore.prototype;
 Object.defineProperty(prototype, "outboundPromotions", {
   get: function outboundPromotions() {
-    return Object.values(closure_12[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
+    return Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "outboundRecurringPromotions", {
   get: function outboundRecurringPromotions() {
-    return Object.values(closure_12[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+    return Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "lastSeenOutboundPromotionStartDate", {
   get: function lastSeenOutboundPromotionStartDate() {
-    return closure_7.lastSeenOutboundPromotionStartDate;
+    return closure_9.lastSeenOutboundPromotionStartDate;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "lastDismissedOutboundPromotionStartDate", {
   get: function lastDismissedOutboundPromotionStartDate() {
-    return closure_13;
+    return closure_15;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "lastFetchedActivePromotions", {
   get: function lastFetchedActivePromotions() {
-    return c10;
+    return c12;
   },
   set: undefined
 });
@@ -313,163 +351,240 @@ Object.defineProperty(prototype, "lastFetchedActivePromotionsLocale", {
 });
 Object.defineProperty(prototype, "isFetchingActivePromotions", {
   get: function isFetchingActivePromotions() {
-    return c9;
+    return c11;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "hasFetchedConsumedInboundPromotionId", {
   get: function hasFetchedConsumedInboundPromotionId() {
-    return closure_7.hasFetchedConsumedInboundPromotionId;
+    return closure_9.hasFetchedConsumedInboundPromotionId;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "consumedInboundPromotionId", {
   get: function consumedInboundPromotionId() {
-    return closure_7.consumedInboundPromotionId;
+    return closure_9.consumedInboundPromotionId;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "promotionsByType", {
   get: function promotionsByType() {
-    return closure_12;
+    return closure_14;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "campaignOverrideId", {
+  get: function campaignOverrideId() {
+    const currentUser = UserStore.getCurrentUser();
+    let isStaffResult;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    let tmp2 = null;
+    if (true === isStaffResult) {
+      let promotionId;
+      if (_null != null) {
+        promotionId = _null.promotionId;
+      }
+      if (promotionId == null) {
+        promotionId = null;
+      }
+      tmp2 = promotionId;
+    }
+    return tmp2;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "campaignOverrideRows", {
+  get: function campaignOverrideRows() {
+    let items;
+    const currentUser = UserStore.getCurrentUser();
+    let isStaffResult;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    if (true !== isStaffResult) {
+      items = [];
+    } else {
+      items = undefined;
+      if (_null != null) {
+        items = _null.components;
+      }
+      if (items == null) {
+        items = [];
+      }
+    }
+    return items;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "campaignOverrideComponents", {
+  get: function campaignOverrideComponents() {
+    const currentUser = UserStore.getCurrentUser();
+    let isStaffResult;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    return true !== isStaffResult ? [] : closure_18;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "claimedOutboundPromotionCodes", {
   get: function claimedOutboundPromotionCodes() {
-    return closure_18;
+    return closure_22;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "claimedOutboundPromotionCodesLoaded", {
   get: function claimedOutboundPromotionCodesLoaded() {
-    return c19;
+    return c23;
   },
   set: undefined
 });
 PromotionsStore.displayName = "PromotionsStore";
 PromotionsStore.persistKey = "PromotionsPersistedStore";
 let obj = {
+  CAMPAIGN_OVERRIDE_SET: function handleCampaignOverride(promotionId) {
+    const currentUser = UserStore.getCurrentUser();
+    let isStaffResult;
+    const obj = UserStore;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    let flag = true === isStaffResult;
+    if (flag) {
+      let tmp3 = null;
+      if (null != promotionId.promotionId) {
+        tmp3 = promotionId;
+      }
+      let c17 = tmp3;
+      const currentUser1 = obj.getCurrentUser();
+      const items = [];
+      let tmp5 = items;
+      if (null != c17) {
+        let isStaffResult1;
+        if (currentUser1 != null) {
+          isStaffResult1 = currentUser1.isStaff();
+        }
+        tmp5 = items;
+        if (true === isStaffResult1) {
+          let premiumTypeOverride;
+          const obj4 = OverridePremiumTypeStore;
+          if (OverridePremiumTypeStore.hasPremiumTypeOverride(currentUser1)) {
+            premiumTypeOverride = obj4.getPremiumTypeOverride();
+          }
+          tmp5 = closure_19(c17, currentUser1, LocaleStore.locale, premiumTypeOverride);
+        }
+      }
+      const obj5 = _modDef12;
+      flag = true;
+      const isEqualResult = obj5.isEqual(tmp5, closure_18);
+      if (!isEqualResult) {
+        closure_18 = tmp5;
+        flag = true;
+      }
+    }
+    return flag;
+  },
   ACTIVE_PROMOTIONS_FETCH_SUCCESS: function handleActivePromotionsFetchSuccess(promotions) {
     promotions = promotions.promotions;
     const consumedInboundPromotionId = promotions.consumedInboundPromotionId;
-    closure_12 = createEmptyPromotionsByType();
+    closure_14 = createEmptyPromotionsByType();
     map = new Map();
-    map1 = new Map();
-    new Map();
-    closure_17 = null;
+    closure_21 = null;
     let item = promotions.forEach((id) => {
-      let fromServer = closure_4.createFromServer(id);
-      closure_12[id.promotion_type][id.id] = fromServer;
-      map = new Map();
-      let result = closure_15.set(id.id, map);
+      let fromServer = closure_5.createFromServer(id);
+      closure_14[id.promotion_type][id.id] = fromServer;
       const marketing_components = id.marketing_components;
       if (marketing_components != null) {
         const item = marketing_components.forEach((item) => {
           fromServer = MarketingComponentRecord.createFromServer(item, fromServer);
-          let items = map1.get(fromServer.componentType);
-          if (items == null) {
-            items = [];
-          }
-          items.push(fromServer);
-          const result = map1.set(fromServer.componentType, items);
-          let value3 = map.get(fromServer.componentType);
-          const obj = map;
-          if (value3 == null) {
-            value3 = [];
-          }
-          value3.push(fromServer);
-          const result1 = obj.set(fromServer.componentType, value3);
           const oneofKind = fromServer.properties.properties.oneofKind;
           if (null != oneofKind) {
-            let value4 = closure_2_16.get(oneofKind);
-            if (value4 == null) {
-              value4 = [];
+            let items = map.get(oneofKind);
+            if (items == null) {
+              items = [];
             }
-            value4.push(fromServer);
-            const result2 = closure_2_16.set(oneofKind, value4);
+            items.push(fromServer);
+            const result = map.set(oneofKind, items);
           }
         });
       }
     });
-    c10 = Date.now();
-    c9 = false;
-    if (!closure_7.hasFetchedConsumedInboundPromotionId) {
-      closure_7.hasFetchedConsumedInboundPromotionId = true;
-      closure_7.consumedInboundPromotionId = consumedInboundPromotionId;
+    c12 = Date.now();
+    c11 = false;
+    if (!closure_9.hasFetchedConsumedInboundPromotionId) {
+      closure_9.hasFetchedConsumedInboundPromotionId = true;
+      closure_9.consumedInboundPromotionId = consumedInboundPromotionId;
     }
   },
   ACTIVE_PROMOTIONS_FETCH: function handleActivePromotionsFetchStart(locale) {
-    c9 = true;
+    c11 = true;
     locale = locale.locale;
   },
   ACTIVE_PROMOTIONS_FETCH_FAIL: function handleActivePromotionsFetchFail() {
-    closure_12 = createEmptyPromotionsByType();
+    closure_14 = createEmptyPromotionsByType();
     map = new Map();
-    map1 = new Map();
-    map2 = new Map();
-    closure_17 = null;
-    c9 = false;
+    closure_21 = null;
+    c11 = false;
   },
   ACTIVE_PROMOTIONS_CLEAR: function handleActivePromotionsClear() {
-    closure_12 = createEmptyPromotionsByType();
+    closure_14 = createEmptyPromotionsByType();
     map = new Map();
-    map1 = new Map();
-    map2 = new Map();
-    closure_17 = null;
-    c9 = false;
-    c10 = Date.now();
+    closure_21 = null;
+    c11 = false;
+    c12 = Date.now();
   },
   OUTBOUND_PROMOTION_NOTICE_DISMISS: function handleDismissOutboundPromotionNotice() {
-    if (0 === Object.values(closure_12[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();
       if (null != tmp2) {
-        closure_13 = tmp2;
+        closure_15 = tmp2;
       }
     }
   },
   OUTBOUND_PROMOTIONS_SEEN: function handleOutboundPromotionsSeen() {
-    if (0 === Object.values(closure_12[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();
       if (null != tmp2) {
-        closure_13 = tmp2;
-        closure_7.lastSeenOutboundPromotionStartDate = tmp2;
+        closure_15 = tmp2;
+        closure_9.lastSeenOutboundPromotionStartDate = tmp2;
       }
     }
   },
   CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS: function handleClaimedOutboundPromotionCodesFetchSuccess(claimedOutboundPromotionCodes) {
-    closure_18 = claimedOutboundPromotionCodes.claimedOutboundPromotionCodes;
-    c19 = true;
+    closure_22 = claimedOutboundPromotionCodes.claimedOutboundPromotionCodes;
+    c23 = true;
   },
   CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_FAIL: function handleClaimedOutboundPromotionCodesFetchFail() {
-    closure_18 = [];
-    c19 = true;
+    closure_22 = [];
+    c23 = true;
   },
   CLAIMED_OUTBOUND_PROMOTION_CODE_ADD: function handleClaimedOutboundPromotionCodeAdd(claimedOutboundPromotionCode) {
     claimedOutboundPromotionCode = claimedOutboundPromotionCode.claimedOutboundPromotionCode;
-    if (closure_18.some((promotion) => promotion.promotion.id === claimedOutboundPromotionCode.promotion.id)) {
+    if (closure_22.some((promotion) => promotion.promotion.id === claimedOutboundPromotionCode.promotion.id)) {
       return false;
     } else {
       const items = [];
-      items[HermesBuiltin.arraySpread(items, closure_18, 0)] = claimedOutboundPromotionCode;
-      closure_18 = items;
+      items[HermesBuiltin.arraySpread(items, closure_22, 0)] = claimedOutboundPromotionCode;
+      closure_22 = items;
     }
   },
   LOGOUT: function handleLogout() {
-    closure_7 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
-    c9 = false;
-    c10 = null;
-    closure_12 = createEmptyPromotionsByType();
-    map.clear();
-    map1.clear();
-    map2.clear();
-    closure_17 = null;
+    let c17 = null;
     closure_18 = [];
-    c19 = false;
+    closure_9 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
+    c11 = false;
+    c12 = null;
+    closure_14 = createEmptyPromotionsByType();
+    map.clear();
+    closure_21 = null;
+    closure_22 = [];
+    c23 = false;
   },
   PREMIUM_MARKETING_PREVIEW: function handlePremiumMarketingPreview(data) {
     data = data.data;
@@ -477,9 +592,9 @@ let obj = {
     if (null != data.promotion) {
       fromServer = PromotionRecord.createFromServer(data.promotion);
     }
-    closure_17 = MarketingComponentRecord.createFromServer(data, fromServer);
+    closure_21 = MarketingComponentRecord.createFromServer(data, fromServer);
     if (null != fromServer) {
-      closure_12[fromServer.promotionType][fromServer.id] = fromServer;
+      closure_14[fromServer.promotionType][fromServer.id] = fromServer;
     }
   }
 };

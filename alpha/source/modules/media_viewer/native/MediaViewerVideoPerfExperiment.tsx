@@ -1,9 +1,9 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 15113
+// Function ID: 15114
 // Name: MediaViewerVideoPerfExperiment
 // Dependencies: [1449, 1377, 2]
 
-// Module 8927 (MediaViewerVideoPerfExperiment)
+// Module 15113 (MediaViewerVideoPerfExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;

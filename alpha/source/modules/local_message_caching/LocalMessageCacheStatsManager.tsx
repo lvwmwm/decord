@@ -1,13 +1,13 @@
-// Module ID: 20539
-// Function ID: 20540
+// Module ID: 20734
+// Function ID: 20735
 // Name: LocalMessageCacheStatsManager
-// Dependencies: [1072, 7746, 1252, 7353, 2]
+// Dependencies: [1072, 8624, 1252, 7816, 2]
 
-// Module 20539 (LocalMessageCacheStatsManager)
+// Module 20734 (LocalMessageCacheStatsManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7746 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 8624 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 let c2;

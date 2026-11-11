@@ -1,21 +1,21 @@
-// Module ID: 18104
-// Function ID: 18105
+// Module ID: 18275
+// Function ID: 18276
 // Name: BuildOverridesScreen
-// Dependencies: [5, 32, 19, 17, 11511, 21, 5142, 575, 5737, 504, 13444, 13447, 13445, 1374, 7421, 5838, 6161, 7129, 7041, 5857, 7201, 12400, 5864, 7127, 7130, 9659, 18105, 7151, 5760, 5853, 5753, 2]
+// Dependencies: [5, 32, 19, 17, 12278, 21, 5243, 575, 5850, 504, 13958, 13961, 13959, 1374, 7877, 5951, 6274, 7680, 7379, 5970, 7720, 13206, 5977, 7679, 7681, 9455, 18276, 7553, 5873, 5966, 5866, 2]
 
-// Module 18104 (BuildOverridesScreen)
+// Module 18275 (BuildOverridesScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5838 */;
-import ClipboardUtils from "ClipboardUtils" /* 7421 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13444 */;
-import RecentBuildOverrides from "RecentBuildOverrides" /* 13447 */;
+import ToastUtils from "ToastUtils" /* 5951 */;
+import ClipboardUtils from "ClipboardUtils" /* 7877 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13958 */;
+import RecentBuildOverrides from "RecentBuildOverrides" /* 13961 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11511 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 12278 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let c2, c5, closure_2, closure_3, dependencyMap;
@@ -246,7 +246,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
     return obj(...arguments);
   };
   let tmp = dependencyMap;
-  const tmp2 = obj(first(5737)({ includeKeyboardHeight: true }).insets.bottom);
+  const tmp2 = obj(first(5850)({ includeKeyboardHeight: true }).insets.bottom);
   let tmp3 = stateFromStores;
   obj = stateFromStores(504);
   let items = [BuildOverrideStore];
@@ -262,8 +262,8 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   const tmp5 = first1(react.useState({ type: "branch", id: "" }), 2);
   first = tmp5[0];
   dependencyMap = tmp5[1];
-  [arr2, _asyncToGenerator] = first1(react.useState(stateFromStores(13447).getRecentDeviceBuildOverrides), 2);
-  const tmp7 = first1(react.useState(stateFromStores(13447).getRecentDeviceBuildOverrides), 2);
+  [arr2, _asyncToGenerator] = first1(react.useState(stateFromStores(13961).getRecentDeviceBuildOverrides), 2);
+  const tmp7 = first1(react.useState(stateFromStores(13961).getRecentDeviceBuildOverrides), 2);
   const tmp8 = first1(react.useState(false), 2);
   first1 = tmp8[0];
   react = tmp8[1];
@@ -274,7 +274,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   const tmp12 = first1(react.useState(), 2);
   const trimmed = str.trim();
   let str2 = "Discord Android";
-  if ("discord_ios" === stateFromStores(13444).DEVICE_FIELD) {
+  if ("discord_ios" === stateFromStores(13958).DEVICE_FIELD) {
     str2 = "Discord iOS";
   }
   const items1 = [stateFromStores];
@@ -288,14 +288,14 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   }, items1);
   let tmp16 = trimmed;
   let obj3 = { style: tmp2.content, contentContainerStyle: tmp2.container, keyboardShouldPersistTaps: "handled", children: tmp18(Stack, obj20) };
-  Stack = tmp3(6161).Stack;
-  const TableRowGroup = tmp3(7129).TableRowGroup;
-  let TableRow = tmp3(7041).TableRow;
+  Stack = tmp3(6274).Stack;
+  const TableRowGroup = tmp3(7680).TableRowGroup;
+  let TableRow = tmp3(7379).TableRow;
   const tmp17 = ScrollView;
   if (null != stateFromStores) {
-    MobilePhoneIcon = tmp3(5857).CopyIcon;
+    MobilePhoneIcon = tmp3(5970).CopyIcon;
   } else {
-    MobilePhoneIcon = tmp3(7201).MobilePhoneIcon;
+    MobilePhoneIcon = tmp3(7720).MobilePhoneIcon;
   }
   let obj4 = { icon: tmp16(MobilePhoneIcon, {}), label: str3, subLabel: str4, onPress: fn };
   str3 = undefined;
@@ -324,11 +324,11 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   let tmp18Result = null != stateFromStores;
   if (tmp18Result) {
     let obj5 = { children: items3 };
-    let obj6 = { icon: tmp16(tmp3(12400).RefreshIcon, {}), label: "Refresh override", onPress: tmp3(13444).refreshBuildOverride, arrow: true };
-    const TableRow2 = tmp3(7041).TableRow;
+    let obj6 = { icon: tmp16(tmp3(13206).RefreshIcon, {}), label: "Refresh override", onPress: tmp3(13958).refreshBuildOverride, arrow: true };
+    const TableRow2 = tmp3(7379).TableRow;
     items3 = [tmp16(TableRow2, obj6), ];
     let obj7 = {
-      icon: tmp16(tmp3(5864).TrashIcon, { color: "text-feedback-critical" }),
+      icon: tmp16(tmp3(5977).TrashIcon, { color: "text-feedback-critical" }),
       label: "Clear override",
       subLabel: stateFromStores.id,
       variant: "danger",
@@ -338,17 +338,17 @@ const memoResult = react.memo(function BuildOverridesScreen() {
         },
       arrow: true
     };
-    const TableRow3 = tmp3(7041).TableRow;
+    const TableRow3 = tmp3(7379).TableRow;
     items3[1] = tmp16(TableRow3, obj7);
     tmp18Result = tmp18(run, obj5);
   }
   items2[1] = tmp18Result;
   const items4 = [tmp18(TableRowGroup, { title: "Current build", hasIcons: true, children: items2 }), , , ];
-  const Stack2 = tmp3(6161).Stack;
+  const Stack2 = tmp3(6274).Stack;
   let obj8 = { title: "Manual override", description: "Choose a branch or commit to run on this device.", hasIcons: true, children: tmp16(TableRow4, obj9) };
-  const TableRowGroup2 = tmp3(7129).TableRowGroup;
-  obj9 = { icon: tmp16(tmp3(7201).MobilePhoneIcon, {}), label: "Project", subLabel: str2 };
-  TableRow4 = tmp3(7041).TableRow;
+  const TableRowGroup2 = tmp3(7680).TableRowGroup;
+  obj9 = { icon: tmp16(tmp3(7720).MobilePhoneIcon, {}), label: "Project", subLabel: str2 };
+  TableRow4 = tmp3(7379).TableRow;
   const items5 = [tmp16(TableRowGroup2, obj8), , , ];
   let obj10 = {
     title: "Target type",
@@ -360,19 +360,19 @@ const memoResult = react.memo(function BuildOverridesScreen() {
     hasIcons: true,
     children: items6
   };
-  const TableRadioGroup = tmp3(7127).TableRadioGroup;
-  const obj11 = { value: "branch", label: "Branch name", icon: tmp16(tmp3(9659).TagIcon, {}) };
-  const TableRadioRow = tmp3(7130).TableRadioRow;
+  const TableRadioGroup = tmp3(7679).TableRadioGroup;
+  const obj11 = { value: "branch", label: "Branch name", icon: tmp16(tmp3(9455).TagIcon, {}) };
+  const TableRadioRow = tmp3(7681).TableRadioRow;
   items6 = [tmp16(TableRadioRow, obj11), ];
-  const obj12 = { value: "id", label: "Commit SHA", icon: tmp16(tmp3(18105).HashmarkIcon, {}) };
-  const TableRadioRow2 = tmp3(7130).TableRadioRow;
+  const obj12 = { value: "id", label: "Commit SHA", icon: tmp16(tmp3(18276).HashmarkIcon, {}) };
+  const TableRadioRow2 = tmp3(7681).TableRadioRow;
   items6[1] = tmp16(TableRadioRow2, obj12);
   items5[1] = obj(TableRadioGroup, obj10);
-  const TextInput = tmp3(7151).TextInput;
+  const TextInput = tmp3(7553).TextInput;
   if ("branch" === first.type) {
-    HashmarkIcon = tmp3(9659).TagIcon;
+    HashmarkIcon = tmp3(9455).TagIcon;
   } else {
-    HashmarkIcon = tmp3(18105).HashmarkIcon;
+    HashmarkIcon = tmp3(18276).HashmarkIcon;
   }
   const obj13 = {
     leadingIcon: HashmarkIcon,
@@ -398,7 +398,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   }
   items5[2] = tmp16(TextInput, obj13);
   let tmp22 = first1;
-  const Button = tmp3(5760).Button;
+  const Button = tmp3(5873).Button;
   if (!first1) {
     tmp22 = "" === trimmed;
   }
@@ -420,10 +420,10 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   };
   items5[3] = tmp16(Button, obj15);
   items4[1] = obj(Stack2, obj14);
-  const TableRowGroup3 = tmp3(7129).TableRowGroup;
+  const TableRowGroup3 = tmp3(7680).TableRowGroup;
   if (0 === arr2.length) {
-    const obj16 = { icon: tmp16(tmp3(12400).RefreshIcon, {}), label: "No recent builds", subLabel: "Your recent builds will appear here after you apply an override." };
-    const TableRow5 = tmp3(7041).TableRow;
+    const obj16 = { icon: tmp16(tmp3(13206).RefreshIcon, {}), label: "No recent builds", subLabel: "Your recent builds will appear here after you apply an override." };
+    const TableRow5 = tmp3(7379).TableRow;
     mapped = tmp16(TableRow5, obj16);
   } else {
     mapped = arr2.map((id) => {
@@ -469,10 +469,10 @@ const memoResult = react.memo(function BuildOverridesScreen() {
     });
   }
   items4[2] = tmp16(TableRowGroup3, { title: "Recent builds", description: "Return to a build you used on this device.", hasIcons: true, children: mapped });
-  const Stack3 = tmp3(6161).Stack;
-  const TableRowGroup4 = tmp3(7129).TableRowGroup;
-  const obj17 = { icon: tmp16(tmp3(5853).LinkIcon, {}), label: str10, subLabel: tmp24 };
-  const TableRow6 = tmp3(7041).TableRow;
+  const Stack3 = tmp3(6274).Stack;
+  const TableRowGroup4 = tmp3(7680).TableRowGroup;
+  const obj17 = { icon: tmp16(tmp3(5966).LinkIcon, {}), label: str10, subLabel: tmp24 };
+  const TableRow6 = tmp3(7379).TableRow;
   str10 = "Apply an override to create a link.";
   if (null != stateFromStores) {
     str10 = stateFromStores.id;
@@ -487,11 +487,11 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   let tmp16Result2 = null != tmp13;
   if (tmp16Result2) {
     const obj19 = { variant: "body-sm/normal", color: "text-feedback-critical", children: tmp13 };
-    tmp16Result2 = tmp16(tmp3(5753).Text, obj19);
+    tmp16Result2 = tmp16(tmp3(5866).Text, obj19);
   }
   items7[1] = tmp16Result2;
   let tmp26 = null == stateFromStores;
-  const Button2 = tmp3(5760).Button;
+  const Button2 = tmp3(5873).Button;
   if (!tmp26) {
     tmp26 = tmp11;
   }

@@ -1,17 +1,17 @@
-// Module ID: 20457
-// Function ID: 20458
+// Module ID: 20652
+// Function ID: 20653
 // Name: NativeNotificationsManager
-// Dependencies: [5, 6944, 1072, 3, 7353, 1377, 11049, 11052, 8855, 1252, 2]
+// Dependencies: [5, 6997, 1072, 3, 7816, 1377, 12830, 12832, 8499, 1252, 2]
 
-// Module 20457 (NativeNotificationsManager)
+// Module 20652 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import PushNotificationDefault from "PushNotification" /* 11049 */;
-import react_nativeDefault from "react-native" /* 11052 */;
+import PushNotificationDefault from "PushNotification" /* 12830 */;
+import react_nativeDefault from "react-native" /* 12832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6944 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6997 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c7, c8, closure_0, closure_3, map;

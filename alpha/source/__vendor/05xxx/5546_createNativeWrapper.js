@@ -1,28 +1,33 @@
 // Module ID: 5546
 // Function ID: 5547
 // Name: createNativeWrapper
-// Dependencies: [19, 21, 5465]
+// Dependencies: [109, 19, 21, 5547, 5606, 5621, 5618, 5593]
 // Exports: default
 
 // Module 5546 (createNativeWrapper)
+import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeViewGestureHandlerProps from "nativeViewGestureHandlerProps" /* 5465 */;
-import "react";
-import react from "react" /* 19 */;
+import GestureDetectorType from "GestureDetectorType" /* 5547 */;
+import _mod5621 from "module_5621" /* 5621 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
-let NativeViewGestureHandler, _require, closure_0, closure_1, closure_2, keys, merged, merged1, merged2, obj1, obj5, obj6, reduce, reduced, tmp3, tmp4, tmp5;
+const require = globalThis.__r;
+let NativeDetector, _require, closure_0, closure_1, flag, items, keys, merged, merged1, nativeGesture, obj1, obj3, obj6, obj7, onGestureUpdate_CAN_CAUSE_INFINITE_RERENDER, reduce, reduced, ref, tmp3, tmp6, tmp7;
 
-let c2;
-let c3;
-({ useImperativeHandle: c2, useRef: c3 } = react);
+let closure_2 = ["ref", "onGestureUpdate_CAN_CAUSE_INFINITE_RERENDER"];
+const useEffect = react2.useEffect;
 const jsx = Fragment.jsx;
-let items = [...nativeViewGestureHandlerProps.nativeViewProps, "onGestureHandlerEvent", "onGestureHandlerStateChange"];
 
 export default function createNativeWrapper(displayName) {
   _require = displayName;
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
+  }
+  let Native = arg2;
+  if (arg2 === undefined) {
+    const tmp = _require;
+    Native = require("GestureDetectorType").GestureDetectorType.Native;
   }
   let str;
   if (displayName != null) {
@@ -39,11 +44,11 @@ export default function createNativeWrapper(displayName) {
     str = name;
   }
   if (!str) {
-    let tmp2 = typeof displayName === "string";
+    let tmp4 = typeof displayName === "string";
     if (typeof displayName === "string") {
-      tmp2 = displayName;
+      tmp4 = displayName;
     }
-    str = tmp2;
+    str = tmp4;
   }
   if (!str) {
     str = "ComponentWrapper";
@@ -51,32 +56,45 @@ export default function createNativeWrapper(displayName) {
   class ComponentWrapper {
     constructor(arg0) {
       closure_0 = displayName;
-      keys = Object.keys(displayName);
+      onGestureUpdate_CAN_CAUSE_INFINITE_RERENDER = displayName.onGestureUpdate_CAN_CAUSE_INFINITE_RERENDER;
+      closure_1 = onGestureUpdate_CAN_CAUSE_INFINITE_RERENDER;
+      ref = displayName.ref;
+      keys = Object.keys(closure_3(displayName, closure_2));
       obj = { gestureHandlerProps: null, childProps: null };
       obj1 = {};
       reduce = keys.reduce;
       merged = Object.assign(closure_1);
       obj.gestureHandlerProps = obj1;
       obj.childProps = { enabled: displayName.enabled, hitSlop: displayName.hitSlop, testID: displayName.testID };
-      reduced = reduce(function() { /* body not rendered: F125000 */ }, obj);
+      reduced = reduce(function() { /* body not rendered: F126165 */ }, obj);
       ({ gestureHandlerProps, childProps } = reduced);
-      tmp3 = useRef(null);
-      closure_1 = tmp3;
-      tmp4 = useRef(null);
-      closure_2 = tmp4;
+      if (undefined === gestureHandlerProps.disableReanimated) {
+        flag = true;
+        gestureHandlerProps.disableReanimated = true;
+      }
+      tmp3 = closure_0;
+      tmp4 = closure_1;
+      obj3 = closure_0(closure_1[5]);
+      nativeGesture = obj3.useNativeGesture(gestureHandlerProps);
+      closure_2 = nativeGesture;
       items = [, ];
-      items[0] = tmp3;
-      items[1] = tmp4;
-      tmp5 = useImperativeHandle(displayName.ref, function() { /* body not rendered: F125001 */ }, items);
-      obj5 = {};
-      NativeViewGestureHandler = closure_0(closure_1[2]).NativeViewGestureHandler;
-      merged1 = Object.assign(gestureHandlerProps);
-      obj5.ref = tmp4;
-      obj6 = {};
-      merged2 = Object.assign(childProps);
-      obj6.ref = tmp3;
-      obj5.children = jsx(closure_0, obj6);
-      return jsx(NativeViewGestureHandler, obj5);
+      items[0] = nativeGesture;
+      items[1] = onGestureUpdate_CAN_CAUSE_INFINITE_RERENDER;
+      tmp6 = useEffect(function() { /* body not rendered: F126166 */ }, items);
+      tmp7 = Native;
+      if (Native === closure_0(closure_1[3]).GestureDetectorType.Intercepting) {
+        NativeDetector = tmp3(tmp4[3]).InterceptingGestureDetector;
+      } else if (tmp7 === tmp3(tmp4[3]).GestureDetectorType.Virtual) {
+        NativeDetector = tmp3(tmp4[6]).VirtualDetector;
+      } else {
+        NativeDetector = tmp3(tmp4[7]).NativeDetector;
+      }
+      obj6 = { gesture: nativeGesture, children: null };
+      obj7 = {};
+      merged1 = Object.assign(childProps);
+      obj7.ref = ref;
+      obj6.children = jsx(closure_0, obj7);
+      return jsx(NativeDetector, obj6);
     }
   }
   ComponentWrapper.displayName = str;

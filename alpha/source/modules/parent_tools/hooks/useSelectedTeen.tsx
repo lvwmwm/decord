@@ -1,13 +1,13 @@
-// Module ID: 8446
-// Function ID: 8447
+// Module ID: 9552
+// Function ID: 9553
 // Name: useSelectedTeen
-// Dependencies: [1385, 7794, 563, 2]
+// Dependencies: [1385, 8673, 563, 2]
 // Exports: useSelectedTeen, useSelectedTeenId
 
-// Module 8446 (useSelectedTeen)
+// Module 9552 (useSelectedTeen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import UserStore from "UserStore" /* 1385 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7794 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

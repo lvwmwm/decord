@@ -1,9 +1,9 @@
-// Module ID: 5157
-// Function ID: 5158
+// Module ID: 5258
+// Function ID: 5259
 // Name: AccessibilityPreferencesContext/AccessibilityConstants
 // Dependencies: [2]
 
-// Module 5157 (AccessibilityPreferencesContext/AccessibilityConstants)
+// Module 5258 (AccessibilityPreferencesContext/AccessibilityConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityPreferencesContext/AccessibilityConstants.tsx");

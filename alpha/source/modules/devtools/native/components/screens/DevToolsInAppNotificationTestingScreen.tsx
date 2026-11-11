@@ -1,31 +1,31 @@
-// Module ID: 18092
-// Function ID: 18093
+// Module ID: 18263
+// Function ID: 18264
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6895, 4995, 5085, 4991, 5013, 5045, 1385, 1072, 21, 5142, 575, 5839, 11161, 11163, 6618, 11, 1627, 1187, 7129, 7041, 12412, 7050, 2]
+// Dependencies: [19, 17, 6947, 5096, 5186, 5092, 5114, 5146, 1385, 1072, 21, 5243, 575, 5952, 10962, 10964, 6730, 11, 1627, 1187, 7680, 7379, 13219, 7388, 2]
 // Exports: default
 
-// Module 18092 (DevToolsInAppNotificationTestingScreen)
+// Module 18263 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ChannelRecord from "ChannelRecord" /* 4995 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
-import StickersTypes from "StickersTypes" /* 6618 */;
-import TableRowGroup2 from "TableRowGroup" /* 7129 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11161 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11163 */;
+import ChannelRecord from "ChannelRecord" /* 5096 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
+import StickersTypes from "StickersTypes" /* 6730 */;
+import TableRowGroup2 from "TableRowGroup" /* 7680 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 10962 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10964 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6895 */;
-import MessageRecord from "MessageRecord" /* 5085 */;
-import ChannelStore from "ChannelStore" /* 4991 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import StickersStore from "StickersStore" /* 6947 */;
+import MessageRecord from "MessageRecord" /* 5186 */;
+import ChannelStore from "ChannelStore" /* 5092 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -553,7 +553,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
       const obj3 = { size: nativeDefault.space.PX_16 };
       const Spacer = native.Spacer;
       items[1] = gesture(Spacer, obj3);
-      return clientStatuses(Fragment, obj, title.title);
+      return closure_15(Fragment, obj, title.title);
     }),
 
   ];

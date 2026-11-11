@@ -1,25 +1,25 @@
-// Module ID: 20256
-// Function ID: 20257
+// Module ID: 20451
+// Function ID: 20452
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 5013, 5074, 1385, 9161, 1072, 21, 5142, 575, 504, 7284, 4967, 6957, 6960, 9160, 7041, 1187, 7050, 1113, 7421, 5838, 7426, 7274, 20257, 7285, 8885, 7290, 5736, 2]
+// Dependencies: [32, 19, 17, 5114, 5175, 1385, 8339, 1072, 21, 5243, 575, 504, 5068, 5839, 5998, 7010, 6854, 8338, 7379, 1187, 7388, 1113, 7877, 5951, 7882, 7522, 20452, 7759, 8530, 7764, 5849, 2]
 // Exports: default
 
-// Module 20256 (GuildSettingsModalBans)
+// Module 20451 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6957 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7426 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
+import fuzzysearchDefault from "fuzzysearch" /* 7010 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7882 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5013 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
+import GuildStore from "GuildStore" /* 5114 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9161 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8339 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let bans, bansVersion, props;
@@ -48,19 +48,19 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
   let intl3;
   let items8;
   let obj7;
-  let tmp15;
-  let tmp16Result;
   let tmp19;
+  let tmp20Result;
+  let tmp23;
   guildId = guildId.guildId;
   let stateFromStores1;
   let setting;
+  let rounded;
   let users;
+  let tmp = guildId;
+  const tmp2 = stateFromStores1;
   const contentContainerStyle = guildId.contentContainerStyle;
-  let tmp = closure_15();
-  const tmp2 = guildId;
-  let tmp3 = stateFromStores1;
   let obj = guildId(stateFromStores1[11]);
-  let items = [GuildStore];
+  let items = [users];
   let stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
   let obj2 = guildId(stateFromStores1[11]);
   let items1 = [PermissionStore];
@@ -83,20 +83,31 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
   });
   bans = stateFromStoresObject.bans;
   const searchQuery = stateFromStoresObject.searchQuery;
-  let tmp7 = stateFromStores;
   bansVersion = stateFromStoresObject.bansVersion;
-  let tmp8 = stateFromStores(stateFromStores1[12])();
-  const flattenResult = users.flatten(contentContainerStyle);
+  const flattenResult = rounded.flatten(contentContainerStyle);
   let paddingBottom;
   if (flattenResult != null) {
     paddingBottom = flattenResult.paddingBottom;
   }
   let num = 0;
   if (typeof paddingBottom === "number") {
-    num = paddingBottom + tmp7(tmp3[10]).space.PX_16;
+    let tmp28 = stateFromStores;
+    num = paddingBottom + stateFromStores(tmp2[10]).space.PX_16;
   }
-  const DeveloperMode = tmp2(tmp3[13]).DeveloperMode;
+  let tmp8 = closure_15();
+  const DeveloperMode = tmp(tmp2[12]).DeveloperMode;
   setting = DeveloperMode.useSetting();
+  const tmp10 = stateFromStores;
+  const tmpResult = tmp(tmp2[13]);
+  const token = tmpResult.useToken(stateFromStores(tmp2[10]).modules.mobile.TABLE_ROW_HEIGHT);
+  const tmpResult5 = tmp(tmp2[13]);
+  const token1 = tmpResult5.useToken(stateFromStores(tmp2[10]).modules.mobile.TABLE_ROW_PADDING);
+  const tmpResult6 = tmp(tmp2[13]);
+  const token2 = tmpResult6.useToken(stateFromStores(tmp2[10]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
+  const tmpResult7 = tmp(tmp2[14]);
+  const scaledTextLineHeight = tmpResult7.useScaledTextLineHeight(token2);
+  const tmpResult8 = tmp(tmp2[14]);
+  rounded = Math.ceil(Math.max(token, 2 * token1 + scaledTextLineHeight + tmpResult8.useScaledTextLineHeight("body-xs/medium")));
   const items4 = [bans, bansVersion, searchQuery];
   const memo = searchQuery.useMemo(() => {
     let items2;
@@ -151,11 +162,11 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
     let obj = GuildActionCreatorsDefault;
     const guildBansBatch = obj.fetchGuildBansBatch(guildId, 1000, null);
     return () => {
-      const obj = stateFromStores(stateFromStores1[16]);
+      const obj = stateFromStores(stateFromStores1[17]);
       obj.setSearchQuery("");
     };
   }, items5);
-  const items6 = [bans, stateFromStores1, setting, stateFromStores, users];
+  const items6 = [bans, stateFromStores1, setting, stateFromStores, rounded, users];
   const callback = searchQuery.useCallback((arg0, arg1) => {
     let Avatar;
     let id;
@@ -163,6 +174,7 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
     let tmp5;
     let username;
     let username1;
+    let username2;
     const user = tmp;
     let obj = bans;
     let value;
@@ -177,10 +189,14 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
       let obj2 = {
         start: 0 === arg1,
         end: arg1 === arr.length - 1,
+        height: rounded,
         icon: tmp4(Avatar, obj3),
         label: username,
+        labelLineClamp: 1,
         subLabel: username1,
-        trailing: tmp4(tmp5(tmp6[19]).TableRowArrow, {}),
+        subLabelLineClamp: 1,
+        accessibilityLabel: username2,
+        trailing: tmp4(tmp5(tmp6[20]).TableRowArrow, {}),
         onPress() {
             let intl;
             let intl2;
@@ -192,7 +208,7 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
                   label: intl.string(intl4.t.Mp6Z2l),
                   isDestructive: true,
                   onPress() {
-                        const obj = stateFromStores(stateFromStores1[15]);
+                        const obj = stateFromStores(stateFromStores1[16]);
                         obj.unbanUser(stateFromStores.id, user.id);
                       }
                 };
@@ -205,9 +221,9 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
                 let obj2 = {
                   label: intl2.string(intl4.t["/AXYnE"]),
                   onPress() {
-                        const obj = guildId(stateFromStores1[21]);
+                        const obj = guildId(stateFromStores1[22]);
                         obj.copy(user.id);
-                        const obj2 = guildId(stateFromStores1[22]);
+                        const obj2 = guildId(stateFromStores1[23]);
                         obj2.presentIdCopied();
                       }
                 };
@@ -234,9 +250,9 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
             }
           }
       };
-      const TableRow = guildId(stateFromStores1[17]).TableRow;
-      obj3 = { size: guildId(stateFromStores1[18]).AvatarSizes.SMALL, user: tmp, guildId: id };
-      Avatar = guildId(stateFromStores1[18]).Avatar;
+      const TableRow = guildId(stateFromStores1[18]).TableRow;
+      obj3 = { size: guildId(stateFromStores1[19]).AvatarSizes.SMALL, user: tmp, guildId: id };
+      Avatar = guildId(stateFromStores1[19]).Avatar;
       id = undefined;
       tmp5 = guildId;
       if (stateFromStores != null) {
@@ -250,49 +266,55 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
       if (null != users[arg1].globalName) {
         username1 = tmp.username;
       }
+      if (null != users[arg1].globalName) {
+        let _HermesInternal = HermesInternal;
+        username2 = "" + tmp.globalName + ", " + tmp.username;
+      } else {
+        username2 = tmp.username;
+      }
       tmp4Result = tmp4(TableRow, obj2);
     }
     return tmp4Result;
   }, items6);
-  let tmp16 = closure_13;
-  let tmp17 = closure_14;
+  let tmp20 = closure_13;
+  const tmp21 = closure_14;
   if (null == bans) {
-    tmp16Result = closure_12(tmp2(tmp3[24]).SceneLoadingIndicator, {});
-    tmp19 = closure_12;
+    tmp20Result = closure_12(tmp(tmp2[25]).SceneLoadingIndicator, {});
+    tmp23 = closure_12;
   } else {
     let str = "";
     if ("" === searchQuery) {
       if (0 === users.length) {
-        let obj4 = { Illustration: tmp2(tmp3[25]).BansEmpty, title: intl2.string(tmp2(tmp3[20]).t.ZEiY1D), body: intl3.string(tmp2(tmp3[20]).t.zfCsAw) };
-        const EmptyState2 = tmp2(tmp3[18]).EmptyState;
-        intl2 = tmp2(tmp3[20]).intl;
-        intl3 = tmp2(tmp3[20]).intl;
-        tmp16Result = closure_12(EmptyState2, obj4);
-        tmp19 = closure_12;
+        let obj4 = { Illustration: tmp(tmp2[26]).BansEmpty, title: intl2.string(tmp(tmp2[21]).t.ZEiY1D), body: intl3.string(tmp(tmp2[21]).t.zfCsAw) };
+        const EmptyState2 = tmp(tmp2[19]).EmptyState;
+        intl2 = tmp(tmp2[21]).intl;
+        intl3 = tmp(tmp2[21]).intl;
+        tmp20Result = closure_12(EmptyState2, obj4);
+        tmp23 = closure_12;
       }
     }
-    const obj5 = { style: tmp.containerInner, children: null };
-    tmp19 = closure_12;
-    const obj6 = { style: tmp.searchField, children: closure_12(tmp2(tmp3[26]).SearchBar, obj7) };
-    obj7 = { size: "md", onChange: tmp15 };
+    const obj5 = { style: tmp8.containerInner, children: null };
+    tmp23 = closure_12;
+    const obj6 = { style: tmp8.searchField, children: closure_12(tmp(tmp2[27]).SearchBar, obj7) };
+    obj7 = { size: "md", onChange: tmp19 };
     const items7 = [closure_12(setting, obj6), ];
-    const tmp18 = setting;
+    const tmp22 = setting;
     if ("" !== searchQuery) {
-      let tmp19Result;
+      let tmp23Result;
       if (0 === users.length) {
-        const obj8 = { Illustration: tmp2(tmp3[27]).NoResults, body: intl.string(tmp2(tmp3[20]).t.z3cK5j) };
-        const EmptyState = tmp2(tmp3[18]).EmptyState;
-        intl = tmp2(tmp3[20]).intl;
-        tmp19Result = tmp19(EmptyState, obj8);
+        const obj8 = { Illustration: tmp(tmp2[28]).NoResults, body: intl.string(tmp(tmp2[21]).t.z3cK5j) };
+        const EmptyState = tmp(tmp2[19]).EmptyState;
+        intl = tmp(tmp2[21]).intl;
+        tmp23Result = tmp23(EmptyState, obj8);
       }
-      items7[1] = tmp19Result;
+      items7[1] = tmp23Result;
       obj5.children = items7;
-      tmp16Result = tmp16(tmp18, obj5);
+      tmp20Result = tmp20(tmp22, obj5);
     }
-    const obj9 = { sections, itemSize: tmp8, estimatedListSize: "windowSize", renderItem: callback, insetEnd: num };
-    tmp19Result = tmp19(tmp7(tmp3[28]), obj9);
+    const obj9 = { sections, itemSize: rounded, estimatedListSize: "windowSize", renderItem: callback, insetEnd: num };
+    tmp23Result = tmp23(tmp10(tmp2[29]), obj9);
   }
   const obj10 = { children: items8 };
-  items8 = [tmp16Result, tmp19(tmp2(tmp3[29]).NavScrim, {})];
-  return tmp16(tmp17, obj10);
+  items8 = [tmp20Result, tmp23(tmp(tmp2[30]).NavScrim, {})];
+  return tmp20(tmp21, obj10);
 };

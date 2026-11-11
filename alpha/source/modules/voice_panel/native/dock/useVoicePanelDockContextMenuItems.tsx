@@ -1,19 +1,19 @@
-// Module ID: 19610
-// Function ID: 19611
+// Module ID: 19799
+// Function ID: 19800
 // Name: useVoicePanelDockContextMenuItems
-// Dependencies: [19, 1072, 11371, 19611, 12084, 19569, 19612, 19613, 11341, 6769, 1108, 19615, 1113, 5847, 19616, 19618, 3184, 15163, 11181, 12279, 8720, 7636, 19620, 2]
+// Dependencies: [19, 1072, 11924, 19800, 12881, 19758, 19801, 19802, 11896, 6876, 1108, 19804, 1113, 5960, 19805, 19807, 3205, 15651, 10983, 13081, 8004, 10502, 19809, 2]
 // Exports: default
 
-// Module 19610 (useVoicePanelDockContextMenuItems)
+// Module 19799 (useVoicePanelDockContextMenuItems)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl6 from "intl" /* 1113 */;
-import _modDef3184 from "module_3184" /* 3184 */;
-import UserPlusIcon from "UserPlusIcon" /* 5847 */;
-import SettingsIcon from "SettingsIcon" /* 7636 */;
-import ChatIcon from "ChatIcon" /* 8720 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 12279 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19615 */;
+import _modDef3205 from "module_3205" /* 3205 */;
+import UserPlusIcon from "UserPlusIcon" /* 5960 */;
+import ChatIcon from "ChatIcon" /* 8004 */;
+import SettingsIcon from "SettingsIcon" /* 10502 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 13081 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19804 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -89,9 +89,9 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       const obj2 = { label: closure_6.text, IconComponent: MobilePhoneShareIcon, action: tmp14.onPress };
       tmp14 = closure_6;
       if (closure_6.isActive) {
-        MobilePhoneShareIcon = tmp15(19616).MobilePhoneXIcon;
+        MobilePhoneShareIcon = tmp15(19805).MobilePhoneXIcon;
       } else {
-        MobilePhoneShareIcon = tmp15(19618).MobilePhoneShareIcon;
+        MobilePhoneShareIcon = tmp15(19807).MobilePhoneShareIcon;
       }
       push2(obj2);
     }
@@ -108,7 +108,7 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       const isVideoEnabled = closure_7.isVideoEnabled;
       const intl2 = intl6.intl;
       const string = intl2.string;
-      const tmp26 = _modDef3184;
+      const tmp26 = _modDef3205;
       if (isVideoEnabled) {
         stringResult = string(tmp26.q0eP6a);
       } else {
@@ -116,9 +116,9 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       }
       const obj3 = { label: stringResult, IconComponent: VideoIcon, action: closure_7.onPress };
       if (closure_7.isVideoEnabled) {
-        VideoIcon = tmp28(15163).VideoSlashIcon;
+        VideoIcon = tmp28(15651).VideoSlashIcon;
       } else {
-        VideoIcon = tmp28(11181).VideoIcon;
+        VideoIcon = tmp28(10983).VideoIcon;
       }
       push3(obj3);
     }

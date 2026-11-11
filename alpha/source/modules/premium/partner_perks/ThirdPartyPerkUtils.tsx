@@ -1,15 +1,17 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 9923
+// Function ID: 9924
 // Name: ThirdPartyPerkUtils
-// Dependencies: [1387, 1072, 2171, 1113, 15596, 5164, 2]
+// Dependencies: [1387, 1072, 9561, 2171, 1113, 9560, 9924, 5265, 2]
 // Exports: formatThirdPartyPromotionEndDateForPerkCard, getMarketingComponentAsset, getPartnerMarketingComponentAssetUrl, getThirdPartyPerkClaimState, isUserEligibleForThirdPartyPerks
 
-// Module 15595 (ThirdPartyPerkUtils)
+// Module 9923 (ThirdPartyPerkUtils)
 import Constants from "Constants" /* 1072 */;
 import intl from "intl" /* 1113 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import themes from "themes" /* 5164 */;
-import getPartnerMarketingComponentDefault from "getPartnerMarketingComponent" /* 15596 */;
+import themes from "themes" /* 5265 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9560 */;
+import MarketingSurfaceType from "MarketingSurfaceType" /* 9561 */;
+import getPartnerMarketingComponentDefault from "getPartnerMarketingComponent" /* 9924 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
 
@@ -26,8 +28,9 @@ let c3;
 let closure_4;
 ({ PremiumTypes: c3, SubscriptionPlanInfo: closure_4, PREMIUM_TIER_2_AUTH3_TRIAL_ID, PREMIUM_TIER_2_GOOGLE_PLAY_SIX_MONTH_TRIAL_ID, PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID, PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID, PREMIUM_TIER_2_REFERRAL_TRIAL_ID, PREMIUM_TIER_2_REVERSE_FOLLOWUP_TRIAL_ID } = PremiumConstants);
 const SubscriptionStatusTypes = Constants.SubscriptionStatusTypes;
-const items = [PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REFERRAL_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID, PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID, PREMIUM_TIER_2_AUTH3_TRIAL_ID, PREMIUM_TIER_2_GOOGLE_PLAY_SIX_MONTH_TRIAL_ID, PREMIUM_TIER_2_REVERSE_FOLLOWUP_TRIAL_ID];
-const set = new Set(items);
+const items = [MarketingSurfaceType.MarketingSurfaceType.PREMIUM_HOME_REWARDS_PERK_CARD, MarketingSurfaceType.MarketingSurfaceType.MARKETING_PAGE_REWARDS_BENTO_BOX, MarketingSurfaceType.MarketingSurfaceType.OUTBOUND_PROMOTION_POPOVER, MarketingSurfaceType.MarketingSurfaceType.OUTBOUND_PROMOTION_CLAIM_MODAL_CARD];
+const items1 = [PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REFERRAL_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID, PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID, PREMIUM_TIER_2_AUTH3_TRIAL_ID, PREMIUM_TIER_2_GOOGLE_PLAY_SIX_MONTH_TRIAL_ID, PREMIUM_TIER_2_REVERSE_FOLLOWUP_TRIAL_ID];
+const set = new Set(items1);
 const ThirdPartyPerkIneligibilityReason = { NO_SUBSCRIPTION: "no_subscription", NOT_TIER_2_SUBSCRIPTION: "not_tier_2_subscription", SUBSCRIPTION_STATUS_NOT_ALLOWED: "subscription_status_not_allowed", TRIAL_USER_NOT_ELIGIBLE: "trial_user_not_eligible" };
 let obj2 = { CAN_CLAIM: "CAN_CLAIM", BLOCK_CLAIM: "BLOCKED", UPSELL: "UPSELL" };
 const result = size.fileFinishedImporting("modules/premium/partner_perks/ThirdPartyPerkUtils.tsx");
@@ -109,17 +112,10 @@ export function formatThirdPartyPromotionEndDateForPerkCard(arg0) {
     return dateTimeFormat.format(arg0);
   }
 }
-export function getMarketingComponentAsset(properties) {
-  properties = properties.properties.properties;
-  const oneofKind = properties.oneofKind;
-  if ("premiumHomeRewardsPerkCard" === oneofKind) {
-    return properties.premiumHomeRewardsPerkCard.asset;
-  } else if ("marketingPageRewardsBentoBox" === oneofKind) {
-    return properties.marketingPageRewardsBentoBox.asset;
-  } else if ("outboundPromotionPopover" === oneofKind) {
-    return properties.outboundPromotionPopover.asset;
-  } else {
-    return "outboundPromotionClaimModalCard" === oneofKind ? properties.outboundPromotionClaimModalCard.asset : undefined;
+export function getMarketingComponentAsset(surface) {
+  const obj = MarketingSurfaceTypeUtils;
+  if (obj.isMarketingSurface(surface, items)) {
+    return surface.surface.asset;
   }
 }
 export function getPartnerMarketingComponentAssetUrl(arg0, arg1, arg2) {
@@ -127,21 +123,14 @@ export function getPartnerMarketingComponentAssetUrl(arg0, arg1, arg2) {
   let tmp3;
   if (null != tmp2) {
     let asset;
-    const properties = tmp2.properties.properties;
-    const oneofKind = properties.oneofKind;
-    if ("premiumHomeRewardsPerkCard" === oneofKind) {
-      asset = properties.premiumHomeRewardsPerkCard.asset;
-    } else if ("marketingPageRewardsBentoBox" === oneofKind) {
-      asset = properties.marketingPageRewardsBentoBox.asset;
-    } else if ("outboundPromotionPopover" === oneofKind) {
-      asset = properties.outboundPromotionPopover.asset;
-    } else if ("outboundPromotionClaimModalCard" === oneofKind) {
-      asset = properties.outboundPromotionClaimModalCard.asset;
+    const obj = MarketingSurfaceTypeUtils;
+    if (obj.isMarketingSurface(tmp2, items)) {
+      asset = tmp2.surface.asset;
     }
     tmp3 = asset;
   }
   if (null != tmp3) {
-    const obj = themes;
-    return obj.isThemeDark(arg2) ? tmp3.darkUrl : tmp3.lightUrl;
+    obj2 = themes;
+    return obj2.isThemeDark(arg2) ? tmp3.darkUrl : tmp3.lightUrl;
   }
 }

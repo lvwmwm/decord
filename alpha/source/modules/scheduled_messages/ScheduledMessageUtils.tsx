@@ -1,10 +1,10 @@
-// Module ID: 9904
-// Function ID: 9905
+// Module ID: 8964
+// Function ID: 8965
 // Name: ScheduledMessageUtils
-// Dependencies: [32, 5074, 1385, 1072, 1387, 9891, 3, 7906, 1403, 1252, 504, 2166, 1113, 11, 2107, 6198, 9905, 1380, 2]
+// Dependencies: [32, 5175, 1385, 1072, 1387, 8965, 3, 8722, 1403, 1252, 504, 2166, 1113, 11, 2107, 6311, 8966, 1380, 2]
 // Exports: canSendScheduledMessagesInChannel, convertServerScheduledMessageCreateArgs, convertServerScheduledMessageSend, getDefaultScheduledTime, getEarliestScheduledTime, getLatestScheduledTime, getMessageForState, getPresetScheduledTimes, getScheduledMessagesLimit, getScheduledTimeError, parseContentAndFlagsForSilentMessage, trackScheduledMessageTimePickerOpened, unparseContentAndFlagsForSilentMessage, useCanSendScheduledMessagesInChannel, useScheduledMessagesLimit
 
-// Module 9904 (ScheduledMessageUtils)
+// Module 8964 (ScheduledMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -15,14 +15,14 @@ import PremiumConstants from "PremiumConstants" /* 1387 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
-import parseContentForSuppressNotificationsDefault from "parseContentForSuppressNotifications" /* 7906 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9905 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6311 */;
+import parseContentForSuppressNotificationsDefault from "parseContentForSuppressNotifications" /* 8722 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8966 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PermissionStore from "PermissionStore" /* 5074 */;
+import PermissionStore from "PermissionStore" /* 5175 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9891 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8965 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const parseContentForSuppressNotifications = tmp(7906);
+const parseContentForSuppressNotifications = tmp(8722);
 ({ AnalyticEvents: metroRequire, MessageFlags: metroImportDefault, Permissions: metroImportAll } = Constants);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 ({ MAX_SCHEDULE_TIME_AFTER_CREATION_SECONDS: c10, MAX_SCHEDULE_TIME_INTO_FUTURE_SECONDS: unpackModuleId, MAX_SCHEDULED_MESSAGES_PER_USER: closure_12, MAX_SCHEDULED_MESSAGES_PER_USER_WITHOUT_NITRO: map1, MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS: closure_14 } = ScheduledMessagesConstants);

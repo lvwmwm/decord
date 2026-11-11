@@ -1,11 +1,11 @@
-// Module ID: 5209
-// Function ID: 5210
+// Module ID: 5322
+// Function ID: 5323
 // Name: BaseRive
-// Dependencies: [5, 19, 17, 21, 5210, 5156, 5257, 5258, 5259, 5260, 2]
+// Dependencies: [5, 19, 17, 21, 5323, 5257, 5370, 5371, 5372, 5373, 2]
 // Exports: BaseRive, useArtboardBinding, useBooleanBinding, useColorBinding, useEnumBinding, useImageBinding, useNumberBinding, useStringBinding, useTriggerBinding
 
-// Module 5209 (BaseRive)
-import DataBindByName from "DataBindByName" /* 5210 */;
+// Module 5322 (BaseRive)
+import DataBindByName from "DataBindByName" /* 5323 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -22,11 +22,11 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const react2 = tmp(5156);
-const ManaContext = tmp(5257);
-const useRivePlayback2 = tmp(5258);
-const RiveTypes = tmp(5259);
-const f88612 = () => {
+const react2 = tmp(5257);
+const ManaContext = tmp(5370);
+const useRivePlayback2 = tmp(5371);
+const RiveTypes = tmp(5372);
+const f89495 = () => {
   ref.current = current;
 };
 function disposeRiveImageLater(arg0) {
@@ -254,7 +254,7 @@ export function useNumberBinding(chapterID, instance, chapterID2, chapterID1, pl
   let closure_1 = chapterID1;
   let closure_2 = react.useRef(chapterID1);
   const items1 = [chapterID1];
-  const effect1 = react.useEffect(f88612, items1);
+  const effect1 = react.useEffect(f89495, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -284,7 +284,7 @@ export function useStringBinding(LVL, instance, LVL2, LVL1, playIfNeeded) {
   let closure_1 = LVL1;
   let closure_2 = react.useRef(LVL1);
   const items1 = [LVL1];
-  const effect1 = react.useEffect(f88612, items1);
+  const effect1 = react.useEffect(f89495, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -314,7 +314,7 @@ export function useBooleanBinding(reducedMotion, instance, reducedMotionEnabled,
   let closure_1 = on1;
   let closure_2 = react.useRef(on1);
   const items1 = [on1];
-  const effect1 = react.useEffect(f88612, items1);
+  const effect1 = react.useEffect(f89495, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -378,7 +378,7 @@ export function useEnumBinding(device, instance, device2, device1, playIfNeeded)
   let closure_1 = device1;
   let closure_2 = react.useRef(device1);
   const items1 = [device1];
-  const effect1 = react.useEffect(f88612, items1);
+  const effect1 = react.useEffect(f89495, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {

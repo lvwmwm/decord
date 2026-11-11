@@ -1,23 +1,23 @@
-// Module ID: 17128
-// Function ID: 17129
+// Module ID: 17291
+// Function ID: 17292
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7794, 7795, 21, 5142, 575, 563, 5376, 17129, 5390, 5753, 1113, 2664, 17130, 5760, 2]
+// Dependencies: [19, 17, 8673, 8674, 21, 5243, 575, 563, 5489, 17292, 5503, 5866, 1113, 2685, 17293, 5873, 2]
 // Exports: default
 
-// Module 17128 (ConnectGuardianBottomSheet)
+// Module 17291 (ConnectGuardianBottomSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2664 from "module_2664" /* 2664 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5390 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7795 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17129 */;
+import _modDef2685 from "module_2685" /* 2685 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5503 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8674 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17292 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7794 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5142 */;
+import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -67,19 +67,19 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const Text = Text_Text.Text;
   if (title == null) {
     const intl = tmp2(1113).intl;
-    title = intl.string(tmp7(2664).aCUVfL);
+    title = intl.string(tmp7(2685).aCUVfL);
   }
   items2 = [metroImportDefault(Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "body-md/medium", color: "text-default", children: body };
-  const Text2 = tmp2(5753).Text;
+  const Text2 = tmp2(5866).Text;
   if (body == null) {
     const intl2 = tmp2(1113).intl;
-    body = intl2.format(tmp7(2664)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
+    body = intl2.format(tmp7(2685)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
   }
   items2[1] = metroImportDefault(Text2, obj6);
   items3 = [metroImportAll(View, obj4), , ];
   const obj7 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj8) };
-  ConnectGuardianCard = tmp2(17130).ConnectGuardianCard;
+  ConnectGuardianCard = tmp2(17293).ConnectGuardianCard;
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }
@@ -89,8 +89,8 @@ export default function ConnectGuardianBottomSheet(arg0) {
   }
   const obj9 = { startExpanded: true, children: metroImportAll(View, obj3) };
   items3[1] = metroImportDefault(View, obj7);
-  const obj10 = { variant: "secondary", size: "md", text: intl3.string(_modDef2664.Hsm5IF), onPress: callback };
-  const Button = tmp2(5760).Button;
+  const obj10 = { variant: "secondary", size: "md", text: intl3.string(_modDef2685.Hsm5IF), onPress: callback };
+  const Button = tmp2(5873).Button;
   intl3 = tmp2(1113).intl;
   items3[2] = metroImportDefault(Button, obj10);
   return metroImportDefault(BottomSheet, obj9);

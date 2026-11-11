@@ -1,13 +1,13 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 13072
+// Function ID: 13073
 // Name: useConjurePublishButton
-// Dependencies: [32, 19, 1113, 4028, 12269, 2]
+// Dependencies: [32, 19, 1113, 4079, 13073, 2]
 // Exports: default
 
-// Module 12268 (useConjurePublishButton)
+// Module 13072 (useConjurePublishButton)
 import intl3 from "intl" /* 1113 */;
-import _modDef4028 from "module_4028" /* 4028 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12269 */;
+import _modDef4079 from "module_4079" /* 4079 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 13073 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,13 +18,13 @@ function publishButtonText(upToDate, arg1) {
     let label;
     if (null == upToDate) {
       const intl2 = intl3.intl;
-      label = intl2.string(_modDef4028["120EFN"]);
+      label = intl2.string(_modDef4079["120EFN"]);
     } else {
       const tmp2 = null != upToDate && upToDate.upToDate && "publish" === upToDate.action && !upToDate.awaitingApproval;
       if (tmp2) {
         if (!upToDate.publishing) {
           const intl = intl3.intl;
-          label = intl.string(_modDef4028.kAfbEN);
+          label = intl.string(_modDef4079.kAfbEN);
         }
       }
       label = upToDate.label;

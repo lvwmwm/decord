@@ -1,12 +1,12 @@
-// Module ID: 18312
-// Function ID: 18313
+// Module ID: 18483
+// Function ID: 18484
 // Name: ActivityPrivacyUpsellActionSheet
-// Dependencies: [19, 21, 17100, 17102, 2]
+// Dependencies: [19, 21, 17263, 17265, 2]
 // Exports: default
 
-// Module 18312 (ActivityPrivacyUpsellActionSheet)
+// Module 18483 (ActivityPrivacyUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 17100 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 17263 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ export default function ActivityPrivacyUpsellActionSheet(direction) {
   direction = direction.direction;
   const affectedGuildIds = direction.affectedGuildIds;
   const settingName = direction.settingName;
-  const RESTRICTING = direction(17100).ChangeDirection.RESTRICTING;
-  let obj = direction(17100);
+  const RESTRICTING = direction(17263).ChangeDirection.RESTRICTING;
+  let obj = direction(17263);
   const upsellStrings = obj.getUpsellStrings(direction === RESTRICTING, settingName);
   const items = [direction, affectedGuildIds];
   ({ title, subtitle, confirmText, toastContent } = upsellStrings);
@@ -30,5 +30,5 @@ export default function ActivityPrivacyUpsellActionSheet(direction) {
     const obj = ActivityPrivacyUpsellUtils;
     const result = obj.applyBulkGuildRestrictionChange(direction, affectedGuildIds);
   }, items);
-  return jsx(affectedGuildIds(17102), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
+  return jsx(affectedGuildIds(17265), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
 };

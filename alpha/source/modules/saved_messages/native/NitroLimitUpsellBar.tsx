@@ -1,20 +1,20 @@
-// Module ID: 14858
-// Function ID: 14859
+// Module ID: 15548
+// Function ID: 15549
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 5142, 575, 8100, 5844, 10175, 5753, 1113, 10415, 5760, 2]
+// Dependencies: [17, 21, 5243, 575, 8095, 5957, 11235, 5866, 1113, 10008, 5873, 2]
 // Exports: default
 
-// Module 14858 (NitroLimitUpsellBar)
+// Module 15548 (NitroLimitUpsellBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5753 */;
-import FastImageDefault from "FastImage" /* 5844 */;
-import WarningIcon from "WarningIcon" /* 8100 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10175 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10415 */;
+import Text_Text from "Text/Text" /* 5866 */;
+import FastImageDefault from "FastImage" /* 5957 */;
+import WarningIcon from "WarningIcon" /* 8095 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10008 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11235 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5142 */;
+import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -65,7 +65,7 @@ export default function NitroLimitUpsellBar(isAtLimit) {
   if (isAtLimit) {
     Button = NitroUpsellButtonDefault;
   } else {
-    Button = tmp12(5760).Button;
+    Button = tmp12(5873).Button;
   }
   const obj6 = { size: "sm", text: intl2.string(intl3.t["8x0jKT"]), onPress, loading };
   intl2 = tmp12(1113).intl;
