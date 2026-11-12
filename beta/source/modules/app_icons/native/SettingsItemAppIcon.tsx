@@ -1,16 +1,16 @@
-// Module ID: 17886
-// Function ID: 17887
+// Module ID: 17883
+// Function ID: 17884
 // Name: SettingsItemAppIcon
-// Dependencies: [19, 10134, 21, 5170, 575, 15657, 5196, 10836, 17367, 2]
+// Dependencies: [19, 10134, 21, 5170, 575, 15654, 5196, 10836, 17364, 2]
 // Exports: default
 
-// Module 17886 (SettingsItemAppIcon)
+// Module 17883 (SettingsItemAppIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AppIconTypes from "AppIconTypes" /* 5196 */;
 import AppIconConstants from "AppIconConstants" /* 10134 */;
-import AppIconUtils from "AppIconUtils" /* 15657 */;
-import AppIconDefault from "AppIcon" /* 17367 */;
+import AppIconUtils from "AppIconUtils" /* 15654 */;
+import AppIconDefault from "AppIcon" /* 17364 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

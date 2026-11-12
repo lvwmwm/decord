@@ -1,9 +1,9 @@
-// Module ID: 19549
-// Function ID: 19550
+// Module ID: 19546
+// Function ID: 19547
 // Name: BlurVisualEffectView
 // Dependencies: [19, 17, 1072, 21, 5167, 575, 5756, 5760, 2]
 
-// Module 19549 (BlurVisualEffectView)
+// Module 19546 (BlurVisualEffectView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

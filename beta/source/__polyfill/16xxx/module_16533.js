@@ -1,29 +1,19 @@
 // Module ID: 16533
 // Function ID: 16534
-// Dependencies: [16476, 16496]
+// Dependencies: [16485, 16492]
 
 // Module 16533
-import _mod16496 from "module_16496" /* 16496 */;
-import getOwnPropertyDescriptor_mod from "module_16476" /* 16476 */;
+import _mod16485 from "module_16485" /* 16485 */;
+import _mod16492 from "module_16492" /* 16492 */;
 
-let getOwnPropertyDescriptor = getOwnPropertyDescriptor_mod;
-if (getOwnPropertyDescriptor) {
-  const _Object = Object;
-  getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-}
-const tmp = _mod16496(prototype, "name");
-let tmp3 = tmp;
-const tmp2 = tmp && "something" === (function something() {
+let closure_2 = _mod16485("keys");
 
-}).name;
-if (tmp3) {
-  const _module = getOwnPropertyDescriptor;
-  let tmp5 = !_module;
-  if (_module) {
-    tmp5 = getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
-    getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
+export default (arg0) => {
+  let tmp2 = closure_2[arg0];
+  if (!tmp2) {
+    const tmp5 = _mod16492(arg0);
+    tmp[arg0] = tmp5;
+    tmp2 = tmp5;
   }
-  tmp3 = tmp5;
-}
-
-export default { EXISTS: tmp, PROPER: tmp2, CONFIGURABLE: tmp3 };
+  return tmp2;
+};

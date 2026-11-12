@@ -1,14 +1,14 @@
-// Module ID: 15540
-// Function ID: 15541
+// Module ID: 15537
+// Function ID: 15538
 // Name: premiumOrbsDeliveredModal
-// Dependencies: [19, 7687, 15541, 21, 6123, 15542, 2170, 11, 15544, 2]
+// Dependencies: [19, 7687, 15538, 21, 6123, 15539, 2170, 11, 15541, 2]
 // Exports: anchorOrbsPurchaseStart, openOrbsModalIfDelivered
 
-// Module 15540 (premiumOrbsDeliveredModal)
+// Module 15537 (premiumOrbsDeliveredModal)
 import Fragment from "Fragment" /* 21 */;
-import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 15541 */;
-import NitroOrbsDeliveredModalDefault from "NitroOrbsDeliveredModal" /* 15542 */;
-import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 15544 */;
+import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 15538 */;
+import NitroOrbsDeliveredModalDefault from "NitroOrbsDeliveredModal" /* 15539 */;
+import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 15541 */;
 import react from "react" /* 19 */;
 import EntitlementStore from "EntitlementStore" /* 7687 */;
 import size from "module_2" /* 2 */;

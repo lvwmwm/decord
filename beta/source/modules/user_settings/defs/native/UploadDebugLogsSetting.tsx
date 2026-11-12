@@ -1,9 +1,9 @@
-// Module ID: 17900
-// Function ID: 17901
+// Module ID: 17897
+// Function ID: 17898
 // Name: UploadDebugLogsSetting
 // Dependencies: [5, 17, 1072, 21, 560, 1259, 1377, 11255, 5869, 1113, 5891, 11717, 2]
 
-// Module 17900 (UploadDebugLogsSetting)
+// Module 17897 (UploadDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;

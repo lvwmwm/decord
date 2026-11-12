@@ -1,14 +1,14 @@
-// Module ID: 17872
-// Function ID: 17873
+// Module ID: 17869
+// Function ID: 17870
 // Name: UpcomingServerEventNotificationSetting
-// Dependencies: [8536, 17873, 11717, 1113, 4995, 17874, 2]
+// Dependencies: [8536, 17870, 11717, 1113, 4995, 17871, 2]
 
-// Module 17872 (UpcomingServerEventNotificationSetting)
+// Module 17869 (UpcomingServerEventNotificationSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 17873 */;
-import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 17874 */;
+import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 17870 */;
+import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 17871 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 

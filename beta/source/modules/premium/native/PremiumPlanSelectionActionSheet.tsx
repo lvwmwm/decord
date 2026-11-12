@@ -1,7 +1,7 @@
 // Module ID: 7717
 // Function ID: 7718
 // Name: PremiumPlanSelectionActionSheet
-// Dependencies: [109, 5, 32, 19, 17, 7718, 2186, 7706, 7715, 1387, 1072, 1191, 5904, 1083, 21, 5170, 575, 2171, 5783, 1113, 38, 7725, 2024, 504, 15538, 7510, 5790, 5422, 6185, 10718, 7711, 5401, 7736, 8632, 10079, 8845, 7420, 7445, 5771, 10711, 7698, 5753, 10828, 1252, 5406, 7697, 1624, 6123, 10719, 6621, 7701, 5177, 10744, 10745, 10746, 10747, 10748, 10749, 1377, 2185, 5420, 11549, 5755, 5874, 8288, 15539, 1187, 10064, 10723, 10827, 2]
+// Dependencies: [109, 5, 32, 19, 17, 7718, 2186, 7706, 7715, 1387, 1072, 1191, 5904, 1083, 21, 5170, 575, 2171, 5783, 1113, 38, 7725, 2024, 504, 15535, 7510, 5790, 5422, 6185, 10718, 7711, 5401, 7736, 8632, 10079, 8845, 7420, 7445, 5771, 10711, 7698, 5753, 10828, 1252, 5406, 7697, 1624, 6123, 10719, 6621, 7701, 5177, 10744, 10745, 10746, 10747, 10748, 10749, 1377, 2185, 5420, 11549, 5755, 5874, 8288, 15536, 1187, 10064, 10723, 10827, 2]
 // Exports: default, getItemsByPremiumTypePredicate
 
 // Module 7717 (PremiumPlanSelectionActionSheet)
@@ -220,13 +220,13 @@ function PlanOption(premiumItem) {
   const items = [IAPStore];
   const obj = premiumItem(504);
   const stateFromStores = obj.useStateFromStores(items, () => IAPStore.getProduct(premiumItem.productId));
-  const obj2 = premiumItem(15538);
+  const obj2 = premiumItem(15535);
   let checkoutPlanPriceString = obj2.useCheckoutPlanPriceString(premiumItem.productId, stateFromStores);
   const obj3 = { discountedPriceString, regularPriceString: priceString };
   priceString = undefined;
-  const useCheckoutPlanDiscountPrices = premiumItem(15538).useCheckoutPlanDiscountPrices;
+  const useCheckoutPlanDiscountPrices = premiumItem(15535).useCheckoutPlanDiscountPrices;
   const productId = premiumItem.productId;
-  premiumItem(15538);
+  premiumItem(15535);
   if (stateFromStores != null) {
     priceString = stateFromStores.priceString;
   }

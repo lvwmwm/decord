@@ -1,10 +1,10 @@
-// Module ID: 17353
-// Function ID: 17354
+// Module ID: 17350
+// Function ID: 17351
 // Name: QuestHomeOrbShopCarousel
-// Dependencies: [32, 19, 17, 1192, 7954, 6869, 21, 575, 17340, 5170, 504, 5783, 1113, 9698, 7390, 16827, 17354, 9573, 7972, 7981, 9576, 5231, 2]
+// Dependencies: [32, 19, 17, 1192, 7954, 6869, 21, 575, 17337, 5170, 504, 5783, 1113, 9698, 7390, 16824, 17351, 9573, 7972, 7981, 9576, 5231, 2]
 // Exports: default, useQuestHomeOrbShopCarouselData
 
-// Module 17353 (QuestHomeOrbShopCarousel)
+// Module 17350 (QuestHomeOrbShopCarousel)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,8 +14,8 @@ import QuestConstants from "QuestConstants" /* 6869 */;
 import AnalyticsActions from "AnalyticsActions" /* 7972 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9576 */;
 import SkeletonCardDefault from "SkeletonCard" /* 9698 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 17340 */;
-import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 17354 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 17337 */;
+import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 17351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;

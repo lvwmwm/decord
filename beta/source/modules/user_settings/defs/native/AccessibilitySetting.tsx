@@ -1,16 +1,16 @@
-// Module ID: 17677
-// Function ID: 17678
+// Module ID: 17674
+// Function ID: 17675
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1072, 5016, 21, 5003, 7674, 7083, 11717, 1113, 17678, 17680, 2]
+// Dependencies: [32, 19, 1072, 5016, 21, 5003, 7674, 7083, 11717, 1113, 17675, 17677, 2]
 
-// Module 17677 (AccessibilitySetting)
+// Module 17674 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import dismissible_content from "dismissible_content" /* 5003 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7674 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 17678 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 17675 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;

@@ -1,9 +1,9 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 16962
+// Function ID: 16963
 // Name: AccountPhoneSetting
 // Dependencies: [1385, 8536, 7308, 504, 6831, 7307, 2118, 7310, 11717, 1113, 2]
 
-// Module 16965 (AccountPhoneSetting)
+// Module 16962 (AccountPhoneSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;

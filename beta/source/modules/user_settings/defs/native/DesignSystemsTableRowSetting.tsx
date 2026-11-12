@@ -1,9 +1,9 @@
-// Module ID: 18143
-// Function ID: 18144
+// Module ID: 18140
+// Function ID: 18141
 // Name: DesignSystemsTableRowSetting
-// Dependencies: [8536, 1072, 11717, 18144, 2]
+// Dependencies: [8536, 1072, 11717, 18141, 2]
 
-// Module 18143 (DesignSystemsTableRowSetting)
+// Module 18140 (DesignSystemsTableRowSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;

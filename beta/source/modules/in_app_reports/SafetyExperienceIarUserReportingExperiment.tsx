@@ -1,10 +1,10 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15083
+// Function ID: 15084
 // Name: SafetyExperienceIarUserReportingExperiment
 // Dependencies: [5384, 2]
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 15086 (SafetyExperienceIarUserReportingExperiment)
+// Module 15083 (SafetyExperienceIarUserReportingExperiment)
 import createExperiment from "module_5384" /* 5384 */;
 import size from "module_2" /* 2 */;
 

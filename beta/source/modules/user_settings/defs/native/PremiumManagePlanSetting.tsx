@@ -1,9 +1,9 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17237
+// Function ID: 17238
 // Name: PremiumManagePlanSetting
-// Dependencies: [8536, 1072, 11717, 1113, 17241, 2]
+// Dependencies: [8536, 1072, 11717, 1113, 17238, 2]
 
-// Module 17240 (PremiumManagePlanSetting)
+// Module 17237 (PremiumManagePlanSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;

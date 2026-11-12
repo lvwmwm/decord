@@ -1,9 +1,9 @@
-// Module ID: 15961
-// Function ID: 15962
+// Module ID: 15958
+// Function ID: 15959
 // Name: RewardProgram
 // Dependencies: [2]
 
-// Module 15961 (RewardProgram)
+// Module 15958 (RewardProgram)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/RewardProgram.tsx");

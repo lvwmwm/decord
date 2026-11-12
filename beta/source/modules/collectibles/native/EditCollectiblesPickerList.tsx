@@ -1,12 +1,12 @@
-// Module ID: 15387
-// Function ID: 15388
+// Module ID: 15384
+// Function ID: 15385
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 5170, 15382, 5783, 12, 7390, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 15379, 5783, 12, 7390, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 15387 (EditCollectiblesPickerList)
+// Module 15384 (EditCollectiblesPickerList)
 import Text_Text from "Text/Text" /* 5783 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15382 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15379 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

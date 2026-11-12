@@ -1,10 +1,10 @@
-// Module ID: 18027
-// Function ID: 18028
+// Module ID: 18024
+// Function ID: 18025
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7952, 21, 5170, 575, 5869, 1627, 504, 6872, 7953, 14959, 9806, 5783, 7157, 7160, 7159, 7071, 12381, 17442, 7197, 6876, 2]
+// Dependencies: [5, 32, 19, 17, 7952, 21, 5170, 575, 5869, 1627, 504, 6872, 7953, 14956, 9806, 5783, 7157, 7160, 7159, 7071, 12381, 17439, 7197, 6876, 2]
 // Exports: default
 
-// Module 18027 (DevToolsBountyQaScreen)
+// Module 18024 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;

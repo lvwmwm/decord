@@ -1,9 +1,9 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16204
+// Function ID: 16205
 // Dependencies: [2]
 // Exports: isToastEntity
 
-// Module 16207
+// Module 16204
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Toast/ToastTypes.shared.tsx");

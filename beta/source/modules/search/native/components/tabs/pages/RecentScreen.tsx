@@ -1,9 +1,9 @@
-// Module ID: 19101
-// Function ID: 19102
+// Module ID: 19098
+// Function ID: 19099
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6951, 14179, 19102, 14166, 9950, 14168, 1072, 21, 7076, 14177, 1113, 5783, 10880, 19103, 7582, 14173, 14159, 504, 14155, 19096, 1500, 19106, 14152, 17082, 8057, 6816, 19107, 19108, 19111, 2]
+// Dependencies: [32, 5, 19, 6951, 14179, 19099, 14166, 9950, 14168, 1072, 21, 7076, 14177, 1113, 5783, 10880, 19100, 7582, 14173, 14159, 504, 14155, 19093, 1500, 19103, 14152, 17079, 8057, 6816, 19104, 19105, 19108, 2]
 
-// Module 19101 (RecentScreen)
+// Module 19098 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
@@ -16,13 +16,13 @@ import SearchUtils from "SearchUtils" /* 14159 */;
 import SearchPlatformConstants from "SearchPlatformConstants" /* 14168 */;
 import TrackingDefault from "Tracking" /* 14173 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14177 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17082 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6951 */;
 import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 14179 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 19102 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 19099 */;
 import SearchQueryStore from "SearchQueryStore" /* 14166 */;
 import SearchConstants from "SearchConstants" /* 9950 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let _undefined;
   let c1;
   let tmp4;
-  const f134766 = () => memo.getSearchHistory(searchContextId);
+  const f134781 = () => memo.getSearchHistory(searchContextId);
   searchContext = searchContext.searchContext;
   const onJumpToMedia = searchContext.onJumpToMedia;
   const suggestedData = searchContext.suggestedData;
@@ -89,8 +89,8 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let obj2 = searchContext(suggestedData[19]);
   const searchContextId = obj2.getSearchContextId(searchContext);
   c1 = undefined;
-  [tmp4, c1] = messages(isInitialSearchQuery.useState(f134766), 2);
-  const tmp3 = messages(isInitialSearchQuery.useState(f134766), 2);
+  [tmp4, c1] = messages(isInitialSearchQuery.useState(f134781), 2);
+  const tmp3 = messages(isInitialSearchQuery.useState(f134781), 2);
   const obj3 = searchContext(suggestedData[23]);
   let items1 = [searchContextId];
   const focusEffect = obj3.useFocusEffect(isInitialSearchQuery.useCallback(() => {

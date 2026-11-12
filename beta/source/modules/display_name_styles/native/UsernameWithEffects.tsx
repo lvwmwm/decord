@@ -135,8 +135,8 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
   const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: tmp7, ignoreDisabledStylesSetting });
   let tmp11;
   if (null != displayNameStylesFont) {
-    tmp11 = { fontFamily: displayNameStylesFont, lineHeight: "r" };
-    const obj3 = { fontFamily: displayNameStylesFont, lineHeight: "r" };
+    tmp11 = { fontFamily: displayNameStylesFont, lineHeight: "flexDirection" };
+    const obj3 = { fontFamily: displayNameStylesFont, lineHeight: "flexDirection" };
   }
   let num = merged.lineClamp;
   if (num == null) {

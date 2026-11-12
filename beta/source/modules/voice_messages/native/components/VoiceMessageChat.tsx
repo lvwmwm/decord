@@ -1,9 +1,9 @@
-// Module ID: 14492
-// Function ID: 14493
+// Module ID: 14488
+// Function ID: 14489
 // Name: VoiceMessageChat
 // Dependencies: [32, 19, 17, 5171, 13989, 13990, 21, 1652, 5170, 575, 1377, 5793, 5794, 5402, 5756, 8341, 5783, 2]
 
-// Module 14492 (VoiceMessageChat)
+// Module 14488 (VoiceMessageChat)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5402 */;
@@ -186,7 +186,7 @@ function Duration(animationValue) {
   const items2 = [first1];
   const first2 = tmp14[0];
   const effect1 = react.useEffect(() => {
-    const f139993 = (arg0) => !arg0;
+    const f140012 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -198,10 +198,10 @@ function Duration(animationValue) {
           num = num2;
         }
         function flash() {
-          closure_6(f139993);
+          closure_6(f140012);
           const timeout = setTimeout(flash, num);
         }
-        closure_6(f139993);
+        closure_6(f140012);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {

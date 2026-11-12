@@ -1,10 +1,10 @@
-// Module ID: 18732
-// Function ID: 18733
+// Module ID: 18729
+// Function ID: 18730
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 5041, 6860, 18733, 18730, 1652, 551, 5408, 5177, 12, 1242, 1113, 7337, 18455, 5756, 575, 5085, 12646, 1259, 6990, 6096, 10030, 1377, 1627, 5422, 18734, 18735, 10030, 17434, 5452, 1705, 2]
+// Dependencies: [5, 19, 17, 5041, 6860, 18730, 18727, 1652, 551, 5408, 5177, 12, 1242, 1113, 7337, 18452, 5756, 575, 5085, 12646, 1259, 6990, 6096, 10030, 1377, 1627, 5422, 18731, 18732, 10030, 17431, 5452, 1705, 2]
 // Exports: default
 
-// Module 18732 (useGuildsBarGesture)
+// Module 18729 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -20,8 +20,8 @@ import ContextMenuState from "ContextMenuState" /* 10030 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5041 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18733 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18730 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18730 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18727 */;
 import "module_1652";
 import module_1652_mod from "module_1652" /* 1652 */;
 import debounce from "debounce" /* 551 */;
@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "description", positionPercentage: false };
+    sectionItemFromPosition = { item: "ip", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;

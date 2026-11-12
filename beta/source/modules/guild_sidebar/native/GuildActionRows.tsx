@@ -1,10 +1,10 @@
-// Module ID: 18638
-// Function ID: 18639
+// Module ID: 18635
+// Function ID: 18636
 // Name: GuildActionRows
-// Dependencies: [19, 17, 7820, 6930, 5914, 7361, 6864, 21, 5170, 575, 7619, 5202, 5003, 563, 7816, 6831, 11767, 2118, 14203, 14105, 1113, 16007, 2]
+// Dependencies: [19, 17, 7820, 6930, 5914, 7361, 6864, 21, 5170, 575, 7619, 5202, 5003, 563, 7816, 6831, 11767, 2118, 14203, 14105, 1113, 16004, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 18638 (GuildActionRows)
+// Module 18635 (GuildActionRows)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -87,7 +87,7 @@ export function GuildRolesAndChannelsRow(guild) {
   } else {
     string2(t2.et6wav);
   }
-  ({ mode: SELECTED, IconComponent: guild(16007).ChannelListMagnifyingGlassIcon });
+  ({ mode: SELECTED, IconComponent: guild(16004).ChannelListMagnifyingGlassIcon });
   const BaseChannelIcon = tmp5(14203).BaseChannelIcon;
   return <tmp2Result onPress={callback} style={tmp.container} accessible accessibilityLabel={stringResult} accessibilityState={{ selected }} mode={SELECTED} name={null} icon={null} channelInfo={tmp11} />;
 }

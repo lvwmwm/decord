@@ -1,9 +1,9 @@
-// Module ID: 17571
-// Function ID: 17572
+// Module ID: 17568
+// Function ID: 17569
 // Name: GuildRoleSubscriptionsCancelSetting
-// Dependencies: [8536, 1072, 11717, 1113, 17572, 2]
+// Dependencies: [8536, 1072, 11717, 1113, 17569, 2]
 
-// Module 17571 (GuildRoleSubscriptionsCancelSetting)
+// Module 17568 (GuildRoleSubscriptionsCancelSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;

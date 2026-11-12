@@ -1,7 +1,7 @@
 // Module ID: 20159
 // Function ID: 20160
 // Name: AuditLogActionIcon
-// Dependencies: [19, 17, 20154, 1072, 21, 5170, 575, 20160, 20096, 9566, 5891, 19312, 5883, 10237, 8765, 19205, 8773, 9228, 8749, 11206, 11676, 14377, 20162, 14784, 8747, 12300, 20164, 20165, 20166, 1187, 2]
+// Dependencies: [19, 17, 20154, 1072, 21, 5170, 575, 20160, 20096, 9566, 5891, 19309, 5883, 10237, 8765, 19202, 8773, 9228, 8749, 11206, 11676, 14373, 20162, 14781, 8747, 12300, 20164, 20165, 20166, 1187, 2]
 // Exports: default
 
 // Module 20159 (AuditLogActionIcon)
@@ -20,10 +20,10 @@ import FlagIcon from "FlagIcon" /* 10237 */;
 import StickerIcon from "StickerIcon" /* 11206 */;
 import SlashBoxIcon from "SlashBoxIcon" /* 11676 */;
 import RobotIcon2 from "RobotIcon" /* 12300 */;
-import SoundboardIcon from "SoundboardIcon" /* 14377 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 14784 */;
-import WebhookIcon from "WebhookIcon" /* 19205 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 19312 */;
+import SoundboardIcon from "SoundboardIcon" /* 14373 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 14781 */;
+import WebhookIcon from "WebhookIcon" /* 19202 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 19309 */;
 import ChannelListIcon from "ChannelListIcon" /* 20096 */;
 import ListBulletsIcon from "ListBulletsIcon" /* 20160 */;
 import HomeIcon from "HomeIcon" /* 20162 */;

@@ -1,21 +1,21 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17397
+// Function ID: 17398
 // Name: launchOrbsArcadeGame
-// Dependencies: [5, 2162, 6934, 17378, 1072, 6935, 1113, 5869, 17384, 6612, 5406, 6969, 11922, 17385, 11047, 11093, 5347, 572, 2]
+// Dependencies: [5, 2162, 6934, 17375, 1072, 6935, 1113, 5869, 17381, 6612, 5406, 6969, 11922, 17382, 11047, 11093, 5347, 572, 2]
 // Exports: default
 
-// Module 17400 (launchOrbsArcadeGame)
+// Module 17397 (launchOrbsArcadeGame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6969 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17384 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17381 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import FramesStore from "FramesStore" /* 6934 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17378 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17375 */;
 import FramesConstants from "FramesConstants" /* 6935 */;
 import size from "module_2" /* 2 */;
 

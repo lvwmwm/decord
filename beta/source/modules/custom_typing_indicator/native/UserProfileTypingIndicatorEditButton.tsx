@@ -1,10 +1,10 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 16857
+// Function ID: 16858
 // Name: UserProfileTypingIndicatorEditButton
-// Dependencies: [32, 19, 1072, 5016, 21, 1499, 13998, 7674, 5003, 7420, 7445, 1113, 16825, 4028, 14011, 2]
+// Dependencies: [32, 19, 1072, 5016, 21, 1499, 13998, 7674, 5003, 7420, 7445, 1113, 16822, 4028, 14011, 2]
 // Exports: default
 
-// Module 16860 (UserProfileTypingIndicatorEditButton)
+// Module 16857 (UserProfileTypingIndicatorEditButton)
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
@@ -54,9 +54,9 @@ export default function UserProfileTypingIndicatorEditButton(isTryItOut) {
   const string = intl.string;
   const tmpResult = isTryItOut(13998);
   const stringResult = string(tmpResult.getCustomTypingIndicatorSuggestionMessage(currentCustomTypingIndicatorConfig.typingSuggestion));
-  const UserProfileEditFormButton = tmp(16825).UserProfileEditFormButton;
+  const UserProfileEditFormButton = tmp(16822).UserProfileEditFormButton;
   const intl2 = tmp(1113).intl;
   ({ showPremiumIcon: true, showNewBadge: first === isTryItOut(5003).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE });
-  const UserProfileEditFormLabelBadges = tmp(16825).UserProfileEditFormLabelBadges;
+  const UserProfileEditFormLabelBadges = tmp(16822).UserProfileEditFormLabelBadges;
   return <UserProfileEditFormButton label={intl2.string(nativeStackNavigation(4028)["pT+BVM"])} labelTrailing={null} leading={null} buttonText={stringResult} accessibilityValue={{ text: stringResult }} onPress={tmp12} />;
 };

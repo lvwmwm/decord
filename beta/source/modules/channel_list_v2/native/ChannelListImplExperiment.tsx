@@ -1,9 +1,9 @@
-// Module ID: 18609
-// Function ID: 18610
+// Module ID: 18606
+// Function ID: 18607
 // Name: ChannelListImplExperiment
 // Dependencies: [1449, 2]
 
-// Module 18609 (ChannelListImplExperiment)
+// Module 18606 (ChannelListImplExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

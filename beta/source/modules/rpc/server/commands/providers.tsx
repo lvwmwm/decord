@@ -1,9 +1,9 @@
-// Module ID: 16679
-// Function ID: 16680
+// Module ID: 16676
+// Function ID: 16677
 // Name: providers
 // Dependencies: [5, 6659, 6615, 1072, 2142, 1083, 7441, 9447, 12005, 12008, 6661, 572, 1108, 9843, 2]
 
-// Module 16679 (providers)
+// Module 16676 (providers)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7441 */;

@@ -1,9 +1,9 @@
-// Module ID: 17347
-// Function ID: 17348
+// Module ID: 17344
+// Function ID: 17345
 // Name: BountiesCtaHeader
-// Dependencies: [109, 19, 17, 5171, 9796, 6869, 21, 575, 5796, 5170, 504, 8980, 17326, 5790, 1113, 5783, 17334, 17348, 6876, 7972, 6872, 7981, 17273, 17275, 1187, 17349, 17350, 17351, 17352, 5231, 16827, 14967, 2]
+// Dependencies: [109, 19, 17, 5171, 9796, 6869, 21, 575, 5796, 5170, 504, 8980, 17323, 5790, 1113, 5783, 17331, 17345, 6876, 7972, 6872, 7981, 17270, 17272, 1187, 17346, 17347, 17348, 17349, 5231, 16824, 14964, 2]
 
-// Module 17347 (BountiesCtaHeader)
+// Module 17344 (BountiesCtaHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -15,12 +15,12 @@ import AdCreativeType from "AdCreativeType" /* 6876 */;
 import AnalyticsActions from "AnalyticsActions" /* 7972 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
 import common_Video from "common/Video" /* 8980 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17273 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 17275 */;
-import _modDef17326 from "module_17326" /* 17326 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 17334 */;
-import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 17349 */;
-import _modDef17350 from "module_17350" /* 17350 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17270 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 17272 */;
+import _modDef17323 from "module_17323" /* 17323 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 17331 */;
+import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 17346 */;
+import _modDef17347 from "module_17347" /* 17347 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -47,7 +47,7 @@ function StarfieldBackground() {
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj2 = { source: obj3, style: metroRequire.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
-  obj3 = { uri: _modDef17326 };
+  obj3 = { uri: _modDef17323 };
   const VideoComponent = common_Video.VideoComponent;
   return authStore2(VideoComponent, obj2);
 }
@@ -148,7 +148,7 @@ function BountiesCtaHeaderInner(bounties) {
   }
   const tmp = closure_18();
   let tmp8Result2 = null != footer;
-  let obj = bounties(17348);
+  let obj = bounties(17345);
   const bountiesEntryPointButtonVariant = obj.getBountiesEntryPointButtonVariant(shopCarouselButtonVariant);
   let obj2 = bounties(504);
   const items = [AdContentSeenStore];
@@ -207,7 +207,7 @@ function BountiesCtaHeaderInner(bounties) {
     items5[3] = tmp10Result4;
     tmp8Result = tmp8(tmp9, obj6);
   } else {
-    const obj15 = { uri: _modDef17350, style: items8, children: items9 };
+    const obj15 = { uri: _modDef17347, style: items8, children: items9 };
     items8 = [tmp.header, tmp8Result2 && tmp.headerWithFooter, ];
     let headerRoundedBottom2 = tmp10Result4;
     const tmp25 = BountiesBannerBackgroundDefault;
@@ -289,7 +289,7 @@ let closure_18 = createStyles.createStyles(() => {
 const memoResult = react.memo(function BountiesCtaHeader(bounties) {
   let closure_2;
   let tmp9Result;
-  const tmp2 = bounties(17351)();
+  const tmp2 = bounties(17348)();
   const containerRef = tmp2.containerRef;
   bounties = bounties.bounties;
   const isEmptyOrCompleted = bounties.isEmptyOrCompleted;
@@ -309,9 +309,9 @@ const memoResult = react.memo(function BountiesCtaHeader(bounties) {
     }
     tmp4 = COMPLETED;
   }
-  let obj = containerRef(17352);
+  let obj = containerRef(17349);
   const bountyCarouselEmptyStateAnalytics = obj.useBountyCarouselEmptyStateAnalytics(tmp4);
-  const obj2 = { theme: containerRef(16827).ThemeTypes.DARK, children: tmp9Result };
+  const obj2 = { theme: containerRef(16824).ThemeTypes.DARK, children: tmp9Result };
   const ThemeContextProvider = containerRef(5231).ThemeContextProvider;
   if (tmp3) {
     const obj3 = { containerRef };
@@ -330,7 +330,7 @@ const memoResult = react.memo(function BountiesCtaHeader(bounties) {
           return authStore2(BountiesCtaHeaderInner, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp7(14967).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp7(14964).QuestContentImpressionTrackerNative;
     tmp9Result = tmp9(QuestContentImpressionTrackerNative, obj4);
   }
   return closure_12(ThemeContextProvider, obj2);

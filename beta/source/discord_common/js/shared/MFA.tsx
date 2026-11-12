@@ -1,10 +1,10 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18037
+// Function ID: 18038
 // Name: MFA
 // Dependencies: [5, 1282, 2]
 // Exports: trySubmit
 
-// Module 18040 (MFA)
+// Module 18037 (MFA)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

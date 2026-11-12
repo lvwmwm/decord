@@ -1,16 +1,16 @@
 // Module ID: 0
 // Function ID: 1
 // Name: Discord
-// Dependencies: [1, 15, 16372, 16, 9, 1242, 16566, 16567, 17, 16569, 19795, 20592, 20593, 20594, 20595, 20596, 20598, 20599, 20600, 20601, 20602, 20603, 20604, 20605, 2]
+// Dependencies: [1, 15, 16369, 16, 9, 1242, 16563, 16564, 17, 16566, 19795, 20592, 20593, 20594, 20595, 20596, 20598, 20599, 20600, 20601, 20602, 20603, 20604, 20605, 2]
 
 // Module 0 (Discord)
 import TTITracker from "TTITracker" /* 9 */;
 import react_native from "react-native" /* 17 */;
-import isTTITest from "isTTITest" /* 16566 */;
-import installSystrace from "installSystrace" /* 16567 */;
+import isTTITest from "isTTITest" /* 16563 */;
+import installSystrace from "installSystrace" /* 16564 */;
 import logAppStart from "logAppStart" /* 1 */;
 import fast_connect from "fast_connect" /* 15 */;
-import polyfills from "polyfills" /* 16372 */;
+import polyfills from "polyfills" /* 16369 */;
 import checkEnv from "checkEnv" /* 16 */;
 import SentryUtils from "SentryUtils" /* 1242 */;
 import size from "module_2" /* 2 */;

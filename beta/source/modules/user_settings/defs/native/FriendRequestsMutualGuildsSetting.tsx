@@ -1,16 +1,16 @@
-// Module ID: 17232
-// Function ID: 17233
+// Module ID: 17229
+// Function ID: 17230
 // Name: FriendRequestsMutualGuildsSetting
-// Dependencies: [19, 8536, 1072, 17072, 4995, 7260, 1403, 11717, 1113, 2]
+// Dependencies: [19, 8536, 1072, 17069, 4995, 7260, 1403, 11717, 1113, 2]
 
-// Module 17232 (FriendRequestsMutualGuildsSetting)
+// Module 17229 (FriendRequestsMutualGuildsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import FlagUtilsAll from "FlagUtils" /* 1403 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7260 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17072 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17069 */;
 import react from "react" /* 19 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;

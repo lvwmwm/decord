@@ -1,7 +1,7 @@
 // Module ID: 7705
 // Function ID: 7706
 // Name: UserSettingsPremium
-// Dependencies: [32, 19, 17, 1385, 2175, 2176, 7687, 2117, 7706, 1072, 1387, 21, 5170, 7708, 1627, 7420, 7445, 7259, 5753, 1252, 504, 1499, 5036, 7709, 7711, 7713, 7690, 10066, 7736, 10722, 7735, 15551, 8634, 7256, 7260, 2171, 4983, 15552, 15593, 15595, 15596, 10061, 15666, 11549, 1377, 2]
+// Dependencies: [32, 19, 17, 1385, 2175, 2176, 7687, 2117, 7706, 1072, 1387, 21, 5170, 7708, 1627, 7420, 7445, 7259, 5753, 1252, 504, 1499, 5036, 7709, 7711, 7713, 7690, 10066, 7736, 10722, 7735, 15548, 8634, 7256, 7260, 2171, 4983, 15549, 15590, 15592, 15593, 10061, 15663, 11549, 1377, 2]
 // Exports: default
 
 // Module 7705 (UserSettingsPremium)
@@ -14,7 +14,7 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7420 */;
 import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7708 */;
 import BillingActionCreatorsDefault from "BillingActionCreators" /* 7713 */;
 import UserOfferActionCreators from "UserOfferActionCreators" /* 8634 */;
-import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 15551 */;
+import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 15548 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -44,11 +44,11 @@ let tmp2;
 const useMountEffectDefault = tmp2(5753);
 const AnalyticsLocationDefault = tmp2(7445);
 const BlockedPaymentsCountryDisplayDefault = tmp2(11549);
-const PremiumSubscriptionDetailsDefault = tmp2(15552);
-const PremiumBillingInfoDefault = tmp2(15593);
-const PremiumAccountCreditDefault = tmp2(15595);
-const PremiumNitroHomeDefault = tmp2(15596);
-const PremiumMarketingPageDefault = tmp2(15666);
+const PremiumSubscriptionDetailsDefault = tmp2(15549);
+const PremiumBillingInfoDefault = tmp2(15590);
+const PremiumAccountCreditDefault = tmp2(15592);
+const PremiumNitroHomeDefault = tmp2(15593);
+const PremiumMarketingPageDefault = tmp2(15663);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ AnalyticEvents: closure_14, AppStates: closure_15, UserSettingsSections: closure_16, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
 ({ PremiumTypes: closure_17, PREMIUM_SUBSCRIPTION_APPLICATION: closure_18 } = PremiumConstants);

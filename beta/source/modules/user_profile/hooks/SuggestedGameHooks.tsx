@@ -1,10 +1,10 @@
-// Module ID: 15248
-// Function ID: 15249
+// Module ID: 15245
+// Function ID: 15246
 // Name: SuggestedGameHooks
-// Dependencies: [32, 19, 2138, 12582, 15249, 7577, 504, 12584, 2]
+// Dependencies: [32, 19, 2138, 12582, 15246, 7577, 504, 12584, 2]
 // Exports: useFetchSuggestedGames, useSuggestedGames
 
-// Module 15248 (SuggestedGameHooks)
+// Module 15245 (SuggestedGameHooks)
 import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

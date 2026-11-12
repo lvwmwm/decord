@@ -1,10 +1,10 @@
-// Module ID: 18618
-// Function ID: 18619
+// Module ID: 18615
+// Function ID: 18616
 // Name: GuildLiveChannelNotice
-// Dependencies: [19, 17, 6800, 5024, 6801, 5102, 5928, 5025, 1083, 21, 575, 1187, 5911, 11219, 8675, 5915, 1377, 5796, 5170, 5783, 14379, 11208, 6821, 2017, 8041, 8052, 5401, 9945, 5790, 5177, 5808, 504, 1113, 8707, 9228, 9084, 9120, 9074, 6853, 6847, 6799, 9203, 8773, 18617, 10953, 7073, 2]
+// Dependencies: [19, 17, 6800, 5024, 6801, 5102, 5928, 5025, 1083, 21, 575, 1187, 5911, 11219, 8675, 5915, 1377, 5796, 5170, 5783, 14375, 11208, 6821, 2017, 8041, 8052, 5401, 9945, 5790, 5177, 5808, 504, 1113, 8707, 9228, 9084, 9120, 9074, 6853, 6847, 6799, 9203, 8773, 18614, 10953, 7073, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 18618 (GuildLiveChannelNotice)
+// Module 18615 (GuildLiveChannelNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -123,7 +123,7 @@ function UserSummaryRow(arg0) {
       items2 = [, ];
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       let obj4 = { size: "custom", style: obj5.makeSizeStyle(14) };
-      const HeadphonesIcon = max(14379).HeadphonesIcon;
+      const HeadphonesIcon = max(14375).HeadphonesIcon;
       obj5 = max(11208);
       items3 = [tmp8(HeadphonesIcon, obj4), ];
       let obj6 = { variant: "body-xs/semibold", style: { marginLeft: 4 }, maxFontSizeMultiplier: 1, children: audienceCount };
@@ -448,7 +448,7 @@ const memoResult = react.memo(function GuildLiveChannelNotice(guild) {
   const style = guild.style;
   const tmp2 = activeEventOrStageInstanceChannel;
   const tmp = closure_29();
-  let obj = activeEventOrStageInstanceChannel(18617);
+  let obj = activeEventOrStageInstanceChannel(18614);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
   let obj2 = activeEventOrStageInstanceChannel(9203);
   const guildActiveEvent = obj2.useGuildActiveEvent(guild.id);

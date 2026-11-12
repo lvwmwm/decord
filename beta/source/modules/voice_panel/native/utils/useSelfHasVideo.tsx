@@ -1,10 +1,10 @@
-// Module ID: 19608
-// Function ID: 19609
+// Module ID: 19605
+// Function ID: 19606
 // Name: useSelfHasVideo
 // Dependencies: [6931, 502, 2130, 504, 11400, 2]
 // Exports: default
 
-// Module 19608 (useSelfHasVideo)
+// Module 19605 (useSelfHasVideo)
 import participantHasVideo from "participantHasVideo" /* 11400 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -1,10 +1,10 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15079
+// Function ID: 15080
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 5170, 575, 1187, 1113, 15083, 15084, 15080, 5783, 5767, 11585, 15085, 7415, 5420, 7315, 9233, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 1187, 1113, 15080, 15081, 15077, 5783, 5767, 11585, 15082, 7415, 5420, 7315, 9233, 2]
 // Exports: default
 
-// Module 15082 (GuildInviteActionSheet)
+// Module 15079 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -14,9 +14,9 @@ import Text_Text from "Text/Text" /* 5783 */;
 import SearchBar2 from "SearchBar" /* 7315 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7415 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9233 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15083 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15084 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 15085 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15080 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15081 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 15082 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -55,7 +55,7 @@ function GuildList(recipientId) {
   dependencyMap = closure_8();
   let tmp = recipientId;
   let tmp2 = dependencyMap;
-  let obj = recipientId(15080);
+  let obj = recipientId(15077);
   [arr, arr2] = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   const tmp3 = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   if (0 === arr.length) {

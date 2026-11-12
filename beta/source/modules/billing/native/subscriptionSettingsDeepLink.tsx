@@ -1,10 +1,10 @@
-// Module ID: 16157
-// Function ID: 16158
+// Module ID: 16154
+// Function ID: 16155
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2176, 1072, 7668, 16158, 5406, 1113, 1252, 6621, 2]
+// Dependencies: [5, 2176, 1072, 7668, 16155, 5406, 1113, 1252, 6621, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 16157 (subscriptionSettingsDeepLink)
+// Module 16154 (subscriptionSettingsDeepLink)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6621 */;
 import openUserSettings from "openUserSettings" /* 7668 */;

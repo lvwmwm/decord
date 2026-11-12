@@ -1,15 +1,15 @@
-// Module ID: 18459
-// Function ID: 18460
+// Module ID: 18456
+// Function ID: 18457
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 1072, 5798, 1627, 18460, 18463, 18474, 575, 2]
+// Dependencies: [109, 19, 1072, 5798, 1627, 18457, 18460, 18471, 575, 2]
 // Exports: default
 
-// Module 18459 (useMessagesSpecs)
+// Module 18456 (useMessagesSpecs)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import MessagesHeader from "MessagesHeader" /* 18460 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 18463 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18474 */;
+import MessagesHeader from "MessagesHeader" /* 18457 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 18460 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18471 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

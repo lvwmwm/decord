@@ -1,9 +1,9 @@
-// Module ID: 19358
-// Function ID: 19359
+// Module ID: 19355
+// Function ID: 19356
 // Name: PinsScreen
-// Dependencies: [19, 17, 5019, 9950, 21, 5170, 575, 1502, 504, 14113, 19194, 2]
+// Dependencies: [19, 17, 5019, 9950, 21, 5170, 575, 1502, 504, 14113, 19191, 2]
 
-// Module 19358 (PinsScreen)
+// Module 19355 (PinsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

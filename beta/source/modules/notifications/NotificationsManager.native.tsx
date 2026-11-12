@@ -1,7 +1,7 @@
 // Module ID: 20023
 // Function ID: 20024
 // Name: NotificationsManager
-// Dependencies: [5, 5104, 502, 5019, 6863, 14239, 1072, 8042, 14240, 5406, 20024, 2118, 1260, 2166, 8065, 14242, 11177, 1252, 1377, 7383, 17836, 1092, 2]
+// Dependencies: [5, 5104, 502, 5019, 6863, 14239, 1072, 8042, 14240, 5406, 20024, 2118, 1260, 2166, 8065, 14242, 11177, 1252, 1377, 7383, 17833, 1092, 2]
 
 // Module 20023 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;

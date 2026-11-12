@@ -1,11 +1,11 @@
-// Module ID: 18949
-// Function ID: 18950
+// Module ID: 18946
+// Function ID: 18947
 // Name: useWaterwheelsCardEligibility
-// Dependencies: [19, 14239, 504, 18950, 2]
+// Dependencies: [19, 14239, 504, 18947, 2]
 // Exports: default
 
-// Module 18949 (useWaterwheelsCardEligibility)
-import WaterwheelsCard from "WaterwheelsCard" /* 18950 */;
+// Module 18946 (useWaterwheelsCardEligibility)
+import WaterwheelsCard from "WaterwheelsCard" /* 18947 */;
 import react from "react" /* 19 */;
 import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14239 */;
 import size from "module_2" /* 2 */;

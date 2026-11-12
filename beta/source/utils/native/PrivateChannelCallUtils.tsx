@@ -1,7 +1,7 @@
 // Module ID: 8041
 // Function ID: 8042
 // Name: PrivateChannelCallUtils
-// Dependencies: [5, 19, 5407, 6963, 5019, 5112, 5073, 1385, 1072, 1097, 8042, 21, 6821, 5920, 8043, 1108, 7303, 6826, 5406, 15494, 2118, 6831, 6793, 6123, 1113, 1252, 7445, 8059, 5355, 15527, 6124, 7584, 2]
+// Dependencies: [5, 19, 5407, 6963, 5019, 5112, 5073, 1385, 1072, 1097, 8042, 21, 6821, 5920, 8043, 1108, 7303, 6826, 5406, 15491, 2118, 6831, 6793, 6123, 1113, 1252, 7445, 8059, 5355, 15524, 6124, 7584, 2]
 // Exports: dismissVoiceChannelScreens, getVoiceChannelKey, getVoiceChannelKeyByChannelId, handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openChannelCallModal, openGuildVoiceModal, openVoiceChannelActionSheet, showGuardCallAlert
 
 // Module 8041 (PrivateChannelCallUtils)
@@ -202,7 +202,7 @@ export function openVoiceChannelActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { channel };
-  const tmp2 = asyncRequire(15494, dependencyMap.paths);
+  const tmp2 = asyncRequire(15491, dependencyMap.paths);
   openLazy(tmp2, "" + c18 + "-" + channel.id, obj);
 }
 export function hideVoiceChannelActionSheet(id) {

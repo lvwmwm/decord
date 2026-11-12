@@ -1,30 +1,8 @@
 // Module ID: 16243
 // Function ID: 16244
-// Dependencies: [16244]
+// Dependencies: []
 
 // Module 16243
-import _mod16244 from "module_16244" /* 16244 */;
+const tmp = Number.MAX_SAFE_INTEGER || 9007199254740991;
 
-
-export default function(arg0, arg1) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  if (arg0 instanceof _mod16244) {
-    return arg0;
-  } else {
-    try {
-      const self = this;
-      const self2 = this;
-      const tmp5 = new _mod16244(arg0, arg1);
-      return tmp5;
-    } catch (tmp7) {
-      if (flag) {
-        throw tmp7;
-      } else {
-        return null;
-      }
-    }
-  }
-};
+export default { MAX_LENGTH: 256, MAX_SAFE_COMPONENT_LENGTH: 16, MAX_SAFE_BUILD_LENGTH: 250, MAX_SAFE_INTEGER: tmp, RELEASE_TYPES: ["major", "premajor", "minor", "preminor", "patch", "prepatch", "prerelease"], SEMVER_SPEC_VERSION: "2.0.0", FLAG_INCLUDE_PRERELEASE: 1, FLAG_LOOSE: 2 };

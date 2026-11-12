@@ -1,18 +1,18 @@
-// Module ID: 16866
-// Function ID: 16867
+// Module ID: 16863
+// Function ID: 16864
 // Name: usePremiumTryItOutPresetShuffle
-// Dependencies: [19, 8835, 1072, 5401, 5177, 16867, 8842, 16795, 7255, 1252, 1113, 2]
+// Dependencies: [19, 8835, 1072, 5401, 5177, 16864, 8842, 16792, 7255, 1252, 1113, 2]
 // Exports: default
 
-// Module 16866 (usePremiumTryItOutPresetShuffle)
+// Module 16863 (usePremiumTryItOutPresetShuffle)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import shared from "shared" /* 5177 */;
 import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7255 */;
 import UserProfileActionCreators from "UserProfileActionCreators" /* 8842 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 16795 */;
-import TryItOutPresets from "TryItOutPresets" /* 16867 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 16792 */;
+import TryItOutPresets from "TryItOutPresets" /* 16864 */;
 import react from "react" /* 19 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export default function usePremiumTryItOutPresetShuffle() {
     UserProfileActionCreators;
     obj4 = ProfilePendingImageUtils;
     themeColors = tryItOutPresetConfig.themeColors;
-    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "fileBytes" };
+    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "fileFinishedImporting" };
     setTryItOutPreset(obj2);
   }, items);
   const items1 = [callback];

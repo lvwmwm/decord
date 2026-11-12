@@ -1,10 +1,10 @@
-// Module ID: 15620
-// Function ID: 15621
+// Module ID: 15617
+// Function ID: 15618
 // Name: usePromotionMarketingComponent
 // Dependencies: [32, 19, 7739, 9747, 9792, 504, 9789, 2]
 // Exports: usePromotionMarketingComponent, usePromotionMarketingSurface
 
-// Module 15620 (usePromotionMarketingComponent)
+// Module 15617 (usePromotionMarketingComponent)
 import promotions_constants from "promotions/constants" /* 9789 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

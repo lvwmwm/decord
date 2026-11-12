@@ -1,10 +1,10 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17857
+// Function ID: 17858
 // Name: GoLiveNotificationUtils
 // Dependencies: [1072, 5115, 4995, 1252, 2]
 // Exports: onGoLiveNotificationSettingsChanged
 
-// Module 17860 (GoLiveNotificationUtils)
+// Module 17857 (GoLiveNotificationUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import UserSettings from "UserSettings" /* 4995 */;

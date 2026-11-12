@@ -1,10 +1,10 @@
-// Module ID: 17147
-// Function ID: 17148
+// Module ID: 17144
+// Function ID: 17145
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [19, 17, 7825, 21, 8747, 13627, 5872, 15797, 8749, 8118, 5896, 13629, 5170, 575, 5783, 13626, 1113, 2664, 8474, 8476, 8074, 8076, 13484, 5790, 6831, 7097, 11659, 2]
+// Dependencies: [19, 17, 7825, 21, 8747, 13627, 5872, 15794, 8749, 8118, 5896, 13629, 5170, 575, 5783, 13626, 1113, 2664, 8474, 8476, 8074, 8076, 13484, 5790, 6831, 7097, 11659, 2]
 // Exports: default
 
-// Module 17147 (FamilyCenterModalDataTooltip)
+// Module 17144 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -21,7 +21,7 @@ import ThreadIcon from "ThreadIcon" /* 8749 */;
 import Modal2 from "Modal" /* 11659 */;
 import PhoneIcon from "PhoneIcon" /* 13627 */;
 import GiftIcon from "GiftIcon" /* 13629 */;
-import ServerGridIcon from "ServerGridIcon" /* 15797 */;
+import ServerGridIcon from "ServerGridIcon" /* 15794 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;

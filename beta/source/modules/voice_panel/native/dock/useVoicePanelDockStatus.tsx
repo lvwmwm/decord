@@ -1,10 +1,10 @@
-// Module ID: 19638
-// Function ID: 19639
+// Module ID: 19635
+// Function ID: 19636
 // Name: useVoicePanelDockStatus
-// Dependencies: [32, 19, 6931, 502, 5925, 6844, 1385, 5835, 19639, 5837, 11394, 504, 2]
+// Dependencies: [32, 19, 6931, 502, 5925, 6844, 1385, 5835, 19636, 5837, 11394, 504, 2]
 // Exports: default
 
-// Module 19638 (useVoicePanelDockStatus)
+// Module 19635 (useVoicePanelDockStatus)
 import CallConstants from "CallConstants" /* 5837 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -15,7 +15,7 @@ import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
 import SpeakingStore from "SpeakingStore" /* 6844 */;
 import UserStore from "UserStore" /* 1385 */;
 import VoiceStateStore from "VoiceStateStore" /* 5835 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19639 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19636 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set, streamParticipants;
@@ -173,7 +173,7 @@ export default function useVoicePanelDockStatus() {
     let participant;
     let tmp;
     let user;
-    const f143066 = (item) => {
+    const f143091 = (item) => {
       const tmp = item !== closure_1_1 && null != participant.getParticipant(batchedStoreListener, item) && null != user.getUser(item);
       return tmp;
     };
@@ -184,11 +184,11 @@ export default function useVoicePanelDockStatus() {
       const self2 = this;
       batchedStoreListener = new tmp3(closure_1_2[11]).BatchedStoreListener(items, function update() {
         const speakers = closure_2_8.getSpeakers();
-        let tmp = closure_2_14(batchedStoreListener, speakers.filter(f143066));
+        let tmp = closure_2_14(batchedStoreListener, speakers.filter(f143091));
       });
       batchedStoreListener.attach("useVoicePanelDockStatus.speakers");
       let speakers = closure_1_8.getSpeakers();
-      closure_1_14(tmp, speakers.filter(f143066));
+      closure_1_14(tmp, speakers.filter(f143091));
       return () => batchedStoreListener.detach();
     }
   }, items4);

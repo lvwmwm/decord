@@ -1,7 +1,7 @@
 // Module ID: 20004
 // Function ID: 20005
 // Name: InterestPickerStep
-// Dependencies: [19, 21, 18799, 18798, 20002, 1242, 20005, 2]
+// Dependencies: [19, 21, 18796, 18795, 20002, 1242, 20005, 2]
 // Exports: default
 
 // Module 20004 (InterestPickerStep)
@@ -22,9 +22,9 @@ export default function InterestPickerStep(navigation) {
   dependencyMap = undefined;
   let onComplete = navigation.route.params.onComplete;
   const tmp = dependencyMap;
-  let obj = navigation(18799);
+  let obj = navigation(18796);
   const interestPickerGameList = obj.useInterestPickerGameList("InterestPickerStep");
-  const tmp4 = onComplete(18798)("InterestPickerStep");
+  const tmp4 = onComplete(18795)("InterestPickerStep");
   dependencyMap = tmp4;
   let obj2 = navigation(20002);
   const setPicks = obj2.useInterestPickerPicks().setPicks;

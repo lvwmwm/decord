@@ -1,13 +1,13 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17640
+// Function ID: 17641
 // Name: SettingsAppearanceActivityCardsItem
-// Dependencies: [19, 21, 7390, 575, 17644, 2]
+// Dependencies: [19, 21, 7390, 575, 17641, 2]
 // Exports: default
 
-// Module 17643 (SettingsAppearanceActivityCardsItem)
+// Module 17640 (SettingsAppearanceActivityCardsItem)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 17644 */;
+import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 17641 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

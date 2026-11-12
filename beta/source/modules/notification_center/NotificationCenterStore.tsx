@@ -1,9 +1,9 @@
-// Module ID: 18874
-// Function ID: 18875
+// Module ID: 18871
+// Function ID: 18872
 // Name: NotificationCenterStore
 // Dependencies: [32, 6975, 1089, 504, 6947, 11, 572, 2]
 
-// Module 18874 (NotificationCenterStore)
+// Module 18871 (NotificationCenterStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

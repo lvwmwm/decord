@@ -1,9 +1,9 @@
-// Module ID: 16680
-// Function ID: 16681
+// Module ID: 16677
+// Function ID: 16678
 // Name: relationships
-// Dependencies: [32, 5112, 1385, 6615, 1072, 16648, 9017, 1084, 9447, 12008, 2]
+// Dependencies: [32, 5112, 1385, 6615, 1072, 16645, 9017, 1084, 9447, 12008, 2]
 
-// Module 16680 (relationships)
+// Module 16677 (relationships)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import Constants2 from "Constants" /* 6615 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;
@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16648 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16645 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

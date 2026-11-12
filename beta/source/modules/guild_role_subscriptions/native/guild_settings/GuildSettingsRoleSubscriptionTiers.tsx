@@ -1,7 +1,7 @@
 // Module ID: 20397
 // Function ID: 20398
 // Name: GuildSettingsRoleSubscriptionTiers
-// Dependencies: [32, 19, 17, 9188, 5041, 5095, 17554, 1072, 21, 5170, 575, 5406, 20398, 2118, 1113, 7510, 17578, 5783, 563, 17574, 7071, 5874, 11301, 1627, 1499, 17562, 20388, 16062, 17561, 12, 7097, 20400, 20401, 38, 7159, 11666, 20396, 2]
+// Dependencies: [32, 19, 17, 9188, 5041, 5095, 17551, 1072, 21, 5170, 575, 5406, 20398, 2118, 1113, 7510, 17575, 5783, 563, 17571, 7071, 5874, 11301, 1627, 1499, 17559, 20388, 16059, 17558, 12, 7097, 20400, 20401, 38, 7159, 11666, 20396, 2]
 // Exports: default
 
 // Module 20397 (GuildSettingsRoleSubscriptionTiers)
@@ -12,8 +12,8 @@ import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import FastImageDefault from "FastImage" /* 5874 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17554 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17574 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17551 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17571 */;
 import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 20396 */;
 import GuildRoleSettingsActionCreatorsAll from "GuildRoleSettingsActionCreators" /* 20400 */;
 import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 20401 */;
@@ -128,10 +128,10 @@ function EditListingButton(editStateId) {
       const obj5 = { price: tmp2Result.formatPrice(first1, first3.currency), interval: tmp2Result3.formatPlanInterval(first3) };
       const CgmBaG = tmp2(1113).t.CgmBaG;
       tmp2Result = editStateId(7510);
-      tmp2Result3 = editStateId(17578);
+      tmp2Result3 = editStateId(17575);
       formatToPlainStringResult = formatToPlainString(CgmBaG, obj5);
     } else {
-      const tmp2Result4 = editStateId(17578);
+      const tmp2Result4 = editStateId(17575);
       formatToPlainStringResult = tmp2Result4.formatMonthlyPriceLabel(first1);
     }
     str = formatToPlainStringResult;

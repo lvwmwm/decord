@@ -1,10 +1,10 @@
-// Module ID: 16796
-// Function ID: 16797
+// Module ID: 16793
+// Function ID: 16794
 // Name: UserProfileUpsellButton
 // Dependencies: [19, 1072, 1387, 21, 5170, 7420, 7735, 1252, 5790, 9908, 1113, 9645, 2]
 // Exports: default
 
-// Module 16796 (UserProfileUpsellButton)
+// Module 16793 (UserProfileUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;

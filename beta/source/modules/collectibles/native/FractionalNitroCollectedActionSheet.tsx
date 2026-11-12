@@ -1,10 +1,10 @@
-// Module ID: 15366
-// Function ID: 15367
+// Module ID: 15363
+// Function ID: 15364
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1072, 1387, 21, 5170, 575, 9658, 5874, 15367, 5401, 7870, 5177, 10746, 10747, 5783, 1113, 2185, 5866, 5420, 7725, 7076, 14784, 5790, 5406, 5755, 2]
+// Dependencies: [19, 17, 1072, 1387, 21, 5170, 575, 9658, 5874, 15364, 5401, 7870, 5177, 10746, 10747, 5783, 1113, 2185, 5866, 5420, 7725, 7076, 14781, 5790, 5406, 5755, 2]
 // Exports: default
 
-// Module 15366 (FractionalNitroCollectedActionSheet)
+// Module 15363 (FractionalNitroCollectedActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import shared from "shared" /* 5177 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9658 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15367 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15364 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -178,7 +178,7 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
   const obj5 = { style: tmp.questionIconContainer, onPress: callback, children: tmp15(CircleQuestionIcon, obj6) };
   const PressableOpacity = tmp5(7076).PressableOpacity;
   obj6 = { style: tmp.questionIcon, color: tmp2(575).colors.WHITE };
-  CircleQuestionIcon = tmp5(14784).CircleQuestionIcon;
+  CircleQuestionIcon = tmp5(14781).CircleQuestionIcon;
   items2[1] = tmp15(PressableOpacity, obj5);
   const items3 = [tmp10(tmp11, obj4), , ];
   const obj7 = { style: tmp.body, children: tmp10Result };

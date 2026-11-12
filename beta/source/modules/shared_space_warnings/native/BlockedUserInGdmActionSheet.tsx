@@ -1,7 +1,7 @@
 // Module ID: 20061
 // Function ID: 20062
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 5019, 1385, 15967, 1072, 21, 5170, 575, 5783, 6205, 1113, 504, 1380, 1187, 12318, 10950, 7434, 5891, 1252, 7459, 5874, 11445, 7159, 7071, 5790, 5406, 20062, 7582, 2]
+// Dependencies: [19, 17, 5019, 1385, 15964, 1072, 21, 5170, 575, 5783, 6205, 1113, 504, 1380, 1187, 12318, 10950, 7434, 5891, 1252, 7459, 5874, 11445, 7159, 7071, 5790, 5406, 20062, 7582, 2]
 // Exports: default
 
 // Module 20061 (BlockedUserInGdmActionSheet)
@@ -19,7 +19,7 @@ import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import UserStore from "UserStore" /* 1385 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15967 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15964 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

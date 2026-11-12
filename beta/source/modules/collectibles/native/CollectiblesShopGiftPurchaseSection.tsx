@@ -1,10 +1,10 @@
-// Module ID: 14701
-// Function ID: 14702
+// Module ID: 14698
+// Function ID: 14699
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8867, 7718, 1072, 1387, 21, 5170, 575, 5767, 10763, 504, 8859, 7420, 14693, 1252, 14702, 572, 6831, 6123, 14703, 2118, 1377, 10779, 10768, 5783, 1113, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 8867, 7718, 1072, 1387, 21, 5170, 575, 5767, 10763, 504, 8859, 7420, 14690, 1252, 14699, 572, 6831, 6123, 14700, 2118, 1377, 10779, 10768, 5783, 1113, 5790, 2]
 // Exports: default
 
-// Module 14701 (CollectiblesShopGiftPurchaseSection)
+// Module 14698 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;

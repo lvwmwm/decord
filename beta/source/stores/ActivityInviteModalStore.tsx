@@ -1,9 +1,9 @@
-// Module ID: 15975
-// Function ID: 15976
+// Module ID: 15972
+// Function ID: 15973
 // Name: ActivityInviteModalStore
 // Dependencies: [5019, 5041, 11702, 5922, 5112, 1385, 7492, 1072, 9248, 1113, 5808, 11721, 504, 572, 2]
 
-// Module 15975 (ActivityInviteModalStore)
+// Module 15972 (ActivityInviteModalStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
@@ -23,7 +23,7 @@ let _null, _null2, activity, channel, guild, privateChannelIds, set, user;
 
 let closure_12;
 let unpackModuleId;
-const f110884 = (type) => {
+const f110880 = (type) => {
   if (type.type === _mod9248.AutocompleterResultTypes.USER) {
     let tmp7;
     const status = PresenceStore.getStatus(type.data.record.id);
@@ -95,7 +95,7 @@ function handlePresenceReset() {
     flag = false;
     if (null != c3) {
       let c0 = null;
-      mapped = mapped.map(f110884);
+      mapped = mapped.map(f110880);
       let flag2 = !mapped.every((item, index) => item === mapped[index]);
       mapped.every((item, index) => item === mapped[index]);
       if (flag2) {
@@ -267,7 +267,7 @@ let obj = {
     return false;
   },
   ACTIVITY_INVITE_MODAL_SEND: function handleActivityInviteSend(channelId) {
-    const f110879 = (type) => {
+    const f110875 = (type) => {
       let tmp = type;
       if (type.type !== channelId(closure_1_2[8]).AutocompleterResultTypes.HEADER) {
         const obj = { sent: closure_1_16.includes(type.data.record.id) };
@@ -289,7 +289,7 @@ let obj = {
         sendActivityInviteResult.then(() => {
           items = [];
           items[HermesBuiltin.arraySpread(items, items, 0)] = channelId;
-          mapped = mapped.map(f110879);
+          mapped = mapped.map(f110875);
           closure_18 = withSameGameSection(mapped);
           activityInviteModalStoreClass.emitChange();
         });
@@ -300,7 +300,7 @@ let obj = {
         result.then(() => {
           items = [];
           items[HermesBuiltin.arraySpread(items, items, 0)] = userId;
-          mapped = mapped.map(f110879);
+          mapped = mapped.map(f110875);
           closure_18 = withSameGameSection(mapped);
           activityInviteModalStoreClass.emitChange();
         });
@@ -366,7 +366,7 @@ let obj = {
           const self2 = this;
           set = new Set(updates.map((user) => user.user.id));
         }
-        mapped = mapped.map(f110884);
+        mapped = mapped.map(f110880);
         let flag2 = !mapped.every((item, index) => item === mapped[index]);
         mapped.every((item, index) => item === mapped[index]);
         if (flag2) {

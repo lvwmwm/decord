@@ -1,15 +1,15 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 14802
+// Function ID: 14803
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 6226, 5175, 1072, 14792, 21, 8845, 8947, 1403, 1113, 5179, 7745, 7459, 7415, 6191, 575, 5783, 7349, 7070, 5790, 2]
+// Dependencies: [5, 32, 19, 6226, 5175, 1072, 14789, 21, 8845, 8947, 1403, 1113, 5179, 7745, 7459, 7415, 6191, 575, 5783, 7349, 7070, 5790, 2]
 // Exports: default
 
-// Module 14805 (EditAttachmentActionSheet)
+// Module 14802 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1072 */;
 import MessageConstants from "MessageConstants" /* 5175 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
 import react2 from "react" /* 8845 */;
-import AttachmentConstants from "AttachmentConstants" /* 14792 */;
+import AttachmentConstants from "AttachmentConstants" /* 14789 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

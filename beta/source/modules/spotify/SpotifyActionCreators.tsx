@@ -89,7 +89,7 @@ function apiRequest(fn, arg1, arg2, arg3) {
                 let tmp2 = closure_2_0;
                 let obj = closure_2_0(tmp8[3]);
                 let timeoutPromiseResult = obj.timeoutPromise(num2);
-                return timeoutPromiseResult.then(f129211);
+                return timeoutPromiseResult.then(f129226);
               }
             }
             return Promise.reject(error);
@@ -108,7 +108,7 @@ function apiRequest(fn, arg1, arg2, arg3) {
           const catchPromise = value.catch(f101809);
           return catchPromise.then(f101810);
         });
-        let nextPromise1 = nextPromise.then(f129209);
+        let nextPromise1 = nextPromise.then(f129224);
         nextPromise2 = nextPromise1.then((result) => {
           closure_0 = result;
           const promise = new Promise((arg0) => {
@@ -171,7 +171,7 @@ export function getAccessToken(id) {
         let tmp2 = closure_2_0;
         let obj = closure_2_0(tmp8[3]);
         let timeoutPromiseResult = obj.timeoutPromise(num2);
-        return timeoutPromiseResult.then(f129211);
+        return timeoutPromiseResult.then(f129226);
       }
     }
     return Promise.reject(error);
@@ -205,7 +205,7 @@ export function subscribePlayerStateNotifications(accountId, accessToken, connec
       let obj = closure_2_0(connection_id[3]);
       let num = 5000;
       let timeoutPromiseResult = obj.timeoutPromise(5000);
-      rejectResult = timeoutPromiseResult.then(f129212);
+      rejectResult = timeoutPromiseResult.then(f129227);
     }
     return rejectResult;
   };

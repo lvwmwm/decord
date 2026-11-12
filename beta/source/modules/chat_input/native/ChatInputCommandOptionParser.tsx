@@ -351,7 +351,7 @@ export function getEmojiHighlightNodes(channel, arg1) {
   }
 }
 export function getUsernameHighlightNodes(channel, arg1) {
-  const f139912 = (text) => _require(text.text) === closure_0;
+  const f139931 = (text) => _require(text.text) === closure_0;
   const items = [];
   const obj = ApplicationCommandOptionValueParser;
   const users = obj.getUsers(channel);
@@ -362,7 +362,7 @@ export function getUsernameHighlightNodes(channel, arg1) {
     do {
       let str = match[1];
       let closure_0 = str.trim();
-      if (null != users.find(f139912)) {
+      if (null != users.find(f139931)) {
         let obj3 = { location: match.index, length: match[0].length };
         let arr = items.push(obj3);
       }
@@ -376,7 +376,7 @@ export function getUsernameHighlightNodes(channel, arg1) {
     do {
       let str2 = match1[1];
       closure_0 = str2.trim();
-      if (null != users.find(f139912)) {
+      if (null != users.find(f139931)) {
         let obj5 = { location: match1.index, length: match1[0].length };
         let arr2 = items.push(obj5);
       }

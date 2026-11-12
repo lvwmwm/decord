@@ -1,10 +1,10 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14661
+// Function ID: 14662
 // Name: getConjureAppSoundButton
 // Dependencies: [1113, 4026, 8777, 12148, 11093, 2]
 // Exports: default
 
-// Module 14664 (getConjureAppSoundButton)
+// Module 14661 (getConjureAppSoundButton)
 import _modDef4026 from "module_4026" /* 4026 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 11093 */;
 import size from "module_2" /* 2 */;

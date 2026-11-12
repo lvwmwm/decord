@@ -1,9 +1,9 @@
-// Module ID: 16964
-// Function ID: 16965
+// Module ID: 16961
+// Function ID: 16962
 // Name: AccountEmailSetting
 // Dependencies: [1385, 8536, 504, 7094, 11717, 1113, 2]
 
-// Module 16964 (AccountEmailSetting)
+// Module 16961 (AccountEmailSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7094 */;

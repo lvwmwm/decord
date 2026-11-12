@@ -1,9 +1,9 @@
-// Module ID: 19347
-// Function ID: 19348
+// Module ID: 19344
+// Function ID: 19345
 // Name: IconLabelBlock
 // Dependencies: [109, 19, 17, 21, 5170, 575, 5231, 1187, 5783, 10300, 5874, 5177, 2]
 
-// Module 19347 (IconLabelBlock)
+// Module 19344 (IconLabelBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

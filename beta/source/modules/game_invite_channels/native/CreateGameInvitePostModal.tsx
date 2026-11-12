@@ -1,10 +1,10 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 14648
+// Function ID: 14649
 // Name: CreateGameInvitePostModal
-// Dependencies: [32, 19, 17, 5019, 7939, 21, 5170, 575, 7420, 504, 7103, 14650, 5767, 14652, 5917, 5406, 11303, 2118, 1113, 7076, 7153, 5783, 3962, 7349, 7550, 7159, 7071, 7462, 14014, 5790, 2]
+// Dependencies: [32, 19, 17, 5019, 7939, 21, 5170, 575, 7420, 504, 7103, 14647, 5767, 14649, 5917, 5406, 11303, 2118, 1113, 7076, 7153, 5783, 3962, 7349, 7550, 7159, 7071, 7462, 14014, 5790, 2]
 // Exports: default
 
-// Module 14651 (CreateGameInvitePostModal)
+// Module 14648 (CreateGameInvitePostModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -82,7 +82,7 @@ function CreateGameInvitePostContent(parentChannel) {
     set = new Set(first.map((id) => id.id));
     return set;
   }, items);
-  let obj = parentChannel(14652);
+  let obj = parentChannel(14649);
   let obj2 = {
     parentChannel,
     description: tmp5,

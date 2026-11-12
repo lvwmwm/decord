@@ -1,10 +1,10 @@
-// Module ID: 14367
-// Function ID: 14368
+// Module ID: 14363
+// Function ID: 14364
 // Name: GuildPowerupsBottomSheet
-// Dependencies: [17, 5171, 5378, 5379, 21, 5170, 575, 14347, 14343, 14368, 14369, 504, 14370, 5317, 14372, 5783, 14373, 14375, 14376, 5891, 1113, 2696, 14362, 14382, 5381, 9190, 14383, 14384, 14388, 14393, 14394, 5790, 14392, 5420, 2]
+// Dependencies: [17, 5171, 5378, 5379, 21, 5170, 575, 14347, 14343, 14364, 14365, 504, 14366, 5317, 14368, 5783, 14369, 14371, 14372, 5891, 1113, 2696, 14358, 14378, 5381, 9190, 14379, 14380, 14384, 14389, 14390, 5790, 14388, 5420, 2]
 // Exports: default
 
-// Module 14367 (GuildPowerupsBottomSheet)
+// Module 14363 (GuildPowerupsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,14 +18,14 @@ import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
 import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 14343 */;
 import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14347 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14362 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14368 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14369 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14373 */;
-import useGuildPowerupLevelPerksDefault from "useGuildPowerupLevelPerks" /* 14375 */;
-import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 14376 */;
-import useGuildPowerupCardFooterConfigDefault from "useGuildPowerupCardFooterConfig" /* 14382 */;
-import GuildPowerupAnalytics from "GuildPowerupAnalytics" /* 14392 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14358 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14364 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14365 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14369 */;
+import useGuildPowerupLevelPerksDefault from "useGuildPowerupLevelPerks" /* 14371 */;
+import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 14372 */;
+import useGuildPowerupCardFooterConfigDefault from "useGuildPowerupCardFooterConfig" /* 14378 */;
+import GuildPowerupAnalytics from "GuildPowerupAnalytics" /* 14388 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5378 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,10 +47,10 @@ let obj7;
 let obj8;
 let obj9;
 let tmp2;
-const useCanGuildPowerupBeToggledDefault = tmp2(14383);
-const useGuildPowerupOnActivateDefault = tmp2(14384);
-const useGuildPowerupOnShowDeactivateDefault = tmp2(14388);
-const GuildPowerupsDisabledWarningDefault = tmp2(14394);
+const useCanGuildPowerupBeToggledDefault = tmp2(14379);
+const useGuildPowerupOnActivateDefault = tmp2(14380);
+const useGuildPowerupOnShowDeactivateDefault = tmp2(14384);
+const GuildPowerupsDisabledWarningDefault = tmp2(14390);
 function GuildPowerupsBottomSheetHeader(arg0) {
   let guildId;
   let items1;
@@ -81,7 +81,7 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   }
   if (powerup.type === hasOwnProperty.LEVEL) {
     const obj2 = { style: tmp.gemContainer };
-    tmp15 = metroImportAll(tmp2(14370), obj2);
+    tmp15 = metroImportAll(tmp2(14366), obj2);
     tmp14 = metroImportAll;
   } else if (tmp10 === tmp9) {
     const obj3 = { style: tmp.image, children: metroImportAll(GameServerHostingRive.GameServerHostingRive, obj4) };
@@ -92,7 +92,7 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   } else {
     tmp14 = metroImportAll;
     const obj6 = { imageUrl: str, style: tmp.image, isAnimated: true };
-    tmp15 = metroImportAll(tmp2(14372), obj6);
+    tmp15 = metroImportAll(tmp2(14368), obj6);
   }
   const obj7 = { children: items1 };
   items1 = [tmp15, ];

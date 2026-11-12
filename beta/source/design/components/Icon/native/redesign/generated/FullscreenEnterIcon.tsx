@@ -1,14 +1,14 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 17307
+// Function ID: 17308
 // Name: FullscreenEnterIcon
-// Dependencies: [19, 21, 575, 5873, 17311, 2]
+// Dependencies: [19, 21, 575, 5873, 17308, 2]
 // Exports: FullscreenEnterIcon
 
-// Module 17310 (FullscreenEnterIcon)
+// Module 17307 (FullscreenEnterIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 17311 */;
+import AssetRegistry from "AssetRegistry" /* 17308 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

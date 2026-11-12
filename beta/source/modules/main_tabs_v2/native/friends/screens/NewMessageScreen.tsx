@@ -1,10 +1,10 @@
-// Module ID: 19232
-// Function ID: 19233
+// Module ID: 19229
+// Function ID: 19230
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 5023, 5019, 5112, 7492, 10878, 1072, 21, 1652, 5783, 5170, 575, 1377, 7582, 7493, 572, 504, 1252, 19233, 5402, 19234, 9935, 1113, 11386, 12596, 7420, 7445, 5767, 5753, 11821, 11819, 11818, 9947, 1099, 11822, 5868, 11140, 11139, 5878, 5877, 13667, 5790, 14182, 19171, 2]
+// Dependencies: [5, 32, 19, 17, 5023, 5019, 5112, 7492, 10878, 1072, 21, 1652, 5783, 5170, 575, 1377, 7582, 7493, 572, 504, 1252, 19230, 5402, 19231, 9935, 1113, 11386, 12596, 7420, 7445, 5767, 5753, 11821, 11819, 11818, 9947, 1099, 11822, 5868, 11140, 11139, 5878, 5877, 13667, 5790, 14182, 19168, 2]
 // Exports: default
 
-// Module 19232 (NewMessageScreen)
+// Module 19229 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -28,8 +28,8 @@ import GroupPlusIcon from "GroupPlusIcon" /* 11139 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11140 */;
 import ChatViewDefault from "ChatView" /* 11386 */;
 import NoResultsDefault from "NoResults" /* 13667 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 19233 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19234 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 19230 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19231 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -60,7 +60,7 @@ let tmp2;
 const getGroupDMRecipientLimitDefault = tmp2(11819);
 const GroupDMNitroCapExperimentDefault = tmp2(11821);
 const NewMessageUserListDefault = tmp2(14182);
-const GroupDMNitroUpsellBannerDefault = tmp2(19171);
+const GroupDMNitroUpsellBannerDefault = tmp2(19168);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -523,9 +523,9 @@ export default function NewMessageScreen(navigation) {
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "onPress" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" } };
           obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(closure_1_2[18]);
-          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "onPress" });
+          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" });
           obj.dispatch(obj2);
         };
       }

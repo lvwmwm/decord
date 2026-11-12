@@ -1,9 +1,9 @@
-// Module ID: 18128
-// Function ID: 18129
+// Module ID: 18125
+// Function ID: 18126
 // Name: DesignSystemsTextSetting
-// Dependencies: [8536, 1072, 11717, 18129, 2]
+// Dependencies: [8536, 1072, 11717, 18126, 2]
 
-// Module 18128 (DesignSystemsTextSetting)
+// Module 18125 (DesignSystemsTextSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;

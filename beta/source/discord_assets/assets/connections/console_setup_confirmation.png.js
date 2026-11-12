@@ -1,8 +1,8 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 14894
+// Function ID: 14895
 // Dependencies: [2]
 
-// Module 14897
+// Module 14894
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/connections/console_setup_confirmation.png.js");

@@ -1,7 +1,7 @@
 // Module ID: 20420
 // Function ID: 20421
 // Name: GuildRoleSubscriptionBenefitTableRow
-// Dependencies: [19, 17, 17554, 21, 5170, 575, 17580, 5808, 5783, 1113, 17591, 7071, 17588, 2]
+// Dependencies: [19, 17, 17551, 21, 5170, 575, 17577, 5808, 5783, 1113, 17588, 7071, 17585, 2]
 // Exports: default
 
 // Module 20420 (GuildRoleSubscriptionBenefitTableRow)
@@ -10,10 +10,10 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import TableRow2 from "TableRow" /* 7071 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17554 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17580 */;
-import EmojiIconDefault from "EmojiIcon" /* 17588 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17591 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17551 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17577 */;
+import EmojiIconDefault from "EmojiIcon" /* 17585 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17588 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

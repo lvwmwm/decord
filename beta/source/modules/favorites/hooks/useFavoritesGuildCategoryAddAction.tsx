@@ -1,13 +1,13 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 14666
+// Function ID: 14667
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 1072, 14670, 5044, 1113, 3608, 2]
+// Dependencies: [19, 1072, 14667, 5044, 1113, 3608, 2]
 // Exports: default
 
-// Module 14669 (useFavoritesGuildCategoryAddAction)
+// Module 14666 (useFavoritesGuildCategoryAddAction)
 import Constants from "Constants" /* 1072 */;
 import _modDef3608 from "module_3608" /* 3608 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 14670 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 14667 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

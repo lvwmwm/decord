@@ -1,10 +1,10 @@
-// Module ID: 18179
-// Function ID: 18180
+// Module ID: 18176
+// Function ID: 18177
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1072, 21, 5170, 7459, 7415, 9123, 7460, 6191, 7181, 7461, 5406, 5790, 1113, 10988, 18180, 7073, 5783, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5170, 7459, 7415, 9123, 7460, 6191, 7181, 7461, 5406, 5790, 1113, 10988, 18177, 7073, 5783, 2]
 // Exports: default
 
-// Module 18179 (UserSettingsDesignSystemSheets)
+// Module 18176 (UserSettingsDesignSystemSheets)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
@@ -18,7 +18,7 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7415 */;
 import ActionSheet2 from "ActionSheet" /* 7459 */;
 import ActionSheetRow from "ActionSheetRow" /* 7461 */;
 import PromoSheet2 from "PromoSheet" /* 10988 */;
-import _modDef18180 from "module_18180" /* 18180 */;
+import _modDef18177 from "module_18177" /* 18177 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -129,7 +129,7 @@ function DemoPromoSheet() {
   intl = intl2.intl;
   const obj2 = { graphic: obj3, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp };
   obj3 = { type: "image", src: obj4, aspectRatio: "16/9" };
-  obj4 = { uri: _modDef18180 };
+  obj4 = { uri: _modDef18177 };
   tmp = metroImportDefault(Button, obj);
   const PromoSheet = PromoSheet2.PromoSheet;
   return metroImportDefault(PromoSheet, obj2);

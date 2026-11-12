@@ -1,7 +1,7 @@
 // Module ID: 9057
 // Function ID: 9058
 // Name: getOnClick
-// Dependencies: [32, 5, 2162, 6943, 7503, 502, 5082, 5041, 5906, 6226, 5073, 5203, 6860, 1072, 1074, 7504, 572, 5907, 9058, 9079, 2118, 6990, 7518, 9074, 5905, 5909, 7943, 5862, 1252, 13972, 11882, 15021, 11886, 7944, 15025, 11740, 10820, 9797, 1378, 9802, 6874, 15026, 7828, 5921, 5810, 8815, 11807, 2]
+// Dependencies: [32, 5, 2162, 6943, 7503, 502, 5082, 5041, 5906, 6226, 5073, 5203, 6860, 1072, 1074, 7504, 572, 5907, 9058, 9079, 2118, 6990, 7518, 9074, 5905, 5909, 7943, 5862, 1252, 13972, 11882, 15018, 11886, 7944, 15022, 11740, 10820, 9797, 1378, 9802, 6874, 15023, 7828, 5921, 5810, 8815, 11807, 2]
 // Exports: default
 
 // Module 9057 (getOnClick)
@@ -337,7 +337,7 @@ export default function getOnClick(assetURL) {
         openURLDefault(assetURL);
         return true;
       }
-      result = { applicationId: code, skuId: "r" };
+      result = { applicationId: code, skuId: "flexDirection" };
     };
   }
   if (null != findCodedLinkResult) {
@@ -414,7 +414,7 @@ export default function getOnClick(assetURL) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(15025, dependencyMap.paths);
+        const promise = asyncRequire(15022, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });

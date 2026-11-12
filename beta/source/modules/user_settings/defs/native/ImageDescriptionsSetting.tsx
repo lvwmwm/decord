@@ -1,14 +1,14 @@
-// Module ID: 17814
-// Function ID: 17815
+// Module ID: 17811
+// Function ID: 17812
 // Name: ImageDescriptionsSetting
-// Dependencies: [1194, 8536, 4995, 17815, 11717, 1113, 2]
+// Dependencies: [1194, 8536, 4995, 17812, 11717, 1113, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 17814 (ImageDescriptionsSetting)
+// Module 17811 (ImageDescriptionsSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import UserSettingsText from "UserSettingsText" /* 17815 */;
+import UserSettingsText from "UserSettingsText" /* 17812 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;

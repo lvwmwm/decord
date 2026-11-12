@@ -1,10 +1,10 @@
-// Module ID: 18879
-// Function ID: 18880
+// Module ID: 18876
+// Function ID: 18877
 // Name: ForYouMentionPlaceholder
 // Dependencies: [19, 17, 5171, 21, 5170, 575, 504, 1652, 5402, 2]
 // Exports: ForYouMentionPlaceholder
 
-// Module 18879 (ForYouMentionPlaceholder)
+// Module 18876 (ForYouMentionPlaceholder)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;

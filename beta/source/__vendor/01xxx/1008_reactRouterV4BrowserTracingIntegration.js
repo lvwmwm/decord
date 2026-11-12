@@ -12,11 +12,11 @@ import react from "react" /* 19 */;
 
 let _require, activeSpan, attr, computedMatch, createElement, currentScope, dependencyMap, isExact, obj1, op, rootSpan, setTransactionNameResult, str2, str3, tmp2Result, tmp2Result1, tmp2Result2, tmp3, updateNameResult;
 
-function instrumentReactRouter(f122891, arg1, arg2, location, reactrouter_v4, arg5, arg6) {
+function instrumentReactRouter(f122906, arg1, arg2, location, reactrouter_v4, arg5, arg6) {
   let obj2;
   let tmp5;
   let tmp6;
-  _require = f122891;
+  _require = f122906;
   dependencyMap = reactrouter_v4;
   let items = arg5;
   if (arg5 === undefined) {
@@ -69,7 +69,7 @@ function instrumentReactRouter(f122891, arg1, arg2, location, reactrouter_v4, ar
       const tmp9 = require("feedbackAsyncIntegration");
       obj2[require("module_681").SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.pageload.react." + reactrouter_v4;
       obj2[require("module_681").SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = tmp6;
-      let result = startBrowserTracingPageLoadSpan(f122891, obj);
+      let result = startBrowserTracingPageLoadSpan(f122906, obj);
     }
   }
   const tmp12 = arg2 && location.listen;
@@ -145,9 +145,9 @@ export function reactRouterV4BrowserTracingIntegration(instrumentNavigation) {
   instrumentNavigation = instrumentNavigation.instrumentNavigation;
   let closure_5 = undefined === instrumentNavigation || instrumentNavigation;
   const obj2 = {
-    afterAllSetup(f122891) {
-      require.afterAllSetup(f122891);
-      instrumentReactRouter(f122891, closure_4, closure_5, dependencyMap, "reactrouter_v4", _slicedToArray, react);
+    afterAllSetup(f122906) {
+      require.afterAllSetup(f122906);
+      instrumentReactRouter(f122906, closure_4, closure_5, dependencyMap, "reactrouter_v4", _slicedToArray, react);
     }
   };
   const merged1 = Object.assign(result);
@@ -166,9 +166,9 @@ export function reactRouterV5BrowserTracingIntegration(instrumentNavigation) {
   instrumentNavigation = instrumentNavigation.instrumentNavigation;
   let closure_5 = undefined === instrumentNavigation || instrumentNavigation;
   const obj2 = {
-    afterAllSetup(f122891) {
-      require.afterAllSetup(f122891);
-      instrumentReactRouter(f122891, closure_4, closure_5, dependencyMap, "reactrouter_v5", _slicedToArray, react);
+    afterAllSetup(f122906) {
+      require.afterAllSetup(f122906);
+      instrumentReactRouter(f122906, closure_4, closure_5, dependencyMap, "reactrouter_v5", _slicedToArray, react);
     }
   };
   const merged1 = Object.assign(result);

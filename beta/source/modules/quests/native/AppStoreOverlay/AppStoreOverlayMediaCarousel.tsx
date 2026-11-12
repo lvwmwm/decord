@@ -1,15 +1,15 @@
-// Module ID: 14939
-// Function ID: 14940
+// Module ID: 14936
+// Function ID: 14937
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 5171, 1083, 21, 575, 5170, 14940, 14941, 1113, 5874, 504, 8980, 9496, 7972, 7981, 5452, 2]
+// Dependencies: [32, 19, 17, 5171, 1083, 21, 575, 5170, 14937, 14938, 1113, 5874, 504, 8980, 9496, 7972, 7981, 5452, 2]
 // Exports: default
 
-// Module 14939 (AppStoreOverlayMediaCarousel)
+// Module 14936 (AppStoreOverlayMediaCarousel)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import AnalyticsActions from "AnalyticsActions" /* 7972 */;
-import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 14940 */;
-import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 14941 */;
+import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 14937 */;
+import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 14938 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

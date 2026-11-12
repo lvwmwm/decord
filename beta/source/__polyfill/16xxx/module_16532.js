@@ -1,15 +1,16 @@
 // Module ID: 16532
 // Function ID: 16533
-// Dependencies: [16480, 16499, 16489]
+// Dependencies: [16496, 16470]
 
 // Module 16532
-import _mod16480 from "module_16480" /* 16480 */;
-import _mod16489 from "module_16489" /* 16489 */;
-import module_16499 from "module_16499" /* 16499 */;
+import _mod16470 from "module_16470" /* 16470 */;
+import module_16496 from "module_16496" /* 16496 */;
 
-let closure_0 = _mod16480(Function.toString);
-if (!module_16499(_mod16489.inspectSource)) {
-  _mod16489.inspectSource = (arg0) => closure_0(arg0);
+let _moduleResult = module_16496(_mod16470.WeakMap);
+if (_moduleResult) {
+  const _String = String;
+  const obj = /native code/;
+  _moduleResult = obj.test(String(_mod16470.WeakMap));
 }
 
-export default _mod16489.inspectSource;
+export default _moduleResult;

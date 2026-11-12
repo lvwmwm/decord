@@ -1,7 +1,7 @@
 // Module ID: 19983
 // Function ID: 19984
 // Name: AddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8835, 1072, 21, 5170, 575, 5746, 6810, 1627, 504, 16795, 19984, 8844, 8928, 8323, 8839, 8841, 5783, 1113, 19993, 1187, 5790, 19981, 1260, 7663, 7097, 7264, 2]
+// Dependencies: [5, 32, 19, 17, 8835, 1072, 21, 5170, 575, 5746, 6810, 1627, 504, 16792, 19984, 8844, 8928, 8323, 8839, 8841, 5783, 1113, 19993, 1187, 5790, 19981, 1260, 7663, 7097, 7264, 2]
 
 // Module 19983 (AddAvatarModal)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import Navigator from "Navigator" /* 7264 */;
 import RecentAvatarUtils from "RecentAvatarUtils" /* 8844 */;
 import VideoBackground from "VideoBackground" /* 8928 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 16795 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 16792 */;
 import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19981 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -149,7 +149,7 @@ function AddAvatarScreen() {
   const stateFromStores = obj.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != selectedAvatar) {
     let obj2 = { imageUri: tmp9(19984).DEFAULT_AVATARS[selectedAvatar], description: tmp9Result3.generateAvatarDescription() };
-    let createPendingImage = tmp9(16795).createPendingImage;
+    let createPendingImage = tmp9(16792).createPendingImage;
     ProfilePendingImageUtils;
     tmp9Result3 = RecentAvatarUtils;
     pendingImage = createPendingImage(obj2);

@@ -1,7 +1,7 @@
 // Module ID: 19749
 // Function ID: 19750
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 11395, 21, 5170, 575, 1652, 19615, 1377, 5793, 5402, 2]
+// Dependencies: [19, 17, 11395, 21, 5170, 575, 1652, 19612, 1377, 5793, 5402, 2]
 // Exports: default
 
 // Module 19749 (VoicePanelAnimatedButtonWrapper)

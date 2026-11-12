@@ -1,7 +1,7 @@
 // Module ID: 9947
 // Function ID: 9948
 // Name: ChannelActions
-// Dependencies: [19, 17, 6949, 5023, 5019, 5835, 9948, 1072, 9949, 21, 5170, 9951, 8747, 9952, 1113, 9986, 575, 9988, 8777, 9990, 9991, 9997, 504, 7540, 9998, 9999, 7550, 14820, 14822, 8041, 14832, 7316, 14114, 9993, 1377, 5355, 14113, 14173, 11715, 1108, 5347, 11863, 8749, 11158, 14833, 14823, 6821, 14834, 14835, 2]
+// Dependencies: [19, 17, 6949, 5023, 5019, 5835, 9948, 1072, 9949, 21, 5170, 9951, 8747, 9952, 1113, 9986, 575, 9988, 8777, 9990, 9991, 9997, 504, 7540, 9998, 9999, 7550, 14817, 14819, 8041, 14829, 7316, 14114, 9993, 1377, 5355, 14113, 14173, 11715, 1108, 5347, 11863, 8749, 11158, 14830, 14820, 6821, 14831, 14832, 2]
 // Exports: default
 
 // Module 9947 (ChannelActions)
@@ -23,9 +23,9 @@ import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11715 */;
 import useSearchContext from "useSearchContext" /* 14113 */;
 import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14114 */;
 import TrackingDefault from "Tracking" /* 14173 */;
-import IconActionButtonDefault from "IconActionButton" /* 14823 */;
-import ConversationCoachmark from "ConversationCoachmark" /* 14833 */;
-import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14835 */;
+import IconActionButtonDefault from "IconActionButton" /* 14820 */;
+import ConversationCoachmark from "ConversationCoachmark" /* 14830 */;
+import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14832 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6949 */;
 import ChannelRecord from "ChannelRecord" /* 5023 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
@@ -435,7 +435,7 @@ export default function ChannelActions(channelId) {
   const tmp5 = View;
   if (obj2.useHasForumSearchQuery(channelId)) {
     const obj4 = { channelId };
-    tmp4Result = tmp4(tmp(14834).ForumChannelCloseSearchButton, obj4);
+    tmp4Result = tmp4(tmp(14831).ForumChannelCloseSearchButton, obj4);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {

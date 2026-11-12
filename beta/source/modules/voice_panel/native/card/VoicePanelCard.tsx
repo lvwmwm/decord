@@ -1,7 +1,7 @@
 // Module ID: 19674
 // Function ID: 19675
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 6223, 6801, 5925, 6844, 11395, 11393, 19524, 11398, 1072, 5837, 11396, 21, 1652, 5783, 5747, 1187, 5170, 575, 504, 8011, 6804, 7056, 1113, 5790, 11394, 1705, 11953, 5950, 15161, 11955, 11952, 19675, 11962, 19520, 15139, 5402, 5793, 9639, 19676, 5874, 5756, 19678, 12646, 10242, 5231, 7420, 19613, 19654, 19523, 19679, 19680, 8854, 5452, 6037, 19681, 11397, 19682, 19683, 19684, 19685, 19686, 19687, 19697, 2]
+// Dependencies: [32, 19, 17, 6223, 6801, 5925, 6844, 11395, 11393, 19521, 11398, 1072, 5837, 11396, 21, 1652, 5783, 5747, 1187, 5170, 575, 504, 8011, 6804, 7056, 1113, 5790, 11394, 1705, 11953, 5950, 15158, 11955, 11952, 19675, 11962, 19517, 15136, 5402, 5793, 9639, 19676, 5874, 5756, 19678, 12646, 10242, 5231, 7420, 19610, 19654, 19520, 19679, 19680, 8854, 5452, 6037, 19681, 11397, 19682, 19683, 19684, 19685, 19686, 19687, 19697, 2]
 
 // Module 19674 (VoicePanelCard)
 import get_initialized from "get initialized" /* 504 */;
@@ -23,7 +23,7 @@ import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 *
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11396 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11398 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19524 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19521 */;
 import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19676 */;
 import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 19678 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -1886,7 +1886,7 @@ const memoResult = react.memo(function VoicePanelCard(cleanUp) {
   VoicePanelCardTsx22.__workletHash = 8849523770324;
   VoicePanelCardTsx22.__initData = tmp24;
   const derivedValue = tmp5Result14.useDerivedValue(VoicePanelCardTsx22);
-  const tmp5Result15 = id2(19613);
+  const tmp5Result15 = id2(19610);
   const pIPState = tmp5Result15.usePIPState();
   let scale = pIPState.scale;
   const tmp5Result16 = id2(1652);
@@ -2016,7 +2016,8 @@ const memoResult = react.memo(function VoicePanelCard(cleanUp) {
       tmp43 = closure_22;
     }
   }
-  tmp42 = closure_22(closure_40, { isRinging: tmp8, avatarURI: "a", avatarDecoration: "isArray", layout: callback, layoutPhysics: memo, channelId });
+  const obj12 = { isRinging: tmp8, avatarURI: "a", avatarDecoration: "isArray", layout: callback, layoutPhysics: memo, channelId };
+  tmp42 = closure_22(closure_40, obj12);
   tmp43 = closure_22;
 });
 size = size_mod;

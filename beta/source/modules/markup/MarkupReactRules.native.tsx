@@ -1,7 +1,7 @@
 // Module ID: 5912
 // Function ID: 5913
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 5171, 5019, 5076, 1072, 5026, 1083, 21, 575, 5913, 5783, 5170, 5917, 5810, 5347, 6831, 8854, 6122, 1113, 7451, 5868, 7053, 1187, 1378, 9052, 5866, 10279, 10334, 8675, 504, 5167, 8523, 5406, 11810, 2118, 11, 4995, 5874, 11854, 11783, 16005, 16007, 5883, 11766, 16009, 11675, 6196, 1377, 6198, 8707, 11215, 11220, 2]
+// Dependencies: [19, 17, 5171, 5019, 5076, 1072, 5026, 1083, 21, 575, 5913, 5783, 5170, 5917, 5810, 5347, 6831, 8854, 6122, 1113, 7451, 5868, 7053, 1187, 1378, 9052, 5866, 10279, 10334, 8675, 504, 5167, 8523, 5406, 11810, 2118, 11, 4995, 5874, 11854, 11783, 16002, 16004, 5883, 11766, 16006, 11675, 6196, 1377, 6198, 8707, 11215, 11220, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5912 (MarkupReactRules)
@@ -633,7 +633,7 @@ function MarkupStaticRouteLink(state) {
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_16();
-  let SignPostIcon = state(16005).SignPostIcon;
+  let SignPostIcon = state(16002).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
@@ -644,7 +644,7 @@ function MarkupStaticRouteLink(state) {
           }
         }
       }
-      SignPostIcon = tmp2(16007).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(16004).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -718,7 +718,7 @@ function MarkupStaticRouteLink(state) {
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(16005).SignPostIcon;
+  SignPostIcon = tmp2(16002).SignPostIcon;
 }
 function MarkupAttachmentLink(state) {
   let SMALL;
@@ -744,7 +744,7 @@ function MarkupAttachmentLink(state) {
     str2 = "body-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(16009), size: SMALL };
+  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(16006), size: SMALL };
   const ThemedIcon = tmp3(1187).ThemedIcon;
   const fontScale = closure_4.getFontScale();
   if (fontScale < 1) {
@@ -823,7 +823,7 @@ let style = { unicodeEmoji: obj2, emoji: { width: EMOJI_CHAT_SIZE, height: EMOJI
 obj2 = { transform: items };
 let obj3 = { translateY: nativeDefault.space.PX_4 };
 items = [obj3];
-obj4 = { color: Spoiler.SPOILER_HIDDEN_TEXT_COLOR, backgroundColor: "r" };
+obj4 = { color: Spoiler.SPOILER_HIDDEN_TEXT_COLOR, backgroundColor: "flexDirection" };
 let createStyles = createStyles_mod;
 let obj5 = { link: obj6, channelMention: obj7, channelMentionText: obj8, mention: obj9, inlineCode: obj10, codeBlock: obj11, blockQuote: obj12 };
 obj6 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.TEXT_LINK };

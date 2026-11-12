@@ -1,10 +1,10 @@
-// Module ID: 18234
-// Function ID: 18235
+// Module ID: 18231
+// Function ID: 18232
 // Name: useCardLayout
 // Dependencies: [32, 19, 9573, 1493, 2]
 // Exports: useCardLayout
 
-// Module 18234 (useCardLayout)
+// Module 18231 (useCardLayout)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ export function useCardLayout() {
   let ref;
   let result4;
   let tmp3;
-  const f115200 = () => {
+  const f115196 = () => {
     const obj = ref(dependencyMap[3]);
     return obj.getWindowDimensions().width;
   };
@@ -34,8 +34,8 @@ export function useCardLayout() {
     }
     tmp.current = nativeScrollRef;
   }, []);
-  [tmp3, dependencyMap] = _slicedToArray(react.useState(f115200), 2);
-  const tmp2 = _slicedToArray(react.useState(f115200), 2);
+  [tmp3, dependencyMap] = _slicedToArray(react.useState(f115196), 2);
+  const tmp2 = _slicedToArray(react.useState(f115196), 2);
   const layoutEffect = react.useLayoutEffect(() => {
     const current = ref.current;
     if (current != null) {
@@ -57,7 +57,7 @@ export function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    return { columns: num, cardWidth: "r", rowWidth: "isArray", ref: callback, onLayout: callback1 };
+    return { columns: num, cardWidth: "r", rowWidth: "add", ref: callback, onLayout: callback1 };
   } else {
     let bound;
     let num2 = 2;

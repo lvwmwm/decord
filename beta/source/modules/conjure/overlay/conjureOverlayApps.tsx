@@ -1,10 +1,10 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 15914
+// Function ID: 15915
 // Name: conjureOverlayApps
 // Dependencies: [6933, 2]
 // Exports: isConjureOverlayApp, isConjureServerOverlayApp
 
-// Module 15917 (conjureOverlayApps)
+// Module 15914 (conjureOverlayApps)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
 import size from "module_2" /* 2 */;
 

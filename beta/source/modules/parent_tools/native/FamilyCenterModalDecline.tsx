@@ -1,10 +1,10 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17181
+// Function ID: 17182
 // Name: FamilyCenterModalDecline
-// Dependencies: [19, 17, 21, 5170, 575, 8474, 6831, 5868, 1113, 13623, 38, 8074, 8076, 17180, 8462, 5783, 2664, 17148, 13484, 6855, 5790, 7097, 11659, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 8474, 6831, 5868, 1113, 13623, 38, 8074, 8076, 17177, 8462, 5783, 2664, 17145, 13484, 6855, 5790, 7097, 11659, 2]
 // Exports: default
 
-// Module 17184 (FamilyCenterModalDecline)
+// Module 17181 (FamilyCenterModalDecline)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
@@ -62,13 +62,13 @@ function FamilyCenterModalDeclineScreen(otherUser) {
   const obj4 = { style: tmp.header, children: items1 };
   const ModalContent = otherUser(8076).ModalContent;
   const obj5 = { otherUser, iconSrc: declineLinkRequest(8462) };
-  const tmp8 = declineLinkRequest(17180);
+  const tmp8 = declineLinkRequest(17177);
   items1 = [closure_5(tmp8, obj5), , ];
   const obj6 = { style: tmp.headerText, variant: "body-lg/semibold", children: intl.string(declineLinkRequest(2664).teIRCR) };
   const Text = otherUser(5783).Text;
   intl = otherUser(1113).intl;
   items1[1] = closure_5(Text, obj6);
-  items1[2] = closure_5(declineLinkRequest(17148), { user: otherUser });
+  items1[2] = closure_5(declineLinkRequest(17145), { user: otherUser });
   items2 = [closure_6(View, obj4), ];
   const obj7 = { style: tmp.body, children: items3 };
   const obj8 = { style: tmp.noticeHeader, variant: "body-sm/medium", color: "mobile-text-heading-primary", children: intl2.string(declineLinkRequest(2664).cXgKMD) };

@@ -1,10 +1,10 @@
-// Module ID: 17282
-// Function ID: 17283
+// Module ID: 17279
+// Function ID: 17280
 // Name: useBountiesRecapScroll
 // Dependencies: [19, 2]
 // Exports: useBountiesRecapScroll
 
-// Module 17282 (useBountiesRecapScroll)
+// Module 17279 (useBountiesRecapScroll)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

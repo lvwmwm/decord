@@ -1,7 +1,7 @@
 // Module ID: 9804
 // Function ID: 9805
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1385, 21, 5170, 575, 9802, 5406, 9805, 9823, 7960, 1113, 504, 5420, 6191, 14960, 5783, 2]
+// Dependencies: [19, 17, 1385, 21, 5170, 575, 9802, 5406, 9805, 9823, 7960, 1113, 504, 5420, 6191, 14957, 5783, 2]
 // Exports: default
 
 // Module 9804 (QuestRewardDetailsBottomSheet)
@@ -64,7 +64,7 @@ function QuestRewardDetailsBottomSheet(quest) {
   const Stack = quest(6191).Stack;
   const obj4 = { align: "center", direction: "horizontal", spacing: memo(575).space.PX_16, children: items3 };
   const Stack2 = quest(6191).Stack;
-  items3 = [closure_6(memo(14960), { quest, height: 56, width: 56, withAnimation: true }), ];
+  items3 = [closure_6(memo(14957), { quest, height: 56, width: 56, withAnimation: true }), ];
   const obj5 = { direction: "vertical", spacing: memo(575).space.PX_4, style: tmp.rewardDetailsCopy, children: items4 };
   const Stack3 = quest(6191).Stack;
   const obj6 = { variant: "body-sm/medium", color: "text-subtle", children: intl.string(quest(1113).t["jyYgZ+"]) };

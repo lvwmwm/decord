@@ -1,9 +1,9 @@
-// Module ID: 19465
-// Function ID: 19466
+// Module ID: 19462
+// Function ID: 19463
 // Name: PremiumTrialOfferActionSheetKillSwitchExperiment
 // Dependencies: [1449, 2]
 
-// Module 19465 (PremiumTrialOfferActionSheetKillSwitchExperiment)
+// Module 19462 (PremiumTrialOfferActionSheetKillSwitchExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

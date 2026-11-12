@@ -1,7 +1,7 @@
 // Module ID: 20416
 // Function ID: 20417
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 5019, 7376, 5041, 5102, 5112, 1385, 1072, 21, 5170, 575, 5808, 17591, 5406, 7160, 7071, 1627, 504, 1113, 5420, 7415, 7315, 7390, 11661, 6831, 9139, 2118, 9142, 9147, 5783, 2]
+// Dependencies: [32, 19, 17, 5019, 7376, 5041, 5102, 5112, 1385, 1072, 21, 5170, 575, 5808, 17588, 5406, 7160, 7071, 1627, 504, 1113, 5420, 7415, 7315, 7390, 11661, 6831, 9139, 2118, 9142, 9147, 5783, 2]
 // Exports: default
 
 // Module 20416 (ChannelSelectorActionSheet)
@@ -41,7 +41,7 @@ function ChannelRow(channel) {
   const onChannelSelected = channel.onChannelSelected;
   ({ selected, guild, start, end } = channel);
   let str = onChannelSelected(5808)(channel);
-  let obj = channel(17591);
+  let obj = channel(17588);
   const items = [onChannelSelected, channel];
   const channelIconComponentOrDefault = obj.getChannelIconComponentOrDefault(channel, guild);
   const callback = react.useCallback(() => {

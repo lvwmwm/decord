@@ -1,10 +1,10 @@
-// Module ID: 19289
-// Function ID: 19290
+// Module ID: 19286
+// Function ID: 19287
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [17, 13700, 21, 13701, 5406, 19290, 2118, 6602, 504, 7071, 1113, 3248, 13680, 2]
+// Dependencies: [17, 13700, 21, 13701, 5406, 19287, 2118, 6602, 504, 7071, 1113, 3248, 13680, 2]
 // Exports: default
 
-// Module 19289 (CheckpointProfileEntrypoint)
+// Module 19286 (CheckpointProfileEntrypoint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -25,7 +25,7 @@ function handlePress() {
 }
 function handleLongPress() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(19290, dependencyMap.paths), "CheckpointTestingActionSheet");
+  obj.openLazy(asyncRequire(19287, dependencyMap.paths), "CheckpointTestingActionSheet");
 }
 function CheckpointProfileEntrypointRow() {
   let isFetching;

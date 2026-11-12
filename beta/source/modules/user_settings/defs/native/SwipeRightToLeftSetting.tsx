@@ -1,9 +1,9 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17824
+// Function ID: 17825
 // Name: SwipeRightToLeftSetting
-// Dependencies: [8536, 1072, 4995, 1196, 1113, 11717, 17828, 2]
+// Dependencies: [8536, 1072, 4995, 1196, 1113, 11717, 17825, 2]
 
-// Module 17827 (SwipeRightToLeftSetting)
+// Module 17824 (SwipeRightToLeftSetting)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;

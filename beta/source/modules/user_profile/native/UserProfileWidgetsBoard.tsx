@@ -1,10 +1,10 @@
-// Module ID: 15238
-// Function ID: 15239
+// Module ID: 15235
+// Function ID: 15236
 // Name: UserProfileWidgetsBoard
-// Dependencies: [19, 17, 8858, 7884, 21, 5170, 575, 15239, 8865, 8131, 9692, 1113, 15243, 15250, 12, 12581, 6185, 12578, 15251, 5783, 7882, 15252, 15254, 15265, 15256, 15266, 7886, 12477, 7887, 15269, 15208, 2]
+// Dependencies: [19, 17, 8858, 7884, 21, 5170, 575, 15236, 8865, 8131, 9692, 1113, 15240, 15247, 12, 12581, 6185, 12578, 15248, 5783, 7882, 15249, 15251, 15262, 15253, 15263, 7886, 12477, 7887, 15266, 15205, 2]
 // Exports: default
 
-// Module 15238 (UserProfileWidgetsBoard)
+// Module 15235 (UserProfileWidgetsBoard)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,11 +12,11 @@ import react_native2 from "react-native" /* 6185 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7886 */;
 import Constants from "Constants" /* 8858 */;
 import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12477 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15239 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15243 */;
-import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 15254 */;
-import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 15256 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 15269 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15236 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15240 */;
+import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 15251 */;
+import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 15253 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 15266 */;
 import react from "react" /* 19 */;
 import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7884 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 14627
-// Function ID: 14628
+// Module ID: 14623
+// Function ID: 14624
 // Name: ChannelPrompt
 // Dependencies: [5, 32, 19, 17, 5100, 5041, 21, 5170, 5746, 504, 1499, 7097, 1113, 7582, 6611, 7388, 7053, 1411, 5783, 7180, 5790, 7211, 2]
 // Exports: default
 
-// Module 14627 (ChannelPrompt)
+// Module 14623 (ChannelPrompt)
 import intl5 from "intl" /* 1113 */;
 import NavigatorConstants from "NavigatorConstants" /* 5746 */;
 import NavigatorHeader from "NavigatorHeader" /* 7097 */;

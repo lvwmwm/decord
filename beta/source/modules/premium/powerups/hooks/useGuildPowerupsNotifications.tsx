@@ -1,7 +1,7 @@
 // Module ID: 14338
 // Function ID: 14339
 // Name: useGuildPowerupsNotifications
-// Dependencies: [32, 19, 8573, 5041, 14339, 5377, 5378, 1072, 5016, 8567, 14341, 14342, 5381, 14343, 1380, 5003, 5396, 8572, 14344, 5004, 563, 14340, 14348, 5383, 5382, 14354, 14355, 14356, 14357, 14359, 14335, 2]
+// Dependencies: [32, 19, 8573, 5041, 14339, 5377, 5378, 1072, 5016, 8567, 14341, 14342, 5381, 14343, 1380, 5003, 5396, 8572, 14344, 5004, 563, 14340, 14348, 5383, 5382, 14350, 14351, 14352, 14353, 14355, 14335, 2]
 // Exports: default, maybeGetGameServerHostingGuildEligiblePopoutDCF, maybeGetLevelUnlockedPopoutDCF, useAutoDismissGuildPowerupsNotifications
 
 // Module 14338 (useGuildPowerupsNotifications)
@@ -38,10 +38,10 @@ let closure_17;
 let map1;
 let tmp7;
 let unpackModuleId;
-const useGuildPowerupNewPerkMarketingVersionDefault = tmp7(14354);
-const useBoostToUnlockFeaturedPowerupDefault = tmp7(14355);
-const useCanPurchaseBoostsDefault = tmp7(14356);
-const useFeaturedExpiringPowerupDefault = tmp7(14357);
+const useGuildPowerupNewPerkMarketingVersionDefault = tmp7(14350);
+const useBoostToUnlockFeaturedPowerupDefault = tmp7(14351);
+const useCanPurchaseBoostsDefault = tmp7(14352);
+const useFeaturedExpiringPowerupDefault = tmp7(14353);
 const f107578 = () => notificationStateForGuild.getNotificationStateForGuild(closure_0);
 const f107579 = () => stateForGuild.getStateForGuild(closure_0);
 function maybeGetPerkPurchaseablePopoutDCF(c0, arg1, available, serverThemeEnabled) {
@@ -322,11 +322,7 @@ function useGuildPowerupsChannelListPopout(c0, arg1) {
   if (tmp22) {
     tmp22 = tmp20;
   }
-  let num = 0;
-  if (null != tmp19) {
-    num = tmp19.cost - available;
-  }
-  const tmp3Result5 = tmp3(useBoostToUnlockCoachmarkDCF(tmp22, c0, num), 2);
+  const tmp3Result5 = tmp3(useBoostToUnlockCoachmarkDCF(tmp22, c0), 2);
   const markAsDismissed3 = tmp24;
   let tmp25 = tmp3Result5[0] === tmp(5003).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
   constants = tmp25;

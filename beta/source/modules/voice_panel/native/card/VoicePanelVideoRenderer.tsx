@@ -1,7 +1,7 @@
 // Module ID: 19675
 // Function ID: 19676
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 11395, 11393, 19524, 11396, 21, 1652, 11968, 5170, 11394, 5793, 10242, 1705, 5408, 5452, 6051, 19613, 11963, 11961, 19603, 11399, 19521, 6035, 5756, 575, 5402, 11965, 2]
+// Dependencies: [32, 19, 17, 11395, 11393, 19521, 11396, 21, 1652, 11968, 5170, 11394, 5793, 10242, 1705, 5408, 5452, 6051, 19610, 11963, 11961, 19600, 11399, 19518, 6035, 5756, 575, 5402, 11965, 2]
 
 // Module 19675 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 *
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11396 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11399 */;
 import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11968 */;
-import VideoActionCreators from "VideoActionCreators" /* 19521 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19524 */;
+import VideoActionCreators from "VideoActionCreators" /* 19518 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19521 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
@@ -115,7 +115,7 @@ let closure_53 = { code: "(function VoicePanelVideoRendererTsx39(props,previous)
 let closure_54 = { code: "(function VoicePanelVideoRendererTsx40(){let[focused,id,windowDimensions,sharedCoords]=this.__closure;var _focused$get;if(((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id){return{width:windowDimensions.get().width,height:windowDimensions.get().height};}return{width:sharedCoords.get().width,height:sharedCoords.get().height};})" };
 let closure_55 = { code: "(function VoicePanelVideoRendererTsx41(){let[scale,videoDimensions,mode]=this.__closure;return[scale.get(),videoDimensions.get(),mode.get()];})" };
 let closure_56 = { code: "(function VoicePanelVideoRendererTsx42(props,previous){let[streamId,cheapWorkletShallowEqual,scheduleOnRN,respondToVideoSizeUpdate]=this.__closure;if(streamId==null)return;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;scheduleOnRN(respondToVideoSizeUpdate);})" };
-let closure_57 = { code: "(function VoicePanelVideoRendererTsx43(){let[videoDimensions,pipState,VoicePanelPIPModes,scale,disableAnimations,translateX,translateY,mirror]=this.__closure;let{width:width,height:height}=videoDimensions.get();if(pipState.mode===VoicePanelPIPModes.IN_APP){const pipScale=pipState.scale.get();if(width>height){width=width*(pipState.height*pipScale/height)/scale.get();height=pipState.height*pipScale/scale.get();}else{height=height*(pipState.width*pipScale/width)/scale.get();width=pipState.width*pipScale/scale.get();}}return{width:width,height:height,opacity:disableAnimations.get()?0:1,transform:[{scale:scale.get()},{translateX:translateX.get()},{translateY:translateY.get()},{scaleX:mirror?-1:1}]};})" };
+let closure_57 = { code: "(function VoicePanelVideoRendererTsx43(){let[videoDimensions,isDockEnabled,dockJoinMorphOrigin,pipState,VoicePanelPIPModes,scale,disableAnimations,translateX,translateY,mirror]=this.__closure;let{width:width,height:height}=videoDimensions.get();const keepsPanelSize=isDockEnabled&&dockJoinMorphOrigin.get()==null;if(!keepsPanelSize&&pipState.mode===VoicePanelPIPModes.IN_APP){const pipScale=pipState.scale.get();if(width>height){width=width*(pipState.height*pipScale/height)/scale.get();height=pipState.height*pipScale/scale.get();}else{height=height*(pipState.width*pipScale/width)/scale.get();width=pipState.width*pipScale/scale.get();}}return{width:width,height:height,opacity:disableAnimations.get()?0:1,transform:[{scale:scale.get()},{translateX:translateX.get()},{translateY:translateY.get()},{scaleX:mirror?-1:1}]};})" };
 let closure_58 = { code: "(function VoicePanelVideoRendererTsx44(){let[mode,VoicePanelModes,focused,id]=this.__closure;var _focused$get;return{inPip:mode.get()===VoicePanelModes.PIP,isFocused:((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id};})" };
 let closure_59 = { code: "(function VoicePanelVideoRendererTsx45(curr,prev){let[cheapWorkletShallowEqual,strokeOpacity,withDelay,withTiming]=this.__closure;if(cheapWorkletShallowEqual(curr,prev!==null&&prev!==void 0?prev:undefined))return;if(curr.inPip||curr.isFocused){strokeOpacity.set(0);return;}const shouldDelay=(prev===null||prev===void 0?void 0:prev.isFocused)===true;strokeOpacity.set(shouldDelay?withDelay(300,withTiming(0.3,{duration:0},'animate-never')):0.3);})" };
 let closure_60 = { code: "(function VoicePanelVideoRendererTsx46(){let[isInSnap,SNAP_EDGE_INNER_THRESHOLD,borderRadius,strokeOpacity]=this.__closure;if(isInSnap.get()){return{position:'absolute',top:0,left:0,bottom:0,right:0,borderWidth:SNAP_EDGE_INNER_THRESHOLD,overflow:'hidden',borderColor:'white',opacity:0.5};}return{position:'absolute',top:-1,left:-1,bottom:-1,right:-1,borderWidth:2,borderRadius:borderRadius+2,overflow:'hidden',borderColor:'white',opacity:strokeOpacity.get()};})" };
@@ -127,8 +127,10 @@ const memoResult = react.memo(function VideoRenderer(id) {
   let c5;
   let c9;
   let dismissToPIPGestureRef;
+  let dockJoinMorphOrigin;
   let focused;
   let isCamera;
+  let isDockEnabled;
   let isScrollVisible;
   let items72;
   let items73;
@@ -207,9 +209,9 @@ const memoResult = react.memo(function VideoRenderer(id) {
   let tmp178;
   let tmp179;
   let tmp180;
-  let tmp189;
+  let tmp181;
+  let tmp182;
   let tmp19;
-  let tmp190;
   let tmp191;
   let tmp192;
   let tmp193;
@@ -218,20 +220,22 @@ const memoResult = react.memo(function VideoRenderer(id) {
   let tmp196;
   let tmp197;
   let tmp198;
+  let tmp199;
   let tmp20;
   let tmp200;
-  let tmp201;
   let tmp202;
   let tmp203;
   let tmp204;
+  let tmp205;
   let tmp206;
-  let tmp207;
   let tmp208;
+  let tmp209;
   let tmp21;
-  let tmp210Result;
-  let tmp211;
-  let tmp212;
+  let tmp210;
+  let tmp212Result;
   let tmp213;
+  let tmp214;
+  let tmp215;
   let tmp22;
   let tmp23;
   let tmp24;
@@ -329,7 +333,7 @@ const memoResult = react.memo(function VideoRenderer(id) {
   const context = mode.useContext(streamId(isCamera[11]));
   mode = context.mode;
   ({ focused, setFocused: c5, layoutManager } = context);
-  ({ windowDimensions, streamOutputSinkStack } = context);
+  ({ windowDimensions, streamOutputSinkStack, isDockEnabled, dockJoinMorphOrigin } = context);
   const obj3 = id(isCamera[8]);
   const sharedValue = obj3.useSharedValue(true);
   let tmp8 = id(isCamera[8]);
@@ -1556,7 +1560,7 @@ const memoResult = react.memo(function VideoRenderer(id) {
       }
     };
   }, items60);
-  const items61 = [closure_57, sharedValue1, pIPState, c9, sharedValue2, sharedValue, sharedValue3, sharedValue4, flag];
+  const items61 = [closure_57, sharedValue1, isDockEnabled, dockJoinMorphOrigin, pIPState, c9, sharedValue2, sharedValue, sharedValue3, sharedValue4, flag];
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -1565,57 +1569,67 @@ const memoResult = react.memo(function VideoRenderer(id) {
   PixelRatio = undefined;
   c6 = undefined;
   c7 = undefined;
-  [tmp172, tmp173, tmp174, tmp175, tmp176, tmp177, tmp178, tmp179, tmp180] = items61;
+  c8 = undefined;
+  c9 = undefined;
+  [tmp172, tmp173, tmp174, tmp175, tmp176, tmp177, tmp178, tmp179, tmp180, tmp181, tmp182] = items61;
   const tmp2Result48 = tmp2(tmp3[8]);
   class VoicePanelVideoRendererTsx43 {
     constructor() {
       let height;
       let items;
       let num2;
+      let result1;
+      let result3;
       let width;
       const value = _undefined.get();
       ({ width, height } = value);
-      size = _undefined2;
-      let result3 = height;
-      let result1 = width;
-      if (_undefined2.mode === _undefined3.IN_APP) {
-        const scale = size.scale;
-        const value2 = scale.get();
-        if (width > height) {
-          const result = width * (size.height * value2 / height);
-          result1 = result / _undefined4.get();
-          const result2 = size.height * value2;
-          result3 = result2 / _undefined4.get();
-        } else {
-          const result4 = height * (size.width * value2 / width);
-          result3 = result4 / _undefined4.get();
-          const result5 = size.width * value2;
-          result1 = result5 / _undefined4.get();
+      const tmp2 = c1;
+      if (!tmp2) {
+        size = _undefined3;
+        result3 = height;
+        result1 = width;
+        if (_undefined3.mode === _undefined4.IN_APP) {
+          const scale = size.scale;
+          const value2 = scale.get();
+          if (width > height) {
+            const result = width * (size.height * value2 / height);
+            result1 = result / _undefined5.get();
+            const result2 = size.height * value2;
+            result3 = result2 / _undefined5.get();
+          } else {
+            const result4 = height * (size.width * value2 / width);
+            result3 = result4 / _undefined5.get();
+            const result5 = size.width * value2;
+            result1 = result5 / _undefined5.get();
+          }
         }
+      } else {
+        result3 = height;
+        result1 = width;
       }
       const size1 = { width: result1, height: result3, opacity: num2, transform: items };
       let num = 1;
       num2 = 1;
-      if (_undefined5.get()) {
+      if (_undefined6.get()) {
         num2 = 0;
       }
-      items = [{ scale: _undefined4.get() }, , , ];
-      ({ scale: _undefined4.get() });
-      items[1] = { translateX: _undefined6.get() };
-      ({ translateX: _undefined6.get() });
-      items[2] = { translateY: _undefined7.get() };
-      ({ translateY: _undefined7.get() });
-      const tmp10 = c7;
-      if (tmp10) {
+      items = [{ scale: _undefined5.get() }, , , ];
+      ({ scale: _undefined5.get() });
+      items[1] = { translateX: _undefined7.get() };
+      ({ translateX: _undefined7.get() });
+      items[2] = { translateY: _undefined8.get() };
+      ({ translateY: _undefined8.get() });
+      const tmp14 = c9;
+      if (tmp14) {
         num = -1;
       }
       items[3] = { scaleX: num };
       return size1;
     }
   }
-  const items62 = [tmp173, tmp174, tmp175, tmp176, tmp177, tmp178, tmp179, tmp180];
+  const items62 = [tmp173, tmp174, tmp175, tmp176, tmp177, tmp178, tmp179, tmp180, tmp181, tmp182];
   VoicePanelVideoRendererTsx43.__closure = items62;
-  VoicePanelVideoRendererTsx43.__workletHash = 8500811993436;
+  VoicePanelVideoRendererTsx43.__workletHash = 13635575059100;
   VoicePanelVideoRendererTsx43.__initData = tmp172;
   const animatedStyle = tmp2Result48.useAnimatedStyle(VoicePanelVideoRendererTsx43);
   const tmp2Result49 = tmp2(tmp3[25]);
@@ -1623,7 +1637,7 @@ const memoResult = react.memo(function VideoRenderer(id) {
   const useSharedValue2 = tmp2(tmp3[8]).useSharedValue;
   let num = 0;
   tmp2(tmp3[8]);
-  const tmp184 = layoutManager;
+  const tmp186 = layoutManager;
   if (mode.get() !== layoutManager.PIP) {
     let value2 = focused.get();
     let id1;
@@ -1636,12 +1650,12 @@ const memoResult = react.memo(function VideoRenderer(id) {
     }
   }
   const sharedValue21 = useSharedValue2(num);
-  const items63 = [closure_58, mode, tmp184, focused, id];
+  const items63 = [closure_58, mode, tmp186, focused, id];
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
   c3 = undefined;
-  [tmp189, tmp190, tmp191, tmp192, tmp193] = items63;
+  [tmp191, tmp192, tmp193, tmp194, tmp195] = items63;
   const tmp2Result51 = tmp2(tmp3[8]);
   class VoicePanelVideoRendererTsx44 {
     constructor() {
@@ -1654,10 +1668,10 @@ const memoResult = react.memo(function VideoRenderer(id) {
       return obj;
     }
   }
-  const items64 = [tmp190, tmp191, tmp192, tmp193];
+  const items64 = [tmp192, tmp193, tmp194, tmp195];
   VoicePanelVideoRendererTsx44.__closure = items64;
   VoicePanelVideoRendererTsx44.__workletHash = 11803304067139;
-  VoicePanelVideoRendererTsx44.__initData = tmp189;
+  VoicePanelVideoRendererTsx44.__initData = tmp191;
   const items65 = [closure_59, , , , ];
   const useAnimatedReaction5 = tmp2Result51.useAnimatedReaction;
   items65[1] = tmp2(tmp3[13]).cheapWorkletShallowEqual;
@@ -1668,7 +1682,7 @@ const memoResult = react.memo(function VideoRenderer(id) {
   c1 = undefined;
   c2 = undefined;
   c3 = undefined;
-  [tmp194, tmp195, tmp196, tmp197, tmp198] = items65;
+  [tmp196, tmp197, tmp198, tmp199, tmp200] = items65;
   class VoicePanelVideoRendererTsx45 {
     constructor(inPip, isFocused) {
       const tmp = c0;
@@ -1692,17 +1706,17 @@ const memoResult = react.memo(function VideoRenderer(id) {
       }
     }
   }
-  const items66 = [tmp195, tmp196, tmp197, tmp198];
+  const items66 = [tmp197, tmp198, tmp199, tmp200];
   VoicePanelVideoRendererTsx45.__closure = items66;
   VoicePanelVideoRendererTsx45.__workletHash = 4081353667825;
-  VoicePanelVideoRendererTsx45.__initData = tmp194;
+  VoicePanelVideoRendererTsx45.__initData = tmp196;
   const animatedReaction51 = useAnimatedReaction5(VoicePanelVideoRendererTsx44, VoicePanelVideoRendererTsx45);
   const items67 = [closure_60, sharedValue6, 25, token, sharedValue21];
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
   c3 = undefined;
-  [tmp200, tmp201, tmp202, tmp203, tmp204] = items67;
+  [tmp202, tmp203, tmp204, tmp205, tmp206] = items67;
   const tmp2Result52 = tmp2(tmp3[8]);
   class VoicePanelVideoRendererTsx46 {
     constructor() {
@@ -1716,50 +1730,50 @@ const memoResult = react.memo(function VideoRenderer(id) {
       return rect1;
     }
   }
-  const items68 = [tmp201, tmp202, tmp203, tmp204];
+  const items68 = [tmp203, tmp204, tmp205, tmp206];
   VoicePanelVideoRendererTsx46.__closure = items68;
   VoicePanelVideoRendererTsx46.__workletHash = 13057876235952;
-  VoicePanelVideoRendererTsx46.__initData = tmp200;
+  VoicePanelVideoRendererTsx46.__initData = tmp202;
   const items69 = [closure_61, layout, sharedValue];
   c0 = undefined;
   c1 = undefined;
-  [tmp206, tmp207, tmp208] = items69;
+  [tmp208, tmp209, tmp210] = items69;
   class VoicePanelVideoRendererTsx47 {
     constructor(arg0) {
       return _undefined(arg0, _undefined2.get());
     }
   }
-  const items70 = [tmp207, tmp208];
+  const items70 = [tmp209, tmp210];
   VoicePanelVideoRendererTsx47.__closure = items70;
   VoicePanelVideoRendererTsx47.__workletHash = 1306418724990;
-  VoicePanelVideoRendererTsx47.__initData = tmp206;
+  VoicePanelVideoRendererTsx47.__initData = tmp208;
   const items71 = [layout, sharedValue];
   const animatedStyle1 = tmp2Result52.useAnimatedStyle(VoicePanelVideoRendererTsx46);
   const callback6 = obj2.useCallback(VoicePanelVideoRendererTsx47, items71);
-  const obj6 = { gesture: memo, children: tmp211(View, obj7) };
+  const obj6 = { gesture: memo, children: tmp213(View, obj7) };
   const GestureDetector = tmp2(tmp3[16]).GestureDetector;
   obj7 = { style: items72, layout: callback6, children: items74 };
   items72 = [tmp.wrapper, style];
   View = tmp5(tmp3[8]).View;
-  const obj8 = { style: items73, layout: callback6, children: onReady(tmp212, obj9) };
+  const obj8 = { style: items73, layout: callback6, children: onReady(tmp214, obj9) };
   items73 = [tmp.animatedWrapperStyles, animatedStyle];
-  obj9 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId: tmp213, onReady: callback, onSize: callback1, style: tmp.video, layout: callback6 };
-  tmp213 = null;
+  obj9 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId: tmp215, onReady: callback, onSize: callback1, style: tmp.video, layout: callback6 };
+  tmp215 = null;
   const View2 = tmp5(tmp3[8]).View;
-  tmp211 = sharedValue2;
-  tmp212 = c13;
+  tmp213 = sharedValue2;
+  tmp214 = c13;
   if (!tmp12) {
-    tmp213 = streamId;
+    tmp215 = streamId;
   }
   items74 = [onReady(View2, obj8), ];
   if (tmp14) {
     const obj10 = { animate: true, style: tmp.spinner };
-    tmp210Result = tmp210(tmp5(tmp3[28]), obj10);
+    tmp212Result = tmp212(tmp5(tmp3[28]), obj10);
   } else {
     const obj11 = { style: animatedStyle1, layout: callback6, pointerEvents: "none" };
-    tmp210Result = tmp210(tmp5(tmp3[8]).View, obj11);
+    tmp212Result = tmp212(tmp5(tmp3[8]).View, obj11);
   }
-  items74[1] = tmp210Result;
+  items74[1] = tmp212Result;
   return onReady(GestureDetector, obj6);
 });
 let size = size_mod;

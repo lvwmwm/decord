@@ -1,16 +1,16 @@
-// Module ID: 17590
-// Function ID: 17591
+// Module ID: 17587
+// Function ID: 17588
 // Name: GuildRoleSubscriptionBenefitRow
-// Dependencies: [19, 17, 5019, 21, 5170, 575, 17588, 1187, 5783, 504, 5808, 1113, 17591, 2]
+// Dependencies: [19, 17, 5019, 21, 5170, 575, 17585, 1187, 5783, 504, 5808, 1113, 17588, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 17590 (GuildRoleSubscriptionBenefitRow)
+// Module 17587 (GuildRoleSubscriptionBenefitRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import useChannelNameDefault from "useChannelName" /* 5808 */;
-import EmojiIconDefault from "EmojiIcon" /* 17588 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17591 */;
+import EmojiIconDefault from "EmojiIcon" /* 17585 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17588 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,14 +72,14 @@ export function ChannelBenefitRow(benefit) {
     const obj3 = { style: tmp.channelTitle, children: items2 };
     items2 = [, ];
     const obj4 = { style: tmp.channelIcon, size: "xs", color: "interactive-text-default" };
-    const tmp2Result = benefit(17591);
+    const tmp2Result = benefit(17588);
     items2[0] = tmp2Result.renderChannelIcon(stateFromStores, obj4);
     const obj5 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: tmp5 };
     items2[1] = closure_5(benefit(5783).Text, obj5);
     tmp7 = closure_6(View, obj3);
   }
   const obj6 = { emojiId: tmp2Result2.getBenefitEmojiId(benefit), guildId, title: tmp7, description: benefit.description };
-  tmp2Result2 = benefit(17591);
+  tmp2Result2 = benefit(17588);
   return closure_5(BenefitRow, obj6);
 }
 export function IntangibleBenefitRow(benefit) {

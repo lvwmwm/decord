@@ -1,10 +1,10 @@
-// Module ID: 16989
-// Function ID: 16990
+// Module ID: 16986
+// Function ID: 16987
 // Name: useSafetyHubFetchError
 // Dependencies: [8097, 504, 2]
 // Exports: useSafetyHubFetchError
 
-// Module 16989 (useSafetyHubFetchError)
+// Module 16986 (useSafetyHubFetchError)
 import get_initialized from "get initialized" /* 504 */;
 import SafetyHubStore from "SafetyHubStore" /* 8097 */;
 import size from "module_2" /* 2 */;

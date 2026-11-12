@@ -1,10 +1,10 @@
-// Module ID: 19086
-// Function ID: 19087
+// Module ID: 19083
+// Function ID: 19084
 // Name: SearchFilterUtils
-// Dependencies: [9950, 9949, 1072, 1113, 12318, 10686, 16007, 8766, 9228, 19087, 12795, 12300, 14160, 14177, 14152, 5406, 9122, 2118, 14173, 2]
+// Dependencies: [9950, 9949, 1072, 1113, 12318, 10686, 16004, 8766, 9228, 19084, 12795, 12300, 14160, 14177, 14152, 5406, 9122, 2118, 14173, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 19086 (SearchFilterUtils)
+// Module 19083 (SearchFilterUtils)
 import intl10 from "intl" /* 1113 */;
 import AtIcon from "AtIcon" /* 8766 */;
 import CalendarIcon from "CalendarIcon" /* 9228 */;
@@ -16,8 +16,8 @@ import CalendarPlusIcon from "CalendarPlusIcon" /* 12795 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 14152 */;
 import SearchTokens from "SearchTokens" /* 14160 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14177 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 16007 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 19087 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 16004 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 19084 */;
 import SearchConstants from "SearchConstants" /* 9950 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

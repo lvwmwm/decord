@@ -1,7 +1,7 @@
 // Module ID: 20102
 // Function ID: 20103
 // Name: GuildSettingsRoleSubscriptionsSection
-// Dependencies: [19, 5037, 1385, 1072, 21, 504, 7159, 1113, 7071, 5891, 11301, 20103, 17733, 7531, 2]
+// Dependencies: [19, 5037, 1385, 1072, 21, 504, 7159, 1113, 7071, 5891, 11301, 20103, 17730, 7531, 2]
 // Exports: default
 
 // Module 20102 (GuildSettingsRoleSubscriptionsSection)
@@ -13,7 +13,7 @@ import TableRow5 from "TableRow" /* 7071 */;
 import TableRowGroup2 from "TableRowGroup" /* 7159 */;
 import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7531 */;
 import TagsIcon from "TagsIcon" /* 11301 */;
-import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 17733 */;
+import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 17730 */;
 import WalletIcon from "WalletIcon" /* 20103 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;

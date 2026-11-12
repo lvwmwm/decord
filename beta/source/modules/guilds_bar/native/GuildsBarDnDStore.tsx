@@ -1,10 +1,10 @@
-// Module ID: 18733
-// Function ID: 18734
+// Module ID: 18730
+// Function ID: 18731
 // Name: GuildsBarDnDStore
 // Dependencies: [6860, 1254, 1652, 1259, 1242, 5085, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 18733 (GuildsBarDnDStore)
+// Module 18730 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react_native from "react-native" /* 1259 */;
 import _slicedToArray from "_slicedToArray" /* 5085 */;
@@ -30,7 +30,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "description",
+    overSpecs: "ip",
     dropSpecs: "isArray",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
@@ -77,7 +77,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "onPress" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "isArray" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -149,7 +149,7 @@ export function useItemDragState(guildId, flag) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "description", overState: "isArray", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "ip", overState: "isArray", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

@@ -1,10 +1,10 @@
-// Module ID: 18644
-// Function ID: 18645
+// Module ID: 18641
+// Function ID: 18642
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 1072, 5026, 5914, 21, 5170, 575, 18645, 7004, 5206, 1099, 14203, 1113, 8765, 1187, 2]
+// Dependencies: [19, 1072, 5026, 5914, 21, 5170, 575, 18642, 7004, 5206, 1099, 14203, 1113, 8765, 1187, 2]
 // Exports: default
 
-// Module 18644 (GuildMemberDashChannelRow)
+// Module 18641 (GuildMemberDashChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -43,7 +43,7 @@ export default function GuildMemberDashChannelRow(arg0) {
   let hasItem;
   let tmp = closure_8();
   const id = guild.id;
-  let obj = id(18645);
+  let obj = id(18642);
   let num = obj.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;

@@ -1,13 +1,13 @@
-// Module ID: 19646
-// Function ID: 19647
+// Module ID: 19643
+// Function ID: 19644
 // Name: useSoundboardConfig
-// Dependencies: [19, 5019, 2130, 19560, 504, 19580, 7661, 1113, 2]
+// Dependencies: [19, 5019, 2130, 19557, 504, 19577, 7661, 1113, 2]
 // Exports: default
 
-// Module 19646 (useSoundboardConfig)
+// Module 19643 (useSoundboardConfig)
 import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 7661 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19560 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19580 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19557 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19577 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;

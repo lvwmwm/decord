@@ -1,10 +1,10 @@
-// Module ID: 14462
-// Function ID: 14463
+// Module ID: 14458
+// Function ID: 14459
 // Name: UserProfileMutualsActionSheet
-// Dependencies: [19, 17, 5922, 8858, 21, 5170, 575, 6941, 504, 7071, 1187, 6205, 10896, 7053, 5783, 9102, 14456, 9092, 14463, 14464, 11585, 14457, 14458, 1113, 12374, 14468, 2]
+// Dependencies: [19, 17, 5922, 8858, 21, 5170, 575, 6941, 504, 7071, 1187, 6205, 10896, 7053, 5783, 9102, 14452, 9092, 14459, 14460, 11585, 14453, 14454, 1113, 12374, 14464, 2]
 // Exports: default
 
-// Module 14462 (UserProfileMutualsActionSheet)
+// Module 14458 (UserProfileMutualsActionSheet)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6205 */;
@@ -14,9 +14,9 @@ import Constants from "Constants" /* 8858 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9102 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10896 */;
 import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11585 */;
-import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 14456 */;
-import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 14457 */;
-import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 14463 */;
+import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 14452 */;
+import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 14453 */;
+import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 14459 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PresenceStore from "PresenceStore" /* 5922 */;
@@ -172,7 +172,7 @@ export default function UserProfileMutualsActionSheet(user) {
     tmp11 = closure_7(closure_3, obj3);
     tmp10 = closure_7;
   } else if (0 === mutualFriends.length) {
-    const obj4 = { style: tmp.emptyState, children: closure_7(user(14464).NoMutualFriends, {}) };
+    const obj4 = { style: tmp.emptyState, children: closure_7(user(14460).NoMutualFriends, {}) };
     tmp11 = closure_7(closure_3, obj4);
     tmp10 = closure_7;
   } else {
@@ -209,7 +209,7 @@ export default function UserProfileMutualsActionSheet(user) {
     const obj7 = { style: tmp.loadingState, children: tmp10(closure_4, {}) };
     tmp10Result = tmp10(closure_3, obj7);
   } else if (0 === mutualGuilds.length) {
-    const obj8 = { style: tmp.emptyState, children: tmp10(user(14458).NoMutualServers, {}) };
+    const obj8 = { style: tmp.emptyState, children: tmp10(user(14454).NoMutualServers, {}) };
     tmp10Result = tmp10(closure_3, obj8);
   } else {
     const obj9 = {
@@ -242,7 +242,7 @@ export default function UserProfileMutualsActionSheet(user) {
   items1 = [, ];
   const obj12 = { children: tmp10(user(12374).Tabs, { state: segmentedControlState }) };
   items1[0] = tmp10(closure_3, obj12);
-  items1[1] = tmp10(user(14468).SegmentedControlPages, { state: segmentedControlState });
+  items1[1] = tmp10(user(14464).SegmentedControlPages, { state: segmentedControlState });
   return tmp10(tmp2Result4, obj10);
 };
 export { MutualGuildRow };

@@ -1,10 +1,10 @@
-// Module ID: 15371
-// Function ID: 15372
+// Module ID: 15368
+// Function ID: 15369
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1072, 1083, 21, 10064, 9654, 14697, 1377, 2183, 10840, 10827, 5406, 8851, 15372, 2]
+// Dependencies: [19, 1072, 1083, 21, 10064, 9654, 14694, 1377, 2183, 10840, 10827, 5406, 8851, 15369, 2]
 // Exports: default
 
-// Module 15371 (HeadlessCollectiblesPurchaseFlow)
+// Module 15368 (HeadlessCollectiblesPurchaseFlow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
@@ -14,7 +14,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406
 import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8851 */;
 import useProductPurchaseState from "useProductPurchaseState" /* 9654 */;
 import ACOMExperiments from "ACOMExperiments" /* 10064 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 14697 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 14694 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

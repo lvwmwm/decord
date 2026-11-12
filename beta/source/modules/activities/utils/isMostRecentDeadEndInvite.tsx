@@ -1,10 +1,10 @@
-// Module ID: 15455
-// Function ID: 15456
+// Module ID: 15452
+// Function ID: 15453
 // Name: isMostRecentDeadEndInvite
 // Dependencies: [1072, 11873, 2]
 // Exports: isMostRecentDeadEndInvite
 
-// Module 15455 (isMostRecentDeadEndInvite)
+// Module 15452 (isMostRecentDeadEndInvite)
 import Constants from "Constants" /* 1072 */;
 import isInviteActiveDefault from "isInviteActive" /* 11873 */;
 import size from "module_2" /* 2 */;

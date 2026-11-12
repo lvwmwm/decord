@@ -1,10 +1,10 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 17353
+// Function ID: 17354
 // Name: HexagonCampaignQuestHomeHeader
-// Dependencies: [19, 17, 5195, 1072, 21, 5170, 575, 5231, 5201, 5756, 671, 7972, 6876, 7981, 6872, 7928, 17357, 5874, 17371, 5747, 17372, 5783, 1113, 17373, 6191, 4411, 16830, 5790, 5177, 2]
+// Dependencies: [19, 17, 5195, 1072, 21, 5170, 575, 5231, 5201, 5756, 671, 7972, 6876, 7981, 6872, 7928, 17354, 5874, 17368, 5747, 17369, 5783, 1113, 17370, 6191, 4411, 16827, 5790, 5177, 2]
 // Exports: default
 
-// Module 17356 (HexagonCampaignQuestHomeHeader)
+// Module 17353 (HexagonCampaignQuestHomeHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
@@ -103,12 +103,12 @@ export default function HexagonCampaignQuestHomeHeader() {
   if (isHexagonCampaignQuestHomeHeaderEnabled) {
     const obj4 = { style: tmp.container, children: items3 };
     const obj5 = { style: tmp.banner, children: items2 };
-    const obj6 = { source: token(17371), style: tmp.bannerImage, resizeMode: "cover", accessible: false };
+    const obj6 = { source: token(17368), style: tmp.bannerImage, resizeMode: "cover", accessible: false };
     const tmp5Result = token(5874);
     items2 = [closure_8(tmp5Result, obj6), , , ];
     const obj7 = { colors: memo, locations: [0.716, 0.823, 1], style: absoluteFill.absoluteFill, pointerEvents: "none" };
     items2[1] = closure_8(token(5747), obj7);
-    const obj8 = { source: token(17372), style: tmp.logo, resizeMode: "contain", accessible: false };
+    const obj8 = { source: token(17369), style: tmp.logo, resizeMode: "contain", accessible: false };
     const tmp5Result2 = token(5874);
     items2[2] = closure_8(tmp5Result2, obj8);
     const obj9 = { style: tmp.sponsoredTag, children: closure_8(Text, obj10) };
@@ -119,7 +119,7 @@ export default function HexagonCampaignQuestHomeHeader() {
     items3 = [closure_9(closure_5, obj5), ];
     const obj11 = { style: tmp.cardShadow, children: closure_9(closure_5, obj12) };
     obj12 = { style: tmp.card, children: items4 };
-    const obj13 = { style: tmp.cardArt, children: closure_8(isHexagonCampaignQuestHomeHeaderEnabled(17373).BundleAbstractUI, { accessible: false }) };
+    const obj13 = { style: tmp.cardArt, children: closure_8(isHexagonCampaignQuestHomeHeaderEnabled(17370).BundleAbstractUI, { accessible: false }) };
     items4 = [closure_8(closure_5, obj13), ];
     const obj14 = { direction: "vertical", spacing: token(575).space.PX_12, style: tmp.cardContent, children: items7 };
     const Stack = tmp2(6191).Stack;

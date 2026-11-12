@@ -1,7 +1,7 @@
 // Module ID: 20016
 // Function ID: 20017
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 5170, 575, 1627, 5746, 5783, 1113, 20017, 14519, 5790, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 1627, 5746, 5783, 1113, 20017, 14515, 5790, 2]
 // Exports: default
 
 // Module 20016 (RedesignDiscoverabilityLanding)
@@ -11,7 +11,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import NavigatorConstants from "NavigatorConstants" /* 5746 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14519 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14515 */;
 import LanternSpotIllustration from "LanternSpotIllustration" /* 20017 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,10 +1,10 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15341
+// Function ID: 15342
 // Name: OrbBadgePreview
 // Dependencies: [19, 17, 21, 5170, 8853, 11566, 9668, 1113, 2]
 // Exports: OrbBadgePreview
 
-// Module 15344 (OrbBadgePreview)
+// Module 15341 (OrbBadgePreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;

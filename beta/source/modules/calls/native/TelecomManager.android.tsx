@@ -1,7 +1,7 @@
 // Module ID: 20071
 // Function ID: 20072
 // Name: TelecomManager
-// Dependencies: [5, 17, 11193, 6801, 502, 6656, 5019, 2130, 11173, 5925, 5112, 5227, 1385, 1072, 5929, 3, 16740, 7383, 20072, 6793, 7584, 8041, 6079, 12113, 12118, 1624, 5808, 11192, 2]
+// Dependencies: [5, 17, 11193, 6801, 502, 6656, 5019, 2130, 11173, 5925, 5112, 5227, 1385, 1072, 5929, 3, 16737, 7383, 20072, 6793, 7584, 8041, 6079, 12113, 12118, 1624, 5808, 11192, 2]
 
 // Module 20071 (TelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -14,7 +14,7 @@ import CallActionCreatorsDefault from "CallActionCreators" /* 7584 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
 import useHasVideoPermission from "useHasVideoPermission" /* 12113 */;
 import useScreenshareUtils from "useScreenshareUtils" /* 12118 */;
-import react_nativeDefault from "react-native" /* 16740 */;
+import react_nativeDefault from "react-native" /* 16737 */;
 import react_nativeDefault2 from "react-native" /* 20072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;

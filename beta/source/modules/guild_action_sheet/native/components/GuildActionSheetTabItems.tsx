@@ -1,10 +1,10 @@
-// Module ID: 16148
-// Function ID: 16149
+// Module ID: 16145
+// Function ID: 16146
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 5019, 5100, 5073, 1072, 21, 16130, 8572, 504, 9234, 9231, 6855, 8131, 1113, 10075, 575, 5921, 5406, 6856, 11140, 8503, 7384, 7667, 9187, 2]
+// Dependencies: [19, 5019, 5100, 5073, 1072, 21, 16127, 8572, 504, 9234, 9231, 6855, 8131, 1113, 10075, 575, 5921, 5406, 6856, 11140, 8503, 7384, 7667, 9187, 2]
 // Exports: default
 
-// Module 16148 (GuildActionSheetTabItems)
+// Module 16145 (GuildActionSheetTabItems)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5921 */;
 import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6856 */;
@@ -42,7 +42,7 @@ export default function GuildActionSheetTabItems(guild) {
   guild = guild.guild;
   let stateFromStores;
   const tmp = guild;
-  let obj = guild(16130);
+  let obj = guild(16127);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   let tmp3 = stateFromStores;
   const total = stateFromStores(8572)(guild.id).total;

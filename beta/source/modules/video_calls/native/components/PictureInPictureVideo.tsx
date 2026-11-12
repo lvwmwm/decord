@@ -231,7 +231,7 @@ let closure_22 = react.memo(function ActivityPictureInPictureVideo(arg0) {
     const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
     return items;
   };
-  const f129290 = () => {
+  const f129305 = () => {
     const items = [ChannelRTCStore.getParticipants(id), ChannelRTCStore.getVideoParticipants(id), ChannelRTCStore.getParticipantsVersion(id)];
     return items;
   };
@@ -250,8 +250,8 @@ let closure_22 = react.memo(function ActivityPictureInPictureVideo(arg0) {
   const items2 = [ChannelRTCStore];
   const items3 = [id];
   const obj3 = id(leadingEdgeDebounce[20]);
-  [arr5, tmp9] = obj3.useStateFromStores(items2, f129290, items3, areParticipantsEqual);
-  _slicedToArray(obj3.useStateFromStores(items2, f129290, items3, areParticipantsEqual), 2);
+  [arr5, tmp9] = obj3.useStateFromStores(items2, f129305, items3, areParticipantsEqual);
+  _slicedToArray(obj3.useStateFromStores(items2, f129305, items3, areParticipantsEqual), 2);
   const items4 = [SpeakingStore];
   const items5 = [selfParticipant];
   const obj4 = id(leadingEdgeDebounce[20]);

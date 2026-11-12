@@ -1,15 +1,15 @@
-// Module ID: 16916
-// Function ID: 16917
+// Module ID: 16913
+// Function ID: 16914
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 5170, 16917, 5783, 1113, 5790, 14548, 2118, 2]
+// Dependencies: [5, 19, 17, 21, 5170, 16914, 5783, 1113, 5790, 14544, 2118, 2]
 // Exports: default
 
-// Module 16916 (GuildProfileEmptyState)
+// Module 16913 (GuildProfileEmptyState)
 import intl5 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
-import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 16917 */;
+import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 16914 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

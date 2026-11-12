@@ -1,10 +1,10 @@
-// Module ID: 15817
-// Function ID: 15818
+// Module ID: 15814
+// Function ID: 15815
 // Name: SubscribeModalConfirmation
-// Dependencies: [5, 19, 17, 14411, 5041, 7694, 2176, 1072, 7726, 21, 5170, 5167, 575, 504, 8567, 5874, 15818, 5783, 1113, 15819, 15820, 5790, 15829, 5747, 1092, 1252, 15783, 38, 8569, 6123, 15833, 2118, 2]
+// Dependencies: [5, 19, 17, 14407, 5041, 7694, 2176, 1072, 7726, 21, 5170, 5167, 575, 504, 8567, 5874, 15815, 5783, 1113, 15816, 15817, 5790, 15826, 5747, 1092, 1252, 15780, 38, 8569, 6123, 15830, 2118, 2]
 // Exports: default
 
-// Module 15817 (SubscribeModalConfirmation)
+// Module 15814 (SubscribeModalConfirmation)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -14,13 +14,13 @@ import components_Button_Button from "components/Button/Button" /* 5790 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import ColorConstants from "ColorConstants" /* 7726 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8567 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15818 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15819 */;
-import PremiumGuildPreviewDefault from "PremiumGuildPreview" /* 15820 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15815 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15816 */;
+import PremiumGuildPreviewDefault from "PremiumGuildPreview" /* 15817 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14411 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14407 */;
 import GuildStore from "GuildStore" /* 5041 */;
 import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7694 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
@@ -151,7 +151,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
   const onPremiumGuildSubscribe = previousGuildSubscriptionSlots.onPremiumGuildSubscribe;
   ({ guild, isModifyingSubscription } = previousGuildSubscriptionSlots);
   const tmp = closure_20();
-  const obj = prop(15829);
+  const obj = prop(15826);
   const guildSubscriptionRemovalSource = obj.useGuildSubscriptionRemovalSource();
   const items = [GuildStore];
   const obj2 = prop(504);
@@ -188,13 +188,13 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     intl3 = tmp2(1113).intl;
     items2 = [closure_17(Text3, obj10), , , ];
     const obj11 = { style: tmp.guildPreview, guild: stateFromStores };
-    items2[1] = closure_17(onPremiumGuildSubscribe(15820), obj11);
+    items2[1] = closure_17(onPremiumGuildSubscribe(15817), obj11);
     const obj12 = { style: tmp.previewHeader, variant: "body-sm/medium", color: "text-default", children: intl4.format(prop(1113).t.ct6oxD, obj13) };
     const Text4 = tmp2(5783).Text;
     intl4 = tmp2(1113).intl;
     obj13 = { slotCount: prop.length };
     items2[2] = closure_17(Text4, obj12);
-    const obj14 = { style: items3, start: prop(1092).HorizontalGradient.START, end: prop(1092).HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: closure_17(onPremiumGuildSubscribe(15820), obj15) };
+    const obj14 = { style: items3, start: prop(1092).HorizontalGradient.START, end: prop(1092).HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: closure_17(onPremiumGuildSubscribe(15817), obj15) };
     items3 = [, ];
     ({ guildPreview: arr5[0], activeTransferGuildCardBorder: arr5[1] } = tmp);
     obj15 = { guild };

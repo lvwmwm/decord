@@ -1,10 +1,10 @@
-// Module ID: 17491
-// Function ID: 17492
+// Module ID: 17488
+// Function ID: 17489
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
 // Dependencies: [19, 1072, 9840, 5902, 9828, 9842, 7981, 2]
 // Exports: useVideoQuestClickCtaAndMaybeCloseModal
 
-// Module 17491 (useVideoQuestClickCtaAndMaybeCloseModal)
+// Module 17488 (useVideoQuestClickCtaAndMaybeCloseModal)
 import Constants from "Constants" /* 1072 */;
 import parseURLDefault from "parseURL" /* 5902 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;

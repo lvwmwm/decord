@@ -1,10 +1,10 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14466
+// Function ID: 14467
 // Name: GuildIconPile
 // Dependencies: [19, 21, 7053, 13688, 13040, 9626, 13689, 2]
 // Exports: GuildIconPile
 
-// Module 14470 (GuildIconPile)
+// Module 14466 (GuildIconPile)
 import GuildIcon from "GuildIcon" /* 7053 */;
 import ClipView from "ClipView" /* 9626 */;
 import ListUtils from "ListUtils" /* 13040 */;

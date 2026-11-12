@@ -1,10 +1,10 @@
-// Module ID: 14639
-// Function ID: 14640
+// Module ID: 14636
+// Function ID: 14637
 // Name: GuildDirectoryCategorySelector
-// Dependencies: [19, 17, 14126, 14119, 21, 5170, 575, 1113, 5756, 671, 9102, 504, 9092, 14130, 12374, 14640, 2]
+// Dependencies: [19, 17, 14126, 14119, 21, 5170, 575, 1113, 5756, 671, 9102, 504, 9092, 14130, 12374, 14637, 2]
 // Exports: default
 
-// Module 14639 (GuildDirectoryCategorySelector)
+// Module 14636 (GuildDirectoryCategorySelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

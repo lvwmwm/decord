@@ -1,10 +1,10 @@
-// Module ID: 14383
-// Function ID: 14384
+// Module ID: 14379
+// Function ID: 14380
 // Name: useCanGuildPowerupBeToggled
 // Dependencies: [19, 5377, 5378, 504, 14347, 1113, 2696, 2]
 // Exports: default
 
-// Module 14383 (useCanGuildPowerupBeToggled)
+// Module 14379 (useCanGuildPowerupBeToggled)
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5378 */;
 import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14347 */;
 import react from "react" /* 19 */;

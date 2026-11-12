@@ -1,9 +1,9 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 17809
+// Function ID: 17810
 // Name: DisplayMediaLinksSetting
 // Dependencies: [8536, 11717, 1113, 4995, 2]
 
-// Module 17812 (DisplayMediaLinksSetting)
+// Module 17809 (DisplayMediaLinksSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;

@@ -1,9 +1,9 @@
-// Module ID: 18835
-// Function ID: 18836
+// Module ID: 18832
+// Function ID: 18833
 // Name: YouAccountActionSheet
-// Dependencies: [19, 17, 14243, 1192, 1404, 7974, 5227, 1385, 1072, 1388, 14244, 21, 5170, 575, 5783, 7079, 16341, 16338, 16339, 16340, 4995, 11181, 5406, 1113, 7157, 7160, 9198, 504, 17363, 13976, 6096, 17618, 1239, 18836, 11353, 17620, 5226, 1187, 18367, 18838, 1252, 7445, 14247, 7076, 11180, 7159, 7462, 11154, 18843, 2118, 18833, 11567, 1411, 10900, 5756, 7073, 11570, 7396, 9566, 11577, 5874, 7353, 7099, 7459, 7415, 6191, 18844, 18122, 2]
+// Dependencies: [19, 17, 14243, 1192, 1404, 7974, 5227, 1385, 1072, 1388, 14244, 21, 5170, 575, 5783, 7079, 16338, 16335, 16336, 16337, 4995, 11181, 5406, 1113, 7157, 7160, 9198, 504, 17360, 13976, 6096, 17615, 1239, 18833, 11353, 17617, 5226, 1187, 18364, 18835, 1252, 7445, 14247, 7076, 11180, 7159, 7462, 11154, 18840, 2118, 18830, 11567, 1411, 10900, 5756, 7073, 11570, 7396, 9566, 11577, 5874, 7353, 7099, 7459, 7415, 6191, 18841, 18119, 2]
 
-// Module 18835 (YouAccountActionSheet)
+// Module 18832 (YouAccountActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -35,13 +35,13 @@ import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /*
 import MultiAccountStore2 from "MultiAccountStore" /* 14243 */;
 import Constants2 from "Constants" /* 14244 */;
 import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14247 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 17363 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 17618 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17620 */;
-import DevToolsContentDefault from "DevToolsContent" /* 18122 */;
-import ThemeGrayIcon from "ThemeGrayIcon" /* 18836 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 18838 */;
-import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 18844 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 17360 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 17615 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17617 */;
+import DevToolsContentDefault from "DevToolsContent" /* 18119 */;
+import ThemeGrayIcon from "ThemeGrayIcon" /* 18833 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 18835 */;
+import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 18841 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserRecord from "UserRecord" /* 1404 */;
@@ -224,7 +224,7 @@ function YouAccountRadioGroup() {
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = stateFromStores(18367);
+  let obj2 = stateFromStores(18364);
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
   let obj3 = stateFromStores(504);
   const items1 = [StreamerModeStore];

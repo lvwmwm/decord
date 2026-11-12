@@ -1,9 +1,9 @@
-// Module ID: 16721
-// Function ID: 16722
+// Module ID: 16718
+// Function ID: 16719
 // Name: voiceSettings
 // Dependencies: [6615, 1072, 9017, 12007, 2]
 
-// Module 16721 (voiceSettings)
+// Module 16718 (voiceSettings)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 6615 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;

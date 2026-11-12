@@ -1,10 +1,10 @@
-// Module ID: 14824
-// Function ID: 14825
+// Module ID: 14821
+// Function ID: 14822
 // Name: useAppChannelOverflowMenuItems
-// Dependencies: [19, 6935, 5831, 12408, 7517, 14825, 14826, 11092, 14665, 14827, 8854, 14830, 1113, 12423, 12078, 4026, 11453, 5891, 10237, 2]
+// Dependencies: [19, 6935, 5831, 12408, 7517, 14822, 14823, 11092, 14662, 14824, 8854, 14827, 1113, 12423, 12078, 4026, 11453, 5891, 10237, 2]
 // Exports: default
 
-// Module 14824 (useAppChannelOverflowMenuItems)
+// Module 14821 (useAppChannelOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
@@ -15,7 +15,7 @@ import restartFrames from "restartFrames" /* 11092 */;
 import ShieldIcon from "ShieldIcon" /* 11453 */;
 import DoorExitIcon from "DoorExitIcon" /* 12078 */;
 import RefreshIcon from "RefreshIcon" /* 12423 */;
-import closeFrameDefault from "closeFrame" /* 14665 */;
+import closeFrameDefault from "closeFrame" /* 14662 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -46,9 +46,9 @@ function useAppChannelAppActions(channel) {
   if (appChannelApplication != null) {
     bot = appChannelApplication.bot;
   }
-  const tmp8 = application_id(14825)(application_id);
+  const tmp8 = application_id(14822)(application_id);
   let closure_4 = tmp8;
-  const tmp9 = application_id(14826)(application_id).length > 0;
+  const tmp9 = application_id(14823)(application_id).length > 0;
   let closure_5 = tmp9;
   const items1 = [application_id, bot, channel, tmp8, tmp5, tmp9];
   return obj.useMemo(() => {

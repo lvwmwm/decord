@@ -206,7 +206,7 @@ let obj = function _nitroStreamFetch() {
             const promise = new Promise((arg0, arg1) => {
               let _undefined;
               let redirected;
-              const f143450 = (item) => {
+              const f143475 = (item) => {
                 let tmp;
                 let tmp2;
                 [tmp, tmp2] = item;
@@ -289,7 +289,7 @@ let obj = function _nitroStreamFetch() {
                 httpStatusCode = httpStatusCode.httpStatusCode;
                 const NitroHeaders = closure_3_0(closure_3_1[7]).NitroHeaders;
                 const entries = Object.entries(httpStatusCode.allHeaders);
-                const nitroHeaders = new NitroHeaders(entries.map(f143450));
+                const nitroHeaders = new NitroHeaders(entries.map(f143475));
                 const response = { url: httpStatusCode.url, ok: tmp2, status: httpStatusCode, statusText: httpStatusCode.httpStatusText, headers: nitroHeaders, redirected, body: readableStream };
                 tmp2 = httpStatusCode >= 200;
                 const NitroResponse = closure_3_0(closure_3_1[8]).NitroResponse;
@@ -366,7 +366,7 @@ let obj = function _nitroStreamFetch() {
                     const entries = Object.entries(httpStatusCode.allHeaders);
                     const self = this;
                     const self2 = this;
-                    const nitroHeaders = new NitroHeaders(entries.map(f143450));
+                    const nitroHeaders = new NitroHeaders(entries.map(f143475));
                     const response = { url: httpStatusCode.url, ok: tmp10, status: httpStatusCode, statusText: httpStatusCode.httpStatusText, headers: nitroHeaders, redirected, body: readableStream };
                     tmp10 = httpStatusCode >= 200;
                     const NitroResponse = closure_3_0(closure_3_1[8]).NitroResponse;

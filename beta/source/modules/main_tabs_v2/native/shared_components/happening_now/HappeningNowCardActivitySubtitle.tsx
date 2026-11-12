@@ -1,17 +1,17 @@
-// Module ID: 18514
-// Function ID: 18515
+// Module ID: 18511
+// Function ID: 18512
 // Name: HappeningNowCardActivitySubtitle
-// Dependencies: [19, 17, 5019, 21, 5170, 504, 5808, 17646, 9198, 5923, 1113, 8938, 10913, 2]
+// Dependencies: [19, 17, 5019, 21, 5170, 504, 5808, 17643, 9198, 5923, 1113, 8938, 10913, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 18514 (HappeningNowCardActivitySubtitle)
+// Module 18511 (HappeningNowCardActivitySubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import useChannelNameDefault from "useChannelName" /* 5808 */;
 import ActivityTypes from "ActivityTypes" /* 5923 */;
 import isStreamingDefault from "isStreaming" /* 8938 */;
-import HappeningNowCard from "HappeningNowCard" /* 17646 */;
+import HappeningNowCard from "HappeningNowCard" /* 17643 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import createStyles from "createStyles" /* 5170 */;
@@ -31,7 +31,7 @@ export function HappeningNowVoiceCardSubtitle(voiceState) {
   const obj = voiceState(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(voiceState.channelId));
   useChannelNameDefault(stateFromStores);
-  const HappeningNowCardSubtitle = voiceState(17646).HappeningNowCardSubtitle;
+  const HappeningNowCardSubtitle = voiceState(17643).HappeningNowCardSubtitle;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
     getChannelA11yLabelDefault(obj3);

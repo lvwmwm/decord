@@ -1,21 +1,21 @@
-// Module ID: 18737
-// Function ID: 18738
+// Module ID: 18734
+// Function ID: 18735
 // Name: GuildsBarFolderSettingsModal
-// Dependencies: [32, 19, 17, 6860, 18738, 21, 5170, 6096, 5767, 5406, 18739, 2118, 575, 6191, 7181, 1113, 7159, 7071, 1090, 16799, 7097, 504, 18736, 7264, 2]
+// Dependencies: [32, 19, 17, 6860, 18735, 21, 5170, 6096, 5767, 5406, 18736, 2118, 575, 6191, 7181, 1113, 7159, 7071, 1090, 16796, 7097, 504, 18733, 7264, 2]
 // Exports: default
 
-// Module 18737 (GuildsBarFolderSettingsModal)
+// Module 18734 (GuildsBarFolderSettingsModal)
 import intl5 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import UserSettingsActionCreators from "UserSettingsActionCreators" /* 6096 */;
 import NavigatorHeader from "NavigatorHeader" /* 7097 */;
-import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 18736 */;
+import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 18733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SortedGuildStore from "SortedGuildStore" /* 6860 */;
-import GuildsBarConstants from "guilds_bar/GuildsBarConstants" /* 18738 */;
+import GuildsBarConstants from "guilds_bar/GuildsBarConstants" /* 18735 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -57,7 +57,7 @@ function GuildFolderSettingsScene(color) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let tmp4 = color;
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(18739, dependencyMap.paths);
+    const tmp3 = asyncRequire(18736, dependencyMap.paths);
     if (color == null) {
       tmp4 = metroImportAll;
     }
@@ -85,7 +85,7 @@ function GuildFolderSettingsScene(color) {
     int2hexResult = intl4.string(tmp8(1113).t.bBvAEH);
   }
   let tmp11 = color;
-  tmp2Result = tmp2(16799);
+  tmp2Result = tmp2(16796);
   if (color == null) {
     tmp11 = closure_8;
   }

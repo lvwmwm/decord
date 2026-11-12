@@ -1,15 +1,15 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15741
+// Function ID: 15742
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2186, 1385, 2175, 2176, 7706, 1072, 1387, 21, 5170, 504, 2171, 15600, 7713, 7702, 5783, 1377, 7511, 7510, 1113, 2024, 2]
+// Dependencies: [32, 19, 17, 2186, 1385, 2175, 2176, 7706, 1072, 1387, 21, 5170, 504, 2171, 15597, 7713, 7702, 5783, 1377, 7511, 7510, 1113, 2024, 2]
 // Exports: default
 
-// Module 15744 (PremiumSubscriptionPricingUpsell)
+// Module 15741 (PremiumSubscriptionPricingUpsell)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 15600 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 15597 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
@@ -65,7 +65,7 @@ function PricingSubheadingCopy() {
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f110195 = () => {
+  const f110191 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -101,8 +101,8 @@ function PricingSubheadingCopy() {
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f110195), 5);
-  str2(obj7.useStateFromStoresArray(items4, f110195), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f110191), 5);
+  str2(obj7.useStateFromStoresArray(items4, f110191), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];

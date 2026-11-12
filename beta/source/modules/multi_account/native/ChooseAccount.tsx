@@ -1,10 +1,10 @@
-// Module ID: 18366
-// Function ID: 18367
+// Module ID: 18363
+// Function ID: 18364
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 14243, 14244, 1072, 21, 5170, 575, 1499, 18367, 1252, 14247, 6123, 1113, 1187, 5406, 7456, 7239, 5783, 7041, 18368, 7076, 9213, 8279, 18369, 2]
+// Dependencies: [5, 19, 17, 14243, 14244, 1072, 21, 5170, 575, 1499, 18364, 1252, 14247, 6123, 1113, 1187, 5406, 7456, 7239, 5783, 7041, 18365, 7076, 9213, 8279, 18366, 2]
 // Exports: default
 
-// Module 18366 (ChooseAccount)
+// Module 18363 (ChooseAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -250,7 +250,7 @@ export default function ChooseAccount() {
     }
   };
   const FormRow = require("module_8279").FormRow;
-  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18369) };
+  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18366) };
   Icon = require("module_8279").FormRow.Icon;
   intl3 = require("intl").intl;
   items[1] = closure_11(FormRow, obj6);

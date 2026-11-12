@@ -1,13 +1,16 @@
 // Module ID: 16478
 // Function ID: 16479
-// Dependencies: [16479, 16483]
+// Dependencies: [16474]
 
 // Module 16478
-import _mod16479 from "module_16479" /* 16479 */;
-import _mod16483 from "module_16483" /* 16483 */;
+import _mod16474 from "module_16474" /* 16474 */;
 
 
-export default (arg0) => {
-  const tmp = _mod16479;
-  return tmp(_mod16483(arg0));
-};
+export default !_mod16474(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
+  return hasOwnPropertyResult;
+});

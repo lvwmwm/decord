@@ -60,7 +60,7 @@ export function bodySize(size) {
 }
 export function sendXMLHttpRequest(request, arg1) {
   let _true;
-  const f1278882 = () => {
+  const f1279032 = () => {
     const items = [...arguments];
     const tmp2 = c3;
     if (!tmp2) {
@@ -128,7 +128,7 @@ export function sendXMLHttpRequest(request, arg1) {
       throw new TypeError("Trying to call a non-function");
     }
   };
-  let f127888 = f1278882;
+  let f127903 = f1279032;
   let c9 = null;
   let responseType = request.responseType;
   let tmp2 = "arraybuffer" === responseType;
@@ -173,9 +173,9 @@ export function sendXMLHttpRequest(request, arg1) {
     const _Uint8Array1 = new _Uint8Array(substr);
     onChunk(_Uint8Array1, closure_14);
   };
-  f127888 = f1278882;
+  f127903 = f1279032;
   function onData(buf2stringResult) {
-    f127888(buf2stringResult);
+    f127903(buf2stringResult);
     return !c3;
   }
   const str2 = request.method;

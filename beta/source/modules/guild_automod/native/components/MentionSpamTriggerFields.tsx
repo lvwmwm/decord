@@ -1,7 +1,7 @@
 // Module ID: 20135
 // Function ID: 20136
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 13557, 21, 5170, 19329, 1113, 7159, 5783, 7071, 7188, 20118, 7070, 2]
+// Dependencies: [32, 19, 17, 13557, 21, 5170, 19326, 1113, 7159, 5783, 7071, 7188, 20118, 7070, 2]
 // Exports: default
 
 // Module 20135 (MentionSpamTriggerFields)
@@ -49,7 +49,7 @@ export default function MentionSpamTriggerFields(rule) {
   const triggerMetadata = rule.triggerMetadata;
   ({ mentionTotalLimit, mentionRaidProtectionEnabled } = triggerMetadata);
   const tmp = closure_9();
-  let obj = rule(19329);
+  let obj = rule(19326);
   let hasMentionRaidLimitAccess = obj.useHasMentionRaidLimitAccess(rule.guildId);
   const intl = rule(1113).intl;
   const stringResult = intl.string(rule(1113).t["s/26oQ"]);

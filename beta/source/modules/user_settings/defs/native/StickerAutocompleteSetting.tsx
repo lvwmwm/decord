@@ -1,13 +1,13 @@
-// Module ID: 17822
-// Function ID: 17823
+// Module ID: 17819
+// Function ID: 17820
 // Name: StickerAutocompleteSetting
-// Dependencies: [8536, 11717, 1113, 4995, 17815, 2]
+// Dependencies: [8536, 11717, 1113, 4995, 17812, 2]
 
-// Module 17822 (StickerAutocompleteSetting)
+// Module 17819 (StickerAutocompleteSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import UserSettingsText from "UserSettingsText" /* 17815 */;
+import UserSettingsText from "UserSettingsText" /* 17812 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 

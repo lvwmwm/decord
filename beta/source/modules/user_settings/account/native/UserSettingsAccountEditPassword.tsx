@@ -1,10 +1,10 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17000
+// Function ID: 17001
 // Name: UserSettingsAccountEditPassword
-// Dependencies: [19, 17, 5012, 7669, 1385, 1072, 21, 5170, 575, 5231, 7247, 7257, 12, 1252, 7256, 7262, 5874, 17004, 5783, 1113, 6191, 7181, 5790, 7259, 504, 38, 1499, 2]
+// Dependencies: [19, 17, 5012, 7669, 1385, 1072, 21, 5170, 575, 5231, 7247, 7257, 12, 1252, 7256, 7262, 5874, 17001, 5783, 1113, 6191, 7181, 5790, 7259, 504, 38, 1499, 2]
 // Exports: default
 
-// Module 17003 (UserSettingsAccountEditPassword)
+// Module 17000 (UserSettingsAccountEditPassword)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -19,7 +19,7 @@ import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreat
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7256 */;
 import showInvalidUsernameToastNative from "showInvalidUsernameToastNative" /* 7257 */;
 import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7262 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17004 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17001 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 5012 */;

@@ -1,10 +1,10 @@
-// Module ID: 17919
-// Function ID: 17920
+// Module ID: 17916
+// Function ID: 17917
 // Name: CopyClientInfoSetting
 // Dependencies: [11534, 21, 1376, 5406, 13462, 7451, 5868, 1113, 7926, 7461, 7459, 7415, 1377, 5887, 5127, 11717, 7001, 4995, 2]
 // Exports: getClientInfoString
 
-// Module 17919 (CopyClientInfoSetting)
+// Module 17916 (CopyClientInfoSetting)
 import intl8 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import UserSettings from "UserSettings" /* 4995 */;

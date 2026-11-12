@@ -1,9 +1,9 @@
-// Module ID: 18174
-// Function ID: 18175
+// Module ID: 18171
+// Function ID: 18172
 // Name: DesignSystemTagGroupSetting
-// Dependencies: [8536, 1072, 11717, 18175, 2]
+// Dependencies: [8536, 1072, 11717, 18172, 2]
 
-// Module 18174 (DesignSystemTagGroupSetting)
+// Module 18171 (DesignSystemTagGroupSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;

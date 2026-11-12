@@ -1,17 +1,17 @@
-// Module ID: 17432
-// Function ID: 17433
+// Module ID: 17429
+// Function ID: 17430
 // Name: useYouBarMargins
-// Dependencies: [17433, 5349, 1627, 1357, 5756, 575, 11412, 2]
+// Dependencies: [17430, 5349, 1627, 11412, 1357, 5756, 575, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 17432 (useYouBarMargins)
+// Module 17429 (useYouBarMargins)
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import useChatLayoutDefault from "useChatLayout" /* 5349 */;
 import useToken from "useToken" /* 5756 */;
 import useVoicePanelDockHeightDefault from "useVoicePanelDockHeight" /* 11412 */;
-import YouBarConstants from "YouBarConstants" /* 17433 */;
+import YouBarConstants from "YouBarConstants" /* 17430 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -21,13 +21,17 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/h
 
 export function useYouBarHorizontalMargin() {
   let tmp4;
-  if (useChatLayoutDefault().isChatBesideChannelList) {
+  const isChatBesideChannelList = useChatLayoutDefault().isChatBesideChannelList;
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  if (isChatBesideChannelList) {
     tmp4 = React3;
   } else {
-    if (tmp2 > 0) {
+    if (bottom > 0) {
       const obj = utils_PlatformUtils;
       if (obj.isIOS()) {
-        tmp4 = _false;
+        if (!tmp2) {
+          tmp4 = _false;
+        }
       }
     }
     tmp4 = React3;

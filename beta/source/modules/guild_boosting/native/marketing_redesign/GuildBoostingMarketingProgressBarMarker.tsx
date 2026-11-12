@@ -1,10 +1,10 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15789
+// Function ID: 15790
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1072, 21, 15793, 15794, 15795, 5170, 575, 5401, 1652, 5167, 5177, 5793, 14433, 5874, 11782, 5783, 8567, 2]
+// Dependencies: [19, 17, 1072, 21, 15790, 15791, 15792, 5170, 575, 5401, 1652, 5167, 5177, 5793, 14429, 5874, 11782, 5783, 8567, 2]
 // Exports: default
 
-// Module 15792 (GuildBoostingMarketingProgressBarMarker)
+// Module 15789 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,9 +12,9 @@ import useThemeDefault from "useTheme" /* 5401 */;
 import spring_spring from "spring/spring" /* 5793 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11782 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15793 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15794 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15795 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15790 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15791 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15792 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -116,7 +116,7 @@ function ProgressBarMarkerInnerContent(arg0) {
   if (tier !== BoostedGuildTiers.NONE) {
     let tmp23Result;
     if (isDisabled) {
-      tmp23Result = tmp23(tmp5(14433).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+      tmp23Result = tmp23(tmp5(14429).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
     } else {
       obj2 = { source: obj2[tier], style: items3 };
       items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];

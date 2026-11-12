@@ -1,7 +1,7 @@
 // Module ID: 20021
 // Function ID: 20022
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1072, 7825, 21, 5170, 575, 1627, 20022, 1252, 7048, 5783, 1113, 2664, 17137, 5790, 2]
+// Dependencies: [19, 17, 1072, 7825, 21, 5170, 575, 1627, 20022, 1252, 7048, 5783, 1113, 2664, 17134, 5790, 2]
 // Exports: default
 
 // Module 20021 (ConnectGuardianModal)
@@ -101,7 +101,7 @@ export default function ConnectGuardianModal(route) {
     items4 = [closure_7(Text3, obj8), ];
     const obj10 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
     ({ linkCode: obj9.linkCode, expiresAt: obj9.expiresAt, refresh: obj9.onRefresh } = connectGuardianGate);
-    items4[1] = closure_7(onComplete(17137).ConnectGuardianCard, obj10);
+    items4[1] = closure_7(onComplete(17134).ConnectGuardianCard, obj10);
     items3[1] = closure_8(View, obj7);
     const obj11 = { style: tmp.grow };
     items3[2] = closure_7(View, obj11);

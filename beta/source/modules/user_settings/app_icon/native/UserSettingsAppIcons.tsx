@@ -1,16 +1,16 @@
-// Module ID: 17887
-// Function ID: 17888
+// Module ID: 17884
+// Function ID: 17885
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 10134, 5195, 21, 5170, 504, 15657, 2107, 7420, 16810, 5869, 1113, 16811, 6872, 5196, 5198, 5200, 10060, 10061, 9908, 8279, 17888, 10441, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 10134, 5195, 21, 5170, 504, 15654, 2107, 7420, 16807, 5869, 1113, 16808, 6872, 5196, 5198, 5200, 10060, 10061, 9908, 8279, 17885, 10441, 2]
 
-// Module 17887 (UserSettingsAppIcons)
+// Module 17884 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7420 */;
 import openPremiumModalDefault from "openPremiumModal" /* 10060 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10061 */;
 import AppIconConstants from "AppIconConstants" /* 10134 */;
-import AppIconRowsDefault from "AppIconRows" /* 17888 */;
+import AppIconRowsDefault from "AppIconRows" /* 17885 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -320,7 +320,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   obj = stateFromStores(504);
   let items = [setPending];
   stateFromStores = obj.useStateFromStores(items, () => setPending.getCurrentUser());
-  let obj2 = stateFromStores(15657);
+  let obj2 = stateFromStores(15654);
   importDefault = obj2.useCurrentAppIcon();
   let obj3 = stateFromStores(2107);
   const isPremiumResult = obj3.isPremium(stateFromStores);

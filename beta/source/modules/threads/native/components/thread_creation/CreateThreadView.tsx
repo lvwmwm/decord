@@ -1,9 +1,9 @@
-// Module ID: 19061
-// Function ID: 19062
+// Module ID: 19058
+// Function ID: 19059
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 7810, 7939, 1072, 21, 5170, 575, 9899, 8446, 7420, 7445, 1627, 5767, 10887, 8749, 19062, 7462, 1113, 19064, 14014, 13987, 14487, 11423, 1500, 1252, 5921, 5354, 1099, 10358, 19063, 5355, 2]
+// Dependencies: [5, 32, 19, 17, 7810, 7939, 1072, 21, 5170, 575, 9899, 8446, 7420, 7445, 1627, 5767, 10887, 8749, 19059, 7462, 1113, 19061, 14014, 13987, 14483, 11423, 1500, 1252, 5921, 5354, 1099, 10358, 19060, 5355, 2]
 
-// Module 19061 (CreateThreadView)
+// Module 19058 (CreateThreadView)
 import nativeDefault from "native" /* 575 */;
 import DraftStore from "DraftStore" /* 7810 */;
 import SlowmodeStore from "SlowmodeStore" /* 7939 */;
@@ -268,7 +268,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
   obj9 = { style: tmp.options, children: items7 };
   let obj10 = { style: tmp.optionsInner, children: items6 };
   const obj11 = { style: tmp.threadIconContainer, children: closure_13(tmp2(8749).ThreadIcon, { size: "lg" }) };
-  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(19062), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
+  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(19059), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
   let tmp23Result = null;
   const tmp25 = closure_7;
   if (!isForumLikeChannelResult) {
@@ -309,7 +309,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
     const obj15 = { style: tmp.border };
     items8 = [tmp23(tmp24, obj15), ];
     const obj16 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items8[1] = closure_13(threadSettingsDraft(19064).ThreadCreationStarterMessage, obj16);
+    items8[1] = closure_13(threadSettingsDraft(19061).ThreadCreationStarterMessage, obj16);
     tmp22Result = tmp22(tmp24, obj14);
   }
   items7[1] = tmp22Result;
@@ -324,7 +324,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
   const obj19 = { ref, channel: parentChannel, onJumpToPresent, screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: callback1 };
   items5[3] = closure_13(parentChannel(13987), obj19);
   const obj20 = { channelId: parentChannel.id };
-  items5[4] = closure_13(parentChannel(14487), obj20);
+  items5[4] = closure_13(parentChannel(14483), obj20);
   items3[1] = closure_14(tmp24, obj6);
   return closure_14(AnalyticsLocationProvider, obj5);
 }

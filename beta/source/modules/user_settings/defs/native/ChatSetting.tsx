@@ -1,12 +1,12 @@
-// Module ID: 17808
-// Function ID: 17809
+// Module ID: 17805
+// Function ID: 17806
 // Name: ChatSetting
-// Dependencies: [1072, 11717, 1113, 17809, 17811, 2]
+// Dependencies: [1072, 11717, 1113, 17806, 17808, 2]
 
-// Module 17808 (ChatSetting)
+// Module 17805 (ChatSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import ImageTextIcon from "ImageTextIcon" /* 17809 */;
+import ImageTextIcon from "ImageTextIcon" /* 17806 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 

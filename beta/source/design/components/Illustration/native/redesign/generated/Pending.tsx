@@ -1,10 +1,10 @@
-// Module ID: 19384
-// Function ID: 19385
+// Module ID: 19381
+// Function ID: 19382
 // Name: Pending
-// Dependencies: [19, 21, 8913, 19385, 19386, 19387, 5177, 5874, 2]
+// Dependencies: [19, 21, 8913, 19382, 19383, 19384, 5177, 5874, 2]
 // Exports: Pending, getPendingSource, usePendingSource
 
-// Module 19384 (Pending)
+// Module 19381 (Pending)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5177 */;
 import FastImageDefault from "FastImage" /* 5874 */;

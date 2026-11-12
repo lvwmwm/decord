@@ -1,10 +1,10 @@
-// Module ID: 15004
-// Function ID: 15005
+// Module ID: 15001
+// Function ID: 15002
 // Name: GuildTagCreateGuildListBottomSheet
 // Dependencies: [19, 5390, 21, 504, 7071, 1113, 7053, 5406, 14326, 5381, 7459, 7415, 7159, 2]
 // Exports: default
 
-// Module 15004 (GuildTagCreateGuildListBottomSheet)
+// Module 15001 (GuildTagCreateGuildListBottomSheet)
 import intl3 from "intl" /* 1113 */;
 import Powerups from "Powerups" /* 5381 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;

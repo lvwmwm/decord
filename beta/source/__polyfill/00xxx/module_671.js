@@ -13,10 +13,10 @@ let fn = function n() {
     obj = chroma$k(color);
     const rgbResult = obj.rgb();
     obj2 = chroma$k(color);
-    return chroma$k.rgb(f122346(rgbResult, obj2.rgb()));
+    return chroma$k.rgb(f122361(rgbResult, obj2.rgb()));
   };
-  const f1223462 = (arg0, arg1) => {
-    const items = [f122346(arg0[0], arg1[0]), f122346(arg0[1], arg1[1]), f122346(arg0[2], arg1[2])];
+  const f1223612 = (arg0, arg1) => {
+    const items = [f122361(arg0[0], arg1[0]), f122361(arg0[1], arg1[1]), f122361(arg0[2], arg1[2])];
     return items;
   };
   let obj = {};
@@ -3817,7 +3817,7 @@ let fn = function n() {
   };
   blend.dodge = normal;
   const f80384 = (arg0, arg1) => 255 * (1 - (1 - arg1 / 255) / (arg0 / 255));
-  const f122346 = f1223462;
+  const f122361 = f1223612;
   blend.burn = normal;
   pow = Math.pow;
   sin = Math.sin;

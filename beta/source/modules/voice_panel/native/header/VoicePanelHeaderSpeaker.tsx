@@ -1,7 +1,7 @@
 // Module ID: 19659
 // Function ID: 19660
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 19660, 5926, 5945, 19661, 5019, 5927, 1072, 21, 19662, 19615, 9334, 12136, 12054, 563, 15010, 12174, 19666, 1377, 9341, 5946, 1113, 9338, 9340, 19667, 15009, 5202, 5003, 7056, 19559, 16167, 2]
+// Dependencies: [109, 19, 17, 19660, 5926, 5945, 19661, 5019, 5927, 1072, 21, 19662, 19612, 9334, 12136, 12054, 563, 15007, 12174, 19666, 1377, 9341, 5946, 1113, 9338, 9340, 19667, 15006, 5202, 5003, 7056, 19556, 16164, 2]
 
 // Module 19659 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
@@ -11,8 +11,8 @@ import PlatformUtils from "PlatformUtils" /* 1377 */;
 import dismissible_content from "dismissible_content" /* 5003 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5202 */;
 import NativeViewDefault from "NativeView" /* 7056 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 15010 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19559 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 15007 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19556 */;
 import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19660 */;
 import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19662 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -293,8 +293,8 @@ const memoResult = react.memo(function VoicePanelHeaderSpeaker(isConnectedToVoic
       let tmp9;
       let tmp = arg0;
       if (arg0 == null) {
-        tmp = { onPress, ref: "r" };
-        const obj = { onPress, ref: "r" };
+        tmp = { onPress, ref: "flexDirection" };
+        const obj = { onPress, ref: "flexDirection" };
       }
       const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
       tmp9 = !stateFromStores2;

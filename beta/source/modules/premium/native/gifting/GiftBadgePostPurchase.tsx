@@ -1,10 +1,10 @@
-// Module ID: 14716
-// Function ID: 14717
+// Module ID: 14713
+// Function ID: 14714
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8867, 14717, 5016, 21, 5170, 575, 1627, 6831, 5347, 5790, 13629, 1113, 2760, 14718, 5783, 10768, 504, 8859, 11628, 5408, 5409, 8872, 10770, 14719, 5202, 5003, 2]
+// Dependencies: [19, 17, 8867, 14714, 5016, 21, 5170, 575, 1627, 6831, 5347, 5790, 13629, 1113, 2760, 14715, 5783, 10768, 504, 8859, 11628, 5408, 5409, 8872, 10770, 14716, 5202, 5003, 2]
 // Exports: default
 
-// Module 14716 (GiftBadgePostPurchase)
+// Module 14713 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,10 +17,10 @@ import Text_Text from "Text/Text" /* 5783 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import BadgeId from "BadgeId" /* 8859 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8872 */;
-import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14718 */;
+import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14715 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8867 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14717 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14714 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const GiftingBadgeIconDefault = tmp(10770);
-const GiftingBadgeLevelUpProgressDefault = tmp(14719);
+const GiftingBadgeLevelUpProgressDefault = tmp(14716);
 function PostPurchaseFooter(onSendGift) {
   let GiftIcon;
   let intl;

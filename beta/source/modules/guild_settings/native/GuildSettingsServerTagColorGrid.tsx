@@ -1,7 +1,7 @@
 // Module ID: 20205
 // Function ID: 20206
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 8497, 21, 575, 5170, 1113, 6191, 5783, 20203, 20206, 16084, 12423, 17702, 2]
+// Dependencies: [19, 17, 8497, 21, 575, 5170, 1113, 6191, 5783, 20203, 20206, 16081, 12423, 17699, 2]
 // Exports: default
 
 // Module 20205 (GuildSettingsServerTagColorGrid)

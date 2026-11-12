@@ -1,10 +1,10 @@
-// Module ID: 18558
-// Function ID: 18559
+// Module ID: 18555
+// Function ID: 18556
 // Name: VoiceGuildTag
 // Dependencies: [19, 17, 1385, 8497, 21, 1377, 5170, 575, 504, 8840, 9408, 5783, 2]
 // Exports: default
 
-// Module 18558 (VoiceGuildTag)
+// Module 18555 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildTagConstants from "GuildTagConstants" /* 8497 */;

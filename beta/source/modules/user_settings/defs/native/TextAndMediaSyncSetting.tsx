@@ -1,9 +1,9 @@
-// Module ID: 17825
-// Function ID: 17826
+// Module ID: 17822
+// Function ID: 17823
 // Name: TextAndMediaSyncSetting
 // Dependencies: [1193, 8536, 504, 11717, 1113, 6096, 2]
 
-// Module 17825 (TextAndMediaSyncSetting)
+// Module 17822 (TextAndMediaSyncSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6096 */;

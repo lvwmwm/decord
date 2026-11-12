@@ -4124,7 +4124,7 @@ let tmp22 = (() => (function AsyncGunzip(arg0, arg1) {
   ];
   let tmp = closure_56;
   if (typeof tmp === "function") {
-    const f130425 = (arg0) => {
+    const f130440 = (arg0) => {
       let onmember = self.onmember;
       obj = self;
       if (onmember) {
@@ -4630,7 +4630,7 @@ let tmp27 = (() => {
             num2 = 2;
             if (self.p.length > 2) {
               closure_0 = self;
-              cb = function cb() { /* body not rendered: F130430 */ };
+              cb = function cb() { /* body not rendered: F130445 */ };
               num9 = 31;
               if (31 == self.p[0]) {
                 num3 = 139;
@@ -5637,7 +5637,7 @@ let tmp34 = (() => {
         obj = {};
       }
       callResult = closure_1_103.call(self, arg0);
-      tmp = new closure_1_68(obj, function() { /* body not rendered: F130431 */ });
+      tmp = new closure_1_68(obj, function() { /* body not rendered: F130446 */ });
       self.d = tmp;
       self.compression = 8;
       level = obj.level;
@@ -5694,7 +5694,7 @@ let tmp35 = (() => {
         obj = {};
       }
       callResult = closure_1_103.call(self, arg0);
-      tmp = new closure_1_69(obj, function() { /* body not rendered: F130432 */ });
+      tmp = new closure_1_69(obj, function() { /* body not rendered: F130447 */ });
       self.d = tmp;
       self.compression = 8;
       level = obj.level;
@@ -5876,7 +5876,7 @@ let tmp36 = (() => {
             items = [];
             items[0] = tmp34;
             closure_3 = items;
-            pAll_1 = function pAll_1() { /* body not rendered: F130433 */ };
+            pAll_1 = function pAll_1() { /* body not rendered: F130448 */ };
             c5 = self.d;
             self.d = 0;
             length = self.u.length;
@@ -5885,8 +5885,8 @@ let tmp36 = (() => {
             obj.f = arr;
             obj.u = tmp9;
             obj.o = arr3;
-            obj.t = function t() { /* body not rendered: F130434 */ };
-            obj.r = function r() { /* body not rendered: F130435 */ };
+            obj.t = function t() { /* body not rendered: F130449 */ };
+            obj.r = function r() { /* body not rendered: F130450 */ };
             if (typeof closure_42 === "function") {
               obj1 = {};
               tmp43 = arg0;
@@ -5911,7 +5911,7 @@ let tmp36 = (() => {
               }
               closure_7 = obj1;
               closure_8 = 0;
-              arg0.ondata = function ondata() { /* body not rendered: F130436 */ };
+              arg0.ondata = function ondata() { /* body not rendered: F130451 */ };
               u = self.u;
               arr1 = u.push(obj1);
             } else {
@@ -5980,8 +5980,8 @@ let tmp36 = (() => {
         } else {
           u = self.u;
           obj = { r: null, t: null };
-          obj.r = function r() { /* body not rendered: F130437 */ };
-          obj.t = function t() { /* body not rendered: F130438 */ };
+          obj.r = function r() { /* body not rendered: F130452 */ };
+          obj.t = function t() { /* body not rendered: F130453 */ };
           arr1 = u.push(obj);
         }
         num = 3;
@@ -6171,7 +6171,7 @@ let tmp38 = (() => {
   class UnzipInflate {
     constructor() {
       self = this;
-      tmp = new closure_1_72(function() { /* body not rendered: F130439 */ });
+      tmp = new closure_1_72(function() { /* body not rendered: F130454 */ });
       this.i = tmp;
       return;
     }
@@ -6200,14 +6200,14 @@ let tmp39 = (() => {
         tmp4 = closure_1_72;
         self4 = this;
         self5 = this;
-        tmp5 = new closure_1_72(function() { /* body not rendered: F130440 */ });
+        tmp5 = new closure_1_72(function() { /* body not rendered: F130455 */ });
         tmp6 = tmp5;
         self.i = tmp5;
       } else {
         tmp = closure_1_73;
         self2 = this;
         self3 = this;
-        tmp2 = new closure_1_73(function() { /* body not rendered: F130441 */ });
+        tmp2 = new closure_1_73(function() { /* body not rendered: F130456 */ });
         tmp3 = tmp2;
         self.i = tmp2;
         self.terminate = self.i.terminate;
@@ -6391,8 +6391,8 @@ let tmp40 = (() => {
                                 obj1 = { name: null, compression: null, start: null, terminate: null };
                                 obj1.name = tmp49;
                                 obj1.compression = tmp34;
-                                obj1.start = function start() { /* body not rendered: F139730 */ };
-                                obj1.terminate = function terminate() { /* body not rendered: F139731 */ };
+                                obj1.start = function start() { /* body not rendered: F139749 */ };
+                                obj1.terminate = function terminate() { /* body not rendered: F139750 */ };
                                 closure_6 = obj1;
                                 if (num31 >= 0) {
                                   obj1.size = num31;

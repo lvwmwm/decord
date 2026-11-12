@@ -1,7 +1,7 @@
 // Module ID: 19750
 // Function ID: 19751
 // Name: VoicePanelConnectButton
-// Dependencies: [19, 5019, 21, 5170, 575, 11394, 19666, 504, 1113, 6821, 6841, 8052, 6793, 6124, 19751, 19754, 19755, 15014, 19749, 5783, 2]
+// Dependencies: [19, 5019, 21, 5170, 575, 11394, 19666, 504, 1113, 6821, 6841, 8052, 6793, 6124, 19751, 19754, 19755, 15011, 19749, 5783, 2]
 // Exports: default
 
 // Module 19750 (VoicePanelConnectButton)
@@ -11,7 +11,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import useAlertStore from "useAlertStore" /* 6124 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6793 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8052 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 15014 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 15011 */;
 import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 19751 */;
 import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 19754 */;
 import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 19755 */;

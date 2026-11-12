@@ -262,7 +262,7 @@ class StopWatch {
     if (timestampProducer === undefined) {
       tmp = obj2;
     }
-    const merged = Object.assign({ startTime: "description", timePassed: false });
+    const merged = Object.assign({ startTime: "ip", timePassed: false });
     merged.timestampProducer = tmp;
     return merged;
   }
@@ -315,7 +315,7 @@ class StopWatch {
   }
   static startNew() {
     if (typeof StopWatch === "function") {
-      const merged = Object.assign({ startTime: "description", timePassed: false });
+      const merged = Object.assign({ startTime: "ip", timePassed: false });
       merged.timestampProducer = obj2;
       merged.start();
       return merged;
@@ -341,7 +341,7 @@ class TimeOut {
   constructor(timeout) {
     if (typeof StopWatch === "function") {
       const merged = Object.assign({ watch: null });
-      const merged1 = Object.assign({ startTime: "description", timePassed: false });
+      const merged1 = Object.assign({ startTime: "ip", timePassed: false });
       merged1.timestampProducer = obj2;
       merged[0] = merged1;
       merged.timeout = timeout;
@@ -374,7 +374,7 @@ class TimeOut {
       const self = this;
       if (typeof StopWatch === "function") {
         const merged = Object.assign({ watch: null });
-        const merged1 = Object.assign({ startTime: "description", timePassed: false });
+        const merged1 = Object.assign({ startTime: "ip", timePassed: false });
         merged1.timestampProducer = obj2;
         merged[0] = merged1;
         merged.timeout = timeout;
@@ -504,7 +504,7 @@ class DurationEnabled {
         tmp = obj2;
       }
       const obj = Object.create(tmp2);
-      const merged = Object.assign({ startTime: "description", timePassed: false });
+      const merged = Object.assign({ startTime: "ip", timePassed: false });
       merged.timestampProducer = tmp;
       obj.stopwatch = merged;
       obj.state = noiseCancellation;

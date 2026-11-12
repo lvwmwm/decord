@@ -1,34 +1,62 @@
 // Module ID: 16585
 // Function ID: 16586
 // Dependencies: []
-// Exports: getReactNativeDimensionsWithDimensions
 
 // Module 16585
+let map;
 
-export function getReactNativeDimensionsWithDimensions(value, value2) {
-  try {
-    let obj = {};
-    let obj2 = {};
-    if (value) {
-      const _Math = Math;
-      const _Math2 = Math;
-      ({ scale: obj3.screenScale, fontScale: obj3.screenFontScale } = value);
-      obj = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
-      const obj5 = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
-    }
-    const tmp3 = value2;
-    if (tmp3) {
-      const _Math3 = Math;
-      const _Math4 = Math;
-      ({ scale: obj4.windowScale, fontScale: obj4.windowFontScale } = value2);
-      obj2 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
-      const obj9 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
-    }
-    const obj10 = {};
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(obj2);
-    return obj10;
-  } catch (err) {
-    return null;
+
+export default function(arg0) {
+  map = arg0;
+  if (!map) {
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    map = new Map();
   }
-}
+  let obj = {
+    all: map,
+    on(arg0, arg1) {
+      const value = map.get(arg0);
+      const obj = map;
+      if (value) {
+        value.push(arg1);
+      } else {
+        const items = [arg1];
+        const result = obj.set(arg0, items);
+      }
+    },
+    off(arg0, arg1) {
+      const value = map.get(arg0);
+      const obj = map;
+      if (value) {
+        const tmp = arg1;
+        if (tmp) {
+          value.splice(value.indexOf(arg1) >>> 0, 1);
+        } else {
+          const result = obj.set(arg0, []);
+        }
+      }
+    },
+    emit(arg0, arg1) {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      const value = map.get(arg0);
+      const obj = map;
+      if (value) {
+        const substr = value.slice();
+        const mapped = substr.map((fn) => {
+          fn(closure_1);
+        });
+      }
+      const value2 = obj.get("*");
+      if (value2) {
+        const substr1 = value2.slice();
+        const mapped1 = substr1.map((fn) => {
+          fn(closure_0, closure_1);
+        });
+      }
+    }
+  };
+  return obj;
+};

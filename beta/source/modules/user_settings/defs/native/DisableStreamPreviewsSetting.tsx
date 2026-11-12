@@ -1,9 +1,9 @@
-// Module ID: 18275
-// Function ID: 18276
+// Module ID: 18272
+// Function ID: 18273
 // Name: DisableStreamPreviewsSetting
 // Dependencies: [8536, 4995, 11717, 1113, 2]
 
-// Module 18275 (DisableStreamPreviewsSetting)
+// Module 18272 (DisableStreamPreviewsSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;

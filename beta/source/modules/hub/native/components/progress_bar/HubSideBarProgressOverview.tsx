@@ -1,10 +1,10 @@
-// Module ID: 18643
-// Function ID: 18644
+// Module ID: 18640
+// Function ID: 18641
 // Name: HubSideBarProgressOverview
-// Dependencies: [19, 9244, 21, 14508, 1113, 14318, 16150, 5406, 14512, 2118, 2]
+// Dependencies: [19, 9244, 21, 14504, 1113, 14318, 16147, 5406, 14508, 2118, 2]
 // Exports: default
 
-// Module 18643 (HubSideBarProgressOverview)
+// Module 18640 (HubSideBarProgressOverview)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
@@ -21,16 +21,16 @@ const result = size.fileFinishedImporting("modules/hub/native/components/progres
 
 export default function HubSidebarProgressOverview(guild) {
   guild = guild.guild;
-  let obj = guild(14508);
+  let obj = guild(14504);
   const hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
-  let obj2 = guild(14508);
+  let obj2 = guild(14504);
   const nextHubProgressStep = obj2.getNextHubProgressStep(hubProgressBarCompletedSteps);
   if (null == nextHubProgressStep) {
     return null;
   } else {
     let formatToPlainStringResult;
     size = hubProgressBarCompletedSteps.size;
-    const tmpResult = guild(14508);
+    const tmpResult = guild(14504);
     const hubProgressTitleForStep = tmpResult.getHubProgressTitleForStep(nextHubProgressStep);
     if (size < total) {
       const intl2 = tmp(1113).intl;
@@ -45,11 +45,11 @@ export default function HubSidebarProgressOverview(guild) {
     }
     const _Math = Math;
     const bound = Math.max(tmp(14318).MIN_PROGRESS_PERCENT, 100 * size / tmp12);
-    return jsx(guild(16150).GuildProgressOverviewView, {
+    return jsx(guild(16147).GuildProgressOverviewView, {
       onPress: function handlePress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild, analyticsSource: "Channels Sidebar" };
-          obj.openLazy(asyncRequire(14512, dependencyMap.paths), _false, obj2);
+          obj.openLazy(asyncRequire(14508, dependencyMap.paths), _false, obj2);
         },
       title: hubProgressTitleForStep,
       subtitle: formatToPlainStringResult,

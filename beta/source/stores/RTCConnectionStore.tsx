@@ -1,7 +1,7 @@
 // Module ID: 5925
 // Function ID: 5926
 // Name: RTCConnectionStore
-// Dependencies: [5926, 502, 5928, 1072, 5929, 3, 5931, 6043, 572, 16002, 5014, 5933, 504, 16003, 1252, 2118, 2]
+// Dependencies: [5926, 502, 5928, 1072, 5929, 3, 5931, 6043, 572, 15999, 5014, 5933, 504, 16000, 1252, 2118, 2]
 
 // Module 5925 (RTCConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -10,8 +10,8 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import Constants2 from "Constants" /* 5929 */;
 import TimeUtils from "TimeUtils" /* 5933 */;
-import VoiceStateAnalyticsDefault from "VoiceStateAnalytics" /* 16002 */;
-import trackVideoToggle from "trackVideoToggle" /* 16003 */;
+import VoiceStateAnalyticsDefault from "VoiceStateAnalytics" /* 15999 */;
+import trackVideoToggle from "trackVideoToggle" /* 16000 */;
 import GameConsoleStore from "GameConsoleStore" /* 5926 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5928 */;

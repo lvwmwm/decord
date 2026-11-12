@@ -1,9 +1,9 @@
-// Module ID: 18151
-// Function ID: 18152
+// Module ID: 18148
+// Function ID: 18149
 // Name: DesignSystemsTabsSetting
-// Dependencies: [8536, 1072, 11717, 18152, 2]
+// Dependencies: [8536, 1072, 11717, 18149, 2]
 
-// Module 18151 (DesignSystemsTabsSetting)
+// Module 18148 (DesignSystemsTabsSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;

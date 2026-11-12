@@ -1,10 +1,10 @@
-// Module ID: 19624
-// Function ID: 19625
+// Module ID: 19621
+// Function ID: 19622
 // Name: trackVoicePanelTabOpened
 // Dependencies: [6930, 1072, 1252, 2]
 // Exports: default
 
-// Module 19624 (trackVoicePanelTabOpened)
+// Module 19621 (trackVoicePanelTabOpened)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ReadStateStore from "ReadStateStore" /* 6930 */;

@@ -1,10 +1,10 @@
-// Module ID: 17255
-// Function ID: 17256
+// Module ID: 17252
+// Function ID: 17253
 // Name: OrbWalletUtils
 // Dependencies: [19, 1074, 1387, 7445, 7420, 7716, 5406, 7828, 2]
 // Exports: navigateToShopFromOrbWallet, useOpenNitroCheckoutFromOrbWallet, useOrbWalletAnalyticsPage
 
-// Module 17255 (OrbWalletUtils)
+// Module 17252 (OrbWalletUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;

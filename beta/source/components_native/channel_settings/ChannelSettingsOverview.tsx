@@ -1,10 +1,10 @@
-// Module ID: 19296
-// Function ID: 19297
+// Module ID: 19293
+// Function ID: 19294
 // Name: ChannelSettingsOverview
-// Dependencies: [5, 19, 17, 5104, 5023, 5037, 8302, 5019, 5100, 5041, 5102, 6930, 19297, 5112, 1385, 19298, 1072, 5026, 7551, 1112, 1083, 21, 5170, 575, 504, 11141, 19299, 1113, 5231, 12, 19300, 5921, 7097, 9935, 8301, 5869, 9150, 7552, 5116, 1403, 5177, 9146, 6123, 5783, 9187, 5808, 6194, 7516, 13543, 19301, 6611, 5347, 19302, 7181, 7349, 1377, 7159, 7462, 6821, 16200, 19303, 9900, 5109, 9151, 19304, 19305, 7157, 7160, 5028, 5030, 2185, 6210, 7071, 7540, 9172, 9321, 11305, 5883, 5029, 19311, 7357, 10960, 19312, 11139, 8304, 5896, 10919, 8771, 11143, 5881, 5894, 6191, 11304, 8131, 9692, 7076, 18584, 8279, 1499, 2]
+// Dependencies: [5, 19, 17, 5104, 5023, 5037, 8302, 5019, 5100, 5041, 5102, 6930, 19294, 5112, 1385, 19295, 1072, 5026, 7551, 1112, 1083, 21, 5170, 575, 504, 11141, 19296, 1113, 5231, 12, 19297, 5921, 7097, 9935, 8301, 5869, 9150, 7552, 5116, 1403, 5177, 9146, 6123, 5783, 9187, 5808, 6194, 7516, 13543, 19298, 6611, 5347, 19299, 7181, 7349, 1377, 7159, 7462, 6821, 16197, 19300, 9900, 5109, 9151, 19301, 19302, 7157, 7160, 5028, 5030, 2185, 6210, 7071, 7540, 9172, 9321, 11305, 5883, 5029, 19308, 7357, 10960, 19309, 11139, 8304, 5896, 10919, 8771, 11143, 5881, 5894, 6191, 11304, 8131, 9692, 7076, 18581, 8279, 1499, 2]
 // Exports: default
 
-// Module 19296 (ChannelSettingsOverview)
+// Module 19293 (ChannelSettingsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -49,13 +49,13 @@ import GroupPlusIcon from "GroupPlusIcon" /* 11139 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 11143 */;
 import AvailableForumTagDefault from "AvailableForumTag" /* 11304 */;
 import threadActionSheets from "threadActionSheets" /* 11305 */;
-import TableSliderRow2 from "TableSliderRow" /* 16200 */;
-import ChannelSettingsConstants from "ChannelSettingsConstants" /* 19298 */;
-import SecondsSliderUtils from "SecondsSliderUtils" /* 19299 */;
-import RegionActionCreatorsDefault from "RegionActionCreators" /* 19300 */;
-import ChannelSettingsUtils from "ChannelSettingsUtils" /* 19302 */;
-import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 19303 */;
-import VoiceChannelAppSettingDefault from "VoiceChannelAppSetting" /* 19305 */;
+import TableSliderRow2 from "TableSliderRow" /* 16197 */;
+import ChannelSettingsConstants from "ChannelSettingsConstants" /* 19295 */;
+import SecondsSliderUtils from "SecondsSliderUtils" /* 19296 */;
+import RegionActionCreatorsDefault from "RegionActionCreators" /* 19297 */;
+import ChannelSettingsUtils from "ChannelSettingsUtils" /* 19299 */;
+import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 19300 */;
+import VoiceChannelAppSettingDefault from "VoiceChannelAppSetting" /* 19302 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5104 */;
@@ -66,7 +66,7 @@ import GuildChannelStore from "GuildChannelStore" /* 5100 */;
 import GuildStore from "GuildStore" /* 5041 */;
 import PermissionStore from "PermissionStore" /* 5102 */;
 import ReadStateStore from "ReadStateStore" /* 6930 */;
-import RegionStore from "RegionStore" /* 19297 */;
+import RegionStore from "RegionStore" /* 19294 */;
 import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
@@ -891,7 +891,7 @@ class ChannelSettingsOverview extends PureComponent {
         const obj = { helperText: stringResult, hasIcons: false, children: closure_47(TableSliderRow, obj2) };
         const TableRowGroup = tmp8(7159).TableRowGroup;
         obj2 = { label: intl3.string(tmp8(1113).t.piZgKF), value: self._cooldown, minValue: 0, maxValue: length.length - 1, onChange: self.handleSlowmodeChange, formatValue: formatSlowmodeCooldown };
-        TableSliderRow = tmp8(16200).TableSliderRow;
+        TableSliderRow = tmp8(16197).TableSliderRow;
         intl3 = tmp8(1113).intl;
         push(closure_47(TableRowGroup, obj, "slowmode-section"));
         return items;
@@ -925,7 +925,7 @@ class ChannelSettingsOverview extends PureComponent {
           tmp5 = tmp;
         }
         const obj = { title: intl2.string(tmp5(1113).t.FGjMZS), description: stringResult, selected: autoArchiveDuration, channel, onSelectDuration: this.handleAutoArchiveDurationChange };
-        const AutoArchiveDurationOptions = tmp5(19303).AutoArchiveDurationOptions;
+        const AutoArchiveDurationOptions = tmp5(19300).AutoArchiveDurationOptions;
         intl2 = tmp5(1113).intl;
         const threadMetadata = channel.threadMetadata;
         autoArchiveDuration = undefined;
@@ -1010,7 +1010,7 @@ class ChannelSettingsOverview extends PureComponent {
         const tmp6 = importDefault;
         const tmp8 = AppChannelApplicationSelectorDefault;
         if (!canManageChannels) {
-          tmp9 = tmp6(19304)(channel);
+          tmp9 = tmp6(19301)(channel);
         }
         return tmp5(tmp8, obj);
       }
@@ -1233,7 +1233,7 @@ class ChannelSettingsOverview extends PureComponent {
         }
         const obj = { description: formatResult, hasIcons: false, children: closure_47(TableSliderRow, obj2) };
         obj2 = { label: intl2.string(intl9.t["/AoSGN"]), value: Math.min(channel.userLimit, tmp), minValue: 0, maxValue: tmp, onChange: this.handleUserLimitChange, formatValue: formatUserLimit };
-        TableSliderRow = tmp3(16200).TableSliderRow;
+        TableSliderRow = tmp3(16197).TableSliderRow;
         intl2 = tmp3(1113).intl;
         const _Math = Math;
         push(closure_47(TableRowGroup, obj, "channel-user-limit"));
@@ -1461,7 +1461,7 @@ class ChannelSettingsOverview extends PureComponent {
       }
       obj3 = { text: stringResult };
       if (channel.defaultForumLayout === self(5029).ForumLayout.GRID) {
-        tmp2Result = tmp2(tmp3(19311).GridSquareIcon, {});
+        tmp2Result = tmp2(tmp3(19308).GridSquareIcon, {});
       } else {
         tmp2Result = tmp2(tmp3(7357).ListViewIcon, {});
       }
@@ -1890,7 +1890,7 @@ class ChannelSettingsOverview extends PureComponent {
           tmp7 = self;
         }
         const TableRowGroup = tmp7(7159).TableRowGroup;
-        const obj2 = { icon: closure_47(tmp7(18584).FolderPlusIcon, {}), label: intl2.string(tmp7(1113).t.vHCZwr), trailing: closure_47(tmp7(7071).TableRow.TrailingText, obj3), arrow: canManageParent, onPress: fn };
+        const obj2 = { icon: closure_47(tmp7(18581).FolderPlusIcon, {}), label: intl2.string(tmp7(1113).t.vHCZwr), trailing: closure_47(tmp7(7071).TableRow.TrailingText, obj3), arrow: canManageParent, onPress: fn };
         const TableRow = tmp7(7071).TableRow;
         intl2 = tmp7(1113).intl;
         fn = undefined;

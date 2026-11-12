@@ -1,7 +1,7 @@
 // Module ID: 19856
 // Function ID: 19857
 // Name: openChangelog
-// Dependencies: [5072, 5346, 6831, 17904, 2118, 2]
+// Dependencies: [5072, 5346, 6831, 17901, 2118, 2]
 // Exports: openChangelog
 
 // Module 19856 (openChangelog)
@@ -26,6 +26,6 @@ export function openChangelog() {
   }
   if (!isModalOpenResult) {
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(17904, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
+    obj2.pushLazy(asyncRequire(17901, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
   }
 }

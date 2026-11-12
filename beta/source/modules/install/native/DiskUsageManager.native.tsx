@@ -1,13 +1,13 @@
-// Module ID: 17933
-// Function ID: 17934
+// Module ID: 17930
+// Function ID: 17931
 // Name: DiskUsageManager
-// Dependencies: [5, 1385, 1072, 3, 1355, 510, 10361, 1377, 17934, 1252, 7763, 7383, 11261, 11262, 2]
+// Dependencies: [5, 1385, 1072, 3, 1355, 510, 10361, 1377, 17931, 1252, 7763, 7383, 11261, 11262, 2]
 
-// Module 17933 (DiskUsageManager)
+// Module 17930 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1355 */;
 import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10361 */;
-import react_nativeDefault from "react-native" /* 17934 */;
+import react_nativeDefault from "react-native" /* 17931 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,10 +1,10 @@
-// Module ID: 14863
-// Function ID: 14864
+// Module ID: 14860
+// Function ID: 14861
 // Name: ScheduledMessagesIntro
 // Dependencies: [17, 21, 5170, 575, 14273, 5783, 1113, 10686, 12795, 10979, 2]
 // Exports: default
 
-// Module 14863 (ScheduledMessagesIntro)
+// Module 14860 (ScheduledMessagesIntro)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;

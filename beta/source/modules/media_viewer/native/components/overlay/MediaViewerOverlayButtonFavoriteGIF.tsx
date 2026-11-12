@@ -1,9 +1,9 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15040
+// Function ID: 15041
 // Name: MediaViewerOverlayButtonFavoriteGIF
 // Dependencies: [19, 21, 10399, 10395, 5869, 1113, 10411, 10397, 1232, 8946, 9051, 10216, 575, 10214, 2]
 
-// Module 15043 (MediaViewerOverlayButtonFavoriteGIF)
+// Module 15040 (MediaViewerOverlayButtonFavoriteGIF)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;

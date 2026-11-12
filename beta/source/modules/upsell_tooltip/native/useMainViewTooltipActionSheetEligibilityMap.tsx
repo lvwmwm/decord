@@ -1,10 +1,10 @@
-// Module ID: 19462
-// Function ID: 19463
+// Module ID: 19459
+// Function ID: 19460
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 1246, 7741, 19436, 9747, 1231, 5013, 1387, 1082, 504, 19463, 1624, 8632, 19464, 8628, 7736, 19465, 15620, 10762, 19466, 10761, 10768, 5202, 5003, 19467, 19468, 19434, 13996, 17708, 2]
+// Dependencies: [32, 1246, 7741, 19433, 9747, 1231, 5013, 1387, 1082, 504, 19460, 1624, 8632, 19461, 8628, 7736, 19462, 15617, 10762, 19463, 10761, 10768, 5202, 5003, 19464, 19465, 19431, 13996, 17705, 2]
 // Exports: useMainViewTooltipActionSheetMap
 
-// Module 19462 (useMainViewTooltipActionSheetEligibilityMap)
+// Module 19459 (useMainViewTooltipActionSheetEligibilityMap)
 import get_initialized from "get initialized" /* 504 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
@@ -16,17 +16,17 @@ import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8632 */;
 import MarketingComponentType from "MarketingComponentType" /* 10762 */;
 import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10768 */;
 import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13996 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15620 */;
-import CustomTypingIndicatorNewPresetsExperiment from "CustomTypingIndicatorNewPresetsExperiment" /* 17708 */;
-import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 19434 */;
-import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 19463 */;
-import RecurringReferralReminderExperiment2 from "RecurringReferralReminderExperiment" /* 19464 */;
-import MobileBottomSheetCopy from "MobileBottomSheetCopy" /* 19466 */;
-import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 19468 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15617 */;
+import CustomTypingIndicatorNewPresetsExperiment from "CustomTypingIndicatorNewPresetsExperiment" /* 17705 */;
+import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 19431 */;
+import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 19460 */;
+import RecurringReferralReminderExperiment2 from "RecurringReferralReminderExperiment" /* 19461 */;
+import MobileBottomSheetCopy from "MobileBottomSheetCopy" /* 19463 */;
+import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 19465 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import ReferralTrialStore from "ReferralTrialStore" /* 7741 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19436 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19433 */;
 import PromotionsStore from "PromotionsStore" /* 9747 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 5013 */;
@@ -38,7 +38,7 @@ let PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
 let PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID;
 let PREMIUM_TIER_2_REACTIVATION_TRIAL_ID;
 let tmp4;
-const useGiftingPromotionAssetsReadyDefault = tmp4(19467);
+const useGiftingPromotionAssetsReadyDefault = tmp4(19464);
 ({ PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID } = PremiumConstants);
 const UserSettingsTypes = UserSettingsConstants.UserSettingsTypes;
 const MainViewTooltipActionSheets = "MainViewTooltipActionSheets";
@@ -72,12 +72,12 @@ export function useMainViewTooltipActionSheetMap() {
   let tmp33;
   let tmp8;
   let tmp9;
-  const f118539 = () => {
+  const f118535 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
   };
-  const f118541 = () => {
+  const f118537 = () => {
     const items = [ReferralTrialStore.getReferralsRemaining({ bypassFetch: true }), ReferralTrialStore.getRecurringReminderStateId()];
     return items;
   };
@@ -102,8 +102,8 @@ export function useMainViewTooltipActionSheetMap() {
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult20 = get_initialized;
-  [tmp8, tmp9] = tmpResult20.useStateFromStoresArray(items2, f118539);
-  _slicedToArray(tmpResult20.useStateFromStoresArray(items2, f118539), 2);
+  [tmp8, tmp9] = tmpResult20.useStateFromStoresArray(items2, f118535);
+  _slicedToArray(tmpResult20.useStateFromStoresArray(items2, f118535), 2);
   const tmpResult21 = usePremiumDiscountOffer;
   const premiumDiscountOffer = tmpResult21.usePremiumDiscountOffer();
   const items3 = [ApexExperimentStore];
@@ -117,11 +117,11 @@ export function useMainViewTooltipActionSheetMap() {
   const isEligibleSenderForReferralProgram = tmpResult23.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   const items4 = [ReferralTrialStore];
   const tmpResult24 = get_initialized;
-  [tmp14, tmp15] = tmpResult24.useStateFromStoresArray(items4, f118541);
-  _slicedToArray(tmpResult24.useStateFromStoresArray(items4, f118541), 2);
+  [tmp14, tmp15] = tmpResult24.useStateFromStoresArray(items4, f118537);
+  _slicedToArray(tmpResult24.useStateFromStoresArray(items4, f118537), 2);
   const tmpResult25 = usePremiumTrialOffer;
   const premiumTrialOffer = tmpResult25.usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(19465).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(19462).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const enabled = PremiumTrialOfferActionSheetKillSwitchExperiment.useConfig({ location: tmp5 }).enabled;
   const tmpResult26 = usePromotionMarketingComponent;
   const promotionMarketingComponent = tmpResult26.usePromotionMarketingComponent(tmp(10762).MarketingComponentType.MOBILE_BOTTOM_SHEET);

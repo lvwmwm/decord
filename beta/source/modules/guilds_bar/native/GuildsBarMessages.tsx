@@ -1,17 +1,17 @@
-// Module ID: 18756
-// Function ID: 18757
+// Module ID: 18753
+// Function ID: 18754
 // Name: GuildsBarMessages
-// Dependencies: [19, 9013, 5203, 1072, 21, 18757, 18742, 504, 18745, 575, 1113, 18758, 8747, 2]
+// Dependencies: [19, 9013, 5203, 1072, 21, 18754, 18739, 504, 18742, 575, 1113, 18755, 8747, 2]
 
-// Module 18756 (GuildsBarMessages)
+// Module 18753 (GuildsBarMessages)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18742 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18745 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 18757 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18739 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18742 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 18754 */;
 import react from "react" /* 19 */;
 import ICYMIStore from "ICYMIStore" /* 9013 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
@@ -46,7 +46,7 @@ const memoResult = react.memo(function GuildsBarMessages() {
   const colors = nativeDefault.colors;
   GuildsBarAnimatedItemWrapperDefault;
   const intl = tmp(1113).intl;
-  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren={null}>{null}</tmp5Result>;
+  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren="ondt">{"sort"}</tmp5Result>;
 });
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

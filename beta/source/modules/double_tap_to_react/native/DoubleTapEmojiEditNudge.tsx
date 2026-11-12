@@ -1,10 +1,10 @@
-// Module ID: 14811
-// Function ID: 14812
+// Module ID: 14808
+// Function ID: 14809
 // Name: DoubleTapEmojiEditNudge
 // Dependencies: [5, 19, 17, 5171, 1494, 1072, 1388, 21, 5170, 575, 4995, 8530, 1496, 504, 1411, 10094, 1252, 10106, 5783, 1113, 7396, 7076, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 14811 (DoubleTapEmojiEditNudge)
+// Module 14808 (DoubleTapEmojiEditNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

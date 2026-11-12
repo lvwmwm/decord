@@ -268,7 +268,7 @@ class FeedbackWidget {
                 let fileName1;
                 uri1 = undefined;
                 if (self._hasScreenshot()) {
-                  obj10.setState({ filename: "description", attachment: "isArray", attachmentUri: "isArray" });
+                  obj10.setState({ filename: "ip", attachment: "isArray", attachmentUri: "isArray" });
                 } else {
                   imagePicker = obj10.props.imagePicker;
                   if (imagePicker) {
@@ -471,7 +471,7 @@ class FeedbackWidget {
       FeedbackWidget._savedState = Object.assign({}, state.state);
     };
     tmp4Result._clearFormState = () => {
-      state._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "description", attachmentUri: "isArray" };
+      state._savedState = { name: "", email: "", description: "", filename: "disabled", attachment: "Boolean", attachmentUri: "isArray" };
     };
     tmp4Result._hasScreenshot = () => undefined !== state.state.filename && undefined !== state.state.attachment && undefined !== state.state.attachmentUri;
     tmp4Result._getUser = () => {
@@ -778,13 +778,13 @@ let items = [
 const entry1 = {
   key: "reset",
   value: function reset() {
-    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "description", attachmentUri: "isArray" };
+    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "disabled", attachment: "Boolean", attachmentUri: "isArray" };
   }
 };
 const items1 = [entry1];
 const importDefaultResultResult = _createClass(FeedbackWidget, items, items1);
 importDefaultResultResult.defaultProps = defaultConfiguration.defaultConfiguration;
-importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "description", attachmentUri: "isArray" };
+importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "disabled", attachment: "Boolean", attachmentUri: "isArray" };
 const FeedbackWidget_export = importDefaultResultResult;
 
 export { FeedbackWidget_export as FeedbackWidget };

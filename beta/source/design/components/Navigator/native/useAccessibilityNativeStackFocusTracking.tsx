@@ -1,10 +1,10 @@
-// Module ID: 16214
-// Function ID: 16215
+// Module ID: 16211
+// Function ID: 16212
 // Name: useAccessibilityNativeStackFocusTracking
 // Dependencies: [19, 6127, 6125, 2]
 // Exports: useAccessibilityNativeStackFocusTracking
 
-// Module 16214 (useAccessibilityNativeStackFocusTracking)
+// Module 16211 (useAccessibilityNativeStackFocusTracking)
 import react_nativeDefault from "react-native" /* 6125 */;
 import react_nativeDefault2 from "react-native" /* 6127 */;
 import react from "react" /* 19 */;

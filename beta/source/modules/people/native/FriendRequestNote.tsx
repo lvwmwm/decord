@@ -1,13 +1,13 @@
-// Module ID: 15315
-// Function ID: 15316
+// Module ID: 15312
+// Function ID: 15313
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 5112, 1072, 21, 5170, 575, 15316, 504, 15317, 5783, 5790, 7197, 1113, 2]
+// Dependencies: [32, 19, 17, 5112, 1072, 21, 5170, 575, 15313, 504, 15314, 5783, 5790, 7197, 1113, 2]
 // Exports: default
 
-// Module 15315 (FriendRequestNote)
+// Module 15312 (FriendRequestNote)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import PeopleListTracking from "PeopleListTracking" /* 15317 */;
+import PeopleListTracking from "PeopleListTracking" /* 15314 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

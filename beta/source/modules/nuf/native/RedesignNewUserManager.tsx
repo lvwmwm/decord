@@ -1,14 +1,14 @@
 // Module ID: 19994
 // Function ID: 19995
 // Name: RedesignNewUserManager
-// Dependencies: [5, 14516, 502, 5013, 7021, 19995, 5347, 5346, 19998, 7383, 9231, 19999, 6831, 20000, 2118, 1377, 2]
+// Dependencies: [5, 14512, 502, 5013, 7021, 19995, 5347, 5346, 19998, 7383, 9231, 19999, 6831, 20000, 2118, 1377, 2]
 
 // Module 19994 (RedesignNewUserManager)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
 import RootNavigationRef from "RootNavigationRef" /* 5347 */;
 import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 19995 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14516 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14512 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 5013 */;
 import NewUserStore from "NewUserStore" /* 7021 */;
@@ -19,7 +19,7 @@ let c4, c5;
 
 let closure_4;
 let hasOwnProperty;
-const f119947 = (item) => {
+const f119962 = (item) => {
   const obj = closure_1_0(closure_1_2[7]);
   const coerceModalRouteResult = obj.coerceModalRoute(item);
   let key;
@@ -47,7 +47,7 @@ function isNewUserModalInStack() {
   null == rootNavigationRef || !rootNavigationRef.isReady();
   if (someResult) {
     const routes = rootNavigationRef.getRootState().routes;
-    someResult = routes.some(f119947);
+    someResult = routes.some(f119962);
   }
   return someResult;
 }
@@ -86,7 +86,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
         const tmp5 = null == rootNavigationRef || !rootNavigationRef.isReady();
         if (someResult) {
           const routes = rootNavigationRef.getRootState().routes;
-          someResult = routes.some(f119947);
+          someResult = routes.some(f119962);
         }
         if (!someResult) {
           let str = "nuf-verification-gate";
@@ -263,7 +263,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
           null == rootNavigationRef || !rootNavigationRef.isReady();
           if (someResult) {
             const routes = rootNavigationRef.getRootState().routes;
-            someResult = routes.some(f119947);
+            someResult = routes.some(f119962);
           }
           if (!someResult) {
             require.startOnboarding();

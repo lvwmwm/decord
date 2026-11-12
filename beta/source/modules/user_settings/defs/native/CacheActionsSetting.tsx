@@ -1,9 +1,9 @@
-// Module ID: 17931
-// Function ID: 17932
+// Module ID: 17928
+// Function ID: 17929
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 6655, 21, 5406, 5869, 5891, 1113, 504, 4995, 17932, 7459, 7415, 7159, 7071, 12429, 17936, 17933, 11226, 7048, 17937, 5898, 11717, 2]
+// Dependencies: [5, 32, 19, 6655, 21, 5406, 5869, 5891, 1113, 504, 4995, 17929, 7459, 7415, 7159, 7071, 12429, 17933, 17930, 11226, 7048, 17934, 5898, 11717, 2]
 
-// Module 17931 (CacheActionsSetting)
+// Module 17928 (CacheActionsSetting)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import UserSettings from "UserSettings" /* 4995 */;
@@ -11,10 +11,10 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
 import BrowserManager from "BrowserManager" /* 5898 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 17932 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 17933 */;
-import CacheActionCreators from "CacheActionCreators" /* 17936 */;
-import FileWarningIcon from "FileWarningIcon" /* 17937 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 17929 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 17930 */;
+import CacheActionCreators from "CacheActionCreators" /* 17933 */;
+import FileWarningIcon from "FileWarningIcon" /* 17934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
@@ -36,7 +36,7 @@ const BottomSheetTitleHeader2 = tmp(7415);
 const ActionSheet2 = tmp(7459);
 const FileIcon = tmp(11226);
 const FileUpIcon = tmp(12429);
-const CacheActionsDiskUsageSectionDefault = tmp10(17932);
+const CacheActionsDiskUsageSectionDefault = tmp10(17929);
 function handleCacheActionPress(text) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };

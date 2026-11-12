@@ -1,13 +1,13 @@
-// Module ID: 17761
-// Function ID: 17762
+// Module ID: 17758
+// Function ID: 17759
 // Name: YouBarNameplateAccessibilitySetting
-// Dependencies: [5171, 8536, 11717, 1113, 504, 16615, 2]
+// Dependencies: [5171, 8536, 11717, 1113, 504, 16612, 2]
 
-// Module 17761 (YouBarNameplateAccessibilitySetting)
+// Module 17758 (YouBarNameplateAccessibilitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16615 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16612 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;

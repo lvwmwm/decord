@@ -1,10 +1,10 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 14886
+// Function ID: 14887
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 5170, 575, 9868, 9163, 14890, 11, 9866, 5883, 1113, 8771, 9870, 13244, 5896, 9017, 12300, 11453, 5783, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 9868, 9163, 14887, 11, 9866, 5883, 1113, 8771, 9870, 13244, 5896, 9017, 12300, 11453, 5783, 2]
 // Exports: default
 
-// Module 14889 (ApplicationDetails)
+// Module 14886 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import GlobeEarthIcon from "GlobeEarthIcon" /* 9163 */;
 import scopes from "scopes" /* 9866 */;
 import disclosures from "disclosures" /* 9868 */;
-import EmbedIcon from "EmbedIcon" /* 14890 */;
+import EmbedIcon from "EmbedIcon" /* 14887 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

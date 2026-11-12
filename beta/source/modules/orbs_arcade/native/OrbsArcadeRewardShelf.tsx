@@ -1,28 +1,28 @@
-// Module ID: 17415
-// Function ID: 17416
+// Module ID: 17412
+// Function ID: 17413
 // Name: OrbsArcadeRewardShelf
-// Dependencies: [19, 17, 2186, 17378, 21, 575, 5170, 5796, 504, 13688, 9626, 5783, 1113, 17385, 17396, 17408, 17379, 9659, 7733, 17416, 17401, 17407, 671, 17388, 17389, 5747, 14184, 2]
+// Dependencies: [19, 17, 2186, 17375, 21, 575, 5170, 5796, 504, 13688, 9626, 5783, 1113, 17382, 17393, 17405, 17376, 9659, 7733, 17413, 17398, 17404, 671, 17385, 17386, 5747, 14184, 2]
 // Exports: default
 
-// Module 17415 (OrbsArcadeRewardShelf)
+// Module 17412 (OrbsArcadeRewardShelf)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl4 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import ButtonConstants from "ButtonConstants" /* 5796 */;
 import useCountdownDefault from "useCountdown" /* 7733 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17379 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17385 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17388 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17389 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17396 */;
-import OrbsArcadeWindowUtils from "OrbsArcadeWindowUtils" /* 17401 */;
-import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 17408 */;
-import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 17416 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17376 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17382 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17385 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17386 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17393 */;
+import OrbsArcadeWindowUtils from "OrbsArcadeWindowUtils" /* 17398 */;
+import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 17405 */;
+import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 17413 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17378 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17375 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;

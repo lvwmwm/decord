@@ -1,7 +1,7 @@
 // Module ID: 14320
 // Function ID: 14321
 // Name: GuildProgressActionSheet
-// Dependencies: [5, 19, 17, 9188, 5100, 14313, 1072, 21, 5170, 575, 504, 14318, 5868, 1252, 14321, 14322, 9231, 14323, 1113, 9187, 8323, 14324, 5917, 5406, 1108, 14325, 14326, 7445, 14437, 5783, 5790, 7076, 7459, 1187, 2]
+// Dependencies: [5, 19, 17, 9188, 5100, 14313, 1072, 21, 5170, 575, 504, 14318, 5868, 1252, 14321, 14322, 9231, 14323, 1113, 9187, 8323, 14324, 5917, 5406, 1108, 14325, 14326, 7445, 14433, 5783, 5790, 7076, 7459, 1187, 2]
 // Exports: default
 
 // Module 14320 (GuildProgressActionSheet)
@@ -263,7 +263,7 @@ export default function GuildProgressActionSheet(guild) {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.BOOST
   };
-  obj11 = { uri: require("module_14437") };
+  obj11 = { uri: require("module_14433") };
   const tmp16 = require("ProgressItem");
   intl4 = guild(numFinished[18]).intl;
   const obj12 = { style: tmp.container, children: items5 };

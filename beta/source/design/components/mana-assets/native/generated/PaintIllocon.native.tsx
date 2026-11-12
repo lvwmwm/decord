@@ -1,27 +1,27 @@
-// Module ID: 14571
-// Function ID: 14572
+// Module ID: 14567
+// Function ID: 14568
 // Name: PaintIllocon
-// Dependencies: [19, 21, 14572, 14573, 14574, 7168, 5874, 2]
+// Dependencies: [19, 21, 14568, 14569, 14570, 7168, 5874, 2]
 // Exports: PaintIllocon
 
-// Module 14571 (PaintIllocon)
+// Module 14567 (PaintIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import react_native from "react-native" /* 7168 */;
-import _modDef14572 from "module_14572" /* 14572 */;
-import _modDef14573 from "module_14573" /* 14573 */;
-import _modDef14574 from "module_14574" /* 14574 */;
+import _modDef14568 from "module_14568" /* 14568 */;
+import _modDef14569 from "module_14569" /* 14569 */;
+import _modDef14570 from "module_14570" /* 14570 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14572 };
+let obj2 = { uri: _modDef14568 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef14573 };
-({ uri: _modDef14573 });
-obj[3] = { uri: _modDef14574 };
-({ uri: _modDef14574 });
+obj[2] = { uri: _modDef14569 };
+({ uri: _modDef14569 });
+obj[3] = { uri: _modDef14570 };
+({ uri: _modDef14570 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/PaintIllocon.native.tsx");
 

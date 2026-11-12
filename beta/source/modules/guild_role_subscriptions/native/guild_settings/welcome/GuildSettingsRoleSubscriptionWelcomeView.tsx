@@ -1,7 +1,7 @@
 // Module ID: 20319
 // Function ID: 20320
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 17554, 1072, 20320, 21, 5170, 575, 12797, 1113, 20321, 5783, 20322, 1499, 5406, 20324, 2118, 20324, 8279, 5790, 1187, 7185, 20330, 20343, 20368, 20371, 20376, 20377, 1500, 6192, 1260, 5746, 20318, 5868, 7388, 20378, 2]
+// Dependencies: [32, 19, 17, 17551, 1072, 20320, 21, 5170, 575, 12797, 1113, 20321, 5783, 20322, 1499, 5406, 20324, 2118, 20324, 8279, 5790, 1187, 7185, 20330, 20343, 20368, 20371, 20376, 20377, 1500, 6192, 1260, 5746, 20318, 5868, 7388, 20378, 2]
 // Exports: default
 
 // Module 20319 (GuildSettingsRoleSubscriptionWelcomeView)
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406
 import NavigatorConstants from "NavigatorConstants" /* 5746 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import ErrorBlockDefault from "ErrorBlock" /* 12797 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17554 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17551 */;
 import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 20320 */;
 import WarningNoticeDefault from "WarningNotice" /* 20321 */;
 import EligibilityActionSheet from "EligibilityActionSheet" /* 20324 */;

@@ -1,7 +1,7 @@
 // Module ID: 9058
 // Function ID: 9059
 // Name: InstantInviteActionCreators
-// Dependencies: [5, 7020, 6943, 5023, 502, 5019, 5100, 5082, 5041, 9059, 5906, 5102, 5112, 5203, 1385, 1072, 1097, 5026, 6802, 6796, 7990, 1403, 9071, 7494, 1111, 1099, 6793, 2118, 6079, 8052, 5950, 8011, 9072, 5839, 8736, 7032, 9073, 7359, 9074, 572, 15012, 6821, 15013, 6990, 1252, 1282, 6612, 1089, 6834, 1260, 5031, 5907, 6992, 6826, 7479, 4991, 15015, 15016, 11545, 6033, 6116, 15017, 15018, 1265, 15020, 2]
+// Dependencies: [5, 7020, 6943, 5023, 502, 5019, 5100, 5082, 5041, 9059, 5906, 5102, 5112, 5203, 1385, 1072, 1097, 5026, 6802, 6796, 7990, 1403, 9071, 7494, 1111, 1099, 6793, 2118, 6079, 8052, 5950, 8011, 9072, 5839, 8736, 7032, 9073, 7359, 9074, 572, 15009, 6821, 15010, 6990, 1252, 1282, 6612, 1089, 6834, 1260, 5031, 5907, 6992, 6826, 7479, 4991, 15012, 15013, 11545, 6033, 6116, 15014, 15015, 1265, 15017, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
 // Module 9058 (InstantInviteActionCreators)
@@ -24,8 +24,8 @@ import showNSFWGuildJoinGate2 from "showNSFWGuildJoinGate" /* 7479 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 7990 */;
 import GuildInviteFlags from "GuildInviteFlags" /* 9071 */;
 import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11545 */;
-import generateDynamicLinkDefault from "generateDynamicLink" /* 15018 */;
-import ProtocolUtilsDefault from "ProtocolUtils" /* 15020 */;
+import generateDynamicLinkDefault from "generateDynamicLink" /* 15015 */;
+import ProtocolUtilsDefault from "ProtocolUtils" /* 15017 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 5023 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -63,7 +63,7 @@ let tmp;
 let tmp13;
 let unpackModuleId;
 const errors_V6OrEarlierAPIErrorDefault = tmp13(4991);
-const resolveInviteDefault = tmp(15012);
+const resolveInviteDefault = tmp(15009);
 const f95222 = () => {
   let c4;
   let guildScheduledEvent;
@@ -1350,7 +1350,7 @@ body = {
         hasItem = features.includes(constants2.HUB);
       }
       if (hasItem) {
-        const obj6 = obj(15015);
+        const obj6 = obj(15012);
         obj6.onOpenHubInvite(flags);
       }
     }
@@ -1367,9 +1367,9 @@ body = {
     if (null != guild) {
       if (!hasFlagResult) {
         if (flags.new_member) {
-          const tmp6Result3 = dMFromUserId(15016);
+          const tmp6Result3 = dMFromUserId(15013);
           if (tmp6Result3.inviteGuildHasPendingMemberDisabledVerification(guild)) {
-            const tmp6Result4 = dMFromUserId(15016);
+            const tmp6Result4 = dMFromUserId(15013);
             const result1 = tmp6Result4.openVerificationModalOrTransitionToApplication(guild.id);
           }
         }
@@ -1520,7 +1520,7 @@ body = {
       const obj4 = require("DynamicLinkTemplates");
       inviteDynamicLinkTemplate = obj4.getDefaultDynamicLinkTemplate();
     }
-    const tmp18Result = tmp18(15018);
+    const tmp18Result = tmp18(15015);
     const attemptId = tmp18Result.generateAttemptId();
     inviteType = undefined;
     const tmp7Result5 = generateDynamicLinkDefault;

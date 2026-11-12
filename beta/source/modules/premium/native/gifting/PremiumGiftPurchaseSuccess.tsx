@@ -1,10 +1,10 @@
-// Module ID: 14760
-// Function ID: 14761
+// Module ID: 14757
+// Function ID: 14758
 // Name: PremiumGiftPurchaseSuccess
 // Dependencies: [19, 17, 6984, 1387, 1072, 21, 5170, 575, 10713, 1499, 10763, 6609, 10710, 9043, 5790, 1113, 2171, 7451, 5868, 10848, 5783, 9105, 5888, 2]
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 14760 (PremiumGiftPurchaseSuccess)
+// Module 14757 (PremiumGiftPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

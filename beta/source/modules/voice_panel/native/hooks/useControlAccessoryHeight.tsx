@@ -1,7 +1,7 @@
 // Module ID: 19771
 // Function ID: 19772
 // Name: useControlAccessoryHeight
-// Dependencies: [19, 11394, 19737, 1652, 19743, 19575, 19741, 2]
+// Dependencies: [19, 11394, 19737, 1652, 19743, 19572, 19741, 2]
 // Exports: default
 
 // Module 19771 (useControlAccessoryHeight)

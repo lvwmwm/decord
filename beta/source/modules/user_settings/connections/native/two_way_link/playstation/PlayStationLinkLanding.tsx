@@ -1,15 +1,15 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 14903
+// Function ID: 14904
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 14905, 1072, 21, 5170, 1113, 8777, 9850, 1499, 2185, 14907, 9852, 2]
+// Dependencies: [19, 14902, 1072, 21, 5170, 1113, 8777, 9850, 1499, 2185, 14904, 9852, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 14906 (PlayStationLinkLanding)
+// Module 14903 (PlayStationLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14905 */;
-import _modDef14907 from "module_14907" /* 14907 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14902 */;
+import _modDef14904 from "module_14904" /* 14904 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -50,7 +50,7 @@ export function PlayStationLinkLanding(platformType) {
     navigation.push(constants.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef14907 };
+    const obj = { uri: _modDef14904 };
     return obj;
   }, []);
   const TwoWayLinkLanding = navigation(9852).TwoWayLinkLanding;

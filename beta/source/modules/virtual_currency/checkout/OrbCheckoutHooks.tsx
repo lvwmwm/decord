@@ -1,10 +1,10 @@
-// Module ID: 15359
-// Function ID: 15360
+// Module ID: 15356
+// Function ID: 15357
 // Name: OrbCheckoutHooks
 // Dependencies: [19, 1385, 6984, 504, 2171, 7506, 9812, 11559, 7840, 4983, 9680, 2]
 // Exports: useOrbCheckoutRedemption, useOrbProductContext
 
-// Module 15359 (OrbCheckoutHooks)
+// Module 15356 (OrbCheckoutHooks)
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7840 */;
 import useRedeemVirtualCurrency from "useRedeemVirtualCurrency" /* 9680 */;
 import react from "react" /* 19 */;

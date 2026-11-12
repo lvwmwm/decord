@@ -1,10 +1,10 @@
-// Module ID: 15470
-// Function ID: 15471
+// Module ID: 15467
+// Function ID: 15468
 // Name: Separator
 // Dependencies: [8482, 5170, 575, 5340, 1380, 2]
 // Exports: generateSeparatorRowData
 
-// Module 15470 (Separator)
+// Module 15467 (Separator)
 import nativeDefault from "native" /* 575 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5340 */;

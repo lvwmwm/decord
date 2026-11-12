@@ -1,10 +1,10 @@
-// Module ID: 19317
-// Function ID: 19318
+// Module ID: 19314
+// Function ID: 19315
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 19318, 5019, 5082, 5076, 5041, 5102, 5112, 1385, 8049, 1072, 21, 5170, 575, 1499, 11837, 504, 9144, 9145, 9146, 1113, 5808, 6122, 9171, 5107, 6191, 7159, 7462, 8128, 7071, 11666, 11835, 7103, 5921, 9092, 9327, 19319, 19321, 2]
+// Dependencies: [32, 5, 19, 17, 19315, 5019, 5082, 5076, 5041, 5102, 5112, 1385, 8049, 1072, 21, 5170, 575, 1499, 11837, 504, 9144, 9145, 9146, 1113, 5808, 6122, 9171, 5107, 6191, 7159, 7462, 8128, 7071, 11666, 11835, 7103, 5921, 9092, 9327, 19316, 19318, 2]
 // Exports: default
 
-// Module 19317 (EasyChannelPermissionSettings)
+// Module 19314 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 575 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5921 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
@@ -17,7 +17,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19318 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19315 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import GuildRoleStore from "GuildRoleStore" /* 5076 */;

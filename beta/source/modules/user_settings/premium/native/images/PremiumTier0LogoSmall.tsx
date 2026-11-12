@@ -1,10 +1,10 @@
-// Module ID: 15686
-// Function ID: 15687
+// Module ID: 15683
+// Function ID: 15684
 // Name: PremiumTier0LogoSmall
 // Dependencies: [19, 21, 5756, 575, 8134, 2]
 // Exports: default
 
-// Module 15686 (PremiumTier0LogoSmall)
+// Module 15683 (PremiumTier0LogoSmall)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5756 */;

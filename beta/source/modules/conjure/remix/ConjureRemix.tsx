@@ -48,7 +48,7 @@ export function createConjureRemix(project, arg1, shareTicket) {
       let tmp3;
       function startRemix(id, guild_id, name, arg3, share_ticket) {
         let str;
-        const f143760 = () => "rejected";
+        const f143785 = () => "rejected";
         closure_0 = guild_id;
         closure_1 = arg3;
         function accept(comma) {
@@ -56,7 +56,7 @@ export function createConjureRemix(project, arg1, shareTicket) {
           if (closure_5 == null) {
             obj = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj.acceptRemix(closure_3, comma);
-            closure_5 = acceptRemixResult.catch(f143760);
+            closure_5 = acceptRemixResult.catch(f143785);
           }
           return closure_5;
         }
@@ -209,7 +209,7 @@ export function createConjureRemix(project, arg1, shareTicket) {
           if (closure_5 == null) {
             const tmp2Result = tmp2(tmp3[7]);
             const acceptRemixResult = tmp2Result.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f143760);
+            closure_5 = acceptRemixResult.catch(f143785);
           }
         });
         let obj2 = { name, guild_id, install_scope: str, remix_source_project_id: id.id, remix_share_ticket: share_ticket, nonce };
@@ -239,7 +239,7 @@ export function createConjureRemix(project, arg1, shareTicket) {
           if (closure_5 == null) {
             const obj2 = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj2.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f143760);
+            closure_5 = acceptRemixResult.catch(f143785);
           }
           return remix_preview;
         }, () => {

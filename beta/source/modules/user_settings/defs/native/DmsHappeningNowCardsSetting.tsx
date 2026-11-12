@@ -1,9 +1,9 @@
-// Module ID: 17672
-// Function ID: 17673
+// Module ID: 17669
+// Function ID: 17670
 // Name: DmsHappeningNowCardsSetting
 // Dependencies: [8536, 11717, 1113, 4995, 2]
 
-// Module 17672 (DmsHappeningNowCardsSetting)
+// Module 17669 (DmsHappeningNowCardsSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;

@@ -1,10 +1,10 @@
-// Module ID: 15625
-// Function ID: 15626
+// Module ID: 15622
+// Function ID: 15623
 // Name: navigateToSocialLayerStorefront
 // Dependencies: [5, 5041, 7503, 1072, 10821, 7501, 1099, 7626, 9058, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 15625 (navigateToSocialLayerStorefront)
+// Module 15622 (navigateToSocialLayerStorefront)
 import router_utils from "router_utils" /* 1099 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7501 */;
 import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10821 */;

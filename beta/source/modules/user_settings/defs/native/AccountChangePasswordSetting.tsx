@@ -1,9 +1,9 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 16998
+// Function ID: 16999
 // Name: AccountChangePasswordSetting
-// Dependencies: [8536, 1072, 11717, 1113, 17002, 2]
+// Dependencies: [8536, 1072, 11717, 1113, 16999, 2]
 
-// Module 17001 (AccountChangePasswordSetting)
+// Module 16998 (AccountChangePasswordSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;

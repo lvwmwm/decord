@@ -1,7 +1,7 @@
 // Module ID: 10340
 // Function ID: 10341
 // Name: LongPressMessageActionSheet
-// Dependencies: [32, 19, 8487, 10341, 10342, 5113, 502, 5041, 5102, 5175, 1072, 21, 7420, 7445, 5921, 10339, 8537, 10344, 504, 7540, 10345, 10346, 4995, 7538, 10347, 6230, 1403, 10348, 8804, 10349, 7461, 10350, 7459, 1624, 14807, 14808, 1113, 11247, 5887, 5894, 5883, 10383, 12981, 13655, 8749, 11334, 11150, 14812, 9566, 8770, 11141, 14814, 14816, 14818, 11325, 5896, 12300, 8747, 8766, 5889, 10675, 11532, 10237, 10836, 2798, 8757, 7554, 7557, 11865, 6215, 7560, 8507, 10304, 2]
+// Dependencies: [32, 19, 8487, 10341, 10342, 5113, 502, 5041, 5102, 5175, 1072, 21, 7420, 7445, 5921, 10339, 8537, 10344, 504, 7540, 10345, 10346, 4995, 7538, 10347, 6230, 1403, 10348, 8804, 10349, 7461, 10350, 7459, 1624, 14804, 14805, 1113, 11247, 5887, 5894, 5883, 10383, 12981, 13655, 8749, 11334, 11150, 14809, 9566, 8770, 11141, 14811, 14813, 14815, 11325, 5896, 12300, 8747, 8766, 5889, 10675, 11532, 10237, 10836, 2798, 8757, 7554, 7557, 11865, 6215, 7560, 8507, 10304, 2]
 // Exports: default
 
 // Module 10340 (LongPressMessageActionSheet)
@@ -15,8 +15,8 @@ import useAnalyticsLocations from "useAnalyticsLocations" /* 7420 */;
 import ActionSheet2 from "ActionSheet" /* 7459 */;
 import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 10339 */;
 import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 10350 */;
-import EmojiRowUtils from "EmojiRowUtils" /* 14807 */;
-import EmojiRowDefault from "EmojiRow" /* 14808 */;
+import EmojiRowUtils from "EmojiRowUtils" /* 14804 */;
+import EmojiRowDefault from "EmojiRow" /* 14805 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8487 */;

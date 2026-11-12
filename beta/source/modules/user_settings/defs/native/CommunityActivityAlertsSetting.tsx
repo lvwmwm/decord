@@ -1,9 +1,9 @@
-// Module ID: 17881
-// Function ID: 17882
+// Module ID: 17878
+// Function ID: 17879
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [11172, 8536, 1072, 504, 1113, 11717, 17882, 2]
+// Dependencies: [11172, 8536, 1072, 504, 1113, 11717, 17879, 2]
 
-// Module 17881 (CommunityActivityAlertsSetting)
+// Module 17878 (CommunityActivityAlertsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;

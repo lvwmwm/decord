@@ -1,9 +1,9 @@
-// Module ID: 17038
-// Function ID: 17039
+// Module ID: 17035
+// Function ID: 17036
 // Name: AccountWebAuthnRegisterSetting
-// Dependencies: [8536, 1072, 11717, 1113, 17039, 2]
+// Dependencies: [8536, 1072, 11717, 1113, 17036, 2]
 
-// Module 17038 (AccountWebAuthnRegisterSetting)
+// Module 17035 (AccountWebAuthnRegisterSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;

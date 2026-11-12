@@ -1,7 +1,7 @@
 // Module ID: 19673
 // Function ID: 19674
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 6931, 5925, 11395, 11393, 19524, 11398, 5837, 21, 19674, 1652, 10242, 1705, 11394, 504, 5756, 575, 11401, 12646, 5793, 11421, 19613, 7055, 6153, 19604, 12, 5179, 1113, 5231, 2]
+// Dependencies: [32, 19, 17, 6931, 5925, 11395, 11393, 19521, 11398, 5837, 21, 19674, 1652, 10242, 1705, 11394, 504, 5756, 575, 11401, 12646, 5793, 11421, 19610, 7055, 6153, 19601, 12, 5179, 1113, 5231, 2]
 
 // Module 19673 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
@@ -13,7 +13,7 @@ import CallConstants from "CallConstants" /* 5837 */;
 import react2 from "react" /* 6153 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11398 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19524 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19521 */;
 import VoicePanelCardDefault from "VoicePanelCard" /* 19674 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

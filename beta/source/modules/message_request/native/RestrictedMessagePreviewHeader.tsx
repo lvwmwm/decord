@@ -1,10 +1,10 @@
-// Module ID: 19393
-// Function ID: 19394
+// Module ID: 19390
+// Function ID: 19391
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 14287, 21, 5170, 575, 7420, 5226, 8854, 7451, 5868, 5406, 14455, 2118, 8866, 7627, 6831, 7076, 1113, 1187, 5783, 19376, 7053, 19394, 2]
+// Dependencies: [19, 17, 14287, 21, 5170, 575, 7420, 5226, 8854, 7451, 5868, 5406, 14451, 2118, 8866, 7627, 6831, 7076, 1113, 1187, 5783, 19373, 7053, 19391, 2]
 // Exports: default
 
-// Module 19393 (RestrictedMessagePreviewHeader)
+// Module 19390 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
         obj4.popWithKey(closure_1_5);
       }
     };
-    obj.openLazy(asyncRequire(14455, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+    obj.openLazy(asyncRequire(14451, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
   }, items2);
   let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(Avatar, obj5) };
   const PressableOpacity = channel(analyticsLocations[17]).PressableOpacity;

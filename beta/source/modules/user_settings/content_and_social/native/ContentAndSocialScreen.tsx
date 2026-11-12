@@ -1,10 +1,10 @@
-// Module ID: 18279
-// Function ID: 18280
+// Module ID: 18276
+// Function ID: 18277
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 8536, 1072, 21, 5170, 575, 1113, 2185, 18280, 17070, 14519, 18285, 7569, 11717, 17068, 16939, 18286, 5783, 2]
+// Dependencies: [32, 19, 17, 8536, 1072, 21, 5170, 575, 1113, 2185, 18277, 17067, 14515, 18282, 7569, 11717, 17065, 16936, 18283, 5783, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 18279 (ContentAndSocialScreen)
+// Module 18276 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl16 from "intl" /* 1113 */;
@@ -12,9 +12,9 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14519 */;
-import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 18280 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 18286 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14515 */;
+import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 18277 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 18283 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -42,7 +42,7 @@ let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/ContentAndSocialScreen.tsx");
 
 export default function ContentAndSocialSettings(route) {
-  const f115285 = () => {
+  const f115281 = () => {
     let tab;
     if (route != null) {
       const params = route.params;
@@ -62,9 +62,9 @@ export default function ContentAndSocialSettings(route) {
     ({ CONTENT_AND_SOCIAL_DISCORD: arr[0], CONNECTED_GAMES: arr[1] } = MobileUserSettings);
     return items;
   }, []);
-  const defaultIndex = _slicedToArray(react.useState(f115285), 2)[0];
+  const defaultIndex = _slicedToArray(react.useState(f115281), 2)[0];
   let items = [defaultIndex, memo];
-  _slicedToArray(react.useState(f115285), 2);
+  _slicedToArray(react.useState(f115281), 2);
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { defaultIndex, settings: memo };
@@ -189,7 +189,7 @@ export function DiscordPermissionsPage() {
     tmp16 = undefined;
     if (allServersOptionSelected) {
       if (tmp9) {
-        tmp16 = React4(tmp3(17070).MessageRequestsNotice, {});
+        tmp16 = React4(tmp3(17067).MessageRequestsNotice, {});
       }
     }
     items8[4] = obj15;
@@ -278,7 +278,7 @@ export function ConnectedGamesPage() {
     tmp7 = unpackModuleId(metroRequire, obj3);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React4(tmp2(16939), obj);
+    tmp7 = React4(tmp2(16936), obj);
   }
   return tmp7;
 }

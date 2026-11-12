@@ -1,10 +1,10 @@
-// Module ID: 19077
-// Function ID: 19078
+// Module ID: 19074
+// Function ID: 19075
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 9948, 9936, 1072, 21, 3, 5170, 575, 5921, 11415, 5349, 1652, 5753, 5401, 7303, 5355, 11732, 1108, 18431, 8948, 18442, 12262, 5347, 5346, 6186, 1500, 19001, 14264, 18435, 18440, 18437, 5452, 19078, 13984, 18994, 10887, 5770, 19079, 2]
+// Dependencies: [32, 19, 17, 9948, 9936, 1072, 21, 3, 5170, 575, 5921, 11415, 5349, 1652, 5753, 5401, 7303, 5355, 11732, 1108, 18428, 8948, 18439, 12262, 5347, 5346, 6186, 1500, 18998, 14264, 18432, 18437, 18434, 5452, 19075, 13984, 18991, 10887, 5770, 19076, 2]
 // Exports: default
 
-// Module 19077 (SwipeForMemberListWrapper)
+// Module 19074 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
@@ -13,7 +13,7 @@ import RootNavigationRef from "RootNavigationRef" /* 5347 */;
 import useChatLayout from "useChatLayout" /* 5349 */;
 import ChatInputUtils from "ChatInputUtils" /* 5355 */;
 import react_native from "react-native" /* 9936 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18442 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18439 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;

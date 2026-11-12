@@ -1,9 +1,9 @@
-// Module ID: 17767
-// Function ID: 17768
+// Module ID: 17764
+// Function ID: 17765
 // Name: ToastDurationSetting
-// Dependencies: [19, 5171, 8536, 1072, 21, 1113, 504, 16615, 17663, 11666, 11717, 2]
+// Dependencies: [19, 5171, 8536, 1072, 21, 1113, 504, 16612, 17660, 11666, 11717, 2]
 
-// Module 17767 (ToastDurationSetting)
+// Module 17764 (ToastDurationSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;

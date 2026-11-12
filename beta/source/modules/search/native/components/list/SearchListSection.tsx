@@ -1,9 +1,9 @@
-// Module ID: 19146
-// Function ID: 19147
+// Module ID: 19143
+// Function ID: 19144
 // Name: SearchListSection
 // Dependencies: [19, 17, 9950, 21, 5170, 5783, 2]
 
-// Module 19146 (SearchListSection)
+// Module 19143 (SearchListSection)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import SearchConstants from "SearchConstants" /* 9950 */;

@@ -1,10 +1,10 @@
-// Module ID: 16217
-// Function ID: 16218
+// Module ID: 16214
+// Function ID: 16215
 // Name: ModalDisclaimer
 // Dependencies: [19, 17, 21, 5170, 5783, 2]
 // Exports: ModalDisclaimer
 
-// Module 16217 (ModalDisclaimer)
+// Module 16214 (ModalDisclaimer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

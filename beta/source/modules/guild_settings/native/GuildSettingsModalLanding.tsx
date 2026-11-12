@@ -1,7 +1,7 @@
 // Module ID: 20095
 // Function ID: 20096
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 5100, 5041, 5102, 1385, 18575, 9188, 1072, 21, 5921, 5170, 7071, 1113, 5891, 5107, 20096, 19312, 9190, 9686, 20098, 5883, 15432, 7159, 9566, 11206, 14814, 8765, 9172, 20099, 12300, 7001, 13244, 17953, 10414, 5756, 575, 1499, 504, 9187, 20101, 7531, 7538, 5868, 8279, 6191, 19347, 1411, 20102, 5766, 2]
+// Dependencies: [19, 5100, 5041, 5102, 1385, 18572, 9188, 1072, 21, 5921, 5170, 7071, 1113, 5891, 5107, 20096, 19309, 9190, 9686, 20098, 5883, 15429, 7159, 9566, 11206, 14811, 8765, 9172, 20099, 12300, 7001, 13244, 17950, 10414, 5756, 575, 1499, 504, 9187, 20101, 7531, 7538, 5868, 8279, 6191, 19344, 1411, 20102, 5766, 2]
 // Exports: default
 
 // Module 20095 (GuildSettingsModalLanding)
@@ -17,14 +17,14 @@ import ShieldUserIcon from "ShieldUserIcon" /* 9172 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
 import RobotIcon from "RobotIcon" /* 12300 */;
 import HammerIcon from "HammerIcon" /* 13244 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15432 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15429 */;
 import ModerationIcon from "ModerationIcon" /* 20099 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 5100 */;
 import GuildStore from "GuildStore" /* 5041 */;
 import PermissionStore from "PermissionStore" /* 5102 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18575 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18572 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9188 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -120,7 +120,7 @@ function SettingsSection(guild) {
     };
     const TableRow3 = tmp2(7071).TableRow;
     intl3 = tmp2(1113).intl;
-    obj7 = { IconComponent: guild(19312).PuzzlePieceIcon };
+    obj7 = { IconComponent: guild(19309).PuzzlePieceIcon };
     Icon3 = tmp2(7071).TableRow.Icon;
     items.push(closure_15(TableRow3, obj6, "integrations"));
   }
@@ -236,7 +236,7 @@ function ExpressionSection(pushScreen) {
     };
     const TableRow3 = pushScreen(7071).TableRow;
     intl3 = pushScreen(1113).intl;
-    obj6 = { IconComponent: pushScreen(14814).StampIcon };
+    obj6 = { IconComponent: pushScreen(14811).StampIcon };
     Icon3 = pushScreen(7071).TableRow.Icon;
     items.push(closure_15(TableRow3, obj5, "official-messages"));
   }
@@ -440,7 +440,7 @@ function CommunitySection(pushScreen) {
     const t = pushScreen(1113).t;
     if (hasItem) {
       obj.label = string(t.nRtNqn);
-      const obj2 = { IconComponent: pushScreen(17953).TreehouseIcon };
+      const obj2 = { IconComponent: pushScreen(17950).TreehouseIcon };
       const Icon2 = tmp3(7071).TableRow.Icon;
       obj.icon = closure_15(Icon2, obj2);
       obj.onPress = function onPress() {
@@ -449,7 +449,7 @@ function CommunitySection(pushScreen) {
       tmp2Result = tmp2(TableRow, obj, "community-overview");
     } else {
       obj.label = string(t.ElKTeb);
-      const obj3 = { IconComponent: pushScreen(17953).TreehouseIcon };
+      const obj3 = { IconComponent: pushScreen(17950).TreehouseIcon };
       const Icon = tmp3(7071).TableRow.Icon;
       obj.icon = closure_15(Icon, obj3);
       obj.onPress = function onPress() {
@@ -604,7 +604,7 @@ function GuildSettingsModalLandingInner(guild) {
     text: guild.name,
     textAccessibilityRole: "header"
   };
-  items5[0] = closure_15(tmp3(19347), obj10);
+  items5[0] = closure_15(tmp3(19344), obj10);
   items5[1] = closure_15(SettingsSection, { guild, categories: stateFromStores, isGuildAdmin, canManageGuild, canManageChannels, canUnlinkChannelLobbies: tmp11, canManageWebhooks, pushScreen: callback });
   items5[2] = closure_15(ExpressionSection, { canManageGuildExpressions, canConfigureOfficialMessages: result, pushScreen: callback });
   items5[3] = closure_15(PeopleSection, { canManageGuild, canManageRoles, pushScreen: callback });

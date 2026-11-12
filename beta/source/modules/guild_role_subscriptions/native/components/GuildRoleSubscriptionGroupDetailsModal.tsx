@@ -1,7 +1,7 @@
 // Module ID: 20391
 // Function ID: 20392
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 20392, 17554, 1072, 21, 5170, 575, 20393, 20388, 7159, 1113, 20394, 5783, 17566, 7349, 20395, 2]
+// Dependencies: [32, 19, 17, 20392, 17551, 1072, 21, 5170, 575, 20393, 20388, 7159, 1113, 20394, 5783, 17563, 7349, 20395, 2]
 // Exports: default
 
 // Module 20391 (GuildRoleSubscriptionGroupDetailsModal)
@@ -12,7 +12,7 @@ import intl5 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import TableRowGroup from "TableRowGroup" /* 7159 */;
 import TextArea2 from "TextArea" /* 7349 */;
-import FormSeparatorDefault from "FormSeparator" /* 17566 */;
+import FormSeparatorDefault from "FormSeparator" /* 17563 */;
 import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20388 */;
 import FormStylesDefault from "FormStyles" /* 20393 */;
 import FormImagePicker from "FormImagePicker" /* 20394 */;
@@ -20,7 +20,7 @@ import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierE
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RoleTierEditStore from "RoleTierEditStore" /* 20392 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17554 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17551 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

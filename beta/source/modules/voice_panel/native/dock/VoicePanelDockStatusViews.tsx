@@ -1,10 +1,10 @@
-// Module ID: 19642
-// Function ID: 19643
+// Module ID: 19639
+// Function ID: 19640
 // Name: VoicePanelDockStatusViews
-// Dependencies: [19, 17, 5019, 5041, 5112, 6844, 1385, 11413, 21, 5170, 575, 19643, 11394, 504, 19644, 7053, 1187, 7371, 5808, 1113, 8774, 8777, 5783, 6205, 1652, 5793, 14268, 14269, 5402, 5874, 2]
+// Dependencies: [19, 17, 5019, 5041, 5112, 6844, 1385, 11413, 21, 5170, 575, 19640, 11394, 504, 19641, 7053, 1187, 7371, 5808, 1113, 8774, 8777, 5783, 6205, 1652, 5793, 14268, 14269, 5402, 5874, 2]
 // Exports: DockChannelIcon, DockChannelTitle, DockFace, DockUserTitle
 
-// Module 19642 (VoicePanelDockStatusViews)
+// Module 19639 (VoicePanelDockStatusViews)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import timing_timing from "timing/timing" /* 5402 */;
@@ -186,7 +186,7 @@ export function DockChannelIcon(streaming) {
   let channelId;
   let guildId;
   const tmp = closure_16();
-  const tmp4 = guildId(19643);
+  const tmp4 = guildId(19640);
   const tmp4Result = tmp4(channelId(575).Shadow.SHADOW_MEDIUM);
   const context = react.useContext(guildId(11394));
   channelId = context.channelId;
@@ -224,7 +224,7 @@ export function DockChannelIcon(streaming) {
     items4[1] = obj4;
     obj5 = { streaming, children: closure_13(tmp2Result3, obj6) };
     obj6 = { guild: stateFromStores, size: channelId(7053).GuildIconSizes.SMALL_32, style: tmp.guildIconAsset };
-    tmp2Result = guildId(19644);
+    tmp2Result = guildId(19641);
     tmp2Result3 = guildId(7053);
     tmp13 = closure_13(View, obj3);
   } else {
@@ -236,7 +236,7 @@ export function DockChannelIcon(streaming) {
       items5[1] = obj8;
       obj9 = { streaming, children: closure_13(Avatar, obj10) };
       obj10 = { user: stateFromStores1, guildId: "Array", size: channelId(1187).AvatarSizes.REFRESH_MEDIUM_32 };
-      tmp2Result4 = guildId(19644);
+      tmp2Result4 = guildId(19641);
       Avatar = tmp5(1187).Avatar;
       tmp13 = closure_13(View, obj7);
     }

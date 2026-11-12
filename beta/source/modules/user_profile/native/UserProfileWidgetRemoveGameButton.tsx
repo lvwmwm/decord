@@ -1,10 +1,10 @@
-// Module ID: 15258
-// Function ID: 15259
+// Module ID: 15255
+// Function ID: 15256
 // Name: UserProfileWidgetRemoveGameButton
 // Dependencies: [19, 502, 8858, 21, 8131, 5894, 575, 1113, 12581, 5179, 8866, 2]
 // Exports: default
 
-// Module 15258 (UserProfileWidgetRemoveGameButton)
+// Module 15255 (UserProfileWidgetRemoveGameButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

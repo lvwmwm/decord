@@ -1,9 +1,9 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14685
+// Function ID: 14686
 // Name: UsersLegendList
-// Dependencies: [32, 19, 17, 21, 5170, 5424, 1652, 1705, 1493, 7329, 14689, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 5424, 1652, 1705, 1493, 7329, 14686, 2]
 
-// Module 14688 (UsersLegendList)
+// Module 14685 (UsersLegendList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import BottomSheetModal from "BottomSheetModal" /* 5424 */;

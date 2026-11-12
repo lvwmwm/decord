@@ -1,7 +1,7 @@
 // Module ID: 19677
 // Function ID: 19678
 // Name: VoicePanelUserSheet
-// Dependencies: [19, 17, 5019, 5112, 1385, 1072, 21, 5170, 575, 7420, 7445, 15087, 8865, 504, 13947, 4995, 5849, 15086, 8854, 1113, 15096, 7582, 1652, 10029, 9879, 6205, 15163, 19676, 9639, 5420, 1187, 5874, 5783, 15109, 15166, 2]
+// Dependencies: [19, 17, 5019, 5112, 1385, 1072, 21, 5170, 575, 7420, 7445, 15084, 8865, 504, 13947, 4995, 5849, 15083, 8854, 1113, 15093, 7582, 1652, 10029, 9879, 6205, 15160, 19676, 9639, 5420, 1187, 5874, 5783, 15106, 15163, 2]
 // Exports: default
 
 // Module 19677 (VoicePanelUserSheet)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import UserProfileActivity from "UserProfileActivity" /* 15109 */;
+import UserProfileActivity from "UserProfileActivity" /* 15106 */;
 import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19676 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -202,7 +202,7 @@ export default function VoicePanelUserSheet(userId) {
   const stateFromStores2 = obj4.useStateFromStores(items2, () => currentUser.getCurrentUser());
   const obj5 = channelId(6205);
   const name = obj5.useName(guildId, channelId, stateFromStores);
-  const live = userId(15163)(userId).live;
+  const live = userId(15160)(userId).live;
   let closure_5 = tmp8;
   const items3 = [null == stateFromStores || null == stateFromStores1 || null == stateFromStores2];
   const effect = stateFromStores.useEffect(() => {
@@ -258,7 +258,7 @@ export default function VoicePanelUserSheet(userId) {
 
         ];
         const obj12 = { user: stateFromStores, channel: stateFromStores1, currentUser: stateFromStores2, style: tmp.card };
-        items6[2] = closure_10(userId(15166), obj12);
+        items6[2] = closure_10(userId(15163), obj12);
         return closure_10(BottomSheet, obj9);
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 18188
-// Function ID: 18189
+// Module ID: 18185
+// Function ID: 18186
 // Name: UserSettingsDesignSystemAIShimmer
 // Dependencies: [32, 19, 17, 21, 5170, 5790, 6191, 7073, 5783, 13019, 2]
 // Exports: default
 
-// Module 18188 (UserSettingsDesignSystemAIShimmer)
+// Module 18185 (UserSettingsDesignSystemAIShimmer)
 import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
 import Stack_Stack from "Stack/Stack" /* 6191 */;

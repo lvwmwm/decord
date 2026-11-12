@@ -1,9 +1,9 @@
-// Module ID: 18445
-// Function ID: 18446
+// Module ID: 18442
+// Function ID: 18443
 // Name: guilds/Guilds
-// Dependencies: [32, 19, 6655, 11691, 1072, 21, 5349, 9, 5352, 5346, 5347, 572, 1108, 18446, 5342, 9797, 18447, 5231, 17434, 18448, 18825, 17514, 18430, 2]
+// Dependencies: [32, 19, 6655, 11691, 1072, 21, 5349, 9, 5352, 5346, 5347, 572, 1108, 18443, 5342, 9797, 18444, 5231, 17431, 18445, 18822, 17511, 18427, 2]
 
-// Module 18445 (guilds/Guilds)
+// Module 18442 (guilds/Guilds)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -37,13 +37,13 @@ const memoResult = react.memo(function GuildsOnly() {
   let tmp12;
   let tmp = enabled;
   let tmp2 = dependencyMap;
-  let obj = enabled(18446);
+  let obj = enabled(18443);
   const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
   const tmp4 = first;
   const tmp5 = first(5342)();
   let obj2 = enabled(9797);
   const isEligibleForQuests = obj2.getIsEligibleForQuests();
-  const GuildsRenderExperiment = enabled(18447).GuildsRenderExperiment;
+  const GuildsRenderExperiment = enabled(18444).GuildsRenderExperiment;
   enabled = GuildsRenderExperiment.useConfig({ location: "GuildsOnly" }).enabled;
   first = undefined;
   dependencyMap = undefined;
@@ -135,12 +135,12 @@ const memoResult = react.memo(function GuildsOnly() {
   if (!enabled) {
     const obj3 = { gradient: tmp5, children: tmp12(QuestDockExternalCoordinationContextProvider, obj4) };
     const ThemeContextProvider = tmp(5231).ThemeContextProvider;
-    QuestDockExternalCoordinationContextProvider = tmp(17434).QuestDockExternalCoordinationContextProvider;
-    const items1 = [closure_8(tmp4(18448), {}), closure_8(tmp4(18825), {}), , ];
+    QuestDockExternalCoordinationContextProvider = tmp(17431).QuestDockExternalCoordinationContextProvider;
+    const items1 = [closure_8(tmp4(18445), {}), closure_8(tmp4(18822), {}), , ];
     obj4 = { children: items1 };
-    items1[2] = isEligibleForQuests && closure_8(tmp4(17514), {});
-    isEligibleForQuests && closure_8(tmp4(17514), {});
-    items1[3] = closure_8(tmp(18430).BackgroundChatHost, {});
+    items1[2] = isEligibleForQuests && closure_8(tmp4(17511), {});
+    isEligibleForQuests && closure_8(tmp4(17511), {});
+    items1[3] = closure_8(tmp(18427).BackgroundChatHost, {});
     tmp11Result = tmp11(ThemeContextProvider, obj3);
     tmp12 = closure_9;
   } else {

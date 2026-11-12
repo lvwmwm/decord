@@ -1,9 +1,9 @@
-// Module ID: 17196
-// Function ID: 17197
+// Module ID: 17193
+// Function ID: 17194
 // Name: AuthorizedAppsSetting
-// Dependencies: [8536, 1072, 11717, 1113, 7229, 17197, 2]
+// Dependencies: [8536, 1072, 11717, 1113, 7229, 17194, 2]
 
-// Module 17196 (AuthorizedAppsSetting)
+// Module 17193 (AuthorizedAppsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import KeyIcon from "KeyIcon" /* 7229 */;

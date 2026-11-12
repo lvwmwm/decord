@@ -1,14 +1,14 @@
 // Module ID: 19668
 // Function ID: 19669
 // Name: VoiceChannelAppHeaderButtons
-// Dependencies: [19, 21, 19669, 19559, 18155, 8712, 1113, 4124, 14667, 12079, 2]
+// Dependencies: [19, 21, 19669, 19556, 18152, 8712, 1113, 4124, 14664, 12079, 2]
 // Exports: default
 
 // Module 19668 (VoiceChannelAppHeaderButtons)
 import _modDef4124 from "module_4124" /* 4124 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12079 */;
-import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 14667 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19559 */;
+import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 14664 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19556 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ export default function VoiceChannelAppHeaderButtons(arg0) {
   let tmp7Result = null;
   if (voiceChannelAppAvailable) {
     const obj4 = {
-      icon: importDefault(voiceChannelAppVisible ? 18155 : 8712),
+      icon: importDefault(voiceChannelAppVisible ? 18152 : 8712),
       accessibilityLabel: string(ZtYyOx),
       onPress() {
           const obj = VoiceChannelAppActionCreators;

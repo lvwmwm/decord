@@ -1,9 +1,9 @@
-// Module ID: 19481
-// Function ID: 19482
+// Module ID: 19478
+// Function ID: 19479
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 5407, 7814, 6962, 6929, 5023, 502, 5019, 7974, 6974, 5041, 15986, 6930, 6860, 6863, 5835, 1072, 21, 575, 5170, 7076, 5783, 504, 1652, 5355, 1705, 7315, 1113, 15128, 9321, 17941, 1377, 16783, 14662, 9260, 5346, 9261, 9248, 1493, 1627, 9249, 12262, 1252, 19482, 19489, 18122, 19502, 19503, 2]
+// Dependencies: [32, 19, 17, 5407, 7814, 6962, 6929, 5023, 502, 5019, 7974, 6974, 5041, 15983, 6930, 6860, 6863, 5835, 1072, 21, 575, 5170, 7076, 5783, 504, 1652, 5355, 1705, 7315, 1113, 15125, 9321, 17938, 1377, 16780, 14659, 9260, 5346, 9261, 9248, 1493, 1627, 9249, 12262, 1252, 19479, 19486, 18119, 19499, 19500, 2]
 
-// Module 19481 (LaunchPad)
+// Module 19478 (LaunchPad)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import Pressables from "Pressables" /* 7076 */;
 import _mod9248 from "module_9248" /* 9248 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9260 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 14662 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 14659 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5407 */;
@@ -26,7 +26,7 @@ import ChannelStore from "ChannelStore" /* 5019 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7974 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6974 */;
 import GuildStore from "GuildStore" /* 5041 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 15986 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 15983 */;
 import ReadStateStore from "ReadStateStore" /* 6930 */;
 import SortedGuildStore from "SortedGuildStore" /* 6860 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
@@ -53,7 +53,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const DevToolsNavigator = tmp(16783);
+const DevToolsNavigator = tmp(16780);
 function TabButton(selected) {
   let accessibilityLabel;
   let colors;

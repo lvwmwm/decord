@@ -1,18 +1,18 @@
-// Module ID: 14532
-// Function ID: 14533
+// Module ID: 14528
+// Function ID: 14529
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 8042, 21, 5170, 575, 5746, 8059, 5874, 14533, 5783, 1113, 5790, 14534, 14525, 2]
+// Dependencies: [5, 19, 17, 8042, 21, 5170, 575, 5746, 8059, 5874, 14529, 5783, 1113, 5790, 14530, 14521, 2]
 // Exports: default
 
-// Module 14532 (ContactSyncLandingOnboardingRedesign)
+// Module 14528 (ContactSyncLandingOnboardingRedesign)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import NavigatorConstants from "NavigatorConstants" /* 5746 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 14525 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14533 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 14534 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 14521 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14529 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 14530 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

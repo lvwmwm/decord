@@ -1,10 +1,10 @@
-// Module ID: 17183
-// Function ID: 17184
+// Module ID: 17180
+// Function ID: 17181
 // Name: FamilyCenterModalAccept
-// Dependencies: [19, 17, 21, 5170, 575, 6831, 5868, 1113, 13623, 8074, 8076, 17180, 5884, 5783, 2664, 17148, 13625, 13484, 6855, 5790, 7097, 11659, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 6831, 5868, 1113, 13623, 8074, 8076, 17177, 5884, 5783, 2664, 17145, 13625, 13484, 6855, 5790, 7097, 11659, 2]
 // Exports: default
 
-// Module 17183 (FamilyCenterModalAccept)
+// Module 17180 (FamilyCenterModalAccept)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
@@ -59,13 +59,13 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   const obj4 = { style: tmp.header, children: items1 };
   const ModalContent = otherUser(8076).ModalContent;
   const obj5 = { otherUser, iconSrc: acceptLinkRequest(5884), iconStyles: tmp.icon };
-  const tmp6 = acceptLinkRequest(17180);
+  const tmp6 = acceptLinkRequest(17177);
   items1 = [closure_5(tmp6, obj5), , ];
   const obj6 = { style: tmp.headerText, variant: "body-lg/semibold", children: intl.string(acceptLinkRequest(2664).rlNJwZ) };
   const Text = otherUser(5783).Text;
   intl = otherUser(1113).intl;
   items1[1] = closure_5(Text, obj6);
-  items1[2] = closure_5(acceptLinkRequest(17148), { user: otherUser });
+  items1[2] = closure_5(acceptLinkRequest(17145), { user: otherUser });
   items2 = [closure_6(View, obj4), closure_5(acceptLinkRequest(13625), {}), ];
   const obj7 = { style: tmp.disclaimer, variant: "body-xs/normal", color: "text-default", children: intl2.format(acceptLinkRequest(2664).snlFqR, obj8) };
   const Text2 = otherUser(5783).Text;

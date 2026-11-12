@@ -1,7 +1,7 @@
 // Module ID: 20197
 // Function ID: 20198
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 9159, 5041, 9188, 1072, 8497, 21, 5170, 575, 1499, 9190, 504, 9160, 8840, 9161, 9187, 5868, 1113, 14326, 5381, 7097, 7663, 1500, 6123, 1187, 7304, 14998, 5783, 7159, 7462, 7071, 6191, 16084, 8279, 16081, 20198, 2]
+// Dependencies: [5, 32, 19, 17, 9159, 5041, 9188, 1072, 8497, 21, 5170, 575, 1499, 9190, 504, 9160, 8840, 9161, 9187, 5868, 1113, 14326, 5381, 7097, 7663, 1500, 6123, 1187, 7304, 14995, 5783, 7159, 7462, 7071, 6191, 16081, 8279, 16078, 20198, 2]
 // Exports: default
 
 // Module 20197 (GuildSettingsModalServerTag)
@@ -383,7 +383,7 @@ export default function GuildSettingsModalServerTag(guildId) {
                   return obj.getGuildProfile(guildId, true);
                 }
         };
-        return closure_13(navigation(14998), obj8);
+        return closure_13(navigation(14995), obj8);
       } else if (null == stateFromStores1) {
         return closure_13(tmp2(7304).SceneLoadingIndicator, {});
       } else {
@@ -426,7 +426,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           if (tmp33Result) {
             size = { badge: null, primaryTintColor: badgeColorPrimary, secondaryTintColor: badgeColorSecondary, width: null, height: null };
             ({ badge: obj15.badge, badgeColorPrimary } = stateFromStores1);
-            const GuildBadge = tmp2(16084).GuildBadge;
+            const GuildBadge = tmp2(16081).GuildBadge;
             badgeColorSecondary = stateFromStores1.badgeColorSecondary;
             ({ SIZE_16: obj15.width, SIZE_16: obj15.height } = closure_12);
             tmp33Result = tmp33(GuildBadge, size);
@@ -452,7 +452,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           items14[2] = closure_13(Text2, obj18);
           const obj19 = { guildId, tag: null, badge: null, primaryColor: null, secondaryColor: null, isDirty: result1 };
           ({ tag: obj21.tag, badge: obj21.badge, badgeColorPrimary: obj21.primaryColor, badgeColorSecondary: obj21.secondaryColor } = stateFromStores1);
-          items14[3] = closure_13(navigation(16081), obj19);
+          items14[3] = closure_13(navigation(16078), obj19);
           obj16.children = items14;
           tmp41 = obj16;
         } else {

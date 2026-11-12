@@ -1,7 +1,7 @@
 // Module ID: 19838
 // Function ID: 19839
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1385, 10134, 1072, 5195, 3, 5196, 7383, 1377, 15657, 5198, 5200, 2171, 1252, 2]
+// Dependencies: [5, 1385, 10134, 1072, 5195, 3, 5196, 7383, 1377, 15654, 5198, 5200, 2171, 1252, 2]
 
 // Module 19838 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;

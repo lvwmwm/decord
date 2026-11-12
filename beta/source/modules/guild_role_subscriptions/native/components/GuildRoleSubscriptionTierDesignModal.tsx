@@ -1,7 +1,7 @@
 // Module ID: 20428
 // Function ID: 20429
 // Name: GuildRoleSubscriptionTierDesignModal
-// Dependencies: [32, 19, 17, 17554, 1072, 21, 5170, 575, 5756, 17586, 20393, 20403, 17574, 7450, 20388, 7159, 1113, 20394, 20429, 20395, 2]
+// Dependencies: [32, 19, 17, 17551, 1072, 21, 5170, 575, 5756, 17583, 20393, 20403, 17571, 7450, 20388, 7159, 1113, 20394, 20429, 20395, 2]
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
 // Module 20428 (GuildRoleSubscriptionTierDesignModal)
@@ -11,9 +11,9 @@ import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import useToken5 from "useToken" /* 5756 */;
 import RoleIconUtils from "RoleIconUtils" /* 7450 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17554 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17574 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 17586 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17551 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17571 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 17583 */;
 import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -115,7 +115,7 @@ function Content() {
     previewShape: require("FormImagePicker").PreviewShape.SQUIRCLE,
     previewResizeMode: "cover",
     setImage(icon) {
-      const obj = { icon: icon.uri, unicodeEmoji: "r" };
+      const obj = { icon: icon.uri, unicodeEmoji: "flexDirection" };
       return closure_0(obj);
     },
     disabled: roleSubscriptionSettingsDisabled

@@ -1,7 +1,7 @@
 // Module ID: 20343
 // Function ID: 20344
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 17554, 21, 5170, 575, 5177, 5401, 5783, 1113, 20344, 20348, 20352, 20356, 20360, 20364, 2]
+// Dependencies: [19, 17, 17551, 21, 5170, 575, 5177, 5401, 5783, 1113, 20344, 20348, 20352, 20356, 20360, 20364, 2]
 // Exports: default
 
 // Module 20343 (CreatorBenefitsSection)
@@ -11,7 +11,7 @@ import intl3 from "intl" /* 1113 */;
 import shared from "shared" /* 5177 */;
 import useThemeDefault from "useTheme" /* 5401 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17554 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17551 */;
 import AvatarRoseExample from "AvatarRoseExample" /* 20344 */;
 import AvatarLokyExample from "AvatarLokyExample" /* 20348 */;
 import AvatarGraggleExample from "AvatarGraggleExample" /* 20352 */;

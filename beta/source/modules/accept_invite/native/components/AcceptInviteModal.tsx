@@ -1,7 +1,7 @@
 // Module ID: 19825
 // Function ID: 19826
 // Name: AcceptInviteModal
-// Dependencies: [19, 7244, 21, 1260, 5907, 14594, 9558, 7264, 2]
+// Dependencies: [19, 7244, 21, 1260, 5907, 14590, 9558, 7264, 2]
 // Exports: default
 
 // Module 19825 (AcceptInviteModal)

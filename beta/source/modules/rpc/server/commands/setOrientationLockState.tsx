@@ -1,15 +1,15 @@
-// Module ID: 16682
-// Function ID: 16683
+// Module ID: 16679
+// Function ID: 16680
 // Name: setOrientationLockState
-// Dependencies: [1083, 16648, 9441, 9447, 9440, 572, 2]
+// Dependencies: [1083, 16645, 9441, 9447, 9440, 572, 2]
 
-// Module 16682 (setOrientationLockState)
+// Module 16679 (setOrientationLockState)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import getSocketFrameDefault from "getSocketFrame" /* 9440 */;
 import isPostMessageSocketDefault from "isPostMessageSocket" /* 9441 */;
 import RPCErrorDefault from "RPCError" /* 9447 */;
 import Constants from "Constants" /* 1083 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16648 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16645 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

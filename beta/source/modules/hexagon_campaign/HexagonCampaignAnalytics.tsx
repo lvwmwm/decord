@@ -1,10 +1,10 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 16808
+// Function ID: 16809
 // Name: HexagonCampaignAnalytics
 // Dependencies: [5, 19, 5195, 1072, 7972, 6876, 7981, 7928, 1252, 2]
 // Exports: trackHexagonCampaignContentClicked, trackHexagonCampaignContentViewed, trackHexagonCampaignPerkAction, useTrackHexagonCampaignContentViewed
 
-// Module 16811 (HexagonCampaignAnalytics)
+// Module 16808 (HexagonCampaignAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AdCreativeType from "AdCreativeType" /* 6876 */;

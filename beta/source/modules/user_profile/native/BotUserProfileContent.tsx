@@ -1,9 +1,9 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15075
+// Function ID: 15076
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1385, 7470, 5421, 21, 8921, 8909, 8923, 1627, 8865, 504, 6205, 5226, 7579, 8922, 11584, 8906, 8918, 7451, 5868, 8924, 1652, 15079, 8935, 11569, 5406, 11583, 2118, 11586, 1113, 15104, 15107, 11933, 15108, 5790, 8747, 575, 6831, 7582, 15109, 11669, 7448, 15171, 15174, 2]
+// Dependencies: [19, 17, 1385, 7470, 5421, 21, 8921, 8909, 8923, 1627, 8865, 504, 6205, 5226, 7579, 8922, 11584, 8906, 8918, 7451, 5868, 8924, 1652, 15076, 8935, 11569, 5406, 11583, 2118, 11586, 1113, 15101, 15104, 11933, 15105, 5790, 8747, 575, 6831, 7582, 15106, 11669, 7448, 15168, 15171, 2]
 
-// Module 15078 (BotUserProfileContent)
+// Module 15075 (BotUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
@@ -130,7 +130,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
     if (null != stateFromStores) {
       let obj3 = { user, displayProfile, bannerHeight: tmp5, bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur };
       const items2 = [closure_9(tmp(8924), obj3), , ];
-      let obj4 = { style: items3, children: closure_9(tmp(15079), obj5) };
+      let obj4 = { style: items3, children: closure_9(tmp(15076), obj5) };
       items3 = [tmp3.bannerButtons, bannerAnimatedStyle];
       View = tmp(1652).View;
       obj5 = { user, currentUser: stateFromStores, application, displayProfile, channel };
@@ -196,15 +196,15 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
       intl = tmp7(1113).intl;
       items7 = [closure_9(tmpResult6, obj14), , ];
       const obj15 = { user };
-      items7[1] = closure_9(tmp(15104), obj15);
+      items7[1] = closure_9(tmp(15101), obj15);
       const obj16 = { style: tmp3.primaryButtons, maxWidth: tmp4, primaryButton: tmp38Result, secondaryButton: closure_9(Button, obj18) };
       tmp38Result = undefined;
-      const tmpResult7 = tmp(15107);
+      const tmpResult7 = tmp(15104);
       if (null != application) {
         const tmp7Result4 = user(11933);
         if (tmp7Result4.canInstallApplication(application)) {
           const obj17 = { application, botUserId: user.id, channel: tmp30, guildId: tmp31 };
-          const tmpResult8 = tmp(15108);
+          const tmpResult8 = tmp(15105);
           tmp38Result = tmp38(tmpResult8, obj17);
           tmp30 = channel;
           tmp31 = guild_id;
@@ -246,7 +246,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
         items8[1] = obj21;
         const obj22 = { style: tmp3.cards, children: items9 };
         const obj23 = { user, currentUser: stateFromStores, guildId: guild_id, style: items8 };
-        items9 = [closure_9(tmp(15109), obj23), , , ];
+        items9 = [closure_9(tmp(15106), obj23), , , ];
         const obj24 = { userId: user.id, displayProfile, channel, style: items8 };
         items9[1] = closure_9(tmp(11669), obj24);
         let tmp36Result = null != guild_id;
@@ -255,7 +255,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
           const items10 = [closure_9(tmp(7448), obj25), ];
           const obj26 = { user, currentUser: stateFromStores, guildId: guild_id, channelId: id1, showUserProfile: showUserProfileActionSheet, style: items8 };
           id1 = undefined;
-          const tmpResult10 = tmp(15171);
+          const tmpResult10 = tmp(15168);
           if (channel != null) {
             id1 = channel.id;
           }
@@ -265,7 +265,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
         }
         items9[2] = tmp36Result;
         const obj28 = { userId: user.id, onBack: showUserProfileActionSheet };
-        items9[3] = closure_9(tmp(15174), obj28);
+        items9[3] = closure_9(tmp(15171), obj28);
         tmp36Result2 = tmp36(tmp23, obj22);
       }
       const obj29 = { children: items2 };

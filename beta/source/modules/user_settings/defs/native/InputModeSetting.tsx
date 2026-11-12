@@ -1,9 +1,9 @@
-// Module ID: 17597
-// Function ID: 17598
+// Module ID: 17594
+// Function ID: 17595
 // Name: InputModeSetting
 // Dependencies: [2130, 8536, 5929, 504, 1113, 11717, 12144, 2]
 
-// Module 17597 (InputModeSetting)
+// Module 17594 (InputModeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
 import Constants from "Constants" /* 5929 */;

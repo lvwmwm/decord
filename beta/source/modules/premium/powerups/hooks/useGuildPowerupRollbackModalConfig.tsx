@@ -1,10 +1,10 @@
-// Module ID: 14361
-// Function ID: 14362
+// Module ID: 14357
+// Function ID: 14358
 // Name: useGuildPowerupRollbackModalConfig
-// Dependencies: [19, 5041, 5377, 14345, 5003, 1113, 2696, 504, 14362, 5381, 14346, 2]
+// Dependencies: [19, 5041, 5377, 14345, 5003, 1113, 2696, 504, 14358, 5381, 14346, 2]
 // Exports: default
 
-// Module 14361 (useGuildPowerupRollbackModalConfig)
+// Module 14357 (useGuildPowerupRollbackModalConfig)
 import intl3 from "intl" /* 1113 */;
 import _modDef2696 from "module_2696" /* 2696 */;
 import dismissible_content from "dismissible_content" /* 5003 */;

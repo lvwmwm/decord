@@ -1,13 +1,13 @@
-// Module ID: 18833
-// Function ID: 18834
+// Module ID: 18830
+// Function ID: 18831
 // Name: showYouAccountActionSheet
-// Dependencies: [18834, 5406, 18835, 2118, 2]
+// Dependencies: [18831, 5406, 18832, 2118, 2]
 // Exports: showYouAccountActionSheet
 
-// Module 18833 (showYouAccountActionSheet)
+// Module 18830 (showYouAccountActionSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import YouConstants from "YouConstants" /* 18834 */;
+import YouConstants from "YouConstants" /* 18831 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = YouConstants.YOU_ACCOUNT_ACTION_SHEET_KEY;
@@ -23,5 +23,5 @@ export function showYouAccountActionSheet() {
     flag2 = true;
   }
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(18835, dependencyMap.paths), closure_3, { statusOnly: flag, disableHapticOnOpen: flag2 });
+  obj.openLazy(asyncRequire(18832, dependencyMap.paths), closure_3, { statusOnly: flag, disableHapticOnOpen: flag2 });
 }

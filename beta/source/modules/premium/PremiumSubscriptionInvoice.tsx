@@ -1,10 +1,10 @@
-// Module ID: 15589
-// Function ID: 15590
+// Module ID: 15586
+// Function ID: 15587
 // Name: PremiumSubscriptionInvoice
 // Dependencies: [109, 32, 5, 19, 2179, 1072, 2171, 1282, 572, 6611, 38, 6620, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 15589 (PremiumSubscriptionInvoice)
+// Module 15586 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1072 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

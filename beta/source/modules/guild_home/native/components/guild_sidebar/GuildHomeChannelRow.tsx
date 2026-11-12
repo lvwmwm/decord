@@ -1,10 +1,10 @@
-// Module ID: 18637
-// Function ID: 18638
+// Module ID: 18634
+// Function ID: 18635
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 1072, 5026, 5914, 21, 5170, 575, 1099, 14203, 1113, 16005, 2]
+// Dependencies: [19, 1072, 5026, 5914, 21, 5170, 575, 1099, 14203, 1113, 16002, 2]
 // Exports: default
 
-// Module 18637 (GuildHomeChannelRow)
+// Module 18634 (GuildHomeChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -51,7 +51,7 @@ export default function GuildHomeChannelRow(selected) {
   ({ name: intl2.string(tmp5(1113).t.VbpLyU), mode: DEFAULT });
   const BaseChannelName = tmp5(14203).BaseChannelName;
   intl2 = tmp5(1113).intl;
-  ({ mode: DEFAULT, IconComponent: tmp5(16005).SignPostIcon });
+  ({ mode: DEFAULT, IconComponent: tmp5(16002).SignPostIcon });
   const BaseChannelIcon = tmp5(14203).BaseChannelIcon;
   return <tmp7 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(tmp5(1113).t.VbpLyU)} accessibilityState={{ selected }} mode={DEFAULT} name={null} icon={null} />;
 };

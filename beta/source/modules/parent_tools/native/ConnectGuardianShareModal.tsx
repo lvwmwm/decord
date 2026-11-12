@@ -1,7 +1,7 @@
 // Module ID: 20032
 // Function ID: 20033
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 7824, 21, 5170, 575, 1113, 2664, 5868, 6831, 13623, 563, 17136, 8074, 8076, 6191, 5783, 17137, 7048, 7097, 11659, 2]
+// Dependencies: [19, 17, 7824, 21, 5170, 575, 1113, 2664, 5868, 6831, 13623, 563, 17133, 8074, 8076, 6191, 5783, 17134, 7048, 7097, 11659, 2]
 // Exports: default
 
 // Module 20032 (ConnectGuardianShareModal)
@@ -12,7 +12,7 @@ import _modDef2664 from "module_2664" /* 2664 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import Modal2 from "Modal" /* 11659 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17136 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17133 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
 import Fragment from "Fragment" /* 21 */;
@@ -78,7 +78,7 @@ function ConnectGuardianShareScreen() {
     let tmp11Result;
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      tmp11Result = tmp11(tmp2(17137).ConnectGuardianCard, obj11);
+      tmp11Result = tmp11(tmp2(17134).ConnectGuardianCard, obj11);
     }
     const obj12 = { children: closure_6(ModalContent, obj13) };
     items4[1] = tmp11Result;

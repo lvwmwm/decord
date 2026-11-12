@@ -1,10 +1,10 @@
-// Module ID: 15259
-// Function ID: 15260
+// Module ID: 15256
+// Function ID: 15257
 // Name: UserProfileWidgetGameCommentInput
 // Dependencies: [32, 19, 502, 8858, 21, 8866, 7349, 12581, 1113, 7885, 2]
 // Exports: default
 
-// Module 15259 (UserProfileWidgetGameCommentInput)
+// Module 15256 (UserProfileWidgetGameCommentInput)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import TextArea2 from "TextArea" /* 7349 */;

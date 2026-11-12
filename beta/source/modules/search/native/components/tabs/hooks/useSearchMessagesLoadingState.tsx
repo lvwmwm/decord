@@ -1,14 +1,14 @@
-// Module ID: 19176
-// Function ID: 19177
+// Module ID: 19173
+// Function ID: 19174
 // Name: useSearchMessagesLoadingState
-// Dependencies: [6951, 14166, 9950, 19107, 504, 14159, 2]
+// Dependencies: [6951, 14166, 9950, 19104, 504, 14159, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 19176 (useSearchMessagesLoadingState)
+// Module 19173 (useSearchMessagesLoadingState)
 import get_initialized from "get initialized" /* 504 */;
 import SearchConstants from "SearchConstants" /* 9950 */;
 import SearchUtils from "SearchUtils" /* 14159 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 19107 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 19104 */;
 import SearchMessageStore from "SearchMessageStore" /* 6951 */;
 import SearchQueryStore from "SearchQueryStore" /* 14166 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 18096
-// Function ID: 18097
+// Module ID: 18093
+// Function ID: 18094
 // Name: TakeActionScreen
 // Dependencies: [5, 32, 19, 17, 5112, 1385, 11428, 21, 5170, 575, 504, 11467, 11470, 1499, 7585, 7601, 11441, 8455, 5869, 1113, 5868, 5790, 11478, 10238, 8727, 8265, 5866, 5783, 2]
 // Exports: default
 
-// Module 18096 (TakeActionScreen)
+// Module 18093 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,10 +1,10 @@
-// Module ID: 16223
-// Function ID: 16224
+// Module ID: 16220
+// Function ID: 16221
 // Name: ClipsDefaultSettingsUtils
 // Dependencies: [8317, 2]
 // Exports: applyClipsDefaultSettingsDecision
 
-// Module 16223 (ClipsDefaultSettingsUtils)
+// Module 16220 (ClipsDefaultSettingsUtils)
 import ClipsConstants from "ClipsConstants" /* 8317 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 20415
 // Function ID: 20416
 // Name: FormChannelPicker
-// Dependencies: [19, 5019, 21, 504, 5808, 17591, 8756, 7071, 5783, 1113, 5406, 20416, 2118, 2]
+// Dependencies: [19, 5019, 21, 504, 5808, 17588, 8756, 7071, 5783, 1113, 5406, 20416, 2118, 2]
 // Exports: default
 
 // Module 20415 (FormChannelPicker)
@@ -31,7 +31,7 @@ export default function FormChannelPicker(channelId) {
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   let tmp5Result = useChannelNameDefault(stateFromStores);
   if (null != stateFromStores) {
-    const tmpResult = tmp(17591);
+    const tmpResult = tmp(17588);
     let TextIcon = tmpResult.getChannelIconComponentOrDefault(stateFromStores);
   } else {
     TextIcon = tmp(8756).TextIcon;

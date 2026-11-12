@@ -1,10 +1,10 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 14872
+// Function ID: 14873
 // Name: BetaTag
 // Dependencies: [19, 17, 7726, 21, 5170, 575, 5747, 1092, 5783, 1113, 2]
 // Exports: default
 
-// Module 14875 (BetaTag)
+// Module 14872 (BetaTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

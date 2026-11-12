@@ -1,7 +1,7 @@
 // Module ID: 20421
 // Function ID: 20422
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 17575, 21, 7157, 7160, 7071, 20422, 1113, 20423, 2]
+// Dependencies: [19, 17, 17572, 21, 7157, 7160, 7071, 20422, 1113, 20423, 2]
 // Exports: default
 
 // Module 20421 (AllChannelsSwitch)
@@ -10,7 +10,7 @@ import intl3 from "intl" /* 1113 */;
 import TableRow from "TableRow" /* 7071 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 7157 */;
 import TableRadioRow3 from "TableRadioRow" /* 7160 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17575 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17572 */;
 import AssetRegistryDefault from "AssetRegistry" /* 20422 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 20423 */;
 import react from "react" /* 19 */;

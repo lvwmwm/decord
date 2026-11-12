@@ -1,14 +1,14 @@
-// Module ID: 15251
-// Function ID: 15252
+// Module ID: 15248
+// Function ID: 15249
 // Name: UserProfileAddGameCoverButton
-// Dependencies: [19, 21, 5170, 15239, 575, 7076, 15243, 1113, 10979, 2]
+// Dependencies: [19, 21, 5170, 15236, 575, 7076, 15240, 1113, 10979, 2]
 // Exports: default
 
-// Module 15251 (UserProfileAddGameCoverButton)
+// Module 15248 (UserProfileAddGameCoverButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15239 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15243 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15236 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15240 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

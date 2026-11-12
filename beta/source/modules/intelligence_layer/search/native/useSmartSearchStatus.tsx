@@ -1,10 +1,10 @@
-// Module ID: 19093
-// Function ID: 19094
+// Module ID: 19090
+// Function ID: 19091
 // Name: useSmartSearchStatus
 // Dependencies: [14156, 504, 14157, 14155, 2]
 // Exports: useSmartSearchStatus
 
-// Module 19093 (useSmartSearchStatus)
+// Module 19090 (useSmartSearchStatus)
 import SmartSearchUtils from "SmartSearchUtils" /* 14155 */;
 import SmartSearchTypes from "SmartSearchTypes" /* 14157 */;
 import SmartSearchResultsStore from "SmartSearchResultsStore" /* 14156 */;

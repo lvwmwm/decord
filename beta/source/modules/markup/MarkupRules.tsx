@@ -1,7 +1,7 @@
 // Module ID: 6198
 // Function ID: 6199
 // Name: MarkupRules
-// Dependencies: [32, 717, 5019, 5076, 5041, 1385, 1072, 6199, 6200, 6201, 1113, 6204, 5079, 6205, 5226, 6206, 2067, 6207, 6208, 6220, 5116, 6222, 8704, 16000, 8678, 8679, 6197, 8706, 12, 8675, 2]
+// Dependencies: [32, 717, 5019, 5076, 5041, 1385, 1072, 6199, 6200, 6201, 1113, 6204, 5079, 6205, 5226, 6206, 2067, 6207, 6208, 6220, 5116, 6222, 8704, 15997, 8678, 8679, 6197, 8706, 12, 8675, 2]
 // Exports: hydrateCommandMention
 
 // Module 6198 (MarkupRules)
@@ -22,7 +22,7 @@ import MarkupListRuleDefault from "MarkupListRule" /* 8678 */;
 import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8679 */;
 import TimestampUtils from "TimestampUtils" /* 8704 */;
 import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 8706 */;
-import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 16000 */;
+import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 15997 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
@@ -255,7 +255,7 @@ function parseLink(arg0) {
     obj3 = { type: "text", content: arg0[1] };
     const obj2 = { type: "text", content: arg0[1] };
   } else {
-    obj3 = { type: "link", content: items, target: punycodeLinkResult.target, title: "channel" };
+    obj3 = { type: "link", content: items, target: punycodeLinkResult.target, title: "channelId" };
     items = [{ type: "text", content: punycodeLinkResult.displayTarget }];
     const obj4 = { type: "text", content: punycodeLinkResult.displayTarget };
   }

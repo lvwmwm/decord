@@ -1,10 +1,10 @@
-// Module ID: 18646
-// Function ID: 18647
+// Module ID: 18643
+// Function ID: 18644
 // Name: ConjureChannelRow
-// Dependencies: [19, 17, 1072, 5026, 5914, 21, 5170, 575, 1099, 18647, 14203, 1113, 4026, 11137, 13269, 2]
+// Dependencies: [19, 17, 1072, 5026, 5914, 21, 5170, 575, 1099, 18644, 14203, 1113, 4026, 11137, 13269, 2]
 // Exports: default
 
-// Module 18646 (ConjureChannelRow)
+// Module 18643 (ConjureChannelRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import _modDef4026 from "module_4026" /* 4026 */;
 import ChannelConstants from "ChannelConstants" /* 5026 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 */;
 import BaseChannelItemDefault from "BaseChannelItem" /* 14203 */;
-import useConjureGuildUnreadSummaryDefault from "useConjureGuildUnreadSummary" /* 18647 */;
+import useConjureGuildUnreadSummaryDefault from "useConjureGuildUnreadSummary" /* 18644 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

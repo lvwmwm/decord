@@ -1,18 +1,18 @@
-// Module ID: 15338
-// Function ID: 15339
+// Module ID: 15335
+// Function ID: 15336
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1074, 21, 5170, 575, 5747, 8853, 11565, 11683, 15339, 15340, 2111, 1075, 15341, 15344, 2]
+// Dependencies: [19, 17, 1074, 21, 5170, 575, 5747, 8853, 11565, 11683, 15336, 15337, 2111, 1075, 15338, 15341, 2]
 // Exports: IndividualProductPreview
 
-// Module 15338 (IndividualProductPreview)
+// Module 15335 (IndividualProductPreview)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import LinearGradientDefault from "LinearGradient" /* 5747 */;
 import useCurrentUser from "useCurrentUser" /* 8853 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11565 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11683 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 15339 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 15340 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 15336 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 15337 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
@@ -151,11 +151,11 @@ export function IndividualProductPreview(arg0) {
     let tmp5;
     const ALL = tmp(1075).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      tmp5 = metroImportDefault(tmp(15341).FractionalNitroPreview, {});
+      tmp5 = metroImportDefault(tmp(15338).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === hasOwnProperty.ORB_PROFILE_BADGE) {
-        tmp5 = metroImportDefault(tmp(15344).OrbBadgePreview, {});
+        tmp5 = metroImportDefault(tmp(15341).OrbBadgePreview, {});
       }
     }
     return tmp5;

@@ -1,7 +1,7 @@
 // Module ID: 19710
 // Function ID: 19711
 // Name: VoicePanelVoiceChannelApp
-// Dependencies: [19, 17, 5019, 6963, 11393, 21, 5170, 575, 11394, 5756, 2020, 19615, 1652, 19711, 1705, 19712, 19560, 19669, 504, 2]
+// Dependencies: [19, 17, 5019, 6963, 11393, 21, 5170, 575, 11394, 5756, 2020, 19612, 1652, 19711, 1705, 19712, 19557, 19669, 504, 2]
 // Exports: default
 
 // Module 19710 (VoicePanelVoiceChannelApp)
@@ -11,8 +11,8 @@ import nativeDefault from "native" /* 575 */;
 import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 2020 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19560 */;
-import useControlsLockDefault from "useControlsLock" /* 19615 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19557 */;
+import useControlsLockDefault from "useControlsLock" /* 19612 */;
 import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 19669 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;

@@ -1,10 +1,10 @@
-// Module ID: 15442
-// Function ID: 15443
+// Module ID: 15439
+// Function ID: 15440
 // Name: createConjureProjectLinkEmbed
 // Dependencies: [10270, 5170, 575, 1113, 4026, 11747, 8498, 13971, 2]
 // Exports: default
 
-// Module 15442 (createConjureProjectLinkEmbed)
+// Module 15439 (createConjureProjectLinkEmbed)
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8498 */;

@@ -26,7 +26,7 @@ let react = react_mod;
 ({ useCallback: metroRequire, useImperativeHandle: metroImportDefault, useMemo: metroImportAll, useRef: c9, useState: c10, createElement: unpackModuleId, forwardRef, memo } = react);
 react = react_mod;
 const jsx = Fragment2.jsx;
-let closure_14 = { mount: false, data: "Array" };
+let closure_14 = { mount: false, data: "a" };
 const memoResult = memo(forwardRef(function BottomSheetModalComponent(name, arg1) {
   let closure_0;
   let containerHeight;

@@ -1,9 +1,9 @@
-// Module ID: 18467
-// Function ID: 18468
+// Module ID: 18464
+// Function ID: 18465
 // Name: MessagesItemChannelAvatar
 // Dependencies: [19, 5171, 502, 5922, 13994, 1385, 5914, 21, 5170, 575, 1187, 504, 10950, 2]
 
-// Module 18467 (MessagesItemChannelAvatar)
+// Module 18464 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 */;

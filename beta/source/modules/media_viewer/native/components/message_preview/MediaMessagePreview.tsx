@@ -1,10 +1,10 @@
-// Module ID: 15050
-// Function ID: 15051
+// Module ID: 15047
+// Function ID: 15048
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 7555, 6951, 5019, 6226, 9042, 1072, 21, 8481, 8814, 5170, 8974, 10040, 1652, 1705, 575, 15051, 504, 11309, 1113, 11, 15052, 10338, 10049, 8509, 10334, 5452, 13592, 10274, 5917, 2]
+// Dependencies: [32, 19, 17, 7555, 6951, 5019, 6226, 9042, 1072, 21, 8481, 8814, 5170, 8974, 10040, 1652, 1705, 575, 15048, 504, 11309, 1113, 11, 15049, 10338, 10049, 8509, 10334, 5452, 13592, 10274, 5917, 2]
 // Exports: default
 
-// Module 15050 (MediaMessagePreview)
+// Module 15047 (MediaMessagePreview)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -16,7 +16,7 @@ import RowGeneratorTypes from "RowGeneratorTypes" /* 8814 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 10049 */;
 import handleMessagesTapLink from "handleMessagesTapLink" /* 10274 */;
 import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10338 */;
-import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 15052 */;
+import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 15049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

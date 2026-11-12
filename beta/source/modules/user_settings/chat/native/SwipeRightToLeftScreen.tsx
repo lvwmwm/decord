@@ -1,14 +1,14 @@
-// Module ID: 17828
-// Function ID: 17829
+// Module ID: 17825
+// Function ID: 17826
 // Name: SwipeRightToLeftScreen
-// Dependencies: [19, 8536, 21, 11717, 16939, 2]
+// Dependencies: [19, 8536, 21, 11717, 16936, 2]
 // Exports: default
 
-// Module 17828 (SwipeRightToLeftScreen)
+// Module 17825 (SwipeRightToLeftScreen)
 import Fragment from "Fragment" /* 21 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
-import SettingLayoutDefault from "SettingLayout" /* 16939 */;
+import SettingLayoutDefault from "SettingLayout" /* 16936 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

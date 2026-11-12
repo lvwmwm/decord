@@ -1,10 +1,10 @@
-// Module ID: 17838
-// Function ID: 17839
+// Module ID: 17835
+// Function ID: 17836
 // Name: NotificationPermissionSettingsHeader
 // Dependencies: [19, 17, 1072, 14240, 21, 5170, 575, 14241, 1252, 7073, 11154, 5783, 1113, 5790, 2]
 // Exports: default
 
-// Module 17838 (NotificationPermissionSettingsHeader)
+// Module 17835 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

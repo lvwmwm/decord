@@ -1,9 +1,9 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18558
+// Function ID: 18559
 // Name: VoiceUserSummary
 // Dependencies: [19, 17, 21, 1187, 5170, 9945, 9944, 8773, 8777, 2]
 
-// Module 18561 (VoiceUserSummary)
+// Module 18558 (VoiceUserSummary)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1187 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9945 */;

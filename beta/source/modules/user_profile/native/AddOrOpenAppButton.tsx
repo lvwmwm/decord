@@ -1,10 +1,10 @@
-// Module ID: 15108
-// Function ID: 15109
+// Module ID: 15105
+// Function ID: 15106
 // Name: AddOrOpenAppButton
 // Dependencies: [5, 32, 19, 9885, 1072, 1498, 21, 12711, 11067, 5406, 7451, 12697, 5868, 1378, 8264, 9692, 1113, 5790, 575, 6969, 7582, 5355, 1625, 1252, 2]
 // Exports: default
 
-// Module 15108 (AddOrOpenAppButton)
+// Module 15105 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;

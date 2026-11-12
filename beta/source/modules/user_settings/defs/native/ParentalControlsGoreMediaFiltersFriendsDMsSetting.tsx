@@ -1,13 +1,13 @@
-// Module ID: 18313
-// Function ID: 18314
+// Module ID: 18310
+// Function ID: 18311
 // Name: ParentalControlsGoreMediaFiltersFriendsDMsSetting
-// Dependencies: [7824, 8536, 17072, 8791, 17076, 17082, 1113, 1196, 11717, 2]
+// Dependencies: [7824, 8536, 17069, 8791, 17073, 17079, 1113, 1196, 11717, 2]
 
-// Module 18313 (ParentalControlsGoreMediaFiltersFriendsDMsSetting)
+// Module 18310 (ParentalControlsGoreMediaFiltersFriendsDMsSetting)
 import intl3 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17072 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17076 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17069 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17073 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let obj = {
     let items;
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(17076);
+      let obj = selectedTeenId(17073);
       const goreContentFriendDm = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       let obj2 = {
         title: intl.string(selectedTeenId(1113).t["16/3Bi"]),
@@ -54,8 +54,8 @@ let obj = {
         currentValue: goreContentFriendDm,
         excluded: items
       };
-      const handleSensitiveMediaFilterPress = selectedTeenId(17082).handleSensitiveMediaFilterPress;
-      selectedTeenId(17082);
+      const handleSensitiveMediaFilterPress = selectedTeenId(17079).handleSensitiveMediaFilterPress;
+      selectedTeenId(17079);
       intl = selectedTeenId(1113).intl;
       intl2 = selectedTeenId(1113).intl;
       items = [selectedTeenId(1196).ExplicitContentRedaction.SHOW];

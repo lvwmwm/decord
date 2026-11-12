@@ -1,9 +1,9 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16776
+// Function ID: 16777
 // Name: components_native/ErrorBoundary
 // Dependencies: [5, 32, 19, 17, 11534, 21, 5170, 504, 13462, 5790, 1113, 5231, 1242, 572, 1187, 9266, 5783, 2]
 
-// Module 16779 (components_native/ErrorBoundary)
+// Module 16776 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;

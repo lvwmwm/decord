@@ -1,10 +1,10 @@
-// Module ID: 15122
-// Function ID: 15123
+// Module ID: 15119
+// Function ID: 15120
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 21, 5170, 12594, 7993, 10908, 8782, 5923, 10903, 10909, 9850, 15123, 15124, 575, 15125, 8822, 8765, 5783, 11860, 2]
+// Dependencies: [19, 17, 21, 5170, 12594, 7993, 10908, 8782, 5923, 10903, 10909, 9850, 15120, 15121, 575, 15122, 8822, 8765, 5783, 11860, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 15122 (UserProfileActivityBadges)
+// Module 15119 (UserProfileActivityBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;
@@ -12,9 +12,9 @@ import ActivityTypes from "ActivityTypes" /* 5923 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7993 */;
 import utils from "utils" /* 8822 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 10908 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 15123 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 15124 */;
-import Badges from "Badges" /* 15125 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 15120 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 15121 */;
+import Badges from "Badges" /* 15122 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

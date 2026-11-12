@@ -1,10 +1,10 @@
-// Module ID: 15309
-// Function ID: 15310
+// Module ID: 15306
+// Function ID: 15307
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5170, 575, 15307, 9583, 9652, 1252, 9595, 5869, 1113, 9584, 9580, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5170, 575, 15304, 9583, 9652, 1252, 9595, 5869, 1113, 9584, 9580, 2]
 // Exports: default
 
-// Module 15309 (AddToWishlistItemCard)
+// Module 15306 (AddToWishlistItemCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

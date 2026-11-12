@@ -1,10 +1,10 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 17879
+// Function ID: 17880
 // Name: UserSettingsCommunityNotifications
 // Dependencies: [19, 11172, 21, 5170, 504, 11, 8279, 6191, 7159, 7462, 1113, 5000, 2]
 // Exports: default
 
-// Module 17882 (UserSettingsCommunityNotifications)
+// Module 17879 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl3 from "intl" /* 1113 */;
 import TableRowGroup2 from "TableRowGroup" /* 7159 */;

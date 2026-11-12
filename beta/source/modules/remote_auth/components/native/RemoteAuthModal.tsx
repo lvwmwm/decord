@@ -1,10 +1,10 @@
-// Module ID: 16028
-// Function ID: 16029
+// Module ID: 16025
+// Function ID: 16026
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1072, 21, 5170, 575, 1627, 7691, 7041, 5874, 16027, 1652, 1282, 12, 16029, 5783, 1113, 1187, 6855, 5790, 6831, 16033, 7048, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5170, 575, 1627, 7691, 7041, 5874, 16024, 1652, 1282, 12, 16026, 5783, 1113, 1187, 6855, 5790, 6831, 16030, 7048, 2]
 // Exports: default
 
-// Module 16028 (RemoteAuthModal)
+// Module 16025 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -22,9 +22,9 @@ import ButtonGroup2 from "ButtonGroup" /* 6855 */;
 import AuthBackgroundArtDefault from "AuthBackgroundArt" /* 7041 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7048 */;
 import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 7691 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16027 */;
-import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 16029 */;
-import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 16033 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16024 */;
+import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 16026 */;
+import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 16030 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 15392
-// Function ID: 15393
+// Module ID: 15389
+// Function ID: 15390
 // Name: transformMessageAttachments
 // Dependencies: [8482, 1072, 1403, 10264, 6215, 8794, 6217, 1377, 8793, 1113, 13674, 8815, 8947, 8320, 8813, 2]
 // Exports: default
 
-// Module 15392 (transformMessageAttachments)
+// Module 15389 (transformMessageAttachments)
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;

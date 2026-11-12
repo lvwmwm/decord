@@ -1,7 +1,7 @@
 // Module ID: 20008
 // Function ID: 20009
 // Name: InterestGuildRecommendations
-// Dependencies: [32, 19, 17, 5021, 1072, 21, 7097, 5170, 575, 5783, 1113, 18812, 5756, 1411, 7076, 2534, 5406, 20009, 9626, 7053, 6191, 9420, 5033, 7471, 20012, 504, 18809, 18810, 1252, 7103, 7388, 9935, 20013, 1652, 20014, 5790, 2]
+// Dependencies: [32, 19, 17, 5021, 1072, 21, 7097, 5170, 575, 5783, 1113, 18809, 5756, 1411, 7076, 2534, 5406, 20009, 9626, 7053, 6191, 9420, 5033, 7471, 20012, 504, 18806, 18807, 1252, 7103, 7388, 9935, 20013, 1652, 20014, 5790, 2]
 // Exports: default
 
 // Module 20008 (InterestGuildRecommendations)
@@ -15,7 +15,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import GuildIconDefault from "GuildIcon" /* 7053 */;
 import GuildBadgeV2Default from "GuildBadgeV2" /* 9420 */;
 import ClipViewDefault from "ClipView" /* 9626 */;
-import InterestGhostDefault from "InterestGhost" /* 18812 */;
+import InterestGhostDefault from "InterestGhost" /* 18809 */;
 import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 20009 */;
 import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 20012 */;
 import InterestGuildActions from "InterestGuildActions" /* 20013 */;

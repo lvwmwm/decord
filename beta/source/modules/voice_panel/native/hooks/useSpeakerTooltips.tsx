@@ -1,7 +1,7 @@
 // Module ID: 19662
 // Function ID: 19663
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 19660, 11393, 5016, 21, 19663, 19579, 11358, 11394, 1652, 1705, 7674, 19615, 1113, 5003, 19665, 10109, 2]
+// Dependencies: [32, 19, 19660, 11393, 5016, 21, 19663, 19576, 11358, 11394, 1652, 1705, 7674, 19612, 1113, 5003, 19665, 10109, 2]
 // Exports: default
 
 // Module 19662 (useSpeakerTooltips)
@@ -46,13 +46,13 @@ export default function useSpeakerTooltips(targetRef, arg1) {
   let tmp17;
   let tmp18;
   let voiceUpsellDismissed;
-  const f119104 = () => {
+  const f119118 = () => {
     const obj = memo2;
     if (memo2.visible) {
       obj.onDismiss();
     }
   };
-  const f119105 = () => {
+  const f119119 = () => {
     const tmp = closure_1;
     if (!tmp) {
       callback1();
@@ -195,16 +195,16 @@ export default function useSpeakerTooltips(targetRef, arg1) {
     }
   }, items7);
   const items8 = [memo1];
-  const callback = obj2.useCallback(f119104, items8);
+  const callback = obj2.useCallback(f119118, items8);
   const items9 = [tmp, callback];
-  const effect1 = obj2.useEffect(f119105, items9);
+  const effect1 = obj2.useEffect(f119119, items9);
   const tmp6Result3 = require("useCoachmark");
   const coachmark = tmp6Result3.useCoachmark(targetRef, memo1);
   importDefault = tmp;
   const items10 = [memo2];
-  const callback1 = obj2.useCallback(f119104, items10);
+  const callback1 = obj2.useCallback(f119118, items10);
   const items11 = [tmp, callback1];
-  const effect2 = obj2.useEffect(f119105, items11);
+  const effect2 = obj2.useEffect(f119119, items11);
   const tmp6Result4 = require("useCoachmark");
   const coachmark1 = tmp6Result4.useCoachmark(targetRef, memo2);
 };

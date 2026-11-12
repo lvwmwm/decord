@@ -1,13 +1,13 @@
-// Module ID: 15113
-// Function ID: 15114
+// Module ID: 15110
+// Function ID: 15111
 // Name: useEntryActivityAndApplication
-// Dependencies: [32, 5018, 15114, 504, 7424, 2]
+// Dependencies: [32, 5018, 15111, 504, 7424, 2]
 // Exports: default
 
-// Module 15113 (useEntryActivityAndApplication)
+// Module 15110 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
-import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 15114 */;
+import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 15111 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

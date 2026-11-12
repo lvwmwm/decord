@@ -1,76 +1,34 @@
 // Module ID: 16472
 // Function ID: 16473
-// Dependencies: [16473, 16474, 16475, 16512, 16513, 16529, 16530]
+// Dependencies: [16473, 16475, 16482, 16505, 16493, 16507, 16503, 16508]
 
 // Module 16472
 import _mod16473 from "module_16473" /* 16473 */;
 import _mod16475 from "module_16475" /* 16475 */;
-import isForced from "isForced" /* 16512 */;
+import _mod16482 from "module_16482" /* 16482 */;
+import _mod16493 from "module_16493" /* 16493 */;
+import _mod16503 from "module_16503" /* 16503 */;
+import _mod16505 from "module_16505" /* 16505 */;
+import _mod16507 from "module_16507" /* 16507 */;
+import propertyIsEnumerable from "propertyIsEnumerable" /* 16508 */;
 
-
-export default (dontCallGetSet, obj) => {
-  let _global;
-  let stat;
-  let target;
-  let tmp5;
-  ({ target, global: _global, stat } = dontCallGetSet);
-  const tmp3 = _mod16473;
-  if (_global) {
-    tmp5 = tmp3;
-  } else {
-    let tmp4 = tmp3[target];
-    if (stat) {
-      if (!tmp4) {
-        tmp4 = tmp(16474)(target, {});
+if (!_mod16473) {
+  getOwnPropertyDescriptor = function getOwnPropertyDescriptor(arg0, arg1) {
+    const tmp3 = _mod16475(arg0);
+    const tmp4 = _mod16482(arg1);
+    if (!_mod16505) {
+      if (_mod16493(tmp3, tmp4)) {
+        const tmpResult = _mod16507;
+        const tmpResult2 = _mod16503;
+        return tmpResult(!tmpResult2(propertyIsEnumerable.f, tmp3, tmp4), tmp3[tmp4]);
       }
-      tmp5 = tmp4;
     } else {
-      tmp5 = tmp4 && tmp(16473)[target].prototype;
+      try {
+        return getOwnPropertyDescriptor(tmp3, tmp4);
+      } catch (err) {
+      }
     }
-  }
-  if (tmp5) {
-    for (const key10024 in obj) {
-      let tmp8;
-      let tmp22 = obj[key10024];
-      let tmp21 = key10024;
-      if (dontCallGetSet.dontCallGetSet) {
-        obj = _mod16475;
-        let iter = obj.f(tmp5, key10024);
-        let value = iter && iter.value;
-        tmp8 = value;
-      } else {
-        tmp8 = tmp5[key10024];
-      }
-      let tmp11 = require;
-      let sum = key10024;
-      let tmp13 = isForced;
-      if (!_global) {
-        let str4 = "#";
-        if (stat) {
-          str4 = ".";
-        }
-        sum = target + str4 + key10024;
-      }
-      if (!tmp13(sum, dontCallGetSet.forced)) {
-        if (undefined !== tmp8) {
-          if (typeof tmp22 === typeof tmp8) {
-            continue;
-          } else {
-            let tmp23 = tmp11(16513)(tmp22, tmp8);
-          }
-        }
-        continue;
-      }
-      let sham = dontCallGetSet.sham;
-      if (!sham) {
-        let sham2 = tmp8 && tmp8.sham;
-        sham = sham2;
-      }
-      if (sham) {
-        let tmp15 = tmp11(16529)(tmp22, "sham", true);
-      }
-      let tmp20 = tmp11(16530)(tmp5, tmp21, tmp22, dontCallGetSet);
-      continue;
-    }
-  }
-};
+  };
+}
+
+export const f = getOwnPropertyDescriptor;

@@ -1,10 +1,10 @@
-// Module ID: 15155
-// Function ID: 15156
+// Module ID: 15152
+// Function ID: 15153
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 5018, 5019, 6659, 5390, 5041, 11702, 5102, 5112, 5073, 6657, 5835, 1072, 9018, 21, 5170, 575, 7420, 5091, 563, 15156, 6821, 15157, 7993, 5790, 1113, 8782, 5406, 6831, 11886, 10913, 1187, 8828, 11867, 5866, 15159, 8938, 5347, 8052, 8041, 6661, 1411, 9843, 7668, 9022, 11871, 1378, 9052, 2]
+// Dependencies: [5, 19, 5018, 5019, 6659, 5390, 5041, 11702, 5102, 5112, 5073, 6657, 5835, 1072, 9018, 21, 5170, 575, 7420, 5091, 563, 15153, 6821, 15154, 7993, 5790, 1113, 8782, 5406, 6831, 11886, 10913, 1187, 8828, 11867, 5866, 15156, 8938, 5347, 8052, 8041, 6661, 1411, 9843, 7668, 9022, 11871, 1378, 9052, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 15155 (UserProfileActivityButtons)
+// Module 15152 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -22,9 +22,9 @@ import StageChannelModalActionCreators from "StageChannelModalActionCreators" /*
 import isStreamingDefault from "isStreaming" /* 8938 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9843 */;
 import GamesActionCreatorsDefault from "GamesActionCreators" /* 11886 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 15156 */;
-import getActivityJoinability from "getActivityJoinability" /* 15157 */;
-import getStreamURLDefault from "getStreamURL" /* 15159 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 15153 */;
+import getActivityJoinability from "getActivityJoinability" /* 15154 */;
+import getStreamURLDefault from "getStreamURL" /* 15156 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;

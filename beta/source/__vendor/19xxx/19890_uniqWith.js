@@ -1,10 +1,10 @@
 // Module ID: 19890
 // Function ID: 19891
 // Name: uniqWith
-// Dependencies: [18222]
+// Dependencies: [18219]
 
 // Module 19890 (uniqWith)
-import baseUniq from "baseUniq" /* 18222 */;
+import baseUniq from "baseUniq" /* 18219 */;
 
 
 export default function uniqWith(arg0, fn) {

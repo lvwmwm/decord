@@ -1,7 +1,7 @@
 // Module ID: 19657
 // Function ID: 19658
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 2162, 5024, 5019, 5837, 21, 5170, 575, 15007, 1113, 5791, 7408, 504, 5808, 9359, 9105, 11394, 6205, 19658, 6191, 8712, 19555, 19655, 6853, 6847, 12170, 5783, 8765, 11359, 12091, 8716, 8948, 1093, 19654, 19629, 2]
+// Dependencies: [19, 17, 2162, 5024, 5019, 5837, 21, 5170, 575, 15004, 1113, 5791, 7408, 504, 5808, 9359, 9105, 11394, 6205, 19658, 6191, 8712, 19552, 19655, 6853, 6847, 12170, 5783, 8765, 11359, 12091, 8716, 8948, 1093, 19654, 19626, 2]
 
 // Module 19657 (VoicePanelTitleButton)
 import react_native from "react-native" /* 17 */;
@@ -21,9 +21,9 @@ import native from "native" /* 9105 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
 import useStageSummaryDefault from "useStageSummary" /* 12091 */;
 import MicrophoneIcon2 from "MicrophoneIcon" /* 12170 */;
-import ShieldLockIcon2 from "ShieldLockIcon" /* 15007 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 19555 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19629 */;
+import ShieldLockIcon2 from "ShieldLockIcon" /* 15004 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 19552 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19626 */;
 import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19655 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 19658 */;
 import react from "react" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 14486
+// Function ID: 14487
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 5171, 5019, 13989, 13990, 1072, 13055, 21, 1652, 1187, 5783, 12, 8134, 5170, 575, 6866, 504, 5756, 7055, 1113, 5402, 1705, 8744, 11300, 7050, 14491, 5767, 14237, 5422, 6185, 1108, 13567, 12033, 14085, 14492, 8131, 5895, 14080, 13051, 5885, 12170, 2]
+// Dependencies: [32, 19, 17, 5171, 5019, 13989, 13990, 1072, 13055, 21, 1652, 1187, 5783, 12, 8134, 5170, 575, 6866, 504, 5756, 7055, 1113, 5402, 1705, 8744, 11300, 7050, 14487, 5767, 14237, 5422, 6185, 1108, 13567, 12033, 14085, 14488, 8131, 5895, 14080, 13051, 5885, 12170, 2]
 
-// Module 14490 (VoiceMessageOverlay)
+// Module 14486 (VoiceMessageOverlay)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -21,7 +21,7 @@ import inlineStyles from "inlineStyles" /* 8134 */;
 import ChatInputConstants from "ChatInputConstants" /* 13055 */;
 import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13989 */;
 import VoiceMessageConstants from "VoiceMessageConstants" /* 13990 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14491 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14487 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -504,17 +504,17 @@ const memoResult = react.memo(function VoiceMessageEllipse(arg0) {
   let tmp7;
   let useReducedMotion;
   let voiceMessageAnimationState;
-  const f107782 = (currWaveHeight) => currWaveHeight.currWaveHeight;
+  const f107778 = (currWaveHeight) => currWaveHeight.currWaveHeight;
   ({ radius, voiceMessageAnimationState } = arg0);
   ({ opacity, height, offsetThreshold } = arg0);
   let obj = get_initialized;
   items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f107782)];
+  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f107778)];
   let c0;
   let c1;
   [tmp5, tmp6, tmp7] = items1;
-  const tmp4 = useVoiceMessagesUIStore(f107782);
+  const tmp4 = useVoiceMessagesUIStore(f107778);
   const obj2 = _mod1652;
   class VoiceMessageOverlayTsx1 {
     constructor() {
@@ -874,7 +874,7 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
   const obj7 = { style: tmp5.innerContainer, children: null };
   const obj8 = { style: tmp5.voiceChatContainer, children: null };
   const obj9 = { isRecording: tmp8, initialAnimation: sharedValue, leftAccessory: closure_13(IconButton, obj10), rightAccessory: null };
-  const tmp3Result = tmp3(14492);
+  const tmp3Result = tmp3(14488);
   obj10 = {
     icon: ref(5895),
     variant: str,

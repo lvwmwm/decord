@@ -4,17 +4,17 @@
 // Exports: default
 
 // Module 16596
-let size;
-
 
 export default () => (arg0) => {
   let closure_0 = arg0;
-  return {
+  let obj = {
     features: {
-      image(dependencyMap) {
-        size = { uri: dependencyMap.uri, preview: dependencyMap.preview, filename: dependencyMap.filename, width: dependencyMap.width, height: dependencyMap.height, caption: dependencyMap.caption };
-        return closure_0.send("image", size);
+      apiResponse(request, response, tmp4Result) {
+        const obj = { request, response, duration: tmp4Result };
+        const tmp = response && response.status && typeof response.status === "number" && response.status >= 200 && response.status <= 299;
+        closure_0.send("api.response", obj, !tmp);
       }
     }
   };
+  return obj;
 };

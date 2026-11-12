@@ -1,7 +1,7 @@
 // Module ID: 19712
 // Function ID: 19713
 // Name: VoiceChannelAppSurface
-// Dependencies: [19, 21, 1627, 12459, 5831, 19067, 16714, 12460, 19070, 12469, 12473, 19074, 1113, 4124, 2]
+// Dependencies: [19, 21, 1627, 12459, 5831, 19064, 16711, 12460, 19067, 12469, 12473, 19071, 1113, 4124, 2]
 // Exports: default
 
 // Module 19712 (VoiceChannelAppSurface)

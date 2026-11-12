@@ -1,13 +1,13 @@
 // Module ID: 19772
 // Function ID: 19773
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 16159, 11395, 11393, 21, 11394, 1652, 19736, 5793, 16614, 5758, 2]
+// Dependencies: [19, 16156, 11395, 11393, 21, 11394, 1652, 19736, 5793, 16611, 5758, 2]
 
 // Module 19772 (VoicePanelControlsDimOverlay)
 import Fragment from "Fragment" /* 21 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import BackdropConstants from "BackdropConstants" /* 16159 */;
+import BackdropConstants from "BackdropConstants" /* 16156 */;
 import react from "react" /* 19 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
 import size from "module_2" /* 2 */;
@@ -119,7 +119,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   items4[1] = setControlsMode(5793).withSpring;
   items4[2] = derivedValue;
   items4[3] = closure_5;
-  items4[4] = setControlsMode(16614).accessibilityPreferencesSharedValue;
+  items4[4] = setControlsMode(16611).accessibilityPreferencesSharedValue;
   items4[5] = derivedValue1;
   c0 = undefined;
   c1 = undefined;

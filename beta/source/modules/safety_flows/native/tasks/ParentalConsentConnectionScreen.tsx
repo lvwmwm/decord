@@ -1,7 +1,7 @@
 // Module ID: 20538
 // Function ID: 20539
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 7824, 1385, 7825, 21, 5170, 575, 20529, 20528, 13623, 5753, 20037, 17136, 8473, 504, 17134, 20539, 20523, 5869, 1113, 2960, 5406, 17135, 2118, 20532, 13484, 6191, 20540, 13684, 20541, 5783, 2664, 17137, 2]
+// Dependencies: [5, 32, 19, 17, 7824, 1385, 7825, 21, 5170, 575, 20529, 20528, 13623, 5753, 20037, 17133, 8473, 504, 17131, 20539, 20523, 5869, 1113, 2960, 5406, 17132, 2118, 20532, 13484, 6191, 20540, 13684, 20541, 5783, 2664, 17134, 2]
 // Exports: default
 
 // Module 20538 (ParentalConsentConnectionScreen)
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2118 */;
 import _modDef2960 from "module_2960" /* 2960 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7825 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17134 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17131 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -242,7 +242,7 @@ export default function ParentalConsentConnectionScreen() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2960.dMMSA0), body: intl2.format(_modDef2960["6GaRTu"], obj2) };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(17135, dependencyMap.paths);
+    const tmp2 = asyncRequire(17132, dependencyMap.paths);
     intl = intl5.intl;
     intl2 = intl5.intl;
     obj2 = { link };

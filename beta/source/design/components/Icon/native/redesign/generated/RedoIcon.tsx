@@ -1,14 +1,14 @@
-// Module ID: 17442
-// Function ID: 17443
+// Module ID: 17439
+// Function ID: 17440
 // Name: RedoIcon
-// Dependencies: [19, 21, 575, 5873, 17443, 2]
+// Dependencies: [19, 21, 575, 5873, 17440, 2]
 // Exports: RedoIcon
 
-// Module 17442 (RedoIcon)
+// Module 17439 (RedoIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 17443 */;
+import AssetRegistry from "AssetRegistry" /* 17440 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

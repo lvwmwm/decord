@@ -1,7 +1,7 @@
 // Module ID: 19774
 // Function ID: 19775
 // Name: VoicePanelVoiceControls
-// Dependencies: [19, 17, 5019, 11393, 21, 5170, 575, 1652, 11394, 19769, 11943, 4995, 19652, 12141, 15520, 11359, 6191, 19775, 7159, 1113, 12153, 504, 12667, 5422, 5452, 1624, 7056, 7388, 14096, 2]
+// Dependencies: [19, 17, 5019, 11393, 21, 5170, 575, 1652, 11394, 19769, 11943, 4995, 19652, 12141, 15517, 11359, 6191, 19775, 7159, 1113, 12153, 504, 12667, 5422, 5452, 1624, 7056, 7388, 14096, 2]
 
 // Module 19774 (VoicePanelVoiceControls)
 import react_native from "react-native" /* 17 */;
@@ -17,7 +17,7 @@ import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
 import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11943 */;
 import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 12141 */;
 import UserSettingsVoiceProcessing from "UserSettingsVoiceProcessing" /* 12153 */;
-import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 15520 */;
+import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 15517 */;
 import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19652 */;
 import useShowConnectedControlsDefault from "useShowConnectedControls" /* 19769 */;
 import VoicePanelVoiceControlsButtons from "VoicePanelVoiceControlsButtons" /* 19775 */;

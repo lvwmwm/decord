@@ -1,74 +1,28 @@
 // Module ID: 16249
 // Function ID: 16250
-// Dependencies: []
+// Dependencies: [16241]
 
 // Module 16249
-const re0 = /^[0-9]+$/;
-const obj = {
-  compareIdentifiers(major, major2) {
-    const isMatch = re0.test(major);
-    const isMatch1 = re0.test(major2);
-    let tmp4 = major2;
-    let tmp5 = major;
-    const tmp3 = isMatch && isMatch1;
-    if (tmp3) {
-      tmp5 = +major;
-      tmp4 = +major2;
+import _mod16241 from "module_16241" /* 16241 */;
+
+
+export default function(version, pre, major2, arg3, arg4) {
+  let tmp = arg4;
+  let tmp2 = arg3;
+  if (typeof major2 === "string") {
+    tmp = arg3;
+    tmp2 = major2;
+  }
+  try {
+    const tmp7 = _mod16241;
+    if (version instanceof _mod16241) {
+      version = version.version;
     }
-    let num = 0;
-    if (tmp5 !== tmp4) {
-      let num2;
-      if (!isMatch) {
-        let num3;
-        if (!isMatch1) {
-          let num4 = 1;
-          if (tmp5 < tmp4) {
-            num4 = -1;
-          }
-          num3 = num4;
-        } else {
-          num3 = 1;
-        }
-        num2 = num3;
-      } else {
-        num2 = -1;
-      }
-      num = num2;
-    }
-    return num;
-  },
-  rcompareIdentifiers(arg0, arg1) {
-    const isMatch = re0.test(arg1);
-    const isMatch1 = re0.test(arg0);
-    let tmp4 = arg0;
-    let tmp5 = arg1;
-    const tmp3 = isMatch && isMatch1;
-    if (tmp3) {
-      tmp5 = +arg1;
-      tmp4 = +arg0;
-    }
-    let num = 0;
-    if (tmp5 !== tmp4) {
-      let num2;
-      if (!isMatch) {
-        let num3;
-        if (!isMatch1) {
-          let num4 = 1;
-          if (tmp5 < tmp4) {
-            num4 = -1;
-          }
-          num3 = num4;
-        } else {
-          num3 = 1;
-        }
-        num2 = num3;
-      } else {
-        num2 = -1;
-      }
-      num = num2;
-    }
-    return num;
+    const self = this;
+    const self2 = this;
+    const tmp72 = new tmp7(version, major2);
+    return tmp72.inc(pre, tmp2, tmp).version;
+  } catch (err) {
+    return null;
   }
 };
-
-export default obj;

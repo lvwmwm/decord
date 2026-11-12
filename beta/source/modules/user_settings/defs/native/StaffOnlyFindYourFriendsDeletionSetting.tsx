@@ -1,14 +1,14 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17094
+// Function ID: 17095
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8536, 21, 1254, 1259, 5085, 14519, 1336, 5869, 11717, 17098, 2]
+// Dependencies: [5, 17, 8536, 21, 1254, 1259, 5085, 14515, 1336, 5869, 11717, 17095, 2]
 
-// Module 17097 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 17094 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 5085 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17098 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17095 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
-const f112661 = (isLoading) => isLoading.isLoading;
+const f112657 = (isLoading) => isLoading.isLoading;
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -131,7 +131,7 @@ obj = {
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return closure_6(f112661, _slicedToArray.shallow);
+    return closure_6(f112657, _slicedToArray.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     return obj(...arguments);
@@ -139,7 +139,7 @@ obj = {
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (closure_6(f112661, _slicedToArray.shallow)) {
+    if (closure_6(f112657, _slicedToArray.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;

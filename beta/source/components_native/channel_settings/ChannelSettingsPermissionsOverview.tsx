@@ -1,10 +1,10 @@
-// Module ID: 19321
-// Function ID: 19322
+// Module ID: 19318
+// Function ID: 19319
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 5077, 5019, 5076, 5041, 5112, 1385, 1072, 21, 5170, 575, 6122, 1113, 5808, 5107, 11837, 9146, 8301, 12, 7159, 7071, 12423, 1499, 11661, 10384, 17663, 504, 2116, 10970, 19322, 7691, 9935, 7582, 1652, 2]
+// Dependencies: [32, 5, 19, 17, 5077, 5019, 5076, 5041, 5112, 1385, 1072, 21, 5170, 575, 6122, 1113, 5808, 5107, 11837, 9146, 8301, 12, 7159, 7071, 12423, 1499, 11661, 10384, 17660, 504, 2116, 10970, 19319, 7691, 9935, 7582, 1652, 2]
 // Exports: default
 
-// Module 19321 (ChannelSettingsPermissionsOverview)
+// Module 19318 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,8 +16,8 @@ import TableRow3 from "TableRow" /* 7071 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
 import RoleLabel from "RoleLabel" /* 10384 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10970 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 17663 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19322 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 17660 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19319 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -230,7 +230,7 @@ function RoleRow(onDelete) {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(17663).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(17660).CircleMinusIcon;
       intl = tmp3(1113).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }

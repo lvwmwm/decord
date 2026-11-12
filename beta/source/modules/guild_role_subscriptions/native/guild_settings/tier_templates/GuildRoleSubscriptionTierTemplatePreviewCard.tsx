@@ -1,7 +1,7 @@
 // Module ID: 20442
 // Function ID: 20443
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1072, 21, 5170, 575, 5783, 5406, 20443, 2118, 20447, 1187, 20446, 1113, 15782, 1499, 17574, 20448, 1252, 5921, 17580, 20444, 17585, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 575, 5783, 5406, 20443, 2118, 20447, 1187, 20446, 1113, 15779, 1499, 17571, 20448, 1252, 5921, 17577, 20444, 17582, 2]
 // Exports: default
 
 // Module 20442 (GuildRoleSubscriptionTierTemplatePreviewCard)
@@ -12,7 +12,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15782 */;
+import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15779 */;
 import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20446 */;
 import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 20448 */;
 import react from "react" /* 19 */;

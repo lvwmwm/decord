@@ -1,10 +1,10 @@
-// Module ID: 15628
-// Function ID: 15629
+// Module ID: 15625
+// Function ID: 15626
 // Name: TieredTenureBadgePerkCard
-// Dependencies: [19, 17, 1385, 1072, 21, 5170, 11627, 15629, 11625, 11618, 15630, 504, 11592, 1252, 11637, 8859, 5406, 11591, 2118, 11591, 1113, 15632, 5783, 11617, 15599, 5874, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5170, 11627, 15626, 11625, 11618, 15627, 504, 11592, 1252, 11637, 8859, 5406, 11591, 2118, 11591, 1113, 15629, 5783, 11617, 15596, 5874, 2]
 // Exports: TieredTenureBadgePerkCard
 
-// Module 15628 (TieredTenureBadgePerkCard)
+// Module 15625 (TieredTenureBadgePerkCard)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

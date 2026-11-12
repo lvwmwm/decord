@@ -1,7 +1,7 @@
 // Module ID: 19697
 // Function ID: 19698
 // Name: VoicePanelCardFloatingControls
-// Dependencies: [19, 17, 5171, 5018, 6801, 5925, 11395, 11393, 11398, 1072, 5837, 21, 1652, 1187, 5170, 575, 11394, 19658, 19698, 12242, 19699, 19656, 1113, 12148, 9347, 9346, 7056, 19700, 7185, 5793, 19654, 8011, 6804, 11097, 19559, 19702, 19703, 504, 19682, 19704, 5231, 9404, 9433, 8786, 9431, 9454, 9408, 19705, 5422, 7420, 8854, 9359, 6604, 9403, 5783, 15007, 19602, 2]
+// Dependencies: [19, 17, 5171, 5018, 6801, 5925, 11395, 11393, 11398, 1072, 5837, 21, 1652, 1187, 5170, 575, 11394, 19658, 19698, 12242, 19699, 19656, 1113, 12148, 9347, 9346, 7056, 19700, 7185, 5793, 19654, 8011, 6804, 11097, 19556, 19702, 19703, 504, 19682, 19704, 5231, 9404, 9433, 8786, 9431, 9454, 9408, 19705, 5422, 7420, 8854, 9359, 6604, 9403, 5783, 15004, 19599, 2]
 
 // Module 19697 (VoicePanelCardFloatingControls)
 import get_initialized from "get initialized" /* 504 */;
@@ -27,7 +27,7 @@ import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 *
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11398 */;
 import VoiceXIcon from "VoiceXIcon" /* 12148 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19559 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19556 */;
 import useStableParticipant from "useStableParticipant" /* 19654 */;
 import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19656 */;
 import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 19682 */;
@@ -307,7 +307,7 @@ let closure_32 = react.memo(function CloseButton(participant) {
     }
   }, items);
   obj2 = { icon: guildId(19702), onPress: callback, accessibilityLabel: stringResult };
-  tmp6 = guildId(19559);
+  tmp6 = guildId(19556);
   const obj3 = participant(19654);
   let result = obj3.isStableActivityParticipant(participant);
   const intl = participant(1113).intl;
@@ -652,7 +652,7 @@ let closure_48 = react.memo(function FloatingParticipantLabel(controlsHidden) {
   let tmp32;
   let tmp33;
   let tmp37;
-  const f119200 = (type) => type.type !== channelId(analyticsLocations[21]).VoicePanelCardUserStateIconType.STREAM_ICON;
+  const f119214 = (type) => type.type !== channelId(analyticsLocations[21]).VoicePanelCardUserStateIconType.STREAM_ICON;
   ({ label, layout, participant } = controlsHidden);
   channelId = undefined;
   let id;
@@ -696,7 +696,7 @@ let closure_48 = react.memo(function FloatingParticipantLabel(controlsHidden) {
   const tmp4Result7 = tmp4(tmp2[53]);
   const displayNameStylesFont = tmp4Result7.useDisplayNameStylesFont({ displayNameStyles: tmp12 });
   const length = tmpResultResult.length;
-  const items1 = [closure_45, tmpResultResult.filter(f119200).length >= 1, focused, connected, mode, closure_10, controlsHidden];
+  const items1 = [closure_45, tmpResultResult.filter(f119214).length >= 1, focused, connected, mode, closure_10, controlsHidden];
   let c0;
   let c1;
   let c2;
@@ -704,7 +704,7 @@ let closure_48 = react.memo(function FloatingParticipantLabel(controlsHidden) {
   let c4;
   let c5;
   [tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20] = items1;
-  const length2 = tmpResultResult.filter(f119200).length;
+  const length2 = tmpResultResult.filter(f119214).length;
   const tmp4Result8 = tmp4(tmp2[12]);
   class VoicePanelCardFloatingControlsTsx10 {
     constructor() {
@@ -917,7 +917,7 @@ const memoResult = react.memo(function FloatingControls(arg0) {
   let c3;
   let c4;
   [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14] = items2;
-  const tmp8 = tmp(19602)(guildId, channelId, participant.id);
+  const tmp8 = tmp(19599)(guildId, channelId, participant.id);
   const tmp4Result3 = participant(1652);
   class VoicePanelCardFloatingControlsTsx13 {
     constructor() {

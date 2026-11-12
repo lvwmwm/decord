@@ -1,10 +1,10 @@
-// Module ID: 18270
-// Function ID: 18271
+// Module ID: 18267
+// Function ID: 18268
 // Name: PinotMemberSetting
 // Dependencies: [17, 1072, 8536, 21, 5170, 575, 11717, 1113, 3316, 9168, 11499, 2185, 5783, 8128, 2]
 // Exports: usePinotDataPrivacySections
 
-// Module 18270 (PinotMemberSetting)
+// Module 18267 (PinotMemberSetting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

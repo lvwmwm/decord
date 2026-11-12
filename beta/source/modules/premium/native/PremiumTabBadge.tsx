@@ -1,10 +1,10 @@
-// Module ID: 17235
-// Function ID: 17236
+// Module ID: 17232
+// Function ID: 17233
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 2176, 1387, 7726, 21, 5170, 575, 5177, 5401, 5783, 6192, 1260, 10762, 1187, 17236, 7736, 8632, 2171, 5202, 5003, 504, 7674, 8628, 8627, 15620, 17237, 1113, 5747, 1092, 1377, 2]
+// Dependencies: [32, 19, 17, 2176, 1387, 7726, 21, 5170, 575, 5177, 5401, 5783, 6192, 1260, 10762, 1187, 17233, 7736, 8632, 2171, 5202, 5003, 504, 7674, 8628, 8627, 15617, 17234, 1113, 5747, 1092, 1377, 2]
 // Exports: default
 
-// Module 17235 (PremiumTabBadge)
+// Module 17232 (PremiumTabBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -29,8 +29,8 @@ import ReferralProgramUtils from "ReferralProgramUtils" /* 8627 */;
 import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8628 */;
 import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8632 */;
 import MarketingComponentType from "MarketingComponentType" /* 10762 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15620 */;
-import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 17237 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15617 */;
+import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 17234 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
@@ -49,7 +49,7 @@ let obj7;
 let obj8;
 let obj9;
 let tmp2;
-const AssetRegistryDefault = tmp2(17236);
+const AssetRegistryDefault = tmp2(17233);
 function ThemedTabBadge(label) {
   let Text;
   let items1;

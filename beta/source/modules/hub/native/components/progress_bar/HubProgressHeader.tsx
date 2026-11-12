@@ -1,10 +1,10 @@
-// Module ID: 14511
-// Function ID: 14512
+// Module ID: 14507
+// Function ID: 14508
 // Name: HubProgressHeader
-// Dependencies: [19, 17, 9244, 14124, 21, 5170, 575, 14508, 1196, 1113, 8279, 5406, 14512, 2118, 14634, 2]
+// Dependencies: [19, 17, 9244, 14124, 21, 5170, 575, 14504, 1196, 1113, 8279, 5406, 14508, 2118, 14630, 2]
 // Exports: default
 
-// Module 14511 (HubProgressHeader)
+// Module 14507 (HubProgressHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -76,7 +76,7 @@ export default function HubProgressHeader(guild) {
           if (!tmp) {
             const obj2 = { guild, analyticsSource: "Directory Channel Header" };
             const obj = ActionSheetActionCreatorsDefault;
-            obj.openLazy(asyncRequire(14512, dependencyMap.paths), React3, obj2);
+            obj.openLazy(asyncRequire(14508, dependencyMap.paths), React3, obj2);
           }
         },
       iconSource: flag(nextHubProgressStep[14]),

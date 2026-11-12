@@ -1,9 +1,9 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 19209
+// Function ID: 19210
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1385, 10290, 1072, 21, 5170, 1377, 19213, 1652, 5793, 5911, 11217, 7076, 5783, 1113, 5747, 504, 5226, 6210, 2]
+// Dependencies: [32, 19, 17, 1385, 10290, 1072, 21, 5170, 1377, 19210, 1652, 5793, 5911, 11217, 7076, 5783, 1113, 5747, 504, 5226, 6210, 2]
 
-// Module 19212 (ChannelDetailsTopic)
+// Module 19209 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1072 */;
 import UserUtilsDefault from "UserUtils" /* 5226 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5911 */;

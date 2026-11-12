@@ -129,10 +129,10 @@ function startsWith(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const f125422 = (str) => {
+  const f125437 = (str) => {
     let startsWithResult = typeof str === "string";
     if (typeof str === "string") {
-      startsWithResult = str.startsWith(f125422);
+      startsWithResult = str.startsWith(f125437);
     }
     return startsWithResult;
   };
@@ -222,10 +222,10 @@ function endsWith(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const f125423 = (str) => {
+  const f125438 = (str) => {
     let endsWithResult = typeof str === "string";
     if (typeof str === "string") {
-      endsWithResult = str.endsWith(f125423);
+      endsWithResult = str.endsWith(f125438);
     }
     return endsWithResult;
   };
@@ -315,10 +315,10 @@ function minLength(minItems) {
     return obj;
   };
   closure_0 = minItems;
-  const f137892 = (str) => {
+  const f137912 = (str) => {
     let tmp = typeof str === "string";
     if (typeof str === "string") {
-      tmp = str.length >= f137892;
+      tmp = str.length >= f137912;
     }
     return tmp;
   };
@@ -408,10 +408,10 @@ function maxLength(maxItems) {
     return obj;
   };
   closure_0 = maxItems;
-  const f137893 = (str) => {
+  const f137913 = (str) => {
     let tmp = typeof str === "string";
     if (typeof str === "string") {
-      tmp = str.length <= f137893;
+      tmp = str.length <= f137913;
     }
     return tmp;
   };
@@ -501,10 +501,10 @@ function includes(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  let f125424 = (str) => {
+  let f125439 = (str) => {
     let hasItem = typeof str === "string";
     if (typeof str === "string") {
-      hasItem = str.includes(f125424);
+      hasItem = str.includes(f125439);
     }
     return hasItem;
   };
@@ -593,11 +593,11 @@ function regex(arg0) {
     };
     return obj;
   };
-  let f125425 = (str) => {
+  let f125440 = (str) => {
     let BooleanResult = typeof str === "string";
     if (typeof str === "string") {
       const _Boolean = Boolean;
-      BooleanResult = Boolean(str.match(f125425));
+      BooleanResult = Boolean(str.match(f125440));
     }
     return BooleanResult;
   };
@@ -3608,7 +3608,7 @@ merged5[2] = function array() {
       };
       return obj;
     };
-    const f125412 = () => {
+    const f125427 = () => {
       const fn = function t() {
         return globalThis.regeneratorRuntime.wrap((next) => {
           next = next.next;
@@ -3644,13 +3644,13 @@ merged5[2] = function array() {
       }
     };
     let merged = Object.assign(obj, obj2);
-    let obj3 = { [Symbol.iterator]: f125412 };
+    let obj3 = { [Symbol.iterator]: f125427 };
     let obj4 = { optional, select };
     return Object.assign(Object.assign(merged, obj3), obj4);
   }
   function select(arg0) {
     let tmp3;
-    const f125412 = () => {
+    const f125427 = () => {
       const fn = function t() {
         return globalThis.regeneratorRuntime.wrap((next) => {
           next = next.next;
@@ -3676,11 +3676,11 @@ merged5[2] = function array() {
       tmp3 = closure_2_14(arg0, closure_1_0);
     }
     let closure_0 = tmp3;
-    let obj = { [Symbol.iterator]: f125412 };
+    let obj = { [Symbol.iterator]: f125427 };
     let obj2 = { optional, select };
     return Object.assign(Object.assign(tmp3, obj), obj2);
   }
-  const f125412 = () => {
+  const f125427 = () => {
     const fn = function t() {
       return globalThis.regeneratorRuntime.wrap((next) => {
         next = next.next;
@@ -3746,7 +3746,7 @@ merged5[2] = function array() {
       return obj;
     }
   };
-  let obj2 = { [Symbol.iterator]: f125412 };
+  let obj2 = { [Symbol.iterator]: f125427 };
   const obj3 = { optional, select };
   return Object.assign(Object.assign(obj, obj2), obj3);
 };
@@ -4215,7 +4215,7 @@ merged5[34] = function instanceOf(Value) {
     return obj;
   };
   closure_0 = Value;
-  const f125434 = (arg0) => arg0 instanceof f125434;
+  const f125449 = (arg0) => arg0 instanceof f125449;
   const obj = { [closure_1]: f90583 };
   const obj2 = {
     optional,
@@ -4320,7 +4320,7 @@ merged5[35] = function shape(buffer) {
   };
   return Object.assign(obj, obj2);
 };
-let closure_31 = { matched: false, value: "Array" };
+let closure_31 = { matched: false, value: "a" };
 class n {
   constructor(arg0, arg1) {
 

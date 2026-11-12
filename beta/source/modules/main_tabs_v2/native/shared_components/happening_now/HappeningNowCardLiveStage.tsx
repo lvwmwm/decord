@@ -1,9 +1,9 @@
-// Module ID: 18505
-// Function ID: 18506
+// Module ID: 18502
+// Function ID: 18503
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 17645, 1072, 21, 5170, 575, 1252, 13440, 2118, 18506, 18507, 18508, 17646, 8773, 1187, 18517, 5808, 1113, 6205, 2]
+// Dependencies: [19, 17, 17642, 1072, 21, 5170, 575, 1252, 13440, 2118, 18503, 18504, 18505, 17643, 8773, 1187, 18514, 5808, 1113, 6205, 2]
 
-// Module 18505 (HappeningNowCardLiveStage)
+// Module 18502 (HappeningNowCardLiveStage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,10 +12,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import useChannelNameDefault from "useChannelName" /* 5808 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6205 */;
-import HappeningNowCard from "HappeningNowCard" /* 17646 */;
-import useLiveStageData from "useLiveStageData" /* 18506 */;
+import HappeningNowCard from "HappeningNowCard" /* 17643 */;
+import useLiveStageData from "useLiveStageData" /* 18503 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17645 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17642 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

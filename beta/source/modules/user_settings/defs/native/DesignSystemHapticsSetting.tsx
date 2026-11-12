@@ -1,9 +1,9 @@
-// Module ID: 18183
-// Function ID: 18184
+// Module ID: 18180
+// Function ID: 18181
 // Name: DesignSystemHapticsSetting
-// Dependencies: [8536, 1072, 11717, 18184, 2]
+// Dependencies: [8536, 1072, 11717, 18181, 2]
 
-// Module 18183 (DesignSystemHapticsSetting)
+// Module 18180 (DesignSystemHapticsSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;

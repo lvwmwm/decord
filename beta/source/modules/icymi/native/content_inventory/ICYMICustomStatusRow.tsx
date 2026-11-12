@@ -1,10 +1,10 @@
-// Module ID: 18976
-// Function ID: 18977
+// Module ID: 18973
+// Function ID: 18974
 // Name: ICYMICustomStatusRow
-// Dependencies: [32, 19, 17, 1385, 9013, 21, 575, 5170, 18916, 1187, 14036, 5783, 1113, 9944, 5167, 504, 6604, 9403, 10900, 10917, 1377, 7076, 5894, 10383, 12981, 9566, 11, 1089, 18973, 5226, 6948, 18977, 9626, 2]
+// Dependencies: [32, 19, 17, 1385, 9013, 21, 575, 5170, 18913, 1187, 14036, 5783, 1113, 9944, 5167, 504, 6604, 9403, 10900, 10917, 1377, 7076, 5894, 10383, 12981, 9566, 11, 1089, 18970, 5226, 6948, 18974, 9626, 2]
 // Exports: default
 
-// Module 18976 (ICYMICustomStatusRow)
+// Module 18973 (ICYMICustomStatusRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -22,7 +22,7 @@ import UserStore from "UserStore" /* 1385 */;
 import ICYMIStore from "ICYMIStore" /* 9013 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
-import createICYMIStyles from "createICYMIStyles" /* 18916 */;
+import createICYMIStyles from "createICYMIStyles" /* 18913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;

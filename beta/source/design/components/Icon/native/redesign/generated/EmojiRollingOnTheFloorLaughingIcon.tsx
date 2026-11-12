@@ -1,14 +1,14 @@
-// Module ID: 17755
-// Function ID: 17756
+// Module ID: 17752
+// Function ID: 17753
 // Name: EmojiRollingOnTheFloorLaughingIcon
-// Dependencies: [19, 21, 575, 5873, 17756, 2]
+// Dependencies: [19, 21, 575, 5873, 17753, 2]
 // Exports: EmojiRollingOnTheFloorLaughingIcon
 
-// Module 17755 (EmojiRollingOnTheFloorLaughingIcon)
+// Module 17752 (EmojiRollingOnTheFloorLaughingIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 17756 */;
+import AssetRegistry from "AssetRegistry" /* 17753 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

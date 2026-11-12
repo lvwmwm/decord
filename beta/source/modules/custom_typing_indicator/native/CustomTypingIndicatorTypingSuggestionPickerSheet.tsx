@@ -1,10 +1,10 @@
-// Module ID: 17712
-// Function ID: 17713
+// Module ID: 17709
+// Function ID: 17710
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
 // Dependencies: [32, 19, 21, 5170, 575, 7459, 7415, 1113, 4028, 7157, 7160, 13998, 2]
 // Exports: default
 
-// Module 17712 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 17709 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;

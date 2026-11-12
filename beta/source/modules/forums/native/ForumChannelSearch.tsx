@@ -1,9 +1,9 @@
-// Module ID: 14834
-// Function ID: 14835
+// Module ID: 14831
+// Function ID: 14832
 // Name: ForumChannelSearch
 // Dependencies: [19, 17, 5019, 8307, 21, 5170, 1500, 11520, 9935, 5790, 1113, 9993, 504, 7315, 8306, 2]
 
-// Module 14834 (ForumChannelSearch)
+// Module 14831 (ForumChannelSearch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Tracking from "Tracking" /* 8306 */;

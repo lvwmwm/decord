@@ -1,10 +1,10 @@
-// Module ID: 18676
-// Function ID: 18677
+// Module ID: 18673
+// Function ID: 18674
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 1072, 5016, 21, 5170, 5420, 5874, 18677, 5783, 1113, 5790, 9187, 2]
+// Dependencies: [19, 17, 1072, 5016, 21, 5170, 5420, 5874, 18674, 5783, 1113, 5790, 9187, 2]
 // Exports: default
 
-// Module 18676 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 18673 (GuildRoleSubscriptionsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18677 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18674 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

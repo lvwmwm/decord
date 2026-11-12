@@ -1,7 +1,7 @@
 // Module ID: 7693
 // Function ID: 7694
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 7694, 1072, 6858, 1387, 21, 7695, 6831, 6856, 15783, 1499, 7420, 563, 1398, 14387, 5790, 1113, 8771, 2]
+// Dependencies: [5, 19, 17, 7694, 1072, 6858, 1387, 21, 7695, 6831, 6856, 15780, 1499, 7420, 563, 1398, 14383, 5790, 1113, 8771, 2]
 // Exports: default
 
 // Module 7693 (GuildBoostingSubscribeButton)

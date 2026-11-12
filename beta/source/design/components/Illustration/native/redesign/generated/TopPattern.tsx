@@ -1,10 +1,10 @@
-// Module ID: 15726
-// Function ID: 15727
+// Module ID: 15723
+// Function ID: 15724
 // Name: TopPattern
-// Dependencies: [19, 21, 8913, 15727, 15728, 15729, 5177, 5874, 2]
+// Dependencies: [19, 21, 8913, 15724, 15725, 15726, 5177, 5874, 2]
 // Exports: TopPattern, getTopPatternSource, useTopPatternSource
 
-// Module 15726 (TopPattern)
+// Module 15723 (TopPattern)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5177 */;
 import FastImageDefault from "FastImage" /* 5874 */;

@@ -1,9 +1,9 @@
-// Module ID: 16623
-// Function ID: 16624
+// Module ID: 16620
+// Function ID: 16621
 // Name: NotificationTokenManager
-// Dependencies: [17, 1246, 14243, 15847, 502, 16624, 1072, 2120, 1377, 16627, 572, 11072, 16630, 1242, 1113, 2992, 16631, 1252, 14242, 2]
+// Dependencies: [17, 1246, 14243, 15844, 502, 16621, 1072, 2120, 1377, 16624, 572, 11072, 16627, 1242, 1113, 2992, 16628, 1252, 14242, 2]
 
-// Module 16623 (NotificationTokenManager)
+// Module 16620 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,12 +14,12 @@ import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _modDef2992 from "module_2992" /* 2992 */;
 import PushNotificationDefault from "PushNotification" /* 11072 */;
 import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 14242 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16624 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 16630 */;
-import react_nativeDefault from "react-native" /* 16631 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16621 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 16627 */;
+import react_nativeDefault from "react-native" /* 16628 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import MultiAccountStore from "MultiAccountStore" /* 14243 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15847 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15844 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
@@ -111,7 +111,7 @@ class NotificationTokenManager extends LifecycleManager {
     const obj = self(1377);
     const tmp = self;
     if (obj.isAndroid()) {
-      const tmpResult = tmp(16627);
+      const tmpResult = tmp(16624);
       self._denylistUnsubscribe = tmpResult.initializeClientNotifDenylist();
     }
     if (null != self.token) {

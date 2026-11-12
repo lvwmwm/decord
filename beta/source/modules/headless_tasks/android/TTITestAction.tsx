@@ -1,7 +1,7 @@
 // Module ID: 20595
 // Function ID: 20596
 // Name: TTITestAction
-// Dependencies: [5, 19796, 5386, 7020, 502, 5019, 5207, 5041, 1072, 3, 572, 5353, 11260, 19956, 1371, 1376, 1252, 5346, 7745, 13597, 9953, 5917, 6827, 9058, 5918, 12261, 17936, 1197, 2]
+// Dependencies: [5, 19796, 5386, 7020, 502, 5019, 5207, 5041, 1072, 3, 572, 5353, 11260, 19956, 1371, 1376, 1252, 5346, 7745, 13597, 9953, 5917, 6827, 9058, 5918, 12261, 17933, 1197, 2]
 
 // Module 20595 (TTITestAction)
 import LoggerDefault from "Logger" /* 3 */;
@@ -1034,13 +1034,13 @@ obj = function _apiLogin() {
             closure_0 = iter;
             obj = password(closure_2_2[10]);
             closure_1 = iter;
-            const f143659 = () => {
+            const f143684 = () => {
               const error = new Error("Unable to login " + closure_0 + ". Login failed with action '" + obj + "'");
               closure_2_1(error);
             };
             function handler(arg0) {
               obj.unsubscribe(closure_1, handler);
-              return f143659(arg0);
+              return f143684(arg0);
             }
             const subscription = obj.subscribe(iter, handler);
           }
@@ -1072,7 +1072,7 @@ function subscribeOnce(subscribe, arg1, arg2) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f143659(arg0);
+    return f143684(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }

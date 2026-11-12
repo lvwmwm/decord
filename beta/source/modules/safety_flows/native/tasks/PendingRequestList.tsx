@@ -1,7 +1,7 @@
 // Module ID: 20541
 // Function ID: 20542
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1385, 21, 5170, 575, 1187, 504, 20539, 20542, 1411, 5783, 1113, 2960, 7076, 2664, 9398, 17181, 17133, 5869, 6191, 20543, 12442, 17138, 2]
+// Dependencies: [19, 17, 1385, 21, 5170, 575, 1187, 504, 20539, 20542, 1411, 5783, 1113, 2960, 7076, 2664, 9398, 17178, 17130, 5869, 6191, 20543, 12442, 17135, 2]
 // Exports: default
 
 // Module 20541 (PendingRequestList)
@@ -10,8 +10,8 @@ import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import _modDef2664 from "module_2664" /* 2664 */;
 import _modDef2960 from "module_2960" /* 2960 */;
-import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 17133 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17181 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 17130 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17178 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;

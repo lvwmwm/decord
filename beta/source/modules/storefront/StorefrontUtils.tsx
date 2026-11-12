@@ -96,7 +96,7 @@ function useSKUPrice(sku) {
         return { userPrice: found, pricesForPurchaseType: tmp12, purchaseType: SELF_PURCHASE, storeHasPrice: true };
       }
     }
-    return { userPrice: "r", pricesForPurchaseType: "isArray", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
+    return { userPrice: "r", pricesForPurchaseType: "add", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
   }, items1);
   userPrice = memo.userPrice;
   pricesForPurchaseType = memo.pricesForPurchaseType;
@@ -438,7 +438,7 @@ export function useSKUOrbPrice(sku) {
         return { userPrice: found, pricesForPurchaseType: tmp12, purchaseType: SELF_PURCHASE, storeHasPrice: true };
       }
     }
-    return { userPrice: "r", pricesForPurchaseType: "isArray", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
+    return { userPrice: "r", pricesForPurchaseType: "add", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
   }, items1);
   let userPrice = memo.userPrice;
   storeHasPrice = memo.storeHasPrice;

@@ -1,10 +1,10 @@
-// Module ID: 19233
-// Function ID: 19234
+// Module ID: 19230
+// Function ID: 19231
 // Name: useOnMessageSend
 // Dependencies: [19, 1072, 572, 2]
 // Exports: default
 
-// Module 19233 (useOnMessageSend)
+// Module 19230 (useOnMessageSend)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 17082
-// Function ID: 17083
+// Module ID: 17079
+// Function ID: 17080
 // Name: ExplicitMediaRedactionNativeUtils
-// Dependencies: [1385, 7563, 9950, 1196, 1113, 8791, 8057, 6816, 5406, 17083, 2118, 7560, 7566, 2]
+// Dependencies: [1385, 7563, 9950, 1196, 1113, 8791, 8057, 6816, 5406, 17080, 2118, 7560, 7566, 2]
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 17082 (ExplicitMediaRedactionNativeUtils)
+// Module 17079 (ExplicitMediaRedactionNativeUtils)
 import intl4 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -99,7 +99,7 @@ export function handleSensitiveMediaFilterPress(arg0) {
     push3(obj3);
   }
   const obj4 = ActionSheetActionCreatorsDefault;
-  obj4.openLazy(asyncRequire(17083, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
+  obj4.openLazy(asyncRequire(17080, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
 }
 export function shouldAgeVerifyForSearchMedia(media, found) {
   if (null == found) {

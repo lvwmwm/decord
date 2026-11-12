@@ -1,7 +1,7 @@
 // Module ID: 20462
 // Function ID: 20463
 // Name: clips/ClipsManager
-// Dependencies: [32, 5, 5944, 1231, 502, 5019, 2130, 5925, 7995, 1385, 2136, 8317, 1072, 6802, 5929, 20463, 7383, 15216, 5950, 6804, 1252, 4995, 572, 20464, 20465, 15528, 2]
+// Dependencies: [32, 5, 5944, 1231, 502, 5019, 2130, 5925, 7995, 1385, 2136, 8317, 1072, 6802, 5929, 20463, 7383, 15213, 5950, 6804, 1252, 4995, 572, 20464, 20465, 15525, 2]
 
 // Module 20462 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,7 +12,7 @@ import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5944 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5950 */;
 import Constants3 from "Constants" /* 6802 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6804 */;
-import ClipsExperiment from "ClipsExperiment" /* 15216 */;
+import ClipsExperiment from "ClipsExperiment" /* 15213 */;
 import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20464 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -40,7 +40,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(15528);
+const isClipsEnabled = tmp(15525);
 function getCodecSurvey() {
   return obj(...arguments);
 }

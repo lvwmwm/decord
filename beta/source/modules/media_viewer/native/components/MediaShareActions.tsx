@@ -1,7 +1,7 @@
 // Module ID: 9012
 // Function ID: 9013
 // Name: MediaShareActions
-// Dependencies: [19, 9013, 5019, 6226, 9042, 1072, 7563, 21, 563, 8791, 8813, 5406, 8946, 6215, 9043, 8942, 7451, 5868, 9052, 5866, 13643, 5917, 5349, 13571, 2118, 10344, 9047, 5889, 1113, 13655, 12442, 5883, 14856, 11334, 8757, 7459, 7461, 2]
+// Dependencies: [19, 9013, 5019, 6226, 9042, 1072, 7563, 21, 563, 8791, 8813, 5406, 8946, 6215, 9043, 8942, 7451, 5868, 9052, 5866, 13643, 5917, 5349, 13571, 2118, 10344, 9047, 5889, 1113, 13655, 12442, 5883, 14853, 11334, 8757, 7459, 7461, 2]
 // Exports: default
 
 // Module 9012 (MediaShareActions)
@@ -28,7 +28,7 @@ import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11334 */;
 import ShareIcon from "ShareIcon" /* 12442 */;
 import ForwardModalUtils from "ForwardModalUtils" /* 13643 */;
 import ForwardingIconDefault from "ForwardingIcon" /* 13655 */;
-import WindowLaunchIcon from "WindowLaunchIcon" /* 14856 */;
+import WindowLaunchIcon from "WindowLaunchIcon" /* 14853 */;
 import react from "react" /* 19 */;
 import ICYMIStore from "ICYMIStore" /* 9013 */;
 import ChannelStore from "ChannelStore" /* 5019 */;

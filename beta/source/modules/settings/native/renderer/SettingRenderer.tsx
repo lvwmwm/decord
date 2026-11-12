@@ -1,10 +1,10 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 16939
+// Function ID: 16940
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2186, 16941, 5041, 11718, 21, 5170, 575, 1187, 7071, 504, 1499, 16943, 1113, 10836, 7053, 16945, 16946, 5783, 7463, 7462, 5184, 7157, 7160, 7451, 5868, 12147, 5408, 5409, 7073, 6191, 2024, 1377, 16201, 7076, 5790, 5756, 16947, 2017, 2]
+// Dependencies: [32, 109, 19, 17, 2186, 16938, 5041, 11718, 21, 5170, 575, 1187, 7071, 504, 1499, 16940, 1113, 10836, 7053, 16942, 16943, 5783, 7463, 7462, 5184, 7157, 7160, 7451, 5868, 12147, 5408, 5409, 7073, 6191, 2024, 1377, 16198, 7076, 5790, 5756, 16944, 2017, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 16942 (SettingRenderer)
+// Module 16939 (SettingRenderer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -22,15 +22,15 @@ import ClipboardUtils from "ClipboardUtils" /* 7451 */;
 import FormSwitch from "FormSwitch" /* 7463 */;
 import ClydeIcon from "ClydeIcon" /* 10836 */;
 import VolumeSliderDefault from "VolumeSlider" /* 12147 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16943 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 16945 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 16946 */;
-import Tracking from "Tracking" /* 16947 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16940 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 16942 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 16943 */;
+import Tracking from "Tracking" /* 16944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16941 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16938 */;
 import GuildStore from "GuildStore" /* 5041 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 11718 */;
 import Fragment from "Fragment" /* 21 */;
@@ -608,7 +608,7 @@ let closure_26 = react.memo(function StaticSetting(arg0) {
   let trailing;
   const tmp = trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(16945);
+  let obj = trailing(16942);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let obj2 = trailing(504);
   const items = [LocaleStore];

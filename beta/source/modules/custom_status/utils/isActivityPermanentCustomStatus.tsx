@@ -1,10 +1,10 @@
-// Module ID: 18499
-// Function ID: 18500
+// Module ID: 18496
+// Function ID: 18497
 // Name: isActivityPermanentCustomStatus
 // Dependencies: [5923, 2]
 // Exports: isActivityPermanentCustomStatus
 
-// Module 18499 (isActivityPermanentCustomStatus)
+// Module 18496 (isActivityPermanentCustomStatus)
 import ActivityTypes from "ActivityTypes" /* 5923 */;
 import size from "module_2" /* 2 */;
 

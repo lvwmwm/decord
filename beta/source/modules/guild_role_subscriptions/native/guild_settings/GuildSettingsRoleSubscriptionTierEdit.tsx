@@ -1,7 +1,7 @@
 // Module ID: 20434
 // Function ID: 20435
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 5095, 20392, 17554, 1072, 5016, 21, 5170, 575, 1499, 20403, 20399, 7524, 7159, 5783, 5790, 5894, 7388, 20430, 20428, 20406, 17561, 20388, 12797, 20435, 1113, 17574, 5868, 7097, 7663, 9092, 5003, 20436, 2118, 10671, 10672, 9327, 2]
+// Dependencies: [32, 19, 17, 5095, 20392, 17551, 1072, 5016, 21, 5170, 575, 1499, 20403, 20399, 7524, 7159, 5783, 5790, 5894, 7388, 20430, 20428, 20406, 17558, 20388, 12797, 20435, 1113, 17571, 5868, 7097, 7663, 9092, 5003, 20436, 2118, 10671, 10672, 9327, 2]
 // Exports: default
 
 // Module 20434 (GuildSettingsRoleSubscriptionTierEdit)
@@ -20,8 +20,8 @@ import TableRowGroup from "TableRowGroup" /* 7159 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7388 */;
 import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7524 */;
 import ErrorBlockDefault from "ErrorBlock" /* 12797 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17554 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17561 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17551 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17558 */;
 import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20388 */;
 import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20399 */;
 import EditStateContextProvider2 from "EditStateContextProvider" /* 20403 */;
@@ -226,7 +226,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f121078 = (currentScene) => {
+  const f121093 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -306,9 +306,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f121078), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f121093), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f121078), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f121093), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

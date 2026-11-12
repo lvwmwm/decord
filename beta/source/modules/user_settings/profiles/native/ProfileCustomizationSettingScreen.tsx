@@ -1,9 +1,9 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16785
+// Function ID: 16786
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 11633, 8835, 12582, 6860, 1082, 1072, 21, 5170, 575, 1113, 16789, 16913, 7247, 12584, 16922, 15207, 5756, 5231, 9102, 1499, 7259, 9092, 11580, 16809, 16914, 504, 5921, 11697, 16924, 7097, 7663, 1500, 12253, 16927, 12374, 14468, 2]
+// Dependencies: [5, 109, 32, 19, 17, 11633, 8835, 12582, 6860, 1082, 1072, 21, 5170, 575, 1113, 16786, 16910, 7247, 12584, 16919, 15204, 5756, 5231, 9102, 1499, 7259, 9092, 11580, 16806, 16911, 504, 5921, 11697, 16921, 7097, 7663, 1500, 12253, 16924, 12374, 14464, 2]
 
-// Module 16788 (ProfileCustomizationSettingScreen)
+// Module 16785 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
@@ -13,8 +13,8 @@ import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators
 import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11580 */;
 import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11697 */;
 import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12584 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16789 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16913 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16786 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

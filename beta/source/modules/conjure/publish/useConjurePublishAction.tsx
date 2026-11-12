@@ -803,13 +803,13 @@ obj = function _continuePublish() {
                   set.add(closure_0);
                   c10 = 1;
                   const requestConsent = platform.requestConsent;
-                  let f139497 = requestConsent;
+                  let f139516 = requestConsent;
                   if (requestConsent == null) {
-                    f139497 = (arg0) => closure_2_19(arg0, closure_1_4);
+                    f139516 = (arg0) => closure_2_19(arg0, closure_1_4);
                   }
                   c11 = 3;
                   c12 = 1;
-                  const obj5 = { value: f139497(closure_0), done: false };
+                  const obj5 = { value: f139516(closure_0), done: false };
                   return obj5;
                 }
               }

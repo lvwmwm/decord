@@ -1,10 +1,10 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 17981
+// Function ID: 17982
 // Name: IntlTestingSettingsPage
-// Dependencies: [32, 5, 19, 17, 2187, 2186, 21, 5170, 575, 7157, 1113, 6096, 7160, 504, 2166, 7159, 7071, 1152, 6191, 5783, 17985, 18017, 2]
+// Dependencies: [32, 5, 19, 17, 2187, 2186, 21, 5170, 575, 7157, 1113, 6096, 7160, 504, 2166, 7159, 7071, 1152, 6191, 5783, 17982, 18014, 2]
 // Exports: default
 
-// Module 17984 (IntlTestingSettingsPage)
+// Module 17981 (IntlTestingSettingsPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
@@ -13,8 +13,8 @@ import _modDef2166 from "module_2166" /* 2166 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2187 */;
 import TableRow6 from "TableRow" /* 7071 */;
 import TableRowGroup2 from "TableRowGroup" /* 7159 */;
-import _modDef17985 from "module_17985" /* 17985 */;
-import _modDef18017 from "module_18017" /* 18017 */;
+import _modDef17982 from "module_17982" /* 17982 */;
+import _modDef18014 from "module_18014" /* 18014 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -188,19 +188,19 @@ export default function IntlTestingSettingsPage() {
   obj2 = { spacing: 24, style: tmp.container, children: items };
   Stack = require("Stack/Stack").Stack;
   items = [closure_10(LocaleInfo, {}), closure_10(TestLocaleSelector, {}), , , , , , ];
-  const obj3 = { variant: "body-md/normal", children: intl.format(_modDef17985.HMvEC5, {}) };
+  const obj3 = { variant: "body-md/normal", children: intl.format(_modDef17982.HMvEC5, {}) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items[2] = closure_10(Text, obj3);
-  const obj4 = { variant: "body-md/normal", children: intl2.format(_modDef18017.swfLzV, {}) };
+  const obj4 = { variant: "body-md/normal", children: intl2.format(_modDef18014.swfLzV, {}) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[3] = closure_10(Text2, obj4);
-  const obj5 = { variant: "body-md/normal", children: intl3.format(_modDef17985.rmps8y, {}) };
+  const obj5 = { variant: "body-md/normal", children: intl3.format(_modDef17982.rmps8y, {}) };
   const Text3 = require("Text/Text").Text;
   intl3 = require("intl").intl;
   items[4] = closure_10(Text3, obj5);
-  const obj6 = { variant: "body-md/normal", children: intl4.format(_modDef17985.uczI4g, obj7) };
+  const obj6 = { variant: "body-md/normal", children: intl4.format(_modDef17982.uczI4g, obj7) };
   const Text4 = require("Text/Text").Text;
   intl4 = require("intl").intl;
   obj7 = {
@@ -209,11 +209,11 @@ export default function IntlTestingSettingsPage() {
     }
   };
   items[5] = closure_10(Text4, obj6);
-  const obj8 = { variant: "body-md/normal", children: intl5.format(_modDef17985.rdfRyh, {}) };
+  const obj8 = { variant: "body-md/normal", children: intl5.format(_modDef17982.rdfRyh, {}) };
   const Text5 = require("Text/Text").Text;
   intl5 = require("intl").intl;
   items[6] = closure_10(Text5, obj8);
-  const obj9 = { variant: "body-md/normal", children: intl6.format(_modDef17985.XOdbAy, obj10) };
+  const obj9 = { variant: "body-md/normal", children: intl6.format(_modDef17982.XOdbAy, obj10) };
   const Text6 = require("Text/Text").Text;
   intl6 = require("intl").intl;
   obj10 = {

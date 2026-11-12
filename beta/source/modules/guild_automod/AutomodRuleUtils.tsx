@@ -27,14 +27,14 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f120334 = (keyword) => {
+const f120349 = (keyword) => {
   const InvalidKeywordError = AutomodErrorUtils.InvalidKeywordError;
   const intl = intl8.intl;
   const range = { keyword, max, min };
   const invalidKeywordError = new InvalidKeywordError(intl.formatToPlainString(intl8.t.rbRvGe, range));
   throw invalidKeywordError;
 };
-const f120335 = (regex) => {
+const f120350 = (regex) => {
   const InvalidRegexPatternError = AutomodErrorUtils.InvalidRegexPatternError;
   const intl = intl8.intl;
   const range = { regex, max: max2, min: min2 };
@@ -157,7 +157,7 @@ export function validateKeywordsOrThrow(arr, limit) {
     const error = new Error(intl.formatToPlainString(intl8.t.mee4qd, obj));
     throw error;
   } else {
-    const item = arr.forEach(f120334);
+    const item = arr.forEach(f120349);
   }
 }
 export function validateRegexPatternsOrThrow(arr) {
@@ -170,7 +170,7 @@ export function validateRegexPatternsOrThrow(arr) {
     const error = new Error(intl.formatToPlainString(intl8.t.tDjhF1, obj));
     throw error;
   } else {
-    const item = arr.forEach(f120335);
+    const item = arr.forEach(f120350);
   }
 }
 export function isValidMentionSpamLimit(NumberResult) {
@@ -232,7 +232,7 @@ export function validateRuleBeforeSaveOrThrow(triggerType) {
       const error2 = new Error(intl5.formatToPlainString(intl8.t.mee4qd, obj2));
       throw error2;
     } else {
-      const item = keywordFilter.forEach(f120334);
+      const item = keywordFilter.forEach(f120349);
       if (regexPatterns.length > metroRequire) {
         const _Error4 = Error;
         const intl4 = intl8.intl;
@@ -242,7 +242,7 @@ export function validateRuleBeforeSaveOrThrow(triggerType) {
         const error3 = new Error(intl4.formatToPlainString(intl8.t.tDjhF1, obj3));
         throw error3;
       } else {
-        const item1 = regexPatterns.forEach(f120335);
+        const item1 = regexPatterns.forEach(f120350);
       }
     }
   }

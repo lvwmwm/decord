@@ -1,15 +1,15 @@
-// Module ID: 17848
-// Function ID: 17849
+// Module ID: 17845
+// Function ID: 17846
 // Name: SettingsEmailNotificationsScreen
-// Dependencies: [19, 15970, 8536, 21, 17849, 16628, 17852, 11717, 1113, 5753, 16939, 2]
+// Dependencies: [19, 15967, 8536, 21, 17846, 16625, 17849, 11717, 1113, 5753, 16936, 2]
 
-// Module 17848 (SettingsEmailNotificationsScreen)
+// Module 17845 (SettingsEmailNotificationsScreen)
 import Fragment from "Fragment" /* 21 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
-import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17849 */;
+import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17846 */;
 import react from "react" /* 19 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 15970 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15967 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -31,9 +31,9 @@ items1 = [, , , , ];
 const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
   let enabled;
   let isDeclarativeSettingsUIAvailable;
-  obj = isDeclarativeSettingsUIAvailable(16628);
+  obj = isDeclarativeSettingsUIAvailable(16625);
   isDeclarativeSettingsUIAvailable = obj.useIsDeclarativeSettingsUIAvailable("SettingsEmailNotificationsScreen");
-  obj2 = enabled(17852);
+  obj2 = enabled(17849);
   enabled = obj2.useConfig({ location: "SettingsEmailNotificationsScreen" }).enabled;
   let items = [isDeclarativeSettingsUIAvailable, enabled];
   const node = react.useMemo(() => {
@@ -57,7 +57,7 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
     return createList(obj2);
   }, items);
   enabled(5753)(initializeEmailSettings);
-  return jsx(enabled(16939), { node });
+  return jsx(enabled(16936), { node });
 });
 const result = size.fileFinishedImporting("modules/user_settings/notifications/native/SettingsEmailNotificationsScreen.tsx");
 

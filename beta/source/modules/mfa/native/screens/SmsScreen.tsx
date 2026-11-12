@@ -1,10 +1,10 @@
-// Module ID: 18043
-// Function ID: 18044
+// Module ID: 18040
+// Function ID: 18041
 // Name: SmsScreen
-// Dependencies: [5, 32, 19, 17, 1072, 21, 7215, 18036, 1113, 1282, 18040, 18035, 7181, 5790, 18038, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 7215, 18033, 1113, 1282, 18037, 18032, 7181, 5790, 18035, 2]
 // Exports: default
 
-// Module 18043 (SmsScreen)
+// Module 18040 (SmsScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -246,7 +246,7 @@ export default function SmsScreen(mfaChallenge) {
   };
   let tmp = dependencyMap;
   const tmp2 = finish(7215)();
-  obj = finish(18036);
+  obj = finish(18033);
   const screenStyles = obj.useScreenStyles(tmp2);
   const tmp4 = first1(react.useState(null), 2);
   dependencyMap = tmp4[1];
@@ -289,10 +289,10 @@ export default function SmsScreen(mfaChallenge) {
     });
   }, items);
   let obj2 = { headerText: intl2.string(mfaChallenge(1113).t.o4JNrO), subtitle: tmp11, input: obj(c6, obj3), submit: tmp15(tmp17, obj6), screenProps: { mfaChallenge, finish }, mfaMethod: "sms" };
-  const tmp16 = finish(18035);
+  const tmp16 = finish(18032);
   intl2 = mfaChallenge(1113).intl;
   obj3 = { style: screenStyles.inputContainer, children: items1 };
-  let obj4 = { autoFocus: true, autoCapitalize: "characters", maxLength: mfaChallenge(18040).SMS_CODE_LENGTH, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: handleChange, label: intl3.string(mfaChallenge(1113).t["/sHnXc"]), placeholder: intl4.string(mfaChallenge(1113).t.tARzgo), errorMessage: first };
+  let obj4 = { autoFocus: true, autoCapitalize: "characters", maxLength: mfaChallenge(18037).SMS_CODE_LENGTH, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: handleChange, label: intl3.string(mfaChallenge(1113).t["/sHnXc"]), placeholder: intl4.string(mfaChallenge(1113).t.tARzgo), errorMessage: first };
   const TextInput = mfaChallenge(7181).TextInput;
   intl3 = mfaChallenge(1113).intl;
   intl4 = mfaChallenge(1113).intl;
@@ -317,14 +317,14 @@ export default function SmsScreen(mfaChallenge) {
     },
     disabled: tmp7
   };
-  tmp17 = finish(18038);
+  tmp17 = finish(18035);
   intl6 = mfaChallenge(1113).intl;
   const tmp9 = mfaChallenge;
   if (!tmp7) {
     tmp7 = tmp13;
   }
   if (!tmp7) {
-    tmp7 = first1.length !== tmp9(18040).SMS_CODE_LENGTH;
+    tmp7 = first1.length !== tmp9(18037).SMS_CODE_LENGTH;
   }
   return handleChange(tmp16, obj2);
 };

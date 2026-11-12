@@ -1,15 +1,15 @@
-// Module ID: 18120
-// Function ID: 18121
+// Module ID: 18117
+// Function ID: 18118
 // Name: InternalBuildUpdateSetting
-// Dependencies: [16570, 21, 16074, 504, 2166, 17098, 5889, 12423, 11717, 2]
+// Dependencies: [16567, 21, 16071, 504, 2166, 17095, 5889, 12423, 11717, 2]
 
-// Module 18120 (InternalBuildUpdateSetting)
+// Module 18117 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 16074 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17098 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16570 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 16071 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17095 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16567 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 

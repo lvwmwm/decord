@@ -1,10 +1,10 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14436
+// Function ID: 14437
 // Name: GuildProgressCircle
 // Dependencies: [19, 17, 21, 5170, 575, 12455, 14318, 2]
 // Exports: default
 
-// Module 14440 (GuildProgressCircle)
+// Module 14436 (GuildProgressCircle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ProgressCircleDefault from "ProgressCircle" /* 12455 */;

@@ -1,10 +1,10 @@
-// Module ID: 14605
-// Function ID: 14606
+// Module ID: 14601
+// Function ID: 14602
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 14597, 21, 5170, 5746, 7097, 14606, 1260, 14609, 14616, 14618, 14619, 14620, 14623, 7388, 1499, 5771, 14625, 7264, 1113, 2]
+// Dependencies: [19, 14593, 21, 5170, 5746, 7097, 14602, 1260, 14605, 14612, 14614, 14615, 14616, 14619, 7388, 1499, 5771, 14621, 7264, 1113, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 14605 (HubEmailConnectionModal)
+// Module 14601 (HubEmailConnectionModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1499 */;
@@ -13,8 +13,8 @@ import reactDefault from "react" /* 5771 */;
 import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import Navigator2 from "Navigator" /* 7264 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7388 */;
-import HubConstants from "HubConstants" /* 14597 */;
-import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 14625 */;
+import HubConstants from "HubConstants" /* 14593 */;
+import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 14621 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

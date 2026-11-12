@@ -1,10 +1,10 @@
-// Module ID: 14507
-// Function ID: 14508
+// Module ID: 14503
+// Function ID: 14504
 // Name: GuildDirectory
-// Dependencies: [19, 17, 5041, 6930, 14126, 14119, 14124, 1072, 21, 5170, 575, 14508, 14509, 14149, 14150, 5783, 5874, 14510, 1113, 5790, 7316, 13600, 14511, 14121, 7076, 14122, 11661, 504, 1627, 7763, 9, 7375, 5214, 14130, 1252, 14635, 14114, 14639, 2]
+// Dependencies: [19, 17, 5041, 6930, 14126, 14119, 14124, 1072, 21, 5170, 575, 14504, 14505, 14149, 14150, 5783, 5874, 14506, 1113, 5790, 7316, 13600, 14507, 14121, 7076, 14122, 11661, 504, 1627, 11412, 7763, 9, 7375, 5214, 14130, 1252, 14631, 14635, 14114, 14636, 2]
 // Exports: default
 
-// Module 14507 (GuildDirectory)
+// Module 14503 (GuildDirectory)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -23,9 +23,9 @@ import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalA
 import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 14130 */;
 import GuildDirectoryRowDefault from "GuildDirectoryRow" /* 14149 */;
 import GuildDirectoryPlaceholderRowDefault from "GuildDirectoryPlaceholderRow" /* 14150 */;
-import GuildDirectoryRowGenerator from "GuildDirectoryRowGenerator" /* 14509 */;
-import AssetRegistry from "AssetRegistry" /* 14510 */;
-import GuildDirectoryCategorySelectorDefault from "GuildDirectoryCategorySelector" /* 14639 */;
+import GuildDirectoryRowGenerator from "GuildDirectoryRowGenerator" /* 14505 */;
+import AssetRegistry from "AssetRegistry" /* 14506 */;
+import GuildDirectoryCategorySelectorDefault from "GuildDirectoryCategorySelector" /* 14636 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 5041 */;
@@ -55,7 +55,7 @@ let obj2;
 let obj3;
 let size;
 let tmp6;
-const HubProgressHeaderDefault = tmp6(14511);
+const HubProgressHeaderDefault = tmp6(14507);
 function keyExtractor(type, arg1) {
   let guildId;
   type = undefined;
@@ -186,7 +186,7 @@ const GUILD_DIRECTORY_BASE_HEADER_HEIGHT = GuildDirectoryConstants.GUILD_DIRECTO
 const ArrayResult = Array(20);
 let closure_21 = ArrayResult.fill(null);
 let createStyles = createStyles_mod;
-let obj = { border: obj2, list: obj3, headerWrapper: { overflow: "hidden", height: GUILD_DIRECTORY_BASE_HEADER_HEIGHT }, backgroundImage: { resizeMode: "cover", width: "100%" }, textWrapper: { position: "absolute", bottom: 0, left: 0, right: 0, padding: 16, alignContent: "center" }, headerTitle: { textAlign: "center", marginBottom: 8 }, headerDescription: { lineHeight: 18, textAlign: "center", paddingHorizontal: 20, marginBottom: 72 }, footer: { flexDirection: "row", padding: 16, alignItems: "center" }, addIcon: size, categorySectionText: { padding: 16, paddingBottom: 4 } };
+let obj = { border: obj2, container: { flex: 1 }, list: obj3, headerWrapper: { overflow: "hidden", height: GUILD_DIRECTORY_BASE_HEADER_HEIGHT }, backgroundImage: { resizeMode: "cover", width: "100%" }, textWrapper: { position: "absolute", bottom: 0, left: 0, right: 0, padding: 16, alignContent: "center" }, headerTitle: { textAlign: "center", marginBottom: 8 }, headerDescription: { lineHeight: 18, textAlign: "center", paddingHorizontal: 20, marginBottom: 72 }, footer: { flexDirection: "row", padding: 16, alignItems: "center" }, addIcon: size, categorySectionText: { padding: 16, paddingBottom: 4 } };
 obj2 = { height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -198,11 +198,12 @@ const result = size.fileFinishedImporting("modules/directory_channels/native/com
 export default function GuildDirectory(channel) {
   let c4;
   let items10;
+  let items11;
+  let items12;
   let items9;
-  let obj10;
-  let obj11;
   let obj12;
-  let obj6;
+  let obj13;
+  let obj7;
   let sum;
   channel = channel.channel;
   const guildId = channel.guildId;
@@ -230,11 +231,10 @@ export default function GuildDirectory(channel) {
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
   let obj2 = react;
   dependencyMap = react.useRef(null);
-  const bottom = guildId(1627)().bottom;
-  const obj3 = channel(14508);
+  const bound = Math.max(guildId(1627)().bottom, guildId(11412)());
+  const obj3 = channel(14504);
   const hubProgressBarCompletedSteps = obj3.useHubProgressBarCompletedSteps(stateFromStores);
-  const obj4 = channel(14508);
-  const tmp5 = guildId;
+  const obj4 = channel(14504);
   if (null == obj4.getNextHubProgressStep(hubProgressBarCompletedSteps)) {
     sum = ref2;
   } else {
@@ -288,7 +288,7 @@ export default function GuildDirectory(channel) {
       const lastMessageIdResult = allEntriesCount.lastMessageId(id.id);
       const tmp = id;
       if (null != lastMessageIdResult) {
-        const obj = channel(ref[31]);
+        const obj = channel(ref[32]);
         const obj2 = { object: constants.ACK_GUILD_DIRECTORY_CHANNEL_VIEWED, objectType: handleTapCategory.ACK_AUTOMATIC };
         obj.ack(tmp.id, obj2, true, true, lastMessageIdResult);
       }
@@ -365,33 +365,34 @@ export default function GuildDirectory(channel) {
       tmp.current = null;
     }
   }, items8);
-  let tmp22 = null;
+  let tmp24Result = null;
   if (null != stateFromStores) {
     if (!directoryIsFetching) {
-      let tmp29;
+      let obj5;
       if (0 === allEntriesCount) {
-        const obj5 = { style: obj6, children: items9 };
-        obj6 = { paddingBottom: bottom };
-        const obj7 = { style: tmp.border };
-        items9 = [closure_18(currentCategoryId, obj7), , ];
-        const obj8 = { guild: stateFromStores, channel };
-        items9[1] = closure_18(tmp5(14635), obj8);
+        obj5 = { style: tmp.container, children: items10 };
+        const obj6 = { style: obj7, children: items9 };
+        obj7 = { paddingBottom: bound };
+        const obj8 = { style: tmp.border };
+        items9 = [closure_18(currentCategoryId, obj8), , ];
+        const obj9 = { guild: stateFromStores, channel };
+        items9[1] = closure_18(guildId(14631), obj9);
         items9[2] = closure_18(tmp2(13600).TTIFirstContentfulPaint, { label: "guild_directory_empty" });
-        tmp29 = closure_19(currentCategoryId, obj5);
+        items10 = [closure_19(currentCategoryId, obj6), closure_18(tmp5(14635), {})];
       }
-      tmp22 = tmp29;
+      tmp24Result = tmp24(tmp25, obj5);
     }
-    const obj9 = { children: closure_18(directoryEntries, obj10) };
-    obj10 = {
+    const obj10 = { style: tmp.container, children: items12 };
+    const obj11 = {
       ref,
       onScroll: function handleScroll(nativeEvent) {
           ref2.current = nativeEvent.nativeEvent.contentOffset.y;
         },
       scrollEventThrottle: 16,
-      contentContainerStyle: obj11,
+      contentContainerStyle: obj12,
       windowSize: 10,
-      ListHeaderComponent: closure_18(GuildDirectoryHeader, obj12),
-      sections: items10,
+      ListHeaderComponent: closure_18(GuildDirectoryHeader, obj13),
+      sections: items11,
       stickySectionHeadersEnabled: true,
       style: tmp.list,
       scrollIndicatorInsets: { right: 1 },
@@ -406,9 +407,9 @@ export default function GuildDirectory(channel) {
           return authStore5(GuildDirectoryFooter, obj);
         }
     };
-    items10 = [{ data: memo }];
-    obj11 = { paddingBottom: bottom };
-    obj12 = {
+    items11 = [{ data: memo }];
+    obj12 = { paddingBottom: bound };
+    obj13 = {
       guild: stateFromStores,
       onPressSearch: function handleTapSearch() {
           const obj = GuildDirectorySearchModalActionCreatorsDefault;
@@ -416,8 +417,9 @@ export default function GuildDirectory(channel) {
           obj.open(obj2);
         }
     };
-    const obj13 = { data: memo };
-    tmp29 = closure_18(currentCategoryId, obj9);
+    const obj14 = { data: memo };
+    items12 = [closure_18(directoryEntries, obj11), closure_18(tmp5(14635), {})];
+    obj5 = obj10;
   }
-  return tmp22;
+  return tmp24Result;
 };

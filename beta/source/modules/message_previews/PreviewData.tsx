@@ -1,9 +1,9 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 15947
+// Function ID: 15948
 // Name: PreviewData
 // Dependencies: [5113, 6930, 6228, 11, 2]
 
-// Module 15950 (PreviewData)
+// Module 15947 (PreviewData)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6228 */;
 import MessageRecord from "MessageRecord" /* 5113 */;

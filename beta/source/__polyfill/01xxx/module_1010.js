@@ -1501,9 +1501,9 @@ export function createReactRouterV6CompatibleTracingIntegration(instrumentPageLo
       }
       const result1 = initializeRouterUtils(tmp23, flag);
     },
-    afterAllSetup(f122891) {
+    afterAllSetup(f122906) {
       let obj2;
-      _asyncToGenerator.afterAllSetup(f122891);
+      _asyncToGenerator.afterAllSetup(f122906);
       const _location = feedbackAsyncIntegration.WINDOW.location;
       let pathname;
       if (_location != null) {
@@ -1519,11 +1519,11 @@ export function createReactRouterV6CompatibleTracingIntegration(instrumentPageLo
         const _HermesInternal = HermesInternal;
         feedbackAsyncIntegration;
         obj2[_mod681.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.pageload.react.reactrouter_v" + closure_1;
-        _asyncToGenerator = startBrowserTracingPageLoadSpan(f122891, obj);
+        _asyncToGenerator = startBrowserTracingPageLoadSpan(f122906, obj);
       }
       const tmp10 = closure_11;
       if (tmp10) {
-        weakSet.add(f122891);
+        weakSet.add(f122906);
       }
     }
   };
@@ -1557,7 +1557,7 @@ export function createV6CompatibleWithSentryReactRouterRouting(arg0, _6) {
                 items = [, ];
                 items[0] = tmp;
                 items[1] = tmp2;
-                tmp3 = closure_1_4(function() { /* body not rendered: F122904 */ }, items);
+                tmp3 = closure_1_4(function() { /* body not rendered: F122919 */ }, items);
                 obj = {};
                 createElement = closure_1_9.createElement;
                 merged = Object.assign(arg0);
@@ -1584,7 +1584,7 @@ export function createV6CompatibleWithSentryReactRouterRouting(arg0, _6) {
         items = [, ];
         items[0] = tmp;
         items[1] = tmp2;
-        tmp3 = closure_1_4(function() { /* body not rendered: F122904 */ }, items);
+        tmp3 = closure_1_4(function() { /* body not rendered: F122919 */ }, items);
         obj = {};
         createElement = closure_1_9.createElement;
         merged = Object.assign(arg0);

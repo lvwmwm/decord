@@ -1,9 +1,9 @@
-// Module ID: 17707
-// Function ID: 17708
+// Module ID: 17704
+// Function ID: 17705
 // Name: TypingIndicatorSetting
-// Dependencies: [19, 1072, 21, 17708, 16975, 5003, 16974, 5000, 11717, 1113, 4028, 17709, 13996, 17711, 2]
+// Dependencies: [19, 1072, 21, 17705, 16972, 5003, 16971, 5000, 11717, 1113, 4028, 17706, 13996, 17708, 2]
 
-// Module 17707 (TypingIndicatorSetting)
+// Module 17704 (TypingIndicatorSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
@@ -11,11 +11,11 @@ import _modDef4028 from "module_4028" /* 4028 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
 import dismissible_content from "dismissible_content" /* 5003 */;
 import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13996 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16974 */;
-import CustomTypingIndicatorNewPresetsExperiment from "CustomTypingIndicatorNewPresetsExperiment" /* 17708 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 17709 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16971 */;
+import CustomTypingIndicatorNewPresetsExperiment from "CustomTypingIndicatorNewPresetsExperiment" /* 17705 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 17706 */;
 import react from "react" /* 19 */;
-import DismissibleBadgeUtils_mod from "DismissibleBadgeUtils" /* 16975 */;
+import DismissibleBadgeUtils_mod from "DismissibleBadgeUtils" /* 16972 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let obj = {
   usePreNavigationAction() {
     let closure_2;
     let enabled;
-    let obj = enabled(17708);
+    let obj = enabled(17705);
     enabled = obj.useCustomTypingIndicatorNewPresetsConfig(TypingIndicatorSetting).enabled;
     const tmp = closure_6();
     let closure_1 = tmp;

@@ -1,14 +1,14 @@
-// Module ID: 15212
-// Function ID: 15213
+// Module ID: 15209
+// Function ID: 15210
 // Name: useConjureServerWidgetOffers
-// Dependencies: [5, 19, 11109, 5041, 1385, 6932, 559, 6933, 11108, 1282, 504, 1449, 7516, 11028, 15209, 7886, 15213, 15214, 2]
+// Dependencies: [5, 19, 11109, 5041, 1385, 6932, 559, 6933, 11108, 1282, 504, 1449, 7516, 11028, 15206, 7886, 15210, 15211, 2]
 // Exports: default
 
-// Module 15212 (useConjureServerWidgetOffers)
+// Module 15209 (useConjureServerWidgetOffers)
 import BackoffDefault from "Backoff" /* 559 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7886 */;
-import useAddableWidgets from "useAddableWidgets" /* 15214 */;
+import useAddableWidgets from "useAddableWidgets" /* 15211 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11109 */;

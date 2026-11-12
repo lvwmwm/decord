@@ -1,10 +1,10 @@
-// Module ID: 17167
-// Function ID: 17168
+// Module ID: 17164
+// Function ID: 17165
 // Name: useUserIsTeenAgeGroup
 // Dependencies: [7824, 504, 2]
 // Exports: default
 
-// Module 17167 (useUserIsTeenAgeGroup)
+// Module 17164 (useUserIsTeenAgeGroup)
 import get_initialized from "get initialized" /* 504 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
 import size from "module_2" /* 2 */;

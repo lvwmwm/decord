@@ -1,10 +1,10 @@
-// Module ID: 15433
-// Function ID: 15434
+// Module ID: 15430
+// Function ID: 15431
 // Name: BuildOverrideEmbed
-// Dependencies: [17, 11534, 7989, 8498, 13462, 15434, 1376, 1113, 8485, 575, 5177, 13499, 13500, 15432, 2]
+// Dependencies: [17, 11534, 7989, 8498, 13462, 15431, 1376, 1113, 8485, 575, 5177, 13499, 13500, 15429, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 15433 (BuildOverrideEmbed)
+// Module 15430 (BuildOverrideEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -15,8 +15,8 @@ import react_native2 from "react-native" /* 8485 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8498 */;
 import BuildOverrideStore2 from "BuildOverrideStore" /* 11534 */;
 import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13462 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15432 */;
-import validateBuildOverrideDefault from "validateBuildOverride" /* 15434 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15429 */;
+import validateBuildOverrideDefault from "validateBuildOverride" /* 15431 */;
 import size from "module_2" /* 2 */;
 
 const BuildOverrideStore = BuildOverrideStore2;

@@ -1,10 +1,10 @@
-// Module ID: 18452
-// Function ID: 18453
+// Module ID: 18449
+// Function ID: 18450
 // Name: useChannelListWidth
 // Dependencies: [11734, 5349, 5756, 575, 1092, 2]
 // Exports: default
 
-// Module 18452 (useChannelListWidth)
+// Module 18449 (useChannelListWidth)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import useChatLayoutDefault from "useChatLayout" /* 5349 */;

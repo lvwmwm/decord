@@ -1,9 +1,9 @@
-// Module ID: 15046
-// Function ID: 15047
+// Module ID: 15043
+// Function ID: 15044
 // Name: MediaModalOverlayAltText
 // Dependencies: [19, 21, 5170, 575, 1627, 4995, 7076, 11755, 5783, 1113, 2]
 
-// Module 15046 (MediaModalOverlayAltText)
+// Module 15043 (MediaModalOverlayAltText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;

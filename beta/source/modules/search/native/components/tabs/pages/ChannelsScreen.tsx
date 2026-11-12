@@ -1,9 +1,9 @@
-// Module ID: 19173
-// Function ID: 19174
+// Module ID: 19170
+// Function ID: 19171
 // Name: ChannelsScreen
-// Dependencies: [19, 5928, 14179, 14166, 9950, 9949, 21, 14159, 504, 18671, 19103, 1113, 5179, 19107, 14173, 19166, 19099, 19111, 2]
+// Dependencies: [19, 5928, 14179, 14166, 9950, 9949, 21, 14159, 504, 18668, 19100, 1113, 5179, 19104, 14173, 19163, 19096, 19108, 2]
 
-// Module 19173 (ChannelsScreen)
+// Module 19170 (ChannelsScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;

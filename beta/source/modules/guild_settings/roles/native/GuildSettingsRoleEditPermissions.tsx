@@ -1,7 +1,7 @@
 // Module ID: 20245
 // Function ID: 20246
 // Name: GuildSettingsRoleEditPermissions
-// Dependencies: [32, 19, 17, 5037, 5102, 1385, 1072, 21, 5170, 575, 5107, 38, 5783, 1113, 5406, 20246, 2118, 19326, 20243, 7315, 1252, 1084, 19330, 7462, 7159, 1187, 9180, 2]
+// Dependencies: [32, 19, 17, 5037, 5102, 1385, 1072, 21, 5170, 575, 5107, 38, 5783, 1113, 5406, 20246, 2118, 19323, 20243, 7315, 1252, 1084, 19327, 7462, 7159, 1187, 9180, 2]
 // Exports: default
 
 // Module 20245 (GuildSettingsRoleEditPermissions)
@@ -126,7 +126,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     tmp19Result = tmp19(Text, obj3);
   }
   const tmp19Result3 = closure_14(closure_6, { children: tmp19Result });
-  const tmp15Result = role(19326);
+  const tmp15Result = role(19323);
   const guildPermissionSpec = tmp15Result.generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {

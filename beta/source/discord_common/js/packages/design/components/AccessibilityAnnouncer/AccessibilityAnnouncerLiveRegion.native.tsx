@@ -15,7 +15,7 @@ let StyleSheet;
 let _window;
 ({ StyleSheet, Text: _window } = react_native);
 const jsx = Fragment.jsx;
-const state = module_5181.create(() => ({ message: "description", version: false }));
+const state = module_5181.create(() => ({ message: "ip", version: false }));
 const liveRegion = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
 const memoResult = react.memo(function AccessibilityAnnouncerLiveRegion() {
   const tmp = state();

@@ -1204,14 +1204,14 @@ let closure_29 = (() => {
           HermesBuiltin.arraySpread(items2, tmp2(WebGLRenderingContext.WebGL2RenderingContext.prototype, tmp3.WebGL2, bindResult, arg1, arg2, arg3, 0, WebGLRenderingContext), 0);
           HermesBuiltin.apply(push, items2, items);
         }
-        const f136916 = () => {
+        const f136936 = () => {
 
         };
         const restoreHandlers = this.restoreHandlers;
         let arr = restoreHandlers.push(() => {
           closure_0();
           closure_1();
-          if (typeof f136916 === "function") {
+          if (typeof f136936 === "function") {
             const item = closure_130_0.forEach((fn) => fn());
           } else {
             throw new TypeError("Trying to call a non-function");

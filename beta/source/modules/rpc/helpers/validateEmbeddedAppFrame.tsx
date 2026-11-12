@@ -1,10 +1,10 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16638
+// Function ID: 16639
 // Name: validateEmbeddedAppFrame
 // Dependencies: [11084, 1072, 9440, 5831, 11037, 12008, 2148, 9447, 9441, 2]
 // Exports: tryValidateEmbeddedAppFrame, validateEmbeddedAppFrameOnAnySurface
 
-// Module 16641 (validateEmbeddedAppFrame)
+// Module 16638 (validateEmbeddedAppFrame)
 import Constants from "Constants" /* 1072 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2148 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;

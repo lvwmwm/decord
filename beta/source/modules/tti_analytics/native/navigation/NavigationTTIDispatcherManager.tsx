@@ -1,11 +1,11 @@
 // Module ID: 20520
 // Function ID: 20521
 // Name: NavigationTTIDispatcherManager
-// Dependencies: [5019, 6226, 5073, 18998, 13595, 13984, 7383, 2]
+// Dependencies: [5019, 6226, 5073, 18995, 13595, 13984, 7383, 2]
 
 // Module 20520 (NavigationTTIDispatcherManager)
 import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13595 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 18998 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 18995 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import MessageStore from "MessageStore" /* 6226 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;

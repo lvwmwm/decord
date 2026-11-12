@@ -1,7 +1,7 @@
 // Module ID: 19934
 // Function ID: 19935
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 5019, 7810, 5082, 5203, 8310, 16574, 8801, 1072, 8800, 2116, 1411, 5828, 7525, 504, 5771, 11, 572, 9901, 1113, 38, 6230, 10368, 8805, 6235, 8314, 1282, 1089, 2]
+// Dependencies: [5, 32, 19, 502, 5019, 7810, 5082, 5203, 8310, 16571, 8801, 1072, 8800, 2116, 1411, 5828, 7525, 504, 5771, 11, 572, 9901, 1113, 38, 6230, 10368, 8805, 6235, 8314, 1282, 1089, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
 // Module 19934 (InteractionModalUtils)
@@ -14,7 +14,7 @@ import Server from "Server" /* 2116 */;
 import DraftStore from "DraftStore" /* 7810 */;
 import ComponentStateContext from "ComponentStateContext" /* 8800 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9901 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 16574 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 16571 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ let _require, c0, c1, c5, c6, importDefault, set;
 let tmp5;
 const getURLForApplicationDefault = tmp5(5828);
 function getData(arg0, arr, arg2) {
-  const f119804 = (type) => {
+  const f119819 = (type) => {
     let components;
     let items;
     let mapped;
@@ -45,7 +45,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f119804) };
+      const obj4 = { type: type.type, components: components.map(f119819) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -106,7 +106,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f119804)[0] };
+                const obj21 = { type: type.type, component: items.map(f119819)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -168,7 +168,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f119804);
+  return arr.map(f119819);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 18943
-// Function ID: 18944
+// Module ID: 18940
+// Function ID: 18941
 // Name: PaintbrushThinIcon
-// Dependencies: [19, 21, 575, 5873, 18944, 2]
+// Dependencies: [19, 21, 575, 5873, 18941, 2]
 // Exports: PaintbrushThinIcon
 
-// Module 18943 (PaintbrushThinIcon)
+// Module 18940 (PaintbrushThinIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 18944 */;
+import AssetRegistry from "AssetRegistry" /* 18941 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

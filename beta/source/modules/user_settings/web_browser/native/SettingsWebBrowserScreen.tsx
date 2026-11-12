@@ -1,13 +1,13 @@
-// Module ID: 17831
-// Function ID: 17832
+// Module ID: 17828
+// Function ID: 17829
 // Name: SettingsWebBrowserScreen
-// Dependencies: [19, 8536, 21, 11717, 16939, 2]
+// Dependencies: [19, 8536, 21, 11717, 16936, 2]
 
-// Module 17831 (SettingsWebBrowserScreen)
+// Module 17828 (SettingsWebBrowserScreen)
 import Fragment from "Fragment" /* 21 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
-import SettingLayoutDefault from "SettingLayout" /* 16939 */;
+import SettingLayoutDefault from "SettingLayout" /* 16936 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

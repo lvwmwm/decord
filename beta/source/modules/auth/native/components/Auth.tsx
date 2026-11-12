@@ -1,9 +1,9 @@
-// Module ID: 18358
-// Function ID: 18359
+// Module ID: 18355
+// Function ID: 18356
 // Name: Auth
-// Dependencies: [32, 19, 17, 14243, 1072, 21, 18359, 18360, 7097, 18370, 7267, 7222, 5170, 575, 18413, 7215, 18365, 1641, 7043, 18414, 7041, 7240, 7264, 1357, 1113, 18415, 7763, 18424, 2]
+// Dependencies: [32, 19, 17, 14243, 1072, 21, 18356, 18357, 7097, 18367, 7267, 7222, 5170, 575, 18410, 7215, 18362, 1641, 7043, 18411, 7041, 7240, 7264, 1357, 1113, 18412, 7763, 18421, 2]
 
-// Module 18358 (Auth)
+// Module 18355 (Auth)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
@@ -11,19 +11,19 @@ import BackgroundImageDefault from "BackgroundImage" /* 7043 */;
 import useWideAuthViewDefault from "useWideAuthView" /* 7215 */;
 import MFAUtils from "MFAUtils" /* 7222 */;
 import _mod7267 from "module_7267" /* 7267 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 18359 */;
-import useShouldShowChooseAccountDefault from "useShouldShowChooseAccount" /* 18365 */;
-import RegistrationUtils from "RegistrationUtils" /* 18370 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18413 */;
-import AssetRegistry from "AssetRegistry" /* 18414 */;
-import AuthManagerDefault from "AuthManager" /* 18415 */;
-import useOrientationLockDefault from "useOrientationLock" /* 18424 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 18356 */;
+import useShouldShowChooseAccountDefault from "useShouldShowChooseAccount" /* 18362 */;
+import RegistrationUtils from "RegistrationUtils" /* 18367 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18410 */;
+import AssetRegistry from "AssetRegistry" /* 18411 */;
+import AuthManagerDefault from "AuthManager" /* 18412 */;
+import useOrientationLockDefault from "useOrientationLock" /* 18421 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import MultiAccountStore from "MultiAccountStore" /* 14243 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 18360 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 18357 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 

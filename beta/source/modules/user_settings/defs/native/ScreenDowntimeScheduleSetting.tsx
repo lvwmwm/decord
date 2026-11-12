@@ -1,14 +1,14 @@
-// Module ID: 17880
-// Function ID: 17881
+// Module ID: 17877
+// Function ID: 17878
 // Name: ScreenDowntimeScheduleSetting
-// Dependencies: [8536, 17167, 8473, 11717, 1113, 4995, 2]
+// Dependencies: [8536, 17164, 8473, 11717, 1113, 4995, 2]
 
-// Module 17880 (ScreenDowntimeScheduleSetting)
+// Module 17877 (ScreenDowntimeScheduleSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import useUserLinks from "useUserLinks" /* 8473 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17167 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17164 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 

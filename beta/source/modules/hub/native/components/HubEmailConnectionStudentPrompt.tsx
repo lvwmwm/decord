@@ -1,14 +1,14 @@
-// Module ID: 14606
-// Function ID: 14607
+// Module ID: 14602
+// Function ID: 14603
 // Name: HubEmailConnectionStudentPrompt
-// Dependencies: [19, 17, 14597, 1072, 21, 5170, 6810, 575, 1499, 14605, 1187, 1113, 7403, 5874, 14607, 1252, 14608, 2]
+// Dependencies: [19, 17, 14593, 1072, 21, 5170, 6810, 575, 1499, 14601, 1187, 1113, 7403, 5874, 14603, 1252, 14604, 2]
 // Exports: default
 
-// Module 14606 (HubEmailConnectionStudentPrompt)
+// Module 14602 (HubEmailConnectionStudentPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HubConstants from "HubConstants" /* 14597 */;
+import HubConstants from "HubConstants" /* 14593 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -56,7 +56,7 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   dependencyMap = obj.useNavigation();
   let obj2 = { children: closure_7(View, obj3) };
   obj3 = { style: tmp.container, children: items };
-  const HubEmailConnectionScreen = onClose(14605).HubEmailConnectionScreen;
+  const HubEmailConnectionScreen = onClose(14601).HubEmailConnectionScreen;
   const obj4 = { style: tmp.header, children: intl.string(onClose(1113).t["+/Pv0h"]) };
   const LegacyText = onClose(1187).LegacyText;
   intl = onClose(1113).intl;
@@ -74,14 +74,14 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
       closure_2.push(HubEmailConnectionSteps.VERIFY_EMAIL, obj2);
     }
   };
-  obj6 = { source: invite(14607) };
+  obj6 = { source: invite(14603) };
   const tmp2 = invite(7403);
   tmp3 = invite(5874);
   intl2 = onClose(1113).intl;
   intl3 = onClose(1113).intl;
   items[1] = closure_6(tmp2, obj5);
   const obj7 = { DEPRECATED_style: tmp.row, leading: closure_6(tmp5, obj8), trailing: invite(7403).Arrow, label: intl4.string(onClose(1113).t.GLG9n4), onPress: onClose };
-  obj8 = { source: invite(14608) };
+  obj8 = { source: invite(14604) };
   const tmp4 = invite(7403);
   tmp5 = invite(5874);
   intl4 = onClose(1113).intl;

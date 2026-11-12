@@ -1,15 +1,15 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17100
+// Function ID: 17101
 // Name: DiscoveryByPhoneSetting
-// Dependencies: [8536, 1072, 1113, 4995, 1403, 14523, 11717, 2]
+// Dependencies: [8536, 1072, 1113, 4995, 1403, 14519, 11717, 2]
 
-// Module 17103 (DiscoveryByPhoneSetting)
+// Module 17100 (DiscoveryByPhoneSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 14523 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 14519 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 

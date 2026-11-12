@@ -1,7 +1,7 @@
 // Module ID: 20443
 // Function ID: 20444
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 5170, 575, 18551, 5783, 17584, 1627, 5420, 20444, 5424, 1113, 1187, 20445, 20446, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 18548, 5783, 17581, 1627, 5420, 20444, 5424, 1113, 1187, 20445, 20446, 2]
 // Exports: default
 
 // Module 20443 (GuildRoleSubscriptionTierTemplateFullCard)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17584 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 18551 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17581 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 18548 */;
 import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20446 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

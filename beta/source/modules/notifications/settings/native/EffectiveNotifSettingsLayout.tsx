@@ -1,17 +1,17 @@
-// Module ID: 18338
-// Function ID: 18339
+// Module ID: 18335
+// Function ID: 18336
 // Name: EffectiveNotifSettingsLayout
-// Dependencies: [19, 1231, 502, 15892, 21, 5170, 15906, 504, 572, 16939, 6191, 5783, 1113, 2992, 5790, 18339, 2]
+// Dependencies: [19, 1231, 502, 15889, 21, 5170, 15903, 504, 572, 16936, 6191, 5783, 1113, 2992, 5790, 18336, 2]
 // Exports: default
 
-// Module 18338 (EffectiveNotifSettingsLayout)
+// Module 18335 (EffectiveNotifSettingsLayout)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef2992 from "module_2992" /* 2992 */;
-import SettingLayoutDefault from "SettingLayout" /* 16939 */;
+import SettingLayoutDefault from "SettingLayout" /* 16936 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15892 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15889 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ export default function EffectiveNotifSettingsLayout(unavailableNode) {
   let isDeclarativeNotificationSettingsRedesignEnabled;
   const node = unavailableNode.node;
   const tmp = closure_9();
-  let obj = isDeclarativeNotificationSettingsRedesignEnabled(15906);
+  let obj = isDeclarativeNotificationSettingsRedesignEnabled(15903);
   isDeclarativeNotificationSettingsRedesignEnabled = obj.useIsDeclarativeNotificationSettingsRedesignEnabled("EffectiveNotifSettingsLayout");
   const items = [NotifSettingsProtoStore, AuthenticationStore, UserSettingsProtoStore];
   const obj2 = isDeclarativeNotificationSettingsRedesignEnabled(504);
@@ -69,14 +69,14 @@ export default function EffectiveNotifSettingsLayout(unavailableNode) {
       }
       const obj5 = { variant: "body-md/medium", accessibilityLiveRegion: "polite", children: string(Nu2TMI) };
       items3 = [closure_7(Text, obj5), , ];
-      const obj6 = { text: intl2.string(isDeclarativeNotificationSettingsRedesignEnabled(1113).t["5911Lb"]), variant: "secondary", disabled: stateFromStores1, onPress: isDeclarativeNotificationSettingsRedesignEnabled(18339).retryEffectiveNotifSettings };
+      const obj6 = { text: intl2.string(isDeclarativeNotificationSettingsRedesignEnabled(1113).t["5911Lb"]), variant: "secondary", disabled: stateFromStores1, onPress: isDeclarativeNotificationSettingsRedesignEnabled(18336).retryEffectiveNotifSettings };
       const Button = tmp2(5790).Button;
       intl2 = tmp2(1113).intl;
       items3[1] = closure_7(Button, obj6);
       let tmp9Result = null;
       if (null != unavailableNode) {
         const obj7 = { node: unavailableNode };
-        tmp9Result = tmp9(tmp12(16939), obj7);
+        tmp9Result = tmp9(tmp12(16936), obj7);
       }
       items3[2] = tmp9Result;
       tmp8Result = tmp8(Stack, obj4);

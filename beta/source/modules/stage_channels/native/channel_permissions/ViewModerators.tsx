@@ -1,10 +1,10 @@
-// Module ID: 19319
-// Function ID: 19320
+// Module ID: 19316
+// Function ID: 19317
 // Name: ViewModerators
-// Dependencies: [5, 19, 5082, 5076, 5041, 1072, 8049, 21, 1252, 5406, 19320, 2118, 1499, 504, 6797, 9144, 5027, 2116, 6123, 1113, 7582, 9145, 5868, 1187, 9171, 6191, 7159, 7071, 11666, 2]
+// Dependencies: [5, 19, 5082, 5076, 5041, 1072, 8049, 21, 1252, 5406, 19317, 2118, 1499, 504, 6797, 9144, 5027, 2116, 6123, 1113, 7582, 9145, 5868, 1187, 9171, 6191, 7159, 7071, 11666, 2]
 // Exports: default, openAddModeratorsActionSheet
 
-// Module 19319 (ViewModerators)
+// Module 19316 (ViewModerators)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -210,7 +210,7 @@ export default function ViewModerators(channel) {
                     const _HermesInternal = HermesInternal;
                     ActionSheetActionCreatorsDefault;
                     const obj2 = { channel, canSkip: false };
-                    const tmp8 = asyncRequire(19320, dependencyMap.paths);
+                    const tmp8 = asyncRequire(19317, dependencyMap.paths);
                     openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                   }
                 },
@@ -259,6 +259,6 @@ export function openAddModeratorsActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channel, canSkip: flag };
-  const tmp3 = asyncRequire(19320, dependencyMap.paths);
+  const tmp3 = asyncRequire(19317, dependencyMap.paths);
   openLazy(tmp3, "channel-add-moderators-" + channel.id, obj2);
 }

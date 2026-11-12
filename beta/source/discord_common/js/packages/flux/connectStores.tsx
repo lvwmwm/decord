@@ -52,7 +52,7 @@ export default function connectStores(items, arg1, arg2) {
             memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F80212 */ };
             memoizedFunction.clear = function clear() { /* body not rendered: F80214 */ };
             applyArgumentsResult.memoizedGetStateFromStores = memoizedFunction;
-            batchedStoreListener = new closure_0(closure_3_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F141690 */ });
+            batchedStoreListener = new closure_0(closure_3_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F141715 */ });
             applyArgumentsResult.listener = batchedStoreListener;
             return applyArgumentsResult;
           }
@@ -108,7 +108,7 @@ export default function connectStores(items, arg1, arg2) {
         memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F80212 */ };
         memoizedFunction.clear = function clear() { /* body not rendered: F80214 */ };
         applyArgumentsResult.memoizedGetStateFromStores = memoizedFunction;
-        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F141691 */ });
+        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F141716 */ });
         applyArgumentsResult.listener = batchedStoreListener;
         return applyArgumentsResult;
       }

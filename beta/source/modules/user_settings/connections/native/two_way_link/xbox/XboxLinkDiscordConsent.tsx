@@ -1,7 +1,7 @@
 // Module ID: 9859
 // Function ID: 9860
 // Name: XboxLinkDiscordConsent
-// Dependencies: [19, 9846, 1072, 9860, 21, 1499, 9862, 14450, 2]
+// Dependencies: [19, 9846, 1072, 9860, 21, 1499, 9862, 14446, 2]
 // Exports: default
 
 // Module 9859 (XboxLinkDiscordConsent)
@@ -36,5 +36,5 @@ export default function XboxLinkDiscordConsent(arg0) {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
   const TwoWayLinkDiscordConsent = navigation(9862).TwoWayLinkDiscordConsent;
-  return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(14450).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
+  return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(14446).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
 };

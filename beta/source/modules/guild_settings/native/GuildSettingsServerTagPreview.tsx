@@ -1,10 +1,10 @@
-// Module ID: 16081
-// Function ID: 16082
+// Module ID: 16078
+// Function ID: 16079
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1385, 8497, 21, 5170, 575, 504, 6205, 1411, 16082, 5783, 1113, 6191, 5874, 16083, 9408, 16084, 16128, 5790, 7073, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 8497, 21, 5170, 575, 504, 6205, 1411, 16079, 5783, 1113, 6191, 5874, 16080, 9408, 16081, 16125, 5790, 7073, 2]
 // Exports: default
 
-// Module 16081 (GuildSettingsServerTagPreview)
+// Module 16078 (GuildSettingsServerTagPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildTagConstants from "GuildTagConstants" /* 8497 */;
@@ -188,7 +188,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   let obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ message: arr4[0], unfocused: arr4[1] } = tmp);
-  const obj6 = { source: tmp4(16083), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj6 = { source: tmp4(16080), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result = tmp4(5874);
   items4 = [tmp17(tmp4Result, obj6), ];
   const obj7 = { style: tmp.messageBody, children: items5 };
@@ -216,7 +216,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
     const BaseGuildTagChiplet = tmp2(9408).BaseGuildTagChiplet;
     if (null != badge) {
       size = { badge, primaryTintColor: primaryColor, secondaryTintColor: secondaryColor, width: null, height: null };
-      const GuildBadge = tmp2(16084).GuildBadge;
+      const GuildBadge = tmp2(16081).GuildBadge;
       ({ SIZE_12: obj15.width, SIZE_12: obj15.height } = GuildTagBadgeSize);
       tmp17Result = tmp17(GuildBadge, size);
     }
@@ -233,7 +233,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const obj16 = { style: items10, children: items11 };
   items10 = [, ];
   ({ message: arr11[0], unfocused: arr11[1] } = tmp);
-  const obj17 = { source: tmp4(16128), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj17 = { source: tmp4(16125), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result2 = tmp4(5874);
   items11 = [tmp17(tmp4Result2, obj17), ];
   const obj18 = { style: tmp.messageBody, children: items12 };

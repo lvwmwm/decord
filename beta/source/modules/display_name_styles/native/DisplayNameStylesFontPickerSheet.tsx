@@ -1,10 +1,10 @@
-// Module ID: 17689
-// Function ID: 17690
+// Module ID: 17686
+// Function ID: 17687
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 5195, 1083, 21, 9403, 575, 5170, 8845, 17690, 17688, 5232, 1395, 1393, 5408, 5406, 5420, 17691, 1113, 3056, 5790, 5783, 4411, 16834, 5231, 16827, 16822, 16828, 5874, 17692, 7161, 16830, 6191, 5891, 2]
+// Dependencies: [32, 19, 17, 5195, 1083, 21, 9403, 575, 5170, 8845, 17687, 17685, 5232, 1395, 1393, 5408, 5406, 5420, 17688, 1113, 3056, 5790, 5783, 4411, 16831, 5231, 16824, 16819, 16825, 5874, 17689, 7161, 16827, 6191, 5891, 2]
 // Exports: default
 
-// Module 17689 (DisplayNameStylesFontPickerSheet)
+// Module 17686 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import _modDef3056 from "module_3056" /* 3056 */;
@@ -13,11 +13,11 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406
 import HapticUtils from "HapticUtils" /* 5408 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9403 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 16822 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16828 */;
-import HexagonCampaignDaysLeftBadgeDefault from "HexagonCampaignDaysLeftBadge" /* 16834 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 17691 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17692 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 16819 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16825 */;
+import HexagonCampaignDaysLeftBadgeDefault from "HexagonCampaignDaysLeftBadge" /* 16831 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 17688 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17689 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -122,10 +122,10 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
   let tmp3 = dependencyMap;
   let obj = onSelectFont(8845);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = onSelectFont(17690);
+  let obj2 = onSelectFont(17687);
   const hexagonCampaignFontPickerSection = obj2.useHexagonCampaignFontPickerSection("DisplayNameStylesFontPickerSheet", isTryItOut);
   ({ gridFontOrder, showCampaignSection, visibleFontOrder } = hexagonCampaignFontPickerSection);
-  let obj3 = onSelectFont(17688);
+  let obj3 = onSelectFont(17685);
   const displayNameStylesNewFonts = obj3.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   [first, closure_5] = first.useState(selectedFontId);
@@ -173,7 +173,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     const obj15 = { perk: constants.DISPLAY_NAME_STYLE };
     items1[1] = closure_12(HexagonCampaignDaysLeftBadgeDefault, obj15);
     items2 = [closure_13(closure_5, obj13), , ];
-    const obj16 = { theme: tmp2(16827).ThemeTypes.DARK, children: closure_12(closure_6, obj17) };
+    const obj16 = { theme: tmp2(16824).ThemeTypes.DARK, children: closure_12(closure_6, obj17) };
     const ThemeContextProvider = tmp2(5231).ThemeContextProvider;
     obj17 = {
       onPress() {

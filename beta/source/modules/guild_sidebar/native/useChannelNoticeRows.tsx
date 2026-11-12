@@ -1,10 +1,10 @@
-// Module ID: 18697
-// Function ID: 18698
+// Module ID: 18694
+// Function ID: 18695
 // Name: useChannelNoticeRows
-// Dependencies: [32, 19, 14319, 5100, 5041, 1385, 7822, 1072, 5016, 563, 6969, 7421, 18698, 7674, 5003, 5202, 18614, 18699, 2]
+// Dependencies: [32, 19, 14319, 5100, 5041, 1385, 7822, 1072, 5016, 563, 6969, 7421, 18695, 7674, 5003, 5202, 18611, 18696, 2]
 // Exports: default
 
-// Module 18697 (useChannelNoticeRows)
+// Module 18694 (useChannelNoticeRows)
 import Constants from "Constants" /* 1072 */;
 import GuildSidebarConstants from "GuildSidebarConstants" /* 7822 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

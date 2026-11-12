@@ -1,18 +1,18 @@
-// Module ID: 19473
-// Function ID: 19474
+// Module ID: 19470
+// Function ID: 19471
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 11713, 21, 5170, 11714, 19474, 8948, 19476, 13060, 1652, 5793, 5352, 18433, 5452, 19477, 2]
+// Dependencies: [19, 17, 11713, 21, 5170, 11714, 19471, 8948, 19473, 13060, 1652, 5793, 5352, 18430, 5452, 19474, 2]
 // Exports: default
 
-// Module 19473 (LaunchPadContainer)
+// Module 19470 (LaunchPadContainer)
 import _mod1652 from "module_1652" /* 1652 */;
 import spring_spring from "spring/spring" /* 5793 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8948 */;
 import useLaunchPadTypeDefault from "useLaunchPadType" /* 11714 */;
 import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13060 */;
-import useLaunchPadStateDefault from "useLaunchPadState" /* 19474 */;
-import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19476 */;
-import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19477 */;
+import useLaunchPadStateDefault from "useLaunchPadState" /* 19471 */;
+import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19473 */;
+import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19474 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LaunchPadConstants from "LaunchPadConstants" /* 11713 */;
@@ -155,7 +155,7 @@ export default function LaunchPadContainer(children) {
   const MobileHomeDrawerExperiment = tmp9(5352).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
   let obj2 = { value: gestureRef, children: metroRequire(GestureDetector, obj3) };
-  const Provider = tmp2(18433).Provider;
+  const Provider = tmp2(18430).Provider;
   obj3 = { gesture, children: tmp24(tmp25, obj4) };
   obj4 = { style: tmp.wrapper, children: items7 };
   GestureDetector = tmp9(5452).GestureDetector;

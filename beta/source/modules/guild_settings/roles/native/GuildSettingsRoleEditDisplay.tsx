@@ -1,7 +1,7 @@
 // Module ID: 20236
 // Function ID: 20237
 // Name: GuildSettingsRoleEditDisplay
-// Dependencies: [19, 17, 5077, 20221, 20220, 1072, 20223, 21, 5170, 575, 6204, 504, 7450, 7449, 7467, 1187, 20237, 5406, 20238, 2118, 18739, 20235, 20240, 20241, 7181, 1113, 20243, 7159, 7071, 5747, 1380, 1090, 16799, 5891, 5783, 2696, 7462, 2]
+// Dependencies: [19, 17, 5077, 20221, 20220, 1072, 20223, 21, 5170, 575, 6204, 504, 7450, 7449, 7467, 1187, 20237, 5406, 20238, 2118, 18736, 20235, 20240, 20241, 7181, 1113, 20243, 7159, 7071, 5747, 1380, 1090, 16796, 5891, 5783, 2696, 7462, 2]
 // Exports: default
 
 // Module 20236 (GuildSettingsRoleEditDisplay)
@@ -151,7 +151,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
               obj.updateRoleColor(role, arg0);
             }
         };
-        obj.openLazy(asyncRequire(18739, dependencyMap.paths), "RoleColorPicker", obj2);
+        obj.openLazy(asyncRequire(18736, dependencyMap.paths), "RoleColorPicker", obj2);
       } else if (tmp === tmp2.GRADIENT) {
         const obj4 = {
           colors,

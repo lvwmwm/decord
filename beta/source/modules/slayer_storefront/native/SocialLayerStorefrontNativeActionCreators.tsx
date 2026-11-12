@@ -1,7 +1,7 @@
 // Module ID: 10820
 // Function ID: 10821
 // Name: SocialLayerStorefrontNativeActionCreators
-// Dependencies: [5, 7881, 9588, 502, 6984, 21, 6123, 1113, 3896, 9595, 10821, 6831, 10822, 2118, 2183, 10826, 10842, 14694, 2]
+// Dependencies: [5, 7881, 9588, 502, 6984, 21, 6123, 1113, 3896, 9595, 10821, 6831, 10822, 2118, 2183, 10826, 10842, 14691, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal, openSocialLayerStorefrontUnsupportedOnMobileAlert, toggleSocialLayerStorefrontWishlist
 
 // Module 10820 (SocialLayerStorefrontNativeActionCreators)
@@ -160,7 +160,7 @@ export function openSocialLayerStorefrontProductSelfPurchaseSuccessModal(arg0) {
   obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(14694, dependencyMap.paths);
+      const promise = asyncRequire(14691, dependencyMap.paths);
       return promise.then((SocialLayerStorefrontProductSelfPurchaseSuccessModal) => {
         closure_0 = SocialLayerStorefrontProductSelfPurchaseSuccessModal.SocialLayerStorefrontProductSelfPurchaseSuccessModal;
         return (arg0) => {
@@ -179,7 +179,7 @@ export function openSocialLayerStorefrontProductGiftPurchaseSuccessModal(arg0) {
   obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(14694, dependencyMap.paths);
+      const promise = asyncRequire(14691, dependencyMap.paths);
       return promise.then((SocialLayerStorefrontProductGiftPurchaseSuccessModal) => {
         closure_0 = SocialLayerStorefrontProductGiftPurchaseSuccessModal.SocialLayerStorefrontProductGiftPurchaseSuccessModal;
         return (arg0) => {

@@ -1,7 +1,7 @@
 // Module ID: 20214
 // Function ID: 20215
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 5077, 502, 5390, 5076, 5041, 5102, 7394, 20215, 20216, 1072, 21, 5170, 575, 6810, 1252, 20217, 504, 18576, 9187, 1499, 5107, 5921, 20218, 20227, 20228, 7159, 1113, 7076, 12717, 5783, 20229, 5790, 20233, 7663, 14654, 1377, 20225, 6990, 7395, 7315, 8279, 1187, 9174, 18841, 5766, 2]
+// Dependencies: [32, 19, 17, 5077, 502, 5390, 5076, 5041, 5102, 7394, 20215, 20216, 1072, 21, 5170, 575, 6810, 1252, 20217, 504, 18573, 9187, 1499, 5107, 5921, 20218, 20227, 20228, 7159, 1113, 7076, 12717, 5783, 20229, 5790, 20233, 7663, 14651, 1377, 20225, 6990, 7395, 7315, 8279, 1187, 9174, 18838, 5766, 2]
 // Exports: default
 
 // Module 20214 (GuildSettingsRoles)
@@ -89,7 +89,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   let tmp39Result2;
   let tmp49;
   let tmp54;
-  const f120597 = () => sortedGuildRoles;
+  const f120612 = () => sortedGuildRoles;
   guildId = guildId.guildId;
   let guild;
   let memberCount;
@@ -215,8 +215,8 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   const tmp13 = guildEveryoneRole(memberCount.useState(""), 2);
   let str = tmp13[0];
   let closure_3 = tmp13[1];
-  [tmp15, c4] = guildEveryoneRole(memberCount.useState(f120597), 2);
-  const tmp14 = guildEveryoneRole(memberCount.useState(f120597), 2);
+  [tmp15, c4] = guildEveryoneRole(memberCount.useState(f120612), 2);
+  const tmp14 = guildEveryoneRole(memberCount.useState(f120612), 2);
   let closure_5 = memberCount.useRef(false);
   const items4 = [sortedGuildRoles];
   const callback = memberCount.useCallback((str) => {

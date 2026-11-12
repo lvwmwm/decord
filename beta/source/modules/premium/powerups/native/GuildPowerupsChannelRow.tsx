@@ -1,10 +1,10 @@
-// Module ID: 18648
-// Function ID: 18649
+// Module ID: 18645
+// Function ID: 18646
 // Name: GuildPowerupsChannelRow
-// Dependencies: [19, 17, 5914, 21, 14342, 7185, 575, 1187, 5170, 18601, 18443, 5772, 14338, 14359, 14203, 14326, 7445, 5770, 1113, 2696, 18649, 14105, 2]
+// Dependencies: [19, 17, 5914, 21, 14342, 7185, 575, 1187, 5170, 18598, 18440, 5772, 14338, 14355, 14203, 14326, 7445, 5770, 1113, 2696, 18646, 14105, 2]
 // Exports: default
 
-// Module 18648 (GuildPowerupsChannelRow)
+// Module 18645 (GuildPowerupsChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -12,8 +12,8 @@ import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14326 */;
 import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14342 */;
-import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 18443 */;
-import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 18601 */;
+import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 18440 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 18598 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
@@ -92,7 +92,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   const ref = react.useRef(null);
   const tmp5 = dismissNewBadgeIfShown(14338)(guildId);
   let indicator;
-  const tmp6 = dismissNewBadgeIfShown(14359);
+  const tmp6 = dismissNewBadgeIfShown(14355);
   if (tmp5 != null) {
     indicator = tmp5.indicator;
   }
@@ -143,7 +143,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   obj5 = { name: intl2.string(dismissNewBadgeIfShown(2696).yv3DJJ), mode: DEFAULT };
   BaseChannelName = tmp14(14203).BaseChannelName;
   intl2 = tmp14(1113).intl;
-  obj6 = { mode: DEFAULT, IconComponent: tmp14(18649).BoostTier2Icon };
+  obj6 = { mode: DEFAULT, IconComponent: tmp14(18646).BoostTier2Icon };
   BaseChannelIcon = tmp14(14203).BaseChannelIcon;
   if (showNewBadgeOnRow) {
     tmp16Result = tmp16(tmp14(14105).NewBadge, {});

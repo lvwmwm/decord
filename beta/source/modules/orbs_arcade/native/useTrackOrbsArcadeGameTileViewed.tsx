@@ -1,14 +1,14 @@
-// Module ID: 17387
-// Function ID: 17388
+// Module ID: 17384
+// Function ID: 17385
 // Name: useTrackOrbsArcadeGameTileViewed
-// Dependencies: [2117, 1072, 9810, 504, 10777, 17388, 2]
+// Dependencies: [2117, 1072, 9810, 504, 10777, 17385, 2]
 // Exports: default
 
-// Module 17387 (useTrackOrbsArcadeGameTileViewed)
+// Module 17384 (useTrackOrbsArcadeGameTileViewed)
 import Constants from "Constants" /* 1072 */;
 import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9810 */;
 import reactDefault from "react" /* 10777 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17388 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17385 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
 import size from "module_2" /* 2 */;
 

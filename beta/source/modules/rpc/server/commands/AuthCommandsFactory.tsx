@@ -1,10 +1,10 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16706
+// Function ID: 16707
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 2162, 2140, 1385, 6615, 1072, 12011, 1089, 510, 9447, 2148, 5807, 11937, 9872, 9868, 9874, 5107, 1084, 1282, 572, 16648, 9017, 1487, 2]
+// Dependencies: [32, 5, 2162, 2140, 1385, 6615, 1072, 12011, 1089, 510, 9447, 2148, 5807, 11937, 9872, 9868, 9874, 5107, 1084, 1282, 572, 16645, 9017, 1487, 2]
 // Exports: default
 
-// Module 16709 (AuthCommandsFactory)
+// Module 16706 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import RPCErrorDefault from "RPCError" /* 9447 */;
@@ -611,7 +611,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f140415 = function(result) {
+      const f140434 = function(result) {
         let access_token;
         let expires_in;
         let scope;
@@ -717,7 +717,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f140415);
+                  return promise.then(f140434);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -726,7 +726,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f140415);
+              catchPromise = promise.then(f140434);
             }
             return catchPromise;
           }

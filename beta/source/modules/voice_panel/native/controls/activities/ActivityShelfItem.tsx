@@ -1,7 +1,7 @@
 // Module ID: 19695
 // Function ID: 19696
 // Name: ActivityShelfItem
-// Dependencies: [19, 1072, 1191, 21, 5170, 575, 5167, 12706, 12620, 7056, 19693, 2021, 5839, 12037, 9678, 7076, 5231, 19692, 12649, 1187, 19696, 19694, 6205, 14659, 5783, 12712, 1113, 2]
+// Dependencies: [19, 1072, 1191, 21, 5170, 575, 5167, 12706, 12620, 7056, 19693, 2021, 5839, 12037, 9678, 7076, 5231, 19692, 12649, 1187, 19696, 19694, 6205, 14656, 5783, 12712, 1113, 2]
 // Exports: default
 
 // Module 19695 (ActivityShelfItem)
@@ -19,7 +19,7 @@ import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground"
 import useActivityShelfItem from "useActivityShelfItem" /* 12620 */;
 import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12706 */;
 import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 12712 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14659 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14656 */;
 import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 19692 */;
 import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 19693 */;
 import useActivityUsersDefault from "useActivityUsers" /* 19694 */;

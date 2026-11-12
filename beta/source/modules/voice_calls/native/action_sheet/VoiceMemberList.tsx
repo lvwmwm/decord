@@ -1,10 +1,10 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15507
+// Function ID: 15508
 // Name: VoiceMemberList
-// Dependencies: [32, 5, 19, 17, 5018, 1404, 6801, 5102, 1385, 5928, 1072, 1191, 5421, 1083, 21, 5170, 15506, 12107, 504, 8279, 15511, 1113, 11140, 11817, 9231, 5783, 10202, 7420, 2017, 6793, 11892, 8041, 15512, 15513, 1493, 15520, 5346, 12, 5406, 8854, 5231, 15521, 7337, 2]
+// Dependencies: [32, 5, 19, 17, 5018, 1404, 6801, 5102, 1385, 5928, 1072, 1191, 5421, 1083, 21, 5170, 15503, 12107, 504, 8279, 15508, 1113, 11140, 11817, 9231, 5783, 10202, 7420, 2017, 6793, 11892, 8041, 15509, 15510, 1493, 15517, 5346, 12, 5406, 8854, 5231, 15518, 7337, 2]
 // Exports: default
 
-// Module 15510 (VoiceMemberList)
+// Module 15507 (VoiceMemberList)
 import Constants2 from "Constants" /* 1083 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
@@ -15,8 +15,8 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 88
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9231 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11817 */;
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 12107 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 15506 */;
-import VoiceMemberUser from "VoiceMemberUser" /* 15513 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 15503 */;
+import VoiceMemberUser from "VoiceMemberUser" /* 15510 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -229,8 +229,8 @@ let closure_26 = react.memo(function Footer(channel) {
             }
       };
       const FormRow = tmp4(8279).FormRow;
-      obj3 = { accessibilityLabel: intl.string(channel(1113).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(15511).CircularIconButton.Sizes.MEDIUM_32 };
-      CircularIconButton = tmp4(15511).CircularIconButton;
+      obj3 = { accessibilityLabel: intl.string(channel(1113).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(15508).CircularIconButton.Sizes.MEDIUM_32 };
+      CircularIconButton = tmp4(15508).CircularIconButton;
       intl = tmp4(1113).intl;
       intl2 = tmp4(1113).intl;
       items[1] = closure_21(FormRow, obj2);
@@ -255,7 +255,7 @@ export default function VoiceMemberList(channel) {
   let obj6;
   let reduced;
   let tmp25Result2;
-  const f109901 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f109897 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -329,8 +329,8 @@ export default function VoiceMemberList(channel) {
           str = "";
         }
         const tmp3Result = flag(tmp4[37]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f109901), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f109901), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f109897), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f109897), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[21]).t.Fb0eT9, obj6), data: arr10 };
@@ -419,7 +419,7 @@ export default function VoiceMemberList(channel) {
                       let result;
                       const tmp = undefined !== items5[arg0].data[arg1].url && undefined !== items5[arg0].data[arg1].applicationId;
                       if (tmp) {
-                        const tmp9Result = tmp9(15512);
+                        const tmp9Result = tmp9(15509);
                         result = tmp9Result.calculateActivityRowHeight(tmp8);
                       } else {
                         const voiceState = tmp7.voiceState;

@@ -1,10 +1,10 @@
-// Module ID: 15348
-// Function ID: 15349
+// Module ID: 15345
+// Function ID: 15346
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1072, 21, 7420, 9908, 10127, 9919, 10184, 10988, 15349, 6855, 10441, 1113, 5790, 2]
+// Dependencies: [19, 1072, 21, 7420, 9908, 10127, 9919, 10184, 10988, 15346, 6855, 10441, 1113, 5790, 2]
 // Exports: default
 
-// Module 15348 (ShopNitroUpsellPromoSheet)
+// Module 15345 (ShopNitroUpsellPromoSheet)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
@@ -16,7 +16,7 @@ import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10127 */;
 import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10184 */;
 import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10441 */;
 import PromoSheet2 from "PromoSheet" /* 10988 */;
-import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 15349 */;
+import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 15346 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

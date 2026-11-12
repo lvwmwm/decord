@@ -1,10 +1,10 @@
-// Module ID: 19034
-// Function ID: 19035
+// Module ID: 19031
+// Function ID: 19032
 // Name: useResourceChannels
 // Dependencies: [5019, 7495, 563, 2]
 // Exports: default
 
-// Module 19034 (useResourceChannels)
+// Module 19031 (useResourceChannels)
 import ChannelStore from "ChannelStore" /* 5019 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7495 */;
 import size from "module_2" /* 2 */;

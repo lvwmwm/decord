@@ -1,7 +1,7 @@
 // Module ID: 19790
 // Function ID: 19791
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 5019, 6226, 5112, 1385, 1072, 19524, 21, 5170, 575, 5756, 504, 5808, 8947, 5783, 19791, 5747, 7745, 7518, 1652, 5402, 1113, 9105, 7101, 10919, 1252, 16745, 5087, 19788, 8957, 8955, 19792, 2]
+// Dependencies: [32, 19, 17, 5019, 6226, 5112, 1385, 1072, 19521, 21, 5170, 575, 5756, 504, 5808, 8947, 5783, 19791, 5747, 7745, 7518, 1652, 5402, 1113, 9105, 7101, 10919, 1252, 16742, 5087, 19788, 8957, 8955, 19792, 2]
 // Exports: default
 
 // Module 19790 (MediaPlaybackPip)
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import useChannelName from "useChannelName" /* 5808 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7745 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 16745 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19524 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 16742 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19521 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

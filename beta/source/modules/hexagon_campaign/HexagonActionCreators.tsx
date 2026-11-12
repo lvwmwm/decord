@@ -1,10 +1,10 @@
-// Module ID: 16810
-// Function ID: 16811
+// Module ID: 16807
+// Function ID: 16808
 // Name: HexagonActionCreators
 // Dependencies: [5, 1385, 5195, 3, 1089, 1282, 5198, 572, 2]
 // Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousAppIcon, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
 
-// Module 16810 (HexagonActionCreators)
+// Module 16807 (HexagonActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;

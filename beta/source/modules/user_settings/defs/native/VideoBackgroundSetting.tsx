@@ -1,9 +1,9 @@
-// Module ID: 18328
-// Function ID: 18329
+// Module ID: 18325
+// Function ID: 18326
 // Name: VideoBackgroundSetting
 // Dependencies: [8536, 1072, 6094, 12162, 6089, 6092, 11717, 1113, 12142, 2]
 
-// Module 18328 (VideoBackgroundSetting)
+// Module 18325 (VideoBackgroundSetting)
 import intl2 from "intl" /* 1113 */;
 import applyBackgroundOption from "applyBackgroundOption" /* 6089 */;
 import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 6092 */;

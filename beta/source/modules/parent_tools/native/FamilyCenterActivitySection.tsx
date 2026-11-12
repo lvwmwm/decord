@@ -1,15 +1,15 @@
-// Module ID: 17155
-// Function ID: 17156
+// Module ID: 17152
+// Function ID: 17153
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7825, 21, 5170, 575, 8474, 8476, 17150, 5783, 5868, 1113, 2664, 13623, 17156, 7076, 2]
+// Dependencies: [32, 19, 17, 7825, 21, 5170, 575, 8474, 8476, 17147, 5783, 5868, 1113, 2664, 13623, 17153, 7076, 2]
 // Exports: default
 
-// Module 17155 (FamilyCenterActivitySection)
+// Module 17152 (FamilyCenterActivitySection)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8474 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8476 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 17150 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 17147 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -101,9 +101,9 @@ export default function FamilyCenterActivitySection(displayType) {
   let tmp20Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(17150);
+  let obj = displayType(17147);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(17150);
+  const obj2 = displayType(17147);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
   const callback = react.useCallback(() => {
     const presentFailedToast = displayType(closure_2[11]).presentFailedToast;

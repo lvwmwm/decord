@@ -1,10 +1,10 @@
-// Module ID: 18426
-// Function ID: 18427
+// Module ID: 18423
+// Function ID: 18424
 // Name: useAppFrame
 // Dependencies: [17, 5170, 575, 1627, 5349, 5127, 2]
 // Exports: default
 
-// Module 18426 (useAppFrame)
+// Module 18423 (useAppFrame)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;

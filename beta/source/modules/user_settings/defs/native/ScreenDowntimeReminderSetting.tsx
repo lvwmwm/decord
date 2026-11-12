@@ -1,15 +1,15 @@
-// Module ID: 17878
-// Function ID: 17879
+// Module ID: 17875
+// Function ID: 17876
 // Name: ScreenDowntimeReminderSetting
-// Dependencies: [11173, 8536, 17167, 8473, 11717, 1113, 504, 17879, 2]
+// Dependencies: [11173, 8536, 17164, 8473, 11717, 1113, 504, 17876, 2]
 
-// Module 17878 (ScreenDowntimeReminderSetting)
+// Module 17875 (ScreenDowntimeReminderSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import useUserLinks from "useUserLinks" /* 8473 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17167 */;
-import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 17879 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17164 */;
+import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 17876 */;
 import NotificationSettingsStore from "NotificationSettingsStore" /* 11173 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;

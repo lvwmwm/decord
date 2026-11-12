@@ -1,7 +1,7 @@
 // Module ID: 19761
 // Function ID: 19762
 // Name: VoicePanelScreenshareButton
-// Dependencies: [19, 5019, 21, 1624, 14381, 19627, 5170, 11394, 19748, 504, 38, 19621, 19762, 19749, 1113, 7056, 2]
+// Dependencies: [19, 5019, 21, 1624, 14377, 19624, 5170, 11394, 19748, 504, 38, 19618, 19762, 19749, 1113, 7056, 2]
 // Exports: default
 
 // Module 19761 (VoicePanelScreenshareButton)
@@ -9,9 +9,9 @@ import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import NativeViewDefault from "NativeView" /* 7056 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 14381 */;
-import useVoicePanelScreenshareToggleDefault from "useVoicePanelScreenshareToggle" /* 19621 */;
-import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 19627 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 14377 */;
+import useVoicePanelScreenshareToggleDefault from "useVoicePanelScreenshareToggle" /* 19618 */;
+import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 19624 */;
 import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19749 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;

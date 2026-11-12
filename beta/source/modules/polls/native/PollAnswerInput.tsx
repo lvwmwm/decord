@@ -238,14 +238,14 @@ export default function PollAnswerInput(answer) {
     },
     blurOnSubmit: false,
     style: tmp.pollAnswerTextInput,
-    selectionColor: "channel",
-    textContentType: true,
+    selectionColor: "channelId",
+    textContentType: "<string:3125871524>",
     accessibilityLabel: intl2.formatToPlainString(answer(channelId[11]).t["3+V8G9"], obj6),
     accessibilityHint: formatToPlainStringResult,
     maxLength,
-    returnKeyType: true,
-    required: true,
-    autoCorrect: true,
+    returnKeyType: "<string:2207842530>",
+    required: "<string:2572391195>",
+    autoCorrect: "<string:3365357187>",
     "aria-invalid": error
   };
   const FormInput = tmp9(tmp10[22]).FormInput;

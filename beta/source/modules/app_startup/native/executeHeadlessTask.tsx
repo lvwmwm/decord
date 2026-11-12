@@ -1,7 +1,7 @@
 // Module ID: 20593
 // Function ID: 20594
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 19796, 1072, 3, 1242, 10363, 15, 9, 15881, 1252, 1260, 19892, 5014, 2]
+// Dependencies: [5, 17, 502, 19796, 1072, 3, 1242, 10363, 15, 9, 15878, 1252, 1260, 19892, 5014, 2]
 // Exports: default
 
 // Module 20593 (executeHeadlessTask)
@@ -13,7 +13,7 @@ import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10363 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15881 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15878 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import NativeAppStartup from "NativeAppStartup" /* 19796 */;

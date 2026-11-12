@@ -1,14 +1,14 @@
-// Module ID: 17129
-// Function ID: 17130
+// Module ID: 17126
+// Function ID: 17127
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 5170, 575, 17121, 17122, 5866, 5783, 17130, 1113, 2664, 2]
+// Dependencies: [19, 21, 5170, 575, 17118, 17119, 5866, 5783, 17127, 1113, 2664, 2]
 // Exports: default
 
-// Module 17129 (FamilyCenterParentalConsentNotice)
+// Module 17126 (FamilyCenterParentalConsentNotice)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 17130 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 17127 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

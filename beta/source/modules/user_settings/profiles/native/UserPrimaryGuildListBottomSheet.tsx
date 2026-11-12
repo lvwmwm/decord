@@ -1,10 +1,10 @@
-// Module ID: 16863
-// Function ID: 16864
+// Module ID: 16860
+// Function ID: 16861
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 8497, 21, 5170, 1377, 575, 8840, 5232, 7071, 5406, 1113, 7053, 9408, 7161, 15000, 12, 5179, 15003, 7445, 7459, 7415, 5790, 7315, 5420, 5783, 7390, 8279, 2]
+// Dependencies: [32, 19, 17, 8497, 21, 5170, 1377, 575, 8840, 5232, 7071, 5406, 1113, 7053, 9408, 7161, 14997, 12, 5179, 15000, 7445, 7459, 7415, 5790, 7315, 5420, 5783, 7390, 8279, 2]
 // Exports: default
 
-// Module 16863 (UserPrimaryGuildListBottomSheet)
+// Module 16860 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,7 +15,7 @@ import GuildIconDefault from "GuildIcon" /* 7053 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
 import _mod8279 from "module_8279" /* 8279 */;
 import GuildTagConstants from "GuildTagConstants" /* 8497 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 15003 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 15000 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

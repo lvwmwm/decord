@@ -1,10 +1,10 @@
-// Module ID: 14964
-// Function ID: 14965
+// Module ID: 14961
+// Function ID: 14962
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2186, 1385, 6869, 1072, 1387, 1113, 9823, 7978, 7976, 2185, 14965, 2107, 504, 9805, 14966, 9430, 9454, 6872, 9828, 2024, 11986, 14953, 9842, 7981, 7980, 2]
+// Dependencies: [5, 32, 19, 2186, 1385, 6869, 1072, 1387, 1113, 9823, 7978, 7976, 2185, 14962, 2107, 504, 9805, 14963, 9430, 9454, 6872, 9828, 2024, 11986, 14950, 9842, 7981, 7980, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription
 
-// Module 14964 (QuestCopyHooks)
+// Module 14961 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -19,7 +19,7 @@ import hooks_QuestHooks from "hooks/QuestHooks" /* 9805 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9823 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9828 */;
 import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11986 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14966 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ let tmp2;
 const intl13 = tmp(1113);
 const utils_QuestUtils = tmp(7976);
 const GameProfileAnalyticUtils = tmp2(9454);
-const SponsoredQuestUtils = tmp(14965);
+const SponsoredQuestUtils = tmp(14962);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -856,7 +856,7 @@ export function usePrimaryCtaCopy(arg0) {
     const intl3 = tmp2(1113).intl;
     return intl3.string(quest(1113).t.l7E81v);
   } else if (constants3.WATCH_VIDEO === memo) {
-    const tmp2Result3 = quest(14953);
+    const tmp2Result3 = quest(14950);
     return tmp2Result3.getVideoQuestWatchCtaText(tmp5);
   } else if (constants3.IN_GAME === memo) {
     let tmp2Result4 = tmp2(7976);

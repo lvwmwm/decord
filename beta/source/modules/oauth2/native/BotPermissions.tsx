@@ -1,10 +1,10 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14884
+// Function ID: 14885
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 5170, 575, 5107, 1084, 9875, 14888, 6191, 7153, 5783, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 5107, 1084, 9875, 14885, 6191, 7153, 5783, 1113, 2]
 // Exports: default
 
-// Module 14887 (BotPermissions)
+// Module 14884 (BotPermissions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;

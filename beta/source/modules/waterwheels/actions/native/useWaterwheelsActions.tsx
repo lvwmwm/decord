@@ -1,10 +1,10 @@
-// Module ID: 18984
-// Function ID: 18985
+// Module ID: 18981
+// Function ID: 18982
 // Name: useWaterwheelsActions
 // Dependencies: [5, 19, 5041, 14239, 1072, 8042, 5869, 9040, 7626, 1113, 2534, 9052, 9843, 6994, 8066, 14248, 6990, 2]
 // Exports: useWaterwheelsActions
 
-// Module 18984 (useWaterwheelsActions)
+// Module 18981 (useWaterwheelsActions)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;

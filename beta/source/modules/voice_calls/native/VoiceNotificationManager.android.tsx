@@ -1,9 +1,9 @@
-// Module ID: 16632
-// Function ID: 16633
+// Module ID: 16629
+// Function ID: 16630
 // Name: VoiceNotificationManager
-// Dependencies: [32, 17, 5018, 2162, 6801, 5019, 2130, 5925, 5112, 1385, 1072, 575, 10364, 10362, 12219, 10912, 5808, 1113, 16633, 2120, 2]
+// Dependencies: [32, 17, 5018, 2162, 6801, 5019, 2130, 5925, 5112, 1385, 1072, 575, 10364, 10362, 12219, 10912, 5808, 1113, 16630, 2120, 2]
 
-// Module 16632 (VoiceNotificationManager)
+// Module 16629 (VoiceNotificationManager)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,7 +13,7 @@ import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10362 
 import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 10364 */;
 import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 10912 */;
 import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 12219 */;
-import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 16633 */;
+import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 16630 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
@@ -69,7 +69,7 @@ class VoiceNotificationManager {
     let createAction;
     obj = Object.create(new.target.prototype);
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "Path", connectionState: "container", selfMute: false, deafened: "en-BS", isPushToTalk: "en-001", embeddedActivity: false, isStreaming: "Boolean" };
+    obj.state = { channelId: "Path", connectionState: "content", selfMute: false, deafened: "en-AI", isPushToTalk: "en-001", embeddedActivity: false, isStreaming: "Boolean" };
     obj.handleVoiceStateChange = handleVoiceStateChange;
     obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
       const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();
@@ -244,7 +244,7 @@ class VoiceNotificationManager {
 const prototype = VoiceNotificationManager.prototype;
 let obj = Object.create(VoiceNotificationManager.prototype);
 obj.voiceServiceHandlerId = 9000;
-obj.state = { channelId: "Path", connectionState: "container", selfMute: false, deafened: "en-BS", isPushToTalk: "en-001", embeddedActivity: false, isStreaming: "Boolean" };
+obj.state = { channelId: "Path", connectionState: "content", selfMute: false, deafened: "en-AI", isPushToTalk: "en-001", embeddedActivity: false, isStreaming: "Boolean" };
 obj.handleVoiceStateChange = handleVoiceStateChange;
 obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
   const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();

@@ -1,17 +1,17 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15187
+// Function ID: 15188
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 5016, 21, 5170, 575, 11624, 15191, 15192, 15193, 15188, 15194, 15198, 15202, 1113, 11630, 10109, 2]
+// Dependencies: [19, 17, 5016, 21, 5170, 575, 11624, 15188, 15189, 15190, 15185, 15191, 15195, 15199, 1113, 11630, 10109, 2]
 // Exports: default
 
-// Module 15190 (BadgeDirectoryNuxCoachmark)
+// Module 15187 (BadgeDirectoryNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
 import BadgeArtImageDefault from "BadgeArtImage" /* 11624 */;
-import _modDef15191 from "module_15191" /* 15191 */;
-import _modDef15192 from "module_15192" /* 15192 */;
-import _modDef15193 from "module_15193" /* 15193 */;
+import _modDef15188 from "module_15188" /* 15188 */;
+import _modDef15189 from "module_15189" /* 15189 */;
+import _modDef15190 from "module_15190" /* 15190 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -30,14 +30,14 @@ function NoProgressGraphic() {
   const obj = { style: items, children: items1 };
   items = [, ];
   ({ graphicRow: arr[0], badgeGraphicRow: arr[1] } = closure_9());
-  const obj2 = { url: _modDef15191, height: 44 };
+  const obj2 = { url: _modDef15188, height: 44 };
   closure_9();
   const tmp2 = BadgeArtImageDefault;
   items1 = [metroRequire(tmp2, obj2), , ];
-  const obj3 = { url: _modDef15192, height: 72 };
+  const obj3 = { url: _modDef15189, height: 72 };
   const tmp3 = BadgeArtImageDefault;
   items1[1] = metroRequire(tmp3, obj3);
-  const obj4 = { url: _modDef15193, height: 44 };
+  const obj4 = { url: _modDef15190, height: 44 };
   const tmp4 = BadgeArtImageDefault;
   items1[2] = metroRequire(tmp4, obj4);
   return metroImportDefault(View, obj);

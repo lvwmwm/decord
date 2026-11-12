@@ -1,12 +1,12 @@
-// Module ID: 15656
-// Function ID: 15657
+// Module ID: 15653
+// Function ID: 15654
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 5170, 15599, 5783, 10170, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 15596, 5783, 10170, 1187, 2]
 // Exports: default
 
-// Module 15656 (PremiumPerkCarousel)
+// Module 15653 (PremiumPerkCarousel)
 import react_native from "react-native" /* 17 */;
-import PremiumPerkCard from "PremiumPerkCard" /* 15599 */;
+import PremiumPerkCard from "PremiumPerkCard" /* 15596 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

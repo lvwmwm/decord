@@ -1,10 +1,10 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 15219
+// Function ID: 15220
 // Name: conjureServerWidgetConsent
-// Dependencies: [5, 12582, 6932, 15223, 7886, 12581, 12584, 1113, 4026, 1242, 12411, 9017, 5807, 1378, 2]
+// Dependencies: [5, 12582, 6932, 15220, 7886, 12581, 12584, 1113, 4026, 1242, 12411, 9017, 5807, 1378, 2]
 // Exports: getConjureServerWidgetConsentRequest
 
-// Module 15222 (conjureServerWidgetConsent)
+// Module 15219 (conjureServerWidgetConsent)
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

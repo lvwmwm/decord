@@ -1,10 +1,10 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 15501
+// Function ID: 15502
 // Name: NUFTemplate
 // Dependencies: [19, 17, 21, 5170, 575, 5783, 5874, 5790, 2]
 // Exports: default
 
-// Module 15504 (NUFTemplate)
+// Module 15501 (NUFTemplate)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;

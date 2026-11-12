@@ -1,10 +1,10 @@
-// Module ID: 14806
-// Function ID: 14807
+// Module ID: 14803
+// Function ID: 14804
 // Name: AppInteractionInfoActionSheet
 // Dependencies: [19, 1404, 5041, 1385, 21, 5170, 575, 7415, 1113, 7076, 7101, 5807, 504, 8856, 7071, 7053, 1187, 8854, 5420, 7159, 2]
 // Exports: default
 
-// Module 14806 (AppInteractionInfoActionSheet)
+// Module 14803 (AppInteractionInfoActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7101 */;

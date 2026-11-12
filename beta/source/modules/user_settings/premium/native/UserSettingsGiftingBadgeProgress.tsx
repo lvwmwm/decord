@@ -1,10 +1,10 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 15778
+// Function ID: 15779
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8867, 21, 5170, 575, 7420, 7445, 504, 8859, 5783, 1113, 2760, 10768, 10770, 5790, 13629, 10709, 15782, 11587, 2]
+// Dependencies: [32, 19, 17, 8867, 21, 5170, 575, 7420, 7445, 504, 8859, 5783, 1113, 2760, 10768, 10770, 5790, 13629, 10709, 15779, 11587, 2]
 // Exports: default
 
-// Module 15781 (UserSettingsGiftingBadgeProgress)
+// Module 15778 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 575 */;
 import _modDef2760 from "module_2760" /* 2760 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7420 */;
@@ -323,7 +323,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     items6 = [closure_9(Text2, obj22), ];
     const tmp20 = closure_5;
     if (tmp11Result) {
-      ChevronSmallDownIcon = tmp7(15782).ChevronSmallUpIcon;
+      ChevronSmallDownIcon = tmp7(15779).ChevronSmallUpIcon;
     } else {
       ChevronSmallDownIcon = tmp7(11587).ChevronSmallDownIcon;
     }

@@ -1,10 +1,10 @@
-// Module ID: 18019
-// Function ID: 18020
+// Module ID: 18016
+// Function ID: 18017
 // Name: DevToolsOTATestScreen
-// Dependencies: [5, 32, 19, 17, 1083, 21, 5170, 575, 5420, 7415, 5783, 13464, 5406, 6191, 7159, 7071, 17924, 7451, 10006, 5889, 18020, 2]
+// Dependencies: [5, 32, 19, 17, 1083, 21, 5170, 575, 5420, 7415, 5783, 13464, 5406, 6191, 7159, 7071, 17921, 7451, 10006, 5889, 18017, 2]
 // Exports: default
 
-// Module 18019 (DevToolsOTATestScreen)
+// Module 18016 (DevToolsOTATestScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import Text_Text from "Text/Text" /* 5783 */;
@@ -224,7 +224,7 @@ export default function DevToolsOTATestScreen() {
   Stack = subLabel(6191).Stack;
   let obj2 = { title: "OTA Status", hasIcons: true, children: items };
   const TableRowGroup = subLabel(7159).TableRowGroup;
-  let obj3 = { label: "Status", subLabel: first1, icon: closure_8(subLabel(17924).WrenchIcon, {}) };
+  let obj3 = { label: "Status", subLabel: first1, icon: closure_8(subLabel(17921).WrenchIcon, {}) };
   const TableRow = subLabel(7071).TableRow;
   items = [closure_8(TableRow, obj3), ];
   let obj4 = {
@@ -247,7 +247,7 @@ export default function DevToolsOTATestScreen() {
   if (str == null) {
     str = "Unknown";
   }
-  let obj5 = { label: "Manifest Source", subLabel: str, icon: tmp13(tmp16(17924).WrenchIcon, {}) };
+  let obj5 = { label: "Manifest Source", subLabel: str, icon: tmp13(tmp16(17921).WrenchIcon, {}) };
   const items2 = [tmp13(TableRow2, obj5), ];
   let obj6 = { icon: tmp13(tmp16(10006).PaperIcon, {}), label: str2 };
   const TableRow3 = tmp16(7071).TableRow;
@@ -264,7 +264,7 @@ export default function DevToolsOTATestScreen() {
   items2[1] = closure_8(TableRow3, obj6);
   items1[1] = closure_9(TableRowGroup2, obj7);
   const TableRowGroup3 = tmp16(7159).TableRowGroup;
-  let obj8 = { icon: tmp13(tmp16(17924).WrenchIcon, {}), label: "Is cookie set?", subLabel: str3 };
+  let obj8 = { icon: tmp13(tmp16(17921).WrenchIcon, {}), label: "Is cookie set?", subLabel: str3 };
   const TableRow4 = tmp16(7071).TableRow;
   str3 = "Yes";
   if (null == tmp7) {
@@ -273,7 +273,7 @@ export default function DevToolsOTATestScreen() {
   const items3 = [tmp13(TableRow4, obj8), ];
   let tmp13Result = null != tmp7;
   if (tmp13Result) {
-    const obj9 = { icon: closure_8(subLabel(17924).WrenchIcon, {}), label: JSON.stringify(tmp7, null, 2) };
+    const obj9 = { icon: closure_8(subLabel(17921).WrenchIcon, {}), label: JSON.stringify(tmp7, null, 2) };
     const TableRow5 = tmp16(7071).TableRow;
     const _JSON2 = JSON;
     tmp13Result = tmp13(TableRow5, obj9);
@@ -294,7 +294,7 @@ export default function DevToolsOTATestScreen() {
   const obj13 = {
     label: "Verify OTA Files",
     subLabel: str4,
-    icon: closure_8(subLabel(18020).ClipboardCheckIcon, {}),
+    icon: closure_8(subLabel(18017).ClipboardCheckIcon, {}),
     onPress: function verifyFiles() {
       return obj(...arguments);
     },

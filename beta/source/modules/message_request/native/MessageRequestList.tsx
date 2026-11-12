@@ -1,10 +1,10 @@
-// Module ID: 19372
-// Function ID: 19373
+// Module ID: 19369
+// Function ID: 19370
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1072, 21, 5170, 575, 1113, 5869, 5917, 6831, 14286, 1252, 7076, 19373, 1187, 15426, 17181, 8279, 1627, 19378, 19380, 14285, 19383, 7390, 1377, 5783, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 575, 1113, 5869, 5917, 6831, 14286, 1252, 7076, 19370, 1187, 15423, 17178, 8279, 1627, 19375, 19377, 14285, 19380, 7390, 1377, 5783, 2]
 // Exports: default
 
-// Module 19372 (MessageRequestList)
+// Module 19369 (MessageRequestList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -217,14 +217,14 @@ export default function MessageRequestList(goToMessageRequestPreview) {
   const tmp3 = dependencyMap;
   let tmp2 = data;
   const bottom = data(1627)().bottom;
-  data = data(19378)();
-  let obj = goToMessageRequestPreview(19380);
+  data = data(19375)();
+  let obj = goToMessageRequestPreview(19377);
   dependencyMap = obj.useListHasSingleMessageRequest();
   const obj2 = goToMessageRequestPreview(14285);
   const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   if (0 === data.length) {
     const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1113).t.SXrqTf) };
-    const tmp2Result = tmp2(19383);
+    const tmp2Result = tmp2(19380);
     intl2 = tmp4(1113).intl;
     tmp9Result = closure_7(tmp2Result, obj3);
   } else {

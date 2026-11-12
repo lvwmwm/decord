@@ -1,9 +1,9 @@
-// Module ID: 17105
-// Function ID: 17106
+// Module ID: 17102
+// Function ID: 17103
 // Name: IOSConversationSuggestionsSetting
 // Dependencies: [19, 17, 8536, 1254, 1259, 5085, 1377, 3, 11717, 1113, 2]
 
-// Module 17105 (IOSConversationSuggestionsSetting)
+// Module 17102 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;

@@ -36,7 +36,7 @@ function useScopedDismissibleContentSelection(items1, groupName) {
   let recurringStates;
   let snowflakeId;
   let version;
-  const f126098 = (scope) => {
+  const f126113 = (scope) => {
     let items1;
     const obj = groupName(closure_2[13]);
     if (obj.isGuildScopedDismissibleContent(scope)) {
@@ -47,7 +47,7 @@ function useScopedDismissibleContentSelection(items1, groupName) {
     }
     return items1;
   };
-  const f126101 = (item, index) => {
+  const f126116 = (item, index) => {
     items = [item, closure_3[index]];
     return items;
   };
@@ -55,8 +55,8 @@ function useScopedDismissibleContentSelection(items1, groupName) {
   _require = found.some((kind) => "single_use" === kind.kind);
   let tmp = _require;
   let closure_1 = found.some(require("DismissibleContentScope").isRecurringScopedDismissibleContent);
-  let items = [...new Set(found.flatMap(f126098))];
-  new Set(found.flatMap(f126098));
+  let items = [...new Set(found.flatMap(f126113))];
+  new Set(found.flatMap(f126113));
   let obj = require("get initialized");
   items1 = [closure_5];
   const stateFromStoresObject = obj.useStateFromStoresObject(items1, () => {
@@ -88,8 +88,8 @@ function useScopedDismissibleContentSelection(items1, groupName) {
     let guildDismissedContentState;
     return items.map((item) => guildDismissedContentState.getGuildDismissedContentState(item));
   });
-  let obj3 = { dismissedContents, recurringStates, guildStates: new Map(items.map(f126101)) };
-  new Map(items.map(f126101));
+  let obj3 = { dismissedContents, recurringStates, guildStates: new Map(items.map(f126116)) };
+  new Map(items.map(f126116));
   let tmp6 = require("NewUserDismissibleContentRegistry");
   const useNewUserDismissibleContent = tmp6.useNewUserDismissibleContent;
   const found1 = found.filter(checksNewUsersWithHook);

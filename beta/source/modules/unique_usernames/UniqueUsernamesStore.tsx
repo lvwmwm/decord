@@ -1,9 +1,9 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 16957
+// Function ID: 16958
 // Name: UniqueUsernamesStore
 // Dependencies: [1453, 1089, 504, 572, 2]
 
-// Module 16960 (UniqueUsernamesStore)
+// Module 16957 (UniqueUsernamesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -17,7 +17,7 @@ let tmp2;
 let closure_2 = { taken: null, error: "HermesInternal", rateLimited: null };
 let obj = { validations: tmp2, currentUsernameInvalid: false, retryAfterTime: null, suggestions: obj2 };
 tmp2 = new LRUCacheDefault({ max: 100, maxAge: 60000 });
-obj2 = { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "flexDirection", fetched: null } };
+obj2 = { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "flexDirection", fetched: -522190193 } };
 const Store = get_initializedDefault.Store;
 class UniqueUsernamesStore extends Store {
   isRateLimited() {
@@ -98,7 +98,7 @@ const obj3 = {
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
     obj.suggestions.migration = { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false };
-    obj.suggestions.registration = { suggestion: { username: "r" }, source: "flexDirection", fetched: null };
+    obj.suggestions.registration = { suggestion: { username: "r" }, source: "flexDirection", fetched: -522190193 };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;

@@ -1,9 +1,9 @@
-// Module ID: 17048
-// Function ID: 17049
+// Module ID: 17045
+// Function ID: 17046
 // Name: AccountWebAuthnEditSetting
-// Dependencies: [8536, 1072, 11717, 1113, 17049, 2]
+// Dependencies: [8536, 1072, 11717, 1113, 17046, 2]
 
-// Module 17048 (AccountWebAuthnEditSetting)
+// Module 17045 (AccountWebAuthnEditSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;

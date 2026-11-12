@@ -1,20 +1,20 @@
-// Module ID: 19418
-// Function ID: 19419
+// Module ID: 19415
+// Function ID: 19416
 // Name: Alerts
-// Dependencies: [19, 17, 5171, 15984, 16573, 7593, 10288, 21, 19419, 19420, 19424, 19425, 5170, 575, 504, 1652, 5231, 5402, 1705, 5793, 5794, 6123, 6186, 6181, 7049, 6129, 558, 2]
+// Dependencies: [19, 17, 5171, 15981, 16570, 7593, 10288, 21, 19416, 19417, 19421, 19422, 5170, 575, 504, 1652, 5231, 5402, 1705, 5793, 5794, 6123, 6186, 6181, 7049, 6129, 558, 2]
 
-// Module 19418 (Alerts)
+// Module 19415 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 5231 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
 import OverlayViewDefault from "OverlayView" /* 6129 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19419 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19416 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 15984 */;
-import PermissionVADStore from "PermissionVADStore" /* 16573 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 15981 */;
+import PermissionVADStore from "PermissionVADStore" /* 16570 */;
 import SurveyStore from "SurveyStore" /* 7593 */;
 import AlertStore from "AlertStore" /* 10288 */;
 import Fragment from "Fragment" /* 21 */;
@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "description", renderKey: "isArray", props: "isArray" });
+let closure_23 = Object.freeze({ renderAlert: "ip", renderKey: "isArray", props: "isArray" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -336,7 +336,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "description", renderKey: "isArray", props: "isArray" };
+        return { renderAlert: "ip", renderKey: "isArray", props: "isArray" };
       }
     }
   });

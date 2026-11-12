@@ -1,7 +1,7 @@
 // Module ID: 19837
 // Function ID: 19838
 // Name: AppAnalyticsManager
-// Dependencies: [2137, 2130, 5925, 6657, 6844, 5928, 1072, 1089, 7383, 5014, 5921, 5923, 19224, 8002, 2]
+// Dependencies: [2137, 2130, 5925, 6657, 6844, 5928, 1072, 1089, 7383, 5014, 5921, 5923, 19221, 8002, 2]
 
 // Module 19837 (AppAnalyticsManager)
 import Constants from "Constants" /* 1072 */;
@@ -10,7 +10,7 @@ import Timers from "Timers" /* 5014 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
 import ActivityTypes from "ActivityTypes" /* 5923 */;
 import RobloxSubgameUtils from "RobloxSubgameUtils" /* 8002 */;
-import getGamePlatformDefault from "getGamePlatform" /* 19224 */;
+import getGamePlatformDefault from "getGamePlatform" /* 19221 */;
 import RunningGameStore from "RunningGameStore" /* 2137 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;

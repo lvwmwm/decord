@@ -1,17 +1,17 @@
-// Module ID: 17541
-// Function ID: 17542
+// Module ID: 17538
+// Function ID: 17539
 // Name: QuestDockBountyHeader
-// Dependencies: [19, 17, 6869, 17430, 21, 575, 5170, 17459, 17431, 1652, 5793, 8948, 17535, 17427, 17446, 6872, 7981, 17523, 17542, 1377, 5874, 5783, 7076, 1113, 2]
+// Dependencies: [19, 17, 6869, 17427, 21, 575, 5170, 17456, 17428, 1652, 5793, 8948, 17532, 17424, 17443, 6872, 7981, 17520, 17539, 1377, 5874, 5783, 7076, 1113, 2]
 
-// Module 17541 (QuestDockBountyHeader)
+// Module 17538 (QuestDockBountyHeader)
 import nativeDefault from "native" /* 575 */;
 import QuestConstants from "QuestConstants" /* 6869 */;
 import QuestTypes from "QuestTypes" /* 6872 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17446 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17443 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockConstants from "QuestDockConstants" /* 17430 */;
+import QuestDockConstants from "QuestDockConstants" /* 17427 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;

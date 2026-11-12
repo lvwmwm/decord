@@ -1,13 +1,13 @@
-// Module ID: 19424
-// Function ID: 19425
+// Module ID: 19421
+// Function ID: 19422
 // Name: VADPermission
-// Dependencies: [19, 21, 19421, 6194, 1113, 2]
+// Dependencies: [19, 21, 19418, 6194, 1113, 2]
 
-// Module 19424 (VADPermission)
+// Module 19421 (VADPermission)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import AlertDefault from "Alert" /* 6194 */;
-import PermissionActionCreatorsDefault from "PermissionActionCreators" /* 19421 */;
+import PermissionActionCreatorsDefault from "PermissionActionCreators" /* 19418 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

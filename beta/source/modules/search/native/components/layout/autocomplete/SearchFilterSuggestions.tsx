@@ -1,16 +1,16 @@
-// Module ID: 19085
-// Function ID: 19086
+// Module ID: 19082
+// Function ID: 19083
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 19, 17, 9949, 21, 5170, 575, 19086, 7071, 5783, 1652, 5793, 5794, 5231, 1705, 19080, 19089, 14152, 2]
+// Dependencies: [32, 19, 17, 9949, 21, 5170, 575, 19083, 7071, 5783, 1652, 5793, 5794, 5231, 1705, 19077, 19086, 14152, 2]
 
-// Module 19085 (SearchFilterSuggestions)
+// Module 19082 (SearchFilterSuggestions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 5231 */;
 import TrackingConstants from "TrackingConstants" /* 9949 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14152 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 19086 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 19083 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap, set, token;
 
 let obj2;
-const f117379 = (text) => text.text;
+const f117375 = (text) => text.text;
 function SearchFilterPrefixRow(text) {
   text = text.text;
   const require = text;
@@ -50,7 +50,7 @@ function SearchFilterPrefixRow(text) {
   return <TableRow icon={memo} onPress={callback} label={null} subLabel={memo1} />;
 }
 function getSuggestionsKey(arr) {
-  const mapped = arr.map(f117379);
+  const mapped = arr.map(f117375);
   return mapped.join(" ");
 }
 function AnimatedEnterExitContainer(state) {
@@ -183,12 +183,12 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
   let tmp = memo();
   dependencyMap = tmp;
   let tmp2 = searchContext;
-  let obj = searchContext(19080);
+  let obj = searchContext(19077);
   const searchSuggestionsContext = obj.useSearchSuggestionsContext();
   const suggestionsRef = searchSuggestionsContext.suggestionsRef;
   const suggestionsMounted = searchSuggestionsContext.suggestionsMounted;
   const dismissed = searchSuggestionsContext.dismissed;
-  let obj2 = searchContext(19089);
+  let obj2 = searchContext(19086);
   const validFilterTokens = obj2.useValidFilterTokens(searchContext);
   const tmp6 = suggestionsRef(suggestionsMounted.useState([]), 2);
   const first = tmp6[0];
@@ -222,10 +222,10 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
               }
             });
             closure_7((arr) => {
-              const mapped = arr.map(f117379);
+              const mapped = arr.map(f117375);
               let tmp2 = closure_1;
               const joined = mapped.join(" ");
-              const mapped1 = closure_1.map(f117379);
+              const mapped1 = closure_1.map(f117375);
               if (joined === mapped1.join(" ")) {
                 tmp2 = arr;
               }

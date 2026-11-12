@@ -1,7 +1,7 @@
 // Module ID: 20368
 // Function ID: 20369
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 5170, 575, 5783, 1187, 10132, 1113, 20369, 5866, 20318, 5874, 17588, 5790, 7390, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5783, 1187, 10132, 1113, 20369, 5866, 20318, 5874, 17585, 5790, 7390, 2]
 // Exports: default
 
 // Module 20368 (CreatorHighlightSection)
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import LinkingDefault from "Linking" /* 5866 */;
 import defaultMVCPConfig from "defaultMVCPConfig" /* 7390 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10132 */;
-import EmojiIconDefault from "EmojiIcon" /* 17588 */;
+import EmojiIconDefault from "EmojiIcon" /* 17585 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;

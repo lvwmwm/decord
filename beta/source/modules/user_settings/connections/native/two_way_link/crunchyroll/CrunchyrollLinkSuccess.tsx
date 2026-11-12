@@ -1,10 +1,10 @@
-// Module ID: 14922
-// Function ID: 14923
+// Module ID: 14919
+// Function ID: 14920
 // Name: CrunchyrollLinkSuccess
-// Dependencies: [19, 17, 21, 5170, 9853, 5874, 14923, 5783, 1113, 7388, 5790, 2]
+// Dependencies: [19, 17, 21, 5170, 9853, 5874, 14920, 5783, 1113, 7388, 5790, 2]
 // Exports: default
 
-// Module 14922 (CrunchyrollLinkSuccess)
+// Module 14919 (CrunchyrollLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
@@ -12,7 +12,7 @@ import components_Button_Button from "components/Button/Button" /* 5790 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7388 */;
 import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9853 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14923 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14920 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

@@ -1,10 +1,10 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17195
+// Function ID: 17196
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 5170, 17199, 1113, 1187, 5783, 11564, 6122, 17206, 6194, 1411, 5792, 11111, 8131, 9400, 7072, 7071, 7462, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 17196, 1113, 1187, 5783, 11564, 6122, 17203, 6194, 1411, 5792, 11111, 8131, 9400, 7072, 7071, 7462, 2]
 // Exports: default
 
-// Module 17198 (ConnectedApplicationIdentity)
+// Module 17195 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;

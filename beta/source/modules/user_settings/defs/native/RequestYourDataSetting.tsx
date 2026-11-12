@@ -1,10 +1,10 @@
-// Module ID: 17114
-// Function ID: 17115
+// Module ID: 17111
+// Function ID: 17112
 // Name: RequestYourDataSetting
-// Dependencies: [17, 1385, 8536, 1072, 21, 1254, 7247, 1259, 504, 5085, 17115, 1113, 2166, 11717, 17117, 2]
+// Dependencies: [17, 1385, 8536, 1072, 21, 1254, 7247, 1259, 504, 5085, 17112, 1113, 2166, 11717, 17114, 2]
 // Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 17114 (RequestYourDataSetting)
+// Module 17111 (RequestYourDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -25,16 +25,16 @@ const require = globalThis.__r;
 let UserSettingsSections;
 let hasOwnProperty;
 let tmp;
-const HarvesterUtils = tmp(17115);
-const f112698 = () => currentUser.getCurrentUser();
-const f112699 = (harvestRequest) => harvestRequest.harvestRequest;
-const f112700 = (isRequesting) => isRequesting.isRequesting;
+const HarvesterUtils = tmp(17112);
+const f112694 = () => currentUser.getCurrentUser();
+const f112695 = (harvestRequest) => harvestRequest.harvestRequest;
+const f112696 = (isRequesting) => isRequesting.isRequesting;
 function useIsHarvestRequestDisabled() {
   const items = [UserStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f112698);
-  const tmp4 = closure_7(f112699, _slicedToArray.shallow);
-  let harvestDisabledResult = closure_7(f112700, _slicedToArray.shallow);
+  const stateFromStores = obj.useStateFromStores(items, f112694);
+  const tmp4 = closure_7(f112695, _slicedToArray.shallow);
+  let harvestDisabledResult = closure_7(f112696, _slicedToArray.shallow);
   let tmp6 = null == stateFromStores;
   if (!tmp6) {
     if (!harvestDisabledResult) {
@@ -92,9 +92,9 @@ let obj = {
     let currentUser;
     const items = [UserStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f112698);
-    const tmp4 = closure_7(f112699, _slicedToArray.shallow);
-    let harvestDisabledResult = closure_7(f112700, _slicedToArray.shallow);
+    const stateFromStores = obj.useStateFromStores(items, f112694);
+    const tmp4 = closure_7(f112695, _slicedToArray.shallow);
+    let harvestDisabledResult = closure_7(f112696, _slicedToArray.shallow);
     let tmp6 = null == stateFromStores;
     if (!tmp6) {
       if (!harvestDisabledResult) {

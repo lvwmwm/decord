@@ -1,12 +1,19 @@
 // Module ID: 16254
 // Function ID: 16255
-// Dependencies: [16244]
+// Dependencies: [16240]
 
 // Module 16254
-import _mod16244 from "module_16244" /* 16244 */;
+import _mod16240 from "module_16240" /* 16240 */;
 
 
 export default (arg0, arg1) => {
-  const tmp = new _mod16244(arg0, arg1);
-  return tmp.major;
+  const tmp = _mod16240(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
+    }
+  }
+  return prerelease;
 };

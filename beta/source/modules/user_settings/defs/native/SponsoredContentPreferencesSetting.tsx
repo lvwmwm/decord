@@ -1,14 +1,14 @@
-// Module ID: 18271
-// Function ID: 18272
+// Module ID: 18268
+// Function ID: 18269
 // Name: SponsoredContentPreferencesSetting
-// Dependencies: [1072, 11717, 1113, 2231, 14986, 18267, 18272, 2]
+// Dependencies: [1072, 11717, 1113, 2231, 14983, 18264, 18269, 2]
 
-// Module 18271 (SponsoredContentPreferencesSetting)
+// Module 18268 (SponsoredContentPreferencesSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2231 from "module_2231" /* 2231 */;
-import QuestsIcon from "QuestsIcon" /* 14986 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18267 */;
+import QuestsIcon from "QuestsIcon" /* 14983 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18264 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 

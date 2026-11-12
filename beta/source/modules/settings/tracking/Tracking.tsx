@@ -1,10 +1,10 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16944
+// Function ID: 16945
 // Name: Tracking
 // Dependencies: [1072, 1252, 7261, 2]
 // Exports: trackSettingSearchInputFocused, trackSettingSearchResultPress
 
-// Module 16947 (Tracking)
+// Module 16944 (Tracking)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7261 */;

@@ -1,10 +1,10 @@
-// Module ID: 15430
-// Function ID: 15431
+// Module ID: 15427
+// Function ID: 15428
 // Name: GuildProfileInvite
 // Dependencies: [32, 2186, 10270, 1072, 7989, 8498, 7011, 5177, 575, 5033, 9415, 9413, 1411, 2151, 2021, 1113, 13494, 9424, 7991, 11, 5080, 7450, 1090, 8485, 8500, 2]
 // Exports: createGuildProfileInvite
 
-// Module 15430 (GuildProfileInvite)
+// Module 15427 (GuildProfileInvite)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

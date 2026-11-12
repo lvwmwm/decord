@@ -13,7 +13,7 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require;
 
-const f120255 = (channel) => channel.channel;
+const f120270 = (channel) => channel.channel;
 let closure_3 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 const result = size.fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
 
@@ -36,7 +36,7 @@ export function getChannelsAllowedToUnlink(arg0) {
       const obj = id(closure_2_1[2]);
       return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
     });
-    items = found.map(f120255);
+    items = found.map(f120270);
   }
   return items;
 }
@@ -58,7 +58,7 @@ export function useChannelsAllowedToUnlink(id) {
             const obj = id(closure_2_1[2]);
             return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
           });
-          items = found.map(f120255);
+          items = found.map(f120270);
         }
         return items;
       }

@@ -1,10 +1,10 @@
-// Module ID: 14468
-// Function ID: 14469
+// Module ID: 14464
+// Function ID: 14465
 // Name: SegmentedControlPages
-// Dependencies: [32, 19, 17, 21, 1652, 1705, 14469, 1377, 5452, 6185, 6153, 2]
+// Dependencies: [32, 19, 17, 21, 1652, 1705, 14465, 1377, 5452, 6185, 6153, 2]
 // Exports: SegmentedControlPages
 
-// Module 14468 (SegmentedControlPages)
+// Module 14464 (SegmentedControlPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -49,7 +49,7 @@ function SegmentedControlPage(reportedPageIndex) {
   let tmp6;
   let tmp7;
   let tmp9;
-  const f107753 = () => {
+  const f107749 = () => {
     let tmp2 = index >= activePageRangeStart.get();
     const tmp = index;
     if (tmp2) {
@@ -184,8 +184,8 @@ function SegmentedControlPage(reportedPageIndex) {
   SegmentedControlPagesNativeTsx17.__workletHash = 15945321321692;
   SegmentedControlPagesNativeTsx17.__initData = tmp27;
   const animatedStyle = tmp2Result5.useAnimatedStyle(SegmentedControlPagesNativeTsx17);
-  [tmp31, tmp32] = activePageRangeEnd(obj3.useState(f107753), 2);
-  activePageRangeEnd(obj3.useState(f107753), 2);
+  [tmp31, tmp32] = activePageRangeEnd(obj3.useState(f107749), 2);
+  activePageRangeEnd(obj3.useState(f107749), 2);
   const items11 = [closure_24, activePageRangeStart, activePageRangeEnd];
   c0 = undefined;
   c1 = undefined;

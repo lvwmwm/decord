@@ -1,7 +1,7 @@
 // Module ID: 2171
 // Function ID: 2172
 // Name: PremiumUtils
-// Dependencies: [32, 19, 2168, 1385, 2172, 2173, 2175, 2176, 1072, 1387, 2184, 1083, 3, 4983, 2182, 2107, 38, 1113, 2728, 3444, 2166, 4992, 5862, 7510, 2183, 15663, 1089, 504, 11556, 10168, 16219, 2]
+// Dependencies: [32, 19, 2168, 1385, 2172, 2173, 2175, 2176, 1072, 1387, 2184, 1083, 3, 4983, 2182, 2107, 38, 1113, 2728, 3444, 2166, 4992, 5862, 7510, 2183, 15660, 1089, 504, 11556, 10168, 16216, 2]
 // Exports: calculateYearlyPlanDollarSavingsAmount, calculateYearlyPlanMonthlyRateAmount, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, experimentalGetPrice, extendDateWithUnconsumedFractionalPremium, formatInterval, formatIntervalDuration, formatPriceString, formatSubscriptionPlanRate, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getExternalSubscriptionMethodUrl, getFormattedPlanPriceFromInvoice, getFormattedRateForPlan, getFractionalPremiumUnitsHours, getFractionalPremiumUnitsHoursFromSkuIds, getGuildBoostPlanItem, getInterval, getIntervalForInvoice, getIntervalString, getIntervalStringAsNoun, getItemsFromNewAdditionalPlans, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getItemsWithoutPremiumPlanItem, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanItem, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumType, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBaseSubscriptionCanceled, isBoostOnlySubscription, isDiscountOffer, isNewUser, isNitroLockedState, isPremiumBaseSubscriptionPlan, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumGuildSubscriptionPlan, isPremiumSubscriptionPlan, isPrepaidPaymentSource, isSubscriptionPrepaidPaymentSource, isSubscriptionStatusFailedPayment, isSwitchingPlansDisabled, isTrialOffer, subscriptionHasPremiumGuildPlan, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState, withContextPlanPrices
 
 // Module 2171 (PremiumUtils)
@@ -22,8 +22,8 @@ import openURLDefault from "openURL" /* 5862 */;
 import PriceUtils from "PriceUtils" /* 7510 */;
 import PremiumFeatureUtils from "PremiumFeatureUtils" /* 10168 */;
 import CheckoutError from "CheckoutError" /* 11556 */;
-import useFPDurationLeft from "useFPDurationLeft" /* 15663 */;
-import PremiumPerkGates from "PremiumPerkGates" /* 16219 */;
+import useFPDurationLeft from "useFPDurationLeft" /* 15660 */;
+import PremiumPerkGates from "PremiumPerkGates" /* 16216 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;

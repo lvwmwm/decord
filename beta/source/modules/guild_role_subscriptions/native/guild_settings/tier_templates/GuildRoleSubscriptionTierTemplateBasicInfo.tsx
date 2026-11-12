@@ -1,7 +1,7 @@
 // Module ID: 20444
 // Function ID: 20445
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 21, 5170, 575, 5874, 5783, 17578, 5790, 1113, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5874, 5783, 17575, 5790, 1113, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
 // Module 20444 (GuildRoleSubscriptionTierTemplateBasicInfo)
@@ -11,7 +11,7 @@ import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
 import FastImageDefault from "FastImage" /* 5874 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17578 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17575 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;

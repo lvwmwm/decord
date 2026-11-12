@@ -1,12 +1,12 @@
-// Module ID: 14675
-// Function ID: 14676
+// Module ID: 14672
+// Function ID: 14673
 // Name: useChannelMoveAction
-// Dependencies: [7376, 5041, 5102, 5112, 5203, 6863, 1385, 14676, 1072, 504, 5044, 14677, 14679, 14678, 5808, 1113, 2]
+// Dependencies: [7376, 5041, 5102, 5112, 5203, 6863, 1385, 14673, 1072, 504, 5044, 14674, 14676, 14675, 5808, 1113, 2]
 // Exports: default
 
-// Module 14675 (useChannelMoveAction)
+// Module 14672 (useChannelMoveAction)
 import Constants from "Constants" /* 1072 */;
-import getChannelMoveBlockerDefault from "getChannelMoveBlocker" /* 14677 */;
+import getChannelMoveBlockerDefault from "getChannelMoveBlocker" /* 14674 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 7376 */;
 import GuildStore from "GuildStore" /* 5041 */;
 import PermissionStore from "PermissionStore" /* 5102 */;
@@ -14,7 +14,7 @@ import RelationshipStore from "RelationshipStore" /* 5112 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
 import UserStore from "UserStore" /* 1385 */;
-import getChannelListRecord from "getChannelListRecord" /* 14676 */;
+import getChannelListRecord from "getChannelListRecord" /* 14673 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ export default function useChannelMoveAction(getGuildId) {
   ({ categories, listChannel, guild } = stateFromStoresObject);
   const isBlocked = stateFromStoresObject.isBlocked;
   let isCategoryResult = listChannel.isCategory();
-  const tmpResult4 = tmp(14679);
+  const tmpResult4 = tmp(14676);
   const categoryKey = tmpResult4.getCategoryKey(listChannel.parent_id, categories);
   const tmp7 = GuildStore;
   const tmp8 = PermissionStore;
@@ -74,7 +74,7 @@ export default function useChannelMoveAction(getGuildId) {
     let _categories = categories._categories;
     found = _categories.filter((channel) => channel.channel.id !== NULL_STRING_CHANNEL_ID);
   } else {
-    const tmpResult5 = tmp(14679);
+    const tmpResult5 = tmp(14676);
     found = tmpResult5.getSectionSiblings(listChannel, categories);
   }
   let tmp12 = null;

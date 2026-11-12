@@ -1,10 +1,10 @@
-// Module ID: 17713
-// Function ID: 17714
+// Module ID: 17710
+// Function ID: 17711
 // Name: CustomTypingIndicatorAnimationPickerSheet
 // Dependencies: [32, 19, 17, 21, 5170, 575, 7073, 5783, 1398, 1113, 4028, 7459, 14011, 6191, 2]
 // Exports: default
 
-// Module 17713 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 17710 (CustomTypingIndicatorAnimationPickerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Stack_Stack from "Stack/Stack" /* 6191 */;

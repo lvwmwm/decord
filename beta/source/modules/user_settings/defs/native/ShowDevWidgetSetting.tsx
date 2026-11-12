@@ -1,13 +1,13 @@
-// Module ID: 17939
-// Function ID: 17940
+// Module ID: 17936
+// Function ID: 17937
 // Name: ShowDevWidgetSetting
-// Dependencies: [7973, 17940, 504, 11717, 17941, 17098, 2]
+// Dependencies: [7973, 17937, 504, 11717, 17938, 17095, 2]
 
-// Module 17939 (ShowDevWidgetSetting)
+// Module 17936 (ShowDevWidgetSetting)
 import get_initialized from "get initialized" /* 504 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17098 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 17940 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 17941 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17095 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 17937 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 17938 */;
 import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7973 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;

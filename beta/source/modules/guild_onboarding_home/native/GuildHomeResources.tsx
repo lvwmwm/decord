@@ -1,18 +1,18 @@
-// Module ID: 19040
-// Function ID: 19041
+// Module ID: 19037
+// Function ID: 19038
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 5019, 5100, 6226, 5102, 1072, 21, 5170, 575, 504, 9038, 14037, 19041, 7745, 14099, 1411, 7076, 5783, 5911, 5874, 19034, 1099, 1113, 19042, 5790, 2]
+// Dependencies: [19, 17, 5019, 5100, 6226, 5102, 1072, 21, 5170, 575, 504, 9038, 14037, 19038, 7745, 14099, 1411, 7076, 5783, 5911, 5874, 19031, 1099, 1113, 19039, 5790, 2]
 // Exports: default
 
-// Module 19040 (GuildHomeResources)
+// Module 19037 (GuildHomeResources)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7745 */;
 import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14099 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 19034 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19042 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 19031 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19039 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import GuildChannelStore from "GuildChannelStore" /* 5100 */;
@@ -72,7 +72,7 @@ function ResourceChannelRow(channelId) {
   }
   const tmp2Result = channelId(14037);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(19041)(firstResult);
+  const tmp11 = stateFromStores(19038)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];

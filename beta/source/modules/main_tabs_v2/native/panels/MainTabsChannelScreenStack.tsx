@@ -1,9 +1,9 @@
-// Module ID: 18996
-// Function ID: 18997
+// Module ID: 18993
+// Function ID: 18994
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 18997, 9936, 1072, 1083, 21, 5170, 1652, 1705, 18998, 19000, 5753, 5401, 5349, 5351, 19001, 5231, 6153, 19002, 11733, 19003, 1500, 18431, 5355, 11415, 5452, 5342, 18429, 19214, 18430, 572, 5356, 2]
+// Dependencies: [32, 19, 17, 18994, 9936, 1072, 1083, 21, 5170, 1652, 1705, 18995, 18997, 5753, 5401, 5349, 5351, 18998, 5231, 6153, 18999, 11733, 19000, 1500, 18428, 5355, 11415, 5452, 5342, 18426, 19211, 18427, 572, 5356, 2]
 
-// Module 18996 (MainTabsChannelScreenStack)
+// Module 18993 (MainTabsChannelScreenStack)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1083 */;
 import Link from "Link" /* 1500 */;
@@ -16,14 +16,14 @@ import useThemeDefault from "useTheme" /* 5401 */;
 import react_native from "react-native" /* 9936 */;
 import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11415 */;
 import reactDefault from "react" /* 11733 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18429 */;
-import MainTabsBackgroundChat from "MainTabsBackgroundChat" /* 18430 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18431 */;
-import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18997 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 18998 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 19000 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 19001 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 19003 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18426 */;
+import MainTabsBackgroundChat from "MainTabsBackgroundChat" /* 18427 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18428 */;
+import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18994 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 18995 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 18997 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 18998 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 19000 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -52,8 +52,8 @@ const _mod1705 = tmp4(1705);
 const LegacyBaseButton = tmp5(5452);
 const react2 = tmp6(6153);
 const MainTabsNavigatorPanelContext = tmp5(11415);
-const ChannelScreenFrameContainer = tmp5(19002);
-const ChannelScreenFrameContainerDefault = tmp(19002);
+const ChannelScreenFrameContainer = tmp5(18999);
+const ChannelScreenFrameContainerDefault = tmp(18999);
 function EnabledChannelScreenNavigationTTIVisibility(children) {
   let alwaysVisible;
   let highestFullyRenderedScreenIndex;

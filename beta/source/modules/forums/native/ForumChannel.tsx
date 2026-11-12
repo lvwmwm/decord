@@ -1,10 +1,10 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14638
+// Function ID: 14639
 // Name: ForumChannel
-// Dependencies: [19, 17, 5103, 6949, 5019, 7810, 6795, 14028, 1072, 11413, 1083, 21, 5170, 575, 6810, 9944, 5783, 1113, 9991, 7572, 504, 14642, 7550, 9, 9431, 9454, 7076, 9434, 7428, 5406, 14644, 2118, 5790, 12717, 14645, 9686, 9995, 14646, 5808, 14055, 14027, 14647, 7390, 8306, 10887, 5869, 5891, 7540, 7420, 7445, 8736, 11530, 11491, 11519, 9993, 14650, 8446, 10353, 10382, 5408, 5409, 10380, 7032, 5767, 11412, 11528, 5796, 14085, 9112, 14654, 14101, 2]
+// Dependencies: [19, 17, 5103, 6949, 5019, 7810, 6795, 14028, 1072, 11413, 1083, 21, 5170, 575, 6810, 9944, 5783, 1113, 9991, 7572, 504, 14639, 7550, 9, 9431, 9454, 7076, 9434, 7428, 5406, 14641, 2118, 5790, 12717, 14642, 9686, 9995, 14643, 5808, 14055, 14027, 14644, 7390, 8306, 10887, 5869, 5891, 7540, 7420, 7445, 8736, 11530, 11491, 11519, 9993, 14647, 8446, 10353, 10382, 5408, 5409, 10380, 7032, 5767, 11412, 11528, 5796, 14635, 9112, 14651, 14101, 2]
 // Exports: default
 
-// Module 14641 (ForumChannel)
+// Module 14638 (ForumChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
@@ -24,7 +24,7 @@ import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
 import ForumPostDefault from "ForumPost" /* 14027 */;
 import ForumChannelStore from "ForumChannelStore" /* 14028 */;
 import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 14055 */;
-import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 14650 */;
+import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 14647 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 5103 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6949 */;
@@ -187,7 +187,7 @@ function SortAndViewOptions(channel) {
         obj.hideActionSheet(combined);
       }
     };
-    obj.openLazy(asyncRequire(14644, dependencyMap.paths), combined, obj2);
+    obj.openLazy(asyncRequire(14641, dependencyMap.paths), combined, obj2);
   }, items);
   const isMediaChannelResult = channel.isMediaChannel();
   const Button = id(5790).Button;
@@ -212,7 +212,7 @@ function TagFilter(channel) {
     onPress: function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel };
-      obj.openLazy(asyncRequire(14645, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
+      obj.openLazy(asyncRequire(14642, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
     },
     size: "sm",
     icon: closure_15(channel(9686).TagIcon, { size: "xxs" })
@@ -503,7 +503,7 @@ const loading_section = "loading_section";
 let items = ["archived_section", "search_section", "missing_permission_search", "missing_permission_archived_threads", "loading_section"];
 const set = new Set(items);
 let createStyles = createStyles_mod;
-let obj = { background: obj2, headerRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8 }, headerLeftContainer: { flexDirection: "row", alignItems: "center", gap: 8 }, headerDivider: size, container: { flex: 1, alignSelf: "stretch", alignItems: "center", position: "relative" }, noHeight: { height: 0 }, fabScrim: { position: "absolute", left: 0, right: 0, bottom: 0 }, list: { flex: 1, paddingTop: 8, paddingHorizontal: 12, alignSelf: "stretch", marginBottom: 0 }, section: { alignItems: "flex-start", justifyContent: "flex-end" }, divider: obj3, missingPermissionContainer: obj4, missingPermissionText: obj5 };
+let obj = { background: obj2, headerRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8 }, headerLeftContainer: { flexDirection: "row", alignItems: "center", gap: 8 }, headerDivider: size, container: { flex: 1, alignSelf: "stretch", alignItems: "center", position: "relative" }, noHeight: { height: 0 }, list: { flex: 1, paddingTop: 8, paddingHorizontal: 12, alignSelf: "stretch", marginBottom: 0 }, section: { alignItems: "flex-start", justifyContent: "flex-end" }, divider: obj3, missingPermissionContainer: obj4, missingPermissionText: obj5 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
 size = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, width: "100%", height: 1 };
@@ -521,20 +521,17 @@ size = size_mod;
 let result = size.fileFinishedImporting("modules/forums/native/ForumChannel.tsx");
 
 export default function ForumChannel(channel) {
-  let ChatInputScrimGradient;
   let bottom;
   let bottom2;
   let closure_1;
   let constants2;
   let constants3;
   let intl;
-  let items10;
   let items6;
   let items7;
   let items8;
   let items9;
   let obj13;
-  let obj16;
   let stringResult;
   let tmp37;
   channel = channel.channel;
@@ -673,9 +670,8 @@ export default function ForumChannel(channel) {
   const insets = tmp7(tmp3[63])({ includeKeyboardHeight: true }).insets;
   const tmp2Result10 = tmp2(tmp3[15]);
   const clientThemesOverride = tmp2Result10.useClientThemesOverride(tmp.noHeight);
-  const tmp20 = tmp7(tmp3[64])();
-  const tmp22 = closure_14(tmp20);
-  if (tmp20 > 0) {
+  const tmp21 = tmp7(tmp3[64])() > 0;
+  if (tmp21) {
     const _Math = Math;
     bottom = Math.max(tmp22, insets.bottom);
   } else {
@@ -717,24 +713,14 @@ export default function ForumChannel(channel) {
   const obj12 = { style: tmp.container, children: closure_15(tmp37, obj13) };
   obj13 = { channel, paddingBottom: bottom2 + require("native").space.PX_16, searchQuery };
   tmp37 = ForumChannelContent;
-  if (tmp20 > 0) {
+  if (tmp21) {
     bottom2 = sum + tmp2(tmp3[66]).FAB_BUTTON_SIZE;
   } else {
     bottom2 = insets.bottom;
   }
   items6[4] = closure_15(showMemberVerificationGate, obj12);
-  let tmp34Result3 = null;
-  if (tmp20 > 0) {
-    const obj14 = { style: items10, pointerEvents: "none", children: closure_15(ChatInputScrimGradient, obj16) };
-    items10 = [tmp.fabScrim, ];
-    const obj15 = { height: tmp22 };
-    items10[1] = obj15;
-    obj16 = { inline: true, gradientHeight: require("native").space.PX_64 };
-    ChatInputScrimGradient = tmp2(tmp3[67]).ChatInputScrimGradient;
-    tmp34Result3 = tmp34(tmp26, obj14);
-  }
-  items6[5] = tmp34Result3;
-  const obj17 = { accessibilityLabel: intl.string(tmp2(tmp3[17]).t.TyAuoT), icon: require("AssetRegistry"), disabled: tmp17, positionBottom: sum, onPress: callback1, onPressDisabled: onCreatePostWithoutPermission, accessibilityHint: stringResult };
+  items6[5] = closure_15(require("VoicePanelDockScrim"), {});
+  const obj14 = { accessibilityLabel: intl.string(tmp2(tmp3[17]).t.TyAuoT), icon: require("AssetRegistry"), disabled: tmp17, positionBottom: sum, onPress: callback1, onPressDisabled: onCreatePostWithoutPermission, accessibilityHint: stringResult };
   const FloatingActionButton = tmp2(tmp3[68]).FloatingActionButton;
   intl = tmp2(tmp3[17]).intl;
   stringResult = undefined;
@@ -742,12 +728,12 @@ export default function ForumChannel(channel) {
     const intl2 = tmp2(tmp3[17]).intl;
     stringResult = intl2.string(tmp2(tmp3[17]).t.iyzwnD);
   }
-  items6[6] = closure_15(FloatingActionButton, obj17);
-  let tmp34Result4 = null;
+  items6[6] = closure_15(FloatingActionButton, obj14);
+  let tmp34Result2 = null;
   if (null != channel.guild_id) {
-    const obj18 = { channel };
-    tmp34Result4 = tmp34(tmp2(tmp3[70]).MemberActionChatInputBannerGuarded, obj18);
+    const obj15 = { channel };
+    tmp34Result2 = tmp34(tmp2(tmp3[70]).MemberActionChatInputBannerGuarded, obj15);
   }
-  items6[7] = tmp34Result4;
+  items6[7] = tmp34Result2;
   return closure_17(showMemberVerificationGate, obj4);
 };

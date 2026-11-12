@@ -1,14 +1,14 @@
-// Module ID: 18782
-// Function ID: 18783
+// Module ID: 18779
+// Function ID: 18780
 // Name: getGuildsBarGuildAccessibilityActions
-// Dependencies: [5041, 1113, 18783, 18784, 5177, 6990, 2]
+// Dependencies: [5041, 1113, 18780, 18781, 5177, 6990, 2]
 // Exports: default
 
-// Module 18782 (getGuildsBarGuildAccessibilityActions)
+// Module 18779 (getGuildsBarGuildAccessibilityActions)
 import shared from "shared" /* 5177 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
-import getGuildBarNeighborsDefault from "getGuildBarNeighbors" /* 18783 */;
-import moveGuildNode from "moveGuildNode" /* 18784 */;
+import getGuildBarNeighborsDefault from "getGuildBarNeighbors" /* 18780 */;
+import moveGuildNode from "moveGuildNode" /* 18781 */;
 import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let tmp3;
-const moveGuildNodeDefault = tmp3(18784);
+const moveGuildNodeDefault = tmp3(18781);
 let result = size.fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildAccessibilityActions.tsx");
 
 export default function getGuildsBarGuildAccessibilityActions(arg0) {

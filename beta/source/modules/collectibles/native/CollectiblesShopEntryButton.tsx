@@ -1,13 +1,13 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 14985
+// Function ID: 14986
 // Name: CollectiblesShopEntryButton
-// Dependencies: [32, 19, 5840, 5016, 21, 7674, 5003, 14981, 12703, 1113, 14989, 563, 5841, 7851, 10671, 2]
+// Dependencies: [32, 19, 5840, 5016, 21, 7674, 5003, 14978, 12703, 1113, 14986, 563, 5841, 7851, 10671, 2]
 // Exports: default
 
-// Module 14988 (CollectiblesShopEntryButton)
+// Module 14985 (CollectiblesShopEntryButton)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14981 */;
-import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 14989 */;
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14978 */;
+import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 14986 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5840 */;

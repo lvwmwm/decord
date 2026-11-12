@@ -350,7 +350,7 @@ class ConnectedApplicationUserRoleAccount {
         if (null != applicationRoleConnection.application.bot) {
           const self = this;
           const self2 = this;
-          const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "Array" };
+          const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "a" };
           const Avatar = native.Avatar;
           tmp10 = new UserRecord(applicationRoleConnection.application.bot);
           tmp5 = authStore3(Avatar, obj2);

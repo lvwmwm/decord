@@ -1,10 +1,10 @@
-// Module ID: 14844
-// Function ID: 14845
+// Module ID: 14841
+// Function ID: 14842
 // Name: useActivityStatusLabel
 // Dependencies: [6801, 5019, 5102, 5922, 5112, 5835, 504, 5923, 10900, 10898, 10899, 10906, 1113, 10910, 10915, 2]
 // Exports: default
 
-// Module 14844 (useActivityStatusLabel)
+// Module 14841 (useActivityStatusLabel)
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10898 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10899 */;
 import isGameActivityDefault from "isGameActivity" /* 10906 */;

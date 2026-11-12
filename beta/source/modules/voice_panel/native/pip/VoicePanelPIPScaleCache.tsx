@@ -1,10 +1,10 @@
-// Module ID: 19607
-// Function ID: 19608
+// Module ID: 19604
+// Function ID: 19605
 // Name: VoicePanelPIPScaleCache
 // Dependencies: [510, 2]
 // Exports: getVoicePanelPIPScaleCached, setVoicePanelPIPScaleCached
 
-// Module 19607 (VoicePanelPIPScaleCache)
+// Module 19604 (VoicePanelPIPScaleCache)
 import Storage2 from "Storage" /* 510 */;
 import size from "module_2" /* 2 */;
 

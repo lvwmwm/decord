@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c0, c1, c6, c7, closure_5;
 
-const f120318 = (arg0) => {
+const f120333 = (arg0) => {
   const items = [, ];
   ({ syncRules: arr[0], fetching: arr[1] } = arg0);
   return items;
@@ -242,7 +242,7 @@ export function useSyncAutomodRules(arg0) {
   let first;
   let closure_0 = arg0;
   [first, closure_1] = react.useState(false);
-  const tmp3 = _slicedToArray(withEqualityFn(f120318, _slicedToArray2.shallow), 2);
+  const tmp3 = _slicedToArray(withEqualityFn(f120333, _slicedToArray2.shallow), 2);
   const first1 = tmp3[0];
   let closure_3 = tmp5;
   const items = [first, ];
@@ -327,7 +327,7 @@ export function useSyncAutomodRulesEffect(arg0) {
   let tmp8;
   _require = arg0;
   [first, closure_1] = react.useState(false);
-  [first1, tmp5] = withEqualityFn(f120318, require("_slicedToArray").shallow);
+  [first1, tmp5] = withEqualityFn(f120333, require("_slicedToArray").shallow);
   let closure_3 = tmp5;
   let items = [first, ];
   const items1 = [arg0, tmp5, first1];

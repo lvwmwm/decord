@@ -1,13 +1,13 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 14905
+// Function ID: 14906
 // Name: PlayStationLinkPreConnect
-// Dependencies: [19, 14905, 21, 5170, 1499, 14909, 9857, 1113, 2]
+// Dependencies: [19, 14902, 21, 5170, 1499, 14906, 9857, 1113, 2]
 // Exports: PlayStationLinkPreConnect
 
-// Module 14908 (PlayStationLinkPreConnect)
+// Module 14905 (PlayStationLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14905 */;
-import _modDef14909 from "module_14909" /* 14909 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14902 */;
+import _modDef14906 from "module_14906" /* 14906 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ export function PlayStationLinkPreConnect(arg0) {
     navigation.push(constants.ERROR, {});
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14909 };
+    const obj = { uri: _modDef14906 };
     return obj;
   }, []);
   const TwoWayLinkPreConnect = navigation(9857).TwoWayLinkPreConnect;

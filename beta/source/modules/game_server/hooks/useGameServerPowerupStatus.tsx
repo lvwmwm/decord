@@ -1,10 +1,10 @@
-// Module ID: 14424
-// Function ID: 14425
+// Module ID: 14420
+// Function ID: 14421
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 8573, 504, 14408, 1113, 2696, 2]
+// Dependencies: [19, 8573, 504, 14404, 1113, 2696, 2]
 // Exports: default
 
-// Module 14424 (useGameServerPowerupStatus)
+// Module 14420 (useGameServerPowerupStatus)
 import intl2 from "intl" /* 1113 */;
 import _modDef2696 from "module_2696" /* 2696 */;
 import react from "react" /* 19 */;
@@ -31,7 +31,7 @@ export default function useGameServerPowerupStatus(arg0) {
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(14408)(arg0);
+  const tmp2 = stateFromStores(14404)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return react.useMemo(() => {

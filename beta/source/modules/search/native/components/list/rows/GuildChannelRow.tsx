@@ -1,9 +1,9 @@
-// Module ID: 19119
-// Function ID: 19120
+// Module ID: 19116
+// Function ID: 19117
 // Name: GuildChannelRow
-// Dependencies: [19, 17, 9950, 21, 5170, 575, 5808, 19120, 5874, 8707, 19122, 19098, 2]
+// Dependencies: [19, 17, 9950, 21, 5170, 575, 5808, 19117, 5874, 8707, 19119, 19095, 2]
 
-// Module 19119 (GuildChannelRow)
+// Module 19116 (GuildChannelRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -11,9 +11,9 @@ import useChannelNameDefault from "useChannelName" /* 5808 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8707 */;
 import SearchConstants from "SearchConstants" /* 9950 */;
-import SearchListRow2 from "SearchListRow" /* 19098 */;
-import ChannelContent from "ChannelContent" /* 19120 */;
-import renderChannelItem from "renderChannelItem" /* 19122 */;
+import SearchListRow2 from "SearchListRow" /* 19095 */;
+import ChannelContent from "ChannelContent" /* 19117 */;
+import renderChannelItem from "renderChannelItem" /* 19119 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;

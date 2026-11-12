@@ -1,7 +1,7 @@
 // Module ID: 19773
 // Function ID: 19774
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 11395, 21, 5170, 575, 7055, 6153, 14093, 11394, 1652, 14094, 5793, 10242, 1705, 19774, 19785, 18435, 19770, 2]
+// Dependencies: [32, 19, 17, 11395, 21, 5170, 575, 7055, 6153, 14093, 11394, 1652, 14094, 5793, 10242, 1705, 19774, 19785, 18432, 19770, 2]
 
 // Module 19773 (VoicePanelControlsDrawer)
 import nativeDefault from "native" /* 575 */;
@@ -227,7 +227,7 @@ const memoResult1 = react.memo(function VoicePanelControlsDrawer(openTab) {
   items8 = [tmp4.drawer, animatedStyle];
   const View = tmp(1652).View;
   let tmp34 = null;
-  const tmp10Result2 = gestureSpecs(18435);
+  const tmp10Result2 = gestureSpecs(18432);
   const tmp33 = closure_10;
   if (tmp10Result2.isJankScreenReportingEnabled()) {
     const obj3 = { channelId, tab, wrapperSpecs, mode };

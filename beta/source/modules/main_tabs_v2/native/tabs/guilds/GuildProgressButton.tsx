@@ -1,10 +1,10 @@
-// Module ID: 18627
-// Function ID: 18628
+// Module ID: 18624
+// Function ID: 18625
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 12757, 575, 5915, 14318, 14321, 8281, 18628, 1113, 14440, 2]
+// Dependencies: [19, 21, 12757, 575, 5915, 14318, 14321, 8281, 18625, 1113, 14436, 2]
 // Exports: default, getScaledGuildProgressButtonHeight
 
-// Module 18627 (GuildProgressButton)
+// Module 18624 (GuildProgressButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5915 */;
@@ -44,7 +44,7 @@ export default function GuildProgressButton(guild) {
     obj2.openActionSheet(guild);
   }, items1);
   const RowButton = guild(8281).RowButton;
-  ({ source: completed(18628) });
+  ({ source: completed(18625) });
   const Icon = guild(8281).RowButton.Icon;
   const intl = guild(1113).intl;
   return <RowButton icon={null} label={intl.string(guild(1113).t.o3HK3d)} subLabel={subtitle} onPress={callback} trailing={null} />;

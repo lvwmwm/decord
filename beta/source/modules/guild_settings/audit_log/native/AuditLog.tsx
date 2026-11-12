@@ -1,7 +1,7 @@
 // Module ID: 20167
 // Function ID: 20168
 // Name: AuditLog
-// Dependencies: [19, 17, 1192, 1404, 5112, 1385, 1072, 21, 5170, 575, 1414, 1411, 6661, 5177, 7424, 5783, 1377, 5231, 20155, 5226, 1187, 1113, 5033, 5808, 6210, 2166, 1380, 1090, 10673, 7396, 7073, 20159, 7076, 5406, 8854, 16804, 504, 2]
+// Dependencies: [19, 17, 1192, 1404, 5112, 1385, 1072, 21, 5170, 575, 1414, 1411, 6661, 5177, 7424, 5783, 1377, 5231, 20155, 5226, 1187, 1113, 5033, 5808, 6210, 2166, 1380, 1090, 10673, 7396, 7073, 20159, 7076, 5406, 8854, 16801, 504, 2]
 
 // Module 20167 (AuditLog)
 import react_native from "react-native" /* 17 */;
@@ -740,7 +740,7 @@ class AuditLog extends PureComponent {
           items2[2] = closure_15(PressableOpacity2, obj9);
           let tmp17Result = null;
           if (checkChangesToRenderResult) {
-            const obj11 = { style: items4, size: tmp10(1187).Icon.Sizes.CUSTOM, source: user(16804) };
+            const obj11 = { style: items4, size: tmp10(1187).Icon.Sizes.CUSTOM, source: user(16801) };
             items4 = [tmp.arrow, rotate90];
             const Icon = tmp10(1187).Icon;
             tmp17Result = tmp17(Icon, obj11);

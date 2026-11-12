@@ -1,7 +1,7 @@
 // Module ID: 19764
 // Function ID: 19765
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 5170, 575, 19748, 19735, 19749, 7056, 11587, 15782, 2]
+// Dependencies: [19, 21, 5170, 575, 19748, 19735, 19749, 7056, 11587, 15779, 2]
 // Exports: default
 
 // Module 19764 (VoicePanelDrawerToggleButton)
@@ -55,7 +55,7 @@ export default function VoicePanelDrawerToggleButton(arg0) {
   if (isDrawerOpen) {
     ChevronSmallUpIcon = tmp2(11587).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(15782).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(15779).ChevronSmallUpIcon;
   }
   items1[1] = _false(tmp9, obj3);
   return tmp6(tmp7, element);

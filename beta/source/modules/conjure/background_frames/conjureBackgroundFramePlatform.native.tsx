@@ -1,15 +1,15 @@
-// Module ID: 16717
-// Function ID: 16718
+// Module ID: 16714
+// Function ID: 16715
 // Name: conjureBackgroundFramePlatform
-// Dependencies: [6934, 5813, 6935, 16718, 11093, 16719, 12471, 5831, 5917, 2]
+// Dependencies: [6934, 5813, 6935, 16715, 11093, 16716, 12471, 5831, 5917, 2]
 
-// Module 16717 (conjureBackgroundFramePlatform)
+// Module 16714 (conjureBackgroundFramePlatform)
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 11093 */;
 import FramePoolManagerDefault from "FramePoolManager" /* 12471 */;
-import isConjureAppChannelFrameDefault from "isConjureAppChannelFrame" /* 16718 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 16719 */;
+import isConjureAppChannelFrameDefault from "isConjureAppChannelFrame" /* 16715 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 16716 */;
 import FramesStore from "FramesStore" /* 6934 */;
 import FramesConstants from "FramesConstants" /* 6935 */;
 import size from "module_2" /* 2 */;

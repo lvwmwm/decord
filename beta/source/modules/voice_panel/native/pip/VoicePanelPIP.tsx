@@ -1,7 +1,7 @@
 // Module ID: 19718
 // Function ID: 19719
 // Name: VoicePanelPIP
-// Dependencies: [19, 17, 5018, 6934, 6963, 11395, 11393, 19524, 5813, 6935, 21, 5170, 11394, 19613, 11403, 1652, 19523, 11399, 5793, 5452, 1705, 19616, 6035, 19607, 504, 5091, 11093, 11921, 8948, 1113, 19719, 7056, 19723, 19724, 5231, 2]
+// Dependencies: [19, 17, 5018, 6934, 6963, 11395, 11393, 19521, 5813, 6935, 21, 5170, 11394, 19610, 11403, 1652, 5402, 19520, 11399, 5793, 5452, 1705, 19613, 6035, 19604, 504, 5091, 11093, 11921, 8948, 1113, 19719, 7056, 19723, 19724, 5231, 2]
 // Exports: usePIPTileHandoff
 
 // Module 19718 (VoicePanelPIP)
@@ -19,10 +19,10 @@ import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11399 */;
 import VoicePanelPIPHandoff from "VoicePanelPIPHandoff" /* 11403 */;
 import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11921 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19523 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19524 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19613 */;
-import triggerIOSHapticDefault from "triggerIOSHaptic" /* 19616 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19520 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19521 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19610 */;
+import triggerIOSHapticDefault from "triggerIOSHaptic" /* 19613 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
@@ -47,10 +47,10 @@ let tmp;
 let tmp10;
 let tmp9;
 const _mod1705 = tmp(1705);
-const VoicePanelPIPScaleCache = tmp(19607);
+const VoicePanelPIPScaleCache = tmp(19604);
 function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
   let _undefined;
-  let c13;
+  let c14;
   let isDockEnabled;
   let tmp10;
   let tmp11;
@@ -90,19 +90,19 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
   if (flag === undefined) {
     flag = true;
   }
+  const fadeInTiming = obj.fadeInTiming;
   let controlsSpecs;
-  let hideControls;
-  c13 = undefined;
+  c14 = undefined;
   isDockEnabled = undefined;
   let callback;
   let stateFromStores;
   let stateFromStores1;
   let callback1;
-  let obj2 = hideControls;
-  let tmp = controlsSpecs;
-  const context = hideControls.useContext(onMainTileTap(controlsSpecs[12]));
+  let obj2 = controlsSpecs;
+  let tmp = fadeInTiming;
+  const context = controlsSpecs.useContext(onMainTileTap(fadeInTiming[12]));
   controlsSpecs = context.controlsSpecs;
-  hideControls = context.hideControls;
+  const hideControls = context.hideControls;
   const pipAvoidanceSpecs = context.pipAvoidanceSpecs;
   const safeArea = context.safeArea;
   const setFocused = context.setFocused;
@@ -111,31 +111,36 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
   const windowDimensions = context.windowDimensions;
   const wrapperDimensions = context.wrapperDimensions;
   const wrapperOffset = context.wrapperOffset;
-  ({ channelId: c13, isDockEnabled } = context);
+  ({ channelId: c14, isDockEnabled } = context);
   let tmp3 = _require;
   let obj3 = require("VoicePanelPIPStateContext");
   const pIPState = obj3.usePIPState();
   const obj4 = require("module_1652");
-  const sharedValue = obj4.useSharedValue(stateFromStores1);
+  const sharedValue = obj4.useSharedValue(stateFromStores);
   const obj5 = require("module_1652");
   const sharedValue1 = obj5.useSharedValue(0);
-  let items = [sharedValue1];
-  const effect = hideControls.useEffect(() => {
+  let items = [sharedValue1, fadeInTiming];
+  const effect = controlsSpecs.useEffect(() => {
     let closure_0;
     const timeout = setTimeout(() => {
-      const result = sharedValue1.set(1);
+      let num = 1;
+      if (null != closure_1_3) {
+        const obj = mode(fadeInTiming[16]);
+        num = obj.withTiming(1, tmp2);
+      }
+      const result = set(num);
     }, 200);
     return () => {
       clearTimeout(closure_0);
     };
   }, items);
-  let items1 = [callback1, pIPState, , , , , , ];
-  const useCallback = hideControls.useCallback;
+  let items1 = [stateFromStores1, pIPState, , , , , , ];
+  const useCallback = controlsSpecs.useCallback;
   items1[2] = require("VoicePanelPIPUtils").getScaledPIPContainerHeight;
   items1[3] = require("VoicePanelPIPUtils").calculatePIPPositionFromVelocity;
   items1[4] = windowDimensions;
   items1[5] = safeArea;
-  items1[6] = onMainTileTap(controlsSpecs[17]);
+  items1[6] = onMainTileTap(fadeInTiming[18]);
   items1[7] = wrapperDimensions;
   let c0;
   let c1;
@@ -168,21 +173,21 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
   items3[7] = wrapperDimensions;
   callback = useCallback(VoicePanelPIPTsx3, items3);
   let tmp3Result = tmp3(tmp[15]);
-  let items4 = [closure_22, pIPState, , , , , , , , , , , , , ];
+  let items4 = [callback1, pIPState, , , , , , , , , , , , , ];
   const useAnimatedStyle = tmp3Result.useAnimatedStyle;
-  items4[2] = tmp3(tmp[16]).getScaledPIPContainerHeight;
+  items4[2] = tmp3(tmp[17]).getScaledPIPContainerHeight;
   items4[3] = arg1;
   items4[4] = sharedValue;
-  items4[5] = tmp3(tmp[16]).getClampedPIPPosition;
+  items4[5] = tmp3(tmp[17]).getClampedPIPPosition;
   items4[6] = wrapperDimensions;
   items4[7] = windowDimensions;
   items4[8] = safeArea;
   items4[9] = pipAvoidanceSpecs;
-  items4[10] = showControls;
-  items4[11] = tmp3(tmp[16]).PIP_LAYOUT_PHYSICS;
+  items4[10] = setMode;
+  items4[11] = tmp3(tmp[17]).PIP_LAYOUT_PHYSICS;
   items4[12] = sharedValue1;
-  items4[13] = tmp3(tmp[18]).withSpring;
-  items4[14] = tmp3(tmp[16]).getVoicePanelPIPBorderRadius;
+  items4[13] = tmp3(tmp[19]).withSpring;
+  items4[14] = tmp3(tmp[17]).getVoicePanelPIPBorderRadius;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -196,7 +201,7 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
   let c10;
   let c11;
   let c12;
-  c13 = undefined;
+  let c13;
   [tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp29, tmp30, tmp31, tmp32] = items4;
   class VoicePanelPIPTsx4 {
     constructor() {
@@ -242,7 +247,7 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
   let items6 = [closure_23, pIPState, ];
   const useAnimatedStyle2 = tmp3(tmp[15]).useAnimatedStyle;
   tmp3(tmp[15]);
-  items6[2] = tmp3(tmp[16]).getVoicePanelPIPBorderRadius;
+  items6[2] = tmp3(tmp[17]).getVoicePanelPIPBorderRadius;
   c0 = undefined;
   c1 = undefined;
   [tmp35, tmp36, tmp37] = items6;
@@ -403,7 +408,7 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
       constructor(arg0) {
         closure_0 = arg0;
         allTouches = arg0.allTouches;
-        found = allTouches.filter(function() { /* body not rendered: F143086 */ });
+        found = allTouches.filter(function() { /* body not rendered: F143111 */ });
         if (0 !== found.length) {
           tmp4 = closure_2;
           tmp5 = closure_2(found);
@@ -754,8 +759,8 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
     VoicePanelPIPTsx13.__initData = tmp14;
     return Exclusive(numberOfTapsResult, onStart2(VoicePanelPIPTsx13));
   }, items11);
-  const items12 = [safeArea];
-  const tmp3Result7 = tmp3(tmp[24]);
+  const items12 = [pipAvoidanceSpecs];
+  const tmp3Result7 = tmp3(tmp[25]);
   stateFromStores = tmp3Result7.useStateFromStores(items12, () => {
     const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
     let _location;
@@ -764,14 +769,14 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
     if (currentEmbeddedActivity != null) {
       _location = currentEmbeddedActivity.location;
     }
-    return getEmbeddedActivityLocationChannelId(_location) !== c13;
+    return getEmbeddedActivityLocationChannelId(_location) !== c14;
   });
-  const items13 = [setFocused];
-  const tmp3Result8 = tmp3(tmp[24]);
+  const items13 = [safeArea];
+  const tmp3Result8 = tmp3(tmp[25]);
   stateFromStores1 = tmp3Result8.useStateFromStores(items13, () => {
-    const mainFrame = setFocused.getMainFrame();
+    const mainFrame = safeArea.getMainFrame();
     let id = null;
-    if (isDockEnabled(mainFrame)) {
+    if (_undefined(mainFrame)) {
       id = mainFrame.id;
     }
     return id;
@@ -780,7 +785,7 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
   callback1 = obj2.useCallback(() => {
     const tmp = stateFromStores;
     if (tmp) {
-      setMode(windowDimensions.PIP);
+      setMode(showControls.PIP);
       setFocused(null);
     }
     if (null != stateFromStores1) {
@@ -904,10 +909,10 @@ function VoicePanelPIP() {
   const context = react.useContext(stateFromStores(11394));
   const setMode = context.setMode;
   const controlsSpecs = context.controlsSpecs;
-  let obj2 = setMode(19613);
+  let obj2 = setMode(19610);
   const pIPState = obj2.usePIPState();
   const pipHandoff = react.useContext(stateFromStores(11394)).pipHandoff;
-  const obj3 = setMode(19613);
+  const obj3 = setMode(19610);
   const mode = obj3.usePIPState().mode;
   const obj4 = setMode(11403);
   const pIPCardsSettled = obj4.usePIPCardsSettled(pipHandoff);
@@ -931,7 +936,7 @@ function VoicePanelPIP() {
   let items = [closure_36, , ];
   const useAnimatedStyle = setMode(1652).useAnimatedStyle;
   setMode(1652);
-  items[1] = setMode(19523).getVoicePanelPIPBorderRadius;
+  items[1] = setMode(19520).getVoicePanelPIPBorderRadius;
   items[2] = pIPState;
   let c0;
   let c1;
@@ -1166,7 +1171,7 @@ let closure_39 = react.memo(function PIPWrapper(transitionState) {
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
   const pipHandoff = react.useContext(transitionCleanUp(11394)).pipHandoff;
-  const obj = transitionState(19613);
+  const obj = transitionState(19610);
   const mode = obj.usePIPState().mode;
   const obj2 = transitionState(11403);
   const pIPCardsSettled = obj2.usePIPCardsSettled(pipHandoff);

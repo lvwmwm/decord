@@ -1,9 +1,9 @@
-// Module ID: 18319
-// Function ID: 18320
+// Module ID: 18316
+// Function ID: 18317
 // Name: ActivityPrivacyShareMyActivitySetting
 // Dependencies: [8536, 11717, 1113, 2832, 4995, 2]
 
-// Module 18319 (ActivityPrivacyShareMyActivitySetting)
+// Module 18316 (ActivityPrivacyShareMyActivitySetting)
 import intl2 from "intl" /* 1113 */;
 import _modDef2832 from "module_2832" /* 2832 */;
 import UserSettings from "UserSettings" /* 4995 */;

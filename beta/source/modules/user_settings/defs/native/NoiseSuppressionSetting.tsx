@@ -1,9 +1,9 @@
-// Module ID: 17605
-// Function ID: 17606
+// Module ID: 17602
+// Function ID: 17603
 // Name: NoiseSuppressionSetting
 // Dependencies: [2130, 8536, 504, 12154, 11717, 1113, 2]
 
-// Module 17605 (NoiseSuppressionSetting)
+// Module 17602 (NoiseSuppressionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;

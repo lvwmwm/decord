@@ -1,9 +1,9 @@
-// Module ID: 14489
-// Function ID: 14490
+// Module ID: 14485
+// Function ID: 14486
 // Name: ChannelSafeAreaBottomAnimated
 // Dependencies: [19, 17, 21, 11410, 1652, 11422, 11420, 13992, 2]
 
-// Module 14489 (ChannelSafeAreaBottomAnimated)
+// Module 14485 (ChannelSafeAreaBottomAnimated)
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import useChannelSafeAreaHeightSharedValue from "useChannelSafeAreaHeightSharedValue" /* 11410 */;

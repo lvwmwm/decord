@@ -1,10 +1,10 @@
-// Module ID: 18368
-// Function ID: 18369
+// Module ID: 18365
+// Function ID: 18366
 // Name: AccountSwitcherListItem
 // Dependencies: [19, 17, 1404, 5227, 1385, 14243, 21, 5170, 504, 7434, 575, 5891, 5783, 1113, 7076, 5232, 1187, 5226, 2]
 // Exports: default
 
-// Module 18368 (AccountSwitcherListItem)
+// Module 18365 (AccountSwitcherListItem)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -123,7 +123,7 @@ export default function AccountSwitcherListItem(arg0) {
     const merged = Object.assign(sortHandlers);
     items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: items3 };
-    const obj9 = { user: obj3, guildId: "r" };
+    const obj9 = { user: obj3, guildId: "flexDirection" };
     items3 = [React4(native.Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: items5 };
     const obj11 = { style: tmp.tagContainer, children: items4 };

@@ -1,14 +1,14 @@
-// Module ID: 18102
-// Function ID: 18103
+// Module ID: 18099
+// Function ID: 18100
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [19, 17, 21, 5170, 575, 1499, 1627, 7159, 17944, 7071, 16783, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 1499, 1627, 7159, 17941, 7071, 16780, 2]
 
-// Module 18102 (DevToolsPerformanceTestingScreen)
+// Module 18099 (DevToolsPerformanceTestingScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 16783 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 16780 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

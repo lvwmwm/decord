@@ -1,17 +1,13 @@
 // Module ID: 16474
 // Function ID: 16475
-// Dependencies: [16473]
+// Dependencies: []
 
 // Module 16474
-import _mod16473 from "module_16473" /* 16473 */;
 
-
-export default (arg0, value) => {
+export default (fn) => {
   try {
-    const obj = { value, configurable: true, writable: true };
-    defineProperty(_mod16473, arg0, obj);
+    return fn();
   } catch (err) {
-    _mod16473[arg0] = value;
+    return true;
   }
-  return value;
 };

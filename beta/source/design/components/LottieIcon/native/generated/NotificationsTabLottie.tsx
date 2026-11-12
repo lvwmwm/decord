@@ -1,13 +1,13 @@
-// Module ID: 16175
-// Function ID: 16176
+// Module ID: 16172
+// Function ID: 16173
 // Name: NotificationsTabLottie
-// Dependencies: [19, 21, 12115, 16176, 2]
+// Dependencies: [19, 21, 12115, 16173, 2]
 // Exports: NotificationsTabLottie
 
-// Module 16175 (NotificationsTabLottie)
+// Module 16172 (NotificationsTabLottie)
 import Fragment from "Fragment" /* 21 */;
 import LottieIcon2 from "LottieIcon" /* 12115 */;
-import AssetRegistry from "AssetRegistry" /* 16176 */;
+import AssetRegistry from "AssetRegistry" /* 16173 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

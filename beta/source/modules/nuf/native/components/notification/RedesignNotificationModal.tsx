@@ -1,10 +1,10 @@
-// Module ID: 18417
-// Function ID: 18418
+// Module ID: 18414
+// Function ID: 18415
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 14239, 14240, 1072, 21, 5170, 575, 14241, 1252, 14242, 14527, 18418, 1113, 2]
+// Dependencies: [19, 17, 14239, 14240, 1072, 21, 5170, 575, 14241, 1252, 14242, 14523, 18415, 1113, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 18417 (RedesignNotificationModal)
+// Module 18414 (RedesignNotificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,7 +13,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14239 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14241 */;
 import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14242 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 14527 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 14523 */;
 import react from "react" /* 19 */;
 import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14240 */;
 import createStyles from "createStyles" /* 5170 */;

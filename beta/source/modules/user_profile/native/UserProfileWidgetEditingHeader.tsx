@@ -1,10 +1,10 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 16907
+// Function ID: 16908
 // Name: UserProfileWidgetEditingHeader
-// Dependencies: [19, 17, 502, 8858, 21, 5170, 575, 504, 5783, 1113, 5790, 9692, 8866, 5406, 15233, 2118, 8131, 12717, 2]
+// Dependencies: [19, 17, 502, 8858, 21, 5170, 575, 504, 5783, 1113, 5790, 9692, 8866, 5406, 15230, 2118, 8131, 12717, 2]
 // Exports: default
 
-// Module 16910 (UserProfileWidgetEditingHeader)
+// Module 16907 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -61,7 +61,7 @@ export default function UserProfileWidgetEditingHeader() {
       const obj2 = { userId, action: constants.PRESS_ADD_WIDGET };
       const result = obj.trackUserProfileEditAction(obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(15233, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
+      obj3.openLazy(asyncRequire(15230, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
     }
   };
   const Button = require("components/Button/Button").Button;

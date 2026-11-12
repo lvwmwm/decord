@@ -1,9 +1,9 @@
-// Module ID: 14481
-// Function ID: 14482
+// Module ID: 14477
+// Function ID: 14478
 // Name: NonRecycledViewNativeComponent
 // Dependencies: [65, 2]
 
-// Module 14481 (NonRecycledViewNativeComponent)
+// Module 14477 (NonRecycledViewNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

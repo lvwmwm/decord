@@ -1,10 +1,10 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15138
+// Function ID: 15139
 // Name: useStreamRequestActivities
 // Dependencies: [19, 502, 5922, 6657, 9861, 9405, 504, 2]
 // Exports: default, getStreamRequestActivities
 
-// Module 15141 (useStreamRequestActivities)
+// Module 15138 (useStreamRequestActivities)
 import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9405 */;
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9861 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 20127
 // Function ID: 20128
 // Name: getRuleInfo
-// Dependencies: [13557, 8766, 20128, 20130, 18246, 12300, 20131, 5883, 2]
+// Dependencies: [13557, 8766, 20128, 20130, 18243, 12300, 20131, 5883, 2]
 // Exports: getRuleInfo
 
 // Module 20127 (getRuleInfo)
@@ -9,7 +9,7 @@ import LinkIcon from "LinkIcon" /* 5883 */;
 import AtIcon from "AtIcon" /* 8766 */;
 import RobotIcon from "RobotIcon" /* 12300 */;
 import Constants from "Constants" /* 13557 */;
-import MenuIcon from "MenuIcon" /* 18246 */;
+import MenuIcon from "MenuIcon" /* 18243 */;
 import ChannelListPlusIcon from "ChannelListPlusIcon" /* 20128 */;
 import AssetRegistryDefault from "AssetRegistry" /* 20130 */;
 import BaseRuleInfo from "BaseRuleInfo" /* 20131 */;

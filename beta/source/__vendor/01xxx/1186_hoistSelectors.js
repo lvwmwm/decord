@@ -147,7 +147,7 @@ export function isStructurallySame(arr, arr2) {
           let tmp7 = globalThis;
           let _Object = Object;
           let keys = Object.keys(value.options);
-          let item = keys.forEach(f123091);
+          let item = keys.forEach(f123106);
         }
         if (tmp(tmp2[1]).isTagElement(value)) {
           let tmp9 = value;

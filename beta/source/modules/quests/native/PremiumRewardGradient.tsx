@@ -1,10 +1,10 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17495
+// Function ID: 17496
 // Name: PremiumRewardGradient
 // Dependencies: [19, 17, 21, 5170, 5167, 575, 5756, 5401, 5178, 5747, 7137, 2]
 // Exports: default
 
-// Module 17498 (PremiumRewardGradient)
+// Module 17495 (PremiumRewardGradient)
 import nativeDefault from "native" /* 575 */;
 import design_shared from "design/shared" /* 5178 */;
 import useThemeDefault from "useTheme" /* 5401 */;

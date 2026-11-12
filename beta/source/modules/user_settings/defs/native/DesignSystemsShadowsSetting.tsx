@@ -1,9 +1,9 @@
-// Module ID: 18148
-// Function ID: 18149
+// Module ID: 18145
+// Function ID: 18146
 // Name: DesignSystemsShadowsSetting
-// Dependencies: [8536, 1072, 11717, 18146, 2]
+// Dependencies: [8536, 1072, 11717, 18143, 2]
 
-// Module 18148 (DesignSystemsShadowsSetting)
+// Module 18145 (DesignSystemsShadowsSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;

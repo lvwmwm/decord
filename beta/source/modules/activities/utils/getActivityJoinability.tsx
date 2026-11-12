@@ -1,10 +1,10 @@
-// Module ID: 15157
-// Function ID: 15158
+// Module ID: 15154
+// Function ID: 15155
 // Name: getActivityJoinability
-// Dependencies: [1072, 11881, 11878, 11882, 5831, 11985, 11915, 7580, 15158, 1377, 11875, 11876, 11877, 2]
+// Dependencies: [1072, 11881, 11878, 11882, 5831, 11985, 11915, 7580, 15155, 1377, 11875, 11876, 11877, 2]
 // Exports: default
 
-// Module 15157 (getActivityJoinability)
+// Module 15154 (getActivityJoinability)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
 import hasFlagDefault from "hasFlag" /* 7580 */;
@@ -16,7 +16,7 @@ import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivit
 import getFrameSurfaces from "getFrameSurfaces" /* 11882 */;
 import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11915 */;
 import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11985 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 15158 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 15155 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

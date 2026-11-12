@@ -1,7 +1,7 @@
 // Module ID: 2129
 // Function ID: 2130
 // Name: RTCControlSocket
-// Dependencies: [1359, 2130, 5929, 1089, 5953, 559, 3, 5933, 16307, 6121, 1377, 38, 2]
+// Dependencies: [1359, 2130, 5929, 1089, 5953, 559, 3, 5933, 16304, 6121, 1377, 38, 2]
 
 // Module 2129 (RTCControlSocket)
 import LoggerDefault from "Logger" /* 3 */;
@@ -113,7 +113,7 @@ class RTCControlSocket extends TypedEventEmitter {
       const obj = TimeUtils;
       self.handleClose(false, 0, "The connection timed out after " + obj.now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
     }, closure_13);
-    obj2 = self(16307);
+    obj2 = self(16304);
     obj3 = { location: "RTCControlSocket", supportsSfuUpdate: MediaEngineStore.supports(constants.UDP_ENDPOINT_UPDATE) };
     const webSocket = new WebSocket("" + self.url + "?v=" + obj2.getVoiceGatewayProtocolVersion(obj3));
     self.webSocket = webSocket;

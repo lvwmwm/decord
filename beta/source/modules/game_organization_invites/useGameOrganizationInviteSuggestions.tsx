@@ -1,10 +1,10 @@
-// Module ID: 16132
-// Function ID: 16133
+// Module ID: 16129
+// Function ID: 16130
 // Name: useGameOrganizationInviteSuggestions
 // Dependencies: [5, 32, 19, 9246, 5112, 1385, 9233, 11813, 504, 9263, 2]
 // Exports: default
 
-// Module 16132 (useGameOrganizationInviteSuggestions)
+// Module 16129 (useGameOrganizationInviteSuggestions)
 import InstantInviteUtils from "InstantInviteUtils" /* 9233 */;
 import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9263 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -33,7 +33,7 @@ export default function useGameOrganizationInviteSuggestions() {
   let closure_2;
   let hasNoFriends;
   let isLoading;
-  const f111059 = (item) => item.item;
+  const f111055 = (item) => item.item;
   let obj = require("get initialized");
   const items = [InviteSuggestionsStore, RelationshipStore, UserStore];
   const users = obj.useStateFromStoresArray(items, () => {
@@ -45,7 +45,7 @@ export default function useGameOrganizationInviteSuggestions() {
     }
     closure_1 = closure_7;
     const found = inviteSuggestionRows.filter(closure_9);
-    const mapped = found.map(f111059);
+    const mapped = found.map(f111055);
     return mapped.filter((item) => closure_2_1(ref[7])(item, id, closure_1));
   });
   [isLoading, _require] = react.useState(true);
@@ -72,7 +72,7 @@ export default function useGameOrganizationInviteSuggestions() {
           }
           closure_1 = closure_7;
           const found = inviteSuggestionRows.filter(closure_9);
-          const mapped = found.map(f111059);
+          const mapped = found.map(f111055);
           return mapped.filter((item) => closure_2_1(ref[7])(item, id, closure_1));
         }
         if (c5 === 2) {

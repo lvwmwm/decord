@@ -1,15 +1,9 @@
 // Module ID: 16494
 // Function ID: 16495
-// Dependencies: [16473]
+// Dependencies: [16480]
 
 // Module 16494
-import _mod16473 from "module_16473" /* 16473 */;
+import _mod16480 from "module_16480" /* 16480 */;
 
-const tmp = _mod16473.navigator && _mod16473.navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
-}
 
-export default str;
+export default (arg0) => Object(_mod16480(arg0));

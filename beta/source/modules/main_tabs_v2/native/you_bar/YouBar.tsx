@@ -1,9 +1,9 @@
-// Module ID: 18825
-// Function ID: 18826
+// Module ID: 18822
+// Function ID: 18823
 // Name: YouBar
-// Dependencies: [5, 19, 17, 5194, 5203, 1385, 17433, 1072, 5016, 21, 5170, 575, 17425, 13992, 11412, 11421, 11734, 17432, 17436, 1652, 5793, 9035, 9798, 18826, 16967, 504, 8893, 18832, 5347, 5408, 1380, 12, 18833, 2118, 5346, 11682, 7627, 5003, 1113, 7668, 11415, 5452, 1705, 1187, 18847, 18848, 18849, 18854, 18856, 18858, 14266, 5231, 18859, 18860, 2]
+// Dependencies: [5, 19, 17, 5194, 5203, 1385, 17430, 1072, 5016, 21, 5170, 575, 17422, 13992, 11412, 11421, 11734, 17429, 17433, 1652, 5793, 9035, 9798, 18823, 16964, 504, 8893, 18829, 5347, 5408, 1380, 12, 18830, 2118, 5346, 11682, 7627, 5003, 1113, 7668, 11415, 5452, 1705, 1187, 18844, 18845, 18846, 18851, 18853, 18855, 14266, 5231, 18856, 18857, 2]
 
-// Module 18825 (YouBar)
+// Module 18822 (YouBar)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,15 +18,15 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
 import transitionToGuild from "transitionToGuild" /* 7627 */;
 import openUserSettings from "openUserSettings" /* 7668 */;
 import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 11682 */;
-import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18859 */;
-import ConnectionBannerDefault from "ConnectionBanner" /* 18860 */;
+import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18856 */;
+import ConnectionBannerDefault from "ConnectionBanner" /* 18857 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5194 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
 import UserStore from "UserStore" /* 1385 */;
-import YouBarConstants from "YouBarConstants" /* 17433 */;
+import YouBarConstants from "YouBarConstants" /* 17430 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
@@ -45,6 +45,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let obj2;
+let obj3;
 let rect;
 let rect1;
 let tmp;
@@ -56,12 +57,13 @@ const ME = Constants.ME;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: closure_18, jsxs: closure_19, Fragment: closure_20 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { dockRimRow: rect, dockRim: { bottom: 0 }, youRow: rect1, youRowRight: { flexDirection: "row", gap: 8 }, youPressable: obj2 };
+let obj = { dockRimRow: rect, dockRim: { bottom: 0 }, youRow: rect1, youRowRight: obj2, youPressable: obj3 };
 rect = { position: "absolute", left: 0, right: 0, bottom: 0, elevation: nativeDefault.shadows.SHADOW_HIGH.elevation };
 createStyles = createStyles.createStyles;
 rect1 = { position: "absolute", left: 0, right: 0, bottom: 0, flexDirection: "row", alignItems: "center", backgroundColor: "transparent" };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
-obj2 = { flex: 1, marginRight: nativeDefault.space.PX_12, borderRadius: nativeDefault.modules.mobile.YOU_BAR_BORDER_RADIUS };
+obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
+obj3 = { flex: 1, marginRight: nativeDefault.space.PX_12, borderRadius: nativeDefault.modules.mobile.YOU_BAR_BORDER_RADIUS };
 let closure_21 = createStyles(obj);
 let closure_22 = { code: "(function YouBarTsx1(){let[withSpring,barMarginBottom,connectionBannerHeight,marginSpringConfig,isPressedValue,isCondensed,YOU_BAR_SPRING_CONFIG]=this.__closure;return{marginBottom:withSpring(barMarginBottom+connectionBannerHeight,marginSpringConfig),transform:[{scale:withSpring(isPressedValue.get()&&!isCondensed?0.98:1,YOU_BAR_SPRING_CONFIG)}]};})" };
 let closure_23 = { code: "(function YouBarTsx2(){let[startingTranslateX,translateX]=this.__closure;startingTranslateX.set(translateX.get());})" };

@@ -1,7 +1,7 @@
 // Module ID: 9805
 // Function ID: 9806
 // Name: hooks/QuestHooks
-// Dependencies: [5, 32, 19, 7952, 2186, 5019, 6659, 1385, 7954, 7956, 7955, 6869, 1072, 1387, 504, 9797, 9806, 1377, 6960, 7962, 1089, 7976, 7978, 7980, 9823, 12, 1251, 9837, 9838, 7951, 9826, 9840, 2185, 9842, 6877, 14952, 7981, 7424, 14955, 6876, 14956, 1113, 2024, 6643, 6872, 7972, 5401, 5177, 9818, 2171, 14957, 9828, 1252, 1380, 14958, 14959, 4995, 7599, 7592, 2]
+// Dependencies: [5, 32, 19, 7952, 2186, 5019, 6659, 1385, 7954, 7956, 7955, 6869, 1072, 1387, 504, 9797, 9806, 1377, 6960, 7962, 1089, 7976, 7978, 7980, 9823, 12, 1251, 9837, 9838, 7951, 9826, 9840, 2185, 9842, 6877, 14949, 7981, 7424, 14952, 6876, 14953, 1113, 2024, 6643, 6872, 7972, 5401, 5177, 9818, 2171, 14954, 9828, 1252, 1380, 14955, 14956, 4995, 7599, 7592, 2]
 // Exports: useClaimedCollectibleRewardMessage, useClaimedQuests, useConnectedAccounts, useConnectedConsoleLinkOnClick, useCosponsoredLogotypeAsset, useFetchQuestHomeBounties, useFilteredQuests, useGetOrFetchApplicationForConsoleQuests, useIsPreviewerOnAnyQuest, useIsQuestAccessSuspended, useIsQuestEligibleForMembersListPopout, useIsQuestExpired, useIsQuestProgressingOnConsole, useIsQuestProgressingOnDesktop, useIsQuestProgressingVideoQuest, useLaunchInGameActivityQuest, useManuallyStartConsoleQuest, useNonNullableQuest, useOnOpenGameClick, useProgressState, useQuest, useQuestBarImpressionSurvey, useQuestBarOrDockModeChangeTracking, useQuestCompletionDetails, useQuestForMemberListSocialEntryPoint, useQuestFormattedDate, useQuestHomeBounties, useQuestHomeFilterOptions, useQuestHomeHeroShelf, useQuestHomeSortOptions, useQuestHomeSortingFilteringAnalytics, useQuestHowToHelpArticle, useQuestOrbRewardMultiplier, useQuestPreviewActions, useQuestWarningTips, useQuestsWithPreviewAccess, useSelectedTaskPlatform, useShouldShowBonusOrbsUX, useShouldShowPreviewToolTab, useShouldShowQuestPreviewOverrides, useShouldShowQuestsActivityPanelItem, useThirdPartyTaskDetails, useWaitingForConsoleConnection
 
 // Module 9805 (hooks/QuestHooks)
@@ -33,9 +33,9 @@ import QuestActionCreators from "QuestActionCreators" /* 9806 */;
 import AssetUtils from "AssetUtils" /* 9818 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9823 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9842 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 14955 */;
-import QuestConsoleStartError from "QuestConsoleStartError" /* 14956 */;
-import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 14957 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 14952 */;
+import QuestConsoleStartError from "QuestConsoleStartError" /* 14953 */;
+import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 14954 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

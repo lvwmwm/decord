@@ -1,9 +1,9 @@
-// Module ID: 17599
-// Function ID: 17600
+// Module ID: 17596
+// Function ID: 17597
 // Name: VoiceSensitivitySetting
 // Dependencies: [17, 2130, 8536, 21, 5170, 504, 12145, 6079, 11717, 1113, 2]
 
-// Module 17599 (VoiceSensitivitySetting)
+// Module 17596 (VoiceSensitivitySetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;

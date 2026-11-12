@@ -1,10 +1,10 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 15995
+// Function ID: 15996
 // Name: getSoundFromMessage
 // Dependencies: [6226, 6225, 7623, 1095, 2]
 // Exports: default
 
-// Module 15998 (getSoundFromMessage)
+// Module 15995 (getSoundFromMessage)
 import MessageReferenceTypes from "MessageReferenceTypes" /* 1095 */;
 import SoundboardConstants from "SoundboardConstants" /* 6225 */;
 import SoundboardTypes from "SoundboardTypes" /* 7623 */;

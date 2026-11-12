@@ -1,9 +1,9 @@
-// Module ID: 18159
-// Function ID: 18160
+// Module ID: 18156
+// Function ID: 18157
 // Name: DesignSystemsTextInputSetting
-// Dependencies: [8536, 1072, 11717, 18160, 2]
+// Dependencies: [8536, 1072, 11717, 18157, 2]
 
-// Module 18159 (DesignSystemsTextInputSetting)
+// Module 18156 (DesignSystemsTextInputSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;

@@ -1,10 +1,10 @@
-// Module ID: 19110
-// Function ID: 19111
+// Module ID: 19107
+// Function ID: 19108
 // Name: Separators
 // Dependencies: [19, 17, 9950, 21, 5170, 2]
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 19110 (Separators)
+// Module 19107 (Separators)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

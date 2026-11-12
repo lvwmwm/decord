@@ -1,10 +1,10 @@
-// Module ID: 18540
-// Function ID: 18541
+// Module ID: 18537
+// Function ID: 18538
 // Name: useFavoritesGuildCategoryFullNotice
 // Dependencies: [5022, 5032, 1072, 504, 10983, 5044, 1113, 3608, 2]
 // Exports: default
 
-// Module 18540 (useFavoritesGuildCategoryFullNotice)
+// Module 18537 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef3608 from "module_3608" /* 3608 */;

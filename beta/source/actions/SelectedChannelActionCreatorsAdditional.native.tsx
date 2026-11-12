@@ -1,7 +1,7 @@
 // Module ID: 6794
 // Function ID: 6795
 // Name: SelectedChannelActionCreatorsAdditional
-// Dependencies: [5019, 5041, 6795, 5102, 5073, 5203, 1385, 5835, 6796, 6210, 6797, 5868, 6798, 6799, 5406, 6852, 2118, 6089, 15843, 1266, 572, 2]
+// Dependencies: [5019, 5041, 6795, 5102, 5073, 5203, 1385, 5835, 6796, 6210, 6797, 5868, 6798, 6799, 5406, 6852, 2118, 6089, 15840, 1266, 572, 2]
 // Exports: getChannelSelectionOrigin, selectVoiceChannelAdditional
 
 // Module 6794 (SelectedChannelActionCreatorsAdditional)

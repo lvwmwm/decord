@@ -1,10 +1,10 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14378
+// Function ID: 14379
 // Name: useGuildPowerupCardFooterConfig
 // Dependencies: [5041, 5378, 1072, 14347, 504, 5381, 14343, 2]
 // Exports: default
 
-// Module 14382 (useGuildPowerupCardFooterConfig)
+// Module 14378 (useGuildPowerupCardFooterConfig)
 import Constants from "Constants" /* 1072 */;
 import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14347 */;
 import GuildStore from "GuildStore" /* 5041 */;

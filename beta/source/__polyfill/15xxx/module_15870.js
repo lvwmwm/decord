@@ -3,5 +3,17 @@
 // Dependencies: []
 
 // Module 15870
-
-export default { 2: "need dictionary", 1: "stream end", 0: "", "-1": "file error", "-2": "stream error", "-3": "data error", "-4": "insufficient memory", "-5": "buffer error", "-6": "incompatible version" };
+let num = 0;
+let num2 = 0;
+let tmp2 = num;
+do {
+  let tmp5;
+  do {
+    let tmp3 = tmp2 >>> 1;
+    tmp5 = 1 & tmp2 ? 3988292384 ^ tmp3 : tmp3;
+    num2 = num2 + 1;
+    tmp2 = tmp5;
+  } while (num2 < 8);
+  tmp[num] = tmp5;
+  num = num + 1;
+} while (num < 256);

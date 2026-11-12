@@ -1,10 +1,10 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16800
+// Function ID: 16801
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 5170, 575, 5452, 16800, 1705, 1652, 5747, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 5452, 16797, 1705, 1652, 5747, 2]
 // Exports: default
 
-// Module 16803 (HuePicker)
+// Module 16800 (HuePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

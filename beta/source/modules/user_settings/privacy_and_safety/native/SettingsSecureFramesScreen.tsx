@@ -1,10 +1,10 @@
-// Module ID: 18259
-// Function ID: 18260
+// Module ID: 18256
+// Function ID: 18257
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1385, 1072, 21, 5170, 575, 504, 18260, 5226, 8856, 7420, 8854, 7071, 1187, 1113, 7080, 5756, 1499, 18258, 5783, 7390, 9378, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5170, 575, 504, 18257, 5226, 8856, 7420, 8854, 7071, 1187, 1113, 7080, 5756, 1499, 18255, 5783, 7390, 9378, 2]
 // Exports: default
 
-// Module 18259 (SettingsSecureFramesScreen)
+// Module 18256 (SettingsSecureFramesScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

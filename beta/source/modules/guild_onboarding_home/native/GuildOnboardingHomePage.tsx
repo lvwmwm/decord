@@ -1,10 +1,10 @@
-// Module ID: 19026
-// Function ID: 19027
+// Module ID: 19023
+// Function ID: 19024
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 5386, 7495, 8443, 1072, 21, 1652, 504, 7497, 14099, 1252, 5921, 6990, 19027, 19028, 19032, 19036, 19037, 19040, 7494, 2]
+// Dependencies: [19, 5386, 7495, 8443, 1072, 21, 1652, 504, 7497, 14099, 1252, 5921, 6990, 19024, 19025, 19029, 19033, 19034, 19037, 7494, 2]
 // Exports: default
 
-// Module 19026 (GuildOnboardingHomePage)
+// Module 19023 (GuildOnboardingHomePage)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
@@ -108,21 +108,21 @@ function GuildOnboardingHomePage(guildId) {
     let obj4 = { guildId, hideDescription: tmp5 };
     const obj3 = { guildId, scrollValue: sharedValue, children: items3 };
     items3 = [, ];
-    const tmp4Result = stateFromStores(19027);
-    items3[0] = closure_9(stateFromStores(19028), obj4);
+    const tmp4Result = stateFromStores(19024);
+    items3[0] = closure_9(stateFromStores(19025), obj4);
     if (tmp5) {
       let tmp15 = closure_10;
       const obj5 = { children: items4 };
       const obj6 = { guildId };
-      items4 = [tmp13(tmp4(19032), obj6), , ];
+      items4 = [tmp13(tmp4(19029), obj6), , ];
       const obj7 = { guildId };
-      items4[1] = closure_9(stateFromStores(19036), obj7);
+      items4[1] = closure_9(stateFromStores(19033), obj7);
       const obj8 = { guildId };
-      items4[2] = closure_9(stateFromStores(19037), obj8);
+      items4[2] = closure_9(stateFromStores(19034), obj8);
       tmp13Result = tmp11(closure_10, obj5);
     } else {
       const obj9 = { guildId };
-      tmp13Result = tmp13(tmp4(19040), obj9);
+      tmp13Result = tmp13(tmp4(19037), obj9);
     }
     items3[1] = tmp13Result;
     tmp11Result2 = tmp11(tmp4Result, obj3);

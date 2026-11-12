@@ -1,10 +1,10 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 15616
+// Function ID: 15617
 // Name: usePremiumPrimaryGradientColors
 // Dependencies: [5756, 575, 2]
 // Exports: default
 
-// Module 15619 (usePremiumPrimaryGradientColors)
+// Module 15616 (usePremiumPrimaryGradientColors)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5756 */;
 import size from "module_2" /* 2 */;

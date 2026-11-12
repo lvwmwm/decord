@@ -1,10 +1,10 @@
-// Module ID: 17279
-// Function ID: 17280
+// Module ID: 17276
+// Function ID: 17277
 // Name: BountiesModalTransitionsRefactorExperiment
 // Dependencies: [1449, 2]
 // Exports: useIsBountiesModalTransitionsRefactorEnabled
 
-// Module 17279 (BountiesModalTransitionsRefactorExperiment)
+// Module 17276 (BountiesModalTransitionsRefactorExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
