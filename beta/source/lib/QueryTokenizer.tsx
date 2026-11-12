@@ -1,9 +1,9 @@
-// Module ID: 14126
-// Function ID: 14127
+// Module ID: 14158
+// Function ID: 14159
 // Name: QueryTokenizer
 // Dependencies: [2]
 
-// Module 14126 (QueryTokenizer)
+// Module 14158 (QueryTokenizer)
 import size from "module_2" /* 2 */;
 
 let map;

@@ -161,7 +161,7 @@ export function instrumentOpenAiClient(arg0, arg1) {
                     stream = undefined;
                     c3 = 1;
                     c4 = 1;
-                    return { value: "flexDirection", done: null };
+                    return { value: "flexDirection", done: true };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

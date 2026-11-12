@@ -1,16 +1,16 @@
-// Module ID: 13881
-// Function ID: 13882
+// Module ID: 13913
+// Function ID: 13914
 // Name: CheckpointStatNumber
-// Dependencies: [19, 17, 6199, 21, 5140, 5281, 13878, 2]
+// Dependencies: [19, 17, 6231, 21, 5170, 5313, 13910, 2]
 // Exports: default, getCheckpointStatNumberWidth, isCheckpointStatNumberShrunk
 
-// Module 13881 (CheckpointStatNumber)
+// Module 13913 (CheckpointStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointNumbersRive2 from "CheckpointNumbersRive" /* 5281 */;
-import CheckpointConstants from "CheckpointConstants" /* 6199 */;
+import CheckpointNumbersRive2 from "CheckpointNumbersRive" /* 5313 */;
+import CheckpointConstants from "CheckpointConstants" /* 6231 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 function getTextPixels(value) {

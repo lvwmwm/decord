@@ -1,34 +1,34 @@
-// Module ID: 19961
-// Function ID: 19962
+// Module ID: 19999
+// Function ID: 20000
 // Name: NewUserUtils
-// Dependencies: [5, 18336, 6627, 1385, 14208, 1072, 14485, 8009, 18384, 14487, 1377, 8032, 18385, 14209, 1242, 18761, 9198, 572, 1500, 14490, 6799, 19960, 1099, 14596, 2]
+// Dependencies: [5, 18374, 6659, 1385, 14240, 1072, 14517, 8042, 18422, 14519, 1377, 8065, 18423, 14241, 1242, 18799, 9231, 572, 1500, 14522, 6831, 19998, 1099, 14628, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 19961 (NewUserUtils)
+// Module 19999 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import Link from "Link" /* 1500 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8009 */;
-import react_nativeDefault from "react-native" /* 8032 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9198 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14485 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14490 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14596 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18384 */;
-import InterestPickerExperiment from "InterestPickerExperiment" /* 18761 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 19960 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
+import react_nativeDefault from "react-native" /* 8065 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9231 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14517 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14522 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14628 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18422 */;
+import InterestPickerExperiment from "InterestPickerExperiment" /* 18799 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 19998 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 18336 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 18374 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
 import UserStore from "UserStore" /* 1385 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14208 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14240 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c2, c4, c5, registration;
+let _require, c0, c1, c2, c4, c5, closure_5, registration;
 
 let c10;
 let c9;
@@ -119,74 +119,142 @@ function getNextOnboardingStep() {
 obj = function _getNextOnboardingStep() {
   obj = _asyncToGenerator(async (arg0, lastShownStepIndex) => {
     let closure_4;
-    let closure_5;
     let closure_0 = arg0;
     let closure_2 = arg2;
     let c6 = 0;
     let c7 = 0;
     const iter = (async (arg0, value) => {
-      let tmp5;
-      let flag = closure_0;
-      if (closure_0 === undefined) {
-        flag = false;
-      }
-      let sum = closure_2;
-      await "flexDirection";
-      registration = key;
-      if (key == null) {
-        registration = "registration";
-      }
-      let closure_3 = registration;
-      sum = sum + 1;
-      if (sum >= closure_133_18.length) {
-        closure_133_19(closure_3);
-        return { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
-      }
-      const shouldShowStep = tmp.shouldShowStep;
-      let transitionStep = tmp.transitionStep;
-      await shouldShowStep();
-      if (2 === c6) {
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c7 = 3;
           return { value, done: true };
-        } else if (value) {
-          let obj12;
-          lastShownStepIndex = sum;
-          const obj10 = { skip: flag };
-          const obj3 = closure_133_0(closure_133_2[19]);
-          obj3.trackNUFStep(closure_3, closure_133_18[sum].key, obj10);
-          if (null != transitionStep) {
-            closure_133_19(closure_133_18[sum].key);
-            transitionStep();
-            obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
-          } else {
-            obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
-            transitionStep = undefined;
-            if (closure_133_18[sum] != null) {
-              transitionStep = tmp25.transitionStep;
-            }
-          }
-          tmp5 = obj12;
         } else {
-          c6 = 3;
-          c7 = 1;
-          const obj13 = { value: closure_133_20(flag, lastShownStepIndex, sum), done: false };
-          return obj13;
+          return { value: "HermesInternal", done: null };
         }
-      } else if (arg0 === 1) {
-        c7 = 3;
-        throw value;
       } else {
-        tmp5 = value;
-        if (arg0 === 2) {
+        try {
+          let sum;
+          let flag;
+          let closure_3;
+          let tmp;
+          let key2;
+          let shouldShowStep;
+          let transitionStep;
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              closure_5 = tmp4;
+              lastShownStepIndex = undefined;
+              sum = undefined;
+              flag = closure_0;
+              if (closure_0 === undefined) {
+                flag = false;
+              }
+              sum = closure_2;
+              closure_3 = undefined;
+              tmp = undefined;
+              key2 = undefined;
+              shouldShowStep = undefined;
+              transitionStep = undefined;
+              c6 = 1;
+              c7 = 1;
+              return { value: "flexDirection", done: true };
+            }
+          } else if (1 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              let key;
+              if (closure_133_18[lastShownStepIndex] != null) {
+                key = tmp70.key;
+              }
+              registration = key;
+              if (key == null) {
+                registration = "registration";
+              }
+              closure_3 = registration;
+              sum = sum + 1;
+              if (sum >= closure_133_18.length) {
+                closure_133_19(closure_3);
+                c7 = 3;
+                return { value: { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false }, done: true };
+              } else {
+                tmp = closure_133_18[sum];
+                key2 = tmp.key;
+                shouldShowStep = tmp.shouldShowStep;
+                transitionStep = tmp.transitionStep;
+                c6 = 2;
+                c7 = 1;
+                const obj8 = { value: shouldShowStep(), done: false };
+                return obj8;
+              }
+            }
+          } else {
+            let tmp5;
+            if (2 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                return { value, done: true };
+              } else if (value) {
+                let obj12;
+                lastShownStepIndex = sum;
+                const obj10 = { skip: flag };
+                const obj3 = closure_133_0(closure_133_2[19]);
+                obj3.trackNUFStep(closure_3, key2, obj10);
+                if (null != transitionStep) {
+                  closure_133_19(key2);
+                  transitionStep();
+                  obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
+                  const obj11 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
+                } else {
+                  obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
+                  transitionStep = undefined;
+                  if (closure_133_18[sum] != null) {
+                    transitionStep = tmp25.transitionStep;
+                  }
+                }
+                tmp5 = obj12;
+              } else {
+                c6 = 3;
+                c7 = 1;
+                const obj13 = { value: closure_133_20(flag, lastShownStepIndex, sum), done: false };
+                return obj13;
+              }
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else {
+              tmp5 = value;
+              if (arg0 === 2) {
+                c7 = 3;
+                return { value, done: true };
+              }
+            }
+            c7 = 3;
+            return { value: tmp5, done: true };
+          }
+        } catch (tmp60) {
           c7 = 3;
-          return { value, done: true };
+          throw tmp60;
         }
       }
-      return tmp5;
     })();
     iter.next();
     return iter;

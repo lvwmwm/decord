@@ -1,18 +1,18 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 12099
+// Function ID: 12100
 // Name: useRaiseHandControl
-// Dependencies: [32, 19, 21, 12068, 12069, 6813, 12070, 5374, 12071, 8024, 6784, 2]
+// Dependencies: [32, 19, 21, 12100, 12101, 6846, 12102, 5406, 12103, 8057, 6816, 2]
 // Exports: default
 
-// Module 12067 (useRaiseHandControl)
+// Module 12099 (useRaiseHandControl)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6813 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
-import useLocalStorageState from "useLocalStorageState" /* 12069 */;
-import useCanRaiseHand from "useCanRaiseHand" /* 12070 */;
-import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet" /* 12071 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5406 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6816 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6846 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8057 */;
+import useLocalStorageState from "useLocalStorageState" /* 12101 */;
+import useCanRaiseHand from "useCanRaiseHand" /* 12102 */;
+import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet" /* 12103 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ export default function useRaiseHandControl(id) {
   let first;
   let shouldAgeVerifyToSpeakForCurrentUser;
   let tmp2;
-  let tmp = shouldAgeVerifyToSpeakForCurrentUser(first(12068)(id), 2);
+  let tmp = shouldAgeVerifyToSpeakForCurrentUser(first(12100)(id), 2);
   [tmp2, require] = tmp;
   let obj = useLocalStorageState;
   const tmp3 = shouldAgeVerifyToSpeakForCurrentUser(obj.useLocalStorageState("age-verification-stage-popover-dismissed", false), 2);

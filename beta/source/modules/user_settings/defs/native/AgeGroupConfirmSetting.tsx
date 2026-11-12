@@ -1,12 +1,12 @@
-// Module ID: 16949
-// Function ID: 16950
+// Module ID: 16983
+// Function ID: 16984
 // Name: AgeGroupConfirmSetting
-// Dependencies: [8503, 11685, 16947, 2]
+// Dependencies: [8536, 11717, 16981, 2]
 
-// Module 16949 (AgeGroupConfirmSetting)
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16947 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+// Module 16983 (AgeGroupConfirmSetting)
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16981 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

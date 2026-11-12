@@ -1,21 +1,21 @@
-// Module ID: 11666
-// Function ID: 11667
+// Module ID: 11698
+// Function ID: 11699
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 5140, 575, 1500, 7355, 5842, 11667, 11668, 5751, 1113, 5758, 6799, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 1500, 7388, 5874, 11699, 11700, 5783, 1113, 5790, 6831, 2]
 // Exports: default
 
-// Module 11666 (GiftCodeRedeemError)
+// Module 11698 (GiftCodeRedeemError)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import Link from "Link" /* 1500 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7388 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -48,13 +48,13 @@ export default function GiftCodeRedeemError(message) {
   const tmp6 = React3;
   const tmp9 = FastImageDefault;
   if (theme.dark) {
-    tmp8Result = tmp8(11667);
+    tmp8Result = tmp8(11699);
   } else {
-    tmp8Result = tmp8(11668);
+    tmp8Result = tmp8(11700);
   }
   items = [hasOwnProperty(tmp9, { source: tmp8Result }), , ];
   const obj4 = { variant: "heading-xl/semibold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5783).Text;
   intl = tmp2(1113).intl;
   items[1] = hasOwnProperty(Text, obj4);
   const obj5 = { variant: "body-lg/medium", style: tmp.message, children: message };
@@ -69,7 +69,7 @@ export default function GiftCodeRedeemError(message) {
       return arr.pop();
     }
   };
-  Button = tmp2(5758).Button;
+  Button = tmp2(5790).Button;
   intl2 = tmp2(1113).intl;
   items1[1] = hasOwnProperty(_false, obj6);
   return metroRequire(SafeAreaPaddingView, obj2);

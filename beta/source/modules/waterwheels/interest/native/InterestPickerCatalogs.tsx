@@ -1,10 +1,10 @@
-// Module ID: 18762
-// Function ID: 18763
+// Module ID: 18800
+// Function ID: 18801
 // Name: InterestPickerCatalogs
 // Dependencies: [2]
 // Exports: getInterestPickerCatalog
 
-// Module 18762 (InterestPickerCatalogs)
+// Module 18800 (InterestPickerCatalogs)
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,9 +1,9 @@
-// Module ID: 18470
-// Function ID: 18471
+// Module ID: 18508
+// Function ID: 18509
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 4994, 1385, 17608, 1072, 1083, 21, 18471, 18472, 5140, 575, 7387, 504, 7391, 5891, 1252, 13408, 2118, 8821, 18466, 6173, 18473, 17609, 18467, 1187, 18476, 10881, 18477, 10877, 15087, 9443, 8740, 9817, 1113, 5137, 1377, 12205, 5842, 18468, 18479, 12208, 8792, 18481, 8895, 2]
+// Dependencies: [19, 17, 5024, 1385, 17645, 1072, 1083, 21, 18509, 18510, 5170, 575, 7420, 504, 7424, 5923, 1252, 13440, 2118, 8854, 18504, 6205, 18511, 17646, 18505, 1187, 18514, 10913, 18515, 10909, 15119, 9476, 8773, 9850, 1113, 5167, 1377, 12237, 5874, 18506, 18517, 12240, 8825, 18519, 8928, 2]
 
-// Module 18470 (HappeningNowCardActivity)
+// Module 18508 (HappeningNowCardActivity)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
@@ -11,23 +11,23 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import ActivityTypes from "ActivityTypes" /* 5891 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10881 */;
-import StreamPreviewDefault from "StreamPreview" /* 12205 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12208 */;
-import isOnXboxDefault from "isOnXbox" /* 15087 */;
-import useLiveStageData from "useLiveStageData" /* 18468 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18471 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18472 */;
-import HappeningNowAvatarStack2 from "HappeningNowAvatarStack" /* 18479 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import ActivityTypes from "ActivityTypes" /* 5923 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10913 */;
+import StreamPreviewDefault from "StreamPreview" /* 12237 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12240 */;
+import isOnXboxDefault from "isOnXbox" /* 15119 */;
+import useLiveStageData from "useLiveStageData" /* 18506 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18509 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18510 */;
+import HappeningNowAvatarStack2 from "HappeningNowAvatarStack" /* 18517 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 4994 */;
+import StageInstanceStore from "StageInstanceStore" /* 5024 */;
 import UserStore from "UserStore" /* 1385 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17608 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17645 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ let obj5;
 let size;
 let tmp;
 let unpackModuleId;
-const ColorUtils = tmp(5137);
+const ColorUtils = tmp(5167);
 function IconOrPreview(arg0) {
   let activity;
   let b;
@@ -157,7 +157,7 @@ function IconOrPreview(arg0) {
       const substr = userId.slice(-1);
       tmp2Result = items[substr.charCodeAt(substr, 0) % items.length];
     } else {
-      tmp2Result = tmp2(18481);
+      tmp2Result = tmp2(18519);
     }
     assetImage = tmp2Result;
   }
@@ -367,10 +367,10 @@ const memoResult = react.memo(function ActivityCard(userId) {
     }
     track(ACTIVITY_CARD_CLICKED, obj);
     if (null != stream) {
-      const promise2 = asyncRequire(13408, dependencyMap.paths);
+      const promise2 = asyncRequire(13440, dependencyMap.paths);
       promise2.then((result) => result.default(channelId.channelId, true));
     } else {
-      const promise = asyncRequire(8821, dependencyMap.paths);
+      const promise = asyncRequire(8854, dependencyMap.paths);
       promise.then((result) => {
         const obj = { userId, localUser, sourceAnalyticsLocations };
         return result.default(obj);

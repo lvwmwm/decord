@@ -1,17 +1,17 @@
-// Module ID: 13531
-// Function ID: 13532
+// Module ID: 13563
+// Function ID: 13564
 // Name: DataUtils
 // Dependencies: [12, 2]
 // Exports: _transformMetadataToCamelCase, _transformMetadataToSnakeCase
 
-// Module 13531 (DataUtils)
+// Module 13563 (DataUtils)
 import _mod12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/DataUtils.tsx");
 
 export function _transformMetadataToCamelCase(body) {
-  const f106013 = (acc, item) => {
+  const f106123 = (acc, item) => {
     const obj = _mod12;
     const camelCaseResult = obj.camelCase(item);
     if (typeof body[item] === "object") {
@@ -22,7 +22,7 @@ export function _transformMetadataToCamelCase(body) {
         if (null != body[item]) {
           const _Object = Object;
           const keys = Object.keys(tmp3);
-          reduced = keys.reduce(f106013, {});
+          reduced = keys.reduce(f106123, {});
         }
         acc[camelCaseResult] = reduced;
       }
@@ -34,12 +34,12 @@ export function _transformMetadataToCamelCase(body) {
   if (null != body) {
     let _Object = Object;
     let keys = Object.keys(body);
-    reduced = keys.reduce(f106013, {});
+    reduced = keys.reduce(f106123, {});
   }
   return reduced;
 }
 export function _transformMetadataToSnakeCase(metadata) {
-  const f106014 = (acc, item) => {
+  const f106124 = (acc, item) => {
     const obj = _mod12;
     const snakeCaseResult = obj.snakeCase(item);
     if (typeof metadata[item] === "object") {
@@ -50,7 +50,7 @@ export function _transformMetadataToSnakeCase(metadata) {
         if (null != metadata[item]) {
           const _Object = Object;
           const keys = Object.keys(tmp3);
-          reduced = keys.reduce(f106014, {});
+          reduced = keys.reduce(f106124, {});
         }
         acc[snakeCaseResult] = reduced;
       }
@@ -63,7 +63,7 @@ export function _transformMetadataToSnakeCase(metadata) {
   if (null != metadata) {
     let _Object = Object;
     let keys = Object.keys(metadata);
-    reduced = keys.reduce(f106014, {});
+    reduced = keys.reduce(f106124, {});
   }
   return reduced;
 }

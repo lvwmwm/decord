@@ -1,31 +1,31 @@
-// Module ID: 10996
-// Function ID: 10997
+// Module ID: 11028
+// Function ID: 11029
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6897, 1385, 10997, 6899, 1072, 6831, 572, 1282, 10998, 5901, 11000, 559, 11001, 10995, 11002, 11004, 11007, 11005, 5799, 6900, 6936, 11013, 8823, 11016, 2]
+// Dependencies: [109, 5, 6930, 1385, 11029, 6932, 1072, 6864, 572, 1282, 11030, 5933, 11032, 559, 11033, 11027, 11034, 11036, 11039, 11037, 5831, 6933, 6969, 11045, 8856, 11048, 2]
 // Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, isConjureProjectUnavailable, loadMissingConjureProjects, prefetchProject, refetchProjectsAfterReconnect, refreshPreviewApplication, selectGlobalChatProject, setGuildHints, setSelectedProjectForGuild, shareConjureProject, takePrefetchedRead, updateProjectSettings
 
-// Module 10996 (ConjureActionCreators)
+// Module 11028 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5799 */;
-import ReadStateConstants from "ReadStateConstants" /* 6831 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6900 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6936 */;
-import UserActionCreators from "UserActionCreators" /* 8823 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10995 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11002 */;
-import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 11004 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11005 */;
-import createProxyTicket from "createProxyTicket" /* 11007 */;
-import conjureAppInServer from "conjureAppInServer" /* 11016 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
+import ReadStateConstants from "ReadStateConstants" /* 6864 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6969 */;
+import UserActionCreators from "UserActionCreators" /* 8856 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11027 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11034 */;
+import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 11036 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11037 */;
+import createProxyTicket from "createProxyTicket" /* 11039 */;
+import conjureAppInServer from "conjureAppInServer" /* 11048 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6897 */;
+import ReadStateStore from "ReadStateStore" /* 6930 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10997 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11029 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import size from "module_2" /* 2 */;
 
 let c2, c8, closure_14, closure_15, closure_30, closure_5, flags2, resourceIds;

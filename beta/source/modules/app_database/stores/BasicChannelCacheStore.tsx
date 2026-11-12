@@ -1,14 +1,14 @@
-// Module ID: 4990
-// Function ID: 4991
+// Module ID: 5020
+// Function ID: 5021
 // Name: BasicChannelCacheStore
-// Dependencies: [32, 4991, 3, 504, 572, 2]
+// Dependencies: [32, 5021, 3, 504, 572, 2]
 
-// Module 4990 (BasicChannelCacheStore)
+// Module 5020 (BasicChannelCacheStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4991 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 5021 */;
 import size from "module_2" /* 2 */;
 
 let tmp3 = new LoggerDefault("BasicChannelCacheStore");

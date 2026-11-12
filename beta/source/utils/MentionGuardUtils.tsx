@@ -1,14 +1,14 @@
-// Module ID: 10339
-// Function ID: 10340
+// Module ID: 10371
+// Function ID: 10372
 // Name: MentionGuardUtils
-// Dependencies: [32, 7510, 5072, 1072, 38, 7900, 2]
+// Dependencies: [32, 7543, 5102, 1072, 38, 7933, 2]
 
-// Module 10339 (MentionGuardUtils)
+// Module 10371 (MentionGuardUtils)
 import _modDef38 from "module_38" /* 38 */;
-import MessageParserDefault from "MessageParser" /* 7900 */;
+import MessageParserDefault from "MessageParser" /* 7933 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7510 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7543 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

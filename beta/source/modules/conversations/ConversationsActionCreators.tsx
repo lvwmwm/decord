@@ -1,29 +1,31 @@
-// Module ID: 9969
-// Function ID: 9970
+// Module ID: 10002
+// Function ID: 10003
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7843, 7846, 9970, 9971, 5779, 1072, 9967, 572, 1282, 7712, 9972, 7559, 7566, 2]
+// Dependencies: [5, 7876, 7879, 10003, 10004, 5811, 1072, 10000, 572, 1282, 7745, 10005, 7592, 7599, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9969 (ConversationsActionCreators)
+// Module 10002 (ConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ConversationConstants from "ConversationConstants" /* 5779 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7559 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9972 */;
+import ConversationConstants from "ConversationConstants" /* 5811 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7592 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 10005 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7843 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7846 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9970 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9971 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7876 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7879 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 10003 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 10004 */;
 import size from "module_2" /* 2 */;
 
-let _false, _undefined, closure_5, isJump, requestKey;
+let _false, _undefined, isJump, requestKey;
 
 let tmp;
-const SurveyActionTypes = tmp(7566);
+const SurveyActionTypes = tmp(7599);
 let obj = function _fetchChannelConversations() {
   obj = _asyncToGenerator(async (channelId) => {
+    let closure_4;
+    let closure_5;
     let c7 = 0;
     let c8 = 0;
     let c6 = 0;
@@ -33,163 +35,111 @@ let obj = function _fetchChannelConversations() {
       let c2;
       let c3;
       let c5;
+      let hydrateMessages;
       let limit1;
       let limit2;
       let throwOnError;
-      if (c8 === 2) {
-        c8 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      if (1 === c7) {
         if (arg0 === 1) {
+          let c8 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c8 = 3;
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          let hydrateMessages;
-          let obj7;
-          let conversations;
-          c8 = 2;
-          if (0 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              closure_5 = tmp;
-              closure_4 = tmp4;
-              channelId = undefined;
-              isJump = undefined;
-              _undefined = undefined;
-              _false = undefined;
-              limit2 = undefined;
-              c5 = undefined;
-              throwOnError = undefined;
-              hydrateMessages = undefined;
-              ({ channelId: c0, guildId: c1, direction: c2, anchor: c3, limit: limit2 } = closure_0);
-              if (limit2 === undefined) {
-                limit2 = FETCH_LIMIT;
-              }
-              ({ isJump: c5, throwOnError } = closure_0);
-              if (throwOnError === undefined) {
-                throwOnError = false;
-              }
-              hydrateMessages = tmp92.hydrateMessages;
-              requestKey = undefined;
-              obj7 = undefined;
-              conversations = undefined;
-              c7 = 1;
-              c8 = 1;
-              return { value: "flexDirection", done: null };
-            }
-          } else {
-            if (1 === c7) {
-              if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c8 = 3;
-                return { value, done: true };
-              } else {
-                const obj13 = closure_133_0(closure_133_2[7]);
-                if (obj13.isTopicalNavEnabled(isJump, "fetch_channel_conversations")) {
-                  const _HermesInternal = HermesInternal;
-                  requestKey = "" + _undefined + ":" + _false + ":" + limit2 + ":" + true === c5;
-                  if (!closure_133_4.isListFetchPending(channelId, requestKey)) {
-                    const obj6 = { type: "CHANNEL_CONVERSATIONS_FETCH_START", channelId, direction: _undefined, requestKey, isJump };
-                    isJump = c5;
-                    const dispatch = closure_133_1(closure_133_2[8]).dispatch;
-                    closure_133_1(closure_133_2[8]);
-                    if (c5 == null) {
-                      isJump = false;
-                    }
-                    dispatch(obj6);
-                    obj7 = { limit: limit2 };
-                    if (null != _false) {
-                      if ("before" === _undefined) {
-                        obj7.before = _false;
-                      } else if ("after" === _undefined) {
-                        obj7.after = _false;
-                      } else {
-                        obj7.around = _false;
-                      }
-                    }
-                    if (null != hydrateMessages) {
-                      obj7.include_messages = true;
-                      const limit = hydrateMessages.limit;
-                      _undefined = limit;
-                      const tmp59 = obj7;
-                      if (limit == null) {
-                        _undefined = undefined;
-                      }
-                      tmp59.message_limit = _undefined;
-                    }
-                    c6 = 1;
-                    const HTTP = closure_133_0(closure_133_2[9]).HTTP;
-                    const request = { url: closure_133_9.CHANNEL_CONVERSATIONS(channelId), query: obj7, oldFormErrors: true, rejectWithError: true };
-                    const get = HTTP.get;
-                    c7 = 3;
-                    c8 = 1;
-                    const obj8 = { value: get(request), done: false };
-                    return obj8;
-                  }
-                }
-              }
-            } else if (2 === c7) {
-              c6 = 0;
-              const obj9 = { type: "CHANNEL_CONVERSATIONS_FETCH_FAILURE", channelId, requestKey };
-              const obj3 = closure_133_1(closure_133_2[8]);
-              obj3.dispatch(obj9);
-              const tmp20 = throwOnError;
-              if (tmp20) {
-                const _Error = Error;
-                const self = this;
-                const self2 = this;
-                const error = new Error("Failed to fetch conversations");
-                throw error;
-              }
-            } else if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 0;
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              conversations = value.body.conversations;
-              const obj11 = { type: "CHANNEL_CONVERSATIONS_FETCH_SUCCESS", channelId, rawConversations: conversations, direction: _undefined, requestKey, anchor: _false, isJump: _false, fullyHydrated: null == limit1, selectedConversationId: closure_133_6.getSelectedConversationId(channelId) };
-              _false = c5;
-              const dispatch2 = closure_133_1(closure_133_2[8]).dispatch;
+          const obj13 = closure_133_0(closure_133_2[7]);
+          if (obj13.isTopicalNavEnabled(isJump, "fetch_channel_conversations")) {
+            const _HermesInternal = HermesInternal;
+            requestKey = "" + _undefined + ":" + _false + ":" + limit2 + ":" + true === c5;
+            if (!closure_133_4.isListFetchPending(channelId, requestKey)) {
+              const obj6 = { type: "CHANNEL_CONVERSATIONS_FETCH_START", channelId, direction: _undefined, requestKey, isJump };
+              isJump = c5;
+              const dispatch = closure_133_1(closure_133_2[8]).dispatch;
               closure_133_1(closure_133_2[8]);
               if (c5 == null) {
-                _false = false;
+                isJump = false;
               }
-              limit1 = undefined;
-              if (hydrateMessages != null) {
-                limit1 = hydrateMessages.limit;
+              dispatch(obj6);
+              const obj7 = { limit: limit2 };
+              if (null != _false) {
+                if ("before" === _undefined) {
+                  obj7.before = _false;
+                } else if ("after" === _undefined) {
+                  obj7.after = _false;
+                } else {
+                  obj7.around = _false;
+                }
               }
-              dispatch2(obj11);
-              c6 = 0;
-              c8 = 3;
-              return { value: conversations, done: true };
+              if (null != hydrateMessages) {
+                obj7.include_messages = true;
+                const limit = hydrateMessages.limit;
+                _undefined = limit;
+                const tmp59 = obj7;
+                if (limit == null) {
+                  _undefined = undefined;
+                }
+                tmp59.message_limit = _undefined;
+              }
+              c6 = 1;
+              const HTTP = closure_133_0(closure_133_2[9]).HTTP;
+              const request = { url: closure_133_9.CHANNEL_CONVERSATIONS(channelId), query: obj7, oldFormErrors: true, rejectWithError: true };
+              const get = HTTP.get;
+              c7 = 3;
+              c8 = 1;
+              const obj8 = { value: get(request), done: false };
+              return obj8;
             }
-            c8 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } catch (tmp69) {
-          if (0 === c6) {
-            c8 = 3;
-            throw tmp69;
-          } else {
-            c7 = 2;
           }
         }
+      } else if (2 === c7) {
+        c6 = 0;
+        const obj9 = { type: "CHANNEL_CONVERSATIONS_FETCH_FAILURE", channelId, requestKey };
+        const obj3 = closure_133_1(closure_133_2[8]);
+        obj3.dispatch(obj9);
+        const tmp20 = throwOnError;
+        if (tmp20) {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error("Failed to fetch conversations");
+          throw error;
+        }
+      } else if (arg0 === 1) {
+        c8 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 0;
+        c8 = 3;
+        return { value, done: true };
+      } else {
+        const conversations = value.body.conversations;
+        const obj11 = { type: "CHANNEL_CONVERSATIONS_FETCH_SUCCESS", channelId, rawConversations: conversations, direction: _undefined, requestKey, anchor: _false, isJump: _false, fullyHydrated: null == limit1, selectedConversationId: closure_133_6.getSelectedConversationId(channelId) };
+        _false = c5;
+        const dispatch2 = closure_133_1(closure_133_2[8]).dispatch;
+        closure_133_1(closure_133_2[8]);
+        if (c5 == null) {
+          _false = false;
+        }
+        limit1 = undefined;
+        if (hydrateMessages != null) {
+          limit1 = hydrateMessages.limit;
+        }
+        dispatch2(obj11);
+        c6 = 0;
+        c8 = 3;
+        return { value: conversations, done: true };
       }
+      await "HermesInternal";
+      ({ channelId: c0, guildId: c1, direction: c2, anchor: c3, limit: limit2 } = closure_0);
+      if (limit2 === undefined) {
+        limit2 = FETCH_LIMIT;
+      }
+      ({ isJump: c5, throwOnError } = closure_0);
+      if (throwOnError === undefined) {
+        throwOnError = false;
+      }
+      hydrateMessages = tmp92.hydrateMessages;
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -493,7 +443,7 @@ export function setSelectedConversation(channelId, id, arg2) {
       }
       if (null != startMessageId) {
         const obj2 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(7712);
+        const tmp6Result = tmp6(7745);
         tmp6Result.jumpToMessage(obj2);
       }
     }

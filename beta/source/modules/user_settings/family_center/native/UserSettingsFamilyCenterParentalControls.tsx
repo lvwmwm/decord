@@ -1,20 +1,20 @@
-// Module ID: 17154
-// Function ID: 17155
+// Module ID: 17188
+// Function ID: 17189
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [19, 17, 1072, 7792, 21, 5140, 575, 1499, 7387, 7412, 9069, 7226, 17115, 17133, 1113, 2664, 9902, 17155, 17156, 9059, 7793, 7355, 17157, 9294, 14436, 2]
+// Dependencies: [19, 17, 1072, 7825, 21, 5170, 575, 1499, 7420, 7445, 9102, 7259, 17149, 17167, 1113, 2664, 9935, 17189, 17190, 9092, 7826, 7388, 17191, 9327, 14468, 2]
 // Exports: default
 
-// Module 17154 (UserSettingsFamilyCenterParentalControls)
+// Module 17188 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2664 from "module_2664" /* 2664 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7793 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7825 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7826 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -60,16 +60,16 @@ export default function FamilyCenterParentalControlsSettings() {
   let tmp = closure_10();
   let obj = stackNavigation(1499);
   stackNavigation = obj.useStackNavigation();
-  const tmp6 = selectedSubPage(7387);
-  const analyticsLocations = tmp6(selectedSubPage(7412).FAMILY_CENTER).analyticsLocations;
-  const tmp7 = selectedSubPage(9069)();
+  const tmp6 = selectedSubPage(7420);
+  const analyticsLocations = tmp6(selectedSubPage(7445).FAMILY_CENTER).analyticsLocations;
+  const tmp7 = selectedSubPage(9102)();
   const width = tmp7.width;
   let num = 0;
   ({ ref, onLayout } = tmp7);
   if (undefined !== width) {
     num = width;
   }
-  const tmp2Result = stackNavigation(7226);
+  const tmp2Result = stackNavigation(7259);
   const settingNavigationRoute = tmp2Result.useSettingNavigationRoute();
   const params = settingNavigationRoute.params;
   selectedSubPage = undefined;
@@ -85,13 +85,13 @@ export default function FamilyCenterParentalControlsSettings() {
     autoOpenCreate = params2.autoOpenCreate;
   }
   dependencyMap = tmp12;
-  const tmp2Result3 = stackNavigation(17115);
+  const tmp2Result3 = stackNavigation(17149);
   const selectedTeenUser = tmp2Result3.useSelectedTeenUser();
   let id;
   if (selectedTeenUser != null) {
     id = selectedTeenUser.id;
   }
-  const tmp15 = selectedSubPage(17133)();
+  const tmp15 = selectedSubPage(17167)();
   let closure_4 = tmp15;
   ref = id.useRef(false);
   const items = [true === autoOpenCreate, id, stackNavigation];
@@ -137,14 +137,14 @@ export default function FamilyCenterParentalControlsSettings() {
     stackNavigation.setOptions({ title: "Array", headerRight: "flexDirection" });
   }, items1);
   const SCREEN_TIME_CONTROLS = FamilyCenterSubPages.SCREEN_TIME_CONTROLS;
-  const obj2 = { label: intl.string(stackNavigation(1113).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_8(selectedSubPage(17155), {}) };
+  const obj2 = { label: intl.string(stackNavigation(1113).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_8(selectedSubPage(17189), {}) };
   intl = tmp2(1113).intl;
   const items2 = [obj2, ];
-  const obj3 = { label: intl2.string(stackNavigation(1113).t.OAuOHD), id: FamilyCenterSubPages.DATA_AND_PRIVACY, page: closure_8(selectedSubPage(17156), {}) };
+  const obj3 = { label: intl2.string(stackNavigation(1113).t.OAuOHD), id: FamilyCenterSubPages.DATA_AND_PRIVACY, page: closure_8(selectedSubPage(17190), {}) };
   intl2 = tmp2(1113).intl;
   items2[1] = obj3;
-  const useSegmentedControlState = stackNavigation(9059).useSegmentedControlState;
-  const tmp2Result4 = stackNavigation(9059);
+  const useSegmentedControlState = stackNavigation(9092).useSegmentedControlState;
+  const tmp2Result4 = stackNavigation(9092);
   const obj4 = {
     items: items2,
     onPageChange(arg0) {
@@ -155,24 +155,24 @@ export default function FamilyCenterParentalControlsSettings() {
     defaultIndex: Math.max(items2.findIndex((id) => id.id === selectedSubPage), 0)
   };
   const segmentedControlState = useSegmentedControlState(obj4);
-  const AnalyticsLocationProvider = tmp2(7387).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp2(7420).AnalyticsLocationProvider;
   if (selectedSubPage === SCREEN_TIME_CONTROLS) {
     const obj5 = { value: analyticsLocations, children: closure_8(ref, obj6) };
     obj6 = { style: tmp.container, children: closure_8(SafeAreaPaddingView, obj7) };
-    obj7 = { bottom: true, style: tmp.content, children: closure_8(selectedSubPage(17157), obj8) };
-    SafeAreaPaddingView = tmp2(7355).SafeAreaPaddingView;
+    obj7 = { bottom: true, style: tmp.content, children: closure_8(selectedSubPage(17191), obj8) };
+    SafeAreaPaddingView = tmp2(7388).SafeAreaPaddingView;
     obj9 = obj5;
     obj8 = { readOnly: tmp15 };
   } else {
     obj9 = { value: analyticsLocations, children: closure_9(closure_4, obj10) };
     obj10 = { style: tmp.container, ref, onLayout, children: items3 };
-    const obj11 = { style: tmp.segmentedControlContainer, children: closure_8(stackNavigation(9294).SegmentedControl, obj12) };
+    const obj11 = { style: tmp.segmentedControlContainer, children: closure_8(stackNavigation(9327).SegmentedControl, obj12) };
     obj12 = { state: segmentedControlState };
     items3 = [closure_8(closure_4, obj11), ];
     const obj13 = { style: tmp.container, children: closure_8(ref, obj14) };
     obj14 = { children: closure_8(SafeAreaPaddingView2, obj15) };
-    obj15 = { bottom: true, style: tmp.content, children: closure_8(stackNavigation(14436).SegmentedControlPages, obj16) };
-    SafeAreaPaddingView2 = tmp2(7355).SafeAreaPaddingView;
+    obj15 = { bottom: true, style: tmp.content, children: closure_8(stackNavigation(14468).SegmentedControlPages, obj16) };
+    SafeAreaPaddingView2 = tmp2(7388).SafeAreaPaddingView;
     obj16 = { state: segmentedControlState };
     items3[1] = closure_8(closure_4, obj13);
   }

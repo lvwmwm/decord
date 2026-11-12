@@ -1,19 +1,19 @@
-// Module ID: 19135
-// Function ID: 19136
+// Module ID: 19173
+// Function ID: 19174
 // Name: ChannelsScreen
-// Dependencies: [19, 5896, 14147, 14134, 9917, 9916, 21, 14127, 504, 18633, 19065, 1113, 5149, 19069, 14141, 19128, 19061, 19073, 2]
+// Dependencies: [19, 5928, 14179, 14166, 9950, 9949, 21, 14159, 504, 18671, 19103, 1113, 5179, 19107, 14173, 19166, 19099, 19111, 2]
 
-// Module 19135 (ChannelsScreen)
+// Module 19173 (ChannelsScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
-import TrackingConstants from "TrackingConstants" /* 9916 */;
-import TrackingDefault from "Tracking" /* 14141 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
+import TrackingConstants from "TrackingConstants" /* 9949 */;
+import TrackingDefault from "Tracking" /* 14173 */;
 import react from "react" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5896 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 14147 */;
-import SearchQueryStore from "SearchQueryStore" /* 14134 */;
-import SearchConstants from "SearchConstants" /* 9917 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5928 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 14179 */;
+import SearchQueryStore from "SearchQueryStore" /* 14166 */;
+import SearchConstants from "SearchConstants" /* 9950 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

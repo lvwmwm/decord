@@ -1,10 +1,10 @@
-// Module ID: 5312
-// Function ID: 5313
+// Module ID: 5344
+// Function ID: 5345
 // Name: CustomThemesRandomUtils
 // Dependencies: [671, 2]
 // Exports: generateRandomColorOptions
 
-// Module 5312 (CustomThemesRandomUtils)
+// Module 5344 (CustomThemesRandomUtils)
 import _modDef671 from "module_671" /* 671 */;
 import size from "module_2" /* 2 */;
 

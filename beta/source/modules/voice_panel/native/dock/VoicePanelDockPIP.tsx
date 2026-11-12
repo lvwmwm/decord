@@ -1,29 +1,29 @@
-// Module ID: 19679
-// Function ID: 19680
+// Module ID: 19717
+// Function ID: 19718
 // Name: VoicePanelDockPIP
-// Dependencies: [32, 19, 17, 6898, 6901, 1385, 11363, 19486, 5781, 5805, 6902, 21, 19575, 11362, 10210, 19485, 19680, 19688, 504, 19689, 19691, 7978, 5838, 9675, 1113, 3184, 1652, 6173, 11061, 11889, 5420, 19681, 19692, 7023, 19685, 19693, 19695, 5199, 2]
+// Dependencies: [32, 19, 17, 6931, 6934, 1385, 11395, 19524, 5813, 5837, 6935, 21, 19613, 11394, 10242, 19523, 19718, 19726, 504, 19727, 19729, 8011, 5870, 9708, 1113, 3184, 1652, 6205, 11093, 11921, 5452, 19719, 19730, 7056, 19723, 19731, 19733, 5231, 2]
 
-// Module 19679 (VoicePanelDockPIP)
+// Module 19717 (VoicePanelDockPIP)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3184 from "module_3184" /* 3184 */;
-import native from "native" /* 5199 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
-import CallConstants from "CallConstants" /* 5805 */;
-import toastUtils from "toastUtils" /* 5838 */;
-import FramesConstants from "FramesConstants" /* 6902 */;
-import StreamActionCreators from "StreamActionCreators" /* 7978 */;
-import ScreenIcon from "ScreenIcon" /* 9675 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11061 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11889 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19486 */;
-import VoicePanelDockPIPOverlay from "VoicePanelDockPIPOverlay" /* 19689 */;
-import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 19691 */;
+import native from "native" /* 5231 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
+import CallConstants from "CallConstants" /* 5837 */;
+import toastUtils from "toastUtils" /* 5870 */;
+import FramesConstants from "FramesConstants" /* 6935 */;
+import StreamActionCreators from "StreamActionCreators" /* 8011 */;
+import ScreenIcon from "ScreenIcon" /* 9708 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11093 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11921 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19524 */;
+import VoicePanelDockPIPOverlay from "VoicePanelDockPIPOverlay" /* 19727 */;
+import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 19729 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
-import FramesStore from "FramesStore" /* 6901 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
+import FramesStore from "FramesStore" /* 6934 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
@@ -428,10 +428,10 @@ let closure_20 = { code: "(function VoicePanelDockPIPTsx1(){let[getVoicePanelPIP
 let closure_22 = react.memo(function VoicePanelDockPIPWrapper(transitionState) {
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
-  const channelId = react.useContext(transitionCleanUp(11362)).channelId;
-  const stream = transitionCleanUp(19693)(channelId);
-  const showVideo = transitionCleanUp(19695)(channelId);
-  const obj = transitionState(19680);
+  const channelId = react.useContext(transitionCleanUp(11394)).channelId;
+  const stream = transitionCleanUp(19731)(channelId);
+  const showVideo = transitionCleanUp(19733)(channelId);
+  const obj = transitionState(19718);
   const panelLayoutCommitted = obj.usePIPTileHandoff().panelLayoutCommitted;
   const items = [transitionState, panelLayoutCommitted, transitionCleanUp];
   const effect = react.useEffect(() => {
@@ -452,7 +452,7 @@ const memoResult = react.memo(function VoicePanelDockPIPProvider() {
   let pIPState;
   let tmp14;
   let tmp7;
-  const f135465 = () => {
+  const f135583 = () => {
     let targetDimensions = layoutManager.getTargetDimensions(streamKey);
     if (targetDimensions === layoutManager.getDefaultTargetDimensions()) {
       targetDimensions = closure_17;
@@ -460,8 +460,8 @@ const memoResult = react.memo(function VoicePanelDockPIPProvider() {
     return targetDimensions;
   };
   let obj = IN_APP;
-  const channelId = IN_APP.useContext(pIPState(11362)).channelId;
-  const tmp2 = pIPState(19693)(channelId);
+  const channelId = IN_APP.useContext(pIPState(11394)).channelId;
+  const tmp2 = pIPState(19731)(channelId);
   const streamKey = tmp2.streamKey;
   pIPState = undefined;
   dependencyMap = undefined;
@@ -471,15 +471,15 @@ const memoResult = react.memo(function VoicePanelDockPIPProvider() {
   let height;
   let containerHeight;
   const isWatching = tmp2.isWatching;
-  const tmp3 = pIPState(19695)(channelId);
-  const obj2 = streamKey(19575);
+  const tmp3 = pIPState(19733)(channelId);
+  const obj2 = streamKey(19613);
   pIPState = obj2.usePIPState();
-  const layoutManager = IN_APP.useContext(pIPState(11362)).layoutManager;
-  [tmp7, c3] = _slicedToArray(IN_APP.useState(f135465), 2);
+  const layoutManager = IN_APP.useContext(pIPState(11394)).layoutManager;
+  [tmp7, c3] = _slicedToArray(IN_APP.useState(f135583), 2);
   const items = [layoutManager, streamKey];
-  const tmp6 = _slicedToArray(IN_APP.useState(f135465), 2);
+  const tmp6 = _slicedToArray(IN_APP.useState(f135583), 2);
   const effect = IN_APP.useEffect(() => {
-    const f142970 = (safeAreaState) => {
+    const f143085 = (safeAreaState) => {
       let targetDimensions = closure_1_2.getTargetDimensions(closure_1_0);
       if (targetDimensions === closure_1_2.getDefaultTargetDimensions()) {
         targetDimensions = closure_2_17;
@@ -490,9 +490,9 @@ const memoResult = react.memo(function VoicePanelDockPIPProvider() {
       }
       return targetDimensions;
     };
-    _undefined(f142970);
+    _undefined(f143085);
     return layoutManager.subscribeFromItem(function updateTargetDimensions() {
-      _undefined(f142970);
+      _undefined(f143085);
     });
   }, items);
   _slicedToArray = tmp9;
@@ -502,8 +502,8 @@ const memoResult = react.memo(function VoicePanelDockPIPProvider() {
       IN_APP = VoicePanelPIPModes.IN_APP;
     }
   }
-  const computePIPSize = tmp4(19485).computePIPSize;
-  streamKey(19485);
+  const computePIPSize = tmp4(19523).computePIPSize;
+  streamKey(19523);
   if (!isWatching) {
     tmp7 = closure_17;
   }
@@ -530,8 +530,8 @@ const memoResult = react.memo(function VoicePanelDockPIPProvider() {
     return tmp7;
   }, items1);
   const obj3 = { value: memo, children: closure_15(TransitionItem, obj5) };
-  const Provider = tmp4(19575).VoicePanelPIPStateContext.Provider;
-  TransitionItem = tmp4(5199).TransitionItem;
+  const Provider = tmp4(19613).VoicePanelPIPStateContext.Provider;
+  TransitionItem = tmp4(5231).TransitionItem;
   if (null != memo.mode) {
     tmp14 = { pipMode: memo.mode };
   }

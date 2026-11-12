@@ -1,21 +1,21 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12986
+// Function ID: 12987
 // Name: ConjureScopeServerCard
-// Dependencies: [32, 19, 17, 21, 5140, 575, 12304, 5751, 1113, 4026, 12955, 5758, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 12336, 5783, 1113, 4026, 12987, 5790, 2]
 // Exports: default
 
-// Module 12954 (ConjureScopeServerCard)
+// Module 12986 (ConjureScopeServerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12304 */;
-import ConjureClarificationEntityPickerDefault from "ConjureClarificationEntityPicker" /* 12955 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12336 */;
+import ConjureClarificationEntityPickerDefault from "ConjureClarificationEntityPicker" /* 12987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -87,7 +87,7 @@ export default function ConjureScopeServerCard(card) {
   let tmp15Result = null;
   if (null != first.note) {
     const obj7 = { variant: "body-xs/normal", color: "text-muted", children: first.note };
-    tmp15Result = tmp15(tmp16(5751).Text, obj7);
+    tmp15Result = tmp15(tmp16(5783).Text, obj7);
   }
   items2[1] = tmp15Result;
   items1[1] = metroImportDefault(View, obj5);
@@ -105,13 +105,13 @@ export default function ConjureScopeServerCard(card) {
       }
     }
   };
-  const Button = tmp16(5758).Button;
+  const Button = tmp16(5790).Button;
   intl3 = tmp16(1113).intl;
   items3 = [metroRequire(Button, obj9), ];
   let tmp15Result2 = null;
   if (null != onBack) {
     const obj10 = { variant: "tertiary", size: "sm", text: intl4.string(intl5.t["ETE/oC"]), onPress: onBack };
-    const Button2 = tmp16(5758).Button;
+    const Button2 = tmp16(5790).Button;
     intl4 = tmp16(1113).intl;
     tmp15Result2 = tmp15(Button2, obj10);
   }

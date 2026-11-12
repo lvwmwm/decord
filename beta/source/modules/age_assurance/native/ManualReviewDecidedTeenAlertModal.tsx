@@ -1,16 +1,16 @@
-// Module ID: 8238
-// Function ID: 8239
+// Module ID: 8271
+// Function ID: 8272
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 6783, 21, 5751, 8024, 2185, 1113, 3348, 6096, 6096, 1260, 2]
+// Dependencies: [19, 6815, 21, 5783, 8057, 2185, 1113, 3348, 6128, 6128, 1260, 2]
 // Exports: default
 
-// Module 8238 (ManualReviewDecidedTeenAlertModal)
+// Module 8271 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef3348 from "module_3348" /* 3348 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import AlertModal2 from "AlertModal" /* 6096 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6783 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import AlertModal2 from "AlertModal" /* 6128 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6815 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

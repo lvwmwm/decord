@@ -1,18 +1,18 @@
-// Module ID: 15065
-// Function ID: 15066
+// Module ID: 15097
+// Function ID: 15098
 // Name: BotReportChooser
-// Dependencies: [19, 2162, 21, 7426, 5751, 1113, 7428, 5374, 8422, 504, 6936, 2]
+// Dependencies: [19, 2162, 21, 7459, 5783, 1113, 7461, 5406, 8455, 504, 6969, 2]
 // Exports: default
 
-// Module 15065 (BotReportChooser)
+// Module 15097 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6936 */;
-import ActionSheet2 from "ActionSheet" /* 7426 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7428 */;
-import ReportModals from "ReportModals" /* 8422 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6969 */;
+import ActionSheet2 from "ActionSheet" /* 7459 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7461 */;
+import ReportModals from "ReportModals" /* 8455 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Fragment from "Fragment" /* 21 */;

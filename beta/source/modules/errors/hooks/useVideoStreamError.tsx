@@ -1,14 +1,14 @@
-// Module ID: 11921
-// Function ID: 11922
+// Module ID: 11953
+// Function ID: 11954
 // Name: useVideoStreamError
-// Dependencies: [502, 11922, 5897, 504, 6079, 2]
+// Dependencies: [502, 11954, 5929, 504, 6111, 2]
 // Exports: default, useVideoStreamErrorContext
 
-// Module 11921 (useVideoStreamError)
-import Constants from "Constants" /* 5897 */;
-import AVError from "AVError" /* 6079 */;
+// Module 11953 (useVideoStreamError)
+import Constants from "Constants" /* 5929 */;
+import AVError from "AVError" /* 6111 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 11922 */;
+import AVErrorStore from "AVErrorStore" /* 11954 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

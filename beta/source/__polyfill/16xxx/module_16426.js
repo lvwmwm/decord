@@ -1,7 +1,10 @@
 // Module ID: 16426
 // Function ID: 16427
 // Dependencies: []
+// Exports: CanonicalizeLocaleList
 
 // Module 16426
 
-export const collations = ["big5han", "compat", "dict", "direct", "ducet", "emoji", "eor", "gb2312", "phonebk", "phonetic", "pinyin", "reformed", "search", "searchjl", "standard", "stroke", "trad", "unihan", "zhuyin"];
+export function CanonicalizeLocaleList(items) {
+  return Intl.getCanonicalLocales(items);
+}

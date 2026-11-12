@@ -1,10 +1,10 @@
-// Module ID: 5257
-// Function ID: 5258
+// Module ID: 5289
+// Function ID: 5290
 // Name: RiveTypes
-// Dependencies: [5208, 2]
+// Dependencies: [5240, 2]
 
-// Module 5257 (RiveTypes)
-import DataBindByName from "DataBindByName" /* 5208 */;
+// Module 5289 (RiveTypes)
+import DataBindByName from "DataBindByName" /* 5240 */;
 import size from "module_2" /* 2 */;
 
 const obj = { fill: DataBindByName.Fit.Fill, contain: DataBindByName.Fit.Contain, cover: DataBindByName.Fit.Cover, "fit-width": DataBindByName.Fit.FitWidth, "fit-height": DataBindByName.Fit.FitHeight, none: DataBindByName.Fit.None, "scale-down": DataBindByName.Fit.ScaleDown, layout: DataBindByName.Fit.Layout };

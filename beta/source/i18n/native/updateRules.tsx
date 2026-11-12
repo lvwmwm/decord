@@ -1,15 +1,15 @@
-// Module ID: 19760
-// Function ID: 19761
+// Module ID: 19798
+// Function ID: 19799
 // Name: updateRules
-// Dependencies: [19, 1072, 21, 5154, 5724, 575, 5834, 2067, 1187, 2]
+// Dependencies: [19, 1072, 21, 5184, 5756, 575, 5866, 2067, 1187, 2]
 // Exports: default
 
-// Module 19760 (updateRules)
+// Module 19798 (updateRules)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import _modDef2067 from "module_2067" /* 2067 */;
-import LinkingDefault from "Linking" /* 5834 */;
+import LinkingDefault from "Linking" /* 5866 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

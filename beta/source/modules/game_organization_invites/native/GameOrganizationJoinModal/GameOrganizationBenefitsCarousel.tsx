@@ -1,21 +1,21 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13487
+// Function ID: 13488
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 5140, 7040, 6159, 5842, 5751, 1493, 13456, 10138, 1113, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 575, 5170, 7073, 6191, 5874, 5783, 1493, 13488, 10170, 1113, 1187, 2]
 // Exports: default
 
-// Module 13455 (GameOrganizationBenefitsCarousel)
+// Module 13487 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import Card_Card from "Card/Card" /* 7040 */;
-import GameOrganizationBenefits from "GameOrganizationBenefits" /* 13456 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import Card_Card from "Card/Card" /* 7073 */;
+import GameOrganizationBenefits from "GameOrganizationBenefits" /* 13488 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,8 +27,8 @@ let obj2;
 let obj3;
 let tmp2;
 let tmp6;
-const FastImageDefault = tmp6(5842);
-const CarouselDefault = tmp2(10138);
+const FastImageDefault = tmp6(5874);
+const CarouselDefault = tmp2(10170);
 function BenefitCard(arg0) {
   let Stack;
   let img;
@@ -52,7 +52,7 @@ function BenefitCard(arg0) {
   items[2] = cardSpacing;
   const obj = { style: items, children: tmp5(Stack, obj2) };
   obj2 = { spacing: nativeDefault.space.PX_24, children: items1 };
-  Stack = tmp3(6159).Stack;
+  Stack = tmp3(6191).Stack;
   tmp5 = metroImportDefault;
   if (null != img) {
     const obj3 = { source: obj4, style: tmp.benefitImage, resizeMode: "cover", accessible: false };

@@ -1,18 +1,18 @@
-// Module ID: 7581
-// Function ID: 7582
+// Module ID: 7614
+// Function ID: 7615
 // Name: LurkerActionCreators
-// Dependencies: [5, 5893, 5073, 1072, 572, 1282, 1380, 2]
+// Dependencies: [5, 5925, 5103, 1072, 572, 1282, 1380, 2]
 // Exports: stopLurking
 
-// Module 7581 (LurkerActionCreators)
+// Module 7614 (LurkerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import LurkingStore from "LurkingStore" /* 5073 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
+import LurkingStore from "LurkingStore" /* 5103 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, c4, closure_3, closure_4, length, lurkingSource, map;
+let c0, c2, c3, closure_3, closure_4, length, lurkingSource, map;
 
 function stopLurkingAll() {
   return obj(...arguments);
@@ -170,83 +170,43 @@ let obj = function _stopLurkingAll() {
 };
 obj = function _stopLurking() {
   obj = _asyncToGenerator(async (arg0, value) => {
+    let c1;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
+    if (1 === c3) {
       if (arg0 === 1) {
+        let c4 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let closure_2;
-        let c0;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_2 = tmp3;
-            let c1 = 0;
-            c0 = undefined;
-            let tmp18 = closure_0;
-            if (closure_0 === undefined) {
-              tmp18 = null;
-            }
-            c0 = tmp18;
-            length = undefined;
-            closure_2 = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "flexDirection", done: null };
-          }
-        } else {
-          if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              length = closure_130_5.lurkingGuildIds();
-              if (0 !== length.length) {
-                const items = [c0, closure_130_4.getGuildId()];
-                closure_2 = items.filter(closure_130_0(closure_130_2[6]).isNotNullish);
-                c3 = 2;
-                c4 = 1;
-                const obj5 = { value: closure_130_7(closure_2), done: false };
-                return obj5;
-              }
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            obj = { value, done: true };
-            return obj;
-          }
-          c4 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp19) {
         c4 = 3;
-        throw tmp19;
+        const obj4 = { value, done: true };
+        return obj4;
+      } else {
+        length = closure_130_5.lurkingGuildIds();
+        if (0 !== length.length) {
+          const items = [c0, closure_130_4.getGuildId()];
+          let closure_2 = items.filter(closure_130_0(closure_130_2[6]).isNotNullish);
+          c3 = 2;
+          c4 = 1;
+          const obj5 = { value: closure_130_7(closure_2), done: false };
+          return obj5;
+        }
       }
+    } else if (arg0 === 1) {
+      c4 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 3;
+      obj = { value, done: true };
+      return obj;
     }
+    await "HermesInternal";
+    closure_2 = tmp3;
+    let tmp18 = closure_0;
+    if (closure_0 === undefined) {
+      tmp18 = null;
+    }
+    c0 = tmp18;
+    return "flexDirection";
   });
   return obj(...arguments);
 };

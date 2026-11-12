@@ -1,10 +1,10 @@
-// Module ID: 6788
-// Function ID: 6789
+// Module ID: 6820
+// Function ID: 6821
 // Name: ReactiveCheckActionCreators
 // Dependencies: [5, 1072, 1282, 572, 2]
 // Exports: fetchReactiveCheckResult, resetAgeVerification
 
-// Module 6788 (ReactiveCheckActionCreators)
+// Module 6820 (ReactiveCheckActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

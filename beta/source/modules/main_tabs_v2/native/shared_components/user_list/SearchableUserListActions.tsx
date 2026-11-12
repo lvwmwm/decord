@@ -1,13 +1,13 @@
-// Module ID: 10850
-// Function ID: 10851
+// Module ID: 10882
+// Function ID: 10883
 // Name: SearchableUserListActions
-// Dependencies: [19, 17, 21, 10851, 7126, 7038, 2]
+// Dependencies: [19, 17, 21, 10883, 7159, 7071, 2]
 // Exports: useUserListActionsProps
 
-// Module 10850 (SearchableUserListActions)
+// Module 10882 (SearchableUserListActions)
 import Fragment from "Fragment" /* 21 */;
-import TableRow2 from "TableRow" /* 7038 */;
-import TableRowGroup2 from "TableRowGroup" /* 7126 */;
+import TableRow2 from "TableRow" /* 7071 */;
+import TableRowGroup2 from "TableRowGroup" /* 7159 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -46,7 +46,7 @@ export function useUserListActionsProps(actions) {
   let closure_2;
   actions = actions.actions;
   const style = actions.style;
-  const tmp = style(10851)();
+  const tmp = style(10883)();
   dependencyMap = tmp;
   const items = [actions, tmp, style];
   return react.useMemo(() => {

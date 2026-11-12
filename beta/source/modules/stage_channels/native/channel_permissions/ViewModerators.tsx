@@ -1,21 +1,21 @@
-// Module ID: 19281
-// Function ID: 19282
+// Module ID: 19319
+// Function ID: 19320
 // Name: ViewModerators
-// Dependencies: [5, 19, 5052, 5046, 5011, 1072, 8016, 21, 1252, 5374, 19282, 2118, 1499, 504, 6765, 9111, 4997, 2116, 6091, 1113, 7549, 9112, 5836, 1187, 9138, 6159, 7126, 7038, 11634, 2]
+// Dependencies: [5, 19, 5082, 5076, 5041, 1072, 8049, 21, 1252, 5406, 19320, 2118, 1499, 504, 6797, 9144, 5027, 2116, 6123, 1113, 7582, 9145, 5868, 1187, 9171, 6191, 7159, 7071, 11666, 2]
 // Exports: default, openAddModeratorsActionSheet
 
-// Module 19281 (ViewModerators)
+// Module 19319 (ViewModerators)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8016 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9138 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8049 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildRoleStore from "GuildRoleStore" /* 5046 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildRoleStore from "GuildRoleStore" /* 5076 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -210,7 +210,7 @@ export default function ViewModerators(channel) {
                     const _HermesInternal = HermesInternal;
                     ActionSheetActionCreatorsDefault;
                     const obj2 = { channel, canSkip: false };
-                    const tmp8 = asyncRequire(19282, dependencyMap.paths);
+                    const tmp8 = asyncRequire(19320, dependencyMap.paths);
                     openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                   }
                 },
@@ -259,6 +259,6 @@ export function openAddModeratorsActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channel, canSkip: flag };
-  const tmp3 = asyncRequire(19282, dependencyMap.paths);
+  const tmp3 = asyncRequire(19320, dependencyMap.paths);
   openLazy(tmp3, "channel-add-moderators-" + channel.id, obj2);
 }

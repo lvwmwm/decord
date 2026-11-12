@@ -1,12 +1,12 @@
-// Module ID: 13006
-// Function ID: 13007
+// Module ID: 13038
+// Function ID: 13039
 // Name: conjureSharedProjectSurfaces
-// Dependencies: [6900, 4026, 1113, 2]
+// Dependencies: [6933, 4026, 1113, 2]
 // Exports: conjureSharedProjectSurfaceLabels
 
-// Module 13006 (conjureSharedProjectSurfaces)
+// Module 13038 (conjureSharedProjectSurfaces)
 import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6900 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
 import size from "module_2" /* 2 */;
 
 const items = [ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL, _modDef4026.bHLrO8];

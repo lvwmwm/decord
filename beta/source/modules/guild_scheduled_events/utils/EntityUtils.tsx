@@ -1,12 +1,12 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9084
+// Function ID: 9085
 // Name: EntityUtils
-// Dependencies: [4989, 4995, 2]
+// Dependencies: [5019, 5025, 2]
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 9051 (EntityUtils)
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4995 */;
+// Module 9084 (EntityUtils)
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5025 */;
 import size from "module_2" /* 2 */;
 
 let c2;

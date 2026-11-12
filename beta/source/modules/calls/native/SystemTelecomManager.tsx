@@ -1,9 +1,9 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16618
+// Function ID: 16619
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 6623, 4993, 502, 4989, 2130, 5893, 5082, 5043, 1385, 5803, 5896, 1072, 5897, 3, 16587, 572, 16588, 1252, 5889, 7412, 6761, 11, 7551, 6047, 10331, 1266, 16589, 5776, 7549, 1377, 2120, 2]
+// Dependencies: [5, 32, 17, 6655, 5023, 502, 5019, 2130, 5925, 5112, 5073, 1385, 5835, 5928, 1072, 5929, 3, 16619, 572, 16620, 1252, 5921, 7445, 6793, 11, 7584, 6079, 10363, 1266, 16621, 5808, 7582, 1377, 2120, 2]
 
-// Module 16586 (SystemTelecomManager)
+// Module 16618 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -11,36 +11,36 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import v1 from "v1" /* 1266 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ChannelRecord from "ChannelRecord" /* 4993 */;
-import useChannelName from "useChannelName" /* 5776 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6047 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7551 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10331 */;
-import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16588 */;
-import SystemTelecomUtils from "SystemTelecomUtils" /* 16589 */;
+import ChannelRecord from "ChannelRecord" /* 5023 */;
+import useChannelName from "useChannelName" /* 5808 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6079 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6793 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7584 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10363 */;
+import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16620 */;
+import SystemTelecomUtils from "SystemTelecomUtils" /* 16621 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5803 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5896 */;
+import VoiceStateStore from "VoiceStateStore" /* 5835 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5928 */;
 import Constants_mod from "Constants" /* 1072 */;
-import Constants_mod2 from "Constants" /* 5897 */;
-import react_native2 from "react-native" /* 16587 */;
+import Constants_mod2 from "Constants" /* 5929 */;
+import react_native2 from "react-native" /* 16619 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4, c5;
+let c3, c5;
 
 let closure_18;
 let closure_19;
@@ -190,6 +190,11 @@ class SystemTelecomManager {
     let closure_0 = _asyncToGenerator(async (arg0, value) => {
       let c0;
       let c1;
+      let c2;
+      let channelId;
+      let closure_2;
+      let selectChannel;
+      let v0;
       function fromHandle(c0) {
         let first;
         let tmp6;
@@ -213,121 +218,68 @@ class SystemTelecomManager {
         return obj;
       }
       closure_0 = arg0;
-      if (c4 === 2) {
-        c4 = 3;
-        let str = "Generator functions may not be called on executing generators";
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
+      if (1 === tmp3) {
         if (arg0 === 1) {
+          let c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+          c4 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
         } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          let closure_2;
-          let v0;
-          let c2;
-          let closure_3;
-          let type;
-          let recipientId;
-          let channelId;
-          let selectChannel;
-          c4 = 2;
-          const tmp3 = c3;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
-            } else {
-              closure_2 = tmp3;
-              c0 = undefined;
-              v0 = undefined;
-              ({ handle: c0, video: c1 } = closure_0);
-              c2 = undefined;
-              closure_3 = undefined;
-              type = undefined;
-              recipientId = undefined;
-              channelId = undefined;
-              selectChannel = function selectChannel() {
-                channel = channel.getChannel(channelId);
-                if (null != channel) {
-                  obj = v0(closure_2_3[23]);
-                  const privateChannel = obj.selectPrivateChannel(channel.id);
-                }
-              };
-              c3 = 1;
-              c4 = 1;
-              return { value: "flexDirection", done: null };
-            }
-          } else {
-            if (1 === tmp3) {
-              if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                const obj7 = { value, done: true };
-                return obj7;
-              } else {
-                const supportsResult = v0 && selfMute.supports(constants2.VIDEO);
-                c2 = supportsResult;
-                closure_3 = fromHandle(c0);
-                type = closure_3.type;
-                recipientId = closure_3.recipientId;
-                channelId = closure_3.channelId;
-                if (null == closure_130_1.calls[channelId]) {
-                  if (type === constants.DM) {
-                    if (null != recipientId) {
-                      const obj5 = v0(c3[31]);
-                      c3 = 2;
-                      c4 = 1;
-                      const obj8 = { value: obj5.ensurePrivateChannel(recipientId), done: false };
-                      return obj8;
-                    }
-                  }
-                  const hasChannelResult = closure_1_8(type) && closure_1_10.hasChannel(channelId);
-                  if (hasChannelResult) {
-                    const obj4 = v0(c3[25]);
-                    obj4.call(channelId, c2, true);
-                    selectChannel();
-                  }
-                } else {
-                  const obj3 = v0(c3[26]);
-                  obj3.setVideoEnabled(c2);
-                  selectChannel();
-                }
+          const supportsResult = v0 && selfMute.supports(constants2.VIDEO);
+          c2 = supportsResult;
+          let closure_3 = fromHandle(c0);
+          const type = closure_3.type;
+          const recipientId = closure_3.recipientId;
+          channelId = closure_3.channelId;
+          if (null == closure_130_1.calls[channelId]) {
+            if (type === constants.DM) {
+              if (null != recipientId) {
+                const obj5 = v0(c3[31]);
+                c3 = 2;
+                c4 = 1;
+                const obj8 = { value: obj5.ensurePrivateChannel(recipientId), done: false };
+                return obj8;
               }
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj9 = { value, done: true };
-              return obj9;
-            } else {
-              let tmp5 = closure_2;
-              let tmp6 = v0;
-              let tmp7 = c3;
-              obj = v0(c3[25]);
-              obj.call(channelId, c2, true);
+            }
+            const hasChannelResult = closure_1_8(type) && closure_1_10.hasChannel(channelId);
+            if (hasChannelResult) {
+              const obj4 = v0(c3[25]);
+              obj4.call(channelId, c2, true);
               selectChannel();
             }
-            c4 = 3;
-            return { value: "HermesInternal", done: null };
+          } else {
+            const obj3 = v0(c3[26]);
+            obj3.setVideoEnabled(c2);
+            selectChannel();
           }
-        } catch (tmp58) {
-          c4 = 3;
-          throw tmp58;
         }
+      } else if (arg0 === 1) {
+        c4 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 3;
+        const obj9 = { value, done: true };
+        return obj9;
+      } else {
+        let tmp6 = v0;
+        let tmp7 = c3;
+        obj = v0(c3[25]);
+        obj.call(channelId, c2, true);
+        selectChannel();
       }
+      await "HermesInternal";
+      v0 = 0;
+      ({ handle: c0, video: c1 } = closure_0);
+      selectChannel = function selectChannel() {
+        channel = channel.getChannel(channelId);
+        if (null != channel) {
+          obj = v0(closure_2_3[23]);
+          const privateChannel = obj.selectPrivateChannel(channel.id);
+        }
+      };
+      return "flexDirection";
     });
     obj.handleSystemStartCall = function() {
       return closure_0(...arguments);

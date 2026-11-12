@@ -1,30 +1,24 @@
 // Module ID: 13336
 // Function ID: 13337
-// Dependencies: [13292, 13322]
-// Exports: createClientReportEnvelope
+// Dependencies: [13311, 13331]
+// Exports: getDefaultCurrentScope, getDefaultIsolationScope
 
 // Module 13336
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13292 */;
-import _mod13322 from "module_13322" /* 13322 */;
+import _mod13311 from "module_13311" /* 13311 */;
+import _mod13331 from "module_13331" /* 13331 */;
 
 
-export function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let obj3;
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    const obj = _browserPerformanceTimeOriginMode;
-    result = obj.dateTimestampInSeconds();
-  }
-  items[1] = { timestamp: result, discarded_events };
-  const createEnvelope = _mod13322.createEnvelope;
-  _mod13322;
-  if (dsn) {
-    obj3 = { dsn };
-    const obj2 = { dsn };
-  } else {
-    obj3 = {};
-  }
-  const items1 = [items];
-  return createEnvelope(obj3, items1);
+export function getDefaultCurrentScope() {
+  const obj = _mod13311;
+  return obj.getGlobalSingleton("defaultCurrentScope", () => {
+    const scope = new _mod13331.Scope();
+    return scope;
+  });
+}
+export function getDefaultIsolationScope() {
+  const obj = _mod13311;
+  return obj.getGlobalSingleton("defaultIsolationScope", () => {
+    const scope = new _mod13331.Scope();
+    return scope;
+  });
 }

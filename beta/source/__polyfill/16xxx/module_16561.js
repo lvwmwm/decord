@@ -1,498 +1,581 @@
 // Module ID: 16561
 // Function ID: 16562
-// Dependencies: [41, 42, 16562, 16563, 16564, 16565, 16566, 16567, 16568, 16569, 16570, 16571]
-// Exports: createClient
+// Dependencies: [41, 42, 16562]
 
 // Module 16561
-import assertHasLoggerPlugin2 from "assertHasLoggerPlugin" /* 16563 */;
-import assertHasStateResponsePlugin2 from "assertHasStateResponsePlugin" /* 16566 */;
+import _mod16562 from "module_16562" /* 16562 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import module_16562_mod from "module_16562" /* 16562 */;
-import module_16564 from "module_16564" /* 16564 */;
-import module_16565 from "module_16565" /* 16565 */;
-import module_16567 from "module_16567" /* 16567 */;
-import module_16568 from "module_16568" /* 16568 */;
-import repl from "repl" /* 16569 */;
-import serialize_mod from "serialize" /* 16570 */;
 
-let onCommand;
-
-let obj11;
-let obj13;
-let obj15;
-let obj6;
-let obj8;
-let tmp14;
-let tmp7;
-function emptyPromise() {
-  return Promise.resolve("");
-}
-let module_16562 = module_16562_mod;
-if (!module_16562) {
-  tmp7 = { default: module_16562 };
-  const obj4 = { default: module_16562 };
-} else {
-  tmp7 = module_16562;
-}
-module_16562 = tmp7;
-const assertHasLoggerPlugin = _interopRequireWildcard(assertHasLoggerPlugin2);
-if (!module_16564) {
-  obj6 = { default: module_16564 };
-  const obj7 = { default: module_16564 };
-} else {
-  obj6 = module_16564;
-}
-if (!module_16565) {
-  obj8 = { default: module_16565 };
-  const obj9 = { default: module_16565 };
-} else {
-  obj8 = module_16565;
-}
-const assertHasStateResponsePlugin = _interopRequireWildcard(assertHasStateResponsePlugin2);
-if (!module_16567) {
-  obj11 = { default: module_16567 };
-  const obj12 = { default: module_16567 };
-} else {
-  obj11 = module_16567;
-}
-if (!module_16568) {
-  obj13 = { default: module_16568 };
-  const obj14 = { default: module_16568 };
-} else {
-  obj13 = module_16568;
-}
-if (!repl) {
-  obj15 = { default: repl };
-  const obj16 = { default: repl };
-} else {
-  obj15 = repl;
-}
-let serialize = serialize_mod;
-if (!serialize) {
-  tmp14 = { default: serialize };
-  const obj17 = { default: serialize };
-} else {
-  tmp14 = serialize;
-}
-serialize = tmp14;
-const items = [obj6.default(), assertHasLoggerPlugin.default(), obj8.default(), assertHasStateResponsePlugin.default(), obj11.default(), obj13.default(), obj15.default()];
-let closure_9 = ["configure", "connect", "connected", "options", "plugins", "send", "socket", "startTimer", "use"];
-class ReactotronImpl {
-  constructor() {
-    const self = this;
-    _classCallCheck(this, ReactotronImpl);
-    this.connected = false;
-    this.socket = null;
-    this.plugins = [];
-    this.sendQueue = [];
-    this.isReady = false;
-    let date = new Date();
-    this.lastMessageDate = date;
-    this.customCommands = [];
-    this.customCommandLatestId = 1;
-    this.startTimer = () => ReactotronImpl(closure_1_1[11]).start();
-    this.send = (type, payload, important) => {
-      const date = new Date();
-      const lastMessageDate = self.lastMessageDate;
-      const time = date.getTime();
-      let num = time - lastMessageDate.getTime();
-      if (num < 0) {
-        num = 0;
-      }
-      self.lastMessageDate = date;
-      const action = { type, payload, important, date: date.toISOString(), deltaTime: num };
-      const defaultResult = closure_2_6.default(action, self.options.proxyHack);
-      if (self.isReady) {
-        try {
-          const socket = tmp2.socket;
-          socket.send(defaultResult);
-        } catch (err) {
-          self.isReady = false;
-          const _console = console;
-          console.log("An error occurred communicating with reactotron. Please reload your app");
-        }
-      } else {
-        const sendQueue = tmp2.sendQueue;
-        sendQueue.push(defaultResult);
-      }
-    };
+function getMultiInternalSlots(__INTERNAL_SLOT_MAP__, self) {
+  let _undefined;
+  const substr = [...arguments].slice();
+  value = __INTERNAL_SLOT_MAP__.get(self);
+  let c0 = value;
+  if (c0) {
+    const _Object = Object;
+    return substr.reduce((acc, item) => {
+      acc[item] = c0[item];
+      return acc;
+    }, Object.create(null));
+  } else {
+    const _TypeError = TypeError;
+    const _HermesInternal = HermesInternal;
+    self = this;
+    const self2 = this;
+    const typeError = new TypeError("" + self + " InternalSlot has not been initialized");
+    throw typeError;
   }
 }
-const entry = {
-  key: "configure",
-  value: function configure(arg0) {
-    const self = this;
-    const url = {
-      createSocket: null,
-      host: "localhost",
-      port: 9090,
-      name: "reactotron-core-client",
-      secure: false,
-      plugins: items,
-      safeRecursion: true,
-      onCommand() {
-        return null;
-      },
-      onConnect() {
-        return null;
-      },
-      onDisconnect() {
-        return null;
+function GetOption(obj, arg1, arg2, join, arg4) {
+  if (typeof obj !== "object") {
+    const _TypeError2 = TypeError;
+    const self3 = this;
+    const self4 = this;
+    const typeError = new TypeError("Options must be an object");
+    throw typeError;
+  } else {
+    let require = tmp15;
+    if (undefined !== obj[arg1]) {
+      let tmp2 = tmp15;
+      if ("boolean" === "string") {
+        const _Boolean = Boolean;
+        const BooleanResult = Boolean(obj[arg1]);
+        require = BooleanResult;
+        tmp2 = BooleanResult;
       }
-    };
-    const merged = Object.assign(url, this.options, arg0);
-    module_16562.default(merged);
-    this.options = merged;
-    if (Array.isArray(this.options.plugins)) {
-      const plugins = self.options.plugins;
-      const item = plugins.forEach((item) => self.use(item));
+      let tmp5 = tmp2;
+      if (typeof tmp2 === "symbol") {
+        const _TypeError = TypeError;
+        throw TypeError("Cannot convert a Symbol value to a string");
+      } else {
+        const _String = String;
+        const StringResult = String(tmp2);
+        require = StringResult;
+        tmp5 = StringResult;
+      }
+      if (join.filter((item) => item == require).length) {
+        return tmp5;
+      } else {
+        const _RangeError = RangeError;
+        const _HermesInternal = HermesInternal;
+        const self = this;
+        const self2 = this;
+        const rangeError = new RangeError("" + tmp5 + " is not within " + join.join(", "));
+        throw rangeError;
+      }
+    } else {
+      return arg4;
     }
-    return self;
+  }
+}
+function memoize(arg0, cache) {
+  const obj = { cache: cache.cache || closure_10, serializer: cache.serializer || serializerDefault };
+  return cache.strategy ? cache.strategy : strategyDefault(arg0, obj);
+}
+function monadic(call, get, fn, num) {
+  let tmp2 = num;
+  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
+  if (!tmp) {
+    tmp2 = fn(num);
+  }
+  value = get.get(tmp2);
+  if (undefined === value) {
+    const callResult = call.call(this, num);
+    const result = get.set(tmp2, callResult);
+    value = callResult;
+  }
+  return value;
+}
+function variadic(apply, get, fn) {
+  const callResult = slice.call(arguments, 3);
+  const tmp2 = fn(callResult);
+  value = get.get(tmp2);
+  if (undefined === value) {
+    const self = this;
+    const applyResult = apply.apply(this, callResult);
+    const result = get.set(tmp2, applyResult);
+    value = applyResult;
+  }
+  return value;
+}
+function strategyDefault(c165, cache) {
+  cache = cache.cache;
+  const obj = 1 === c165.length ? monadic : variadic;
+  return obj.bind(this, c165, cache.create(), cache.serializer);
+}
+function isLiteralPart(type) {
+  return "literal" === type.type;
+}
+function invariant(arg0, arg1) {
+  let _Error;
+  {
+    _Error = Error;
+  }
+  const tmp2 = arg0;
+  if (!tmp2) {
+    const self = this;
+    const self2 = this;
+    const _Error1 = new _Error(arg1);
+    throw _Error1;
+  }
+}
+function validateInstance(arg0, format) {
+  if (!(arg0 instanceof obj)) {
+    const _TypeError = TypeError;
+    const _String = String;
+    const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
+    const typeError = new TypeError("Method Intl.ListFormat.prototype." + "format" + " called on incompatible receiver " + String(arg0));
+    throw typeError;
+  }
+}
+function stringListFromIterable(obj) {
+  if (typeof obj !== "object") {
+    return [];
+  } else {
+    const items = [];
+    const _Symbol = Symbol;
+    const iter = obj[Symbol.iterator]();
+    const iter2 = iter.next();
+    let iter3 = iter2;
+    if (!iter2.done) {
+      while (typeof iter3.value === "string") {
+        let arr = items.push(iter3.value);
+        let iter4 = iter.next();
+        iter3 = iter4;
+      }
+      const _TypeError = TypeError;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const typeError = new TypeError("Iterable yielded " + iter3.value + " which is not a string");
+      throw typeError;
+    }
+    return items;
+  }
+}
+function createPartsFromList(__INTERNAL_SLOT_MAP__, self, arg2) {
+  if (0 === arg2.length) {
+    return [];
+  } else if (2 === arg2.length) {
+    const obj2 = { 0: null, 1: null };
+    const obj3 = { type: "element", value: arg2[0] };
+    obj2[0] = obj3;
+    const obj4 = { type: "element", value: arg2[1] };
+    obj2[1] = obj4;
+    return deconstructPattern(getMultiInternalSlots(__INTERNAL_SLOT_MAP__, self, "templatePair").templatePair, obj2);
+  } else {
+    const obj5 = { type: "element", value: arg2[arg2.length - 1] };
+    let diff = length - 2;
+    let tmpResult = obj5;
+    let tmp6 = obj5;
+    if (0 <= diff) {
+      do {
+        let str = "templateStart";
+        let tmp = deconstructPattern;
+        if (0 !== diff) {
+          let str2 = "templateEnd";
+          if (diff < length - 2) {
+            str2 = "templateMiddle";
+          }
+          str = str2;
+        }
+        let obj = { 0: null, 1: null };
+        let obj6 = { type: "element", value: arg2[diff] };
+        obj[0] = obj6;
+        obj[1] = tmpResult;
+        tmpResult = tmp(getMultiInternalSlots(__INTERNAL_SLOT_MAP__, self, str)[str], obj);
+        diff = diff - 1;
+        tmp6 = tmpResult;
+      } while (0 <= diff);
+    }
+    return tmp6;
+  }
+}
+function deconstructPattern(templatePair, arg1) {
+  function PartitionPattern(arr) {
+    const items = [];
+    let index = arr.indexOf("{");
+    let num = 0;
+    if (index < arr.length) {
+      let num4 = 0;
+      num = 0;
+      if (index > -1) {
+        const index1 = arr.indexOf("}", index);
+        const _HermesInternal = HermesInternal;
+        const tmp4 = index1 > index;
+        const combined = "Invalid pattern " + arr;
+        const _Error = Error;
+        while (tmp4) {
+          if (index > num4) {
+            let obj = { type: "literal", value: arr.substring(num4, index) };
+            let push = items.push;
+            arr = push(obj);
+          }
+          let obj2 = { type: arr.substring(index + 1, index1), value: "r" };
+          let push2 = items.push;
+          let push2Result = push2(obj2);
+          let sum = index1 + 1;
+          let index2 = arr.indexOf("{", sum);
+          num = sum;
+          if (index2 < arr.length) {
+            num4 = sum;
+            num = sum;
+            index = index2;
+          }
+        }
+        const self = this;
+        const self2 = this;
+        const _Error1 = new _Error(combined);
+        throw _Error1;
+      }
+    }
+    if (num < arr.length) {
+      const push3 = items.push;
+      const obj3 = { type: "literal", value: arr.substring(num, arr.length) };
+      push3(obj3);
+    }
+    return items;
+  }
+  let items = [];
+  const tmp2 = PartitionPattern(templatePair);
+  const iter = tmp2[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let type = nextResult.type;
+    let tmp4 = isLiteralPart;
+    let iter2 = nextResult;
+    if (isLiteralPart(nextResult)) {
+      let obj = { type: "literal", value: iter2.value };
+      let arr = items.push(obj);
+    } else {
+      let _HermesInternal = HermesInternal;
+      let tmp7 = type in arg1;
+      let tmp8 = invariant(tmp7, "" + type + " is missing from placables");
+      let tmp9 = arg1[type];
+      let tmp10 = tmp9;
+      let _Array = Array;
+      let push = items.push;
+      if (Array.isArray(tmp9)) {
+        let items1 = [];
+        let num = 0;
+        let arraySpreadResult = HermesBuiltin.arraySpread(items1, tmp11, 0);
+        let applyResult = HermesBuiltin.apply(push, items1, items);
+      } else {
+        let arr2 = push(tmp10);
+      }
+    }
+    continue;
+  }
+  return items;
+}
+function serializerDefault() {
+  return JSON.stringify(arguments);
+}
+let closure_9 = (() => {
+  class ObjectWithoutPrototypeCache {
+    constructor() {
+      _classCallCheck(this, ObjectWithoutPrototypeCache);
+      this.cache = Object.create(null);
+    }
+  }
+  const entry = {
+    key: "get",
+    value: function get(arg0) {
+      return this.cache[arg0];
+    }
+  };
+  const items = [
+    entry,
+    {
+      key: "set",
+      value: function set(arg0, arg1) {
+        this.cache[arg0] = arg1;
+      }
+    }
+  ];
+  return _createClass(ObjectWithoutPrototypeCache, items);
+})();
+let closure_10 = {
+  create() {
+    const tmp = new closure_9();
+    return tmp;
   }
 };
-const items1 = [
-  entry,
-  {
-    key: "close",
-    value: function close() {
+function strategyVariadic(c165, cache) {
+  cache = cache.cache;
+  return variadic.bind(this, c165, cache.create(), cache.serializer);
+}
+memoize(() => Intl.NumberFormat(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
+memoize(() => Intl.PluralRules(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
+memoize(() => Intl.Locale(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
+memoize(() => Intl.ListFormat(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
+let value = (() => {
+  class ListFormat {
+    constructor(locale, arg1) {
       const self = this;
-      this.connected = false;
-      const tmp = this.socket && self.socket.close;
-      if (tmp) {
-        const socket = self.socket;
-        socket.close();
-      }
-    }
-  },
-  {
-    key: "connect",
-    value: function connect() {
-      let client;
-      let createSocket;
-      let host;
-      let port;
-      let secure;
-      const self = this;
-      this.connected = true;
-      let options = this.options;
-      ({ host, environment: dependencyMap, port, name: _classCallCheck, client } = options);
-      ({ createSocket, secure } = options);
-      if (undefined === client) {
-        client = {};
-      }
-      const getClientId = options.getClientId;
-      ({ onCommand: assertHasStateResponsePlugin, onConnect: serialize, onDisconnect: _interopRequireWildcard } = self.options);
-      let str = "ws";
-      if (secure) {
-        str = "wss";
-      }
-      let socket = createSocket("" + str + "://" + host + ":" + port);
-      function onOpen() {
-        let environment;
-        let name;
-        let tmp;
-        if (serialize) {
-          tmp();
+      _classCallCheck(this, ListFormat);
+      let constructor;
+      if (this) {
+        if (self instanceof ListFormat) {
+          constructor = self.constructor;
         }
-        const plugins = self.plugins;
-        const item = plugins.forEach((onConnect) => {
-          const tmp = onConnect.onConnect && onConnect.onConnect();
-          return tmp;
-        });
-        const tmp4 = getClientId || emptyPromise;
-        const tmp4Result = tmp4(_classCallCheck);
-        tmp4Result.then((clientId) => {
-          let length;
-          self.isReady = true;
-          const send = self.send;
-          const obj = { environment, name, clientId, reactotronCoreClientVersion: "REACTOTRON_CORE_CLIENT_VERSION" };
-          const merged = Object.assign(client);
-          send("client.intro", obj);
-          if (self.sendQueue.length > 0) {
-            do {
-              let sendQueue = self.sendQueue;
-              let first = self.sendQueue[0];
-              self.sendQueue = sendQueue.slice(1);
-              let socket = self.socket;
-              let sendResult1 = socket.send(first);
-              length = self.sendQueue.length;
-            } while (length > 0);
+      }
+      if (constructor) {
+        const __INTERNAL_SLOT_MAP__ = tmp.__INTERNAL_SLOT_MAP__;
+        if (!__INTERNAL_SLOT_MAP__.get(self)) {
+          const _Object = Object;
+          const result = __INTERNAL_SLOT_MAP__.set(self, Object.create(null));
+        }
+        let obj4 = arg1;
+        __INTERNAL_SLOT_MAP__.get(self).initializedListFormat = true;
+        const _Intl = Intl;
+        const canonicalLocales = Intl.getCanonicalLocales(locale);
+        const _Object2 = Object;
+        const obj3 = Object.create(null);
+        if (undefined === arg1) {
+          const _Object3 = Object;
+          obj4 = Object.create(null);
+        } else if (typeof obj4 !== "object") {
+          const _TypeError2 = TypeError;
+          const self6 = this;
+          const self7 = this;
+          const typeError = new TypeError("Options must be an object");
+          throw typeError;
+        }
+        obj3.localeMatcher = GetOption(obj4, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        const localeData = tmp.localeData;
+        const obj = _mod16562;
+        const ResolveLocaleResult = obj.ResolveLocale(ListFormat.availableLocales, canonicalLocales, obj3, ListFormat.relevantExtensionKeys, localeData, ListFormat.getDefaultLocale);
+        const __INTERNAL_SLOT_MAP__2 = tmp.__INTERNAL_SLOT_MAP__;
+        locale = ResolveLocaleResult.locale;
+        if (!__INTERNAL_SLOT_MAP__2.get(self)) {
+          const _Object4 = Object;
+          const result1 = __INTERNAL_SLOT_MAP__2.set(self, Object.create(null));
+        }
+        __INTERNAL_SLOT_MAP__2.get(self).locale = locale;
+        const __INTERNAL_SLOT_MAP__3 = tmp.__INTERNAL_SLOT_MAP__;
+        const tmp16Result = GetOption(obj4, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
+        if (!__INTERNAL_SLOT_MAP__3.get(self)) {
+          const _Object5 = Object;
+          const result2 = __INTERNAL_SLOT_MAP__3.set(self, Object.create(null));
+        }
+        __INTERNAL_SLOT_MAP__3.get(self).type = tmp16Result;
+        const __INTERNAL_SLOT_MAP__4 = tmp.__INTERNAL_SLOT_MAP__;
+        const tmp16Result2 = GetOption(obj4, "style", "string", ["long", "short", "narrow"], "long");
+        if (!__INTERNAL_SLOT_MAP__4.get(self)) {
+          const _Object6 = Object;
+          const result3 = __INTERNAL_SLOT_MAP__4.set(self, Object.create(null));
+        }
+        __INTERNAL_SLOT_MAP__4.get(self).style = tmp16Result2;
+        const dataLocale = ResolveLocaleResult.dataLocale;
+        const _HermesInternal = HermesInternal;
+        const tmp34 = !localeData[dataLocale];
+        const combined = "Missing locale data for " + dataLocale;
+        if (!tmp34) {
+          const __INTERNAL_SLOT_MAP__5 = tmp.__INTERNAL_SLOT_MAP__;
+          const pair = tmp40.pair;
+          if (!__INTERNAL_SLOT_MAP__5.get(self)) {
+            const _Object7 = Object;
+            const result4 = __INTERNAL_SLOT_MAP__5.set(self, Object.create(null));
           }
-        });
-      }
-      function onClose() {
-        self.isReady = false;
-        let tmp = self;
-        if (_interopRequireWildcard) {
-          tmp2();
-        }
-        const plugins = tmp.plugins;
-        const item = plugins.forEach((onDisconnect) => {
-          const tmp = onDisconnect.onDisconnect && onDisconnect.onDisconnect();
-          return tmp;
-        });
-      }
-      function onMessage(str) {
-        let action;
-        let tmp2;
-        if (typeof str === "string") {
-          const tmp = globalThis;
-          const _JSON2 = JSON;
-          action = JSON.parse(str);
+          __INTERNAL_SLOT_MAP__5.get(self).templatePair = pair;
+          const __INTERNAL_SLOT_MAP__6 = tmp.__INTERNAL_SLOT_MAP__;
+          const start = tmp40.start;
+          if (!__INTERNAL_SLOT_MAP__6.get(self)) {
+            const _Object8 = Object;
+            const result5 = __INTERNAL_SLOT_MAP__6.set(self, Object.create(null));
+          }
+          __INTERNAL_SLOT_MAP__6.get(self).templateStart = start;
+          const __INTERNAL_SLOT_MAP__7 = tmp.__INTERNAL_SLOT_MAP__;
+          const middle = tmp40.middle;
+          if (!__INTERNAL_SLOT_MAP__7.get(self)) {
+            const _Object9 = Object;
+            const result6 = __INTERNAL_SLOT_MAP__7.set(self, Object.create(null));
+          }
+          __INTERNAL_SLOT_MAP__7.get(self).templateMiddle = middle;
+          const __INTERNAL_SLOT_MAP__8 = tmp.__INTERNAL_SLOT_MAP__;
+          const end = tmp40.end;
+          if (!__INTERNAL_SLOT_MAP__8.get(self)) {
+            const _Object10 = Object;
+            const result7 = __INTERNAL_SLOT_MAP__8.set(self, Object.create(null));
+          }
+          __INTERNAL_SLOT_MAP__8.get(self).templateEnd = end;
         } else {
-          const _Buffer = Buffer;
-          action = str;
-          if (Buffer.isBuffer(str)) {
-            const _JSON = JSON;
-            action = JSON.parse(str.toString());
-          }
-        }
-        if (assertHasStateResponsePlugin) {
-          tmp2(action);
-        }
-        const plugins = self.plugins;
-        const item = plugins.forEach((onCommand) => {
-          onCommand = onCommand.onCommand && onCommand.onCommand(action);
-          return onCommand;
-        });
-        if ("custom" === action.type) {
-          const customCommands = tmp4.customCommands;
-          const found = customCommands.filter((command) => {
-            let tmp2;
-            if (typeof action.payload === "string") {
-              tmp2 = command.command === tmp.payload;
-            } else {
-              tmp2 = command.command === tmp.payload.command;
-            }
-            return tmp2;
-          });
-          const item1 = found.forEach((handler) => {
-            let args;
-            handler = handler.handler;
-            if (typeof action.payload === "object") {
-              args = action.payload.args;
-            }
-            return handler(args);
-          });
-        } else {
-          const tmp6 = "setClientId" === action.type && self.options.setClientId;
-          if (tmp6) {
-            const options = tmp4.options;
-            options.setClientId(action.payload);
-          }
-        }
-      }
-      if ("on" in socket) {
-        if (socket.on) {
-          socket.on("open", onOpen);
-          socket.on("close", onClose);
-          socket.on("message", onMessage);
-          self.socket = socket;
-        }
-        return self;
-      }
-      socket.onopen = onOpen;
-      socket.onclose = onClose;
-      socket.onmessage = (data) => {
-        onMessage(data.data);
-      };
-      self.socket = socket;
-    }
-  },
-  {
-    key: "display",
-    value: function display(activity) {
-      let image;
-      let important;
-      let preview;
-      let value;
-      ({ value, preview, image, important } = activity);
-      let tmp = undefined !== important;
-      const name = activity.name;
-      if (tmp) {
-        tmp = important;
-      }
-      const obj = { name, value, preview, image };
-      this.send("display", obj, tmp);
-    }
-  },
-  {
-    key: "reportError",
-    value: function reportError(arg0) {
-      this.error(arg0);
-    }
-  },
-  {
-    key: "use",
-    value: function use(bind) {
-      let self = this;
-      if (typeof bind !== "function") {
-        const _Error3 = Error;
-        const self6 = this;
-        const self7 = this;
-        let error = new Error("plugins must be a function");
-        throw error;
-      } else {
-        const tmp13 = bind.bind(self)(self);
-        const features = tmp13;
-        if (typeof tmp13 !== "object") {
-          let _Error2 = Error;
-          let self4 = this;
+          const self4 = this;
           const self5 = this;
-          let error1 = new Error("plugins must return an object");
-          throw error1;
-        } else {
-          if (tmp13.features) {
-            if (typeof tmp13.features !== "object") {
-              let _Error = Error;
-              let self2 = this;
-              let self3 = this;
-              const error2 = new Error("features must be an object");
-              throw error2;
-            } else {
-              function inject(arg0) {
-
-              }
-              const _Object = Object;
-              const keys = Object.keys(tmp13.features);
-              const item = keys.forEach(function(item) {
-                if (typeof inject === "function") {
-                  if (typeof features.features[item] !== "function") {
-                    const _Error2 = Error;
-                    const _HermesInternal2 = HermesInternal;
-                    const self3 = this;
-                    const self4 = this;
-                    const error = new Error("feature " + item + " is not a function");
-                    throw error;
-                  } else {
-                    let closure_0 = item;
-                    if (closure_9.some((item) => item === closure_0)) {
-                      const _Error = Error;
-                      const _HermesInternal = HermesInternal;
-                      self = this;
-                      const self2 = this;
-                      const error1 = new Error("feature " + item + " is a reserved name");
-                      throw error1;
-                    } else {
-                      self[item] = features.features[item];
-                    }
-                  }
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              });
-            }
-          }
-          const plugins = self.plugins;
-          plugins.push(tmp13);
-          const tmp2 = tmp13.onPlugin && typeof tmp13.onPlugin === "function";
-          if (tmp2) {
-            const onPlugin = tmp13.onPlugin;
-            onPlugin.bind(self)(self);
-          }
-          return self;
-        }
-      }
-    }
-  },
-  {
-    key: "onCustomCommand",
-    value: function onCustomCommand(command, arg1) {
-      let args;
-      let description;
-      let handler;
-      let title;
-      let self = this;
-      if (typeof command === "string") {
-        handler = arg1;
-      } else {
-        command = command.command;
-        ({ handler, title, description, args } = command);
-      }
-      if (tmp) {
-        if (handler) {
-          let customCommands = self.customCommands;
-          const found = customCommands.filter((command) => command.command === command);
-          if (found.length > 0) {
-            const item = found.forEach((id) => {
-              let closure_0 = id;
-              const customCommands = self.customCommands;
-              self.customCommands = customCommands.filter((id) => id.id !== id.id);
-              obj = { id: id.id, command: id.command };
-              self.send("customCommand.unregister", obj);
-            });
-          }
-          if (args) {
-            let closure_2 = [];
-            const item1 = args.forEach(function(name) {
-              if (name.name) {
-                const arr = closure_2;
-                if (closure_2.indexOf(name.name) > -1) {
-                  const _Error2 = Error;
-                  const _HermesInternal2 = HermesInternal;
-                  const self3 = this;
-                  const self4 = this;
-                  const error = new Error("A arg with the name \"" + name.name + "\" already exists in the command \"" + command + "\"");
-                  throw error;
-                } else {
-                  arr.push(name.name);
-                }
-              } else {
-                const _Error = Error;
-                const _HermesInternal = HermesInternal;
-                self = this;
-                const self2 = this;
-                const error1 = new Error("A arg on the command \"" + command + "\" is missing a name");
-                throw error1;
-              }
-            });
-          }
-          let obj = { id: self.customCommandLatestId, command: tmp, handler, title, description, args };
-          self.customCommandLatestId = self.customCommandLatestId + 1;
-          const customCommands1 = self.customCommands;
-          let arr = customCommands1.push(obj);
-          const obj3 = { id: null, command: null, title: null, description: null, args: null };
-          ({ id: obj2.id, command: obj2.command, title: obj2.title, description: obj2.description, args: obj2.args } = obj);
-          self.send("customCommand.register", obj3);
-          return () => {
-            let id;
-            const customCommands = self.customCommands;
-            self.customCommands = customCommands.filter((id) => id.id !== id.id);
-            obj = { id: obj.id, command: obj.command };
-            self.send("customCommand.unregister", obj);
-          };
-        } else {
-          let _Error2 = Error;
-          let _HermesInternal = HermesInternal;
-          let self4 = this;
-          const self5 = this;
-          let error = new Error("A handler is required for command \"" + tmp + "\"");
-          throw error;
+          const tmp362 = new tmp36(combined);
+          throw tmp362;
         }
       } else {
-        let _Error = Error;
-        let self2 = this;
-        let self3 = this;
-        let error1 = new Error("A command is required");
-        throw error1;
+        const _TypeError = TypeError;
+        const self2 = this;
+        const self3 = this;
+        const typeError1 = new TypeError("Intl.ListFormat must be called with 'new'");
+        throw typeError1;
       }
     }
   }
-];
-const _moduleResult = _createClass(ReactotronImpl, items1);
-const unpackModuleId = _moduleResult;
-const assertHasLoggerPlugin_export = assertHasLoggerPlugin.assertHasLoggerPlugin;
-const assertHasStateResponsePlugin_export = assertHasStateResponsePlugin.assertHasStateResponsePlugin;
-const ReactotronImpl_export = _moduleResult;
-
-export { assertHasLoggerPlugin_export as assertHasLoggerPlugin };
-export { assertHasStateResponsePlugin_export as assertHasStateResponsePlugin };
-export function createClient(url) {
-  const obj = new unpackModuleId();
-  return obj.configure(url);
+  const entry = {
+    key: "format",
+    value: function format(arg0) {
+      validateInstance(this, "format");
+      let str = "";
+      const iter = createPartsFromList(ListFormat.__INTERNAL_SLOT_MAP__, this, stringListFromIterable(arg0));
+      if (Array.isArray(iter)) {
+        for (const item10023 of iter) {
+          str = `${item10023.value}`;
+          continue;
+        }
+        return str;
+      } else {
+        return iter.value;
+      }
+    }
+  };
+  let items = [
+    entry,
+    {
+      key: "formatToParts",
+      value: function formatToParts(arg0) {
+        validateInstance(this, "format");
+        const tmp2 = createPartsFromList(ListFormat.__INTERNAL_SLOT_MAP__, this, stringListFromIterable(arg0));
+        if (Array.isArray(tmp2)) {
+          const items = [];
+          for (const item10022 of tmp2) {
+            let obj = {};
+            let push = items.push;
+            let merged = Object.assign(item10022);
+            let arr = push(obj);
+            continue;
+          }
+          return items;
+        } else {
+          const items1 = [tmp2];
+          return items1;
+        }
+      }
+    },
+    {
+      key: "resolvedOptions",
+      value: function resolvedOptions() {
+        let obj;
+        let self = this;
+        if (this instanceof obj) {
+          obj = { locale: getMultiInternalSlots(ListFormat.__INTERNAL_SLOT_MAP__, self, "locale").locale, type: getMultiInternalSlots(ListFormat.__INTERNAL_SLOT_MAP__, self, "type").type, style: getMultiInternalSlots(ListFormat.__INTERNAL_SLOT_MAP__, self, "style").style };
+          return obj;
+        } else {
+          let _TypeError = TypeError;
+          const _String = String;
+          let _HermesInternal = HermesInternal;
+          let self2 = this;
+          const self3 = this;
+          let typeError = new TypeError("Method Intl.ListFormat.prototype." + "resolvedOptions" + " called on incompatible receiver " + String(self));
+          throw typeError;
+        }
+      }
+    }
+  ];
+  const entry1 = {
+    key: "supportedLocalesOf",
+    value: function supportedLocalesOf(items, arg1) {
+      const availableLocales = ListFormat.availableLocales;
+      const canonicalLocales = Intl.getCanonicalLocales(items);
+      if (undefined !== arg1) {
+        if (null == arg1) {
+          const _TypeError = TypeError;
+          const self = this;
+          const self2 = this;
+          const typeError = new TypeError("undefined/null cannot be converted to object");
+          throw typeError;
+        } else {
+          const _Object = Object;
+          tmp2(Object(arg1), "localeMatcher", "string", ["lookup", "best fit"], "best fit");
+        }
+      }
+      const obj = _mod16562;
+      return obj.LookupSupportedLocales(Array.from(availableLocales), canonicalLocales);
+    }
+  };
+  let items1 = [
+    entry1,
+    {
+      key: "__addLocaleData",
+      value: function __addLocaleData() {
+        let data;
+        let locale;
+        const items = [...arguments];
+        const iter = items[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          ({ data, locale } = nextResult);
+          let _Intl = Intl;
+          let self = this;
+          let self2 = this;
+          let locale1 = new Intl.Locale(locale);
+          let str = locale1.minimize();
+          let str1 = str.toString();
+          ListFormat.localeData[str1] = data;
+          ListFormat.localeData[locale] = data;
+          let availableLocales = ListFormat.availableLocales;
+          let tmp5 = str1;
+          let tmp6 = ListFormat;
+          let addResult = availableLocales.add(str1);
+          let availableLocales2 = ListFormat.availableLocales;
+          let addResult1 = availableLocales2.add(locale);
+          if (!ListFormat.__defaultLocale) {
+            tmp6.__defaultLocale = tmp5;
+          }
+          continue;
+        }
+      }
+    },
+    {
+      key: "getDefaultLocale",
+      value: function getDefaultLocale() {
+        return ListFormat.__defaultLocale;
+      }
+    }
+  ];
+  return _createClass(ListFormat, items, items1);
+})();
+value.localeData = {};
+value.availableLocales = new Set();
+value.__defaultLocale = "";
+value.relevantExtensionKeys = [];
+value.polyfilled = true;
+new Set();
+const weakMap = new WeakMap();
+value.__INTERNAL_SLOT_MAP__ = weakMap;
+value.__ = undefined;
+try {
+  let _Symbol = Symbol;
+  if (typeof Symbol !== "undefined") {
+    let _Object4 = Object;
+    const _Symbol2 = Symbol;
+    Object.defineProperty(value.prototype, Symbol.toStringTag, { value: "Intl.ListFormat", writable: false, enumerable: false, configurable: true });
+  }
+  let _Object = Object;
+  let str = "length";
+  Object.defineProperty(value.prototype.constructor, "length", { value: 0, writable: false, enumerable: false, configurable: true });
+  let _Object2 = Object;
+  Object.defineProperty(value.supportedLocalesOf, "length", { value: 1, writable: false, enumerable: false, configurable: true });
+  let _Object3 = Object;
+  let _Intl = Intl;
+  let obj2 = { value, writable: true, enumerable: false, configurable: true };
+  let str2 = "ListFormat";
+  Object.defineProperty(Intl, "ListFormat", obj2);
+  const _globalThis = globalThis;
+  if (__FORMATJS_LISTFORMAT_DATA__) {
+    let tmp10 = __FORMATJS_LISTFORMAT_DATA__;
+    const tmp11 = __FORMATJS_LISTFORMAT_DATA__;
+    for (const item10081 of __FORMATJS_LISTFORMAT_DATA__) {
+      let __addLocaleDataResult = value.__addLocaleData(item10081);
+      continue;
+    }
+    delete globalThis["__FORMATJS_LISTFORMAT_DATA__"];
+  }
+} catch (err) {
 }
-export const hasStateResponsePlugin = assertHasStateResponsePlugin.hasStateResponsePlugin;
-export const ArgType = { String: "string" };
-export const corePlugins = items;
-export { ReactotronImpl_export as ReactotronImpl };

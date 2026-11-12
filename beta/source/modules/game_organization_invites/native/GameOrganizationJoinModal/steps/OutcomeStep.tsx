@@ -1,18 +1,18 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13489
+// Function ID: 13490
 // Name: OutcomeStep
-// Dependencies: [32, 19, 5011, 11504, 13446, 21, 5140, 1113, 2530, 13443, 504, 7594, 13444, 13448, 8043, 6159, 575, 5751, 13452, 5758, 2]
+// Dependencies: [32, 19, 5041, 11536, 13478, 21, 5170, 1113, 2530, 13475, 504, 7627, 13476, 13480, 8076, 6191, 575, 5783, 13484, 5790, 2]
 // Exports: OutcomeStep
 
-// Module 13457 (OutcomeStep)
-import transitionToGuild from "transitionToGuild" /* 7594 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13446 */;
+// Module 13489 (OutcomeStep)
+import transitionToGuild from "transitionToGuild" /* 7627 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13478 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11504 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11536 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -67,7 +67,7 @@ export function OutcomeStep(code) {
   code = code.code;
   let tmp = closure_12();
   let tmp2 = stateFromStores;
-  const tmp4 = stateFromStores(13443)(code);
+  const tmp4 = stateFromStores(13475)(code);
   let guildId;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -117,7 +117,7 @@ export function OutcomeStep(code) {
     }
   }, items2);
   let displayNoun;
-  const tmp2Result = tmp2(13444);
+  const tmp2Result = tmp2(13476);
   if (tmp4 != null) {
     displayNoun = tmp4.displayNoun;
   }
@@ -208,25 +208,25 @@ export function OutcomeStep(code) {
   }
   ({ subtitle, cta } = obj22);
   const title = obj22.title;
-  const tmp2Result2 = tmp2(13448);
-  const ModalContent = tmp6(8043).ModalContent;
+  const tmp2Result2 = tmp2(13480);
+  const ModalContent = tmp6(8076).ModalContent;
   const obj23 = { spacing: tmp2(575).space.PX_8, children: items3 };
-  const Stack = tmp6(6159).Stack;
+  const Stack = tmp6(6191).Stack;
   items3 = [, ];
   const obj24 = { variant: "heading-xl/semibold", style: tmp.text, accessibilityRole: "header", children: title };
-  items3[0] = closure_10(guildId(5751).Text, obj24);
+  items3[0] = closure_10(guildId(5783).Text, obj24);
   let tmp25Result = null != subtitle;
   if (tmp25Result) {
     const obj25 = { variant: "body-md/normal", color: "text-muted", style: tmp.text, children: subtitle };
-    tmp25Result = tmp25(tmp6(5751).Text, obj25);
+    tmp25Result = tmp25(tmp6(5783).Text, obj25);
   }
   const obj26 = { children: items4 };
   items3[1] = tmp25Result;
   items4 = [, ];
   const obj27 = { children: closure_11(Stack, obj23) };
   items4[0] = closure_10(ModalContent, obj27);
-  const obj28 = { children: closure_10(guildId(5758).Button, obj29) };
-  const ModalFooter = tmp6(13452).ModalFooter;
+  const obj28 = { children: closure_10(guildId(5790).Button, obj29) };
+  const ModalFooter = tmp6(13484).ModalFooter;
   obj29 = { text: cta.text, size: "lg", onPress: cta.onPress, disabled: tmp9 };
   items4[1] = closure_10(ModalFooter, obj28);
   return closure_11(tmp2Result2, obj26);

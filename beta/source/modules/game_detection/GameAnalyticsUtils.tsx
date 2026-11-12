@@ -1,12 +1,12 @@
-// Module ID: 7968
-// Function ID: 7969
+// Module ID: 8001
+// Function ID: 8002
 // Name: GameAnalyticsUtils
-// Dependencies: [2156, 7969, 1377, 2]
+// Dependencies: [2156, 8002, 1377, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 7968 (GameAnalyticsUtils)
+// Module 8001 (GameAnalyticsUtils)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7969 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 8002 */;
 import DetectableGameStore from "DetectableGameStore" /* 2156 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export function getRunningGameAnalytics(streamApplication) {
   let str3;
   let subgameMetadata;
   if (null == streamApplication) {
-    return { gameName: "Array", gameId: "channel", exe: "flags", distributor: "useState", sku: "HermesInternal", gameMetadata: "ip", rawExePath: "o" };
+    return { gameName: "HermesInternal", gameId: "channel", exe: "push", distributor: "flex", sku: "channelId", gameMetadata: "Object", rawExePath: "registerAsset" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

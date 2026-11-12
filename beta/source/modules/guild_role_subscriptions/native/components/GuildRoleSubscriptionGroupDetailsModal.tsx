@@ -1,28 +1,28 @@
-// Module ID: 20353
-// Function ID: 20354
+// Module ID: 20391
+// Function ID: 20392
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 20354, 17517, 1072, 21, 5140, 575, 20355, 20350, 7126, 1113, 20356, 5751, 17529, 7316, 20357, 2]
+// Dependencies: [32, 19, 17, 20392, 17554, 1072, 21, 5170, 575, 20393, 20388, 7159, 1113, 20394, 5783, 17566, 7349, 20395, 2]
 // Exports: default
 
-// Module 20353 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 20391 (GuildRoleSubscriptionGroupDetailsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import TableRowGroup from "TableRowGroup" /* 7126 */;
-import TextArea2 from "TextArea" /* 7316 */;
-import FormSeparatorDefault from "FormSeparator" /* 17529 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20350 */;
-import FormStylesDefault from "FormStyles" /* 20355 */;
-import FormImagePicker from "FormImagePicker" /* 20356 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20357 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import TableRowGroup from "TableRowGroup" /* 7159 */;
+import TextArea2 from "TextArea" /* 7349 */;
+import FormSeparatorDefault from "FormSeparator" /* 17566 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20388 */;
+import FormStylesDefault from "FormStyles" /* 20393 */;
+import FormImagePicker from "FormImagePicker" /* 20394 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20354 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17517 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20392 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17554 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c10;

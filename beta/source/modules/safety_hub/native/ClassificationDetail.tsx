@@ -1,32 +1,32 @@
-// Module ID: 13545
-// Function ID: 13546
+// Module ID: 13577
+// Function ID: 13578
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2186, 8064, 8039, 1072, 21, 5140, 575, 5751, 8040, 1113, 504, 3348, 9189, 5834, 11421, 7038, 5758, 13546, 13548, 8063, 6784, 1252, 13549, 6594, 6599, 13551, 7355, 13556, 8038, 2]
+// Dependencies: [19, 17, 2186, 8097, 8072, 1072, 21, 5170, 575, 5783, 8073, 1113, 504, 3348, 9222, 5866, 11453, 7071, 5790, 13578, 13580, 8096, 6816, 1252, 13581, 6626, 6631, 13583, 7388, 13588, 8071, 2]
 // Exports: default
 
-// Module 13545 (ClassificationDetail)
+// Module 13577 (ClassificationDetail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _modDef3348 from "module_3348" /* 3348 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import LinkingDefault from "Linking" /* 5834 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6594 */;
-import MetricEvents from "MetricEvents" /* 6599 */;
-import TableRow2 from "TableRow" /* 7038 */;
-import SafetyHubModels from "SafetyHubModels" /* 8040 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9189 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13549 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 13551 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import LinkingDefault from "Linking" /* 5866 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6626 */;
+import MetricEvents from "MetricEvents" /* 6631 */;
+import TableRow2 from "TableRow" /* 7071 */;
+import SafetyHubModels from "SafetyHubModels" /* 8073 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9222 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13581 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 13583 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import SafetyHubStore from "SafetyHubStore" /* 8064 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8039 */;
+import SafetyHubStore from "SafetyHubStore" /* 8097 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +60,7 @@ function ClassificationHeader(classificationTypeText) {
   guildMetadata = classificationTypeText.guildMetadata;
   const tmp = closure_16();
   const items = [classificationTypeText, guildMetadata];
-  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5751).Text, obj2) };
+  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5783).Text, obj2) };
   const memo = react.useMemo(() => {
     let formatResult;
     let name;
@@ -287,11 +287,11 @@ function ClassificationPolicyCard(policyExplainerLink) {
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj4) };
   obj4 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
   tmp2 = TouchableHitBoxDefault;
-  ShieldIcon = policyExplainerLink(11421).ShieldIcon;
+  ShieldIcon = policyExplainerLink(11453).ShieldIcon;
   items = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: closure_13(Text, obj6) };
   obj6 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1113).t.zxUdpj, { classificationDescription: classificationTypeText }) };
-  Text = policyExplainerLink(5751).Text;
+  Text = policyExplainerLink(5783).Text;
   intl = policyExplainerLink(1113).intl;
   items[1] = closure_13(closure_4, obj5);
   return closure_13(closure_4, obj);

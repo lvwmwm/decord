@@ -1,12 +1,12 @@
-// Module ID: 9423
-// Function ID: 9424
+// Module ID: 9456
+// Function ID: 9457
 // Name: useGameProfileStoreWebsites
-// Dependencies: [19, 9424, 9425, 9427, 9426, 2]
+// Dependencies: [19, 9457, 9458, 9460, 9459, 2]
 // Exports: useGameProfileStoreWebsites
 
-// Module 9423 (useGameProfileStoreWebsites)
-import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9424 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 9426 */;
+// Module 9456 (useGameProfileStoreWebsites)
+import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9457 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9459 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,28 +1,28 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 12971
+// Function ID: 12972
 // Name: ConjurePlanExperiences
-// Dependencies: [19, 17, 21, 9817, 12940, 10924, 12268, 11421, 5140, 575, 5751, 8749, 12925, 1113, 4026, 12942, 12943, 12933, 2]
+// Dependencies: [19, 17, 21, 9850, 12972, 10956, 12300, 11453, 5170, 575, 5783, 8782, 12957, 1113, 4026, 12974, 12975, 12965, 2]
 // Exports: default
 
-// Module 12939 (ConjurePlanExperiences)
+// Module 12971 (ConjurePlanExperiences)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import AppsIcon2 from "AppsIcon" /* 8749 */;
-import GameControllerIcon from "GameControllerIcon" /* 9817 */;
-import UserCircleIcon from "UserCircleIcon" /* 10924 */;
-import ShieldIcon from "ShieldIcon" /* 11421 */;
-import RobotIcon from "RobotIcon" /* 12268 */;
-import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12925 */;
-import conjurePlanFormat from "conjurePlanFormat" /* 12933 */;
-import WindowTopIcon from "WindowTopIcon" /* 12940 */;
-import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12942 */;
-import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12943 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import AppsIcon2 from "AppsIcon" /* 8782 */;
+import GameControllerIcon from "GameControllerIcon" /* 9850 */;
+import UserCircleIcon from "UserCircleIcon" /* 10956 */;
+import ShieldIcon from "ShieldIcon" /* 11453 */;
+import RobotIcon from "RobotIcon" /* 12300 */;
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12957 */;
+import conjurePlanFormat from "conjurePlanFormat" /* 12965 */;
+import WindowTopIcon from "WindowTopIcon" /* 12972 */;
+import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12974 */;
+import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12975 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -252,7 +252,7 @@ function ComponentSection(arg0) {
   obj = conjurePlanExperienceSections;
   const result = obj.conjurePlanExperienceIsApp(experience);
   if (result) {
-    AppsIcon = tmp2(8749).AppsIcon;
+    AppsIcon = tmp2(8782).AppsIcon;
   } else {
     AppsIcon = obj[experience.kind];
   }
@@ -261,13 +261,13 @@ function ComponentSection(arg0) {
   const obj4 = { style: tmp.iconBox, children: hasOwnProperty(AppsIcon, obj5) };
   obj5 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
   items = [hasOwnProperty(View, obj4), ];
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5783).Text;
   const intl = tmp2(1113).intl;
   const string = intl.string;
   if (result) {
     BM4Ymz = _modDef4026.BM4Ymz;
   } else {
-    BM4Ymz = tmp2(12942).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+    BM4Ymz = tmp2(12974).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
   }
   const obj6 = { variant: "body-md/medium", color: "text-strong", accessibilityRole: "header", children: string(BM4Ymz) };
   items[1] = hasOwnProperty(Text, obj6);
@@ -281,7 +281,7 @@ function ComponentSection(arg0) {
   if ("automod" === experience.kind) {
     if (1 === bullets.length) {
       const obj8 = { variant: "body-md/normal", color: "text-default", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj9) };
-      const Text2 = tmp2(5751).Text;
+      const Text2 = tmp2(5783).Text;
       obj9 = { text: bullets[0], commandNames, size: "body-md" };
       tmp8Result2 = tmp8(Text2, obj8);
     }

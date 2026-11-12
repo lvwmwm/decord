@@ -1,18 +1,18 @@
-// Module ID: 11290
-// Function ID: 11291
+// Module ID: 11322
+// Function ID: 11323
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 5072, 1072, 21, 5140, 575, 7040, 7152, 5751, 1113, 8098, 5863, 11291, 11295, 6799, 1252, 10311, 2166, 11296, 11297, 504, 11306, 11308, 11309, 2]
+// Dependencies: [5, 19, 17, 5102, 1072, 21, 5170, 575, 7073, 7185, 5783, 1113, 8131, 5895, 11323, 11327, 6831, 1252, 10343, 2166, 11328, 11329, 504, 11338, 11340, 11341, 2]
 
-// Module 11290 (ForLaterMessageCard)
+// Module 11322 (ForLaterMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 11291 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 11323 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let obj2;
 let tmp6;
 let unpackModuleId;
-const AssetRegistryDefault = tmp6(5863);
+const AssetRegistryDefault = tmp6(5895);
 class ForLaterDeletedMessageCard {
   constructor(savedMessage) {
     let IconButton;
@@ -38,12 +38,12 @@ class ForLaterDeletedMessageCard {
     let obj = { variant: "primary", border: "subtle", shadow: "none", style: items, children: items1 };
     items = [, ];
     ({ card: arr[0], deletedCard: arr[1] } = tmp);
-    const Card = savedMessage(7040).Card;
+    const Card = savedMessage(7073).Card;
     const obj2 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const CircleErrorIcon = savedMessage(7152).CircleErrorIcon;
+    const CircleErrorIcon = savedMessage(7185).CircleErrorIcon;
     items1 = [closure_10(CircleErrorIcon, obj2), , ];
     const obj3 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.deletedText, children: stringResult };
-    const Text = savedMessage(5751).Text;
+    const Text = savedMessage(5783).Text;
     const tmp2 = closure_11;
     if (null != savedMessage.saveData.dueAt) {
       const intl2 = tmp3(1113).intl;
@@ -64,7 +64,7 @@ class ForLaterDeletedMessageCard {
         return obj.removeSavedMessage(savedMessage.saveData);
       }
     };
-    IconButton = tmp3(8098).IconButton;
+    IconButton = tmp3(8131).IconButton;
     intl3 = tmp3(1113).intl;
     items1[2] = closure_10(View, obj4);
     return tmp2(Card, obj);

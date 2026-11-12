@@ -1,56 +1,53 @@
 // Module ID: 13127
 // Function ID: 13128
 // Name: tokenize
-// Dependencies: [13050]
+// Dependencies: [13082]
 
 // Module 13127 (tokenize)
-import tokenize from "tokenize" /* 13050 */;
+import tokenize from "tokenize" /* 13082 */;
 
+let items;
 let obj2;
-function eatIdentifierOrAsterisk() {
-  const self = this;
-  let tmp = this.scanner.tokenType !== Ident;
-  if (tmp) {
-    const scanner = self.scanner;
-    tmp = false === scanner.isDelim(42);
-  }
-  if (tmp) {
-    self.error("Identifier or asterisk is expected");
-  }
-  const iter = self.scanner;
-  iter.next();
-}
-const Ident = tokenize.TYPE.Ident;
-let obj = {
-  name: "TypeSelector",
+const Semicolon = tokenize.TYPE.Semicolon;
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const obj = {
+  name: "AtrulePrelude",
   structure: obj2,
-  parse() {
-    let scanner3;
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const scanner = this.scanner;
-    if (scanner.isDelim(124)) {
-      const iter2 = self.scanner;
-      iter2.next();
-      eatIdentifierOrAsterisk.call(self);
-    } else {
-      eatIdentifierOrAsterisk.call(self);
-      const scanner2 = self.scanner;
-      const obj = eatIdentifierOrAsterisk;
-      if (scanner2.isDelim(124)) {
-        const iter = self.scanner;
-        iter.next();
-        obj.call(self);
-      }
+  parse(keys) {
+    let formatted = keys;
+    if (null !== keys) {
+      formatted = keys.toLowerCase();
     }
-    const obj2 = { type: "TypeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-    scanner3 = self.scanner;
-    return obj2;
+    const self = this;
+    const scanner = this.scanner;
+    scanner.skipSC();
+    const atrule = this.atrule;
+    if (atrule.hasOwnProperty(formatted)) {
+      let callResult;
+      if (typeof self.atrule[formatted].prelude === "function") {
+        const prelude = self.atrule[formatted].prelude;
+        callResult = prelude.call(self);
+      }
+      const scanner2 = self.scanner;
+      scanner2.skipSC();
+      const tmp5 = true !== self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
+      if (tmp5) {
+        self.error("Semicolon or block is expected");
+      }
+      if (null === callResult) {
+        callResult = self.createList();
+      }
+      const element = { type: "AtrulePrelude", loc: self.getLocationFromList(callResult), children: callResult };
+      return element;
+    }
+    callResult = self.readSequence(self.scope.AtrulePrelude);
   },
-  generate(name) {
-    this.chunk(name.name);
-  }
+  generate(arg0) {
+    this.children(arg0);
+  },
+  walkContext: "atrulePrelude"
 };
-obj2 = { name: String };
+obj2 = { children: items };
+items = [[]];
 
 export default obj;

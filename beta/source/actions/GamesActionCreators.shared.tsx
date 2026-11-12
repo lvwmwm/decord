@@ -1,22 +1,22 @@
-// Module ID: 11859
-// Function ID: 11860
+// Module ID: 11891
+// Function ID: 11892
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4988, 6898, 4989, 5890, 1072, 6902, 7547, 11850, 11856, 11860, 5061, 13410, 2148, 5799, 11892, 11891, 11061, 6906, 13413, 13414, 7549, 2]
+// Dependencies: [5, 5018, 6931, 5019, 5922, 1072, 6935, 7580, 11882, 11888, 11892, 5091, 13442, 2148, 5831, 11924, 11923, 11093, 6939, 13445, 13446, 7582, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 11859 (tryJoinAsFrame)
+// Module 11891 (tryJoinAsFrame)
 import Constants from "Constants" /* 1072 */;
-import FramesConstants from "FramesConstants" /* 6902 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11850 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11856 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11860 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 13414 */;
+import FramesConstants from "FramesConstants" /* 6935 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11882 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11888 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11892 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 13446 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import PresenceStore from "PresenceStore" /* 5890 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PresenceStore from "PresenceStore" /* 5922 */;
 import size from "module_2" /* 2 */;
 
 let application, c8, c9, channelId2, customId, embeddedActivitiesForChannel, inviterUserId, referrerId, source, user;
@@ -241,7 +241,7 @@ obj = function _startFrame() {
               frameParticipantId = undefined;
               referrerId = 1;
               source = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === referrerId) {
             if (arg0 === 1) {

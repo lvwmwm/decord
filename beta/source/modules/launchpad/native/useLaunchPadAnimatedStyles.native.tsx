@@ -1,18 +1,18 @@
-// Module ID: 19440
-// Function ID: 19441
+// Module ID: 19478
+// Function ID: 19479
 // Name: useLaunchPadAnimatedStyles
-// Dependencies: [11681, 1377, 5140, 12238, 13028, 1627, 1652, 5761, 2]
+// Dependencies: [11713, 1377, 5170, 12270, 13060, 1627, 1652, 5793, 2]
 // Exports: default
 
-// Module 19440 (useLaunchPadAnimatedStyles)
+// Module 19478 (useLaunchPadAnimatedStyles)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5761 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11681 */;
-import useAnimatedKeyboardHeightDefault from "useAnimatedKeyboardHeight" /* 12238 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13028 */;
+import spring_spring from "spring/spring" /* 5793 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11713 */;
+import useAnimatedKeyboardHeightDefault from "useAnimatedKeyboardHeight" /* 12270 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13060 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, _undefined2;

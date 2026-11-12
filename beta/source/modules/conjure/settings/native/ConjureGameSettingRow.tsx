@@ -1,18 +1,18 @@
-// Module ID: 12320
-// Function ID: 12321
+// Module ID: 12352
+// Function ID: 12353
 // Name: ConjureGameSettingRow
-// Dependencies: [19, 17, 21, 5140, 575, 12321, 12324, 1113, 4026, 5751, 7126, 7038, 5374, 12325, 7037, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 12353, 12356, 1113, 4026, 5783, 7159, 7071, 5406, 12357, 7070, 2]
 // Exports: default
 
-// Module 12320 (ConjureGameSettingRow)
+// Module 12352 (ConjureGameSettingRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
-import ConjureGamePickerSheetDefault from "ConjureGamePickerSheet" /* 12325 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5406 */;
+import ConjureGamePickerSheetDefault from "ConjureGamePickerSheet" /* 12357 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -37,14 +37,14 @@ export default function ConjureGameSettingRow(def) {
   def = def.def;
   ({ hint, value, pickingEmpty, disabled, onChange: importDefault, onPickingEmptyChange: dependencyMap } = def);
   let tmp = closure_6();
-  let obj = def(12321);
+  let obj = def(12353);
   let closure_3 = obj.useConjureGameNameLookup();
   let items = value;
   if (!Array.isArray(value)) {
     items = [];
   }
   const isArray = Array.isArray(value) && 0 === value.length && !pickingEmpty;
-  if (def.key === def(12324).CONJURE_OVERLAY_GAMES_SETTING_KEY) {
+  if (def.key === def(12356).CONJURE_OVERLAY_GAMES_SETTING_KEY) {
     const intl = tmp2(1113).intl;
     hint = intl.string(_modDef4026.cqWCNY);
   } else if (hint == null) {
@@ -59,8 +59,8 @@ export default function ConjureGameSettingRow(def) {
   });
   let joined = mapped.join(", ");
   let obj2 = { style: tmp.container, children: items1 };
-  items1 = [items(tmp2(5751).Text, { variant: "body-sm/normal", color: "text-default", children: hint }), , ];
-  const TableRowGroup = tmp2(7126).TableRowGroup;
+  items1 = [items(tmp2(5783).Text, { variant: "body-sm/normal", color: "text-default", children: hint }), , ];
+  const TableRowGroup = tmp2(7159).TableRowGroup;
   const obj3 = {
     label: def.label,
     subLabel: joined,
@@ -86,7 +86,7 @@ export default function ConjureGameSettingRow(def) {
       showActionSheet(obj);
     }
   };
-  const TableRow = tmp2(7038).TableRow;
+  const TableRow = tmp2(7071).TableRow;
   const tmp9 = closure_3;
   if ("" === joined) {
     const intl2 = tmp2(1113).intl;
@@ -103,14 +103,14 @@ export default function ConjureGameSettingRow(def) {
       importDefault([]);
     }
   };
-  const TableCheckboxRow = tmp2(7037).TableCheckboxRow;
+  const TableCheckboxRow = tmp2(7070).TableCheckboxRow;
   intl3 = tmp2(1113).intl;
   items2[1] = items(TableCheckboxRow, obj5);
   items1[1] = closure_5(TableRowGroup, obj4);
   let tmp10Result = null;
   if (pickingEmpty) {
     const obj6 = { variant: "body-xs/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: intl4.string(_modDef4026["/++Pf+"]) };
-    const Text = tmp2(5751).Text;
+    const Text = tmp2(5783).Text;
     intl4 = tmp2(1113).intl;
     tmp10Result = tmp10(Text, obj6);
   }

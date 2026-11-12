@@ -1,15 +1,15 @@
-// Module ID: 15428
-// Function ID: 15429
+// Module ID: 15460
+// Function ID: 15461
 // Name: getRequestToStreamCTAAndIsDisabled
-// Dependencies: [32, 502, 13415, 11, 11841, 1113, 3152, 2]
+// Dependencies: [32, 502, 13447, 11, 11873, 1113, 3152, 2]
 // Exports: default
 
-// Module 15428 (getRequestToStreamCTAAndIsDisabled)
+// Module 15460 (getRequestToStreamCTAAndIsDisabled)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl8 from "intl" /* 1113 */;
 import _modDef3152 from "module_3152" /* 3152 */;
-import isInviteActive from "isInviteActive" /* 11841 */;
-import useCanFulfillStreamRequest from "useCanFulfillStreamRequest" /* 13415 */;
+import isInviteActive from "isInviteActive" /* 11873 */;
+import useCanFulfillStreamRequest from "useCanFulfillStreamRequest" /* 13447 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

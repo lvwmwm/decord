@@ -1,15 +1,15 @@
-// Module ID: 7057
-// Function ID: 7058
+// Module ID: 7090
+// Function ID: 7091
 // Name: UserVerification
-// Dependencies: [19, 21, 5140, 5174, 7058, 5751, 1113, 2]
+// Dependencies: [19, 21, 5170, 5206, 7091, 5783, 1113, 2]
 // Exports: default
 
-// Module 7057 (UserVerification)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5174 */;
-import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 7058 */;
+// Module 7090 (UserVerification)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5206 */;
+import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 7091 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -41,7 +41,7 @@ export default function UserVerification(arg0) {
     const tmp8 = IdentityVerificationFieldDefault;
     items[1] = _false(tmp8, obj2);
     const obj3 = { style: tmp.emailPhoneNote, variant: "body-xs/medium", color: "text-default", children: stringResult };
-    const Text = tmp12(5751).Text;
+    const Text = tmp12(5783).Text;
     const tmp6 = _false;
     if (platform === MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE) {
       const intl2 = tmp12(1113).intl;

@@ -1,18 +1,18 @@
-// Module ID: 16040
-// Function ID: 16041
+// Module ID: 16072
+// Function ID: 16073
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 5140, 575, 7015, 5842, 5751, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 7048, 5874, 5783, 2]
 // Exports: default
 
-// Module 16040 (ShareEmbed)
+// Module 16072 (ShareEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7015 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7048 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -147,7 +147,7 @@ export default function ShareEmbed(embed) {
       const tmp13 = closure_7;
       if (tmp9Result) {
         let obj2 = { style: tmp.thumbnail, source: memo, resizeMode: "cover" };
-        tmp9Result = tmp9(isLoadingEmbed(5842), obj2);
+        tmp9Result = tmp9(isLoadingEmbed(5874), obj2);
       }
       let obj3 = { children: items6 };
       items6 = [tmp9Result, ];

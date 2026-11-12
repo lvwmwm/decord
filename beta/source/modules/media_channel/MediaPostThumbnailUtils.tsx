@@ -1,12 +1,12 @@
-// Module ID: 6182
-// Function ID: 6183
+// Module ID: 6214
+// Function ID: 6215
 // Name: MediaPostThumbnailUtils
-// Dependencies: [6183, 6185, 2]
+// Dependencies: [6215, 6217, 2]
 // Exports: getBackgroundImageUrl, getEmbedPreviewImageUrl, getThumbnailImage
 
-// Module 6182 (MediaPostThumbnailUtils)
-import MediaFormatTesters from "MediaFormatTesters" /* 6183 */;
-import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6185 */;
+// Module 6214 (MediaPostThumbnailUtils)
+import MediaFormatTesters from "MediaFormatTesters" /* 6215 */;
+import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6217 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_channel/MediaPostThumbnailUtils.tsx");
@@ -59,7 +59,7 @@ export function getThumbnailImage(thumbnail) {
         const obj = MediaFormatTesters;
         const tmp2 = require;
         if (obj.isVideoUrl(url)) {
-          const tmp2Result = tmp2(6185);
+          const tmp2Result = tmp2(6217);
           withMediaFormatResult = tmp2Result.withMediaFormat(proxy_url, "webp");
         }
         tmp = withMediaFormatResult;

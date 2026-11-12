@@ -1,12 +1,12 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15450
+// Function ID: 15451
 // Name: getRemoteJoinFooterLabel
-// Dependencies: [9828, 1113, 2]
+// Dependencies: [9861, 1113, 2]
 // Exports: getRemoteJoinFooterLabel
 
-// Module 15418 (getRemoteJoinFooterLabel)
+// Module 15450 (getRemoteJoinFooterLabel)
 import intl6 from "intl" /* 1113 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9828 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9861 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getRemoteJoinFooterLabel.tsx");

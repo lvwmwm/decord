@@ -1,10 +1,10 @@
-// Module ID: 14469
-// Function ID: 14470
+// Module ID: 14501
+// Function ID: 14502
 // Name: WelcomeScreenActionCreators
 // Dependencies: [5, 1072, 572, 1282, 2]
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed
 
-// Module 14469 (WelcomeScreenActionCreators)
+// Module 14501 (WelcomeScreenActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

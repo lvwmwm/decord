@@ -1,17 +1,17 @@
-// Module ID: 9812
-// Function ID: 9813
+// Module ID: 9845
+// Function ID: 9846
 // Name: XboxLinkModal
-// Dependencies: [19, 9813, 1072, 21, 7630, 8429, 9811, 1113, 9814, 9821, 9822, 9826, 14861, 14864, 14866, 9820, 14870, 7231, 2]
+// Dependencies: [19, 9846, 1072, 21, 7663, 8462, 9844, 1113, 9847, 9854, 9855, 9859, 14893, 14896, 14898, 9853, 14902, 7264, 2]
 // Exports: default
 
-// Module 9812 (XboxLinkModal)
+// Module 9845 (XboxLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7630 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8429 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9811 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9813 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7663 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8462 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9844 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9846 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export default function XboxLinkModal(startAtSignIn) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = flag(9820);
+  let obj = flag(9853);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles, flag];
   const tmp6 = flag ? XboxLinkModalScenes.PRE_CONNECT : XboxLinkModalScenes.LANDING;
@@ -115,9 +115,9 @@ export default function XboxLinkModal(startAtSignIn) {
       }
     };
   }, items);
-  const tmpResult = flag(14870);
+  const tmpResult = flag(14902);
   const accountLinkStepTracking = tmpResult.useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack, tmp6);
-  const Navigator = tmp(7231).Navigator;
+  const Navigator = tmp(7264).Navigator;
   const intl = tmp(1113).intl;
   return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={tmp6} headerBackTitle={intl.string(flag(1113).t["13/7kX"])} />;
 };

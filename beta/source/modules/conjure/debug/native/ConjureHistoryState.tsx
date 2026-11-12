@@ -1,18 +1,18 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 13285
+// Function ID: 13286
 // Name: ConjureHistoryState
-// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 4026, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5783, 1113, 4026, 2]
 // Exports: ConjureHistoryNotice, ConjureHistoryPlaceholder
 
-// Module 13253 (ConjureHistoryState)
+// Module 13285 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import Text_Text from "Text/Text" /* 5751 */;
+import Text_Text from "Text/Text" /* 5783 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,7 +44,7 @@ export function ConjureHistoryPlaceholder(state) {
     emptyTitle = intl.string(_modDef4026.h1SE6R);
   }
   items = [React3(Text, { variant: "body-sm/medium", color: "text-default", children: emptyTitle }), ];
-  const Text2 = tmp5(5751).Text;
+  const Text2 = tmp5(5783).Text;
   if ("failed" === state.state.status) {
     const intl2 = tmp5(1113).intl;
     emptyBody = intl2.string(_modDef4026["8SErdg"]);

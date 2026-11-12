@@ -1,14 +1,14 @@
-// Module ID: 8264
-// Function ID: 8265
+// Module ID: 8297
+// Function ID: 8298
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [5754, 5140, 575, 504, 2]
+// Dependencies: [5786, 5170, 575, 504, 2]
 // Exports: useLegacyTextMigrationHighlight
 
-// Module 8264 (useLegacyTextMigrationHighlight)
+// Module 8297 (useLegacyTextMigrationHighlight)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import DevSettingsStore from "DevSettingsStore" /* 5754 */;
-import createStyles from "createStyles" /* 5140 */;
+import DevSettingsStore from "DevSettingsStore" /* 5786 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj = { highlight: { borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER } };

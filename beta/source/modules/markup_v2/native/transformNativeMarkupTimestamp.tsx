@@ -1,12 +1,12 @@
-// Module ID: 8670
-// Function ID: 8671
+// Module ID: 8703
+// Function ID: 8704
 // Name: transformNativeMarkupTimestamp
-// Dependencies: [8671, 6164, 2]
+// Dependencies: [8704, 6196, 2]
 // Exports: transformNativeTimestamp
 
-// Module 8670 (transformNativeMarkupTimestamp)
-import MarkupTypes from "MarkupTypes" /* 6164 */;
-import TimestampUtils from "TimestampUtils" /* 8671 */;
+// Module 8703 (transformNativeMarkupTimestamp)
+import MarkupTypes from "MarkupTypes" /* 6196 */;
+import TimestampUtils from "TimestampUtils" /* 8704 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupTimestamp.tsx");

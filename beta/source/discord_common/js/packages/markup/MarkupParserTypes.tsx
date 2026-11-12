@@ -1,9 +1,9 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8551
+// Function ID: 8552
 // Name: MarkupParserTypes
 // Dependencies: [2]
 
-// Module 8518 (MarkupParserTypes)
+// Module 8551 (MarkupParserTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/markup/MarkupParserTypes.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 7854
-// Function ID: 7855
+// Module ID: 7887
+// Function ID: 7888
 // Name: UserProfilePersonalWidget
-// Dependencies: [1385, 1387, 7855, 5170, 4973, 1380, 1342, 7849, 2107, 2]
+// Dependencies: [1385, 1387, 7888, 5202, 5003, 1380, 1342, 7882, 2107, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 7854 (UserProfilePersonalWidget)
+// Module 7887 (UserProfilePersonalWidget)
 import _modDef1342 from "module_1342" /* 1342 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import dismissible_content from "dismissible_content" /* 4973 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5170 */;
-import WidgetType from "WidgetType" /* 7849 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7855 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5202 */;
+import WidgetType from "WidgetType" /* 7882 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7888 */;
 import UserStore from "UserStore" /* 1385 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -265,7 +265,7 @@ class UserProfilePersonalWidget {
                 if (!tmp14) {
                   break;
                 }
-              } else if (tmp17(7855).PersonalWidgetSectionType.FIELDS === type) {
+              } else if (tmp17(7888).PersonalWidgetSectionType.FIELDS === type) {
                 let flag2 = false;
                 if (tmp3.fields.length === tmp4.fields.length) {
                   let num = 0;

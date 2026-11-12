@@ -1,9 +1,9 @@
-// Module ID: 9424
-// Function ID: 9425
+// Module ID: 9457
+// Function ID: 9458
 // Name: ThirdPartyGameApplicationWebsiteCategory
 // Dependencies: [2]
 
-// Module 9424 (ThirdPartyGameApplicationWebsiteCategory)
+// Module 9457 (ThirdPartyGameApplicationWebsiteCategory)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThirdPartyGameApplicationWebsiteCategory.tsx");

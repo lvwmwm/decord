@@ -1,22 +1,22 @@
-// Module ID: 9129
-// Function ID: 9130
+// Module ID: 9162
+// Function ID: 9163
 // Name: PinotDiscoverableRow
-// Dependencies: [19, 1072, 21, 7126, 7038, 9130, 1113, 3316, 9115, 2185, 5374, 9082, 2118, 9132, 9136, 9133, 2]
+// Dependencies: [19, 1072, 21, 7159, 7071, 9163, 1113, 3316, 9148, 2185, 5406, 9115, 2118, 9165, 9169, 9166, 2]
 // Exports: PinotCreateChannelDiscoverableRow
 
-// Module 9129 (PinotDiscoverableRow)
+// Module 9162 (PinotDiscoverableRow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import _modDef3316 from "module_3316" /* 3316 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import TableRow2 from "TableRow" /* 7038 */;
-import TableRowGroup2 from "TableRowGroup" /* 7126 */;
-import PinotDiscoverable from "PinotDiscoverable" /* 9115 */;
-import PinotEligibility from "PinotEligibility" /* 9133 */;
-import useIsPinotNewChannelPrivate from "useIsPinotNewChannelPrivate" /* 9136 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import TableRow2 from "TableRow" /* 7071 */;
+import TableRowGroup2 from "TableRowGroup" /* 7159 */;
+import PinotDiscoverable from "PinotDiscoverable" /* 9148 */;
+import PinotEligibility from "PinotEligibility" /* 9166 */;
+import useIsPinotNewChannelPrivate from "useIsPinotNewChannelPrivate" /* 9169 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ function PinotDiscoverableSelectRow(value) {
       },
       hasIcons: false
     };
-    const tmp2 = asyncRequire(9082, dependencyMap.paths);
+    const tmp2 = asyncRequire(9115, dependencyMap.paths);
     intl = intl3.intl;
     openLazy(tmp2, "PinotDiscoverableSheet", obj);
   }} />;
@@ -81,14 +81,14 @@ function PinotDiscoverableRow(onChange) {
   let isPrivate;
   onChange = onChange.onChange;
   ({ guildId, isPrivate, flags } = onChange);
-  let obj = onChange(9132);
+  let obj = onChange(9165);
   const pinotDiscoverableRowState = obj.usePinotDiscoverableRowState(guildId, flags, isPrivate);
   const kind = pinotDiscoverableRowState.kind;
   if ("hidden" === kind) {
     return null;
   } else if ("private" === kind) {
     const intl = tmp(1113).intl;
-    return <PinotDiscoverableTableRow value={onChange(9115).PinotDiscoverableOption.NONE} description={intl.string(pinotDiscoverableRowState(3316)["MrI+fw"])} accessible accessibilityState={{ disabled: true }} />;
+    return <PinotDiscoverableTableRow value={onChange(9148).PinotDiscoverableOption.NONE} description={intl.string(pinotDiscoverableRowState(3316)["MrI+fw"])} accessible accessibilityState={{ disabled: true }} />;
   } else if ("select" === kind) {
     ({ value: obj2.value, options: obj2.options, readOnly: obj2.readOnly } = pinotDiscoverableRowState);
     return <PinotDiscoverableSelectRow value={null} options={null} readOnly={null} onChange={function onChange(arg0) {

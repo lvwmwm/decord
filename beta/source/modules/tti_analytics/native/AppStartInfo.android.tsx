@@ -1,11 +1,11 @@
-// Module ID: 7890
-// Function ID: 7891
+// Module ID: 7923
+// Function ID: 7924
 // Name: AppStartInfo
-// Dependencies: [32, 5, 7891, 5321, 2]
+// Dependencies: [32, 5, 7924, 5353, 2]
 
-// Module 7890 (AppStartInfo)
-import react_nativeDefault from "react-native" /* 5321 */;
-import react_nativeDefault2 from "react-native" /* 7891 */;
+// Module 7923 (AppStartInfo)
+import react_nativeDefault from "react-native" /* 5353 */;
+import react_nativeDefault2 from "react-native" /* 7924 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

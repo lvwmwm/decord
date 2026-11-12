@@ -1,10 +1,10 @@
-// Module ID: 7268
-// Function ID: 7269
+// Module ID: 7301
+// Function ID: 7302
 // Name: config
 // Dependencies: [2]
 // Exports: setDesignConfig
 
-// Module 7268 (config)
+// Module 7301 (config)
 import size from "module_2" /* 2 */;
 
 const designConfig = {

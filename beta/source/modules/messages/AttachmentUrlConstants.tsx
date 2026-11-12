@@ -1,9 +1,9 @@
-// Module ID: 6189
-// Function ID: 6190
+// Module ID: 6221
+// Function ID: 6222
 // Name: AttachmentUrlConstants
 // Dependencies: [2]
 
-// Module 6189 (AttachmentUrlConstants)
+// Module 6221 (AttachmentUrlConstants)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["/attachments/", "/ephemeral-attachments/"]);

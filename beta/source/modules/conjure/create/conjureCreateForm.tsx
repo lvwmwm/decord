@@ -1,10 +1,10 @@
-// Module ID: 13204
-// Function ID: 13205
+// Module ID: 13236
+// Function ID: 13237
 // Name: conjureCreateForm
 // Dependencies: [2]
 // Exports: createSubmissionBlocker, isConjureEligibleGuild, isCreateDisabled
 
-// Module 13204 (conjureCreateForm)
+// Module 13236 (conjureCreateForm)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/create/conjureCreateForm.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 12862
-// Function ID: 12863
+// Module ID: 12894
+// Function ID: 12895
 // Name: useConjureAutomodSettingsLink
-// Dependencies: [19, 5011, 5072, 6899, 10987, 1072, 21, 504, 6900, 1113, 4026, 9154, 2]
+// Dependencies: [19, 5041, 5102, 6932, 11019, 1072, 21, 504, 6933, 1113, 4026, 9187, 2]
 // Exports: ConjureAutomodSettingsLink, default
 
-// Module 12862 (useConjureAutomodSettingsLink)
+// Module 12894 (useConjureAutomodSettingsLink)
 import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6900 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10987 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11019 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

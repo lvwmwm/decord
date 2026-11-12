@@ -1,14 +1,14 @@
-// Module ID: 19937
-// Function ID: 19938
+// Module ID: 19975
+// Function ID: 19976
 // Name: MultiAccountManager
-// Dependencies: [1385, 15815, 7350, 572, 15816, 2]
+// Dependencies: [1385, 15847, 7383, 572, 15848, 2]
 
-// Module 19937 (MultiAccountManager)
+// Module 19975 (MultiAccountManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GatewaySocket from "GatewaySocket" /* 15816 */;
+import GatewaySocket from "GatewaySocket" /* 15848 */;
 import UserStore from "UserStore" /* 1385 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15815 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15847 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 class MultiAccountManager extends AutomaticLifecycleManager {

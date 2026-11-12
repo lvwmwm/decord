@@ -1,16 +1,16 @@
-// Module ID: 14319
-// Function ID: 14320
+// Module ID: 14351
+// Function ID: 14352
 // Name: useCanBoostGuildFromMobile
-// Dependencies: [7661, 2176, 504, 8534, 14320, 7662, 7665, 2]
+// Dependencies: [7694, 2176, 504, 8567, 14352, 7695, 7698, 2]
 // Exports: default
 
-// Module 14319 (useCanBoostGuildFromMobile)
+// Module 14351 (useCanBoostGuildFromMobile)
 import get_initialized from "get initialized" /* 504 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7662 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7665 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8534 */;
-import canBoostGuildFromMobileDefault from "canBoostGuildFromMobile" /* 14320 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7661 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7695 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7698 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8567 */;
+import canBoostGuildFromMobileDefault from "canBoostGuildFromMobile" /* 14352 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7694 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import size from "module_2" /* 2 */;
 

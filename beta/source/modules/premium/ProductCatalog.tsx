@@ -1,10 +1,10 @@
-// Module ID: 16188
-// Function ID: 16189
+// Module ID: 16220
+// Function ID: 16221
 // Name: ProductCatalog
 // Dependencies: [1386, 1387, 3, 1398, 1391, 2]
 // Exports: canUserUse
 
-// Module 16188 (ProductCatalog)
+// Module 16220 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PerksStateUtils from "PerksStateUtils" /* 1391 */;

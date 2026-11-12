@@ -1,9 +1,9 @@
-// Module ID: 9217
-// Function ID: 9218
+// Module ID: 9250
+// Function ID: 9251
 // Name: LinkRecord
 // Dependencies: [1405, 1072, 2]
 
-// Module 9217 (LinkRecord)
+// Module 9250 (LinkRecord)
 import Constants from "Constants" /* 1072 */;
 import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;

@@ -1,23 +1,23 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 17153
+// Function ID: 17154
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1385, 21, 5140, 8443, 7038, 5194, 1187, 7426, 5751, 1113, 2664, 7126, 2]
+// Dependencies: [19, 1385, 21, 5170, 8476, 7071, 5226, 1187, 7459, 5783, 1113, 2664, 7159, 2]
 // Exports: default
 
-// Module 17119 (FamilyCenterTopUsersBottomSheet)
+// Module 17153 (FamilyCenterTopUsersBottomSheet)
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import _modDef2664 from "module_2664" /* 2664 */;
-import UserUtilsDefault from "UserUtils" /* 5194 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import TableRow2 from "TableRow" /* 7038 */;
-import TableRowGroup2 from "TableRowGroup" /* 7126 */;
-import ActionSheet2 from "ActionSheet" /* 7426 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8443 */;
+import UserUtilsDefault from "UserUtils" /* 5226 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import TableRow2 from "TableRow" /* 7071 */;
+import TableRowGroup2 from "TableRowGroup" /* 7159 */;
+import ActionSheet2 from "ActionSheet" /* 7459 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8476 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -36,7 +36,7 @@ function UserRow(userActivity) {
     const obj2 = { label: obj3.getName(user), subLabel: topUserOrGuildDescription, icon: React3(Avatar, obj4) };
     const TableRow = TableRow2.TableRow;
     obj3 = UserUtilsDefault;
-    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "r" };
+    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
     Avatar = native.Avatar;
     return React3(TableRow, obj2);
   }

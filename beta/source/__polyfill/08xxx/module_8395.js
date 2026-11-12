@@ -1,82 +1,118 @@
 // Module ID: 8395
 // Function ID: 8396
-// Dependencies: [8366]
+// Dependencies: [8382, 8385]
 
 // Module 8395
-import _modDef8366 from "module_8366" /* 8366 */;
+import _mod8382 from "module_8382" /* 8382 */;
+import _modDef8385 from "module_8385" /* 8385 */;
 
 
 export default {
-  read(byteLength, sum) {
-    let str6;
-    let str7;
-    let tmp11;
-    let tmp16;
-    let tmp20;
-    let tmp24;
-    let tmp28;
-    let tmp6;
+  isWebpFile(dataView) {
+    let tmp = dataView;
+    if (tmp) {
+      const obj = _mod8382;
+      tmp = obj.getStringFromDataView(dataView, 0, 4) === "RIFF";
+    }
+    if (tmp) {
+      const obj2 = _mod8382;
+      tmp = obj2.getStringFromDataView(dataView, 8, 4) === "WEBP";
+    }
+    return tmp;
+  },
+  findOffsets(byteLength) {
     let tmp;
-    if (sum + 4 <= byteLength.byteLength) {
-      const obj = _modDef8366;
-      const longAt = obj.getLongAt(byteLength, sum);
-      const _HermesInternal = HermesInternal;
-      tmp = { value: longAt, description: "" + longAt + "px" };
-      const obj2 = { value: longAt, description: "" + longAt + "px" };
-    }
-    const obj3 = { "Image Width": tmp, "Image Height": tmp6, "Bit Depth": tmp11, "Color Type": tmp16, Compression: tmp20, Filter: tmp24, Interlace: tmp28 };
-    tmp6 = undefined;
-    if (sum + 4 + 4 <= byteLength.byteLength) {
-      const obj4 = _modDef8366;
-      const longAt1 = obj4.getLongAt(byteLength, sum + 4);
-      const _HermesInternal2 = HermesInternal;
-      tmp6 = { value: longAt1, description: "" + longAt1 + "px" };
-      const obj5 = { value: longAt1, description: "" + longAt1 + "px" };
-    }
-    tmp11 = undefined;
-    if (sum + 8 + 1 <= byteLength.byteLength) {
-      const obj6 = _modDef8366;
-      const byteAt = obj6.getByteAt(byteLength, sum + 8);
-      const _HermesInternal3 = HermesInternal;
-      tmp11 = { value: byteAt, description: "" + byteAt };
-      const obj7 = { value: byteAt, description: "" + byteAt };
-    }
-    tmp16 = undefined;
-    if (sum + 9 + 1 <= byteLength.byteLength) {
-      const obj8 = _modDef8366;
-      const byteAt1 = obj8.getByteAt(byteLength, sum + 9);
-      tmp16 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
-      const obj9 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
-    }
-    tmp20 = undefined;
-    if (sum + 10 + 1 <= byteLength.byteLength) {
-      const obj10 = _modDef8366;
-      const byteAt2 = obj10.getByteAt(byteLength, sum + 10);
-      const obj11 = { value: byteAt2, description: str6 };
-      str6 = "Unknown";
-      if (0 === byteAt2) {
-        str6 = "Deflate/Inflate";
+    let tmp2;
+    let tmp3;
+    let flag = false;
+    let num = 12;
+    let hasAppMarkers = false;
+    let vp8xChunkOffset;
+    let iccChunks;
+    let xmpChunks;
+    let tiffHeaderOffset;
+    if (20 < byteLength.byteLength) {
+      while (true) {
+        let tmp4;
+        let sum4;
+        let tmp20;
+        let tmp21;
+        let tmp22;
+        let tmp9 = require;
+        let obj = _mod8382;
+        let stringFromDataView = obj.getStringFromDataView(byteLength, num, 4);
+        let uint32 = byteLength.getUint32(num + 4, true);
+        let tmp13 = importDefault;
+        let flag3 = flag;
+        if (_modDef8385.USE_EXIF) {
+          if ("EXIF" === stringFromDataView) {
+            let tmp9Result = tmp9(8382);
+            let sum = num + 8;
+            let sum1 = sum;
+            if (tmp9Result.getStringFromDataView(byteLength, sum, 6) === "Exif\0\0") {
+              sum1 = sum + 6;
+            }
+            tmp22 = sum1;
+            flag3 = true;
+            sum4 = tmp;
+            tmp20 = tmp2;
+            tmp21 = tmp3;
+            let sum2 = uint32;
+            if (uint32 % 2 !== 0) {
+              sum2 = uint32 + 1;
+            }
+            let sum3 = num + (8 + sum2);
+            flag = flag3;
+            num = sum3;
+            tmp = sum4;
+            tmp2 = tmp20;
+            tmp3 = tmp21;
+            tmp4 = tmp22;
+            hasAppMarkers = flag3;
+            vp8xChunkOffset = sum4;
+            iccChunks = tmp20;
+            xmpChunks = tmp21;
+            tiffHeaderOffset = tmp22;
+            if (sum3 + 8 >= byteLength.byteLength) {
+              break;
+            }
+          }
+        }
+        if (tmp13(8385).USE_XMP) {
+          if ("XMP " === stringFromDataView) {
+            let obj2 = { dataOffset: num + 8, length: uint32 };
+            let items = [obj2];
+            flag3 = true;
+            sum4 = tmp;
+            tmp20 = tmp2;
+            tmp21 = items;
+            tmp22 = tmp4;
+          }
+        }
+        if (tmp13(8385).USE_ICC) {
+          if ("ICCP" === stringFromDataView) {
+            let obj3 = { offset: num + 8, length: uint32, chunkNumber: 1, chunksTotal: 1 };
+            let items1 = [obj3];
+            flag3 = true;
+            sum4 = tmp;
+            tmp20 = items1;
+            tmp21 = tmp3;
+            tmp22 = tmp4;
+          }
+        }
+        sum4 = tmp;
+        tmp20 = tmp2;
+        tmp21 = tmp3;
+        tmp22 = tmp4;
+        if ("VP8X" === stringFromDataView) {
+          sum4 = num + 8;
+          flag3 = true;
+          tmp20 = tmp2;
+          tmp21 = tmp3;
+          tmp22 = tmp4;
+        }
       }
-      tmp20 = obj11;
     }
-    tmp24 = undefined;
-    if (sum + 11 + 1 <= byteLength.byteLength) {
-      const obj12 = _modDef8366;
-      const byteAt3 = obj12.getByteAt(byteLength, sum + 11);
-      const obj13 = { value: byteAt3, description: str7 };
-      str7 = "Unknown";
-      if (0 === byteAt3) {
-        str7 = "Adaptive";
-      }
-      tmp24 = obj13;
-    }
-    tmp28 = undefined;
-    if (sum + 12 + 1 <= byteLength.byteLength) {
-      const obj14 = _modDef8366;
-      const byteAt4 = obj14.getByteAt(byteLength, sum + 12);
-      tmp28 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
-      const obj15 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
-    }
-    return obj3;
+    return { hasAppMarkers, tiffHeaderOffset, xmpChunks, iccChunks, vp8xChunkOffset };
   }
 };

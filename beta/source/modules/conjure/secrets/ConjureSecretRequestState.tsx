@@ -1,13 +1,13 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 12826
+// Function ID: 12827
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 1113, 4026, 10971, 2]
+// Dependencies: [32, 19, 1113, 4026, 11003, 2]
 // Exports: markMcpSecretRequestSaved, newestOpenSecretRequest, secretRequestStatuses, unmarkMcpSecretRequestSaved, useSecretRequestStatusChanged
 
-// Module 12794 (ConjureSecretRequestState)
+// Module 12826 (ConjureSecretRequestState)
 import intl3 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import conjureChatTurns from "conjureChatTurns" /* 10971 */;
+import conjureChatTurns from "conjureChatTurns" /* 11003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

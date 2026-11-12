@@ -1,10 +1,10 @@
-// Module ID: 17201
-// Function ID: 17202
+// Module ID: 17235
+// Function ID: 17236
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 2176, 1387, 7693, 21, 5140, 575, 5147, 5369, 5751, 6160, 1260, 10730, 1187, 17202, 7703, 8599, 2171, 5170, 4973, 504, 7641, 8595, 8594, 15588, 17203, 1113, 5715, 1092, 1377, 2]
+// Dependencies: [32, 19, 17, 2176, 1387, 7726, 21, 5170, 575, 5177, 5401, 5783, 6192, 1260, 10762, 1187, 17236, 7736, 8632, 2171, 5202, 5003, 504, 7674, 8628, 8627, 15620, 17237, 1113, 5747, 1092, 1377, 2]
 // Exports: default
 
-// Module 17201 (PremiumTabBadge)
+// Module 17235 (PremiumTabBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,27 +15,27 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 126
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import dismissible_content from "dismissible_content" /* 4973 */;
-import shared from "shared" /* 5147 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5170 */;
-import useThemeDefault from "useTheme" /* 5369 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6160 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7641 */;
-import ColorConstants from "ColorConstants" /* 7693 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7703 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 8594 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8595 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8599 */;
-import MarketingComponentType from "MarketingComponentType" /* 10730 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15588 */;
-import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 17203 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import shared from "shared" /* 5177 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5202 */;
+import useThemeDefault from "useTheme" /* 5401 */;
+import LinearGradientDefault from "LinearGradient" /* 5747 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6192 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7674 */;
+import ColorConstants from "ColorConstants" /* 7726 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7736 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 8627 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8628 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8632 */;
+import MarketingComponentType from "MarketingComponentType" /* 10762 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15620 */;
+import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 17237 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -49,7 +49,7 @@ let obj7;
 let obj8;
 let obj9;
 let tmp2;
-const AssetRegistryDefault = tmp2(17202);
+const AssetRegistryDefault = tmp2(17236);
 function ThemedTabBadge(label) {
   let Text;
   let items1;
@@ -182,14 +182,14 @@ export default function PremiumTabBadge() {
       const tmp2Result13 = ReferralProgramUtils;
       const isReferralProgramEntrypointBadgeAcknowledged = tmp2Result13.useIsReferralProgramEntrypointBadgeAcknowledged();
       const tmp2Result14 = usePromotionMarketingComponent;
-      const promotionMarketingComponent = tmp2Result14.usePromotionMarketingComponent(tmp2(10730).MarketingComponentType.PREMIUM_TAB);
+      const promotionMarketingComponent = tmp2Result14.usePromotionMarketingComponent(tmp2(10762).MarketingComponentType.PREMIUM_TAB);
       let prop = null;
       const useSelectedSnowflakeBoundDismissibleContent = useSelectedDismissibleContent.useSelectedSnowflakeBoundDismissibleContent;
       const tmp2Result15 = useSelectedDismissibleContent;
       if (null != promotionMarketingComponent) {
         prop = null;
         if ("premiumTab" === promotionMarketingComponent.properties.properties.oneofKind) {
-          prop = tmp2(4973).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+          prop = tmp2(5003).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
         }
       }
       let str2;
@@ -236,7 +236,7 @@ export default function PremiumTabBadge() {
         const obj7 = { style: tmp.tag, colors: Gradients.PREMIUM_TIER_2, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, children: metroImportAll(Text4, obj8) };
         const items3 = [tmp.uppercase, ];
         const tmp54 = LinearGradientDefault;
-        Text4 = tmp2(5751).Text;
+        Text4 = tmp2(5783).Text;
         let text;
         const tmp2Result17 = PlatformUtils;
         if (tmp2Result17.isAndroid()) {
@@ -269,7 +269,7 @@ export default function PremiumTabBadge() {
           const obj12 = { variant: "body-xs/semibold", color: "interactive-text-default", style: items6, children: intl5.string(intl9.t["/DTtr6"]) };
           items6 = [, ];
           ({ uppercase: arr8[0], text: arr8[1] } = tmp);
-          const Text3 = tmp2(5751).Text;
+          const Text3 = tmp2(5783).Text;
           intl5 = tmp2(1113).intl;
           items5[1] = metroImportAll(Text3, obj12);
           tmp44 = React4(View, obj10);
@@ -279,7 +279,7 @@ export default function PremiumTabBadge() {
           obj14 = { variant: "body-xs/semibold", color: "text-overlay-light", style: items7, children: intl4.string(intl9.t["/DTtr6"]) };
           items7 = [, ];
           ({ uppercase: arr5[0], text: arr5[1] } = tmp);
-          Text2 = tmp2(5751).Text;
+          Text2 = tmp2(5783).Text;
           intl4 = tmp2(1113).intl;
           tmp44 = metroImportAll(tmp43, obj13);
         }
@@ -290,7 +290,7 @@ export default function PremiumTabBadge() {
           const obj15 = { style: tmp.tag, colors: Gradients.PREMIUM_TIER_2, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, children: metroImportAll(Text, obj16) };
           const items8 = [tmp.uppercase, ];
           const tmp37 = LinearGradientDefault;
-          Text = tmp2(5751).Text;
+          Text = tmp2(5783).Text;
           let text1;
           const tmp2Result18 = PlatformUtils;
           if (tmp2Result18.isAndroid()) {

@@ -1,41 +1,41 @@
-// Module ID: 9719
-// Function ID: 9720
+// Module ID: 9752
+// Function ID: 9753
 // Name: premium_marketing_component_properties
-// Dependencies: [32, 1197, 9720, 9724, 9725, 9726, 9727, 9728, 9730, 9732, 9733, 9734, 9735, 9736, 9737, 9738, 9739, 9740, 9741, 9742, 9743, 9744, 9745, 9746, 9747, 9748, 9749, 9750, 9751, 9752, 9753, 9754, 9755, 2]
+// Dependencies: [32, 1197, 9753, 9757, 9758, 9759, 9760, 9761, 9763, 9765, 9766, 9767, 9768, 9769, 9770, 9771, 9772, 9773, 9774, 9775, 9776, 9777, 9778, 9779, 9780, 9781, 9782, 9783, 9784, 9785, 9786, 9787, 9788, 2]
 
-// Module 9719 (premium_marketing_component_properties)
+// Module 9752 (premium_marketing_component_properties)
 import _mod1197 from "module_1197" /* 1197 */;
-import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 9720 */;
-import premium_tab from "premium_tab" /* 9724 */;
-import marketing_page_banner from "marketing_page_banner" /* 9725 */;
-import payment_modal_banner from "payment_modal_banner" /* 9726 */;
-import mobile_bottom_sheet from "mobile_bottom_sheet" /* 9727 */;
-import gift_icon from "gift_icon" /* 9728 */;
-import gift_icon_coachmark from "gift_icon_coachmark" /* 9730 */;
-import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 9732 */;
-import gift_customization_banner from "gift_customization_banner" /* 9733 */;
-import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 9734 */;
-import gift_reminder_nagbar from "gift_reminder_nagbar" /* 9735 */;
-import gift_reminder_coachmark from "gift_reminder_coachmark" /* 9736 */;
-import premium_tab_tooltip from "premium_tab_tooltip" /* 9737 */;
-import premium_tab_popover from "premium_tab_popover" /* 9738 */;
-import nagbar2 from "nagbar" /* 9739 */;
-import plan_select_card_banner from "plan_select_card_banner" /* 9740 */;
-import billing_settings_banner from "billing_settings_banner" /* 9741 */;
-import shop_nagbar from "shop_nagbar" /* 9742 */;
-import admin_editor_test_component from "admin_editor_test_component" /* 9743 */;
-import guild_header_coachmark from "guild_header_coachmark" /* 9744 */;
-import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 9745 */;
-import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 9746 */;
-import guild_boost_tab_banner from "guild_boost_tab_banner" /* 9747 */;
-import shop_tab_tooltip from "shop_tab_tooltip" /* 9748 */;
-import premium_home_perk_card from "premium_home_perk_card" /* 9749 */;
-import marketing_page_bento_box from "marketing_page_bento_box" /* 9750 */;
-import outbound_promotion_popover from "outbound_promotion_popover" /* 9751 */;
-import outbound_promotion_claim_modal_card from "outbound_promotion_claim_modal_card" /* 9752 */;
-import shop_coachmark from "shop_coachmark" /* 9753 */;
-import nitro_perk_card from "nitro_perk_card" /* 9754 */;
-import collection_page_marketing_block from "collection_page_marketing_block" /* 9755 */;
+import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 9753 */;
+import premium_tab from "premium_tab" /* 9757 */;
+import marketing_page_banner from "marketing_page_banner" /* 9758 */;
+import payment_modal_banner from "payment_modal_banner" /* 9759 */;
+import mobile_bottom_sheet from "mobile_bottom_sheet" /* 9760 */;
+import gift_icon from "gift_icon" /* 9761 */;
+import gift_icon_coachmark from "gift_icon_coachmark" /* 9763 */;
+import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 9765 */;
+import gift_customization_banner from "gift_customization_banner" /* 9766 */;
+import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 9767 */;
+import gift_reminder_nagbar from "gift_reminder_nagbar" /* 9768 */;
+import gift_reminder_coachmark from "gift_reminder_coachmark" /* 9769 */;
+import premium_tab_tooltip from "premium_tab_tooltip" /* 9770 */;
+import premium_tab_popover from "premium_tab_popover" /* 9771 */;
+import nagbar2 from "nagbar" /* 9772 */;
+import plan_select_card_banner from "plan_select_card_banner" /* 9773 */;
+import billing_settings_banner from "billing_settings_banner" /* 9774 */;
+import shop_nagbar from "shop_nagbar" /* 9775 */;
+import admin_editor_test_component from "admin_editor_test_component" /* 9776 */;
+import guild_header_coachmark from "guild_header_coachmark" /* 9777 */;
+import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 9778 */;
+import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 9779 */;
+import guild_boost_tab_banner from "guild_boost_tab_banner" /* 9780 */;
+import shop_tab_tooltip from "shop_tab_tooltip" /* 9781 */;
+import premium_home_perk_card from "premium_home_perk_card" /* 9782 */;
+import marketing_page_bento_box from "marketing_page_bento_box" /* 9783 */;
+import outbound_promotion_popover from "outbound_promotion_popover" /* 9784 */;
+import outbound_promotion_claim_modal_card from "outbound_promotion_claim_modal_card" /* 9785 */;
+import shop_coachmark from "shop_coachmark" /* 9786 */;
+import nitro_perk_card from "nitro_perk_card" /* 9787 */;
+import collection_page_marketing_block from "collection_page_marketing_block" /* 9788 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -335,7 +335,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { properties: { oneofKind: "uri" }, contentIdentifier: "", isDefaultBase: false };
+    const obj = { properties: { oneofKind: "r" }, contentIdentifier: "", isDefaultBase: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);

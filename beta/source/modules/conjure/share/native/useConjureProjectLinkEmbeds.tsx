@@ -1,19 +1,19 @@
-// Module ID: 11712
-// Function ID: 11713
+// Module ID: 11744
+// Function ID: 11745
 // Name: useConjureProjectLinkEmbeds
-// Dependencies: [19, 2162, 4989, 5072, 1385, 6899, 11713, 5877, 11714, 504, 1449, 11715, 11719, 11720, 2]
+// Dependencies: [19, 2162, 5019, 5102, 1385, 6932, 11745, 5909, 11746, 504, 1449, 11747, 11751, 11752, 2]
 // Exports: default
 
-// Module 11712 (useConjureProjectLinkEmbeds)
-import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11715 */;
-import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11719 */;
+// Module 11744 (useConjureProjectLinkEmbeds)
+import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11747 */;
+import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11751 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11713 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11745 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -141,7 +141,7 @@ export default function useConjureProjectLinkEmbeds(channelId) {
           tmp12 = null == tmp10.creatorName;
         }
         if (tmp12) {
-          let tmp7Result = tmp7(11720);
+          let tmp7Result = tmp7(11752);
           let messageAuthor = tmp7Result.requestMessageAuthor(tmp10.ownerId);
         }
         continue;

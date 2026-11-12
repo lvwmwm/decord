@@ -1,21 +1,21 @@
-// Module ID: 20389
-// Function ID: 20390
+// Module ID: 20427
+// Function ID: 20428
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 17517, 21, 5140, 17551, 7438, 5751, 17554, 17543, 5776, 1113, 2]
+// Dependencies: [19, 17, 17554, 21, 5170, 17588, 7471, 5783, 17591, 17580, 5808, 1113, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 20389 (GuildRoleSubscriptionBenefitPreview)
+// Module 20427 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7438 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17517 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17543 */;
-import EmojiIconDefault from "EmojiIcon" /* 17551 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17554 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7471 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17554 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17580 */;
+import EmojiIconDefault from "EmojiIcon" /* 17588 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17591 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -82,7 +82,7 @@ function ChannelBenefitRow(benefit) {
   const channelWithTemplateFallback = obj.useChannelWithTemplateFallback(benefit.ref_id);
   if (null == channelWithTemplateFallback) {
     const obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-    const Text = tmp2(5751).Text;
+    const Text = tmp2(5783).Text;
     intl = tmp2(1113).intl;
     const _HermesInternal = HermesInternal;
     tmp8 = hasOwnProperty(Text, obj2);

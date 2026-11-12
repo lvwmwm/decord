@@ -1,15 +1,13 @@
-// Module ID: 9650
-// Function ID: 9651
+// Module ID: 9683
+// Function ID: 9684
 // Name: Stripe3DSChallenge
-// Dependencies: [5, 6604, 2]
+// Dependencies: [5, 6636, 2]
 // Exports: authenticateStripePaymentIntent
 
-// Module 9650 (Stripe3DSChallenge)
-import StripeUtils from "StripeUtils" /* 6604 */;
+// Module 9683 (Stripe3DSChallenge)
+import StripeUtils from "StripeUtils" /* 6636 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
-
-let c5;
 
 function getLoadedStripe() {
   return obj(...arguments);
@@ -171,9 +169,10 @@ obj = function _confirmCardPayment() {
   return obj(...arguments);
 };
 obj = function _authenticateStripePaymentIntent() {
-  obj = _asyncToGenerator(async function(arg0, value) {
+  obj = _asyncToGenerator(async function(arg0, arg1) {
     let c0;
     let c1;
+    let c4;
     function retrievePaymentIntent() {
       return closure_1_5(...arguments);
     }
@@ -188,116 +187,41 @@ obj = function _authenticateStripePaymentIntent() {
       }
     }
     let closure_0 = arg0;
-    let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let closure_2;
-        let closure_3;
-        let closure_4;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            c0 = undefined;
-            c1 = undefined;
-            ({ client_secret: c0, payment_method_id: c1 } = closure_0);
-            closure_2 = closure_1;
-            closure_3 = undefined;
-            closure_4 = undefined;
-            c4 = 1;
-            c5 = 1;
-            return { value: "flexDirection", done: null };
-          }
-        } else if (1 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else if (null == c0) {
-            const _Error2 = Error;
-            const self3 = this;
-            const self4 = this;
-            const error = new Error("Stripe 3DS context has no client secret");
-            throw error;
-          } else {
-            c4 = 2;
-            c5 = 1;
-            const obj5 = { value: closure_131_3(closure_2), done: false };
-            return obj5;
-          }
-        } else if (2 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
-          } else {
-            closure_3 = value;
-            c4 = 3;
-            c5 = 1;
-            const obj7 = { value: retrievePaymentIntent(closure_3, c0), done: false };
-            return obj7;
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          closure_4 = value;
-          const status = closure_4.status;
-          if ("succeeded" !== status) {
-            if ("processing" !== status) {
-              if ("requires_payment_method" !== status) {
-                if ("requires_confirmation" !== status) {
-                  if ("requires_action" !== status) {
-                    const _Error = Error;
-                    const _HermesInternal = HermesInternal;
-                    const self = this;
-                    const self2 = this;
-                    const error1 = new Error("Unexpected payment intent status: " + closure_4.status);
-                    throw error1;
-                  }
-                }
-              }
-              c5 = 3;
-              obj = { value: confirmCardPayment(closure_3, c0, getConfirmCardPaymentData(closure_4, c1)), done: true };
-              return obj;
+    let closure_1 = arg1;
+    if (null == c0) {
+      const _Error2 = Error;
+      const self3 = this;
+      const self4 = this;
+      const error = new Error("Stripe 3DS context has no client secret");
+      throw error;
+    }
+    let closure_3 = await closure_131_3(closure_2);
+    let closure_4 = await retrievePaymentIntent(closure_3, c0);
+    const status = closure_4.status;
+    if ("succeeded" !== status) {
+      if ("processing" !== status) {
+        if ("requires_payment_method" !== status) {
+          if ("requires_confirmation" !== status) {
+            if ("requires_action" !== status) {
+              const _Error = Error;
+              const _HermesInternal = HermesInternal;
+              const self = this;
+              const self2 = this;
+              const error1 = new Error("Unexpected payment intent status: " + closure_4.status);
+              throw error1;
             }
           }
-          c5 = 3;
-          return { value: "HermesInternal", done: null };
         }
-      } catch (tmp30) {
-        c5 = 3;
-        throw tmp30;
+        let c5 = 3;
+        obj = { value: confirmCardPayment(closure_3, c0, getConfirmCardPaymentData(closure_4, c1)), done: true };
+        return obj;
       }
     }
+    await "HermesInternal";
+    closure_3 = tmp4;
+    ({ client_secret: c0, payment_method_id: c1 } = closure_0);
+    closure_2 = closure_1;
+    return "flexDirection";
   });
   return obj(...arguments);
 };

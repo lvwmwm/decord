@@ -1,23 +1,23 @@
-// Module ID: 17816
-// Function ID: 17817
+// Module ID: 17854
+// Function ID: 17855
 // Name: AndroidMessageNotificationsSetting
-// Dependencies: [17797, 8503, 1377, 11685, 1113, 16596, 2992, 17803, 2]
+// Dependencies: [17835, 8536, 1377, 11717, 1113, 16628, 2992, 17841, 2]
 // Exports: useAndroidMessageNotificationsSettingValue, useHasAndroidMessageNotificationsSetting
 
-// Module 17816 (AndroidMessageNotificationsSetting)
+// Module 17854 (AndroidMessageNotificationsSetting)
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _modDef2992 from "module_2992" /* 2992 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17803 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17797 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11685 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17841 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17835 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let setAndroidMessageNotificationsEnabled;
 let tmp2;
-const notifications_NotificationSettingsUtils = tmp2(16596);
+const notifications_NotificationSettingsUtils = tmp2(16628);
 function useAndroidMessageNotificationsSettingValue() {
   let flag = _false();
   if (flag == null) {

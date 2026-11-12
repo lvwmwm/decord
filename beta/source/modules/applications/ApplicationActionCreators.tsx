@@ -1,12 +1,12 @@
-// Module ID: 6936
-// Function ID: 6937
+// Module ID: 6969
+// Function ID: 6970
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6937, 2140, 2162, 1072, 572, 1282, 504, 2]
+// Dependencies: [5, 6970, 2140, 2162, 1072, 572, 1282, 504, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 6936 (ApplicationActionCreators)
+// Module 6969 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6937 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6970 */;
 import ApplicationRecord from "ApplicationRecord" /* 2140 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Constants from "Constants" /* 1072 */;
@@ -63,7 +63,7 @@ let obj = function _fetchApplication() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

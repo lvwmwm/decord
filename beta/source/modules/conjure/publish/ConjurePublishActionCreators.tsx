@@ -1,21 +1,21 @@
-// Module ID: 11075
-// Function ID: 11076
+// Module ID: 11107
+// Function ID: 11108
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1385, 6899, 10987, 1072, 10993, 1282, 10996, 572, 8823, 11076, 11026, 11078, 2]
+// Dependencies: [5, 1385, 6932, 11019, 1072, 11025, 1282, 11028, 572, 8856, 11108, 11058, 11110, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 11075 (ConjurePublishActionCreators)
+// Module 11107 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10993 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10996 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11026 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11076 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11078 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 11025 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11058 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11108 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11110 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10987 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11019 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_4, ok;
@@ -61,7 +61,7 @@ let obj = function _unpublishProject() {
               ({ guildId: c1, alsoRemovePreviewBot: c2 } = closure_1);
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -260,7 +260,7 @@ obj = function _refreshPublishedProject() {
             obj8 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

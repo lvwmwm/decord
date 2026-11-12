@@ -1,9 +1,27 @@
 // Module ID: 13155
 // Function ID: 13156
-// Dependencies: [13154]
+// Dependencies: []
 
 // Module 13155
-import _mod13154 from "module_13154" /* 13154 */;
+let items;
+let obj2;
+const obj = {
+  name: "Selector",
+  structure: obj2,
+  parse() {
+    const self = this;
+    const sequence = this.readSequence(this.scope.Selector);
+    if (null === this.getFirstListNode(sequence)) {
+      self.error("Selector is expected");
+    }
+    const element = { type: "Selector", loc: self.getLocationFromList(sequence), children: sequence };
+    return element;
+  },
+  generate(arg0) {
+    this.children(arg0);
+  }
+};
+obj2 = { children: items };
+items = [["TypeSelector", "IdSelector", "ClassSelector", "AttributeSelector", "PseudoClassSelector", "PseudoElementSelector", "Combinator", "WhiteSpace"]];
 
-
-export default _mod13154;
+export default obj;

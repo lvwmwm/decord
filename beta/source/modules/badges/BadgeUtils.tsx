@@ -1,14 +1,14 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11634
+// Function ID: 11635
 // Name: BadgeUtils
-// Dependencies: [8825, 8826, 1113, 8835, 2150, 2]
+// Dependencies: [8858, 8859, 1113, 8868, 2150, 2]
 // Exports: findTier, getAlwaysVisibleCopy, getBadgeUnlockLabel, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 11602 (BadgeUtils)
+// Module 11634 (BadgeUtils)
 import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 8825 */;
-import BadgeId from "BadgeId" /* 8826 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8835 */;
+import Constants from "Constants" /* 8858 */;
+import BadgeId from "BadgeId" /* 8859 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8868 */;
 import size from "module_2" /* 2 */;
 
 let map;

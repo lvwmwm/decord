@@ -1,11 +1,11 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 12960
+// Function ID: 12961
 // Name: conjureOverlayPreview
-// Dependencies: [6900, 2]
+// Dependencies: [6933, 2]
 // Exports: overlayWidgetPlacement, overlayWidgetPreviewScale, overlayWidgetPreviewSize, previewOverlayWidgetSize, previewSupportsOverlay
 
-// Module 12928 (conjureOverlayPreview)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6900 */;
+// Module 12960 (conjureOverlayPreview)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = { width: 320, height: 240 };

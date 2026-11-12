@@ -1,16 +1,16 @@
-// Module ID: 18280
-// Function ID: 18281
+// Module ID: 18318
+// Function ID: 18319
 // Name: ParentalControlsUseDataForQuests3PSetting
-// Dependencies: [7791, 8503, 8442, 17039, 17043, 11685, 1113, 2]
+// Dependencies: [7824, 8536, 8475, 17073, 17077, 11717, 1113, 2]
 
-// Module 18280 (ParentalControlsUseDataForQuests3PSetting)
+// Module 18318 (ParentalControlsUseDataForQuests3PSetting)
 import intl2 from "intl" /* 1113 */;
-import useSelectedTeen from "useSelectedTeen" /* 8442 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17039 */;
-import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 17043 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import useSelectedTeen from "useSelectedTeen" /* 8475 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17073 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 17077 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

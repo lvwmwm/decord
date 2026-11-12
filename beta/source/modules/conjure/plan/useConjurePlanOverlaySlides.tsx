@@ -1,14 +1,14 @@
-// Module ID: 12931
-// Function ID: 12932
+// Module ID: 12963
+// Function ID: 12964
 // Name: useConjurePlanOverlaySlides
-// Dependencies: [32, 19, 5141, 4026, 504, 1113, 2]
+// Dependencies: [32, 19, 5171, 4026, 504, 1113, 2]
 // Exports: useConjurePlanOverlaySlides
 
-// Module 12931 (useConjurePlanOverlaySlides)
+// Module 12963 (useConjurePlanOverlaySlides)
 import _modDef4026 from "module_4026" /* 4026 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

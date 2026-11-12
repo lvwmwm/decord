@@ -1,10 +1,10 @@
-// Module ID: 7915
-// Function ID: 7916
+// Module ID: 7948
+// Function ID: 7949
 // Name: useIntersectionObserver
-// Dependencies: [19, 7916, 7917, 2]
+// Dependencies: [19, 7949, 7950, 2]
 // Exports: useIntersectionObserver, useIsVisible
 
-// Module 7915 (useIntersectionObserver)
+// Module 7948 (useIntersectionObserver)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export function useIntersectionObserver(arg0, arg1) {
   dependencyMap = tmp2;
   let tmp4 = arg1;
   const tmp = closure_5;
-  const tmp3 = flag(7916);
+  const tmp3 = flag(7949);
   if (arg1 == null) {
     tmp4 = closure_7;
   }
@@ -89,7 +89,7 @@ export function useIsVisible(arg0, arg1) {
   let tmp = num;
   const tmp2 = dependencyMap;
   const items = [num];
-  const tmp3 = num(7916)((isIntersecting) => {
+  const tmp3 = num(7949)((isIntersecting) => {
     closure_0(isIntersecting.isIntersecting);
   });
   const tmp4 = closure_4(() => {
@@ -113,7 +113,7 @@ export function useIsVisible(arg0, arg1) {
   let closure_2 = tmp6;
   let tmp8 = tmp4;
   const tmp5 = closure_5;
-  const tmpResult = tmp(7916);
+  const tmpResult = tmp(7949);
   if (tmp4 == null) {
     tmp8 = closure_7;
   }

@@ -1,16 +1,16 @@
-// Module ID: 19878
-// Function ID: 19879
+// Module ID: 19916
+// Function ID: 19917
 // Name: NewMemberActionsCompletedModal
-// Dependencies: [19, 17, 21, 5140, 575, 1652, 5370, 6799, 7463, 5751, 1113, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 1652, 5402, 6831, 7496, 5783, 1113, 2]
 // Exports: default
 
-// Module 19878 (NewMemberActionsCompletedModal)
+// Module 19916 (NewMemberActionsCompletedModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -53,7 +53,7 @@ export default function NewMemberActionsCompleted(arg0) {
   const useAnimatedStyle = sharedValue(1652).useAnimatedStyle;
   sharedValue(1652);
   items1[1] = sharedValue(1652).withDelay;
-  items1[2] = sharedValue(5370).withTiming;
+  items1[2] = sharedValue(5402).withTiming;
   items1[3] = sharedValue;
   let c0;
   let c1;
@@ -79,7 +79,7 @@ export default function NewMemberActionsCompleted(arg0) {
   }, []);
   const obj3 = { style: tmp.screen, children: items3 };
   const obj4 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: intl.format(sharedValue(1113).t.pGj5u2, { count: numActions }) };
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5783).Text;
   intl = tmp2(1113).intl;
   items3 = [closure_5(Text, obj4), ];
   const obj5 = { style: tmp.progressBackground, children: closure_5(_modDef1652.View, obj6) };

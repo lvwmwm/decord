@@ -1,14 +1,14 @@
-// Module ID: 14432
-// Function ID: 14433
+// Module ID: 14464
+// Function ID: 14465
 // Name: NoMutualFriends
-// Dependencies: [19, 21, 8880, 14433, 14434, 14435, 5147, 5842, 2]
+// Dependencies: [19, 21, 8913, 14465, 14466, 14467, 5177, 5874, 2]
 // Exports: NoMutualFriends, getNoMutualFriendsSource, useNoMutualFriendsSource
 
-// Module 14432 (NoMutualFriends)
+// Module 14464 (NoMutualFriends)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5147 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import _mod8880 from "module_8880" /* 8880 */;
+import shared from "shared" /* 5177 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import _mod8913 from "module_8913" /* 8913 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoMutualFriends.tsx");
 
 export function getNoMutualFriendsSource(theme) {
-  const obj = _mod8880;
+  const obj = _mod8913;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useNoMutualFriendsSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8880;
+  const obj2 = _mod8913;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function NoMutualFriends(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8880;
+  const obj2 = _mod8913;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

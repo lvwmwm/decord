@@ -1,15 +1,15 @@
 // Module ID: 2187
 // Function ID: 2188
 // Name: IntlLoaderStore
-// Dependencies: [5, 2025, 1254, 2188, 1113, 2198, 1152, 4415, 4890, 4921, 2166, 1242, 2]
+// Dependencies: [5, 2025, 1254, 2188, 1113, 2198, 1152, 4445, 4920, 4951, 2166, 1242, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 2187 (IntlLoaderStore)
 import intl2 from "intl" /* 1113 */;
 import _modDef2188 from "module_2188" /* 2188 */;
-import dateFnsLocales from "dateFnsLocales" /* 4415 */;
-import formatjs from "formatjs" /* 4890 */;
-import moment from "moment" /* 4921 */;
+import dateFnsLocales from "dateFnsLocales" /* 4445 */;
+import formatjs from "formatjs" /* 4920 */;
+import moment from "moment" /* 4951 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_2025 from "module_2025" /* 2025 */;
 import module_1254 from "module_1254" /* 1254 */;
@@ -365,7 +365,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
-    error: "channelId",
+    error: "channel",
     localeData: _modDef2188,
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
@@ -373,7 +373,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "channelId" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "channel" });
       }
     },
     setLoadingFailed(error, arg1) {

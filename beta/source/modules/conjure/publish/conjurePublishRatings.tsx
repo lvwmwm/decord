@@ -1,14 +1,14 @@
-// Module ID: 12975
-// Function ID: 12976
+// Module ID: 13007
+// Function ID: 13008
 // Name: conjurePublishRatings
-// Dependencies: [32, 19, 4026, 1113, 510, 10993, 2]
+// Dependencies: [32, 19, 4026, 1113, 510, 11025, 2]
 // Exports: conjurePublishRatingLabel, conjurePublishRatingOptionLabel, conjurePublishRatingThanks, submitConjurePublishRatingFeedback, useConjurePublishRating, useConjureRatingFeedback
 
-// Module 12975 (conjurePublishRatings)
+// Module 13007 (conjurePublishRatings)
 import Storage4 from "Storage" /* 510 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10993 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 11025 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

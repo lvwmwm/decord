@@ -1,10 +1,10 @@
-// Module ID: 5922
-// Function ID: 5923
+// Module ID: 5954
+// Function ID: 5955
 // Name: Video
-// Dependencies: [5923, 2]
+// Dependencies: [5955, 2]
 
-// Module 5922 (Video)
-import DirectVideoDefault from "DirectVideo" /* 5923 */;
+// Module 5954 (Video)
+import DirectVideoDefault from "DirectVideo" /* 5955 */;
 import size from "module_2" /* 2 */;
 
 class Video {

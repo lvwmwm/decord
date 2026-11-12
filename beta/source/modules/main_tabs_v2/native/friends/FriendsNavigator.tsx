@@ -1,23 +1,23 @@
-// Module ID: 19187
-// Function ID: 19188
+// Module ID: 19225
+// Function ID: 19226
 // Name: FriendsNavigator
-// Dependencies: [19, 21, 9976, 5140, 575, 9905, 9902, 14414, 1113, 7730, 7231, 19188, 19194, 19197, 19198, 19199, 19210, 19211, 19212, 19214, 19217, 19218, 5310, 7183, 5097, 5199, 19219, 2]
+// Dependencies: [19, 21, 10009, 5170, 575, 9938, 9935, 14446, 1113, 7763, 7264, 19226, 19232, 19235, 19236, 19237, 19248, 19249, 19250, 19252, 19255, 19256, 5342, 7216, 5127, 5231, 19257, 2]
 // Exports: default
 
-// Module 19187 (FriendsNavigator)
+// Module 19225 (FriendsNavigator)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
-import DeviceUtils from "DeviceUtils" /* 5097 */;
-import native from "native" /* 5199 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5310 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7183 */;
-import HeaderShared from "HeaderShared" /* 9902 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9905 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14414 */;
+import DeviceUtils from "DeviceUtils" /* 5127 */;
+import native from "native" /* 5231 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5342 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7216 */;
+import HeaderShared from "HeaderShared" /* 9935 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9938 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14446 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9976 */;
-import createStyles from "createStyles" /* 5140 */;
+import NativeStackView from "NativeStackView" /* 10009 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const AppFrameContainerDefault = tmp(19219);
+const AppFrameContainerDefault = tmp(19257);
 function RequestsSettingsModalButton(onPress) {
   let HeaderIconButton;
   let intl;

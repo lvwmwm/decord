@@ -1,9 +1,9 @@
-// Module ID: 8837
-// Function ID: 8838
+// Module ID: 8870
+// Function ID: 8871
 // Name: LegacyBadgeIdMap
 // Dependencies: [2]
 
-// Module 8837 (LegacyBadgeIdMap)
+// Module 8870 (LegacyBadgeIdMap)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/LegacyBadgeIdMap.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 18915
-// Function ID: 18916
+// Module ID: 18953
+// Function ID: 18954
 // Name: useICYMIItems
-// Dependencies: [19, 8980, 8993, 9000, 504, 8998, 2]
+// Dependencies: [19, 9013, 9026, 9033, 504, 9031, 2]
 // Exports: default
 
-// Module 18915 (useICYMIItems)
-import ICYMITypes from "ICYMITypes" /* 8993 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8998 */;
+// Module 18953 (useICYMIItems)
+import ICYMITypes from "ICYMITypes" /* 9026 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9031 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8980 */;
+import ICYMIStore from "ICYMIStore" /* 9013 */;
 import size from "module_2" /* 2 */;
 
 function createItem(id, type, unread, arg3, fn) {
@@ -83,7 +83,7 @@ export default function useICYMIItems() {
   }
   const isWaterwheelsCardEligible = obj.isWaterwheelsCardEligible;
   let stateFromStores1;
-  const obj2 = stateFromStores1(9000);
+  const obj2 = stateFromStores1(9033);
   const waterwheelsDiscoverEnabled = obj2.useWaterwheelsDiscoverEnabled("icymi_items");
   const items = [ICYMIStore];
   const obj3 = stateFromStores1(504);
@@ -123,7 +123,7 @@ export default function useICYMIItems() {
           let tmp10 = stateFromStoresObject[tmp7.id];
           let tmp11 = null == tmp10;
           if (tmp11) {
-            tmp11 = tmp7.type === stateFromStores1(8993).ICYMIItemTypes.MESSAGE;
+            tmp11 = tmp7.type === stateFromStores1(9026).ICYMIItemTypes.MESSAGE;
           }
           if (tmp11) {
             let message_context = tmp7.data.message_context;
@@ -170,7 +170,7 @@ export default function useICYMIItems() {
           let tmp27 = stateFromStoresObject[tmp24.id];
           let tmp28 = null == tmp27;
           if (tmp28) {
-            tmp28 = tmp24.type === stateFromStores1(8993).ICYMIItemTypes.MESSAGE;
+            tmp28 = tmp24.type === stateFromStores1(9026).ICYMIItemTypes.MESSAGE;
           }
           if (tmp28) {
             let message_context2 = tmp24.data.message_context;

@@ -1,22 +1,22 @@
-// Module ID: 15625
-// Function ID: 15626
+// Module ID: 15657
+// Function ID: 15658
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 10101, 1072, 1387, 3, 15626, 10102, 5721, 572, 1252, 5837, 1113, 7635, 1624, 2]
+// Dependencies: [32, 5, 19, 10134, 1072, 1387, 3, 15658, 5196, 5753, 572, 1252, 5869, 1113, 7668, 1624, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 15625 (AppIconUtils)
+// Module 15657 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
-import useMountEffectDefault from "useMountEffect" /* 5721 */;
-import openUserSettings from "openUserSettings" /* 7635 */;
-import AppIconTypes from "AppIconTypes" /* 10102 */;
-import react_nativeDefault from "react-native" /* 15626 */;
+import AppIconTypes from "AppIconTypes" /* 5196 */;
+import useMountEffectDefault from "useMountEffect" /* 5753 */;
+import openUserSettings from "openUserSettings" /* 7668 */;
+import react_nativeDefault from "react-native" /* 15658 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 10101 */;
+import AppIconConstants from "AppIconConstants" /* 10134 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ obj = function _setAppIcon() {
               flag = obj5.showErrorToast ?? true;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

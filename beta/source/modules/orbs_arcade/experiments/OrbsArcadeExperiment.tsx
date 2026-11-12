@@ -1,9 +1,9 @@
-// Module ID: 17346
-// Function ID: 17347
+// Module ID: 17383
+// Function ID: 17384
 // Name: OrbsArcadeExperiment
 // Dependencies: [1449, 2]
 
-// Module 17346 (OrbsArcadeExperiment)
+// Module 17383 (OrbsArcadeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

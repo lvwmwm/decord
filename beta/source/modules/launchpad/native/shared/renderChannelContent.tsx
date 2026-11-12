@@ -1,21 +1,21 @@
-// Module ID: 19088
-// Function ID: 19089
+// Module ID: 19126
+// Function ID: 19127
 // Name: renderChannelContent
-// Dependencies: [19, 17, 5882, 6831, 21, 5140, 1377, 19085, 7338, 19089, 5751, 8738, 8096, 18513, 2]
+// Dependencies: [19, 17, 5914, 6864, 21, 5170, 1377, 19123, 7371, 19127, 5783, 8771, 8129, 18551, 2]
 // Exports: default
 
-// Module 19088 (renderChannelContent)
+// Module 19126 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5882 */;
-import ReadStateConstants from "ReadStateConstants" /* 6831 */;
-import WarningIcon from "WarningIcon" /* 8096 */;
-import LockIcon from "LockIcon" /* 8738 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19085 */;
-import ChannelTitleDefault from "ChannelTitle" /* 19089 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 */;
+import ReadStateConstants from "ReadStateConstants" /* 6864 */;
+import WarningIcon from "WarningIcon" /* 8129 */;
+import LockIcon from "LockIcon" /* 8771 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19123 */;
+import ChannelTitleDefault from "ChannelTitle" /* 19127 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ function ChannelContent(arg0) {
   const tmp4 = getLayoutStylesDefault();
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(7338)(channel);
+      locked = tmp2(7371)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -115,7 +115,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(18513), obj12);
+      isSubscriptionGated = tmp9(tmp2(18551), obj12);
     }
     items3[2] = isSubscriptionGated;
     tmp11Result = tmp11(tmp10, obj8);

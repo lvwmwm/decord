@@ -1,10 +1,10 @@
-// Module ID: 8823
-// Function ID: 8824
+// Module ID: 8856
+// Function ID: 8857
 // Name: UserActionCreators
-// Dependencies: [5, 1404, 1385, 1072, 1073, 3, 1282, 572, 6802, 1346, 38, 6579, 2]
+// Dependencies: [5, 1404, 1385, 1072, 1073, 3, 1282, 572, 6834, 1346, 38, 6611, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8823 (UserActionCreators)
+// Module 8856 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1072 */;
 import RouteConstants from "RouteConstants" /* 1073 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import AnalyticsSchema from "AnalyticsSchema" /* 1346 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -83,7 +83,7 @@ let obj = function _fetchProfile() {
               closure_12 = undefined;
               join_request_id = 1;
               signal = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === join_request_id) {
             if (arg0 === 1) {

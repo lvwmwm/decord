@@ -1,10 +1,10 @@
-// Module ID: 10795
-// Function ID: 10796
+// Module ID: 10827
+// Function ID: 10828
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7685, 1072, 5872, 1083, 21, 5140, 5739, 10032, 572, 7690, 7691, 7015, 1266, 1242, 5721, 10796, 1252, 10798, 2]
+// Dependencies: [5, 32, 19, 17, 7718, 1072, 5904, 1083, 21, 5170, 5771, 10065, 572, 7723, 7724, 7048, 1266, 1242, 5753, 10828, 1252, 10830, 2]
 // Exports: default
 
-// Module 10795 (NativeCheckoutStoreProvider)
+// Module 10827 (NativeCheckoutStoreProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,17 +12,17 @@ import Constants2 from "Constants" /* 1083 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import v1 from "v1" /* 1266 */;
-import PaymentConstants from "PaymentConstants" /* 5872 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10796 */;
-import OrderUtils from "OrderUtils" /* 10798 */;
+import PaymentConstants from "PaymentConstants" /* 5904 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10828 */;
+import OrderUtils from "OrderUtils" /* 10830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7685 */;
-import createStyles from "createStyles" /* 5140 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7718 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
-let c5, country, orderLineItems, redux, v2;
+let c5, country, redux;
 
 let c9;
 let metroImportAll;
@@ -39,7 +39,7 @@ function NativeCheckoutStoreProvider(children) {
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
   children = children.children;
-  const contextMetadata = order(5739)(() => {
+  const contextMetadata = order(5771)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -54,7 +54,7 @@ function NativeCheckoutStoreProvider(children) {
     const obj4 = { loadId: id, startTime: Date.now() };
     return obj4;
   });
-  redux = order(5739)(() => {
+  redux = order(5771)(() => {
     const obj = { load_id: contextMetadata.loadId, payment_gateway };
     const merged = Object.assign(View);
     return obj;
@@ -63,7 +63,7 @@ function NativeCheckoutStoreProvider(children) {
     const obj = { order, checkoutInitParameters: require, contextMetadata, analyticsFields, paymentGateway, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react };
     return metroImportDefault(obj);
   }), 1)[0];
-  const tmp2 = order(5721)(() => {
+  const tmp2 = order(5753)(() => {
     if (null != View) {
       let obj = PaymentFlowStartedTriggerPoint;
       const result = obj.trackPaymentFlowStartedAnalyticsAndCTP(analyticsFields);
@@ -197,81 +197,28 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
   onOrderCreated((orderLineItems) => {
     let closure_1;
     let externalGatewayFacet;
+    let v2;
     let c3 = 0;
     let c4 = 0;
-    const iter = (function*(arg0, value) {
+    const iter = (function*(arg0) {
       let c0;
       let c1;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === v2) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              orderLineItems = undefined;
-              ({ orderLineItems: c0, subscriptionFacet: c1 } = orderLineItems);
-              isGift = undefined;
-              v2 = 1;
-              c4 = 1;
-              return { value: "flexDirection", done: null };
-            }
-          } else if (1 === v2) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              country = undefined;
-              const obj5 = { orderLineItems, paymentGateway: tmp, isGift, subscriptionFacet: tmp, externalGatewayFacet, countryCode: country };
-              const createOrder = orderLineItems(closure_2_2[13]).createOrder;
-              orderLineItems(closure_2_2[13]);
-              if (country != null) {
-                country = country.country;
-              }
-              v2 = 2;
-              c4 = 1;
-              const obj6 = { value: createOrder(obj5), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            isGift = value;
-            closure_1_9(isGift);
-            if (null != v2) {
-              v2(isGift);
-            }
-            closure_1_10(false);
-            c4 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } catch (tmp22) {
-          c4 = 3;
-          throw tmp22;
-        }
+      const obj5 = { orderLineItems, paymentGateway: tmp, isGift, subscriptionFacet: tmp, externalGatewayFacet, countryCode: country };
+      const createOrder = orderLineItems(closure_2_2[13]).createOrder;
+      orderLineItems(closure_2_2[13]);
+      if (country != null) {
+        country = country.country;
       }
+      isGift = yield createOrder(obj5);
+      closure_1_9(isGift);
+      if (null != v2) {
+        v2(isGift);
+      }
+      closure_1_10(false);
+      yield "HermesInternal";
+      isGift = tmp4;
+      ({ orderLineItems: c0, subscriptionFacet: c1 } = orderLineItems);
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -398,7 +345,6 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     let tmp19 = null;
     if (!flag) {
       let obj2 = { style: tmp.loadingSpinnerContainer, children: mobileStoreFront(orderRequired(tmp7[15]).ActivityIndicator, { animating: true, size: "large" }) };
-      const tmp22 = orderRequired;
       tmp19 = mobileStoreFront(onOrderRetryCancellation, obj2);
     }
     tmp18 = tmp19;

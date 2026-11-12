@@ -1,13 +1,13 @@
-// Module ID: 9821
-// Function ID: 9822
+// Module ID: 9854
+// Function ID: 9855
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 5751, 1113, 2]
+// Dependencies: [19, 21, 5783, 1113, 2]
 // Exports: TwoWayLinkStepHeader
 
-// Module 9821 (TwoWayLinkStepHeader)
+// Module 9854 (TwoWayLinkStepHeader)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
+import Text_Text from "Text/Text" /* 5783 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

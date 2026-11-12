@@ -1,20 +1,20 @@
-// Module ID: 17607
-// Function ID: 17608
+// Module ID: 17644
+// Function ID: 17645
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2186, 17608, 21, 1652, 1187, 5140, 575, 563, 9593, 5842, 5751, 2024, 17609, 17610, 17611, 2]
+// Dependencies: [19, 17, 2186, 17645, 21, 1652, 1187, 5170, 575, 563, 9626, 5874, 5783, 2024, 17646, 17647, 17648, 2]
 // Exports: default
 
-// Module 17607 (SettingsAppearanceActivityCardItem)
+// Module 17644 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import ClipView from "ClipView" /* 9593 */;
+import ClipView from "ClipView" /* 9626 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17608 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17645 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

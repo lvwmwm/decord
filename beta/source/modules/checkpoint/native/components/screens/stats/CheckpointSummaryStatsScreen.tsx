@@ -1,10 +1,10 @@
-// Module ID: 13916
-// Function ID: 13917
+// Module ID: 13948
+// Function ID: 13949
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [19, 17, 5141, 13668, 6199, 21, 575, 5140, 1357, 504, 6223, 13876, 9069, 1411, 8213, 7020, 5751, 6569, 13917, 1113, 3248, 3216, 5086, 7363, 5842, 13878, 13881, 2]
+// Dependencies: [19, 17, 5171, 13700, 6231, 21, 575, 5170, 1357, 504, 6255, 13908, 9102, 1411, 8246, 7053, 5783, 6601, 13949, 1113, 3248, 3216, 5116, 7396, 5874, 13910, 13913, 2]
 // Exports: default
 
-// Module 13916 (CheckpointSummaryStatsScreen)
+// Module 13948 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,22 +12,22 @@ import intl12 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import _modDef3216 from "module_3216" /* 3216 */;
 import _modDef3248 from "module_3248" /* 3248 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5086 */;
-import CheckpointConstants from "CheckpointConstants" /* 6199 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6223 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6569 */;
-import GuildIcon from "GuildIcon" /* 7020 */;
-import EmojiDefault from "Emoji" /* 7363 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9069 */;
-import CheckpointScreen from "CheckpointScreen" /* 13876 */;
-import CheckpointTextDefault from "CheckpointText" /* 13878 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13881 */;
-import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13917 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5116 */;
+import CheckpointConstants from "CheckpointConstants" /* 6231 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6255 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6601 */;
+import GuildIcon from "GuildIcon" /* 7053 */;
+import EmojiDefault from "Emoji" /* 7396 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9102 */;
+import CheckpointScreen from "CheckpointScreen" /* 13908 */;
+import CheckpointTextDefault from "CheckpointText" /* 13910 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13913 */;
+import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13949 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import CheckpointStore from "CheckpointStore" /* 13700 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -223,7 +223,7 @@ export default function CheckpointSummaryStatsScreen() {
     const tmp13Result6 = AvatarUtilsDefault;
     applicationIconURL = tmp13Result6.getApplicationIconURL(obj3);
   }
-  let tmp26Result4 = metroImportDefault(tmp2(8213).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
+  let tmp26Result4 = metroImportDefault(tmp2(8246).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
   let icon;
   if (first != null) {
     icon = first.guild.icon;
@@ -239,7 +239,7 @@ export default function CheckpointSummaryStatsScreen() {
       items2 = [, ];
       ({ itemIcon: arr9[0], guildAcronym: arr9[1] } = tmp);
       obj6 = { variant: "body-md/semibold", color: "text-overlay-light", allowFontScaling: false, children: tmp2Result8.getGuildAcronymCharacter(first.guild.name) };
-      Text = tmp2(5751).Text;
+      Text = tmp2(5783).Text;
       tmp2Result8 = CheckpointStatsUtils;
       tmp26Result = tmp26(View, obj5);
     }
@@ -360,7 +360,7 @@ export default function CheckpointSummaryStatsScreen() {
   if (null != applicationIconURL) {
     const obj24 = { source: obj25, style: tmp.itemIcon };
     obj25 = { uri: applicationIconURL };
-    tmp26Result4 = tmp26(tmp13(5842), obj24);
+    tmp26Result4 = tmp26(tmp13(5874), obj24);
   }
   const obj26 = { children: metroImportAll(View, obj7) };
   items8[1] = metroImportDefault(ItemStat, obj23);

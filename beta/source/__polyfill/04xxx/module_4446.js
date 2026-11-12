@@ -1,13 +1,13 @@
 // Module ID: 4446
 // Function ID: 4447
-// Dependencies: [4447, 4448, 4449, 4450, 4451]
+// Dependencies: [4447, 4448, 4449, 4456, 4457]
 
 // Module 4446
 import formatDistance from "formatDistance" /* 4447 */;
 import buildFormatLongFn from "buildFormatLongFn" /* 4448 */;
 import formatRelative from "formatRelative" /* 4449 */;
-import date_mod from "module_4450" /* 4450 */;
-import date_mod2 from "module_4451" /* 4451 */;
+import date_mod from "module_4456" /* 4456 */;
+import date_mod2 from "module_4457" /* 4457 */;
 
 let tmp11;
 let tmp3;
@@ -47,4 +47,4 @@ if (!date) {
   tmp11 = date;
 }
 
-export default { code: "el", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export default { code: "bg", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };

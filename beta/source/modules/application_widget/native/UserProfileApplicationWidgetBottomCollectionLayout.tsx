@@ -1,17 +1,17 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 12573
+// Function ID: 12574
 // Name: UserProfileApplicationWidgetBottomCollectionLayout
-// Dependencies: [19, 17, 21, 5140, 575, 12448, 5842, 12535, 5751, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 12480, 5874, 12567, 5783, 2]
 // Exports: default
 
-// Module 12541 (UserProfileApplicationWidgetBottomCollectionLayout)
+// Module 12573 (UserProfileApplicationWidgetBottomCollectionLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import _mod12448 from "module_12448" /* 12448 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import _mod12480 from "module_12480" /* 12480 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -36,11 +36,11 @@ function CollectionItem(arg0) {
   if (componentConfig != null) {
     image = componentConfig.fields.image;
   }
-  const items = [_mod12448.ResolvedValueType.MEDIA];
+  const items = [_mod12480.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  const obj = _mod12448;
+  const obj = _mod12480;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(componentConfig, "name", resolveFieldValue);
-  const obj2 = _mod12448;
+  const obj2 = _mod12480;
   const singleStringOrSkeleton1 = obj2.resolveSingleStringOrSkeleton(componentConfig, "description", resolveFieldValue);
   const obj3 = { style: tmp.item, children: items1 };
   if (null != fieldValue) {
@@ -50,23 +50,23 @@ function CollectionItem(arg0) {
     tmp12 = React3;
   } else {
     const obj6 = { style: tmp.itemImage };
-    tmp11 = React3(tmp3(12535).ImageSkeleton, obj6);
+    tmp11 = React3(tmp3(12567).ImageSkeleton, obj6);
     tmp12 = React3;
   }
   items1 = [tmp11, ];
   const obj7 = { style: tmp.itemContent, children: items2 };
   if ("value" === singleStringOrSkeleton.status) {
     const obj8 = { variant: "body-xs/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    tmp12Result = tmp12(tmp3(5751).Text, obj8);
+    tmp12Result = tmp12(tmp3(5783).Text, obj8);
   } else {
-    tmp12Result = tmp12(tmp3(12535).TextSkeleton, { variant: "body-xs/medium", widthChars: 6 });
+    tmp12Result = tmp12(tmp3(12567).TextSkeleton, { variant: "body-xs/medium", widthChars: 6 });
   }
   items2 = [tmp12Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj9 = { variant: "footnote/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    tmp12Result2 = tmp12(tmp3(5751).Text, obj9);
+    tmp12Result2 = tmp12(tmp3(5783).Text, obj9);
   } else {
-    tmp12Result2 = tmp12(tmp3(12535).TextSkeleton, { variant: "footnote/medium", widthChars: 10 });
+    tmp12Result2 = tmp12(tmp3(12567).TextSkeleton, { variant: "footnote/medium", widthChars: 10 });
   }
   items2[1] = tmp12Result2;
   items1[1] = hasOwnProperty(View, obj7);

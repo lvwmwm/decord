@@ -1,13 +1,13 @@
-// Module ID: 12301
-// Function ID: 12302
+// Module ID: 12333
+// Function ID: 12334
 // Name: conjureManagedCopyStatusText
-// Dependencies: [1113, 4026, 4962, 2]
+// Dependencies: [1113, 4026, 4992, 2]
 // Exports: conjureCopySourceLine, conjureCopySyncLine
 
-// Module 12301 (conjureManagedCopyStatusText)
+// Module 12333 (conjureManagedCopyStatusText)
 import intl7 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import DateUtils from "DateUtils" /* 4962 */;
+import DateUtils from "DateUtils" /* 4992 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/managed_copy/conjureManagedCopyStatusText.tsx");

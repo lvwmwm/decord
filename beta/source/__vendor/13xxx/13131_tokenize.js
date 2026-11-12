@@ -1,25 +1,24 @@
 // Module ID: 13131
 // Function ID: 13132
 // Name: tokenize
-// Dependencies: [13050]
+// Dependencies: [13082]
 
 // Module 13131 (tokenize)
-import tokenize from "tokenize" /* 13050 */;
+import tokenize from "tokenize" /* 13082 */;
 
-let obj2;
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-let closure_1 = Object.freeze({ type: "WhiteSpace", loc: null, value: " " });
-const obj = {
-  name: "WhiteSpace",
-  structure: obj2,
+const CDC = tokenize.TYPE.CDC;
+let obj = {
+  name: "CDC",
+  structure: [],
   parse() {
-    this.eat(WhiteSpace);
-    return closure_1;
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(CDC);
+    const obj = { type: "CDC", loc: this.getLocation(tokenStart, this.scanner.tokenStart) };
+    return obj;
   },
-  generate(value) {
-    this.chunk(value.value);
+  generate() {
+    this.chunk("-->");
   }
 };
-obj2 = { value: String };
 
 export default obj;

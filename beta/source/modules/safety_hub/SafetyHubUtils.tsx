@@ -1,19 +1,19 @@
-// Module ID: 8038
-// Function ID: 8039
+// Module ID: 8071
+// Function ID: 8072
 // Name: SafetyHubUtils
-// Dependencies: [502, 8039, 1072, 2166, 6183, 1113, 8040, 1089, 11, 504, 2]
+// Dependencies: [502, 8072, 1072, 2166, 6215, 1113, 8073, 1089, 11, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isAppealWindowExpired, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 8038 (SafetyHubUtils)
+// Module 8071 (SafetyHubUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6183 */;
-import SafetyHubModels from "SafetyHubModels" /* 8040 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6215 */;
+import SafetyHubModels from "SafetyHubModels" /* 8073 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8039 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8072 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

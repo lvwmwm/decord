@@ -1,19 +1,60 @@
 // Module ID: 13146
 // Function ID: 13147
-// Dependencies: [13147, 13148, 13149, 13150, 13152, 13153, 13155, 13156, 13158, 13159]
+// Dependencies: []
 
 // Module 13146
-import _mod13147 from "module_13147" /* 13147 */;
-import _mod13148 from "module_13148" /* 13148 */;
-import _mod13149 from "module_13149" /* 13149 */;
-import _mod13150 from "module_13150" /* 13150 */;
-import _mod13152 from "module_13152" /* 13152 */;
-import _mod13153 from "module_13153" /* 13153 */;
-import _mod13155 from "module_13155" /* 13155 */;
-import _mod13156 from "module_13156" /* 13156 */;
-import _mod13158 from "module_13158" /* 13158 */;
-import _mod13159 from "module_13159" /* 13159 */;
+let obj = {
+  name: "Nth",
+  structure: { nth: ["AnPlusB", "Identifier"], selector: ["SelectorList", null] },
+  parse(arg0) {
+    const self = this;
+    const scanner = this.scanner;
+    scanner.skipSC();
+    const tokenStart = this.scanner.tokenStart;
+    const scanner2 = this.scanner;
+    if (!scanner2.lookupValue(0, "odd")) {
+      let AnPlusBResult;
+      let offset;
+      let tmp5;
+      const scanner3 = self.scanner;
+      if (!scanner3.lookupValue(0, "even")) {
+        AnPlusBResult = self.AnPlusB();
+      }
+      const scanner4 = self.scanner;
+      scanner4.skipSC();
+      if (arg0) {
+        const scanner5 = self.scanner;
+        if (scanner5.lookupValue(0, "of")) {
+          const iter = self.scanner;
+          iter.next();
+          const SelectorListResult = self.SelectorList();
+          tmp5 = SelectorListResult;
+          offset = tokenStart;
+          if (self.needPositions) {
+            offset = self.getLastListNode(SelectorListResult.children).loc.end.offset;
+            tmp5 = SelectorListResult;
+          }
+        }
+        const obj = { type: "Nth", loc: self.getLocation(tokenStart, offset), nth: AnPlusBResult, selector: tmp5 };
+        return obj;
+      }
+      tmp5 = null;
+      offset = tokenStart;
+      if (self.needPositions) {
+        offset = AnPlusBResult.loc.end.offset;
+        tmp5 = null;
+      }
+    }
+    AnPlusBResult = self.Identifier();
+  },
+  generate(nth) {
+    const self = this;
+    this.node(nth.nth);
+    if (null !== nth.selector) {
+      self.chunk(" of ");
+      self.node(nth.selector);
+    }
+  }
+};
 
-({ dir: _mod13147, has: _mod13148, lang: _mod13149, matches: _mod13150, not: _mod13152, "nth-child": _mod13153, "nth-last-child": _mod13155, "nth-last-of-type": _mod13156, "nth-of-type": _mod13158, slotted: _mod13159 });
-
-export default { dir: _mod13147, has: _mod13148, lang: _mod13149, matches: _mod13150, not: _mod13152, "nth-child": _mod13153, "nth-last-child": _mod13155, "nth-last-of-type": _mod13156, "nth-of-type": _mod13158, slotted: _mod13159 };
+export default obj;

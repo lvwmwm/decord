@@ -1,24 +1,24 @@
-// Module ID: 13681
-// Function ID: 13682
+// Module ID: 13713
+// Function ID: 13714
 // Name: CheckpointShareCardStats
-// Dependencies: [19, 17, 21, 5140, 575, 8213, 5842, 13680, 5751, 9533, 2021, 1411, 12138, 8714, 9848, 9817, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 8246, 5874, 13712, 5783, 9566, 2021, 1411, 12170, 8747, 9881, 9850, 2]
 // Exports: default
 
-// Module 13681 (CheckpointShareCardStats)
+// Module 13713 (CheckpointShareCardStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import react_nativeDefault from "react-native" /* 2021 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import UnknownGameIcon from "UnknownGameIcon" /* 8213 */;
-import ChatIcon from "ChatIcon" /* 8714 */;
-import ReactionIcon from "ReactionIcon" /* 9533 */;
-import GameControllerIcon from "GameControllerIcon" /* 9817 */;
-import ServerIcon from "ServerIcon" /* 9848 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12138 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import UnknownGameIcon from "UnknownGameIcon" /* 8246 */;
+import ChatIcon from "ChatIcon" /* 8747 */;
+import ReactionIcon from "ReactionIcon" /* 9566 */;
+import GameControllerIcon from "GameControllerIcon" /* 9850 */;
+import ServerIcon from "ServerIcon" /* 9881 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12170 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -28,7 +28,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5751);
+const Text_Text = tmp2(5783);
 function StatIcon(size) {
   size = size.size;
   const obj = { size: "custom", color: nativeDefault.colors.BLACK, style: { width: size, height: size } };

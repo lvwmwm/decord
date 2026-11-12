@@ -1,10 +1,10 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14242
+// Function ID: 14243
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 14211, 502, 1072, 14212, 6798, 3, 1098, 1282, 1242, 14215, 510, 6802, 1377, 1260, 1380, 572, 2]
+// Dependencies: [5, 14243, 502, 1072, 14244, 6830, 3, 1098, 1282, 1242, 14247, 510, 6834, 1377, 1260, 1380, 572, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 14210 (PushNotificationActionCreators)
+// Module 14242 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,13 +12,13 @@ import TokenManagerAll from "TokenManager" /* 1098 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
-import Constants2 from "Constants" /* 14212 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6834 */;
+import Constants2 from "Constants" /* 14244 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 14211 */;
+import MultiAccountStore from "MultiAccountStore" /* 14243 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6798 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6830 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;

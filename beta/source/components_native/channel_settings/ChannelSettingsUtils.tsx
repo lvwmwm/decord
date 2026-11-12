@@ -1,10 +1,10 @@
-// Module ID: 19264
-// Function ID: 19265
+// Module ID: 19302
+// Function ID: 19303
 // Name: ChannelSettingsUtils
 // Dependencies: [2]
 // Exports: getIsChannelNameSettingEditable
 
-// Module 19264 (ChannelSettingsUtils)
+// Module 19302 (ChannelSettingsUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsUtils.tsx");

@@ -1,8 +1,8 @@
-// Module ID: 11926
-// Function ID: 11927
+// Module ID: 11958
+// Function ID: 11959
 // Dependencies: [2]
 
-// Module 11926
+// Module 11958
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CouchSpotIllustration-2x.png.js");

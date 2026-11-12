@@ -1,10 +1,10 @@
-// Module ID: 15202
-// Function ID: 15203
+// Module ID: 15234
+// Function ID: 15235
 // Name: useStableAddableWidgets
-// Dependencies: [32, 19, 15182, 7853, 2]
+// Dependencies: [32, 19, 15214, 7886, 2]
 // Exports: default
 
-// Module 15202 (useStableAddableWidgets)
+// Module 15234 (useStableAddableWidgets)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/user_profile/hooks/useStableA
 export default function useStableAddableWidgets(arg0) {
   let first;
   const length = arg0;
-  const arr = first(15182)();
+  const arr = first(15214)();
   const obj = react;
   let tmp = _slicedToArray(react.useState(arr), 2);
   first = tmp[0];

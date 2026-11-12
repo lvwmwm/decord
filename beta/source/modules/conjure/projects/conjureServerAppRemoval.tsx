@@ -1,22 +1,22 @@
-// Module ID: 13511
-// Function ID: 13512
+// Module ID: 13543
+// Function ID: 13544
 // Name: conjureServerAppRemoval
-// Dependencies: [5, 19, 2162, 5070, 5052, 5011, 5072, 5082, 1385, 1072, 11016, 5776, 504, 12, 6957, 7483, 6936, 2]
+// Dependencies: [5, 19, 2162, 5100, 5082, 5041, 5102, 5112, 1385, 1072, 11048, 5808, 504, 12, 6990, 7516, 6969, 2]
 // Exports: conjureDeleteAppChannelItems, conjureKickAppItems, loadConjureServerApp, useConjureServerApp
 
-// Module 13511 (conjureServerAppRemoval)
+// Module 13543 (conjureServerAppRemoval)
 import Constants from "Constants" /* 1072 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 5070 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6936 */;
-import ConjureUtils from "ConjureUtils" /* 7483 */;
-import conjureAppInServer from "conjureAppInServer" /* 11016 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 5100 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6969 */;
+import ConjureUtils from "ConjureUtils" /* 7516 */;
+import conjureAppInServer from "conjureAppInServer" /* 11048 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -24,11 +24,11 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f105974 = (id) => {
+const f106084 = (id) => {
   obj = { key: "channel:" + id.id, kind: "channel", label: "#" + id.name };
   return obj;
 };
-const f105975 = () => {
+const f106085 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -69,15 +69,15 @@ function readConjureServerApp(arg0, arg1) {
         if (null == found) {
           items = [];
         } else {
-          obj = guild(11016);
+          obj = guild(11048);
           items = obj.findConjureAppChannels(guild.id, found.id);
         }
         let canRemoveConjureBotResult = null != found;
         if (canRemoveConjureBotResult) {
           let bot = application.bot;
           let id;
-          const canRemoveConjureBot = guild(11016).canRemoveConjureBot;
-          guild(11016);
+          const canRemoveConjureBot = guild(11048).canRemoveConjureBot;
+          guild(11048);
           if (bot != null) {
             id = bot.id;
           }
@@ -86,8 +86,8 @@ function readConjureServerApp(arg0, arg1) {
         if (canRemoveConjureBotResult) {
           const bot2 = found.bot;
           let id1;
-          const canRemoveConjureBot2 = guild(11016).canRemoveConjureBot;
-          guild(11016);
+          const canRemoveConjureBot2 = guild(11048).canRemoveConjureBot;
+          guild(11048);
           if (bot2 != null) {
             id1 = bot2.id;
           }
@@ -226,7 +226,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f105975);
+    application.catch(f106085);
   }
 }
 function loadMissingApplication() {
@@ -324,7 +324,7 @@ export function useConjureServerApp(guildId, applicationId) {
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
         application = obj2.fetchApplication(tmp);
-        application.catch(f105975);
+        application.catch(f106085);
       }
     }
   }, items2);
@@ -426,7 +426,7 @@ export function loadConjureServerApp() {
 }
 export function conjureKickAppItems(rest) {
   const channels = rest.channels;
-  const items = [...channels.map(f105974)];
+  const items = [...channels.map(f106084)];
   if (rest.targetIsPreview) {
     obj = { key: "main-app", kind: "app", label: rest.appName };
     const obj2 = { key: "main-app", kind: "app", label: rest.appName };
@@ -440,7 +440,7 @@ export function conjureDeleteAppChannelItems(rest, channelId) {
   let closure_0 = channelId;
   const channels = rest.channels;
   const found = channels.filter((id) => id.id !== channelId);
-  const items = [...found.map(f105974), obj, obj2];
+  const items = [...found.map(f106084), obj, obj2];
   obj = { key: "main-app", kind: "app", label: rest.appName };
   return items;
 }

@@ -1,12 +1,12 @@
-// Module ID: 7646
-// Function ID: 7647
+// Module ID: 7679
+// Function ID: 7680
 // Name: markScopedDismissibleContentAsDismissed
-// Dependencies: [5170, 4974, 2]
+// Dependencies: [5202, 5004, 2]
 // Exports: markScopedDismissibleContentAsDismissed
 
-// Module 7646 (markScopedDismissibleContentAsDismissed)
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4974 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5170 */;
+// Module 7679 (markScopedDismissibleContentAsDismissed)
+import DismissibleContentUtils from "DismissibleContentUtils" /* 5004 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5202 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dismissible_content/markScopedDismissibleContentAsDismissed.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 7678
-// Function ID: 7679
+// Module ID: 7711
+// Function ID: 7712
 // Name: BlockedPaymentsCountryExperiment
-// Dependencies: [1449, 7679, 2]
+// Dependencies: [1449, 7712, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 7678 (BlockedPaymentsCountryExperiment)
+// Module 7711 (BlockedPaymentsCountryExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

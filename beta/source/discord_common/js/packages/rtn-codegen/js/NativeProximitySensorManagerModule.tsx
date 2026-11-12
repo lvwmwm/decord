@@ -1,9 +1,9 @@
-// Module ID: 20006
-// Function ID: 20007
+// Module ID: 20044
+// Function ID: 20045
 // Name: react-native
 // Dependencies: [17, 2]
 
-// Module 20006 (react-native)
+// Module 20044 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

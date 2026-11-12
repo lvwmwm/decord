@@ -1,13 +1,13 @@
-// Module ID: 14982
-// Function ID: 14983
+// Module ID: 15014
+// Function ID: 15015
 // Name: VoicePanelSpoilerAlert
-// Dependencies: [19, 21, 6096, 6096, 1113, 6957, 6761, 2]
+// Dependencies: [19, 21, 6128, 6128, 1113, 6990, 6793, 2]
 // Exports: default
 
-// Module 14982 (VoicePanelSpoilerAlert)
+// Module 15014 (VoicePanelSpoilerAlert)
 import intl5 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 6096 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
+import AlertModal2 from "AlertModal" /* 6128 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let dependencyMap;
 let c3;
 let closure_4;
 let tmp;
-const SelectedChannelActionCreatorsDefault = tmp(6761);
+const SelectedChannelActionCreatorsDefault = tmp(6793);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const result = size.fileFinishedImporting("modules/spoiler_channels/native/VoicePanelSpoilerAlert.tsx");
 

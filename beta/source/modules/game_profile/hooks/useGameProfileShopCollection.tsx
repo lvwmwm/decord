@@ -1,13 +1,13 @@
-// Module ID: 9666
-// Function ID: 9667
+// Module ID: 9699
+// Function ID: 9700
 // Name: useGameProfileShopCollection
-// Dependencies: [19, 9403, 504, 9536, 9667, 2]
+// Dependencies: [19, 9436, 504, 9569, 9700, 2]
 // Exports: useGameProfileShopCollection, useGameProfileShopCollectionProducts, useGameProfileShopCollectionState
 
-// Module 9666 (useGameProfileShopCollection)
-import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9536 */;
+// Module 9699 (useGameProfileShopCollection)
+import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9569 */;
 import react from "react" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 9403 */;
+import GameProfileStore from "GameProfileStore" /* 9436 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,19 +1,19 @@
-// Module ID: 18532
-// Function ID: 18533
+// Module ID: 18570
+// Function ID: 18571
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 5171, 1072, 4965, 5014, 1099, 10950, 1113, 3608, 2]
+// Dependencies: [19, 5203, 1072, 4995, 5044, 1099, 10982, 1113, 3608, 2]
 // Exports: default
 
-// Module 18532 (useFavoritesGuildResetAction)
+// Module 18570 (useFavoritesGuildResetAction)
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3608 from "module_3608" /* 3608 */;
-import UserSettings from "UserSettings" /* 4965 */;
-import FavoritesUtils from "FavoritesUtils" /* 5014 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10950 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import FavoritesUtils from "FavoritesUtils" /* 5044 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10982 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

@@ -1,10 +1,10 @@
-// Module ID: 12334
-// Function ID: 12335
+// Module ID: 12366
+// Function ID: 12367
 // Name: ConjureLinkedAppsTab
-// Dependencies: [19, 21, 6096, 1113, 4026, 5374, 12335, 6159, 575, 7126, 7038, 12330, 5751, 2]
+// Dependencies: [19, 21, 6128, 1113, 4026, 5406, 12367, 6191, 575, 7159, 7071, 12362, 5783, 2]
 // Exports: default
 
-// Module 12334 (ConjureLinkedAppsTab)
+// Module 12366 (ConjureLinkedAppsTab)
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import react from "react" /* 19 */;
@@ -111,7 +111,7 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   const tmp5 = closure_3;
   if (failed) {
     let obj3 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: intl2.string(_modDef4026.dIEOrl) };
-    const Text = tmp2(5751).Text;
+    const Text = tmp2(5783).Text;
     intl2 = tmp2(1113).intl;
     tmp5Result = tmp5(Text, obj3);
   }

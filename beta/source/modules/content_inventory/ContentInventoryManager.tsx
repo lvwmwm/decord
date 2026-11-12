@@ -1,25 +1,25 @@
-// Module ID: 20433
-// Function ID: 20434
+// Module ID: 20471
+// Function ID: 20472
 // Name: ContentInventoryManager
-// Dependencies: [5, 6623, 6627, 6760, 6922, 13663, 8981, 8996, 1072, 1089, 12, 15244, 572, 15893, 20434, 7350, 2]
+// Dependencies: [5, 6655, 6659, 6792, 6955, 13695, 9014, 9029, 1072, 1089, 12, 15276, 572, 15925, 20472, 7383, 2]
 
-// Module 20433 (ContentInventoryManager)
+// Module 20471 (ContentInventoryManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8996 */;
-import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 15244 */;
-import ContentInventoryExperiments from "ContentInventoryExperiments" /* 15893 */;
-import ContentInventoryFeature from "ContentInventoryFeature" /* 20434 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 9029 */;
+import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 15276 */;
+import ContentInventoryExperiments from "ContentInventoryExperiments" /* 15925 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 20472 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
-import IdleStore from "IdleStore" /* 6760 */;
-import WindowStore from "WindowStore" /* 6922 */;
-import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 13663 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8981 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
+import IdleStore from "IdleStore" /* 6792 */;
+import WindowStore from "WindowStore" /* 6955 */;
+import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 13695 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 9014 */;
 import module_12 from "module_12" /* 12 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 let refresh_token;
@@ -188,132 +188,84 @@ let actions = function _fetchInventory() {
       let c0;
       let c1;
       let force;
-      if (c7 === 2) {
-        c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      if (1 === c6) {
         if (arg0 === 1) {
+          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c7 = 3;
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          c5 = 1;
+          feed.getFeed(feedId);
+          set.add(feedId);
+          closure_131_20(feedId, { loading: true });
+          refresh_token = undefined;
+          const getMyContentInventory = closure_131_0(closure_131_2[11]).getMyContentInventory;
+          closure_131_0(closure_131_2[11]);
+          if (refresh_token != null) {
+            refresh_token = refresh_token.refresh_token;
+          }
+          c6 = 3;
+          c7 = 1;
+          const obj6 = { token: refresh_token, feedId, feature };
+          const obj7 = { value: getMyContentInventory(obj6), done: false };
+          return obj7;
         }
+      } else if (2 === c6) {
+        c5 = 0;
+        value = closure_131_16.get(feedId);
+        feature = value;
+        if (value == null) {
+          feature = 0;
+        }
+        let closure_5 = feature;
+        if (closure_5 < 4) {
+          const _Math = Math;
+          let closure_6 = closure_131_1(closure_131_2[9]).Millis.MINUTE * Math.pow(2, closure_5);
+          let closure_7 = closure_131_19(closure_5);
+          const _setTimeout = setTimeout;
+          const result = closure_131_14.set(feedId, setTimeout(() => {
+            const obj = { feedId, feature, force };
+            return closure_2_23(obj);
+          }, closure_6 + closure_7));
+          const result1 = closure_131_16.set(feedId, closure_5 + 1);
+        } else {
+          const obj8 = { type: "CONTENT_INVENTORY_CLEAR_FEED", feedId };
+          const obj2 = closure_131_1(closure_131_2[12]);
+          obj2.dispatch(obj8);
+        }
+        set.delete(feedId);
+      } else if (arg0 === 1) {
+        c7 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c5 = 0;
+        c7 = 3;
+        let obj = { value, done: true };
+        return obj;
       } else {
-        try {
-          let closure_5;
-          let closure_6;
-          let closure_7;
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              refresh_token = tmp;
-              feedId = undefined;
-              feature = undefined;
-              force = undefined;
-              ({ feedId: c0, feature: c1, force } = feedId);
-              if (force === undefined) {
-                force = false;
-              }
-              refresh_token = undefined;
-              feed = undefined;
-              closure_5 = undefined;
-              closure_6 = undefined;
-              closure_7 = undefined;
-              c6 = 1;
-              c7 = 1;
-              return { value: "flexDirection", done: null };
-            }
-          } else {
-            if (1 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                return { value, done: true };
-              } else {
-                c5 = 1;
-                feed.getFeed(feedId);
-                set.add(feedId);
-                closure_131_20(feedId, { loading: true });
-                refresh_token = undefined;
-                const getMyContentInventory = closure_131_0(closure_131_2[11]).getMyContentInventory;
-                closure_131_0(closure_131_2[11]);
-                if (refresh_token != null) {
-                  refresh_token = refresh_token.refresh_token;
-                }
-                c6 = 3;
-                c7 = 1;
-                const obj6 = { token: refresh_token, feedId, feature };
-                const obj7 = { value: getMyContentInventory(obj6), done: false };
-                return obj7;
-              }
-            } else if (2 === c6) {
-              c5 = 0;
-              value = closure_131_16.get(feedId);
-              feature = value;
-              if (value == null) {
-                feature = 0;
-              }
-              closure_5 = feature;
-              if (closure_5 < 4) {
-                const _Math = Math;
-                closure_6 = closure_131_1(closure_131_2[9]).Millis.MINUTE * Math.pow(2, closure_5);
-                closure_7 = closure_131_19(closure_5);
-                const _setTimeout = setTimeout;
-                const result = closure_131_14.set(feedId, setTimeout(() => {
-                  const obj = { feedId, feature, force };
-                  return closure_2_23(obj);
-                }, closure_6 + closure_7));
-                const result1 = closure_131_16.set(feedId, closure_5 + 1);
-              } else {
-                const obj8 = { type: "CONTENT_INVENTORY_CLEAR_FEED", feedId };
-                const obj2 = closure_131_1(closure_131_2[12]);
-                obj2.dispatch(obj8);
-              }
-              set.delete(feedId);
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 0;
-              c7 = 3;
-              let obj = { value, done: true };
-              return obj;
-            } else {
-              feed = value;
-              const obj10 = { type: "CONTENT_INVENTORY_SET_FEED", feedId, feed };
-              const obj9 = closure_131_1(closure_131_2[12]);
-              obj9.dispatch(obj10);
-              const result2 = closure_131_16.set(feedId, 0);
-              set.delete(feedId);
-              closure_131_20(feedId, { loading: false });
-              if (feedId === closure_131_12) {
-                let c17 = null;
-                closure_131_22();
-              }
-              c5 = 0;
-            }
-            c7 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } catch (tmp64) {
-          feed = tmp64;
-          if (0 === c5) {
-            c7 = 3;
-            throw tmp64;
-          } else {
-            c6 = 2;
-          }
+        feed = value;
+        const obj10 = { type: "CONTENT_INVENTORY_SET_FEED", feedId, feed };
+        const obj9 = closure_131_1(closure_131_2[12]);
+        obj9.dispatch(obj10);
+        const result2 = closure_131_16.set(feedId, 0);
+        set.delete(feedId);
+        closure_131_20(feedId, { loading: false });
+        if (feedId === closure_131_12) {
+          let c17 = null;
+          closure_131_22();
         }
+        c5 = 0;
       }
+      await "HermesInternal";
+      refresh_token = tmp;
+      force = tmp4;
+      ({ feedId: c0, feature: c1, force } = feedId);
+      if (force === undefined) {
+        force = false;
+      }
+      return "flexDirection";
     })();
     iter.next();
     return iter;

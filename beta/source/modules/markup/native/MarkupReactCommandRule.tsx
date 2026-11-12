@@ -1,21 +1,21 @@
-// Module ID: 11643
-// Function ID: 11644
+// Module ID: 11675
+// Function ID: 11676
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 4989, 1498, 6167, 6168, 21, 5807, 5315, 5374, 1625, 6091, 1113, 1187, 11644, 5836, 7418, 4965, 10643, 7423, 11646, 5751, 5323, 11649, 8642, 2]
+// Dependencies: [19, 5019, 1498, 6199, 6200, 21, 5839, 5347, 5406, 1625, 6123, 1113, 1187, 11676, 5868, 7451, 4995, 10675, 7456, 11678, 5783, 5355, 11681, 8675, 2]
 // Exports: default
 
-// Module 11643 (MarkupReactCommandRule)
+// Module 11675 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5807 */;
-import ToastUtils from "ToastUtils" /* 5836 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6167 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6168 */;
-import ClipboardUtils from "ClipboardUtils" /* 7418 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11649 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5839 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6199 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6200 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11681 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import size from "module_2" /* 2 */;
 
@@ -175,10 +175,10 @@ export default function MarkupReactCommandRule(node) {
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != react.useContext(node(11646).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(11678).AppLauncherContext);
   dependencyMap = closure_6();
-  const Text = node(5751).Text;
-  let obj2 = node(8642);
+  const Text = node(5783).Text;
+  let obj2 = node(8675);
   const items = ["/", obj2.smartOutput(node, output, state)];
   return <Text style={style} variant="body-md/semibold" onPress={function onPress() {
     let str;

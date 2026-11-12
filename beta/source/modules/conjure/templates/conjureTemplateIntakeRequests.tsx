@@ -1,12 +1,12 @@
-// Module ID: 13215
-// Function ID: 13216
+// Module ID: 13247
+// Function ID: 13248
 // Name: conjureTemplateIntakeRequests
-// Dependencies: [5, 11081, 1113, 2]
+// Dependencies: [5, 11113, 1113, 2]
 // Exports: fetchStoredConjureIntake
 
-// Module 13215 (conjureTemplateIntakeRequests)
+// Module 13247 (conjureTemplateIntakeRequests)
 import intl from "intl" /* 1113 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11081 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

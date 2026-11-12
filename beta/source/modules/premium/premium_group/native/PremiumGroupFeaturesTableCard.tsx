@@ -1,22 +1,22 @@
-// Module ID: 15660
-// Function ID: 15661
+// Module ID: 15692
+// Function ID: 15693
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 7693, 21, 5140, 575, 5751, 1113, 15661, 1187, 5715, 5137, 10048, 2]
+// Dependencies: [17, 7726, 21, 5170, 575, 5783, 1113, 15693, 1187, 5747, 5167, 10081, 2]
 // Exports: default
 
-// Module 15660 (PremiumGroupFeaturesTableCard)
+// Module 15692 (PremiumGroupFeaturesTableCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import ColorUtils from "ColorUtils" /* 5137 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ColorConstants from "ColorConstants" /* 7693 */;
-import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 10048 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 15661 */;
+import ColorUtils from "ColorUtils" /* 5167 */;
+import LinearGradientDefault from "LinearGradient" /* 5747 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ColorConstants from "ColorConstants" /* 7726 */;
+import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 10081 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 15693 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

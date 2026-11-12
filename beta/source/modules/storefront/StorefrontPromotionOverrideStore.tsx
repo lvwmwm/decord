@@ -1,9 +1,9 @@
-// Module ID: 9565
-// Function ID: 9566
+// Module ID: 9598
+// Function ID: 9599
 // Name: StorefrontPromotionOverrideStore
 // Dependencies: [504, 572, 2]
 
-// Module 9565 (StorefrontPromotionOverrideStore)
+// Module 9598 (StorefrontPromotionOverrideStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

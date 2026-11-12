@@ -1,12 +1,12 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15296
+// Function ID: 15297
 // Name: useUserProfileConnections
-// Dependencies: [19, 7848, 7758, 504, 6629, 2]
+// Dependencies: [19, 7881, 7791, 504, 6661, 2]
 // Exports: default
 
-// Module 15264 (useUserProfileConnections)
+// Module 15296 (useUserProfileConnections)
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7848 */;
+import UserProfileStore from "UserProfileStore" /* 7881 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

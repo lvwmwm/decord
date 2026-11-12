@@ -1,28 +1,28 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9240
+// Function ID: 9241
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 4994, 9199, 5011, 5072, 1072, 21, 5140, 575, 9208, 1627, 7387, 7412, 7391, 504, 5875, 9209, 9198, 7957, 5374, 8821, 9210, 1196, 9212, 5388, 7382, 1113, 1187, 9233, 9237, 9239, 7282, 9230, 9276, 9277, 2]
+// Dependencies: [32, 19, 17, 5024, 9232, 5041, 5102, 1072, 21, 5170, 575, 9241, 1627, 7420, 7445, 7424, 504, 5907, 9242, 9231, 7990, 5406, 8854, 9243, 1196, 9245, 5420, 7415, 1113, 1187, 9266, 9270, 9272, 7315, 9263, 9309, 9310, 2]
 // Exports: default
 
-// Module 9207 (InstantInviteActionSheet)
+// Module 9240 (InstantInviteActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5875 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9198 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9208 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9210 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5907 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9231 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9241 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 9243 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 4994 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9199 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import StageInstanceStore from "StageInstanceStore" /* 5024 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9232 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_12;

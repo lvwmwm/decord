@@ -1,10 +1,10 @@
-// Module ID: 9185
-// Function ID: 9186
+// Module ID: 9218
+// Function ID: 9219
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 4994, 6764, 1072, 4995, 21, 5140, 575, 6799, 7043, 1113, 1187, 7320, 9186, 7020, 504, 7441, 8246, 5751, 9189, 9190, 9191, 5721, 1252, 2017, 8014, 7445, 6579, 9192, 9193, 8023, 5758, 7355, 7016, 2]
+// Dependencies: [5, 32, 19, 17, 5024, 6796, 1072, 5025, 21, 5170, 575, 6831, 7076, 1113, 1187, 7353, 9219, 7053, 504, 7474, 8279, 5783, 9222, 9223, 9224, 5753, 1252, 2017, 8047, 7478, 6611, 9225, 9226, 8056, 5790, 7388, 7049, 2]
 // Exports: default
 
-// Module 9185 (StartStageChannelModal)
+// Module 9218 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,22 +12,22 @@ import intl9 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4995 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import GuildIcon from "GuildIcon" /* 7020 */;
-import Pressables from "Pressables" /* 7043 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7320 */;
-import HotspotStore2 from "HotspotStore" /* 7441 */;
-import _mod8246 from "module_8246" /* 8246 */;
-import StageSparkleDefault from "StageSparkle" /* 9186 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5025 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+import GuildIcon from "GuildIcon" /* 7053 */;
+import Pressables from "Pressables" /* 7076 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7353 */;
+import HotspotStore2 from "HotspotStore" /* 7474 */;
+import _mod8279 from "module_8279" /* 8279 */;
+import StageSparkleDefault from "StageSparkle" /* 9219 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 4994 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6764 */;
+import StageInstanceStore from "StageInstanceStore" /* 5024 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6796 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -108,9 +108,9 @@ class NotificationToggle {
     });
     const obj = { DEPRECATED_style: tmp.notificationToggle, label: tmp7(metroImportDefault, obj2), onPress: onToggle, trailing: authStore3(native.Checkbox, { selected: sendStartNotification }) };
     obj2 = { style: tmp.label, children: items1 };
-    const FormRow = _mod8246.FormRow;
+    const FormRow = _mod8279.FormRow;
     const obj3 = { text: intl.string(intl9.t.BYJgew) };
-    const FormLabel = _mod8246.FormLabel;
+    const FormLabel = _mod8279.FormLabel;
     intl = intl9.intl;
     items1 = [authStore3(FormLabel, obj3), ];
     let tmp6Result = null;
@@ -118,7 +118,7 @@ class NotificationToggle {
     if (stateFromStores) {
       const obj4 = { style: tmp.pill, children: authStore3(Text, obj5) };
       obj5 = { style: tmp.pillLabel, variant: "footnote/semibold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-      Text = tmp2(5751).Text;
+      Text = tmp2(5783).Text;
       intl2 = tmp2(1113).intl;
       tmp6Result = tmp6(tmp8, obj4);
     }

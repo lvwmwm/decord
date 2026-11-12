@@ -1,21 +1,21 @@
-// Module ID: 20072
-// Function ID: 20073
+// Module ID: 20110
+// Function ID: 20111
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1072, 21, 5140, 575, 5199, 8290, 7043, 1113, 5842, 20073, 20074, 1187, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5170, 575, 5231, 8323, 7076, 1113, 5874, 20111, 20112, 1187, 2]
 
-// Module 20072 (AssetChooser)
+// Module 20110 (AssetChooser)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import native from "native" /* 5199 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import Pressables from "Pressables" /* 7043 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20074 */;
+import native from "native" /* 5231 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import Pressables from "Pressables" /* 7076 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20112 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
@@ -161,7 +161,7 @@ class AssetChooser extends PureComponent {
     const tmp10 = FastImageDefault;
     const tmp4 = React4;
     if (null == source) {
-      tmp9Result = tmp9(20073);
+      tmp9Result = tmp9(20111);
     }
     items = [, ];
     const obj3 = { source: tmp9Result, style: tmp.assetImage };

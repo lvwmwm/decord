@@ -1,13 +1,26 @@
 // Module ID: 5598
 // Function ID: 5599
-// Dependencies: [5599, 5601]
+// Dependencies: [19, 21, 5595]
+// Exports: default
 
 // Module 5598
-import BottomSheetFooter from "BottomSheetFooter" /* 5599 */;
-import BottomSheetFooterContainer from "BottomSheetFooterContainer" /* 5601 */;
+import Fragment from "Fragment" /* 21 */;
+import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 5595 */;
+import react from "react" /* 19 */;
 
-const BottomSheetFooter_export = BottomSheetFooter.BottomSheetFooter;
-const BottomSheetFooterContainer_export = BottomSheetFooterContainer.BottomSheetFooterContainer;
+const jsx = Fragment.jsx;
 
-export { BottomSheetFooter_export as BottomSheetFooter };
-export { BottomSheetFooterContainer_export as BottomSheetFooterContainer };
+export default function _default(delayLongPress) {
+  let num = delayLongPress.delayLongPress;
+  if (num === undefined) {
+    num = 600;
+  }
+  let extraButtonProps = delayLongPress.extraButtonProps;
+  if (extraButtonProps === undefined) {
+    extraButtonProps = { rippleColor: "transparent", exclusive: true };
+  }
+  const merged = Object.assign(delayLongPress, Object.assign({ delayLongPress: 0, extraButtonProps: 0 }));
+  TOUCHABLE_STATEDefault;
+  const merged1 = Object.assign(merged);
+  return <tmp2 delayLongPress={num} extraButtonProps={extraButtonProps} />;
+};

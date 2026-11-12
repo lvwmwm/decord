@@ -1,75 +1,128 @@
 // Module ID: 13317
 // Function ID: 13318
-// Dependencies: [13310, 13305, 13318, 13306, 13278]
-// Exports: sampleSpan
+// Dependencies: []
+// Exports: isDOMError, isDOMException, isElement, isError, isErrorEvent, isEvent, isParameterizedString, isPlainObject, isPrimitive, isRegExp, isString, isSyntheticEvent, isThenable, isVueViewModel
 
 // Module 13317
-import _mod13305 from "module_13305" /* 13305 */;
-import _mod13306 from "module_13306" /* 13306 */;
-import _mod13310 from "module_13310" /* 13310 */;
-import _mod13318 from "module_13318" /* 13318 */;
-
-
-export function sampleSpan(tracesSampler, normalizedRequest) {
-  const obj = _mod13310;
-  if (obj.hasTracingEnabled(tracesSampler)) {
-    let num;
-    let items3;
-    const tmpResult = _mod13305;
-    const isolationScope = tmpResult.getIsolationScope();
-    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
-    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
-    const merged = Object.assign(normalizedRequest);
-    if (typeof tracesSampler.tracesSampler === "function") {
-      num = tracesSampler.tracesSampler(obj2);
-    } else if (undefined !== obj2.parentSampled) {
-      num = obj2.parentSampled;
-    } else {
-      num = 1;
-      if (undefined !== tracesSampler.tracesSampleRate) {
-        num = tracesSampler.tracesSampleRate;
-      }
-    }
-    const tmpResult2 = _mod13318;
-    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
-    if (undefined === parseSampleRateResult) {
-      if (_mod13306.DEBUG_BUILD) {
-        const logger3 = tmp(13278).logger;
-        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
-      }
-      const items = [false];
-      items3 = items;
-    } else if (parseSampleRateResult) {
-      let items2;
-      const _Math = Math;
-      if (Math.random() < parseSampleRateResult) {
-        const items1 = [true, parseSampleRateResult];
-        items2 = items1;
-      } else {
-        if (_mod13306.DEBUG_BUILD) {
-          const logger2 = tmp(13278).logger;
-          const _Number = Number;
-          const _HermesInternal = HermesInternal;
-          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
-        }
-        items2 = [false, parseSampleRateResult];
-      }
-      items3 = items2;
-    } else {
-      if (_mod13306.DEBUG_BUILD) {
-        const logger = tmp(13278).logger;
-        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
-        const log = logger.log;
-        if (typeof tracesSampler.tracesSampler === "function") {
-          str = "tracesSampler returned 0 or false";
-        }
-        log(`[Tracing] Discarding transaction because ${str}`);
-      }
-      items3 = [false, parseSampleRateResult];
-    }
-    return items3;
-  } else {
-    const items4 = [false];
-    return items4;
+function isInstanceOf(arg0, arg1) {
+  try {
+    return arg0 instanceof arg1;
+  } catch (err) {
+    return false;
   }
+}
+
+export function isDOMError(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "DOMError" + "]";
+}
+export function isDOMException(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "DOMException" + "]";
+}
+export function isElement(arg0) {
+  let tmp = typeof globalThis.Element !== "undefined";
+  if (typeof globalThis.Element !== "undefined") {
+    tmp = isInstanceOf(arg0, globalThis.Element);
+  }
+  return tmp;
+}
+export function isError(arg0) {
+  const callResult = toString.call(arg0);
+  if ("[object Error]" !== callResult) {
+    if ("[object Exception]" !== callResult) {
+      if ("[object DOMException]" !== callResult) {
+        if ("[object WebAssembly.Exception]" !== callResult) {
+          const _Error = Error;
+          return isInstanceOf(arg0, Error);
+        }
+      }
+    }
+  }
+  return true;
+}
+export function isErrorEvent(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "ErrorEvent" + "]";
+}
+export function isEvent(arg0) {
+  let tmp = typeof Event !== "undefined";
+  if (typeof Event !== "undefined") {
+    const _Event = Event;
+    tmp = isInstanceOf(arg0, Event);
+  }
+  return tmp;
+}
+export { isInstanceOf };
+export function isParameterizedString(obj) {
+  let tmp = typeof obj === "object";
+  if (typeof obj === "object") {
+    tmp = null !== obj;
+  }
+  if (tmp) {
+    tmp = "__sentry_template_string__" in obj;
+  }
+  if (tmp) {
+    tmp = "__sentry_template_values__" in obj;
+  }
+  return tmp;
+}
+export function isPlainObject(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "Object" + "]";
+}
+export function isPrimitive(obj) {
+  let tmp = null === obj;
+  if (!tmp) {
+    let tmp2 = typeof obj === "object";
+    if (typeof obj === "object") {
+      tmp2 = null !== obj;
+    }
+    if (tmp2) {
+      tmp2 = "__sentry_template_string__" in obj;
+    }
+    if (tmp2) {
+      tmp2 = "__sentry_template_values__" in obj;
+    }
+    tmp = tmp2;
+  }
+  if (!tmp) {
+    let tmp3 = typeof obj !== "object";
+    if (typeof obj !== "object") {
+      tmp3 = typeof obj !== "function";
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+}
+export function isRegExp(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "RegExp" + "]";
+}
+export function isString(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "String" + "]";
+}
+export function isSyntheticEvent(arg0) {
+  const callResult = toString.call(arg0);
+  const tmp2 = callResult === "[object " + "Object" + "]" && "nativeEvent" in arg0 && "preventDefault" in arg0 && "stopPropagation" in arg0;
+  return tmp2;
+}
+export function isThenable(arg0) {
+  let then = arg0;
+  const _Boolean = Boolean;
+  if (arg0) {
+    then = arg0.then;
+  }
+  if (then) {
+    then = typeof arg0.then === "function";
+  }
+  return _Boolean(then);
+}
+export function isVueViewModel(__isVue) {
+  let tmp = typeof __isVue !== "object" || null === __isVue;
+  if (!tmp) {
+    tmp = !__isVue.__isVue && !__isVue._isVue;
+  }
+  return !tmp;
 }

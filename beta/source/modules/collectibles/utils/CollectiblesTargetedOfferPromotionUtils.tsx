@@ -1,14 +1,14 @@
-// Module ID: 9639
-// Function ID: 9640
+// Module ID: 9672
+// Function ID: 9673
 // Name: CollectiblesTargetedOfferPromotionUtils
-// Dependencies: [9568, 7475, 7808, 7807, 1113, 2]
+// Dependencies: [9601, 7508, 7841, 7840, 1113, 2]
 // Exports: getTargetedOfferPromotionFlavorModalGradient, getTargetedOfferPromotionFlavorStyleOTPCheckout, getTargetedOfferPromotionForCollectiblesProduct, getTargetedOfferPromotionPurchaseCtaText, hasFiatExclusiveTargetedOfferPromotion, isCollectiblesTargetedOfferPromotion
 
-// Module 9639 (CollectiblesTargetedOfferPromotionUtils)
-import StorefrontTypes from "StorefrontTypes" /* 7475 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7807 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7808 */;
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9568 */;
+// Module 9672 (CollectiblesTargetedOfferPromotionUtils)
+import StorefrontTypes from "StorefrontTypes" /* 7508 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7840 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7841 */;
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9601 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesTargetedOfferPromotionUtils.tsx");
@@ -109,7 +109,7 @@ export function getTargetedOfferPromotionPurchaseCtaText(targetedOfferPromotionF
           type1 = discount.type;
         }
       }
-      const tmp7 = type1 === tmp2(7475).StorefrontDiscountTypes.PERCENT && 100 === targetedOfferPromotionForCollectiblesProduct.rewardConfig.discount.amount;
+      const tmp7 = type1 === tmp2(7508).StorefrontDiscountTypes.PERCENT && 100 === targetedOfferPromotionForCollectiblesProduct.rewardConfig.discount.amount;
       const intl = tmp2(1113).intl;
       const string = intl.string;
       const t = tmp2(1113).t;

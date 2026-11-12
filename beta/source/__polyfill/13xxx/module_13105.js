@@ -1,55 +1,175 @@
 // Module ID: 13105
 // Function ID: 13106
-// Dependencies: [13050, 13094]
+// Dependencies: [13076, 13098]
 
 // Module 13105
-import tokenize from "tokenize" /* 13050 */;
-import tokenize2 from "tokenize" /* 13094 */;
+import _mod13076 from "module_13076" /* 13076 */;
 
-let items;
-let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.semicolonIncluded, true);
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+function isCommaContextStart(type) {
+  let tmp = null === type;
+  if (!tmp) {
+    let tmp4 = type.type === _mod13076.TYPE.Comma || type.type === tmp2(13076).TYPE.Function || type.type === tmp2(13076).TYPE.LeftParenthesis || type.type === tmp2(13076).TYPE.LeftSquareBracket || type.type === tmp2(13076).TYPE.LeftCurlyBracket;
+    if (!tmp4) {
+      tmp4 = type.type === tmp2(13076).TYPE.Delim && "?" !== type.value;
+      const tmp5 = type.type === tmp2(13076).TYPE.Delim && "?" !== type.value;
+    }
+    tmp = tmp4;
+  }
+  return tmp;
 }
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Comment = tokenize.TYPE.Comment;
-const Semicolon = tokenize.TYPE.Semicolon;
-const obj = {
-  name: "DeclarationList",
-  structure: obj2,
-  parse() {
-    const self = this;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      while (true) {
-        let tokenType = self.scanner.tokenType;
-        if (WhiteSpace !== tokenType) {
-          if (Comment !== tokenType) {
-            if (Semicolon !== tokenType) {
-              let arr = list.push(self.parseWithFallback(self.Declaration, consumeRaw));
-            }
-            if (self.scanner.eof) {
-              break;
-            }
-          }
+function internalMatch(arg0, arg1, arg2) {
+  let closure_0;
+  let syntax;
+  _require = arg0;
+  dependencyMap = arg1;
+  let c2 = null;
+  Match = null;
+  c4 = -1;
+  let closure_5 = 0;
+  let prev = { type: 0, syntax: null, token: null, prev: null };
+  while (true) {
+    let tmp = c4;
+    let sum = c4 + 1;
+    c4 = sum;
+    let tmp3 = null;
+    if (sum < arg0.length) {
+      let tmp4 = c4;
+      tmp3 = arg0[c4];
+    }
+    Match = tmp3;
+    let tmp5 = null;
+    let tmp6 = null;
+    let tmp7 = null;
+    let tmp8 = null;
+    if (null === tmp3) {
+      break;
+    } else {
+      let tmp10 = _require;
+      if (tmp3.type === require("module_13076").TYPE.WhiteSpace) {
+        continue;
+      } else {
+        tmp5 = null;
+        tmp6 = null;
+        tmp7 = null;
+        tmp8 = null;
+        if (Match.type !== tmp10(13076).TYPE.Comment) {
+          break;
         }
-        let iter = self.scanner;
-        let nextResult = iter.next();
+      }
+      continue;
+    }
+  }
+}
+let Match = "Match";
+let c4 = 0;
+let obj = {
+  matchAsList(arg0, arg1, arg2) {
+    let obj = arg2;
+    const tmp = internalMatch;
+    if (!arg2) {
+      obj = {};
+    }
+    const str = tmp(arg0, arg1, obj);
+    if (null !== str.match) {
+      let prev = str.match;
+      let tmp3 = null;
+      let tmp4 = null;
+      if (null !== prev) {
+        do {
+          prev.prev = tmp3;
+          tmp3 = prev;
+          tmp4 = prev;
+          prev = prev.prev;
+        } while (null !== tmp2);
+      }
+      let prev2 = tmp4.prev;
+      str.match = [];
+      if (null !== prev2) {
+        do {
+          let type = prev2.type;
+          if (0 !== type) {
+            if (2 !== type) {
+              if (3 !== type) {
+                let match = str.match;
+                let obj2 = { token: prev2.token.value, node: prev2.token.node };
+                let arr = match.push(obj2);
+              }
+            }
+            let match1 = str.match;
+            let obj5 = { type: null, syntax: null };
+            ({ type: obj3.type, syntax: obj3.syntax } = prev2);
+            let arr2 = match1.push(obj5);
+          }
+          prev2 = prev2.prev;
+        } while (null !== prev2);
       }
     }
-    const element = { type: "DeclarationList", loc: self.getLocationFromList(list), children: list };
-    return element;
+    return str;
   },
-  generate(arg0) {
-    this.children(arg0, function(type) {
-      if ("Declaration" === type.type) {
-        const self = this;
-        this.chunk(";");
+  matchAsTree(arr, match, self) {
+    let tmp2;
+    let obj = self;
+    const tmp = internalMatch;
+    if (!self) {
+      obj = {};
+    }
+    const str = tmp(arr, match, obj);
+    if (null === str.match) {
+      return str;
+    } else {
+      let prev = str.match;
+      let obj2 = { syntax: tmp2, match: [] };
+      tmp2 = match.syntax || null;
+      str.match = obj2;
+      const items = [obj2];
+      let tmp3 = null;
+      let tmp4 = null;
+      if (null !== prev) {
+        do {
+          prev.prev = tmp3;
+          tmp3 = prev;
+          tmp4 = prev;
+          prev = prev.prev;
+        } while (null !== tmp5);
       }
-    });
+      let prev2 = tmp4.prev;
+      if (null !== prev2) {
+        do {
+          let tmp10;
+          let type = prev2.type;
+          if (2 === type) {
+            match = obj2.match;
+            let obj3 = { syntax: prev2.syntax, match: [] };
+            arr = match.push(obj3);
+            let arr2 = items.push(obj3);
+            tmp10 = obj3;
+          } else if (3 === type) {
+            let arr3 = items.pop();
+            tmp10 = items[items.length - 1];
+          } else {
+            let match1 = obj2.match;
+            let syntax = prev2.syntax;
+            let push = match1.push;
+            if (!syntax) {
+              syntax = null;
+            }
+            let obj4 = { syntax, token: prev2.token.value, node: prev2.token.node };
+            let arr7 = push(obj4);
+            tmp10 = obj2;
+          }
+          prev2 = prev2.prev;
+          obj2 = tmp10;
+        } while (null !== prev2);
+      }
+      return str;
+    }
+  },
+  getTotalIterationCount() {
+    return c4;
   }
 };
-obj2 = { children: items };
-items = [["Declaration"]];
 
 export default obj;

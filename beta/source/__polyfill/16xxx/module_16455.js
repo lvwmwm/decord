@@ -1,37 +1,36 @@
 // Module ID: 16455
 // Function ID: 16456
-// Dependencies: [16456, 16459, 16441, 16463, 16464, 16460]
+// Dependencies: [16376, 16456]
+// Exports: getSupportedCalendars
 
 // Module 16455
-import _mod16441 from "module_16441" /* 16441 */;
-import _mod16456 from "module_16456" /* 16456 */;
-import _mod16460 from "module_16460" /* 16460 */;
-import _mod16463 from "module_16463" /* 16463 */;
-import _mod16464 from "module_16464" /* 16464 */;
-import prop from "module_16459" /* 16459 */;
+const require = globalThis.__r;
+let _require;
 
-let tmp2;
-let closure_2 = _mod16456("wks");
-const _Symbol = _mod16441.Symbol;
-if (prop) {
-  tmp2 = _Symbol.for || _mod16441.Symbol;
-  const tmp3 = _Symbol.for || _mod16441.Symbol;
-} else {
-  tmp2 = _Symbol && _mod16441.Symbol.withoutSetter || _mod16463;
-}
-let closure_3 = tmp2;
 
-export default (arg0) => {
-  if (!_mod16464(closure_2, arg0)) {
-    if (_mod16460) {
-      let tmp6;
-      const tmpResult = _mod16464;
-      if (tmpResult(_mod16441.Symbol, arg0)) {
-        tmp6 = tmp(16441).Symbol[arg0];
+export function getSupportedCalendars(locale) {
+  _require = locale;
+  const calendars = require("module_16456").calendars;
+  return calendars.filter((item) => {
+    function isSupportedCalendar(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
       }
-      closure_2[arg0] = tmp6;
+      try {
+        const concat = "".concat;
+        const createMemoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat;
+        const combined = "".concat(str, "-u-ca-");
+        const memoizedDateTimeFormat = createMemoizedDateTimeFormat(combined.concat(item));
+        if ("gregory" === item) {
+          if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
     }
-    tmp6 = closure_3(`Symbol.${arg0}`);
-  }
-  return closure_2[arg0];
-};
+    return isSupportedCalendar(item, locale);
+  });
+}

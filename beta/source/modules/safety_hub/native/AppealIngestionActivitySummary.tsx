@@ -1,15 +1,15 @@
-// Module ID: 13555
-// Function ID: 13556
+// Module ID: 13587
+// Function ID: 13588
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 5140, 13556, 2]
+// Dependencies: [19, 17, 21, 5170, 13588, 2]
 // Exports: default
 
-// Module 13555 (AppealIngestionActivitySummary)
+// Module 13587 (AppealIngestionActivitySummary)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 13556 */;
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 13588 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

@@ -1,11 +1,11 @@
-// Module ID: 12990
-// Function ID: 12991
+// Module ID: 13022
+// Function ID: 13023
 // Name: useAIShimmerCycle
-// Dependencies: [32, 19, 12989, 2]
+// Dependencies: [32, 19, 13021, 2]
 // Exports: linesFromKey, linesKeyFor, useAIShimmerCycle
 
-// Module 12990 (useAIShimmerCycle)
-import waveTransition from "waveTransition" /* 12989 */;
+// Module 13022 (useAIShimmerCycle)
+import waveTransition from "waveTransition" /* 13021 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

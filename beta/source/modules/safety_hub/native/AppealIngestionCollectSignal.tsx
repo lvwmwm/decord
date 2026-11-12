@@ -1,21 +1,21 @@
-// Module ID: 13573
-// Function ID: 13574
+// Module ID: 13605
+// Function ID: 13606
 // Name: AppealIngestionCollectSignal
-// Dependencies: [19, 17, 8039, 21, 5140, 575, 5200, 8246, 8038, 13546, 572, 5374, 13574, 2118, 1113, 13552, 5751, 2]
+// Dependencies: [19, 17, 8072, 21, 5170, 575, 5232, 8279, 8071, 13578, 572, 5406, 13606, 2118, 1113, 13584, 5783, 2]
 // Exports: default
 
-// Module 13573 (AppealIngestionCollectSignal)
+// Module 13605 (AppealIngestionCollectSignal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import react_native2 from "react-native" /* 5200 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8038 */;
-import _mod8246 from "module_8246" /* 8246 */;
+import react_native2 from "react-native" /* 5232 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8071 */;
+import _mod8279 from "module_8279" /* 8279 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8039 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -27,7 +27,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ActionSheetActionCreatorsDefault = tmp(5374);
+const ActionSheetActionCreatorsDefault = tmp(5406);
 function AppealSignalRadioRow(signal) {
   let Label;
   let accessibilityRole;
@@ -48,13 +48,13 @@ function AppealSignalRadioRow(signal) {
     onPress() {
       return closure_1_1(signal);
     },
-    trailing: metroRequire(_mod8246.FormRow.Radio, { selected }),
+    trailing: metroRequire(_mod8279.FormRow.Radio, { selected }),
     accessibilityRole,
     accessibilityState
   };
-  const FormRow = _mod8246.FormRow;
+  const FormRow = _mod8279.FormRow;
   obj3 = { text: obj4.getAppealSignalDisplayText(signal) };
-  Label = _mod8246.FormRow.Label;
+  Label = _mod8279.FormRow.Label;
   obj4 = SafetyHubUtils;
   return metroRequire(FormRow, obj2);
 }
@@ -103,23 +103,23 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
           }
       };
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(13574, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
+      tmpResult.openLazy(asyncRequire(13606, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
     }
   }
   let tmp = closure_8();
   const formRow = tmp;
-  let obj = isDsaEligible(13546);
+  let obj = isDsaEligible(13578);
   dependencyMap = obj.useSafetyHubAppealSignal();
   const intl = isDsaEligible(1113).intl;
   const stringResult = intl.string(isDsaEligible(1113).t["C5q+pW"]);
   const intl2 = isDsaEligible(1113).intl;
   let obj2 = { children: items };
   const stringResult1 = intl2.string(isDsaEligible(1113).t.VEcRhw);
-  const AppealIngestionModalScreen = isDsaEligible(13552).AppealIngestionModalScreen;
-  items = [closure_6(isDsaEligible(13552).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
+  const AppealIngestionModalScreen = isDsaEligible(13584).AppealIngestionModalScreen;
+  items = [closure_6(isDsaEligible(13584).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let obj3 = { style: tmp.container, children: closure_7(Form, obj4) };
   obj4 = { style: tmp.form, children: items1 };
-  Form = isDsaEligible(8246).Form;
+  Form = isDsaEligible(8279).Form;
   const obj5 = {
     sectionBodyStyle: tmp.formSection,
     accessibilityRole: "radiogroup",
@@ -128,11 +128,11 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
       return metroRequire(AppealSignalRadioRow, obj, "formrow-" + index);
     })
   };
-  const FormSection = isDsaEligible(8246).FormSection;
+  const FormSection = isDsaEligible(8279).FormSection;
   items1 = [closure_6(FormSection, obj5), ];
   const obj6 = { style: tmp.disclaimer, children: closure_6(Text, obj7) };
   obj7 = { variant: "body-sm/normal", children: intl3.format(isDsaEligible(1113).t["8k9GCW"], {}) };
-  Text = isDsaEligible(5751).Text;
+  Text = isDsaEligible(5783).Text;
   intl3 = isDsaEligible(1113).intl;
   items1[1] = closure_6(handleAppealSignalSelect, obj6);
   items[1] = closure_6(handleAppealSignalSelect, obj3);

@@ -1,27 +1,27 @@
-// Module ID: 15411
-// Function ID: 15412
+// Module ID: 15443
+// Function ID: 15444
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [11503, 5011, 10238, 11504, 7956, 8465, 1113, 2530, 13444, 8452, 575, 8467, 7313, 15412, 13434, 8680, 5137, 2]
+// Dependencies: [11535, 5041, 10270, 11536, 7989, 8498, 1113, 2530, 13476, 8485, 575, 8500, 7346, 15444, 13466, 8713, 5167, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 15411 (GameOrganizationInviteEmbed)
+// Module 15443 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import _modDef2530 from "module_2530" /* 2530 */;
-import ColorUtils from "ColorUtils" /* 5137 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7313 */;
-import Constants from "Constants" /* 7956 */;
-import react_native from "react-native" /* 8452 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8465 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8467 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8680 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10238 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11504 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 13434 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 13444 */;
-import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15412 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11503 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import ColorUtils from "ColorUtils" /* 5167 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7346 */;
+import Constants from "Constants" /* 7989 */;
+import react_native from "react-native" /* 8485 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8498 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8500 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8713 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10270 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11536 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 13466 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 13476 */;
+import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15444 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11535 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;

@@ -1,10 +1,10 @@
-// Module ID: 9182
-// Function ID: 9183
+// Module ID: 9215
+// Function ID: 9216
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 9183, 9184, 6579, 2]
+// Dependencies: [5, 32, 19, 9216, 9217, 6611, 2]
 // Exports: default
 
-// Module 9182 (useStartEvent)
+// Module 9215 (useStartEvent)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -72,7 +72,7 @@ export default function useStartEvent() {
               aPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

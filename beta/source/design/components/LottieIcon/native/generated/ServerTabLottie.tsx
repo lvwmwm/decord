@@ -1,13 +1,13 @@
-// Module ID: 16139
-// Function ID: 16140
+// Module ID: 16171
+// Function ID: 16172
 // Name: ServerTabLottie
-// Dependencies: [19, 21, 12083, 16140, 2]
+// Dependencies: [19, 21, 12115, 16172, 2]
 // Exports: ServerTabLottie
 
-// Module 16139 (ServerTabLottie)
+// Module 16171 (ServerTabLottie)
 import Fragment from "Fragment" /* 21 */;
-import LottieIcon2 from "LottieIcon" /* 12083 */;
-import AssetRegistry from "AssetRegistry" /* 16140 */;
+import LottieIcon2 from "LottieIcon" /* 12115 */;
+import AssetRegistry from "AssetRegistry" /* 16172 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 15690
-// Function ID: 15691
+// Module ID: 15722
+// Function ID: 15723
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 2184, 21, 5140, 575, 5374, 15691, 2118, 1113, 3444, 5751, 2]
+// Dependencies: [17, 2184, 21, 5170, 575, 5406, 15723, 2118, 1113, 3444, 5783, 2]
 // Exports: default
 
-// Module 15690 (BoostingUnavailablePill)
+// Module 15722 (BoostingUnavailablePill)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2184 */;
 import _modDef3444 from "module_3444" /* 3444 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -27,7 +27,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: formatToPlainString(prop, obj2) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(15691, dependencyMap.paths);
+  const tmp2 = asyncRequire(15723, dependencyMap.paths);
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj2 = { premiumGroupProductName: closure_5() };

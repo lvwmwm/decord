@@ -1,26 +1,26 @@
-// Module ID: 16035
-// Function ID: 16036
+// Module ID: 16067
+// Function ID: 16068
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 4993, 4989, 5072, 1072, 13615, 10846, 21, 5140, 575, 1113, 16036, 13616, 16037, 16038, 1252, 9920, 5885, 1377, 9011, 9870, 13654, 2118, 6092, 16039, 16040, 7071, 13626, 1624, 13627, 16041, 2]
+// Dependencies: [5, 32, 19, 17, 5023, 5019, 5102, 1072, 13647, 10878, 21, 5170, 575, 1113, 16068, 13648, 16069, 16070, 1252, 9953, 5917, 1377, 9044, 9903, 13686, 2118, 6124, 16071, 16072, 7104, 13658, 1624, 13659, 16073, 2]
 // Exports: default
 
-// Module 16035 (ShareScreen)
+// Module 16067 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import UserRowConstants from "UserRowConstants" /* 10846 */;
-import ForwardConstants from "ForwardConstants" /* 13615 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 16039 */;
-import ShareEmbedDefault from "ShareEmbed" /* 16040 */;
+import UserRowConstants from "UserRowConstants" /* 10878 */;
+import ForwardConstants from "ForwardConstants" /* 13647 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 16071 */;
+import ShareEmbedDefault from "ShareEmbed" /* 16072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 4993 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import ChannelRecord from "ChannelRecord" /* 5023 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let React, attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -301,7 +301,7 @@ export default function ShareScreen(appEntryKey) {
                                         tmp = undefined;
                                         c5 = 1;
                                         c6 = 1;
-                                        return { value: "flexDirection", done: null };
+                                        return { value: "flexDirection", done: true };
                                       }
                                     } else if (1 === c5) {
                                       if (arg0 === 1) {

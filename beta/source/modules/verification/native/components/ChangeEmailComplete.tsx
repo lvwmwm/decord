@@ -1,22 +1,22 @@
-// Module ID: 7230
-// Function ID: 7231
+// Module ID: 7263
+// Function ID: 7264
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 7063, 21, 5140, 575, 7061, 5842, 7144, 5751, 1113, 5758, 2]
+// Dependencies: [19, 17, 7096, 21, 5170, 575, 7094, 5874, 7177, 5783, 1113, 5790, 2]
 // Exports: default
 
-// Module 7230 (ChangeEmailComplete)
+// Module 7263 (ChangeEmailComplete)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7061 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7063 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7144 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7094 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7096 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7177 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;

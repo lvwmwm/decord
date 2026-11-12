@@ -1,10 +1,10 @@
-// Module ID: 17282
-// Function ID: 17283
+// Module ID: 17316
+// Function ID: 17317
 // Name: BountyCtaHelpers
 // Dependencies: [2]
 // Exports: getBountyCtaInfo
 
-// Module 17282 (BountyCtaHelpers)
+// Module 17316 (BountyCtaHelpers)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/utils/BountyCtaHelpers.tsx");

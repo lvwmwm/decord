@@ -1,21 +1,21 @@
-// Module ID: 8800
-// Function ID: 8801
+// Module ID: 8833
+// Function ID: 8834
 // Name: EditAvatarDecorationActionSheet
-// Dependencies: [32, 19, 17, 7811, 7801, 5052, 1072, 21, 5140, 8801, 8811, 8812, 7387, 7412, 1252, 8813, 5199, 5388, 7382, 1113, 8814, 10725, 504, 15343, 15348, 8808, 15349, 15354, 15355, 8815, 8903, 1187, 15356, 2]
+// Dependencies: [32, 19, 17, 7844, 7834, 5082, 1072, 21, 5170, 8834, 8844, 8845, 7420, 7445, 1252, 8846, 5231, 5420, 7415, 1113, 8847, 10757, 504, 15375, 15380, 8841, 15381, 15386, 15387, 8848, 8936, 1187, 15388, 2]
 // Exports: default
 
-// Module 8800 (EditAvatarDecorationActionSheet)
+// Module 8833 (EditAvatarDecorationActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7801 */;
-import useShopProductItems from "useShopProductItems" /* 8813 */;
-import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 15349 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7834 */;
+import useShopProductItems from "useShopProductItems" /* 8846 */;
+import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 15381 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7811 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7844 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -131,7 +131,7 @@ function AvatarDecorationSectionPreview(previewSkuId) {
   previewSkuId = previewSkuId.previewSkuId;
   let tmp3 = dependencyMap;
   const tmp = closure_13();
-  const tmp4 = purchase(8815)(previewSkuId);
+  const tmp4 = purchase(8848)(previewSkuId);
   const product = tmp4.product;
   _require = product;
   purchase = tmp4.purchase;
@@ -168,8 +168,8 @@ function AvatarDecorationSectionPreview(previewSkuId) {
     tmp10 = _require;
   }
   const obj3 = { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo, size: tmp10(1187).AvatarSizes.EDIT_AVATAR_DECORATION };
-  const tmp2Result = purchase(8903);
-  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(15356), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
+  const tmp2Result = purchase(8936);
+  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(15388), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
   return tmp6(tmp7, obj);
 }
 const View = react_native.View;
@@ -199,20 +199,20 @@ export default function EditAvatarDecorationActionSheet(arg0) {
   ({ user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations } = arg0);
   selectedAvatarDecoration = undefined;
   let tmp = closure_13();
-  const tmp4 = selectedAvatarDecoration(8801)({ analyticsLocations, isTryItOut, guildId });
+  const tmp4 = selectedAvatarDecoration(8834)({ analyticsLocations, isTryItOut, guildId });
   const setPendingAvatarDecoration = tmp4.setPendingAvatarDecoration;
   const pendingAvatar = tmp4.pendingAvatar;
-  let obj = setPendingAvatarDecoration(8811);
+  let obj = setPendingAvatarDecoration(8844);
   let obj2 = { userId: user.id, image: pendingAvatar };
   const pendingAvatarSrc = obj.getPendingAvatarSrc(obj2);
   [selectedAvatarDecoration, tmp9] = react.useState(currentAvatarDecoration);
-  const obj4 = setPendingAvatarDecoration(8812);
+  const obj4 = setPendingAvatarDecoration(8845);
   const bottomSheetRef = obj4.useBottomSheetRef().bottomSheetRef;
-  const tmp10 = selectedAvatarDecoration(7387);
+  const tmp10 = selectedAvatarDecoration(7420);
   if (analyticsLocations == null) {
     analyticsLocations = [];
   }
-  const analyticsLocations2 = tmp10(analyticsLocations, tmp2(7412).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
+  const analyticsLocations2 = tmp10(analyticsLocations, tmp2(7445).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
   const items = [selectedAvatarDecoration, setPendingAvatarDecoration];
   const callback = obj3.useCallback(() => {
     const obj = first(dependencyMap[14]);
@@ -231,21 +231,21 @@ export default function EditAvatarDecorationActionSheet(arg0) {
     }
     tmp(purchasedItem);
   }, items);
-  const ThemeContextProvider = tmp5(5199).ThemeContextProvider;
+  const ThemeContextProvider = tmp5(5231).ThemeContextProvider;
   const obj5 = { value: analyticsLocations2, children: tmp14(BottomSheet, obj6) };
-  const AnalyticsLocationProvider = tmp5(7387).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp5(7420).AnalyticsLocationProvider;
   obj6 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, header: closure_10(BottomSheetTitleHeader, obj7), children: items1 };
-  BottomSheet = tmp5(5388).BottomSheet;
+  BottomSheet = tmp5(5420).BottomSheet;
   obj7 = { title: intl.string(setPendingAvatarDecoration(1113).t.HykynS) };
-  BottomSheetTitleHeader = tmp5(7382).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp5(7415).BottomSheetTitleHeader;
   intl = tmp5(1113).intl;
   items1 = [, ];
   const obj8 = { style: tmp.container, children: closure_10(EditAvatarDecorationInner, { user, guildId, pendingAvatarSrc, selectedAvatarDecoration, setSelectedAvatarDecoration: tmp9, isTryItOut }) };
   items1[0] = closure_10(View, obj8);
-  const obj9 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations: analyticsLocations2, analyticsSource: selectedAvatarDecoration(7412).EDIT_AVATAR_DECORATION_SHEET };
+  const obj9 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations: analyticsLocations2, analyticsSource: selectedAvatarDecoration(7445).EDIT_AVATAR_DECORATION_SHEET };
   skuId = undefined;
   tmp14 = closure_11;
-  const tmp2Result = selectedAvatarDecoration(8814);
+  const tmp2Result = selectedAvatarDecoration(8847);
   if (currentAvatarDecoration != null) {
     skuId = currentAvatarDecoration.skuId;
   }

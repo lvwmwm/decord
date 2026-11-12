@@ -1,10 +1,10 @@
-// Module ID: 15717
-// Function ID: 15718
+// Module ID: 15749
+// Function ID: 15750
 // Name: PremiumPlanSelect
-// Dependencies: [5, 32, 19, 17, 7685, 5011, 2175, 2176, 7673, 15718, 1387, 1072, 7693, 5872, 21, 5140, 6778, 6833, 575, 6159, 15719, 5751, 1113, 2171, 15723, 15724, 15725, 15726, 15727, 15728, 9612, 5724, 504, 15729, 15506, 5369, 1187, 1252, 15544, 15545, 7038, 15730, 5842, 7015, 5420, 5147, 1357, 7668, 10679, 6091, 15731, 2118, 7126, 5715, 7669, 4953, 6799, 7671, 10699, 7387, 7495, 5739, 5721, 10796, 10686, 1499, 7678, 15557, 7412, 10687, 6589, 11517, 15520, 7663, 10031, 2182, 10795, 2]
+// Dependencies: [5, 32, 19, 17, 7718, 5041, 2175, 2176, 7706, 15750, 1387, 1072, 7726, 5904, 21, 5170, 6810, 6866, 575, 6191, 15751, 5783, 1113, 2171, 15755, 15756, 15757, 15758, 15759, 15760, 9645, 5756, 504, 15761, 15538, 5401, 1187, 1252, 15576, 15577, 7071, 15762, 5874, 7048, 5452, 5177, 1357, 7701, 10711, 6123, 15763, 2118, 7159, 5747, 7702, 4983, 6831, 7704, 10731, 7420, 7528, 5771, 5753, 10828, 10718, 1499, 7711, 15589, 7445, 10719, 6621, 11549, 15552, 7696, 10064, 2182, 10827, 2]
 // Exports: default
 
-// Module 15717 (PremiumPlanSelect)
+// Module 15749 (PremiumPlanSelect)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -12,43 +12,43 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
 import PremiumSubscription from "PremiumSubscription" /* 2182 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import PaymentConstants from "PaymentConstants" /* 5872 */;
-import Stack_Stack from "Stack/Stack" /* 6159 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6589 */;
-import TextStylesDefault from "TextStyles" /* 6778 */;
-import LegacyTokens from "LegacyTokens" /* 6833 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7495 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7668 */;
-import ProductIds from "ProductIds" /* 7669 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7685 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9612 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10679 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10796 */;
-import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 15544 */;
-import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 15545 */;
-import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 15719 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15723 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15724 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15725 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15726 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15727 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15728 */;
+import LinearGradientDefault from "LinearGradient" /* 5747 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import PaymentConstants from "PaymentConstants" /* 5904 */;
+import Stack_Stack from "Stack/Stack" /* 6191 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6621 */;
+import TextStylesDefault from "TextStyles" /* 6810 */;
+import LegacyTokens from "LegacyTokens" /* 6866 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7528 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7701 */;
+import ProductIds from "ProductIds" /* 7702 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7718 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9645 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10711 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10828 */;
+import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 15576 */;
+import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 15577 */;
+import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 15751 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15755 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15756 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15757 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15758 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15759 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 15760 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2175 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import IAPStore from "IAPStore" /* 7673 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15718 */;
+import IAPStore from "IAPStore" /* 7706 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15750 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
-import ColorConstants from "ColorConstants" /* 7693 */;
+import ColorConstants from "ColorConstants" /* 7726 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -665,7 +665,7 @@ function PlanSection(label) {
   });
   if (shouldShowModernBoostFlow) {
     let obj2 = { title: label, hasIcons: true, children: mapped };
-    tmp7Result = tmp7(tmp2(7126).TableRowGroup, obj2);
+    tmp7Result = tmp7(tmp2(7159).TableRowGroup, obj2);
   } else {
     let tmp8 = closure_6;
     let obj3 = { children: mapped };
@@ -869,7 +869,7 @@ function PlanSections(isBoostPurchaseFlow) {
             const tmp8 = require;
             if (result) {
               const interval = productId.interval;
-              const tmp8Result = tmp8(7668);
+              const tmp8Result = tmp8(7701);
               result = interval === tmp8Result.getPremiumBundledItemsFromProductId(tmp).interval;
             }
             tmp7 = result;

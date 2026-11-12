@@ -1,33 +1,33 @@
-// Module ID: 19279
-// Function ID: 19280
+// Module ID: 19317
+// Function ID: 19318
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 19280, 4989, 5052, 5046, 5011, 5072, 5082, 1385, 8016, 1072, 21, 5140, 575, 1499, 11805, 504, 9111, 9112, 9113, 1113, 5776, 6090, 9138, 5077, 6159, 7126, 7429, 8095, 7038, 11634, 11803, 7070, 5889, 9059, 9294, 19281, 19283, 2]
+// Dependencies: [32, 5, 19, 17, 19318, 5019, 5082, 5076, 5041, 5102, 5112, 1385, 8049, 1072, 21, 5170, 575, 1499, 11837, 504, 9144, 9145, 9146, 1113, 5808, 6122, 9171, 5107, 6191, 7159, 7462, 8128, 7071, 11666, 11835, 7103, 5921, 9092, 9327, 19319, 19321, 2]
 // Exports: default
 
-// Module 19279 (EasyChannelPermissionSettings)
+// Module 19317 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 575 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8016 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9111 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9112 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9138 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11803 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5921 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8049 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9144 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9145 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9171 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11835 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19280 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildRoleStore from "GuildRoleStore" /* 5046 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19318 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildRoleStore from "GuildRoleStore" /* 5076 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -287,7 +287,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "uri" });
+    navigation.setOptions({ headerRight: "r" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

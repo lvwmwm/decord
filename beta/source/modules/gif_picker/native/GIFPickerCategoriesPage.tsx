@@ -1,19 +1,19 @@
-// Module ID: 10380
-// Function ID: 10381
+// Module ID: 10412
+// Function ID: 10413
 // Name: GIFPickerCategoriesPage
-// Dependencies: [19, 17, 10362, 21, 5140, 10366, 575, 10359, 504, 10363, 10381, 10161, 7294, 7287, 5736, 1113, 2]
+// Dependencies: [19, 17, 10394, 21, 5170, 10398, 575, 10391, 504, 10395, 10413, 10193, 7327, 7320, 5768, 1113, 2]
 
-// Module 10380 (GIFPickerCategoriesPage)
+// Module 10412 (GIFPickerCategoriesPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7294 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10363 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10366 */;
-import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 10381 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7327 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10395 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10398 */;
+import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 10413 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10362 */;
-import createStyles from "createStyles" /* 5140 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10394 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

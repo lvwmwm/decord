@@ -1,11 +1,11 @@
-// Module ID: 5364
-// Function ID: 5365
+// Module ID: 5396
+// Function ID: 5397
 // Name: GameServerExperiment
-// Dependencies: [5352, 2]
+// Dependencies: [5384, 2]
 // Exports: getGameServerEnabled, useGameServerEnabled
 
-// Module 5364 (GameServerExperiment)
-import createExperiment from "module_5352" /* 5352 */;
+// Module 5396 (GameServerExperiment)
+import createExperiment from "module_5384" /* 5384 */;
 import size from "module_2" /* 2 */;
 
 let items;

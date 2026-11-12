@@ -1,12 +1,12 @@
-// Module ID: 7662
-// Function ID: 7663
+// Module ID: 7695
+// Function ID: 7696
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2176, 1072, 1387, 6091, 1113, 1252, 7663, 6589, 7668, 7669, 7670, 2171, 2]
+// Dependencies: [5, 2176, 1072, 1387, 6123, 1113, 1252, 7696, 6621, 7701, 7702, 7703, 2171, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7662 (GuildBoostPurchasingUtils)
+// Module 7695 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1113 */;
-import PremiumManagementUtils from "PremiumManagementUtils" /* 7663 */;
+import PremiumManagementUtils from "PremiumManagementUtils" /* 7696 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import Constants from "Constants" /* 1072 */;
@@ -113,7 +113,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               allowYearlyBundles = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else {
             if (1 === onPaymentDismiss) {

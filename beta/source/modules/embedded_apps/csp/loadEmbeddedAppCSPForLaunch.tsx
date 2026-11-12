@@ -1,15 +1,15 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 11040
+// Function ID: 11041
 // Name: loadEmbeddedAppCSPForLaunch
-// Dependencies: [5, 11009, 11010, 5796, 11011, 11012, 2]
+// Dependencies: [5, 11041, 11042, 5828, 11043, 11044, 2]
 // Exports: default
 
-// Module 11008 (loadEmbeddedAppCSPForLaunch)
-import getURLForApplication from "getURLForApplication" /* 5796 */;
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 11010 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 11011 */;
+// Module 11040 (loadEmbeddedAppCSPForLaunch)
+import getURLForApplication from "getURLForApplication" /* 5828 */;
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 11042 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 11043 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 11009 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 11041 */;
 import size from "module_2" /* 2 */;
 
 const getURLForApplicationDefault = getURLForApplication;

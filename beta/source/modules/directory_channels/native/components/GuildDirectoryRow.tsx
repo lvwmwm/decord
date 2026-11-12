@@ -1,22 +1,22 @@
-// Module ID: 14117
-// Function ID: 14118
+// Module ID: 14149
+// Function ID: 14150
 // Name: GuildDirectoryRow
-// Dependencies: [5, 32, 19, 17, 4989, 5011, 1072, 21, 5140, 575, 504, 7357, 7594, 6957, 9210, 1196, 6961, 1411, 1113, 7040, 7020, 5003, 5751, 14095, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 5019, 5041, 1072, 21, 5170, 575, 504, 7390, 7627, 6990, 9243, 1196, 6994, 1411, 1113, 7073, 7053, 5033, 5783, 14127, 5790, 2]
 
-// Module 14117 (GuildDirectoryRow)
+// Module 14149 (GuildDirectoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import GuildIconDefault from "GuildIcon" /* 7020 */;
-import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 14095 */;
+import GuildIconDefault from "GuildIcon" /* 7053 */;
+import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 14127 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap, importDefault, ref;
@@ -192,7 +192,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
   const tmp4 = null != obj.useStateFromStores(items, () => GuildStore.getGuild(entry.guildId));
   importDefault = tmp4;
   dependencyMap = react.useRef(0);
-  let obj2 = entry(7357);
+  let obj2 = entry(7390);
   const items1 = [entry.guildId];
   const tmp5 = obj(obj2.useRecyclingState(false, items1, () => {
     ref.current = ref.current + 1;
@@ -212,17 +212,17 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
   obj6 = { style: tmp.guildWrapper, children: items8 };
   let obj7 = { style: tmp.headerContainer, children: items7 };
   let obj8 = { style: tmp.titleContainer, children: items2 };
-  const Card = tmp2(7040).Card;
+  const Card = tmp2(7073).Card;
   let obj9 = { style: tmp.guildIcon, icon: guildIconURL, guild: result, selected: false };
   result = undefined;
   const tmp7Result = GuildIconDefault;
   if (null == guildIconURL) {
-    const tmp2Result = entry(5003);
+    const tmp2Result = entry(5033);
     result = tmp2Result.fromGuildDirectoryEntry(entry);
   }
   items2 = [closure_10(tmp7Result, obj9), ];
   let obj10 = { style: tmp.guildInfoContainer, children: items3 };
-  items3 = [closure_10(tmp2(5751).Text, { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name }), ];
+  items3 = [closure_10(tmp2(5783).Text, { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name }), ];
   let tmp11Result = null;
   const obj11 = { style: tmp.memberInfo, children: items5 };
   if (null != approximatePresenceCount) {
@@ -230,7 +230,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
     const obj13 = { style: tmp.dotOnline };
     items4 = [closure_10(tmp12, obj13), ];
     const obj14 = { variant: "body-xs/medium", color: "text-default", children: intl3.format(entry(1113).t["LC+S+m"], obj15) };
-    const Text = tmp2(5751).Text;
+    const Text = tmp2(5783).Text;
     intl3 = tmp2(1113).intl;
     obj15 = { membersOnline: approximatePresenceCount };
     items4[1] = closure_10(Text, obj14);
@@ -243,7 +243,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
     const obj17 = { style: tmp.dotOffline };
     items6 = [closure_10(tmp12, obj17), ];
     const obj18 = { variant: "body-xs/medium", color: "text-default", children: intl4.format(entry(1113).t.zRl6XR, obj19) };
-    const Text2 = tmp2(5751).Text;
+    const Text2 = tmp2(5783).Text;
     intl4 = tmp2(1113).intl;
     obj19 = { count: approximateMemberCount };
     items6[1] = closure_10(Text2, obj18);
@@ -262,7 +262,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
   }
   if (tmp10Result) {
     const obj21 = { lineClamp: 3, style: tmp.guildDescription, variant: "body-sm/medium", color: "text-default", children: description };
-    tmp10Result = tmp10(tmp2(5751).Text, obj21);
+    tmp10Result = tmp10(tmp2(5783).Text, obj21);
   }
   items8[1] = tmp10Result;
   const obj22 = { style: tmp.flex };
@@ -276,7 +276,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
     text: stringResult
   };
   str2 = "active";
-  const Button = tmp2(5758).Button;
+  const Button = tmp2(5790).Button;
   if (tmp4) {
     str2 = "secondary";
   }

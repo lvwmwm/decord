@@ -1,26 +1,26 @@
-// Module ID: 19509
-// Function ID: 19510
+// Module ID: 19547
+// Function ID: 19548
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 5141, 4989, 4988, 5781, 19370, 1072, 11363, 11855, 21, 5140, 575, 1627, 504, 1493, 19500, 12238, 1652, 5199, 1705, 5370, 5761, 6150, 5061, 19502, 19510, 11889, 11957, 2]
+// Dependencies: [19, 17, 5171, 5019, 5018, 5813, 19408, 1072, 11395, 11887, 21, 5170, 575, 1627, 504, 1493, 19538, 12270, 1652, 5231, 1705, 5402, 5793, 6182, 5091, 19540, 19548, 11921, 11989, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 19509 (ActivityPanelFocusedView)
+// Module 19547 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
-import Constants2 from "Constants" /* 11855 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 11957 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19502 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
+import Constants2 from "Constants" /* 11887 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 11989 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19540 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19370 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19408 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 19884
-// Function ID: 19885
+// Module ID: 19922
+// Function ID: 19923
 // Name: MessageSessionMetadataManager
-// Dependencies: [1072, 7350, 1252, 2]
+// Dependencies: [1072, 7383, 1252, 2]
 
-// Module 19884 (MessageSessionMetadataManager)
+// Module 19922 (MessageSessionMetadataManager)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

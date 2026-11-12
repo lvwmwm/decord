@@ -1,14 +1,14 @@
-// Module ID: 18313
-// Function ID: 18314
+// Module ID: 18351
+// Function ID: 18352
 // Name: VEVOOSlider
-// Dependencies: [19, 17, 21, 5140, 1377, 575, 16169, 2]
+// Dependencies: [19, 17, 21, 5170, 1377, 575, 16201, 2]
 
-// Module 18313 (VEVOOSlider)
+// Module 18351 (VEVOOSlider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 

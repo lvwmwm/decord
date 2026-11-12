@@ -1,12 +1,12 @@
-// Module ID: 7524
-// Function ID: 7525
+// Module ID: 7557
+// Function ID: 7558
 // Name: ReportUtils
-// Dependencies: [4989, 5072, 1385, 1072, 2]
+// Dependencies: [5019, 5102, 1385, 1072, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 7524 (ReportUtils)
-import ChannelStore from "ChannelStore" /* 4989 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+// Module 7557 (ReportUtils)
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

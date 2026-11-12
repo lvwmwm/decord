@@ -1,23 +1,23 @@
-// Module ID: 10037
-// Function ID: 10038
+// Module ID: 10070
+// Function ID: 10071
 // Name: usePremiumFeatures
-// Dependencies: [19, 1387, 2184, 1398, 5840, 1113, 3444, 10038, 2171, 9533, 10040, 9612, 9815, 10042, 10044, 575, 2]
+// Dependencies: [19, 1387, 2184, 1398, 5872, 1113, 3444, 10071, 2171, 9566, 10073, 9645, 9848, 10075, 10077, 575, 2]
 // Exports: default
 
-// Module 10037 (usePremiumFeatures)
+// Module 10070 (usePremiumFeatures)
 import intl11 from "intl" /* 1113 */;
 import user from "user" /* 1398 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2184 */;
 import _modDef3444 from "module_3444" /* 3444 */;
-import FriendsIcon from "FriendsIcon" /* 5840 */;
-import ReactionIcon from "ReactionIcon" /* 9533 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9612 */;
-import ScreenStreamIcon from "ScreenStreamIcon" /* 9815 */;
-import UploadIcon from "UploadIcon" /* 10038 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 10040 */;
-import BoostGemIcon from "BoostGemIcon" /* 10042 */;
-import UserSquareIcon from "UserSquareIcon" /* 10044 */;
+import FriendsIcon from "FriendsIcon" /* 5872 */;
+import ReactionIcon from "ReactionIcon" /* 9566 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9645 */;
+import ScreenStreamIcon from "ScreenStreamIcon" /* 9848 */;
+import UploadIcon from "UploadIcon" /* 10071 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 10073 */;
+import BoostGemIcon from "BoostGemIcon" /* 10075 */;
+import UserSquareIcon from "UserSquareIcon" /* 10077 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 14818
+// Function ID: 14819
 // Name: BookmarkOutlineIcon
-// Dependencies: [19, 21, 575, 5841, 14787, 2]
+// Dependencies: [19, 21, 575, 5873, 14819, 2]
 // Exports: BookmarkOutlineIcon
 
-// Module 14786 (BookmarkOutlineIcon)
+// Module 14818 (BookmarkOutlineIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 14787 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 14819 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 11716
-// Function ID: 11717
+// Module ID: 11748
+// Function ID: 11749
 // Name: conjureSharedProjectCoverTarget
-// Dependencies: [11717, 11718, 2]
+// Dependencies: [11749, 11750, 2]
 // Exports: default
 
-// Module 11716 (conjureSharedProjectCoverTarget)
-import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11717 */;
-import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11718 */;
+// Module 11748 (conjureSharedProjectCoverTarget)
+import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11749 */;
+import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11750 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/conjureSharedProjectCoverTarget.tsx");
@@ -20,7 +20,7 @@ export default function readConjureSharedProjectCoverTarget(arg0, install_scope,
       const obj3 = conjureSharedProjectHome;
       const tmp6 = require;
       if (obj3.isSharedProjectHomeServer(install_scope, guildId)) {
-        const tmp6Result = tmp6(11717);
+        const tmp6Result = tmp6(11749);
         if (tmp6Result.canLaunchSharedProject(install_scope, guildId)) {
           return { type: "launch" };
         } else {

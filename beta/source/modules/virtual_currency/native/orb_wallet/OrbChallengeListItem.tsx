@@ -1,22 +1,22 @@
-// Module ID: 17231
-// Function ID: 17232
+// Module ID: 17265
+// Function ID: 17266
 // Name: OrbChallengeListItem
-// Dependencies: [5, 32, 19, 17, 21, 5140, 575, 15940, 1113, 2298, 14929, 9797, 5758, 7438, 5751, 9616, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 15972, 1113, 2298, 14961, 9830, 5790, 7471, 5783, 9649, 2]
 // Exports: OrbChallengeListItem
 
-// Module 17231 (OrbChallengeListItem)
+// Module 17265 (OrbChallengeListItem)
 import nativeDefault from "native" /* 575 */;
 import _modDef2298 from "module_2298" /* 2298 */;
-import OrbsIcon2 from "OrbsIcon" /* 9616 */;
-import _modDef9797 from "module_9797" /* 9797 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14929 */;
-import OrbChallengeTypes from "OrbChallengeTypes" /* 15940 */;
+import OrbsIcon2 from "OrbsIcon" /* 9649 */;
+import _modDef9830 from "module_9830" /* 9830 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14961 */;
+import OrbChallengeTypes from "OrbChallengeTypes" /* 15972 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -42,7 +42,7 @@ function OrbChallengeAsset(achievementStatus) {
   if (achievementStatus !== OrbChallengeTypes.UserAchievementStatus.COMPLETED) {
     let tmp8;
     if (achievementStatus !== OrbChallengeTypes.UserAchievementStatus.CLAIMED) {
-      size = { assetUrl: _modDef9797, isAnimatedAsset, height: 40, width: 40 };
+      size = { assetUrl: _modDef9830, isAnimatedAsset, height: 40, width: 40 };
       const tmp6 = QuestDockRewardTileDefault;
       tmp8 = metroImportAll(tmp6, size);
     }
@@ -50,7 +50,7 @@ function OrbChallengeAsset(achievementStatus) {
   }
   const obj = { style: tmp.completedRing, accessible: true, accessibilityLabel: intl.string(_modDef2298.k6h2J3), children: metroImportAll(tmp9, size1) };
   intl = tmp2(1113).intl;
-  size1 = { assetUrl: _modDef9797, isAnimatedAsset, height: 32, width: 32, style: tmp.completedTile };
+  size1 = { assetUrl: _modDef9830, isAnimatedAsset, height: 32, width: 32, style: tmp.completedTile };
   tmp9 = QuestDockRewardTileDefault;
   tmp8 = metroImportAll(metroImportDefault, obj);
 }
@@ -175,14 +175,14 @@ export function OrbChallengeListItem(achievementIdentifier) {
         tmp6 = null;
         if (tmp3) {
           const obj = { size: "md", color: nativeDefault.colors.ICON_SUBTLE, accessible: false };
-          const ChevronSmallRightIcon = tmp4(7438).ChevronSmallRightIcon;
+          const ChevronSmallRightIcon = tmp4(7471).ChevronSmallRightIcon;
           tmp6 = metroImportAll(ChevronSmallRightIcon, obj);
         }
       }
       return tmp6;
     }
     const obj2 = { variant: "primary", size: "sm", text: intl.string(_modDef2298.WmfVjs), loading, onPress: tmp2 };
-    const Button = tmp4(5758).Button;
+    const Button = tmp4(5790).Button;
     intl = tmp4(1113).intl;
     tmp6 = metroImportAll(Button, obj2);
   }, items1);

@@ -1,8 +1,8 @@
-// Module ID: 13761
-// Function ID: 13762
+// Module ID: 13793
+// Function ID: 13794
 // Dependencies: [2]
 
-// Module 13761
+// Module 13793
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_13_teddyBeanie.webp.js");

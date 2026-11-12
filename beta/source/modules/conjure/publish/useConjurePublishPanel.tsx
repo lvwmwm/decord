@@ -1,19 +1,19 @@
-// Module ID: 12274
-// Function ID: 12275
+// Module ID: 12306
+// Function ID: 12307
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 5011, 5072, 6899, 1072, 6900, 4026, 1113, 12275, 12276, 12278, 10994, 12279, 504, 9111, 10996, 2]
+// Dependencies: [5, 32, 19, 5041, 5102, 6932, 1072, 6933, 4026, 1113, 12307, 12308, 12310, 11026, 12311, 504, 9144, 11028, 2]
 // Exports: conjurePublishComponents, default
 
-// Module 12274 (useConjurePublishPanel)
+// Module 12306 (useConjurePublishPanel)
 import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6900 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9111 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9144 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import GuildStore_mod from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, c1, c4, closure_2, importDefault;
 
 let c10;
 let c9;
-const f102467 = (item) => {
+const f102577 = (item) => {
   let intl;
   let tmp;
   let tmp2;
@@ -242,7 +242,7 @@ export default function useConjurePublishPanel(id, guildId) {
     initialChannelNames: arr4,
     channels,
     appChannelsPrivate: tmp25,
-    components: found.map(f102467),
+    components: found.map(f102577),
     devicePermissions: items4,
     note: stringResult,
     sharing: tmp27,
@@ -323,6 +323,6 @@ export function conjurePublishComponents(arg0) {
     [tmp] = item;
     return items.includes(tmp);
   });
-  return found.map(f102467);
+  return found.map(f102577);
 }
 export const CONJURE_PUBLISH_PERMISSION_LABELS = obj;

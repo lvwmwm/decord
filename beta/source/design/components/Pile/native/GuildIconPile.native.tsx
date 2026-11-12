@@ -1,14 +1,14 @@
-// Module ID: 14438
-// Function ID: 14439
+// Module ID: 14470
+// Function ID: 14471
 // Name: GuildIconPile
-// Dependencies: [19, 21, 7020, 13656, 13008, 9593, 13657, 2]
+// Dependencies: [19, 21, 7053, 13688, 13040, 9626, 13689, 2]
 // Exports: GuildIconPile
 
-// Module 14438 (GuildIconPile)
-import GuildIcon from "GuildIcon" /* 7020 */;
-import ClipView from "ClipView" /* 9593 */;
-import ListUtils from "ListUtils" /* 13008 */;
-import Pile2 from "Pile" /* 13656 */;
+// Module 14470 (GuildIconPile)
+import GuildIcon from "GuildIcon" /* 7053 */;
+import ClipView from "ClipView" /* 9626 */;
+import ListUtils from "ListUtils" /* 13040 */;
+import Pile2 from "Pile" /* 13688 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const PileOverflow = tmp2(13657);
+const PileOverflow = tmp2(13689);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const result = size.fileFinishedImporting("design/components/Pile/native/GuildIconPile.native.tsx");
 

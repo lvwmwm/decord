@@ -1,15 +1,15 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15206
+// Function ID: 15207
 // Name: UserProfileWidgetsBoardTab
-// Dependencies: [19, 17, 21, 8888, 15175, 15176, 15178, 15192, 15204, 15205, 15206, 2]
+// Dependencies: [19, 17, 21, 8921, 15207, 15208, 15210, 15224, 15236, 15237, 15238, 2]
 // Exports: default
 
-// Module 15174 (UserProfileWidgetsBoardTab)
+// Module 15206 (UserProfileWidgetsBoardTab)
 import react_native from "react-native" /* 17 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8888 */;
-import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 15175 */;
-import useDisplayableBoardWidgets from "useDisplayableBoardWidgets" /* 15176 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 15206 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8921 */;
+import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 15207 */;
+import useDisplayableBoardWidgets from "useDisplayableBoardWidgets" /* 15208 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 15238 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -37,14 +37,14 @@ export default function UserProfileWidgetsBoardTab(isVisible) {
   const tmp7 = View;
   if (isCurrentUser) {
     const obj4 = { cardStyle };
-    tmp8 = React3(tmp(15178), obj4);
+    tmp8 = React3(tmp(15210), obj4);
   }
   const items = [tmp8, ];
   if (isCurrentUser) {
     if (isMobileWidgetEditingEnabled) {
       let tmp6Result;
       if (!tmp5) {
-        tmp6Result = React3(tmp(15192), {});
+        tmp6Result = React3(tmp(15224), {});
       }
       items[1] = tmp6Result;
       obj3.children = items;
@@ -57,11 +57,11 @@ export default function UserProfileWidgetsBoardTab(isVisible) {
     tmp13 = !isMobileWidgetEditingEnabled;
   }
   if (tmp13) {
-    tmp13 = React3(tmp(15204), {});
+    tmp13 = React3(tmp(15236), {});
   }
   const items1 = [tmp13, , ];
   if (isCurrentUser) {
-    isCurrentUser = React3(tmp(15205), {});
+    isCurrentUser = React3(tmp(15237), {});
   }
   const obj5 = { children: items1 };
   items1[1] = isCurrentUser;

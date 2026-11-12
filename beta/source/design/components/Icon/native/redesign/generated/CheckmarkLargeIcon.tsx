@@ -1,14 +1,14 @@
-// Module ID: 7059
-// Function ID: 7060
+// Module ID: 7092
+// Function ID: 7093
 // Name: CheckmarkLargeIcon
-// Dependencies: [19, 21, 575, 5841, 7060, 2]
+// Dependencies: [19, 21, 575, 5873, 7093, 2]
 // Exports: CheckmarkLargeIcon
 
-// Module 7059 (CheckmarkLargeIcon)
+// Module 7092 (CheckmarkLargeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 7060 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 7093 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

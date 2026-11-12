@@ -1,15 +1,15 @@
-// Module ID: 18259
-// Function ID: 18260
+// Module ID: 18297
+// Function ID: 18298
 // Name: ContentAndSocialDiscordRouteSetting
-// Dependencies: [8503, 1072, 11685, 1113, 5840, 18241, 2]
+// Dependencies: [8536, 1072, 11717, 1113, 5872, 18279, 2]
 
-// Module 18259 (ContentAndSocialDiscordRouteSetting)
+// Module 18297 (ContentAndSocialDiscordRouteSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import FriendsIcon from "FriendsIcon" /* 5840 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import ContentAndSocialScreen from "ContentAndSocialScreen" /* 18241 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import FriendsIcon from "FriendsIcon" /* 5872 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import ContentAndSocialScreen from "ContentAndSocialScreen" /* 18279 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

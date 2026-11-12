@@ -1,13 +1,13 @@
-// Module ID: 13408
-// Function ID: 13409
+// Module ID: 13440
+// Function ID: 13441
 // Name: openChannelCallModalForChannelId
-// Dependencies: [4989, 8019, 8008, 2]
+// Dependencies: [5019, 8052, 8041, 2]
 // Exports: default
 
-// Module 13408 (openChannelCallModalForChannelId)
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8008 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8019 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+// Module 13440 (openChannelCallModalForChannelId)
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8052 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/native/openChannelCallModalForChannelId.tsx");

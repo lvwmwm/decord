@@ -1,10 +1,10 @@
-// Module ID: 10305
-// Function ID: 10306
+// Module ID: 10337
+// Function ID: 10338
 // Name: openConversationFocusLink
-// Dependencies: [5, 9994, 9975, 2118, 2]
+// Dependencies: [5, 10027, 10008, 2118, 2]
 // Exports: default
 
-// Module 10305 (openConversationFocusLink)
+// Module 10337 (openConversationFocusLink)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let obj = function _openConversationFocusLink() {
               ({ guildId: c0, channelId: c1, conversationId: c2, messageId: c3 } = closure_0);
               messageId = 1;
               c4 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === messageId) {
             if (arg0 === 1) {

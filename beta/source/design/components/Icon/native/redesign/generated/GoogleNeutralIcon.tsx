@@ -1,14 +1,14 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 8114
+// Function ID: 8115
 // Name: GoogleNeutralIcon
-// Dependencies: [19, 21, 575, 5841, 8082, 2]
+// Dependencies: [19, 21, 575, 5873, 8115, 2]
 // Exports: GoogleNeutralIcon
 
-// Module 8081 (GoogleNeutralIcon)
+// Module 8114 (GoogleNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 8082 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 8115 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

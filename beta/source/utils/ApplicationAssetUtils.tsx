@@ -1,16 +1,16 @@
-// Module ID: 8792
-// Function ID: 8793
+// Module ID: 8825
+// Function ID: 8826
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 8793, 1072, 38, 3, 1282, 572, 1446, 2]
+// Dependencies: [32, 5, 8826, 1072, 38, 3, 1282, 572, 1446, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8792 (ApplicationAssetUtils)
+// Module 8825 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8793 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8826 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f94643 = (item) => {
+const f94753 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f94643).length > 0) {
+  if (arr.filter(f94753).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -260,129 +260,89 @@ obj = function _fetchAssetIds() {
     let c5 = 0;
     let c6 = 0;
     const iter = (async (arg0, value) => {
+      let num13;
       function resolveExternalAssets() {
         return closure_1_18(...arguments);
       }
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      if (1 === c5) {
         if (arg0 === 1) {
+          c6 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c6 = 3;
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          let num13;
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              length = tmp4;
-              value = tmp;
-              num13 = closure_2;
-              if (closure_2 === undefined) {
-                num13 = 1;
-              }
-              value = undefined;
-              length = undefined;
-              assets = undefined;
-              c5 = 1;
-              c6 = 1;
-              return { value: "flexDirection", done: null };
+          const obj6 = { type: "APPLICATION_ASSETS_FETCH", applicationId };
+          const obj16 = closure_132_1(closure_132_2[7]);
+          obj16.dispatch(obj6);
+          value = [];
+          length = closure_1.filter((item) => {
+            let startsWithResult;
+            if (item != null) {
+              startsWithResult = item.startsWith("http:");
             }
-          } else {
-            if (1 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              } else {
-                const obj6 = { type: "APPLICATION_ASSETS_FETCH", applicationId };
-                const obj16 = closure_132_1(closure_132_2[7]);
-                obj16.dispatch(obj6);
-                value = [];
-                length = closure_1.filter((item) => {
-                  let startsWithResult;
-                  if (item != null) {
-                    startsWithResult = item.startsWith("http:");
-                  }
-                  if (!startsWithResult) {
-                    let startsWithResult1;
-                    if (item != null) {
-                      startsWithResult1 = item.startsWith("https:");
-                    }
-                    startsWithResult = startsWithResult1;
-                  }
-                  return startsWithResult;
-                });
-                if (length.length > 0) {
-                  c5 = 3;
-                  c6 = 1;
-                  const obj8 = { value: resolveExternalAssets(applicationId, length), done: false };
-                  return obj8;
-                }
+            if (!startsWithResult) {
+              let startsWithResult1;
+              if (item != null) {
+                startsWithResult1 = item.startsWith("https:");
               }
-            } else if (2 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              } else {
-                let nextPromise;
-                assets = value;
-                const obj10 = { type: "APPLICATION_ASSETS_UPDATE", applicationId, assets };
-                const obj14 = closure_132_1(closure_132_2[7]);
-                obj14.dispatch(obj10);
-                if (closure_132_20(closure_1, value, assets, num13)) {
-                  const promise = closure_132_13(applicationId);
-                  nextPromise = promise.then(() => closure_2_21(applicationId, closure_1_1, closure_1_2 - 1));
-                } else {
-                  const obj11 = { type: "APPLICATION_ASSETS_FETCH_SUCCESS", applicationId };
-                  const obj2 = closure_132_1(closure_132_2[7]);
-                  obj2.dispatch(obj11);
-                  nextPromise = value;
-                }
-                c6 = 3;
-                return { value: nextPromise, done: true };
-              }
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
+              startsWithResult = startsWithResult1;
             }
-            if (closure_132_19(closure_1, value)) {
-              const obj13 = { type: "APPLICATION_ASSETS_FETCH_SUCCESS", applicationId };
-              const obj7 = closure_132_1(closure_132_2[7]);
-              obj7.dispatch(obj13);
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              c5 = 2;
-              c6 = 1;
-              const obj17 = { value: closure_132_16(applicationId), done: false };
-              return obj17;
-            }
+            return startsWithResult;
+          });
+          if (length.length > 0) {
+            c5 = 3;
+            c6 = 1;
+            const obj8 = { value: resolveExternalAssets(applicationId, length), done: false };
+            return obj8;
           }
-        } catch (tmp30) {
-          c6 = 3;
-          throw tmp30;
         }
+      } else if (2 === c5) {
+        if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          return { value, done: true };
+        } else {
+          let nextPromise;
+          assets = value;
+          const obj10 = { type: "APPLICATION_ASSETS_UPDATE", applicationId, assets };
+          const obj14 = closure_132_1(closure_132_2[7]);
+          obj14.dispatch(obj10);
+          if (closure_132_20(closure_1, value, assets, num13)) {
+            const promise = closure_132_13(applicationId);
+            nextPromise = promise.then(() => closure_2_21(applicationId, closure_1_1, closure_1_2 - 1));
+          } else {
+            const obj11 = { type: "APPLICATION_ASSETS_FETCH_SUCCESS", applicationId };
+            const obj2 = closure_132_1(closure_132_2[7]);
+            obj2.dispatch(obj11);
+            nextPromise = value;
+          }
+          c6 = 3;
+          return { value: nextPromise, done: true };
+        }
+      } else if (arg0 === 1) {
+        c6 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 3;
+        return { value, done: true };
       }
+      if (closure_132_19(closure_1, value)) {
+        const obj13 = { type: "APPLICATION_ASSETS_FETCH_SUCCESS", applicationId };
+        const obj7 = closure_132_1(closure_132_2[7]);
+        obj7.dispatch(obj13);
+        return value;
+      }
+      await closure_132_16(applicationId);
+      length = tmp4;
+      value = tmp;
+      num13 = closure_2;
+      if (closure_2 === undefined) {
+        num13 = 1;
+      }
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -562,7 +522,7 @@ export { fetchAssetIds };
 export function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f94643).length > 0) {
+  if (arr.filter(f94753).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

@@ -1,10 +1,10 @@
-// Module ID: 20520
-// Function ID: 20521
+// Module ID: 20558
+// Function ID: 20559
 // Name: ManagerRegistryShared
 // Dependencies: [572, 2]
 // Exports: initialize
 
-// Module 20520 (ManagerRegistryShared)
+// Module 20558 (ManagerRegistryShared)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

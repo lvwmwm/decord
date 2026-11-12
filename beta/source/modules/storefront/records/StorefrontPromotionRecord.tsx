@@ -1,11 +1,11 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9600
+// Function ID: 9601
 // Name: StorefrontPromotionRecord
-// Dependencies: [32, 1405, 9568, 2]
+// Dependencies: [32, 1405, 9601, 2]
 // Exports: getCollectiblesCollectAndClaim, getCollectiblesCollectionSale, getCollectiblesTargetedOffer
 
-// Module 9567 (StorefrontPromotionRecord)
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9568 */;
+// Module 9600 (StorefrontPromotionRecord)
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9601 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
@@ -144,7 +144,7 @@ class StorefrontPromotionRecord extends Record {
     let tmp31;
     let tmp6;
     let type;
-    const f96335 = (heroUrl) => ({ heroUrl: heroUrl.hero_url });
+    const f96445 = (heroUrl) => ({ heroUrl: heroUrl.hero_url });
     ({ id, application_id, name } = display_name);
     if (name == null) {
       name = null;
@@ -223,12 +223,12 @@ class StorefrontPromotionRecord extends Record {
         tmp20 = dependencyMap;
         if (StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM === type) {
           type = collectibles.subtype;
-          if (tmp19(9568).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER === type) {
-            target = { type: tmp19(9568).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: tmp19(9568).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER, collectionId: collectibles.collection_id, shopHome: obj6, indexPage: obj12, shared: collectibles };
+          if (tmp19(9601).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER === type) {
+            target = { type: tmp19(9601).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: tmp19(9601).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER, collectionId: collectibles.collection_id, shopHome: obj6, indexPage: obj12, shared: collectibles };
             const reward_states = collectibles.shop_home.reward_states;
             obj6 = { title: collectibles.shop_home.title, description: collectibles.shop_home.description, rewardStates: obj7, style: tmp31 };
             obj7 = { inProgress: obj8, earned: obj9, consumed: obj10 };
-            obj8 = { progressSteps: progress_steps.map(f96335) };
+            obj8 = { progressSteps: progress_steps.map(f96445) };
             progress_steps = reward_states.in_progress.progress_steps;
             tmp31 = undefined;
             obj10 = { heroUrl: reward_states.consumed.hero_url };
@@ -240,7 +240,7 @@ class StorefrontPromotionRecord extends Record {
             const reward_states2 = collectibles.index_page.reward_states;
             obj12 = { description: collectibles.index_page.description, rewardStates: obj13, style: tmp19 };
             obj13 = { inProgress: obj14, earned: obj15, consumed: type };
-            obj14 = { progressSteps: progress_steps1.map(f96335) };
+            obj14 = { progressSteps: progress_steps1.map(f96445) };
             progress_steps1 = reward_states2.in_progress.progress_steps;
             type = { heroUrl: hero_url };
             hero_url = reward_states2.consumed.hero_url;
@@ -254,9 +254,9 @@ class StorefrontPromotionRecord extends Record {
             collectibles = parseCollectiblesShared(collectibles.shared);
             tmp23 = target;
           } else {
-            target = tmp19(9568).StorefrontPromotionCollectAndClaimSubtype.BASIC;
+            target = tmp19(9601).StorefrontPromotionCollectAndClaimSubtype.BASIC;
             if (target === type) {
-              target = { type: tmp19(9568).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: tmp19(9568).StorefrontPromotionCollectAndClaimSubtype.BASIC, collectionId: collectibles.collection_id, shopHome: obj16, indexPage: obj18, shared: type };
+              target = { type: tmp19(9601).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: tmp19(9601).StorefrontPromotionCollectAndClaimSubtype.BASIC, collectionId: collectibles.collection_id, shopHome: obj16, indexPage: obj18, shared: type };
               obj16 = { title: collectibles.shop_home.title, description: collectibles.shop_home.description, style: tmp29 };
               tmp29 = undefined;
               if (null != collectibles.shop_home.style) {
@@ -274,7 +274,7 @@ class StorefrontPromotionRecord extends Record {
               tmp23 = target;
             }
           }
-        } else if (tmp19(9568).StorefrontPromotionCollectiblesType.TARGETED_OFFER === type) {
+        } else if (tmp19(9601).StorefrontPromotionCollectiblesType.TARGETED_OFFER === type) {
           const reward = collectibles.reward;
           let nagbar;
           if (reward != null) {
@@ -312,14 +312,14 @@ class StorefrontPromotionRecord extends Record {
             if (null == offer_notice) {
               if (null == progress_steps1) {
                 if (null == hero_url) {
-                  type = { type: tmp19(9568).StorefrontPromotionCollectiblesType.TARGETED_OFFER };
+                  type = { type: tmp19(9601).StorefrontPromotionCollectiblesType.TARGETED_OFFER };
                   target = type;
                 }
                 tmp23 = target;
               }
             }
           }
-          target = { type: tmp19(9568).StorefrontPromotionCollectiblesType.TARGETED_OFFER, reward: type };
+          target = { type: tmp19(9601).StorefrontPromotionCollectiblesType.TARGETED_OFFER, reward: type };
           let tmp26;
           if (null != nagbar) {
             const header_text = nagbar.header_text;
@@ -350,10 +350,10 @@ class StorefrontPromotionRecord extends Record {
             obj17 = offer_notice;
           }
         } else {
-          target = tmp19(9568).StorefrontPromotionCollectiblesType.COLLECTION_SALE;
+          target = tmp19(9601).StorefrontPromotionCollectiblesType.COLLECTION_SALE;
           if (target === type) {
             offer_notice = collectibles.navigation;
-            target = { type: tmp19(9568).StorefrontPromotionCollectiblesType.COLLECTION_SALE, collectionId: null, countdownStyle: null, showUpsellBlocks: show_upsell_blocks, navigation: type };
+            target = { type: tmp19(9601).StorefrontPromotionCollectiblesType.COLLECTION_SALE, collectionId: null, countdownStyle: null, showUpsellBlocks: show_upsell_blocks, navigation: type };
             ({ collection_id: target.collectionId, countdown_style: target.countdownStyle, show_upsell_blocks } = collectibles);
             if (show_upsell_blocks == null) {
               show_upsell_blocks = false;

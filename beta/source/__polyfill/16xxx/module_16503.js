@@ -1,16 +1,17 @@
 // Module ID: 16503
 // Function ID: 16504
-// Dependencies: [16467, 16441]
+// Dependencies: [16484, 16504]
 
 // Module 16503
-import _mod16441 from "module_16441" /* 16441 */;
-import module_16467 from "module_16467" /* 16467 */;
+import _mod16484 from "module_16484" /* 16484 */;
 
-let _moduleResult = module_16467(_mod16441.WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod16441.WeakMap));
-}
+let tmp2;
+const _mod16504 = tmp2(16504);
 
-export default _moduleResult;
+export default (arg0, arg1) => {
+  let tmp4;
+  if (!_mod16484(arg0[arg1])) {
+    tmp4 = _mod16504(tmp);
+  }
+  return tmp4;
+};

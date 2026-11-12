@@ -1,20 +1,20 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9852
+// Function ID: 9853
 // Name: TwoWayLinkLanding
-// Dependencies: [19, 17, 6627, 21, 5140, 9820, 504, 5842, 5751, 7038, 1113, 7355, 6159, 5758, 2]
+// Dependencies: [19, 17, 6659, 21, 5170, 9853, 504, 5874, 5783, 7071, 1113, 7388, 6191, 5790, 2]
 // Exports: TwoWayLinkLanding
 
-// Module 9819 (TwoWayLinkLanding)
+// Module 9852 (TwoWayLinkLanding)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import TableRow2 from "TableRow" /* 7038 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9820 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import TableRow2 from "TableRow" /* 7071 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9853 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let label;
@@ -67,7 +67,7 @@ export function TwoWayLinkLanding(learnMoreLink) {
   });
   const obj5 = { source: img, style: items1 };
   items1 = [tmp.image, ];
-  const tmp10 = valueProps(5842);
+  const tmp10 = valueProps(5874);
   const tmp8 = closure_4;
   if (imgStyle == null) {
     imgStyle = false;
@@ -76,7 +76,7 @@ export function TwoWayLinkLanding(learnMoreLink) {
   items2 = [closure_6(tmp10, obj5), , , ];
   const obj6 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header", children: tmp11 };
   tmp11 = headerConnect;
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5783).Text;
   if (stateFromStores) {
     tmp11 = headerConnect;
     if (null != headerReconnect) {
@@ -103,7 +103,7 @@ export function TwoWayLinkLanding(learnMoreLink) {
   let tmp9Result = null;
   if (null != learnMoreLink) {
     const obj9 = { variant: "body-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl.format(intl3.t["/l3n+1"], obj10) };
-    const Text2 = tmp2(5751).Text;
+    const Text2 = tmp2(5783).Text;
     intl = tmp2(1113).intl;
     obj10 = { helpCenterLink: learnMoreLink };
     tmp9Result = tmp9(Text2, obj9);
@@ -111,11 +111,11 @@ export function TwoWayLinkLanding(learnMoreLink) {
   items3[1] = tmp9Result;
   items4 = [closure_7(tmp8, { alwaysBounceVertical: false, children: items3 }), ];
   const obj11 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: closure_6(Stack, obj12) };
-  const SafeAreaPaddingView = tmp2(7355).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(7388).SafeAreaPaddingView;
   obj12 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton, children: closure_6(Button, obj13) };
-  Stack = tmp2(6159).Stack;
+  Stack = tmp2(6191).Stack;
   obj13 = { variant: "primary", size: "lg", text: intl2.string(intl3.t.LhlgY9), onPress: onNext };
-  Button = tmp2(5758).Button;
+  Button = tmp2(5790).Button;
   intl2 = tmp2(1113).intl;
   items4[1] = closure_6(SafeAreaPaddingView, obj11);
   return closure_7(closure_3, obj3);

@@ -1,15 +1,15 @@
-// Module ID: 17449
-// Function ID: 17450
+// Module ID: 17486
+// Function ID: 17487
 // Name: VideoQuestModalReward
-// Dependencies: [19, 21, 5140, 17427, 9772, 9769, 6159, 575, 17432, 5751, 1113, 2]
+// Dependencies: [19, 21, 5170, 17464, 9805, 9802, 6191, 575, 17469, 5783, 1113, 2]
 
-// Module 17449 (VideoQuestModalReward)
+// Module 17486 (VideoQuestModalReward)
 import nativeDefault from "native" /* 575 */;
-import QuestUtils from "QuestUtils" /* 9769 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 17432 */;
+import QuestUtils from "QuestUtils" /* 9802 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 17469 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -39,9 +39,9 @@ const memoResult = react.memo(function VideoQuestModalReward(withQuestName) {
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = withQuestName);
-  let obj = quest(17427);
+  let obj = quest(17464);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj2 = quest(9772);
+  let obj2 = quest(9805);
   const items = [quest.id];
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
   const callback = react.useCallback(() => {
@@ -51,15 +51,15 @@ const memoResult = react.memo(function VideoQuestModalReward(withQuestName) {
   }, items);
   const obj3 = { justify: "center", align: "center", spacing: nativeDefault.space.PX_24, style, children: items1 };
   const tmp7 = closure_6();
-  const Stack = quest(6159).Stack;
+  const Stack = quest(6191).Stack;
   items1 = [, ];
   const obj4 = { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation };
   items1[0] = closure_4(QuestProgressIndicatorDefault, obj4);
   const obj5 = { align: "center", spacing: nativeDefault.space.PX_4, onLayout: onTextBlockLayout, children: items2 };
-  const Stack2 = quest(6159).Stack;
+  const Stack2 = quest(6191).Stack;
   if (tmp) {
     const obj6 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp7.questName, children: intl.formatToPlainString(quest(1113).t.EAYZAr, obj7) };
-    const Text = tmp3(5751).Text;
+    const Text = tmp3(5783).Text;
     intl = tmp3(1113).intl;
     obj7 = { questName: quest.config.messages.questName };
     tmp = tmp9(Text, obj6);
@@ -67,7 +67,7 @@ const memoResult = react.memo(function VideoQuestModalReward(withQuestName) {
   items2 = [tmp, ];
   if (tmp9Result) {
     const obj8 = { variant: "heading-xs/medium", color: "text-subtle", children: intl2.string(quest(1113).t["1Wvve2"]) };
-    const Text2 = tmp3(5751).Text;
+    const Text2 = tmp3(5783).Text;
     intl2 = tmp3(1113).intl;
     tmp9Result = tmp9(Text2, obj8);
   }

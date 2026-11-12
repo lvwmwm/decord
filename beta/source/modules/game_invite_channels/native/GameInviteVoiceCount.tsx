@@ -1,16 +1,16 @@
-// Module ID: 14022
-// Function ID: 14023
+// Module ID: 14054
+// Function ID: 14055
 // Name: GameInviteVoiceCount
-// Dependencies: [19, 17, 5896, 21, 5140, 504, 8744, 575, 5751, 2]
+// Dependencies: [19, 17, 5928, 21, 5170, 504, 8777, 575, 5783, 2]
 // Exports: default
 
-// Module 14022 (GameInviteVoiceCount)
+// Module 14054 (GameInviteVoiceCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5896 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5928 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -32,10 +32,10 @@ export default function GameInviteVoiceCount(channel) {
   if (0 !== stateFromStores) {
     const obj2 = { style: tmp.container, children: items2 };
     const obj3 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    const VoiceNormalIcon = tmp2(8744).VoiceNormalIcon;
+    const VoiceNormalIcon = tmp2(8777).VoiceNormalIcon;
     items2 = [closure_5(VoiceNormalIcon, obj3), ];
     const obj4 = { variant: "body-sm/medium", color: "text-feedback-positive", children: stateFromStores };
-    items2[1] = closure_5(channel(5751).Text, obj4);
+    items2[1] = closure_5(channel(5783).Text, obj4);
     tmp5 = closure_6(View, obj2);
   }
   return tmp5;

@@ -1,10 +1,10 @@
-// Module ID: 11958
-// Function ID: 11959
+// Module ID: 11990
+// Function ID: 11991
 // Name: doesOrientationMatchLockState
 // Dependencies: [2143, 2]
 // Exports: default
 
-// Module 11958 (doesOrientationMatchLockState)
+// Module 11990 (doesOrientationMatchLockState)
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2143 */;
 import size from "module_2" /* 2 */;
 

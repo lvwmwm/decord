@@ -1,42 +1,34 @@
 // Module ID: 16475
 // Function ID: 16476
-// Dependencies: [16467, 16466, 16474]
+// Dependencies: [16476, 16478, 16485, 16508, 16496, 16510, 16506, 16511]
 
 // Module 16475
-import _mod16466 from "module_16466" /* 16466 */;
-import _mod16467 from "module_16467" /* 16467 */;
-import _mod16474 from "module_16474" /* 16474 */;
+import _mod16476 from "module_16476" /* 16476 */;
+import _mod16478 from "module_16478" /* 16478 */;
+import _mod16485 from "module_16485" /* 16485 */;
+import _mod16496 from "module_16496" /* 16496 */;
+import _mod16506 from "module_16506" /* 16506 */;
+import _mod16508 from "module_16508" /* 16508 */;
+import _mod16510 from "module_16510" /* 16510 */;
+import propertyIsEnumerable from "propertyIsEnumerable" /* 16511 */;
 
-
-export default (arg0, arg1) => {
-  if ("string" === arg1) {
-    const toString = arg0.toString;
-    if (_mod16467(toString)) {
-      const tmpResult = _mod16466;
-      const tmp4 = _mod16474(toString, arg0);
-      if (!tmpResult(tmp4)) {
-        return tmp4;
+if (!_mod16476) {
+  getOwnPropertyDescriptor = function getOwnPropertyDescriptor(arg0, arg1) {
+    const tmp3 = _mod16478(arg0);
+    const tmp4 = _mod16485(arg1);
+    if (!_mod16508) {
+      if (_mod16496(tmp3, tmp4)) {
+        const tmpResult = _mod16510;
+        const tmpResult2 = _mod16506;
+        return tmpResult(!tmpResult2(propertyIsEnumerable.f, tmp3, tmp4), tmp3[tmp4]);
+      }
+    } else {
+      try {
+        return getOwnPropertyDescriptor(tmp3, tmp4);
+      } catch (err) {
       }
     }
-  }
-  const valueOf = arg0.valueOf;
-  if (_mod16467(valueOf)) {
-    const tmp5Result = _mod16466;
-    const tmp8 = _mod16474(valueOf, arg0);
-    if (!tmp5Result(tmp8)) {
-      return tmp8;
-    }
-  }
-  if ("string" !== arg1) {
-    const toString2 = arg0.toString;
-    if (_mod16467(toString2)) {
-      const tmp5Result2 = _mod16466;
-      const tmp10 = _mod16474(toString2, arg0);
-      if (!tmp5Result2(tmp10)) {
-        return tmp10;
-      }
-    }
-  }
-  const tmp11 = new TypeError("Can't convert object to primitive value");
-  throw tmp11;
-};
+  };
+}
+
+export const f = getOwnPropertyDescriptor;

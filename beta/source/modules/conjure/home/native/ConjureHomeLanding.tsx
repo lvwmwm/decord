@@ -1,19 +1,19 @@
-// Module ID: 13033
-// Function ID: 13034
+// Module ID: 13065
+// Function ID: 13066
 // Name: ConjureHomeLanding
-// Dependencies: [5, 32, 19, 17, 10970, 21, 575, 5140, 13034, 1499, 1627, 12238, 1652, 13190, 12289, 12788, 13191, 13192, 12965, 10996, 12786, 1500, 12250, 1113, 4026, 11000, 5837, 13194, 7050, 5751, 13195, 13011, 13197, 2]
+// Dependencies: [5, 32, 19, 17, 11002, 21, 575, 5170, 13066, 1499, 1627, 12270, 1652, 13222, 12321, 12820, 13223, 13224, 12997, 11028, 12818, 1500, 12282, 1113, 4026, 11032, 5869, 13226, 7083, 5783, 13227, 13043, 13229, 2]
 // Exports: default
 
-// Module 13033 (ConjureHomeLanding)
+// Module 13065 (ConjureHomeLanding)
 import nativeDefault from "native" /* 575 */;
-import ConjureHomeCarousel from "ConjureHomeCarousel" /* 13034 */;
+import ConjureHomeCarousel from "ConjureHomeCarousel" /* 13066 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 10970 */;
+import ConjureChatStore from "ConjureChatStore" /* 11002 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, closure_0, closure_4, closure_5, navigation;
@@ -178,12 +178,12 @@ export default function ConjureHomeLanding(focusRequest) {
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f143723 = (role) => "user" === role.role;
+        const f143838 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
           const messages = ref.getMessages(closure_0);
           const obj = ref;
-          if (messages.some(f143723)) {
+          if (messages.some(f143838)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -198,7 +198,7 @@ export default function ConjureHomeLanding(focusRequest) {
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f143723)) {
+        if (messages.some(f143838)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);

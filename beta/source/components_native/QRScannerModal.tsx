@@ -1,25 +1,25 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16037
+// Function ID: 16038
 // Name: QRScannerModal
-// Dependencies: [32, 19, 17, 1072, 7792, 21, 1377, 16006, 575, 7270, 1627, 1378, 15981, 6799, 15996, 2118, 7635, 13588, 5834, 6091, 1113, 9189, 7320, 1187, 2]
+// Dependencies: [32, 19, 17, 1072, 7825, 21, 1377, 16038, 575, 7303, 1627, 1378, 16013, 6831, 16028, 2118, 7668, 13620, 5866, 6123, 1113, 9222, 7353, 1187, 2]
 // Exports: default
 
-// Module 16005 (QRScannerModal)
+// Module 16037 (QRScannerModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import LinkingDefault from "Linking" /* 5834 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import openUserSettings from "openUserSettings" /* 7635 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9189 */;
-import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 13588 */;
-import QRLoginUtils from "QRLoginUtils" /* 15981 */;
-import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 16006 */;
+import LinkingDefault from "Linking" /* 5866 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+import openUserSettings from "openUserSettings" /* 7668 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7825 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9222 */;
+import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 13620 */;
+import QRLoginUtils from "QRLoginUtils" /* 16013 */;
+import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 16038 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -124,7 +124,7 @@ export default function QRScannerModal(showHelp) {
                 tmp22Result.pop();
                 const obj2 = { remoteAuthFingerprint: result };
                 const tmp22Result4 = ModalActionCreatorsDefault;
-                tmp22Result4.pushLazy(asyncRequire(15996, dependencyMap.paths), obj2);
+                tmp22Result4.pushLazy(asyncRequire(16028, dependencyMap.paths), obj2);
               } else {
                 let match;
                 if (url.pathname != null) {
@@ -156,7 +156,7 @@ export default function QRScannerModal(showHelp) {
             show(obj4);
             tmp9 = importDefault;
           }
-          const tmp9Result = tmp9(6799);
+          const tmp9Result = tmp9(6831);
           tmp9Result.pop();
         }
     };
@@ -165,7 +165,7 @@ export default function QRScannerModal(showHelp) {
     tmp14 = tmp10;
   }
   items1 = [tmp10Result, , ];
-  let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(onScanSuccess(1113).t.cpT0Cq), source: tmp5(7320), style: items2, onPress: tmp5(6799).pop };
+  let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(onScanSuccess(1113).t.cpT0Cq), source: tmp5(7353), style: items2, onPress: tmp5(6831).pop };
   const tmp5Result = TouchableHitBoxDefault;
   intl = onScanSuccess(1113).intl;
   items2 = [tmp12.closeButton, { marginTop: top }];

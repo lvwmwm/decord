@@ -1,10 +1,10 @@
-// Module ID: 5198
-// Function ID: 5199
+// Module ID: 5230
+// Function ID: 5231
 // Name: ThemeActionCreators
 // Dependencies: [1194, 1195, 572, 1230, 2]
 // Exports: clearSyncedClientThemes, clearThemeOverride, refreshTheme, setSameAsDeviceThemeEnabled, setSystemTheme, setSystemThemeIfNeeded, setThemeOverride, setUseSystemTheme, updateSyncedClientTheme, updateThemePreferences
 
-// Module 5198 (ThemeActionCreators)
+// Module 5230 (ThemeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import getSystemThemeDefault from "getSystemTheme" /* 1230 */;

@@ -1,32 +1,32 @@
-// Module ID: 15733
-// Function ID: 15734
+// Module ID: 15765
+// Function ID: 15766
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8834, 7654, 1072, 1387, 21, 5140, 575, 7126, 7675, 1499, 1627, 504, 12, 6577, 7678, 9713, 10731, 8826, 15568, 7657, 7680, 8839, 7223, 7227, 10028, 5842, 15734, 5751, 1113, 15735, 15741, 15743, 15746, 15748, 11517, 7229, 2760, 15749, 7015, 2]
+// Dependencies: [32, 19, 17, 8867, 7687, 1072, 1387, 21, 5170, 575, 7159, 7708, 1499, 1627, 504, 12, 6609, 7711, 9746, 10763, 8859, 15600, 7690, 7713, 8872, 7256, 7260, 10061, 5874, 15766, 5783, 1113, 15767, 15773, 15775, 15778, 15780, 11549, 7262, 2760, 15781, 7048, 2]
 // Exports: default
 
-// Module 15733 (UserSettingsPremiumGifting)
+// Module 15765 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6577 */;
-import TableRowGroup from "TableRowGroup" /* 7126 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7223 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7227 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 7657 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7680 */;
-import BadgeId from "BadgeId" /* 8826 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8839 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10028 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 15735 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 15741 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6609 */;
+import TableRowGroup from "TableRowGroup" /* 7159 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7256 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7260 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 7690 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7713 */;
+import BadgeId from "BadgeId" /* 8859 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8872 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10061 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 15767 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 15773 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8834 */;
-import EntitlementStore from "EntitlementStore" /* 7654 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8867 */;
+import EntitlementStore from "EntitlementStore" /* 7687 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

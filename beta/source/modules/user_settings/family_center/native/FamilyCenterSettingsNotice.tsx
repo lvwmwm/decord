@@ -1,16 +1,16 @@
-// Module ID: 17035
-// Function ID: 17036
+// Module ID: 17069
+// Function ID: 17070
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 7554, 21, 8440, 16903, 2664, 10689, 7836, 5836, 1113, 2]
+// Dependencies: [19, 7587, 21, 8473, 16937, 2664, 10721, 7869, 5868, 1113, 2]
 // Exports: default
 
-// Module 17035 (FamilyCenterSettingsNotice)
+// Module 17069 (FamilyCenterSettingsNotice)
 import Fragment from "Fragment" /* 21 */;
 import _modDef2664 from "module_2664" /* 2664 */;
-import Constants from "Constants" /* 7554 */;
-import LayerActionCreators from "LayerActionCreators" /* 7836 */;
-import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 10689 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16903 */;
+import Constants from "Constants" /* 7587 */;
+import LayerActionCreators from "LayerActionCreators" /* 7869 */;
+import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 10721 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16937 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/user_settings/family_center/n
 
 export default function FamilyCenterSettingsParentalControlsNotice() {
   let activeLinkUserIds;
-  let obj = activeLinkUserIds(8440);
+  let obj = activeLinkUserIds(8473);
   activeLinkUserIds = obj.useActiveLinkUserIds();
   let tmp = SafetySettingsNoticeDefault;
   return <tmp label={_modDef2664.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function handleMessageParentClick() {

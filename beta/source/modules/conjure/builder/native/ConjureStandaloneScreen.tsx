@@ -1,32 +1,32 @@
-// Module ID: 12235
-// Function ID: 12236
+// Module ID: 12267
+// Function ID: 12268
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 17, 5052, 5011, 5072, 6899, 7453, 1072, 21, 5140, 575, 7064, 1113, 4026, 7020, 504, 7457, 12236, 1499, 13032, 12250, 12237, 6934, 9767, 10996, 13033, 13198, 13238, 12425, 7231, 2]
+// Dependencies: [32, 19, 17, 5082, 5041, 5102, 6932, 7486, 1072, 21, 5170, 575, 7097, 1113, 4026, 7053, 504, 7490, 12268, 1499, 13064, 12282, 12269, 6967, 9800, 11028, 13065, 13230, 13270, 12457, 7264, 2]
 // Exports: default
 
-// Module 12235 (ConjureStandaloneScreen)
+// Module 12267 (ConjureStandaloneScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import GuildIcon from "GuildIcon" /* 7020 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 7064 */;
-import ConjureActivity from "ConjureActivity" /* 7457 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10996 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 12236 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12250 */;
-import selectConjureChannelDefault from "selectConjureChannel" /* 13032 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 13238 */;
+import GuildIcon from "GuildIcon" /* 7053 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 7097 */;
+import ConjureActivity from "ConjureActivity" /* 7490 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 12268 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12282 */;
+import selectConjureChannelDefault from "selectConjureChannel" /* 13064 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 13270 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7453 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7486 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -80,7 +80,7 @@ function GlobalChatScene(projectId) {
     }
     return result;
   }, items1);
-  return closure_12(fallbackGuildId(12236), { guildId, projectId, entryPoint, onExit });
+  return closure_12(fallbackGuildId(12268), { guildId, projectId, entryPoint, onExit });
 }
 function RoutedProjectOpener(guildId) {
   guildId = guildId.guildId;
@@ -255,8 +255,8 @@ export default function ConjureStandaloneScreen(guildId) {
       tmp4 = { key: num, projectId, entryPoint };
       const obj2 = { key: num, projectId, entryPoint };
     } else if (null != projectId) {
-      tmp4 = { key: projectId, projectId, entryPoint: "r" };
-      const obj = { key: projectId, projectId, entryPoint: "r" };
+      tmp4 = { key: projectId, projectId, entryPoint: "Array" };
+      const obj = { key: projectId, projectId, entryPoint: "Array" };
     }
     return tmp4;
   }, items11);
@@ -291,10 +291,10 @@ export default function ConjureStandaloneScreen(guildId) {
       const tmp2 = map1;
       if (closure_5) {
         const obj2 = { forMeGuildId: guildId, focusRequest };
-        tmp3Result = tmp3(tmp5(13033), obj2);
+        tmp3Result = tmp3(tmp5(13065), obj2);
       } else {
         const obj3 = { guildId };
-        tmp3Result = tmp3(tmp5(13198), obj3);
+        tmp3Result = tmp3(tmp5(13230), obj3);
       }
       children[1] = tmp3Result;
       return tmp(tmp2, { children });

@@ -1,14 +1,14 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14223
+// Function ID: 14224
 // Name: useAutocompleteAnimatedHeightStyles
-// Dependencies: [5324, 1652, 5370, 5373, 2]
+// Dependencies: [5356, 1652, 5402, 5405, 2]
 // Exports: default
 
-// Module 14191 (useAutocompleteAnimatedHeightStyles)
+// Module 14223 (useAutocompleteAnimatedHeightStyles)
 import _mod1652 from "module_1652" /* 1652 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 5324 */;
-import timing_timing from "timing/timing" /* 5370 */;
-import timingPresets from "timingPresets" /* 5373 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 5356 */;
+import timing_timing from "timing/timing" /* 5402 */;
+import timingPresets from "timingPresets" /* 5405 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = { code: "(function useAutocompleteAnimatedHeightStylesTsx1(){let[withTiming,height,timingStandard,isFrozenSharedValue]=this.__closure;return{height:withTiming(height,timingStandard),display:!isFrozenSharedValue.get()?'flex':'none'};})" };

@@ -1,15 +1,15 @@
-// Module ID: 7127
-// Function ID: 7128
+// Module ID: 7160
+// Function ID: 7161
 // Name: TableRadioRow
-// Dependencies: [19, 21, 7124, 5200, 7038, 7052, 7128, 2]
+// Dependencies: [19, 21, 7157, 5232, 7071, 7085, 7161, 2]
 // Exports: TableRadioRow
 
-// Module 7127 (TableRadioRow)
+// Module 7160 (TableRadioRow)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 5200 */;
-import TableRowBadge from "TableRowBadge" /* 7052 */;
-import TableRadioGroup from "TableRadioGroup" /* 7124 */;
-import FormRadio from "FormRadio" /* 7128 */;
+import react_native from "react-native" /* 5232 */;
+import TableRowBadge from "TableRowBadge" /* 7085 */;
+import TableRadioGroup from "TableRadioGroup" /* 7157 */;
+import FormRadio from "FormRadio" /* 7161 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ export function TableRadioRow(value) {
   const tmp2Result = react_native;
   const radioA11yNative = tmp2Result.useRadioA11yNative({ selected: legacyCompat_selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const TableRow = tmp2(7038).TableRow;
+  const TableRow = tmp2(7071).TableRow;
   const merged1 = Object.assign(merged);
   const tmp2Result2 = TableRowBadge;
   return <TableRow arrow={false} label={label} subLabel={subLabel} badge={badge} disabled={disabled} accessibilityState={accessibilityState} accessible accessibilityRole={accessibilityRole} accessibilityLabel={tmp2Result2.getTableRowAccessibilityLabel(label, subLabel, badge)} accessibilityHint={accessibilityHint} onPress={function handleOnPress(arg0) {

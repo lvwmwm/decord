@@ -1,16 +1,16 @@
-// Module ID: 15566
-// Function ID: 15567
+// Module ID: 15598
+// Function ID: 15599
 // Name: PremiumReferralTrialPill
-// Dependencies: [17, 21, 5140, 575, 5751, 1113, 2]
+// Dependencies: [17, 21, 5170, 575, 5783, 1113, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 15566 (PremiumReferralTrialPill)
+// Module 15598 (PremiumReferralTrialPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import createStyles from "createStyles" /* 5140 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

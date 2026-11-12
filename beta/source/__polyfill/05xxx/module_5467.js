@@ -1,56 +1,17 @@
 // Module ID: 5467
 // Function ID: 5468
-// Dependencies: [19, 5444, 5456, 5468, 5469, 5470, 5471, 5472]
-// Exports: useDetectorUpdater
+// Dependencies: [17, 106, 65]
 
 // Module 5467
-import react from "react" /* 19 */;
-import react_nativeDefault from "react-native" /* 5456 */;
-import assignRef from "assignRef" /* 5468 */;
-import needsToReattach from "needsToReattach" /* 5469 */;
-import dropHandlers from "dropHandlers" /* 5470 */;
-import attachHandlers from "attachHandlers" /* 5471 */;
-import _mod5472 from "module_5472" /* 5472 */;
+import react_native from "react-native" /* 17 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+let obj2;
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNGestureHandlerDetector", directEventTypes: { topGestureHandlerEvent: { registrationName: "onGestureHandlerEvent" }, topGestureHandlerStateChange: { registrationName: "onGestureHandlerStateChange" }, topGestureHandlerTouchEvent: { registrationName: "onGestureHandlerTouchEvent" }, topGestureHandlerReanimatedEvent: { registrationName: "onGestureHandlerReanimatedEvent" }, topGestureHandlerReanimatedStateChange: { registrationName: "onGestureHandlerReanimatedStateChange" }, topGestureHandlerReanimatedTouchEvent: { registrationName: "onGestureHandlerReanimatedTouchEvent" }, topGestureHandlerAnimatedEvent: { registrationName: "onGestureHandlerAnimatedEvent" } }, validAttributes: obj2 };
+obj2 = { handlerTags: true, moduleId: true, virtualChildren: true, pointerEvents: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onGestureHandlerEvent: true, onGestureHandlerStateChange: true, onGestureHandlerTouchEvent: true, onGestureHandlerReanimatedEvent: true, onGestureHandlerReanimatedStateChange: true, onGestureHandlerReanimatedTouchEvent: true, onGestureHandlerAnimatedEvent: true }));
 
-react.useCallback;
-
-export function useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers) {
-  let gestureConfig;
-  _require = current;
-  const preparedGesture = current2;
-  dependencyMap = gesturesToAttach;
-  const webEventHandlersRef = webEventHandlers;
-  let obj = require("ALLOWED_PROPS");
-  const forceRender = obj.useForceRender();
-  const items = [forceRender, gesture, gesturesToAttach, current2, current, webEventHandlers];
-  return gesture((arg0) => {
-    const tmp2 = react_nativeDefault;
-    const obj = assignRef;
-    const tmp2Result = tmp2(obj.resolveHostInstance(current.viewRef));
-    if (tmp2Result === current.previousViewTag) {
-      const tmp3Result = needsToReattach;
-      const tmp7 = preparedGesture;
-      const tmp8 = gesturesToAttach;
-      if (!tmp3Result.needsToReattach(preparedGesture, gesturesToAttach)) {
-        const tmp9 = arg0;
-        if (!tmp9) {
-          const tmp3Result4 = _mod5472;
-          tmp3Result4.updateHandlers(tmp7, gestureConfig, tmp8);
-        }
-      }
-    }
-    const tmp3Result5 = dropHandlers;
-    tmp3Result5.dropHandlers(preparedGesture);
-    const obj2 = { preparedGesture, gestureConfig, gesturesToAttach, webEventHandlersRef, viewTag: tmp2Result };
-    const tmp3Result6 = attachHandlers;
-    tmp3Result6.attachHandlers(obj2);
-    if (tmp2Result !== current.previousViewTag) {
-      current.previousViewTag = tmp2Result;
-      current.forceRebuildReanimatedEvent = true;
-      forceRender();
-    }
-  }, items);
-}
+export default module_65.get("RNGestureHandlerDetector", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

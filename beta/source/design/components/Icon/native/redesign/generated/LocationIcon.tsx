@@ -1,14 +1,14 @@
-// Module ID: 9087
-// Function ID: 9088
+// Module ID: 9120
+// Function ID: 9121
 // Name: LocationIcon
-// Dependencies: [19, 21, 575, 5841, 9088, 2]
+// Dependencies: [19, 21, 575, 5873, 9121, 2]
 // Exports: LocationIcon
 
-// Module 9087 (LocationIcon)
+// Module 9120 (LocationIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 9088 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 9121 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

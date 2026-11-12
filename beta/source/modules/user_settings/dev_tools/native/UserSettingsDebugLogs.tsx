@@ -1,23 +1,23 @@
-// Module ID: 17888
-// Function ID: 17889
+// Module ID: 17926
+// Function ID: 17927
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 7169, 1627, 5837, 510, 7, 5751, 7282, 13020, 1113, 17889, 5374, 17890, 7357, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5170, 575, 7202, 1627, 5869, 510, 7, 5783, 7315, 13052, 1113, 17927, 5406, 17928, 7390, 2]
 // Exports: default
 
-// Module 17888 (UserSettingsDebugLogs)
+// Module 17926 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Storage2 from "Storage" /* 510 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
-import InputTypes from "InputTypes" /* 7169 */;
-import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 17889 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import InputTypes from "InputTypes" /* 7202 */;
+import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 17927 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -173,9 +173,9 @@ export default function UserSettingsDebugLogs() {
     items[2] = str;
     items1 = [metroImportDefault(Text, obj2), ];
     const obj3 = { style: closure_0.code, variant: "body-sm/normal", children: items2 };
-    const Text2 = tmp4(5751).Text;
+    const Text2 = tmp4(5783).Text;
     const obj4 = { style: closure_0.code, variant: "body-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-    const Text3 = tmp4(5751).Text;
+    const Text3 = tmp4(5783).Text;
     items2 = [metroImportAll(Text3, obj4), item.message];
     items1[1] = metroImportDefault(Text2, obj3);
     return metroImportDefault(tmp2, obj, index);

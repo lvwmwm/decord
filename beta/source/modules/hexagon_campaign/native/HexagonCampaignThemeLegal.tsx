@@ -1,20 +1,20 @@
-// Module ID: 17332
-// Function ID: 17333
+// Module ID: 17369
+// Function ID: 17370
 // Name: HexagonCampaignThemeLegal
-// Dependencies: [19, 17, 5165, 21, 5140, 575, 5751, 1113, 4411, 16798, 5842, 17333, 2]
+// Dependencies: [19, 17, 5195, 21, 5170, 575, 5783, 1113, 4411, 16830, 5874, 17370, 2]
 // Exports: default
 
-// Module 17332 (HexagonCampaignThemeLegal)
+// Module 17369 (HexagonCampaignThemeLegal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4411 from "module_4411" /* 4411 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17333 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17370 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const openHexagonCampaignLearnMore = tmp2(16798);
+const openHexagonCampaignLearnMore = tmp2(16830);
 const View = react_native.View;
 ({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: closure_4, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: hasOwnProperty } = HexagonCampaignConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -52,7 +52,7 @@ export default function HexagonCampaignThemeLegal(animatedStyles) {
   dependencyMap = tmp2;
   let tmp5 = dependencyMap;
   let obj = { animated: tmp2, variant: "body-xs/medium", color: str, style: items, children: intl.format(_modDef4411.y2YmJv, obj2) };
-  let Text = animatedStyles(5751).Text;
+  let Text = animatedStyles(5783).Text;
   let headerSecondary;
   const tmp4 = animatedStyles;
   if (animatedStyles != null) {

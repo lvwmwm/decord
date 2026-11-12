@@ -1,47 +1,37 @@
 // Module ID: 16461
 // Function ID: 16462
-// Dependencies: [16441, 16462]
+// Dependencies: [16376, 16462]
+// Exports: getSupportedNumberingSystems
 
 // Module 16461
-import _mod16441 from "module_16441" /* 16441 */;
-import _mod16462 from "module_16462" /* 16462 */;
+const require = globalThis.__r;
+let _require;
 
-let tmp4;
-let tmp = _mod16441.process && _mod16441.process.versions;
-if (!tmp) {
-  tmp = _mod16441.Deno && _mod16441.Deno.version;
-  _mod16441.Deno && _mod16441.Deno.version;
-}
-let tmp3;
-if (tmp && tmp.v8) {
-  let num3;
-  const parts = str.split(".");
-  if (parts[0] <= 0) {
-    num3 = +parts[0] + parts[1];
-  } else {
-    num3 = 1;
-  }
-  tmp3 = num3;
-  tmp4 = parts;
-}
-let match1 = !tmp3 && _mod16462;
-if (match1) {
-  const str3 = _mod16462;
-  const match = str3.match(/Edge\/(\d+)/);
-  let tmp8 = !match;
-  if (match) {
-    tmp8 = match[1] >= 74;
-  }
-  match1 = tmp8;
-  tmp4 = match;
-}
-if (match1) {
-  const str4 = _mod16462;
-  match1 = str4.match(/Chrome\/(\d+)/);
-  tmp4 = match1;
-}
-if (match1) {
-  tmp3 = +tmp4[1];
-}
 
-export default tmp3;
+export function getSupportedNumberingSystems(locale) {
+  _require = locale;
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => {
+    function isSupportedNumberingSystem(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const concat = "".concat;
+        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
+        const combined = "".concat(str, "-u-nu-");
+        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
+        const obj3 = memoizedNumberFormat;
+        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+          if ("123" === obj3.format(123)) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
+    }
+    return isSupportedNumberingSystem(item, locale);
+  });
+}

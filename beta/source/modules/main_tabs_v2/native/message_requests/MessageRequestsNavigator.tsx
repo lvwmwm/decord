@@ -1,18 +1,18 @@
-// Module ID: 19332
-// Function ID: 19333
+// Module ID: 19370
+// Function ID: 19371
 // Name: MessageRequestsNavigator
-// Dependencies: [19, 21, 9976, 5140, 575, 7231, 7730, 19219, 9902, 1113, 10265, 19333, 19352, 19353, 2]
+// Dependencies: [19, 21, 10009, 5170, 575, 7264, 7763, 19257, 9935, 1113, 10297, 19371, 19390, 19391, 2]
 // Exports: default
 
-// Module 19332 (MessageRequestsNavigator)
+// Module 19370 (MessageRequestsNavigator)
 import nativeDefault from "native" /* 575 */;
-import HeaderShared from "HeaderShared" /* 9902 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10265 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 19219 */;
+import HeaderShared from "HeaderShared" /* 9935 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10297 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 19257 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9976 */;
-import createStyles from "createStyles" /* 5140 */;
+import NativeStackView from "NativeStackView" /* 10009 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

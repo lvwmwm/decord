@@ -1,20 +1,20 @@
-// Module ID: 19484
-// Function ID: 19485
+// Module ID: 19522
+// Function ID: 19523
 // Name: useExternalPipParticipant
-// Dependencies: [19, 6898, 15942, 6769, 502, 2130, 5893, 5805, 11363, 19485, 11368, 504, 2]
+// Dependencies: [19, 6931, 15974, 6801, 502, 2130, 5925, 5837, 11395, 19523, 11400, 504, 2]
 // Exports: default
 
-// Module 19484 (useExternalPipParticipant)
-import CallConstants from "CallConstants" /* 5805 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19485 */;
+// Module 19522 (useExternalPipParticipant)
+import CallConstants from "CallConstants" /* 5837 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19523 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 15942 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 15974 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
 import size from "module_2" /* 2 */;
 
 let mediaEngine;
@@ -41,7 +41,7 @@ function getExternalPipSelectedParticipant(batchedStoreListener, selectedPartici
         obj = { participantType: null, selectedParticipantId: null, selectedParticipantSpeaking: participant.type === tmp12.USER && participant.speaking, selectedParticipantStreamId: tmp3, selectedParticipantUserId: participant.user.id };
         ({ type: obj.participantType, id: obj.selectedParticipantId } = participant);
         tmp3 = undefined;
-        const tmp7Result = tmp7(11368);
+        const tmp7Result = tmp7(11400);
         if (tmp7Result.canRenderParticipantVideo(participant)) {
           const streamId = participant.streamId;
           tmp3 = streamId;

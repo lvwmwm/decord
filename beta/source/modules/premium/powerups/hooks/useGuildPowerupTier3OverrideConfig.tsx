@@ -1,13 +1,13 @@
-// Module ID: 14373
-// Function ID: 14374
+// Module ID: 14405
+// Function ID: 14406
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [5011, 1072, 504, 1113, 2696, 2]
+// Dependencies: [5041, 1072, 504, 1113, 2696, 2]
 // Exports: default
 
-// Module 14373 (useGuildPowerupTier3OverrideConfig)
+// Module 14405 (useGuildPowerupTier3OverrideConfig)
 import Constants from "Constants" /* 1072 */;
 import _modDef2696 from "module_2696" /* 2696 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,40 +1,40 @@
-// Module ID: 19613
-// Function ID: 19614
+// Module ID: 19651
+// Function ID: 19652
 // Name: VoicePanelHeader
-// Dependencies: [32, 19, 17, 6898, 5354, 12037, 502, 4989, 2130, 5082, 6811, 1385, 11363, 11366, 11361, 11381, 5805, 1083, 21, 5140, 575, 1652, 5761, 5762, 5727, 7023, 11362, 12182, 504, 12039, 11327, 19521, 1113, 12043, 8629, 12044, 5390, 19522, 19614, 5776, 1705, 5724, 11369, 5370, 1093, 19582, 19540, 19615, 7070, 19616, 6047, 9364, 9326, 5199, 18957, 19617, 11556, 19619, 14975, 19621, 19630, 11108, 19632, 19633, 2]
+// Dependencies: [32, 19, 17, 6931, 5386, 12069, 502, 5019, 2130, 5112, 6844, 1385, 11395, 11398, 11393, 11413, 5837, 1083, 21, 5170, 575, 1652, 5793, 5794, 5759, 7056, 11394, 12214, 504, 12071, 11359, 19559, 1113, 12075, 8662, 12076, 5422, 19560, 19652, 5808, 1705, 5756, 11401, 5402, 1093, 19620, 19578, 19653, 7103, 19654, 6079, 9397, 9359, 5231, 18995, 19655, 11588, 19657, 15007, 19659, 19668, 11140, 19670, 19671, 2]
 
-// Module 19613 (VoicePanelHeader)
+// Module 19651 (VoicePanelHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl5 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5727 */;
-import useChannelName from "useChannelName" /* 5776 */;
-import CallConstants from "CallConstants" /* 5805 */;
-import NativeViewDefault from "NativeView" /* 7023 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11361 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11366 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11381 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 12044 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19522 */;
-import MobileGoLiveEntrypointExperimentDefault from "MobileGoLiveEntrypointExperiment" /* 19614 */;
-import useStableParticipant from "useStableParticipant" /* 19616 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5759 */;
+import useChannelName from "useChannelName" /* 5808 */;
+import CallConstants from "CallConstants" /* 5837 */;
+import NativeViewDefault from "NativeView" /* 7056 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11398 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 12076 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19560 */;
+import MobileGoLiveEntrypointExperimentDefault from "MobileGoLiveEntrypointExperiment" /* 19652 */;
+import useStableParticipant from "useStableParticipant" /* 19654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
-import ExperimentStore from "ExperimentStore" /* 5354 */;
-import StageMusicStore from "StageMusicStore" /* 12037 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
+import ExperimentStore from "ExperimentStore" /* 5386 */;
+import StageMusicStore from "StageMusicStore" /* 12069 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
-import SpeakingStore from "SpeakingStore" /* 6811 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import SpeakingStore from "SpeakingStore" /* 6844 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
@@ -50,46 +50,46 @@ let obj3;
 let size;
 let size1;
 let tmp2;
-const spring_spring = tmp2(5761);
-const springPresets = tmp2(5762);
-const AssetRegistryDefault = tmp2(11108);
-const calculateVoicePanelHeaderSpecsDefault = tmp2(11369);
-const AssetRegistryDefault2 = tmp2(11556);
-const useMyCurrentStageChannelRoleDefault = tmp2(12182);
-const ThemedHeaderBackgroundGradientDefault = tmp2(18957);
-const VoicePanelIconButtonDefault = tmp2(19521);
-const useVoicePanelNavArrowPressedDefault = tmp2(19615);
-const useStableParticipantDefault = tmp2(19616);
-const VoicePanelHeaderUserStateDefault = tmp2(19617);
-const VoicePanelTitleButtonDefault = tmp2(19619);
-const VoicePanelHeaderSpeakerDefault = tmp2(19621);
-const VoiceChannelAppHeaderButtonsDefault = tmp2(19630);
-const AssetRegistryDefault3 = tmp2(19632);
-const VoicePanelHeaderChatButtonDefault = tmp2(19633);
+const spring_spring = tmp2(5793);
+const springPresets = tmp2(5794);
+const AssetRegistryDefault = tmp2(11140);
+const calculateVoicePanelHeaderSpecsDefault = tmp2(11401);
+const AssetRegistryDefault2 = tmp2(11588);
+const useMyCurrentStageChannelRoleDefault = tmp2(12214);
+const ThemedHeaderBackgroundGradientDefault = tmp2(18995);
+const VoicePanelIconButtonDefault = tmp2(19559);
+const useVoicePanelNavArrowPressedDefault = tmp2(19653);
+const useStableParticipantDefault = tmp2(19654);
+const VoicePanelHeaderUserStateDefault = tmp2(19655);
+const VoicePanelTitleButtonDefault = tmp2(19657);
+const VoicePanelHeaderSpeakerDefault = tmp2(19659);
+const VoiceChannelAppHeaderButtonsDefault = tmp2(19668);
+const AssetRegistryDefault3 = tmp2(19670);
+const VoicePanelHeaderChatButtonDefault = tmp2(19671);
 function MusicMuteButton(channelId) {
   let muted;
   let speaker;
   channelId = channelId.channelId;
   let stateFromStores;
-  const tmp3 = stateFromStores(12182)(channelId);
+  const tmp3 = stateFromStores(12214)(channelId);
   if (tmp3 != null) {
     speaker = tmp3.speaker;
   }
   let obj = channelId(504);
   const items = [StageMusicStore];
   stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
-  const obj2 = channelId(12039);
+  const obj2 = channelId(12071);
   const showStageMusicMuteButton = obj2.useShowStageMusicMuteButton(channelId);
   const items1 = [ChannelStore];
   const items2 = [channelId];
   const obj3 = channelId(504);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
-  channelId(11327);
+  channelId(11359);
   let tmp11Result = null;
   if (showStageMusicMuteButton) {
     if (speaker) {
       let stringResult;
-      const tmpResult = stateFromStores(19521);
+      const tmpResult = stateFromStores(19559);
       const intl = tmp4(1113).intl;
       const string = intl.string;
       const t = tmp4(1113).t;
@@ -101,7 +101,7 @@ function MusicMuteButton(channelId) {
       }
       obj4 = {
         accessibilityLabel: stringResult,
-        icon: stateFromStores(stateFromStores ? 12043 : 8629),
+        icon: stateFromStores(stateFromStores ? 12075 : 8662),
         onPress() {
               const obj = StageMusicActionCreators;
               return obj.updateStageMusicMuted(!stateFromStores);
@@ -275,7 +275,7 @@ let closure_36 = react.memo(function FocusedSpeakingDot() {
   let tmp16;
   let tmp9;
   const id = AuthenticationStore.getId();
-  const context = react.useContext(sharedValue(11362));
+  const context = react.useContext(sharedValue(11394));
   ({ focused, controlsSpecs } = context);
   const obj = id(1652);
   sharedValue = obj.useSharedValue(SpeakingStore.isSpeaking(id));
@@ -328,7 +328,7 @@ let closure_36 = react.memo(function FocusedSpeakingDot() {
   VoicePanelHeaderTsx5.__workletHash = 8700465895227;
   VoicePanelHeaderTsx5.__initData = tmp15;
   const animatedStyle = tmp5Result.useAnimatedStyle(VoicePanelHeaderTsx5);
-  const obj3 = { style: items5, pointerEvents: "none", children: closure_24(sharedValue(7023), obj4) };
+  const obj3 = { style: items5, pointerEvents: "none", children: closure_24(sharedValue(7056), obj4) };
   items5 = [tmp8.focusedSpeakingDotWrapper, animatedStyle];
   const View = tmp2(1652).View;
   obj4 = { style: tmp8.focusedSpeakingDot };
@@ -466,7 +466,7 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
   ({ channelType, focused, mode, safeArea, connected, isDockEnabled, dockMinimizeProgress } = context);
   let tmp5 = channelId;
   ({ guildId, controlsSpecs, scrollPosition, dockHeight, wrapperDimensions } = context);
-  let obj2 = channelId(5390);
+  let obj2 = channelId(5422);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   let obj3 = channelId(504);
   let items = [ChannelStore];
@@ -547,7 +547,7 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
   VoicePanelHeaderTsx7.__workletHash = 10422398338840;
   VoicePanelHeaderTsx7.__initData = tmp18;
   const animatedReaction = useAnimatedReaction(VoicePanelHeaderTsx6, VoicePanelHeaderTsx7);
-  const tmp5Result = tmp5(5724);
+  const tmp5Result = tmp5(5756);
   const token = tmp5Result.useToken(nativeDefault.modules.mobile.VOICE_PANEL_GUTTER);
   const items9 = [closure_40, isDockEnabled, , , , , , , , ];
   const useDerivedValue = tmp5(1652).useDerivedValue;
@@ -657,7 +657,7 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
   const items13 = [closure_42, , ];
   const useAnimatedStyle = tmp5(1652).useAnimatedStyle;
   tmp5(1652);
-  items13[1] = tmp5(11369).BASE_VOICE_PANEL_HEADER_HEIGHT;
+  items13[1] = tmp5(11401).BASE_VOICE_PANEL_HEADER_HEIGHT;
   items13[2] = derivedValue2;
   c0 = undefined;
   importDefault = undefined;
@@ -684,9 +684,9 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
   items15[6] = tmp24;
   items15[7] = connected;
   items15[8] = derivedValue2;
-  items15[9] = tmp5(5370).withTiming;
+  items15[9] = tmp5(5402).withTiming;
   items15[10] = closure_26;
-  items15[11] = tmp5(5761).withSpring;
+  items15[11] = tmp5(5793).withSpring;
   items15[12] = derivedValue;
   items15[13] = wrapperOffset;
   items15[14] = closure_18;
@@ -802,10 +802,10 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
   items21[1] = calculateVoicePanelHeaderSpecsDefault;
   items21[2] = safeArea;
   items21[3] = token;
-  items21[4] = tmp5(5370).withTiming;
+  items21[4] = tmp5(5402).withTiming;
   items21[5] = derivedValue1;
   items21[6] = tmp58;
-  items21[7] = tmp5(5761).withSpring;
+  items21[7] = tmp5(5793).withSpring;
   items21[8] = MODE_CHANGE_PHYSICS;
   c0 = undefined;
   importDefault = undefined;
@@ -874,14 +874,14 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
     flag = false;
   }
   if (channelType !== tmp5(1093).ChannelTypes.GUILD_STAGE_VOICE) {
-    flag = treatment === tmp5(19614).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT;
+    flag = treatment === tmp5(19652).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT;
   }
-  const tmp5Result24 = tmp5(19582);
+  const tmp5Result24 = tmp5(19620);
   let canInviteMembers = tmp5Result24.useCanInviteMembers(channelId);
-  const tmp5Result25 = tmp5(19540);
+  const tmp5Result25 = tmp5(19578);
   const inviteMembersCallback = tmp5Result25.useInviteMembersCallback(channelId);
   const tmp102 = useVoicePanelNavArrowPressedDefault();
-  const tmp5Result26 = tmp5(7070);
+  const tmp5Result26 = tmp5(7103);
   tmp5Result26.useNavigatorBackPressHandler(tmp102);
   if (null != tmp13) {
     DOWN = constants.LEFT;
@@ -979,11 +979,11 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
     items = [{ rotateZ: str }];
     return obj;
   }, items27);
-  const tmp5Result28 = tmp5(9364);
+  const tmp5Result28 = tmp5(9397);
   const isSecureFramesUIEnabled = tmp5Result28.useIsSecureFramesUIEnabled({ channelId });
   let tmp115 = null;
-  const useIsUserSecureFramesVerified = tmp5(9326).useIsUserSecureFramesVerified;
-  tmp5(9326);
+  const useIsUserSecureFramesVerified = tmp5(9359).useIsUserSecureFramesVerified;
+  tmp5(9359);
   if (tmp13 === ParticipantTypes.USER) {
     tmp115 = null;
     if (null != tmp11) {
@@ -992,8 +992,8 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
   }
   const isUserSecureFramesVerified = useIsUserSecureFramesVerified({ userId: tmp115, channelId });
   let tmp118 = null;
-  const useIsStreamSecureFramesVerified = tmp5(9326).useIsStreamSecureFramesVerified;
-  tmp5(9326);
+  const useIsStreamSecureFramesVerified = tmp5(9359).useIsStreamSecureFramesVerified;
+  tmp5(9359);
   if (tmp13 === ParticipantTypes.STREAM) {
     tmp118 = null;
     if (null != tmp11) {
@@ -1008,7 +1008,7 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
     }
   }
   let ONYX;
-  const ThemeContextProvider = tmp5(5199).ThemeContextProvider;
+  const ThemeContextProvider = tmp5(5231).ThemeContextProvider;
   if (tmp119Result12) {
     ONYX = ThemeTypes.ONYX;
   }
@@ -1063,7 +1063,7 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
     tmp119Result8 = null;
     if (flag2) {
       const obj18 = { size: "xs", color: nativeDefault.colors.TEXT_SUBTLE, style: tmp.shieldIconMargin };
-      const ShieldLockIcon = tmp5(14975).ShieldLockIcon;
+      const ShieldLockIcon = tmp5(15007).ShieldLockIcon;
       tmp119Result8 = tmp119(ShieldLockIcon, obj18);
     }
   }

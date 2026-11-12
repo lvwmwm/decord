@@ -1,19 +1,19 @@
-// Module ID: 17851
-// Function ID: 17852
+// Module ID: 17889
+// Function ID: 17890
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1113, 5140, 575, 10102, 12, 5200, 7038, 17330, 7128, 2]
+// Dependencies: [32, 19, 21, 1113, 5170, 575, 5196, 12, 5232, 7071, 17367, 7161, 2]
 // Exports: default
 
-// Module 17851 (AppIconRow)
+// Module 17889 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import react_native from "react-native" /* 5200 */;
-import AppIconTypes from "AppIconTypes" /* 10102 */;
+import AppIconTypes from "AppIconTypes" /* 5196 */;
+import react_native from "react-native" /* 5232 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -93,7 +93,7 @@ export default function AppIconRow(arg0) {
       accessibilityState,
       trailing: null
     };
-    const TableRow = tmp3(7038).TableRow;
+    const TableRow = tmp3(7071).TableRow;
     if (currentAppIcon !== id) {
       let tmp11Result2;
       if (isPremium) {
@@ -103,6 +103,6 @@ export default function AppIconRow(arg0) {
       tmp11Result = tmp11(TableRow, obj2, id);
     }
     const obj4 = { selected: currentAppIcon === id };
-    tmp11Result2 = tmp11(tmp3(7128).FormRadio, obj4);
+    tmp11Result2 = tmp11(tmp3(7161).FormRadio, obj4);
   }
 };

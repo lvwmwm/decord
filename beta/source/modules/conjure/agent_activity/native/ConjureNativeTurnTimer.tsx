@@ -1,16 +1,16 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 13026
+// Function ID: 13027
 // Name: ConjureNativeTurnTimer
-// Dependencies: [19, 21, 5140, 12995, 5751, 12264, 2]
+// Dependencies: [19, 21, 5170, 13027, 5783, 12296, 2]
 // Exports: default
 
-// Module 12994 (ConjureNativeTurnTimer)
+// Module 13026 (ConjureNativeTurnTimer)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ConjureDuration from "ConjureDuration" /* 12264 */;
-import useConjureElapsedMs from "useConjureElapsedMs" /* 12995 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ConjureDuration from "ConjureDuration" /* 12296 */;
+import useConjureElapsedMs from "useConjureElapsedMs" /* 13027 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

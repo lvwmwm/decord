@@ -1,21 +1,21 @@
-// Module ID: 8673
-// Function ID: 8674
+// Module ID: 8706
+// Function ID: 8707
 // Name: PlatformMarkupRules
-// Dependencies: [17, 8674, 8750, 2149, 1113, 5086, 2067, 8668, 6175, 1411, 6176, 6188, 2]
+// Dependencies: [17, 8707, 8783, 2149, 1113, 5116, 2067, 8701, 6207, 1411, 6208, 6220, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
-// Module 8673 (PlatformMarkupRules)
+// Module 8706 (PlatformMarkupRules)
 import react_native from "react-native" /* 17 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import _modDef2067 from "module_2067" /* 2067 */;
 import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2149 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5086 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 6175 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 6176 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 6188 */;
-import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 8668 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
-import useGameMentionData from "useGameMentionData" /* 8750 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5116 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 6207 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 6208 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 6220 */;
+import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 8701 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8707 */;
+import useGameMentionData from "useGameMentionData" /* 8783 */;
 import size from "module_2" /* 2 */;
 
 let resolveAssetSource;
@@ -23,7 +23,7 @@ let resolveAssetSource;
 let obj2;
 let obj3;
 let obj4;
-const f94585 = (type) => {
+const f94695 = (type) => {
   let uri;
   let tmp = type;
   if ("channel" === type.type) {
@@ -114,7 +114,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f94585);
+          mapped = arr2.map(f94695);
         }
       }
       const inContent = parsed.inContent;
@@ -128,7 +128,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f94585);
+          mapped1 = arr4.map(f94695);
         }
       }
       return obj;
@@ -175,7 +175,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f94585);
+          mapped = arr2.map(f94695);
         }
       }
       const inContent = parsed.inContent;
@@ -189,7 +189,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f94585);
+          mapped1 = arr4.map(f94695);
         }
       }
       return obj;
@@ -214,7 +214,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f94585);
+          mapped = arr2.map(f94695);
         }
       }
       const inContent = parsed.inContent;
@@ -228,7 +228,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f94585);
+          mapped1 = arr4.map(f94695);
         }
       }
       return obj;
@@ -306,7 +306,7 @@ export function decorateWithIcon(content) {
         const items = [content];
         arr2 = items;
       }
-      mapped = arr2.map(f94585);
+      mapped = arr2.map(f94695);
     }
   }
   return mapped;

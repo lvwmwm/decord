@@ -1,21 +1,21 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17535
+// Function ID: 17536
 // Name: QuestDockBountySmokeLayer
-// Dependencies: [32, 19, 17, 5141, 21, 1377, 17499, 17500, 1493, 1627, 17392, 5842, 504, 17501, 8947, 17502, 17476, 17503, 2]
+// Dependencies: [32, 19, 17, 5171, 21, 1377, 17536, 17537, 1493, 1627, 17429, 5874, 504, 17538, 8980, 17539, 17513, 17540, 2]
 // Exports: getQuestDockBountySmokeCollapsedPlaceholderUrl, useSmokeArtSize
 
-// Module 17498 (QuestDockBountySmokeLayer)
+// Module 17535 (QuestDockBountySmokeLayer)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import QuestDockUtils from "QuestDockUtils" /* 17392 */;
-import reactDefault from "react" /* 17476 */;
-import _modDef17499 from "module_17499" /* 17499 */;
-import _modDef17500 from "module_17500" /* 17500 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17501 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import QuestDockUtils from "QuestDockUtils" /* 17429 */;
+import reactDefault from "react" /* 17513 */;
+import _modDef17536 from "module_17536" /* 17536 */;
+import _modDef17537 from "module_17537" /* 17537 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17538 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,11 +27,11 @@ let metroImportAll;
 let metroImportDefault;
 let obj3;
 let tmp4;
-const _modDef17502 = tmp4(17502);
+const _modDef17539 = tmp4(17539);
 function QuestDockBountySmokePlaceholder() {
   let obj2;
   const obj = { source: obj2, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-  obj2 = { uri: _modDef17500 };
+  obj2 = { uri: _modDef17537 };
   const tmp = FastImageDefault;
   return metroImportDefault(tmp, obj);
 }
@@ -71,8 +71,8 @@ function QuestDockBountySmokeLayerIOS(paused) {
   const tmp16 = closure_8;
   if (!stateFromStores) {
     const obj3 = { style: tmp7 ? video.video : video.hiddenVideo, source: obj4, resizeMode: "cover", paused: flag, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onReadyForDisplay: callback, onError: tmp14 };
-    obj4 = { uri: _modDef17502 };
-    const VideoComponent = tmp(8947).VideoComponent;
+    obj4 = { uri: _modDef17539 };
+    const VideoComponent = tmp(8980).VideoComponent;
     const tmp18 = closure_7;
     if (!flag) {
       flag = !tmp5;
@@ -141,7 +141,7 @@ function QuestDockBountySmokeLayerAndroidAnimated(paused) {
   if (!stateFromStores) {
     tmp4Result = null;
     if (tmp11) {
-      tmp4Result = tmp4(17503);
+      tmp4Result = tmp4(17540);
     }
   }
   const tmp6Result = tmp6(react.useState(tmp4Result), 2);
@@ -175,7 +175,7 @@ function QuestDockBountySmokeLayerAndroidAnimated(paused) {
   if (tmp28Result) {
     const obj3 = { style: video.video, source: obj4, resizeMode: "cover", paused: flag, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onLoad: callback, onError: tmp24 };
     obj4 = { uri: tmp4Result };
-    const VideoComponent = tmp(8947).VideoComponent;
+    const VideoComponent = tmp(8980).VideoComponent;
     const tmp28 = closure_7;
     if (!flag) {
       flag = !tmp5;
@@ -186,7 +186,7 @@ function QuestDockBountySmokeLayerAndroidAnimated(paused) {
   let tmp30 = !tmp8;
   if (tmp30) {
     const obj5 = { source: obj6, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-    obj6 = { uri: _modDef17499 };
+    obj6 = { uri: _modDef17536 };
     const tmp4Result2 = FastImageDefault;
     tmp30 = closure_7(tmp4Result2, obj5);
   }
@@ -238,9 +238,9 @@ export function getQuestDockBountySmokeCollapsedPlaceholderUrl() {
   let tmp2Result;
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    tmp2Result = tmp2(17499);
+    tmp2Result = tmp2(17536);
   } else {
-    tmp2Result = tmp2(17500);
+    tmp2Result = tmp2(17537);
   }
   return tmp2Result;
 }

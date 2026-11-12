@@ -1,11 +1,11 @@
-// Module ID: 19263
-// Function ID: 19264
+// Module ID: 19301
+// Function ID: 19302
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 13511, 13513, 1113, 4026, 6096, 12396, 6159, 5751, 6092, 2]
+// Dependencies: [5, 32, 19, 21, 13543, 13545, 1113, 4026, 6128, 12428, 6191, 5783, 6124, 2]
 // Exports: default
 
-// Module 19263 (openConjureDeleteAppChannelAlert)
-import useAlertStore from "useAlertStore" /* 6092 */;
+// Module 19301 (openConjureDeleteAppChannelAlert)
+import useAlertStore from "useAlertStore" /* 6124 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

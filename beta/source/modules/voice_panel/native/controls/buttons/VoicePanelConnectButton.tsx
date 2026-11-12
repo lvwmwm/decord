@@ -1,23 +1,23 @@
-// Module ID: 19712
-// Function ID: 19713
+// Module ID: 19750
+// Function ID: 19751
 // Name: VoicePanelConnectButton
-// Dependencies: [19, 4989, 21, 5140, 575, 11362, 19628, 504, 1113, 6789, 6808, 8019, 6761, 6092, 19713, 19716, 19717, 14982, 19711, 5751, 2]
+// Dependencies: [19, 5019, 21, 5170, 575, 11394, 19666, 504, 1113, 6821, 6841, 8052, 6793, 6124, 19751, 19754, 19755, 15014, 19749, 5783, 2]
 // Exports: default
 
-// Module 19712 (VoicePanelConnectButton)
+// Module 19750 (VoicePanelConnectButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import useAlertStore from "useAlertStore" /* 6092 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8019 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14982 */;
-import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 19713 */;
-import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 19716 */;
-import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 19717 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import useAlertStore from "useAlertStore" /* 6124 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6793 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8052 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 15014 */;
+import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 19751 */;
+import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 19754 */;
+import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 19755 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import createStyles from "createStyles" /* 5140 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

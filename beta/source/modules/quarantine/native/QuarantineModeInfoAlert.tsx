@@ -1,20 +1,20 @@
-// Module ID: 6960
-// Function ID: 6961
+// Module ID: 6993
+// Function ID: 6994
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 1072, 21, 5140, 6778, 575, 6162, 1187, 1113, 5751, 2]
+// Dependencies: [19, 1072, 21, 5170, 6810, 575, 6194, 1187, 1113, 5783, 2]
 // Exports: default
 
-// Module 6960 (QuarantineModeInfoAlert)
+// Module 6993 (QuarantineModeInfoAlert)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import AlertDefault from "Alert" /* 6162 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import AlertDefault from "Alert" /* 6194 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
-import TextStyles from "TextStyles" /* 6778 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import TextStyles from "TextStyles" /* 6810 */;
 import size from "module_2" /* 2 */;
 
 let c3;

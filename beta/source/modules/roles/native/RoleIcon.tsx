@@ -1,13 +1,13 @@
-// Module ID: 7434
-// Function ID: 7435
+// Module ID: 7467
+// Function ID: 7468
 // Name: RoleIcon
-// Dependencies: [19, 21, 1377, 5842, 5751, 2]
+// Dependencies: [19, 21, 1377, 5874, 5783, 2]
 // Exports: default
 
-// Module 7434 (RoleIcon)
+// Module 7467 (RoleIcon)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import FastImageDefault from "FastImage" /* 5842 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;

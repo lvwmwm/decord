@@ -1,14 +1,14 @@
-// Module ID: 13931
-// Function ID: 13932
+// Module ID: 13963
+// Function ID: 13964
 // Name: useFinalizeTraitTabItems
-// Dependencies: [32, 19, 13668, 6566, 504, 6244, 6243, 2]
+// Dependencies: [32, 19, 13700, 6598, 504, 6276, 6275, 2]
 // Exports: default, useFinalizeMoreTabOption
 
-// Module 13931 (useFinalizeTraitTabItems)
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6566 */;
+// Module 13963 (useFinalizeTraitTabItems)
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6598 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
+import CheckpointStore from "CheckpointStore" /* 13700 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ export default function useFinalizeTraitTabItems(arg0, arg1) {
     }
     found = items.filter((item) => item !== closure_1_0(closure_1_1[3]).CheckpointCustomizationOption.OUTFIT_COLOR);
   });
-  let tmp3 = arg0 === require("CheckpointCustomizationUtils").CheckpointCustomizationOption.OUTFIT_COLOR && !stateFromStoresArray.includes(tmp(6566).CheckpointCustomizationOption.OUTFIT_COLOR);
+  let tmp3 = arg0 === require("CheckpointCustomizationUtils").CheckpointCustomizationOption.OUTFIT_COLOR && !stateFromStoresArray.includes(tmp(6598).CheckpointCustomizationOption.OUTFIT_COLOR);
   dependencyMap = tmp3;
   const items1 = [tmp3, arg1];
   const effect = react.useEffect(() => {

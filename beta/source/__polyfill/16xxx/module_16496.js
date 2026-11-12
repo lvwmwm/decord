@@ -1,14 +1,14 @@
 // Module ID: 16496
 // Function ID: 16497
-// Dependencies: [16444, 16445]
+// Dependencies: [16480, 16497]
 
 // Module 16496
-import _mod16444 from "module_16444" /* 16444 */;
-import _mod16445 from "module_16445" /* 16445 */;
+import _mod16480 from "module_16480" /* 16480 */;
+import _mod16497 from "module_16497" /* 16497 */;
 
-const f68448 = () => 42 !== Object.defineProperty(() => {
+let closure_2 = _mod16480({}.hasOwnProperty);
+const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
+  return closure_2(_mod16497(arg0), arg1);
+});
 
-}, "prototype", { value: 42, writable: false }).prototype;
-_mod16444 && _mod16445(f68448);
-
-export default _mod16444 && _mod16445(f68448);
+export default tmp;

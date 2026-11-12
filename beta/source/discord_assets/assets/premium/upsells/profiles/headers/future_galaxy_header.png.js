@@ -1,8 +1,8 @@
-// Module ID: 16846
-// Function ID: 16847
+// Module ID: 16880
+// Function ID: 16881
 // Dependencies: [2]
 
-// Module 16846
+// Module 16880
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/upsells/profiles/headers/future_galaxy_header.png.js");

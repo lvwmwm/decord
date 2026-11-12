@@ -1,14 +1,14 @@
-// Module ID: 13020
-// Function ID: 13021
+// Module ID: 13052
+// Function ID: 13053
 // Name: FiltersHorizontalIcon
-// Dependencies: [19, 21, 575, 5841, 13021, 2]
+// Dependencies: [19, 21, 575, 5873, 13053, 2]
 // Exports: FiltersHorizontalIcon
 
-// Module 13020 (FiltersHorizontalIcon)
+// Module 13052 (FiltersHorizontalIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 13021 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 13053 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

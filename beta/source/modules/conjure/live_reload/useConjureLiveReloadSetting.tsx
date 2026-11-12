@@ -1,14 +1,14 @@
-// Module ID: 12295
-// Function ID: 12296
+// Module ID: 12327
+// Function ID: 12328
 // Name: useConjureLiveReloadSetting
-// Dependencies: [32, 19, 10983, 504, 12296, 11022, 12297, 2]
+// Dependencies: [32, 19, 11015, 504, 12328, 11054, 12329, 2]
 // Exports: useConjureLiveReloadSetting
 
-// Module 12295 (useConjureLiveReloadSetting)
-import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 11022 */;
+// Module 12327 (useConjureLiveReloadSetting)
+import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 11054 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 10983 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 11015 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

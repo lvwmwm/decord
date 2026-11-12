@@ -1,21 +1,21 @@
-// Module ID: 12292
-// Function ID: 12293
+// Module ID: 12324
+// Function ID: 12325
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10969, 10985, 6899, 21, 4026, 5140, 575, 504, 12293, 12306, 12329, 7426, 1113, 7382, 7427, 6159, 12331, 12334, 12336, 5751, 7015, 5758, 9069, 9059, 12342, 9294, 2]
+// Dependencies: [5, 32, 19, 17, 11001, 11017, 6932, 21, 4026, 5170, 575, 504, 12325, 12338, 12361, 7459, 1113, 7415, 7460, 6191, 12363, 12366, 12368, 5783, 7048, 5790, 9102, 9092, 12374, 9327, 2]
 // Exports: default
 
-// Module 12292 (ConjureSettingsSheet)
+// Module 12324 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10969 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10985 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6899 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 11017 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6932 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

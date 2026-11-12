@@ -1,15 +1,15 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13477
+// Function ID: 13478
 // Name: GameOrganizationJoinModal
-// Dependencies: [19, 13446, 21, 1627, 7231, 5714, 7064, 13447, 13453, 13457, 13458, 1113, 2]
+// Dependencies: [19, 13478, 21, 1627, 7264, 5746, 7097, 13479, 13485, 13489, 13490, 1113, 2]
 // Exports: default
 
-// Module 13445 (GameOrganizationJoinModal)
+// Module 13477 (GameOrganizationJoinModal)
 import Fragment from "Fragment" /* 21 */;
-import NavigatorConstants from "NavigatorConstants" /* 5714 */;
-import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import NavigatorConstants from "NavigatorConstants" /* 5746 */;
+import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13446 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13478 */;
 import size from "module_2" /* 2 */;
 
 const GameOrganizationJoinScenes = GameOrganizationJoinModalConstants.GameOrganizationJoinScenes;
@@ -23,7 +23,7 @@ export default function GameOrganizationJoinModal(code) {
   code = code.code;
   let top;
   top = top(1627)().top;
-  let obj = code(7231);
+  let obj = code(7264);
   items = [code, top];
   const navigatorScreens = obj.useNavigatorScreens(() => {
     let obj10;
@@ -86,7 +86,7 @@ export default function GameOrganizationJoinModal(code) {
     obj10 = NavigatorHeader;
     return obj3;
   }, items);
-  const StepModal = code(13458).StepModal;
+  const StepModal = code(13490).StepModal;
   const intl = code(1113).intl;
   return <StepModal screens={navigatorScreens} initialRouteName={GameOrganizationJoinScenes.VIEW} steps={items} headerBackTitle={intl.string(code(1113).t["13/7kX"])} />;
 };

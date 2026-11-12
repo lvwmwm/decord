@@ -1,10 +1,10 @@
-// Module ID: 19644
-// Function ID: 19645
+// Module ID: 19682
+// Function ID: 19683
 // Name: getRandomNumberInRange
 // Dependencies: [2]
 // Exports: default
 
-// Module 19644 (getRandomNumberInRange)
+// Module 19682 (getRandomNumberInRange)
 import size from "module_2" /* 2 */;
 
 let tmp2;

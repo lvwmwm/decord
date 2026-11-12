@@ -1,10 +1,10 @@
-// Module ID: 7535
-// Function ID: 7536
+// Module ID: 7568
+// Function ID: 7569
 // Name: SensitiveMediaRedactionSettingUtils
 // Dependencies: [1196, 12, 2]
 // Exports: areSettingsEqual, getShouldObscureForSetting
 
-// Module 7535 (SensitiveMediaRedactionSettingUtils)
+// Module 7568 (SensitiveMediaRedactionSettingUtils)
 import _mod12 from "module_12" /* 12 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 16951
-// Function ID: 16952
+// Module ID: 16985
+// Function ID: 16986
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1499, 6788, 6092, 5836, 1113, 6096, 3252, 6096, 2]
+// Dependencies: [5, 21, 1499, 6820, 6124, 5868, 1113, 6128, 3252, 6128, 2]
 // Exports: default
 
-// Module 16951 (SettingsAgeGroupResetAlert)
+// Module 16985 (SettingsAgeGroupResetAlert)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

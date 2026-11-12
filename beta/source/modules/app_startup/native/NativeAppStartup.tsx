@@ -1,10 +1,10 @@
-// Module ID: 19758
-// Function ID: 19759
+// Module ID: 19796
+// Function ID: 19797
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 19759, 19761, 17, 19784, 2187, 5043, 2117, 7716, 19785, 1072, 9, 3, 20521, 1377, 7747, 20522, 10, 20524, 20525, 13432, 504, 1259, 1244, 20526, 2121, 20527, 16708, 572, 20528, 7730, 1242, 20529, 20530, 11040, 510, 1252, 16337, 5035, 9922, 9855, 2198, 1152, 20531, 2118, 8977, 20533, 16534, 7891, 20550, 20551, 20552, 9920, 7743, 7731, 5316, 1192, 5141, 16584, 19433, 19434, 1098, 16334, 7715, 16591, 16605, 6941, 20553, 5420, 7717, 7731, 2]
+// Dependencies: [32, 5, 19797, 19799, 17, 19822, 2187, 5073, 2117, 7749, 19823, 1072, 9, 3, 20559, 1377, 7780, 20560, 10, 20562, 20563, 13464, 504, 1259, 1244, 20564, 2121, 20565, 16740, 572, 20566, 7763, 1242, 20567, 20568, 11072, 510, 1252, 16369, 5065, 9955, 9888, 2198, 1152, 20569, 2118, 9010, 20571, 16566, 7924, 20588, 20589, 20590, 9953, 7776, 7764, 5348, 1192, 5171, 16616, 19471, 19472, 1098, 16366, 7748, 16623, 16637, 6974, 20591, 5452, 7750, 7764, 2]
 // Exports: init, initHeadlessTask
 
-// Module 19758 (NativeAppStartup)
+// Module 19796 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
@@ -14,22 +14,22 @@ import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2187 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 5035 */;
-import timeRequireDefault from "timeRequire" /* 7747 */;
-import Future from "Future" /* 9855 */;
-import react_nativeDefault from "react-native" /* 16337 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20524 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20525 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 5065 */;
+import timeRequireDefault from "timeRequire" /* 7780 */;
+import Future from "Future" /* 9888 */;
+import react_nativeDefault from "react-native" /* 16369 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20562 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20563 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_19759 from "module_19759" /* 19759 */;
-import superagentPatch from "superagentPatch" /* 19761 */;
+import module_19797 from "module_19797" /* 19797 */;
+import superagentPatch from "superagentPatch" /* 19799 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19784 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19822 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7716 */;
-import ManagerRegistry from "ManagerRegistry" /* 19785 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7749 */;
+import ManagerRegistry from "ManagerRegistry" /* 19823 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f135584 = () => _true(handleNotification[33]);
+  const f135702 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f135584).default(arg0, false);
+      timeRequireDefault("receiveNotification", f135702).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f135584).default(arg0, false);
+        timeRequireDefault("receiveNotification", f135702).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -534,7 +534,7 @@ obj = function _initializeIntl() {
               tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {

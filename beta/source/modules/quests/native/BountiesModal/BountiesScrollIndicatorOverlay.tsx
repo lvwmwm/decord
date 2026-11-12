@@ -1,20 +1,20 @@
-// Module ID: 17279
-// Function ID: 17280
+// Module ID: 17313
+// Function ID: 17314
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 5373, 5140, 575, 1652, 5370, 1705, 5715, 17280, 5751, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5405, 5170, 575, 1652, 5402, 1705, 5747, 17314, 5783, 1113, 2]
 // Exports: default
 
-// Module 17279 (BountiesScrollIndicatorOverlay)
+// Module 17313 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import timingPresets from "timingPresets" /* 5373 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17280 */;
+import timingPresets from "timingPresets" /* 5405 */;
+import LinearGradientDefault from "LinearGradient" /* 5747 */;
+import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17314 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,7 +90,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   let items = [enabled];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f142798 = () => {
+    const f142914 = () => {
       importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -98,13 +98,13 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
       if (closure_0) {
         num = closure_2_9;
       }
-      enabled = _setTimeout(f142798, num);
+      enabled = _setTimeout(f142914, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f142798, closure_1_9);
+      timeout = setTimeout(f142914, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);
@@ -263,7 +263,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   const View3 = _modDef1652.View;
   items12 = [closure_6(BountiesScrollIndicatorAnimationDefault, { visible: enabled && first, isFadingInContent: first1 }), ];
   const obj6 = { variant: "body-sm/semibold", color: "text-default", style: tmp.scrollIndicatorText, children: intl.string(require("intl").t.eafsh4) };
-  const Text = tmp18(5751).Text;
+  const Text = tmp18(5783).Text;
   intl = tmp18(1113).intl;
   items12[1] = closure_6(Text, obj6);
   items9[1] = closure_7(View3, obj5);

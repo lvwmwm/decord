@@ -1,10 +1,10 @@
-// Module ID: 5061
-// Function ID: 5062
+// Module ID: 5091
+// Function ID: 5092
 // Name: embeddedActivityLocationUtils
 // Dependencies: [2]
 // Exports: getEmbeddedActivityLocationChannelId, getEmbeddedActivityLocationGuildId
 
-// Module 5061 (embeddedActivityLocationUtils)
+// Module 5091 (embeddedActivityLocationUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/embeddedActivityLocationUtils.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 19940
-// Function ID: 19941
+// Module ID: 19978
+// Function ID: 19979
 // Name: NativeOnDemandResourceManager
-// Dependencies: [5, 2130, 2117, 1072, 7350, 19941, 510, 6047, 2]
+// Dependencies: [5, 2130, 2117, 1072, 7383, 19979, 510, 6079, 2]
 
-// Module 19940 (NativeOnDemandResourceManager)
+// Module 19978 (NativeOnDemandResourceManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6047 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6079 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;

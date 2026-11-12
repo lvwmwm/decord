@@ -1,21 +1,21 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 16071
+// Function ID: 16072
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 1652, 5715, 1187, 5140, 575, 5370, 5137, 1113, 11243, 8290, 2]
+// Dependencies: [19, 17, 21, 1652, 5747, 1187, 5170, 575, 5402, 5167, 1113, 11275, 8323, 2]
 // Exports: default
 
-// Module 16039 (ShareAttachments)
+// Module 16071 (ShareAttachments)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import ColorUtils from "ColorUtils" /* 5137 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8290 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11243 */;
+import ColorUtils from "ColorUtils" /* 5167 */;
+import LinearGradientDefault from "LinearGradient" /* 5747 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8323 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11275 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

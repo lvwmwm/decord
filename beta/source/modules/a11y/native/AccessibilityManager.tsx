@@ -1,21 +1,21 @@
-// Module ID: 16580
-// Function ID: 16581
+// Module ID: 16612
+// Function ID: 16613
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 5141, 1072, 1195, 16581, 572, 1252, 16584, 11367, 16582, 5198, 5147, 2]
+// Dependencies: [5, 17, 5171, 1072, 1195, 16613, 572, 1252, 16616, 11399, 16614, 5230, 5177, 2]
 
-// Module 16580 (AccessibilityManager)
+// Module 16612 (AccessibilityManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5198 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11367 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 16581 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 16582 */;
-import react_native from "react-native" /* 16584 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5230 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11399 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 16613 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 16614 */;
+import react_native from "react-native" /* 16616 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native2 from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, set;

@@ -1,17 +1,17 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14919
+// Function ID: 14920
 // Name: CrunchyrollLinkPreConnect
-// Dependencies: [19, 14884, 1072, 8983, 21, 5140, 1499, 9824, 14888, 1113, 2]
+// Dependencies: [19, 14916, 1072, 9016, 21, 5170, 1499, 9857, 14920, 1113, 2]
 // Exports: default
 
-// Module 14887 (CrunchyrollLinkPreConnect)
+// Module 14919 (CrunchyrollLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8983 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14884 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14888 */;
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 9016 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14916 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14920 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -35,7 +35,7 @@ export default function CrunchyrollLinkPreConnect() {
   const callback1 = react.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  const TwoWayLinkPreConnect = navigation(9824).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(9857).TwoWayLinkPreConnect;
   const intl = navigation(1113).intl;
   const intl2 = navigation(1113).intl;
   return <TwoWayLinkPreConnect platformType={PlatformTypes.CRUNCHYROLL} onError={callback1} onNext={callback} img={AssetRegistryDefault} imgStyle={tmp.image} title={intl.string(navigation(1113).t.siPkNp)} body={intl2.string(navigation(1113).t.oS4NEH)} redirectDestination={redirectDestination} />;

@@ -1,12 +1,12 @@
-// Module ID: 5842
-// Function ID: 5843
+// Module ID: 5874
+// Function ID: 5875
 // Name: FastImage
-// Dependencies: [19, 17, 21, 1377, 5843, 2]
+// Dependencies: [19, 17, 21, 1377, 5875, 2]
 
-// Module 5842 (FastImage)
+// Module 5874 (FastImage)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5843 */;
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5875 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size_mod from "module_2" /* 2 */;

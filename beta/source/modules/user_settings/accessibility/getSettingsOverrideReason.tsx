@@ -1,14 +1,14 @@
-// Module ID: 17644
-// Function ID: 17645
+// Module ID: 17681
+// Function ID: 17682
 // Name: getSettingsOverrideReason
-// Dependencies: [4966, 1082, 1113, 4187, 504, 2]
+// Dependencies: [4996, 1082, 1113, 4187, 504, 2]
 // Exports: default, useIsSettingLockedByOverride, useSettingsOverrideReason
 
-// Module 17644 (getSettingsOverrideReason)
+// Module 17681 (getSettingsOverrideReason)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef4187 from "module_4187" /* 4187 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4966 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4996 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

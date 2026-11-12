@@ -1,17 +1,17 @@
-// Module ID: 7035
-// Function ID: 7036
+// Module ID: 7068
+// Function ID: 7069
 // Name: TableRowDivider
-// Dependencies: [19, 17, 7036, 21, 5140, 575, 5724, 2]
+// Dependencies: [19, 17, 7069, 21, 5170, 575, 5756, 2]
 // Exports: TableRowDivider
 
-// Module 7035 (TableRowDivider)
+// Module 7068 (TableRowDivider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5724 */;
-import TableRowConstants from "TableRowConstants" /* 7036 */;
+import useToken from "useToken" /* 5756 */;
+import TableRowConstants from "TableRowConstants" /* 7069 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

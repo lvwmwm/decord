@@ -1,57 +1,22 @@
 // Module ID: 16427
 // Function ID: 16428
-// Dependencies: [16344, 16428]
-// Exports: getSupportedCurrencies
+// Dependencies: [16417, 16420]
+// Exports: LookupSupportedLocales
 
 // Module 16427
-import _mod16344 from "module_16344" /* 16344 */;
-import currencies2 from "currencies" /* 16428 */;
+import _mod16417 from "module_16417" /* 16417 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 16420 */;
 
-function isSupportedCurrency(arr3, locale) {
-  let str = locale;
-  if (undefined === locale) {
-    str = "en";
-  }
-  try {
-    const obj = { style: "currency", currencyDisplay: "name", currency: arr3 };
-    const memoizedNumberFormat = _mod16344.createMemoizedNumberFormat(str, obj);
-    const str2 = memoizedNumberFormat.format(123);
-    if (str2.substring(0, 3) !== arr3) {
-      if (str2.substring(str2.length - 3) !== arr3) {
-        return true;
-      }
-    }
-    return false;
-  } catch (err) {
-  }
-}
 
-export function getSupportedCurrencies(locale) {
+export function LookupSupportedLocales(arg0, arg1) {
   let num;
   const items = [];
-  const currencies = currencies2.currencies;
-  for (let num = 0; num < currencies.length; num = num + 1) {
-    let arr3 = currencies[num];
-    if (3 === arr3.length) {
-      if (isSupportedCurrency(arr3, locale)) {
-        let arr = items.push(arr3);
-      }
-    } else if (5 === arr3.length) {
-      if ("~" === arr3[3]) {
-        let indexOf = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
-        let index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[2]);
-        let indexOf2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
-        let index1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[4]);
-        if (index <= index1) {
-          do {
-            let sum = arr3.substring(0, 2) + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[index];
-            if (isSupportedCurrency(sum, locale)) {
-              let arr2 = items.push(sum);
-            }
-            index = index + 1;
-          } while (index <= index1);
-        }
-      }
+  for (let num = 0; num < arg1.length; num = num + 1) {
+    let str = arg1[num];
+    let replaced = str.replace(_mod16417.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    if (BestAvailableLocaleResult) {
+      let arr = items.push(BestAvailableLocaleResult);
     }
   }
   return items;

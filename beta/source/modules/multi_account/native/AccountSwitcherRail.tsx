@@ -1,30 +1,30 @@
-// Module ID: 19179
-// Function ID: 19180
+// Module ID: 19217
+// Function ID: 19218
 // Name: AccountSwitcherRail
-// Dependencies: [19, 17, 1404, 5195, 1385, 14211, 15815, 14212, 1072, 21, 575, 5140, 5200, 5194, 1113, 5842, 1411, 7366, 5859, 1627, 5724, 18329, 504, 18800, 1252, 7412, 14215, 5845, 7633, 9996, 2]
+// Dependencies: [19, 17, 1404, 5227, 1385, 14243, 15847, 14244, 1072, 21, 575, 5170, 5232, 5226, 1113, 5874, 1411, 7399, 5891, 1627, 5756, 18367, 504, 18838, 1252, 7445, 14247, 5877, 7666, 10029, 2]
 
-// Module 19179 (AccountSwitcherRail)
+// Module 19217 (AccountSwitcherRail)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import SettingsIcon2 from "SettingsIcon" /* 7633 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 14211 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14215 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 18800 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
+import SettingsIcon2 from "SettingsIcon" /* 7666 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 14243 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14247 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 18838 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1404 */;
-import StreamerModeStore from "StreamerModeStore" /* 5195 */;
+import StreamerModeStore from "StreamerModeStore" /* 5227 */;
 import UserStore from "UserStore" /* 1385 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15815 */;
-import Constants_mod from "Constants" /* 14212 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15847 */;
+import Constants_mod from "Constants" /* 14244 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ function AccountButton(user) {
   dependencyMap = closure_22();
   let tmp = user;
   let tmp2 = dependencyMap;
-  let obj = user(5200);
+  let obj = user(5232);
   const radioA11yNative = obj.useRadioA11yNative({ selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const tmp4 = new UserRecord(user);
@@ -125,11 +125,11 @@ function AccountButton(user) {
         items2[1] = tmp12;
         if (selected) {
           const obj4 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT, accessible: false };
-          const CheckmarkSmallIcon = tmp13(7366).CheckmarkSmallIcon;
+          const CheckmarkSmallIcon = tmp13(7399).CheckmarkSmallIcon;
           tmp3Result = tmp3(CheckmarkSmallIcon, obj4);
         } else {
           const obj5 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessible: false };
-          const CircleInformationIcon = tmp13(5859).CircleInformationIcon;
+          const CircleInformationIcon = tmp13(5891).CircleInformationIcon;
           tmp3Result = tmp3(CircleInformationIcon, obj5);
         }
         tmp3Result2 = tmp3(tmp4, obj3);
@@ -141,10 +141,10 @@ function AccountButton(user) {
     }
   };
   str = "always";
-  getUserTag = selected(5194).getUserTag;
+  getUserTag = selected(5226).getUserTag;
   const tmp6 = closure_17;
   const tmp7 = RailButton;
-  const tmp8 = selected(5194);
+  const tmp8 = selected(5226);
   if (hidePersonalInformation) {
     str = "never";
   }

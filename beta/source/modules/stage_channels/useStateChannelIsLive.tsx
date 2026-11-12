@@ -1,11 +1,11 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 8045
+// Function ID: 8046
 // Name: useStateChannelIsLive
-// Dependencies: [4994, 504, 2]
+// Dependencies: [5024, 504, 2]
 // Exports: default
 
-// Module 8012 (useStateChannelIsLive)
-import StageInstanceStore from "StageInstanceStore" /* 4994 */;
+// Module 8045 (useStateChannelIsLive)
+import StageInstanceStore from "StageInstanceStore" /* 5024 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

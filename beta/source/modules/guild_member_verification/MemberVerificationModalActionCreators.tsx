@@ -1,10 +1,10 @@
-// Module ID: 6999
-// Function ID: 7000
+// Module ID: 7032
+// Function ID: 7033
 // Name: MemberVerificationModalActionCreators
-// Dependencies: [7000, 2]
+// Dependencies: [7033, 2]
 
-// Module 6999 (MemberVerificationModalActionCreators)
-import guild_member_verification_MemberVerificationModalActionCreators from "guild_member_verification/MemberVerificationModalActionCreators" /* 7000 */;
+// Module 7032 (MemberVerificationModalActionCreators)
+import guild_member_verification_MemberVerificationModalActionCreators from "guild_member_verification/MemberVerificationModalActionCreators" /* 7033 */;
 import size from "module_2" /* 2 */;
 
 const openMemberVerificationModal = guild_member_verification_MemberVerificationModalActionCreators.default.openMemberVerificationModal;

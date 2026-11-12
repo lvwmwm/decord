@@ -1,22 +1,22 @@
-// Module ID: 5142
-// Function ID: 5143
+// Module ID: 5172
+// Function ID: 5173
 // Name: GameModeStore
-// Dependencies: [1246, 2137, 5143, 5144, 504, 1377, 572, 2]
+// Dependencies: [1246, 2137, 5173, 5174, 504, 1377, 572, 2]
 
-// Module 5142 (GameModeStore)
+// Module 5172 (GameModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GameModeConstants from "GameModeConstants" /* 5143 */;
+import GameModeConstants from "GameModeConstants" /* 5173 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import RunningGameStore from "RunningGameStore" /* 2137 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f88414 = (isLauncher) => true !== isLauncher.isLauncher;
+const f88524 = (isLauncher) => true !== isLauncher.isLauncher;
 function syncRunningGame() {
   const visibleRunningGames = RunningGameStore.getVisibleRunningGames();
-  const someResult = visibleRunningGames.some(f88414);
+  const someResult = visibleRunningGames.some(f88524);
   let flag = someResult !== c6;
   if (flag) {
     c6 = someResult;
@@ -66,7 +66,7 @@ class GameModeStore extends DeviceSettingsStore {
     const items1 = [ApexExperimentStore];
     this.syncWith(items1, syncExperimentAssignment);
     const visibleRunningGames = RunningGameStore.getVisibleRunningGames();
-    const someResult = visibleRunningGames.some(f88414);
+    const someResult = visibleRunningGames.some(f88524);
     let flag = someResult !== c6;
     if (flag) {
       c6 = someResult;

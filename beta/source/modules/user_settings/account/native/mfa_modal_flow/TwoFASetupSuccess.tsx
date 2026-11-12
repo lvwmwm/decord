@@ -1,28 +1,26 @@
-// Module ID: 16984
-// Function ID: 16985
+// Module ID: 17018
+// Function ID: 17019
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 5140, 575, 6803, 1113, 16973, 7187, 16974, 5842, 16985, 5751, 1187, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 6835, 1113, 17007, 7220, 17008, 5874, 17019, 5783, 1187, 5790, 2]
 // Exports: default
 
-// Module 16984 (TwoFASetupSuccess)
+// Module 17018 (TwoFASetupSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7187 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 16974 */;
-import AssetRegistry from "AssetRegistry" /* 16985 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7220 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 17008 */;
+import AssetRegistry from "AssetRegistry" /* 17019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
-
-let c5, c6;
 
 let metroImportAll;
 let metroImportDefault;
@@ -61,98 +59,40 @@ export default function TwoFASetupSuccess() {
   const callback = react.useCallback(() => {
     let setRegistering = function _onRegisterSuccess() {
       let obj = _asyncToGenerator(async (arg0, value) => {
-        let body;
         let c0;
         let c1;
+        let closure_2;
         let obj;
         let closure_0 = arg0;
-        if (c6 === 2) {
+        const finishRegisterWebAuthnCredential = setRegistering(closure_2_2[7]).finishRegisterWebAuthnCredential;
+        const tmp24 = setRegistering(closure_2_2[7]);
+        const intl = setRegistering(closure_2_2[8]).intl;
+        await finishRegisterWebAuthnCredential(intl.string(setRegistering(closure_2_2[8]).t["8H5RmH"]), c0, c1);
+        if (2 === c5) {
+          let c4 = 0;
+          obj(body.body.message);
+        } else if (arg0 === 1) {
+          let c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 0;
           c6 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
+          const obj6 = { value, done: true };
+          return obj6;
         } else {
-          let c4;
-          try {
-            c6 = 2;
-            if (0 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                let closure_2 = tmp;
-                c0 = undefined;
-                c1 = undefined;
-                ({ ticket: c0, credential: c1 } = closure_0);
-                c5 = 1;
-                c6 = 1;
-                return { value: "flexDirection", done: null };
-              }
-            } else if (1 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                c4 = 1;
-                const finishRegisterWebAuthnCredential = setRegistering(closure_2_2[7]).finishRegisterWebAuthnCredential;
-                const tmp24 = setRegistering(closure_2_2[7]);
-                const intl = setRegistering(closure_2_2[8]).intl;
-                c5 = 3;
-                c6 = 1;
-                const obj5 = { value: finishRegisterWebAuthnCredential(intl.string(setRegistering(closure_2_2[8]).t["8H5RmH"]), c0, c1), done: false };
-                return obj5;
-              }
-            } else {
-              if (2 === c5) {
-                c4 = 0;
-                obj(body.body.message);
-              } else if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 0;
-                c6 = 3;
-                const obj6 = { value, done: true };
-                return obj6;
-              } else {
-                obj = setError(closure_2_2[9]);
-                obj.close();
-                c4 = 0;
-              }
-              c6 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          } catch (tmp14) {
-            body = tmp14;
-            if (0 === c4) {
-              c6 = 3;
-              throw tmp14;
-            } else {
-              c5 = 2;
-            }
-          }
+          obj = setError(closure_2_2[9]);
+          obj.close();
+          c4 = 0;
         }
+        await "HermesInternal";
+        ({ ticket: c0, credential: c1 } = closure_0);
+        return "flexDirection";
       });
       return obj(...arguments);
     };
     const tmp = importDefault("");
     setRegistering = NativeCeremoniesDefault;
-    let obj2 = {
+    const obj2 = {
       setRegistering,
       setError: importDefault,
       onRegisterSuccess(arg0) {
@@ -165,14 +105,14 @@ export default function TwoFASetupSuccess() {
   let obj2 = { style: tmp.flex };
   const TwoFASetupModalScreen = TwoFASetupModal.TwoFASetupModalScreen;
   items = [closure_7(View, obj2), , , , , , , ];
-  let obj3 = { source: AssetRegistry, style: tmp.image };
+  const obj3 = { source: AssetRegistry, style: tmp.image };
   const tmp12 = FastImageDefault;
   items[1] = closure_7(tmp12, obj3);
-  let obj4 = { style: tmp.success, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
+  const obj4 = { style: tmp.success, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items[2] = closure_7(Text, obj4);
-  let obj5 = { style: tmp.successBody, children: intl2.string(intl5.t["0d1bXM"]) };
+  const obj5 = { style: tmp.successBody, children: intl2.string(intl5.t["0d1bXM"]) };
   const LegacyText = native.LegacyText;
   intl2 = intl5.intl;
   items[3] = closure_7(LegacyText, obj5);

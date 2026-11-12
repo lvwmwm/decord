@@ -1,19 +1,19 @@
-// Module ID: 17416
-// Function ID: 17417
+// Module ID: 17453
+// Function ID: 17454
 // Name: useQuestForPlacement
-// Dependencies: [19, 7919, 7922, 1089, 9764, 6927, 9773, 17417, 504, 7920, 7929, 6843, 2]
+// Dependencies: [19, 7952, 7955, 1089, 9797, 6960, 9806, 17454, 504, 7953, 7962, 6876, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop, useDeliveredCreativeForPlacement
 
-// Module 17416 (useQuestForPlacement)
+// Module 17453 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1089 */;
-import AdCreativeType from "AdCreativeType" /* 6843 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6927 */;
-import QuestsEligibility from "QuestsEligibility" /* 9764 */;
-import QuestActionCreators from "QuestActionCreators" /* 9773 */;
-import ReturnFullQuestStatusInDecisionExperiment from "ReturnFullQuestStatusInDecisionExperiment" /* 17417 */;
+import AdCreativeType from "AdCreativeType" /* 6876 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6960 */;
+import QuestsEligibility from "QuestsEligibility" /* 9797 */;
+import QuestActionCreators from "QuestActionCreators" /* 9806 */;
+import ReturnFullQuestStatusInDecisionExperiment from "ReturnFullQuestStatusInDecisionExperiment" /* 17454 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7919 */;
-import QuestStore from "QuestStore" /* 7922 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7952 */;
+import QuestStore from "QuestStore" /* 7955 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ let _require;
 let c3;
 let closure_4;
 let hasOwnProperty;
-const f113355 = () => {
+const f113472 = () => {
   const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
   let value = deliveryAdDecisionByPlacement.get(closure_0);
   if (value == null) {
@@ -76,7 +76,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f113355, items1);
+  stateFromStores = obj.useStateFromStores(items, f113472, items1);
   const items2 = [stateFromStores, arg0];
   closure_3(() => {
     let current;
@@ -109,7 +109,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   const items3 = [AdDeliveryStore];
   const items4 = [arg0];
   const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items3, f113355, items4);
+  const stateFromStores1 = obj2.useStateFromStores(items3, f113472, items4);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   require("AdDecisionUtils");
@@ -147,7 +147,7 @@ export function useAdDecisionForPlacement(arg0) {
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f113355, items1);
+  return obj.useStateFromStores(items, f113472, items1);
 }
 export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   let stateFromStores;
@@ -156,7 +156,7 @@ export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   const items = [AdDeliveryStore];
   const items1 = [MOBILE_HOME_DOCK_AREA];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f113355, items1);
+  stateFromStores = obj.useStateFromStores(items, f113472, items1);
   const items2 = [stateFromStores, MOBILE_HOME_DOCK_AREA];
   closure_3(() => {
     let current;
@@ -199,7 +199,7 @@ export function useDeliveredCreativeForPlacement(MOBILE_HOME_DOCK_AREA, QUEST_BA
   let obj2 = require("get initialized");
   const items2 = [AdDeliveryStore];
   const items3 = [MOBILE_HOME_DOCK_AREA];
-  const stateFromStores1 = obj2.useStateFromStores(items2, f113355, items3);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f113472, items3);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   const tmp3 = QuestStore;

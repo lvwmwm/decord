@@ -1,15 +1,21 @@
 // Module ID: 16500
 // Function ID: 16501
-// Dependencies: [16448, 16467, 16457]
+// Dependencies: [16491, 16501, 16499, 16502]
 
 // Module 16500
-import _mod16448 from "module_16448" /* 16448 */;
-import _mod16457 from "module_16457" /* 16457 */;
-import module_16467 from "module_16467" /* 16467 */;
+import _mod16491 from "module_16491" /* 16491 */;
+import _mod16499 from "module_16499" /* 16499 */;
+import _mod16501 from "module_16501" /* 16501 */;
 
-let closure_0 = _mod16448(Function.toString);
-if (!module_16467(_mod16457.inspectSource)) {
-  _mod16457.inspectSource = (arg0) => closure_0(arg0);
-}
+let tmp;
+const _mod16502 = tmp(16502);
 
-export default _mod16457.inspectSource;
+export default _mod16491 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
+  const tmp3 = _mod16501("Symbol");
+  let tmpResultResult = _mod16499(tmp3);
+  if (tmpResultResult) {
+    const tmpResult = _mod16502;
+    tmpResultResult = tmpResult(tmp3.prototype, Object(arg0));
+  }
+  return tmpResultResult;
+});

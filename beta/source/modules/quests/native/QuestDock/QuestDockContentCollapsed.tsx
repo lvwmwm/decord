@@ -1,18 +1,18 @@
-// Module ID: 17480
-// Function ID: 17481
+// Module ID: 17517
+// Function ID: 17518
 // Name: QuestDockContentCollapsed
-// Dependencies: [19, 17, 6836, 17393, 21, 5140, 17394, 1652, 5761, 2]
+// Dependencies: [19, 17, 6869, 17430, 21, 5170, 17431, 1652, 5793, 2]
 
-// Module 17480 (QuestDockContentCollapsed)
+// Module 17517 (QuestDockContentCollapsed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5761 */;
-import QuestConstants from "QuestConstants" /* 6836 */;
-import QuestDockConstants from "QuestDockConstants" /* 17393 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 17394 */;
+import spring_spring from "spring/spring" /* 5793 */;
+import QuestConstants from "QuestConstants" /* 6869 */;
+import QuestDockConstants from "QuestDockConstants" /* 17430 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 17431 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;

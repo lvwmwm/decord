@@ -1,13 +1,13 @@
-// Module ID: 14793
-// Function ID: 14794
+// Module ID: 14825
+// Function ID: 14826
 // Name: useConjureDevicePermissionsAppName
-// Dependencies: [2162, 6899, 504, 6909, 2]
+// Dependencies: [2162, 6932, 504, 6942, 2]
 // Exports: default
 
-// Module 14793 (useConjureDevicePermissionsAppName)
-import isConjureApplicationDefault from "isConjureApplication" /* 6909 */;
+// Module 14825 (useConjureDevicePermissionsAppName)
+import isConjureApplicationDefault from "isConjureApplication" /* 6942 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

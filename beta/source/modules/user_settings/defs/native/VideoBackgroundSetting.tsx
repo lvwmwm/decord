@@ -1,18 +1,18 @@
-// Module ID: 18290
-// Function ID: 18291
+// Module ID: 18328
+// Function ID: 18329
 // Name: VideoBackgroundSetting
-// Dependencies: [8503, 1072, 6062, 12130, 6057, 6060, 11685, 1113, 12110, 2]
+// Dependencies: [8536, 1072, 6094, 12162, 6089, 6092, 11717, 1113, 12142, 2]
 
-// Module 18290 (VideoBackgroundSetting)
+// Module 18328 (VideoBackgroundSetting)
 import intl2 from "intl" /* 1113 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 6057 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 6060 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 6062 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 12110 */;
-import VideoBackgroundOptions from "VideoBackgroundOptions" /* 12130 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 6089 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 6092 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 6094 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 12142 */;
+import VideoBackgroundOptions from "VideoBackgroundOptions" /* 12162 */;
 import Constants from "Constants" /* 1072 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 let c3;

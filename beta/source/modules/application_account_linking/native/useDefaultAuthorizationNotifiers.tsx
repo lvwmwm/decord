@@ -1,14 +1,14 @@
-// Module ID: 18660
-// Function ID: 18661
+// Module ID: 18698
+// Function ID: 18699
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 2117, 1072, 504, 5866, 6787, 5837, 1113, 3478, 2]
+// Dependencies: [19, 2117, 1072, 504, 5898, 6819, 5869, 1113, 3478, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 18660 (useDefaultAuthorizationNotifiers)
+// Module 18698 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3478 from "module_3478" /* 3478 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
 import react_mod from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
 import size from "module_2" /* 2 */;

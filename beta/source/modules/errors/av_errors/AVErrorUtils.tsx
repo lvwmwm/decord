@@ -1,13 +1,13 @@
-// Module ID: 20458
-// Function ID: 20459
+// Module ID: 20496
+// Function ID: 20497
 // Name: AVErrorUtils
-// Dependencies: [5910, 1089, 6002, 2]
+// Dependencies: [5942, 1089, 6034, 2]
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 20458 (AVErrorUtils)
+// Module 20496 (AVErrorUtils)
 import DurationsDefault from "Durations" /* 1089 */;
-import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 6002 */;
-import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5910 */;
+import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 6034 */;
+import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5942 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = 10 * DurationsDefault.Millis.SECOND;

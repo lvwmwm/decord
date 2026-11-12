@@ -1,26 +1,26 @@
-// Module ID: 14084
-// Function ID: 14085
+// Module ID: 14116
+// Function ID: 14117
 // Name: GuildDirectorySearch
-// Dependencies: [32, 19, 17, 5011, 14085, 1072, 21, 5140, 575, 5842, 14088, 5751, 1113, 1187, 504, 14089, 14090, 1627, 14117, 14118, 7357, 7064, 7629, 14098, 14082, 1252, 2]
+// Dependencies: [32, 19, 17, 5041, 14117, 1072, 21, 5170, 575, 5874, 14120, 5783, 1113, 1187, 504, 14121, 14122, 1627, 14149, 14150, 7390, 7097, 7662, 14130, 14114, 1252, 2]
 // Exports: default
 
-// Module 14084 (GuildDirectorySearch)
+// Module 14116 (GuildDirectorySearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14082 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14088 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 14090 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 14098 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14114 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14120 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 14122 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 14130 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 14085 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 14117 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ function EmptyState(channel) {
   let obj = channel(504);
   const items = [GuildStore];
   importDefault = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
-  let obj2 = channel(14089);
+  let obj2 = channel(14121);
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1113).intl;
   if (canCreateOrAddGuildInDirectory) {
@@ -85,11 +85,11 @@ function EmptyState(channel) {
   const tmp6 = FastImageDefault;
   items1 = [closure_10(tmp6, obj5), , ];
   const obj6 = { style: tmp.emptyStateTitle, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(channel(1113).t["6HXiuE"]) };
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5783).Text;
   intl2 = tmp2(1113).intl;
   items1[1] = closure_10(Text, obj6);
   const obj7 = { style: tmp.emptyStateText, variant: "body-sm/medium", color: "text-default", children: formatResult };
-  items1[2] = closure_10(channel(5751).Text, obj7);
+  items1[2] = closure_10(channel(5783).Text, obj7);
   return closure_11(View, obj4);
 }
 const View = react_native.View;

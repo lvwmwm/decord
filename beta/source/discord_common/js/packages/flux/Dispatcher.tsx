@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let _self, map, map1;
 
-const f80135 = (item) => {
+const f80215 = (item) => {
   items = [item, []];
   return items;
 };
@@ -33,9 +33,9 @@ class ActionHandlersGraph {
     merged[0] = new Map();
     merged[1] = {};
     new Map();
-    merged[2] = new Map(items.map(f80135));
+    merged[2] = new Map(items.map(f80215));
     merged[3] = {};
-    new Map(items.map(f80135));
+    new Map(items.map(f80215));
     return merged;
   }
   getOrderedActionHandlers(type) {
@@ -227,7 +227,7 @@ const prototype = ActionHandlersGraph.prototype;
 let result = size.fileFinishedImporting("../discord_common/js/packages/flux/Dispatcher.tsx");
 class Dispatcher {
   constructor(actionLogger, _sentryUtils) {
-    const merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: 6878456 });
+    const merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: 6923673 });
     merged[0] = [];
     merged[1] = {};
     merged[2] = [];
@@ -243,12 +243,12 @@ class Dispatcher {
       const self3 = this;
       const self4 = this;
       map = new Map();
-      merged1[2] = new Map(items.map(f80135));
+      merged1[2] = new Map(items.map(f80215));
       merged1[3] = {};
       merged[5] = merged1;
       merged[7] = {};
       merged._sentryUtils = _sentryUtils;
-      map1 = new Map(items.map(f80135));
+      map1 = new Map(items.map(f80215));
       if (null == actionLogger) {
         const self5 = this;
         const self6 = this;

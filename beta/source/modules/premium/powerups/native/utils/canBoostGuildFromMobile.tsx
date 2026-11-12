@@ -1,10 +1,10 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14352
+// Function ID: 14353
 // Name: canBoostGuildFromMobile
 // Dependencies: [2]
 // Exports: default
 
-// Module 14320 (canBoostGuildFromMobile)
+// Module 14352 (canBoostGuildFromMobile)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/native/utils/canBoostGuildFromMobile.tsx");

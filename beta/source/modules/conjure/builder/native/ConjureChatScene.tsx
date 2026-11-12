@@ -1,40 +1,40 @@
-// Module ID: 12236
-// Function ID: 12237
+// Module ID: 12268
+// Function ID: 12269
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 2162, 10969, 10997, 6899, 10987, 6902, 21, 5140, 575, 1499, 12237, 1627, 12238, 1641, 1705, 504, 12242, 10996, 6936, 12243, 11082, 12249, 12250, 5796, 12251, 11028, 12252, 12246, 1652, 12253, 1113, 4026, 11555, 12254, 1493, 9059, 11026, 11013, 12255, 12265, 12288, 12290, 12291, 5374, 12292, 10967, 12345, 5837, 12349, 12351, 5836, 12353, 12354, 12356, 12374, 12375, 11005, 12376, 11060, 1500, 12377, 12384, 12385, 12404, 12405, 12406, 9848, 12407, 12410, 12411, 10038, 12422, 9846, 10855, 5751, 5758, 12424, 12425, 12260, 12311, 12778, 7070, 2]
+// Dependencies: [5, 32, 19, 17, 2162, 11001, 11029, 6932, 11019, 6935, 21, 5170, 575, 1499, 12269, 1627, 12270, 1641, 1705, 504, 12274, 11028, 6969, 12275, 11114, 12281, 12282, 5828, 12283, 11060, 12284, 12278, 1652, 12285, 1113, 4026, 11587, 12286, 1493, 9092, 11058, 11045, 12287, 12297, 12320, 12322, 12323, 5406, 12324, 10999, 12377, 5869, 12381, 12383, 5868, 12385, 12386, 12388, 12406, 12407, 11037, 12408, 11092, 1500, 12409, 12416, 12417, 12436, 12437, 12438, 9881, 12439, 12442, 12443, 10071, 12454, 9879, 10887, 5783, 5790, 12456, 12457, 12292, 12343, 12810, 7103, 2]
 // Exports: default
 
-// Module 12236 (ConjureChatScene)
+// Module 12268 (ConjureChatScene)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
-import FramesConstants from "FramesConstants" /* 6902 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7070 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 10967 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10969 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10996 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11005 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11026 */;
-import restartFrames from "restartFrames" /* 11060 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12250 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 12253 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12292 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12345 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 12356 */;
-import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 12385 */;
-import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 12407 */;
-import openConjureShareSheetDefault from "openConjureShareSheet" /* 12411 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5406 */;
+import FramesConstants from "FramesConstants" /* 6935 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7103 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 10999 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11037 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11058 */;
+import restartFrames from "restartFrames" /* 11092 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12282 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 12285 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12324 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12377 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 12388 */;
+import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 12417 */;
+import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 12439 */;
+import openConjureShareSheetDefault from "openConjureShareSheet" /* 12443 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10997 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10987 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11029 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11019 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const ConjureRemixSheetDefault = ConjureRemixSheet;
@@ -42,7 +42,7 @@ const ConjureSettingsSheetDefault = ConjureSettingsSheet;
 const ConjureConnectToolSheetDefault = ConjureConnectToolSheet;
 const ConjureHistorySheetDefault = ConjureHistorySheet;
 const ConjureChatMoreSheetDefault = ConjureChatMoreSheet;
-let _require, c3, c4, c6, c7, closure_0, closure_3, closure_4, navigation;
+let _require, c3, c4, c6, closure_0, navigation;
 
 let closure_15;
 let closure_16;
@@ -84,6 +84,7 @@ export default function ConjureChatScene(guildId) {
   let Provider2;
   let _undefined;
   let _undefined2;
+  let closure_3;
   let entryPoint;
   let frameLaunchParams;
   let has_activity;
@@ -806,147 +807,99 @@ export default function ConjureChatScene(guildId) {
     let obj7;
     closure_0 = arg0;
     let closure_1 = value;
-    if (c7 === 2) {
-      c7 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    if (1 === c6) {
       if (arg0 === 1) {
+        let c7 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
+        c7 = 3;
+        const obj5 = { value, done: true };
+        return obj5;
+      } else if (!ref.current) {
+        ref.current = true;
+        const obj6 = { text: intl2.string(projectId(navigation[35]).qqlUiW), icon: closure_0(navigation[52]).UndoIcon };
+        const open = projectId(navigation[51]).open;
+        const tmp40 = projectId(navigation[51]);
+        intl2 = closure_0(navigation[34]).intl;
+        open("CONJURE_VERSION_RESTORING", obj6);
+        let c5 = 2;
+        c6 = 4;
+        c7 = 1;
+        const obj8 = { value: obj7.restoreSourceHistoryEntry(closure_1, closure_0.sha), done: false };
+        obj7 = closure_0(navigation[53]);
+        return obj8;
       }
+    } else if (2 === c6) {
+      c5 = 0;
+      ref.current = false;
+      throw closure_4;
+    } else if (3 === c6) {
+      const presentError = closure_0(navigation[54]).presentError;
+      const tmp23 = closure_0(navigation[54]);
+      const intl = closure_0(navigation[34]).intl;
+      presentError(intl.string(projectId(navigation[35])["PSdo+w"]));
+      c5 = 0;
+      ref.current = false;
+      c7 = 3;
+      const obj9 = { value: undefined, done: true };
+      return obj9;
     } else {
-      let c5;
-      try {
-        let closure_2;
-        let c1;
-        c7 = 2;
-        if (0 === c6) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_3 = tmp;
-            closure_2 = tmp4;
-            c1 = undefined;
-            let tmp55 = closure_1;
-            if (closure_1 === undefined) {
-              tmp55 = null;
-            }
-            c1 = tmp55;
-            closure_2 = undefined;
-            c6 = 1;
+      if (4 === c6) {
+        if (arg0 === 1) {
+          c7 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 0;
+          ref.current = false;
+          c7 = 3;
+          const obj10 = { value, done: true };
+          return obj10;
+        } else {
+          c5 = 1;
+          const obj11 = { text: formatToPlainString(Z4n6LX, obj13), icon: closure_0(navigation[52]).UndoIcon };
+          const open2 = projectId(navigation[51]).open;
+          const tmp73 = projectId(navigation[51]);
+          const intl3 = closure_0(navigation[34]).intl;
+          formatToPlainString = intl3.formatToPlainString;
+          obj13 = { title: obj15.versionTitle(closure_0.subject).short };
+          Z4n6LX = projectId(navigation[35]).Z4n6LX;
+          obj15 = closure_0(navigation[55]);
+          open2("CONJURE_VERSION_RESTORED", obj11);
+          if (null != c1) {
+            c6 = 5;
             c7 = 1;
-            return { value: "flexDirection", done: null };
+            const obj14 = { value: obj2.rewindDataAfterVersionRestore(closure_1, c1), done: false };
+            obj2 = closure_0(navigation[56]);
+            return obj14;
           }
-        } else {
-          if (1 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
-            } else if (!ref.current) {
-              ref.current = true;
-              const obj6 = { text: intl2.string(projectId(navigation[35]).qqlUiW), icon: closure_0(navigation[52]).UndoIcon };
-              const open = projectId(navigation[51]).open;
-              const tmp40 = projectId(navigation[51]);
-              intl2 = closure_0(navigation[34]).intl;
-              open("CONJURE_VERSION_RESTORING", obj6);
-              c5 = 2;
-              c6 = 4;
-              c7 = 1;
-              const obj8 = { value: obj7.restoreSourceHistoryEntry(closure_1, closure_0.sha), done: false };
-              obj7 = closure_0(navigation[53]);
-              return obj8;
-            }
-          } else if (2 === c6) {
-            c5 = 0;
-            ref.current = false;
-            throw closure_4;
-          } else if (3 === c6) {
-            const presentError = closure_0(navigation[54]).presentError;
-            const tmp23 = closure_0(navigation[54]);
-            const intl = closure_0(navigation[34]).intl;
-            presentError(intl.string(projectId(navigation[35])["PSdo+w"]));
-            c5 = 0;
-            ref.current = false;
-            c7 = 3;
-            const obj9 = { value: undefined, done: true };
-            return obj9;
-          } else {
-            if (4 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 0;
-                ref.current = false;
-                c7 = 3;
-                const obj10 = { value, done: true };
-                return obj10;
-              } else {
-                c5 = 1;
-                const obj11 = { text: formatToPlainString(Z4n6LX, obj13), icon: closure_0(navigation[52]).UndoIcon };
-                const open2 = projectId(navigation[51]).open;
-                const tmp73 = projectId(navigation[51]);
-                const intl3 = closure_0(navigation[34]).intl;
-                formatToPlainString = intl3.formatToPlainString;
-                obj13 = { title: obj15.versionTitle(closure_0.subject).short };
-                Z4n6LX = projectId(navigation[35]).Z4n6LX;
-                obj15 = closure_0(navigation[55]);
-                open2("CONJURE_VERSION_RESTORED", obj11);
-                if (null != c1) {
-                  c6 = 5;
-                  c7 = 1;
-                  const obj14 = { value: obj2.rewindDataAfterVersionRestore(closure_1, c1), done: false };
-                  obj2 = closure_0(navigation[56]);
-                  return obj14;
-                }
-              }
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 0;
-              ref.current = false;
-              c7 = 3;
-              const obj = { value, done: true };
-              return obj;
-            } else {
-              closure_2 = value;
-              if (null != closure_2) {
-                const obj12 = closure_0(navigation[54]);
-                obj12.presentError(closure_2);
-              }
-            }
-            c5 = 0;
-            ref.current = false;
-          }
-          c7 = 3;
-          return { value: "HermesInternal", done: null };
         }
-      } catch (tmp56) {
-        closure_4 = tmp56;
-        if (0 === c5) {
-          c7 = 3;
-          throw tmp56;
-        } else if (1 === tmp58) {
-          c6 = 2;
-        } else {
-          c6 = 3;
+      } else if (arg0 === 1) {
+        c7 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c5 = 0;
+        ref.current = false;
+        c7 = 3;
+        const obj = { value, done: true };
+        return obj;
+      } else {
+        let closure_2 = value;
+        if (null != closure_2) {
+          const obj12 = closure_0(navigation[54]);
+          obj12.presentError(closure_2);
         }
       }
+      c5 = 0;
+      ref.current = false;
     }
+    yield "HermesInternal";
+    closure_2 = tmp4;
+    let tmp55 = closure_1;
+    if (closure_1 === undefined) {
+      tmp55 = null;
+    }
+    c1 = tmp55;
+    return "flexDirection";
   });
   const items30 = [projectId];
   callback5 = useCallback(function() {

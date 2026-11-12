@@ -1,22 +1,22 @@
-// Module ID: 20198
-// Function ID: 20199
+// Module ID: 20236
+// Function ID: 20237
 // Name: GuildSettingsRoleEditDisplay
-// Dependencies: [19, 17, 5047, 20183, 20182, 1072, 20185, 21, 5140, 575, 6172, 504, 7417, 7416, 7434, 1187, 20199, 5374, 20200, 2118, 18701, 20197, 20202, 20203, 7148, 1113, 20205, 7126, 7038, 5715, 1380, 1090, 16767, 5859, 5751, 2696, 7429, 2]
+// Dependencies: [19, 17, 5077, 20221, 20220, 1072, 20223, 21, 5170, 575, 6204, 504, 7450, 7449, 7467, 1187, 20237, 5406, 20238, 2118, 18739, 20235, 20240, 20241, 7181, 1113, 20243, 7159, 7071, 5747, 1380, 1090, 16799, 5891, 5783, 2696, 7462, 2]
 // Exports: default
 
-// Module 20198 (GuildSettingsRoleEditDisplay)
+// Module 20236 (GuildSettingsRoleEditDisplay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 5047 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20182 */;
-import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 20183 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20185 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5077 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20220 */;
+import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 20221 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20223 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsRolesStore = GuildSettingsRolesStore2;
@@ -138,7 +138,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
     const callback = SOLID.useCallback(() => {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId: guild.id, roleId: id };
-      obj.openLazy(asyncRequire(20200, dependencyMap.paths), "RoleIcon", obj2);
+      obj.openLazy(asyncRequire(20238, dependencyMap.paths), "RoleIcon", obj2);
     }, items1);
     const items3 = [guild.id, role, id, SOLID];
     const callback1 = SOLID.useCallback(() => {
@@ -151,7 +151,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
               obj.updateRoleColor(role, arg0);
             }
         };
-        obj.openLazy(asyncRequire(18701, dependencyMap.paths), "RoleColorPicker", obj2);
+        obj.openLazy(asyncRequire(18739, dependencyMap.paths), "RoleColorPicker", obj2);
       } else if (tmp === tmp2.GRADIENT) {
         const obj4 = {
           colors,
@@ -161,7 +161,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
             }
         };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(20202, dependencyMap.paths), "RoleColorPicker", obj4);
+        obj3.openLazy(asyncRequire(20240, dependencyMap.paths), "RoleColorPicker", obj4);
       }
     }, items2);
     const callback2 = SOLID.useCallback(() => {
@@ -175,7 +175,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
           obj.updateRoleStyles(closure_1_2, currentStyle);
         }
       };
-      obj.openLazy(asyncRequire(20203, dependencyMap.paths), "EnhancedRoleColorsSelectStyleModal", obj2);
+      obj.openLazy(asyncRequire(20241, dependencyMap.paths), "EnhancedRoleColorsSelectStyleModal", obj2);
     }, items3);
     const obj6 = { label: intl.string(guild(id[25]).t.dLbkBk), value: name, disabled: tmp3, onChange: onNameChanged, maxLength, autoFocus: autoFocusInput, errorMessage: first };
     const TextInput = tmp4(tmp5[24]).TextInput;

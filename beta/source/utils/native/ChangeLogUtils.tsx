@@ -1,18 +1,18 @@
-// Module ID: 8640
-// Function ID: 8641
+// Module ID: 8673
+// Function ID: 8674
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5140, 575, 6833, 6163, 5751, 8641, 8642, 8643, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 6866, 6195, 5783, 8674, 8675, 8676, 2]
 
-// Module 8640 (utils/ChangeLogUtils)
+// Module 8673 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import LegacyTokens from "LegacyTokens" /* 6833 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8643 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import LegacyTokens from "LegacyTokens" /* 6866 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8676 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5140 */;
-import CustomMarkup from "CustomMarkup" /* 6163 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import CustomMarkup from "CustomMarkup" /* 6195 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let closure_4, item, length;
 let obj2;
 let obj3;
 let tmp2;
-const MarkupRulesUtils = tmp2(8642);
+const MarkupRulesUtils = tmp2(8675);
 function ChangeLogLink(arg0) {
   let node;
   let output;
@@ -100,15 +100,15 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5751).Text;
+    Paragraph = output(5783).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8641);
+  const obj = output(8674);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8641);
+    const tmp5Result = tmp5(8674);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;

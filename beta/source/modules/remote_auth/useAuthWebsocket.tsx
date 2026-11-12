@@ -1,13 +1,13 @@
-// Module ID: 18369
-// Function ID: 18370
+// Module ID: 18407
+// Function ID: 18408
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1072, 3, 18368, 559, 7202, 15819, 18370, 1108, 1282, 6795, 18372, 2]
+// Dependencies: [5, 32, 19, 1072, 3, 18406, 559, 7235, 15851, 18408, 1108, 1282, 6827, 18410, 2]
 // Exports: useAuthWebsocket
 
-// Module 18369 (useAuthWebsocket)
+// Module 18407 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
-import typing from "typing" /* 18368 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 18370 */;
+import typing from "typing" /* 18406 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 18408 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -170,7 +170,7 @@ export function useAuthWebsocket(callback, arg1) {
                   heartbeat_interval = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "flexDirection", done: null };
+                  return { value: "flexDirection", done: true };
                 }
               } else if (1 === tmp4) {
                 if (arg0 === 1) {

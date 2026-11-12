@@ -1,17 +1,17 @@
-// Module ID: 18656
-// Function ID: 18657
+// Module ID: 18694
+// Function ID: 18695
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7731, 6623, 1072, 5314, 5315, 1108, 2]
+// Dependencies: [32, 19, 7764, 6655, 1072, 5346, 5347, 1108, 2]
 // Exports: useShouldRenderChannelList
 
-// Module 18656 (useShouldRenderChannelList)
+// Module 18694 (useShouldRenderChannelList)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import RootNavigationRef from "RootNavigationRef" /* 5315 */;
+import RootNavigationRef from "RootNavigationRef" /* 5347 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 7731 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
+import CacheStore from "CacheStore" /* 7764 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
 import size from "module_2" /* 2 */;
 
 const ComponentActions = Constants.ComponentActions;

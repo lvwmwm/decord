@@ -1,12 +1,12 @@
-// Module ID: 12561
-// Function ID: 12562
+// Module ID: 12593
+// Function ID: 12594
 // Name: UserProfileConfirmRemoveWidget
-// Dependencies: [19, 21, 6096, 1113, 6096, 2]
+// Dependencies: [19, 21, 6128, 1113, 6128, 2]
 // Exports: default
 
-// Module 12561 (UserProfileConfirmRemoveWidget)
+// Module 12593 (UserProfileConfirmRemoveWidget)
 import intl5 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 6096 */;
+import AlertModal2 from "AlertModal" /* 6128 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 19647
-// Function ID: 19648
+// Module ID: 19685
+// Function ID: 19686
 // Name: VoicePanelNoStageSpeakersCard
-// Dependencies: [19, 21, 5140, 575, 7023, 5751, 1113, 4156, 2]
+// Dependencies: [19, 21, 5170, 575, 7056, 5783, 1113, 4156, 2]
 
-// Module 19647 (VoicePanelNoStageSpeakersCard)
+// Module 19685 (VoicePanelNoStageSpeakersCard)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4156 from "module_4156" /* 4156 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import NativeViewDefault from "NativeView" /* 7023 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import NativeViewDefault from "NativeView" /* 7056 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

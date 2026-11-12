@@ -1,15 +1,15 @@
-// Module ID: 12677
-// Function ID: 12678
+// Module ID: 12709
+// Function ID: 12710
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [2140, 11911, 12588, 9040, 5806, 1377, 1113, 2]
+// Dependencies: [2140, 11943, 12620, 9073, 5838, 1377, 1113, 2]
 // Exports: default
 
-// Module 12677 (useIsPrimaryEntryPointDisabled)
+// Module 12709 (useIsPrimaryEntryPointDisabled)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import getPlatformDefault from "getPlatform" /* 5806 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9040 */;
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11911 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 12588 */;
+import getPlatformDefault from "getPlatform" /* 5838 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9073 */;
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11943 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 12620 */;
 import ApplicationRecord from "ApplicationRecord" /* 2140 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
           isGuildVoiceResult1 = channel.isGuildVoice();
         }
         if (isGuildVoiceResult1) {
-          flag = embeddedActivityLaunchability !== tmp2(11911).EmbeddedActivityLaunchability.CAN_LAUNCH;
+          flag = embeddedActivityLaunchability !== tmp2(11943).EmbeddedActivityLaunchability.CAN_LAUNCH;
         } else {
           flag = false;
           const tmp2Result3 = ActivitiesInTextUtils;

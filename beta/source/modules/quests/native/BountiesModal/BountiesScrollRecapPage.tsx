@@ -1,27 +1,27 @@
-// Module ID: 17289
-// Function ID: 17290
+// Module ID: 17323
+// Function ID: 17324
 // Name: BountiesScrollRecapPage
-// Dependencies: [19, 17, 5141, 21, 575, 5140, 1377, 9588, 17290, 8947, 17291, 1627, 504, 17292, 5751, 1113, 9616, 5758, 2]
+// Dependencies: [19, 17, 5171, 21, 575, 5170, 1377, 9621, 17324, 8980, 17325, 1627, 504, 17326, 5783, 1113, 9649, 5790, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 17289 (BountiesScrollRecapPage)
+// Module 17323 (BountiesScrollRecapPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import common_Video from "common/Video" /* 8947 */;
-import OrbsIcon from "OrbsIcon" /* 9616 */;
-import _modDef17290 from "module_17290" /* 17290 */;
-import _modDef17291 from "module_17291" /* 17291 */;
-import _modDef17292 from "module_17292" /* 17292 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import common_Video from "common/Video" /* 8980 */;
+import OrbsIcon from "OrbsIcon" /* 9649 */;
+import _modDef17324 from "module_17324" /* 17324 */;
+import _modDef17325 from "module_17325" /* 17325 */;
+import _modDef17326 from "module_17326" /* 17326 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -39,13 +39,13 @@ function BountiesRecapOrbsBackground(arg0) {
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
     const obj2 = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: metroRequire(APNGPlayer, obj3) };
-    obj3 = { url: _modDef17290, style: _false.absoluteFillObject, autoplay: !reducedMotion };
-    APNGPlayer = tmp(9588).APNGPlayer;
+    obj3 = { url: _modDef17324, style: _false.absoluteFillObject, autoplay: !reducedMotion };
+    APNGPlayer = tmp(9621).APNGPlayer;
     tmp3Result = tmp3(React3, obj2);
   } else {
     const obj4 = { source: obj5, style, resizeMode: "contain", paused: reducedMotion, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-    obj5 = { uri: _modDef17291 };
-    const VideoComponent = tmp(8947).VideoComponent;
+    obj5 = { uri: _modDef17325 };
+    const VideoComponent = tmp(8980).VideoComponent;
     tmp3Result = tmp3(VideoComponent, obj4);
   }
   return tmp3Result;
@@ -100,7 +100,7 @@ export function BountiesScrollRecapPage(orbAmount) {
   items1 = [tmp.root, style];
   const obj3 = { style: _false.absoluteFillObject, pointerEvents: "none", children: items2 };
   const obj4 = { source: obj5, style: _false.absoluteFillObject, resizeMode: "cover", paused: stateFromStores, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-  obj5 = { uri: _modDef17292 };
+  obj5 = { uri: _modDef17326 };
   const VideoComponent = common_Video.VideoComponent;
   items2 = [metroRequire(VideoComponent, obj4), ];
   const obj6 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };

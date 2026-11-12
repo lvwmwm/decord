@@ -1,17 +1,17 @@
-// Module ID: 12208
-// Function ID: 12209
+// Module ID: 12240
+// Function ID: 12241
 // Name: useFetchStreamPreview
-// Dependencies: [19, 7980, 4989, 5072, 5043, 1083, 504, 7978, 2]
+// Dependencies: [19, 8013, 5019, 5102, 5073, 1083, 504, 8011, 2]
 // Exports: default
 
-// Module 12208 (useFetchStreamPreview)
+// Module 12240 (useFetchStreamPreview)
 import Constants from "Constants" /* 1083 */;
-import StreamActionCreators from "StreamActionCreators" /* 7978 */;
+import StreamActionCreators from "StreamActionCreators" /* 8011 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7980 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 8013 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -84,5 +84,5 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
     }
     return obj5;
   }
-  obj5 = { previewUrl: "flexDirection", isLoading: null };
+  obj5 = { previewUrl: "flexDirection", isLoading: true };
 };

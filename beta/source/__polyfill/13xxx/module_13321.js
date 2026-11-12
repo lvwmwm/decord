@@ -1,158 +1,205 @@
 // Module ID: 13321
 // Function ID: 13322
-// Dependencies: [13277, 13278, 13322, 13325, 13314, 13283]
-// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
+// Dependencies: [13311, 13319, 13316]
+// Exports: addContextToFrame, addExceptionMechanism, addExceptionTypeValue, arrayify, checkOrSetAlreadyCaught, getEventDescription, parseSemver, uuid4
 
 // Module 13321
-import _mod13283 from "module_13283" /* 13283 */;
-import _mod13322 from "module_13322" /* 13322 */;
-import _mod13325 from "module_13325" /* 13325 */;
-import DEBUG_BUILD from "module_13277" /* 13277 */;
-import CONSOLE_LEVELS from "module_13278" /* 13278 */;
+import _mod13311 from "module_13311" /* 13311 */;
+import _mod13316 from "module_13316" /* 13316 */;
+import _mod13319 from "module_13319" /* 13319 */;
 
-const require = globalThis.__r;
-let _require, integrations;
+const re2 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
 
-
-export function createEventEnvelope(type, arg1, sdk, arg3) {
-  const obj = _mod13322;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
-  let str = "event";
-  const tmp2 = type;
-  if (type.type) {
-    str = "event";
-    if ("replay_event" !== type.type) {
-      str = type.type;
-    }
+export function addContextToFrame(arr, lineno) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 5;
   }
-  if (sdk && sdk.sdk) {
-    type.sdk = type.sdk || {};
-    let name = type.sdk.name;
-    sdk = type.sdk;
-    if (!name) {
-      name = tmp6.name;
+  if (undefined !== lineno.lineno) {
+    const _Math2 = Math;
+    const _Math3 = Math;
+    const bound = Math.max(Math.min(length - 1, lineno.lineno - 1), 0);
+    const _Math4 = Math;
+    const substr = arr.slice(Math.max(0, bound - num), bound);
+    lineno.pre_context = substr.map((item) => {
+      const obj = _mod13319;
+      return obj.snipLine(item, 0);
+    });
+    const _Math5 = Math;
+    const bound1 = Math.min(length - 1, bound);
+    let num2 = lineno.colno;
+    const snipLine = _mod13319.snipLine;
+    _mod13319;
+    const tmp8 = arr[bound1];
+    if (!num2) {
+      num2 = 0;
     }
-    sdk.name = name;
-    let version = type.sdk.version;
-    const sdk2 = type.sdk;
-    if (!version) {
-      version = tmp6.version;
-    }
-    sdk2.version = version;
-    integrations = type.sdk.integrations;
-    const sdk3 = type.sdk;
-    if (!integrations) {
-      integrations = [];
-    }
-    const items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
-    const tmp10 = (sdk && sdk.sdk).integrations || [];
-    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
-    sdk3.integrations = items;
-    let packages = type.sdk.packages;
-    const sdk4 = type.sdk;
-    if (!packages) {
-      packages = [];
-    }
-    const items1 = [];
-    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
-    const tmp18 = (sdk && sdk.sdk).packages || [];
-    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
-    sdk4.packages = items1;
+    lineno.context_line = snipLine(tmp8, num2);
+    const _Math = Math;
+    const substr1 = arr.slice(Math.min(bound + 1, length), bound + 1 + num);
+    lineno.post_context = substr1.map((item) => {
+      const obj = _mod13319;
+      return obj.snipLine(item, 0);
+    });
   }
-  const tmp3Result = _mod13322;
-  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
-  delete tmp2["sdkProcessingMetadata"];
-  const items2 = [{ type: str }, type];
-  const items3 = [items2];
-  const tmp3Result2 = _mod13322;
-  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
 }
-export function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
-  let date;
-  let items1;
-  let tmpResult;
-  const obj = _mod13322;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
-  const obj2 = { sent_at: date.toISOString() };
-  let tmp4 = sdkMetadataForEnvelopeHeader;
-  date = new Date();
-  if (tmp4) {
-    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
-    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
+export function addExceptionMechanism(exception, data) {
+  let first;
+  if (exception.exception) {
+    if (exception.exception.values) {
+      first = exception.exception.values[0];
+    }
   }
-  const merged = Object.assign(tmp4);
-  let tmp6 = arg3 && arg1;
-  if (tmp6) {
-    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
-    tmp6 = obj4;
-    tmpResult = _mod13325;
+  if (first) {
+    const mechanism = first.mechanism;
+    const obj = { type: "generic", handled: true };
+    const merged = Object.assign(mechanism);
+    const merged1 = Object.assign(data);
+    first.mechanism = obj;
+    if (data) {
+      if ("data" in data) {
+        const obj2 = {};
+        const merged2 = Object.assign(tmp9);
+        const merged3 = Object.assign(data.data);
+        first.mechanism.data = obj2;
+      }
+    }
   }
-  const merged1 = Object.assign(tmp6);
-  if ("aggregates" in toJSON) {
-    const items = [{ type: "sessions" }, toJSON];
-    items1 = items;
+}
+export function addExceptionTypeValue(exception, arg1, arg2) {
+  const tmp = exception.exception || {};
+  exception.exception = tmp;
+  const tmp2 = tmp.values || [];
+  tmp.values = tmp2;
+  const iter = tmp2[0] || {};
+  tmp2[0] = iter;
+  if (!iter.value) {
+    iter.value = arg1 || "";
+  }
+  if (!iter.type) {
+    iter.type = arg2 || "Error";
+  }
+}
+export function arrayify(arg0) {
+  let tmp = arg0;
+  if (!Array.isArray(arg0)) {
+    const items = [arg0];
+    tmp = items;
+  }
+  return tmp;
+}
+export function checkOrSetAlreadyCaught(__sentry_captured__) {
+  function isAlreadyCaptured(__sentry_captured__) {
+    try {
+      return __sentry_captured__.__sentry_captured__;
+    } catch (err) {
+    }
+  }
+  if (isAlreadyCaptured(__sentry_captured__)) {
+    return true;
   } else {
-    items1 = [{ type: "session" }, toJSON.toJSON()];
+    try {
+      const obj = _mod13316;
+      const result = obj.addNonEnumerableProperty(__sentry_captured__, "__sentry_captured__", true);
+    } catch (err) {
+    }
+    return false;
   }
-  const items2 = [items1];
-  const tmpResult2 = _mod13322;
-  return tmpResult2.createEnvelope(obj2, items2);
 }
-export function createSpanEnvelope(arg0, getDsn) {
-  let closure_0;
-  let date;
-  let tmp2Result;
-  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
-    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
-  }
-  let tmp = _require;
-  let tmp3 = dependencyMap;
-  let obj = require("module_13314");
-  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
-  const tmp6 = getDsn && getDsn.getDsn();
-  const obj2 = { sent_at: date.toISOString() };
-  const tmp7 = getDsn && getDsn.getOptions().tunnel;
-  date = new Date();
-  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
-  const tmp2 = _require;
-  if (tmp8) {
-    tmp8 = { trace: dynamicSamplingContextFromSpan };
-    const obj3 = { trace: dynamicSamplingContextFromSpan };
-  }
-  const merged = Object.assign(tmp8);
-  let tmp10 = tmp7 && tmp6;
-  if (tmp10) {
-    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
-    tmp10 = obj4;
-    tmp2Result = tmp2(13325);
-  }
-  const merged1 = Object.assign(tmp10);
-  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
-  _require = tmp14;
-  const items = [];
-  const tmp15 = tmp14 ? ((arg0) => {
-    const obj = _mod13283;
-    const tmp3 = closure_0(obj.spanToJSON(arg0));
-    if (!tmp3) {
-      const tmpResult = _mod13283;
-      tmpResult.showSpanDropWarning();
+export function getEventDescription(exception) {
+  let event_id;
+  let message;
+  ({ message, event_id } = exception);
+  if (message) {
+    return message;
+  } else {
+    let tmp2;
+    let first;
+    if (exception.exception) {
+      if (exception.exception.values) {
+        first = exception.exception.values[0];
+      }
     }
-    return tmp3;
-  }) : ((arg0) => {
-    const obj = closure_0(dependencyMap[5]);
-    return obj.spanToJSON(arg0);
-  });
-  const iter = arg0[Symbol.iterator]();
-  while (iter !== undefined) {
-    let tmp15Result = tmp15(iter.next());
-    if (tmp15Result) {
-      let push = items.push;
-      let obj7 = require("module_13322");
-      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
+    if (first) {
+      if (first.type) {
+        let combined;
+        if (first.value) {
+          const _HermesInternal = HermesInternal;
+          combined = "" + first.type + ": " + first.value;
+        }
+        tmp2 = combined;
+      }
+      combined = first.type || first.value || event_id || "<unknown>";
+    } else {
+      tmp2 = event_id || "<unknown>";
     }
-    continue;
+    return tmp2;
   }
-  const obj8 = require("module_13322");
-  return obj8.createEnvelope(obj2, items);
+}
+export function parseSemver(str) {
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  const tmp = str.match(re2) || [];
+  str = tmp[1];
+  const _parseInt = parseInt;
+  if (!str) {
+    str = "";
+  }
+  const _parseIntResult = _parseInt(str, 10);
+  let str2 = tmp[2];
+  const _parseInt2 = parseInt;
+  if (!str2) {
+    str2 = "";
+  }
+  const _parseInt2Result = _parseInt2(str2, 10);
+  let str3 = tmp[3];
+  const _parseInt3 = parseInt;
+  if (!str3) {
+    str3 = "";
+  }
+  const _parseInt3Result = _parseInt3(str3, 10);
+  const obj = { buildmetadata: tmp[5], major: tmp5, minor: tmp6, patch: tmp7, prerelease: tmp[4] };
+  tmp5 = undefined;
+  if (!isNaN(_parseIntResult)) {
+    tmp5 = _parseIntResult;
+  }
+  tmp6 = undefined;
+  if (!isNaN(_parseInt2Result)) {
+    tmp6 = _parseInt2Result;
+  }
+  tmp7 = undefined;
+  if (!isNaN(_parseInt3Result)) {
+    tmp7 = _parseInt3Result;
+  }
+  return obj;
+}
+export function uuid4() {
+  const GLOBAL_OBJ = _mod13311.GLOBAL_OBJ;
+  const obj = GLOBAL_OBJ.crypto || GLOBAL_OBJ.msCrypto;
+  function getRandomByte() {
+    return 16 * Math.random();
+  }
+  try {
+    if (obj) {
+      if (obj.randomUUID) {
+        let str = obj.randomUUID();
+        return str.replace(/-/g, "");
+      }
+    }
+    const getRandomValues = obj && obj.getRandomValues;
+    if (getRandomValues) {
+      getRandomByte = function getRandomByte() {
+        const uint8Array = new Uint8Array(1);
+        const randomValues = obj.getRandomValues(uint8Array);
+        return uint8Array[0];
+      };
+    }
+    const replace = "10000000100040008000100000000000".replace;
+    return "10000000100040008000100000000000".replace(/[018]/g, (arg0) => {
+      const str = arg0 ^ (15 & getRandomByte()) >> arg0 / 4;
+      return str.toString(16);
+    });
+  } catch (err) {
+  }
 }

@@ -1,18 +1,18 @@
-// Module ID: 12860
-// Function ID: 12861
+// Module ID: 12892
+// Function ID: 12893
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 12854, 12861, 12862, 5751, 1113, 12782, 7594, 12863, 4026, 5374, 12864, 2]
+// Dependencies: [19, 21, 12886, 12893, 12894, 5783, 1113, 12814, 7627, 12895, 4026, 5406, 12896, 2]
 // Exports: default
 
-// Module 12860 (ConjurePublishNoticeLine)
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import transitionToGuild from "transitionToGuild" /* 7594 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12854 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12861 */;
-import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12862 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12863 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12864 */;
+// Module 12892 (ConjurePublishNoticeLine)
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import transitionToGuild from "transitionToGuild" /* 7627 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12886 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12893 */;
+import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12894 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12895 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12896 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -133,7 +133,7 @@ export default function ConjurePublishNoticeLine(arg0) {
   const children = [format(publishNoticeMessageResult, obj), ];
   if (null != tmp4.guildId) {
     const obj2 = { guildId: tmp4.guildId, update: notice.update };
-    tmp10 = closure_3(tmp6(12862).ConjureAutomodSettingsLink, obj2);
+    tmp10 = closure_3(tmp6(12894).ConjureAutomodSettingsLink, obj2);
   } else {
     tmp10 = null;
     if (!tmp4.automod) {

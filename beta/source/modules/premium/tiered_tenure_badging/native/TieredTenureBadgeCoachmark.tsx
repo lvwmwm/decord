@@ -1,20 +1,20 @@
-// Module ID: 11590
-// Function ID: 11591
+// Module ID: 11622
+// Function ID: 11623
 // Name: TieredTenureBadgeCoachmark
-// Dependencies: [32, 19, 17, 1072, 4986, 21, 5140, 11560, 5842, 7857, 4973, 7641, 1113, 7635, 10076, 2]
+// Dependencies: [32, 19, 17, 1072, 5016, 21, 5170, 11592, 5874, 7890, 5003, 7674, 1113, 7668, 10109, 2]
 // Exports: default
 
-// Module 11590 (TieredTenureBadgeCoachmark)
+// Module 11622 (TieredTenureBadgeCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4973 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import useMobileTenureBadgeImages2 from "useMobileTenureBadgeImages" /* 11560 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import useMobileTenureBadgeImages2 from "useMobileTenureBadgeImages" /* 11592 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -57,20 +57,20 @@ export default function TieredTenureBadgeCoachmark(arg0) {
   let first;
   dependencyMap = undefined;
   ({ targetRef, badgeId } = arg0);
-  let obj = tieredTenureBadgeData(7857);
+  let obj = tieredTenureBadgeData(7890);
   const tieredTenureBadge = obj.getTieredTenureBadge(badgeId);
   tieredTenureBadgeData = null;
   if (null != tieredTenureBadge) {
-    const tmpResult = tieredTenureBadgeData(7857);
+    const tmpResult = tieredTenureBadgeData(7890);
     tieredTenureBadgeData = tmpResult.getTieredTenureBadgeData(tieredTenureBadge);
   }
   if (null != tieredTenureBadgeData) {
-    const items = [tmp(4973).DismissibleContent.TIERED_TENURE_BADGE_COACHMARK];
+    const items = [tmp(5003).DismissibleContent.TIERED_TENURE_BADGE_COACHMARK];
     items1 = items;
   } else {
     items1 = [];
   }
-  const tmpResult3 = tieredTenureBadgeData(7641);
+  const tmpResult3 = tieredTenureBadgeData(7674);
   const tmp5 = _slicedToArray(tmpResult3.useSelectedDismissibleContent(items1), 2);
   first = tmp5[0];
   dependencyMap = tmp7;
@@ -106,7 +106,7 @@ export default function TieredTenureBadgeCoachmark(arg0) {
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  const tmpResult4 = tieredTenureBadgeData(10076);
+  const tmpResult4 = tieredTenureBadgeData(10109);
   const coachmark = tmpResult4.useCoachmark(targetRef, memo);
   return null;
 };

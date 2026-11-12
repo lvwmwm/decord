@@ -1,66 +1,102 @@
 // Module ID: 13126
 // Function ID: 13127
 // Name: tokenize
-// Dependencies: [13050]
+// Dependencies: [13082]
 
 // Module 13126 (tokenize)
-import tokenize from "tokenize" /* 13050 */;
+import tokenize from "tokenize" /* 13082 */;
 
-let items;
 let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, null, false);
+function getOffsetExcludeWS() {
+  const self = this;
+  if (this.scanner.tokenIndex > 0) {
+    let tokenStart;
+    const scanner = self.scanner;
+    if (scanner.lookupType(-1) === WhiteSpace) {
+      let firstCharOffset;
+      if (self.scanner.tokenIndex > 1) {
+        const scanner2 = self.scanner;
+        firstCharOffset = scanner2.getTokenStart(self.scanner.tokenIndex - 1);
+      } else {
+        firstCharOffset = self.scanner.firstCharOffset;
+      }
+      tokenStart = firstCharOffset;
+    }
+    return tokenStart;
+  }
+  tokenStart = self.scanner.tokenStart;
+}
+function balanceEnd() {
+  return 0;
 }
 const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Comment = tokenize.TYPE.Comment;
-const AtKeyword = tokenize.TYPE.AtKeyword;
-const CDO = tokenize.TYPE.CDO;
-const CDC = tokenize.TYPE.CDC;
-const obj = {
-  name: "StyleSheet",
+const Semicolon = tokenize.TYPE.Semicolon;
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const Delim = tokenize.TYPE.Delim;
+let obj = {
+  name: "Raw",
   structure: obj2,
-  parse() {
+  parse(arg0, balanceEnd, arg2) {
+    let scanner2;
+    let scanner3;
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      do {
-        let tokenType = self.scanner.tokenType;
-        if (WhiteSpace === tokenType) {
-          let iter2 = self.scanner;
-          let nextResult = iter2.next();
-        } else {
-          let CommentResult;
-          if (Comment === tokenType) {
-            let source = self.scanner.source;
-            if (33 !== source.charCodeAt(self.scanner.tokenStart + 2)) {
-              let iter = self.scanner;
-              let nextResult1 = iter.next();
-            } else {
-              CommentResult = self.Comment();
-            }
-          } else if (CDO === tokenType) {
-            CommentResult = self.CDO();
-          } else if (CDC === tokenType) {
-            CommentResult = self.CDC();
-          } else if (AtKeyword === tokenType) {
-            CommentResult = self.parseWithFallback(self.Atrule, consumeRaw);
-          } else {
-            CommentResult = self.parseWithFallback(self.Rule, consumeRaw);
-          }
-          let arr = list.push(CommentResult);
-        }
-      } while (!self.scanner.eof);
+    let tmp = balanceEnd;
+    const scanner = this.scanner;
+    const tokenStart1 = scanner.getTokenStart(arg0);
+    ({ scanner: scanner2, scanner: scanner3 } = this);
+    const skip = scanner2.skip;
+    const getRawLength = scanner3.getRawLength;
+    if (!balanceEnd) {
+      tmp = balanceEnd;
     }
-    const element = { type: "StyleSheet", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
-    return element;
+    skip(getRawLength(arg0, tmp));
+    if (arg2) {
+      let tokenStart;
+      if (self.scanner.tokenStart > tokenStart1) {
+        tokenStart = getOffsetExcludeWS.call(self);
+      }
+      const obj = { type: "Raw", loc: self.getLocation(tokenStart1, tokenStart), value: str.substring(tokenStart1, tokenStart) };
+      return obj;
+    }
+    tokenStart = self.scanner.tokenStart;
   },
-  generate(arg0) {
-    this.children(arg0);
+  generate(value) {
+    this.chunk(value.value);
   },
-  walkContext: "stylesheet"
+  mode: {
+    default: balanceEnd,
+    leftCurlyBracket(arg0) {
+      let num = 0;
+      if (arg0 === LeftCurlyBracket) {
+        num = 1;
+      }
+      return num;
+    },
+    leftCurlyBracketOrSemicolon(arg0) {
+      let num;
+      if (arg0 === LeftCurlyBracket) {
+        num = 1;
+      } else {
+        num = 0;
+      }
+      return num;
+    },
+    exclamationMarkOrSemicolon(arg0, str, sum) {
+      if (arg0 !== Delim) {
+        let num2 = 0;
+        return num2;
+      }
+      num2 = 1;
+    },
+    semicolonIncluded(arg0) {
+      let num = 0;
+      if (arg0 === Semicolon) {
+        num = 2;
+      }
+      return num;
+    }
+  }
 };
-obj2 = { children: items };
-items = [["Comment", "CDO", "CDC", "Atrule", "Rule", "Raw"]];
+obj2 = { value: String };
 
 export default obj;

@@ -1,16 +1,16 @@
-// Module ID: 13453
-// Function ID: 13454
+// Module ID: 13485
+// Function ID: 13486
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 13446, 21, 5140, 13443, 1499, 11815, 5837, 1113, 13448, 8043, 6159, 575, 5751, 2530, 13454, 13455, 13452, 6822, 5758, 2]
+// Dependencies: [5, 32, 19, 13478, 21, 5170, 13475, 1499, 11847, 5869, 1113, 13480, 8076, 6191, 575, 5783, 2530, 13486, 13487, 13484, 6855, 5790, 2]
 // Exports: AcceptStep
 
-// Module 13453 (AcceptStep)
+// Module 13485 (AcceptStep)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13446 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13478 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, dependencyMap, id;
@@ -158,7 +158,7 @@ export function AcceptStep(code) {
   };
   const tmp = closure_10();
   const tmp3 = dependencyMap;
-  const tmp4 = character(13443)(code);
+  const tmp4 = character(13475)(code);
   obj = code(1499);
   dependencyMap = obj.useNavigation();
   [tmp7, c3] = obj(react.useState(false), 2);
@@ -168,14 +168,14 @@ export function AcceptStep(code) {
   } else {
     let str = tmp4.displayNoun;
     const linkedGuild = tmp4.linkedGuild;
-    const tmp2Result = character(13448);
-    const ModalContent = tmp5(8043).ModalContent;
+    const tmp2Result = character(13480);
+    const ModalContent = tmp5(8076).ModalContent;
     let obj2 = { spacing: tmp2(575).space.PX_48, children: items1 };
-    const Stack2 = tmp5(6159).Stack;
+    const Stack2 = tmp5(6191).Stack;
     let obj3 = { spacing: tmp2(575).space.PX_24, children: items };
-    const Stack3 = tmp5(6159).Stack;
+    const Stack3 = tmp5(6191).Stack;
     let obj4 = { variant: "heading-xl/semibold", style: tmp.text, children: formatToPlainString(WmxMAI, obj7) };
-    const Text2 = tmp5(5751).Text;
+    const Text2 = tmp5(5783).Text;
     const intl4 = tmp5(1113).intl;
     formatToPlainString = intl4.formatToPlainString;
     WmxMAI = tmp2(2530).WmxMAI;
@@ -187,20 +187,20 @@ export function AcceptStep(code) {
     obj7 = { displayNoun: str };
     items = [tmp11(Text2, obj4), ];
     const obj8 = { linkedGuild };
-    items[1] = closure_8(character(13454), obj8);
+    items[1] = closure_8(character(13486), obj8);
     items1 = [tmp9(Stack3, obj3), ];
     const obj9 = { spacing: character(575).space.PX_24, children: items2 };
-    const Stack = tmp5(6159).Stack;
+    const Stack = tmp5(6191).Stack;
     const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(2530).yFqGy8) };
-    const Text = tmp5(5751).Text;
+    const Text = tmp5(5783).Text;
     intl = tmp5(1113).intl;
-    items2 = [tmp11(Text, obj10), tmp11(tmp2(13455), {})];
+    items2 = [tmp11(Text, obj10), tmp11(tmp2(13487), {})];
     items1[1] = closure_9(Stack, obj9);
     items3 = [tmp11(ModalContent, obj6), ];
     const obj11 = { children: closure_9(ButtonGroup, obj12) };
-    const ModalFooter = tmp5(13452).ModalFooter;
+    const ModalFooter = tmp5(13484).ModalFooter;
     obj12 = { style: tmp.buttonGroup, children: items4 };
-    ButtonGroup = tmp5(6822).ButtonGroup;
+    ButtonGroup = tmp5(6855).ButtonGroup;
     const obj13 = {
       text: intl2.string(character(2530).BaZ6nt),
       size: "lg",
@@ -210,11 +210,11 @@ export function AcceptStep(code) {
           return obj(...arguments);
         }
     };
-    const Button = tmp5(5758).Button;
+    const Button = tmp5(5790).Button;
     intl2 = tmp5(1113).intl;
     items4 = [tmp11(Button, obj13), ];
     const obj14 = { text: intl3.string(code(1113).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled: tmp7 };
-    const Button2 = tmp5(5758).Button;
+    const Button2 = tmp5(5790).Button;
     intl3 = tmp5(1113).intl;
     items4[1] = closure_8(Button2, obj14);
     items3[1] = closure_8(ModalFooter, obj11);

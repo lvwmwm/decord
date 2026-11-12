@@ -1,19 +1,19 @@
-// Module ID: 7545
-// Function ID: 7546
+// Module ID: 7578
+// Function ID: 7579
 // Name: GameActionCreators
-// Dependencies: [5, 2138, 1072, 1282, 572, 4984, 12, 2]
+// Dependencies: [5, 2138, 1072, 1282, 572, 5014, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 7545 (GameActionCreators)
+// Module 7578 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Timers from "Timers" /* 4984 */;
+import Timers from "Timers" /* 5014 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GameStore from "GameStore" /* 2138 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, closure_3;
+let c1;
 
 function requestGames() {
   return obj(...arguments);
@@ -98,78 +98,45 @@ let obj = function _requestGames() {
 };
 obj = function _fetchGamesWithSupplementalData() {
   obj = _asyncToGenerator(async (gameIds) => {
+    let c2;
+    let closure_3;
     let closure_1 = arg1;
     let c4 = 0;
     let c5 = 0;
     const iter = (async (arg0, value) => {
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
+      let flag;
+      if (1 === c4) {
         if (arg0 === 1) {
+          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          let flag;
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            } else {
-              closure_3 = tmp3;
-              c2 = 0;
-              flag = closure_1;
-              if (closure_1 === undefined) {
-                flag = false;
-              }
-              c4 = 1;
-              c5 = 1;
-              return { value: "flexDirection", done: null };
-            }
-          } else {
-            if (1 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                return { value, done: true };
-              } else if (0 !== gameIds.length) {
-                const tmp5 = flag;
-                if (tmp5) {
-                  const obj6 = { type: "GAME_FETCH", gameIds, force: flag };
-                  const obj2 = closure_131_1(closure_131_2[4]);
-                  obj2.dispatch(obj6);
-                }
-                c4 = 2;
-                c5 = 1;
-                const obj7 = { value: closure_131_8.queue(gameIds), done: false };
-                return obj7;
-              }
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            }
-            c5 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } catch (tmp17) {
           c5 = 3;
-          throw tmp17;
+          return { value, done: true };
+        } else if (0 !== gameIds.length) {
+          const tmp5 = flag;
+          if (tmp5) {
+            const obj6 = { type: "GAME_FETCH", gameIds, force: flag };
+            const obj2 = closure_131_1(closure_131_2[4]);
+            obj2.dispatch(obj6);
+          }
+          c4 = 2;
+          c5 = 1;
+          const obj7 = { value: closure_131_8.queue(gameIds), done: false };
+          return obj7;
         }
+      } else if (arg0 === 1) {
+        c5 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c5 = 3;
+        return { value, done: true };
       }
+      await "HermesInternal";
+      flag = closure_1;
+      if (closure_1 === undefined) {
+        flag = false;
+      }
+      return "flexDirection";
     })();
     iter.next();
     return iter;

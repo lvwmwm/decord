@@ -1,13 +1,13 @@
-// Module ID: 8059
-// Function ID: 8060
+// Module ID: 8092
+// Function ID: 8093
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 3, 560, 5868, 1377, 2]
+// Dependencies: [5, 3, 560, 5900, 1377, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession, useIsAgeVerificationAuthSessionOpen
 
-// Module 8059 (AgeVerificationAuthSession)
+// Module 8092 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import react_nativeDefault from "react-native" /* 5868 */;
+import react_nativeDefault from "react-native" /* 5900 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;

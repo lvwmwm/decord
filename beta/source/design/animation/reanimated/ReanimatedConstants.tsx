@@ -1,9 +1,9 @@
-// Module ID: 5371
-// Function ID: 5372
+// Module ID: 5403
+// Function ID: 5404
 // Name: ReanimatedConstants
 // Dependencies: [1652, 2]
 
-// Module 5371 (ReanimatedConstants)
+// Module 5403 (ReanimatedConstants)
 import _mod1652 from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 

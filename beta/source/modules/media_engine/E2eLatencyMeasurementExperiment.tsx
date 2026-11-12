@@ -1,9 +1,9 @@
-// Module ID: 15969
-// Function ID: 15970
+// Module ID: 16001
+// Function ID: 16002
 // Name: E2eLatencyMeasurementExperiment
 // Dependencies: [1449, 2]
 
-// Module 15969 (E2eLatencyMeasurementExperiment)
+// Module 16001 (E2eLatencyMeasurementExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

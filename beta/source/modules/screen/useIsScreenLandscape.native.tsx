@@ -1,10 +1,10 @@
-// Module ID: 8844
-// Function ID: 8845
+// Module ID: 8877
+// Function ID: 8878
 // Name: useIsScreenLandscape
 // Dependencies: [19, 1494, 1496, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 8844 (useIsScreenLandscape)
+// Module 8877 (useIsScreenLandscape)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1496 */;
 import react from "react" /* 19 */;
 import DimensionsStore from "DimensionsStore" /* 1494 */;

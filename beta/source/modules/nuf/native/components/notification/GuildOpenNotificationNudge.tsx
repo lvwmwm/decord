@@ -1,24 +1,24 @@
-// Module ID: 18953
-// Function ID: 18954
+// Module ID: 18991
+// Function ID: 18992
 // Name: GuildOpenNotificationNudge
-// Dependencies: [32, 19, 5052, 5011, 5171, 6830, 14207, 14208, 1072, 21, 504, 18954, 1113, 17798, 14209, 7337, 5189, 7641, 4973, 14210, 5374, 18953, 2118, 2]
+// Dependencies: [32, 19, 5082, 5041, 5203, 6863, 14239, 14240, 1072, 21, 504, 18992, 1113, 17836, 14241, 7370, 5221, 7674, 5003, 14242, 5406, 18991, 2118, 2]
 // Exports: default, useGuildOpenNudge
 
-// Module 18953 (GuildOpenNotificationNudge)
+// Module 18991 (GuildOpenNotificationNudge)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7337 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 14207 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14210 */;
-import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 18954 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7370 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 14239 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14242 */;
+import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 18992 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6830 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14208 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14240 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -81,9 +81,9 @@ export function useGuildOpenNudge() {
     }
     return guildId;
   });
-  let obj2 = stateFromStores3(17798);
+  let obj2 = stateFromStores3(17836);
   const inHoldout = obj2.useConfig({ location: "useGuildOpenNudge" }).inHoldout;
-  let obj3 = stateFromStores(14209);
+  let obj3 = stateFromStores(14241);
   const canSeePushNotificationNudge = obj3.useCanSeePushNotificationNudge();
   const items1 = [UserGuildSettingsStore];
   const obj4 = stateFromStores(504);
@@ -148,7 +148,7 @@ export function useGuildOpenNudge() {
   });
   const obj7 = first1;
   if (tmp13) {
-    const tmpResult = tmp(5189);
+    const tmpResult = tmp(5221);
     tmp13 = !tmpResult.isPseudoGuildId(stateFromStores);
   }
   if (tmp13) {
@@ -170,10 +170,10 @@ export function useGuildOpenNudge() {
     tmp13 = stateFromStores4;
   }
   let prop = null;
-  const useSelectedTimeRecurringGuildDismissibleContent = tmp(7641).useSelectedTimeRecurringGuildDismissibleContent;
-  tmp(7641);
+  const useSelectedTimeRecurringGuildDismissibleContent = tmp(7674).useSelectedTimeRecurringGuildDismissibleContent;
+  tmp(7674);
   if (tmp13) {
-    prop = tmp(4973).DismissibleContent.NOTIFICATION_NUDGE_GUILD_OPEN_PER_GUILD;
+    prop = tmp(5003).DismissibleContent.NOTIFICATION_NUDGE_GUILD_OPEN_PER_GUILD;
   }
   let tmp17 = stateFromStores;
   if (stateFromStores == null) {
@@ -194,7 +194,7 @@ export function useGuildOpenNudge() {
       const result = obj.setPushPermissionReactivationSeen(PermissionPromptType.GUILD_OPEN_BOTTOM_SHEET);
       const obj3 = { guildId: tmp, markAsDismissed };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(18953, dependencyMap.paths), c16, obj3);
+      obj2.openLazy(asyncRequire(18991, dependencyMap.paths), c16, obj3);
     }
   }, items6);
 }

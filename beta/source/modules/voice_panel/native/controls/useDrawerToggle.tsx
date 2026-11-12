@@ -1,12 +1,12 @@
-// Module ID: 19697
-// Function ID: 19698
+// Module ID: 19735
+// Function ID: 19736
 // Name: useDrawerToggle
-// Dependencies: [19, 11361, 11362, 1652, 8915, 19586, 1113, 2]
+// Dependencies: [19, 11393, 11394, 1652, 8948, 19624, 1113, 2]
 // Exports: default
 
-// Module 19697 (useDrawerToggle)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11361 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19586 */;
+// Module 19735 (useDrawerToggle)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19624 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

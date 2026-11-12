@@ -1,14 +1,14 @@
-// Module ID: 13648
-// Function ID: 13649
+// Module ID: 13680
+// Function ID: 13681
 // Name: ExperimentalCheckpointIcon
-// Dependencies: [19, 21, 575, 5841, 13649, 2]
+// Dependencies: [19, 21, 575, 5873, 13681, 2]
 // Exports: ExperimentalCheckpointIcon
 
-// Module 13648 (ExperimentalCheckpointIcon)
+// Module 13680 (ExperimentalCheckpointIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 13649 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 13681 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

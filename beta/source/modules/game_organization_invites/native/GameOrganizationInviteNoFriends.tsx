@@ -1,21 +1,21 @@
-// Module ID: 16102
-// Function ID: 16103
+// Module ID: 16134
+// Function ID: 16135
 // Name: GameOrganizationInviteNoFriends
-// Dependencies: [19, 21, 5140, 575, 5374, 5315, 1113, 2530, 6159, 5751, 5758, 2]
+// Dependencies: [19, 21, 5170, 575, 5406, 5347, 1113, 2530, 6191, 5783, 5790, 2]
 // Exports: default
 
-// Module 16102 (GameOrganizationInviteNoFriends)
+// Module 16134 (GameOrganizationInviteNoFriends)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef2530 from "module_2530" /* 2530 */;
-import RootNavigationRef from "RootNavigationRef" /* 5315 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import Stack_Stack from "Stack/Stack" /* 6159 */;
+import RootNavigationRef from "RootNavigationRef" /* 5347 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import Stack_Stack from "Stack/Stack" /* 6191 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,22 +1,22 @@
-// Module ID: 11155
-// Function ID: 11156
+// Module ID: 11187
+// Function ID: 11188
 // Name: GuildAntiRaidHooks
-// Dependencies: [1231, 5011, 5072, 5171, 1385, 11140, 8554, 1072, 563, 11, 8553, 1084, 5077, 11156, 2]
+// Dependencies: [1231, 5041, 5102, 5203, 1385, 11172, 8587, 1072, 563, 11, 8586, 1084, 5107, 11188, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 11155 (GuildAntiRaidHooks)
+// Module 11187 (GuildAntiRaidHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8553 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8554 */;
-import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 11156 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8586 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8587 */;
+import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 11188 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11140 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11172 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ function getFirstGuildIncidentId(guildId) {
         let tmp20 = require;
         let obj6 = GuildAntiRaidUtils;
         if (obj6.hasDetectedActivity(tmp19)) {
-          let tmp20Result = tmp20(8553);
+          let tmp20Result = tmp20(8586);
           if (!tmp20Result.isUnderLockdown(tmp19)) {
             let tmp13 = BigFlagUtilsAll;
             let hasAny = tmp13.hasAny;
@@ -56,7 +56,7 @@ function getFirstGuildIncidentId(guildId) {
             }
           }
         } else {
-          let tmp20Result2 = tmp20(8553);
+          let tmp20Result2 = tmp20(8586);
         }
       }
     }
@@ -95,7 +95,7 @@ export function useFirstGuildIncidentId() {
       let tmp17 = tmp16;
       if (null != tmp16) {
         let tmp19 = stateFromStores1;
-        let obj7 = stateFromStores1(8553);
+        let obj7 = stateFromStores1(8586);
         if (obj7.hasDetectedActivity(tmp17)) {
           let tmp11 = BigFlagUtilsAll;
           let hasAny = tmp11.hasAny;
@@ -107,7 +107,7 @@ export function useFirstGuildIncidentId() {
             return id;
           }
         } else {
-          let tmp19Result = tmp19(8553);
+          let tmp19Result = tmp19(8586);
         }
       }
     }
@@ -147,7 +147,7 @@ export function useGuildIncidentsState(id) {
   const obj3 = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: isUnderLockdownResult };
   isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    const tmpResult = tmp(8553);
+    const tmpResult = tmp(8586);
     isUnderLockdownResult = tmpResult.isUnderLockdown(stateFromStores1);
   }
   return obj3;

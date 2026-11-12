@@ -1,9 +1,9 @@
-// Module ID: 7036
-// Function ID: 7037
+// Module ID: 7069
+// Function ID: 7070
 // Name: TableRowConstants
 // Dependencies: [2]
 
-// Module 7036 (TableRowConstants)
+// Module 7069 (TableRowConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowConstants.tsx");

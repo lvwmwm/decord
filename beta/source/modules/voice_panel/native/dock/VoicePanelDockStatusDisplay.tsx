@@ -1,20 +1,20 @@
-// Module ID: 19603
-// Function ID: 19604
+// Module ID: 19641
+// Function ID: 19642
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 19601, 11381, 21, 5751, 5140, 1652, 1113, 3184, 5370, 5761, 19604, 5199, 1705, 11362, 2]
+// Dependencies: [32, 19, 17, 19639, 11413, 21, 5783, 5170, 1652, 1113, 3184, 5402, 5793, 19642, 5231, 1705, 11394, 2]
 
-// Module 19603 (VoicePanelDockStatusDisplay)
+// Module 19641 (VoicePanelDockStatusDisplay)
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5370 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import spring_spring from "spring/spring" /* 5761 */;
+import timing_timing from "timing/timing" /* 5402 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import spring_spring from "spring/spring" /* 5793 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19601 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11381 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19639 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -170,10 +170,10 @@ function StatusText(status) {
   const tmp44 = sharedValue;
   if (null != status.userId) {
     const obj3 = { userId: status.userId, dimmed: "left" === status.kind };
-    tmp46 = closure_8(tmp27(19604).DockUserTitle, obj3);
+    tmp46 = closure_8(tmp27(19642).DockUserTitle, obj3);
     tmp47 = closure_8;
   } else {
-    tmp46 = closure_8(tmp27(19604).DockChannelTitle, {});
+    tmp46 = closure_8(tmp27(19642).DockChannelTitle, {});
     tmp47 = closure_8;
   }
   items5 = [tmp46, ];
@@ -183,7 +183,7 @@ function StatusText(status) {
     items6 = [tmp.subtext, animatedStyle1];
     const View2 = tmp44(1652).View;
     let str4 = "text-voice-connected";
-    Text = tmp27(5751).Text;
+    Text = tmp27(5783).Text;
     if ("left" === kind2) {
       str4 = "text-muted";
     }
@@ -577,7 +577,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let onExited;
   let tmp11;
   let userId;
-  const f118915 = () => {
+  const f119033 = () => {
     let items;
     if ("channel" === obj2.kind) {
       items = [];
@@ -612,8 +612,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp7 = _slicedToArray(obj.useState(() => ({ status: obj2, enter: null })), 2);
   first = tmp7[0];
-  [arr, tmp11] = obj.useState(f118915);
-  _slicedToArray(obj.useState(f118915), 2);
+  [arr, tmp11] = obj.useState(f119033);
+  _slicedToArray(obj.useState(f119033), 2);
   const tmp12 = _slicedToArray(obj.useState(() => {
     map = new Map();
     return map;

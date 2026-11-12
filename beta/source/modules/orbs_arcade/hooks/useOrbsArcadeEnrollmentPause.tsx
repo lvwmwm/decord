@@ -1,12 +1,12 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17399
+// Function ID: 17400
 // Name: useOrbsArcadeEnrollmentPause
-// Dependencies: [32, 19, 7701, 1089, 4962, 2]
+// Dependencies: [32, 19, 7734, 1089, 4992, 2]
 // Exports: default
 
-// Module 17362 (useOrbsArcadeEnrollmentPause)
-import DateUtils from "DateUtils" /* 4962 */;
-import useIntervalDefault from "useInterval" /* 7701 */;
+// Module 17399 (useOrbsArcadeEnrollmentPause)
+import DateUtils from "DateUtils" /* 4992 */;
+import useIntervalDefault from "useInterval" /* 7734 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

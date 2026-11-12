@@ -1,27 +1,27 @@
-// Module ID: 19580
-// Function ID: 19581
+// Module ID: 19618
+// Function ID: 19619
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 4989, 11363, 11381, 11382, 21, 5140, 575, 19581, 1652, 9996, 1113, 9998, 5376, 11362, 504, 1627, 19600, 11389, 1705, 6003, 11367, 5420, 5370, 19602, 19603, 19607, 2]
+// Dependencies: [19, 17, 5019, 11395, 11413, 11414, 21, 5170, 575, 19619, 1652, 10029, 1113, 10031, 5408, 11394, 504, 1627, 19638, 11421, 1705, 6035, 11399, 5452, 5402, 19640, 19641, 19645, 2]
 
-// Module 19580 (VoicePanelDock)
+// Module 19618 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import HapticUtils from "HapticUtils" /* 5376 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
-import ContextMenu from "ContextMenu" /* 9996 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9998 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11367 */;
-import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 19581 */;
+import HapticUtils from "HapticUtils" /* 5408 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
+import ContextMenu from "ContextMenu" /* 10029 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 10031 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11399 */;
+import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 19619 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11381 */;
-import GestureConstants from "GestureConstants" /* 11382 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
+import GestureConstants from "GestureConstants" /* 11414 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let _Math3, absolute, bound, first, max, maxResult, num, result1, result2, result3, set, set2, set2Result, tmp16;
@@ -49,8 +49,8 @@ let size;
 let tmp;
 let unpackModuleId;
 const _mod1705 = tmp(1705);
-const timing_timing = tmp(5370);
-const VoicePanelSheetMorph = tmp(11389);
+const timing_timing = tmp(5402);
+const VoicePanelSheetMorph = tmp(11421);
 function DockPressTarget(arg0) {
   let channel;
   let onExpand;

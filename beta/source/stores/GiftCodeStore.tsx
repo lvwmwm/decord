@@ -1,15 +1,15 @@
-// Module ID: 11511
-// Function ID: 11512
+// Module ID: 11543
+// Function ID: 11544
 // Name: GiftCodeStore
-// Dependencies: [10682, 1072, 4984, 2166, 6577, 11512, 504, 572, 2]
+// Dependencies: [10714, 1072, 5014, 2166, 6609, 11544, 504, 572, 2]
 
-// Module 11511 (GiftCodeStore)
+// Module 11543 (GiftCodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6577 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11512 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10682 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6609 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11544 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10714 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 function updateGiftCode(giftCode) {
-  const f100929 = () => {
+  const f101039 = () => {
     let closure_0 = code;
     const value = map.get(code);
     const obj = map;
@@ -35,7 +35,7 @@ function updateGiftCode(giftCode) {
           giftCodeStore.emitChange();
         } else if (null != closure_7[code]) {
           const _Math = Math;
-          closure_7[code].start(Math.min(hasOwnProperty, diff), f100929);
+          closure_7[code].start(Math.min(hasOwnProperty, diff), f101039);
         }
       }
     }
@@ -51,7 +51,7 @@ function updateGiftCode(giftCode) {
     if (null != fromServer.expiresAt) {
       const self = this;
       const self2 = this;
-      const timeout = new code(4984).Timeout();
+      const timeout = new code(5014).Timeout();
       closure_7[code] = timeout;
       const value2 = obj.get(code);
       if (null != value2) {
@@ -66,7 +66,7 @@ function updateGiftCode(giftCode) {
             giftCodeStore.emitChange();
           } else if (null != tmp14[code]) {
             let _Math = Math;
-            tmp14[code].start(Math.min(closure_5, diff), f100929);
+            tmp14[code].start(Math.min(closure_5, diff), f101039);
           }
         }
       }

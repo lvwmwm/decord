@@ -1,34 +1,34 @@
-// Module ID: 17390
-// Function ID: 17391
+// Module ID: 17427
+// Function ID: 17428
 // Name: QuestDockHooks
-// Dependencies: [32, 19, 17391, 6836, 17393, 504, 17394, 17397, 11384, 17395, 17398, 1652, 10210, 1705, 17392, 1089, 9807, 9775, 9778, 17400, 7948, 6839, 5374, 17401, 2118, 1493, 9785, 9911, 5724, 575, 2]
+// Dependencies: [32, 19, 17428, 6869, 17430, 504, 17431, 17434, 11416, 17432, 17435, 1652, 10242, 1705, 17429, 1089, 9840, 9808, 9811, 17437, 7981, 6872, 5406, 17438, 2118, 1493, 9818, 9944, 5756, 575, 2]
 // Exports: useActionSheetPressHandler, useBountyPreviewImageUrl, useIsQuestDockExpanded, useQuestDockAppThemedBackgroundColor, useQuestDockDismissalReset, useQuestDockExpandHandler, useQuestDockExternalOffset, useQuestDockModeAnimatedReaction
 
-// Module 17390 (QuestDockHooks)
+// Module 17427 (QuestDockHooks)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import useToken from "useToken" /* 5724 */;
-import QuestTypes from "QuestTypes" /* 6839 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7948 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9775 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9778 */;
-import AssetUtils from "AssetUtils" /* 9785 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9911 */;
-import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11384 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 17394 */;
-import useYouBarMargins from "useYouBarMargins" /* 17395 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 17397 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17398 */;
-import AdCreativeUtils from "AdCreativeUtils" /* 17400 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import useToken from "useToken" /* 5756 */;
+import QuestTypes from "QuestTypes" /* 6872 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9808 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9811 */;
+import AssetUtils from "AssetUtils" /* 9818 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9944 */;
+import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11416 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 17431 */;
+import useYouBarMargins from "useYouBarMargins" /* 17432 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 17434 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17435 */;
+import AdCreativeUtils from "AdCreativeUtils" /* 17437 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 17391 */;
-import QuestConstants from "QuestConstants" /* 6836 */;
-import QuestDockConstants from "QuestDockConstants" /* 17393 */;
+import QuestDockStore from "QuestDockStore" /* 17428 */;
+import QuestConstants from "QuestConstants" /* 6869 */;
+import QuestDockConstants from "QuestDockConstants" /* 17430 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,8 +44,8 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const _mod1705 = tmp(1705);
-const cheapWorkletShallowEqual = tmp(10210);
-const QuestDockUtils = tmp(17392);
+const cheapWorkletShallowEqual = tmp(10242);
+const QuestDockUtils = tmp(17429);
 ({ DEFAULT_PORTRAIT_ASPECT_RATIO: metroRequire, QuestDockMode: metroImportDefault } = QuestConstants);
 ({ QUEST_DOCK_CLOSED_HEIGHT: metroImportAll, QUEST_DOCK_COLLAPSED_HEIGHT: c9, QUEST_DOCK_EXTERNAL_OFFSET_CLOSED: c10, QUEST_DOCK_EXTERNAL_OFFSET_COLLAPSED_WITH_YOU_BAR: unpackModuleId, QUEST_DOCK_EXTERNAL_OFFSET_EXPANDED_WITH_YOU_BAR: closure_12, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: map1 } = QuestDockConstants);
 let closure_14 = { code: "(function QuestDockHooksTsx1(){let[restingQuestDockMode,minExpandedContentHeight,windowDimensions,safeArea]=this.__closure;return{restingQuestDockMode:restingQuestDockMode.get(),minExpandedContentHeight:minExpandedContentHeight.get(),windowWidth:windowDimensions.get().width,windowHeight:windowDimensions.get().height,safeArea:safeArea.get()};})" };
@@ -287,8 +287,8 @@ export function useQuestDockExternalOffset() {
 }
 export function useQuestDockDismissalReset() {
   let setRestingQuestDockMode;
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(17397).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(17394).QuestDockGestureContext).activeQuestDockMode;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(17434).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(17431).QuestDockGestureContext).activeQuestDockMode;
   const items = [setRestingQuestDockMode, activeQuestDockMode];
   const effect = react.useEffect(() => {
     let closure_0;
@@ -333,7 +333,7 @@ export function useActionSheetPressHandler(questCreative) {
     captureAdUserAction(obj);
     const obj3 = ActionSheetActionCreatorsDefault;
     const obj4 = { creative, impressionId: questImpressionId };
-    obj3.openLazy(asyncRequire(17401, dependencyMap.paths), "QuestDockContextMenuActionSheet", obj4);
+    obj3.openLazy(asyncRequire(17438, dependencyMap.paths), "QuestDockContextMenuActionSheet", obj4);
   }, items);
 }
 export function useQuestDockExpandHandler(questDockCreative) {

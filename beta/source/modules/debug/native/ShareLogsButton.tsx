@@ -1,14 +1,14 @@
-// Module ID: 17890
-// Function ID: 17891
+// Module ID: 17928
+// Function ID: 17929
 // Name: ShareLogsButton
-// Dependencies: [19, 21, 7043, 1113, 9010, 7, 12410, 2]
+// Dependencies: [19, 21, 7076, 1113, 9043, 7, 12442, 2]
 
-// Module 17890 (ShareLogsButton)
+// Module 17928 (ShareLogsButton)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Pressables from "Pressables" /* 7043 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 9010 */;
+import Pressables from "Pressables" /* 7076 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 9043 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

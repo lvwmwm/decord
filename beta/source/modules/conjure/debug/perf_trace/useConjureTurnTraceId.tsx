@@ -1,11 +1,11 @@
-// Module ID: 12847
-// Function ID: 12848
+// Module ID: 12879
+// Function ID: 12880
 // Name: useConjureTurnTraceId
-// Dependencies: [10976, 12374, 10971, 504, 2]
+// Dependencies: [11008, 12406, 11003, 504, 2]
 // Exports: default
 
-// Module 12847 (useConjureTurnTraceId)
-import ConjureDebugStore from "ConjureDebugStore" /* 10976 */;
+// Module 12879 (useConjureTurnTraceId)
+import ConjureDebugStore from "ConjureDebugStore" /* 11008 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,17 +1,17 @@
-// Module ID: 11128
-// Function ID: 11129
+// Module ID: 11160
+// Function ID: 11161
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 5310, 5199, 11129, 5776, 5888, 10264, 8740, 5340, 2]
+// Dependencies: [19, 21, 5342, 5231, 11161, 5808, 5920, 10296, 8773, 5372, 2]
 // Exports: default
 
-// Module 11128 (ChannelVoiceChatModal)
+// Module 11160 (ChannelVoiceChatModal)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 5199 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5310 */;
-import reactDefault from "react" /* 5340 */;
-import useChannelNameDefault from "useChannelName" /* 5776 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5888 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10264 */;
+import native from "native" /* 5231 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5342 */;
+import reactDefault from "react" /* 5372 */;
+import useChannelNameDefault from "useChannelName" /* 5808 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5920 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10296 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ export default function ChannelVoiceChatModal(channel) {
   if (tmp2 == null) {
     str = "";
   }
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={tmp4(channel(8740).StageIcon, { size: "sm" })} render={function render() {
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={tmp4(channel(8773).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     const Provider = reactDefault.Provider;
     const tmp2 = channel;

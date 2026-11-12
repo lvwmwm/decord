@@ -1,19 +1,19 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14520
+// Function ID: 14521
 // Name: ContactSyncManager
-// Dependencies: [5, 6627, 1385, 14486, 14485, 1072, 510, 14487, 7350, 7270, 2]
+// Dependencies: [5, 6659, 1385, 14518, 14517, 1072, 510, 14519, 7383, 7303, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 14488 (ContactSyncManager)
+// Module 14520 (ContactSyncManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14485 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14487 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14517 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14519 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
 import UserStore from "UserStore" /* 1385 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14486 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14518 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, localAccount, set;

@@ -1,10 +1,10 @@
-// Module ID: 6604
-// Function ID: 6605
+// Module ID: 6636
+// Function ID: 6637
 // Name: StripeUtils
-// Dependencies: [5, 32, 2186, 1072, 3, 6605, 1242, 6606, 1282, 504, 2]
+// Dependencies: [5, 32, 2186, 1072, 3, 6637, 1242, 6638, 1282, 504, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 6604 (StripeUtils)
+// Module 6636 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -66,7 +66,7 @@ function getStripe(payment_gateway_merchant_account_id) {
   } else {
     const tmp3 = _require;
     let tmp4 = dependencyMap;
-    let obj2 = require("module_6606");
+    let obj2 = require("module_6638");
     let closure_1 = obj2.loadStripe(tmp);
     const tmp6 = (async (arg0, value) => {
       if (c5 === 2) {

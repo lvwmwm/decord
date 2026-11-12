@@ -1,13 +1,13 @@
-// Module ID: 19336
-// Function ID: 19337
+// Module ID: 19374
+// Function ID: 19375
 // Name: useMessageRequestTimestampText
-// Dependencies: [6897, 11, 14412, 504, 2166, 8417, 2]
+// Dependencies: [6930, 11, 14444, 504, 2166, 8450, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 19336 (useMessageRequestTimestampText)
+// Module 19374 (useMessageRequestTimestampText)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import ReadStateStore from "ReadStateStore" /* 6897 */;
+import ReadStateStore from "ReadStateStore" /* 6930 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -69,7 +69,7 @@ export function useMessageRequestRelativeTimestampText(channel) {
     }
     let str = "";
     if (null != extractTimestampResult) {
-      const tmpResult = tmp(8417);
+      const tmpResult = tmp(8450);
       str = tmpResult.getTimestampString(extractTimestampResult);
     }
     return str;

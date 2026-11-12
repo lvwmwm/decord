@@ -1,10 +1,10 @@
-// Module ID: 13870
-// Function ID: 13871
+// Module ID: 13902
+// Function ID: 13903
 // Name: useCheckpointCharacterTextureSwaps
 // Dependencies: [32, 5, 19, 2]
 // Exports: useCheckpointCharacterTextureSwaps
 
-// Module 13870 (useCheckpointCharacterTextureSwaps)
+// Module 13902 (useCheckpointCharacterTextureSwaps)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -20,177 +20,142 @@ let obj = function _swapTextures() {
     let c3;
     let v3;
     let closure_0 = arg0;
-    if (v3 === 2) {
-      v3 = 3;
-      const str = "Generator functions may not be called on executing generators";
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    if (1 === tmp4) {
       if (arg0 === 1) {
+        v3 = 3;
         throw value;
       } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        v3 = 2;
-        if (0 === c2) {
-          if (arg0 === 1) {
-            v3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            v3 = 3;
-            let obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_1 = tmp;
-            c0 = undefined;
-            c1 = undefined;
-            ({ textureManager: c0, shownUrls: c1, referencedAssets: c2, isStale: c3 } = closure_0);
-            map = undefined;
-            map1 = undefined;
-            map2 = undefined;
-            c2 = 1;
-            v3 = 1;
-            return { value: "flexDirection", done: null };
-          }
-        } else {
-          if (1 === tmp4) {
-            if (arg0 === 1) {
-              v3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              v3 = 3;
-              let obj4 = { value, done: true };
-              return obj4;
-            } else {
-              const _Map3 = Map;
-              const self7 = this;
-              const self8 = this;
-              map = new Map();
-              const _Object = Object;
-              const entries = Object.entries(c2);
-              const item = entries.forEach((item) => {
-                let tmp;
-                [tmp, ] = item;
-                if (closure_1_1.get(tmp) !== tmp2.uri) {
-                  const result = closure_1_4.set(tmp, tmp2.uri);
-                }
-              });
-              if (0 !== map.size) {
-                const _Map2 = Map;
-                const self3 = this;
-                const self4 = this;
-                map1 = new Map();
-                const _Array2 = Array;
-                const _Set = Set;
-                const self5 = this;
-                const self6 = this;
-                set = new Set(map.values());
-                c2 = 2;
-                v3 = 1;
-                const obj5 = {
-                  value: all(from(set, (() => {
-                                closure_0 = closure_1_1(function*(arg0, value) {
-                                  closure_0 = arg0;
-                                  if (c4 === 2) {
-                                    c4 = 3;
-                                    throw new TypeError("Generator functions may not be called on executing generators");
-                                  } else if (tmp3 === 3) {
-                                    if (arg0 === 1) {
-                                      throw value;
-                                    } else if (arg0 === 2) {
-                                      const obj2 = { value, done: true };
-                                      return obj2;
-                                    } else {
-                                      return { value: "HermesInternal", done: null };
-                                    }
-                                  } else {
-                                    try {
-                                      c4 = 2;
-                                      if (0 === c3) {
-                                        if (arg0 === 1) {
-                                          c4 = 3;
-                                          throw value;
-                                        } else if (arg0 === 2) {
-                                          c4 = 3;
-                                          const obj3 = { value, done: true };
-                                          return obj3;
-                                        } else {
-                                          let closure_2 = tmp4;
-                                          closure_1 = undefined;
-                                          c3 = 1;
-                                          c4 = 1;
-                                          const obj4 = { value: closure_0.load(closure_0), done: false };
-                                          return obj4;
-                                        }
-                                      } else if (arg0 === 1) {
-                                        c4 = 3;
-                                        throw value;
-                                      } else if (arg0 === 2) {
-                                        c4 = 3;
-                                        obj = { value, done: true };
-                                        return obj;
-                                      } else {
-                                        closure_1 = value;
-                                        if (null != closure_1) {
-                                          const result = closure_1_5.set(closure_0, closure_1);
-                                        }
-                                        c4 = 3;
-                                        return { value: "HermesInternal", done: null };
-                                      }
-                                    } catch (tmp16) {
-                                      c4 = 3;
-                                      throw tmp16;
-                                    }
-                                  }
-                                });
-                                return function() {
-                                  return closure_0(...arguments);
-                                };
-                              })())),
-                  done: false
-                };
-                return obj5;
-              }
-            }
-          } else if (arg0 === 1) {
-            v3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            v3 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else {
-            if (!v3()) {
-              const tmp6 = globalThis;
-              const _Map = Map;
-              const self = this;
-              const self2 = this;
-              map2 = new Map();
-              const item1 = map.forEach((item, index) => {
-                const value = closure_1_5.get(item);
-                if (null != value) {
-                  const result = closure_1_6.set(index, value);
-                  const result1 = closure_1_1.set(index, item);
-                }
-              });
-              c0.swap(map2);
-            }
-            const tmp16 = globalThis;
-            const _Array = Array;
-            c0.release(Array.from(map1.values()));
-          }
-          v3 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp26) {
         v3 = 3;
-        throw tmp26;
+        let obj4 = { value, done: true };
+        return obj4;
+      } else {
+        const _Map3 = Map;
+        const self7 = this;
+        const self8 = this;
+        map = new Map();
+        const _Object = Object;
+        const entries = Object.entries(c2);
+        const item = entries.forEach((item) => {
+          let tmp;
+          [tmp, ] = item;
+          if (closure_1_1.get(tmp) !== tmp2.uri) {
+            const result = closure_1_4.set(tmp, tmp2.uri);
+          }
+        });
+        if (0 !== map.size) {
+          const _Map2 = Map;
+          const self3 = this;
+          const self4 = this;
+          map1 = new Map();
+          const _Array2 = Array;
+          const _Set = Set;
+          const self5 = this;
+          const self6 = this;
+          set = new Set(map.values());
+          c2 = 2;
+          v3 = 1;
+          const obj5 = {
+            value: all(from(set, (() => {
+                    closure_0 = closure_1_1(function*(arg0, value) {
+                      closure_0 = arg0;
+                      if (c4 === 2) {
+                        c4 = 3;
+                        throw new TypeError("Generator functions may not be called on executing generators");
+                      } else if (tmp3 === 3) {
+                        if (arg0 === 1) {
+                          throw value;
+                        } else if (arg0 === 2) {
+                          const obj2 = { value, done: true };
+                          return obj2;
+                        } else {
+                          return { value: "HermesInternal", done: null };
+                        }
+                      } else {
+                        try {
+                          c4 = 2;
+                          if (0 === c3) {
+                            if (arg0 === 1) {
+                              c4 = 3;
+                              throw value;
+                            } else if (arg0 === 2) {
+                              c4 = 3;
+                              const obj3 = { value, done: true };
+                              return obj3;
+                            } else {
+                              let closure_2 = tmp4;
+                              closure_1 = undefined;
+                              c3 = 1;
+                              c4 = 1;
+                              const obj4 = { value: closure_0.load(closure_0), done: false };
+                              return obj4;
+                            }
+                          } else if (arg0 === 1) {
+                            c4 = 3;
+                            throw value;
+                          } else if (arg0 === 2) {
+                            c4 = 3;
+                            obj = { value, done: true };
+                            return obj;
+                          } else {
+                            closure_1 = value;
+                            if (null != closure_1) {
+                              const result = closure_1_5.set(closure_0, closure_1);
+                            }
+                            c4 = 3;
+                            return { value: "HermesInternal", done: null };
+                          }
+                        } catch (tmp16) {
+                          c4 = 3;
+                          throw tmp16;
+                        }
+                      }
+                    });
+                    return function() {
+                      return closure_0(...arguments);
+                    };
+                  })())),
+            done: false
+          };
+          return obj5;
+        }
       }
+    } else if (arg0 === 1) {
+      v3 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      v3 = 3;
+      obj = { value, done: true };
+      return obj;
+    } else {
+      if (!v3()) {
+        const tmp6 = globalThis;
+        const _Map = Map;
+        const self = this;
+        const self2 = this;
+        map2 = new Map();
+        const item1 = map.forEach((item, index) => {
+          const value = closure_1_5.get(item);
+          if (null != value) {
+            const result = closure_1_6.set(index, value);
+            const result1 = closure_1_1.set(index, item);
+          }
+        });
+        c0.swap(map2);
+      }
+      const tmp16 = globalThis;
+      const _Array = Array;
+      c0.release(Array.from(map1.values()));
     }
+    await "HermesInternal";
+    if (arg0 === 1) {
+      throw value;
+    }
+    if (arg0 === 2) {
+      return value;
+    }
+    let closure_1 = tmp;
+    ({ textureManager: c0, shownUrls: c1, referencedAssets: c2, isStale: c3 } = closure_0);
+    return "flexDirection";
   });
   return obj(...arguments);
 };

@@ -1,16 +1,16 @@
-// Module ID: 8279
-// Function ID: 8280
+// Module ID: 8312
+// Function ID: 8313
 // Name: Upload
-// Dependencies: [568, 8280, 8281, 12, 8286, 1266, 2]
+// Dependencies: [568, 8313, 8314, 12, 8319, 1266, 2]
 // Exports: isResolvedUpload
 
-// Module 8279 (Upload)
+// Module 8312 (Upload)
 import _modDef12 from "module_12" /* 12 */;
 import _mod568 from "module_568" /* 568 */;
 import v1 from "v1" /* 1266 */;
-import UploadPlatform from "UploadPlatform" /* 8280 */;
-import UploadUtils from "UploadUtils" /* 8281 */;
-import FileUtilsAll from "FileUtils" /* 8286 */;
+import UploadPlatform from "UploadPlatform" /* 8313 */;
+import UploadUtils from "UploadUtils" /* 8314 */;
+import FileUtilsAll from "FileUtils" /* 8319 */;
 import size from "module_2" /* 2 */;
 
 const EventEmitter = _mod568.EventEmitter;

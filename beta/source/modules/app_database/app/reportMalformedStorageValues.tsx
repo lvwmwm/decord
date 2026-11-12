@@ -1,12 +1,12 @@
-// Module ID: 19854
-// Function ID: 19855
+// Module ID: 19892
+// Function ID: 19893
 // Name: reportMalformedStorageValues
-// Dependencies: [5019, 1242, 2]
+// Dependencies: [5049, 1242, 2]
 // Exports: default
 
-// Module 19854 (reportMalformedStorageValues)
+// Module 19892 (reportMalformedStorageValues)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import _mod5019 from "module_5019" /* 5019 */;
+import _mod5049 from "module_5049" /* 5049 */;
 import size from "module_2" /* 2 */;
 
 let c3 = false;
@@ -16,9 +16,9 @@ export default function reportMalformedStorageValues(source) {
   let obj3;
   const tmp = c3;
   if (!tmp) {
-    const Stats = _mod5019.Stats;
+    const Stats = _mod5049.Stats;
     const malformedValueCountResult = Stats.malformedValueCount();
-    const Stats2 = _mod5019.Stats;
+    const Stats2 = _mod5049.Stats;
     const malformedEntryCountResult = Stats2.malformedEntryCount();
     const tmp6 = 0 === malformedValueCountResult && 0 === malformedEntryCountResult;
     if (!tmp6) {

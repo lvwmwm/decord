@@ -1,9 +1,9 @@
-// Module ID: 7761
-// Function ID: 7762
+// Module ID: 7794
+// Function ID: 7795
 // Name: PlayStationVoiceExperiment
 // Dependencies: [1450, 2]
 
-// Module 7761 (PlayStationVoiceExperiment)
+// Module 7794 (PlayStationVoiceExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

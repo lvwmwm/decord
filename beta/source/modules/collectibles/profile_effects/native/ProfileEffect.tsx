@@ -1,24 +1,24 @@
-// Module ID: 9581
-// Function ID: 9582
+// Module ID: 9614
+// Function ID: 9615
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 5141, 2117, 21, 5140, 1493, 9582, 9583, 9584, 9586, 504, 1092, 9587, 9585, 5842, 8872, 2]
+// Dependencies: [32, 19, 17, 5171, 2117, 21, 5170, 1493, 9615, 9616, 9617, 9619, 504, 1092, 9620, 9618, 5874, 8905, 2]
 // Exports: default, usePreloadProfileEffect
 
-// Module 9581 (ProfileEffect)
+// Module 9614 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8872 */;
-import utils from "utils" /* 9582 */;
-import profile_effects_constants from "profile_effects/constants" /* 9583 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9584 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9587 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8905 */;
+import utils from "utils" /* 9615 */;
+import profile_effects_constants from "profile_effects/constants" /* 9616 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9617 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9620 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -78,7 +78,7 @@ function StaticEffect(useThumbnail) {
     const obj2 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback };
   } else {
     obj3 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback, children: null };
-    tmp4(5842);
+    tmp4(5874);
     if (useThumbnail) {
       reducedMotionSrc = thumbnailUrlOverride;
     }

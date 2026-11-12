@@ -1,10 +1,10 @@
-// Module ID: 9705
-// Function ID: 9706
+// Module ID: 9738
+// Function ID: 9739
 // Name: GameProfileCommunitiesLocaleFilterStore
 // Dependencies: [560, 2]
 // Exports: useGameProfileCommunitiesLocaleFilterExclusions
 
-// Module 9705 (GameProfileCommunitiesLocaleFilterStore)
+// Module 9738 (GameProfileCommunitiesLocaleFilterStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 18987
-// Function ID: 18988
+// Module ID: 19025
+// Function ID: 19026
 // Name: CancelSubscriptionModal
-// Dependencies: [19, 17, 21, 1627, 5739, 17536, 7064, 7231, 2]
+// Dependencies: [19, 17, 21, 1627, 5771, 17573, 7097, 7264, 2]
 // Exports: default
 
-// Module 18987 (CancelSubscriptionModal)
+// Module 19025 (CancelSubscriptionModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

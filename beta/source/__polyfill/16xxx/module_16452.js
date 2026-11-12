@@ -1,7 +1,10 @@
 // Module ID: 16452
 // Function ID: 16453
-// Dependencies: []
+// Dependencies: [16453, 16454]
 
 // Module 16452
+const require = globalThis.__r;
 
-export default (arg0) => null == arg0;
+
+export const shouldPolyfill = require("module_16453").shouldPolyfill;
+export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;

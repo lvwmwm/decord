@@ -1,12 +1,12 @@
-// Module ID: 17247
-// Function ID: 17248
+// Module ID: 17281
+// Function ID: 17282
 // Name: useBountyRecurringSwipeUpNux
-// Dependencies: [32, 7641, 4973, 2]
+// Dependencies: [32, 7674, 5003, 2]
 // Exports: useBountyRecurringSwipeUpNux
 
-// Module 17247 (useBountyRecurringSwipeUpNux)
-import dismissible_content from "dismissible_content" /* 4973 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7641 */;
+// Module 17281 (useBountyRecurringSwipeUpNux)
+import dismissible_content from "dismissible_content" /* 5003 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7674 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ export function useBountyRecurringSwipeUpNux(isEligible) {
   const useSelectedTimeRecurringDismissibleContent = useSelectedDismissibleContent.useSelectedTimeRecurringDismissibleContent;
   useSelectedDismissibleContent;
   if (isEligible) {
-    prop = tmp(4973).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+    prop = tmp(5003).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
   }
   const tmp5 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 86400000 }), 2);
   const obj = { hasRecurringSwipeUpNux: tmp6 === dismissible_content.DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX, dismissRecurringSwipeUpNux: tmp7 };

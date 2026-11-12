@@ -1,22 +1,22 @@
-// Module ID: 19251
-// Function ID: 19252
+// Module ID: 19289
+// Function ID: 19290
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [17, 13668, 21, 13669, 5374, 19252, 2118, 6570, 504, 7038, 1113, 3248, 13648, 2]
+// Dependencies: [17, 13700, 21, 13701, 5406, 19290, 2118, 6602, 504, 7071, 1113, 3248, 13680, 2]
 // Exports: default
 
-// Module 19251 (CheckpointProfileEntrypoint)
+// Module 19289 (CheckpointProfileEntrypoint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import _modDef3248 from "module_3248" /* 3248 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6570 */;
-import TableRow2 from "TableRow" /* 7038 */;
-import ExperimentalCheckpointIcon from "ExperimentalCheckpointIcon" /* 13648 */;
-import openCheckpoint from "openCheckpoint" /* 13669 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6602 */;
+import TableRow2 from "TableRow" /* 7071 */;
+import ExperimentalCheckpointIcon from "ExperimentalCheckpointIcon" /* 13680 */;
+import openCheckpoint from "openCheckpoint" /* 13701 */;
+import CheckpointStore from "CheckpointStore" /* 13700 */;
 import size from "module_2" /* 2 */;
 
 function handlePress() {
@@ -25,7 +25,7 @@ function handlePress() {
 }
 function handleLongPress() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(19252, dependencyMap.paths), "CheckpointTestingActionSheet");
+  obj.openLazy(asyncRequire(19290, dependencyMap.paths), "CheckpointTestingActionSheet");
 }
 function CheckpointProfileEntrypointRow() {
   let isFetching;
@@ -42,7 +42,7 @@ function CheckpointProfileEntrypointRow() {
     tmp5Result = tmp5(ActivityIndicator, {});
   } else {
     const obj4 = { IconComponent: ExperimentalCheckpointIcon.ExperimentalCheckpointIcon };
-    const Icon = tmp(7038).TableRow.Icon;
+    const Icon = tmp(7071).TableRow.Icon;
     tmp5Result = tmp5(Icon, obj4);
   }
   let tmp8;

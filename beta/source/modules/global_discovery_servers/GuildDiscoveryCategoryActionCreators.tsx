@@ -1,15 +1,15 @@
-// Module ID: 18895
-// Function ID: 18896
+// Module ID: 18933
+// Function ID: 18934
 // Name: GuildDiscoveryCategoryActionCreators
-// Dependencies: [5, 2186, 18896, 1072, 1282, 572, 2]
+// Dependencies: [5, 2186, 18934, 1072, 1282, 572, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 18895 (GuildDiscoveryCategoryActionCreators)
+// Module 18933 (GuildDiscoveryCategoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 18896 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 18934 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -251,7 +251,7 @@ obj = function _saveGuildMetadata() {
               about = undefined;
               partner_application_timestamp = 1;
               is_published = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === partner_application_timestamp) {
             if (arg0 === 1) {

@@ -1,13 +1,13 @@
-// Module ID: 7641
-// Function ID: 7642
+// Module ID: 7674
+// Function ID: 7675
 // Name: useSelectedDismissibleContent
-// Dependencies: [32, 7642, 7647, 7644, 2]
+// Dependencies: [32, 7675, 7680, 7677, 2]
 // Exports: useSelectedDismissibleContent, useSelectedScopedDismissibleContent, useSelectedSingleUseGuildDismissibleContent, useSelectedSnowflakeBoundDismissibleContent, useSelectedSnowflakeBoundGuildDismissibleContent, useSelectedTimeRecurringDismissibleContent, useSelectedTimeRecurringGuildDismissibleContent, useSelectedTimeRecurringSnowflakeBoundDismissibleContent, useSelectedVersionedDismissibleContent
 
-// Module 7641 (useSelectedDismissibleContent)
-import useGetDismissibleContent from "useGetDismissibleContent" /* 7642 */;
-import DismissibleContentScope from "DismissibleContentScope" /* 7644 */;
-import useSelectedDismissibleContentShared2 from "useSelectedDismissibleContentShared" /* 7647 */;
+// Module 7674 (useSelectedDismissibleContent)
+import useGetDismissibleContent from "useGetDismissibleContent" /* 7675 */;
+import DismissibleContentScope from "DismissibleContentScope" /* 7677 */;
+import useSelectedDismissibleContentShared2 from "useSelectedDismissibleContentShared" /* 7680 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

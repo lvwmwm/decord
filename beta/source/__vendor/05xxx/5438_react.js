@@ -6,5 +6,7 @@
 // Module 5438 (react)
 import react from "react" /* 19 */;
 
+const context = react.createContext(null);
 
-export default react.createContext(false);
+export const BottomSheetModalInternalContext = context;
+export const BottomSheetModalInternalProvider = context.Provider;

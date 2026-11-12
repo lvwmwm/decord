@@ -1,13 +1,13 @@
-// Module ID: 9531
-// Function ID: 9532
+// Module ID: 9564
+// Function ID: 9565
 // Name: ImageWithPlaceholder
-// Dependencies: [17, 21, 1377, 9532, 5842, 2]
+// Dependencies: [17, 21, 1377, 9565, 5874, 2]
 // Exports: ImageWithPlaceholder
 
-// Module 9531 (ImageWithPlaceholder)
+// Module 9564 (ImageWithPlaceholder)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import ImageWithThumbhashPlaceholderNativeComponentDefault from "ImageWithThumbhashPlaceholderNativeComponent" /* 9532 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import ImageWithThumbhashPlaceholderNativeComponentDefault from "ImageWithThumbhashPlaceholderNativeComponent" /* 9565 */;
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;

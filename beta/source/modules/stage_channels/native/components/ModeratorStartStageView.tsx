@@ -1,15 +1,15 @@
-// Module ID: 12014
-// Function ID: 12015
+// Module ID: 12046
+// Function ID: 12047
 // Name: ModeratorStartStageView
-// Dependencies: [32, 19, 5011, 21, 504, 9170, 12015, 9100, 9169, 12016, 9048, 12017, 1113, 12035, 12036, 2]
+// Dependencies: [32, 19, 5041, 21, 504, 9203, 12047, 9133, 9202, 12048, 9081, 12049, 1113, 12067, 12068, 2]
 // Exports: default
 
-// Module 12014 (ModeratorStartStageView)
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9169 */;
-import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 12015 */;
+// Module 12046 (ModeratorStartStageView)
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9202 */;
+import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 12047 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp5;
-const StageViewWithPromptsDefault = tmp5(12017);
+const StageViewWithPromptsDefault = tmp5(12049);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/ModeratorStartStageView.tsx");
 
@@ -34,15 +34,15 @@ export default function ModeratorStartStageView(channel) {
   const items1 = [guild_id];
   const obj = guild_id(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guild_id), items1);
-  const obj2 = guild_id(9170);
+  const obj2 = guild_id(9203);
   const first = _slicedToArray(obj2.useGuildChannelScheduledEvents(channel.id), 1)[0];
   const moderator = useCurrentUserStageRolesDefault(channel.id, true).moderator;
-  const obj3 = guild_id(9100);
+  const obj3 = guild_id(9133);
   const canManageGuildEventResult = obj3.useManageResourcePermissions(channel).canManageGuildEvent(first);
   const tmp7 = useCanCreateAnEventDefault(guild_id);
-  const obj4 = guild_id(12016);
+  const obj4 = guild_id(12048);
   const isLive = obj4.useStageChannelStartEvent(channel.id).isLive;
-  const obj5 = guild_id(9048);
+  const obj5 = guild_id(9081);
   const nextRecurrenceIdInEvent = obj5.getNextRecurrenceIdInEvent(first);
   let tmp10Result6 = null;
   if (null != stateFromStores) {
@@ -57,25 +57,25 @@ export default function ModeratorStartStageView(channel) {
       tmp10Result = null;
       if (null != first) {
         const obj7 = { channel, event: first, isLive, guild: stateFromStores, recurrenceId: nextRecurrenceIdInEvent };
-        tmp10Result = tmp10(tmp(12035).StartEventPrompt, obj7);
+        tmp10Result = tmp10(tmp(12067).StartEventPrompt, obj7);
       }
     }
     const items2 = [tmp10Result, , , ];
     let tmp10Result4 = null;
     if (moderator) {
       const obj8 = { channel, isLive };
-      tmp10Result4 = tmp10(tmp(12036).StartStagePrompt, obj8);
+      tmp10Result4 = tmp10(tmp(12068).StartStagePrompt, obj8);
     }
     items2[1] = tmp10Result4;
     let tmp10Result5 = null;
     if (tmp7) {
       const obj9 = { channel, isLive, guild: stateFromStores };
-      tmp10Result5 = tmp10(tmp(12035).ScheduleEventPrompt, obj9);
+      tmp10Result5 = tmp10(tmp(12067).ScheduleEventPrompt, obj9);
     }
     obj10 = { children: items2 };
     items2[2] = tmp10Result5;
     const obj11 = { onContinue: onSkip };
-    items2[3] = closure_5(guild_id(12036).ContinueToStagePrompt, obj11);
+    items2[3] = closure_5(guild_id(12068).ContinueToStagePrompt, obj11);
     tmp10Result6 = tmp10(tmp5Result, obj6);
   }
   return tmp10Result6;

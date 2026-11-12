@@ -1,26 +1,26 @@
-// Module ID: 13604
-// Function ID: 13605
+// Module ID: 13636
+// Function ID: 13637
 // Name: FamilyShieldSpotIllustration
-// Dependencies: [19, 21, 13605, 13606, 13607, 7135, 5842, 2]
+// Dependencies: [19, 21, 13637, 13638, 13639, 7168, 5874, 2]
 // Exports: FamilyShieldSpotIllustration
 
-// Module 13604 (FamilyShieldSpotIllustration)
+// Module 13636 (FamilyShieldSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7135 */;
-import _modDef13605 from "module_13605" /* 13605 */;
-import _modDef13606 from "module_13606" /* 13606 */;
-import _modDef13607 from "module_13607" /* 13607 */;
+import react_native from "react-native" /* 7168 */;
+import _modDef13637 from "module_13637" /* 13637 */;
+import _modDef13638 from "module_13638" /* 13638 */;
+import _modDef13639 from "module_13639" /* 13639 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13605 };
+let obj2 = { uri: _modDef13637 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef13606 };
+let obj3 = { uri: _modDef13638 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef13607 };
-({ uri: _modDef13607 });
+obj[3] = { uri: _modDef13639 };
+({ uri: _modDef13639 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/FamilyShieldSpotIllustration.native.tsx");
 

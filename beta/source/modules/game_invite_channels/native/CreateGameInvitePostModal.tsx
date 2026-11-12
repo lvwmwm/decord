@@ -1,22 +1,22 @@
-// Module ID: 14619
-// Function ID: 14620
+// Module ID: 14651
+// Function ID: 14652
 // Name: CreateGameInvitePostModal
-// Dependencies: [32, 19, 17, 4989, 7906, 21, 5140, 575, 7387, 504, 7070, 14618, 5735, 14620, 5885, 5374, 11271, 2118, 1113, 7043, 7120, 5751, 3962, 7316, 7517, 7126, 7038, 7429, 13982, 5758, 2]
+// Dependencies: [32, 19, 17, 5019, 7939, 21, 5170, 575, 7420, 504, 7103, 14650, 5767, 14652, 5917, 5406, 11303, 2118, 1113, 7076, 7153, 5783, 3962, 7349, 7550, 7159, 7071, 7462, 14014, 5790, 2]
 // Exports: default
 
-// Module 14619 (CreateGameInvitePostModal)
+// Module 14651 (CreateGameInvitePostModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7387 */;
-import SlowmodeStore from "SlowmodeStore" /* 7906 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7420 */;
+import SlowmodeStore from "SlowmodeStore" /* 7939 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -67,7 +67,7 @@ function CreateGameInvitePostContent(parentChannel) {
   const tmp = closure_11();
   let tmp2 = tags;
   let tmp3 = dependencyMap;
-  const insets = tags(5735)({ includeKeyboardHeight: true }).insets;
+  const insets = tags(5767)({ includeKeyboardHeight: true }).insets;
   let availableTags = parentChannel.availableTags;
   if (availableTags == null) {
     availableTags = [];
@@ -82,7 +82,7 @@ function CreateGameInvitePostContent(parentChannel) {
     set = new Set(first.map((id) => id.id));
     return set;
   }, items);
-  let obj = parentChannel(14620);
+  let obj = parentChannel(14652);
   let obj2 = {
     parentChannel,
     description: tmp5,
@@ -124,7 +124,7 @@ function CreateGameInvitePostContent(parentChannel) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { parentChannel, onSave, title: intl.string(intl10.t.HPu3kq), tags };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(11271, dependencyMap.paths);
+    const tmp2 = asyncRequire(11303, dependencyMap.paths);
     intl = intl10.intl;
     openLazy(tmp2, "ForumPostTagsActionSheet", obj);
   }, items2);
@@ -136,41 +136,41 @@ function CreateGameInvitePostContent(parentChannel) {
       const obj = parentChannel(onSave[11]);
       return obj.closeCreateGameInvitePostModal();
     },
-    children: closure_8(parentChannel(7120).XSmallIcon, {})
+    children: closure_8(parentChannel(7153).XSmallIcon, {})
   };
-  const PressableOpacity = parentChannel(7043).PressableOpacity;
+  const PressableOpacity = parentChannel(7076).PressableOpacity;
   intl = parentChannel(1113).intl;
   items4 = [closure_8(PressableOpacity, obj5), ];
   const obj6 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(3962).tOsHsu) };
-  const Text = parentChannel(5751).Text;
+  const Text = parentChannel(5783).Text;
   intl2 = parentChannel(1113).intl;
   items4[1] = closure_8(Text, obj6);
   items5 = [closure_9(View, obj4), , ];
   const obj7 = { style: tmp.body, children: items6 };
-  const obj8 = { label: intl3.string(tmp2(3962)["/mEbGf"]), placeholder: intl4.string(tmp2(3962)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(7517).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
-  const TextArea = parentChannel(7316).TextArea;
+  const obj8 = { label: intl3.string(tmp2(3962)["/mEbGf"]), placeholder: intl4.string(tmp2(3962)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(7550).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
+  const TextArea = parentChannel(7349).TextArea;
   intl3 = parentChannel(1113).intl;
   intl4 = parentChannel(1113).intl;
   items6 = [closure_8(TextArea, obj8), , ];
   let tmp15Result = availableTags.length > 0;
-  const TableRowGroup = parentChannel(7126).TableRowGroup;
+  const TableRowGroup = parentChannel(7159).TableRowGroup;
   if (tmp15Result) {
     const obj9 = { label: intl5.string(parentChannel(1113).t.KM6lRG), subLabel: joined, arrow: true, trailing: closure_8(View, obj10), onPress: callback1 };
-    const TableRow = tmp9(7038).TableRow;
+    const TableRow = tmp9(7071).TableRow;
     intl5 = tmp9(1113).intl;
     joined = undefined;
     if (tags.length > 0) {
       const mapped = tags.map((name) => name.name);
       joined = mapped.join(", ");
     }
-    obj10 = { style: tmp.tagsTrailing, children: closure_8(parentChannel(5751).Text, obj11) };
+    obj10 = { style: tmp.tagsTrailing, children: closure_8(parentChannel(5783).Text, obj11) };
     obj11 = { variant: "body-md/medium", color: "text-muted", children: tags.length };
     tmp15Result = tmp15(TableRow, obj9);
   }
   const obj12 = { hasIcons: false, children: items7 };
   items7 = [tmp15Result, ];
   const obj13 = { label: intl6.string(tmp2(3962).Xd2NFi), subLabel: intl7.string(tmp2(3962).G91SYQ), value: voiceChatEnabled, onValueChange: callback, disabled: voiceToggleDisabled };
-  const TableSwitchRow = tmp9(7429).TableSwitchRow;
+  const TableSwitchRow = tmp9(7462).TableSwitchRow;
   intl6 = tmp9(1113).intl;
   intl7 = tmp9(1113).intl;
   items7[1] = closure_8(TableSwitchRow, obj13);
@@ -178,7 +178,7 @@ function CreateGameInvitePostContent(parentChannel) {
   let tmp15Result3 = null;
   if (hasTagRequiredError) {
     const obj14 = { variant: "body-sm/medium", color: "text-feedback-critical", children: intl8.string(parentChannel(1113).t.xPfNQi) };
-    const Text2 = tmp9(5751).Text;
+    const Text2 = tmp9(5783).Text;
     intl8 = tmp9(1113).intl;
     tmp15Result3 = tmp15(Text2, obj14);
   }
@@ -188,13 +188,13 @@ function CreateGameInvitePostContent(parentChannel) {
   items8 = [tmp.footer, { marginBottom: insets.bottom }];
   let tmp15Result4 = null;
   if (isSlowmodeEnabled) {
-    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(13982), obj17) };
+    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(14014), obj17) };
     obj17 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp15Result4 = tmp15(tmp14, obj16);
   }
   items9 = [tmp15Result4, ];
   const obj18 = { variant: "primary", size: "lg", grow: true, text: intl9.string(parentChannel(1113).t.CumH4u), loading: submitting, disabled: !canSubmit, onPress: submit };
-  const Button = tmp9(5758).Button;
+  const Button = tmp9(5790).Button;
   intl9 = tmp9(1113).intl;
   items9[1] = closure_8(Button, obj18);
   items5[2] = closure_9(View, obj15);
@@ -227,7 +227,7 @@ export default function CreateGameInvitePostModal(parentChannelId) {
   const items = [ChannelStore];
   const items1 = [parentChannelId];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(parentChannelId), items1);
-  const obj3 = parentChannelId(7070);
+  const obj3 = parentChannelId(7103);
   obj3.useNavigatorBackPressHandler(() => {
     const obj = parentChannelId(dependencyMap[11]);
     const result = obj.closeCreateGameInvitePostModal();
@@ -240,7 +240,7 @@ export default function CreateGameInvitePostModal(parentChannelId) {
     if (stateFromStores.isGameInvitesChannel()) {
       const obj2 = { value: analyticsLocations, children: closure_8(CreateGameInvitePostContent, obj4) };
       obj4 = { parentChannel: stateFromStores };
-      const AnalyticsLocationProvider = tmp2(7387).AnalyticsLocationProvider;
+      const AnalyticsLocationProvider = tmp2(7420).AnalyticsLocationProvider;
       tmp4 = closure_8(AnalyticsLocationProvider, obj2);
     }
   }

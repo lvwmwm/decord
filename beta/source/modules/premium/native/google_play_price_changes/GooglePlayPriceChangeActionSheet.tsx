@@ -1,20 +1,20 @@
-// Module ID: 19397
-// Function ID: 19398
+// Module ID: 19435
+// Function ID: 19436
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 2176, 19398, 1072, 4986, 21, 5140, 575, 504, 2171, 7477, 5388, 5751, 1113, 2185, 5758, 2]
+// Dependencies: [19, 17, 2176, 19436, 1072, 5016, 21, 5170, 575, 504, 2171, 7510, 5420, 5783, 1113, 2185, 5790, 2]
 // Exports: default
 
-// Module 19397 (GooglePlayPriceChangeActionSheet)
+// Module 19435 (GooglePlayPriceChangeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19398 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19436 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -68,20 +68,20 @@ export default function GooglePlayPriceChangeActionSheet(markAsDismissed) {
   const intervalType = tmp2Result5.getInterval(str).intervalType;
   const tmp2Result6 = markAsDismissed(2171);
   const intervalStringAsNoun = tmp2Result6.getIntervalStringAsNoun(intervalType);
-  const tmp2Result7 = markAsDismissed(7477);
+  const tmp2Result7 = markAsDismissed(7510);
   const formatPriceResult = tmp2Result7.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmp2Result8 = markAsDismissed(7477);
+  const tmp2Result8 = markAsDismissed(7510);
   const obj3 = { children: closure_9(View, obj4) };
   obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.textContainer, children: items2 };
   const formatPriceResult1 = tmp2Result8.formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
-  const BottomSheet = tmp2(5388).BottomSheet;
+  const BottomSheet = tmp2(5420).BottomSheet;
   const obj6 = { variant: "heading-xl/semibold", style: tmp.header, children: intl.format(markAsDismissed(1113).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5783).Text;
   intl = tmp2(1113).intl;
   items2 = [closure_8(Text, obj6), ];
   const obj7 = { variant: "body-md/medium", style: tmp.body, children: format(prop, obj8) };
-  const Text2 = tmp2(5751).Text;
+  const Text2 = tmp2(5783).Text;
   const intl2 = tmp2(1113).intl;
   format = intl2.format;
   obj8 = { subscriptionName: tierDisplayNameByPlanId, changeDate: new Date(stateFromStores.expectedChargeTime), interval: intervalStringAsNoun, newPrice: formatPriceResult1, oldPrice: formatPriceResult, hc_article_url: obj14.getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL) };
@@ -97,7 +97,7 @@ export default function GooglePlayPriceChangeActionSheet(markAsDismissed) {
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const Button = tmp2(5758).Button;
+  const Button = tmp2(5790).Button;
   intl3 = tmp2(1113).intl;
   items3[1] = closure_8(Button, obj9);
   return closure_8(BottomSheet, obj3);

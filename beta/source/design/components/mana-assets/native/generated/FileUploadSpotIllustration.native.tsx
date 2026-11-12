@@ -1,26 +1,26 @@
-// Module ID: 19418
-// Function ID: 19419
+// Module ID: 19456
+// Function ID: 19457
 // Name: FileUploadSpotIllustration
-// Dependencies: [19, 21, 19419, 19420, 19421, 7135, 5842, 2]
+// Dependencies: [19, 21, 19457, 19458, 19459, 7168, 5874, 2]
 // Exports: FileUploadSpotIllustration
 
-// Module 19418 (FileUploadSpotIllustration)
+// Module 19456 (FileUploadSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7135 */;
-import _modDef19419 from "module_19419" /* 19419 */;
-import _modDef19420 from "module_19420" /* 19420 */;
-import _modDef19421 from "module_19421" /* 19421 */;
+import react_native from "react-native" /* 7168 */;
+import _modDef19457 from "module_19457" /* 19457 */;
+import _modDef19458 from "module_19458" /* 19458 */;
+import _modDef19459 from "module_19459" /* 19459 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19419 };
+let obj2 = { uri: _modDef19457 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19420 };
+let obj3 = { uri: _modDef19458 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19421 };
-({ uri: _modDef19421 });
+obj[3] = { uri: _modDef19459 };
+({ uri: _modDef19459 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/FileUploadSpotIllustration.native.tsx");
 

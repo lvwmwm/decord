@@ -1,10 +1,10 @@
-// Module ID: 9916
-// Function ID: 9917
+// Module ID: 9949
+// Function ID: 9950
 // Name: TrackingConstants
-// Dependencies: [9917, 2]
+// Dependencies: [9950, 2]
 
-// Module 9916 (TrackingConstants)
-import SearchConstants from "SearchConstants" /* 9917 */;
+// Module 9949 (TrackingConstants)
+import SearchConstants from "SearchConstants" /* 9950 */;
 import size from "module_2" /* 2 */;
 
 let SearchHistoryItemTypes;

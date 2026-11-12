@@ -1,175 +1,28 @@
 // Module ID: 13073
 // Function ID: 13074
-// Dependencies: [13044, 13066]
+// Dependencies: [13074, 13117, 13164, 13192, 13193]
 
 // Module 13073
-import _mod13044 from "module_13044" /* 13044 */;
+import _mod13192 from "module_13192" /* 13192 */;
+import _mod13193 from "module_13193" /* 13193 */;
+import create_mod from "module_13074" /* 13074 */;
+import module_13117 from "module_13117" /* 13117 */;
+import module_13164 from "module_13164" /* 13164 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
-
-function isCommaContextStart(type) {
-  let tmp = null === type;
-  if (!tmp) {
-    let tmp4 = type.type === _mod13044.TYPE.Comma || type.type === tmp2(13044).TYPE.Function || type.type === tmp2(13044).TYPE.LeftParenthesis || type.type === tmp2(13044).TYPE.LeftSquareBracket || type.type === tmp2(13044).TYPE.LeftCurlyBracket;
-    if (!tmp4) {
-      tmp4 = type.type === tmp2(13044).TYPE.Delim && "?" !== type.value;
-      const tmp5 = type.type === tmp2(13044).TYPE.Delim && "?" !== type.value;
-    }
-    tmp = tmp4;
-  }
-  return tmp;
-}
-function internalMatch(arg0, arg1, arg2) {
-  let closure_0;
-  let syntax;
-  _require = arg0;
-  dependencyMap = arg1;
-  let c2 = null;
-  Match = null;
-  c4 = -1;
-  let closure_5 = 0;
-  let prev = { type: 0, syntax: null, token: null, prev: null };
-  while (true) {
-    let tmp = c4;
-    let sum = c4 + 1;
-    c4 = sum;
-    let tmp3 = null;
-    if (sum < arg0.length) {
-      let tmp4 = c4;
-      tmp3 = arg0[c4];
-    }
-    Match = tmp3;
-    let tmp5 = null;
-    let tmp6 = null;
-    let tmp7 = null;
-    let tmp8 = null;
-    if (null === tmp3) {
-      break;
-    } else {
-      let tmp10 = _require;
-      if (tmp3.type === require("module_13044").TYPE.WhiteSpace) {
-        continue;
-      } else {
-        tmp5 = null;
-        tmp6 = null;
-        tmp7 = null;
-        tmp8 = null;
-        if (Match.type !== tmp10(13044).TYPE.Comment) {
-          break;
-        }
-      }
+function merge() {
+  let num;
+  const obj = {};
+  for (let num = 0; num < arguments.length; num = num + 1) {
+    let tmp = arguments[num];
+    for (const key10011 in tmp) {
+      obj[key10011] = tmp[key10011];
       continue;
     }
   }
+  return obj;
 }
-let Match = "Match";
-let c4 = 0;
-let obj = {
-  matchAsList(arg0, arg1, arg2) {
-    let obj = arg2;
-    const tmp = internalMatch;
-    if (!arg2) {
-      obj = {};
-    }
-    const str = tmp(arg0, arg1, obj);
-    if (null !== str.match) {
-      let prev = str.match;
-      let tmp3 = null;
-      let tmp4 = null;
-      if (null !== prev) {
-        do {
-          prev.prev = tmp3;
-          tmp3 = prev;
-          tmp4 = prev;
-          prev = prev.prev;
-        } while (null !== tmp2);
-      }
-      let prev2 = tmp4.prev;
-      str.match = [];
-      if (null !== prev2) {
-        do {
-          let type = prev2.type;
-          if (0 !== type) {
-            if (2 !== type) {
-              if (3 !== type) {
-                let match = str.match;
-                let obj2 = { token: prev2.token.value, node: prev2.token.node };
-                let arr = match.push(obj2);
-              }
-            }
-            let match1 = str.match;
-            let obj5 = { type: null, syntax: null };
-            ({ type: obj3.type, syntax: obj3.syntax } = prev2);
-            let arr2 = match1.push(obj5);
-          }
-          prev2 = prev2.prev;
-        } while (null !== prev2);
-      }
-    }
-    return str;
-  },
-  matchAsTree(arr, match, self) {
-    let tmp2;
-    let obj = self;
-    const tmp = internalMatch;
-    if (!self) {
-      obj = {};
-    }
-    const str = tmp(arr, match, obj);
-    if (null === str.match) {
-      return str;
-    } else {
-      let prev = str.match;
-      let obj2 = { syntax: tmp2, match: [] };
-      tmp2 = match.syntax || null;
-      str.match = obj2;
-      const items = [obj2];
-      let tmp3 = null;
-      let tmp4 = null;
-      if (null !== prev) {
-        do {
-          prev.prev = tmp3;
-          tmp3 = prev;
-          tmp4 = prev;
-          prev = prev.prev;
-        } while (null !== tmp5);
-      }
-      let prev2 = tmp4.prev;
-      if (null !== prev2) {
-        do {
-          let tmp10;
-          let type = prev2.type;
-          if (2 === type) {
-            match = obj2.match;
-            let obj3 = { syntax: prev2.syntax, match: [] };
-            arr = match.push(obj3);
-            let arr2 = items.push(obj3);
-            tmp10 = obj3;
-          } else if (3 === type) {
-            let arr3 = items.pop();
-            tmp10 = items[items.length - 1];
-          } else {
-            let match1 = obj2.match;
-            let syntax = prev2.syntax;
-            let push = match1.push;
-            if (!syntax) {
-              syntax = null;
-            }
-            let obj4 = { syntax, token: prev2.token.value, node: prev2.token.node };
-            let arr7 = push(obj4);
-            tmp10 = obj2;
-          }
-          prev2 = prev2.prev;
-          obj2 = tmp10;
-        } while (null !== prev2);
-      }
-      return str;
-    }
-  },
-  getTotalIterationCount() {
-    return c4;
-  }
-};
+let create = create_mod;
+create = create.create;
+module.exports.version = _mod13193.version;
 
-export default obj;
+export default create(merge(module_13117, module_13164, _mod13192));

@@ -1,13 +1,13 @@
-// Module ID: 17014
-// Function ID: 17015
+// Module ID: 17048
+// Function ID: 17049
 // Name: AccountWebAuthnEditSetting
-// Dependencies: [8503, 1072, 11685, 1113, 17015, 2]
+// Dependencies: [8536, 1072, 11717, 1113, 17049, 2]
 
-// Module 17014 (AccountWebAuthnEditSetting)
+// Module 17048 (AccountWebAuthnEditSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

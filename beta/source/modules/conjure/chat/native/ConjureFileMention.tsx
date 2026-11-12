@@ -1,16 +1,16 @@
-// Module ID: 12312
-// Function ID: 12313
+// Module ID: 12344
+// Function ID: 12345
 // Name: ConjureFileMention
-// Dependencies: [5, 19, 17, 21, 5140, 575, 12311, 12313, 12316, 5751, 1113, 4026, 12281, 12318, 2118, 2]
+// Dependencies: [5, 19, 17, 21, 5170, 575, 12343, 12345, 12348, 5783, 1113, 4026, 12313, 12350, 2118, 2]
 // Exports: default
 
-// Module 12312 (ConjureFileMention)
+// Module 12344 (ConjureFileMention)
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3, paths;
@@ -50,16 +50,16 @@ export default function ConjureFileMention(variant) {
   let context;
   const tmp = closure_9();
   const tmp3 = dependencyMap;
-  context = react.useContext(context(12311).ConjureFileMentionProjectContext);
-  let obj = context(12313);
+  context = react.useContext(context(12343).ConjureFileMentionProjectContext);
+  let obj = context(12345);
   const conjureStoredAttachment = obj.useConjureStoredAttachment(context, attachmentId);
   const obj2 = { style: tmp.chip, children: items };
   let obj3 = { projectId: context, file: conjureStoredAttachment, style: tmp.thumbnail, iconColor: conjureStoredAttachment(575).colors.MENTION_FOREGROUND };
-  const tmp10 = conjureStoredAttachment(12316);
+  const tmp10 = conjureStoredAttachment(12348);
   items = [closure_7(tmp10, obj3), ];
   let obj4 = { variant: str, style: tmp.name, children: name };
   name = undefined;
-  const Text = context(5751).Text;
+  const Text = context(5783).Text;
   const tmp6 = closure_8;
   const tmp7 = closure_6;
   if (conjureStoredAttachment != null) {
@@ -75,7 +75,7 @@ export default function ConjureFileMention(variant) {
   if (null != context) {
     tmp8Result = tmp6Result;
     if (null != conjureStoredAttachment) {
-      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp2(12281).CONJURE_VIEWABLE_IMAGE_TYPES;
+      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp2(12313).CONJURE_VIEWABLE_IMAGE_TYPES;
       tmp8Result = tmp6Result;
       if (CONJURE_VIEWABLE_IMAGE_TYPES.has(conjureStoredAttachment.content_type)) {
         let obj5 = {

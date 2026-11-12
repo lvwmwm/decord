@@ -1,35 +1,35 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 13944
+// Function ID: 13945
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 5141, 1385, 13668, 6199, 21, 575, 5373, 1652, 1357, 5140, 1411, 504, 13913, 13914, 13876, 5194, 6567, 5275, 13878, 1113, 3248, 3216, 5840, 13897, 8714, 13881, 12138, 12238, 1493, 5318, 1641, 5370, 13915, 13670, 5836, 1187, 13666, 10677, 7412, 13597, 5853, 2]
+// Dependencies: [5, 32, 19, 17, 5171, 1385, 13700, 6231, 21, 575, 5405, 1652, 1357, 5170, 1411, 504, 13945, 13946, 13908, 5226, 6599, 5307, 13910, 1113, 3248, 3216, 5872, 13929, 8747, 13913, 12170, 12270, 1493, 5350, 1641, 5402, 13947, 13702, 5868, 1187, 13698, 10709, 7445, 13629, 5885, 2]
 // Exports: default
 
-// Module 13912 (CheckpointFriendsStatsScreen)
+// Module 13944 (CheckpointFriendsStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _modDef3216 from "module_3216" /* 3216 */;
-import timingPresets from "timingPresets" /* 5373 */;
-import FriendsIcon from "FriendsIcon" /* 5840 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import ChatIcon from "ChatIcon" /* 8714 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10677 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12138 */;
-import Tracking from "Tracking" /* 13666 */;
-import CheckpointTextDefault from "CheckpointText" /* 13878 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13881 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13897 */;
+import timingPresets from "timingPresets" /* 5405 */;
+import FriendsIcon from "FriendsIcon" /* 5872 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
+import ChatIcon from "ChatIcon" /* 8747 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10709 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12170 */;
+import Tracking from "Tracking" /* 13698 */;
+import CheckpointTextDefault from "CheckpointText" /* 13910 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13913 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13929 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import UserStore from "UserStore" /* 1385 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
-import CheckpointConstants from "CheckpointConstants" /* 6199 */;
+import CheckpointStore from "CheckpointStore" /* 13700 */;
+import CheckpointConstants from "CheckpointConstants" /* 6231 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -239,18 +239,18 @@ function SidekickMessageInput(user) {
   ref = ref.useRef(null);
   obj2 = user(1652);
   const sharedValue = obj2.useSharedValue(0);
-  const tmp13 = value(12238)();
+  const tmp13 = value(12270)();
   let obj3 = user(1357);
   const isIOSResult = obj3.isIOS();
   size = value(1493)({ ignoreKeyboard: true });
   const height = size.height;
   const bound = Math.min(size.width, height);
-  let messageInputContainerLarge = bound > user(5318).WINDOW_SIZE_THRESHOLD_LARGE;
+  let messageInputContainerLarge = bound > user(5350).WINDOW_SIZE_THRESHOLD_LARGE;
   let obj4 = user(1652);
   const sharedValue1 = obj4.useSharedValue(0);
   let items = [closure_22, sharedValue1, , ];
   const useKeyboardHandler = user(1641).useKeyboardHandler;
-  items[2] = user(5370).withTiming;
+  items[2] = user(5402).withTiming;
   items[3] = obj;
   let c0;
   let c1;
@@ -305,7 +305,7 @@ function SidekickMessageInput(user) {
     }
   }, items4);
   let tmp33 = null != value;
-  const tmp32 = value(13915)(user.id);
+  const tmp32 = value(13947)(user.id);
   if (tmp33) {
     tmp33 = value.length > 0;
   }
@@ -362,7 +362,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(user(1113).t.Ve9Ge6),
-      children: closure_13(user(13597).GiftIcon, obj12)
+      children: closure_13(user(13629).GiftIcon, obj12)
     };
     intl2 = tmp9(1113).intl;
     obj12 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
@@ -376,7 +376,7 @@ function SidekickMessageInput(user) {
       accessibilityRole: "button",
       accessibilityLabel: intl3.string(user(1113).t.oeb1vg),
       accessibilityState: obj14,
-      children: closure_13(user(5853).SendMessageIcon, obj15)
+      children: closure_13(user(5885).SendMessageIcon, obj15)
     };
     disabled = undefined;
     const tmp41 = sharedValue;

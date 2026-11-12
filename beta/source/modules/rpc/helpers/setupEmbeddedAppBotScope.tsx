@@ -1,13 +1,13 @@
-// Module ID: 11974
-// Function ID: 11975
+// Module ID: 12006
+// Function ID: 12007
 // Name: setupEmbeddedAppBotScope
-// Dependencies: [5052, 9418, 8984, 6957, 2]
+// Dependencies: [5082, 9451, 9017, 6990, 2]
 // Exports: default
 
-// Module 11974 (setupEmbeddedAppBotScope)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8984 */;
-import GuildMemberStore_mod from "GuildMemberStore" /* 5052 */;
+// Module 12006 (setupEmbeddedAppBotScope)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;
+import GuildMemberStore_mod from "GuildMemberStore" /* 5082 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

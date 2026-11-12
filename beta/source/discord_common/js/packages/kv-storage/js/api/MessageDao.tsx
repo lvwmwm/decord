@@ -1,11 +1,11 @@
-// Module ID: 5033
-// Function ID: 5034
+// Module ID: 5063
+// Function ID: 5064
 // Name: MessageDao
-// Dependencies: [5023, 5025, 2]
+// Dependencies: [5053, 5055, 2]
 
-// Module 5033 (MessageDao)
-import Table from "Table" /* 5023 */;
-import TableId from "TableId" /* 5025 */;
+// Module 5063 (MessageDao)
+import Table from "Table" /* 5053 */;
+import TableId from "TableId" /* 5055 */;
 import size from "module_2" /* 2 */;
 
 class MessageDao {

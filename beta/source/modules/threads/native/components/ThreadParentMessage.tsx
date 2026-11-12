@@ -1,24 +1,24 @@
-// Module ID: 19026
-// Function ID: 19027
+// Module ID: 19064
+// Function ID: 19065
 // Name: ThreadParentMessage
-// Dependencies: [19, 7842, 6194, 21, 8448, 504, 7043, 1099, 10007, 2]
+// Dependencies: [19, 7875, 6226, 21, 8481, 504, 7076, 1099, 10040, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 19026 (ThreadParentMessage)
+// Module 19064 (ThreadParentMessage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import router_utils from "router_utils" /* 1099 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7842 */;
-import RowGeneratorDefault from "RowGenerator" /* 8448 */;
-import ChatItemDefault from "ChatItem" /* 10007 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7875 */;
+import RowGeneratorDefault from "RowGenerator" /* 8481 */;
+import ChatItemDefault from "ChatItem" /* 10040 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6194 */;
+import MessageStore from "MessageStore" /* 6226 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
 
 let tmp;
-const Pressables = tmp(7043);
+const Pressables = tmp(7076);
 const ReferencedMessageState = ReferencedMessageStore2.ReferencedMessageState;
 const jsx = Fragment.jsx;
 let rowGenerator = new RowGeneratorDefault();

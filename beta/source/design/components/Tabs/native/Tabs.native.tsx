@@ -1,18 +1,18 @@
-// Module ID: 12342
-// Function ID: 12343
+// Module ID: 12374
+// Function ID: 12375
 // Name: Tabs
-// Dependencies: [19, 17, 2186, 21, 1652, 5140, 575, 5761, 10210, 1705, 12343, 5420, 1377, 2]
+// Dependencies: [19, 17, 2186, 21, 1652, 5170, 575, 5793, 10242, 1705, 12375, 5452, 1377, 2]
 // Exports: Tabs
 
-// Module 12342 (Tabs)
+// Module 12374 (Tabs)
 import nativeDefault from "native" /* 575 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let count;

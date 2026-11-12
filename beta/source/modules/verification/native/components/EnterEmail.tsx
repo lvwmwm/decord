@@ -1,10 +1,10 @@
-// Module ID: 7212
-// Function ID: 7213
+// Module ID: 7245
+// Function ID: 7246
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1385, 7063, 1072, 21, 5140, 575, 1499, 504, 1092, 7213, 1252, 5751, 1113, 7147, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7096, 1072, 21, 5170, 575, 1499, 504, 1092, 7246, 1252, 5783, 1113, 7180, 5790, 2]
 // Exports: default
 
-// Module 7212 (EnterEmail)
+// Module 7245 (EnterEmail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -12,9 +12,9 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7063 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7096 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, navigation;

@@ -1,31 +1,31 @@
-// Module ID: 18703
-// Function ID: 18704
+// Module ID: 18741
+// Function ID: 18742
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5141, 6941, 5011, 5171, 6827, 18695, 18700, 18692, 21, 5140, 575, 5724, 504, 7020, 5761, 5137, 1090, 1652, 5199, 1705, 5842, 8677, 18704, 18707, 13008, 18714, 1113, 5376, 6957, 7023, 18697, 18715, 2]
+// Dependencies: [19, 5171, 6974, 5041, 5203, 6860, 18733, 18738, 18730, 21, 5170, 575, 5756, 504, 7053, 5793, 5167, 1090, 1652, 5231, 1705, 5874, 8710, 18742, 18745, 13040, 18752, 1113, 5408, 6990, 7056, 18735, 18753, 2]
 
-// Module 18703 (GuildsBarGuildFolder)
+// Module 18741 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl3 from "intl" /* 1113 */;
-import native from "native" /* 5199 */;
-import useToken from "useToken" /* 5724 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6827 */;
-import NativeViewDefault from "NativeView" /* 7023 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8677 */;
-import ListUtils from "ListUtils" /* 13008 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18697 */;
+import native from "native" /* 5231 */;
+import useToken from "useToken" /* 5756 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6860 */;
+import NativeViewDefault from "NativeView" /* 7056 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8710 */;
+import ListUtils from "ListUtils" /* 13040 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18735 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6941 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18695 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18700 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18692 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6974 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18733 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18738 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18730 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
@@ -42,9 +42,9 @@ let map1;
 let tmp;
 let tmp3;
 let unpackModuleId;
-const ColorUtils = tmp(5137);
-const GuildIcon = tmp(7020);
-const GuildIconDefault = tmp3(7020);
+const ColorUtils = tmp(5167);
+const GuildIcon = tmp(7053);
+const GuildIconDefault = tmp3(7053);
 function MiniGuildIcon(arg0) {
   let guildPreview3;
   let position;
@@ -314,16 +314,16 @@ const memoResult = react.memo(function FolderBGInner(color) {
   let token2;
   ({ folderId, totalItems } = color);
   let tmp = color;
-  let obj = color(5724);
+  let obj = color(5756);
   const token = obj.useToken(token2(575).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  let obj2 = color(5724);
+  let obj2 = color(5756);
   const token1 = obj2.useToken(token2(575).modules.mobile.GUILD_BAR_ITEM_MARGIN);
   const items = [closure_21, , ];
-  const obj3 = color(5724);
+  const obj3 = color(5756);
   const tmp6 = closure_19(token, obj3.useToken(token2(575).modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
   const tmp7 = closure_11(folderId);
   const useCallback = react.useCallback;
-  items[1] = color(5761).withSpring;
+  items[1] = color(5793).withSpring;
   items[2] = closure_15;
   let c0;
   let c1;
@@ -341,7 +341,7 @@ const memoResult = react.memo(function FolderBGInner(color) {
   GuildsBarGuildFolderTsx1.__workletHash = 3223849263087;
   GuildsBarGuildFolderTsx1.__initData = tmp8;
   const callback = useCallback(GuildsBarGuildFolderTsx1, []);
-  const tmpResult = tmp(5724);
+  const tmpResult = tmp(5756);
   token2 = tmpResult.useToken(tmp3(575).modules.mobile.GUILD_FOLDER_COLOR_OPACITY);
   const items2 = [color, token2];
   const memo = obj4.useMemo(() => {

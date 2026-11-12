@@ -1,14 +1,14 @@
-// Module ID: 15195
-// Function ID: 15196
+// Module ID: 15227
+// Function ID: 15228
 // Name: AddWidgetButtonConfig
-// Dependencies: [2162, 7851, 7849, 15196, 1113, 2]
+// Dependencies: [2162, 7884, 7882, 15228, 1113, 2]
 // Exports: getAddWidgetAriaLabel, getAddWidgetPlaceholder, getAddWidgetTitle
 
-// Module 15195 (AddWidgetButtonConfig)
+// Module 15227 (AddWidgetButtonConfig)
 import intl2 from "intl" /* 1113 */;
-import WidgetType from "WidgetType" /* 7849 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7851 */;
-import SampleGameWidgetData from "SampleGameWidgetData" /* 15196 */;
+import WidgetType from "WidgetType" /* 7882 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7884 */;
+import SampleGameWidgetData from "SampleGameWidgetData" /* 15228 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;
 

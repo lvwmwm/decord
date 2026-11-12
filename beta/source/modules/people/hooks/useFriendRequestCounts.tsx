@@ -1,14 +1,14 @@
-// Module ID: 19189
-// Function ID: 19190
+// Module ID: 19227
+// Function ID: 19228
 // Name: useFriendRequestCounts
-// Dependencies: [32, 7876, 5082, 504, 2]
+// Dependencies: [32, 7909, 5112, 504, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 19189 (useFriendRequestCounts)
+// Module 19227 (useFriendRequestCounts)
 import get_initialized from "get initialized" /* 504 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7876 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7909 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");

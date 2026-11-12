@@ -1,25 +1,25 @@
-// Module ID: 17585
-// Function ID: 17586
+// Module ID: 17622
+// Function ID: 17623
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [32, 19, 17, 17586, 1072, 5165, 21, 1652, 1187, 5140, 575, 5390, 5366, 16779, 6839, 1624, 5168, 5370, 5373, 12, 17587, 10137, 5751, 10748, 5376, 1113, 17332, 16801, 17590, 2]
+// Dependencies: [32, 19, 17, 17623, 1072, 5195, 21, 1652, 1187, 5170, 575, 5422, 5398, 16811, 6872, 1624, 5200, 5402, 5405, 12, 17624, 10169, 5783, 10780, 5408, 1113, 17369, 5231, 16834, 17627, 2]
 // Exports: default
 
-// Module 17585 (SettingsAppearanceThemeCarousel)
+// Module 17622 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5366 */;
-import timing_timing from "timing/timing" /* 5370 */;
-import HapticUtils from "HapticUtils" /* 5376 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5398 */;
+import timing_timing from "timing/timing" /* 5402 */;
+import HapticUtils from "HapticUtils" /* 5408 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17586 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17623 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let constants, set, set2;
@@ -42,9 +42,9 @@ let obj9;
 let size;
 let tmp2;
 let unpackModuleId;
-const timingPresets = tmp2(5373);
+const timingPresets = tmp2(5405);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
-const ThemeTypes = Constants.ThemeTypes;
+let ThemeTypes = Constants.ThemeTypes;
 ({ HexagonCampaignPerk: c9, HexagonCampaignPerkAvailability: c10 } = HexagonCampaignConstants);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 let closure_14 = module_1652.createAnimatedComponent(native.Icon);
@@ -89,7 +89,8 @@ export default function SettingsAppearanceThemeCarousel(themes) {
   let obj11;
   let obj12;
   let obj17;
-  let obj26;
+  let obj22;
+  let obj27;
   let onThemeSelected;
   let str;
   let str2;
@@ -117,8 +118,8 @@ export default function SettingsAppearanceThemeCarousel(themes) {
   let obj = themes(isPreview[11]);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   let obj2 = deviceWidth;
-  deviceWidth.useRef(null);
-  const ref = deviceWidth.useRef(defaultIndex);
+  const ref = deviceWidth.useRef(null);
+  ThemeTypes = deviceWidth.useRef(defaultIndex);
   const items = [themes];
   constants = deviceWidth.useMemo(() => {
     const findIndexResult = themes.findIndex((theme) => theme.theme === constants.ONYX);
@@ -426,32 +427,34 @@ export default function SettingsAppearanceThemeCarousel(themes) {
         tmp43Result6 = hexagonCampaignPerkAvailability !== sharedValue.LOCKED;
       }
       if (tmp43Result6) {
-        const obj21 = { variant: "overlay", perk: tmp21.CLIENT_THEME };
-        tmp43Result6 = tmp43(tmp57(tmp3[27]), obj21);
+        const obj21 = { theme: ThemeTypes.DARK, children: sharedValue1(currentThemeIndex(tmp3[28]), obj22) };
+        const ThemeContextProvider = tmp2(tmp3[27]).ThemeContextProvider;
+        obj22 = { perk: tmp21.CLIENT_THEME, variant: "expressive" };
+        tmp43Result6 = tmp43(ThemeContextProvider, obj21);
       }
-      const obj22 = { children: items17 };
+      const obj23 = { children: items17 };
       items16 = [sharedValue1(View, obj20), tmp43Result];
       items17 = [tmp37(tmp38, obj19), ];
-      const obj23 = { style: tmp.labelGroup, children: items18 };
+      const obj24 = { style: tmp.labelGroup, children: items18 };
       items18 = [tmp44, tmp37Result3];
-      items17[1] = c12(closure_5, obj23);
-      const obj24 = { style: tmp.container, children: items23 };
-      const obj25 = { style: tmp.floatingNuxContainer, children: c12(View2, obj26) };
-      obj26 = { style: items19, children: items21 };
+      items17[1] = c12(closure_5, obj24);
+      const obj25 = { style: tmp.container, children: items23 };
+      const obj26 = { style: tmp.floatingNuxContainer, children: c12(View2, obj27) };
+      obj27 = { style: items19, children: items21 };
       items19 = [tmp.floatingNux, animatedStyle1, , ];
       ({ bgSurfaceOverlay: arr21[2], borderFaint: arr21[3] } = animatedStyles);
-      const obj27 = { style: items20, source: currentThemeIndex(tmp3[28]), size: tmp2(tmp3[8]).IconSizes.REFRESH_SMALL_16 };
+      const obj28 = { style: items20, source: currentThemeIndex(tmp3[29]), size: tmp2(tmp3[8]).IconSizes.REFRESH_SMALL_16 };
       items20 = [tmp.arrowLeft, animatedStyles.iconInteractive];
-      const tmp37Result4 = c12(tmp56, obj22);
+      const tmp37Result4 = c12(tmp56, obj23);
       View2 = tmp57(tmp3[7]).View;
-      items21 = [sharedValue1(rounded, obj27), ];
-      const obj28 = { animated: true, style: items22, variant: "body-sm/medium", maxFontSizeMultiplier: 1.5, children: intl3.string(tmp2(tmp3[25]).t.y2b7CA) };
+      items21 = [sharedValue1(rounded, obj28), ];
+      const obj29 = { animated: true, style: items22, variant: "body-sm/medium", maxFontSizeMultiplier: 1.5, children: intl3.string(tmp2(tmp3[25]).t.y2b7CA) };
       items22 = [animatedStyles.textNormal, tmp.uppercase];
       const Text2 = tmp2(tmp3[22]).Text;
       intl3 = tmp2(tmp3[25]).intl;
-      items21[1] = sharedValue1(Text2, obj28);
-      items23 = [sharedValue1(tmp38, obj25), tmp37Result4];
-      return c12(closure_5, obj24);
+      items21[1] = sharedValue1(Text2, obj29);
+      items23 = [sharedValue1(tmp38, obj26), tmp37Result4];
+      return c12(closure_5, obj25);
     }
     const intl = tmp2(tmp3[25]).intl;
     const string = intl.string;
@@ -462,7 +465,7 @@ export default function SettingsAppearanceThemeCarousel(themes) {
       stringResult = string(t.d5Gu9A);
     }
   }
-  const obj29 = {
+  const obj30 = {
     horizontal: true,
     style: tmp.a11yThemeListScroll,
     contentContainerStyle: tmp.a11yThemeList,
@@ -481,5 +484,5 @@ export default function SettingsAppearanceThemeCarousel(themes) {
       return sharedValue1(closure_5, obj, "theme-" + index);
     })
   };
-  tmp43Result7 = tmp43(onThemeSelected, obj29);
+  tmp43Result7 = tmp43(onThemeSelected, obj30);
 };

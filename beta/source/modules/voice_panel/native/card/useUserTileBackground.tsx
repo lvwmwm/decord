@@ -1,12 +1,12 @@
-// Module ID: 19482
-// Function ID: 19483
+// Module ID: 19520
+// Function ID: 19521
 // Name: useUserTileBackground
-// Dependencies: [9606, 8898, 2]
+// Dependencies: [9639, 8931, 2]
 // Exports: default
 
-// Module 19482 (useUserTileBackground)
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 8898 */;
-import DominantColorUtils from "DominantColorUtils" /* 9606 */;
+// Module 19520 (useUserTileBackground)
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 8931 */;
+import DominantColorUtils from "DominantColorUtils" /* 9639 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/card/useUserTileBackground.tsx");

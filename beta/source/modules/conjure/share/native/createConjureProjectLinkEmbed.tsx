@@ -1,17 +1,17 @@
-// Module ID: 15410
-// Function ID: 15411
+// Module ID: 15442
+// Function ID: 15443
 // Name: createConjureProjectLinkEmbed
-// Dependencies: [10238, 5140, 575, 1113, 4026, 11715, 8465, 13939, 2]
+// Dependencies: [10270, 5170, 575, 1113, 4026, 11747, 8498, 13971, 2]
 // Exports: default
 
-// Module 15410 (createConjureProjectLinkEmbed)
+// Module 15442 (createConjureProjectLinkEmbed)
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8465 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10238 */;
-import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11715 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 13939 */;
-import createStyles from "createStyles" /* 5140 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8498 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10270 */;
+import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11747 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 13971 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
@@ -66,7 +66,7 @@ export default function createConjureProjectLinkEmbed(applicationId, ticket, arg
       }
       const obj4 = { displayType: "ready" === conjureProjectLinkCard.type ? ConjureProjectEmbedDisplayType.READY : ConjureProjectEmbedDisplayType.INFO_ONLY, title: application.name, description: tmp19, creatorText: formatToPlainStringResult, noticeText: stringResult1, iconUrl: iconURL, coverUrl: coverImageURL, installLabel: stringResult2, remixLabel: stringResult3, coverAction, coverActionLabel: stringResult4, accessibilityLabel: intl7.formatToPlainString(_modDef4026.c8DqSD, obj6) };
       const merged3 = Object.assign(obj2);
-      ConjureProjectEmbedDisplayType = tmp(13939).ConjureProjectEmbedDisplayType;
+      ConjureProjectEmbedDisplayType = tmp(13971).ConjureProjectEmbedDisplayType;
       tmp19 = null;
       if ("" !== str3) {
         tmp19 = str3;

@@ -1,30 +1,30 @@
-// Module ID: 19150
-// Function ID: 19151
+// Module ID: 19188
+// Function ID: 19189
 // Name: ThreadBrowserRowSubtext
-// Dependencies: [19, 17, 5141, 5052, 1385, 7541, 1072, 1083, 21, 5140, 575, 504, 8417, 6172, 6957, 5751, 1113, 5194, 7546, 6571, 11, 1187, 8653, 8490, 2]
+// Dependencies: [19, 17, 5171, 5082, 1385, 7574, 1072, 1083, 21, 5170, 575, 504, 8450, 6204, 6990, 5783, 1113, 5226, 7579, 6603, 11, 1187, 8686, 8523, 2]
 // Exports: ThreadSubtext
 
-// Module 19150 (ThreadBrowserRowSubtext)
+// Module 19188 (ThreadBrowserRowSubtext)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5194 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 6172 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 6571 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8490 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 8653 */;
+import UserUtilsDefault from "UserUtils" /* 5226 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 6204 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 6603 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8523 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8686 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import UserStore from "UserStore" /* 1385 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7541 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7574 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -52,7 +52,7 @@ function MessageContent(arg0) {
   c4 = undefined;
   let roleStyle;
   let tmp = closure_13();
-  let obj = message(7546);
+  let obj = message(7579);
   items = [message.author.id];
   const subscribeGuildMembers = obj.useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
   const items1 = [UserStore];
@@ -72,14 +72,14 @@ function MessageContent(arg0) {
   ({ nick: c2, colorString: c3, colorStrings: c4 } = tmp4);
   const obj4 = SnowflakeUtilsDefault;
   const extractTimestampResult = obj4.extractTimestamp(message.id);
-  const obj5 = message(8417);
+  const obj5 = message(8450);
   const timestampString = obj5.getTimestampString(extractTimestampResult);
-  const obj6 = message(8417);
+  const obj6 = message(8450);
   const timestampAccessibilityLabel = obj6.getTimestampAccessibilityLabel(extractTimestampResult);
   roleStyle = useHasEnhancedRoleColorsDefault(thread.guild_id, stateFromStores.id);
   const obj7 = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel, children: closure_9(Text, obj8) };
   obj8 = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "body-sm/medium", color: "text-default", children: intl.format(message(1113).t.M79KAH, obj9) };
-  Text = message(5751).Text;
+  Text = message(5783).Text;
   intl = message(1113).intl;
   obj9 = {
     usernameHook(arg0, arg1) {
@@ -175,7 +175,7 @@ function Username(usernameColor) {
   }
   const items1 = [shouldShowRoleDot, ];
   let tmp10;
-  const Text = tmp3(5751).Text;
+  const Text = tmp3(5783).Text;
   const tmp9 = React4;
   if (tmp5) {
     tmp10 = processColorStringsArray;
@@ -304,7 +304,7 @@ export function ThreadSubtext(thread) {
   const items1 = [id];
   const obj = id(504);
   const stateFromStores = obj.useStateFromStores(items, () => ThreadMessageStore.getMostRecentMessage(id), items1);
-  const obj2 = id(8417);
+  const obj2 = id(8450);
   const lastMessageTimestamp = obj2.useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
@@ -314,9 +314,9 @@ export function ThreadSubtext(thread) {
       }
     }
   }
-  const tmpResult = id(8417);
+  const tmpResult = id(8450);
   const timestampString = tmpResult.getTimestampString(lastMessageTimestamp);
-  const tmpResult2 = id(8417);
+  const tmpResult2 = id(8450);
   const obj4 = { thread, timestamp: timestampString, accessibilityLabel: tmpResult2.getTimestampAccessibilityLabel(lastMessageTimestamp) };
   return closure_9(closure_14, obj4);
 }

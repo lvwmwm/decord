@@ -1,20 +1,20 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 17948
+// Function ID: 17949
 // Name: DevToolsLocalMessageCache
-// Dependencies: [17, 4989, 21, 5140, 575, 7038, 6159, 7126, 7743, 5751, 2]
+// Dependencies: [17, 5019, 21, 5170, 575, 7071, 6191, 7159, 7776, 5783, 2]
 // Exports: default
 
-// Module 17910 (DevToolsLocalMessageCache)
+// Module 17948 (DevToolsLocalMessageCache)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import Stack_Stack from "Stack/Stack" /* 6159 */;
-import TableRow5 from "TableRow" /* 7038 */;
-import TableRowGroup3 from "TableRowGroup" /* 7126 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7743 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import Stack_Stack from "Stack/Stack" /* 6191 */;
+import TableRow5 from "TableRow" /* 7071 */;
+import TableRowGroup3 from "TableRowGroup" /* 7159 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 7776 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

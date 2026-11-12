@@ -1,15 +1,15 @@
-// Module ID: 17372
-// Function ID: 17373
+// Module ID: 17409
+// Function ID: 17410
 // Name: OrbsArcadeInfoSheet
-// Dependencies: [19, 17341, 21, 504, 10956, 17354, 1113, 17355, 17351, 2]
+// Dependencies: [19, 17378, 21, 504, 10988, 17391, 1113, 17392, 17388, 2]
 // Exports: default
 
-// Module 17372 (OrbsArcadeInfoSheet)
+// Module 17409 (OrbsArcadeInfoSheet)
 import Fragment from "Fragment" /* 21 */;
-import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17354 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17355 */;
+import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17391 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17392 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17341 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17378 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -27,14 +27,14 @@ export default function OrbsArcadeInfoSheet(gameId) {
   } else {
     const asset = stateFromStores.asset;
     let tmp8Result;
-    const PromoSheet = tmp(10956).PromoSheet;
+    const PromoSheet = tmp(10988).PromoSheet;
     if (null != asset) {
       const obj2 = { asset };
       tmp8Result = tmp8(OrbsArcadeGameGraphicDefault, obj2);
     }
     const intl = tmp(1113).intl;
     const intl2 = tmp(1113).intl;
-    ({ game: stateFromStores, sheetKey: "OrbsArcadeInfoSheet", location: gameId(17351).OrbsArcadeCtaLocation.INFO_SHEET, surface, secondaryAction: gameId(17355).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
+    ({ game: stateFromStores, sheetKey: "OrbsArcadeInfoSheet", location: gameId(17388).OrbsArcadeCtaLocation.INFO_SHEET, surface, secondaryAction: gameId(17392).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
     OrbsArcadeSheetActionsDefault;
     return <PromoSheet gradientColor="blue" illustration={tmp8Result} title={intl.string(gameId(1113).t["3AT3DL"])} description={intl2.string(gameId(1113).t.GSj8gp)} actions={null} />;
   }

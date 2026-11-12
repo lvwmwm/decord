@@ -1,15 +1,15 @@
-// Module ID: 9995
-// Function ID: 9996
+// Module ID: 10028
+// Function ID: 10029
 // Name: lurkGuildFromRoute
-// Dependencies: [5, 502, 5011, 6957, 5189, 2]
+// Dependencies: [5, 502, 5041, 6990, 5221, 2]
 // Exports: default
 
-// Module 9995 (lurkGuildFromRoute)
-import RouteUtils from "RouteUtils" /* 5189 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
+// Module 10028 (lurkGuildFromRoute)
+import RouteUtils from "RouteUtils" /* 5221 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, closure_4;

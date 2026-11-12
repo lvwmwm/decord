@@ -1,25 +1,25 @@
-// Module ID: 16818
-// Function ID: 16819
+// Module ID: 16852
+// Function ID: 16853
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 7811, 7803, 1072, 21, 5140, 575, 8828, 8812, 7387, 7412, 1252, 8806, 8813, 5388, 7382, 1113, 8814, 10725, 504, 16819, 15348, 8808, 8829, 16820, 15354, 15355, 8815, 11651, 5715, 2]
+// Dependencies: [32, 19, 17, 7844, 7836, 1072, 21, 5170, 575, 8861, 8845, 7420, 7445, 1252, 8839, 8846, 5420, 7415, 1113, 8847, 10757, 504, 16853, 15380, 8841, 8862, 16854, 15386, 15387, 8848, 11683, 5747, 2]
 // Exports: default
 
-// Module 16818 (EditProfileFrameActionSheet)
+// Module 16852 (EditProfileFrameActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7803 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8806 */;
-import useShopProductItems from "useShopProductItems" /* 8813 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8829 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 16820 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7836 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8839 */;
+import useShopProductItems from "useShopProductItems" /* 8846 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 16854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7811 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7844 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -135,7 +135,7 @@ function ProfileFrameSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8815)(previewSkuId);
+  const tmp2 = purchase(8848)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;
@@ -159,10 +159,10 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(11651), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  items1 = [closure_9(purchase(11683), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
-  const tmp4 = purchase(5715);
+  const tmp4 = purchase(5747);
   items2[0] = "" + tmp.previewGradient.color + "00";
   items2[1] = tmp.previewGradient.color;
   items1[1] = closure_9(tmp4, obj2);

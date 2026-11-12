@@ -1,19 +1,19 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 14820
+// Function ID: 14821
 // Name: useConjureAppChannelSoundButton
-// Dependencies: [19, 6901, 6902, 7483, 5799, 12376, 504, 14789, 12116, 8744, 1113, 4026, 5837, 11061, 2]
+// Dependencies: [19, 6934, 6935, 7516, 5831, 12408, 504, 14821, 12148, 8777, 1113, 4026, 5869, 11093, 2]
 // Exports: default
 
-// Module 14788 (useConjureAppChannelSoundButton)
+// Module 14820 (useConjureAppChannelSoundButton)
 import intl2 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5799 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
-import FramesConstants from "FramesConstants" /* 6902 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11061 */;
-import VoiceXIcon from "VoiceXIcon" /* 12116 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import FramesConstants from "FramesConstants" /* 6935 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11093 */;
+import VoiceXIcon from "VoiceXIcon" /* 12148 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6901 */;
+import FramesStore from "FramesStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

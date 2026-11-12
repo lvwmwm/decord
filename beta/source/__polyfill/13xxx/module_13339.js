@@ -1,35 +1,23 @@
 // Module ID: 13339
 // Function ID: 13340
-// Dependencies: [13325, 13284, 13322]
-// Exports: createCheckInEnvelope
+// Dependencies: [13316]
+// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
 
 // Module 13339
-import _mod13284 from "module_13284" /* 13284 */;
-import _mod13322 from "module_13322" /* 13322 */;
-import _mod13325 from "module_13325" /* 13325 */;
+import _mod13316 from "module_13316" /* 13316 */;
 
+const _sentryScope = "_sentryScope";
+const _sentryIsolationScope = "_sentryIsolationScope";
 
-export function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
-  let date;
-  const obj = { sent_at: date.toISOString() };
-  date = new Date();
-  const tmp = sdk && sdk.sdk;
+export function getCapturedScopesOnSpan(scope) {
+  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+}
+export function setCapturedScopesOnSpan(arg0, arg1, arg2) {
+  const tmp = arg0;
   if (tmp) {
-    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
-    obj.sdk = obj2;
+    const obj = _mod13316;
+    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
+    const obj2 = _mod13316;
+    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
   }
-  const tmp2 = arg3 && arg4;
-  if (tmp2) {
-    const obj4 = _mod13325;
-    obj.dsn = obj4.dsnToString(arg4);
-  }
-  const tmp5 = arg1;
-  if (tmp5) {
-    const obj5 = _mod13284;
-    obj.trace = obj5.dropUndefinedKeys(arg1);
-  }
-  const items = [{ type: "check_in" }, arg0];
-  const items1 = [items];
-  const obj6 = _mod13322;
-  return obj6.createEnvelope(obj, items1);
 }

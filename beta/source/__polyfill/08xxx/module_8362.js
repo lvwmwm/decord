@@ -1,118 +1,74 @@
 // Module ID: 8362
 // Function ID: 8363
-// Dependencies: [8349, 8352]
+// Dependencies: [8354, 8355]
+// Exports: isAVI, isFLV, isM4V, isMKV, isMOV, isMP4, isOGG, isSWF, isWEBM
 
 // Module 8362
-import _mod8349 from "module_8349" /* 8349 */;
-import _modDef8352 from "module_8352" /* 8352 */;
+import _mod8354 from "module_8354" /* 8354 */;
+import _mod8355 from "module_8355" /* 8355 */;
 
 
-export default {
-  isWebpFile(dataView) {
-    let tmp = dataView;
-    if (tmp) {
-      const obj = _mod8349;
-      tmp = obj.getStringFromDataView(dataView, 0, 4) === "RIFF";
+export function isAVI(fileChunk) {
+  fileChunk = _mod8354.getFileChunk(fileChunk);
+  const FileTypes = _mod8355.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "avi");
+}
+export function isFLV(fileChunk) {
+  fileChunk = _mod8354.getFileChunk(fileChunk);
+  const FileTypes = _mod8355.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "flv") && _mod8354.isFlvStringIncluded(fileChunk);
+  return tmp4;
+}
+export function isM4V(fileChunk) {
+  fileChunk = _mod8354.getFileChunk(fileChunk);
+  const FileTypes = _mod8355.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "m4v") && _mod8354.isftypStringIncluded(fileChunk);
+  return tmp4;
+}
+export function isMKV(fileChunk) {
+  fileChunk = _mod8354.getFileChunk(fileChunk, 64);
+  const FileTypes = _mod8355.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "mkv") && "mkv" === _mod8354.findMatroskaDocTypeElements(fileChunk);
+  return tmp4;
+}
+export function isMOV(fileChunk) {
+  fileChunk = _mod8354.getFileChunk(fileChunk);
+  const FileTypes = _mod8355.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "mov");
+}
+export function isMP4(fileChunk, excludeSimilarTypes) {
+  fileChunk = _mod8354.getFileChunk(fileChunk);
+  const FileTypes = _mod8355.FileTypes;
+  let checkByFileTypeResult = FileTypes.checkByFileType(fileChunk, "mp4");
+  if (!checkByFileTypeResult) {
+    excludeSimilarTypes = undefined;
+    if (null != excludeSimilarTypes) {
+      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
     }
-    if (tmp) {
-      const obj2 = _mod8349;
-      tmp = obj2.getStringFromDataView(dataView, 8, 4) === "WEBP";
+    let tmp8 = !excludeSimilarTypes;
+    if (tmp8) {
+      const fileChunk1 = tmp(8354).getFileChunk(fileChunk);
+      const FileTypes2 = tmp(8355).FileTypes;
+      tmp8 = FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8354.isftypStringIncluded(fileChunk1);
+      FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8354.isftypStringIncluded(fileChunk1);
     }
-    return tmp;
-  },
-  findOffsets(byteLength) {
-    let tmp;
-    let tmp2;
-    let tmp3;
-    let flag = false;
-    let num = 12;
-    let hasAppMarkers = false;
-    let vp8xChunkOffset;
-    let iccChunks;
-    let xmpChunks;
-    let tiffHeaderOffset;
-    if (20 < byteLength.byteLength) {
-      while (true) {
-        let tmp4;
-        let sum4;
-        let tmp20;
-        let tmp21;
-        let tmp22;
-        let tmp9 = require;
-        let obj = _mod8349;
-        let stringFromDataView = obj.getStringFromDataView(byteLength, num, 4);
-        let uint32 = byteLength.getUint32(num + 4, true);
-        let tmp13 = importDefault;
-        let flag3 = flag;
-        if (_modDef8352.USE_EXIF) {
-          if ("EXIF" === stringFromDataView) {
-            let tmp9Result = tmp9(8349);
-            let sum = num + 8;
-            let sum1 = sum;
-            if (tmp9Result.getStringFromDataView(byteLength, sum, 6) === "Exif\0\0") {
-              sum1 = sum + 6;
-            }
-            tmp22 = sum1;
-            flag3 = true;
-            sum4 = tmp;
-            tmp20 = tmp2;
-            tmp21 = tmp3;
-            let sum2 = uint32;
-            if (uint32 % 2 !== 0) {
-              sum2 = uint32 + 1;
-            }
-            let sum3 = num + (8 + sum2);
-            flag = flag3;
-            num = sum3;
-            tmp = sum4;
-            tmp2 = tmp20;
-            tmp3 = tmp21;
-            tmp4 = tmp22;
-            hasAppMarkers = flag3;
-            vp8xChunkOffset = sum4;
-            iccChunks = tmp20;
-            xmpChunks = tmp21;
-            tiffHeaderOffset = tmp22;
-            if (sum3 + 8 >= byteLength.byteLength) {
-              break;
-            }
-          }
-        }
-        if (tmp13(8352).USE_XMP) {
-          if ("XMP " === stringFromDataView) {
-            let obj2 = { dataOffset: num + 8, length: uint32 };
-            let items = [obj2];
-            flag3 = true;
-            sum4 = tmp;
-            tmp20 = tmp2;
-            tmp21 = items;
-            tmp22 = tmp4;
-          }
-        }
-        if (tmp13(8352).USE_ICC) {
-          if ("ICCP" === stringFromDataView) {
-            let obj3 = { offset: num + 8, length: uint32, chunkNumber: 1, chunksTotal: 1 };
-            let items1 = [obj3];
-            flag3 = true;
-            sum4 = tmp;
-            tmp20 = items1;
-            tmp21 = tmp3;
-            tmp22 = tmp4;
-          }
-        }
-        sum4 = tmp;
-        tmp20 = tmp2;
-        tmp21 = tmp3;
-        tmp22 = tmp4;
-        if ("VP8X" === stringFromDataView) {
-          sum4 = num + 8;
-          flag3 = true;
-          tmp20 = tmp2;
-          tmp21 = tmp3;
-          tmp22 = tmp4;
-        }
-      }
-    }
-    return { hasAppMarkers, tiffHeaderOffset, xmpChunks, iccChunks, vp8xChunkOffset };
+    checkByFileTypeResult = tmp8;
   }
-};
+  return checkByFileTypeResult;
+}
+export function isOGG(fileChunk) {
+  fileChunk = _mod8354.getFileChunk(fileChunk);
+  const FileTypes = _mod8355.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ogg");
+}
+export function isSWF(fileChunk) {
+  fileChunk = _mod8354.getFileChunk(fileChunk);
+  const FileTypes = _mod8355.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "swf");
+}
+export function isWEBM(fileChunk) {
+  fileChunk = _mod8354.getFileChunk(fileChunk, 64);
+  const FileTypes = _mod8355.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "webm") && "webm" === _mod8354.findMatroskaDocTypeElements(fileChunk);
+  return tmp4;
+}

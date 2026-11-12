@@ -1,13 +1,13 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15220
+// Function ID: 15221
 // Name: conjureCreatorByline
-// Dependencies: [1113, 4026, 5194, 2]
+// Dependencies: [1113, 4026, 5226, 2]
 // Exports: formatConjureCreatorByline
 
-// Module 15188 (conjureCreatorByline)
+// Module 15220 (conjureCreatorByline)
 import intl2 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import UserUtils from "UserUtils" /* 5194 */;
+import UserUtils from "UserUtils" /* 5226 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/app_hover_card/conjureCreatorByline.tsx");

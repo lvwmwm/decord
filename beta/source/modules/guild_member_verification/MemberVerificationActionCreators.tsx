@@ -1,18 +1,18 @@
-// Module ID: 6977
-// Function ID: 6978
+// Module ID: 7010
+// Function ID: 7011
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 5045, 5052, 5874, 1385, 1072, 1282, 5875, 572, 6978, 6982, 5174, 6983, 6090, 1113, 6579, 1252, 2]
+// Dependencies: [5, 5075, 5082, 5906, 1385, 1072, 1282, 5907, 572, 7011, 7015, 5206, 7016, 6122, 1113, 6611, 1252, 2]
 // Exports: showCoachmark
 
-// Module 6977 (MemberVerificationActionCreators)
+// Module 7010 (MemberVerificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5875 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 5045 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import InviteStore from "InviteStore" /* 5874 */;
+import ImpersonateStore from "ImpersonateStore" /* 5075 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import InviteStore from "InviteStore" /* 5906 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -328,7 +328,7 @@ obj = function _submitVerificationForm() {
               body = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {

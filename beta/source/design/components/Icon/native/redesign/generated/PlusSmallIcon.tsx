@@ -1,14 +1,14 @@
-// Module ID: 9659
-// Function ID: 9660
+// Module ID: 9692
+// Function ID: 9693
 // Name: PlusSmallIcon
-// Dependencies: [19, 21, 575, 5841, 9660, 2]
+// Dependencies: [19, 21, 575, 5873, 9693, 2]
 // Exports: PlusSmallIcon
 
-// Module 9659 (PlusSmallIcon)
+// Module 9692 (PlusSmallIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 9660 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 9693 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

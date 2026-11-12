@@ -1,17 +1,17 @@
-// Module ID: 19112
-// Function ID: 19113
+// Module ID: 19150
+// Function ID: 19151
 // Name: SmartSearchSkeleton
-// Dependencies: [19, 17, 12432, 21, 4249, 5140, 575, 5154, 1113, 12431, 12987, 19100, 2]
+// Dependencies: [19, 17, 12464, 21, 4249, 5170, 575, 5184, 1113, 12463, 13019, 19138, 2]
 
-// Module 19112 (SmartSearchSkeleton)
+// Module 19150 (SmartSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4249 from "module_4249" /* 4249 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19100 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19138 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 12432 */;
+import AILoaderConstants from "AILoaderConstants" /* 12464 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,7 +49,7 @@ const memoResult = react.memo(function SmartSearchSkeleton(isCollapsed) {
   isCollapsed = isCollapsed.isCollapsed;
   let reducedMotion;
   let tmp = closure_10(isCollapsed);
-  reducedMotion = react.useContext(reducedMotion(5154).AccessibilityPreferencesContext).reducedMotion;
+  reducedMotion = react.useContext(reducedMotion(5184).AccessibilityPreferencesContext).reducedMotion;
   items = [reducedMotion.enabled];
   const memo = react.useMemo(() => {
     items = [_modDef4249.ffCCEe, ...closure_1_9.sort(() => Math.random() - 0.5)];
@@ -70,9 +70,9 @@ const memoResult = react.memo(function SmartSearchSkeleton(isCollapsed) {
   }, items);
   let obj = { style: tmp.block, children: items2 };
   let obj2 = { style: tmp.header, children: items1 };
-  items1 = [closure_7(reducedMotion(12431).AILoader, { size: 12, color: "interactive-text-default" }), ];
+  items1 = [closure_7(reducedMotion(12463).AILoader, { size: 12, color: "interactive-text-default" }), ];
   const obj3 = { text: memo, variant: "body-sm/semibold", color: "interactive-text-default", delay: memo1.shimmerDelayMs, initialDelay: memo1.shimmerInitialDelayMs, duration: memo1.shimmerDurationMs, style: tmp.label };
-  items1[1] = closure_7(reducedMotion(12987).AIShimmer, obj3);
+  items1[1] = closure_7(reducedMotion(13019).AIShimmer, obj3);
   items2 = [closure_8(View, obj2), ];
   let num = 6;
   const _Array = Array;

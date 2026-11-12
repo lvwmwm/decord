@@ -1,22 +1,22 @@
-// Module ID: 10002
-// Function ID: 10003
+// Module ID: 10035
+// Function ID: 10036
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7843, 5779, 1072, 21, 5140, 575, 1499, 504, 9969, 9987, 9972, 7040, 5751, 1113, 7104, 5715, 10003, 10004, 10006, 2]
+// Dependencies: [19, 17, 7876, 5811, 1072, 21, 5170, 575, 1499, 504, 10002, 10020, 10005, 7073, 5783, 1113, 7137, 5747, 10036, 10037, 10039, 2]
 
-// Module 10002 (ConversationListItem)
+// Module 10035 (ConversationListItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ConversationConstants from "ConversationConstants" /* 5779 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9969 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9972 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9987 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 10004 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 10006 */;
+import ConversationConstants from "ConversationConstants" /* 5811 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 10002 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 10005 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 10020 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 10037 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 10039 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7843 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7876 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

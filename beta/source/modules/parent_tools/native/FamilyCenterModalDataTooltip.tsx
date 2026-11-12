@@ -1,30 +1,30 @@
-// Module ID: 17113
-// Function ID: 17114
+// Module ID: 17147
+// Function ID: 17148
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [19, 17, 7792, 21, 8714, 13595, 5840, 15765, 8716, 8085, 5864, 13597, 5140, 575, 5751, 13594, 1113, 2664, 8441, 8443, 8041, 8043, 13452, 5758, 6799, 7064, 11627, 2]
+// Dependencies: [19, 17, 7825, 21, 8747, 13627, 5872, 15797, 8749, 8118, 5896, 13629, 5170, 575, 5783, 13626, 1113, 2664, 8474, 8476, 8074, 8076, 13484, 5790, 6831, 7097, 11659, 2]
 // Exports: default
 
-// Module 17113 (FamilyCenterModalDataTooltip)
+// Module 17147 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2664 from "module_2664" /* 2664 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import FriendsIcon from "FriendsIcon" /* 5840 */;
-import ClockIcon from "ClockIcon" /* 5864 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
-import CreditCardIcon from "CreditCardIcon" /* 8085 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8441 */;
-import ChatIcon from "ChatIcon" /* 8714 */;
-import ThreadIcon from "ThreadIcon" /* 8716 */;
-import Modal2 from "Modal" /* 11627 */;
-import PhoneIcon from "PhoneIcon" /* 13595 */;
-import GiftIcon from "GiftIcon" /* 13597 */;
-import ServerGridIcon from "ServerGridIcon" /* 15765 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FriendsIcon from "FriendsIcon" /* 5872 */;
+import ClockIcon from "ClockIcon" /* 5896 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7825 */;
+import CreditCardIcon from "CreditCardIcon" /* 8118 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8474 */;
+import ChatIcon from "ChatIcon" /* 8747 */;
+import ThreadIcon from "ThreadIcon" /* 8749 */;
+import Modal2 from "Modal" /* 11659 */;
+import PhoneIcon from "PhoneIcon" /* 13627 */;
+import GiftIcon from "GiftIcon" /* 13629 */;
+import ServerGridIcon from "ServerGridIcon" /* 15797 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

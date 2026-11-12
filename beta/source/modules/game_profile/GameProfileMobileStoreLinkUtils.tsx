@@ -1,12 +1,12 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 9507
+// Function ID: 9508
 // Name: GameProfileMobileStoreLinkUtils
-// Dependencies: [9424, 1091, 2]
+// Dependencies: [9457, 1091, 2]
 // Exports: getMobileStoreLink
 
-// Module 9474 (GameProfileMobileStoreLinkUtils)
+// Module 9507 (GameProfileMobileStoreLinkUtils)
 import ApplicationDistributors from "ApplicationDistributors" /* 1091 */;
-import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9424 */;
+import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9457 */;
 import size from "module_2" /* 2 */;
 
 let websiteHostnames;

@@ -1,9 +1,9 @@
-// Module ID: 15512
-// Function ID: 15513
+// Module ID: 15544
+// Function ID: 15545
 // Name: PremiumOrbsDeliveredModalExperiment
 // Dependencies: [1449, 2]
 
-// Module 15512 (PremiumOrbsDeliveredModalExperiment)
+// Module 15544 (PremiumOrbsDeliveredModalExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

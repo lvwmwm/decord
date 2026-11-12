@@ -1,11 +1,11 @@
-// Module ID: 8752
-// Function ID: 8753
+// Module ID: 8785
+// Function ID: 8786
 // Name: GameAutocompleteUtils
-// Dependencies: [7852, 2]
+// Dependencies: [7885, 2]
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, isRetryableGameSearchError, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 8752 (GameAutocompleteUtils)
-import GameWidgetLimits from "GameWidgetLimits" /* 7852 */;
+// Module 8785 (GameAutocompleteUtils)
+import GameWidgetLimits from "GameWidgetLimits" /* 7885 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 11834
-// Function ID: 11835
+// Module ID: 11866
+// Function ID: 11867
 // Name: UploadActionCreators
-// Dependencies: [7777, 8463, 572, 2]
+// Dependencies: [7810, 8496, 572, 2]
 
-// Module 11834 (UploadActionCreators)
+// Module 11866 (UploadActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DraftStore2 from "DraftStore" /* 7777 */;
-import UploadStore from "UploadStore" /* 8463 */;
+import DraftStore2 from "DraftStore" /* 7810 */;
+import UploadStore from "UploadStore" /* 8496 */;
 import size from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;

@@ -1,19 +1,19 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15222
+// Function ID: 15223
 // Name: conjureServerWidgetConsent
-// Dependencies: [5, 12550, 6899, 15191, 7853, 12549, 12552, 1113, 4026, 1242, 12379, 8984, 5775, 1378, 2]
+// Dependencies: [5, 12582, 6932, 15223, 7886, 12581, 12584, 1113, 4026, 1242, 12411, 9017, 5807, 1378, 2]
 // Exports: getConjureServerWidgetConsentRequest
 
-// Module 15190 (conjureServerWidgetConsent)
+// Module 15222 (conjureServerWidgetConsent)
 import URLUtilsDefault from "URLUtils" /* 1378 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12552 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import WidgetStore from "WidgetStore" /* 12550 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import WidgetStore from "WidgetStore" /* 12582 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c8, closure_6, project_id;
+let _require, c8, c9, closure_6, project_id;
 
 let obj = function _exchangeConsentCode() {
   obj = _asyncToGenerator(async (project_id, code) => {
@@ -170,66 +170,136 @@ obj = function _exchangeAndAdd() {
     let closure_1 = value;
     let closure_2 = arg2;
     let closure_3 = arg3;
-    let closure_5 = tmp;
-    ({ onTurnedOn: c3, showToast: c4 } = closure_3);
-    await "flexDirection";
-    let result = exchangeConsentCode(closure_0, closure_2);
-    await result;
-    if (3 === c8) {
-      let c7 = 0;
-      closure_5 = closure_6;
-      const obj5 = closure_133_1(closure_133_2[9]);
-      obj5.captureException(closure_5);
-    } else if (4 === c8) {
+    if (c9 === 2) {
+      c9 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c9 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c7 = 0;
-        c9 = 3;
-        const obj10 = { value, done: true };
-        return obj10;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        result = addWidget(closure_1);
-        c8 = 5;
-        c9 = 1;
-        const obj11 = { value: result, done: false };
-        return obj11;
+        return { value: "HermesInternal", done: null };
       }
-    } else if (5 === c8) {
-      if (arg0 === 1) {
-        c9 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c7 = 0;
-        c9 = 3;
-        const obj12 = { value, done: true };
-        return obj12;
-      } else {
-        c7 = 2;
-        if (c3 != null) {
-          c3();
-        }
-        c7 = 0;
-      }
-    } else if (arg0 === 1) {
-      c9 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c9 = 3;
-      obj = { value, done: true };
-      return obj;
     } else {
-      c9 = 3;
-      return { value: "HermesInternal", done: null };
+      let c7;
+      try {
+        let closure_5;
+        c9 = 2;
+        if (0 === c8) {
+          if (arg0 === 1) {
+            c9 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c9 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_5 = tmp;
+            c3 = undefined;
+            c4 = undefined;
+            ({ onTurnedOn: c3, showToast: c4 } = closure_3);
+            c8 = 1;
+            c9 = 1;
+            return { value: "flexDirection", done: true };
+          }
+        } else {
+          let result;
+          if (1 === c8) {
+            if (arg0 === 1) {
+              c9 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c9 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              c7 = 1;
+              result = exchangeConsentCode(closure_0, closure_2);
+              c8 = 4;
+              c9 = 1;
+              const obj7 = { value: result, done: false };
+              return obj7;
+            }
+          } else if (2 === c8) {
+            c7 = 0;
+            result = c4;
+            const obj8 = { text: intl.string(closure_133_1(closure_133_2[8]).to9Sp4), variant: "critical" };
+            intl = closure_133_0(closure_133_2[7]).intl;
+            c4(obj8);
+            c9 = 3;
+            const obj9 = { value: undefined, done: true };
+            return obj9;
+          } else {
+            if (3 === c8) {
+              c7 = 0;
+              closure_5 = closure_6;
+              const obj5 = closure_133_1(closure_133_2[9]);
+              obj5.captureException(closure_5);
+            } else if (4 === c8) {
+              if (arg0 === 1) {
+                c9 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 0;
+                c9 = 3;
+                const obj10 = { value, done: true };
+                return obj10;
+              } else {
+                result = addWidget(closure_1);
+                c8 = 5;
+                c9 = 1;
+                const obj11 = { value: result, done: false };
+                return obj11;
+              }
+            } else if (5 === c8) {
+              if (arg0 === 1) {
+                c9 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 0;
+                c9 = 3;
+                const obj12 = { value, done: true };
+                return obj12;
+              } else {
+                c7 = 2;
+                if (c3 != null) {
+                  c3();
+                }
+                c7 = 0;
+              }
+            } else if (arg0 === 1) {
+              c9 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c9 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              c9 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+            const obj6 = closure_133_0(closure_133_2[10]);
+            result = obj6.refreshApplicationWidget(closure_1);
+            c8 = 6;
+            c9 = 1;
+            const obj13 = { value: result, done: false };
+            return obj13;
+          }
+        }
+      } catch (tmp37) {
+        closure_6 = tmp37;
+        if (0 === c7) {
+          c9 = 3;
+          throw tmp37;
+        } else if (1 === tmp39) {
+          c8 = 2;
+        } else {
+          c8 = 3;
+        }
+      }
     }
-    const obj6 = closure_133_0(closure_133_2[10]);
-    result = obj6.refreshApplicationWidget(closure_1);
-    await result;
-    result = c4;
-    const obj8 = { text: intl.string(closure_133_1(closure_133_2[8]).to9Sp4), variant: "critical" };
-    intl = closure_133_0(closure_133_2[7]).intl;
-    c4(obj8);
   });
   return obj(...arguments);
 };

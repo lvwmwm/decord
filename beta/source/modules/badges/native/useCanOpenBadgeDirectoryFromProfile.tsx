@@ -1,12 +1,12 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11626
+// Function ID: 11627
 // Name: useCanOpenBadgeDirectoryFromProfile
-// Dependencies: [11593, 11595, 2]
+// Dependencies: [11625, 11627, 2]
 // Exports: useCanOpenBadgeDirectoryFromProfile
 
-// Module 11594 (useCanOpenBadgeDirectoryFromProfile)
-import BadgeManagementExperiment from "BadgeManagementExperiment" /* 11593 */;
-import BadgeDirectoryUpdatesExperiment from "BadgeDirectoryUpdatesExperiment" /* 11595 */;
+// Module 11626 (useCanOpenBadgeDirectoryFromProfile)
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 11625 */;
+import BadgeDirectoryUpdatesExperiment from "BadgeDirectoryUpdatesExperiment" /* 11627 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/badges/native/useCanOpenBadgeDirectoryFromProfile.tsx");

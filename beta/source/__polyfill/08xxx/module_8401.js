@@ -1,42 +1,47 @@
 // Module ID: 8401
 // Function ID: 8402
-// Dependencies: [8349]
+// Dependencies: [8387, 8402, 8403, 8382]
 
 // Module 8401
-const require = globalThis.__r;
+import _mod8382 from "module_8382" /* 8382 */;
+import _modDef8387 from "module_8387" /* 8387 */;
+import get0thIfdOffset from "get0thIfdOffset" /* 8402 */;
+import IFD_TYPE_0TH2 from "IFD_TYPE_0TH" /* 8403 */;
 
-let closure_2 = [6, 7, 99];
+let c3 = "Exif IFD Pointer";
+let c4 = "GPS Info IFD Pointer";
+let c5 = "Interoperability IFD Pointer";
 
 export default {
-  get(buffer, Compression, arg2) {
-    let prop = Compression;
-    if (prop) {
-      const hasItem = undefined === Compression.Compression || closure_2.includes(Compression.Compression.value);
-      prop = hasItem;
+  read(getUint16, c5, arg2) {
+    const obj = _modDef8387;
+    const byteOrder = obj.getByteOrder(getUint16, c5);
+    const readIfd = get0thIfdOffset.readIfd;
+    get0thIfdOffset;
+    const IFD_TYPE_0TH = IFD_TYPE_0TH2.IFD_TYPE_0TH;
+    const obj2 = get0thIfdOffset;
+    const ifd = readIfd(getUint16, IFD_TYPE_0TH, c5, obj2.get0thIfdOffset(getUint16, c5, byteOrder), byteOrder, arg2);
+    let objectAssignResult = ifd;
+    if (undefined !== ifd[c3]) {
+      const objectAssign = _mod8382.objectAssign;
+      _mod8382;
+      const tmp3Result6 = get0thIfdOffset;
+      objectAssignResult = objectAssign(ifd, tmp3Result6.readIfd(getUint16, tmp3(8403).IFD_TYPE_EXIF, c5, c5 + ifd[tmp6].value, byteOrder, arg2));
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat;
+    let objectAssign1Result = objectAssignResult;
+    if (undefined !== objectAssignResult[c4]) {
+      const objectAssign2 = _mod8382.objectAssign;
+      _mod8382;
+      const tmp3Result8 = get0thIfdOffset;
+      objectAssign1Result = objectAssign2(objectAssignResult, tmp3Result8.readIfd(getUint16, tmp3(8403).IFD_TYPE_GPS, c5, c5 + objectAssignResult[tmp14].value, byteOrder, arg2));
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat.value;
+    let objectAssign4Result = objectAssign1Result;
+    if (undefined !== objectAssign1Result[c5]) {
+      const objectAssign3 = _mod8382.objectAssign;
+      _mod8382;
+      const tmp3Result10 = get0thIfdOffset;
+      objectAssign4Result = objectAssign3(objectAssign1Result, tmp3Result10.readIfd(getUint16, tmp3(8403).IFD_TYPE_INTEROPERABILITY, c5, c5 + objectAssign1Result[tmp22].value, byteOrder, arg2));
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength;
-    }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength.value;
-    }
-    if (prop) {
-      Compression.type = "image/jpeg";
-      const sum = arg2 + Compression.JPEGInterchangeFormat.value;
-      buffer = buffer.buffer;
-      Compression.image = buffer.slice(sum, sum + Compression.JPEGInterchangeFormatLength.value);
-      let obj = require("module_8349");
-      obj.deferInit(Compression, "base64", function() {
-        const obj = require("module_8349");
-        return obj.getBase64Image(this.image);
-      });
-    }
-    return Compression;
+    return { tags: objectAssign4Result, byteOrder };
   }
 };

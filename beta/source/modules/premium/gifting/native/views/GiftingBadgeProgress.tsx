@@ -1,19 +1,19 @@
-// Module ID: 14686
-// Function ID: 14687
+// Module ID: 14718
+// Function ID: 14719
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 8834, 21, 5140, 575, 10736, 10738, 5751, 1113, 2760, 2]
+// Dependencies: [19, 17, 8867, 21, 5170, 575, 10768, 10770, 5783, 1113, 2760, 2]
 // Exports: default
 
-// Module 14686 (GiftingBadgeProgress)
+// Module 14718 (GiftingBadgeProgress)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2760 from "module_2760" /* 2760 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8834 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10736 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10738 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8867 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10768 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10770 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -87,14 +87,14 @@ export default function GiftingBadgeProgress(currentTier) {
   const obj5 = { style: tmp.content, children: items1 };
   if (tmp14) {
     const obj6 = { variant: "body-md/semibold", children: title };
-    tmp14 = hasOwnProperty(tmp2(5751).Text, obj6);
+    tmp14 = hasOwnProperty(tmp2(5783).Text, obj6);
   }
   items1 = [tmp14, hasOwnProperty(GiftingBadgeProgressBar, { percent: num2 }), ];
   const obj7 = { style: tmp.labels, children: tmp16Result };
   tmp16Result = null != nextTier;
   if (tmp16Result) {
     const obj8 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(_modDef2760.iIpfQe, obj9) };
-    const Text = tmp2(5751).Text;
+    const Text = tmp2(5783).Text;
     intl = tmp2(1113).intl;
     obj9 = { count: progress, threshold: tmp6 };
     tmp16Result = tmp16(Text, obj8);

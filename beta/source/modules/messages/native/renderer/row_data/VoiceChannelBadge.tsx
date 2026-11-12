@@ -1,19 +1,19 @@
-// Module ID: 15362
-// Function ID: 15363
+// Module ID: 15394
+// Function ID: 15395
 // Name: VoiceChannelBadge
-// Dependencies: [17, 4989, 5072, 5803, 1072, 15363, 8674, 6780, 6789, 2]
+// Dependencies: [17, 5019, 5102, 5835, 1072, 15395, 8707, 6812, 6821, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 15362 (VoiceChannelBadge)
+// Module 15394 (VoiceChannelBadge)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6780 */;
-import AgeGateUtils from "AgeGateUtils" /* 6789 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
-import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 15363 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6812 */;
+import AgeGateUtils from "AgeGateUtils" /* 6821 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8707 */;
+import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 15395 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import VoiceStateStore from "VoiceStateStore" /* 5835 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;

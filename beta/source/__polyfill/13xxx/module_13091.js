@@ -1,49 +1,593 @@
 // Module ID: 13091
 // Function ID: 13092
-// Dependencies: [13092, 13093, 13095, 13096, 13097, 13098, 13099, 13100, 13101, 13102, 13103, 13104, 13105, 13106, 13107, 13108, 13109, 13110, 13111, 13112, 13113, 13114, 13115, 13116, 13117, 13118, 13119, 13120, 13121, 13094, 13122, 13123, 13124, 13125, 13126, 13127, 13128, 13129, 13130, 13131]
+// Dependencies: []
+// Exports: compareByGeneratedPositionsDeflated, compareByGeneratedPositionsInflated, compareByOriginalPositions, computeSourceURL, fromSetString, getArg, isAbsolute, parseSourceMapInput, relative, toSetString, urlGenerate, urlParse
 
 // Module 13091
-import _mod13092 from "module_13092" /* 13092 */;
-import _mod13093 from "module_13093" /* 13093 */;
-import tokenize from "tokenize" /* 13094 */;
-import tokenize2 from "tokenize" /* 13095 */;
-import _mod13096 from "module_13096" /* 13096 */;
-import _mod13097 from "module_13097" /* 13097 */;
-import tokenize3 from "tokenize" /* 13098 */;
-import tokenize4 from "tokenize" /* 13099 */;
-import tokenize5 from "tokenize" /* 13100 */;
-import tokenize6 from "tokenize" /* 13101 */;
-import tokenize7 from "tokenize" /* 13102 */;
-import tokenize8 from "tokenize" /* 13103 */;
-import _mod13104 from "module_13104" /* 13104 */;
-import _mod13105 from "module_13105" /* 13105 */;
-import tokenize9 from "tokenize" /* 13106 */;
-import tokenize10 from "tokenize" /* 13107 */;
-import tokenize11 from "tokenize" /* 13108 */;
-import tokenize12 from "tokenize" /* 13109 */;
-import tokenize13 from "tokenize" /* 13110 */;
-import tokenize14 from "tokenize" /* 13111 */;
-import tokenize15 from "tokenize" /* 13112 */;
-import tokenize16 from "tokenize" /* 13113 */;
-import _mod13114 from "module_13114" /* 13114 */;
-import tokenize17 from "tokenize" /* 13115 */;
-import _mod13116 from "module_13116" /* 13116 */;
-import tokenize18 from "tokenize" /* 13117 */;
-import tokenize19 from "tokenize" /* 13118 */;
-import tokenize20 from "tokenize" /* 13119 */;
-import tokenize21 from "tokenize" /* 13120 */;
-import tokenize22 from "tokenize" /* 13121 */;
-import tokenize23 from "tokenize" /* 13122 */;
-import _mod13123 from "module_13123" /* 13123 */;
-import tokenize24 from "tokenize" /* 13124 */;
-import tokenize25 from "tokenize" /* 13125 */;
-import tokenize26 from "tokenize" /* 13126 */;
-import tokenize27 from "tokenize" /* 13127 */;
-import tokenize28 from "tokenize" /* 13128 */;
-import tokenize29 from "tokenize" /* 13129 */;
-import _mod13130 from "module_13130" /* 13130 */;
-import tokenize30 from "tokenize" /* 13131 */;
+function normalize(str) {
+  const match = str.match(re1);
+  let tmp2 = null;
+  if (match) {
+    const url = { scheme: match[1], auth: match[2], host: match[3], port: match[4], path: match[5] };
+    tmp2 = url;
+  }
+  if (tmp2) {
+    if (tmp2.path) {
+      str = tmp2.path;
+    } else {
+      return str;
+    }
+  }
+  const isAbsoluteResult = exports.isAbsolute(str);
+  const parts = str.split(/\/+/);
+  let diff = parts.length - 1;
+  let str2 = "";
+  let str3 = ".";
+  let num = 0;
+  if (0 <= diff) {
+    do {
+      let sum;
+      let tmp5 = parts[diff];
+      if (`.` === tmp5) {
+        let spliceResult = parts.splice(diff, 1);
+        sum = num;
+      } else if (".." === tmp5) {
+        sum = num + 1;
+      } else {
+        sum = num;
+        if (0 < num) {
+          let num2;
+          if (`` === tmp5) {
+            let spliceResult1 = parts.splice(diff + 1, num);
+            num2 = 0;
+          } else {
+            let spliceResult2 = parts.splice(diff, 2);
+            num2 = num - 1;
+          }
+          sum = num2;
+        }
+      }
+      diff = diff - 1;
+      num = sum;
+    } while (0 <= diff);
+  }
+  let joined = parts.join("/");
+  if (str2 === joined) {
+    if (isAbsoluteResult) {
+      str3 = "/";
+    }
+    joined = str3;
+  }
+  let tmp13 = joined;
+  if (tmp2) {
+    tmp2.path = joined;
+    if (tmp2.scheme) {
+      str2 = `${tmp2.scheme}:`;
+    }
+    const text = `${str2}//`;
+    let text1 = text;
+    if (tmp2.auth) {
+      text1 = `${str2}//${tmp2.auth + "@"}`;
+    }
+    let sum1 = text1;
+    if (tmp2.host) {
+      sum1 = text1 + tmp2.host;
+    }
+    let text2 = sum1;
+    if (tmp2.port) {
+      text2 = `${tmp16}:${tmp2.port}`;
+    }
+    let sum2 = text2;
+    if (tmp2.path) {
+      sum2 = text2 + tmp2.path;
+    }
+    tmp13 = sum2;
+  }
+  return tmp13;
+}
+function join(arg0, arg1) {
+  let str = arg0;
+  let str2 = "";
+  if ("" === arg0) {
+    str = ".";
+  }
+  let str3 = arg1;
+  if (str2 === arg1) {
+    str3 = ".";
+  }
+  const match = str3.match(re1);
+  let tmp3 = null;
+  const tmp = re1;
+  if (match) {
+    const url = { scheme: match[1], auth: match[2], host: match[3], port: match[4], path: match[5] };
+    tmp3 = url;
+  }
+  const match1 = str.match(tmp);
+  let tmp5 = null;
+  if (match1) {
+    const url1 = { scheme: match1[1], auth: match1[2], host: match1[3], port: match1[4], path: match1[5] };
+    tmp5 = url1;
+  }
+  let str4 = str;
+  if (tmp5) {
+    str4 = tmp5.path || "/";
+  }
+  if (tmp3) {
+    if (!tmp3.scheme) {
+      if (tmp5) {
+        tmp3.scheme = tmp5.scheme;
+      }
+      let text = str2;
+      if (tmp3.scheme) {
+        text = `${tmp3.scheme}:`;
+      }
+      const text1 = `${tmp7}//`;
+      let text2 = text1;
+      if (tmp3.auth) {
+        text2 = `${tmp7}//${tmp3.auth + "@"}`;
+      }
+      let sum = text2;
+      if (tmp3.host) {
+        sum = text2 + tmp3.host;
+      }
+      let text3 = sum;
+      if (tmp3.port) {
+        text3 = `${tmp10}:${tmp3.port}`;
+      }
+      let sum1 = text3;
+      if (tmp3.path) {
+        sum1 = text3 + tmp3.path;
+      }
+      return sum1;
+    }
+  }
+  if (!tmp3) {
+    if (!str3.match(re2)) {
+      if (tmp5) {
+        if (!tmp5.host) {
+          if (!tmp5.path) {
+            tmp5.host = str3;
+            let text4 = str2;
+            if (tmp5.scheme) {
+              text4 = `${tmp5.scheme}:`;
+            }
+            const text5 = `${tmp14}//`;
+            let text6 = text5;
+            if (tmp5.auth) {
+              text6 = `${tmp14}//${tmp5.auth + "@"}`;
+            }
+            let sum2 = text6;
+            if (tmp5.host) {
+              sum2 = text6 + tmp5.host;
+            }
+            let text7 = sum2;
+            if (tmp5.port) {
+              text7 = `${tmp17}:${tmp5.port}`;
+            }
+            let sum3 = text7;
+            if (tmp5.path) {
+              sum3 = text7 + tmp5.path;
+            }
+            return sum3;
+          }
+        }
+      }
+      let tmp20 = str3;
+      if ("/" !== str3.charAt(0)) {
+        tmp20 = normalize(`${str4.replace(/\/+$/, str2)}/${str3}`);
+      }
+      let tmp22 = tmp20;
+      if (tmp5) {
+        tmp5.path = tmp20;
+        if (tmp5.scheme) {
+          str2 = `${tmp5.scheme}:`;
+        }
+        const text8 = `${str2}//`;
+        let text9 = text8;
+        if (tmp5.auth) {
+          text9 = `${str2}//${tmp5.auth + "@"}`;
+        }
+        let sum4 = text9;
+        if (tmp5.host) {
+          sum4 = text9 + tmp5.host;
+        }
+        let text10 = sum4;
+        if (tmp5.port) {
+          text10 = `${tmp25}:${tmp5.port}`;
+        }
+        let sum5 = text10;
+        if (tmp5.path) {
+          sum5 = text10 + tmp5.path;
+        }
+        tmp22 = sum5;
+      }
+      return tmp22;
+    }
+  }
+  return str3;
+}
+let fromSetString = function identity(arg0) {
+  return arg0;
+};
+function isProtoString(arr) {
+  const tmp = arr;
+  if (tmp) {
+    if (arr.length < 9) {
+      return false;
+    } else {
+      if (95 === arr.charCodeAt(arr.length - 1)) {
+        if (95 === arr.charCodeAt(arr.length - 2)) {
+          if (111 === arr.charCodeAt(arr.length - 3)) {
+            if (116 === arr.charCodeAt(arr.length - 4)) {
+              if (111 === arr.charCodeAt(arr.length - 5)) {
+                if (114 === arr.charCodeAt(arr.length - 6)) {
+                  if (112 === arr.charCodeAt(arr.length - 7)) {
+                    if (95 === arr.charCodeAt(arr.length - 8)) {
+                      if (95 === arr.charCodeAt(arr.length - 9)) {
+                        let diff = length - 10;
+                        if (0 <= diff) {
+                          while (36 === arr.charCodeAt(diff)) {
+                            diff = diff - 1;
+                          }
+                          return false;
+                        }
+                        return true;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
+const re1 = /^(?:([\w+\-.]+):)?\/\/(?:(\w+:\w+)@)?([\w.-]*)(?::(\d+))?(.*)$/;
+const re2 = /^data:.+\,.+$/;
+let tmp = !("__proto__" in Object.create(null));
+let toSetString = fromSetString;
+if (!tmp) {
+  toSetString = function toSetString(relativeResult) {
+    let text = relativeResult;
+    if (isProtoString(relativeResult)) {
+      text = `$${relativeResult}`;
+    }
+    return text;
+  };
+}
+if (!tmp) {
+  fromSetString = function fromSetString(arr) {
+    let substr = arr;
+    if (isProtoString(arr)) {
+      substr = arr.slice(1);
+    }
+    return substr;
+  };
+}
 
-({ AnPlusB: _mod13092, Atrule: _mod13093, AtrulePrelude: tokenize2, AttributeSelector: _mod13096, Block: _mod13097, Brackets: tokenize3, CDC: tokenize4, CDO: tokenize5, ClassSelector: tokenize6, Combinator: tokenize7, Comment: tokenize8, Declaration: _mod13104, DeclarationList: _mod13105, Dimension: tokenize9, Function: tokenize10, Hash: tokenize11, Identifier: tokenize12, IdSelector: tokenize13, MediaFeature: tokenize14, MediaQuery: tokenize15, MediaQueryList: tokenize16, Nth: _mod13114, Number: tokenize17, Operator: _mod13116, Parentheses: tokenize18, Percentage: tokenize19, PseudoClassSelector: tokenize20, PseudoElementSelector: tokenize21, Ratio: tokenize22, Raw: tokenize, Rule: tokenize23, Selector: _mod13123, SelectorList: tokenize24, String: tokenize25, StyleSheet: tokenize26, TypeSelector: tokenize27, UnicodeRange: tokenize28, Url: tokenize29, Value: _mod13130, WhiteSpace: tokenize30 });
-
-export default { AnPlusB: _mod13092, Atrule: _mod13093, AtrulePrelude: tokenize2, AttributeSelector: _mod13096, Block: _mod13097, Brackets: tokenize3, CDC: tokenize4, CDO: tokenize5, ClassSelector: tokenize6, Combinator: tokenize7, Comment: tokenize8, Declaration: _mod13104, DeclarationList: _mod13105, Dimension: tokenize9, Function: tokenize10, Hash: tokenize11, Identifier: tokenize12, IdSelector: tokenize13, MediaFeature: tokenize14, MediaQuery: tokenize15, MediaQueryList: tokenize16, Nth: _mod13114, Number: tokenize17, Operator: _mod13116, Parentheses: tokenize18, Percentage: tokenize19, PseudoClassSelector: tokenize20, PseudoElementSelector: tokenize21, Ratio: tokenize22, Raw: tokenize, Rule: tokenize23, Selector: _mod13123, SelectorList: tokenize24, String: tokenize25, StyleSheet: tokenize26, TypeSelector: tokenize27, UnicodeRange: tokenize28, Url: tokenize29, Value: _mod13130, WhiteSpace: tokenize30 };
+export function getArg(arg0, file, arg2) {
+  if (file in arg0) {
+    return arg0[file];
+  } else if (3 === arguments.length) {
+    return arg2;
+  } else {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("\"" + file + "\" is a required argument.");
+    throw error;
+  }
+}
+export function urlParse(str) {
+  const match = str.match(re1);
+  let tmp2 = null;
+  if (match) {
+    const url = { scheme: match[1], auth: match[2], host: match[3], port: match[4], path: match[5] };
+    tmp2 = url;
+  }
+  return tmp2;
+}
+export function urlGenerate(scheme) {
+  let str = "";
+  if (scheme.scheme) {
+    str = `${scheme.scheme}:`;
+  }
+  const text = `${str}//`;
+  let text1 = text;
+  if (scheme.auth) {
+    text1 = `${str}//${scheme.auth + "@"}`;
+  }
+  let sum = text1;
+  if (scheme.host) {
+    sum = text1 + scheme.host;
+  }
+  let text2 = sum;
+  if (scheme.port) {
+    text2 = `${tmp3}:${scheme.port}`;
+  }
+  let sum1 = text2;
+  if (scheme.path) {
+    sum1 = text2 + scheme.path;
+  }
+  return sum1;
+}
+export { normalize };
+export { join };
+export const isAbsolute = (str) => {
+  const isMatch = "/" === str.charAt(0) || re1.test(str);
+  return isMatch;
+};
+export function relative(arg0, arr) {
+  let str = arg0;
+  if ("" === arg0) {
+    str = ".";
+  }
+  const replaced = str.replace(/\/$/, "");
+  let num = 0;
+  arr = replaced;
+  let arr2 = replaced;
+  let num2 = 0;
+  if (0 !== arr.indexOf(replaced + "/")) {
+    const lastIndexOfResult = arr.lastIndexOf("/");
+    while (lastIndexOfResult >= 0) {
+      let str2 = arr.slice(0, lastIndexOfResult);
+      if (str2.match(/^([^\/]+:\/)?\/*$/)) {
+        return arr;
+      } else {
+        num = num + 1;
+        arr = str2;
+        num2 = num;
+        arr2 = str2;
+      }
+    }
+    return arr;
+  }
+  const ArrayResult = Array(num2 + 1);
+  const joined = ArrayResult.join("../");
+  return joined + arr.substr(arr2.length + 1);
+}
+export { toSetString };
+export { fromSetString };
+export function compareByOriginalPositions(source, source2, arg2) {
+  source = source.source;
+  source2 = source2.source;
+  let num = 0;
+  if (source !== source2) {
+    let num3 = 1;
+    if (null !== source) {
+      let num4 = -1;
+      let num5 = -1;
+      if (null !== source2) {
+        if (source > source2) {
+          num4 = 1;
+        }
+        num5 = num4;
+      }
+      num3 = num5;
+    }
+    num = num3;
+  }
+  if (0 === num) {
+    num = source.originalLine - source2.originalLine;
+    if (0 === num) {
+      const diff = source.originalColumn - source2.originalColumn;
+      num = diff;
+      if (0 === diff) {
+        num = diff;
+        if (!arg2) {
+          num = source.generatedColumn - source2.generatedColumn;
+          if (0 === num) {
+            let num6;
+            num = source.generatedLine - source2.generatedLine;
+            if (0 === num) {
+              const name = source.name;
+              const name2 = source2.name;
+              num6 = 0;
+              if (name !== name2) {
+                let num8 = 1;
+                if (null !== name) {
+                  let num9 = -1;
+                  let num10 = -1;
+                  if (null !== name2) {
+                    if (name > name2) {
+                      num9 = 1;
+                    }
+                    num10 = num9;
+                  }
+                  num8 = num10;
+                }
+                num6 = num8;
+              }
+            }
+            return num6;
+          }
+        }
+      }
+    }
+  }
+  num6 = num;
+}
+export function compareByGeneratedPositionsDeflated(generatedLine, generatedLine2, arg2) {
+  let diff = generatedLine.generatedLine - generatedLine2.generatedLine;
+  if (0 === diff) {
+    const diff1 = generatedLine.generatedColumn - generatedLine2.generatedColumn;
+    diff = diff1;
+    if (0 === diff1) {
+      diff = diff1;
+      if (!arg2) {
+        const source = generatedLine.source;
+        const source2 = generatedLine2.source;
+        let num = 0;
+        if (source !== source2) {
+          let num3 = 1;
+          if (null !== source) {
+            let num4 = -1;
+            let num5 = -1;
+            if (null !== source2) {
+              if (source > source2) {
+                num4 = 1;
+              }
+              num5 = num4;
+            }
+            num3 = num5;
+          }
+          num = num3;
+        }
+        diff = num;
+        if (0 === num) {
+          diff = generatedLine.originalLine - generatedLine2.originalLine;
+          if (0 === diff) {
+            let num6;
+            diff = generatedLine.originalColumn - generatedLine2.originalColumn;
+            if (0 === diff) {
+              const name = generatedLine.name;
+              const name2 = generatedLine2.name;
+              num6 = 0;
+              if (name !== name2) {
+                let num8 = 1;
+                if (null !== name) {
+                  let num9 = -1;
+                  let num10 = -1;
+                  if (null !== name2) {
+                    if (name > name2) {
+                      num9 = 1;
+                    }
+                    num10 = num9;
+                  }
+                  num8 = num10;
+                }
+                num6 = num8;
+              }
+            }
+            return num6;
+          }
+        }
+      }
+    }
+  }
+  num6 = diff;
+}
+export function compareByGeneratedPositionsInflated(_last, toArrayResult) {
+  let diff = _last.generatedLine - toArrayResult.generatedLine;
+  if (0 === diff) {
+    diff = _last.generatedColumn - toArrayResult.generatedColumn;
+    if (0 === diff) {
+      const source = _last.source;
+      const source2 = toArrayResult.source;
+      let num5 = 0;
+      if (source !== source2) {
+        let num2 = 1;
+        if (null !== source) {
+          let num3 = -1;
+          let num4 = -1;
+          if (null !== source2) {
+            if (source > source2) {
+              num3 = 1;
+            }
+            num4 = num3;
+          }
+          num2 = num4;
+        }
+        num5 = num2;
+      }
+      diff = num5;
+      if (0 === num5) {
+        diff = _last.originalLine - toArrayResult.originalLine;
+        if (0 === diff) {
+          let num6;
+          diff = _last.originalColumn - toArrayResult.originalColumn;
+          if (0 === diff) {
+            const name = _last.name;
+            const name2 = toArrayResult.name;
+            num6 = 0;
+            if (name !== name2) {
+              let num8 = 1;
+              if (null !== name) {
+                let num9 = -1;
+                let num10 = -1;
+                if (null !== name2) {
+                  if (name > name2) {
+                    num9 = 1;
+                  }
+                  num10 = num9;
+                }
+                num8 = num10;
+              }
+              num6 = num8;
+            }
+          }
+          return num6;
+        }
+      }
+    }
+  }
+  num6 = diff;
+}
+export function parseSourceMapInput(str) {
+  return JSON.parse(str.replace(/^\)]}'[^\n]*\n/, ""));
+}
+export function computeSourceURL(arg0, arg1, str) {
+  let sum = tmp;
+  if (arg0) {
+    let text = arg0;
+    const tmp3 = "/" !== arg0[arg0.length - 1] && "/" !== (arg1 || "")[0];
+    if (tmp3) {
+      text = `${arg0}/`;
+    }
+    sum = text + tmp;
+  }
+  let tmp13Result = sum;
+  if (str) {
+    const match = str.match(re1);
+    let tmp8 = null;
+    if (match) {
+      const url = { scheme: match[1], auth: match[2], host: match[3], port: match[4], path: match[5] };
+      tmp8 = url;
+    }
+    if (tmp8) {
+      if (tmp8.path) {
+        const path = tmp8.path;
+        const lastIndexOfResult = path.lastIndexOf("/");
+        if (lastIndexOfResult >= 0) {
+          const str4 = tmp8.path;
+          tmp8.path = str4.substring(0, lastIndexOfResult + 1);
+        }
+      }
+      let str5 = "";
+      const tmp13 = join;
+      if (tmp8.scheme) {
+        str5 = `${tmp8.scheme}:`;
+      }
+      const text1 = `${str5}//`;
+      let text2 = text1;
+      if (tmp8.auth) {
+        text2 = `${str5}//${tmp8.auth + "@"}`;
+      }
+      let sum1 = text2;
+      if (tmp8.host) {
+        sum1 = text2 + tmp8.host;
+      }
+      let text3 = sum1;
+      if (tmp8.port) {
+        text3 = `${tmp16}:${tmp8.port}`;
+      }
+      let sum2 = text3;
+      if (tmp8.path) {
+        sum2 = text3 + tmp8.path;
+      }
+      tmp13Result = tmp13(sum2, sum);
+    } else {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("sourceMapURL could not be parsed");
+      throw error;
+    }
+  }
+  return normalize(tmp13Result);
+}

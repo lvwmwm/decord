@@ -1,84 +1,271 @@
 // Module ID: 13330
 // Function ID: 13331
-// Dependencies: [13279]
-// Exports: getDebugImagesForResources
+// Dependencies: [41, 42, 13331, 13317, 13328, 13336]
+// Exports: getStackAsyncContextStrategy
 
 // Module 13330
+import _mod13317 from "module_13317" /* 13317 */;
+import _mod13328 from "module_13328" /* 13328 */;
+import _mod13331 from "module_13331" /* 13331 */;
+import _mod13336 from "module_13336" /* 13336 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+
 const require = globalThis.__r;
-let _require, obj;
+let _require;
 
-function getFilenameToDebugIdMap(arg0) {
-  let _sentryDebugIds;
+function withScope(arg0) {
+  const obj = _mod13328;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod13328;
+  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const tmpResult = _mod13336;
+    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+    const self = this;
+    const self2 = this;
+    const tmpResult2 = _mod13336;
+    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(arg0);
+}
+function withSetScope(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const obj = _mod13328;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod13328;
+  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const tmpResult = _mod13336;
+    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+    const self = this;
+    const self2 = this;
+    const tmpResult2 = _mod13336;
+    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(() => {
+    stack.getStackTop().scope = scope;
+    return closure_1(scope);
+  });
+}
+function withIsolationScope(arg0) {
   let closure_0;
-  let length;
-  let reduced;
   _require = arg0;
-  _sentryDebugIds = require("module_13279").GLOBAL_OBJ._sentryDebugIds;
-  if (_sentryDebugIds) {
-    let tmp = globalThis;
-    const _Object = Object;
-    const keys = Object.keys(_sentryDebugIds);
-    const tmp2 = reduced;
-    if (tmp2) {
-      return reduced;
+  const obj = require("module_13328");
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = require("module_13328");
+  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const tmpResult = require("module_13336");
+    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+    const self = this;
+    const self2 = this;
+    const tmpResult2 = require("module_13336");
+    stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(function() {
+    const obj = require("module_13328");
+    const mainCarrier = obj.getMainCarrier();
+    const obj2 = require("module_13328");
+    const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+    let stack = sentryCarrier.stack;
+    const tmp = closure_0;
+    if (!stack) {
+      const tmp2Result = require("module_13336");
+      const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
+      const self = this;
+      const self2 = this;
+      const tmp2Result2 = require("module_13336");
+      stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
     }
-    reduced = keys.reduce((acc, item) => {
-      let tmp7;
-      let tmp9;
-      let tmp = obj;
-      if (!tmp) {
-        obj = {};
-        tmp = obj;
-      }
-      if (tmp[item]) {
-        acc[tmp[item][0]] = tmp[item][1];
+    sentryCarrier.stack = stack;
+    return tmp(stack.getIsolationScope());
+  });
+}
+class AsyncContextStack {
+  constructor(arg0, arg1) {
+    const self = this;
+    let scope = arg0;
+    _classCallCheck(this, AsyncContextStack);
+    if (!arg0) {
+      const self2 = this;
+      const self3 = this;
+      scope = new _mod13331.Scope();
+    }
+    let scope1 = arg1;
+    if (!scope1) {
+      const self4 = this;
+      const self5 = this;
+      scope1 = new _mod13331.Scope();
+    }
+    const items = [{ scope }];
+    self._stack = items;
+    self._isolationScope = scope1;
+  }
+}
+const entry = {
+  key: "withScope",
+  value: function withScope(fn) {
+    const self = this;
+    try {
+      let nextPromise;
+      const promise = fn(tmp);
+      const obj = _mod13317;
+      if (obj.isThenable(promise)) {
+        nextPromise = promise.then((result) => {
+          self._popScope();
+          return result;
+        }, (arg0) => {
+          self._popScope();
+          throw arg0;
+        });
       } else {
-        const arr = closure_0(item);
-        let diff = arr.length - 1;
-        if (0 <= diff) {
-          while (true) {
-            let tmp5 = arr[diff];
-            tmp7 = tmp5 && tmp5.filename;
-            tmp9 = _sentryDebugIds[item];
-            if (tmp7) {
-              if (tmp9) {
-                break;
-              }
-            }
-            diff = diff - 1;
-          }
-          acc[tmp7] = tmp9;
-          const items = [tmp7, tmp9];
-          obj[item] = items;
-        }
+        self._popScope();
+        nextPromise = promise;
       }
-      return acc;
-    }, {});
-  } else {
-    return {};
-  }
-}
-
-export function getDebugImagesForResources(arg0, arg1) {
-  const tmp = getFilenameToDebugIdMap(arg0);
-  const items = [];
-  if (tmp) {
-    const iter = arg1[Symbol.iterator]();
-    let nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp7 = nextResult;
-      if (tmp7) {
-        nextResult = tmp[tmp7];
-      }
-      if (nextResult) {
-        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
-        let arr = items.push(obj);
-      }
-      continue;
+      return nextPromise;
+    } catch (tmp9) {
+      self._popScope();
+      throw tmp9;
     }
-    return items;
-  } else {
-    return items;
   }
+};
+let items = [
+  entry,
+  {
+    key: "getClient",
+    value: function getClient() {
+      return this.getStackTop().client;
+    }
+  },
+  {
+    key: "getScope",
+    value: function getScope() {
+      return this.getStackTop().scope;
+    }
+  },
+  {
+    key: "getIsolationScope",
+    value: function getIsolationScope() {
+      return this._isolationScope;
+    }
+  },
+  {
+    key: "getStackTop",
+    value: function getStackTop() {
+      return this._stack[this._stack.length - 1];
+    }
+  },
+  {
+    key: "_pushScope",
+    value: function _pushScope() {
+      const scope = this.getScope();
+      const cloneResult = scope.clone();
+      const _stack = this._stack;
+      const obj = { client: this.getClient(), scope: cloneResult };
+      _stack.push(obj);
+      return cloneResult;
+    }
+  },
+  {
+    key: "_popScope",
+    value: function _popScope() {
+      let arr = this._stack.length > 1;
+      if (arr) {
+        const _stack = this._stack;
+        arr = _stack.pop();
+      }
+      return arr;
+    }
+  }
+];
+const _moduleResult = _createClass(AsyncContextStack, items);
+let c3 = _moduleResult;
+const AsyncContextStack_export = _moduleResult;
+
+export { AsyncContextStack_export as AsyncContextStack };
+export function getStackAsyncContextStrategy() {
+  let obj = {
+    withIsolationScope,
+    withScope,
+    withSetScope,
+    withSetIsolationScope(arg0, arg1) {
+      let closure_0 = arg1;
+      let tmp = closure_0;
+      let obj = closure_0(closure_1[4]);
+      let mainCarrier = obj.getMainCarrier();
+      let obj2 = closure_0(closure_1[4]);
+      let sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const tmpResult = tmp(closure_1[5]);
+        let defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+        let self = this;
+        let self2 = this;
+        const tmpResult2 = tmp(closure_1[5]);
+        stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+      }
+      sentryCarrier.stack = stack;
+      return stack.withScope(function() {
+        const obj = require("module_13328");
+        const mainCarrier = obj.getMainCarrier();
+        const obj2 = require("module_13328");
+        const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+        let stack = sentryCarrier.stack;
+        const tmp = closure_0;
+        if (!stack) {
+          const tmp2Result = require("module_13336");
+          const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
+          const self = this;
+          const self2 = this;
+          const tmp2Result2 = require("module_13336");
+          stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
+        }
+        sentryCarrier.stack = stack;
+        return tmp(stack.getIsolationScope());
+      });
+    },
+    getCurrentScope() {
+      const obj = require("module_13328");
+      const mainCarrier = obj.getMainCarrier();
+      const obj2 = require("module_13328");
+      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const tmpResult = require("module_13336");
+        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+        const self = this;
+        const self2 = this;
+        const tmpResult2 = require("module_13336");
+        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+      }
+      sentryCarrier.stack = stack;
+      return stack.getScope();
+    },
+    getIsolationScope() {
+      const obj = require("module_13328");
+      const mainCarrier = obj.getMainCarrier();
+      const obj2 = require("module_13328");
+      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const tmpResult = require("module_13336");
+        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+        const self = this;
+        const self2 = this;
+        const tmpResult2 = require("module_13336");
+        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+      }
+      sentryCarrier.stack = stack;
+      return stack.getIsolationScope();
+    }
+  };
+  return obj;
 }
-export { getFilenameToDebugIdMap };

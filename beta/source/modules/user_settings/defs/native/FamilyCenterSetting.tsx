@@ -1,19 +1,19 @@
-// Module ID: 17086
-// Function ID: 17087
+// Module ID: 17120
+// Function ID: 17121
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1072, 21, 17087, 17088, 8096, 575, 1113, 2664, 11685, 8732, 17091, 2]
+// Dependencies: [19, 1072, 21, 17121, 17122, 8129, 575, 1113, 2664, 11717, 8765, 17125, 2]
 
-// Module 17086 (FamilyCenterSetting)
+// Module 17120 (FamilyCenterSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2664 from "module_2664" /* 2664 */;
-import GroupIcon from "GroupIcon" /* 8732 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 17087 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 17088 */;
+import GroupIcon from "GroupIcon" /* 8765 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 17121 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 17122 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,7 +45,7 @@ let obj = {
       if (null != daysRemaining) {
         tmp6 = null;
         if (daysRemaining >= 0) {
-          const WarningIcon = tmp(8096).WarningIcon;
+          const WarningIcon = tmp(8129).WarningIcon;
           const intl = tmp(1113).intl;
           tmp6 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2664.wucWfE)} />;
         }

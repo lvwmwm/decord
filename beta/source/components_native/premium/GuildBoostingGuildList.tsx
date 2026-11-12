@@ -1,28 +1,28 @@
-// Module ID: 15713
-// Function ID: 15714
+// Module ID: 15745
+// Function ID: 15746
 // Name: GuildBoostingGuildList
-// Dependencies: [19, 17, 5011, 6827, 1072, 21, 5140, 575, 5369, 504, 8539, 9189, 7594, 7223, 7020, 5751, 5842, 10413, 1113, 15682, 2]
+// Dependencies: [19, 17, 5041, 6860, 1072, 21, 5170, 575, 5401, 504, 8572, 9222, 7627, 7256, 7053, 5783, 5874, 10445, 1113, 15714, 2]
 // Exports: default
 
-// Module 15713 (GuildBoostingGuildList)
+// Module 15745 (GuildBoostingGuildList)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useThemeDefault from "useTheme" /* 5369 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import GuildIconDefault from "GuildIcon" /* 7020 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7223 */;
-import transitionToGuild from "transitionToGuild" /* 7594 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8539 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9189 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10413 */;
-import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 15682 */;
+import useThemeDefault from "useTheme" /* 5401 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import GuildIconDefault from "GuildIcon" /* 7053 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7256 */;
+import transitionToGuild from "transitionToGuild" /* 7627 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8572 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9222 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10445 */;
+import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 15714 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import SortedGuildStore from "SortedGuildStore" /* 6827 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import SortedGuildStore from "SortedGuildStore" /* 6860 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -58,19 +58,19 @@ function GuildBoostingGuildListItem(guildId) {
         },
       children: items1
     };
-    const obj3 = { guild: stateFromStores, size: guildId(7020).GuildIconSizes.LARGE, style: tmp.guildIcon, selected: false };
+    const obj3 = { guild: stateFromStores, size: guildId(7053).GuildIconSizes.LARGE, style: tmp.guildIcon, selected: false };
     const tmp2Result = TouchableHitBoxDefault;
     const tmp2Result3 = GuildIconDefault;
     items1 = [closure_7(tmp2Result3, obj3), , ];
     const obj4 = { style: tmp.guildCardDescription, children: items2 };
     const obj5 = { variant: "body-md/semibold", children: stateFromStores.name };
-    items2 = [closure_7(guildId(5751).Text, obj5), ];
+    items2 = [closure_7(guildId(5783).Text, obj5), ];
     const obj6 = { style: tmp.subscriptionInfo, children: items3 };
     const obj7 = { source: AssetRegistryDefault, style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     const tmp2Result4 = FastImageDefault;
     items3 = [closure_7(tmp2Result4, obj7), ];
     const obj8 = { variant: "body-xs/medium", children: intl.format(guildId(1113).t.If4iTS, obj9) };
-    const Text = tmp5(5751).Text;
+    const Text = tmp5(5783).Text;
     intl = tmp5(1113).intl;
     obj9 = { subscriberCount: tmp8 };
     items3[1] = closure_7(Text, obj8);

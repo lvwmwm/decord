@@ -1,13 +1,13 @@
-// Module ID: 5761
-// Function ID: 5762
+// Module ID: 5793
+// Function ID: 5794
 // Name: spring/spring
-// Dependencies: [5371, 5372, 1652, 2]
+// Dependencies: [5403, 5404, 1652, 2]
 // Exports: withSpring
 
-// Module 5761 (spring/spring)
+// Module 5793 (spring/spring)
 import _mod1652 from "module_1652" /* 1652 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 5371 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5372 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 5403 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5404 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

@@ -1,9 +1,9 @@
-// Module ID: 9007
-// Function ID: 9008
+// Module ID: 9040
+// Function ID: 9041
 // Name: WaterwheelsCardTypes
 // Dependencies: [2]
 
-// Module 9007 (WaterwheelsCardTypes)
+// Module 9040 (WaterwheelsCardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/waterwheels/cards/WaterwheelsCardTypes.tsx");

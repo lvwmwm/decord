@@ -1,17 +1,17 @@
-// Module ID: 8257
-// Function ID: 8258
+// Module ID: 8290
+// Function ID: 8291
 // Name: FormSwitch
-// Dependencies: [19, 17, 21, 5140, 575, 5369, 5147, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5401, 5177, 2]
 // Exports: default
 
-// Module 8257 (FormSwitch)
+// Module 8290 (FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import shared from "shared" /* 5147 */;
-import useThemeDefault from "useTheme" /* 5369 */;
+import shared from "shared" /* 5177 */;
+import useThemeDefault from "useTheme" /* 5401 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

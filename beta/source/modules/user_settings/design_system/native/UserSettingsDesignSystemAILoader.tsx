@@ -1,18 +1,18 @@
-// Module ID: 18148
-// Function ID: 18149
+// Module ID: 18186
+// Function ID: 18187
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 5140, 5751, 6159, 7040, 12431, 2]
+// Dependencies: [19, 17, 21, 5170, 5783, 6191, 7073, 12463, 2]
 // Exports: default
 
-// Module 18148 (UserSettingsDesignSystemAILoader)
-import Text_Text from "Text/Text" /* 5751 */;
-import Stack_Stack from "Stack/Stack" /* 6159 */;
-import Card_Card from "Card/Card" /* 7040 */;
-import AILoader from "AILoader" /* 12431 */;
+// Module 18186 (UserSettingsDesignSystemAILoader)
+import Text_Text from "Text/Text" /* 5783 */;
+import Stack_Stack from "Stack/Stack" /* 6191 */;
+import Card_Card from "Card/Card" /* 7073 */;
+import AILoader from "AILoader" /* 12463 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c2;

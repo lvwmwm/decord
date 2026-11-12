@@ -1,14 +1,14 @@
-// Module ID: 19833
-// Function ID: 19834
+// Module ID: 19871
+// Function ID: 19872
 // Name: DeviceSilentModeManager
-// Dependencies: [6901, 6902, 572, 19834, 7350, 2]
+// Dependencies: [6934, 6935, 572, 19872, 7383, 2]
 
-// Module 19833 (DeviceSilentModeManager)
+// Module 19871 (DeviceSilentModeManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FramesConstants from "FramesConstants" /* 6902 */;
-import react_nativeDefault from "react-native" /* 19834 */;
-import FramesStore from "FramesStore" /* 6901 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
+import FramesConstants from "FramesConstants" /* 6935 */;
+import react_nativeDefault from "react-native" /* 19872 */;
+import FramesStore from "FramesStore" /* 6934 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 let _null, map;

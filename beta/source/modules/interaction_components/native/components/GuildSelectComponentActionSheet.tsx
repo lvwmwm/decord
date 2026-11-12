@@ -1,23 +1,23 @@
-// Module ID: 16884
-// Function ID: 16885
+// Module ID: 16918
+// Function ID: 16919
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 5011, 6827, 21, 5140, 6206, 1113, 5374, 12326, 7020, 6173, 1187, 5751, 6834, 2]
+// Dependencies: [32, 19, 17, 5041, 6860, 21, 5170, 6238, 1113, 5406, 12358, 7053, 6205, 1187, 5783, 6867, 2]
 // Exports: default
 
-// Module 16884 (GuildSelectComponentActionSheet)
+// Module 16918 (GuildSelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1187 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6206 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12326 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6205 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6238 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import SortedGuildStore from "SortedGuildStore" /* 6827 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import SortedGuildStore from "SortedGuildStore" /* 6860 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

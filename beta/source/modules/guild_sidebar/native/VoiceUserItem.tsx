@@ -1,21 +1,21 @@
-// Module ID: 18518
-// Function ID: 18519
+// Module ID: 18556
+// Function ID: 18557
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1072, 21, 1187, 5883, 5140, 575, 11176, 9371, 9373, 1252, 1411, 18519, 9320, 9322, 9316, 9318, 11172, 8679, 14978, 9374, 2]
+// Dependencies: [19, 17, 1072, 21, 1187, 5915, 5170, 575, 11208, 9404, 9406, 1252, 1411, 18557, 9353, 9355, 9349, 9351, 11204, 8712, 15010, 9407, 2]
 // Exports: getVoiceUserHeight
 
-// Module 18518 (VoiceUserItem)
+// Module 18556 (VoiceUserItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5883 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5915 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
-import ChannelListLayout from "ChannelListLayout" /* 11176 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import ChannelListLayout from "ChannelListLayout" /* 11208 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,33 +1,33 @@
-// Module ID: 16629
-// Function ID: 16630
+// Module ID: 16661
+// Function ID: 16662
 // Name: channels
-// Dependencies: [32, 5, 4993, 4989, 5011, 5072, 5893, 5043, 6811, 5803, 6583, 1072, 16608, 5799, 9414, 11056, 16612, 11976, 16616, 8984, 9417, 12, 9408, 6904, 6761, 6178, 1099, 9025, 2]
+// Dependencies: [32, 5, 5023, 5019, 5041, 5102, 5925, 5073, 6844, 5835, 6615, 1072, 16640, 5831, 9447, 11088, 16644, 12008, 16648, 9017, 9450, 12, 9441, 6937, 6793, 6210, 1099, 9058, 2]
 
-// Module 16629 (channels)
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6904 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8984 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9025 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9408 */;
-import RPCErrorDefault from "RPCError" /* 9414 */;
-import botScopedAccess from "botScopedAccess" /* 9417 */;
-import RPCHelpers from "RPCHelpers" /* 11976 */;
-import guildVoice from "guildVoice" /* 16612 */;
+// Module 16661 (channels)
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6937 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9058 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9441 */;
+import RPCErrorDefault from "RPCError" /* 9447 */;
+import botScopedAccess from "botScopedAccess" /* 9450 */;
+import RPCHelpers from "RPCHelpers" /* 12008 */;
+import guildVoice from "guildVoice" /* 16644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 4993 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
-import SpeakingStore from "SpeakingStore" /* 6811 */;
-import VoiceStateStore from "VoiceStateStore" /* 5803 */;
-import Constants_mod from "Constants" /* 6583 */;
+import ChannelRecord from "ChannelRecord" /* 5023 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import SpeakingStore from "SpeakingStore" /* 6844 */;
+import VoiceStateStore from "VoiceStateStore" /* 5835 */;
+import Constants_mod from "Constants" /* 6615 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16616 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16648 */;
 import size from "module_2" /* 2 */;
 
-let c5, iframeId, speaking_available, state;
+let c5, c6, speaking_available, state;
 
 let RPCCommands;
 let RPC_EMBEDDED_APP_SCOPE;
@@ -45,87 +45,30 @@ let obj7;
 let obj9;
 let obj = function _validateUserAllowsJoiningVoice() {
   obj = _asyncToGenerator(async (arg0) => {
-    let applicationId = arg0;
+    let iframeId;
+    const applicationId = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async function(arg0, value) {
+    const iter = (async function(arg0) {
       let c0;
       let c1;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              let closure_1 = tmp;
-              applicationId = undefined;
-              iframeId = undefined;
-              ({ frame: c0, iframeId: c1 } = closure_0);
-              closure_2 = undefined;
-              state = undefined;
-              c3 = 1;
-              c4 = 1;
-              return { value: "flexDirection", done: null };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              c3 = 2;
-              c4 = 1;
-              const obj5 = { applicationId: applicationId.applicationId, iframeId, permissions: ["connect_user_to_voice"] };
-              const obj6 = { value: closure_130_1(closure_130_2[15])(obj5), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            closure_2 = value;
-            closure_130_3(closure_2, 1)[0];
-            state = undefined;
-            if (state != null) {
-              state = state.state;
-            }
-            if ("granted" !== state) {
-              const self = this;
-              const self2 = this;
-              obj = { errorCode: closure_130_16.UNAUTHORIZED_FOR_APPLICATION };
-              const tmp11 = new closure_130_1(closure_130_2[14])(obj, "The user has not allowed this app to join voice channels");
-              throw tmp11;
-            } else {
-              c4 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          }
-        } catch (tmp20) {
-          c4 = 3;
-          throw tmp20;
-        }
+      const obj5 = { applicationId: applicationId.applicationId, iframeId, permissions: ["connect_user_to_voice"] };
+      closure_2 = await closure_130_1(closure_130_2[15])(obj5);
+      state = closure_130_3(closure_2, 1)[0];
+      if (state != null) {
+        state = state.state;
       }
+      if ("granted" !== state) {
+        const self = this;
+        const self2 = this;
+        obj = { errorCode: closure_130_16.UNAUTHORIZED_FOR_APPLICATION };
+        const tmp11 = new closure_130_1(closure_130_2[14])(obj, "The user has not allowed this app to join voice channels");
+        throw tmp11;
+      }
+      await "HermesInternal";
+      closure_2 = tmp4;
+      ({ frame: c0, iframeId: c1 } = closure_0);
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -328,12 +271,12 @@ let obj4 = {
     const socket = args.socket;
     let guild;
     const botScopeOnly = args.botScopeOnly;
-    obj = socket(16612);
+    obj = socket(16644);
     if (obj.isGuildVoiceSocket(socket)) {
       const self3 = this;
       const self4 = this;
       const obj3 = { errorCode: constants3.INVALID_GUILD };
-      const tmp15 = new guild(9414)(obj3, "Invalid guild");
+      const tmp15 = new guild(9447)(obj3, "Invalid guild");
       throw tmp15;
     }
     const obj2 = guild(12);
@@ -349,7 +292,7 @@ let obj4 = {
           const self = this;
           const self2 = this;
           const obj4 = { errorCode: constants3.INVALID_GUILD };
-          const tmp3Result = tmp3(9414);
+          const tmp3Result = tmp3(9447);
           const tmp3Result1 = new tmp3Result(obj4, "Invalid guild id: " + guild_id);
           throw tmp3Result1;
         } else {
@@ -420,7 +363,7 @@ let obj6 = {
     socket = socket.socket;
     let tmp3;
     if (isPostMessageSocketDefault(socket)) {
-      tmp3 = tmp(6904)(socket.context.surface);
+      tmp3 = tmp(6937)(socket.context.surface);
     }
     const channel = ChannelStore.getChannel(tmp3);
     if (null == channel) {
@@ -450,7 +393,7 @@ let obj8 = {
   handler(args) {
     let server;
     let socket;
-    const f111698 = function(type) {
+    const f111809 = function(type) {
       if (null == type) {
         const _HermesInternal = HermesInternal;
         const self5 = this;
@@ -557,7 +500,7 @@ let obj8 = {
           if (voiceChannelId !== guildVoiceChannel1.id) {
             const tmpResult5 = tmp(flag2[25]);
             if (tmpResult5.isChannelFull(guildVoiceChannel1, VoiceStateStore, GuildStore)) {
-              const obj5 = { errorCode: constants3.INVALID_CHANNEL };
+              let obj5 = { errorCode: constants3.INVALID_CHANNEL };
               const self13 = this;
               const self14 = this;
               const tmp62 = new channel_id(flag2[14])(obj5, "Channel is full");
@@ -569,6 +512,7 @@ let obj8 = {
           return null;
         } else {
           let obj6 = { errorCode: constants3.INVALID_PERMISSIONS };
+          const tmp51 = constants3;
           const self11 = this;
           const self12 = this;
           const tmp53 = new channel_id(flag2[14])(obj6, "Connect permission required to join channel");
@@ -577,6 +521,7 @@ let obj8 = {
       }
     } else {
       const scopes = socket.authorization.scopes;
+      const tmp3 = null;
       let tmp4 = null;
       if (!scopes.has(tmp(flag2[19]).OAuth2Scopes.RPC)) {
         let tmp5 = channel_id;
@@ -620,7 +565,7 @@ let obj8 = {
           }
           if ("guild" === obj9.kind) {
             if (guildId1 !== obj9.guildId) {
-              const obj11 = { errorCode: constants3.INVALID_CHANNEL };
+              let obj11 = { errorCode: constants3.INVALID_CHANNEL };
               const self7 = this;
               const self8 = this;
               const tmp34 = new channel_id(flag2[14])(obj11, "This app can only select a voice channel in the server it is installed in");
@@ -666,86 +611,125 @@ let obj8 = {
           const tmp = new channel_id(flag2[14])(obj, "Request to select voice channel timed out.");
           throw tmp;
         });
-        const then = catchPromise.then(f111698).then;
-        catchPromise.then(f111698);
+        const then = catchPromise.then(f111809).then;
+        catchPromise.then(f111809);
         let closure_0 = obj9(function*(arg0, value) {
-          let closure_2;
-          let closure_4;
           function validateUserAllowsJoiningVoice() {
             return closure_1_18(...arguments);
           }
           closure_0 = arg0;
-          closure_3 = tmp;
-          const iter = closure_0[Symbol.iterator]();
-          value = closure_0;
-          let tmp49 = iter === undefined;
-          if (!tmp49) {
-            closure_2 = iter.next();
-          }
-          closure_0 = closure_2;
-          obj9 = tmp67;
-          if (!tmp49) {
-            tmp49 = tmp48;
-            obj9 = iter2;
-            if (iter !== undefined) {
-              closure_2 = iter2.next();
-              tmp49 = tmp48;
-              obj9 = iter2;
-            }
-          }
-          value = closure_2;
-          if (!tmp49) {
-            obj9.return();
-          }
-          yield "flexDirection";
-          if (1 === c5) {
+          if (c6 === 2) {
+            c6 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
             if (arg0 === 1) {
-              let c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
+              const obj2 = { value, done: true };
+              return obj2;
             } else {
-              if (null != value.guild_id) {
-                const obj12 = closure_0(flag2[25]);
-                if (obj12.isChannelFull(closure_0, VoiceStateStore, GuildStore)) {
-                  const obj7 = { errorCode: constants2.INVALID_CHANNEL };
-                  const self3 = this;
-                  const self4 = this;
-                  const tmp43 = new channel_id(flag2[14])(obj7, "Channel is full");
-                  throw tmp43;
-                } else if (!PermissionStore.can(constants.CONNECT, closure_0)) {
-                  const obj8 = { errorCode: constants2.INVALID_PERMISSIONS };
-                  const self = this;
-                  const self2 = this;
-                  const tmp15 = new channel_id(flag2[14])(obj8, "Connect permission required to join channel");
-                  throw tmp15;
-                }
-              }
-              if (null != closure_3) {
-                c5 = 2;
-                c6 = 1;
-                const obj10 = { value: validateUserAllowsJoiningVoice(closure_3), done: false };
-                return obj10;
-              }
+              return { value: "HermesInternal", done: null };
             }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            obj = { value, done: true };
-            return obj;
+          } else {
+            try {
+              let closure_2;
+              c6 = 2;
+              if (0 === c5) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  const obj5 = { value, done: true };
+                  return obj5;
+                } else {
+                  let closure_4 = tmp4;
+                  closure_3 = tmp;
+                  closure_0 = undefined;
+                  const iter = closure_0[Symbol.iterator]();
+                  value = closure_0;
+                  closure_2 = undefined;
+                  let tmp49 = iter === undefined;
+                  if (!tmp49) {
+                    closure_2 = iter.next();
+                  }
+                  closure_0 = closure_2;
+                  closure_2 = undefined;
+                  obj9 = tmp67;
+                  if (!tmp49) {
+                    tmp49 = tmp48;
+                    obj9 = iter2;
+                    if (iter !== undefined) {
+                      closure_2 = iter2.next();
+                      tmp49 = tmp48;
+                      obj9 = iter2;
+                    }
+                  }
+                  value = closure_2;
+                  if (!tmp49) {
+                    obj9.return();
+                  }
+                  c5 = 1;
+                  c6 = 1;
+                  return { value: "flexDirection", done: true };
+                }
+              } else {
+                if (1 === c5) {
+                  if (arg0 === 1) {
+                    c6 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c6 = 3;
+                    const obj6 = { value, done: true };
+                    return obj6;
+                  } else {
+                    if (null != value.guild_id) {
+                      const obj12 = closure_0(flag2[25]);
+                      if (obj12.isChannelFull(closure_0, VoiceStateStore, GuildStore)) {
+                        const obj7 = { errorCode: constants2.INVALID_CHANNEL };
+                        const self3 = this;
+                        const self4 = this;
+                        const tmp43 = new channel_id(flag2[14])(obj7, "Channel is full");
+                        throw tmp43;
+                      } else if (!PermissionStore.can(constants.CONNECT, closure_0)) {
+                        const obj8 = { errorCode: constants2.INVALID_PERMISSIONS };
+                        const self = this;
+                        const self2 = this;
+                        const tmp15 = new channel_id(flag2[14])(obj8, "Connect permission required to join channel");
+                        throw tmp15;
+                      }
+                    }
+                    if (null != closure_3) {
+                      c5 = 2;
+                      c6 = 1;
+                      const obj10 = { value: validateUserAllowsJoiningVoice(closure_3), done: false };
+                      return obj10;
+                    }
+                  }
+                } else if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  obj = { value, done: true };
+                  return obj;
+                }
+                const obj3 = channel_id(flag2[24]);
+                const voiceChannel = obj3.selectVoiceChannel(closure_0.id);
+                const tmp25 = closure_2;
+                if (tmp25) {
+                  const obj4 = closure_0(flag2[26]);
+                  obj4.replaceWith(closure_2_14.CHANNEL(closure_0.guild_id, closure_0.id));
+                }
+                c6 = 3;
+                const obj11 = { value, done: true };
+                return obj11;
+              }
+            } catch (tmp51) {
+              c6 = 3;
+              throw tmp51;
+            }
           }
-          const obj3 = channel_id(flag2[24]);
-          const voiceChannel = obj3.selectVoiceChannel(closure_0.id);
-          const tmp25 = closure_2;
-          if (tmp25) {
-            const obj4 = closure_0(flag2[26]);
-            obj4.replaceWith(closure_2_14.CHANNEL(closure_0.guild_id, closure_0.id));
-          }
-          return value;
         });
         return then(function() {
           return closure_0(...arguments);

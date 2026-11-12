@@ -1,15 +1,15 @@
-// Module ID: 17225
-// Function ID: 17226
+// Module ID: 17259
+// Function ID: 17260
 // Name: useNitroProgramReward
-// Dependencies: [15925, 504, 15928, 17226, 17228, 2]
+// Dependencies: [15957, 504, 15960, 17260, 17262, 2]
 // Exports: useNitroProgramReward
 
-// Module 17225 (useNitroProgramReward)
+// Module 17259 (useNitroProgramReward)
 import get_initialized from "get initialized" /* 504 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15928 */;
-import getShouldFetchProgramRewards from "getShouldFetchProgramRewards" /* 17226 */;
-import nitroProgramRewardInvariants from "nitroProgramRewardInvariants" /* 17228 */;
-import ProgramRewardsStore from "ProgramRewardsStore" /* 15925 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15960 */;
+import getShouldFetchProgramRewards from "getShouldFetchProgramRewards" /* 17260 */;
+import nitroProgramRewardInvariants from "nitroProgramRewardInvariants" /* 17262 */;
+import ProgramRewardsStore from "ProgramRewardsStore" /* 15957 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/rewards/hooks/useNitroProgramReward.tsx");

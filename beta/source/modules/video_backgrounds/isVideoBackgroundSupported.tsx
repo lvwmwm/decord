@@ -1,11 +1,11 @@
-// Module ID: 6072
-// Function ID: 6073
+// Module ID: 6104
+// Function ID: 6105
 // Name: isVideoBackgroundSupported
-// Dependencies: [2130, 5897, 2]
+// Dependencies: [2130, 5929, 2]
 // Exports: default
 
-// Module 6072 (isVideoBackgroundSupported)
-import Constants from "Constants" /* 5897 */;
+// Module 6104 (isVideoBackgroundSupported)
+import Constants from "Constants" /* 5929 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import size from "module_2" /* 2 */;
 

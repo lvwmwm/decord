@@ -1,13 +1,13 @@
-// Module ID: 12257
-// Function ID: 12258
+// Module ID: 12289
+// Function ID: 12290
 // Name: useConjureSafetyRecheck
-// Dependencies: [10987, 1113, 4026, 504, 2]
+// Dependencies: [11019, 1113, 4026, 504, 2]
 // Exports: default, getConjureSafetyHoldCopy, getConjureSafetyRecheckNotice
 
-// Module 12257 (useConjureSafetyRecheck)
+// Module 12289 (useConjureSafetyRecheck)
 import intl5 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10987 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11019 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

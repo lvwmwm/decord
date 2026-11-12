@@ -1,8 +1,8 @@
-// Module ID: 6446
-// Function ID: 6447
+// Module ID: 6478
+// Function ID: 6479
 // Dependencies: [2]
 
-// Module 6446
+// Module 6478
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/magical_citrine.png.js");

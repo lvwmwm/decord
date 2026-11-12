@@ -1,15 +1,15 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12420
+// Function ID: 12421
 // Name: conjureChatMoreSections
-// Dependencies: [6899, 1113, 4026, 7633, 10965, 12389, 12391, 9288, 10999, 5864, 11215, 7196, 5851, 12393, 5857, 12397, 12400, 12402, 10643, 12046, 12395, 7162, 12399, 5862, 2]
+// Dependencies: [6932, 1113, 4026, 7666, 10997, 12421, 12423, 9321, 11031, 5896, 11247, 7229, 5883, 12425, 5889, 12429, 12432, 12434, 10675, 12078, 12427, 7195, 12431, 5894, 2]
 // Exports: conjureChatMoreSections
 
-// Module 12388 (conjureChatMoreSections)
-import conjureProjectMute from "conjureProjectMute" /* 10999 */;
-import conjureProjectActions from "conjureProjectActions" /* 12393 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12395 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12399 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+// Module 12420 (conjureChatMoreSections)
+import conjureProjectMute from "conjureProjectMute" /* 11031 */;
+import conjureProjectActions from "conjureProjectActions" /* 12425 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12427 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12431 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,18 +1,18 @@
-// Module ID: 14100
-// Function ID: 14101
+// Module ID: 14132
+// Function ID: 14133
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 5011, 5072, 6827, 14094, 1072, 504, 5721, 14098, 2]
+// Dependencies: [5, 32, 19, 5041, 5102, 6860, 14126, 1072, 504, 5753, 14130, 2]
 // Exports: default
 
-// Module 14100 (useAvailableAndAddedGuilds)
+// Module 14132 (useAvailableAndAddedGuilds)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import SortedGuildStore from "SortedGuildStore" /* 6827 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 14094 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import SortedGuildStore from "SortedGuildStore" /* 6860 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 14126 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

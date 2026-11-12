@@ -1,19 +1,19 @@
-// Module ID: 12642
-// Function ID: 12643
+// Module ID: 12674
+// Function ID: 12675
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 5140, 6787, 1652, 5370, 5373, 7038, 1113, 5751, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 6819, 1652, 5402, 5405, 7071, 1113, 5783, 2]
 // Exports: default
 
-// Module 12642 (ExpandableList)
+// Module 12674 (ExpandableList)
 import react_native from "react-native" /* 17 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5370 */;
-import timingPresets from "timingPresets" /* 5373 */;
-import usePreviousDefault from "usePrevious" /* 6787 */;
+import timing_timing from "timing/timing" /* 5402 */;
+import timingPresets from "timingPresets" /* 5405 */;
+import usePreviousDefault from "usePrevious" /* 6819 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -51,7 +51,7 @@ export default function ExpandableList(onExpand) {
   let tmp21;
   let tmp22;
   let tmp23;
-  const f129825 = (fn, index) => {
+  const f129943 = (fn, index) => {
     const isLastRow = closure_1 && index === memo1.length - 1;
     return fn({ isLastRow });
   };
@@ -169,7 +169,7 @@ export default function ExpandableList(onExpand) {
     onLayout: function handleCollapsedListLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: memo.map(f129825)
+    children: memo.map(f129943)
   };
   View = _modDef1652.View;
   const tmp26 = metroImportAll;
@@ -187,7 +187,7 @@ export default function ExpandableList(onExpand) {
         },
       accessibilityElementsHidden: !first,
       importantForAccessibility: "no-hide-descendants",
-      children: memo1.map(f129825)
+      children: memo1.map(f129943)
     };
     tmp27Result = tmp27(tmp28, obj7);
   }
@@ -196,7 +196,7 @@ export default function ExpandableList(onExpand) {
   if (showsExpandCTAOverride) {
     let stringResult;
     let stringResult1;
-    const TableRow = tmp10(7038).TableRow;
+    const TableRow = tmp10(7071).TableRow;
     if (first) {
       const intl2 = tmp10(1113).intl;
       stringResult = intl2.string(tmp10(1113).t.nPGLFQ);
@@ -218,7 +218,7 @@ export default function ExpandableList(onExpand) {
       end: true
     };
     obj10 = { style: tmp.expandCTALabelContainer, children: metroRequire(Text, obj12) };
-    Text = tmp10(5751).Text;
+    Text = tmp10(5783).Text;
     const intl3 = tmp10(1113).intl;
     if (first) {
       stringResult1 = intl3.string(tmp10(1113).t.nPGLFQ);

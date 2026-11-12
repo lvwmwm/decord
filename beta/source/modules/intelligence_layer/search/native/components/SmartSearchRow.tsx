@@ -1,20 +1,20 @@
-// Module ID: 19109
-// Function ID: 19110
+// Module ID: 19147
+// Function ID: 19148
 // Name: SmartSearchRow
-// Dependencies: [32, 19, 17, 5141, 14124, 21, 5140, 575, 7357, 19110, 14144, 14142, 14125, 19111, 14123, 19123, 19125, 504, 2]
+// Dependencies: [32, 19, 17, 5171, 14156, 21, 5170, 575, 7390, 19148, 14176, 14174, 14157, 19149, 14155, 19161, 19163, 504, 2]
 // Exports: default
 
-// Module 19109 (SmartSearchRow)
+// Module 19147 (SmartSearchRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14142 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14144 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14174 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14176 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 14124 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 14156 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -39,14 +39,14 @@ let closure_11 = react.memo(function SmartSearchRowContainer(smartSearchQuery) {
   ({ hasKeywordResults, entry } = smartSearchQuery);
   let flashListContext;
   const tmp = closure_10();
-  let obj = smartSearchQuery(7357);
+  let obj = smartSearchQuery(7390);
   const items = [smartSearchQuery.requestKey];
   const tmp4 = flashListContext(obj.useRecyclingState(hasKeywordResults, items), 2);
   const isCollapsed = tmp4[0];
   dependencyMap = tmp6;
-  let obj2 = smartSearchQuery(19110);
+  let obj2 = smartSearchQuery(19148);
   const smartSearchRowViewability = obj2.useSmartSearchRowViewability();
-  let obj3 = smartSearchQuery(7357);
+  let obj3 = smartSearchQuery(7390);
   flashListContext = obj3.useFlashListContext();
   const items1 = [flashListContext, isCollapsed, tmp4[1], smartSearchQuery];
   const callback = react.useCallback(() => {
@@ -66,21 +66,21 @@ let closure_11 = react.memo(function SmartSearchRowContainer(smartSearchQuery) {
     const result = obj4.trackSmartSearchAnswerToggled(obj3, SearchSessionAnalyticsManagerDefault);
   }, items1);
   let tmp19Result = null;
-  if (entry.status !== smartSearchQuery(14125).SmartSearchStatus.NOT_QUALIFIED) {
+  if (entry.status !== smartSearchQuery(14157).SmartSearchStatus.NOT_QUALIFIED) {
     let obj4 = { style: isCollapsed ? tmp.collapsedFrame : tmp.expandedContent, children: null };
     const obj5 = { smartSearchQuery, hasKeywordResults, entry, isCollapsed };
-    const items2 = [closure_8(tmp2(19111).SmartSearchContent, obj5), , ];
+    const items2 = [closure_8(tmp2(19149).SmartSearchContent, obj5), , ];
     if (isCollapsed) {
       let tmp11Result;
-      const tmp2Result = smartSearchQuery(14123);
+      const tmp2Result = smartSearchQuery(14155);
       if (!tmp2Result.isSmartSearchEmptyOrErrored(entry.status)) {
-        tmp11Result = tmp11(isCollapsed(19123), { height: 72 });
+        tmp11Result = tmp11(isCollapsed(19161), { height: 72 });
       }
       items2[1] = tmp11Result;
-      let tmp11Result4 = hasKeywordResults && entry.status === tmp2(14125).SmartSearchStatus.LOADED;
+      let tmp11Result4 = hasKeywordResults && entry.status === tmp2(14157).SmartSearchStatus.LOADED;
       if (tmp11Result4) {
         const obj6 = { isCollapsed, onPress: callback };
-        tmp11Result4 = tmp11(isCollapsed(19125), obj6);
+        tmp11Result4 = tmp11(isCollapsed(19163), obj6);
       }
       items2[2] = tmp11Result4;
       obj4.children = items2;
@@ -95,8 +95,8 @@ let closure_11 = react.memo(function SmartSearchRowContainer(smartSearchQuery) {
       tmp19Result = tmp19(tmp20, obj8);
     }
     let tmp11Result6 = null;
-    if (entry.status === smartSearchQuery(14125).SmartSearchStatus.LOADING) {
-      tmp11Result6 = tmp11(isCollapsed(19123), { height: 120 });
+    if (entry.status === smartSearchQuery(14157).SmartSearchStatus.LOADING) {
+      tmp11Result6 = tmp11(isCollapsed(19161), { height: 120 });
     }
     tmp11Result = tmp11Result6;
   }

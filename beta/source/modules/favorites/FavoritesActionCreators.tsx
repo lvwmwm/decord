@@ -1,39 +1,39 @@
-// Module ID: 10950
-// Function ID: 10951
+// Module ID: 10982
+// Function ID: 10983
 // Name: FavoritesActionCreators
-// Dependencies: [5, 4981, 4993, 502, 4989, 5011, 5072, 5043, 5171, 4992, 5002, 1072, 1083, 5014, 1099, 1196, 1227, 12, 10951, 10953, 6090, 1113, 4970, 11, 10961, 10962, 10963, 1089, 5814, 4973, 2]
+// Dependencies: [5, 5011, 5023, 502, 5019, 5041, 5102, 5073, 5203, 5022, 5032, 1072, 1083, 5044, 1099, 1196, 1227, 12, 10983, 10985, 6122, 1113, 5000, 11, 10993, 10994, 10995, 1089, 5846, 5003, 2]
 // Exports: addFavoriteCategory, addFavoriteChannels, addFavoriteChannelsToCategory, autoAddJoinedThreadToFavorites, pruneInactiveFavoriteThreads, removeFavoriteCategory, resetFavoritesGuild, setFavoriteCategoriesCollapsed, setFavoriteChannelNickname, setFavoritesAutoAddJoinedThreads, setFavoritesGuildVisibility, setFavoritesGuildVisibilityFromSettings, setFavoritesPruneInactiveThreads, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 10950 (FavoritesActionCreators)
+// Module 10982 (FavoritesActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1083 */;
 import intl3 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import wrappers from "wrappers" /* 1227 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4970 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4981 */;
-import ChannelRecord from "ChannelRecord" /* 4993 */;
-import FavoritesUtils from "FavoritesUtils" /* 5014 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5814 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
-import FavoritesHooks from "FavoritesHooks" /* 10951 */;
-import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10953 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10961 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 5011 */;
+import ChannelRecord from "ChannelRecord" /* 5023 */;
+import FavoritesUtils from "FavoritesUtils" /* 5044 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5846 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
+import FavoritesHooks from "FavoritesHooks" /* 10983 */;
+import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10985 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10993 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
-import FavoriteStore from "FavoriteStore" /* 4992 */;
-import FavoritesConstants from "FavoritesConstants" /* 5002 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import FavoriteStore from "FavoriteStore" /* 5022 */;
+import FavoritesConstants from "FavoritesConstants" /* 5032 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, autoAddThreadsMode, c5, closure_42, closure_5, dependencyMap, guild, parentId, set;
+let _require, autoAddThreadsMode, closure_42, closure_5, dependencyMap, guild, parentId, set;
 
 let closure_14;
 let closure_15;
@@ -47,7 +47,7 @@ let closure_22;
 let map1;
 let tmp3;
 const router_utils = tmp3(1099);
-const f99815 = (type) => type.type !== closure_1_0(closure_1_2[15]).FavoriteChannelType.CATEGORY;
+const f99925 = (type) => type.type !== closure_1_0(closure_1_2[15]).FavoriteChannelType.CATEGORY;
 function getNextPositionFromChannels(arg0) {
   let num = 0;
   let num2 = 0;
@@ -150,7 +150,7 @@ function cleanupChannelParentId(favoriteChannels, id) {
 }
 function countFavoritesAgainstLimit(arg0) {
   const arr = _modDef12;
-  return arr.filter(arg0, f99815).length;
+  return arr.filter(arg0, f99925).length;
 }
 function getReachedLimit(favoriteChannels, arg1) {
   let canUpsellFavoriteLimit;
@@ -167,7 +167,7 @@ function getReachedLimit(favoriteChannels, arg1) {
     if (arg1 !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
       tmp5 = null;
       const tmp2Result = _modDef12;
-      if (tmp2Result.filter(favoriteChannels, f99815).length >= favoriteLimit) {
+      if (tmp2Result.filter(favoriteChannels, f99925).length >= favoriteLimit) {
         tmp5 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
         const obj3 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
       }
@@ -287,207 +287,159 @@ let obj = function _addFavoriteChannelsToParent() {
     let c6 = 0;
     let c7 = 0;
     let iter = (async (arg0, value, arg2) => {
-      if (c7 === 2) {
-        c7 = 3;
-        let str = "Generator functions may not be called on executing generators";
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else {
-        const tmp22 = value;
-        let tmp23 = arg0;
-        let tmp24 = tmp2;
-        if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            let obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
+      let flag;
+      let tmp;
+      let tmp4;
+      if (1 === tmp4) {
+        if (arg0 === 1) {
+          c7 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c7 = 3;
+          let obj5 = { value, done: true };
+          return obj5;
         } else {
-          try {
-            let flag;
-            let tmp;
-            c7 = 2;
-            let tmp4 = c6;
-            if (0 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                let obj3 = { value, done: true };
-                return obj3;
-              } else {
-                closure_5 = tmp4;
-                flag = undefined;
-                let tmp18 = closure_0;
-                let tmp19 = closure_1;
-                let tmp20 = closure_2;
-                let obj4 = closure_3;
-                if (closure_3 === undefined) {
-                  obj4 = {};
-                }
-                flag = obj4.silent ?? false;
-                tmp = undefined;
-                closure_5 = undefined;
-                c6 = 1;
-                c7 = 1;
-                return { value: "flexDirection", done: null };
-              }
-            } else {
-              if (1 === tmp4) {
-                if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c7 = 3;
-                  let obj5 = { value, done: true };
-                  return obj5;
-                } else {
-                  let tmp25 = tmp;
-                  let tmp26 = closure_0;
-                  tmp = closure_0.filter((item) => !closure_1_12.isFavorite(item));
-                  let tmp27 = tmp;
-                  if (0 !== tmp.length) {
-                    let tmp14 = tmp;
-                    let tmp15 = closure_5;
-                    let tmp16 = closure_133_12;
-                    closure_5 = !closure_133_12.favoriteGuildEnabled;
-                    let tmp17 = closure_133_32;
-                    c6 = 2;
-                    c7 = 1;
-                    const obj6 = {
-                      update(favoriteChannels) {
-                                      let obj5;
-                                      let flag = false;
-                                      parentId = null;
-                                      if ("parentId" in closure_1_1) {
-                                        parentId = tmp.parentId;
-                                      }
-                                      if (parentId == null) {
-                                        parentId = closure_2_19;
-                                      }
-                                      let tmp4 = parentId;
-                                      const iter = closure_1_4[Symbol.iterator]();
-                                      const nextResult = iter.next();
-                                      while (iter !== undefined) {
-                                        let tmp7 = nextResult;
-                                        let tmp8 = closure_2_29;
-                                        let tmp11 = closure_2_29(favoriteChannels.favoriteChannels, closure_0(closure_2[15]).FavoriteChannelType.REFERENCE_ORIGINAL);
-                                        if (null != tmp11) {
-                                          let tmp55 = closure_1_3;
-                                          if (!tmp55) {
-                                            let tmp57 = closure_2_30(tmp11);
-                                          }
-                                          let tmp58 = flag;
-                                          if (tmp58) {
-                                            iter.return();
-                                            break;
-                                          } else {
-                                            iter.return();
-                                            return false;
-                                          }
-                                        } else {
-                                          let tmp68 = closure_1_1;
-                                          if ("categoryName" in closure_1_1) {
-                                            let tmp13 = flag;
-                                            if (!tmp13) {
-                                              let tmp16 = closure_2_34(favoriteChannels.favoriteChannels, tmp68.categoryName);
-                                              if (tmp16 == null) {
-                                                tmp16 = closure_2_33(favoriteChannels.favoriteChannels, tmp68.categoryName);
-                                              }
-                                              tmp4 = tmp16;
-                                              let tmp8Result = tmp8(favoriteChannels.favoriteChannels, closure_0(closure_2[15]).FavoriteChannelType.REFERENCE_ORIGINAL);
-                                              if (null != tmp8Result) {
-                                                let tmp23 = closure_1_3;
-                                                if (!tmp23) {
-                                                  let tmp26 = closure_2_30(tmp22);
-                                                }
-                                                iter.return();
-                                                return false;
-                                              }
-                                            }
-                                          }
-                                          channel = channel.getChannel(tmp7);
-                                          let tmp31 = channel;
-                                          favoriteChannels = favoriteChannels.favoriteChannels;
-                                          let FavoriteChannel = closure_0(closure_2[15]).FavoriteChannel;
-                                          obj = { nickname: "", type: closure_0(closure_2[15]).FavoriteChannelType.REFERENCE_ORIGINAL, channelType: obj5, position: closure_2_24(favoriteChannels.favoriteChannels), parentId: tmp4 };
-                                          let create = FavoriteChannel.create;
-                                          obj5 = undefined;
-                                          if (null != channel) {
-                                            let UInt32Value = closure_0(closure_2[16]).UInt32Value;
-                                            let obj2 = { value: tmp31.type };
-                                            obj5 = UInt32Value.create(obj2);
-                                          }
-                                          favoriteChannels[tmp7] = create(obj);
-                                          let tmp43 = closure_2_26(favoriteChannels.favoriteChannels);
-                                          let tmp46 = closure_2_27(favoriteChannels.favoriteChannels, tmp7);
-                                          flag = true;
-                                          let tmp49 = closure_0(closure_2[24]);
-                                          let type;
-                                          let trackFavoritesGuildAddToFavorites = tmp49.trackFavoritesGuildAddToFavorites;
-                                          let tmp50 = closure_1_2;
-                                          if (tmp31 != null) {
-                                            type = tmp31.type;
-                                          }
-                                          if (type == null) {
-                                            type = null;
-                                          }
-                                          let result = trackFavoritesGuildAddToFavorites(tmp50, type, closure_2_28(favoriteChannels.favoriteChannels));
-                                          continue;
-                                        }
-                                        if (flag) {
-                                          flag = closure_1_5;
-                                        }
-                                        if (flag) {
-                                          flag = !closure_1_3;
-                                        }
-                                        if (flag) {
-                                          let BoolValue = closure_0(closure_2[16]).BoolValue;
-                                          favoriteChannels.guildVisible = BoolValue.create({ value: true });
-                                          let obj3 = closure_0(closure_2[24]);
-                                          let str = "auto";
-                                          let result1 = obj3.trackFavoritesGuildVisibilitySettingToggled("auto", true);
-                                        }
-                                      }
-                                    }
-                    };
-                    const obj7 = { value: closure_133_32(obj6), done: false };
-                    return obj7;
-                  }
-                }
-              } else if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                let someResult = !flag;
-                if (someResult) {
-                  let tmp8 = tmp;
-                  let tmp9 = tmp;
-                  someResult = tmp.some((item) => closure_1_12.isFavorite(item));
-                }
-                if (someResult) {
-                  let tmp10 = closure_5;
-                  let tmp11 = closure_133_1;
-                  let tmp12 = closure_133_2;
-                  let tmp13 = closure_133_1(closure_133_2[25])();
-                }
-              }
-              c7 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          } catch (tmp21) {
-            c7 = 3;
-            throw tmp21;
+          let tmp25 = tmp;
+          let tmp26 = closure_0;
+          tmp = closure_0.filter((item) => !closure_1_12.isFavorite(item));
+          let tmp27 = tmp;
+          if (0 !== tmp.length) {
+            let tmp14 = tmp;
+            let tmp15 = closure_5;
+            let tmp16 = closure_133_12;
+            closure_5 = !closure_133_12.favoriteGuildEnabled;
+            let tmp17 = closure_133_32;
+            c6 = 2;
+            c7 = 1;
+            const obj6 = {
+              update(favoriteChannels) {
+                      let obj5;
+                      let flag = false;
+                      parentId = null;
+                      if ("parentId" in closure_1_1) {
+                        parentId = tmp.parentId;
+                      }
+                      if (parentId == null) {
+                        parentId = closure_2_19;
+                      }
+                      let tmp4 = parentId;
+                      const iter = closure_1_4[Symbol.iterator]();
+                      const nextResult = iter.next();
+                      while (iter !== undefined) {
+                        let tmp7 = nextResult;
+                        let tmp8 = closure_2_29;
+                        let tmp11 = closure_2_29(favoriteChannels.favoriteChannels, closure_0(closure_2[15]).FavoriteChannelType.REFERENCE_ORIGINAL);
+                        if (null != tmp11) {
+                          let tmp55 = closure_1_3;
+                          if (!tmp55) {
+                            let tmp57 = closure_2_30(tmp11);
+                          }
+                          let tmp58 = flag;
+                          if (tmp58) {
+                            iter.return();
+                            break;
+                          } else {
+                            iter.return();
+                            return false;
+                          }
+                        } else {
+                          let tmp68 = closure_1_1;
+                          if ("categoryName" in closure_1_1) {
+                            let tmp13 = flag;
+                            if (!tmp13) {
+                              let tmp16 = closure_2_34(favoriteChannels.favoriteChannels, tmp68.categoryName);
+                              if (tmp16 == null) {
+                                tmp16 = closure_2_33(favoriteChannels.favoriteChannels, tmp68.categoryName);
+                              }
+                              tmp4 = tmp16;
+                              let tmp8Result = tmp8(favoriteChannels.favoriteChannels, closure_0(closure_2[15]).FavoriteChannelType.REFERENCE_ORIGINAL);
+                              if (null != tmp8Result) {
+                                let tmp23 = closure_1_3;
+                                if (!tmp23) {
+                                  let tmp26 = closure_2_30(tmp22);
+                                }
+                                iter.return();
+                                return false;
+                              }
+                            }
+                          }
+                          channel = channel.getChannel(tmp7);
+                          let tmp31 = channel;
+                          favoriteChannels = favoriteChannels.favoriteChannels;
+                          let FavoriteChannel = closure_0(closure_2[15]).FavoriteChannel;
+                          obj = { nickname: "", type: closure_0(closure_2[15]).FavoriteChannelType.REFERENCE_ORIGINAL, channelType: obj5, position: closure_2_24(favoriteChannels.favoriteChannels), parentId: tmp4 };
+                          let create = FavoriteChannel.create;
+                          obj5 = undefined;
+                          if (null != channel) {
+                            let UInt32Value = closure_0(closure_2[16]).UInt32Value;
+                            let obj2 = { value: tmp31.type };
+                            obj5 = UInt32Value.create(obj2);
+                          }
+                          favoriteChannels[tmp7] = create(obj);
+                          let tmp43 = closure_2_26(favoriteChannels.favoriteChannels);
+                          let tmp46 = closure_2_27(favoriteChannels.favoriteChannels, tmp7);
+                          flag = true;
+                          let tmp49 = closure_0(closure_2[24]);
+                          let type;
+                          let trackFavoritesGuildAddToFavorites = tmp49.trackFavoritesGuildAddToFavorites;
+                          let tmp50 = closure_1_2;
+                          if (tmp31 != null) {
+                            type = tmp31.type;
+                          }
+                          if (type == null) {
+                            type = null;
+                          }
+                          let result = trackFavoritesGuildAddToFavorites(tmp50, type, closure_2_28(favoriteChannels.favoriteChannels));
+                          continue;
+                        }
+                        if (flag) {
+                          flag = closure_1_5;
+                        }
+                        if (flag) {
+                          flag = !closure_1_3;
+                        }
+                        if (flag) {
+                          let BoolValue = closure_0(closure_2[16]).BoolValue;
+                          favoriteChannels.guildVisible = BoolValue.create({ value: true });
+                          let obj3 = closure_0(closure_2[24]);
+                          let str = "auto";
+                          let result1 = obj3.trackFavoritesGuildVisibilitySettingToggled("auto", true);
+                        }
+                      }
+                    }
+            };
+            const obj7 = { value: closure_133_32(obj6), done: false };
+            return obj7;
           }
         }
+      } else if (arg0 === 1) {
+        c7 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c7 = 3;
+        obj = { value, done: true };
+        return obj;
+      } else {
+        let someResult = !flag;
+        if (someResult) {
+          let tmp8 = tmp;
+          let tmp9 = tmp;
+          someResult = tmp.some((item) => closure_1_12.isFavorite(item));
+        }
+        if (someResult) {
+          let tmp10 = closure_5;
+          let tmp11 = closure_133_1;
+          let tmp12 = closure_133_2;
+          let tmp13 = closure_133_1(closure_133_2[25])();
+        }
       }
+      await "HermesInternal";
+      let obj4 = closure_3;
+      if (closure_3 === undefined) {
+        obj4 = {};
+      }
+      flag = obj4.silent ?? false;
+      return "flexDirection";
     })();
     let nextResult = iter.next();
     return iter;
@@ -495,81 +447,25 @@ let obj = function _addFavoriteChannelsToParent() {
   return obj(...arguments);
 };
 obj = function _addFavoriteChannels() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
     let c0;
     let c1;
     let c2;
+    let c4;
+    let c5;
+    let closure_2;
+    let closure_3;
     let closure_0 = arg0;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_3 = tmp4;
-            let closure_2 = tmp;
-            c0 = undefined;
-            parentId = undefined;
-            c2 = undefined;
-            ({ channelIds: c0, parentId: c1, source: c2 } = closure_0);
-            c4 = 1;
-            c5 = 1;
-            return { value: "flexDirection", done: null };
-          }
-        } else if (1 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const tmp7 = closure_131_35;
-            const tmp8 = c0;
-            if (parentId == null) {
-              parentId = null;
-            }
-            const obj5 = { parentId };
-            c4 = 2;
-            c5 = 1;
-            const obj6 = { value: tmp7(tmp8, obj5, c2), done: false };
-            return obj6;
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          c5 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp15) {
-        c5 = 3;
-        throw tmp15;
-      }
+    const tmp7 = closure_131_35;
+    const tmp8 = c0;
+    if (parentId == null) {
+      parentId = null;
     }
+    const obj5 = { parentId };
+    await tmp7(tmp8, obj5, c2);
+    await "HermesInternal";
+    ({ channelIds: c0, parentId: c1, source: c2 } = closure_0);
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -638,7 +534,7 @@ function removeFavoriteChannel(id, arg1) {
             }
             favoriteChannels = favoriteChannels.favoriteChannels;
             const arr = _modDef12;
-            const result = trackFavoritesGuildRemoveFromFavorites(tmp9, arr.filter(favoriteChannels, f99815).length);
+            const result = trackFavoritesGuildRemoveFromFavorites(tmp9, arr.filter(favoriteChannels, f99925).length);
           }
         }
     };
@@ -893,7 +789,7 @@ obj = function _addFavoriteCategory() {
           if (CATEGORY !== closure_2_0(closure_2_2[15]).FavoriteChannelType.CATEGORY) {
             tmp6 = null;
             const tmp4Result = closure_2_1(closure_2_2[17]);
-            if (tmp4Result.filter(favoriteChannels, f99815).length >= favoriteLimit) {
+            if (tmp4Result.filter(favoriteChannels, f99925).length >= favoriteLimit) {
               tmp6 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
               const obj3 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
             }
@@ -928,77 +824,19 @@ obj = function _addFavoriteCategory() {
   return obj(...arguments);
 };
 obj = function _addFavoriteChannelsToCategory() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
     let c0;
     let c1;
     let c2;
+    let c3;
+    let c4;
+    let closure_2;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let categoryName;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp4;
-            let closure_1 = tmp;
-            c0 = undefined;
-            categoryName = undefined;
-            c2 = undefined;
-            ({ channelIds: c0, categoryName: c1, source: c2 } = closure_0);
-            c3 = 1;
-            c4 = 1;
-            return { value: "flexDirection", done: null };
-          }
-        } else if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const obj5 = { categoryName };
-            c3 = 2;
-            c4 = 1;
-            const obj6 = { value: closure_130_35(c0, obj5, c2), done: false };
-            return obj6;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          c4 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp12) {
-        c4 = 3;
-        throw tmp12;
-      }
-    }
+    const obj5 = { categoryName };
+    await closure_130_35(c0, obj5, c2);
+    await "HermesInternal";
+    ({ channelIds: c0, categoryName: c1, source: c2 } = closure_0);
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -1211,7 +1049,7 @@ export function setFavoritesAutoAddJoinedThreads(arg0) {
               if (CATEGORY !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
                 tmp15 = null;
                 const tmp30Result = _modDef12;
-                if (tmp30Result.filter(favoriteChannels, f99815).length >= favoriteLimit) {
+                if (tmp30Result.filter(favoriteChannels, f99925).length >= favoriteLimit) {
                   tmp15 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
                   obj = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
                 }
@@ -1444,7 +1282,7 @@ export function resetFavoritesGuild() {
   const result = tmpResult.resetDismissibleContentFrameworkStore();
   resetFatigueCooldown();
   const tmpResult2 = UserSettingsProtoActionCreators;
-  const result1 = tmpResult2.removeDismissedContent(tmp(4973).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS);
+  const result1 = tmpResult2.removeDismissedContent(tmp(5003).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS);
 }
 export function setFavoritesGuildVisibility(arg0) {
   let batched;

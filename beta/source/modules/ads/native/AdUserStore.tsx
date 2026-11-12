@@ -1,9 +1,9 @@
-// Module ID: 7950
-// Function ID: 7951
+// Module ID: 7983
+// Function ID: 7984
 // Name: AdUserStore
 // Dependencies: [504, 572, 2]
 
-// Module 7950 (AdUserStore)
+// Module 7983 (AdUserStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

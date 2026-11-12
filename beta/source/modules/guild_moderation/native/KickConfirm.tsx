@@ -1,19 +1,19 @@
-// Module ID: 13510
-// Function ID: 13511
+// Module ID: 13542
+// Function ID: 13543
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 5011, 1385, 21, 5140, 575, 5735, 11546, 504, 13511, 6957, 5842, 13512, 5751, 1113, 5194, 12396, 4026, 7316, 5758, 13513, 2]
+// Dependencies: [32, 19, 17, 5041, 1385, 21, 5170, 575, 5767, 11578, 504, 13543, 6990, 5874, 13544, 5783, 1113, 5226, 12428, 4026, 7349, 5790, 13545, 2]
 
-// Module 13510 (KickConfirm)
+// Module 13542 (KickConfirm)
 import nativeDefault from "native" /* 575 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
-import removeConjureServerAppDefault from "removeConjureServerApp" /* 13513 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
+import removeConjureServerAppDefault from "removeConjureServerApp" /* 13545 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let tmp4Result6;
   let tmp7Result4;
   let v1Ie87p;
-  const f105964 = () => ({ kicking: false, kickError: false });
+  const f106074 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -131,9 +131,9 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   closure_8 = tmp18[1];
   const first1 = tmp18[0];
   ref = obj.useRef("");
-  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f105964), 2);
+  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f106074), 2);
   const items4 = [stateFromStores, onKick, stateFromStores1];
-  stateFromStores(stateFromStores1.useState(f105964), 2);
+  stateFromStores(stateFromStores1.useState(f106074), 2);
   closure_11 = obj.useCallback(() => {
     const tmp2 = null != stateFromStores && null != stateFromStores1;
     if (tmp2) {

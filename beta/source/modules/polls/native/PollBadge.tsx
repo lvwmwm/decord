@@ -1,19 +1,19 @@
-// Module ID: 19098
-// Function ID: 19099
+// Module ID: 19136
+// Function ID: 19137
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 5140, 575, 1187, 19099, 5751, 1113, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 1187, 19137, 5783, 1113, 2]
 // Exports: default
 
-// Module 19098 (PollBadge)
+// Module 19136 (PollBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19099 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19137 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

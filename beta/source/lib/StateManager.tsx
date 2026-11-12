@@ -1,9 +1,9 @@
-// Module ID: 15854
-// Function ID: 15855
+// Module ID: 15886
+// Function ID: 15887
 // Name: StateManager
 // Dependencies: [1342, 2]
 
-// Module 15854 (StateManager)
+// Module 15886 (StateManager)
 import _modDef1342 from "module_1342" /* 1342 */;
 import size from "module_2" /* 2 */;
 

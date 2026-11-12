@@ -1,31 +1,31 @@
-// Module ID: 9830
-// Function ID: 9831
+// Module ID: 9863
+// Function ID: 9864
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 5087, 5141, 2140, 6627, 1385, 9831, 1072, 21, 5140, 5077, 504, 5390, 1652, 5370, 6936, 9832, 9833, 1084, 9834, 1282, 1266, 9835, 9837, 9839, 5775, 7393, 1242, 9840, 9841, 5889, 9842, 6154, 9843, 5758, 1113, 7015, 6629, 9845, 9847, 8984, 9838, 14848, 14852, 14851, 14853, 14854, 14855, 14857, 14860, 7363, 2]
+// Dependencies: [5, 32, 19, 17, 5117, 5171, 2140, 6659, 1385, 9864, 1072, 21, 5170, 5107, 504, 5422, 1652, 5402, 6969, 9865, 9866, 1084, 9867, 1282, 1266, 9868, 9870, 9872, 5807, 7426, 1242, 9873, 9874, 5921, 9875, 6186, 9876, 5790, 1113, 7048, 6661, 9878, 9880, 9017, 9871, 14880, 14884, 14883, 14885, 14886, 14887, 14889, 14892, 7396, 2]
 // Exports: default
 
-// Module 9830 (useOAuth2AuthorizeForm)
+// Module 9863 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5775 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6936 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7015 */;
-import Authorize from "Authorize" /* 9832 */;
-import react_nativeDefault from "react-native" /* 9834 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5807 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6969 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7048 */;
+import Authorize from "Authorize" /* 9865 */;
+import react_nativeDefault from "react-native" /* 9867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_5087 from "module_5087" /* 5087 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import module_5117 from "module_5117" /* 5117 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants_mod from "Constants" /* 9831 */;
+import Constants_mod from "Constants" /* 9864 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -38,7 +38,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(9833);
+const scopes2 = tmp4(9866);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -570,6 +570,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
   const useCallback = obj.useCallback;
   _require = codeChallengeMethod(function*(arg0, value) {
     let application;
+    let authorize;
     let c0;
     let c1;
     let c2;
@@ -578,204 +579,155 @@ export default function useOAuth2AuthorizeForm(clientId) {
     let obj9;
     let tmp107;
     let tmp99;
-    if (nonce === 2) {
-      nonce = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    if (1 === state) {
       if (arg0 === 1) {
+        nonce = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        nonce = 3;
+        const obj6 = { value, done: true };
+        return obj6;
+      } else if (null != callbackWithoutPost) {
+        closure_1_24(true);
+        callbackWithoutPost(authorize);
+        if (dismissOAuthModal != null) {
+          dismissOAuthModal();
+        }
+        nonce = 3;
+        const obj7 = { value: undefined, done: true };
+        return obj7;
+      } else if (null != integrationType) {
+        codeChallengeMethod = 2;
+        closure_1_24(true);
+        const obj8 = { authorize, clientId, scopes, responseType, redirectUri: tmp, codeChallenge, codeChallengeMethod, state, nonce, permissions: obj9.remove(memo4, first6), guildId: tmp99, channelId: tmp107, integrationType, connectedAccountProvider };
+        authorize = clientId(codeChallenge[27]).authorize;
+        const tmp82 = clientId(codeChallenge[27]);
+        obj9 = redirectUri(codeChallenge[21]);
+        tmp99 = undefined;
+        if (integrationType === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
+          if (null != first4) {
+            tmp99 = first4;
+          }
+        }
+        tmp107 = undefined;
+        if (integrationType === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
+          if (null != first5) {
+            tmp107 = first5;
+          }
+        }
+        state = 4;
+        nonce = 1;
+        const obj10 = { value: authorize(obj8), done: false };
+        return obj10;
       } else {
-        return { value: "HermesInternal", done: null };
+        const _Error2 = Error;
+        const self5 = this;
+        const self6 = this;
+        const error = new Error("No integration type was selected.");
+        closure_1_23(error);
       }
+    } else if (2 === state) {
+      codeChallengeMethod = 0;
+      closure_1_24(false);
+      throw codeChallenge;
     } else {
-      try {
-        let authorize;
-        let tmp;
-        let body;
-        nonce = 2;
-        if (0 === state) {
+      if (3 === state) {
+        codeChallengeMethod = 1;
+        const body = codeChallenge.body;
+        let message;
+        if (body != null) {
+          message = body.message;
+        }
+        if (null != message) {
+          if ("" !== body.message) {
+            const _Error = Error;
+            const self3 = this;
+            const self4 = this;
+            const error1 = new Error(body.message);
+            closure_1_23(error1);
+            closure_1_21(constants.AUTHORIZE_SCOPES);
+          }
+        }
+        closure_1_23(body);
+        closure_1_21(constants.AUTHORIZE_SCOPES);
+      } else {
+        if (4 === state) {
           if (arg0 === 1) {
             nonce = 3;
             throw value;
           } else if (arg0 === 2) {
+            codeChallengeMethod = 0;
+            closure_1_24(false);
             nonce = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj11 = { value, done: true };
+            return obj11;
           } else {
-            authorize = undefined;
-            responseType = undefined;
-            tmp = undefined;
-            ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = clientId);
-            codeChallenge = undefined;
-            body = undefined;
-            state = 1;
-            nonce = 1;
-            return { value: "flexDirection", done: null };
+            codeChallenge = value;
+            const tmp138 = authorize;
+            if (tmp138) {
+              const obj4 = responseType(codeChallenge[29]);
+              const response = obj4.fetch();
+              state = 5;
+              nonce = 1;
+              const obj12 = { value: obj5.ackDisclosures(clientId, first12), done: false };
+              obj5 = clientId(codeChallenge[25]);
+              return obj12;
+            }
           }
         } else {
-          if (1 === state) {
+          if (5 === state) {
             if (arg0 === 1) {
               nonce = 3;
               throw value;
             } else if (arg0 === 2) {
+              codeChallengeMethod = 0;
+              closure_1_24(false);
               nonce = 3;
-              const obj6 = { value, done: true };
-              return obj6;
-            } else if (null != callbackWithoutPost) {
-              closure_1_24(true);
-              callbackWithoutPost(authorize);
-              if (dismissOAuthModal != null) {
-                dismissOAuthModal();
-              }
-              nonce = 3;
-              const obj7 = { value: undefined, done: true };
-              return obj7;
-            } else if (null != integrationType) {
-              codeChallengeMethod = 2;
-              closure_1_24(true);
-              const obj8 = { authorize, clientId, scopes, responseType, redirectUri: tmp, codeChallenge, codeChallengeMethod, state, nonce, permissions: obj9.remove(memo4, first6), guildId: tmp99, channelId: tmp107, integrationType, connectedAccountProvider };
-              authorize = clientId(codeChallenge[27]).authorize;
-              const tmp82 = clientId(codeChallenge[27]);
-              obj9 = redirectUri(codeChallenge[21]);
-              tmp99 = undefined;
-              if (integrationType === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
-                if (null != first4) {
-                  tmp99 = first4;
-                }
-              }
-              tmp107 = undefined;
-              if (integrationType === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
-                if (null != first5) {
-                  tmp107 = first5;
-                }
-              }
-              state = 4;
-              nonce = 1;
-              const obj10 = { value: authorize(obj8), done: false };
-              return obj10;
-            } else {
-              const _Error2 = Error;
-              const self5 = this;
-              const self6 = this;
-              const error = new Error("No integration type was selected.");
-              closure_1_23(error);
+              const obj13 = { value, done: true };
+              return obj13;
             }
-          } else if (2 === state) {
+          } else if (arg0 === 1) {
+            nonce = 3;
+            throw value;
+          } else if (arg0 === 2) {
             codeChallengeMethod = 0;
             closure_1_24(false);
-            throw codeChallenge;
-          } else {
-            if (3 === state) {
-              codeChallengeMethod = 1;
-              body = codeChallenge.body;
-              let message;
-              if (body != null) {
-                message = body.message;
-              }
-              if (null != message) {
-                if ("" !== body.message) {
-                  const _Error = Error;
-                  const self3 = this;
-                  const self4 = this;
-                  const error1 = new Error(body.message);
-                  closure_1_23(error1);
-                  closure_1_21(constants.AUTHORIZE_SCOPES);
-                }
-              }
-              closure_1_23(body);
-              closure_1_21(constants.AUTHORIZE_SCOPES);
-            } else {
-              if (4 === state) {
-                if (arg0 === 1) {
-                  nonce = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  codeChallengeMethod = 0;
-                  closure_1_24(false);
-                  nonce = 3;
-                  const obj11 = { value, done: true };
-                  return obj11;
-                } else {
-                  codeChallenge = value;
-                  const tmp138 = authorize;
-                  if (tmp138) {
-                    const obj4 = responseType(codeChallenge[29]);
-                    const response = obj4.fetch();
-                    state = 5;
-                    nonce = 1;
-                    const obj12 = { value: obj5.ackDisclosures(clientId, first12), done: false };
-                    obj5 = clientId(codeChallenge[25]);
-                    return obj12;
-                  }
-                }
-              } else {
-                if (5 === state) {
-                  if (arg0 === 1) {
-                    nonce = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    codeChallengeMethod = 0;
-                    closure_1_24(false);
-                    nonce = 3;
-                    const obj13 = { value, done: true };
-                    return obj13;
-                  }
-                } else if (arg0 === 1) {
-                  nonce = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  codeChallengeMethod = 0;
-                  closure_1_24(false);
-                  nonce = 3;
-                  const obj = { value, done: true };
-                  return obj;
-                } else if (callback != null) {
-                  const obj14 = { canceled: tmp, application, guild, wasDeepLink };
-                  const merged = Object.assign(codeChallenge);
-                  application = undefined;
-                  if (application != null) {
-                    application = application.application;
-                  }
-                  tmp6(obj14);
-                }
-                codeChallengeMethod = 1;
-              }
-              if (null != responseType) {
-                responseType(codeChallenge.location);
-              } else {
-                if (dismissOAuthModal != null) {
-                  dismissOAuthModal();
-                }
-                const self = this;
-                const self2 = this;
-                const promise = new Promise((arg0) => setTimeout(arg0, 100));
-                state = 6;
-                nonce = 1;
-                const obj15 = { value: promise, done: false };
-                return obj15;
-              }
+            nonce = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else if (callback != null) {
+            const obj14 = { canceled: tmp, application, guild, wasDeepLink };
+            const merged = Object.assign(codeChallenge);
+            application = undefined;
+            if (application != null) {
+              application = application.application;
             }
-            codeChallengeMethod = 0;
-            closure_1_24(false);
+            tmp6(obj14);
           }
-          nonce = 3;
-          return { value: "HermesInternal", done: null };
+          codeChallengeMethod = 1;
         }
-      } catch (tmp123) {
-        codeChallenge = tmp123;
-        if (0 === codeChallengeMethod) {
-          nonce = 3;
-          throw tmp123;
-        } else if (1 === tmp125) {
-          state = 2;
+        if (null != responseType) {
+          responseType(codeChallenge.location);
         } else {
-          state = 3;
+          if (dismissOAuthModal != null) {
+            dismissOAuthModal();
+          }
+          const self = this;
+          const self2 = this;
+          const promise = new Promise((arg0) => setTimeout(arg0, 100));
+          state = 6;
+          nonce = 1;
+          const obj15 = { value: promise, done: false };
+          return obj15;
         }
       }
+      codeChallengeMethod = 0;
+      closure_1_24(false);
     }
+    yield "HermesInternal";
+    responseType = tmp4;
+    ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = clientId);
+    return "flexDirection";
   });
   const items15 = [first7, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp59, nonce, memo4, first6, first4, first5, first12, dismissOAuthModal, callback, flag5, , , ];
   let application;
@@ -1081,7 +1033,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(9842);
+            const tmp27Result = tmp27(9875);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;

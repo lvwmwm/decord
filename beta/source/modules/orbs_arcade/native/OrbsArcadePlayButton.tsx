@@ -1,21 +1,21 @@
-// Module ID: 17360
-// Function ID: 17361
+// Module ID: 17397
+// Function ID: 17398
 // Name: OrbsArcadePlayButton
-// Dependencies: [19, 17, 9770, 17341, 21, 5140, 1113, 9616, 575, 5751, 5764, 7387, 17361, 504, 17362, 17351, 5374, 17363, 17348, 5758, 17364, 5759, 2]
+// Dependencies: [19, 17, 9803, 17378, 21, 5170, 1113, 9649, 575, 5783, 5796, 7420, 17398, 504, 17399, 17388, 5406, 17400, 17385, 5790, 17401, 5791, 2]
 // Exports: default
 
-// Module 17360 (OrbsArcadePlayButton)
+// Module 17397 (OrbsArcadePlayButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ButtonConstants from "ButtonConstants" /* 5764 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17351 */;
-import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 17363 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ButtonConstants from "ButtonConstants" /* 5796 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17388 */;
+import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 17400 */;
 import react from "react" /* 19 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9770 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17341 */;
-import createStyles from "createStyles" /* 5140 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9803 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17378 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 function OrbsArcadePaidPlayLabel(size) {
@@ -105,13 +105,13 @@ export default function OrbsArcadePlayButton(game) {
       const formatToPlainString2 = intl3.formatToPlainString;
       const obj4 = { count: tmp5Result3.getOrbsArcadeClaimableRewards(game.rewards, stateFromStores).length };
       const v18ToNc = tmp5(tmp3[6]).t["18ToNc"];
-      tmp19Result1 = <Button2 grow size={DEFAULT_BUTTON_SIZE} variant="primary" text={formatToPlainString2(v18ToNc, obj4)} disabled onPress="Array" />;
+      tmp19Result1 = <Button2 grow size={DEFAULT_BUTTON_SIZE} variant="primary" text={formatToPlainString2(v18ToNc, obj4)} disabled onPress="a" />;
       tmp5Result3 = game(surface[18]);
     }
     return tmp19Result1;
   }
   if (null != tmp7) {
-    const obj5 = { grow: true, size: DEFAULT_BUTTON_SIZE, variant: "primary", text: formatToPlainStringResult, disabled: true, onPress: "Array" };
+    const obj5 = { grow: true, size: DEFAULT_BUTTON_SIZE, variant: "primary", text: formatToPlainStringResult, disabled: true, onPress: "a" };
     const Button = tmp5(tmp3[19]).Button;
     const tmp14 = jsx;
     if (null != tmp7.timeUntilNextRound) {

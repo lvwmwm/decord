@@ -1,10 +1,10 @@
-// Module ID: 8839
-// Function ID: 8840
+// Module ID: 8872
+// Function ID: 8873
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1385, 1072, 572, 1282, 6594, 6599, 1242, 559, 1089, 2]
+// Dependencies: [5, 1385, 1072, 572, 1282, 6626, 6631, 1242, 559, 1089, 2]
 // Exports: ackBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8839 (BadgeDirectoryActionCreators)
+// Module 8872 (BadgeDirectoryActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -30,166 +30,115 @@ function urlUserId(arg0) {
 }
 let obj = function _fetchBadgeDirectory() {
   obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_3;
+    let closure_4;
+    let closure_5;
     let items;
+    let obj5;
+    let requestedAt;
+    let userId;
     let closure_0 = arg0;
     let closure_1 = value;
-    if (c8 === 2) {
-      c8 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    if (1 === c7) {
       if (arg0 === 1) {
+        let c8 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        c8 = 3;
+        const obj7 = { value, done: true };
+        return obj7;
       } else {
-        return { value: "HermesInternal", done: null };
+        let id = closure_0;
+        if (closure_0 == null) {
+          const currentUser = closure_132_4.getCurrentUser();
+          id = undefined;
+          if (currentUser != null) {
+            id = currentUser.id;
+          }
+        }
+        userId = id;
+        if (null != userId) {
+          const currentUser1 = closure_132_4.getCurrentUser();
+          let id1;
+          if (currentUser1 != null) {
+            id1 = currentUser1.id;
+          }
+          let str2 = "other";
+          if (null != id1) {
+            str2 = "other";
+            if (userId === id1) {
+              str2 = "self";
+            }
+          }
+          closure_4 = "viewed_user:" + str2;
+          let str3 = "initial";
+          if (true === obj5.isRetry) {
+            str3 = "retry";
+          }
+          closure_5 = "attempt:" + str3;
+          const _Date3 = Date;
+          requestedAt = Date.now();
+          const obj10 = { type: "BADGE_DIRECTORY_FETCH_START", userId };
+          const obj9 = closure_132_1(closure_132_2[3]);
+          obj9.dispatch(obj10);
+          let c6 = 1;
+          const HTTP = closure_132_0(closure_132_2[4]).HTTP;
+          const obj11 = { url: closure_132_5.USER_BADGES(closure_132_9(userId)), rejectWithError: true };
+          const get = HTTP.get;
+          c7 = 3;
+          c8 = 1;
+          const obj12 = { value: get(obj11), done: false };
+          return obj12;
+        }
       }
+    } else if (2 === c7) {
+      c6 = 0;
+      let closure_9 = closure_5;
+      const obj13 = { name: closure_132_0(closure_132_2[6]).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH, tags: items };
+      const distribution2 = closure_132_1(closure_132_2[5]).distribution;
+      const tmp28 = closure_132_1(closure_132_2[5]);
+      items = [closure_4, "result:failure", "catalog_state:unknown", closure_5];
+      const _Date2 = Date;
+      distribution2(obj13, Date.now() - requestedAt);
+      const obj14 = { type: "BADGE_DIRECTORY_FETCH_FAILURE", userId };
+      const obj6 = closure_132_1(closure_132_2[3]);
+      obj6.dispatch(obj14);
+      const obj8 = closure_132_1(closure_132_2[7]);
+      obj8.captureException(closure_9);
+    } else if (arg0 === 1) {
+      c8 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c6 = 0;
+      c8 = 3;
+      const obj15 = { value, done: true };
+      return obj15;
     } else {
-      let c6;
-      let closure_5;
-      try {
-        let closure_4;
-        let obj5;
-        let userId;
-        let id1;
-        let requestedAt;
-        let body;
-        let items1;
-        c8 = 2;
-        if (0 === c7) {
-          if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c8 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_4 = tmp;
-            let closure_3 = tmp4;
-            obj5 = closure_1;
-            if (closure_1 === undefined) {
-              obj5 = {};
-            }
-            userId = undefined;
-            id1 = undefined;
-            closure_4 = undefined;
-            closure_5 = undefined;
-            requestedAt = undefined;
-            body = undefined;
-            items1 = undefined;
-            c7 = 1;
-            c8 = 1;
-            return { value: "flexDirection", done: null };
-          }
-        } else {
-          if (1 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
-            } else {
-              let id = closure_0;
-              if (closure_0 == null) {
-                const currentUser = closure_132_4.getCurrentUser();
-                id = undefined;
-                if (currentUser != null) {
-                  id = currentUser.id;
-                }
-              }
-              userId = id;
-              if (null != userId) {
-                const currentUser1 = closure_132_4.getCurrentUser();
-                id1 = undefined;
-                if (currentUser1 != null) {
-                  id1 = currentUser1.id;
-                }
-                let str2 = "other";
-                if (null != id1) {
-                  str2 = "other";
-                  if (userId === id1) {
-                    str2 = "self";
-                  }
-                }
-                closure_4 = "viewed_user:" + str2;
-                let str3 = "initial";
-                if (true === obj5.isRetry) {
-                  str3 = "retry";
-                }
-                closure_5 = "attempt:" + str3;
-                const _Date3 = Date;
-                requestedAt = Date.now();
-                const obj10 = { type: "BADGE_DIRECTORY_FETCH_START", userId };
-                const obj9 = closure_132_1(closure_132_2[3]);
-                obj9.dispatch(obj10);
-                c6 = 1;
-                const HTTP = closure_132_0(closure_132_2[4]).HTTP;
-                const obj11 = { url: closure_132_5.USER_BADGES(closure_132_9(userId)), rejectWithError: true };
-                const get = HTTP.get;
-                c7 = 3;
-                c8 = 1;
-                const obj12 = { value: get(obj11), done: false };
-                return obj12;
-              }
-            }
-          } else if (2 === c7) {
-            c6 = 0;
-            let closure_9 = closure_5;
-            const obj13 = { name: closure_132_0(closure_132_2[6]).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH, tags: items };
-            const distribution2 = closure_132_1(closure_132_2[5]).distribution;
-            const tmp28 = closure_132_1(closure_132_2[5]);
-            items = [closure_4, "result:failure", "catalog_state:unknown", closure_5];
-            const _Date2 = Date;
-            distribution2(obj13, Date.now() - requestedAt);
-            const obj14 = { type: "BADGE_DIRECTORY_FETCH_FAILURE", userId };
-            const obj6 = closure_132_1(closure_132_2[3]);
-            obj6.dispatch(obj14);
-            const obj8 = closure_132_1(closure_132_2[7]);
-            obj8.captureException(closure_9);
-          } else if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 0;
-            c8 = 3;
-            const obj15 = { value, done: true };
-            return obj15;
-          } else {
-            body = value.body;
-            items1 = [closure_4, "result:success", , ];
-            let str = "non_empty";
-            if (0 === body.badges.length) {
-              str = "empty";
-            }
-            items1[2] = "catalog_state:" + str;
-            items1[3] = closure_5;
-            obj = { name: closure_132_0(closure_132_2[6]).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH, tags: items1 };
-            const distribution = closure_132_1(closure_132_2[5]).distribution;
-            const tmp10 = closure_132_1(closure_132_2[5]);
-            const _Date = Date;
-            distribution(obj, Date.now() - requestedAt);
-            const obj16 = { type: "BADGE_DIRECTORY_FETCH_SUCCESS", userId, badges: body.badges, requestedAt };
-            const obj2 = closure_132_1(closure_132_2[3]);
-            obj2.dispatch(obj16);
-            c6 = 0;
-          }
-          c8 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp75) {
-        closure_5 = tmp75;
-        if (0 === c6) {
-          c8 = 3;
-          throw tmp75;
-        } else {
-          c7 = 2;
-        }
+      const body = value.body;
+      const items1 = [closure_4, "result:success", , ];
+      let str = "non_empty";
+      if (0 === body.badges.length) {
+        str = "empty";
       }
+      items1[2] = "catalog_state:" + str;
+      items1[3] = closure_5;
+      obj = { name: closure_132_0(closure_132_2[6]).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH, tags: items1 };
+      const distribution = closure_132_1(closure_132_2[5]).distribution;
+      const tmp10 = closure_132_1(closure_132_2[5]);
+      const _Date = Date;
+      distribution(obj, Date.now() - requestedAt);
+      const obj16 = { type: "BADGE_DIRECTORY_FETCH_SUCCESS", userId, badges: body.badges, requestedAt };
+      const obj2 = closure_132_1(closure_132_2[3]);
+      obj2.dispatch(obj16);
+      c6 = 0;
     }
+    await "HermesInternal";
+    closure_4 = tmp;
+    obj5 = closure_1;
+    if (closure_1 === undefined) {
+      obj5 = {};
+    }
+    return "flexDirection";
   });
   return obj(...arguments);
 };

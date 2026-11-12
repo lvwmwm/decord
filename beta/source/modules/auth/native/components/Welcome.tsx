@@ -1,38 +1,38 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 18363
+// Function ID: 18364
 // Name: Welcome
-// Dependencies: [19, 17, 18326, 5354, 7713, 1404, 5874, 9203, 1072, 7573, 7956, 21, 5140, 575, 14472, 1113, 38, 1187, 5194, 5751, 5842, 15400, 7183, 15995, 1499, 1627, 504, 18327, 5721, 7730, 1252, 510, 6795, 5739, 18328, 18322, 1500, 6822, 5758, 5199, 5714, 13568, 2]
+// Dependencies: [19, 17, 18364, 5386, 7746, 1404, 5906, 9236, 1072, 7606, 7989, 21, 5170, 575, 14504, 1113, 38, 1187, 5226, 5783, 5874, 15432, 7216, 16027, 1499, 1627, 504, 18365, 5753, 7763, 1252, 510, 6827, 5771, 18366, 18360, 1500, 6855, 5790, 5231, 5746, 13600, 2]
 // Exports: default
 
-// Module 18325 (Welcome)
+// Module 18363 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import Link from "Link" /* 1500 */;
-import UserUtilsDefault from "UserUtils" /* 5194 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7183 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7573 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7730 */;
-import Constants2 from "Constants" /* 7956 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 14472 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15400 */;
-import AssetRegistry from "AssetRegistry" /* 15995 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18322 */;
+import UserUtilsDefault from "UserUtils" /* 5226 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7216 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7606 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7763 */;
+import Constants2 from "Constants" /* 7989 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 14504 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15432 */;
+import AssetRegistry from "AssetRegistry" /* 16027 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18360 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 18326 */;
-import ExperimentStore from "ExperimentStore" /* 5354 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7713 */;
+import AgeGateStore from "AgeGateStore" /* 18364 */;
+import ExperimentStore from "ExperimentStore" /* 5386 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7746 */;
 import UserRecord from "UserRecord" /* 1404 */;
-import InviteStore from "InviteStore" /* 5874 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9203 */;
+import InviteStore from "InviteStore" /* 5906 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9236 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ function InviteCard(invite) {
       _modDef38(null != inviter, "Null inviter");
       const self = this;
       const self2 = this;
-      const obj = { user: tmp10, guildId: "Array" };
+      const obj = { user: tmp10, guildId: "r" };
       const Avatar = native.Avatar;
       tmp10 = new UserRecord(inviter);
       tmp12 = closure_19(Avatar, obj);
@@ -97,7 +97,7 @@ function InviteCard(invite) {
     } else {
       const self3 = this;
       const self4 = this;
-      const obj4 = { user: tmp29, guildId: "Array" };
+      const obj4 = { user: tmp29, guildId: "r" };
       const Avatar2 = native.Avatar;
       tmp29 = new UserRecord(inviter);
       const tmp31 = closure_19(Avatar2, obj4);
@@ -114,9 +114,9 @@ function InviteCard(invite) {
     items1 = [tmp12, ];
     const obj6 = { style: tmp.text, children: items2 };
     const obj7 = { variant: "body-sm/medium", color: "text-subtle", children: stringResult };
-    items2 = [tmp16(tmp15(5751).Text, obj7), ];
+    items2 = [tmp16(tmp15(5783).Text, obj7), ];
     const obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: name };
-    items2[1] = tmp16(tmp15(5751).Text, obj8);
+    items2[1] = tmp16(tmp15(5783).Text, obj8);
     items1[1] = closure_20(React3, obj6);
     return closure_20(React3, obj5);
   }
@@ -171,7 +171,7 @@ function Centerpiece(inlineButtons) {
   items[0] = closure_19(FastImageDefault, obj3);
   const obj4 = { style: tmp4.header, lineClamp: num, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: intl.string(intl4.t["3S2xmm"]) };
   num = 2;
-  const Heading = tmp5(5751).Heading;
+  const Heading = tmp5(5783).Heading;
   tmp13 = hasOwnProperty;
   if (tmp3) {
     num = 1;
@@ -179,7 +179,7 @@ function Centerpiece(inlineButtons) {
   intl = tmp5(1113).intl;
   const items1 = [closure_19(Heading, obj4), , , ];
   const items2 = [tmp4.subHeader, ];
-  const Text = tmp5(5751).Text;
+  const Text = tmp5(5783).Text;
   if (null != invite) {
     subHeaderWithInvite = tmp4.subHeaderWithInvite;
   } else {

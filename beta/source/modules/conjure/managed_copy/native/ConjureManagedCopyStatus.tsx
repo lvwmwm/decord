@@ -1,14 +1,14 @@
-// Module ID: 12300
-// Function ID: 12301
+// Module ID: 12332
+// Function ID: 12333
 // Name: ConjureManagedCopyStatus
-// Dependencies: [19, 21, 12290, 6159, 575, 5751, 1113, 4026, 12301, 2]
+// Dependencies: [19, 21, 12322, 6191, 575, 5783, 1113, 4026, 12333, 2]
 // Exports: default
 
-// Module 12300 (ConjureManagedCopyStatus)
+// Module 12332 (ConjureManagedCopyStatus)
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import useConjureManagedCopy from "useConjureManagedCopy" /* 12290 */;
-import conjureManagedCopyStatusText from "conjureManagedCopyStatusText" /* 12301 */;
+import useConjureManagedCopy from "useConjureManagedCopy" /* 12322 */;
+import conjureManagedCopyStatusText from "conjureManagedCopyStatusText" /* 12333 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -35,16 +35,16 @@ export default function ConjureManagedCopyStatus(projectId) {
     let str;
     const updatesPaused = tmp3.updatesPaused;
     const obj2 = { spacing: nativeDefault.space.PX_4, children: items };
-    const Stack = tmp4(6159).Stack;
+    const Stack = tmp4(6191).Stack;
     const obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef4026["+QBNDE"]) };
-    const Text = tmp4(5751).Text;
+    const Text = tmp4(5783).Text;
     intl = tmp4(1113).intl;
     items = [_false(Text, obj3), , ];
     const obj4 = { variant: "body-sm/normal", color: "text-subtle", children: tmp4Result.conjureCopySourceLine(tmp3, updatesPaused) };
-    const Text2 = tmp4(5751).Text;
+    const Text2 = tmp4(5783).Text;
     tmp4Result = conjureManagedCopyStatusText;
     items[1] = _false(Text2, obj4);
-    const Text3 = tmp4(5751).Text;
+    const Text3 = tmp4(5783).Text;
     const tmp7 = React3;
     const tmp8 = _false;
     if (updatesPaused) {

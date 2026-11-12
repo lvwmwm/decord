@@ -1,23 +1,23 @@
-// Module ID: 13476
-// Function ID: 13477
+// Module ID: 13508
+// Function ID: 13509
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 4989, 1072, 5145, 21, 5140, 575, 7712, 7900, 1252, 7412, 5735, 504, 7316, 1113, 13477, 10361, 5758, 6799, 5739, 7064, 7231, 2]
+// Dependencies: [32, 5, 19, 17, 5019, 1072, 5175, 21, 5170, 575, 7745, 7933, 1252, 7445, 5767, 504, 7349, 1113, 13509, 10393, 5790, 6831, 5771, 7097, 7264, 2]
 // Exports: default
 
-// Module 13476 (GiftIntentGifModal)
+// Module 13508 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import MessageConstants from "MessageConstants" /* 5145 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import MessageConstants from "MessageConstants" /* 5175 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ let obj = function _sendGiftIntentGif() {
               is_custom_message = undefined;
               url = 1;
               c4 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else {
             if (1 === url) {
@@ -264,7 +264,7 @@ const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIn
 
 export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f105834 = () => {
+  const f105944 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -293,7 +293,7 @@ export default function GiftIntentGifModal(arg0) {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f105834) };
-  require("react")(f105834);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f105944) };
+  require("react")(f105944);
   return closure_10(require("Navigator").Navigator, obj);
 };

@@ -1,15 +1,15 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 14921
+// Function ID: 14922
 // Name: CrunchyrollLinkDiscordConsent
-// Dependencies: [19, 14884, 1072, 8983, 21, 1499, 9829, 2]
+// Dependencies: [19, 14916, 1072, 9016, 21, 1499, 9862, 2]
 // Exports: default
 
-// Module 14889 (CrunchyrollLinkDiscordConsent)
+// Module 14921 (CrunchyrollLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14884 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14916 */;
 import react from "react" /* 19 */;
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8983 */;
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 9016 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -37,5 +37,5 @@ export default function CrunchyrollLinkDiscordConsent(arg0) {
   const callback1 = react.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  return jsx(navigation(9829).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: callback, onError: callback1 });
+  return jsx(navigation(9862).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: callback, onError: callback1 });
 };

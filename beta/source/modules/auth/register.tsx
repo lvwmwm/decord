@@ -1,21 +1,21 @@
-// Module ID: 18335
-// Function ID: 18336
+// Module ID: 18373
+// Function ID: 18374
 // Name: register
-// Dependencies: [5, 18336, 502, 1072, 1097, 2166, 1252, 6802, 1260, 6580, 6592, 572, 18337, 18338, 18339, 2]
+// Dependencies: [5, 18374, 502, 1072, 1097, 2166, 1252, 6834, 1260, 6612, 6624, 572, 18375, 18376, 18377, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 18335 (register)
+// Module 18373 (register)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import APIErrorDefault from "APIError" /* 6580 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6592 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18337 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 18339 */;
+import APIErrorDefault from "APIError" /* 6612 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6624 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6834 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18375 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 18377 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 18336 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 18374 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
@@ -142,7 +142,7 @@ obj = function _registerPhone() {
               phone = phone.phone;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(18338)(birthday);
+    tmp9 = tmp4(18376)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

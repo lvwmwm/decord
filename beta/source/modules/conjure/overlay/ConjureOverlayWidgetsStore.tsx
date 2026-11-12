@@ -1,22 +1,22 @@
-// Module ID: 15878
-// Function ID: 15879
+// Module ID: 15910
+// Function ID: 15911
 // Name: ConjureOverlayWidgetsStore
-// Dependencies: [15879, 6899, 1072, 15882, 15885, 504, 572, 2]
+// Dependencies: [15911, 6932, 1072, 15914, 15917, 504, 572, 2]
 
-// Module 15878 (ConjureOverlayWidgetsStore)
+// Module 15910 (ConjureOverlayWidgetsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import OverlayLayoutConstants from "OverlayLayoutConstants" /* 15882 */;
-import conjureOverlayApps from "conjureOverlayApps" /* 15885 */;
-import LayoutStore from "LayoutStore" /* 15879 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import OverlayLayoutConstants from "OverlayLayoutConstants" /* 15914 */;
+import conjureOverlayApps from "conjureOverlayApps" /* 15917 */;
+import LayoutStore from "LayoutStore" /* 15911 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import size from "module_2" /* 2 */;
 
 let closure_7, dependencyMap, set, widgetsByTypeAndLayout;
 
 function syncProjects() {
-  const f110639 = (item, index) => item === closure_0[index];
+  const f110750 = (item, index) => item === closure_0[index];
   function getLayoutApplicationIds() {
     set = new Set();
     widgetsByTypeAndLayout = widgetsByTypeAndLayout.getWidgetsByTypeAndLayout(constants.CONJURE, OVERLAY_V3_LAYOUT_ID);
@@ -30,9 +30,9 @@ function syncProjects() {
     return set;
   }
   const ownedProjects = ConjureProjectStore.getOwnedProjects();
-  found = ownedProjects.filter(set(15885).isConjureOverlayApp);
+  found = ownedProjects.filter(set(15917).isConjureOverlayApp);
   let closure_0 = found;
-  const tmp = found.length === found.length && found.every(f110639);
+  const tmp = found.length === found.length && found.every(f110750);
   if (!tmp) {
     if (0 === found.length) {
       found = items;
@@ -49,7 +49,7 @@ function syncProjects() {
     })
   ];
   closure_0 = items;
-  let tmp3 = items.length === items.length && items.every(f110639);
+  let tmp3 = items.length === items.length && items.every(f110750);
 }
 function handleLayoutChange() {
   syncProjects();

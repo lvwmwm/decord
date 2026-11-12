@@ -1,13 +1,13 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12363
+// Function ID: 12364
 // Name: ConjurePublishScheduleSection
-// Dependencies: [19, 21, 12332, 6159, 575, 5751, 1113, 4026, 12333, 5758, 6096, 2]
+// Dependencies: [19, 21, 12364, 6191, 575, 5783, 1113, 4026, 12365, 5790, 6128, 2]
 // Exports: default
 
-// Module 12331 (ConjurePublishScheduleSection)
+// Module 12363 (ConjurePublishScheduleSection)
 import intl6 from "intl" /* 1113 */;
-import AlertModal from "AlertModal" /* 6096 */;
-import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 12332 */;
+import AlertModal from "AlertModal" /* 6128 */;
+import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 12364 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -51,15 +51,15 @@ export default function ConjurePublishScheduleSection(projectId) {
       }
     }
     let obj = { spacing: nativeDefault.space.PX_16, children: items };
-    const Stack = projectId(6159).Stack;
+    const Stack = projectId(6191).Stack;
     const obj2 = { variant: "heading-sm/semibold", children: intl.string(_modDef4026.ptzKKH) };
-    const Heading = projectId(5751).Heading;
+    const Heading = projectId(5783).Heading;
     intl = projectId(1113).intl;
     items = [closure_3(Heading, obj2), , , , , ];
     let tmp8Result = null;
     if (tmp3.loading) {
       const obj3 = { variant: "body-sm/normal", accessibilityLiveRegion: "polite", children: intl2.string(_modDef4026["71yzD9"]) };
-      const Text = tmp7(5751).Text;
+      const Text = tmp7(5783).Text;
       intl2 = tmp7(1113).intl;
       tmp8Result = tmp8(Text, obj3);
     }
@@ -70,12 +70,12 @@ export default function ConjurePublishScheduleSection(projectId) {
       if (null != tmp3.saved) {
         const obj4 = { children: items1 };
         const obj5 = { variant: "body-sm/normal", color: "text-subtle", children: intl3.string(_modDef4026.ubcNP7) };
-        const Text2 = tmp7(5751).Text;
+        const Text2 = tmp7(5783).Text;
         intl3 = tmp7(1113).intl;
         items1 = [closure_3(Text2, obj5), ];
         const obj6 = { spacing: nativeDefault.space.PX_8, children: items2 };
-        const Stack2 = tmp7(6159).Stack;
-        const tmp7Result = projectId(12333);
+        const Stack2 = tmp7(6191).Stack;
+        const tmp7Result = projectId(12365);
         const result = tmp7Result.publishScheduleDetails(tmp3.saved);
         items2 = [
           result.map((children, index) => {
@@ -101,7 +101,7 @@ export default function ConjurePublishScheduleSection(projectId) {
                   showConfirmModal(obj);
                 }
         };
-        const Button = tmp7(5758).Button;
+        const Button = tmp7(5790).Button;
         intl4 = tmp7(1113).intl;
         items2[1] = closure_3(Button, obj7);
         items1[1] = closure_4(Stack2, obj6);
@@ -112,13 +112,13 @@ export default function ConjurePublishScheduleSection(projectId) {
     let tmp8Result4 = null;
     if (null != tmp3.error) {
       const obj8 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: tmp3.error };
-      tmp8Result4 = tmp8(tmp7(5751).Text, obj8);
+      tmp8Result4 = tmp8(tmp7(5783).Text, obj8);
     }
     items[3] = tmp8Result4;
     let tmp8Result5 = null;
     if (null != tmp3.status) {
       const obj9 = { variant: "body-sm/normal", accessibilityLiveRegion: "polite", children: tmp3.status };
-      tmp8Result5 = tmp8(tmp7(5751).Text, obj9);
+      tmp8Result5 = tmp8(tmp7(5783).Text, obj9);
     }
     items[4] = tmp8Result5;
     let tmp8Result6 = null;
@@ -126,7 +126,7 @@ export default function ConjurePublishScheduleSection(projectId) {
       tmp8Result6 = null;
       if (null != tmp3.error) {
         const obj10 = { variant: "secondary", text: intl5.string(_modDef4026.iLTcFU), onPress: tmp3.retry };
-        const Button2 = tmp7(5758).Button;
+        const Button2 = tmp7(5790).Button;
         intl5 = tmp7(1113).intl;
         tmp8Result6 = tmp8(Button2, obj10);
       }

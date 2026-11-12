@@ -1,10 +1,9 @@
 // Module ID: 8961
 // Function ID: 8962
-// Dependencies: [5179]
+// Dependencies: [8962]
 
 // Module 8961
-import module_5179 from "module_5179" /* 5179 */;
+import _mod8962 from "module_8962" /* 8962 */;
 
-const rect = { top: module_5179.number, left: module_5179.number, bottom: module_5179.number, right: module_5179.number };
 
-export default module_5179.shape(rect);
+export default _mod8962.default;

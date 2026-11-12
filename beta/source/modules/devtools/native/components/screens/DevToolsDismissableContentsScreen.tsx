@@ -1,32 +1,32 @@
-// Module ID: 17939
-// Function ID: 17940
+// Module ID: 17977
+// Function ID: 17978
 // Name: DevToolsDismissableContentsScreen
-// Dependencies: [32, 19, 17, 4976, 21, 5140, 575, 4973, 17940, 7429, 7126, 5814, 7038, 4970, 5862, 7047, 17941, 7282, 5751, 10156, 6954, 1627, 12069, 504, 7357, 2]
+// Dependencies: [32, 19, 17, 5006, 21, 5170, 575, 5003, 17978, 7462, 7159, 5846, 7071, 5000, 5894, 7080, 17979, 7315, 5783, 10188, 6987, 1627, 12101, 504, 7390, 2]
 // Exports: default
 
-// Module 17939 (DevToolsDismissableContentsScreen)
+// Module 17977 (DevToolsDismissableContentsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4970 */;
-import dismissible_content from "dismissible_content" /* 4973 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5814 */;
-import TrashIcon from "TrashIcon" /* 5862 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6954 */;
-import TableRow4 from "TableRow" /* 7038 */;
-import TableRowArrow from "TableRowArrow" /* 7047 */;
-import TableRowGroup3 from "TableRowGroup" /* 7126 */;
-import SearchBar from "SearchBar" /* 7282 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7429 */;
-import SearchEmpty from "SearchEmpty" /* 10156 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17940 */;
-import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 17941 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5846 */;
+import TrashIcon from "TrashIcon" /* 5894 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6987 */;
+import TableRow4 from "TableRow" /* 7071 */;
+import TableRowArrow from "TableRowArrow" /* 7080 */;
+import TableRowGroup3 from "TableRowGroup" /* 7159 */;
+import SearchBar from "SearchBar" /* 7315 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7462 */;
+import SearchEmpty from "SearchEmpty" /* 10188 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17978 */;
+import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 17979 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4976 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 5006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -130,12 +130,12 @@ export default function DevToolsDismissableContentsScreen() {
   let items4;
   let obj4;
   let tmp5;
-  const f114391 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
+  const f114509 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
   let tmp = callback1();
   let tmp2 = useSafeAreaInsetsDefault();
   const ref = initialSearchQuery.useRef(null);
   importDefault = initialSearchQuery.useRef(0);
-  let obj = ref(12069);
+  let obj = ref(12101);
   let tmp4 = _slicedToArray(obj.useLocalStorageState("devtools-dc-search", ""), 2);
   [dependencyMap, tmp5] = tmp4;
   _slicedToArray = tmp5;
@@ -173,7 +173,7 @@ export default function DevToolsDismissableContentsScreen() {
       }
       continue;
     }
-    const sorted = items.sort(f114391);
+    const sorted = items.sort(f114509);
     return items;
   });
   let items = [closure_6];
@@ -219,7 +219,7 @@ export default function DevToolsDismissableContentsScreen() {
       }
       continue;
     }
-    const sorted = items.sort(f114391);
+    const sorted = items.sort(f114509);
     tmp2(items);
     callback();
   }, items1);
@@ -256,7 +256,7 @@ export default function DevToolsDismissableContentsScreen() {
   };
   items4 = [tmp.contentContainer, ];
   const obj5 = { paddingBottom: tmp2.bottom + nativeDefault.space.PX_16 };
-  FlashList = ref(7357).FlashList;
+  FlashList = ref(7390).FlashList;
   items4[1] = obj5;
   return dailyCapOverridden(first1, obj3);
 };

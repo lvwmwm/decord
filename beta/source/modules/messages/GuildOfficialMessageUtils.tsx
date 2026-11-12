@@ -1,20 +1,20 @@
-// Module ID: 7505
-// Function ID: 7506
+// Module ID: 7538
+// Function ID: 7539
 // Name: GuildOfficialMessageUtils
-// Dependencies: [5011, 5072, 5145, 1072, 1090, 671, 5137, 5147, 7506, 504, 7507, 6943, 2]
+// Dependencies: [5041, 5102, 5175, 1072, 1090, 671, 5167, 5177, 7539, 504, 7540, 6976, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages, useIsGuildOfficialMessagesEnabled
 
-// Module 7505 (GuildOfficialMessageUtils)
+// Module 7538 (GuildOfficialMessageUtils)
 import _modDef671 from "module_671" /* 671 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import ColorUtils from "ColorUtils" /* 5137 */;
-import MessageConstants from "MessageConstants" /* 5145 */;
-import shared from "shared" /* 5147 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6943 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7506 */;
-import ThreadHooks from "ThreadHooks" /* 7507 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import ColorUtils from "ColorUtils" /* 5167 */;
+import MessageConstants from "MessageConstants" /* 5175 */;
+import shared from "shared" /* 5177 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6976 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7539 */;
+import ThreadHooks from "ThreadHooks" /* 7540 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

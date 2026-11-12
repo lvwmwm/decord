@@ -1,10 +1,10 @@
-// Module ID: 15040
-// Function ID: 15041
+// Module ID: 15072
+// Function ID: 15073
 // Name: MediaViewerItemTransformPresenter
-// Dependencies: [19, 17, 21, 15038, 8912, 15037, 1652, 2]
+// Dependencies: [19, 17, 21, 15070, 8945, 15069, 1652, 2]
 // Exports: canPresentWithTransforms, default
 
-// Module 15040 (MediaViewerItemTransformPresenter)
+// Module 15072 (MediaViewerItemTransformPresenter)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,14 +1,14 @@
-// Module ID: 11330
-// Function ID: 11331
+// Module ID: 11362
+// Function ID: 11363
 // Name: speakOnStage
-// Dependencies: [6813, 8024, 6784, 8014, 2]
+// Dependencies: [6846, 8057, 6816, 8047, 2]
 // Exports: default
 
-// Module 11330 (speakOnStage)
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6813 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8014 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
+// Module 11362 (speakOnStage)
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6816 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6846 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8047 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8057 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/stage_channels/native/speakOnStage.tsx");

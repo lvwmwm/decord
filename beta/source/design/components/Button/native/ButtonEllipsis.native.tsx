@@ -1,17 +1,17 @@
-// Module ID: 5771
-// Function ID: 5772
+// Module ID: 5803
+// Function ID: 5804
 // Name: ButtonEllipsis
-// Dependencies: [19, 17, 21, 1652, 5140, 575, 5370, 5765, 5721, 2]
+// Dependencies: [19, 17, 21, 1652, 5170, 575, 5402, 5797, 5753, 2]
 // Exports: Ellipsis
 
-// Module 5771 (ButtonEllipsis)
+// Module 5803 (ButtonEllipsis)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5370 */;
+import timing_timing from "timing/timing" /* 5402 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let Easing;

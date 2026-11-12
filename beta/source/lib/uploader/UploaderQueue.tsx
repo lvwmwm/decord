@@ -1,9 +1,9 @@
-// Module ID: 10335
-// Function ID: 10336
+// Module ID: 10367
+// Function ID: 10368
 // Name: UploaderQueue
 // Dependencies: [5, 3, 2]
 
-// Module 10335 (UploaderQueue)
+// Module 10367 (UploaderQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

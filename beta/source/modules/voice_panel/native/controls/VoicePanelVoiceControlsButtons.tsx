@@ -1,60 +1,60 @@
-// Module ID: 19737
-// Function ID: 19738
+// Module ID: 19775
+// Function ID: 19776
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 4988, 6898, 1194, 11868, 6769, 502, 2130, 5072, 5803, 1072, 19738, 5897, 21, 6091, 19739, 2118, 1113, 12142, 7126, 12075, 504, 5837, 14977, 14978, 7038, 7046, 11362, 19586, 8749, 8714, 19608, 14345, 12086, 1252, 12168, 12115, 1377, 575, 6047, 7429, 9318, 19599, 9301, 9308, 7047, 19582, 19540, 11107, 12134, 5888, 11172, 12085, 19740, 10044, 11412, 11065, 19741, 8420, 572, 12105, 7633, 19598, 11332, 12016, 4997, 6813, 8012, 12052, 11330, 8740, 8010, 2]
+// Dependencies: [32, 19, 5018, 6931, 1194, 11900, 6801, 502, 2130, 5102, 5835, 1072, 19776, 5929, 21, 6123, 19777, 2118, 1113, 12174, 7159, 12107, 504, 5869, 15009, 15010, 7071, 7079, 11394, 19624, 8782, 8747, 19646, 14377, 12118, 1252, 12200, 12147, 1377, 575, 6079, 7462, 9351, 19637, 9334, 9341, 7080, 19620, 19578, 11139, 12166, 5920, 11204, 12117, 19778, 10077, 11444, 11097, 19779, 8453, 572, 12137, 7666, 19636, 11364, 12048, 5027, 6846, 8045, 12084, 11362, 8773, 8043, 2]
 // Exports: ActivitiesButton, AudioRouteButton, DeafenSwitch, GameConsoles, HideNonVideoParticipants, HideSelfVideo, InviteButton, LeaveActivitiesButton, RTCDebugPanelButton, ReportStreamIssueButton, ShareActivityLogsButton, SoundboardButton, StageButtons, StreamVolumeItem, ToggleShowActivitiesDebugOverlay, VoiceSettingsButton
 
-// Module 19737 (VoicePanelVoiceControlsButtons)
+// Module 19775 (VoicePanelVoiceControlsButtons)
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4997 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5888 */;
-import Constants2 from "Constants" /* 5897 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6047 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
-import TableRow3 from "TableRow" /* 7038 */;
-import TableRowIcon3 from "TableRowIcon" /* 7046 */;
-import TableRowArrow from "TableRowArrow" /* 7047 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7429 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8010 */;
-import useStateChannelIsLiveDefault from "useStateChannelIsLive" /* 8012 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8420 */;
-import CallsUtils from "CallsUtils" /* 9301 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 9308 */;
-import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9318 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 11107 */;
-import speakOnStageDefault from "speakOnStage" /* 11330 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11332 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11412 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 12075 */;
-import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12105 */;
-import VolumeSliderDefault from "VolumeSlider" /* 12115 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12168 */;
-import SoundboardIcon from "SoundboardIcon" /* 14345 */;
-import useInviteMembersCallback from "useInviteMembersCallback" /* 19540 */;
-import useCanInviteMembers from "useCanInviteMembers" /* 19582 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19598 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 19599 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 19608 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19738 */;
-import useHideSelfVideoDefault from "useHideSelfVideo" /* 19740 */;
-import ChannelCallUtils from "ChannelCallUtils" /* 19741 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 5027 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5920 */;
+import Constants2 from "Constants" /* 5929 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6079 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
+import TableRow3 from "TableRow" /* 7071 */;
+import TableRowIcon3 from "TableRowIcon" /* 7079 */;
+import TableRowArrow from "TableRowArrow" /* 7080 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7462 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8043 */;
+import useStateChannelIsLiveDefault from "useStateChannelIsLive" /* 8045 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8453 */;
+import CallsUtils from "CallsUtils" /* 9334 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 9341 */;
+import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9351 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 11139 */;
+import speakOnStageDefault from "speakOnStage" /* 11362 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11364 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11444 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 12107 */;
+import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12137 */;
+import VolumeSliderDefault from "VolumeSlider" /* 12147 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12200 */;
+import SoundboardIcon from "SoundboardIcon" /* 14377 */;
+import useInviteMembersCallback from "useInviteMembersCallback" /* 19578 */;
+import useCanInviteMembers from "useCanInviteMembers" /* 19620 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19636 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 19637 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 19646 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19776 */;
+import useHideSelfVideoDefault from "useHideSelfVideo" /* 19778 */;
+import ChannelCallUtils from "ChannelCallUtils" /* 19779 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11868 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11900 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import VoiceStateStore from "VoiceStateStore" /* 5835 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -68,7 +68,7 @@ let closure_15;
 let closure_18;
 let closure_19;
 let tmp4;
-const AssetRegistryDefault3 = tmp4(12134);
+const AssetRegistryDefault3 = tmp4(12166);
 class GameConsoleAccountButton {
   constructor(channel) {
     let account;
@@ -182,7 +182,7 @@ class ChatButton {
     let obj2;
     openTab = openTab.openTab;
     let dismissPanel;
-    dismissPanel = react.useContext(dismissPanel(11362)).dismissPanel;
+    dismissPanel = react.useContext(dismissPanel(11394)).dismissPanel;
     const items = [dismissPanel, openTab];
     const callback = react.useCallback(() => {
       dismissPanel();
@@ -192,9 +192,9 @@ class ChatButton {
       }, 200);
     }, items);
     let obj = { onPress: callback, icon: closure_18(TableRowIcon, obj2), label: intl.string(openTab(1113).t["5KxXrK"]) };
-    const TableRow = openTab(7038).TableRow;
-    obj2 = { IconComponent: openTab(8714).ChatIcon };
-    TableRowIcon = openTab(7046).TableRowIcon;
+    const TableRow = openTab(7071).TableRow;
+    obj2 = { IconComponent: openTab(8747).ChatIcon };
+    TableRowIcon = openTab(7079).TableRowIcon;
     intl = openTab(1113).intl;
     return closure_18(TableRow, obj);
   }
@@ -205,7 +205,7 @@ class ScreenshareButton {
     let isFeatureEnabled;
     let text;
     let isActive;
-    const tmp = isActive(12086)(channel.channel);
+    const tmp = isActive(12118)(channel.channel);
     const onPress = tmp.onPress;
     isActive = tmp.isActive;
     const items = [isActive, onPress];
@@ -216,8 +216,8 @@ class ScreenshareButton {
       obj.track(constants.VOICE_PANEL_SCREENSHARE_BUTTON_TAPPED, obj2);
       onPress();
     }, items);
-    let obj = { disabled: !isFeatureEnabled, onPress: callback, icon: closure_18(onPress(7046).TableRowIcon, { source: imgSource }), label: text };
-    const TableRow = onPress(7038).TableRow;
+    let obj = { disabled: !isFeatureEnabled, onPress: callback, icon: closure_18(onPress(7079).TableRowIcon, { source: imgSource }), label: text };
+    const TableRow = onPress(7071).TableRow;
     return closure_18(TableRow, obj);
   }
 }
@@ -235,7 +235,7 @@ export function GameConsoles(channel) {
   let intl;
   channel = channel.channel;
   const connected = channel.connected;
-  const arr = connected(12142)();
+  const arr = connected(12174)();
   let tmp2 = null;
   if (!channel.isGuildStageVoice()) {
     let tmp3 = null;
@@ -248,7 +248,7 @@ export function GameConsoles(channel) {
               return authStore5(GameConsoleAccountButton, obj, account.type);
             })
       };
-      const TableRowGroup = channel(7126).TableRowGroup;
+      const TableRowGroup = channel(7159).TableRowGroup;
       intl = channel(1113).intl;
       tmp3 = closure_18(TableRowGroup, obj);
     }
@@ -263,7 +263,7 @@ export function ActivitiesButton(openTab) {
   let obj2;
   openTab = openTab.openTab;
   let dismissPanel;
-  dismissPanel = react.useContext(dismissPanel(11362)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(11394)).dismissPanel;
   const items = [dismissPanel, openTab];
   const callback = react.useCallback(() => {
     dismissPanel();
@@ -273,9 +273,9 @@ export function ActivitiesButton(openTab) {
     }, 200);
   }, items);
   let obj = { onPress: callback, icon: closure_18(TableRowIcon, obj2), label: intl.string(openTab(1113).t.aeuOoh) };
-  const TableRow = openTab(7038).TableRow;
-  obj2 = { IconComponent: openTab(8749).AppsIcon };
-  TableRowIcon = openTab(7046).TableRowIcon;
+  const TableRow = openTab(7071).TableRow;
+  obj2 = { IconComponent: openTab(8782).AppsIcon };
+  TableRowIcon = openTab(7079).TableRowIcon;
   intl = openTab(1113).intl;
   return closure_18(TableRow, obj);
 }
@@ -290,10 +290,10 @@ export function SoundboardButton(channel) {
   const tmp2Result = tmp2(channel.id, useSoundboardConfig.SoundboardButtonLocation.VOICE_CONTROLS);
   if (tmp2Result.visible) {
     const obj = { label: intl.string(intl4.t.ABjMWI), onPress: tmp5, disabled: tmp6, accessibilityHint: tmp7, icon: authStore5(TableRowIcon, obj2) };
-    const TableRow = tmp3(7038).TableRow;
+    const TableRow = tmp3(7071).TableRow;
     intl = tmp3(1113).intl;
     obj2 = { IconComponent: SoundboardIcon.SoundboardIcon };
-    TableRowIcon = tmp3(7046).TableRowIcon;
+    TableRowIcon = tmp3(7079).TableRowIcon;
     tmp8 = authStore5(TableRow, obj);
   }
   return tmp8;
@@ -329,9 +329,9 @@ export function StreamVolumeItem() {
   let tmp11Result = null;
   if (null != stateFromStores) {
     const obj2 = { title: intl.string(intl4.t.pEAl4b), hasIcons: false, children: authStore5(TableRow, obj3) };
-    const TableRowGroup = tmp(7126).TableRowGroup;
+    const TableRowGroup = tmp(7159).TableRowGroup;
     intl = tmp(1113).intl;
-    TableRow = tmp(7038).TableRow;
+    TableRow = tmp(7071).TableRow;
     let fn;
     const tmp4Result = VolumeSliderDefault;
     const tmpResult = PlatformUtils;
@@ -401,9 +401,9 @@ export function InviteButton(channel) {
       tmp8 = null;
       if (connected) {
         const obj2 = { onPress: tmp7, icon: authStore5(TableRowIcon, obj3), label: intl.string(intl4.t["f1+QIK"]), trailing: authStore5(TableRowArrow.TableRowArrow, {}) };
-        const TableRow = tmp(7038).TableRow;
+        const TableRow = tmp(7071).TableRow;
         obj3 = { IconComponent: GroupPlusIcon.GroupPlusIcon, source: AssetRegistryDefault3 };
-        TableRowIcon = tmp(7046).TableRowIcon;
+        TableRowIcon = tmp(7079).TableRowIcon;
         intl = tmp(1113).intl;
         tmp8 = authStore5(TableRow, obj2);
       }
@@ -427,9 +427,9 @@ export function HideNonVideoParticipants(channelId) {
     const result = obj.toggleVoiceParticipantsHidden(channelId, !stateFromStores);
   }, items1);
   const obj2 = { icon: closure_18(TableRowIcon, obj3), accessibilityHint: intl.string(channelId(1113).t.ZMTRyc), value: stateFromStores, onValueChange: callback, label: intl2.string(channelId(1113).t.ZMTRyc), subLabel: intl3.string(channelId(1113).t.MlpCFS) };
-  const TableSwitchRow = channelId(7429).TableSwitchRow;
-  obj3 = { IconComponent: channelId(11172).VideoIcon, source: stateFromStores(12085) };
-  TableRowIcon = channelId(7046).TableRowIcon;
+  const TableSwitchRow = channelId(7462).TableSwitchRow;
+  obj3 = { IconComponent: channelId(11204).VideoIcon, source: stateFromStores(12117) };
+  TableRowIcon = channelId(7079).TableRowIcon;
   intl = channelId(1113).intl;
   intl2 = channelId(1113).intl;
   intl3 = channelId(1113).intl;
@@ -461,7 +461,7 @@ export function HideSelfVideo() {
             const tmp2 = closure_0;
             if (!tmp2) {
               const VIDEO = constants.VIDEO;
-              const f135555 = () => f135555(!VIDEO);
+              const f135673 = () => f135673(!VIDEO);
               let obj = actions_AlertActionCreatorsDefault;
               const obj2 = {
                 importer() {
@@ -486,9 +486,9 @@ export function HideSelfVideo() {
         },
       label: intl.string(require("intl").t.MH8ESU)
     };
-    const TableSwitchRow = tmp6(7429).TableSwitchRow;
+    const TableSwitchRow = tmp6(7462).TableSwitchRow;
     obj3 = { IconComponent: require("UserSquareIcon").UserSquareIcon };
-    TableRowIcon = tmp6(7046).TableRowIcon;
+    TableRowIcon = tmp6(7079).TableRowIcon;
     intl = tmp6(1113).intl;
     tmp7 = closure_18(TableSwitchRow, obj2);
   }
@@ -574,10 +574,10 @@ export function VoiceSettingsButton(guildId) {
     const obj = ChannelCallConnectingScreen;
     const result = obj.showVoiceSettingsActionSheet(guildId);
   }, items);
-  let obj = { onPress: callback, icon: closure_18(TableRowIcon, obj2), label: intl.string(guildId(1113).t.dsXapM), subLabel: intl2.string(guildId(1113).t["16SG+O"]), trailing: closure_18(guildId(7047).TableRowArrow, {}) };
-  const TableRow = guildId(7038).TableRow;
-  obj2 = { IconComponent: guildId(7633).SettingsIcon, source: AssetRegistryDefault4 };
-  TableRowIcon = guildId(7046).TableRowIcon;
+  let obj = { onPress: callback, icon: closure_18(TableRowIcon, obj2), label: intl.string(guildId(1113).t.dsXapM), subLabel: intl2.string(guildId(1113).t["16SG+O"]), trailing: closure_18(guildId(7080).TableRowArrow, {}) };
+  const TableRow = guildId(7071).TableRow;
+  obj2 = { IconComponent: guildId(7666).SettingsIcon, source: AssetRegistryDefault4 };
+  TableRowIcon = guildId(7079).TableRowIcon;
   intl = guildId(1113).intl;
   intl2 = guildId(1113).intl;
   return closure_18(TableRow, obj);
@@ -626,15 +626,15 @@ export function StageButtons(channel) {
   channel = channel.channel;
   const openTab = channel.openTab;
   const tmp2 = useCanSpeakInChannelDefault(channel.id);
-  let obj = channel(12016);
+  let obj = channel(12048);
   const isModerator = obj.useStageChannelStartEvent(channel.id).isModerator;
   const items = [PermissionStore];
   const obj2 = channel(504);
   const stateFromStores = obj2.useStateFromStores(items, () => PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, channel));
-  const obj3 = channel(6813);
+  const obj3 = channel(6846);
   const isStageSpeakingDisabledForCurrentUser = obj3.useIsStageSpeakingDisabledForCurrentUser();
   const tmp6 = useStateChannelIsLiveDefault(channel.id);
-  const TableRowGroup = channel(7126).TableRowGroup;
+  const TableRowGroup = channel(7159).TableRowGroup;
   const tmp7 = closure_19;
   if (tmp2) {
     const obj4 = { channel };
@@ -651,9 +651,9 @@ export function StageButtons(channel) {
                   return speakOnStageDefault(channel);
                 }
         };
-        const TableRow = tmp3(7038).TableRow;
-        obj6 = { IconComponent: channel(12052).MicrophoneArrowRightIcon };
-        TableRowIcon = tmp3(7046).TableRowIcon;
+        const TableRow = tmp3(7071).TableRow;
+        obj6 = { IconComponent: channel(12084).MicrophoneArrowRightIcon };
+        TableRowIcon = tmp3(7079).TableRowIcon;
         intl = tmp3(1113).intl;
         tmp8 = closure_18(TableRow, obj5);
       }
@@ -678,9 +678,9 @@ export function StageButtons(channel) {
               return obj.openStageChannelSettings(channel);
             }
       };
-      const TableRow2 = tmp3(7038).TableRow;
-      obj9 = { IconComponent: channel(8740).StageIcon };
-      TableRowIcon2 = tmp3(7046).TableRowIcon;
+      const TableRow2 = tmp3(7071).TableRow;
+      obj9 = { IconComponent: channel(8773).StageIcon };
+      TableRowIcon2 = tmp3(7079).TableRowIcon;
       const intl2 = tmp3(1113).intl;
       const string = intl2.string;
       const t = tmp3(1113).t;

@@ -1,10 +1,10 @@
-// Module ID: 17173
-// Function ID: 17174
+// Module ID: 17207
+// Function ID: 17208
 // Name: ConnectionsTracking
 // Dependencies: [1072, 1252, 2]
 // Exports: trackEmptyStateCardClicked
 
-// Module 17173 (ConnectionsTracking)
+// Module 17207 (ConnectionsTracking)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;

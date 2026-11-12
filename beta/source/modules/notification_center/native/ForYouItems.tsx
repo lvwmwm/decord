@@ -1,44 +1,44 @@
-// Module ID: 18842
-// Function ID: 18843
+// Module ID: 18880
+// Function ID: 18881
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 5141, 2162, 4989, 5011, 1385, 18836, 1072, 6798, 21, 5140, 5751, 575, 6163, 18841, 1113, 1403, 8581, 8474, 14004, 10424, 8243, 504, 8653, 1187, 14440, 18843, 1499, 5870, 15983, 6914, 1252, 15367, 10195, 10276, 5837, 10299, 2118, 5374, 18844, 5862, 18838, 7423, 18845, 18846, 11, 7043, 18847, 6915, 15283, 1500, 4965, 5816, 18857, 18858, 18859, 18860, 18861, 18867, 674, 18868, 18869, 1380, 18840, 9069, 7357, 18870, 2]
+// Dependencies: [5, 32, 19, 17, 5171, 2162, 5019, 5041, 1385, 18874, 1072, 6830, 21, 5170, 5783, 575, 6195, 18879, 1113, 1403, 8614, 8507, 14036, 10456, 8276, 504, 8686, 1187, 14472, 18881, 1499, 5902, 16015, 6947, 1252, 15399, 10227, 10308, 5869, 10331, 2118, 5406, 18882, 5894, 18876, 7456, 18883, 18884, 11, 7076, 18885, 6948, 15315, 1500, 4995, 5848, 18895, 18896, 18897, 18898, 18899, 18905, 674, 18906, 18907, 1380, 18878, 9102, 7390, 18908, 2]
 
-// Module 18842 (ForYouItems)
+// Module 18880 (ForYouItems)
 import nativeDefault from "native" /* 575 */;
 import _mod674 from "module_674" /* 674 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import Link from "Link" /* 1500 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import parseURLDefault from "parseURL" /* 5870 */;
-import CustomMarkupAll from "CustomMarkup" /* 6163 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6798 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6914 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14440 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15983 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 18840 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 18841 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 18857 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 18858 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 18859 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 18860 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 18861 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 18867 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 18868 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 18869 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import parseURLDefault from "parseURL" /* 5902 */;
+import CustomMarkupAll from "CustomMarkup" /* 6195 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6830 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6947 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14472 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 16015 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 18878 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 18879 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 18895 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 18896 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 18897 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 18898 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 18899 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 18905 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 18906 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 18907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import UserStore from "UserStore" /* 1385 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 18836 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 18874 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c4, navigation;
@@ -115,7 +115,7 @@ function ForYouMessagePreviewV2(item) {
   let message_channel_id;
   ({ compactMode, roleStyle } = item);
   const tmp = closure_29();
-  const obj = message_channel_id(6163);
+  const obj = message_channel_id(6195);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(closure_27(), closure_28, roleStyle);
   const intl = item(1113).intl;
   const stringResult = intl.string(item(1113).t.BOi07B);
@@ -177,10 +177,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp19 = guild_id(8581)(first);
+    const tmp19 = guild_id(8614)(first);
     result = stringResult;
     if (null != tmp19) {
-      const tmp4Result = item(8474);
+      const tmp4Result = item(8507);
       result = tmp4Result.formatPollResultNotificationCenterText(tmp19);
     }
   } else if (length2 > 0) {
@@ -267,7 +267,7 @@ function ForYouMessagePreviewV2(item) {
   items3[0] = closure_21(closure_7, obj3);
   const items4 = [acked ? tmp.messagePreviewTextV2Acked : tmp.messagePreviewTextV2NotAcked, ];
   let prop;
-  const Text = tmp4(5751).Text;
+  const Text = tmp4(5783).Text;
   if (!(null != content && "" !== content)) {
     prop = tmp.messagePreviewSystemTextV2;
   }
@@ -280,8 +280,8 @@ function ForYouMessagePreviewV2(item) {
   const message10 = item.message;
   const obj5 = { content: result, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id };
   id = undefined;
-  const renderMessageContentMarkup = item(8653).renderMessageContentMarkup;
-  item(8653);
+  const renderMessageContentMarkup = item(8686).renderMessageContentMarkup;
+  item(8686);
   if (message10 != null) {
     id = message10.author.id;
   }
@@ -296,13 +296,13 @@ function ForYouMessagePreviewV2(item) {
     const obj6 = { style: tmp.messagePreviewIconV2Container, children: closure_21(Icon, obj7) };
     Icon = tmp4(1187).Icon;
     if (constants4.ATTACHMENT === ATTACHMENT) {
-      tmp33 = guild_id(14004);
+      tmp33 = guild_id(14036);
     } else if (constants4.STICKER === ATTACHMENT) {
-      tmp33 = guild_id(10424);
+      tmp33 = guild_id(10456);
     } else {
       tmp33 = null;
       if (constants4.VOICE_MESSAGE === ATTACHMENT) {
-        tmp33 = guild_id(8243);
+        tmp33 = guild_id(8276);
       }
     }
     obj7 = { source: tmp33, size: item(1187).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };

@@ -1,11 +1,11 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 6231
+// Function ID: 6232
 // Name: CheckpointConstants
-// Dependencies: [3248, 6200, 2]
+// Dependencies: [3248, 6232, 2]
 
-// Module 6199 (CheckpointConstants)
+// Module 6231 (CheckpointConstants)
 import _modDef3248 from "module_3248" /* 3248 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6200 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6232 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ list: "gamesByPlayers", label: _modDef3248.b4s18j }, , , ];

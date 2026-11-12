@@ -1,16 +1,16 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 11743
+// Function ID: 11744
 // Name: useFetchSocialLayerStorefrontEmbedWishlist
-// Dependencies: [19, 7848, 9555, 502, 1385, 504, 8829, 9562, 9561, 2]
+// Dependencies: [19, 7881, 9588, 502, 1385, 504, 8862, 9595, 9594, 2]
 // Exports: useFetchSocialLayerStorefrontEmbedWishlist
 
-// Module 11711 (useFetchSocialLayerStorefrontEmbedWishlist)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8829 */;
-import WishlistFetchSource from "WishlistFetchSource" /* 9561 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9562 */;
+// Module 11743 (useFetchSocialLayerStorefrontEmbedWishlist)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
+import WishlistFetchSource from "WishlistFetchSource" /* 9594 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9595 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7848 */;
-import WishlistStore from "WishlistStore" /* 9555 */;
+import UserProfileStore from "UserProfileStore" /* 7881 */;
+import WishlistStore from "WishlistStore" /* 9588 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

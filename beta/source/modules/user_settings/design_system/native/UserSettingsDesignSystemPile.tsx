@@ -1,23 +1,23 @@
-// Module ID: 18135
-// Function ID: 18136
+// Module ID: 18173
+// Function ID: 18174
 // Name: UserSettingsDesignSystemPile
-// Dependencies: [19, 17, 21, 5140, 1187, 7020, 6159, 7040, 5751, 15118, 1414, 16186, 14438, 13656, 13008, 9593, 2]
+// Dependencies: [19, 17, 21, 5170, 1187, 7053, 6191, 7073, 5783, 15150, 1414, 16218, 14470, 13688, 13040, 9626, 2]
 // Exports: default
 
-// Module 18135 (UserSettingsDesignSystemPile)
+// Module 18173 (UserSettingsDesignSystemPile)
 import native from "native" /* 1187 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import Stack_Stack from "Stack/Stack" /* 6159 */;
-import GuildIcon from "GuildIcon" /* 7020 */;
-import Card_Card from "Card/Card" /* 7040 */;
-import ClipView from "ClipView" /* 9593 */;
-import ListUtils from "ListUtils" /* 13008 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 16186 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import Stack_Stack from "Stack/Stack" /* 6191 */;
+import GuildIcon from "GuildIcon" /* 7053 */;
+import Card_Card from "Card/Card" /* 7073 */;
+import ClipView from "ClipView" /* 9626 */;
+import ListUtils from "ListUtils" /* 13040 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 16218 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

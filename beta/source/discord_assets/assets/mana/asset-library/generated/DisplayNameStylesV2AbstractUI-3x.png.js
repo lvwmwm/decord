@@ -1,8 +1,8 @@
-// Module ID: 19406
-// Function ID: 19407
+// Module ID: 19444
+// Function ID: 19445
 // Dependencies: [2]
 
-// Module 19406
+// Module 19444
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisplayNameStylesV2AbstractUI-3x.png.js");

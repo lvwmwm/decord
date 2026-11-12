@@ -1,12 +1,12 @@
-// Module ID: 11993
-// Function ID: 11994
+// Module ID: 12025
+// Function ID: 12026
 // Name: getEmbeddedAppShellUrl
-// Dependencies: [11994, 1378, 2]
+// Dependencies: [12026, 1378, 2]
 // Exports: getEmbeddedAppShellUrl
 
-// Module 11993 (getEmbeddedAppShellUrl)
+// Module 12025 (getEmbeddedAppShellUrl)
 import URLUtilsDefault from "URLUtils" /* 1378 */;
-import getNativeShellOriginForEmbeddedApp from "getNativeShellOriginForEmbeddedApp" /* 11994 */;
+import getNativeShellOriginForEmbeddedApp from "getNativeShellOriginForEmbeddedApp" /* 12026 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/native/shell/getEmbeddedAppShellUrl.tsx");

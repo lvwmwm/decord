@@ -1,20 +1,20 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11544
+// Function ID: 11545
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 2162, 7796, 7804, 1072, 1387, 572, 6577, 6936, 7795, 6579, 4961, 1242, 1282, 11513, 11514, 2]
+// Dependencies: [5, 2162, 7829, 7837, 1072, 1387, 572, 6609, 6969, 7828, 6611, 4991, 1242, 1282, 11545, 11546, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 11512 (GiftCodeActionCreators)
+// Module 11544 (GiftCodeActionCreators)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4961 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7804 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11513 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11514 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4991 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7837 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11545 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11546 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7829 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let obj = function _resolveGiftCode() {
               product = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

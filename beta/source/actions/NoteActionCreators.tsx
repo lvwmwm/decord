@@ -1,9 +1,9 @@
-// Module ID: 15148
-// Function ID: 15149
+// Module ID: 15180
+// Function ID: 15181
 // Name: NoteActionCreators
 // Dependencies: [1072, 1282, 2]
 
-// Module 15148 (NoteActionCreators)
+// Module 15180 (NoteActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;

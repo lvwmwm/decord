@@ -1,13 +1,13 @@
-// Module ID: 18305
-// Function ID: 18306
+// Module ID: 18343
+// Function ID: 18344
 // Name: RedesignSettingsFriendActivityTitleScreen
-// Dependencies: [19, 21, 11685, 18295, 18300, 2]
+// Dependencies: [19, 21, 11717, 18333, 18338, 2]
 
-// Module 18305 (RedesignSettingsFriendActivityTitleScreen)
+// Module 18343 (RedesignSettingsFriendActivityTitleScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18295 */;
-import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18300 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18333 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18338 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

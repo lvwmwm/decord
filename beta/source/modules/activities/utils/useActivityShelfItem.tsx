@@ -1,30 +1,30 @@
-// Module ID: 12588
-// Function ID: 12589
+// Module ID: 12620
+// Function ID: 12621
 // Name: useActivityShelfItem
-// Dependencies: [5, 4988, 2142, 1072, 5806, 1377, 12005, 12589, 12590, 2116, 6938, 11952, 11951, 7391, 5061, 7387, 11854, 11860, 11065, 2]
+// Dependencies: [5, 5018, 2142, 1072, 5838, 1377, 12037, 12621, 12622, 2116, 6971, 11984, 11983, 7424, 5091, 7420, 11886, 11892, 11097, 2]
 // Exports: default, getStaffReleasePhase
 
-// Module 12588 (useActivityShelfItem)
+// Module 12620 (useActivityShelfItem)
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import Constants2 from "Constants" /* 2142 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5061 */;
-import getPlatformDefault from "getPlatform" /* 5806 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6938 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7387 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7391 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 11065 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11951 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11952 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12005 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12590 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5091 */;
+import getPlatformDefault from "getPlatform" /* 5838 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6971 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7420 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7424 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 11097 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11983 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11984 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12037 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12622 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 
-const f103657 = (str) => str.toUpperCase();
+const f103767 = (str) => str.toUpperCase();
 function useActivityAction(applicationId) {
   let context;
   let fetchesApplication;
@@ -49,7 +49,7 @@ function useActivityAction(applicationId) {
     return START;
   } else {
     let JOIN;
-    const getEmbeddedActivityLocationChannelId = tmp6(5061).getEmbeddedActivityLocationChannelId;
+    const getEmbeddedActivityLocationChannelId = tmp6(5091).getEmbeddedActivityLocationChannelId;
     embeddedActivityLocationUtils;
     if (tmp4 != null) {
       const _location = tmp4.location;
@@ -316,7 +316,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   const tmp8 = useEmbeddedActivityBackgroundDefault(obj2);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(12589)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(12621)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmpResult = useEmbeddedAppsForChannelDefault;
@@ -339,7 +339,7 @@ export default function useActivityShelfItem(backgroundResolution) {
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f103657);
+      replaced = str4.replace(/(^\w|\s\w)/g, f103767);
     }
     tmp16 = replaced;
   } else {
@@ -366,7 +366,7 @@ export function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f103657);
+    replaced = str4.replace(/(^\w|\s\w)/g, f103767);
   }
   return replaced;
 }

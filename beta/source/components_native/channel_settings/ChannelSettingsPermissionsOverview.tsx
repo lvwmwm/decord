@@ -1,34 +1,34 @@
-// Module ID: 19283
-// Function ID: 19284
+// Module ID: 19321
+// Function ID: 19322
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 5047, 4989, 5046, 5011, 5082, 1385, 1072, 21, 5140, 575, 6090, 1113, 5776, 5077, 11805, 9113, 8268, 12, 7126, 7038, 12391, 1499, 11629, 10352, 17626, 504, 2116, 10938, 19284, 7658, 9902, 7549, 1652, 2]
+// Dependencies: [32, 5, 19, 17, 5077, 5019, 5076, 5041, 5112, 1385, 1072, 21, 5170, 575, 6122, 1113, 5808, 5107, 11837, 9146, 8301, 12, 7159, 7071, 12423, 1499, 11661, 10384, 17663, 504, 2116, 10970, 19322, 7691, 9935, 7582, 1652, 2]
 // Exports: default
 
-// Module 19283 (ChannelSettingsPermissionsOverview)
+// Module 19321 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import Server from "Server" /* 2116 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 5047 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
-import TableRow3 from "TableRow" /* 7038 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
-import RoleLabel from "RoleLabel" /* 10352 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10938 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 17626 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19284 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5077 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
+import TableRow3 from "TableRow" /* 7071 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
+import RoleLabel from "RoleLabel" /* 10384 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10970 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 17663 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19322 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildRoleStore from "GuildRoleStore" /* 5046 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildRoleStore from "GuildRoleStore" /* 5076 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -149,10 +149,10 @@ function ChannelPermissionSyncModule(channel) {
     });
     show(obj);
   }, items);
-  let obj = channel(5776);
+  let obj = channel(5808);
   const channelName = obj.computeChannelName(category, UserStore, RelationshipStore);
   let obj2 = { style: tmp.tableRowGroupContainer, children: tmp6(TableRowGroup, obj5) };
-  TableRowGroup = channel(7126).TableRowGroup;
+  TableRowGroup = channel(7159).TableRowGroup;
   let intl = channel(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = channel(1113).t;
@@ -165,8 +165,8 @@ function ChannelPermissionSyncModule(channel) {
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj4);
   }
   obj5 = { title: formatToPlainStringResult, hasIcons: true, children: tmp6(TableRow, obj6) };
-  obj6 = { icon: tmp6(tmp3(12391).RefreshIcon, {}), label: intl2.string(tmp3(1113).t.NVwuHq), onPress: callback };
-  TableRow = tmp3(7038).TableRow;
+  obj6 = { icon: tmp6(tmp3(12423).RefreshIcon, {}), label: intl2.string(tmp3(1113).t.NVwuHq), onPress: callback };
+  TableRow = tmp3(7071).TableRow;
   intl2 = tmp3(1113).intl;
   return closure_16(tmp7, obj2);
 }
@@ -230,7 +230,7 @@ function RoleRow(onDelete) {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(17626).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(17663).CircleMinusIcon;
       intl = tmp3(1113).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }
@@ -288,7 +288,7 @@ function RoleOverwrites(guild) {
       return closure_1_16(RoleRow, obj, role.id);
     })
   };
-  TableRowGroup = tmp2(7126).TableRowGroup;
+  TableRowGroup = tmp2(7159).TableRowGroup;
   intl = tmp2(1113).intl;
   return closure_16(View, obj4);
 }
@@ -355,7 +355,7 @@ function MemberOverwrites(channel) {
           return closure_1_16(MemberRow, obj, user.id);
         })
     };
-    TableRowGroup = guild_id(7126).TableRowGroup;
+    TableRowGroup = guild_id(7159).TableRowGroup;
     intl = guild_id(1113).intl;
     tmp4 = closure_16(View, obj2);
   }

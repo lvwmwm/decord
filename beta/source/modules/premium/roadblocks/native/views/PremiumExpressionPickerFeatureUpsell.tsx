@@ -1,19 +1,19 @@
-// Module ID: 10166
-// Function ID: 10167
+// Module ID: 10198
+// Function ID: 10199
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 5140, 575, 1627, 7172, 1092, 1652, 10167, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 1627, 7205, 1092, 1652, 10199, 2]
 // Exports: default
 
-// Module 10166 (PremiumExpressionPickerFeatureUpsell)
+// Module 10198 (PremiumExpressionPickerFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7172 */;
+import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7205 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let num, num2, tmp, tmp2, value;

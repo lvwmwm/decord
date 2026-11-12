@@ -1,23 +1,28 @@
 // Module ID: 13307
 // Function ID: 13308
-// Dependencies: [13284]
-// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
+// Dependencies: [13308, 13311]
+// Exports: addGlobalErrorInstrumentationHandler
 
 // Module 13307
-import _mod13284 from "module_13284" /* 13284 */;
+import _mod13308 from "module_13308" /* 13308 */;
+import _mod13311 from "module_13311" /* 13311 */;
 
-const _sentryScope = "_sentryScope";
-const _sentryIsolationScope = "_sentryIsolationScope";
-
-export function getCapturedScopesOnSpan(scope) {
-  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+function instrumentError() {
+  onerror = _mod13311.GLOBAL_OBJ.onerror;
+  _mod13311.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
+    const obj = { column, error, line, msg, url };
+    const obj2 = _mod13308;
+    obj2.triggerHandlers("error", obj);
+    const applyResult = onerror && onerror(...arguments);
+    return applyResult;
+  };
+  _mod13311.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
 }
-export function setCapturedScopesOnSpan(arg0, arg1, arg2) {
-  const tmp = arg0;
-  if (tmp) {
-    const obj = _mod13284;
-    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
-    const obj2 = _mod13284;
-    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
-  }
+let onerror = null;
+
+export function addGlobalErrorInstrumentationHandler(arg0) {
+  const obj = _mod13308;
+  obj.addHandler("error", arg0);
+  const obj2 = _mod13308;
+  obj2.maybeInstrument("error", instrumentError);
 }
