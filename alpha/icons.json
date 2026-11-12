@@ -335,34 +335,6 @@
         "width": 284,
         "height": 189
     },
-    "asset_bronze_badge_small": {
-        "file": "app/modules/premium/tiered_tenure_badging/native/images/asset_bronze_badge_small.png",
-        "hash": "1df6ee7cceb670ae2dfd3feed8d2acfc",
-        "scales": [],
-        "width": 57,
-        "height": 56.666666666666664
-    },
-    "asset_diamond_badge_small": {
-        "file": "app/modules/premium/tiered_tenure_badging/native/images/asset_diamond_badge_small.png",
-        "hash": "ebeff25c9c1d6559128af4dec63d3c8d",
-        "scales": [],
-        "width": 66.66666666666667,
-        "height": 59
-    },
-    "asset_emerald_badge_small": {
-        "file": "app/modules/premium/tiered_tenure_badging/native/images/asset_emerald_badge_small.png",
-        "hash": "f5c4d9fde9a55ad09e91263f9bebf46a",
-        "scales": [],
-        "width": 78,
-        "height": 63.666666666666664
-    },
-    "asset_gold_badge_small": {
-        "file": "app/modules/premium/tiered_tenure_badging/native/images/asset_gold_badge_small.png",
-        "hash": "98f28dd3128f04f38057757d2f825a42",
-        "scales": [],
-        "width": 59.666666666666664,
-        "height": 59.666666666666664
-    },
     "asset_gradient": {
         "file": "app/images/native/guild_settings/overview/asset_gradient.png",
         "hash": "14f8bd930afc02eff31d9dfb6640a712",
@@ -376,34 +348,6 @@
         "scales": [],
         "width": 200.5,
         "height": 114
-    },
-    "asset_opal_badge_small": {
-        "file": "app/modules/premium/tiered_tenure_badging/native/images/asset_opal_badge_small.png",
-        "hash": "0fef0a9d83d27dc691bf77b0bdae0680",
-        "scales": [],
-        "width": 99.66666666666667,
-        "height": 66.66666666666667
-    },
-    "asset_platinum_badge_small": {
-        "file": "app/modules/premium/tiered_tenure_badging/native/images/asset_platinum_badge_small.png",
-        "hash": "a162bb51b9ed292f4f10e545ed35e2e3",
-        "scales": [],
-        "width": 61,
-        "height": 61
-    },
-    "asset_ruby_badge_small": {
-        "file": "app/modules/premium/tiered_tenure_badging/native/images/asset_ruby_badge_small.png",
-        "hash": "c4946770ab3c50ce3672b0e2087496ae",
-        "scales": [],
-        "width": 93.33333333333333,
-        "height": 65
-    },
-    "asset_silver_badge_small": {
-        "file": "app/modules/premium/tiered_tenure_badging/native/images/asset_silver_badge_small.png",
-        "hash": "99ffc81e67285d18182e87dbce7ba5f1",
-        "scales": [],
-        "width": 58.333333333333336,
-        "height": 58.333333333333336
     },
     "AtIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/AtIcon.png",
@@ -1272,13 +1216,6 @@
         "scales": [],
         "width": 300.5,
         "height": 175
-    },
-    "client_themes_upsell": {
-        "file": "app/modules/premium/roadblocks/images/client_themes_upsell.png",
-        "hash": "f59c66d6f542b08761b44d6d5de547c8",
-        "scales": [],
-        "width": 552,
-        "height": 336
     },
     "ClipboardCheckIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ClipboardCheckIcon.png",
@@ -6068,13 +6005,6 @@
         "width": 247.5,
         "height": 194
     },
-    "img_register_header": {
-        "file": "app/modules/mfa/native/images/img_register_header.png",
-        "hash": "685e4a9eb5133a148de7ce27d400a483",
-        "scales": [],
-        "width": 762,
-        "height": 525
-    },
     "img_roblox_dark": {
         "file": "app/images/platforms/img_roblox_dark.png",
         "hash": "8fce658b14b12e381e1ecc554a57f171",
@@ -7117,13 +7047,6 @@
         "scales": [],
         "width": 375,
         "height": 199.5
-    },
-    "nitro_modal_header_background": {
-        "file": "app/modules/quests/images/nitro_modal_header_background.png",
-        "hash": "92f827adadc1f86811fd4e36c86fdf27",
-        "scales": [],
-        "width": 435,
-        "height": 218
     },
     "nitro_wumpus_avatar": {
         "file": "app/images/nitro_wumpus_avatar.png",
@@ -9133,13 +9056,6 @@
         "scales": [],
         "width": 24,
         "height": 24
-    },
-    "welcome-bg": {
-        "file": "app/images/native/welcome-bg.png",
-        "hash": "38957e8b938c7ee2a40f1e8c893feb71",
-        "scales": [],
-        "width": 192.33333333333334,
-        "height": 416
     },
     "whatsapp": {
         "file": "app/modules/instant_invite/native/images/whatsapp.png",
