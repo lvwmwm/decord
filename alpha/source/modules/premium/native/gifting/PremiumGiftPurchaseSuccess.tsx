@@ -1,10 +1,10 @@
-// Module ID: 11779
-// Function ID: 11780
+// Module ID: 11773
+// Function ID: 11774
 // Name: PremiumGiftPurchaseSuccess
-// Dependencies: [19, 17, 7007, 1387, 1072, 21, 5243, 575, 11603, 1499, 11612, 6692, 11601, 10163, 5873, 1113, 2171, 7877, 5951, 11691, 5866, 7932, 5971, 2]
+// Dependencies: [19, 17, 7007, 1387, 1072, 21, 5243, 575, 11597, 1499, 11606, 6692, 11595, 10161, 5873, 1113, 2171, 7877, 5951, 11685, 5866, 7932, 5971, 2]
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 11779 (PremiumGiftPurchaseSuccess)
+// Module 11773 (PremiumGiftPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,8 +12,8 @@ import PremiumConstants from "PremiumConstants" /* 1387 */;
 import ToastUtils from "ToastUtils" /* 5951 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 6692 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import showShareActionSheet from "showShareActionSheet" /* 10163 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 11601 */;
+import showShareActionSheet from "showShareActionSheet" /* 10161 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 11595 */;
 import react from "react" /* 19 */;
 import SKUStore from "SKUStore" /* 7007 */;
 import Fragment from "Fragment" /* 21 */;
@@ -58,7 +58,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   let subscriptionPlanId;
   giftCodeRecord = giftCodeRecord.giftCodeRecord;
   let tmp = closure_11();
-  let obj = giftCodeRecord(11603);
+  let obj = giftCodeRecord(11597);
   const nativeGiftContext = obj.useNativeGiftContext();
   ({ giftStyle, premiumType, planInterval } = nativeGiftContext);
   let obj2 = giftCodeRecord(6692);
@@ -78,7 +78,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   const obj5 = giftCodeURL(2171);
   const intervalType = obj5.getInterval(subscriptionPlanId).intervalType;
   const YEAR = SubscriptionIntervalTypes.YEAR;
-  let obj3 = { children: closure_8(giftCodeURL(11691), { giftStyle }) };
+  let obj3 = { children: closure_8(giftCodeURL(11685), { giftStyle }) };
   const callback = react.useCallback(() => {
     const value = SKUStore.get(giftCodeRecord.skuId);
     const tmp = giftCodeRecord;

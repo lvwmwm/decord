@@ -1,10 +1,10 @@
-// Module ID: 9645
-// Function ID: 9646
+// Module ID: 9644
+// Function ID: 9645
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1083, 9646, 8514, 7190, 2]
+// Dependencies: [19, 1083, 9645, 8514, 7190, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 9645 (useDiscountedPremiumProductInfo)
+// Module 9644 (useDiscountedPremiumProductInfo)
 import Constants from "Constants" /* 1083 */;
 import ProductIds from "ProductIds" /* 8514 */;
 import react from "react" /* 19 */;

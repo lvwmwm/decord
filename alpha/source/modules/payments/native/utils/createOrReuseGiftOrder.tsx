@@ -1,10 +1,10 @@
-// Module ID: 11608
-// Function ID: 11609
+// Module ID: 11602
+// Function ID: 11603
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 5987, 1387, 1083, 3, 1377, 9344, 9657, 9531, 2166, 5055, 2]
+// Dependencies: [5, 19, 5987, 1387, 1083, 3, 1377, 9343, 9656, 9530, 2166, 5055, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 11608 (createOrReuseGiftOrder)
+// Module 11602 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1083 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -24,7 +24,7 @@ let result = size.fileFinishedImporting("modules/payments/native/utils/createOrR
 
 export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
   let mobileStoreFront;
-  let obj = mobileStoreFront(9657);
+  let obj = mobileStoreFront(9656);
   mobileStoreFront = obj.useMobileStoreFront();
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async function(arg0, value) {

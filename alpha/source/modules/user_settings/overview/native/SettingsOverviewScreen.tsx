@@ -1,16 +1,16 @@
-// Module ID: 19586
-// Function ID: 19587
+// Module ID: 19581
+// Function ID: 19582
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 2186, 9136, 21, 1113, 1380, 17996, 2171, 17254, 504, 10444, 12317, 17096, 2]
+// Dependencies: [19, 2186, 9135, 21, 1113, 1380, 17991, 2171, 17249, 504, 10442, 12311, 17091, 2]
 // Exports: default
 
-// Module 19586 (SettingsOverviewScreen)
+// Module 19581 (SettingsOverviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl8 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17996 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17991 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import size from "module_2" /* 2 */;

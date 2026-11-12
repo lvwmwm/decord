@@ -1,10 +1,10 @@
-// Module ID: 19715
-// Function ID: 19716
+// Module ID: 19710
+// Function ID: 19711
 // Name: ActivityPanelUtils
 // Dependencies: [5092, 5146, 5091, 5896, 5164, 5917, 1093, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText, useIsActivityPanelFullscreen, useIsConnectedToActivityInText
 
-// Module 19715 (ActivityPanelUtils)
+// Module 19710 (ActivityPanelUtils)
 import get_initialized from "get initialized" /* 504 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5164 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5896 */;

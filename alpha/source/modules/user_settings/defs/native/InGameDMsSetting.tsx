@@ -1,15 +1,15 @@
-// Module ID: 18463
-// Function ID: 18464
+// Module ID: 18458
+// Function ID: 18459
 // Name: InGameDMsSetting
-// Dependencies: [19, 9136, 5068, 1196, 1113, 12317, 2]
+// Dependencies: [19, 9135, 5068, 1196, 1113, 12311, 2]
 
-// Module 18463 (InGameDMsSetting)
+// Module 18458 (InGameDMsSetting)
 import intl4 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 5068 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

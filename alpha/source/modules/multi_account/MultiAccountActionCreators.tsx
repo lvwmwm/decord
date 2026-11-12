@@ -1,10 +1,10 @@
-// Module ID: 14724
-// Function ID: 14725
+// Module ID: 14720
+// Function ID: 14721
 // Name: MultiAccountActionCreators
-// Dependencies: [5, 502, 5146, 14720, 1072, 3, 1098, 572, 1282, 1252, 6781, 2]
+// Dependencies: [5, 502, 5146, 14716, 1072, 3, 1098, 572, 1282, 1252, 6781, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 14724 (MultiAccountActionCreators)
+// Module 14720 (MultiAccountActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TokenManagerAll from "TokenManager" /* 1098 */;
@@ -12,7 +12,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import MultiAccountStore from "MultiAccountStore" /* 14720 */;
+import MultiAccountStore from "MultiAccountStore" /* 14716 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

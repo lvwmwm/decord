@@ -1,26 +1,26 @@
-// Module ID: 20529
-// Function ID: 20530
+// Module ID: 20524
+// Function ID: 20525
 // Name: AvatarRoseExample
-// Dependencies: [19, 21, 20530, 20531, 20532, 7689, 5957, 2]
+// Dependencies: [19, 21, 20525, 20526, 20527, 7689, 5957, 2]
 // Exports: AvatarRoseExample
 
-// Module 20529 (AvatarRoseExample)
+// Module 20524 (AvatarRoseExample)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7689 */;
-import _modDef20530 from "module_20530" /* 20530 */;
-import _modDef20531 from "module_20531" /* 20531 */;
-import _modDef20532 from "module_20532" /* 20532 */;
+import _modDef20525 from "module_20525" /* 20525 */;
+import _modDef20526 from "module_20526" /* 20526 */;
+import _modDef20527 from "module_20527" /* 20527 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef20530 };
+let obj2 = { uri: _modDef20525 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef20531 };
+let obj3 = { uri: _modDef20526 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef20532 };
-({ uri: _modDef20532 });
+obj[3] = { uri: _modDef20527 };
+({ uri: _modDef20527 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarRoseExample.native.tsx");
 

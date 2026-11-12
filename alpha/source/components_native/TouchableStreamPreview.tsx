@@ -1,10 +1,10 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13001
+// Function ID: 13002
 // Name: TouchableStreamPreview
-// Dependencies: [19, 17, 6009, 6757, 502, 5092, 5114, 5175, 5918, 1072, 21, 5243, 5240, 575, 6293, 504, 1113, 6872, 6799, 6836, 6003, 6745, 5836, 13008, 5866, 2]
+// Dependencies: [19, 17, 6009, 6757, 502, 5092, 5114, 5175, 5918, 1072, 21, 5243, 5240, 575, 6293, 504, 1113, 6872, 6799, 6836, 6003, 6745, 5836, 13002, 5866, 2]
 // Exports: default
 
-// Module 13007 (TouchableStreamPreview)
+// Module 13001 (TouchableStreamPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

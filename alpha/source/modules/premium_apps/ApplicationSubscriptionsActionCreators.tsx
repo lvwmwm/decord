@@ -1,12 +1,12 @@
-// Module ID: 16840
-// Function ID: 16841
+// Module ID: 16835
+// Function ID: 16836
 // Name: ApplicationSubscriptionsActionCreators
-// Dependencies: [5, 1072, 572, 12682, 7209, 2]
+// Dependencies: [5, 1072, 572, 12676, 7209, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 16840 (ApplicationSubscriptionsActionCreators)
+// Module 16835 (ApplicationSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 12682 */;
+import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 12676 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

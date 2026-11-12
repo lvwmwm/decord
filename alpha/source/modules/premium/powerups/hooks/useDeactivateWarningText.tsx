@@ -1,10 +1,10 @@
-// Module ID: 10686
-// Function ID: 10687
+// Module ID: 10680
+// Function ID: 10681
 // Name: useDeactivateWarningText
 // Dependencies: [19, 5473, 5149, 5114, 504, 7825, 5464, 1113, 2717, 2]
 // Exports: default
 
-// Module 10686 (useDeactivateWarningText)
+// Module 10680 (useDeactivateWarningText)
 import _modDef2717 from "module_2717" /* 2717 */;
 import Powerups from "Powerups" /* 5464 */;
 import react_mod from "react" /* 19 */;
@@ -14,7 +14,7 @@ import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, vanityURLCode;
+let _require, importDefault;
 
 let react = react_mod;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useDeactivateWarningText.tsx");
@@ -36,7 +36,7 @@ export default function useDeactivateWarningText(arg0, skuId) {
   const items1 = [GuildStore];
   stateFromStores1 = obj2.useStateFromStores(items1, () => {
     const guild = GuildStore.getGuild(closure_0);
-    vanityURLCode = undefined;
+    let vanityURLCode;
     if (guild != null) {
       vanityURLCode = guild.vanityURLCode;
     }

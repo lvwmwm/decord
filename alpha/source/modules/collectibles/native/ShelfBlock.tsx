@@ -1,18 +1,18 @@
-// Module ID: 18406
-// Function ID: 18407
+// Module ID: 18401
+// Function ID: 18402
 // Name: ShelfBlock
-// Dependencies: [19, 17, 8419, 1074, 1072, 21, 5243, 575, 1499, 9353, 18380, 7852, 7871, 504, 18382, 17499, 8418, 10349, 5957, 5866, 5873, 1113, 5853, 7822, 2]
+// Dependencies: [19, 17, 8419, 1074, 1072, 21, 5243, 575, 1499, 9352, 18375, 7852, 7871, 504, 18377, 17494, 8418, 10347, 5957, 5866, 5873, 1113, 5853, 7822, 2]
 // Exports: default
 
-// Module 18406 (ShelfBlock)
+// Module 18401 (ShelfBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8418 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9353 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 10349 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9352 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 10347 */;
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8419 */;
 import Fragment from "Fragment" /* 21 */;

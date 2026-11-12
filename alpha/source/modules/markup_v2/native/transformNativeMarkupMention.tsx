@@ -1,15 +1,15 @@
-// Module ID: 9309
-// Function ID: 9310
+// Module ID: 9308
+// Function ID: 9309
 // Name: transformNativeMarkupMention
-// Dependencies: [9310, 6281, 6279, 6291, 9315, 2]
+// Dependencies: [9309, 6281, 6279, 6291, 9314, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 9309 (transformNativeMarkupMention)
+// Module 9308 (transformNativeMarkupMention)
 import MarkupTypes from "MarkupTypes" /* 6279 */;
 import MarkupRules from "MarkupRules" /* 6281 */;
 import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 6291 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 9310 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 9315 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 9309 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 9314 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -37,10 +37,10 @@ export function transformNativeMention(value, allowGameMentions) {
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "paddingHorizontal", everyoneOrHere: false }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "paddingHorizontal", everyoneOrHere: 1758146987692178000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "paddingHorizontal", everyoneOrHere: false }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "paddingHorizontal", everyoneOrHere: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003522887313309739 }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

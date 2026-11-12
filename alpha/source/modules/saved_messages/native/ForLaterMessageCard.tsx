@@ -1,12 +1,12 @@
-// Module ID: 11854
-// Function ID: 11855
+// Module ID: 11848
+// Function ID: 11849
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 5175, 1072, 21, 5243, 575, 7381, 7557, 5866, 1113, 7922, 5978, 11855, 11859, 6785, 1252, 11845, 2166, 11860, 11861, 504, 11870, 11872, 11873, 2]
+// Dependencies: [5, 19, 17, 5175, 1072, 21, 5243, 575, 7381, 7557, 5866, 1113, 7922, 5978, 11849, 11853, 6785, 1252, 11839, 2166, 11854, 11855, 504, 11864, 11866, 11867, 2]
 
-// Module 11854 (ForLaterMessageCard)
+// Module 11848 (ForLaterMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 11855 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 11849 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 5175 */;

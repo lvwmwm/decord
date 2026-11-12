@@ -1,19 +1,19 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 15595
+// Function ID: 15596
 // Name: ContentInventoryActivityStore
-// Dependencies: [6005, 10138, 8355, 8353, 10155, 6006, 9410, 9409, 12, 504, 572, 2]
+// Dependencies: [6005, 10137, 8355, 8353, 10153, 6006, 9409, 9408, 12, 504, 572, 2]
 
-// Module 15598 (ContentInventoryActivityStore)
+// Module 15595 (ContentInventoryActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ActivityTypes from "ActivityTypes" /* 6006 */;
 import utils from "utils" /* 8353 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8355 */;
-import matchUtils from "matchUtils" /* 9409 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 9410 */;
+import matchUtils from "matchUtils" /* 9408 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 9409 */;
 import PresenceStore from "PresenceStore" /* 6005 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 10138 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 10137 */;
 import size from "module_2" /* 2 */;
 
 let _require;
@@ -30,7 +30,7 @@ function getMatchingActivity(author_type) {
     let tmpResult = tmp(8353);
     let found;
     if (tmpResult.isEntryActive(author_type)) {
-      if (author_type.author_type === tmp(10155).ContentInventoryAuthorType.USER) {
+      if (author_type.author_type === tmp(10153).ContentInventoryAuthorType.USER) {
         const activities = PresenceStore.getActivities(author_type.author_id);
         found = activities.find((type) => {
           let result;

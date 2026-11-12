@@ -1,10 +1,10 @@
-// Module ID: 17312
-// Function ID: 17313
+// Module ID: 17307
+// Function ID: 17308
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1385, 8673, 8674, 1072, 21, 5243, 575, 1187, 38, 563, 11, 5866, 5309, 9553, 7654, 7657, 1113, 2685, 17313, 17316, 17317, 2]
+// Dependencies: [19, 17, 1385, 8673, 8674, 1072, 21, 5243, 575, 1187, 38, 563, 11, 5866, 5309, 9552, 7654, 7657, 1113, 2685, 17308, 17311, 17312, 2]
 // Exports: default
 
-// Module 17312 (FamilyCenterActivityRow)
+// Module 17307 (FamilyCenterActivityRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -16,10 +16,10 @@ import UserUtilsDefault from "UserUtils" /* 5309 */;
 import GuildIconDefault from "GuildIcon" /* 7654 */;
 import GuildBadgeDefault from "GuildBadge" /* 7657 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 8674 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 9553 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 17313 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 17316 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 17317 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 9552 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 17308 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 17311 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 17312 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
@@ -77,8 +77,8 @@ const memoResult = react.memo(function(action) {
     const _Date = Date;
     const self = this;
     const self2 = this;
-    formatUserActivityTimestamp = action(9553).formatUserActivityTimestamp;
-    action(9553);
+    formatUserActivityTimestamp = action(9552).formatUserActivityTimestamp;
+    action(9552);
     date = new Date(extractTimestampResult);
     items2[1] = closure_8(Text2, obj7);
     items1[1] = closure_9(View, obj5);

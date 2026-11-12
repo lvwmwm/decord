@@ -1,9 +1,9 @@
-// Module ID: 20450
-// Function ID: 20451
+// Module ID: 20445
+// Function ID: 20446
 // Name: GuildSettingsModalMembersWrapper
-// Dependencies: [19, 21, 7216, 19221, 19223, 2]
+// Dependencies: [19, 21, 7216, 19216, 19218, 2]
 
-// Module 20450 (GuildSettingsModalMembersWrapper)
+// Module 20445 (GuildSettingsModalMembersWrapper)
 import Fragment from "Fragment" /* 21 */;
 import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 7216 */;
 import react from "react" /* 19 */;
@@ -13,7 +13,7 @@ const jsx = Fragment.jsx;
 const memoResult = react.memo(function GuildSettingsModalMembersWrapper(guildId) {
   guildId = guildId.guildId;
   const obj = canReviewGuildMemberApplications;
-  return jsx(importDefault(obj.useCanReviewGuildMemberApplications(guildId) ? 19221 : 19223), { guildId });
+  return jsx(importDefault(obj.useCanReviewGuildMemberApplications(guildId) ? 19216 : 19218), { guildId });
 });
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMembersWrapper.tsx");
 

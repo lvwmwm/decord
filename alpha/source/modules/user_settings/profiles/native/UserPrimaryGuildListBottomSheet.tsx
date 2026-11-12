@@ -1,10 +1,10 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17014
+// Function ID: 17015
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 8344, 21, 5243, 1377, 575, 8343, 5315, 7379, 5489, 1113, 7654, 10587, 7682, 10607, 12, 5252, 10611, 7871, 7885, 7847, 5873, 7759, 5503, 5866, 7822, 8041, 2]
+// Dependencies: [32, 19, 17, 8344, 21, 5243, 1377, 575, 8343, 5315, 7379, 5489, 1113, 7654, 10585, 7682, 10605, 12, 5252, 10609, 7871, 7885, 7847, 5873, 7759, 5503, 5866, 7822, 8041, 2]
 // Exports: default
 
-// Module 17019 (UserPrimaryGuildListBottomSheet)
+// Module 17014 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,7 +15,7 @@ import GuildIconDefault from "GuildIcon" /* 7654 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import _mod8041 from "module_8041" /* 8041 */;
 import GuildTagConstants from "GuildTagConstants" /* 8344 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 10611 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 10609 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -122,7 +122,7 @@ let closure_11 = react.memo(function Item(item) {
     const obj9 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-sm/semibold", textColor: "text-strong" };
     ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp);
     tag = profile.tag;
-    const BaseGuildTagChiplet = tmp8(10587).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp8(10585).BaseGuildTagChiplet;
     tmp11Result2 = tmp11(BaseGuildTagChiplet, obj9);
   }
   items = [tmp11Result2, closure_7(item(7682).FormRadio, { selected })];

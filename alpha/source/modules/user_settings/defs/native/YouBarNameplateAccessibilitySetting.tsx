@@ -1,15 +1,15 @@
-// Module ID: 17916
-// Function ID: 17917
+// Module ID: 17911
+// Function ID: 17912
 // Name: YouBarNameplateAccessibilitySetting
-// Dependencies: [5244, 9136, 12317, 1113, 504, 16771, 2]
+// Dependencies: [5244, 9135, 12311, 1113, 504, 16766, 2]
 
-// Module 17916 (YouBarNameplateAccessibilitySetting)
+// Module 17911 (YouBarNameplateAccessibilitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16771 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16766 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

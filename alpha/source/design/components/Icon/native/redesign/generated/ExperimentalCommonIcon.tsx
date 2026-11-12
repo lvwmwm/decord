@@ -1,14 +1,14 @@
-// Module ID: 10052
-// Function ID: 10053
+// Module ID: 10051
+// Function ID: 10052
 // Name: ExperimentalCommonIcon
-// Dependencies: [19, 21, 575, 5956, 10053, 2]
+// Dependencies: [19, 21, 575, 5956, 10052, 2]
 // Exports: ExperimentalCommonIcon
 
-// Module 10052 (ExperimentalCommonIcon)
+// Module 10051 (ExperimentalCommonIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10053 */;
+import AssetRegistry from "AssetRegistry" /* 10052 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

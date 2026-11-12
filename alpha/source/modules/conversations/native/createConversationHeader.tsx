@@ -1,16 +1,16 @@
-// Module ID: 14456
-// Function ID: 14457
+// Module ID: 14452
+// Function ID: 14453
 // Name: createConversationHeader
-// Dependencies: [9094, 8588, 13640, 1113, 3981, 11821, 2]
+// Dependencies: [9093, 8588, 13634, 1113, 3981, 11815, 2]
 // Exports: default, findConversationHeaderRowIndex
 
-// Module 14456 (createConversationHeader)
+// Module 14452 (createConversationHeader)
 import intl2 from "intl" /* 1113 */;
 import _modDef3981 from "module_3981" /* 3981 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
-import computeScrollData from "computeScrollData" /* 11821 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13640 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 9094 */;
+import computeScrollData from "computeScrollData" /* 11815 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13634 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 9093 */;
 import size from "module_2" /* 2 */;
 
 let c3;

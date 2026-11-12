@@ -1,17 +1,17 @@
-// Module ID: 14085
-// Function ID: 14086
+// Module ID: 14081
+// Function ID: 14082
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 8165, 8140, 1072, 21, 5243, 575, 5866, 504, 14079, 1499, 8141, 14084, 14080, 8139, 7351, 1113, 5873, 7427, 14086, 1260, 14106, 14108, 14110, 14112, 5854, 7424, 2]
+// Dependencies: [5, 32, 19, 17, 8165, 8140, 1072, 21, 5243, 575, 5866, 504, 14075, 1499, 8141, 14080, 14076, 8139, 7351, 1113, 5873, 7427, 14082, 1260, 14102, 14104, 14106, 14108, 5854, 7424, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 14085 (AppealIngestionModal)
+// Module 14081 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 14084 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 14080 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -49,7 +49,7 @@ export default function AppealIngestionModal(classificationId) {
   let c0;
   let classification;
   let intl;
-  const f107972 = () => {
+  const f107979 = () => {
     let obj11;
     let obj3;
     let obj5;
@@ -154,8 +154,8 @@ export default function AppealIngestionModal(classificationId) {
   if (!flag2) {
     flag2 = false;
   }
-  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5854)(f107972), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
-  flag(5854)(f107972);
+  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5854)(f107979), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
+  flag(5854)(f107979);
   const Navigator = tmp(7424).Navigator;
   intl = tmp(1113).intl;
   return closure_12(Navigator, obj2);

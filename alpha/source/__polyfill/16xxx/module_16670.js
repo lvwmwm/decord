@@ -1,25 +1,55 @@
 // Module ID: 16670
 // Function ID: 16671
-// Dependencies: [16636, 16657, 16671, 16681, 16682]
+// Dependencies: [16629, 16671, 16675]
 
 // Module 16670
-import _mod16636 from "module_16636" /* 16636 */;
-import _mod16657 from "module_16657" /* 16657 */;
-import f2 from "f" /* 16671 */;
-import _mod16681 from "module_16681" /* 16681 */;
-import _mod16682 from "module_16682" /* 16682 */;
+import _mod16629 from "module_16629" /* 16629 */;
+import _mod16671 from "module_16671" /* 16671 */;
 
-function ownKeys(arg0) {
-  const obj = f2;
-  const fResult = obj.f(_mod16681(arg0));
-  const f = _mod16682.f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = closure_2(fResult, f(arg0));
+let tmp;
+const _mod16675 = tmp(16675);
+const f112669 = (arg0, arg1, arg2) => {
+  const tmp3 = _mod16629(arg0);
+  const tmp4 = _mod16671(tmp3);
+  if (0 === tmp4) {
+    return !c0 && -1;
+  } else {
+    let sum = _mod16675(arg2, tmp4);
+    const tmp16 = c0;
+    if (tmp16) {
+      if (arg1 != arg1) {
+        if (tmp4 > sum) {
+          while (tmp3[+sum] == tmp3[+sum]) {
+            sum = tmp7 + 1;
+          }
+          return true;
+        }
+      }
+      return !c0 && -1;
+    }
+    let sum1 = sum;
+    if (tmp4 > sum) {
+      let num;
+      while (true) {
+        num = c0;
+        if (c0) {
+          if (tmp3[sum1] === arg1) {
+            break;
+          }
+        }
+        sum1 = sum1 + 1;
+      }
+      if (!num) {
+        num = sum1;
+      }
+      if (!num) {
+        num = 0;
+      }
+      return num;
+    }
   }
-  return tmp2;
-}
-let closure_2 = _mod16636([].concat);
-_mod16657("Reflect", "ownKeys") || ownKeys;
+};
+let c0 = false;
+const obj = { includes: f112669, indexOf: f112669 };
 
-export default _mod16657("Reflect", "ownKeys") || ownKeys;
+export default obj;

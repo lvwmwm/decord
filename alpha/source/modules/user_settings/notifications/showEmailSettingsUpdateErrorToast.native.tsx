@@ -1,10 +1,10 @@
-// Module ID: 18006
-// Function ID: 18007
+// Module ID: 18001
+// Function ID: 18002
 // Name: showEmailSettingsUpdateErrorToast
 // Dependencies: [5951, 1113, 2]
 // Exports: default
 
-// Module 18006 (showEmailSettingsUpdateErrorToast)
+// Module 18001 (showEmailSettingsUpdateErrorToast)
 import intl2 from "intl" /* 1113 */;
 import ToastUtils from "ToastUtils" /* 5951 */;
 import size from "module_2" /* 2 */;

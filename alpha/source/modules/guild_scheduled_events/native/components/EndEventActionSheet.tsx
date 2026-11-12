@@ -1,17 +1,17 @@
-// Module ID: 15818
-// Function ID: 15819
+// Module ID: 15813
+// Function ID: 15814
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 5098, 1072, 21, 5243, 575, 8360, 5489, 10516, 15819, 1187, 1113, 5866, 5873, 7904, 2]
+// Dependencies: [19, 17, 5098, 1072, 21, 5243, 575, 8360, 5489, 10514, 15814, 1187, 1113, 5866, 5873, 7904, 2]
 // Exports: default
 
-// Module 15818 (EndEventActionSheet)
+// Module 15813 (EndEventActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5098 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 7904 */;
-import CallsUtils from "CallsUtils" /* 10516 */;
+import CallsUtils from "CallsUtils" /* 10514 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -55,7 +55,7 @@ export default function EndEventActionSheet(channel) {
     }
     let obj2 = { children: closure_6(View, obj3) };
     obj3 = { style: tmp.container, children: items };
-    const tmp7 = activeEvent(15819);
+    const tmp7 = activeEvent(15814);
     const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1113).t["4Ao8LC"]) };
     const LegacyText = tmp2(1187).LegacyText;
     intl = tmp2(1113).intl;

@@ -1,10 +1,10 @@
-// Module ID: 16294
-// Function ID: 16295
+// Module ID: 16289
+// Function ID: 16290
 // Name: LeaveServerAlert
 // Dependencies: [1072, 21, 6211, 1113, 6211, 8338, 2]
 // Exports: default
 
-// Module 16294 (LeaveServerAlert)
+// Module 16289 (LeaveServerAlert)
 import Constants from "Constants" /* 1072 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8338 */;
 import Fragment from "Fragment" /* 21 */;

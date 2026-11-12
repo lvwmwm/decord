@@ -1,10 +1,10 @@
-// Module ID: 17268
-// Function ID: 17269
+// Module ID: 17263
+// Function ID: 17264
 // Name: showDataPrivacyRateLimitAlert
 // Dependencies: [6205, 1113, 2]
 // Exports: showDataPrivacyRateLimitAlert
 
-// Module 17268 (showDataPrivacyRateLimitAlert)
+// Module 17263 (showDataPrivacyRateLimitAlert)
 import intl3 from "intl" /* 1113 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
 import size from "module_2" /* 2 */;

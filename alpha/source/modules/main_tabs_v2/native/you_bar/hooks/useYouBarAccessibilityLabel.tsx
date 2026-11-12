@@ -1,16 +1,16 @@
-// Module ID: 19013
-// Function ID: 19014
+// Module ID: 19008
+// Function ID: 19009
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [6757, 5092, 5175, 6005, 5185, 7252, 5918, 1072, 5309, 5068, 9466, 8343, 504, 10784, 10785, 10791, 1113, 6006, 10794, 2]
+// Dependencies: [6757, 5092, 5175, 6005, 5185, 7252, 5918, 1072, 5309, 5068, 9465, 8343, 504, 10778, 10779, 10785, 1113, 6006, 10788, 2]
 // Exports: useYouBarAccessibilityLabel
 
-// Module 19013 (useYouBarAccessibilityLabel)
+// Module 19008 (useYouBarAccessibilityLabel)
 import Constants from "Constants" /* 1072 */;
 import UserUtils from "UserUtils" /* 5309 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10784 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10785 */;
-import isGameActivityDefault from "isGameActivity" /* 10791 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10794 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10778 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10779 */;
+import isGameActivityDefault from "isGameActivity" /* 10785 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10788 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
@@ -45,8 +45,8 @@ export function useYouBarAccessibilityLabel(stateFromStores) {
     text = setting.text;
   }
   let tmp7 = null;
-  const useGameMentionsAsPlainText = tmp3(9466).useGameMentionsAsPlainText;
-  tmp3(9466);
+  const useGameMentionsAsPlainText = tmp3(9465).useGameMentionsAsPlainText;
+  tmp3(9465);
   if ("" !== text) {
     tmp7 = text;
   }

@@ -1,10 +1,10 @@
-// Module ID: 11603
-// Function ID: 11604
+// Module ID: 11597
+// Function ID: 11598
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8481, 9557, 11604, 1385, 1072, 9237, 1387, 1083, 21, 3, 9530, 11605, 9531, 5055, 11606, 1113, 11607, 2171, 8514, 9546, 11608, 504, 11609, 11612, 8486, 8414, 6206, 1252, 7871, 11613, 572, 1377, 9618, 9621, 2]
+// Dependencies: [5, 32, 19, 8481, 9556, 11598, 1385, 1072, 9236, 1387, 1083, 21, 3, 9529, 11599, 9530, 5055, 11600, 1113, 11601, 2171, 8514, 9545, 11602, 504, 11603, 11606, 8486, 8414, 6206, 1252, 7871, 11607, 572, 1377, 9617, 9620, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 11603 (NativeGiftContext)
+// Module 11597 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -16,16 +16,16 @@ import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import BadgeId from "BadgeId" /* 8414 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8486 */;
-import Constants3 from "Constants" /* 9237 */;
-import ContextUtilsDefault from "ContextUtils" /* 9530 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9618 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11613 */;
+import Constants3 from "Constants" /* 9236 */;
+import ContextUtilsDefault from "ContextUtils" /* 9529 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9617 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11607 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8481 */;
-import PromotionsStore from "PromotionsStore" /* 9557 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 11604 */;
+import PromotionsStore from "PromotionsStore" /* 9556 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 11598 */;
 import UserStore from "UserStore" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
@@ -317,7 +317,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
     let closure_10 = tmp5;
     setCustomGiftMessage = tmp9;
     let closure_12 = tmp26;
-    let obj6 = { orderId: "a", planId: "flexDirection", planSelection: obj7, giftInfo: "192px" };
+    let obj6 = { orderId: "a", planId: "flexDirection", planSelection: obj7, giftInfo: 331 };
     obj7 = { premiumType, planInterval: first1 };
     constants = obj.useRef(obj6);
     let closure_14 = obj.useRef(false);

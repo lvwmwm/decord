@@ -1,13 +1,13 @@
-// Module ID: 18903
-// Function ID: 18904
+// Module ID: 18898
+// Function ID: 18899
 // Name: FavoritesGuildSuggestionsLoader
-// Dependencies: [19, 18795, 21, 18904, 2]
+// Dependencies: [19, 18790, 21, 18899, 2]
 
-// Module 18903 (FavoritesGuildSuggestionsLoader)
+// Module 18898 (FavoritesGuildSuggestionsLoader)
 import Fragment from "Fragment" /* 21 */;
-import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 18904 */;
+import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 18899 */;
 import react_mod from "react" /* 19 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18795 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18790 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

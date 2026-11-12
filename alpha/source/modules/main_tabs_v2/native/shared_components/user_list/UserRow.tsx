@@ -1,9 +1,9 @@
-// Module ID: 10514
-// Function ID: 10515
+// Module ID: 10512
+// Function ID: 10513
 // Name: UserRow
-// Dependencies: [19, 17, 5244, 2162, 8700, 5092, 6005, 5185, 10177, 1072, 21, 1357, 5243, 575, 8069, 38, 10515, 10777, 5951, 10778, 8072, 8701, 504, 1187, 5866, 5309, 10782, 7852, 6964, 1113, 10802, 10803, 7672, 5873, 2151, 9036, 8004, 8410, 2118, 8510, 10805, 9915, 6287, 9123, 6687, 10000, 9998, 10807, 10809, 10587, 10810, 7667, 10826, 7379, 2]
+// Dependencies: [19, 17, 5244, 2162, 8700, 5092, 6005, 5185, 10175, 1072, 21, 1357, 5243, 575, 8069, 38, 10513, 10771, 5951, 10772, 8072, 8701, 504, 1187, 5866, 5309, 10776, 7852, 6964, 1113, 10796, 10797, 7672, 5873, 2151, 9035, 8004, 8410, 2118, 8510, 10799, 9914, 6287, 9122, 6687, 9999, 9997, 10801, 10803, 10585, 10804, 7667, 10820, 7379, 2]
 
-// Module 10514 (UserRow)
+// Module 10512 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -19,15 +19,15 @@ import ChatIcon from "ChatIcon" /* 8004 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8072 */;
 import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 8701 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9036 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9915 */;
-import UserRowConstants from "UserRowConstants" /* 10177 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10777 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10778 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10782 */;
-import ActionButtonDefault from "ActionButton" /* 10802 */;
-import XLargeIcon from "XLargeIcon" /* 10803 */;
-import CrownIcon2 from "CrownIcon" /* 10805 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9035 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9914 */;
+import UserRowConstants from "UserRowConstants" /* 10175 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10771 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10772 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10776 */;
+import ActionButtonDefault from "ActionButton" /* 10796 */;
+import XLargeIcon from "XLargeIcon" /* 10797 */;
+import CrownIcon2 from "CrownIcon" /* 10799 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
@@ -115,7 +115,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let obj;
 if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "Array" };
+  obj = { lineHeight: "r" };
 }
 let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "Array" };
+      let obj2 = { accessibilityActions: items, actions: "a" };
       return obj2;
     } else {
       let tmp9;

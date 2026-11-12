@@ -1,10 +1,10 @@
-// Module ID: 18226
-// Function ID: 18227
+// Module ID: 18221
+// Function ID: 18222
 // Name: OrbCheckoutMenu
-// Dependencies: [32, 19, 21, 5243, 6785, 15390, 2118, 5952, 7381, 5866, 7553, 5873, 2]
+// Dependencies: [32, 19, 21, 5243, 6785, 15387, 2118, 5952, 7381, 5866, 7553, 5873, 2]
 // Exports: default
 
-// Module 18226 (OrbCheckoutMenu)
+// Module 18221 (OrbCheckoutMenu)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -37,7 +37,7 @@ export default function OrbCheckoutMenu() {
             obj.open("ORB_CHECKOUT_SUCCESS", { text: "Successfully redeemed item with Orbs" });
           }
       };
-      obj.pushLazy(asyncRequire(15390, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(15387, dependencyMap.paths), obj2);
     }
   }, items);
   let obj = { children: items1 };

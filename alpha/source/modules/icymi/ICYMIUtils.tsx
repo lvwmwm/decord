@@ -1,24 +1,24 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10147
+// Function ID: 10148
 // Name: ICYMIUtils
-// Dependencies: [5, 6966, 5096, 5092, 5114, 10143, 1072, 10142, 10150, 10154, 6311, 10155, 8355, 9045, 1113, 2]
+// Dependencies: [5, 6966, 5096, 5092, 5114, 10142, 1072, 10141, 10148, 10152, 6311, 10153, 8355, 9044, 1113, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, hydrateItems, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, itemToType, numberToCustomScore
 
-// Module 10149 (ICYMIUtils)
+// Module 10147 (ICYMIUtils)
 import intl11 from "intl" /* 1113 */;
 import ChannelRecord from "ChannelRecord" /* 5096 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6311 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8355 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9045 */;
-import ICYMITypes from "ICYMITypes" /* 10142 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10150 */;
-import generateHydrationId from "generateHydrationId" /* 10154 */;
-import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 10155 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9044 */;
+import ICYMITypes from "ICYMITypes" /* 10141 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10148 */;
+import generateHydrationId from "generateHydrationId" /* 10152 */;
+import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 10153 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6966 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 10143 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 10142 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -391,11 +391,11 @@ export function determineContentType(channel, message) {
       let IMAGE;
       obj = ForumPostMediaUtils;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        IMAGE = tmp6(10142).ContentType.IMAGE;
+        IMAGE = tmp6(10141).ContentType.IMAGE;
       } else {
         const tmp6Result = ForumPostMediaUtils;
         const result = tmp6Result.isValidVideoAttachment(message.attachments[0]);
-        const ContentType = tmp6(10142).ContentType;
+        const ContentType = tmp6(10141).ContentType;
         IMAGE = result ? ContentType.VIDEO : ContentType.FILE;
       }
       INTERESTING = IMAGE;

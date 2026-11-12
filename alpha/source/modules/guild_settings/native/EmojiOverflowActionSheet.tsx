@@ -1,13 +1,13 @@
-// Module ID: 20363
-// Function ID: 20364
+// Module ID: 20358
+// Function ID: 20359
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 5243, 7885, 5957, 1411, 5866, 7680, 7379, 5977, 1113, 11244, 10838, 6694, 5951, 7483, 2]
+// Dependencies: [5, 19, 17, 21, 5243, 7885, 5957, 1411, 5866, 7680, 7379, 5977, 1113, 11238, 10832, 6694, 5951, 7483, 2]
 // Exports: default
 
-// Module 20363 (EmojiOverflowActionSheet)
+// Module 20358 (EmojiOverflowActionSheet)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 11244 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 11238 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -76,7 +76,7 @@ export default function EmojiOverflowActionSheet(emoji) {
   intl = emoji(1113).intl;
   const items2 = [closure_6(TableRow, obj7), , , ];
   const obj9 = {
-    icon: closure_6(emoji(10838).PencilIcon, {}),
+    icon: closure_6(emoji(10832).PencilIcon, {}),
     label: closure_6(Text3, obj10),
     onPress() {
       dependencyMap();
@@ -91,7 +91,7 @@ export default function EmojiOverflowActionSheet(emoji) {
   let tmp5Result = null;
   if (null != onSelectRolesForEmoji) {
     const obj11 = {
-      icon: closure_6(tmp3(10838).PencilIcon, {}),
+      icon: closure_6(tmp3(10832).PencilIcon, {}),
       label: closure_6(Text4, obj12),
       onPress: onClose(function*(arg0, value) {
           let obj2;

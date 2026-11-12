@@ -1,10 +1,10 @@
-// Module ID: 13712
-// Function ID: 13713
+// Module ID: 13708
+// Function ID: 13709
 // Name: selectConjureChannel
 // Dependencies: [5146, 5099, 6872, 2]
 // Exports: default
 
-// Module 13712 (selectConjureChannel)
+// Module 13708 (selectConjureChannel)
 import ChannelConstants from "ChannelConstants" /* 5099 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6872 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;

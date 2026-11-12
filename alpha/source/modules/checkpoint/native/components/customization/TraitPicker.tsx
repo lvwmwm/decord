@@ -1,10 +1,10 @@
-// Module ID: 14420
-// Function ID: 14421
+// Module ID: 14416
+// Function ID: 14417
 // Name: TraitPicker
-// Dependencies: [19, 17, 6314, 21, 5243, 14421, 575, 6681, 1113, 3269, 5866, 14164, 14423, 1493, 14425, 14426, 14154, 5433, 14427, 2]
+// Dependencies: [19, 17, 6314, 21, 5243, 14417, 575, 6681, 1113, 3269, 5866, 14161, 14419, 1493, 14421, 14422, 14150, 5433, 14423, 2]
 // Exports: default
 
-// Module 14420 (TraitPicker)
+// Module 14416 (TraitPicker)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
@@ -13,12 +13,12 @@ import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5433 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6681 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 14154 */;
-import CheckpointTextDefault from "CheckpointText" /* 14164 */;
-import TraitOptionList from "TraitOptionList" /* 14421 */;
-import TraitOptionDetails from "TraitOptionDetails" /* 14423 */;
-import useTraitPickerOptions from "useTraitPickerOptions" /* 14425 */;
-import react2 from "react" /* 14426 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 14150 */;
+import CheckpointTextDefault from "CheckpointText" /* 14161 */;
+import TraitOptionList from "TraitOptionList" /* 14417 */;
+import TraitOptionDetails from "TraitOptionDetails" /* 14419 */;
+import useTraitPickerOptions from "useTraitPickerOptions" /* 14421 */;
+import react2 from "react" /* 14422 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -37,7 +37,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const TraitOptionListDefault = tmp(14421);
+const TraitOptionListDefault = tmp(14417);
 function EarnedCountHeader(customizationOption) {
   let earnedCount;
   let intl2;
@@ -201,7 +201,7 @@ export default function TraitPicker(selectedOptionId) {
   }
   if (isFinalizeRoute) {
     const obj6 = { activeCustomizationOption: customizationOption, onSelectOption: onSelectFinalizeOption, disableSwitching: isCurrentTraitBlocked, disabled };
-    tmp8Result = tmp8(tmp3(14427).FinalizeTraitTabs, obj6);
+    tmp8Result = tmp8(tmp3(14423).FinalizeTraitTabs, obj6);
     tmp11 = tmp8;
   } else {
     const obj7 = { customizationOption, earnedCount, totalCount };

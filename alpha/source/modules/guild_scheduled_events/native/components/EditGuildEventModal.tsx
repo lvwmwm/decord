@@ -46,7 +46,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
   let onClose;
   let right;
   let tmp8;
-  const f93977 = () => {
+  const f93988 = () => {
     obj = KeyboardManagerUtilsAll;
     const result = obj.dismissGlobalKeyboard();
     const tmp3 = first1;
@@ -166,7 +166,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
     }
     return items1;
   }), 1)[0];
-  [c6, tmp8] = first1(require("LazyAPIPromise")(f93977), 2);
+  [c6, tmp8] = first1(require("LazyAPIPromise")(f93988), 2);
   constants = {
     guild,
     guildEvent,
@@ -226,7 +226,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
     },
     fullscreen: true
   };
-  const tmp7 = first1(require("LazyAPIPromise")(f93977), 2);
+  const tmp7 = first1(require("LazyAPIPromise")(f93988), 2);
   const CHANNEL_SELECTOR = guild(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR;
   const CHANNEL_SELECTOR2 = guild(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR;
   obj3[CHANNEL_SELECTOR] = obj4;

@@ -1,10 +1,10 @@
-// Module ID: 18862
-// Function ID: 18863
+// Module ID: 18857
+// Function ID: 18858
 // Name: useGameClaimCoachmark
-// Dependencies: [5175, 1072, 18863, 504, 18785, 2]
+// Dependencies: [5175, 1072, 18858, 504, 18780, 2]
 // Exports: useCanShowGameClaimCoachmark
 
-// Module 18862 (useGameClaimCoachmark)
+// Module 18857 (useGameClaimCoachmark)
 import Constants from "Constants" /* 1072 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ export function useCanShowGameClaimCoachmark(id) {
       return PermissionStore.canWithPartialContext(Permissions.ADMINISTRATOR, obj);
     }, items1);
   }
-  const tmpResult = tmp(18785);
+  const tmpResult = tmp(18780);
   if (gameClaimCoachmarkEnabled) {
     gameClaimCoachmarkEnabled = tmpResult.useHasUnclaimedGames(id, gameClaimCoachmarkEnabled);
   }

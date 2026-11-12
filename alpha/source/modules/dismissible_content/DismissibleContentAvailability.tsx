@@ -1,15 +1,15 @@
-// Module ID: 9498
-// Function ID: 9499
+// Module ID: 9497
+// Function ID: 9498
 // Name: DismissibleContentAvailability
-// Dependencies: [5075, 11, 9497, 5307, 5077, 2]
+// Dependencies: [5075, 11, 9496, 5307, 5077, 2]
 // Exports: canShowScopedDismissibleContent
 
-// Module 9498 (DismissibleContentAvailability)
+// Module 9497 (DismissibleContentAvailability)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 5075 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 5077 */;
 import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5307 */;
-import DismissibleContentScope from "DismissibleContentScope" /* 9497 */;
+import DismissibleContentScope from "DismissibleContentScope" /* 9496 */;
 import size from "module_2" /* 2 */;
 
 function canShowTimeRecurringDismissibleContent(arg0, arg1, cooldownDurationMs, arg3) {

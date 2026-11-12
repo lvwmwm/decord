@@ -1,11 +1,11 @@
-// Module ID: 9724
-// Function ID: 9725
+// Module ID: 9723
+// Function ID: 9724
 // Name: ErrorUtils
-// Dependencies: [9725, 2]
+// Dependencies: [9724, 2]
 // Exports: getUnderlyingIOSError, serializeError
 
-// Module 9724 (ErrorUtils)
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 9725 */;
+// Module 9723 (ErrorUtils)
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 9724 */;
 import size from "module_2" /* 2 */;
 
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {

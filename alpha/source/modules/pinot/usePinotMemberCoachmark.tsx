@@ -1,14 +1,14 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 12239
+// Function ID: 12240
 // Name: usePinotMemberCoachmark
-// Dependencies: [32, 19, 12246, 12241, 9494, 5076, 12249, 5285, 2]
+// Dependencies: [32, 19, 12240, 12235, 9493, 5076, 12243, 5285, 2]
 // Exports: useIsPinotMemberCoachmarkPending, usePinotMemberCoachmark
 
-// Module 12245 (usePinotMemberCoachmark)
+// Module 12239 (usePinotMemberCoachmark)
 import dismissible_content from "dismissible_content" /* 5076 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5285 */;
-import useIsPinotMemberCoachmarkEligible from "useIsPinotMemberCoachmarkEligible" /* 12246 */;
-import PinotMemberNoticeActionCreators from "PinotMemberNoticeActionCreators" /* 12249 */;
+import useIsPinotMemberCoachmarkEligible from "useIsPinotMemberCoachmarkEligible" /* 12240 */;
+import PinotMemberNoticeActionCreators from "PinotMemberNoticeActionCreators" /* 12243 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -23,12 +23,12 @@ export function usePinotMemberCoachmark(channel, mobile_member_coachmark) {
   let items1;
   let pinotPromotableChannelId;
   const tmp2 = dependencyMap;
-  let obj = pinotPromotableChannelId(12246);
+  let obj = pinotPromotableChannelId(12240);
   const isPinotMemberCoachmarkEligible = obj.useIsPinotMemberCoachmarkEligible(channel, mobile_member_coachmark);
-  const obj2 = pinotPromotableChannelId(12241);
+  const obj2 = pinotPromotableChannelId(12235);
   pinotPromotableChannelId = obj2.usePinotPromotableChannelId(channel, mobile_member_coachmark);
-  const useSelectedDismissibleContent = pinotPromotableChannelId(9494).useSelectedDismissibleContent;
-  pinotPromotableChannelId(9494);
+  const useSelectedDismissibleContent = pinotPromotableChannelId(9493).useSelectedDismissibleContent;
+  pinotPromotableChannelId(9493);
   if (isPinotMemberCoachmarkEligible) {
     const items = [tmp(5076).DismissibleContent.PINOT_MEMBER_COACHMARK];
     items1 = items;

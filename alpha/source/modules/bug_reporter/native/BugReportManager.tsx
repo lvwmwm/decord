@@ -1,9 +1,9 @@
-// Module ID: 11079
-// Function ID: 11080
+// Module ID: 11073
+// Function ID: 11074
 // Name: BugReportManager
-// Dependencies: [5, 17, 1359, 1072, 6839, 1377, 10962, 10964, 1266, 7816, 8133, 11080, 2]
+// Dependencies: [5, 17, 1359, 1072, 6839, 1377, 10956, 10958, 1266, 7816, 8133, 11074, 2]
 
-// Module 11079 (BugReportManager)
+// Module 11073 (BugReportManager)
 import Constants from "Constants" /* 1072 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6839 */;
 import react_nativeDefault from "react-native" /* 8133 */;

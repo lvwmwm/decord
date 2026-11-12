@@ -1,10 +1,10 @@
-// Module ID: 15171
-// Function ID: 15172
+// Module ID: 15168
+// Function ID: 15169
 // Name: BadgeUnlockColorUtils
 // Dependencies: [5240, 2]
 // Exports: getBadgeHaloColor, pickBadgeColor
 
-// Module 15171 (BadgeUnlockColorUtils)
+// Module 15168 (BadgeUnlockColorUtils)
 import ColorUtils from "ColorUtils" /* 5240 */;
 import size from "module_2" /* 2 */;
 

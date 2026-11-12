@@ -1,25 +1,25 @@
-// Module ID: 19413
-// Function ID: 19414
+// Module ID: 19408
+// Function ID: 19409
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 5092, 16141, 6008, 1385, 10177, 1072, 21, 5243, 575, 8069, 6837, 8071, 13936, 5489, 504, 12452, 12454, 12451, 1252, 5952, 1113, 19412, 8985, 12455, 5951, 8995, 15777, 7594, 8409, 1187, 11721, 19349, 2]
+// Dependencies: [32, 5, 19, 17, 5092, 16136, 6008, 1385, 10175, 1072, 21, 5243, 575, 8069, 6837, 8071, 13932, 5489, 504, 12446, 12448, 12445, 1252, 5952, 1113, 19407, 8984, 12449, 5951, 8994, 15772, 7594, 8409, 1187, 11715, 19344, 2]
 // Exports: default
 
-// Module 19413 (NewGroupDMScreen)
+// Module 19408 (NewGroupDMScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ToastUtils from "ToastUtils" /* 5951 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
-import HeaderShared from "HeaderShared" /* 8985 */;
-import UserRowConstants from "UserRowConstants" /* 10177 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 12455 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19412 */;
+import HeaderShared from "HeaderShared" /* 8984 */;
+import UserRowConstants from "UserRowConstants" /* 10175 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 12449 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19407 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 16141 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 16136 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,18 +1,18 @@
-// Module ID: 10267
-// Function ID: 10268
+// Module ID: 10265
+// Function ID: 10266
 // Name: GameProfileReviews
-// Dependencies: [19, 17, 21, 5243, 575, 8184, 10268, 5257, 10217, 5949, 10270, 10271, 10219, 1113, 10227, 5866, 2159, 10273, 5957, 10279, 10223, 10280, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 8184, 10266, 5257, 10215, 5949, 10268, 10269, 10217, 1113, 10225, 5866, 2159, 10271, 5957, 10277, 10221, 10278, 2]
 // Exports: default
 
-// Module 10267 (GameProfileReviews)
+// Module 10265 (GameProfileReviews)
 import nativeDefault from "native" /* 575 */;
 import react2 from "react" /* 5257 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import LinkingDefault from "Linking" /* 5949 */;
 import AppleNeutralIcon from "AppleNeutralIcon" /* 8184 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 10217 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
-import GooglePlayNeutralIcon from "GooglePlayNeutralIcon" /* 10268 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 10215 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10217 */;
+import GooglePlayNeutralIcon from "GooglePlayNeutralIcon" /* 10266 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -53,13 +53,13 @@ function SteamReviewRow(url) {
   ({ title, rating, isRecentRating } = url);
   const tmp = closure_8();
   const alwaysShowLinkDecorations = react.useContext(url(5257).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
-  const tmp4 = trackAction(10217);
+  const tmp4 = trackAction(10215);
   const tmp4Result = tmp4(trackAction(5949).openURL);
   dependencyMap = tmp4Result;
-  const obj = url(10270);
+  const obj = url(10268);
   const result = obj.calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating);
   const items = [tmp4Result, url, trackAction];
-  const obj2 = url(10271);
+  const obj2 = url(10269);
   const steamReviewScoreDescriptionColor = obj2.getSteamReviewScoreDescriptionColor(result);
   const obj3 = {
     onPress: react.useCallback(() => {
@@ -74,7 +74,7 @@ function SteamReviewRow(url) {
   intl = url(1113).intl;
   const obj4 = { style: tmp.reviewNameContainer, children: items1 };
   const obj5 = { size: "sm", color: trackAction(575).colors.ICON_STRONG };
-  const SteamNeutralIcon = url(10227).SteamNeutralIcon;
+  const SteamNeutralIcon = url(10225).SteamNeutralIcon;
   items1 = [closure_6(SteamNeutralIcon, obj5), closure_6(url(5866).Text, { variant: "heading-xs/medium", color: "mobile-text-heading-primary", children: title })];
   items2 = [closure_7(closure_4, obj4), ];
   const obj6 = { style: tmp.ratingContainer, children: items4 };
@@ -88,7 +88,7 @@ function SteamReviewRow(url) {
     linkText = tmp.linkText;
   }
   items3[1] = linkText;
-  tmp2Result = url(10271);
+  tmp2Result = url(10269);
   items4 = [closure_6(Text, obj7), ];
   let tmp11Result = null != ratingCount && result !== tmp2(2159).SteamReviewScoreDescription.NO_USER_REVIEWS;
   if (tmp11Result) {
@@ -139,7 +139,7 @@ function OpenCriticReview(url) {
     opencritic = reviews.opencritic;
   }
   if (opencritic == null) {
-    opencritic = { topCriticRating: "delete", topCriticRatingCount: "isArray", tier: "isArray" };
+    opencritic = { topCriticRating: "a", topCriticRatingCount: "isArray", tier: "isArray" };
   }
   ({ tier, topCriticRating } = opencritic);
   if (topCriticRating == null) {
@@ -149,7 +149,7 @@ function OpenCriticReview(url) {
   if (num == null) {
     num = -1;
   }
-  const tmp4 = trackAction(10217);
+  const tmp4 = trackAction(10215);
   const tmp4Result = tmp4(trackAction(5949).openURL);
   dependencyMap = tmp4Result;
   const items = [tmp4Result, url, trackAction];
@@ -159,11 +159,11 @@ function OpenCriticReview(url) {
     closure_2(url);
   }, items);
   if (null != tier) {
-    const obj2 = url(10273);
+    const obj2 = url(10271);
     str = obj2.getOpenCriticTierText(tier);
   }
   if (null != tier) {
-    const obj4 = url(10273);
+    const obj4 = url(10271);
     openCriticCircleRatingColor = obj4.getOpenCriticCircleRatingColor(tier);
   } else {
     openCriticCircleRatingColor = { foregroundColor: "", backgroundColor: "" };
@@ -183,7 +183,7 @@ function OpenCriticReview(url) {
     obj7 = { source: obj8, style: tmp.opencriticTopCriticImage, accessible: true, accessibilityLabel: str };
     obj8 = { uri: tmp11Result.getOpenCriticTierImage(tier) };
     tmp2Result = trackAction(5957);
-    tmp11Result = url(10273);
+    tmp11Result = url(10271);
     tmp12Result = tmp12(tmp13, obj6);
   }
   items2 = [tmp12Result, , ];
@@ -199,7 +199,7 @@ function OpenCriticReview(url) {
         items3[1] = obj10;
         intl3 = tmp11(1113).intl;
         const obj11 = { rating: topCriticRating, strokeColor: foregroundColor, size: 32 };
-        items4 = [closure_6(tmp2(10279), obj11), ];
+        items4 = [closure_6(tmp2(10277), obj11), ];
         const obj12 = { style: tmp.opencriticTopCriticRatingContainer, children: closure_6(Text2, obj13) };
         const _Math = Math;
         obj13 = { variant: "body-xs/semibold", color: "text-overlay-light", children: Math.floor(topCriticRating) };
@@ -215,7 +215,7 @@ function OpenCriticReview(url) {
     if (null == tier) {
       const obj14 = { variant: "body-xs/medium", color: tmp11Result2.getSteamReviewScoreDescriptionColor(url(2159).SteamReviewScoreDescription.NO_USER_REVIEWS), children: intl4.string(url(1113).t["0xYzpO"]) };
       const Text3 = tmp11(5866).Text;
-      tmp11Result2 = url(10271);
+      tmp11Result2 = url(10269);
       intl4 = tmp11(1113).intl;
       tmp12Result2 = tmp12(Text3, obj14);
     }

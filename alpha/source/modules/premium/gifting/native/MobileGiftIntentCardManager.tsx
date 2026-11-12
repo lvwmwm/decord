@@ -1,19 +1,19 @@
-// Module ID: 20225
-// Function ID: 20226
+// Module ID: 20220
+// Function ID: 20221
 // Name: MobileGiftIntentCardManager
-// Dependencies: [8487, 5092, 6309, 5146, 9263, 1387, 20226, 1093, 5068, 11613, 6275, 1260, 5087, 11723, 2]
+// Dependencies: [8487, 5092, 6309, 5146, 9262, 1387, 20221, 1093, 5068, 11607, 6275, 1260, 5087, 11717, 2]
 
-// Module 20225 (MobileGiftIntentCardManager)
+// Module 20220 (MobileGiftIntentCardManager)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import Timers from "Timers" /* 5087 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 11723 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 11717 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8487 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import MessageStore from "MessageStore" /* 6309 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 9263 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 9262 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 20226 */;
+import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 20221 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ class MobileGiftIntentCardManager extends GiftIntentReconcilingManager {
           if (MessageStore.isReady(id)) {
             const tmp6 = constants2;
             if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, found, constants.SEND_MESSAGE)) {
-              const tmpResult = tmp(11613);
+              const tmpResult = tmp(11607);
               const result = tmpResult.logMessageGiftIntentShown(found);
               const userAffinity = self.getUserAffinity(found);
               const obj = { name: tmp(1260).ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION, type: tmp(1260).ImpressionTypes.VIEW, properties: obj2 };

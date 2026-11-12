@@ -1,10 +1,10 @@
-// Module ID: 12345
-// Function ID: 12346
+// Module ID: 12339
+// Function ID: 12340
 // Name: storefrontCodedLink
 // Dependencies: [32, 2]
 // Exports: makeStorefrontCodedLink, parseStorefrontCodedLink
 
-// Module 12345 (storefrontCodedLink)
+// Module 12339 (storefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

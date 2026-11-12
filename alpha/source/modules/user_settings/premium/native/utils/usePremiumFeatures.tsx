@@ -1,10 +1,10 @@
-// Module ID: 10896
-// Function ID: 10897
+// Module ID: 10890
+// Function ID: 10891
 // Name: usePremiumFeatures
-// Dependencies: [19, 1387, 2184, 1398, 5955, 1113, 3465, 10671, 2171, 10342, 9492, 9369, 7370, 9915, 10897, 575, 2]
+// Dependencies: [19, 1387, 2184, 1398, 5955, 1113, 3465, 10664, 2171, 10340, 9491, 9368, 7370, 9914, 10891, 575, 2]
 // Exports: default
 
-// Module 10896 (usePremiumFeatures)
+// Module 10890 (usePremiumFeatures)
 import intl11 from "intl" /* 1113 */;
 import user from "user" /* 1398 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
@@ -12,12 +12,12 @@ import PremiumGroupConstants from "PremiumGroupConstants" /* 2184 */;
 import _modDef3465 from "module_3465" /* 3465 */;
 import FriendsIcon from "FriendsIcon" /* 5955 */;
 import ScreenStreamIcon from "ScreenStreamIcon" /* 7370 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9369 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 9492 */;
-import BoostGemIcon from "BoostGemIcon" /* 9915 */;
-import ReactionIcon from "ReactionIcon" /* 10342 */;
-import UploadIcon from "UploadIcon" /* 10671 */;
-import UserSquareIcon from "UserSquareIcon" /* 10897 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9368 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 9491 */;
+import BoostGemIcon from "BoostGemIcon" /* 9914 */;
+import ReactionIcon from "ReactionIcon" /* 10340 */;
+import UploadIcon from "UploadIcon" /* 10664 */;
+import UserSquareIcon from "UserSquareIcon" /* 10891 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;

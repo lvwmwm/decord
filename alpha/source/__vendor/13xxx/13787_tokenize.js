@@ -1,44 +1,75 @@
 // Module ID: 13787
 // Function ID: 13788
 // Name: tokenize
-// Dependencies: [13730]
+// Dependencies: [13726]
 
 // Module 13787 (tokenize)
-import tokenize from "tokenize" /* 13730 */;
+import tokenize from "tokenize" /* 13726 */;
 
-let items;
 let obj2;
+const Ident = tokenize.TYPE.Ident;
+const Number = tokenize.TYPE.Number;
+const Dimension = tokenize.TYPE.Dimension;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
 const RightParenthesis = tokenize.TYPE.RightParenthesis;
+const Colon = tokenize.TYPE.Colon;
+const Delim = tokenize.TYPE.Delim;
 let obj = {
-  name: "Function",
+  name: "MediaFeature",
   structure: obj2,
-  parse(call, arg1) {
-    let callResult;
+  parse() {
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const str = this.consumeFunctionName();
-    const formatted = str.toLowerCase();
-    if (arg1.hasOwnProperty(formatted)) {
-      const obj = arg1[formatted];
-      callResult = obj.call(self, arg1);
-    } else {
-      callResult = call.call(self, arg1);
+    this.eat(LeftParenthesis);
+    const scanner = this.scanner;
+    scanner.skipSC();
+    const scanner2 = this.scanner;
+    const consumeResult = this.consume(Ident);
+    scanner2.skipSC();
+    let tmp7 = null;
+    const tmp3 = Ident;
+    const tmp6 = RightParenthesis;
+    if (this.scanner.tokenType !== RightParenthesis) {
+      let DimensionResult;
+      self.eat(Colon);
+      const scanner4 = self.scanner;
+      scanner4.skipSC();
+      const tokenType = self.scanner.tokenType;
+      if (Number === tokenType) {
+        let RatioResult;
+        if (self.lookupNonWSType(1) === Delim) {
+          RatioResult = self.Ratio();
+        } else {
+          RatioResult = self.Number();
+        }
+        DimensionResult = RatioResult;
+      } else if (Dimension === tokenType) {
+        DimensionResult = self.Dimension();
+      } else if (tmp3 === tokenType) {
+        DimensionResult = self.Identifier();
+      } else {
+        self.error("Number, dimension, ratio or identifier is expected");
+        DimensionResult = null;
+      }
+      const scanner3 = self.scanner;
+      scanner3.skipSC();
+      tmp7 = DimensionResult;
     }
-    if (!self.scanner.eof) {
-      self.eat(RightParenthesis);
-    }
-    const element = { type: "Function", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, children: callResult };
-    return element;
+    self.eat(tmp6);
+    const obj = { type: "MediaFeature", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, value: tmp7 };
+    return obj;
   },
   generate(name) {
-    this.chunk(name.name);
+    const self = this;
     this.chunk("(");
-    this.children(name);
-    this.chunk(")");
-  },
-  walkContext: "function"
+    this.chunk(name.name);
+    if (null !== name.value) {
+      self.chunk(":");
+      self.node(name.value);
+    }
+    self.chunk(")");
+  }
 };
-obj2 = { name: String, children: items };
-items = [[]];
+obj2 = { name: String, value: ["Identifier", "Number", "Dimension", "Ratio", null] };
 
 export default obj;

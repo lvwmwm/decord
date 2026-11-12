@@ -1,15 +1,15 @@
-// Module ID: 17760
-// Function ID: 17761
+// Module ID: 17755
+// Function ID: 17756
 // Name: NoiseSuppressionSetting
-// Dependencies: [2130, 9136, 504, 12942, 12317, 1113, 2]
+// Dependencies: [2130, 9135, 504, 12936, 12311, 1113, 2]
 
-// Module 17760 (NoiseSuppressionSetting)
+// Module 17755 (NoiseSuppressionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 12942 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 12936 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,10 +1,10 @@
-// Module ID: 11243
-// Function ID: 11244
+// Module ID: 11237
+// Function ID: 11238
 // Name: useMaybeAddPollsMarketingEasterEggNote
 // Dependencies: [2186, 504, 1113, 2]
 // Exports: default
 
-// Module 11243 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 11237 (useMaybeAddPollsMarketingEasterEggNote)
 import get_initialized from "get initialized" /* 504 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import size from "module_2" /* 2 */;

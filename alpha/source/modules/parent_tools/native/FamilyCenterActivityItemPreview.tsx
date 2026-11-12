@@ -1,10 +1,10 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17310
+// Function ID: 17311
 // Name: FamilyCenterActivityItemPreview
-// Dependencies: [19, 17, 8518, 21, 5243, 17314, 575, 5957, 9443, 8495, 9446, 10498, 9915, 9369, 2111, 2108, 2]
+// Dependencies: [19, 17, 8518, 21, 5243, 17309, 575, 5957, 9442, 8495, 9445, 10496, 9914, 9368, 2111, 2108, 2]
 // Exports: default
 
-// Module 17315 (FamilyCenterActivityItemPreview)
+// Module 17310 (FamilyCenterActivityItemPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,9 +13,9 @@ import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8495 */;
 import ProfileFrameConstants from "ProfileFrameConstants" /* 8518 */;
-import NameplateUtils from "NameplateUtils" /* 9443 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9446 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17314 */;
+import NameplateUtils from "NameplateUtils" /* 9442 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9445 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17309 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
@@ -85,9 +85,9 @@ function SubscriptionPreview(arg0) {
   } else {
     const obj4 = FamilyCenterActivityPurchaseRowUtils;
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp5(9915).BoostGemIcon;
+      let NitroWheelIcon = tmp5(9914).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp5(9369).NitroWheelIcon;
+      NitroWheelIcon = tmp5(9368).NitroWheelIcon;
     }
     return <tmp8 style={styles.purchasePlaceholder}>{null}</tmp8>;
   }

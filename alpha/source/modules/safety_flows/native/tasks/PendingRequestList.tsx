@@ -1,17 +1,17 @@
-// Module ID: 20726
-// Function ID: 20727
+// Module ID: 20721
+// Function ID: 20722
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1385, 21, 5243, 575, 1187, 504, 20724, 20727, 1411, 5866, 1113, 2981, 7364, 2685, 9417, 17338, 17289, 5952, 6274, 20728, 12200, 17294, 2]
+// Dependencies: [19, 17, 1385, 21, 5243, 575, 1187, 504, 20719, 20722, 1411, 5866, 1113, 2981, 7364, 2685, 9416, 17333, 17284, 5952, 6274, 20723, 12194, 17289, 2]
 // Exports: default
 
-// Module 20726 (PendingRequestList)
+// Module 20721 (PendingRequestList)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import _modDef2685 from "module_2685" /* 2685 */;
 import _modDef2981 from "module_2981" /* 2981 */;
-import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 17289 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17338 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 17284 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17333 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -99,11 +99,11 @@ class PendingRequestRow {
     if (avatar == null) {
       avatar = request.parent_avatar;
     }
-    const tmp2Result = request(20724);
+    const tmp2Result = request(20719);
     const pendingRequestResolution = tmp2Result.usePendingRequestResolution(request.parent_id);
     ({ isConnected, isResolved } = pendingRequestResolution);
     const obj2 = { style: tmp.row, children: items1 };
-    const tmp2Result2 = request(20727);
+    const tmp2Result2 = request(20722);
     const result = tmp2Result2.formatPendingRequestSentText(request.created_at);
     const obj3 = { avatarStyle: tmp.avatar, source: obj6.getUserAvatarSource(obj4), disablePlaceholder: true };
     const Avatar = tmp2(1187).Avatar;
@@ -151,7 +151,7 @@ class PendingRequestRow {
           tmp13Result6 = tmp13(closure_4, obj12);
         } else {
           const obj13 = { size: "sm", color: nativeDefault.colors.WHITE };
-          const CheckmarkLargeBoldIcon = tmp2(9417).CheckmarkLargeBoldIcon;
+          const CheckmarkLargeBoldIcon = tmp2(9416).CheckmarkLargeBoldIcon;
           tmp13Result6 = tmp13(CheckmarkLargeBoldIcon, obj13);
         }
         tmp13Result7 = tmp13(PressableOpacity, obj10);

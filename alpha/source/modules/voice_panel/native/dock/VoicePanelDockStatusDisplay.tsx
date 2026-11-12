@@ -1,9 +1,9 @@
-// Module ID: 19821
-// Function ID: 19822
+// Module ID: 19816
+// Function ID: 19817
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 19819, 11948, 21, 5866, 5243, 1652, 1113, 3205, 5485, 5876, 19822, 5314, 1705, 11924, 2]
+// Dependencies: [32, 19, 17, 19814, 11942, 21, 5866, 5243, 1652, 1113, 3205, 5485, 5876, 19817, 5314, 1705, 11918, 2]
 
-// Module 19821 (VoicePanelDockStatusDisplay)
+// Module 19816 (VoicePanelDockStatusDisplay)
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import Text_Text from "Text/Text" /* 5866 */;
@@ -11,8 +11,8 @@ import spring_spring from "spring/spring" /* 5876 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19819 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11948 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19814 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11942 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -599,7 +599,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let onExited;
   let tmp11;
   let userId;
-  const f120331 = () => {
+  const f120340 = () => {
     let items;
     if ("channel" === obj2.kind) {
       items = [];
@@ -634,8 +634,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp7 = _slicedToArray(obj.useState(() => ({ status: obj2, enter: null })), 2);
   first = tmp7[0];
-  [arr, tmp11] = obj.useState(f120331);
-  _slicedToArray(obj.useState(f120331), 2);
+  [arr, tmp11] = obj.useState(f120340);
+  _slicedToArray(obj.useState(f120340), 2);
   const tmp12 = _slicedToArray(obj.useState(() => {
     map = new Map();
     return map;

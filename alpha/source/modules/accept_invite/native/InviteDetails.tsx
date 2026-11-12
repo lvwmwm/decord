@@ -1,10 +1,10 @@
-// Module ID: 14969
-// Function ID: 14970
+// Module ID: 14965
+// Function ID: 14966
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 14720, 1404, 1385, 1072, 14970, 21, 5243, 575, 6898, 8775, 1187, 14872, 5309, 1113, 7657, 5866, 1411, 5957, 1252, 504, 14971, 7918, 5873, 6888, 2]
+// Dependencies: [32, 19, 17, 14716, 1404, 1385, 1072, 14966, 21, 5243, 575, 6898, 8774, 1187, 14868, 5309, 1113, 7657, 5866, 1411, 5957, 1252, 504, 14967, 7918, 5873, 6888, 2]
 // Exports: default
 
-// Module 14969 (InviteDetails)
+// Module 14965 (InviteDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
@@ -14,13 +14,13 @@ import UserUtilsDefault from "UserUtils" /* 5309 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import LegacyTokens from "LegacyTokens" /* 6898 */;
 import GuildBadgeDefault from "GuildBadge" /* 7657 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8775 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 14872 */;
-import HubConstants from "HubConstants" /* 14970 */;
-import InviteRolesListDefault from "InviteRolesList" /* 14971 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8774 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 14868 */;
+import HubConstants from "HubConstants" /* 14966 */;
+import InviteRolesListDefault from "InviteRolesList" /* 14967 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MultiAccountStore from "MultiAccountStore" /* 14720 */;
+import MultiAccountStore from "MultiAccountStore" /* 14716 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
@@ -184,7 +184,7 @@ function InviteJoinContext(invite) {
   }, items);
   const intl = invite(1113).intl;
   const stringResult = intl.string(invite(1113).t["3rE1P8"]);
-  let obj = invite(8775);
+  let obj = invite(8774);
   if (obj.isFriendInvite(invite)) {
     const intl7 = tmp3(1113).intl;
     const format3 = intl7.format;
@@ -193,7 +193,7 @@ function InviteJoinContext(invite) {
     obj11 = isGuildMember(5309);
     format3Result = format3(Quj7HX, obj2);
   } else {
-    const tmp3Result = invite(8775);
+    const tmp3Result = invite(8774);
     if (tmp3Result.isGroupDMInvite(invite)) {
       if (null != invite.channel) {
         let format2Result;
@@ -210,7 +210,7 @@ function InviteJoinContext(invite) {
       const intl5 = tmp3(1113).intl;
       format2Result = intl5.string(tmp3(1113).t.OsdY8B);
     } else {
-      const tmp3Result3 = invite(8775);
+      const tmp3Result3 = invite(8774);
       if (tmp3Result3.isStreamInvite(invite)) {
         if (null != invite.target_user) {
           const intl4 = tmp3(1113).intl;
@@ -252,7 +252,7 @@ function InviteJoinContext(invite) {
   const tmp20 = closure_13;
   if (null != memo) {
     tmp22 = null;
-    const tmp3Result4 = invite(8775);
+    const tmp3Result4 = invite(8774);
     if (!tmp3Result4.isFriendInvite(invite)) {
       const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(5957), obj12) };
       obj12 = { source: memo, style: tmp.inviterIcon };

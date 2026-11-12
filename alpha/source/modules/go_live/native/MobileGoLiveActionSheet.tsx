@@ -1,10 +1,10 @@
-// Module ID: 12892
-// Function ID: 12893
+// Module ID: 12886
+// Function ID: 12887
 // Name: MobileGoLiveActionSheet
-// Dependencies: [32, 19, 6190, 6757, 5092, 5114, 5146, 1385, 6108, 1072, 6012, 21, 5243, 575, 1357, 5489, 12892, 2118, 1260, 504, 12893, 12897, 7852, 7871, 1652, 6799, 6162, 7720, 1113, 2485, 12898, 12900, 7656, 5866, 5956, 11235, 5503, 5507, 7351, 7680, 7679, 11109, 1092, 7681, 11233, 8971, 10008, 7888, 5873, 12891, 2]
+// Dependencies: [32, 19, 6190, 6757, 5092, 5114, 5146, 1385, 6108, 1072, 6012, 21, 5243, 575, 1357, 5489, 12886, 2118, 1260, 504, 12887, 12891, 7852, 7871, 1652, 6799, 6162, 7720, 1113, 2485, 12892, 12894, 7656, 5866, 5956, 11229, 5503, 5507, 7351, 7680, 7679, 11103, 1092, 7681, 11227, 8970, 10007, 7888, 5873, 12885, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 12892 (MobileGoLiveActionSheet)
+// Module 12886 (MobileGoLiveActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
@@ -19,11 +19,11 @@ import StreamActionCreators from "StreamActionCreators" /* 6799 */;
 import NativeViewDefault from "NativeView" /* 7656 */;
 import TableRadioRow2 from "TableRadioRow" /* 7681 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 7720 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11109 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11235 */;
-import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 12893 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 12898 */;
-import ImageSparkleIcon from "ImageSparkleIcon" /* 12900 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11103 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11229 */;
+import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 12887 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 12892 */;
+import ImageSparkleIcon from "ImageSparkleIcon" /* 12894 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6190 */;
@@ -397,6 +397,6 @@ export function showMobileGoLiveActionSheet(location_stack) {
   const obj = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET, impressionProperties: obj2 };
   ActionSheetActionCreatorsDefault;
   obj2 = { location_stack };
-  const tmp2 = asyncRequire(12892, dependencyMap.paths);
+  const tmp2 = asyncRequire(12886, dependencyMap.paths);
   openLazy(tmp2, MobileGoLiveActionSheet_str, obj);
 }

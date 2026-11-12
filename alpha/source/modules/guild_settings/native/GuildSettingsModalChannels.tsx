@@ -1,10 +1,10 @@
-// Module ID: 18740
-// Function ID: 18741
+// Module ID: 18735
+// Function ID: 18736
 // Name: GuildSettingsModalChannels
-// Dependencies: [19, 17, 5092, 5114, 5175, 5185, 1385, 18738, 1072, 21, 5243, 6763, 575, 5117, 5314, 1113, 5250, 1090, 8041, 1187, 18741, 504, 7968, 5891, 7364, 1627, 5873, 7882, 8078, 10382, 7363, 5180, 15055, 18742, 5849, 10856, 18743, 18739, 13956, 17803, 10881, 12470, 6854, 6205, 1499, 38, 5881, 2]
+// Dependencies: [19, 17, 5092, 5114, 5175, 5185, 1385, 18733, 1072, 21, 5243, 6763, 575, 5117, 5314, 1113, 5250, 1090, 8041, 1187, 18736, 504, 7968, 5891, 7364, 1627, 5873, 7882, 8078, 10380, 7363, 5180, 15051, 18737, 5849, 10850, 18738, 18734, 13952, 17798, 10875, 12464, 6854, 6205, 1499, 38, 5881, 2]
 // Exports: default
 
-// Module 18740 (GuildSettingsModalChannels)
+// Module 18735 (GuildSettingsModalChannels)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
@@ -22,13 +22,13 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7363 */;
 import Pressables from "Pressables" /* 7364 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7882 */;
-import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 10856 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10881 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13956 */;
-import ChannelSortingUtils from "ChannelSortingUtils" /* 15055 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17803 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18739 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18743 */;
+import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 10850 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10875 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13952 */;
+import ChannelSortingUtils from "ChannelSortingUtils" /* 15051 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17798 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18734 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18738 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
@@ -36,7 +36,7 @@ import GuildStore from "GuildStore" /* 5114 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18738 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18733 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -151,7 +151,7 @@ function ChannelItem(isFavoritesGuild) {
   if (stateFromStores) {
     tmp7Result2 = null;
     if (sortingEnabled) {
-      const obj10 = { source: tmp13(18741), style: actionIconStyle };
+      const obj10 = { source: tmp13(18736), style: actionIconStyle };
       const Icon2 = tmp(8041).FormRow.Icon;
       tmp7Result2 = tmp7(Icon2, obj10);
     }
@@ -213,7 +213,7 @@ function CreateButton(guild) {
           items[1] = obj4;
           const result = showSimpleActionSheet(obj);
         },
-      icon: closure_16(tmp(10382).PlusSmallIcon, { color: "white" })
+      icon: closure_16(tmp(10380).PlusSmallIcon, { color: "white" })
     };
     Button = tmp(5873).Button;
     intl = tmp(1113).intl;
@@ -317,7 +317,7 @@ class Category extends PureComponent {
     } else {
       tmp3Result = null;
       if (null != sortHandlers) {
-        const obj6 = { source: tmp11(18741), style: actionIconStyle };
+        const obj6 = { source: tmp11(18736), style: actionIconStyle };
         const Icon = tmp5(1187).Icon;
         tmp3Result = tmp3(Icon, obj6);
       }

@@ -1,62 +1,24 @@
 // Module ID: 13801
 // Function ID: 13802
 // Name: tokenize
-// Dependencies: [13730]
+// Dependencies: [13726]
 
 // Module 13801 (tokenize)
-import tokenize from "tokenize" /* 13730 */;
+import tokenize from "tokenize" /* 13726 */;
 
-let rect;
-function consumeNumber() {
-  let num;
-  const self = this;
-  const scanner = this.scanner;
-  scanner.skipWS();
-  const consumeResult = this.consume(Number);
-  for (let num = 0; num < consumeResult.length; num = num + 1) {
-    let charCodeAtResult = consumeResult.charCodeAt(num);
-    let obj = tokenize;
-    let isDigitResult = obj.isDigit(charCodeAtResult);
-    if (!isDigitResult) {
-      isDigitResult = 46 === charCodeAtResult;
-    }
-    if (!isDigitResult) {
-      let errorResult = self.error("Unsigned number is expected", self.scanner.tokenStart - consumeResult.length + num);
-    }
-  }
-  if (0 === Number(consumeResult)) {
-    self.error("Zero number is not allowed", self.scanner.tokenStart - consumeResult.length);
-  }
-  return consumeResult;
-}
-const Number = tokenize.TYPE.Number;
-const Delim = tokenize.TYPE.Delim;
+let obj2;
+const String = tokenize.TYPE.String;
 let obj = {
-  name: "Ratio",
-  structure: rect,
+  name: "String",
+  structure: obj2,
   parse() {
-    let callResult1;
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const scanner = self.scanner;
-    const callResult = consumeNumber.call(self);
-    scanner.skipWS();
-    const scanner2 = self.scanner;
-    const obj = consumeNumber;
-    if (!scanner2.isDelim(47)) {
-      self.error("Solidus is expected");
-    }
-    self.eat(Delim);
-    const rect = { type: "Ratio", loc: self.getLocation(tokenStart, self.scanner.tokenStart), left: callResult, right: callResult1 };
-    callResult1 = obj.call(self);
-    return rect;
+    const obj = { type: "String", loc: this.getLocation(this.scanner.tokenStart, this.scanner.tokenEnd), value: this.consume(String) };
+    return obj;
   },
-  generate(left) {
-    this.chunk(left.left);
-    this.chunk("/");
-    this.chunk(left.right);
+  generate(value) {
+    this.chunk(value.value);
   }
 };
-rect = { left: String, right: String };
+obj2 = { value: String };
 
 export default obj;

@@ -1,9 +1,9 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15165
+// Function ID: 15166
 // Name: BadgeDirectorySeenStore
 // Dependencies: [504, 572, 2]
 
-// Module 15168 (BadgeDirectorySeenStore)
+// Module 15165 (BadgeDirectorySeenStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,13 +1,13 @@
-// Module ID: 19888
-// Function ID: 19889
+// Module ID: 19883
+// Function ID: 19884
 // Name: GameTagChiplet
-// Dependencies: [19, 21, 5243, 10597, 10219, 10587, 5957, 2]
+// Dependencies: [19, 21, 5243, 10595, 10217, 10585, 5957, 2]
 
-// Module 19888 (GameTagChiplet)
+// Module 19883 (GameTagChiplet)
 import Fragment from "Fragment" /* 21 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
-import GuildTag from "GuildTag" /* 10587 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 10597 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10217 */;
+import GuildTag from "GuildTag" /* 10585 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 10595 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

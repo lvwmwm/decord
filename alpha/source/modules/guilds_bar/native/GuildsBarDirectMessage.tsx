@@ -1,9 +1,9 @@
-// Module ID: 18966
-// Function ID: 18967
+// Module ID: 18961
+// Function ID: 18962
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 6960, 5092, 6997, 5185, 1385, 1072, 21, 5243, 575, 18923, 504, 8352, 1113, 18926, 6000, 10831, 18967, 10828, 1187, 5957, 2]
+// Dependencies: [19, 502, 6960, 5092, 6997, 5185, 1385, 1072, 21, 5243, 575, 18918, 504, 8352, 1113, 18921, 6000, 10825, 18962, 10822, 1187, 5957, 2]
 
-// Module 18966 (GuildsBarDirectMessage)
+// Module 18961 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

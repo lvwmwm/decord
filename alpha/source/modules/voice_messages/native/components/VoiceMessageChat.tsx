@@ -1,21 +1,21 @@
-// Module ID: 14860
-// Function ID: 14861
+// Module ID: 14856
+// Function ID: 14857
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 5244, 14462, 14463, 21, 1652, 5243, 575, 1377, 5876, 5877, 5485, 5839, 8831, 5866, 2]
+// Dependencies: [32, 19, 17, 5244, 14458, 14459, 21, 1652, 5243, 575, 1377, 5876, 5877, 5485, 5839, 8830, 5866, 2]
 
-// Module 14860 (VoiceMessageChat)
+// Module 14856 (VoiceMessageChat)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import spring_spring from "spring/spring" /* 5876 */;
 import springPresets from "springPresets" /* 5877 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8831 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 14462 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8830 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 14458 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 14463 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 14459 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
@@ -186,7 +186,7 @@ function Duration(animationValue) {
   const items2 = [first1];
   const first2 = tmp14[0];
   const effect1 = react.useEffect(() => {
-    const f141512 = (arg0) => !arg0;
+    const f141529 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -198,10 +198,10 @@ function Duration(animationValue) {
           num = num2;
         }
         function flash() {
-          closure_6(f141512);
+          closure_6(f141529);
           const timeout = setTimeout(flash, num);
         }
-        closure_6(f141512);
+        closure_6(f141529);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {

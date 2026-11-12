@@ -1,14 +1,14 @@
-// Module ID: 9390
-// Function ID: 9391
+// Module ID: 9389
+// Function ID: 9390
 // Name: HeartIcon
-// Dependencies: [19, 21, 575, 5956, 9391, 2]
+// Dependencies: [19, 21, 575, 5956, 9390, 2]
 // Exports: HeartIcon
 
-// Module 9390 (HeartIcon)
+// Module 9389 (HeartIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 9391 */;
+import AssetRegistry from "AssetRegistry" /* 9390 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

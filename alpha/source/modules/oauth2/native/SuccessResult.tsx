@@ -1,10 +1,10 @@
-// Module ID: 12677
-// Function ID: 12678
+// Module ID: 12671
+// Function ID: 12672
 // Name: SuccessResultModal
-// Dependencies: [19, 17, 5092, 5175, 5146, 1072, 1498, 21, 5243, 575, 9975, 1113, 6785, 7168, 1252, 504, 5489, 5438, 1625, 7351, 5957, 12678, 5866, 5873, 2]
+// Dependencies: [19, 17, 5092, 5175, 5146, 1072, 1498, 21, 5243, 575, 9974, 1113, 6785, 7168, 1252, 504, 5489, 5438, 1625, 7351, 5957, 12672, 5866, 5873, 2]
 // Exports: default
 
-// Module 12677 (SuccessResultModal)
+// Module 12671 (SuccessResultModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

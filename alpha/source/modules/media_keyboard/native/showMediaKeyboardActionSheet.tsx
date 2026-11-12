@@ -1,10 +1,10 @@
-// Module ID: 11575
-// Function ID: 11576
+// Module ID: 11569
+// Function ID: 11570
 // Name: showMediaKeyboardActionSheet
-// Dependencies: [5489, 11576, 2118, 8133, 2]
+// Dependencies: [5489, 11570, 2118, 8133, 2]
 // Exports: hideMediaKeyboardActionSheet, presentLimitedLibraryPicker, showMediaKeyboardActionSheet
 
-// Module 11575 (showMediaKeyboardActionSheet)
+// Module 11569 (showMediaKeyboardActionSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import react_nativeDefault from "react-native" /* 8133 */;
@@ -19,7 +19,7 @@ export function hideMediaKeyboardActionSheet() {
 }
 export function showMediaKeyboardActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(11576, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
+  obj.openLazy(asyncRequire(11570, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
 }
 export function presentLimitedLibraryPicker() {
   const obj = react_nativeDefault;

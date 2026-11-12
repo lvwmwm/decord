@@ -1,14 +1,14 @@
-// Module ID: 11010
-// Function ID: 11011
+// Module ID: 11004
+// Function ID: 11005
 // Name: FileIcon
-// Dependencies: [19, 21, 575, 5956, 11011, 2]
+// Dependencies: [19, 21, 575, 5956, 11005, 2]
 // Exports: FileIcon
 
-// Module 11010 (FileIcon)
+// Module 11004 (FileIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 11011 */;
+import AssetRegistry from "AssetRegistry" /* 11005 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

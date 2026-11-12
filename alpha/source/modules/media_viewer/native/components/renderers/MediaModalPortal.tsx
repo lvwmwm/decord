@@ -1,12 +1,12 @@
-// Module ID: 10130
-// Function ID: 10131
+// Module ID: 10129
+// Function ID: 10130
 // Name: MediaModalPortal
-// Dependencies: [19, 17, 21, 5243, 1377, 10131, 7725, 10132, 2]
+// Dependencies: [19, 17, 21, 5243, 1377, 10130, 7725, 10131, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 10130 (MediaModalPortal)
+// Module 10129 (MediaModalPortal)
 import Fragment from "Fragment" /* 21 */;
-import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 10131 */;
+import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 10130 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 5243 */;

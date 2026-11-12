@@ -1,17 +1,17 @@
-// Module ID: 11775
-// Function ID: 11776
+// Module ID: 11769
+// Function ID: 11770
 // Name: PremiumGiftDuration
-// Dependencies: [19, 17, 1387, 21, 5243, 575, 11603, 7379, 8043, 11621, 5315, 5866, 1113, 2]
+// Dependencies: [19, 17, 1387, 21, 5243, 575, 11597, 7379, 8043, 11615, 5315, 5866, 1113, 2]
 // Exports: default
 
-// Module 11775 (PremiumGiftDuration)
+// Module 11769 (PremiumGiftDuration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import react_native2 from "react-native" /* 5315 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import NativeGiftContext from "NativeGiftContext" /* 11603 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11621 */;
+import NativeGiftContext from "NativeGiftContext" /* 11597 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11615 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
@@ -126,7 +126,7 @@ export default function PremiumGiftDuration() {
   let intl;
   let planInterval;
   const tmp = closure_11();
-  let obj = planInterval(11603);
+  let obj = planInterval(11597);
   planInterval = obj.useNativeGiftContext().planInterval;
   const obj2 = { style: tmp.durationContainer, children: items };
   const obj3 = { style: tmp.durationTitle, variant: "body-sm/semibold", children: intl.string(planInterval(1113).t["8XT6Nf"]) };

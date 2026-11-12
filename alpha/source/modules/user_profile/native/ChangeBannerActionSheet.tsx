@@ -1,10 +1,10 @@
-// Module ID: 16950
-// Function ID: 16951
+// Module ID: 16945
+// Function ID: 16946
 // Name: ChangeBannerActionSheet
-// Dependencies: [5, 19, 17, 8476, 1072, 21, 5243, 575, 7852, 2171, 5489, 8813, 16951, 7742, 7885, 7847, 1113, 9369, 7680, 7379, 8041, 16952, 504, 9335, 8416, 8547, 1090, 9332, 16953, 16955, 5866, 1187, 16960, 2]
+// Dependencies: [5, 19, 17, 8476, 1072, 21, 5243, 575, 7852, 2171, 5489, 8812, 16946, 7742, 7885, 7847, 1113, 9368, 7680, 7379, 8041, 16947, 504, 9334, 8416, 8547, 1090, 9331, 16948, 16950, 5866, 1187, 16955, 2]
 // Exports: default
 
-// Module 16950 (ChangeBannerActionSheet)
+// Module 16945 (ChangeBannerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -12,9 +12,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7847 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7852 */;
 import ActionSheet2 from "ActionSheet" /* 7885 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9332 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9369 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16953 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9331 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9368 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8476 */;
@@ -109,12 +109,12 @@ function ChangeBannerColorRow(user) {
   obj6 = { style: tmp.selectedColor, children: items2 };
   items2 = [, , ];
   const obj7 = { style: tmp.bannerColor, color: pendingAccentColor };
-  items2[0] = closure_9(pendingAccentColor(16955), obj7);
+  items2[0] = closure_9(pendingAccentColor(16950), obj7);
   const obj8 = { style: tmp.selectedColorHex, variant: "body-md/medium", color: "interactive-text-default", children: tmp2Result6.int2hex(pendingAccentColor) };
   const Text = tmp2(5866).Text;
   tmp2Result6 = require("utils/ColorUtils");
   items2[1] = closure_9(Text, obj8);
-  const obj9 = { style: tmp.rowArrow, size: require("native").Icon.Sizes.CUSTOM, source: pendingAccentColor(16960) };
+  const obj9 = { style: tmp.rowArrow, size: require("native").Icon.Sizes.CUSTOM, source: pendingAccentColor(16955) };
   const Icon = tmp2(1187).Icon;
   items2[2] = closure_9(Icon, obj9);
   return closure_9(TableRow, obj4);
@@ -272,7 +272,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   let tmp4Result3 = !flag;
   if (tmp4Result3) {
     let obj6 = { style: tmp.nitroWheel, size: "sm" };
-    tmp4Result3 = tmp4(tmp5(9369).NitroWheelIcon, obj6);
+    tmp4Result3 = tmp4(tmp5(9368).NitroWheelIcon, obj6);
   }
   let obj7 = { label: tmp6(tmp10, obj5), subLabel: tmp6(tmp13, { children: items3 }), onPress: handleBannerUploadSelect };
   items2[1] = tmp4Result3;
@@ -290,7 +290,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   items3 = [tmp4(FormSubLabel, obj8), ];
   let tmp4Result4 = !flag;
   if (tmp4Result4) {
-    const obj9 = { style: tmp.upsellButton, children: tmp4(obj(16952), obj10) };
+    const obj9 = { style: tmp.upsellButton, children: tmp4(obj(16947), obj10) };
     obj10 = { analyticsObject: constants.EDIT_PROFILE_BANNER };
     tmp4Result4 = tmp4(tmp10, obj9);
   }

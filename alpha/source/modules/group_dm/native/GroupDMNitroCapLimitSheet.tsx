@@ -1,18 +1,18 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12450
+// Function ID: 12451
 // Name: GroupDMNitroCapLimitSheet
-// Dependencies: [19, 17, 5244, 12453, 1072, 21, 5243, 575, 504, 12451, 1252, 5489, 12457, 11218, 12458, 5503, 5866, 1113, 5873, 9369, 2]
+// Dependencies: [19, 17, 5244, 12447, 1072, 21, 5243, 575, 504, 12445, 1252, 5489, 12451, 11212, 12452, 5503, 5866, 1113, 5873, 9368, 2]
 // Exports: default
 
-// Module 12456 (GroupDMNitroCapLimitSheet)
+// Module 12450 (GroupDMNitroCapLimitSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11218 */;
-import GroupDMConstants from "GroupDMConstants" /* 12453 */;
-import PremiumMarketingUtil from "PremiumMarketingUtil" /* 12457 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 12458 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11212 */;
+import GroupDMConstants from "GroupDMConstants" /* 12447 */;
+import PremiumMarketingUtil from "PremiumMarketingUtil" /* 12451 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 12452 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Constants from "Constants" /* 1072 */;
@@ -68,7 +68,7 @@ export default function GroupDMNitroCapLimitSheet(location) {
   let obj = _location(504);
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = _location(12451);
+  let obj2 = _location(12445);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
   importDefault = tmp6;
   let obj3 = react;
@@ -88,7 +88,7 @@ export default function GroupDMNitroCapLimitSheet(location) {
   if (loading) {
     loading = tmp9.loading;
   }
-  let obj4 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp2(12451).GroupDMNitroAcquisitionStrategy.CHECKOUT, onCheckout: onPress };
+  let obj4 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp2(12445).GroupDMNitroAcquisitionStrategy.CHECKOUT, onCheckout: onPress };
   const tmp8Result = useGroupDMNitroUpsellActionDefault;
   const tmp8ResultResult = tmp8Result(obj4);
   dependencyMap = tmp8ResultResult;
@@ -118,9 +118,9 @@ export default function GroupDMNitroCapLimitSheet(location) {
   const Button = tmp2(5873).Button;
   const intl3 = tmp2(1113).intl;
   string = intl3.string;
-  tmp2Result = _location(12451);
+  tmp2Result = _location(12445);
   obj12 = { style: tmp.nitroWheelIcon, color: nativeDefault.unsafe_rawColors.WHITE, size: "custom" };
-  NitroWheelIcon = tmp2(9369).NitroWheelIcon;
+  NitroWheelIcon = tmp2(9368).NitroWheelIcon;
   tmp16 = null;
   if (!loading) {
     tmp16 = callback1;

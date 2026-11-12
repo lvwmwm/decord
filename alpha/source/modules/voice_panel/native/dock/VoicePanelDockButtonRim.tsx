@@ -1,14 +1,14 @@
-// Module ID: 19829
-// Function ID: 19830
+// Module ID: 19824
+// Function ID: 19825
 // Name: VoicePanelDockButtonRim
-// Dependencies: [32, 19, 17, 11948, 21, 5839, 575, 8197, 1652, 5485, 14744, 2]
+// Dependencies: [32, 19, 17, 11942, 21, 5839, 575, 8197, 1652, 5485, 14740, 2]
 
-// Module 19829 (VoicePanelDockButtonRim)
+// Module 19824 (VoicePanelDockButtonRim)
 import nativeDefault from "native" /* 575 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import useToken from "useToken" /* 5839 */;
 import inlineStyles from "inlineStyles" /* 8197 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11948 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11942 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

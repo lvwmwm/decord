@@ -1,13 +1,13 @@
-// Module ID: 17382
-// Function ID: 17383
+// Module ID: 17377
+// Function ID: 17378
 // Name: ClipsSetting
-// Dependencies: [1072, 12317, 1113, 17383, 17385, 2]
+// Dependencies: [1072, 12311, 1113, 17378, 17380, 2]
 
-// Module 17382 (ClipsSetting)
+// Module 17377 (ClipsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import ClipsIcon from "ClipsIcon" /* 17383 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import ClipsIcon from "ClipsIcon" /* 17378 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

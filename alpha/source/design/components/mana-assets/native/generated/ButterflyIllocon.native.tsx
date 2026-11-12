@@ -1,27 +1,27 @@
-// Module ID: 13583
-// Function ID: 13584
+// Module ID: 13577
+// Function ID: 13578
 // Name: ButterflyIllocon
-// Dependencies: [19, 21, 13584, 13585, 13586, 7689, 5957, 2]
+// Dependencies: [19, 21, 13578, 13579, 13580, 7689, 5957, 2]
 // Exports: ButterflyIllocon
 
-// Module 13583 (ButterflyIllocon)
+// Module 13577 (ButterflyIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import react_native from "react-native" /* 7689 */;
-import _modDef13584 from "module_13584" /* 13584 */;
-import _modDef13585 from "module_13585" /* 13585 */;
-import _modDef13586 from "module_13586" /* 13586 */;
+import _modDef13578 from "module_13578" /* 13578 */;
+import _modDef13579 from "module_13579" /* 13579 */;
+import _modDef13580 from "module_13580" /* 13580 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13584 };
+let obj2 = { uri: _modDef13578 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13585 };
-({ uri: _modDef13585 });
-obj[3] = { uri: _modDef13586 };
-({ uri: _modDef13586 });
+obj[2] = { uri: _modDef13579 };
+({ uri: _modDef13579 });
+obj[3] = { uri: _modDef13580 };
+({ uri: _modDef13580 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ButterflyIllocon.native.tsx");
 

@@ -105,7 +105,7 @@ function ratingPromptFields(projectId) {
   let surface;
   let tmp11;
   let turnId;
-  const f92846 = (item) => null != item;
+  const f92857 = (item) => null != item;
   projectId = projectId.projectId;
   const obj = { turn_id: turnId, publish_reason: publishReason, surface, client_platform: str };
   ({ turnId, publishReason, surface } = projectId);
@@ -147,8 +147,8 @@ function ratingPromptFields(projectId) {
   }
   HermesBuiltin.arraySpread(items, prop, tmp8);
   const mapped = items.map((item) => closure_1_8[item]);
-  items1 = [...new Set(mapped.filter(f92846))];
-  new Set(mapped.filter(f92846));
+  items1 = [...new Set(mapped.filter(f92857))];
+  new Set(mapped.filter(f92857));
   const publishState = projectId.publishState;
   tmp11 = null == publishState;
   const projectId2 = projectId.projectId;

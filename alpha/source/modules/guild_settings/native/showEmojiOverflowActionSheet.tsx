@@ -1,10 +1,10 @@
-// Module ID: 20362
-// Function ID: 20363
+// Module ID: 20357
+// Function ID: 20358
 // Name: showEmojiOverflowActionSheet
-// Dependencies: [5489, 20363, 2118, 2]
+// Dependencies: [5489, 20358, 2118, 2]
 // Exports: default
 
-// Module 20362 (showEmojiOverflowActionSheet)
+// Module 20357 (showEmojiOverflowActionSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ export default function showEmojiOverflowActionSheet(arg0) {
     }
   };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(20363, dependencyMap.paths);
+  const tmp2 = asyncRequire(20358, dependencyMap.paths);
   const merged = Object.assign(arg0);
   openLazy(tmp2, "EmojiOverflowActionSheet", obj);
 };

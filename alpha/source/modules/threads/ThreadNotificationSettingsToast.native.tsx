@@ -1,9 +1,9 @@
-// Module ID: 8943
-// Function ID: 8944
+// Module ID: 8942
+// Function ID: 8943
 // Name: ThreadNotificationSettingsToast
 // Dependencies: [5952, 2]
 
-// Module 8943 (ThreadNotificationSettingsToast)
+// Module 8942 (ThreadNotificationSettingsToast)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
 import size from "module_2" /* 2 */;
 

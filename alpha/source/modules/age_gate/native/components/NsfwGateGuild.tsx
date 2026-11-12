@@ -1,15 +1,15 @@
-// Module ID: 15824
-// Function ID: 15825
+// Module ID: 15819
+// Function ID: 15820
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 5155, 1385, 10744, 1072, 21, 5243, 575, 1113, 2185, 1252, 10745, 7648, 5957, 15825, 5866, 5873, 2]
+// Dependencies: [19, 17, 5155, 1385, 10738, 1072, 21, 5243, 575, 1113, 2185, 1252, 10739, 7648, 5957, 15820, 5866, 5873, 2]
 // Exports: default
 
-// Module 15824 (NsfwGateGuild)
+// Module 15819 (NsfwGateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 10744 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10745 */;
+import Constants2 from "Constants" /* 10738 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10739 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -84,7 +84,7 @@ export default function NsfwGateGuild(guildId) {
   }, items);
   const obj3 = { style: tmp.container, children: items1 };
   items1 = [closure_10(currentUser(7648), {}), , , , , ];
-  const obj4 = { source: currentUser(15825), style: tmp.image };
+  const obj4 = { source: currentUser(15820), style: tmp.image };
   const tmp7 = currentUser(5957);
   items1[1] = closure_10(tmp7, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult };

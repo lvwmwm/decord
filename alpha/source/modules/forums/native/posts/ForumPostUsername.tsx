@@ -1,18 +1,18 @@
-// Module ID: 14506
-// Function ID: 14507
+// Module ID: 14502
+// Function ID: 14503
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 5244, 14502, 21, 5243, 9041, 5102, 12332, 14507, 504, 9123, 1187, 5866, 2]
+// Dependencies: [19, 17, 5244, 14498, 21, 5243, 9040, 5102, 12326, 14503, 504, 9122, 1187, 5866, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 14506 (ForumPostUsername)
+// Module 14502 (ForumPostUsername)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
 import ForumLayout from "ForumLayout" /* 5102 */;
-import ForumHooks from "ForumHooks" /* 9041 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9123 */;
-import useChatWidthDefault from "useChatWidth" /* 12332 */;
-import ForumChannelStore from "ForumChannelStore" /* 14502 */;
+import ForumHooks from "ForumHooks" /* 9040 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9122 */;
+import useChatWidthDefault from "useChatWidth" /* 12326 */;
+import ForumChannelStore from "ForumChannelStore" /* 14498 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,7 +47,7 @@ function ForumPostUsername(arg0) {
     num = 72;
   }
   const tmp4 = useChatWidthDefault();
-  const diff = tmp4 - tmp2(14507).GRID_HORIZONTAL_PADDING - num;
+  const diff = tmp4 - tmp2(14503).GRID_HORIZONTAL_PADDING - num;
   const items = [AccessibilityStore];
   const tmp2Result = get_initialized;
   const stateFromStores = tmp2Result.useStateFromStores(items, () => roleStyle.roleStyle);

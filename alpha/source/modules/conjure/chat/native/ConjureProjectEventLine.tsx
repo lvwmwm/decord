@@ -1,15 +1,15 @@
-// Module ID: 13538
-// Function ID: 13539
+// Module ID: 13532
+// Function ID: 13533
 // Name: ConjureProjectEventLine
-// Dependencies: [19, 21, 13531, 13527, 13539, 13505, 13541, 5866, 13543, 2]
+// Dependencies: [19, 21, 13525, 13521, 13533, 13499, 13535, 5866, 13537, 2]
 // Exports: default
 
-// Module 13538 (ConjureProjectEventLine)
+// Module 13532 (ConjureProjectEventLine)
 import Text_Text from "Text/Text" /* 5866 */;
-import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 13505 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 13527 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 13531 */;
-import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 13539 */;
+import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 13499 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 13521 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 13525 */;
+import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 13533 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ export default function ConjureProjectEventLine(arg0) {
   const tmp4 = useConjureRemixSettingsRequestDefault(projectId, event);
   if ("voice_channel_pin" === event.type) {
     const obj2 = { projectId };
-    tmp8Result = _false(tmp(13541), obj2);
+    tmp8Result = _false(tmp(13535), obj2);
   } else {
     const obj3 = { variant: "body-md/normal", color: "text-default", children: tmp3 };
     const items = [_false(Text_Text.Text, obj3), ];
@@ -52,7 +52,7 @@ export default function ConjureProjectEventLine(arg0) {
     const tmp9 = React3;
     if (null != tmp4) {
       const obj = { projectId, request: tmp4, notifyAgent: false };
-      tmp10Result = tmp10(tmp(13543), obj);
+      tmp10Result = tmp10(tmp(13537), obj);
     }
     const obj4 = { children: items };
     items[1] = tmp10Result;

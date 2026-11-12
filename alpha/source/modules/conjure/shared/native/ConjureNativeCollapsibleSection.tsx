@@ -1,10 +1,10 @@
-// Module ID: 13608
-// Function ID: 13609
+// Module ID: 13602
+// Function ID: 13603
 // Name: ConjureNativeCollapsibleSection
-// Dependencies: [19, 17, 21, 5243, 575, 5866, 10493, 7897, 7932, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5866, 10491, 7897, 7932, 2]
 // Exports: ConjureNativeCollapsibleMeta, default
 
-// Module 13608 (ConjureNativeCollapsibleSection)
+// Module 13602 (ConjureNativeCollapsibleSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5866 */;
@@ -61,7 +61,7 @@ export default function ConjureNativeCollapsibleSection(showHeader) {
   ({ hideLabel, children } = showHeader);
   const tmp = closure_6();
   if (flag3) {
-    ChevronSmallRightIcon = tmp2(10493).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp2(10491).ChevronSmallDownIcon;
     tmp4 = tmp2;
   } else {
     ChevronSmallRightIcon = tmp2(7897).ChevronSmallRightIcon;

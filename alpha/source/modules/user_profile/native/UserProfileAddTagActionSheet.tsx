@@ -1,16 +1,16 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12069
+// Function ID: 12070
 // Name: UserProfileAddTagActionSheet
-// Dependencies: [19, 502, 8413, 21, 5243, 575, 7679, 12049, 7681, 1113, 12048, 7680, 7667, 5850, 504, 12054, 7290, 6208, 12029, 8480, 5503, 7847, 5507, 6274, 2]
+// Dependencies: [19, 502, 8413, 21, 5243, 575, 7679, 12043, 7681, 1113, 12042, 7680, 7667, 5850, 504, 12048, 7290, 6208, 12023, 8480, 5503, 7847, 5507, 6274, 2]
 // Exports: default
 
-// Module 12075 (UserProfileAddTagActionSheet)
+// Module 12069 (UserProfileAddTagActionSheet)
 import nativeDefault from "native" /* 575 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7290 */;
 import TableRowGroup2 from "TableRowGroup" /* 7680 */;
 import Constants from "Constants" /* 8413 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12048 */;
-import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 12049 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12042 */;
+import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 12043 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;

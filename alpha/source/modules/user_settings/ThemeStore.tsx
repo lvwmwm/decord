@@ -1,7 +1,7 @@
 // Module ID: 1192
 // Function ID: 1193
 // Name: ThemeStore
-// Dependencies: [1193, 1194, 1231, 1195, 1082, 1072, 582, 1230, 1237, 16469, 504, 5073, 572, 2]
+// Dependencies: [1193, 1194, 1231, 1195, 1082, 1072, 582, 1230, 1237, 16464, 504, 5073, 572, 2]
 
 // Module 1192 (ThemeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -24,7 +24,7 @@ let THEME_PREFERENCES_MOBILE;
 let THEME_PREFERENCES_WEB_REFRESH;
 let metroRequire;
 let tmp;
-const updateBackgroundColorDefault = tmp(16469);
+const updateBackgroundColorDefault = tmp(16464);
 function handleThemeChange() {
   const tmp3 = resolveThemeDefault(systemTheme, obj2, c17);
   DARK = ThemeTypes.DARK;
@@ -252,7 +252,7 @@ const obj3 = {
       }
       let flag = DARK !== DARK;
       if (flag) {
-        tmp2(16469)(DARK);
+        tmp2(16464)(DARK);
         flag = true;
       }
       tmp = flag;

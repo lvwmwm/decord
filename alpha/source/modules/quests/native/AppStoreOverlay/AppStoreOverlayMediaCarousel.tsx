@@ -1,15 +1,15 @@
-// Module ID: 10117
-// Function ID: 10118
+// Module ID: 10116
+// Function ID: 10117
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 5244, 1083, 21, 575, 5243, 10118, 10119, 1113, 5957, 504, 9664, 10261, 8759, 8768, 5535, 2]
+// Dependencies: [32, 19, 17, 5244, 1083, 21, 575, 5243, 10117, 10118, 1113, 5957, 504, 9663, 10259, 8758, 8767, 5535, 2]
 // Exports: default
 
-// Module 10117 (AppStoreOverlayMediaCarousel)
+// Module 10116 (AppStoreOverlayMediaCarousel)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import AnalyticsActions from "AnalyticsActions" /* 8759 */;
-import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 10118 */;
-import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 10119 */;
+import AnalyticsActions from "AnalyticsActions" /* 8758 */;
+import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 10117 */;
+import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 10118 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -307,9 +307,9 @@ export default function AppStoreOverlayMediaCarousel(media) {
           if (num5 !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
             if (num5 > current) {
-              LEFT = tmp12(8768).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp12(8767).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp12(8768).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp12(8767).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = num5;

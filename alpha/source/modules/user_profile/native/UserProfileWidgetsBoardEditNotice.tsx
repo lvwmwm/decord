@@ -1,10 +1,10 @@
-// Module ID: 15715
-// Function ID: 15716
+// Module ID: 15710
+// Function ID: 15711
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 5089, 21, 5243, 575, 8540, 10501, 5076, 5974, 5866, 1113, 7364, 7483, 2]
+// Dependencies: [19, 17, 5089, 21, 5243, 575, 8540, 10499, 5076, 5974, 5866, 1113, 7364, 7483, 2]
 // Exports: default
 
-// Module 15715 (UserProfileWidgetsBoardEditNotice)
+// Module 15710 (UserProfileWidgetsBoardEditNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import dismissible_content from "dismissible_content" /* 5076 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
 import XSmallIcon from "XSmallIcon" /* 7483 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8540 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10501 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10499 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

@@ -1,11 +1,11 @@
-// Module ID: 14149
-// Function ID: 14150
+// Module ID: 14145
+// Function ID: 14146
 // Name: CheckpointSessionAnalyticsManager
-// Dependencies: [14150, 1266, 2]
+// Dependencies: [14146, 1266, 2]
 
-// Module 14149 (CheckpointSessionAnalyticsManager)
+// Module 14145 (CheckpointSessionAnalyticsManager)
 import v1 from "v1" /* 1266 */;
-import CheckpointStore from "CheckpointStore" /* 14150 */;
+import CheckpointStore from "CheckpointStore" /* 14146 */;
 import size from "module_2" /* 2 */;
 
 class CheckpointSessionAnalyticsManager {
@@ -26,8 +26,9 @@ class CheckpointSessionAnalyticsManager {
   }
   getAnalyticsProperties() {
     let didPlayerShareDataWithDiscord;
-    const obj = { checkpoint_session_id: this.sessionId, has_personalized_data: didPlayerShareDataWithDiscord };
+    const obj = { checkpoint_session_id: this.sessionId, has_personalized_data: didPlayerShareDataWithDiscord, checkpoint_availability: null, checkpoint_compact_assets: null };
     didPlayerShareDataWithDiscord = this.didPlayerShareDataWithDiscord && null != CheckpointStore.stats;
+    ({ availability: obj.checkpoint_availability, compactAssets: obj.checkpoint_compact_assets } = CheckpointStore);
     return obj;
   }
 }

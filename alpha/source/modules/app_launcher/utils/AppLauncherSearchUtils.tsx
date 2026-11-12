@@ -1,25 +1,25 @@
-// Module ID: 13299
-// Function ID: 13300
+// Module ID: 13293
+// Function ID: 13294
 // Name: AppLauncherSearchUtils
-// Dependencies: [32, 19, 11347, 11345, 11346, 13300, 6282, 6283, 11350, 2116, 12608, 11359, 13272, 13302, 12, 12489, 504, 5890, 13301, 13303, 2]
+// Dependencies: [32, 19, 11341, 11339, 11340, 13294, 6282, 6283, 11344, 2116, 12602, 11353, 13266, 13296, 12, 12483, 504, 5890, 13295, 13297, 2]
 // Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useApplicationCommandsInContext, useGlobalSearchResults, useLocalSearchResults
 
-// Module 13299 (AppLauncherSearchUtils)
+// Module 13293 (AppLauncherSearchUtils)
 import Server from "Server" /* 2116 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5890 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6283 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 11350 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 12608 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 13300 */;
-import SearchAppsRequestSource from "SearchAppsRequestSource" /* 13301 */;
-import ArraySearch from "ArraySearch" /* 13302 */;
-import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 13303 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 11344 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 12602 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 13294 */;
+import SearchAppsRequestSource from "SearchAppsRequestSource" /* 13295 */;
+import ArraySearch from "ArraySearch" /* 13296 */;
+import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 13297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 11347 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11345 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 11346 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 11341 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11339 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 11340 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,8 +46,8 @@ function useApplicationsInContext(allowFetch) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  const usePermissionContext = onlyWithCommands(11350).usePermissionContext;
-  const tmp2 = onlyWithCommands(11350);
+  const usePermissionContext = onlyWithCommands(11344).usePermissionContext;
+  const tmp2 = onlyWithCommands(11344);
   const items = [onlyWithCommands(2116).ApplicationCommandType.CHAT];
   const hasBaseAccessPermissions = usePermissionContext(channel, items).hasBaseAccessPermissions;
   let tmp3 = closure_9(context, hasBaseAccessPermissions, flag);
@@ -128,7 +128,7 @@ function useApplicationsInContext(allowFetch) {
     includeNonEmbeddedApps = includeBuiltIn;
   }
   if (includeNonEmbeddedApps) {
-    items2.push(onlyWithCommands(12608).FAKE_BUILT_IN_APP);
+    items2.push(onlyWithCommands(12602).FAKE_BUILT_IN_APP);
   }
   let obj = { apps: items2, loading: tmp26 };
   let fetching;
@@ -743,7 +743,7 @@ export function bucketCommandSectionNameStartsWith(arg0, arg1) {
       AppLauncherUtils;
       const tmp3 = require;
       if (FAKE_BUILT_IN_APP == null) {
-        FAKE_BUILT_IN_APP = tmp3(12608).FAKE_BUILT_IN_APP;
+        FAKE_BUILT_IN_APP = tmp3(12602).FAKE_BUILT_IN_APP;
       }
       const sectionName = getSectionName(FAKE_BUILT_IN_APP);
       const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
@@ -767,7 +767,7 @@ export function bucketCommandSectionNameContains(arg0, arg1) {
       AppLauncherUtils;
       const tmp3 = require;
       if (FAKE_BUILT_IN_APP == null) {
-        FAKE_BUILT_IN_APP = tmp3(12608).FAKE_BUILT_IN_APP;
+        FAKE_BUILT_IN_APP = tmp3(12602).FAKE_BUILT_IN_APP;
       }
       const sectionName = getSectionName(FAKE_BUILT_IN_APP);
       const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
@@ -1358,7 +1358,7 @@ export function useGlobalSearchResults(fetches) {
     tmp = substr;
   }
   const tmp3 = query;
-  const tmp5 = entrypoint === query(12489).AppLauncherEntrypoint.VOICE;
+  const tmp5 = entrypoint === query(12483).AppLauncherEntrypoint.VOICE;
   dependencyMap = tmp5;
   guild_id = undefined;
   if ("channel" === context.type) {

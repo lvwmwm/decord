@@ -1,10 +1,10 @@
-// Module ID: 17545
-// Function ID: 17546
+// Module ID: 17540
+// Function ID: 17541
 // Name: openOrbsArcadeSheets
-// Dependencies: [5489, 17546, 2118, 17563, 17565, 2]
+// Dependencies: [5489, 17541, 2118, 17558, 17560, 2]
 // Exports: openOrbsArcadeInfoSheet, openOrbsArcadeRewardUnlockedSheet, openOrbsArcadeRewardsSheet
 
-// Module 17545 (openOrbsArcadeSheets)
+// Module 17540 (openOrbsArcadeSheets)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import size from "module_2" /* 2 */;
@@ -14,12 +14,12 @@ const result = size.fileFinishedImporting("modules/orbs_arcade/native/openOrbsAr
 export function openOrbsArcadeRewardsSheet(id, surface) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id, surface };
-  obj.openLazy(asyncRequire(17546, dependencyMap.paths), "OrbsArcadeRewardsSheet", obj2);
+  obj.openLazy(asyncRequire(17541, dependencyMap.paths), "OrbsArcadeRewardsSheet", obj2);
 }
 export function openOrbsArcadeInfoSheet(id, surface) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id, surface };
-  obj.openLazy(asyncRequire(17563, dependencyMap.paths), "OrbsArcadeInfoSheet", obj2);
+  obj.openLazy(asyncRequire(17558, dependencyMap.paths), "OrbsArcadeInfoSheet", obj2);
 }
 export function openOrbsArcadeRewardUnlockedSheet(id, surface, set) {
   if (set === undefined) {
@@ -30,5 +30,5 @@ export function openOrbsArcadeRewardUnlockedSheet(id, surface, set) {
   }
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id, surface, unlockedRewardIds: set };
-  obj.openLazy(asyncRequire(17565, dependencyMap.paths), "OrbsArcadeRewardUnlockedSheet", obj2);
+  obj.openLazy(asyncRequire(17560, dependencyMap.paths), "OrbsArcadeRewardUnlockedSheet", obj2);
 }

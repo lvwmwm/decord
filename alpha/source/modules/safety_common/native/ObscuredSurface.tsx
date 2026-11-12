@@ -1,15 +1,15 @@
-// Module ID: 10246
-// Function ID: 10247
+// Module ID: 10244
+// Function ID: 10245
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 5243, 575, 10247, 8014, 5866, 1113, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 10245, 8014, 5866, 1113, 2]
 // Exports: default
 
-// Module 10246 (ObscuredSurface)
+// Module 10244 (ObscuredSurface)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import ImageWarningIcon2 from "ImageWarningIcon" /* 8014 */;
-import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 10247 */;
+import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 10245 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;

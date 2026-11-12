@@ -1,10 +1,10 @@
-// Module ID: 18846
-// Function ID: 18847
+// Module ID: 18841
+// Function ID: 18842
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 5244, 1072, 5089, 21, 5243, 575, 8494, 563, 5503, 1113, 9664, 5866, 6274, 5873, 8338, 5489, 2]
+// Dependencies: [32, 19, 17, 5244, 1072, 5089, 21, 5243, 575, 8494, 563, 5503, 1113, 9663, 5866, 6274, 5873, 8338, 5489, 2]
 // Exports: default
 
-// Module 18846 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 18841 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -98,7 +98,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
     },
     children: items2
   };
-  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(9664), size) };
+  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(9663), size) };
   const BottomSheet = Sheet_BottomSheet.BottomSheet;
   intl = intl6.intl;
   size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true };

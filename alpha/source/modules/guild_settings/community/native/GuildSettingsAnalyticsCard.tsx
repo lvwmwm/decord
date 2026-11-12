@@ -1,10 +1,10 @@
-// Module ID: 20499
-// Function ID: 20500
+// Module ID: 20494
+// Function ID: 20495
 // Name: GuildSettingsAnalyticsCard
-// Dependencies: [19, 17, 21, 5243, 575, 5952, 7381, 5866, 5974, 1113, 12267, 20500, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5952, 7381, 5866, 5974, 1113, 12261, 20495, 2]
 // Exports: default
 
-// Module 20499 (GuildSettingsAnalyticsCard)
+// Module 20494 (GuildSettingsAnalyticsCard)
 import nativeDefault from "native" /* 575 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
 import react from "react" /* 19 */;
@@ -86,7 +86,7 @@ export default function GuildSettingsAnalyticsCard(metricKey) {
     const obj6 = { style: tmp.line, children: items3 };
     if (isTrendingUp) {
       const obj7 = { size: "xxs", color: description(575).colors.TEXT_FEEDBACK_POSITIVE, accessible: true, accessibilityLabel: intl2.string(metricKey(1113).t["8mcccd"]) };
-      const ArrowLargeUpIcon = tmp4(12267).ArrowLargeUpIcon;
+      const ArrowLargeUpIcon = tmp4(12261).ArrowLargeUpIcon;
       intl2 = tmp4(1113).intl;
       tmp7Result3 = tmp7(ArrowLargeUpIcon, obj7);
     }
@@ -94,7 +94,7 @@ export default function GuildSettingsAnalyticsCard(metricKey) {
     let tmp7Result4 = null;
     if (isTrendingDown) {
       const obj8 = { size: "xxs", color: description(575).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: intl3.string(metricKey(1113).t.NLl6Q3) };
-      const ArrowLargeDownIcon = tmp4(20500).ArrowLargeDownIcon;
+      const ArrowLargeDownIcon = tmp4(20495).ArrowLargeDownIcon;
       intl3 = tmp4(1113).intl;
       tmp7Result4 = tmp7(ArrowLargeDownIcon, obj8);
     }

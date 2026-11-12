@@ -1,10 +1,10 @@
-// Module ID: 11001
-// Function ID: 11002
+// Module ID: 10995
+// Function ID: 10996
 // Name: MessagePreviewParagraph
-// Dependencies: [32, 19, 17, 21, 5243, 5998, 1377, 5881, 10995, 5866, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 5998, 1377, 5881, 10989, 5866, 2]
 // Exports: MessagePreviewParagraph
 
-// Module 11001 (MessagePreviewParagraph)
+// Module 10995 (MessagePreviewParagraph)
 import Text_Text from "Text/Text" /* 5866 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -41,7 +41,7 @@ function MeasuredParagraph(leadingContent) {
   const tmp7 = closure_8();
   const tmp8 = fontScale(first);
   const memo = variant.useMemo(() => {
-    const f129859 = (node, index) => {
+    const f129869 = (node, index) => {
       let tmp15;
       let tmp16;
       const items = [node.node, ];
@@ -84,8 +84,8 @@ function MeasuredParagraph(leadingContent) {
       items[1] = tmp4;
       return items;
     };
-    let obj = { variant, maxFontSizeMultiplier, widths: new Map(mentions.map(f129859)) };
-    new Map(mentions.map(f129859));
+    let obj = { variant, maxFontSizeMultiplier, widths: new Map(mentions.map(f129869)) };
+    new Map(mentions.map(f129869));
     return obj;
   }, items);
   let tmp10 = closure_6;

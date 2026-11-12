@@ -1,10 +1,10 @@
-// Module ID: 10210
-// Function ID: 10211
+// Module ID: 10208
+// Function ID: 10209
 // Name: ChannelTabPinScope
 // Dependencies: [1072, 2]
 // Exports: getPinScopeForLocation, isLocationInPinScope, isSamePinScope, isSameTabLocation, wouldNavigationLeavePinnedTab
 
-// Module 10210 (ChannelTabPinScope)
+// Module 10208 (ChannelTabPinScope)
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

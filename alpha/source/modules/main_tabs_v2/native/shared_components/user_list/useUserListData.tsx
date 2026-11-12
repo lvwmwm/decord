@@ -1,10 +1,10 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11716
+// Function ID: 11717
 // Name: useUserListData
-// Dependencies: [109, 32, 19, 8700, 8698, 8487, 1404, 5185, 1385, 1072, 5170, 8697, 10183, 572, 8699, 7012, 12, 1113, 11723, 2]
+// Dependencies: [109, 32, 19, 8700, 8698, 8487, 1404, 5185, 1385, 1072, 5170, 8697, 10181, 572, 8699, 7012, 12, 1113, 11717, 2]
 // Exports: default
 
-// Module 11722 (useUserListData)
+// Module 11716 (useUserListData)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,7 +12,7 @@ import intl6 from "intl" /* 1113 */;
 import GuildUtilsDefault from "GuildUtils" /* 7012 */;
 import UserSearchItemsDefault from "UserSearchItems" /* 8697 */;
 import UserSearchUtils from "UserSearchUtils" /* 8699 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 10183 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 10181 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -131,7 +131,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   let withFriendSuggestions;
   let withFriends;
   let withGuildMembers;
-  const f102070 = (items) => items.items;
+  const f102077 = (items) => items.items;
   ({ data, withFriends, excludeCurrentUser } = affinitySuggestionsLimit);
   ({ withGuildMembers, withAffinitySuggestions, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam } = affinitySuggestionsLimit);
   if (excludeCurrentUser === undefined) {
@@ -198,8 +198,8 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   } else {
     items11 = [];
   }
-  let items9 = [{ title: null, items: items11.flatMap(f102070) }];
-  const obj = { title: null, items: items11.flatMap(f102070) };
+  let items9 = [{ title: null, items: items11.flatMap(f102077) }];
+  const obj = { title: null, items: items11.flatMap(f102077) };
   const obj2 = { title: intl.string(intl6.t.HbJ7eD), items: valueResult2 };
   intl = intl6.intl;
   if (withAffinitySuggestions) {

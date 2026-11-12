@@ -1,13 +1,13 @@
-// Module ID: 14971
-// Function ID: 14972
+// Module ID: 14967
+// Function ID: 14968
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 5243, 5153, 6274, 5866, 1113, 10872, 2]
+// Dependencies: [19, 17, 21, 5243, 5153, 6274, 5866, 1113, 10866, 2]
 // Exports: default
 
-// Module 14971 (InviteRolesList)
+// Module 14967 (InviteRolesList)
 import react_native from "react-native" /* 17 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 5153 */;
-import RolePillDefault from "RolePill" /* 10872 */;
+import RolePillDefault from "RolePill" /* 10866 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

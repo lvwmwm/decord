@@ -1,9 +1,9 @@
-// Module ID: 8746
-// Function ID: 8747
+// Module ID: 8745
+// Function ID: 8746
 // Name: LocalStorageWrapper
 // Dependencies: [510, 2]
 
-// Module 8746 (LocalStorageWrapper)
+// Module 8745 (LocalStorageWrapper)
 import Storage2 from "Storage" /* 510 */;
 import size from "module_2" /* 2 */;
 

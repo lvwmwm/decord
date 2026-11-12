@@ -1,10 +1,10 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 12332
+// Function ID: 12333
 // Name: useHeroColors
-// Dependencies: [32, 19, 5244, 1192, 8472, 8429, 12339, 1090, 671, 504, 2]
+// Dependencies: [32, 19, 5244, 1192, 8472, 8429, 12333, 1090, 671, 504, 2]
 // Exports: default, getHeroColors
 
-// Module 12338 (useHeroColors)
+// Module 12332 (useHeroColors)
 import _modDef671 from "module_671" /* 671 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import _modDef8429 from "module_8429" /* 8429 */;
@@ -28,7 +28,7 @@ export default function useHeroColors(pendingAvatarSrc) {
   let obj2 = first(504);
   const items1 = [ThemeStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => theme.theme);
-  let obj3 = first(12339);
+  let obj3 = first(12333);
   const fallbackHeroColor = obj3.getFallbackHeroColor(stateFromStores1, stateFromStores);
   let obj4 = first(8472);
   [first, tmp6] = obj4.useAvatarColors(pendingAvatarSrc, fallbackHeroColor);
@@ -98,7 +98,7 @@ export function getHeroColors(iconURL) {
   const tmp = AccessibilityStore;
   const saturation = AccessibilityStore.saturation;
   const theme = ThemeStore.theme;
-  let obj = num(12339);
+  let obj = num(12333);
   const fallbackHeroColor = obj.getFallbackHeroColor(theme, saturation);
   num = 1;
   if (AccessibilityStore.desaturateUserColors) {

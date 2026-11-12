@@ -1,10 +1,10 @@
-// Module ID: 17867
-// Function ID: 17868
+// Module ID: 17862
+// Function ID: 17863
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 5243, 575, 7885, 7847, 1113, 4081, 7679, 7681, 14471, 2]
+// Dependencies: [32, 19, 21, 5243, 575, 7885, 7847, 1113, 4081, 7679, 7681, 14467, 2]
 // Exports: default
 
-// Module 17867 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 17862 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import TableRadioGroup2 from "TableRadioGroup" /* 7679 */;
 import TableRadioRow2 from "TableRadioRow" /* 7681 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7847 */;
 import ActionSheet2 from "ActionSheet" /* 7885 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 14471 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 14467 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;

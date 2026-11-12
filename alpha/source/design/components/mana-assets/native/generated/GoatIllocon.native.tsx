@@ -1,27 +1,27 @@
-// Module ID: 13563
-// Function ID: 13564
+// Module ID: 13557
+// Function ID: 13558
 // Name: GoatIllocon
-// Dependencies: [19, 21, 13564, 13565, 13566, 7689, 5957, 2]
+// Dependencies: [19, 21, 13558, 13559, 13560, 7689, 5957, 2]
 // Exports: GoatIllocon
 
-// Module 13563 (GoatIllocon)
+// Module 13557 (GoatIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import react_native from "react-native" /* 7689 */;
-import _modDef13564 from "module_13564" /* 13564 */;
-import _modDef13565 from "module_13565" /* 13565 */;
-import _modDef13566 from "module_13566" /* 13566 */;
+import _modDef13558 from "module_13558" /* 13558 */;
+import _modDef13559 from "module_13559" /* 13559 */;
+import _modDef13560 from "module_13560" /* 13560 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13564 };
+let obj2 = { uri: _modDef13558 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13565 };
-({ uri: _modDef13565 });
-obj[3] = { uri: _modDef13566 };
-({ uri: _modDef13566 });
+obj[2] = { uri: _modDef13559 };
+({ uri: _modDef13559 });
+obj[3] = { uri: _modDef13560 };
+({ uri: _modDef13560 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GoatIllocon.native.tsx");
 

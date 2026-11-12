@@ -1,14 +1,14 @@
-// Module ID: 10115
-// Function ID: 10116
+// Module ID: 10114
+// Function ID: 10115
 // Name: StarIcon
-// Dependencies: [19, 21, 575, 5956, 10116, 2]
+// Dependencies: [19, 21, 575, 5956, 10115, 2]
 // Exports: StarIcon
 
-// Module 10115 (StarIcon)
+// Module 10114 (StarIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10116 */;
+import AssetRegistry from "AssetRegistry" /* 10115 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

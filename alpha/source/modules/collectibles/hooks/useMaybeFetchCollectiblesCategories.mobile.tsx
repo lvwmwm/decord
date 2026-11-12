@@ -1,12 +1,12 @@
-// Module ID: 9961
-// Function ID: 9962
+// Module ID: 9960
+// Function ID: 9961
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [5869, 504, 9962, 2]
+// Dependencies: [5869, 504, 9961, 2]
 // Exports: default
 
-// Module 9961 (useMaybeFetchCollectiblesCategories)
+// Module 9960 (useMaybeFetchCollectiblesCategories)
 import get_initialized from "get initialized" /* 504 */;
-import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 9962 */;
+import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 9961 */;
 import DevSettingsStore from "DevSettingsStore" /* 5869 */;
 import size from "module_2" /* 2 */;
 

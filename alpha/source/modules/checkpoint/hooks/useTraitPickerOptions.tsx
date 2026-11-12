@@ -1,15 +1,15 @@
-// Module ID: 14425
-// Function ID: 14426
+// Module ID: 14421
+// Function ID: 14422
 // Name: useTraitPickerOptions
-// Dependencies: [19, 1385, 14150, 504, 2107, 6681, 6683, 6358, 6360, 6315, 1113, 2]
+// Dependencies: [19, 1385, 14146, 504, 2107, 6681, 6683, 6358, 6360, 6315, 1113, 2]
 // Exports: useTraitPickerOptions
 
-// Module 14425 (useTraitPickerOptions)
+// Module 14421 (useTraitPickerOptions)
 import intl2 from "intl" /* 1113 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6681 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import CheckpointStore from "CheckpointStore" /* 14150 */;
+import CheckpointStore from "CheckpointStore" /* 14146 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5, earnedCount, set, totalCount;

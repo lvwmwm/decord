@@ -1,10 +1,10 @@
-// Module ID: 13289
-// Function ID: 13290
+// Module ID: 13283
+// Function ID: 13284
 // Name: EntityBorderAppIcon
 // Dependencies: [17, 21, 575, 5243, 5957, 2]
 // Exports: default
 
-// Module 13289 (EntityBorderAppIcon)
+// Module 13283 (EntityBorderAppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

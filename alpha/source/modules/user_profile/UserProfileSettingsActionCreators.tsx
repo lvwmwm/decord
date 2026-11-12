@@ -1,10 +1,10 @@
-// Module ID: 9332
-// Function ID: 9333
+// Module ID: 9331
+// Function ID: 9332
 // Name: UserProfileSettingsActionCreators
 // Dependencies: [5155, 1385, 7288, 6098, 8343, 572, 2]
 // Exports: setPendingChanges
 
-// Module 9332 (UserProfileSettingsActionCreators)
+// Module 9331 (UserProfileSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import isEqualDefault from "isEqual" /* 6098 */;
 import GuildTagUtils from "GuildTagUtils" /* 8343 */;

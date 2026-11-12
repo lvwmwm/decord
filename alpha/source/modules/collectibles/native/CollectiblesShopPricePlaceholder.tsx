@@ -1,10 +1,10 @@
-// Module ID: 10377
-// Function ID: 10378
+// Module ID: 10375
+// Function ID: 10376
 // Name: CollectiblesShopPricePlaceholder
 // Dependencies: [19, 21, 5243, 575, 1652, 5485, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 10377 (CollectiblesShopPricePlaceholder)
+// Module 10375 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;

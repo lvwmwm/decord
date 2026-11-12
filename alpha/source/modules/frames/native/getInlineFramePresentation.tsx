@@ -1,10 +1,10 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13240
+// Function ID: 13241
 // Name: getInlineFramePresentation
 // Dependencies: [6957, 2]
 // Exports: default
 
-// Module 13246 (getInlineFramePresentation)
+// Module 13240 (getInlineFramePresentation)
 import FramesConstants from "FramesConstants" /* 6957 */;
 import size from "module_2" /* 2 */;
 

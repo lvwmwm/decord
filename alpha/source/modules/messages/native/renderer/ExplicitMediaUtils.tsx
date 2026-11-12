@@ -1,10 +1,10 @@
-// Module ID: 10162
-// Function ID: 10163
+// Module ID: 10160
+// Function ID: 10161
 // Name: ExplicitMediaUtils
 // Dependencies: [1072, 1403, 8567, 8573, 6767, 1113, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 10162 (ExplicitMediaUtils)
+// Module 10160 (ExplicitMediaUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1403 */;

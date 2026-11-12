@@ -1,27 +1,27 @@
-// Module ID: 14923
-// Function ID: 14924
+// Module ID: 14919
+// Function ID: 14920
 // Name: ControllerIllocon
-// Dependencies: [19, 21, 14924, 14925, 14926, 7689, 5957, 2]
+// Dependencies: [19, 21, 14920, 14921, 14922, 7689, 5957, 2]
 // Exports: ControllerIllocon
 
-// Module 14923 (ControllerIllocon)
+// Module 14919 (ControllerIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import react_native from "react-native" /* 7689 */;
-import _modDef14924 from "module_14924" /* 14924 */;
-import _modDef14925 from "module_14925" /* 14925 */;
-import _modDef14926 from "module_14926" /* 14926 */;
+import _modDef14920 from "module_14920" /* 14920 */;
+import _modDef14921 from "module_14921" /* 14921 */;
+import _modDef14922 from "module_14922" /* 14922 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14924 };
+let obj2 = { uri: _modDef14920 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef14925 };
-({ uri: _modDef14925 });
-obj[3] = { uri: _modDef14926 };
-({ uri: _modDef14926 });
+obj[2] = { uri: _modDef14921 };
+({ uri: _modDef14921 });
+obj[3] = { uri: _modDef14922 };
+({ uri: _modDef14922 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ControllerIllocon.native.tsx");
 

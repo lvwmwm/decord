@@ -1,10 +1,10 @@
-// Module ID: 16977
-// Function ID: 16978
+// Module ID: 16972
+// Function ID: 16973
 // Name: DisplayNameStylesActionCreators
 // Dependencies: [572, 2]
 // Exports: markDisplayNameStyleEffectSeen, markDisplayNameStyleFontSeen, markDisplayNameStyleNewEffectsBadgeDismissed, markDisplayNameStyleNewFontsBadgeDismissed
 
-// Module 16977 (DisplayNameStylesActionCreators)
+// Module 16972 (DisplayNameStylesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

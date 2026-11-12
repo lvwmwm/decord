@@ -1,18 +1,18 @@
-// Module ID: 10169
-// Function ID: 10170
+// Module ID: 10167
+// Function ID: 10168
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 5243, 575, 5841, 10170, 10171, 1113, 7483, 7354, 5866, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5841, 10168, 10169, 1113, 7483, 7354, 5866, 2]
 // Exports: default
 
-// Module 10169 (SharePreparingModal)
+// Module 10167 (SharePreparingModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import Backdrop from "Backdrop" /* 5841 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7354 */;
 import XSmallIcon from "XSmallIcon" /* 7483 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 10170 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 10171 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 10168 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 10169 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 17297
-// Function ID: 17298
+// Module ID: 17292
+// Function ID: 17293
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 5243, 575, 14124, 1113, 2685, 17298, 17299, 14677, 7569, 15779, 17294, 6274, 5866, 7680, 7379, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 14120, 1113, 2685, 17293, 17294, 14673, 7569, 15774, 17289, 6274, 5866, 7680, 7379, 2]
 // Exports: default
 
-// Module 17297 (FamilyCenterFeatureRow)
+// Module 17292 (FamilyCenterFeatureRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl11 from "intl" /* 1113 */;
@@ -14,12 +14,12 @@ import Stack_Stack from "Stack/Stack" /* 6274 */;
 import TableRow2 from "TableRow" /* 7379 */;
 import EyeIcon from "EyeIcon" /* 7569 */;
 import TableRowGroup2 from "TableRowGroup" /* 7680 */;
-import useAgeSpecificText4 from "useAgeSpecificText" /* 14124 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14677 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15779 */;
-import QrCodeIcon from "QrCodeIcon" /* 17294 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17298 */;
-import ChatCheckIcon from "ChatCheckIcon" /* 17299 */;
+import useAgeSpecificText4 from "useAgeSpecificText" /* 14120 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14673 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15774 */;
+import QrCodeIcon from "QrCodeIcon" /* 17289 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17293 */;
+import ChatCheckIcon from "ChatCheckIcon" /* 17294 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

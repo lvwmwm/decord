@@ -1,18 +1,18 @@
-// Module ID: 15347
-// Function ID: 15348
+// Module ID: 15344
+// Function ID: 15345
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8481, 21, 5243, 575, 7852, 7871, 504, 8414, 5866, 1113, 2781, 11617, 11619, 5873, 11757, 11600, 15348, 10493, 2]
+// Dependencies: [32, 19, 17, 8481, 21, 5243, 575, 7852, 7871, 504, 8414, 5866, 1113, 2781, 11611, 11613, 5873, 11751, 11594, 15345, 10491, 2]
 // Exports: default
 
-// Module 15347 (UserSettingsGiftingBadgeProgress)
+// Module 15344 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 575 */;
 import _modDef2781 from "module_2781" /* 2781 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8481 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 11600 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11617 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11619 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 11594 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11611 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11613 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -216,11 +216,11 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     let ChevronSmallDownIcon;
     let tmp19 = closure_8(currentTier);
     const tmp25 = closure_8(nextTier);
-    const tmp7Result = analyticsLocation(11617);
+    const tmp7Result = analyticsLocation(11611);
     const giftingBadgeProgressPercent = tmp7Result.getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
-    const tmp7Result3 = analyticsLocation(11617);
+    const tmp7Result3 = analyticsLocation(11611);
     let giftingBadgeTierIconUrl = tmp7Result3.getGiftingBadgeTierIconUrl(currentTier);
-    const tmp7Result4 = analyticsLocation(11617);
+    const tmp7Result4 = analyticsLocation(11611);
     const giftingBadgeTierIconUrl1 = tmp7Result4.getGiftingBadgeTierIconUrl(nextTier);
     if (null != nextTier) {
       const intl2 = tmp7(1113).intl;
@@ -255,7 +255,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     const obj7 = { style: tmp.progressRow, children: items1 };
     if (tmp13) {
       const obj8 = { icon: giftingBadgeTierIconUrl, size: 36, style: { margin: 4 } };
-      tmp13 = closure_9(tmp4(11619), obj8);
+      tmp13 = closure_9(tmp4(11613), obj8);
     }
     items1 = [tmp13, , ];
     const obj9 = { style: tmp.progressTitleText, variant: "body-md/medium", color: "text-strong", children: formatToPlainString2Result };
@@ -263,7 +263,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     let tmp15Result = null != giftingBadgeTierIconUrl1;
     if (tmp15Result) {
       const obj10 = { icon: giftingBadgeTierIconUrl1, size: 36, style: { margin: 4 } };
-      tmp15Result = tmp15(tmp4(11619), obj10);
+      tmp15Result = tmp15(tmp4(11613), obj10);
     }
     items1[2] = tmp15Result;
     items2 = [tmp11(tmp12, obj7), ];
@@ -305,7 +305,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     };
     const Button = tmp7(5873).Button;
     obj19 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-    GiftIcon = tmp7(11757).GiftIcon;
+    GiftIcon = tmp7(11751).GiftIcon;
     intl4 = tmp7(1113).intl;
     items5[1] = closure_9(Button, obj18);
     const obj20 = { style: tmp.divider };
@@ -323,9 +323,9 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     items6 = [closure_9(Text2, obj22), ];
     const tmp20 = closure_5;
     if (tmp11Result) {
-      ChevronSmallDownIcon = tmp7(15348).ChevronSmallUpIcon;
+      ChevronSmallDownIcon = tmp7(15345).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp7(10493).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp7(10491).ChevronSmallDownIcon;
     }
     const obj23 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
     items6[1] = closure_9(ChevronSmallDownIcon, obj23);

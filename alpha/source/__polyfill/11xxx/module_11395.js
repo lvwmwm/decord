@@ -1,120 +1,63 @@
 // Module ID: 11395
 // Function ID: 11396
-// Dependencies: [11371, 11373]
-// Exports: createParsingComponentsAtWeekday, getBackwardDaysToWeekday, getDaysForwardToWeekday, getDaysToWeekdayClosest
+// Dependencies: [41, 42]
 
 // Module 11395
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11371 */;
-import Meridiem from "Meridiem" /* 11373 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-function getDaysToWeekday(dateWithAdjustedTimezone, sum, next) {
-  const day = dateWithAdjustedTimezone.getDay();
-  if ("this" === next) {
-    const diff = sum - dateWithAdjustedTimezone.getDay();
-    sum = diff;
-    if (diff < 0) {
-      sum = diff + 7;
-    }
-    return sum;
-  } else if ("last" === next) {
-    const diff1 = sum - dateWithAdjustedTimezone.getDay();
-    let diff2 = diff1;
-    if (diff1 >= 0) {
-      diff2 = diff1 - 7;
-    }
-    return diff2;
-  } else if ("next" === next) {
-    let sum3;
-    if (day == Meridiem.Weekday.SUNDAY) {
-      let num12 = 7;
-      if (sum != Meridiem.Weekday.SUNDAY) {
-        num12 = sum;
-      }
-      sum3 = num12;
-    } else if (day == Meridiem.Weekday.SATURDAY) {
-      let num9 = 7;
-      if (sum != Meridiem.Weekday.SATURDAY) {
-        let num10 = 8;
-        if (sum != Meridiem.Weekday.SUNDAY) {
-          num10 = 1 + sum;
-        }
-        num9 = num10;
-      }
-      sum3 = num9;
+class OverlapRemovalRefiner {
+  constructor() {
+    _classCallCheck(this, OverlapRemovalRefiner);
+  }
+}
+const entry = {
+  key: "refine",
+  value: function refine(debug, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
     } else {
-      if (sum < day) {
-        if (sum != Meridiem.Weekday.SUNDAY) {
-          const diff3 = sum - dateWithAdjustedTimezone.getDay();
-          let sum1 = diff3;
-          if (diff3 < 0) {
-            sum1 = diff3 + 7;
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp8 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp4;
+          let tmp = arg1[num];
+          if (tmp.index >= first.index + first.text.length) {
+            let arr = items.push(first);
+            tmp4 = tmp;
+          } else {
+            first = null;
+            let closure_1 = null;
+            if (tmp.text.length > first.text.length) {
+              first = tmp;
+              closure_1 = first;
+              tmp4 = tmp;
+            } else {
+              closure_1 = tmp;
+              tmp4 = first;
+            }
+            let debugResult = debug.debug(() => {
+              console.log("" + self.constructor.name + " remove " + closure_1 + " by " + first);
+            });
           }
-          sum3 = sum1;
-        }
+          num = num2 + 1;
+          first = tmp4;
+          tmp8 = tmp4;
+          num2 = num;
+        } while (num < arg1.length);
       }
-      const diff4 = sum - dateWithAdjustedTimezone.getDay();
-      let sum2 = diff4;
-      if (diff4 < 0) {
-        sum2 = diff4 + 7;
+      if (null != tmp8) {
+        items.push(tmp8);
       }
-      sum3 = sum2 + 7;
+      return items;
     }
-    return sum3;
-  } else {
-    const diff5 = sum - dateWithAdjustedTimezone.getDay();
-    let diff6 = diff5;
-    if (diff5 >= 0) {
-      diff6 = diff5 - 7;
-    }
-    const diff7 = sum - dateWithAdjustedTimezone.getDay();
-    let sum4 = diff7;
-    if (diff7 < 0) {
-      sum4 = diff7 + 7;
-    }
-    if (sum4 < -diff6) {
-      diff6 = sum4;
-    }
-    return diff6;
   }
-}
+};
+let items = [entry];
 
-export function createParsingComponentsAtWeekday(reference, sum, next) {
-  const tmp = getDaysToWeekday(reference.getDateWithAdjustedTimezone(), sum, next);
-  const parsingComponents = new ReferenceWithTimezone.ParsingComponents(reference);
-  const addDurationAsImpliedResult = parsingComponents.addDurationAsImplied({ day: tmp });
-  addDurationAsImpliedResult.assign("weekday", sum);
-  return addDurationAsImpliedResult;
-}
-export { getDaysToWeekday };
-export function getDaysToWeekdayClosest(getDay, arg1) {
-  const diff = arg1 - getDay.getDay();
-  let diff1 = diff;
-  if (diff >= 0) {
-    diff1 = diff - 7;
-  }
-  const diff2 = arg1 - getDay.getDay();
-  let sum = diff2;
-  if (diff2 < 0) {
-    sum = diff2 + 7;
-  }
-  if (sum < -diff1) {
-    diff1 = sum;
-  }
-  return diff1;
-}
-export function getDaysForwardToWeekday(getDay, arg1) {
-  const diff = arg1 - getDay.getDay();
-  let sum = diff;
-  if (diff < 0) {
-    sum = diff + 7;
-  }
-  return sum;
-}
-export function getBackwardDaysToWeekday(getDay, arg1) {
-  const diff = arg1 - getDay.getDay();
-  let diff1 = diff;
-  if (diff >= 0) {
-    diff1 = diff - 7;
-  }
-  return diff1;
-}
+export default _createClass(OverlapRemovalRefiner, items);

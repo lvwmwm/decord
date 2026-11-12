@@ -1,9 +1,9 @@
-// Module ID: 19295
-// Function ID: 19296
+// Module ID: 19290
+// Function ID: 19291
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 5243, 575, 10987, 5866, 1187, 19296, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 10981, 5866, 1187, 19291, 2]
 
-// Module 19295 (guild_channels/VoiceOrStageSummaryRow)
+// Module 19290 (guild_channels/VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

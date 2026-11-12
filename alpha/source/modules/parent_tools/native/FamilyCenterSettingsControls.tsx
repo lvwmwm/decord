@@ -1,10 +1,10 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 17313
+// Function ID: 17314
 // Name: FamilyCenterSettingsControls
-// Dependencies: [19, 17, 8674, 1072, 21, 5243, 575, 5866, 1113, 2685, 6785, 17319, 2118, 17322, 7379, 9550, 17305, 1499, 17323, 6274, 7680, 5873, 9554, 8460, 5951, 17229, 8675, 17324, 2]
+// Dependencies: [19, 17, 8674, 1072, 21, 5243, 575, 5866, 1113, 2685, 6785, 17314, 2118, 17317, 7379, 9549, 17300, 1499, 17318, 6274, 7680, 5873, 9553, 8460, 5951, 17224, 8675, 17319, 2]
 // Exports: default
 
-// Module 17318 (FamilyCenterSettingsControls)
+// Module 17313 (FamilyCenterSettingsControls)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,9 +14,9 @@ import Text_Text from "Text/Text" /* 5866 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import LayerActionCreators from "LayerActionCreators" /* 8460 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8675 */;
-import useUserLinks from "useUserLinks" /* 9550 */;
-import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 9554 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17324 */;
+import useUserLinks from "useUserLinks" /* 9549 */;
+import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 9553 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17319 */;
 import react from "react" /* 19 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 8674 */;
 import Fragment from "Fragment" /* 21 */;
@@ -59,7 +59,7 @@ function SpendingLimitRow(teenId) {
     flag = true;
   }
   const tmp = closure_10();
-  let obj = teenId(17322);
+  let obj = teenId(17317);
   const spendingLimitDisplayState = obj.useSpendingLimitDisplayState(cap);
   const kind = spendingLimitDisplayState.kind;
   if ("off" === kind) {
@@ -112,7 +112,7 @@ function SpendingLimitRow(teenId) {
     fn = () => {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { teenId };
-      obj.pushLazy(asyncRequire(17319, dependencyMap.paths), obj2, hasOwnProperty, { animation: "slide_from_right" });
+      obj.pushLazy(asyncRequire(17314, dependencyMap.paths), obj2, hasOwnProperty, { animation: "slide_from_right" });
     };
   }
   return tmp15(TableRow, obj15);
@@ -232,9 +232,9 @@ function FamilyCenterSettingsParentalControls() {
   const tmp = closure_10();
   let tmp2 = selectedTeenUser;
   let tmp3 = dependencyMap;
-  let obj = selectedTeenUser(17305);
+  let obj = selectedTeenUser(17300);
   selectedTeenUser = obj.useSelectedTeenUser();
-  const obj2 = selectedTeenUser(17305);
+  const obj2 = selectedTeenUser(17300);
   const shouldLoadSettingsForSelectedTeenUser = obj2.useShouldLoadSettingsForSelectedTeenUser();
   const obj3 = selectedTeenUser(1499);
   dependencyMap = obj3.useNavigation();
@@ -248,7 +248,7 @@ function FamilyCenterSettingsParentalControls() {
   if (rules == null) {
     rules = [];
   }
-  const ParentalControlledSpendingLimit = tmp2(17229).ParentalControlledSpendingLimit;
+  const ParentalControlledSpendingLimit = tmp2(17224).ParentalControlledSpendingLimit;
   let id;
   const useControlledSetting = ParentalControlledSpendingLimit.useControlledSetting;
   if (selectedTeenUser != null) {
@@ -256,8 +256,8 @@ function FamilyCenterSettingsParentalControls() {
   }
   const controlledSetting = useControlledSetting(id);
   let id1;
-  const useHasLoadedSettingsForTeen = tmp2(17305).useHasLoadedSettingsForTeen;
-  tmp2(17305);
+  const useHasLoadedSettingsForTeen = tmp2(17300).useHasLoadedSettingsForTeen;
+  tmp2(17300);
   if (selectedTeenUser != null) {
     id1 = selectedTeenUser.id;
   }
@@ -279,9 +279,9 @@ function FamilyCenterSettingsParentalControls() {
       const teenSettingsAndConsents = obj.fetchTeenSettingsAndConsents(tmp.id);
     }
   }, items);
-  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(17323)(rules));
+  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(17318)(rules));
   const obj4 = { style: tmp.parentalControlsContainer, children: items1 };
-  shouldLoadSettingsForSelectedTeenUser(17323)(rules);
+  shouldLoadSettingsForSelectedTeenUser(17318)(rules);
   const Stack = tmp2(6274).Stack;
   const obj5 = { variant: "body-sm/semibold", children: intl.string(shouldLoadSettingsForSelectedTeenUser(2685).ahKIJO) };
   const Text = tmp2(5866).Text;

@@ -1,10 +1,10 @@
-// Module ID: 20298
-// Function ID: 20299
+// Module ID: 20293
+// Function ID: 20294
 // Name: GuildSettingsModalModeration
-// Dependencies: [19, 5175, 8339, 1072, 21, 5243, 575, 11968, 8338, 7680, 1113, 2185, 7888, 5314, 7427, 7363, 7679, 17249, 7681, 5866, 8041, 6274, 5849, 1499, 504, 2]
+// Dependencies: [19, 5175, 8339, 1072, 21, 5243, 575, 11962, 8338, 7680, 1113, 2185, 7888, 5314, 7427, 7363, 7679, 17244, 7681, 5866, 8041, 6274, 5849, 1499, 504, 2]
 // Exports: default
 
-// Module 20298 (GuildSettingsModalModeration)
+// Module 20293 (GuildSettingsModalModeration)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
@@ -14,7 +14,7 @@ import HeaderActionButton2 from "HeaderActionButton" /* 7363 */;
 import TableRadioRow2 from "TableRadioRow" /* 7681 */;
 import _mod8041 from "module_8041" /* 8041 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8338 */;
-import useUserIsTeen from "useUserIsTeen" /* 11968 */;
+import useUserIsTeen from "useUserIsTeen" /* 11962 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 8339 */;
@@ -173,7 +173,7 @@ class GuildSettingsModalModeration extends PureComponent {
     const TableRadioGroup = self(7679).TableRadioGroup;
     intl = self(1113).intl;
     intl2 = self(1113).intl;
-    let obj2 = self(17249);
+    let obj2 = self(17244);
     const features = guild.features;
     verificationLevelOptions = obj2.generateVerificationLevelOptions(features.has(constants.COMMUNITY));
     return closure_10(TableRadioGroup, obj, "level-section");
@@ -221,7 +221,7 @@ class GuildSettingsModalModeration extends PureComponent {
     BI4ukC = self(1113).t.BI4ukC;
     const features = guild.features;
     obj3 = HelpdeskUtilsDefault;
-    const obj4 = self(17249);
+    const obj4 = self(17244);
     contentFilterOptions = obj4.generateContentFilterOptions(features.has(constants.COMMUNITY));
     return closure_10(TableRadioGroup, obj, "filter-section");
   }

@@ -1,10 +1,10 @@
-// Module ID: 10190
-// Function ID: 10191
+// Module ID: 10188
+// Function ID: 10189
 // Name: AutocompleterConstants
 // Dependencies: [7008, 2]
 // Exports: createHeaderResult
 
-// Module 10190 (AutocompleterConstants)
+// Module 10188 (AutocompleterConstants)
 import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 7008 */;
 import size from "module_2" /* 2 */;
 

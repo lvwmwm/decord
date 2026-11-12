@@ -1,10 +1,10 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11617
+// Function ID: 11618
 // Name: MarketingComponentHooks
 // Dependencies: [5244, 5484, 504, 5265, 2]
 // Exports: getThemeAndReducedMotionAwareAssetUrl, useThemeAndReducedMotionAwareAssetUrl
 
-// Module 11623 (MarketingComponentHooks)
+// Module 11617 (MarketingComponentHooks)
 import get_initialized from "get initialized" /* 504 */;
 import themes from "themes" /* 5265 */;
 import useThemeDefault from "useTheme" /* 5484 */;

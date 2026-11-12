@@ -1,10 +1,10 @@
-// Module ID: 20436
-// Function ID: 20437
+// Module ID: 20431
+// Function ID: 20432
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 12391, 7379, 1187, 5484, 7847, 1113, 8639, 1411, 5250, 5489, 7917, 7885, 11190, 5507, 7351, 7680, 2]
+// Dependencies: [32, 19, 17, 21, 12385, 7379, 1187, 5484, 7847, 1113, 8639, 1411, 5250, 5489, 7917, 7885, 11184, 5507, 7351, 7680, 2]
 // Exports: default
 
-// Module 20436 (SelectConnectionActionSheet)
+// Module 20431 (SelectConnectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -14,7 +14,7 @@ import useThemeDefault from "useTheme" /* 5484 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import TableRow2 from "TableRow" /* 7379 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7847 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 12391 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 12385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -32,7 +32,7 @@ const TableRowGroup = tmp3(7680);
 const ActionSheet2 = tmp3(7885);
 const SegmentedControlState = tmp3(7917);
 const ConnectionsHooks = tmp3(8639);
-const SegmentedControl = tmp3(11190);
+const SegmentedControl = tmp3(11184);
 function IdentityApplicationRow(arg0) {
   let applicationId;
   let description;

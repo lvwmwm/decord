@@ -1,16 +1,16 @@
-// Module ID: 20021
-// Function ID: 20022
+// Module ID: 20016
+// Function ID: 20017
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1385, 11118, 1072, 5268, 3, 5269, 7816, 1377, 15203, 5271, 5273, 2171, 1252, 2]
+// Dependencies: [5, 1385, 11112, 1072, 5268, 3, 5269, 7816, 1377, 15200, 5271, 5273, 2171, 1252, 2]
 
-// Module 20021 (AppIconPremiumManager)
+// Module 20016 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
 import AppIconTypes from "AppIconTypes" /* 5269 */;
-import AppIconConstants from "AppIconConstants" /* 11118 */;
+import AppIconConstants from "AppIconConstants" /* 11112 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;

@@ -1,10 +1,10 @@
-// Module ID: 12205
-// Function ID: 12206
+// Module ID: 12199
+// Function ID: 12200
 // Name: InAppReportsLeaveGuildElement
-// Dependencies: [32, 19, 1072, 21, 8338, 6004, 12198, 1113, 6206, 6277, 12206, 2]
+// Dependencies: [32, 19, 1072, 21, 8338, 6004, 12192, 1113, 6206, 6277, 12200, 2]
 // Exports: default
 
-// Module 12205 (InAppReportsLeaveGuildElement)
+// Module 12199 (InAppReportsLeaveGuildElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;

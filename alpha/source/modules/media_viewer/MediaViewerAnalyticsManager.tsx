@@ -22,7 +22,7 @@ let obj2 = {
   channelType: "isArray",
   numMediaItems: "Array",
   hasMediaOptions: "channel",
-  source: 0.000000000000000000000000000000000000000000000000000000000000046672614582715765,
+  source: false,
   incrementableActions: fromEntries(values.map((item) => {
     const items = [item, 0];
     return items;

@@ -1,10 +1,10 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17052
+// Function ID: 17053
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 5244, 21, 5243, 7852, 7871, 2171, 9330, 9335, 17048, 5489, 17049, 2118, 16961, 16961, 9328, 8475, 504, 5068, 8556, 17058, 16963, 1113, 7364, 13095, 1187, 2]
+// Dependencies: [19, 17, 5244, 21, 5243, 7852, 7871, 2171, 9329, 9334, 17043, 5489, 17044, 2118, 16956, 16956, 9327, 8475, 504, 5068, 8556, 17053, 16958, 1113, 7364, 13089, 1187, 2]
 // Exports: default
 
-// Module 17057 (EditUserProfileAvatar)
+// Module 17052 (EditUserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
@@ -110,7 +110,7 @@ export default function EditUserProfileAvatar(user) {
       handleEditAvatarDecorationSelect: editAvatarDecoration,
       showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
     };
-    const tmp4 = asyncRequire(17049, dependencyMap.paths);
+    const tmp4 = asyncRequire(17044, dependencyMap.paths);
     if (!flag) {
       editAvatarDecoration = function editAvatarDecoration() {
         const obj = user(flag2[16]);

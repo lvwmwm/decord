@@ -1,10 +1,10 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13520
+// Function ID: 13521
 // Name: ConjureMessageTime
 // Dependencies: [5065, 2]
 // Exports: describeMessageTime
 
-// Module 13526 (ConjureMessageTime)
+// Module 13520 (ConjureMessageTime)
 import DateUtils from "DateUtils" /* 5065 */;
 import size from "module_2" /* 2 */;
 

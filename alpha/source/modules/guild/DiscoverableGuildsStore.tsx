@@ -1,9 +1,9 @@
-// Module ID: 10432
-// Function ID: 10433
+// Module ID: 10430
+// Function ID: 10431
 // Name: DiscoverableGuildsStore
 // Dependencies: [502, 7167, 504, 1380, 572, 2]
 
-// Module 10432 (DiscoverableGuildsStore)
+// Module 10430 (DiscoverableGuildsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;

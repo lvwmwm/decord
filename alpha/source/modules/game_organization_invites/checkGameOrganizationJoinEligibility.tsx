@@ -1,16 +1,16 @@
-// Module ID: 13965
-// Function ID: 13966
+// Module ID: 13961
+// Function ID: 13962
 // Name: checkGameOrganizationJoinEligibility
-// Dependencies: [5, 5146, 13966, 12279, 12280, 13967, 13968, 2]
+// Dependencies: [5, 5146, 13962, 12273, 12274, 13963, 13964, 2]
 // Exports: default
 
-// Module 13965 (checkGameOrganizationJoinEligibility)
-import withGameOrganizationJoinFlowPendingDefault from "withGameOrganizationJoinFlowPending" /* 13967 */;
+// Module 13961 (checkGameOrganizationJoinEligibility)
+import withGameOrganizationJoinFlowPendingDefault from "withGameOrganizationJoinFlowPending" /* 13963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import GameOrganizationCharacterEligibilityStore from "GameOrganizationCharacterEligibilityStore" /* 13966 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12279 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12280 */;
+import GameOrganizationCharacterEligibilityStore from "GameOrganizationCharacterEligibilityStore" /* 13962 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12273 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12274 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, invite;

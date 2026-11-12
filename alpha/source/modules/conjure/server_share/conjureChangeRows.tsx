@@ -1,10 +1,10 @@
-// Module ID: 13216
-// Function ID: 13217
+// Module ID: 13210
+// Function ID: 13211
 // Name: conjureChangeRows
 // Dependencies: [1113, 4079, 6955, 2]
 // Exports: conjureMakePersonalRows, conjureShareRows
 
-// Module 13216 (conjureChangeRows)
+// Module 13210 (conjureChangeRows)
 import intl8 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6955 */;

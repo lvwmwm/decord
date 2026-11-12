@@ -1,10 +1,10 @@
-// Module ID: 20598
-// Function ID: 20599
+// Module ID: 20593
+// Function ID: 20594
 // Name: GuildRoleSubscriptionBenefitEditorModalStateStore
 // Dependencies: [1254, 1259, 5158, 2]
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 20598 (GuildRoleSubscriptionBenefitEditorModalStateStore)
+// Module 20593 (GuildRoleSubscriptionBenefitEditorModalStateStore)
 import react_native from "react-native" /* 1259 */;
 import _slicedToArray from "_slicedToArray" /* 5158 */;
 import module_1254 from "module_1254" /* 1254 */;

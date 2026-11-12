@@ -1,15 +1,15 @@
-// Module ID: 13687
-// Function ID: 13688
+// Module ID: 13681
+// Function ID: 13682
 // Name: useConjureProjectCreator
-// Dependencies: [19, 1385, 7257, 1113, 4079, 13688, 504, 12357, 5309, 2]
+// Dependencies: [19, 1385, 7257, 1113, 4079, 13682, 504, 12351, 5309, 2]
 // Exports: default, getConjureProjectCreatorLabel
 
-// Module 13687 (useConjureProjectCreator)
+// Module 13681 (useConjureProjectCreator)
 import intl3 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import UserUtils from "UserUtils" /* 5309 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12357 */;
-import ListUtils from "ListUtils" /* 13688 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12351 */;
+import ListUtils from "ListUtils" /* 13682 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import ConjureChatStore from "ConjureChatStore" /* 7257 */;

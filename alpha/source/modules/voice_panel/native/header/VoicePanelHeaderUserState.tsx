@@ -1,16 +1,16 @@
-// Module ID: 19838
-// Function ID: 19839
+// Module ID: 19833
+// Function ID: 19834
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 6953, 21, 1652, 7932, 5243, 575, 19839, 19837, 10528, 7656, 11924, 504, 5485, 2]
+// Dependencies: [19, 6953, 21, 1652, 7932, 5243, 575, 19834, 19832, 10526, 7656, 11918, 504, 5485, 2]
 
-// Module 19838 (VoicePanelHeaderUserState)
+// Module 19833 (VoicePanelHeaderUserState)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import NativeViewDefault from "NativeView" /* 7656 */;
 import native from "native" /* 7932 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11924 */;
-import useStableParticipant from "useStableParticipant" /* 19837 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19839 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11918 */;
+import useStableParticipant from "useStableParticipant" /* 19832 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19834 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
 import module_1652 from "module_1652" /* 1652 */;
@@ -49,7 +49,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
       let obj3 = { style: tmp.floatingIcon, state: tmp9.videoIconState };
       let arr = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp9.type === tmp11(19839).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(19834).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let push2 = items.push;
       let tmp36 = jsx;
@@ -59,7 +59,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
       if (tmp9.withLeftMargin) {
         leftMargin = tmp.leftMargin;
       }
-      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(10528).MuteDeafenIcon, obj5) };
+      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(10526).MuteDeafenIcon, obj5) };
       items1[1] = leftMargin;
       obj5 = { style: tmp.floatingIcon, state: tmp9.muteDeafenIconState };
       let push2Result = push2(tmp35(BackgroundBlurView2, obj4, "mute-deafen"));

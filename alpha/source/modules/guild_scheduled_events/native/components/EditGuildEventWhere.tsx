@@ -200,7 +200,7 @@ export default function EditGuildEventWhere(guild) {
     entityType: guildEvent.entityType,
     onChange: function handleChangeEventEntityType(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "Array" };
+      const obj = { entityType, scheduledEndTime: "a" };
       if (entityType === constants.EXTERNAL) {
         let obj2 = _modDef2166(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;

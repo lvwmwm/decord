@@ -1,10 +1,10 @@
-// Module ID: 9668
-// Function ID: 9669
+// Module ID: 9667
+// Function ID: 9668
 // Name: NativeVideo
-// Dependencies: [109, 32, 19, 17, 21, 5243, 81, 9669, 5957, 2]
+// Dependencies: [109, 32, 19, 17, 21, 5243, 81, 9668, 5957, 2]
 // Exports: default
 
-// Module 9668 (NativeVideo)
+// Module 9667 (NativeVideo)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -47,7 +47,7 @@ export default function NativeVideo(ref) {
   let str2;
   let tmp21;
   let tmp6;
-  const f97679 = (item) => {
+  const f97690 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -94,7 +94,7 @@ export default function NativeVideo(ref) {
   }
   const tmp4Result = str(obj.useState(() => {
     let entries;
-    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f97679) };
+    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f97690) };
     c10 = c10 + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -108,7 +108,7 @@ export default function NativeVideo(ref) {
   }
   if (!tmp15) {
     const _JSON2 = JSON;
-    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f97679) };
+    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f97690) };
     const _String = String;
     sum = closure_10 + 1;
     closure_10 = sum;
@@ -250,14 +250,18 @@ export default function NativeVideo(ref) {
           {
             const onVideoTracks = obj2.onVideoTracks;
             if (onVideoTracks != null) {
-              const first = nativeEvent.videoTracks[0];
               const obj4 = { videoTracks: nativeEvent.videoTracks, selectedVideoTrackId: str };
-              str = undefined;
-              if (first != null) {
-                str = first.trackId;
-              }
-              if (str == null) {
-                str = "";
+              if ("" !== nativeEvent.selectedTrackId) {
+                str = nativeEvent.selectedTrackId;
+              } else {
+                const first = nativeEvent.videoTracks[0];
+                str = undefined;
+                if (first != null) {
+                  str = first.trackId;
+                }
+                if (str == null) {
+                  str = "";
+                }
               }
               onVideoTracks(obj4);
             }
@@ -347,7 +351,7 @@ export default function NativeVideo(ref) {
       }
     }
   };
-  items2 = [ref(ref1(9669), obj6), ];
+  items2 = [ref(ref1(9668), obj6), ];
   let tmp26Result = null != obj2.poster && tmp21 !== id;
   const tmp24 = closure_9;
   const tmp25 = c7;

@@ -1,16 +1,16 @@
-// Module ID: 10365
-// Function ID: 10366
+// Module ID: 10363
+// Function ID: 10364
 // Name: CollectiblesShopCardCardDetailsV2
-// Dependencies: [19, 17, 9236, 1072, 21, 5243, 575, 10350, 8430, 10366, 10368, 10369, 8431, 10377, 5866, 1113, 9375, 1377, 9455, 9369, 9343, 2171, 5839, 5240, 10378, 10379, 504, 5830, 10380, 2]
+// Dependencies: [19, 17, 9235, 1072, 21, 5243, 575, 10348, 8430, 10364, 10366, 10367, 8431, 10375, 5866, 1113, 9374, 1377, 9454, 9368, 9342, 2171, 5839, 5240, 10376, 10377, 504, 5830, 10378, 2]
 
-// Module 10365 (CollectiblesShopCardCardDetailsV2)
+// Module 10363 (CollectiblesShopCardCardDetailsV2)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 9236 */;
+import IAPStore from "IAPStore" /* 9235 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -23,7 +23,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp4;
-const CollectiblesShopCardVariantsDefault = tmp4(10380);
+const CollectiblesShopCardVariantsDefault = tmp4(10378);
 const View = react_native.View;
 ({ CurrencyCodes: metroRequire, VerticalGradient: metroImportDefault } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -68,15 +68,15 @@ const memoResult = react.memo((arg0) => {
   ({ product, hasShopDiscount } = arg0);
   ({ styles, collectibleProductState } = arg0);
   ({ discountSource, isFetchingGoogleSkus, preferVCPrice, isDisabled } = arg0);
-  let obj = hasShopDiscount(10350);
+  let obj = hasShopDiscount(10348);
   const defaultVariantIndex = obj.useDefaultVariantIndex(product);
   const obj2 = hasShopDiscount(8430);
   const selectedProduct = obj2.getSelectedProduct(product, defaultVariantIndex);
-  const obj3 = hasShopDiscount(10366);
+  const obj3 = hasShopDiscount(10364);
   const formattedPriceForCollectiblesProduct = obj3.getFormattedPriceForCollectiblesProduct(selectedProduct, hasShopDiscount, true);
-  const obj4 = hasShopDiscount(10368);
+  const obj4 = hasShopDiscount(10366);
   const isFiatExclusiveTargetedOfferPromotion = obj4.useIsFiatExclusiveTargetedOfferPromotion(selectedProduct);
-  const obj5 = hasShopDiscount(10369);
+  const obj5 = hasShopDiscount(10367);
   const virtualCurrencyData = obj5.useVirtualCurrencyData(selectedProduct, hasShopDiscount);
   ({ price, canAfford } = virtualCurrencyData);
   const items = [selectedProduct, hasShopDiscount];
@@ -92,7 +92,7 @@ const memoResult = react.memo((arg0) => {
   }, items1);
   if (isFetchingGoogleSkus) {
     if (null == formattedPriceForCollectiblesProduct) {
-      return closure_8(hasShopDiscount(10377).CollectiblesShopPricePlaceholder, {});
+      return closure_8(hasShopDiscount(10375).CollectiblesShopPricePlaceholder, {});
     }
   }
   if ("partiallyOwnedBundle" === collectibleProductState) {
@@ -144,7 +144,7 @@ const memoResult = react.memo((arg0) => {
           const obj17 = { opacity: num };
           items2[1] = obj17;
           const obj18 = { size: "xxs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-          items3 = [closure_8(hasShopDiscount(9375).OrbsIcon, obj18), , ];
+          items3 = [closure_8(hasShopDiscount(9374).OrbsIcon, obj18), , ];
           const obj19 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityLabel: intl.formatToPlainString(hasShopDiscount(1113).t.W4DfeF, obj20), style: items4, children: price.amount };
           const Text = tmp(5866).Text;
           intl = tmp(1113).intl;
@@ -178,10 +178,10 @@ const memoResult = react.memo((arg0) => {
         let tmp21;
         if (discountSource === hasShopDiscount(8431).ShopDiscountSource.THIRDPARTY) {
           const obj23 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-          tmp21 = closure_8(tmp(9455).TagIcon, obj23);
+          tmp21 = closure_8(tmp(9454).TagIcon, obj23);
         } else {
           const obj24 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-          tmp21 = closure_8(tmp(9369).NitroWheelIcon, obj24);
+          tmp21 = closure_8(tmp(9368).NitroWheelIcon, obj24);
         }
         tmp19 = tmp21;
       }
@@ -229,7 +229,7 @@ const memoResult1 = react.memo(function CardDetailsV2(arg0) {
   let isInImprovedMobileShopLoading;
   ({ collectibleProductState, preferVCPrice, isDisabled } = arg0);
   const tmp = closure_10();
-  const obj = isInImprovedMobileShopLoading(9343);
+  const obj = isInImprovedMobileShopLoading(9342);
   const currentUser = obj.useCurrentUser();
   const obj2 = PremiumUtilsDefault;
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(currentUser);
@@ -245,9 +245,9 @@ const memoResult1 = react.memo(function CardDetailsV2(arg0) {
   isInImprovedMobileShopLoading(5240);
   const obj6 = isInImprovedMobileShopLoading(5240);
   const hexToRgbaString2Result = hexToRgbaString2(obj6.hexWithOpacity(token, 0));
-  const obj7 = isInImprovedMobileShopLoading(10378);
+  const obj7 = isInImprovedMobileShopLoading(10376);
   const cardProductName = obj7.getCardProductName(product);
-  const obj8 = isInImprovedMobileShopLoading(10379);
+  const obj8 = isInImprovedMobileShopLoading(10377);
   isInImprovedMobileShopLoading = obj8.useIsInImprovedMobileShopLoading();
   const items = [IAPStore];
   const items1 = [isInImprovedMobileShopLoading];

@@ -1,10 +1,10 @@
-// Module ID: 9090
-// Function ID: 9091
+// Module ID: 9089
+// Function ID: 9090
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 6274, 575, 9091, 7567, 5866, 1113, 2]
+// Dependencies: [19, 21, 6274, 575, 9090, 7567, 5866, 1113, 2]
 // Exports: default
 
-// Module 9090 (ConversationPreviewBlockedMessage)
+// Module 9089 (ConversationPreviewBlockedMessage)
 import nativeDefault from "native" /* 575 */;
 import Stack_Stack from "Stack/Stack" /* 6274 */;
 import react from "react" /* 19 */;
@@ -24,7 +24,7 @@ export default function ConversationPreviewBlockedMessage(reason) {
   const Stack = Stack_Stack.Stack;
   const tmp = React3;
   if ("blocked" === reason) {
-    EyeSlashIcon = tmp2(9091).DenyIcon;
+    EyeSlashIcon = tmp2(9090).DenyIcon;
   } else {
     EyeSlashIcon = tmp2(7567).EyeSlashIcon;
   }

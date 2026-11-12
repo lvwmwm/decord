@@ -1,10 +1,10 @@
-// Module ID: 13125
-// Function ID: 13126
+// Module ID: 13119
+// Function ID: 13120
 // Name: ConjureFileMention
-// Dependencies: [5, 19, 17, 21, 5243, 575, 13124, 13126, 13129, 5866, 1113, 4079, 13092, 13131, 2118, 2]
+// Dependencies: [5, 19, 17, 21, 5243, 575, 13118, 13120, 13123, 5866, 1113, 4079, 13086, 13125, 2118, 2]
 // Exports: default
 
-// Module 13125 (ConjureFileMention)
+// Module 13119 (ConjureFileMention)
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -50,12 +50,12 @@ export default function ConjureFileMention(variant) {
   let context;
   const tmp = closure_9();
   const tmp3 = dependencyMap;
-  context = react.useContext(context(13124).ConjureFileMentionProjectContext);
-  let obj = context(13126);
+  context = react.useContext(context(13118).ConjureFileMentionProjectContext);
+  let obj = context(13120);
   const conjureStoredAttachment = obj.useConjureStoredAttachment(context, attachmentId);
   const obj2 = { style: tmp.chip, children: items };
   let obj3 = { projectId: context, file: conjureStoredAttachment, style: tmp.thumbnail, iconColor: conjureStoredAttachment(575).colors.MENTION_FOREGROUND };
-  const tmp10 = conjureStoredAttachment(13129);
+  const tmp10 = conjureStoredAttachment(13123);
   items = [closure_7(tmp10, obj3), ];
   let obj4 = { variant: str, style: tmp.name, children: name };
   name = undefined;
@@ -75,7 +75,7 @@ export default function ConjureFileMention(variant) {
   if (null != context) {
     tmp8Result = tmp6Result;
     if (null != conjureStoredAttachment) {
-      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp2(13092).CONJURE_VIEWABLE_IMAGE_TYPES;
+      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp2(13086).CONJURE_VIEWABLE_IMAGE_TYPES;
       tmp8Result = tmp6Result;
       if (CONJURE_VIEWABLE_IMAGE_TYPES.has(conjureStoredAttachment.content_type)) {
         let obj5 = {

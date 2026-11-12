@@ -1,14 +1,14 @@
-// Module ID: 9220
-// Function ID: 9221
+// Module ID: 9219
+// Function ID: 9220
 // Name: PremiumGroupInviteSystemMessage
-// Dependencies: [502, 5092, 5243, 575, 9221, 9126, 8588, 9225, 2]
+// Dependencies: [502, 5092, 5243, 575, 9220, 9125, 8588, 9224, 2]
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 9220 (PremiumGroupInviteSystemMessage)
+// Module 9219 (PremiumGroupInviteSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import createCommonMessageDefault from "createCommonMessage" /* 9126 */;
-import PremiumGroupInviteEmbed from "PremiumGroupInviteEmbed" /* 9221 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9225 */;
+import createCommonMessageDefault from "createCommonMessage" /* 9125 */;
+import PremiumGroupInviteEmbed from "PremiumGroupInviteEmbed" /* 9220 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9224 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import createStyles from "createStyles" /* 5243 */;

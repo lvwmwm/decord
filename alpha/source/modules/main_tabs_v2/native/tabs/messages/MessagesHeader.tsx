@@ -1,10 +1,10 @@
-// Module ID: 18623
-// Function ID: 18624
+// Module ID: 18618
+// Function ID: 18619
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1072, 21, 575, 13426, 5998, 5879, 5243, 1652, 5876, 5877, 18618, 5430, 14631, 7428, 7922, 10878, 1113, 5866, 7761, 18624, 5873, 5961, 2]
+// Dependencies: [19, 17, 1072, 21, 575, 13420, 5998, 5879, 5243, 1652, 5876, 5877, 18613, 5430, 14627, 7428, 7922, 10872, 1113, 5866, 7761, 18619, 5873, 5961, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 18623 (MessagesHeader)
+// Module 18618 (MessagesHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef1652 from "module_1652" /* 1652 */;
@@ -13,8 +13,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 5961 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5998 */;
 import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7428 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7761 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13426 */;
-import MessageRequestsButtonDefault from "MessageRequestsButton" /* 18624 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13420 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 18619 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -100,7 +100,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
   MessagesHeaderTsx1.__workletHash = 7032090280260;
   MessagesHeaderTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(MessagesHeaderTsx1);
-  const tmp3Result = height(18618);
+  const tmp3Result = height(18613);
   const isHomeDrawerEnabled = tmp3Result.useIsHomeDrawerEnabled();
   const callback = obj.useCallback(() => {
     const obj = height(dependencyMap[13]);
@@ -142,7 +142,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
   const tmp17 = HeaderDebugOverlayDefault("bespoke");
   const IconButton = tmp3(7922).IconButton;
   obj3 = { size: "sm", color: nativeDefault.colors.WHITE };
-  PlusLargeIcon = tmp3(10878).PlusLargeIcon;
+  PlusLargeIcon = tmp3(10872).PlusLargeIcon;
   intl = tmp3(1113).intl;
   const obj4 = { style: memo, children: items3 };
   const obj5 = { style: tmp.headerPanelTitle, children: closure_6(Text, { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: stringResult }) };

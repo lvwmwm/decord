@@ -1,13 +1,13 @@
-// Module ID: 16164
-// Function ID: 16165
+// Module ID: 16159
+// Function ID: 16160
 // Name: reactParserFor
-// Dependencies: [19, 21, 9151, 5996, 2]
+// Dependencies: [19, 21, 9150, 5996, 2]
 // Exports: default
 
-// Module 16164 (reactParserFor)
+// Module 16159 (reactParserFor)
 import Fragment from "Fragment" /* 21 */;
 import Spoiler from "Spoiler" /* 5996 */;
-import markup_MarkupParserDefault from "markup/MarkupParser" /* 9151 */;
+import markup_MarkupParserDefault from "markup/MarkupParser" /* 9150 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

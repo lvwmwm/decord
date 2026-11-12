@@ -1,10 +1,10 @@
-// Module ID: 9468
-// Function ID: 9469
+// Module ID: 9467
+// Function ID: 9468
 // Name: GameActionCreators
 // Dependencies: [5, 2138, 1072, 1282, 572, 5087, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 9468 (GameActionCreators)
+// Module 9467 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

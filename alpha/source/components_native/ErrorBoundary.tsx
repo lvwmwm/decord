@@ -1,21 +1,21 @@
-// Module ID: 16935
-// Function ID: 16936
+// Module ID: 16930
+// Function ID: 16931
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 12278, 21, 5243, 504, 13958, 5873, 1113, 5314, 1242, 572, 1187, 15771, 5866, 2]
+// Dependencies: [5, 32, 19, 17, 12272, 21, 5243, 504, 13954, 5873, 1113, 5314, 1242, 572, 1187, 15766, 5866, 2]
 
-// Module 16935 (components_native/ErrorBoundary)
+// Module 16930 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import native2 from "native" /* 5314 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import AppCrash from "AppCrash" /* 15771 */;
+import AppCrash from "AppCrash" /* 15766 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 12278 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 12272 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

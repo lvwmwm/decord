@@ -1,10 +1,10 @@
-// Module ID: 10588
-// Function ID: 10589
+// Module ID: 10586
+// Function ID: 10587
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 5484, 5839, 8493, 671, 10589, 10739, 10606, 5503, 5830, 5507, 5838, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 5484, 5839, 8493, 671, 10587, 10733, 10604, 5503, 5830, 5507, 5838, 2]
 // Exports: default
 
-// Module 10588 (GuildProfileActionSheet)
+// Module 10586 (GuildProfileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -14,8 +14,8 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5503 */;
 import BottomSheetModal from "BottomSheetModal" /* 5507 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5838 */;
-import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 10589 */;
-import GuildProfileCTADefault from "GuildProfileCTA" /* 10739 */;
+import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 10587 */;
+import GuildProfileCTADefault from "GuildProfileCTA" /* 10733 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp4;
-const GuildProfileCreateTagUpsellDefault = tmp4(10606);
+const GuildProfileCreateTagUpsellDefault = tmp4(10604);
 let react = react_mod;
 const View = react_native.View;
 const VerticalGradient = Constants.VerticalGradient;

@@ -1,14 +1,14 @@
-// Module ID: 9409
-// Function ID: 9410
+// Module ID: 9408
+// Function ID: 9409
 // Name: matchUtils
-// Dependencies: [7544, 7227, 9410, 9412, 9413, 8353, 6006, 2]
+// Dependencies: [7544, 7227, 9409, 9411, 9412, 8353, 6006, 2]
 // Exports: findMatchingEntry, isCrunchyrollEntry, isMatchingApplicationActivity, isMatchingWatchActivity, isSpotifyEntry
 
-// Module 9409 (matchUtils)
+// Module 9408 (matchUtils)
 import SpotifyConstants from "SpotifyConstants" /* 7227 */;
 import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 7544 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 9410 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 9413 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 9409 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 9412 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,10 +26,10 @@ function isMatchingListeningActivity(extra, party) {
         provider = media.provider;
       }
     }
-    isTopArtistEntryResult = provider === tmp(9412).ContentInventoryListenedMediaProvider.SPOTIFY;
+    isTopArtistEntryResult = provider === tmp(9411).ContentInventoryListenedMediaProvider.SPOTIFY;
   } else {
     const tmpResult = ContentInventoryTypes;
-    isTopArtistEntryResult = tmpResult.isTopArtistEntry(extra) && extra.extra.media.provider === tmp(9412).ContentInventoryListenedMediaProvider.SPOTIFY;
+    isTopArtistEntryResult = tmpResult.isTopArtistEntry(extra) && extra.extra.media.provider === tmp(9411).ContentInventoryListenedMediaProvider.SPOTIFY;
   }
   let tmp9Result = isTopArtistEntryResult;
   if (tmp9Result) {
@@ -59,10 +59,10 @@ export function isSpotifyEntry(extra) {
         provider = media.provider;
       }
     }
-    isTopArtistEntryResult = provider === tmp(9412).ContentInventoryListenedMediaProvider.SPOTIFY;
+    isTopArtistEntryResult = provider === tmp(9411).ContentInventoryListenedMediaProvider.SPOTIFY;
   } else {
     const tmpResult = ContentInventoryTypes;
-    isTopArtistEntryResult = tmpResult.isTopArtistEntry(extra) && extra.extra.media.provider === tmp(9412).ContentInventoryListenedMediaProvider.SPOTIFY;
+    isTopArtistEntryResult = tmpResult.isTopArtistEntry(extra) && extra.extra.media.provider === tmp(9411).ContentInventoryListenedMediaProvider.SPOTIFY;
   }
   return isTopArtistEntryResult;
 }
@@ -107,7 +107,7 @@ export function findMatchingEntry(entries, activity) {
   let tmp2 = dependencyMap;
   const found = entries.filter(require("utils").isEntryActive);
   if (activity.type === require("ActivityTypes").ActivityTypes.PLAYING) {
-    const found1 = found.filter(tmp(9410).isGamingLikeEntry);
+    const found1 = found.filter(tmp(9409).isGamingLikeEntry);
     found2 = found1.find((extra) => {
       extra = extra.extra;
       let tmp2 = null != extra;
@@ -127,10 +127,10 @@ export function findMatchingEntry(entries, activity) {
       return tmp2;
     });
   } else if (activity.type === tmp(6006).ActivityTypes.LISTENING) {
-    const found3 = found.filter(tmp(9410).isListenedSessionEntry);
+    const found3 = found.filter(tmp(9409).isListenedSessionEntry);
     found2 = found3.find((item) => isMatchingListeningActivity(item, activity));
   } else if (activity.type === tmp(6006).ActivityTypes.WATCHING) {
-    const found4 = entries.filter(tmp(9410).isWatchedMediaEntry);
+    const found4 = entries.filter(tmp(9409).isWatchedMediaEntry);
     found2 = found4.find((extra) => {
       const tmp3 = isCrunchyrollActivityDefault(activity);
       let tmp4 = !tmp3;

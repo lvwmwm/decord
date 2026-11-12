@@ -1,10 +1,10 @@
-// Module ID: 14759
-// Function ID: 14760
+// Module ID: 14755
+// Function ID: 14756
 // Name: useChangelogIdFromChannel
 // Dependencies: [6309, 504, 2]
 // Exports: default
 
-// Module 14759 (useChangelogIdFromChannel)
+// Module 14755 (useChangelogIdFromChannel)
 import MessageStore from "MessageStore" /* 6309 */;
 import size from "module_2" /* 2 */;
 

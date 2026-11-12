@@ -1,10 +1,10 @@
-// Module ID: 12505
-// Function ID: 12506
+// Module ID: 12499
+// Function ID: 12500
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 5114, 6895, 1072, 12506, 21, 5243, 575, 7654, 5866, 12507, 563, 1113, 12508, 1627, 5503, 5507, 2185, 7381, 8041, 7817, 7812, 5489, 2]
+// Dependencies: [32, 19, 17, 5114, 6895, 1072, 12500, 21, 5243, 575, 7654, 5866, 12501, 563, 1113, 12502, 1627, 5503, 5507, 2185, 7381, 8041, 7817, 7812, 5489, 2]
 // Exports: default
 
-// Module 12505 (GuildHighlightsNotificationsActionSheet)
+// Module 12499 (GuildHighlightsNotificationsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
@@ -12,8 +12,8 @@ import Text_Text from "Text/Text" /* 5866 */;
 import GuildIcon from "GuildIcon" /* 7654 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7812 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7817 */;
-import Constants2 from "Constants" /* 12506 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 12507 */;
+import Constants2 from "Constants" /* 12500 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 12501 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5114 */;

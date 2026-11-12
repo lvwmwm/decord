@@ -1,18 +1,18 @@
-// Module ID: 11212
-// Function ID: 11213
+// Module ID: 11206
+// Function ID: 11207
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 9480, 21, 5243, 575, 1187, 9327, 5866, 1113, 11210, 2]
+// Dependencies: [19, 17, 9479, 21, 5243, 575, 1187, 9326, 5866, 1113, 11204, 2]
 
-// Module 11212 (EmojiPickerListComponents)
+// Module 11206 (EmojiPickerListComponents)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9327 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 11210 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9326 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 11204 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9480 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9479 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

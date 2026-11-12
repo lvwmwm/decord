@@ -1,22 +1,22 @@
-// Module ID: 15381
-// Function ID: 15382
+// Module ID: 15378
+// Function ID: 15379
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1072, 21, 7852, 11109, 11199, 8971, 11218, 10651, 15382, 6888, 10008, 1113, 5873, 2]
+// Dependencies: [19, 1072, 21, 7852, 11103, 11193, 8970, 11212, 10644, 15379, 6888, 10007, 1113, 5873, 2]
 // Exports: default
 
-// Module 15381 (ShopNitroUpsellPromoSheet)
+// Module 15378 (ShopNitroUpsellPromoSheet)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import components_Button_Button from "components/Button/Button" /* 5873 */;
 import ButtonGroup2 from "ButtonGroup" /* 6888 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8971 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10008 */;
-import PromoSheet2 from "PromoSheet" /* 10651 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 11109 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 11199 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11218 */;
-import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 15382 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8970 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10007 */;
+import PromoSheet2 from "PromoSheet" /* 10644 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 11103 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 11193 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11212 */;
+import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 15379 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

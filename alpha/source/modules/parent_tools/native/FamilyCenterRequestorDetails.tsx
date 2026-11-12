@@ -1,16 +1,16 @@
-// Module ID: 17335
-// Function ID: 17336
+// Module ID: 17330
+// Function ID: 17331
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [19, 17, 21, 5243, 1187, 575, 9550, 17304, 5866, 2]
+// Dependencies: [19, 17, 21, 5243, 1187, 575, 9549, 17299, 5866, 2]
 // Exports: default
 
-// Module 17335 (FamilyCenterRequestorDetails)
+// Module 17330 (FamilyCenterRequestorDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import useUserLinks from "useUserLinks" /* 9550 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 17304 */;
+import useUserLinks from "useUserLinks" /* 9549 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 17299 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;

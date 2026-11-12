@@ -1,12 +1,12 @@
-// Module ID: 18382
-// Function ID: 18383
+// Module ID: 18377
+// Function ID: 18378
 // Name: useGetProductsFromSkus
-// Dependencies: [19, 8419, 504, 18383, 2]
+// Dependencies: [19, 8419, 504, 18378, 2]
 // Exports: default
 
-// Module 18382 (useGetProductsFromSkus)
+// Module 18377 (useGetProductsFromSkus)
 import react from "react" /* 19 */;
-import uniqByDefault from "uniqBy" /* 18383 */;
+import uniqByDefault from "uniqBy" /* 18378 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8419 */;
 import size from "module_2" /* 2 */;
 

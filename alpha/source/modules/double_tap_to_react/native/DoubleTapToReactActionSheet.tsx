@@ -1,10 +1,10 @@
-// Module ID: 14683
-// Function ID: 14684
+// Module ID: 14679
+// Function ID: 14680
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5244, 6906, 1072, 1388, 21, 5243, 1377, 575, 1652, 5485, 5836, 504, 5876, 5068, 5189, 9130, 1411, 7828, 1252, 7871, 9489, 1705, 5489, 7885, 5866, 1113, 14579, 14684, 5873, 2]
+// Dependencies: [5, 32, 19, 17, 5244, 6906, 1072, 1388, 21, 5243, 1377, 575, 1652, 5485, 5836, 504, 5876, 5068, 5189, 9129, 1411, 7828, 1252, 7871, 9488, 1705, 5489, 7885, 5866, 1113, 14575, 14680, 5873, 2]
 // Exports: default
 
-// Module 14683 (DoubleTapToReactActionSheet)
+// Module 14679 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -40,7 +40,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(9130);
+const DoubleTapToReactUtils = tmp(9129);
 function EmojiConfetti(arg0) {
   let bottom;
   let emojiComponent;

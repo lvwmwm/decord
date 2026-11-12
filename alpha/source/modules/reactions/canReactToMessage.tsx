@@ -1,13 +1,13 @@
-// Module ID: 9132
-// Function ID: 9133
+// Module ID: 9131
+// Function ID: 9132
 // Name: canReactToMessage
-// Dependencies: [5155, 6874, 5175, 1385, 1072, 9133, 1403, 5162, 504, 2]
+// Dependencies: [5155, 6874, 5175, 1385, 1072, 9132, 1403, 5162, 504, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 9132 (canReactToMessage)
+// Module 9131 (canReactToMessage)
 import FlagUtils from "FlagUtils" /* 1403 */;
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5162 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 9133 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 9132 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 6874 */;
 import PermissionStore from "PermissionStore" /* 5175 */;

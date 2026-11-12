@@ -1,10 +1,10 @@
-// Module ID: 17051
-// Function ID: 17052
+// Module ID: 17046
+// Function ID: 17047
 // Name: UserProfileDisplayNameStyleTileButton
-// Dependencies: [19, 17, 5244, 8476, 21, 5243, 575, 504, 8475, 5068, 7364, 1113, 17052, 9998, 9999, 7388, 2]
+// Dependencies: [19, 17, 5244, 8476, 21, 5243, 575, 504, 8475, 5068, 7364, 1113, 17047, 9997, 9998, 7388, 2]
 // Exports: default
 
-// Module 17051 (UserProfileDisplayNameStyleTileButton)
+// Module 17046 (UserProfileDisplayNameStyleTileButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8475 */;
@@ -60,7 +60,7 @@ export default function UserProfileDisplayNameStyleTileButton(user) {
   const PressableHighlight = user(7364).PressableHighlight;
   intl = user(1113).intl;
   obj4 = { text: obj5.getDisplayNameStyleAccessibleValue(displayNameStyles) };
-  obj5 = user(17052);
+  obj5 = user(17047);
   intl2 = user(1113).intl;
   const obj6 = { style: tmp.previewContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   const obj7 = { userId: user.id, userName: displayName, pendingDisplayNameStyles: displayNameStyles, ignoreDisabledStylesSetting: true, effectDisplayType: null, variant: "heading-xl/semibold", defaultColor: "text-muted", lineClamp: 1 };
@@ -69,7 +69,7 @@ export default function UserProfileDisplayNameStyleTileButton(user) {
   if (!stateFromStores) {
     let STATIC;
     if (setting) {
-      STATIC = tmp2(9999).EffectDisplayType.ANIMATED;
+      STATIC = tmp2(9998).EffectDisplayType.ANIMATED;
     }
     obj7.effectDisplayType = STATIC;
     obj6.children = closure_6(tmp10, obj7);
@@ -77,5 +77,5 @@ export default function UserProfileDisplayNameStyleTileButton(user) {
     obj3.children = items2;
     return tmp7(PressableHighlight, obj3);
   }
-  STATIC = tmp2(9999).EffectDisplayType.STATIC;
+  STATIC = tmp2(9998).EffectDisplayType.STATIC;
 };

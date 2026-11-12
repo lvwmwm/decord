@@ -1,10 +1,10 @@
-// Module ID: 16120
-// Function ID: 16121
+// Module ID: 16115
+// Function ID: 16116
 // Name: SharedSpacesWarningStore
-// Dependencies: [1089, 560, 5443, 8746, 2]
+// Dependencies: [1089, 560, 5443, 8745, 2]
 // Exports: dequeueBlockWarning, gdmBlockedWarningInCooldown, getChannelDismissTimestamp, getGlobalDismissTimestamp, getUserDismissTimestamp, isBlockedWarningQueued, queueBlockWarning, setDismissalTimeForChannel, setDismissalTimeForUser, setDismissalTimeForUsers, userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 16120 (SharedSpacesWarningStore)
+// Module 16115 (SharedSpacesWarningStore)
 import DurationsDefault from "Durations" /* 1089 */;
 import module_560 from "module_560" /* 560 */;
 import combine_mod from "combine" /* 5443 */;

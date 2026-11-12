@@ -1,53 +1,24 @@
 // Module ID: 13775
 // Function ID: 13776
 // Name: tokenize
-// Dependencies: [13730]
+// Dependencies: [13726]
 
 // Module 13775 (tokenize)
-import tokenize from "tokenize" /* 13730 */;
+import tokenize from "tokenize" /* 13726 */;
 
-let items;
-let obj2;
-const Semicolon = tokenize.TYPE.Semicolon;
-const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
-const obj = {
-  name: "AtrulePrelude",
-  structure: obj2,
-  parse(keys) {
-    let formatted = keys;
-    if (null !== keys) {
-      formatted = keys.toLowerCase();
-    }
-    const self = this;
-    const scanner = this.scanner;
-    scanner.skipSC();
-    const atrule = this.atrule;
-    if (atrule.hasOwnProperty(formatted)) {
-      let callResult;
-      if (typeof self.atrule[formatted].prelude === "function") {
-        const prelude = self.atrule[formatted].prelude;
-        callResult = prelude.call(self);
-      }
-      const scanner2 = self.scanner;
-      scanner2.skipSC();
-      const tmp5 = true !== self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
-      if (tmp5) {
-        self.error("Semicolon or block is expected");
-      }
-      if (null === callResult) {
-        callResult = self.createList();
-      }
-      const element = { type: "AtrulePrelude", loc: self.getLocationFromList(callResult), children: callResult };
-      return element;
-    }
-    callResult = self.readSequence(self.scope.AtrulePrelude);
+const CDC = tokenize.TYPE.CDC;
+let obj = {
+  name: "CDC",
+  structure: [],
+  parse() {
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(CDC);
+    const obj = { type: "CDC", loc: this.getLocation(tokenStart, this.scanner.tokenStart) };
+    return obj;
   },
-  generate(arg0) {
-    this.children(arg0);
-  },
-  walkContext: "atrulePrelude"
+  generate() {
+    this.chunk("-->");
+  }
 };
-obj2 = { children: items };
-items = [[]];
 
 export default obj;

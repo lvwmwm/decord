@@ -1,10 +1,10 @@
-// Module ID: 14178
-// Function ID: 14179
+// Module ID: 14175
+// Function ID: 14176
 // Name: CheckpointShareCardStats
-// Dependencies: [19, 17, 21, 5243, 575, 8309, 5957, 14177, 5866, 10342, 2021, 1411, 12958, 8004, 10876, 7374, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 8309, 5957, 14174, 5866, 10340, 2021, 1411, 12952, 8004, 10870, 7374, 2]
 // Exports: default
 
-// Module 14178 (CheckpointShareCardStats)
+// Module 14175 (CheckpointShareCardStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
@@ -13,9 +13,9 @@ import FastImageDefault from "FastImage" /* 5957 */;
 import GameControllerIcon from "GameControllerIcon" /* 7374 */;
 import ChatIcon from "ChatIcon" /* 8004 */;
 import UnknownGameIcon from "UnknownGameIcon" /* 8309 */;
-import ReactionIcon from "ReactionIcon" /* 10342 */;
-import ServerIcon from "ServerIcon" /* 10876 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12958 */;
+import ReactionIcon from "ReactionIcon" /* 10340 */;
+import ServerIcon from "ServerIcon" /* 10870 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12952 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;

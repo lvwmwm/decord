@@ -1,12 +1,13 @@
-// Module ID: 10639
-// Function ID: 10640
+// Module ID: 10676
+// Function ID: 10677
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2176, 1072, 1387, 6206, 1113, 1252, 9912, 6704, 9545, 8514, 9902, 2171, 2]
+// Dependencies: [5, 2176, 1072, 1387, 6206, 1113, 1252, 6704, 9911, 9544, 8514, 9901, 2171, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 10639 (GuildBoostPurchasingUtils)
+// Module 10676 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1113 */;
-import PremiumManagementUtils from "PremiumManagementUtils" /* 9912 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import Constants from "Constants" /* 1072 */;
@@ -21,29 +22,16 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-function getMobileBoostPurchaseBlockedMessage(premiumSubscription) {
-  let stringResult;
-  let renewalMutations;
-  if (premiumSubscription != null) {
-    renewalMutations = premiumSubscription.renewalMutations;
-  }
-  if (null != renewalMutations) {
-    const intl2 = intl3.intl;
-    stringResult = intl2.string(intl3.t.npfhh0);
-  } else {
-    let status;
-    if (premiumSubscription != null) {
-      status = premiumSubscription.status;
-    }
-    if (status === metroImportDefault.BILLING_RETRY) {
-      const intl = intl3.intl;
-      stringResult = intl.string(intl3.t.JakNQ8);
-    } else {
-      obj = PremiumManagementUtils;
-      stringResult = obj.getExternalManagementMessage(premiumSubscription);
-    }
-  }
-  return stringResult;
+function alertUnableToManageSub(body, source) {
+  let intl;
+  obj = { title: intl.string(intl3.t["8P7MX0"]), body };
+  const show = actions_AlertActionCreatorsDefault.show;
+  actions_AlertActionCreatorsDefault;
+  intl = intl3.intl;
+  show(obj);
+  const obj2 = AnalyticsUtilsDefault;
+  const obj3 = { type: metroRequire.IOS_CANNOT_MANAGE_SUBSCRIPTION, source };
+  obj2.track(hasOwnProperty.OPEN_MODAL, obj3);
 }
 let obj = function _launchGuildBoostFlowOrAlert() {
   obj = _asyncToGenerator(async (analyticsLocation) => {
@@ -60,17 +48,6 @@ let obj = function _launchGuildBoostFlowOrAlert() {
       let c5;
       let tmp;
       let tmp3;
-      function alertUnableToManageSub(body, c0) {
-        let intl;
-        obj = { title: intl.string(analyticsLocation(guildId[5]).t["8P7MX0"]), body };
-        const show = analyticsLocations(guildId[4]).show;
-        analyticsLocations(guildId[4]);
-        intl = analyticsLocation(guildId[5]).intl;
-        show(obj);
-        const obj2 = analyticsLocations(guildId[6]);
-        const obj3 = { type: closure_1_6.IOS_CANNOT_MANAGE_SUBSCRIPTION, source: c0 };
-        obj2.track(constants.OPEN_MODAL, obj3);
-      }
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -78,15 +55,14 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          let obj3 = { value, done: true };
-          return obj3;
+          return { value, done: true };
         } else {
           return { value: "HermesInternal", done: null };
         }
       } else {
         try {
           let premiumTypeSubscription;
-          let closure_7;
+          let externalManagementMessage;
           let c8;
           let productIdFromSubscription;
           c6 = 2;
@@ -107,7 +83,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               onPaymentSuccess = undefined;
               ({ source: c0, analyticsLocations: c1, guildId: c2, onBack: c3, onPaymentSuccess: c4, onPaymentDismiss: c5 } = closure_0);
               premiumTypeSubscription = undefined;
-              closure_7 = undefined;
+              externalManagementMessage = undefined;
               c8 = undefined;
               productIdFromSubscription = undefined;
               allowYearlyBundles = undefined;
@@ -125,37 +101,56 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                 return { value, done: true };
               } else if (closure_131_4.hasFetchedSubscriptions()) {
                 premiumTypeSubscription = closure_131_4.getPremiumTypeSubscription();
-                closure_7 = closure_131_11(premiumTypeSubscription);
-                if (null != closure_7) {
-                  alertUnableToManageSub(closure_7, analyticsLocation);
-                } else {
-                  c8 = null;
-                  if (null != premiumTypeSubscription) {
-                    onPaymentSuccess = 1;
-                    const obj9 = closure_131_0(closure_131_2[9]);
-                    productIdFromSubscription = obj9.getProductIdFromSubscription(premiumTypeSubscription, true);
-                    const tmp54 = closure_131_0(closure_131_2[10]).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
-                    let interval;
-                    if (tmp54 != null) {
-                      interval = tmp54.interval;
-                    }
-                    analyticsLocations = interval;
-                    if (interval == null) {
-                      analyticsLocations = null;
-                    }
-                    c8 = analyticsLocations;
-                    onPaymentSuccess = 0;
+                let renewalMutations;
+                if (premiumTypeSubscription != null) {
+                  renewalMutations = premiumTypeSubscription.renewalMutations;
+                }
+                if (null == renewalMutations) {
+                  let status;
+                  if (premiumTypeSubscription != null) {
+                    status = premiumTypeSubscription.status;
                   }
+                  if (status !== closure_131_7.BILLING_RETRY) {
+                    const obj4 = closure_131_0(closure_131_2[8]);
+                    externalManagementMessage = obj4.getExternalManagementMessage(premiumTypeSubscription);
+                    if (null != externalManagementMessage) {
+                      closure_131_11(externalManagementMessage, analyticsLocation);
+                    } else {
+                      c8 = null;
+                      if (null != premiumTypeSubscription) {
+                        onPaymentSuccess = 1;
+                        const obj10 = closure_131_0(closure_131_2[9]);
+                        productIdFromSubscription = obj10.getProductIdFromSubscription(premiumTypeSubscription, true);
+                        const tmp82 = closure_131_0(closure_131_2[10]).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+                        let interval;
+                        if (tmp82 != null) {
+                          interval = tmp82.interval;
+                        }
+                        analyticsLocations = interval;
+                        if (interval == null) {
+                          analyticsLocations = null;
+                        }
+                        c8 = analyticsLocations;
+                        onPaymentSuccess = 0;
+                      }
+                    }
+                  } else {
+                    const intl2 = closure_131_0(closure_131_2[5]).intl;
+                    closure_131_11(intl2.string(closure_131_0(closure_131_2[5]).t.JakNQ8), analyticsLocation);
+                  }
+                } else {
+                  const intl = closure_131_0(closure_131_2[5]).intl;
+                  closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
                 return { value: "HermesInternal", done: null };
               } else {
-                let obj2 = closure_131_0(closure_131_2[8]);
+                let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;
                 let num3 = 1;
                 c6 = 1;
-                const obj7 = { value: obj2.fetchSubscriptions(), done: false };
-                return obj7;
+                const obj8 = { value: obj2.fetchSubscriptions(), done: false };
+                return obj8;
               }
             } else if (2 === onPaymentDismiss) {
               if (arg0 === 1) {
@@ -172,7 +167,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               c8 = null;
             }
             allowYearlyBundles = c8 === closure_131_10.YEAR;
-            const obj8 = {
+            const obj9 = {
               showCurrentPlan: false,
               isBoostPurchaseFlow: true,
               allowYearlyBundles,
@@ -207,13 +202,13 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               onPaymentSuccess,
               onPaymentDismiss
             };
-            const obj4 = closure_131_0(closure_131_2[11]);
-            const result = obj4.launchPremiumPlanSelect(obj8);
+            const obj5 = closure_131_0(closure_131_2[11]);
+            const result = obj5.launchPremiumPlanSelect(obj9);
           }
-        } catch (tmp36) {
+        } catch (tmp64) {
           if (0 === onPaymentSuccess) {
             c6 = 3;
-            throw tmp36;
+            throw tmp64;
           } else {
             onPaymentDismiss = 3;
           }
@@ -229,7 +224,6 @@ let obj = function _launchGuildBoostFlowOrAlert() {
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: metroImportAll, PremiumTypes: c9, SubscriptionIntervalTypes: c10 } = PremiumConstants);
 let result = size.fileFinishedImporting("modules/guild_boosting/native/GuildBoostPurchasingUtils.tsx");
 
-export { getMobileBoostPurchaseBlockedMessage };
 export function launchGuildBoostFlowOrAlert() {
   return obj(...arguments);
 }

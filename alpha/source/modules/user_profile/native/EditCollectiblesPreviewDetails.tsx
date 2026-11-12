@@ -1,10 +1,10 @@
-// Module ID: 15419
-// Function ID: 15420
+// Module ID: 15416
+// Function ID: 15417
 // Name: EditCollectiblesPreviewDetails
-// Dependencies: [19, 17, 2186, 21, 5243, 504, 2171, 8431, 5065, 5866, 1113, 9338, 2]
+// Dependencies: [19, 17, 2186, 21, 5243, 504, 2171, 8431, 5065, 5866, 1113, 9337, 2]
 // Exports: default
 
-// Module 15419 (EditCollectiblesPreviewDetails)
+// Module 15416 (EditCollectiblesPreviewDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl6 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
 import DateUtils from "DateUtils" /* 5065 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 9338 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 9337 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,436 +1,121 @@
 // Module ID: 9842
 // Function ID: 9843
-// Dependencies: [32, 5, 9729, 9843, 9737, 9732, 9745, 9738]
-// Exports: addFetchEndInstrumentationHandler, addFetchInstrumentationHandler
+// Dependencies: [9731, 9729, 9730]
+// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
 
 // Module 9842
 import _mod9729 from "module_9729" /* 9729 */;
-import _mod9732 from "module_9732" /* 9732 */;
-import _mod9737 from "module_9737" /* 9737 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 9745 */;
-import _mod9843 from "module_9843" /* 9843 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _mod9731 from "module_9731" /* 9731 */;
 
-const require = globalThis.__r;
-let _require, c1, c3, c6, closure_4;
-
-let obj = function _resolveResponse() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_2;
-    let closure_0 = arg0;
-    let closure_1 = value;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      let c5;
-      try {
-        let reader;
-        let timeout2;
-        let done;
-        let c4;
-        c6 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_0 = closure_1;
-            let body;
-            reader = undefined;
-            let timeout;
-            c4 = undefined;
-            timeout2 = undefined;
-            done = undefined;
-            if (closure_0) {
-              if (closure_0.body) {
-                body = tmp44.body;
-                reader = body.getReader();
-                const _setTimeout = setTimeout;
-                timeout = setTimeout(() => {
-                  const cancelResult = closure_1_1.cancel();
-                  cancelResult.then(null, () => {
-
-                  });
-                }, 90000);
-                c4 = true;
-                const tmp26 = c4;
-                if (!tmp26) {
-                  const _clearTimeout5 = clearTimeout;
-                  clearTimeout(timeout);
-                  reader.releaseLock();
-                  let cancelResult = body.cancel();
-                  const nextPromise = cancelResult.then(null, () => {
-
-                  });
-                }
-              }
-            }
-            c6 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } else if (1 === c3) {
-          c5 = 0;
-          const _clearTimeout4 = clearTimeout;
-          clearTimeout(timeout2);
-          throw closure_4;
-        } else {
-          if (2 === c3) {
-            c5 = 1;
-            c4 = false;
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            const _clearTimeout2 = clearTimeout;
-            clearTimeout(timeout2);
-            c6 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else {
-            done = value.done;
-            const _clearTimeout = clearTimeout;
-            clearTimeout(timeout2);
-            const tmp7 = done;
-            if (tmp7) {
-              closure_0();
-              c4 = false;
-            }
-            c5 = 1;
-          }
-          c5 = 0;
-          const _clearTimeout3 = clearTimeout;
-          clearTimeout(timeout2);
-        }
-        c5 = 2;
-        const _setTimeout2 = setTimeout;
-        timeout2 = setTimeout(() => {
-          const cancelResult = closure_1_1.cancel();
-          cancelResult.then(null, () => {
-
-          });
-        }, 5000);
-        c3 = 3;
-        c6 = 1;
-        const obj4 = { value: reader.read(), done: false };
-        return obj4;
-      } catch (tmp36) {
-        closure_4 = tmp36;
-        if (0 === c5) {
-          c6 = 3;
-          throw tmp36;
-        } else if (1 === tmp38) {
-          c3 = 1;
-        } else {
-          c3 = 2;
-        }
-      }
+function supportsFetch() {
+  if ("fetch" in _mod9731.GLOBAL_OBJ) {
+    try {
+      const _Headers = Headers;
+      const self = this;
+      const headers = new Headers();
+      const _Request = Request;
+      const self2 = this;
+      const request = new Request("http://www.example.com");
+      const _Response = Response;
+      const self3 = this;
+      const response = new Response();
+      return true;
+    } catch (err) {
+      return false;
     }
-  });
-  return obj(...arguments);
-};
-function streamHandler(clone) {
-  function resolveResponse(arg0, arg1) {
-    return obj(...arguments);
-  }
-  const response = clone;
-  try {
-    !resolveResponse(clone.clone(), () => {
-      let obj2;
-      obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), response };
-      const triggerHandlers = _mod9729.triggerHandlers;
-      obj2 = _browserPerformanceTimeOriginMode;
-      triggerHandlers("fetch-body-resolved", obj);
-    });
-  } catch (err) {
-  }
-}
-function parseFetchArgs(arg0) {
-  let str3;
-  let str5;
-  let str8;
-  let tmp7;
-  if (0 === arg0.length) {
-    return { method: "GET", url: "" };
-  } else if (2 === arg0.length) {
-    [str5, tmp7] = arg0;
-    let tmp8 = str5;
-    _slicedToArray(arg0, 2);
-    if (typeof str5 !== "string") {
-      let str6 = "";
-      let str7 = "";
-      if (str5) {
-        const tmp9 = str5 && typeof str5 === "object" && str5.url;
-        if (tmp9) {
-          str6 = str5.url;
-        } else if (str5.toString) {
-          str6 = str5.toString();
-        }
-        str7 = str6;
-      }
-      tmp8 = str7;
-    }
-    const request = { url: tmp8, method: str8 };
-    str8 = "GET";
-    const tmp10 = tmp7 && typeof tmp7 === "object" && tmp7.method;
-    if (tmp10) {
-      const _String2 = String;
-      const str9 = String(tmp7.method);
-      str8 = str9.toUpperCase();
-    }
-    return request;
   } else {
-    let tmp2 = str10;
-    if (typeof arg0[0] !== "string") {
-      let str = "";
-      let str2 = "";
-      if (arg0[0]) {
-        const tmp = arg0[0] && typeof arg0[0] === "object" && arg0[0].url;
-        if (tmp) {
-          str = str10.url;
-        } else if (arg0[0].toString) {
-          str = str10.toString();
-        }
-        str2 = str;
-      }
-      tmp2 = str2;
-    }
-    const request1 = { url: tmp2, method: str3 };
-    str3 = "GET";
-    const tmp3 = arg0[0] && typeof arg0[0] === "object" && arg0[0].method;
-    if (tmp3) {
-      const _String = String;
-      const str4 = String(arg0[0].method);
-      str3 = str4.toUpperCase();
-    }
-    return request1;
+    return false;
   }
 }
+function isNativeFunction(arg0) {
+  let isMatch = arg0;
+  if (isMatch) {
+    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
+    isMatch = obj.test(arg0.toString());
+  }
+  return isMatch;
+}
 
-export function addFetchEndInstrumentationHandler(arg0) {
-  obj = _mod9729;
-  obj.addHandler("fetch-body-resolved", arg0);
-  const obj2 = _mod9729;
-  obj2.maybeInstrument("fetch-body-resolved", () => {
-    let closure_0 = closure_5;
-    {
-      obj = closure_0(closure_1[4]);
-      obj.fill(closure_0(closure_1[5]).GLOBAL_OBJ, "fetch", (arg0) => {
-        closure_0 = arg0;
-        return () => {
-          let obj2;
-          const items = [...arguments];
-          const error = new Error();
-          const request = closure_3_6(items);
-          obj = { args: items, fetchData: { method: request.method, url: request.url }, startTimestamp: 1000 * obj2.timestampInSeconds(), virtualError: error };
-          let tmp2 = closure_3_0;
-          obj2 = closure_3_0(closure_3_1[6]);
-          const tmp4 = closure_2_0;
-          if (!tmp4) {
-            let obj3 = {};
-            let tmp6 = obj3;
-            let triggerHandlers = tmp2(tmp3[2]).triggerHandlers;
-            tmp2(closure_3_1[2]);
-            let merged = Object.assign(obj);
-            triggerHandlers("fetch", obj3);
-          }
-          const applyResult = closure_0.apply(tmp2(closure_3_1[5]).GLOBAL_OBJ, items);
-          const then = applyResult.then;
-          closure_0 = closure_3_3(function*(arg0, value) {
-            let obj2;
-            value = arg0;
-            if (c1 === 2) {
-              c1 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp2 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                return { value: "HermesInternal", done: null };
-              }
-            } else {
-              try {
-                c1 = 2;
-                if (arg0 === 1) {
-                  c1 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c1 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  if (value) {
-                    tmp16(value);
-                  } else {
-                    obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), response: value };
-                    const triggerHandlers = closure_3_0(closure_3_1[2]).triggerHandlers;
-                    const merged = Object.assign(c1);
-                    obj2 = closure_3_0(closure_3_1[6]);
-                    triggerHandlers("fetch", obj);
-                  }
-                  c1 = 3;
-                  const obj5 = { value, done: true };
-                  return obj5;
-                }
-              } catch (tmp11) {
-                c1 = 3;
-                throw tmp11;
-              }
-            }
-          });
-          return then(function(arg0) {
-            return closure_0(...arguments);
-          }, (error) => {
-            let obj2;
-            obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), error };
-            const triggerHandlers = error(closure_3_1[2]).triggerHandlers;
-            const merged = Object.assign(obj);
-            obj2 = error(closure_3_1[6]);
-            triggerHandlers("fetch", obj);
-            const obj3 = error(closure_3_1[7]);
-            const tmp = error;
-            const tmp2 = closure_3_1;
-            const tmp6 = obj3.isError(error) && undefined === error.stack;
-            if (tmp6) {
-              error.stack = error.stack;
-              const tmpResult = tmp(tmp2[4]);
-              const result = tmpResult.addNonEnumerableProperty(error, "framesToPop", 1);
-            }
-            throw error;
-          });
-        };
-      });
-    }
-  });
+export { isNativeFunction };
+export function supportsDOMError() {
+  try {
+    const self = this;
+    const dOMError = new globalThis.DOMError("");
+    return true;
+  } catch (err) {
+    return false;
+  }
 }
-export function addFetchInstrumentationHandler(arg0, arg1) {
-  _require = arg1;
-  obj = require("module_9729");
-  obj.addHandler("fetch", arg0);
-  let obj2 = require("module_9729");
-  obj2.maybeInstrument("fetch", () => {
-    let flag = closure_0;
-    if (closure_0 === undefined) {
-      flag = false;
-    }
-    if (flag) {
-      let tmp = require;
-      let tmp2 = dependencyMap;
-      obj = _mod9843;
-      flag = !obj.supportsNativeFetch();
-    }
-    if (!flag) {
-      const tmp3 = require;
-      let tmp4 = dependencyMap;
-      let obj2 = _mod9737;
-      const str = "fetch";
-      obj2.fill(_mod9732.GLOBAL_OBJ, "fetch", (arg0) => {
-        closure_0 = arg0;
-        return () => {
-          let obj2;
-          const items = [...arguments];
-          const error = new Error();
-          const request = closure_3_6(items);
-          obj = { args: items, fetchData: { method: request.method, url: request.url }, startTimestamp: 1000 * obj2.timestampInSeconds(), virtualError: error };
-          let tmp2 = closure_3_0;
-          obj2 = closure_3_0(closure_3_1[6]);
-          const tmp4 = closure_2_0;
-          if (!tmp4) {
-            let obj3 = {};
-            let tmp6 = obj3;
-            let triggerHandlers = tmp2(tmp3[2]).triggerHandlers;
-            tmp2(closure_3_1[2]);
-            let merged = Object.assign(obj);
-            triggerHandlers("fetch", obj3);
-          }
-          const applyResult = closure_0.apply(tmp2(closure_3_1[5]).GLOBAL_OBJ, items);
-          const then = applyResult.then;
-          closure_0 = closure_3_3(function*(arg0, value) {
-            let obj2;
-            value = arg0;
-            if (c1 === 2) {
-              c1 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp2 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                return { value: "HermesInternal", done: null };
-              }
-            } else {
-              try {
-                c1 = 2;
-                if (arg0 === 1) {
-                  c1 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c1 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  if (value) {
-                    tmp16(value);
-                  } else {
-                    obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), response: value };
-                    const triggerHandlers = closure_3_0(closure_3_1[2]).triggerHandlers;
-                    const merged = Object.assign(c1);
-                    obj2 = closure_3_0(closure_3_1[6]);
-                    triggerHandlers("fetch", obj);
-                  }
-                  c1 = 3;
-                  const obj5 = { value, done: true };
-                  return obj5;
-                }
-              } catch (tmp11) {
-                c1 = 3;
-                throw tmp11;
-              }
-            }
-          });
-          return then(function(arg0) {
-            return closure_0(...arguments);
-          }, (error) => {
-            let obj2;
-            obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), error };
-            const triggerHandlers = error(closure_3_1[2]).triggerHandlers;
-            const merged = Object.assign(obj);
-            obj2 = error(closure_3_1[6]);
-            triggerHandlers("fetch", obj);
-            const obj3 = error(closure_3_1[7]);
-            const tmp = error;
-            const tmp2 = closure_3_1;
-            const tmp6 = obj3.isError(error) && undefined === error.stack;
-            if (tmp6) {
-              error.stack = error.stack;
-              const tmpResult = tmp(tmp2[4]);
-              const result = tmpResult.addNonEnumerableProperty(error, "framesToPop", 1);
-            }
-            throw error;
-          });
-        };
-      });
-    }
-  });
+export function supportsDOMException() {
+  try {
+    const self = this;
+    const dOMException = new globalThis.DOMException("");
+    return true;
+  } catch (err) {
+    return false;
+  }
 }
-export { parseFetchArgs };
+export function supportsErrorEvent() {
+  try {
+    const self = this;
+    const errorEvent = new globalThis.ErrorEvent("");
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+export { supportsFetch };
+export function supportsNativeFetch() {
+  if (typeof globalThis.EdgeRuntime === "string") {
+    return true;
+  } else if (supportsFetch()) {
+    const tmp = isNativeFunction;
+    if (isNativeFunction(_mod9731.GLOBAL_OBJ.fetch)) {
+      return true;
+    } else {
+      let flag2 = false;
+      const _document = tmp2(9731).GLOBAL_OBJ.document;
+      if (_document) {
+        if (typeof _document.createElement === "function") {
+          try {
+            const element = <iframe />;
+            element.hidden = true;
+            const head = _document.head;
+            head.appendChild(element);
+            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
+            if (_fetch) {
+              flag2 = tmp(tmp5.contentWindow.fetch);
+            }
+            const head2 = _document.head;
+            head2.removeChild(element);
+          } catch (tmp10) {
+            if (_mod9729.DEBUG_BUILD) {
+              const logger = tmp2(9730).logger;
+              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
+            }
+          }
+        }
+      }
+      return flag2;
+    }
+  } else {
+    return false;
+  }
+}
+export function supportsReferrerPolicy() {
+  if (supportsFetch()) {
+    try {
+      const _Request = Request;
+      const self = this;
+      const request = new Request("_", { referrerPolicy: "origin" });
+      return true;
+    } catch (err) {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
+export function supportsReportingObserver() {
+  return "ReportingObserver" in _mod9731.GLOBAL_OBJ;
+}

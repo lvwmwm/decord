@@ -39,13 +39,13 @@ let closure_17;
 let closure_18;
 let closure_20;
 let closure_21;
-const f92545 = (is_active) => is_active.is_active;
-const f92546 = (party) => {
+const f92556 = (is_active) => is_active.is_active;
+const f92557 = (party) => {
   const tmp = null != party.party && null != party.party.id && closure_1_15(party.party.id);
   return tmp;
 };
-const f92550 = () => closure_1_36.stop();
-const f92557 = () => {
+const f92561 = () => closure_1_36.stop();
+const f92568 = () => {
   let accessToken;
   let accountId;
   let obj2;
@@ -86,7 +86,7 @@ function upsertAccount(accountId, accessToken) {
       obj._requestedDisconnect = false;
       obj._requestedConnect = false;
       const obj2 = _modDef12;
-      obj.handleDeviceStateChange = obj2.throttle(f92557, closure_30);
+      obj.handleDeviceStateChange = obj2.throttle(f92568, closure_30);
       obj.accountId = accountId;
       obj.accessToken = accessToken;
       const self2 = this;
@@ -155,7 +155,7 @@ function activitySync(userId, activity, arg2) {
           continue;
         } else {
           let arr = tmp5[tmp4];
-          let found = arr.find(f92545);
+          let found = arr.find(f92556);
           if (null == found) {
             continue;
           } else {
@@ -412,7 +412,7 @@ function handleUserActivitySyncStop() {
           continue;
         } else {
           let arr = tmp15[tmp14];
-          let found = arr.find(f92545);
+          let found = arr.find(f92556);
           if (null == found) {
             continue;
           } else {
@@ -561,7 +561,7 @@ function autoPause() {
             continue;
           } else {
             let arr = tmp4[tmp3];
-            let found = arr.find(f92545);
+            let found = arr.find(f92556);
             if (null == found) {
               continue;
             } else {
@@ -775,7 +775,6 @@ let closure_27 = 5 * DurationsDefault.Millis.SECOND;
 let closure_28 = 1.5 * DurationsDefault.Millis.SECOND;
 const MINUTE = DurationsDefault.Millis.MINUTE;
 let closure_30 = 3 * DurationsDefault.Millis.SECOND;
-const dehydratedItems = { PLAYER_STATE_CHANGED: "PLAYER_STATE_CHANGED", DEVICE_STATE_CHANGED: "DEVICE_STATE_CHANGED" };
 const message = "message";
 const ping_str = "ping";
 const single = "single";
@@ -786,7 +785,7 @@ const timeout1 = new Timers.Timeout();
 const timeout2 = new Timers.Timeout();
 const timeout3 = new Timers.Timeout();
 const timeout4 = new Timers.Timeout();
-const customChannelScoresByGuild = {};
+let closure_41 = {};
 let closure_42 = {};
 let closure_43 = {};
 let c44 = false;
@@ -799,7 +798,7 @@ class SpotifySocket {
     obj._requestedDisconnect = false;
     obj._requestedConnect = false;
     let obj2 = _modDef12;
-    obj.handleDeviceStateChange = obj2.throttle(f92557, closure_30);
+    obj.handleDeviceStateChange = obj2.throttle(f92568, closure_30);
     obj.accountId = accountId;
     obj.accessToken = accessToken;
     const interval = new obj(5087).Interval();
@@ -1005,7 +1004,7 @@ class SpotifyStore extends Store {
                 continue;
               } else {
                 let arr = tmp6[tmp5];
-                let found = arr.find(f92545);
+                let found = arr.find(f92556);
                 if (null == found) {
                   continue;
                 } else {
@@ -1023,7 +1022,7 @@ class SpotifyStore extends Store {
         flag = false;
         if (null != tmp3) {
           const userId = closure_4.userId;
-          const findActivityResult = closure_11.findActivity(userId, f92546);
+          const findActivityResult = closure_11.findActivity(userId, f92557);
           if (null == findActivityResult) {
             closure_38.start(closure_26, () => {
               const tmp = null != _null2 && _null2.userId === userId;
@@ -1073,7 +1072,7 @@ class SpotifyStore extends Store {
             continue;
           } else {
             let arr = tmp5[tmp4];
-            let found = arr.find(f92545);
+            let found = arr.find(f92556);
             if (null == found) {
               continue;
             } else {
@@ -1132,7 +1131,7 @@ class SpotifyStore extends Store {
             continue;
           } else {
             let arr = tmp5[tmp4];
-            let found = arr.find(f92545);
+            let found = arr.find(f92556);
             if (null == found) {
               continue;
             } else {
@@ -1187,7 +1186,7 @@ class SpotifyStore extends Store {
     if (null == _null) {
       let findActivityResult = null;
       if (null != _null2) {
-        findActivityResult = PresenceStore.findActivity(_null2.userId, f92546);
+        findActivityResult = PresenceStore.findActivity(_null2.userId, f92557);
       }
       return findActivityResult;
     } else {
@@ -1464,7 +1463,7 @@ obj = {
             }
           }
         }
-        timeout1.start(100, f92550, false);
+        timeout1.start(100, f92561, false);
       }
       if (null != tmp10) {
         if (!tmp43) {
@@ -1548,7 +1547,7 @@ obj = {
             continue;
           } else {
             let arr = tmp5[tmp4];
-            let found = arr.find(f92545);
+            let found = arr.find(f92556);
             if (null == found) {
               continue;
             } else {
@@ -1623,7 +1622,7 @@ obj = {
           }
         }
       }
-      timeout1.start(100, f92550, false);
+      timeout1.start(100, f92561, false);
     }
     return false;
   },
@@ -1644,7 +1643,7 @@ obj = {
             }
           }
         }
-        timeout1.start(100, f92550, false);
+        timeout1.start(100, f92561, false);
       }
       return acc;
     }, false);

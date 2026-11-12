@@ -1,158 +1,274 @@
 // Module ID: 9774
 // Function ID: 9775
-// Dependencies: [9730, 9731, 9775, 9778, 9767, 9736]
-// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
+// Dependencies: [32, 9731, 9775, 9736, 9777]
+// Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
 
 // Module 9774
+import _mod9731 from "module_9731" /* 9731 */;
 import _mod9736 from "module_9736" /* 9736 */;
 import _mod9775 from "module_9775" /* 9775 */;
-import _mod9778 from "module_9778" /* 9778 */;
-import DEBUG_BUILD from "module_9730" /* 9730 */;
-import CONSOLE_LEVELS from "module_9731" /* 9731 */;
+import _mod9777 from "module_9777" /* 9777 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const require = globalThis.__r;
-let _require, integrations;
+let _require;
 
-
-export function createEventEnvelope(type, arg1, sdk, arg3) {
-  const obj = _mod9775;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
-  let str = "event";
-  const tmp2 = type;
-  if (type.type) {
-    str = "event";
-    if ("replay_event" !== type.type) {
-      str = type.type;
+function forEachEnvelopeItem(arg0, fn) {
+  const tmp = arg0[1];
+  for (const item10007 of tmp) {
+    if (fn(item10007, item10007[0].type)) {
+      obj.return();
+      let flag = true;
+      return true;
     }
   }
-  if (sdk && sdk.sdk) {
-    type.sdk = type.sdk || {};
-    let name = type.sdk.name;
-    sdk = type.sdk;
-    if (!name) {
-      name = tmp6.name;
-    }
-    sdk.name = name;
-    let version = type.sdk.version;
-    const sdk2 = type.sdk;
-    if (!version) {
-      version = tmp6.version;
-    }
-    sdk2.version = version;
-    integrations = type.sdk.integrations;
-    const sdk3 = type.sdk;
-    if (!integrations) {
-      integrations = [];
-    }
-    const items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
-    const tmp10 = (sdk && sdk.sdk).integrations || [];
-    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
-    sdk3.integrations = items;
-    let packages = type.sdk.packages;
-    const sdk4 = type.sdk;
-    if (!packages) {
-      packages = [];
-    }
-    const items1 = [];
-    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
-    const tmp18 = (sdk && sdk.sdk).packages || [];
-    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
-    sdk4.packages = items1;
-  }
-  const tmp3Result = _mod9775;
-  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
-  delete tmp2["sdkProcessingMetadata"];
-  const items2 = [{ type: str }, type];
-  const items3 = [items2];
-  const tmp3Result2 = _mod9775;
-  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
+  return false;
 }
-export function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
-  let date;
-  let items1;
-  let tmpResult;
-  const obj = _mod9775;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
-  const obj2 = { sent_at: date.toISOString() };
-  let tmp4 = sdkMetadataForEnvelopeHeader;
-  date = new Date();
-  if (tmp4) {
-    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
-    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
-  }
-  const merged = Object.assign(tmp4);
-  let tmp6 = arg3 && arg1;
-  if (tmp6) {
-    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
-    tmp6 = obj4;
-    tmpResult = _mod9778;
-  }
-  const merged1 = Object.assign(tmp6);
-  if ("aggregates" in toJSON) {
-    const items = [{ type: "sessions" }, toJSON];
-    items1 = items;
+let closure_4 = { session: "session", sessions: "session", attachment: "attachment", transaction: "transaction", event: "error", client_report: "internal", user_report: "default", profile: "profile", profile_chunk: "profile", replay_event: "replay", replay_recording: "replay", check_in: "monitor", feedback: "feedback", span: "span", statsd: "metric_bucket", raw_security: "security" };
+
+export function addItemToEnvelope(arg0, arg1) {
+  const tmp2 = _slicedToArray(arg0, 2);
+  const items = [tmp2[0], ];
+  const items1 = [];
+  items1[HermesBuiltin.arraySpread(items1, tmp2[1], 0)] = arg1;
+  items[1] = items1;
+  return items;
+}
+export function createAttachmentEnvelopeItem(data) {
+  let data1;
+  if (typeof data.data === "string") {
+    data = data.data;
+    if (_mod9731.GLOBAL_OBJ.__SENTRY__) {
+      let encodePolyfillResult;
+      if (_mod9731.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
+        const __SENTRY__ = tmp(9731).GLOBAL_OBJ.__SENTRY__;
+        encodePolyfillResult = __SENTRY__.encodePolyfill(data);
+      }
+      data1 = encodePolyfillResult;
+    }
+    const _TextEncoder = TextEncoder;
+    const self = this;
+    const self2 = this;
+    const encoder = new TextEncoder();
+    encodePolyfillResult = encoder.encode(data);
   } else {
-    items1 = [{ type: "session" }, toJSON.toJSON()];
+    data1 = data.data;
   }
-  const items2 = [items1];
-  const tmpResult2 = _mod9775;
-  return tmpResult2.createEnvelope(obj2, items2);
+  const items = [, ];
+  const obj = _mod9736;
+  const obj2 = { type: "attachment", length: data1.length, filename: data.filename, content_type: data.contentType, attachment_type: data.attachmentType };
+  items[0] = obj.dropUndefinedKeys(obj2);
+  items[1] = data1;
+  return items;
 }
-export function createSpanEnvelope(arg0, getDsn) {
-  let closure_0;
+export function createEnvelope(arg0) {
+  let items = arg1;
+  if (arg1 === undefined) {
+    items = [];
+  }
+  const items1 = [arg0, items];
+  return items1;
+}
+export function createEventEnvelopeHeaders(event_id, sdk, arg2, arg3) {
   let date;
-  let tmp2Result;
-  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
-    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
-  }
-  let tmp = _require;
-  let tmp3 = dependencyMap;
-  let obj = require("module_9767");
-  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
-  const tmp6 = getDsn && getDsn.getDsn();
-  const obj2 = { sent_at: date.toISOString() };
-  const tmp7 = getDsn && getDsn.getOptions().tunnel;
+  let dropUndefinedKeys;
+  let obj5;
+  let obj6;
+  const obj = { event_id: event_id.event_id, sent_at: date.toISOString() };
+  let tmp2 = sdk;
   date = new Date();
-  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
-  const tmp2 = _require;
+  if (tmp2) {
+    tmp2 = { sdk };
+    const obj2 = { sdk };
+  }
+  const merged = Object.assign(tmp2);
+  let tmp4 = arg2 && arg3;
+  if (tmp4) {
+    const obj3 = { dsn: obj5.dsnToString(arg3) };
+    tmp4 = obj3;
+    obj5 = _mod9777;
+  }
+  const merged1 = Object.assign(tmp4);
+  let tmp8 = tmp;
   if (tmp8) {
-    tmp8 = { trace: dynamicSamplingContextFromSpan };
-    const obj3 = { trace: dynamicSamplingContextFromSpan };
+    const obj4 = { trace: dropUndefinedKeys(obj6) };
+    obj6 = {};
+    dropUndefinedKeys = _mod9736.dropUndefinedKeys;
+    _mod9736;
+    const merged2 = Object.assign(tmp);
+    tmp8 = obj4;
   }
-  const merged = Object.assign(tmp8);
-  let tmp10 = tmp7 && tmp6;
-  if (tmp10) {
-    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
-    tmp10 = obj4;
-    tmp2Result = tmp2(9778);
+  const merged3 = Object.assign(tmp8);
+  return obj;
+}
+export function createSpanEnvelopeItem(arg0) {
+  const items = [{ type: "span" }, arg0];
+  return items;
+}
+export function envelopeContainsItemType(arg0, arg1) {
+  let closure_0 = arg1;
+  return forEachEnvelopeItem(arg0, (arg0, arg1) => closure_0.includes(arg1));
+}
+export function envelopeItemTypeToDataCategory(arg0) {
+  return closure_4[arg0];
+}
+export { forEachEnvelopeItem };
+export function getSdkMetadataForEnvelopeHeader(sdk) {
+  const tmp = sdk;
+  if (tmp) {
+    if (sdk.sdk) {
+      const obj = { name: null, version: null };
+      ({ name: obj.name, version: obj.version } = sdk.sdk);
+      return obj;
+    }
   }
-  const merged1 = Object.assign(tmp10);
-  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
-  _require = tmp14;
+}
+export function parseEnvelope(arr) {
+  let tmp = arr;
+  if (typeof arr === "string") {
+    if (require("module_9731").GLOBAL_OBJ.__SENTRY__) {
+      let encodePolyfillResult;
+      if (require("module_9731").GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
+        let __SENTRY__ = tmp12(9731).GLOBAL_OBJ.__SENTRY__;
+        encodePolyfillResult = __SENTRY__.encodePolyfill(arr);
+      }
+      tmp = encodePolyfillResult;
+    }
+    const _TextEncoder = TextEncoder;
+    const self = this;
+    const self2 = this;
+    const encoder = new TextEncoder();
+    const tmp3 = encoder;
+    encodePolyfillResult = encoder.encode(arr);
+  }
+  function readJson() {
+    let length = closure_0.indexOf(10);
+    if (length < 0) {
+      length = closure_0.length;
+    }
+    const _JSON = JSON;
+    const subarrayResult = closure_0.subarray(0, length);
+    closure_0 = closure_0.subarray(length + 1);
+    if (_mod9731.GLOBAL_OBJ.__SENTRY__) {
+      let decodePolyfillResult;
+      if (_mod9731.GLOBAL_OBJ.__SENTRY__.decodePolyfill) {
+        const __SENTRY__ = tmp3(9731).GLOBAL_OBJ.__SENTRY__;
+        decodePolyfillResult = __SENTRY__.decodePolyfill(subarrayResult);
+      }
+      return parse(decodePolyfillResult);
+    }
+    const decoder = new TextDecoder();
+    decodePolyfillResult = decoder.decode(subarrayResult);
+  }
+  _require = tmp;
   const items = [];
-  const tmp15 = tmp14 ? ((arg0) => {
-    const obj = _mod9736;
-    const tmp3 = closure_0(obj.spanToJSON(arg0));
-    if (!tmp3) {
-      const tmpResult = _mod9736;
-      tmpResult.showSpanDropWarning();
+  const json = readJson();
+  while (_require.length) {
+    let subarrayResult;
+    let json1 = readJson();
+    let length;
+    if (typeof json1.length === "number") {
+      length = json1.length;
     }
-    return tmp3;
-  }) : ((arg0) => {
-    const obj = closure_0(dependencyMap[5]);
-    return obj.spanToJSON(arg0);
-  });
-  const iter = arg0[Symbol.iterator]();
-  while (iter !== undefined) {
-    let tmp15Result = tmp15(iter.next());
-    if (tmp15Result) {
-      let push = items.push;
-      let obj7 = require("module_9775");
-      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
+    let items1 = [json1, ];
+    let push = items.push;
+    if (length) {
+      subarrayResult = require("Discord");
+      _require = _require.subarray(length + 1);
+    } else {
+      subarrayResult = readJson();
     }
-    continue;
+    items1[1] = subarrayResult;
+    arr = push(items1);
   }
-  const obj8 = require("module_9775");
-  return obj8.createEnvelope(obj2, items);
+  const items2 = [json, items];
+  return items2;
+}
+export function serializeEnvelope(arg0) {
+  let sum;
+  let tmp4;
+  function concatBuffers(arr) {
+    const uint8Array = new Uint8Array(arr.reduce((acc, item) => acc + item.length, 0));
+    let num = 0;
+    const iter = arr[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let result = uint8Array.set(nextResult, num);
+      num = num + nextResult.length;
+      continue;
+    }
+    return uint8Array;
+  }
+  function append(json) {
+    let require;
+    if (typeof require === "string") {
+      if (typeof json === "string") {
+        require = arr + json;
+      } else {
+        if (_mod9731.GLOBAL_OBJ.__SENTRY__) {
+          let encodePolyfillResult;
+          if (_mod9731.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
+            const __SENTRY__2 = tmp11(9731).GLOBAL_OBJ.__SENTRY__;
+            encodePolyfillResult = __SENTRY__2.encodePolyfill(arr);
+          }
+          require = [encodePolyfillResult, json];
+        }
+        const _TextEncoder2 = TextEncoder;
+        const self3 = this;
+        const self4 = this;
+        const encoder2 = new TextEncoder();
+        encodePolyfillResult = encoder2.encode(arr);
+      }
+    } else {
+      let tmp4 = json;
+      const push = arr.push;
+      if (typeof json === "string") {
+        if (_mod9731.GLOBAL_OBJ.__SENTRY__) {
+          let encodePolyfillResult1;
+          if (_mod9731.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
+            const __SENTRY__ = tmp9(9731).GLOBAL_OBJ.__SENTRY__;
+            encodePolyfillResult1 = __SENTRY__.encodePolyfill(json);
+          }
+          tmp4 = encodePolyfillResult1;
+        }
+        const _TextEncoder = TextEncoder;
+        const self = this;
+        const self2 = this;
+        const encoder = new TextEncoder();
+        encodePolyfillResult1 = encoder.encode(json);
+      }
+      push(tmp4);
+    }
+  }
+  let tmp = _slicedToArray(arg0, 2);
+  const tmp2 = tmp[1];
+  let require = JSON.stringify(tmp[0]);
+  const tmp3 = tmp2[Symbol.iterator]();
+  if (tmp3 === undefined) {
+    let tmp20 = require;
+    if (typeof require !== "string") {
+      tmp20 = concatBuffers(tmp19);
+    }
+    return tmp20;
+  } else {
+    const tmp6 = _slicedToArray(tmp4, 2);
+    const _JSON = JSON;
+    const _HermesInternal = HermesInternal;
+    append("\n" + JSON.stringify(tmp6[0]) + "\n");
+    if (typeof tmp6[1] !== "string") {
+      const _Uint8Array = Uint8Array;
+      if (!(tmp6[1] instanceof Uint8Array)) {
+        let json;
+        try {
+          const _JSON2 = JSON;
+          json = JSON.stringify(tmp8);
+        } catch (err) {
+          const _JSON3 = JSON;
+          const normalizer = _mod9775;
+          json = stringify(normalizer.normalize(tmp8));
+        }
+        append(json);
+      }
+    }
+    append(tmp6[1]);
+  }
 }

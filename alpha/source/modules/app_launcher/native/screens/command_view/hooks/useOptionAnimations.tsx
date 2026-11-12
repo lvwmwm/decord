@@ -1,10 +1,10 @@
-// Module ID: 13399
-// Function ID: 13400
+// Module ID: 13393
+// Function ID: 13394
 // Name: useOptionAnimations
 // Dependencies: [32, 19, 5485, 1652, 1705, 2]
 // Exports: useOptionEnteringAnimation
 
-// Module 13399 (useOptionAnimations)
+// Module 13393 (useOptionAnimations)
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import timing_timing from "timing/timing" /* 5485 */;

@@ -1,10 +1,10 @@
-// Module ID: 10747
-// Function ID: 10748
+// Module ID: 10741
+// Function ID: 10742
 // Name: NsfwServerInviteWarningAlert
-// Dependencies: [19, 21, 6211, 10748, 8124, 6770, 6211, 1113, 1260, 6207, 2]
+// Dependencies: [19, 21, 6211, 10742, 8124, 6770, 6211, 1113, 1260, 6207, 2]
 // Exports: showNsfwServerInviteWarningAlert
 
-// Module 10747 (NsfwServerInviteWarningAlert)
+// Module 10741 (NsfwServerInviteWarningAlert)
 import Fragment from "Fragment" /* 21 */;
 import useAlertStore from "useAlertStore" /* 6207 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6770 */;

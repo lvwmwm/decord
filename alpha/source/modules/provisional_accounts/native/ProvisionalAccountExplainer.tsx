@@ -1,14 +1,14 @@
-// Module ID: 14839
-// Function ID: 14840
+// Module ID: 14835
+// Function ID: 14836
 // Name: ProvisionalAccountExplainer
-// Dependencies: [19, 17, 21, 5243, 575, 14840, 14841, 7381, 5866, 1113, 7557, 7895, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 14836, 14837, 7381, 5866, 1113, 7557, 7895, 2]
 // Exports: ChatProvisionalAccountExplainerCard, UserProfileProvisionalAccountExplainerCard
 
-// Module 14839 (ProvisionalAccountExplainer)
+// Module 14835 (ProvisionalAccountExplainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserProfileCardDefault from "UserProfileCard" /* 7895 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14840 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14836 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -44,7 +44,7 @@ export function ChatProvisionalAccountExplainerCard(iconSize) {
     const obj = { application, textVariant, iconSize };
     return hasOwnProperty(ApplicationIconAndNameDefault, obj, application.id);
   }, items);
-  const obj = iconSize(14841);
+  const obj = iconSize(14837);
   const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
   const obj2 = { style: items1, children: items3 };
   items1 = [tmp.chatContainer, style];
@@ -70,7 +70,7 @@ export function UserProfileProvisionalAccountExplainerCard(iconSize) {
     const obj = { application, textVariant, iconSize };
     return hasOwnProperty(ApplicationIconAndNameDefault, obj, application.id);
   }, items);
-  let obj = iconSize(14841);
+  let obj = iconSize(14837);
   const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
   const obj2 = { style, title: intl.string(iconSize(1113).t.Iyka0U), titleIcon: closure_5(iconSize(7557).CircleErrorIcon, { size: "xs", color: "text-default" }), children: closure_5(iconSize(5866).Text, { variant: "body-md/normal", color: "text-default", children: provisionalAccountExplanationText }) };
   const tmp3 = UserProfileCardDefault;

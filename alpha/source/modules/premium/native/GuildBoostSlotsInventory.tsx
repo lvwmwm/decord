@@ -1,10 +1,10 @@
-// Module ID: 15263
-// Function ID: 15264
+// Module ID: 15260
+// Function ID: 15261
 // Name: GuildBoostSlotsInventory
-// Dependencies: [19, 17, 1192, 5114, 9170, 2176, 1072, 21, 5243, 575, 6763, 9373, 5866, 1113, 11, 7364, 6889, 7654, 5957, 15264, 504, 1411, 15265, 15269, 6704, 9172, 12, 2]
+// Dependencies: [19, 17, 1192, 5114, 9169, 2176, 1072, 21, 5243, 575, 6763, 9372, 5866, 1113, 11, 7364, 6889, 7654, 5957, 15261, 504, 1411, 15262, 15266, 6704, 9171, 12, 2]
 // Exports: default
 
-// Module 15263 (GuildBoostSlotsInventory)
+// Module 15260 (GuildBoostSlotsInventory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -17,13 +17,13 @@ import FastImageDefault from "FastImage" /* 5957 */;
 import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 6704 */;
 import BoostingActionCreators from "BoostingActionCreators" /* 6889 */;
 import GuildIcon from "GuildIcon" /* 7654 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 9172 */;
-import useCountdownDefault from "useCountdown" /* 9373 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15264 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 9171 */;
+import useCountdownDefault from "useCountdown" /* 9372 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15261 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 9170 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 9169 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -44,7 +44,7 @@ let size;
 let size1;
 let tmp2;
 let unpackModuleId;
-const SubscriptionPlaceholderPattern = tmp2(15265);
+const SubscriptionPlaceholderPattern = tmp2(15262);
 function GuildBoostSlotCooldown(cooldownEndsAt) {
   let days;
   let hours;
@@ -323,7 +323,7 @@ function BoostedGuild(arg0) {
     tmp11Result = tmp11(tmp10, obj8);
   }
   items3[1] = tmp11Result;
-  items3[2] = closure_10(tmp12(15269), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = closure_10(tmp12(15266), { guild: stateFromStores, theme: stateFromStores1 });
   items4 = [closure_11(View, obj6), ];
   const obj9 = { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length };
   items4[1] = closure_10(BoostedGuildInfo, obj9);

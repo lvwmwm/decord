@@ -1,10 +1,10 @@
-// Module ID: 18252
-// Function ID: 18253
+// Module ID: 18247
+// Function ID: 18248
 // Name: ShopSkipCategoriesFilter
 // Dependencies: [19, 17, 8419, 21, 5243, 575, 504, 6274, 5866, 8418, 2]
 // Exports: ShopSkipCategoriesFilter
 
-// Module 18252 (ShopSkipCategoriesFilter)
+// Module 18247 (ShopSkipCategoriesFilter)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8418 */;
 import react from "react" /* 19 */;

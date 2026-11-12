@@ -1,10 +1,10 @@
-// Module ID: 20030
-// Function ID: 20031
+// Module ID: 20025
+// Function ID: 20026
 // Name: BackgroundSyncManager
-// Dependencies: [502, 1385, 7816, 20031, 2]
+// Dependencies: [502, 1385, 7816, 20026, 2]
 
-// Module 20030 (BackgroundSyncManager)
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 20031 */;
+// Module 20025 (BackgroundSyncManager)
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 20026 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;

@@ -1,10 +1,10 @@
-// Module ID: 18306
-// Function ID: 18307
+// Module ID: 18301
+// Function ID: 18302
 // Name: UserSettingsDesignSystemAlertModal
 // Dependencies: [5, 19, 17, 21, 6211, 6207, 5243, 5873, 2]
 // Exports: default
 
-// Module 18306 (UserSettingsDesignSystemAlertModal)
+// Module 18301 (UserSettingsDesignSystemAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import useAlertStore from "useAlertStore" /* 6207 */;
 import AlertModal2 from "AlertModal" /* 6211 */;

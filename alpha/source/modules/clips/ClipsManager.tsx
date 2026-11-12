@@ -1,9 +1,9 @@
-// Module ID: 20647
-// Function ID: 20648
+// Module ID: 20642
+// Function ID: 20643
 // Name: clips/ClipsManager
-// Dependencies: [32, 5, 6027, 1231, 502, 5092, 2130, 6008, 6739, 1385, 2136, 8779, 1072, 6740, 6012, 20648, 7816, 15696, 6033, 6745, 1252, 5068, 572, 20649, 20650, 15993, 2]
+// Dependencies: [32, 5, 6027, 1231, 502, 5092, 2130, 6008, 6739, 1385, 2136, 8778, 1072, 6740, 6012, 20643, 7816, 15693, 6033, 6745, 1252, 5068, 572, 20644, 20645, 15988, 2]
 
-// Module 20647 (clips/ClipsManager)
+// Module 20642 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import UserSettings from "UserSettings" /* 5068 */;
@@ -12,8 +12,8 @@ import SystemAnalyticsStore from "SystemAnalyticsStore" /* 6027 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 6033 */;
 import Constants3 from "Constants" /* 6740 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
-import ClipsExperiment from "ClipsExperiment" /* 15696 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20649 */;
+import ClipsExperiment from "ClipsExperiment" /* 15693 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
@@ -24,7 +24,7 @@ import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6739 */;
 import UserStore from "UserStore" /* 1385 */;
 import ClipsStore from "ClipsStore" /* 2136 */;
-import ClipsConstants from "ClipsConstants" /* 8779 */;
+import ClipsConstants from "ClipsConstants" /* 8778 */;
 import Constants from "Constants" /* 1072 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(15993);
+const isClipsEnabled = tmp(15988);
 function getCodecSurvey() {
   return obj(...arguments);
 }
@@ -513,7 +513,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp7 = tmp6 && classification === tmp.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmp2Result = tmp2(20650);
+            const tmp2Result = tmp2(20645);
             allowDefaultOn = tmp2Result.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp7, enableAutoclipping: tmp7, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };

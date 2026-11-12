@@ -1,9 +1,9 @@
-// Module ID: 14048
-// Function ID: 14049
+// Module ID: 14044
+// Function ID: 14045
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 5114, 1385, 21, 5243, 575, 5850, 11791, 504, 14049, 6854, 5957, 14050, 5866, 1113, 5309, 13212, 4079, 14051, 13211, 7793, 5873, 2]
+// Dependencies: [32, 19, 17, 5114, 1385, 21, 5243, 575, 5850, 11785, 504, 14045, 6854, 5957, 14046, 5866, 1113, 5309, 13206, 4079, 14047, 13205, 7793, 5873, 2]
 
-// Module 14048 (KickConfirm)
+// Module 14044 (KickConfirm)
 import nativeDefault from "native" /* 575 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -74,7 +74,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let tmp7Result3;
   let tmp7Result4;
   let v1Ie87p;
-  const f107853 = () => ({ kicking: false, kickError: false });
+  const f107860 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -107,10 +107,10 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   const conjureServerApp = useConjureServerApp(guildId, result);
   const tmp14 = null != conjureServerApp && !conjureServerApp.targetIsPreview;
   ref = obj.useRef("");
-  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f107853), 2);
+  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f107860), 2);
   const items3 = [stateFromStores, onKick, stateFromStores1];
   let tmp19Result6 = null;
-  stateFromStores(stateFromStores1.useState(f107853), 2);
+  stateFromStores(stateFromStores1.useState(f107860), 2);
   if (null != stateFromStores1) {
     tmp19Result6 = null;
     if (null != stateFromStores) {

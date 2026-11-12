@@ -1,18 +1,18 @@
-// Module ID: 16938
-// Function ID: 16939
+// Module ID: 16933
+// Function ID: 16934
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 8761, 8760, 21, 6270, 16939, 2118, 504, 1377, 18511, 2]
+// Dependencies: [19, 17, 8760, 8759, 21, 6270, 16934, 2118, 504, 1377, 18506, 2]
 // Exports: default
 
-// Module 16938 (DevToolsLazy)
+// Module 16933 (DevToolsLazy)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import KeyCommands from "KeyCommands" /* 6270 */;
 import react from "react" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8761 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8760 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8760 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8759 */;
 import size from "module_2" /* 2 */;
 
 let NSUserDefaultsBridge;
@@ -25,7 +25,7 @@ let obj = {
   eventName: "keyCommandShowDevTools",
   discoverabilityTitle: "Open DevTools Panel",
   onKeyCommand() {
-    const promise = asyncRequire(16939, dependencyMap.paths);
+    const promise = asyncRequire(16934, dependencyMap.paths);
     promise.then((navigateToDevTools) => {
       navigateToDevTools.navigateToDevTools();
     });
@@ -61,7 +61,7 @@ export default function DevToolsLazy() {
   const keyCommands = obj3.useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(18511).default, {});
+      return jsx(tmp(18506).default, {});
     }
   }
   return null;

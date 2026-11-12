@@ -1,10 +1,10 @@
-// Module ID: 9555
-// Function ID: 9556
+// Module ID: 9554
+// Function ID: 9555
 // Name: hooks/usePremiumDiscountOffer
-// Dependencies: [2, 9247]
+// Dependencies: [2, 9246]
 
-// Module 9555 (hooks/usePremiumDiscountOffer)
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 9247 */;
+// Module 9554 (hooks/usePremiumDiscountOffer)
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 9246 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.native.tsx");

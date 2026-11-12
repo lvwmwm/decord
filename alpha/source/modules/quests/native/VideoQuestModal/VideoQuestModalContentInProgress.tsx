@@ -1,9 +1,9 @@
-// Module ID: 17623
-// Function ID: 17624
+// Module ID: 17618
+// Function ID: 17619
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [32, 19, 17, 5275, 1083, 21, 671, 575, 17624, 5243, 1377, 10078, 1652, 5485, 1627, 7351, 5314, 17625, 17640, 17641, 17620, 17642, 6274, 7364, 5866, 17643, 5957, 5873, 10088, 7922, 1113, 12201, 10858, 10064, 15138, 17586, 11192, 5830, 17644, 10857, 17461, 17457, 17459, 12200, 7356, 17619, 5489, 17645, 2118, 10100, 8763, 10068, 10071, 5282, 8768, 5278, 10163, 17646, 10061, 17647, 5283, 2]
+// Dependencies: [32, 19, 17, 5275, 1083, 21, 671, 575, 17619, 5243, 1377, 10077, 1652, 5485, 1627, 7351, 5314, 17620, 17635, 17636, 17615, 17637, 6274, 7364, 5866, 17638, 5957, 5873, 10087, 7922, 1113, 12195, 10852, 10063, 15135, 17581, 11186, 5830, 17639, 10851, 17456, 17452, 17454, 12194, 7356, 17614, 5489, 17640, 2118, 10099, 8762, 10067, 10070, 5282, 8767, 5278, 10161, 17641, 10060, 17642, 5283, 2]
 
-// Module 17623 (VideoQuestModalContentInProgress)
+// Module 17618 (VideoQuestModalContentInProgress)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -11,13 +11,13 @@ import QuestTypes from "QuestTypes" /* 5278 */;
 import AdCreativeType from "AdCreativeType" /* 5282 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import Pressables from "Pressables" /* 7364 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8768 */;
-import QuestUtils from "QuestUtils" /* 10061 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 10068 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10071 */;
-import AssetUtils from "AssetUtils" /* 10078 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10088 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 10163 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8767 */;
+import QuestUtils from "QuestUtils" /* 10060 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 10067 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10070 */;
+import AssetUtils from "AssetUtils" /* 10077 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 10087 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 10161 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -666,7 +666,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
   ({ contentWidth, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
   let tmp = sourceQuestContent;
   let tmp2 = dependencyMap;
-  let obj = sourceQuestContent(17619);
+  let obj = sourceQuestContent(17614);
   const quest = obj.useVideoQuestModalContext().quest;
   items = [quest];
   items1 = [quest];
@@ -686,14 +686,14 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { quest };
-    const tmp2 = asyncRequire(17645, dependencyMap.paths);
+    const tmp2 = asyncRequire(17640, dependencyMap.paths);
     openLazy(tmp2, "transcript-" + quest.id, obj);
   }, items2);
-  let obj2 = sourceQuestContent(10100);
+  let obj2 = sourceQuestContent(10099);
   getQuestImpressionId = obj2.useGetQuestImpressionId();
   const tmp10 = getQuestImpressionId(react.useState(false), 2);
   [tmp11, react] = tmp10;
-  let obj3 = sourceQuestContent(8763);
+  let obj3 = sourceQuestContent(8762);
   const isShareableQuestResult = obj3.isShareableQuest(quest.config);
   let closure_5 = isShareableQuestResult;
   const items3 = [isShareableQuestResult, quest.id, getQuestImpressionId, sourceQuestContent];
@@ -719,7 +719,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
       showShareActionSheet(obj2, "Video Quest Modal - " + quest.id);
     }
   }, items3);
-  const obj4 = sourceQuestContent(17646);
+  const obj4 = sourceQuestContent(17641);
   const videoQuestClickCtaAndMaybeCloseModal = obj4.useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const items4 = [videoQuestClickCtaAndMaybeCloseModal];
   const items5 = [videoQuestClickCtaAndMaybeCloseModal];
@@ -731,12 +731,12 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const obj2 = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj2);
   }, items6);
-  const obj5 = sourceQuestContent(17647);
+  const obj5 = sourceQuestContent(17642);
   const videoExternallyPaused = obj5.useVideoExternallyPaused(quest.id, tmp11);
   const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 5283).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp20 = null == tmp19;
   if (!tmp20) {
-    const tmpResult = tmp(15138);
+    const tmpResult = tmp(15135);
     tmp20 = "portrait" === tmpResult.getVideoOrientation(tmp19);
   }
   const obj6 = { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handleAdvertiserDetailsPress: callback3, handlePrimaryCtaPress: callback4, handleRewardDetailsPress: callback5, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult };

@@ -1,56 +1,30 @@
 // Module ID: 9788
 // Function ID: 9789
-// Dependencies: [42, 41, 93, 95, 98, 158]
+// Dependencies: [9744, 9774]
+// Exports: createClientReportEnvelope
 
 // Module 9788
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 9744 */;
+import _mod9774 from "module_9774" /* 9774 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+export function createClientReportEnvelope(discarded_events, dsn, arg2) {
+  let obj3;
+  let result = arg2;
+  const items = [{ type: "client_report" }, ];
+  if (!arg2) {
+    const obj = _browserPerformanceTimeOriginMode;
+    result = obj.dateTimestampInSeconds();
   }
-}
-class SentryError {
-  constructor(message) {
-    let constructResult;
-    let str = arg1;
-    if (arg1 === undefined) {
-      str = "warn";
-    }
-    const self = this;
-    _classCallCheck(this, SentryError);
-    const items = [message];
-    const obj = _getPrototypeOf(SentryError);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.message = message;
-    tmp3Result.logLevel = str;
-    return tmp3Result;
+  items[1] = { timestamp: result, discarded_events };
+  const createEnvelope = _mod9774.createEnvelope;
+  _mod9774;
+  if (dsn) {
+    obj3 = { dsn };
+    const obj2 = { dsn };
+  } else {
+    obj3 = {};
   }
+  const items1 = [items];
+  return createEnvelope(obj3, items1);
 }
-_inherits(SentryError, _wrapNativeSuper(Error));
-const SentryError_export = _createClass(SentryError);
-
-export { SentryError_export as SentryError };

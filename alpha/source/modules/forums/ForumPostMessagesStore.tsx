@@ -1,9 +1,9 @@
-// Module ID: 8801
-// Function ID: 8802
+// Module ID: 8800
+// Function ID: 8801
 // Name: ForumPostMessagesStore
 // Dependencies: [7225, 1385, 11, 6311, 504, 572, 2]
 
-// Module 8801 (ForumPostMessagesStore)
+// Module 8800 (ForumPostMessagesStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

@@ -1,10 +1,10 @@
-// Module ID: 16449
-// Function ID: 16450
+// Module ID: 16444
+// Function ID: 16445
 // Name: hasPerformanceForKrispFullband
 // Dependencies: [6136, 2]
 // Exports: default
 
-// Module 16449 (hasPerformanceForKrispFullband)
+// Module 16444 (hasPerformanceForKrispFullband)
 import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 6136 */;
 import size from "module_2" /* 2 */;
 

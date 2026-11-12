@@ -1,10 +1,10 @@
-// Module ID: 12842
-// Function ID: 12843
+// Module ID: 12836
+// Function ID: 12837
 // Name: GuildScheduledEventPrompts
-// Dependencies: [19, 21, 5243, 575, 7965, 8041, 7924, 8392, 1113, 12843, 5065, 2166, 2]
+// Dependencies: [19, 21, 5243, 575, 7965, 8041, 7924, 8392, 1113, 12837, 5065, 2166, 2]
 // Exports: ScheduleEventPrompt, StartEventPrompt
 
-// Module 12842 (GuildScheduledEventPrompts)
+// Module 12836 (GuildScheduledEventPrompts)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -75,7 +75,7 @@ export function StartEventPrompt(event) {
     tmp4 = <FormCTA style={tmp.actionBarCTAContainer} onPress={function handleStartEvent() {
       const obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
       const result = obj.openStartGuildEventModal(event, recurrenceId);
-    }} iconSource={recurrenceId(12843)} iconStyle={tmp.iconStyle} iconContainerStyle={items} completed={isLive} title={intl.formatToPlainString(event(1113).t["1vGXqM"], obj3)} subtitle={formatToPlainString(PTebCR, obj4)} />;
+    }} iconSource={recurrenceId(12837)} iconStyle={tmp.iconStyle} iconContainerStyle={items} completed={isLive} title={intl.formatToPlainString(event(1113).t["1vGXqM"], obj3)} subtitle={formatToPlainString(PTebCR, obj4)} />;
     tmp2Result = event(5065);
   }
   return tmp4;

@@ -1,13 +1,13 @@
-// Module ID: 13334
-// Function ID: 13335
+// Module ID: 13328
+// Function ID: 13329
 // Name: AppLauncherFlashList
-// Dependencies: [19, 17, 21, 5535, 13335, 12488, 12489, 7822, 2]
+// Dependencies: [19, 17, 21, 5535, 13329, 12482, 12483, 7822, 2]
 // Exports: useAppLauncherFlashListProps
 
-// Module 13334 (AppLauncherFlashList)
+// Module 13328 (AppLauncherFlashList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useAnimatedScrollLock from "useAnimatedScrollLock" /* 13335 */;
+import useAnimatedScrollLock from "useAnimatedScrollLock" /* 13329 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ class AppLauncherFlashList {
     let tmp6;
     ref = ref.ref;
     let merged = Object.assign(ref, Object.assign({ ref: 0 }));
-    const obj = simultaneousHandlers(12488);
+    const obj = simultaneousHandlers(12482);
     simultaneousHandlers = merged.simultaneousHandlers;
     const items = [simultaneousHandlers];
     const entrypoint = obj.useAppLauncherContext().entrypoint;
@@ -33,7 +33,7 @@ class AppLauncherFlashList {
       const merged1 = Object.assign(merged);
       return <GestureDetector gesture={memo}>{null}</GestureDetector>;
     }), items);
-    if (entrypoint === simultaneousHandlers(12489).AppLauncherEntrypoint.VOICE) {
+    if (entrypoint === simultaneousHandlers(12483).AppLauncherEntrypoint.VOICE) {
       ({ ListHeaderComponent: obj2.ListHeaderComponent, animatedOnScroll: obj2.onScroll, contentContainerStyle: obj2.contentContainerStyle, scrollIndicatorInsets: obj2.scrollIndicatorInsets, renderItem: obj2.renderItem, getItemType: obj2.getItemType, data: obj2.data, automaticallyAdjustsScrollIndicatorInsets: obj2.automaticallyAdjustsScrollIndicatorInsets, keyboardDismissMode: obj2.keyboardDismissMode, keyboardShouldPersistTaps: obj2.keyboardShouldPersistTaps, showsVerticalScrollIndicator: obj2.showsVerticalScrollIndicator, onViewableItemsChanged: obj2.onViewableItemsChanged, viewabilityConfigCallbackPairs: obj2.viewabilityConfigCallbackPairs, animatedProps: obj2.animatedProps } = merged);
       tmp6 = jsx(tmp2(7822).AnimatedFlashList, { renderScrollComponent: memo, ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, animatedProps: null, overScrollMode: "never", ref });
     } else {

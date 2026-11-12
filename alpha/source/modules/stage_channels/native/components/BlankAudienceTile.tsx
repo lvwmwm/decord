@@ -1,13 +1,13 @@
-// Module ID: 13017
-// Function ID: 13018
+// Module ID: 13011
+// Function ID: 13012
 // Name: BlankAudienceTile
-// Dependencies: [19, 17, 21, 1493, 13018, 2]
+// Dependencies: [19, 17, 21, 1493, 13012, 2]
 
-// Module 13017 (BlankAudienceTile)
+// Module 13011 (BlankAudienceTile)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import AudienceTile from "AudienceTile" /* 13018 */;
+import AudienceTile from "AudienceTile" /* 13012 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

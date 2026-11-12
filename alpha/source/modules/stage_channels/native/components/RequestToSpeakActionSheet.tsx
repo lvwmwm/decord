@@ -1,10 +1,10 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 12849
+// Function ID: 12850
 // Name: RequestToSpeakActionSheet
-// Dependencies: [32, 19, 17, 502, 5092, 6843, 21, 5243, 575, 504, 6295, 1113, 12856, 12858, 7379, 6845, 8124, 6770, 5489, 6846, 1187, 12860, 5839, 7852, 7871, 6886, 6880, 5503, 5507, 6274, 7680, 12861, 5866, 12866, 2]
+// Dependencies: [32, 19, 17, 502, 5092, 6843, 21, 5243, 575, 504, 6295, 1113, 12850, 12852, 7379, 6845, 8124, 6770, 5489, 6846, 1187, 12854, 5839, 7852, 7871, 6886, 6880, 5503, 5507, 6274, 7680, 12855, 5866, 12860, 2]
 // Exports: default
 
-// Module 12855 (RequestToSpeakActionSheet)
+// Module 12849 (RequestToSpeakActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
@@ -28,7 +28,7 @@ let c10;
 let c9;
 let obj2;
 let tmp4;
-const AssetRegistryDefault = tmp4(12860);
+const AssetRegistryDefault = tmp4(12854);
 function ManageSelfSpeakerRow(channel) {
   let Icon;
   let MicrophoneArrowRightIcon;
@@ -58,9 +58,9 @@ function ManageSelfSpeakerRow(channel) {
     stringResult = string(t["8Joh+p"]);
   }
   if (tmp8) {
-    MicrophoneArrowRightIcon = tmp(12856).GroupArrowDownIcon;
+    MicrophoneArrowRightIcon = tmp(12850).GroupArrowDownIcon;
   } else {
-    MicrophoneArrowRightIcon = tmp(12858).MicrophoneArrowRightIcon;
+    MicrophoneArrowRightIcon = tmp(12852).MicrophoneArrowRightIcon;
   }
   let obj2 = {
     onPress: function handleSetSelfSpeaker() {
@@ -176,7 +176,7 @@ export default function RequestToSpeakActionSheet(channelId) {
     const obj9 = { hasIcons: true, children: items2 };
     const TableRowGroup = tmp2(7680).TableRowGroup;
     const obj10 = { channel: stateFromStores };
-    items2 = [closure_9(tmp2(12861).RequestToSpeakSwitchRow, obj10), ];
+    items2 = [closure_9(tmp2(12855).RequestToSpeakSwitchRow, obj10), ];
     const obj11 = { channel: stateFromStores };
     items2[1] = closure_9(ManageSelfSpeakerRow, obj11);
     items3 = [closure_10(TableRowGroup, obj9), ];
@@ -193,7 +193,7 @@ export default function RequestToSpeakActionSheet(channelId) {
     items4 = [closure_10(Stack2, obj8), ];
     const _Math = Math;
     const obj16 = { channel: stateFromStores, height: Math.max(first1 - first - 8, 0) };
-    const tmp4Result = tmp4(12866);
+    const tmp4Result = tmp4(12860);
     items4[1] = closure_9(tmp4Result, obj16);
     tmp15 = closure_9(AnalyticsLocationProvider, obj4);
   }

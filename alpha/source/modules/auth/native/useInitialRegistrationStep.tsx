@@ -1,13 +1,13 @@
-// Module ID: 18541
-// Function ID: 18542
+// Module ID: 18536
+// Function ID: 18537
 // Name: useInitialRegistrationStep
-// Dependencies: [19, 502, 6783, 18524, 18523, 504, 6781, 2]
+// Dependencies: [19, 502, 6783, 18519, 18518, 504, 6781, 2]
 // Exports: default
 
-// Module 18541 (useInitialRegistrationStep)
+// Module 18536 (useInitialRegistrationStep)
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6781 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18523 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18524 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18518 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18519 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ConsentStore from "ConsentStore" /* 6783 */;

@@ -1,10 +1,10 @@
-// Module ID: 15580
-// Function ID: 15581
+// Module ID: 15577
+// Function ID: 15578
 // Name: UserProfileOverflowMenuItems
-// Dependencies: [1072, 11993, 1113, 8072, 5489, 11995, 2118, 1260, 6852, 11994, 15581, 15581, 12002, 1377, 12039, 1252, 7877, 5951, 5309, 7883, 2]
+// Dependencies: [1072, 11987, 1113, 8072, 5489, 11989, 2118, 1260, 6852, 11988, 15578, 15578, 11996, 1377, 12033, 1252, 7877, 5951, 5309, 7883, 2]
 // Exports: getBlockMenuItem, getDeveloperCopyMenuItem, getIgnoreMenuItem, getReportMenuItem
 
-// Module 15580 (UserProfileOverflowMenuItems)
+// Module 15577 (UserProfileOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
@@ -16,11 +16,11 @@ import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 68
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7883 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8072 */;
-import ReportModals from "ReportModals" /* 12002 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12039 */;
-import BotReportChooser from "BotReportChooser" /* 15581 */;
+import ReportModals from "ReportModals" /* 11996 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12033 */;
+import BotReportChooser from "BotReportChooser" /* 15578 */;
 import Constants from "Constants" /* 1072 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11993 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11987 */;
 import size from "module_2" /* 2 */;
 
 let avatarURL;
@@ -64,7 +64,7 @@ export function getIgnoreMenuItem(arg0, isBlocked) {
       obj.action = function action() {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
-        const tmp2 = asyncRequire(11995, dependencyMap.paths);
+        const tmp2 = asyncRequire(11989, dependencyMap.paths);
         let obj = {
           userId: require.id,
           channelId: importDefault,
@@ -122,7 +122,7 @@ export function getBlockMenuItem(arg0, isBlocked) {
       action() {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
-          const tmp2 = asyncRequire(11994, dependencyMap.paths);
+          const tmp2 = asyncRequire(11988, dependencyMap.paths);
           let obj = {
             userId: require.id,
             channelId: importDefault,
@@ -171,7 +171,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
           if (user.bot) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             const obj4 = { user, entrypoint, contextualGuildId: tmp3, contextualChannelId: importDefault };
-            const tmp19 = asyncRequire(15581, dependencyMap.paths);
+            const tmp19 = asyncRequire(15578, dependencyMap.paths);
             openLazy(tmp19, BotReportChooser.BOT_REPORT_CHOOSER_KEY, obj4, "replaceAll");
           } else {
             const obj2 = ReportModals;

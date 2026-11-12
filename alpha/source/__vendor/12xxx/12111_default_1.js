@@ -1,11 +1,11 @@
 // Module ID: 12111
 // Function ID: 12112
 // Name: default_1
-// Dependencies: [12093]
+// Dependencies: [12087]
 // Exports: default
 
 // Module 12111 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 12093 */;
+import captureStackTrace2 from "captureStackTrace" /* 12087 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "\u0648\u0631\u0648\u062F\u06CC \u0646\u0627\u0645\u0639\u062A\u0628\u0631: \u0645\u06CC\u200C\u0628\u0627\u06CC\u0633\u062A instanceof " + code.expected + " \u0645\u06CC\u200C\u0628\u0648\u062F\u060C " + tmp48 + " \u062F\u0631\u06CC\u0627\u0641\u062A \u0634\u062F";
+                combined = "\u054D\u056D\u0561\u056C \u0574\u0578\u0582\u057F\u0584\u0561\u0563\u0580\u0578\u0582\u0574\u2024 \u057D\u057A\u0561\u057D\u057E\u0578\u0582\u0574 \u0567\u0580 instanceof " + code.expected + ", \u057D\u057F\u0561\u0581\u057E\u0565\u056C \u0567 " + tmp43;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "\u0648\u0631\u0648\u062F\u06CC \u0646\u0627\u0645\u0639\u062A\u0628\u0631: \u0645\u06CC\u200C\u0628\u0627\u06CC\u0633\u062A " + expected + " \u0645\u06CC\u200C\u0628\u0648\u062F\u060C " + tmp48 + " \u062F\u0631\u06CC\u0627\u0641\u062A \u0634\u062F";
+                combined = "\u054D\u056D\u0561\u056C \u0574\u0578\u0582\u057F\u0584\u0561\u0563\u0580\u0578\u0582\u0574\u2024 \u057D\u057A\u0561\u057D\u057E\u0578\u0582\u0574 \u0567\u0580 " + expected + ", \u057D\u057F\u0561\u0581\u057E\u0565\u056C \u0567 " + tmp43;
               }
               return combined;
             }
@@ -121,123 +121,182 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "\u0648\u0631\u0648\u062F\u06CC \u0646\u0627\u0645\u0639\u062A\u0628\u0631: \u0645\u06CC\u200C\u0628\u0627\u06CC\u0633\u062A " + captureStackTrace.stringifyPrimitive(code.values[0]) + " \u0645\u06CC\u200C\u0628\u0648\u062F";
+                combined1 = "\u054D\u056D\u0561\u056C \u0574\u0578\u0582\u057F\u0584\u0561\u0563\u0580\u0578\u0582\u0574\u2024 \u057D\u057A\u0561\u057D\u057E\u0578\u0582\u0574 \u0567\u0580 " + captureStackTrace.stringifyPrimitive(code.values[1]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "\u06AF\u0632\u06CC\u0646\u0647 \u0646\u0627\u0645\u0639\u062A\u0628\u0631: \u0645\u06CC\u200C\u0628\u0627\u06CC\u0633\u062A \u06CC\u06A9\u06CC \u0627\u0632 " + captureStackTrace.joinValues(code.values, "|") + " \u0645\u06CC\u200C\u0628\u0648\u062F";
+                combined1 = "\u054D\u056D\u0561\u056C \u057F\u0561\u0580\u0562\u0565\u0580\u0561\u056F\u2024 \u057D\u057A\u0561\u057D\u057E\u0578\u0582\u0574 \u0567\u0580 \u0570\u0565\u057F\u0587\u0575\u0561\u056C\u0576\u0565\u0580\u056B\u0581 \u0574\u0565\u056F\u0568\u055D " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
-              let combined2;
-              let str29 = "<";
+              let str38 = "<";
               if (code.inclusive) {
-                str29 = "<=";
+                str38 = "<=";
               }
-              let str30 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str30 == null) {
-                  str30 = "\u0645\u0642\u062F\u0627\u0631";
+                const _Number2 = Number;
+                let many2 = tmp25.unit.many;
+                const _Math2 = Math;
+                const one2 = tmp25.unit.one;
+                if (1 === Math.abs(Number(code.maximum))) {
+                  many2 = one2;
                 }
-                const str36 = code.maximum;
+                let str46 = "";
+                if (code.origin ?? "\u0561\u0580\u056A\u0565\u0584") {
+                  const items = ["\u0561", "\u0565", "\u0568", "\u056B", "\u0578", "\u0578\u0582", "\u0585"];
+                  let str47 = "\u0568";
+                  if (items.includes((code.origin ?? "\u0561\u0580\u056A\u0565\u0584")[(code.origin ?? "\u0561\u0580\u056A\u0565\u0584").length - 1])) {
+                    str47 = "\u0576";
+                  }
+                  str46 = str45 + str47;
+                }
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str36.toString();
-                const str37 = (obj2[code.origin] ?? null).unit ?? "\u0639\u0646\u0635\u0631";
-                combined2 = "\u062E\u06CC\u0644\u06CC \u0628\u0632\u0631\u06AF: " + str30 + " \u0628\u0627\u06CC\u062F " + str29 + str1 + " " + str37 + " \u0628\u0627\u0634\u062F";
+                const str48 = code.maximum;
+                return "\u0549\u0561\u0583\u0561\u0566\u0561\u0576\u0581 \u0574\u0565\u056E \u0561\u0580\u056A\u0565\u0584\u2024 \u057D\u057A\u0561\u057D\u057E\u0578\u0582\u0574 \u0567, \u0578\u0580 " + str46 + " \u056F\u0578\u0582\u0576\u0565\u0576\u0561 " + str38 + str48.toString() + " " + many2;
               } else {
-                let str31 = str30;
-                if (str30 == null) {
-                  str31 = "\u0645\u0642\u062F\u0627\u0631";
+                let str40 = "";
+                if (code.origin ?? "\u0561\u0580\u056A\u0565\u0584") {
+                  const items1 = ["\u0561", "\u0565", "\u0568", "\u056B", "\u0578", "\u0578\u0582", "\u0585"];
+                  let str41 = "\u0568";
+                  if (items1.includes((code.origin ?? "\u0561\u0580\u056A\u0565\u0584")[(code.origin ?? "\u0561\u0580\u056A\u0565\u0584").length - 1])) {
+                    str41 = "\u0576";
+                  }
+                  str40 = str39 + str41;
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str32 = code.maximum;
-                combined2 = "\u062E\u06CC\u0644\u06CC \u0628\u0632\u0631\u06AF: " + str31 + " \u0628\u0627\u06CC\u062F " + str29 + str32.toString() + " \u0628\u0627\u0634\u062F";
+                const str42 = code.maximum;
+                return "\u0549\u0561\u0583\u0561\u0566\u0561\u0576\u0581 \u0574\u0565\u056E \u0561\u0580\u056A\u0565\u0584\u2024 \u057D\u057A\u0561\u057D\u057E\u0578\u0582\u0574 \u0567, \u0578\u0580 " + str40 + " \u056C\u056B\u0576\u056B " + str38 + str42.toString();
               }
-              return combined2;
+              break;
             }
             case "too_small":
             {
-              let combined3;
-              let minimum;
-              let origin;
-              let str21 = ">";
+              let str26 = ">";
               if (code.inclusive) {
-                str21 = ">=";
+                str26 = ">=";
               }
-              ({ origin, minimum } = code);
-              const str56 = minimum.toString();
               if (obj2[code.origin] ?? null) {
+                const _Number = Number;
+                let many = tmp15.unit.many;
+                const _Math = Math;
+                const one = tmp15.unit.one;
+                if (1 === Math.abs(Number(code.minimum))) {
+                  many = one;
+                }
+                const origin = code.origin;
+                let str32 = "";
+                if (origin) {
+                  const items2 = ["\u0561", "\u0565", "\u0568", "\u056B", "\u0578", "\u0578\u0582", "\u0585"];
+                  let str33 = "\u0568";
+                  if (items2.includes(origin[origin.length - 1])) {
+                    str33 = "\u0576";
+                  }
+                  str32 = origin + str33;
+                }
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "\u062E\u06CC\u0644\u06CC \u06A9\u0648\u0686\u06A9: " + origin + " \u0628\u0627\u06CC\u062F " + str21 + str56 + " " + tmp15.unit + " \u0628\u0627\u0634\u062F";
+                const str34 = code.minimum;
+                return "\u0549\u0561\u0583\u0561\u0566\u0561\u0576\u0581 \u0583\u0578\u0584\u0580 \u0561\u0580\u056A\u0565\u0584\u2024 \u057D\u057A\u0561\u057D\u057E\u0578\u0582\u0574 \u0567, \u0578\u0580 " + str32 + " \u056F\u0578\u0582\u0576\u0565\u0576\u0561 " + str26 + str34.toString() + " " + many;
               } else {
+                const origin1 = code.origin;
+                let str27 = "";
+                if (origin1) {
+                  const items3 = ["\u0561", "\u0565", "\u0568", "\u056B", "\u0578", "\u0578\u0582", "\u0585"];
+                  let str28 = "\u0568";
+                  if (items3.includes(origin1[origin1.length - 1])) {
+                    str28 = "\u0576";
+                  }
+                  str27 = origin1 + str28;
+                }
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "\u062E\u06CC\u0644\u06CC \u06A9\u0648\u0686\u06A9: " + origin + " \u0628\u0627\u06CC\u062F " + str21 + str56 + " \u0628\u0627\u0634\u062F";
+                const str29 = code.minimum;
+                return "\u0549\u0561\u0583\u0561\u0566\u0561\u0576\u0581 \u0583\u0578\u0584\u0580 \u0561\u0580\u056A\u0565\u0584\u2024 \u057D\u057A\u0561\u057D\u057E\u0578\u0582\u0574 \u0567, \u0578\u0580 " + str27 + " \u056C\u056B\u0576\u056B " + str26 + str29.toString();
               }
-              return combined3;
+              break;
             }
             case "invalid_format":
             {
-              let combined4;
+              let combined2;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "\u0631\u0634\u062A\u0647 \u0646\u0627\u0645\u0639\u062A\u0628\u0631: \u0628\u0627\u06CC\u062F \u0628\u0627 \"" + code.prefix + "\" \u0634\u0631\u0648\u0639 \u0634\u0648\u062F";
+                combined2 = "\u054D\u056D\u0561\u056C \u057F\u0578\u0572\u2024 \u057A\u0565\u057F\u0584 \u0567 \u057D\u056F\u057D\u057E\u056B \"" + code.prefix + "\"-\u0578\u057E";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "\u0631\u0634\u062A\u0647 \u0646\u0627\u0645\u0639\u062A\u0628\u0631: \u0628\u0627\u06CC\u062F \u0628\u0627 \"" + code.suffix + "\" \u062A\u0645\u0627\u0645 \u0634\u0648\u062F";
+                combined2 = "\u054D\u056D\u0561\u056C \u057F\u0578\u0572\u2024 \u057A\u0565\u057F\u0584 \u0567 \u0561\u057E\u0561\u0580\u057F\u057E\u056B \"" + code.suffix + "\"-\u0578\u057E";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "\u0631\u0634\u062A\u0647 \u0646\u0627\u0645\u0639\u062A\u0628\u0631: \u0628\u0627\u06CC\u062F \u0634\u0627\u0645\u0644 \"" + code.includes + "\" \u0628\u0627\u0634\u062F";
+                combined2 = "\u054D\u056D\u0561\u056C \u057F\u0578\u0572\u2024 \u057A\u0565\u057F\u0584 \u0567 \u057A\u0561\u0580\u0578\u0582\u0576\u0561\u056F\u056B \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "\u0631\u0634\u062A\u0647 \u0646\u0627\u0645\u0639\u062A\u0628\u0631: \u0628\u0627\u06CC\u062F \u0628\u0627 \u0627\u0644\u06AF\u0648\u06CC " + code.pattern + " \u0645\u0637\u0627\u0628\u0642\u062A \u062F\u0627\u0634\u062A\u0647 \u0628\u0627\u0634\u062F";
+                combined2 = "\u054D\u056D\u0561\u056C \u057F\u0578\u0572\u2024 \u057A\u0565\u057F\u0584 \u0567 \u0570\u0561\u0574\u0561\u057A\u0561\u057F\u0561\u057D\u056D\u0561\u0576\u056B " + code.pattern + " \u0571\u0587\u0561\u0579\u0561\u0583\u056B\u0576";
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "" + format + " \u0646\u0627\u0645\u0639\u062A\u0628\u0631";
+                combined2 = "\u054D\u056D\u0561\u056C " + format;
               }
-              return combined4;
+              return combined2;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "\u0639\u062F\u062F \u0646\u0627\u0645\u0639\u062A\u0628\u0631: \u0628\u0627\u06CC\u062F \u0645\u0636\u0631\u0628 " + code.divisor + " \u0628\u0627\u0634\u062F";
+              return "\u054D\u056D\u0561\u056C \u0569\u056B\u057E\u2024 \u057A\u0565\u057F\u0584 \u0567 \u0562\u0561\u0566\u0574\u0561\u057A\u0561\u057F\u056B\u056F \u056C\u056B\u0576\u056B " + code.divisor + "-\u056B";
             }
             case "unrecognized_keys":
             {
-              let str3 = "";
+              let str9 = "";
               if (code.keys.length > 1) {
-                str3 = "\u0647\u0627\u06CC";
+                str9 = "\u0576\u0565\u0580";
               }
               const _HermesInternal3 = HermesInternal;
-              return "\u06A9\u0644\u06CC\u062F" + str3 + " \u0646\u0627\u0634\u0646\u0627\u0633: " + captureStackTrace.joinValues(code.keys, ", ");
+              return "\u0549\u0573\u0561\u0576\u0561\u0579\u057E\u0561\u056E \u0562\u0561\u0576\u0561\u056C\u056B" + str9 + ". " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
+              const origin2 = code.origin;
+              let str5 = "";
+              if (origin2) {
+                const items4 = ["\u0561", "\u0565", "\u0568", "\u056B", "\u0578", "\u0578\u0582", "\u0585"];
+                let str6 = "\u0568";
+                if (items4.includes(origin2[origin2.length - 1])) {
+                  str6 = "\u0576";
+                }
+                str5 = origin2 + str6;
+              }
               const _HermesInternal2 = HermesInternal;
-              return "\u06A9\u0644\u06CC\u062F \u0646\u0627\u0634\u0646\u0627\u0633 \u062F\u0631 " + code.origin;
+              return "\u054D\u056D\u0561\u056C \u0562\u0561\u0576\u0561\u056C\u056B " + str5 + "-\u0578\u0582\u0574";
             }
             case "invalid_union":
             {
-              return "\u0648\u0631\u0648\u062F\u06CC \u0646\u0627\u0645\u0639\u062A\u0628\u0631";
+              return "\u054D\u056D\u0561\u056C \u0574\u0578\u0582\u057F\u0584\u0561\u0563\u0580\u0578\u0582\u0574";
             }
             case "invalid_element":
             {
+              const origin3 = code.origin;
+              let str = "";
+              if (origin3) {
+                const items5 = ["\u0561", "\u0565", "\u0568", "\u056B", "\u0578", "\u0578\u0582", "\u0585"];
+                let str2 = "\u0568";
+                if (items5.includes(origin3[origin3.length - 1])) {
+                  str2 = "\u0576";
+                }
+                str = origin3 + str2;
+              }
               const _HermesInternal = HermesInternal;
-              return "\u0645\u0642\u062F\u0627\u0631 \u0646\u0627\u0645\u0639\u062A\u0628\u0631 \u062F\u0631 " + code.origin;
+              return "\u054D\u056D\u0561\u056C \u0561\u0580\u056A\u0565\u0584 " + str + "-\u0578\u0582\u0574";
             }
             default:
             {
-              return "\u0648\u0631\u0648\u062F\u06CC \u0646\u0627\u0645\u0639\u062A\u0628\u0631";
+              return "\u054D\u056D\u0561\u056C \u0574\u0578\u0582\u057F\u0584\u0561\u0563\u0580\u0578\u0582\u0574";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "\u06A9\u0627\u0631\u0627\u06A9\u062A\u0631", verb: "\u062F\u0627\u0634\u062A\u0647 \u0628\u0627\u0634\u062F" }, file: { unit: "\u0628\u0627\u06CC\u062A", verb: "\u062F\u0627\u0634\u062A\u0647 \u0628\u0627\u0634\u062F" }, array: { unit: "\u0622\u06CC\u062A\u0645", verb: "\u062F\u0627\u0634\u062A\u0647 \u0628\u0627\u0634\u062F" }, set: { unit: "\u0622\u06CC\u062A\u0645", verb: "\u062F\u0627\u0634\u062A\u0647 \u0628\u0627\u0634\u062F" } };
-    closure_1 = { regex: "\u0648\u0631\u0648\u062F\u06CC", email: "\u0622\u062F\u0631\u0633 \u0627\u06CC\u0645\u06CC\u0644", url: "URL", emoji: "\u0627\u06CC\u0645\u0648\u062C\u06CC", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "\u062A\u0627\u0631\u06CC\u062E \u0648 \u0632\u0645\u0627\u0646 \u0627\u06CC\u0632\u0648", date: "\u062A\u0627\u0631\u06CC\u062E \u0627\u06CC\u0632\u0648", time: "\u0632\u0645\u0627\u0646 \u0627\u06CC\u0632\u0648", duration: "\u0645\u062F\u062A \u0632\u0645\u0627\u0646 \u0627\u06CC\u0632\u0648", ipv4: "IPv4 \u0622\u062F\u0631\u0633", ipv6: "IPv6 \u0622\u062F\u0631\u0633", cidrv4: "IPv4 \u062F\u0627\u0645\u0646\u0647", cidrv6: "IPv6 \u062F\u0627\u0645\u0646\u0647", base64: "base64-encoded \u0631\u0634\u062A\u0647", base64url: "base64url-encoded \u0631\u0634\u062A\u0647", json_string: "JSON \u0631\u0634\u062A\u0647", e164: "E.164 \u0639\u062F\u062F", jwt: "JWT", template_literal: "\u0648\u0631\u0648\u062F\u06CC" };
-    let closure_2 = { nan: "NaN", number: "\u0639\u062F\u062F", array: "\u0622\u0631\u0627\u06CC\u0647" };
+    const obj2 = { string: obj3, file: obj4, array: obj5, set: obj6 };
+    closure_1 = { regex: "\u0574\u0578\u0582\u057F\u0584", email: "\u0567\u056C. \u0570\u0561\u057D\u0581\u0565", url: "URL", emoji: "\u0567\u0574\u0578\u057B\u056B", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO \u0561\u0574\u057D\u0561\u0569\u056B\u057E \u0587 \u056A\u0561\u0574", date: "ISO \u0561\u0574\u057D\u0561\u0569\u056B\u057E", time: "ISO \u056A\u0561\u0574", duration: "ISO \u057F\u0587\u0578\u0572\u0578\u0582\u0569\u0575\u0578\u0582\u0576", ipv4: "IPv4 \u0570\u0561\u057D\u0581\u0565", ipv6: "IPv6 \u0570\u0561\u057D\u0581\u0565", cidrv4: "IPv4 \u0574\u056B\u057B\u0561\u056F\u0561\u0575\u0584", cidrv6: "IPv6 \u0574\u056B\u057B\u0561\u056F\u0561\u0575\u0584", base64: "base64 \u0571\u0587\u0561\u0579\u0561\u0583\u0578\u057E \u057F\u0578\u0572", base64url: "base64url \u0571\u0587\u0561\u0579\u0561\u0583\u0578\u057E \u057F\u0578\u0572", json_string: "JSON \u057F\u0578\u0572", e164: "E.164 \u0570\u0561\u0574\u0561\u0580", jwt: "JWT", template_literal: "\u0574\u0578\u0582\u057F\u0584" };
+    let closure_2 = { nan: "NaN", number: "\u0569\u056B\u057E", array: "\u0566\u0561\u0576\u0563\u057E\u0561\u056E" };
     return obj;
   } else {
+    let str = "Trying to call a non-function";
     throw new TypeError("Trying to call a non-function");
   }
 };

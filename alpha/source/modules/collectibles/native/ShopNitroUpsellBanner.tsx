@@ -1,16 +1,16 @@
-// Module ID: 18370
-// Function ID: 18371
+// Module ID: 18365
+// Function ID: 18366
 // Name: ShopNitroUpsellBanner
-// Dependencies: [19, 21, 5243, 575, 671, 5839, 5489, 15381, 2118, 7871, 1113, 7381, 5830, 1092, 1187, 7483, 6274, 5866, 18366, 5873, 10008, 2]
+// Dependencies: [19, 21, 5243, 575, 671, 5839, 5489, 15378, 2118, 7871, 1113, 7381, 5830, 1092, 1187, 7483, 6274, 5866, 18361, 5873, 10007, 2]
 
-// Module 18370 (ShopNitroUpsellBanner)
+// Module 18365 (ShopNitroUpsellBanner)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl5 from "intl" /* 1113 */;
 import useToken from "useToken" /* 5839 */;
 import Card_Card from "Card/Card" /* 7381 */;
-import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 18366 */;
+import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 18361 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -25,7 +25,7 @@ let obj3;
 let obj4;
 let tmp2;
 const LinearGradientDefault = tmp2(5830);
-const NitroUpsellButtonDefault = tmp2(10008);
+const NitroUpsellButtonDefault = tmp2(10007);
 class ShopNitroUpsellBanner {
   constructor(arg0) {
     let XSmallIcon;

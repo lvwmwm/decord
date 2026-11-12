@@ -1,10 +1,10 @@
-// Module ID: 14808
-// Function ID: 14809
+// Module ID: 14804
+// Function ID: 14805
 // Name: useIsRelationshipTypeSpamReportable
 // Dependencies: [5185, 1072, 504, 2]
 // Exports: useIsRelationshipTypeSpamReportable
 
-// Module 14808 (useIsRelationshipTypeSpamReportable)
+// Module 14804 (useIsRelationshipTypeSpamReportable)
 import Constants from "Constants" /* 1072 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 14461
-// Function ID: 14462
+// Module ID: 14457
+// Function ID: 14458
 // Name: DiceRollStore
 // Dependencies: [560, 2]
 // Exports: useDiceRollState
 
-// Module 14461 (DiceRollStore)
+// Module 14457 (DiceRollStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

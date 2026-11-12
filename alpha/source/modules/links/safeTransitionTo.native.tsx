@@ -1,7 +1,7 @@
 // Module ID: 7199
 // Function ID: 7200
 // Name: safeTransitionTo
-// Dependencies: [5, 5114, 1072, 5893, 7200, 1099, 7201, 6206, 1113, 11098, 2819, 14966, 15878, 2]
+// Dependencies: [5, 5114, 1072, 5893, 7200, 1099, 7201, 6206, 1113, 11092, 2819, 14962, 15873, 2]
 // Exports: default
 
 // Module 7199 (safeTransitionTo)
@@ -166,7 +166,7 @@ let obj = function _safeTransitionTo() {
         const maybePerformRoleSubscriptionUpsellRedirect = closure_132_1(closure_132_2[11]).maybePerformRoleSubscriptionUpsellRedirect;
         const tmp68 = closure_132_1(closure_132_2[11]);
         if (c2 == null) {
-          closure_2 = { guildId: "Array" };
+          closure_2 = { guildId: "r" };
         }
         c5 = 2;
         c6 = 1;

@@ -1,19 +1,19 @@
-// Module ID: 9275
-// Function ID: 9276
+// Module ID: 9274
+// Function ID: 9275
 // Name: GuildSpaceMusicSystemMessage
-// Dependencies: [5092, 6881, 1385, 5243, 575, 9112, 9113, 6288, 9122, 1113, 9124, 8588, 9276, 9126, 2]
+// Dependencies: [5092, 6881, 1385, 5243, 575, 9111, 9112, 6288, 9121, 1113, 9123, 8588, 9275, 9125, 2]
 // Exports: createGuildSpaceMusicSystemMessage
 
-// Module 9275 (GuildSpaceMusicSystemMessage)
+// Module 9274 (GuildSpaceMusicSystemMessage)
 import nativeDefault from "native" /* 575 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9112 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 9113 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9122 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9124 */;
-import createCommonMessageDefault from "createCommonMessage" /* 9126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9276 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9111 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 9112 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9121 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9123 */;
+import createCommonMessageDefault from "createCommonMessage" /* 9125 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9275 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6881 */;
 import UserStore from "UserStore" /* 1385 */;

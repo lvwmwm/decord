@@ -1,14 +1,14 @@
-// Module ID: 9370
-// Function ID: 9371
+// Module ID: 9369
+// Function ID: 9370
 // Name: DiceIcon
-// Dependencies: [19, 21, 575, 5956, 9371, 2]
+// Dependencies: [19, 21, 575, 5956, 9370, 2]
 // Exports: DiceIcon
 
-// Module 9370 (DiceIcon)
+// Module 9369 (DiceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 9371 */;
+import AssetRegistry from "AssetRegistry" /* 9370 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

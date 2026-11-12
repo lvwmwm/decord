@@ -1,10 +1,10 @@
-// Module ID: 9112
-// Function ID: 9113
+// Module ID: 9111
+// Function ID: 9112
 // Name: PopularMusicSystemMessageTypes
 // Dependencies: [2]
 // Exports: parseGuildSpaceMusicMessageData
 
-// Module 9112 (PopularMusicSystemMessageTypes)
+// Module 9111 (PopularMusicSystemMessageTypes)
 import size from "module_2" /* 2 */;
 
 const GuildSpaceMusicEvent = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", TOP_SONG_CHANGED: 1, [1]: "TOP_SONG_CHANGED", TOP_ARTIST_CHANGED: 2, [2]: "TOP_ARTIST_CHANGED", TOP_LISTENER_CHANGED: 3, [3]: "TOP_LISTENER_CHANGED" };

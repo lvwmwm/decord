@@ -1,17 +1,17 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14390
+// Function ID: 14391
 // Name: CheckpointGuildStats
-// Dependencies: [17, 6314, 21, 5243, 575, 14387, 12958, 14164, 8004, 2]
+// Dependencies: [17, 6314, 21, 5243, 575, 14383, 12952, 14161, 8004, 2]
 // Exports: default
 
-// Module 14394 (CheckpointGuildStats)
+// Module 14390 (CheckpointGuildStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import ChatIcon from "ChatIcon" /* 8004 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12958 */;
-import CheckpointTextDefault from "CheckpointText" /* 14164 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14387 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12952 */;
+import CheckpointTextDefault from "CheckpointText" /* 14161 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14383 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

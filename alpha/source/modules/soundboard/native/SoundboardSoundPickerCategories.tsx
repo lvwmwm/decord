@@ -1,9 +1,9 @@
-// Module ID: 19779
-// Function ID: 19780
+// Module ID: 19774
+// Function ID: 19775
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 19762, 1385, 1072, 21, 5243, 575, 7164, 7654, 1113, 11301, 5979, 19777, 10257, 7364, 1187, 8027, 5535, 5491, 5492, 504, 2171, 11199, 1627, 5445, 8544, 7822, 2]
+// Dependencies: [19, 17, 19757, 1385, 1072, 21, 5243, 575, 7164, 7654, 1113, 11295, 5979, 19772, 10255, 7364, 1187, 8027, 5535, 5491, 5492, 504, 2171, 11193, 1627, 5445, 8544, 7822, 2]
 
-// Module 19779 (SoundboardSoundPickerCategories)
+// Module 19774 (SoundboardSoundPickerCategories)
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5491 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5492 */;
@@ -11,10 +11,10 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
 import SoundboardTypes from "SoundboardTypes" /* 7164 */;
 import GuildIconDefault from "GuildIcon" /* 7654 */;
 import LockIcon from "LockIcon" /* 8027 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 11199 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11301 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 19762 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19777 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 11193 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11295 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 19757 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19772 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -101,7 +101,7 @@ function SoundCategoryItem(style) {
       const obj3 = { guildName: category.categoryInfo.guild.name };
       name = intl5.formatToPlainString(tmp2(1113).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = authStore(tmp2(10257).TrophyIcon, obj4);
+      tmp7 = authStore(tmp2(10255).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }

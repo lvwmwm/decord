@@ -1,10 +1,10 @@
-// Module ID: 12362
-// Function ID: 12363
+// Module ID: 12356
+// Function ID: 12357
 // Name: useMessagePreviewHeight
 // Dependencies: [560, 1259, 2]
 // Exports: setMesssagePreviewCollapsedHeight, setMesssagePreviewExpandedHeight, setMesssagePreviewHeight, useMessagePreviewCollapsedheight, useMessagePreviewExpandedHeight
 
-// Module 12362 (useMessagePreviewHeight)
+// Module 12356 (useMessagePreviewHeight)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

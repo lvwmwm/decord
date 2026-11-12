@@ -1,10 +1,10 @@
-// Module ID: 14572
-// Function ID: 14573
+// Module ID: 14568
+// Function ID: 14569
 // Name: getNextResourceChannel
 // Dependencies: [7017, 504, 2]
 // Exports: default, usePreviousAndNextResourceChannel
 
-// Module 14572 (getNextResourceChannel)
+// Module 14568 (getNextResourceChannel)
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 

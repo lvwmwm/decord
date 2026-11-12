@@ -1,10 +1,10 @@
-// Module ID: 18751
-// Function ID: 18752
+// Module ID: 18746
+// Function ID: 18747
 // Name: useIsGuildThemePerkEnabled
 // Dependencies: [5114, 5460, 1072, 504, 5464, 2]
 // Exports: default
 
-// Module 18751 (useIsGuildThemePerkEnabled)
+// Module 18746 (useIsGuildThemePerkEnabled)
 import Constants from "Constants" /* 1072 */;
 import Powerups from "Powerups" /* 5464 */;
 import GuildStore from "GuildStore" /* 5114 */;

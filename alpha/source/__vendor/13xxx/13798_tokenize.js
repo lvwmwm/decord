@@ -1,30 +1,47 @@
 // Module ID: 13798
 // Function ID: 13799
 // Name: tokenize
-// Dependencies: [13730, 13726]
+// Dependencies: [13726, 13770]
 
 // Module 13798 (tokenize)
-import keys2 from "keys2" /* 13726 */;
-import tokenize from "tokenize" /* 13730 */;
+import tokenize from "tokenize" /* 13726 */;
+import tokenize2 from "tokenize" /* 13770 */;
 
-let obj2;
-const Percentage = tokenize.TYPE.Percentage;
-let obj = {
-  name: "Percentage",
-  structure: obj2,
-  parse() {
-    const tokenStart = this.scanner.tokenStart;
-    const obj = keys2;
-    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
-    this.eat(Percentage);
-    const obj2 = { type: "Percentage", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult) };
-    return obj2;
-  },
-  generate(value) {
-    this.chunk(value.value);
-    this.chunk("%");
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracket, true);
+}
+function consumePrelude() {
+  const self = this;
+  const SelectorListResult = this.SelectorList();
+  const tmp2 = "Raw" !== SelectorListResult.type && false === self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket;
+  if (tmp2) {
+    self.error();
   }
+  return SelectorListResult;
+}
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+let obj = {
+  name: "Rule",
+  structure: { prelude: ["SelectorList", "Raw"], block: ["Block"] },
+  parse() {
+    let BlockResult;
+    let parseWithFallbackResult;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    if (this.parseRulePrelude) {
+      parseWithFallbackResult = self.parseWithFallback(consumePrelude, consumeRaw);
+    } else {
+      parseWithFallbackResult = consumeRaw.call(self, tmp);
+    }
+    const obj = { type: "Rule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), prelude: parseWithFallbackResult, block: BlockResult };
+    BlockResult = self.Block(true);
+    return obj;
+  },
+  generate(prelude) {
+    this.node(prelude.prelude);
+    this.node(prelude.block);
+  },
+  walkContext: "rule"
 };
-obj2 = { value: String };
 
 export default obj;

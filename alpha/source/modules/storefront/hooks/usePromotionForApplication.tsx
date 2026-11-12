@@ -1,11 +1,11 @@
-// Module ID: 9378
-// Function ID: 9379
+// Module ID: 9377
+// Function ID: 9378
 // Name: usePromotionForApplication
-// Dependencies: [9349, 504, 2]
+// Dependencies: [9348, 504, 2]
 // Exports: default
 
-// Module 9378 (usePromotionForApplication)
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9349 */;
+// Module 9377 (usePromotionForApplication)
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9348 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

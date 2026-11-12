@@ -1,10 +1,10 @@
-// Module ID: 20633
-// Function ID: 20634
+// Module ID: 20628
+// Function ID: 20629
 // Name: GuildRoleSubscriptionTierTemplateActionCreators
 // Dependencies: [5, 1072, 572, 1282, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 20633 (GuildRoleSubscriptionTierTemplateActionCreators)
+// Module 20628 (GuildRoleSubscriptionTierTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

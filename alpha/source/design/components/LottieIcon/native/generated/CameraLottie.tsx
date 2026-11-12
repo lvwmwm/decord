@@ -1,13 +1,13 @@
-// Module ID: 12888
-// Function ID: 12889
+// Module ID: 12882
+// Function ID: 12883
 // Name: CameraLottie
-// Dependencies: [19, 21, 9982, 12889, 2]
+// Dependencies: [19, 21, 9981, 12883, 2]
 // Exports: CameraLottie
 
-// Module 12888 (CameraLottie)
+// Module 12882 (CameraLottie)
 import Fragment from "Fragment" /* 21 */;
-import LottieIcon2 from "LottieIcon" /* 9982 */;
-import AssetRegistry from "AssetRegistry" /* 12889 */;
+import LottieIcon2 from "LottieIcon" /* 9981 */;
+import AssetRegistry from "AssetRegistry" /* 12883 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

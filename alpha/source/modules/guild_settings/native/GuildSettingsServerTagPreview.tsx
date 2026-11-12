@@ -1,10 +1,10 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16230
+// Function ID: 16231
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1385, 8344, 21, 5243, 575, 504, 6288, 1411, 16236, 5866, 1113, 6274, 5957, 16237, 10587, 16238, 16282, 5873, 7381, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 8344, 21, 5243, 575, 504, 6288, 1411, 16231, 5866, 1113, 6274, 5957, 16232, 10585, 16233, 16277, 5873, 7381, 2]
 // Exports: default
 
-// Module 16235 (GuildSettingsServerTagPreview)
+// Module 16230 (GuildSettingsServerTagPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildTagConstants from "GuildTagConstants" /* 8344 */;
@@ -188,7 +188,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   let obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ message: arr4[0], unfocused: arr4[1] } = tmp);
-  const obj6 = { source: tmp4(16237), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj6 = { source: tmp4(16232), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result = tmp4(5957);
   items4 = [tmp17(tmp4Result, obj6), ];
   const obj7 = { style: tmp.messageBody, children: items5 };
@@ -213,10 +213,10 @@ export default function GuildSettingsServerTagPreview(guildId) {
   if (tmp17Result3) {
     const obj13 = { guildTag: tag, guildBadge: tmp17Result };
     tmp17Result = undefined;
-    const BaseGuildTagChiplet = tmp2(10587).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp2(10585).BaseGuildTagChiplet;
     if (null != badge) {
       size = { badge, primaryTintColor: primaryColor, secondaryTintColor: secondaryColor, width: null, height: null };
-      const GuildBadge = tmp2(16238).GuildBadge;
+      const GuildBadge = tmp2(16233).GuildBadge;
       ({ SIZE_12: obj15.width, SIZE_12: obj15.height } = GuildTagBadgeSize);
       tmp17Result = tmp17(GuildBadge, size);
     }
@@ -233,7 +233,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const obj16 = { style: items10, children: items11 };
   items10 = [, ];
   ({ message: arr11[0], unfocused: arr11[1] } = tmp);
-  const obj17 = { source: tmp4(16282), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj17 = { source: tmp4(16277), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result2 = tmp4(5957);
   items11 = [tmp17(tmp4Result2, obj17), ];
   const obj18 = { style: tmp.messageBody, children: items12 };

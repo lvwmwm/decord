@@ -1,10 +1,10 @@
-// Module ID: 17473
-// Function ID: 17474
+// Module ID: 17468
+// Function ID: 17469
 // Name: BountiesModalTimer
-// Dependencies: [19, 17, 21, 5879, 1652, 8197, 5243, 575, 1377, 5485, 5866, 10808, 2]
+// Dependencies: [19, 17, 21, 5879, 1652, 8197, 5243, 575, 1377, 5485, 5866, 10802, 2]
 // Exports: default
 
-// Module 17473 (BountiesModalTimer)
+// Module 17468 (BountiesModalTimer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;

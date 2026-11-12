@@ -1,14 +1,14 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17041
+// Function ID: 17042
 // Name: useTryItOutProfileTheme
-// Dependencies: [8476, 8416, 504, 8524, 9335, 8472, 575, 2]
+// Dependencies: [8476, 8416, 504, 8524, 9334, 8472, 575, 2]
 // Exports: default
 
-// Module 17046 (useTryItOutProfileTheme)
+// Module 17041 (useTryItOutProfileTheme)
 import get_initialized from "get initialized" /* 504 */;
 import useDisplayProfileDefault from "useDisplayProfile" /* 8416 */;
 import useProfileThemeDefault from "useProfileTheme" /* 8524 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 9335 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 9334 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8476 */;
 import size from "module_2" /* 2 */;
 

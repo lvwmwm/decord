@@ -1,15 +1,15 @@
-// Module ID: 19328
-// Function ID: 19329
+// Module ID: 19323
+// Function ID: 19324
 // Name: SmartSearchSkeleton
-// Dependencies: [19, 17, 13251, 21, 4302, 5243, 575, 5257, 1113, 13250, 13667, 19316, 2]
+// Dependencies: [19, 17, 13245, 21, 4302, 5243, 575, 5257, 1113, 13244, 13661, 19311, 2]
 
-// Module 19328 (SmartSearchSkeleton)
+// Module 19323 (SmartSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4302 from "module_4302" /* 4302 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19316 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19311 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 13251 */;
+import AILoaderConstants from "AILoaderConstants" /* 13245 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -70,9 +70,9 @@ const memoResult = react.memo(function SmartSearchSkeleton(isCollapsed) {
   }, items);
   let obj = { style: tmp.block, children: items2 };
   let obj2 = { style: tmp.header, children: items1 };
-  items1 = [closure_7(reducedMotion(13250).AILoader, { size: 12, color: "interactive-text-default" }), ];
+  items1 = [closure_7(reducedMotion(13244).AILoader, { size: 12, color: "interactive-text-default" }), ];
   const obj3 = { text: memo, variant: "body-sm/semibold", color: "interactive-text-default", delay: memo1.shimmerDelayMs, initialDelay: memo1.shimmerInitialDelayMs, duration: memo1.shimmerDurationMs, style: tmp.label };
-  items1[1] = closure_7(reducedMotion(13667).AIShimmer, obj3);
+  items1[1] = closure_7(reducedMotion(13661).AIShimmer, obj3);
   items2 = [closure_8(View, obj2), ];
   let num = 6;
   const _Array = Array;

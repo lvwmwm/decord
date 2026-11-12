@@ -1,12 +1,12 @@
-// Module ID: 18309
-// Function ID: 18310
+// Module ID: 18304
+// Function ID: 18305
 // Name: DesignSystemSegmentedControlSetting
-// Dependencies: [9136, 1072, 12317, 18310, 2]
+// Dependencies: [9135, 1072, 12311, 18305, 2]
 
-// Module 18309 (DesignSystemSegmentedControlSetting)
+// Module 18304 (DesignSystemSegmentedControlSetting)
 import Constants from "Constants" /* 1072 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

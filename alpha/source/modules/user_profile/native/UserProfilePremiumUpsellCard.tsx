@@ -1,18 +1,18 @@
-// Module ID: 17068
-// Function ID: 17069
+// Module ID: 17063
+// Function ID: 17064
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1072, 21, 7871, 5243, 16996, 5866, 1499, 7743, 1113, 9540, 7852, 9513, 10891, 1627, 2]
+// Dependencies: [19, 1072, 21, 7871, 5243, 16991, 5866, 1499, 7743, 1113, 9539, 7852, 9512, 10885, 1627, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 17068 (UserProfilePremiumUpsellCard)
+// Module 17063 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7743 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16996 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9512 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10885 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16991 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -54,7 +54,7 @@ function GetNitroCard(style) {
   let analyticsLocations;
   let tmp = analyticsLocations;
   style = style.style;
-  let obj = analyticsLocations(9540);
+  let obj = analyticsLocations(9539);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride();
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   items = [analyticsLocations];

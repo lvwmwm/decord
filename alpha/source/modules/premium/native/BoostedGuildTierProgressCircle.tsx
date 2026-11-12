@@ -1,17 +1,17 @@
-// Module ID: 15269
-// Function ID: 15270
+// Module ID: 15266
+// Function ID: 15267
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 15270, 15274, 15275, 15276, 9175, 5957, 9169, 13242, 5866, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 15267, 15271, 15272, 15273, 9174, 5957, 9168, 13236, 5866, 2]
 // Exports: default
 
-// Module 15269 (BoostedGuildTierProgressCircle)
+// Module 15266 (BoostedGuildTierProgressCircle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 9169 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 9175 */;
-import ProgressCircleDefault from "ProgressCircle" /* 13242 */;
-import Tier048Px from "Tier048Px" /* 15270 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 9168 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 9174 */;
+import ProgressCircleDefault from "ProgressCircle" /* 13236 */;
+import Tier048Px from "Tier048Px" /* 15267 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -75,11 +75,11 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       if (guild.premiumTier !== hasOwnProperty.NONE) {
         const premiumTier = guild.premiumTier;
         if (hasOwnProperty.TIER_1 === premiumTier) {
-          tmp2Result4 = tmp2(15274);
+          tmp2Result4 = tmp2(15271);
         } else if (hasOwnProperty.TIER_2 === premiumTier) {
-          tmp2Result4 = tmp2(15275);
+          tmp2Result4 = tmp2(15272);
         } else if (hasOwnProperty.TIER_3 === premiumTier) {
-          tmp2Result4 = tmp2(15276);
+          tmp2Result4 = tmp2(15273);
         }
       }
       const obj5 = { source: tmp2Result4, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };

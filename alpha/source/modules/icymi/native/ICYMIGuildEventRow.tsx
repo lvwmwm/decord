@@ -1,23 +1,23 @@
-// Module ID: 19159
-// Function ID: 19160
+// Module ID: 19154
+// Function ID: 19155
 // Name: ICYMIGuildEventRow
-// Dependencies: [19, 17, 6966, 5092, 5114, 21, 19097, 575, 7914, 1113, 7906, 5891, 7909, 8351, 10150, 7899, 7168, 7902, 19138, 11, 5866, 8356, 7372, 1187, 504, 2]
+// Dependencies: [19, 17, 6966, 5092, 5114, 21, 19092, 575, 7914, 1113, 7906, 5891, 7909, 8351, 10148, 7899, 7168, 7902, 19133, 11, 5866, 8356, 7372, 1187, 504, 2]
 // Exports: default
 
-// Module 19159 (ICYMIGuildEventRow)
+// Module 19154 (ICYMIGuildEventRow)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import transitionToGuild from "transitionToGuild" /* 7168 */;
 import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 7899 */;
 import ScheduleUtils from "ScheduleUtils" /* 7906 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10150 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10148 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6966 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19097 */;
+import createICYMIStyles from "createICYMIStyles" /* 19092 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -117,7 +117,7 @@ function ICYMIGuildEventRow(event) {
   }
   let obj5 = { actionLabel: intl.string(event(1113).t["6pFsLQ"]), id: event.id, interactionType: "guild_event", channelId: id1, guildId: guild.id, timestamp: tmp2Result4.extractTimestamp(event.id), onHeaderPress: callback1, onHeaderLongPress: callback1, children: closure_12(tmp23, obj6) };
   const tmp2ResultResult = tmp2Result(guild_id, id, nextRecurrenceIdInEvent);
-  const tmp2Result3 = guild(19138);
+  const tmp2Result3 = guild(19133);
   intl = tmp8(1113).intl;
   id1 = undefined;
   if (channel != null) {

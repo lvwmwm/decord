@@ -1,10 +1,10 @@
-// Module ID: 13102
-// Function ID: 13103
+// Module ID: 13096
+// Function ID: 13097
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 5149, 1072, 21, 5243, 575, 504, 6955, 5489, 1113, 4079, 7885, 5866, 7847, 7955, 7759, 7680, 7667, 13103, 13099, 13109, 13091, 13111, 7379, 13112, 2]
+// Dependencies: [5, 32, 19, 17, 5149, 1072, 21, 5243, 575, 504, 6955, 5489, 1113, 4079, 7885, 5866, 7847, 7955, 7759, 7680, 7667, 13097, 13093, 13103, 13085, 13105, 7379, 13106, 2]
 // Exports: default
 
-// Module 13102 (useConjureProjectSettingsForm)
+// Module 13096 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -303,7 +303,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   handleRoleSelectionChange = undefined;
   const tmp = closure_12();
   const tmp3 = dependencyMap;
-  const tmp4 = selectedRoleIds(13103)(projectId, arg1);
+  const tmp4 = selectedRoleIds(13097)(projectId, arg1);
   ({ liveReload, isGuildCollaboration, selectedRoleIds } = tmp4);
   ({ supportsVisibility, saving, saveError, experimentalError, handleFlagChange: c2, handleRoleSelectionChange } = tmp4);
   const ensureAppInGuild = tmp4.ensureAppInGuild;
@@ -411,11 +411,11 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   items1 = [tmp11, , , , , , , , ];
   if (isConjureManagedCopy) {
     let obj5 = { projectId };
-    tmp13Result = tmp13(tmp2(13109), obj5);
+    tmp13Result = tmp13(tmp2(13103), obj5);
     tmp15 = tmp13;
   } else {
     let obj6 = { iconURL, onIconChange: handleIconChange, name, nameError, onNameChange: handleNameChange, description, onDescriptionChange: handleDescriptionChange, disabled: tmp5 };
-    tmp13Result = tmp13(tmp6(13091).ConjureAppIdentitySection, obj6);
+    tmp13Result = tmp13(tmp6(13085).ConjureAppIdentitySection, obj6);
     tmp15 = tmp13;
   }
   items1[1] = tmp13Result;
@@ -444,7 +444,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let tmp15Result8 = null;
   if (!flag) {
     const obj9 = { projectId };
-    tmp15Result8 = tmp15(tmp2(13111), obj9);
+    tmp15Result8 = tmp15(tmp2(13105), obj9);
   }
   items1[3] = tmp15Result8;
   let tmp15Result9 = null;

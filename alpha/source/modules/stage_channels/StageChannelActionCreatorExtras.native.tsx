@@ -1,7 +1,7 @@
 // Module ID: 6840
 // Function ID: 6841
 // Name: StageChannelActionCreatorExtras
-// Dependencies: [6838, 6841, 6843, 1072, 5489, 6844, 2118, 15953, 15954, 15959, 11891, 1108, 6837, 5429, 6785, 12623, 8410, 12822, 2]
+// Dependencies: [6838, 6841, 6843, 1072, 5489, 6844, 2118, 15948, 15949, 15954, 11885, 1108, 6837, 5429, 6785, 12617, 8410, 12816, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
 // Module 6840 (StageChannelActionCreatorExtras)
@@ -13,8 +13,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6837 */;
 import useIsOnStartStageScreenStore from "useIsOnStartStageScreenStore" /* 6841 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11891 */;
-import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 12822 */;
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11885 */;
+import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 12816 */;
 import VoicePanelStore from "VoicePanelStore" /* 6838 */;
 import StageChannelsConstants from "StageChannelsConstants" /* 6843 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ function openStageChannel(channel) {
       if (!tmpResult2.isModalOpen(voiceChannelKey)) {
         const obj3 = { channel };
         const obj5 = ModalActionCreatorsDefault;
-        obj5.pushLazy(asyncRequire(12623, tmp2.paths), obj3, voiceChannelKey);
+        obj5.pushLazy(asyncRequire(12617, tmp2.paths), obj3, voiceChannelKey);
       }
     }
   }
@@ -63,17 +63,17 @@ export function openEndGuildEventConfirmationModal() {
 export function openStageBlockedUsersSheet(channel, onAccept) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel, onAccept };
-  obj.openLazy(asyncRequire(15953, dependencyMap.paths), metroRequire, obj2);
+  obj.openLazy(asyncRequire(15948, dependencyMap.paths), metroRequire, obj2);
 }
 export function openStageSettingsSheet(channelId, onOpenRTCDebugOverlay) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channelId, onOpenRTCDebugOverlay };
-  obj.openLazy(asyncRequire(15954, dependencyMap.paths), metroImportDefault, obj2);
+  obj.openLazy(asyncRequire(15949, dependencyMap.paths), metroImportDefault, obj2);
 }
 export function openEndStageModal(channel) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(15959, dependencyMap.paths), metroImportAll, obj2);
+  obj.openLazy(asyncRequire(15954, dependencyMap.paths), metroImportAll, obj2);
 }
 export { openStageChannel };
 export function showPlatformUserProfile(arg0) {

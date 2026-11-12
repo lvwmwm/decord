@@ -1,10 +1,10 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12047
+// Function ID: 12048
 // Name: UserProfileAddGameActionSheet
-// Dependencies: [32, 19, 17, 502, 12030, 8413, 21, 5243, 575, 7379, 5850, 7758, 504, 12054, 7290, 12055, 10429, 12058, 12056, 12057, 12029, 5252, 1113, 6268, 8480, 7013, 5489, 12052, 5503, 7847, 7759, 7354, 5866, 7764, 2]
+// Dependencies: [32, 19, 17, 502, 12024, 8413, 21, 5243, 575, 7379, 5850, 7758, 504, 12048, 7290, 12049, 10427, 12052, 12050, 12051, 12023, 5252, 1113, 6268, 8480, 7013, 5489, 12046, 5503, 7847, 7759, 7354, 5866, 7764, 2]
 // Exports: default
 
-// Module 12053 (UserProfileAddGameActionSheet)
+// Module 12047 (UserProfileAddGameActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -15,12 +15,12 @@ import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7290 */;
 import TableRow from "TableRow" /* 7379 */;
 import Constants from "Constants" /* 8413 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8480 */;
-import WidgetUtils from "WidgetUtils" /* 12029 */;
-import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 12052 */;
+import WidgetUtils from "WidgetUtils" /* 12023 */;
+import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 12046 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WidgetStore from "WidgetStore" /* 12030 */;
+import WidgetStore from "WidgetStore" /* 12024 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

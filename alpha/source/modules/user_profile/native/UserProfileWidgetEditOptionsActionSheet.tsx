@@ -1,10 +1,10 @@
-// Module ID: 12038
-// Function ID: 12039
+// Module ID: 12032
+// Function ID: 12033
 // Name: UserProfileWidgetEditOptionsActionSheet
-// Dependencies: [19, 502, 8413, 21, 7294, 12029, 8480, 5252, 1113, 5977, 6268, 5489, 12037, 12039, 7885, 7847, 7680, 7379, 2]
+// Dependencies: [19, 502, 8413, 21, 7294, 12023, 8480, 5252, 1113, 5977, 6268, 5489, 12031, 12033, 7885, 7847, 7680, 7379, 2]
 // Exports: default
 
-// Module 12038 (UserProfileWidgetEditOptionsActionSheet)
+// Module 12032 (UserProfileWidgetEditOptionsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 8413 */;
 import react_mod from "react" /* 19 */;

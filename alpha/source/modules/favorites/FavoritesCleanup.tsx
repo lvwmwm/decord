@@ -1,16 +1,16 @@
-// Module ID: 10910
-// Function ID: 10911
+// Module ID: 10904
+// Function ID: 10905
 // Name: FavoritesCleanup
-// Dependencies: [5, 5096, 5092, 5114, 5175, 6952, 5095, 5105, 1083, 1196, 10911, 1089, 7005, 2]
+// Dependencies: [5, 5096, 5092, 5114, 5175, 6952, 5095, 5105, 1083, 1196, 10905, 1089, 7005, 2]
 // Exports: getAutoAddedThreadsCategoryIds, getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 10910 (FavoritesCleanup)
+// Module 10904 (FavoritesCleanup)
 import Constants from "Constants" /* 1083 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import ChannelRecord from "ChannelRecord" /* 5096 */;
 import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 7005 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 10911 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 10905 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;

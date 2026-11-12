@@ -1,10 +1,10 @@
-// Module ID: 13160
-// Function ID: 13161
+// Module ID: 13154
+// Function ID: 13155
 // Name: TabItem
-// Dependencies: [19, 17, 21, 1652, 5243, 575, 5876, 5866, 1705, 13161, 1377, 1113, 9419, 2]
+// Dependencies: [19, 17, 21, 1652, 5243, 575, 5876, 5866, 1705, 13155, 1377, 1113, 9418, 2]
 // Exports: TabItem
 
-// Module 13160 (TabItem)
+// Module 13154 (TabItem)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
@@ -220,7 +220,7 @@ export function TabItem(arg0) {
   items2[1] = { flexGrow: num };
   const merged1 = Object.assign(merged);
   formatToPlainStringResult = undefined;
-  tmp3Result = index(13161);
+  tmp3Result = index(13155);
   const tmp3Result2 = index(1377);
   if (tmp3Result2.isAndroid()) {
     const intl = tmp3(1113).intl;
@@ -238,7 +238,7 @@ export function TabItem(arg0) {
   if (null != indicatorDot) {
     let str = "primary";
     const obj5 = { style: tmp2.indicatorDot, children: closure_5(IndicatorDot, obj6) };
-    IndicatorDot = tmp3(9419).IndicatorDot;
+    IndicatorDot = tmp3(9418).IndicatorDot;
     const tmp18 = closure_4;
     if ("overlay" === variant) {
       str = "neutral";

@@ -1,10 +1,10 @@
-// Module ID: 18727
-// Function ID: 18728
+// Module ID: 18722
+// Function ID: 18723
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 5244, 5490, 5997, 1072, 21, 8995, 5484, 5250, 5881, 18728, 5117, 18700, 5998, 5839, 575, 5879, 10509, 5243, 1652, 10204, 18729, 1493, 504, 1500, 5876, 5877, 16229, 1411, 1113, 5957, 18770, 2]
+// Dependencies: [19, 17, 5244, 5490, 5997, 1072, 21, 8994, 5484, 5250, 5881, 18723, 5117, 18695, 5998, 5839, 575, 5879, 10507, 5243, 1652, 10202, 18724, 1493, 504, 1500, 5876, 5877, 16224, 1411, 1113, 5957, 18765, 2]
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 18727 (RedesignGuildHeader)
+// Module 18722 (RedesignGuildHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
@@ -16,13 +16,13 @@ import spring_spring from "spring/spring" /* 5876 */;
 import springPresets from "springPresets" /* 5877 */;
 import useFontScale from "useFontScale" /* 5881 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5998 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8995 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10204 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10509 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 16229 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 18700 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 18728 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18729 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8994 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10202 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10507 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 16224 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 18695 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 18723 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18724 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;

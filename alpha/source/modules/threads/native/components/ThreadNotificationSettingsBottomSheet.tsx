@@ -1,13 +1,13 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 11829
+// Function ID: 11830
 // Name: ThreadNotificationSettingsBottomSheet
-// Dependencies: [1112, 21, 7003, 7885, 7847, 1113, 7679, 8798, 7681, 2]
+// Dependencies: [1112, 21, 7003, 7885, 7847, 1113, 7679, 8797, 7681, 2]
 // Exports: default
 
-// Module 11835 (ThreadNotificationSettingsBottomSheet)
+// Module 11829 (ThreadNotificationSettingsBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8798 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8797 */;
 import size from "module_2" /* 2 */;
 
 let setting;

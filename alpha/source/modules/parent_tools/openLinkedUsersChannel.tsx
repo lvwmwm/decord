@@ -1,10 +1,10 @@
-// Module ID: 9554
-// Function ID: 9555
+// Module ID: 9553
+// Function ID: 9554
 // Name: openLinkedUsersChannel
 // Dependencies: [5, 5092, 6000, 8069, 2]
 // Exports: default
 
-// Module 9554 (openLinkedUsersChannel)
+// Module 9553 (openLinkedUsersChannel)
 import transitionToChannel from "transitionToChannel" /* 6000 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

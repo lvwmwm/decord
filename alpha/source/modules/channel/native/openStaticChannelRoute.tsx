@@ -1,10 +1,10 @@
-// Module ID: 12376
-// Function ID: 12377
+// Module ID: 12370
+// Function ID: 12371
 // Name: openStaticChannelRoute
-// Dependencies: [5155, 5149, 5114, 5099, 1072, 7155, 7800, 6785, 12377, 2118, 7199, 5489, 12390, 12399, 1380, 2]
+// Dependencies: [5155, 5149, 5114, 5099, 1072, 7155, 7800, 6785, 12371, 2118, 7199, 5489, 12384, 12393, 1380, 2]
 // Exports: default
 
-// Module 12376 (openStaticChannelRoute)
+// Module 12370 (openStaticChannelRoute)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ChannelConstants from "ChannelConstants" /* 5099 */;
@@ -44,14 +44,14 @@ export default function openStaticChannelRoute(arg0) {
         if (features3.has(metroImportDefault.COMMUNITY)) {
           const obj2 = { guildId, defaultTab: GuildOnboardingTab.BROWSE };
           const obj8 = ModalActionCreatorsDefault;
-          obj8.pushLazy(asyncRequire(12377, dependencyMap.paths), obj2, closure_10);
+          obj8.pushLazy(asyncRequire(12371, dependencyMap.paths), obj2, closure_10);
         }
       } else if ("customize" === staticRoute) {
         const features2 = guild.features;
         if (features2.has(metroImportDefault.COMMUNITY)) {
           const obj4 = { guildId, defaultTab: GuildOnboardingTab.CUSTOMIZE };
           const obj6 = ModalActionCreatorsDefault;
-          obj6.pushLazy(asyncRequire(12377, dependencyMap.paths), obj4, closure_10);
+          obj6.pushLazy(asyncRequire(12371, dependencyMap.paths), obj4, closure_10);
         }
       } else {
         if ("home" !== staticRoute) {
@@ -68,7 +68,7 @@ export default function openStaticChannelRoute(arg0) {
                       const _HermesInternal = HermesInternal;
                       ActionSheetActionCreatorsDefault;
                       const obj5 = { role, guildId };
-                      const tmp10 = asyncRequire(12390, dependencyMap.paths);
+                      const tmp10 = asyncRequire(12384, dependencyMap.paths);
                       openLazy(tmp10, "GuildRoleConnectionsConnectAccountsActionSheet-" + role.id, obj5);
                     }
                   }
@@ -76,7 +76,7 @@ export default function openStaticChannelRoute(arg0) {
               }
               const obj7 = { guildId };
               const obj3 = ModalActionCreatorsDefault;
-              obj3.pushLazy(asyncRequire(12399, dependencyMap.paths), obj7);
+              obj3.pushLazy(asyncRequire(12393, dependencyMap.paths), obj7);
             } else {
               const obj = GlobalUtils;
               obj.assertNever(staticRoute);

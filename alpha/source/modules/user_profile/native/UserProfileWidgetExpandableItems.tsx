@@ -1,10 +1,10 @@
-// Module ID: 12063
-// Function ID: 12064
+// Module ID: 12057
+// Function ID: 12058
 // Name: UserProfileWidgetExpandableItems
 // Dependencies: [32, 19, 17, 21, 5243, 575, 5866, 1113, 2]
 // Exports: WidgetViewMoreButton, useExpandableItems
 
-// Module 12063 (UserProfileWidgetExpandableItems)
+// Module 12057 (UserProfileWidgetExpandableItems)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

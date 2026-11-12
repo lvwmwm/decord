@@ -1,10 +1,10 @@
-// Module ID: 19820
-// Function ID: 19821
+// Module ID: 19815
+// Function ID: 19816
 // Name: useMeasureDockGlowOffset
 // Dependencies: [32, 19, 2]
 // Exports: default, getDockGlowHotSpot
 
-// Module 19820 (useMeasureDockGlowOffset)
+// Module 19815 (useMeasureDockGlowOffset)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;

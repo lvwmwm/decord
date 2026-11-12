@@ -1,10 +1,10 @@
-// Module ID: 9481
-// Function ID: 9482
+// Module ID: 9480
+// Function ID: 9481
 // Name: EmojiPickerUtils
-// Dependencies: [19, 6906, 5114, 6893, 1385, 6909, 1072, 1388, 1228, 1387, 1266, 9482, 6004, 9483, 9485, 9486, 504, 2107, 5193, 1113, 5189, 1252, 12, 1089, 5073, 2]
+// Dependencies: [19, 6906, 5114, 6893, 1385, 6909, 1072, 1388, 1228, 1387, 1266, 9481, 6004, 9482, 9484, 9485, 504, 2107, 5193, 1113, 5189, 1252, 12, 1089, 5073, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useFavoriteEmojis, useFrequentlyUsedEmojis, useFrequentlyUsedReactionEmojis, useIsFavoriteEmoji
 
-// Module 9481 (EmojiPickerUtils)
+// Module 9480 (EmojiPickerUtils)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl13 from "intl" /* 1113 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
@@ -14,7 +14,7 @@ import PremiumConstants from "PremiumConstants" /* 1387 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5189 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5193 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
-import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9482 */;
+import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9481 */;
 import react_mod from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6906 */;
 import GuildStore from "GuildStore" /* 5114 */;

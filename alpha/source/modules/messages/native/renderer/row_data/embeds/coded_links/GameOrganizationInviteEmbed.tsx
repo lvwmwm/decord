@@ -1,10 +1,10 @@
-// Module ID: 15474
-// Function ID: 15475
+// Module ID: 15471
+// Function ID: 15472
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [12279, 5114, 11831, 12280, 8776, 9104, 1113, 2549, 13972, 9097, 575, 8588, 7790, 15475, 13962, 12449, 7373, 5240, 2]
+// Dependencies: [12273, 5114, 11825, 12274, 8775, 9103, 1113, 2549, 13968, 9096, 575, 8588, 7790, 15472, 13958, 12443, 7373, 5240, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 15474 (GameOrganizationInviteEmbed)
+// Module 15471 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import _modDef2549 from "module_2549" /* 2549 */;
@@ -12,16 +12,16 @@ import ColorUtils from "ColorUtils" /* 5240 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7373 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7790 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
-import Constants from "Constants" /* 8776 */;
-import react_native from "react-native" /* 9097 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9104 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 11831 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12280 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12449 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 13962 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 13972 */;
-import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15475 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12279 */;
+import Constants from "Constants" /* 8775 */;
+import react_native from "react-native" /* 9096 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9103 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 11825 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12274 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12443 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 13958 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 13968 */;
+import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15472 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12273 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 

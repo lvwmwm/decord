@@ -1,15 +1,15 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9163
+// Function ID: 9164
 // Name: WelcomeCTAUtils
-// Dependencies: [1385, 9165, 1072, 11, 8593, 1252, 2]
+// Dependencies: [1385, 9164, 1072, 11, 8593, 1252, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 9164 (WelcomeCTAUtils)
+// Module 9163 (WelcomeCTAUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8593 */;
-import WelcomeCTAConstants from "WelcomeCTAConstants" /* 9165 */;
+import WelcomeCTAConstants from "WelcomeCTAConstants" /* 9164 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

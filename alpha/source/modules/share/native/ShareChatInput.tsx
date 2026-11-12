@@ -1,17 +1,17 @@
-// Module ID: 15081
-// Function ID: 15082
+// Module ID: 15078
+// Function ID: 15079
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 1072, 21, 5243, 575, 1377, 11096, 8047, 1113, 7364, 10342, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5243, 575, 1377, 11090, 8047, 1113, 7364, 10340, 2]
 // Exports: default
 
-// Module 15081 (ShareChatInput)
+// Module 15078 (ShareChatInput)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import Pressables from "Pressables" /* 7364 */;
-import ReactionIcon from "ReactionIcon" /* 10342 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 11096 */;
+import ReactionIcon from "ReactionIcon" /* 10340 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 11090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,16 +1,16 @@
-// Module ID: 10735
-// Function ID: 10736
+// Module ID: 10729
+// Function ID: 10730
 // Name: GuildPowerupsBoostButton
-// Dependencies: [19, 5114, 1385, 9170, 1072, 21, 504, 8463, 1398, 6889, 10736, 2]
+// Dependencies: [19, 5114, 1385, 9169, 1072, 21, 504, 8463, 1398, 6889, 10730, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 10735 (GuildPowerupsBoostButton)
+// Module 10729 (GuildPowerupsBoostButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 9170 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 9169 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsSections = Constants.AnalyticsSections;
@@ -46,7 +46,7 @@ export function GuildPowerupsBoostButton(guildId) {
   }, items3);
   let tmp10 = null;
   if (null != stateFromStores) {
-    tmp10 = jsx(tmp5(10736), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
+    tmp10 = jsx(tmp5(10730), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
   }
   return tmp10;
 }

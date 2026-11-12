@@ -1,14 +1,14 @@
-// Module ID: 10415
-// Function ID: 10416
+// Module ID: 10413
+// Function ID: 10414
 // Name: TwitchNeutralIcon
-// Dependencies: [19, 21, 575, 5956, 10416, 2]
+// Dependencies: [19, 21, 575, 5956, 10414, 2]
 // Exports: TwitchNeutralIcon
 
-// Module 10415 (TwitchNeutralIcon)
+// Module 10413 (TwitchNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10416 */;
+import AssetRegistry from "AssetRegistry" /* 10414 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

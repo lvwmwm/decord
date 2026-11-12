@@ -1,10 +1,10 @@
-// Module ID: 9470
-// Function ID: 9471
+// Module ID: 9469
+// Function ID: 9470
 // Name: EditCustomStatusWithPreview
-// Dependencies: [32, 19, 17, 1385, 9471, 1072, 1388, 21, 5243, 575, 7364, 1113, 1187, 7582, 9472, 1252, 9463, 504, 9473, 9474, 5250, 9476, 6268, 9477, 5850, 11791, 15351, 15353, 7363, 7427, 5866, 10801, 8047, 7680, 7379, 5438, 5489, 15364, 2118, 15366, 5977, 1357, 1641, 8985, 6785, 7424, 2]
+// Dependencies: [32, 19, 17, 1385, 9470, 1072, 1388, 21, 5243, 575, 7364, 1113, 1187, 7582, 9471, 1252, 9462, 504, 9472, 9473, 5250, 9475, 6268, 9476, 5850, 11785, 15348, 15350, 7363, 7427, 5866, 10795, 8047, 7680, 7379, 5438, 5489, 15361, 2118, 15363, 5977, 1357, 1641, 8984, 6785, 7424, 2]
 // Exports: default
 
-// Module 9470 (EditCustomStatusWithPreview)
+// Module 9469 (EditCustomStatusWithPreview)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -19,12 +19,12 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import Pressables from "Pressables" /* 7364 */;
 import NavigatorHeader from "NavigatorHeader" /* 7427 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7582 */;
-import Constants2 from "Constants" /* 9471 */;
-import setCustomStatusDefault from "setCustomStatus" /* 9474 */;
-import removeCustomStatusDefault from "removeCustomStatus" /* 9476 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9477 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 15351 */;
-import CustomStatusPreviewDefault from "CustomStatusPreview" /* 15353 */;
+import Constants2 from "Constants" /* 9470 */;
+import setCustomStatusDefault from "setCustomStatus" /* 9473 */;
+import removeCustomStatusDefault from "removeCustomStatus" /* 9475 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9476 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 15348 */;
+import CustomStatusPreviewDefault from "CustomStatusPreview" /* 15350 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -329,7 +329,7 @@ function EditCustomStatusWithPreview(navigation) {
           obj.dismissKeyboard();
           const obj2 = ActionSheetActionCreatorsDefault;
           const obj3 = { initialValue: first2, onChange };
-          obj2.openLazy(asyncRequire(15364, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
+          obj2.openLazy(asyncRequire(15361, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
         },
       trailing: callback1(Text, obj19)
     };

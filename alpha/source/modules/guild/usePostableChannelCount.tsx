@@ -1,10 +1,10 @@
-// Module ID: 19401
-// Function ID: 19402
+// Module ID: 19396
+// Function ID: 19397
 // Name: usePostableChannelCount
 // Dependencies: [5173, 5175, 1072, 504, 1084, 2]
 // Exports: default
 
-// Module 19401 (usePostableChannelCount)
+// Module 19396 (usePostableChannelCount)
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5173 */;

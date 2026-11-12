@@ -1,13 +1,13 @@
-// Module ID: 20057
-// Function ID: 20058
+// Module ID: 20052
+// Function ID: 20053
 // Name: DmSettingsUpsellManager
-// Dependencies: [1072, 7816, 20058, 1282, 2]
+// Dependencies: [1072, 7816, 20053, 1282, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 20057 (DmSettingsUpsellManager)
+// Module 20052 (DmSettingsUpsellManager)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 20058 */;
+import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 20053 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 

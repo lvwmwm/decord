@@ -1,15 +1,15 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 15776
+// Function ID: 15777
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 5114, 1385, 1072, 21, 5243, 575, 7654, 504, 1113, 572, 5951, 7885, 7847, 15782, 5866, 2]
+// Dependencies: [19, 17, 5114, 1385, 1072, 21, 5243, 575, 7654, 504, 1113, 572, 5951, 7885, 7847, 15777, 5866, 2]
 // Exports: default
 
-// Module 15781 (InstantInviteQRCodeActionSheet)
+// Module 15776 (InstantInviteQRCodeActionSheet)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import GuildIconDefault from "GuildIcon" /* 7654 */;
-import components_native_QRCodeDefault from "components_native/QRCode" /* 15782 */;
+import components_native_QRCodeDefault from "components_native/QRCode" /* 15777 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;

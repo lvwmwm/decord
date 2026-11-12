@@ -1,10 +1,10 @@
-// Module ID: 17079
-// Function ID: 17080
+// Module ID: 17074
+// Function ID: 17075
 // Name: CollectiblesRecommendationActionCreators
 // Dependencies: [5, 1072, 572, 1282, 6694, 7165, 2]
 // Exports: maybeFetchCollectiblesRecommendations
 
-// Module 17079 (CollectiblesRecommendationActionCreators)
+// Module 17074 (CollectiblesRecommendationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

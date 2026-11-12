@@ -1,14 +1,27 @@
 // Module ID: 16652
 // Function ID: 16653
-// Dependencies: [16636, 16653]
+// Dependencies: [16650, 16624]
 
 // Module 16652
-import _mod16636 from "module_16636" /* 16636 */;
-import _mod16653 from "module_16653" /* 16653 */;
+import _mod16624 from "module_16624" /* 16624 */;
+import _mod16650 from "module_16650" /* 16650 */;
 
-let closure_2 = _mod16636({}.hasOwnProperty);
-const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
-  return closure_2(_mod16653(arg0), arg1);
-});
 
-export default tmp;
+export default function(arg0, arg1) {
+  let tmp3;
+  if (arguments.length < 2) {
+    const tmp7 = _mod16624[arg0];
+    let tmp8;
+    if (_mod16650(tmp7)) {
+      tmp8 = tmp7;
+    }
+    tmp3 = tmp8;
+  } else {
+    tmp3 = _mod16624[arg0];
+    const tmp = require;
+    if (tmp3) {
+      tmp3 = tmp(16624)[arg0][arg1];
+    }
+  }
+  return tmp3;
+};

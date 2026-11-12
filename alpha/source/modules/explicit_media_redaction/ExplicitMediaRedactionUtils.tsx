@@ -1,10 +1,10 @@
-// Module ID: 8787
-// Function ID: 8788
+// Module ID: 8786
+// Function ID: 8787
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [5869, 5092, 8568, 8570, 1072, 1196, 1113, 1252, 8788, 6708, 6713, 5932, 6772, 6767, 8572, 2]
+// Dependencies: [5869, 5092, 8568, 8570, 1072, 1196, 1113, 1252, 8787, 6708, 6713, 5932, 6772, 6767, 8572, 2]
 // Exports: hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForExplicitMedia, useShouldAgeVerifyForReason
 
-// Module 8787 (ExplicitMediaRedactionUtils)
+// Module 8786 (ExplicitMediaRedactionUtils)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
@@ -14,7 +14,7 @@ import MonitoringAgentDefault from "MonitoringAgent" /* 6708 */;
 import MetricEvents from "MetricEvents" /* 6713 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6767 */;
 import AgeGatedFeature from "AgeGatedFeature" /* 6772 */;
-import SelfModUtils from "SelfModUtils" /* 8788 */;
+import SelfModUtils from "SelfModUtils" /* 8787 */;
 import DevSettingsStore from "DevSettingsStore" /* 5869 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import ExplicitMediaStore from "ExplicitMediaStore" /* 8568 */;

@@ -1,17 +1,17 @@
-// Module ID: 11609
-// Function ID: 11610
+// Module ID: 11603
+// Function ID: 11604
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 9557, 1387, 504, 11610, 11611, 9561, 5285, 5076, 2]
+// Dependencies: [32, 19, 9556, 1387, 504, 11604, 11605, 9560, 5285, 5076, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 11609 (GiftingPromotionUtils)
+// Module 11603 (GiftingPromotionUtils)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5285 */;
-import MarketingSurfaceType from "MarketingSurfaceType" /* 9561 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 11611 */;
+import MarketingSurfaceType from "MarketingSurfaceType" /* 9560 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 11605 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9557 */;
+import PromotionsStore from "PromotionsStore" /* 9556 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

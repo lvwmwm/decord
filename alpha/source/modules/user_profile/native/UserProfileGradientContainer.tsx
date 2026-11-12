@@ -1,9 +1,9 @@
-// Module ID: 9464
-// Function ID: 9465
+// Module ID: 9463
+// Function ID: 9464
 // Name: UserProfileGradientContainer
 // Dependencies: [19, 21, 8536, 5830, 2]
 
-// Module 9464 (UserProfileGradientContainer)
+// Module 9463 (UserProfileGradientContainer)
 import Fragment from "Fragment" /* 21 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8536 */;

@@ -1,12 +1,12 @@
-// Module ID: 10281
-// Function ID: 10282
+// Module ID: 10279
+// Function ID: 10280
 // Name: GameProfileSummary
-// Dependencies: [19, 17, 21, 5243, 10282, 10283, 10219, 1113, 5866, 10311, 2]
+// Dependencies: [19, 17, 21, 5243, 10280, 10281, 10217, 1113, 5866, 10309, 2]
 // Exports: default
 
-// Module 10281 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
-import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 10283 */;
+// Module 10279 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10217 */;
+import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 10281 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

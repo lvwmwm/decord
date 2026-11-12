@@ -1,10 +1,10 @@
-// Module ID: 10444
-// Function ID: 10445
+// Module ID: 10442
+// Function ID: 10443
 // Name: MapleSyrupExperiments
 // Dependencies: [1449, 2]
 // Exports: useMapleSyrup1Enabled, useMapleSyrup2Treatment, useMapleSyrup3Enabled
 
-// Module 10444 (MapleSyrupExperiments)
+// Module 10442 (MapleSyrupExperiments)
 import ApexExperiment_mod from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

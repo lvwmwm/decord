@@ -1,18 +1,18 @@
-// Module ID: 9425
-// Function ID: 9426
+// Module ID: 9424
+// Function ID: 9425
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 5244, 2117, 21, 5243, 1493, 9426, 9427, 9428, 9430, 504, 1092, 9431, 9429, 5957, 8523, 2]
+// Dependencies: [32, 19, 17, 5244, 2117, 21, 5243, 1493, 9425, 9426, 9427, 9429, 504, 1092, 9430, 9428, 5957, 8523, 2]
 // Exports: default, usePreloadProfileEffect
 
-// Module 9425 (ProfileEffect)
+// Module 9424 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import useProfileEffectDefault from "useProfileEffect" /* 8523 */;
-import utils from "utils" /* 9426 */;
-import profile_effects_constants from "profile_effects/constants" /* 9427 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9428 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9431 */;
+import utils from "utils" /* 9425 */;
+import profile_effects_constants from "profile_effects/constants" /* 9426 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9427 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9430 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

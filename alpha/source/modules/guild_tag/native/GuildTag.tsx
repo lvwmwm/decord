@@ -1,9 +1,9 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10585
+// Function ID: 10586
 // Name: GuildTag
-// Dependencies: [19, 17, 1385, 8344, 21, 5243, 575, 1377, 5957, 1113, 5866, 7364, 504, 8343, 5489, 10588, 2118, 2]
+// Dependencies: [19, 17, 1385, 8344, 21, 5243, 575, 1377, 5957, 1113, 5866, 7364, 504, 8343, 5489, 10586, 2118, 2]
 
-// Module 10587 (GuildTag)
+// Module 10585 (GuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

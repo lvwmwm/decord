@@ -1,13 +1,13 @@
-// Module ID: 12754
-// Function ID: 12755
+// Module ID: 12748
+// Function ID: 12749
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [5092, 5114, 5175, 1385, 5918, 1072, 12755, 6293, 12644, 504, 6775, 2]
+// Dependencies: [5092, 5114, 5175, 1385, 5918, 1072, 12749, 6293, 12638, 504, 6775, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 12754 (getEmbeddedActivityJoinability)
+// Module 12748 (getEmbeddedActivityJoinability)
 import Constants from "Constants" /* 1072 */;
 import ChannelUtils from "ChannelUtils" /* 6293 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 12755 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 12749 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import PermissionStore from "PermissionStore" /* 5175 */;

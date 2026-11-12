@@ -1,10 +1,10 @@
-// Module ID: 17841
-// Function ID: 17842
+// Module ID: 17836
+// Function ID: 17837
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 32, 19, 1385, 1072, 5268, 1393, 16966, 5271, 7734, 16967, 5278, 9333, 9332, 1252, 1395, 1396, 2]
+// Dependencies: [5, 32, 19, 1385, 1072, 5268, 1393, 16961, 5271, 7734, 16962, 5278, 9332, 9331, 1252, 1395, 1396, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 17841 (useDisplayNameStylesHandleApply)
+// Module 17836 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

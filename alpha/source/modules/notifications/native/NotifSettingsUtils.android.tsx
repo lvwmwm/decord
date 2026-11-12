@@ -1,15 +1,15 @@
-// Module ID: 16786
-// Function ID: 16787
+// Module ID: 16781
+// Function ID: 16782
 // Name: NotifSettingsUtils
-// Dependencies: [16780, 1113, 16784, 16787, 1242, 2]
+// Dependencies: [16775, 1113, 16779, 16782, 1242, 2]
 
-// Module 16786 (NotifSettingsUtils)
+// Module 16781 (NotifSettingsUtils)
 import intl2 from "intl" /* 1113 */;
-import react_nativeDefault from "react-native" /* 16787 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16780 */;
+import react_nativeDefault from "react-native" /* 16782 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16775 */;
 import size from "module_2" /* 2 */;
 
-let map, map1, set, set2;
+let map, map1, map2, map3, set, set2;
 
 let c3;
 let closure_4;
@@ -89,11 +89,11 @@ function buildChannelsAndMapping() {
       ({ channelId: arr[0], importance: arr[1] } = item);
       return items;
     }));
-    const map2 = new Map(set2.map((id) => {
+    map2 = new Map(set2.map((id) => {
       items = [id.id, id];
       return items;
     }));
-    const map3 = new Map();
+    map3 = new Map();
     const map4 = new Map();
     const iter = set2[Symbol.iterator]();
     const nextResult = iter.next();

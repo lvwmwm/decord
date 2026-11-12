@@ -1,10 +1,10 @@
-// Module ID: 17227
-// Function ID: 17228
+// Module ID: 17222
+// Function ID: 17223
 // Name: AgeNoticeSettingsNotices
-// Dependencies: [19, 17, 1385, 6778, 6847, 21, 5243, 575, 17094, 10749, 8094, 1113, 3305, 17134, 8124, 6770, 6779, 5932, 6767, 17228, 11968, 2]
+// Dependencies: [19, 17, 1385, 6778, 6847, 21, 5243, 575, 17089, 10743, 8094, 1113, 3305, 17129, 8124, 6770, 6779, 5932, 6767, 17223, 11962, 2]
 // Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled, useMessageRequestsNoticeVariant
 
-// Module 17227 (AgeNoticeSettingsNotices)
+// Module 17222 (AgeNoticeSettingsNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,11 +14,11 @@ import AgeVerificationUtils from "AgeVerificationUtils" /* 6767 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6770 */;
 import AgeNoticeConstants from "AgeNoticeConstants" /* 6778 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8124 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10749 */;
-import useUserIsTeen from "useUserIsTeen" /* 11968 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 17094 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 17134 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17228 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10743 */;
+import useUserIsTeen from "useUserIsTeen" /* 11962 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 17089 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 17129 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17223 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 6847 */;

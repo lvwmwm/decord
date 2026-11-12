@@ -1,10 +1,10 @@
-// Module ID: 15949
-// Function ID: 15950
+// Module ID: 15944
+// Function ID: 15945
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [19, 5287, 21, 563, 7618, 6861, 1113, 6865, 15950, 5873, 2]
+// Dependencies: [19, 5287, 21, 563, 7618, 6861, 1113, 6865, 15945, 5873, 2]
 // Exports: default
 
-// Module 15949 (MemberVerificationAlertIncomplete)
+// Module 15944 (MemberVerificationAlertIncomplete)
 import intl5 from "intl" /* 1113 */;
 import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6861 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7618 */;
@@ -66,7 +66,7 @@ export default function MemberVerificationAlertIncomplete(guildId) {
     let intl = tmp2(1113).intl;
     formatToPlainStringResult = intl.string(tmp2(1113).t["0sTyEb"]);
   }
-  const obj3 = { icon: guildId(15950).ListViewIcon, header: formatToPlainStringResult, buttons: closure_7(closure_6, obj4) };
+  const obj3 = { icon: guildId(15945).ListViewIcon, header: formatToPlainStringResult, buttons: closure_7(closure_6, obj4) };
   const tmp9 = onClose(6865);
   const merged1 = Object.assign(merged);
   obj4 = { children: items4 };

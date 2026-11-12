@@ -1,10 +1,10 @@
-// Module ID: 10605
-// Function ID: 10606
+// Module ID: 10603
+// Function ID: 10604
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 10591, 5484, 5839, 575, 5830, 8095, 5866, 1113, 7364, 2]
+// Dependencies: [19, 17, 21, 10589, 5484, 5839, 575, 5830, 8095, 5866, 1113, 7364, 2]
 // Exports: default
 
-// Module 10605 (GuildProfileLoadingError)
+// Module 10603 (GuildProfileLoadingError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -14,7 +14,7 @@ import useToken from "useToken" /* 5839 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import Pressables from "Pressables" /* 7364 */;
 import WarningIcon3 from "WarningIcon" /* 8095 */;
-import GuildProfileView from "GuildProfileView" /* 10591 */;
+import GuildProfileView from "GuildProfileView" /* 10589 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

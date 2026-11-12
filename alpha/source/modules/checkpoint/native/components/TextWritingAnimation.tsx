@@ -1,10 +1,10 @@
-// Module ID: 14374
-// Function ID: 14375
+// Module ID: 14370
+// Function ID: 14371
 // Name: TextWritingAnimation
-// Dependencies: [32, 19, 17, 5244, 21, 5243, 14159, 504, 14164, 2]
+// Dependencies: [32, 19, 17, 5244, 21, 5243, 14156, 504, 14161, 2]
 // Exports: default
 
-// Module 14374 (TextWritingAnimation)
+// Module 14370 (TextWritingAnimation)
 import react_native from "react-native" /* 17 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

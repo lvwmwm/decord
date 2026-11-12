@@ -1,18 +1,18 @@
-// Module ID: 15704
-// Function ID: 15705
+// Module ID: 15699
+// Function ID: 15700
 // Name: UserProfileWidgetsEmptyState
-// Dependencies: [32, 19, 17, 502, 8413, 7896, 21, 575, 5243, 15705, 504, 15694, 15708, 15709, 10449, 5866, 1113, 15710, 5873, 8480, 5489, 15712, 2118, 2]
+// Dependencies: [32, 19, 17, 502, 8413, 7896, 21, 575, 5243, 15700, 504, 15691, 15703, 15704, 10447, 5866, 1113, 15705, 5873, 8480, 5489, 15707, 2118, 2]
 // Exports: default
 
-// Module 15704 (UserProfileWidgetsEmptyState)
+// Module 15699 (UserProfileWidgetsEmptyState)
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import Constants from "Constants" /* 7896 */;
 import Constants2 from "Constants" /* 8413 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8480 */;
-import useAddableWidgetsDefault from "useAddableWidgets" /* 15694 */;
-import UserProfileWidgetOptionAddButton from "UserProfileWidgetOptionAddButton" /* 15705 */;
+import useAddableWidgetsDefault from "useAddableWidgets" /* 15691 */;
+import UserProfileWidgetOptionAddButton from "UserProfileWidgetOptionAddButton" /* 15700 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -86,7 +86,7 @@ export default function UserProfileWidgetsEmptyState() {
   const callback = obj2.useCallback((nativeEvent) => {
     importDefault(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let closure_5 = tmp4(15708)();
+  let closure_5 = tmp4(15703)();
   const tmp2Result = require("ConjureCustomWidget");
   const canConjureCustomWidget = tmp2Result.useCanConjureCustomWidget(UserProfileWidgetsEmptyState_str);
   const tmp2Result2 = require("ConjureMobileExperiment");
@@ -129,7 +129,7 @@ export default function UserProfileWidgetsEmptyState() {
     const tmp18 = closure_5;
     if (isConjureMobileEnabled) {
       const obj8 = { width: result, padding: PX_16 };
-      isConjureMobileEnabled = tmp16(tmp4(15710), obj8);
+      isConjureMobileEnabled = tmp16(tmp4(15705), obj8);
     }
     items3[1] = isConjureMobileEnabled;
     tmp14Result = tmp14(tmp18, obj7);
@@ -143,7 +143,7 @@ export default function UserProfileWidgetsEmptyState() {
       const obj2 = { userId, action: constants.PRESS_ADD_WIDGET };
       const result = obj.trackUserProfileEditAction(obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(15712, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
+      obj3.openLazy(asyncRequire(15707, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
     }
   };
   const Button = tmp2(5873).Button;

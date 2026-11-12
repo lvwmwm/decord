@@ -1,11 +1,11 @@
-// Module ID: 10014
-// Function ID: 10015
+// Module ID: 10013
+// Function ID: 10014
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7288, 1385, 504, 7297, 10015, 2]
+// Dependencies: [7288, 1385, 504, 7297, 10014, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 10014 (useTieredTenureBadgeForUser)
-import PremiumPerkGates from "PremiumPerkGates" /* 10015 */;
+// Module 10013 (useTieredTenureBadgeForUser)
+import PremiumPerkGates from "PremiumPerkGates" /* 10014 */;
 import UserProfileStore from "UserProfileStore" /* 7288 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

@@ -1,15 +1,15 @@
-// Module ID: 13410
-// Function ID: 13411
+// Module ID: 13404
+// Function ID: 13405
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1388, 21, 5243, 7573, 12488, 2116, 9483, 13407, 12489, 1187, 13411, 1377, 13412, 2017, 9477, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 5243, 7573, 12482, 2116, 9482, 13401, 12483, 1187, 13405, 1377, 13406, 2017, 9476, 2]
 // Exports: default
 
-// Module 13410 (AppLauncherTextInputOption)
+// Module 13404 (AppLauncherTextInputOption)
 import react_native from "react-native" /* 17 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9477 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9483 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9476 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9482 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,27 +1,27 @@
-// Module ID: 19281
-// Function ID: 19282
+// Module ID: 19276
+// Function ID: 19277
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 8681, 5092, 14645, 9000, 19282, 8999, 1072, 5099, 14631, 14656, 1378, 5951, 1113, 7587, 5949, 1499, 14741, 19283, 14634, 9055, 9073, 1108, 6795, 8560, 8069, 6000, 6837, 2118, 6775, 15821, 6292, 7617, 7618, 1099, 14652, 2]
+// Dependencies: [5, 19, 8681, 5092, 14641, 8999, 19277, 8998, 1072, 5099, 14627, 14652, 1378, 5951, 1113, 7587, 5949, 1499, 14737, 19278, 14630, 9054, 9072, 1108, 6795, 8560, 8069, 6000, 6837, 2118, 6775, 15816, 6292, 7617, 7618, 1099, 14648, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 19281 (useOnPressSearchItem)
+// Module 19276 (useOnPressSearchItem)
 import intl2 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import ChannelConstants from "ChannelConstants" /* 5099 */;
 import ToastUtils from "ToastUtils" /* 5951 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7587 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
-import TrackingConstants from "TrackingConstants" /* 8999 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 14631 */;
-import TrackingDefault from "Tracking" /* 14652 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14656 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19282 */;
+import TrackingConstants from "TrackingConstants" /* 8998 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 14627 */;
+import TrackingDefault from "Tracking" /* 14648 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14652 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19277 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConversationPreviewStore from "ConversationPreviewStore" /* 8681 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
-import SearchQueryStore from "SearchQueryStore" /* 14645 */;
-import SearchConstants from "SearchConstants" /* 9000 */;
+import SearchQueryStore from "SearchQueryStore" /* 14641 */;
+import SearchConstants from "SearchConstants" /* 8999 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

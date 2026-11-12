@@ -1,10 +1,10 @@
-// Module ID: 17366
-// Function ID: 17367
+// Module ID: 17361
+// Function ID: 17362
 // Name: AddConnectionActionSheet
 // Dependencies: [1072, 2146, 21, 5243, 1187, 5484, 1627, 8639, 7196, 5503, 7847, 1113, 5507, 7379, 5489, 7358, 1411, 5250, 7853, 7852, 7871, 2]
 // Exports: default
 
-// Module 17366 (AddConnectionActionSheet)
+// Module 17361 (AddConnectionActionSheet)
 import Constants from "Constants" /* 1072 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
 import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2146 */;

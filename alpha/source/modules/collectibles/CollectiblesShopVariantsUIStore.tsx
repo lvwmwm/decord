@@ -1,10 +1,10 @@
-// Module ID: 10353
-// Function ID: 10354
+// Module ID: 10351
+// Function ID: 10352
 // Name: CollectiblesShopVariantsUIStore
-// Dependencies: [1254, 5158, 10350, 8430, 2]
+// Dependencies: [1254, 5158, 10348, 8430, 2]
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
-// Module 10353 (CollectiblesShopVariantsUIStore)
+// Module 10351 (CollectiblesShopVariantsUIStore)
 import _slicedToArray from "_slicedToArray" /* 5158 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8430 */;
 import module_1254 from "module_1254" /* 1254 */;

@@ -1,10 +1,10 @@
-// Module ID: 11740
-// Function ID: 11741
+// Module ID: 11734
+// Function ID: 11735
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8481, 9526, 1072, 1387, 21, 5243, 575, 5850, 11612, 504, 8414, 7852, 11731, 1252, 11741, 572, 6785, 6206, 11742, 2118, 1377, 11628, 11617, 5866, 1113, 5873, 2]
+// Dependencies: [5, 32, 19, 17, 8481, 9525, 1072, 1387, 21, 5243, 575, 5850, 11606, 504, 8414, 7852, 11725, 1252, 11735, 572, 6785, 6206, 11736, 2118, 1377, 11622, 11611, 5866, 1113, 5873, 2]
 // Exports: default
 
-// Module 11740 (CollectiblesShopGiftPurchaseSection)
+// Module 11734 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 9526 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 9525 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

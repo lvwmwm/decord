@@ -1,10 +1,10 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9312
+// Function ID: 9313
 // Name: GameAutocompleteUtils
 // Dependencies: [7292, 2]
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, isRetryableGameSearchError, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 9313 (GameAutocompleteUtils)
+// Module 9312 (GameAutocompleteUtils)
 import GameWidgetLimits from "GameWidgetLimits" /* 7292 */;
 import size from "module_2" /* 2 */;
 

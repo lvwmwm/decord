@@ -1,15 +1,15 @@
-// Module ID: 18003
-// Function ID: 18004
+// Module ID: 17998
+// Function ID: 17999
 // Name: SettingsEmailNotificationsScreen
-// Dependencies: [19, 16125, 9136, 21, 18004, 16784, 18007, 12317, 1113, 5836, 17095, 2]
+// Dependencies: [19, 16120, 9135, 21, 17999, 16779, 18002, 12311, 1113, 5836, 17090, 2]
 
-// Module 18003 (SettingsEmailNotificationsScreen)
+// Module 17998 (SettingsEmailNotificationsScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
-import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 18004 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
+import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17999 */;
 import react from "react" /* 19 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 16125 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 16120 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -31,9 +31,9 @@ items1 = [, , , , ];
 const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
   let enabled;
   let isDeclarativeSettingsUIAvailable;
-  obj = isDeclarativeSettingsUIAvailable(16784);
+  obj = isDeclarativeSettingsUIAvailable(16779);
   isDeclarativeSettingsUIAvailable = obj.useIsDeclarativeSettingsUIAvailable("SettingsEmailNotificationsScreen");
-  obj2 = enabled(18007);
+  obj2 = enabled(18002);
   enabled = obj2.useConfig({ location: "SettingsEmailNotificationsScreen" }).enabled;
   let items = [isDeclarativeSettingsUIAvailable, enabled];
   const node = react.useMemo(() => {
@@ -57,7 +57,7 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
     return createList(obj2);
   }, items);
   enabled(5836)(initializeEmailSettings);
-  return jsx(enabled(17095), { node });
+  return jsx(enabled(17090), { node });
 });
 const result = size.fileFinishedImporting("modules/user_settings/notifications/native/SettingsEmailNotificationsScreen.tsx");
 

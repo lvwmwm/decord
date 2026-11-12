@@ -1,8 +1,8 @@
-// Module ID: 14364
-// Function ID: 14365
+// Module ID: 14360
+// Function ID: 14361
 // Dependencies: [2]
 
-// Module 14364
+// Module 14360
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wireframe_spritesheet.webp.js");

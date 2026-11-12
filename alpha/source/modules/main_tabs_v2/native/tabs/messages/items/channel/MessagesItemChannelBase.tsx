@@ -1,15 +1,15 @@
-// Module ID: 18627
-// Function ID: 18628
+// Module ID: 18622
+// Function ID: 18623
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 6005, 6952, 5185, 5146, 6895, 1385, 21, 5243, 575, 504, 18628, 8510, 1377, 8069, 6000, 10831, 7364, 8352, 1113, 9442, 18629, 5931, 9438, 18630, 8558, 18631, 6006, 2]
+// Dependencies: [19, 17, 6005, 6952, 5185, 5146, 6895, 1385, 21, 5243, 575, 504, 18623, 8510, 1377, 8069, 6000, 10825, 7364, 8352, 1113, 9441, 18624, 5931, 9437, 18625, 8558, 18626, 6006, 2]
 
-// Module 18627 (MessagesItemChannelBase)
+// Module 18622 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import transitionToChannel from "transitionToChannel" /* 6000 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10831 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10825 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 6005 */;
 import ReadStateStore from "ReadStateStore" /* 6952 */;

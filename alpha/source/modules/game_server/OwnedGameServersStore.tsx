@@ -1,9 +1,9 @@
-// Module ID: 10616
-// Function ID: 10617
+// Module ID: 10614
+// Function ID: 10615
 // Name: OwnedGameServersStore
 // Dependencies: [5462, 504, 572, 2]
 
-// Module 10616 (OwnedGameServersStore)
+// Module 10614 (OwnedGameServersStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GameServerConstants from "GameServerConstants" /* 5462 */;

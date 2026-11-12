@@ -1,10 +1,10 @@
-// Module ID: 10136
-// Function ID: 10137
+// Module ID: 10135
+// Function ID: 10136
 // Name: MediaShareActions
-// Dependencies: [19, 10137, 5092, 6309, 10161, 1072, 8570, 21, 563, 8787, 10162, 5489, 8566, 6298, 10163, 8562, 7877, 5951, 7587, 5949, 10172, 6000, 5432, 12559, 2118, 12543, 10167, 5972, 1113, 10200, 12200, 5966, 15084, 11866, 8014, 7885, 7887, 2]
+// Dependencies: [19, 10136, 5092, 6309, 10159, 1072, 8570, 21, 563, 8786, 10160, 5489, 8566, 6298, 10161, 8562, 7877, 5951, 7587, 5949, 10170, 6000, 5432, 12553, 2118, 12537, 10165, 5972, 1113, 10198, 12194, 5966, 15081, 11860, 8014, 7885, 7887, 2]
 // Exports: default
 
-// Module 10136 (MediaShareActions)
+// Module 10135 (MediaShareActions)
 import Fragment from "Fragment" /* 21 */;
 import intl8 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -23,17 +23,17 @@ import ImageWarningIcon from "ImageWarningIcon" /* 8014 */;
 import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8562 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8566 */;
 import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 8570 */;
-import showShareActionSheet from "showShareActionSheet" /* 10163 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 10172 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 10200 */;
-import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11866 */;
-import ShareIcon from "ShareIcon" /* 12200 */;
-import WindowLaunchIcon from "WindowLaunchIcon" /* 15084 */;
+import showShareActionSheet from "showShareActionSheet" /* 10161 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 10170 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 10198 */;
+import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11860 */;
+import ShareIcon from "ShareIcon" /* 12194 */;
+import WindowLaunchIcon from "WindowLaunchIcon" /* 15081 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 10137 */;
+import ICYMIStore from "ICYMIStore" /* 10136 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import MessageStore from "MessageStore" /* 6309 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 10161 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 10159 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -199,7 +199,7 @@ function useMediaShareActions(source) {
       const obj2 = { messageId: null, channelId: null, attachmentId };
       ({ messageId: obj3.messageId, channelId: obj3.channelId } = source);
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(12559, tmp2.paths), closure_11, obj2);
+      tmpResult.openLazy(asyncRequire(12553, tmp2.paths), closure_11, obj2);
     }
   }, items8);
   let tmpResult = tmp(tmp2[25]);

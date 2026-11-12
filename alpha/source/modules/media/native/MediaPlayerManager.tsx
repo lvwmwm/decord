@@ -1,10 +1,10 @@
-// Module ID: 16901
-// Function ID: 16902
+// Module ID: 16896
+// Function ID: 16897
 // Name: MediaPlayerManager
-// Dependencies: [17, 5091, 6838, 5092, 6309, 5175, 2117, 1072, 5896, 16902, 1083, 3, 560, 1259, 2120, 5430, 572, 1377, 558, 8593, 6985, 2]
+// Dependencies: [17, 5091, 6838, 5092, 6309, 5175, 2117, 1072, 5896, 16897, 1083, 3, 560, 1259, 2120, 5430, 572, 1377, 558, 8593, 6985, 2]
 // Exports: isPlaybackComplete
 
-// Module 16901 (MediaPlayerManager)
+// Module 16896 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 5092 */;
 import MessageStore from "MessageStore" /* 6309 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16902 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16897 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "flexDirection",
-    showPip: "flag_vi",
+    showPip: "en-BE",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: 50
+    currentlyDisplayedChannelId: "en"
   };
   return obj;
 });
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "delete", rate: false, isPlaying: false, wasPipClosedByUser: "scrollToItem" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "delete", rate: false, isPlaying: false, wasPipClosedByUser: "isConnected" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

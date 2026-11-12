@@ -1,10 +1,10 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 10386
+// Function ID: 10387
 // Name: SkeletonCard
-// Dependencies: [19, 21, 5243, 575, 10349, 1652, 5485, 2]
+// Dependencies: [19, 21, 5243, 575, 10347, 1652, 5485, 2]
 // Exports: default
 
-// Module 10388 (SkeletonCard)
+// Module 10386 (SkeletonCard)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -32,14 +32,14 @@ export default function _default(width) {
   let tmp11;
   let COLLECTIBLES_SHOP_CARD_WIDTH = width.width;
   if (COLLECTIBLES_SHOP_CARD_WIDTH === undefined) {
-    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(10349).COLLECTIBLES_SHOP_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(10347).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   let COLLECTIBLES_SHOP_CARD_HEIGHT = width.height;
   sharedValue = undefined;
   const style = width.style;
   const tmp3 = closure_5;
   if (COLLECTIBLES_SHOP_CARD_HEIGHT == null) {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(10349).COLLECTIBLES_SHOP_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(10347).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }
   const tmp3Result = tmp3(COLLECTIBLES_SHOP_CARD_WIDTH, COLLECTIBLES_SHOP_CARD_HEIGHT);
   let obj = sharedValue(1652);

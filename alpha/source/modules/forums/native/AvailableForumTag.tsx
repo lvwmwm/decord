@@ -1,10 +1,10 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 11795
+// Function ID: 11796
 // Name: AvailableForumTag
-// Dependencies: [19, 6906, 1388, 21, 5243, 575, 504, 11567, 7932, 7828, 1411, 5866, 2]
+// Dependencies: [19, 6906, 1388, 21, 5243, 575, 504, 11561, 7932, 7828, 1411, 5866, 2]
 // Exports: default
 
-// Module 11801 (AvailableForumTag)
+// Module 11795 (AvailableForumTag)
 import nativeDefault from "native" /* 575 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import EmojiDefault from "Emoji" /* 7828 */;

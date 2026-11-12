@@ -1,10 +1,10 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11033
+// Function ID: 11034
 // Name: BugReporterModal
-// Dependencies: [5, 32, 19, 17, 1385, 11038, 21, 5243, 575, 671, 1089, 6785, 1499, 504, 1113, 7427, 8784, 8808, 5952, 11040, 559, 11041, 7363, 7681, 5957, 1411, 1377, 8814, 11051, 1641, 7794, 6274, 5866, 7381, 11063, 7364, 1187, 7366, 5873, 7553, 7680, 7379, 5489, 11078, 2118, 7679, 7793, 1360, 11079, 11030, 7424, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 11032, 21, 5243, 575, 671, 1089, 6785, 1499, 504, 1113, 7427, 8783, 8807, 5952, 11034, 559, 11035, 7363, 7681, 5957, 1411, 1377, 8813, 11045, 1641, 7794, 6274, 5866, 7381, 11057, 7364, 1187, 7366, 5873, 7553, 7680, 7379, 5489, 11072, 2118, 7679, 7793, 1360, 11073, 11024, 7424, 2]
 // Exports: default
 
-// Module 11039 (BugReporterModal)
+// Module 11033 (BugReporterModal)
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl13 from "intl" /* 1113 */;
@@ -16,14 +16,14 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7363 */;
 import NavigatorHeader from "NavigatorHeader" /* 7427 */;
 import TableRadioRow2 from "TableRadioRow" /* 7681 */;
-import UploadPlatform from "UploadPlatform" /* 8784 */;
-import UploadDefault from "Upload" /* 8808 */;
+import UploadPlatform from "UploadPlatform" /* 8783 */;
+import UploadDefault from "Upload" /* 8807 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
-import BugReportStore from "BugReportStore" /* 11038 */;
+import BugReportStore from "BugReportStore" /* 11032 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import module_671 from "module_671" /* 671 */;
@@ -798,7 +798,7 @@ class BugCreateScreen {
         onPress() {
             obj = ActionSheetActionCreatorsDefault;
             const obj2 = { features: null != first7 ? first7.features : [], feature: first8, setFeature };
-            return obj.openLazy(asyncRequire(11078, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
+            return obj.openLazy(asyncRequire(11072, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
           },
         label: name,
         arrow: true
@@ -842,7 +842,7 @@ class BugCreateScreen {
     if (num == null) {
       num = -1;
     }
-    const tmp25Result = tmp25(11041);
+    const tmp25Result = tmp25(11035);
     priorities = tmp25Result.getPriorities();
     items8[3] = first4(TableRadioGroup, obj13);
     let obj14 = { label: intl8.string(tmp25(1113).t["1SplH2"]), placeholder: intl9.string(tmp25(1113).t.CQmAZd), onChange: tmp7, autoCorrect: true, autoCapitalize: "sentences" };

@@ -1,10 +1,10 @@
-// Module ID: 11808
-// Function ID: 11809
+// Module ID: 11802
+// Function ID: 11803
 // Name: MessageReactionsContent
-// Dependencies: [32, 19, 17, 5244, 7655, 5092, 5155, 8796, 5175, 1072, 21, 1652, 5866, 5243, 575, 504, 5187, 1342, 5857, 8797, 5854, 12, 7852, 6288, 5309, 8410, 7835, 1187, 1411, 10867, 1377, 7483, 8045, 11809, 1113, 11810, 5240, 5068, 7828, 11811, 5485, 1493, 5977, 5489, 11812, 2118, 7897, 11245, 5932, 11813, 5491, 5492, 1627, 8530, 5503, 5507, 510, 7223, 5201, 5856, 11814, 7781, 2]
+// Dependencies: [32, 19, 17, 5244, 7655, 5092, 5155, 8795, 5175, 1072, 21, 1652, 5866, 5243, 575, 504, 5187, 1342, 5857, 8796, 5854, 12, 7852, 6288, 5309, 8410, 7835, 1187, 1411, 10861, 1377, 7483, 8045, 11803, 1113, 11804, 5240, 5068, 7828, 11805, 5485, 1493, 5977, 5489, 11806, 2118, 7897, 11239, 5932, 11807, 5491, 5492, 1627, 8530, 5503, 5507, 510, 7223, 5201, 5856, 11808, 7781, 2]
 // Exports: MessageReactionsContent, MessageReactionsEmpty
 
-// Module 11808 (MessageReactionsContent)
+// Module 11802 (MessageReactionsContent)
 import _modDef12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
@@ -27,17 +27,17 @@ import FastListDefault from "FastList" /* 7781 */;
 import EmojiDefault from "Emoji" /* 7828 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
 import NoResults from "NoResults" /* 8530 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8797 */;
-import useEmojiAndSource2 from "useEmojiAndSource" /* 11245 */;
-import useEmojiColorPalette2 from "useEmojiColorPalette" /* 11810 */;
-import SwipeableFastListDefault from "SwipeableFastList" /* 11814 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8796 */;
+import useEmojiAndSource2 from "useEmojiAndSource" /* 11239 */;
+import useEmojiColorPalette2 from "useEmojiColorPalette" /* 11804 */;
+import SwipeableFastListDefault from "SwipeableFastList" /* 11808 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 8796 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 8795 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -394,7 +394,7 @@ function EmojiOptionsButton(channelId) {
   const items = [ChannelStore];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const tmp3 = messageId(11811)(stateFromStores);
+  const tmp3 = messageId(11805)(stateFromStores);
   dependencyMap = tmp3;
   const reaction = tmp4;
   const items2 = [channelId, messageId, reactions[reactionSelectedIndex], tmp3, flag];
@@ -402,7 +402,7 @@ function EmojiOptionsButton(channelId) {
     onPress: react.useCallback(() => {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, messageId, reaction, canRemoveReactions, isEmojiPack: flag };
-      obj.openLazy(asyncRequire(11812, dependencyMap.paths), "ReactionEmojiOptionsActionSheet", obj2, "replaceTopSheet");
+      obj.openLazy(asyncRequire(11806, dependencyMap.paths), "ReactionEmojiOptionsActionSheet", obj2, "replaceTopSheet");
     }, items2),
     style: tmp.emojiOptionsButton,
     children: items3
@@ -472,7 +472,7 @@ function ReactionTabs(setReactionSelectedIndex) {
     }
   };
   ({ tab: obj3.tabStyle, tabActive: obj3.tabStyleActive, tabSelected: obj3.tabStyleSelected } = tmp);
-  const tmp6 = setReactionSelectedIndex(11813);
+  const tmp6 = setReactionSelectedIndex(11807);
   items = [closure_18(tmp6, obj4), closure_18(setReactionSelectedIndex(8045), { outer: true }), ];
   const obj5 = { style: tmp.removeButtonContainer, children: items1 };
   const obj7 = { style: tmp.emojiTextIdentifier, variant: "body-sm/medium", color: "text-default", children: obj6.getReactionEmojiName(reactions[reactionSelectedIndex].emoji) };

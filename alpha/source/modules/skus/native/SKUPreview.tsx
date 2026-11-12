@@ -1,10 +1,10 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9393
+// Function ID: 9394
 // Name: SKUPreview
-// Dependencies: [19, 17, 8423, 1072, 21, 5243, 9395, 575, 9336, 9421, 2111, 9434, 9423, 9446, 9448, 9449, 5839, 5414, 1380, 2]
+// Dependencies: [19, 17, 8423, 1072, 21, 5243, 9394, 575, 9335, 9420, 2111, 9433, 9422, 9445, 9447, 9448, 5839, 5414, 1380, 2]
 // Exports: default
 
-// Module 9394 (SKUPreview)
+// Module 9393 (SKUPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,10 +13,10 @@ import GlobalUtils from "GlobalUtils" /* 1380 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import useToken from "useToken" /* 5839 */;
 import CollectiblesItemRecord from "CollectiblesItemRecord" /* 8423 */;
-import useShopProductItems from "useShopProductItems" /* 9336 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 9395 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9446 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9449 */;
+import useShopProductItems from "useShopProductItems" /* 9335 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 9394 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9445 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9448 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ function CollectiblesSKUPreview(sku) {
   sku = sku.sku;
   let DEFAULT_ITEM_SIZE = sku.size;
   if (DEFAULT_ITEM_SIZE === undefined) {
-    DEFAULT_ITEM_SIZE = sku(9395).DEFAULT_ITEM_SIZE;
+    DEFAULT_ITEM_SIZE = sku(9394).DEFAULT_ITEM_SIZE;
   }
   const items = [sku];
   const memo = react.useMemo(() => closure_5(sku), items);

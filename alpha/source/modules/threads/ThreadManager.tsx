@@ -1,11 +1,11 @@
-// Module ID: 20258
-// Function ID: 20259
+// Module ID: 20253
+// Function ID: 20254
 // Name: ThreadManager
-// Dependencies: [502, 5092, 7816, 504, 572, 9046, 2]
+// Dependencies: [502, 5092, 7816, 504, 572, 9045, 2]
 
-// Module 20258 (ThreadManager)
+// Module 20253 (ThreadManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9046 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9045 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;

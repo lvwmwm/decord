@@ -1,10 +1,10 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15212
+// Function ID: 15213
 // Name: useYouBarSettingsSafeArea
 // Dependencies: [1627, 7705, 1357, 2]
 // Exports: useYouBarSettingsCustomHeaderPaddingTop, useYouBarSettingsOutsideSafeAreaTop
 
-// Module 15215 (useYouBarSettingsSafeArea)
+// Module 15212 (useYouBarSettingsSafeArea)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7705 */;

@@ -1,17 +1,17 @@
-// Module ID: 14738
-// Function ID: 14739
+// Module ID: 14734
+// Function ID: 14735
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 13703, 21, 5243, 575, 5839, 5314, 14739, 1625, 13412, 13704, 1652, 13702, 14544, 2]
+// Dependencies: [32, 19, 17, 13699, 21, 5243, 575, 5839, 5314, 14735, 1625, 13406, 13700, 1652, 13698, 14540, 2]
 
-// Module 14738 (ChatInputRightActions)
+// Module 14734 (ChatInputRightActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import native from "native" /* 5314 */;
-import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13702 */;
-import ChatInputConstants from "ChatInputConstants" /* 13703 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13704 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14544 */;
+import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13698 */;
+import ChatInputConstants from "ChatInputConstants" /* 13699 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13700 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14540 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -80,12 +80,12 @@ class ChatInputRightActions {
     items1 = [tmp15Result, ];
     if (null != suggestedExpressions) {
       const obj5 = { ref: suggestedExpressionsRef, active: keyboardType === channel(1625).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression, channel };
-      const EmojiSuggestionChatButton = tmp(14739).EmojiSuggestionChatButton;
+      const EmojiSuggestionChatButton = tmp(14735).EmojiSuggestionChatButton;
       const merged = Object.assign(suggestedExpressions);
       tmp19 = closure_7(EmojiSuggestionChatButton, obj5);
     } else {
       const obj6 = { active: keyboardType === channel(1625).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
-      const tmp3Result = tmp3(13412);
+      const tmp3Result = tmp3(13406);
       tmp19 = closure_7(tmp3Result, obj6);
     }
     items1[1] = tmp19;
@@ -106,7 +106,7 @@ function LeftSlot(state) {
   const YEETED = native.TransitionStates.YEETED;
   const obj = { visible: state !== YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup };
   ({ animatedStyle, isInteractive } = useChatInputFloatingBounceDefault(obj));
-  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flexDirection", shouldShowThread: "flag_vi" }) };
+  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flexDirection", shouldShowThread: "en-BE" }) };
   items = [wrapperStyle, { width: slotWidth }, animatedStyle];
   useChatInputFloatingBounceDefault(obj);
   View = _modDef1652.View;

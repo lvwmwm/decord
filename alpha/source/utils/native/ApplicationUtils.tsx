@@ -1,10 +1,10 @@
-// Module ID: 12674
-// Function ID: 12675
+// Module ID: 12668
+// Function ID: 12669
 // Name: ApplicationUtils
-// Dependencies: [1072, 12675, 1252, 7587, 5949, 12676, 1084, 6785, 7335, 2118, 7243, 2]
+// Dependencies: [1072, 12669, 1252, 7587, 5949, 12670, 1084, 6785, 7335, 2118, 7243, 2]
 // Exports: installApplication, installPrivateChannelIntegration, openOAuth2Modal
 
-// Module 12674 (ApplicationUtils)
+// Module 12668 (ApplicationUtils)
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,8 +12,8 @@ import asyncRequire from "asyncRequire" /* 2118 */;
 import LinkingDefault from "Linking" /* 5949 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7243 */;
-import Constants2 from "Constants" /* 12675 */;
-import authorizeCallbackDefault from "authorizeCallback" /* 12676 */;
+import Constants2 from "Constants" /* 12669 */;
+import authorizeCallbackDefault from "authorizeCallback" /* 12670 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

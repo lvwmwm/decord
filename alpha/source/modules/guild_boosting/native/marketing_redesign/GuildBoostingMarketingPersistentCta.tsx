@@ -1,10 +1,10 @@
-// Module ID: 15884
-// Function ID: 15885
+// Module ID: 15879
+// Function ID: 15880
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 5244, 1072, 21, 5243, 575, 563, 1652, 5876, 5830, 7654, 5866, 10736, 2]
+// Dependencies: [19, 17, 5244, 1072, 21, 5243, 575, 563, 1652, 5876, 5830, 7654, 5866, 10730, 2]
 // Exports: default
 
-// Module 15884 (GuildBoostingMarketingPersistentCta)
+// Module 15879 (GuildBoostingMarketingPersistentCta)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import spring_spring from "spring/spring" /* 5876 */;
 import GuildIcon from "GuildIcon" /* 7654 */;
-import GuildBoostingSubscribeButtonDefault from "GuildBoostingSubscribeButton" /* 10736 */;
+import GuildBoostingSubscribeButtonDefault from "GuildBoostingSubscribeButton" /* 10730 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;

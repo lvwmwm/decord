@@ -1,10 +1,10 @@
-// Module ID: 9449
-// Function ID: 9450
+// Module ID: 9448
+// Function ID: 9449
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 5243, 575, 7181, 9450, 8429, 5957, 5830, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 7181, 9449, 8429, 5957, 5830, 2]
 // Exports: default
 
-// Module 9449 (SlayerStorefrontItemCard)
+// Module 9448 (SlayerStorefrontItemCard)
 import nativeDefault from "native" /* 575 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7181 */;
 import _modDef8429 from "module_8429" /* 8429 */;

@@ -1,65 +1,84 @@
 // Module ID: 9782
 // Function ID: 9783
-// Dependencies: [9755, 9759, 9731, 9738]
-// Exports: notifyEventProcessors
+// Dependencies: [9731]
+// Exports: getDebugImagesForResources
 
 // Module 9782
 const require = globalThis.__r;
-let _require, closure_3, dependencyMap;
+let _require, obj;
 
-
-export function notifyEventProcessors(arg0, arg1, arg2) {
+function getFilenameToDebugIdMap(arg0) {
+  let _sentryDebugIds;
   let closure_0;
-  let closure_1;
-  let num;
-  const f97930 = function(fn, arg1) {
-    closure_0 = fn;
-    let tmp3 = closure_0[closure_3];
-    let tmp4 = closure_1;
-    if (null !== closure_1) {
-      if (typeof tmp3 === "function") {
-        let obj = {};
-        let tmp13 = obj;
-        let tmp14 = tmp4;
-        let merged = Object.assign(tmp4);
-        let tmp16 = closure_2;
-        let tmp3Result = tmp3(obj, closure_2);
-        let tmp17 = closure_0;
-        let tmp18 = closure_1;
-        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
-        if (tmp5) {
-          let logger = tmp17(tmp18[2]).logger;
-          let tmp6 = globalThis;
-          let _HermesInternal = HermesInternal;
-          let str = "\" dropped event";
-          let str2 = "Event processor \"";
-          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
-        }
-        let tmp8 = arg1;
-        let tmp17Result = tmp17(tmp18[3]);
-        if (tmp17Result.isThenable(tmp3Result)) {
-          let nextPromise = tmp3Result.then(f129106);
-          let nextPromise1 = nextPromise.then(null, arg1);
-        } else {
-          let num = 1;
-          closure_0 = tmp;
-          closure_1 = tmp3Result;
-          closure_2 = tmp16;
-          closure_3 = tmp2 + 1;
-          let self = this;
-          let self2 = this;
-          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f97930);
-          let tmp9 = syncPromise;
-          let nextPromise2 = syncPromise.then(fn);
-          let nextPromise3 = nextPromise2.then(null, arg1);
+  let length;
+  let reduced;
+  _require = arg0;
+  _sentryDebugIds = require("module_9731").GLOBAL_OBJ._sentryDebugIds;
+  if (_sentryDebugIds) {
+    let tmp = globalThis;
+    const _Object = Object;
+    const keys = Object.keys(_sentryDebugIds);
+    const tmp2 = reduced;
+    if (tmp2) {
+      return reduced;
+    }
+    reduced = keys.reduce((acc, item) => {
+      let tmp7;
+      let tmp9;
+      let tmp = obj;
+      if (!tmp) {
+        obj = {};
+        tmp = obj;
+      }
+      if (tmp[item]) {
+        acc[tmp[item][0]] = tmp[item][1];
+      } else {
+        const arr = closure_0(item);
+        let diff = arr.length - 1;
+        if (0 <= diff) {
+          while (true) {
+            let tmp5 = arr[diff];
+            tmp7 = tmp5 && tmp5.filename;
+            tmp9 = _sentryDebugIds[item];
+            if (tmp7) {
+              if (tmp9) {
+                break;
+              }
+            }
+            diff = diff - 1;
+          }
+          acc[tmp7] = tmp9;
+          const items = [tmp7, tmp9];
+          obj[item] = items;
         }
       }
-    }
-    let tmp12 = fn(tmp4);
-  };
-  _require = arg0;
-  dependencyMap = arg1;
-  let closure_2 = arg2;
-  const syncPromise = new require("module_9755").SyncPromise(f97930);
-  return syncPromise;
+      return acc;
+    }, {});
+  } else {
+    return {};
+  }
 }
+
+export function getDebugImagesForResources(arg0, arg1) {
+  const tmp = getFilenameToDebugIdMap(arg0);
+  const items = [];
+  if (tmp) {
+    const iter = arg1[Symbol.iterator]();
+    let nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp7 = nextResult;
+      if (tmp7) {
+        nextResult = tmp[tmp7];
+      }
+      if (nextResult) {
+        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
+        let arr = items.push(obj);
+      }
+      continue;
+    }
+    return items;
+  } else {
+    return items;
+  }
+}
+export { getFilenameToDebugIdMap };

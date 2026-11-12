@@ -1,9 +1,9 @@
-// Module ID: 19223
-// Function ID: 19224
+// Module ID: 19218
+// Function ID: 19219
 // Name: GuildSettingsModalMembers
-// Dependencies: [32, 19, 17, 502, 5473, 5155, 5149, 5114, 5175, 1385, 8339, 1072, 21, 10180, 5243, 575, 1499, 10872, 6288, 5309, 1113, 10866, 1627, 504, 7219, 19224, 8066, 9082, 19225, 7363, 8371, 6854, 8338, 11, 5252, 12, 11562, 7759, 7822, 1187, 8530, 5849, 2]
+// Dependencies: [32, 19, 17, 502, 5473, 5155, 5149, 5114, 5175, 1385, 8339, 1072, 21, 10178, 5243, 575, 1499, 10866, 6288, 5309, 1113, 10860, 1627, 504, 7219, 19219, 8066, 9081, 19220, 7363, 8371, 6854, 8338, 11, 5252, 12, 11556, 7759, 7822, 1187, 8530, 5849, 2]
 
-// Module 19223 (GuildSettingsModalMembers)
+// Module 19218 (GuildSettingsModalMembers)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,8 +12,8 @@ import intl4 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
 import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7219 */;
-import _mod10180 from "module_10180" /* 10180 */;
-import RolePillDefault from "RolePill" /* 10872 */;
+import _mod10178 from "module_10178" /* 10178 */;
+import RolePillDefault from "RolePill" /* 10866 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -28,7 +28,7 @@ import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
-const _modDef10180 = _mod10180;
+const _modDef10178 = _mod10178;
 let dependencyMap, navigation, viewableItems;
 
 let closure_15;
@@ -39,7 +39,7 @@ let obj3;
 const View = react_native.View;
 const GuildSettingsSections = Constants.GuildSettingsSections;
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = Fragment);
-let items = [_mod10180.AutocompleterResultTypes.USER];
+let items = [_mod10178.AutocompleterResultTypes.USER];
 let createStyles = createStyles_mod;
 let obj = { containerInner: obj2, searchFieldContainer: obj3, roleList: { flexDirection: "row", flexWrap: "wrap", overflow: "hidden", paddingTop: 4 } };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
@@ -111,7 +111,7 @@ let closure_20 = react.memo(function GuildSettingsModalMember(guild) {
       end
     };
     tmp12Result = null;
-    const tmp14 = guildMember(10866);
+    const tmp14 = guildMember(10860);
     if (mapped.length > 0) {
       const obj5 = { style: tmp.roleList, pointerEvents: "none", children: mapped };
       tmp12Result = tmp12(View, obj5);
@@ -129,8 +129,8 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   let obj10;
   let obj12;
   let tmp35Result;
-  const f118518 = () => {
-    const tmp = new _modDef10180((arg0) => {
+  const f118527 = () => {
+    const tmp = new _modDef10178((arg0) => {
       closure_1_10(arg0);
       closure_1_14(false);
     }, items, 100);
@@ -201,9 +201,9 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   const tmp16 = guildLoaded(sortedGuildRoles.useState(false), 2);
   first2 = tmp16[0];
   let closure_14 = tmp16[1];
-  const first3 = guildLoaded(sortedGuildRoles.useState(f118518), 2)[0];
+  const first3 = guildLoaded(sortedGuildRoles.useState(f118527), 2)[0];
   const items8 = [guildId, stateFromStoresArray, first, stateFromStores1, first1];
-  const tmp18 = guildLoaded(sortedGuildRoles.useState(f118518), 2);
+  const tmp18 = guildLoaded(sortedGuildRoles.useState(f118527), 2);
   const memo = sortedGuildRoles.useMemo(() => {
     function guildRoleIsFiltered(roles) {
       let tmp2 = null != stateFromStores1;
@@ -224,7 +224,7 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
       const nextResult = iter2.next();
       while (iter2 !== undefined) {
         let tmp21 = nextResult;
-        if (nextResult.type === _mod10180.AutocompleterResultTypes.USER) {
+        if (nextResult.type === _mod10178.AutocompleterResultTypes.USER) {
           let member = GuildMemberStore.getMember(guildId, tmp21.record.id);
           let tmp28 = member;
           let guildRoleIsFilteredResult = null == member;

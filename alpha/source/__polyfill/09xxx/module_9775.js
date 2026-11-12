@@ -1,274 +1,236 @@
 // Module ID: 9775
 // Function ID: 9776
-// Dependencies: [32, 9732, 9776, 9737, 9778]
-// Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
+// Dependencies: [32, 9776, 9736, 9737, 9733]
+// Exports: normalizeUrlToBase
 
 // Module 9775
-import _mod9732 from "module_9732" /* 9732 */;
+import _mod9733 from "module_9733" /* 9733 */;
+import _mod9736 from "module_9736" /* 9736 */;
 import _mod9737 from "module_9737" /* 9737 */;
-import _mod9776 from "module_9776" /* 9776 */;
-import _mod9778 from "module_9778" /* 9778 */;
+import memoBuilder from "memoBuilder" /* 9776 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let _require;
+let hasOwnProperty;
 
-function forEachEnvelopeItem(arg0, fn) {
-  const tmp = arg0[1];
-  for (const item10007 of tmp) {
-    if (fn(item10007, item10007[0].type)) {
-      obj.return();
-      let flag = true;
-      return true;
-    }
-  }
-  return false;
-}
-let closure_4 = { session: "session", sessions: "session", attachment: "attachment", transaction: "transaction", event: "error", client_report: "internal", user_report: "default", profile: "profile", profile_chunk: "profile", replay_event: "replay", replay_recording: "replay", check_in: "monitor", feedback: "feedback", span: "span", statsd: "metric_bucket", raw_security: "security" };
-
-export function addItemToEnvelope(arg0, arg1) {
-  const tmp2 = _slicedToArray(arg0, 2);
-  const items = [tmp2[0], ];
-  const items1 = [];
-  items1[HermesBuiltin.arraySpread(items1, tmp2[1], 0)] = arg1;
-  items[1] = items1;
-  return items;
-}
-export function createAttachmentEnvelopeItem(data) {
-  let data1;
-  if (typeof data.data === "string") {
-    data = data.data;
-    if (_mod9732.GLOBAL_OBJ.__SENTRY__) {
-      let encodePolyfillResult;
-      if (_mod9732.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-        const __SENTRY__ = tmp(9732).GLOBAL_OBJ.__SENTRY__;
-        encodePolyfillResult = __SENTRY__.encodePolyfill(data);
-      }
-      data1 = encodePolyfillResult;
-    }
-    const _TextEncoder = TextEncoder;
-    const self = this;
-    const self2 = this;
-    const encoder = new TextEncoder();
-    encodePolyfillResult = encoder.encode(data);
-  } else {
-    data1 = data.data;
-  }
-  const items = [, ];
-  const obj = _mod9737;
-  const obj2 = { type: "attachment", length: data1.length, filename: data.filename, content_type: data.contentType, attachment_type: data.attachmentType };
-  items[0] = obj.dropUndefinedKeys(obj2);
-  items[1] = data1;
-  return items;
-}
-export function createEnvelope(arg0) {
-  let items = arg1;
+function normalize(arg0) {
+  let num = arg1;
   if (arg1 === undefined) {
-    items = [];
+    num = 100;
   }
-  const items1 = [arg0, items];
-  return items1;
-}
-export function createEventEnvelopeHeaders(event_id, sdk, arg2, arg3) {
-  let date;
-  let dropUndefinedKeys;
-  let obj5;
-  let obj6;
-  const obj = { event_id: event_id.event_id, sent_at: date.toISOString() };
-  let tmp2 = sdk;
-  date = new Date();
-  if (tmp2) {
-    tmp2 = { sdk };
-    const obj2 = { sdk };
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = Infinity;
   }
-  const merged = Object.assign(tmp2);
-  let tmp4 = arg2 && arg3;
-  if (tmp4) {
-    const obj3 = { dsn: obj5.dsnToString(arg3) };
-    tmp4 = obj3;
-    obj5 = _mod9778;
-  }
-  const merged1 = Object.assign(tmp4);
-  let tmp8 = tmp;
-  if (tmp8) {
-    const obj4 = { trace: dropUndefinedKeys(obj6) };
-    obj6 = {};
-    dropUndefinedKeys = _mod9737.dropUndefinedKeys;
-    _mod9737;
-    const merged2 = Object.assign(tmp);
-    tmp8 = obj4;
-  }
-  const merged3 = Object.assign(tmp8);
-  return obj;
-}
-export function createSpanEnvelopeItem(arg0) {
-  const items = [{ type: "span" }, arg0];
-  return items;
-}
-export function envelopeContainsItemType(arg0, arg1) {
-  let closure_0 = arg1;
-  return forEachEnvelopeItem(arg0, (arg0, arg1) => closure_0.includes(arg1));
-}
-export function envelopeItemTypeToDataCategory(arg0) {
-  return closure_4[arg0];
-}
-export { forEachEnvelopeItem };
-export function getSdkMetadataForEnvelopeHeader(sdk) {
-  const tmp = sdk;
-  if (tmp) {
-    if (sdk.sdk) {
-      const obj = { name: null, version: null };
-      ({ name: obj.name, version: obj.version } = sdk.sdk);
-      return obj;
-    }
-  }
-}
-export function parseEnvelope(arr) {
-  let tmp = arr;
-  if (typeof arr === "string") {
-    if (require("module_9732").GLOBAL_OBJ.__SENTRY__) {
-      let encodePolyfillResult;
-      if (require("module_9732").GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-        let __SENTRY__ = tmp12(9732).GLOBAL_OBJ.__SENTRY__;
-        encodePolyfillResult = __SENTRY__.encodePolyfill(arr);
-      }
-      tmp = encodePolyfillResult;
-    }
-    const _TextEncoder = TextEncoder;
-    const self = this;
-    const self2 = this;
-    const encoder = new TextEncoder();
-    const tmp3 = encoder;
-    encodePolyfillResult = encoder.encode(arr);
-  }
-  function readJson() {
-    let length = closure_0.indexOf(10);
-    if (length < 0) {
-      length = closure_0.length;
-    }
-    const _JSON = JSON;
-    const subarrayResult = closure_0.subarray(0, length);
-    closure_0 = closure_0.subarray(length + 1);
-    if (_mod9732.GLOBAL_OBJ.__SENTRY__) {
-      let decodePolyfillResult;
-      if (_mod9732.GLOBAL_OBJ.__SENTRY__.decodePolyfill) {
-        const __SENTRY__ = tmp3(9732).GLOBAL_OBJ.__SENTRY__;
-        decodePolyfillResult = __SENTRY__.decodePolyfill(subarrayResult);
-      }
-      return parse(decodePolyfillResult);
-    }
-    const decoder = new TextDecoder();
-    decodePolyfillResult = decoder.decode(subarrayResult);
-  }
-  _require = tmp;
-  const items = [];
-  const json = readJson();
-  while (_require.length) {
-    let subarrayResult;
-    let json1 = readJson();
-    let length;
-    if (typeof json1.length === "number") {
-      length = json1.length;
-    }
-    let items1 = [json1, ];
-    let push = items.push;
-    if (length) {
-      subarrayResult = require("Discord");
-      _require = _require.subarray(length + 1);
-    } else {
-      subarrayResult = readJson();
-    }
-    items1[1] = subarrayResult;
-    arr = push(items1);
-  }
-  const items2 = [json, items];
-  return items2;
-}
-export function serializeEnvelope(arg0) {
-  let sum;
-  let tmp4;
-  function concatBuffers(arr) {
-    const uint8Array = new Uint8Array(arr.reduce((acc, item) => acc + item.length, 0));
-    let num = 0;
-    const iter = arr[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let result = uint8Array.set(nextResult, num);
-      num = num + nextResult.length;
-      continue;
-    }
-    return uint8Array;
-  }
-  function append(json) {
-    let require;
-    if (typeof require === "string") {
-      if (typeof json === "string") {
-        require = arr + json;
-      } else {
-        if (_mod9732.GLOBAL_OBJ.__SENTRY__) {
-          let encodePolyfillResult;
-          if (_mod9732.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-            const __SENTRY__2 = tmp11(9732).GLOBAL_OBJ.__SENTRY__;
-            encodePolyfillResult = __SENTRY__2.encodePolyfill(arr);
-          }
-          require = [encodePolyfillResult, json];
-        }
-        const _TextEncoder2 = TextEncoder;
-        const self3 = this;
-        const self4 = this;
-        const encoder2 = new TextEncoder();
-        encodePolyfillResult = encoder2.encode(arr);
-      }
-    } else {
-      let tmp4 = json;
-      const push = arr.push;
-      if (typeof json === "string") {
-        if (_mod9732.GLOBAL_OBJ.__SENTRY__) {
-          let encodePolyfillResult1;
-          if (_mod9732.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-            const __SENTRY__ = tmp9(9732).GLOBAL_OBJ.__SENTRY__;
-            encodePolyfillResult1 = __SENTRY__.encodePolyfill(json);
-          }
-          tmp4 = encodePolyfillResult1;
-        }
-        const _TextEncoder = TextEncoder;
-        const self = this;
-        const self2 = this;
-        const encoder = new TextEncoder();
-        encodePolyfillResult1 = encoder.encode(json);
-      }
-      push(tmp4);
-    }
-  }
-  let tmp = _slicedToArray(arg0, 2);
-  const tmp2 = tmp[1];
-  let require = JSON.stringify(tmp[0]);
-  const tmp3 = tmp2[Symbol.iterator]();
-  if (tmp3 === undefined) {
-    let tmp20 = require;
-    if (typeof require !== "string") {
-      tmp20 = concatBuffers(tmp19);
-    }
-    return tmp20;
-  } else {
-    const tmp6 = _slicedToArray(tmp4, 2);
-    const _JSON = JSON;
+  try {
+    return visit("", arg0, num, num2);
+  } catch (tmp5) {
     const _HermesInternal = HermesInternal;
-    append("\n" + JSON.stringify(tmp6[0]) + "\n");
-    if (typeof tmp6[1] !== "string") {
-      const _Uint8Array = Uint8Array;
-      if (!(tmp6[1] instanceof Uint8Array)) {
-        let json;
-        try {
-          const _JSON2 = JSON;
-          json = JSON.stringify(tmp8);
-        } catch (err) {
-          const _JSON3 = JSON;
-          const normalizer = _mod9776;
-          json = stringify(normalizer.normalize(tmp8));
+    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
+    return obj;
+  }
+}
+function visit(arg0, __sentry_skip_normalization__) {
+  function stringifyValue(arg0, _events) {
+    function getConstructorName(_events) {
+      const prototypeOf = Object.getPrototypeOf(_events);
+      let str = "null prototype";
+      if (prototypeOf) {
+        str = prototypeOf.constructor.name;
+      }
+      return str;
+    }
+    try {
+      let str = "domain";
+      if ("domain" === arg0) {
+        if (_events) {
+          if (typeof _events === "object") {
+            if (_events._events) {
+              return "[Domain]";
+            }
+          }
         }
-        append(json);
+      }
+      if ("domainEmitter" === arg0) {
+        return "[DomainEmitter]";
+      } else {
+        if (undefined !== global) {
+          if (_events === global) {
+            return "[Global]";
+          }
+        }
+        const _window = window;
+        if (typeof window !== "undefined") {
+          const _window2 = window;
+          if (_events === window) {
+            return "[Window]";
+          }
+        }
+        const _document = document;
+        if (typeof document !== "undefined") {
+          const _document2 = document;
+          if (_events === document) {
+            return "[Document]";
+          }
+        }
+        const obj = _mod9737;
+        if (obj.isVueViewModel(_events)) {
+          return "[VueViewModel]";
+        } else {
+          const tmp4Result = _mod9737;
+          if (tmp4Result.isSyntheticEvent(_events)) {
+            return "[SyntheticEvent]";
+          } else {
+            if (typeof _events === "number") {
+              const _Number = Number;
+              if (!Number.isFinite(_events)) {
+                const _HermesInternal = HermesInternal;
+                return "[" + _events + "]";
+              }
+            }
+            if (typeof _events === "function") {
+              const _HermesInternal4 = HermesInternal;
+              const tmp4Result2 = _mod9733;
+              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
+            } else if (typeof _events === "symbol") {
+              const _String2 = String;
+              const _HermesInternal3 = HermesInternal;
+              return "[" + String(_events) + "]";
+            } else if (typeof _events === "bigint") {
+              const _String = String;
+              const _HermesInternal2 = HermesInternal;
+              return "[BigInt: " + String(_events) + "]";
+            } else {
+              let combined;
+              const _HermesInternal6 = HermesInternal;
+              const obj4 = /^HTML(\w*)Element$/;
+              const tmp9 = getConstructorName(_events);
+              if (obj4.test(tmp9)) {
+                combined = concat(tmp10, "]");
+              } else {
+                combined = concat(tmp10, "]");
+              }
+              return combined;
+            }
+          }
+        }
+      }
+    } catch (tmp7) {
+      const _HermesInternal5 = HermesInternal;
+      return "**non-serializable** (" + tmp7 + ")";
+    }
+  }
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = Infinity;
+  }
+  let num2 = arg3;
+  if (arg3 === undefined) {
+    num2 = Infinity;
+  }
+  let memoBuilderResult = arg4;
+  if (arg4 === undefined) {
+    let obj = memoBuilder;
+    memoBuilderResult = obj.memoBuilder();
+  }
+  _slicedToArray(memoBuilderResult, 2);
+  if (null != __sentry_skip_normalization__) {
+    const items = ["boolean", "string"];
+    if (!items.includes(typeof __sentry_skip_normalization__)) {
+      if (typeof __sentry_skip_normalization__ === "number") {
+        let _Number = Number;
+      }
+      let tmp9 = arg0;
+      let str = stringifyValue(arg0, __sentry_skip_normalization__);
+      if (str.startsWith("[object ")) {
+        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
+          return __sentry_skip_normalization__;
+        } else {
+          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
+            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
+          }
+          if (0 === num) {
+            return str.replace("object ", "");
+          } else if (tmp6(__sentry_skip_normalization__)) {
+            return "[Circular ~]";
+          } else {
+            if (__sentry_skip_normalization__) {
+              if (typeof __sentry_skip_normalization__.toJSON === "function") {
+                try {
+                  const tmp10 = visit;
+                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
+                } catch (err) {
+                }
+              }
+            }
+            const _Array = Array;
+            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
+            const obj2 = _mod9736;
+            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
+            const keys = Object.keys();
+            if (keys !== undefined) {
+              while (keys[tmp] !== undefined) {
+                let _Object = Object;
+                hasOwnProperty = Object.prototype.hasOwnProperty;
+                let tmp28 = tmp21;
+                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
+                  continue;
+                } else {
+                  if (tmp20 >= num2) {
+                    let str4 = "[MaxProperties ~]";
+                    tmp14[tmp21] = "[MaxProperties ~]";
+                    break;
+                  } else {
+                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
+                    let num6 = tmp20 + 1;
+                    continue;
+                  }
+                  break;
+                }
+                break;
+              }
+            }
+            tmp7(__sentry_skip_normalization__);
+            return tmp14;
+          }
+        }
+      } else {
+        return str;
       }
     }
-    append(tmp6[1]);
   }
+  return __sentry_skip_normalization__;
+}
+function normalizeToSize(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 3;
+  }
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = 102400;
+  }
+  let tmp = normalize(arg0, num);
+  const str = encodeURI(JSON.stringify(tmp));
+  if (~(-str.split(/%..|./).length) > num2) {
+    tmp = normalizeToSize(arg0, num - 1, num2);
+  }
+  return tmp;
+}
+
+export { normalize };
+export { normalizeToSize };
+export function normalizeUrlToBase(arg0, str) {
+  let str2 = arg0;
+  str = str.replace(/\\/g, "/");
+  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+  try {
+    const _decodeURI = decodeURI;
+    str2 = decodeURI(arg0);
+  } catch (err) {
+  }
+  const str3 = str2.replace(/\\/g, "/");
+  const replace = str3.replace(/webpack:\/?/g, "").replace;
+  str3.replace(/webpack:\/?/g, "");
+  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
+  return replace(regExp, "app:///");
 }

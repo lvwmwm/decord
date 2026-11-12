@@ -1,10 +1,10 @@
-// Module ID: 12847
-// Function ID: 12848
+// Module ID: 12841
+// Function ID: 12842
 // Name: StageMusicManager
-// Dependencies: [5092, 2130, 5146, 5918, 6877, 5097, 12845, 10970, 504, 6886, 6880, 7816, 2]
+// Dependencies: [5092, 2130, 5146, 5918, 6877, 5097, 12839, 10964, 504, 6886, 6880, 7816, 2]
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 12847 (StageMusicManager)
+// Module 12841 (StageMusicManager)
 import StageChannelParticipants from "StageChannelParticipants" /* 6880 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
@@ -12,8 +12,8 @@ import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
 import VoiceStateStore from "VoiceStateStore" /* 5918 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6877 */;
 import StageInstanceStore from "StageInstanceStore" /* 5097 */;
-import StageMusicStore from "StageMusicStore" /* 12845 */;
-import SoundUtils from "SoundUtils" /* 10970 */;
+import StageMusicStore from "StageMusicStore" /* 12839 */;
+import SoundUtils from "SoundUtils" /* 10964 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 

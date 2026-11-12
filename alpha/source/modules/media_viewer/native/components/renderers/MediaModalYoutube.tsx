@@ -1,12 +1,12 @@
-// Module ID: 15105
-// Function ID: 15106
+// Module ID: 15102
+// Function ID: 15103
 // Name: MediaModalYoutube
-// Dependencies: [32, 19, 2117, 1072, 21, 10134, 6773, 8562, 8566, 15106, 1377, 2]
+// Dependencies: [32, 19, 2117, 1072, 21, 10133, 6773, 8562, 8566, 15103, 1377, 2]
 
-// Module 15105 (MediaModalYoutube)
+// Module 15102 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
 import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8562 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 10134 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 10133 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
@@ -44,7 +44,7 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
   let tmp = visible;
   let tmp2 = dependencyMap;
   ({ style, onError, onLoad, onLoadStart, onToggleOverlay } = visible);
-  [playerState, dependencyMap] = react.useState(visible(10134).PlayerState.UNREADY);
+  [playerState, dependencyMap] = react.useState(visible(10133).PlayerState.UNREADY);
   [first1, _slicedToArray] = react.useState(undefined);
   let tmp7 = playerState;
   const tmp8 = playerState(6773)(playerState);
@@ -167,9 +167,9 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
   if (null == youtubeVideoIdFromURI) {
     return null;
   } else {
-    if (playerState === tmp(10134).PlayerState.ERRORED) {
+    if (playerState === tmp(10133).PlayerState.ERRORED) {
       if ("embed_not_allowed" === first1) {
-        return jsx(tmp7(15106), { videoId: youtubeVideoIdFromURI.videoId });
+        return jsx(tmp7(15103), { videoId: youtubeVideoIdFromURI.videoId });
       }
     }
     const tmpResult2 = tmp(1377);
@@ -178,7 +178,7 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
     let str2 = "";
     let str3 = "";
     const obj3 = { ref, style, source: obj4, baseURL, playerState, onDataReceived: callback, onToggleOverlay, javaScriptCanOpenWindowsAutomatically: true, domStorageEnabled: isAndroidResult || undefined, mixedContentMode: str19, nestedScrollEnabled: isAndroidResult || undefined, onError, onLoad, onLoadStart, overScrollMode: str20 };
-    const tmp7Result = tmp7(10134);
+    const tmp7Result = tmp7(10133);
     if (null != youtubeVideoIdFromURI.start) {
       const _HermesInternal = HermesInternal;
       str3 = "'start': " + youtubeVideoIdFromURI.start + ",";

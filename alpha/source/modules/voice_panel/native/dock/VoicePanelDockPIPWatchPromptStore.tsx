@@ -1,9 +1,9 @@
-// Module ID: 19915
-// Function ID: 19916
+// Module ID: 19910
+// Function ID: 19911
 // Name: VoicePanelDockPIPWatchPromptStore
 // Dependencies: [6757, 502, 5146, 6745, 504, 572, 2]
 
-// Module 19915 (VoicePanelDockPIPWatchPromptStore)
+// Module 19910 (VoicePanelDockPIPWatchPromptStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;

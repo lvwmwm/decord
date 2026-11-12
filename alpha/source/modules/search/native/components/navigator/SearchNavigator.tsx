@@ -1,20 +1,20 @@
-// Module ID: 19543
-// Function ID: 19544
+// Module ID: 19538
+// Function ID: 19539
 // Name: SearchNavigator
-// Dependencies: [19, 8999, 19282, 1072, 21, 9062, 7424, 14652, 19435, 19544, 8985, 19538, 19539, 9073, 9074, 1357, 15504, 2]
+// Dependencies: [19, 8998, 19277, 1072, 21, 9061, 7424, 14648, 19430, 19539, 8984, 19533, 19534, 9072, 9073, 1357, 15501, 2]
 
-// Module 19543 (SearchNavigator)
+// Module 19538 (SearchNavigator)
 import Constants from "Constants" /* 1072 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import TrackingConstants from "TrackingConstants" /* 8999 */;
-import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9074 */;
-import TrackingDefault from "Tracking" /* 14652 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19282 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 19435 */;
-import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 19538 */;
+import TrackingConstants from "TrackingConstants" /* 8998 */;
+import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9073 */;
+import TrackingDefault from "Tracking" /* 14648 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19277 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 19430 */;
+import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 19533 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9062 */;
+import NativeStackView from "NativeStackView" /* 9061 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -92,7 +92,7 @@ const memoResult = react.memo(function SearchNavigator(route) {
   };
   items1[1] = closure_7(closure_9.Screen, obj6);
   const obj7 = {
-    name: searchContext(9073).ConversationNavigatorScreens.FOCUS,
+    name: searchContext(9072).ConversationNavigatorScreens.FOCUS,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);

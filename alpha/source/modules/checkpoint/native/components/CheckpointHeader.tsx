@@ -1,10 +1,10 @@
-// Module ID: 14165
-// Function ID: 14166
+// Module ID: 14162
+// Function ID: 14163
 // Name: CheckpointHeader
-// Dependencies: [17, 14150, 6314, 21, 5243, 575, 5491, 6785, 6343, 6344, 1627, 504, 12928, 7368, 14166, 14167, 14154, 1113, 7483, 2]
+// Dependencies: [17, 14146, 6314, 21, 5243, 575, 5491, 6785, 6343, 6344, 1627, 504, 12922, 7368, 14163, 14164, 14150, 1113, 7483, 2]
 // Exports: default
 
-// Module 14165 (CheckpointHeader)
+// Module 14162 (CheckpointHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,10 +15,10 @@ import _modDef6343 from "module_6343" /* 6343 */;
 import _modDef6344 from "module_6344" /* 6344 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import XSmallIcon from "XSmallIcon" /* 7483 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 14154 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 14166 */;
-import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 14167 */;
-import CheckpointStore from "CheckpointStore" /* 14150 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 14150 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 14163 */;
+import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 14164 */;
+import CheckpointStore from "CheckpointStore" /* 14146 */;
 import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -78,7 +78,7 @@ export default function CheckpointHeader(logoAnimatedUri) {
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => isMuted.isMuted);
   if (stateFromStores) {
-    VoiceNormalIcon = tmp8(12928).VoiceXIcon;
+    VoiceNormalIcon = tmp8(12922).VoiceXIcon;
   } else {
     VoiceNormalIcon = tmp8(7368).VoiceNormalIcon;
   }

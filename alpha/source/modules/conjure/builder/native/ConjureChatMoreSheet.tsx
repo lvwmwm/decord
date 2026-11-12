@@ -1,15 +1,15 @@
-// Module ID: 13200
-// Function ID: 13201
+// Module ID: 13194
+// Function ID: 13195
 // Name: ConjureChatMoreSheet
-// Dependencies: [19, 13201, 21, 5489, 7888, 7387, 7379, 7268, 13053, 13203, 7885, 1113, 4079, 7680, 2]
+// Dependencies: [19, 13195, 21, 5489, 7888, 7387, 7379, 7268, 13047, 13197, 7885, 1113, 4079, 7680, 2]
 // Exports: default
 
-// Module 13200 (ConjureChatMoreSheet)
+// Module 13194 (ConjureChatMoreSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import react from "react" /* 19 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 13201 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 13195 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -67,11 +67,11 @@ export default function ConjureChatMoreSheet(canAnnotate) {
   let obj = id(7268);
   const isConjureProjectMuted = obj.useIsConjureProjectMuted(id);
   const active = closure_5(id).active;
-  const obj2 = id(13053);
+  const obj2 = id(13047);
   const conjureControlActive = obj2.useConjureControlActive(id);
   const obj3 = { muted: isConjureProjectMuted, annotate: tmp };
-  const conjureChatMoreSections = id(13203).conjureChatMoreSections;
-  id(13203);
+  const conjureChatMoreSections = id(13197).conjureChatMoreSections;
+  id(13197);
   const merged1 = Object.assign(merged);
   if (canAnnotate) {
     tmp = { active, busy: conjureControlActive, onToggle };

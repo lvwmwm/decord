@@ -1,13 +1,13 @@
-// Module ID: 8785
-// Function ID: 8786
+// Module ID: 8784
+// Function ID: 8785
 // Name: createMessage
-// Dependencies: [8677, 1404, 1385, 1072, 38, 8786, 2]
+// Dependencies: [8677, 1404, 1385, 1072, 38, 8785, 2]
 // Exports: createBotMessage, default, userRecordToServer
 
-// Module 8785 (createMessage)
+// Module 8784 (createMessage)
 import _modDef38 from "module_38" /* 38 */;
 import ReferencedMessageStore2 from "ReferencedMessageStore" /* 8677 */;
-import createNonce from "createNonce" /* 8786 */;
+import createNonce from "createNonce" /* 8785 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,45 +1,36 @@
 // Module ID: 13793
 // Function ID: 13794
 // Name: tokenize
-// Dependencies: [13730]
+// Dependencies: [13726]
 
 // Module 13793 (tokenize)
-import tokenize from "tokenize" /* 13730 */;
+import tokenize from "tokenize" /* 13726 */;
 
 let items;
 let obj2;
-const Comma = tokenize.TYPE.Comma;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
 const obj = {
-  name: "MediaQueryList",
+  name: "Parentheses",
   structure: obj2,
-  parse(arg0) {
+  parse(call, arg1) {
     const self = this;
-    const list = this.createList();
-    const scanner = this.scanner;
-    scanner.skipSC();
-    if (!this.scanner.eof) {
-      list.push(self.MediaQuery(arg0));
-      if (self.scanner.tokenType === Comma) {
-        const iter = self.scanner;
-        iter.next();
-        while (!self.scanner.eof) {
-          let arr3 = list.push(self.MediaQuery(arg0));
-          if (self.scanner.tokenType !== Comma) {
-            break;
-          }
-        }
-      }
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(LeftParenthesis);
+    const callResult = call.call(self, arg1);
+    if (!self.scanner.eof) {
+      self.eat(RightParenthesis);
     }
-    const element = { type: "MediaQueryList", loc: self.getLocationFromList(list), children: list };
+    const element = { type: "Parentheses", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
     return element;
   },
   generate(arg0) {
-    this.children(arg0, function() {
-      this.chunk(",");
-    });
+    this.chunk("(");
+    this.children(arg0);
+    this.chunk(")");
   }
 };
 obj2 = { children: items };
-items = [["MediaQuery"]];
+items = [[]];
 
 export default obj;

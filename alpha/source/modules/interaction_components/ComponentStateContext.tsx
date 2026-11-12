@@ -1,7 +1,7 @@
 // Module ID: 8591
 // Function ID: 8592
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 8592, 5176, 5092, 5155, 6874, 1385, 12283, 21, 2116, 6321, 6319, 6318, 504, 9138, 7223, 15557, 11342, 572, 5836, 6313, 2]
+// Dependencies: [32, 19, 8592, 5176, 5092, 5155, 6874, 1385, 12277, 21, 2116, 6321, 6319, 6318, 504, 9137, 7223, 15554, 11336, 572, 5836, 6313, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
 // Module 8591 (ComponentStateContext)
@@ -11,7 +11,7 @@ import Server from "Server" /* 2116 */;
 import useMountEffectDefault from "useMountEffect" /* 5836 */;
 import InteractionTypes from "InteractionTypes" /* 6318 */;
 import InteractionComponentTypes from "InteractionComponentTypes" /* 6321 */;
-import InteractionUtils from "InteractionUtils" /* 11342 */;
+import InteractionUtils from "InteractionUtils" /* 11336 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import InteractionStore from "InteractionStore" /* 8592 */;
@@ -20,7 +20,7 @@ import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 6874 */;
 import UserStore from "UserStore" /* 1385 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 12283 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 12277 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -132,8 +132,8 @@ function useShouldDisableInteractiveComponents(channel_id) {
     return flag;
   });
   let guild_id;
-  const useCurrentUserCommunicationDisabled = channel(9138).useCurrentUserCommunicationDisabled;
-  channel(9138);
+  const useCurrentUserCommunicationDisabled = channel(9137).useCurrentUserCommunicationDisabled;
+  channel(9137);
   if (channel != null) {
     guild_id = channel.guild_id;
   }

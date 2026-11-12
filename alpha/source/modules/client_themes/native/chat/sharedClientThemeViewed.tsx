@@ -1,10 +1,10 @@
-// Module ID: 14449
-// Function ID: 14450
+// Module ID: 14445
+// Function ID: 14446
 // Name: sharedClientThemeViewed
 // Dependencies: [6275, 1260, 2]
 // Exports: handleSharedClientThemeViewed
 
-// Module 14449 (sharedClientThemeViewed)
+// Module 14445 (sharedClientThemeViewed)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import useTrackImpression from "useTrackImpression" /* 6275 */;
 import size from "module_2" /* 2 */;

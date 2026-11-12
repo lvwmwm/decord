@@ -1,25 +1,25 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 10067
+// Function ID: 10068
 // Name: captureAdUserAction
-// Dependencies: [5, 8742, 1072, 5282, 8759, 8738, 8768, 8774, 1252, 1266, 1377, 8715, 10069, 8769, 8750, 10071, 2]
+// Dependencies: [5, 8741, 1072, 5282, 8758, 8737, 8767, 8773, 1252, 1266, 1377, 8714, 10068, 8768, 8749, 10070, 2]
 // Exports: captureAdUserAction
 
-// Module 10068 (captureAdUserAction)
+// Module 10067 (captureAdUserAction)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import AdCreativeType from "AdCreativeType" /* 5282 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 8715 */;
-import QuestDataUtils from "QuestDataUtils" /* 8738 */;
-import getQuestLogger from "getQuestLogger" /* 8750 */;
-import AnalyticsActions from "AnalyticsActions" /* 8759 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8768 */;
-import AdDataUtils from "AdDataUtils" /* 8769 */;
-import QuestHomeSearchSession from "QuestHomeSearchSession" /* 8774 */;
-import BrandSafetyContext from "BrandSafetyContext" /* 10069 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10071 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8714 */;
+import QuestDataUtils from "QuestDataUtils" /* 8737 */;
+import getQuestLogger from "getQuestLogger" /* 8749 */;
+import AnalyticsActions from "AnalyticsActions" /* 8758 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8767 */;
+import AdDataUtils from "AdDataUtils" /* 8768 */;
+import QuestHomeSearchSession from "QuestHomeSearchSession" /* 8773 */;
+import BrandSafetyContext from "BrandSafetyContext" /* 10068 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10070 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 8742 */;
+import QuestStore from "QuestStore" /* 8741 */;
 import size from "module_2" /* 2 */;
 
 let c2, c5, c7, c8, click_id;

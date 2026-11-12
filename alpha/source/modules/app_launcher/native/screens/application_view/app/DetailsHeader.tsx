@@ -1,14 +1,14 @@
-// Module ID: 13381
-// Function ID: 13382
+// Module ID: 13375
+// Function ID: 13376
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 5243, 575, 1652, 12608, 13382, 8494, 6773, 7352, 5866, 1113, 5485, 5488, 1705, 7467, 5830, 1092, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1652, 12602, 13376, 8494, 6773, 7352, 5866, 1113, 5485, 5488, 1705, 7467, 5830, 1092, 2]
 
-// Module 13381 (DetailsHeader)
+// Module 13375 (DetailsHeader)
 import nativeDefault from "native" /* 575 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import timingPresets from "timingPresets" /* 5488 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 13382 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 13376 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -91,7 +91,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   let closure_18;
   viewContainerStyle = viewContainerStyle.viewContainerStyle;
   let tmp = ref2();
-  let obj = ref(12608);
+  let obj = ref(12602);
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
   ref = react.useRef(null);
   let tmp7 = first1(react.useState(false), 2);
@@ -118,9 +118,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   DetailsHeaderTsx1.__workletHash = 9372666213791;
   DetailsHeaderTsx1.__initData = tmp12;
   const animatedStyle = obj4.useAnimatedStyle(DetailsHeaderTsx1);
-  const tmp2Result = ref(12608);
+  const tmp2Result = ref(12602);
   const sectionName = tmp2Result.getSectionName(application);
-  const tmp2Result3 = ref(12608);
+  const tmp2Result3 = ref(12602);
   str = tmp2Result3.getSectionDescription(application);
   let tmp30Result5 = null != str;
   if (tmp30Result5) {

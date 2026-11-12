@@ -1,10 +1,10 @@
-// Module ID: 11983
-// Function ID: 11984
+// Module ID: 11977
+// Function ID: 11978
 // Name: SafetyTipsSection
-// Dependencies: [19, 17, 21, 5243, 575, 6274, 11984, 5866, 1113, 8326, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 6274, 11978, 5866, 1113, 8326, 2]
 // Exports: default
 
-// Module 11983 (SafetyTipsSection)
+// Module 11977 (SafetyTipsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import SafetyTipsRowDefault from "SafetyTipsRow" /* 8326 */;
@@ -30,7 +30,7 @@ export default function SafetyTipsContainer(safetyTips) {
   let showHeader = safetyTips.showHeader;
   const description = safetyTips.description;
   const tmp = closure_6();
-  let obj = { style: tmp.image, children: closure_4(safetyTips(11984).SafetyBookletSpotIllustration, {}) };
+  let obj = { style: tmp.image, children: closure_4(safetyTips(11978).SafetyBookletSpotIllustration, {}) };
   const Stack = safetyTips(6274).Stack;
   const items = [closure_4(View, obj), , ];
   const Stack2 = safetyTips(6274).Stack;

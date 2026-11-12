@@ -1,11 +1,11 @@
-// Module ID: 13106
-// Function ID: 13107
+// Module ID: 13100
+// Function ID: 13101
 // Name: ConjureSmartContext
-// Dependencies: [32, 19, 7257, 7301, 7306, 504, 13107, 1113, 4079, 7325, 2]
+// Dependencies: [32, 19, 7257, 7301, 7306, 504, 13101, 1113, 4079, 7325, 2]
 // Exports: useConjureContextSwitchRow, useConjureSmartContextSetting
 
-// Module 13106 (ConjureSmartContext)
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 13107 */;
+// Module 13100 (ConjureSmartContext)
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 13101 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConjureChatStore from "ConjureChatStore" /* 7257 */;

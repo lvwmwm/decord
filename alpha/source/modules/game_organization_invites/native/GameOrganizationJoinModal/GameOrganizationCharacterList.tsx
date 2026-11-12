@@ -1,10 +1,10 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 13974
+// Function ID: 13975
 // Name: GameOrganizationCharacterList
-// Dependencies: [19, 17, 21, 5243, 575, 1113, 2549, 5866, 6274, 7557, 5839, 5315, 7381, 13976, 7680, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 1113, 2549, 5866, 6274, 7557, 5839, 5315, 7381, 13972, 7680, 2]
 // Exports: default
 
-// Module 13978 (GameOrganizationCharacterList)
+// Module 13974 (GameOrganizationCharacterList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2549 from "module_2549" /* 2549 */;
@@ -13,7 +13,7 @@ import useToken from "useToken" /* 5839 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import Stack_Stack from "Stack/Stack" /* 6274 */;
 import CircleErrorIcon2 from "CircleErrorIcon" /* 7557 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 13976 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 13972 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;

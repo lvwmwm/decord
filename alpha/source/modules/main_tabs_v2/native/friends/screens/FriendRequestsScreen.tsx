@@ -1,18 +1,18 @@
-// Module ID: 19430
-// Function ID: 19431
+// Module ID: 19425
+// Function ID: 19426
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 6969, 5185, 1385, 10177, 1072, 10780, 21, 5243, 575, 19431, 2118, 6207, 563, 6970, 5068, 19057, 6971, 11, 7852, 7871, 1252, 15667, 7196, 19432, 1342, 8410, 1113, 1499, 7680, 7379, 5866, 7917, 10204, 11190, 7364, 11728, 17604, 10510, 2]
+// Dependencies: [32, 19, 17, 6969, 5185, 1385, 10175, 1072, 10774, 21, 5243, 575, 19426, 2118, 6207, 563, 6970, 5068, 19052, 6971, 11, 7852, 7871, 1252, 15664, 7196, 19427, 1342, 8410, 1113, 1499, 7680, 7379, 5866, 7917, 10202, 11184, 7364, 11722, 17599, 10508, 2]
 // Exports: default
 
-// Module 19430 (FriendRequestsScreen)
+// Module 19425 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useAlertStore from "useAlertStore" /* 6207 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import UserRowConstants from "UserRowConstants" /* 10177 */;
-import Constants2 from "Constants" /* 10780 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 19432 */;
+import UserRowConstants from "UserRowConstants" /* 10175 */;
+import Constants2 from "Constants" /* 10774 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 19427 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6969 */;
@@ -138,9 +138,9 @@ export default function FriendRequestsScreen() {
   }), 2);
   first = tmp10[0];
   dependencyMap = tmp12;
-  let obj3 = analyticsLocations(15667);
+  let obj3 = analyticsLocations(15664);
   gameRelationshipsByType = obj3.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj4 = analyticsLocations(15667);
+  let obj4 = analyticsLocations(15664);
   gameRelationshipsByType1 = obj4.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   const items3 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -358,10 +358,10 @@ export default function FriendRequestsScreen() {
   const segmentedControlState = useSegmentedControlState(obj7);
   const obj10 = { value: analyticsLocations, children: items11 };
   const AnalyticsLocationProvider = tmp5(7852).AnalyticsLocationProvider;
-  items11 = [outgoingData(tmp2(10204), { absolute: true }), ];
+  items11 = [outgoingData(tmp2(10202), { absolute: true }), ];
   const obj11 = { style: tmp.container, children: items12 };
   items12 = [, , ];
-  const obj12 = { style: tmp.tabs, children: outgoingData(tmp5(11190).SegmentedControl, { state: segmentedControlState }) };
+  const obj12 = { style: tmp.tabs, children: outgoingData(tmp5(11184).SegmentedControl, { state: segmentedControlState }) };
   items12[0] = outgoingData(pendingIncomingIds, obj12);
   let tmp34Result = null;
   if (tmp29) {
@@ -387,7 +387,7 @@ export default function FriendRequestsScreen() {
   if (tmp27) {
     let stringResult;
     const obj16 = { style: tmp.noResultsContainer, children: outgoingData(tmp2Result, obj17) };
-    tmp2Result = tmp2(11728);
+    tmp2Result = tmp2(11722);
     if (first1 === Outgoing.Incoming) {
       const intl5 = tmp5(1113).intl;
       stringResult = intl5.string(tmp5(1113).t["7uvAKe"]);
@@ -395,10 +395,10 @@ export default function FriendRequestsScreen() {
       const intl4 = tmp5(1113).intl;
       stringResult = intl4.string(tmp5(1113).t["yvzX/Z"]);
     }
-    obj17 = { title: stringResult, illustration: tmp5(17604).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
+    obj17 = { title: stringResult, illustration: tmp5(17599).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
     tmp34Result2 = tmp34(tmp35, obj16);
   } else {
-    const UsersFastList = tmp5(10510).UsersFastList;
+    const UsersFastList = tmp5(10508).UsersFastList;
     if (first1 === Outgoing.Incoming) {
       outgoingSection = incomingSection;
     }

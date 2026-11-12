@@ -1,10 +1,10 @@
-// Module ID: 20732
-// Function ID: 20733
+// Module ID: 20727
+// Function ID: 20728
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 5243, 575, 1499, 20710, 20714, 5866, 1113, 6274, 5873, 6781, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5243, 575, 1499, 20705, 20709, 5866, 1113, 6274, 5873, 6781, 2]
 // Exports: default
 
-// Module 20732 (ErrorScreen)
+// Module 20727 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

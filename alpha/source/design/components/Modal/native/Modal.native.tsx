@@ -1,10 +1,10 @@
-// Module ID: 12434
-// Function ID: 12435
+// Module ID: 12428
+// Function ID: 12429
 // Name: Modal
 // Dependencies: [19, 21, 1627, 7427, 7426, 7424, 2]
 // Exports: Modal
 
-// Module 12434 (Modal)
+// Module 12428 (Modal)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import Navigator2 from "Navigator" /* 7424 */;

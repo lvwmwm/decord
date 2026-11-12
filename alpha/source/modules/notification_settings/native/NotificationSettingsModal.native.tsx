@@ -1,10 +1,10 @@
-// Module ID: 20636
-// Function ID: 20637
+// Module ID: 20631
+// Function ID: 20632
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 5096, 5092, 7809, 5473, 5114, 20269, 5185, 6895, 1385, 1072, 6896, 1082, 21, 5243, 575, 5314, 6004, 5489, 11018, 2118, 7817, 7812, 11017, 7679, 1113, 7681, 7680, 7888, 5866, 1187, 5949, 2185, 7379, 11022, 7387, 13896, 5178, 7968, 5891, 8041, 6274, 11023, 1499, 504, 7810, 5849, 7427, 20637, 11016, 7424, 2]
+// Dependencies: [109, 19, 17, 5096, 5092, 7809, 5473, 5114, 20264, 5185, 6895, 1385, 1072, 6896, 1082, 21, 5243, 575, 5314, 6004, 5489, 11012, 2118, 7817, 7812, 11011, 7679, 1113, 7681, 7680, 7888, 5866, 1187, 5949, 2185, 7379, 11016, 7387, 13892, 5178, 7968, 5891, 8041, 6274, 11017, 1499, 504, 7810, 5849, 7427, 20632, 11010, 7424, 2]
 // Exports: default
 
-// Module 20636 (NotificationSettingsModal)
+// Module 20631 (NotificationSettingsModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -30,10 +30,10 @@ import NotificationSettingsModalActionCreatorsDefault from "NotificationSettings
 import TableSwitchRow6 from "TableSwitchRow" /* 7888 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
 import _mod8041 from "module_8041" /* 8041 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11017 */;
-import MutedUntilTextDefault from "MutedUntilText" /* 11022 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 11023 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 13896 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11011 */;
+import MutedUntilTextDefault from "MutedUntilText" /* 11016 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 11017 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 13892 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 5096 */;
@@ -41,7 +41,7 @@ import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 7809 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5473 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 20269 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 20264 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -92,7 +92,7 @@ function ConnectedNotificationSettings(guildId) {
     const tmp = closure_1_8(type) || type === constants.GUILD_CATEGORY;
     return tmp;
   }), items1);
-  const obj3 = guildId(11023);
+  const obj3 = guildId(11017);
   shouldUseNewNotificationSystem = obj3.useShouldUseNewNotificationSystem("NotificationSettingsModalNative");
   const items2 = [UserGuildSettingsStore];
   const items3 = [shouldUseNewNotificationSystem, memo, tmp3.channelOverrides];
@@ -144,7 +144,7 @@ let obj = { highlightsLearnMore: obj2, formStack: obj3 };
 obj2 = { fontSize: 12, color: nativeDefault.unsafe_rawColors.BLUE_345, marginTop: 4 };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 obj3 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
-const lastOpened = createLegacyClassComponentStyles(obj);
+let closure_33 = createLegacyClassComponentStyles(obj);
 const PureComponent = react.PureComponent;
 class NotificationSettings extends PureComponent {
   constructor() {
@@ -165,7 +165,7 @@ class NotificationSettings extends PureComponent {
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { guildId };
-        const tmp8 = asyncRequire(11018, dependencyMap.paths);
+        const tmp8 = asyncRequire(11012, dependencyMap.paths);
         openLazy(tmp8, "muteSettings" + guildId, obj);
       }
     };
@@ -254,7 +254,7 @@ class NotificationSettings extends PureComponent {
     const TableRadioRow = TableRadioRow5.TableRadioRow;
     intl2 = intl8.intl;
     stringResult = null;
-    const tmp5 = maxQueryLength;
+    const tmp5 = closure_30;
     if (null != guildMemberCount) {
       stringResult = null;
       if (guildMemberCount >= authStore5) {
@@ -457,7 +457,7 @@ class NotificationSettings extends PureComponent {
     let tmp11Result = null;
     const tmp11 = mostRecentSelectedTextChannelIds;
     if (muted) {
-      const obj5 = { muteConfig, type: tmp7(11022).MuteSettingType.SERVER };
+      const obj5 = { muteConfig, type: tmp7(11016).MuteSettingType.SERVER };
       const tmp14 = MutedUntilTextDefault;
       tmp11Result = tmp11(tmp14, obj5, "muted-until");
     }
@@ -580,7 +580,7 @@ class NotificationSettings extends PureComponent {
       const obj3 = { spacing: nativeDefault.space.PX_24, style: tmp.formStack, children: items };
       const Stack = tmp5(6274).Stack;
       items = [self.renderMuteSection(), self.renderServerSettings(), self.renderNotificationOptions(), self.renderChannels()];
-      obj.children = maxQueryLength(Stack, obj3);
+      obj.children = closure_30(Stack, obj3);
       tmp4Result = tmp4(Form, obj);
     }
     return tmp4Result;

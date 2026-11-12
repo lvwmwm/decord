@@ -1,14 +1,14 @@
-// Module ID: 12188
-// Function ID: 12189
+// Module ID: 12182
+// Function ID: 12183
 // Name: HourglassIcon
-// Dependencies: [19, 21, 575, 5956, 12189, 2]
+// Dependencies: [19, 21, 575, 5956, 12183, 2]
 // Exports: HourglassIcon
 
-// Module 12188 (HourglassIcon)
+// Module 12182 (HourglassIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 12189 */;
+import AssetRegistry from "AssetRegistry" /* 12183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

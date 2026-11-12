@@ -1,17 +1,17 @@
-// Module ID: 17083
-// Function ID: 17084
+// Module ID: 17078
+// Function ID: 17079
 // Name: ProfileCustomizationProfileSelector
-// Dependencies: [19, 17, 17084, 21, 5243, 575, 7680, 7379, 1113, 7654, 11679, 10493, 6210, 5489, 17085, 2118, 2]
+// Dependencies: [19, 17, 17079, 21, 5243, 575, 7680, 7379, 1113, 7654, 11673, 10491, 6210, 5489, 17080, 2118, 2]
 // Exports: default
 
-// Module 17083 (ProfileCustomizationProfileSelector)
+// Module 17078 (ProfileCustomizationProfileSelector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import react_nativeDefault from "react-native" /* 6210 */;
 import GuildIconDefault from "GuildIcon" /* 7654 */;
-import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 17084 */;
+import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 17079 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -81,13 +81,13 @@ export default function ProfileCustomizationProfileSelector(guild) {
     tmp8 = importDefault;
   } else {
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    const ClydeIcon = tmp3(11679).ClydeIcon;
+    const ClydeIcon = tmp3(11673).ClydeIcon;
     tmpResult = tmp(ClydeIcon, obj4);
     tmp8 = importDefault;
   }
   obj5 = { hasIcons: true, children: jsx(TableRow, obj2) };
   obj6 = { size: "sm", color: tmp8(575).colors.ICON_SUBTLE };
-  ChevronSmallDownIcon = tmp3(10493).ChevronSmallDownIcon;
+  ChevronSmallDownIcon = tmp3(10491).ChevronSmallDownIcon;
   intl2 = tmp3(1113).intl;
   return jsx(tmp2, obj);
 };

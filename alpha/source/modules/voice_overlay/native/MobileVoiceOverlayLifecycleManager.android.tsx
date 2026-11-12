@@ -1,18 +1,18 @@
-// Module ID: 16887
-// Function ID: 16888
+// Module ID: 16882
+// Function ID: 16883
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [5092, 5173, 5114, 2130, 5175, 6008, 5185, 6878, 1385, 5918, 12910, 1072, 16888, 16889, 16890, 16891, 7366, 15979, 16892, 16893, 15955, 1113, 16894, 12940, 8791, 5891, 6899, 1252, 6004, 2120, 2]
+// Dependencies: [5092, 5173, 5114, 2130, 5175, 6008, 5185, 6878, 1385, 5918, 12904, 1072, 16883, 16884, 16885, 16886, 7366, 15974, 16887, 16888, 15950, 1113, 16889, 12934, 8790, 5891, 6899, 1252, 6004, 2120, 2]
 
-// Module 16887 (MobileVoiceOverlayLifecycleManager)
+// Module 16882 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import GuildChannelStore from "GuildChannelStore" /* 5173 */;
 import useChannelName from "useChannelName" /* 5891 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6899 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8791 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 12940 */;
-import react_nativeDefault from "react-native" /* 16894 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8790 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 12934 */;
+import react_nativeDefault from "react-native" /* 16889 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
@@ -22,10 +22,10 @@ import RelationshipStore from "RelationshipStore" /* 5185 */;
 import SpeakingStore from "SpeakingStore" /* 6878 */;
 import UserStore from "UserStore" /* 1385 */;
 import VoiceStateStore from "VoiceStateStore" /* 5918 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 12910 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 12904 */;
 import Constants from "Constants" /* 1072 */;
 import "AssetRegistry";
-import AssetRegistry from "AssetRegistry" /* 15955 */;
+import AssetRegistry from "AssetRegistry" /* 15950 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 

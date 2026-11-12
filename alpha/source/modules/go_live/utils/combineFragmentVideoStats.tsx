@@ -15,7 +15,7 @@ export default function combineFragmentVideoStats(arr) {
   let avg_bitrate;
   let avg_fps;
   let avg_resolution;
-  const f126777 = (acc, duration_aggregation) => {
+  const f126787 = (acc, duration_aggregation) => {
     let num = duration_aggregation[avg_resolution];
     if (num == null) {
       num = 0;
@@ -59,21 +59,21 @@ export default function combineFragmentVideoStats(arr) {
       avg_bitrate = arr[arr.length - 1].avg_bitrate;
     } else {
       const _Math = Math;
-      avg_bitrate = Math.round(arr.reduce(f126777, 0) / reduced);
+      avg_bitrate = Math.round(arr.reduce(f126787, 0) / reduced);
     }
     avg_fps = "avg_fps";
     if (reduced <= 0) {
       avg_fps = arr[arr.length - 1].avg_fps;
     } else {
       const _Math2 = Math;
-      avg_fps = Math.round(arr.reduce(f126777, 0) / reduced);
+      avg_fps = Math.round(arr.reduce(f126787, 0) / reduced);
     }
     avg_resolution = "avg_resolution";
     if (reduced <= 0) {
       avg_resolution = arr[arr.length - 1].avg_resolution;
     } else {
       const _Math3 = Math;
-      avg_resolution = Math.round(arr.reduce(f126777, 0) / reduced);
+      avg_resolution = Math.round(arr.reduce(f126787, 0) / reduced);
     }
     applyResult = undefined;
     if (found.length > 0) {

@@ -1,10 +1,10 @@
-// Module ID: 9504
-// Function ID: 9505
+// Module ID: 9503
+// Function ID: 9504
 // Name: Graphic
 // Dependencies: [19, 17, 21, 5243, 5957, 5314, 5416, 2]
 // Exports: Graphic
 
-// Module 9504 (Graphic)
+// Module 9503 (Graphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 5314 */;

@@ -1,7 +1,7 @@
 // Module ID: 6014
 // Function ID: 6015
 // Name: RTCConnection
-// Dependencies: [5, 6015, 6025, 6026, 6027, 6028, 502, 5092, 5114, 2130, 6008, 6031, 6107, 1385, 1072, 6108, 6109, 6012, 6110, 559, 6016, 6036, 1242, 3, 6111, 6112, 1266, 6114, 6123, 6117, 6124, 1477, 1377, 5053, 1378, 572, 2129, 1403, 6126, 14, 6127, 6128, 6129, 6130, 6131, 6132, 6133, 6134, 6135, 1252, 5249, 6136, 6080, 6137, 6139, 6152, 6148, 6153, 6154, 6155, 2171, 6156, 6158, 6159, 6160, 6033, 6161, 6193, 6194, 6195, 6196, 6198, 6201, 6203, 6204, 6205, 1113, 551, 16155, 1251, 2]
+// Dependencies: [5, 6015, 6025, 6026, 6027, 6028, 502, 5092, 5114, 2130, 6008, 6031, 6107, 1385, 1072, 6108, 6109, 6012, 6110, 559, 6016, 6036, 1242, 3, 6111, 6112, 1266, 6114, 6123, 6117, 6124, 1477, 1377, 5053, 1378, 572, 2129, 1403, 6126, 14, 6127, 6128, 6129, 6130, 6131, 6132, 6133, 6134, 6135, 1252, 5249, 6136, 6080, 6137, 6139, 6152, 6148, 6153, 6154, 6155, 2171, 6156, 6158, 6159, 6160, 6033, 6161, 6193, 6194, 6195, 6196, 6198, 6201, 6203, 6204, 6205, 1113, 551, 16150, 1251, 2]
 // Exports: castUserId
 
 // Module 6014 (RTCConnection)
@@ -44,7 +44,7 @@ import ThermalUtilsDefault from "ThermalUtils" /* 6201 */;
 import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 6203 */;
 import DaveMessageValidator from "DaveMessageValidator" /* 6204 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
-import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 16155 */;
+import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 16150 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeviceFrecencyStore from "DeviceFrecencyStore" /* 6015 */;
 import MediaEngineStatsStore from "MediaEngineStatsStore" /* 6025 */;
@@ -147,7 +147,7 @@ if (obj.test("https:")) {
 let closure_35 = null;
 const voiceParticipantsHidden = { CONNECTION_CREATE: 0, [0]: "CONNECTION_CREATE", CONNECTION_DESTROY: 1, [1]: "CONNECTION_DESTROY", CONNECT: 2, [2]: "CONNECT", MLS_FAILURE: 3, [3]: "MLS_FAILURE", MESSAGE_RECEIVE: 4, [4]: "MESSAGE_RECEIVE", MESSAGE_SEND: 5, [5]: "MESSAGE_SEND", SET_ENDPOINT: 6, [6]: "SET_ENDPOINT", RECONNECT: 7, [7]: "RECONNECT", SET_STATE: 8, [8]: "SET_STATE", SET_NEXT_CHANNEL_ID: 9, [9]: "SET_NEXT_CHANNEL_ID", MLS_INIT: 10, [10]: "MLS_INIT", SECURE_FRAMES_INIT: 11, [11]: "SECURE_FRAMES_INIT", DOWNGRADE_REFUSED: 12, [12]: "DOWNGRADE_REFUSED" };
 let c39 = 0;
-const customGuildScores = [];
+const customChannelScoresByGuild = [];
 function castUserId(arg0) {
   return arg0;
 }
@@ -3193,7 +3193,7 @@ class RTCConnection extends TypedEventEmitter {
           mediaEngine = obj2.getMediaEngine();
           mediaEngine1 = obj2.getMediaEngine();
           const mediaEngine2 = obj2.getMediaEngine();
-          tmp18 = mediaEngine2.getVideoInputDeviceId() !== channelHistory;
+          tmp18 = mediaEngine2.getVideoInputDeviceId() !== map3;
           const tmp12 = constants;
           if (tmp18) {
             tmp18 = _connection.context === constants7.DEFAULT;

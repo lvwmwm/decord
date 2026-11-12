@@ -1,10 +1,10 @@
-// Module ID: 10045
-// Function ID: 10046
+// Module ID: 10044
+// Function ID: 10045
 // Name: BadgeDetailsSheet
-// Dependencies: [5, 32, 19, 17, 5244, 1385, 8481, 1072, 5504, 21, 5243, 575, 5974, 5866, 1652, 10046, 504, 10047, 10048, 10049, 1705, 10050, 2150, 1389, 10051, 10060, 15161, 5489, 10044, 15162, 8537, 1113, 15169, 15166, 15173, 5873, 15174, 8486, 5485, 1627, 10010, 11759, 15167, 8493, 5834, 5503, 5507, 5838, 2]
+// Dependencies: [5, 32, 19, 17, 5244, 1385, 8481, 1072, 5504, 21, 5243, 575, 5974, 5866, 1652, 10045, 504, 10046, 10047, 10048, 1705, 10049, 2150, 1389, 10050, 10059, 15158, 5489, 10043, 15159, 8537, 1113, 15166, 15163, 15170, 5873, 15171, 8486, 5485, 1627, 10009, 11753, 15164, 8493, 5834, 5503, 5507, 5838, 2]
 // Exports: default
 
-// Module 10045 (BadgeDetailsSheet)
+// Module 10044 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -14,9 +14,9 @@ import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5974 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8486 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10044 */;
-import BadgeUtils from "BadgeUtils" /* 10046 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15161 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10043 */;
+import BadgeUtils from "BadgeUtils" /* 10045 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15158 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

@@ -1,14 +1,14 @@
-// Module ID: 18416
-// Function ID: 18417
+// Module ID: 18411
+// Function ID: 18412
 // Name: useCollectiblesShopCollection
-// Dependencies: [19, 9384, 8420, 8516, 10391, 504, 10390, 10392, 2]
+// Dependencies: [19, 9383, 8420, 8516, 10389, 504, 10388, 10390, 2]
 // Exports: default
 
-// Module 18416 (useCollectiblesShopCollection)
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 10391 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 10392 */;
+// Module 18411 (useCollectiblesShopCollection)
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 10389 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 10390 */;
 import react from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9384 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9383 */;
 import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 8420 */;
 import size from "module_2" /* 2 */;
 

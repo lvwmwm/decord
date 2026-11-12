@@ -1,10 +1,10 @@
-// Module ID: 19160
-// Function ID: 19161
+// Module ID: 19155
+// Function ID: 19156
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 5244, 5114, 10137, 1072, 21, 19097, 575, 504, 1411, 5106, 9437, 5957, 7654, 10150, 5952, 1113, 6854, 5866, 5873, 19136, 7764, 2]
+// Dependencies: [32, 5, 19, 17, 5244, 5114, 10136, 1072, 21, 19092, 575, 504, 1411, 5106, 9436, 5957, 7654, 10148, 5952, 1113, 6854, 5866, 5873, 19131, 7764, 2]
 // Exports: ICYMIServerRecommendationRow
 
-// Module 19160 (ICYMIServerRecommendationRow)
+// Module 19155 (ICYMIServerRecommendationRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,17 +13,17 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5106 */;
 import GuildIconDefault from "GuildIcon" /* 7654 */;
 import FastestListDefault from "FastestList" /* 7764 */;
-import ClipViewDefault from "ClipView" /* 9437 */;
-import ICYMIShared from "ICYMIShared" /* 19136 */;
+import ClipViewDefault from "ClipView" /* 9436 */;
+import ICYMIShared from "ICYMIShared" /* 19131 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import ICYMIStore from "ICYMIStore" /* 10137 */;
+import ICYMIStore from "ICYMIStore" /* 10136 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19097 */;
+import createICYMIStyles from "createICYMIStyles" /* 19092 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2, c3, closure_0;
@@ -67,7 +67,7 @@ function CutoutGuildBanner(guild) {
     return obj.fromClientDiscoverableGuild(guild);
   }, items1);
   const obj4 = { cutouts: items2, children: tmp12Result };
-  size = { shape: guild(9437).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  size = { shape: guild(9436).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   items2 = [size];
   const tmp10 = closure_15;
   const tmp14 = ClipViewDefault;

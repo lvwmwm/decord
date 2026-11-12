@@ -1,20 +1,20 @@
-// Module ID: 16783
-// Function ID: 16784
+// Module ID: 16778
+// Function ID: 16779
 // Name: ClientNotifDenylist
-// Dependencies: [32, 17, 1246, 502, 16047, 16781, 16784, 1242, 16048, 572, 2]
+// Dependencies: [32, 17, 1246, 502, 16042, 16776, 16779, 1242, 16043, 572, 2]
 // Exports: getClientDisabledNotifTypes, initializeClientNotifDenylist
 
-// Module 16783 (ClientNotifDenylist)
+// Module 16778 (ClientNotifDenylist)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import notification_settings from "notification_settings" /* 16048 */;
-import NotifSettings from "NotifSettings" /* 16781 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16784 */;
+import notification_settings from "notification_settings" /* 16043 */;
+import NotifSettings from "NotifSettings" /* 16776 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16779 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 16047 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 16042 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

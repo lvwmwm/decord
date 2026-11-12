@@ -1,18 +1,18 @@
-// Module ID: 15545
-// Function ID: 15546
+// Module ID: 15542
+// Function ID: 15543
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 5092, 1072, 21, 5243, 575, 504, 1099, 6785, 7381, 11872, 7354, 11873, 10985, 5866, 1113, 8964, 11871, 13452, 15546, 2]
+// Dependencies: [19, 17, 5092, 1072, 21, 5243, 575, 504, 1099, 6785, 7381, 11866, 7354, 11867, 10979, 5866, 1113, 8963, 11865, 13446, 15543, 2]
 
-// Module 15545 (ScheduledMessageCard)
+// Module 15542 (ScheduledMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8964 */;
-import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 11871 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 13452 */;
-import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 15546 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8963 */;
+import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 11865 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 13446 */;
+import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 15543 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import Fragment from "Fragment" /* 21 */;
@@ -74,7 +74,7 @@ const memoResult = react.memo(function ScheduledMessageCard(scheduledMessage) {
     const Card = tmp2(7381).Card;
     items1 = [closure_7(ScheduledMessageCardStatusHeader, obj3), , , ];
     const obj4 = { channel: stateFromStores, actions: null };
-    items1[1] = closure_7(scheduledMessage(11872).ForLaterCardHeader, obj4);
+    items1[1] = closure_7(scheduledMessage(11866).ForLaterCardHeader, obj4);
     const obj5 = { style: tmp.cardDivider };
     items1[2] = closure_7(View, obj5);
     if (isPendingRemoval) {
@@ -83,11 +83,11 @@ const memoResult = react.memo(function ScheduledMessageCard(scheduledMessage) {
     } else {
       const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: tmp9Result };
       tmp9Result = undefined;
-      const ForLaterMessageRow = tmp2(11873).ForLaterMessageRow;
+      const ForLaterMessageRow = tmp2(11867).ForLaterMessageRow;
       if (scheduledMessage.attachmentUploads.length > 0) {
         const obj8 = { style: tmp.attachmentCount, children: items2 };
         const obj9 = { size: "xxs", color: stateFromStores(575).colors.TEXT_MUTED };
-        const AttachmentIcon = tmp2(10985).AttachmentIcon;
+        const AttachmentIcon = tmp2(10979).AttachmentIcon;
         items2 = [closure_7(AttachmentIcon, obj9), ];
         const obj10 = { variant: "body-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1113).t.ZJ1tPW, obj11) };
         const Text = tmp2(5866).Text;

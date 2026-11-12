@@ -1,23 +1,23 @@
-// Module ID: 13678
-// Function ID: 13679
+// Module ID: 13672
+// Function ID: 13673
 // Name: ConjureProjectAboutSheet
-// Dependencies: [5, 19, 17, 21, 5243, 575, 13679, 7929, 10449, 13680, 5489, 13677, 1113, 4079, 7885, 7847, 7351, 5507, 13684, 5866, 13685, 13686, 6274, 13687, 5309, 13689, 5873, 2]
+// Dependencies: [5, 19, 17, 21, 5243, 575, 13673, 7929, 10447, 13674, 5489, 13671, 1113, 4079, 7885, 7847, 7351, 5507, 13678, 5866, 13679, 13680, 6274, 13681, 13683, 13685, 5873, 2]
 // Exports: default
 
-// Module 13678 (ConjureProjectAboutSheet)
+// Module 13672 (ConjureProjectAboutSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4079 from "module_4079" /* 4079 */;
-import UserUtils from "UserUtils" /* 5309 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7929 */;
-import openConjureProjectAboutSheet from "openConjureProjectAboutSheet" /* 13677 */;
-import useConjureSharedProjectDefault from "useConjureSharedProject" /* 13679 */;
-import useConjureSharedProjectCoverActionDefault from "useConjureSharedProjectCoverAction" /* 13680 */;
-import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 13685 */;
-import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 13686 */;
-import useConjureProjectCreator from "useConjureProjectCreator" /* 13687 */;
-import openConjureSharedProjectRemixSheetDefault from "openConjureSharedProjectRemixSheet" /* 13689 */;
+import openConjureProjectAboutSheet from "openConjureProjectAboutSheet" /* 13671 */;
+import useConjureSharedProjectDefault from "useConjureSharedProject" /* 13673 */;
+import useConjureSharedProjectCoverActionDefault from "useConjureSharedProjectCoverAction" /* 13674 */;
+import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 13679 */;
+import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 13680 */;
+import useConjureProjectCreator from "useConjureProjectCreator" /* 13681 */;
+import ConjureCreatorBylineDefault from "ConjureCreatorByline" /* 13683 */;
+import openConjureSharedProjectRemixSheetDefault from "openConjureSharedProjectRemixSheet" /* 13685 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -55,26 +55,18 @@ function Surfaces(project) {
   }
   return tmp4;
 }
-function Creator(project) {
-  let formatToPlainString;
-  let obj3;
-  let prop;
-  let tmpResult;
-  project = project.project;
+function Creator(arg0) {
+  let guildId;
+  let project;
+  ({ project, guildId } = arg0);
   const obj = useConjureProjectCreator;
   const creator = obj.useConjureProjectPeople(project).creator;
-  let tmp3 = null;
+  let tmp2 = null;
   if (null != creator) {
-    const obj2 = { variant: "body-sm/normal", color: "text-muted", lineClamp: 1, children: formatToPlainString(prop, obj3) };
-    const Text = tmp(5866).Text;
-    const intl = tmp(1113).intl;
-    formatToPlainString = intl.formatToPlainString;
-    obj3 = { name: tmpResult.getName(creator) };
-    prop = _modDef4079["6/x9LD"];
-    tmpResult = UserUtils;
-    tmp3 = metroRequire(Text, obj2);
+    const obj2 = { creator, guildId };
+    tmp2 = metroRequire(ConjureCreatorBylineDefault, obj2);
   }
-  return tmp3;
+  return tmp2;
 }
 function RemixActions(project) {
   let intl;
@@ -176,7 +168,7 @@ export default function ConjureProjectAboutSheet(arg0) {
       project = tmp3.project;
     }
   }
-  let obj = run(10449);
+  let obj = run(10447);
   let tmp9 = null;
   if (obj.useIsConjureMobileEnabled(null != project, "ConjureProjectAboutSheet")) {
     tmp9 = project;
@@ -278,7 +270,7 @@ export default function ConjureProjectAboutSheet(arg0) {
   BottomSheetScrollView = tmp8(5507).BottomSheetScrollView;
   if (null != application) {
     const obj7 = { application, action: type, launching, onPress: callback };
-    const items1 = [closure_6(tmp(13684), obj7), , ];
+    const items1 = [closure_6(tmp(13678), obj7), , ];
     let tmp14Result4 = null;
     const tmp20 = closure_8;
     if (launchFailed) {
@@ -318,7 +310,7 @@ export default function ConjureProjectAboutSheet(arg0) {
     const obj15 = { children: items5 };
     const obj16 = { project: tmp3.project };
     items5 = [closure_6(Surfaces, obj16), ];
-    const obj17 = { project: tmp3.project };
+    const obj17 = { project: tmp3.project, guildId: source.guildId };
     items5[1] = closure_6(Creator, obj17);
     tmp18Result2 = tmp18(closure_8, obj15);
   }

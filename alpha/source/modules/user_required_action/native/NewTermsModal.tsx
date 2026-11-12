@@ -1,10 +1,10 @@
-// Module ID: 20278
-// Function ID: 20279
+// Module ID: 20273
+// Function ID: 20274
 // Name: NewTermsModal
 // Dependencies: [5, 32, 19, 17, 5086, 1072, 21, 5243, 575, 7882, 1113, 6781, 1627, 7433, 6269, 7286, 6275, 1260, 5866, 5873, 8385, 8371, 2]
 // Exports: default
 
-// Module 20278 (NewTermsModal)
+// Module 20273 (NewTermsModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;

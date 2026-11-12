@@ -1,12 +1,12 @@
-// Module ID: 18724
-// Function ID: 18725
+// Module ID: 18719
+// Function ID: 18720
 // Name: VoiceUserSummary
-// Dependencies: [19, 17, 21, 1187, 5243, 8995, 8994, 7952, 7368, 2]
+// Dependencies: [19, 17, 21, 1187, 5243, 8994, 8993, 7952, 7368, 2]
 
-// Module 18724 (VoiceUserSummary)
+// Module 18719 (VoiceUserSummary)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1187 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8995 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8994 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -35,7 +35,7 @@ const memoResult = react.memo(function UserSummaryItem(guildId) {
   if (useIsUsingClientThemeDefault()) {
     transparentBorder = tmp.transparentBorder;
   }
-  let obj = guildId(8994);
+  let obj = guildId(8993);
   const obj2 = { style: items, children: null };
   items = [noPadding ? tmp.containerNoPadding : tmp.container, obj.useClientThemesOverride()];
   if (renderIcon) {

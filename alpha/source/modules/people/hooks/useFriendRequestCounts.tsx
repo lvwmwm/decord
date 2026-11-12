@@ -1,10 +1,10 @@
-// Module ID: 19405
-// Function ID: 19406
+// Module ID: 19400
+// Function ID: 19401
 // Name: useFriendRequestCounts
 // Dependencies: [32, 8698, 5185, 504, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 19405 (useFriendRequestCounts)
+// Module 19400 (useFriendRequestCounts)
 import get_initialized from "get initialized" /* 504 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 8698 */;

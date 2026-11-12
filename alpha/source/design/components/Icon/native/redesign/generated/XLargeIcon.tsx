@@ -1,14 +1,14 @@
-// Module ID: 10803
-// Function ID: 10804
+// Module ID: 10797
+// Function ID: 10798
 // Name: XLargeIcon
-// Dependencies: [19, 21, 575, 5956, 10804, 2]
+// Dependencies: [19, 21, 575, 5956, 10798, 2]
 // Exports: XLargeIcon
 
-// Module 10803 (XLargeIcon)
+// Module 10797 (XLargeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10804 */;
+import AssetRegistry from "AssetRegistry" /* 10798 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

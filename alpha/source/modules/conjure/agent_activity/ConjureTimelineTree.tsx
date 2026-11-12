@@ -1,16 +1,16 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13471
+// Function ID: 13472
 // Name: ConjureTimelineTree
 // Dependencies: [32, 4079, 1113, 2]
 // Exports: currentStep, describeNode, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 13477 (ConjureTimelineTree)
+// Module 13471 (ConjureTimelineTree)
 import intl2 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let error, map, map1, set, set2;
+let error, map, map1, map2, map3, set, set2;
 
 function isLegacyControlLineNode(label_key) {
   label_key = undefined;
@@ -149,8 +149,8 @@ function buildTimelineTree(steps, arg1) {
   map = new Map();
   map1 = new Map();
   let sum1 = 0;
-  const map2 = new Map();
-  const map3 = new Map();
+  map2 = new Map();
+  map3 = new Map();
   const segmentOf = ensure(steps).segmentOf;
   let closure_9 = cancelledLaneIds(steps);
   let closure_10 = legacyControlLineIds(steps);

@@ -1,10 +1,10 @@
-// Module ID: 10485
-// Function ID: 10486
+// Module ID: 10483
+// Function ID: 10484
 // Name: useConjureProjectShareTarget
 // Dependencies: [5114, 504, 1113, 4079, 2]
 // Exports: default, isConjureProjectWithoutServer, useConjureProjectShareTargetDetails
 
-// Module 10485 (useConjureProjectShareTarget)
+// Module 10483 (useConjureProjectShareTarget)
 import _modDef4079 from "module_4079" /* 4079 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;

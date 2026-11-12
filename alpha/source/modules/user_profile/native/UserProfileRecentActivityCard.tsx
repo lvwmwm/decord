@@ -1,10 +1,10 @@
-// Module ID: 15722
-// Function ID: 15723
+// Module ID: 15717
+// Function ID: 15718
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 15609, 8353, 15614, 5243, 575, 9410, 5314, 8309, 5250, 5957, 1411, 2150, 5866, 15596, 7852, 7871, 15621, 15622, 10597, 10219, 7364, 1113, 2]
+// Dependencies: [19, 17, 21, 15606, 8353, 15611, 5243, 575, 9409, 5314, 8309, 5250, 5957, 1411, 2150, 5866, 15593, 7852, 7871, 15618, 15619, 10595, 10217, 7364, 1113, 2]
 // Exports: default
 
-// Module 15722 (UserProfileRecentActivityCard)
+// Module 15717 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
@@ -15,13 +15,13 @@ import FastImageDefault from "FastImage" /* 5957 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import utils from "utils" /* 8353 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 9410 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 15596 */;
-import BadgesAll from "Badges" /* 15609 */;
-import TrendingType from "TrendingType" /* 15614 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 15621 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 15622 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 9409 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10217 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 15593 */;
+import BadgesAll from "Badges" /* 15606 */;
+import TrendingType from "TrendingType" /* 15611 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 15618 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 15619 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -35,7 +35,7 @@ let obj9;
 let rect;
 let size;
 let tmp4;
-const useOpenGameProfileModalDefault = tmp4(10597);
+const useOpenGameProfileModalDefault = tmp4(10595);
 function GamingEntryBadges(entry) {
   let mapped;
   let obj4;
@@ -45,7 +45,7 @@ function GamingEntryBadges(entry) {
   const found = items.filter((predicate) => predicate.predicate(entry));
   let obj = { location: "user-profile", style: tmp.badges, children: mapped };
   const BadgesContainer = BadgesAll.BadgesContainer;
-  let obj2 = entry(9410);
+  let obj2 = entry(9409);
   if (obj2.isTopGameEntry(entry)) {
     const obj3 = { style: tmp.badgeCell, children: closure_6(BadgesAll.TopGameBadge, obj4) };
     obj4 = { entry };
@@ -306,7 +306,7 @@ export default function UserProfileRecentActivityCard(style) {
           obj8 = { title: entry.extra.activity_name };
           const obj7 = { title: entry.extra.activity_name };
         } else {
-          obj8 = { title: "Array" };
+          obj8 = { title: "r" };
         }
       }
     }

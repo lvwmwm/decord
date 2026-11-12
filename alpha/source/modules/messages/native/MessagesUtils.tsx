@@ -1,10 +1,10 @@
-// Module ID: 11804
-// Function ID: 11805
+// Module ID: 11798
+// Function ID: 11799
 // Name: messages/MessagesUtils
-// Dependencies: [32, 5, 11805, 8677, 5092, 5155, 6874, 6309, 6147, 5175, 6952, 1385, 9094, 1072, 6298, 6313, 2116, 8573, 8797, 7617, 5162, 5952, 1113, 5974, 11806, 2107, 5857, 5187, 5491, 5492, 7618, 8798, 8800, 6004, 7877, 6293, 11, 5951, 11821, 9, 12, 1377, 1625, 11825, 1252, 11822, 8593, 5278, 5480, 10066, 11826, 8657, 6318, 5163, 9112, 2]
+// Dependencies: [32, 5, 11799, 8677, 5092, 5155, 6874, 6309, 6147, 5175, 6952, 1385, 9093, 1072, 6298, 6313, 2116, 8573, 8796, 7617, 5162, 5952, 1113, 5974, 11800, 2107, 5857, 5187, 5491, 5492, 7618, 8797, 8799, 6004, 7877, 6293, 11, 5951, 11815, 9, 12, 1377, 1625, 11819, 1252, 11816, 8593, 5278, 5480, 10065, 11820, 8657, 6318, 5163, 9111, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getMessageAuthorMemberUserIds, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, maybeRescrollToMessageId, recordTimings, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
-// Module 11804 (messages/MessagesUtils)
+// Module 11798 (messages/MessagesUtils)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -32,17 +32,17 @@ import ClipboardUtils from "ClipboardUtils" /* 7877 */;
 import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8573 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8593 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8657 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8797 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8798 */;
-import Tracking from "Tracking" /* 8800 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9112 */;
-import QuestActionCreators from "QuestActionCreators" /* 10066 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11805 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 11806 */;
-import computeScrollData from "computeScrollData" /* 11821 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 11822 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 11825 */;
-import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 11826 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8796 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8797 */;
+import Tracking from "Tracking" /* 8799 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9111 */;
+import QuestActionCreators from "QuestActionCreators" /* 10065 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11799 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 11800 */;
+import computeScrollData from "computeScrollData" /* 11815 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 11816 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 11819 */;
+import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 11820 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import ReferencedMessageStore from "ReferencedMessageStore" /* 8677 */;
@@ -54,7 +54,7 @@ import NetworkStore from "NetworkStore" /* 6147 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import ReadStateStore from "ReadStateStore" /* 6952 */;
 import UserStore from "UserStore" /* 1385 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 9094 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 9093 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let tmp;
 let tmp9;
 const SnowflakeUtilsDefault = tmp9(11);
 const KeyboardTypes = tmp(1625);
-const f102242 = (id) => id.id;
+const f102249 = (id) => id.id;
 function getVisibleMessages(arg0) {
   let chatManager;
   let firstVisibleMessagePercentVisible;
@@ -216,9 +216,9 @@ let obj = function _handleTapNavBar() {
         }
         c3 = 3;
         return { value: "HermesInternal", done: null };
-      } catch (tmp17) {
+      } catch (tmp16) {
         c3 = 3;
-        throw tmp17;
+        throw tmp16;
       }
     }
   });
@@ -581,7 +581,7 @@ export function startOrCancelChannelLatestMessagesLoad(hasJumpedToOriginalPost) 
 export function recordTimings(channelId, hasFetched) {
   const recordMessageRender = TTITrackerDefault.recordMessageRender;
   TTITrackerDefault;
-  const mapped = hasFetched.map(f102242);
+  const mapped = hasFetched.map(f102249);
   hasFetched = hasFetched.hasFetched;
   if (!hasFetched) {
     hasFetched = hasFetched.ready && !hasFetched.cached;
@@ -830,7 +830,7 @@ export function syncMessageDisplay(messages) {
   }
   const recordMessageRender = oldestUnreadMessageId(scrollToMessageId[39]).recordMessageRender;
   oldestUnreadMessageId(scrollToMessageId[39]);
-  const mapped = messages.map(f102242);
+  const mapped = messages.map(f102249);
   let hasFetched = messages.hasFetched;
   if (!hasFetched) {
     hasFetched = messages.ready && !messages.cached;

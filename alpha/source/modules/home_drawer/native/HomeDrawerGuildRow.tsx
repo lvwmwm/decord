@@ -1,20 +1,20 @@
-// Module ID: 18943
-// Function ID: 18944
+// Module ID: 18938
+// Function ID: 18939
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 5177, 5096, 5092, 5173, 6997, 5114, 6952, 5185, 6895, 1385, 1072, 6896, 21, 5243, 504, 5435, 5432, 11868, 10931, 5866, 18944, 18945, 5891, 11, 18946, 18947, 14470, 18948, 18949, 18950, 18952, 18953, 18935, 2]
+// Dependencies: [19, 17, 5177, 5096, 5092, 5173, 6997, 5114, 6952, 5185, 6895, 1385, 1072, 6896, 21, 5243, 504, 5435, 5432, 11862, 10925, 5866, 18939, 18940, 5891, 11, 18941, 18942, 14466, 18943, 18944, 18945, 18947, 18948, 18930, 2]
 // Exports: default
 
-// Module 18943 (HomeDrawerGuildRow)
+// Module 18938 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
 import ChannelRecord from "ChannelRecord" /* 5096 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import useChannelName from "useChannelName" /* 5891 */;
 import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 18948 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 18949 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 18950 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 18952 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 18953 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 18943 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 18944 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 18945 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 18947 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 18948 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5177 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
@@ -90,9 +90,9 @@ function GuildRowWrapper(guild) {
     if (memo.isMuted) {
       let BellSlashIcon;
       if (memo.isTemporary) {
-        BellSlashIcon = tmp3(11868).BellZIcon;
+        BellSlashIcon = tmp3(11862).BellZIcon;
       } else {
-        BellSlashIcon = tmp3(10931).BellSlashIcon;
+        BellSlashIcon = tmp3(10925).BellSlashIcon;
       }
       tmp2 = BellSlashIcon;
     } else {

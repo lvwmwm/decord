@@ -1,9 +1,9 @@
-// Module ID: 20052
-// Function ID: 20053
+// Module ID: 20047
+// Function ID: 20048
 // Name: CustomStatusManager
-// Dependencies: [7252, 1072, 5087, 7816, 5068, 10959, 5073, 1227, 10958, 2]
+// Dependencies: [7252, 1072, 5087, 7816, 5068, 10953, 5073, 1227, 10952, 2]
 
-// Module 20052 (CustomStatusManager)
+// Module 20047 (CustomStatusManager)
 import UserSettings from "UserSettings" /* 5068 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5073 */;
 import Timers from "Timers" /* 5087 */;

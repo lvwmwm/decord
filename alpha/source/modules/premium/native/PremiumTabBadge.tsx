@@ -1,10 +1,10 @@
-// Module ID: 17392
-// Function ID: 17393
+// Module ID: 17387
+// Function ID: 17388
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 2176, 1387, 9368, 21, 5243, 575, 5250, 5484, 5866, 6275, 1260, 1187, 17393, 9244, 9247, 2171, 5285, 5076, 504, 9494, 9241, 9240, 9944, 9561, 17394, 1113, 5830, 1092, 1377, 2]
+// Dependencies: [32, 19, 17, 2176, 1387, 9367, 21, 5243, 575, 5250, 5484, 5866, 6275, 1260, 1187, 17388, 9243, 9246, 2171, 5285, 5076, 504, 9493, 9240, 9239, 9943, 9560, 17389, 1113, 5830, 1092, 1377, 2]
 // Exports: default
 
-// Module 17392 (PremiumTabBadge)
+// Module 17387 (PremiumTabBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -22,14 +22,14 @@ import useThemeDefault from "useTheme" /* 5484 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 6275 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 9240 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 9241 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 9244 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 9247 */;
-import ColorConstants from "ColorConstants" /* 9368 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9494 */;
-import usePromotionMarketingSurface from "usePromotionMarketingSurface" /* 9944 */;
-import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 17394 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 9239 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 9240 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 9243 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 9246 */;
+import ColorConstants from "ColorConstants" /* 9367 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9493 */;
+import usePromotionMarketingSurface from "usePromotionMarketingSurface" /* 9943 */;
+import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 17389 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
@@ -48,7 +48,7 @@ let obj7;
 let obj8;
 let obj9;
 let tmp2;
-const AssetRegistryDefault = tmp2(17393);
+const AssetRegistryDefault = tmp2(17388);
 function ThemedTabBadge(label) {
   let Text;
   let items1;
@@ -184,7 +184,7 @@ export default function PremiumTabBadge() {
       const tmp2Result13 = ReferralProgramUtils;
       const isReferralProgramEntrypointBadgeAcknowledged = tmp2Result13.useIsReferralProgramEntrypointBadgeAcknowledged();
       const tmp2Result14 = usePromotionMarketingSurface;
-      const promotionMarketingSurface = tmp2Result14.usePromotionMarketingSurface(tmp2(9561).MarketingSurfaceType.PREMIUM_TAB);
+      const promotionMarketingSurface = tmp2Result14.usePromotionMarketingSurface(tmp2(9560).MarketingSurfaceType.PREMIUM_TAB);
       let prop = null;
       const useSelectedSnowflakeBoundDismissibleContent = useSelectedDismissibleContent.useSelectedSnowflakeBoundDismissibleContent;
       const tmp2Result15 = useSelectedDismissibleContent;

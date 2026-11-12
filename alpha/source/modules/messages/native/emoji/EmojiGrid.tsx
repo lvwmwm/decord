@@ -1,10 +1,10 @@
-// Module ID: 11251
-// Function ID: 11252
+// Module ID: 11245
+// Function ID: 11246
 // Name: EmojiGrid
-// Dependencies: [19, 21, 5243, 575, 5193, 1411, 7828, 11240, 11252, 6274, 2]
+// Dependencies: [19, 21, 5243, 575, 5193, 1411, 7828, 11234, 11246, 6274, 2]
 // Exports: EmojiGrid
 
-// Module 11251 (EmojiGrid)
+// Module 11245 (EmojiGrid)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
@@ -57,7 +57,7 @@ export function EmojiGrid(numberToShow) {
     num2 = 5;
   }
   let obj = {};
-  const obj2 = doNotDisplayEmojiIds(11240);
+  const obj2 = doNotDisplayEmojiIds(11234);
   const merged = Object.assign(obj2.useSharedMessageEmojiStyles());
   const merged1 = Object.assign(closure_4());
   let emojis;
@@ -71,15 +71,15 @@ export function EmojiGrid(numberToShow) {
   const substr = emojis.slice(0, num + 1);
   const found = substr.filter((id) => !doNotDisplayEmojiIds.includes(id.id));
   const substr1 = found.slice(0, num);
-  const arr4 = obj(11252)(substr1, num2);
+  const arr4 = obj(11246)(substr1, num2);
   let Stack = tmp(6274).Stack;
   return <Stack spacing={8} align="center" style={obj.emojiGridContainer}>{arr4.map((arr, index) => {
-    const f130005 = (guildEmoji) => {
+    const f130015 = (guildEmoji) => {
       obj = { guildEmoji };
       return closure_1_3(closure_1_5, obj, guildEmoji.id);
     };
-    obj = { direction: "horizontal", spacing: 32, justify: "center", style: obj.emojiGridRowContainer, children: arr.map(f130005) };
+    obj = { direction: "horizontal", spacing: 32, justify: "center", style: obj.emojiGridRowContainer, children: arr.map(f130015) };
     const Stack = Stack_Stack.Stack;
-    return <Stack key={arg1} direction="horizontal" spacing={32} justify="center" style={obj.emojiGridRowContainer}>{arg0.map(f130005)}</Stack>;
+    return <Stack key={arg1} direction="horizontal" spacing={32} justify="center" style={obj.emojiGridRowContainer}>{arg0.map(f130015)}</Stack>;
   })}</Stack>;
 }

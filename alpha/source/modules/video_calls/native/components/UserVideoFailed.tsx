@@ -1,10 +1,10 @@
-// Module ID: 19869
-// Function ID: 19870
+// Module ID: 19864
+// Function ID: 19865
 // Name: UserVideoFailed
-// Dependencies: [17, 1072, 21, 5243, 575, 6194, 5866, 1113, 5873, 12709, 6033, 6162, 2]
+// Dependencies: [17, 1072, 21, 5243, 575, 6194, 5866, 1113, 5873, 12703, 6033, 6162, 2]
 // Exports: default
 
-// Module 19869 (UserVideoFailed)
+// Module 19864 (UserVideoFailed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5866 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 6033 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 6162 */;
 import AVError from "AVError" /* 6194 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 12709 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 12703 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

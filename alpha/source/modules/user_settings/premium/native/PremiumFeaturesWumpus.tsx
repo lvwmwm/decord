@@ -1,13 +1,13 @@
-// Module ID: 10902
-// Function ID: 10903
+// Module ID: 10896
+// Function ID: 10897
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1387, 21, 5243, 7705, 9541, 10903, 10904, 10905, 10906, 9543, 5957, 2]
+// Dependencies: [19, 1387, 21, 5243, 7705, 9540, 10897, 10898, 10899, 10900, 9542, 5957, 2]
 // Exports: default
 
-// Module 10902 (PremiumFeaturesWumpus)
+// Module 10896 (PremiumFeaturesWumpus)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9541 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9543 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9540 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9542 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -41,14 +41,14 @@ export default function PremiumFeaturesWumpus(premiumType) {
     let obj;
     let tmpResult;
     if (premiumType === PremiumTypes.TIER_0) {
-      obj = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 10903 : 10904) };
-      const obj2 = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 10903 : 10904) };
+      obj = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 10897 : 10898) };
+      const obj2 = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 10897 : 10898) };
     } else {
       let tmp4;
       if (closure_1) {
-        tmp4 = 10905;
+        tmp4 = 10899;
       } else {
-        tmp4 = 10906;
+        tmp4 = 10900;
       }
       obj = { wumpusImageSource: AssetRegistryDefault2, cloudsImageSource: tmpResult };
       tmpResult = importDefault(tmp4);

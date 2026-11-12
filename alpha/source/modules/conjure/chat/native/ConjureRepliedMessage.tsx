@@ -1,14 +1,14 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 13517
+// Function ID: 13518
 // Name: ConjureRepliedMessage
-// Dependencies: [19, 17, 21, 13513, 5243, 575, 12357, 5309, 13202, 13524, 1113, 4079, 13525, 1187, 5866, 13531, 2]
+// Dependencies: [19, 17, 21, 13507, 5243, 575, 12351, 5309, 13196, 13518, 1113, 4079, 13519, 1187, 5866, 13525, 2]
 // Exports: default
 
-// Module 13523 (ConjureRepliedMessage)
+// Module 13517 (ConjureRepliedMessage)
 import nativeDefault from "native" /* 575 */;
 import _modDef4079 from "module_4079" /* 4079 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 13202 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 13513 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 13196 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 13507 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp11;
-const ConjureSelectedMentionDefault = tmp11(13531);
+const ConjureSelectedMentionDefault = tmp11(13525);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const diff = ConjureNativeStatusLine.MESSAGE_EDGE_INSET + ConjureNativeStatusLine.MESSAGE_AVATAR_SIZE / 2 - 1;
@@ -44,7 +44,7 @@ export default function ConjureRepliedMessage(replied) {
   replied = replied.replied;
   const onJump = replied.onJump;
   const tmp = closure_8();
-  let obj = replied(12357);
+  let obj = replied(12351);
   const messageAuthorUser = obj.useMessageAuthorUser(replied.userId);
   const obj2 = replied(5309);
   let str = obj2.useName(messageAuthorUser);
@@ -57,8 +57,8 @@ export default function ConjureRepliedMessage(replied) {
     return obj.parseConjureDesignRemark(replied.content);
   }, items);
   let body;
-  const useConjureMentionNames = replied(13524).useConjureMentionNames;
-  replied(13524);
+  const useConjureMentionNames = replied(13518).useConjureMentionNames;
+  replied(13518);
   if (memo != null) {
     body = memo.body;
   }
@@ -78,7 +78,7 @@ export default function ConjureRepliedMessage(replied) {
   if (null != messageAuthorUser) {
     const obj5 = { style: tmp.avatar, children: closure_6(ConjureUserAvatar, obj6) };
     obj6 = { userId: replied.userId, size: replied(1187).AvatarSizes.SIZE_16 };
-    ConjureUserAvatar = tmp2(13525).ConjureUserAvatar;
+    ConjureUserAvatar = tmp2(13519).ConjureUserAvatar;
     tmp12Result = tmp12(tmp13, obj5);
   }
   items1[1] = tmp12Result;

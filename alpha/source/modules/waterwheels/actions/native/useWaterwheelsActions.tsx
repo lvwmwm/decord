@@ -1,26 +1,26 @@
-// Module ID: 18878
-// Function ID: 18879
+// Module ID: 18873
+// Function ID: 18874
 // Name: useWaterwheelsActions
-// Dependencies: [5, 19, 2138, 502, 5114, 14716, 1072, 6839, 5952, 10158, 7167, 1113, 2553, 7587, 18879, 572, 10394, 9468, 10214, 10219, 7358, 6859, 8134, 14725, 5289, 6854, 10152, 1282, 18880, 6860, 2]
+// Dependencies: [5, 19, 2138, 502, 5114, 14712, 1072, 6839, 5952, 10156, 7167, 1113, 2553, 7587, 18874, 572, 10392, 9467, 10212, 10217, 7358, 6859, 8134, 14721, 5289, 6854, 10150, 1282, 18875, 6860, 2]
 // Exports: useWaterwheelsActions
 
-// Module 18878 (useWaterwheelsActions)
+// Module 18873 (useWaterwheelsActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5289 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6839 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
 import react_nativeDefault from "react-native" /* 8134 */;
-import GameActionCreators from "GameActionCreators" /* 9468 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10158 */;
-import NotificationUtilsDefault from "NotificationUtils" /* 14725 */;
-import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 18879 */;
+import GameActionCreators from "GameActionCreators" /* 9467 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10156 */;
+import NotificationUtilsDefault from "NotificationUtils" /* 14721 */;
+import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 18874 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2138 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14716 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14712 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

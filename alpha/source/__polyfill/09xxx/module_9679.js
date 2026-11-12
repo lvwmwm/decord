@@ -1,43 +1,19 @@
 // Module ID: 9679
 // Function ID: 9680
-// Dependencies: [9680, 9681, 9688, 5294]
+// Dependencies: [9680, 9682, 5294, 9686, 9677]
 
 // Module 9679
-import _mod9680 from "module_9680" /* 9680 */;
-import _mod9688 from "module_9688" /* 9688 */;
-import DeprecatedStyleSheetPropType_mod from "DeprecatedStyleSheetPropType" /* 9681 */;
-import module_5294_mod from "module_5294" /* 5294 */;
+import _mod9677 from "module_9677" /* 9677 */;
+import _mod9682 from "module_9682" /* 9682 */;
+import _mod9686 from "module_9686" /* 9686 */;
+import DeprecatedStyleSheetPropType from "DeprecatedStyleSheetPropType" /* 9680 */;
 import "module_5294";
+import module_5294_mod from "module_5294" /* 5294 */;
 
-let DeprecatedStyleSheetPropType;
-let items;
-let items1;
 let module_5294;
-let oneOfType;
-let oneOfType2;
-const obj = { style: DeprecatedStyleSheetPropType(_mod9688), source: oneOfType(items), blurRadius: module_5294.number, defaultSource: module_5294.number, loadingIndicatorSource: oneOfType2(items1), progressiveRenderingEnabled: module_5294.bool, fadeDuration: module_5294.number, internal_analyticTag: module_5294.string, onLoadStart: module_5294.func, onError: module_5294.func, onLoad: module_5294.func, onLoadEnd: module_5294.func, testID: module_5294.string, resizeMethod: module_5294.oneOf(["auto", "resize", "scale"]), resizeMode: module_5294.oneOf(["cover", "contain", "stretch", "repeat", "center"]) };
-const module_9680 = Object.assign(_mod9680);
-DeprecatedStyleSheetPropType = DeprecatedStyleSheetPropType_mod;
-module_5294 = module_5294_mod;
-oneOfType = module_5294.oneOfType;
-module_5294 = module_5294_mod;
-const shape = module_5294.shape;
-const obj2 = { uri: module_5294.string, headers: module_5294.objectOf(module_5294.string) };
-module_5294 = module_5294_mod;
-items = [shape(obj2), module_5294.number, ];
-module_5294 = module_5294_mod;
-const arrayOf = module_5294.arrayOf;
-module_5294 = module_5294_mod;
-const size = { uri: module_5294.string, width: module_5294.number, height: module_5294.number, headers: module_5294.objectOf(module_5294.string) };
-const shape2 = module_5294.shape;
-items[2] = arrayOf(shape2(size));
-module_5294 = module_5294_mod;
-oneOfType2 = module_5294.oneOfType;
-module_5294 = module_5294_mod;
-items1 = [, ];
-const obj3 = { uri: module_5294.string };
-items1[0] = module_5294.shape(obj3);
-items1[1] = module_5294.number;
+let module_9682;
+const obj = { accessible: module_5294.bool, accessibilityLabel: module_5294.node, accessibilityHint: module_5294.string, accessibilityActions: module_5294.arrayOf(module_5294.string), accessibilityIgnoresInvertColors: module_5294.bool, accessibilityRole: module_5294.oneOf(_mod9686.DeprecatedAccessibilityRoles), accessibilityState: module_5294.object, accessibilityValue: module_5294.object, accessibilityLiveRegion: module_5294.oneOf(["none", "polite", "assertive"]), importantForAccessibility: module_5294.oneOf(["auto", "yes", "no", "no-hide-descendants"]), accessibilityViewIsModal: module_5294.bool, accessibilityElementsHidden: module_5294.bool, onAccessibilityAction: module_5294.func, onAccessibilityTap: module_5294.func, onMagicTap: module_5294.func, testID: module_5294.string, nativeID: module_5294.string, onResponderGrant: module_5294.func, onResponderMove: module_5294.func, onResponderReject: module_5294.func, onResponderRelease: module_5294.func, onResponderTerminate: module_5294.func, onResponderTerminationRequest: module_5294.func, onStartShouldSetResponder: module_5294.func, onStartShouldSetResponderCapture: module_5294.func, onMoveShouldSetResponder: module_5294.func, onMoveShouldSetResponderCapture: module_5294.func, hitSlop: _mod9677, onLayout: module_5294.func, pointerEvents: module_5294.oneOf(["box-none", "none", "box-only", "auto"]), style: module_9682, removeClippedSubviews: module_5294.bool, renderToHardwareTextureAndroid: module_5294.bool, shouldRasterizeIOS: module_5294.bool, collapsable: module_5294.bool, needsOffscreenAlphaCompositing: module_5294.bool };
+module_9682 = DeprecatedStyleSheetPropType(_mod9682);
 module_5294 = module_5294_mod;
 
 export default obj;

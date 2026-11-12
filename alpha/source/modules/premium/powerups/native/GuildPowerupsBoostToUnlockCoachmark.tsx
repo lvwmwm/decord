@@ -1,11 +1,11 @@
-// Module ID: 18763
-// Function ID: 18764
+// Module ID: 18758
+// Function ID: 18759
 // Name: GuildPowerupsBoostToUnlockCoachmark
-// Dependencies: [19, 10628, 18764, 2]
+// Dependencies: [19, 10626, 18759, 2]
 // Exports: default
 
-// Module 18763 (GuildPowerupsBoostToUnlockCoachmark)
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 10628 */;
+// Module 18758 (GuildPowerupsBoostToUnlockCoachmark)
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 10626 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -22,6 +22,6 @@ export default function GuildPowerupsBoostToUnlockCoachmark(powerup) {
     const obj = { type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed };
     return obj;
   }, items);
-  markAsDismissed(18764)(targetRef, guildId, memo);
+  markAsDismissed(18759)(targetRef, guildId, memo);
   return null;
 };

@@ -1,9 +1,9 @@
-// Module ID: 14100
-// Function ID: 14101
+// Module ID: 14096
+// Function ID: 14097
 // Name: ChatListNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 14100 (ChatListNativeComponent)
+// Module 14096 (ChatListNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

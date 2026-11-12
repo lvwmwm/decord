@@ -1,9 +1,9 @@
-// Module ID: 11355
-// Function ID: 11356
+// Module ID: 11349
+// Function ID: 11350
 // Name: application_commands/ApplicationCommandBuiltIns
-// Dependencies: [5185, 1385, 6282, 2116, 5922, 1113, 5891, 10837, 8069, 8593, 2]
+// Dependencies: [5185, 1385, 6282, 2116, 5922, 1113, 5891, 10831, 8069, 8593, 2]
 
-// Module 11355 (application_commands/ApplicationCommandBuiltIns)
+// Module 11349 (application_commands/ApplicationCommandBuiltIns)
 import Server from "Server" /* 2116 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5922 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
@@ -69,8 +69,8 @@ let obj = {
             }
           }
       };
-      const openLeaveGroupDMConfirmationAlert = channel(10837).openLeaveGroupDMConfirmationAlert;
-      channel(10837);
+      const openLeaveGroupDMConfirmationAlert = channel(10831).openLeaveGroupDMConfirmationAlert;
+      channel(10831);
       intl3 = tmp5(1113).intl;
       intl4 = tmp5(1113).intl;
       const result = openLeaveGroupDMConfirmationAlert(obj6);

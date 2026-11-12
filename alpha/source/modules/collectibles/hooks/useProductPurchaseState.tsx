@@ -1,12 +1,12 @@
-// Module ID: 9452
-// Function ID: 9453
+// Module ID: 9451
+// Function ID: 9452
 // Name: useProductPurchaseState
-// Dependencies: [8434, 9453, 2111, 504, 2]
+// Dependencies: [8434, 9452, 2111, 504, 2]
 // Exports: useProductPurchaseState
 
-// Module 9452 (useProductPurchaseState)
+// Module 9451 (useProductPurchaseState)
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import compactDefault from "compact" /* 9453 */;
+import compactDefault from "compact" /* 9452 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8434 */;
 import size from "module_2" /* 2 */;
 

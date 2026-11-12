@@ -1,42 +1,44 @@
-// Module ID: 14432
-// Function ID: 14433
+// Module ID: 14428
+// Function ID: 14429
 // Name: useCheckpointPressSound
-// Dependencies: [19, 14399, 2]
+// Dependencies: [19, 14395, 2]
 // Exports: default
 
-// Module 14432 (useCheckpointPressSound)
-import useCheckpointSoundDefault from "useCheckpointSound" /* 14399 */;
+// Module 14428 (useCheckpointPressSound)
+import useCheckpointSoundDefault from "useCheckpointSound" /* 14395 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/checkpoint/native/useCheckpointPressSound.tsx");
 
-export default function useCheckpointPressSound(arg0, arg1) {
-  let closure_0 = arg1;
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
+export default function useCheckpointPressSound(source) {
+  let closure_129_0;
+  let disabled;
+  ({ onPress: closure_129_0, disabled } = source);
+  source = source.source;
+  if (disabled === undefined) {
+    disabled = false;
   }
-  let closure_2 = useCheckpointSoundDefault(arg0);
+  let closure_2 = useCheckpointSoundDefault(source);
   let closure_3 = react.useRef(false);
   return {
     onPressIn() {
       ref.current = true;
-      const tmp = flag;
+      const tmp = disabled;
       if (!tmp) {
         closure_2();
       }
     },
-    onPress() {
+    onPressWithSound() {
       const tmp = ref;
       if (!ref.current) {
-        const tmp2 = flag;
+        const tmp2 = disabled;
         if (!tmp2) {
           closure_2();
         }
       }
       tmp.current = false;
-      closure_0();
+      closure_1_0();
     }
   };
 };

@@ -1,10 +1,10 @@
-// Module ID: 18663
-// Function ID: 18664
+// Module ID: 18658
+// Function ID: 18659
 // Name: isActivityTemporaryCustomStatus
 // Dependencies: [6006, 2]
 // Exports: isActivityTemporaryCustomStatus
 
-// Module 18663 (isActivityTemporaryCustomStatus)
+// Module 18658 (isActivityTemporaryCustomStatus)
 import ActivityTypes from "ActivityTypes" /* 6006 */;
 import size from "module_2" /* 2 */;
 

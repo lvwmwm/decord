@@ -1,28 +1,28 @@
-// Module ID: 19127
-// Function ID: 19128
+// Module ID: 19122
+// Function ID: 19123
 // Name: ICYMIJoinGuildsScreen
-// Dependencies: [5, 32, 19, 17, 5244, 5114, 19126, 1072, 21, 19097, 575, 7654, 10876, 1652, 5485, 7764, 504, 1411, 9437, 5957, 7364, 5866, 5873, 7864, 1113, 1627, 16733, 10150, 5952, 6785, 19112, 7822, 2]
+// Dependencies: [5, 32, 19, 17, 5244, 5114, 19121, 1072, 21, 19092, 575, 7654, 10870, 1652, 5485, 7764, 504, 1411, 9436, 5957, 7364, 5866, 5873, 7864, 1113, 1627, 16728, 10148, 5952, 6785, 19107, 7822, 2]
 // Exports: default
 
-// Module 19127 (ICYMIJoinGuildsScreen)
+// Module 19122 (ICYMIJoinGuildsScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import GuildIcon from "GuildIcon" /* 7654 */;
-import ClipViewDefault from "ClipView" /* 9437 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10150 */;
-import ServerIcon2 from "ServerIcon" /* 10876 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16733 */;
-import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 19112 */;
+import ClipViewDefault from "ClipView" /* 9436 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10148 */;
+import ServerIcon2 from "ServerIcon" /* 10870 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16728 */;
+import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 19107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 19126 */;
+import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 19121 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19097 */;
+import createICYMIStyles from "createICYMIStyles" /* 19092 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -182,7 +182,7 @@ function CutoutGuildBanner(guild) {
   }
   const obj3 = { style: tmp.bannerImage, children: items3 };
   const obj4 = { cutouts: items1, children: tmp11Result };
-  size = { shape: guild(9437).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  size = { shape: guild(9436).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   items1 = [size];
   const tmp13 = ClipViewDefault;
   const tmp9 = closure_13;

@@ -1,11 +1,11 @@
-// Module ID: 20062
-// Function ID: 20063
+// Module ID: 20057
+// Function ID: 20058
 // Name: TopEmojisDataManager
-// Dependencies: [5286, 1388, 7816, 9483, 2]
+// Dependencies: [5286, 1388, 7816, 9482, 2]
 
-// Module 20062 (TopEmojisDataManager)
+// Module 20057 (TopEmojisDataManager)
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9483 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9482 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;

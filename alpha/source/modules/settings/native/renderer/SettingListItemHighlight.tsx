@@ -1,14 +1,14 @@
-// Module ID: 17102
-// Function ID: 17103
+// Module ID: 17097
+// Function ID: 17098
 // Name: SettingListItemHighlight
-// Dependencies: [19, 17, 17097, 21, 5243, 575, 1652, 5485, 1705, 2]
+// Dependencies: [19, 17, 17092, 21, 5243, 575, 1652, 5485, 1705, 2]
 
-// Module 17102 (SettingListItemHighlight)
+// Module 17097 (SettingListItemHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 17097 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 17092 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 

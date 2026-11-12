@@ -1,12 +1,12 @@
-// Module ID: 18301
-// Function ID: 18302
+// Module ID: 18296
+// Function ID: 18297
 // Name: DesignSystemsExperimentalButtonsSetting
-// Dependencies: [9136, 1072, 12317, 18302, 2]
+// Dependencies: [9135, 1072, 12311, 18297, 2]
 
-// Module 18301 (DesignSystemsExperimentalButtonsSetting)
+// Module 18296 (DesignSystemsExperimentalButtonsSetting)
 import Constants from "Constants" /* 1072 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 18491
-// Function ID: 18492
+// Module ID: 18486
+// Function ID: 18487
 // Name: MobileNotifSettingsRendererConfig
-// Dependencies: [17996, 18492, 18508, 2]
+// Dependencies: [17991, 18487, 18503, 2]
 
-// Module 18491 (MobileNotifSettingsRendererConfig)
-import MobileNotifSettings from "MobileNotifSettings" /* 17996 */;
-import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 18492 */;
-import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 18508 */;
+// Module 18486 (MobileNotifSettingsRendererConfig)
+import MobileNotifSettings from "MobileNotifSettings" /* 17991 */;
+import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 18487 */;
+import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 18503 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
@@ -21,6 +21,7 @@ obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUESTS] = MobileNotif
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CALLS] = MobileNotifSettingsNodesAll.Calls;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_LOW] = MobileNotifSettingsNodesAll.MissedMessagesLow;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_DEFAULT] = MobileNotifSettingsNodesAll.MissedMessagesDefault;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_SUMMARY_REMINDER] = MobileNotifSettingsNodesAll.SummaryReminder;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS_CHOICE] = MobileNotifSettingsNodesAll.ReactionsChoice;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_INVITES_RECONNECTING] = MobileNotifSettingsNodesAll.InvitesReconnecting;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_TRENDING_SUGGESTIONS] = MobileNotifSettingsNodesAll.TrendingSuggestions;
@@ -41,6 +42,7 @@ obj[MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_CHANNEL_ACTIVITY] = Mobi
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_POLLS] = MobileNotifSettingsNodesAll.Polls;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS] = MobileNotifSettingsNodesAll.Reactions;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_GUILD_EVENT_NOTIFICATIONS] = MobileNotifSettingsNodesAll.GuildEventNotifications;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_UPCOMING_SERVER_EVENT] = MobileNotifSettingsNodesAll.UpcomingServerEvent;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FORUM_NOTIFICATIONS] = MobileNotifSettingsNodesAll.ForumNotifications;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_OTHER_GUILD] = MobileNotifSettingsNodesAll.OtherGuild;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_SAFETY_ALERTS] = MobileNotifSettingsNodesAll.SafetyAlerts;

@@ -1,10 +1,10 @@
-// Module ID: 17869
-// Function ID: 17870
+// Module ID: 17864
+// Function ID: 17865
 // Name: CustomTypingIndicatorEmojiSlots
-// Dependencies: [32, 19, 1388, 21, 17870, 17872, 17874, 17876, 17878, 17880, 17882, 17884, 17886, 17888, 17890, 17892, 17894, 17896, 17898, 17900, 17902, 17904, 17906, 17908, 17910, 17912, 5243, 14486, 7828, 1411, 1652, 5876, 5877, 575, 9477, 1113, 4081, 1407, 7381, 12, 6274, 2]
+// Dependencies: [32, 19, 1388, 21, 17865, 17867, 17869, 17871, 17873, 17875, 17877, 17879, 17881, 17883, 17885, 17887, 17889, 17891, 17893, 17895, 17897, 17899, 17901, 17903, 17905, 17907, 5243, 14482, 7828, 1411, 1652, 5876, 5877, 575, 9476, 1113, 4081, 1407, 7381, 12, 6274, 2]
 // Exports: default
 
-// Module 17869 (CustomTypingIndicatorEmojiSlots)
+// Module 17864 (CustomTypingIndicatorEmojiSlots)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
@@ -13,30 +13,30 @@ import _mod1652 from "module_1652" /* 1652 */;
 import spring_spring from "spring/spring" /* 5876 */;
 import springPresets from "springPresets" /* 5877 */;
 import EmojiDefault from "Emoji" /* 7828 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9477 */;
-import useCanPlayAnimatedEmojiDefault from "useCanPlayAnimatedEmoji" /* 14486 */;
-import EmojiAngryFaceWithHornsIcon from "EmojiAngryFaceWithHornsIcon" /* 17870 */;
-import EmojiColdFaceIcon from "EmojiColdFaceIcon" /* 17872 */;
-import EmojiCowboyHatFaceIcon from "EmojiCowboyHatFaceIcon" /* 17874 */;
-import EmojiCryingFaceIcon from "EmojiCryingFaceIcon" /* 17876 */;
-import EmojiDisguisedFaceIcon from "EmojiDisguisedFaceIcon" /* 17878 */;
-import EmojiFaceVomitingIcon from "EmojiFaceVomitingIcon" /* 17880 */;
-import EmojiFaceWithMonocleIcon from "EmojiFaceWithMonocleIcon" /* 17882 */;
-import EmojiFaceWithSpiralEyesIcon from "EmojiFaceWithSpiralEyesIcon" /* 17884 */;
-import EmojiMeltingFaceIcon from "EmojiMeltingFaceIcon" /* 17886 */;
-import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 17888 */;
-import EmojiNerdFaceIcon from "EmojiNerdFaceIcon" /* 17890 */;
-import EmojiPartyingFaceIcon from "EmojiPartyingFaceIcon" /* 17892 */;
-import EmojiSalutingFaceIcon from "EmojiSalutingFaceIcon" /* 17894 */;
-import EmojiSkullIcon from "EmojiSkullIcon" /* 17896 */;
-import EmojiSmilingFaceWithHornsIcon from "EmojiSmilingFaceWithHornsIcon" /* 17898 */;
-import EmojiSmilingFaceWithSunglassesIcon from "EmojiSmilingFaceWithSunglassesIcon" /* 17900 */;
-import EmojiSquintingFaceWithTongueIcon from "EmojiSquintingFaceWithTongueIcon" /* 17902 */;
-import EmojiUpsideDownFaceIcon from "EmojiUpsideDownFaceIcon" /* 17904 */;
-import EmojiWoozyFaceIcon from "EmojiWoozyFaceIcon" /* 17906 */;
-import EmojiZanyFaceIcon from "EmojiZanyFaceIcon" /* 17908 */;
-import EmojiRollingOnTheFloorLaughingIcon from "EmojiRollingOnTheFloorLaughingIcon" /* 17910 */;
-import EmojiSmilingFaceWithHeartsIcon from "EmojiSmilingFaceWithHeartsIcon" /* 17912 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9476 */;
+import useCanPlayAnimatedEmojiDefault from "useCanPlayAnimatedEmoji" /* 14482 */;
+import EmojiAngryFaceWithHornsIcon from "EmojiAngryFaceWithHornsIcon" /* 17865 */;
+import EmojiColdFaceIcon from "EmojiColdFaceIcon" /* 17867 */;
+import EmojiCowboyHatFaceIcon from "EmojiCowboyHatFaceIcon" /* 17869 */;
+import EmojiCryingFaceIcon from "EmojiCryingFaceIcon" /* 17871 */;
+import EmojiDisguisedFaceIcon from "EmojiDisguisedFaceIcon" /* 17873 */;
+import EmojiFaceVomitingIcon from "EmojiFaceVomitingIcon" /* 17875 */;
+import EmojiFaceWithMonocleIcon from "EmojiFaceWithMonocleIcon" /* 17877 */;
+import EmojiFaceWithSpiralEyesIcon from "EmojiFaceWithSpiralEyesIcon" /* 17879 */;
+import EmojiMeltingFaceIcon from "EmojiMeltingFaceIcon" /* 17881 */;
+import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 17883 */;
+import EmojiNerdFaceIcon from "EmojiNerdFaceIcon" /* 17885 */;
+import EmojiPartyingFaceIcon from "EmojiPartyingFaceIcon" /* 17887 */;
+import EmojiSalutingFaceIcon from "EmojiSalutingFaceIcon" /* 17889 */;
+import EmojiSkullIcon from "EmojiSkullIcon" /* 17891 */;
+import EmojiSmilingFaceWithHornsIcon from "EmojiSmilingFaceWithHornsIcon" /* 17893 */;
+import EmojiSmilingFaceWithSunglassesIcon from "EmojiSmilingFaceWithSunglassesIcon" /* 17895 */;
+import EmojiSquintingFaceWithTongueIcon from "EmojiSquintingFaceWithTongueIcon" /* 17897 */;
+import EmojiUpsideDownFaceIcon from "EmojiUpsideDownFaceIcon" /* 17899 */;
+import EmojiWoozyFaceIcon from "EmojiWoozyFaceIcon" /* 17901 */;
+import EmojiZanyFaceIcon from "EmojiZanyFaceIcon" /* 17903 */;
+import EmojiRollingOnTheFloorLaughingIcon from "EmojiRollingOnTheFloorLaughingIcon" /* 17905 */;
+import EmojiSmilingFaceWithHeartsIcon from "EmojiSmilingFaceWithHeartsIcon" /* 17907 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;

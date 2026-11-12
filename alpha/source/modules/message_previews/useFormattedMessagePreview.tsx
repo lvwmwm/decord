@@ -1,17 +1,17 @@
-// Module ID: 10961
-// Function ID: 10962
+// Module ID: 10955
+// Function ID: 10956
 // Name: useFormattedMessagePreview
-// Dependencies: [502, 5185, 1385, 1072, 1088, 504, 9144, 6686, 1113, 6298, 5889, 12, 9149, 9256, 2]
+// Dependencies: [502, 5185, 1385, 1072, 1088, 504, 9143, 6686, 1113, 6298, 5889, 12, 9148, 9255, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 10961 (useFormattedMessagePreview)
+// Module 10955 (useFormattedMessagePreview)
 import Constants from "Constants" /* 1072 */;
 import MessageTypes from "MessageTypes" /* 1088 */;
 import intl30 from "intl" /* 1113 */;
 import isForwardMessageDefault from "isForwardMessage" /* 5889 */;
 import useMessageAuthorDefault from "useMessageAuthor" /* 6686 */;
-import useIsCallActiveDefault from "useIsCallActive" /* 9144 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 9149 */;
+import useIsCallActiveDefault from "useIsCallActive" /* 9143 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 9148 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -407,7 +407,7 @@ function formatMessagePreview(type, isBlocked) {
               } else if (type.type === tmp4(1088).MessageTypes.VOICE_SESSION) {
                 const obj57 = { type: "text", text: tmp4Result.getVoiceSessionMessageContent(type) };
                 tmp21 = obj57;
-                tmp4Result = tmp4(9256);
+                tmp4Result = tmp4(9255);
               }
             }
           }

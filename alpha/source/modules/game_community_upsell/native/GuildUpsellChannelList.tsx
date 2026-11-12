@@ -1,20 +1,20 @@
-// Module ID: 18864
-// Function ID: 18865
+// Module ID: 18859
+// Function ID: 18860
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 16100, 6783, 18865, 1072, 21, 5243, 575, 1113, 15584, 18866, 18870, 5432, 504, 18874, 1252, 14916, 7381, 5866, 5873, 17590, 18875, 2]
+// Dependencies: [19, 17, 16095, 6783, 18860, 1072, 21, 5243, 575, 1113, 15581, 18861, 18865, 5432, 504, 18869, 1252, 14912, 7381, 5866, 5873, 17585, 18870, 2]
 // Exports: default
 
-// Module 18864 (GuildUpsellChannelList)
+// Module 18859 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 15584 */;
-import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 18865 */;
-import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 18866 */;
-import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 18870 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 15581 */;
+import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 18860 */;
+import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 18861 */;
+import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 18865 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 16100 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 16095 */;
 import ConsentStore from "ConsentStore" /* 6783 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;

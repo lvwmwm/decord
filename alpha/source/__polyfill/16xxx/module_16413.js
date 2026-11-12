@@ -1,19 +1,12 @@
 // Module ID: 16413
 // Function ID: 16414
-// Dependencies: [16399]
+// Dependencies: [16412]
 
 // Module 16413
-import _mod16399 from "module_16399" /* 16399 */;
+import _mod16412 from "module_16412" /* 16412 */;
 
 
-export default (arg0, arg1) => {
-  const tmp = _mod16399(arg0, arg1);
-  let prerelease = null;
-  if (tmp) {
-    prerelease = null;
-    if (tmp.prerelease.length) {
-      prerelease = tmp.prerelease;
-    }
-  }
-  return prerelease;
+export default (arr, arg1) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => _mod16412(arg0, arg1, closure_0));
 };

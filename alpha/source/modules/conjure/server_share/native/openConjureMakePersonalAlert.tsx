@@ -1,10 +1,10 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 13211
+// Function ID: 13212
 // Name: openConjureMakePersonalAlert
-// Dependencies: [5, 19, 21, 13215, 5952, 6211, 1113, 4079, 6274, 13218, 5866, 6207, 2]
+// Dependencies: [5, 19, 21, 13209, 5952, 6211, 1113, 4079, 6274, 13212, 5866, 6207, 2]
 // Exports: default
 
-// Module 13217 (openConjureMakePersonalAlert)
+// Module 13211 (openConjureMakePersonalAlert)
 import useAlertStore from "useAlertStore" /* 6207 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -96,7 +96,7 @@ function ConjureMakePersonalAlert(project) {
     return obj(...arguments);
   };
   const tmp = obj;
-  const tmp3 = obj(13215)(project.project);
+  const tmp3 = obj(13209)(project.project);
   _require = tmp3;
   ({ keptChannels, error } = tmp3);
   const tmp4 = closure_4;
@@ -105,7 +105,7 @@ function ConjureMakePersonalAlert(project) {
   const AlertModal = require("AlertModal").AlertModal;
   intl = require("intl").intl;
   Stack = require("Stack/Stack").Stack;
-  items = [closure_4(obj(13218), { rows }), , ];
+  items = [closure_4(obj(13212), { rows }), , ];
   let tmp4Result = null;
   if (null != keptChannels) {
     let obj2 = { variant: "body-sm/normal", color: "text-muted", children: keptChannels };

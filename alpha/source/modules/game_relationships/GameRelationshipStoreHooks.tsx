@@ -1,10 +1,10 @@
-// Module ID: 15667
-// Function ID: 15668
+// Module ID: 15664
+// Function ID: 15665
 // Name: GameRelationshipStoreHooks
 // Dependencies: [32, 8698, 1072, 504, 6887, 2]
 // Exports: useGameFriendsForUser, useGameRelationshipsByType, useHasGameRelationshipsForUser, useHasGameRelationshipsForUserByType, useIncomingGameRelationshipsForUser
 
-// Module 15667 (GameRelationshipStoreHooks)
+// Module 15664 (GameRelationshipStoreHooks)
 import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 8698 */;

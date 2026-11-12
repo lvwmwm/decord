@@ -1,10 +1,10 @@
-// Module ID: 12373
-// Function ID: 12374
+// Module ID: 12367
+// Function ID: 12368
 // Name: handleMessagesTapImage
-// Dependencies: [8677, 5185, 1385, 1072, 10130, 12371, 1095, 8566, 5949, 6321, 8560, 5891, 7968, 2]
+// Dependencies: [8677, 5185, 1385, 1072, 10129, 12365, 1095, 8566, 5949, 6321, 8560, 5891, 7968, 2]
 // Exports: handleMessagesTapImage
 
-// Module 12373 (handleMessagesTapImage)
+// Module 12367 (handleMessagesTapImage)
 import Constants from "Constants" /* 1072 */;
 import LinkingDefault from "Linking" /* 5949 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8566 */;
@@ -45,7 +45,7 @@ export function handleMessagesTapImage(tapImageData) {
   ({ allowWithinModal, selectedChannelId } = tapImageData);
   if (null != portal) {
     const tmp2 = dependencyMap;
-    let obj = embedId(10130);
+    let obj = embedId(10129);
     obj.markPortalAlive(portal);
   }
   if (true === allowWithinModal) {
@@ -241,6 +241,6 @@ export function handleMessagesTapImage(tapImageData) {
       tmp12 = message1;
     }
   } else {
-    embedId(12371);
+    embedId(12365);
   }
 }

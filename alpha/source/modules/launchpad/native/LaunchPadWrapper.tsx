@@ -1,15 +1,15 @@
-// Module ID: 19657
-// Function ID: 19658
+// Module ID: 19652
+// Function ID: 19653
 // Name: LaunchPadWrapper
-// Dependencies: [32, 19, 17, 12313, 1072, 21, 5243, 575, 13031, 1108, 5429, 19658, 11192, 1252, 19655, 5491, 6269, 7352, 1652, 19659, 6265, 1113, 6236, 19661, 2]
+// Dependencies: [32, 19, 17, 12307, 1072, 21, 5243, 575, 13025, 1108, 5429, 19653, 11186, 1252, 19650, 5491, 6269, 7352, 1652, 19654, 6265, 1113, 6236, 19656, 2]
 // Exports: default
 
-// Module 19657 (LaunchPadWrapper)
+// Module 19652 (LaunchPadWrapper)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HapticUtils from "HapticUtils" /* 5491 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 12313 */;
-import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 19655 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 12307 */;
+import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 19650 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

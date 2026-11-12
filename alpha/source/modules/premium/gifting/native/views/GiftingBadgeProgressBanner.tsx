@@ -1,10 +1,10 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 11622
+// Function ID: 11623
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 575, 5243, 7852, 6275, 1260, 11619, 5866, 1113, 2781, 2]
+// Dependencies: [19, 17, 21, 575, 5243, 7852, 6275, 1260, 11613, 5866, 1113, 2781, 2]
 // Exports: default
 
-// Module 11628 (GiftingBadgeProgressBanner)
+// Module 11622 (GiftingBadgeProgressBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
@@ -61,7 +61,7 @@ export default function GiftingBadgeProgressBanner(arg0) {
   const tmp8 = hasOwnProperty;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: PX_40 };
-    tmp10Result = tmp10(tmp2(11619), obj4);
+    tmp10Result = tmp10(tmp2(11613), obj4);
   }
   items2 = [React3(View, obj3), ];
   const obj5 = { variant: "body-md/semibold", children: intl.formatToPlainString(_modDef2781["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };

@@ -1,18 +1,18 @@
-// Module ID: 9074
-// Function ID: 9075
+// Module ID: 9073
+// Function ID: 9074
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 5092, 21, 5243, 575, 504, 5891, 8985, 5839, 1357, 1113, 9075, 2]
+// Dependencies: [19, 17, 5092, 21, 5243, 575, 504, 5891, 8984, 5839, 1357, 1113, 9074, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
-// Module 9074 (ConversationNavigatorHeader)
+// Module 9073 (ConversationNavigatorHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useToken from "useToken" /* 5839 */;
 import useChannelNameDefault from "useChannelName" /* 5891 */;
-import HeaderShared from "HeaderShared" /* 8985 */;
-import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 9075 */;
+import HeaderShared from "HeaderShared" /* 8984 */;
+import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 9074 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -36,7 +36,7 @@ function ConversationNavigatorHeader(channelId) {
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const tmp3 = useChannelNameDefault(stateFromStores, true);
-  const GenericHeaderTitle = channelId(8985).GenericHeaderTitle;
+  const GenericHeaderTitle = channelId(8984).GenericHeaderTitle;
   return <tmp5 style={tmp.container}>{null}</tmp5>;
 }
 function HeaderWithBorder(shouldHandleSafeArea) {

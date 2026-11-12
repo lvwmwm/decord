@@ -1,16 +1,16 @@
-// Module ID: 20659
-// Function ID: 20660
+// Module ID: 20654
+// Function ID: 20655
 // Name: QuestFetchManager
-// Dependencies: [5, 8742, 1089, 7816, 10065, 1242, 10066, 1377, 6984, 20660, 2]
+// Dependencies: [5, 8741, 1089, 7816, 10064, 1242, 10065, 1377, 6984, 20655, 2]
 
-// Module 20659 (QuestFetchManager)
+// Module 20654 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import QuestsEligibility from "QuestsEligibility" /* 10065 */;
-import QuestActionCreators from "QuestActionCreators" /* 10066 */;
+import QuestsEligibility from "QuestsEligibility" /* 10064 */;
+import QuestActionCreators from "QuestActionCreators" /* 10065 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 8742 */;
+import QuestStore from "QuestStore" /* 8741 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 

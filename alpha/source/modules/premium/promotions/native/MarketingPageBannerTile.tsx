@@ -1,16 +1,16 @@
-// Module ID: 9949
-// Function ID: 9950
+// Module ID: 9948
+// Function ID: 9949
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 5243, 575, 7852, 9950, 6275, 1260, 10007, 5957, 5866, 5949, 10008, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 7852, 9949, 6275, 1260, 10006, 5957, 5866, 5949, 10007, 2]
 // Exports: default
 
-// Module 9949 (MarketingPageBannerTile)
+// Module 9948 (MarketingPageBannerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import LinkingDefault from "Linking" /* 5949 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 6275 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10008 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10007 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -60,7 +60,7 @@ export default function MarketingPageBannerTile(bannerFields) {
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const button = bannerFields.button;
   let buttonAction;
-  const getButtonActionHandler = helpArticleLinkProps(9950).getButtonActionHandler;
+  const getButtonActionHandler = helpArticleLinkProps(9949).getButtonActionHandler;
   if (button != null) {
     buttonAction = button.buttonAction;
   }
@@ -83,9 +83,9 @@ export default function MarketingPageBannerTile(bannerFields) {
   const buttonActionHandler = getButtonActionHandler(obj);
   const tmp2Result = useTrackImpressionDefault;
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(10007);
+  const tmp4Result = helpArticleLinkProps(10006);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(10007);
+  const tmp4Result2 = helpArticleLinkProps(10006);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj3 = { style: items, children: closure_5(View, obj4) };
   items = [tmp.container, style];

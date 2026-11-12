@@ -1,9 +1,9 @@
-// Module ID: 18833
-// Function ID: 18834
+// Module ID: 18828
+// Function ID: 18829
 // Name: StageVoiceChannel
-// Dependencies: [19, 17, 8663, 5175, 6952, 6895, 6011, 5097, 1072, 5997, 21, 1113, 5243, 575, 504, 6876, 18834, 6886, 6880, 7617, 7618, 2017, 6837, 10831, 5891, 10944, 18712, 18823, 18717, 2]
+// Dependencies: [19, 17, 8663, 5175, 6952, 6895, 6011, 5097, 1072, 5997, 21, 1113, 5243, 575, 504, 6876, 18829, 6886, 6880, 7617, 7618, 2017, 6837, 10825, 5891, 10938, 18707, 18818, 18712, 2]
 
-// Module 18833 (StageVoiceChannel)
+// Module 18828 (StageVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,10 +15,10 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6837 */;
 import StageMediaHooks from "StageMediaHooks" /* 6876 */;
 import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 7617 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7618 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10831 */;
-import ChannelItemDefault from "ChannelItem" /* 18712 */;
-import ChannelInfoDefault from "ChannelInfo" /* 18823 */;
-import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 18834 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10825 */;
+import ChannelItemDefault from "ChannelItem" /* 18707 */;
+import ChannelInfoDefault from "ChannelInfo" /* 18818 */;
+import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 18829 */;
 import react from "react" /* 19 */;
 import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8663 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
@@ -96,7 +96,7 @@ const memoResult = react.memo(function StageVoiceChannel(channel) {
     const result = obj.openChannelLongPressActionSheet(channel.id);
   }, items3);
   const tmp10 = useChannelNameDefault(channel, false);
-  const tmp2Result2 = channel(10944);
+  const tmp2Result2 = channel(10938);
   const isConnectedToVoiceChannel = tmp2Result2.useIsConnectedToVoiceChannel(channel);
   if (stageInstance != null) {
     topic = stageInstance.topic;

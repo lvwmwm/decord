@@ -1,22 +1,22 @@
-// Module ID: 19403
-// Function ID: 19404
+// Module ID: 19398
+// Function ID: 19399
 // Name: FriendsNavigator
-// Dependencies: [19, 21, 9062, 5243, 575, 8988, 8985, 14812, 1113, 8611, 7424, 19404, 19410, 19413, 19414, 19415, 19426, 19427, 19428, 19430, 19433, 19434, 5425, 7705, 5200, 5314, 19435, 2]
+// Dependencies: [19, 21, 9061, 5243, 575, 8987, 8984, 14808, 1113, 8611, 7424, 19399, 19405, 19408, 19409, 19410, 19421, 19422, 19423, 19425, 19428, 19429, 5425, 7705, 5200, 5314, 19430, 2]
 // Exports: default
 
-// Module 19403 (FriendsNavigator)
+// Module 19398 (FriendsNavigator)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import DeviceUtils from "DeviceUtils" /* 5200 */;
 import native from "native" /* 5314 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5425 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7705 */;
-import HeaderShared from "HeaderShared" /* 8985 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8988 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14812 */;
+import HeaderShared from "HeaderShared" /* 8984 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8987 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14808 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9062 */;
+import NativeStackView from "NativeStackView" /* 9061 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const AppFrameContainerDefault = tmp(19435);
+const AppFrameContainerDefault = tmp(19430);
 function RequestsSettingsModalButton(onPress) {
   let HeaderIconButton;
   let intl;

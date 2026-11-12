@@ -1,14 +1,14 @@
-// Module ID: 9379
-// Function ID: 9380
+// Module ID: 9378
+// Function ID: 9379
 // Name: CollectiblesPricingPromotionUtils
-// Dependencies: [7187, 9349, 1385, 1072, 8430, 9380, 9381, 504, 2171, 2]
+// Dependencies: [7187, 9348, 1385, 1072, 8430, 9379, 9380, 504, 2171, 2]
 // Exports: useCollectiblesPricingPromotionForProduct
 
-// Module 9379 (CollectiblesPricingPromotionUtils)
+// Module 9378 (CollectiblesPricingPromotionUtils)
 import Constants from "Constants" /* 1072 */;
-import CollectiblesPromoPriceUtils from "CollectiblesPromoPriceUtils" /* 9380 */;
+import CollectiblesPromoPriceUtils from "CollectiblesPromoPriceUtils" /* 9379 */;
 import SKUPricesStore from "SKUPricesStore" /* 7187 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9349 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9348 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ function getPricingPromotionForCollectiblesProduct(pricingPromotionIds) {
         const productFiatPrice = obj.getProductFiatPrice(obj2);
         let tmp6 = null;
         const obj4 = { storefrontPrices, nonPromoPrice: productFiatPrice };
-        const obj3 = pricingPromotionIds(9380);
+        const obj3 = pricingPromotionIds(9379);
         if (null != obj3.getCollectiblesPromoPrice(obj4)) {
           let found = promotions.find((id) => {
             let hasItem = pricingPromotionIds.includes(id.id);
@@ -66,14 +66,14 @@ export function useCollectiblesPricingPromotionForProduct(skuId) {
   let collectiblesStorefrontPricingIntegrationEnabled;
   let currentUser;
   let promotionsForApplication;
-  let obj = collectiblesStorefrontPricingIntegrationEnabled(9381);
+  let obj = collectiblesStorefrontPricingIntegrationEnabled(9380);
   collectiblesStorefrontPricingIntegrationEnabled = obj.useCollectiblesStorefrontPricingIntegrationEnabled(collectibles_pricing_promotion_eligibility);
   skuId = undefined;
   const tmp3 = collectibles_pricing_promotion_eligibility;
   if (skuId != null) {
     skuId = skuId.skuId;
   }
-  const tmpResult = collectiblesStorefrontPricingIntegrationEnabled(9380);
+  const tmpResult = collectiblesStorefrontPricingIntegrationEnabled(9379);
   const collectiblesStorefrontPrices = tmpResult.useCollectiblesStorefrontPrices(skuId, tmp3);
   const items = [SKUPricesStore];
   const tmpResult4 = collectiblesStorefrontPricingIntegrationEnabled(504);

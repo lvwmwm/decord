@@ -1,9 +1,9 @@
-// Module ID: 9000
-// Function ID: 9001
+// Module ID: 8999
+// Function ID: 9000
 // Name: SearchConstants
 // Dependencies: [1072, 5931, 2]
 
-// Module 9000 (SearchConstants)
+// Module 8999 (SearchConstants)
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5931 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

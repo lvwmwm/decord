@@ -1,18 +1,18 @@
-// Module ID: 19343
-// Function ID: 19344
+// Module ID: 19338
+// Function ID: 19339
 // Name: PeopleScreen
-// Dependencies: [5, 32, 19, 14660, 14645, 9000, 8999, 21, 14638, 504, 19285, 19281, 8069, 14652, 19344, 19276, 19289, 2]
+// Dependencies: [5, 32, 19, 14656, 14641, 8999, 8998, 21, 14634, 504, 19280, 19276, 8069, 14648, 19339, 19271, 19284, 2]
 
-// Module 19343 (PeopleScreen)
+// Module 19338 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 8999 */;
-import TrackingDefault from "Tracking" /* 14652 */;
+import TrackingConstants from "TrackingConstants" /* 8998 */;
+import TrackingDefault from "Tracking" /* 14648 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 14660 */;
-import SearchQueryStore from "SearchQueryStore" /* 14645 */;
-import SearchConstants from "SearchConstants" /* 9000 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 14656 */;
+import SearchQueryStore from "SearchQueryStore" /* 14641 */;
+import SearchConstants from "SearchConstants" /* 8999 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

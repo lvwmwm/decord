@@ -1,10 +1,10 @@
-// Module ID: 14674
-// Function ID: 14675
+// Module ID: 14670
+// Function ID: 14671
 // Name: useIsHubForGuild
 // Dependencies: [5114, 1072, 504, 2]
 // Exports: default
 
-// Module 14674 (useIsHubForGuild)
+// Module 14670 (useIsHubForGuild)
 import Constants from "Constants" /* 1072 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;

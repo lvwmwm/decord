@@ -1,10 +1,10 @@
-// Module ID: 17741
-// Function ID: 17742
+// Module ID: 17736
+// Function ID: 17737
 // Name: GuildRoleSubscriptionMemberPreview
 // Dependencies: [19, 17, 1385, 21, 5243, 575, 1113, 504, 6288, 1411, 7876, 5957, 5866, 1090, 1187, 7893, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 17741 (GuildRoleSubscriptionMemberPreview)
+// Module 17736 (GuildRoleSubscriptionMemberPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

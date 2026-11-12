@@ -1,10 +1,10 @@
-// Module ID: 10916
-// Function ID: 10917
+// Module ID: 10910
+// Function ID: 10911
 // Name: ConjureRemix
-// Dependencies: [5, 7301, 6955, 572, 1113, 4079, 7272, 10917, 8786, 7265, 2]
+// Dependencies: [5, 7301, 6955, 572, 1113, 4079, 7272, 10911, 8785, 7265, 2]
 // Exports: copyProjectName, createConjureRemix, isValidCopyName
 
-// Module 10916 (ConjureRemix)
+// Module 10910 (ConjureRemix)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6955 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7301 */;
@@ -47,7 +47,7 @@ export function createConjureRemix(project, arg1, shareTicket) {
       let tmp;
       let tmp3;
       function startRemix(id, guild_id, name, arg3, remix_share_ticket) {
-        const f145281 = () => "rejected";
+        const f145299 = () => "rejected";
         closure_0 = guild_id;
         closure_1 = arg3;
         function accept(comma) {
@@ -55,7 +55,7 @@ export function createConjureRemix(project, arg1, shareTicket) {
           if (closure_5 == null) {
             obj = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj.acceptRemix(closure_3, comma);
-            closure_5 = acceptRemixResult.catch(f145281);
+            closure_5 = acceptRemixResult.catch(f145299);
           }
           return closure_5;
         }
@@ -208,7 +208,7 @@ export function createConjureRemix(project, arg1, shareTicket) {
           if (closure_5 == null) {
             const tmp2Result = tmp2(tmp3[7]);
             const acceptRemixResult = tmp2Result.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f145281);
+            closure_5 = acceptRemixResult.catch(f145299);
           }
         });
         let obj2 = { name, guild_id, install_scope: id.install_scope, remix_source_project_id: id.id, remix_share_ticket, nonce };
@@ -233,7 +233,7 @@ export function createConjureRemix(project, arg1, shareTicket) {
           if (closure_5 == null) {
             const obj2 = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj2.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f145281);
+            closure_5 = acceptRemixResult.catch(f145299);
           }
           return remix_preview;
         }, () => {

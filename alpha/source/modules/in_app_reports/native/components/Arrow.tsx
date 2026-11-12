@@ -1,14 +1,14 @@
-// Module ID: 12012
-// Function ID: 12013
+// Module ID: 12006
+// Function ID: 12007
 // Name: Arrow
-// Dependencies: [19, 21, 5243, 575, 1187, 12013, 2]
+// Dependencies: [19, 21, 5243, 575, 1187, 12007, 2]
 // Exports: default
 
-// Module 12012 (Arrow)
+// Module 12006 (Arrow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12013 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12007 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

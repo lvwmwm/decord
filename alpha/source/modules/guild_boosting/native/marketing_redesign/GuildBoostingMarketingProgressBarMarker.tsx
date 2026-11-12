@@ -1,20 +1,20 @@
-// Module ID: 15893
-// Function ID: 15894
+// Module ID: 15888
+// Function ID: 15889
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1072, 21, 15894, 15895, 15896, 5243, 575, 5484, 1652, 5240, 5250, 5876, 10732, 5957, 12392, 5866, 9169, 2]
+// Dependencies: [19, 17, 1072, 21, 15889, 15890, 15891, 5243, 575, 5484, 1652, 5240, 5250, 5876, 10726, 5957, 12386, 5866, 9168, 2]
 // Exports: default
 
-// Module 15893 (GuildBoostingMarketingProgressBarMarker)
+// Module 15888 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useThemeDefault from "useTheme" /* 5484 */;
 import spring_spring from "spring/spring" /* 5876 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12392 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15894 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15895 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15896 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12386 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15889 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15890 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15891 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -116,7 +116,7 @@ function ProgressBarMarkerInnerContent(arg0) {
   if (tier !== BoostedGuildTiers.NONE) {
     let tmp23Result;
     if (isDisabled) {
-      tmp23Result = tmp23(tmp5(10732).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+      tmp23Result = tmp23(tmp5(10726).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
     } else {
       obj2 = { source: obj2[tier], style: items3 };
       items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
@@ -254,7 +254,7 @@ export default function ProgressBarMarker(arg0) {
     items7 = [tmp25Result, ];
     const obj8 = { variant: "body-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
     const Text = tmp5(5866).Text;
-    tmp5Result4 = sharedValue(9169);
+    tmp5Result4 = sharedValue(9168);
     items7[1] = closure_6(Text, obj8);
     items5[2] = closure_7(View, obj6);
     return closure_7(View, obj2);

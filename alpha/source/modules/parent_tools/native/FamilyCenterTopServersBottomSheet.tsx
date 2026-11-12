@@ -1,10 +1,10 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 17305
+// Function ID: 17306
 // Name: FamilyCenterTopServersBottomSheet
-// Dependencies: [8673, 21, 5243, 575, 504, 9553, 7379, 7654, 7885, 5866, 1113, 2685, 7680, 2]
+// Dependencies: [8673, 21, 5243, 575, 504, 9552, 7379, 7654, 7885, 5866, 1113, 2685, 7680, 2]
 // Exports: default
 
-// Module 17310 (FamilyCenterTopServersBottomSheet)
+// Module 17305 (FamilyCenterTopServersBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2685 from "module_2685" /* 2685 */;
@@ -30,7 +30,7 @@ function GuildRow(guildActivity) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const tmp2Result = guildActivity(9553);
+    const tmp2Result = guildActivity(9552);
     const topUserOrGuildDescription = tmp2Result.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: closure_4(GuildIconDefault, obj3) };
     const TableRow = tmp2(7379).TableRow;

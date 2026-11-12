@@ -1,10 +1,10 @@
-// Module ID: 15750
-// Function ID: 15751
+// Module ID: 15745
+// Function ID: 15746
 // Name: WishlistAnalyticsContext
 // Dependencies: [19, 21, 2]
 // Exports: WishlistAnalyticsProvider, useWishlistAnalyticsContext
 
-// Module 15750 (WishlistAnalyticsContext)
+// Module 15745 (WishlistAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

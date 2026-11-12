@@ -1,10 +1,10 @@
-// Module ID: 10421
-// Function ID: 10422
+// Module ID: 10419
+// Function ID: 10420
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1072, 21, 10219, 10422, 10426, 2116, 5873, 1113, 2]
+// Dependencies: [5, 19, 1072, 21, 10217, 10420, 10424, 2116, 5873, 1113, 2]
 // Exports: default
 
-// Module 10421 (GameProfileGameClaimCta)
+// Module 10419 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

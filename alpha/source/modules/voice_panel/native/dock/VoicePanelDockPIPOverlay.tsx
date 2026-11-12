@@ -1,17 +1,17 @@
-// Module ID: 19910
-// Function ID: 19911
+// Module ID: 19905
+// Function ID: 19906
 // Name: VoicePanelDockPIPOverlay
-// Dependencies: [32, 19, 17, 1385, 6012, 21, 5243, 575, 12970, 6033, 6170, 7656, 16358, 1113, 19739, 9417, 11924, 1652, 5485, 1705, 504, 1187, 9450, 7483, 19911, 7368, 3205, 17466, 2]
+// Dependencies: [32, 19, 17, 1385, 6012, 21, 5243, 575, 12964, 6033, 6170, 7656, 16353, 1113, 19734, 9416, 11918, 1652, 5485, 1705, 504, 1187, 9449, 7483, 19906, 7368, 3205, 17461, 2]
 
-// Module 19910 (VoicePanelDockPIPOverlay)
+// Module 19905 (VoicePanelDockPIPOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import Constants from "Constants" /* 6012 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6170 */;
 import NativeViewDefault from "NativeView" /* 7656 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12970 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19739 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12964 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19734 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -61,11 +61,11 @@ function StreamVolumeSlider(arg0) {
     accessibilityLabel: intl.string(handleVolumeChange(1113).t.pEAl4b)
   };
   const tmp5 = NativeViewDefault;
-  Slider = handleVolumeChange(16358).Slider;
+  Slider = handleVolumeChange(16353).Slider;
   obj4 = handleVolumeChange(6170);
   intl = handleVolumeChange(1113).intl;
   items1 = [closure_7(tmp5, obj2), ];
-  const obj5 = { icon: closure_7(handleVolumeChange(9417).CheckmarkLargeBoldIcon, { size: "sm" }), onPress: onSubmit, accessibilityLabel: intl2.string(handleVolumeChange(1113).t["cY+Oob"]) };
+  const obj5 = { icon: closure_7(handleVolumeChange(9416).CheckmarkLargeBoldIcon, { size: "sm" }), onPress: onSubmit, accessibilityLabel: intl2.string(handleVolumeChange(1113).t["cY+Oob"]) };
   const tmp6 = VoicePanelIconButtonDefault;
   intl2 = handleVolumeChange(1113).intl;
   items1[1] = closure_7(tmp6, obj5);
@@ -116,7 +116,7 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
   let tmp = closure_12();
   let obj = sharedValue;
   let tmp2 = guildId;
-  guildId = sharedValue.useContext(guildId(11924)).guildId;
+  guildId = sharedValue.useContext(guildId(11918)).guildId;
   const tmp5 = mode !== obj.HIDDEN;
   dependencyMap = tmp5;
   let tmp6 = null;
@@ -219,16 +219,16 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
     if (null != stateFromStores) {
       const obj6 = { source: tmp12Result2.getCachedSourceFromURI(stateFromStores), size: ownerId(1187).AvatarSizes.SMALL };
       const Avatar = tmp12(1187).Avatar;
-      tmp12Result2 = ownerId(9450);
+      tmp12Result2 = ownerId(9449);
       tmp22Result = tmp22(Avatar, obj6);
     }
     const obj7 = { pointerEvents: "none", children: tmp22Result };
     items6 = [closure_7(tmp2Result6, obj7), ];
-    const tmp2Result7 = tmp2(19739);
+    const tmp2Result7 = tmp2(19734);
     if ("video" === kind) {
       ScreenXIcon = tmp12(7483).XSmallIcon;
     } else {
-      ScreenXIcon = tmp12(19911).ScreenXIcon;
+      ScreenXIcon = tmp12(19906).ScreenXIcon;
     }
     const obj8 = { icon: closure_7(ScreenXIcon, { size: "sm" }), onPress: onStopWatching, accessibilityLabel: stringResult };
     const intl = tmp12(1113).intl;
@@ -251,7 +251,7 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
     items8[1] = rowEnd;
     if ("video" !== kind) {
       const obj10 = { icon: closure_7(ownerId(7368).VoiceNormalIcon, { size: "sm" }), onPress: onToggleVolume, accessibilityLabel: string2Result };
-      const tmp2Result9 = tmp2(19739);
+      const tmp2Result9 = tmp2(19734);
       const intl2 = tmp12(1113).intl;
       const string2 = intl2.string;
       if ("video" !== kind && null != ownerId && tmp8 === tmp4.VOLUME) {
@@ -280,8 +280,8 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       obj4.children = items7;
       return closure_9(View, obj4);
     }
-    const obj12 = { icon: closure_7(ownerId(17466).FullscreenEnterIcon, { size: "sm" }), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3205).MPtef8) };
-    const tmp2Result10 = tmp2(19739);
+    const obj12 = { icon: closure_7(ownerId(17461).FullscreenEnterIcon, { size: "sm" }), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3205).MPtef8) };
+    const tmp2Result10 = tmp2(19734);
     intl3 = tmp12(1113).intl;
     tmp22Result4 = tmp22(tmp2Result10, obj12);
   }

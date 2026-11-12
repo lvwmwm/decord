@@ -1,10 +1,10 @@
-// Module ID: 15574
-// Function ID: 15575
+// Module ID: 15571
+// Function ID: 15572
 // Name: ShopThisLookActionSheet
-// Dependencies: [19, 17, 8512, 5504, 7896, 21, 5243, 575, 9395, 5952, 1113, 10390, 504, 15575, 8430, 15577, 11761, 9387, 8509, 15578, 7852, 7871, 5489, 8418, 14822, 5866, 2]
+// Dependencies: [19, 17, 8512, 5504, 7896, 21, 5243, 575, 9394, 5952, 1113, 10388, 504, 15572, 8430, 15574, 11755, 9386, 8509, 15575, 7852, 7871, 5489, 8418, 14818, 5866, 2]
 // Exports: default
 
-// Module 15574 (ShopThisLookActionSheet)
+// Module 15571 (ShopThisLookActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
@@ -14,9 +14,9 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import Constants from "Constants" /* 7896 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8418 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8430 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 9395 */;
-import ShopThisLookUtils from "ShopThisLookUtils" /* 15575 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 15577 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 9394 */;
+import ShopThisLookUtils from "ShopThisLookUtils" /* 15572 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 15574 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import StorefrontProductStore from "StorefrontProductStore" /* 8512 */;
@@ -47,7 +47,7 @@ function ShopThisLookCard(skuId) {
   let callback;
   const tmp = closure_11();
   let tmp2 = skuId;
-  let obj = skuId(10390);
+  let obj = skuId(10388);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, shouldFetchProduct: false });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -129,7 +129,7 @@ function ShopThisLookCard(skuId) {
         },
       accessibilityHidden: true
     };
-    tmp22 = closure_9(onPress(9395), obj3);
+    tmp22 = closure_9(onPress(9394), obj3);
   } else {
     tmp22 = null;
     if (null != stateFromStores) {
@@ -137,7 +137,7 @@ function ShopThisLookCard(skuId) {
       if (memo) {
         const obj4 = { style: tmp.cardWrapper, children: items7 };
         const obj5 = { sku: stateFromStores, size, onPress: callback1 };
-        items7 = [closure_9(onPress(11761), obj5), ];
+        items7 = [closure_9(onPress(11755), obj5), ];
         let tmp19Result = null != memo1;
         const tmp17 = closure_10;
         const tmp18 = memo;
@@ -145,13 +145,13 @@ function ShopThisLookCard(skuId) {
         const tmp20 = onPress;
         if (tmp19Result) {
           const obj6 = { selectedProduct: memo1, style: tmp.wishlistButton };
-          tmp19Result = tmp19(tmp20(9387), obj6);
+          tmp19Result = tmp19(tmp20(9386), obj6);
         }
         items7[1] = tmp19Result;
         tmp17Result = tmp17(tmp18, obj4);
       } else {
-        const obj7 = { sku: stateFromStores, size, overlay: tmp2(9395).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
-        const tmp15 = onPress(11761);
+        const obj7 = { sku: stateFromStores, size, overlay: tmp2(9394).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
+        const tmp15 = onPress(11755);
         tmp17Result = closure_9(tmp15, obj7);
       }
       tmp22 = tmp17Result;
@@ -197,8 +197,8 @@ export default function ShopThisLookActionSheet(arg0) {
   let obj = require("useMaybeFetchEquippedCollectibleProducts");
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(15578)(obj2));
-  analyticsLocations(15578)(obj2);
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(15575)(obj2));
+  analyticsLocations(15575)(obj2);
   const tmp3 = analyticsLocations(7852);
   analyticsLocations = tmp3(analyticsLocations(7871).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
@@ -213,7 +213,7 @@ export default function ShopThisLookActionSheet(arg0) {
   const AnalyticsLocationProvider = require("useAnalyticsLocations").AnalyticsLocationProvider;
   items1 = [analyticsLocations(7871).SHOP_THIS_LOOK_ACTION_SHEET];
   obj4 = { startExpanded: true, title: intl.string(require("intl").t.xNdRDO), children: closure_10(closure_5, obj5) };
-  tmp4 = analyticsLocations(14822);
+  tmp4 = analyticsLocations(14818);
   intl = require("intl").intl;
   obj5 = { style: tmp.container, children: items2 };
   const obj6 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.description, children: intl2.string(require("intl").t["ws+0Lr"]) };

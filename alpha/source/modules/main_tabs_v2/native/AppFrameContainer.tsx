@@ -1,13 +1,13 @@
-// Module ID: 19435
-// Function ID: 19436
+// Module ID: 19430
+// Function ID: 19431
 // Name: AppFrameContainer
-// Dependencies: [19, 17, 21, 5243, 575, 18589, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 18584, 2]
 // Exports: default
 
-// Module 19435 (AppFrameContainer)
+// Module 19430 (AppFrameContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useAppFrameDefault from "useAppFrame" /* 18589 */;
+import useAppFrameDefault from "useAppFrame" /* 18584 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

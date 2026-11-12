@@ -1,13 +1,13 @@
-// Module ID: 12448
-// Function ID: 12449
+// Module ID: 12442
+// Function ID: 12443
 // Name: getInvitableGameOrganizationsFullState
-// Dependencies: [12449, 1113, 2549, 2]
+// Dependencies: [12443, 1113, 2549, 2]
 // Exports: default, getGameOrganizationFullSubLabel, getInvitableGameOrganizationsFullSubLabel
 
-// Module 12448 (getInvitableGameOrganizationsFullState)
+// Module 12442 (getInvitableGameOrganizationsFullState)
 import intl4 from "intl" /* 1113 */;
 import _modDef2549 from "module_2549" /* 2549 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12449 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12443 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = { kind: "available" };

@@ -1,7 +1,7 @@
 // Module ID: 6738
 // Function ID: 6739
 // Name: PassTheControllerStore
-// Dependencies: [502, 6008, 6739, 1072, 6740, 6745, 1403, 6033, 15994, 15995, 572, 15997, 16000, 504, 2]
+// Dependencies: [502, 6008, 6739, 1072, 6740, 6745, 1403, 6033, 15989, 15990, 572, 15992, 15995, 504, 2]
 
 // Module 6738 (PassTheControllerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -9,8 +9,8 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 6033 */;
 import Constants2 from "Constants" /* 6740 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
-import InputHostDefault from "InputHost" /* 15997 */;
-import InputGuestDefault from "InputGuest" /* 16000 */;
+import InputHostDefault from "InputHost" /* 15992 */;
+import InputGuestDefault from "InputGuest" /* 15995 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6739 */;
@@ -150,7 +150,7 @@ let obj = {
     let tmp2;
     let tmp27;
     let tmp542;
-    const f91582 = () => {
+    const f91593 = () => {
       if (inputConnection1 === inputConnection) {
         if (null != streamKey) {
           const obj = { type: "PASS_THE_CONTROLLER_UPDATE", streamKey: streamKey.streamKey, isHost: true, host: id.getId(), active: false };
@@ -187,8 +187,8 @@ let obj = {
               if (null != rTCConnection) {
                 const self5 = this;
                 const self6 = this;
-                const inputConnection = new inputConnection1(15994).InputConnection(rTCConnection, AuthenticationStore.getId());
-                inputConnection.on(inputConnection1(15995).InputEvent.Disconnect, f91582);
+                const inputConnection = new inputConnection1(15989).InputConnection(rTCConnection, AuthenticationStore.getId());
+                inputConnection.on(inputConnection1(15990).InputEvent.Disconnect, f91593);
                 inputConnection.connect();
                 inputConnection1 = inputConnection;
                 tmp50 = inputConnection;
@@ -255,8 +255,8 @@ let obj = {
           if (null != rTCConnection1) {
             const self = this;
             const self2 = this;
-            inputConnection1 = new inputConnection1(15994).InputConnection(rTCConnection1, AuthenticationStore.getId());
-            inputConnection1.on(inputConnection1(15995).InputEvent.Disconnect, f91582);
+            inputConnection1 = new inputConnection1(15989).InputConnection(rTCConnection1, AuthenticationStore.getId());
+            inputConnection1.on(inputConnection1(15990).InputEvent.Disconnect, f91593);
             inputConnection1.connect();
             tmp12 = inputConnection1;
           }

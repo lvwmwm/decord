@@ -1,19 +1,19 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11300
+// Function ID: 11301
 // Name: StickerPackHeader
-// Dependencies: [19, 17, 11183, 21, 5243, 575, 5866, 6729, 1187, 11307, 11308, 1113, 11309, 7364, 2]
+// Dependencies: [19, 17, 11177, 21, 5243, 575, 5866, 6729, 1187, 11301, 11302, 1113, 11303, 7364, 2]
 
-// Module 11306 (StickerPackHeader)
+// Module 11300 (StickerPackHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import StickersUtils from "StickersUtils" /* 6729 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11307 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11308 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11301 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11302 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11183 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 11177 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let size;
 let tmp10;
-const StickerPackBannerDefault = tmp10(11309);
+const StickerPackBannerDefault = tmp10(11303);
 const View = react_native.View;
 ({ PADDING_VERTICAL, PADDING_HORIZONTAL } = StickerPickerConstants);
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);

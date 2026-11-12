@@ -1,14 +1,14 @@
-// Module ID: 18877
-// Function ID: 18878
+// Module ID: 18872
+// Function ID: 18873
 // Name: WaterwheelsDiscoverPanel
-// Dependencies: [5, 19, 17, 1246, 502, 1385, 21, 5243, 575, 17590, 18878, 18881, 18886, 18889, 18891, 7822, 1113, 2553, 10147, 504, 18892, 18646, 18894, 2]
+// Dependencies: [5, 19, 17, 1246, 502, 1385, 21, 5243, 575, 17585, 18873, 18876, 18881, 18884, 18886, 7822, 1113, 2553, 10146, 504, 18887, 18641, 18889, 2]
 // Exports: default
 
-// Module 18877 (WaterwheelsDiscoverPanel)
+// Module 18872 (WaterwheelsDiscoverPanel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import WaterwheelsDiscoverCardDefault from "WaterwheelsDiscoverCard" /* 18889 */;
-import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 18892 */;
+import WaterwheelsDiscoverCardDefault from "WaterwheelsDiscoverCard" /* 18884 */;
+import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 18887 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
@@ -23,7 +23,6 @@ let closure_4, closure_5, currentUser, disposeResult;
 let c10;
 let c9;
 let obj2;
-let unpackModuleId;
 function keyExtractor(key) {
   return key.key;
 }
@@ -31,7 +30,7 @@ function getItemType(card) {
   return card.card.layout.type;
 }
 function RowSeparator() {
-  const obj = { style: closure_13().separator };
+  const obj = { style: closure_12().separator };
   return React4(View, obj);
 }
 function WaterwheelsDiscoverFeed(enabled) {
@@ -53,7 +52,7 @@ function WaterwheelsDiscoverFeed(enabled) {
   let youBarTotalHeight;
   let trackAction;
   let onAction;
-  const tmp = closure_13();
+  const tmp = closure_12();
   const tmp3 = trackAction;
   let obj = youBarTotalHeight(trackAction[9]);
   youBarTotalHeight = obj.useYouBarTotalHeight();
@@ -205,21 +204,21 @@ function WaterwheelsDiscoverFeed(enabled) {
   return tmp13(tmp14, obj6);
 }
 const View = react_native.View;
-({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
+({ jsx: c9, jsxs: c10 } = Fragment);
 const WaterwheelsDiscoverPanel_str = "WaterwheelsDiscoverPanel";
-let obj = { feed: obj2, separator: { height: 1 } };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-let closure_13 = createStyles.createStyles(obj);
+let obj = { content: { flex: 1 }, feed: { flex: 1 }, separator: obj2 };
+obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+let closure_12 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/waterwheels/discover/native/WaterwheelsDiscoverPanel.tsx");
 
 export default function WaterwheelsDiscoverPanel(style) {
   let id;
   let items2;
-  let tmp8;
+  let tmp9;
   let waterwheelsDiscoverEnabled;
   style = style.style;
-  let tmp = dependencyMap;
-  let obj = waterwheelsDiscoverEnabled(10147);
+  let tmp = closure_12();
+  let obj = waterwheelsDiscoverEnabled(10146);
   waterwheelsDiscoverEnabled = obj.useWaterwheelsDiscoverEnabled(WaterwheelsDiscoverPanel_str);
   const items = [AuthenticationStore, UserStore, ApexExperimentStore];
   const obj2 = waterwheelsDiscoverEnabled(504);
@@ -240,16 +239,16 @@ export default function WaterwheelsDiscoverPanel(style) {
       const result = obj.leaveWaterwheelsDiscover();
     }
   }, items1);
-  const obj3 = { style, children: tmp8 };
-  tmp8 = null;
-  const tmp6 = gateReady;
-  const tmp7 = gateReady(18646);
+  const obj3 = { style, children: tmp9 };
+  tmp9 = null;
+  const tmp7 = gateReady;
+  const tmp8 = gateReady(18641);
   if (waterwheelsDiscoverEnabled) {
-    const obj4 = { children: items2 };
-    items2 = [closure_9(tmp6(18894), {}), ];
+    const obj4 = { style: tmp.content, children: items2 };
+    items2 = [closure_9(tmp7(18889), {}), ];
     const obj5 = { enabled: waterwheelsDiscoverEnabled };
     items2[1] = closure_9(WaterwheelsDiscoverFeed, obj5, userId);
-    tmp8 = closure_11(closure_10, obj4);
+    tmp9 = closure_10(View, obj4);
   }
-  return closure_9(tmp7, obj3);
+  return closure_9(tmp8, obj3);
 };

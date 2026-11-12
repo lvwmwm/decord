@@ -1,8 +1,8 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14359
+// Function ID: 14360
 // Dependencies: [2]
 
-// Module 14363
+// Module 14359
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_14_catBackpack.webp.js");

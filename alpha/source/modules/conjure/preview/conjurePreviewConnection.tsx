@@ -1,7 +1,7 @@
 // Module ID: 7329
 // Function ID: 7330
 // Name: conjurePreviewConnection
-// Dependencies: [5, 1385, 6954, 7330, 7332, 15863, 13053, 572, 13098, 13069, 7274, 7318, 7265, 12178, 7271, 13120, 13119, 13048, 2]
+// Dependencies: [5, 1385, 6954, 7330, 7332, 15858, 13047, 572, 13092, 13063, 7274, 7318, 7265, 12172, 7271, 13114, 13113, 13042, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
 // Module 7329 (conjurePreviewConnection)
@@ -12,14 +12,14 @@ import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 7274 */
 import conjureChatConnection from "conjureChatConnection" /* 7318 */;
 import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7330 */;
 import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7332 */;
-import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 12178 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 13048 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 13053 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 13069 */;
-import conjurePreviewAppPublished from "conjurePreviewAppPublished" /* 13098 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 13119 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 13120 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 15863 */;
+import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 12172 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 13042 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 13047 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 13063 */;
+import conjurePreviewAppPublished from "conjurePreviewAppPublished" /* 13092 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 13113 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 13114 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 15858 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;

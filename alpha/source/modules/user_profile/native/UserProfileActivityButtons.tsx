@@ -1,10 +1,10 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15635
+// Function ID: 15636
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 5091, 5092, 7022, 5473, 5114, 7253, 5175, 5185, 5146, 7252, 5918, 1072, 7227, 21, 5243, 575, 7852, 5164, 563, 15639, 6775, 15640, 8403, 5873, 1113, 8036, 5489, 6785, 12615, 10797, 1187, 12341, 12596, 5949, 15641, 8558, 5430, 7612, 6837, 7024, 1411, 7358, 8537, 9413, 7246, 1378, 7587, 2]
+// Dependencies: [5, 19, 5091, 5092, 7022, 5473, 5114, 7253, 5175, 5185, 5146, 7252, 5918, 1072, 7227, 21, 5243, 575, 7852, 5164, 563, 15636, 6775, 15637, 8403, 5873, 1113, 8036, 5489, 6785, 12609, 10791, 1187, 12335, 12590, 5949, 15638, 8558, 5430, 7612, 6837, 7024, 1411, 7358, 8537, 9412, 7246, 1378, 7587, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 15638 (UserProfileActivityButtons)
+// Module 15635 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -21,10 +21,10 @@ import authorizeConnectionDefault from "authorizeConnection" /* 7358 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7612 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
 import isStreamingDefault from "isStreaming" /* 8558 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 12615 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 15639 */;
-import getActivityJoinability from "getActivityJoinability" /* 15640 */;
-import getStreamURLDefault from "getStreamURL" /* 15641 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 12609 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 15636 */;
+import getActivityJoinability from "getActivityJoinability" /* 15637 */;
+import getStreamURLDefault from "getStreamURL" /* 15638 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
@@ -210,13 +210,13 @@ export function PlayOnSpotifyButton(arg0) {
   const tmp = closure_20();
   let tmp4 = null;
   const tmp2 = sync_id;
-  if (sync_id(10797)(activity)) {
+  if (sync_id(10791)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       const Button = components_Button_Button.Button;
       const intl = intl5.intl;
       let obj2 = { platform: activity.name };
-      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(12341), disableColor: true, style: tmp.icon };
+      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(12335), disableColor: true, style: tmp.icon };
       const Icon = native.Icon;
       tmp4 = <Button text={intl.formatToPlainString(intl5.t.LEgD7t, obj2)} icon={null} variant="secondary" onPress={_asyncToGenerator(async (arg0, value) => {
         let closure_0;

@@ -1,9 +1,9 @@
-// Module ID: 18007
-// Function ID: 18008
+// Module ID: 18002
+// Function ID: 18003
 // Name: EmailTrackingNoticeExperiment
 // Dependencies: [1449, 2]
 
-// Module 18007 (EmailTrackingNoticeExperiment)
+// Module 18002 (EmailTrackingNoticeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

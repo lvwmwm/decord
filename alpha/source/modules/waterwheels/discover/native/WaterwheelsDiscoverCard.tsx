@@ -1,17 +1,17 @@
-// Module ID: 18889
-// Function ID: 18890
+// Module ID: 18884
+// Function ID: 18885
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 5114, 1072, 21, 575, 5243, 5881, 504, 18890, 10158, 5957, 5866, 7657, 7897, 1113, 2553, 5873, 18884, 2]
+// Dependencies: [32, 19, 17, 5114, 1072, 21, 575, 5243, 5881, 504, 18885, 10156, 5957, 5866, 7657, 7897, 1113, 2553, 5873, 18879, 2]
 // Exports: default
 
-// Module 18889 (WaterwheelsDiscoverCard)
+// Module 18884 (WaterwheelsDiscoverCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10158 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18884 */;
-import selectDiscoverServerAction from "selectDiscoverServerAction" /* 18890 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10156 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18879 */;
+import selectDiscoverServerAction from "selectDiscoverServerAction" /* 18885 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -155,7 +155,7 @@ function ServerIdentity(server) {
   const obj14 = { style: tmp4.meta, children: items10 };
   const obj16 = { style: tmp4.dot };
   items9[0] = tmp9(closure_7, obj16);
-  const obj17 = { variant: "body-xs/medium", color: "text-muted", style: tmp4.metaText, children: intl.format(server(1113).t["LC+S+m"], obj18) };
+  const obj17 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl.format(server(1113).t["LC+S+m"], obj18) };
   const Text = tmp(5866).Text;
   intl = tmp(1113).intl;
   obj18 = { membersOnline: server.online };
@@ -168,7 +168,7 @@ function ServerIdentity(server) {
     const obj19 = { style: tmp4.metaItem, children: items12 };
     ({ dot: arr12[0], mutedDot: arr12[1] } = tmp4);
     items12 = [tmp9(closure_7, obj20), ];
-    const obj21 = { variant: "body-xs/medium", color: "text-muted", style: tmp4.metaText, children: intl2.format(server(1113).t.zRl6XR, obj22) };
+    const obj21 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl2.format(server(1113).t.zRl6XR, obj22) };
     const Text2 = tmp(5866).Text;
     intl2 = tmp(1113).intl;
     obj22 = { count: server.members };
@@ -311,7 +311,7 @@ function GameHero(game) {
   }
   items2[1] = tmp5Result;
   items3 = [closure_11(closure_7, obj3), ];
-  const obj10 = { variant: "body-sm/normal", color: "text-muted", lineClamp: 2, children: game.description };
+  const obj10 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: game.description };
   items3[1] = closure_10(tmp6(onAction[13]).Text, obj10);
   items4 = [closure_11(tmp4, obj2), ];
   let tmp2Result = null;
@@ -361,7 +361,7 @@ function CarouselCard(arg0) {
   items1 = [, ];
   const obj6 = { variant: "heading-sm/semibold", color: "text-strong", children: carousel.header.title };
   items1[0] = closure_10(require("Text/Text").Heading, obj6);
-  const obj7 = { variant: "body-sm/medium", color: "text-muted", children: carousel.header.subtitle };
+  const obj7 = { variant: "body-sm/medium", color: "text-subtle", children: carousel.header.subtitle };
   items1[1] = closure_10(require("Text/Text").Text, obj7);
   items[1] = closure_11(closure_7, obj5);
   items2 = [closure_11(closure_7, obj2), ];
@@ -451,9 +451,9 @@ const sum = PX_40 + PX_12;
 const PX_32 = nativeDefault.space.PX_32;
 let createStyles = createStyles_mod;
 let obj = { row: obj2, carouselSection: obj3, carouselHeader: obj4, carouselContent: obj5, identityRow: obj6, identity: { flex: 1, flexDirection: "row", alignItems: "center", gap: PX_12, minWidth: 0 }, identityCompact: obj7, identityCopy: obj8, nameRow: obj9, name: { flexShrink: 1 }, icon: size, iconCompact: size1, meta: obj10, metaItem: obj11, metaText: { flexShrink: 1 }, dot: size2, mutedDot: obj12, hero: obj13, heroBody: obj14, heroTop: obj15, heroTitle: obj16, cover: size3, heroServer: obj17, media: obj18, postAction: { alignSelf: "flex-start" } };
-obj2 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+obj2 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj3 = { paddingTop: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+obj3 = { paddingTop: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
 obj4 = { flexDirection: "row", alignItems: "center", gap: PX_12, paddingRight: nativeDefault.space.PX_16 };
 obj5 = { paddingTop: nativeDefault.space.PX_4, paddingLeft: sum, paddingRight: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
 obj6 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -466,7 +466,7 @@ obj10 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nat
 obj11 = { flexDirection: "row", maxWidth: "100%", flexShrink: 1, alignItems: "center", gap: nativeDefault.space.PX_4 };
 size2 = { flexShrink: 0, width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.ICON_STATUS_ONLINE };
 obj12 = { backgroundColor: nativeDefault.colors.ICON_STATUS_OFFLINE };
-obj13 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+obj13 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 obj14 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
 obj15 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
 obj16 = { flex: 1, justifyContent: "space-between", gap: nativeDefault.space.PX_8, minWidth: 0 };

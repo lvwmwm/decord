@@ -1,27 +1,27 @@
-// Module ID: 19785
-// Function ID: 19786
+// Module ID: 19780
+// Function ID: 19781
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [11925, 11923, 11926, 1652, 13039, 19707, 5839, 575, 11272, 19595, 19708, 11931, 11929, 2]
+// Dependencies: [11919, 11917, 11920, 1652, 13033, 19702, 5839, 575, 11266, 19590, 19703, 11925, 11923, 2]
 // Exports: default
 
-// Module 19785 (usePIPAvoidanceSpecs)
+// Module 19780 (usePIPAvoidanceSpecs)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import useToken from "useToken" /* 5839 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11923 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11926 */;
-import useAnimatedKeyboardHeightDefault from "useAnimatedKeyboardHeight" /* 13039 */;
-import useScreenNameSharedValueDefault from "useScreenNameSharedValue" /* 19707 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11917 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11920 */;
+import useAnimatedKeyboardHeightDefault from "useAnimatedKeyboardHeight" /* 13033 */;
+import useScreenNameSharedValueDefault from "useScreenNameSharedValue" /* 19702 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const cheapWorkletShallowEqual = tmp(11272);
-const updateSharedValueIfChangedDefault = tmp4(11929);
-const calculateVoicePanelHeaderSpecsDefault = tmp4(11931);
-const getPIPBottomOffsetForPIPModeDefault = tmp4(19595);
-const getAdjustedBottomOffsetsDefault = tmp4(19708);
+const cheapWorkletShallowEqual = tmp(11266);
+const updateSharedValueIfChangedDefault = tmp4(11923);
+const calculateVoicePanelHeaderSpecsDefault = tmp4(11925);
+const getPIPBottomOffsetForPIPModeDefault = tmp4(19590);
+const getAdjustedBottomOffsetsDefault = tmp4(19703);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const PIP_WINDOW_OFFSET = MorphablePanelConstants.PIP_WINDOW_OFFSET;

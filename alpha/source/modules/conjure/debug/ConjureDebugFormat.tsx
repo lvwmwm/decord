@@ -1,10 +1,10 @@
-// Module ID: 13914
-// Function ID: 13915
+// Module ID: 13910
+// Function ID: 13911
 // Name: ConjureDebugFormat
 // Dependencies: [2]
 // Exports: debugLogEnv, formatBytes, formatCount, formatMs, formatObservedAt, shortBuildLabel
 
-// Module 13914 (ConjureDebugFormat)
+// Module 13910 (ConjureDebugFormat)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugFormat.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 12247
-// Function ID: 12248
+// Module ID: 12241
+// Function ID: 12242
 // Name: PinotMemberSettingState
-// Dependencies: [12248, 5072, 1227, 504, 2]
+// Dependencies: [12242, 5072, 1227, 504, 2]
 // Exports: usePinotMemberSettingState
 
-// Module 12247 (PinotMemberSettingState)
+// Module 12241 (PinotMemberSettingState)
 import get_initialized from "get initialized" /* 504 */;
 import wrappers from "wrappers" /* 1227 */;
-import PinotMemberSettingStore from "PinotMemberSettingStore" /* 12248 */;
+import PinotMemberSettingStore from "PinotMemberSettingStore" /* 12242 */;
 import UserSettingDefinitions from "UserSettingDefinitions" /* 5072 */;
 import size from "module_2" /* 2 */;
 

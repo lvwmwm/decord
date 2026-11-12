@@ -1,103 +1,631 @@
 // Module ID: 13752
 // Function ID: 13753
-// Dependencies: [13725, 13730]
+// Dependencies: [13726, 13753, 13754]
 
 // Module 13752
-import TokenStream from "TokenStream" /* 13725 */;
-import tokenize from "tokenize" /* 13730 */;
+import tokenize from "tokenize" /* 13726 */;
+import anPlusB from "anPlusB" /* 13753 */;
+import urange from "urange" /* 13754 */;
 
-function prepareTokens(arg0, items) {
-  let node1 = null;
-  if (items) {
-    node1 = items[0].node;
-  }
-  items = [];
-  tokenize(arg0, closure_2);
+const dimension = (arg0, fn, arg2) => {
+  let iter = arg0;
   let num = 0;
-  let num2 = 0;
-  while (!closure_2.eof) {
-    let tmp6 = node1;
-    let tmp7 = num;
-    let tmp8 = num2;
-    if (items) {
-      tmp6 = node1;
-      tmp7 = num;
-      tmp8 = num2;
-      if (num < items.length) {
-        let tmp12 = num;
-        let tmp13 = num2;
-        tmp6 = node1;
-        tmp7 = num;
-        tmp8 = num2;
-        if (num2 + items[num].len <= closure_2.tokenStart) {
-          let sum = tmp12 + 1;
-          let sum1 = tmp13 + items[tmp12].len;
-          let node = items[sum].node;
-          tmp6 = node;
-          tmp8 = sum1;
-          tmp7 = sum;
-          while (sum < items.length) {
-            tmp12 = sum;
-            tmp13 = sum1;
-            tmp6 = node;
-            tmp7 = sum;
-            tmp8 = sum1;
-            if (sum1 + items[sum].len > closure_2.tokenStart) {
+  if (null !== arg0) {
+    if (iter.type === tokenize.TYPE.Function) {
+      let tmp10;
+      const value = iter.value;
+      let num3 = 0;
+      let flag = false;
+      if (0 < length.length) {
+        const tmp = length[num3];
+        flag = true;
+        const obj = tokenize;
+        while (!obj.cmpStr(value, 0, value.length, tmp)) {
+          let sum = num3 + 1;
+          num3 = sum;
+          flag = false;
+          if (sum >= arr2.length) {
+            break;
+          }
+        }
+      }
+      if (flag) {
+        let num5 = 0;
+        const sum1 = num5 + 1;
+        tmp10 = sum1;
+        while (iter.balance > iter.index) {
+          iter = fn(sum1);
+          num5 = sum1;
+          tmp10 = sum1;
+          if (!iter) {
+            break;
+          }
+        }
+      }
+      num = tmp10;
+    }
+    tmp10 = integer(iter, fn, arg2);
+  }
+  return num;
+};
+const f107259 = (type) => {
+  let num;
+  if (null === type) {
+    num = 0;
+  } else {
+    num = 1;
+  }
+  return num;
+};
+const f1072602 = (type, arg1, type2) => {
+  if (null !== type) {
+    if (type.type === tokenize.TYPE.Dimension) {
+      const tmp7Result = tokenize;
+      const consumeNumberResult = tmp7Result.consumeNumber(type.value, 0);
+      const obj3 = f107260;
+      if (null !== f107260) {
+        const value = type.value;
+        const index = value.indexOf("\\", consumeNumberResult);
+        if (-1 !== index) {
+          let str2;
+          const value3 = type.value;
+          let tmp = index === value3.length - 2;
+          if (tmp) {
+            let isDigitResult = 92 === value3.charCodeAt(index);
+            if (isDigitResult) {
+              const tmp7Result2 = tokenize;
+              isDigitResult = tmp7Result2.isDigit(value3.charCodeAt(index + 1));
+            }
+            tmp = isDigitResult;
+          }
+          if (tmp) {
+            const str3 = type.value;
+            str2 = str3.substring(consumeNumberResult, index);
+          }
+          if (false === obj3.hasOwnProperty(str2.toLowerCase())) {
+            return 0;
+          }
+        }
+        const str = type.value;
+        str2 = str.substr(consumeNumberResult);
+      }
+      const value4 = type.value;
+      let flag2 = false;
+      if (type2) {
+        flag2 = false;
+        if ("Range" === type2.type) {
+          let substr = value4;
+          const _Number = Number;
+          if (undefined !== consumeNumberResult) {
+            substr = value4;
+            if (consumeNumberResult !== value4.length) {
+              substr = value4.substr(0, consumeNumberResult);
+            }
+          }
+          const _NumberResult = _Number(substr);
+          const _isNaN = isNaN;
+          flag2 = true;
+          if (!isNaN(_NumberResult)) {
+            if (null === type2.min) {
+              flag2 = false;
+              if (null !== type2.max) {
+                flag2 = false;
+                if (_NumberResult > type2.max) {
+                  flag2 = true;
+                }
+              }
+            } else {
+              flag2 = true;
+            }
+          }
+        }
+      }
+      let num4 = 1;
+      if (flag2) {
+        num4 = 0;
+      }
+      return num4;
+    }
+  }
+  return 0;
+};
+const zero2 = (type, arg1, arg2) => {
+  if (null !== type) {
+    let num;
+    if (type.type === tokenize.TYPE.Number) {
+      const _Number = Number;
+      num = 1;
+    }
+    return num;
+  }
+  num = n(type, arg1, arg2);
+};
+const length = ["unset", "initial", "inherit"];
+let closure_3 = ["calc(", "-moz-calc(", "-webkit-calc("];
+let obj = {
+  "ident-token": f107259,
+  "function-token": f107259,
+  "at-keyword-token": f107259,
+  "hash-token": f107259,
+  "string-token": f107259,
+  "bad-string-token": f107259,
+  "url-token": f107259,
+  "bad-url-token": f107259,
+  "delim-token": f107259,
+  "number-token": f107259,
+  "percentage-token": f107259,
+  "dimension-token": f107259,
+  "whitespace-token": f107259,
+  "CDO-token": f107259,
+  "CDC-token": f107259,
+  "colon-token": f107259,
+  "semicolon-token": f107259,
+  "comma-token": f107259,
+  "[-token": f107259,
+  "]-token": f107259,
+  "(-token": f107259,
+  ")-token": f107259,
+  "{-token": f107259,
+  "}-token": f107259,
+  string: f107259,
+  ident: f107259,
+  "custom-ident": function customIdent(type) {
+    if (null !== type) {
+      const tmp13 = require;
+      if (type.type === tokenize.TYPE.Ident) {
+        let flag;
+        let tmp8;
+        const str2 = type.value;
+        const formatted = str2.toLowerCase();
+        let num4 = 1;
+        let num2 = 0;
+        let tmp10 = tmp13;
+        if (0 >= length.length) {
+          flag = false;
+          tmp8 = tmp10;
+        } else {
+          const tmp = length[num2];
+          tmp8 = require;
+          flag = true;
+          const obj = tokenize;
+          const tmp2 = require;
+          while (!obj.cmpStr(formatted, 0, formatted.length, tmp)) {
+            num2 = num2 + num4;
+            tmp10 = tmp2;
+            break;
+          }
+        }
+        if (flag) {
+          num4 = 0;
+        } else {
+          tmp8(13726);
+        }
+        return num4;
+      }
+    }
+    return 0;
+  },
+  "custom-property-name": function customPropertyName(type) {
+    if (null !== type) {
+      if (type.type === tokenize.TYPE.Ident) {
+        let num4;
+        const value = type.value;
+        let num2 = 0;
+        if (0 < value.length) {
+          num2 = value.charCodeAt(0);
+        }
+        if (45 === num2) {
+          const value2 = type.value;
+          num4 = 1;
+          if (1 < value2.length) {
+            value2.charCodeAt(num4);
+          }
+        }
+        return num4;
+      }
+    }
+    num4 = 0;
+  },
+  "hex-color": function hexColor(type) {
+    if (null !== type) {
+      if (type.type === tokenize.TYPE.Hash) {
+        if (4 !== type.value.length) {
+          if (5 !== type.value.length) {
+            if (7 !== type.value.length) {
+              if (9 !== type.value.length) {
+                return 0;
+              }
+            }
+          }
+        }
+        let num6 = 1;
+        if (1 < type.value.length) {
+          tokenize;
+          const value = type.value;
+          while (tmp4(value.charCodeAt(num6))) {
+            num6 = num6 + 1;
+          }
+          return 0;
+        }
+        return 1;
+      }
+    }
+    return 0;
+  },
+  "id-selector": function idSelector(type) {
+    let num = 0;
+    if (null !== type) {
+      num = 0;
+      if (type.type === tokenize.TYPE.Hash) {
+        const value = type.value;
+        let num2 = 0;
+        const isIdentifierStart = tmp(13726).isIdentifierStart;
+        tokenize;
+        if (1 < value.length) {
+          num2 = value.charCodeAt(1);
+        }
+        const value3 = type.value;
+        let num4 = 0;
+        if (2 < value3.length) {
+          num4 = value3.charCodeAt(2);
+        }
+        const value4 = type.value;
+        let num6 = 0;
+        if (3 < value4.length) {
+          num6 = value4.charCodeAt(3);
+        }
+        let num7 = 0;
+        if (isIdentifierStart(num2, num4, num6)) {
+          num7 = 1;
+        }
+        num = num7;
+      }
+    }
+    return num;
+  },
+  "an-plus-b": anPlusB,
+  urange,
+  "declaration-value": function declarationValue(arg0, fn) {
+    let iter = arg0;
+    if (iter) {
+      const index = iter.index;
+      let num2 = 0;
+      let num3 = 0;
+      const type = iter.type;
+      let tmp6 = num3;
+      while (tokenize.TYPE.BadString !== type) {
+        tmp6 = num3;
+        if (tmp(13726).TYPE.BadUrl === type) {
+          break;
+        } else {
+          let sum;
+          if (tmp(13726).TYPE.RightCurlyBracket !== type) {
+            if (tmp(13726).TYPE.RightParenthesis !== type) {
+              if (tmp(13726).TYPE.RightSquareBracket !== type) {
+                if (tmp(13726).TYPE.Semicolon === type) {
+                  sum = num2;
+                  tmp6 = num3;
+                  if (0 === num2) {
+                    break;
+                  }
+                } else if (tmp(13726).TYPE.Delim === type) {
+                  sum = num2;
+                  if ("!" === iter.value) {
+                    sum = num2;
+                    tmp6 = num3;
+                    if (0 === num2) {
+                      break;
+                    }
+                  }
+                  break;
+                } else {
+                  if (tmp(13726).TYPE.Function !== type) {
+                    if (tmp(13726).TYPE.LeftParenthesis !== type) {
+                      if (tmp(13726).TYPE.LeftSquareBracket !== type) {
+                        sum = num2;
+                      }
+                    }
+                  }
+                  sum = num2 + 1;
+                }
+                let sum1 = num3 + 1;
+                tmp6 = sum1;
+                if (iter.balance <= index) {
+                  break;
+                } else {
+                  iter = fn(sum1);
+                  num2 = sum;
+                  num3 = sum1;
+                  tmp6 = sum1;
+                  if (!iter) {
+                    break;
+                  }
+                }
+              }
+              return tmp6;
+            }
+          }
+          tmp6 = num3;
+          if (iter.balance > iter.index) {
+            break;
+          } else {
+            tmp6 = num3;
+            if (iter.balance < index) {
+              break;
+            } else {
+              sum = num2 - 1;
+            }
+          }
+        }
+      }
+    } else {
+      return 0;
+    }
+  },
+  "any-value": function anyValue(arg0, fn) {
+    let tmp = arg0;
+    if (tmp) {
+      const index = tmp.index;
+      let num2 = 0;
+      const type = tmp.type;
+      let tmp6 = num2;
+      while (tokenize.TYPE.BadString !== type) {
+        tmp6 = num2;
+        if (tmp2(13726).TYPE.BadUrl === type) {
+          break;
+        } else {
+          if (tmp2(13726).TYPE.RightCurlyBracket !== type) {
+            let sum = num2 + 1;
+            tmp6 = sum;
+            if (tmp.balance <= index) {
+              break;
+            } else {
+              tmp = fn(sum);
+              num2 = sum;
+              tmp6 = sum;
+              if (!tmp) {
+                break;
+              }
+            }
+          }
+          tmp6 = num2;
+          if (tmp.balance > tmp.index) {
+            break;
+          } else {
+            tmp6 = num2;
+            if (tmp.balance < index) {
               break;
             }
           }
         }
       }
+      return tmp6;
+    } else {
+      return 0;
     }
-    let obj = { type: closure_2.tokenType, value: closure_2.getTokenValue(), index: closure_2.tokenIndex, balance: closure_2.balance[closure_2.tokenIndex], node: tmp6 };
-    let push = items.push;
-    let arr = push(obj);
-    let nextResult = closure_2.next();
-    node1 = tmp6;
-    num = tmp7;
-    num2 = tmp8;
-  }
-  return items;
-}
-let tmp = new TokenStream();
-let closure_2 = tmp;
-let closure_3 = {
-  decorator(children) {
-    let node = null;
-    let obj = { len: 0, node: null };
-    const items = [obj];
-    let closure_4 = "";
-    return {
-      children: children.children,
-      node(arg0) {
-        let closure_1 = arg0;
-        node = children.node;
-        node.call(this, arg0);
-        const tmp = closure_1;
-        closure_1 = tmp;
-      },
-      chunk(arg0) {
-        closure_4 = closure_4 + arg0;
-        if (obj.node !== node) {
-          obj = { len: arg0.length, node };
-          items.push(obj);
-        } else {
-          obj.len = obj.len + arg0.length;
+  },
+  dimension,
+  angle: dimension,
+  decibel: dimension,
+  frequency: dimension,
+  flex: dimension,
+  length: dimension,
+  resolution: dimension,
+  semitones: dimension,
+  time: dimension,
+  percentage: dimension,
+  zero: zero2,
+  number: dimension,
+  integer: dimension,
+  "-ms-legacy-expression": (arg0, fn) => {
+    let iter = arg0;
+    let num = 0;
+    if (null !== arg0) {
+      const value = iter.value;
+      num = 0;
+      const obj = tokenize;
+      if (obj.cmpStr(value, 0, value.length, c0)) {
+        let num4 = 0;
+        const sum = num4 + 1;
+        num = sum;
+        while (iter.balance > iter.index) {
+          iter = fn(sum);
+          num4 = sum;
+          num = sum;
+          if (!iter) {
+            break;
+          }
         }
-      },
-      result() {
-        return prepareTokens(closure_4, items);
       }
-    };
+    }
+    return num;
   }
 };
-
-export default (str, generate) => {
-  let generateResult;
-  if (typeof str === "string") {
-    generateResult = prepareTokens(str, null);
+const Function = tokenize.TYPE.Function;
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const Hash = tokenize.TYPE.Hash;
+const BadString = tokenize.TYPE.BadString;
+const Url = tokenize.TYPE.Url;
+const BadUrl = tokenize.TYPE.BadUrl;
+const Delim = tokenize.TYPE.Delim;
+const Number = tokenize.TYPE.Number;
+const Percentage = tokenize.TYPE.Percentage;
+const Dimension = tokenize.TYPE.Dimension;
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+const CDO = tokenize.TYPE.CDO;
+const CDC = tokenize.TYPE.CDC;
+const Colon = tokenize.TYPE.Colon;
+const Semicolon = tokenize.TYPE.Semicolon;
+const Comma = tokenize.TYPE.Comma;
+const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
+const RightSquareBracket = tokenize.TYPE.RightSquareBracket;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const RightCurlyBracket = tokenize.TYPE.RightCurlyBracket;
+const String = tokenize.TYPE.String;
+const Ident = tokenize.TYPE.Ident;
+let c0 = null;
+let closure_0 = { deg: true, grad: true, rad: true, turn: true };
+closure_0 = { db: true };
+closure_0 = { hz: true, khz: true };
+closure_0 = { fr: true };
+closure_0 = { px: true, mm: true, cm: true, in: true, pt: true, pc: true, q: true, em: true, ex: true, ch: true, rem: true, vh: true, vw: true, vmin: true, vmax: true, vm: true };
+const zero = zero2;
+closure_0 = { dpi: true, dpcm: true, dppx: true, x: true };
+closure_0 = { st: true };
+closure_0 = { s: true, ms: true };
+const f107260 = f1072602;
+function percentage(type, arg1, arg2) {
+  if (null !== type) {
+    let num2;
+    if (type.type === percentage(dependencyMap[0]).TYPE.Percentage) {
+      const value = type.value;
+      num2 = 1;
+      const diff = type.value.length - 1;
+      if (arg2) {
+        if ("Range" === arg2.type) {
+          let substr = value;
+          const _Number = Number;
+          if (diff !== value.length) {
+            substr = value.substr(0, diff);
+          }
+          const _NumberResult = _Number(substr);
+          const _isNaN = isNaN;
+        }
+      }
+    }
+    return num2;
+  }
+  num2 = 0;
+}
+let n;
+if (typeof undefined !== "function") {
+  n = function n() {
+    return 0;
+  };
+}
+function number(value, arg1, type) {
+  if (null === value) {
+    return 0;
   } else {
-    generateResult = generate.generate(str, closure_3);
+    let num4;
+    const obj2 = number(dependencyMap[0]);
+    const consumeNumberResult = obj2.consumeNumber(value.value, 0);
+    const tmp7 = number;
+    const tmp8 = dependencyMap;
+    if (consumeNumberResult === value.value.length) {
+      value = value.value;
+      let flag = false;
+      if (type) {
+        flag = false;
+        if ("Range" === type.type) {
+          let substr = value;
+          const _Number = Number;
+          if (undefined !== consumeNumberResult) {
+            substr = value;
+            if (consumeNumberResult !== value.length) {
+              substr = value.substr(0, consumeNumberResult);
+            }
+          }
+          const _NumberResult = _Number(substr);
+          const _isNaN = isNaN;
+          flag = true;
+          if (!isNaN(_NumberResult)) {
+            if (null === type.min) {
+              flag = false;
+              if (null !== type.max) {
+                flag = false;
+                if (_NumberResult > type.max) {
+                  flag = true;
+                }
+              }
+            } else {
+              flag = true;
+            }
+          }
+        }
+      }
+      let num5 = 1;
+      if (flag) {
+        num5 = 0;
+      }
+      num4 = num5;
+    } else {
+      const value2 = value.value;
+      let tmp = consumeNumberResult === value2.length - 2;
+      if (tmp) {
+        let isDigitResult = 92 === value2.charCodeAt(consumeNumberResult);
+        if (isDigitResult) {
+          const tmp7Result = tmp7(tmp8[0]);
+          isDigitResult = tmp7Result.isDigit(value2.charCodeAt(consumeNumberResult + 1));
+        }
+        tmp = isDigitResult;
+      }
+      num4 = 0;
+    }
+    return num4;
   }
-  return generateResult;
-};
+}
+function integer(type, arg1, type2) {
+  if (null !== type) {
+    if (type.type === integer(dependencyMap[0]).TYPE.Number) {
+      let num2;
+      const value2 = type.value;
+      if (43 === value2.charCodeAt(0)) {
+        num2 = 1;
+      } else {
+        const value = type.value;
+        num2 = 0;
+      }
+      let num3 = 1;
+      let sum = num2;
+      let tmp2 = num2;
+      if (num2 < type.value.length) {
+        integer(dependencyMap[0]);
+        const value3 = type.value;
+        while (tmp6(value3.charCodeAt(sum))) {
+          sum = sum + num3;
+          tmp2 = sum;
+        }
+        return 0;
+      }
+      const value6 = type.value;
+      let flag = false;
+      if (type2) {
+        flag = false;
+        if ("Range" === type2.type) {
+          let substr = value6;
+          const _Number = Number;
+          if (tmp2 !== value6.length) {
+            substr = value6.substr(0, tmp2);
+          }
+          const _NumberResult = _Number(substr);
+          const _isNaN = isNaN;
+          flag = true;
+          if (!isNaN(_NumberResult)) {
+            if (null === type2.min) {
+              flag = false;
+              if (null !== type2.max) {
+                flag = false;
+                if (_NumberResult > type2.max) {
+                  flag = true;
+                }
+              }
+            } else {
+              flag = true;
+            }
+          }
+        }
+      }
+      if (flag) {
+        num3 = 0;
+      }
+      return num3;
+    }
+  }
+  return 0;
+}
+c0 = "expression(";
+
+export default obj;

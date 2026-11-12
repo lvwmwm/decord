@@ -1,14 +1,14 @@
-// Module ID: 13081
-// Function ID: 13082
+// Module ID: 13075
+// Function ID: 13076
 // Name: ActivitiesIcon
-// Dependencies: [19, 21, 575, 5956, 13082, 2]
+// Dependencies: [19, 21, 575, 5956, 13076, 2]
 // Exports: ActivitiesIcon
 
-// Module 13081 (ActivitiesIcon)
+// Module 13075 (ActivitiesIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 13082 */;
+import AssetRegistry from "AssetRegistry" /* 13076 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

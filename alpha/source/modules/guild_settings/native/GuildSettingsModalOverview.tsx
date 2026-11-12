@@ -1,10 +1,10 @@
-// Module ID: 20290
-// Function ID: 20291
+// Module ID: 20285
+// Function ID: 20286
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 5110, 5092, 5173, 5473, 5175, 5185, 1385, 8339, 1072, 21, 5243, 575, 1113, 5314, 5951, 7427, 7363, 8338, 11903, 20291, 1403, 7882, 6206, 6277, 7553, 5891, 7680, 7379, 9155, 20047, 7180, 7888, 7679, 7681, 2185, 20295, 1411, 11940, 7793, 7622, 8041, 6274, 5849, 1499, 504, 2]
+// Dependencies: [19, 5110, 5092, 5173, 5473, 5175, 5185, 1385, 8339, 1072, 21, 5243, 575, 1113, 5314, 5951, 7427, 7363, 8338, 11897, 20286, 1403, 7882, 6206, 6277, 7553, 5891, 7680, 7379, 9154, 20042, 7180, 7888, 7679, 7681, 2185, 20290, 1411, 11934, 7793, 7622, 8041, 6274, 5849, 1499, 504, 2]
 // Exports: default
 
-// Module 20290 (GuildSettingsModalOverview)
+// Module 20285 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
@@ -30,9 +30,9 @@ import showSimpleActionSheet from "showSimpleActionSheet" /* 7882 */;
 import TableSwitchRow8 from "TableSwitchRow" /* 7888 */;
 import _mod8041 from "module_8041" /* 8041 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8338 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11903 */;
-import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 11940 */;
-import AssetChooserDefault from "AssetChooser" /* 20295 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11897 */;
+import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 11934 */;
+import AssetChooserDefault from "AssetChooser" /* 20290 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildChannelStore from "GuildChannelStore" /* 5173 */;
@@ -465,7 +465,7 @@ class GuildSettingsModalOverview extends PureComponent {
       const intl = intl13.intl;
       channelName = intl.string(intl13.t.ibUhoa);
     }
-    const tmpResult = tmp(9155);
+    const tmpResult = tmp(9154);
     const result = tmpResult.isEligibleForRoleSubscriptionPurchaseSystemMessageSettings(guild);
     let hasFlagResult = result;
     if (!hasFlagResult) {
@@ -477,7 +477,7 @@ class GuildSettingsModalOverview extends PureComponent {
       const tmpResult14 = tmp(1403);
       hasFlagResult1 = tmpResult14.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     }
-    const tmpResult15 = tmp(20047);
+    const tmpResult15 = tmp(20042);
     let result1 = tmpResult15.isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
     if (!result1) {
       const tmpResult16 = tmp(1403);

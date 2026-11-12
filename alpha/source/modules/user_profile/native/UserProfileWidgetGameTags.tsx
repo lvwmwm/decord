@@ -1,17 +1,17 @@
-// Module ID: 12073
-// Function ID: 12074
+// Module ID: 12067
+// Function ID: 12068
 // Name: UserProfileWidgetGameTags
-// Dependencies: [19, 17, 502, 8413, 21, 5243, 575, 12048, 12029, 5252, 1113, 8480, 6268, 5866, 7483, 12074, 2]
+// Dependencies: [19, 17, 502, 8413, 21, 5243, 575, 12042, 12023, 5252, 1113, 8480, 6268, 5866, 7483, 12068, 2]
 
-// Module 12073 (UserProfileWidgetGameTags)
+// Module 12067 (UserProfileWidgetGameTags)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import Constants from "Constants" /* 8413 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8480 */;
-import WidgetUtils from "WidgetUtils" /* 12029 */;
-import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 12074 */;
+import WidgetUtils from "WidgetUtils" /* 12023 */;
+import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 12068 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

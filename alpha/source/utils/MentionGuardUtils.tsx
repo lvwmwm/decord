@@ -1,11 +1,11 @@
-// Module ID: 11168
-// Function ID: 11169
+// Module ID: 11162
+// Function ID: 11163
 // Name: MentionGuardUtils
-// Dependencies: [32, 7251, 5175, 1072, 38, 8720, 2]
+// Dependencies: [32, 7251, 5175, 1072, 38, 8719, 2]
 
-// Module 11168 (MentionGuardUtils)
+// Module 11162 (MentionGuardUtils)
 import _modDef38 from "module_38" /* 38 */;
-import MessageParserDefault from "MessageParser" /* 8720 */;
+import MessageParserDefault from "MessageParser" /* 8719 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7251 */;
 import PermissionStore from "PermissionStore" /* 5175 */;

@@ -1,10 +1,10 @@
-// Module ID: 9955
-// Function ID: 9956
+// Module ID: 9954
+// Function ID: 9955
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5244, 1072, 21, 5243, 575, 2111, 9954, 7434, 7483, 1113, 1652, 5876, 5485, 5491, 8429, 9956, 5839, 5830, 9343, 9958, 504, 9959, 9963, 9972, 9975, 9336, 5957, 7351, 9977, 9421, 9434, 9461, 9996, 9997, 5866, 8431, 5873, 2]
+// Dependencies: [32, 717, 19, 17, 5244, 1072, 21, 5243, 575, 2111, 9953, 7434, 7483, 1113, 1652, 5876, 5485, 5491, 8429, 9955, 5839, 5830, 9342, 9957, 504, 9958, 9962, 9971, 9974, 9335, 5957, 7351, 9976, 9420, 9433, 9460, 9995, 9996, 5866, 8431, 5873, 2]
 // Exports: default
 
-// Module 9955 (ProductPurchaseSuccessModal)
+// Module 9954 (ProductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
@@ -12,7 +12,7 @@ import HapticUtils from "HapticUtils" /* 5491 */;
 import _mod7434 from "module_7434" /* 7434 */;
 import XSmallIcon from "XSmallIcon" /* 7483 */;
 import _modDef8429 from "module_8429" /* 8429 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9954 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9953 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
@@ -247,7 +247,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const stageCollectibleChangeForEditProfile = orbBalancePriorToPurchase.stageCollectibleChangeForEditProfile;
   let obj = require("useCurrentUser");
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(9956)(product.styles).backgroundColors;
+  const backgroundColors = callback(9955)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -446,7 +446,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const obj8 = { style: tmp6.headerLeading, children: showOrbBalancePill };
     if (showOrbBalancePill) {
       const obj9 = { initialRenderedBalance: prop, balance };
-      showOrbBalancePill = tmp44(tmp2(9977).BalanceWidgetPill, obj9);
+      showOrbBalancePill = tmp44(tmp2(9976).BalanceWidgetPill, obj9);
     }
     items11 = [tmp44(closure_7, obj8), ];
     let toHexStringResult;
@@ -473,23 +473,23 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       if (tmp43Result) {
         const obj14 = { deco: null, pfx: null, nameplate: null, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp38 };
         ({ firstAvatarDecoration: obj28.deco, firstProfileEffect: obj28.pfx, firstNameplate: obj28.nameplate } = shopProductItems);
-        tmp43Result = tmp43(tmp4(9421), obj14);
+        tmp43Result = tmp43(tmp4(9420), obj14);
       }
       tmp43Result2 = tmp43(tmp41, obj13);
     } else if (require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj15 = { item: first, size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-      tmp43Result2 = tmp43(tmp4(9434), obj15);
+      tmp43Result2 = tmp43(tmp4(9433), obj15);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj16 = { user: currentUser, profileEffect: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(9461), obj16);
+      tmp43Result2 = tmp43(tmp4(9460), obj16);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
       const obj17 = { user: currentUser, profileFrame: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(9996), obj17);
+      tmp43Result2 = tmp43(tmp4(9995), obj17);
     } else {
       tmp43Result2 = null;
       if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
         const obj18 = { user: currentUser, nameplate: product.items[0], animate: true };
-        tmp43Result2 = tmp43(tmp2(9997).NameplatePreview, obj18);
+        tmp43Result2 = tmp43(tmp2(9996).NameplatePreview, obj18);
       }
     }
     items14 = [tmp44(View, obj12), ];

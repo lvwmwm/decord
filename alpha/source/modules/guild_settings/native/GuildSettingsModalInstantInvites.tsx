@@ -1,10 +1,10 @@
-// Module ID: 20444
-// Function ID: 20445
+// Module ID: 20439
+// Function ID: 20440
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 10950, 7598, 5092, 5114, 8339, 1072, 21, 5243, 575, 1113, 2185, 7667, 5866, 7387, 15919, 14672, 504, 12, 9191, 9189, 5489, 14026, 2118, 5952, 10853, 7522, 1187, 20445, 7822, 5849, 2]
+// Dependencies: [32, 19, 17, 10944, 7598, 5092, 5114, 8339, 1072, 21, 5243, 575, 1113, 2185, 7667, 5866, 7387, 15914, 14668, 504, 12, 9190, 9188, 5489, 14022, 2118, 5952, 10847, 7522, 1187, 20440, 7822, 5849, 2]
 // Exports: default
 
-// Module 20444 (GuildSettingsModalInstantInvites)
+// Module 20439 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -12,14 +12,14 @@ import asyncRequire from "asyncRequire" /* 2118 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 9189 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 9191 */;
-import InstantInvite from "InstantInvite" /* 10853 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15919 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 9188 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 9190 */;
+import InstantInvite from "InstantInvite" /* 10847 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15914 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10950 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10944 */;
 import InviteRecord from "InviteRecord" /* 7598 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
@@ -186,7 +186,7 @@ function GuildSettingsModalInstantInvites(invites) {
         obj2 = GuildAntiRaidUtils;
         const obj4 = { guild, analyticsData: obj };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(14026, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+        obj3.openLazy(asyncRequire(14022, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         closure_7(false);
       } catch (tmp16) {
         closure_7(false);

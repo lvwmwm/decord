@@ -1,7 +1,7 @@
 // Module ID: 6008
 // Function ID: 6009
 // Name: RTCConnectionStore
-// Dependencies: [6009, 502, 6011, 1072, 6012, 3, 6014, 6126, 572, 16156, 5087, 6016, 504, 16157, 1252, 2118, 2]
+// Dependencies: [6009, 502, 6011, 1072, 6012, 3, 6014, 6126, 572, 16151, 5087, 6016, 504, 16152, 1252, 2118, 2]
 
 // Module 6008 (RTCConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -10,8 +10,8 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import Constants2 from "Constants" /* 6012 */;
 import TimeUtils from "TimeUtils" /* 6016 */;
-import VoiceStateAnalyticsDefault from "VoiceStateAnalytics" /* 16156 */;
-import trackVideoToggle from "trackVideoToggle" /* 16157 */;
+import VoiceStateAnalyticsDefault from "VoiceStateAnalytics" /* 16151 */;
+import trackVideoToggle from "trackVideoToggle" /* 16152 */;
 import GameConsoleStore from "GameConsoleStore" /* 6009 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6011 */;

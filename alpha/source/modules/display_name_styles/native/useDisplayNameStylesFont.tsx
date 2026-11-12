@@ -1,10 +1,10 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 9999
+// Function ID: 10000
 // Name: useDisplayNameStylesFont
 // Dependencies: [1395, 6688, 2]
 // Exports: useDisplayNameStylesFont
 
-// Module 10000 (useDisplayNameStylesFont)
+// Module 9999 (useDisplayNameStylesFont)
 import DisplayNameFont from "DisplayNameFont" /* 1395 */;
 import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 6688 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 12715
-// Function ID: 12716
+// Module ID: 12709
+// Function ID: 12710
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1072, 1387, 6012, 21, 5243, 575, 12625, 11236, 7852, 1652, 5485, 1187, 6189, 12716, 1252, 9513, 10891, 2171, 7364, 5957, 11153, 2]
+// Dependencies: [19, 17, 1072, 1387, 6012, 21, 5243, 575, 12619, 11230, 7852, 1652, 5485, 1187, 6189, 12710, 1252, 9512, 10885, 2171, 7364, 5957, 11147, 2]
 // Exports: default
 
-// Module 12715 (StreamQualityLiveIndicator)
+// Module 12709 (StreamQualityLiveIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import Constants2 from "Constants" /* 6012 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9512 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10885 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 10061
-// Function ID: 10062
+// Module ID: 10060
+// Function ID: 10061
 // Name: QuestUtils
-// Dependencies: [5, 19, 10062, 5275, 1072, 21, 5489, 10063, 2118, 15148, 10083, 15155, 15160, 8750, 10066, 5278, 5952, 1113, 7674, 10065, 8763, 12654, 5430, 8537, 1377, 5949, 575, 13922, 7374, 6207, 6211, 5429, 1500, 2]
+// Dependencies: [5, 19, 10061, 5275, 1072, 21, 5489, 10062, 2118, 15145, 10082, 15152, 15157, 8749, 10065, 5278, 5952, 1113, 7674, 10064, 8762, 12648, 5430, 8537, 1377, 5949, 575, 13918, 7374, 6207, 6211, 5429, 1500, 2]
 // Exports: dismissOverlayScreens, getPrimaryCtaIcon, handleRewardClaimThenView, isHeroVideoSupported, openDiscordQuestsFAQ, openQuestHome, openRewardDetailsBottomSheet, showQuestUnavailableAlert
 
-// Module 10061 (QuestUtils)
+// Module 10060 (QuestUtils)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
@@ -16,15 +16,15 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489
 import LinkingDefault from "Linking" /* 5949 */;
 import useAlertStore from "useAlertStore" /* 6207 */;
 import AlertModal2 from "AlertModal" /* 6211 */;
-import getQuestLogger from "getQuestLogger" /* 8750 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8763 */;
-import QuestActionCreators from "QuestActionCreators" /* 10066 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10083 */;
-import QuestOrbsRewardModal from "QuestOrbsRewardModal" /* 15155 */;
-import openQuestCollectibleRewardModal from "openQuestCollectibleRewardModal" /* 15160 */;
+import getQuestLogger from "getQuestLogger" /* 8749 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8762 */;
+import QuestActionCreators from "QuestActionCreators" /* 10065 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10082 */;
+import QuestOrbsRewardModal from "QuestOrbsRewardModal" /* 15152 */;
+import openQuestCollectibleRewardModal from "openQuestCollectibleRewardModal" /* 15157 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10062 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10061 */;
 import QuestConstants from "QuestConstants" /* 5275 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ function openRewardClaimBottomSheet(arg0) {
   let sourceQuestContent;
   ({ questId, questContent, questContentPosition, sourceQuestContent } = arg0);
   obj = ActionSheetActionCreatorsDefault;
-  return obj.openLazy(asyncRequire(15148, dependencyMap.paths), metroRequire, { questId, questContent, questContentPosition, sourceQuestContent });
+  return obj.openLazy(asyncRequire(15145, dependencyMap.paths), metroRequire, { questId, questContent, questContentPosition, sourceQuestContent });
 }
 function viewReward(quest) {
   let onSuccess;
@@ -65,7 +65,7 @@ function viewReward(quest) {
     const id = quest.id;
     const obj2 = { questId: id, questContent, questContentPosition, sourceQuestContent };
     const obj7 = ActionSheetActionCreatorsDefault;
-    obj7.openLazy(asyncRequire(15148, tmp2.paths), metroRequire, obj2);
+    obj7.openLazy(asyncRequire(15145, tmp2.paths), metroRequire, obj2);
   } else {
     const tmpResult = QuestRewardUtils;
     if (tmpResult.hasVirtualCurrencyReward(quest.config)) {
@@ -293,7 +293,7 @@ let result = size.fileFinishedImporting("modules/quests/native/QuestUtils.native
 export function openRewardDetailsBottomSheet(questId) {
   questId = questId.questId;
   obj = ActionSheetActionCreatorsDefault;
-  return obj.openLazy(asyncRequire(10063, dependencyMap.paths), metroImportDefault, { questId });
+  return obj.openLazy(asyncRequire(10062, dependencyMap.paths), metroImportDefault, { questId });
 }
 export { viewReward };
 export function handleRewardClaimThenView() {
@@ -388,7 +388,7 @@ export function getPrimaryCtaIcon(quest, arg1) {
       const features2 = quest.config.features;
       if (features2.includes(tmp3.CLOUD_GAMING_ACTIVITY)) {
         const obj3 = { size: "sm", style: obj2, color: nativeDefault.colors.WHITE };
-        const CloudIcon = tmp(13922).CloudIcon;
+        const CloudIcon = tmp(13918).CloudIcon;
         tmp5Result = tmp5(CloudIcon, obj3);
       } else {
         const obj4 = { size: "sm", style: obj2, color: nativeDefault.colors.WHITE };

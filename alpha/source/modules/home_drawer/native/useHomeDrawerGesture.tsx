@@ -1,10 +1,10 @@
-// Module ID: 18618
-// Function ID: 18619
+// Module ID: 18613
+// Function ID: 18614
 // Name: useHomeDrawerGesture
-// Dependencies: [32, 19, 18612, 18619, 1072, 11949, 12313, 5435, 1652, 1500, 1252, 5485, 1705, 5491, 1493, 1627, 5432, 12314, 18620, 5429, 5487, 18613, 5535, 7782, 2]
+// Dependencies: [32, 19, 18607, 18614, 1072, 11943, 12307, 5435, 1652, 1500, 1252, 5485, 1705, 5491, 1493, 1627, 5432, 12308, 18615, 5429, 5487, 18608, 5535, 7782, 2]
 // Exports: useDoesLandOnHomeDrawer, useHomeDrawerState, useHomeGesture, useIsHomeDrawerEnabled
 
-// Module 18618 (useHomeDrawerGesture)
+// Module 18613 (useHomeDrawerGesture)
 import Constants from "Constants" /* 1072 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
@@ -12,13 +12,13 @@ import NavigationRouteUtils from "NavigationRouteUtils" /* 5429 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import HapticUtils from "HapticUtils" /* 5491 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 12313 */;
-import HomeDrawerStore2 from "HomeDrawerStore" /* 18612 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18613 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 12307 */;
+import HomeDrawerStore2 from "HomeDrawerStore" /* 18607 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18608 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 18619 */;
-import GestureConstants from "GestureConstants" /* 11949 */;
+import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 18614 */;
+import GestureConstants from "GestureConstants" /* 11943 */;
 import "ReanimatedHelperTypes";
 import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7782 */;
 import size from "module_2" /* 2 */;

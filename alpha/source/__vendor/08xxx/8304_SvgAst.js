@@ -24,7 +24,7 @@ let Component;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f94592 = (item) => item.trim();
+const f94603 = (item) => item.trim();
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -404,7 +404,7 @@ function _parse(arg0, fn) {
           element.styles = obj.style;
           const obj2 = {};
           const parts = str15.split(";");
-          const found = parts.filter(f94592);
+          const found = parts.filter(f94603);
           let num3 = 0;
           if (0 < found.length) {
             while (true) {
@@ -915,7 +915,7 @@ export function getStyle(str) {
   let str2;
   const obj = {};
   const parts = str.split(";");
-  const found = parts.filter(f94592);
+  const found = parts.filter(f94603);
   let num = 0;
   if (0 < found.length) {
     while (true) {

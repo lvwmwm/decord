@@ -1,13 +1,13 @@
 // Module ID: 7255
 // Function ID: 7256
 // Name: FirstPartyRichPresenceStore
-// Dependencies: [7256, 15870, 1342, 504, 572, 2]
+// Dependencies: [7256, 15865, 1342, 504, 572, 2]
 
 // Module 7255 (FirstPartyRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1342 from "module_1342" /* 1342 */;
-import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 15870 */;
+import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 15865 */;
 import ConjureRichPresenceStore from "ConjureRichPresenceStore" /* 7256 */;
 import size from "module_2" /* 2 */;
 

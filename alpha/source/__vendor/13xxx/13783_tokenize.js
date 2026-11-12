@@ -1,44 +1,44 @@
 // Module ID: 13783
 // Function ID: 13784
 // Name: tokenize
-// Dependencies: [13730]
+// Dependencies: [13726]
 
 // Module 13783 (tokenize)
-import tokenize from "tokenize" /* 13730 */;
+import tokenize from "tokenize" /* 13726 */;
 
+let items;
 let obj2;
-const Comment = tokenize.TYPE.Comment;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
 let obj = {
-  name: "Comment",
+  name: "Function",
   structure: obj2,
-  parse() {
+  parse(call, arg1) {
+    let callResult;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const tokenEnd = this.scanner.tokenEnd;
-    this.eat(Comment);
-    const sum = tokenEnd - tokenStart + 2;
-    let tmp3 = sum >= 2;
-    if (2 <= sum) {
-      const source = self.scanner.source;
-      tmp3 = 42 === source.charCodeAt(tokenEnd - 2);
+    const str = this.consumeFunctionName();
+    const formatted = str.toLowerCase();
+    if (arg1.hasOwnProperty(formatted)) {
+      const obj = arg1[formatted];
+      callResult = obj.call(self, arg1);
+    } else {
+      callResult = call.call(self, arg1);
     }
-    if (tmp3) {
-      const source2 = self.scanner.source;
-      tmp3 = 47 === source2.charCodeAt(tokenEnd - 1);
+    if (!self.scanner.eof) {
+      self.eat(RightParenthesis);
     }
-    let diff = tokenEnd;
-    if (tmp3) {
-      diff = tokenEnd - 2;
-    }
-    const obj = { type: "Comment", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: str.substring(tokenStart + 2, diff) };
-    return obj;
+    const element = { type: "Function", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, children: callResult };
+    return element;
   },
-  generate(value) {
-    this.chunk("/*");
-    this.chunk(value.value);
-    this.chunk("*/");
-  }
+  generate(name) {
+    this.chunk(name.name);
+    this.chunk("(");
+    this.children(name);
+    this.chunk(")");
+  },
+  walkContext: "function"
 };
-obj2 = { value: String };
+obj2 = { name: String, children: items };
+items = [[]];
 
 export default obj;

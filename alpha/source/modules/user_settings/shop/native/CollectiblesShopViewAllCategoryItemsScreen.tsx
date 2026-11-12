@@ -1,14 +1,14 @@
-// Module ID: 18414
-// Function ID: 18415
+// Module ID: 18409
+// Function ID: 18410
 // Name: CollectiblesShopViewAllCategoryItemsScreen
-// Dependencies: [19, 21, 7746, 1499, 18415, 2]
+// Dependencies: [19, 21, 7746, 1499, 18410, 2]
 // Exports: default
 
-// Module 18414 (CollectiblesShopViewAllCategoryItemsScreen)
+// Module 18409 (CollectiblesShopViewAllCategoryItemsScreen)
 import Fragment from "Fragment" /* 21 */;
 import useNavigation from "useNavigation" /* 1499 */;
 import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7746 */;
-import CollectiblesShopViewAllCategoryItemsDefault from "CollectiblesShopViewAllCategoryItems" /* 18415 */;
+import CollectiblesShopViewAllCategoryItemsDefault from "CollectiblesShopViewAllCategoryItems" /* 18410 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

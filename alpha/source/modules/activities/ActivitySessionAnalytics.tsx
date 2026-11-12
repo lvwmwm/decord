@@ -1,10 +1,10 @@
-// Module ID: 16813
-// Function ID: 16814
+// Module ID: 16808
+// Function ID: 16809
 // Name: ActivitySessionAnalytics
-// Dependencies: [5, 2162, 6953, 8742, 5092, 6008, 1385, 16814, 5091, 1072, 5921, 1377, 12669, 6994, 15141, 6708, 12670, 1266, 12681, 6201, 1252, 11350, 6713, 12658, 2]
+// Dependencies: [5, 2162, 6953, 8741, 5092, 6008, 1385, 16809, 5091, 1072, 5921, 1377, 12663, 6994, 15138, 6708, 12664, 1266, 12675, 6201, 1252, 11344, 6713, 12652, 2]
 // Exports: getActiveAnalyticsSessionIDs, getShelfItemTrackingProperties, trackFrameSessionEnd, trackFrameSessionStart, trackFrameSessionStartFailed
 
-// Module 16813 (ActivitySessionAnalytics)
+// Module 16808 (ActivitySessionAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import v1 from "v1" /* 1266 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -12,18 +12,18 @@ import getPlatformDefault from "getPlatform" /* 5921 */;
 import ThermalUtilsDefault from "ThermalUtils" /* 6201 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6708 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6994 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 11350 */;
-import activityLaunchErrorUtils from "activityLaunchErrorUtils" /* 12658 */;
-import pendingFrameLaunch from "pendingFrameLaunch" /* 12669 */;
-import getShelfItemDataDefault from "getShelfItemData" /* 12681 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 11344 */;
+import activityLaunchErrorUtils from "activityLaunchErrorUtils" /* 12652 */;
+import pendingFrameLaunch from "pendingFrameLaunch" /* 12663 */;
+import getShelfItemDataDefault from "getShelfItemData" /* 12675 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
-import QuestStore from "QuestStore" /* 8742 */;
+import QuestStore from "QuestStore" /* 8741 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
 import UserStore from "UserStore" /* 1385 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 16814 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 16809 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -33,8 +33,8 @@ let embedded_activity_location_kind, location_stack;
 let closure_12;
 let map1;
 let tmp2;
-const QuestMatchingUtils = tmp2(15141);
-const f112971 = (userStatus) => {
+const QuestMatchingUtils = tmp2(15138);
+const f112980 = (userStatus) => {
   userStatus = userStatus.userStatus;
   let enrolledAt;
   if (userStatus != null) {
@@ -90,7 +90,7 @@ function maybeEmitFrameSessionMetricsForQuest(applicationId, name) {
     if (eligibleQuestsForApplicationId.length > 0) {
       const _HermesInternal2 = HermesInternal;
       const items = ["application_id:" + applicationId];
-      const found = eligibleQuestsForApplicationId.find(f112971);
+      const found = eligibleQuestsForApplicationId.find(f112980);
       let id;
       if (found != null) {
         id = found.id;
@@ -312,9 +312,9 @@ export function trackFrameSessionStart(applicationId, analyticsContext) {
         if (null != channel) {
           let PRIVATE_CHANNEL;
           if (null != guildId) {
-            PRIVATE_CHANNEL = tmp2(12670).EmbeddedActivityLocationKind.GUILD_CHANNEL;
+            PRIVATE_CHANNEL = tmp2(12664).EmbeddedActivityLocationKind.GUILD_CHANNEL;
           } else {
-            PRIVATE_CHANNEL = tmp2(12670).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
+            PRIVATE_CHANNEL = tmp2(12664).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
           }
           tmp17 = PRIVATE_CHANNEL;
         }
@@ -388,7 +388,7 @@ export function trackFrameSessionStart(applicationId, analyticsContext) {
         if (eligibleQuestsForApplicationId.length > 0) {
           const _HermesInternal2 = HermesInternal;
           const items2 = ["application_id:" + applicationId];
-          const found = eligibleQuestsForApplicationId.find(f112971);
+          const found = eligibleQuestsForApplicationId.find(f112980);
           let id;
           if (found != null) {
             id = found.id;

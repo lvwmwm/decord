@@ -1,7 +1,7 @@
 // Module ID: 7301
 // Function ID: 7302
 // Name: ConjureConnectionStore
-// Dependencies: [32, 5, 1385, 7257, 7302, 6954, 7305, 7306, 7307, 7309, 7310, 7311, 7312, 7313, 7314, 7315, 7316, 7317, 572, 7318, 7321, 7322, 7324, 7326, 7327, 7328, 7329, 13061, 13148, 10917, 13118, 13107, 15864, 15865, 15866, 7319, 15867, 15863, 7272, 13489, 559, 15868, 7271, 15869, 7332, 13693, 8786, 13120, 504, 2]
+// Dependencies: [32, 5, 1385, 7257, 7302, 6954, 7305, 7306, 7307, 7309, 7310, 7311, 7312, 7313, 7314, 7315, 7316, 7317, 572, 7318, 7321, 7322, 7324, 7326, 7327, 7328, 7329, 13055, 13142, 10911, 13112, 13101, 15859, 15860, 15861, 7319, 15862, 15858, 7272, 13483, 559, 15863, 7271, 15864, 7332, 13689, 8785, 13114, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, optimisticMessageId, prepareTemplate, resetHistoryPaging, sendUserMessage, showUserMessage, stageModelSettings, subscribeDebugBacklog, withdrawUserMessage
 
 // Module 7301 (ConjureConnectionStore)
@@ -18,18 +18,18 @@ import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 7327 
 import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 7328 */;
 import conjurePreviewConnection from "conjurePreviewConnection" /* 7329 */;
 import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7332 */;
-import createNonce from "createNonce" /* 8786 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 10917 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 13061 */;
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 13107 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 13118 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 13120 */;
-import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 13148 */;
-import conjureLinkEmbeds from "conjureLinkEmbeds" /* 13693 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 15863 */;
-import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 15864 */;
-import conjureProjectConnection from "conjureProjectConnection" /* 15865 */;
-import conjureUsageConnection from "conjureUsageConnection" /* 15866 */;
+import createNonce from "createNonce" /* 8785 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10911 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 13055 */;
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 13101 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 13112 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 13114 */;
+import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 13142 */;
+import conjureLinkEmbeds from "conjureLinkEmbeds" /* 13689 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 15858 */;
+import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 15859 */;
+import conjureProjectConnection from "conjureProjectConnection" /* 15860 */;
+import conjureUsageConnection from "conjureUsageConnection" /* 15861 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;

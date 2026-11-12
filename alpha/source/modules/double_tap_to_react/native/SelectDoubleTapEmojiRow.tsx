@@ -1,16 +1,16 @@
-// Module ID: 14684
-// Function ID: 14685
+// Module ID: 14680
+// Function ID: 14681
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 5244, 5504, 1388, 21, 5243, 1377, 575, 504, 7364, 7828, 1411, 9481, 1493, 5193, 9130, 9477, 5857, 10342, 2]
+// Dependencies: [19, 17, 5244, 5504, 1388, 21, 5243, 1377, 575, 504, 7364, 7828, 1411, 9480, 1493, 5193, 9129, 9476, 5857, 10340, 2]
 
-// Module 14684 (SelectDoubleTapEmojiRow)
+// Module 14680 (SelectDoubleTapEmojiRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
 import MessageReactionsTypes from "MessageReactionsTypes" /* 5857 */;
 import EmojiDefault from "Emoji" /* 7828 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9477 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9476 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;

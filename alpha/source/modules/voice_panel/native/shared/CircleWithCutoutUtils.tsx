@@ -1,10 +1,10 @@
-// Module ID: 12641
-// Function ID: 12642
+// Module ID: 12635
+// Function ID: 12636
 // Name: CircleWithCutoutUtils
 // Dependencies: [19, 21, 8197, 2]
 // Exports: default, getBadgeLeft, getBadgeTop, getCutoutCenterX, getCutoutCenterY
 
-// Module 12641 (CircleWithCutoutUtils)
+// Module 12635 (CircleWithCutoutUtils)
 import inlineStyles from "inlineStyles" /* 8197 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

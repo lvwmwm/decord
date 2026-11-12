@@ -1,10 +1,10 @@
-// Module ID: 15349
-// Function ID: 15350
+// Module ID: 15346
+// Function ID: 15347
 // Name: SuperReactionLocalImageAnimation
 // Dependencies: [19, 21, 5201, 5859, 2]
 // Exports: default
 
-// Module 15349 (SuperReactionLocalImageAnimation)
+// Module 15346 (SuperReactionLocalImageAnimation)
 import Fragment from "Fragment" /* 21 */;
 import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 5201 */;
 import FadeOutLottieAnimationDefault from "FadeOutLottieAnimation" /* 5859 */;

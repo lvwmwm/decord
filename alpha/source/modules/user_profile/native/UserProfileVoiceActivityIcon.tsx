@@ -1,10 +1,10 @@
-// Module ID: 10800
-// Function ID: 10801
+// Module ID: 10794
+// Function ID: 10795
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [19, 5175, 1083, 21, 504, 9036, 7156, 8028, 7952, 8030, 8029, 7368, 2]
+// Dependencies: [19, 5175, 1083, 21, 504, 9035, 7156, 8028, 7952, 8030, 8029, 7368, 2]
 // Exports: default
 
-// Module 10800 (UserProfileVoiceActivityIcon)
+// Module 10794 (UserProfileVoiceActivityIcon)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7156 */;
@@ -67,7 +67,7 @@ export default function UserProfileVoiceActivityIcon(channel) {
       }
     }
   }
-  const PhoneCallIcon = tmp2(9036).PhoneCallIcon;
+  const PhoneCallIcon = tmp2(9035).PhoneCallIcon;
   const merged5 = Object.assign(merged);
   return <PhoneCallIcon />;
 };

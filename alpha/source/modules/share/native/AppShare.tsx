@@ -1,10 +1,10 @@
-// Module ID: 20777
-// Function ID: 20778
+// Module ID: 20772
+// Function ID: 20773
 // Name: AppShare
-// Dependencies: [32, 19, 17, 8597, 16728, 502, 1072, 14721, 21, 504, 6781, 1377, 8133, 16768, 14724, 8611, 1252, 5836, 6206, 16918, 16221, 1624, 10164, 7522, 19593, 19649, 6211, 2]
+// Dependencies: [32, 19, 17, 8597, 16723, 502, 1072, 14717, 21, 504, 6781, 1377, 8133, 16763, 14720, 8611, 1252, 5836, 6206, 16913, 16216, 1624, 10162, 7522, 19588, 19644, 6211, 2]
 // Exports: default
 
-// Module 20777 (AppShare)
+// Module 20772 (AppShare)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,15 +12,15 @@ import useMountEffectDefault from "useMountEffect" /* 5836 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6781 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8611 */;
-import Constants2 from "Constants" /* 14721 */;
-import ShareScreenDefault from "ShareScreen" /* 16221 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 16768 */;
-import AppContainerDefault from "AppContainer" /* 16918 */;
-import AppToastContainerDefault from "AppToastContainer" /* 19649 */;
+import Constants2 from "Constants" /* 14717 */;
+import ShareScreenDefault from "ShareScreen" /* 16216 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 16763 */;
+import AppContainerDefault from "AppContainer" /* 16913 */;
+import AppToastContainerDefault from "AppToastContainer" /* 19644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8597 */;
-import ShareStore from "ShareStore" /* 16728 */;
+import ShareStore from "ShareStore" /* 16723 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -139,7 +139,7 @@ export default function AppShare(targetUserId) {
     const tmp15Result = ShareScreenDefault;
     const tmp10Result = require("MetaQuestUtils");
     if (tmp10Result.isMetaQuest()) {
-      exitApp = tmp15(10164).close;
+      exitApp = tmp15(10162).close;
     } else {
       exitApp = BackHandler.exitApp;
     }

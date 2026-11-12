@@ -1,20 +1,20 @@
-// Module ID: 15592
-// Function ID: 15593
+// Module ID: 15589
+// Function ID: 15590
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 11345, 1072, 1498, 21, 13380, 12674, 5489, 7877, 13364, 5951, 1378, 8327, 10382, 1113, 5873, 575, 6992, 8069, 5438, 1625, 1252, 2]
+// Dependencies: [5, 32, 19, 11339, 1072, 1498, 21, 13374, 12668, 5489, 7877, 13358, 5951, 1378, 8327, 10380, 1113, 5873, 575, 6992, 8069, 5438, 1625, 1252, 2]
 // Exports: default
 
-// Module 15592 (AddOrOpenAppButton)
+// Module 15589 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import ToastUtils from "ToastUtils" /* 5951 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11345 */;
-import ApplicationUtils from "ApplicationUtils" /* 12674 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 13364 */;
-import useIsAppDMDefault from "useIsAppDM" /* 13380 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11339 */;
+import ApplicationUtils from "ApplicationUtils" /* 12668 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 13358 */;
+import useIsAppDMDefault from "useIsAppDM" /* 13374 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -68,7 +68,7 @@ function AddAppButton(application) {
     ({ size: "sm", color: guildId(575).colors.WHITE });
     return <Button text={intl.string(tmp6(1113).t.NgXl3C)} onPress={callback} onLongPress={tmp2} accessibilityActions={memo} onAccessibilityAction={callback1} icon={null} />;
   }
-  PlusSmallIcon = application(10382).PlusSmallIcon;
+  PlusSmallIcon = application(10380).PlusSmallIcon;
   tmp6 = application;
 }
 function OpenAppButton(profileApplication) {

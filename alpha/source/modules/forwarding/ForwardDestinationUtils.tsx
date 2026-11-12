@@ -1,15 +1,15 @@
-// Module ID: 10195
-// Function ID: 10196
+// Module ID: 10193
+// Function ID: 10194
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6947, 5096, 5092, 5175, 5185, 1385, 1072, 10178, 1380, 504, 1093, 6729, 2116, 6775, 6767, 5932, 6772, 10196, 1113, 6727, 8727, 5309, 5891, 2]
+// Dependencies: [19, 6947, 5096, 5092, 5175, 5185, 1385, 1072, 10176, 1380, 504, 1093, 6729, 2116, 6775, 6767, 5932, 6772, 10194, 1113, 6727, 8726, 5309, 5891, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 10195 (ForwardDestinationUtils)
+// Module 10193 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import StickersUtils from "StickersUtils" /* 6729 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 8727 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 10196 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 8726 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 10194 */;
 import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 6947 */;
 import ChannelRecord from "ChannelRecord" /* 5096 */;
@@ -34,7 +34,7 @@ const result = size.fileFinishedImporting("modules/forwarding/ForwardDestination
 
 export function useSelectedDestinationChannel(selectedDestinations) {
   let found;
-  const mapped = selectedDestinations.map(found(10178).getChannelIdFromDestinationId);
+  const mapped = selectedDestinations.map(found(10176).getChannelIdFromDestinationId);
   found = mapped.find(found(1380).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];

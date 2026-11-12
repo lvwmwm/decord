@@ -1,10 +1,10 @@
-// Module ID: 16216
-// Function ID: 16217
+// Module ID: 16211
+// Function ID: 16212
 // Name: GuildRoleSubscriptionsExperimentUtils
 // Dependencies: [5114, 1072, 563, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates, useGuildEligibleForTierTemplates
 
-// Module 16216 (GuildRoleSubscriptionsExperimentUtils)
+// Module 16211 (GuildRoleSubscriptionsExperimentUtils)
 import Constants from "Constants" /* 1072 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;

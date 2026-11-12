@@ -1,7 +1,7 @@
 // Module ID: 8394
 // Function ID: 8395
 // Name: instant_invite/InstantInviteUtils
-// Dependencies: [8395, 5096, 5092, 8396, 5173, 5989, 6005, 1385, 8400, 8401, 1072, 1252, 7599, 8402, 8405, 8406, 5990, 5489, 10163, 5951, 8409, 7877, 6752, 38, 8398, 2]
+// Dependencies: [8395, 5096, 5092, 8396, 5173, 5989, 6005, 1385, 8400, 8401, 1072, 1252, 7599, 8402, 8405, 8406, 5990, 5489, 10161, 5951, 8409, 7877, 6752, 38, 8398, 2]
 // Exports: getShareMessage, handleCopy, handleOpenInviteActionsheet, handleOpenShareSheet, handlePressSettings, hasDeferredInvite, isAppInstalled, showInstantInviteActionSheetForChannel, showVanityUrlInviteActionSheet
 
 // Module 8394 (instant_invite/InstantInviteUtils)
@@ -287,7 +287,7 @@ export function handleOpenShareSheet(code, channel, message, ADD_FRIENDS_WIDGET)
           }
         }
     };
-    const tmp21Result = tmp21(10163);
+    const tmp21Result = tmp21(10161);
     tmp21Result.showShareActionSheet(obj2, ADD_FRIENDS_WIDGET);
   }
 }

@@ -1,17 +1,17 @@
-// Module ID: 10962
-// Function ID: 10963
+// Module ID: 10956
+// Function ID: 10957
 // Name: InAppNotificationUtils
-// Dependencies: [19, 10963, 1072, 12, 1266, 1357, 1089, 5889, 6004, 2]
+// Dependencies: [19, 10957, 1072, 12, 1266, 1357, 1089, 5889, 6004, 2]
 // Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, useHasPreviewableMedia
 
-// Module 10962 (InAppNotificationUtils)
+// Module 10956 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import v1 from "v1" /* 1266 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import isForwardMessageDefault from "isForwardMessage" /* 5889 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10963 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10957 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -97,7 +97,7 @@ export function getNotificationDuration(ALERT) {
 export function useHasPreviewableMedia(message) {
   const items = [message];
   return react.useMemo(() => {
-    const f100181 = (type) => type.type === constants.GIFV;
+    const f100188 = (type) => type.type === constants.GIFV;
     let hasFlagResult = message.hasFlag(constants.IS_VOICE_MESSAGE);
     if (!hasFlagResult) {
       hasFlagResult = tmp.attachments.length > 0;
@@ -106,7 +106,7 @@ export function useHasPreviewableMedia(message) {
       let everyResult = tmp.embeds.length > 0;
       if (everyResult) {
         let embeds = tmp.embeds;
-        everyResult = embeds.every(f100181);
+        everyResult = embeds.every(f100188);
       }
       hasFlagResult = everyResult;
     }
@@ -124,7 +124,7 @@ export function useHasPreviewableMedia(message) {
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f100181);
+              everyResult = embeds.every(f100188);
             }
             hasFlagResult = everyResult;
           }

@@ -1,15 +1,15 @@
-// Module ID: 12181
-// Function ID: 12182
+// Module ID: 12175
+// Function ID: 12176
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 12180, 1072, 5373, 559, 1089, 572, 1282, 1242, 2]
+// Dependencies: [5, 12174, 1072, 5373, 559, 1089, 572, 1282, 1242, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 12181 (ApplicationWidgetConfigActions)
+// Module 12175 (ApplicationWidgetConfigActions)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import utils_FunctionUtils from "utils/FunctionUtils" /* 5373 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 12180 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 12174 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Backoff from "Backoff" /* 559 */;
 import Dispatcher from "Dispatcher" /* 572 */;
@@ -43,8 +43,8 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        const obj4 = { value, done: true };
+        return obj4;
       } else {
         return { value: "HermesInternal", done: null };
       }
@@ -60,8 +60,8 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
             closure_1 = tmp;
             closure_0 = undefined;
@@ -72,14 +72,14 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
             const obj6 = { url: constants.WIDGET_CONFIGS_FEATURED, rejectWithError: true };
             c4 = 2;
             c5 = 1;
-            const obj7 = { value: HTTP.get(obj6), done: false };
-            return obj7;
+            const obj8 = { value: HTTP.get(obj6), done: false };
+            return obj8;
           }
         } else if (1 === c4) {
           c3 = 0;
           closure_1 = closure_2;
-          const obj4 = closure_129_1(closure_129_2[6]);
-          obj4.dispatch({ type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_FAILURE" });
+          const obj2 = closure_129_1(closure_129_2[6]);
+          obj2.dispatch({ type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_FAILURE" });
           if (!closure_129_9.pending) {
             closure_129_9.fail(() => {
               const oneResult = closure_1_8.one(undefined, closure_1_10);
@@ -88,8 +88,8 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
               });
             });
           }
-          const obj5 = closure_129_1(closure_129_2[8]);
-          obj5.captureException(closure_1);
+          const obj3 = closure_129_1(closure_129_2[8]);
+          obj3.captureException(closure_1);
           throw closure_1;
         } else if (arg0 === 1) {
           c5 = 3;
@@ -97,23 +97,23 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
         } else if (arg0 === 2) {
           c3 = 0;
           c5 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
+          obj = { value, done: true };
+          return obj;
         } else {
           closure_0 = value;
           const obj10 = { type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS", applications: closure_0.body.applications, configs: closure_0.body.configs };
-          obj = closure_129_1(closure_129_2[6]);
-          obj.dispatch(obj10);
+          const obj7 = closure_129_1(closure_129_2[6]);
+          obj7.dispatch(obj10);
           closure_129_9.succeed();
           c3 = 0;
           c5 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp33) {
-        closure_2 = tmp33;
+      } catch (tmp24) {
+        closure_2 = tmp24;
         if (0 === c3) {
           c5 = 3;
-          throw tmp33;
+          throw tmp24;
         } else {
           c4 = 1;
         }

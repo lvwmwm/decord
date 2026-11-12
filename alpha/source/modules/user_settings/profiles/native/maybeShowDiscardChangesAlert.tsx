@@ -1,10 +1,10 @@
-// Module ID: 10843
-// Function ID: 10844
+// Module ID: 10837
+// Function ID: 10838
 // Name: maybeShowDiscardChangesAlert
 // Dependencies: [6206, 1113, 2]
 // Exports: default, showDiscardChangesAlert
 
-// Module 10843 (maybeShowDiscardChangesAlert)
+// Module 10837 (maybeShowDiscardChangesAlert)
 import intl5 from "intl" /* 1113 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
 import size from "module_2" /* 2 */;

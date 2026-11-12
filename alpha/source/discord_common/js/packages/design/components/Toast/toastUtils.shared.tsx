@@ -8,7 +8,7 @@ import module_5254 from "module_5254" /* 5254 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, map, map1;
+let _require, map, map1, map2;
 
 let c2 = 1;
 const useToastStore = module_5254.create(() => {
@@ -103,7 +103,7 @@ export function popToast(arg0) {
         const _Map3 = Map;
         const self5 = this;
         const self6 = this;
-        const map2 = new Map(queuedToastsMap.queuedToastsMap);
+        map2 = new Map(queuedToastsMap.queuedToastsMap);
         let value2 = map2.get(tmp);
         if (value2 == null) {
           value2 = [];

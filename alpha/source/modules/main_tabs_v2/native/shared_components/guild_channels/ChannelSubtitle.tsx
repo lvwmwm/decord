@@ -1,13 +1,13 @@
-// Module ID: 19294
-// Function ID: 19295
+// Module ID: 19289
+// Function ID: 19290
 // Name: guild_channels/ChannelSubtitle
-// Dependencies: [19, 21, 10987, 5866, 18822, 10992, 11001, 2]
+// Dependencies: [19, 21, 10981, 5866, 18817, 10986, 10995, 2]
 // Exports: renderChannelSubtitle
 
-// Module 19294 (guild_channels/ChannelSubtitle)
+// Module 19289 (guild_channels/ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import ChannelListLayout from "ChannelListLayout" /* 10987 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 10992 */;
+import ChannelListLayout from "ChannelListLayout" /* 10981 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 10986 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

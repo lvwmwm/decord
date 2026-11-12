@@ -1,17 +1,17 @@
-// Module ID: 14499
-// Function ID: 14500
+// Module ID: 14495
+// Function ID: 14496
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 5092, 8658, 5114, 6309, 1072, 21, 5243, 575, 8956, 8809, 8824, 5489, 11106, 11092, 11, 8780, 11105, 8798, 1282, 14500, 8593, 8787, 6206, 1113, 504, 7852, 8800, 8813, 5503, 14501, 5866, 5874, 2]
+// Dependencies: [32, 5, 19, 17, 5092, 8658, 5114, 6309, 1072, 21, 5243, 575, 8955, 8808, 8823, 5489, 11100, 11086, 11, 8779, 11099, 8797, 1282, 14496, 8593, 8786, 6206, 1113, 504, 7852, 8799, 8812, 5503, 14497, 5866, 5874, 2]
 // Exports: default
 
-// Module 14499 (AddMediaToOriginalForumPostActionSheet)
+// Module 14495 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import DraftStore from "DraftStore" /* 8658 */;
-import Tracking from "Tracking" /* 8800 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8813 */;
+import Tracking from "Tracking" /* 8799 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8812 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

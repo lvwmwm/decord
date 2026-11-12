@@ -1,12 +1,12 @@
-// Module ID: 19818
-// Function ID: 19819
+// Module ID: 19813
+// Function ID: 19814
 // Name: useVoicePanelDockStatus
-// Dependencies: [32, 19, 6953, 502, 6008, 6878, 1385, 5918, 19819, 5920, 11924, 504, 2]
+// Dependencies: [32, 19, 6953, 502, 6008, 6878, 1385, 5918, 19814, 5920, 11918, 504, 2]
 // Exports: default
 
-// Module 19818 (useVoicePanelDockStatus)
+// Module 19813 (useVoicePanelDockStatus)
 import CallConstants from "CallConstants" /* 5920 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11924 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11918 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
@@ -15,7 +15,7 @@ import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
 import SpeakingStore from "SpeakingStore" /* 6878 */;
 import UserStore from "UserStore" /* 1385 */;
 import VoiceStateStore from "VoiceStateStore" /* 5918 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19819 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19814 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set, streamParticipants;
@@ -173,7 +173,7 @@ export default function useVoicePanelDockStatus() {
     let participant;
     let tmp;
     let user;
-    const f144577 = (item) => {
+    const f144595 = (item) => {
       const tmp = item !== closure_1_1 && null != participant.getParticipant(batchedStoreListener, item) && null != user.getUser(item);
       return tmp;
     };
@@ -184,11 +184,11 @@ export default function useVoicePanelDockStatus() {
       const self2 = this;
       batchedStoreListener = new tmp3(closure_1_2[11]).BatchedStoreListener(items, function update() {
         const speakers = closure_2_8.getSpeakers();
-        let tmp = closure_2_14(batchedStoreListener, speakers.filter(f144577));
+        let tmp = closure_2_14(batchedStoreListener, speakers.filter(f144595));
       });
       batchedStoreListener.attach("useVoicePanelDockStatus.speakers");
       let speakers = closure_1_8.getSpeakers();
-      closure_1_14(tmp, speakers.filter(f144577));
+      closure_1_14(tmp, speakers.filter(f144595));
       return () => batchedStoreListener.detach();
     }
   }, items4);

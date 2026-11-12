@@ -1,10 +1,10 @@
-// Module ID: 9160
-// Function ID: 9161
+// Module ID: 9159
+// Function ID: 9160
 // Name: useIsStickerReplyEnabled
 // Dependencies: [5155, 5175, 1385, 1072, 7223, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 9160 (useIsStickerReplyEnabled)
+// Module 9159 (useIsStickerReplyEnabled)
 import Constants from "Constants" /* 1072 */;
 import ThreadHooks from "ThreadHooks" /* 7223 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;

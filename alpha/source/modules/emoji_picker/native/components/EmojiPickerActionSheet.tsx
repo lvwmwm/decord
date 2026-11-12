@@ -1,10 +1,10 @@
-// Module ID: 9479
-// Function ID: 9480
+// Module ID: 9478
+// Function ID: 9479
 // Name: EmojiPickerActionSheet
-// Dependencies: [32, 19, 17, 1385, 9480, 1072, 1388, 21, 5243, 575, 5857, 1652, 9481, 5850, 1627, 1377, 7852, 7871, 9487, 5489, 9477, 9488, 5866, 1113, 7759, 9490, 2171, 9505, 2118, 5491, 5492, 11185, 5503, 5445, 11194, 11237, 11254, 2]
+// Dependencies: [32, 19, 17, 1385, 9479, 1072, 1388, 21, 5243, 575, 5857, 1652, 9480, 5850, 1627, 1377, 7852, 7871, 9486, 5489, 9476, 9487, 5866, 1113, 7759, 9489, 2171, 9504, 2118, 5491, 5492, 11179, 5503, 5445, 11188, 11231, 11248, 2]
 // Exports: default
 
-// Module 9479 (EmojiPickerActionSheet)
+// Module 9478 (EmojiPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,10 +13,10 @@ import EmojiConstants from "EmojiConstants" /* 1388 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import SearchBar2 from "SearchBar" /* 7759 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9477 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9480 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 9481 */;
-import BurstReactionToggleDefault from "BurstReactionToggle" /* 9490 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9476 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9479 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 9480 */;
+import BurstReactionToggleDefault from "BurstReactionToggle" /* 9489 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -33,7 +33,7 @@ let obj6;
 let obj7;
 let tmp5;
 let unpackModuleId;
-const DoubleTapReminderToast = tmp5(9488);
+const DoubleTapReminderToast = tmp5(9487);
 let react = react_mod;
 const View = react_native.View;
 const EmojiPickerSource = EmojiPickerListConstants.EmojiPickerSource;

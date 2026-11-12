@@ -1,16 +1,16 @@
-// Module ID: 11996
-// Function ID: 11997
+// Module ID: 11990
+// Function ID: 11991
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 5185, 1385, 10833, 21, 504, 5309, 11977, 8072, 1113, 7569, 7567, 9091, 7680, 11997, 2]
+// Dependencies: [32, 19, 5185, 1385, 10827, 21, 504, 5309, 11971, 8072, 1113, 7569, 7567, 9090, 7680, 11991, 2]
 // Exports: default
 
-// Module 11996 (StrangerDangerMoreTipsModalActionItems)
+// Module 11990 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5309 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8072 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10833 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11977 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10827 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11971 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;

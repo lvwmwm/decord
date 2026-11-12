@@ -1,9 +1,9 @@
-// Module ID: 17807
-// Function ID: 17808
+// Module ID: 17802
+// Function ID: 17803
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
-// Dependencies: [19, 17, 5244, 1072, 21, 1652, 5830, 5876, 5877, 5243, 575, 7852, 7871, 9513, 10891, 5873, 1113, 1187, 504, 9364, 2]
+// Dependencies: [19, 17, 5244, 1072, 21, 1652, 5830, 5876, 5877, 5243, 575, 7852, 7871, 9512, 10885, 5873, 1113, 1187, 504, 9363, 2]
 
-// Module 17807 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 17802 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
@@ -11,9 +11,9 @@ import spring_spring from "spring/spring" /* 5876 */;
 import springPresets from "springPresets" /* 5877 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9364 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9363 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9512 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10885 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;

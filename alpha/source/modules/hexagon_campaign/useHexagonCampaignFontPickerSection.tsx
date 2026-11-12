@@ -1,10 +1,10 @@
-// Module ID: 17845
-// Function ID: 17846
+// Module ID: 17840
+// Function ID: 17841
 // Name: useHexagonCampaignFontPickerSection
-// Dependencies: [19, 5268, 1394, 17842, 5273, 16967, 5278, 2]
+// Dependencies: [19, 5268, 1394, 17837, 5273, 16962, 5278, 2]
 // Exports: useHexagonCampaignFontPickerSection
 
-// Module 17845 (useHexagonCampaignFontPickerSection)
+// Module 17840 (useHexagonCampaignFontPickerSection)
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
 import react from "react" /* 19 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
@@ -27,7 +27,7 @@ export function useHexagonCampaignFontPickerSection(DisplayNameStylesFontPickerS
     flag = false;
   }
   let visibleFontOrder;
-  const obj2 = visibleFontOrder(17842);
+  const obj2 = visibleFontOrder(17837);
   visibleFontOrder = obj2.useVisibleFontOrder({ includeCampaignFonts: true });
   const obj4 = visibleFontOrder(5273);
   const hexagonCampaignPerkAvailability = obj4.useHexagonCampaignPerkAvailability(constants.DISPLAY_NAME_STYLE, DisplayNameStylesFontPickerSheet);
@@ -44,11 +44,11 @@ export function useHexagonCampaignFontPickerSection(DisplayNameStylesFontPickerS
   if (hasItem) {
     hasItem = visibleFontOrder.includes(closure_3);
   }
-  const useTrackHexagonCampaignContentViewed = visibleFontOrder(16967).useTrackHexagonCampaignContentViewed;
-  visibleFontOrder(16967);
+  const useTrackHexagonCampaignContentViewed = visibleFontOrder(16962).useTrackHexagonCampaignContentViewed;
+  visibleFontOrder(16962);
   const DISPLAY_NAME_STYLES_SETTINGS = tmp(5278).QuestContent.DISPLAY_NAME_STYLES_SETTINGS;
   let tmp8 = hasItem;
-  const FONT_PICKER = tmp(16967).HexagonCampaignContentSurface.FONT_PICKER;
+  const FONT_PICKER = tmp(16962).HexagonCampaignContentSurface.FONT_PICKER;
   if (hasItem) {
     tmp8 = !isTryItOut;
   }

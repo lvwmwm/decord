@@ -1,14 +1,14 @@
-// Module ID: 10438
-// Function ID: 10439
+// Module ID: 10436
+// Function ID: 10437
 // Name: LanguageIcon
-// Dependencies: [19, 21, 575, 5956, 10439, 2]
+// Dependencies: [19, 21, 575, 5956, 10437, 2]
 // Exports: LanguageIcon
 
-// Module 10438 (LanguageIcon)
+// Module 10436 (LanguageIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10439 */;
+import AssetRegistry from "AssetRegistry" /* 10437 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 13363
-// Function ID: 13364
+// Module ID: 13357
+// Function ID: 13358
 // Name: AppLauncherBackButton
 // Dependencies: [19, 21, 1500, 7922, 7432, 7484, 1113, 2]
 // Exports: default
 
-// Module 13363 (AppLauncherBackButton)
+// Module 13357 (AppLauncherBackButton)
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1500 */;
 import IconButton2 from "IconButton" /* 7922 */;

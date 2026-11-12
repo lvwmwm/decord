@@ -1,10 +1,10 @@
-// Module ID: 10563
-// Function ID: 10564
+// Module ID: 10561
+// Function ID: 10562
 // Name: SecureFramesTracking
 // Dependencies: [5092, 1072, 6004, 8480, 1252, 2]
 // Exports: trackE2EECallVerificationCopied, trackE2EECallVerificationShareClicked, trackE2EEPublicKeyMismatch, trackE2EESettingsDeviceDelete, trackE2EESettingsUserDelete, trackE2EEStreamVerificationCopied, trackE2EEStreamVerificationShareClicked, trackE2EEUserVerificationCopied, trackE2EEUserVerificationFailed, trackE2EEUserVerificationShareClicked, trackE2EEUserVerificationViewed, trackE2EEUserVerified, trackRTCPanelViewed
 
-// Module 10563 (SecureFramesTracking)
+// Module 10561 (SecureFramesTracking)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;

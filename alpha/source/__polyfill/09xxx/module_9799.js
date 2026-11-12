@@ -1,28 +1,17 @@
 // Module ID: 9799
 // Function ID: 9800
 // Dependencies: []
-// Exports: isSentryRequestUrl
+// Exports: parameterize
 
 // Module 9799
 
-export function isSentryRequestUrl(arr, getDsn) {
-  const tmp = getDsn && getDsn.getDsn();
-  arr = getDsn && getDsn.getOptions().tunnel;
-  let tmp2 = tmp && arr.includes(tmp.host);
-  if (!tmp2) {
-    let flag = false;
-    if (arr) {
-      let substr = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr = arr.slice(0, -1);
-      }
-      let substr1 = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr1 = arr.slice(0, -1);
-      }
-      flag = substr === substr1;
-    }
-    tmp2 = flag;
-  }
-  return tmp2;
+export function parameterize(join) {
+  const substr = [...arguments].slice();
+  const items = [join, ...substr];
+  const string = new String(String.raw.apply(items));
+  const str = join.join("\0");
+  const str2 = str.replace(/%/g, "%%");
+  string.__sentry_template_string__ = str2.replace(/\0/g, "%s");
+  string.__sentry_template_values__ = substr;
+  return string;
 }

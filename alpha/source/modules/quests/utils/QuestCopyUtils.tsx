@@ -1,15 +1,15 @@
-// Module ID: 10088
-// Function ID: 10089
+// Module ID: 10087
+// Function ID: 10088
 // Name: QuestCopyUtils
-// Dependencies: [5275, 1113, 5282, 10068, 10071, 7877, 2]
+// Dependencies: [5275, 1113, 5282, 10067, 10070, 7877, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 10088 (QuestCopyUtils)
+// Module 10087 (QuestCopyUtils)
 import intl7 from "intl" /* 1113 */;
 import AdCreativeType from "AdCreativeType" /* 5282 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import captureAdUserAction from "captureAdUserAction" /* 10068 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10071 */;
+import captureAdUserAction from "captureAdUserAction" /* 10067 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10070 */;
 import QuestConstants from "QuestConstants" /* 5275 */;
 import size from "module_2" /* 2 */;
 

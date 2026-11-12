@@ -1,10 +1,10 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15364
+// Function ID: 15365
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2186, 5155, 5114, 7896, 1072, 1498, 21, 5243, 5839, 575, 5866, 8479, 1113, 15368, 504, 7401, 11, 11679, 7654, 15369, 1187, 7587, 7852, 15370, 5489, 5430, 1099, 7521, 5438, 1625, 8410, 15371, 5873, 7895, 2]
+// Dependencies: [19, 17, 2186, 5155, 5114, 7896, 1072, 1498, 21, 5243, 5839, 575, 5866, 8479, 1113, 15365, 504, 7401, 11, 11673, 7654, 15366, 1187, 7587, 7852, 15367, 5489, 5430, 1099, 7521, 5438, 1625, 8410, 15368, 5873, 7895, 2]
 // Exports: default
 
-// Module 15367 (UserProfileAboutMeCard)
+// Module 15364 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,9 +18,9 @@ import Text_Text from "Text/Text" /* 5866 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7587 */;
 import UserProfileCardDefault from "UserProfileCard" /* 7895 */;
 import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8479 */;
-import BioTextDefault from "BioText" /* 15368 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 15369 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 15371 */;
+import BioTextDefault from "BioText" /* 15365 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 15366 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 15368 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
@@ -193,7 +193,7 @@ function MemberJoinDates(userId) {
   const items3 = [closure_11(Heading, obj5), ];
   const obj6 = { style: items4, children: items5 };
   items4 = [tmp.memberJoinDates, { columnGap }];
-  const obj7 = { themeType, icon: closure_11(userId(11679).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1113).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
+  const obj7 = { themeType, icon: closure_11(userId(11673).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1113).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
   intl2 = tmp4(1113).intl;
   items5 = [closure_11(TextWithIcon, obj7), ];
   let tmp15Result = null != stateFromStores1 && null != createdAtDate2;

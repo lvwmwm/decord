@@ -1,9 +1,9 @@
-// Module ID: 19840
-// Function ID: 19841
+// Module ID: 19835
+// Function ID: 19836
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 2162, 5097, 5092, 5920, 21, 5243, 575, 10752, 1113, 5874, 7840, 504, 5891, 10541, 7932, 11924, 6288, 19841, 6274, 7973, 19735, 19838, 6886, 6880, 12958, 5866, 7372, 11891, 12865, 7953, 11192, 1093, 19837, 19809, 2]
+// Dependencies: [19, 17, 2162, 5097, 5092, 5920, 21, 5243, 575, 10746, 1113, 5874, 7840, 504, 5891, 10539, 7932, 11918, 6288, 19836, 6274, 7973, 19730, 19833, 6886, 6880, 12952, 5866, 7372, 11885, 12859, 7953, 11186, 1093, 19832, 19804, 2]
 
-// Module 19840 (VoicePanelTitleButton)
+// Module 19835 (VoicePanelTitleButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -18,14 +18,14 @@ import GroupIcon2 from "GroupIcon" /* 7372 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7840 */;
 import native from "native" /* 7932 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 7973 */;
-import ShieldLockIcon2 from "ShieldLockIcon" /* 10752 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11924 */;
-import useStageSummaryDefault from "useStageSummary" /* 12865 */;
-import MicrophoneIcon2 from "MicrophoneIcon" /* 12958 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 19735 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19809 */;
-import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19838 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19841 */;
+import ShieldLockIcon2 from "ShieldLockIcon" /* 10746 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11918 */;
+import useStageSummaryDefault from "useStageSummary" /* 12859 */;
+import MicrophoneIcon2 from "MicrophoneIcon" /* 12952 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 19730 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19804 */;
+import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19833 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19836 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import StageInstanceStore from "StageInstanceStore" /* 5097 */;
@@ -65,7 +65,7 @@ function ChannelButton(channelId) {
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   let str = useChannelNameDefault(stateFromStores);
-  const obj2 = channelId(10541);
+  const obj2 = channelId(10539);
   const isCallSecureFramesVerified = obj2.useIsCallSecureFramesVerified({ channelId });
   const obj3 = { accessibilityRole: "button", accessibilityHint: intl.string(channelId(1113).t["Y2b7+e"]), text: str, icon: tmp3Result, iconOpticalOffsetMargin: -nativeDefault.space.PX_4, iconPosition: "end", onPress, maxFontSizeMultiplier: 2 };
   const HeaderButton = channelId(7932).HeaderButton;
@@ -185,7 +185,7 @@ function StageButton(channelId) {
   const obj2 = channelId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => ChannelStore.getChannel(channelId));
   const tmp6 = useChannelNameDefault(stateFromStores1);
-  const obj3 = channelId(11891);
+  const obj3 = channelId(11885);
   const isStageUnifiedCall = obj3.useIsStageUnifiedCall(stateFromStores1, "VoicePanelTitleButton");
   let topic;
   const tmp8 = useStageSummaryDefault(channelId);
@@ -226,11 +226,11 @@ const memoResult = react.memo(function VoicePanelTitleButton() {
   let channelId;
   let channelType;
   let focused;
-  const context = react.useContext(channelId(11924));
+  const context = react.useContext(channelId(11918));
   const guildId = context.guildId;
   channelId = context.channelId;
   ({ channelType, focused } = context);
-  let obj = guildId(11192);
+  let obj = guildId(11186);
   const derivedStateFromSharedValue = obj.useDerivedStateFromSharedValue(focused, (id) => {
     id = undefined;
     if (id != null) {
@@ -239,7 +239,7 @@ const memoResult = react.memo(function VoicePanelTitleButton() {
     return id;
   });
   const GUILD_STAGE_VOICE = guildId(1093).ChannelTypes.GUILD_STAGE_VOICE;
-  const tmp3 = channelId(19837)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(19832)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = react.useCallback(() => {
     const obj = VoicePanelSettingsActionCreators;

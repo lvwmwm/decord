@@ -1,20 +1,20 @@
-// Module ID: 10713
-// Function ID: 10714
+// Module ID: 10707
+// Function ID: 10708
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 5461, 1072, 10714, 21, 5243, 575, 5830, 9915, 10692, 10663, 5866, 1113, 2717, 10633, 10655, 10715, 10716, 10660, 2]
+// Dependencies: [19, 17, 5461, 1072, 10708, 21, 5243, 575, 5830, 9914, 10686, 10656, 5866, 1113, 2717, 10631, 10648, 10709, 10710, 10653, 2]
 // Exports: default
 
-// Module 10713 (GuildPowerupsLevelCard)
+// Module 10707 (GuildPowerupsLevelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9915 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 10633 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 10655 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 10660 */;
-import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 10714 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 10715 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9914 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 10631 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 10648 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 10653 */;
+import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 10708 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 10709 */;
 import react from "react" /* 19 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5461 */;
 import Constants from "Constants" /* 1072 */;
@@ -41,7 +41,7 @@ let size;
 let size1;
 let tmp2;
 let unpackModuleId;
-const GuildPowerupsCardDefault = tmp2(10716);
+const GuildPowerupsCardDefault = tmp2(10710);
 function GuildLevelPowerupHeader(arg0) {
   let BoostGemIcon;
   let active;

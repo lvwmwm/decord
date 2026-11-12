@@ -1,14 +1,14 @@
-// Module ID: 12586
-// Function ID: 12587
+// Module ID: 12580
+// Function ID: 12581
 // Name: StampIcon
-// Dependencies: [19, 21, 575, 5956, 12587, 2]
+// Dependencies: [19, 21, 575, 5956, 12581, 2]
 // Exports: StampIcon
 
-// Module 12586 (StampIcon)
+// Module 12580 (StampIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 12587 */;
+import AssetRegistry from "AssetRegistry" /* 12581 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 10066
-// Function ID: 10067
+// Module ID: 10065
+// Function ID: 10066
 // Name: QuestActionCreators
-// Dependencies: [5, 8739, 10067, 6856, 6147, 6893, 8742, 8744, 5275, 1072, 5278, 1282, 572, 6695, 1113, 8751, 1242, 6788, 1260, 10068, 10071, 5282, 10072, 8738, 6826, 6833, 10073, 8598, 8762, 5304, 10074, 10075, 10076, 10092, 8740, 10093, 1252, 8715, 10094, 10078, 1089, 10095, 2]
+// Dependencies: [5, 8738, 10066, 6856, 6147, 6893, 8741, 8743, 5275, 1072, 5278, 1282, 572, 6695, 1113, 8750, 1242, 6788, 1260, 10067, 10070, 5282, 10071, 8737, 6826, 6833, 10072, 8598, 8761, 5304, 10073, 10074, 10075, 10091, 8739, 10092, 1252, 8714, 10093, 10077, 1089, 10094, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 10066 (QuestActionCreators)
+// Module 10065 (QuestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
@@ -14,19 +14,19 @@ import QuestTypes from "QuestTypes" /* 5278 */;
 import AdCreativeType from "AdCreativeType" /* 5282 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6788 */;
 import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8598 */;
-import QuestDataUtils from "QuestDataUtils" /* 8738 */;
-import VideoQuestUIStore2 from "VideoQuestUIStore" /* 8744 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 10067 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 10068 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10071 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 10072 */;
-import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 10094 */;
+import QuestDataUtils from "QuestDataUtils" /* 8737 */;
+import VideoQuestUIStore2 from "VideoQuestUIStore" /* 8743 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 10066 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 10067 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10070 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 10071 */;
+import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 10093 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8739 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8738 */;
 import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6856 */;
 import NetworkStore from "NetworkStore" /* 6147 */;
 import SortedGuildStore from "SortedGuildStore" /* 6893 */;
-import QuestStore from "QuestStore" /* 8742 */;
+import QuestStore from "QuestStore" /* 8741 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

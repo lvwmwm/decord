@@ -1,24 +1,24 @@
-// Module ID: 17122
-// Function ID: 17123
+// Module ID: 17117
+// Function ID: 17118
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 9136, 1072, 21, 5243, 575, 10749, 17123, 17130, 5076, 7379, 12317, 1113, 17131, 17091, 17132, 2]
+// Dependencies: [17, 9135, 1072, 21, 5243, 575, 10743, 17118, 17125, 5076, 7379, 12311, 1113, 17126, 17086, 17127, 2]
 
-// Module 17122 (AccountAgeGroupSetting)
+// Module 17117 (AccountAgeGroupSetting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import dismissible_content from "dismissible_content" /* 5076 */;
 import TableRow from "TableRow" /* 7379 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10749 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 17091 */;
-import AgeNoticeLazy from "AgeNoticeLazy" /* 17123 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 17130 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10743 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 17086 */;
+import AgeNoticeLazy from "AgeNoticeLazy" /* 17118 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 17125 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 17131 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 17126 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

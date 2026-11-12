@@ -1,12 +1,9 @@
 // Module ID: 13831
 // Function ID: 13832
-// Dependencies: []
+// Dependencies: [13830]
 
 // Module 13831
-const obj = {
-  parse: function selectorList() {
-    return this.createSingleNodeList(this.SelectorList());
-  }
-};
+import _mod13830 from "module_13830" /* 13830 */;
 
-export default obj;
+
+export default _mod13830;

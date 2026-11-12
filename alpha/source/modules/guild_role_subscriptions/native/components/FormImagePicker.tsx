@@ -1,15 +1,15 @@
-// Module ID: 20579
-// Function ID: 20580
+// Module ID: 20574
+// Function ID: 20575
 // Name: FormImagePicker
-// Dependencies: [5, 19, 17, 21, 5243, 575, 8813, 1446, 8385, 1113, 5957, 13093, 10838, 5866, 5873, 2]
+// Dependencies: [5, 19, 17, 21, 5243, 575, 8812, 1446, 8385, 1113, 5957, 13087, 10832, 5866, 5873, 2]
 // Exports: default
 
-// Module 20579 (FormImagePicker)
+// Module 20574 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8385 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8813 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8812 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_6;
-      tmp12Result = closure_6(tmp9(13093).ImagePlusIcon, {});
+      tmp12Result = closure_6(tmp9(13087).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -179,7 +179,7 @@ class ImagePickerIcon {
         standalone = tmp.standaloneIcon;
       }
       items4[1] = standalone;
-      const obj4 = { style: items4, children: tmp10(image(10838).PencilIcon, { color: "#292b30", size: "sm" }) };
+      const obj4 = { style: items4, children: tmp10(image(10832).PencilIcon, { color: "#292b30", size: "sm" }) };
       tmp10Result = tmp10(tmp15, obj4);
     }
     items3[1] = tmp10Result;

@@ -1,10 +1,10 @@
-// Module ID: 9997
-// Function ID: 9998
+// Module ID: 9996
+// Function ID: 9997
 // Name: NameplatePreview
-// Dependencies: [19, 17, 5244, 5155, 21, 5243, 575, 2108, 6964, 9330, 504, 5309, 6687, 1187, 8546, 9442, 9998, 9999, 5866, 2]
+// Dependencies: [19, 17, 5244, 5155, 21, 5243, 575, 2108, 6964, 9329, 504, 5309, 6687, 1187, 8546, 9441, 9997, 9998, 5866, 2]
 // Exports: NameplatePreview
 
-// Module 9997 (NameplatePreview)
+// Module 9996 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

@@ -1,9 +1,9 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 15219
+// Function ID: 15220
 // Name: PremiumMarketingFloatingSubscribeExperiment
 // Dependencies: [1449, 2]
 
-// Module 15222 (PremiumMarketingFloatingSubscribeExperiment)
+// Module 15219 (PremiumMarketingFloatingSubscribeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

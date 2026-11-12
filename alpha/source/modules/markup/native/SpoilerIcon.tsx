@@ -1,10 +1,10 @@
-// Module ID: 14511
-// Function ID: 14512
+// Module ID: 14507
+// Function ID: 14508
 // Name: SpoilerIcon
 // Dependencies: [19, 21, 8197, 2]
 // Exports: default
 
-// Module 14511 (SpoilerIcon)
+// Module 14507 (SpoilerIcon)
 import inlineStyles from "inlineStyles" /* 8197 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,60 +1,30 @@
 // Module ID: 13782
 // Function ID: 13783
 // Name: tokenize
-// Dependencies: [13730]
+// Dependencies: [13726, 13722]
 
 // Module 13782 (tokenize)
-import tokenize from "tokenize" /* 13730 */;
+import keys2 from "keys2" /* 13722 */;
+import tokenize from "tokenize" /* 13726 */;
 
 let obj2;
-const Ident = tokenize.TYPE.Ident;
+const Dimension = tokenize.TYPE.Dimension;
 let obj = {
-  name: "Combinator",
+  name: "Dimension",
   structure: obj2,
   parse() {
-    let scanner3;
-    const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const source = this.scanner.source;
-    const charCodeAtResult = source.charCodeAt(this.scanner.tokenStart);
-    if (62 !== charCodeAtResult) {
-      if (43 !== charCodeAtResult) {
-        if (126 !== charCodeAtResult) {
-          if (47 === charCodeAtResult) {
-            const iter = self.scanner;
-            iter.next();
-            let tmp5 = self.scanner.tokenType === Ident;
-            if (tmp5) {
-              const scanner = self.scanner;
-              tmp5 = false !== scanner.lookupValue(0, "deep");
-            }
-            if (!tmp5) {
-              self.error("Identifier `deep` is expected");
-            }
-            const iter2 = self.scanner;
-            iter2.next();
-            const scanner2 = self.scanner;
-            if (!scanner2.isDelim(47)) {
-              self.error("Solidus is expected");
-            }
-            const iter3 = self.scanner;
-            iter3.next();
-          } else {
-            self.error("Combinator is expected");
-          }
-        }
-        const obj = { type: "Combinator", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-        scanner3 = self.scanner;
-        return obj;
-      }
-    }
-    const iter4 = self.scanner;
-    iter4.next();
+    const obj = keys2;
+    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
+    this.eat(Dimension);
+    const obj2 = { type: "Dimension", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult), unit: str2.substring(consumeNumberResult, this.scanner.tokenStart) };
+    return obj2;
   },
-  generate(name) {
-    this.chunk(name.name);
+  generate(value) {
+    this.chunk(value.value);
+    this.chunk(value.unit);
   }
 };
-obj2 = { name: String };
+obj2 = { value: String, unit: String };
 
 export default obj;

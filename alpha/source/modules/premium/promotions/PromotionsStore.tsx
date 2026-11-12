@@ -1,21 +1,21 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9556
+// Function ID: 9557
 // Name: PromotionsStore
-// Dependencies: [2186, 1231, 9558, 1385, 1386, 9559, 9603, 2158, 9604, 12, 504, 9560, 9561, 9612, 572, 2]
+// Dependencies: [2186, 1231, 9557, 1385, 1386, 9558, 9602, 2158, 9603, 12, 504, 9559, 9560, 9611, 572, 2]
 
-// Module 9557 (PromotionsStore)
+// Module 9556 (PromotionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9560 */;
-import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9604 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9612 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9559 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9603 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9611 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9558 */;
+import PromotionRecord from "PromotionRecord" /* 9557 */;
 import UserStore from "UserStore" /* 1385 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1386 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9559 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9558 */;
 import FunctionUtils from "FunctionUtils" /* 2158 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const require = globalThis.__r;
 let closure_14, hasBogoReward;
 
 let tmp;
-const MarketingSurfaceType = tmp(9561);
+const MarketingSurfaceType = tmp(9560);
 function createEmptyPromotionsByType() {
   return { [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
 }

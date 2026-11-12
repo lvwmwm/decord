@@ -1,10 +1,10 @@
-// Module ID: 10881
-// Function ID: 10882
+// Module ID: 10875
+// Function ID: 10876
 // Name: FavoritesActionCreators
-// Dependencies: [5, 5084, 5096, 502, 5092, 5114, 5175, 5146, 5286, 5095, 5105, 1072, 1083, 5117, 1099, 1196, 1227, 12, 10882, 10884, 6205, 1113, 5073, 11, 10908, 10909, 10910, 1089, 5929, 5076, 2]
+// Dependencies: [5, 5084, 5096, 502, 5092, 5114, 5175, 5146, 5286, 5095, 5105, 1072, 1083, 5117, 1099, 1196, 1227, 12, 10876, 10878, 6205, 1113, 5073, 11, 10902, 10903, 10904, 1089, 5929, 5076, 2]
 // Exports: addFavoriteCategory, addFavoriteChannels, addFavoriteChannelsToCategory, autoAddJoinedThreadToFavorites, pruneInactiveFavoriteThreads, removeFavoriteCategory, resetFavoritesGuild, setFavoriteCategoriesCollapsed, setFavoriteChannelNickname, setFavoritesAutoAddJoinedThreads, setFavoritesGuildVisibility, setFavoritesGuildVisibilityFromSettings, setFavoritesPruneInactiveThreads, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 10881 (FavoritesActionCreators)
+// Module 10875 (FavoritesActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1083 */;
@@ -17,9 +17,9 @@ import ChannelRecord from "ChannelRecord" /* 5096 */;
 import FavoritesUtils from "FavoritesUtils" /* 5117 */;
 import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5929 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
-import FavoritesHooks from "FavoritesHooks" /* 10882 */;
-import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10884 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10908 */;
+import FavoritesHooks from "FavoritesHooks" /* 10876 */;
+import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10878 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
@@ -47,7 +47,7 @@ let closure_22;
 let map1;
 let tmp3;
 const router_utils = tmp3(1099);
-const f100045 = (type) => type.type !== closure_1_0(closure_1_2[15]).FavoriteChannelType.CATEGORY;
+const f100052 = (type) => type.type !== closure_1_0(closure_1_2[15]).FavoriteChannelType.CATEGORY;
 function getNextPositionFromChannels(arg0) {
   let num = 0;
   let num2 = 0;
@@ -150,7 +150,7 @@ function cleanupChannelParentId(favoriteChannels, id) {
 }
 function countFavoritesAgainstLimit(arg0) {
   const arr = _modDef12;
-  return arr.filter(arg0, f100045).length;
+  return arr.filter(arg0, f100052).length;
 }
 function getReachedLimit(favoriteChannels, arg1) {
   let canUpsellFavoriteLimit;
@@ -167,7 +167,7 @@ function getReachedLimit(favoriteChannels, arg1) {
     if (arg1 !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
       tmp5 = null;
       const tmp2Result = _modDef12;
-      if (tmp2Result.filter(favoriteChannels, f100045).length >= favoriteLimit) {
+      if (tmp2Result.filter(favoriteChannels, f100052).length >= favoriteLimit) {
         tmp5 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
         const obj3 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
       }
@@ -534,7 +534,7 @@ function removeFavoriteChannel(id, arg1) {
             }
             favoriteChannels = favoriteChannels.favoriteChannels;
             const arr = _modDef12;
-            const result = trackFavoritesGuildRemoveFromFavorites(tmp9, arr.filter(favoriteChannels, f100045).length);
+            const result = trackFavoritesGuildRemoveFromFavorites(tmp9, arr.filter(favoriteChannels, f100052).length);
           }
         }
     };
@@ -789,7 +789,7 @@ obj = function _addFavoriteCategory() {
           if (CATEGORY !== closure_2_0(closure_2_2[15]).FavoriteChannelType.CATEGORY) {
             tmp6 = null;
             const tmp4Result = closure_2_1(closure_2_2[17]);
-            if (tmp4Result.filter(favoriteChannels, f100045).length >= favoriteLimit) {
+            if (tmp4Result.filter(favoriteChannels, f100052).length >= favoriteLimit) {
               tmp6 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
               const obj3 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
             }
@@ -1049,7 +1049,7 @@ export function setFavoritesAutoAddJoinedThreads(arg0) {
               if (CATEGORY !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
                 tmp15 = null;
                 const tmp30Result = _modDef12;
-                if (tmp30Result.filter(favoriteChannels, f100045).length >= favoriteLimit) {
+                if (tmp30Result.filter(favoriteChannels, f100052).length >= favoriteLimit) {
                   tmp15 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
                   obj = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
                 }

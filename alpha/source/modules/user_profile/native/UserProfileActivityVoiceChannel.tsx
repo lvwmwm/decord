@@ -1,10 +1,10 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 15628
+// Function ID: 15629
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 5110, 5175, 1083, 21, 5243, 1377, 7852, 8479, 5505, 15632, 5891, 504, 7952, 7368, 1113, 7654, 7364, 5952, 7897, 5866, 8352, 6837, 5489, 15633, 2118, 8410, 15634, 1187, 2]
+// Dependencies: [17, 5110, 5175, 1083, 21, 5243, 1377, 7852, 8479, 5505, 15629, 5891, 504, 7952, 7368, 1113, 7654, 7364, 5952, 7897, 5866, 8352, 6837, 5489, 15630, 2118, 8410, 15631, 1187, 2]
 // Exports: default
 
-// Module 15631 (UserProfileActivityVoiceChannel)
+// Module 15628 (UserProfileActivityVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1083 */;
 import native from "native" /* 1187 */;
@@ -161,7 +161,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
           return tmp(obj);
         }
       };
-      obj.openLazy(asyncRequire(15633, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
+      obj.openLazy(asyncRequire(15630, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
     },
     children: tmp13(AvatarPile, obj17)
   };

@@ -1,10 +1,10 @@
-// Module ID: 18432
-// Function ID: 18433
+// Module ID: 18427
+// Function ID: 18428
 // Name: PinotMemberSetting
-// Dependencies: [17, 1072, 9136, 21, 5243, 575, 12317, 1113, 3337, 8103, 12247, 2185, 5866, 8094, 2]
+// Dependencies: [17, 1072, 9135, 21, 5243, 575, 12311, 1113, 3337, 8103, 12241, 2185, 5866, 8094, 2]
 // Exports: usePinotDataPrivacySections
 
-// Module 18432 (PinotMemberSetting)
+// Module 18427 (PinotMemberSetting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,11 +13,11 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import _modDef3337 from "module_3337" /* 3337 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import PinotExperiment from "PinotExperiment" /* 8103 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import PinotMemberSettingState from "PinotMemberSettingState" /* 12247 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import PinotMemberSettingState from "PinotMemberSettingState" /* 12241 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

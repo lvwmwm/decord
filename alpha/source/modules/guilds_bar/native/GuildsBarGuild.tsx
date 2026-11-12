@@ -1,17 +1,17 @@
-// Module ID: 18942
-// Function ID: 18943
+// Module ID: 18937
+// Function ID: 18938
 // Name: GuildsBarGuild
-// Dependencies: [19, 5110, 6894, 6997, 5114, 5286, 6893, 18914, 18911, 1072, 21, 5243, 575, 5839, 18923, 18618, 18621, 18943, 504, 7654, 18954, 18955, 6205, 1113, 1252, 18893, 18961, 18915, 18962, 1652, 5876, 5957, 18965, 2]
+// Dependencies: [19, 5110, 6894, 6997, 5114, 5286, 6893, 18909, 18906, 1072, 21, 5243, 575, 5839, 18918, 18613, 18616, 18938, 504, 7654, 18949, 18950, 6205, 1113, 1252, 18888, 18956, 18910, 18957, 1652, 5876, 5957, 18960, 2]
 
-// Module 18942 (GuildsBarGuild)
+// Module 18937 (GuildsBarGuild)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
 import GuildIcon from "GuildIcon" /* 7654 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18911 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18914 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18915 */;
-import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 18962 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18906 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18909 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18910 */;
+import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 18957 */;
 import react_mod from "react" /* 19 */;
 import GuildRecord from "GuildRecord" /* 5110 */;
 import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6894 */;

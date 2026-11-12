@@ -1,9 +1,12 @@
 // Module ID: 13835
 // Function ID: 13836
-// Dependencies: [13834]
+// Dependencies: []
 
 // Module 13835
-import _mod13834 from "module_13834" /* 13834 */;
+const obj = {
+  parse: function compoundSelector() {
+    return this.createSingleNodeList(this.Selector());
+  }
+};
 
-
-export default _mod13834;
+export default obj;

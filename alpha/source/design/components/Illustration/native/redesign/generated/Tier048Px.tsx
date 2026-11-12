@@ -1,10 +1,10 @@
-// Module ID: 15270
-// Function ID: 15271
+// Module ID: 15267
+// Function ID: 15268
 // Name: Tier048Px
-// Dependencies: [19, 21, 8117, 15271, 15272, 15273, 5250, 5957, 2]
+// Dependencies: [19, 21, 8117, 15268, 15269, 15270, 5250, 5957, 2]
 // Exports: Tier048Px, getTier048PxSource, useTier048PxSource
 
-// Module 15270 (Tier048Px)
+// Module 15267 (Tier048Px)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5250 */;
 import FastImageDefault from "FastImage" /* 5957 */;

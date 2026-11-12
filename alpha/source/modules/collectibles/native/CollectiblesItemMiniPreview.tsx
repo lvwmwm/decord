@@ -1,9 +1,9 @@
-// Module ID: 9459
-// Function ID: 9460
+// Module ID: 9458
+// Function ID: 9459
 // Name: CollectiblesItemMiniPreview
-// Dependencies: [19, 17, 8424, 2109, 8425, 8426, 8518, 9422, 21, 575, 5243, 9434, 9446, 5957, 9447, 9425, 2108, 9442, 2]
+// Dependencies: [19, 17, 8424, 2109, 8425, 8426, 8518, 9421, 21, 575, 5243, 9433, 9445, 5957, 9446, 9424, 2108, 9441, 2]
 
-// Module 9459 (CollectiblesItemMiniPreview)
+// Module 9458 (CollectiblesItemMiniPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils from "utils" /* 2108 */;
@@ -13,12 +13,12 @@ import AvatarDecorationRecord from "AvatarDecorationRecord" /* 8424 */;
 import ProfileEffectRecord from "ProfileEffectRecord" /* 8425 */;
 import ProfileFrameRecord from "ProfileFrameRecord" /* 8426 */;
 import ProfileFrameConstants from "ProfileFrameConstants" /* 8518 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9422 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9425 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9434 */;
-import NameplateDefault from "Nameplate" /* 9442 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9446 */;
-import _modDef9447 from "module_9447" /* 9447 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9421 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9424 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9433 */;
+import NameplateDefault from "Nameplate" /* 9441 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9445 */;
+import _modDef9446 from "module_9446" /* 9446 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function CollectiblesItemMiniPreview(arg0) {
     const obj7 = { style: items, children: authStore(View, obj8) };
     obj8 = { style: tmp.profileEffect, accessible: false, importantForAccessibility: "no", children: items1 };
     const obj9 = { source: obj10, style: tmp.sampleProfile, resizeMode: "cover" };
-    obj10 = { uri: _modDef9447 };
+    obj10 = { uri: _modDef9446 };
     const tmp17 = FastImageDefault;
     items1 = [React4(tmp17, obj9), ];
     const obj11 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };

@@ -1,12 +1,12 @@
-// Module ID: 11890
-// Function ID: 11891
+// Module ID: 11884
+// Function ID: 11885
 // Name: VoicePanelUtils
-// Dependencies: [5092, 6008, 6838, 563, 11891, 2]
+// Dependencies: [5092, 6008, 6838, 563, 11885, 2]
 // Exports: useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 11890 (VoicePanelUtils)
+// Module 11884 (VoicePanelUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11891 */;
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11885 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
 import VoicePanelStore from "VoicePanelStore" /* 6838 */;

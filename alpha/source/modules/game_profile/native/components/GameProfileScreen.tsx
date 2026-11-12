@@ -1,22 +1,22 @@
-// Module ID: 10215
-// Function ID: 10216
+// Module ID: 10213
+// Function ID: 10214
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 10216, 21, 5243, 575, 5873, 1113, 8493, 10217, 5949, 10219, 9467, 9314, 1652, 10214, 10220, 5485, 1705, 10221, 10226, 10243, 5489, 10245, 5503, 5507, 10246, 10244, 10248, 10430, 10440, 10441, 5838, 2]
+// Dependencies: [32, 19, 17, 10214, 21, 5243, 575, 5873, 1113, 8493, 10215, 5949, 10217, 9466, 9313, 1652, 10212, 10218, 5485, 1705, 10219, 10224, 10241, 5489, 10243, 5503, 5507, 10244, 10242, 10246, 10428, 10438, 10439, 5838, 2]
 // Exports: default
 
-// Module 10215 (GameProfileScreen)
+// Module 10213 (GameProfileScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5489 */;
 import components_Button_Button from "components/Button/Button" /* 5873 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10214 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 10226 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 10245 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10212 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10217 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 10224 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 10243 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 10216 */;
+import GameProfileStore from "GameProfileStore" /* 10214 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

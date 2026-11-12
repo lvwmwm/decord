@@ -1,14 +1,14 @@
-// Module ID: 17689
-// Function ID: 17690
+// Module ID: 17684
+// Function ID: 17685
 // Name: useIsQuestDockModeActiveOrExiting
-// Dependencies: [19, 17585, 17586, 1652, 5876, 11192, 2]
+// Dependencies: [19, 17580, 17581, 1652, 5876, 11186, 2]
 // Exports: default
 
-// Module 17689 (useIsQuestDockModeActiveOrExiting)
+// Module 17684 (useIsQuestDockModeActiveOrExiting)
 import _mod1652 from "module_1652" /* 1652 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11192 */;
-import QuestDockConstants from "QuestDockConstants" /* 17585 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 17586 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11186 */;
+import QuestDockConstants from "QuestDockConstants" /* 17580 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 17581 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

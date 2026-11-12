@@ -1,16 +1,16 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12342
+// Function ID: 12343
 // Name: useFetchSocialLayerStorefrontEmbedWishlist
-// Dependencies: [19, 7288, 9397, 502, 1385, 504, 8417, 9404, 9403, 2]
+// Dependencies: [19, 7288, 9396, 502, 1385, 504, 8417, 9403, 9402, 2]
 // Exports: useFetchSocialLayerStorefrontEmbedWishlist
 
-// Module 12348 (useFetchSocialLayerStorefrontEmbedWishlist)
+// Module 12342 (useFetchSocialLayerStorefrontEmbedWishlist)
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8417 */;
-import WishlistFetchSource from "WishlistFetchSource" /* 9403 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9404 */;
+import WishlistFetchSource from "WishlistFetchSource" /* 9402 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9403 */;
 import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7288 */;
-import WishlistStore from "WishlistStore" /* 9397 */;
+import WishlistStore from "WishlistStore" /* 9396 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let closure_8 = { user: "a", profile: "flexDirection", wishlistId: "st", wishlist: "192px", updatedAt: null, storedUpdatedAt: "\u{1F6B6}\u200D\u2642\uFE0F\u200D\u27A1\uFE0F", fetching: true, error: 15.1 };
+let closure_8 = { user: "a", profile: "flexDirection", wishlistId: "st", wishlist: 331, updatedAt: null, storedUpdatedAt: 1, fetching: "heading-md/semibold", error: "mobile-text-heading-primary" };
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/useFetchSocialLayerStorefrontEmbedWishlist.tsx");
 
 export function useFetchSocialLayerStorefrontEmbedWishlist(arg0) {

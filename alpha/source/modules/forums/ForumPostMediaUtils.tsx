@@ -1,10 +1,10 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 9044
+// Function ID: 9045
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 8805, 5092, 6309, 1385, 1072, 1090, 6298, 5068, 1403, 1378, 1380, 6313, 2116, 6320, 11, 2]
+// Dependencies: [19, 8804, 5092, 6309, 1385, 1072, 1090, 6298, 5068, 1403, 1378, 1380, 6313, 2116, 6320, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 9045 (ForumPostMediaUtils)
+// Module 9044 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
@@ -14,7 +14,7 @@ import UserSettings from "UserSettings" /* 5068 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 6298 */;
 import InteractionComponentUtils from "InteractionComponentUtils" /* 6313 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 8805 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 8804 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import MessageStore from "MessageStore" /* 6309 */;
 import UserStore from "UserStore" /* 1385 */;

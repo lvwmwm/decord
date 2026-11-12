@@ -1,10 +1,10 @@
-// Module ID: 17348
-// Function ID: 17349
+// Module ID: 17343
+// Function ID: 17344
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1072, 21, 5243, 575, 10953, 7379, 5866, 1113, 2685, 17305, 1499, 7680, 2]
+// Dependencies: [17, 1072, 21, 5243, 575, 10947, 7379, 5866, 1113, 2685, 17300, 1499, 7680, 2]
 // Exports: default
 
-// Module 17348 (FamilyCenterParentalControlsScreenTime)
+// Module 17343 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -31,9 +31,9 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(10953);
+  let obj = rule(10947);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(10953);
+  let obj2 = rule(10947);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "body-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
   const TableRow = rule(7379).TableRow;
   Text = rule(5866).Text;

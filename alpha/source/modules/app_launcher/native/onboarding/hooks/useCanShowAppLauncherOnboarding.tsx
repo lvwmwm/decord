@@ -1,10 +1,10 @@
-// Module ID: 13276
-// Function ID: 13277
+// Module ID: 13270
+// Function ID: 13271
 // Name: useCanShowAppLauncherOnboarding
-// Dependencies: [32, 5092, 5473, 1385, 13277, 13278, 6282, 1089, 504, 11, 5076, 9494, 5285, 2]
+// Dependencies: [32, 5092, 5473, 1385, 13271, 13272, 6282, 1089, 504, 11, 5076, 9493, 5285, 2]
 // Exports: default
 
-// Module 13276 (useCanShowAppLauncherOnboarding)
+// Module 13270 (useCanShowAppLauncherOnboarding)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
@@ -12,8 +12,8 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5473 */;
 import UserStore from "UserStore" /* 1385 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 13277 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 13278 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 13271 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 13272 */;
 import size from "module_2" /* 2 */;
 
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
@@ -70,7 +70,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   if (!tmp16) {
     items4.push(channelId(5076).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
   }
-  const tmp2Result11 = channelId(9494);
+  const tmp2Result11 = channelId(9493);
   const first = _slicedToArray(tmp2Result11.useSelectedDismissibleContent(items4), 1)[0];
   const APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING = tmp2(5076).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING;
   const items5 = [AppLauncherOnboardingStore];

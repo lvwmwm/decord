@@ -1,10 +1,10 @@
-// Module ID: 10582
-// Function ID: 10583
+// Module ID: 10580
+// Function ID: 10581
 // Name: useIsEmptyRTCConnection
 // Dependencies: [502, 6008, 6739, 504, 2]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 10582 (useIsEmptyRTCConnection)
+// Module 10580 (useIsEmptyRTCConnection)
 import get_initialized from "get initialized" /* 504 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;

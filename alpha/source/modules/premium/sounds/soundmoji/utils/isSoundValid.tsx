@@ -1,10 +1,10 @@
-// Module ID: 15879
-// Function ID: 15880
+// Module ID: 15874
+// Function ID: 15875
 // Name: isSoundValid
 // Dependencies: [5092, 5175, 1385, 6308, 1083, 2171, 2]
 // Exports: default
 
-// Module 15879 (isSoundValid)
+// Module 15874 (isSoundValid)
 import Constants from "Constants" /* 1083 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
 import SoundboardConstants from "SoundboardConstants" /* 6308 */;

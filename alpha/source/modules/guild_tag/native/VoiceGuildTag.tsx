@@ -1,10 +1,10 @@
-// Module ID: 18721
-// Function ID: 18722
+// Module ID: 18716
+// Function ID: 18717
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1385, 8344, 21, 1377, 5243, 575, 504, 8343, 10587, 5866, 2]
+// Dependencies: [19, 17, 1385, 8344, 21, 1377, 5243, 575, 504, 8343, 10585, 5866, 2]
 // Exports: default
 
-// Module 18721 (VoiceGuildTag)
+// Module 18716 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildTagConstants from "GuildTagConstants" /* 8344 */;
@@ -67,7 +67,7 @@ export default function VoiceGuildTagChiplet(userId) {
       const guildTagBadgeUrl = tmp2Result.getGuildTagBadgeUrl(guildId, tmp8, GuildTagBadgeSize.SIZE_12);
       const obj4 = { source: obj5, size: GuildTagBadgeSize.SIZE_12 };
       obj5 = { uri: guildTagBadgeUrl };
-      items2 = [closure_5(userId(10587).GuildTagBadge, obj4), ];
+      items2 = [closure_5(userId(10585).GuildTagBadge, obj4), ];
       const obj6 = { variant: "body-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
       items2[1] = closure_5(userId(5866).Text, obj6);
       return closure_5(View, obj2);

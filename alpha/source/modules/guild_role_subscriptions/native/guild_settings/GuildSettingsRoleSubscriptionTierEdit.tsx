@@ -1,10 +1,10 @@
-// Module ID: 20619
-// Function ID: 20620
+// Module ID: 20614
+// Function ID: 20615
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 5168, 20577, 17709, 1072, 5089, 21, 5243, 575, 1499, 20588, 20584, 7205, 7680, 5866, 5873, 5977, 7351, 20615, 20613, 20591, 17716, 20573, 13454, 20620, 1113, 17729, 5951, 7427, 7363, 7917, 5076, 20621, 2118, 10501, 11565, 11190, 2]
+// Dependencies: [32, 19, 17, 5168, 20572, 17704, 1072, 5089, 21, 5243, 575, 1499, 20583, 20579, 7205, 7680, 5866, 5873, 5977, 7351, 20610, 20608, 20586, 17711, 20568, 13448, 20615, 1113, 17724, 5951, 7427, 7363, 7917, 5076, 20616, 2118, 10499, 11559, 11184, 2]
 // Exports: default
 
-// Module 20619 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 20614 (GuildSettingsRoleSubscriptionTierEdit)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -19,20 +19,20 @@ import TrashIcon2 from "TrashIcon" /* 5977 */;
 import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7205 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7351 */;
 import TableRowGroup from "TableRowGroup" /* 7680 */;
-import ErrorBlockDefault from "ErrorBlock" /* 13454 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17709 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17716 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20573 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20584 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 20588 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 20591 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 20613 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 20615 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 20620 */;
+import ErrorBlockDefault from "ErrorBlock" /* 13448 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17704 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17711 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20568 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20579 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 20583 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 20586 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 20608 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 20610 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 20615 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20577 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20572 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const DismissibleActionSheet = tmp(11565);
+const DismissibleActionSheet = tmp(11559);
 function ArchiveOrDeleteTierSection() {
   let TrashIcon;
   let archiving;
@@ -226,7 +226,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f122395 = (currentScene) => {
+  const f122405 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -306,9 +306,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f122395), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f122405), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f122395), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f122405), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

@@ -1,11 +1,11 @@
 // Module ID: 11455
 // Function ID: 11456
-// Dependencies: [41, 42, 93, 95, 98, 11373, 11374, 11375]
+// Dependencies: [41, 42, 93, 95, 98, 11456, 11365, 11369]
 
 // Module 11455
-import Meridiem from "Meridiem" /* 11373 */;
-import assignSimilarDate from "assignSimilarDate" /* 11374 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11375 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11365 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11369 */;
+import _mod11456 from "module_11456" /* 11456 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +27,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class PTCasualTimeParser {
+class NLTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, PTCasualTimeParser);
-    const obj = _getPrototypeOf(PTCasualTimeParser);
+    _classCallCheck(this, NLTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(NLTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,54 +44,24 @@ class PTCasualTimeParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(PTCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    return /(?:esta\s*)?(manha|manhã|tarde|meia-noite|meio-dia|noite)(?=\W|$)/i;
+    const regExp = new RegExp("(?:binnen|in|binnen de|voor)\\s*(" + _mod11456.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+    return regExp;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      refDate = refDate.refDate;
-      const parsingComponents = refDate.createParsingComponents();
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      if ("tarde" === formatted) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        parsingComponents.imply("hour", 15);
-      } else if ("noite" === formatted) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        parsingComponents.imply("hour", 22);
-      } else {
-        if ("manha" !== formatted) {
-          if ("manh\u00E3" !== formatted) {
-            if ("meia-noite" === formatted) {
-              const _Date = Date;
-              const self = this;
-              const self2 = this;
-              const date = new Date(refDate.getTime());
-              date.setDate(date.getDate() + 1);
-              assignSimilarDate.assignSimilarDate(parsingComponents, date);
-              assignSimilarDate.implySimilarTime(parsingComponents, date);
-              parsingComponents.imply("hour", 0);
-              parsingComponents.imply("minute", 0);
-              parsingComponents.imply("second", 0);
-            } else if ("meio-dia" === formatted) {
-              parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-              parsingComponents.imply("hour", 12);
-            }
-          }
-        }
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-        parsingComponents.imply("hour", 6);
-      }
-      return parsingComponents;
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod11456.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
 
-export default _createClass(PTCasualTimeParser, items);
+export default _createClass(NLTimeUnitWithinFormatParser, items);

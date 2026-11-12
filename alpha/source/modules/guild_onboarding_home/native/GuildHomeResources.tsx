@@ -1,18 +1,18 @@
-// Module ID: 19217
-// Function ID: 19218
+// Module ID: 19212
+// Function ID: 19213
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 5092, 5173, 6309, 5175, 1072, 21, 5243, 575, 504, 9045, 14510, 19218, 8593, 14573, 1411, 7364, 5866, 5994, 5957, 19211, 1099, 1113, 19219, 5873, 2]
+// Dependencies: [19, 17, 5092, 5173, 6309, 5175, 1072, 21, 5243, 575, 504, 9044, 14506, 19213, 8593, 14569, 1411, 7364, 5866, 5994, 5957, 19206, 1099, 1113, 19214, 5873, 2]
 // Exports: default
 
-// Module 19217 (GuildHomeResources)
+// Module 19212 (GuildHomeResources)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8593 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14573 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 19211 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19219 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14569 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 19206 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19214 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildChannelStore from "GuildChannelStore" /* 5173 */;
@@ -58,10 +58,10 @@ function ResourceChannelRow(channelId) {
   const obj3 = channelId(504);
   const stateFromStores2 = obj3.useStateFromStores(items2, () => MessageStore.getMessages(channelId));
   const firstResult = stateFromStores2.first();
-  const obj5 = channelId(9045);
+  const obj5 = channelId(9044);
   const forumPostMediaProperties = obj5.useForumPostMediaProperties(firstResult, false);
   let length;
-  const obj6 = channelId(9045);
+  const obj6 = channelId(9044);
   const firstMediaIsEmbed = obj6.useFirstMediaIsEmbed(firstResult, false);
   if (forumPostMediaProperties != null) {
     length = forumPostMediaProperties.length;
@@ -70,9 +70,9 @@ function ResourceChannelRow(channelId) {
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  const tmp2Result = channelId(14510);
+  const tmp2Result = channelId(14506);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(19218)(firstResult);
+  const tmp11 = stateFromStores(19213)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
@@ -140,9 +140,9 @@ function ResourceChannelRow(channelId) {
             tmp19Result6 = null;
             if (null != first) {
               const obj17 = { channel: stateFromStores, media: first, isEmbed: firstMediaIsEmbed, embedLeftBorderColor: getEmbedColor(firstResult, flag), firstMessageId: id, containerStyle: tmp.thumbnail };
-              const ForumPostMediaThumbnail = tmp2(14510).ForumPostMediaThumbnail;
-              getEmbedColor = tmp2(9045).getEmbedColor;
-              channelId(9045);
+              const ForumPostMediaThumbnail = tmp2(14506).ForumPostMediaThumbnail;
+              getEmbedColor = tmp2(9044).getEmbedColor;
+              channelId(9044);
               if (flag == null) {
                 flag = false;
               }

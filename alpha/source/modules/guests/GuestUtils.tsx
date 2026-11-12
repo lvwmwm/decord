@@ -1,9 +1,9 @@
-// Module ID: 11833
-// Function ID: 11834
+// Module ID: 11827
+// Function ID: 11828
 // Name: GuestUtils
 // Dependencies: [5161, 1403, 7611, 2]
 
-// Module 11833 (GuestUtils)
+// Module 11827 (GuestUtils)
 import FlagUtils from "FlagUtils" /* 1403 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5161 */;
 import size from "module_2" /* 2 */;

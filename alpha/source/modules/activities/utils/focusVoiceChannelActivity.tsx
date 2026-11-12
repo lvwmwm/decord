@@ -1,10 +1,10 @@
-// Module ID: 13941
-// Function ID: 13942
+// Module ID: 13937
+// Function ID: 13938
 // Name: focusVoiceChannelActivity
 // Dependencies: [6953, 1072, 6003, 2]
 // Exports: default
 
-// Module 13941 (focusVoiceChannelActivity)
+// Module 13937 (focusVoiceChannelActivity)
 import Constants from "Constants" /* 1072 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;

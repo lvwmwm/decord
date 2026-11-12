@@ -1,13 +1,13 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 15008
+// Function ID: 15009
 // Name: VoicePanelDockScrim
-// Dependencies: [19, 17, 11948, 21, 11947, 14559, 575, 2]
+// Dependencies: [19, 17, 11942, 21, 11941, 14555, 575, 2]
 
-// Module 15012 (VoicePanelDockScrim)
+// Module 15008 (VoicePanelDockScrim)
 import Fragment from "Fragment" /* 21 */;
-import useVoicePanelDockHeightDefault from "useVoicePanelDockHeight" /* 11947 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11948 */;
-import ChatInputScrimGradient2 from "ChatInputScrimGradient" /* 14559 */;
+import useVoicePanelDockHeightDefault from "useVoicePanelDockHeight" /* 11941 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11942 */;
+import ChatInputScrimGradient2 from "ChatInputScrimGradient" /* 14555 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;

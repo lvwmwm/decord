@@ -1,13 +1,13 @@
-// Module ID: 13628
-// Function ID: 13629
+// Module ID: 13622
+// Function ID: 13623
 // Name: conjurePlanExperienceSections
-// Dependencies: [4079, 13618, 1113, 13619, 2]
+// Dependencies: [4079, 13612, 1113, 13613, 2]
 // Exports: conjurePlanDisplayedSections, conjurePlanExperienceIsApp, conjurePlanFrameFeatures, conjurePlanRequirementGroups, conjurePlanRequirementsSectionId
 
-// Module 13628 (conjurePlanExperienceSections)
+// Module 13622 (conjurePlanExperienceSections)
 import intl3 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
-import conjurePlanFormat from "conjurePlanFormat" /* 13619 */;
+import conjurePlanFormat from "conjurePlanFormat" /* 13613 */;
 import size from "module_2" /* 2 */;
 
 let changes, names;

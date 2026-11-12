@@ -1,15 +1,15 @@
-// Module ID: 14623
-// Function ID: 14624
+// Module ID: 14619
+// Function ID: 14620
 // Name: InviteSuggestionsStore
-// Dependencies: [10179, 8487, 5092, 6881, 5155, 5175, 5185, 1072, 8397, 7011, 7599, 1380, 504, 572, 2]
+// Dependencies: [10177, 8487, 5092, 6881, 5155, 5175, 5185, 1072, 8397, 7011, 7599, 1380, 504, 572, 2]
 
-// Module 14623 (InviteSuggestionsStore)
+// Module 14619 (InviteSuggestionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import sortByMatchScoreDefault from "sortByMatchScore" /* 7011 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 7599 */;
 import InstantInviteUtils from "InstantInviteUtils" /* 8397 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 10179 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 10177 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8487 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6881 */;

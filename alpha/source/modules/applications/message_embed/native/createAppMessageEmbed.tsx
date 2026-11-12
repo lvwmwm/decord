@@ -1,10 +1,10 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14437
+// Function ID: 14438
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1385, 7250, 2162, 1498, 11831, 6992, 14442, 9104, 1113, 14443, 12608, 7249, 12607, 14444, 14445, 1411, 1378, 8731, 12615, 7871, 5922, 5438, 1625, 12674, 7877, 5951, 1380, 2]
+// Dependencies: [32, 1385, 7250, 2162, 1498, 11825, 6992, 14438, 9103, 1113, 14439, 12602, 7249, 12601, 14440, 14441, 1411, 1378, 8730, 12609, 7871, 5922, 5438, 1625, 12668, 7877, 5951, 1380, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 14441 (createAppMessageEmbed)
+// Module 14437 (createAppMessageEmbed)
 import intl7 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
@@ -19,17 +19,17 @@ import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7249 */;
 import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 7250 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import activityBookmarkUtils from "activityBookmarkUtils" /* 8731 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9104 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 11831 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 12607 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 12608 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 12615 */;
-import ApplicationUtils from "ApplicationUtils" /* 12674 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 14442 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 14443 */;
-import getPlayInContext from "getPlayInContext" /* 14444 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 14445 */;
+import activityBookmarkUtils from "activityBookmarkUtils" /* 8730 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9103 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 11825 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 12601 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 12602 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 12609 */;
+import ApplicationUtils from "ApplicationUtils" /* 12668 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 14438 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 14439 */;
+import getPlayInContext from "getPlayInContext" /* 14440 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 14441 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1385 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;

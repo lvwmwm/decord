@@ -1,9 +1,9 @@
-// Module ID: 20739
-// Function ID: 20740
+// Module ID: 20734
+// Function ID: 20735
 // Name: QuestProgressManager
-// Dependencies: [5, 32, 5091, 6956, 2137, 6757, 2156, 6011, 8742, 19736, 5275, 6957, 1089, 8750, 8749, 15141, 5276, 10066, 5278, 8768, 6750, 6749, 7816, 5283, 8765, 6745, 1380, 6748, 8763, 2]
+// Dependencies: [5, 32, 5091, 6956, 2137, 6757, 2156, 6011, 8741, 19731, 5275, 6957, 1089, 8749, 8748, 15138, 5276, 10065, 5278, 8767, 6750, 6749, 7816, 5283, 8764, 6745, 1380, 6748, 8762, 2]
 
-// Module 20739 (QuestProgressManager)
+// Module 20734 (QuestProgressManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import QuestVariants from "QuestVariants" /* 5276 */;
@@ -13,11 +13,11 @@ import GameAnalyticsUtils from "GameAnalyticsUtils" /* 6748 */;
 import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6749 */;
 import RobloxSubgameTypes from "RobloxSubgameTypes" /* 6750 */;
 import FramesConstants from "FramesConstants" /* 6957 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 8749 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8763 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8765 */;
-import QuestActionCreators from "QuestActionCreators" /* 10066 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 15141 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 8748 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8762 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8764 */;
+import QuestActionCreators from "QuestActionCreators" /* 10065 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 15138 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
@@ -26,10 +26,10 @@ import RunningGameStore from "RunningGameStore" /* 2137 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
 import DetectableGameStore from "DetectableGameStore" /* 2156 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6011 */;
-import QuestStore from "QuestStore" /* 8742 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19736 */;
+import QuestStore from "QuestStore" /* 8741 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19731 */;
 import QuestConstants from "QuestConstants" /* 5275 */;
-import getQuestLogger from "getQuestLogger" /* 8750 */;
+import getQuestLogger from "getQuestLogger" /* 8749 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
@@ -62,8 +62,8 @@ function handleEmbeddedActivityLaunchSuccess(applicationId) {
       let features = tmp2.config.features;
       let tmp5 = require;
       if (features.includes(QuestVariants.QuestVariants.MOBILE_ACTIVITY_QUEST)) {
-        let tmp5Result = tmp5(10066);
-        let obj3 = { questContent: tmp5(5278).QuestContent.RUNNING_ACTIVITY, questContentCTA: tmp5(8768).QuestContentCTA.START_QUEST, sourceQuestContent: tmp5(5278).QuestContent.RUNNING_ACTIVITY };
+        let tmp5Result = tmp5(10065);
+        let obj3 = { questContent: tmp5(5278).QuestContent.RUNNING_ACTIVITY, questContentCTA: tmp5(8767).QuestContentCTA.START_QUEST, sourceQuestContent: tmp5(5278).QuestContent.RUNNING_ACTIVITY };
         let enrollInQuest = tmp5Result.enrollInQuest;
         let id = item10020.id;
         let enrollInQuestResult = enrollInQuest(id, obj3);

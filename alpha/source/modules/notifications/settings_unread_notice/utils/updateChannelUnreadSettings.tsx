@@ -1,16 +1,16 @@
-// Module ID: 12271
-// Function ID: 12272
+// Module ID: 12265
+// Function ID: 12266
 // Name: updateChannelUnreadSettings
-// Dependencies: [6895, 1072, 6896, 1082, 7817, 11017, 7812, 2]
+// Dependencies: [6895, 1072, 6896, 1082, 7817, 11011, 7812, 2]
 // Exports: default
 
-// Module 12271 (updateChannelUnreadSettings)
+// Module 12265 (updateChannelUnreadSettings)
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import ReadStateConstants from "ReadStateConstants" /* 6896 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7812 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7817 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11017 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11011 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
 import size from "module_2" /* 2 */;
 

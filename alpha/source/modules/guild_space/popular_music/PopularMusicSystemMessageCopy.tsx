@@ -1,12 +1,12 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 9112
+// Function ID: 9113
 // Name: PopularMusicSystemMessageCopy
-// Dependencies: [9112, 2587, 2]
+// Dependencies: [9111, 2587, 2]
 // Exports: getMobileMusicSystemMessage, getMusicSystemMessage
 
-// Module 9113 (PopularMusicSystemMessageCopy)
+// Module 9112 (PopularMusicSystemMessageCopy)
 import _modDef2587 from "module_2587" /* 2587 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9112 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9111 */;
 import size from "module_2" /* 2 */;
 
 function getMusicSystemMessageFor(trackTitle, name, BlHpAk) {

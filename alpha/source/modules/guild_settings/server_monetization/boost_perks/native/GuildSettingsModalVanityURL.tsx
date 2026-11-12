@@ -1,10 +1,10 @@
-// Module ID: 20440
-// Function ID: 20441
+// Module ID: 20435
+// Function ID: 20436
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 20441, 5114, 8339, 1072, 21, 5243, 575, 7427, 7363, 1113, 20442, 8409, 5866, 20283, 7553, 5957, 20443, 1499, 504, 5849, 2]
+// Dependencies: [19, 17, 20436, 5114, 8339, 1072, 21, 5243, 575, 7427, 7363, 1113, 20437, 8409, 5866, 20278, 7553, 5957, 20438, 1499, 504, 5849, 2]
 // Exports: default
 
-// Module 20440 (GuildSettingsModalVanityURL)
+// Module 20435 (GuildSettingsModalVanityURL)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,11 +14,11 @@ import FastImageDefault from "FastImage" /* 5957 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7363 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7553 */;
 import getInviteURLDefault from "getInviteURL" /* 8409 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 20283 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 20442 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20443 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 20278 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 20437 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20438 */;
 import react from "react" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 20441 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 20436 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 8339 */;
 import Fragment from "Fragment" /* 21 */;
@@ -152,6 +152,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
     let obj3;
     let styles;
     let tmp20;
+    let vanityURLCode;
     const self = this;
     ({ errorDetails, guild, styles } = this.props);
     ({ isEditing, vanityURLCode } = this.state);

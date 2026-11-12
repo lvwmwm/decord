@@ -1,10 +1,10 @@
-// Module ID: 20672
-// Function ID: 20673
+// Module ID: 20667
+// Function ID: 20668
 // Name: GlobalDiscoveryServersUtils
 // Dependencies: [5, 2186, 8340, 1072, 1113, 1380, 7167, 1252, 1266, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 20672 (GlobalDiscoveryServersUtils)
+// Module 20667 (GlobalDiscoveryServersUtils)
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import v1 from "v1" /* 1266 */;
@@ -259,7 +259,7 @@ export function fromDiscoverableGuildServer(id) {
   return obj;
 }
 export function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "Icon", discoverySplash: null, emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "description", discoverySplash: null, emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

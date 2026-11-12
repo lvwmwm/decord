@@ -1,14 +1,14 @@
-// Module ID: 17144
-// Function ID: 17145
+// Module ID: 17139
+// Function ID: 17140
 // Name: useAccountStandingStatusLabel
-// Dependencies: [14081, 14114, 17145, 1113, 17146, 2]
+// Dependencies: [14077, 14110, 17140, 1113, 17141, 2]
 // Exports: useAccountStandingStatusLabel
 
-// Module 17144 (useAccountStandingStatusLabel)
+// Module 17139 (useAccountStandingStatusLabel)
 import intl2 from "intl" /* 1113 */;
-import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 14081 */;
-import useSafetyHubInitialized from "useSafetyHubInitialized" /* 14114 */;
-import useSafetyHubFetchError from "useSafetyHubFetchError" /* 17145 */;
+import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 14077 */;
+import useSafetyHubInitialized from "useSafetyHubInitialized" /* 14110 */;
+import useSafetyHubFetchError from "useSafetyHubFetchError" /* 17140 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useAccountStandingStatusLabel.tsx");
@@ -28,7 +28,7 @@ export function useAccountStandingStatusLabel() {
           return arg0;
         }
     };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(17146).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(17141).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
   } else {
     let ZTNur7;
     const string = intl.string;

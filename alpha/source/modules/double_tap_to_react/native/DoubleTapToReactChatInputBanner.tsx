@@ -1,10 +1,10 @@
-// Module ID: 14578
-// Function ID: 14579
+// Module ID: 14574
+// Function ID: 14575
 // Name: DoubleTapToReactChatInputBanner
-// Dependencies: [32, 19, 17, 5244, 5089, 1388, 21, 5243, 575, 1377, 563, 7828, 1411, 5866, 1113, 14579, 7364, 7483, 6275, 1260, 1652, 5485, 1187, 5489, 14683, 2118, 6773, 5837, 7932, 5068, 9133, 9130, 10501, 5076, 2]
+// Dependencies: [32, 19, 17, 5244, 5089, 1388, 21, 5243, 575, 1377, 563, 7828, 1411, 5866, 1113, 14575, 7364, 7483, 6275, 1260, 1652, 5485, 1187, 5489, 14679, 2118, 6773, 5837, 7932, 5068, 9132, 9129, 10499, 5076, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 14578 (DoubleTapToReactChatInputBanner)
+// Module 14574 (DoubleTapToReactChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,8 +18,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489
 import Text_Text from "Text/Text" /* 5866 */;
 import XSmallIcon from "XSmallIcon" /* 7483 */;
 import EmojiDefault from "Emoji" /* 7828 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 9133 */;
-import _mod14579 from "module_14579" /* 14579 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 9132 */;
+import _mod14575 from "module_14575" /* 14575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
@@ -84,7 +84,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   const obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["6RUX7d"]) };
   const Text = tmp2(5866).Text;
   intl = tmp2(1113).intl;
-  items3 = [React4(Text, obj8), React4(_mod14579.NewBadge, {})];
+  items3 = [React4(Text, obj8), React4(_mod14575.NewBadge, {})];
   items4 = [authStore(View, obj7), ];
   const obj9 = { variant: "body-xs/medium", color: "text-default", children: intl2.format(intl4.t["5/l2rR"], obj10) };
   const Text2 = tmp2(5866).Text;
@@ -192,7 +192,7 @@ function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   const callback1 = obj.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emoji };
-    obj.openLazy(asyncRequire(14683, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
+    obj.openLazy(asyncRequire(14679, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
   }, items4);
   const callback2 = obj.useCallback(() => {

@@ -1,10 +1,10 @@
-// Module ID: 19846
-// Function ID: 19847
+// Module ID: 19841
+// Function ID: 19842
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [7022, 7252, 6009, 7405, 504, 6006, 19847, 2]
+// Dependencies: [7022, 7252, 6009, 7405, 504, 6006, 19842, 2]
 // Exports: default
 
-// Module 19846 (useConsoleConnectedAccountForVoiceUpsell)
+// Module 19841 (useConsoleConnectedAccountForVoiceUpsell)
 import GameConsoleConstants from "GameConsoleConstants" /* 7405 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7022 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7252 */;

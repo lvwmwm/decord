@@ -1,9 +1,9 @@
-// Module ID: 19661
-// Function ID: 19662
+// Module ID: 19656
+// Function ID: 19657
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 5490, 8662, 6986, 6951, 5096, 502, 5092, 8761, 6997, 5114, 16140, 6952, 6893, 6895, 5918, 1072, 21, 575, 5243, 7364, 5866, 504, 1652, 5438, 1705, 7759, 1113, 15612, 10933, 18096, 1377, 16939, 15036, 10192, 5429, 10193, 10180, 1493, 1627, 10181, 13031, 1252, 19662, 19669, 18282, 19682, 19683, 2]
+// Dependencies: [32, 19, 17, 5490, 8662, 6986, 6951, 5096, 502, 5092, 8760, 6997, 5114, 16135, 6952, 6893, 6895, 5918, 1072, 21, 575, 5243, 7364, 5866, 504, 1652, 5438, 1705, 7759, 1113, 15609, 10927, 18091, 1377, 16934, 15032, 10190, 5429, 10191, 10178, 1493, 1627, 10179, 13025, 1252, 19657, 19664, 18277, 19677, 19678, 2]
 
-// Module 19661 (LaunchPad)
+// Module 19656 (LaunchPad)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -11,9 +11,9 @@ import PlatformUtils from "PlatformUtils" /* 1377 */;
 import ChatInputUtils from "ChatInputUtils" /* 5438 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import Pressables from "Pressables" /* 7364 */;
-import _mod10180 from "module_10180" /* 10180 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10192 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 15036 */;
+import _mod10178 from "module_10178" /* 10178 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10190 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 15032 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5490 */;
@@ -23,10 +23,10 @@ import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6951 */;
 import ChannelRecord from "ChannelRecord" /* 5096 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8761 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8760 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6997 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 16140 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 16135 */;
 import ReadStateStore from "ReadStateStore" /* 6952 */;
 import SortedGuildStore from "SortedGuildStore" /* 6893 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
@@ -37,7 +37,7 @@ import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, basicChannel, channel, channelHistory, flattenedGuildIds, guild, set;
+let _require, basicChannel, channel, flattenedGuildIds, guild, set;
 
 let c10;
 let c9;
@@ -53,7 +53,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const DevToolsNavigator = tmp(16939);
+const DevToolsNavigator = tmp(16934);
 function TabButton(selected) {
   let accessibilityLabel;
   let colors;
@@ -329,7 +329,7 @@ let closure_35 = react.memo(function LaunchPadHeader(tab) {
   return closure_28(tmp20, obj4);
 });
 let closure_37 = [];
-let items = [_mod10180.AutocompleterResultTypes.GUILD, _mod10180.AutocompleterResultTypes.TEXT_CHANNEL, _mod10180.AutocompleterResultTypes.GROUP_DM, _mod10180.AutocompleterResultTypes.VOICE_CHANNEL, _mod10180.AutocompleterResultTypes.USER];
+let items = [_mod10178.AutocompleterResultTypes.GUILD, _mod10178.AutocompleterResultTypes.TEXT_CHANNEL, _mod10178.AutocompleterResultTypes.GROUP_DM, _mod10178.AutocompleterResultTypes.VOICE_CHANNEL, _mod10178.AutocompleterResultTypes.USER];
 let closure_39 = { code: "(function LaunchPadTsx3(){let[sharedState]=this.__closure;return sharedState.get()===0;})" };
 let closure_40 = { code: "(function LaunchPadTsx4(hidden,prevHidden){let[scheduleOnRN,clearQuery,cancelTimeout]=this.__closure;if(hidden===prevHidden)return;if(hidden&&hidden!==prevHidden){scheduleOnRN(clearQuery);}else if(!hidden&&hidden!==prevHidden){scheduleOnRN(cancelTimeout);}})" };
 const memoResult = react.memo(function LaunchPad(arg0) {
@@ -338,6 +338,7 @@ const memoResult = react.memo(function LaunchPad(arg0) {
   let c0;
   let c1;
   let c2;
+  let channelHistory;
   let closure_3;
   let first1;
   let first3;

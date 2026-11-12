@@ -1,10 +1,10 @@
-// Module ID: 9319
-// Function ID: 9320
+// Module ID: 9318
+// Function ID: 9319
 // Name: transformEmbeds
-// Dependencies: [17, 1072, 9320, 9321, 6727, 9322, 1377, 8588, 6298, 1113, 1090, 9278, 5065, 8567, 8573, 6767, 9323, 2]
+// Dependencies: [17, 1072, 9319, 9320, 6727, 9321, 1377, 8588, 6298, 1113, 1090, 9277, 5065, 8567, 8573, 6767, 9322, 2]
 // Exports: default
 
-// Module 9319 (transformEmbeds)
+// Module 9318 (transformEmbeds)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
@@ -17,11 +17,11 @@ import AgeVerificationUtils from "AgeVerificationUtils" /* 6767 */;
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8567 */;
 import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8573 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
-import MarkupParsers from "MarkupParsers" /* 9278 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 9320 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 9321 */;
-import utils from "utils" /* 9322 */;
-import NativeChatCapabilities from "NativeChatCapabilities" /* 9323 */;
+import MarkupParsers from "MarkupParsers" /* 9277 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 9319 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 9320 */;
+import utils from "utils" /* 9321 */;
+import NativeChatCapabilities from "NativeChatCapabilities" /* 9322 */;
 import size from "module_2" /* 2 */;
 
 let borderLeftColor, type;
@@ -248,7 +248,7 @@ export default function transformEmbeds(arg0) {
                       if (null != type.url) {
                         let parseEmbedTitleMarkup;
                         if ("" !== type.url) {
-                          parseEmbedTitleMarkup = tmp3(9278).parseEmbedTitleMarkupWithoutLinks;
+                          parseEmbedTitleMarkup = tmp3(9277).parseEmbedTitleMarkupWithoutLinks;
                         }
                         if (type.type === MessageEmbedTypes.RICH) {
                           let rawTitle;
@@ -418,7 +418,7 @@ export default function transformEmbeds(arg0) {
                         }
                         rawTitle = type.rawTitle;
                       }
-                      parseEmbedTitleMarkup = tmp3(9278).parseEmbedTitleMarkup;
+                      parseEmbedTitleMarkup = tmp3(9277).parseEmbedTitleMarkup;
                     }
                     let tmp28 = null == tmp26;
                     if (!tmp28) {

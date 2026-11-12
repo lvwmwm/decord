@@ -1,9 +1,9 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 16140
+// Function ID: 16141
 // Name: HubLinkNoticeStore
 // Dependencies: [8382, 5114, 1072, 504, 572, 2]
 
-// Module 16145 (HubLinkNoticeStore)
+// Module 16140 (HubLinkNoticeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;

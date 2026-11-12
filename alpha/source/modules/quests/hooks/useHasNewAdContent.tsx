@@ -1,15 +1,15 @@
-// Module ID: 10445
-// Function ID: 10446
+// Module ID: 10443
+// Function ID: 10444
 // Name: useHasNewAdContent
-// Dependencies: [32, 10446, 8742, 1089, 504, 8749, 5282, 9494, 5076, 2]
+// Dependencies: [32, 10444, 8741, 1089, 504, 8748, 5282, 9493, 5076, 2]
 // Exports: default
 
-// Module 10445 (useHasNewAdContent)
+// Module 10443 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1089 */;
 import AdCreativeType from "AdCreativeType" /* 5282 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 10446 */;
-import QuestStore from "QuestStore" /* 8742 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 10444 */;
+import QuestStore from "QuestStore" /* 8741 */;
 import size from "module_2" /* 2 */;
 
 let quests;
@@ -48,8 +48,8 @@ export default function useHasNewAdContent() {
     return false;
   }, items2);
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = stateFromStoresArray(9494).useSelectedTimeRecurringDismissibleContent;
-  stateFromStoresArray(9494);
+  const useSelectedTimeRecurringDismissibleContent = stateFromStoresArray(9493).useSelectedTimeRecurringDismissibleContent;
+  stateFromStoresArray(9493);
   if (stateFromStores) {
     prop = tmp(5076).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
   }

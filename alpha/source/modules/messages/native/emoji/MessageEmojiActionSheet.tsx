@@ -1,10 +1,10 @@
-// Module ID: 11238
-// Function ID: 11239
+// Module ID: 11232
+// Function ID: 11233
 // Name: MessageEmojiActionSheet
-// Dependencies: [19, 17, 1072, 21, 5243, 1377, 1266, 5503, 1252, 11239, 11245, 11246, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 1377, 1266, 5503, 1252, 11233, 11239, 11240, 2]
 // Exports: default
 
-// Module 11238 (MessageEmojiActionSheet)
+// Module 11232 (MessageEmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;

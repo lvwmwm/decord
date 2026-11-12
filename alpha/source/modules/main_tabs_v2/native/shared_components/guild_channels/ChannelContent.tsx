@@ -1,16 +1,16 @@
-// Module ID: 19298
-// Function ID: 19299
+// Module ID: 19293
+// Function ID: 19294
 // Name: ChannelContent
-// Dependencies: [19, 17, 5997, 6896, 21, 5243, 1377, 10987, 7156, 19299, 8027, 8095, 18714, 5866, 2]
+// Dependencies: [19, 17, 5997, 6896, 21, 5243, 1377, 10981, 7156, 19294, 8027, 8095, 18709, 5866, 2]
 // Exports: renderChannelContent
 
-// Module 19298 (ChannelContent)
+// Module 19293 (ChannelContent)
 import react_native from "react-native" /* 17 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
 import ReadStateConstants from "ReadStateConstants" /* 6896 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7156 */;
-import ChannelListLayout from "ChannelListLayout" /* 10987 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 19299 */;
+import ChannelListLayout from "ChannelListLayout" /* 10981 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 19294 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -22,7 +22,7 @@ let metroRequire;
 let num2;
 let obj2;
 let tmp13;
-const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(18714);
+const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(18709);
 function ChannelContentComponent(arg0) {
   let channel;
   let connected;

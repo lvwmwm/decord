@@ -1,17 +1,17 @@
-// Module ID: 18648
-// Function ID: 18649
+// Module ID: 18643
+// Function ID: 18644
 // Name: MessagesEmptyState
-// Dependencies: [19, 17, 21, 5243, 1499, 6275, 1260, 8494, 17590, 18649, 5866, 1113, 5873, 2]
+// Dependencies: [19, 17, 21, 5243, 1499, 6275, 1260, 8494, 17585, 18644, 5866, 1113, 5873, 2]
 // Exports: default
 
-// Module 18648 (MessagesEmptyState)
+// Module 18643 (MessagesEmptyState)
 import intl4 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import useNavigation from "useNavigation" /* 1499 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 6275 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8494 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17590 */;
-import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 18649 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17585 */;
+import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 18644 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

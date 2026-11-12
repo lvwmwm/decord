@@ -1,10 +1,10 @@
-// Module ID: 11894
-// Function ID: 11895
+// Module ID: 11888
+// Function ID: 11889
 // Name: speakOnStage
 // Dependencies: [6845, 8124, 6770, 6846, 2]
 // Exports: default
 
-// Module 11894 (speakOnStage)
+// Module 11888 (speakOnStage)
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6770 */;
 import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6845 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 6846 */;

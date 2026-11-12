@@ -1,10 +1,10 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 10607
+// Function ID: 10608
 // Name: useHasAllocateBoostPermission
 // Dependencies: [5114, 5175, 1083, 504, 2]
 // Exports: default, getHasAllocateBoostPermission
 
-// Module 10609 (useHasAllocateBoostPermission)
+// Module 10607 (useHasAllocateBoostPermission)
 import Constants from "Constants" /* 1083 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import PermissionStore from "PermissionStore" /* 5175 */;

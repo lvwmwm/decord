@@ -1,16 +1,16 @@
-// Module ID: 16790
-// Function ID: 16791
+// Module ID: 16785
+// Function ID: 16786
 // Name: UserSettingsProtoManager
-// Dependencies: [1231, 1082, 1235, 16791, 16792, 572, 12, 5073, 2]
+// Dependencies: [1231, 1082, 1235, 16786, 16787, 572, 12, 5073, 2]
 
-// Module 16790 (UserSettingsProtoManager)
+// Module 16785 (UserSettingsProtoManager)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1235 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5073 */;
-import PreloadedUserSettingsMigrationsDefault from "PreloadedUserSettingsMigrations" /* 16791 */;
-import FrecencySettingsMigrationsDefault from "FrecencySettingsMigrations" /* 16792 */;
+import PreloadedUserSettingsMigrationsDefault from "PreloadedUserSettingsMigrations" /* 16786 */;
+import FrecencySettingsMigrationsDefault from "FrecencySettingsMigrations" /* 16787 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 

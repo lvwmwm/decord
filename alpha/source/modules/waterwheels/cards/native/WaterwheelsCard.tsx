@@ -1,20 +1,20 @@
-// Module ID: 18883
-// Function ID: 18884
+// Module ID: 18878
+// Function ID: 18879
 // Name: WaterwheelsCard
-// Dependencies: [19, 17, 14716, 1072, 6839, 21, 5243, 575, 504, 18884, 5957, 5866, 5873, 10158, 7657, 1113, 7897, 2]
+// Dependencies: [19, 17, 14712, 1072, 6839, 21, 5243, 575, 504, 18879, 5957, 5866, 5873, 10156, 7657, 1113, 7897, 2]
 // Exports: WaterwheelsCard, getWaterwheelsCardEligible, useWaterwheelsCardEligible
 
-// Module 18883 (WaterwheelsCard)
+// Module 18878 (WaterwheelsCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6839 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10158 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18884 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10156 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18879 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14716 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14712 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;

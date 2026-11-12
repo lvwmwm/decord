@@ -1,9 +1,9 @@
-// Module ID: 9412
-// Function ID: 9413
+// Module ID: 9411
+// Function ID: 9412
 // Name: ContentInventoryListenedMediaProvider
 // Dependencies: [2]
 
-// Module 9412 (ContentInventoryListenedMediaProvider)
+// Module 9411 (ContentInventoryListenedMediaProvider)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryListenedMediaProvider.tsx");

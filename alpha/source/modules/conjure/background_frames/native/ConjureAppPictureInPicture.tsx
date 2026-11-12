@@ -1,19 +1,19 @@
-// Module ID: 19710
-// Function ID: 19711
+// Module ID: 19705
+// Function ID: 19706
 // Name: ConjureAppPictureInPicture
-// Dependencies: [19, 17, 6956, 5114, 1072, 19590, 6957, 11926, 21, 5200, 5243, 575, 19709, 7244, 504, 7654, 5866, 15508, 12928, 7368, 7196, 12791, 19711, 16875, 1652, 15039, 5491, 5535, 1705, 5485, 5876, 1113, 4079, 5314, 13256, 13260, 2]
+// Dependencies: [19, 17, 6956, 5114, 1072, 19585, 6957, 11920, 21, 5200, 5243, 575, 19704, 7244, 504, 7654, 5866, 15505, 12922, 7368, 7196, 12785, 19706, 16870, 1652, 15035, 5491, 5535, 1705, 5485, 5876, 1113, 4079, 5314, 13250, 13254, 2]
 
-// Module 19710 (ConjureAppPictureInPicture)
+// Module 19705 (ConjureAppPictureInPicture)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
 import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 7244 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11926 */;
-import conjureFrameSound from "conjureFrameSound" /* 15508 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19590 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19709 */;
-import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19711 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11920 */;
+import conjureFrameSound from "conjureFrameSound" /* 15505 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19585 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19704 */;
+import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19706 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6956 */;
 import GuildStore from "GuildStore" /* 5114 */;
@@ -74,7 +74,7 @@ function SoundBadge(frame) {
   if (obj.showsFrameSoundToggle(frame)) {
     let VoiceNormalIcon;
     if (frame.data.userMuted) {
-      VoiceNormalIcon = tmp2(12928).VoiceXIcon;
+      VoiceNormalIcon = tmp2(12922).VoiceXIcon;
     } else {
       VoiceNormalIcon = tmp2(7368).VoiceNormalIcon;
     }

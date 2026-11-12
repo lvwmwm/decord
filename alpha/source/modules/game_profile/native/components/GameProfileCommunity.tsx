@@ -1,16 +1,16 @@
-// Module ID: 10321
-// Function ID: 10322
+// Module ID: 10319
+// Function ID: 10320
 // Name: GameProfileCommunity
-// Dependencies: [19, 21, 10317, 10316, 10322, 10250, 10219, 7168, 10334, 1113, 5106, 2]
+// Dependencies: [19, 21, 10315, 10314, 10320, 10248, 10217, 7168, 10332, 1113, 5106, 2]
 // Exports: default
 
-// Module 10321 (GameProfileCommunity)
+// Module 10319 (GameProfileCommunity)
 import Fragment from "Fragment" /* 21 */;
 import transitionToGuild from "transitionToGuild" /* 7168 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
-import GameProfileSection from "GameProfileSection" /* 10316 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 10317 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 10334 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10217 */;
+import GameProfileSection from "GameProfileSection" /* 10314 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 10315 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 10332 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

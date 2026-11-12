@@ -1,15 +1,15 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 9003
+// Function ID: 9004
 // Name: getNitroMessagePrefetchKey
-// Dependencies: [1377, 9005, 2]
+// Dependencies: [1377, 9004, 2]
 // Exports: getNitroMessagePrefetchKey
 
-// Module 9004 (getNitroMessagePrefetchKey)
+// Module 9003 (getNitroMessagePrefetchKey)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NitroFetchExperiment = tmp(9005);
+const NitroFetchExperiment = tmp(9004);
 const result = size.fileFinishedImporting("modules/messages/getNitroMessagePrefetchKey.native.tsx");
 
 export function getNitroMessagePrefetchKey(channelId) {

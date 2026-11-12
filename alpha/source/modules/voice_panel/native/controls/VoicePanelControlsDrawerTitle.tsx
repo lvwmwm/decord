@@ -1,15 +1,15 @@
-// Module ID: 14569
-// Function ID: 14570
+// Module ID: 14565
+// Function ID: 14566
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 11923, 21, 5243, 575, 1652, 7656, 14570, 5866, 2]
+// Dependencies: [19, 17, 11917, 21, 5243, 575, 1652, 7656, 14566, 5866, 2]
 
-// Module 14569 (VoicePanelControlsDrawerTitle)
+// Module 14565 (VoicePanelControlsDrawerTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import NativeViewDefault from "NativeView" /* 7656 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11923 */;
-import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 14570 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11917 */;
+import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 14566 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;

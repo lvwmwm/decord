@@ -1,27 +1,27 @@
-// Module ID: 19798
-// Function ID: 19799
+// Module ID: 19793
+// Function ID: 19794
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 5092, 11925, 11948, 11949, 21, 5243, 575, 19799, 1652, 9082, 1113, 9084, 5491, 11924, 504, 1641, 1377, 13708, 1627, 19818, 11956, 1705, 6118, 11929, 5535, 5485, 19820, 19821, 19825, 2]
+// Dependencies: [19, 17, 5092, 11919, 11942, 11943, 21, 5243, 575, 19794, 1652, 9081, 1113, 9083, 5491, 11918, 504, 1641, 1377, 13704, 1627, 19813, 11950, 1705, 6118, 11923, 5535, 5485, 19815, 19816, 19820, 2]
 
-// Module 19798 (VoicePanelDock)
+// Module 19793 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import HapticUtils from "HapticUtils" /* 5491 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import ContextMenu from "ContextMenu" /* 9082 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9084 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11924 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11929 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11956 */;
-import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 19799 */;
+import ContextMenu from "ContextMenu" /* 9081 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9083 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11918 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11923 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11950 */;
+import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 19794 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11948 */;
-import GestureConstants from "GestureConstants" /* 11949 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11942 */;
+import GestureConstants from "GestureConstants" /* 11943 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;

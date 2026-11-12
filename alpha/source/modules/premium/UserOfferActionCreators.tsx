@@ -1,18 +1,18 @@
-// Module ID: 9249
-// Function ID: 9250
+// Module ID: 9248
+// Function ID: 9249
 // Name: UserOfferActionCreators
-// Dependencies: [5, 9234, 9229, 9232, 1387, 1072, 1377, 572, 1252, 1282, 9250, 1242, 5285, 5076, 5073, 2]
+// Dependencies: [5, 9233, 9228, 9231, 1387, 1072, 1377, 572, 1252, 1282, 9249, 1242, 5285, 5076, 5073, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 9249 (UserOfferActionCreators)
+// Module 9248 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9234 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9229 */;
-import UserOfferStore from "UserOfferStore" /* 9232 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9233 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9228 */;
+import UserOfferStore from "UserOfferStore" /* 9231 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

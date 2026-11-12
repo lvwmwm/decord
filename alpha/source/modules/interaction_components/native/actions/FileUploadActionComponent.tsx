@@ -1,10 +1,10 @@
-// Module ID: 20121
-// Function ID: 20122
+// Module ID: 20116
+// Function ID: 20117
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 5092, 8658, 1072, 21, 5243, 6699, 7379, 13213, 1113, 6313, 7864, 11063, 7922, 7483, 8591, 38, 504, 13396, 8824, 8809, 20122, 2116, 6205, 8813, 14498, 11092, 11575, 2017, 11574, 8811, 6274, 575, 7680, 2]
+// Dependencies: [5, 19, 17, 5092, 8658, 1072, 21, 5243, 6699, 7379, 13207, 1113, 6313, 7864, 11057, 7922, 7483, 8591, 38, 504, 13390, 8823, 8808, 20117, 2116, 6205, 8812, 14494, 11086, 11569, 2017, 11568, 8810, 6274, 575, 7680, 2]
 // Exports: default
 
-// Module 20121 (FileUploadActionComponent)
+// Module 20116 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
@@ -14,10 +14,10 @@ import TableRow2 from "TableRow" /* 7379 */;
 import XSmallIcon from "XSmallIcon" /* 7483 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 7864 */;
 import DraftStore from "DraftStore" /* 8658 */;
-import AttachmentPreview from "AttachmentPreview" /* 11063 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11092 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11574 */;
-import FileUpIcon from "FileUpIcon" /* 13213 */;
+import AttachmentPreview from "AttachmentPreview" /* 11057 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11086 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11568 */;
+import FileUpIcon from "FileUpIcon" /* 13207 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;

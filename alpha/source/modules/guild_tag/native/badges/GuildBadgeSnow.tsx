@@ -1,12 +1,12 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 16253
+// Function ID: 16254
 // Name: GuildBadgeSnow
-// Dependencies: [19, 21, 16240, 8197, 2]
+// Dependencies: [19, 21, 16235, 8197, 2]
 // Exports: GuildBadgeSnow
 
-// Module 16258 (GuildBadgeSnow)
+// Module 16253 (GuildBadgeSnow)
 import inlineStyles from "inlineStyles" /* 8197 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16240 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16235 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,27 +1,27 @@
-// Module ID: 13575
-// Function ID: 13576
+// Module ID: 13569
+// Function ID: 13570
 // Name: CatIllocon
-// Dependencies: [19, 21, 13576, 13577, 13578, 7689, 5957, 2]
+// Dependencies: [19, 21, 13570, 13571, 13572, 7689, 5957, 2]
 // Exports: CatIllocon
 
-// Module 13575 (CatIllocon)
+// Module 13569 (CatIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import react_native from "react-native" /* 7689 */;
-import _modDef13576 from "module_13576" /* 13576 */;
-import _modDef13577 from "module_13577" /* 13577 */;
-import _modDef13578 from "module_13578" /* 13578 */;
+import _modDef13570 from "module_13570" /* 13570 */;
+import _modDef13571 from "module_13571" /* 13571 */;
+import _modDef13572 from "module_13572" /* 13572 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13576 };
+let obj2 = { uri: _modDef13570 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13577 };
-({ uri: _modDef13577 });
-obj[3] = { uri: _modDef13578 };
-({ uri: _modDef13578 });
+obj[2] = { uri: _modDef13571 };
+({ uri: _modDef13571 });
+obj[3] = { uri: _modDef13572 };
+({ uri: _modDef13572 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/CatIllocon.native.tsx");
 

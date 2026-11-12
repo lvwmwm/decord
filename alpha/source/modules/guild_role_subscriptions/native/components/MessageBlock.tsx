@@ -1,10 +1,10 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13449
+// Function ID: 13450
 // Name: MessageBlock
 // Dependencies: [19, 17, 21, 575, 5243, 5866, 2]
 // Exports: default
 
-// Module 13455 (MessageBlock)
+// Module 13449 (MessageBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

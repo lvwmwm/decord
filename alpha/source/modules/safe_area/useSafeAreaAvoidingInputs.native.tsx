@@ -1,13 +1,13 @@
-// Module ID: 11791
-// Function ID: 11792
+// Module ID: 11785
+// Function ID: 11786
 // Name: useSafeAreaAvoidingInputs
-// Dependencies: [5, 19, 1493, 575, 11792, 7410, 2]
+// Dependencies: [5, 19, 1493, 575, 11786, 7410, 2]
 // Exports: default
 
-// Module 11791 (useSafeAreaAvoidingInputs)
+// Module 11785 (useSafeAreaAvoidingInputs)
 import nativeDefault from "native" /* 575 */;
 import useKeyboardDuration from "useKeyboardDuration" /* 7410 */;
-import ViewMeasureUtils from "ViewMeasureUtils" /* 11792 */;
+import ViewMeasureUtils from "ViewMeasureUtils" /* 11786 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

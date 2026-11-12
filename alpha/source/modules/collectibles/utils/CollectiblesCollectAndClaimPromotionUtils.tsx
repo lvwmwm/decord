@@ -1,21 +1,21 @@
-// Module ID: 9383
-// Function ID: 9384
+// Module ID: 9382
+// Function ID: 9383
 // Name: CollectiblesCollectAndClaimPromotionUtils
-// Dependencies: [9384, 9350, 8419, 1074, 8431, 2]
+// Dependencies: [9383, 9349, 8419, 1074, 8431, 2]
 // Exports: getBundleChildSkuIds, getCollectAndClaimPromotionForCollectiblesProduct, getCollectiblesPromotionSurface
 
-// Module 9383 (CollectiblesCollectAndClaimPromotionUtils)
+// Module 9382 (CollectiblesCollectAndClaimPromotionUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9350 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9384 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9349 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9383 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8419 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, set;
 
-const f96961 = (skuId) => skuId.skuId;
+const f96972 = (skuId) => skuId.skuId;
 function getCollectionQualifyingSkuCount(bundledProducts, collectionId) {
   let _Set1;
   _require = collectionId;
@@ -47,7 +47,7 @@ function getCollectionQualifyingSkuCount(bundledProducts, collectionId) {
       const self3 = this;
       const self4 = this;
       const items = [];
-      set = new Set(bundledProducts.map(f96961));
+      set = new Set(bundledProducts.map(f96972));
       HermesBuiltin.arraySpread(items, set, 0);
       items1 = items;
     } else {
@@ -99,7 +99,7 @@ export function getBundleChildSkuIds(bundledProducts) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(bundledProducts.map(f96961));
+    set = new Set(bundledProducts.map(f96972));
     HermesBuiltin.arraySpread(items, set, 0);
     return items;
   } else {

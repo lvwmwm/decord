@@ -1,10 +1,10 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 13012
+// Function ID: 13013
 // Name: AudienceTile
-// Dependencies: [19, 17, 5155, 21, 5243, 575, 6295, 1187, 12878, 1493, 504, 6880, 6288, 5535, 1113, 7612, 13000, 5250, 13019, 2]
+// Dependencies: [19, 17, 5155, 21, 5243, 575, 6295, 1187, 12872, 1493, 504, 6880, 6288, 5535, 1113, 7612, 12994, 5250, 13013, 2]
 // Exports: getTileWidthStyle
 
-// Module 13018 (AudienceTile)
+// Module 13012 (AudienceTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6295 */;
@@ -45,7 +45,7 @@ function RaisedHandIcon(rtsState) {
   }
   items[1] = activeBackground;
   const obj = { style: items, children: hasOwnProperty(Icon, obj2) };
-  obj2 = { style: tmp.raisedHand, source: tmp5(12878), color: PRIMARY_800 };
+  obj2 = { style: tmp.raisedHand, source: tmp5(12872), color: PRIMARY_800 };
   Icon = native.Icon;
   return hasOwnProperty(tmp7, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 9104
-// Function ID: 9105
+// Module ID: 9103
+// Function ID: 9104
 // Name: getEmbedThemeColors
 // Dependencies: [19, 5243, 5250, 575, 5240, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 9104 (getEmbedThemeColors)
+// Module 9103 (getEmbedThemeColors)
 import nativeDefault from "native" /* 575 */;
 import shared from "shared" /* 5250 */;
 import react from "react" /* 19 */;

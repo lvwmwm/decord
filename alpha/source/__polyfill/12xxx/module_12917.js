@@ -1,23 +1,21 @@
 // Module ID: 12917
 // Function ID: 12918
-// Dependencies: [12918, 32, 109, 19, 17, 12919, 21, 12921, 12922, 12923]
+// Dependencies: [19, 17, 21, 12915, 12916, 12918, 12919]
+// Exports: StepsIndicator
 
 // Module 12917
-import _slicedToArray2 from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties2 from "_objectWithoutProperties" /* 109 */;
-import _mod12919 from "module_12919" /* 12919 */;
-import react_native from "react-native" /* 12921 */;
-import styles from "styles" /* 12922 */;
-import module_12918 from "module_12918" /* 12918 */;
+import react_native from "react-native" /* 12915 */;
+import styles from "styles" /* 12916 */;
+import SliderTrackMark from "SliderTrackMark" /* 12918 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+import Fragment_mod from "Fragment" /* 21 */;
 
 let tmp;
+let tmp2;
 let value;
 let weakMap;
-const _slicedToArray = module_12918(_slicedToArray2);
-const _objectWithoutProperties = module_12918(_objectWithoutProperties2);
+const StepNumber = tmp2(12919);
 if (typeof WeakMap === "function") {
   const _WeakMap = WeakMap;
   const self = this;
@@ -34,16 +32,15 @@ if (!react) {
   if (null !== react) {
     if (typeof react === "object") {
       if (!weakMap) {
-        let str = "default";
         value = merged;
         const keys = Object.keys();
         if (keys !== undefined) {
           value = merged;
           while (keys[tmp] !== undefined) {
-            let callResult = "default" !== tmp11;
+            let callResult = "default" !== tmp10;
             if (callResult) {
               let hasOwnProperty = {}.hasOwnProperty;
-              callResult = hasOwnProperty.call(react, tmp11);
+              callResult = hasOwnProperty.call(react, tmp10);
             }
             if (!callResult) {
               continue;
@@ -52,13 +49,13 @@ if (!react) {
               let ownPropertyDescriptor = defineProperty;
               if (ownPropertyDescriptor) {
                 let _Object2 = Object;
-                ownPropertyDescriptor = Object.getOwnPropertyDescriptor(react, tmp11);
+                ownPropertyDescriptor = Object.getOwnPropertyDescriptor(react, tmp10);
               }
               if (!ownPropertyDescriptor) {
-                merged[tmp11] = react[tmp11];
+                merged[tmp10] = react[tmp10];
                 continue;
               } else {
-                let definePropertyResult1 = defineProperty(merged, tmp11, ownPropertyDescriptor);
+                let definePropertyResult1 = defineProperty(merged, tmp10, ownPropertyDescriptor);
                 continue;
               }
               continue;
@@ -69,7 +66,7 @@ if (!react) {
       } else if (weakMap.has(react)) {
         value = weakMap.get(react);
       } else {
-        let result = weakMap.set(react, merged);
+        const result = weakMap.set(react, merged);
       }
     } else {
       value = merged;
@@ -78,208 +75,78 @@ if (!react) {
 } else {
   value = react;
 }
-const __INTERNAL_VIEW_CONFIG = module_12918(_mod12919);
-let closure_8 = ["onValueChange", "onSlidingStart", "onSlidingComplete", "onAccessibilityAction", "value", "minimumValue", "maximumValue", "step", "inverted", "tapToSeek", "lowerLimit", "upperLimit"];
-const _default = value.default;
+let c2 = value;
+let Fragment = Fragment_mod;
 
-export default _default.forwardRef(function SliderComponent(onSlidingComplete, ref) {
-  let accessibilityState;
-  let closure_129_0;
-  let closure_129_7;
-  let closure_129_8;
-  let defaultSlider;
-  let disabled;
-  let items4;
-  let jsxResult;
-  let onSlidingStart;
-  let onValueChangeEvent;
-  let str;
-  let thumbImage;
-  let tmp15;
-  let tmp17;
-  let tmp23;
-  ({ onValueChange: closure_129_0, onSlidingStart } = onSlidingComplete);
-  onSlidingComplete = onSlidingComplete.onSlidingComplete;
-  const onAccessibilityAction = onSlidingComplete.onAccessibilityAction;
-  let SLIDER_DEFAULT_INITIAL_VALUE = onSlidingComplete.value;
-  if (undefined === SLIDER_DEFAULT_INITIAL_VALUE) {
-    const tmp = require;
-    SLIDER_DEFAULT_INITIAL_VALUE = react_native.constants.SLIDER_DEFAULT_INITIAL_VALUE;
-  }
-  const minimumValue = onSlidingComplete.minimumValue;
-  let num = 0;
-  if (undefined !== minimumValue) {
-    num = minimumValue;
-  }
-  const maximumValue = onSlidingComplete.maximumValue;
-  let num2 = 1;
-  if (undefined !== maximumValue) {
-    num2 = maximumValue;
-  }
-  const step = onSlidingComplete.step;
-  let num3 = 0;
-  if (undefined !== step) {
-    num3 = step;
-  }
-  const inverted = onSlidingComplete.inverted;
-  const tapToSeek = onSlidingComplete.tapToSeek;
-  let lowerLimit = onSlidingComplete.lowerLimit;
-  const tmp4 = undefined !== tapToSeek && tapToSeek;
-  if (undefined === lowerLimit) {
-    const Platform = react_native2.Platform;
-    const select = Platform.select;
-    const obj = { web: num, default: react_native.constants.LIMIT_MIN_VALUE };
-    lowerLimit = select(obj);
-  }
-  let upperLimit = onSlidingComplete.upperLimit;
-  if (undefined === upperLimit) {
-    const Platform2 = react_native2.Platform;
-    const select2 = Platform2.select;
-    const obj2 = { web: num2, default: react_native.constants.LIMIT_MAX_VALUE };
-    upperLimit = select2(obj2);
-  }
-  const defaultResult = _objectWithoutProperties.default(onSlidingComplete, closure_8);
-  let SLIDER_DEFAULT_INITIAL_VALUE2 = num;
-  const useState = value.useState;
-  if (null != SLIDER_DEFAULT_INITIAL_VALUE) {
-    SLIDER_DEFAULT_INITIAL_VALUE2 = SLIDER_DEFAULT_INITIAL_VALUE;
-  }
-  if (null == SLIDER_DEFAULT_INITIAL_VALUE2) {
-    SLIDER_DEFAULT_INITIAL_VALUE2 = react_native.constants.SLIDER_DEFAULT_INITIAL_VALUE;
-  }
-  [tmp15, closure_129_7] = _slicedToArray.default(useState(SLIDER_DEFAULT_INITIAL_VALUE2), 2);
-  _slicedToArray.default(useState(SLIDER_DEFAULT_INITIAL_VALUE2), 2);
-  [tmp17, closure_129_8] = _slicedToArray.default(value.useState(0), 2);
-  let DEFAULT_STEP_RESOLUTION = num3;
-  _slicedToArray.default(value.useState(0), 2);
-  if (!DEFAULT_STEP_RESOLUTION) {
-    DEFAULT_STEP_RESOLUTION = react_native.constants.DEFAULT_STEP_RESOLUTION;
-  }
-  const result = (num2 - num) / DEFAULT_STEP_RESOLUTION;
-  let closure_9 = num3 || result;
-  const _Array = Array;
-  if (num3) {
-    DEFAULT_STEP_RESOLUTION = result;
-  }
-  const obj4 = { length: DEFAULT_STEP_RESOLUTION + 1 };
-  const fromResult = from(obj4, (arg0, arg1) => num + arg1 * closure_9);
-  if ("ios" === react_native2.Platform.OS) {
-    defaultSlider = styles.styles.defaultSlideriOS;
-    tmp23 = require;
-  } else {
-    tmp23 = require;
-    defaultSlider = styles.styles.defaultSlider;
-  }
-  const items = [defaultSlider, defaultResult.style];
-  if (typeof defaultResult.disabled === "boolean") {
-    disabled = defaultResult.disabled;
-  } else {
-    const accessibilityState2 = defaultResult.accessibilityState;
-    let disabled1;
-    if (null != accessibilityState2) {
-      disabled1 = accessibilityState2.disabled;
+export function StepsIndicator(options) {
+  options = options.options;
+  const sliderWidth = options.sliderWidth;
+  const currentValue = options.currentValue;
+  const StepMarker = options.StepMarker;
+  const renderStepNumber = options.renderStepNumber;
+  const thumbImage = options.thumbImage;
+  let items = [options.length];
+  const isLTR = options.isLTR;
+  let obj = currentValue;
+  const memo = currentValue.useMemo(() => {
+    let fontSize;
+    if (options.length > 9) {
+      fontSize = react_native.constants.STEP_NUMBER_TEXT_FONT_SMALL;
+    } else {
+      fontSize = react_native.constants.STEP_NUMBER_TEXT_FONT_BIG;
     }
-    disabled = true === disabled1;
-  }
-  if (typeof defaultResult.disabled === "boolean") {
-    const _Object = Object;
-    const obj5 = { disabled: defaultResult.disabled };
-    accessibilityState = Object.assign({}, defaultResult.accessibilityState, obj5);
-  } else {
-    accessibilityState = defaultResult.accessibilityState;
-  }
-  let fn = null;
-  if (onSlidingStart) {
-    fn = (nativeEvent) => {
-      onSlidingStart(nativeEvent.nativeEvent.value);
-    };
-  }
-  let fn2 = null;
-  if (onSlidingComplete) {
-    fn2 = (nativeEvent) => {
-      onSlidingComplete(nativeEvent.nativeEvent.value);
-    };
-  }
-  let fn3 = null;
-  if (onAccessibilityAction) {
-    fn3 = (arg0) => {
-      onAccessibilityAction(arg0);
-    };
-  }
-  let tmp28;
-  if (!Number.isNaN(SLIDER_DEFAULT_INITIAL_VALUE)) {
-    if (SLIDER_DEFAULT_INITIAL_VALUE) {
-      tmp28 = SLIDER_DEFAULT_INITIAL_VALUE;
+    return { fontSize };
+  }, items);
+  const items1 = [sliderWidth];
+  const memo1 = currentValue.useMemo(() => {
+    let stepIndicatorElement;
+    let stepsIndicator2;
+    let tmp6;
+    if ("web" === react_native2.Platform.OS) {
+      stepsIndicator2 = styles.styles.stepsIndicator;
+      tmp6 = require;
+    } else {
+      const _Object = Object;
+      const obj = { marginHorizontal: sliderWidth * react_native.constants.MARGIN_HORIZONTAL_PADDING };
+      const stepsIndicator = styles.styles.stepsIndicator;
+      stepsIndicator2 = assign({}, stepsIndicator, obj);
+      tmp6 = require;
     }
-  }
-  const items1 = [lowerLimit, upperLimit];
-  const effect = obj3.useEffect(() => {
-    if (lowerLimit >= upperLimit) {
-      const _console = console;
-      console.warn("Invalid configuration: lower limit is supposed to be smaller than upper limit");
+    const obj2 = { stepIndicatorContainerStyle: stepsIndicator2, stepIndicatorElementStyle: stepIndicatorElement };
+    if ("web" === react_native2.Platform.OS) {
+      const _Object2 = Object;
+      const assign2 = Object.assign;
+      const obj3 = { width: tmp6(12915).constants.THUMB_SIZE, justifyContent: "space-between" };
+      const stepIndicatorElement2 = tmp6(12916).styles.stepIndicatorElement;
+      stepIndicatorElement = assign2({}, stepIndicatorElement2, obj3);
+    } else {
+      stepIndicatorElement = tmp6(12916).styles.stepIndicatorElement;
     }
+    return obj2;
   }, items1);
-  const items2 = [items, { justifyContent: "center" }];
-  const jsxs = Fragment.jsxs;
-  const View = tmp22.View;
-  if (defaultResult.StepMarker) {
-    ({ renderStepNumber: obj8.renderStepNumber, thumbImage: obj8.thumbImage, StepMarker: obj8.StepMarker } = defaultResult);
-    jsxResult = obj6.jsx(tmp23(12923).StepsIndicator, { options: fromResult, sliderWidth: tmp17, currentValue: tmp15, renderStepNumber: null, thumbImage: null, StepMarker: null, isLTR: tmp3 });
-  } else {
-    jsxResult = null;
+  let reversed = options;
+  if (isLTR) {
+    reversed = options.reverse();
   }
-  const items3 = [jsxResult, ];
-  const jsx = obj6.jsx;
-  const _Object2 = Object;
-  const obj15 = {
-    minimumValue: num,
-    maximumValue: num2,
-    step: num3,
-    inverted: undefined !== inverted && inverted,
-    tapToSeek: tmp4,
-    value: tmp28,
-    lowerLimit,
-    upperLimit,
-    accessibilityState,
-    thumbImage,
-    ref,
-    style: items4,
-    onChange: onValueChangeEvent,
-    onRNCSliderSlidingStart: fn,
-    onRNCSliderSlidingComplete: fn2,
-    onRNCSliderValueChange: onValueChangeEvent,
-    disabled,
-    onStartShouldSetResponder() {
-      return true;
-    },
-    onResponderTerminationRequest() {
-      return false;
-    },
-    onRNCSliderAccessibilityAction: fn3,
-    thumbTintColor: str
-  };
-  if ("web" === react_native2.Platform.OS) {
-    thumbImage = defaultResult.thumbImage;
-  } else if (!defaultResult.StepMarker) {
-    if (defaultResult.thumbImage) {
-      const Image = tmp22.Image;
-      thumbImage = Image.resolveAssetSource(defaultResult.thumbImage);
+  const items2 = [currentValue, StepMarker, options, thumbImage, renderStepNumber, memo, memo1.stepIndicatorElementStyle];
+  let closure_8 = obj.useCallback((index, index2) => {
+    const jsx = Fragment.jsx;
+    const tmp = Fragment;
+    Fragment = currentValue.Fragment;
+    const jsxs = Fragment.jsxs;
+    const View = react_native.View;
+    const jsx2 = Fragment.jsx;
+    const range = { isTrue: currentValue === index, index, thumbImage, StepMarker, currentValue, min: options[0], max: options[options.length - 1] };
+    const items = [jsx2(SliderTrackMark.SliderTrackMark, range, "" + index2 + "-SliderTrackMark"), ];
+    let jsx3Result = null;
+    if (renderStepNumber) {
+      const jsx3 = tmp.jsx;
+      const _HermesInternal = HermesInternal;
+      const obj2 = { i: index, index: index2, style: memo };
+      jsx3Result = jsx3(StepNumber.StepNumber, obj2, "" + index2 + "th-step");
     }
-  }
-  onValueChangeEvent = function onValueChangeEvent(nativeEvent) {
-    if (closure_1_0) {
-      tmp(nativeEvent.nativeEvent.value);
-    }
-    closure_1_7(nativeEvent.nativeEvent.value);
-  };
-  items4 = [{ zIndex: 1, width: tmp17 }, defaultSlider, { alignContent: "center", alignItems: "center" }];
-  if (!defaultResult.thumbImage) {
-    str = defaultResult.thumbTintColor;
-  } else {
-    str = "transparent";
-  }
-  items3[1] = <_default {...assign({}, defaultResult, obj15)} />;
-  return <View onLayout={function onLayout(nativeEvent) {
-    closure_1_8(nativeEvent.nativeEvent.layout.width);
-  }} style={items2}>{items3}</View>;
-});
+    items[1] = jsx3Result;
+    return < key={arg1}><View key={"" + arg1 + "-View"} style={memo1.stepIndicatorElementStyle}>{items}</View></>;
+  }, items2);
+  return <StepMarker.View pointerEvents="none" testID="StepsIndicator-Container" style={memo1.stepIndicatorContainerStyle}>{reversed.map((item, index) => closure_8(item, index))}</StepMarker.View>;
+}

@@ -1,205 +1,140 @@
 // Module ID: 9820
 // Function ID: 9821
-// Dependencies: [9759, 9731, 9787, 9734]
+// Dependencies: [9786, 9737, 9775, 9736, 9739, 9758, 9730]
 
 // Module 9820
-import _mod9734 from "module_9734" /* 9734 */;
-import _mod9759 from "module_9759" /* 9759 */;
-import module_9787 from "module_9787" /* 9787 */;
+import _mod9736 from "module_9736" /* 9736 */;
+import _mod9737 from "module_9737" /* 9737 */;
+import module_9786 from "module_9786" /* 9786 */;
 
-let closure_1_0;
 
-function _shouldDropEvent(message, message2) {
-  let tmp = message2;
-  if (tmp) {
-    let flag;
-    message = message.message;
-    message2 = message2.message;
-    if (message) {
-      if (!message) {
-        if (message) {
-          flag = false;
-          if (message === message2) {
-            flag = false;
-            if (_isSameFingerprint(message, message2)) {
-              let flag2;
-              const obj = _mod9734;
-              const framesFromEvent = obj.getFramesFromEvent(message);
-              const obj2 = _mod9734;
-              const framesFromEvent1 = obj2.getFramesFromEvent(message2);
-              if (framesFromEvent) {
-                if (!framesFromEvent) {
-                  if (framesFromEvent) {
-                    flag2 = false;
-                    if (framesFromEvent1.length === framesFromEvent.length) {
-                      let num = 0;
-                      flag2 = true;
-                      if (0 < framesFromEvent1.length) {
-                        flag2 = false;
-                        while (framesFromEvent1[num].filename === framesFromEvent[num].filename) {
-                          flag2 = false;
-                          if (tmp5.lineno !== tmp6.lineno) {
-                            break;
-                          } else {
-                            flag2 = false;
-                            if (tmp5.colno !== tmp6.colno) {
-                              break;
-                            } else {
-                              flag2 = false;
-                              if (tmp5.function !== tmp6.function) {
-                                break;
-                              } else {
-                                let sum = num + 1;
-                                num = sum;
-                                flag2 = true;
-                                if (sum >= framesFromEvent1.length) {
-                                  break;
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  } else {
-                    flag2 = false;
-                  }
-                } else {
-                  flag2 = false;
+export const extraErrorDataIntegration = module_9786.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let closure_1;
+  const depth = obj.depth;
+  let num = 3;
+  if (undefined !== depth) {
+    num = depth;
+  }
+  const captureErrorCause = obj.captureErrorCause;
+  closure_1 = undefined === captureErrorCause || captureErrorCause;
+  let obj2 = {
+    name: "ExtraErrorData",
+    processEvent(contexts, arg1, getOptions) {
+      function _extractErrorData(originalException, arg1, maxValueLength) {
+        try {
+          const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
+          const obj = {};
+          const _Object = Object;
+          const keys = Object.keys(originalException);
+          const iter = keys[Symbol.iterator]();
+          const nextResult = iter.next();
+          while (iter !== undefined) {
+            let tmp8 = nextResult;
+            if (-1 === items.indexOf(nextResult)) {
+              let tmp11 = originalException[tmp8];
+              let tmp12 = tmp11;
+              let tmp15 = num;
+              let tmp17 = closure_1_1;
+              let obj2 = num(closure_1_1[1]);
+              if (!obj2.isError(tmp11)) {
+                let truncateResult;
+                if (typeof tmp12 !== "string") {
+                  truncateResult = tmp11;
                 }
+                obj[tmp8] = truncateResult;
+              }
+              let tmp15Result = tmp15(tmp17[4]);
+              let _HermesInternal = HermesInternal;
+              truncateResult = tmp15Result.truncate("" + tmp12, maxValueLength);
+            }
+            continue;
+          }
+          const tmp23 = arg1 && undefined !== originalException.cause;
+          if (tmp23) {
+            let str1;
+            const obj4 = -1(closure_1_1[1]);
+            if (obj4.isError(originalException.cause)) {
+              str1 = str2.toString();
+            } else {
+              str1 = str2;
+            }
+            obj.cause = str1;
+          }
+          if (typeof originalException.toJSON === "function") {
+            const toJSONResult = originalException.toJSON();
+            const _Object2 = Object;
+            const keys1 = Object.keys(toJSONResult);
+            const tmp48 = toJSONResult;
+            for (const item10067 of keys1) {
+              let str5;
+              let tmp32 = tmp48[item10067];
+              let str3 = tmp32;
+              let obj5 = num(closure_1_1[1]);
+              if (obj5.isError(tmp32)) {
+                str5 = str3.toString();
               } else {
-                flag2 = true;
+                str5 = str3;
               }
-              flag = false;
-              if (flag2) {
-                flag = true;
-              }
+              obj[item10067] = str5;
+              continue;
             }
           }
-        } else {
-          flag = false;
-        }
-      } else {
-        flag = false;
-      }
-    } else {
-      flag = false;
-    }
-    let tmp9 = flag;
-    if (!tmp9) {
-      let flag3 = false;
-      if (message2.exception && message2.exception.values && message2.exception.values[0]) {
-        flag3 = false;
-        if (message.exception && message.exception.values && message.exception.values[0]) {
-          flag3 = false;
-          if ((message2.exception && message2.exception.values && message2.exception.values[0]).type === (message.exception && message.exception.values && message.exception.values[0]).type) {
-            flag3 = false;
-            if ((message2.exception && message2.exception.values && message2.exception.values[0]).value === (message.exception && message.exception.values && message.exception.values[0]).value) {
-              flag3 = false;
-              if (_isSameFingerprint(message, message2)) {
-                let flag4;
-                const obj3 = _mod9734;
-                const framesFromEvent2 = obj3.getFramesFromEvent(message);
-                const obj4 = _mod9734;
-                const framesFromEvent3 = obj4.getFramesFromEvent(message2);
-                if (framesFromEvent2) {
-                  if (!framesFromEvent2) {
-                    if (framesFromEvent2) {
-                      flag4 = false;
-                      if (framesFromEvent3.length === framesFromEvent2.length) {
-                        let num2 = 0;
-                        flag4 = true;
-                        if (0 < framesFromEvent3.length) {
-                          flag4 = false;
-                          while (framesFromEvent3[num2].filename === framesFromEvent2[num2].filename) {
-                            flag4 = false;
-                            if (tmp12.lineno !== tmp13.lineno) {
-                              break;
-                            } else {
-                              flag4 = false;
-                              if (tmp12.colno !== tmp13.colno) {
-                                break;
-                              } else {
-                                flag4 = false;
-                                if (tmp12.function !== tmp13.function) {
-                                  break;
-                                } else {
-                                  let sum1 = num2 + 1;
-                                  num2 = sum1;
-                                  flag4 = true;
-                                  if (sum1 >= framesFromEvent3.length) {
-                                    break;
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    } else {
-                      flag4 = false;
-                    }
-                  } else {
-                    flag4 = false;
-                  }
-                } else {
-                  flag4 = true;
-                }
-                flag3 = false;
-                if (flag4) {
-                  flag3 = true;
-                }
-              }
-            }
-          }
-        }
-      }
-      tmp9 = flag3;
-    }
-    tmp = tmp9;
-  }
-  return tmp;
-}
-function _isSameFingerprint(fingerprint, fingerprint2) {
-  fingerprint = fingerprint.fingerprint;
-  fingerprint2 = fingerprint2.fingerprint;
-  if (!fingerprint) {
-    if (!fingerprint2) {
-      return true;
-    }
-  }
-  if (!fingerprint) {
-    try {
-      const joined = fingerprint.join("");
-      return joined === fingerprint2.join("");
-    } catch (err) {
-      return false;
-    }
-  }
-  return false;
-}
-
-export { _shouldDropEvent };
-export const dedupeIntegration = module_9787.defineIntegration(() => ({
-  name: "Dedupe",
-  processEvent(type) {
-    if (type.type) {
-      return type;
-    } else {
-      try {
-        if (_shouldDropEvent(type, closure_1_0)) {
-          const tmp3 = require;
-          if (_mod9759.DEBUG_BUILD) {
-            const logger = tmp3(9731).logger;
-            logger.warn("Event dropped due to being a duplicate of previously captured event.");
+          return obj;
+        } catch (tmp40) {
+          const tmp41 = num;
+          const tmp43 = closure_1_1;
+          if (num(closure_1_1[5]).DEBUG_BUILD) {
+            const logger = tmp41(tmp43[6]).logger;
+            logger.error("Unable to extract extra data from the Error object:", tmp40);
           }
           return null;
-        } else {
-          closure_1_0 = type;
-          return type;
         }
-      } catch (err) {
       }
+      const maxValueLength = getOptions.getOptions().maxValueLength;
+      num = 250;
+      const tmp = num;
+      const tmp2 = closure_1;
+      if (undefined !== maxValueLength) {
+        num = maxValueLength;
+      }
+      let obj = arg1;
+      if (arg1 === undefined) {
+        obj = {};
+      }
+      let tmp3 = contexts;
+      if (obj.originalException) {
+        let obj2 = _mod9737;
+        tmp3 = contexts;
+        if (obj2.isError(obj.originalException)) {
+          const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
+          const tmp7 = _extractErrorData(obj.originalException, tmp2, num);
+          tmp3 = contexts;
+          if (tmp7) {
+            const obj3 = {};
+            let tmp8 = obj3;
+            const merged = Object.assign(contexts.contexts);
+            const normalizer = tmp4(9775);
+            const normalizeResult = normalizer.normalize(tmp7, tmp);
+            const tmp4Result = _mod9737;
+            if (tmp4Result.isPlainObject(normalizeResult)) {
+              const tmp4Result2 = _mod9736;
+              const result = tmp4Result2.addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
+              obj3[tmp6] = normalizeResult;
+            }
+            let obj4 = { contexts: obj3 };
+            let tmp12 = obj4;
+            let tmp13 = contexts;
+            const merged1 = Object.assign(contexts);
+            tmp3 = obj4;
+          }
+        }
+      }
+      return tmp3;
     }
-  }
-}));
+  };
+  return obj2;
+});

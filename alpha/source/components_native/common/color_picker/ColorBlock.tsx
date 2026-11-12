@@ -1,15 +1,15 @@
-// Module ID: 16955
-// Function ID: 16956
+// Module ID: 16950
+// Function ID: 16951
 // Name: ColorBlock
-// Dependencies: [19, 17, 21, 5243, 575, 1090, 7364, 5240, 1187, 12392, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 1090, 7364, 5240, 1187, 12386, 2]
 
-// Module 16955 (ColorBlock)
+// Module 16950 (ColorBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import ColorUtils from "ColorUtils" /* 5240 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12392 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12386 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

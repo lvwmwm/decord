@@ -4,8 +4,8 @@
 
 // Module 13827
 const obj = {
-  parse() {
-    return this.createSingleNodeList(this.Identifier());
+  parse: function selectorList() {
+    return this.createSingleNodeList(this.SelectorList());
   }
 };
 

@@ -1,15 +1,15 @@
-// Module ID: 19357
-// Function ID: 19358
+// Module ID: 19352
+// Function ID: 19353
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2186, 9000, 21, 5243, 14652, 7381, 5866, 1113, 2]
+// Dependencies: [19, 2186, 8999, 21, 5243, 14648, 7381, 5866, 1113, 2]
 // Exports: default
 
-// Module 19357 (SearchHistoricalIndexingHeader)
+// Module 19352 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import TrackingDefault from "Tracking" /* 14652 */;
+import TrackingDefault from "Tracking" /* 14648 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import SearchConstants from "SearchConstants" /* 9000 */;
+import SearchConstants from "SearchConstants" /* 8999 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14972
-// Function ID: 14973
+// Module ID: 14968
+// Function ID: 14969
 // Name: InviteError
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 5250, 5484, 14973, 14974, 14975, 1113, 5957, 5866, 5873, 1411, 1187, 14976, 7654, 2185, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 5250, 5484, 14969, 14970, 14971, 1113, 5957, 5866, 5873, 1411, 1187, 14972, 7654, 2185, 2]
 // Exports: default
 
-// Module 14972 (InviteError)
+// Module 14968 (InviteError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -17,8 +17,8 @@ import Text_Text from "Text/Text" /* 5866 */;
 import components_Button_Button from "components/Button/Button" /* 5873 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import GuildIcon from "GuildIcon" /* 7654 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 14975 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14976 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 14971 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14972 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ function InviteErrorBase(invite) {
   const tmp = closure_10();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 14973 : 14974);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 14969 : 14970);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {

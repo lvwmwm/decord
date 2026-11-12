@@ -1,10 +1,10 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 11991
+// Function ID: 11992
 // Name: MoreYouCanDoRow
 // Dependencies: [19, 21, 7379, 2]
 // Exports: default
 
-// Module 11997 (MoreYouCanDoRow)
+// Module 11991 (MoreYouCanDoRow)
 import Fragment from "Fragment" /* 21 */;
 import TableRow from "TableRow" /* 7379 */;
 import react from "react" /* 19 */;

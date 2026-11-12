@@ -1,10 +1,10 @@
-// Module ID: 19465
-// Function ID: 19466
+// Module ID: 19460
+// Function ID: 19461
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 16108, 1072, 9368, 1387, 21, 1089, 5243, 575, 19466, 1252, 1113, 2166, 563, 9244, 9373, 19464, 2185, 5866, 2171, 7364, 1187, 9369, 5830, 7895, 2]
+// Dependencies: [19, 17, 16103, 1072, 9367, 1387, 21, 1089, 5243, 575, 19461, 1252, 1113, 2166, 563, 9243, 9372, 19459, 2185, 5866, 2171, 7364, 1187, 9368, 5830, 7895, 2]
 // Exports: default
 
-// Module 19465 (YouExpiringTrialOfferCard)
+// Module 19460 (YouExpiringTrialOfferCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -12,11 +12,11 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _modDef2166 from "module_2166" /* 2166 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import ColorConstants from "ColorConstants" /* 9368 */;
-import useCountdownDefault from "useCountdown" /* 9373 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 19466 */;
+import ColorConstants from "ColorConstants" /* 9367 */;
+import useCountdownDefault from "useCountdown" /* 9372 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 19461 */;
 import react from "react" /* 19 */;
-import NoticeStore from "NoticeStore" /* 16108 */;
+import NoticeStore from "NoticeStore" /* 16103 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -75,7 +75,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let obj2 = navigateToPremium(563);
   const items = [shouldShowExpiringTrialOfferCard];
   const stateFromStores = obj2.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj3 = navigateToPremium(9244);
+  let obj3 = navigateToPremium(9243);
   const premiumTrialOffer = obj3.usePremiumTrialOffer();
   let num = 0;
   const tmp7 = useCountdownDefault;
@@ -87,7 +87,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
     }
   }
   const time = tmp7(num, closure_15);
-  const tmp4Result = tmp4(19464);
+  const tmp4Result = tmp4(19459);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {

@@ -1,10 +1,10 @@
-// Module ID: 15238
-// Function ID: 15239
+// Module ID: 15235
+// Function ID: 15236
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1072, 1387, 21, 5243, 575, 6898, 5484, 5250, 1187, 15239, 15240, 5866, 1113, 5830, 10893, 2171, 15241, 15242, 5957, 15243, 15244, 15245, 15246, 15247, 2]
+// Dependencies: [32, 19, 17, 1072, 1387, 21, 5243, 575, 6898, 5484, 5250, 1187, 15236, 15237, 5866, 1113, 5830, 10887, 2171, 15238, 15239, 5957, 15240, 15241, 15242, 15243, 15244, 2]
 // Exports: default
 
-// Module 15238 (PremiumFeaturesTable)
+// Module 15235 (PremiumFeaturesTable)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -15,8 +15,8 @@ import useThemeDefault from "useTheme" /* 5484 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import LegacyTokens from "LegacyTokens" /* 6898 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15239 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15240 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15236 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15237 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;

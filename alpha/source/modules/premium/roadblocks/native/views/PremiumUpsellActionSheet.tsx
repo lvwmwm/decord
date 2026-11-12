@@ -1,10 +1,10 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 8969
+// Function ID: 8970
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 5244, 1192, 6008, 5286, 1385, 1387, 1072, 6108, 8965, 21, 5243, 575, 5839, 2171, 8971, 8824, 8809, 1113, 8972, 8976, 8980, 8981, 5489, 8969, 8982, 15550, 9899, 1092, 11199, 1377, 9432, 5957, 5830, 504, 7852, 11109, 9244, 9247, 15554, 1252, 11218, 5438, 7885, 15556, 5866, 5873, 9225, 2]
+// Dependencies: [19, 17, 5244, 1192, 6008, 5286, 1385, 1387, 1072, 6108, 8964, 21, 5243, 575, 5839, 2171, 8970, 8823, 8808, 1113, 8971, 8975, 8979, 8980, 5489, 8968, 8981, 15547, 9898, 1092, 11193, 1377, 9431, 5957, 5830, 504, 7852, 11103, 9243, 9246, 15551, 1252, 11212, 5438, 7885, 15553, 5866, 5873, 9224, 2]
 // Exports: default
 
-// Module 8970 (PremiumUpsellActionSheet)
+// Module 8969 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -15,8 +15,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import StreamSettingsConstants from "StreamSettingsConstants" /* 6108 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8965 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8969 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8964 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8968 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
@@ -47,7 +47,7 @@ let obj6;
 let obj7;
 let tmp;
 let unpackModuleId;
-const APNGPlayer = tmp(9432);
+const APNGPlayer = tmp(9431);
 function PremiumUpsellImage(arg0) {
   let image;
   let style;

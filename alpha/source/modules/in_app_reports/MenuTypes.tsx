@@ -1,9 +1,9 @@
-// Module ID: 12003
-// Function ID: 12004
+// Module ID: 11997
+// Function ID: 11998
 // Name: MenuTypes
 // Dependencies: [2, 5939]
 
-// Module 12003 (MenuTypes)
+// Module 11997 (MenuTypes)
 import MediaTakedownRegulation from "MediaTakedownRegulation" /* 5939 */;
 import size from "module_2" /* 2 */;
 

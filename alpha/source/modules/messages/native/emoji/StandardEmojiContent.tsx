@@ -1,16 +1,16 @@
-// Module ID: 11239
-// Function ID: 11240
+// Module ID: 11233
+// Function ID: 11234
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 5286, 21, 5243, 575, 11240, 5193, 5957, 5866, 11241, 5189, 9481, 11242, 1113, 8041, 5873, 11244, 2]
+// Dependencies: [19, 17, 5286, 21, 5243, 575, 11234, 5193, 5957, 5866, 11235, 5189, 9480, 11236, 1113, 8041, 5873, 11238, 2]
 // Exports: default
 
-// Module 11239 (StandardEmojiContent)
+// Module 11233 (StandardEmojiContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5189 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5193 */;
-import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 11240 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 11244 */;
+import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 11234 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 11238 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,9 +1,9 @@
-// Module ID: 17709
-// Function ID: 17710
+// Module ID: 17704
+// Function ID: 17705
 // Name: GuildRoleSubscriptionsConstants
 // Dependencies: [1387, 1083, 2]
 
-// Module 17709 (GuildRoleSubscriptionsConstants)
+// Module 17704 (GuildRoleSubscriptionsConstants)
 import Constants from "Constants" /* 1083 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 15103
-// Function ID: 15104
+// Module ID: 15100
+// Function ID: 15101
 // Name: showMediaMessagePreviewActionSheet
-// Dependencies: [5092, 1385, 5489, 15104, 2118, 2]
+// Dependencies: [5092, 1385, 5489, 15101, 2118, 2]
 // Exports: default
 
-// Module 15103 (showMediaMessagePreviewActionSheet)
+// Module 15100 (showMediaMessagePreviewActionSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
@@ -23,7 +23,7 @@ export default function showMediaMessagePreviewActionSheet(message) {
       if (null != user) {
         const obj2 = { channel, message, user, closeMediaModal };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15104, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj2);
+        obj.openLazy(asyncRequire(15101, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj2);
       }
     }
   }

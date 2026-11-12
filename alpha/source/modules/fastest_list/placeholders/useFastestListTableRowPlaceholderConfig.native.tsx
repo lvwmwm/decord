@@ -1,10 +1,10 @@
-// Module ID: 10512
-// Function ID: 10513
+// Module ID: 10510
+// Function ID: 10511
 // Name: useFastestListTableRowPlaceholderConfig
 // Dependencies: [19, 5243, 575, 1187, 6898, 7771, 2]
 // Exports: default
 
-// Module 10512 (useFastestListTableRowPlaceholderConfig)
+// Module 10510 (useFastestListTableRowPlaceholderConfig)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import LegacyTokens from "LegacyTokens" /* 6898 */;

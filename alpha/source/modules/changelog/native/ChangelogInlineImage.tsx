@@ -1,14 +1,14 @@
-// Module ID: 9290
-// Function ID: 9291
+// Module ID: 9289
+// Function ID: 9290
 // Name: ChangelogInlineImage
-// Dependencies: [32, 19, 17, 21, 5243, 575, 1493, 5068, 9288, 5957, 1113, 8554, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1493, 5068, 9287, 5957, 1113, 8554, 2]
 // Exports: default
 
-// Module 9290 (ChangelogInlineImage)
+// Module 9289 (ChangelogInlineImage)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import UserSettings from "UserSettings" /* 5068 */;
-import ChangelogImageUtils from "ChangelogImageUtils" /* 9288 */;
+import ChangelogImageUtils from "ChangelogImageUtils" /* 9287 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

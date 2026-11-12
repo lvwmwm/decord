@@ -1,15 +1,15 @@
-// Module ID: 11350
-// Function ID: 11351
+// Module ID: 11344
+// Function ID: 11345
 // Name: CommandPermissionContext
-// Dependencies: [19, 5148, 5096, 5110, 502, 5092, 5155, 5114, 5175, 1385, 1072, 10745, 504, 1084, 2116, 2]
+// Dependencies: [19, 5148, 5096, 5110, 502, 5092, 5155, 5114, 5175, 1385, 1072, 10739, 504, 1084, 2116, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 11350 (CommandPermissionContext)
+// Module 11344 (CommandPermissionContext)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import Server from "Server" /* 2116 */;
 import ChannelRecord from "ChannelRecord" /* 5096 */;
 import GuildRecord from "GuildRecord" /* 5110 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10745 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10739 */;
 import react_mod from "react" /* 19 */;
 import ImpersonateStore from "ImpersonateStore" /* 5148 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -1,10 +1,10 @@
-// Module ID: 19046
-// Function ID: 19047
+// Module ID: 19041
+// Function ID: 19042
 // Name: Notifications
-// Dependencies: [19, 17, 9964, 5089, 21, 5243, 575, 5430, 7705, 19047, 7351, 7364, 1113, 17081, 5866, 19048, 11845, 19049, 18589, 7852, 7871, 8611, 7433, 5853, 19053, 19054, 14101, 5425, 1627, 18609, 10204, 5314, 2]
+// Dependencies: [19, 17, 9963, 5089, 21, 5243, 575, 5430, 7705, 19042, 7351, 7364, 1113, 17076, 5866, 19043, 11839, 19044, 18584, 7852, 7871, 8611, 7433, 5853, 19048, 19049, 14097, 5425, 1627, 18604, 10202, 5314, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 19046 (Notifications)
+// Module 19041 (Notifications)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
@@ -17,15 +17,15 @@ import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7433 
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7705 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import MainTabsConstants from "MainTabsConstants" /* 9964 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10204 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 14101 */;
-import useAppFrameDefault from "useAppFrame" /* 18589 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18609 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 19047 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 19048 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 19049 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 19054 */;
+import MainTabsConstants from "MainTabsConstants" /* 9963 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10202 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 14097 */;
+import useAppFrameDefault from "useAppFrame" /* 18584 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18604 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 19042 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 19043 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 19044 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 19049 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -43,7 +43,7 @@ let obj4;
 let size;
 let size1;
 let tmp2;
-const NotificationCenterPermissionNudgeDefault = tmp2(19053);
+const NotificationCenterPermissionNudgeDefault = tmp2(19048);
 function goBack() {
   const obj = RootNavigationRef;
   navigation = obj.getRootNavigationRef();

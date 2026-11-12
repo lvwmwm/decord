@@ -1,20 +1,20 @@
-// Module ID: 12986
-// Function ID: 12987
+// Module ID: 12980
+// Function ID: 12981
 // Name: ChannelCallHeaderButtons
-// Dependencies: [19, 2130, 21, 504, 12868, 1113, 12987, 6162, 10942, 10943, 12988, 6003, 2]
+// Dependencies: [19, 2130, 21, 504, 12862, 1113, 12981, 6162, 10936, 10937, 12982, 6003, 2]
 // Exports: CameraButton, GridButton
 
-// Module 12986 (ChannelCallHeaderButtons)
+// Module 12980 (ChannelCallHeaderButtons)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 6162 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10942 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 10943 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 12868 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12987 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12988 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10936 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 10937 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 12862 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12981 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12982 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import size from "module_2" /* 2 */;

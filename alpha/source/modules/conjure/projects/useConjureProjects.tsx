@@ -1,10 +1,10 @@
-// Module ID: 13097
-// Function ID: 13098
+// Module ID: 13091
+// Function ID: 13092
 // Name: useConjureProjects
 // Dependencies: [32, 19, 2162, 7288, 5173, 5114, 5175, 5286, 7257, 6954, 6990, 7174, 504, 1449, 7197, 2]
 // Exports: useConjureEligibleGuilds, useConjureForMeGuildId, useConjureProjects
 
-// Module 13097 (useConjureProjects)
+// Module 13091 (useConjureProjects)
 import ConjureUtils from "ConjureUtils" /* 7197 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

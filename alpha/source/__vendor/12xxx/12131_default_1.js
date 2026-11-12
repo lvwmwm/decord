@@ -1,11 +1,11 @@
 // Module ID: 12131
 // Function ID: 12132
 // Name: default_1
-// Dependencies: [12093]
+// Dependencies: [12087]
 // Exports: default
 
 // Module 12131 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 12093 */;
+import captureStackTrace2 from "captureStackTrace" /* 12087 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "F\u00E2sit giren: umulan instanceof " + code.expected + ", al\u0131nan " + tmp48;
+                combined = "Ogiltig inmatning: f\u00F6rv\u00E4ntat instanceof " + code.expected + ", fick " + tmp48;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "F\u00E2sit giren: umulan " + expected + ", al\u0131nan " + tmp48;
+                combined = "Ogiltig inmatning: f\u00F6rv\u00E4ntat " + expected + ", fick " + tmp48;
               }
               return combined;
             }
@@ -121,10 +121,10 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "F\u00E2sit giren: umulan " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Ogiltig inmatning: f\u00F6rv\u00E4ntat " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "F\u00E2sit tercih: m\u00FBteberler " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "Ogiltigt val: f\u00F6rv\u00E4ntade en av " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
@@ -138,41 +138,47 @@ export default function default_1() {
               let str32 = code.origin;
               if (obj2[code.origin] ?? null) {
                 if (str32 == null) {
-                  str32 = "value";
+                  str32 = "v\u00E4rdet";
                 }
-                const str38 = code.maximum;
+                const str37 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str38.toString();
-                const str39 = (obj2[code.origin] ?? null).unit ?? "elements";
-                combined2 = "Fazla b\u00FCy\u00FCk: " + str32 + ", " + str31 + str1 + " " + str39 + " sahip olmal\u0131yd\u0131.";
+                const str1 = str37.toString();
+                const str38 = (obj2[code.origin] ?? null).unit ?? "element";
+                combined2 = "F\u00F6r stor(t): f\u00F6rv\u00E4ntade " + str32 + " att ha " + str31 + str1 + " " + str38;
               } else {
                 let str33 = str32;
                 if (str32 == null) {
-                  str33 = "value";
+                  str33 = "v\u00E4rdet";
                 }
                 const _HermesInternal12 = HermesInternal;
                 const str34 = code.maximum;
-                combined2 = "Fazla b\u00FCy\u00FCk: " + str33 + ", " + str31 + str34.toString() + " olmal\u0131yd\u0131.";
+                combined2 = "F\u00F6r stor(t): f\u00F6rv\u00E4ntat " + str33 + " att ha " + str31 + str34.toString();
               }
               return combined2;
             }
             case "too_small":
             {
               let combined3;
-              let minimum;
-              let origin;
-              let str23 = ">";
+              let str21 = ">";
               if (code.inclusive) {
-                str23 = ">=";
+                str21 = ">=";
               }
-              ({ origin, minimum } = code);
-              const str54 = minimum.toString();
+              let str22 = code.origin;
               if (obj2[code.origin] ?? null) {
+                if (str22 == null) {
+                  str22 = "v\u00E4rdet";
+                }
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "Fazla k\u00FC\u00E7\u00FCk: " + origin + ", " + str23 + str54 + " " + tmp15.unit + " sahip olmal\u0131yd\u0131.";
+                const str27 = code.minimum;
+                combined3 = "F\u00F6r lite(t): f\u00F6rv\u00E4ntade " + str22 + " att ha " + str21 + str27.toString() + " " + tmp17.unit;
               } else {
+                let str23 = str22;
+                if (str22 == null) {
+                  str23 = "v\u00E4rdet";
+                }
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "Fazla k\u00FC\u00E7\u00FCk: " + origin + ", " + str23 + str54 + " olmal\u0131yd\u0131.";
+                const str24 = code.minimum;
+                combined3 = "F\u00F6r lite(t): f\u00F6rv\u00E4ntade " + str23 + " att ha " + str21 + str24.toString();
               }
               return combined3;
             }
@@ -181,63 +187,66 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "F\u00E2sit metin: \"" + code.prefix + "\" ile ba\u015Flamal\u0131.";
+                combined4 = "Ogiltig str\u00E4ng: m\u00E5ste b\u00F6rja med \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "F\u00E2sit metin: \"" + code.suffix + "\" ile bitmeli.";
+                combined4 = "Ogiltig str\u00E4ng: m\u00E5ste sluta med \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "F\u00E2sit metin: \"" + code.includes + "\" ihtiv\u00E2 etmeli.";
+                combined4 = "Ogiltig str\u00E4ng: m\u00E5ste inneh\u00E5lla \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "F\u00E2sit metin: " + code.pattern + " nak\u015F\u0131na uymal\u0131.";
+                combined4 = "Ogiltig str\u00E4ng: m\u00E5ste matcha m\u00F6nstret \"" + code.pattern + "\"";
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "F\u00E2sit " + format;
+                combined4 = "Ogiltig(t) " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "F\u00E2sit say\u0131: " + code.divisor + " kat\u0131 olmal\u0131yd\u0131.";
+              return "Ogiltigt tal: m\u00E5ste vara en multipel av " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str6 = "";
+              let str5 = "Ok\u00E4nd nyckel";
               if (code.keys.length > 1) {
-                str6 = "s";
+                str5 = "Ok\u00E4nda nycklar";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Tan\u0131nmayan anahtar " + str6 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "" + str5 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "" + code.origin + " i\u00E7in tan\u0131nmayan anahtar var.";
+              const str3 = code.origin ?? "v\u00E4rdet";
+              return "Ogiltig nyckel i " + str3;
             }
             case "invalid_union":
             {
-              return "Giren tan\u0131namad\u0131.";
+              return "Ogiltig input";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "" + code.origin + " i\u00E7in tan\u0131nmayan k\u0131ymet var.";
+              const str = code.origin ?? "v\u00E4rdet";
+              return "Ogiltigt v\u00E4rde i " + str;
             }
             default:
             {
-              return "K\u0131ymet tan\u0131namad\u0131.";
+              return "Ogiltig input";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "harf", verb: "olmal\u0131d\u0131r" }, file: { unit: "bayt", verb: "olmal\u0131d\u0131r" }, array: { unit: "unsur", verb: "olmal\u0131d\u0131r" }, set: { unit: "unsur", verb: "olmal\u0131d\u0131r" } };
-    closure_1 = { regex: "giren", email: "epostag\u00E2h", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO heng\u00E2m\u0131", date: "ISO tarihi", time: "ISO zaman\u0131", duration: "ISO m\u00FCddeti", ipv4: "IPv4 ni\u015F\u00E2n\u0131", ipv6: "IPv6 ni\u015F\u00E2n\u0131", cidrv4: "IPv4 menzili", cidrv6: "IPv6 menzili", base64: "base64-\u015Fifreli metin", base64url: "base64url-\u015Fifreli metin", json_string: "JSON metin", e164: "E.164 say\u0131s\u0131", jwt: "JWT", template_literal: "giren" };
-    let closure_2 = { nan: "NaN", number: "numara", array: "saf", null: "gayb" };
+    const obj2 = { string: { unit: "tecken", verb: "att ha" }, file: { unit: "bytes", verb: "att ha" }, array: { unit: "objekt", verb: "att inneh\u00E5lla" }, set: { unit: "objekt", verb: "att inneh\u00E5lla" } };
+    closure_1 = { regex: "regulj\u00E4rt uttryck", email: "e-postadress", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO-datum och tid", date: "ISO-datum", time: "ISO-tid", duration: "ISO-varaktighet", ipv4: "IPv4-intervall", ipv6: "IPv6-intervall", cidrv4: "IPv4-spektrum", cidrv6: "IPv6-spektrum", base64: "base64-kodad str\u00E4ng", base64url: "base64url-kodad str\u00E4ng", json_string: "JSON-str\u00E4ng", e164: "E.164-nummer", jwt: "JWT", template_literal: "mall-literal" };
+    let closure_2 = { nan: "NaN", number: "antal", array: "lista" };
     return obj;
   } else {
+    let str = "Trying to call a non-function";
     throw new TypeError("Trying to call a non-function");
   }
 };

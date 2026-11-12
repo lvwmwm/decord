@@ -1,9 +1,9 @@
-// Module ID: 11864
-// Function ID: 11865
+// Module ID: 11858
+// Function ID: 11859
 // Name: MessageRemindersCustomDurationModal
-// Dependencies: [32, 19, 17, 21, 5243, 575, 1627, 5252, 2017, 5489, 7954, 2118, 1113, 7434, 8985, 1377, 7427, 7363, 7680, 7379, 5866, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1627, 5252, 2017, 5489, 7954, 2118, 1113, 7434, 8984, 1377, 7427, 7363, 7680, 7379, 5866, 2]
 
-// Module 11864 (MessageRemindersCustomDurationModal)
+// Module 11858 (MessageRemindersCustomDurationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2118 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7363 */;
-import HeaderShared from "HeaderShared" /* 8985 */;
+import HeaderShared from "HeaderShared" /* 8984 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

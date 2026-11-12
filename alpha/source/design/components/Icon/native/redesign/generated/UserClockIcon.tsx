@@ -1,14 +1,14 @@
-// Module ID: 15763
-// Function ID: 15764
+// Module ID: 15758
+// Function ID: 15759
 // Name: UserClockIcon
-// Dependencies: [19, 21, 575, 5956, 15764, 2]
+// Dependencies: [19, 21, 575, 5956, 15759, 2]
 // Exports: UserClockIcon
 
-// Module 15763 (UserClockIcon)
+// Module 15758 (UserClockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 15764 */;
+import AssetRegistry from "AssetRegistry" /* 15759 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 9272
-// Function ID: 9273
+// Module ID: 9271
+// Function ID: 9272
 // Name: GuildSpaceSystemMessage
-// Dependencies: [32, 5092, 1385, 1380, 1113, 2587, 9122, 9124, 9126, 9273, 9275, 2]
+// Dependencies: [32, 5092, 1385, 1380, 1113, 2587, 9121, 9123, 9125, 9272, 9274, 2]
 // Exports: createGuildSpaceSystemMessage
 
-// Module 9272 (GuildSpaceSystemMessage)
+// Module 9271 (GuildSpaceSystemMessage)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _modDef2587 from "module_2587" /* 2587 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9122 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9124 */;
-import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 9273 */;
-import GuildSpaceMusicSystemMessage from "GuildSpaceMusicSystemMessage" /* 9275 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9121 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9123 */;
+import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 9272 */;
+import GuildSpaceMusicSystemMessage from "GuildSpaceMusicSystemMessage" /* 9274 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -58,12 +58,12 @@ export function createGuildSpaceSystemMessage(message) {
         obj4 = { userId: tmp22.id, message, author: userAuthorWithProcessedColor, roleStyle };
         if (null != tmp23) {
           const obj5 = { userId: tmp23.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-          tmp12 = tmp15(9124)(obj5);
+          tmp12 = tmp15(9123)(obj5);
         }
         formatToPartsResult = formatToParts(zUiZPF, obj3);
       }
       const obj6 = { content: formatToPartsResult };
-      const merged = Object.assign(tmp15(9126)(message));
+      const merged = Object.assign(tmp15(9125)(message));
       guildSpaceLeaderboardSystemMessage = obj6;
     }
     const intl = tmp9(1113).intl;

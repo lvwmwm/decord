@@ -1,18 +1,18 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 17223
+// Function ID: 17224
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 8676, 6847, 9552, 17229, 17232, 1196, 8576, 7747, 9550, 504, 8675, 6852, 2]
+// Dependencies: [5, 19, 8676, 6847, 9551, 17224, 17227, 1196, 8576, 7747, 9549, 504, 8675, 6852, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnlyForTeen, useDefaultGuildsRestricted, useIsParentallyControlled, useParentalControlledConsent, useParentalControlledExplicitContentSettings, useParentalControlledGoreContentSettings
 
-// Module 17228 (useParentalControlSettings)
+// Module 17223 (useParentalControlSettings)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import Constants from "Constants" /* 6847 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7747 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8576 */;
-import useUserLinks from "useUserLinks" /* 9550 */;
-import useSelectedTeen from "useSelectedTeen" /* 9552 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17229 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17232 */;
+import useUserLinks from "useUserLinks" /* 9549 */;
+import useSelectedTeen from "useSelectedTeen" /* 9551 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17224 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17227 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8676 */;
@@ -124,9 +124,9 @@ export function useDefaultGuildsRestricted() {
 }
 export function useAllowFriendsFromMutualGuildsOnlyForTeen() {
   let controlledSetting;
-  let obj = controlledSetting(9552);
+  let obj = controlledSetting(9551);
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(17229).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(17224).ParentalControlledFriendSourceFlags;
   let id;
   const useControlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting;
   if (selectedTeen != null) {

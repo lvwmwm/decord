@@ -1,10 +1,10 @@
-// Module ID: 13494
-// Function ID: 13495
+// Module ID: 13488
+// Function ID: 13489
 // Name: ConjureStatusLabels
 // Dependencies: [4079, 1113, 7304, 2]
 // Exports: connectionLabel, isPublishLineSwitch, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 13494 (ConjureStatusLabels)
+// Module 13488 (ConjureStatusLabels)
 import intl5 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import ConjureUsageTypes from "ConjureUsageTypes" /* 7304 */;

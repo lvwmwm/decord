@@ -1,17 +1,17 @@
-// Module ID: 19642
-// Function ID: 19643
+// Module ID: 19637
+// Function ID: 19638
 // Name: ReferralProgramEntryPointActionSheet
-// Dependencies: [19, 17, 5089, 21, 5243, 575, 5489, 15186, 2118, 5503, 5957, 9238, 5866, 1113, 5873, 2]
+// Dependencies: [19, 17, 5089, 21, 5243, 575, 5489, 15183, 2118, 5503, 5957, 9237, 5866, 1113, 5873, 2]
 // Exports: default
 
-// Module 19642 (ReferralProgramEntryPointActionSheet)
+// Module 19637 (ReferralProgramEntryPointActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import _modDef9238 from "module_9238" /* 9238 */;
+import _modDef9237 from "module_9237" /* 9237 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -53,7 +53,7 @@ export default function ReferralProgramEntryPointActionSheet(markAsDismissed) {
   const callback = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.PRIMARY);
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(15186, dependencyMap.paths), "referral-program-share-action-sheet");
+    obj.openLazy(asyncRequire(15183, dependencyMap.paths), "referral-program-share-action-sheet");
   }, items);
   const callback1 = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
@@ -62,7 +62,7 @@ export default function ReferralProgramEntryPointActionSheet(markAsDismissed) {
   obj2 = { style: tmp.container, children: items2 };
   const BottomSheet = markAsDismissed(5503).BottomSheet;
   const obj3 = { source: obj4, style: tmp.image };
-  obj4 = { uri: _modDef9238 };
+  obj4 = { uri: _modDef9237 };
   const tmp4 = FastImageDefault;
   items2 = [closure_6(tmp4, obj3), , , ];
   const obj5 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/semibold", children: intl.string(markAsDismissed(1113).t.u1CFbS) };

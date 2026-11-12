@@ -1,9 +1,9 @@
-// Module ID: 15697
-// Function ID: 15698
+// Module ID: 15694
+// Function ID: 15695
 // Name: ClipsOnProfileSetterExperiment
 // Dependencies: [1449, 2]
 
-// Module 15697 (ClipsOnProfileSetterExperiment)
+// Module 15694 (ClipsOnProfileSetterExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

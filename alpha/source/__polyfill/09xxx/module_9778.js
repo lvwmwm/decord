@@ -1,170 +1,382 @@
 // Module ID: 9778
 // Function ID: 9779
-// Dependencies: [32, 9731, 9730]
-// Exports: dsnToString, makeDsn
+// Dependencies: [5, 9757, 9779, 9758, 9730, 9741, 9744, 9737, 9767, 9731, 9753]
+// Exports: addEventProcessor, captureCheckIn, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
 
 // Module 9778
 import _mod9731 from "module_9731" /* 9731 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod9737 from "module_9737" /* 9737 */;
+import _mod9741 from "module_9741" /* 9741 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 9744 */;
+import _mod9753 from "module_9753" /* 9753 */;
+import _mod9757 from "module_9757" /* 9757 */;
+import _mod9758 from "module_9758" /* 9758 */;
+import _mod9779 from "module_9779" /* 9779 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 
-function dsnFromString(arg0) {
-  let closure_0 = arg0;
-  const match = re3.exec(arg0);
-  if (match) {
-    const tmp5 = _slicedToArray(match.slice(1), 6);
-    let str = tmp5[1];
-    let str3 = "";
-    const first = tmp5[0];
-    if (undefined !== tmp5[2]) {
-      str3 = tmp7;
-    }
-    let str4 = "";
-    if (undefined !== tmp5[3]) {
-      str4 = tmp8;
-    }
-    let str5 = "";
-    if (undefined !== tmp5[4]) {
-      str5 = tmp9;
-    }
-    let str6 = "";
-    if (undefined !== tmp5[5]) {
-      str6 = tmp10;
-    }
-    const parts = str6.split("/");
-    let str8 = str6;
-    let str9 = "";
-    if (parts.length > 1) {
-      const substr = parts.slice(0, -1);
-      str9 = substr.join("/");
-      str8 = parts.pop();
-    }
-    let first1 = str8;
-    if (first1) {
-      const match1 = str8.match(/^\d+/);
-      first1 = str8;
-      if (match1) {
-        first1 = match1[0];
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
+
+let obj = function _flush() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let flushResult;
+          const obj4 = require("module_9757");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            flushResult = client.flush(tmp10);
+          } else {
+            if (require("module_9758").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events. No client defined.");
+            }
+            flushResult = Promise.resolve(false);
+          }
+          c1 = 3;
+          obj = { value: flushResult, done: true };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
       }
     }
-    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
-    if (!str) {
-      str = "";
+  });
+  return obj(...arguments);
+};
+obj = function _close() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let closeResult;
+          const obj4 = require("module_9757");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            closeResult = client.close(tmp10);
+          } else {
+            if (require("module_9758").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events and disable SDK. No client defined.");
+            }
+            closeResult = Promise.resolve(false);
+          }
+          c1 = 3;
+          obj = { value: closeResult, done: true };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
+      }
     }
-    if (!str3) {
-      str3 = "";
-    }
-    if (!str5) {
-      str5 = "";
-    }
-    if (!str9) {
-      str9 = "";
-    }
-    return url;
-  } else {
-    const obj = _mod9731;
-    obj.consoleSandbox(() => {
-      console.error("Invalid Sentry Dsn: " + closure_0);
-    });
+  });
+  return obj(...arguments);
+};
+function endSession() {
+  obj = _mod9757;
+  const isolationScope = obj.getIsolationScope();
+  const obj3 = _mod9757;
+  const currentScope = obj3.getCurrentScope();
+  const tmp3 = currentScope.getSession() || isolationScope.getSession();
+  if (tmp3) {
+    const tmpResult = _mod9753;
+    tmpResult.closeSession(tmp3);
   }
+  const tmpResult4 = _mod9757;
+  const isolationScope1 = tmpResult4.getIsolationScope();
+  const tmpResult5 = _mod9757;
+  const currentScope1 = tmpResult5.getCurrentScope();
+  const tmpResult6 = _mod9757;
+  const client = tmpResult6.getClient();
+  const tmp5 = currentScope1.getSession() || isolationScope1.getSession();
+  const tmp6 = tmp5 && client;
+  if (tmp6) {
+    client.captureSession(tmp5);
+  }
+  isolationScope.setSession();
+  currentScope.setSession();
 }
-const re3 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
+let _asyncToGenerator = _asyncToGenerator_mod;
 
-export { dsnFromString };
-export function dsnToString(arg0) {
-  let host;
-  let pass;
-  let path;
-  let port;
-  let projectId;
-  let protocol;
-  let publicKey;
-  let flag = arg1;
-  if (arg1 === undefined) {
+export function addEventProcessor(arg0) {
+  obj = _mod9757;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.addEventProcessor(arg0);
+}
+export function captureCheckIn(arg0, arg1) {
+  obj = _mod9757;
+  const currentScope = obj.getCurrentScope();
+  const obj2 = _mod9757;
+  const client = obj2.getClient();
+  if (client) {
+    if (client.captureCheckIn) {
+      return client.captureCheckIn(arg0, arg1, currentScope);
+    } else if (_mod9758.DEBUG_BUILD) {
+      const logger2 = tmp(9730).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+  } else if (_mod9758.DEBUG_BUILD) {
+    const logger = tmp(9730).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult = _mod9741;
+  return tmpResult.uuid4();
+}
+export function captureEvent(arg0, arg1) {
+  obj = _mod9757;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureEvent(arg0, arg1);
+}
+export function captureException(arg0, arg1) {
+  obj = _mod9757;
+  const currentScope = obj.getCurrentScope();
+  const captureException = currentScope.captureException;
+  const obj2 = _mod9779;
+  return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
+}
+export function captureMessage(arg0, captureContext) {
+  let tmp;
+  if (typeof captureContext === "string") {
+    tmp = captureContext;
+  }
+  let tmp2;
+  if (typeof captureContext !== "string") {
+    tmp2 = { captureContext };
+    const obj2 = { captureContext };
+  }
+  obj = _mod9757;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureMessage(arg0, tmp, tmp2);
+}
+export function captureSession() {
+  let flag = arg0;
+  if (arg0 === undefined) {
     flag = false;
   }
-  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
-  let str = "";
   if (flag) {
-    str = "";
-    if (pass) {
-      const _HermesInternal = HermesInternal;
-      str = ":" + pass;
-    }
-  }
-  let str3 = "";
-  if (port) {
-    const _HermesInternal2 = HermesInternal;
-    str3 = ":" + port;
-  }
-  let combined = path;
-  if (combined) {
-    const _HermesInternal3 = HermesInternal;
-    combined = "" + path + "/";
-  }
-  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
-}
-export function makeDsn(protocol) {
-  let port;
-  let projectId;
-  let url;
-  if (typeof protocol === "string") {
-    url = dsnFromString(protocol);
+    endSession();
   } else {
-    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
+    obj = _mod9757;
+    const isolationScope = obj.getIsolationScope();
+    const obj3 = _mod9757;
+    const currentScope = obj3.getCurrentScope();
+    const obj5 = _mod9757;
+    const client = obj5.getClient();
+    const tmp3 = currentScope.getSession() || isolationScope.getSession();
+    const tmp4 = tmp3 && client;
+    if (tmp4) {
+      client.captureSession(tmp3);
+    }
   }
-  if (url) {
-    let flag = true;
-    if (url(9730).DEBUG_BUILD) {
-      ({ port, projectId, protocol } = url);
-      const items = ["protocol", "publicKey", "host", "projectId"];
-      let found = items.find((item) => {
-        let flag = !url[item];
-        if (flag) {
-          const logger = _mod9731.logger;
-          const _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: " + item + " missing");
-          flag = true;
-        }
-        return flag;
-      });
-      if (!found) {
-        let num;
-        if (projectId.match(/^\d+$/)) {
-          let num2;
-          const tmp7 = "http" === protocol || "https" === protocol;
-          if (tmp7) {
-            let num3 = port;
-            if (num3) {
-              const _isNaN = isNaN;
-              const _parseInt = parseInt;
-              num3 = isNaN(parseInt(port, 10));
-            }
-            if (num3) {
-              const logger3 = tmp2(9731).logger;
-              const _HermesInternal3 = HermesInternal;
-              logger3.error("Invalid Sentry Dsn: Invalid port " + port);
-              num3 = 1;
-            }
-            num2 = num3;
-          } else {
-            const logger2 = tmp2(9731).logger;
-            const _HermesInternal2 = HermesInternal;
-            logger2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
-            num2 = 1;
-          }
-          num = num2;
-        } else {
-          let logger = tmp2(9731).logger;
-          let _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
-          num = 1;
-        }
-        found = num;
+}
+export function close(arg0) {
+  return obj(...arguments);
+}
+export { endSession };
+export function flush(arg0) {
+  return obj(...arguments);
+}
+export function isEnabled() {
+  obj = _mod9757;
+  const client = obj.getClient();
+  const transport = client && false !== client.getOptions().enabled && client.getTransport();
+  return transport;
+}
+export function isInitialized() {
+  obj = _mod9757;
+  return obj.getClient();
+}
+export function lastEventId() {
+  obj = _mod9757;
+  const isolationScope = obj.getIsolationScope();
+  return isolationScope.lastEventId();
+}
+export function setContext(arg0, arg1) {
+  obj = _mod9757;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setContext(arg0, arg1);
+}
+export function setExtra(arg0, arg1) {
+  obj = _mod9757;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtra(arg0, arg1);
+}
+export function setExtras(arg0) {
+  obj = _mod9757;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtras(arg0);
+}
+export function setTag(arg0, arg1) {
+  obj = _mod9757;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTag(arg0, arg1);
+}
+export function setTags(arg0) {
+  obj = _mod9757;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTags(arg0);
+}
+export function setUser(arg0) {
+  obj = _mod9757;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setUser(arg0);
+}
+export function startSession(arg0) {
+  let environment;
+  let release;
+  obj = _mod9757;
+  const client = obj.getClient();
+  const obj3 = _mod9757;
+  const isolationScope = obj3.getIsolationScope();
+  const obj5 = _mod9757;
+  const currentScope = obj5.getCurrentScope();
+  ({ environment, release } = client && client.getOptions() || {});
+  client && client.getOptions() || {};
+  if (undefined === environment) {
+    environment = tmp(9767).DEFAULT_ENVIRONMENT;
+  }
+  const userAgent = (_mod9731.GLOBAL_OBJ.navigator || {}).userAgent;
+  _mod9731.GLOBAL_OBJ.navigator || {};
+  const obj2 = { release, environment, user: currentScope.getUser() || isolationScope.getUser() };
+  const makeSession = _mod9753.makeSession;
+  _mod9753;
+  let tmp7 = userAgent;
+  currentScope.getUser() || isolationScope.getUser();
+  if (tmp7) {
+    tmp7 = { userAgent };
+    const obj4 = { userAgent };
+  }
+  const merged = Object.assign(tmp7);
+  const merged1 = Object.assign(arg0);
+  const session = makeSession(obj2);
+  const session1 = isolationScope.getSession();
+  const tmp12 = session1 && "ok" === session1.status;
+  if (tmp12) {
+    const tmpResult2 = _mod9753;
+    tmpResult2.updateSession(session1, { status: "exited" });
+  }
+  endSession();
+  isolationScope.setSession(session);
+  currentScope.setSession(session);
+  return session;
+}
+export function withMonitor(monitorSlug, arg1, arg2) {
+  let closure_1;
+  _require = monitorSlug;
+  dependencyMap = arg1;
+  function finishCheckIn(status) {
+    let obj2;
+    obj = { monitorSlug, status, checkInId: _asyncToGenerator, duration: obj2.timestampInSeconds() - closure_3 };
+    obj2 = _browserPerformanceTimeOriginMode;
+    const obj3 = _mod9757;
+    const currentScope = obj3.getCurrentScope();
+    const obj4 = _mod9757;
+    const client = obj4.getClient();
+    if (client) {
+      if (client.captureCheckIn) {
+        _asyncToGenerator = client.captureCheckIn(obj, undefined, currentScope);
+      } else if (_mod9758.DEBUG_BUILD) {
+        const logger2 = tmp(9730).logger;
+        logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
       }
-      flag = !found;
+    } else if (_mod9758.DEBUG_BUILD) {
+      const logger = tmp(9730).logger;
+      logger.warn("Cannot capture check-in. No client defined.");
     }
-    if (flag) {
-      return url;
-    }
+    const tmpResult = _mod9741;
+    tmpResult.uuid4();
   }
+  obj = { monitorSlug, status: "in_progress" };
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj2 = require("module_9757");
+  let currentScope = obj2.getCurrentScope();
+  let obj3 = require("module_9757");
+  let client = obj3.getClient();
+  if (client) {
+    let captureCheckInResult;
+    if (client.captureCheckIn) {
+      captureCheckInResult = client.captureCheckIn(obj, arg2, currentScope);
+    } else if (tmp(9758).DEBUG_BUILD) {
+      let logger2 = tmp(9730).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+    _asyncToGenerator = captureCheckInResult;
+    let tmpResult = tmp(9744);
+    let closure_3 = tmpResult.timestampInSeconds();
+    const tmpResult3 = tmp(9757);
+    return tmpResult3.withIsolationScope(() => {
+      try {
+        const tmp2 = closure_1();
+        obj = _mod9737;
+        if (obj.isThenable(tmp2)) {
+          const resolved = Promise.resolve(tmp2);
+          resolved.then(() => {
+            finishCheckIn("ok");
+          }, (arg0) => {
+            finishCheckIn("error");
+            throw arg0;
+          });
+        } else {
+          finishCheckIn("ok");
+        }
+        return tmp2;
+      } catch (tmp11) {
+        finishCheckIn("error");
+        throw tmp11;
+      }
+    });
+  } else if (tmp(9758).DEBUG_BUILD) {
+    let logger = tmp(9730).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult4 = tmp(9741);
+  captureCheckInResult = tmpResult4.uuid4();
 }

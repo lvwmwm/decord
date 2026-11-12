@@ -1,16 +1,16 @@
-// Module ID: 10390
-// Function ID: 10391
+// Module ID: 10388
+// Function ID: 10389
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 9384, 8512, 8420, 8421, 8516, 10391, 504, 8418, 8511, 10392, 2]
+// Dependencies: [32, 19, 9383, 8512, 8420, 8421, 8516, 10389, 504, 8418, 8511, 10390, 2]
 // Exports: useCollectiblesShopProduct, useCollectiblesShopProducts, useFetchResolvedAbsent
 
-// Module 10390 (useCollectiblesShopProducts)
+// Module 10388 (useCollectiblesShopProducts)
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8418 */;
 import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8511 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 10391 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 10389 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9384 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9383 */;
 import StorefrontProductStore from "StorefrontProductStore" /* 8512 */;
 import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 8420 */;
 import CollectiblesProductRecord from "CollectiblesProductRecord" /* 8421 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, set, set2;
 
 let tmp;
-const StorefrontCollectionActionCreators = tmp(10392);
+const StorefrontCollectionActionCreators = tmp(10390);
 function computeEntryState(arg0) {
   let needsCategory;
   let product;
@@ -456,10 +456,10 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
   }, items6);
   const items7 = [memo1];
   const memo2 = memo.useMemo(() => {
-    const f129520 = (item) => "" !== item;
+    const f129530 = (item) => "" !== item;
     const values = Object.values(memo1);
-    const items = [...new Set(values.filter(f129520))];
-    new Set(values.filter(f129520));
+    const items = [...new Set(values.filter(f129530))];
+    new Set(values.filter(f129530));
     return items;
   }, items7);
   const items8 = [flag, memo2.join(",")];

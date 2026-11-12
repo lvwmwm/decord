@@ -1,16 +1,16 @@
-// Module ID: 19913
-// Function ID: 19914
+// Module ID: 19908
+// Function ID: 19909
 // Name: VoicePanelDockPIPWatchPrompt
-// Dependencies: [19, 17, 6757, 1385, 21, 5243, 575, 11924, 504, 6288, 6799, 19912, 5314, 1652, 5485, 1705, 7391, 1113, 5866, 3205, 7656, 5873, 7922, 7483, 2]
+// Dependencies: [19, 17, 6757, 1385, 21, 5243, 575, 11918, 504, 6288, 6799, 19907, 5314, 1652, 5485, 1705, 7391, 1113, 5866, 3205, 7656, 5873, 7922, 7483, 2]
 
-// Module 19913 (VoicePanelDockPIPWatchPrompt)
+// Module 19908 (VoicePanelDockPIPWatchPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import native from "native" /* 5314 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import StreamActionCreators from "StreamActionCreators" /* 6799 */;
-import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 19912 */;
+import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 19907 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
 import UserStore from "UserStore" /* 1385 */;

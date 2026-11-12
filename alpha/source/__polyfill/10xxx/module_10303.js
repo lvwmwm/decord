@@ -1,105 +1,190 @@
 // Module ID: 10303
 // Function ID: 10304
-// Dependencies: [10292]
-// Exports: getAttributeValue, getChildren, getName, getParent, getSiblings, hasAttrib, nextElementSibling, prevElementSibling
+// Dependencies: [10290]
+// Exports: existsOne, filter, findAll, findOneChild
 
 // Module 10303
-import DomHandler from "DomHandler" /* 10292 */;
+import DomHandler from "DomHandler" /* 10290 */;
 
-let hasOwnProperty;
-
-
-export function getChildren(children) {
-  return DomHandler.hasChildren(children) ? children.children : [];
-}
-export function getParent(parent) {
-  return parent.parent || null;
-}
-export function getSiblings(parent) {
-  let next;
-  let prev;
-  if (null != (parent.parent || null)) {
-    return DomHandler.hasChildren(parent.parent || null) ? (parent.parent || null).children : [];
-  } else {
-    const items = [parent];
-    ({ prev, next } = parent);
-    if (null != prev) {
-      do {
-        let arr = items.unshift(prev);
-        prev = prev.prev;
-      } while (null != prev);
-    }
-    if (null != next) {
-      do {
-        let arr3 = items.push(next);
-        next = next.next;
-      } while (null != next);
-    }
-    return items;
+function find(fn, arg1, arg2, arg3) {
+  const items = [];
+  let tmp = arg1;
+  if (!Array.isArray(arg1)) {
+    const items1 = [arg1];
+    tmp = items1;
   }
+  let tmp2 = arg3;
+  const items2 = [tmp];
+  const items3 = [0];
+  while (true) {
+    if (items3[0] >= items2[0].length) {
+      if (1 === items3.length) {
+        return items;
+      } else {
+        let arr = items2.shift();
+        let arr2 = items3.shift();
+        continue;
+      }
+    } else {
+      let tmp13 = +items3[0];
+      items3[0] = tmp13 + 1;
+      let tmp14 = items2[0][tmp13];
+      let diff = tmp2;
+      if (fn(tmp14)) {
+        let arr3 = items.push(tmp14);
+        diff = tmp2 - 1;
+        if (diff <= 0) {
+          break;
+        }
+      }
+      let hasChildrenResult = arg2;
+      if (hasChildrenResult) {
+        hasChildrenResult = DomHandler.hasChildren(tmp14);
+      }
+      if (hasChildrenResult) {
+        hasChildrenResult = tmp14.children.length > 0;
+      }
+      tmp2 = diff;
+      if (!hasChildrenResult) {
+        continue;
+      } else {
+        let arr4 = items3.unshift(0);
+        let arr9 = items2.unshift(tmp14.children);
+        tmp2 = diff;
+        continue;
+      }
+      continue;
+    }
+  }
+  return items;
 }
-export function getAttributeValue(attribs, arg1) {
-  attribs = attribs.attribs;
+function findOne(fn, arg1, arg2) {
   let tmp;
-  if (null !== attribs) {
-    if (undefined !== attribs) {
-      tmp = attribs[arg1];
-    }
+  let flag = arg2;
+  if (undefined === arg2) {
+    flag = true;
   }
-  return tmp;
-}
-export function hasAttrib(attribs, arg1) {
-  let callResult = null != attribs.attribs;
-  if (callResult) {
-    const _Object = Object;
-    hasOwnProperty = Object.prototype.hasOwnProperty;
-    callResult = hasOwnProperty.call(attribs.attribs, arg1);
+  let arr = arg1;
+  if (!Array.isArray(arg1)) {
+    const items = [arg1];
+    arr = items;
   }
-  if (callResult) {
-    callResult = null != attribs.attribs[arg1];
-  }
-  return callResult;
-}
-export function getName(name) {
-  return name.name;
-}
-export function nextElementSibling(next) {
-  next = next.next;
-  let tmp = next;
-  if (null !== next) {
-    let iter = next;
-    tmp = next;
-    if (!DomHandler.isTag(next)) {
-      const next2 = iter.next;
-      tmp = next2;
-      while (null !== next2) {
-        iter = next2;
-        tmp = next2;
-        if (DomHandler.isTag(next2)) {
+  let num = 0;
+  if (0 < arr.length) {
+    while (true) {
+      tmp = arr[num];
+      let tmp2 = require;
+      if (DomHandler.isTag(tmp)) {
+        if (fn(tmp)) {
           break;
         }
       }
-    }
-  }
-  return tmp;
-}
-export function prevElementSibling(prev) {
-  prev = prev.prev;
-  let tmp = prev;
-  if (null !== prev) {
-    let tmp4 = prev;
-    tmp = prev;
-    if (!DomHandler.isTag(prev)) {
-      const prev2 = tmp4.prev;
-      tmp = prev2;
-      while (null !== prev2) {
-        tmp4 = prev2;
-        tmp = prev2;
-        if (DomHandler.isTag(prev2)) {
-          break;
+      if (flag) {
+        if (tmp2(10290).hasChildren(tmp)) {
+          if (tmp.children.length > 0) {
+            let tmp6 = findOne(fn, tmp.children, true);
+            if (tmp6) {
+              return tmp6;
+            }
+          }
         }
       }
+      num = num + 1;
+    }
+    return tmp;
+  }
+  return null;
+}
+
+export function filter(arg0, arg1, arg2, arg3) {
+  let flag = arg2;
+  if (undefined === arg2) {
+    flag = true;
+  }
+  let num = arg3;
+  if (undefined === arg3) {
+    num = Infinity;
+  }
+  let tmp2 = arg1;
+  const tmp = find;
+  if (!Array.isArray(arg1)) {
+    const items = [arg1];
+    tmp2 = items;
+  }
+  return tmp(arg0, tmp2, flag, num);
+}
+export { find };
+export function findOneChild(arg0, arr) {
+  return arr.find(arg0);
+}
+export { findOne };
+export function existsOne(arg0, arg1) {
+  const f99154 = (children) => {
+    let isTagResult = DomHandler.isTag(children);
+    if (isTagResult) {
+      isTagResult = closure_0(children);
+    }
+    if (!isTagResult) {
+      let hasChildrenResult = DomHandler.hasChildren(children);
+      if (hasChildrenResult) {
+        children = children.children;
+        const _Array = Array;
+        let obj = children;
+        if (!Array.isArray(children)) {
+          const items = [children];
+          obj = items;
+        }
+        hasChildrenResult = obj.some(f99154);
+      }
+      isTagResult = hasChildrenResult;
+    }
+    return isTagResult;
+  };
+  let closure_0 = arg0;
+  let obj = arg1;
+  if (!Array.isArray(arg1)) {
+    let items = [arg1];
+    obj = items;
+  }
+  return obj.some(f99154);
+}
+export function findAll(fn, arg1) {
+  const items = [];
+  let tmp = arg1;
+  if (!Array.isArray(arg1)) {
+    const items1 = [arg1];
+    tmp = items1;
+  }
+  const items2 = [tmp];
+  const items3 = [0];
+  while (true) {
+    if (items3[0] >= items2[0].length) {
+      if (1 === items2.length) {
+        break;
+      } else {
+        let arr = items2.shift();
+        let arr2 = items3.shift();
+        continue;
+      }
+    } else {
+      let tmp9 = +items3[0];
+      items3[0] = tmp9 + 1;
+      let tmp10 = items2[0][tmp9];
+      let tmp11 = require;
+      let tmp2 = DomHandler.isTag(tmp10) && fn(tmp10);
+      if (tmp2) {
+        let arr3 = items.push(tmp10);
+      }
+      let tmp4 = tmp11(10290).hasChildren(tmp10) && tmp10.children.length > 0;
+      if (!tmp4) {
+        continue;
+      } else {
+        let arr4 = items3.unshift(0);
+        let arr9 = items2.unshift(tmp10.children);
+        continue;
+      }
+      continue;
     }
   }
-  return tmp;
+  return items;
 }

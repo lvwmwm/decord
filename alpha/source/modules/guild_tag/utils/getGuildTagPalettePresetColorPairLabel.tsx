@@ -1,10 +1,10 @@
-// Module ID: 20391
-// Function ID: 20392
+// Module ID: 20386
+// Function ID: 20387
 // Name: getGuildTagPalettePresetColorPairLabel
 // Dependencies: [8344, 1113, 1380, 2]
 // Exports: default
 
-// Module 20391 (getGuildTagPalettePresetColorPairLabel)
+// Module 20386 (getGuildTagPalettePresetColorPairLabel)
 import intl27 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import GuildTagConstants from "GuildTagConstants" /* 8344 */;

@@ -1,14 +1,14 @@
-// Module ID: 17644
-// Function ID: 17645
+// Module ID: 17639
+// Function ID: 17640
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 8744, 21, 5243, 575, 17619, 10064, 8765, 5158, 15138, 5866, 1113, 17640, 2]
+// Dependencies: [19, 17, 8743, 21, 5243, 575, 17614, 10063, 8764, 5158, 15135, 5866, 1113, 17635, 2]
 // Exports: default
 
-// Module 17644 (VideoQuestModalHeader)
+// Module 17639 (VideoQuestModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 8744 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8765 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 8743 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8764 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -50,9 +50,9 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   const withTextShadow = showCurrentVideoTime.withTextShadow;
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp2 = closure_7();
-  let obj = quest(17619);
+  let obj = quest(17614);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj2 = quest(10064);
+  let obj2 = quest(10063);
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
   const tmp6 = useVideoQuestUIStore((arg0) => {
     let tmp = arg0.videoProgress[quest.id];
@@ -72,7 +72,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
     completedAt = userStatus.completedAt;
   }
   if (null == completedAt) {
-    const tmp3Result = quest(15138);
+    const tmp3Result = quest(15135);
     videoQuestProgressRemainingAccessibilityLabel = tmp3Result.getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp8);
   }
   let obj3 = { style: items, children: items2 };
@@ -100,6 +100,6 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
     }
   }
   items1[1] = closure_5(Text2, obj7);
-  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(17640), { iconColor: closeButtonIconColor, onClose })];
+  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(17635), { iconColor: closeButtonIconColor, onClose })];
   return closure_6(View, obj3);
 };

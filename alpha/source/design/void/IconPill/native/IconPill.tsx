@@ -1,10 +1,10 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16473
+// Function ID: 16474
 // Name: IconPill
 // Dependencies: [19, 17, 1083, 21, 5243, 575, 5875, 8056, 2]
 // Exports: default
 
-// Module 16478 (IconPill)
+// Module 16473 (IconPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;

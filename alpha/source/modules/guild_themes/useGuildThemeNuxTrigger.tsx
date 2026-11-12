@@ -1,13 +1,13 @@
-// Module ID: 18758
-// Function ID: 18759
+// Module ID: 18753
+// Function ID: 18754
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 5089, 5456, 9494, 5076, 2]
+// Dependencies: [32, 19, 5089, 5456, 9493, 5076, 2]
 // Exports: default
 
-// Module 18758 (useGuildThemeNuxTrigger)
+// Module 18753 (useGuildThemeNuxTrigger)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
 import GuildThemeResolver from "GuildThemeResolver" /* 5456 */;
-import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9494 */;
+import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9493 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

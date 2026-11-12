@@ -1,7 +1,7 @@
 // Module ID: 6861
 // Function ID: 6862
 // Name: MemberVerificationAlertActionCreators
-// Dependencies: [19, 21, 2017, 6206, 6862, 2118, 6864, 6868, 5873, 1113, 15945, 15947, 15949, 2]
+// Dependencies: [19, 21, 2017, 6206, 6862, 2118, 6864, 6868, 5873, 1113, 15940, 15942, 15944, 2]
 // Exports: closeMemberVerificationAlert, openMemberVerificationCancelPendingAlert, openMemberVerificationIncompleteAlert, openMemberVerificationPendingAlert, openMemberVerificationRejectedAlert, openMemberVerificationSuccessAlert, openMemberVerificationUpdateAlert
 
 // Module 6861 (MemberVerificationAlertActionCreators)
@@ -163,7 +163,7 @@ export function openMemberVerificationRejectedAlert(canWithdraw) {
   let obj5 = {
     importer() {
       let secondaryButton;
-      const promise = asyncRequire(15945, dependencyMap.paths);
+      const promise = asyncRequire(15940, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {
@@ -224,7 +224,7 @@ export function openMemberVerificationIncompleteAlert(guildId, arg1) {
   const obj3 = {
     isDismissable: true,
     importer() {
-      const promise = asyncRequire(15949, dependencyMap.paths);
+      const promise = asyncRequire(15944, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {

@@ -1,14 +1,14 @@
-// Module ID: 9602
-// Function ID: 9603
+// Module ID: 9601
+// Function ID: 9602
 // Name: announcement_modal_panel
-// Dependencies: [32, 1197, 9574, 9564, 9566, 9601, 2]
+// Dependencies: [32, 1197, 9573, 9563, 9565, 9600, 2]
 
-// Module 9602 (announcement_modal_panel)
+// Module 9601 (announcement_modal_panel)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9564 */;
-import cta_button from "cta_button" /* 9566 */;
-import theme_aware_asset from "theme_aware_asset" /* 9574 */;
-import announcement_modal_perk_card from "announcement_modal_perk_card" /* 9601 */;
+import localized_string from "localized_string" /* 9563 */;
+import cta_button from "cta_button" /* 9565 */;
+import theme_aware_asset from "theme_aware_asset" /* 9573 */;
+import announcement_modal_perk_card from "announcement_modal_perk_card" /* 9600 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

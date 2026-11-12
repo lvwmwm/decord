@@ -1,10 +1,10 @@
-// Module ID: 12649
-// Function ID: 12650
+// Module ID: 12643
+// Function ID: 12644
 // Name: openIgnoreThermalStateAlert
-// Dependencies: [5, 19, 21, 6206, 12650, 2118, 2]
+// Dependencies: [5, 19, 21, 6206, 12644, 2118, 2]
 // Exports: openIgnoreThermalStateAlert
 
-// Module 12649 (openIgnoreThermalStateAlert)
+// Module 12643 (openIgnoreThermalStateAlert)
 import Fragment from "Fragment" /* 21 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

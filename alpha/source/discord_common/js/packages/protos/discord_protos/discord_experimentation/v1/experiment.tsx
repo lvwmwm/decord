@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite10, internalBinaryWrite2, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite, internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite2, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
 
 let tmp;
 let tmp2;
@@ -594,7 +594,7 @@ class Experiment$Type extends MessageType {
     }
     if (id.archiveAt) {
       const Timestamp4 = timestamp.Timestamp;
-      const internalBinaryWrite11 = Timestamp4.internalBinaryWrite;
+      internalBinaryWrite11 = Timestamp4.internalBinaryWrite;
       const archiveAt = id.archiveAt;
       const tagResult35 = tag.tag(33, _mod1197.WireType.LengthDelimited);
       const result1 = internalBinaryWrite11(archiveAt, tagResult35.fork(), writeUnknownFields);
@@ -2061,7 +2061,6 @@ const items10 = [{ no: 1, name: "variation_id", kind: "scalar", T: 5 }, ];
 const obj30 = { no: 2, name: "buckets", kind: "message", repeat: 1, T: T18 };
 items10[1] = obj30;
 let tmp21 = new "internalBinaryRead"("discord_protos.discord_experimentation.v1.LifecyclePlan.VariationBuckets", items10, tmp6, LifecyclePlan_RampStep$Type, "create", LifecyclePlan_VariationBuckets$Type, "internalBinaryRead", items10, this, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, experimentType, tmp9, tmp10, tmp11, tmp12, tmp13, this, items41, this, items42, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, lifecyclePlan_MeasurementPlanType, lifecyclePlan_RolloutPlanType, exports, obj30, undefined, 8, 7, 6);
-const channelHistory = tmp21;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_experimentation/v1/experiment.tsx");
 
 export { Experiment_NumberLineSettings_Mode };

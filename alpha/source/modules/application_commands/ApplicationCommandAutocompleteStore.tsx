@@ -1,19 +1,19 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8939
+// Function ID: 8940
 // Name: ApplicationCommandAutocompleteStore
-// Dependencies: [8941, 1072, 1377, 2116, 6004, 504, 572, 2]
+// Dependencies: [8940, 1072, 1377, 2116, 6004, 504, 572, 2]
 
-// Module 8940 (ApplicationCommandAutocompleteStore)
+// Module 8939 (ApplicationCommandAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import Server from "Server" /* 2116 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8941 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8940 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
-let set, set2;
+let map3, set, set2;
 
 function handleInit() {
   map.clear();
@@ -64,7 +64,6 @@ class ApplicationCommandAutocompleteStore extends Store {
     this.waitFor(ApplicationCommandStore);
   }
   getLastErrored(id) {
-    let map3;
     let map4;
     if (!map1.has(id)) {
       set = map1.set;
@@ -100,7 +99,6 @@ class ApplicationCommandAutocompleteStore extends Store {
     return map1.get(id).lastErrored;
   }
   getAutocompleteChoices(id, name, query) {
-    let map3;
     let map4;
     if (!map1.has(id)) {
       set = map1.set;
@@ -142,7 +140,6 @@ class ApplicationCommandAutocompleteStore extends Store {
     return value2;
   }
   getAutocompleteLastChoices(id, name) {
-    let map3;
     let map4;
     if (!map1.has(id)) {
       set = map1.set;
@@ -179,7 +176,6 @@ class ApplicationCommandAutocompleteStore extends Store {
     return optionNameToLastResults.get(name);
   }
   getLastResponseNonce(id) {
-    let map3;
     let map4;
     if (!map1.has(id)) {
       set = map1.set;
@@ -224,7 +220,6 @@ let obj = {
   APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST: function handleApplicationCommandAutocompleteRequest(arg0) {
     let channelId;
     let contextKey;
-    let map3;
     let map4;
     let name;
     let nonce;
@@ -317,7 +312,6 @@ let obj = {
   },
   APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE: function handleApplicationCommandAutocompleteResponse(arg0) {
     let choices;
-    let map3;
     let map4;
     let nonce;
     ({ choices, nonce } = arg0);
@@ -436,7 +430,6 @@ let obj = {
     }
   },
   INTERACTION_FAILURE: function handleInteractionFailure(nonce) {
-    let map3;
     let map4;
     nonce = nonce.nonce;
     if (null == nonce) {

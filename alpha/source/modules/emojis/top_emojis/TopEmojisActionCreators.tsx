@@ -1,10 +1,10 @@
-// Module ID: 9484
-// Function ID: 9485
+// Module ID: 9483
+// Function ID: 9484
 // Name: TopEmojisActionCreators
 // Dependencies: [1072, 5304, 572, 1282, 2]
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen
 
-// Module 9484 (TopEmojisActionCreators)
+// Module 9483 (TopEmojisActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

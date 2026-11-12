@@ -1,9 +1,9 @@
-// Module ID: 8726
-// Function ID: 8727
+// Module ID: 8725
+// Function ID: 8726
 // Name: SlowmodeStore
-// Dependencies: [5092, 5175, 8727, 5087, 572, 1089, 504, 2]
+// Dependencies: [5092, 5175, 8726, 5087, 572, 1089, 504, 2]
 
-// Module 8726 (SlowmodeStore)
+// Module 8725 (SlowmodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;

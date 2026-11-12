@@ -1,10 +1,10 @@
-// Module ID: 20478
-// Function ID: 20479
+// Module ID: 20473
+// Function ID: 20474
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 8339, 5149, 8341, 1072, 21, 5839, 575, 504, 5180, 8338, 1084, 20420, 20467, 20466, 20464, 1113, 5866, 5957, 6274, 7680, 20476, 7888, 2185, 2]
+// Dependencies: [32, 19, 17, 8339, 5149, 8341, 1072, 21, 5839, 575, 504, 5180, 8338, 1084, 20415, 20462, 20461, 20459, 1113, 5866, 5957, 6274, 7680, 20471, 7888, 2185, 2]
 // Exports: default
 
-// Module 20478 (FinishingTouchesScreen)
+// Module 20473 (FinishingTouchesScreen)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5180 */;
@@ -67,7 +67,7 @@ export default function FinishingTouchesScreen() {
   let tmp14;
   let tmp4Result5;
   let tmp4Result6;
-  const f122208 = (item) => {
+  const f122218 = (item) => {
     const obj = PermissionUtilsAll;
     return obj.canEveryone(item, guild);
   };
@@ -87,8 +87,8 @@ export default function FinishingTouchesScreen() {
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
   const ONLY_MENTIONS = constants2.ONLY_MENTIONS;
   [first1, tmp11] = obj.useState(false);
-  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_9.some(f122208)), 2);
-  const tmp12 = _slicedToArray(obj.useState(!closure_9.some(f122208)), 2);
+  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_9.some(f122218)), 2);
+  const tmp12 = _slicedToArray(obj.useState(!closure_9.some(f122218)), 2);
   const first2 = _slicedToArray(obj.useState(tmp13), 1)[0];
   let prop1;
   const tmp8 = constants2;
@@ -146,11 +146,11 @@ export default function FinishingTouchesScreen() {
       }
     }
   }, []);
-  const tmp20 = tmp4(20467)();
-  const tmp2Result = guild(20466);
+  const tmp20 = tmp4(20462)();
+  const tmp2Result = guild(20461);
   const enableCommunitySharedStyles = tmp2Result.useEnableCommunitySharedStyles();
-  let obj4 = { headerRef: ref, currentStep: tmp2(20464).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1113).t.XGl4ba), children: items3 };
-  const EnableCommunityModalScreen = tmp2(20464).EnableCommunityModalScreen;
+  let obj4 = { headerRef: ref, currentStep: tmp2(20459).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1113).t.XGl4ba), children: items3 };
+  const EnableCommunityModalScreen = tmp2(20459).EnableCommunityModalScreen;
   intl = tmp2(1113).intl;
   let obj5 = { style: enableCommunitySharedStyles.content, children: items2 };
   const obj6 = { ref, accessibilityRole: "header", variant: "body-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(tmp2(1113).t.tInpJj, { number: 3, total: 3 }) };
@@ -173,7 +173,7 @@ export default function FinishingTouchesScreen() {
   const TableRowGroup = tmp2(7680).TableRowGroup;
   const obj11 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: closure_14(TableSwitchRow, obj12) };
   obj12 = { label: intl5.format(guild(1113).t.K8Eg4P, obj13), value: prop2 === tmp8.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: callback };
-  const tmp4Result = tmp4(20476);
+  const tmp4Result = tmp4(20471);
   TableSwitchRow = tmp2(7888).TableSwitchRow;
   intl5 = tmp2(1113).intl;
   prop2 = undefined;
@@ -189,7 +189,7 @@ export default function FinishingTouchesScreen() {
   items4 = [closure_14(tmp4Result, obj11), ];
   const obj15 = { formSwitchDisabled: first2, children: closure_14(TableSwitchRow2, obj16) };
   obj16 = { label: intl6.format(guild(1113).t.v8qCoG, obj17), value: tmp13, disabled: first2, onValueChange: tmp14 };
-  const tmp4Result4 = tmp4(20476);
+  const tmp4Result4 = tmp4(20471);
   TableSwitchRow2 = tmp2(7888).TableSwitchRow;
   intl6 = tmp2(1113).intl;
   obj17 = {

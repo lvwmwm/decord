@@ -1,20 +1,20 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12266
+// Function ID: 12267
 // Name: ChatBanner
-// Dependencies: [19, 17, 6737, 6952, 12273, 1072, 21, 5243, 575, 12274, 12275, 504, 11, 1252, 6004, 7811, 5866, 1113, 5873, 7223, 8798, 7364, 7808, 12276, 2]
+// Dependencies: [19, 17, 6737, 6952, 12267, 1072, 21, 5243, 575, 12268, 12269, 504, 11, 1252, 6004, 7811, 5866, 1113, 5873, 7223, 8797, 7364, 7808, 12270, 2]
 // Exports: default
 
-// Module 12272 (ChatBanner)
+// Module 12266 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7808 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7811 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8798 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 12273 */;
-import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 12274 */;
-import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 12275 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8797 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 12267 */;
+import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 12268 */;
+import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 12269 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
@@ -268,7 +268,7 @@ function NewMessagesChatBar(channel) {
       const PressableOpacity2 = tmp2(7364).PressableOpacity;
       intl2 = tmp2(1113).intl;
       obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
-      XSmallBoldIcon = tmp2(12276).XSmallBoldIcon;
+      XSmallBoldIcon = tmp2(12270).XSmallBoldIcon;
       items1[1] = closure_12(PressableOpacity2, obj6);
       tmp5 = closure_13(closure_4, obj2);
     }

@@ -1,9 +1,9 @@
-// Module ID: 20095
-// Function ID: 20096
+// Module ID: 20090
+// Function ID: 20091
 // Name: FrecencyUserSettingsManager
-// Dependencies: [5, 11347, 11346, 6906, 6306, 6946, 7006, 1231, 1082, 1362, 1089, 7816, 5073, 1232, 1233, 12, 2]
+// Dependencies: [5, 11341, 11340, 6906, 6306, 6946, 7006, 1231, 1082, 1362, 1089, 7816, 5073, 1232, 1233, 12, 2]
 
-// Module 20095 (FrecencyUserSettingsManager)
+// Module 20090 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;
@@ -12,8 +12,8 @@ import ApplicationConstants from "ApplicationConstants" /* 1362 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5073 */;
 import FrecencyStore2 from "FrecencyStore" /* 7006 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 11347 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 11346 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 11341 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 11340 */;
 import EmojiStore from "EmojiStore" /* 6906 */;
 import SoundboardStore from "SoundboardStore" /* 6306 */;
 import StickersPersistedStore from "StickersPersistedStore" /* 6946 */;

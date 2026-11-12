@@ -1,17 +1,17 @@
-// Module ID: 9395
-// Function ID: 9396
+// Module ID: 9394
+// Function ID: 9395
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 575, 5243, 5952, 9390, 5314, 8535, 5839, 9396, 1113, 1380, 9417, 8027, 9419, 2]
+// Dependencies: [19, 17, 21, 575, 5243, 5952, 9389, 5314, 8535, 5839, 9395, 1113, 1380, 9416, 8027, 9418, 2]
 // Exports: default
 
-// Module 9395 (WishlistItemCardBase)
+// Module 9394 (WishlistItemCardBase)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 5314 */;
 import useToken from "useToken" /* 5839 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
 import useUserProfileColors from "useUserProfileColors" /* 8535 */;
-import IndicatorDot from "IndicatorDot" /* 9419 */;
+import IndicatorDot from "IndicatorDot" /* 9418 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ function SourceIcon(toastText) {
     children: closure_5(HeartIcon, obj2)
   };
   obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  HeartIcon = toastText(9390).HeartIcon;
+  HeartIcon = toastText(9389).HeartIcon;
   return closure_5(closure_3, obj);
 }
 ({ Pressable: c3, View: closure_4, StyleSheet } = react_native);
@@ -125,7 +125,7 @@ export default function WishlistItemCardBase(backgroundColor) {
     obj6 = { width: size, aspectRatio: 1 };
   }
   items[2] = obj6;
-  const WISHLIST = tmp2(9396).WishlistItemSource.WISHLIST;
+  const WISHLIST = tmp2(9395).WishlistItemSource.WISHLIST;
   const intl = tmp2(1113).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl5.t.p3RmJF, { username: recipientName });
   const items1 = [accessibilityLabel, , ];
@@ -169,7 +169,7 @@ export default function WishlistItemCardBase(backgroundColor) {
   if (tmp17Result) {
     const obj9 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj10) };
     obj10 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-    CheckmarkLargeBoldIcon = tmp2(9417).CheckmarkLargeBoldIcon;
+    CheckmarkLargeBoldIcon = tmp2(9416).CheckmarkLargeBoldIcon;
     tmp17Result = tmp17(tmp18, obj9);
   }
   items3[1] = tmp17Result;

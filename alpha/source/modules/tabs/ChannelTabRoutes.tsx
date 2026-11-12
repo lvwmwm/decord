@@ -1,10 +1,10 @@
-// Module ID: 10211
-// Function ID: 10212
+// Module ID: 10209
+// Function ID: 10210
 // Name: ChannelTabRoutes
 // Dependencies: [1072, 5099, 5304, 1113, 5291, 4079, 2]
 // Exports: getRouteTabForLocation
 
-// Module 10211 (ChannelTabRoutes)
+// Module 10209 (ChannelTabRoutes)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;

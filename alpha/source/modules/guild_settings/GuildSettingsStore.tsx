@@ -29,7 +29,7 @@ import Constants from "Constants" /* 1072 */;
 import PublicGuildsConstants from "PublicGuildsConstants" /* 8341 */;
 import size from "module_2" /* 2 */;
 
-let c11, c12, c52, closure_56, closure_9, defaultGuildSettingsSection, map;
+let c11, c12, closure_56, closure_9, defaultGuildSettingsSection, map;
 
 let closure_23;
 let closure_24;
@@ -165,7 +165,7 @@ let c35 = false;
 let CLOSED = FormStates.CLOSED;
 let errors = {};
 let c38 = null;
-const fetchedEmbed = false;
+let c39 = false;
 let enabled = false;
 let channelId = null;
 let settings = null;
@@ -175,7 +175,7 @@ let c48 = 0;
 let NONE = MFALevels.NONE;
 let _location = null;
 let obj = { primaryCategoryId: DEFAULT_DISCOVERY_CATEGORY_ID, secondaryCategoryIds: [], keywords: [], emojiDiscoverabilityEnabled: true, partnerActionedTimestamp: null, partnerApplicationTimestamp: null, isPublished: false, automaticPages: false, reasonsToJoin: [], socialLinks: [], about: "" };
-const isGuildMetadataLoaded = false;
+let c52 = false;
 let obj2 = obj;
 let bans = null;
 const bansVersion = 0;

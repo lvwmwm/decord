@@ -1,9 +1,9 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 16832
+// Function ID: 16833
 // Name: setActivity
-// Dependencies: [32, 109, 5, 2162, 6698, 1072, 16804, 7243, 16797, 7239, 572, 16832, 6006, 7406, 12605, 12607, 12, 1089, 7249, 1252, 2]
+// Dependencies: [32, 109, 5, 2162, 6698, 1072, 16799, 7243, 16792, 7239, 572, 16827, 6006, 7406, 12599, 12601, 12, 1089, 7249, 1252, 2]
 
-// Module 16837 (setActivity)
+// Module 16832 (setActivity)
 import OAuth2Scopes from "OAuth2Scopes" /* 7243 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -11,7 +11,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Constants_mod from "Constants" /* 6698 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16804 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16799 */;
 import size from "module_2" /* 2 */;
 
 let c13, c14, c15, constants;

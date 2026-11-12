@@ -1,10 +1,10 @@
-// Module ID: 10350
-// Function ID: 10351
+// Module ID: 10348
+// Function ID: 10349
 // Name: useDefaultVariantIndex
 // Dependencies: [8434, 504, 8430, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 10350 (useDefaultVariantIndex)
+// Module 10348 (useDefaultVariantIndex)
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8434 */;
 import size from "module_2" /* 2 */;
 

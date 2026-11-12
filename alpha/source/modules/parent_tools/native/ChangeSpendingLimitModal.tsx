@@ -1,10 +1,10 @@
-// Module ID: 17319
-// Function ID: 17320
+// Module ID: 17314
+// Function ID: 17315
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 8674, 21, 5243, 575, 8095, 5866, 1113, 2685, 6785, 17320, 5952, 5951, 8142, 8144, 7354, 13979, 5873, 7190, 6274, 7553, 6888, 7427, 12434, 2]
+// Dependencies: [5, 19, 17, 8674, 21, 5243, 575, 8095, 5866, 1113, 2685, 6785, 17315, 5952, 5951, 8142, 8144, 7354, 13975, 5873, 7190, 6274, 7553, 6888, 7427, 12428, 2]
 // Exports: default
 
-// Module 17319 (ChangeSpendingLimitModal)
+// Module 17314 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import NavigatorHeader from "NavigatorHeader" /* 7427 */;
@@ -224,7 +224,7 @@ function ChangeSpendingLimitScreen(teenId) {
     const obj15 = { children: closure_8(Stack, obj2) };
     items[1] = closure_8(Stack2, obj4);
     const items4 = [tmp19(ModalContent2, obj15), ];
-    const ModalFooter2 = tmp2(13979).ModalFooter;
+    const ModalFooter2 = tmp2(13975).ModalFooter;
     const ButtonGroup = tmp2(6888).ButtonGroup;
     const Button2 = tmp2(5873).Button;
     if (tmp9) {
@@ -257,7 +257,7 @@ function ChangeSpendingLimitScreen(teenId) {
     const ModalContent = tmp2(8144).ModalContent;
     items6 = [closure_7(ModalContent, obj23), ];
     const obj25 = { children: closure_7(Button, obj26) };
-    const ModalFooter = tmp2(13979).ModalFooter;
+    const ModalFooter = tmp2(13975).ModalFooter;
     obj26 = { variant: "tertiary", text: intl.string(require("intl").t["ETE/oC"]), onPress: obj(6785).pop };
     Button = tmp2(5873).Button;
     intl = tmp2(1113).intl;
@@ -306,7 +306,7 @@ export default function ChangeSpendingLimitModal(teenId) {
     return obj;
   }, items);
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo, headerBackTitle: intl.string(teenId(1113).t["13/7kX"]) };
-  const Modal = teenId(12434).Modal;
+  const Modal = teenId(12428).Modal;
   intl = teenId(1113).intl;
   return closure_7(Modal, obj);
 };

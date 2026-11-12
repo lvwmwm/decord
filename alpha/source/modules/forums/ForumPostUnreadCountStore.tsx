@@ -1,9 +1,9 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9042
+// Function ID: 9043
 // Name: ForumPostUnreadCountStore
 // Dependencies: [6972, 5092, 6952, 504, 38, 572, 2]
 
-// Module 9043 (ForumPostUnreadCountStore)
+// Module 9042 (ForumPostUnreadCountStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

@@ -1,10 +1,10 @@
-// Module ID: 9342
-// Function ID: 9343
+// Module ID: 9341
+// Function ID: 9342
 // Name: ProductDetailsActionSheet
-// Dependencies: [32, 19, 17, 8419, 1074, 1072, 1083, 21, 3, 5243, 575, 5879, 5314, 5250, 1113, 7569, 2111, 9343, 8410, 9341, 8430, 9344, 9345, 9346, 7852, 7871, 9352, 9357, 9353, 6275, 1260, 1252, 504, 9358, 9366, 9370, 8431, 9372, 9375, 9377, 9386, 5507, 9387, 9455, 9457, 15378, 15388, 1187, 15389, 15404, 5503, 10390, 11610, 10366, 9657, 8530, 5873, 15407, 9339, 2]
+// Dependencies: [32, 19, 17, 8419, 1074, 1072, 1083, 21, 3, 5243, 575, 5879, 5314, 5250, 1113, 7569, 2111, 9342, 8410, 9340, 8430, 9343, 9344, 9345, 7852, 7871, 9351, 9356, 9352, 6275, 1260, 1252, 504, 9357, 9365, 9369, 8431, 9371, 9374, 9376, 9385, 5507, 9386, 9454, 9456, 15375, 15385, 1187, 15386, 15401, 5503, 10388, 11604, 10364, 9656, 8530, 5873, 15404, 9338, 2]
 // Exports: default
 
-// Module 9342 (ProductDetailsActionSheet)
+// Module 9341 (ProductDetailsActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
@@ -13,9 +13,9 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5503 */;
 import ButtonConstants from "ButtonConstants" /* 5879 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8430 */;
-import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 9339 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9353 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 10366 */;
+import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 9338 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9352 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 10364 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import "react";
 import react_mod from "react" /* 19 */;
@@ -117,7 +117,7 @@ function ProductDetailsActionSheetContent(product) {
   let tmp55;
   let tmp57;
   let type;
-  const f96901 = () => {
+  const f96912 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -258,8 +258,8 @@ function ProductDetailsActionSheetContent(product) {
   }, items3);
   const tmp39 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   closure_6 = tmp39;
-  [type, c7] = selectedProduct(obj2.useState(f96901), 2);
-  selectedProduct(obj2.useState(f96901), 2);
+  [type, c7] = selectedProduct(obj2.useState(f96912), 2);
+  selectedProduct(obj2.useState(f96912), 2);
   const tmp41 = c5((type) => {
     _undefined(type);
     _undefined2(type.type);
@@ -463,12 +463,12 @@ function ManagedProductDetailsActionSheetInner(skuId) {
   let ref1;
   const tmp = skuId;
   ({ analyticsLocations, stageCollectibleChangeForEditProfile } = skuId);
-  let obj = skuId(10390);
+  let obj = skuId(10388);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
   ({ state, retry } = collectiblesShopProduct);
-  const obj2 = skuId(11610);
+  const obj2 = skuId(11604);
   const getOrFetchPurchases = obj2.useGetOrFetchPurchases();
   let items = [product];
   ({ hasPreviouslyFetched, fetchPurchasesError } = getOrFetchPurchases);
@@ -483,7 +483,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
     }
     return googleSkuIds;
   }, items);
-  const obj4 = initialVariantIndex(9657);
+  const obj4 = initialVariantIndex(9656);
   set = obj4.useLoadedGoogleSkuIds(obj3);
   const everyResult = obj3.every((item) => set.has(item));
   const ref = ref1.useRef(null);
@@ -535,7 +535,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
     tmp10 = closure_14;
   } else {
     tmp10 = closure_14;
-    tmp11 = closure_14(tmp5(15407), {});
+    tmp11 = closure_14(tmp5(15404), {});
   }
 }
 function ProductDetailsActionSheetWithOrderCTX(skuId) {

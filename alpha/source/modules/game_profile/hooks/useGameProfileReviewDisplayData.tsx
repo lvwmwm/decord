@@ -1,14 +1,14 @@
-// Module ID: 10280
-// Function ID: 10281
+// Module ID: 10278
+// Function ID: 10279
 // Name: useGameProfileReviewDisplayData
-// Dependencies: [19, 10224, 10270, 2159, 1113, 10271, 2]
+// Dependencies: [19, 10222, 10268, 2159, 1113, 10269, 2]
 // Exports: useGameProfileReviewDisplayData
 
-// Module 10280 (useGameProfileReviewDisplayData)
+// Module 10278 (useGameProfileReviewDisplayData)
 import GameDetectionTypes from "GameDetectionTypes" /* 2159 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 10224 */;
-import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 10270 */;
-import GameProfileReviewUtils from "GameProfileReviewUtils" /* 10271 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 10222 */;
+import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 10268 */;
+import GameProfileReviewUtils from "GameProfileReviewUtils" /* 10269 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

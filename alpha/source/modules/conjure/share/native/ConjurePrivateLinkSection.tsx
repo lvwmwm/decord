@@ -1,10 +1,10 @@
-// Module ID: 13236
-// Function ID: 13237
+// Module ID: 13230
+// Function ID: 13231
 // Name: ConjurePrivateLinkSection
-// Dependencies: [5, 32, 19, 17, 21, 5243, 575, 13237, 13238, 13239, 7265, 5952, 1113, 4079, 13206, 5489, 13240, 2118, 6207, 6211, 7877, 5951, 10163, 7680, 7379, 7387, 5979, 13224, 5966, 12200, 5866, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5243, 575, 13231, 13232, 13233, 7265, 5952, 1113, 4079, 13200, 5489, 13234, 2118, 6207, 6211, 7877, 5951, 10161, 7680, 7379, 7387, 5979, 13218, 5966, 12194, 5866, 2]
 // Exports: default
 
-// Module 13236 (ConjurePrivateLinkSection)
+// Module 13230 (ConjurePrivateLinkSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
@@ -15,8 +15,8 @@ import ToastUtils from "ToastUtils" /* 5951 */;
 import useAlertStore from "useAlertStore" /* 6207 */;
 import AlertModal2 from "AlertModal" /* 6211 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import showShareActionSheet from "showShareActionSheet" /* 10163 */;
-import conjureShareLinkMaxAges from "conjureShareLinkMaxAges" /* 13237 */;
+import showShareActionSheet from "showShareActionSheet" /* 10161 */;
+import conjureShareLinkMaxAges from "conjureShareLinkMaxAges" /* 13231 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -85,7 +85,7 @@ export default function ConjurePrivateLinkSection(project) {
   let tmp2 = project;
   const tmp3 = dependencyMap;
   const tmp = closure_10();
-  [value, dependencyMap] = react.useState(project(13237).CONJURE_SHARE_LINK_DEFAULT_MAX_AGE);
+  [value, dependencyMap] = react.useState(project(13231).CONJURE_SHARE_LINK_DEFAULT_MAX_AGE);
   [first1, _slicedToArray] = react.useState(null);
   let tmp8 = _slicedToArray(react.useState(false), 2);
   [tmp9, c5] = tmp8;
@@ -262,7 +262,7 @@ export default function ConjurePrivateLinkSection(project) {
         return closure_1_2(arg0);
       }
     };
-    const tmp2 = asyncRequire(13240, dependencyMap.paths);
+    const tmp2 = asyncRequire(13234, dependencyMap.paths);
     intl = intl9.intl;
     prop = conjureShareLinkMaxAges.CONJURE_SHARE_LINK_MAX_AGES;
     openLazy(tmp2, "ConjurePrivateLinkMaxAge", obj, "stack");
@@ -319,11 +319,11 @@ export default function ConjurePrivateLinkSection(project) {
   intl3 = project(1113).intl;
   obj4 = { text: obj5.conjureShareLinkMaxAgeLabel(value) };
   TrailingText = project(7379).TableRow.TrailingText;
-  obj5 = project(13237);
+  obj5 = project(13231);
   items6 = [callback1(TableRow, obj2), , , ];
   let obj6 = { icon: callback1(TableRowIcon2, obj7), label: intl4.string(value(4079).wELODD), disabled: tmp9, onPress: callback };
   const TableRow2 = project(7379).TableRow;
-  obj7 = { IconComponent: project(13224).LinkPlusIcon };
+  obj7 = { IconComponent: project(13218).LinkPlusIcon };
   TableRowIcon2 = project(7387).TableRowIcon;
   intl4 = project(1113).intl;
   items6[1] = callback1(TableRow2, obj6);
@@ -338,7 +338,7 @@ export default function ConjurePrivateLinkSection(project) {
     items7 = [tmp21(TableRow3, obj9), ];
     const obj11 = { icon: callback1(TableRowIcon4, obj12), label: intl6.string(tmp2(1113).t.RDE0Sc), onPress: callback5 };
     const TableRow4 = tmp2(7379).TableRow;
-    obj12 = { IconComponent: tmp2(12200).ShareIcon };
+    obj12 = { IconComponent: tmp2(12194).ShareIcon };
     TableRowIcon4 = tmp2(7387).TableRowIcon;
     intl6 = tmp2(1113).intl;
     items7[1] = callback1(TableRow4, obj11);
@@ -349,7 +349,7 @@ export default function ConjurePrivateLinkSection(project) {
   if (isOwner) {
     const obj13 = { icon: callback1(TableRowIcon5, obj14), variant: "danger", label: intl7.string(value(4079).oq0hBy), disabled: tmp9, onPress: callback3 };
     const TableRow5 = tmp2(7379).TableRow;
-    obj14 = { IconComponent: tmp2(13206).RefreshIcon, variant: "danger" };
+    obj14 = { IconComponent: tmp2(13200).RefreshIcon, variant: "danger" };
     TableRowIcon5 = tmp2(7387).TableRowIcon;
     intl7 = tmp2(1113).intl;
     tmp21Result = tmp21(TableRow5, obj13);

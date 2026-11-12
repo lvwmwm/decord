@@ -3,14 +3,9 @@
 // Dependencies: []
 
 // Module 13823
-let obj2;
-const obj = { parse: obj2 };
-obj2 = {
-  prelude() {
-    return this.createSingleNodeList(this.MediaQueryList());
-  },
-  block() {
-    return this.Block(false);
+const obj = {
+  parse() {
+    return this.createSingleNodeList(this.Identifier());
   }
 };
 

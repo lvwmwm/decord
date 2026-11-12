@@ -1,10 +1,10 @@
-// Module ID: 14963
-// Function ID: 14964
+// Module ID: 14959
+// Function ID: 14960
 // Name: InstantInviteAgeText
 // Dependencies: [19, 17, 8396, 21, 5243, 504, 5866, 8397, 7364, 8394, 1113, 2]
 // Exports: default
 
-// Module 14963 (InstantInviteAgeText)
+// Module 14959 (InstantInviteAgeText)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;

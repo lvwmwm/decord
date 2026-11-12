@@ -1,9 +1,9 @@
-// Module ID: 11154
-// Function ID: 11155
+// Module ID: 11148
+// Function ID: 11149
 // Name: Carousel
 // Dependencies: [19, 17, 21, 5243, 575, 5314, 1187, 5535, 2]
 
-// Module 11154 (Carousel)
+// Module 11148 (Carousel)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import native2 from "native" /* 5314 */;

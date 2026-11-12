@@ -1,10 +1,10 @@
-// Module ID: 13163
-// Function ID: 13164
+// Module ID: 13157
+// Function ID: 13158
 // Name: ConjureMcpConnectionPanel
-// Dependencies: [32, 5, 19, 13164, 2]
+// Dependencies: [32, 5, 19, 13158, 2]
 // Exports: useMcpConnectionPanel
 
-// Module 13163 (ConjureMcpConnectionPanel)
+// Module 13157 (ConjureMcpConnectionPanel)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

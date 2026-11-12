@@ -1,10 +1,10 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10191
+// Function ID: 10192
 // Name: ReadStateUtils
 // Dependencies: [6952, 6895, 6896, 504, 2]
 // Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 10193 (ReadStateUtils)
+// Module 10191 (ReadStateUtils)
 import ReadStateConstants from "ReadStateConstants" /* 6896 */;
 import ReadStateStore from "ReadStateStore" /* 6952 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;

@@ -1,10 +1,10 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 11311
+// Function ID: 11312
 // Name: openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 1072, 21, 1252, 7209, 6704, 6206, 11318, 2118, 2]
+// Dependencies: [5, 19, 1072, 21, 1252, 7209, 6704, 6206, 11312, 2118, 2]
 // Exports: default
 
-// Module 11317 (openStickersPremiumUpsellAlert)
+// Module 11311 (openStickersPremiumUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6704 */;

@@ -1,11 +1,11 @@
-// Module ID: 14667
-// Function ID: 14668
+// Module ID: 14663
+// Function ID: 14664
 // Name: SearchFetchManager
-// Dependencies: [14665, 14666, 2]
+// Dependencies: [14661, 14662, 2]
 
-// Module 14667 (SearchFetchManager)
-import AbstractSearchFetchManager2 from "AbstractSearchFetchManager" /* 14665 */;
-import SearchFetcher from "SearchFetcher" /* 14666 */;
+// Module 14663 (SearchFetchManager)
+import AbstractSearchFetchManager2 from "AbstractSearchFetchManager" /* 14661 */;
+import SearchFetcher from "SearchFetcher" /* 14662 */;
 import size from "module_2" /* 2 */;
 
 const AbstractSearchFetchManager = AbstractSearchFetchManager2.AbstractSearchFetchManager;

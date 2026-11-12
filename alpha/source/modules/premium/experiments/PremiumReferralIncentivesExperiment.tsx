@@ -1,10 +1,10 @@
-// Module ID: 15182
-// Function ID: 15183
+// Module ID: 15179
+// Function ID: 15180
 // Name: PremiumReferralIncentivesExperiment
 // Dependencies: [1449, 2]
 // Exports: usePremiumReferralIncentivesVariant
 
-// Module 15182 (PremiumReferralIncentivesExperiment)
+// Module 15179 (PremiumReferralIncentivesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

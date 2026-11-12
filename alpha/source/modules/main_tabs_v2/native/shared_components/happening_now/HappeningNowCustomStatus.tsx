@@ -1,21 +1,21 @@
-// Module ID: 18674
-// Function ID: 18675
+// Module ID: 18669
+// Function ID: 18670
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 6005, 17800, 1083, 21, 5243, 575, 563, 6687, 10000, 18675, 18676, 9466, 8352, 17801, 1377, 5957, 10801, 1187, 5866, 2]
+// Dependencies: [5, 32, 19, 17, 6005, 17795, 1083, 21, 5243, 575, 563, 6687, 9999, 18670, 18671, 9465, 8352, 17796, 1377, 5957, 10795, 1187, 5866, 2]
 // Exports: CustomStatusActivityCard
 
-// Module 18674 (HappeningNowCustomStatus)
+// Module 18669 (HappeningNowCustomStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import ActivityEmojiDefault from "ActivityEmoji" /* 10801 */;
+import ActivityEmojiDefault from "ActivityEmoji" /* 10795 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 6005 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17800 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17795 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
@@ -128,7 +128,7 @@ export function CustomStatusActivityCard(user) {
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   let obj2 = { userId: user.id, guildId };
   let tmp10 = activity(6687)(obj2);
-  let obj3 = user(10000);
+  let obj3 = user(9999);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
   items1 = [activity.emoji];
   const effect = react.useEffect(() => {
@@ -227,7 +227,7 @@ export function CustomStatusActivityCard(user) {
   if (null != activity.emoji) {
     num = 1;
   }
-  const tmp6Result = user(9466);
+  const tmp6Result = user(9465);
   const gameMentionsAsPlainText = tmp6Result.useGameMentionsAsPlainText(activity.state);
   const items2 = [userTitle, , ];
   const tmp6Result3 = user(8352);
@@ -236,7 +236,7 @@ export function CustomStatusActivityCard(user) {
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(17801);
+  const tmp9Result = activity(17796);
   if (fullwidth) {
     str = "full";
   }
@@ -258,7 +258,7 @@ export function CustomStatusActivityCard(user) {
       tmp15Result3 = tmp15Result;
     } else {
       let obj9 = { emoji: activity.emoji, size: v32, style: tmp.largeEmoji, animate: false };
-      tmp15Result3 = tmp15(tmp9(10801), obj9);
+      tmp15Result3 = tmp15(tmp9(10795), obj9);
     }
     items4 = [tmp15Result3, ];
     items4[1] = items1.map((item, index) => {
@@ -286,7 +286,7 @@ export function CustomStatusActivityCard(user) {
     const Avatar = tmp6(1187).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_11(user(17801).HappeningNowCardHeader, obj12);
+    items6[1] = closure_11(user(17796).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -312,7 +312,7 @@ export function CustomStatusActivityCard(user) {
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(17801).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(17796).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "body-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
     items8[1] = closure_11(user(5866).Text, obj19);
     items7[1] = closure_12(View, obj17);

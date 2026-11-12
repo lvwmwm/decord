@@ -1,17 +1,17 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 10826
+// Function ID: 10827
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10833, 6796, 5097, 6972, 5096, 7815, 5092, 8663, 5114, 5175, 6952, 5185, 5146, 6895, 1385, 1072, 10834, 21, 7612, 2118, 6837, 1113, 10835, 8410, 5964, 8069, 5891, 10837, 10838, 10839, 5966, 6785, 10851, 3629, 10876, 1099, 10878, 8007, 10880, 10912, 4079, 10913, 5489, 10915, 10469, 10461, 10918, 8394, 10472, 7811, 5430, 7483, 10920, 8095, 10921, 10922, 10924, 10926, 10927, 10929, 7569, 7808, 10931, 10933, 7817, 7812, 10934, 10856, 8006, 10936, 10937, 7952, 8004, 10938, 15036, 6003, 6840, 11267, 12002, 15037, 15038, 12206, 15039, 7567, 6854, 10502, 5970, 8078, 11568, 7877, 5951, 7852, 7871, 10882, 504, 5100, 6996, 9040, 5068, 7654, 1187, 15042, 11837, 15043, 15051, 7197, 15056, 15057, 1449, 12791, 15059, 10449, 7885, 1624, 11838, 7887, 2]
+// Dependencies: [5, 19, 10827, 6796, 5097, 6972, 5096, 7815, 5092, 8663, 5114, 5175, 6952, 5185, 5146, 6895, 1385, 1072, 10828, 21, 7612, 2118, 6837, 1113, 10829, 8410, 5964, 8069, 5891, 10831, 10832, 10833, 5966, 6785, 10845, 3629, 10870, 1099, 10872, 8007, 10874, 10906, 4079, 10907, 5489, 10909, 10467, 10459, 10912, 8394, 10470, 7811, 5430, 7483, 10914, 8095, 10915, 10916, 10918, 10920, 10921, 10923, 7569, 7808, 10925, 10927, 7817, 7812, 10928, 10850, 8006, 10930, 10931, 7952, 8004, 10932, 15032, 6003, 6840, 11261, 11996, 15033, 15034, 12200, 15035, 7567, 6854, 10500, 5970, 8078, 11562, 7877, 5951, 7852, 7871, 10876, 504, 5100, 6996, 9039, 5068, 7654, 1187, 15038, 11831, 15039, 15047, 7197, 15052, 15053, 1449, 12785, 15055, 10447, 7885, 1624, 11832, 7887, 2]
 // Exports: default
 
-// Module 10832 (ChannelLongPressActionSheet)
+// Module 10826 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 5100 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 7887 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10833 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10834 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 12791 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10827 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10828 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 12785 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6796 */;
@@ -127,7 +127,6 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
 };
 function ChannelLongPressActionSheetConnected(channel) {
   let ActionSheet;
-  let ActionSheetIconHeader;
   let CopyIcon;
   let canConnect;
   let canCreateInstantInvite;
@@ -139,6 +138,7 @@ function ChannelLongPressActionSheetConnected(channel) {
   let constants6;
   let currentUser;
   let currentlySelectedChannelId;
+  let header;
   let intl;
   let intl12;
   let intl14;
@@ -171,9 +171,6 @@ function ChannelLongPressActionSheetConnected(channel) {
   let items16;
   let items18;
   let obj58;
-  let obj59;
-  let subtitle;
-  let title;
   let tmp24;
   let tmp25;
   let tmp5Result30;
@@ -218,7 +215,7 @@ function ChannelLongPressActionSheetConnected(channel) {
     isFavorite = obj2.isFavorite;
     null != channel.parent_id && UserGuildSettingsStore.isChannelOptedIn(tmp, channel.parent_id);
     if (tmp == null) {
-      tmp = dehydratedItems;
+      tmp = map2;
     }
     return obj;
   });
@@ -1173,7 +1170,7 @@ function ChannelLongPressActionSheetConnected(channel) {
     obj58 = {
       showGradient: true,
       startExpanded: tmp5Result30.isMetaQuest(),
-      header: tmp24(ActionSheetIconHeader, obj59),
+      header,
       children: items14.map((buttons) => {
           buttons = buttons.buttons;
           const Group = ActionSheetRow2.ActionSheetRow.Group;
@@ -1207,32 +1204,11 @@ function ChannelLongPressActionSheetConnected(channel) {
         })
     };
     ActionSheet = tmp5(tmp2[114]).ActionSheet;
-    const header = tmp50.header;
-    let icon;
+    header = tmp50.header;
     tmp5Result30 = tmp5(tmp2[115]);
-    ActionSheetIconHeader = tmp5(tmp2[116]).ActionSheetIconHeader;
-    if (header != null) {
-      icon = header.icon;
-    }
-    if (icon == null) {
-      icon = tmp25;
-    }
-    const header2 = tmp50.header;
-    obj59 = { icon, title, subtitle };
-    title = undefined;
-    if (header2 != null) {
-      title = header2.title;
-    }
-    if (title == null) {
-      title = tmpResultResult;
-    }
-    const header3 = tmp50.header;
-    subtitle = undefined;
-    if (header3 != null) {
-      subtitle = header3.subtitle;
-    }
-    if (subtitle == null) {
-      subtitle = formatToPlainStringResult;
+    if (header == null) {
+      const obj59 = { icon: tmp25, title: tmpResultResult, subtitle: formatToPlainStringResult };
+      header = tmp24(tmp5(tmp2[116]).ActionSheetIconHeader, obj59);
     }
     return tmp24(AnalyticsLocationProvider, obj57);
   }

@@ -1,11 +1,11 @@
-// Module ID: 19579
-// Function ID: 19580
+// Module ID: 19574
+// Function ID: 19575
 // Name: getRestrictedHiddenMediaCount
-// Dependencies: [9116, 6729, 2]
+// Dependencies: [9115, 6729, 2]
 // Exports: default
 
-// Module 19579 (getRestrictedHiddenMediaCount)
-import formatMessageForwards from "formatMessageForwards" /* 9116 */;
+// Module 19574 (getRestrictedHiddenMediaCount)
+import formatMessageForwards from "formatMessageForwards" /* 9115 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

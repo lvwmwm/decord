@@ -1,10 +1,10 @@
-// Module ID: 15734
-// Function ID: 15735
+// Module ID: 15729
+// Function ID: 15730
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1072, 5089, 21, 5243, 575, 1196, 1113, 11968, 5068, 5076, 9494, 5866, 8537, 5974, 7364, 7483, 2]
+// Dependencies: [32, 19, 17, 1072, 5089, 21, 5243, 575, 1196, 1113, 11962, 5068, 5076, 9493, 5866, 8537, 5974, 7364, 7483, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 15734 (UserProfilePrivacyNotice)
+// Module 15729 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -16,8 +16,8 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */
 import Text_Text from "Text/Text" /* 5866 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5974 */;
 import XSmallIcon from "XSmallIcon" /* 7483 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9494 */;
-import useUserIsTeen from "useUserIsTeen" /* 11968 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9493 */;
+import useUserIsTeen from "useUserIsTeen" /* 11962 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

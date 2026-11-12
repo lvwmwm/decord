@@ -1,13 +1,13 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14037
+// Function ID: 14038
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1385, 5157, 1072, 21, 5243, 9138, 5836, 1252, 14040, 5952, 1113, 6277, 5866, 6288, 10850, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 5157, 1072, 21, 5243, 9137, 5836, 1252, 14036, 5952, 1113, 6277, 5866, 6288, 10844, 2]
 // Exports: default
 
-// Module 14041 (GuildEnableCommunicationAlert)
+// Module 14037 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CountDownDefault from "CountDown" /* 10850 */;
+import CountDownDefault from "CountDown" /* 10844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -116,7 +116,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const tmp2 = closure_12();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  let closure_3 = obj(userId(9138)(userId, guildId), 1)[0];
+  let closure_3 = obj(userId(9137)(userId, guildId), 1)[0];
   userId(5836)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type: metroImportDefault, guild_id: guildId, other_user_id: userId };

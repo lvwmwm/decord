@@ -1,10 +1,10 @@
-// Module ID: 11082
-// Function ID: 11083
+// Module ID: 11076
+// Function ID: 11077
 // Name: ReactionNotification
-// Dependencies: [19, 17, 5244, 10963, 1072, 1083, 21, 5243, 1357, 575, 5068, 11007, 5866, 1411, 11083, 7828, 1113, 5889, 10962, 10981, 10982, 11013, 10828, 1187, 7654, 12, 6686, 504, 6785, 6000, 10964, 11015, 2118, 11024, 11028, 2]
+// Dependencies: [19, 17, 5244, 10957, 1072, 1083, 21, 5243, 1357, 575, 5068, 11001, 5866, 1411, 11077, 7828, 1113, 5889, 10956, 10975, 10976, 11007, 10822, 1187, 7654, 12, 6686, 504, 6785, 6000, 10958, 11009, 2118, 11018, 11022, 2]
 // Exports: default
 
-// Module 11082 (ReactionNotification)
+// Module 11076 (ReactionNotification)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -19,15 +19,15 @@ import transitionToChannel from "transitionToChannel" /* 6000 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import GuildIcon from "GuildIcon" /* 7654 */;
 import EmojiDefault from "Emoji" /* 7828 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10828 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10962 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10964 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 10981 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 11007 */;
-import ForumPostReactionButton from "ForumPostReactionButton" /* 11083 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10822 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 10956 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10958 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 10975 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 11001 */;
+import ForumPostReactionButton from "ForumPostReactionButton" /* 11077 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10963 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10957 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -77,7 +77,7 @@ function ReactionNotificationBody(arg0) {
     tmp8Result2 = null;
     if (null != messagePreview) {
       const obj4 = { message: messagePreview, lineClamp: 1, maxHeight: metroRequire, textColor: "text-subtle", gradientStyles, gradientColors };
-      tmp8Result2 = tmp8(tmp2(10982).NativeChannelRowPreview, obj4);
+      tmp8Result2 = tmp8(tmp2(10976).NativeChannelRowPreview, obj4);
     }
   }
   children[2] = tmp8Result2;
@@ -114,7 +114,7 @@ function ReactionNotificationBodyWrapper(arg0) {
   react = tmp4;
   const AnimateEmoji = message(5068).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
-  let obj = message(11007);
+  let obj = message(11001);
   const previewableMedia = obj.usePreviewableMedia(message);
   const items = [setting, reaction, , , ];
   ({ imageEmoji: arr[2], textEmoji: arr[3], italic: arr[4] } = tmp4);
@@ -244,9 +244,9 @@ function ReactionNotificationBodyWrapper(arg0) {
     return { text, secondaryText: null };
   }, items1);
   ({ secondaryText, text } = memo);
-  let obj2 = message(10962);
+  let obj2 = message(10956);
   const hasPreviewableMedia = obj2.useHasPreviewableMedia(message);
-  let obj3 = message(11013);
+  let obj3 = message(11007);
   if (hasPreviewableMedia) {
     message = obj3.useGetInitialMessagePreview({ message });
   }
@@ -444,7 +444,7 @@ export default function ReactionNotification(notification) {
   const callback1 = obj.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { channelId: id };
-    return obj.pushLazy(asyncRequire(11015, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
+    return obj.pushLazy(asyncRequire(11009, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
   }, items4);
   let obj3 = { icon: closure_10(ReactorNotificationIcon, { notification, isMilestone: result }), accessoryLabelNode: tmp14Result, header: memo1, onPress: callback, onSettingsPress: callback1, notification, rightAccessory: closure_10(notification(guild[34]).MediaPreviewRightAccessory, { message }), children: closure_10(id1, obj4) };
   const NotificationPressable = tmp3(tmp4[33]).NotificationPressable;

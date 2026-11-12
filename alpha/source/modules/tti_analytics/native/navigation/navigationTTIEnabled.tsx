@@ -1,15 +1,15 @@
-// Module ID: 19175
-// Function ID: 19176
+// Module ID: 19170
+// Function ID: 19171
 // Name: navigationTTIEnabled
-// Dependencies: [16722, 19176, 2]
+// Dependencies: [16717, 19171, 2]
 // Exports: isNavigationTTIEnabled
 
-// Module 19175 (navigationTTIEnabled)
-import isTTITest from "isTTITest" /* 16722 */;
+// Module 19170 (navigationTTIEnabled)
+import isTTITest from "isTTITest" /* 16717 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationTTIExperiment2 = tmp(19176);
+const NavigationTTIExperiment2 = tmp(19171);
 const result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/navigationTTIEnabled.tsx");
 
 export function isNavigationTTIEnabled() {

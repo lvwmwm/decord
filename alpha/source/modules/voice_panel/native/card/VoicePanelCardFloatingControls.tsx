@@ -1,9 +1,9 @@
-// Module ID: 19880
-// Function ID: 19881
+// Module ID: 19875
+// Function ID: 19876
 // Name: VoicePanelCardFloatingControls
-// Dependencies: [19, 17, 5244, 5091, 6757, 6008, 11925, 11923, 11928, 1072, 5920, 21, 1652, 1187, 5243, 575, 11924, 19841, 19881, 13013, 19882, 19839, 1113, 12928, 10529, 10528, 7656, 19883, 7557, 5876, 19837, 6799, 6745, 12657, 19739, 19885, 19886, 504, 19865, 19887, 5314, 10583, 10396, 9314, 10394, 10219, 10587, 19888, 5505, 7852, 8410, 10541, 6687, 10000, 5866, 10752, 19782, 2]
+// Dependencies: [19, 17, 5244, 5091, 6757, 6008, 11919, 11917, 11922, 1072, 5920, 21, 1652, 1187, 5243, 575, 11918, 19836, 19876, 13007, 19877, 19834, 1113, 12922, 10527, 10526, 7656, 19878, 7557, 5876, 19832, 6799, 6745, 12651, 19734, 19880, 19881, 504, 19860, 19882, 5314, 10581, 10394, 9313, 10392, 10217, 10585, 19883, 5505, 7852, 8410, 10539, 6687, 9999, 5866, 10746, 19777, 2]
 
-// Module 19880 (VoicePanelCardFloatingControls)
+// Module 19875 (VoicePanelCardFloatingControls)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -16,29 +16,29 @@ import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
 import StreamActionCreators from "StreamActionCreators" /* 6799 */;
 import NativeViewDefault from "NativeView" /* 7656 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
-import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 10394 */;
-import useResolveGameDefault from "useResolveGame" /* 10396 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 10528 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 10529 */;
-import usePlayingGameActivitiesDefault from "usePlayingGameActivities" /* 10583 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11923 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11924 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11928 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 12657 */;
-import VoiceXIcon from "VoiceXIcon" /* 12928 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19739 */;
-import useStableParticipant from "useStableParticipant" /* 19837 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19839 */;
-import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 19865 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19886 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10217 */;
+import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 10392 */;
+import useResolveGameDefault from "useResolveGame" /* 10394 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 10526 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 10527 */;
+import usePlayingGameActivitiesDefault from "usePlayingGameActivities" /* 10581 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11917 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11918 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11922 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 12651 */;
+import VoiceXIcon from "VoiceXIcon" /* 12922 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19734 */;
+import useStableParticipant from "useStableParticipant" /* 19832 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19834 */;
+import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 19860 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19881 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
 import CallConstants from "CallConstants" /* 5920 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -59,10 +59,10 @@ let closure_17;
 let closure_18;
 let tmp;
 let tmp10;
-const useGameProfileObscuredDefault = tmp(9314);
-const GuildTagDefault = tmp(10587);
-const AssetRegistryDefault2 = tmp10(19887);
-const GameTagChipletDefault = tmp(19888);
+const useGameProfileObscuredDefault = tmp(9313);
+const GuildTagDefault = tmp(10585);
+const AssetRegistryDefault2 = tmp10(19882);
+const GameTagChipletDefault = tmp(19883);
 function StreamIcon(voicePlatform) {
   let items2;
   let tmp4;
@@ -99,13 +99,13 @@ function StreamIcon(voicePlatform) {
   VoicePanelCardFloatingControlsTsx1.__workletHash = 5506814510669;
   VoicePanelCardFloatingControlsTsx1.__initData = tmp4;
   const animatedStyle = obj.useAnimatedStyle(VoicePanelCardFloatingControlsTsx1);
-  let tmp2Result = tmp2(19841);
+  let tmp2Result = tmp2(19836);
   if (voicePlatform === constants2.XBOX) {
-    tmp2Result = tmp2(19881);
+    tmp2Result = tmp2(19876);
   } else if (voicePlatform === constants2.MOBILE) {
-    tmp2Result = tmp2(13013);
+    tmp2Result = tmp2(13007);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp2Result = tmp2(19882);
+    tmp2Result = tmp2(19877);
   }
   const obj2 = { source: tmp2Result, style: items2 };
   items2 = [tmp.iconWithoutBackground, animatedStyle];
@@ -167,7 +167,7 @@ function AnimatedLabelIcon(icon) {
     const tmp9 = NativeViewDefault;
     intl2 = tmp2(1113).intl;
     obj13 = { size: "xs", color: nativeDefault.colors.WHITE };
-    StageModeratorIcon = tmp2(19883).StageModeratorIcon;
+    StageModeratorIcon = tmp2(19878).StageModeratorIcon;
     return authStore3(tmp9, obj12);
   } else if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     const obj = { style: tmp.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: intl.string(intl6.t.HFwRpk), children: authStore3(CircleErrorIcon, obj14) };
@@ -277,7 +277,7 @@ let closure_32 = react.memo(function CloseButton(participant) {
   participant = participant.participant;
   let guildId;
   ({ controlsHidden, isSelf, layout } = participant);
-  guildId = react.useContext(guildId(11924)).guildId;
+  guildId = react.useContext(guildId(11918)).guildId;
   const items = [guildId, participant];
   const tmp = closure_23();
   const tmp2 = useControlsHideStyles(controlsHidden, closure_27);
@@ -306,9 +306,9 @@ let closure_32 = react.memo(function CloseButton(participant) {
       const result = leaveEmbeddedActivity(obj2);
     }
   }, items);
-  obj2 = { icon: guildId(19885), onPress: callback, accessibilityLabel: stringResult };
-  tmp6 = guildId(19739);
-  const obj3 = participant(19837);
+  obj2 = { icon: guildId(19880), onPress: callback, accessibilityLabel: stringResult };
+  tmp6 = guildId(19734);
+  const obj3 = participant(19832);
   let result = obj3.isStableActivityParticipant(participant);
   const intl = participant(1113).intl;
   const string = intl.string;
@@ -652,7 +652,7 @@ let closure_48 = react.memo(function FloatingParticipantLabel(controlsHidden) {
   let tmp32;
   let tmp33;
   let tmp37;
-  const f120513 = (type) => type.type !== channelId(analyticsLocations[21]).VoicePanelCardUserStateIconType.STREAM_ICON;
+  const f120522 = (type) => type.type !== channelId(analyticsLocations[21]).VoicePanelCardUserStateIconType.STREAM_ICON;
   ({ label, layout, participant } = controlsHidden);
   channelId = undefined;
   let id;
@@ -696,7 +696,7 @@ let closure_48 = react.memo(function FloatingParticipantLabel(controlsHidden) {
   const tmp4Result7 = tmp4(tmp2[53]);
   const displayNameStylesFont = tmp4Result7.useDisplayNameStylesFont({ displayNameStyles: tmp12 });
   const length = tmpResultResult.length;
-  const items1 = [closure_45, tmpResultResult.filter(f120513).length >= 1, focused, connected, mode, closure_10, controlsHidden];
+  const items1 = [closure_45, tmpResultResult.filter(f120522).length >= 1, focused, connected, mode, closure_10, controlsHidden];
   let c0;
   let c1;
   let c2;
@@ -704,7 +704,7 @@ let closure_48 = react.memo(function FloatingParticipantLabel(controlsHidden) {
   let c4;
   let c5;
   [tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20] = items1;
-  const length2 = tmpResultResult.filter(f120513).length;
+  const length2 = tmpResultResult.filter(f120522).length;
   const tmp4Result8 = tmp4(tmp2[12]);
   class VoicePanelCardFloatingControlsTsx10 {
     constructor() {
@@ -884,13 +884,13 @@ const memoResult = react.memo(function FloatingControls(arg0) {
   ({ isRinging, layout } = arg0);
   let guildId;
   let tmp = guildId;
-  const context = react.useContext(guildId(11924));
+  const context = react.useContext(guildId(11918));
   guildId = context.guildId;
   ({ channelId, controlsSpecs, focused, mode } = context);
   let obj = participant(504);
   const items = [RTCConnectionStore];
   let stateFromStores = obj.useStateFromStores(items, () => connected.isConnected());
-  const obj2 = participant(19837);
+  const obj2 = participant(19832);
   const items1 = [EmbeddedActivitiesStore, ApplicationStreamingStore];
   const tmp6 = obj2.isStableParticipantWithUser(participant) && participant.isSelf;
   const tmp4Result = participant(504);
@@ -917,7 +917,7 @@ const memoResult = react.memo(function FloatingControls(arg0) {
   let c3;
   let c4;
   [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14] = items2;
-  const tmp8 = tmp(19782)(guildId, channelId, participant.id);
+  const tmp8 = tmp(19777)(guildId, channelId, participant.id);
   const tmp4Result3 = participant(1652);
   class VoicePanelCardFloatingControlsTsx13 {
     constructor() {
@@ -953,7 +953,7 @@ const memoResult = react.memo(function FloatingControls(arg0) {
   }
   if (stateFromStores) {
     const obj6 = { controlsHidden: derivedValue, participantId: participant.id, targetName: label, isActivityParticipant: tmp4Result4.isStableActivityParticipant(participant), layout };
-    tmp4Result4 = participant(19837);
+    tmp4Result4 = participant(19832);
     stateFromStores = closure_16(closure_34, obj6);
   }
   children[2] = stateFromStores;

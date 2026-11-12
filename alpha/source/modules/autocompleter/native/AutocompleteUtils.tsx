@@ -1,10 +1,10 @@
-// Module ID: 11172
-// Function ID: 11173
+// Module ID: 11166
+// Function ID: 11167
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 5096, 5173, 5185, 1385, 1072, 11173, 6283, 21, 5243, 575, 5891, 9308, 6899, 5309, 8045, 2]
+// Dependencies: [19, 17, 5096, 5173, 5185, 1385, 1072, 11167, 6283, 21, 5243, 575, 5891, 9307, 6899, 5309, 8045, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 11172 (autocompleter/AutocompleteUtils)
+// Module 11166 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,13 +12,13 @@ import ChannelRecord from "ChannelRecord" /* 5096 */;
 import useChannelName from "useChannelName" /* 5891 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6899 */;
 import FormDividerDefault from "FormDivider" /* 8045 */;
-import TimestampUtils from "TimestampUtils" /* 9308 */;
+import TimestampUtils from "TimestampUtils" /* 9307 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 5173 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11173 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11167 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6283 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 12647
-// Function ID: 12648
+// Module ID: 12641
+// Function ID: 12642
 // Name: useIsRemote
 // Dependencies: [6009, 504, 2]
 // Exports: default
 
-// Module 12647 (useIsRemote)
+// Module 12641 (useIsRemote)
 import get_initialized from "get initialized" /* 504 */;
 import GameConsoleStore from "GameConsoleStore" /* 6009 */;
 import size from "module_2" /* 2 */;

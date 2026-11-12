@@ -1,18 +1,18 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 10062
+// Function ID: 10063
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1385, 21, 5243, 575, 10061, 5489, 10064, 10083, 8747, 1113, 504, 5503, 6274, 15146, 5866, 2]
+// Dependencies: [19, 17, 1385, 21, 5243, 575, 10060, 5489, 10063, 10082, 8746, 1113, 504, 5503, 6274, 15143, 5866, 2]
 // Exports: default
 
-// Module 10063 (QuestRewardDetailsBottomSheet)
+// Module 10062 (QuestRewardDetailsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 8747 */;
-import QuestUtils from "QuestUtils" /* 10061 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10064 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10083 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 8746 */;
+import QuestUtils from "QuestUtils" /* 10060 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10063 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10082 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -57,14 +57,14 @@ function QuestRewardDetailsBottomSheet(quest) {
   let obj = quest(504);
   const items2 = [UserStore];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const obj2 = quest(10083);
+  const obj2 = quest(10082);
   const defaultRewardName = obj2.getDefaultRewardName(quest.config, stateFromStores);
   const BottomSheet = quest(5503).BottomSheet;
   const obj3 = { direction: "vertical", spacing: memo(575).space.PX_16, style: tmp.wrapper, children: items5 };
   const Stack = quest(6274).Stack;
   const obj4 = { align: "center", direction: "horizontal", spacing: memo(575).space.PX_16, children: items3 };
   const Stack2 = quest(6274).Stack;
-  items3 = [closure_6(memo(15146), { quest, height: 56, width: 56, withAnimation: true }), ];
+  items3 = [closure_6(memo(15143), { quest, height: 56, width: 56, withAnimation: true }), ];
   const obj5 = { direction: "vertical", spacing: memo(575).space.PX_4, style: tmp.rewardDetailsCopy, children: items4 };
   const Stack3 = quest(6274).Stack;
   const obj6 = { variant: "body-sm/medium", color: "text-subtle", children: intl.string(quest(1113).t["jyYgZ+"]) };

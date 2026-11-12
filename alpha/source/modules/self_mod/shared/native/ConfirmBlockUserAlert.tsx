@@ -1,17 +1,17 @@
-// Module ID: 12000
-// Function ID: 12001
+// Module ID: 11994
+// Function ID: 11995
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1385, 11963, 21, 5243, 575, 504, 12001, 5309, 8072, 6852, 12002, 6277, 5873, 1113, 5866, 2]
+// Dependencies: [19, 17, 1385, 11957, 21, 5243, 575, 504, 11995, 5309, 8072, 6852, 11996, 6277, 5873, 1113, 5866, 2]
 // Exports: default
 
-// Module 12000 (ConfirmBlockUserAlert)
+// Module 11994 (ConfirmBlockUserAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import components_Button_Button from "components/Button/Button" /* 5873 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8072 */;
-import Constants from "Constants" /* 11963 */;
-import ReportModals from "ReportModals" /* 12002 */;
+import Constants from "Constants" /* 11957 */;
+import ReportModals from "ReportModals" /* 11996 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;

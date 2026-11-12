@@ -1,14 +1,14 @@
-// Module ID: 12172
-// Function ID: 12173
+// Module ID: 12166
+// Function ID: 12167
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 5243, 575, 12167, 12080, 5866, 12168, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 12161, 12074, 5866, 12162, 2]
 // Exports: default
 
-// Module 12172 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 12166 (UserProfileApplicationWidgetBottomStatsLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod12080 from "module_12080" /* 12080 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12167 */;
+import _mod12074 from "module_12074" /* 12074 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12161 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -37,8 +37,8 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
   const style = obj.useEmojiOverflowStyle("body-xs/normal");
   let items = [1, 2, 3, 4, 5, 6];
   const mapped = items.map((item) => {
-    const resolveStatComponentValues = _mod12080.resolveStatComponentValues;
-    _mod12080;
+    const resolveStatComponentValues = _mod12074.resolveStatComponentValues;
+    _mod12074;
     return resolveStatComponentValues(require.components["stat_" + item], dependencyMap, View, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   let obj2 = {
@@ -59,7 +59,7 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {
-            tmp5Result = tmp5(tmp6(12168).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(tmp6(12162).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;

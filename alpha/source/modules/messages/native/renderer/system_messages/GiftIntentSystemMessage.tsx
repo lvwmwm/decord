@@ -1,16 +1,16 @@
-// Module ID: 9261
-// Function ID: 9262
+// Module ID: 9260
+// Function ID: 9261
 // Name: GiftIntentSystemMessage
-// Dependencies: [5243, 575, 9262, 9126, 9269, 8588, 9107, 2]
+// Dependencies: [5243, 575, 9261, 9125, 9268, 8588, 9106, 2]
 // Exports: createGiftIntentSystemMessage
 
-// Module 9261 (GiftIntentSystemMessage)
+// Module 9260 (GiftIntentSystemMessage)
 import nativeDefault from "native" /* 575 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9107 */;
-import createCommonMessageDefault from "createCommonMessage" /* 9126 */;
-import GiftIntentEmbed from "GiftIntentEmbed" /* 9262 */;
-import EphemeralIndication from "EphemeralIndication" /* 9269 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9106 */;
+import createCommonMessageDefault from "createCommonMessage" /* 9125 */;
+import GiftIntentEmbed from "GiftIntentEmbed" /* 9261 */;
+import EphemeralIndication from "EphemeralIndication" /* 9268 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 18322
-// Function ID: 18323
+// Module ID: 18317
+// Function ID: 18318
 // Name: UserSettingsDesignSystemTooltip
-// Dependencies: [32, 19, 17, 21, 5243, 9975, 9359, 5873, 7888, 7679, 7681, 5866, 7351, 5853, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 9974, 9358, 5873, 7888, 7679, 7681, 5866, 7351, 5853, 2]
 // Exports: default, useCanRotate
 
-// Module 18322 (UserSettingsDesignSystemTooltip)
+// Module 18317 (UserSettingsDesignSystemTooltip)
 import react_native from "react-native" /* 17 */;
 import LayerScope2 from "LayerScope" /* 5853 */;
 import Text_Text from "Text/Text" /* 5866 */;
@@ -67,7 +67,7 @@ function Content() {
       return closure_1_1(false);
     }
   }), items1);
-  const obj2 = visible(9359);
+  const obj2 = visible(9358);
   const tooltip = obj2.useTooltip(ref, memo);
   const obj3 = { children: items2 };
   const obj4 = { style: tmp.container, children: closure_5(visible(5873).Button, obj5) };

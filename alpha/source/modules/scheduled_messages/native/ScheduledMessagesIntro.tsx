@@ -1,17 +1,17 @@
-// Module ID: 15547
-// Function ID: 15548
+// Module ID: 15544
+// Function ID: 15545
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 5243, 575, 14750, 5866, 1113, 10985, 13452, 10878, 2]
+// Dependencies: [17, 21, 5243, 575, 14746, 5866, 1113, 10979, 13446, 10872, 2]
 // Exports: default
 
-// Module 15547 (ScheduledMessagesIntro)
+// Module 15544 (ScheduledMessagesIntro)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import PlusLargeIcon2 from "PlusLargeIcon" /* 10878 */;
-import AttachmentIcon from "AttachmentIcon" /* 10985 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 13452 */;
-import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 14750 */;
+import PlusLargeIcon2 from "PlusLargeIcon" /* 10872 */;
+import AttachmentIcon from "AttachmentIcon" /* 10979 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 13446 */;
+import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 14746 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;

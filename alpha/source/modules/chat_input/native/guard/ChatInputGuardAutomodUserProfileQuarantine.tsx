@@ -1,14 +1,14 @@
-// Module ID: 14785
-// Function ID: 14786
+// Module ID: 14781
+// Function ID: 14782
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 5155, 5161, 21, 504, 5181, 14062, 1113, 14768, 14786, 2]
+// Dependencies: [19, 502, 5155, 5161, 21, 504, 5181, 14058, 1113, 14764, 14782, 2]
 
-// Module 14785 (ChatInputGuardAutomodUserProfileQuarantine)
+// Module 14781 (ChatInputGuardAutomodUserProfileQuarantine)
 import Fragment from "Fragment" /* 21 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5161 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5181 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 14062 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 14768 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 14058 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14764 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;

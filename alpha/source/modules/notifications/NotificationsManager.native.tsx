@@ -1,24 +1,24 @@
-// Module ID: 20208
-// Function ID: 20209
+// Module ID: 20203
+// Function ID: 20204
 // Name: NotificationsManager
-// Dependencies: [5, 5177, 502, 5092, 6895, 14716, 1072, 6839, 14717, 5489, 20209, 2118, 1260, 2166, 8133, 14719, 10955, 1252, 1377, 7816, 17991, 1092, 2]
+// Dependencies: [5, 5177, 502, 5092, 6895, 14712, 1072, 6839, 14713, 5489, 20204, 2118, 1260, 2166, 8133, 14715, 10949, 1252, 1377, 7816, 17986, 1092, 2]
 
-// Module 20208 (NotificationsManager)
+// Module 20203 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import _modDef2166 from "module_2166" /* 2166 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6839 */;
 import react_nativeDefault from "react-native" /* 8133 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 14716 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14719 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 14712 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14715 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5177 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14717 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14713 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 
@@ -180,7 +180,7 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(20209, dependencyMap.paths);
+    const tmp3 = asyncRequire(20204, dependencyMap.paths);
     openLazy(tmp3, gesture, obj2);
   }, arg2);
 }

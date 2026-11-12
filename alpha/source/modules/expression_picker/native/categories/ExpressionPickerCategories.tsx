@@ -1,10 +1,10 @@
-// Module ID: 11270
-// Function ID: 11271
+// Module ID: 11264
+// Function ID: 11265
 // Name: ExpressionPickerCategories
 // Dependencies: [19, 17, 21, 5243, 575, 5445, 2]
 // Exports: default
 
-// Module 11270 (ExpressionPickerCategories)
+// Module 11264 (ExpressionPickerCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

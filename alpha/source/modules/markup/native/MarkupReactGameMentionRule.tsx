@@ -1,15 +1,15 @@
-// Module ID: 10994
-// Function ID: 10995
+// Module ID: 10988
+// Function ID: 10989
 // Name: MarkupReactGameMentionRule
-// Dependencies: [19, 17, 5997, 21, 575, 5243, 5866, 5998, 9311, 10995, 5881, 2149, 1113, 10996, 6274, 2150, 8309, 5957, 10214, 10219, 9467, 2]
+// Dependencies: [19, 17, 5997, 21, 575, 5243, 5866, 5998, 9310, 10989, 5881, 2149, 1113, 10990, 6274, 2150, 8309, 5957, 10212, 10217, 9466, 2]
 // Exports: createFetchingGameMentionRule
 
-// Module 10994 (MarkupReactGameMentionRule)
+// Module 10988 (MarkupReactGameMentionRule)
 import nativeDefault from "native" /* 575 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
-import useGame from "useGame" /* 9467 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10214 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10219 */;
+import useGame from "useGame" /* 9466 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10212 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10217 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -40,9 +40,9 @@ class MarkupGameMention {
     }
     const gameId = node.gameId;
     const muted = state.muted;
-    let obj = state(9311);
+    let obj = state(9310);
     const gameMentionData = obj.useGameMentionData(gameId);
-    let obj2 = state(10995);
+    let obj2 = state(10989);
     const previewMentionLayout = obj2.usePreviewMentionLayout();
     let variant;
     const obj3 = state(5881);
@@ -96,7 +96,7 @@ class MarkupGameMention {
     if (mentionPillOffsetY == null) {
       let prop1;
       if (true === state.noStyleAndInteraction) {
-        prop1 = tmp(10996).MENTION_PILL_OFFSET_Y;
+        prop1 = tmp(10990).MENTION_PILL_OFFSET_Y;
       }
       mentionPillOffsetY = prop1;
     }

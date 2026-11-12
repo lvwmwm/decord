@@ -1,9 +1,9 @@
-// Module ID: 12390
-// Function ID: 12391
+// Module ID: 12384
+// Function ID: 12385
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 7158, 2186, 1404, 502, 5092, 7022, 5155, 5175, 7359, 1072, 21, 5243, 575, 5484, 7024, 1411, 5250, 1187, 7968, 5891, 5866, 1113, 7401, 12391, 7853, 10807, 12392, 12393, 12, 5839, 12394, 38, 5952, 5974, 12397, 5836, 8041, 7400, 504, 7402, 6854, 1252, 6004, 5489, 8537, 12398, 7358, 572, 6785, 7335, 2118, 5890, 12403, 5503, 12404, 7891, 5873, 2]
+// Dependencies: [5, 32, 19, 17, 7158, 2186, 1404, 502, 5092, 7022, 5155, 5175, 7359, 1072, 21, 5243, 575, 5484, 7024, 1411, 5250, 1187, 7968, 5891, 5866, 1113, 7401, 12385, 7853, 10801, 12386, 12387, 12, 5839, 12388, 38, 5952, 5974, 12391, 5836, 8041, 7400, 504, 7402, 6854, 1252, 6004, 5489, 8537, 12392, 7358, 572, 6785, 7335, 2118, 5890, 12397, 5503, 12398, 7891, 5873, 2]
 
-// Module 12390 (GuildRoleConnectionsConnectAccountsActionSheet)
+// Module 12384 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -29,7 +29,7 @@ import ConnectionsUtils from "ConnectionsUtils" /* 7401 */;
 import getConnectionsRolesDefault from "getConnectionsRoles" /* 7402 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
 import openUserSettings from "openUserSettings" /* 8537 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 12403 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 12397 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -107,7 +107,7 @@ function ChannelName(channel) {
   items = [tmp.channelName, style];
   let tmp8 = null;
   const tmp5 = useChannelNameDefault(channel);
-  const tmp6 = maxQueryLength;
+  const tmp6 = closure_30;
   const tmp7 = metroImportAll;
   if (null != channelIcon) {
     const obj3 = { source: channelIcon, style: tmp.channelNameIcon };
@@ -340,7 +340,7 @@ function IdentityConnectionsCheckGroup(eligibilityState) {
     items2[2] = prop1;
     let tmp15Result = null;
     if (null != memo) {
-      const obj8 = { style: tmp.appIcon, user: memo, size: tmp2(tmp3[21]).AvatarSizes.XSMALL, guildId: "Array" };
+      const obj8 = { style: tmp.appIcon, user: memo, size: tmp2(tmp3[21]).AvatarSizes.XSMALL, guildId: "a" };
       const Avatar = tmp2(tmp3[21]).Avatar;
       tmp15Result = tmp15(Avatar, obj8);
     }
@@ -654,7 +654,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
       items1[1] = tmp22Result6;
       let tmp22Result7 = null;
       if (null != tmp11) {
-        const obj13 = { style: closure_5.appIcon, user: tmp11, size: eligibilityStatesGroups(tmp6[21]).AvatarSizes.XSMALL, guildId: "Array" };
+        const obj13 = { style: closure_5.appIcon, user: tmp11, size: eligibilityStatesGroups(tmp6[21]).AvatarSizes.XSMALL, guildId: "a" };
         const Avatar = tmp13(tmp6[21]).Avatar;
         tmp22Result7 = tmp22(Avatar, obj13);
       }
@@ -873,8 +873,8 @@ obj6 = { marginTop: 8, borderRadius: nativeDefault.radii.xs, borderWidth: 1, bor
 obj7 = { marginTop: 8, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.xs, padding: 8, flexDirection: "column" };
 obj8 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingVertical: 12, paddingHorizontal: 8, borderTopStartRadius: 4, borderTopEndRadius: 4, marginTop: 16 };
 obj9 = { flexDirection: "column", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, padding: 16, borderBottomStartRadius: 4, borderBottomEndRadius: 4, marginBottom: 24 };
-const channelHistory = createStyles(obj);
-const fetchedEmbed = { CHECKS_REQUIRED: 0, [0]: "CHECKS_REQUIRED", ACCOUNT_CONNECTED: 1, [1]: "ACCOUNT_CONNECTED", ROLE_GRANTED: 2, [2]: "ROLE_GRANTED" };
+createStyles(obj);
+const constants8 = { CHECKS_REQUIRED: 0, [0]: "CHECKS_REQUIRED", ACCOUNT_CONNECTED: 1, [1]: "ACCOUNT_CONNECTED", ROLE_GRANTED: 2, [2]: "ROLE_GRANTED" };
 size = size_mod;
 let result = size.fileFinishedImporting("modules/connections/native/GuildRoleConnectionsConnectAccountsActionSheet.tsx");
 class GuildRoleConnectionsConnectAccountsActionSheet {
@@ -939,7 +939,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     let tmp4;
     let tmp58;
     let tmp9;
-    const f104108 = () => {
+    const f104115 = () => {
       let tmp3;
       let tmp2 = null;
       if (null != initialAttemptedPlatformType) {
@@ -1046,8 +1046,8 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getId());
     [first2, closure_13] = react.useState(null);
     [first3, closure_15] = react.useState(null);
-    [tmp27, c16] = react.useState(f104108);
-    _slicedToArray(react.useState(f104108), 2);
+    [tmp27, c16] = react.useState(f104115);
+    _slicedToArray(react.useState(f104115), 2);
     [arr6, c17] = react.useState(null);
     _slicedToArray(react.useState(null), 2);
     const tmp30 = role(initialAttemptedPlatformType[17])();

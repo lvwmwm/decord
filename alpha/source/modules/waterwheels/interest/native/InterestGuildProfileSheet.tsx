@@ -1,10 +1,10 @@
-// Module ID: 20194
-// Function ID: 20195
+// Module ID: 20189
+// Function ID: 20190
 // Name: InterestGuildProfileSheet
-// Dependencies: [32, 19, 17, 1072, 21, 5243, 575, 5484, 5839, 8493, 1493, 1627, 20195, 671, 10589, 20196, 20197, 5503, 5830, 5507, 5838, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5243, 575, 5484, 5839, 8493, 1493, 1627, 20190, 671, 10587, 20191, 20192, 5503, 5830, 5507, 5838, 2]
 // Exports: default
 
-// Module 20194 (InterestGuildProfileSheet)
+// Module 20189 (InterestGuildProfileSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -16,8 +16,8 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5503 */;
 import BottomSheetModal from "BottomSheetModal" /* 5507 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5838 */;
-import InterestGuildProfileBannerDefault from "InterestGuildProfileBanner" /* 20196 */;
-import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 20197 */;
+import InterestGuildProfileBannerDefault from "InterestGuildProfileBanner" /* 20191 */;
+import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 20192 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -27,7 +27,7 @@ import size from "module_2" /* 2 */;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const GuildProfileSheetBodyDefault = tmp(10589);
+const GuildProfileSheetBodyDefault = tmp(10587);
 let react = react_mod;
 const View = react_native.View;
 const VerticalGradient = Constants.VerticalGradient;
@@ -85,8 +85,8 @@ export default function InterestGuildProfileSheet(guildId) {
   [tmp9, c9] = react.useState(0);
   _slicedToArray(react.useState(0), 2);
   let obj5 = { windowHeight: height, contentHeight: tmp7, footerHeight: sum, safeAreaBottom: bottom };
-  const getInterestGuildProfileSheetLayout = guildId(20195).getInterestGuildProfileSheetLayout;
-  guildId(20195);
+  const getInterestGuildProfileSheetLayout = guildId(20190).getInterestGuildProfileSheetLayout;
+  guildId(20190);
   if (sum <= 0) {
     sum = nativeDefault.space.PX_48 + nativeDefault.space.PX_32;
   }

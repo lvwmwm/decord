@@ -1,15 +1,15 @@
-// Module ID: 12361
-// Function ID: 12362
+// Module ID: 12355
+// Function ID: 12356
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 5243, 575, 12362, 8494, 5503, 7847, 1113, 5866, 2]
+// Dependencies: [19, 21, 5243, 575, 12356, 8494, 5503, 7847, 1113, 5866, 2]
 // Exports: default
 
-// Module 12361 (MediaModalOverlayAltTextSheet)
+// Module 12355 (MediaModalOverlayAltTextSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8494 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 12362 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 12356 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 12915
-// Function ID: 12916
+// Module ID: 12909
+// Function ID: 12910
 // Name: UserSettingsVoiceInputOptions
-// Dependencies: [19, 17, 2130, 1072, 21, 5243, 7882, 1113, 6162, 504, 12909, 7379, 5866, 7888, 12916, 2]
+// Dependencies: [19, 17, 2130, 1072, 21, 5243, 7882, 1113, 6162, 504, 12903, 7379, 5866, 7888, 12910, 2]
 // Exports: default
 
-// Module 12915 (UserSettingsVoiceInputOptions)
+// Module 12909 (UserSettingsVoiceInputOptions)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 6162 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7882 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 12916 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 12910 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import Fragment from "Fragment" /* 21 */;
@@ -81,7 +81,7 @@ export default function UserSettingsVoiceInputOptions() {
   const vadAutoThreshold = stateFromStoresObject.vadAutoThreshold;
   const vadThreshold = stateFromStoresObject.vadThreshold;
   let obj2 = { title: intl.string(inputMode(1113).t.LKCupB), hasIcons: false, children: items1 };
-  const UserSettingsTableRowGroup = inputMode(12909).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = inputMode(12903).UserSettingsTableRowGroup;
   intl = inputMode(1113).intl;
   const obj3 = { label: intl2.string(inputMode(1113).t["pS+K2L"]), trailing: closure_6(Text, obj4), onPress: handleInputModePress };
   const TableRow = inputMode(7379).TableRow;

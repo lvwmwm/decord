@@ -1,10 +1,10 @@
-// Module ID: 13374
-// Function ID: 13375
+// Module ID: 13368
+// Function ID: 13369
 // Name: ActivityDetailContent
-// Dependencies: [5, 32, 19, 17, 5913, 2140, 1072, 21, 575, 5243, 5866, 12488, 13375, 13290, 13284, 5922, 12608, 1113, 1252, 12489, 5873, 12615, 12672, 7852, 7871, 10509, 8494, 504, 7385, 7888, 13376, 7553, 7196, 13377, 13378, 13379, 8094, 13316, 13381, 7372, 13383, 2]
+// Dependencies: [5, 32, 19, 17, 5913, 2140, 1072, 21, 575, 5243, 5866, 12482, 13369, 13284, 13278, 5922, 12602, 1113, 1252, 12483, 5873, 12609, 12666, 7852, 7871, 10507, 8494, 504, 7385, 7888, 13370, 7553, 7196, 13371, 13372, 13373, 8094, 13310, 13375, 7372, 13377, 2]
 // Exports: default
 
-// Module 13374 (ActivityDetailContent)
+// Module 13368 (ActivityDetailContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,17 +12,17 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10509 */;
-import AppLauncherContext from "AppLauncherContext" /* 12488 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 12489 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 12608 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 13290 */;
-import HeroMediaDefault from "HeroMedia" /* 13316 */;
-import DeveloperActivityShelfActionCreatorsAll from "DeveloperActivityShelfActionCreators" /* 13376 */;
-import useIsPrimaryEntryPointDisabledDefault from "useIsPrimaryEntryPointDisabled" /* 13378 */;
-import useShowTryItOutButtonInAppLauncherDefault from "useShowTryItOutButtonInAppLauncher" /* 13379 */;
-import DetailsHeaderDefault from "DetailsHeader" /* 13381 */;
-import getItemSubtitleForMaxPlayersDefault from "getItemSubtitleForMaxPlayers" /* 13383 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10507 */;
+import AppLauncherContext from "AppLauncherContext" /* 12482 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 12483 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 12602 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 13284 */;
+import HeroMediaDefault from "HeroMedia" /* 13310 */;
+import DeveloperActivityShelfActionCreatorsAll from "DeveloperActivityShelfActionCreators" /* 13370 */;
+import useIsPrimaryEntryPointDisabledDefault from "useIsPrimaryEntryPointDisabled" /* 13372 */;
+import useShowTryItOutButtonInAppLauncherDefault from "useShowTryItOutButtonInAppLauncher" /* 13373 */;
+import DetailsHeaderDefault from "DetailsHeader" /* 13375 */;
+import getItemSubtitleForMaxPlayersDefault from "getItemSubtitleForMaxPlayers" /* 13377 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -275,9 +275,9 @@ export default function ActivityDetailContent(application) {
   importDefault = undefined;
   ({ sectionName, onActivityItemSelected, hasCommands } = application);
   const tmp = closure_15();
-  let obj = application(12488);
+  let obj = application(12482);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = application(12672);
+  let obj2 = application(12666);
   const getPrimaryAppCommand = obj2.useGetPrimaryAppCommand(context, application.id);
   const tmp6 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp6(AnalyticsLocationDefault.APP_DETAIL).analyticsLocations;
@@ -288,7 +288,7 @@ export default function ActivityDetailContent(application) {
   }, []);
   const obj3 = application(8494);
   const isScreenLandscape = obj3.useIsScreenLandscape();
-  let detailsContainerLandscape = entrypoint !== application(12489).AppLauncherEntrypoint.VOICE && isScreenLandscape;
+  let detailsContainerLandscape = entrypoint !== application(12483).AppLauncherEntrypoint.VOICE && isScreenLandscape;
   const items = [DeveloperActivityShelfStore];
   const tmp2Result = application(504);
   const stateFromStoresObject = tmp2Result.useStateFromStoresObject(items, () => {
@@ -296,7 +296,7 @@ export default function ActivityDetailContent(application) {
     return obj;
   });
   ({ isDeveloperOfThisApp, activityUrlOverride, useActivityUrlOverride } = stateFromStoresObject);
-  const tmp2Result7 = application(12608);
+  const tmp2Result7 = application(12602);
   if (tmp2Result7.isRealApplication(application)) {
     let tmp35Result;
     let tmp31;
@@ -323,7 +323,7 @@ export default function ActivityDetailContent(application) {
       if (useActivityUrlOverride) {
         const obj7 = { style: tmp.activityUrlOverrideInputContainer, children: closure_11(TextInput, obj8) };
         TextInput = tmp2(7553).TextInput;
-        obj8 = { placeholder: "e.g. http://192.168.1.1:3000", value: activityUrlOverride, onChange: tmp21(13376).setActivityUrlOverride };
+        obj8 = { placeholder: "e.g. http://192.168.1.1:3000", value: activityUrlOverride, onChange: tmp21(13370).setActivityUrlOverride };
         tmp20Result = tmp20(tmp19, obj7);
       }
       items1[2] = tmp20Result;
@@ -336,9 +336,9 @@ export default function ActivityDetailContent(application) {
       bot = getOrFetchApplication.bot;
     }
     const obj9 = { context, applicationId: application.id };
-    const tmp2Result9 = application(13290);
+    const tmp2Result9 = application(13284);
     const activityAction = tmp2Result9.useActivityAction(obj9);
-    const tmp2Result10 = application(13377);
+    const tmp2Result10 = application(13371);
     const delayedSwapToActivityActionLeave = tmp2Result10.useDelayedSwapToActivityActionLeave(activityAction);
     const obj10 = { context, application, activityAction: delayedSwapToActivityActionLeave };
     ({ reason, disabled } = useIsPrimaryEntryPointDisabledDefault(obj10));
@@ -382,7 +382,7 @@ export default function ActivityDetailContent(application) {
         isDeveloperOfThisApp = !hasCommands;
       }
       if (isDeveloperOfThisApp) {
-        const tmp2Result11 = application(12608);
+        const tmp2Result11 = application(12602);
         isDeveloperOfThisApp = tmp2Result11.isActivityApp(application);
       }
       if (isDeveloperOfThisApp) {
@@ -423,8 +423,8 @@ export default function ActivityDetailContent(application) {
     const obj29 = { icon: closure_11(application(7372).GroupIcon, obj30), tagName: getItemSubtitleForMaxPlayersShort(num5), accessibilityLabel: tmp5Result4(num) };
     num5 = num;
     obj30 = { style: tmp.tagIcon, size: "xs" };
-    getItemSubtitleForMaxPlayersShort = application(13383).getItemSubtitleForMaxPlayersShort;
-    application(13383);
+    getItemSubtitleForMaxPlayersShort = application(13377).getItemSubtitleForMaxPlayersShort;
+    application(13377);
     const tmp51 = Tag;
     if (num == null) {
       num5 = 0;

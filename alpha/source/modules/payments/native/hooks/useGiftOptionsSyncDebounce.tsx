@@ -1,10 +1,10 @@
-// Module ID: 11605
-// Function ID: 11606
+// Module ID: 11599
+// Function ID: 11600
 // Name: useGiftOptionsSyncDebounce
 // Dependencies: [19, 5854, 12, 2]
 // Exports: default
 
-// Module 11605 (useGiftOptionsSyncDebounce)
+// Module 11599 (useGiftOptionsSyncDebounce)
 import _modDef12 from "module_12" /* 12 */;
 import reactDefault from "react" /* 5854 */;
 import react_mod from "react" /* 19 */;

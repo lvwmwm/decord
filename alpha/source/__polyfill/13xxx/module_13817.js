@@ -1,12 +1,15 @@
 // Module ID: 13817
 // Function ID: 13818
-// Dependencies: [13815, 13818, 13819]
+// Dependencies: []
 
 // Module 13817
-import defaultRecognizer from "defaultRecognizer" /* 13815 */;
-import _mod13818 from "module_13818" /* 13818 */;
-import tokenize from "tokenize" /* 13819 */;
+let obj2;
+const obj = { parse: obj2 };
+obj2 = {
+  prelude: null,
+  block() {
+    return this.Block(true);
+  }
+};
 
-({ getNode: defaultRecognizer, expression: _mod13818, var: tokenize });
-
-export default { getNode: defaultRecognizer, expression: _mod13818, var: tokenize };
+export default obj;

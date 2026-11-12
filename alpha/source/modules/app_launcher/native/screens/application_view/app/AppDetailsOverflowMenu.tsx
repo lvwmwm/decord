@@ -1,10 +1,10 @@
-// Module ID: 13365
-// Function ID: 13366
+// Module ID: 13359
+// Function ID: 13360
 // Name: AppDetailsOverflowMenu
-// Dependencies: [19, 21, 12608, 13366, 1113, 13367, 5068, 7877, 5951, 11568, 9082, 7922, 7357, 2]
+// Dependencies: [19, 21, 12602, 13360, 1113, 13361, 5068, 7877, 5951, 11562, 9081, 7922, 7357, 2]
 // Exports: default
 
-// Module 13365 (AppDetailsOverflowMenu)
+// Module 13359 (AppDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 5951 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
@@ -22,10 +22,10 @@ export default function AppDetailsOverflowMenu(application) {
   let intl2;
   application = application.application;
   const onAddAppMenuClick = application.onAddAppMenuClick;
-  let obj = application(12608);
+  let obj = application(12602);
   dependencyMap = obj.getInstallAppProps(application);
-  const tmp3 = onAddAppMenuClick(13366);
-  let obj2 = application(12608);
+  const tmp3 = onAddAppMenuClick(13360);
+  let obj2 = application(12602);
   const items = [];
   const tmp3Result = tmp3(obj2.getInstallableApplication(application)) && null != onAddAppMenuClick;
   if (tmp3Result) {
@@ -36,7 +36,7 @@ export default function AppDetailsOverflowMenu(application) {
           const obj = { installAppProps };
           return onAddAppMenuClick(obj);
         },
-      IconComponent: application(13367).CirclePlusIcon
+      IconComponent: application(13361).CirclePlusIcon
     };
     intl = tmp(1113).intl;
     push(obj3);
@@ -52,14 +52,14 @@ export default function AppDetailsOverflowMenu(application) {
           const obj2 = ToastUtils;
           obj2.presentIdCopied();
         },
-      IconComponent: application(11568).IdIcon
+      IconComponent: application(11562).IdIcon
     };
     intl2 = tmp(1113).intl;
     push2(obj4);
   }
   let tmp8 = null;
   if (0 !== items.length) {
-    tmp8 = jsx(tmp(9082).ContextMenu, {
+    tmp8 = jsx(tmp(9081).ContextMenu, {
       items,
       children(ref) {
           ref = ref.ref;

@@ -1,17 +1,17 @@
-// Module ID: 13657
-// Function ID: 13658
+// Module ID: 13651
+// Function ID: 13652
 // Name: ConjureIdeaCards
-// Dependencies: [19, 17, 21, 5243, 13522, 5866, 1113, 4079, 7381, 6274, 2]
+// Dependencies: [19, 17, 21, 5243, 13516, 5866, 1113, 4079, 7381, 6274, 2]
 // Exports: default
 
-// Module 13657 (ConjureIdeaCards)
+// Module 13651 (ConjureIdeaCards)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import Stack_Stack from "Stack/Stack" /* 6274 */;
 import Card_Card from "Card/Card" /* 7381 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 13522 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 13516 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

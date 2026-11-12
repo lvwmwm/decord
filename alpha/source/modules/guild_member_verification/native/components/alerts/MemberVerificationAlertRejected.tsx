@@ -1,10 +1,10 @@
-// Module ID: 15945
-// Function ID: 15946
+// Module ID: 15940
+// Function ID: 15941
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 19, 5155, 1385, 5287, 21, 14777, 504, 15946, 6869, 7618, 1113, 6865, 7483, 5873, 2]
+// Dependencies: [5, 19, 5155, 1385, 5287, 21, 14773, 504, 15941, 6869, 7618, 1113, 6865, 7483, 5873, 2]
 // Exports: default
 
-// Module 15945 (MemberVerificationAlertRejected)
+// Module 15940 (MemberVerificationAlertRejected)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;

@@ -1,10 +1,10 @@
-// Module ID: 10170
-// Function ID: 10171
+// Module ID: 10168
+// Function ID: 10169
 // Name: MediaModalOverlayHeaderWrapper
 // Dependencies: [19, 17, 21, 5243, 5829, 1627, 2]
 // Exports: MediaModalOverlayHeaderWrapper
 
-// Module 10170 (MediaModalOverlayHeaderWrapper)
+// Module 10168 (MediaModalOverlayHeaderWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;

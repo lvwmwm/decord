@@ -1,14 +1,14 @@
-// Module ID: 14958
-// Function ID: 14959
+// Module ID: 14954
+// Function ID: 14955
 // Name: InviteQueue
-// Dependencies: [5092, 1089, 8951, 3, 8593, 8069, 2]
+// Dependencies: [5092, 1089, 8950, 3, 8593, 8069, 2]
 
-// Module 14958 (InviteQueue)
+// Module 14954 (InviteQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8593 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
-import Queue from "Queue" /* 8951 */;
+import Queue from "Queue" /* 8950 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;

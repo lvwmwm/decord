@@ -1,9 +1,9 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 10133
+// Function ID: 10134
 // Name: MediaModalWebViewBase
 // Dependencies: [19, 17, 21, 1377, 5243, 1652, 5485, 5949, 8150, 2]
 
-// Module 10134 (MediaModalWebViewBase)
+// Module 10133 (MediaModalWebViewBase)
 import LinkingDefault from "Linking" /* 5949 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

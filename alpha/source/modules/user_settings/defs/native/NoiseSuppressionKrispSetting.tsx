@@ -1,16 +1,16 @@
-// Module ID: 17759
-// Function ID: 17760
+// Module ID: 17754
+// Function ID: 17755
 // Name: NoiseSuppressionKrispSetting
-// Dependencies: [2130, 9136, 12942, 12943, 1113, 504, 12317, 2]
+// Dependencies: [2130, 9135, 12936, 12937, 1113, 504, 12311, 2]
 
-// Module 17759 (NoiseSuppressionKrispSetting)
+// Module 17754 (NoiseSuppressionKrispSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 12942 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 12943 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 12936 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 12937 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

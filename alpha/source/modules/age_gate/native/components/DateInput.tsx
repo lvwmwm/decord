@@ -1,10 +1,10 @@
-// Module ID: 20017
-// Function ID: 20018
+// Module ID: 20012
+// Function ID: 20013
 // Name: DateInput
 // Dependencies: [19, 17, 21, 2166, 5489, 7954, 2118, 7551, 1187, 2]
 // Exports: default
 
-// Module 20017 (DateInput)
+// Module 20012 (DateInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2118 */;

@@ -1,9 +1,9 @@
-// Module ID: 19271
-// Function ID: 19272
+// Module ID: 19266
+// Function ID: 19267
 // Name: SmartSearchEmptyScreen
-// Dependencies: [19, 17, 21, 5243, 575, 5850, 5252, 1113, 19272, 5866, 4302, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5850, 5252, 1113, 19267, 5866, 4302, 2]
 
-// Module 19271 (SmartSearchEmptyScreen)
+// Module 19266 (SmartSearchEmptyScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -11,7 +11,7 @@ import _modDef4302 from "module_4302" /* 4302 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5850 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 19272 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 19267 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;

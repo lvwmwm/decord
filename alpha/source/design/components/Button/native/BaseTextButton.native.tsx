@@ -23,14 +23,14 @@ import size_mod from "module_2" /* 2 */;
 const module_1652 = _mod1652;
 let nativeEvent, num2, obj1;
 
+let bound;
+let bound1;
+let bound2;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-let rect;
-let rect1;
-let rect2;
 function CollapsingText(collapseText) {
   let items7;
   let tmp10;
@@ -441,15 +441,12 @@ let closure_18 = createStyles.createStyles((arg0, marginLeft) => {
     return { offset: {} };
   }
 });
-let obj3 = { sm: rect, md: rect1, lg: rect2 };
+let obj3 = { sm: { top: bound, left: "Array", right: "isArray", bottom: bound }, md: { top: bound1, left: "Array", right: "isArray", bottom: bound1 }, lg: { top: bound2, left: "Array", right: "isArray", bottom: bound2 } };
 const LARGE_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
-const bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
-rect = { top: bound, left: "Array", right: "onPress", bottom: bound };
+bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
 const LARGE_BUTTON_HEIGHT2 = ButtonConstants.LARGE_BUTTON_HEIGHT;
-const bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
-rect1 = { top: bound1, left: "Array", right: "onPress", bottom: bound1 };
-const bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
-rect2 = { top: bound2, left: "Array", right: "onPress", bottom: bound2 };
+bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
+bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
 function getTextPlatformLineHeight(arg0, arg1) {
 
 }

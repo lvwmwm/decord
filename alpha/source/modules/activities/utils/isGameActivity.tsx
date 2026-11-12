@@ -1,10 +1,10 @@
-// Module ID: 10791
-// Function ID: 10792
+// Module ID: 10785
+// Function ID: 10786
 // Name: isGameActivity
 // Dependencies: [6006, 2]
 // Exports: default
 
-// Module 10791 (isGameActivity)
+// Module 10785 (isGameActivity)
 import ActivityTypes from "ActivityTypes" /* 6006 */;
 import size from "module_2" /* 2 */;
 

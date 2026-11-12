@@ -1,18 +1,18 @@
-// Module ID: 10110
-// Function ID: 10111
+// Module ID: 10109
+// Function ID: 10110
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 575, 5243, 10111, 1113, 10112, 5866, 1377, 5535, 8759, 8768, 2]
+// Dependencies: [19, 17, 21, 575, 5243, 10110, 1113, 10111, 5866, 1377, 5535, 8758, 8767, 2]
 // Exports: default
 
-// Module 10110 (AppStoreOverlayStatsCarousel)
+// Module 10109 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import AnalyticsActions from "AnalyticsActions" /* 8759 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 10111 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 10112 */;
+import AnalyticsActions from "AnalyticsActions" /* 8758 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 10110 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 10111 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -193,9 +193,9 @@ export default function AppStoreOverlayStatsCarousel(arg0) {
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(8768).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(8767).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(8768).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(8767).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

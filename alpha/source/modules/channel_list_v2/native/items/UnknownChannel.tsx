@@ -1,9 +1,9 @@
-// Module ID: 18836
-// Function ID: 18837
+// Module ID: 18831
+// Function ID: 18832
 // Name: UnknownChannel
-// Dependencies: [19, 5997, 6896, 21, 5243, 575, 5952, 1113, 5974, 5891, 10831, 18712, 2]
+// Dependencies: [19, 5997, 6896, 21, 5243, 575, 5952, 1113, 5974, 5891, 10825, 18707, 2]
 
-// Module 18836 (UnknownChannel)
+// Module 18831 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -12,8 +12,8 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5974 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
 import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10831 */;
-import ChannelItemDefault from "ChannelItem" /* 18712 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10825 */;
+import ChannelItemDefault from "ChannelItem" /* 18707 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 11921
-// Function ID: 11922
+// Module ID: 11915
+// Function ID: 11916
 // Name: GatedContent
 // Dependencies: [19, 21, 5243, 575, 6770, 5873, 6274, 5866, 6888, 2]
 // Exports: default
 
-// Module 11921 (GatedContent)
+// Module 11915 (GatedContent)
 import nativeDefault from "native" /* 575 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6770 */;
 import react from "react" /* 19 */;

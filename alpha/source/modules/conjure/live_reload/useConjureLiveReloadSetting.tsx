@@ -1,10 +1,10 @@
-// Module ID: 13104
-// Function ID: 13105
+// Module ID: 13098
+// Function ID: 13099
 // Name: useConjureLiveReloadSetting
-// Dependencies: [32, 19, 7309, 504, 7326, 13105, 2]
+// Dependencies: [32, 19, 7309, 504, 7326, 13099, 2]
 // Exports: useConjureLiveReloadSetting
 
-// Module 13104 (useConjureLiveReloadSetting)
+// Module 13098 (useConjureLiveReloadSetting)
 import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 7326 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

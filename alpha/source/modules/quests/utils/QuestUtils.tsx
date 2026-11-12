@@ -1,21 +1,21 @@
-// Module ID: 8763
-// Function ID: 8764
+// Module ID: 8762
+// Function ID: 8763
 // Name: utils/QuestUtils
-// Dependencies: [32, 6009, 5114, 5175, 5918, 8764, 5275, 8765, 8766, 6764, 8767, 8768, 2]
+// Dependencies: [32, 6009, 5114, 5175, 5918, 8763, 5275, 8764, 8765, 6764, 8766, 8767, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 8763 (utils/QuestUtils)
+// Module 8762 (utils/QuestUtils)
 import StreamPermissionUtils from "StreamPermissionUtils" /* 6764 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8765 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 8766 */;
-import QuestType2 from "QuestType" /* 8767 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8768 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8764 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 8765 */;
+import QuestType2 from "QuestType" /* 8766 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8767 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GameConsoleStore from "GameConsoleStore" /* 6009 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import VoiceStateStore from "VoiceStateStore" /* 5918 */;
-import QuestUtmStore from "QuestUtmStore" /* 8764 */;
+import QuestUtmStore from "QuestUtmStore" /* 8763 */;
 import QuestConstants from "QuestConstants" /* 5275 */;
 import size from "module_2" /* 2 */;
 
@@ -114,13 +114,13 @@ export function isQuestFeaturedByHero(questHomeHero, id) {
 }
 export function shouldShowBountiesGivenFilters(filters) {
   let constants2;
-  const f95860 = (item) => item.filter === constants.VIRTUAL_CURRENCY;
+  const f95871 = (item) => item.filter === constants.VIRTUAL_CURRENCY;
   const found = filters.filter((group) => "task" === group.group);
   const found1 = filters.filter((group) => "reward" === group.group);
   let tmp = 0 === found.length || found.some((item) => item.filter === constants2.VIDEO);
   if (tmp) {
-    tmp = 0 === found1.length || found1.some(f95860);
-    0 === found1.length || found1.some(f95860);
+    tmp = 0 === found1.length || found1.some(f95871);
+    0 === found1.length || found1.some(f95871);
   }
   return tmp;
 }

@@ -1,16 +1,16 @@
-// Module ID: 9226
-// Function ID: 9227
+// Module ID: 9225
+// Function ID: 9226
 // Name: ReferralSystemMessage
-// Dependencies: [9227, 502, 5243, 575, 9231, 9126, 8588, 9225, 9252, 2]
+// Dependencies: [9226, 502, 5243, 575, 9230, 9125, 8588, 9224, 9251, 2]
 // Exports: createReferralSystemMessage
 
-// Module 9226 (ReferralSystemMessage)
+// Module 9225 (ReferralSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import createCommonMessageDefault from "createCommonMessage" /* 9126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9225 */;
-import ReferralTrialEmbedRedesign from "ReferralTrialEmbedRedesign" /* 9231 */;
-import ReferralTrialEmbed from "ReferralTrialEmbed" /* 9252 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 9227 */;
+import createCommonMessageDefault from "createCommonMessage" /* 9125 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9224 */;
+import ReferralTrialEmbedRedesign from "ReferralTrialEmbedRedesign" /* 9230 */;
+import ReferralTrialEmbed from "ReferralTrialEmbed" /* 9251 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9226 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 18339
-// Function ID: 18340
+// Module ID: 18334
+// Function ID: 18335
 // Name: UserSettingsDesignSystemBadge
-// Dependencies: [32, 19, 17, 21, 5243, 575, 8027, 9455, 10052, 10054, 10056, 10058, 10115, 6274, 5866, 7391, 7679, 7681, 7553, 7888, 7381, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 8027, 9454, 10051, 10053, 10055, 10057, 10114, 6274, 5866, 7391, 7679, 7681, 7553, 7888, 7381, 1187, 2]
 // Exports: default
 
-// Module 18339 (UserSettingsDesignSystemBadge)
+// Module 18334 (UserSettingsDesignSystemBadge)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5866 */;
@@ -12,8 +12,8 @@ import Stack_Stack from "Stack/Stack" /* 6274 */;
 import Card_Card from "Card/Card" /* 7381 */;
 import Badge_Badge from "Badge/Badge" /* 7391 */;
 import TableSwitchRow from "TableSwitchRow" /* 7888 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10056 */;
-import StarIcon3 from "StarIcon" /* 10115 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10055 */;
+import StarIcon3 from "StarIcon" /* 10114 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -73,17 +73,17 @@ function Playground() {
     if ("premium" === first) {
       StarIcon = tmp14(8027).LockIcon;
     } else if ("inverted" === first) {
-      StarIcon = tmp14(9455).TagIcon;
+      StarIcon = tmp14(9454).TagIcon;
     } else if ("rarity-common" === first) {
-      StarIcon = tmp14(10052).ExperimentalCommonIcon;
+      StarIcon = tmp14(10051).ExperimentalCommonIcon;
     } else if ("rarity-rare" === first) {
-      StarIcon = tmp14(10054).ExperimentalRareIcon;
+      StarIcon = tmp14(10053).ExperimentalRareIcon;
     } else if ("rarity-epic" === first) {
-      StarIcon = tmp14(10056).ExperimentalEpicIcon;
+      StarIcon = tmp14(10055).ExperimentalEpicIcon;
     } else if ("rarity-mythic" === first) {
-      StarIcon = tmp14(10058).ExperimentalMythicIcon;
+      StarIcon = tmp14(10057).ExperimentalMythicIcon;
     } else {
-      StarIcon = tmp14(10115).StarIcon;
+      StarIcon = tmp14(10114).StarIcon;
     }
     tmp20 = StarIcon;
   }
@@ -156,17 +156,17 @@ function VariantMatrix() {
       if ("premium" === variant) {
         StarIcon = tmp2(8027).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon = tmp2(9455).TagIcon;
+        StarIcon = tmp2(9454).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon = tmp2(10052).ExperimentalCommonIcon;
+        StarIcon = tmp2(10051).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(10054).ExperimentalRareIcon;
+        StarIcon = tmp2(10053).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(10056).ExperimentalEpicIcon;
+        StarIcon = tmp2(10055).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(10058).ExperimentalMythicIcon;
+        StarIcon = tmp2(10057).ExperimentalMythicIcon;
       } else {
-        StarIcon = tmp2(10115).StarIcon;
+        StarIcon = tmp2(10114).StarIcon;
       }
       items1[3] = metroImportDefault(Badge, obj7);
       const obj8 = { type: { text: "Custom" }, variant, icon: StarIcon2 };
@@ -174,17 +174,17 @@ function VariantMatrix() {
       if ("premium" === variant) {
         StarIcon2 = tmp2(8027).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon2 = tmp2(9455).TagIcon;
+        StarIcon2 = tmp2(9454).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(10052).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(10051).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(10054).ExperimentalRareIcon;
+        StarIcon2 = tmp2(10053).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(10056).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(10055).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(10058).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(10057).ExperimentalMythicIcon;
       } else {
-        StarIcon2 = tmp2(10115).StarIcon;
+        StarIcon2 = tmp2(10114).StarIcon;
       }
       items1[4] = metroImportDefault(Badge2, obj8);
       items[1] = metroImportAll(tmp5, obj3);

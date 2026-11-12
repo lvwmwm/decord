@@ -1,10 +1,10 @@
-// Module ID: 13343
-// Function ID: 13344
+// Module ID: 13337
+// Function ID: 13338
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 5243, 13284, 12489, 1113, 5252, 5866, 2]
+// Dependencies: [19, 17, 21, 5243, 13278, 12483, 1113, 5252, 5866, 2]
 // Exports: default
 
-// Module 13343 (EmptyState)
+// Module 13337 (EmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
@@ -25,8 +25,8 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = closure_5();
-  const obj = flag(13284);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(12489).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
+  const obj = flag(13278);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(12483).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
   const items = [flag];
   const effect = react.useEffect(() => {
     let stringResult;

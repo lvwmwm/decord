@@ -1,10 +1,10 @@
-// Module ID: 11353
-// Function ID: 11354
+// Module ID: 11347
+// Function ID: 11348
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 5092, 5175, 1385, 6282, 1072, 11354, 5157, 5248, 5922, 1113, 11355, 2116, 5068, 11356, 11096, 7223, 11103, 1093, 11104, 8593, 8720, 6854, 5309, 1089, 11357, 2166, 8069, 38, 7200, 11358, 2]
+// Dependencies: [5, 5092, 5175, 1385, 6282, 1072, 11348, 5157, 5248, 5922, 1113, 11349, 2116, 5068, 11350, 11090, 7223, 11097, 1093, 11098, 8593, 8719, 6854, 5309, 1089, 11351, 2166, 8069, 38, 7200, 11352, 2]
 // Exports: getBuiltInCommands
 
-// Module 11353 (ApplicationCommandBuiltIns)
+// Module 11347 (ApplicationCommandBuiltIns)
 import Server from "Server" /* 2116 */;
 import UserSettings from "UserSettings" /* 5068 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5157 */;
@@ -14,14 +14,14 @@ import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */
 import DiceRollActionCreators from "DiceRollActionCreators" /* 7200 */;
 import ThreadHooks from "ThreadHooks" /* 7223 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8593 */;
-import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 11355 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 11356 */;
+import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 11349 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 11350 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import DiceRollConstants from "DiceRollConstants" /* 11354 */;
+import DiceRollConstants from "DiceRollConstants" /* 11348 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

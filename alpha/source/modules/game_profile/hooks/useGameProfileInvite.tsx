@@ -1,10 +1,10 @@
-// Module ID: 10250
-// Function ID: 10251
+// Module ID: 10248
+// Function ID: 10249
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2138, 5094, 5989, 1072, 10222, 504, 1089, 7594, 9467, 2]
+// Dependencies: [5, 19, 2138, 5094, 5989, 1072, 10220, 504, 1089, 7594, 9466, 2]
 // Exports: default, hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 10250 (useGameProfileInvite)
+// Module 10248 (useGameProfileInvite)
 import DurationsDefault from "Durations" /* 1089 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7594 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -21,7 +21,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f98927 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f98938 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -159,7 +159,7 @@ export default function useGameProfileInvite(websites, set) {
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f98927);
+      found = websites.find(f98938);
     }
   }
   let arr;
@@ -247,7 +247,7 @@ export function preloadGameProfileInvite(arg0) {
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f98927);
+        found = websites.find(f98938);
       }
     }
     let arr;

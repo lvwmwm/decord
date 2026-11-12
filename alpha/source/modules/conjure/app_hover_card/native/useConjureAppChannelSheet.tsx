@@ -1,13 +1,12 @@
-// Module ID: 15059
-// Function ID: 15060
+// Module ID: 15055
+// Function ID: 15056
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 6954, 21, 7198, 504, 15060, 13685, 1113, 4079, 5309, 2]
+// Dependencies: [19, 6954, 21, 7198, 504, 15056, 15059, 2]
 // Exports: default
 
-// Module 15059 (useConjureAppChannelSheet)
+// Module 15055 (useConjureAppChannelSheet)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import UserUtils from "UserUtils" /* 5309 */;
+import ConjureAppChannelSheetHeaderDefault from "ConjureAppChannelSheetHeader" /* 15059 */;
 import react from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +21,7 @@ export default function useConjureAppChannelSheet(guild_id, arg1) {
     guild_id = null;
   }
   let tmp2 = guild_id;
-  let tmp4 = guild_id(creator[3]);
+  const tmp4 = guild_id(creator[3]);
   let tmp5 = null;
   const useAppChannelApplication = tmp4.useAppChannelApplication;
   if (arg1) {
@@ -52,38 +51,25 @@ export default function useConjureAppChannelSheet(guild_id, arg1) {
     return "success" === guildProjectsFetchState || "error" === guildProjectsFetchState;
   }, items1);
   let tmp11 = null != tmp7;
-  let tmp10 = appChannelApplication(tmp3[5]);
+  const tmp10 = appChannelApplication(creator[5]);
   if (tmp11) {
     tmp11 = stateFromStores;
   }
   const tmp10Result = tmp10(tmp7, guild_id, tmp11);
   creator = tmp10Result.creator;
   const remixProject = tmp10Result.remixProject;
-  const items2 = [tmp7, creator, remixProject];
+  const items2 = [tmp7, creator, guild_id, remixProject];
   return remixProject.useMemo(() => {
-    let formatToPlainStringResult;
-    let obj4;
-    let tmp10;
+    let tmp8;
     let tmp2 = null;
     if (null != appChannelApplication) {
-      const obj = { icon: null, title: appChannelApplication.name, subtitle: formatToPlainStringResult };
-      formatToPlainStringResult = undefined;
-      const tmp4 = importDefault;
-      if (null != creator) {
-        const intl = intl2.intl;
-        const formatToPlainString = intl.formatToPlainString;
-        const obj3 = { name: obj4.getName(tmp6) };
-        const prop = tmp4(4079)["6/x9LD"];
-        obj4 = UserUtils;
-        formatToPlainStringResult = formatToPlainString(prop, obj3);
-      }
-      tmp2 = obj;
+      tmp2 = jsx(ConjureAppChannelSheetHeaderDefault, { application: appChannelApplication, creator, guildId: guild_id });
     }
-    const obj5 = { header: tmp2, remixProject: tmp10 };
-    tmp10 = null;
+    const obj2 = { header: tmp2, remixProject: tmp8 };
+    tmp8 = null;
     if (null != appChannelApplication) {
-      tmp10 = remixProject;
+      tmp8 = remixProject;
     }
-    return obj5;
+    return obj2;
   }, items2);
 };

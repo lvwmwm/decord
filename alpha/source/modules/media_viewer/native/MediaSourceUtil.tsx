@@ -1,7 +1,7 @@
 // Module ID: 8566
 // Function ID: 8567
 // Name: MediaSourceUtil
-// Dependencies: [19, 5092, 1072, 6298, 1403, 8567, 8573, 1492, 8578, 6795, 8579, 6727, 8588, 6313, 2116, 8589, 11006, 1380, 11192, 1092, 5951, 8562, 6206, 1113, 1441, 10130, 2]
+// Dependencies: [19, 5092, 1072, 6298, 1403, 8567, 8573, 1492, 8578, 6795, 8579, 6727, 8588, 6313, 2116, 8589, 11000, 1380, 11186, 1092, 5951, 8562, 6206, 1113, 1441, 10129, 2]
 // Exports: downloadMediaAsset, downloadMediaAssetWithContentType, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, extractThumbnailMediaFromEmbed, flattenSource, getAttachmentUrl, getEmbedMedia, getEmbedUrl, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedAvifSource, isAnimatedImageSource, isAnimatedWebpSource, isGIFSource, isThumbnailAttachment, isValidImageEmbed, isValidVideoAttachment, isValidVideoEmbed, setMediaSourcePortal, supportOverlayVideoControls, useSelectedMediaSource
 
 // Module 8566 (MediaSourceUtil)
@@ -23,9 +23,9 @@ import getDisplayFilenameDefault from "getDisplayFilename" /* 8578 */;
 import renderMessageMarkupDefault from "renderMessageMarkup" /* 8579 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
 import transformMessageComponents from "transformMessageComponents" /* 8589 */;
-import MediaModalPortal from "MediaModalPortal" /* 10130 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 11006 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11192 */;
+import MediaModalPortal from "MediaModalPortal" /* 10129 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 11000 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11186 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import Constants from "Constants" /* 1072 */;
@@ -36,7 +36,7 @@ let _require, closure_2, dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
-const f95195 = () => {
+const f95206 = () => {
   if (ConstantsIOS.MediaType.IMAGE === VIDEO) {
     const tmp2Result = ToastUtils;
     tmp2Result.presentImageSaved();
@@ -577,7 +577,7 @@ function toMediaSourceFromUnfurledMedia(id, guildId, media, description, spoiler
   if (unfurledMediaItemType === RowGeneratorTypes.MediaGalleryItemType.VISUAL_PLACEHOLDER) {
     return null;
   } else {
-    const VIDEO = tmp(11006).MediaGalleryItemType.VIDEO;
+    const VIDEO = tmp(11000).MediaGalleryItemType.VIDEO;
     ({ proxyUrl: proxyUrl2, width } = media);
     const getMobileOptimizedSrc = utils_ImageUtilsDefault.getMobileOptimizedSrc;
     if (width == null) {
@@ -1044,7 +1044,7 @@ export function downloadMediaAsset(mediaUrl, VIDEO) {
   let closure_0 = VIDEO;
   const obj = react_nativeDefault;
   const downloadMediaAssetResult = obj.downloadMediaAsset(mediaUrl, VIDEO);
-  return downloadMediaAssetResult.then(f95195, handleDownloadError);
+  return downloadMediaAssetResult.then(f95206, handleDownloadError);
 }
 export function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) {
   let result;
@@ -1056,7 +1056,7 @@ export function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) 
     const obj = react_nativeDefault;
     result = obj.downloadMediaAsset(mediaUrl, VIDEO);
   }
-  return result.then(f95195, handleDownloadError);
+  return result.then(f95206, handleDownloadError);
 }
 export function getYoutubeClipVideoIdFromURI(uri) {
   const match = uri.match(/^https:\/\/www\.youtube\.com\/embed\/([A-Za-z0-9_-]*)(\?clip=([A-Za-z0-9_-]+)(&clipt=([A-Za-z0-9_-]+)))?$/);

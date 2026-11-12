@@ -1,9 +1,9 @@
-// Module ID: 9056
-// Function ID: 9057
+// Module ID: 9055
+// Function ID: 9056
 // Name: SelectedConversationStore
 // Dependencies: [8678, 8681, 504, 572, 2]
 
-// Module 9056 (SelectedConversationStore)
+// Module 9055 (SelectedConversationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ChannelConversationsStore from "ChannelConversationsStore" /* 8678 */;

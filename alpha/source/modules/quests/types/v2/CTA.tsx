@@ -1,10 +1,10 @@
-// Module ID: 8758
-// Function ID: 8759
+// Module ID: 8757
+// Function ID: 8758
 // Name: CTA
 // Dependencies: [2]
 // Exports: questCtaConfigFromServer
 
-// Module 8758 (CTA)
+// Module 8757 (CTA)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/types/v2/CTA.tsx");

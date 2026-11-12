@@ -1,31 +1,29 @@
 // Module ID: 9749
 // Function ID: 9750
-// Dependencies: [9732, 9733]
-// Exports: getMainCarrier, getSentryCarrier
+// Dependencies: [9748, 9750]
+// Exports: getAsyncContextStrategy, setAsyncContextStrategy
 
 // Module 9749
-import _mod9732 from "module_9732" /* 9732 */;
-import _mod9733 from "module_9733" /* 9733 */;
+import _mod9748 from "module_9748" /* 9748 */;
 
+let tmp;
+const _mod9750 = tmp(9750);
 
-export function getMainCarrier() {
-  const GLOBAL_OBJ = _mod9732.GLOBAL_OBJ;
-  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
-  GLOBAL_OBJ.__SENTRY__ = tmp3;
-  tmp3.version = tmp3.version || _mod9733.SDK_VERSION;
-  tmp3.version || _mod9733.SDK_VERSION;
-  const SDK_VERSION = tmp(9733).SDK_VERSION;
-  tmp3[SDK_VERSION] = tmp3[_mod9733.SDK_VERSION] || {};
-  tmp3[_mod9733.SDK_VERSION] || {};
-  return _mod9732.GLOBAL_OBJ;
+export function getAsyncContextStrategy(arg0) {
+  let acs;
+  const obj = _mod9748;
+  const sentryCarrier = obj.getSentryCarrier(arg0);
+  if (sentryCarrier.acs) {
+    acs = sentryCarrier.acs;
+  } else {
+    const tmpResult = _mod9750;
+    acs = tmpResult.getStackAsyncContextStrategy();
+  }
+  return acs;
 }
-export function getSentryCarrier(__SENTRY__) {
-  const tmp = __SENTRY__.__SENTRY__ || {};
-  __SENTRY__.__SENTRY__ = tmp;
-  const SDK_VERSION = tmp.version || _mod9733.SDK_VERSION;
-  tmp.version = SDK_VERSION;
-  const SDK_VERSION2 = _mod9733.SDK_VERSION;
-  const tmp4 = tmp[_mod9733.SDK_VERSION] || {};
-  tmp[SDK_VERSION2] = tmp4;
-  return tmp4;
+export function setAsyncContextStrategy(acs) {
+  const obj = _mod9748;
+  const mainCarrier = obj.getMainCarrier();
+  _mod9748.getSentryCarrier(mainCarrier).acs = acs;
+  _mod9748;
 }

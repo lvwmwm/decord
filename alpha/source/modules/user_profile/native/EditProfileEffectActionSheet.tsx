@@ -1,20 +1,20 @@
-// Module ID: 17004
-// Function ID: 17005
+// Module ID: 16999
+// Function ID: 17000
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 8434, 8425, 1072, 21, 5243, 575, 8416, 8493, 7852, 7871, 1252, 9336, 9333, 9332, 5503, 7847, 1113, 9337, 11610, 504, 17005, 15413, 8475, 8417, 17006, 15419, 15420, 9338, 9461, 5830, 2]
+// Dependencies: [32, 19, 17, 8434, 8425, 1072, 21, 5243, 575, 8416, 8493, 7852, 7871, 1252, 9335, 9332, 9331, 5503, 7847, 1113, 9336, 11604, 504, 17000, 15410, 8475, 8417, 17001, 15416, 15417, 9337, 9460, 5830, 2]
 // Exports: default
 
-// Module 17004 (EditProfileEffectActionSheet)
+// Module 16999 (EditProfileEffectActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8417 */;
 import ProfileEffectRecord from "ProfileEffectRecord" /* 8425 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9332 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 9333 */;
-import useShopProductItems from "useShopProductItems" /* 9336 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 17006 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9331 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 9332 */;
+import useShopProductItems from "useShopProductItems" /* 9335 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 17001 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -139,7 +139,7 @@ function ProfileEffectSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(9338)(previewSkuId);
+  const tmp2 = purchase(9337)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;
@@ -163,7 +163,7 @@ function ProfileEffectSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(9461), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  items1 = [closure_9(purchase(9460), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
   const tmp4 = purchase(5830);
@@ -274,7 +274,7 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   const obj6 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations, analyticsSource: isTryItOut(7871).EDIT_PROFILE_EFFECT_SHEET };
   skuId = undefined;
   tmp14 = closure_10;
-  const tmp2Result2 = isTryItOut(9337);
+  const tmp2Result2 = isTryItOut(9336);
   if (currentProfileEffect != null) {
     skuId = currentProfileEffect.skuId;
   }

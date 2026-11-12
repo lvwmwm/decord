@@ -1,13 +1,13 @@
-// Module ID: 13460
-// Function ID: 13461
+// Module ID: 13454
+// Function ID: 13455
 // Name: EditPollCreationImageAltTextModal
-// Dependencies: [32, 19, 17, 8945, 21, 5243, 575, 13457, 13459, 7351, 1113, 1187, 7366, 5866, 7408, 8388, 8041, 2]
+// Dependencies: [32, 19, 17, 8944, 21, 5243, 575, 13451, 13453, 7351, 1113, 1187, 7366, 5866, 7408, 8388, 8041, 2]
 // Exports: default
 
-// Module 13460 (EditPollCreationImageAltTextModal)
+// Module 13454 (EditPollCreationImageAltTextModal)
 import nativeDefault from "native" /* 575 */;
-import PollsConstants from "PollsConstants" /* 8945 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 13459 */;
+import PollsConstants from "PollsConstants" /* 8944 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 13453 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -59,7 +59,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   imageSize = imageSize.imageSize;
   value = undefined;
   const tmp = closure_10();
-  const tmp4 = value(13457)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
+  const tmp4 = value(13451)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
   const upload = tmp4.upload;
   let obj = react;
   let str;
@@ -82,7 +82,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   }, items);
   const obj2 = { top: true, style: tmp.container, children: items2 };
   const obj3 = { style: tmp.header, children: items1 };
-  const obj4 = { onPress: onSave(13459).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(onSave(1113).t.cpT0Cq), children: closure_8(Icon, obj5) };
+  const obj4 = { onPress: onSave(13453).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(onSave(1113).t.cpT0Cq), children: closure_8(Icon, obj5) };
   const SafeAreaPaddingView = onSave(7351).SafeAreaPaddingView;
   intl = onSave(1113).intl;
   obj5 = { source: value(7366) };

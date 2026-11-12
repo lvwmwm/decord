@@ -1,10 +1,10 @@
-// Module ID: 18074
-// Function ID: 18075
+// Module ID: 18069
+// Function ID: 18070
 // Name: CopyClientInfoSetting
-// Dependencies: [12278, 21, 1376, 5489, 13958, 7877, 5951, 1113, 8713, 7887, 7885, 7847, 1377, 5970, 5200, 12317, 6866, 5068, 2]
+// Dependencies: [12272, 21, 1376, 5489, 13954, 7877, 5951, 1113, 8712, 7887, 7885, 7847, 1377, 5970, 5200, 12311, 6866, 5068, 2]
 // Exports: getClientInfoString
 
-// Module 18074 (CopyClientInfoSetting)
+// Module 18069 (CopyClientInfoSetting)
 import intl8 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import UserSettings from "UserSettings" /* 5068 */;
@@ -17,12 +17,12 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7847 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
 import ActionSheet2 from "ActionSheet" /* 7885 */;
 import ActionSheetRow7 from "ActionSheetRow" /* 7887 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8713 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13958 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 12278 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8712 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13954 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 12272 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1376 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

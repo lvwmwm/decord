@@ -1,10 +1,10 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 10690
+// Function ID: 10691
 // Name: GuildPowerupsSectionHeader
 // Dependencies: [17, 21, 5243, 575, 5866, 2]
 // Exports: default
 
-// Module 10696 (GuildPowerupsSectionHeader)
+// Module 10690 (GuildPowerupsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5866 */;

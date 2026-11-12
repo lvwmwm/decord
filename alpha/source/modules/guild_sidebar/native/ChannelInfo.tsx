@@ -1,17 +1,17 @@
-// Module ID: 18823
-// Function ID: 18824
+// Module ID: 18818
+// Function ID: 18819
 // Name: ChannelInfo
-// Dependencies: [19, 8668, 5114, 5175, 6952, 5918, 1072, 21, 5243, 504, 13292, 9041, 18824, 18825, 6294, 1187, 18827, 18828, 18714, 6876, 14582, 18715, 18829, 15609, 2]
+// Dependencies: [19, 8668, 5114, 5175, 6952, 5918, 1072, 21, 5243, 504, 13286, 9040, 18819, 18820, 6294, 1187, 18822, 18823, 18709, 6876, 14578, 18710, 18824, 15606, 2]
 // Exports: default
 
-// Module 18823 (ChannelInfo)
+// Module 18818 (ChannelInfo)
 import Fragment from "Fragment" /* 21 */;
 import StageMediaHooks from "StageMediaHooks" /* 6876 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 13292 */;
-import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 14582 */;
-import showChannelBadgeDefault from "showChannelBadge" /* 18824 */;
-import ChannelBadgeDefault from "ChannelBadge" /* 18825 */;
-import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 18829 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 13286 */;
+import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 14578 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 18819 */;
+import ChannelBadgeDefault from "ChannelBadge" /* 18820 */;
+import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 18824 */;
 import react from "react" /* 19 */;
 import NewChannelsStore from "NewChannelsStore" /* 8668 */;
 import GuildStore from "GuildStore" /* 5114 */;
@@ -26,7 +26,7 @@ let Fonts;
 let c9;
 let metroImportAll;
 let tmp2;
-const Badges = tmp2(15609);
+const Badges = tmp2(15606);
 function LimitAndDurationInfo(channel) {
   let hasMedia;
   let hasVideo;
@@ -58,7 +58,7 @@ function LimitAndDurationInfo(channel) {
   }
   if (tmp4(obj2)) {
     const obj3 = { userCount: voiceStatesCount, video: hasVideo, channel };
-    const ConnectedUserLimit = tmp(18715).ConnectedUserLimit;
+    const ConnectedUserLimit = tmp(18710).ConnectedUserLimit;
     if (!hasVideo) {
       hasVideo = hasMedia;
     }
@@ -113,7 +113,7 @@ export default function ChannelInfo(channel) {
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
   const isMentionLowImportance = stateFromStoresObject.isMentionLowImportance;
   const tmp5 = useEmbeddedAppsForChannelDefault(channel);
-  const obj2 = channel(9041);
+  const obj2 = channel(9040);
   const postsWithUnreadsCount = obj2.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   if (showChannelBadgeDefault({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
     const obj3 = { mentionCount: mentionsCount, isMentionLowImportance, isNewChannel, postsWithUnreadsCount: tmp18, muted };
@@ -142,16 +142,16 @@ export default function ChannelInfo(channel) {
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        const tmpResult2 = channel(18827);
+        const tmpResult2 = channel(18822);
         if (tmpResult2.showChannelItemEmbeddedActivities(tmp5)) {
-          tmp11Result = jsx(tmp4(18828), { embeddedApps: tmp5, muted });
+          tmp11Result = jsx(tmp4(18823), { embeddedApps: tmp5, muted });
         }
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
-          tmp11Result = jsx(tmp4(18714), { locked: needSubscriptionToAccess });
+          tmp11Result = jsx(tmp4(18709), { locked: needSubscriptionToAccess });
         }
       }
     }

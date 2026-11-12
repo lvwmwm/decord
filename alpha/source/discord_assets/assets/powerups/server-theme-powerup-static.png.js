@@ -1,8 +1,8 @@
-// Module ID: 18762
-// Function ID: 18763
+// Module ID: 18757
+// Function ID: 18758
 // Dependencies: [2]
 
-// Module 18762
+// Module 18757
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/powerups/server-theme-powerup-static.png.js");

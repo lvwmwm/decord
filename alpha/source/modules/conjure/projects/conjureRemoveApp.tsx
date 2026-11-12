@@ -1,10 +1,10 @@
-// Module ID: 13199
-// Function ID: 13200
+// Module ID: 13193
+// Function ID: 13194
 // Name: conjureRemoveApp
 // Dependencies: [19, 2162, 7288, 5173, 5155, 5114, 5175, 5185, 1385, 7313, 6954, 1072, 7287, 5891, 504, 12, 6854, 1113, 4079, 7320, 2]
 // Exports: conjureDeleteProjectBody, conjureDeleteProjectItems, conjureRemoveAppKeptChannels, conjureTitleWithAppTag, isPublishedConjureUserApp, useConjureRemoveTarget, useIsPublishedConjureUserApp
 
-// Module 13199 (conjureRemoveApp)
+// Module 13193 (conjureRemoveApp)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;

@@ -475,7 +475,7 @@ const DCFEventTypes = DCFEventStore.DCFEventTypes;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let c14 = 2592000000;
-let items = [dismissible_content.DismissibleContent.ACCOUNT_LINK_INVITE_FRIENDS, dismissible_content.DismissibleContent.AUTOCLIPPING_EARLY_ACCESS_FIRST_CALL_EDUCATION];
+let items = [dismissible_content.DismissibleContent.ACCOUNT_LINK_INVITE_FRIENDS, dismissible_content.DismissibleContent.AUTOCLIPPING_EARLY_ACCESS_FIRST_CALL_EDUCATION, dismissible_content.DismissibleContent.AUTOCLIPPING_EARLY_ACCESS_RTC_NUDGE_ACKNOWLEDGMENT];
 const set = new Set(items);
 let result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentUtils.tsx");
 

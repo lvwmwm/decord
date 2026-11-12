@@ -1,7 +1,7 @@
 // Module ID: 6309
 // Function ID: 6310
 // Name: MessageStore
-// Dependencies: [32, 5, 5148, 6310, 2186, 502, 5092, 6731, 5173, 5155, 5114, 5175, 5185, 5146, 5286, 1385, 1072, 3, 11, 6732, 6737, 5121, 6734, 6311, 1403, 12, 8682, 6686, 5187, 8950, 16151, 504, 12594, 6318, 2116, 572, 2]
+// Dependencies: [32, 5, 5148, 6310, 2186, 502, 5092, 6731, 5173, 5155, 5114, 5175, 5185, 5146, 5286, 1385, 1072, 3, 11, 6732, 6737, 5121, 6734, 6311, 1403, 12, 8682, 6686, 5187, 8949, 16146, 504, 12588, 6318, 2116, 572, 2]
 
 // Module 6309 (MessageStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -17,9 +17,9 @@ import InteractionTypes from "InteractionTypes" /* 6318 */;
 import ChannelMessagesDefault from "ChannelMessages" /* 6732 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
 import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 8682 */;
-import MessageQueue from "MessageQueue" /* 8950 */;
-import canEditMessageDefault from "canEditMessage" /* 12594 */;
-import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 16151 */;
+import MessageQueue from "MessageQueue" /* 8949 */;
+import canEditMessageDefault from "canEditMessage" /* 12588 */;
+import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 16146 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 5148 */;

@@ -1,13 +1,13 @@
-// Module ID: 10157
-// Function ID: 10158
+// Module ID: 10155
+// Function ID: 10156
 // Name: parseWaterwheelsCard
-// Dependencies: [109, 3, 12, 10158, 2]
+// Dependencies: [109, 3, 12, 10156, 2]
 // Exports: parseWaterwheelsCard
 
-// Module 10157 (parseWaterwheelsCard)
+// Module 10155 (parseWaterwheelsCard)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod12 from "module_12" /* 12 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10158 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10156 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 

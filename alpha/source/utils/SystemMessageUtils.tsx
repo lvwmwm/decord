@@ -1,22 +1,22 @@
-// Module ID: 9149
-// Function ID: 9150
+// Module ID: 9148
+// Function ID: 9149
 // Name: SystemMessageUtils
-// Dependencies: [32, 5186, 502, 5092, 5114, 5185, 1385, 1072, 1113, 11, 9150, 9154, 6288, 5891, 9155, 9157, 6686, 6311, 9158, 9159, 8652, 9111, 2]
+// Dependencies: [32, 5186, 502, 5092, 5114, 5185, 1385, 1072, 1113, 11, 9149, 9153, 6288, 5891, 9154, 9156, 6686, 6311, 9157, 9158, 8652, 9110, 2]
 
-// Module 9149 (SystemMessageUtils)
+// Module 9148 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl21 from "intl" /* 1113 */;
 import useChannelName from "useChannelName" /* 5891 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6311 */;
 import useMessageAuthor from "useMessageAuthor" /* 6686 */;
-import GuildSpaceSystemMessageUtils from "GuildSpaceSystemMessageUtils" /* 9111 */;
-import MarkupParser from "MarkupParser" /* 9150 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 9154 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 9155 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 9157 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 9158 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 9159 */;
+import GuildSpaceSystemMessageUtils from "GuildSpaceSystemMessageUtils" /* 9110 */;
+import MarkupParser from "MarkupParser" /* 9149 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 9153 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 9154 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 9156 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 9157 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 9158 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MessageRecord from "MessageRecord" /* 5186 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

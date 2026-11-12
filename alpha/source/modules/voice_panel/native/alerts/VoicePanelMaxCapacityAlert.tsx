@@ -1,10 +1,10 @@
-// Module ID: 19937
-// Function ID: 19938
+// Module ID: 19932
+// Function ID: 19933
 // Name: VoicePanelMaxCapacityAlert
-// Dependencies: [19, 5092, 21, 563, 6211, 6211, 19935, 1113, 2]
+// Dependencies: [19, 5092, 21, 563, 6211, 6211, 19930, 1113, 2]
 // Exports: default
 
-// Module 19937 (VoicePanelMaxCapacityAlert)
+// Module 19932 (VoicePanelMaxCapacityAlert)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;

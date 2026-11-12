@@ -1,12 +1,12 @@
-// Module ID: 10515
-// Function ID: 10516
+// Module ID: 10513
+// Function ID: 10514
 // Name: getPrivateChannelCall
-// Dependencies: [5918, 1072, 6837, 9144, 1113, 10516, 2]
+// Dependencies: [5918, 1072, 6837, 9143, 1113, 10514, 2]
 // Exports: default
 
-// Module 10515 (getPrivateChannelCall)
+// Module 10513 (getPrivateChannelCall)
 import Constants from "Constants" /* 1072 */;
-import CallsUtils from "CallsUtils" /* 10516 */;
+import CallsUtils from "CallsUtils" /* 10514 */;
 import VoiceStateStore from "VoiceStateStore" /* 5918 */;
 import size from "module_2" /* 2 */;
 

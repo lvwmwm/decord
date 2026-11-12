@@ -1,14 +1,12 @@
 // Module ID: 11379
 // Function ID: 11380
-// Dependencies: [41, 42, 93, 95, 98, 11368, 11367, 11375]
+// Dependencies: [41, 42, 93, 95, 98, 11380]
 
 // Module 11379
-import _mod11367 from "module_11367" /* 11367 */;
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11368 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11375 */;
+import _mod11380 from "module_11380" /* 11380 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -27,80 +25,47 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("([0-9]{4})[-\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(_mod11367.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[-\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
-class ENYearMonthDayParser {
-  constructor(strictMonthDateOrder) {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class ENMergeDateRangeRefiner {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENYearMonthDayParser);
-    const obj = _getPrototypeOf(ENYearMonthDayParser);
+    _classCallCheck(this, ENMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(ENMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMonthDateOrder = strictMonthDateOrder;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENMergeDateRangeRefiner, fn(_mod11380).default);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(to|-|–|until|through|till)\s*$/i;
   }
 };
-let items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(arg0, arg1) {
-      let parsed2;
-      let tmp6;
-      let tmp7;
-      const parsed = parseInt(arg1[1]);
-      const parsed1 = parseInt(arg1[4]);
-      if (arg1[3]) {
-        const _parseInt = parseInt;
-        parsed2 = parseInt(arg1[3]);
-      } else {
-        parsed2 = _mod11367.MONTH_DICTIONARY[str.toLowerCase(str)];
-      }
-      if (parsed2 < 1) {
-        const self = this;
-        if (this.strictMonthDateOrder) {
-          return null;
-        } else {
-          tmp6 = parsed2;
-          tmp7 = parsed1;
-          if (parsed1 >= 1) {
-            tmp6 = parsed2;
-            tmp7 = parsed1;
-            if (parsed1 <= 12) {
-              const items = [parsed1, parsed2];
-              [tmp6, tmp7] = items;
-            }
-          }
-        }
-      } else {
-        tmp6 = parsed2;
-        tmp7 = parsed1;
-      }
-      let tmp8 = null;
-      if (tmp7 >= 1) {
-        tmp8 = null;
-        if (tmp7 <= 31) {
-          tmp8 = { day: tmp7, month: tmp6, year: parsed };
-          const date = { day: tmp7, month: tmp6, year: parsed };
-        }
-      }
-      return tmp8;
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(ENYearMonthDayParser, items);
+export default _createClass(ENMergeDateRangeRefiner, items);

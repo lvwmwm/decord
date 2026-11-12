@@ -1,16 +1,16 @@
-// Module ID: 12296
-// Function ID: 12297
+// Module ID: 12290
+// Function ID: 12291
 // Name: SubscriptionUtils
-// Dependencies: [32, 19, 2175, 1072, 1387, 38, 12297, 2171, 7209, 504, 12299, 2166, 2]
+// Dependencies: [32, 19, 2175, 1072, 1387, 38, 12291, 2171, 7209, 504, 12293, 2166, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 12296 (SubscriptionUtils)
+// Module 12290 (SubscriptionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import _modDef2166 from "module_2166" /* 2166 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
 import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7209 */;
-import CheckoutError from "CheckoutError" /* 12297 */;
-import PauseDuration from "PauseDuration" /* 12299 */;
+import CheckoutError from "CheckoutError" /* 12291 */;
+import PauseDuration from "PauseDuration" /* 12293 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2175 */;
@@ -25,7 +25,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f103732 = (planId) => {
+const f103739 = (planId) => {
   const value = SubscriptionPlanStore.get(planId.planId);
   _modDef38(null != value, "Unable to fetch plan");
   return value;
@@ -37,11 +37,11 @@ let result = size.fileFinishedImporting("utils/SubscriptionUtils.tsx");
 
 export function getSubscriptionPlans(items) {
   items = items.items;
-  return items.map(f103732);
+  return items.map(f103739);
 }
 export function getSubscriptionSKUs(items) {
   items = items.items;
-  const mapped = items.map(f103732);
+  const mapped = items.map(f103739);
   return mapped.map((skuId) => skuId.skuId);
 }
 export function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {

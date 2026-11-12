@@ -1,12 +1,12 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10643
+// Function ID: 10644
 // Name: GuildPowerupRollbackSheet
-// Dependencies: [21, 10651, 5873, 2]
+// Dependencies: [21, 10644, 5873, 2]
 // Exports: default
 
-// Module 10650 (GuildPowerupRollbackSheet)
+// Module 10643 (GuildPowerupRollbackSheet)
 import Fragment from "Fragment" /* 21 */;
-import PromoSheet2 from "PromoSheet" /* 10651 */;
+import PromoSheet2 from "PromoSheet" /* 10644 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

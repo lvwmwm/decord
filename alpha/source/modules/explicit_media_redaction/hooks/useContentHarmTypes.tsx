@@ -1,10 +1,10 @@
-// Module ID: 11029
-// Function ID: 11030
+// Module ID: 11023
+// Function ID: 11024
 // Name: useContentHarmTypes
 // Dependencies: [19, 1231, 5092, 5185, 1385, 8567, 504, 8575, 8571, 2]
 // Exports: useEnabledHarmTypesBitmaskForMessage
 
-// Module 11029 (useContentHarmTypes)
+// Module 11023 (useContentHarmTypes)
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8567 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;

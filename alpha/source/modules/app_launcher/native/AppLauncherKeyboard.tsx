@@ -1,10 +1,10 @@
-// Module ID: 13268
-// Function ID: 13269
+// Module ID: 13262
+// Function ID: 13263
 // Name: AppLauncherKeyboard
-// Dependencies: [19, 17, 1072, 5089, 13269, 21, 5243, 575, 12490, 12488, 11954, 5505, 13270, 1652, 13279, 1705, 5314, 5507, 13280, 1377, 6004, 1624, 1497, 1625, 6268, 13311, 12489, 13314, 2]
+// Dependencies: [19, 17, 1072, 5089, 13263, 21, 5243, 575, 12484, 12482, 11948, 5505, 13264, 1652, 13273, 1705, 5314, 5507, 13274, 1377, 6004, 1624, 1497, 1625, 6268, 13305, 12483, 13308, 2]
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 13268 (AppLauncherKeyboard)
+// Module 13262 (AppLauncherKeyboard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -16,9 +16,9 @@ import native from "native" /* 5314 */;
 import BottomSheetModal from "BottomSheetModal" /* 5507 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
 import react_native2 from "react-native" /* 6268 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 13269 */;
-import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 13279 */;
-import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 13280 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 13263 */;
+import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 13273 */;
+import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 13274 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -182,11 +182,11 @@ const memoResult = react.memo(function AppLauncherKeyboard(context) {
       if (1 === arg1) {
         let current;
         if (arg2 === BottomSheetModal.ANIMATION_SOURCE.KEYBOARD) {
-          current = tmp7(12488).AppLauncherBottomSheetExpandReason.KEYBOARD;
+          current = tmp7(12482).AppLauncherBottomSheetExpandReason.KEYBOARD;
         } else if (arg2 === BottomSheetModal.ANIMATION_SOURCE.GESTURE) {
-          current = tmp7(12488).AppLauncherBottomSheetExpandReason.GESTURE;
+          current = tmp7(12482).AppLauncherBottomSheetExpandReason.GESTURE;
         } else if (arg2 !== BottomSheetModal.ANIMATION_SOURCE.USER) {
-          current = tmp7(12488).AppLauncherBottomSheetExpandReason.OTHER;
+          current = tmp7(12482).AppLauncherBottomSheetExpandReason.OTHER;
         } else {
           current = ref1.current;
         }

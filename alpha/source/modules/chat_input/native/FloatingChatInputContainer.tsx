@@ -1,10 +1,10 @@
-// Module ID: 14714
-// Function ID: 14715
+// Module ID: 14710
+// Function ID: 14711
 // Name: FloatingChatInputContainer
 // Dependencies: [32, 19, 21, 1652, 5839, 575, 1641, 5440, 1625, 5485, 5488, 2]
 // Exports: default
 
-// Module 14714 (FloatingChatInputContainer)
+// Module 14710 (FloatingChatInputContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;

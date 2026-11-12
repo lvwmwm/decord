@@ -1,10 +1,10 @@
-// Module ID: 10103
-// Function ID: 10104
+// Module ID: 10102
+// Function ID: 10103
 // Name: AppStoreOverlayTelemetryManager
 // Dependencies: [1072, 7816, 1377, 1092, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 10103 (AppStoreOverlayTelemetryManager)
+// Module 10102 (AppStoreOverlayTelemetryManager)
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;

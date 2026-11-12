@@ -1,10 +1,10 @@
-// Module ID: 15341
-// Function ID: 15342
+// Module ID: 15338
+// Function ID: 15339
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 9368, 1387, 21, 5243, 575, 5830, 1092, 5957, 2171, 15342, 15343, 9253, 9541, 9542, 9628, 7381, 2]
+// Dependencies: [19, 17, 9367, 1387, 21, 5243, 575, 5830, 1092, 5957, 2171, 15339, 15340, 9252, 9540, 9541, 9627, 7381, 2]
 // Exports: default
 
-// Module 15341 (PremiumTierCard)
+// Module 15338 (PremiumTierCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
@@ -12,7 +12,7 @@ import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import ColorConstants from "ColorConstants" /* 9368 */;
+import ColorConstants from "ColorConstants" /* 9367 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -61,11 +61,11 @@ export default function _default(premiumType) {
     textLogoTier2 = tmp.textLogoTier2;
   }
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result = tmp5(15342);
+    tmp5Result = tmp5(15339);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp5Result = tmp5(15343);
+    tmp5Result = tmp5(15340);
   } else if (PremiumTypes.TIER_2 === premiumType) {
-    tmp5Result = tmp5(9253);
+    tmp5Result = tmp5(9252);
   }
   const items = [metroRequire(tmp7, obj), , ];
   const items1 = [tmp.wumpusLogo, ];
@@ -80,11 +80,11 @@ export default function _default(premiumType) {
   const obj4 = { accessible: false, importantForAccessibility: "no", style: items1, source: tmp5Result4 };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result4 = tmp5(9541);
+    tmp5Result4 = tmp5(9540);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp5Result4 = tmp5(9542);
+    tmp5Result4 = tmp5(9541);
   } else if (PremiumTypes.TIER_2 === premiumType) {
-    tmp5Result4 = tmp5(9628);
+    tmp5Result4 = tmp5(9627);
   }
   const obj5 = { children: items };
   items[1] = metroRequire(tmp5Result3, obj4);

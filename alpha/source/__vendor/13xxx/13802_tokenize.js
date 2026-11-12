@@ -1,47 +1,66 @@
 // Module ID: 13802
 // Function ID: 13803
 // Name: tokenize
-// Dependencies: [13730, 13774]
+// Dependencies: [13726]
 
 // Module 13802 (tokenize)
-import tokenize from "tokenize" /* 13730 */;
-import tokenize2 from "tokenize" /* 13774 */;
+import tokenize from "tokenize" /* 13726 */;
 
+let items;
+let obj2;
 function consumeRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.leftCurlyBracket, true);
+  return this.Raw(arg0, null, false);
 }
-function consumePrelude() {
-  const self = this;
-  const SelectorListResult = this.SelectorList();
-  const tmp2 = "Raw" !== SelectorListResult.type && false === self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket;
-  if (tmp2) {
-    self.error();
-  }
-  return SelectorListResult;
-}
-const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
-let obj = {
-  name: "Rule",
-  structure: { prelude: ["SelectorList", "Raw"], block: ["Block"] },
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+const Comment = tokenize.TYPE.Comment;
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const CDO = tokenize.TYPE.CDO;
+const CDC = tokenize.TYPE.CDC;
+const obj = {
+  name: "StyleSheet",
+  structure: obj2,
   parse() {
-    let BlockResult;
-    let parseWithFallbackResult;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    if (this.parseRulePrelude) {
-      parseWithFallbackResult = self.parseWithFallback(consumePrelude, consumeRaw);
-    } else {
-      parseWithFallbackResult = consumeRaw.call(self, tmp);
+    const list = this.createList();
+    if (!this.scanner.eof) {
+      do {
+        let tokenType = self.scanner.tokenType;
+        if (WhiteSpace === tokenType) {
+          let iter2 = self.scanner;
+          let nextResult = iter2.next();
+        } else {
+          let CommentResult;
+          if (Comment === tokenType) {
+            let source = self.scanner.source;
+            if (33 !== source.charCodeAt(self.scanner.tokenStart + 2)) {
+              let iter = self.scanner;
+              let nextResult1 = iter.next();
+            } else {
+              CommentResult = self.Comment();
+            }
+          } else if (CDO === tokenType) {
+            CommentResult = self.CDO();
+          } else if (CDC === tokenType) {
+            CommentResult = self.CDC();
+          } else if (AtKeyword === tokenType) {
+            CommentResult = self.parseWithFallback(self.Atrule, consumeRaw);
+          } else {
+            CommentResult = self.parseWithFallback(self.Rule, consumeRaw);
+          }
+          let arr = list.push(CommentResult);
+        }
+      } while (!self.scanner.eof);
     }
-    const obj = { type: "Rule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), prelude: parseWithFallbackResult, block: BlockResult };
-    BlockResult = self.Block(true);
-    return obj;
+    const element = { type: "StyleSheet", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
+    return element;
   },
-  generate(prelude) {
-    this.node(prelude.prelude);
-    this.node(prelude.block);
+  generate(arg0) {
+    this.children(arg0);
   },
-  walkContext: "rule"
+  walkContext: "stylesheet"
 };
+obj2 = { children: items };
+items = [["Comment", "CDO", "CDC", "Atrule", "Rule", "Raw"]];
 
 export default obj;

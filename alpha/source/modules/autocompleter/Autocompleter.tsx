@@ -1,9 +1,9 @@
-// Module ID: 10181
-// Function ID: 10182
+// Module ID: 10179
+// Function ID: 10180
 // Name: Autocompleter
-// Dependencies: [7224, 10182, 5173, 5185, 1385, 7008, 6899, 10183, 5073, 7012, 10185, 10189, 2150, 5988, 5992, 2067, 1378, 12, 7011, 2]
+// Dependencies: [7224, 10180, 5173, 5185, 1385, 7008, 6899, 10181, 5073, 7012, 10183, 10187, 2150, 5988, 5992, 2067, 1378, 12, 7011, 2]
 
-// Module 10181 (Autocompleter)
+// Module 10179 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import _modDef2067 from "module_2067" /* 2067 */;
@@ -15,9 +15,9 @@ import AutocompleteUtils from "AutocompleteUtils" /* 6899 */;
 import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 7008 */;
 import sortByMatchScoreDefault from "sortByMatchScore" /* 7011 */;
 import GuildUtilsDefault from "GuildUtils" /* 7012 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 10183 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 10181 */;
 import ThreadMemberListStore from "ThreadMemberListStore" /* 7224 */;
-import LinkRecord from "LinkRecord" /* 10182 */;
+import LinkRecord from "LinkRecord" /* 10180 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

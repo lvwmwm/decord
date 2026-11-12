@@ -1,15 +1,15 @@
-// Module ID: 15116
-// Function ID: 15117
+// Module ID: 15113
+// Function ID: 15114
 // Name: MediaModalSpoilerOverlay
-// Dependencies: [32, 19, 17, 21, 5243, 575, 1377, 5839, 15092, 1652, 5843, 8014, 5866, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1377, 5839, 15089, 1652, 5843, 8014, 5866, 1113, 2]
 
-// Module 15116 (MediaModalSpoilerOverlay)
+// Module 15113 (MediaModalSpoilerOverlay)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useToken from "useToken" /* 5839 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5843 */;
 import ImageWarningIcon from "ImageWarningIcon" /* 8014 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 15092 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 15089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

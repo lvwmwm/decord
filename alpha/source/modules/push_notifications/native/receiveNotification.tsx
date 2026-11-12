@@ -1,10 +1,10 @@
-// Module ID: 20752
-// Function ID: 20753
+// Module ID: 20747
+// Function ID: 20748
 // Name: receiveNotification
-// Dependencies: [5, 7595, 6966, 502, 5092, 1385, 6784, 1072, 6740, 5098, 14721, 3, 5952, 1113, 5974, 5430, 1108, 7612, 6000, 7168, 7899, 5429, 19059, 6970, 8410, 7871, 8069, 8071, 1252, 6004, 1377, 13936, 11, 19057, 8611, 10, 8612, 6737, 16002, 14724, 504, 13024, 9003, 5985, 1092, 12507, 10150, 10142, 572, 6785, 1099, 6836, 16169, 2]
+// Dependencies: [5, 7595, 6966, 502, 5092, 1385, 6784, 1072, 6740, 5098, 14717, 3, 5952, 1113, 5974, 5430, 1108, 7612, 6000, 7168, 7899, 5429, 19054, 6970, 8410, 7871, 8069, 8071, 1252, 6004, 1377, 13932, 11, 19052, 8611, 10, 8612, 6737, 15997, 14720, 504, 13018, 9002, 5985, 1092, 12501, 10148, 10141, 572, 6785, 1099, 6836, 16164, 2]
 // Exports: default
 
-// Module 20752 (receiveNotification)
+// Module 20747 (receiveNotification)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -18,9 +18,9 @@ import parseURLDefault from "parseURL" /* 5985 */;
 import Constants2 from "Constants" /* 6740 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6784 */;
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7595 */;
-import MessageManagerDefault from "MessageManager" /* 9003 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10150 */;
-import Constants3 from "Constants" /* 14721 */;
+import MessageManagerDefault from "MessageManager" /* 9002 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10148 */;
+import Constants3 from "Constants" /* 14717 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6966 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -36,7 +36,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f122736 = (arg0) => {
+const f122746 = (arg0) => {
   addPostConnectionCallback(arg0);
 };
 function onStageConnectionError() {
@@ -48,7 +48,7 @@ function onStageConnectionError() {
   open("STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC", obj);
 }
 function waitForConnection() {
-  const promise = new Promise(f122736);
+  const promise = new Promise(f122746);
   return promise;
 }
 function waitForDataOrConnection() {
@@ -973,7 +973,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
   const maybeAckNotificationCenter2 = function maybeAckNotificationCenter() {
     return obj(...arguments);
   };
-  const f137915 = () => {
+  const f137933 = () => {
     obj = router_utils;
     const obj2 = { navigationReplace: true, openChannel: true, isAppStartupNavigation };
     obj.transitionTo(gesture.CHANNEL(data.guild_id, data.channel_id), obj2);
@@ -1191,10 +1191,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -1248,7 +1248,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }
@@ -1365,10 +1365,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -1422,7 +1422,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }
@@ -1539,10 +1539,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -1596,7 +1596,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }
@@ -1713,10 +1713,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -1770,7 +1770,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }
@@ -1887,10 +1887,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -1944,7 +1944,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }
@@ -2061,10 +2061,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -2118,7 +2118,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }
@@ -2235,10 +2235,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -2292,7 +2292,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }
@@ -2409,10 +2409,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -2466,7 +2466,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }
@@ -2583,10 +2583,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -2640,7 +2640,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }
@@ -2757,10 +2757,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f122736;
+          fn = f122746;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f137915;
+          fn2 = f137933;
           promise.then(fn2);
           break;
         }
@@ -2814,7 +2814,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
               tmp19Result7 = tmp19(5985);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(16169);
+              tmp19Result8 = tmp19(16164);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag, isAppStartupNavigation };
               tmp19Result8(obj16);
             }

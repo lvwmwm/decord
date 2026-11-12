@@ -1,14 +1,14 @@
-// Module ID: 10589
-// Function ID: 10590
+// Module ID: 10587
+// Function ID: 10588
 // Name: GuildProfileSheetBody
-// Dependencies: [19, 17, 8091, 10482, 21, 5243, 575, 8092, 504, 7852, 7871, 8093, 10590, 10605, 5873, 1113, 10606, 10591, 2]
+// Dependencies: [19, 17, 8091, 10480, 21, 5243, 575, 8092, 504, 7852, 7871, 8093, 10588, 10603, 5873, 1113, 10604, 10589, 2]
 // Exports: default
 
-// Module 10589 (GuildProfileSheetBody)
+// Module 10587 (GuildProfileSheetBody)
 import nativeDefault from "native" /* 575 */;
 import GuildProfileStore2 from "GuildProfileStore" /* 8091 */;
 import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8093 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 10482 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 10480 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

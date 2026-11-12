@@ -1,19 +1,19 @@
-// Module ID: 9944
-// Function ID: 9945
+// Module ID: 9943
+// Function ID: 9944
 // Name: usePromotionMarketingSurface
-// Dependencies: [19, 9232, 9557, 9945, 504, 2]
+// Dependencies: [19, 9231, 9556, 9944, 504, 2]
 // Exports: usePromotionMarketingComponentData, usePromotionMarketingSurface
 
-// Module 9944 (usePromotionMarketingSurface)
+// Module 9943 (usePromotionMarketingSurface)
 import react from "react" /* 19 */;
-import UserOfferStore from "UserOfferStore" /* 9232 */;
-import PromotionsStore from "PromotionsStore" /* 9557 */;
+import UserOfferStore from "UserOfferStore" /* 9231 */;
+import PromotionsStore from "PromotionsStore" /* 9556 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, userTrialOffer;
 
-const f98201 = () => {
+const f98212 = () => {
   const obj = PREMIUM_TAB(dependencyMap[3]);
   const result = obj.maybeFetchActivePromotions();
 };
@@ -21,13 +21,13 @@ let result = size.fileFinishedImporting("modules/premium/hooks/usePromotionMarke
 
 export function usePromotionMarketingSurface(PREMIUM_TAB) {
   _require = PREMIUM_TAB;
-  const f98206 = () => PromotionsStore.getMarketingComponentBySurface(f98206);
+  const f98217 = () => PromotionsStore.getMarketingComponentBySurface(f98217);
   let obj = react;
-  const effect = react.useEffect(f98201, []);
+  const effect = react.useEffect(f98212, []);
   const items = [PromotionsStore, UserOfferStore];
   const obj2 = require("get initialized");
   const stateFromStores = obj2.useStateFromStores(items, () => {
-    const tmp = f98206();
+    const tmp = f98217();
     if (null == tmp) {
       return null;
     } else {
@@ -120,11 +120,11 @@ export function usePromotionMarketingComponentData(arg0) {
   let endDate;
   let stateFromStores;
   _require = arg0;
-  const effect = endDate.useEffect(f98201, []);
+  const effect = endDate.useEffect(f98212, []);
   const items = [PromotionsStore, UserOfferStore];
   const obj2 = require("get initialized");
   stateFromStores = obj2.useStateFromStores(items, () => {
-    const tmp = f98206();
+    const tmp = f98217();
     if (null == tmp) {
       return null;
     } else {

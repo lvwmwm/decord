@@ -1,9 +1,9 @@
-// Module ID: 19870
-// Function ID: 19871
+// Module ID: 19865
+// Function ID: 19866
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 5091, 12629, 5092, 11925, 11923, 1072, 2142, 12616, 21, 5243, 575, 11924, 13039, 504, 19871, 12646, 7196, 12752, 7852, 7871, 11236, 5915, 1652, 1705, 6962, 5535, 2143, 1493, 10945, 19872, 12758, 19873, 19874, 19878, 5314, 2]
+// Dependencies: [32, 19, 5091, 12623, 5092, 11919, 11917, 1072, 2142, 12610, 21, 5243, 575, 11918, 13033, 504, 19866, 12640, 7196, 12746, 7852, 7871, 11230, 5915, 1652, 1705, 6962, 5535, 2143, 1493, 10939, 19867, 12752, 19868, 19869, 19873, 5314, 2]
 
-// Module 19870 (VoicePanelAnimatedActivityCard)
+// Module 19865 (VoicePanelAnimatedActivityCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
@@ -12,15 +12,15 @@ import Constants2 from "Constants" /* 2142 */;
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2143 */;
 import native from "native" /* 5314 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11923 */;
-import Constants3 from "Constants" /* 12616 */;
-import fetchShelf from "fetchShelf" /* 12646 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11917 */;
+import Constants3 from "Constants" /* 12610 */;
+import fetchShelf from "fetchShelf" /* 12640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12629 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12623 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;

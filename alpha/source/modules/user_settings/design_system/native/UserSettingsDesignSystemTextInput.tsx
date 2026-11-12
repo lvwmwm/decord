@@ -1,10 +1,10 @@
-// Module ID: 18320
-// Function ID: 18321
+// Module ID: 18315
+// Function ID: 18316
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 5243, 575, 7381, 6274, 7553, 8022, 16369, 5503, 7847, 7723, 7793, 5866, 8013, 7554, 7759, 7922, 10502, 7560, 5873, 5489, 16370, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 7381, 6274, 7553, 8022, 16364, 5503, 7847, 7723, 7793, 5866, 8013, 7554, 7759, 7922, 10500, 7560, 5873, 5489, 16365, 2]
 // Exports: default
 
-// Module 18320 (UserSettingsDesignSystemTextInput)
+// Module 18315 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
@@ -21,9 +21,9 @@ import TextArea from "TextArea" /* 7793 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7847 */;
 import IconButton2 from "IconButton" /* 7922 */;
 import TextIcon from "TextIcon" /* 8013 */;
-import SettingsIcon from "SettingsIcon" /* 10502 */;
-import GhostInput2 from "GhostInput" /* 16369 */;
-import SplitTextInput from "SplitTextInput" /* 16370 */;
+import SettingsIcon from "SettingsIcon" /* 10500 */;
+import GhostInput2 from "GhostInput" /* 16364 */;
+import SplitTextInput from "SplitTextInput" /* 16365 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -38,7 +38,7 @@ let metroRequire;
 let obj2;
 let tmp6;
 const AtIcon = tmp6(8022);
-const f116256 = () => {
+const f116265 = () => {
   let tmp = closure_0((arg0) => {
     let tmp = closure_1_8[(closure_1_8.indexOf(closure_1_8, arg0) + 1) % closure_1_8.length];
     if (tmp == null) {
@@ -204,7 +204,7 @@ function CountryCodeExample(label) {
   label = label.label;
   const tmp = _slicedToArray(react.useState("US +1"), 2);
   _require = tmp[1];
-  const items = [tmp[0], react.useCallback(f116256, [])];
+  const items = [tmp[0], react.useCallback(f116265, [])];
   const tmp2 = _slicedToArray(items, 2);
   const first = tmp2[0];
   const obj = { label, description: "Tap the country code to cycle through a few examples.", placeholder: "Phone number", keyboardType: "phone-pad", leadingText: first, leadingPressableProps: obj2 };
@@ -222,7 +222,7 @@ function PhoneOrEmailExample() {
   let tmp7;
   let tmp = _slicedToArray(react.useState("US +1"), 2);
   _require = tmp[1];
-  const items = [tmp[0], react.useCallback(f116256, [])];
+  const items = [tmp[0], react.useCallback(f116265, [])];
   [first, tmp4] = items;
   [tmp6, tmp7] = react.useState("");
   _slicedToArray(react.useState(""), 2);

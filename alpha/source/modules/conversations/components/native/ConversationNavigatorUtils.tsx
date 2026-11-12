@@ -1,10 +1,10 @@
-// Module ID: 9073
-// Function ID: 9074
+// Module ID: 9072
+// Function ID: 9073
 // Name: ConversationNavigatorUtils
 // Dependencies: [5430, 6000, 2]
 // Exports: closeConversationsAndJumpToMessage
 
-// Module 9073 (ConversationNavigatorUtils)
+// Module 9072 (ConversationNavigatorUtils)
 import RootNavigationRef from "RootNavigationRef" /* 5430 */;
 import size from "module_2" /* 2 */;
 

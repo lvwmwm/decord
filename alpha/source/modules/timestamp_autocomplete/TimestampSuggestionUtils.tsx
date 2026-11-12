@@ -1,13 +1,13 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 11355
+// Function ID: 11356
 // Name: TimestampSuggestionUtils
-// Dependencies: [32, 2186, 2166, 11362, 1113, 2]
+// Dependencies: [32, 2186, 2166, 11356, 1113, 2]
 // Exports: preloadTimestampParser, queryTimestampSuggestions
 
-// Module 11361 (TimestampSuggestionUtils)
+// Module 11355 (TimestampSuggestionUtils)
 import intl6 from "intl" /* 1113 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import en2 from "en" /* 11362 */;
+import en2 from "en" /* 11356 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import size from "module_2" /* 2 */;

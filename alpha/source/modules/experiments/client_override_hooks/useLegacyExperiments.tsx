@@ -1,10 +1,10 @@
-// Module ID: 12327
-// Function ID: 12328
+// Module ID: 12321
+// Function ID: 12322
 // Name: useLegacyExperiments
 // Dependencies: [32, 19, 5469, 5470, 8585, 5474, 8583, 504, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 12327 (useLegacyExperiments)
+// Module 12321 (useLegacyExperiments)
 import react from "react" /* 19 */;
 import ExperimentManager from "ExperimentManager" /* 5474 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

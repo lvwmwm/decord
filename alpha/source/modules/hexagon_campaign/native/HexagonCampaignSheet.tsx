@@ -1,24 +1,24 @@
-// Module ID: 17514
-// Function ID: 17515
+// Module ID: 17509
+// Function ID: 17510
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1385, 16727, 5268, 5504, 1240, 1083, 21, 1395, 1396, 10000, 5243, 575, 5273, 504, 7852, 7871, 15203, 5271, 7929, 1627, 2171, 5269, 16967, 5278, 17515, 5952, 1113, 5489, 17513, 4464, 5836, 10204, 5866, 17523, 5503, 7847, 16990, 5873, 17524, 7680, 7888, 17525, 2]
+// Dependencies: [5, 32, 19, 17, 1193, 1385, 16722, 5268, 5504, 1240, 1083, 21, 1395, 1396, 9999, 5243, 575, 5273, 504, 7852, 7871, 15200, 5271, 7929, 1627, 2171, 5269, 16962, 5278, 17510, 5952, 1113, 5489, 17508, 4464, 5836, 10202, 5866, 17518, 5503, 7847, 16985, 5873, 17519, 7680, 7888, 17520, 2]
 // Exports: default
 
-// Module 17514 (HexagonCampaignSheet)
+// Module 17509 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
 import DisplayNameFont from "DisplayNameFont" /* 1395 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 10000 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9999 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16727 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16722 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -467,9 +467,9 @@ export default function HexagonCampaignSheet() {
           c3 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp21) {
+      } catch (tmp18) {
         c3 = 3;
-        throw tmp21;
+        throw tmp18;
       }
     }
   }));

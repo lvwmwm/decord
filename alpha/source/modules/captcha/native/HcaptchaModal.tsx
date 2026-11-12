@@ -1,9 +1,9 @@
-// Module ID: 19998
-// Function ID: 19999
+// Module ID: 19993
+// Function ID: 19994
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2186, 1385, 1072, 21, 5243, 504, 1499, 2116, 1627, 1113, 6706, 6269, 6274, 575, 5866, 1377, 19997, 7364, 10803, 2]
+// Dependencies: [109, 19, 17, 2186, 1385, 1072, 21, 5243, 504, 1499, 2116, 1627, 1113, 6706, 6269, 6274, 575, 5866, 1377, 19992, 7364, 10797, 2]
 
-// Module 19998 (HcaptchaModal)
+// Module 19993 (HcaptchaModal)
 import Constants from "Constants" /* 1072 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6706 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -90,7 +90,7 @@ class HcaptchaModal {
     items3 = [tmp13Result, , ];
     const obj7 = { style: absoluteFillObject.absoluteFillObject, children: closure_11(tmp9Result, obj8) };
     obj8 = { languageCode: LocaleStore.locale, onMessage };
-    tmp9Result = onPress(19997);
+    tmp9Result = onPress(19992);
     const merged = Object.assign(tmp);
     items3[1] = closure_11(closure_7, obj7);
     const obj9 = { style: items4, pointerEvents: "box-none", children: closure_11(PressableOpacity, obj11) };
@@ -100,7 +100,7 @@ class HcaptchaModal {
     PressableOpacity = tmp3(7364).PressableOpacity;
     intl2 = tmp3(1113).intl;
     obj12 = { color: onPress(575).colors.INTERACTIVE_ICON_DEFAULT };
-    XLargeIcon = tmp3(10803).XLargeIcon;
+    XLargeIcon = tmp3(10797).XLargeIcon;
     items3[2] = closure_11(closure_7, obj9);
     return closure_12(closure_7, obj3);
   }

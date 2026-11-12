@@ -1,7 +1,7 @@
 // Module ID: 7201
 // Function ID: 7202
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 7176, 5092, 5149, 5114, 1072, 5099, 7197, 7202, 7211, 7181, 7214, 7216, 7016, 7219, 7220, 5479, 7221, 7179, 1380, 10911, 8069, 5892, 2]
+// Dependencies: [5, 7176, 5092, 5149, 5114, 1072, 5099, 7197, 7202, 7211, 7181, 7214, 7216, 7016, 7219, 7220, 5479, 7221, 7179, 1380, 10905, 8069, 5892, 2]
 // Exports: default
 
 // Module 7201 (isAccessibleChannelOrThreadPath)

@@ -1,10 +1,10 @@
-// Module ID: 11732
-// Function ID: 11733
+// Module ID: 11726
+// Function ID: 11727
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5244, 7007, 7184, 1072, 21, 5243, 575, 1652, 5876, 5485, 5491, 1493, 504, 8494, 7181, 5866, 5873, 1113, 5957, 5830, 7351, 7434, 7483, 9449, 7196, 7853, 11733, 7871, 1252, 5836, 11669, 3949, 10319, 5309, 2]
+// Dependencies: [32, 717, 19, 17, 5244, 7007, 7184, 1072, 21, 5243, 575, 1652, 5876, 5485, 5491, 1493, 504, 8494, 7181, 5866, 5873, 1113, 5957, 5830, 7351, 7434, 7483, 9448, 7196, 7853, 11727, 7871, 1252, 5836, 11663, 3949, 10317, 5309, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 11732 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 11726 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -15,7 +15,7 @@ import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7181 */;
 import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7184 */;
 import XSmallIcon from "XSmallIcon" /* 7483 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11669 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11663 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;

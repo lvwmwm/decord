@@ -1,15 +1,15 @@
-// Module ID: 16982
-// Function ID: 16983
+// Module ID: 16977
+// Function ID: 16978
 // Name: HexagonCampaignDisplayNameStylePromo
-// Dependencies: [19, 17, 21, 5243, 575, 5314, 16983, 16984, 5866, 1113, 4464, 16986, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5314, 16978, 16979, 5866, 1113, 4464, 16981, 2]
 // Exports: default
 
-// Module 16982 (HexagonCampaignDisplayNameStylePromo)
+// Module 16977 (HexagonCampaignDisplayNameStylePromo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16984 */;
-import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 16986 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16979 */;
+import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 16981 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

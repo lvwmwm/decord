@@ -37,7 +37,7 @@ let WEARABLE;
 let WEARABLE2;
 let c3;
 let closure_4;
-const f91323 = (item) => {
+const f91334 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -224,23 +224,23 @@ export function getAssetAccessibilityLabel(getName, arg1) {
   }
   return items.join(", ");
 }
-export function getNitroLockedMessage(nextBlockedTrait) {
+export function getNitroLockedMessage(checkpointRouteBlockedTrait) {
   let stringResult;
-  if (null != obj13[nextBlockedTrait]) {
+  if (null != obj13[checkpointRouteBlockedTrait]) {
     const intl = intl7.intl;
     stringResult = intl.string(tmp);
   }
   return stringResult;
 }
-export function getCheckpointRouteBlockedTrait(route, arr) {
+export function getCheckpointRouteBlockedTrait(activeRoute, arr) {
   let closure_0;
-  if (route === require("CheckpointNavigation").CheckpointRoute.FINALIZE_CHARACTER) {
+  if (activeRoute === require("CheckpointNavigation").CheckpointRoute.FINALIZE_CHARACTER) {
     return arr[0];
   } else {
     const tmpResult = require("CheckpointNavigation");
-    if (tmpResult.isCheckpointCustomizationRoute(route)) {
+    if (tmpResult.isCheckpointCustomizationRoute(activeRoute)) {
       const tmpResult2 = require("CheckpointNavigation");
-      const tmp4 = obj4[tmpResult2.getCheckpointRoutePresentation(tmpResult2, route).characterStage];
+      const tmp4 = obj4[tmpResult2.getCheckpointRoutePresentation(tmpResult2, activeRoute).characterStage];
       _require = tmp4;
       if (null != tmp4) {
         return arr.find((item) => item === obj3[closure_0]);
@@ -263,7 +263,7 @@ export function getChamferedRectPoints(width, height, arg2) {
   items1[3] = items4;
   const items5 = [num, height - num];
   items1[4] = items5;
-  const mapped = items1.map(f91323);
+  const mapped = items1.map(f91334);
   return mapped.join(" ");
 }
 export const TRAIT_OPTION_STROKE_WIDTH = 2;
@@ -279,6 +279,6 @@ export function getTraitOptionShapePoints(width, height) {
   items1[3] = items4;
   const items5 = [1, height - 1];
   items1[4] = items5;
-  const mapped = items1.map(f91323);
+  const mapped = items1.map(f91334);
   return mapped.join(" ");
 }

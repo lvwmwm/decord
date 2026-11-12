@@ -1,10 +1,10 @@
-// Module ID: 17516
-// Function ID: 17517
+// Module ID: 17511
+// Function ID: 17512
 // Name: getAppliedHexagonCampaignPerks
 // Dependencies: [5267, 1192, 1385, 5268, 1195, 5271, 5312, 2]
 // Exports: getAppliedHexagonCampaignPerks, getHexagonCampaignClientThemeSystemThemes, isHexagonCampaignClientThemeApplied, isHexagonCampaignDisplayNameStyleApplied
 
-// Module 17516 (getAppliedHexagonCampaignPerks)
+// Module 17511 (getAppliedHexagonCampaignPerks)
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
 import isPerModeThemingActive from "isPerModeThemingActive" /* 5312 */;
@@ -17,7 +17,7 @@ let syncedClientTheme;
 
 let tmp;
 const HexagonCampaignUtils = tmp(5271);
-const f114449 = (item) => {
+const f114458 = (item) => {
   const isHexagonCampaignClientThemePreset = HexagonCampaignUtils.isHexagonCampaignClientThemePreset;
   HexagonCampaignUtils;
   syncedClientTheme = syncedClientTheme.getSyncedClientTheme(item);
@@ -34,7 +34,7 @@ const result = size.fileFinishedImporting("modules/hexagon_campaign/getAppliedHe
 export function getHexagonCampaignClientThemeSystemThemes() {
   const items = [, ];
   ({ LIGHT: arr[0], DARK: arr[1] } = SystemTheme);
-  return items.filter(f114449);
+  return items.filter(f114458);
 }
 export function isHexagonCampaignClientThemeApplied() {
   let tmp7;
@@ -42,7 +42,7 @@ export function isHexagonCampaignClientThemeApplied() {
   if (obj.isPerModeThemingActive()) {
     const items = [, ];
     ({ LIGHT: arr[0], DARK: arr[1] } = SystemTheme);
-    tmp7 = items.filter(f114449).length > 0;
+    tmp7 = items.filter(f114458).length > 0;
   } else {
     const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
     let id;

@@ -1,10 +1,10 @@
-// Module ID: 10318
-// Function ID: 10319
+// Module ID: 10316
+// Function ID: 10317
 // Name: GameProfileSkeletonPulse
 // Dependencies: [19, 5244, 1652, 5485, 504, 2]
 // Exports: useSkeletonPulseStyle
 
-// Module 10318 (GameProfileSkeletonPulse)
+// Module 10316 (GameProfileSkeletonPulse)
 import get_initialized from "get initialized" /* 504 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import react from "react" /* 19 */;

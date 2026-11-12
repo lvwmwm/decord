@@ -1,10 +1,10 @@
-// Module ID: 12204
-// Function ID: 12205
+// Module ID: 12198
+// Function ID: 12199
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 6309, 1072, 21, 504, 6004, 8593, 12198, 1113, 5977, 2]
+// Dependencies: [32, 19, 6309, 1072, 21, 504, 6004, 8593, 12192, 1113, 5977, 2]
 // Exports: default
 
-// Module 12204 (InAppReportsDeleteMessageElement)
+// Module 12198 (InAppReportsDeleteMessageElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
@@ -45,7 +45,7 @@ export default function DeleteMessageElement(message) {
     const obj3 = MessageActionCreatorsDefault;
     obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  reportId(12198);
+  reportId(12192);
   const intl = message(1113).intl;
   const intl2 = message(1113).intl;
   const intl3 = message(1113).intl;

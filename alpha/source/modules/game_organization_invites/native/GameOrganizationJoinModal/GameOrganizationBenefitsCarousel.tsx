@@ -1,17 +1,17 @@
-// Module ID: 13982
-// Function ID: 13983
+// Module ID: 13978
+// Function ID: 13979
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 5243, 7381, 6274, 5957, 5866, 1493, 13983, 11154, 1113, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 575, 5243, 7381, 6274, 5957, 5866, 1493, 13979, 11148, 1113, 1187, 2]
 // Exports: default
 
-// Module 13982 (GameOrganizationBenefitsCarousel)
+// Module 13978 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import Card_Card from "Card/Card" /* 7381 */;
-import GameOrganizationBenefits from "GameOrganizationBenefits" /* 13983 */;
+import GameOrganizationBenefits from "GameOrganizationBenefits" /* 13979 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,7 +28,7 @@ let obj3;
 let tmp2;
 let tmp6;
 const FastImageDefault = tmp6(5957);
-const CarouselDefault = tmp2(11154);
+const CarouselDefault = tmp2(11148);
 function BenefitCard(arg0) {
   let Stack;
   let img;

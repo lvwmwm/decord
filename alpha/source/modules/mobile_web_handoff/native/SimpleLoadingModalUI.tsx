@@ -1,10 +1,10 @@
-// Module ID: 10424
-// Function ID: 10425
+// Module ID: 10422
+// Function ID: 10423
 // Name: SimpleLoadingModalUI
 // Dependencies: [19, 17, 21, 5243, 7354, 2]
 // Exports: default
 
-// Module 10424 (SimpleLoadingModalUI)
+// Module 10422 (SimpleLoadingModalUI)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,10 +1,10 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 13243
+// Function ID: 13244
 // Name: useConjureControlBar
 // Dependencies: [32, 19, 7257, 7301, 504, 2]
 // Exports: useConjureControlPhase, useConjureControlStop
 
-// Module 13249 (useConjureControlBar)
+// Module 13243 (useConjureControlBar)
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7301 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

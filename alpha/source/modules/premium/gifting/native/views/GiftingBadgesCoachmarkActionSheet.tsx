@@ -1,10 +1,10 @@
-// Module ID: 19627
-// Function ID: 19628
+// Module ID: 19622
+// Function ID: 19623
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8481, 5089, 21, 5243, 575, 11617, 5489, 5430, 5503, 11619, 5866, 1113, 2781, 5873, 11600, 7871, 5957, 19628, 11757, 504, 8414, 2]
+// Dependencies: [19, 17, 8481, 5089, 21, 5243, 575, 11611, 5489, 5430, 5503, 11613, 5866, 1113, 2781, 5873, 11594, 7871, 5957, 19623, 11751, 504, 8414, 2]
 // Exports: default
 
-// Module 19627 (GiftingBadgesCoachmarkActionSheet)
+// Module 19622 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,9 +15,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489
 import FastImageDefault from "FastImage" /* 5957 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import BadgeId from "BadgeId" /* 8414 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 11600 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11619 */;
-import _modDef19628 from "module_19628" /* 19628 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 11594 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11613 */;
+import _modDef19623 from "module_19623" /* 19623 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8481 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,7 +47,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   ({ currentTier, giftCount } = markAsDismissed);
   const variant = markAsDismissed.variant;
   const tmp = closure_9();
-  let obj = markAsDismissed(11617);
+  let obj = markAsDismissed(11611);
   const giftingBadgeTierIconUrl = obj.getGiftingBadgeTierIconUrl(currentTier);
   const items = [markAsDismissed];
   const items1 = [markAsDismissed];
@@ -147,7 +147,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   const obj3 = { style: tmp.graphicContainer, children: closure_7(tmp4, obj4) };
   const BottomSheet = markAsDismissed(5503).BottomSheet;
   obj4 = { source: obj5, style: tmp.newBadgeImage };
-  obj5 = { uri: _modDef19628 };
+  obj5 = { uri: _modDef19623 };
   tmp4 = FastImageDefault;
   items2 = [closure_7(View, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };
@@ -165,7 +165,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   Button = markAsDismissed(5873).Button;
   intl3 = markAsDismissed(1113).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = markAsDismissed(11757).GiftIcon;
+  GiftIcon = markAsDismissed(11751).GiftIcon;
   items2[2] = closure_7(View, obj9);
   return closure_7(BottomSheet, obj);
 }

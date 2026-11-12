@@ -1,9 +1,9 @@
-// Module ID: 16016
-// Function ID: 16017
+// Module ID: 16011
+// Function ID: 16012
 // Name: ActionBatcher
 // Dependencies: [572, 2]
 
-// Module 16016 (ActionBatcher)
+// Module 16011 (ActionBatcher)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

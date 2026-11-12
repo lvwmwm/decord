@@ -1,10 +1,10 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14410
+// Function ID: 14411
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [19, 17, 5244, 14150, 6314, 21, 575, 5243, 1357, 504, 6338, 14163, 7929, 1411, 8309, 1113, 3269, 3237, 7654, 5866, 6684, 14415, 11267, 14164, 14393, 5189, 7828, 5957, 14387, 14377, 2]
+// Dependencies: [19, 17, 5244, 14146, 6314, 21, 575, 5243, 1357, 504, 6338, 14160, 7929, 1411, 8309, 1113, 3269, 3237, 7654, 5866, 6684, 14411, 11261, 14161, 14389, 5189, 7828, 5957, 14383, 14373, 2]
 // Exports: default
 
-// Module 14414 (CheckpointSummaryStatsScreen)
+// Module 14410 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,15 +17,15 @@ import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6684 */;
 import GuildIcon from "GuildIcon" /* 7654 */;
 import EmojiDefault from "Emoji" /* 7828 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7929 */;
-import FlagIcon from "FlagIcon" /* 11267 */;
-import CheckpointScreen from "CheckpointScreen" /* 14163 */;
-import CheckpointTextDefault from "CheckpointText" /* 14164 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14377 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14387 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14393 */;
+import FlagIcon from "FlagIcon" /* 11261 */;
+import CheckpointScreen from "CheckpointScreen" /* 14160 */;
+import CheckpointTextDefault from "CheckpointText" /* 14161 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14373 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14383 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14389 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import CheckpointStore from "CheckpointStore" /* 14150 */;
+import CheckpointStore from "CheckpointStore" /* 14146 */;
 import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -269,7 +269,7 @@ export default function CheckpointSummaryStatsScreen() {
   const tmp13Result8 = CheckpointScreenDefault;
   if (isCharacterCreatorEnabled) {
     const obj9 = { isStepFocusTarget: true, character, maxHeight: diff };
-    tmp26Result4 = tmp26(tmp13(14415), obj9);
+    tmp26Result4 = tmp26(tmp13(14411), obj9);
   } else {
     const obj10 = { style: tmp.heading, children: items4 };
     const obj11 = { style: tmp.headingLabel, children: items3 };

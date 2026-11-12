@@ -4,8 +4,11 @@
 
 // Module 13839
 const obj = {
-  parse: function compoundSelector() {
-    return this.createSingleNodeList(this.Selector());
+  trueFunc() {
+    return true;
+  },
+  falseFunc() {
+    return false;
   }
 };
 

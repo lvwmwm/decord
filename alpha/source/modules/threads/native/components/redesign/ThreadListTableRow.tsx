@@ -1,9 +1,9 @@
-// Module ID: 19365
-// Function ID: 19366
+// Module ID: 19360
+// Function ID: 19361
 // Name: ThreadListTableRow
-// Dependencies: [19, 17, 5092, 21, 5243, 7379, 19366, 504, 2]
+// Dependencies: [19, 17, 5092, 21, 5243, 7379, 19361, 504, 2]
 
-// Module 19365 (ThreadListTableRow)
+// Module 19360 (ThreadListTableRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import TableRow2 from "TableRow" /* 7379 */;

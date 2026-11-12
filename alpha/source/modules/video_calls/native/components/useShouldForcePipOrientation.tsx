@@ -1,12 +1,12 @@
-// Module ID: 12632
-// Function ID: 12633
+// Module ID: 12626
+// Function ID: 12627
 // Name: useShouldForcePipOrientation
-// Dependencies: [5091, 6953, 502, 5920, 12633, 504, 6962, 2143, 9975, 2]
+// Dependencies: [5091, 6953, 502, 5920, 12627, 504, 6962, 2143, 9974, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 12632 (useShouldForcePipOrientation)
+// Module 12626 (useShouldForcePipOrientation)
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6962 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 12633 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 12627 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -89,17 +89,17 @@ export function useShouldForcePipOrientation(channel) {
     if (closure_6(focusedEmbeddedActivityParticipant)) {
       let LANDSCAPE;
       if (null == stateFromStores) {
-        LANDSCAPE = tmp3(9975).OrientationType.LANDSCAPE;
+        LANDSCAPE = tmp3(9974).OrientationType.LANDSCAPE;
       }
       return LANDSCAPE;
     }
   }
   if (activityLockOrientation === channel(2143).EmbeddedActivityOrientationLockState.LANDSCAPE) {
-    LANDSCAPE1 = tmp3(9975).OrientationType.LANDSCAPE;
+    LANDSCAPE1 = tmp3(9974).OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE1 = null;
     if (activityLockOrientation === channel(2143).EmbeddedActivityOrientationLockState.PORTRAIT) {
-      LANDSCAPE1 = tmp3(9975).OrientationType.PORTRAIT;
+      LANDSCAPE1 = tmp3(9974).OrientationType.PORTRAIT;
     }
   }
   LANDSCAPE = LANDSCAPE1;

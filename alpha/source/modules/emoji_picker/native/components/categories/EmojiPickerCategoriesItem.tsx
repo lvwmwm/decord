@@ -1,9 +1,9 @@
-// Module ID: 11255
-// Function ID: 11256
+// Module ID: 11249
+// Function ID: 11250
 // Name: EmojiPickerCategoriesItem
-// Dependencies: [32, 19, 17, 6909, 1072, 21, 5243, 575, 1652, 5485, 5488, 1705, 7364, 7654, 11256, 8027, 2]
+// Dependencies: [32, 19, 17, 6909, 1072, 21, 5243, 575, 1652, 5485, 5488, 1705, 7364, 7654, 11250, 8027, 2]
 
-// Module 11255 (EmojiPickerCategoriesItem)
+// Module 11249 (EmojiPickerCategoriesItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -76,7 +76,7 @@ const memoResult = react.memo(function EmojiPickerCategoriesItem(category) {
   let tmp7;
   let tmp8;
   let tmp9;
-  const f100612 = () => categoryIndexActive.get() === index;
+  const f100619 = () => categoryIndexActive.get() === index;
   category = category.category;
   const categoryIndexActive = category.categoryIndexActive;
   const handlePressCategory = category.handlePressCategory;
@@ -122,8 +122,8 @@ const memoResult = react.memo(function EmojiPickerCategoriesItem(category) {
   EmojiPickerCategoriesItemTsx1.__initData = tmp5;
   let obj = react;
   const animatedStyle = useAnimatedStyle(EmojiPickerCategoriesItemTsx1);
-  [tmp14, tmp15] = react.useState(f100612);
-  _slicedToArray(react.useState(f100612), 2);
+  [tmp14, tmp15] = react.useState(f100619);
+  _slicedToArray(react.useState(f100619), 2);
   const items2 = [closure_12, categoryIndexActive, index];
   c0 = undefined;
   c1 = undefined;
@@ -177,7 +177,7 @@ const memoResult = react.memo(function EmojiPickerCategoriesItem(category) {
     tmp25Result = tmp25(tmp28Result, obj4);
   } else {
     const obj5 = { id: category.id };
-    tmp25Result = tmp25(tmp28(11256), obj5);
+    tmp25Result = tmp25(tmp28(11250), obj5);
   }
   items8 = [tmp25Result, ];
   if (locked) {

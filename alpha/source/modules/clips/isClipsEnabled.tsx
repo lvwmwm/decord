@@ -1,12 +1,12 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 15988
+// Function ID: 15989
 // Name: isClipsEnabled
-// Dependencies: [2136, 15696, 504, 2]
+// Dependencies: [2136, 15693, 504, 2]
 // Exports: isClipsEnabled, useIsClipsEnabled
 
-// Module 15993 (isClipsEnabled)
+// Module 15988 (isClipsEnabled)
 import get_initialized from "get initialized" /* 504 */;
-import ClipsExperiment from "ClipsExperiment" /* 15696 */;
+import ClipsExperiment from "ClipsExperiment" /* 15693 */;
 import ClipsStore from "ClipsStore" /* 2136 */;
 import size from "module_2" /* 2 */;
 

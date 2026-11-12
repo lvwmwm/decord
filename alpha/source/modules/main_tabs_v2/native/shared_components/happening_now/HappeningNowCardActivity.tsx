@@ -1,9 +1,9 @@
-// Module ID: 18671
-// Function ID: 18672
+// Module ID: 18666
+// Function ID: 18667
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 5097, 1385, 17800, 1072, 1083, 21, 18672, 18673, 5243, 575, 7852, 504, 7196, 6006, 1252, 13936, 2118, 8410, 18667, 6288, 18674, 17801, 18668, 1187, 18677, 10797, 18678, 10793, 15603, 10241, 7952, 7374, 1113, 5240, 1377, 13008, 5957, 18669, 18680, 13011, 7249, 18682, 8547, 2]
+// Dependencies: [19, 17, 5097, 1385, 17795, 1072, 1083, 21, 18667, 18668, 5243, 575, 7852, 504, 7196, 6006, 1252, 13932, 2118, 8410, 18662, 6288, 18669, 17796, 18663, 1187, 18672, 10791, 18673, 10787, 15600, 10239, 7952, 7374, 1113, 5240, 1377, 13002, 5957, 18664, 18675, 13005, 7249, 18677, 8547, 2]
 
-// Module 18671 (HappeningNowCardActivity)
+// Module 18666 (HappeningNowCardActivity)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
@@ -13,19 +13,19 @@ import PlatformUtils from "PlatformUtils" /* 1377 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import ActivityTypes from "ActivityTypes" /* 6006 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10797 */;
-import StreamPreviewDefault from "StreamPreview" /* 13008 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 13011 */;
-import isOnXboxDefault from "isOnXbox" /* 15603 */;
-import useLiveStageData from "useLiveStageData" /* 18669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18672 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18673 */;
-import HappeningNowAvatarStack2 from "HappeningNowAvatarStack" /* 18680 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10791 */;
+import StreamPreviewDefault from "StreamPreview" /* 13002 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 13005 */;
+import isOnXboxDefault from "isOnXbox" /* 15600 */;
+import useLiveStageData from "useLiveStageData" /* 18664 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18667 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18668 */;
+import HappeningNowAvatarStack2 from "HappeningNowAvatarStack" /* 18675 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import StageInstanceStore from "StageInstanceStore" /* 5097 */;
 import UserStore from "UserStore" /* 1385 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17800 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17795 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
@@ -157,7 +157,7 @@ function IconOrPreview(arg0) {
       const substr = userId.slice(-1);
       tmp2Result = items[substr.charCodeAt(substr, 0) % items.length];
     } else {
-      tmp2Result = tmp2(18682);
+      tmp2Result = tmp2(18677);
     }
     assetImage = tmp2Result;
   }
@@ -367,7 +367,7 @@ const memoResult = react.memo(function ActivityCard(userId) {
     }
     track(ACTIVITY_CARD_CLICKED, obj);
     if (null != stream) {
-      const promise2 = asyncRequire(13936, dependencyMap.paths);
+      const promise2 = asyncRequire(13932, dependencyMap.paths);
       promise2.then((result) => result.default(channelId.channelId, true));
     } else {
       const promise = asyncRequire(8410, dependencyMap.paths);

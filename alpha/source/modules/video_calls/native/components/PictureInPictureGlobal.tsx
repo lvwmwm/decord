@@ -1,10 +1,10 @@
-// Module ID: 19594
-// Function ID: 19595
+// Module ID: 19589
+// Function ID: 19590
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 5091, 6953, 11805, 502, 2130, 1072, 5920, 21, 5243, 1187, 575, 12633, 504, 6962, 12626, 6837, 12632, 8494, 12635, 9975, 12693, 12697, 12705, 12718, 12751, 12622, 12694, 12631, 6985, 1652, 5485, 5829, 19595, 1627, 2]
+// Dependencies: [32, 19, 17, 5091, 6953, 11799, 502, 2130, 1072, 5920, 21, 5243, 1187, 575, 12627, 504, 6962, 12620, 6837, 12626, 8494, 12629, 9974, 12687, 12691, 12699, 12712, 12745, 12616, 12688, 12625, 6985, 1652, 5485, 5829, 19590, 1627, 2]
 // Exports: default
 
-// Module 19594 (PictureInPictureGlobal)
+// Module 19589 (PictureInPictureGlobal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
@@ -15,10 +15,10 @@ import CallConstants from "CallConstants" /* 5920 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6837 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6962 */;
 import isChannelFocused from "isChannelFocused" /* 6985 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11805 */;
-import transitionToActivityDefault from "transitionToActivity" /* 12622 */;
-import PictureInPictureDefault from "PictureInPicture" /* 12631 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19595 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11799 */;
+import transitionToActivityDefault from "transitionToActivity" /* 12616 */;
+import PictureInPictureDefault from "PictureInPicture" /* 12625 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19590 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -233,11 +233,11 @@ let closure_18 = react.memo(function PIPContent(channel) {
 let closure_19 = react.memo(function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f119725 = () => constants.TOP_RIGHT;
+  const f119734 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f119725);
+  [tmp2, tmp3] = react.useState(f119734);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_18, { channel }) };
-  _slicedToArray(react.useState(f119725), 2);
+  _slicedToArray(react.useState(f119734), 2);
   const tmp4 = PictureInPictureDefault;
   return closure_15(tmp4, obj);
 });

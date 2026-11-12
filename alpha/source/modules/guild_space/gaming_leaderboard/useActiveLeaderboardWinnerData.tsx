@@ -1,10 +1,10 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 10805
+// Function ID: 10806
 // Name: useActiveLeaderboardWinnerData
 // Dependencies: [5155, 1089, 504, 2]
 // Exports: default, getActiveLeaderboardLeaderData, getActiveLeaderboardWinnerData, useActiveLeaderboardLeaderData, useHasActiveLeaderboardBadge
 
-// Module 10811 (useActiveLeaderboardWinnerData)
+// Module 10805 (useActiveLeaderboardWinnerData)
 import DurationsDefault from "Durations" /* 1089 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import size from "module_2" /* 2 */;

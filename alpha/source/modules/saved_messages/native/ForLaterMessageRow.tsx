@@ -1,14 +1,14 @@
-// Module ID: 11873
-// Function ID: 11874
+// Module ID: 11867
+// Function ID: 11868
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 5243, 575, 5484, 5068, 9093, 11002, 1377, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5484, 5068, 9092, 10996, 1377, 2]
 // Exports: ForLaterMessageRow
 
-// Module 11873 (ForLaterMessageRow)
+// Module 11867 (ForLaterMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import RowGeneratorDefault from "RowGenerator" /* 9093 */;
+import RowGeneratorDefault from "RowGenerator" /* 9092 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;

@@ -1,15 +1,15 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11211
+// Function ID: 11212
 // Name: EmojiPickerPremiumSearchUpsell
-// Dependencies: [19, 1385, 1072, 1387, 21, 5243, 1252, 11109, 11199, 8971, 11218, 2171, 11219, 1113, 9369, 575, 2]
+// Dependencies: [19, 1385, 1072, 1387, 21, 5243, 1252, 11103, 11193, 8970, 11212, 2171, 11213, 1113, 9368, 575, 2]
 // Exports: useEmojiPickerPremiumSearchUpsellClick, useEmojiPickerPremiumSearchUpsellViewed
 
-// Module 11217 (EmojiPickerPremiumSearchUpsell)
+// Module 11211 (EmojiPickerPremiumSearchUpsell)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11218 */;
-import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 11219 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11212 */;
+import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 11213 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
@@ -43,10 +43,10 @@ const memoResult = react.memo(function EmojiPickerListPremiumSearchUpsell(guildI
   let onPress;
   const tmp = closure_12();
   ({ analyticsLocations, useTier0UpsellContent } = guildId);
-  const tmp4 = onPress(11109);
+  const tmp4 = onPress(11103);
   const usePremiumUpsellConfig = tmp4.usePremiumUpsellConfig;
-  let obj = onPress(11199);
-  const tmp6 = usePremiumFeatureUpsellGetNitroDefault(useTier0UpsellContent, usePremiumUpsellConfig(obj.getUpsellType(onPress(8971).EntitlementFeatureNames.EMOJIS_EVERYWHERE), analyticsLocations).onViewAllPerks, constants.PREMIUM_UPSELL_EMOJI_EVERYWHERE);
+  let obj = onPress(11193);
+  const tmp6 = usePremiumFeatureUpsellGetNitroDefault(useTier0UpsellContent, usePremiumUpsellConfig(obj.getUpsellType(onPress(8970).EntitlementFeatureNames.EMOJIS_EVERYWHERE), analyticsLocations).onViewAllPerks, constants.PREMIUM_UPSELL_EMOJI_EVERYWHERE);
   onPress = tmp6.onPress;
   const items = [onPress];
   const loading = tmp6.loading;
@@ -108,7 +108,7 @@ const memoResult = react.memo(function EmojiPickerListPremiumSearchUpsell(guildI
     stringResult = string(t.pj0XBN);
   }
   obj4 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, style: tmp.nitroIcon };
-  NitroWheelIcon = tmp2(9369).NitroWheelIcon;
+  NitroWheelIcon = tmp2(9368).NitroWheelIcon;
   return jsx(tmp11, obj3);
 });
 let result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerPremiumSearchUpsell.tsx");
@@ -145,10 +145,10 @@ export function useEmojiPickerPremiumSearchUpsellClick(arg0) {
   let useTier0UpsellContent;
   let onPress;
   ({ analyticsLocations, useTier0UpsellContent } = arg0);
-  const usePremiumUpsellConfig = onPress(11109).usePremiumUpsellConfig;
-  onPress(11109);
-  const obj = onPress(11199);
-  const tmp2 = usePremiumFeatureUpsellGetNitroDefault(useTier0UpsellContent, usePremiumUpsellConfig(obj.getUpsellType(onPress(8971).EntitlementFeatureNames.EMOJIS_EVERYWHERE), analyticsLocations).onViewAllPerks, constants.PREMIUM_UPSELL_EMOJI_EVERYWHERE);
+  const usePremiumUpsellConfig = onPress(11103).usePremiumUpsellConfig;
+  onPress(11103);
+  const obj = onPress(11193);
+  const tmp2 = usePremiumFeatureUpsellGetNitroDefault(useTier0UpsellContent, usePremiumUpsellConfig(obj.getUpsellType(onPress(8970).EntitlementFeatureNames.EMOJIS_EVERYWHERE), analyticsLocations).onViewAllPerks, constants.PREMIUM_UPSELL_EMOJI_EVERYWHERE);
   onPress = tmp2.onPress;
   const obj2 = {
     loading: tmp2.loading,

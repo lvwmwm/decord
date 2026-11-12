@@ -1,17 +1,17 @@
-// Module ID: 18225
-// Function ID: 18226
+// Module ID: 18220
+// Function ID: 18221
 // Name: OrbWalletEntryRow
-// Dependencies: [19, 17, 16126, 21, 5243, 575, 7391, 1113, 2317, 7381, 9375, 5866, 7897, 2]
+// Dependencies: [19, 17, 16121, 21, 5243, 575, 7391, 1113, 2317, 7381, 9374, 5866, 7897, 2]
 // Exports: OrbWalletEntryRow
 
-// Module 18225 (OrbWalletEntryRow)
+// Module 18220 (OrbWalletEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2317 from "module_2317" /* 2317 */;
 import Card_Card from "Card/Card" /* 7381 */;
 import Badge_Badge from "Badge/Badge" /* 7391 */;
-import OrbChallengesStore from "OrbChallengesStore" /* 16126 */;
+import OrbChallengesStore from "OrbChallengesStore" /* 16121 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -82,7 +82,7 @@ export function OrbWalletEntryRow(onPress) {
   obj2 = { style: tmp.row, children: items1 };
   const obj3 = { style: tmp.balance, children: items };
   const obj4 = { size: "sm", color: nativeDefault.colors.ICON_SUBTLE, accessible: false };
-  const OrbsIcon = tmp3(9375).OrbsIcon;
+  const OrbsIcon = tmp3(9374).OrbsIcon;
   items = [hasOwnProperty(OrbsIcon, obj4), ];
   const obj5 = { variant: "body-sm/medium", color: "text-subtle", lineClamp: 1, style: tmp.balanceText, children: intl2.formatToPlainString(intl3.t["8xDISf"], { balance: str }) };
   const Text = tmp3(5866).Text;

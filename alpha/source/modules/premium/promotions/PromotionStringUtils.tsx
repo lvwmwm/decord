@@ -1,10 +1,10 @@
-// Module ID: 10007
-// Function ID: 10008
+// Module ID: 10006
+// Function ID: 10007
 // Name: PromotionStringUtils
 // Dependencies: [2175, 1387, 504, 2171, 7190, 1113, 2185, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 10007 (PromotionStringUtils)
+// Module 10006 (PromotionStringUtils)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;

@@ -1,19 +1,17 @@
 // Module ID: 11463
 // Function ID: 11464
-// Dependencies: [41, 42, 93, 95, 98, 11368, 11462, 11395, 11375]
+// Dependencies: [41, 42, 93, 95, 98, 11368, 11367, 11369]
 
 // Module 11463
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11368 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11375 */;
-import _mod11462 from "module_11462" /* 11462 */;
+import Meridiem from "Meridiem" /* 11367 */;
+import assignSimilarDate from "assignSimilarDate" /* 11368 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11369 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let tmp2;
-const _mod11395 = tmp2(11395);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,13 +27,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:op\\s*?)?(?:(deze|vorige|volgende)\\s*(?:week\\s*)?)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod11462.WEEKDAY_DICTIONARY) + ")(?=\\W|$)", "i");
-class NLWeekdayParser {
+class NLCasualDateTimeParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLWeekdayParser);
-    const obj = _getPrototypeOf(NLWeekdayParser);
+    _classCallCheck(this, NLCasualDateTimeParser);
+    const obj = _getPrototypeOf(NLCasualDateTimeParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -47,42 +44,58 @@ class NLWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLCasualDateTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  value: function innerPattern(arg0) {
+    return /(gisteren|morgen|van)(ochtend|middag|namiddag|avond|nacht)(?=\W|$)/i;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[2];
+    value: function innerExtract(createParsingComponents, arg1) {
+      const str = arg1[1];
       const formatted = str.toLowerCase();
-      let str2 = arg1[1];
-      const tmp4 = _mod11462.WEEKDAY_DICTIONARY[formatted];
-      if (!str2) {
-        str2 = arg1[3];
-      }
-      if (!str2) {
-        str2 = "";
-      }
+      const str2 = arg1[2];
       const formatted1 = str2.toLowerCase();
-      let str3 = "last";
-      if ("vorige" != formatted1) {
-        str3 = "next";
-        if ("volgende" != formatted1) {
-          str3 = null;
-          if ("deze" == formatted1) {
-            str3 = "this";
-          }
-        }
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      const refDate = createParsingComponents.refDate;
+      if ("gisteren" === formatted) {
+        const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const date = new Date(refDate.getTime());
+        date.setDate(date.getDate() - 1);
+        assignSimilarDate.assignSimilarDate(parsingComponents, date);
+      } else if ("van" === formatted) {
+        assignSimilarDate.assignSimilarDate(parsingComponents, refDate);
+      } else if ("morgen" === formatted) {
+        const _Date2 = Date;
+        const self3 = this;
+        const self4 = this;
+        const date1 = new Date(refDate.getTime());
+        date1.setDate(date1.getDate() + 1);
+        assignSimilarDate.assignSimilarDate(parsingComponents, date1);
+        assignSimilarDate.implySimilarTime(parsingComponents, date1);
       }
-      return _mod11395.createParsingComponentsAtWeekday(reference.reference, tmp4, str3);
+      if ("ochtend" === formatted1) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 6);
+      } else if ("middag" === formatted1) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 12);
+      } else if ("namiddag" === formatted1) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 15);
+      } else if ("avond" === formatted1) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 20);
+      }
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(NLWeekdayParser, items);
+export default _createClass(NLCasualDateTimeParser, items);

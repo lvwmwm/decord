@@ -1,10 +1,10 @@
-// Module ID: 11002
-// Function ID: 11003
+// Module ID: 10996
+// Function ID: 10997
 // Name: ChatItem
-// Dependencies: [32, 19, 17, 5244, 1072, 9094, 21, 575, 11003, 1088, 11004, 6999, 11005, 5243, 1377, 11006, 5839, 671, 5830, 2]
+// Dependencies: [32, 19, 17, 5244, 1072, 9093, 21, 575, 10997, 1088, 10998, 6999, 10999, 5243, 1377, 11000, 5839, 671, 5830, 2]
 // Exports: default
 
-// Module 11002 (ChatItem)
+// Module 10996 (ChatItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,13 +12,13 @@ import Constants from "Constants" /* 1072 */;
 import MessageTypes2 from "MessageTypes" /* 1088 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import isSystemMessageDefault from "isSystemMessage" /* 6999 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 11003 */;
-import MessageViewNativeComponent from "MessageViewNativeComponent" /* 11004 */;
-import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 11005 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 10997 */;
+import MessageViewNativeComponent from "MessageViewNativeComponent" /* 10998 */;
+import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 10999 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 5244 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 9094 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 9093 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let c9;
 let metroImportAll;
 let tmp;
 let unpackModuleId;
-const RowGeneratorTypes = tmp(11006);
+const RowGeneratorTypes = tmp(11000);
 function DCDChatItem(message) {
   let tmp3Result;
   message = message.message;

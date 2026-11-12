@@ -1,10 +1,10 @@
-// Module ID: 12257
-// Function ID: 12258
+// Module ID: 12251
+// Function ID: 12252
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 5185, 1385, 21, 5243, 575, 7364, 1377, 9998, 5866, 1187, 12258, 10828, 5839, 7968, 12259, 1113, 5891, 5957, 1411, 10479, 10807, 2]
+// Dependencies: [32, 19, 17, 5185, 1385, 21, 5243, 575, 7364, 1377, 9997, 5866, 1187, 12252, 10822, 5839, 7968, 12253, 1113, 5891, 5957, 1411, 10477, 10801, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12257 (ChannelHeaderShared)
+// Module 12251 (ChannelHeaderShared)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -16,12 +16,12 @@ import useChannelName from "useChannelName" /* 5891 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import Pressables from "Pressables" /* 7364 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9998 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 10479 */;
-import BotTagDefault from "BotTag" /* 10807 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10828 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12258 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 12259 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9997 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 10477 */;
+import BotTagDefault from "BotTag" /* 10801 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10822 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12252 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 12253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

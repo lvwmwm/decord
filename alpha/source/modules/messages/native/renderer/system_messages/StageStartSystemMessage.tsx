@@ -1,14 +1,14 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 9199
+// Function ID: 9200
 // Name: StageStartSystemMessage
-// Dependencies: [9122, 1113, 9124, 9126, 2]
+// Dependencies: [9121, 1113, 9123, 9125, 2]
 // Exports: createStageStartSystemMessage
 
-// Module 9200 (StageStartSystemMessage)
+// Module 9199 (StageStartSystemMessage)
 import intl2 from "intl" /* 1113 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9122 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9124 */;
-import createCommonMessageDefault from "createCommonMessage" /* 9126 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9121 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9123 */;
+import createCommonMessageDefault from "createCommonMessage" /* 9125 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageStartSystemMessage.tsx");

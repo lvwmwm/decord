@@ -1,10 +1,10 @@
-// Module ID: 18264
-// Function ID: 18265
+// Module ID: 18259
+// Function ID: 18260
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1385, 1394, 21, 1396, 10006, 1113, 10002, 3077, 5243, 575, 6274, 5866, 5873, 9998, 9999, 504, 18265, 7680, 7379, 15851, 6689, 2]
+// Dependencies: [32, 19, 17, 1385, 1394, 21, 1396, 10005, 1113, 10001, 3077, 5243, 575, 6274, 5866, 5873, 9997, 9998, 504, 18260, 7680, 7379, 15846, 6689, 2]
 // Exports: default
 
-// Module 18264 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 18259 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
@@ -12,10 +12,10 @@ import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
 import _modDef3077 from "module_3077" /* 3077 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import Stack_Stack from "Stack/Stack" /* 6274 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9998 */;
-import types from "types" /* 9999 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10002 */;
-import _mod10006 from "module_10006" /* 10006 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9997 */;
+import types from "types" /* 9998 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10001 */;
+import _mod10005 from "module_10005" /* 10005 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -169,7 +169,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   const memo = first1.useMemo(() => items.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
   const memo1 = first1.useMemo(() => {
-    const obj = _mod10006;
+    const obj = _mod10005;
     return obj.splitGraphemes(memo).length;
   }, items3);
   const items4 = [first];
@@ -296,7 +296,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
               const length = String(Math.max(run.params.rowCount - 1, 0)).length;
               const StringResult = String(arg1);
               const padStartResult = StringResult.padStart(length, "0");
-              const obj3 = _mod10006;
+              const obj3 = _mod10005;
               const splitGraphemesResult = obj3.splitGraphemes(name);
               sum = padStartResult;
               const tmp = metroImportAll;

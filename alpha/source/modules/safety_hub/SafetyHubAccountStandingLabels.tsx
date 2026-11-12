@@ -1,9 +1,9 @@
-// Module ID: 17146
-// Function ID: 17147
+// Module ID: 17141
+// Function ID: 17142
 // Name: SafetyHubAccountStandingLabels
 // Dependencies: [8141, 1113, 2]
 
-// Module 17146 (SafetyHubAccountStandingLabels)
+// Module 17141 (SafetyHubAccountStandingLabels)
 import intl from "intl" /* 1113 */;
 import SafetyHubModels from "SafetyHubModels" /* 8141 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 14661
-// Function ID: 14662
+// Module ID: 14657
+// Function ID: 14658
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 5092, 5185, 1385, 10177, 21, 5243, 575, 7010, 5309, 5891, 12, 11722, 1113, 5866, 11726, 10510, 11728, 14662, 2]
+// Dependencies: [32, 19, 17, 5092, 5185, 1385, 10175, 21, 5243, 575, 7010, 5309, 5891, 12, 11716, 1113, 5866, 11720, 10508, 11722, 14658, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 14661 (NewMessageUserList)
+// Module 14657 (NewMessageUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import UserUtilsDefault from "UserUtils" /* 5309 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import useChannelName from "useChannelName" /* 5891 */;
 import fuzzysearchDefault from "fuzzysearch" /* 7010 */;
-import UserRowConstants from "UserRowConstants" /* 10177 */;
+import UserRowConstants from "UserRowConstants" /* 10175 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;

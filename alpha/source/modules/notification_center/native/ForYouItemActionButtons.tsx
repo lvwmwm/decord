@@ -1,10 +1,10 @@
-// Module ID: 19064
-// Function ID: 19065
+// Module ID: 19059
+// Function ID: 19060
 // Name: ForYouItemActionButtons
-// Dependencies: [5, 19, 17, 5092, 1385, 1072, 21, 5243, 1108, 1652, 5485, 6274, 5873, 1113, 5866, 563, 9137, 18639, 5985, 16169, 10777, 6970, 8069, 8072, 5952, 12551, 1252, 2]
+// Dependencies: [5, 19, 17, 5092, 1385, 1072, 21, 5243, 1108, 1652, 5485, 6274, 5873, 1113, 5866, 563, 9136, 18634, 5985, 16164, 10771, 6970, 8069, 8072, 5952, 12545, 1252, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 19064 (ForYouItemActionButtons)
+// Module 19059 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -14,9 +14,9 @@ import parseURLDefault from "parseURL" /* 5985 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6970 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8072 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10777 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 16169 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18639 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10771 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 16164 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18634 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;

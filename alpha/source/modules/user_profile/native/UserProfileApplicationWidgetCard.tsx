@@ -1,12 +1,12 @@
-// Module ID: 12077
-// Function ID: 12078
+// Module ID: 12071
+// Function ID: 12072
 // Name: UserProfileApplicationWidgetCard
-// Dependencies: [19, 17, 2186, 502, 21, 5243, 575, 12078, 12079, 12171, 12172, 12173, 12174, 504, 12080, 7196, 9467, 10597, 10219, 12175, 7853, 12183, 12184, 12163, 5957, 7243, 7895, 12036, 12188, 5866, 1113, 7364, 11034, 2]
+// Dependencies: [19, 17, 2186, 502, 21, 5243, 575, 12072, 12073, 12165, 12166, 12167, 12168, 504, 12074, 7196, 9466, 10595, 10217, 12169, 7853, 12177, 12178, 12157, 5957, 7243, 7895, 12030, 12182, 5866, 1113, 7364, 11028, 2]
 // Exports: default
 
-// Module 12077 (UserProfileApplicationWidgetCard)
+// Module 12071 (UserProfileApplicationWidgetCard)
 import nativeDefault from "native" /* 575 */;
-import _mod12080 from "module_12080" /* 12080 */;
+import _mod12074 from "module_12074" /* 12074 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
@@ -84,7 +84,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   const items1 = [stateFromStores];
   const memo = token.useMemo(() => {
-    const obj = _mod12080;
+    const obj = _mod12074;
     return obj.createCompactNumberFormat(stateFromStores);
   }, items1);
   const items2 = [AuthenticationStore];
@@ -104,33 +104,33 @@ export default function UserProfileApplicationWidgetCard(userId) {
     str = "";
   }
   let canonicalGameId;
-  const useGame = userId(9467).useGame;
-  userId(9467);
+  const useGame = userId(9466).useGame;
+  userId(9466);
   if (getOrFetchApplication != null) {
     canonicalGameId = getOrFetchApplication.getCanonicalGameId();
   }
   const data = useGame(canonicalGameId).data;
   let id;
-  const tmp11 = stateFromStores(10597);
+  const tmp11 = stateFromStores(10595);
   if (data != null) {
     id = data.id;
   }
-  const obj4 = { location: "UserProfileApplicationWidgetCard", applicationId: id, source: userId(10219).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
+  const obj4 = { location: "UserProfileApplicationWidgetCard", applicationId: id, source: userId(10217).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp11Result = tmp11(obj4);
   dependencyMap = tmp11Result;
   let tmp14 = rendererProps;
   if (rendererProps == null) {
-    tmp14 = tmp10(12175)(userId, widget.applicationId);
+    tmp14 = tmp10(12169)(userId, widget.applicationId);
   }
   ({ surfaceConfigs, resolutionContext, isLoading, hasIdentity } = tmp14);
   const tmp15 = stateFromStores(7853)(getOrFetchApplication);
   token = tmp15.token;
   ({ fetched, canStartAuthorization } = tmp15);
-  const tmp16 = stateFromStores(12183)(widget.applicationId, stateFromStores1);
-  ({ pending, refresh } = stateFromStores(12184)(widget.applicationId));
-  stateFromStores(12184)(widget.applicationId);
-  const tmp18 = surfaceConfigs[userId(undefined, 12163).ApplicationWidgetConfigSurface.WIDGET_TOP];
-  const tmp19 = surfaceConfigs[userId(undefined, 12163).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+  const tmp16 = stateFromStores(12177)(widget.applicationId, stateFromStores1);
+  ({ pending, refresh } = stateFromStores(12178)(widget.applicationId));
+  stateFromStores(12178)(widget.applicationId);
+  const tmp18 = surfaceConfigs[userId(undefined, 12157).ApplicationWidgetConfigSurface.WIDGET_TOP];
+  const tmp19 = surfaceConfigs[userId(undefined, 12157).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
   let tmp20 = null;
   if (null != iconURL) {
     const obj5 = { source: obj6, style: tmp.appIcon };
@@ -170,11 +170,11 @@ export default function UserProfileApplicationWidgetCard(userId) {
         const tmp10Result = stateFromStores(7895);
         if (isEditing) {
           const obj8 = { widget };
-          tmp26Result = tmp26(tmp10(12036), obj8);
+          tmp26Result = tmp26(tmp10(12030), obj8);
         }
         obj9 = { style: tmp.stillSyncing, children: items3 };
         const obj10 = { size: "xs", color: stateFromStores(575).colors.TEXT_MUTED };
-        const HourglassIcon = tmp2(12188).HourglassIcon;
+        const HourglassIcon = tmp2(12182).HourglassIcon;
         items3 = [closure_8(HourglassIcon, obj10), ];
         const obj11 = { variant: "body-sm/medium", color: "text-muted", children: intl.string(userId(1113).t.z5K4Uv) };
         const Text = tmp2(5866).Text;
@@ -184,7 +184,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
       }
     }
   }
-  const tmp2Result2 = userId(12080);
+  const tmp2Result2 = userId(12074);
   const result = tmp2Result2.bindResolveFieldValue(resolutionContext);
   const obj12 = {
     style: tmp.header,
@@ -207,7 +207,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
     const obj13 = { style: tmp.editingHeader, children: items5 };
     items5 = [tmp34, ];
     const obj14 = { widget };
-    items5[1] = closure_8(stateFromStores(12036), obj14);
+    items5[1] = closure_8(stateFromStores(12030), obj14);
     tmp32Result = tmp32(closure_5, obj13);
   }
   if (tmp18 != null) {
@@ -215,14 +215,14 @@ export default function UserProfileApplicationWidgetCard(userId) {
   }
   let tmp33Result = null;
   if (null != tmp18) {
-    if (userId(12078).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
+    if (userId(12072).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
       const obj15 = { header: tmp32Result, topConfig: tmp18, resolveFieldValue: result, numberFormat: memo };
-      tmp33Result = tmp33(tmp10(12079), obj15);
+      tmp33Result = tmp33(tmp10(12073), obj15);
     } else {
       tmp33Result = null;
-      if (userId(12078).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
+      if (userId(12072).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
         const obj16 = { header: tmp32Result, topConfig: tmp18, resolveFieldValue: result, numberFormat: memo };
-        tmp33Result = tmp33(tmp10(12171), obj16);
+        tmp33Result = tmp33(tmp10(12165), obj16);
       }
     }
   }
@@ -231,17 +231,17 @@ export default function UserProfileApplicationWidgetCard(userId) {
   }
   let tmp33Result2 = null;
   if (null != tmp19) {
-    if (userId(12078).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
+    if (userId(12072).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
       const obj17 = { bottomConfig: tmp19, resolveFieldValue: result, numberFormat: memo };
-      tmp33Result2 = tmp33(tmp10(12172), obj17);
-    } else if (userId(12078).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
+      tmp33Result2 = tmp33(tmp10(12166), obj17);
+    } else if (userId(12072).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
       const obj18 = { bottomConfig: tmp19, resolveFieldValue: result };
-      tmp33Result2 = tmp33(tmp10(12173), obj18);
+      tmp33Result2 = tmp33(tmp10(12167), obj18);
     } else {
       tmp33Result2 = null;
-      if (userId(12078).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
+      if (userId(12072).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
         const obj19 = { bottomConfig: tmp19, resolveFieldValue: result };
-        tmp33Result2 = tmp33(tmp10(12174), obj19);
+        tmp33Result2 = tmp33(tmp10(12168), obj19);
       }
     }
   }
@@ -263,7 +263,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
           const PressableOpacity = tmp2(7364).PressableOpacity;
           intl2 = tmp2(1113).intl;
           const obj23 = { size: "xs", color: stateFromStores(575).colors.TEXT_MUTED };
-          const RetryIcon = tmp2(11034).RetryIcon;
+          const RetryIcon = tmp2(11028).RetryIcon;
           items7 = [closure_8(RetryIcon, obj23), ];
           const obj24 = { variant: "body-xs/medium", color: "text-muted", children: intl3.string(userId(1113).t.wzzjk9) };
           const Text2 = tmp2(5866).Text;

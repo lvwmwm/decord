@@ -1,11 +1,11 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 9178
+// Function ID: 9179
 // Name: useGuildPowerupsBoostLevelProgress
-// Dependencies: [5114, 1072, 9175, 504, 2]
+// Dependencies: [5114, 1072, 9174, 504, 2]
 // Exports: default, getGuildPowerupBoostLevelProgress
 
-// Module 9179 (useGuildPowerupsBoostLevelProgress)
-import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 9175 */;
+// Module 9178 (useGuildPowerupsBoostLevelProgress)
+import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 9174 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

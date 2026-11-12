@@ -1,10 +1,10 @@
-// Module ID: 8823
-// Function ID: 8824
+// Module ID: 8822
+// Function ID: 8823
 // Name: VideoUploadUtils
 // Dependencies: [1194, 3, 2]
 // Exports: calculateOptimalBitrate, calculateTargetDimensions, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata
 
-// Module 8823 (VideoUploadUtils)
+// Module 8822 (VideoUploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
 import size_mod from "module_2" /* 2 */;

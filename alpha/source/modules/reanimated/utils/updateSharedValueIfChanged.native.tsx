@@ -1,9 +1,9 @@
-// Module ID: 11929
-// Function ID: 11930
+// Module ID: 11923
+// Function ID: 11924
 // Name: updateSharedValueIfChanged
 // Dependencies: [1705, 2]
 
-// Module 11929 (updateSharedValueIfChanged)
+// Module 11923 (updateSharedValueIfChanged)
 import _mod1705 from "module_1705" /* 1705 */;
 import size from "module_2" /* 2 */;
 

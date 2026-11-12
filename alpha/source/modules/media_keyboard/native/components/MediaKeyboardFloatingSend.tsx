@@ -1,9 +1,9 @@
-// Module ID: 13463
-// Function ID: 13464
+// Module ID: 13457
+// Function ID: 13458
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 8806, 21, 5243, 575, 504, 1652, 1627, 5876, 5877, 671, 5830, 7939, 1113, 5968, 2]
+// Dependencies: [32, 19, 17, 8805, 21, 5243, 575, 504, 1652, 1627, 5876, 5877, 671, 5830, 7939, 1113, 5968, 2]
 
-// Module 13463 (MediaKeyboardFloatingSend)
+// Module 13457 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -11,7 +11,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8806 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8805 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

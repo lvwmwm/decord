@@ -1,10 +1,10 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 9973
+// Function ID: 9974
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 7007, 1072, 3, 572, 1282, 6694, 9865, 1242, 2]
+// Dependencies: [5, 7007, 1072, 3, 572, 1282, 6694, 9864, 1242, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9974 (VirtualCurrencyActionCreators)
+// Module 9973 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,10 +1,10 @@
-// Module ID: 13080
-// Function ID: 13081
+// Module ID: 13074
+// Function ID: 13075
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6954, 21, 10400, 7368, 6955, 12592, 13081, 13083, 11163, 5243, 575, 5952, 5489, 13073, 504, 13085, 6269, 5834, 8035, 8036, 1113, 4079, 7885, 13091, 10476, 7553, 7793, 5866, 7654, 10486, 5873, 7888, 5891, 2]
+// Dependencies: [5, 19, 17, 6954, 21, 10398, 7368, 6955, 12586, 13075, 13077, 11157, 5243, 575, 5952, 5489, 13067, 504, 13079, 6269, 5834, 8035, 8036, 1113, 4079, 7885, 13085, 10474, 7553, 7793, 5866, 7654, 10484, 5873, 7888, 5891, 2]
 // Exports: default
 
-// Module 13080 (ConjurePublishSheet)
+// Module 13074 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4079 from "module_4079" /* 4079 */;
@@ -16,12 +16,12 @@ import ConjureProjectTypes from "ConjureProjectTypes" /* 6955 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 7368 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7888 */;
 import AppsIcon2 from "AppsIcon" /* 8036 */;
-import ScreenIcon from "ScreenIcon" /* 10400 */;
-import ShieldIcon from "ShieldIcon" /* 11163 */;
-import RobotIcon from "RobotIcon" /* 12592 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 13073 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 13081 */;
-import BadgeIcon from "BadgeIcon" /* 13083 */;
+import ScreenIcon from "ScreenIcon" /* 10398 */;
+import ShieldIcon from "ShieldIcon" /* 11157 */;
+import RobotIcon from "RobotIcon" /* 12586 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 13067 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 13075 */;
+import BadgeIcon from "BadgeIcon" /* 13077 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
@@ -221,7 +221,7 @@ function PublishSheetBody(entryPoint) {
   };
   const tmp = closure_13();
   const tmp3 = dependencyMap;
-  const tmp4 = entryPoint(13085)(project, publish);
+  const tmp4 = entryPoint(13079)(project, publish);
   dependencyMap = tmp4;
   entryPoint(6269)(() => true, tmp4.saving);
   obj = react;
@@ -299,10 +299,10 @@ function PublishSheetBody(entryPoint) {
           }
         }
     };
-    tmp15Result = tmp15(tmp12(13091).ConjureAppIconTile, obj4);
+    tmp15Result = tmp15(tmp12(13085).ConjureAppIconTile, obj4);
   } else {
     const obj5 = { project, size: "dialog" };
-    tmp15Result = tmp15(tmp2(10476), obj5);
+    tmp15Result = tmp15(tmp2(10474), obj5);
   }
   items2 = [tmp15Result, , , , , , ];
   if (editable) {
@@ -370,7 +370,7 @@ function PublishSheetBody(entryPoint) {
     } else {
       const obj20 = { style: tmp.onlyMeIcon, children: obj(UserIcon, obj21) };
       obj21 = { size: "xs", color: entryPoint(575).colors.ICON_DEFAULT };
-      UserIcon = tmp12(10486).UserIcon;
+      UserIcon = tmp12(10484).UserIcon;
       tmp15Result8 = tmp15(tmp17, obj20);
     }
     items6 = [tmp15Result8, ];

@@ -1,20 +1,20 @@
-// Module ID: 18494
-// Function ID: 18495
+// Module ID: 18489
+// Function ID: 18490
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 17990, 9136, 21, 18495, 1113, 3013, 17991, 12317, 17993, 5836, 18496, 18500, 2]
+// Dependencies: [19, 17985, 9135, 21, 18490, 1113, 3013, 17986, 12311, 17988, 5836, 18491, 18495, 2]
 
-// Module 18494 (RedesignSettingsNotificationScreen)
+// Module 18489 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3013 from "module_3013" /* 3013 */;
 import useMountEffectDefault from "useMountEffect" /* 5836 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17990 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17991 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17993 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18495 */;
-import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18500 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17985 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17986 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17988 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18490 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18495 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -37,8 +37,8 @@ function getNotificationSettings() {
   items[2] = obj3;
   const obj4 = { label: intl2.string(_modDef3013["1S8d9h"]), settings: items3 };
   intl2 = intl3.intl;
-  items3 = [, , , ];
-  ({ HIGHLIGHT_NOTIFICATIONS: arr4[0], FRIEND_ANNIVERSARY_NOTIFICATIONS: arr4[1], UPCOMING_SERVER_EVENT_NOTIFICATIONS: arr4[2], SUMMARY_REMINDER_NOTIFICATIONS: arr4[3] } = MobileUserSettings);
+  items3 = [, ];
+  ({ HIGHLIGHT_NOTIFICATIONS: arr4[0], FRIEND_ANNIVERSARY_NOTIFICATIONS: arr4[1] } = MobileUserSettings);
   items[3] = obj4;
   return items;
 }

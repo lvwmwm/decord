@@ -1,10 +1,10 @@
-// Module ID: 13022
-// Function ID: 13023
+// Module ID: 13016
+// Function ID: 13017
 // Name: ThemeContextProvider/RootThemeContextProvider
 // Dependencies: [19, 1083, 21, 5314, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 13022 (ThemeContextProvider/RootThemeContextProvider)
+// Module 13016 (ThemeContextProvider/RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;
 import native from "native" /* 5314 */;

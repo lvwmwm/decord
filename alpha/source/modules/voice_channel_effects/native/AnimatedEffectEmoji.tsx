@@ -1,10 +1,10 @@
-// Module ID: 12750
-// Function ID: 12751
+// Module ID: 12744
+// Function ID: 12745
 // Name: AnimatedEffectEmoji
-// Dependencies: [19, 17, 5244, 21, 1089, 5243, 575, 5957, 1187, 504, 1652, 5485, 12720, 2]
+// Dependencies: [19, 17, 5244, 21, 1089, 5243, 575, 5957, 1187, 504, 1652, 5485, 12714, 2]
 // Exports: default
 
-// Module 12750 (AnimatedEffectEmoji)
+// Module 12744 (AnimatedEffectEmoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -140,7 +140,7 @@ export default function AnimatedEffectEmoji(userId) {
     items4[3] = hasNotch;
     const obj3 = { style: tmp.voiceChannelEffectEmoji, children: null };
     ({ url: tmp2Result2.getEffectUrl(emoji), surrogates: emoji.name });
-    tmp2Result2 = tmp2(12720);
+    tmp2Result2 = tmp2(12714);
     tmp16Result = tmp16(View, obj2);
   }
   return tmp16Result;

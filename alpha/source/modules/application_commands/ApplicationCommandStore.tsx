@@ -1,9 +1,9 @@
-// Module ID: 8941
-// Function ID: 8942
+// Module ID: 8940
+// Function ID: 8941
 // Name: ApplicationCommandStore
 // Dependencies: [32, 6973, 5146, 8657, 504, 572, 2]
 
-// Module 8941 (ApplicationCommandStore)
+// Module 8940 (ApplicationCommandStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8657 */;

@@ -1,10 +1,10 @@
-// Module ID: 20511
-// Function ID: 20512
+// Module ID: 20506
+// Function ID: 20507
 // Name: useIsMFAEnabled
 // Dependencies: [8339, 1385, 1072, 563, 2]
 // Exports: useIsMFAEnabled
 
-// Module 20511 (useIsMFAEnabled)
+// Module 20506 (useIsMFAEnabled)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import Constants from "Constants" /* 1072 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 8339 */;

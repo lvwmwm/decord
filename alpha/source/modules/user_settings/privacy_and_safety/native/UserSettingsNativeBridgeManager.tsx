@@ -1,9 +1,9 @@
-// Module ID: 20667
-// Function ID: 20668
+// Module ID: 20662
+// Function ID: 20663
 // Name: UserSettingsNativeBridgeManager
 // Dependencies: [17, 1231, 7816, 1377, 2]
 
-// Module 20667 (UserSettingsNativeBridgeManager)
+// Module 20662 (UserSettingsNativeBridgeManager)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;

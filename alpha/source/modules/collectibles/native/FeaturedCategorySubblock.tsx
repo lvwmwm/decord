@@ -1,16 +1,16 @@
-// Module ID: 18399
-// Function ID: 18400
+// Module ID: 18394
+// Function ID: 18395
 // Name: FeaturedCategorySubblock
-// Dependencies: [19, 8419, 1074, 1072, 21, 5243, 1499, 9353, 10379, 504, 18381, 18394, 7364, 1113, 575, 1252, 8418, 7871, 5957, 8431, 9366, 2]
+// Dependencies: [19, 8419, 1074, 1072, 21, 5243, 1499, 9352, 10377, 504, 18376, 18389, 7364, 1113, 575, 1252, 8418, 7871, 5957, 8431, 9365, 2]
 // Exports: default
 
-// Module 18399 (FeaturedCategorySubblock)
+// Module 18394 (FeaturedCategorySubblock)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8418 */;
-import VisibilitySensorDefault from "VisibilitySensor" /* 18394 */;
+import VisibilitySensorDefault from "VisibilitySensor" /* 18389 */;
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8419 */;
 import Constants from "Constants" /* 1072 */;
@@ -47,16 +47,16 @@ export default function _default(subblock) {
   const tmp = closure_9();
   let obj = subblock(1499);
   importDefault = obj.useNavigation();
-  const obj2 = subblock(9353);
+  const obj2 = subblock(9352);
   dependencyMap = obj2.useCollectiblesAnalyticsContext();
   const assetUrl = subblock.assetUrl;
-  let obj3 = subblock(10379);
+  let obj3 = subblock(10377);
   let closure_3 = obj3.useIsInImprovedMobileShopLoading();
   let obj4 = subblock(504);
   let items = [closure_3];
   const stateFromStores = obj4.useStateFromStores(items, () => CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId));
   let unpublishedAt = subblock.unpublishedAt;
-  const obj5 = subblock(18381);
+  const obj5 = subblock(18376);
   const handleCardVisibilityChange = obj5.useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange;
   if (unpublishedAt == null) {
     let unpublishedAt1;
@@ -150,7 +150,7 @@ export default function _default(subblock) {
   let result = tmp2Result.shouldShowLimitedTimeBadge(date);
   if (result) {
     const obj12 = { style: tmp.limitedTimeBadge };
-    result = tmp9(tmp2(9366).LimitedTimeBadge, obj12);
+    result = tmp9(tmp2(9365).LimitedTimeBadge, obj12);
   }
   items1[1] = result;
   return closure_7(tmp11, obj6);

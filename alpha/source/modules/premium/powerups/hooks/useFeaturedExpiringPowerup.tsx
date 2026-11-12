@@ -1,13 +1,13 @@
-// Module ID: 10644
-// Function ID: 10645
+// Module ID: 10637
+// Function ID: 10638
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 9176, 5460, 504, 10645, 8431, 2]
+// Dependencies: [19, 9175, 5460, 504, 10638, 8431, 2]
 // Exports: default
 
-// Module 10644 (useFeaturedExpiringPowerup)
+// Module 10637 (useFeaturedExpiringPowerup)
 import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 9176 */;
+import GameServerStore from "GameServerStore" /* 9175 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5460 */;
 import size from "module_2" /* 2 */;
 

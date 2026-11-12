@@ -1,7 +1,7 @@
 // Module ID: 7924
 // Function ID: 7925
 // Name: guild_scheduled_events/GuildScheduledEventModalActionCreators
-// Dependencies: [5, 19, 5092, 5173, 5114, 5175, 6966, 5098, 7900, 1072, 21, 6785, 38, 7925, 2118, 5489, 7962, 8358, 8372, 8390, 6207, 7904, 5952, 1113, 8391, 7912, 8393, 7919, 7877, 5951, 8394, 7594, 7899, 7913, 7906, 15810, 12002, 5068, 5932, 1493, 15811, 7882, 2]
+// Dependencies: [5, 19, 5092, 5173, 5114, 5175, 6966, 5098, 7900, 1072, 21, 6785, 38, 7925, 2118, 5489, 7962, 8358, 8372, 8390, 6207, 7904, 5952, 1113, 8391, 7912, 8393, 7919, 7877, 5951, 8394, 7594, 7899, 7913, 7906, 15805, 11996, 5068, 5932, 1493, 15806, 7882, 2]
 // Exports: closeGuildEventListActionSheet, handleGuildScheduledEventRsvp, openDeleteGuildEventActionSheet, openGuildEventListActionSheet, openShareEvent, openStartGuildEventModal, showGuildEventModeratorActionSheet, transitionToEventDetailsFromInvite, updateRsvp
 
 // Module 7924 (guild_scheduled_events/GuildScheduledEventModalActionCreators)
@@ -20,8 +20,8 @@ import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActio
 import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 7912 */;
 import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 7919 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8394 */;
-import ReportModals from "ReportModals" /* 12002 */;
-import restoreEventRecurrenceDefault from "restoreEventRecurrence" /* 15810 */;
+import ReportModals from "ReportModals" /* 11996 */;
+import restoreEventRecurrenceDefault from "restoreEventRecurrence" /* 15805 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
@@ -34,7 +34,7 @@ import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_3, dependencyMap, importDefault, vanityURLCode;
+let _require, closure_3, dependencyMap, importDefault;
 
 let c10;
 let c9;
@@ -44,7 +44,7 @@ let closure_16;
 let closure_17;
 let closure_18;
 let map1;
-const f93916 = () => event(paths[14])(paths[19], paths.paths);
+const f93927 = () => event(paths[14])(paths[19], paths.paths);
 function openCreateOrEditGuildEventModal(guild, arg1) {
   let guildEvent;
   let recurrenceId;
@@ -158,7 +158,7 @@ export function openStartGuildEventModal(event, nextRecurrenceIdInEvent, onClose
   obj2.pushLazy(asyncRequire(8372, dependencyMap.paths), obj3, closure_15);
 }
 export function openDeleteGuildEventActionSheet(eventId, guildId, recurrenceId) {
-  react.lazy(f93916);
+  react.lazy(f93927);
   obj = useAlertStore;
   obj.openAlert("DeleteEventAlert", <lazyResult eventId={arg0} guildId={arg1} recurrenceId={arg2} />);
 }
@@ -244,7 +244,7 @@ export function openShareEvent(event, arg1) {
     const result = obj2.isGuildEventInvitable(event);
     if (result) {
       const guild = GuildStore.getGuild(event.guild_id);
-      vanityURLCode = undefined;
+      let vanityURLCode;
       if (guild != null) {
         vanityURLCode = guild.vanityURLCode;
       }
@@ -473,7 +473,7 @@ export function showGuildEventModeratorActionSheet(event, arg1, recurrenceId) {
               onPress() {
                           let id;
                           ({ id, guild_id } = event);
-                          react.lazy(f93916);
+                          react.lazy(f93927);
                           obj = useAlertStore;
                           obj.openAlert("DeleteEventAlert", <lazyResult eventId={id} guildId={guild_id} recurrenceId={recurrenceId} />);
                         }
@@ -496,7 +496,7 @@ export function showGuildEventModeratorActionSheet(event, arg1, recurrenceId) {
                       let id;
                       let paths;
                       ({ id, guild_id } = event);
-                      react.lazy(f93916);
+                      react.lazy(f93927);
                       obj = useAlertStore;
                       obj.openAlert("DeleteEventAlert", <lazyResult eventId={id} guildId={guild_id} recurrenceId="Array" />);
                     }

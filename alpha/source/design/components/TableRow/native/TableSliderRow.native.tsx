@@ -1,15 +1,15 @@
-// Module ID: 16357
-// Function ID: 16358
+// Module ID: 16352
+// Function ID: 16353
 // Name: TableSliderRow
-// Dependencies: [32, 19, 17, 21, 5243, 7380, 16358, 7381, 5866, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 7380, 16353, 7381, 5866, 2]
 // Exports: TableSliderRow
 
-// Module 16357 (TableSliderRow)
+// Module 16352 (TableSliderRow)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import react2 from "react" /* 7380 */;
 import Card_Card from "Card/Card" /* 7381 */;
-import Slider2 from "Slider" /* 16358 */;
+import Slider2 from "Slider" /* 16353 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -88,7 +88,7 @@ export function TableSliderRow(end) {
     },
     accessibilityLabel: label
   };
-  Slider = tmp3(16358).Slider;
+  Slider = tmp3(16353).Slider;
   const merged1 = Object.assign(merged);
   items1[1] = hasOwnProperty(View, obj6);
   return metroRequire(Card, obj2);

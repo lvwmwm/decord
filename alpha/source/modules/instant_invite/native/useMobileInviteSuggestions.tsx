@@ -1,10 +1,10 @@
-// Module ID: 15769
-// Function ID: 15770
+// Module ID: 15764
+// Function ID: 15765
 // Name: useMobileInviteSuggestions
-// Dependencies: [32, 19, 5155, 5114, 14623, 6011, 1072, 1083, 504, 1252, 7599, 15770, 14622, 2]
+// Dependencies: [32, 19, 5155, 5114, 14619, 6011, 1072, 1083, 504, 1252, 7599, 15765, 14618, 2]
 // Exports: default
 
-// Module 15769 (useMobileInviteSuggestions)
+// Module 15764 (useMobileInviteSuggestions)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,7 +12,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 14623 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 14619 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6011 */;
 import size from "module_2" /* 2 */;
 

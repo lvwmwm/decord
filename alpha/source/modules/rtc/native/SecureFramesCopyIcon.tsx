@@ -1,10 +1,10 @@
-// Module ID: 10577
-// Function ID: 10578
+// Module ID: 10575
+// Function ID: 10576
 // Name: SecureFramesCopyIcon
 // Dependencies: [19, 21, 5951, 7877, 7922, 5970, 1113, 2]
 // Exports: default
 
-// Module 10577 (SecureFramesCopyIcon)
+// Module 10575 (SecureFramesCopyIcon)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 5951 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;

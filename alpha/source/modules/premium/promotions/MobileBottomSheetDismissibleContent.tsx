@@ -1,10 +1,10 @@
-// Module ID: 9611
-// Function ID: 9612
+// Module ID: 9610
+// Function ID: 9611
 // Name: MobileBottomSheetDismissibleContent
 // Dependencies: [5083, 5076, 2]
 // Exports: getMobileBottomSheetDismissibleContent
 
-// Module 9611 (MobileBottomSheetDismissibleContent)
+// Module 9610 (MobileBottomSheetDismissibleContent)
 import dismissible_content from "dismissible_content" /* 5076 */;
 import DismissibleContentTypes from "DismissibleContentTypes" /* 5083 */;
 import size from "module_2" /* 2 */;

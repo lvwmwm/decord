@@ -1,10 +1,10 @@
-// Module ID: 15753
-// Function ID: 15754
+// Module ID: 15748
+// Function ID: 15749
 // Name: UserProfileTabPages
-// Dependencies: [32, 19, 17, 21, 1652, 1493, 1627, 5505, 1705, 14834, 2]
+// Dependencies: [32, 19, 17, 21, 1652, 1493, 1627, 5505, 1705, 14830, 2]
 // Exports: useMeasuredTabItems
 
-// Module 15753 (UserProfileTabPages)
+// Module 15748 (UserProfileTabPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5505 */;

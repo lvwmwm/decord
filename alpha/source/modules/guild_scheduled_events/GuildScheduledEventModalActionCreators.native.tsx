@@ -1,7 +1,7 @@
 // Module ID: 7899
 // Function ID: 7900
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 5098, 7900, 5489, 7901, 2118, 7906, 15818, 2]
+// Dependencies: [5, 5098, 7900, 5489, 7901, 2118, 7906, 15813, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
 // Module 7899 (GuildScheduledEventModalActionCreators)
@@ -106,5 +106,5 @@ export function transitionToEventDetailsFromInvite() {
 export function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(15818, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(15813, dependencyMap.paths), closure_4, obj2);
 }

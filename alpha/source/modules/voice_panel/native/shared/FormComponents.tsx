@@ -1,10 +1,10 @@
-// Module ID: 10527
-// Function ID: 10528
+// Module ID: 10525
+// Function ID: 10526
 // Name: FormComponents
-// Dependencies: [19, 6005, 21, 5243, 575, 7656, 7680, 10528, 1187, 7852, 10529, 10541, 8077, 6687, 10000, 8410, 504, 8402, 10583, 10585, 5866, 1113, 7379, 5873, 8071, 10586, 5309, 10587, 10752, 2]
+// Dependencies: [19, 6005, 21, 5243, 575, 7656, 7680, 10526, 1187, 7852, 10527, 10539, 8077, 6687, 9999, 8410, 504, 8402, 10581, 10583, 5866, 1113, 7379, 5873, 8071, 10584, 5309, 10585, 10746, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 10527 (FormComponents)
+// Module 10525 (FormComponents)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -14,7 +14,7 @@ import TableRowGroup2 from "TableRowGroup" /* 7680 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 8071 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8402 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 10528 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 10526 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 6005 */;
 import Fragment from "Fragment" /* 21 */;

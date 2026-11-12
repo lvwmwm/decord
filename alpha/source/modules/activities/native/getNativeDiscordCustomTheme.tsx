@@ -1,10 +1,10 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 16878
+// Function ID: 16879
 // Name: getNativeDiscordCustomTheme
 // Dependencies: [5267, 5481, 1241, 5423, 5250, 5240, 2]
 // Exports: default
 
-// Module 16883 (getNativeDiscordCustomTheme)
+// Module 16878 (getNativeDiscordCustomTheme)
 import MobileThemesUtils from "MobileThemesUtils" /* 5481 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5267 */;
 import size from "module_2" /* 2 */;

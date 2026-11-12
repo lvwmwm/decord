@@ -1,9 +1,9 @@
-// Module ID: 18922
-// Function ID: 18923
+// Module ID: 18917
+// Function ID: 18918
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5244, 6997, 5114, 5286, 6893, 18914, 18919, 18911, 21, 5243, 575, 5839, 504, 7654, 5876, 5240, 1090, 1652, 5314, 1705, 5957, 7971, 18923, 18926, 13688, 18933, 1113, 5491, 6854, 7656, 18916, 18934, 2]
+// Dependencies: [19, 5244, 6997, 5114, 5286, 6893, 18909, 18914, 18906, 21, 5243, 575, 5839, 504, 7654, 5876, 5240, 1090, 1652, 5314, 1705, 5957, 7971, 18918, 18921, 13682, 18928, 1113, 5491, 6854, 7656, 18911, 18929, 2]
 
-// Module 18922 (GuildsBarGuildFolder)
+// Module 18917 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
@@ -14,16 +14,16 @@ import FastImageDefault from "FastImage" /* 5957 */;
 import SortedGuildStore2 from "SortedGuildStore" /* 6893 */;
 import NativeViewDefault from "NativeView" /* 7656 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7971 */;
-import ListUtils from "ListUtils" /* 13688 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18916 */;
+import ListUtils from "ListUtils" /* 13682 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18911 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6997 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18914 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18919 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18911 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18909 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18914 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18906 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

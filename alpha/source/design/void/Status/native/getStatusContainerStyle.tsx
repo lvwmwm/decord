@@ -1,10 +1,10 @@
-// Module ID: 16489
-// Function ID: 16490
+// Module ID: 16484
+// Function ID: 16485
 // Name: getStatusContainerStyle
 // Dependencies: [17, 1188, 2]
 // Exports: default
 
-// Module 16489 (getStatusContainerStyle)
+// Module 16484 (getStatusContainerStyle)
 import react_native from "react-native" /* 17 */;
 import StatusConstants from "StatusConstants" /* 1188 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,18 +1,18 @@
-// Module ID: 10248
-// Function ID: 10249
+// Module ID: 10246
+// Function ID: 10247
 // Name: GameProfileView
-// Dependencies: [19, 17, 10249, 21, 5243, 575, 7852, 7871, 10250, 10251, 10259, 10266, 10267, 10281, 10315, 10321, 10335, 10348, 10393, 10399, 10421, 10427, 2]
+// Dependencies: [19, 17, 10247, 21, 5243, 575, 7852, 7871, 10248, 10249, 10257, 10264, 10265, 10279, 10313, 10319, 10333, 10346, 10391, 10397, 10419, 10425, 2]
 // Exports: default
 
-// Module 10248 (GameProfileView)
+// Module 10246 (GameProfileView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import GameProfileConstants from "GameProfileConstants" /* 10249 */;
-import useGameProfileInvite from "useGameProfileInvite" /* 10250 */;
-import GameProfileHeaderDefault from "GameProfileHeader" /* 10251 */;
-import GameProfileMediaDefault from "GameProfileMedia" /* 10259 */;
+import GameProfileConstants from "GameProfileConstants" /* 10247 */;
+import useGameProfileInvite from "useGameProfileInvite" /* 10248 */;
+import GameProfileHeaderDefault from "GameProfileHeader" /* 10249 */;
+import GameProfileMediaDefault from "GameProfileMedia" /* 10257 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -26,17 +26,17 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const GameProfileStoreLinksDefault = tmp2(10266);
-const GameProfileReviewsDefault = tmp2(10267);
-const GameProfileSummaryDefault = tmp2(10281);
-const GameProfileLinkAccountDefault = tmp2(10315);
-const GameProfileCommunityDefault = tmp2(10321);
-const GameProfileAnnouncementsDefault = tmp2(10335);
-const GameProfileShopCarouselDefault = tmp2(10348);
-const GameProfileSimilarGamesDefault = tmp2(10393);
-const GameProfileDetailsDefault = tmp2(10399);
-const GameProfileGameClaimCtaDefault = tmp2(10421);
-const GameProfileReportButtonDefault = tmp2(10427);
+const GameProfileStoreLinksDefault = tmp2(10264);
+const GameProfileReviewsDefault = tmp2(10265);
+const GameProfileSummaryDefault = tmp2(10279);
+const GameProfileLinkAccountDefault = tmp2(10313);
+const GameProfileCommunityDefault = tmp2(10319);
+const GameProfileAnnouncementsDefault = tmp2(10333);
+const GameProfileShopCarouselDefault = tmp2(10346);
+const GameProfileSimilarGamesDefault = tmp2(10391);
+const GameProfileDetailsDefault = tmp2(10397);
+const GameProfileGameClaimCtaDefault = tmp2(10419);
+const GameProfileReportButtonDefault = tmp2(10425);
 const View = react_native.View;
 const MOBILE_GAME_PROFILE_MAX_WIDTH = GameProfileConstants.MOBILE_GAME_PROFILE_MAX_WIDTH;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

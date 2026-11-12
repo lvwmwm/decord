@@ -1,9 +1,9 @@
-// Module ID: 14581
-// Function ID: 14582
+// Module ID: 14577
+// Function ID: 14578
 // Name: VocalChannelJoinButton
-// Dependencies: [19, 17, 5175, 5918, 1072, 21, 5243, 575, 1377, 8995, 5484, 5250, 10944, 563, 6886, 6880, 6876, 14582, 5866, 1113, 5873, 7952, 7368, 2]
+// Dependencies: [19, 17, 5175, 5918, 1072, 21, 5243, 575, 1377, 8994, 5484, 5250, 10938, 563, 6886, 6880, 6876, 14578, 5866, 1113, 5873, 7952, 7368, 2]
 
-// Module 14581 (VocalChannelJoinButton)
+// Module 14577 (VocalChannelJoinButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -65,11 +65,11 @@ const memoResult = react.memo(function VocalChannelJoinButton(channel) {
   if (small === undefined) {
     small = false;
   }
-  const tmp2 = voiceStates(8995)();
+  const tmp2 = voiceStates(8994)();
   const tmp3 = voiceStates(5484)();
   const obj = channel(5250);
   const tmp5 = closure_11(tmp2, obj.isThemeLight(tmp3));
-  const obj2 = channel(10944);
+  const obj2 = channel(10938);
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   const items = [PermissionStore];
   const obj3 = channel(563);
@@ -92,9 +92,9 @@ const memoResult = react.memo(function VocalChannelJoinButton(channel) {
     }
     return null != found;
   }, items2);
-  const tmp4Result3 = channel(14582);
+  const tmp4Result3 = channel(14578);
   const connectedUserLimit = tmp4Result3.useConnectedUserLimit({ channel, video: tmp14 });
-  const tmp4Result4 = channel(14582);
+  const tmp4Result4 = channel(14578);
   let connectedUserLimitFormatted = tmp4Result4.useConnectedUserLimitFormatted({ channel, video: tmp14, userCount: sum });
   let tmp19 = null;
   const tmp17 = !stateFromStores && !isConnectedToVoiceChannel && null != connectedUserLimitFormatted && sum > 0 && sum >= connectedUserLimit / 2 + 1;

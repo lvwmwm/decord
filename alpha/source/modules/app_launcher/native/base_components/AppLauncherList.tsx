@@ -1,17 +1,17 @@
-// Module ID: 13405
-// Function ID: 13406
+// Module ID: 13399
+// Function ID: 13400
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 5243, 1627, 13334, 5420, 1187, 13406, 1113, 7759, 2]
+// Dependencies: [19, 17, 21, 5243, 1627, 13328, 5420, 1187, 13400, 1113, 7759, 2]
 // Exports: AppLauncherList, AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 13405 (AppLauncherList)
+// Module 13399 (AppLauncherList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import mergeProps from "mergeProps" /* 5420 */;
 import SearchBar2 from "SearchBar" /* 7759 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13406 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13400 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ export function AppLauncherList(ref) {
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   let appLauncherFlashListProps;
   const bottom = appLauncherFlashListProps(1627)().bottom;
-  let obj = ref(13334);
+  let obj = ref(13328);
   appLauncherFlashListProps = obj.useAppLauncherFlashListProps();
   const items = [appLauncherFlashListProps.scrollerRef, ref];
   const memo = react.useMemo(() => {
@@ -34,7 +34,7 @@ export function AppLauncherList(ref) {
     return obj.mergeRefs(appLauncherFlashListProps.scrollerRef, ref);
   }, items);
   const items1 = [{ paddingBottom: bottom }, merged.contentContainerStyle];
-  appLauncherFlashListProps(13334);
+  appLauncherFlashListProps(13328);
   const merged1 = Object.assign(merged);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
   return <tmp4 contentContainerStyle={items1} scrollIndicatorInsets={{ bottom }} ref={memo} />;

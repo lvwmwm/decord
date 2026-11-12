@@ -1,15 +1,15 @@
-// Module ID: 11800
-// Function ID: 11801
+// Module ID: 11794
+// Function ID: 11795
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 8930, 21, 5243, 1113, 11097, 7885, 7847, 11801, 5873, 9046, 5489, 2]
+// Dependencies: [32, 19, 17, 8929, 21, 5243, 1113, 11091, 7885, 7847, 11795, 5873, 9045, 5489, 2]
 // Exports: default
 
-// Module 11800 (ForumPostTagsActionSheet)
+// Module 11794 (ForumPostTagsActionSheet)
 import react_native from "react-native" /* 17 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import ForumConstants from "ForumConstants" /* 8930 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9046 */;
-import AvailableForumTagDefault from "AvailableForumTag" /* 11801 */;
+import ForumConstants from "ForumConstants" /* 8929 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9045 */;
+import AvailableForumTagDefault from "AvailableForumTag" /* 11795 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -75,7 +75,7 @@ export default function ForumPostTagsActionSheet(thread) {
   let tmp3 = closure_9();
   let tmp4 = thread;
   const tmp5 = dependencyMap;
-  let obj = thread(11097);
+  let obj = thread(11091);
   let appliedTags = obj.useAppliedTags(thread);
   const useState = first.useState;
   let _Set = Set;
@@ -85,7 +85,7 @@ export default function ForumPostTagsActionSheet(thread) {
   const _Set1 = new _Set(appliedTags);
   [first, closure_5] = useState(_Set1);
   closure_6 = first.size >= closure_6;
-  const tmp4Result = tmp4(11097);
+  const tmp4Result = tmp4(11091);
   const visibleForumTags = tmp4Result.useVisibleForumTags(parentChannel);
   let obj2 = {
     onDismiss() {

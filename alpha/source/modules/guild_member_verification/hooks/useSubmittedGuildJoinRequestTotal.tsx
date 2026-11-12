@@ -1,10 +1,10 @@
-// Module ID: 18808
-// Function ID: 18809
+// Module ID: 18803
+// Function ID: 18804
 // Name: useSubmittedGuildJoinRequestTotal
 // Dependencies: [6870, 504, 2]
 // Exports: useSubmittedGuildJoinRequestTotal
 
-// Module 18808 (useSubmittedGuildJoinRequestTotal)
+// Module 18803 (useSubmittedGuildJoinRequestTotal)
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6870 */;
 import size from "module_2" /* 2 */;
 

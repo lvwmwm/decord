@@ -1,9 +1,9 @@
-// Module ID: 14713
-// Function ID: 14714
+// Module ID: 14709
+// Function ID: 14710
 // Name: ApplicationCommandManager
-// Dependencies: [32, 8658, 8941, 1072, 6283, 1623, 13692, 14494, 8939, 8657, 11344, 5922, 11337, 2116, 11092, 5440, 1625, 13393, 12, 13338, 14495, 5895, 13395, 13339, 5491, 6004, 11172, 2]
+// Dependencies: [32, 8658, 8940, 1072, 6283, 1623, 13688, 14490, 8938, 8657, 11338, 5922, 11331, 2116, 11086, 5440, 1625, 13387, 12, 13332, 14491, 5895, 13389, 13333, 5491, 6004, 11166, 2]
 
-// Module 14713 (ApplicationCommandManager)
+// Module 14709 (ApplicationCommandManager)
 import _modDef12 from "module_12" /* 12 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
 import Server from "Server" /* 2116 */;
@@ -12,17 +12,17 @@ import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5922 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8657 */;
 import DraftStore2 from "DraftStore" /* 8658 */;
-import ApplicationCommandActionCreators from "ApplicationCommandActionCreators" /* 8939 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11092 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 11172 */;
-import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 11337 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 11344 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 13339 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 13395 */;
-import ChatInputParser from "ChatInputParser" /* 13692 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14494 */;
+import ApplicationCommandActionCreators from "ApplicationCommandActionCreators" /* 8938 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11086 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 11166 */;
+import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 11331 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 11338 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 13333 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 13389 */;
+import ChatInputParser from "ChatInputParser" /* 13688 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8941 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8940 */;
 import Constants from "Constants" /* 1072 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6283 */;
 import size from "module_2" /* 2 */;
@@ -593,7 +593,7 @@ class ApplicationCommandManager {
               return null;
             } else {
               let obj3 = { channel, type: "channel" };
-              const tmp3Result = tmp3(13338);
+              const tmp3Result = tmp3(13332);
               const commandContext = tmp3Result.getCommandContext(obj3);
               let preferredCommandType;
               if (preferredCommand != null) {
@@ -616,7 +616,7 @@ class ApplicationCommandManager {
                   return tmp20;
                 }
               } else {
-                const tmp3Result2 = tmp3(14495);
+                const tmp3Result2 = tmp3(14491);
                 const draftCommand = tmp3Result2.resolveDraftCommand(channel, text, DraftStore.getDraftCommand(channel.id, DraftType.ChannelMessage));
                 if (null != draftCommand) {
                   const obj8 = { command: obj9, section: draftCommand.section };
@@ -1232,7 +1232,7 @@ class ApplicationCommandManager {
       }
       if (tmp92) {
         self.optionValues = self.getAllCommandOptionValues(activeCommand, editId.text);
-        const obj7 = obj11(13393);
+        const obj7 = obj11(13387);
         self.optionValidationResults = obj7.getValidationResults(activeCommand, self.optionValues, editId.channel.guild_id, editId.channel.id, false);
         const chatInputNodes = self.chatInputNodes;
         self.chatInputNodes = chatInputNodes.map((type) => {
@@ -1613,7 +1613,7 @@ class ApplicationCommandManager {
       let tmp28 = currentOption(tmp26, 2);
       let first = tmp28[0];
       let tmp30 = tmp28[1];
-      let obj3 = obj11(14494);
+      let obj3 = obj11(14490);
       let hasItem = 0 !== obj3.findGameMentionTokens(editId.text, tmp30.name, mapped).locations.length;
       if (!hasItem) {
         let text3 = editId.text;
@@ -1642,14 +1642,14 @@ class ApplicationCommandManager {
           const result = optionsToNodes.set(type.data.option.name, type);
         }
       }
-      let tmp5 = type.type === tmp(13692).ChatInputNodeType.COMMAND_OPTION_WITH_VALUE;
+      let tmp5 = type.type === tmp(13688).ChatInputNodeType.COMMAND_OPTION_WITH_VALUE;
       if (tmp5) {
         const data2 = type.data;
         let type1;
         if (data2 != null) {
           type1 = data2.type;
         }
-        tmp5 = type1 === tmp(13692).ChatInputParseResultDataType.COMMAND_OPTION;
+        tmp5 = type1 === tmp(13688).ChatInputParseResultDataType.COMMAND_OPTION;
       }
       if (tmp5) {
         const optionValueNodes = self.optionValueNodes;

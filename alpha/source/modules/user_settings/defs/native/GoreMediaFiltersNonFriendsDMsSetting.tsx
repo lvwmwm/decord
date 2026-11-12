@@ -1,18 +1,18 @@
-// Module ID: 17244
-// Function ID: 17245
+// Module ID: 17239
+// Function ID: 17240
 // Name: GoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [9136, 17237, 8787, 8576, 17238, 1113, 12317, 17240, 2]
+// Dependencies: [9135, 17232, 8786, 8576, 17233, 1113, 12311, 17235, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 17244 (GoreMediaFiltersNonFriendsDMsSetting)
+// Module 17239 (GoreMediaFiltersNonFriendsDMsSetting)
 import intl4 from "intl" /* 1113 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8576 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8787 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 17237 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17238 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 17240 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8786 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 17232 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17233 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 17235 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 function useGoreContentNonFriendsDmSettingValue() {

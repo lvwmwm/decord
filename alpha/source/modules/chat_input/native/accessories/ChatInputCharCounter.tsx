@@ -1,14 +1,14 @@
-// Module ID: 14742
-// Function ID: 14743
+// Module ID: 14738
+// Function ID: 14739
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1385, 1072, 1387, 21, 5243, 575, 504, 2171, 11096, 11109, 5952, 1113, 7364, 5866, 9369, 2]
+// Dependencies: [32, 19, 1385, 1072, 1387, 21, 5243, 575, 504, 2171, 11090, 11103, 5952, 1113, 7364, 5866, 9368, 2]
 
-// Module 14742 (ChatInputCharCounter)
+// Module 14738 (ChatInputCharCounter)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11109 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11103 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -59,7 +59,7 @@ class ChatCounter {
       const obj = stateFromStores(maxLength[9]);
       return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser());
     });
-    const tmp5 = stateFromStores(11096)();
+    const tmp5 = stateFromStores(11090)();
     dependencyMap = tmp5;
     let result = tmp5 / 10;
     _slicedToArray = result;
@@ -113,7 +113,7 @@ class ChatCounter {
       let tmp20Result = null;
       const tmp20 = closure_9;
       if (!stateFromStores) {
-        tmp20Result = tmp20(tmp2(9369).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+        tmp20Result = tmp20(tmp2(9368).NitroWheelIcon, { size: "xs", color: "icon-muted" });
       }
       items3[1] = tmp20Result;
       tmp16Result = tmp19(PressableOpacity3, obj2);
@@ -127,14 +127,14 @@ class ChatCounter {
       const tmp16 = closure_10;
       const tmp17 = closure_9;
       if (tmp11) {
-        tmp17Result = tmp17(tmp2(9369).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+        tmp17Result = tmp17(tmp2(9368).NitroWheelIcon, { size: "xs", color: "icon-muted" });
       }
       items5[1] = tmp17Result;
       tmp16Result = tmp16(PressableOpacity2, obj4);
     } else {
       tmp16Result = null;
       if (tmp11) {
-        let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(9369).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
+        let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(9368).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
         items6 = [tmp.container, style];
         const PressableOpacity = tmp2(7364).PressableOpacity;
         tmp16Result = closure_9(PressableOpacity, obj6);

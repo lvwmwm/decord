@@ -1,10 +1,10 @@
-// Module ID: 14123
-// Function ID: 14124
+// Module ID: 14119
+// Function ID: 14120
 // Name: FamilyCenterDataConfirmation
-// Dependencies: [19, 21, 6274, 5866, 7680, 7379, 1113, 2685, 14124, 5960, 10876, 8021, 14125, 8186, 11757, 11267, 5979, 14127, 10502, 7483, 2]
+// Dependencies: [19, 21, 6274, 5866, 7680, 7379, 1113, 2685, 14120, 5960, 10870, 8021, 14121, 8186, 11751, 11261, 5979, 14123, 10500, 7483, 2]
 // Exports: default
 
-// Module 14123 (FamilyCenterDataConfirmation)
+// Module 14119 (FamilyCenterDataConfirmation)
 import intl37 from "intl" /* 1113 */;
 import _modDef2685 from "module_2685" /* 2685 */;
 import Text_Text from "Text/Text" /* 5866 */;
@@ -16,13 +16,13 @@ import XSmallIcon from "XSmallIcon" /* 7483 */;
 import TableRowGroup2 from "TableRowGroup" /* 7680 */;
 import ForumIcon from "ForumIcon" /* 8021 */;
 import CreditCardIcon from "CreditCardIcon" /* 8186 */;
-import SettingsIcon from "SettingsIcon" /* 10502 */;
-import ServerIcon from "ServerIcon" /* 10876 */;
-import FlagIcon from "FlagIcon" /* 11267 */;
-import GiftIcon from "GiftIcon" /* 11757 */;
-import useAgeSpecificText12 from "useAgeSpecificText" /* 14124 */;
-import PhoneIcon from "PhoneIcon" /* 14125 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 14127 */;
+import SettingsIcon from "SettingsIcon" /* 10500 */;
+import ServerIcon from "ServerIcon" /* 10870 */;
+import FlagIcon from "FlagIcon" /* 11261 */;
+import GiftIcon from "GiftIcon" /* 11751 */;
+import useAgeSpecificText12 from "useAgeSpecificText" /* 14120 */;
+import PhoneIcon from "PhoneIcon" /* 14121 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 14123 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

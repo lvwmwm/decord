@@ -1,10 +1,10 @@
-// Module ID: 11232
-// Function ID: 11233
+// Module ID: 11226
+// Function ID: 11227
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 5243, 575, 1627, 7577, 1092, 1652, 11233, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 1627, 7577, 1092, 1652, 11227, 2]
 // Exports: default
 
-// Module 11232 (PremiumExpressionPickerFeatureUpsell)
+// Module 11226 (PremiumExpressionPickerFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

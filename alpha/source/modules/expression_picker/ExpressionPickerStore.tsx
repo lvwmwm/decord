@@ -1,10 +1,10 @@
-// Module ID: 19762
-// Function ID: 19763
+// Module ID: 19757
+// Function ID: 19758
 // Name: ExpressionPickerStore
 // Dependencies: [1228, 6276, 1254, 5443, 1259, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, setShowEmojiPacks, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 19762 (ExpressionPickerStore)
+// Module 19757 (ExpressionPickerStore)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import uniqueIdDefault from "uniqueId" /* 6276 */;
 import module_1254_mod from "module_1254" /* 1254 */;
@@ -190,7 +190,7 @@ export function setExpressionPickerView(activeView) {
   _require = activeView;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "add" };
+    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "ip" };
     return withEqualityFnResult.setState(obj);
   });
 }
@@ -198,7 +198,7 @@ export function setShowEmojiPacks(showEmojiPacks) {
   _require = showEmojiPacks;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { showEmojiPacks, showSelectedEmojiPackId: "Array" };
+    const obj = { showEmojiPacks, showSelectedEmojiPackId: "a" };
     return withEqualityFnResult.setState(obj);
   });
 }

@@ -1,10 +1,10 @@
-// Module ID: 11726
-// Function ID: 11727
+// Module ID: 11720
+// Function ID: 11721
 // Name: SearchableUserListActions
-// Dependencies: [19, 17, 21, 11727, 7680, 7379, 2]
+// Dependencies: [19, 17, 21, 11721, 7680, 7379, 2]
 // Exports: useUserListActionsProps
 
-// Module 11726 (SearchableUserListActions)
+// Module 11720 (SearchableUserListActions)
 import Fragment from "Fragment" /* 21 */;
 import TableRow2 from "TableRow" /* 7379 */;
 import TableRowGroup2 from "TableRowGroup" /* 7680 */;
@@ -46,7 +46,7 @@ export function useUserListActionsProps(actions) {
   let closure_2;
   actions = actions.actions;
   const style = actions.style;
-  const tmp = style(11727)();
+  const tmp = style(11721)();
   dependencyMap = tmp;
   const items = [actions, tmp, style];
   return react.useMemo(() => {

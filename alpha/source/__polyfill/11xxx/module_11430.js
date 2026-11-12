@@ -1,112 +1,106 @@
 // Module ID: 11430
 // Function ID: 11431
-// Dependencies: [11368]
-// Exports: parseDuration, parseNumberPattern, parseOrdinalNumberPattern, parseYear
+// Dependencies: [11431, 11433, 11434, 11435, 11436, 11437, 11438, 11358, 11365, 11367, 11439, 11440, 11404, 11398]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 11430
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11368 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 11398 */;
+import _mod11404 from "module_11404" /* 11404 */;
+import _mod11431 from "module_11431" /* 11431 */;
+import _mod11433 from "module_11433" /* 11433 */;
+import _mod11434 from "module_11434" /* 11434 */;
+import _mod11435 from "module_11435" /* 11435 */;
+import _mod11436 from "module_11436" /* 11436 */;
+import _mod11437 from "module_11437" /* 11437 */;
+import _mod11438 from "module_11438" /* 11438 */;
+import _mod11439 from "module_11439" /* 11439 */;
+import _mod11440 from "module_11440" /* 11440 */;
+import { Chrono } from "module_11358" /* 11358 */;
 
-const combined = "(" + exports.NUMBER_PATTERN + ")\\s{0,5}(" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_DICTIONARY) + ")\\s{0,5}";
-const regExp = new RegExp(combined, "i");
+const require = globalThis.__r;
 
-export function parseNumberPattern(str) {
-  let num2;
-  str = str.toLowerCase();
-  if (undefined !== exports.INTEGER_WORD_DICTIONARY[str]) {
-    num2 = exports.INTEGER_WORD_DICTIONARY[str];
+function createConfiguration(flag) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
+  }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_11431.default(), , , , ];
+  new module_11431.default();
+  items[1] = new module_11435.default();
+  new module_11435.default();
+  items[2] = new module_11440.default();
+  new module_11440.default();
+  items[3] = new module_11436.default();
+  new module_11436.default();
+  items[4] = new module_11437.default();
+  new module_11437.default();
+  items1 = [new module_11439.default(), , ];
+  new module_11439.default();
+  items1[1] = new module_11438.default();
+  new module_11438.default();
+  items1[2] = new module_11433.default();
+  new module_11433.default();
+  const result = includeCommonConfiguration(obj, flag);
+  const refiners = result.refiners;
+  result.refiners = refiners.filter((item) => !(item instanceof module_11404.default));
+  return result;
+}
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
   } else {
-    num2 = 1;
-    if ("une" !== str) {
-      num2 = 1;
-      if ("un" !== str) {
-        let num3 = 3;
-        if (!str.match(/quelques?/)) {
-          let num4 = 0.5;
-          if (!str.match(/demi-?/)) {
-            const _parseFloat = parseFloat;
-            num4 = parseFloat(str);
-          }
-          num3 = num4;
-        }
-        num2 = num3;
-      }
-    }
+    tmp2 = __esModule;
   }
-  return num2;
+  return tmp2;
+});
+function createCasualConfiguration() {
+  const tmp = createConfiguration(false);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_11434.default();
+  unshift(_default);
+  return tmp;
 }
-export function parseOrdinalNumberPattern(str) {
-  str = str.toLowerCase();
-  return parseInt(str.replace(/(?:er)$/i, ""));
+const module_11431 = fn(_mod11431);
+const module_11433 = fn(_mod11433);
+const module_11434 = fn(_mod11434);
+const module_11435 = fn(_mod11435);
+const module_11436 = fn(_mod11436);
+const module_11437 = fn(_mod11437);
+const module_11438 = fn(_mod11438);
+const module_11439 = fn(_mod11439);
+const module_11440 = fn(_mod11440);
+const module_11404 = fn(_mod11404);
+const configuration = createConfiguration(false);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_11434.default();
+unshift(_default);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_11358").Chrono(createConfiguration(true));
+const Chrono_export = require("module_11358").Chrono;
+
+export function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 }
-export function parseYear(match) {
-  const obj = /AC/i;
-  if (obj.test(match)) {
-    const _parseInt3 = parseInt;
-    return -parseInt(match.replace(/BC/i, ""));
-  } else {
-    const obj2 = /AD/i;
-    if (!obj2.test(match)) {
-      const obj3 = /C/i;
-      if (!obj3.test(match)) {
-        const _parseInt = parseInt;
-        const parsed = parseInt(match);
-        let sum = parsed;
-        if (parsed < 100) {
-          let num3 = 2000;
-          if (parsed > 50) {
-            num3 = 1900;
-          }
-          sum = parsed + num3;
-        }
-        return sum;
-      }
-    }
-    const _parseInt2 = parseInt;
-    return parseInt(match.replace(/[^\d]+/i, ""));
-  }
+export function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
 }
-export function parseDuration(arg0) {
-  let str = arg0;
-  const obj = {};
-  let match = regExp.exec(arg0);
-  while (match) {
-    let num;
-    let str2 = match[1];
-    let str3 = str2.toLowerCase();
-    let tmp2 = exports;
-    if (undefined !== exports.INTEGER_WORD_DICTIONARY[str3]) {
-      num = tmp2.INTEGER_WORD_DICTIONARY[str3];
-    } else {
-      num = 1;
-      if ("une" !== str3) {
-        num = 1;
-        if ("un" !== str3) {
-          let num2 = 3;
-          if (!str3.match(/quelques?/)) {
-            let num3 = 0.5;
-            if (!str3.match(/demi-?/)) {
-              let _parseFloat = parseFloat;
-              num3 = parseFloat(str3);
-            }
-            num2 = num3;
-          }
-          num = num2;
-        }
-      }
-    }
-    let str4 = match[2];
-    obj[tmp2.TIME_UNIT_DICTIONARY[str4.toLowerCase(str4)]] = num;
-    let substr = str.substring(match[0].length);
-    match = regExp.exec(substr);
-    str = substr;
-  }
-  return obj;
-}
-export const WEEKDAY_DICTIONARY = { dimanche: 0, dim: 0, lundi: 1, lun: 1, mardi: 2, mar: 2, mercredi: 3, mer: 3, jeudi: 4, jeu: 4, vendredi: 5, ven: 5, samedi: 6, sam: 6 };
-export const MONTH_DICTIONARY = { janvier: 1, jan: 1, "jan.": 1, "f\u00e9vrier": 2, "f\u00e9v": 2, "f\u00e9v.": 2, fevrier: 2, fev: 2, "fev.": 2, mars: 3, mar: 3, "mar.": 3, avril: 4, avr: 4, "avr.": 4, mai: 5, juin: 6, jun: 6, juillet: 7, juil: 7, jul: 7, "jul.": 7, "ao\u00fbt": 8, aout: 8, septembre: 9, sep: 9, "sep.": 9, sept: 9, "sept.": 9, octobre: 10, oct: 10, "oct.": 10, novembre: 11, nov: 11, "nov.": 11, "d\u00e9cembre": 12, decembre: 12, dec: 12, "dec.": 12 };
-export const INTEGER_WORD_DICTIONARY = { un: 1, deux: 2, trois: 3, quatre: 4, cinq: 5, six: 6, sept: 7, huit: 8, neuf: 9, dix: 10, onze: 11, douze: 12, treize: 13 };
-export const TIME_UNIT_DICTIONARY = { sec: "second", seconde: "second", secondes: "second", min: "minute", mins: "minute", minute: "minute", minutes: "minute", h: "hour", hr: "hour", hrs: "hour", heure: "hour", heures: "hour", jour: "day", jours: "day", semaine: "week", semaines: "week", mois: "month", trimestre: "quarter", trimestres: "quarter", ans: "year", "ann\u00e9e": "year", "ann\u00e9es": "year" };
-export const NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.INTEGER_WORD_DICTIONARY) + "|[0-9]+|[0-9]+\\.[0-9]+|une?\\b|quelques?|demi-?)";
-export const ORDINAL_NUMBER_PATTERN = "(?:[0-9]{1,2}(?:er)?)";
-export const YEAR_PATTERN = "(?:[1-9][0-9]{0,3}\\s*(?:AC|AD|p\\.\\s*C(?:hr?)?\\.\\s*n\\.)|[1-2][0-9]{3}|[5-9][0-9])";
-export const TIME_UNITS_PATTERN = repeatedTimeunitPattern.repeatedTimeunitPattern("", combined);
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

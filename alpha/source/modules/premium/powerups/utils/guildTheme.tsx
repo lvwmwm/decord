@@ -1,12 +1,12 @@
-// Module ID: 10632
-// Function ID: 10633
+// Module ID: 10630
+// Function ID: 10631
 // Name: guildTheme
-// Dependencies: [5460, 5461, 504, 5464, 10633, 5466, 2]
+// Dependencies: [5460, 5461, 504, 5464, 10631, 5466, 2]
 // Exports: shouldShowGuildThemeRollback, useShouldShowGuildThemeRollback
 
-// Module 10632 (guildTheme)
+// Module 10630 (guildTheme)
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5461 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 10633 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 10631 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5460 */;
 import size from "module_2" /* 2 */;
 

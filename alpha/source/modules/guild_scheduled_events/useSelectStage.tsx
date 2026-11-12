@@ -1,10 +1,10 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 15808
+// Function ID: 15809
 // Name: useSelectStage
 // Dependencies: [5, 32, 19, 5092, 5146, 504, 7612, 2]
 // Exports: default
 
-// Module 15813 (useSelectStage)
+// Module 15808 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

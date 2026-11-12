@@ -1,10 +1,10 @@
-// Module ID: 9553
-// Function ID: 9554
+// Module ID: 9552
+// Function ID: 9553
 // Name: FamilyCenterUtils
 // Dependencies: [8673, 8674, 1113, 2685, 2166, 8675, 2]
 // Exports: formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 9553 (FamilyCenterUtils)
+// Module 9552 (FamilyCenterUtils)
 import intl5 from "intl" /* 1113 */;
 import _modDef2166 from "module_2166" /* 2166 */;
 import _modDef2685 from "module_2685" /* 2685 */;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f97361 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f97372 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 ({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: hasOwnProperty, FamilyCenterFailureCode: metroRequire, TeenActionDisplayType: metroImportDefault, UserLinkStatus: metroImportAll, UserLinkType: c9 } = FamilyCenterConstants);
 let c10 = 86400;
 let c11 = 172800;
@@ -181,11 +181,11 @@ export function getOrFetchLinkedUsers() {
 }
 export function hasActiveParentLinks() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f97361);
+  return values.some(f97372);
 }
 export function isParentallyControlled() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f97361);
+  return values.some(f97372);
 }
 export function getTopUserOrGuildDescription(dms_sent, call_count) {
   let formatToPlainStringResult;

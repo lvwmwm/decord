@@ -1,10 +1,10 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 17473
+// Function ID: 17474
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 5244, 21, 5243, 575, 1377, 1113, 5866, 9375, 504, 5380, 2]
+// Dependencies: [19, 17, 5244, 21, 5243, 575, 1377, 1113, 5866, 9374, 504, 5380, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 17478 (BountiesScrollRecapFooter)
+// Module 17473 (BountiesScrollRecapFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5380 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import OrbsIcon from "OrbsIcon" /* 9375 */;
+import OrbsIcon from "OrbsIcon" /* 9374 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;

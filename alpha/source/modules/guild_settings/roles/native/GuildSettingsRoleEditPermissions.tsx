@@ -1,10 +1,10 @@
-// Module ID: 20430
-// Function ID: 20431
+// Module ID: 20425
+// Function ID: 20426
 // Name: GuildSettingsRoleEditPermissions
-// Dependencies: [32, 19, 17, 5110, 5175, 1385, 1072, 21, 5243, 575, 5180, 38, 5866, 1113, 5489, 20431, 2118, 19511, 20428, 7759, 1252, 1084, 19515, 7888, 7680, 1187, 8116, 2]
+// Dependencies: [32, 19, 17, 5110, 5175, 1385, 1072, 21, 5243, 575, 5180, 38, 5866, 1113, 5489, 20426, 2118, 19506, 20423, 7759, 1252, 1084, 19510, 7888, 7680, 1187, 8116, 2]
 // Exports: default
 
-// Module 20430 (GuildSettingsRoleEditPermissions)
+// Module 20425 (GuildSettingsRoleEditPermissions)
 import nativeDefault from "native" /* 575 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -118,7 +118,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { permissionsEdited, onPermissionsChanged: dependencyMap, guildId: guild.id };
-          const tmp3 = asyncRequire(20431, dependencyMap.paths);
+          const tmp3 = asyncRequire(20426, dependencyMap.paths);
           openLazy(tmp3, "role-permission-templates-" + guild.id + "-" + role.id, obj);
         },
       accessibilityRole: "button"
@@ -126,7 +126,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     tmp19Result = tmp19(Text, obj3);
   }
   const tmp19Result3 = closure_14(closure_6, { children: tmp19Result });
-  const tmp15Result = role(19511);
+  const tmp15Result = role(19506);
   const guildPermissionSpec = tmp15Result.generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {
@@ -146,7 +146,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
   const children = [, , , ];
   const tmp25 = mapped1.length > 0;
-  children[0] = closure_14(role(20428), { role });
+  children[0] = closure_14(role(20423), { role });
   let obj6 = { children: tmp19(guild(7759).SearchBar, obj7) };
   obj7 = {
     size: "md",

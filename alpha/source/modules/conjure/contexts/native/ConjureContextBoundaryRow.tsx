@@ -1,10 +1,10 @@
-// Module ID: 13537
-// Function ID: 13538
+// Module ID: 13531
+// Function ID: 13532
 // Name: ConjureContextBoundaryRow
-// Dependencies: [19, 17, 21, 5243, 575, 13106, 12460, 5866, 6207, 6211, 1113, 4079, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 13100, 12454, 5866, 6207, 6211, 1113, 4079, 2]
 // Exports: default
 
-// Module 13537 (ConjureContextBoundaryRow)
+// Module 13531 (ConjureContextBoundaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -50,7 +50,7 @@ export default function ConjureContextBoundaryRow(arg0) {
   let action;
   ({ projectId, contextSwitch } = arg0);
   const tmp = closure_7();
-  let obj = action(13106);
+  let obj = action(13100);
   const conjureContextSwitchRow = obj.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;
@@ -62,7 +62,7 @@ export default function ConjureContextBoundaryRow(arg0) {
     items = [closure_4(View, obj4), , ];
     const obj5 = { style: tmp.contextLabel, accessible: true, accessibilityRole: "header", children: items1 };
     const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const ChatPlusIcon = tmp2(12460).ChatPlusIcon;
+    const ChatPlusIcon = tmp2(12454).ChatPlusIcon;
     items1 = [closure_4(ChatPlusIcon, obj6), ];
     const obj7 = { variant: "body-xs/semibold", color: "text-default", children: conjureContextSwitchRow.label };
     items1[1] = closure_4(action(5866).Text, obj7);

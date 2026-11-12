@@ -1,24 +1,24 @@
-// Module ID: 10982
-// Function ID: 10983
+// Module ID: 10976
+// Function ID: 10977
 // Name: ChannelRowPreview
-// Dependencies: [19, 17, 5185, 21, 8020, 10983, 10793, 10985, 5966, 10675, 9036, 9038, 5881, 10961, 10987, 5998, 10992, 11001, 5484, 5243, 575, 5839, 5068, 9093, 11002, 11006, 9097, 504, 2]
+// Dependencies: [19, 17, 5185, 21, 8020, 10977, 10787, 10979, 5966, 10668, 9035, 9037, 5881, 10955, 10981, 5998, 10986, 10995, 5484, 5243, 575, 5839, 5068, 9092, 10996, 11000, 9096, 504, 2]
 
-// Module 10982 (ChannelRowPreview)
+// Module 10976 (ChannelRowPreview)
 import react_native from "react-native" /* 17 */;
 import UserSettings from "UserSettings" /* 5068 */;
 import createStyles from "createStyles" /* 5243 */;
 import useToken from "useToken" /* 5839 */;
 import LinkIcon2 from "LinkIcon" /* 5966 */;
 import ImageIcon2 from "ImageIcon" /* 8020 */;
-import PhoneCallIcon2 from "PhoneCallIcon" /* 9036 */;
-import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9038 */;
-import RowGeneratorDefault from "RowGenerator" /* 9093 */;
-import StickerIcon2 from "StickerIcon" /* 10675 */;
-import MusicIcon2 from "MusicIcon" /* 10793 */;
-import VideoIcon2 from "VideoIcon" /* 10983 */;
-import AttachmentIcon2 from "AttachmentIcon" /* 10985 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 10992 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 11006 */;
+import PhoneCallIcon2 from "PhoneCallIcon" /* 9035 */;
+import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9037 */;
+import RowGeneratorDefault from "RowGenerator" /* 9092 */;
+import StickerIcon2 from "StickerIcon" /* 10668 */;
+import MusicIcon2 from "MusicIcon" /* 10787 */;
+import VideoIcon2 from "VideoIcon" /* 10977 */;
+import AttachmentIcon2 from "AttachmentIcon" /* 10979 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 10986 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 11000 */;
 import react_mod from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
 import Fragment from "Fragment" /* 21 */;
@@ -30,7 +30,7 @@ let _require, dependencyMap;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const react_native2 = tmp2(9097);
+const react_native2 = tmp2(9096);
 function PreviewIcon(icon) {
   icon = icon.icon;
   const merged = Object.assign(icon, Object.assign({ icon: 0 }));
@@ -245,7 +245,7 @@ class NativeChannelRowPreview {
       gradientStyles,
       gradientColors
     };
-    return setting2(gifAutoPlay(11002), obj4);
+    return setting2(gifAutoPlay(10996), obj4);
   }
 }
 let react = react_mod;

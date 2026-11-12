@@ -1,18 +1,18 @@
-// Module ID: 20612
-// Function ID: 20613
+// Module ID: 20607
+// Function ID: 20608
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 17709, 21, 5243, 17743, 7897, 5866, 17746, 17735, 5891, 1113, 2]
+// Dependencies: [19, 17, 17704, 21, 5243, 17738, 7897, 5866, 17741, 17730, 5891, 1113, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 20612 (GuildRoleSubscriptionBenefitPreview)
+// Module 20607 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7897 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17709 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17735 */;
-import EmojiIconDefault from "EmojiIcon" /* 17743 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17746 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17704 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17730 */;
+import EmojiIconDefault from "EmojiIcon" /* 17738 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17741 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

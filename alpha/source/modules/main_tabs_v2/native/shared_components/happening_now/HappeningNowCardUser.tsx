@@ -1,16 +1,16 @@
-// Module ID: 18687
-// Function ID: 18688
+// Module ID: 18682
+// Function ID: 18683
 // Name: HappeningNowCardUser
-// Dependencies: [19, 17, 6005, 1385, 17800, 1072, 21, 1187, 5243, 7852, 504, 1252, 8410, 2118, 5309, 8352, 17801, 8558, 2]
+// Dependencies: [19, 17, 6005, 1385, 17795, 1072, 21, 1187, 5243, 7852, 504, 1252, 8410, 2118, 5309, 8352, 17796, 8558, 2]
 
-// Module 18687 (HappeningNowCardUser)
+// Module 18682 (HappeningNowCardUser)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17800 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17795 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 6005 */;
 import UserStore from "UserStore" /* 1385 */;

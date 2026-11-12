@@ -1,14 +1,14 @@
-// Module ID: 12445
-// Function ID: 12446
+// Module ID: 12439
+// Function ID: 12440
 // Name: InvitableGameOrganizationStore
-// Dependencies: [1072, 12281, 12282, 504, 572, 2]
+// Dependencies: [1072, 12275, 12276, 504, 572, 2]
 
-// Module 12445 (InvitableGameOrganizationStore)
+// Module 12439 (InvitableGameOrganizationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import GameOrganizationModels from "GameOrganizationModels" /* 12281 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 12282 */;
+import GameOrganizationModels from "GameOrganizationModels" /* 12275 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 12276 */;
 import size from "module_2" /* 2 */;
 
 function fromServerInvitableGameOrganization(game_organization) {

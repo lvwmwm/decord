@@ -1,10 +1,10 @@
-// Module ID: 14001
-// Function ID: 14002
+// Module ID: 13997
+// Function ID: 13998
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 5470, 8776, 21, 9104, 8582, 12327, 12328, 5265, 14002, 14003, 14004, 8588, 14005, 8584, 5489, 5474, 5503, 7847, 14006, 12326, 2]
+// Dependencies: [19, 17, 502, 5470, 8775, 21, 9103, 8582, 12321, 12322, 5265, 13998, 13999, 14000, 8588, 14001, 8584, 5489, 5474, 5503, 7847, 14002, 12320, 2]
 // Exports: createExperimentEmbed, default
 
-// Module 14001 (ExperimentEmbed)
+// Module 13997 (ExperimentEmbed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import themes from "themes" /* 5265 */;
@@ -12,13 +12,13 @@ import ExperimentConstants from "ExperimentConstants" /* 5470 */;
 import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8582 */;
 import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8584 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
-import Constants from "Constants" /* 8776 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9104 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 12326 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 12327 */;
-import useApexExperiments from "useApexExperiments" /* 12328 */;
-import useExperimentAssignments from "useExperimentAssignments" /* 14004 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14005 */;
+import Constants from "Constants" /* 8775 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9103 */;
+import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 12320 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 12321 */;
+import useApexExperiments from "useApexExperiments" /* 12322 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 14000 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14001 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -239,9 +239,9 @@ export function createExperimentEmbed(url, arg1) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp4Result10 = themes;
   if (tmp4Result10.isThemeDark(arg1)) {
-    tmpResult = tmp(14002);
+    tmpResult = tmp(13998);
   } else {
-    tmpResult = tmp(14003);
+    tmpResult = tmp(13999);
   }
   return obj7;
 }

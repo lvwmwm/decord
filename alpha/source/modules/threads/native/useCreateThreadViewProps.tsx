@@ -1,11 +1,11 @@
-// Module ID: 11958
-// Function ID: 11959
+// Module ID: 11952
+// Function ID: 11953
 // Name: useCreateThreadViewProps
-// Dependencies: [5092, 11094, 563, 2]
+// Dependencies: [5092, 11088, 563, 2]
 // Exports: default
 
-// Module 11958 (useCreateThreadViewProps)
-import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 11094 */;
+// Module 11952 (useCreateThreadViewProps)
+import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 11088 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import size from "module_2" /* 2 */;
 

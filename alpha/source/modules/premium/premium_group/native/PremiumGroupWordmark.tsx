@@ -1,10 +1,10 @@
-// Module ID: 10899
-// Function ID: 10900
+// Module ID: 10893
+// Function ID: 10894
 // Name: PremiumGroupWordmark
 // Dependencies: [19, 21, 5839, 575, 8197, 2]
 // Exports: default
 
-// Module 10899 (PremiumGroupWordmark)
+// Module 10893 (PremiumGroupWordmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useToken2 from "useToken" /* 5839 */;

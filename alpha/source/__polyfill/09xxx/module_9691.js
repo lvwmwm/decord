@@ -1,19 +1,22 @@
 // Module ID: 9691
 // Function ID: 9692
-// Dependencies: [9681, 9692, 5294, 9678, 9676]
+// Dependencies: [9682, 9675, 5294]
 
 // Module 9691
-import normalizeColor from "normalizeColor" /* 9676 */;
-import _mod9678 from "module_9678" /* 9678 */;
-import _mod9692 from "module_9692" /* 9692 */;
-import DeprecatedStyleSheetPropType from "DeprecatedStyleSheetPropType" /* 9681 */;
+import normalizeColor from "normalizeColor" /* 9675 */;
+import _mod9682 from "module_9682" /* 9682 */;
 import "module_5294";
 import module_5294_mod from "module_5294" /* 5294 */;
 
+let arrayOf;
 let module_5294;
-let module_9692;
-const obj = { ellipsizeMode: module_5294.oneOf(["head", "middle", "tail", "clip"]), numberOfLines: module_5294.number, textBreakStrategy: module_5294.oneOf(["simple", "highQuality", "balanced"]), onLayout: module_5294.func, onPress: module_5294.func, onLongPress: module_5294.func, pressRetentionOffset: _mod9678, selectable: module_5294.bool, selectionColor: normalizeColor, suppressHighlighting: module_5294.bool, style: module_9692, testID: module_5294.string, nativeID: module_5294.string, allowFontScaling: module_5294.bool, maxFontSizeMultiplier: module_5294.number, accessible: module_5294.bool, adjustsFontSizeToFit: module_5294.bool, minimumFontScale: module_5294.number, disabled: module_5294.bool, dataDetectorType: module_5294.oneOf(["phoneNumber", "link", "email", "none", "all"]) };
-module_9692 = DeprecatedStyleSheetPropType(_mod9692);
+let size;
+const obj = { color: normalizeColor, fontFamily: module_5294.string, fontSize: module_5294.number, fontStyle: module_5294.oneOf(["normal", "italic"]), fontWeight: module_5294.oneOf(["normal", "bold", "100", "200", "300", "400", "500", "600", "700", "800", "900"]), fontVariant: arrayOf(module_5294.oneOf(["small-caps", "oldstyle-nums", "lining-nums", "tabular-nums", "proportional-nums"])), textShadowOffset: module_5294.shape(size), textShadowRadius: module_5294.number, textShadowColor: normalizeColor, letterSpacing: module_5294.number, lineHeight: module_5294.number, textAlign: module_5294.oneOf(["auto", "left", "right", "center", "justify"]), textAlignVertical: module_5294.oneOf(["auto", "top", "bottom", "center"]), includeFontPadding: module_5294.bool, textDecorationLine: module_5294.oneOf(["none", "underline", "line-through", "underline line-through"]), textDecorationStyle: module_5294.oneOf(["solid", "double", "dotted", "dashed"]), textDecorationColor: normalizeColor, textTransform: module_5294.oneOf(["none", "capitalize", "uppercase", "lowercase"]), writingDirection: module_5294.oneOf(["auto", "ltr", "rtl"]) };
+const module_9682 = Object.assign(_mod9682);
+module_5294 = module_5294_mod;
+arrayOf = module_5294.arrayOf;
+module_5294 = module_5294_mod;
+size = { width: module_5294.number, height: module_5294.number };
 module_5294 = module_5294_mod;
 
 export default obj;

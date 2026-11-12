@@ -1,17 +1,17 @@
-// Module ID: 10738
-// Function ID: 10739
+// Module ID: 10732
+// Function ID: 10733
 // Name: GuildTagCreateGuildListBottomSheet
-// Dependencies: [19, 5473, 21, 504, 7379, 1113, 7654, 5489, 10612, 5464, 7885, 7847, 7680, 2]
+// Dependencies: [19, 5473, 21, 504, 7379, 1113, 7654, 5489, 10610, 5464, 7885, 7847, 7680, 2]
 // Exports: default
 
-// Module 10738 (GuildTagCreateGuildListBottomSheet)
+// Module 10732 (GuildTagCreateGuildListBottomSheet)
 import intl3 from "intl" /* 1113 */;
 import Powerups from "Powerups" /* 5464 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import TableRowGroup2 from "TableRowGroup" /* 7680 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7847 */;
 import ActionSheet2 from "ActionSheet" /* 7885 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 10612 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 10610 */;
 import react from "react" /* 19 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5473 */;
 import Fragment from "Fragment" /* 21 */;

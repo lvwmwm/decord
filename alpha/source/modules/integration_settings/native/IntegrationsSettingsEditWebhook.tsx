@@ -1,10 +1,10 @@
-// Module ID: 19528
-// Function ID: 19529
+// Module ID: 19523
+// Function ID: 19524
 // Name: IntegrationsSettingsEditWebhook
-// Dependencies: [19, 5173, 5175, 5185, 1385, 1072, 21, 5243, 575, 5314, 1377, 8992, 7427, 8985, 1113, 19521, 11903, 1282, 7877, 6206, 6277, 5866, 8041, 6274, 19529, 1411, 7553, 7680, 7379, 5891, 1187, 7968, 1499, 5849, 2]
+// Dependencies: [19, 5173, 5175, 5185, 1385, 1072, 21, 5243, 575, 5314, 1377, 8991, 7427, 8984, 1113, 19516, 11897, 1282, 7877, 6206, 6277, 5866, 8041, 6274, 19524, 1411, 7553, 7680, 7379, 5891, 1187, 7968, 1499, 5849, 2]
 // Exports: default
 
-// Module 19528 (IntegrationsSettingsEditWebhook)
+// Module 19523 (IntegrationsSettingsEditWebhook)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -16,10 +16,10 @@ import NavScrim from "NavScrim" /* 5849 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
 import AlertDefault from "Alert" /* 6277 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import HeaderShared from "HeaderShared" /* 8985 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 8992 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11903 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 19521 */;
+import HeaderShared from "HeaderShared" /* 8984 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 8991 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11897 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 19516 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
@@ -41,7 +41,7 @@ let obj2;
 let obj3;
 let tmp8;
 let unpackModuleId;
-const IconLabelBlockDefault = tmp8(19529);
+const IconLabelBlockDefault = tmp8(19524);
 let closure_3 = GuildChannelStore.GUILD_SELECTABLE_CHANNELS_KEY;
 ({ Endpoints: metroImportDefault, NON_USER_BOT_DISCRIMINATOR: metroImportAll, Permissions: c9, WebhookTypes: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);

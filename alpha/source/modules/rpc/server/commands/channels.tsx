@@ -1,17 +1,17 @@
-// Module ID: 16817
-// Function ID: 16818
+// Module ID: 16812
+// Function ID: 16813
 // Name: channels
-// Dependencies: [32, 5, 5096, 5092, 5114, 5175, 6008, 5146, 6878, 5918, 6698, 1072, 16796, 5914, 7239, 13062, 16800, 12779, 16804, 7243, 7242, 12, 7233, 6959, 6872, 6293, 1099, 7594, 2]
+// Dependencies: [32, 5, 5096, 5092, 5114, 5175, 6008, 5146, 6878, 5918, 6698, 1072, 16791, 5914, 7239, 13056, 16795, 12773, 16799, 7243, 7242, 12, 7233, 6959, 6872, 6293, 1099, 7594, 2]
 
-// Module 16817 (channels)
+// Module 16812 (channels)
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6959 */;
 import isPostMessageSocketDefault from "isPostMessageSocket" /* 7233 */;
 import RPCErrorDefault from "RPCError" /* 7239 */;
 import botScopedAccess from "botScopedAccess" /* 7242 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7243 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7594 */;
-import RPCHelpers from "RPCHelpers" /* 12779 */;
-import guildVoice from "guildVoice" /* 16800 */;
+import RPCHelpers from "RPCHelpers" /* 12773 */;
+import guildVoice from "guildVoice" /* 16795 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 5096 */;
@@ -24,7 +24,7 @@ import SpeakingStore from "SpeakingStore" /* 6878 */;
 import VoiceStateStore from "VoiceStateStore" /* 5918 */;
 import Constants_mod from "Constants" /* 6698 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16804 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16799 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, speaking_available, state;
@@ -271,7 +271,7 @@ let obj4 = {
     const socket = args.socket;
     let guild;
     const botScopeOnly = args.botScopeOnly;
-    obj = socket(16800);
+    obj = socket(16795);
     if (obj.isGuildVoiceSocket(socket)) {
       const self3 = this;
       const self4 = this;
@@ -393,7 +393,7 @@ let obj8 = {
   handler(args) {
     let server;
     let socket;
-    const f112984 = function(type) {
+    const f112993 = function(type) {
       if (null == type) {
         const _HermesInternal = HermesInternal;
         const self5 = this;
@@ -611,8 +611,8 @@ let obj8 = {
           const tmp = new channel_id(flag2[14])(obj, "Request to select voice channel timed out.");
           throw tmp;
         });
-        const then = catchPromise.then(f112984).then;
-        catchPromise.then(f112984);
+        const then = catchPromise.then(f112993).then;
+        catchPromise.then(f112993);
         let closure_0 = obj9(function*(arg0, value) {
           function validateUserAllowsJoiningVoice() {
             return closure_1_18(...arguments);

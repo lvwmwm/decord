@@ -1,10 +1,10 @@
-// Module ID: 10212
-// Function ID: 10213
+// Module ID: 10210
+// Function ID: 10211
 // Name: ChannelTabsActionCreators
-// Dependencies: [5092, 5146, 10208, 1072, 5099, 6003, 1099, 6000, 5304, 5291, 5117, 6004, 572, 2]
+// Dependencies: [5092, 5146, 10206, 1072, 5099, 6003, 1099, 6000, 5304, 5291, 5117, 6004, 572, 2]
 // Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openChannelTabActive, openCopyOfActiveTab, setChannelTabPinned, setChannelTabsEnabled, showCallViewOnJoin, trackChannelTabPinToggled
 
-// Module 10212 (ChannelTabsActionCreators)
+// Module 10210 (ChannelTabsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
 import ChannelConstants from "ChannelConstants" /* 5099 */;
@@ -16,7 +16,7 @@ import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 *
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 10208 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 10206 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

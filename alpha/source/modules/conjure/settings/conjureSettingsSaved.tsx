@@ -1,14 +1,14 @@
-// Module ID: 13121
-// Function ID: 13122
+// Module ID: 13115
+// Function ID: 13116
 // Name: conjureSettingsSaved
-// Dependencies: [7257, 7301, 1113, 4079, 13118, 2]
+// Dependencies: [7257, 7301, 1113, 4079, 13112, 2]
 // Exports: settleProjectSettingsSave
 
-// Module 13121 (conjureSettingsSaved)
+// Module 13115 (conjureSettingsSaved)
 import intl2 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7301 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 13118 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 13112 */;
 import ConjureChatStore from "ConjureChatStore" /* 7257 */;
 import size from "module_2" /* 2 */;
 

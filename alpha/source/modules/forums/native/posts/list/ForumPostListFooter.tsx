@@ -1,17 +1,17 @@
-// Module ID: 14527
-// Function ID: 14528
+// Module ID: 14523
+// Function ID: 14524
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 14468, 14524, 14519, 14528, 14520, 12266, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 14464, 14520, 14515, 14524, 14516, 12260, 2]
 // Exports: default
 
-// Module 14527 (ForumPostListFooter)
+// Module 14523 (ForumPostListFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 14468 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 14519 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 14520 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 14524 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 14464 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 14515 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 14516 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 14520 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -22,7 +22,7 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp2;
-const ForumPostReactions = tmp2(12266);
+const ForumPostReactions = tmp2(12260);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -50,7 +50,7 @@ export default function ForumPostListFooter(parentChannel) {
   items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(14528), obj4);
+    isGameInvitesPost = tmp8(tmp9(14524), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {

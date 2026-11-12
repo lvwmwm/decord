@@ -1,10 +1,10 @@
-// Module ID: 10571
-// Function ID: 10572
+// Module ID: 10569
+// Function ID: 10570
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 6008, 6739, 504, 10560, 2]
+// Dependencies: [19, 6008, 6739, 504, 10558, 2]
 // Exports: useAlertIfSecureFramesKeyInconsistent, useIsSecureFramesKeyInconsistent
 
-// Module 10571 (useIsSecureFramesKeyInconsistent)
+// Module 10569 (useIsSecureFramesKeyInconsistent)
 import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6739 */;

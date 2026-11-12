@@ -1,11 +1,11 @@
-// Module ID: 13682
-// Function ID: 13683
+// Module ID: 13676
+// Function ID: 13677
 // Name: launchConjureSharedProject
-// Dependencies: [12667, 2]
+// Dependencies: [12661, 2]
 // Exports: default
 
-// Module 13682 (launchConjureSharedProject)
-import openFrameDefault from "openFrame" /* 12667 */;
+// Module 13676 (launchConjureSharedProject)
+import openFrameDefault from "openFrame" /* 12661 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/launchConjureSharedProject.tsx");

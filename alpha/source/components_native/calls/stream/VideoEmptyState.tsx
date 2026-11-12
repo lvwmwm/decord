@@ -1,10 +1,10 @@
-// Module ID: 12700
-// Function ID: 12701
+// Module ID: 12694
+// Function ID: 12695
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 5092, 1072, 21, 5243, 575, 12701, 1187, 1113, 6194, 504, 5836, 6799, 6745, 5866, 5873, 2]
+// Dependencies: [19, 17, 5092, 1072, 21, 5243, 575, 12695, 1187, 1113, 6194, 504, 5836, 6799, 6745, 5866, 5873, 2]
 // Exports: default
 
-// Module 12700 (VideoEmptyState)
+// Module 12694 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -68,7 +68,7 @@ export default function VideoEmptyState(style) {
     const tmp8 = closure_7;
     const tmp9 = closure_6;
     if (!removeSplashImage) {
-      let obj2 = { style: tmp2.placeholderImage, children: closure_5(stream(12701).CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
+      let obj2 = { style: tmp2.placeholderImage, children: closure_5(stream(12695).CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
       tmp10 = closure_5(View, obj2);
     }
     const obj3 = { children: items };

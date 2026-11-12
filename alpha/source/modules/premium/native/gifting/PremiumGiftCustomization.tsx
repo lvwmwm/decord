@@ -1,10 +1,10 @@
-// Module ID: 11773
-// Function ID: 11774
+// Module ID: 11767
+// Function ID: 11768
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1387, 21, 5243, 575, 1499, 11603, 11774, 1113, 11690, 11775, 5866, 11717, 11719, 11776, 2]
+// Dependencies: [32, 19, 17, 1387, 21, 5243, 575, 1499, 11597, 11768, 1113, 11684, 11769, 5866, 11711, 11713, 11770, 2]
 // Exports: default
 
-// Module 11773 (PremiumGiftCustomization)
+// Module 11767 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;

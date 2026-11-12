@@ -1,10 +1,10 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15187
+// Function ID: 15188
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1072, 21, 5243, 575, 5309, 9228, 1187, 5866, 1113, 5873, 8004, 5489, 8069, 2185, 5503, 7847, 6274, 15191, 2]
+// Dependencies: [17, 1072, 21, 5243, 575, 5309, 9227, 1187, 5866, 1113, 5873, 8004, 5489, 8069, 2185, 5503, 7847, 6274, 15188, 2]
 // Exports: default
 
-// Module 15190 (ReferralProgramShareConfirmationActionSheet)
+// Module 15187 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,7 +13,7 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import UserUtilsDefault from "UserUtils" /* 5309 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 9228 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 9227 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ function SharedUser(user) {
   const tmp = closure_8();
   let obj = UserUtilsDefault;
   const name = obj.getName(user);
-  const tmp6 = trialCreationResult === user(9228).CreateReferralStatus.FAIL;
+  const tmp6 = trialCreationResult === user(9227).CreateReferralStatus.FAIL;
   let obj2 = { style: tmp.recipientRow, children: items1 };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
@@ -49,7 +49,7 @@ function SharedUser(user) {
   if (tmp6) {
     erroredAvatar = tmp.erroredAvatar;
   }
-  let obj3 = { style: items, size: tmp5(1187).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
+  let obj3 = { style: items, size: tmp5(1187).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
   items[1] = erroredAvatar;
   items1 = [closure_5(Avatar, obj3), , ];
   if (tmp6) {
@@ -131,7 +131,7 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   const formatResult = format(AwGSWl, obj);
   const BottomSheet = tmp5(5503).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(15191).FistBumpSpotIllustration, {}) };
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(15188).FistBumpSpotIllustration, {}) };
   Stack = tmp5(6274).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };

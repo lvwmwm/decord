@@ -1,10 +1,10 @@
-// Module ID: 19102
-// Function ID: 19103
+// Module ID: 19097
+// Function ID: 19098
 // Name: ICYMICustomScoresGuildScreen
-// Dependencies: [32, 19, 17, 8662, 5092, 5114, 6895, 10137, 21, 5243, 575, 504, 5891, 10149, 1113, 5489, 19103, 2118, 7968, 7379, 1187, 11021, 5866, 8664, 1627, 19104, 10493, 7822, 2]
+// Dependencies: [32, 19, 17, 8662, 5092, 5114, 6895, 10136, 21, 5243, 575, 504, 5891, 10147, 1113, 5489, 19098, 2118, 7968, 7379, 1187, 11015, 5866, 8664, 1627, 19099, 10491, 7822, 2]
 // Exports: default
 
-// Module 19102 (ICYMICustomScoresGuildScreen)
+// Module 19097 (ICYMICustomScoresGuildScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -12,16 +12,16 @@ import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import ChannelListState from "ChannelListState" /* 8664 */;
-import ICYMIUtils from "ICYMIUtils" /* 10149 */;
-import ChevronSmallDownIcon2 from "ChevronSmallDownIcon" /* 10493 */;
-import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 19104 */;
+import ICYMIUtils from "ICYMIUtils" /* 10147 */;
+import ChevronSmallDownIcon2 from "ChevronSmallDownIcon" /* 10491 */;
+import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 19099 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelListStore from "ChannelListStore" /* 8662 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
-import ICYMIStore from "ICYMIStore" /* 10137 */;
+import ICYMIStore from "ICYMIStore" /* 10136 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -185,7 +185,7 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   const items2 = [ICYMIStore];
   const tmp2Result = navigation(504);
   const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => ICYMIStore.getCustomGuildScore(guildId));
-  const tmp2Result3 = navigation(10149);
+  const tmp2Result3 = navigation(10147);
   const numberToCustomScoreResult = tmp2Result3.numberToCustomScore(stateFromStores1);
   react = numberToCustomScoreResult;
   const items3 = [ChannelListStore];

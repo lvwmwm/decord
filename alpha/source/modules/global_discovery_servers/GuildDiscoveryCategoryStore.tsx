@@ -1,10 +1,10 @@
-// Module ID: 19115
-// Function ID: 19116
+// Module ID: 19110
+// Function ID: 19111
 // Name: GuildDiscoveryCategoryStore
 // Dependencies: [8340, 12, 504, 1380, 1113, 572, 2]
 // Exports: areDiscoveryCategoriesEqual
 
-// Module 19115 (GuildDiscoveryCategoryStore)
+// Module 19110 (GuildDiscoveryCategoryStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

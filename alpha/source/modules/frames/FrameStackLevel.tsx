@@ -1,9 +1,9 @@
-// Module ID: 13260
-// Function ID: 13261
+// Module ID: 13254
+// Function ID: 13255
 // Name: FrameStackLevel
 // Dependencies: [2]
 
-// Module 13260 (FrameStackLevel)
+// Module 13254 (FrameStackLevel)
 import size from "module_2" /* 2 */;
 
 const obj = { Backstage: "backstage", WithinAppContent: "within-app-content", WithinCallContent: "within-call-content", AboveAppContent: "above-app-content" };

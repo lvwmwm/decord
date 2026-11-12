@@ -1,10 +1,10 @@
-// Module ID: 13150
-// Function ID: 13151
+// Module ID: 13144
+// Function ID: 13145
 // Name: conjurePublishSchedule
 // Dependencies: [1113, 4079, 2]
 // Exports: formatPublishScheduleTime, publishScheduleDetails
 
-// Module 13150 (conjurePublishSchedule)
+// Module 13144 (conjurePublishSchedule)
 import intl7 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import size from "module_2" /* 2 */;

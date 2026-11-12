@@ -1,10 +1,10 @@
-// Module ID: 12645
-// Function ID: 12646
+// Module ID: 12639
+// Function ID: 12640
 // Name: useIsPrivateChannelWithEnabledActivities
 // Dependencies: [5092, 563, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 12645 (useIsPrivateChannelWithEnabledActivities)
+// Module 12639 (useIsPrivateChannelWithEnabledActivities)
 import ChannelStore from "ChannelStore" /* 5092 */;
 import size from "module_2" /* 2 */;
 

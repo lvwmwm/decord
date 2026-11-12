@@ -1,17 +1,17 @@
-// Module ID: 19209
-// Function ID: 19210
+// Module ID: 19204
+// Function ID: 19205
 // Name: ResourcesRow
-// Dependencies: [19, 17, 19210, 21, 5243, 575, 19211, 14573, 5489, 19212, 2118, 7364, 5866, 1113, 2]
+// Dependencies: [19, 17, 19205, 21, 5243, 575, 19206, 14569, 5489, 19207, 2118, 7364, 5866, 1113, 2]
 // Exports: default
 
-// Module 19209 (ResourcesRow)
+// Module 19204 (ResourcesRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14573 */;
-import OnboardingHomeConstants from "OnboardingHomeConstants" /* 19210 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 19211 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14569 */;
+import OnboardingHomeConstants from "OnboardingHomeConstants" /* 19205 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 19206 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -71,7 +71,7 @@ export default function ResourcesRow(guildId) {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guildId };
-          obj.openLazy(asyncRequire(19212, dependencyMap.paths), closure_4, obj2);
+          obj.openLazy(asyncRequire(19207, dependencyMap.paths), closure_4, obj2);
         },
       children: closure_5(Text, obj3)
     };

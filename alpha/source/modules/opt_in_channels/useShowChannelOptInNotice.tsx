@@ -1,10 +1,10 @@
-// Module ID: 12274
-// Function ID: 12275
+// Module ID: 12268
+// Function ID: 12269
 // Name: useShowChannelOptInNotice
 // Dependencies: [6895, 1072, 5099, 6996, 504, 7016, 2]
 // Exports: default
 
-// Module 12274 (useShowChannelOptInNotice)
+// Module 12268 (useShowChannelOptInNotice)
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 5099 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;

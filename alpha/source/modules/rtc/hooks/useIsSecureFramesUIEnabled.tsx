@@ -1,11 +1,11 @@
-// Module ID: 10579
-// Function ID: 10580
+// Module ID: 10577
+// Function ID: 10578
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [5092, 6008, 10561, 504, 2]
+// Dependencies: [5092, 6008, 10559, 504, 2]
 // Exports: useIsSecureFramesUIEnabled
 
-// Module 10579 (useIsSecureFramesUIEnabled)
-import SecureFramesConstants from "SecureFramesConstants" /* 10561 */;
+// Module 10577 (useIsSecureFramesUIEnabled)
+import SecureFramesConstants from "SecureFramesConstants" /* 10559 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
 import size from "module_2" /* 2 */;

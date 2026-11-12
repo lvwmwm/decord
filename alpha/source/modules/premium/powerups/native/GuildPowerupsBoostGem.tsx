@@ -1,10 +1,10 @@
-// Module ID: 10657
-// Function ID: 10658
+// Module ID: 10650
+// Function ID: 10651
 // Name: GuildPowerupsBoostGem
-// Dependencies: [17, 21, 5243, 575, 10658, 2]
+// Dependencies: [17, 21, 5243, 575, 10651, 2]
 // Exports: default
 
-// Module 10657 (GuildPowerupsBoostGem)
+// Module 10650 (GuildPowerupsBoostGem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

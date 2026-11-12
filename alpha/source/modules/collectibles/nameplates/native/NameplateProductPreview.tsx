@@ -1,10 +1,10 @@
-// Module ID: 15373
-// Function ID: 15374
+// Module ID: 15370
+// Function ID: 15371
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 5244, 21, 5243, 575, 9336, 2108, 1113, 5866, 5830, 9343, 8557, 8475, 504, 5309, 6687, 9998, 9999, 1187, 10826, 7379, 2]
+// Dependencies: [19, 17, 5244, 21, 5243, 575, 9335, 2108, 1113, 5866, 5830, 9342, 8557, 8475, 504, 5309, 6687, 9997, 9998, 1187, 10820, 7379, 2]
 // Exports: default
 
-// Module 15373 (NameplateProductPreview)
+// Module 15370 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1187 */;
 import utils from "utils" /* 2108 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import TableRow2 from "TableRow" /* 7379 */;
-import useShopProductItems from "useShopProductItems" /* 9336 */;
+import useShopProductItems from "useShopProductItems" /* 9335 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;
@@ -62,7 +62,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: "<string:833110952>", "aria-hidden": "<string:2914779138>" };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": 994646658086916000000000000000000000000000000000000000000000000000000000000000000000000 };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);

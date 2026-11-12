@@ -1,9 +1,9 @@
-// Module ID: 9285
-// Function ID: 9286
+// Module ID: 9284
+// Function ID: 9285
 // Name: ChangeLogActionCreators
 // Dependencies: [5, 8070, 5145, 572, 5068, 1282, 2]
 
-// Module 9285 (ChangeLogActionCreators)
+// Module 9284 (ChangeLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import UserSettings from "UserSettings" /* 5068 */;

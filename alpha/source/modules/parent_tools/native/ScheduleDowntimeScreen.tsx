@@ -1,10 +1,10 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17345
+// Function ID: 17346
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5489, 7954, 2118, 5243, 575, 8094, 1113, 2685, 1499, 7746, 10953, 563, 17351, 17352, 5951, 5977, 5866, 7680, 7888, 7379, 7351, 5873, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5489, 7954, 2118, 5243, 575, 8094, 1113, 2685, 1499, 7746, 10947, 563, 17346, 17347, 5951, 5977, 5866, 7680, 7888, 7379, 7351, 5873, 2]
 // Exports: default
 
-// Module 17350 (ScheduleDowntimeScreen)
+// Module 17345 (ScheduleDowntimeScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2118 */;
 import _modDef2685 from "module_2685" /* 2685 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import InlineNotice2 from "InlineNotice" /* 8094 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10953 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10947 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -546,7 +546,7 @@ export default function ScheduleDowntimeScreen() {
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f134460 = (first1) => {
+          const f134471 = (first1) => {
             closure_1_12(first1);
             obj = closure_2_0(rule[17]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;

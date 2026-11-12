@@ -1,14 +1,14 @@
-// Module ID: 10878
-// Function ID: 10879
+// Module ID: 10872
+// Function ID: 10873
 // Name: PlusLargeIcon
-// Dependencies: [19, 21, 575, 5956, 10879, 2]
+// Dependencies: [19, 21, 575, 5956, 10873, 2]
 // Exports: PlusLargeIcon
 
-// Module 10878 (PlusLargeIcon)
+// Module 10872 (PlusLargeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10879 */;
+import AssetRegistry from "AssetRegistry" /* 10873 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

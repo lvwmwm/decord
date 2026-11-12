@@ -1,9 +1,9 @@
-// Module ID: 17092
-// Function ID: 17093
+// Module ID: 17087
+// Function ID: 17088
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 5185, 1385, 1072, 6847, 21, 5243, 575, 17093, 1113, 8537, 504, 7749, 7674, 7379, 5873, 2]
+// Dependencies: [19, 17, 5185, 1385, 1072, 6847, 21, 5243, 575, 17088, 1113, 8537, 504, 7749, 7674, 7379, 5873, 2]
 
-// Module 17092 (SettingsAccountHeader)
+// Module 17087 (SettingsAccountHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import Constants2 from "Constants" /* 6847 */;
 import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7674 */;
 import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7749 */;
 import openUserSettings from "openUserSettings" /* 8537 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 17093 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 17088 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;

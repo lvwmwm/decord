@@ -472,7 +472,7 @@ const mostRecentSelectedTextChannelIds = FunctionUtils.cachedFunction((getRoots)
   return roots.map(convertNodeToGuildFolder);
 });
 FunctionUtils = FunctionUtils_mod;
-const maxQueryLength = FunctionUtils.cachedFunction((root) => {
+let closure_30 = FunctionUtils.cachedFunction((root) => {
   const items = [];
   function flattenNodes(root) {
     const type = root.type;
@@ -489,7 +489,7 @@ const maxQueryLength = FunctionUtils.cachedFunction((root) => {
   return items;
 });
 FunctionUtils = FunctionUtils_mod;
-const dehydratedItems = FunctionUtils.cachedFunction((root) => {
+FunctionUtils.cachedFunction((root) => {
   const children = root.root.children;
   return children.map(convertNodeToGuildFolder);
 });

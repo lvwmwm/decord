@@ -1,9 +1,9 @@
-// Module ID: 18212
-// Function ID: 18213
+// Module ID: 18207
+// Function ID: 18208
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1387, 21, 5243, 10486, 1113, 15844, 8007, 8781, 2171, 18213, 5866, 18217, 5873, 9369, 575, 2]
+// Dependencies: [19, 17, 1387, 21, 5243, 10484, 1113, 15839, 8007, 8780, 2171, 18208, 5866, 18212, 5873, 9368, 575, 2]
 
-// Module 18212 (PremiumTrialOfferActionSheetContent)
+// Module 18207 (PremiumTrialOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -11,11 +11,11 @@ import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import FolderIcon from "FolderIcon" /* 8007 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8781 */;
-import UserIcon from "UserIcon" /* 10486 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 15844 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 18213 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 18217 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8780 */;
+import UserIcon from "UserIcon" /* 10484 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 15839 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 18208 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 18212 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -109,7 +109,7 @@ const memoResult = react.memo(function PremiumTrialOfferActionSheetContent(onCon
   Button = tmp3(5873).Button;
   intl9 = tmp3(1113).intl;
   obj12 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-  NitroWheelIcon = tmp3(9369).NitroWheelIcon;
+  NitroWheelIcon = tmp3(9368).NitroWheelIcon;
   items1[3] = hasOwnProperty(View, obj10);
   return tmp6(View, obj7);
 });

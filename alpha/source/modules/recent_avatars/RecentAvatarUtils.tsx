@@ -1,10 +1,10 @@
-// Module ID: 9335
-// Function ID: 9336
+// Module ID: 9334
+// Function ID: 9335
 // Name: RecentAvatarUtils
 // Dependencies: [1072, 1411, 1446, 1487, 1113, 7742, 1380, 2]
 // Exports: generateAvatarDescription, generateRecentAvatarFileDetails, getImageFormat, getPendingAvatarSrc
 
-// Module 9335 (RecentAvatarUtils)
+// Module 9334 (RecentAvatarUtils)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;

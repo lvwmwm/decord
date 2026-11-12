@@ -1,14 +1,14 @@
-// Module ID: 15963
-// Function ID: 15964
+// Module ID: 15958
+// Function ID: 15959
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 5089, 21, 5489, 5503, 15964, 15965, 1113, 2]
+// Dependencies: [19, 5089, 21, 5489, 5503, 15959, 15960, 1113, 2]
 // Exports: default
 
-// Module 15963 (NUFChannelsActionSheet)
+// Module 15958 (NUFChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 15964 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 15959 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

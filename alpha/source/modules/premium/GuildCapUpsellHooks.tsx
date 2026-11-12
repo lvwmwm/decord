@@ -1,10 +1,10 @@
-// Module ID: 14009
-// Function ID: 14010
+// Module ID: 14005
+// Function ID: 14006
 // Name: GuildCapUpsellHooks
 // Dependencies: [5114, 1385, 1072, 504, 8381, 2171, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 14009 (GuildCapUpsellHooks)
+// Module 14005 (GuildCapUpsellHooks)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;

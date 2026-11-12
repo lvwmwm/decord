@@ -1,9 +1,9 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14684
+// Function ID: 14685
 // Name: Autocomplete
-// Dependencies: [19, 17, 5114, 5185, 1385, 1072, 11173, 21, 5243, 575, 8041, 504, 5309, 1187, 10867, 7379, 7390, 1113, 11564, 7968, 5891, 5866, 5957, 14689, 11296, 7364, 11030, 12, 9308, 14690, 2149, 2150, 8309, 14691, 2]
+// Dependencies: [19, 17, 5114, 5185, 1385, 1072, 11167, 21, 5243, 575, 8041, 504, 5309, 1187, 10861, 7379, 7390, 1113, 11558, 7968, 5891, 5866, 5957, 14685, 11290, 7364, 11024, 12, 9307, 14686, 2149, 2150, 8309, 14687, 2]
 
-// Module 14688 (Autocomplete)
+// Module 14684 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,13 +17,13 @@ import Pressables from "Pressables" /* 7364 */;
 import TableRow2 from "TableRow" /* 7379 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
 import _mod8041 from "module_8041" /* 8041 */;
-import TimestampUtils from "TimestampUtils" /* 9308 */;
-import StickerDefault from "Sticker" /* 11030 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11173 */;
-import StickersHooks from "StickersHooks" /* 11296 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11564 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 14689 */;
-import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 14690 */;
+import TimestampUtils from "TimestampUtils" /* 9307 */;
+import StickerDefault from "Sticker" /* 11024 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11167 */;
+import StickersHooks from "StickersHooks" /* 11290 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11558 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 14685 */;
+import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 14686 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
@@ -94,7 +94,7 @@ const obj10 = {
       }
       return nickname;
     });
-    const obj2 = { DEPRECATED_style: tmp.row, onPress, accessibilityRole: "menuitem", label: closure_9(tmp6, { text: nick }), leading: closure_9(Avatar, obj4), trailing: closure_9(guildId(10867), obj5) };
+    const obj2 = { DEPRECATED_style: tmp.row, onPress, accessibilityRole: "menuitem", label: closure_9(tmp6, { text: nick }), leading: closure_9(Avatar, obj4), trailing: closure_9(guildId(10861), obj5) };
     const FormRow = user(8041).FormRow;
     tmp6 = AutocompleteLabel;
     if (nick == null) {
@@ -314,7 +314,7 @@ const obj10 = {
     tmp9Result = undefined;
     if (extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };
-      tmp9Result = tmp9(tmp2(14691), obj8);
+      tmp9Result = tmp9(tmp2(14687), obj8);
     }
     return tmp9(FormRow, obj6);
   },

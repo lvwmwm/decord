@@ -1,10 +1,10 @@
-// Module ID: 18913
-// Function ID: 18914
+// Module ID: 18908
+// Function ID: 18909
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 5114, 6893, 18914, 18911, 1652, 551, 5491, 5250, 12, 1242, 1113, 7781, 18618, 5839, 575, 5158, 10509, 1259, 6854, 6179, 9083, 1377, 1627, 5505, 18915, 18916, 9083, 17589, 5535, 1705, 2]
+// Dependencies: [5, 19, 17, 5114, 6893, 18909, 18906, 1652, 551, 5491, 5250, 12, 1242, 1113, 7781, 18613, 5839, 575, 5158, 10507, 1259, 6854, 6179, 9082, 1377, 1627, 5505, 18910, 18911, 9082, 17584, 5535, 1705, 2]
 // Exports: default
 
-// Module 18913 (useGuildsBarGesture)
+// Module 18908 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -16,12 +16,12 @@ import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5505 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
 import SortedGuildStore2 from "SortedGuildStore" /* 6893 */;
 import FastList from "FastList" /* 7781 */;
-import ContextMenuState from "ContextMenuState" /* 9083 */;
+import ContextMenuState from "ContextMenuState" /* 9082 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18914 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18911 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18909 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18906 */;
 import "module_1652";
 import module_1652_mod from "module_1652" /* 1652 */;
 import debounce from "debounce" /* 551 */;
@@ -904,7 +904,7 @@ export default function useGuildsBarGesture() {
         id1 = node.id;
       }
       if (id !== id1) {
-        const ContextMenuStore = tmp66(9083).ContextMenuStore;
+        const ContextMenuStore = tmp66(9082).ContextMenuStore;
         if (null != ContextMenuStore.getState().menu) {
           const tmp66Result = ContextMenuState;
           tmp66Result.hideContextMenu();

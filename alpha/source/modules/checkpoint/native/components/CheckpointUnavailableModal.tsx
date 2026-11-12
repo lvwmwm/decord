@@ -1,10 +1,10 @@
-// Module ID: 14156
-// Function ID: 14157
+// Module ID: 14152
+// Function ID: 14153
 // Name: CheckpointUnavailableModal
-// Dependencies: [17, 6314, 1083, 21, 5243, 575, 5491, 6785, 1627, 1113, 14157, 14159, 5314, 14160, 14162, 3269, 14165, 14164, 2]
+// Dependencies: [17, 6314, 1083, 21, 5243, 575, 5491, 6785, 1627, 1113, 14153, 14155, 14156, 5314, 14157, 14159, 3269, 14162, 14161, 2]
 // Exports: default
 
-// Module 14156 (CheckpointUnavailableModal)
+// Module 14152 (CheckpointUnavailableModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl3 from "intl" /* 1113 */;
@@ -13,12 +13,13 @@ import _modDef3269 from "module_3269" /* 3269 */;
 import native from "native" /* 5314 */;
 import HapticUtils from "HapticUtils" /* 5491 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import useCheckpointMusicDefault from "useCheckpointMusic" /* 14157 */;
-import CheckpointStepHeaderRefContext from "CheckpointStepHeaderRefContext" /* 14159 */;
-import CheckpointBackgroundDefault from "CheckpointBackground" /* 14160 */;
-import CheckpointUnavailableScreenDefault from "CheckpointUnavailableScreen" /* 14162 */;
-import CheckpointTextDefault from "CheckpointText" /* 14164 */;
-import CheckpointHeaderDefault from "CheckpointHeader" /* 14165 */;
+import useCheckpointMusicDefault from "useCheckpointMusic" /* 14153 */;
+import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 14155 */;
+import CheckpointStepHeaderRefContext from "CheckpointStepHeaderRefContext" /* 14156 */;
+import CheckpointBackgroundDefault from "CheckpointBackground" /* 14157 */;
+import CheckpointUnavailableScreenDefault from "CheckpointUnavailableScreen" /* 14159 */;
+import CheckpointTextDefault from "CheckpointText" /* 14161 */;
+import CheckpointHeaderDefault from "CheckpointHeader" /* 14162 */;
 import react_native from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import Fragment from "Fragment" /* 21 */;
@@ -52,30 +53,32 @@ export default function CheckpointUnavailableModal() {
   let intl2;
   let items;
   let items1;
-  let obj2;
   let obj3;
-  let obj6;
+  let obj4;
   let obj7;
+  let obj8;
   const tmp = closure_8();
   const rect = useSafeAreaInsetsDefault();
   const intl = intl3.intl;
   const stringResult = intl.string(intl3.t.cpT0Cq);
   useCheckpointMusicDefault();
-  const obj = { children: metroRequire(ThemeContextProvider, obj2) };
+  const obj = useCheckpointStepAnalytics;
+  const checkpointCloseAnalytics = obj.useCheckpointCloseAnalytics();
+  const obj2 = { children: metroRequire(ThemeContextProvider, obj3) };
   const CheckpointStepFocusProvider = CheckpointStepHeaderRefContext.CheckpointStepFocusProvider;
-  obj2 = { theme: ThemeTypes.DARK, children: metroImportDefault(React3, obj3) };
-  obj3 = { style: tmp.container, children: items };
+  obj3 = { theme: ThemeTypes.DARK, children: metroImportDefault(React3, obj4) };
+  obj4 = { style: tmp.container, children: items };
   ThemeContextProvider = native.ThemeContextProvider;
   items = [metroRequire(CheckpointBackgroundDefault, {}), , , ];
-  const obj4 = { message: intl2.string(_modDef3269.IaTl5H) };
-  const tmp4 = CheckpointUnavailableScreenDefault;
+  const obj5 = { message: intl2.string(_modDef3269.IaTl5H) };
+  const tmp5 = CheckpointUnavailableScreenDefault;
   intl2 = intl3.intl;
-  items[1] = metroRequire(tmp4, obj4);
+  items[1] = metroRequire(tmp5, obj5);
   items[2] = metroRequire(CheckpointHeaderDefault, {});
-  const obj5 = { style: items1, children: metroRequire(_false, obj6) };
+  const obj6 = { style: items1, children: metroRequire(_false, obj7) };
   items1 = [tmp.footer, { marginLeft: rect.left, marginRight: rect.right, marginBottom: rect.bottom }];
-  obj6 = { style: tmp.closeButton, onPress: handleClose, accessibilityRole: "button", children: metroRequire(CheckpointTextDefault, obj7) };
-  obj7 = { variant: "mono-md/normal", style: tmp.closeButtonLabel, children: stringResult };
-  items[3] = metroRequire(React3, obj5);
-  return metroRequire(CheckpointStepFocusProvider, obj);
+  obj7 = { style: tmp.closeButton, onPress: handleClose, accessibilityRole: "button", children: metroRequire(CheckpointTextDefault, obj8) };
+  obj8 = { variant: "mono-md/normal", style: tmp.closeButtonLabel, children: stringResult };
+  items[3] = metroRequire(React3, obj6);
+  return metroRequire(CheckpointStepFocusProvider, obj2);
 };

@@ -1,18 +1,18 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 9212
+// Function ID: 9213
 // Name: GuildReportRaidSystemMessage
-// Dependencies: [5092, 5114, 9115, 9122, 9207, 9124, 9208, 9126, 1113, 1414, 1411, 2]
+// Dependencies: [5092, 5114, 9114, 9121, 9206, 9123, 9207, 9125, 1113, 1414, 1411, 2]
 // Exports: createGuildReportRaidSystemMessage
 
-// Module 9213 (GuildReportRaidSystemMessage)
+// Module 9212 (GuildReportRaidSystemMessage)
 import intl3 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 9115 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9122 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9124 */;
-import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 9207 */;
-import getTagPropertiesDefault from "getTagProperties" /* 9208 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 9114 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9121 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9123 */;
+import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 9206 */;
+import getTagPropertiesDefault from "getTagProperties" /* 9207 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
@@ -52,7 +52,7 @@ export function createGuildReportRaidSystemMessage(roleStyle) {
   }
   const obj4 = { content: intl.formatToParts(intl3.t["MTmH+u"], obj3), username: intl2.string(intl3.t.hG1StD), usernameColor: automodUsernameColor, avatarURL: ensureAvatarSource(makeSource(tmp8Result4.getAutomodAvatarURL())).uri };
   const tmp11 = getTagPropertiesDefault({ message, channel, isSystemDM: true, colors: tmp3 });
-  const merged = Object.assign(tmp(9126)(roleStyle));
+  const merged = Object.assign(tmp(9125)(roleStyle));
   intl = tmp8(1113).intl;
   intl2 = tmp8(1113).intl;
   if (automodUsernameColor == null) {

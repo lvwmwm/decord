@@ -1,10 +1,10 @@
-// Module ID: 10892
-// Function ID: 10893
+// Module ID: 10886
+// Function ID: 10887
 // Name: PremiumFeaturesCard
-// Dependencies: [32, 19, 17, 5244, 2175, 2176, 1072, 1387, 1083, 21, 5243, 575, 6763, 10893, 2171, 7190, 5866, 1113, 9223, 3465, 1398, 38, 9244, 9247, 9243, 8463, 9540, 10895, 7852, 504, 10896, 1624, 9545, 9645, 9539, 9367, 10899, 10900, 10902, 10907, 5873, 9369, 9524, 2]
+// Dependencies: [32, 19, 17, 5244, 2175, 2176, 1072, 1387, 1083, 21, 5243, 575, 6763, 10887, 2171, 7190, 5866, 1113, 9222, 3465, 1398, 38, 9243, 9246, 9242, 8463, 9539, 10889, 7852, 504, 10890, 1624, 9544, 9644, 9538, 9366, 10893, 10894, 10896, 10901, 5873, 9368, 9523, 2]
 // Exports: default
 
-// Module 10892 (PremiumFeaturesCard)
+// Module 10886 (PremiumFeaturesCard)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,13 +14,13 @@ import PremiumUtils from "PremiumUtils" /* 2171 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import PriceUtils from "PriceUtils" /* 7190 */;
 import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 8463 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 9223 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9367 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9524 */;
-import usePremiumPlanPrice from "usePremiumPlanPrice" /* 10893 */;
-import usePremiumFeaturesDefault from "usePremiumFeatures" /* 10896 */;
-import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 10902 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 10907 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 9222 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9366 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9523 */;
+import usePremiumPlanPrice from "usePremiumPlanPrice" /* 10887 */;
+import usePremiumFeaturesDefault from "usePremiumFeatures" /* 10890 */;
+import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 10896 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 10901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
@@ -350,15 +350,15 @@ export default function PremiumFeaturesCard(premiumType) {
   const tmp3 = closure_23();
   const tmp6 = _modDef38;
   tmp6(set.has(premiumType), "only Tier 0 and Tier 2 are supported");
-  let obj = premiumType(9244);
+  let obj = premiumType(9243);
   const premiumTrialOffer = obj.usePremiumTrialOffer();
-  const obj2 = premiumType(9247);
+  const obj2 = premiumType(9246);
   const premiumDiscountOffer = obj2.usePremiumDiscountOffer();
-  const obj3 = premiumType(9243);
+  const obj3 = premiumType(9242);
   const activeDiscountInfo = obj3.useActiveDiscountInfo();
   let subscriptionTrial;
   const tmp12 = useFractionalPremiumInfoDefault();
-  const obj4 = premiumType(9540);
+  const obj4 = premiumType(9539);
   const premiumTrialOfferPremiumType = obj4.usePremiumTrialOfferPremiumType();
   if (premiumTrialOffer != null) {
     subscriptionTrial = premiumTrialOffer.subscriptionTrial;
@@ -379,8 +379,8 @@ export default function PremiumFeaturesCard(premiumType) {
   const result = formatIntervalDuration(obj5);
   if (tmp44Result8) {
     let TIER_2;
-    const getTrialCtaOverride = premiumType(10895).getTrialCtaOverride;
-    premiumType(10895);
+    const getTrialCtaOverride = premiumType(10889).getTrialCtaOverride;
+    premiumType(10889);
     if (premiumType === PremiumTypes.TIER_0) {
       TIER_2 = closure_13.TIER_0;
     } else {
@@ -432,7 +432,7 @@ export default function PremiumFeaturesCard(premiumType) {
   if (interval1 == null) {
     interval1 = constants.MONTH;
   }
-  const tmp8Result14 = premiumType(9545);
+  const tmp8Result14 = premiumType(9544);
   premiumBundleWithPredicate = tmp8Result14.getPremiumBundleWithPredicate((additionalPlans) => {
     let interval;
     let numPremiumGuild;
@@ -455,7 +455,7 @@ export default function PremiumFeaturesCard(premiumType) {
   });
   _modDef38(null != premiumBundleWithPredicate, "could not find a premium item");
   const items3 = [premiumBundleWithPredicate];
-  const tmp8Result15 = premiumType(9645);
+  const tmp8Result15 = premiumType(9644);
   const discountedPriceString = tmp8Result15.useDiscountedPremiumProductInfo(premiumDiscountOffer, items3).discountedPriceString;
   let tmp39 = tmp31;
   if (tmp39) {
@@ -475,16 +475,16 @@ export default function PremiumFeaturesCard(premiumType) {
   const obj6 = { style: tmp3.containerWrapper, onLayout, children: items4 };
   items4 = [, ];
   const obj7 = { style: tmp3.pill, discountOffer: premiumDiscountOffer, isActiveDiscount: null != activeDiscountInfo, shouldShowDiscountUpsell: null != premiumDiscountOffer && null != discountedPriceString, premiumType, trialOffer: premiumTrialOffer };
-  items4[0] = closure_20(premiumType(9539).PremiumPill, obj7);
+  items4[0] = closure_20(premiumType(9538).PremiumPill, obj7);
   const obj10 = { style: tmp3.logoContainer, children: tmp44Result };
   const obj8 = { premiumType, style, children: items6 };
   const obj9 = { style: tmp3.card, children: items5 };
   const tmp4Result = PremiumFeaturesBackgroundDefault;
   if (flag3) {
-    tmp44Result = tmp44(tmp4(10899), { width: 185, height: 20, alwaysWhite: true });
+    tmp44Result = tmp44(tmp4(10893), { width: 185, height: 20, alwaysWhite: true });
   } else {
     const obj11 = { premiumType, style: tmp3.logo };
-    tmp44Result = tmp44(tmp4(10900), obj11);
+    tmp44Result = tmp44(tmp4(10894), obj11);
   }
   items5 = [closure_20(analyticsLocations, obj10), closure_20(PremiumFeaturesWumpusDefault, { premiumType }), , , ];
   if (flag3) {
@@ -541,7 +541,7 @@ export default function PremiumFeaturesCard(premiumType) {
       };
       if (null != premiumDiscountOffer) {
         const obj19 = { style: tmp3.buttonIcon, color: nativeDefault.colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT, size: "sm" };
-        const NitroWheelIcon = tmp8(9369).NitroWheelIcon;
+        const NitroWheelIcon = tmp8(9368).NitroWheelIcon;
         tmp44Result6 = closure_20(NitroWheelIcon, obj19);
       }
       str = undefined;

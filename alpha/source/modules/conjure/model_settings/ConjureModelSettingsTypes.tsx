@@ -1,9 +1,9 @@
-// Module ID: 13158
-// Function ID: 13159
+// Module ID: 13152
+// Function ID: 13153
 // Name: ConjureModelSettingsTypes
 // Dependencies: [2]
 
-// Module 13158 (ConjureModelSettingsTypes)
+// Module 13152 (ConjureModelSettingsTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/model_settings/ConjureModelSettingsTypes.tsx");

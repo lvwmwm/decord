@@ -1,17 +1,17 @@
-// Module ID: 19824
-// Function ID: 19825
+// Module ID: 19819
+// Function ID: 19820
 // Name: VoicePanelDockBadgedIcon
-// Dependencies: [19, 17, 11948, 21, 1187, 18957, 5243, 5314, 5485, 1705, 1652, 9437, 2]
+// Dependencies: [19, 17, 11942, 21, 1187, 18952, 5243, 5314, 5485, 1705, 1652, 9436, 2]
 // Exports: default
 
-// Module 19824 (VoicePanelDockBadgedIcon)
+// Module 19819 (VoicePanelDockBadgedIcon)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1187 */;
 import native2 from "native" /* 5314 */;
 import react from "react" /* 19 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11948 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11942 */;
 import Fragment from "Fragment" /* 21 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18957 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18952 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -180,7 +180,7 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   items2[4] = sharedValue(1652).Extrapolation;
   items2[5] = 0.8;
   items2[6] = sum2;
-  items2[7] = sharedValue(9437).CutoutShape;
+  items2[7] = sharedValue(9436).CutoutShape;
   items2[8] = closure_10;
   items2[9] = closure_11;
   items2[10] = closure_9;
@@ -225,7 +225,7 @@ export default function VoicePanelDockBadgedIcon(streaming) {
     return hasOwnProperty(StreamBadge, obj, arg0);
   }, items4);
   let obj = { style: tmp.clip, animatedProps, children };
-  const items5 = [closure_5(tmp2(9437).ClipViewAnimated, obj), ];
+  const items5 = [closure_5(tmp2(9436).ClipViewAnimated, obj), ];
   const TransitionItem = tmp2(5314).TransitionItem;
   let obj2 = { children: items5 };
   items5[1] = closure_5(TransitionItem, { item: streaming, renderItem: callback });

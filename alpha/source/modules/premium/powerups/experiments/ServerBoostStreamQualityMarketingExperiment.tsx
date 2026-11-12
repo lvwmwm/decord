@@ -1,10 +1,10 @@
-// Module ID: 15900
-// Function ID: 15901
+// Module ID: 15895
+// Function ID: 15896
 // Name: ServerBoostStreamQualityMarketingExperiment
 // Dependencies: [1450, 2]
 // Exports: getServerBoostStreamQualityMarketingResolution
 
-// Module 15900 (ServerBoostStreamQualityMarketingExperiment)
+// Module 15895 (ServerBoostStreamQualityMarketingExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

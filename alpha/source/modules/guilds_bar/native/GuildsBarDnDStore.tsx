@@ -1,10 +1,10 @@
-// Module ID: 18914
-// Function ID: 18915
+// Module ID: 18909
+// Function ID: 18910
 // Name: GuildsBarDnDStore
 // Dependencies: [6893, 1254, 1652, 1259, 1242, 5158, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 18914 (GuildsBarDnDStore)
+// Module 18909 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react_native from "react-native" /* 1259 */;
 import _slicedToArray from "_slicedToArray" /* 5158 */;
@@ -37,7 +37,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
     dragDropInProgress: obj4.makeMutable(false),
     listInsets: obj5.makeMutable({ start: 0, end: 0 }),
     scrollPosition: obj6.makeMutable(0),
-    windowSize: "attribution_framework",
+    windowSize: "r",
     setStateShallow(obj) {
       closure_0 = obj;
       const tmp = closure_1();
@@ -77,7 +77,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "onPress" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "isArray" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -108,7 +108,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "Array" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {

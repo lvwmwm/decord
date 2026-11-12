@@ -1,12 +1,12 @@
-// Module ID: 10782
-// Function ID: 10783
+// Module ID: 10776
+// Function ID: 10777
 // Name: ActivityStatus
-// Dependencies: [19, 17, 6005, 5185, 1385, 10783, 21, 5243, 504, 10784, 10785, 6006, 9466, 10786, 10791, 10792, 10799, 10801, 10790, 2]
+// Dependencies: [19, 17, 6005, 5185, 1385, 10777, 21, 5243, 504, 10778, 10779, 6006, 9465, 10780, 10785, 10786, 10793, 10795, 10784, 2]
 // Exports: default
 
-// Module 10782 (ActivityStatus)
+// Module 10776 (ActivityStatus)
 import react_native from "react-native" /* 17 */;
-import ActivityStatusConstants from "ActivityStatusConstants" /* 10783 */;
+import ActivityStatusConstants from "ActivityStatusConstants" /* 10777 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 6005 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
@@ -58,8 +58,8 @@ export default function ActivityStatus(userId) {
   const items1 = [PresenceStore];
   const obj2 = userId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => PresenceStore.getActivities(userId));
-  const tmp6 = stateFromStores1(10784)(userId);
-  const voiceChannel = stateFromStores1(10785)({ userId, guildId }).voiceChannel;
+  const tmp6 = stateFromStores1(10778)(userId);
+  const voiceChannel = stateFromStores1(10779)({ userId, guildId }).voiceChannel;
   const items2 = [stateFromStores1];
   const memo = react.useMemo(() => {
     let found;
@@ -91,8 +91,8 @@ export default function ActivityStatus(userId) {
     }
   }, items2);
   let state;
-  const useGameMentionsAsPlainText = userId(9466).useGameMentionsAsPlainText;
-  userId(9466);
+  const useGameMentionsAsPlainText = userId(9465).useGameMentionsAsPlainText;
+  userId(9465);
   const tmp2 = userId;
   if (memo != null) {
     state = memo.state;
@@ -115,9 +115,9 @@ export default function ActivityStatus(userId) {
     if (null != tmp6) {
       let found;
       const tmp19 = closure_9;
-      const tmp5Result = stateFromStores1(10786);
+      const tmp5Result = stateFromStores1(10780);
       if (stateFromStores1 != null) {
-        found = stateFromStores1.find(tmp5(10791));
+        found = stateFromStores1.find(tmp5(10785));
       }
       const obj3 = { game: found, iconStyle: items4, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
       items4 = [tmp.icon, iconStyle];
@@ -134,13 +134,13 @@ export default function ActivityStatus(userId) {
       if (null != found1) {
         const obj4 = { activity: found1, iconStyle: items5, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
         items5 = [tmp.icon, iconStyle];
-        tmp19Result = closure_9(tmp5(10792), obj4);
+        tmp19Result = closure_9(tmp5(10786), obj4);
       } else {
         tmp19Result = null;
         if (null != voiceChannel) {
           const obj5 = { channel: voiceChannel, iconStyle: items6, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
           items6 = [tmp.icon, iconStyle];
-          tmp19Result = closure_9(tmp5(10799), obj5);
+          tmp19Result = closure_9(tmp5(10793), obj5);
         }
       }
     }
@@ -156,13 +156,13 @@ export default function ActivityStatus(userId) {
         }
         if (tmp26) {
           const obj6 = { emoji: memo.emoji, size: emojiSize, animate, style: tmp.emoji };
-          tmp26 = closure_9(tmp5(10801), obj6);
+          tmp26 = closure_9(tmp5(10795), obj6);
         }
         const items7 = [tmp26, ];
         let tmp28 = null != memo.state;
         if (tmp28) {
           const obj7 = { variant: "body-xs/normal", style: textStyle, maxFontSizeMultiplier, children: gameMentionsAsPlainText };
-          tmp28 = closure_9(tmp5(10790), obj7);
+          tmp28 = closure_9(tmp5(10784), obj7);
         }
         const obj8 = { children: items7 };
         items7[1] = tmp28;
@@ -180,7 +180,7 @@ export default function ActivityStatus(userId) {
     }
     if (tmp32) {
       const obj10 = { variant: "body-xs/normal", style: textStyle, maxFontSizeMultiplier, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DOT_UNICODE };
-      tmp32 = closure_9(tmp5(10790), obj10);
+      tmp32 = closure_9(tmp5(10784), obj10);
     }
     items8[1] = tmp32;
     items8[2] = tmp22;

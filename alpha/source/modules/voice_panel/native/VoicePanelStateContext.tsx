@@ -1,16 +1,16 @@
-// Module ID: 11924
-// Function ID: 11925
+// Module ID: 11918
+// Function ID: 11919
 // Name: VoicePanelStateContext
-// Dependencies: [19, 11925, 11923, 11926, 7782, 11927, 1629, 11933, 2]
+// Dependencies: [19, 11919, 11917, 11920, 7782, 11921, 1629, 11927, 2]
 
-// Module 11924 (VoicePanelStateContext)
+// Module 11918 (VoicePanelStateContext)
 import SafeAreaConstants from "SafeAreaConstants" /* 1629 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11926 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11927 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11933 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11920 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11921 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11927 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11923 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11917 */;
 import "ReanimatedHelperTypes";
 import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7782 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ const obj = {
   dockPressed: ReanimatedHelperTypes.createFakeSharedValue(false),
   dockPTTPortalHostName: null,
   dockPTTMeasureHostRef: { current: null },
-  dismissToPIPGestureRef: { current: "Array" },
+  dismissToPIPGestureRef: { current: "r" },
   dragScrolling: ReanimatedHelperTypes.createFakeSharedValue(false),
   focused: ReanimatedHelperTypes.createFakeSharedValue(null),
   generateStateLocker() {

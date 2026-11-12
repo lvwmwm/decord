@@ -1,10 +1,10 @@
-// Module ID: 20116
-// Function ID: 20117
+// Module ID: 20111
+// Function ID: 20112
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 5092, 8658, 5155, 5286, 8806, 16730, 12283, 1072, 8591, 2116, 1411, 5911, 7206, 504, 5854, 11, 572, 11092, 1113, 38, 6313, 8961, 11341, 6318, 8780, 1282, 1089, 2]
+// Dependencies: [5, 32, 19, 502, 5092, 8658, 5155, 5286, 8805, 16725, 12277, 1072, 8591, 2116, 1411, 5911, 7206, 504, 5854, 11, 572, 11086, 1113, 38, 6313, 8960, 11335, 6318, 8779, 1282, 1089, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 20116 (InteractionModalUtils)
+// Module 20111 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,8 +13,8 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import Server from "Server" /* 2116 */;
 import ComponentStateContext from "ComponentStateContext" /* 8591 */;
 import DraftStore from "DraftStore" /* 8658 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11092 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 16730 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11086 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 16725 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -22,8 +22,8 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8806 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 12283 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8805 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 12277 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let _require, c0, c1, c5, c6, importDefault, set;
 let tmp5;
 const getURLForApplicationDefault = tmp5(5911);
 function getData(arg0, arr, arg2) {
-  const f121118 = (type) => {
+  const f121128 = (type) => {
     let components;
     let items;
     let mapped;
@@ -45,7 +45,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f121118) };
+      const obj4 = { type: type.type, components: components.map(f121128) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -106,7 +106,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f121118)[0] };
+                const obj21 = { type: type.type, component: items.map(f121128)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -168,7 +168,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f121118);
+  return arr.map(f121128);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;
@@ -196,111 +196,113 @@ let obj = function _submitModal() {
     if (c6 === 2) {
       c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
     } else {
-      try {
-        let arr;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
+      const tmp13 = tmp3;
+      if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          let arr;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_4 = tmp2;
+              let closure_3 = tmp;
+              channel = undefined;
+              let length;
+              let components;
+              const channelId = closure_0.channelId;
+              channel = channel.getChannel(channelId);
+              _modDef38(null != channel, "expected channel");
+              arr = getUploadsForModal(channelId, closure_0.customId);
+              let tmp6;
+              const tmp22 = closure_0;
+              const tmp24 = nonce;
+              const tmp27 = importDefault;
+              if (arr.length > 0) {
+                tmp6 = tmp27(tmp28[25])(arr);
+              }
+              const tmp8 = require("InteractionActionCreators");
+              const obj4 = { data: obj5, preflight: tmp6 };
+              obj5 = { interactionType: require("InteractionTypes").InteractionTypes.MODAL_SUBMIT, applicationId: tmp22.application.id };
+              const addQueued = tmp8.addQueued;
+              addQueued(tmp24, obj4);
+              c5 = 1;
+              c6 = 1;
+              const obj6 = { value: tmp6, done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
             c6 = 3;
             throw value;
           } else if (arg0 === 2) {
             c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            obj = { value, done: true };
+            return obj;
           } else {
-            let closure_4 = tmp2;
-            let closure_3 = tmp;
-            channel = undefined;
-            let length;
-            let components;
-            const channelId = closure_0.channelId;
-            channel = channel.getChannel(channelId);
-            _modDef38(null != channel, "expected channel");
-            arr = getUploadsForModal(channelId, closure_0.customId);
-            let tmp14;
-            const tmp22 = closure_0;
-            const tmp24 = nonce;
-            const tmp27 = importDefault;
-            if (arr.length > 0) {
-              tmp14 = tmp27(tmp28[25])(arr);
-            }
-            const obj4 = { data: obj5, preflight: tmp14 };
-            obj5 = { interactionType: require("InteractionTypes").InteractionTypes.MODAL_SUBMIT, applicationId: tmp22.application.id };
-            const addQueued = require("InteractionActionCreators").addQueued;
-            const tmp16 = require("InteractionActionCreators");
-            addQueued(tmp24, obj4);
-            c5 = 1;
-            c6 = 1;
-            const obj6 = { value: tmp14, done: false };
-            return obj6;
-          }
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        } else {
-          length = arr.map((item, index) => {
-            obj = closure_1_0(nonce[28]);
-            return obj.getAttachmentPayload(item, index);
-          });
-          let tmp9 = closure_132_16;
-          obj = { uploads: arr };
-          components = closure_132_16(closure_0.customId, closure_0.components, obj);
-          function send() {
-            let body;
-            let obj5;
-            let tmp9;
-            const tmp = closure_1_3;
-            if (null != closure_1_3) {
-              let aborted;
-              if (signal != null) {
-                aborted = tmp13.aborted;
-              }
-              if (!aborted) {
-                const HTTP = closure_0(nonce[29]).HTTP;
-                const request = { url: constants.INTERACTIONS, body, signal, rejectWithError: false };
-                body = { type: closure_0(nonce[27]).InteractionTypes.MODAL_SUBMIT, application_id: closure_1_0.application.id, channel_id: null, guild_id: null, data: obj5, session_id: components.getSessionId(), nonce };
-                const post = HTTP.post;
-                ({ id: obj2.channel_id, guild_id: obj2.guild_id } = tmp);
-                obj5 = { id: null, custom_id: null, components, attachments: tmp9 };
-                ({ id: obj3.id, customId: obj3.custom_id } = closure_1_0);
-                tmp9 = undefined;
-                if (length.length > 0) {
-                  tmp9 = length;
+            length = arr.map((item, index) => {
+              obj = closure_1_0(nonce[28]);
+              return obj.getAttachmentPayload(item, index);
+            });
+            const obj7 = { uploads: arr };
+            components = closure_132_16(closure_0.customId, closure_0.components, obj7);
+            function send() {
+              let body;
+              let obj5;
+              let tmp9;
+              const tmp = closure_1_3;
+              if (null != closure_1_3) {
+                let aborted;
+                if (signal != null) {
+                  aborted = tmp13.aborted;
                 }
-                const postResult = post(request);
-                postResult.catch((error) => {
-                  if (429 === error.status) {
-                    const _setTimeout = setTimeout;
-                    const timerId = setTimeout(closure_1_7, error.body.retry_after * signal(nonce[30]).Millis.SECOND);
-                  } else {
-                    obj = closure_2_0(nonce[26]);
-                    obj.setFailed(closure_1_2);
+                if (!aborted) {
+                  const HTTP = closure_0(nonce[29]).HTTP;
+                  const request = { url: constants.INTERACTIONS, body, signal, rejectWithError: false };
+                  body = { type: closure_0(nonce[27]).InteractionTypes.MODAL_SUBMIT, application_id: closure_1_0.application.id, channel_id: null, guild_id: null, data: obj5, session_id: components.getSessionId(), nonce };
+                  const post = HTTP.post;
+                  ({ id: obj2.channel_id, guild_id: obj2.guild_id } = tmp);
+                  obj5 = { id: null, custom_id: null, components, attachments: tmp9 };
+                  ({ id: obj3.id, customId: obj3.custom_id } = closure_1_0);
+                  tmp9 = undefined;
+                  if (length.length > 0) {
+                    tmp9 = length;
                   }
-                });
+                  const postResult = post(request);
+                  postResult.catch((error) => {
+                    if (429 === error.status) {
+                      const _setTimeout = setTimeout;
+                      const timerId = setTimeout(closure_1_7, error.body.retry_after * signal(nonce[30]).Millis.SECOND);
+                    } else {
+                      obj = closure_2_0(nonce[26]);
+                      obj.setFailed(closure_1_2);
+                    }
+                  });
+                }
               }
             }
+            send();
+            c6 = 3;
+            return { value: "HermesInternal", done: null };
           }
-          send();
+        } catch (tmp10) {
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          throw tmp10;
         }
-      } catch (tmp18) {
-        c6 = 3;
-        throw tmp18;
       }
     }
   });

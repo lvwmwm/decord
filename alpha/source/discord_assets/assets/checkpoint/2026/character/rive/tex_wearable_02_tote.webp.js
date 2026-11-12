@@ -1,8 +1,8 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14345
+// Function ID: 14346
 // Dependencies: [2]
 
-// Module 14349
+// Module 14345
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_02_tote.webp.js");

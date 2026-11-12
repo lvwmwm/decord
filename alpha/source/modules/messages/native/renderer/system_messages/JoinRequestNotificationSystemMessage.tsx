@@ -1,10 +1,10 @@
-// Module ID: 9219
-// Function ID: 9220
+// Module ID: 9218
+// Function ID: 9219
 // Name: JoinRequestNotificationSystemMessage
-// Dependencies: [6870, 5287, 5114, 1385, 1072, 1113, 11, 9126, 2]
+// Dependencies: [6870, 5287, 5114, 1385, 1072, 1113, 11, 9125, 2]
 // Exports: createJoinRequestNotificationSystemMessage
 
-// Module 9219 (JoinRequestNotificationSystemMessage)
+// Module 9218 (JoinRequestNotificationSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const createCommonMessageDefault = tmp(9126);
+const createCommonMessageDefault = tmp(9125);
 const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/JoinRequestNotificationSystemMessage.tsx");
 

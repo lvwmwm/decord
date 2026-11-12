@@ -1,11 +1,11 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 17622
+// Function ID: 17623
 // Name: useVideoSegmentAnalytics
-// Dependencies: [32, 19, 8745, 2]
+// Dependencies: [32, 19, 8744, 2]
 // Exports: default
 
-// Module 17627 (useVideoSegmentAnalytics)
-import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 8745 */;
+// Module 17622 (useVideoSegmentAnalytics)
+import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 8744 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import "react";
 import react from "react" /* 19 */;

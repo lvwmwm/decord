@@ -1,19 +1,19 @@
-// Module ID: 20226
-// Function ID: 20227
+// Module ID: 20221
+// Function ID: 20222
 // Name: GiftIntentReconcilingManager
-// Dependencies: [6310, 1231, 5092, 9263, 1072, 1089, 7816, 559, 11613, 572, 8593, 2]
+// Dependencies: [6310, 1231, 5092, 9262, 1072, 1089, 7816, 559, 11607, 572, 8593, 2]
 
-// Module 20226 (GiftIntentReconcilingManager)
+// Module 20221 (GiftIntentReconcilingManager)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8593 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11613 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11607 */;
 import EphemeralMessageStore from "EphemeralMessageStore" /* 6310 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 9263 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 9262 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 

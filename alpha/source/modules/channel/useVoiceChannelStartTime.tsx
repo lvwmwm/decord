@@ -1,16 +1,16 @@
-// Module ID: 18829
-// Function ID: 18830
+// Module ID: 18824
+// Function ID: 18825
 // Name: useVoiceChannelStartTime
-// Dependencies: [19, 6737, 6894, 11830, 1072, 504, 12324, 2]
+// Dependencies: [19, 6737, 6894, 11824, 1072, 504, 12318, 2]
 // Exports: useStartTime
 
-// Module 18829 (useVoiceChannelStartTime)
+// Module 18824 (useVoiceChannelStartTime)
 import Constants from "Constants" /* 1072 */;
-import ChannelInfoActionCreators from "ChannelInfoActionCreators" /* 12324 */;
+import ChannelInfoActionCreators from "ChannelInfoActionCreators" /* 12318 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
 import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6894 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 11830 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 11824 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

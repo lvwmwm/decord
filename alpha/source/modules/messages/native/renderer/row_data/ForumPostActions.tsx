@@ -1,10 +1,10 @@
-// Module ID: 9106
-// Function ID: 9107
+// Module ID: 9105
+// Function ID: 9106
 // Name: ForumPostActions
-// Dependencies: [1072, 8588, 7673, 9107, 1242, 5967, 1113, 2185, 9108, 7797, 1411, 9109, 5187, 5193, 2]
+// Dependencies: [1072, 8588, 7673, 9106, 1242, 5967, 1113, 2185, 9107, 7797, 1411, 9108, 5187, 5193, 2]
 // Exports: createDefaultReaction, createForumPostActions
 
-// Module 9106 (ForumPostActions)
+// Module 9105 (ForumPostActions)
 import Constants from "Constants" /* 1072 */;
 import ReactionUtils from "ReactionUtils" /* 5187 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
@@ -106,14 +106,14 @@ export function createForumPostActions(arg0) {
     tmp6 = tmp4;
     tmp8 = tmp;
   } else {
-    assetUriForEmbed = getAssetUriForEmbed(tmp4(9107));
+    assetUriForEmbed = getAssetUriForEmbed(tmp4(9106));
     tmp6 = tmp4;
     tmp8 = tmp;
   }
   if (null == assetUriForEmbed) {
     const _HermesInternal = HermesInternal;
     const tmp6Result = tmp6(1242);
-    tmp6Result.captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 7673 : 9107));
+    tmp6Result.captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 7673 : 9106));
   }
   let stringResult;
   const tmp8Result = tmp8(8588);
@@ -130,7 +130,7 @@ export function createForumPostActions(arg0) {
   }
   let tmp14;
   if (showMediaPostSharePrompt) {
-    const obj = { title: intl2.string(tmp8(1113).t["5uAO7d"]), subtitle: formatToParts(YtCu5p, obj2), cta: intl4.string(tmp8(1113).t.C5UQC9), icon: tmp8Result3.getAssetUriForEmbed(tmp6(9108)), closeIcon: tmp8Result4.getAssetUriForEmbed(tmp6(7797)) };
+    const obj = { title: intl2.string(tmp8(1113).t["5uAO7d"]), subtitle: formatToParts(YtCu5p, obj2), cta: intl4.string(tmp8(1113).t.C5UQC9), icon: tmp8Result3.getAssetUriForEmbed(tmp6(9107)), closeIcon: tmp8Result4.getAssetUriForEmbed(tmp6(7797)) };
     intl2 = tmp8(1113).intl;
     const intl3 = tmp8(1113).intl;
     formatToParts = intl3.formatToParts;

@@ -1,10 +1,10 @@
-// Module ID: 13057
-// Function ID: 13058
+// Module ID: 13051
+// Function ID: 13052
 // Name: ConjurePublishBlockedSheet
-// Dependencies: [19, 17, 21, 5243, 575, 13058, 5489, 7885, 7847, 5866, 5873, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 13052, 5489, 7885, 7847, 5866, 5873, 2]
 // Exports: default
 
-// Module 13057 (ConjurePublishBlockedSheet)
+// Module 13051 (ConjurePublishBlockedSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5489 */;
@@ -29,7 +29,7 @@ function ConjurePublishBlockedSheet(onConfirm) {
   onConfirm = onConfirm.onConfirm;
   ({ reason, message } = onConfirm);
   const tmp = closure_7();
-  let obj = onConfirm(13058);
+  let obj = onConfirm(13052);
   const conjurePublishBlockedCopy = obj.getConjurePublishBlockedCopy(reason, message);
   const obj2 = { header: closure_4(onConfirm(7847).BottomSheetTitleHeader, obj3), children: tmp6(tmp7, obj4) };
   const ActionSheet = onConfirm(7885).ActionSheet;

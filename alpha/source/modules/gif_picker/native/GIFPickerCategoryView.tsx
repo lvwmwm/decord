@@ -1,10 +1,10 @@
-// Module ID: 11292
-// Function ID: 11293
+// Module ID: 11286
+// Function ID: 11287
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 1113, 8115, 5957, 11293, 10115, 5866, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 1113, 8115, 5957, 11287, 10114, 5866, 2]
 // Exports: default
 
-// Module 11292 (GIFPickerCategoryView)
+// Module 11286 (GIFPickerCategoryView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
@@ -69,13 +69,13 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   const tmp8 = hasOwnProperty;
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-    const AnalyticsIcon = tmp3(11293).AnalyticsIcon;
+    const AnalyticsIcon = tmp3(11287).AnalyticsIcon;
     tmp10Result = tmp10(AnalyticsIcon, obj6);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
       const obj7 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-      const StarIcon = tmp3(10115).StarIcon;
+      const StarIcon = tmp3(10114).StarIcon;
       tmp10Result = tmp10(StarIcon, obj7);
     }
   }

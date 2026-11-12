@@ -1,10 +1,10 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12021
+// Function ID: 12022
 // Name: WidgetAssetUtils
 // Dependencies: [1072, 1411, 2]
 // Exports: getWidgetAssetURL
 
-// Module 12027 (WidgetAssetUtils)
+// Module 12021 (WidgetAssetUtils)
 import Constants from "Constants" /* 1072 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
 import size from "module_2" /* 2 */;

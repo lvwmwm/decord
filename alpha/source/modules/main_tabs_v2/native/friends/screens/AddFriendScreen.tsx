@@ -1,14 +1,14 @@
-// Module ID: 19414
-// Function ID: 19415
+// Module ID: 19409
+// Function ID: 19410
 // Name: AddFriendScreen
-// Dependencies: [32, 19, 17, 1385, 1072, 14885, 21, 5243, 575, 14887, 5309, 1252, 1113, 10163, 8985, 1377, 10204, 5866, 16174, 16175, 2]
+// Dependencies: [32, 19, 17, 1385, 1072, 14881, 21, 5243, 575, 14883, 5309, 1252, 1113, 10161, 8984, 1377, 10202, 5866, 16169, 16170, 2]
 // Exports: default
 
-// Module 19414 (AddFriendScreen)
+// Module 19409 (AddFriendScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14885 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14887 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14881 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14883 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -54,10 +54,10 @@ export default function AddFriendScreen(navigation) {
   const sourcePage = navigation.route.params.sourcePage;
   const tmp = closure_13();
   let tmp2 = dependencyMap;
-  let obj = navigation(14887);
+  let obj = navigation(14883);
   const contactSyncAccount = obj.useContactSyncAccount();
   const useState = react.useState;
-  let obj2 = navigation(14887);
+  let obj2 = navigation(14883);
   const tmp4 = callback(useState(!obj2.isContactSyncEnabled(contactSyncAccount)), 2);
   [tmp5, c2] = tmp4;
   callback = react.useCallback(() => {
@@ -107,7 +107,7 @@ export default function AddFriendScreen(navigation) {
       _undefined(tmp5);
     });
   }, items);
-  const items1 = [closure_10(contactSyncAccount(10204), { absolute: true }), ];
+  const items1 = [closure_10(contactSyncAccount(10202), { absolute: true }), ];
   let obj3 = { keyboardShouldPersistTaps: "handled", style: tmp.background, children: items2 };
   let obj4 = { style: tmp.headerText, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1113).t.GWMTSE) };
   const Text = navigation(5866).Text;
@@ -118,7 +118,7 @@ export default function AddFriendScreen(navigation) {
   intl2 = navigation(1113).intl;
   items2[1] = closure_10(Text2, obj5);
   const obj6 = { style: tmp.input, autoFocusInput: false, sourcePage };
-  items2[2] = closure_10(contactSyncAccount(16174), obj6);
+  items2[2] = closure_10(contactSyncAccount(16169), obj6);
   const obj7 = { style: tmp.otherOptionsContainer, children: items3 };
   const obj8 = { accessibilityRole: "header", variant: "body-sm/medium", color: "text-default", children: intl3.string(navigation(1113).t.dukg0Z) };
   const Text3 = navigation(5866).Text;
@@ -132,7 +132,7 @@ export default function AddFriendScreen(navigation) {
   const tmp9 = closure_12;
   if (tmp5) {
     const obj9 = { style: tmp.rowContainer, location: "Add Friend Modal" };
-    tmp10Result = tmp10(tmp11(16175), obj9);
+    tmp10Result = tmp10(tmp11(16170), obj9);
   }
   const obj10 = { children: items1 };
   items3[1] = tmp10Result;

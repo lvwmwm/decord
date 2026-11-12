@@ -1,10 +1,10 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14399
+// Function ID: 14400
 // Name: EmojiCube
-// Dependencies: [32, 17, 5244, 6314, 21, 5243, 1357, 575, 504, 14163, 1411, 7828, 2]
+// Dependencies: [32, 17, 5244, 6314, 21, 5243, 1357, 575, 504, 14160, 1411, 7828, 2]
 // Exports: default
 
-// Module 14403 (EmojiCube)
+// Module 14399 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -103,7 +103,7 @@ export default function EmojiCube(emoji) {
   let items = [AccessibilityStore];
   const obj = emoji(504);
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const obj2 = emoji(14163);
+  const obj2 = emoji(14160);
   const result = obj2.useCheckpointScreenFrame().width / 392;
   let emojiURL;
   if (null != emoji.id) {

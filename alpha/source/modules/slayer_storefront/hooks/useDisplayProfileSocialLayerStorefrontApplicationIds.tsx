@@ -1,10 +1,10 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 9405
+// Function ID: 9406
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 7183, 8416, 9407, 504, 7290, 7293, 12, 2]
+// Dependencies: [19, 7183, 8416, 9406, 504, 7290, 7293, 12, 2]
 // Exports: default
 
-// Module 9406 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 9405 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import _mod12 from "module_12" /* 12 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7290 */;
 import react from "react" /* 19 */;

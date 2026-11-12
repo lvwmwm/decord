@@ -1,15 +1,15 @@
-// Module ID: 10659
-// Function ID: 10660
+// Module ID: 10652
+// Function ID: 10653
 // Name: GuildPowerupsImage
-// Dependencies: [5244, 21, 5243, 504, 1357, 9433, 5957, 2]
+// Dependencies: [5244, 21, 5243, 504, 1357, 9432, 5957, 2]
 // Exports: default
 
-// Module 10659 (GuildPowerupsImage)
+// Module 10652 (GuildPowerupsImage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9433 */;
+import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9432 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

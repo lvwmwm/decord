@@ -1,13 +1,13 @@
-// Module ID: 13294
-// Function ID: 13295
+// Module ID: 13288
+// Function ID: 13289
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 5244, 21, 575, 5243, 13283, 1652, 1493, 5240, 504, 5876, 5830, 5860, 13295, 5866, 2]
+// Dependencies: [32, 19, 17, 5244, 21, 575, 5243, 13277, 1652, 1493, 5240, 504, 5876, 5830, 5860, 13289, 5866, 2]
 // Exports: default
 
-// Module 13294 (BannerBase)
+// Module 13288 (BannerBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ApplicationsImage from "ApplicationsImage" /* 13283 */;
+import ApplicationsImage from "ApplicationsImage" /* 13277 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
@@ -131,7 +131,7 @@ export default function BannerBase(image) {
   let tmp17Result = null != image;
   if (tmp17Result) {
     const obj7 = { style: tmp.imageContainer, children: items7 };
-    const obj8 = { style: tmp.trinketsLottie, source: require("module_13295"), autoPlay: !stateFromStores };
+    const obj8 = { style: tmp.trinketsLottie, source: require("module_13289"), autoPlay: !stateFromStores };
     const tmp7Result = sharedValue(5860);
     items7 = [closure_7(tmp7Result, obj8), image];
     tmp17Result = tmp17(View, obj7);

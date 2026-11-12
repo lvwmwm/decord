@@ -1,19 +1,19 @@
-// Module ID: 17008
-// Function ID: 17009
+// Module ID: 17003
+// Function ID: 17004
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 8434, 8426, 1072, 21, 5243, 575, 8416, 8493, 7852, 7871, 1252, 9332, 9336, 5503, 7847, 1113, 9337, 11610, 504, 17009, 15413, 8475, 8417, 17010, 15419, 15420, 9338, 9996, 5830, 2]
+// Dependencies: [32, 19, 17, 8434, 8426, 1072, 21, 5243, 575, 8416, 8493, 7852, 7871, 1252, 9331, 9335, 5503, 7847, 1113, 9336, 11604, 504, 17004, 15410, 8475, 8417, 17005, 15416, 15417, 9337, 9995, 5830, 2]
 // Exports: default
 
-// Module 17008 (EditProfileFrameActionSheet)
+// Module 17003 (EditProfileFrameActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8417 */;
 import ProfileFrameRecord from "ProfileFrameRecord" /* 8426 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9332 */;
-import useShopProductItems from "useShopProductItems" /* 9336 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 17010 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9331 */;
+import useShopProductItems from "useShopProductItems" /* 9335 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 17005 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -135,7 +135,7 @@ function ProfileFrameSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(9338)(previewSkuId);
+  const tmp2 = purchase(9337)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;
@@ -159,7 +159,7 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(9996), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  items1 = [closure_9(purchase(9995), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
   const tmp4 = purchase(5830);

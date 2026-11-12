@@ -1,10 +1,10 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 11753
+// Function ID: 11754
 // Name: BadgeUnreadStateExperiment
 // Dependencies: [1449, 504, 2]
 // Exports: useIsBadgeUnreadStateEnabled
 
-// Module 11759 (BadgeUnreadStateExperiment)
+// Module 11753 (BadgeUnreadStateExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

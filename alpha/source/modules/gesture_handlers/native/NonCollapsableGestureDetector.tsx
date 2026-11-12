@@ -1,10 +1,10 @@
-// Module ID: 19005
-// Function ID: 19006
+// Module ID: 19000
+// Function ID: 19001
 // Name: NonCollapsableGestureDetector
 // Dependencies: [109, 19, 17, 21, 5535, 2]
 // Exports: NonCollapsableGestureDetector
 
-// Module 19005 (NonCollapsableGestureDetector)
+// Module 19000 (NonCollapsableGestureDetector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;

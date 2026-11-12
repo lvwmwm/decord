@@ -1,13 +1,13 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 9051
+// Function ID: 9052
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 8678, 5894, 9053, 1093, 9054, 9055, 504, 9059, 9058, 9061, 1113, 2]
+// Dependencies: [5, 19, 8678, 5894, 9052, 1093, 9053, 9054, 504, 9058, 9057, 9060, 1113, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 9052 (useConversationsHeaderButton)
+// Module 9051 (useConversationsHeaderButton)
 import intl2 from "intl" /* 1113 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9055 */;
-import PaperIcon from "PaperIcon" /* 9059 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9054 */;
+import PaperIcon from "PaperIcon" /* 9058 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelConversationsStore from "ChannelConversationsStore" /* 8678 */;

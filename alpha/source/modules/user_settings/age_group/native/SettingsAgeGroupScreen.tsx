@@ -1,10 +1,10 @@
-// Module ID: 17132
-// Function ID: 17133
+// Module ID: 17127
+// Function ID: 17128
 // Name: SettingsAgeGroupScreen
-// Dependencies: [19, 17, 9136, 1072, 21, 5243, 575, 8124, 2185, 5866, 1113, 3273, 17091, 12317, 17133, 17095, 2]
+// Dependencies: [19, 17, 9135, 1072, 21, 5243, 575, 8124, 2185, 5866, 1113, 3273, 17086, 12311, 17128, 17090, 2]
 // Exports: default
 
-// Module 17132 (SettingsAgeGroupScreen)
+// Module 17127 (SettingsAgeGroupScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,9 +13,9 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import _modDef3273 from "module_3273" /* 3273 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8124 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
-import SettingLayoutDefault from "SettingLayout" /* 17095 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
+import SettingLayoutDefault from "SettingLayout" /* 17090 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const AgeNoticeAgeGroupHeader2 = tmp(17133);
+const AgeNoticeAgeGroupHeader2 = tmp(17128);
 function SettingsAgeGroupHeader() {
   let intl;
   let intl2;
@@ -59,7 +59,7 @@ const result = size.fileFinishedImporting("modules/user_settings/age_group/nativ
 
 export default function SettingsAgeGroupScreen() {
   let isAgeNoticeSettingsEnabled;
-  let obj = isAgeNoticeSettingsEnabled(17091);
+  let obj = isAgeNoticeSettingsEnabled(17086);
   isAgeNoticeSettingsEnabled = obj.useIsAgeNoticeSettingsEnabled();
   let items = [isAgeNoticeSettingsEnabled];
   const node = react.useMemo(() => {

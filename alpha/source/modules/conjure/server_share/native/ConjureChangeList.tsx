@@ -1,10 +1,10 @@
-// Module ID: 13218
-// Function ID: 13219
+// Module ID: 13212
+// Function ID: 13213
 // Name: ConjureChangeList
-// Dependencies: [19, 17, 21, 12592, 8036, 13219, 8180, 7374, 7372, 10486, 5243, 575, 6274, 5866, 1113, 4079, 2]
+// Dependencies: [19, 17, 21, 12586, 8036, 13213, 8180, 7374, 7372, 10484, 5243, 575, 6274, 5866, 1113, 4079, 2]
 // Exports: default
 
-// Module 13218 (ConjureChangeList)
+// Module 13212 (ConjureChangeList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4079 from "module_4079" /* 4079 */;
@@ -14,9 +14,9 @@ import GroupIcon from "GroupIcon" /* 7372 */;
 import GameControllerIcon from "GameControllerIcon" /* 7374 */;
 import AppsIcon from "AppsIcon" /* 8036 */;
 import IdCardIcon from "IdCardIcon" /* 8180 */;
-import UserIcon from "UserIcon" /* 10486 */;
-import RobotIcon from "RobotIcon" /* 12592 */;
-import BeakerIcon from "BeakerIcon" /* 13219 */;
+import UserIcon from "UserIcon" /* 10484 */;
+import RobotIcon from "RobotIcon" /* 12586 */;
+import BeakerIcon from "BeakerIcon" /* 13213 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

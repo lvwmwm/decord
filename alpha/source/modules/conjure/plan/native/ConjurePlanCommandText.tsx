@@ -1,10 +1,10 @@
-// Module ID: 13629
-// Function ID: 13630
+// Module ID: 13623
+// Function ID: 13624
 // Name: ConjurePlanCommandText
-// Dependencies: [19, 6283, 21, 5243, 575, 5866, 13618, 2]
+// Dependencies: [19, 6283, 21, 5243, 575, 5866, 13612, 2]
 // Exports: ConjurePlanCommandMarkup, ConjurePlanCommandText
 
-// Module 13629 (ConjurePlanCommandText)
+// Module 13623 (ConjurePlanCommandText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5866 */;
@@ -50,9 +50,9 @@ export function ConjurePlanCommandText(text) {
   let commandNames;
   text = text.text;
   ({ commandNames, size } = text);
-  const obj = size(13618);
+  const obj = size(13612);
   const conjurePlanCommandPattern = obj.useConjurePlanCommandPattern(commandNames);
-  const obj2 = size(13618);
+  const obj2 = size(13612);
   const result = obj2.splitConjurePlanCommandText(text, conjurePlanCommandPattern);
   if (null != result) {
     text = result.map((kind) => {
@@ -78,7 +78,7 @@ export function ConjurePlanCommandMarkup(markup) {
   return conjurePlanCommandPattern.useMemo(() => {
     let mapped;
     let validElement;
-    const f106901 = (icon) => {
+    const f106908 = (icon) => {
       let Children;
       let cloneElement;
       let cloneElementResult;
@@ -107,7 +107,7 @@ export function ConjurePlanCommandMarkup(markup) {
           cloneElementResult = mapped;
           if (null != mapped.props.children) {
             ({ Children, cloneElement } = tmp11);
-            cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f106901));
+            cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f106908));
           }
         }
       }
@@ -119,7 +119,7 @@ export function ConjurePlanCommandMarkup(markup) {
       let closure_0 = tmp;
       let closure_1 = size;
       const Children = react.Children;
-      mapped = Children.map(markup, f106901);
+      mapped = Children.map(markup, f106908);
     }
     return mapped;
   }, items);

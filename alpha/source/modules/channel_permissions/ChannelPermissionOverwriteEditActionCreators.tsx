@@ -1,15 +1,15 @@
-// Module ID: 19510
-// Function ID: 19511
+// Module ID: 19505
+// Function ID: 19506
 // Name: ChannelPermissionOverwriteEditActionCreators
-// Dependencies: [5, 5092, 19505, 572, 5952, 1113, 19506, 8069, 2]
+// Dependencies: [5, 5092, 19500, 572, 5952, 1113, 19501, 8069, 2]
 // Exports: updateChannelPermissionOverwrite
 
-// Module 19510 (ChannelPermissionOverwriteEditActionCreators)
+// Module 19505 (ChannelPermissionOverwriteEditActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
-import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 19505 */;
-import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 19506 */;
+import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 19500 */;
+import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 19501 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import size from "module_2" /* 2 */;
@@ -364,7 +364,7 @@ obj = function _drainPendingEdits() {
                       readyEdits = c5.getReadyEdits(closure_0, pendingEdits);
                       if (0 === readyEdits.length) {
                         c7 = 3;
-                        const obj4 = { value: { v: "Array" }, done: true };
+                        const obj4 = { value: { v: "r" }, done: true };
                         return obj4;
                       } else {
                         mapped = readyEdits.map((editId) => {
@@ -411,7 +411,7 @@ obj = function _drainPendingEdits() {
                       return obj7;
                     } else {
                       c7 = 3;
-                      const obj8 = { value: { v: "Array" }, done: true };
+                      const obj8 = { value: { v: "r" }, done: true };
                       return obj8;
                     }
                   } else if (2 === c6) {

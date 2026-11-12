@@ -1,14 +1,14 @@
-// Module ID: 9223
-// Function ID: 9224
+// Module ID: 9222
+// Function ID: 9223
 // Name: PremiumGroupUtils
-// Dependencies: [1385, 2184, 5309, 1113, 3465, 2, 9224]
+// Dependencies: [1385, 2184, 5309, 1113, 3465, 2, 9223]
 // Exports: getPremiumGroupInviteEmbedText, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 9223 (PremiumGroupUtils)
+// Module 9222 (PremiumGroupUtils)
 import intl7 from "intl" /* 1113 */;
 import _modDef3465 from "module_3465" /* 3465 */;
 import UserUtils from "UserUtils" /* 5309 */;
-import _mod9224 from "module_9224" /* 9224 */;
+import _mod9223 from "module_9223" /* 9223 */;
 import UserStore from "UserStore" /* 1385 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2184 */;
 import size from "module_2" /* 2 */;
@@ -17,8 +17,8 @@ let closure_4;
 let hasOwnProperty;
 ({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: hasOwnProperty } = PremiumGroupConstants);
 const result = size.fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.native.tsx");
-for (const key10025 in _mod9224) {
-  exports[key10025] = _mod9224[key10025];
+for (const key10025 in _mod9223) {
+  exports[key10025] = _mod9223[key10025];
   continue;
 }
 

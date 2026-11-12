@@ -1,19 +1,19 @@
-// Module ID: 17287
-// Function ID: 17288
+// Module ID: 17282
+// Function ID: 17283
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5243, 9550, 9551, 17288, 575, 14124, 1113, 2685, 5957, 17295, 17296, 5866, 2]
+// Dependencies: [19, 17, 21, 5243, 9549, 9550, 17283, 575, 14120, 1113, 2685, 5957, 17290, 17291, 5866, 2]
 // Exports: default
 
-// Module 17287 (FamilyCenterActivityBanner)
+// Module 17282 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef2685 from "module_2685" /* 2685 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import useUserLinks from "useUserLinks" /* 9550 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9551 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 14124 */;
+import useUserLinks from "useUserLinks" /* 9549 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9550 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 14120 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -25,7 +25,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const FamilyCenterBannerButton = tmp2(17288);
+const FamilyCenterBannerButton = tmp2(17283);
 function FamilyCenterActivityBannerButton() {
   let tmp2Result;
   const tmp = closure_6();
@@ -77,7 +77,7 @@ export default function FamilyCenterActivityBanner() {
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
   const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2685.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  const obj3 = { source: importDefault(tmp3 ? 17295 : 17296), style: tmp4.art };
+  const obj3 = { source: importDefault(tmp3 ? 17290 : 17291), style: tmp4.art };
   const tmp16 = FastImageDefault;
   items = [React3(tmp16, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

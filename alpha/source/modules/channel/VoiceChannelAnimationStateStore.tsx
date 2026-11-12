@@ -1,9 +1,9 @@
-// Module ID: 16064
-// Function ID: 16065
+// Module ID: 16059
+// Function ID: 16060
 // Name: VoiceChannelAnimationStateStore
 // Dependencies: [32, 5286, 5918, 504, 572, 2]
 
-// Module 16064 (VoiceChannelAnimationStateStore)
+// Module 16059 (VoiceChannelAnimationStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -29,7 +29,7 @@ function resetAllState() {
 function updateChannelAnimationState(arg0, arg1) {
   let flag;
   let obj;
-  const f111918 = () => {
+  const f111927 = () => {
     if (null != closure_2_4[closure_0]) {
       const obj = { style: constants.GENTLE_AMBIENT };
       const merged = Object.assign(tmp2);
@@ -58,7 +58,7 @@ function updateChannelAnimationState(arg0, arg1) {
         delete closure_5[arg0];
       }
       const _setTimeout2 = setTimeout;
-      closure_5[arg0] = setTimeout(f111918, 2000);
+      closure_5[arg0] = setTimeout(f111927, 2000);
       flag = true;
     }
     return flag;
@@ -74,7 +74,7 @@ function updateChannelAnimationState(arg0, arg1) {
         delete closure_5[arg0];
       }
       const _setTimeout = setTimeout;
-      closure_5[arg0] = setTimeout(f111918, 2000);
+      closure_5[arg0] = setTimeout(f111927, 2000);
       flag = true;
     }
   }

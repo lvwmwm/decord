@@ -1,14 +1,14 @@
-// Module ID: 20107
-// Function ID: 20108
+// Module ID: 20102
+// Function ID: 20103
 // Name: HolidayEventsConfig
-// Dependencies: [10972, 1113, 20108, 20109, 5076, 2]
+// Dependencies: [10966, 1113, 20103, 20104, 5076, 2]
 
-// Module 20107 (HolidayEventsConfig)
+// Module 20102 (HolidayEventsConfig)
 import intl14 from "intl" /* 1113 */;
 import dismissible_content from "dismissible_content" /* 5076 */;
-import Constants from "Constants" /* 10972 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20108 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 20109 */;
+import Constants from "Constants" /* 10966 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20103 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 20104 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

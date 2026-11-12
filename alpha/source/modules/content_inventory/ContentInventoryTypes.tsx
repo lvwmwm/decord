@@ -1,10 +1,10 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 9409
+// Function ID: 9410
 // Name: ContentInventoryTypes
-// Dependencies: [8355, 9411, 2]
+// Dependencies: [8355, 9410, 2]
 // Exports: isApplicationEntry, isConsoleEntry, isGamingLikeEntry, isLaunchedActivityEntry, isListenedSessionEntry, isListeningLikeEntry, isPlayedGameEntry, isPlaystationEntry, isRecentActivityEntry, isTopArtistEntry, isTopGameEntry, isWatchedMediaEntry, isXboxEntry
 
-// Module 9410 (ContentInventoryTypes)
+// Module 9409 (ContentInventoryTypes)
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8355 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ export function isXboxEntry(content_type) {
     }
     tmp4 = content_type1 === tmp2(8355).ContentInventoryEntryType.TOP_GAME;
   }
-  const tmp6 = tmp4 && content_type.extra.platform === tmp2(9411).PlatformType.XBOX;
+  const tmp6 = tmp4 && content_type.extra.platform === tmp2(9410).PlatformType.XBOX;
   return tmp6;
 }
 export function isPlaystationEntry(content_type) {
@@ -119,7 +119,7 @@ export function isPlaystationEntry(content_type) {
     }
     tmp4 = content_type1 === tmp2(8355).ContentInventoryEntryType.TOP_GAME;
   }
-  const tmp6 = tmp4 && content_type.extra.platform === tmp2(9411).PlatformType.PLAYSTATION;
+  const tmp6 = tmp4 && content_type.extra.platform === tmp2(9410).PlatformType.PLAYSTATION;
   return tmp6;
 }
 export function isConsoleEntry(content_type) {
@@ -135,7 +135,7 @@ export function isConsoleEntry(content_type) {
     }
     tmp4 = content_type1 === tmp2(8355).ContentInventoryEntryType.TOP_GAME;
   }
-  let tmp6 = tmp4 && content_type.extra.platform === tmp2(9411).PlatformType.XBOX;
+  let tmp6 = tmp4 && content_type.extra.platform === tmp2(9410).PlatformType.XBOX;
   if (!tmp6) {
     let content_type2;
     if (content_type != null) {
@@ -149,8 +149,8 @@ export function isConsoleEntry(content_type) {
       }
       tmp8 = content_type3 === tmp2(8355).ContentInventoryEntryType.TOP_GAME;
     }
-    tmp6 = tmp8 && content_type.extra.platform === tmp2(9411).PlatformType.PLAYSTATION;
-    const tmp10 = tmp8 && content_type.extra.platform === tmp2(9411).PlatformType.PLAYSTATION;
+    tmp6 = tmp8 && content_type.extra.platform === tmp2(9410).PlatformType.PLAYSTATION;
+    const tmp10 = tmp8 && content_type.extra.platform === tmp2(9410).PlatformType.PLAYSTATION;
   }
   return tmp6;
 }

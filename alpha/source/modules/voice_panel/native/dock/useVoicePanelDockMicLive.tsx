@@ -1,10 +1,10 @@
-// Module ID: 19831
-// Function ID: 19832
+// Module ID: 19826
+// Function ID: 19827
 // Name: useVoicePanelDockMicLive
-// Dependencies: [19, 5092, 504, 12956, 12932, 1652, 5485, 2]
+// Dependencies: [19, 5092, 504, 12950, 12926, 1652, 5485, 2]
 // Exports: default
 
-// Module 19831 (useVoicePanelDockMicLive)
+// Module 19826 (useVoicePanelDockMicLive)
 import timing_timing from "timing/timing" /* 5485 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;

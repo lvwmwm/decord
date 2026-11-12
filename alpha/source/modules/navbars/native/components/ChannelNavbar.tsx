@@ -1,10 +1,10 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15025
+// Function ID: 15026
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 6737, 5096, 5092, 5114, 6005, 5185, 1385, 1072, 5099, 5089, 21, 5243, 6763, 575, 504, 1113, 7968, 5891, 10782, 15030, 15031, 1187, 15032, 15033, 5957, 15034, 11198, 7364, 5866, 5309, 8558, 8385, 5285, 5076, 10501, 15035, 2]
+// Dependencies: [19, 17, 6737, 5096, 5092, 5114, 6005, 5185, 1385, 1072, 5099, 5089, 21, 5243, 6763, 575, 504, 1113, 7968, 5891, 10776, 15026, 15027, 1187, 15028, 15029, 5957, 15030, 11192, 7364, 5866, 5309, 8558, 8385, 5285, 5076, 10499, 15031, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 15029 (ChannelNavbar)
+// Module 15025 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -20,7 +20,7 @@ import useChannelName from "useChannelName" /* 5891 */;
 import Pressables from "Pressables" /* 7364 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
 import isStreamingDefault from "isStreaming" /* 8558 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10782 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10776 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
 import ChannelStore from "ChannelStore" /* 5092 */;

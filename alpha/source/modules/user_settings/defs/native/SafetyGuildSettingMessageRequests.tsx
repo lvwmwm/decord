@@ -1,24 +1,24 @@
-// Module ID: 18453
-// Function ID: 18454
+// Module ID: 18448
+// Function ID: 18449
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [5114, 18443, 9136, 12318, 18454, 17228, 5068, 6205, 1113, 6277, 18455, 8124, 6770, 7747, 18446, 12317, 2]
+// Dependencies: [5114, 18438, 9135, 12312, 18449, 17223, 5068, 6205, 1113, 6277, 18450, 8124, 6770, 7747, 18441, 12311, 2]
 
-// Module 18453 (SafetyGuildSettingMessageRequests)
+// Module 18448 (SafetyGuildSettingMessageRequests)
 import intl5 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5068 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
 import AlertDefault from "Alert" /* 6277 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7747 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8124 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 12318 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17228 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18446 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 18454 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 18455 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 12312 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17223 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18441 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 18449 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 18450 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18443 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18438 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

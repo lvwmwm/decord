@@ -1,9 +1,9 @@
-// Module ID: 13957
-// Function ID: 13958
+// Module ID: 13953
+// Function ID: 13954
 // Name: AcceptGuildTemplateActionCreators
 // Dependencies: [6737, 5114, 1072, 572, 1282, 7168, 2]
 
-// Module 13957 (AcceptGuildTemplateActionCreators)
+// Module 13953 (AcceptGuildTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import transitionToGuild from "transitionToGuild" /* 7168 */;

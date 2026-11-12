@@ -1,10 +1,10 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 11965
+// Function ID: 11966
 // Name: SelfModInappropriateConversationExperiment
 // Dependencies: [1450, 2]
 // Exports: isEligibleForInappropriateConversationWarning, useIsEligibleForInappropriateConversationWarning
 
-// Module 11971 (SelfModInappropriateConversationExperiment)
+// Module 11965 (SelfModInappropriateConversationExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

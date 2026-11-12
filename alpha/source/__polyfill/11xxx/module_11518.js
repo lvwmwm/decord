@@ -1,11 +1,10 @@
 // Module ID: 11518
 // Function ID: 11519
-// Dependencies: [41, 42, 93, 95, 98, 11373, 11374, 11375]
+// Dependencies: [41, 42, 93, 95, 98, 11516, 11369]
 
 // Module 11518
-import Meridiem from "Meridiem" /* 11373 */;
-import assignSimilarDate from "assignSimilarDate" /* 11374 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11375 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11369 */;
+import _mod11516 from "module_11516" /* 11516 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ESCasualTimeParser {
+class AbstractParserWithLeftBoundaryChecking {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ESCasualTimeParser);
-    const obj = _getPrototypeOf(ESCasualTimeParser);
+    _classCallCheck(this, AbstractParserWithLeftBoundaryChecking);
+    const obj = _getPrototypeOf(AbstractParserWithLeftBoundaryChecking);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,49 +43,61 @@ class ESCasualTimeParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ESCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(AbstractParserWithLeftBoundaryChecking, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return /(?:esta\s*)?(mañana|tarde|medianoche|mediodia|mediodía|noche)(?=\W|$)/i;
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return _mod11516.REGEX_PARTS.leftBoundary;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      refDate = refDate.refDate;
-      const parsingComponents = refDate.createParsingComponents();
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      if ("tarde" === formatted) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        parsingComponents.imply("hour", 15);
-      } else if ("noche" === formatted) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        parsingComponents.imply("hour", 22);
-      } else if ("ma\u00F1ana" === formatted) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-        parsingComponents.imply("hour", 6);
-      } else if ("medianoche" === formatted) {
-        const _Date = Date;
-        const self = this;
-        const self2 = this;
-        const date = new Date(refDate.getTime());
-        date.setDate(date.getDate() + 1);
-        assignSimilarDate.assignSimilarDate(parsingComponents, date);
-        assignSimilarDate.implySimilarTime(parsingComponents, date);
-        parsingComponents.imply("hour", 0);
-        parsingComponents.imply("minute", 0);
-        parsingComponents.imply("second", 0);
-      } else if ("mediodia" === formatted) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-        parsingComponents.imply("hour", 12);
-      }
-      return parsingComponents;
+    key: "innerPattern",
+    value: function innerPattern(arg0) {
+      const innerPatternStringResult = this.innerPatternString(arg0);
+      const regExp = new RegExp(innerPatternStringResult, _mod11516.REGEX_PARTS.flags);
+      return regExp;
+    }
+  },
+  {
+    key: "innerPatternHasChange",
+    value: function innerPatternHasChange(arg0, arg1) {
+      return false;
     }
   }
 ];
+const _moduleResult = _createClass(AbstractParserWithLeftBoundaryChecking, items);
+class AbstractParserWithLeftRightBoundaryChecking {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractParserWithLeftRightBoundaryChecking);
+    const obj = _getPrototypeOf(AbstractParserWithLeftRightBoundaryChecking);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(AbstractParserWithLeftRightBoundaryChecking, _moduleResult);
+const entry1 = {
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    const innerPatternStringResult = this.innerPatternString(arg0);
+    const combined = "" + innerPatternStringResult + _mod11516.REGEX_PARTS.rightBoundary;
+    const regExp = new RegExp(combined, _mod11516.REGEX_PARTS.flags);
+    return regExp;
+  }
+};
+const items1 = [entry1];
+const AbstractParserWithLeftBoundaryChecking_export = _moduleResult;
+const AbstractParserWithLeftRightBoundaryChecking_export = _createClass(AbstractParserWithLeftRightBoundaryChecking, items1);
 
-export default _createClass(ESCasualTimeParser, items);
+export { AbstractParserWithLeftBoundaryChecking_export as AbstractParserWithLeftBoundaryChecking };
+export { AbstractParserWithLeftRightBoundaryChecking_export as AbstractParserWithLeftRightBoundaryChecking };

@@ -1,13 +1,13 @@
-// Module ID: 20134
-// Function ID: 20135
+// Module ID: 20129
+// Function ID: 20130
 // Name: JankNavigationReporter
-// Dependencies: [5430, 18600, 18604, 18605, 5432, 2]
+// Dependencies: [5430, 18595, 18599, 18600, 5432, 2]
 
-// Module 20134 (JankNavigationReporter)
+// Module 20129 (JankNavigationReporter)
 import RootNavigationRef from "RootNavigationRef" /* 5430 */;
-import getJankScreenName from "getJankScreenName" /* 18600 */;
-import react_nativeDefault from "react-native" /* 18604 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18605 */;
+import getJankScreenName from "getJankScreenName" /* 18595 */;
+import react_nativeDefault from "react-native" /* 18599 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18600 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;

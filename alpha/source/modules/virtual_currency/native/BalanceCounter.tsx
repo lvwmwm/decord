@@ -1,9 +1,9 @@
-// Module ID: 9986
-// Function ID: 9987
+// Module ID: 9985
+// Function ID: 9986
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 1652, 5257, 5876, 1705, 9987, 5866, 2]
+// Dependencies: [32, 19, 21, 1652, 5257, 5876, 1705, 9986, 5866, 2]
 
-// Module 9986 (BalanceCounter)
+// Module 9985 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;

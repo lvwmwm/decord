@@ -1,10 +1,10 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15075
+// Function ID: 15076
 // Name: Checkpoint2026ForwardPreview
-// Dependencies: [19, 17, 21, 5243, 6685, 6338, 6335, 2021, 5957, 15079, 575, 2]
+// Dependencies: [19, 17, 21, 5243, 6685, 6338, 6335, 2021, 5957, 15076, 575, 2]
 // Exports: default
 
-// Module 15078 (Checkpoint2026ForwardPreview)
+// Module 15075 (Checkpoint2026ForwardPreview)
 import Fragment from "Fragment" /* 21 */;
 import react_nativeDefault from "react-native" /* 2021 */;
 import FastImageDefault from "FastImage" /* 5957 */;
@@ -68,7 +68,7 @@ export default function Checkpoint2026ForwardPreview(checkpointData) {
       });
     } else {
       const obj5 = { color: character(575).colors.BLACK };
-      const ExperimentalCheckpointIcon = tmp2(15079).ExperimentalCheckpointIcon;
+      const ExperimentalCheckpointIcon = tmp2(15076).ExperimentalCheckpointIcon;
       mapped = tmp6(ExperimentalCheckpointIcon, obj5);
     }
     tmp6Result = tmp6(tmp7, obj3);

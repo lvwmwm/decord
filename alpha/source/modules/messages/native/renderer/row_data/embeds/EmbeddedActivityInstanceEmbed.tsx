@@ -1,20 +1,20 @@
-// Module ID: 15476
-// Function ID: 15477
+// Module ID: 15473
+// Function ID: 15474
 // Name: EmbeddedActivityInstanceEmbed
-// Dependencies: [5091, 2162, 502, 5092, 6005, 1385, 11831, 14442, 1113, 14443, 15458, 15477, 14444, 14445, 6992, 13364, 2]
+// Dependencies: [5091, 2162, 502, 5092, 6005, 1385, 11825, 14438, 1113, 14439, 15455, 15474, 14440, 14441, 6992, 13358, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 15476 (EmbeddedActivityInstanceEmbed)
+// Module 15473 (EmbeddedActivityInstanceEmbed)
 import intl10 from "intl" /* 1113 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6992 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 11831 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 13364 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 14442 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 14443 */;
-import getPlayInContext from "getPlayInContext" /* 14444 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 14445 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15458 */;
-import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 15477 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 11825 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 13358 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 14438 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 14439 */;
+import getPlayInContext from "getPlayInContext" /* 14440 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 14441 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15455 */;
+import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 15474 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

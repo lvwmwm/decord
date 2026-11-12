@@ -1,14 +1,14 @@
-// Module ID: 12486
-// Function ID: 12487
+// Module ID: 12480
+// Function ID: 12481
 // Name: SlashBoxIcon
-// Dependencies: [19, 21, 575, 5956, 12487, 2]
+// Dependencies: [19, 21, 575, 5956, 12481, 2]
 // Exports: SlashBoxIcon
 
-// Module 12486 (SlashBoxIcon)
+// Module 12480 (SlashBoxIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 12487 */;
+import AssetRegistry from "AssetRegistry" /* 12481 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

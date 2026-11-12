@@ -1,10 +1,10 @@
-// Module ID: 15166
-// Function ID: 15167
+// Module ID: 15163
+// Function ID: 15164
 // Name: BadgeArtImage
-// Dependencies: [32, 5, 19, 17, 21, 5373, 1089, 6016, 8197, 1377, 9432, 5957, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5373, 1089, 6016, 8197, 1377, 9431, 5957, 2]
 // Exports: default
 
-// Module 15166 (BadgeArtImage)
+// Module 15163 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -286,7 +286,7 @@ export default function BadgeArtImage(style) {
         const obj7 = PlatformUtils;
         const tmp10 = require;
         if (obj7.isAndroid()) {
-          jsx(tmp10(9432).APNGPlayer, { url: fallbackUrl, style: size, autoplay: true, onLoad });
+          jsx(tmp10(9431).APNGPlayer, { url: fallbackUrl, style: size, autoplay: true, onLoad });
         }
       }
       const obj4 = { uri: fallbackUrl };
@@ -308,7 +308,7 @@ export default function BadgeArtImage(style) {
       const obj3 = PlatformUtils;
       const tmp = require;
       if (obj3.isAndroid()) {
-        tmp6 = jsx(tmp(9432).APNGPlayer, { url, style: size, autoplay: true, onLoad });
+        tmp6 = jsx(tmp(9431).APNGPlayer, { url, style: size, autoplay: true, onLoad });
         tmp3 = jsx;
       }
     }

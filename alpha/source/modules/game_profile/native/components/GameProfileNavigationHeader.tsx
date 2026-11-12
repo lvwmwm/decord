@@ -1,10 +1,10 @@
-// Module ID: 10440
-// Function ID: 10441
+// Module ID: 10438
+// Function ID: 10439
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 5243, 575, 5839, 1652, 5485, 1411, 7932, 5957, 5866, 10256, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 5839, 1652, 5485, 1411, 7932, 5957, 5866, 10254, 2]
 // Exports: default
 
-// Module 10440 (GameProfileNavigationHeader)
+// Module 10438 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
 import timing_timing from "timing/timing" /* 5485 */;
@@ -176,8 +176,8 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp20Result) {
       const obj10 = { style: tmp.rankPillContainer, children: items9 };
       const obj11 = { rank: game.l30Rank, compact: true };
-      items9 = [closure_6(tmp4(10256), obj11), ];
-      const obj12 = { style: items10, children: closure_6(application(10256), obj13) };
+      items9 = [closure_6(tmp4(10254), obj11), ];
+      const obj12 = { style: items10, children: closure_6(application(10254), obj13) };
       items10 = [StyleSheet.absoluteFill, animatedStyle1];
       const View = tmp4(1652).View;
       obj13 = { rank: game.l30Rank };

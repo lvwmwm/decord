@@ -1,15 +1,15 @@
-// Module ID: 9204
-// Function ID: 9205
+// Module ID: 9203
+// Function ID: 9204
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [6877, 5092, 5175, 1072, 1113, 2185, 9122, 11, 6295, 9124, 9126, 2]
+// Dependencies: [6877, 5092, 5175, 1072, 1113, 2185, 9121, 11, 6295, 9123, 9125, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 9204 (StageRaiseHandSystemMessage)
+// Module 9203 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl5 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9122 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9124 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9121 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9123 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6877 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
@@ -84,6 +84,6 @@ export function createStageRaiseHandSystemMessage(message) {
       tmp10 = obj5;
     }
   }
-  const merged = Object.assign(tmp6(9126)(message));
+  const merged = Object.assign(tmp6(9125)(message));
   return obj3;
 }

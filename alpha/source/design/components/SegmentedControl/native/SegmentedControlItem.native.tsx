@@ -1,15 +1,15 @@
-// Module ID: 11191
-// Function ID: 11192
+// Module ID: 11185
+// Function ID: 11186
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 5243, 575, 11192, 1652, 5876, 1377, 1113, 5866, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 11186, 1652, 5876, 1377, 1113, 5866, 2]
 // Exports: SegmentedControlItem
 
-// Module 11191 (SegmentedControlItem)
+// Module 11185 (SegmentedControlItem)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import spring_spring from "spring/spring" /* 5876 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 11192 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 11186 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

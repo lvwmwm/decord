@@ -1,23 +1,23 @@
-// Module ID: 8759
-// Function ID: 8760
+// Module ID: 8758
+// Function ID: 8759
 // Name: AnalyticsActions
-// Dependencies: [5, 8760, 1359, 8742, 1072, 8598, 8762, 8738, 8763, 8765, 8768, 5282, 6004, 1252, 8769, 8715, 1377, 1266, 8774, 5278, 2]
+// Dependencies: [5, 8759, 1359, 8741, 1072, 8598, 8761, 8737, 8762, 8764, 8767, 5282, 6004, 1252, 8768, 8714, 1377, 1266, 8773, 5278, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAdSessionProperties, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAdContentRenderingFailure, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestContentRenderingFailure, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 8759 (AnalyticsActions)
+// Module 8758 (AnalyticsActions)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import QuestTypes from "QuestTypes" /* 5278 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
-import QuestDataUtils from "QuestDataUtils" /* 8738 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 8762 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8763 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8765 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8768 */;
+import QuestDataUtils from "QuestDataUtils" /* 8737 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 8761 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8762 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8764 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8767 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8760 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8759 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1359 */;
-import QuestStore from "QuestStore" /* 8742 */;
+import QuestStore from "QuestStore" /* 8741 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;

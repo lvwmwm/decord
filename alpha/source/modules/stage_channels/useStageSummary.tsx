@@ -1,10 +1,10 @@
-// Module ID: 12865
-// Function ID: 12866
+// Module ID: 12859
+// Function ID: 12860
 // Name: useStageSummary
 // Dependencies: [6886, 6880, 1113, 2]
 // Exports: default
 
-// Module 12865 (useStageSummary)
+// Module 12859 (useStageSummary)
 import intl3 from "intl" /* 1113 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6880 */;
 import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6886 */;

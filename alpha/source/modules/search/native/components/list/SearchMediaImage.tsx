@@ -1,18 +1,18 @@
-// Module ID: 19308
-// Function ID: 19309
+// Module ID: 19303
+// Function ID: 19304
 // Name: SearchMediaImage
-// Dependencies: [32, 19, 17, 5092, 6974, 1072, 21, 5243, 5484, 5250, 8572, 11793, 8014, 5843, 504, 12331, 1492, 14513, 1377, 5957, 1113, 10340, 11029, 1403, 6795, 8566, 10261, 11063, 2]
+// Dependencies: [32, 19, 17, 5092, 6974, 1072, 21, 5243, 5484, 5250, 8572, 11787, 8014, 5843, 504, 12325, 1492, 14509, 1377, 5957, 1113, 10338, 11023, 1403, 6795, 8566, 10259, 11057, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 19308 (SearchMediaImage)
+// Module 19303 (SearchMediaImage)
 import Constants from "Constants" /* 1072 */;
 import ImageWarningIcon from "ImageWarningIcon" /* 8014 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8566 */;
 import ObscureMediaModels from "ObscureMediaModels" /* 8572 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 10261 */;
-import AttachmentPreview from "AttachmentPreview" /* 11063 */;
-import generated_SpoilerIcon from "generated/SpoilerIcon" /* 11793 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 14513 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 10259 */;
+import AttachmentPreview from "AttachmentPreview" /* 11057 */;
+import generated_SpoilerIcon from "generated/SpoilerIcon" /* 11787 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 14509 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -194,7 +194,7 @@ export function SearchAttachmentMediaImage(attachment) {
   const authorId = attachment.authorId;
   const merged = Object.assign(attachment, Object.assign({ attachment: 0, channelId: 0, authorId: 0 }));
   dependencyMap = undefined;
-  let obj = attachment(11029);
+  let obj = attachment(11023);
   const enabledHarmTypesBitmaskForChannelAndAuthorId = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   let num = attachment.flags;
   const hasFlag = attachment(1403).hasFlag;
@@ -227,7 +227,7 @@ export function SearchEmbedMediaImage(embed) {
   const authorId = embed.authorId;
   const merged = Object.assign(embed, Object.assign({ embed: 0, sources: 0, messageId: 0, channelId: 0, authorId: 0 }));
   let tmp2 = embed;
-  let obj = embed(11029);
+  let obj = embed(11023);
   let closure_3 = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   const obj2 = embed(6795);
   let closure_4 = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
@@ -249,8 +249,8 @@ export function SearchEmbedMediaImage(embed) {
       if (flag2 == null) {
         flag2 = false;
       }
-      const getObscureReasonForEmbed = tmp2(14513).getObscureReasonForEmbed;
-      const tmp2Result = tmp2(14513);
+      const getObscureReasonForEmbed = tmp2(14509).getObscureReasonForEmbed;
+      const tmp2Result = tmp2(14509);
       if (!flag2) {
         flag2 = closure_4;
       }

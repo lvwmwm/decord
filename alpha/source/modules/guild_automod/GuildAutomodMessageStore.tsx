@@ -1,16 +1,16 @@
-// Module ID: 9099
-// Function ID: 9100
+// Module ID: 9098
+// Function ID: 9099
 // Name: GuildAutomodMessageStore
-// Dependencies: [5092, 6309, 1072, 8950, 9100, 6311, 8644, 11, 504, 572, 2]
+// Dependencies: [5092, 6309, 1072, 8949, 9099, 6311, 8644, 11, 504, 572, 2]
 
-// Module 9099 (GuildAutomodMessageStore)
+// Module 9098 (GuildAutomodMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6311 */;
 import AutomodMessageUtils from "AutomodMessageUtils" /* 8644 */;
-import MessageQueue from "MessageQueue" /* 8950 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 9100 */;
+import MessageQueue from "MessageQueue" /* 8949 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 9099 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import MessageStore from "MessageStore" /* 6309 */;
 import Constants from "Constants" /* 1072 */;

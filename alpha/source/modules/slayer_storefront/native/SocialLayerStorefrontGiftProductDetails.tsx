@@ -1,15 +1,15 @@
-// Module ID: 11729
-// Function ID: 11730
+// Module ID: 11723
+// Function ID: 11724
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 7196, 11673, 1411, 9449, 5957, 5866, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 7196, 11667, 1411, 9448, 5957, 5866, 2]
 // Exports: default
 
-// Module 11729 (SocialLayerStorefrontGiftProductDetails)
+// Module 11723 (SocialLayerStorefrontGiftProductDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9449 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9448 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -46,7 +46,7 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
   let tmp = closure_8();
   let obj = getOrFetchApplication(7196);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  const obj2 = getOrFetchApplication(11673);
+  const obj2 = getOrFetchApplication(11667);
   let obj3 = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj2.useFormattedSKUPrice(obj3).userPrice;
   const items = [getOrFetchApplication];

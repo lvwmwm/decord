@@ -1,14 +1,14 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17403
+// Function ID: 17404
 // Name: useOrbBalanceEntrypoint
-// Dependencies: [5, 19, 17409, 5489, 17410, 2118, 9989, 15833, 17426, 17412, 2]
+// Dependencies: [5, 19, 17404, 5489, 17405, 2118, 9988, 15828, 17421, 17407, 2]
 // Exports: openBalanceWidgetActionSheet, useIsOrbWalletEntrypointEnabled, useOrbBalanceEntrypoint
 
-// Module 17408 (useOrbBalanceEntrypoint)
+// Module 17403 (useOrbBalanceEntrypoint)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 15833 */;
-import OrbWalletConstants from "OrbWalletConstants" /* 17409 */;
-import OrbchievementsExperiment from "OrbchievementsExperiment" /* 17426 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 15828 */;
+import OrbWalletConstants from "OrbWalletConstants" /* 17404 */;
+import OrbchievementsExperiment from "OrbchievementsExperiment" /* 17421 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -122,7 +122,7 @@ export function useOrbBalanceEntrypoint(location) {
   let obj2 = require("OrbchievementsExperiment");
   const tmp3 = obj2.useIsOrbchievementsMobileEnabled({ location: _location }) && enabled;
   _require = tmp3;
-  const tmpResult = tmp(17412);
+  const tmpResult = tmp(17407);
   const orbChallengeUnreadState = tmpResult.useOrbChallengeUnreadState({ enabled: tmp3 });
   const items = [tmp3];
   ({ hasUnreadUpdate, notificationType } = orbChallengeUnreadState);

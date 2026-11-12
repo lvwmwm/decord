@@ -1,17 +1,17 @@
-// Module ID: 18858
-// Function ID: 18859
+// Module ID: 18853
+// Function ID: 18854
 // Name: useGuildActionRows
-// Dependencies: [32, 7017, 8670, 1072, 14673, 7216, 7202, 7214, 7181, 7016, 563, 7197, 7019, 14576, 7219, 7179, 7160, 6996, 10609, 18816, 7221, 5479, 18859, 9494, 5076, 2]
+// Dependencies: [32, 7017, 8670, 1072, 14669, 7216, 7202, 7214, 7181, 7016, 563, 7197, 7019, 14572, 7219, 7179, 7160, 6996, 10607, 18811, 7221, 5479, 18854, 9493, 5076, 2]
 // Exports: default
 
-// Module 18858 (useGuildActionRows)
+// Module 18853 (useGuildActionRows)
 import Constants from "Constants" /* 1072 */;
 import useIsNewMemberDefault from "useIsNewMember" /* 7019 */;
 import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7160 */;
 import GuildSidebarConstants from "GuildSidebarConstants" /* 8670 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 10609 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 14673 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 18816 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 10607 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 14669 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 18811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7017 */;
 import size from "module_2" /* 2 */;

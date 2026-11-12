@@ -1,10 +1,10 @@
-// Module ID: 13287
-// Function ID: 13288
+// Module ID: 13281
+// Function ID: 13282
 // Name: react
 // Dependencies: [19, 2]
 // Exports: usePlaceholderWidth
 
-// Module 13287 (react)
+// Module 13281 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 11359
-// Function ID: 11360
+// Module ID: 11353
+// Function ID: 11354
 // Name: CommandPermissionUtils
-// Dependencies: [5096, 5114, 6282, 1072, 11360, 11350, 5922, 2116, 1084, 5890, 38, 8657, 8660, 2]
+// Dependencies: [5096, 5114, 6282, 1072, 11354, 11344, 5922, 2116, 1084, 5890, 38, 8657, 8660, 2]
 // Exports: computeAllowedForChannel, hasAccess
 
-// Module 11359 (CommandPermissionUtils)
+// Module 11353 (CommandPermissionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
@@ -15,7 +15,7 @@ import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5922 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8657 */;
 import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 8660 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 11350 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 11344 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 

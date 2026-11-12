@@ -1,12 +1,12 @@
-// Module ID: 18805
-// Function ID: 18806
+// Module ID: 18800
+// Function ID: 18801
 // Name: HubUnreadUtils
-// Dependencies: [14600, 6952, 504, 11, 14592, 2]
+// Dependencies: [14596, 6952, 504, 11, 14588, 2]
 // Exports: useHubUnreadCount
 
-// Module 18805 (HubUnreadUtils)
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 14592 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 14600 */;
+// Module 18800 (HubUnreadUtils)
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 14588 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 14596 */;
 import ReadStateStore from "ReadStateStore" /* 6952 */;
 import size from "module_2" /* 2 */;
 

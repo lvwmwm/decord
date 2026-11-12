@@ -1,10 +1,10 @@
-// Module ID: 12336
-// Function ID: 12337
+// Module ID: 12330
+// Function ID: 12331
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 2162, 2142, 5373, 7286, 6992, 8472, 38, 7249, 2116, 12337, 5889, 2]
+// Dependencies: [32, 5, 19, 2162, 2142, 5373, 7286, 6992, 8472, 38, 7249, 2116, 12331, 5889, 2]
 // Exports: default
 
-// Module 12336 (useLoadMessageContentEntries)
+// Module 12330 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 2116 */;
 import Constants from "Constants" /* 2142 */;
@@ -679,7 +679,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(12337);
+      let tmp3Result = tmp3(12331);
       obj = { component: obj2, message };
       obj2 = { contentInventoryEntry: tmp2.contentInventoryEntry };
       if (null == tmp3Result.transformToRowGeneratedContentInventoryEntryComponent(obj)) {

@@ -1,10 +1,10 @@
-// Module ID: 9133
-// Function ID: 9134
+// Module ID: 9132
+// Function ID: 9133
 // Name: canAddNewReactions
 // Dependencies: [6874, 5175, 1072, 2]
 // Exports: default
 
-// Module 9133 (canAddNewReactions)
+// Module 9132 (canAddNewReactions)
 import Constants from "Constants" /* 1072 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 6874 */;
 import PermissionStore from "PermissionStore" /* 5175 */;

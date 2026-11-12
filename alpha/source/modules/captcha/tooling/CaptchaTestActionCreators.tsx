@@ -1,10 +1,10 @@
-// Module ID: 18209
-// Function ID: 18210
+// Module ID: 18204
+// Function ID: 18205
 // Name: CaptchaTestActionCreators
 // Dependencies: [5, 1072, 1282, 2]
 // Exports: testCaptcha
 
-// Module 18209 (CaptchaTestActionCreators)
+// Module 18204 (CaptchaTestActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

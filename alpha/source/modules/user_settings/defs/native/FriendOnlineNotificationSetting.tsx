@@ -1,14 +1,14 @@
-// Module ID: 18019
-// Function ID: 18020
+// Module ID: 18014
+// Function ID: 18015
 // Name: FriendOnlineNotificationSetting
-// Dependencies: [9136, 12317, 1113, 5068, 18020, 2]
+// Dependencies: [9135, 12311, 1113, 5068, 18015, 2]
 
-// Module 18019 (FriendOnlineNotificationSetting)
+// Module 18014 (FriendOnlineNotificationSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5068 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 18020 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 18015 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

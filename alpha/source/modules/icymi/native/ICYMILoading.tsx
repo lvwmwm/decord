@@ -1,18 +1,18 @@
-// Module ID: 19156
-// Function ID: 19157
+// Module ID: 19151
+// Function ID: 19152
 // Name: ICYMILoading
-// Dependencies: [19, 17, 21, 19097, 575, 14852, 1652, 19136, 2]
+// Dependencies: [19, 17, 21, 19092, 575, 14848, 1652, 19131, 2]
 // Exports: ICYMILoading
 
-// Module 19156 (ICYMILoading)
+// Module 19151 (ICYMILoading)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 14852 */;
-import ICYMIShared from "ICYMIShared" /* 19136 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 14848 */;
+import ICYMIShared from "ICYMIShared" /* 19131 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19097 */;
+import createICYMIStyles from "createICYMIStyles" /* 19092 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

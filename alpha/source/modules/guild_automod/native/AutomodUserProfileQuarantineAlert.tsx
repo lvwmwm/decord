@@ -1,10 +1,10 @@
-// Module ID: 14070
-// Function ID: 14071
+// Module ID: 14066
+// Function ID: 14067
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 5155, 5114, 14063, 1072, 5161, 21, 5243, 575, 6277, 1113, 1187, 14071, 5866, 14072, 8537, 563, 5181, 5836, 1252, 2]
+// Dependencies: [32, 109, 19, 17, 502, 5155, 5114, 14059, 1072, 5161, 21, 5243, 575, 6277, 1113, 1187, 14067, 5866, 14068, 8537, 563, 5181, 5836, 1252, 2]
 // Exports: default
 
-// Module 14070 (AutomodUserProfileQuarantineAlert)
+// Module 14066 (AutomodUserProfileQuarantineAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5181 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import AlertDefault from "Alert" /* 6277 */;
 import openUserSettings from "openUserSettings" /* 8537 */;
-import Constants2 from "Constants" /* 14063 */;
+import Constants2 from "Constants" /* 14059 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ let closure_17;
 let map1;
 let size;
 let tmp4;
-const AssetRegistryDefault = tmp4(14071);
+const AssetRegistryDefault = tmp4(14067);
 function ChatBlockedAlert(arg0) {
   let buttonCta;
   let description;
@@ -85,7 +85,7 @@ function PerServerProfileAlert(arg0) {
     const intl = intl6.intl;
     stringResult = intl.string(intl6.t.TBeZmG);
   }
-  const tmp2Result = tmp2(14072);
+  const tmp2Result = tmp2(14068);
   [closure_129_0, tmp8] = tmp2Result.useOpenFixQuarantinedProfileModal({ guildId });
   _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {

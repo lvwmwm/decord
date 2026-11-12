@@ -1,10 +1,10 @@
-// Module ID: 14017
-// Function ID: 14018
+// Module ID: 14013
+// Function ID: 14014
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1404, 502, 5155, 5149, 5114, 14018, 7359, 1072, 21, 5243, 575, 1113, 7401, 7672, 5866, 5484, 12, 5839, 7024, 12394, 10807, 1187, 1411, 5250, 38, 7852, 7871, 504, 1252, 6004, 6854, 5503, 7891, 5873, 5489, 12398, 8410, 2]
+// Dependencies: [32, 19, 17, 1404, 502, 5155, 5149, 5114, 14014, 7359, 1072, 21, 5243, 575, 1113, 7401, 7672, 5866, 5484, 12, 5839, 7024, 12388, 10801, 1187, 1411, 5250, 38, 7852, 7871, 504, 1252, 6004, 6854, 5503, 7891, 5873, 5489, 12392, 8410, 2]
 // Exports: default
 
-// Module 14017 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 14013 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -22,7 +22,7 @@ import Constants2 from "Constants" /* 7359 */;
 import ConnectionsUtils from "ConnectionsUtils" /* 7401 */;
 import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7672 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 12398 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 12392 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -31,7 +31,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import GuildRoleStore from "GuildRoleStore" /* 5149 */;
 import GuildStore from "GuildStore" /* 5114 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 14018 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 14014 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -158,10 +158,10 @@ class PopoutChecks {
         }
         if (includes(str)) {
           const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-          tmp10 = authStore3(tmp2(12394), obj2);
+          tmp10 = authStore3(tmp2(12388), obj2);
         } else if (null != tmp7) {
           const obj3 = { style: closure_1.botTag, verified: false };
-          tmp10 = authStore3(tmp2(10807), obj3);
+          tmp10 = authStore3(tmp2(10801), obj3);
         }
         const items = [closure_1.popoutChecksGroup, ];
         let prop = null;
@@ -184,7 +184,7 @@ class PopoutChecks {
         items1 = [tmp22Result, , , ];
         let tmp25 = null;
         if (null != tmp7) {
-          const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+          const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
           const Avatar = tmp9(1187).Avatar;
           tmp25 = authStore3(Avatar, obj7);
         }

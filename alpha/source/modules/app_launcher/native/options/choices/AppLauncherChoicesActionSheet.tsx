@@ -1,10 +1,10 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13397
+// Function ID: 13398
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 19, 1498, 21, 7822, 1627, 1377, 6899, 7681, 5489, 7705, 13404, 13405, 2]
+// Dependencies: [32, 19, 1498, 21, 7822, 1627, 1377, 6899, 7681, 5489, 7705, 13398, 13399, 2]
 // Exports: default
 
-// Module 13403 (AppLauncherChoicesActionSheet)
+// Module 13397 (AppLauncherChoicesActionSheet)
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6899 */;

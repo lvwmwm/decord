@@ -1,18 +1,18 @@
-// Module ID: 14775
-// Function ID: 14776
+// Module ID: 14771
+// Function ID: 14772
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 5176, 5092, 13703, 1072, 21, 504, 1099, 6004, 11899, 14626, 1196, 7167, 6854, 6859, 14768, 1113, 2]
+// Dependencies: [19, 5176, 5092, 13699, 1072, 21, 504, 1099, 6004, 11893, 14622, 1196, 7167, 6854, 6859, 14764, 1113, 2]
 
-// Module 14775 (ChatInputGuardLurking)
+// Module 14771 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
 import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6859 */;
 import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7167 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11899 */;
-import ChatInputConstants from "ChatInputConstants" /* 13703 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 14626 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11893 */;
+import ChatInputConstants from "ChatInputConstants" /* 13699 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 14622 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 5176 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function ChatInputGuardLurking(channel) {
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(14768);
+    guildId(14764);
     const intl9 = tmp2(1113).intl;
     const intl10 = tmp2(1113).intl;
     const intl11 = tmp2(1113).intl;
@@ -107,7 +107,7 @@ const memoResult = react.memo(function ChatInputGuardLurking(channel) {
   } else {
     let obj9;
     const tmp15 = jsx;
-    const tmp17 = guildId(14768);
+    const tmp17 = guildId(14764);
     if (null != channel.pendingGameProfileReturn) {
       let obj3 = { type: "button-action", message: intl6.string(tmp2(1113).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1113).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1113).t.RLch70), buttonPrimaryOnPress: callback2 };
       intl6 = tmp2(1113).intl;

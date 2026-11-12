@@ -1,13 +1,13 @@
-// Module ID: 17726
-// Function ID: 17727
+// Module ID: 17721
+// Function ID: 17722
 // Name: GuildRoleSubscriptionsCancelSetting
-// Dependencies: [9136, 1072, 12317, 1113, 17727, 2]
+// Dependencies: [9135, 1072, 12311, 1113, 17722, 2]
 
-// Module 17726 (GuildRoleSubscriptionsCancelSetting)
+// Module 17721 (GuildRoleSubscriptionsCancelSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

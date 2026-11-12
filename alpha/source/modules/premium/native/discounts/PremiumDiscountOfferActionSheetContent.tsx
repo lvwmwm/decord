@@ -1,9 +1,9 @@
-// Module ID: 19620
-// Function ID: 19621
+// Module ID: 19615
+// Function ID: 19616
 // Name: PremiumDiscountOfferActionSheetContent
-// Dependencies: [19, 17, 1387, 21, 5243, 575, 10486, 1113, 15844, 8007, 8781, 2171, 18213, 5866, 18217, 5873, 9369, 2]
+// Dependencies: [19, 17, 1387, 21, 5243, 575, 10484, 1113, 15839, 8007, 8780, 2171, 18208, 5866, 18212, 5873, 9368, 2]
 
-// Module 19620 (PremiumDiscountOfferActionSheetContent)
+// Module 19615 (PremiumDiscountOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -12,12 +12,12 @@ import PremiumUtils from "PremiumUtils" /* 2171 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import components_Button_Button from "components/Button/Button" /* 5873 */;
 import FolderIcon from "FolderIcon" /* 8007 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8781 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9369 */;
-import UserIcon from "UserIcon" /* 10486 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 15844 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 18213 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 18217 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8780 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9368 */;
+import UserIcon from "UserIcon" /* 10484 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 15839 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 18208 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 18212 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

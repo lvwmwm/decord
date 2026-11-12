@@ -1,9 +1,9 @@
-// Module ID: 11994
-// Function ID: 11995
+// Module ID: 11988
+// Function ID: 11989
 // Name: BlockConfirmationActionSheet
-// Dependencies: [5, 32, 19, 17, 5092, 5185, 1385, 8073, 11993, 1072, 6847, 21, 5243, 575, 8415, 1113, 5976, 7680, 7379, 1187, 1627, 7852, 7871, 10847, 504, 7286, 5503, 1252, 5507, 8491, 5866, 6288, 7568, 5489, 11995, 2118, 1260, 5873, 8072, 5505, 6853, 6852, 2185, 5949, 2]
+// Dependencies: [5, 32, 19, 17, 5092, 5185, 1385, 8073, 11987, 1072, 6847, 21, 5243, 575, 8415, 1113, 5976, 7680, 7379, 1187, 1627, 7852, 7871, 10841, 504, 7286, 5503, 1252, 5507, 8491, 5866, 6288, 7568, 5489, 11989, 2118, 1260, 5873, 8072, 5505, 6853, 6852, 2185, 5949, 2]
 
-// Module 11994 (BlockConfirmationActionSheet)
+// Module 11988 (BlockConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
@@ -27,7 +27,7 @@ import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import RelationshipStore from "RelationshipStore" /* 5185 */;
 import UserStore from "UserStore" /* 1385 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11993 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11987 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -183,7 +183,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
   const analyticsLocations = tmp4(items).analyticsLocations;
   const tmp5 = _slicedToArray(react.useState(false), 2);
   [tmp6, c5] = tmp5;
-  let closure_6 = channelId(10847)();
+  let closure_6 = channelId(10841)();
   let obj = userId(504);
   const items1 = [UserStore];
   const items2 = [userId];
@@ -277,7 +277,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
               obj.track(constants3.USER_REMEDIATION_ACTION, obj2);
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
               ActionSheetActionCreatorsDefault;
-              const tmp3 = asyncRequire(11995, dependencyMap.paths);
+              const tmp3 = asyncRequire(11989, dependencyMap.paths);
               const obj3 = { userId, channelId, onBlock: dependencyMap, onSuccess: _slicedToArray, onIgnore: _asyncToGenerator, impressionName: discord_common_AnalyticsUtils.ImpressionNames.IGNORE_USER_CONFIRMATION };
               openLazy(tmp3, authStore2, obj3, "replaceTopSheet");
             },

@@ -1,10 +1,10 @@
-// Module ID: 10980
-// Function ID: 10981
+// Module ID: 10974
+// Function ID: 10975
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 5092, 10963, 1083, 21, 5243, 1357, 575, 10981, 10982, 10962, 5866, 5957, 1090, 11007, 6686, 11012, 11013, 1094, 5889, 1113, 5931, 2]
+// Dependencies: [19, 17, 5092, 10957, 1083, 21, 5243, 1357, 575, 10975, 10976, 10956, 5866, 5957, 1090, 11001, 6686, 11006, 11007, 1094, 5889, 1113, 5931, 2]
 // Exports: default
 
-// Module 10980 (MessagePreviewText)
+// Module 10974 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -15,15 +15,15 @@ import isForwardMessageDefault from "isForwardMessage" /* 5889 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5931 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import useMessageAuthor from "useMessageAuthor" /* 6686 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10962 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 10981 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 10982 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 11007 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 11012 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 11013 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 10956 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 10975 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 10976 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 11001 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 11006 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 11007 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10963 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10957 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
@@ -231,7 +231,7 @@ export default function MessagePreviewText(message) {
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(11007).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(11001).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
@@ -254,7 +254,7 @@ export default function MessagePreviewText(message) {
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(10982).ChannelRowPreview;
+        const ChannelRowPreview = tmp(10976).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }

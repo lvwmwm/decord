@@ -1,10 +1,10 @@
-// Module ID: 15988
-// Function ID: 15989
+// Module ID: 15983
+// Function ID: 15984
 // Name: OngoingCallStatusLabel
-// Dependencies: [19, 502, 6960, 5918, 21, 504, 1113, 15987, 1187, 2]
+// Dependencies: [19, 502, 6960, 5918, 21, 504, 1113, 15982, 1187, 2]
 // Exports: default
 
-// Module 15988 (OngoingCallStatusLabel)
+// Module 15983 (OngoingCallStatusLabel)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

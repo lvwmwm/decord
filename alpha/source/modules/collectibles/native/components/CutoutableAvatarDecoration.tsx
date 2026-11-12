@@ -1,10 +1,10 @@
-// Module ID: 9436
-// Function ID: 9437
+// Module ID: 9435
+// Function ID: 9436
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 5244, 21, 563, 1411, 1377, 9437, 9433, 5957, 2]
+// Dependencies: [19, 17, 5244, 21, 563, 1411, 1377, 9436, 9432, 5957, 2]
 // Exports: default
 
-// Module 9436 (CutoutableAvatarDecoration)
+// Module 9435 (CutoutableAvatarDecoration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;

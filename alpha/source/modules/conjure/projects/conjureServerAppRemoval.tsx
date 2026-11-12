@@ -1,10 +1,10 @@
-// Module ID: 14049
-// Function ID: 14050
+// Module ID: 14045
+// Function ID: 14046
 // Name: conjureServerAppRemoval
 // Dependencies: [5, 19, 2162, 5173, 5155, 5114, 5175, 5185, 1385, 1072, 7287, 5891, 504, 12, 6854, 7197, 6992, 2]
 // Exports: conjureDeleteAppChannelItems, loadConjureServerApp, useConjureServerApp
 
-// Module 14049 (conjureServerAppRemoval)
+// Module 14045 (conjureServerAppRemoval)
 import Constants from "Constants" /* 1072 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5173 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6992 */;
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f107865 = () => {
+const f107872 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -41,7 +41,7 @@ function readConjureServerApp(arg0, arg1) {
   let obj4;
   let tmp22;
   let tmp31;
-  const f107863 = (item) => {
+  const f107870 = (item) => {
     obj = guild(conjureProjectId[11]);
     return obj.computeChannelName(item, user, RelationshipStore);
   };
@@ -147,7 +147,7 @@ function readConjureServerApp(arg0, arg1) {
           });
         }
         ({ id: obj2.guildId, name: obj2.guildName } = guild);
-        const obj3 = { projectId: conjureProjectId, guildId: null, guildName: null, targetAppName: application.name, targetIsPreview: endsWithResult, deletableChannelNames: found3.map(f107863), keptChannelNames: found4.map(f107863), previewApp: tmp22, rest: tmp31 };
+        const obj3 = { projectId: conjureProjectId, guildId: null, guildName: null, targetAppName: application.name, targetIsPreview: endsWithResult, deletableChannelNames: found3.map(f107870), keptChannelNames: found4.map(f107870), previewApp: tmp22, rest: tmp31 };
         found3 = items.filter(canDeleteChannel);
         found4 = items.filter((item) => !PermissionStore.can(constants.MANAGE_CHANNELS, item));
         tmp22 = null;
@@ -272,7 +272,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f107865);
+    application.catch(f107872);
   }
 }
 function loadMissingApplication() {
@@ -305,10 +305,10 @@ obj = function _loadMissingApplication() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const tmp4 = closure_0;
+            const tmp10 = closure_0;
             if (null == application.getApplication(closure_0)) {
               const obj2 = require("ApplicationActionCreators");
-              application = obj2.fetchApplication(tmp4);
+              application = obj2.fetchApplication(tmp10);
               c2 = 1;
               c1 = 1;
               const obj5 = {
@@ -330,9 +330,9 @@ obj = function _loadMissingApplication() {
         }
         c1 = 3;
         return { value: "HermesInternal", done: null };
-      } catch (tmp9) {
+      } catch (tmp6) {
         c1 = 3;
-        throw tmp9;
+        throw tmp6;
       }
     }
   });
@@ -370,7 +370,7 @@ export function useConjureServerApp(guildId, applicationId) {
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
         application = obj2.fetchApplication(tmp);
-        application.catch(f107865);
+        application.catch(f107872);
       }
     }
   }, items2);

@@ -1,17 +1,17 @@
-// Module ID: 12064
-// Function ID: 12065
+// Module ID: 12058
+// Function ID: 12059
 // Name: UserProfileGameDetailsRow
-// Dependencies: [19, 17, 21, 5243, 12048, 575, 12065, 12066, 12067, 5866, 12070, 2150, 12071, 12073, 2]
+// Dependencies: [19, 17, 21, 5243, 12042, 575, 12059, 12060, 12061, 5866, 12064, 2150, 12065, 12067, 2]
 
-// Module 12064 (UserProfileGameDetailsRow)
+// Module 12058 (UserProfileGameDetailsRow)
 import nativeDefault from "native" /* 575 */;
 import StringUtils from "StringUtils" /* 2150 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12048 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12065 */;
-import useWidgetGamePressDefault from "useWidgetGamePress" /* 12066 */;
-import UserProfileWidgetGameCover from "UserProfileWidgetGameCover" /* 12067 */;
-import UserProfileWidgetGameTagsDefault from "UserProfileWidgetGameTags" /* 12073 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12042 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12059 */;
+import useWidgetGamePressDefault from "useWidgetGamePress" /* 12060 */;
+import UserProfileWidgetGameCover from "UserProfileWidgetGameCover" /* 12061 */;
+import UserProfileWidgetGameTagsDefault from "UserProfileWidgetGameTags" /* 12067 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -84,7 +84,7 @@ const memoResult = react.memo(function UserProfileGameDetailsRow(arg0) {
   if (null != editableCommentWidgetType) {
     const obj5 = { widgetType: editableCommentWidgetType, gameId: null, comment: null };
     ({ gameId: obj8.gameId, comment: obj8.comment } = game);
-    tmp7Result = tmp10(tmp3(12070), obj5);
+    tmp7Result = tmp10(tmp3(12064), obj5);
   } else {
     let trimmed;
     const isNullOrEmpty = StringUtils.isNullOrEmpty;
@@ -97,7 +97,7 @@ const memoResult = react.memo(function UserProfileGameDetailsRow(arg0) {
     if (tmp7Result) {
       const obj6 = { style: tmp2.comment, children: items3 };
       const obj7 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-      const QuoteIcon = tmp11(12071).QuoteIcon;
+      const QuoteIcon = tmp11(12065).QuoteIcon;
       items3 = [hasOwnProperty(QuoteIcon, obj7), ];
       const obj9 = { variant: "body-sm/normal", color: "text-muted", lineClamp: 3, style: tmp2.commentText, children: game.comment };
       items3[1] = hasOwnProperty(Text_Text.Text, obj9);

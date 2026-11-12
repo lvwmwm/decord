@@ -1,10 +1,10 @@
-// Module ID: 9462
-// Function ID: 9463
+// Module ID: 9461
+// Function ID: 9462
 // Name: UserProfilePreview
-// Dependencies: [32, 19, 17, 8476, 7896, 21, 5243, 575, 504, 8416, 8524, 8540, 9463, 8535, 8475, 8495, 9335, 8343, 8541, 8521, 5314, 8517, 8501, 8545, 9427, 8555, 9464, 9465, 15356, 15367, 9425, 2]
+// Dependencies: [32, 19, 17, 8476, 7896, 21, 5243, 575, 504, 8416, 8524, 8540, 9462, 8535, 8475, 8495, 9334, 8343, 8541, 8521, 5314, 8517, 8501, 8545, 9426, 8555, 9463, 9464, 15353, 15364, 9424, 2]
 // Exports: default
 
-// Module 9462 (UserProfilePreview)
+// Module 9461 (UserProfilePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import scaleProfileFrameDefault from "scaleProfileFrame" /* 8521 */;
@@ -161,7 +161,7 @@ export default function UserProfilePreview(compact) {
   isPremiumTryItOut(8524)({ user, displayProfile: tmp5, pendingThemeColors, isPreview: isPremiumTryItOut });
   const tmp8 = closure_12(flag, null != primaryColor, maxWidth);
   const tmp9 = isPremiumTryItOut(8540)();
-  const obj2 = guildId(9463);
+  const obj2 = guildId(9462);
   const customStatusActivity = obj2.useCustomStatusActivity();
   let tmp31Result5 = null != customStatusActivity && !flag;
   const tmpResult = tmp(8535);
@@ -220,7 +220,7 @@ export default function UserProfilePreview(compact) {
   const tmp4ResultResult = tmp4Result(skuId1);
   dependencyMap = tmp4ResultResult;
   const obj5 = { userId: user.id, image: pendingAvatar };
-  const tmpResult7 = tmp(9335);
+  const tmpResult7 = tmp(9334);
   const pendingAvatarSrc = tmpResult7.getPendingAvatarSrc(obj5);
   const tmpResult8 = tmp(8343);
   const userPrimaryGuild = tmpResult8.useUserPrimaryGuild(pendingPrimaryGuildId);
@@ -272,7 +272,7 @@ export default function UserProfilePreview(compact) {
   }
   items4 = [tmp31Result, , ];
   const obj10 = { onLayout: callback, style: tmp8.profileContentContainer, children: items5 };
-  const obj11 = { user, displayProfile: tmp5, bannerHeight: tmp(9427).PFX_MOBILE_ACTION_SHEET_BANNER_HEIGHT, pendingBanner, pendingAvatarSrc, pendingAccentColor: tmp39, pendingThemeColors: tmp40, disableInteraction: true };
+  const obj11 = { user, displayProfile: tmp5, bannerHeight: tmp(9426).PFX_MOBILE_ACTION_SHEET_BANNER_HEIGHT, pendingBanner, pendingAvatarSrc, pendingAccentColor: tmp39, pendingThemeColors: tmp40, disableInteraction: true };
   tmp39 = undefined;
   const tmp4Result8 = isPremiumTryItOut(8545);
   if (null != pendingAccentColor) {
@@ -289,7 +289,7 @@ export default function UserProfilePreview(compact) {
   items7 = [, , ];
   ({ profileContentWrapper: arr9[0], profileContent: arr9[1] } = tmp9);
   let tmp42 = !tmp31Result5;
-  const tmp4Result9 = isPremiumTryItOut(9464);
+  const tmp4Result9 = isPremiumTryItOut(9463);
   if (!tmp31Result5) {
     tmp42 = { paddingTop };
     const obj15 = { paddingTop };
@@ -298,11 +298,11 @@ export default function UserProfilePreview(compact) {
   if (tmp31Result5) {
     const obj16 = { customStatusActivity, themeType: constants.PREVIEW, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null };
     ({ customStatusBubble: obj18.style, emojiOnlyCustomStatusBubble: obj18.emojiOnlyStyle } = tmp9);
-    tmp31Result5 = tmp31(tmp4(9465), obj16);
+    tmp31Result5 = tmp31(tmp4(9464), obj16);
   }
   items8 = [tmp31Result5, , ];
   const obj17 = { user, themeType: constants.PREVIEW, displayName, pronouns: tmp47, badges: items1, badgeContainerBackground: containerBackground, showBadgeToastOnPress: false, pendingDisplayNameStyles, primaryGuildOverride: tmp49, guildId, hideBadges: flag3 };
-  const tmp4Result10 = isPremiumTryItOut(15356);
+  const tmp4Result10 = isPremiumTryItOut(15353);
   if (displayName == null) {
     displayName = pendingGlobalName;
   }
@@ -328,7 +328,7 @@ export default function UserProfilePreview(compact) {
     items9 = [tmp9.card, tmp8.aboutMeCard, ];
     const obj20 = { backgroundColor: containerBackground };
     items9[2] = obj20;
-    tmp31Result6 = tmp31(tmp4(15367), obj19);
+    tmp31Result6 = tmp31(tmp4(15364), obj19);
   }
   items8[2] = tmp31Result6;
   items6[1] = closure_10(tmp4Result9, obj14);
@@ -337,7 +337,7 @@ export default function UserProfilePreview(compact) {
   if (tmp31Result7) {
     let skuId;
     const obj21 = { skuId: profilePreviewValue.skuId, style: tmp8.profileEffect };
-    const tmp4Result11 = isPremiumTryItOut(9425);
+    const tmp4Result11 = isPremiumTryItOut(9424);
     if (null != profileEffectRestartKey) {
       const _HermesInternal = HermesInternal;
       skuId = "" + profilePreviewValue.skuId + "-" + profileEffectRestartKey;

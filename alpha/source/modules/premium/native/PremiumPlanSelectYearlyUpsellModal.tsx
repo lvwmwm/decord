@@ -1,10 +1,10 @@
-// Module ID: 15318
-// Function ID: 15319
+// Module ID: 15315
+// Function ID: 15316
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2186, 9236, 15305, 1387, 1083, 21, 5243, 6763, 6898, 9545, 504, 2024, 6277, 5957, 15319, 1187, 1113, 2171, 5873, 2]
+// Dependencies: [32, 19, 17, 2186, 9235, 15302, 1387, 1083, 21, 5243, 6763, 6898, 9544, 504, 2024, 6277, 5957, 15316, 1187, 1113, 2171, 5873, 2]
 // Exports: default
 
-// Module 15318 (PremiumPlanSelectYearlyUpsellModal)
+// Module 15315 (PremiumPlanSelectYearlyUpsellModal)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1083 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -12,12 +12,12 @@ import FastImageDefault from "FastImage" /* 5957 */;
 import AlertDefault from "Alert" /* 6277 */;
 import TextStylesDefault from "TextStyles" /* 6763 */;
 import LegacyTokens from "LegacyTokens" /* 6898 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15305 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15319 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15302 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15316 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import IAPStore from "IAPStore" /* 9236 */;
+import IAPStore from "IAPStore" /* 9235 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -77,7 +77,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   [tmp4, c3] = _slicedToArray(react.useState(null), 2);
   const tmp3 = _slicedToArray(react.useState(null), 2);
-  const obj2 = productId(9545);
+  const obj2 = productId(9544);
   const premiumBundledItemsFromProductId = obj2.getPremiumBundledItemsFromProductId(productId);
   let items = [LocaleStore];
   const obj3 = productId(504);

@@ -1,9 +1,9 @@
-// Module ID: 13983
-// Function ID: 13984
+// Module ID: 13979
+// Function ID: 13980
 // Name: GameOrganizationBenefits
 // Dependencies: [2549, 2]
 
-// Module 13983 (GameOrganizationBenefits)
+// Module 13979 (GameOrganizationBenefits)
 import _modDef2549 from "module_2549" /* 2549 */;
 import size from "module_2" /* 2 */;
 

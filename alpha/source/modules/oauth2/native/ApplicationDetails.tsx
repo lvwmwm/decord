@@ -1,10 +1,10 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 15847
+// Function ID: 15848
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 5243, 575, 7341, 8098, 15853, 11, 7339, 5966, 1113, 8027, 7343, 13890, 5979, 7243, 12592, 11163, 5866, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 7341, 8098, 15848, 11, 7339, 5966, 1113, 8027, 7343, 13886, 5979, 7243, 12586, 11157, 5866, 2]
 // Exports: default
 
-// Module 15852 (ApplicationDetails)
+// Module 15847 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5866 */;
 import scopes from "scopes" /* 7339 */;
 import disclosures from "disclosures" /* 7341 */;
 import GlobeEarthIcon from "GlobeEarthIcon" /* 8098 */;
-import EmbedIcon from "EmbedIcon" /* 15853 */;
+import EmbedIcon from "EmbedIcon" /* 15848 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -28,9 +28,9 @@ const ClockIcon = tmp4(5979);
 const OAuth2Scopes = tmp4(7243);
 const Utils = tmp4(7343);
 const LockIcon = tmp4(8027);
-const ShieldIcon = tmp4(11163);
-const RobotIcon = tmp4(12592);
-const HammerIcon = tmp4(13890);
+const ShieldIcon = tmp4(11157);
+const RobotIcon = tmp4(12586);
+const HammerIcon = tmp4(13886);
 function ApplicationDetailsEntry(iconComponent) {
   let items;
   iconComponent = iconComponent.iconComponent;

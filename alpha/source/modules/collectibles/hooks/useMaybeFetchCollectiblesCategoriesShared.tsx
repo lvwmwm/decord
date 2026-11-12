@@ -1,10 +1,10 @@
-// Module ID: 9962
-// Function ID: 9963
+// Module ID: 9961
+// Function ID: 9962
 // Name: useMaybeFetchCollectiblesCategoriesShared
 // Dependencies: [32, 19, 5469, 8419, 1074, 504, 8462, 8418, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
-// Module 9962 (useMaybeFetchCollectiblesCategoriesShared)
+// Module 9961 (useMaybeFetchCollectiblesCategoriesShared)
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8418 */;
 import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8462 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

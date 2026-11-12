@@ -1,9 +1,9 @@
-// Module ID: 16476
-// Function ID: 16477
+// Module ID: 16471
+// Function ID: 16472
 // Name: Ellipsis
 // Dependencies: [19, 17, 5244, 21, 5243, 575, 1652, 5485, 504, 2]
 
-// Module 16476 (Ellipsis)
+// Module 16471 (Ellipsis)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;

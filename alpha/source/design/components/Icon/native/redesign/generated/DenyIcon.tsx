@@ -1,10 +1,10 @@
-// Module ID: 9091
-// Function ID: 9092
+// Module ID: 9090
+// Function ID: 9091
 // Name: DenyIcon
 // Dependencies: [19, 21, 575, 5956, 8491, 2]
 // Exports: DenyIcon
 
-// Module 9091 (DenyIcon)
+// Module 9090 (DenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;

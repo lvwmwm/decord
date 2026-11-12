@@ -1,10 +1,10 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16441
+// Function ID: 16442
 // Name: WindowsMediaFoundationGpuEncode
 // Dependencies: [1449, 2]
 // Exports: getWmfGpuEncode
 
-// Module 16446 (WindowsMediaFoundationGpuEncode)
+// Module 16441 (WindowsMediaFoundationGpuEncode)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

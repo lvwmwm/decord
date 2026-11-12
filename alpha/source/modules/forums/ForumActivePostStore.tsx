@@ -1,19 +1,19 @@
-// Module ID: 9042
-// Function ID: 9043
+// Module ID: 9041
+// Function ID: 9042
 // Name: ForumActivePostStore
-// Dependencies: [6972, 8805, 502, 5092, 6952, 5146, 5101, 5103, 12, 8929, 11, 504, 5109, 572, 2]
+// Dependencies: [6972, 8804, 502, 5092, 6952, 5146, 5101, 5103, 12, 8928, 11, 504, 5109, 572, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 9042 (ForumActivePostStore)
+// Module 9041 (ForumActivePostStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 5101 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 5103 */;
 import SetUtils from "SetUtils" /* 5109 */;
-import ForumUtils from "ForumUtils" /* 8929 */;
+import ForumUtils from "ForumUtils" /* 8928 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6972 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 8805 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 8804 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import ReadStateStore from "ReadStateStore" /* 6952 */;

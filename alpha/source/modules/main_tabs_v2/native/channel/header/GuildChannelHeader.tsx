@@ -1,9 +1,9 @@
-// Module ID: 15536
-// Function ID: 15537
+// Module ID: 15533
+// Function ID: 15534
 // Name: GuildChannelHeader
-// Dependencies: [32, 19, 17, 15537, 6737, 5096, 7251, 5092, 5473, 5114, 5185, 1385, 1072, 5089, 21, 5839, 575, 504, 12257, 7572, 11198, 1113, 5891, 15532, 12239, 5866, 9494, 5076, 2185, 7968, 9501, 11094, 7198, 7197, 15538, 15527, 2]
+// Dependencies: [32, 19, 17, 15534, 6737, 5096, 7251, 5092, 5473, 5114, 5185, 1385, 1072, 5089, 21, 5839, 575, 504, 12251, 7572, 11192, 1113, 5891, 15529, 12233, 5866, 9493, 5076, 2185, 7968, 9500, 11088, 7198, 7197, 15535, 15524, 2]
 
-// Module 15536 (GuildChannelHeader)
+// Module 15533 (GuildChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -11,12 +11,12 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
 import ChannelRecord from "ChannelRecord" /* 5096 */;
 import useChannelName from "useChannelName" /* 5891 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 11198 */;
-import ChannelHeader from "ChannelHeader" /* 15527 */;
-import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 15538 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 11192 */;
+import ChannelHeader from "ChannelHeader" /* 15524 */;
+import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 15535 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberCountStore from "ChannelMemberCountStore" /* 15537 */;
+import ChannelMemberCountStore from "ChannelMemberCountStore" /* 15534 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7251 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
@@ -98,7 +98,7 @@ function GuildChannelMemberCount(channel) {
     if (null != online) {
       let num2 = 500;
     }
-    const tmpResult = tmp(12257);
+    const tmpResult = tmp(12251);
     let tmp6 = tmpResult;
     let tmp7 = online;
     let tmp8 = total;
@@ -146,7 +146,7 @@ function ChannelLinkedLobbyCoachmark(guild) {
   const channel = guild.channel;
   _slicedToArray = undefined;
   const iconRef = guild.iconRef;
-  let tmp = guild(9494);
+  let tmp = guild(9493);
   const useSelectedDismissibleContent = tmp.useSelectedDismissibleContent;
   const items = [guild(5076).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
   const tmp2 = _slicedToArray(useSelectedDismissibleContent(items, { bypassAutoDismiss: true }), 2);
@@ -191,7 +191,7 @@ function ChannelLinkedLobbyCoachmark(guild) {
     }
     return obj;
   }, items1);
-  let obj = guild(9501);
+  let obj = guild(9500);
   const coachmark = obj.useCoachmark(iconRef, memo);
   return null;
 }

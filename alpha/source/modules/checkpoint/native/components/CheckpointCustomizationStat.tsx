@@ -1,10 +1,10 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 14412
+// Function ID: 14413
 // Name: CheckpointCustomizationStat
-// Dependencies: [19, 17, 14150, 6314, 21, 5243, 575, 6681, 12958, 1113, 3269, 8004, 3237, 10876, 14174, 7374, 8391, 504, 14387, 6684, 14396, 14377, 14164, 2]
+// Dependencies: [19, 17, 14146, 6314, 21, 5243, 575, 6681, 12952, 1113, 3269, 8004, 3237, 10870, 14171, 7374, 8391, 504, 14383, 6684, 14392, 14373, 14161, 2]
 // Exports: default
 
-// Module 14416 (CheckpointCustomizationStat)
+// Module 14412 (CheckpointCustomizationStat)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,15 +16,15 @@ import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6684 */;
 import GameControllerIcon from "GameControllerIcon" /* 7374 */;
 import ChatIcon from "ChatIcon" /* 8004 */;
 import CalendarIcon from "CalendarIcon" /* 8391 */;
-import ServerIcon from "ServerIcon" /* 10876 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12958 */;
-import CheckpointTextDefault from "CheckpointText" /* 14164 */;
-import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 14174 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14377 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14387 */;
-import CheckpointTagDefault from "CheckpointTag" /* 14396 */;
+import ServerIcon from "ServerIcon" /* 10870 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12952 */;
+import CheckpointTextDefault from "CheckpointText" /* 14161 */;
+import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 14171 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14373 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14383 */;
+import CheckpointTagDefault from "CheckpointTag" /* 14392 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 14150 */;
+import CheckpointStore from "CheckpointStore" /* 14146 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 11030
-// Function ID: 11031
+// Module ID: 11024
+// Function ID: 11025
 // Name: Sticker
-// Dependencies: [19, 17, 1192, 21, 6730, 6729, 1113, 9162, 11031, 5957, 5250, 7829, 7830, 2]
+// Dependencies: [19, 17, 1192, 21, 6730, 6729, 1113, 9161, 11025, 5957, 5250, 7829, 7830, 2]
 // Exports: default, getStickerAssetUrl
 
-// Module 11030 (Sticker)
+// Module 11024 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
@@ -12,8 +12,8 @@ import shared from "shared" /* 5250 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import StickersUtils from "StickersUtils" /* 6729 */;
 import StickersTypes from "StickersTypes" /* 6730 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 9162 */;
-import NativeAPNGViewDefault from "NativeAPNGView" /* 11031 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 9161 */;
+import NativeAPNGViewDefault from "NativeAPNGView" /* 11025 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import size from "module_2" /* 2 */;
@@ -73,7 +73,7 @@ export default function Sticker(opaque) {
     if (str4 == null) {
       str4 = "";
     }
-    NativeLottieRenderMode = tmp(9162).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(9161).NativeLottieRenderMode;
     return tmp18(tmp20, size1);
   } else {
     if (sticker.format_type === StickersTypes.StickerFormat.APNG) {

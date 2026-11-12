@@ -1,17 +1,17 @@
-// Module ID: 12611
-// Function ID: 12612
+// Module ID: 12605
+// Function ID: 12606
 // Name: ApplicationInstallUtils
-// Dependencies: [11345, 6282, 6965, 5890, 2]
+// Dependencies: [11339, 6282, 6965, 5890, 2]
 // Exports: canInstallApplication, hasInstallConfiguration, isAppUserInstallable, isKnownConjureApplication, shouldInstallApplicationOnDemand
 
-// Module 12611 (ApplicationInstallUtils)
+// Module 12605 (ApplicationInstallUtils)
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5890 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
 import isConjureApplicationDefault from "isConjureApplication" /* 6965 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11345 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11339 */;
 import size from "module_2" /* 2 */;
 
-const f104593 = (oauth2_install_params) => {
+const f104600 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -37,7 +37,7 @@ export function hasInstallConfiguration(application) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f104593);
+      someResult = values.some(f104600);
     }
     tmp = someResult;
   }
@@ -60,7 +60,7 @@ export function canInstallApplication(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f104593);
+      someResult = values.some(f104600);
     }
     tmp = someResult;
   }
@@ -83,7 +83,7 @@ export function isAppUserInstallable(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f104593);
+      someResult = values.some(f104600);
     }
     tmp = someResult;
   }

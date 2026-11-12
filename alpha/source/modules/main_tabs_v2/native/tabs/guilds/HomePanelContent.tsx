@@ -1,22 +1,22 @@
-// Module ID: 18910
-// Function ID: 18911
+// Module ID: 18905
+// Function ID: 18906
 // Name: HomePanelContent
-// Dependencies: [19, 17, 18612, 1072, 18911, 21, 5243, 18618, 18912, 1493, 1652, 10509, 10204, 18621, 8996, 5839, 575, 1357, 6268, 19004, 2]
+// Dependencies: [19, 17, 18607, 1072, 18906, 21, 5243, 18613, 18907, 1493, 1652, 10507, 10202, 18616, 8995, 5839, 575, 1357, 6268, 18999, 2]
 
-// Module 18910 (HomePanelContent)
+// Module 18905 (HomePanelContent)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10204 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10509 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18618 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18911 */;
-import GuildsBarDefault from "GuildsBar" /* 18912 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10202 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10507 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18613 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18906 */;
+import GuildsBarDefault from "GuildsBar" /* 18907 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 18612 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 18607 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -104,18 +104,18 @@ function HomeDrawerPanelContent() {
   let tmp = GUILD_LIST_WIDTH;
   let tmp2 = closure_11();
   const tmp3 = ref;
-  let obj = ref(18621);
+  let obj = ref(18616);
   const drawerOpen = obj.useDrawerOpen();
-  let obj2 = ref(18618);
+  let obj2 = ref(18613);
   let obj3 = react;
   const doesLandOnHomeDrawer = obj2.useDoesLandOnHomeDrawer();
   ref = react.useRef(null);
-  const obj4 = ref(18618);
+  const obj4 = ref(18613);
   const homeDrawerState = obj4.useHomeDrawerState();
   const panelTranslateX = homeDrawerState.panelTranslateX;
   const guildsBarDrawerStyle = homeDrawerState.guildsBarDrawerStyle;
   const tmp9 = HomeDrawerStore((maxX) => maxX.maxX);
-  const obj5 = ref(8996);
+  const obj5 = ref(8995);
   const isClientThemeOrCustomThemeActive = obj5.useIsClientThemeOrCustomThemeActive();
   const obj6 = ref(5839);
   const token = obj6.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWEST);
@@ -176,7 +176,7 @@ function HomeDrawerPanelContent() {
   tmp3(1652);
   items3[1] = tmp3(1652).interpolate;
   items3[2] = panelTranslateX;
-  items3[3] = tmp3(18618).INITIAL_OPEN_WIDTH;
+  items3[3] = tmp3(18613).INITIAL_OPEN_WIDTH;
   items3[4] = tmp3(1652).Extrapolation;
   items3[5] = isClientThemeOrCustomThemeActive;
   items3[6] = tmp3(1652).interpolateColor;
@@ -237,7 +237,7 @@ function HomeDrawerPanelContent() {
   items7[1] = closure_9(View3, obj10);
   let tmp36Result2 = null;
   if (doesLandOnHomeDrawer) {
-    tmp36Result2 = tmp36(tmp11(19004), {});
+    tmp36Result2 = tmp36(tmp11(18999), {});
   }
   items7[2] = tmp36Result2;
   return closure_9(View, obj8);

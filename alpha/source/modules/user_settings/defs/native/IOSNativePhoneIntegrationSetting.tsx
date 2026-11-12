@@ -1,17 +1,17 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 17995
+// Function ID: 17996
 // Name: IOSNativePhoneIntegrationSetting
-// Dependencies: [9136, 18001, 1377, 1113, 5068, 12317, 16784, 17996, 2]
+// Dependencies: [9135, 17996, 1377, 1113, 5068, 12311, 16779, 17991, 2]
 
-// Module 18000 (IOSNativePhoneIntegrationSetting)
+// Module 17995 (IOSNativePhoneIntegrationSetting)
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import UserSettings from "UserSettings" /* 5068 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16784 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17996 */;
-import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 18001 */;
-import SettingBuilders_mod from "SettingBuilders" /* 12317 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16779 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17991 */;
+import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 17996 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

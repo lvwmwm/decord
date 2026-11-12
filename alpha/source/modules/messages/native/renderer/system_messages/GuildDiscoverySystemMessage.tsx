@@ -1,12 +1,12 @@
-// Module ID: 9182
-// Function ID: 9183
+// Module ID: 9181
+// Function ID: 9182
 // Name: GuildDiscoverySystemMessage
-// Dependencies: [5092, 5114, 1113, 9126, 2]
+// Dependencies: [5092, 5114, 1113, 9125, 2]
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
-// Module 9182 (GuildDiscoverySystemMessage)
+// Module 9181 (GuildDiscoverySystemMessage)
 import intl3 from "intl" /* 1113 */;
-import createCommonMessageDefault from "createCommonMessage" /* 9126 */;
+import createCommonMessageDefault from "createCommonMessage" /* 9125 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;

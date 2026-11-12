@@ -1,17 +1,17 @@
-// Module ID: 12384
-// Function ID: 12385
+// Module ID: 12378
+// Function ID: 12379
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 8668, 7809, 5173, 5114, 6895, 1072, 5089, 21, 1377, 5994, 10998, 9289, 5243, 575, 5866, 5850, 12385, 504, 12387, 5285, 5076, 12383, 7759, 7822, 7381, 7364, 1113, 7563, 5957, 12389, 5891, 5315, 7680, 7668, 5839, 7968, 7667, 7387, 1187, 2]
+// Dependencies: [32, 19, 17, 8668, 7809, 5173, 5114, 6895, 1072, 5089, 21, 1377, 5994, 10992, 9288, 5243, 575, 5866, 5850, 12379, 504, 12381, 5285, 5076, 12377, 7759, 7822, 7381, 7364, 1113, 7563, 5957, 12383, 5891, 5315, 7680, 7668, 5839, 7968, 7667, 7387, 1187, 2]
 // Exports: default
 
-// Module 12384 (ChannelBrowser)
+// Module 12378 (ChannelBrowser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 9289 */;
-import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 10998 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 9288 */;
+import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 10992 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import NewChannelsStore from "NewChannelsStore" /* 8668 */;

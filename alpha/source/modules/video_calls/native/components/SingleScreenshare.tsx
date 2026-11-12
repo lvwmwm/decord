@@ -1,15 +1,15 @@
-// Module ID: 12976
-// Function ID: 12977
+// Module ID: 12970
+// Function ID: 12971
 // Name: SingleScreenshare
-// Dependencies: [19, 10940, 21, 5243, 575, 5836, 12977, 6003, 2]
+// Dependencies: [19, 10934, 21, 5243, 575, 5836, 12971, 6003, 2]
 // Exports: default
 
-// Module 12976 (SingleScreenshare)
+// Module 12970 (SingleScreenshare)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10940 */;
+import ChannelCallStore from "ChannelCallStore" /* 10934 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ export default function SingleScreenshare(channel) {
   };
   stageStreamContainer = undefined;
   const tmp3 = jsx;
-  const tmp4 = channel(12977);
+  const tmp4 = channel(12971);
   if (channel.isGuildStageVoice()) {
     stageStreamContainer = tmp.stageStreamContainer;
   }

@@ -1,10 +1,10 @@
-// Module ID: 14829
-// Function ID: 14830
+// Module ID: 14825
+// Function ID: 14826
 // Name: getMutualFriendsLabel
 // Dependencies: [1113, 2]
 // Exports: default
 
-// Module 14829 (getMutualFriendsLabel)
+// Module 14825 (getMutualFriendsLabel)
 import intl4 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 12024
-// Function ID: 12025
+// Module ID: 12018
+// Function ID: 12019
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 1072, 21, 5243, 575, 12025, 12026, 5866, 1113, 5068, 12027, 5314, 5957, 5830, 8554, 12028, 9369, 12036, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5243, 575, 12019, 12020, 5866, 1113, 5068, 12021, 5314, 5957, 5830, 8554, 12022, 9368, 12030, 2]
 // Exports: default
 
-// Module 12024 (UserProfilePersonalWidgetCard)
+// Module 12018 (UserProfilePersonalWidgetCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 5314 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import GifTagDefault from "GifTag" /* 8554 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 12025 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 12026 */;
-import WidgetAssetUtils from "WidgetAssetUtils" /* 12027 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 12019 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 12020 */;
+import WidgetAssetUtils from "WidgetAssetUtils" /* 12021 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -316,13 +316,13 @@ function UserProfilePersonalWidgetCardContent(userId) {
     flag = false;
   }
   const tmp = closure_14();
-  let obj = { userId, widget, style: cardStyle, titleLeadingIcon: closure_9(userId(9369).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, disableInteraction, actionButtons: tmp6, children: tmp7(tmp8, obj3) };
+  let obj = { userId, widget, style: cardStyle, titleLeadingIcon: closure_9(userId(9368).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, disableInteraction, actionButtons: tmp6, children: tmp7(tmp8, obj3) };
   tmp6 = undefined;
   const tmp3 = disableInteraction;
-  const tmp5 = disableInteraction(12028);
+  const tmp5 = disableInteraction(12022);
   if (flag) {
     let obj2 = { widget };
-    const items = [tmp2(tmp3(12036), obj2, "edit-options")];
+    const items = [tmp2(tmp3(12030), obj2, "edit-options")];
     tmp6 = items;
   }
   const sections = widget.sections;

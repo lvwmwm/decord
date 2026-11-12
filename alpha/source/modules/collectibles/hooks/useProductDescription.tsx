@@ -1,10 +1,10 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15376
+// Function ID: 15377
 // Name: useProductDescription
 // Dependencies: [19, 1113, 2111, 2]
 // Exports: useProductDescription
 
-// Module 15379 (useProductDescription)
+// Module 15376 (useProductDescription)
 import react from "react" /* 19 */;
 import intl7 from "intl" /* 1113 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;

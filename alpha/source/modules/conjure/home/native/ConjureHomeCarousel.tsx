@@ -1,9 +1,9 @@
-// Module ID: 13714
-// Function ID: 13715
+// Module ID: 13710
+// Function ID: 13711
 // Name: ConjureHomeCarousel
-// Dependencies: [19, 17, 5244, 2117, 1072, 21, 575, 7374, 8036, 13715, 10400, 11163, 12592, 5243, 1652, 13717, 5957, 1411, 5866, 13718, 13861, 13869, 504, 1500, 7929, 1113, 4079, 2]
+// Dependencies: [19, 17, 5244, 2117, 1072, 21, 575, 7374, 8036, 13711, 10398, 11157, 12586, 5243, 1652, 13713, 5957, 1411, 5866, 13714, 13857, 13865, 504, 1500, 7929, 1113, 4079, 2]
 
-// Module 13714 (ConjureHomeCarousel)
+// Module 13710 (ConjureHomeCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -11,12 +11,12 @@ import _mod1652 from "module_1652" /* 1652 */;
 import FastImageDefault from "FastImage" /* 5957 */;
 import GameControllerIcon from "GameControllerIcon" /* 7374 */;
 import AppsIcon from "AppsIcon" /* 8036 */;
-import ScreenIcon from "ScreenIcon" /* 10400 */;
-import ShieldIcon from "ShieldIcon" /* 11163 */;
-import RobotIcon from "RobotIcon" /* 12592 */;
-import WidgetsIcon from "WidgetsIcon" /* 13715 */;
-import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 13717 */;
-import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 13861 */;
+import ScreenIcon from "ScreenIcon" /* 10398 */;
+import ShieldIcon from "ShieldIcon" /* 11157 */;
+import RobotIcon from "RobotIcon" /* 12586 */;
+import WidgetsIcon from "WidgetsIcon" /* 13711 */;
+import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 13713 */;
+import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 13857 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
@@ -41,8 +41,8 @@ let size1;
 let tmp3;
 const AvatarUtils = tmp3(1411);
 const Text_Text = tmp3(5866);
-const SvgCss = tmp3(13718);
-const conjureHomeInspirationEntries = tmp3(13869);
+const SvgCss = tmp3(13714);
+const conjureHomeInspirationEntries = tmp3(13865);
 let View = react_native.View;
 const AppStates = Constants.AppStates;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

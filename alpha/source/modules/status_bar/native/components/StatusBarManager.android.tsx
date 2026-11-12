@@ -1,9 +1,9 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11762
+// Function ID: 11763
 // Name: StatusBarManager
 // Dependencies: [17, 12, 1639, 2]
 
-// Module 11768 (StatusBarManager)
+// Module 11762 (StatusBarManager)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react_nativeDefault from "react-native" /* 1639 */;

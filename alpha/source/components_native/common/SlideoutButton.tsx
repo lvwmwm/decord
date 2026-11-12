@@ -1,9 +1,9 @@
-// Module ID: 11809
-// Function ID: 11810
+// Module ID: 11803
+// Function ID: 11804
 // Name: SlideoutButton
 // Dependencies: [19, 17, 1072, 21, 5243, 5240, 575, 7364, 1187, 2]
 
-// Module 11809 (SlideoutButton)
+// Module 11803 (SlideoutButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

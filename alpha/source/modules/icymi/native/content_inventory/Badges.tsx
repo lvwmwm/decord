@@ -1,10 +1,10 @@
-// Module ID: 15609
-// Function ID: 15610
+// Module ID: 15606
+// Function ID: 15607
 // Name: Badges
-// Dependencies: [19, 17, 2186, 21, 575, 5243, 15607, 8353, 5866, 504, 7374, 12465, 15610, 1113, 15612, 15614, 10600, 11034, 10257, 1089, 2]
+// Dependencies: [19, 17, 2186, 21, 575, 5243, 15604, 8353, 5866, 504, 7374, 12459, 15607, 1113, 15609, 15611, 10598, 11028, 10255, 1089, 2]
 // Exports: BadgesContainer, CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 15609 (Badges)
+// Module 15606 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,13 +12,13 @@ import DurationsDefault from "Durations" /* 1089 */;
 import intl3 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import utils from "utils" /* 8353 */;
-import TrophyIcon from "TrophyIcon" /* 10257 */;
-import FireIcon from "FireIcon" /* 10600 */;
-import RetryIcon from "RetryIcon" /* 11034 */;
-import TimerIcon2 from "TimerIcon" /* 12465 */;
-import NewUserIcon from "NewUserIcon" /* 15610 */;
-import FlashIcon from "FlashIcon" /* 15612 */;
-import TrendingType from "TrendingType" /* 15614 */;
+import TrophyIcon from "TrophyIcon" /* 10255 */;
+import FireIcon from "FireIcon" /* 10598 */;
+import RetryIcon from "RetryIcon" /* 11028 */;
+import TimerIcon2 from "TimerIcon" /* 12459 */;
+import NewUserIcon from "NewUserIcon" /* 15607 */;
+import FlashIcon from "FlashIcon" /* 15609 */;
+import TrendingType from "TrendingType" /* 15611 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import Fragment from "Fragment" /* 21 */;
@@ -36,7 +36,7 @@ class ActiveTimestamp {
   constructor(entry) {
     entry = entry.entry;
     const style = entry.style;
-    obj = entry(15607);
+    obj = entry(15604);
     const now = obj.useTimestampTickedNow().now;
     const items = [entry, now];
     const children = react.useMemo(() => {

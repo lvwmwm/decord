@@ -1,25 +1,25 @@
-// Module ID: 14715
-// Function ID: 14716
+// Module ID: 14711
+// Function ID: 14712
 // Name: ChatInputNotificationNudge
-// Dependencies: [32, 19, 17, 5177, 6895, 14716, 1072, 5089, 14717, 21, 5243, 575, 1252, 10931, 5866, 7364, 14718, 1113, 14719, 7483, 504, 13380, 14727, 9494, 5076, 2]
+// Dependencies: [32, 19, 17, 5177, 6895, 14712, 1072, 5089, 14713, 21, 5243, 575, 1252, 10925, 5866, 7364, 14714, 1113, 14715, 7483, 504, 13374, 14723, 9493, 5076, 2]
 // Exports: default
 
-// Module 14715 (ChatInputNotificationNudge)
+// Module 14711 (ChatInputNotificationNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
-import useIsAppDMDefault from "useIsAppDM" /* 13380 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14716 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14718 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14719 */;
-import PostReactionPermissionNudgeExperimentDefault from "PostReactionPermissionNudgeExperiment" /* 14727 */;
+import useIsAppDMDefault from "useIsAppDM" /* 13374 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14712 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14714 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14715 */;
+import PostReactionPermissionNudgeExperimentDefault from "PostReactionPermissionNudgeExperiment" /* 14723 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5177 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14717 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14713 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -149,15 +149,15 @@ export default function ChatInputNotificationNudge(channel) {
     return isMutedResult;
   });
   const tmp5 = !stateFromStores && !useIsAppDMDefault(channel);
-  const tmpResult = tmp(14718);
+  const tmpResult = tmp(14714);
   const shouldShowPushNotificationNudgeByPromptType = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
   const tmp4Result = PostReactionPermissionNudgeExperimentDefault;
   const enabled = tmp4Result.useConfig({ location: "ChatInputNotificationNudge" }).enabled;
-  const tmpResult4 = tmp(14718);
+  const tmpResult4 = tmp(14714);
   const shouldShowPushNotificationNudgeByPromptType1 = tmpResult4.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.POST_REACTION_BANNER);
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = tmp(9494).useSelectedTimeRecurringDismissibleContent;
-  tmp(9494);
+  const useSelectedTimeRecurringDismissibleContent = tmp(9493).useSelectedTimeRecurringDismissibleContent;
+  tmp(9493);
   if (tmp5) {
     prop = null;
     if (shouldShowPushNotificationNudgeByPromptType) {
@@ -169,8 +169,8 @@ export default function ChatInputNotificationNudge(channel) {
   importDefault = tmp15;
   _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, obj2, undefined, true), 2);
   let prop1 = null;
-  const useSelectedTimeRecurringDismissibleContent2 = tmp(9494).useSelectedTimeRecurringDismissibleContent;
-  tmp(9494);
+  const useSelectedTimeRecurringDismissibleContent2 = tmp(9493).useSelectedTimeRecurringDismissibleContent;
+  tmp(9493);
   const tmp11 = cooldownDurationMs;
   const tmp12 = _slicedToArray;
   if (tmp5) {

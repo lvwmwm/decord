@@ -1,35 +1,39 @@
 // Module ID: 9792
 // Function ID: 9793
-// Dependencies: [9778, 9737, 9775]
-// Exports: createCheckInEnvelope
+// Dependencies: [9758, 9730, 9757]
+// Exports: initAndBind, setCurrentClient
 
 // Module 9792
-import _mod9737 from "module_9737" /* 9737 */;
-import _mod9775 from "module_9775" /* 9775 */;
-import _mod9778 from "module_9778" /* 9778 */;
+import _mod9730 from "module_9730" /* 9730 */;
+import _mod9757 from "module_9757" /* 9757 */;
+import _mod9758 from "module_9758" /* 9758 */;
 
 
-export function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
-  let date;
-  const obj = { sent_at: date.toISOString() };
-  date = new Date();
-  const tmp = sdk && sdk.sdk;
-  if (tmp) {
-    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
-    obj.sdk = obj2;
+export function initAndBind(arg0, debug) {
+  if (true === debug.debug) {
+    const DEBUG_BUILD = _mod9758.DEBUG_BUILD;
+    const obj = _mod9730;
+    if (DEBUG_BUILD) {
+      const logger = obj.logger;
+      logger.enable();
+    } else {
+      obj.consoleSandbox(() => {
+        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
+      });
+    }
   }
-  const tmp2 = arg3 && arg4;
-  if (tmp2) {
-    const obj4 = _mod9778;
-    obj.dsn = obj4.dsnToString(arg4);
-  }
-  const tmp5 = arg1;
-  if (tmp5) {
-    const obj5 = _mod9737;
-    obj.trace = obj5.dropUndefinedKeys(arg1);
-  }
-  const items = [{ type: "check_in" }, arg0];
-  const items1 = [items];
-  const obj6 = _mod9775;
-  return obj6.createEnvelope(obj, items1);
+  const obj2 = _mod9757;
+  const currentScope = obj2.getCurrentScope();
+  currentScope.update(debug.initialScope);
+  const obj4 = new arg0(debug);
+  const obj5 = _mod9757;
+  const currentScope1 = obj5.getCurrentScope();
+  currentScope1.setClient(obj4);
+  obj4.init();
+  return obj4;
+}
+export function setCurrentClient(arg0) {
+  const obj = _mod9757;
+  const currentScope = obj.getCurrentScope();
+  currentScope.setClient(arg0);
 }

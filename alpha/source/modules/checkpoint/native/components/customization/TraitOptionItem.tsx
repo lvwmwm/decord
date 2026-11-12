@@ -1,10 +1,10 @@
-// Module ID: 14422
-// Function ID: 14423
+// Module ID: 14418
+// Function ID: 14419
 // Name: TraitOptionItem
-// Dependencies: [17, 6314, 21, 575, 6681, 5243, 6315, 7467, 9369, 5830, 8197, 6360, 5957, 5315, 2]
+// Dependencies: [17, 6314, 21, 575, 6681, 5243, 6315, 7467, 9368, 5830, 8197, 6360, 5957, 5315, 2]
 // Exports: default
 
-// Module 14422 (TraitOptionItem)
+// Module 14418 (TraitOptionItem)
 import nativeDefault from "native" /* 575 */;
 import react_native from "react-native" /* 5315 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
@@ -35,7 +35,7 @@ let metroImportDefault;
 let metroRequire;
 let obj4;
 let tmp2;
-const NitroWheelIcon = tmp2(9369);
+const NitroWheelIcon = tmp2(9368);
 function RarityIndicator(rarity) {
   let items;
   let obj3;

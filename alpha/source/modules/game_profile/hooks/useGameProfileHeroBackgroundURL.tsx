@@ -1,10 +1,10 @@
-// Module ID: 10253
-// Function ID: 10254
+// Module ID: 10251
+// Function ID: 10252
 // Name: useGameProfileHeroBackgroundURL
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 10253 (useGameProfileHeroBackgroundURL)
+// Module 10251 (useGameProfileHeroBackgroundURL)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

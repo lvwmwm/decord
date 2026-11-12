@@ -1,10 +1,10 @@
-// Module ID: 12608
-// Function ID: 12609
+// Module ID: 12602
+// Function ID: 12603
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 11345, 2140, 12609, 1072, 6282, 5248, 1113, 2148, 5914, 6994, 5921, 1377, 2116, 5922, 11336, 8720, 8593, 6205, 1411, 12489, 12610, 8657, 12611, 2]
+// Dependencies: [109, 5, 11339, 2140, 12603, 1072, 6282, 5248, 1113, 2148, 5914, 6994, 5921, 1377, 2116, 5922, 11330, 8719, 8593, 6205, 1411, 12483, 12604, 8657, 12605, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getConjureProjectId, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getInstallableApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isConjureAppWithoutIcon, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 12608 (AppLauncherUtils)
+// Module 12602 (AppLauncherUtils)
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -17,14 +17,14 @@ import getPlatformDefault from "getPlatform" /* 5921 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6994 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8657 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 12489 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12610 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 12611 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 12483 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12604 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 12605 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11345 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11339 */;
 import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import AppLauncherStore from "AppLauncherStore" /* 12609 */;
+import AppLauncherStore from "AppLauncherStore" /* 12603 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

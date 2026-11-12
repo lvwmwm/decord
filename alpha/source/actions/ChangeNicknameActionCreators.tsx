@@ -1,9 +1,9 @@
-// Module ID: 11356
-// Function ID: 11357
+// Module ID: 11350
+// Function ID: 11351
 // Name: ChangeNicknameActionCreators
 // Dependencies: [1072, 1282, 8593, 1113, 2]
 
-// Module 11356 (ChangeNicknameActionCreators)
+// Module 11350 (ChangeNicknameActionCreators)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8593 */;

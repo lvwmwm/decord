@@ -1,10 +1,10 @@
-// Module ID: 11176
-// Function ID: 11177
+// Module ID: 11170
+// Function ID: 11171
 // Name: ForumComposerHeader
 // Dependencies: [19, 17, 21, 5243, 575, 5891, 7364, 1113, 7483, 8021, 5866, 8008, 2]
 // Exports: default
 
-// Module 11176 (ForumComposerHeader)
+// Module 11170 (ForumComposerHeader)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5866 */;

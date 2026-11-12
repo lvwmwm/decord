@@ -1,10 +1,10 @@
-// Module ID: 13996
-// Function ID: 13997
+// Module ID: 13992
+// Function ID: 13993
 // Name: ModalStepIndicator
 // Dependencies: [19, 17, 21, 5243, 575, 1652, 5839, 5876, 1113, 2199, 2]
 // Exports: ModalStepIndicator
 
-// Module 13996 (ModalStepIndicator)
+// Module 13992 (ModalStepIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;

@@ -1,18 +1,18 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17016
+// Function ID: 17017
 // Name: UserProfilePremiumTryItOutSection
-// Dependencies: [19, 17, 21, 5243, 575, 7852, 17022, 9513, 10891, 17044, 1113, 8027, 17045, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 7852, 17017, 9512, 10885, 17039, 1113, 8027, 17040, 2]
 // Exports: default
 
-// Module 17021 (UserProfilePremiumTryItOutSection)
+// Module 17016 (UserProfilePremiumTryItOutSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
-import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 17022 */;
-import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 17044 */;
-import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 17045 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9512 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10885 */;
+import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 17017 */;
+import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 17039 */;
+import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 17040 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;

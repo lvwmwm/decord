@@ -1,14 +1,14 @@
-// Module ID: 13938
-// Function ID: 13939
+// Module ID: 13934
+// Function ID: 13935
 // Name: joinFrameActivity
-// Dependencies: [5, 2162, 5092, 5918, 6957, 1072, 12616, 572, 12607, 5914, 12668, 12663, 1113, 12690, 13939, 12321, 12658, 6695, 13940, 12667, 7230, 8069, 7246, 2]
+// Dependencies: [5, 2162, 5092, 5918, 6957, 1072, 12610, 572, 12601, 5914, 12662, 12657, 1113, 12684, 13935, 12315, 12652, 6695, 13936, 12661, 7230, 8069, 7246, 2]
 // Exports: default
 
-// Module 13938 (joinFrameActivity)
+// Module 13934 (joinFrameActivity)
 import FramesConstants from "FramesConstants" /* 6957 */;
 import UserActivityActionCreators from "UserActivityActionCreators" /* 7246 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
-import Constants2 from "Constants" /* 12616 */;
+import Constants2 from "Constants" /* 12610 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import ChannelStore from "ChannelStore" /* 5092 */;

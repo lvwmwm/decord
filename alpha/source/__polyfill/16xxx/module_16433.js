@@ -1,41 +1,9 @@
 // Module ID: 16433
 // Function ID: 16434
-// Dependencies: [16429, 16400]
+// Dependencies: [16432]
 
 // Module 16433
-import _mod16400 from "module_16400" /* 16400 */;
-
-const require = globalThis.__r;
-let _require, c1, dependencyMap;
+import _mod16432 from "module_16432" /* 16432 */;
 
 
-export default function(arr, arg1, arg2) {
-  let closure_0;
-  _require = arg2;
-  dependencyMap = null;
-  let closure_2 = null;
-  let regex = null;
-  try {
-    let tmp = arg1;
-    let self = this;
-    let self2 = this;
-    const tmp6 = new require("module_16429")(arg1, arg2);
-    let tmp7 = tmp6;
-    regex = tmp6;
-    const item = arr.forEach(function(item) {
-      if (regex.test(item)) {
-        const tmp = c1 && -1 !== closure_2.compare(item);
-        if (!tmp) {
-          c1 = item;
-          const self = this;
-          const self2 = this;
-          closure_2 = new _mod16400(c1, closure_0);
-          const tmp7 = new _mod16400(c1, closure_0);
-        }
-      }
-    });
-    return dependencyMap;
-  } catch (err) {
-    return null;
-  }
-};
+export default (arg0, arg1, arg2) => _mod16432(arg0, arg1, ">", arg2);

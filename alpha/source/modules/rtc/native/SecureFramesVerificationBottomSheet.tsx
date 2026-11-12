@@ -1,15 +1,15 @@
-// Module ID: 10576
-// Function ID: 10577
+// Module ID: 10574
+// Function ID: 10575
 // Name: SecureFramesVerificationBottomSheet
-// Dependencies: [19, 17, 10561, 21, 5243, 575, 10568, 5489, 5503, 7847, 7886, 7364, 1113, 5866, 6274, 8027, 10574, 10577, 2]
+// Dependencies: [19, 17, 10559, 21, 5243, 575, 10566, 5489, 5503, 7847, 7886, 7364, 1113, 5866, 6274, 8027, 10572, 10575, 2]
 // Exports: default
 
-// Module 10576 (SecureFramesVerificationBottomSheet)
+// Module 10574 (SecureFramesVerificationBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import react from "react" /* 19 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 10561 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 10559 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
   onShareClick = onShareClick.onShareClick;
   ({ title, subtitle, footer, epochAuthenticator } = onShareClick);
   const tmp = closure_10();
-  let obj = onShareClick(10568);
+  let obj = onShareClick(10566);
   let obj2 = { fingerprintBase64: epochAuthenticator, chunkSize, desiredLength };
   const readableSecureFramesFingerprint = obj.useReadableSecureFramesFingerprint(obj2);
   const items = [readableSecureFramesFingerprint, onShareClick];
@@ -92,7 +92,7 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
   items1[2] = closure_8(onShareClick(5866).Text, obj11);
   items2 = [closure_9(Stack, obj8), , ];
   const obj12 = { title: intl3.string(onShareClick(1113).t.cgBTyO), trailing: tmp7Result, chunks: readableSecureFramesFingerprint, columns };
-  const tmp11 = readableSecureFramesFingerprint(10574);
+  const tmp11 = readableSecureFramesFingerprint(10572);
   intl3 = onShareClick(1113).intl;
   tmp7Result = null != readableSecureFramesFingerprint;
   const tmp10 = readableSecureFramesFingerprint;
@@ -101,7 +101,7 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
   tmp9 = View;
   if (tmp7Result) {
     const obj13 = { chunks: readableSecureFramesFingerprint };
-    tmp7Result = tmp7(tmp10(10577), obj13);
+    tmp7Result = tmp7(tmp10(10575), obj13);
   }
   items2[1] = closure_8(tmp11, obj12);
   const obj14 = { style: tmp.footer, variant: "body-xs/normal", color: "text-muted", children: footer };

@@ -1,9 +1,9 @@
-// Module ID: 10778
-// Function ID: 10779
+// Module ID: 10772
+// Function ID: 10773
 // Name: GameRelationshipActionCreators
 // Dependencies: [5, 1072, 6694, 6205, 1113, 1282, 5250, 2]
 
-// Module 10778 (GameRelationshipActionCreators)
+// Module 10772 (GameRelationshipActionCreators)
 import intl3 from "intl" /* 1113 */;
 import shared from "shared" /* 5250 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;

@@ -1,10 +1,10 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8714
+// Function ID: 8715
 // Name: getDeviceMetadata
 // Dependencies: [8611, 2]
 // Exports: default
 
-// Module 8715 (getDeviceMetadata)
+// Module 8714 (getDeviceMetadata)
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8611 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 17183
-// Function ID: 17184
+// Module ID: 17178
+// Function ID: 17179
 // Name: AccountSmsBackupSetting
-// Dependencies: [1385, 9136, 1072, 7752, 504, 17177, 1113, 17172, 17180, 6206, 6785, 7751, 2118, 7754, 12, 12317, 17090, 2]
+// Dependencies: [1385, 9135, 1072, 7752, 504, 17172, 1113, 17167, 17175, 6206, 6785, 7751, 2118, 7754, 12, 12311, 17085, 2]
 
-// Module 17183 (AccountSmsBackupSetting)
+// Module 17178 (AccountSmsBackupSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,18 +12,18 @@ import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
 import PhoneConstants from "PhoneConstants" /* 7752 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 7754 */;
-import SettingsConstants from "SettingsConstants" /* 9136 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 17090 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 17172 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 17180 */;
+import SettingsConstants from "SettingsConstants" /* 9135 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 17085 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 17167 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 17175 */;
 import UserStore from "UserStore" /* 1385 */;
 import module_12 from "module_12" /* 12 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const account_MFAUtils = tmp(17177);
-const f113746 = () => currentUser.getCurrentUser();
+const account_MFAUtils = tmp(17172);
+const f113755 = () => currentUser.getCurrentUser();
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserFlags = Constants.UserFlags;
 let closure_5 = PhoneConstants.PHONE_VERIFICATION_MODAL_KEY;
@@ -75,7 +75,7 @@ let obj = {
     let currentUser;
     const items = [UserStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f113746);
+    const stateFromStores = obj.useStateFromStores(items, f113755);
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
       const tmpResult = account_MFAUtils;
@@ -107,7 +107,7 @@ let obj = {
   useDescription: function useAccountSMSBackupSettingDescription() {
     const items = [UserStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f113746);
+    const stateFromStores = obj.useStateFromStores(items, f113755);
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
       const tmpResult = account_MFAUtils;

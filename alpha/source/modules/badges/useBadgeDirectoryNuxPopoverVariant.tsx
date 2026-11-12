@@ -1,12 +1,12 @@
-// Module ID: 15669
-// Function ID: 15670
+// Module ID: 15666
+// Function ID: 15667
 // Name: useBadgeDirectoryNuxPopoverVariant
-// Dependencies: [32, 19, 8481, 504, 559, 1089, 8486, 10046, 15670, 2]
+// Dependencies: [32, 19, 8481, 504, 559, 1089, 8486, 10045, 15667, 2]
 // Exports: useBadgeDirectoryNuxPopoverVariant
 
-// Module 15669 (useBadgeDirectoryNuxPopoverVariant)
+// Module 15666 (useBadgeDirectoryNuxPopoverVariant)
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8486 */;
-import BadgeDirectoryNuxGraphicUtils from "BadgeDirectoryNuxGraphicUtils" /* 15670 */;
+import BadgeDirectoryNuxGraphicUtils from "BadgeDirectoryNuxGraphicUtils" /* 15667 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8481 */;

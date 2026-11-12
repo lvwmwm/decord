@@ -1,10 +1,10 @@
-// Module ID: 11345
-// Function ID: 11346
+// Module ID: 11339
+// Function ID: 11340
 // Name: ApplicationCommandIndexStore
-// Dependencies: [32, 5, 19, 11346, 2186, 502, 5092, 5155, 5114, 1385, 11347, 6282, 1072, 3, 11348, 11349, 8657, 8660, 6854, 38, 504, 11350, 1252, 2116, 11351, 572, 11352, 11353, 5073, 11359, 5922, 7010, 2]
+// Dependencies: [32, 5, 19, 11340, 2186, 502, 5092, 5155, 5114, 1385, 11341, 6282, 1072, 3, 11342, 11343, 8657, 8660, 6854, 38, 504, 11344, 1252, 2116, 11345, 572, 11346, 11347, 5073, 11353, 5922, 7010, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, isStale, useContextIndexState, useDiscoveryState, useGuildIndexState, useUserIndexState
 
-// Module 11345 (ApplicationCommandIndexStore)
+// Module 11339 (ApplicationCommandIndexStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -15,22 +15,22 @@ import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5922 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
 import fuzzysearchDefault from "fuzzysearch" /* 7010 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8657 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 11349 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 11350 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 11351 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 11353 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 11359 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 11343 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 11344 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 11345 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 11347 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 11353 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 11346 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 11340 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 11347 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 11341 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
-const f100848 = () => {
+const f100855 = () => {
   let contextState;
   if ("channel" === closure_0.type) {
     contextState = authStore.getContextState(tmp);
@@ -51,7 +51,7 @@ const f100848 = () => {
   }
   return contextState;
 };
-const f100850 = () => authStore.getUserState();
+const f100857 = () => authStore.getUserState();
 function getIndexKey(type) {
   type = type.type;
   if ("guild" === type) {
@@ -507,7 +507,7 @@ function useQueryState(type, commandTypes, allowFetch) {
   [first, _slicedToArray] = stateFromStoresObject1.useState(true);
   let obj2 = require("get initialized");
   const items = [applicationCommandIndexStore];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f100848);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f100855);
   const items1 = [stateFromStoresObject, allowFetch, type, tmp3, first];
   const effect = stateFromStoresObject1.useEffect(() => {
     const tmp = first;
@@ -617,7 +617,7 @@ function useQueryState(type, commandTypes, allowFetch) {
   [first1, closure_3] = stateFromStoresObject1.useState(true);
   let obj3 = require("get initialized");
   const items2 = [applicationCommandIndexStore];
-  stateFromStoresObject1 = obj3.useStateFromStoresObject(items2, f100850);
+  stateFromStoresObject1 = obj3.useStateFromStoresObject(items2, f100857);
   const items3 = [stateFromStoresObject1, allowFetch2, tmp3, first1];
   const effect1 = stateFromStoresObject1.useEffect(() => {
     const tmp = first1;
@@ -746,7 +746,7 @@ function queryIndex(allowApplicationCommands) {
   ({ permissionContext, contextState, userState, applicationStates, text, builtIns } = allowApplicationCommands);
   if (builtIns === undefined) {
     let tmp = NONE;
-    builtIns = NONE(11351).BuiltInCommandFilter.ALLOW;
+    builtIns = NONE(11345).BuiltInCommandFilter.ALLOW;
   }
   let flag = allowApplicationCommands.allowApplicationCommands;
   if (flag === undefined) {
@@ -762,7 +762,7 @@ function queryIndex(allowApplicationCommands) {
   }
   NONE = allowApplicationCommands.scoreMethod;
   if (NONE === undefined) {
-    NONE = NONE(11351).ScoreMethod.NONE;
+    NONE = NONE(11345).ScoreMethod.NONE;
   }
   let sortOptions = allowApplicationCommands.sortOptions;
   if (sortOptions === undefined) {
@@ -782,11 +782,11 @@ function queryIndex(allowApplicationCommands) {
   if (formatted != null) {
     parts = formatted.split(" ");
   }
-  const ONLY_TEXT = NONE(11351).BuiltInCommandFilter.ONLY_TEXT;
+  const ONLY_TEXT = NONE(11345).BuiltInCommandFilter.ONLY_TEXT;
   const tmp9 = NONE;
-  if (builtIns !== NONE(11351).BuiltInCommandFilter.DENY) {
+  if (builtIns !== NONE(11345).BuiltInCommandFilter.DENY) {
     const tmp12 = builtIns === ONLY_TEXT;
-    const tmp9Result = tmp9(11353);
+    const tmp9Result = tmp9(11347);
     builtInCommands = tmp9Result.getBuiltInCommands(commandTypes, true, tmp12);
   } else {
     builtInCommands = [];
@@ -956,7 +956,7 @@ function queryIndex(allowApplicationCommands) {
   });
   if (builtInCommands.length > 0) {
     let num2 = 0;
-    const tmp88 = queryIndexSection(NONE(11353).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
+    const tmp88 = queryIndexSection(NONE(11347).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
     if (null != tmp88) {
       items.push(tmp88);
     }
@@ -969,7 +969,7 @@ function queryIndex(allowApplicationCommands) {
       return obj;
     });
   });
-  if (NONE === NONE(11351).ScoreMethod.COMMAND_ONLY) {
+  if (NONE === NONE(11345).ScoreMethod.COMMAND_ONLY) {
     const context = permissionContext.context;
     let guild_id;
     const getGuild = GuildStore.getGuild;
@@ -2019,7 +2019,7 @@ export function useContextIndexState(arg0, arg1, arg2) {
   [first, _slicedToArray] = react.useState(true);
   const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f100848);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f100855);
   const items1 = [stateFromStoresObject, arg2, arg0, arg1, first];
   const effect = react.useEffect(() => {
     const tmp = first;
@@ -2193,7 +2193,7 @@ export function useUserIndexState(arg0, arg1) {
   dependencyMap = tmp[1];
   const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  stateFromStoresObject = obj.useStateFromStoresObject(items, f100850);
+  stateFromStoresObject = obj.useStateFromStoresObject(items, f100857);
   const items1 = [stateFromStoresObject, arg1, arg0, first];
   const effect = react.useEffect(() => {
     const tmp = first1;

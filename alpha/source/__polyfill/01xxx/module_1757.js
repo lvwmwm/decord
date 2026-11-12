@@ -11,8 +11,8 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 const require = globalThis.__r;
 let _require, obj;
 
-const f84349 = (offset, offset2) => offset.offset - offset2.offset;
-const f84350 = (arr, item) => {
+const f84360 = (offset, offset2) => offset.offset - offset2.offset;
+const f84361 = (arr, item) => {
   if (arr[arr.length - 1]) {
     if (arr[arr.length - 1].offset === item.offset) {
       const props = {};
@@ -157,8 +157,8 @@ export function processKeyframes(arg0, arg1) {
     nextResult1 = {};
     tmp8 = tmp6;
   });
-  const sorted = flatMapResult.sort(f84349);
-  return sorted.reduce(f84350, []);
+  const sorted = flatMapResult.sort(f84360);
+  return sorted.reduce(f84361, []);
 }
 export function normalizeAnimationKeyframes(cssRules, compoundComponentName) {
   let closure_0;
@@ -218,8 +218,8 @@ export function normalizeAnimationKeyframes(cssRules, compoundComponentName) {
     nextResult1 = {};
     tmp8 = tmp6;
   });
-  const sorted = flatMapResult.sort(f84349);
-  const reduced = sorted.reduce(f84350, []);
+  const sorted = flatMapResult.sort(f84360);
+  const reduced = sorted.reduce(f84361, []);
   const item = reduced.forEach((props) => {
     let offset;
     let timingFunction;

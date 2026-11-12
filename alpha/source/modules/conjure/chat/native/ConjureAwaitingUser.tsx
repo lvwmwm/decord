@@ -1,15 +1,15 @@
-// Module ID: 13114
-// Function ID: 13115
+// Module ID: 13108
+// Function ID: 13109
 // Name: ConjureAwaitingUser
-// Dependencies: [19, 5244, 21, 575, 5243, 13113, 504, 1652, 5485, 2]
+// Dependencies: [19, 5244, 21, 575, 5243, 13107, 504, 1652, 5485, 2]
 // Exports: ConjureAwaitingPulseRing
 
-// Module 13114 (ConjureAwaitingUser)
+// Module 13108 (ConjureAwaitingUser)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5485 */;
-import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 13113 */;
+import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 13107 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import createStyles from "createStyles" /* 5243 */;

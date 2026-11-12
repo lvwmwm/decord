@@ -1,18 +1,18 @@
-// Module ID: 17446
-// Function ID: 17447
+// Module ID: 17441
+// Function ID: 17442
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 5275, 1072, 10074, 10100, 17444, 1108, 5280, 8768, 10102, 8759, 5282, 15133, 17441, 2]
+// Dependencies: [19, 5275, 1072, 10073, 10099, 17439, 1108, 5280, 8767, 10101, 8758, 5282, 15130, 17436, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 17446 (useBountyPauseAppStoreSheet)
+// Module 17441 (useBountyPauseAppStoreSheet)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import QuestConstants from "QuestConstants" /* 5275 */;
 import AdCreativeType from "AdCreativeType" /* 5282 */;
-import AnalyticsActions from "AnalyticsActions" /* 8759 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 15133 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17441 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 17444 */;
+import AnalyticsActions from "AnalyticsActions" /* 8758 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 15130 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 17436 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 17439 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export function useBountyPauseAppStoreSheet(bounty) {
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(10074).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(10073).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

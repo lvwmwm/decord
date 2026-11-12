@@ -1,13 +1,13 @@
-// Module ID: 18596
-// Function ID: 18597
+// Module ID: 18591
+// Function ID: 18592
 // Name: react
 // Dependencies: [19, 2]
 
-// Module 18596 (react)
+// Module 18591 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const context = react.createContext({ current: "Array" });
+const context = react.createContext({ current: "r" });
 const result = size.fileFinishedImporting("modules/launchpad/native/LaunchPadGestureRefContext.tsx");
 
 export default context;

@@ -1,10 +1,10 @@
-// Module ID: 17479
-// Function ID: 17480
+// Module ID: 17474
+// Function ID: 17475
 // Name: BountiesScrollRecapPage
-// Dependencies: [19, 17, 5244, 21, 575, 5243, 1377, 9432, 17480, 9664, 17481, 1627, 504, 17482, 5866, 1113, 9375, 5873, 2]
+// Dependencies: [19, 17, 5244, 21, 575, 5243, 1377, 9431, 17475, 9663, 17476, 1627, 504, 17477, 5866, 1113, 9374, 5873, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 17479 (BountiesScrollRecapPage)
+// Module 17474 (BountiesScrollRecapPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,11 +12,11 @@ import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import components_Button_Button from "components/Button/Button" /* 5873 */;
-import OrbsIcon from "OrbsIcon" /* 9375 */;
-import common_Video from "common/Video" /* 9664 */;
-import _modDef17480 from "module_17480" /* 17480 */;
-import _modDef17481 from "module_17481" /* 17481 */;
-import _modDef17482 from "module_17482" /* 17482 */;
+import OrbsIcon from "OrbsIcon" /* 9374 */;
+import common_Video from "common/Video" /* 9663 */;
+import _modDef17475 from "module_17475" /* 17475 */;
+import _modDef17476 from "module_17476" /* 17476 */;
+import _modDef17477 from "module_17477" /* 17477 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
@@ -39,13 +39,13 @@ function BountiesRecapOrbsBackground(arg0) {
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
     const obj2 = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: metroRequire(APNGPlayer, obj3) };
-    obj3 = { url: _modDef17480, style: _false.absoluteFillObject, autoplay: !reducedMotion };
-    APNGPlayer = tmp(9432).APNGPlayer;
+    obj3 = { url: _modDef17475, style: _false.absoluteFillObject, autoplay: !reducedMotion };
+    APNGPlayer = tmp(9431).APNGPlayer;
     tmp3Result = tmp3(React3, obj2);
   } else {
     const obj4 = { source: obj5, style, resizeMode: "contain", paused: reducedMotion, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-    obj5 = { uri: _modDef17481 };
-    const VideoComponent = tmp(9664).VideoComponent;
+    obj5 = { uri: _modDef17476 };
+    const VideoComponent = tmp(9663).VideoComponent;
     tmp3Result = tmp3(VideoComponent, obj4);
   }
   return tmp3Result;
@@ -100,7 +100,7 @@ export function BountiesScrollRecapPage(orbAmount) {
   items1 = [tmp.root, style];
   const obj3 = { style: _false.absoluteFillObject, pointerEvents: "none", children: items2 };
   const obj4 = { source: obj5, style: _false.absoluteFillObject, resizeMode: "cover", paused: stateFromStores, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-  obj5 = { uri: _modDef17482 };
+  obj5 = { uri: _modDef17477 };
   const VideoComponent = common_Video.VideoComponent;
   items2 = [metroRequire(VideoComponent, obj4), ];
   const obj6 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };

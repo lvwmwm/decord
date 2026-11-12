@@ -1,14 +1,14 @@
-// Module ID: 17912
-// Function ID: 17913
+// Module ID: 17907
+// Function ID: 17908
 // Name: EmojiSmilingFaceWithHeartsIcon
-// Dependencies: [19, 21, 575, 5956, 17913, 2]
+// Dependencies: [19, 21, 575, 5956, 17908, 2]
 // Exports: EmojiSmilingFaceWithHeartsIcon
 
-// Module 17912 (EmojiSmilingFaceWithHeartsIcon)
+// Module 17907 (EmojiSmilingFaceWithHeartsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 17913 */;
+import AssetRegistry from "AssetRegistry" /* 17908 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

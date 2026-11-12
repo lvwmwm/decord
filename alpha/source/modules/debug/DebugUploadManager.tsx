@@ -1,10 +1,10 @@
-// Module ID: 11042
-// Function ID: 11043
+// Module ID: 11036
+// Function ID: 11037
 // Name: DebugUploadManager
-// Dependencies: [5, 5092, 3, 17, 6694, 6194, 11043, 7, 11044, 11046, 1363, 5436, 11047, 11048, 11049, 11050, 2]
+// Dependencies: [5, 5092, 3, 17, 6694, 6194, 11037, 7, 11038, 11040, 1363, 5436, 11041, 11042, 11043, 11044, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 11042 (DebugUploadManager)
+// Module 11036 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import react_native from "react-native" /* 17 */;

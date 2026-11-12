@@ -1,13 +1,13 @@
-// Module ID: 18706
-// Function ID: 18707
+// Module ID: 18701
+// Function ID: 18702
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 5095, 21, 5891, 15043, 5068, 7885, 7847, 7887, 10878, 1113, 10502, 18707, 11568, 7877, 5951, 504, 2]
+// Dependencies: [19, 5095, 21, 5891, 15039, 5068, 7885, 7847, 7887, 10872, 1113, 10500, 18702, 11562, 7877, 5951, 504, 2]
 // Exports: default
 
-// Module 18706 (FavoritesGuildCategoryActionSheet)
+// Module 18701 (FavoritesGuildCategoryActionSheet)
 import ToastUtils from "ToastUtils" /* 5951 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 18707 */;
+import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 18702 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 5095 */;
 import Fragment from "Fragment" /* 21 */;
@@ -37,7 +37,7 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
   category = category.category;
   const onClose = category.onClose;
   const tmp2 = onClose(5891)(category, true);
-  const tmp3 = onClose(15043)(category);
+  const tmp3 = onClose(15039)(category);
   dependencyMap = tmp3;
   const DeveloperMode = category(5068).DeveloperMode;
   const setting = DeveloperMode.useSetting();
@@ -57,7 +57,7 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
         }
     };
     ActionSheetRow = tmp4(7887).ActionSheetRow;
-    obj4 = { IconComponent: category(10878).PlusLargeIcon };
+    obj4 = { IconComponent: category(10872).PlusLargeIcon };
     Icon = tmp4(7887).ActionSheetRow.Icon;
     tmp7Result = tmp7(Group, obj2);
   }
@@ -74,7 +74,7 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
   };
   ActionSheetRow2 = tmp4(7887).ActionSheetRow;
   intl = tmp4(1113).intl;
-  obj7 = { IconComponent: category(10502).SettingsIcon };
+  obj7 = { IconComponent: category(10500).SettingsIcon };
   Icon2 = tmp4(7887).ActionSheetRow.Icon;
   items[1] = closure_5(Group2, obj5);
   let tmp7Result2 = null;
@@ -94,7 +94,7 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
     };
     ActionSheetRow3 = tmp4(7887).ActionSheetRow;
     intl2 = tmp4(1113).intl;
-    obj10 = { IconComponent: category(11568).IdIcon };
+    obj10 = { IconComponent: category(11562).IdIcon };
     Icon3 = tmp4(7887).ActionSheetRow.Icon;
     tmp7Result2 = tmp7(Group3, obj8);
   }

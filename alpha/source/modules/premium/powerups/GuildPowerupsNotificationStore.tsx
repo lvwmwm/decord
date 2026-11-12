@@ -1,13 +1,13 @@
-// Module ID: 10625
-// Function ID: 10626
+// Module ID: 10623
+// Function ID: 10624
 // Name: GuildPowerupsNotificationStore
-// Dependencies: [9176, 5114, 5460, 10626, 504, 572, 2]
+// Dependencies: [9175, 5114, 5460, 10624, 504, 572, 2]
 
-// Module 10625 (GuildPowerupsNotificationStore)
+// Module 10623 (GuildPowerupsNotificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import getExpiringGuildEntitlements2 from "getExpiringGuildEntitlements" /* 10626 */;
-import GameServerStore from "GameServerStore" /* 9176 */;
+import getExpiringGuildEntitlements2 from "getExpiringGuildEntitlements" /* 10624 */;
+import GameServerStore from "GameServerStore" /* 9175 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5460 */;
 import size from "module_2" /* 2 */;

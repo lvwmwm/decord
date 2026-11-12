@@ -1,16 +1,16 @@
-// Module ID: 11872
-// Function ID: 11873
+// Module ID: 11866
+// Function ID: 11867
 // Name: ForLaterCardHeader
-// Dependencies: [17, 5114, 21, 5243, 575, 7897, 504, 7654, 10828, 1187, 8004, 5891, 7968, 1113, 5866, 2]
+// Dependencies: [17, 5114, 21, 5243, 575, 7897, 504, 7654, 10822, 1187, 8004, 5891, 7968, 1113, 5866, 2]
 // Exports: ForLaterCardHeader
 
-// Module 11872 (ForLaterCardHeader)
+// Module 11866 (ForLaterCardHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useChannelNameDefault from "useChannelName" /* 5891 */;
 import GuildIconDefault from "GuildIcon" /* 7654 */;
 import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7897 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10828 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10822 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

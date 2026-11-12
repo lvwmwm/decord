@@ -1,14 +1,14 @@
-// Module ID: 17766
-// Function ID: 17767
+// Module ID: 17761
+// Function ID: 17762
 // Name: PaintPaletteIcon
-// Dependencies: [19, 21, 575, 5956, 17767, 2]
+// Dependencies: [19, 21, 575, 5956, 17762, 2]
 // Exports: PaintPaletteIcon
 
-// Module 17766 (PaintPaletteIcon)
+// Module 17761 (PaintPaletteIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 17767 */;
+import AssetRegistry from "AssetRegistry" /* 17762 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

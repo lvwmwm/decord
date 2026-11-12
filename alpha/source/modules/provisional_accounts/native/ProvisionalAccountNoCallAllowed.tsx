@@ -1,10 +1,10 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 15987
+// Function ID: 15988
 // Name: ProvisionalAccountNoCallAllowed
 // Dependencies: [19, 1072, 21, 5243, 6211, 7557, 1113, 2185, 6211, 2]
 // Exports: default
 
-// Module 15992 (ProvisionalAccountNoCallAllowed)
+// Module 15987 (ProvisionalAccountNoCallAllowed)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;

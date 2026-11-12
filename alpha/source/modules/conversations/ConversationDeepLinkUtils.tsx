@@ -1,10 +1,10 @@
-// Module ID: 9080
-// Function ID: 9081
+// Module ID: 9079
+// Function ID: 9080
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 7595, 8681, 5894, 6293, 9055, 5893, 11, 9081, 2]
+// Dependencies: [5, 7595, 8681, 5894, 6293, 9054, 5893, 11, 9080, 2]
 // Exports: consumeConversationFocusParam, getConversationPermalink
 
-// Module 9080 (ConversationDeepLinkUtils)
+// Module 9079 (ConversationDeepLinkUtils)
 import ConversationConstants from "ConversationConstants" /* 5894 */;
 import ChannelUtils from "ChannelUtils" /* 6293 */;
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7595 */;

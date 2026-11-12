@@ -1,16 +1,16 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11299
+// Function ID: 11300
 // Name: StickerPackDetailActionSheet
-// Dependencies: [32, 19, 11183, 1072, 5504, 21, 5243, 1493, 1627, 12, 1252, 5503, 11306, 11310, 5838, 5507, 11311, 7364, 11030, 2]
+// Dependencies: [32, 19, 11177, 1072, 5504, 21, 5243, 1493, 1627, 12, 1252, 5503, 11300, 11304, 5838, 5507, 11305, 7364, 11024, 2]
 
-// Module 11305 (StickerPackDetailActionSheet)
+// Module 11299 (StickerPackDetailActionSheet)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 11311 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 11305 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11183 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 11177 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

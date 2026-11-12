@@ -1,7 +1,7 @@
 // Module ID: 7918
 // Function ID: 7919
 // Name: GuildEventCardComponents
-// Dependencies: [5, 32, 19, 17, 502, 5092, 5155, 5114, 5175, 1385, 6966, 5098, 1072, 1083, 21, 5243, 575, 7919, 7921, 7922, 1113, 7924, 7877, 5951, 12201, 5967, 504, 7965, 7357, 7672, 10933, 15812, 7906, 6854, 7168, 6859, 15813, 6206, 7904, 6277, 6837, 1380, 1493, 1411, 15811, 5957, 7902, 1187, 7372, 5484, 7913, 7914, 15453, 7364, 5866, 8391, 8356, 5891, 7909, 8351, 8352, 7654, 2]
+// Dependencies: [5, 32, 19, 17, 502, 5092, 5155, 5114, 5175, 1385, 6966, 5098, 1072, 1083, 21, 5243, 575, 7919, 7921, 7922, 1113, 7924, 7877, 5951, 12195, 5967, 504, 7965, 7357, 7672, 10927, 15807, 7906, 6854, 7168, 6859, 15808, 6206, 7904, 6277, 6837, 1380, 1493, 1411, 15806, 5957, 7902, 1187, 7372, 5484, 7913, 7914, 15450, 7364, 5866, 8391, 8356, 5891, 7909, 8351, 8352, 7654, 2]
 // Exports: GuildEventCardGuildInfo, GuildEventCardHeader, GuildEventCardImageHeader, GuildEventCardMetaInfo, GuildEventCardSimpleGuildInfo, GuildEventIndicateInterestAction, GuildEventModeratorAction, GuildEventShareAction, GuildEventSimpleLocation, useEventRsvpState
 
 // Module 7918 (GuildEventCardComponents)
@@ -25,7 +25,7 @@ import ScheduleUtils from "ScheduleUtils" /* 7906 */;
 import useCanInviteForGuildEventDefault from "useCanInviteForGuildEvent" /* 7919 */;
 import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 7924 */;
 import guildEventDetailsParser from "guildEventDetailsParser" /* 8356 */;
-import ThrottledButtonDefault from "ThrottledButton" /* 15812 */;
+import ThrottledButtonDefault from "ThrottledButton" /* 15807 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -154,10 +154,10 @@ class GuildEventCardRSVPAction {
     if (first) {
       BellIcon = tmp(7672).CheckmarkLargeIcon;
     } else {
-      BellIcon = tmp(10933).BellIcon;
+      BellIcon = tmp(10927).BellIcon;
     }
     const obj2 = { accessibilityRole: "togglebutton", accessibilityState: { checked: first }, accessibilityLabel: "" + intl.string(event(1113).t.DlcqlU) + ", " + event.name, variant: str, icon: closure_21(BellIcon, { size: "sm" }), text: intl2.string(event(1113).t.DlcqlU), onPress: tmp5, grow: true };
-    const tmp6 = recurrenceId(15812);
+    const tmp6 = recurrenceId(15807);
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     return closure_21(tmp6, obj2);
@@ -575,7 +575,7 @@ export function GuildEventShareAction(event) {
         obj2.presentLinkCopied();
       }
     },
-    icon: tmp(tmp3 ? 12201 : 5967),
+    icon: tmp(tmp3 ? 12195 : 5967),
     variant: "secondary"
   };
   const IconButton = event(7922).IconButton;
@@ -655,7 +655,7 @@ export function GuildEventIndicateInterestAction(event) {
   if (first) {
     BellIcon = tmp(7672).CheckmarkLargeIcon;
   } else {
-    BellIcon = tmp(10933).BellIcon;
+    BellIcon = tmp(10927).BellIcon;
   }
   const obj2 = { accessibilityRole: "togglebutton", accessibilityState: { checked: first }, accessibilityLabel: "" + intl.string(event(1113).t.DlcqlU) + ", " + event.name, variant: str, icon: closure_21(BellIcon, { size: "sm" }), text: intl2.string(event(1113).t.DlcqlU), onPress: tmp5, grow: true };
   const tmp6 = ThrottledButtonDefault;
@@ -686,7 +686,7 @@ export function GuildEventCardImageHeader(event) {
     }
     const obj2 = { style: tmp.imageHeaderContainer, onLayout: tmp6, children: closure_21(FastImageDefault, obj3) };
     const obj = AvatarUtils;
-    const source = obj.makeSource(tmp2(15811)(event, width));
+    const source = obj.makeSource(tmp2(15806)(event, width));
     obj3 = { style: tmp.imageHeaderBanner, source, resizeMode: "cover" };
     return closure_21(metroRequire, obj2);
   }

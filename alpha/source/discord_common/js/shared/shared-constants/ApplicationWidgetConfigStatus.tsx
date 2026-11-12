@@ -1,9 +1,9 @@
-// Module ID: 15693
-// Function ID: 15694
+// Module ID: 15690
+// Function ID: 15691
 // Name: ApplicationWidgetConfigStatus
 // Dependencies: [2]
 
-// Module 15693 (ApplicationWidgetConfigStatus)
+// Module 15690 (ApplicationWidgetConfigStatus)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetConfigStatus.tsx");

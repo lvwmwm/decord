@@ -1,20 +1,20 @@
-// Module ID: 17533
-// Function ID: 17534
+// Module ID: 17528
+// Function ID: 17529
 // Name: OrbsArcadeQuestHomeSection
-// Dependencies: [19, 17534, 17537, 21, 5243, 575, 17538, 504, 6274, 7374, 5866, 1113, 17542, 17544, 10388, 2]
+// Dependencies: [19, 17529, 17532, 21, 5243, 575, 17533, 504, 6274, 7374, 5866, 1113, 17537, 17539, 10386, 2]
 // Exports: default
 
-// Module 17533 (OrbsArcadeQuestHomeSection)
+// Module 17528 (OrbsArcadeQuestHomeSection)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import GameControllerIcon from "GameControllerIcon" /* 7374 */;
-import useFetchOrbsArcadeGamesDefault from "useFetchOrbsArcadeGames" /* 17538 */;
-import OrbsArcadeGameTileDefault from "OrbsArcadeGameTile" /* 17542 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17544 */;
+import useFetchOrbsArcadeGamesDefault from "useFetchOrbsArcadeGames" /* 17533 */;
+import OrbsArcadeGameTileDefault from "OrbsArcadeGameTile" /* 17537 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17539 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17534 */;
-import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 17537 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17529 */;
+import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 17532 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
@@ -84,7 +84,7 @@ export default function OrbsArcadeQuestHomeSection(location) {
       });
     } else {
       const obj9 = { style: tmp.skeletonTile };
-      mapped = tmp9(tmp2(10388), obj9);
+      mapped = tmp9(tmp2(10386), obj9);
     }
     items4[1] = mapped;
     tmp8Result = tmp8(Stack, obj3);

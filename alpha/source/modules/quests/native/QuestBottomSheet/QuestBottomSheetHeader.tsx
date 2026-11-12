@@ -1,10 +1,10 @@
-// Module ID: 17613
-// Function ID: 17614
+// Module ID: 17608
+// Function ID: 17609
 // Name: QuestBottomSheetHeader
-// Dependencies: [32, 19, 17, 1385, 21, 5243, 575, 10064, 8765, 17580, 504, 10083, 8763, 1113, 17612, 5278, 17614, 17582, 5505, 6268, 5866, 7364, 7356, 2]
+// Dependencies: [32, 19, 17, 1385, 21, 5243, 575, 10063, 8764, 17575, 504, 10082, 8762, 1113, 17607, 5278, 17609, 17577, 5505, 6268, 5866, 7364, 7356, 2]
 // Exports: default
 
-// Module 17613 (QuestBottomSheetHeader)
+// Module 17608 (QuestBottomSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react_native2 from "react-native" /* 6268 */;
@@ -48,9 +48,9 @@ export default function QuestBottomSheetHeader(arg0) {
   let tmp = closure_9();
   let tmp2 = isScreenReaderEnabled;
   let tmp3 = dependencyMap;
-  let obj = isScreenReaderEnabled(17614);
+  let obj = isScreenReaderEnabled(17609);
   const questCreative = obj.useQuestCreative(quest);
-  let obj2 = isScreenReaderEnabled(17582);
+  let obj2 = isScreenReaderEnabled(17577);
   let closure_2;
   let gameTitle;
   let c4;
@@ -69,15 +69,15 @@ export default function QuestBottomSheetHeader(arg0) {
   }
   closure_2 = tmp7;
   gameTitle = quest.config.messages.gameTitle;
-  const tmp2Result = tmp2(10064);
+  const tmp2Result = tmp2(10063);
   const questTaskDetails = tmp2Result.useQuestTaskDetails(quest);
-  const tmp2Result9 = tmp2(8765);
+  const tmp2Result9 = tmp2(8764);
   const hasWatchVideoTasksResult = tmp2Result9.hasWatchVideoTasks(quest);
   c4 = hasWatchVideoTasksResult;
-  const tmp2Result10 = tmp2(8765);
+  const tmp2Result10 = tmp2(8764);
   const isInGameQuestResult = tmp2Result10.isInGameQuest(quest);
   c5 = isInGameQuestResult;
-  const tmp2Result11 = tmp2(10064);
+  const tmp2Result11 = tmp2(10063);
   first = _slicedToArray(tmp2Result11.useTaskPlatformScreen(quest, questTaskDetails), 1)[0];
   targetMinutes = questTaskDetails.targetMinutes;
   const items = [quest];
@@ -86,14 +86,14 @@ export default function QuestBottomSheetHeader(arg0) {
     const obj2 = { quest };
     return obj.hasStreamOnDesktopTask(obj2);
   }, items);
-  const tmp2Result12 = tmp2(17580);
+  const tmp2Result12 = tmp2(17575);
   hasWatchVideoOnMobileTasks = tmp2Result12.useHasWatchVideoOnMobileTasks(quest.config);
   const items1 = [UserStore];
   const tmp2Result13 = tmp2(504);
   const stateFromStores = tmp2Result13.useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const tmp2Result14 = tmp2(10083);
+  const tmp2Result14 = tmp2(10082);
   defaultRewardNameWithArticle = tmp2Result14.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
-  const tmp2Result15 = tmp2(8763);
+  const tmp2Result15 = tmp2(8762);
   const isSponsoredPlayQuestResult = tmp2Result15.isSponsoredPlayQuest(quest);
   c11 = isSponsoredPlayQuestResult;
   const items2 = [null != completedAt, hasWatchVideoTasksResult, step, first, memo, gameTitle, defaultRewardNameWithArticle, targetMinutes, hasWatchVideoOnMobileTasks, isInGameQuestResult, isSponsoredPlayQuestResult, quest.config];

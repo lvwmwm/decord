@@ -1,10 +1,10 @@
-// Module ID: 10051
-// Function ID: 10052
+// Module ID: 10050
+// Function ID: 10051
 // Name: BadgeRarityPill
-// Dependencies: [19, 17, 21, 575, 1389, 10052, 1113, 10054, 5240, 10056, 10058, 5243, 5250, 5484, 5866, 2]
+// Dependencies: [19, 17, 21, 575, 1389, 10051, 1113, 10053, 5240, 10055, 10057, 5243, 5250, 5484, 5866, 2]
 // Exports: default
 
-// Module 10051 (BadgeRarityPill)
+// Module 10050 (BadgeRarityPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -13,10 +13,10 @@ import ColorUtils from "ColorUtils" /* 5240 */;
 import shared from "shared" /* 5250 */;
 import useThemeDefault from "useTheme" /* 5484 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 10052 */;
-import ExperimentalRareIcon from "ExperimentalRareIcon" /* 10054 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10056 */;
-import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 10058 */;
+import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 10051 */;
+import ExperimentalRareIcon from "ExperimentalRareIcon" /* 10053 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10055 */;
+import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 10057 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

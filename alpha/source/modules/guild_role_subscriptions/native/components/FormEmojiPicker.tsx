@@ -1,13 +1,13 @@
-// Module ID: 20603
-// Function ID: 20604
+// Module ID: 20598
+// Function ID: 20599
 // Name: FormEmojiPicker
-// Dependencies: [19, 1388, 21, 5189, 17744, 5193, 1113, 17743, 7379, 10342, 5866, 9477, 2]
+// Dependencies: [19, 1388, 21, 5189, 17739, 5193, 1113, 17738, 7379, 10340, 5866, 9476, 2]
 // Exports: default
 
-// Module 20603 (FormEmojiPicker)
+// Module 20598 (FormEmojiPicker)
 import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9477 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9476 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export default function FormEmojiPicker(emoji) {
     }
     emojiId = convertSurrogateToName(emojiName, false);
   }
-  let obj = guildId(17744);
+  let obj = guildId(17739);
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, emojiId);
   let allEmojiNamesString = null;
   if (null != emojiByIdOrName) {
@@ -42,12 +42,12 @@ export default function FormEmojiPicker(emoji) {
   const intl = tmp4(1113).intl;
   const stringResult = intl.string(guildId(1113).t.gXAN3P);
   if (null != emojiId) {
-    tmp10 = jsx(onChange(17743), { guildId, id: emojiId });
+    tmp10 = jsx(onChange(17738), { guildId, id: emojiId });
     tmp9 = jsx;
   } else {
     tmp9 = jsx;
     const Icon = tmp4(7379).TableRow.Icon;
-    tmp10 = <Icon IconComponent={guildId(10342).ReactionIcon} />;
+    tmp10 = <Icon IconComponent={guildId(10340).ReactionIcon} />;
   }
   const obj4 = {
     icon: tmp10,

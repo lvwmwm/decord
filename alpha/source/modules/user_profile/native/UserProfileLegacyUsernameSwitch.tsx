@@ -1,13 +1,13 @@
-// Module ID: 17020
-// Function ID: 17021
+// Module ID: 17015
+// Function ID: 17016
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 5068, 16981, 1113, 7734, 9332, 2]
+// Dependencies: [19, 21, 5068, 16976, 1113, 7734, 9331, 2]
 // Exports: default
 
-// Module 17020 (UserProfileLegacyUsernameSwitch)
+// Module 17015 (UserProfileLegacyUsernameSwitch)
 import Fragment from "Fragment" /* 21 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7734 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9332 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9331 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
       }
     }
   };
-  const UserProfileEditFormSwitch = tmp(16981).UserProfileEditFormSwitch;
+  const UserProfileEditFormSwitch = tmp(16976).UserProfileEditFormSwitch;
   intl = tmp(1113).intl;
   const intl2 = tmp(1113).intl;
   const tmp5 = jsx;

@@ -1,12 +1,15 @@
 // Module ID: 11466
 // Function ID: 11467
-// Dependencies: [41, 42, 93, 95, 98, 11375]
+// Dependencies: [41, 42, 93, 95, 98, 11456, 11364, 11365, 11369]
 
 // Module 11466
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11375 */;
+import EmptyDuration from "EmptyDuration" /* 11364 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11365 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11369 */;
+import _mod11456 from "module_11456" /* 11456 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,44 +28,45 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("([0-9]|0[1-9]|1[012])/([0-9]{4})", "i");
-class NLSlashMonthFormatParser {
-  constructor() {
+const regExp = new RegExp("(" + _mod11456.TIME_UNITS_PATTERN + ")(?:geleden|voor|eerder)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + _mod11456.TIME_UNITS_PATTERN + ")geleden(?=(?:\\W|$))", "i");
+class NLTimeUnitAgoFormatParser {
+  constructor(strictMode) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLSlashMonthFormatParser);
-    const obj = _getPrototypeOf(NLSlashMonthFormatParser);
+    _classCallCheck(this, NLTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(NLTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
   }
 }
-_inherits(NLSlashMonthFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    return regExp;
+    return this.strictMode ? regExp1 : regExp;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const parsed = parseInt(arg1[2]);
-      const parsed1 = parseInt(arg1[1]);
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      const implyResult = parsingComponents.imply("day", 1);
-      const obj = implyResult.assign("month", parsed1);
-      return obj.assign("year", parsed);
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod11456.parseDuration(arg1[1]);
+      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
     }
   }
 ];
 
-export default _createClass(NLSlashMonthFormatParser, items);
+export default _createClass(NLTimeUnitAgoFormatParser, items);

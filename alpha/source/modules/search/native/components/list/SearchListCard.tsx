@@ -1,10 +1,10 @@
-// Module ID: 19310
-// Function ID: 19311
+// Module ID: 19305
+// Function ID: 19306
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 5243, 575, 1187, 5866, 5309, 5891, 10828, 8021, 1113, 7968, 7381, 2]
+// Dependencies: [19, 17, 21, 5243, 575, 1187, 5866, 5309, 5891, 10822, 8021, 1113, 7968, 7381, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 19310 (SearchListCard)
+// Module 19305 (SearchListCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const GroupDMAvatarDefault = tmp2(10828);
+const GroupDMAvatarDefault = tmp2(10822);
 class SearchListContentAuthor {
   constructor(author) {
     let items;

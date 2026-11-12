@@ -1,68 +1,94 @@
 // Module ID: 9849
 // Function ID: 9850
-// Dependencies: [9737, 9734, 9847]
-// Exports: callFrameToStackFrame, watchdogTimer
+// Dependencies: [377, 41, 42]
 
 // Module 9849
-import _mod9734 from "module_9734" /* 9734 */;
-import _mod9737 from "module_9737" /* 9737 */;
-import _mod9847 from "module_9847" /* 9847 */;
+import _readOnlyError from "_readOnlyError" /* 377 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-let navigation;
-
-
-export function callFrameToStackFrame(location, str, fn) {
-  let filenameIsInAppResult;
-  let replaced;
-  if (str) {
-    replaced = str.replace(/^file:\/\//, "");
+class LRUMap {
+  constructor(_maxSize) {
+    _classCallCheck(this, LRUMap);
+    this._maxSize = _maxSize;
+    this._cache = new Map();
+    new Map();
   }
-  let sum;
-  if (location.location.columnNumber) {
-    sum = location.location.columnNumber + 1;
-  }
-  let sum1;
-  if (location.location.lineNumber) {
-    sum1 = location.location.lineNumber + 1;
-  }
-  const tmp6 = _mod9737;
-  const dropUndefinedKeys = tmp6.dropUndefinedKeys;
-  const obj = { filename: replaced, module: fn(replaced), function: location.functionName || _mod9734.UNKNOWN_FUNCTION, colno: sum, lineno: sum1, in_app: filenameIsInAppResult };
-  filenameIsInAppResult = undefined;
-  location.functionName || _mod9734.UNKNOWN_FUNCTION;
-  if (replaced) {
-    const tmp4Result = _mod9847;
-    filenameIsInAppResult = tmp4Result.filenameIsInApp(replaced);
-  }
-  return dropUndefinedKeys(obj);
 }
-export function watchdogTimer(fn, arg1, arg2, arg3) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  let closure_2 = arg3;
-  navigation = fn();
-  let c4 = false;
-  let c5 = true;
-  const timerId = setInterval(() => {
-    const timeMs = navigation.getTimeMs();
-    const tmp2 = false === c4 && timeMs > closure_0 + closure_1;
-    if (tmp2) {
-      c4 = true;
-      const tmp5 = c5;
-      if (tmp5) {
-        closure_2();
-      }
+let items = [, , , , , , ];
+const obj = {
+  key: "size",
+  get() {
+    return this._cache.size;
+  }
+};
+items[0] = obj;
+items[1] = {
+  key: "get",
+  value: function get(arg0) {
+    const self = this;
+    const _cache = this._cache;
+    const value = _cache.get(arg0);
+    if (undefined !== value) {
+      const _cache2 = self._cache;
+      _cache2.delete(arg0);
+      const _cache3 = self._cache;
+      const result = _cache3.set(arg0, value);
+      return value;
     }
-    if (timeMs < closure_0 + closure_1) {
-      c4 = false;
+  }
+};
+items[2] = {
+  key: "set",
+  value: function set(arg0, arg1) {
+    let _cache;
+    let _cache2;
+    const self = this;
+    if (this._cache.size >= this._maxSize) {
+      ({ _cache, _cache: _cache2 } = self);
+      const _delete = _cache.delete;
+      const iter = _cache2.keys();
+      _delete(iter.next().value);
     }
-  }, 20);
-  return {
-    poll() {
-      navigation.reset();
-    },
-    enabled(arg0) {
-      c5 = arg0;
+    const _cache3 = self._cache;
+    const result = _cache3.set(arg0, arg1);
+  }
+};
+items[3] = {
+  key: "remove",
+  value: function remove(arg0) {
+    const _cache = this._cache;
+    const value = _cache.get(arg0);
+    if (value) {
+      const _cache2 = this._cache;
+      _cache2.delete(arg0);
     }
-  };
-}
+    return value;
+  }
+};
+items[4] = {
+  key: "clear",
+  value: function clear() {
+    const _cache = this._cache;
+    _cache.clear();
+  }
+};
+items[5] = {
+  key: "keys",
+  value: function keys() {
+    const _cache = this._cache;
+    return Array.from(_cache.keys());
+  }
+};
+items[6] = {
+  key: "values",
+  value: function values() {
+    const items = [];
+    const _cache = this._cache;
+    const item = _cache.forEach((item) => items.push(item));
+    return items;
+  }
+};
+const LRUMap_export = _createClass(LRUMap, items);
+
+export { LRUMap_export as LRUMap };

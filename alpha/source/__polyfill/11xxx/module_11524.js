@@ -1,16 +1,19 @@
 // Module ID: 11524
 // Function ID: 11525
-// Dependencies: [41, 42, 93, 95, 98, 11522, 11375]
+// Dependencies: [41, 42, 93, 95, 98, 11386, 11518]
 
 // Module 11524
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11375 */;
-import _mod11522 from "module_11522" /* 11522 */;
+import now2 from "now" /* 11386 */;
+import _mod11518 from "module_11518" /* 11518 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let hasOwnProperty;
+
+let self = this;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -26,14 +29,109 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class AbstractParserWithLeftBoundaryChecking {
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (!self2) {
+  let tmp3 = globalThis;
+  let _Object = Object;
+  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let tmp4 = self && self.__setModuleDefault;
+if (!tmp4) {
+  let tmp5 = globalThis;
+  const _Object2 = Object;
+  tmp4 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_6 = tmp4;
+let fn = self && self.__importStar;
+if (!fn) {
+  fn = function o(arg0) {
+    fn = Object.getOwnPropertyNames || ((obj) => {
+      const items = [];
+      for (const key10005 in obj) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        if (!hasOwnProperty.call(obj, key10005)) {
+          continue;
+        } else {
+          items[items.length] = key10005;
+          continue;
+        }
+        continue;
+      }
+      return items;
+    });
+    return fn(arg0);
+  };
+  fn = (__esModule) => {
+    const tmp = __esModule;
+    if (tmp) {
+      if (__esModule.__esModule) {
+        return __esModule;
+      }
+    }
+    const obj = {};
+    if (null != __esModule) {
+      let num;
+      const arr = fn(__esModule);
+      for (let num = 0; num < arr.length; num = num + 1) {
+        if ("default" !== arr[num]) {
+          let tmp5 = self2(obj, __esModule, arr[num]);
+        }
+      }
+    }
+    closure_6(obj, __esModule);
+    return obj;
+  };
+}
+const now = fn(now2);
+class UKCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, AbstractParserWithLeftBoundaryChecking);
-    const obj = _getPrototypeOf(AbstractParserWithLeftBoundaryChecking);
+    _classCallCheck(this, UKCasualDateParser);
+    const obj = _getPrototypeOf(UKCasualDateParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -43,61 +141,39 @@ class AbstractParserWithLeftBoundaryChecking {
     return tmp3(self, constructResult);
   }
 }
-_inherits(AbstractParserWithLeftBoundaryChecking, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(UKCasualDateParser, _mod11518.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "patternLeftBoundary",
-  value: function patternLeftBoundary() {
-    return _mod11522.REGEX_PARTS.leftBoundary;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(?:\u0437|\u0456\u0437|\u0432\u0456\u0434)?\\s*(\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456|\u0432\u0447\u043E\u0440\u0430|\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430|\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430)";
   }
 };
-const items = [
+let items = [
   entry,
   {
-    key: "innerPattern",
-    value: function innerPattern(arg0) {
-      const innerPatternStringResult = this.innerPatternString(arg0);
-      const regExp = new RegExp(innerPatternStringResult, _mod11522.REGEX_PARTS.flags);
-      return regExp;
-    }
-  },
-  {
-    key: "innerPatternHasChange",
-    value: function innerPatternHasChange(arg0, arg1) {
-      return false;
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      if ("\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456" === formatted) {
+        return now.today(reference.reference);
+      } else if ("\u0432\u0447\u043E\u0440\u0430" === formatted) {
+        return now.yesterday(reference.reference);
+      } else if ("\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
+        return now.tomorrow(reference.reference);
+      } else if ("\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
+        return now.theDayAfter(reference.reference, 2);
+      } else if ("\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
+        return now.theDayAfter(reference.reference, 3);
+      } else if ("\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
+        return now.theDayBefore(reference.reference, 2);
+      } else if ("\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
+        return now.theDayBefore(reference.reference, 3);
+      } else {
+        return tmp2;
+      }
     }
   }
 ];
-const _moduleResult = _createClass(AbstractParserWithLeftBoundaryChecking, items);
-class AbstractParserWithLeftRightBoundaryChecking {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, AbstractParserWithLeftRightBoundaryChecking);
-    const obj = _getPrototypeOf(AbstractParserWithLeftRightBoundaryChecking);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(AbstractParserWithLeftRightBoundaryChecking, _moduleResult);
-const entry1 = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    const innerPatternStringResult = this.innerPatternString(arg0);
-    const combined = "" + innerPatternStringResult + _mod11522.REGEX_PARTS.rightBoundary;
-    const regExp = new RegExp(combined, _mod11522.REGEX_PARTS.flags);
-    return regExp;
-  }
-};
-const items1 = [entry1];
-const AbstractParserWithLeftBoundaryChecking_export = _moduleResult;
-const AbstractParserWithLeftRightBoundaryChecking_export = _createClass(AbstractParserWithLeftRightBoundaryChecking, items1);
 
-export { AbstractParserWithLeftBoundaryChecking_export as AbstractParserWithLeftBoundaryChecking };
-export { AbstractParserWithLeftRightBoundaryChecking_export as AbstractParserWithLeftRightBoundaryChecking };
+export default _createClass(UKCasualDateParser, items);

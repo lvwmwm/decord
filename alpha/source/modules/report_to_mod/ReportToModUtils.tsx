@@ -1,21 +1,21 @@
-// Module ID: 11098
-// Function ID: 11099
+// Module ID: 11092
+// Function ID: 11093
 // Name: ReportToModUtils
-// Dependencies: [8801, 5092, 5114, 6309, 1385, 11099, 11100, 7220, 8671, 7219, 1084, 5180, 8788, 8567, 8571, 11101, 2]
+// Dependencies: [8800, 5092, 5114, 6309, 1385, 11093, 11094, 7220, 8671, 7219, 1084, 5180, 8787, 8567, 8571, 11095, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 11098 (ReportToModUtils)
+// Module 11092 (ReportToModUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5180 */;
 import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7219 */;
 import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7220 */;
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8567 */;
 import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 8671 */;
-import SelfModUtils from "SelfModUtils" /* 8788 */;
-import ReportToModConstants from "ReportToModConstants" /* 11099 */;
-import ReportUtils from "ReportUtils" /* 11100 */;
-import ForumChannelTypes from "ForumChannelTypes" /* 11101 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8801 */;
+import SelfModUtils from "SelfModUtils" /* 8787 */;
+import ReportToModConstants from "ReportToModConstants" /* 11093 */;
+import ReportUtils from "ReportUtils" /* 11094 */;
+import ForumChannelTypes from "ForumChannelTypes" /* 11095 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8800 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import MessageStore from "MessageStore" /* 6309 */;

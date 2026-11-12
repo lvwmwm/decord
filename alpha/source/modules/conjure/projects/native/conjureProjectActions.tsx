@@ -1,10 +1,10 @@
-// Module ID: 13208
-// Function ID: 13209
+// Module ID: 13202
+// Function ID: 13203
 // Name: conjureProjectActions
-// Dependencies: [5, 7301, 7313, 6954, 5099, 13209, 5951, 6211, 1113, 4079, 7877, 6293, 5952, 5970, 13199, 13210, 7265, 10933, 10931, 7268, 10913, 5972, 13213, 5966, 11568, 10502, 12206, 13215, 10486, 13217, 7567, 13221, 5977, 2]
+// Dependencies: [5, 7301, 7313, 6954, 5099, 13203, 5951, 6211, 1113, 4079, 7877, 6293, 5952, 5970, 13193, 13204, 7265, 10927, 10925, 7268, 10907, 5972, 13207, 5966, 11562, 10500, 12200, 13209, 10484, 13211, 7567, 13215, 5977, 2]
 // Exports: canUnpublishConjureUserApp, conjureProjectActions, copyConjureProjectId, copyConjureProjectLink, exportConjureProject, importConjureProject
 
-// Module 13208 (conjureProjectActions)
+// Module 13202 (conjureProjectActions)
 import intl12 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import ChannelConstants from "ChannelConstants" /* 5099 */;
@@ -15,10 +15,10 @@ import ChannelUtils from "ChannelUtils" /* 6293 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7265 */;
 import conjureProjectMute from "conjureProjectMute" /* 7268 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 13199 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 13210 */;
-import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 13217 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 13221 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 13193 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 13204 */;
+import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 13211 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 13215 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7301 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7313 */;

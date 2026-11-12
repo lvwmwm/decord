@@ -1,18 +1,18 @@
-// Module ID: 19876
-// Function ID: 19877
+// Module ID: 19871
+// Function ID: 19872
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 5243, 575, 5240, 19877, 12402, 1187, 5884, 5866, 1652, 5886, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 5240, 19872, 12396, 1187, 5884, 5866, 1652, 5886, 2]
 // Exports: default
 
-// Module 19876 (ActivityShelfItemSummary)
+// Module 19871 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import ButtonPill from "ButtonPill" /* 5884 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 12402 */;
-import useActivityUsersDefault from "useActivityUsers" /* 19877 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 12396 */;
+import useActivityUsersDefault from "useActivityUsers" /* 19872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

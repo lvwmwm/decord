@@ -1,10 +1,10 @@
-// Module ID: 13066
-// Function ID: 13067
+// Module ID: 13060
+// Function ID: 13061
 // Name: conjurePublishApproval
 // Dependencies: [2]
 // Exports: validPublishApproval
 
-// Module 13066 (conjurePublishApproval)
+// Module 13060 (conjurePublishApproval)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishApproval.tsx");

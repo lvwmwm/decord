@@ -1,26 +1,26 @@
-// Module ID: 17566
-// Function ID: 17567
+// Module ID: 17561
+// Function ID: 17562
 // Name: GameTrophySpotIllustration
-// Dependencies: [19, 21, 17567, 17568, 17569, 7689, 5957, 2]
+// Dependencies: [19, 21, 17562, 17563, 17564, 7689, 5957, 2]
 // Exports: GameTrophySpotIllustration
 
-// Module 17566 (GameTrophySpotIllustration)
+// Module 17561 (GameTrophySpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7689 */;
-import _modDef17567 from "module_17567" /* 17567 */;
-import _modDef17568 from "module_17568" /* 17568 */;
-import _modDef17569 from "module_17569" /* 17569 */;
+import _modDef17562 from "module_17562" /* 17562 */;
+import _modDef17563 from "module_17563" /* 17563 */;
+import _modDef17564 from "module_17564" /* 17564 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef17567 };
+let obj2 = { uri: _modDef17562 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef17568 };
+let obj3 = { uri: _modDef17563 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef17569 };
-({ uri: _modDef17569 });
+obj[3] = { uri: _modDef17564 };
+({ uri: _modDef17564 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GameTrophySpotIllustration.native.tsx");
 

@@ -1,19 +1,19 @@
-// Module ID: 13666
-// Function ID: 13667
+// Module ID: 13660
+// Function ID: 13661
 // Name: ConjureNativeStatusStrip
-// Dependencies: [32, 19, 17, 7313, 13251, 21, 5243, 575, 13494, 13250, 13667, 504, 1113, 5489, 13672, 13673, 7364, 4079, 13674, 5866, 5974, 2]
+// Dependencies: [32, 19, 17, 7313, 13245, 21, 5243, 575, 13488, 13244, 13661, 504, 1113, 5489, 13666, 13667, 7364, 4079, 13668, 5866, 5974, 2]
 // Exports: default
 
-// Module 13666 (ConjureNativeStatusStrip)
+// Module 13660 (ConjureNativeStatusStrip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5489 */;
-import AILoaderConstants from "AILoaderConstants" /* 13251 */;
-import ConjureStatusLabels from "ConjureStatusLabels" /* 13494 */;
-import ConjureUsageSheet from "ConjureUsageSheet" /* 13672 */;
-import ConjureQueuedSheet from "ConjureQueuedSheet" /* 13673 */;
-import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 13674 */;
+import AILoaderConstants from "AILoaderConstants" /* 13245 */;
+import ConjureStatusLabels from "ConjureStatusLabels" /* 13488 */;
+import ConjureUsageSheet from "ConjureUsageSheet" /* 13666 */;
+import ConjureQueuedSheet from "ConjureQueuedSheet" /* 13667 */;
+import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 13668 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7313 */;
@@ -211,8 +211,8 @@ export default function ConjureNativeStatusStrip(projectId) {
   }
   let obj2 = { activity, compacting, saving, remixing: tmp5, recalling: flag, controlling, publishPending: tmp9, publishing: stateFromStores };
   tmp9 = stateFromStores;
-  const thinkingLabel = projectId(13494).thinkingLabel;
-  projectId(13494);
+  const thinkingLabel = projectId(13488).thinkingLabel;
+  projectId(13488);
   if (stateFromStores) {
     tmp9 = tmp7;
   }
@@ -220,9 +220,9 @@ export default function ConjureNativeStatusStrip(projectId) {
   const intl = tmp2(1113).intl;
   const stringResult = intl.string(thinkingLabelResult);
   let runesUsedLabelsResult = null;
-  const first = tmp2(13494).RECALLING_LINES[0];
+  const first = tmp2(13488).RECALLING_LINES[0];
   if (null != projectUsage) {
-    const tmp2Result2 = projectId(13494);
+    const tmp2Result2 = projectId(13488);
     runesUsedLabelsResult = tmp2Result2.runesUsedLabels(projectUsage);
   }
   let tmp14 = null != activity && "" !== activity.text;

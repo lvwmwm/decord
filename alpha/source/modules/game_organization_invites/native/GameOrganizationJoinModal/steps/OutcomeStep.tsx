@@ -1,20 +1,20 @@
-// Module ID: 13984
-// Function ID: 13985
+// Module ID: 13980
+// Function ID: 13981
 // Name: OutcomeStep
-// Dependencies: [19, 12280, 13974, 21, 5243, 13971, 13985, 8142, 8144, 6274, 575, 13986, 5866, 13979, 5873, 2]
+// Dependencies: [19, 12274, 13970, 21, 5243, 13967, 13981, 8142, 8144, 6274, 575, 13982, 5866, 13975, 5873, 2]
 // Exports: OutcomeStep
 
-// Module 13984 (OutcomeStep)
+// Module 13980 (OutcomeStep)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import components_Button_Button from "components/Button/Button" /* 5873 */;
 import Stack_Stack from "Stack/Stack" /* 6274 */;
 import ModalScreen2 from "ModalScreen" /* 8142 */;
 import ModalContent2 from "ModalContent" /* 8144 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12280 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 13971 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13974 */;
-import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 13985 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12274 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 13967 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13970 */;
+import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 13981 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -54,7 +54,7 @@ export function OutcomeStep(code) {
   const Stack = Stack_Stack.Stack;
   if (tmp11Result) {
     const obj2 = { character: merged.character, organizationIconUrl: tmp5.organization.iconUrl };
-    tmp11Result = tmp11(tmp3(13986), obj2);
+    tmp11Result = tmp11(tmp3(13982), obj2);
   }
   items = [tmp11Result, ];
   const obj3 = { spacing: nativeDefault.space.PX_8, children: items1 };
@@ -73,7 +73,7 @@ export function OutcomeStep(code) {
   items[1] = metroRequire(Stack2, obj3);
   items2 = [hasOwnProperty(ModalContent, obj7), ];
   const obj8 = { children: hasOwnProperty(components_Button_Button.Button, obj9) };
-  const ModalFooter = tmp10(13979).ModalFooter;
+  const ModalFooter = tmp10(13975).ModalFooter;
   obj9 = { text: cta.text, size: "lg", onPress: cta.action, disabled: isWaitingForGuild };
   items2[1] = hasOwnProperty(ModalFooter, obj8);
   return metroRequire(ModalScreen, obj6);

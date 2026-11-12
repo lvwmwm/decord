@@ -1,14 +1,14 @@
-// Module ID: 16159
-// Function ID: 16160
+// Module ID: 16154
+// Function ID: 16155
 // Name: SignPostIcon
-// Dependencies: [19, 21, 575, 5956, 16160, 2]
+// Dependencies: [19, 21, 575, 5956, 16155, 2]
 // Exports: SignPostIcon
 
-// Module 16159 (SignPostIcon)
+// Module 16154 (SignPostIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 16160 */;
+import AssetRegistry from "AssetRegistry" /* 16155 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

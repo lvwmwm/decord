@@ -1,22 +1,113 @@
 // Module ID: 13769
 // Function ID: 13770
-// Dependencies: []
+// Dependencies: [13726, 13770]
 
 // Module 13769
+import tokenize from "tokenize" /* 13726 */;
+import tokenize2 from "tokenize" /* 13770 */;
+
 let obj2;
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-let size;
-const obj = { "@charset": { syntax: "@charset \"<charset>\";", groups: ["CSS Charsets"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@charset" }, "@counter-style": obj2, "@document": { syntax: "@document [ <url> | url-prefix(<string>) | domain(<string>) | media-document(<string>) | regexp(<string>) ]# {\n  <group-rule-body>\n}", interfaces: ["CSSGroupingRule", "CSSConditionRule"], groups: ["CSS Conditional Rules"], status: "nonstandard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@document" }, "@font-face": obj3, "@font-feature-values": { syntax: "@font-feature-values <family-name># {\n  <feature-value-block-list>\n}", interfaces: ["CSSFontFeatureValuesRule"], groups: ["CSS Fonts"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@font-feature-values" }, "@import": { syntax: "@import [ <string> | <url> ] [ <media-query-list> ]?;", groups: ["Media Queries"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@import" }, "@keyframes": { syntax: "@keyframes <keyframes-name> {\n  <keyframe-block-list>\n}", interfaces: ["CSSKeyframeRule", "CSSKeyframesRule"], groups: ["CSS Animations"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@keyframes" }, "@media": { syntax: "@media <media-query-list> {\n  <group-rule-body>\n}", interfaces: ["CSSGroupingRule", "CSSConditionRule", "CSSMediaRule", "CSSCustomMediaRule"], groups: ["CSS Conditional Rules", "Media Queries"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@media" }, "@namespace": { syntax: "@namespace <namespace-prefix>? [ <string> | <url> ];", groups: ["CSS Namespaces"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@namespace" }, "@page": obj4, "@property": obj6, "@supports": { syntax: "@supports <supports-condition> {\n  <group-rule-body>\n}", interfaces: ["CSSGroupingRule", "CSSConditionRule", "CSSSupportsRule"], groups: ["CSS Conditional Rules"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@supports" }, "@viewport": obj7 };
-obj4 = { syntax: "@page <page-selector-list> {\n  <page-body>\n}", interfaces: ["CSSPageRule"], groups: ["CSS Pages"], descriptors: obj5, status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@page" };
-obj7 = { syntax: "@viewport {\n  <group-rule-body>\n}", interfaces: ["CSSViewportRule"], groups: ["CSS Device Adaptation"], descriptors: size, status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@viewport" };
-size = { height: { syntax: "<viewport-length>{1,2}", media: ["visual", "continuous"], initial: ["min-height", "max-height"], percentages: ["min-height", "max-height"], computed: ["min-height", "max-height"], order: "orderOfAppearance", status: "standard" }, "max-height": { syntax: "<viewport-length>", media: ["visual", "continuous"], initial: "auto", percentages: "referToHeightOfInitialViewport", computed: "lengthAbsolutePercentageAsSpecifiedOtherwiseAuto", order: "uniqueOrder", status: "standard" }, "max-width": { syntax: "<viewport-length>", media: ["visual", "continuous"], initial: "auto", percentages: "referToWidthOfInitialViewport", computed: "lengthAbsolutePercentageAsSpecifiedOtherwiseAuto", order: "uniqueOrder", status: "standard" }, "max-zoom": { syntax: "auto | <number> | <percentage>", media: ["visual", "continuous"], initial: "auto", percentages: "the zoom factor itself", computed: "autoNonNegativeOrPercentage", order: "uniqueOrder", status: "standard" }, "min-height": { syntax: "<viewport-length>", media: ["visual", "continuous"], initial: "auto", percentages: "referToHeightOfInitialViewport", computed: "lengthAbsolutePercentageAsSpecifiedOtherwiseAuto", order: "uniqueOrder", status: "standard" }, "min-width": { syntax: "<viewport-length>", media: ["visual", "continuous"], initial: "auto", percentages: "referToWidthOfInitialViewport", computed: "lengthAbsolutePercentageAsSpecifiedOtherwiseAuto", order: "uniqueOrder", status: "standard" }, "min-zoom": { syntax: "auto | <number> | <percentage>", media: ["visual", "continuous"], initial: "auto", percentages: "the zoom factor itself", computed: "autoNonNegativeOrPercentage", order: "uniqueOrder", status: "standard" }, orientation: { syntax: "auto | portrait | landscape", media: ["visual", "continuous"], initial: "auto", percentages: "referToSizeOfBoundingBox", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "user-zoom": { syntax: "zoom | fixed", media: ["visual", "continuous"], initial: "zoom", percentages: "referToSizeOfBoundingBox", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "viewport-fit": { syntax: "auto | contain | cover", media: ["visual", "continuous"], initial: "auto", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, width: { syntax: "<viewport-length>{1,2}", media: ["visual", "continuous"], initial: ["min-width", "max-width"], percentages: ["min-width", "max-width"], computed: ["min-width", "max-width"], order: "orderOfAppearance", status: "standard" }, zoom: { syntax: "auto | <number> | <percentage>", media: ["visual", "continuous"], initial: "auto", percentages: "the zoom factor itself", computed: "autoNonNegativeOrPercentage", order: "uniqueOrder", status: "standard" } };
-obj2 = { syntax: "@counter-style <counter-style-name> {\n  [ system: <counter-system>; ] ||\n  [ symbols: <counter-symbols>; ] ||\n  [ additive-symbols: <additive-symbols>; ] ||\n  [ negative: <negative-symbol>; ] ||\n  [ prefix: <prefix>; ] ||\n  [ suffix: <suffix>; ] ||\n  [ range: <range>; ] ||\n  [ pad: <padding>; ] ||\n  [ speak-as: <speak-as>; ] ||\n  [ fallback: <counter-style-name>; ]\n}", interfaces: ["CSSCounterStyleRule"], groups: ["CSS Counter Styles"], descriptors: { "additive-symbols": { syntax: "[ <integer> && <symbol> ]#", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, fallback: { syntax: "<counter-style-name>", media: "all", initial: "decimal", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, negative: { syntax: "<symbol> <symbol>?", media: "all", initial: "\"-\" hyphen-minus", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, pad: { syntax: "<integer> && <symbol>", media: "all", initial: "0 \"\"", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, prefix: { syntax: "<symbol>", media: "all", initial: "\"\"", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, range: { syntax: "[ [ <integer> | infinite ]{2} ]# | auto", media: "all", initial: "auto", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, "speak-as": { syntax: "auto | bullets | numbers | words | spell-out | <counter-style-name>", media: "all", initial: "auto", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, suffix: { syntax: "<symbol>", media: "all", initial: "\". \"", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, symbols: { syntax: "<symbol>+", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, system: { syntax: "cyclic | numeric | alphabetic | symbolic | additive | [ fixed <integer>? ] | [ extends <counter-style-name> ]", media: "all", initial: "symbolic", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" } }, status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@counter-style" };
-obj3 = { syntax: "@font-face {\n  [ font-family: <family-name>; ] ||\n  [ src: <src>; ] ||\n  [ unicode-range: <unicode-range>; ] ||\n  [ font-variant: <font-variant>; ] ||\n  [ font-feature-settings: <font-feature-settings>; ] ||\n  [ font-variation-settings: <font-variation-settings>; ] ||\n  [ font-stretch: <font-stretch>; ] ||\n  [ font-weight: <font-weight>; ] ||\n  [ font-style: <font-style>; ]\n}", interfaces: ["CSSFontFaceRule"], groups: ["CSS Fonts"], descriptors: { "font-display": { syntax: "[ auto | block | swap | fallback | optional ]", media: "visual", percentages: "no", initial: "auto", computed: "asSpecified", order: "uniqueOrder", status: "experimental" }, "font-family": { syntax: "<family-name>", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "font-feature-settings": { syntax: "normal | <feature-tag-value>#", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, "font-variation-settings": { syntax: "normal | [ <string> <number> ]#", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, "font-stretch": { syntax: "<font-stretch-absolute>{1,2}", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "font-style": { syntax: "normal | italic | oblique <angle>{0,2}", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "font-weight": { syntax: "<font-weight-absolute>{1,2}", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "font-variant": { syntax: "normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> || stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero || <east-asian-variant-values> || <east-asian-width-values> || ruby ]", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, src: { syntax: "[ <url> [ format( <string># ) ]? | local( <family-name> ) ]#", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, "unicode-range": { syntax: "<unicode-range>#", media: "all", initial: "U+0-10FFFF", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" } }, status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@font-face" };
-obj5 = { bleed: { syntax: "auto | <length>", media: ["visual", "paged"], initial: "auto", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, marks: { syntax: "none | [ crop || cross ]", media: ["visual", "paged"], initial: "none", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, size: { syntax: "<length>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]", media: ["visual", "paged"], initial: "auto", percentages: "no", computed: "asSpecifiedRelativeToAbsoluteLengths", order: "orderOfAppearance", status: "standard" } };
-obj6 = { syntax: "@property <custom-property-name> {\n  <declaration-list>\n}", interfaces: ["CSS", "CSSPropertyRule"], groups: ["CSS Houdini"], descriptors: { syntax: { syntax: "<string>", media: "all", percentages: "no", initial: "n/a (required)", computed: "asSpecified", order: "uniqueOrder", status: "experimental" }, inherits: { syntax: "true | false", media: "all", percentages: "no", initial: "auto", computed: "asSpecified", order: "uniqueOrder", status: "experimental" }, "initial-value": { syntax: "<string>", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "experimental" } }, status: "experimental", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@property" };
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracketOrSemicolon, true);
+}
+function isDeclarationBlockAtrule() {
+  const scanner = this.scanner;
+  let lookupTypeResult = scanner.lookupType(1);
+  let num = 1;
+  if (lookupTypeResult) {
+    while (lookupTypeResult !== RightCurlyBracket) {
+      if (lookupTypeResult !== LeftCurlyBracket) {
+        if (lookupTypeResult !== AtKeyword) {
+          let sum = num + 1;
+          let scanner2 = this.scanner;
+          lookupTypeResult = scanner2.lookupType(sum);
+          num = sum;
+        }
+      }
+      let flag = false;
+      return false;
+    }
+    return true;
+  }
+  return false;
+}
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const Semicolon = tokenize.TYPE.Semicolon;
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const RightCurlyBracket = tokenize.TYPE.RightCurlyBracket;
+let obj = {
+  name: "Atrule",
+  structure: obj2,
+  parse() {
+    let AtrulePrelude;
+    let parseWithFallback;
+    let tmp13;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(AtKeyword);
+    const scanner = this.scanner;
+    const str = scanner.substrToCursor(tokenStart + 1);
+    const formatted = str.toLowerCase();
+    const scanner2 = this.scanner;
+    scanner2.skipSC();
+    let tmp7 = null;
+    const tmp4 = false === this.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
+    if (tmp4) {
+      let callResult;
+      if (self.parseAtrulePrelude) {
+        ({ AtrulePrelude, parseWithFallback } = self);
+        const element = parseWithFallback(AtrulePrelude.bind(self, str), consumeRaw);
+        callResult = element;
+        const tmp10 = "AtrulePrelude" === element.type && null === element.children.head;
+        if (tmp10) {
+          callResult = null;
+        }
+      } else {
+        callResult = consumeRaw.call(self, self.scanner.tokenIndex);
+      }
+      const scanner3 = self.scanner;
+      scanner3.skipSC();
+      tmp7 = callResult;
+    }
+    const tokenType = self.scanner.tokenType;
+    if (Semicolon === tokenType) {
+      const iter = self.scanner;
+      iter.next();
+      tmp13 = null;
+    } else {
+      tmp13 = null;
+      if (LeftCurlyBracket === tokenType) {
+        const atrule = self.atrule;
+        if (atrule.hasOwnProperty(formatted)) {
+          let callResult1;
+          if (typeof self.atrule[formatted].block === "function") {
+            const block = self.atrule[formatted].block;
+            callResult1 = block.call(self);
+          }
+          tmp13 = callResult1;
+        }
+        callResult1 = self.Block(isDeclarationBlockAtrule.call(self));
+      }
+    }
+    const obj = { type: "Atrule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, prelude: tmp7, block: tmp13 };
+    return obj;
+  },
+  generate(name) {
+    const self = this;
+    this.chunk("@");
+    this.chunk(name.name);
+    if (null !== name.prelude) {
+      self.chunk(" ");
+      self.node(name.prelude);
+    }
+    if (name.block) {
+      self.node(name.block);
+    } else {
+      self.chunk(";");
+    }
+  },
+  walkContext: "atrule"
+};
+obj2 = { name: String, prelude: ["AtrulePrelude", "Raw", null], block: ["Block", null] };
 
 export default obj;

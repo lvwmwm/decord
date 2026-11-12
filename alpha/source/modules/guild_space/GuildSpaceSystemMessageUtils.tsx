@@ -1,15 +1,15 @@
-// Module ID: 9111
-// Function ID: 9112
+// Module ID: 9110
+// Function ID: 9111
 // Name: GuildSpaceSystemMessageUtils
-// Dependencies: [5186, 1385, 9112, 9113, 6288, 1113, 5163, 9114, 2]
+// Dependencies: [5186, 1385, 9111, 9112, 6288, 1113, 5163, 9113, 2]
 // Exports: stringifyGuildSpaceSystemMessage
 
-// Module 9111 (GuildSpaceSystemMessageUtils)
+// Module 9110 (GuildSpaceSystemMessageUtils)
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5163 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9112 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 9113 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 9114 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9111 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 9112 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 9113 */;
 import MessageRecord from "MessageRecord" /* 5186 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

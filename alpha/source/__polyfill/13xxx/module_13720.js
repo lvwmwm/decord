@@ -1,9 +1,14 @@
 // Module ID: 13720
 // Function ID: 13721
-// Dependencies: [13721]
+// Dependencies: []
 
 // Module 13720
-import _mod13721 from "module_13721" /* 13721 */;
+const f62294 = (acc, item) => {
+  acc[obj[item]] = item;
+  return acc;
+};
+const TYPE = { EOF: 0, Ident: 1, Function: 2, AtKeyword: 3, Hash: 4, String: 5, BadString: 6, Url: 7, BadUrl: 8, Delim: 9, Number: 10, Percentage: 11, Dimension: 12, WhiteSpace: 13, CDO: 14, CDC: 15, Colon: 16, Semicolon: 17, Comma: 18, LeftSquareBracket: 19, RightSquareBracket: 20, LeftParenthesis: 21, RightParenthesis: 22, LeftCurlyBracket: 23, RightCurlyBracket: 24, Comment: 25 };
+const keys = Object.keys(TYPE);
+({ TYPE, NAME: keys.reduce(f62294, {}) });
 
-
-export default _mod13721;
+export default { TYPE, NAME: keys.reduce(f62294, {}) };

@@ -85,7 +85,7 @@ export function extractGestureRelations(item10007) {
   let _Set31;
   let from2;
   let from3;
-  const f89864 = (item) => item > 0;
+  const f89875 = (item) => item > 0;
   const requireToFail = item10007.config.requireToFail;
   let found;
   const _Array = Array;
@@ -93,7 +93,7 @@ export function extractGestureRelations(item10007) {
   if (requireToFail != null) {
     const mapped = requireToFail.map(convertToHandlerTag);
     if (mapped != null) {
-      found = mapped.filter(f89864);
+      found = mapped.filter(f89875);
     }
   }
   if (found == null) {
@@ -109,7 +109,7 @@ export function extractGestureRelations(item10007) {
   if (simultaneousWith != null) {
     const mapped1 = simultaneousWith.map(convertToHandlerTag);
     if (mapped1 != null) {
-      found1 = mapped1.filter(f89864);
+      found1 = mapped1.filter(f89875);
     }
   }
   if (found1 == null) {
@@ -123,7 +123,7 @@ export function extractGestureRelations(item10007) {
   if (item10007.config.blocksHandlers != null) {
     const mapped2 = blocksHandlers.map(convertToHandlerTag);
     if (mapped2 != null) {
-      found2 = mapped2.filter(f89864);
+      found2 = mapped2.filter(f89875);
     }
   }
   if (found2 == null) {

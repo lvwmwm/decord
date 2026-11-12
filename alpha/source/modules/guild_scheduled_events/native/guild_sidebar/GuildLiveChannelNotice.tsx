@@ -1,10 +1,10 @@
-// Module ID: 18781
-// Function ID: 18782
+// Module ID: 18776
+// Function ID: 18777
 // Name: GuildLiveChannelNotice
-// Dependencies: [19, 17, 6877, 5097, 6757, 5175, 6011, 5098, 1083, 21, 575, 1187, 5994, 10998, 9289, 5998, 1377, 5879, 5243, 5866, 10667, 10987, 6775, 2017, 6837, 7612, 5484, 8995, 5873, 5250, 5891, 504, 1113, 7968, 8391, 7909, 7949, 7899, 6886, 6880, 6876, 8360, 7952, 18780, 10831, 7381, 2]
+// Dependencies: [19, 17, 6877, 5097, 6757, 5175, 6011, 5098, 1083, 21, 575, 1187, 5994, 10992, 9288, 5998, 1377, 5879, 5243, 5866, 10660, 10981, 6775, 2017, 6837, 7612, 5484, 8994, 5873, 5250, 5891, 504, 1113, 7968, 8391, 7909, 7949, 7899, 6886, 6880, 6876, 8360, 7952, 18775, 10825, 7381, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 18781 (GuildLiveChannelNotice)
+// Module 18776 (GuildLiveChannelNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -20,9 +20,9 @@ import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActi
 import EntityUtils from "EntityUtils" /* 7909 */;
 import LocationIcon from "LocationIcon" /* 7949 */;
 import CalendarIcon from "CalendarIcon" /* 8391 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 9289 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10831 */;
-import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 10998 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 9288 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10825 */;
+import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 10992 */;
 import react from "react" /* 19 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6877 */;
 import StageInstanceStore from "StageInstanceStore" /* 5097 */;
@@ -123,8 +123,8 @@ function UserSummaryRow(arg0) {
       items2 = [, ];
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       let obj4 = { size: "custom", style: obj5.makeSizeStyle(14) };
-      const HeadphonesIcon = max(10667).HeadphonesIcon;
-      obj5 = max(10987);
+      const HeadphonesIcon = max(10660).HeadphonesIcon;
+      obj5 = max(10981);
       items3 = [tmp8(HeadphonesIcon, obj4), ];
       let obj6 = { variant: "body-xs/semibold", style: { marginLeft: 4 }, maxFontSizeMultiplier: 1, children: audienceCount };
       items3[1] = closure_13(max(5866).Text, obj6);
@@ -162,7 +162,7 @@ function JoinChannelButton(label) {
   const tmp = closure_29();
   const tmp2 = isChannelContentGated(5484)();
   isChannelContentGated = undefined;
-  const tmp3 = isChannelContentGated(8995)();
+  const tmp3 = isChannelContentGated(8994)();
   const obj = channel(6775);
   isChannelContentGated = obj.useIsChannelContentGated(channel);
   const items = [channel, isChannelContentGated];
@@ -448,7 +448,7 @@ const memoResult = react.memo(function GuildLiveChannelNotice(guild) {
   const style = guild.style;
   const tmp2 = activeEventOrStageInstanceChannel;
   const tmp = closure_29();
-  let obj = activeEventOrStageInstanceChannel(18780);
+  let obj = activeEventOrStageInstanceChannel(18775);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
   let obj2 = activeEventOrStageInstanceChannel(8360);
   const guildActiveEvent = obj2.useGuildActiveEvent(guild.id);

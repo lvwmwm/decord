@@ -1,10 +1,10 @@
-// Module ID: 10826
-// Function ID: 10827
+// Module ID: 10820
+// Function ID: 10821
 // Name: UserNameplateRow
-// Dependencies: [32, 19, 21, 5243, 575, 7380, 5839, 7381, 9442, 7379, 7385, 2]
+// Dependencies: [32, 19, 21, 5243, 575, 7380, 5839, 7381, 9441, 7379, 7385, 2]
 // Exports: UserNameplateRow
 
-// Module 10826 (UserNameplateRow)
+// Module 10820 (UserNameplateRow)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5839 */;
 import react2 from "react" /* 7380 */;
@@ -20,7 +20,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp11;
-const NameplateDefault = tmp11(9442);
+const NameplateDefault = tmp11(9441);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 const obj = { card: obj2 };
 obj2 = { padding: 0, paddingRight: nativeDefault.space.PX_40, overflow: "hidden" };

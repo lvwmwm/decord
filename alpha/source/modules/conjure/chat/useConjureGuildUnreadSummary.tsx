@@ -1,10 +1,10 @@
-// Module ID: 18810
-// Function ID: 18811
+// Module ID: 18805
+// Function ID: 18806
 // Name: useConjureGuildUnreadSummary
 // Dependencies: [19, 6952, 6954, 6896, 504, 7267, 7265, 2]
 // Exports: default
 
-// Module 18810 (useConjureGuildUnreadSummary)
+// Module 18805 (useConjureGuildUnreadSummary)
 import ReadStateConstants from "ReadStateConstants" /* 6896 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7265 */;
 import react from "react" /* 19 */;

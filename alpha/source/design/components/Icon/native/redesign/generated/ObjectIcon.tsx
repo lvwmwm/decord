@@ -1,14 +1,14 @@
-// Module ID: 11265
-// Function ID: 11266
+// Module ID: 11259
+// Function ID: 11260
 // Name: ObjectIcon
-// Dependencies: [19, 21, 575, 5956, 11266, 2]
+// Dependencies: [19, 21, 575, 5956, 11260, 2]
 // Exports: ObjectIcon
 
-// Module 11265 (ObjectIcon)
+// Module 11259 (ObjectIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 11266 */;
+import AssetRegistry from "AssetRegistry" /* 11260 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

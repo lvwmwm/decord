@@ -1,13 +1,13 @@
-// Module ID: 9599
-// Function ID: 9600
+// Module ID: 9598
+// Function ID: 9599
 // Name: game_exit_panel
-// Dependencies: [32, 1197, 9564, 9566, 9574, 2]
+// Dependencies: [32, 1197, 9563, 9565, 9573, 2]
 
-// Module 9599 (game_exit_panel)
+// Module 9598 (game_exit_panel)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9564 */;
-import cta_button from "cta_button" /* 9566 */;
-import theme_aware_asset from "theme_aware_asset" /* 9574 */;
+import localized_string from "localized_string" /* 9563 */;
+import cta_button from "cta_button" /* 9565 */;
+import theme_aware_asset from "theme_aware_asset" /* 9573 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

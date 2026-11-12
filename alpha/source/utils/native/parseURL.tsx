@@ -1,7 +1,7 @@
 // Module ID: 5985
 // Function ID: 5986
 // Name: parseURL
-// Dependencies: [32, 1072, 1074, 5894, 5986, 5987, 1487, 2067, 1381, 5988, 5992, 15833, 12351, 6692, 16167, 1378, 5893, 11, 7338, 9647, 1624, 1377, 10570, 1252, 1265, 16168, 2]
+// Dependencies: [32, 1072, 1074, 5894, 5986, 5987, 1487, 2067, 1381, 5988, 5992, 15828, 12345, 6692, 16162, 1378, 5893, 11, 7338, 9646, 1624, 1377, 10568, 1252, 1265, 16163, 2]
 // Exports: default
 
 // Module 5985 (parseURL)
@@ -20,12 +20,12 @@ import findCodedLinks from "findCodedLinks" /* 5988 */;
 import CodedLink from "CodedLink" /* 5992 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 6692 */;
 import Authorize from "Authorize" /* 7338 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 9647 */;
-import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 10570 */;
-import conjureProjectLink from "conjureProjectLink" /* 12351 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 15833 */;
-import QRLoginUtils from "QRLoginUtils" /* 16167 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 16168 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 9646 */;
+import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 10568 */;
+import conjureProjectLink from "conjureProjectLink" /* 12345 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 15828 */;
+import QRLoginUtils from "QRLoginUtils" /* 16162 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 16163 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;

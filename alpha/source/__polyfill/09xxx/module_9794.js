@@ -1,155 +1,82 @@
 // Module ID: 9794
 // Function ID: 9795
-// Dependencies: [9795, 9775, 9796, 9755, 9759, 9731, 9788]
-// Exports: createTransport
+// Dependencies: [9754, 9787]
+// Exports: makePromiseBuffer
 
 // Module 9794
-import _mod9755 from "module_9755" /* 9755 */;
-import _mod9759 from "module_9759" /* 9759 */;
-import _mod9775 from "module_9775" /* 9775 */;
-import _mod9788 from "module_9788" /* 9788 */;
-import _slicedToArray from "_slicedToArray" /* 9796 */;
+import _mod9754 from "module_9754" /* 9754 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+let diff;
 
 
-export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
-export function createTransport(bufferSize, arg1) {
-  _require = bufferSize;
-  dependencyMap = arg1;
-  let promiseBuffer = arg2;
-  if (arg2 === undefined) {
-    let tmp2 = _require;
-    let tmp4 = require("module_9795");
-    let num = bufferSize.bufferSize;
-    const makePromiseBuffer = tmp4.makePromiseBuffer;
-    if (!num) {
-      num = 64;
-    }
-    promiseBuffer = makePromiseBuffer(num);
-  }
-  let closure_3 = {};
+export function makePromiseBuffer(arg0) {
+  let closure_0 = arg0;
+  const items = [];
   let obj = {
-    send(arg0) {
-      const items = [];
-      let tmp = bufferSize;
-      const tmp2 = closure_1;
-      let obj = bufferSize(closure_1[1]);
-      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-        const obj = _mod9775;
-        const result = obj.envelopeItemTypeToDataCategory(arg1);
-        const obj2 = _slicedToArray;
-        if (obj2.isRateLimited(closure_3, result)) {
-          let tmp4;
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp6;
-            if (Array.isArray(arg0)) {
-              tmp6 = arg0[1];
-            }
-            tmp4 = tmp6;
-          }
-          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
-        } else {
-          items.push(arg0);
+    $: items,
+    add(fn) {
+      let promise;
+      const tmp2 = undefined === promise || items.length < tmp;
+      if (tmp2) {
+        promise = fn();
+        const arr = items;
+        if (-1 === items.indexOf(promise)) {
+          arr.push(promise);
         }
-      });
-      if (0 === items.length) {
-        let tmpResult = tmp(tmp2[3]);
-        return tmpResult.resolvedSyncPromise({});
-      } else {
-        let tmpResult2 = tmp(tmp2[1]);
-        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
-        function recordEnvelopeLoss(arg0) {
+        const nextPromise = promise.then(() => {
+          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
+          return first;
+        });
+        nextPromise.then(null, () => {
+          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
+          return first.then(null, () => {
 
-        }
-        let tmp4 = recordEnvelopeLoss;
-        const addResult = recordEnvelopeLoss.add(() => {
-          let obj2;
-          let obj = { body: obj2.serializeEnvelope(closure_1) };
-          obj2 = _mod9775;
-          const promise = closure_1(obj);
-          return promise.then((statusCode) => {
-            let DEBUG_BUILD = undefined !== statusCode.statusCode;
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-            }
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
-            }
-            if (DEBUG_BUILD) {
-              const logger = items(closure_1[5]).logger;
-              const _HermesInternal = HermesInternal;
-              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
-            }
-            const obj = items(closure_1[2]);
-            closure_3 = obj.updateRateLimits(closure_3, statusCode);
-            return statusCode;
-          }, (arg0) => {
-            let recordDroppedEvent;
-            if (typeof recordEnvelopeLoss === "function") {
-              let tmp = arg0;
-              const network_error = "network_error";
-              let obj = recordDroppedEvent(closure_1[1]);
-              let tmp4 = closure_1_1;
-              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              throw arg0;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
           });
         });
-        return addResult.then((result) => result, (arg0) => {
-          if (arg0 instanceof _mod9788.SentryError) {
-            if (_mod9759.DEBUG_BUILD) {
-              const logger = tmp(9731).logger;
-              logger.error("Skipped sending event because buffer is full.");
-            }
-            if (typeof recordEnvelopeLoss === "function") {
-              const queue_overflow = "queue_overflow";
-              const tmpResult = _mod9775;
-              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              const tmpResult2 = _mod9755;
-              return tmpResult2.resolvedSyncPromise({});
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw arg0;
-          }
-        });
+        return promise;
+      } else {
+        const self = this;
+        const self2 = this;
+        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
+        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
+        return rejectedSyncPromise(sentryError);
       }
     },
-    flush(arg0) {
-      return promiseBuffer.drain(arg0);
+    drain(arg0) {
+      let length;
+      closure_0 = arg0;
+      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
+        let closure_3;
+        closure_0 = fn;
+        let closure_1 = arg1;
+        const arr = length;
+        if (length.length) {
+          const tmp = globalThis;
+          const _setTimeout = setTimeout;
+          let tmp2 = closure_0;
+          const timeout = setTimeout(() => {
+            const tmp2 = closure_0 && tmp > 0;
+            if (tmp2) {
+              closure_0(false);
+            }
+          }, closure_0);
+          const item = arr.forEach((item) => {
+            const obj = _mod9754;
+            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
+            resolvedSyncPromiseResult.then(() => {
+              diff = diff - 1;
+              if (!diff) {
+                const _clearTimeout = clearTimeout;
+                clearTimeout(closure_1_3);
+                fn(true);
+              }
+            }, closure_1);
+          });
+        } else {
+          return fn(true);
+        }
+      });
+      return syncPromise;
     }
   };
   return obj;

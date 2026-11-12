@@ -1,17 +1,17 @@
-// Module ID: 14691
-// Function ID: 14692
+// Module ID: 14687
+// Function ID: 14688
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 14692, 10400, 7720, 7374, 10231, 5243, 14693, 6274, 575, 2]
+// Dependencies: [19, 21, 14688, 10398, 7720, 7374, 10229, 5243, 14689, 6274, 575, 2]
 
-// Module 14691 (GamePlatformBadgeRow)
+// Module 14687 (GamePlatformBadgeRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import GameControllerIcon from "GameControllerIcon" /* 7374 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 7720 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 10231 */;
-import ScreenIcon from "ScreenIcon" /* 10400 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 14692 */;
-import GamePlatformBadges from "GamePlatformBadges" /* 14693 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 10229 */;
+import ScreenIcon from "ScreenIcon" /* 10398 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 14688 */;
+import GamePlatformBadges from "GamePlatformBadges" /* 14689 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 20627
-// Function ID: 20628
+// Module ID: 20622
+// Function ID: 20623
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 5866, 5489, 20628, 2118, 20632, 1187, 20631, 1113, 15348, 1499, 17729, 20633, 1252, 6004, 17735, 20629, 17740, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 5866, 5489, 20623, 2118, 20627, 1187, 20626, 1113, 15345, 1499, 17724, 20628, 1252, 6004, 17730, 20624, 17735, 2]
 // Exports: default
 
-// Module 20627 (GuildRoleSubscriptionTierTemplatePreviewCard)
+// Module 20622 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -12,9 +12,9 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import Text_Text from "Text/Text" /* 5866 */;
-import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15348 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20631 */;
-import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 20633 */;
+import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15345 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20626 */;
+import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 20628 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -178,7 +178,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     if (closure_7) {
       const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(20632, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+      obj.openLazy(asyncRequire(20627, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
     } else {
       handleCreateFromTemplate(selectedTemplate, arg1);
     }
@@ -192,7 +192,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     onPress: function handleViewEntireTemplate() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { template, guildId, handleSelectTemplateInPreview: callback1 };
-      obj.openLazy(asyncRequire(20628, dependencyMap.paths), "TierTemplateCard", obj2);
+      obj.openLazy(asyncRequire(20623, dependencyMap.paths), "TierTemplateCard", obj2);
     },
     children: items6
   };

@@ -1,52 +1,109 @@
 // Module ID: 11402
 // Function ID: 11403
-// Dependencies: [41, 42, 11367]
+// Dependencies: [41, 42, 93, 95, 98, 11381]
 
 // Module 11402
-import _mod11367 from "module_11367" /* 11367 */;
+import _mod11381 from "module_11381" /* 11381 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let start;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-const regExp = new RegExp("^\\s*(" + _mod11367.YEAR_PATTERN + ")", "i");
-class ENExtractYearSuffixRefiner {
-  constructor() {
-    _classCallCheck(this, ENExtractYearSuffixRefiner);
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+class UnlikelyFormatFilter {
+  constructor(strictMode) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, UnlikelyFormatFilter);
+    const obj = _getPrototypeOf(UnlikelyFormatFilter);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
+  }
+}
+_inherits(UnlikelyFormatFilter, _mod11381.Filter);
 const entry = {
-  key: "refine",
-  value: function refine(arg0, arr) {
-    let text = arg0;
-    const item = arr.forEach((start) => {
-      text = start;
-      start = start.start;
-      if (start.isDateWithUnknownYear()) {
-        const str = text.text;
-        const match = regExp.exec(str.substring(start.index + start.text.length));
-        const obj = text;
-        if (match) {
-          const str2 = match[0];
-          if (str2.trim().length > 3) {
-            obj.debug(() => {
-              console.log("Extracting year: '" + match[0] + "' into : " + closure_0);
+  key: "isValid",
+  value: function isValid(debug, text) {
+    let flag;
+    const str = text.text;
+    const str2 = str.replace(" ", "");
+    if (str2.match(/^\d*(\.\d*)?$/)) {
+      debug.debug(() => {
+        console.log("Removing unlikely result '" + text.text + "'");
+      });
+      flag = false;
+    } else {
+      const start = text.start;
+      if (start.isValidDate()) {
+        if (text.end) {
+          let flag2;
+          const end = text.end;
+          if (!end.isValidDate()) {
+            debug.debug(() => {
+              console.log("Removing invalid result: " + text + " (" + text.end + ")");
             });
-            const parseYearResult = _mod11367.parseYear(match[1]);
-            if (null != start.end) {
-              const end = start.end;
-              end.assign("year", parseYearResult);
-            }
-            const start2 = start.start;
-            start2.assign("year", parseYearResult);
-            start.text = start.text + match[0];
+            flag2 = false;
           }
+          flag = flag2;
         }
+        const self = this;
+        const strictMode = this.strictMode;
+        let isStrictModeValidResult = !strictMode;
+        if (strictMode) {
+          isStrictModeValidResult = self.isStrictModeValid(debug, text);
+        }
+        flag2 = isStrictModeValidResult;
+      } else {
+        debug.debug(() => {
+          console.log("Removing invalid result: " + text + " (" + text.start + ")");
+        });
+        flag = false;
       }
-    });
-    return arr;
+    }
+    return flag;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "isStrictModeValid",
+    value: function isStrictModeValid(debug, start) {
+      start = start.start;
+      const result = start.isOnlyWeekdayComponent();
+      let flag = !result;
+      if (result) {
+        debug.debug(() => {
+          console.log("(Strict) Removing weekday only component: " + start + " (" + start.end + ")");
+        });
+        flag = false;
+      }
+      return flag;
+    }
+  }
+];
 
-export default _createClass(ENExtractYearSuffixRefiner, items);
+export default _createClass(UnlikelyFormatFilter, items);

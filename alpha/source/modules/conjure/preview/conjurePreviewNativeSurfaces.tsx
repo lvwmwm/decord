@@ -1,10 +1,10 @@
-// Module ID: 15857
-// Function ID: 15858
+// Module ID: 15852
+// Function ID: 15853
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [6956, 1072, 15858, 13064, 13062, 7245, 2]
+// Dependencies: [6956, 1072, 15853, 13058, 13056, 7245, 2]
 // Exports: beginNativeSurfaceSessionForFrame, holdPreviewGameCaptureAnswers
 
-// Module 15857 (conjurePreviewNativeSurfaces)
+// Module 15852 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1072 */;
 import RpcCommandInterception from "RpcCommandInterception" /* 7245 */;
 import FramesStore from "FramesStore" /* 6956 */;
@@ -96,7 +96,7 @@ function answerFor(cmd) {
                       return conjureDevicePermissionStatus;
                     })
           };
-          prop = tmp9(13064).CONJURE_DEVICE_PERMISSION_NAMES;
+          prop = tmp9(13058).CONJURE_DEVICE_PERMISSION_NAMES;
         }
         tmp8 = obj3;
       }
@@ -215,15 +215,15 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f111300 = (permission) => ({ permission, state: "denied" });
+    const f111309 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f111300) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f111300) });
+    obj = { result: { permissions: found.map(f111309) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f111309) });
     return obj;
   },
   [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
@@ -244,8 +244,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: 0.00000000000000000000003100068180001223 }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: 0.00000000000000000000003100068180001223 })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: 610780 }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: 610780 })
 };
 let closure_7 = {
   drain() {

@@ -1,10 +1,10 @@
-// Module ID: 10399
-// Function ID: 10400
+// Module ID: 10397
+// Function ID: 10398
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 10145, 21, 9411, 10400, 7720, 10241, 10402, 10404, 10231, 5243, 575, 5949, 10406, 10407, 10252, 1113, 2116, 5065, 10408, 5866, 2]
+// Dependencies: [19, 17, 10144, 21, 9410, 10398, 7720, 10239, 10400, 10402, 10229, 5243, 575, 5949, 10404, 10405, 10250, 1113, 2116, 5065, 10406, 5866, 2]
 // Exports: default
 
-// Module 10399 (GameProfileDetails)
+// Module 10397 (GameProfileDetails)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
 import Server from "Server" /* 2116 */;
@@ -12,14 +12,14 @@ import DateUtilsAll from "DateUtils" /* 5065 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import LinkingDefault from "Linking" /* 5949 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 7720 */;
-import PlatformType from "PlatformType" /* 9411 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 10145 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 10231 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 10241 */;
-import SKUUtils from "SKUUtils" /* 10252 */;
-import ScreenIcon from "ScreenIcon" /* 10400 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 10402 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 10404 */;
+import PlatformType from "PlatformType" /* 9410 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 10144 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 10229 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 10239 */;
+import SKUUtils from "SKUUtils" /* 10250 */;
+import ScreenIcon from "ScreenIcon" /* 10398 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 10400 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 10402 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

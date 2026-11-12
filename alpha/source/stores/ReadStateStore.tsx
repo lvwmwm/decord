@@ -99,11 +99,11 @@ let closure_54;
 let closure_55;
 let tmp;
 const isOptInEnabled = tmp(6996);
-const f92059 = () => {
+const f92070 = () => {
   obj = DispatcherDefault;
   obj.dispatch({ type: "DECAY_READ_STATES" });
 };
-const f92062 = (type) => {
+const f92073 = (type) => {
   let last_pin_timestamp;
   if (closure_1_18(type.type)) {
     const value = closure_1_83.get(type.id);
@@ -143,7 +143,7 @@ function setDecayedReadStateTimer() {
   const timestamp1 = Date.now();
   closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
   clearTimeout(timeout);
-  timeout = setTimeout(f92059, DurationsDefault.Millis.HOUR);
+  timeout = setTimeout(f92070, DurationsDefault.Millis.HOUR);
 }
 function parseTimestamp(arg0) {
   if (null == arg0) {
@@ -745,7 +745,7 @@ function handleMessageDelete(channelId) {
 }
 function handleLoadArchivedThreadsSuccess(threads) {
   threads = threads.threads;
-  const item = threads.forEach(f92062);
+  const item = threads.forEach(f92073);
 }
 function handleSearchMessagesSuccess(data) {
   data = data.data;
@@ -756,9 +756,9 @@ function handleSearchMessagesSuccess(data) {
     item = messages.forEach((arr) => {
       const mapped = arr.map((thread) => thread.thread);
       const found = mapped.filter(closure_1_0(closure_1_2[56]).isNotNullish);
-      const item = found.forEach(f92062);
+      const item = found.forEach(f92073);
     });
-    const item1 = threads.forEach(f92062);
+    const item1 = threads.forEach(f92073);
   });
 }
 function handleChannelDelete(channel) {
@@ -956,7 +956,7 @@ class ReadState {
     if (arg1 === undefined) {
       CHANNEL = ReadStateTypes.CHANNEL;
     }
-    merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "Array" });
+    merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "a" });
     merged[0] = ReadStateTypes.CHANNEL;
     merged.channelId = channelId;
     merged.type = CHANNEL;
@@ -1016,7 +1016,7 @@ class ReadState {
         if (CHANNEL === undefined) {
           CHANNEL2 = ReadStateTypes.CHANNEL;
         }
-        merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "Array" });
+        merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "a" });
         merged[0] = ReadStateTypes.CHANNEL;
         merged.channelId = channelId;
         merged.type = CHANNEL2;
@@ -1597,7 +1597,7 @@ class ReadState {
           self._persisted = true;
           networkAwareRetryDefault(() => {
             const HTTP = HTTPUtils.HTTP;
-            obj = { url: customGuildScores.PINS_ACK(self.channelId), oldFormErrors: true, rejectWithError: true };
+            obj = { url: customChannelScoresByGuild.PINS_ACK(self.channelId), oldFormErrors: true, rejectWithError: true };
             return HTTP.post(obj);
           });
         }
@@ -1814,7 +1814,7 @@ class ReadState {
       let promise = networkAwareRetryDefault(() => {
         let body;
         const HTTP = HTTPUtils.HTTP;
-        const request = { url: customGuildScores.MESSAGE_ACK(self.channelId, outgoingAck), body, oldFormErrors: true, rejectWithError: true };
+        const request = { url: customChannelScoresByGuild.MESSAGE_ACK(self.channelId, outgoingAck), body, oldFormErrors: true, rejectWithError: true };
         body = { token, last_viewed: self.lastViewed, flags: require };
         return HTTP.post(request);
       });
@@ -1942,7 +1942,7 @@ class ReadState {
     }
     if (flag) {
       const HTTP = HTTPUtils.HTTP;
-      const request = { url: customGuildScores.CHANNEL_ACK(self.channelId), body: obj3, oldFormErrors: true, rejectWithError: true };
+      const request = { url: customChannelScoresByGuild.CHANNEL_ACK(self.channelId), body: obj3, oldFormErrors: true, rejectWithError: true };
       const del = HTTP.del;
       obj3 = { version: 2, read_state_type: self.type };
       del(request);
@@ -2906,7 +2906,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f92059, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f92070, DurationsDefault.Millis.HOUR);
     token = null;
     const tmp5 = channelId !== selectedChannelId && null != channelId;
     if (tmp5) {
@@ -2936,7 +2936,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f92059, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f92070, DurationsDefault.Millis.HOUR);
     const item = readStates.forEach(function(type) {
       let CHANNEL = type.type;
       if (CHANNEL == null) {
@@ -3042,7 +3042,7 @@ obj = {
     }
     const mapped = messages.map((thread) => thread.thread);
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const item = found.forEach(f92062);
+    const item = found.forEach(f92073);
   },
   LOCAL_MESSAGES_LOADED: function handleLocalMessagesLoaded(messages) {
     messages = messages.messages;
@@ -3323,7 +3323,7 @@ obj = {
   },
   CHANNEL_LOCAL_ACK: function handleChannelLocalAck(channelId) {
     const value = ReadState.get(channelId.channelId);
-    return value.ack({ messageId: "HermesInternal", local: "HermesInternal", immediate: "flexDirection", force: "CALL_CONNECT", isExplicitUserAction: null, trackAnalytics: "heading-md/semibold" });
+    return value.ack({ messageId: "HermesInternal", local: "HermesInternal", immediate: "flexDirection", force: "film", isExplicitUserAction: "filmklapper", trackAnalytics: "klapper" });
   },
   CHANNEL_PINS_ACK: function handleChannelPinsAck(timestamp) {
     timestamp = timestamp.timestamp;

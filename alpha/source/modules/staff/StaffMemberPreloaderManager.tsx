@@ -1,10 +1,10 @@
-// Module ID: 20252
-// Function ID: 20253
+// Module ID: 20247
+// Function ID: 20248
 // Name: StaffMemberPreloaderManager
-// Dependencies: [7816, 20253, 2]
+// Dependencies: [7816, 20248, 2]
 
-// Module 20252 (StaffMemberPreloaderManager)
-import StaffMemberPreloader from "StaffMemberPreloader" /* 20253 */;
+// Module 20247 (StaffMemberPreloaderManager)
+import StaffMemberPreloader from "StaffMemberPreloader" /* 20248 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9907
+// Function ID: 9908
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 1187, 9909, 5866, 1113, 2171, 5873, 2]
+// Dependencies: [19, 17, 1072, 21, 5243, 575, 1187, 9908, 5866, 1113, 2171, 5873, 2]
 // Exports: default
 
-// Module 9908 (SubscriptionAccountHoldNotice)
+// Module 9907 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9909 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9908 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

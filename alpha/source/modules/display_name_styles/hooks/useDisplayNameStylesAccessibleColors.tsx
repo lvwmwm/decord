@@ -1,10 +1,10 @@
-// Module ID: 10001
-// Function ID: 10002
+// Module ID: 10000
+// Function ID: 10001
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 5244, 504, 1396, 10002, 5240, 671, 2]
+// Dependencies: [19, 5244, 504, 1396, 10001, 5240, 671, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 10001 (useDisplayNameStylesAccessibleColors)
+// Module 10000 (useDisplayNameStylesAccessibleColors)
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import size from "module_2" /* 2 */;

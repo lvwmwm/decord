@@ -1,17 +1,17 @@
-// Module ID: 20007
-// Function ID: 20008
+// Module ID: 20002
+// Function ID: 20003
 // Name: AcceptInviteManager
-// Dependencies: [502, 5092, 5155, 5114, 5989, 5175, 8709, 1072, 8775, 1099, 5489, 6785, 20008, 2118, 7816, 20009, 10334, 2]
+// Dependencies: [502, 5092, 5155, 5114, 5989, 5175, 8708, 1072, 8774, 1099, 5489, 6785, 20003, 2118, 7816, 20004, 10332, 2]
 
-// Module 20007 (AcceptInviteManager)
+// Module 20002 (AcceptInviteManager)
 import router_utils from "router_utils" /* 1099 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 8709 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8775 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 10334 */;
-import FriendInviteUtils from "FriendInviteUtils" /* 20009 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 8708 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8774 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 10332 */;
+import FriendInviteUtils from "FriendInviteUtils" /* 20004 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;
@@ -92,7 +92,7 @@ class AcceptInviteManager extends AutomaticLifecycleManager {
                 }
                 const obj3 = { location: str };
                 acceptFriendInvite(invite, obj3);
-                const tmp32Result = tmp32(10334);
+                const tmp32Result = tmp32(10332);
                 tmp32Result.clearDisplayedInvite();
                 flag = false;
               }
@@ -158,7 +158,7 @@ class AcceptInviteManager extends AutomaticLifecycleManager {
             obj.hideActionSheet();
             const obj5 = { code: tmp, isRegistration: _isRegistration, deeplinkAttemptId, inviteInstanceId };
             const obj2 = ModalActionCreatorsDefault;
-            obj2.pushLazy(asyncRequire(20008, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
+            obj2.pushLazy(asyncRequire(20003, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
             flag = false;
           }
         }

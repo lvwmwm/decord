@@ -1,14 +1,14 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14092
+// Function ID: 14093
 // Name: NavigationSpanTracker
-// Dependencies: [109, 3, 14097, 1266, 14098, 14099, 2]
+// Dependencies: [109, 3, 14093, 1266, 14094, 14095, 2]
 
-// Module 14096 (NavigationSpanTracker)
+// Module 14092 (NavigationSpanTracker)
 import LoggerDefault from "Logger" /* 3 */;
 import v1 from "v1" /* 1266 */;
-import NavigationTTIAnalytics from "NavigationTTIAnalytics" /* 14097 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 14098 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 14099 */;
+import NavigationTTIAnalytics from "NavigationTTIAnalytics" /* 14093 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 14094 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 14095 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 

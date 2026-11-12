@@ -1,17 +1,17 @@
-// Module ID: 11228
-// Function ID: 11229
+// Module ID: 11222
+// Function ID: 11223
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 6906, 6909, 9480, 1228, 21, 5243, 1652, 11229, 5507, 1624, 1705, 5189, 7779, 11217, 2]
+// Dependencies: [19, 6906, 6909, 9479, 1228, 21, 5243, 1652, 11223, 5507, 1624, 1705, 5189, 7779, 11211, 2]
 // Exports: default
 
-// Module 11228 (EmojiPickerListComponent)
+// Module 11222 (EmojiPickerListComponent)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5189 */;
 import EmojiPickerConstants from "EmojiPickerConstants" /* 6909 */;
 import PortalToNativeViewDefault from "PortalToNativeView" /* 7779 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9480 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 11217 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 11229 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9479 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 11211 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 11223 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6906 */;
 import Fragment from "Fragment" /* 21 */;

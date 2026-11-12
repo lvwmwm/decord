@@ -1,15 +1,15 @@
-// Module ID: 15690
-// Function ID: 15691
+// Module ID: 15687
+// Function ID: 15688
 // Name: ConjureServerWidgetUpsell
-// Dependencies: [19, 17, 1385, 21, 5243, 575, 15691, 6274, 7654, 5866, 1113, 4079, 15699, 5873, 15701, 12077, 504, 2]
+// Dependencies: [19, 17, 1385, 21, 5243, 575, 15688, 6274, 7654, 5866, 1113, 4079, 13683, 5873, 15696, 12071, 504, 2]
 // Exports: default
 
-// Module 15690 (ConjureServerWidgetUpsell)
+// Module 15687 (ConjureServerWidgetUpsell)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import useConjureServerWidgetUpsell from "useConjureServerWidgetUpsell" /* 15691 */;
-import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 15701 */;
+import useConjureServerWidgetUpsell from "useConjureServerWidgetUpsell" /* 15688 */;
+import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 15696 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ function ServerWidgetUpsellCard(cardStyle) {
   ({ guildId, onDismiss } = cardStyle);
   cardStyle = cardStyle.cardStyle;
   const tmp = closure_7();
-  const obj = widget(15691);
+  const obj = widget(15688);
   const conjureServerWidgetUpsellDetails = obj.useConjureServerWidgetUpsellDetails(userId, widget, guildId);
   if (null == conjureServerWidgetUpsellDetails) {
     return null;
@@ -74,7 +74,7 @@ function ServerWidgetUpsellCard(cardStyle) {
     let tmp10Result = null;
     if (null != creator) {
       const obj10 = { creator, guildId };
-      tmp10Result = tmp10(tmp9(15699), obj10);
+      tmp10Result = tmp10(tmp9(13683), obj10);
     }
     items1[2] = tmp10Result;
     items[1] = closure_6(Stack3, obj5);
@@ -97,7 +97,7 @@ function ServerWidgetUpsellCard(cardStyle) {
     intl2 = tmp2(1113).intl;
     items3[1] = closure_5(Button2, obj13);
     items2[1] = closure_6(Stack, obj11);
-    const obj14 = { style: tmp.container, children: closure_5(onDismiss(12077), obj15) };
+    const obj14 = { style: tmp.container, children: closure_5(onDismiss(12071), obj15) };
     obj15 = { userId, widget, cardStyle, rendererProps, footer: closure_6(View, obj2) };
     closure_6(View, obj2);
     return closure_5(View, obj14);

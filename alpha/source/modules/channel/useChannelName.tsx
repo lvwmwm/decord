@@ -19,7 +19,7 @@ let _require, nickname;
 
 let metroImportAll;
 let metroImportDefault;
-const f90584 = (id) => {
+const f90595 = (id) => {
   nickname = nickname.getNickname(id.id);
   if (nickname == null) {
     const obj = closure_2_1(closure_2_2[6]);
@@ -86,7 +86,7 @@ function computeChannelName(channel, UserStore, RelationshipStore, flag, arg4) {
         _require = RelationshipStore;
         const mapped1 = recipients1.map(UserStore.getUser);
         const found = mapped1.filter(require("GlobalUtils").isNotNullish);
-        const mapped2 = found.map(f90584);
+        const mapped2 = found.map(f90595);
         if (mapped2.length > 0) {
           joined = mapped2.join(", ");
         } else {
@@ -199,7 +199,7 @@ export function computeDefaultGroupDmNameFromUserIds(arr, getUser, arg2) {
   _require = arg2;
   const mapped = arr.map(getUser.getUser);
   const found = mapped.filter(require("GlobalUtils").isNotNullish);
-  const mapped1 = found.map(f90584);
+  const mapped1 = found.map(f90595);
   if (mapped1.length > 0) {
     joined = mapped1.join(", ");
   } else {
@@ -220,7 +220,7 @@ export function computeDefaultGroupDmName(recipients, getUser, arg2) {
   _require = arg2;
   const mapped = recipients.map(getUser.getUser);
   const found = mapped.filter(require("GlobalUtils").isNotNullish);
-  const mapped1 = found.map(f90584);
+  const mapped1 = found.map(f90595);
   if (mapped1.length > 0) {
     joined = mapped1.join(", ");
   } else {
@@ -249,7 +249,7 @@ export function useComputedGroupDmName(stateFromStores) {
         closure_0 = RelationshipStore;
         const mapped = recipients.map(UserStore.getUser);
         const found = mapped.filter(GlobalUtils.isNotNullish);
-        const mapped1 = found.map(f90584);
+        const mapped1 = found.map(f90595);
         const obj2 = UserStore;
         if (mapped1.length > 0) {
           joined = mapped1.join(", ");

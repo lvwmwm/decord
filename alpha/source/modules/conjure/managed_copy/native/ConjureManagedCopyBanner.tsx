@@ -1,14 +1,14 @@
-// Module ID: 13676
-// Function ID: 13677
+// Module ID: 13670
+// Function ID: 13671
 // Name: ConjureManagedCopyBanner
-// Dependencies: [19, 21, 13099, 1113, 4079, 13677, 8094, 2]
+// Dependencies: [19, 21, 13093, 1113, 4079, 13671, 8094, 2]
 // Exports: default
 
-// Module 13676 (ConjureManagedCopyBanner)
+// Module 13670 (ConjureManagedCopyBanner)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import useConjureManagedCopyDefault from "useConjureManagedCopy" /* 13099 */;
-import openConjureProjectAboutSheetDefault from "openConjureProjectAboutSheet" /* 13677 */;
+import useConjureManagedCopyDefault from "useConjureManagedCopy" /* 13093 */;
+import openConjureProjectAboutSheetDefault from "openConjureProjectAboutSheet" /* 13671 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

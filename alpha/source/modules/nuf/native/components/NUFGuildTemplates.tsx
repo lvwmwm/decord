@@ -1,10 +1,10 @@
-// Module ID: 14914
-// Function ID: 14915
+// Module ID: 14910
+// Function ID: 14911
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 5290, 1072, 14915, 7731, 21, 6854, 14795, 12491, 14916, 14999, 1252, 1260, 7427, 14890, 1099, 14918, 14947, 14621, 1113, 14964, 14965, 15000, 14978, 7424, 2]
+// Dependencies: [5, 19, 17, 5290, 1072, 14911, 7731, 21, 6854, 14791, 12485, 14912, 14995, 1252, 1260, 7427, 14886, 1099, 14914, 14943, 14617, 1113, 14960, 14961, 14996, 14974, 7424, 2]
 // Exports: default
 
-// Module 14914 (NUFGuildTemplates)
+// Module 14910 (NUFGuildTemplates)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 126
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
 import Navigator2 from "Navigator" /* 7424 */;
 import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14915 */;
+import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14911 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import DefaultRouteStore from "DefaultRouteStore" /* 5290 */;
@@ -144,9 +144,9 @@ obj = function _onCreateServer() {
           }
           c3 = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp10) {
+        } catch (tmp7) {
           c3 = 3;
-          throw tmp10;
+          throw tmp7;
         }
       }
     })();

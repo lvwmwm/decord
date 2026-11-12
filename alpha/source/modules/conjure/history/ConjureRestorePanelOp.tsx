@@ -1,10 +1,10 @@
-// Module ID: 13182
-// Function ID: 13183
+// Module ID: 13176
+// Function ID: 13177
 // Name: ConjureRestorePanelOp
 // Dependencies: [2]
 // Exports: restorePanelEnvironments
 
-// Module 13182 (ConjureRestorePanelOp)
+// Module 13176 (ConjureRestorePanelOp)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureRestorePanelOp.tsx");

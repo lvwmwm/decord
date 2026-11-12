@@ -1,10 +1,10 @@
-// Module ID: 13669
-// Function ID: 13670
+// Module ID: 13663
+// Function ID: 13664
 // Name: waveTransition
 // Dependencies: [32, 2]
 // Exports: bandArrivalTime, bandDepartureTime, bandEdgesAt, bandGlyphsAt, cellStateAt, charForState, dirtyRangeAt, glyphLayerOpacityAt, glyphRampIndexAt, isResolvedState, pickSlotFaces, shiftedLineFor, slotCountFor, waveArrivalTime
 
-// Module 13669 (waveTransition)
+// Module 13663 (waveTransition)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

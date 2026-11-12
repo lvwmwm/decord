@@ -1,12 +1,12 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 16246
+// Function ID: 16247
 // Name: GuildBadgeCrosshairs
-// Dependencies: [19, 21, 16240, 8197, 2]
+// Dependencies: [19, 21, 16235, 8197, 2]
 // Exports: GuildBadgeCrosshairs
 
-// Module 16251 (GuildBadgeCrosshairs)
+// Module 16246 (GuildBadgeCrosshairs)
 import inlineStyles from "inlineStyles" /* 8197 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16240 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16235 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

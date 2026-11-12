@@ -1,10 +1,10 @@
-// Module ID: 9913
-// Function ID: 9914
+// Module ID: 9912
+// Function ID: 9913
 // Name: LinkButton
 // Dependencies: [19, 21, 5243, 7364, 5866, 2]
 // Exports: LinkButton
 
-// Module 9913 (LinkButton)
+// Module 9912 (LinkButton)
 import Pressables from "Pressables" /* 7364 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

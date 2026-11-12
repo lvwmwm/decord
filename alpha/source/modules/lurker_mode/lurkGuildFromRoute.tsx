@@ -1,10 +1,10 @@
-// Module ID: 9081
-// Function ID: 9082
+// Module ID: 9080
+// Function ID: 9081
 // Name: lurkGuildFromRoute
 // Dependencies: [5, 502, 5114, 6854, 5304, 2]
 // Exports: default
 
-// Module 9081 (lurkGuildFromRoute)
+// Module 9080 (lurkGuildFromRoute)
 import RouteUtils from "RouteUtils" /* 5304 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

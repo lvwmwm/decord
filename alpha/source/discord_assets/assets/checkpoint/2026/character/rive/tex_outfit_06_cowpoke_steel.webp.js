@@ -1,8 +1,8 @@
-// Module ID: 14293
-// Function ID: 14294
+// Module ID: 14289
+// Function ID: 14290
 // Dependencies: [2]
 
-// Module 14293
+// Module 14289
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_06_cowpoke_steel.webp.js");

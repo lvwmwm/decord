@@ -1,10 +1,10 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11805
+// Function ID: 11806
 // Name: useCanRemoveAllReactions
 // Dependencies: [5175, 1072, 7223, 504, 2]
 // Exports: default
 
-// Module 11811 (useCanRemoveAllReactions)
+// Module 11805 (useCanRemoveAllReactions)
 import Constants from "Constants" /* 1072 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import size from "module_2" /* 2 */;

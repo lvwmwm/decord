@@ -1,10 +1,10 @@
-// Module ID: 15083
-// Function ID: 15084
+// Module ID: 15080
+// Function ID: 15081
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 5092, 5114, 6005, 5185, 1385, 1083, 21, 5243, 575, 5891, 10828, 1187, 5866, 504, 5309, 15063, 6211, 6211, 1113, 2]
+// Dependencies: [19, 17, 5092, 5114, 6005, 5185, 1385, 1083, 21, 5243, 575, 5891, 10822, 1187, 5866, 504, 5309, 15060, 6211, 6211, 1113, 2]
 // Exports: default
 
-// Module 15083 (DestinationFailedAlertModal)
+// Module 15080 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -14,7 +14,7 @@ import UserUtilsDefault from "UserUtils" /* 5309 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import useChannelNameDefault from "useChannelName" /* 5891 */;
 import AlertModal2 from "AlertModal" /* 6211 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10828 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10822 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
@@ -61,7 +61,7 @@ function FailedUserRow(user) {
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: items2 };
-    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1187).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
+    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1187).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: "clothing" };
     tmp13 = null;
     const Avatar = tmp2(1187).Avatar;
     const tmp10 = View;
@@ -96,9 +96,9 @@ function FailedChannelRow(channel) {
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(15063).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(15060).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(15063).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(15060).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "body-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
   items1[1] = closure_10(channel(5866).Text, obj4);

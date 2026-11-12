@@ -1,10 +1,10 @@
-// Module ID: 16994
-// Function ID: 16995
+// Module ID: 16989
+// Function ID: 16990
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8476, 1385, 8481, 1072, 5504, 1387, 21, 5243, 575, 5491, 9084, 16995, 9082, 1113, 7569, 7567, 5974, 7381, 15165, 5866, 10046, 7932, 7724, 1652, 5485, 5488, 15729, 1705, 9083, 5535, 5252, 10012, 1627, 504, 2171, 7852, 7871, 5834, 9513, 10891, 8480, 1252, 8486, 5952, 5503, 10509, 16996, 7354, 7847, 5507, 2]
+// Dependencies: [19, 17, 8476, 1385, 8481, 1072, 5504, 1387, 21, 5243, 575, 5491, 9083, 16990, 9081, 1113, 7569, 7567, 5974, 7381, 15162, 5866, 10045, 7932, 7724, 1652, 5485, 5488, 15724, 1705, 9082, 5535, 5252, 10011, 1627, 504, 2171, 7852, 7871, 5834, 9512, 10885, 8480, 1252, 8486, 5952, 5503, 10507, 16991, 7354, 7847, 5507, 2]
 // Exports: default
 
-// Module 16994 (CustomizeBadgesSheet)
+// Module 16989 (CustomizeBadgesSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -24,15 +24,15 @@ import EyeSlashIcon2 from "EyeSlashIcon" /* 7567 */;
 import native from "native" /* 7932 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8480 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8486 */;
-import ContextMenu2 from "ContextMenu" /* 9082 */;
-import ContextMenuState from "ContextMenuState" /* 9083 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9084 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9513 */;
-import BadgeUtils from "BadgeUtils" /* 10046 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10891 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 15165 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 15729 */;
-import BadgeGrid from "BadgeGrid" /* 16995 */;
+import ContextMenu2 from "ContextMenu" /* 9081 */;
+import ContextMenuState from "ContextMenuState" /* 9082 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9083 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9512 */;
+import BadgeUtils from "BadgeUtils" /* 10045 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10885 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 15162 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 15724 */;
+import BadgeGrid from "BadgeGrid" /* 16990 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8476 */;
@@ -98,7 +98,7 @@ function BadgeVisibilityMenu(badge) {
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(16995).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(16990).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";

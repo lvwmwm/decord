@@ -1,13 +1,13 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 10933
+// Function ID: 10934
 // Name: ChannelVoiceChat
-// Dependencies: [19, 17, 10940, 21, 5243, 575, 9003, 1627, 10946, 12, 10944, 5484, 10204, 10947, 11767, 5250, 11916, 7364, 1113, 1187, 12409, 15029, 2]
+// Dependencies: [19, 17, 10934, 21, 5243, 575, 9002, 1627, 10940, 12, 10938, 5484, 10202, 10941, 11761, 5250, 11910, 7364, 1113, 1187, 12403, 15025, 2]
 
-// Module 10939 (ChannelVoiceChat)
+// Module 10933 (ChannelVoiceChat)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import MessageManagerDefault from "MessageManager" /* 9003 */;
-import ChannelCallStore from "ChannelCallStore" /* 10940 */;
+import MessageManagerDefault from "MessageManager" /* 9002 */;
+import ChannelCallStore from "ChannelCallStore" /* 10934 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
@@ -63,7 +63,7 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   const tmp6 = guild_id(1627)();
   const top = tmp6.top;
   ({ left, right } = tmp6);
-  let obj2 = id(10946);
+  let obj2 = id(10940);
   const voiceChatNavigationContext = obj2.useVoiceChatNavigationContext();
   let openVoice;
   if (voiceChatNavigationContext != null) {
@@ -72,7 +72,7 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   if (openVoice == null) {
     openVoice = tmp4(12).noop;
   }
-  const tmp7Result = id(10944);
+  const tmp7Result = id(10938);
   const isConnectedToVoiceChannel = tmp7Result.useIsConnectedToVoiceChannel(channel2);
   let str = "no-hide-descendants";
   const ref = obj.useRef(null);
@@ -88,14 +88,14 @@ const memoResult = react.memo(function ChannelVoice(channel) {
     const obj4 = { paddingLeft: left, paddingRight: right };
   }
   items1[1] = tmp15;
-  items2 = [closure_6(guild_id(10204), { absolute: true, tall: true }), ];
+  items2 = [closure_6(guild_id(10202), { absolute: true, tall: true }), ];
   let tmp16Result = null;
   const obj5 = { guildId: guild_id, channelId: id, children: items3 };
-  const ChannelContainer = tmp7(10947).ChannelContainer;
+  const ChannelContainer = tmp7(10941).ChannelContainer;
   if (!flag) {
     const tmp19 = !tmp2;
     const obj6 = { hidden: tmp19, animated: true, barStyle: str2 };
-    const tmp4Result = guild_id(11767);
+    const tmp4Result = guild_id(11761);
     if (isConnectedToVoiceChannel) {
       str2 = "light-content";
     } else {
@@ -120,7 +120,7 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   }
   items5[1] = { display: str4 };
   items3[2] = closure_6(View, { style: items5 });
-  items3[3] = closure_6(guild_id(11916), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
+  items3[3] = closure_6(guild_id(11910), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
   const items6 = [tmp.chatHeader, ];
   const obj8 = { top, display: str5 };
   str5 = undefined;
@@ -132,10 +132,10 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   const obj10 = { accessibilityRole: "button", onPress: openVoice, accessibilityLabel: intl.string(id(1113).t["13/7kX"]), style: tmp.chatHeaderBackIconContainer, children: closure_6(Icon, obj11) };
   const PressableOpacity = tmp7(7364).PressableOpacity;
   intl = tmp7(1113).intl;
-  obj11 = { source: guild_id(12409), size: id(1187).Icon.Sizes.MEDIUM };
+  obj11 = { source: guild_id(12403), size: id(1187).Icon.Sizes.MEDIUM };
   Icon = tmp7(1187).Icon;
   items7 = [closure_6(PressableOpacity, obj10), ];
-  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(15029).ChannelTitle, { guildId: guild_id, channelId: id }) };
+  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(15025).ChannelTitle, { guildId: guild_id, channelId: id }) };
   items7[1] = closure_6(View, obj12);
   items3[4] = closure_7(View, obj9);
   items2[1] = closure_7(ChannelContainer, obj5);

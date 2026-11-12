@@ -1,11 +1,11 @@
-// Module ID: 19780
-// Function ID: 19781
+// Module ID: 19775
+// Function ID: 19776
 // Name: PanelSizeUtils
-// Dependencies: [11925, 2]
+// Dependencies: [11919, 2]
 // Exports: getMaxPanelWidth, getPanelX
 
-// Module 19780 (PanelSizeUtils)
-import VoicePanelConstants from "VoicePanelConstants" /* 11925 */;
+// Module 19775 (PanelSizeUtils)
+import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

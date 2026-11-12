@@ -1,17 +1,17 @@
-// Module ID: 19214
-// Function ID: 19215
+// Module ID: 19209
+// Function ID: 19210
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 6906, 5092, 5155, 5114, 5175, 7017, 8935, 1072, 1388, 5161, 21, 5243, 575, 504, 5891, 1411, 14573, 5957, 5189, 5866, 1187, 13956, 7364, 1113, 14577, 19215, 1403, 19216, 2]
+// Dependencies: [19, 17, 6906, 5092, 5155, 5114, 5175, 7017, 8934, 1072, 1388, 5161, 21, 5243, 575, 504, 5891, 1411, 14569, 5957, 5189, 5866, 1187, 13952, 7364, 1113, 14573, 19210, 1403, 19211, 2]
 // Exports: default
 
-// Module 19214 (GuildOnboardingNewMemberActions)
+// Module 19209 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5161 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14573 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14569 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6906 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
@@ -19,7 +19,7 @@ import GuildMemberStore from "GuildMemberStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import PermissionStore from "PermissionStore" /* 5175 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7017 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8935 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8934 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;

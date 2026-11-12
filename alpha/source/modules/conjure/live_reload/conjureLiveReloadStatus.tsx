@@ -1,10 +1,10 @@
-// Module ID: 13105
-// Function ID: 13106
+// Module ID: 13099
+// Function ID: 13100
 // Name: conjureLiveReloadStatus
 // Dependencies: [4079, 1113, 2]
 // Exports: liveReloadDescription, liveReloadDirection, liveReloadSettledDirection
 
-// Module 13105 (conjureLiveReloadStatus)
+// Module 13099 (conjureLiveReloadStatus)
 import intl4 from "intl" /* 1113 */;
 import _modDef4079 from "module_4079" /* 4079 */;
 import size from "module_2" /* 2 */;

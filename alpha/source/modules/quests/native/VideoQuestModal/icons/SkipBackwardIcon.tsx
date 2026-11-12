@@ -1,10 +1,10 @@
-// Module ID: 17464
-// Function ID: 17465
+// Module ID: 17459
+// Function ID: 17460
 // Name: SkipBackwardIcon
 // Dependencies: [19, 21, 8197, 2]
 // Exports: SkipBackwardIcon
 
-// Module 17464 (SkipBackwardIcon)
+// Module 17459 (SkipBackwardIcon)
 import inlineStyles from "inlineStyles" /* 8197 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

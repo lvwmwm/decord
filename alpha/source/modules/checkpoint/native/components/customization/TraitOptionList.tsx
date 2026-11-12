@@ -1,17 +1,17 @@
-// Module ID: 14421
-// Function ID: 14422
+// Module ID: 14417
+// Function ID: 14418
 // Name: TraitOptionList
-// Dependencies: [32, 19, 17, 5244, 6314, 21, 575, 5243, 14422, 8197, 6681, 504, 14399, 14400, 5505, 1652, 5854, 1493, 5491, 2]
+// Dependencies: [32, 19, 17, 5244, 6314, 21, 575, 5243, 14418, 8197, 6681, 504, 14395, 14396, 5505, 1652, 5854, 1493, 5491, 2]
 // Exports: default
 
-// Module 14421 (TraitOptionList)
+// Module 14417 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5491 */;
 import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6681 */;
 import inlineStyles from "inlineStyles" /* 8197 */;
-import TraitOptionItem from "TraitOptionItem" /* 14422 */;
+import TraitOptionItem from "TraitOptionItem" /* 14418 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
@@ -95,8 +95,8 @@ export default function TraitOptionList(size) {
   let obj = size(504);
   const items = [useReducedMotion];
   useReducedMotion = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const tmp4 = options(14399);
-  let closure_7 = tmp4(options(14400));
+  const tmp4 = options(14395);
+  let closure_7 = tmp4(options(14396));
   let obj2 = size(5505);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   let obj3 = size(1652);
@@ -107,7 +107,7 @@ export default function TraitOptionList(size) {
   const tmp8 = options(5854)(bound);
   [tmp10, c12] = disabled(react.useState(options(1493)().width), 2);
   const tmp9 = disabled(react.useState(options(1493)().width), 2);
-  const width = size(14422).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
+  const width = size(14418).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
   const sum = width + ref;
   let c13 = sum;
   const items1 = [disabled, isScreenReaderEnabled];

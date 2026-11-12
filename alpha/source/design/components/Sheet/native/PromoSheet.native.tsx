@@ -1,10 +1,10 @@
-// Module ID: 10651
-// Function ID: 10652
+// Module ID: 10644
+// Function ID: 10645
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 5243, 575, 8143, 5503, 6274, 9504, 5866, 2]
+// Dependencies: [109, 19, 17, 21, 5243, 575, 8143, 5503, 6274, 9503, 5866, 2]
 // Exports: PromoSheet
 
-// Module 10651 (PromoSheet)
+// Module 10644 (PromoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -57,7 +57,7 @@ export function PromoSheet(arg0) {
   Stack = gradientColor(6274).Stack;
   if (null != graphic) {
     let obj2 = { style: tmp2.graphic };
-    const Graphic = tmp5(9504).Graphic;
+    const Graphic = tmp5(9503).Graphic;
     const merged1 = Object.assign(graphic);
     tmp4Result = tmp4(Graphic, obj2);
   } else {

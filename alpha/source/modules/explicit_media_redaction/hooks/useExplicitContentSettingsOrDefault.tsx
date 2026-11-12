@@ -1,10 +1,10 @@
-// Module ID: 17237
-// Function ID: 17238
+// Module ID: 17232
+// Function ID: 17233
 // Name: useExplicitContentSettingsOrDefault
 // Dependencies: [1231, 563, 8574, 8576, 2]
 // Exports: useExplicitContentSettingOrDefault, useGoreContentSettingOrDefault
 
-// Module 17237 (useExplicitContentSettingsOrDefault)
+// Module 17232 (useExplicitContentSettingsOrDefault)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 8574 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8576 */;

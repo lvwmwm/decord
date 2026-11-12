@@ -1,19 +1,19 @@
-// Module ID: 17832
-// Function ID: 17833
+// Module ID: 17827
+// Function ID: 17828
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1072, 5089, 21, 5076, 9494, 7391, 12317, 1113, 17833, 17835, 2]
+// Dependencies: [32, 19, 1072, 5089, 21, 5076, 9493, 7391, 12311, 1113, 17828, 17830, 2]
 
-// Module 17832 (AccessibilitySetting)
+// Module 17827 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import dismissible_content from "dismissible_content" /* 5076 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9494 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 17833 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9493 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 17828 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 12317 */;
+import SettingBuilders from "SettingBuilders" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,7 +53,7 @@ let obj = {
   usePreNavigationAction() {
     let closure_1;
     let first;
-    let obj = first(9494);
+    let obj = first(9493);
     const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     dependencyMap = tmp3;

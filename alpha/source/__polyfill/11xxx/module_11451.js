@@ -1,9 +1,9 @@
 // Module ID: 11451
 // Function ID: 11452
-// Dependencies: [41, 42, 93, 95, 98, 11389]
+// Dependencies: [41, 42, 93, 95, 98, 11380]
 
 // Module 11451
-import _mod11389 from "module_11389" /* 11389 */;
+import _mod11380 from "module_11380" /* 11380 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -42,12 +42,12 @@ if (!fn) {
     return tmp2;
   };
 }
-class PTMergeDateTimeRefiner {
+class NLMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, PTMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(PTMergeDateTimeRefiner);
+    _classCallCheck(this, NLMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(NLMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -59,14 +59,13 @@ class PTMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(PTMergeDateTimeRefiner, fn(_mod11389).default);
+_inherits(NLMergeDateRangeRefiner, fn(_mod11380).default);
 const entry = {
   key: "patternBetween",
   value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(?:,|\u00E0)?\\s*$");
-    return regExp;
+    return /^\s*(tot|-)\s*$/i;
   }
 };
 const items = [entry];
 
-export default _createClass(PTMergeDateTimeRefiner, items);
+export default _createClass(NLMergeDateRangeRefiner, items);

@@ -1,10 +1,10 @@
-// Module ID: 8721
-// Function ID: 8722
+// Module ID: 8720
+// Function ID: 8721
 // Name: AutocompleteBoundaryUtils
 // Dependencies: [6283, 1072, 2]
 // Exports: boundAutocompleteWord
 
-// Module 8721 (AutocompleteBoundaryUtils)
+// Module 8720 (AutocompleteBoundaryUtils)
 import Constants from "Constants" /* 1072 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6283 */;
 import size from "module_2" /* 2 */;

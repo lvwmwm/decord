@@ -1,7 +1,7 @@
 // Module ID: 7593
 // Function ID: 7594
 // Name: getOnClick
-// Dependencies: [32, 5, 2162, 6966, 7183, 502, 5155, 5114, 5989, 6309, 5146, 5286, 6893, 1072, 1074, 7184, 572, 5990, 7594, 7904, 2118, 6854, 7199, 7899, 5988, 5992, 8730, 5945, 1252, 14444, 12607, 15442, 12615, 8731, 15832, 12345, 11669, 10065, 1378, 10061, 5280, 15833, 8418, 6004, 5893, 12420, 12422, 2]
+// Dependencies: [32, 5, 2162, 6966, 7183, 502, 5155, 5114, 5989, 6309, 5146, 5286, 6893, 1072, 1074, 7184, 572, 5990, 7594, 7904, 2118, 6854, 7199, 7899, 5988, 5992, 8729, 5945, 1252, 14440, 12601, 15439, 12609, 8730, 15827, 12339, 11663, 10064, 1378, 10060, 5280, 15828, 8418, 6004, 5893, 12414, 12416, 2]
 // Exports: default
 
 // Module 7593 (getOnClick)
@@ -15,12 +15,12 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
 import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7184 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 7199 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7594 */;
-import _slicedToArray2 from "_slicedToArray" /* 8730 */;
-import activityBookmarkUtils from "activityBookmarkUtils" /* 8731 */;
-import QuestUtils from "QuestUtils" /* 10061 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 12345 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 12422 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 12615 */;
+import _slicedToArray2 from "_slicedToArray" /* 8729 */;
+import activityBookmarkUtils from "activityBookmarkUtils" /* 8730 */;
+import QuestUtils from "QuestUtils" /* 10060 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 12339 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 12416 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 12609 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
@@ -52,7 +52,7 @@ let map1;
 let tmp;
 let tmp11;
 const QuestContent = tmp11(5280);
-const SocialLayerStorefrontNativeActionCreators = tmp(11669);
+const SocialLayerStorefrontNativeActionCreators = tmp(11663);
 function openInviteModal() {
   return obj(...arguments);
 }
@@ -337,7 +337,7 @@ export default function getOnClick(assetURL) {
         openURLDefault(assetURL);
         return true;
       }
-      result = { applicationId: code, skuId: "Array" };
+      result = { applicationId: code, skuId: "a" };
     };
   }
   if (null != findCodedLinkResult) {
@@ -414,7 +414,7 @@ export default function getOnClick(assetURL) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(15832, dependencyMap.paths);
+        const promise = asyncRequire(15827, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });
@@ -470,7 +470,7 @@ export default function getOnClick(assetURL) {
   }
   if (null != findCodedLinkResult) {
     if (findCodedLinkResult.type === tmp2(5992).CodedLinkType.QUESTS_EMBED) {
-      const tmp2Result = tmp2(10065);
+      const tmp2Result = tmp2(10064);
       if (tmp2Result.getIsEligibleForQuests()) {
         return function(preventDefault) {
           if (preventDefault != null) {
@@ -622,7 +622,7 @@ export default function getOnClick(assetURL) {
   const tmp2Result3 = tmp2(5893);
   let result = tmp2Result3.tryParseEventDetailsPath(pathname);
   if (!skipExtensionCheck) {
-    const tmp2Result4 = tmp2(12420);
+    const tmp2Result4 = tmp2(12414);
     if (null != tmp2Result4.isSuspiciousDownload(assetURL)) {
       fn = (preventDefault) => {
         if (preventDefault != null) {

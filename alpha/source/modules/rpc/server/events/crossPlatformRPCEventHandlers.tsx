@@ -1,9 +1,9 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 16875
+// Function ID: 16876
 // Name: crossPlatformRPCEventHandlers
-// Dependencies: [2162, 2137, 5110, 6757, 5092, 5155, 5114, 2130, 6008, 5146, 1385, 5918, 6698, 1072, 12776, 12779, 7239, 6775, 16800, 16795, 7243, 12, 16804, 16796, 7232, 15878, 16803, 1084, 558, 7237, 16881, 2]
+// Dependencies: [2162, 2137, 5110, 6757, 5092, 5155, 5114, 2130, 6008, 5146, 1385, 5918, 6698, 1072, 12770, 12773, 7239, 6775, 16795, 16790, 7243, 12, 16799, 16791, 7232, 15873, 16798, 1084, 558, 7237, 16876, 2]
 
-// Module 16880 (crossPlatformRPCEventHandlers)
+// Module 16875 (crossPlatformRPCEventHandlers)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
@@ -12,14 +12,14 @@ import getSocketFrameDefault from "getSocketFrame" /* 7232 */;
 import transformUserDefault from "transformUser" /* 7237 */;
 import RPCErrorDefault from "RPCError" /* 7239 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7243 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12776 */;
-import RPCHelpers from "RPCHelpers" /* 12779 */;
-import frameDeepLinks from "frameDeepLinks" /* 15878 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16795 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16796 */;
-import guildVoice from "guildVoice" /* 16800 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16803 */;
-import transformApplicationDefault from "transformApplication" /* 16881 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12770 */;
+import RPCHelpers from "RPCHelpers" /* 12773 */;
+import frameDeepLinks from "frameDeepLinks" /* 15873 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16790 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16791 */;
+import guildVoice from "guildVoice" /* 16795 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16798 */;
+import transformApplicationDefault from "transformApplication" /* 16876 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import RunningGameStore from "RunningGameStore" /* 2137 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
@@ -33,7 +33,7 @@ import UserStore from "UserStore" /* 1385 */;
 import VoiceStateStore from "VoiceStateStore" /* 5918 */;
 import Constants_mod from "Constants" /* 6698 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16804 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16799 */;
 import size from "module_2" /* 2 */;
 
 let application, gameForPID, streamerActiveStreamMetadata;
@@ -214,10 +214,10 @@ let obj4 = {
   handler(args) {
     const channel_id = args.args.channel_id;
     const socket = args.socket;
-    let obj = channel_id(16800);
+    let obj = channel_id(16795);
     const tmp = channel_id;
     if (obj.isGuildVoiceSocket(socket)) {
-      const tmpResult = tmp(16800);
+      const tmpResult = tmp(16795);
       const guildVoiceChannel = tmpResult.getGuildVoiceChannel(channel_id);
     }
     if (null == ChannelStore.getChannel(channel_id)) {
@@ -275,10 +275,10 @@ const obj6 = {
   handler(args) {
     const channel_id = args.args.channel_id;
     const socket = args.socket;
-    let obj = channel_id(16800);
+    let obj = channel_id(16795);
     const tmp = channel_id;
     if (obj.isGuildVoiceSocket(socket)) {
-      const tmpResult = tmp(16800);
+      const tmpResult = tmp(16795);
       const guildVoiceChannel = tmpResult.getGuildVoiceChannel(channel_id);
     }
     if (null == ChannelStore.getChannel(channel_id)) {
@@ -326,10 +326,10 @@ const obj8 = {
   handler(args) {
     const channel_id = args.args.channel_id;
     const socket = args.socket;
-    let obj = channel_id(16800);
+    let obj = channel_id(16795);
     const tmp = channel_id;
     if (obj.isGuildVoiceSocket(socket)) {
-      const tmpResult = tmp(16800);
+      const tmpResult = tmp(16795);
       const guildVoiceChannel = tmpResult.getGuildVoiceChannel(channel_id);
     }
     if (null == ChannelStore.getChannel(channel_id)) {
@@ -445,7 +445,7 @@ obj2[RPCEvents.VOICE_SESSION_PARTICIPANTS_UPDATE] = {
   handler(args) {
     const session_id = args.args.session_id;
     const socket = args.socket;
-    let obj = socket(16795);
+    let obj = socket(16790);
     const result = obj.validateEventSubscription(socket, session_id);
     return (prevState) => {
       prevState = prevState.prevState;
@@ -595,7 +595,7 @@ const obj36 = {
         if (null != tmp7) {
           takeFrameDeepLinkResult = null;
           if (null != frameDeepLinkChannelId) {
-            const tmp8Result = tmp8(15878);
+            const tmp8Result = tmp8(15873);
             takeFrameDeepLinkResult = tmp8Result.takeFrameDeepLink(frameDeepLinkChannelId, tmp7.applicationId);
           }
         }

@@ -1,14 +1,14 @@
-// Module ID: 15654
-// Function ID: 15655
+// Module ID: 15651
+// Function ID: 15652
 // Name: ThreadMinusIcon
-// Dependencies: [19, 21, 575, 5956, 15655, 2]
+// Dependencies: [19, 21, 575, 5956, 15652, 2]
 // Exports: ThreadMinusIcon
 
-// Module 15654 (ThreadMinusIcon)
+// Module 15651 (ThreadMinusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 15655 */;
+import AssetRegistry from "AssetRegistry" /* 15652 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

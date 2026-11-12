@@ -1,7 +1,7 @@
 // Module ID: 6899
 // Function ID: 6900
 // Name: AutocompleteUtils
-// Dependencies: [32, 6900, 6906, 6306, 6946, 6947, 6951, 5177, 5096, 5150, 1404, 5092, 7006, 5173, 5155, 5149, 5114, 6309, 5175, 6005, 5185, 5146, 5286, 1385, 7007, 1072, 7008, 5099, 3, 7009, 5106, 5895, 7010, 2150, 5309, 7011, 6730, 12, 2158, 1380, 7012, 5180, 5891, 1113, 11, 7013, 5068, 7016, 7160, 7161, 5073, 7162, 7163, 15879, 15880, 2]
+// Dependencies: [32, 6900, 6906, 6306, 6946, 6947, 6951, 5177, 5096, 5150, 1404, 5092, 7006, 5173, 5155, 5149, 5114, 6309, 5175, 6005, 5185, 5146, 5286, 1385, 7007, 1072, 7008, 5099, 3, 7009, 5106, 5895, 7010, 2150, 5309, 7011, 6730, 12, 2158, 1380, 7012, 5180, 5891, 1113, 11, 7013, 5068, 7016, 7160, 7161, 5073, 7162, 7163, 15874, 15875, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
 // Module 6899 (AutocompleteUtils)
@@ -27,7 +27,7 @@ import GuildUtilsDefault from "GuildUtils" /* 7012 */;
 import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7016 */;
 import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 7160 */;
 import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 7161 */;
-import isSoundValidDefault from "isSoundValid" /* 15879 */;
+import isSoundValidDefault from "isSoundValid" /* 15874 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import InAppNavigationRecord from "InAppNavigationRecord" /* 6900 */;
 import EmojiStore from "EmojiStore" /* 6906 */;
@@ -73,8 +73,8 @@ let closure_42;
 let hasOwnProperty;
 let map1;
 let metroRequire;
-const f91932 = (author) => author.author.id;
-const f91933 = (author) => user.getUser(author.author.id);
+const f91943 = (author) => author.author.id;
+const f91944 = (author) => user.getUser(author.author.id);
 function NOOP() {
   return true;
 }
@@ -740,8 +740,8 @@ let obj = {
                   const messages = MessageStore.getMessages(id);
                   const tmp16Result = tmp16(messages.toArray());
                   const reversed = tmp16Result.reverse();
-                  const uniqByResult = reversed.uniqBy(f91932);
-                  const mapped1 = uniqByResult.map(f91933);
+                  const uniqByResult = reversed.uniqBy(f91943);
+                  const mapped1 = uniqByResult.map(f91944);
                   const found = mapped1.filter((isNonUserBot) => {
                     if (null == isNonUserBot) {
                       return false;
@@ -852,8 +852,8 @@ let obj = {
               const messages = MessageStore.getMessages(channelId);
               const tmp14Result = tmp14(messages.toArray());
               const reversed = tmp14Result.reverse();
-              const uniqByResult = reversed.uniqBy(f91932);
-              const mapped = uniqByResult.map(f91933);
+              const uniqByResult = reversed.uniqBy(f91943);
+              const mapped = uniqByResult.map(f91944);
               const found = mapped.filter((isNonUserBot) => {
                 if (null == isNonUserBot) {
                   return false;
@@ -1591,8 +1591,8 @@ let obj = {
         const messages = MessageStore.getMessages(channelId1);
         const tmp6Result = tmp6(messages.toArray());
         const reversed = tmp6Result.reverse();
-        const uniqByResult = reversed.uniqBy(f91932);
-        const mapped = uniqByResult.map(f91933);
+        const uniqByResult = reversed.uniqBy(f91943);
+        const mapped = uniqByResult.map(f91944);
         const found = mapped.filter((isNonUserBot) => {
           if (null == isNonUserBot) {
             return false;

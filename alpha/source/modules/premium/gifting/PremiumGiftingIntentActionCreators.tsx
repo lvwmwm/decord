@@ -1,10 +1,10 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11607
+// Function ID: 11608
 // Name: PremiumGiftingIntentActionCreators
 // Dependencies: [8487, 502, 6309, 1387, 1072, 1282, 572, 1242, 1252, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 11613 (PremiumGiftingIntentActionCreators)
+// Module 11607 (PremiumGiftingIntentActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -21,7 +21,7 @@ let _require;
 
 let metroImportAll;
 let metroImportDefault;
-const f101895 = (error) => {
+const f101902 = (error) => {
   const obj = SentryUtilsDefault;
   obj.captureException(error, { tags: { feature: "gift_intent" } });
 };
@@ -94,7 +94,7 @@ export function logMessageGiftIntentShown(recipientUserId) {
     const request = { url: metroImportAll.GIFT_INTENTS_DISMISS, body: obj4, oldFormErrors: true, rejectWithError: true };
     obj4 = { intent_type: FRIEND_ANNIVERSARY, target_id: recipientUserId };
     const postResult = HTTP.post(request);
-    postResult.catch(f101895);
+    postResult.catch(f101902);
   }
 }
 export function logGiftIntentMessageDismissed(channel_id, id) {
@@ -124,7 +124,7 @@ export function logGiftIntentMessageDismissed(channel_id, id) {
       const request = { url: metroImportAll.GIFT_INTENTS_DISMISS, body: obj2, oldFormErrors: true, rejectWithError: true };
       obj2 = { intent_type: giftIntentType, target_id: recipientUserId };
       const postResult = HTTP.post(request);
-      postResult.catch(f101895);
+      postResult.catch(f101902);
     }
   }
 }
@@ -153,6 +153,6 @@ export function logGiftIntentFlowPurchasedGift(recipientUserId) {
     const request = { url: metroImportAll.GIFT_INTENTS_DISMISS, body: obj4, oldFormErrors: true, rejectWithError: true };
     obj4 = { intent_type: FRIEND_ANNIVERSARY, target_id: recipientUserId };
     const postResult = HTTP.post(request);
-    postResult.catch(f101895);
+    postResult.catch(f101902);
   }
 }

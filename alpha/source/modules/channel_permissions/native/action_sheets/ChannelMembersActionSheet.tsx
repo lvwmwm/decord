@@ -1,10 +1,10 @@
-// Module ID: 12469
-// Function ID: 12470
+// Module ID: 12463
+// Function ID: 12464
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 5092, 5155, 5149, 5114, 5175, 1072, 21, 5243, 575, 1627, 504, 1499, 5891, 12470, 8066, 1113, 5503, 7847, 7364, 5489, 10856, 12471, 10502, 8043, 12468, 10918, 8094, 5507, 8106, 5866, 2]
+// Dependencies: [19, 17, 5092, 5155, 5149, 5114, 5175, 1072, 21, 5243, 575, 1627, 504, 1499, 5891, 12464, 8066, 1113, 5503, 7847, 7364, 5489, 10850, 12465, 10500, 8043, 12462, 10912, 8094, 5507, 8106, 5866, 2]
 // Exports: default
 
-// Module 12469 (ChannelMembersActionSheet)
+// Module 12463 (ChannelMembersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,12 +16,12 @@ import Text_Text from "Text/Text" /* 5866 */;
 import useChannelNameDefault from "useChannelName" /* 5891 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8066 */;
 import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8106 */;
-import SettingsIcon from "SettingsIcon" /* 10502 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10856 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10918 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12468 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12470 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 12471 */;
+import SettingsIcon from "SettingsIcon" /* 10500 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10850 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10912 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12462 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12464 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 12465 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;

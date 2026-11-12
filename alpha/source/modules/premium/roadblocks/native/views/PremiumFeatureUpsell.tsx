@@ -1,10 +1,10 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11227
+// Function ID: 11228
 // Name: PremiumFeatureUpsell
-// Dependencies: [19, 17, 6008, 1387, 1072, 9368, 21, 8971, 2171, 1113, 5243, 575, 11109, 11199, 1252, 8969, 11218, 1187, 11234, 11235, 5866, 9369, 5830, 1092, 5876, 5877, 7852, 11236, 11192, 1652, 9364, 2]
+// Dependencies: [19, 17, 6008, 1387, 1072, 9367, 21, 8970, 2171, 1113, 5243, 575, 11103, 11193, 1252, 8968, 11212, 1187, 11228, 11229, 5866, 9368, 5830, 1092, 5876, 5877, 7852, 11230, 11186, 1652, 9363, 2]
 // Exports: default
 
-// Module 11233 (PremiumFeatureUpsell)
+// Module 11227 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
@@ -13,9 +13,9 @@ import PremiumUtils from "PremiumUtils" /* 2171 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import spring_spring from "spring/spring" /* 5876 */;
 import springPresets from "springPresets" /* 5877 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8969 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8971 */;
-import ColorConstants from "ColorConstants" /* 9368 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8968 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8970 */;
+import ColorConstants from "ColorConstants" /* 9367 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
@@ -147,7 +147,7 @@ function PremiumFeatureUpsellPill(featureName) {
       let tmpResult;
       if (c4) {
         const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-        const NitroWheelIcon = tmp2(9369).NitroWheelIcon;
+        const NitroWheelIcon = tmp2(9368).NitroWheelIcon;
         items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
         tmpResult = tmp(NitroWheelIcon, obj2);
       } else {

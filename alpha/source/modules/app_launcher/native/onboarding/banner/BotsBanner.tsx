@@ -1,18 +1,18 @@
-// Module ID: 13297
-// Function ID: 13298
+// Module ID: 13291
+// Function ID: 13292
 // Name: BotsBanner
-// Dependencies: [19, 21, 13298, 13283, 13294, 1113, 2]
+// Dependencies: [19, 21, 13292, 13277, 13288, 1113, 2]
 // Exports: default
 
-// Module 13297 (BotsBanner)
+// Module 13291 (BotsBanner)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import useBannerBots from "useBannerBots" /* 13298 */;
+import useBannerBots from "useBannerBots" /* 13292 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const BannerBaseDefault = tmp5(13294);
+const BannerBaseDefault = tmp5(13288);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/BotsBanner.tsx");
 

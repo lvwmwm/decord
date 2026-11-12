@@ -1,10 +1,10 @@
-// Module ID: 19766
-// Function ID: 19767
+// Module ID: 19761
+// Function ID: 19762
 // Name: useSortedGuildIdsForSoundboard
 // Dependencies: [19, 5175, 6893, 1385, 1072, 1083, 563, 2171, 2]
 // Exports: useSortedGuildIdsForSoundboard
 
-// Module 19766 (useSortedGuildIdsForSoundboard)
+// Module 19761 (useSortedGuildIdsForSoundboard)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;

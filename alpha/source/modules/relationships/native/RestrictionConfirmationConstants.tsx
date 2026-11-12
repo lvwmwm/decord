@@ -1,9 +1,9 @@
-// Module ID: 11993
-// Function ID: 11994
+// Module ID: 11987
+// Function ID: 11988
 // Name: RestrictionConfirmationConstants
 // Dependencies: [2]
 
-// Module 11993 (RestrictionConfirmationConstants)
+// Module 11987 (RestrictionConfirmationConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/relationships/native/RestrictionConfirmationConstants.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 17593
-// Function ID: 17594
+// Module ID: 17588
+// Function ID: 17589
 // Name: QuestDockContextMenuActionSheet
-// Dependencies: [5, 19, 5275, 1072, 21, 17592, 15144, 5282, 10088, 1113, 5278, 8768, 10068, 10071, 7887, 12211, 8041, 10102, 5489, 7885, 8763, 17594, 10061, 7483, 10066, 17596, 15145, 10064, 10257, 17597, 13166, 17599, 7569, 8537, 5970, 7877, 9993, 17601, 2]
+// Dependencies: [5, 19, 5275, 1072, 21, 17587, 15141, 5282, 10087, 1113, 5278, 8767, 10067, 10070, 7887, 12205, 8041, 10101, 5489, 7885, 8762, 17589, 10060, 7483, 10065, 17591, 15142, 10063, 10255, 17592, 13160, 17594, 7569, 8537, 5970, 7877, 9992, 17596, 2]
 // Exports: default
 
-// Module 17593 (QuestDockContextMenuActionSheet)
+// Module 17588 (QuestDockContextMenuActionSheet)
 import Constants from "Constants" /* 1072 */;
 import QuestConstants from "QuestConstants" /* 5275 */;
 import QuestTypes from "QuestTypes" /* 5278 */;
@@ -12,14 +12,14 @@ import AdCreativeType from "AdCreativeType" /* 5282 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
 import ClipboardUtils from "ClipboardUtils" /* 7877 */;
 import openUserSettings from "openUserSettings" /* 8537 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8768 */;
-import QuestUtils from "QuestUtils" /* 10061 */;
-import QuestActionCreators from "QuestActionCreators" /* 10066 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 10068 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10071 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10088 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10102 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17601 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8767 */;
+import QuestUtils from "QuestUtils" /* 10060 */;
+import QuestActionCreators from "QuestActionCreators" /* 10065 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 10067 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10070 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 10087 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10101 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17596 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -81,7 +81,7 @@ function QuestDockPreviewTools(quest) {
   dependencyMap = undefined;
   c3 = undefined;
   c4 = undefined;
-  let obj = quest(10064);
+  let obj = quest(10063);
   const questPreviewActions = obj.useQuestPreviewActions(quest.id);
   ({ handleComplete: c1, handleProgress: c2, handleResetDismissibilityClick: c3, handleResetStatusClick: c4 } = questPreviewActions);
   let obj2 = { title: intl.string(quest(1113).t["Ape+mm"]), hasIcons: true, children: items };
@@ -97,7 +97,7 @@ function QuestDockPreviewTools(quest) {
     }
   };
   const ActionSheetRow = quest(7887).ActionSheetRow;
-  obj4 = { IconComponent: quest(10257).TrophyIcon };
+  obj4 = { IconComponent: quest(10255).TrophyIcon };
   Icon = quest(7887).ActionSheetRow.Icon;
   obj5 = { text: intl2.string(quest(1113).t.jQEfRT) };
   FormLabel = quest(8041).FormLabel;
@@ -113,7 +113,7 @@ function QuestDockPreviewTools(quest) {
     }
   };
   const ActionSheetRow2 = quest(7887).ActionSheetRow;
-  obj7 = { IconComponent: quest(17597).RedoIcon };
+  obj7 = { IconComponent: quest(17592).RedoIcon };
   Icon2 = quest(7887).ActionSheetRow.Icon;
   obj8 = { text: intl3.string(quest(1113).t.cKSLr4) };
   FormLabel2 = quest(8041).FormLabel;
@@ -129,7 +129,7 @@ function QuestDockPreviewTools(quest) {
     }
   };
   const ActionSheetRow3 = quest(7887).ActionSheetRow;
-  obj10 = { IconComponent: quest(13166).UndoIcon };
+  obj10 = { IconComponent: quest(13160).UndoIcon };
   Icon3 = quest(7887).ActionSheetRow.Icon;
   obj11 = { text: intl4.string(quest(1113).t.taqkwK) };
   FormLabel3 = quest(8041).FormLabel;
@@ -145,7 +145,7 @@ function QuestDockPreviewTools(quest) {
     }
   };
   const ActionSheetRow4 = quest(7887).ActionSheetRow;
-  obj13 = { IconComponent: quest(17599).UnsendIcon };
+  obj13 = { IconComponent: quest(17594).UnsendIcon };
   Icon4 = quest(7887).ActionSheetRow.Icon;
   obj14 = { text: intl5.string(quest(1113).t.JF6W66) };
   FormLabel4 = quest(8041).FormLabel;
@@ -254,7 +254,7 @@ function QuestDockDisclosureRow(creative) {
     }
   };
   const ActionSheetRow = creative(7887).ActionSheetRow;
-  obj2 = { IconComponent: creative(9993).CircleQuestionIcon };
+  obj2 = { IconComponent: creative(9992).CircleQuestionIcon };
   Icon = creative(7887).ActionSheetRow.Icon;
   obj3 = { text: intl.string(creative(1113).t.GcsZKJ) };
   FormLabel = creative(8041).FormLabel;

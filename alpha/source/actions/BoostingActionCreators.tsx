@@ -1,16 +1,16 @@
-// Module ID: 9172
-// Function ID: 9173
+// Module ID: 9171
+// Function ID: 9172
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 9173, 9174, 2176, 1072, 1282, 572, 6694, 2]
+// Dependencies: [5, 9172, 9173, 2176, 1072, 1282, 572, 6694, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 9172 (actions/BoostingActionCreators)
+// Module 9171 (actions/BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 9173 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 9174 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 9172 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 9173 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import size from "module_2" /* 2 */;
 

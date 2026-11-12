@@ -1,11 +1,11 @@
-// Module ID: 13264
-// Function ID: 13265
+// Module ID: 13258
+// Function ID: 13259
 // Name: conjureInspectPoint
-// Dependencies: [13265, 2]
+// Dependencies: [13259, 2]
 // Exports: inspectPreviewPointRequest, inspectResultFromResponse
 
-// Module 13264 (conjureInspectPoint)
-import conjurePreviewCall from "conjurePreviewCall" /* 13265 */;
+// Module 13258 (conjureInspectPoint)
+import conjurePreviewCall from "conjurePreviewCall" /* 13259 */;
 import size_mod from "module_2" /* 2 */;
 
 function targetFromPreviewElement(element) {

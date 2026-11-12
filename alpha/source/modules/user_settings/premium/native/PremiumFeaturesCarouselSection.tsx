@@ -1,10 +1,10 @@
-// Module ID: 15233
-// Function ID: 15234
+// Module ID: 15230
+// Function ID: 15231
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1072, 9368, 1387, 21, 575, 5243, 5830, 1092, 5866, 5957, 1113, 15234, 15235, 15236, 15237, 5505, 1624, 11629, 1187, 7852, 7929, 1493, 1252, 2]
+// Dependencies: [32, 19, 17, 1072, 9367, 1387, 21, 575, 5243, 5830, 1092, 5866, 5957, 1113, 15231, 15232, 15233, 15234, 5505, 1624, 11623, 1187, 7852, 7929, 1493, 1252, 2]
 // Exports: default
 
-// Module 15233 (PremiumFeaturesCarouselSection)
+// Module 15230 (PremiumFeaturesCarouselSection)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
@@ -13,7 +13,7 @@ import PremiumConstants from "PremiumConstants" /* 1387 */;
 import LinearGradientDefault from "LinearGradient" /* 5830 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import FastImageDefault from "FastImage" /* 5957 */;
-import ColorConstants from "ColorConstants" /* 9368 */;
+import ColorConstants from "ColorConstants" /* 9367 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -162,7 +162,7 @@ function PremiumFeaturesCarousel(arg0) {
         modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
         onSnapToItem: tmp5[1]
       };
-      tmp19 = closure_10(currentIndex(11629), obj3);
+      tmp19 = closure_10(currentIndex(11623), obj3);
     }
     let items3 = [tmp19, ];
     let obj4 = { containerStyle: tmp.indicators, numberOfItems: mapped.length, currentIndex };

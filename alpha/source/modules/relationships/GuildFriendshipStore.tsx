@@ -1,9 +1,9 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16106
+// Function ID: 16107
 // Name: GuildFriendshipStore
 // Dependencies: [504, 6854, 572, 2]
 
-// Module 16111 (GuildFriendshipStore)
+// Module 16106 (GuildFriendshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;

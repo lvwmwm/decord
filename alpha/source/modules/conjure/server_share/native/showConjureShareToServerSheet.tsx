@@ -1,10 +1,10 @@
-// Module ID: 13229
-// Function ID: 13230
+// Module ID: 13223
+// Function ID: 13224
 // Name: showConjureShareToServerSheet
-// Dependencies: [5, 19, 17, 6954, 21, 5243, 575, 504, 13096, 1113, 4079, 5489, 5952, 7885, 7847, 7679, 7681, 13218, 13216, 5866, 5873, 2]
+// Dependencies: [5, 19, 17, 6954, 21, 5243, 575, 504, 13090, 1113, 4079, 5489, 5952, 7885, 7847, 7679, 7681, 13212, 13210, 5866, 5873, 2]
 // Exports: default
 
-// Module 13229 (showConjureShareToServerSheet)
+// Module 13223 (showConjureShareToServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5489 */;
@@ -153,7 +153,7 @@ function ShareToServerSheet(projectId) {
   if (str == null) {
     str = "";
   }
-  const tmp6 = str(13096)(projectId, guildId, publishOptions);
+  const tmp6 = str(13090)(projectId, guildId, publishOptions);
   dependencyMap = tmp6;
   ({ guilds, guild } = tmp6);
   sharing = tmp6.sharing;
@@ -193,8 +193,8 @@ function ShareToServerSheet(projectId) {
   }
   items2 = [tmp9Result, , , , ];
   let obj5 = { rows: tmp2Result.conjureShareRows(stateFromStores) };
-  const tmp5Result = str(13218);
-  tmp2Result = projectId(13216);
+  const tmp5Result = str(13212);
+  tmp2Result = projectId(13210);
   items2[1] = closure_7(tmp5Result, obj5);
   let tmp9Result2 = null;
   if (null != error) {

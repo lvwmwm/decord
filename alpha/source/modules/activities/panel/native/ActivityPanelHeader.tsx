@@ -1,10 +1,10 @@
-// Module ID: 19728
-// Function ID: 19729
+// Module ID: 19723
+// Function ID: 19724
 // Name: ActivityPanelHeader
-// Dependencies: [32, 19, 17, 5091, 5896, 1083, 21, 5243, 575, 1627, 1705, 19725, 5314, 5535, 19729, 504, 7196, 19730, 19734, 19735, 19592, 19720, 2]
+// Dependencies: [32, 19, 17, 5091, 5896, 1083, 21, 5243, 575, 1627, 1705, 19720, 5314, 5535, 19724, 504, 7196, 19725, 19729, 19730, 19587, 19715, 2]
 // Exports: useBaseActivityPanelHeader
 
-// Module 19728 (ActivityPanelHeader)
+// Module 19723 (ActivityPanelHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -12,10 +12,10 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import native from "native" /* 5314 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7196 */;
-import LeaveActivityButtonDefault from "LeaveActivityButton" /* 19592 */;
-import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 19729 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 19730 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19734 */;
+import LeaveActivityButtonDefault from "LeaveActivityButton" /* 19587 */;
+import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 19724 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 19725 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19729 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -38,7 +38,7 @@ let obj2;
 let obj4;
 let size;
 let tmp2;
-const useMorphablePanelGestureDefault = tmp2(19725);
+const useMorphablePanelGestureDefault = tmp2(19720);
 function useBaseActivityPanelHeaderContent(landscape) {
   let closure_1;
   let closure_2;
@@ -120,7 +120,7 @@ function useBaseActivityPanelHeaderContent(landscape) {
   const items4 = [setMode];
   let obj = { gesture: tmp2Result(obj2), headerWrapperStyles: memo, headerStyles: memo1, styles: tmp };
   const callback = useCallback(ActivityPanelHeaderTsx1, items4);
-  obj2 = { mode: tmp8(19725).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  obj2 = { mode: tmp8(19720).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
   tmp2Result = useMorphablePanelGestureDefault;
   return obj;
 }
@@ -225,7 +225,7 @@ let closure_19 = react.memo(function ActivityPanelHeaderContentInner(wrapperOffs
   let tmp8Result2 = null != applicationId;
   if (tmp8Result2) {
     const obj5 = { applicationId };
-    tmp8Result2 = tmp8(tmp5(19735), obj5);
+    tmp8Result2 = tmp8(tmp5(19730), obj5);
   }
   items3[1] = tmp8Result2;
   let tmp20 = null;
@@ -249,7 +249,7 @@ const memoResult = react.memo(function ActivityPanelHeader() {
   let setMode;
   let wrapperOffset;
   let wrapperDimensions;
-  let tmp = wrapperDimensions(19720);
+  let tmp = wrapperDimensions(19715);
   const tmp2 = closure_14();
   const headerContainer = tmp2;
   const context = react.useContext(tmp);

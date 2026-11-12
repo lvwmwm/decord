@@ -1,10 +1,10 @@
-// Module ID: 15739
-// Function ID: 15740
+// Module ID: 15734
+// Function ID: 15735
 // Name: useUserProfileConnections
 // Dependencies: [19, 7288, 8639, 504, 7024, 2]
 // Exports: default
 
-// Module 15739 (useUserProfileConnections)
+// Module 15734 (useUserProfileConnections)
 import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7288 */;
 import size from "module_2" /* 2 */;

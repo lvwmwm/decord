@@ -1,18 +1,18 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14378
+// Function ID: 14379
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [19, 17, 14150, 6314, 21, 5243, 575, 504, 6684, 1113, 3269, 14163, 14166, 14383, 14384, 12958, 14164, 14385, 14386, 14388, 2]
+// Dependencies: [19, 17, 14146, 6314, 21, 5243, 575, 504, 6684, 1113, 3269, 14160, 14163, 14379, 14380, 12952, 14161, 14381, 14382, 14384, 2]
 // Exports: default
 
-// Module 14382 (CheckpointVoiceStatsScreen)
+// Module 14378 (CheckpointVoiceStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3269 from "module_3269" /* 3269 */;
 import CheckpointConstants from "CheckpointConstants" /* 6314 */;
 import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6684 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 14388 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 14384 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 14150 */;
+import CheckpointStore from "CheckpointStore" /* 14146 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
@@ -117,29 +117,29 @@ export default function CheckpointVoiceStatsScreen() {
   }
   const obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.imageContainer, children: closure_7(tmp14Result4, obj6) };
-  obj6 = { animatedUri: tmp14(14383), staticUri: tmp14(14384), style: tmp.image };
-  const tmp14Result = tmp14(14163);
-  tmp14Result4 = tmp14(14166);
+  obj6 = { animatedUri: tmp14(14379), staticUri: tmp14(14380), style: tmp.image };
+  const tmp14Result = tmp14(14160);
+  tmp14Result4 = tmp14(14163);
   items3 = [closure_7(View, obj5), ];
   const obj8 = { style: tmp.title, children: items4 };
   items4 = [, ];
   const obj7 = { style: tmp.copy, children: items5 };
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items4[0] = closure_7(stateFromStores1(12958).MicrophoneIcon, obj9);
+  items4[0] = closure_7(stateFromStores1(12952).MicrophoneIcon, obj9);
   const obj10 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp14Result5 = tmp14(14164);
+  const tmp14Result5 = tmp14(14161);
   items4[1] = closure_7(tmp14Result5, obj10);
   items5 = [closure_8(View, obj8), , , ];
   let tmp16Result = tmp7 && null != memo;
   if (tmp16Result) {
     const obj11 = { value: null, accessibilityLabel: null };
     ({ value: obj12.value, label: obj12.accessibilityLabel } = memo);
-    tmp16Result = tmp16(tmp14(14385), obj11);
+    tmp16Result = tmp16(tmp14(14381), obj11);
   }
   items5[1] = tmp16Result;
   let tmp16Result2 = !tmp7;
   if (tmp16Result2) {
-    const obj13 = { accessible: true, accessibilityLabel: formatToPlainString(lw35aH, obj14), style: tmp.number, children: closure_7(tmp14(14386), obj16) };
+    const obj13 = { accessible: true, accessibilityLabel: formatToPlainString(lw35aH, obj14), style: tmp.number, children: closure_7(tmp14(14382), obj16) };
     const intl3 = tmp2(1113).intl;
     formatToPlainString = intl3.formatToPlainString;
     obj14 = { duration: intl4.formatToPlainString(tmp14(3269).x7PkHm, obj15) };
@@ -151,7 +151,7 @@ export default function CheckpointVoiceStatsScreen() {
   }
   items5[2] = tmp16Result2;
   const obj17 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: stringResult1 };
-  const tmp14Result6 = tmp14(14164);
+  const tmp14Result6 = tmp14(14161);
   if (roundResult <= 0) {
     const intl7 = tmp2(1113).intl;
     stringResult1 = intl7.string(tmp14(3269).huiTne);

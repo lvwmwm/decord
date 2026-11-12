@@ -221,7 +221,6 @@ let obj = {
   },
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let guildId;
-    let map2;
     let requests;
     let status;
     let total;

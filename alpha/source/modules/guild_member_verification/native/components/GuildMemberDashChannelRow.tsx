@@ -1,10 +1,10 @@
-// Module ID: 18807
-// Function ID: 18808
+// Module ID: 18802
+// Function ID: 18803
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 1072, 5099, 5997, 21, 5243, 575, 18808, 6869, 5289, 1099, 14680, 1113, 7372, 1187, 2]
+// Dependencies: [19, 1072, 5099, 5997, 21, 5243, 575, 18803, 6869, 5289, 1099, 14676, 1113, 7372, 1187, 2]
 // Exports: default
 
-// Module 18807 (GuildMemberDashChannelRow)
+// Module 18802 (GuildMemberDashChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -43,7 +43,7 @@ export default function GuildMemberDashChannelRow(arg0) {
   let hasItem;
   let tmp = closure_8();
   const id = guild.id;
-  let obj = id(18808);
+  let obj = id(18803);
   let num = obj.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;
@@ -65,15 +65,15 @@ export default function GuildMemberDashChannelRow(arg0) {
     const obj = router_utils;
     obj.transitionTo(hasOwnProperty.CHANNEL(id, StaticChannelRoute.MEMBER_SAFETY));
   }, items1);
-  const ChannelModes = tmp2(14680).ChannelModes;
+  const ChannelModes = tmp2(14676).ChannelModes;
   const tmp7 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
-  hasItem(14680);
+  hasItem(14676);
   const intl = tmp2(1113).intl;
   ({ name: intl2.string(id(1113).t["9Oq93m"]), mode: tmp7 });
-  const BaseChannelName = tmp2(14680).BaseChannelName;
+  const BaseChannelName = tmp2(14676).BaseChannelName;
   intl2 = tmp2(1113).intl;
   ({ mode: tmp7, IconComponent: id(7372).GroupIcon });
-  const BaseChannelIcon = tmp2(14680).BaseChannelIcon;
+  const BaseChannelIcon = tmp2(14676).BaseChannelIcon;
   let tmp8Result = null;
   if (num > 0) {
     const obj9 = { style: null, textStyle: null, value: num };

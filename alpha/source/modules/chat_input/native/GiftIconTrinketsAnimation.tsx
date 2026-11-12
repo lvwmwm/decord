@@ -1,9 +1,9 @@
-// Module ID: 14548
-// Function ID: 14549
+// Module ID: 14544
+// Function ID: 14545
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 5244, 21, 5243, 5839, 575, 504, 2150, 14549, 1377, 9432, 5957, 2]
+// Dependencies: [19, 17, 5244, 21, 5243, 5839, 575, 504, 2150, 14545, 1377, 9431, 5957, 2]
 
-// Module 14548 (GiftIconTrinketsAnimation)
+// Module 14544 (GiftIconTrinketsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function GiftIconTrinketsAnimation(arg0) {
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isAndroid()) {
         const obj5 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-        tmp10Result = tmp10(tmp(9432).APNGPlayer, obj5);
+        tmp10Result = tmp10(tmp(9431).APNGPlayer, obj5);
       } else {
         const obj6 = { source: obj7, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
         obj7 = { uri: trinketsAnimationUrl };

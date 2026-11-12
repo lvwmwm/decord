@@ -1,7 +1,7 @@
 // Module ID: 8407
 // Function ID: 8408
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 5097, 8396, 5114, 5175, 1072, 21, 5243, 575, 8408, 1627, 7852, 7871, 7196, 504, 5990, 8409, 8394, 7599, 5489, 8410, 14626, 1196, 15769, 5503, 7847, 1113, 1187, 15771, 15775, 15777, 7759, 14622, 14963, 15809, 2]
+// Dependencies: [32, 19, 17, 5097, 8396, 5114, 5175, 1072, 21, 5243, 575, 8408, 1627, 7852, 7871, 7196, 504, 5990, 8409, 8394, 7599, 5489, 8410, 14622, 1196, 15764, 5503, 7847, 1113, 1187, 15766, 15770, 15772, 7759, 14618, 14959, 15804, 2]
 // Exports: default
 
 // Module 8407 (InstantInviteActionSheet)
@@ -13,7 +13,7 @@ import InviteCodeUtils from "InviteCodeUtils" /* 5990 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8394 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8408 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 14626 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 14622 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -24,8 +24,6 @@ import PermissionStore from "PermissionStore" /* 5175 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
-
-let vanityURLCode;
 
 let closure_12;
 let closure_14;
@@ -90,7 +88,7 @@ export default function InstantInviteActionSheet(channel) {
   let tmp39;
   channel = channel.channel;
   const source = channel.source;
-  vanityURLCode = channel.vanityURLCode;
+  const vanityURLCode = channel.vanityURLCode;
   ({ guildScheduledEventId: _slicedToArray, targetApplicationId, code } = channel);
   let stateFromStores;
   let str;

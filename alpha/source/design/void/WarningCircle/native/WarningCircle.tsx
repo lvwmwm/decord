@@ -1,10 +1,10 @@
-// Module ID: 16487
-// Function ID: 16488
+// Module ID: 16482
+// Function ID: 16483
 // Name: WarningCircle
 // Dependencies: [19, 21, 8197, 2]
 // Exports: default
 
-// Module 16487 (WarningCircle)
+// Module 16482 (WarningCircle)
 import Fragment from "Fragment" /* 21 */;
 import inlineStyles from "inlineStyles" /* 8197 */;
 import react from "react" /* 19 */;

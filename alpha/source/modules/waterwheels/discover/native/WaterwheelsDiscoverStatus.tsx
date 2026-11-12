@@ -1,10 +1,10 @@
-// Module ID: 18891
-// Function ID: 18892
+// Module ID: 18886
+// Function ID: 18887
 // Name: WaterwheelsDiscoverStatus
 // Dependencies: [19, 17, 21, 5243, 575, 5866, 1113, 2553, 5873, 2]
 // Exports: WaterwheelsDiscoverRefreshError, default
 
-// Module 18891 (WaterwheelsDiscoverStatus)
+// Module 18886 (WaterwheelsDiscoverStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -28,7 +28,7 @@ let obj = { container: obj2, copy: obj3, centered: { textAlign: "center" }, bann
 obj2 = { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_24 };
 createStyles = createStyles.createStyles;
 obj3 = { alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_8 };
 let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/waterwheels/discover/native/WaterwheelsDiscoverStatus.tsx");
 
@@ -48,7 +48,7 @@ export default function WaterwheelsDiscoverStatus(status) {
   const tmp = closure_6();
   if ("loading" === status) {
     const obj2 = { style: tmp.container, accessibilityLiveRegion: "polite", children: React3(Text2, obj3) };
-    obj3 = { variant: "body-md/medium", color: "text-muted", style: tmp.centered, children: intl3.string(_modDef2553["71GnER"]) };
+    obj3 = { variant: "body-md/medium", color: "text-subtle", style: tmp.centered, children: intl3.string(_modDef2553["71GnER"]) };
     Text2 = Text_Text.Text;
     intl3 = intl5.intl;
     tmp10Result = React3(View, obj2);
@@ -71,7 +71,7 @@ export default function WaterwheelsDiscoverStatus(status) {
     items = [React3(Heading, obj6), ];
     let tmp12Result = null;
     if ("empty" === status) {
-      const obj = { variant: "body-sm/normal", color: "text-muted", style: tmp.centered, children: intl.string(tmp2(2553)["9KIqrW"]) };
+      const obj = { variant: "body-sm/normal", color: "text-subtle", style: tmp.centered, children: intl.string(tmp2(2553)["9KIqrW"]) };
       const Text = tmp13(5866).Text;
       intl = tmp13(1113).intl;
       tmp12Result = tmp12(Text, obj);
@@ -93,7 +93,7 @@ export function WaterwheelsDiscoverRefreshError(onRetry) {
   onRetry = onRetry.onRetry;
   const tmp = closure_6();
   const obj = { style: tmp.banner, accessibilityLiveRegion: "polite", children: items };
-  const obj2 = { variant: "body-sm/medium", color: "text-muted", style: tmp.bannerText, children: intl.string(_modDef2553["4O8kV0"]) };
+  const obj2 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.bannerText, children: intl.string(_modDef2553["4O8kV0"]) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [React3(Text, obj2), ];

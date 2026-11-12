@@ -1,15 +1,15 @@
-// Module ID: 10326
-// Function ID: 10327
+// Module ID: 10324
+// Function ID: 10325
 // Name: ExperimentalWebBadgeIcon
-// Dependencies: [19, 17, 21, 575, 5956, 10327, 10328, 2]
+// Dependencies: [19, 17, 21, 575, 5956, 10325, 10326, 2]
 // Exports: ExperimentalWebBadgeIcon
 
-// Module 10326 (ExperimentalWebBadgeIcon)
+// Module 10324 (ExperimentalWebBadgeIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage3 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10327 */;
-import AssetRegistry2 from "AssetRegistry" /* 10328 */;
+import AssetRegistry from "AssetRegistry" /* 10325 */;
+import AssetRegistry2 from "AssetRegistry" /* 10326 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

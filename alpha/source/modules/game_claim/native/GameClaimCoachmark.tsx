@@ -1,18 +1,18 @@
-// Module ID: 18783
-// Function ID: 18784
+// Module ID: 18778
+// Function ID: 18779
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1072, 5089, 21, 575, 18784, 5998, 5879, 5243, 18785, 12065, 1113, 7381, 7364, 7483, 5866, 5873, 8327, 10422, 10426, 2]
+// Dependencies: [5, 19, 17, 1072, 5089, 21, 575, 18779, 5998, 5879, 5243, 18780, 12059, 1113, 7381, 7364, 7483, 5866, 5873, 8327, 10420, 10424, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 18783 (GameClaimCoachmark)
+// Module 18778 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
 import ButtonConstants from "ButtonConstants" /* 5879 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5998 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12065 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 18784 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18785 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12059 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 18779 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18780 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -40,7 +40,7 @@ const Pressables = tmp2(7364);
 const Card_Card = tmp2(7381);
 const XSmallIcon = tmp2(7483);
 const LinkExternalSmallIcon = tmp2(8327);
-const GameClaimCardStackDefault = tmp5(18784);
+const GameClaimCardStackDefault = tmp5(18779);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

@@ -1,10 +1,10 @@
-// Module ID: 11247
-// Function ID: 11248
+// Module ID: 11241
+// Function ID: 11242
 // Name: getEmojiPopoutMessage
 // Dependencies: [7655, 1072, 1113, 4334, 2185, 2]
 // Exports: getEmojiPopoutData
 
-// Module 11247 (getEmojiPopoutMessage)
+// Module 11241 (getEmojiPopoutMessage)
 import Constants from "Constants" /* 1072 */;
 import intl12 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;

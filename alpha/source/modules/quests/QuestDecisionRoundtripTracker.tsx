@@ -1,16 +1,16 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 10072
+// Function ID: 10073
 // Name: QuestDecisionRoundtripTracker
-// Dependencies: [8739, 6147, 1072, 5282, 8740, 8596, 1252, 8715, 8599, 2]
+// Dependencies: [8738, 6147, 1072, 5282, 8739, 8596, 1252, 8714, 8599, 2]
 
-// Module 10073 (QuestDecisionRoundtripTracker)
+// Module 10072 (QuestDecisionRoundtripTracker)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AdCreativeType from "AdCreativeType" /* 5282 */;
 import NetStats from "NetStats" /* 8596 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 8715 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 8740 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8739 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8714 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 8739 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8738 */;
 import NetworkStore from "NetworkStore" /* 6147 */;
 import size from "module_2" /* 2 */;
 
@@ -200,7 +200,7 @@ class QuestDecisionRoundtripTracker {
             }
             const deliveredAdCreativeId = getDeliveredAdCreativeId(creative);
             let creative1;
-            const getDeliveredAdCreativeId2 = tmp12(8740).getDeliveredAdCreativeId;
+            const getDeliveredAdCreativeId2 = tmp12(8739).getDeliveredAdCreativeId;
             AdDecisionUtils;
             if (tmp6 != null) {
               creative1 = tmp6.creative;

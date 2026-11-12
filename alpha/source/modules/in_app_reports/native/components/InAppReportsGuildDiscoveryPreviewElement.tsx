@@ -1,10 +1,10 @@
-// Module ID: 12194
-// Function ID: 12195
+// Module ID: 12188
+// Function ID: 12189
 // Name: InAppReportsGuildDiscoveryPreviewElement
 // Dependencies: [19, 17, 5244, 21, 5243, 575, 504, 5240, 5866, 1113, 7654, 5106, 2]
 // Exports: default
 
-// Module 12194 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 12188 (InAppReportsGuildDiscoveryPreviewElement)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

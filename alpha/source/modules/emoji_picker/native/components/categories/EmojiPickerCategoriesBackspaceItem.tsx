@@ -1,10 +1,10 @@
-// Module ID: 11273
-// Function ID: 11274
+// Module ID: 11267
+// Function ID: 11268
 // Name: EmojiPickerCategoriesBackspaceItem
-// Dependencies: [19, 17, 1072, 21, 5087, 1113, 11274, 2]
+// Dependencies: [19, 17, 1072, 21, 5087, 1113, 11268, 2]
 // Exports: default
 
-// Module 11273 (EmojiPickerCategoriesBackspaceItem)
+// Module 11267 (EmojiPickerCategoriesBackspaceItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;

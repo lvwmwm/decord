@@ -1,10 +1,10 @@
-// Module ID: 11616
-// Function ID: 11617
+// Module ID: 11610
+// Function ID: 11611
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 5244, 8481, 1072, 21, 5243, 575, 1627, 504, 8414, 1252, 5503, 5866, 1113, 2781, 11617, 11619, 2]
+// Dependencies: [19, 17, 5244, 8481, 1072, 21, 5243, 575, 1627, 504, 8414, 1252, 5503, 5866, 1113, 2781, 11611, 11613, 2]
 // Exports: default
 
-// Module 11616 (GiftingBadgeInfoActionSheet)
+// Module 11610 (GiftingBadgeInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,8 +12,8 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _modDef2781 from "module_2781" /* 2781 */;
 import Text_Text from "Text/Text" /* 5866 */;
 import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8481 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11617 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11619 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11611 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11613 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5244 */;
 import Fragment from "Fragment" /* 21 */;

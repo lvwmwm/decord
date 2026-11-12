@@ -1,10 +1,10 @@
-// Module ID: 17486
-// Function ID: 17487
+// Module ID: 17481
+// Function ID: 17482
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 5243, 1652, 5485, 5488, 5830, 17475, 2]
+// Dependencies: [17, 21, 5243, 1652, 5485, 5488, 5830, 17470, 2]
 // Exports: default
 
-// Module 17486 (BountiesModalEndCard)
+// Module 17481 (BountiesModalEndCard)
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import timingPresets from "timingPresets" /* 5488 */;

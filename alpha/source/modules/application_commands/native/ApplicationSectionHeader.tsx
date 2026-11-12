@@ -1,10 +1,10 @@
-// Module ID: 14703
-// Function ID: 14704
+// Module ID: 14699
+// Function ID: 14700
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 5155, 21, 5243, 575, 504, 14532, 1113, 5957, 5866, 2]
+// Dependencies: [19, 17, 5155, 21, 5243, 575, 504, 14528, 1113, 5957, 5866, 2]
 // Exports: default
 
-// Module 14703 (ApplicationSectionHeader)
+// Module 14699 (ApplicationSectionHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
@@ -49,7 +49,7 @@ export default function ApplicationSectionHeader(section) {
       }
     }
   });
-  const obj2 = section(14532);
+  const obj2 = section(14528);
   const applicationCommandsIconSource = obj2.getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {

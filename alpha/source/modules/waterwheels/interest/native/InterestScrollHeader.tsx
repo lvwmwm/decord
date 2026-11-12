@@ -1,10 +1,10 @@
-// Module ID: 18991
-// Function ID: 18992
+// Module ID: 18986
+// Function ID: 18987
 // Name: InterestScrollHeader
 // Dependencies: [19, 17, 21, 5243, 1652, 1705, 575, 5866, 2]
 // Exports: InterestCompactTitle, interestHeaderElevation, useInterestScrollHeader
 
-// Module 18991 (InterestScrollHeader)
+// Module 18986 (InterestScrollHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

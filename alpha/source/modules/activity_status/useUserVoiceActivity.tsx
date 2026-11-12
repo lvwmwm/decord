@@ -1,10 +1,10 @@
-// Module ID: 10785
-// Function ID: 10786
+// Module ID: 10779
+// Function ID: 10780
 // Name: useUserVoiceActivity
 // Dependencies: [5092, 5175, 5918, 1083, 504, 2]
 // Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 10785 (useUserVoiceActivity)
+// Module 10779 (useUserVoiceActivity)
 import Constants from "Constants" /* 1083 */;
 import ChannelStore_mod from "ChannelStore" /* 5092 */;
 import PermissionStore_mod from "PermissionStore" /* 5175 */;

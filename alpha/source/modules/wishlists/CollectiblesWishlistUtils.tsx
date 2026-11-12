@@ -1,10 +1,10 @@
-// Module ID: 9454
-// Function ID: 9455
+// Module ID: 9453
+// Function ID: 9454
 // Name: CollectiblesWishlistUtils
 // Dependencies: [2111, 1113, 8431, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 9454 (CollectiblesWishlistUtils)
+// Module 9453 (CollectiblesWishlistUtils)
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
 import size from "module_2" /* 2 */;

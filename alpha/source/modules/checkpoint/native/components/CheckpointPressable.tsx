@@ -1,10 +1,10 @@
-// Module ID: 14404
-// Function ID: 14405
+// Module ID: 14400
+// Function ID: 14401
 // Name: CheckpointPressable
 // Dependencies: [17, 6314, 21, 575, 5243, 2]
 // Exports: default
 
-// Module 14404 (CheckpointPressable)
+// Module 14400 (CheckpointPressable)
 import nativeDefault from "native" /* 575 */;
 import react_native from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 6314 */;
@@ -28,7 +28,7 @@ let obj6;
 const PX_4 = nativeDefault.space.PX_4;
 let obj = { sm: obj2, lg: obj3 };
 obj2 = { height: 32, gap: nativeDefault.space.PX_4, textVariant: "body-md/semibold" };
-obj3 = { height: CHECKPOINT_CONTROL_SIZE, gap: nativeDefault.space.PX_8, textVariant: "body-lg/medium" };
+obj3 = { height: CHECKPOINT_CONTROL_SIZE, gap: nativeDefault.space.PX_8 };
 let obj4 = { container: { paddingRight: PX_4, paddingBottom: PX_4 }, shadow: { position: "absolute", top: PX_4, left: PX_4, right: 0, bottom: 0 }, pressable: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_12 }, sm: { height: obj.sm.height, gap: obj.sm.gap }, lg: { height: obj.lg.height, gap: obj.lg.gap }, pressed: obj6 };
 obj6 = { transform: items };
 items = [{ translateX: PX_4 }, { translateY: PX_4 }];

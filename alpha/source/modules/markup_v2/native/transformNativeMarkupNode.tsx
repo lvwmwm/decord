@@ -1,9 +1,9 @@
-// Module ID: 9304
-// Function ID: 9305
+// Module ID: 9303
+// Function ID: 9304
 // Name: transformNativeMarkupNode
-// Dependencies: [32, 6279, 9289, 9305, 9306, 9307, 9309, 9316, 2]
+// Dependencies: [32, 6279, 9288, 9304, 9305, 9306, 9308, 9315, 2]
 
-// Module 9304 (transformNativeMarkupNode)
+// Module 9303 (transformNativeMarkupNode)
 import MarkupTypes from "MarkupTypes" /* 6279 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

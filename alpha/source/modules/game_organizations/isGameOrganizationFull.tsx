@@ -1,10 +1,10 @@
-// Module ID: 12449
-// Function ID: 12450
+// Module ID: 12443
+// Function ID: 12444
 // Name: isGameOrganizationFull
 // Dependencies: [2]
 // Exports: default
 
-// Module 12449 (isGameOrganizationFull)
+// Module 12443 (isGameOrganizationFull)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organizations/isGameOrganizationFull.tsx");

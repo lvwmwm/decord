@@ -1,9 +1,9 @@
-// Module ID: 18887
-// Function ID: 18888
+// Module ID: 18882
+// Function ID: 18883
 // Name: WaterwheelsDiscoverAnalyticsSession
 // Dependencies: [5, 32, 1266, 2]
 
-// Module 18887 (WaterwheelsDiscoverAnalyticsSession)
+// Module 18882 (WaterwheelsDiscoverAnalyticsSession)
 import v1 from "v1" /* 1266 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

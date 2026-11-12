@@ -1,9 +1,9 @@
-// Module ID: 11570
-// Function ID: 11571
+// Module ID: 11564
+// Function ID: 11565
 // Name: ImageCarousel
-// Dependencies: [19, 17, 8658, 8806, 11571, 21, 5243, 575, 1652, 5485, 1187, 5876, 38, 8784, 504, 11572, 1113, 11797, 8544, 5866, 7540, 7569, 7364, 11063, 7582, 1493, 11092, 11574, 8808, 2]
+// Dependencies: [19, 17, 8658, 8805, 11565, 21, 5243, 575, 1652, 5485, 1187, 5876, 38, 8783, 504, 11566, 1113, 11791, 8544, 5866, 7540, 7569, 7364, 11057, 7582, 1493, 11086, 11568, 8807, 2]
 
-// Module 11570 (ImageCarousel)
+// Module 11564 (ImageCarousel)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -14,15 +14,15 @@ import spring_spring from "spring/spring" /* 5876 */;
 import Pressables from "Pressables" /* 7364 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7582 */;
 import DraftStore from "DraftStore" /* 8658 */;
-import Upload from "Upload" /* 8808 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11063 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11092 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 11572 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11574 */;
+import Upload from "Upload" /* 8807 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11057 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11086 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 11566 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11568 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8806 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 11571 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8805 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 11565 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 11091
-// Function ID: 11092
+// Module ID: 11085
+// Function ID: 11086
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 10978, 5092, 8658, 8806, 8801, 21, 5243, 575, 2017, 6206, 1113, 8938, 11092, 7852, 504, 11094, 11090, 1497, 1625, 11, 8800, 7433, 11095, 2]
+// Dependencies: [19, 17, 10972, 5092, 8658, 8805, 8800, 21, 5243, 575, 2017, 6206, 1113, 8937, 11086, 7852, 504, 11088, 11084, 1497, 1625, 11, 8799, 7433, 11089, 2]
 // Exports: default
 
-// Module 11091 (ForumComposerModal)
+// Module 11085 (ForumComposerModal)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -15,14 +15,14 @@ import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
 import DraftStore2 from "DraftStore" /* 8658 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8938 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 11090 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11092 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8937 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 11084 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11086 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10978 */;
+import NativeMenuStore from "NativeMenuStore" /* 10972 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8806 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8801 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8805 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8800 */;
 import createStyles from "createStyles" /* 5243 */;
 import size from "module_2" /* 2 */;
 

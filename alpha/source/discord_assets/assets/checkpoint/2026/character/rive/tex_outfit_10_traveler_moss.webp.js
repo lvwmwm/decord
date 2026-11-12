@@ -1,8 +1,8 @@
-// Module ID: 14312
-// Function ID: 14313
+// Module ID: 14308
+// Function ID: 14309
 // Dependencies: [2]
 
-// Module 14312
+// Module 14308
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_10_traveler_moss.webp.js");

@@ -1,10 +1,10 @@
-// Module ID: 16180
-// Function ID: 16181
+// Module ID: 16175
+// Function ID: 16176
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1385, 1072, 1240, 21, 5243, 575, 1627, 1493, 1357, 1252, 6785, 5429, 1099, 6207, 6211, 7557, 1113, 6211, 6781, 10204, 5423, 5957, 16181, 5866, 7701, 2]
+// Dependencies: [5, 19, 17, 502, 1385, 1072, 1240, 21, 5243, 575, 1627, 1493, 1357, 1252, 6785, 5429, 1099, 6207, 6211, 7557, 1113, 6211, 6781, 10202, 5423, 5957, 16176, 5866, 7701, 2]
 // Exports: default
 
-// Module 16180 (OneTimeLoginModal)
+// Module 16175 (OneTimeLoginModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
@@ -16,7 +16,7 @@ import FastImageDefault from "FastImage" /* 5957 */;
 import useAlertStore from "useAlertStore" /* 6207 */;
 import AlertModal2 from "AlertModal" /* 6211 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7557 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10204 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10202 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -282,7 +282,7 @@ export default function OneTimeLoginModal(token) {
   items6 = [closure_12(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(16181), style: tmp.logo };
+  let obj6 = { source: token(16176), style: tmp.logo };
   const tmp12 = FastImageDefault;
   items7 = [closure_12(tmp12, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };

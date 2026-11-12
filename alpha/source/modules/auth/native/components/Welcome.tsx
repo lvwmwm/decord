@@ -1,10 +1,10 @@
-// Module ID: 18526
-// Function ID: 18527
+// Module ID: 18521
+// Function ID: 18522
 // Name: Welcome
-// Dependencies: [19, 17, 18527, 5469, 8395, 1404, 5989, 8400, 1072, 8065, 8776, 21, 5243, 575, 14872, 1113, 38, 1187, 5309, 5866, 5957, 15461, 7705, 16181, 1499, 1627, 504, 18528, 5836, 8611, 1252, 510, 6781, 5854, 18529, 18523, 1500, 6888, 5873, 5314, 5829, 14101, 2]
+// Dependencies: [19, 17, 18522, 5469, 8395, 1404, 5989, 8400, 1072, 8065, 8775, 21, 5243, 575, 14868, 1113, 38, 1187, 5309, 5866, 5957, 15458, 7705, 16176, 1499, 1627, 504, 18523, 5836, 8611, 1252, 510, 6781, 5854, 18524, 18518, 1500, 6888, 5873, 5314, 5829, 14097, 2]
 // Exports: default
 
-// Module 18526 (Welcome)
+// Module 18521 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -17,14 +17,14 @@ import FastImageDefault from "FastImage" /* 5957 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7705 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 8065 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8611 */;
-import Constants2 from "Constants" /* 8776 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 14872 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15461 */;
-import AssetRegistry from "AssetRegistry" /* 16181 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18523 */;
+import Constants2 from "Constants" /* 8775 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 14868 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15458 */;
+import AssetRegistry from "AssetRegistry" /* 16176 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18518 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 18527 */;
+import AgeGateStore from "AgeGateStore" /* 18522 */;
 import ExperimentStore from "ExperimentStore" /* 5469 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 8395 */;
 import UserRecord from "UserRecord" /* 1404 */;
@@ -82,7 +82,7 @@ function InviteCard(invite) {
       _modDef38(null != inviter, "Null inviter");
       const self = this;
       const self2 = this;
-      const obj = { user: tmp10, guildId: "Array" };
+      const obj = { user: tmp10, guildId: "a" };
       const Avatar = native.Avatar;
       tmp10 = new UserRecord(inviter);
       tmp12 = closure_19(Avatar, obj);
@@ -97,7 +97,7 @@ function InviteCard(invite) {
     } else {
       const self3 = this;
       const self4 = this;
-      const obj4 = { user: tmp29, guildId: "Array" };
+      const obj4 = { user: tmp29, guildId: "a" };
       const Avatar2 = native.Avatar;
       tmp29 = new UserRecord(inviter);
       const tmp31 = closure_19(Avatar2, obj4);

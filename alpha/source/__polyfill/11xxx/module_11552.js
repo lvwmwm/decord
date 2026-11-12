@@ -1,10 +1,10 @@
 // Module ID: 11552
 // Function ID: 11553
-// Dependencies: [41, 42, 93, 95, 98, 11537, 11370, 11371, 11375]
+// Dependencies: [41, 42, 93, 95, 98, 11550, 11364, 11365, 11369]
 
 // Module 11552
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11375 */;
-import _mod11537 from "module_11537" /* 11537 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11369 */;
+import _mod11550 from "module_11550" /* 11550 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,29 +26,36 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(questo|ultimo|passato|prossimo|dopo|questa|ultima|passata|prossima|\\+|-)\\s*(" + _mod11537.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-class ENTimeUnitCasualRelativeFormatParser {
+const regExp = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod11550.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp1 = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod11550.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
+class SVTimeUnitCasualRelativeFormatParser {
   constructor() {
     let constructResult;
+    let flag = arg0;
+    if (arg0 === undefined) {
+      flag = true;
+    }
     const self = this;
-    _classCallCheck(this, ENTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitCasualRelativeFormatParser);
+    _classCallCheck(this, SVTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(SVTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.allowAbbreviations = flag;
+    return tmp3Result;
   }
 }
-_inherits(ENTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(SVTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    return regExp;
+    return this.allowAbbreviations ? regExp : regExp1;
   }
 };
 const items = [
@@ -58,18 +65,22 @@ const items = [
     value: function innerExtract(reference, arg1) {
       const str = arg1[1];
       const formatted = str.toLowerCase();
-      const parseDurationResult = _mod11537.parseDuration(arg1[2]);
-      if ("last" !== formatted) {
-        let reverseDurationResult;
-        if ("past" !== formatted) {
-          reverseDurationResult = parseDurationResult;
+      const parseDurationResult = _mod11550.parseDuration(arg1[2]);
+      if (parseDurationResult) {
+        if ("f\u00F6rra" !== formatted) {
+          let reverseDurationResult;
+          if ("passerade" !== formatted) {
+            reverseDurationResult = parseDurationResult;
+          }
+          const ParsingComponents = tmp2(11365).ParsingComponents;
+          return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
         }
-        const ParsingComponents = tmp2(11371).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+        reverseDurationResult = tmp2(11364).reverseDuration(parseDurationResult);
+      } else {
+        return null;
       }
-      reverseDurationResult = tmp2(11370).reverseDuration(parseDurationResult);
     }
   }
 ];
 
-export default _createClass(ENTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(SVTimeUnitCasualRelativeFormatParser, items);

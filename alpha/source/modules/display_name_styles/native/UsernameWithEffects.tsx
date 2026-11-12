@@ -1,9 +1,9 @@
-// Module ID: 9998
-// Function ID: 9999
+// Module ID: 9997
+// Function ID: 9998
 // Name: UsernameWithEffects
-// Dependencies: [19, 17, 1394, 21, 1396, 5243, 575, 1357, 9999, 6687, 6688, 10000, 5839, 10001, 1393, 5866, 5419, 10004, 1380, 2]
+// Dependencies: [19, 17, 1394, 21, 1396, 5243, 575, 1357, 9998, 6687, 6688, 9999, 5839, 10000, 1393, 5866, 5419, 10003, 1380, 2]
 
-// Module 9998 (UsernameWithEffects)
+// Module 9997 (UsernameWithEffects)
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
@@ -120,7 +120,7 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
   let STATIC = userName.effectDisplayType;
   ({ userId, guildId } = userName);
   if (STATIC === undefined) {
-    STATIC = userName(9999).EffectDisplayType.STATIC;
+    STATIC = userName(9998).EffectDisplayType.STATIC;
   }
   ({ defaultColor, containerStyle, ignoreDisabledStylesSetting, pendingDisplayNameStyles } = userName);
   if (ignoreDisabledStylesSetting === undefined) {
@@ -131,12 +131,12 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
   const tmp7 = num2(6687)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
   let obj = userName(6688);
   const displayNameStylesEnabled = obj.useDisplayNameStylesEnabled({ location: "UsernameWithEffects" });
-  const obj2 = userName(10000);
+  const obj2 = userName(9999);
   const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: tmp7, ignoreDisabledStylesSetting });
   let tmp11;
   if (null != displayNameStylesFont) {
-    tmp11 = { fontFamily: displayNameStylesFont, lineHeight: "Array" };
-    const obj3 = { fontFamily: displayNameStylesFont, lineHeight: "Array" };
+    tmp11 = { fontFamily: displayNameStylesFont, lineHeight: "a" };
+    const obj3 = { fontFamily: displayNameStylesFont, lineHeight: "a" };
   }
   let num = merged.lineClamp;
   if (num == null) {
@@ -155,7 +155,7 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
   const token = tmp8Result.useToken(tmp5(575).colors.BACKGROUND_BASE_LOW);
   const tmp8Result6 = userName(5839);
   const token1 = tmp8Result6.useToken(tmp5(575).colors.WHITE);
-  const tmp8Result7 = userName(10001);
+  const tmp8Result7 = userName(10000);
   const displayNameStylesAccessibleColors = tmp8Result7.useDisplayNameStylesAccessibleColors({ displayNameStyles: tmp7, backgroundColor: token });
   let first;
   if (displayNameStylesAccessibleColors.length > 0) {
@@ -230,7 +230,7 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
   const tmp27Result = tmp27(str, num2);
   if (displayNameStylesEnabled) {
     if (null != tmp7) {
-      if (STATIC !== userName(9999).EffectDisplayType.PLAIN) {
+      if (STATIC !== userName(9998).EffectDisplayType.PLAIN) {
         if (null != colorVariants) {
           let layoutImpact;
           const items1 = [merged.style, tmp12];
@@ -239,7 +239,7 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
             layoutImpact = tmp27Result.layoutImpact;
           }
           if (effectId === userName(1396).DisplayNameEffect.GUMMY) {
-            const tmp5Result = num2(10004);
+            const tmp5Result = num2(10003);
             const tmp8Result10 = userName(5419);
             let str3 = tmp8Result10.getNodeText(userName);
             const tmp65 = closure_9;

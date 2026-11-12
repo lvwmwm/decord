@@ -1,18 +1,18 @@
-// Module ID: 9273
-// Function ID: 9274
+// Module ID: 9272
+// Function ID: 9273
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [5092, 1385, 5243, 575, 5163, 9114, 6288, 9122, 1113, 9124, 8588, 9274, 9126, 2]
+// Dependencies: [5092, 1385, 5243, 575, 5163, 9113, 6288, 9121, 1113, 9123, 8588, 9273, 9125, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 9273 (GuildSpaceLeaderboardSystemMessage)
+// Module 9272 (GuildSpaceLeaderboardSystemMessage)
 import nativeDefault from "native" /* 575 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5163 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8588 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 9114 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9122 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9124 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9274 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 9113 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9121 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9123 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9273 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import UserStore from "UserStore" /* 1385 */;
 import createStyles from "createStyles" /* 5243 */;
@@ -123,7 +123,7 @@ export function createGuildSpaceLeaderboardSystemMessage(theme) {
           }
           const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult10.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
           tmpResult10 = renderer_EmbedUtils;
-          const merged1 = Object.assign(tmp26(9126)(theme));
+          const merged1 = Object.assign(tmp26(9125)(theme));
           return obj5;
         }
       }

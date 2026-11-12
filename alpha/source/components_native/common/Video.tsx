@@ -1,10 +1,10 @@
-// Module ID: 9664
-// Function ID: 9665
+// Module ID: 9663
+// Function ID: 9664
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 5243, 575, 9665, 5314, 8560, 7521, 5957, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 9664, 5314, 8560, 7521, 5957, 1113, 2]
 // Exports: createVideoControls
 
-// Module 9664 (common/Video)
+// Module 9663 (common/Video)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -75,7 +75,7 @@ class VideoComponent {
     }
     closure_1 = undefined;
     ({ httpEngine, useTextureView } = paused);
-    const _default = pauseWhileAppInactive(9665).default;
+    const _default = pauseWhileAppInactive(9664).default;
     [first, closure_1] = react.useState("active" === currentState.currentState);
     const items = [pauseWhileAppInactive];
     const effect = react.useEffect(() => {

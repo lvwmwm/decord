@@ -1,10 +1,10 @@
-// Module ID: 20733
-// Function ID: 20734
+// Module ID: 20728
+// Function ID: 20729
 // Name: UserApplicationIdentityManager
-// Dependencies: [12178, 7816, 2]
+// Dependencies: [12172, 7816, 2]
 
-// Module 20733 (UserApplicationIdentityManager)
-import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 12178 */;
+// Module 20728 (UserApplicationIdentityManager)
+import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 12172 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
 import size from "module_2" /* 2 */;
 

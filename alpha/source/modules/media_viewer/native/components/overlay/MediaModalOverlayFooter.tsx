@@ -1,17 +1,17 @@
-// Module ID: 15099
-// Function ID: 15100
+// Module ID: 15096
+// Function ID: 15097
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5243, 575, 1652, 12362, 5485, 1187, 15100, 5535, 1705, 7351, 5838, 15101, 15091, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1652, 12356, 5485, 1187, 15097, 5535, 1705, 7351, 5838, 15098, 15088, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 15099 (MediaModalOverlayFooter)
+// Module 15096 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import timing_timing from "timing/timing" /* 5485 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 12362 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 12356 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,7 +28,7 @@ let tmp3;
 const _mod1652 = tmp(1652);
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "__closure" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "Array" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "WireType" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;

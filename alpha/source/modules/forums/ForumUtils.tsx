@@ -1,14 +1,14 @@
-// Module ID: 8929
-// Function ID: 8930
+// Module ID: 8928
+// Function ID: 8929
 // Name: ForumUtils
-// Dependencies: [5092, 5114, 6952, 8930, 5099, 1113, 5101, 2]
+// Dependencies: [5092, 5114, 6952, 8929, 5099, 1113, 5101, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 8929 (ForumUtils)
+// Module 8928 (ForumUtils)
 import intl2 from "intl" /* 1113 */;
 import ChannelConstants from "ChannelConstants" /* 5099 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 5101 */;
-import ForumConstants from "ForumConstants" /* 8930 */;
+import ForumConstants from "ForumConstants" /* 8929 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import ReadStateStore from "ReadStateStore" /* 6952 */;

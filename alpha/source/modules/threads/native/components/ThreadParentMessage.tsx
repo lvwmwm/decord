@@ -1,16 +1,16 @@
-// Module ID: 19241
-// Function ID: 19242
+// Module ID: 19236
+// Function ID: 19237
 // Name: ThreadParentMessage
-// Dependencies: [19, 8677, 6309, 21, 9093, 504, 7364, 1099, 11002, 2]
+// Dependencies: [19, 8677, 6309, 21, 9092, 504, 7364, 1099, 10996, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 19241 (ThreadParentMessage)
+// Module 19236 (ThreadParentMessage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import router_utils from "router_utils" /* 1099 */;
 import ReferencedMessageStore2 from "ReferencedMessageStore" /* 8677 */;
-import RowGeneratorDefault from "RowGenerator" /* 9093 */;
-import ChatItemDefault from "ChatItem" /* 11002 */;
+import RowGeneratorDefault from "RowGenerator" /* 9092 */;
+import ChatItemDefault from "ChatItem" /* 10996 */;
 import react from "react" /* 19 */;
 import MessageStore from "MessageStore" /* 6309 */;
 import size from "module_2" /* 2 */;

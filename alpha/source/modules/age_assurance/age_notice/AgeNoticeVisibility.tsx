@@ -1,10 +1,10 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 17119
+// Function ID: 17120
 // Name: AgeNoticeVisibility
 // Dependencies: [1385, 2116, 5932, 6772, 504, 2]
 // Exports: shouldShowAgeNotice, useShouldShowAgeNotice, useShouldShowAgeNoticePromo
 
-// Module 17124 (AgeNoticeVisibility)
+// Module 17119 (AgeNoticeVisibility)
 import get_initialized from "get initialized" /* 504 */;
 import Server from "Server" /* 2116 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5932 */;

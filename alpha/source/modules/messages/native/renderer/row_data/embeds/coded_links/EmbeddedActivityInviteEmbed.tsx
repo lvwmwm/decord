@@ -1,10 +1,10 @@
-// Module ID: 15457
-// Function ID: 15458
+// Module ID: 15454
+// Function ID: 15455
 // Name: EmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 5091, 7250, 2162, 502, 5092, 5989, 5185, 1385, 11831, 7599, 572, 7249, 9104, 7968, 1113, 5891, 15458, 2]
+// Dependencies: [32, 17, 5091, 7250, 2162, 502, 5092, 5989, 5185, 1385, 11825, 7599, 572, 7249, 9103, 7968, 1113, 5891, 15455, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 15457 (EmbeddedActivityInviteEmbed)
+// Module 15454 (EmbeddedActivityInviteEmbed)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl6 from "intl" /* 1113 */;
@@ -13,9 +13,9 @@ import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7249 */;
 import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 7250 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 7599 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9104 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 11831 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15458 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9103 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 11825 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15455 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;

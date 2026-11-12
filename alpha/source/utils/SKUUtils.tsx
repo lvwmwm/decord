@@ -1,10 +1,10 @@
-// Module ID: 10252
-// Function ID: 10253
+// Module ID: 10250
+// Function ID: 10251
 // Name: SKUUtils
 // Dependencies: [32, 1072, 5291, 1113, 6703, 1377, 2166, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 10252 (SKUUtils)
+// Module 10250 (SKUUtils)
 import intl71 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _modDef2166 from "module_2166" /* 2166 */;

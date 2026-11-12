@@ -1,11 +1,11 @@
 // Module ID: 12130
 // Function ID: 12131
 // Name: default_1
-// Dependencies: [12093]
+// Dependencies: [12087]
 // Exports: default
 
 // Module 12130 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 12093 */;
+import captureStackTrace2 from "captureStackTrace" /* 12087 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "Ugyldig input: forventet instanceof " + code.expected + ", fikk " + tmp48;
+                combined = "Neveljaven vnos: pri\u010Dakovano instanceof " + code.expected + ", prejeto " + tmp48;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "Ugyldig input: forventet " + expected + ", fikk " + tmp48;
+                combined = "Neveljaven vnos: pri\u010Dakovano " + expected + ", prejeto " + tmp48;
               }
               return combined;
             }
@@ -121,10 +121,10 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Ugyldig verdi: forventet " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Neveljaven vnos: pri\u010Dakovano " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Ugyldig valg: forventet en av " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "Neveljavna mo\u017Enost: pri\u010Dakovano eno izmed " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
@@ -138,21 +138,21 @@ export default function default_1() {
               let str25 = code.origin;
               if (obj2[code.origin] ?? null) {
                 if (str25 == null) {
-                  str25 = "value";
+                  str25 = "vrednost";
                 }
                 const str30 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
                 const str1 = str30.toString();
-                const str31 = (obj2[code.origin] ?? null).unit ?? "elementer";
-                combined2 = "For stor(t): forventet " + str25 + " til \u00E5 ha " + str24 + str1 + " " + str31;
+                const str31 = (obj2[code.origin] ?? null).unit ?? "elementov";
+                combined2 = "Preveliko: pri\u010Dakovano, da bo " + str25 + " imelo " + str24 + str1 + " " + str31;
               } else {
                 let str26 = str25;
                 if (str25 == null) {
-                  str26 = "value";
+                  str26 = "vrednost";
                 }
                 const _HermesInternal12 = HermesInternal;
                 const str27 = code.maximum;
-                combined2 = "For stor(t): forventet " + str26 + " til \u00E5 ha " + str24 + str27.toString();
+                combined2 = "Preveliko: pri\u010Dakovano, da bo " + str26 + " " + str24 + str27.toString();
               }
               return combined2;
             }
@@ -169,10 +169,10 @@ export default function default_1() {
               const str45 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "For lite(n): forventet " + origin + " til \u00E5 ha " + str18 + str45 + " " + tmp15.unit;
+                combined3 = "Premajhno: pri\u010Dakovano, da bo " + origin + " imelo " + str18 + str45 + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "For lite(n): forventet " + origin + " til \u00E5 ha " + str18 + str45;
+                combined3 = "Premajhno: pri\u010Dakovano, da bo " + origin + " " + str18 + str45;
               }
               return combined3;
             }
@@ -181,61 +181,61 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Ugyldig streng: m\u00E5 starte med \"" + code.prefix + "\"";
+                combined4 = "Neveljaven niz: mora se za\u010Deti z \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Ugyldig streng: m\u00E5 ende med \"" + code.suffix + "\"";
+                combined4 = "Neveljaven niz: mora se kon\u010Dati z \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Ugyldig streng: m\u00E5 inneholde \"" + code.includes + "\"";
+                combined4 = "Neveljaven niz: mora vsebovati \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Ugyldig streng: m\u00E5 matche m\u00F8nsteret " + code.pattern;
+                combined4 = "Neveljaven niz: mora ustrezati vzorcu " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "Ugyldig " + format;
+                combined4 = "Neveljaven " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Ugyldig tall: m\u00E5 v\u00E6re et multiplum av " + code.divisor;
+              return "Neveljavno \u0161tevilo: mora biti ve\u010Dkratnik " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str3 = "Ukjent n\u00F8kkel";
+              let str3 = " klju\u010D";
               if (code.keys.length > 1) {
-                str3 = "Ukjente n\u00F8kler";
+                str3 = "i klju\u010Di";
               }
               const _HermesInternal3 = HermesInternal;
-              return "" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Neprepoznan" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "Ugyldig n\u00F8kkel i " + code.origin;
+              return "Neveljaven klju\u010D v " + code.origin;
             }
             case "invalid_union":
             {
-              return "Ugyldig input";
+              return "Neveljaven vnos";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "Ugyldig verdi i " + code.origin;
+              return "Neveljavna vrednost v " + code.origin;
             }
             default:
             {
-              return "Ugyldig input";
+              return "Neveljaven vnos";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "tegn", verb: "\u00E5 ha" }, file: { unit: "bytes", verb: "\u00E5 ha" }, array: { unit: "elementer", verb: "\u00E5 inneholde" }, set: { unit: "elementer", verb: "\u00E5 inneholde" } };
-    closure_1 = { regex: "input", email: "e-postadresse", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dato- og klokkeslett", date: "ISO-dato", time: "ISO-klokkeslett", duration: "ISO-varighet", ipv4: "IPv4-omr\u00E5de", ipv6: "IPv6-omr\u00E5de", cidrv4: "IPv4-spekter", cidrv6: "IPv6-spekter", base64: "base64-enkodet streng", base64url: "base64url-enkodet streng", json_string: "JSON-streng", e164: "E.164-nummer", jwt: "JWT", template_literal: "input" };
-    let closure_2 = { nan: "NaN", number: "tall", array: "liste" };
+    const obj2 = { string: { unit: "znakov", verb: "imeti" }, file: { unit: "bajtov", verb: "imeti" }, array: { unit: "elementov", verb: "imeti" }, set: { unit: "elementov", verb: "imeti" } };
+    closure_1 = { regex: "vnos", email: "e-po\u0161tni naslov", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datum in \u010Das", date: "ISO datum", time: "ISO \u010Das", duration: "ISO trajanje", ipv4: "IPv4 naslov", ipv6: "IPv6 naslov", cidrv4: "obseg IPv4", cidrv6: "obseg IPv6", base64: "base64 kodiran niz", base64url: "base64url kodiran niz", json_string: "JSON niz", e164: "E.164 \u0161tevilka", jwt: "JWT", template_literal: "vnos" };
+    let closure_2 = { nan: "NaN", number: "\u0161tevilo", array: "tabela" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

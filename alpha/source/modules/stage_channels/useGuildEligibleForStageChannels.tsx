@@ -1,10 +1,10 @@
-// Module ID: 19512
-// Function ID: 19513
+// Module ID: 19507
+// Function ID: 19508
 // Name: useGuildEligibleForStageChannels
 // Dependencies: [5114, 1072, 504, 2]
 // Exports: isGuildEligibleForStageChannels, useGuildEligibleForStageChannels
 
-// Module 19512 (useGuildEligibleForStageChannels)
+// Module 19507 (useGuildEligibleForStageChannels)
 import Constants from "Constants" /* 1072 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import size from "module_2" /* 2 */;

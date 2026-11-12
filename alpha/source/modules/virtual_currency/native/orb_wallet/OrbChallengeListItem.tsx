@@ -1,16 +1,16 @@
-// Module ID: 17421
-// Function ID: 17422
+// Module ID: 17416
+// Function ID: 17417
 // Name: OrbChallengeListItem
-// Dependencies: [5, 32, 19, 17, 21, 5243, 575, 16127, 1113, 2317, 15147, 10090, 5873, 7897, 5866, 9375, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5243, 575, 16122, 1113, 2317, 15144, 10089, 5873, 7897, 5866, 9374, 2]
 // Exports: OrbChallengeListItem
 
-// Module 17421 (OrbChallengeListItem)
+// Module 17416 (OrbChallengeListItem)
 import nativeDefault from "native" /* 575 */;
 import _modDef2317 from "module_2317" /* 2317 */;
-import OrbsIcon2 from "OrbsIcon" /* 9375 */;
-import _modDef10090 from "module_10090" /* 10090 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 15147 */;
-import OrbChallengeTypes from "OrbChallengeTypes" /* 16127 */;
+import OrbsIcon2 from "OrbsIcon" /* 9374 */;
+import _modDef10089 from "module_10089" /* 10089 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 15144 */;
+import OrbChallengeTypes from "OrbChallengeTypes" /* 16122 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -42,7 +42,7 @@ function OrbChallengeAsset(achievementStatus) {
   if (achievementStatus !== OrbChallengeTypes.UserAchievementStatus.COMPLETED) {
     let tmp8;
     if (achievementStatus !== OrbChallengeTypes.UserAchievementStatus.CLAIMED) {
-      size = { assetUrl: _modDef10090, isAnimatedAsset, height: 40, width: 40 };
+      size = { assetUrl: _modDef10089, isAnimatedAsset, height: 40, width: 40 };
       const tmp6 = QuestDockRewardTileDefault;
       tmp8 = metroImportAll(tmp6, size);
     }
@@ -50,7 +50,7 @@ function OrbChallengeAsset(achievementStatus) {
   }
   const obj = { style: tmp.completedRing, accessible: true, accessibilityLabel: intl.string(_modDef2317.k6h2J3), children: metroImportAll(tmp9, size1) };
   intl = tmp2(1113).intl;
-  size1 = { assetUrl: _modDef10090, isAnimatedAsset, height: 32, width: 32, style: tmp.completedTile };
+  size1 = { assetUrl: _modDef10089, isAnimatedAsset, height: 32, width: 32, style: tmp.completedTile };
   tmp9 = QuestDockRewardTileDefault;
   tmp8 = metroImportAll(metroImportDefault, obj);
 }

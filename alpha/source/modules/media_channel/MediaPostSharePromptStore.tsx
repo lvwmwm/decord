@@ -1,13 +1,13 @@
-// Module ID: 9102
-// Function ID: 9103
+// Module ID: 9101
+// Function ID: 9102
 // Name: MediaPostSharePromptStore
-// Dependencies: [5147, 502, 5092, 9103, 11, 504, 572, 2]
+// Dependencies: [5147, 502, 5092, 9102, 11, 504, 572, 2]
 
-// Module 9102 (MediaPostSharePromptStore)
+// Module 9101 (MediaPostSharePromptStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 9103 */;
+import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 9102 */;
 import GatedChannelStore from "GatedChannelStore" /* 5147 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5092 */;

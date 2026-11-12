@@ -1,17 +1,17 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15689
+// Function ID: 15690
 // Name: useConjureServerWidgetOffers
-// Dependencies: [5, 19, 12180, 5114, 1385, 6954, 559, 6955, 12181, 1282, 504, 1449, 7197, 7265, 12054, 7293, 15693, 15694, 2]
+// Dependencies: [5, 19, 12174, 5114, 1385, 6954, 559, 6955, 12175, 1282, 504, 1449, 7197, 7265, 12048, 7293, 15690, 15691, 2]
 // Exports: default
 
-// Module 15692 (useConjureServerWidgetOffers)
+// Module 15689 (useConjureServerWidgetOffers)
 import BackoffDefault from "Backoff" /* 559 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6955 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7293 */;
-import useAddableWidgets from "useAddableWidgets" /* 15694 */;
+import useAddableWidgets from "useAddableWidgets" /* 15691 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 12180 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 12174 */;
 import GuildStore from "GuildStore" /* 5114 */;
 import UserStore from "UserStore" /* 1385 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
@@ -104,7 +104,7 @@ let obj = function _loadWidgetConfigs() {
                       closure_0 = undefined;
                       if (closure_0()) {
                         c6 = 3;
-                        const obj5 = { value: { v: "Array" }, done: true };
+                        const obj5 = { value: { v: "r" }, done: true };
                         return obj5;
                       } else {
                         c4 = 1;
@@ -159,7 +159,7 @@ let obj = function _loadWidgetConfigs() {
                         return obj10;
                       } else if (closure_130_0()) {
                         c6 = 3;
-                        const obj11 = { value: { v: "Array" }, done: true };
+                        const obj11 = { value: { v: "r" }, done: true };
                         return obj11;
                       } else {
                         c4 = 2;

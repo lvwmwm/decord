@@ -1,16 +1,16 @@
-// Module ID: 9903
-// Function ID: 9904
+// Module ID: 9902
+// Function ID: 9903
 // Name: useAppleSubscriptionOwnership
-// Dependencies: [32, 19, 9904, 2117, 9236, 1072, 504, 1377, 9905, 2]
+// Dependencies: [32, 19, 9903, 2117, 9235, 1072, 504, 1377, 9904, 2]
 // Exports: useAppleSubscriptionOwnership
 
-// Module 9903 (useAppleSubscriptionOwnership)
+// Module 9902 (useAppleSubscriptionOwnership)
 import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplePurchasesStore from "ApplePurchasesStore" /* 9904 */;
+import ApplePurchasesStore from "ApplePurchasesStore" /* 9903 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import IAPStore from "IAPStore" /* 9236 */;
+import IAPStore from "IAPStore" /* 9235 */;
 import size from "module_2" /* 2 */;
 
 let c0, closure_4;

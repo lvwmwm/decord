@@ -1,10 +1,10 @@
-// Module ID: 9119
-// Function ID: 9120
+// Module ID: 9118
+// Function ID: 9119
 // Name: EmojiColorUtils
 // Dependencies: [5240, 5241, 671, 5199, 2]
 // Exports: buildEmojiColorPalette
 
-// Module 9119 (EmojiColorUtils)
+// Module 9118 (EmojiColorUtils)
 import _modDef671 from "module_671" /* 671 */;
 import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 5199 */;
 import ColorUtils from "ColorUtils" /* 5240 */;

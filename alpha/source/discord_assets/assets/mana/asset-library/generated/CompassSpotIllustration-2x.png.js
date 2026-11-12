@@ -1,8 +1,8 @@
-// Module ID: 19424
-// Function ID: 19425
+// Module ID: 19419
+// Function ID: 19420
 // Dependencies: [2]
 
-// Module 19424
+// Module 19419
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CompassSpotIllustration-2x.png.js");

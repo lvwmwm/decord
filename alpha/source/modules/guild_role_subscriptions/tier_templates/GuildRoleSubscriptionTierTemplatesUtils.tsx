@@ -1,28 +1,28 @@
-// Module ID: 17735
-// Function ID: 17736
+// Module ID: 17730
+// Function ID: 17731
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 5092, 5168, 17730, 17736, 1072, 5099, 563, 1403, 572, 8061, 7212, 16216, 2]
+// Dependencies: [5, 19, 5092, 5168, 17725, 17731, 1072, 5099, 563, 1403, 572, 8061, 7212, 16211, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 17735 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 17730 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import FlagUtilsAll from "FlagUtils" /* 1403 */;
 import ChannelConstants from "ChannelConstants" /* 5099 */;
 import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7212 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17730 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17725 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5092 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 5168 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17736 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17731 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(16216);
+const GuildRoleSubscriptionsExperimentUtils = tmp(16211);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;

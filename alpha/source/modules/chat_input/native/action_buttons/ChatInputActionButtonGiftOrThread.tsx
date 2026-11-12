@@ -1,16 +1,16 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14540
+// Function ID: 14541
 // Name: ChatInputActionButtonGiftOrThread
-// Dependencies: [19, 17, 13703, 21, 5243, 13702, 13699, 1113, 14537, 14545, 5839, 575, 5314, 2]
+// Dependencies: [19, 17, 13699, 21, 5243, 13698, 13695, 1113, 14533, 14541, 5839, 575, 5314, 2]
 
-// Module 14544 (ChatInputActionButtonGiftOrThread)
+// Module 14540 (ChatInputActionButtonGiftOrThread)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5839 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13699 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13702 */;
-import ChatInputConstants from "ChatInputConstants" /* 13703 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13695 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13698 */;
+import ChatInputConstants from "ChatInputConstants" /* 13699 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5243 */;
 import size_mod from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
       accessible,
       accessibilityLabel: intl.string(onPress(1113).t["4WNcpu"]),
       disabled: !canStartThreads,
-      IconComponent: onPress(14537).ThreadPlusIcon,
+      IconComponent: onPress(14533).ThreadPlusIcon,
       onPress(arg0) {
           return onPress(arg0, ChatInputActionType.THREAD);
         },
@@ -44,7 +44,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     tmpResult = tmp(tmp2Result, obj2);
   } else {
     const obj3 = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmpResult = tmp(tmp2(14545), obj3);
+    tmpResult = tmp(tmp2(14541), obj3);
   }
   return <tmp4 key={arg0} cleanup={arg3} state={arg2}>{tmpResult}</tmp4>;
 }

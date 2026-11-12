@@ -1,9 +1,9 @@
-// Module ID: 10937
-// Function ID: 10938
+// Module ID: 10931
+// Function ID: 10932
 // Name: ChannelCollapseActionCreators
 // Dependencies: [6895, 572, 7814, 2]
 
-// Module 10937 (ChannelCollapseActionCreators)
+// Module 10931 (ChannelCollapseActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7814 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;

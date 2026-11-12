@@ -1,14 +1,14 @@
-// Module ID: 13635
-// Function ID: 13636
+// Module ID: 13629
+// Function ID: 13630
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 5243, 575, 1113, 4079, 13636, 13637, 13474, 7553, 13113, 5866, 7922, 7483, 13638, 7680, 7667, 7381, 13642, 5873, 13646, 2]
+// Dependencies: [32, 19, 17, 21, 5243, 575, 1113, 4079, 13630, 13631, 13468, 7553, 13107, 5866, 7922, 7483, 13632, 7680, 7667, 7381, 13636, 5873, 13640, 2]
 // Exports: default
 
-// Module 13635 (ConjureClarificationCard)
+// Module 13629 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureClarification from "ConjureClarification" /* 13474 */;
-import ConjureImageOptions from "ConjureImageOptions" /* 13636 */;
+import ConjureClarification from "ConjureClarification" /* 13468 */;
+import ConjureImageOptions from "ConjureImageOptions" /* 13630 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -85,7 +85,7 @@ export default function ConjureClarificationCard(projectId) {
   let tmp71;
   let tmp72;
   let tmp8;
-  const f106914 = () => {
+  const f106921 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -130,8 +130,8 @@ export default function ConjureClarificationCard(projectId) {
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f106914), 2);
-  const tmp9 = _slicedToArray(react.useState(f106914), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f106921), 2);
+  const tmp9 = _slicedToArray(react.useState(f106921), 2);
   [tmp12, c10] = _slicedToArray(react.useState({}), 2);
   const tmp11 = _slicedToArray(react.useState({}), 2);
   [first1, closure_12] = react.useState({});
@@ -172,7 +172,7 @@ export default function ConjureClarificationCard(projectId) {
       const result = obj.followingClarificationStep(clarification, arg0, bound);
       const tmp3 = require;
       if (null == result) {
-        const tmp3Result = tmp3(13474);
+        const tmp3Result = tmp3(13468);
         result1 = tmp3Result.submitClarificationAnswers(projectId, tmp5, arg0, first1, tmp);
       } else {
         closure_13(result);

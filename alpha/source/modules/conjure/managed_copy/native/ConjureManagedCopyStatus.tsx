@@ -1,14 +1,14 @@
-// Module ID: 13109
-// Function ID: 13110
+// Module ID: 13103
+// Function ID: 13104
 // Name: ConjureManagedCopyStatus
-// Dependencies: [19, 21, 13099, 6274, 575, 5866, 1113, 4079, 13110, 2]
+// Dependencies: [19, 21, 13093, 6274, 575, 5866, 1113, 4079, 13104, 2]
 // Exports: default
 
-// Module 13109 (ConjureManagedCopyStatus)
+// Module 13103 (ConjureManagedCopyStatus)
 import nativeDefault from "native" /* 575 */;
 import _modDef4079 from "module_4079" /* 4079 */;
-import useConjureManagedCopy from "useConjureManagedCopy" /* 13099 */;
-import conjureManagedCopyStatusText from "conjureManagedCopyStatusText" /* 13110 */;
+import useConjureManagedCopy from "useConjureManagedCopy" /* 13093 */;
+import conjureManagedCopyStatusText from "conjureManagedCopyStatusText" /* 13104 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

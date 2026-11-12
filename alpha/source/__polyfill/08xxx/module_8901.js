@@ -3,13 +3,13 @@
 // Dependencies: []
 
 // Module 8901
-const obj = { 4: null };
+const obj = { 0: null, 5: "PentaxModelID", 555: "LevelInfo" };
 const obj2 = {
-  name: "ShotInfo",
-  description(arg0) {
-    return arg0;
+  name: "PentaxVersion",
+  description(join) {
+    return join.join(".");
   }
 };
-obj[4] = obj2;
+obj[0] = obj2;
 
 export default obj;

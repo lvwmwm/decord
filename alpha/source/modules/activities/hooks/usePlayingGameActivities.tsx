@@ -1,11 +1,11 @@
-// Module ID: 10583
-// Function ID: 10584
+// Module ID: 10581
+// Function ID: 10582
 // Name: usePlayingGameActivities
-// Dependencies: [19, 502, 6005, 7252, 504, 10584, 2]
+// Dependencies: [19, 502, 6005, 7252, 504, 10582, 2]
 // Exports: default
 
-// Module 10583 (usePlayingGameActivities)
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 10584 */;
+// Module 10581 (usePlayingGameActivities)
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 10582 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 6005 */;

@@ -1,14 +1,14 @@
-// Module ID: 12439
-// Function ID: 12440
+// Module ID: 12433
+// Function ID: 12434
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 5092, 5175, 5185, 1385, 10511, 1072, 21, 5243, 563, 12440, 12441, 8066, 12444, 12448, 7758, 12450, 12459, 12460, 1113, 10919, 10918, 5285, 5076, 12462, 12467, 10502, 12468, 2017, 8394, 6274, 8043, 7374, 12472, 2549, 2]
+// Dependencies: [32, 19, 17, 5092, 5175, 5185, 1385, 10509, 1072, 21, 5243, 563, 12434, 12435, 8066, 12438, 12442, 7758, 12444, 12453, 12454, 1113, 10913, 10912, 5285, 5076, 12456, 12461, 10500, 12462, 2017, 8394, 6274, 8043, 7374, 12466, 2549, 2]
 // Exports: default
 
-// Module 12439 (useMemberListAction)
+// Module 12433 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10511 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12440 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12450 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10509 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12434 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12444 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5092 */;

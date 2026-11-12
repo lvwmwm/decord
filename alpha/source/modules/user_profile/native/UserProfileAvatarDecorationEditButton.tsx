@@ -1,15 +1,15 @@
-// Module ID: 17002
-// Function ID: 17003
+// Module ID: 16997
+// Function ID: 16998
 // Name: UserProfileAvatarDecorationEditButton
-// Dependencies: [19, 17, 5155, 7896, 1083, 21, 5243, 575, 504, 8557, 8475, 11772, 9328, 1113, 16981, 9436, 1187, 15417, 2]
+// Dependencies: [19, 17, 5155, 7896, 1083, 21, 5243, 575, 504, 8557, 8475, 11766, 9327, 1113, 16976, 9435, 1187, 15414, 2]
 // Exports: default
 
-// Module 17002 (UserProfileAvatarDecorationEditButton)
+// Module 16997 (UserProfileAvatarDecorationEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import Constants2 from "Constants" /* 7896 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 9328 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 9327 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildMemberStore from "GuildMemberStore" /* 5155 */;

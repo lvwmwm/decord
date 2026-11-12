@@ -1,27 +1,26 @@
-// Module ID: 16732
-// Function ID: 16733
+// Module ID: 16727
+// Function ID: 16728
 // Name: ICYMISessionStore
-// Dependencies: [5469, 1246, 9280, 502, 10137, 1266, 16733, 504, 572, 2]
+// Dependencies: [5469, 1246, 502, 10136, 1266, 16728, 504, 572, 2]
 // Exports: resetGlobalState
 
-// Module 16732 (ICYMISessionStore)
+// Module 16727 (ICYMISessionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import v1 from "v1" /* 1266 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16733 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16728 */;
 import ExperimentStore from "ExperimentStore" /* 5469 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import LabFeatureStore from "LabFeatureStore" /* 9280 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ICYMIStore from "ICYMIStore" /* 10137 */;
+import ICYMIStore from "ICYMIStore" /* 10136 */;
 import size from "module_2" /* 2 */;
 
-let _null, c10, set;
+let _null, c9, set;
 
-let c7 = 300000;
-let c8 = null;
-let closure_9 = [];
-const authStore = 0;
+let c6 = 300000;
+let c7 = null;
+let closure_8 = [];
+const React4 = 0;
 const map = new Map();
 class ICYMISession {
   constructor(items, focus) {
@@ -52,7 +51,7 @@ class ICYMISession {
     obj._actionCount = 0;
     obj._latestDwellStartTimeMs = 0;
     new Set();
-    obj._timeout = setTimeout(() => obj.endSession(), c7);
+    obj._timeout = setTimeout(() => obj.endSession(), c6);
     const ICYMIAnalytics = ICYMIAnalytics2.ICYMIAnalytics;
     const obj3 = { icymiSessionId: obj._sessionId, sessionStartTimeMs: obj._startTimestamp, previousIcymiSessionCount, uxVariation: ICYMIAnalytics2.DEFAULT_UX_VARIATION };
     const result = ICYMIAnalytics.trackFeedSessionStarted(obj3);
@@ -73,7 +72,7 @@ class ICYMISession {
   startItemsDwell(arr) {
     const self = this;
     this._resetTimeout();
-    closure_9 = arr;
+    closure_8 = arr;
     if (arr.length === this._activeItems.length) {
       if (arr.every((itemId, index) => self._activeItems[index].itemId === itemId.itemId)) {
         return self._activeItems;
@@ -148,7 +147,7 @@ class ICYMISession {
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, uxVariation } = tmp7);
       if (uxVariation == null) {
-        uxVariation = tmp11(16733).DEFAULT_UX_VARIATION;
+        uxVariation = tmp11(16728).DEFAULT_UX_VARIATION;
       }
       let trackFeedItemDwell1sResult = trackFeedItemDwell1s(obj);
       continue;
@@ -273,14 +272,14 @@ class ICYMISession {
     const result = ICYMIAnalytics.trackFeedSessionCompleted(obj);
     clearTimeout(this._timeout);
     previousIcyMiSessionCount = previousIcyMiSessionCount + 1;
-    let c8 = null;
+    let c7 = null;
     map.clear();
     return this;
   }
   _resetTimeout() {
     const self = this;
     clearTimeout(this._timeout);
-    this._timeout = setTimeout(() => self.endSession(), c7);
+    this._timeout = setTimeout(() => self.endSession(), c6);
   }
   _createImpression(itemId) {
     let _dwelledItemIdMap;
@@ -344,7 +343,7 @@ class ICYMISession {
       }
       DEFAULT_UX_VARIATION = tmp2.uxVariation;
       if (DEFAULT_UX_VARIATION == null) {
-        DEFAULT_UX_VARIATION = tmp5(16733).DEFAULT_UX_VARIATION;
+        DEFAULT_UX_VARIATION = tmp5(16728).DEFAULT_UX_VARIATION;
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, sessionImpressionIndex: obj.sessionImpressionIndex } = this._activeItems[findIndexResult]);
       trackFeedItemDwelled(obj);
@@ -431,19 +430,19 @@ Object.defineProperty(prototype, "impressionItemTypes", {
 const Store = get_initializedDefault.Store;
 class ICYMISessionStore extends Store {
   initialize() {
-    this.waitFor(ApexExperimentStore, AuthenticationStore, ICYMIStore, ExperimentStore, LabFeatureStore);
+    this.waitFor(ApexExperimentStore, AuthenticationStore, ICYMIStore, ExperimentStore);
   }
 }
 const prototype2 = ICYMISessionStore.prototype;
 Object.defineProperty(prototype2, "currentSession", {
   get: function currentSession() {
-    return c8;
+    return c7;
   },
   set: undefined
 });
 Object.defineProperty(prototype2, "endedSessionCount", {
   get: function endedSessionCount() {
-    return c10;
+    return c9;
   },
   set: undefined
 });
@@ -454,9 +453,9 @@ let obj = {
       _null.endSession();
       flag = true;
     }
-    if (closure_9.length > 0) {
+    if (closure_8.length > 0) {
       const self = this;
-      _null = new ICYMISession(closure_9, "focus");
+      _null = new ICYMISession(closure_8, "focus");
       flag = true;
     }
     return flag;
@@ -472,8 +471,8 @@ let obj = {
   ICYMI_SET_FOCUSED_TAB: function handleIcymiTabFocussed(focused) {
     if (focused.focused) {
       if (null != _null) {
-        if (closure_9.length > 0) {
-          _null.startItemsDwell(closure_9.map((item) => {
+        if (closure_8.length > 0) {
+          _null.startItemsDwell(closure_8.map((item) => {
             const obj = { triggerType: "focus", isInitiallyVisible: true };
             const merged = Object.assign(item);
             return obj;
@@ -488,9 +487,9 @@ let obj = {
           _null.endSession();
           flag2 = true;
         }
-        if (closure_9.length > 0) {
+        if (closure_8.length > 0) {
           const self = this;
-          _null = new ICYMISession(closure_9, "focus");
+          _null = new ICYMISession(closure_8, "focus");
           flag2 = true;
         }
         return flag2;
@@ -572,7 +571,7 @@ let obj = {
   ICYMI_ITEM_INTERACTED: function handleItemInteracted(press_comments) {
     if (null == _null) {
       const self = this;
-      _null = new ICYMISession(closure_9, "focus");
+      _null = new ICYMISession(closure_8, "focus");
     }
     _null.trackItemInteraction(press_comments.itemId, press_comments.itemType, press_comments.actionType);
     return true;
@@ -580,7 +579,7 @@ let obj = {
   ICYMI_FEED_ITEM_ACTIONED: function handleFeedItemActioned(arg0) {
     if (null == _null) {
       const self = this;
-      _null = new ICYMISession(closure_9, "focus");
+      _null = new ICYMISession(closure_8, "focus");
     }
     const result = _null.trackFeedItemActioned(arg0);
     return true;
@@ -588,7 +587,7 @@ let obj = {
   ICYMI_FEED_FILTER_ACTIONED: function handleFeedFilterActioned(arg0) {
     if (null == _null) {
       const self = this;
-      _null = new ICYMISession(closure_9, "focus");
+      _null = new ICYMISession(closure_8, "focus");
     }
     const result = _null.trackFeedFilterActioned(arg0);
     return true;
@@ -596,7 +595,7 @@ let obj = {
   ICYMI_FEED_PAGE_ACTIONED: function handleFeedPageActioned(arg0) {
     if (null == _null) {
       const self = this;
-      _null = new ICYMISession(closure_9, "focus");
+      _null = new ICYMISession(closure_8, "focus");
     }
     const result = _null.trackFeedPageActioned(arg0);
     return true;
@@ -612,8 +611,8 @@ export function resetGlobalState() {
     clearTimeout(_null._timeout);
   }
   _null = null;
-  closure_9 = [];
-  c10 = 0;
+  closure_8 = [];
+  c9 = 0;
   map.clear();
 }
 export { ICYMISession };

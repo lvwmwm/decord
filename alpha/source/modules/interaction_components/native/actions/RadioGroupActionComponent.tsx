@@ -1,9 +1,9 @@
-// Module ID: 20123
-// Function ID: 20124
+// Module ID: 20118
+// Function ID: 20119
 // Name: RadioGroupActionComponent
 // Dependencies: [19, 21, 8591, 1652, 5876, 5877, 7679, 7681, 7379, 7483, 1113, 2]
 
-// Module 20123 (RadioGroupActionComponent)
+// Module 20118 (RadioGroupActionComponent)
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

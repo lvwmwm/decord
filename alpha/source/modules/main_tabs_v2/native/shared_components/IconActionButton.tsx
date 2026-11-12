@@ -1,15 +1,15 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15507
+// Function ID: 15508
 // Name: IconActionButton
-// Dependencies: [19, 21, 5243, 575, 1377, 1187, 5881, 7364, 5866, 8991, 2]
+// Dependencies: [19, 21, 5243, 575, 1377, 1187, 5881, 7364, 5866, 8990, 2]
 // Exports: default
 
-// Module 15510 (IconActionButton)
+// Module 15507 (IconActionButton)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useFontScale from "useFontScale" /* 5881 */;
-import shared_components_Badge from "shared_components/Badge" /* 8991 */;
+import shared_components_Badge from "shared_components/Badge" /* 8990 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5243 */;

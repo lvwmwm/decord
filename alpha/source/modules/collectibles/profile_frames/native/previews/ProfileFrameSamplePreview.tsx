@@ -1,10 +1,10 @@
-// Module ID: 9446
-// Function ID: 9447
+// Module ID: 9445
+// Function ID: 9446
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 9422, 7896, 21, 5243, 575, 8521, 5839, 8517, 8501, 7467, 5957, 9447, 2]
+// Dependencies: [19, 17, 9421, 7896, 21, 5243, 575, 8521, 5839, 8517, 8501, 7467, 5957, 9446, 2]
 // Exports: default
 
-// Module 9446 (ProfileFrameSamplePreview)
+// Module 9445 (ProfileFrameSamplePreview)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5839 */;
 import FastImageDefault from "FastImage" /* 5957 */;
@@ -13,8 +13,8 @@ import Constants from "Constants" /* 7896 */;
 import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8501 */;
 import ProfileFrameDefault from "ProfileFrame" /* 8517 */;
 import scaleProfileFrameDefault from "scaleProfileFrame" /* 8521 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9422 */;
-import _modDef9447 from "module_9447" /* 9447 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9421 */;
+import _modDef9446 from "module_9446" /* 9446 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -105,7 +105,7 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   items3[1] = tmp16;
   const obj16 = { style: items3, children: metroRequire(tmp3Result, obj17) };
   obj17 = { source: obj18, style: tmp.sampleProfile, resizeMode: "cover" };
-  obj18 = { uri: _modDef9447 };
+  obj18 = { uri: _modDef9446 };
   tmp3Result = FastImageDefault;
   items2[1] = metroRequire(React3, obj16);
   const obj19 = { frame: profileFrame, filterLayer: tmp10, profileThemeType: tmp11.PREVIEW, frameOrder: ProfileFrameLayerOrder.ProfileFrameLayerOrder.FRONT, containerWidth: result, containerHeight: previewHeight - overflowTop - overflowBottom };

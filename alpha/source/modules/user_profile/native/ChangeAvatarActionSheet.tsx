@@ -1,10 +1,10 @@
-// Module ID: 17049
-// Function ID: 17050
+// Module ID: 17044
+// Function ID: 17045
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1385, 1072, 21, 5243, 575, 504, 2171, 7885, 7847, 1113, 9369, 7680, 7379, 8041, 16952, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5243, 575, 504, 2171, 7885, 7847, 1113, 9368, 7680, 7379, 8041, 16947, 2]
 // Exports: default
 
-// Module 17049 (ChangeAvatarActionSheet)
+// Module 17044 (ChangeAvatarActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,7 +13,7 @@ import intl10 from "intl" /* 1113 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7847 */;
 import ActionSheet2 from "ActionSheet" /* 7885 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9369 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9368 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -29,7 +29,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp5;
-const UserProfileUpsellButtonDefault = tmp5(16952);
+const UserProfileUpsellButtonDefault = tmp5(16947);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -92,7 +92,7 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl10.intl;
   if (isPremiumResult) {
-    isPremiumResult = tmp8(tmp2(9369).NitroWheelIcon, {});
+    isPremiumResult = tmp8(tmp2(9368).NitroWheelIcon, {});
   }
   ({ titleWrapper: obj3.titleWrapperStyle, titleContainer: obj3.titleContainerStyle } = tmp);
   const items1 = [metroRequire(BottomSheetTitleHeader, obj4), ];

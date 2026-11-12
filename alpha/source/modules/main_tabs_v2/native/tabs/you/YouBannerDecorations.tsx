@@ -1,10 +1,10 @@
-// Module ID: 10442
-// Function ID: 10443
+// Module ID: 10440
+// Function ID: 10441
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2187, 1385, 5089, 1387, 21, 1357, 575, 5243, 10443, 9239, 5285, 5076, 1113, 504, 8416, 8524, 8535, 5250, 671, 2171, 10444, 10445, 10065, 10447, 10450, 10061, 5278, 10451, 10458, 10495, 10497, 9369, 10502, 10460, 5830, 2]
+// Dependencies: [19, 17, 2187, 1385, 5089, 1387, 21, 1357, 575, 5243, 10441, 9238, 5285, 5076, 1113, 504, 8416, 8524, 8535, 5250, 671, 2171, 10442, 10443, 10064, 10445, 10448, 10060, 5278, 10449, 10456, 10493, 10495, 9368, 10500, 10458, 5830, 2]
 // Exports: getFloatingNavBottomMargin, useHasSettingsBadge
 
-// Module 10442 (YouBannerDecorations)
+// Module 10440 (YouBannerDecorations)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
@@ -14,10 +14,10 @@ import dismissible_content from "dismissible_content" /* 5076 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
 import QuestTypes from "QuestTypes" /* 5278 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5285 */;
-import useTrialOffer from "useTrialOffer" /* 9239 */;
-import QuestUtils from "QuestUtils" /* 10061 */;
-import PromotionsHooks from "PromotionsHooks" /* 10443 */;
-import Tracking from "Tracking" /* 10450 */;
+import useTrialOffer from "useTrialOffer" /* 9238 */;
+import QuestUtils from "QuestUtils" /* 10060 */;
+import PromotionsHooks from "PromotionsHooks" /* 10441 */;
+import Tracking from "Tracking" /* 10448 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;

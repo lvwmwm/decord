@@ -1,10 +1,10 @@
-// Module ID: 10378
-// Function ID: 10379
+// Module ID: 10376
+// Function ID: 10377
 // Name: getProductName
 // Dependencies: [2111, 1113, 8430, 2]
 // Exports: getCardProductName, getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 10378 (getProductName)
+// Module 10376 (getProductName)
 import intl6 from "intl" /* 1113 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8430 */;

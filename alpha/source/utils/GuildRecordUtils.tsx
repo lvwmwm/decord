@@ -14,8 +14,6 @@ import PlainRecord from "PlainRecord" /* 5107 */;
 import GuildRecord from "GuildRecord" /* 5110 */;
 import size from "module_2" /* 2 */;
 
-let vanityURLCode;
-
 let c3;
 let closure_4;
 let hasOwnProperty;
@@ -656,6 +654,7 @@ export function toGuildProperties(id) {
   let tmp4;
   let tmp9;
   let toISOStringResult;
+  let vanityURLCode;
   const obj = { id: id.id, name: id.name, description: id.description, icon: id.icon, splash: id.splash, banner: id.banner, home_header: id.homeHeader, features: Array.from(id.features), preferred_locale: id.preferredLocale, owner_id: id.ownerId, application_id: id.application_id, afk_channel_id: id.afkChannelId, afk_timeout: id.afkTimeout, system_channel_id: id.systemChannelId, verification_level: id.verificationLevel, explicit_content_filter: id.explicitContentFilter, default_message_notifications: id.defaultMessageNotifications, mfa_level: id.mfaLevel, vanity_url_code: vanityURLCode, premium_tier: null, premium_progress_bar_enabled: null, premium_progress_bar_enabled_user_updated_at: toISOStringResult, premium_features: tmp3, system_channel_flags: null, discovery_splash: null, rules_channel_id: null, safety_alerts_channel_id: null, public_updates_channel_id: null, max_stage_video_channel_users: null, max_video_channel_users: null, max_members: null, nsfw_level: null, nsfw: items.includes(id.nsfwLevel), owner_configured_content_level: null, hub_type: null, latest_onboarding_question_id: null, profile: null, theme: tmp4, moderator_reporting: tmp9, guild_space_settings: null, official_message_color: null, incidents_data: obj6.toServerGuildIncidentsData(id.incidentsData), game_application_ids: null, verification_role_id: null, linked_game_organization: tmp10 };
   vanityURLCode = id.vanityURLCode;
   if (vanityURLCode == null) {

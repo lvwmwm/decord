@@ -1,10 +1,10 @@
-// Module ID: 11664
-// Function ID: 11665
+// Module ID: 11658
+// Function ID: 11659
 // Name: useWishlistRecommendations
-// Dependencies: [32, 19, 7288, 502, 11665, 7182, 1089, 504, 9396, 1380, 9404, 9403, 12, 9405, 8417, 11666, 11667, 2]
+// Dependencies: [32, 19, 7288, 502, 11659, 7182, 1089, 504, 9395, 1380, 9403, 9402, 12, 9404, 8417, 11660, 11661, 2]
 // Exports: useRecommendationsForApplicationIds, useRecommendationsForSingleUser, useWishlistRecommendationsForSingleUser
 
-// Module 11664 (useWishlistRecommendations)
+// Module 11658 (useWishlistRecommendations)
 import _mod12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
@@ -14,7 +14,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7288 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 11665 */;
+import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 11659 */;
 import size from "module_2" /* 2 */;
 
 const WishlistRecommendationRecord = WishlistRecommendationRecord2;
@@ -266,7 +266,7 @@ export function useWishlistRecommendationsForSingleUser(arg0) {
   let wishlistAndRecommendations;
   ({ userId, numItems, source } = arg0);
   if (source === undefined) {
-    source = userId(9403).WishlistFetchSource.USER_PROFILE;
+    source = userId(9402).WishlistFetchSource.USER_PROFILE;
   }
   const items = [userId];
   const effect = react.useEffect(() => {
@@ -290,10 +290,10 @@ export function useWishlistRecommendationsForSingleUser(arg0) {
     numItems,
     source
   };
-  obj3 = userId(11666);
+  obj3 = userId(11660);
   ({ skusToUserAndReason, wishlistAndRecommendations, status } = useWishlistRecommendationsWithWishlists(obj2));
   useWishlistRecommendationsWithWishlists(obj2);
-  const obj4 = userId(11667);
+  const obj4 = userId(11661);
   const wishlistSkuFilter = obj4.useWishlistSkuFilter({ wishlistAndRecommendations, skusToUserAndReason, userId, numItems });
   return { wishlistAndRecommendations: wishlistSkuFilter.slicedWishlistAndRecommendations, skusToUserAndReason, status, defaultWishlistId, totalUnownedWishlistItemCount: wishlistSkuFilter.totalUnownedWishlistItemCount };
 }
@@ -355,7 +355,7 @@ export function useRecommendationsForSingleUser(source) {
   ({ userId, numItems } = source);
   let USER_PROFILE = source.source;
   if (USER_PROFILE === undefined) {
-    USER_PROFILE = userId(9403).WishlistFetchSource.USER_PROFILE;
+    USER_PROFILE = userId(9402).WishlistFetchSource.USER_PROFILE;
   }
   let obj = {
     userIdsAndWishlistIds: react.useMemo(() => {
@@ -379,7 +379,7 @@ export function useRecommendationsForSingleUser(source) {
     return obj;
   }).defaultWishlistId;
   items2 = [userId, defaultWishlistId];
-  obj3 = userId(11666);
+  obj3 = userId(11660);
   const tmp4 = useWishlistRecommendationsWithWishlists(obj);
   const recommendations = tmp4.recommendations;
   const obj4 = { recommendations: react.useMemo(() => recommendations.slice(0, numItems), items3), skusToUserAndReason, status };

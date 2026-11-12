@@ -1,36 +1,60 @@
 // Module ID: 13778
 // Function ID: 13779
 // Name: tokenize
-// Dependencies: [13730]
+// Dependencies: [13726]
 
 // Module 13778 (tokenize)
-import tokenize from "tokenize" /* 13730 */;
+import tokenize from "tokenize" /* 13726 */;
 
-let items;
 let obj2;
-const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
-const RightSquareBracket = tokenize.TYPE.RightSquareBracket;
-const obj = {
-  name: "Brackets",
+const Ident = tokenize.TYPE.Ident;
+let obj = {
+  name: "Combinator",
   structure: obj2,
-  parse(call, arg1) {
+  parse() {
+    let scanner3;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftSquareBracket);
-    const callResult = call.call(self, arg1);
-    if (!self.scanner.eof) {
-      self.eat(RightSquareBracket);
+    const source = this.scanner.source;
+    const charCodeAtResult = source.charCodeAt(this.scanner.tokenStart);
+    if (62 !== charCodeAtResult) {
+      if (43 !== charCodeAtResult) {
+        if (126 !== charCodeAtResult) {
+          if (47 === charCodeAtResult) {
+            const iter = self.scanner;
+            iter.next();
+            let tmp5 = self.scanner.tokenType === Ident;
+            if (tmp5) {
+              const scanner = self.scanner;
+              tmp5 = false !== scanner.lookupValue(0, "deep");
+            }
+            if (!tmp5) {
+              self.error("Identifier `deep` is expected");
+            }
+            const iter2 = self.scanner;
+            iter2.next();
+            const scanner2 = self.scanner;
+            if (!scanner2.isDelim(47)) {
+              self.error("Solidus is expected");
+            }
+            const iter3 = self.scanner;
+            iter3.next();
+          } else {
+            self.error("Combinator is expected");
+          }
+        }
+        const obj = { type: "Combinator", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
+        scanner3 = self.scanner;
+        return obj;
+      }
     }
-    const element = { type: "Brackets", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
-    return element;
+    const iter4 = self.scanner;
+    iter4.next();
   },
-  generate(arg0) {
-    this.chunk("[");
-    this.children(arg0);
-    this.chunk("]");
+  generate(name) {
+    this.chunk(name.name);
   }
 };
-obj2 = { children: items };
-items = [[]];
+obj2 = { name: String };
 
 export default obj;
