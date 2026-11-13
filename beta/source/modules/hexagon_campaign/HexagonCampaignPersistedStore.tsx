@@ -8,7 +8,7 @@ import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
-let obj = { hasAppliedPerk: false, hasVisitedDisplayNameStyles: false, previousPerkValues: {} };
+let obj = { hasAppliedPerk: false, hasVisitedDisplayNameStyles: false, previousPerkValues: {}, hasRestoredExpiredClientTheme: false };
 let closure_1 = obj;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class HexagonCampaignPersistedStore extends PersistedStore {
@@ -43,6 +43,12 @@ Object.defineProperty(prototype, "previousPerkValues", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "hasRestoredExpiredClientTheme", {
+  get: function hasRestoredExpiredClientTheme() {
+    return closure_1.hasRestoredExpiredClientTheme;
+  },
+  set: undefined
+});
 HexagonCampaignPersistedStore.displayName = "HexagonCampaignPersistedStore";
 HexagonCampaignPersistedStore.persistKey = "HexagonCampaignPersistedStore";
 const items = [
@@ -68,6 +74,19 @@ const items = [
     }
     if (previousPerkValues == null) {
       previousPerkValues = {};
+    }
+    return obj;
+  },
+  (hasRestoredExpiredClientTheme) => {
+    let flag;
+    obj = { hasRestoredExpiredClientTheme: flag };
+    const merged = Object.assign(hasRestoredExpiredClientTheme);
+    flag = undefined;
+    if (hasRestoredExpiredClientTheme != null) {
+      flag = hasRestoredExpiredClientTheme.hasRestoredExpiredClientTheme;
+    }
+    if (flag == null) {
+      flag = false;
     }
     return obj;
   }
@@ -102,6 +121,15 @@ let obj2 = {
     const merged1 = Object.assign(closure_1.previousPerkValues);
     const merged2 = Object.assign(previousPerkValues);
     closure_1 = obj;
+  },
+  HEXAGON_CAMPAIGN_EXPIRED_CLIENT_THEME_RESTORED: function handleExpiredClientThemeRestored() {
+    if (closure_1.hasRestoredExpiredClientTheme) {
+      return false;
+    } else {
+      obj = { hasRestoredExpiredClientTheme: true };
+      const merged = Object.assign(closure_1);
+      closure_1 = obj;
+    }
   },
   LOGOUT: function handleLogout() {
     closure_1 = obj;

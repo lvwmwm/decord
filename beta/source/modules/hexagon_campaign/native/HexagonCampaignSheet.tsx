@@ -184,7 +184,7 @@ export default function HexagonCampaignSheet() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ export default function HexagonCampaignSheet() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp59) {
           if (0 === analyticsLocations) {
             c4 = 3;
@@ -409,7 +409,7 @@ export default function HexagonCampaignSheet() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -465,7 +465,7 @@ export default function HexagonCampaignSheet() {
             open("HEXAGON_CAMPAIGN_APPLY_ERROR", obj);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp18) {
         c3 = 3;

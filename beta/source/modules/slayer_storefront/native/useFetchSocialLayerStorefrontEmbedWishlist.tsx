@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let closure_8 = { user: "a", profile: "flexDirection", wishlistId: "content", wishlist: 304, updatedAt: null, storedUpdatedAt: 1, fetching: "heading-md/semibold", error: "mobile-text-heading-primary" };
+let closure_8 = { user: "a", profile: "flexDirection", wishlistId: "container", wishlist: 304, updatedAt: null, storedUpdatedAt: 1, fetching: "heading-md/semibold", error: "mobile-text-heading-primary" };
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/useFetchSocialLayerStorefrontEmbedWishlist.tsx");
 
 export function useFetchSocialLayerStorefrontEmbedWishlist(arg0) {

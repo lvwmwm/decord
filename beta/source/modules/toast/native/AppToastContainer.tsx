@@ -1,10 +1,10 @@
-// Module ID: 19466
-// Function ID: 19467
+// Module ID: 19469
+// Function ID: 19470
 // Name: AppToastContainer
 // Dependencies: [19, 21, 1627, 16207, 17422, 17432, 2]
 // Exports: default
 
-// Module 19466 (AppToastContainer)
+// Module 19469 (AppToastContainer)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import ToastContainer from "ToastContainer" /* 16207 */;

@@ -24,11 +24,11 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f106084 = (id) => {
+const f106100 = (id) => {
   obj = { key: "channel:" + id.id, kind: "channel", label: "#" + id.name };
   return obj;
 };
-const f106085 = () => {
+const f106101 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -226,7 +226,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f106085);
+    application.catch(f106101);
   }
 }
 function loadMissingApplication() {
@@ -245,7 +245,7 @@ obj = function _loadMissingApplication() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -283,7 +283,7 @@ obj = function _loadMissingApplication() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;
@@ -324,7 +324,7 @@ export function useConjureServerApp(guildId, applicationId) {
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
         application = obj2.fetchApplication(tmp);
-        application.catch(f106085);
+        application.catch(f106101);
       }
     }
   }, items2);
@@ -426,7 +426,7 @@ export function loadConjureServerApp() {
 }
 export function conjureKickAppItems(rest) {
   const channels = rest.channels;
-  const items = [...channels.map(f106084)];
+  const items = [...channels.map(f106100)];
   if (rest.targetIsPreview) {
     obj = { key: "main-app", kind: "app", label: rest.appName };
     const obj2 = { key: "main-app", kind: "app", label: rest.appName };
@@ -440,7 +440,7 @@ export function conjureDeleteAppChannelItems(rest, channelId) {
   let closure_0 = channelId;
   const channels = rest.channels;
   const found = channels.filter((id) => id.id !== channelId);
-  const items = [...found.map(f106084), obj, obj2];
+  const items = [...found.map(f106100), obj, obj2];
   obj = { key: "main-app", kind: "app", label: rest.appName };
   return items;
 }

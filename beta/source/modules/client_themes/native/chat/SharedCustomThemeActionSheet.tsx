@@ -99,7 +99,7 @@ export default function _default(message) {
   let items4;
   let items5;
   let obj8;
-  const f106616 = (item) => "#" + item;
+  const f106632 = (item) => "#" + item;
   const sharedClientTheme = message.message.sharedClientTheme;
   let tmp = closure_14();
   let tmp2 = closure_7(null);
@@ -108,7 +108,7 @@ export default function _default(message) {
   let tmp4;
   const useState = first1.useState;
   if (undefined !== sharedClientTheme) {
-    let obj4 = { colors: colors.map(f106616), gradientColorStops: [], gradientAngle: null, baseMix: null };
+    let obj4 = { colors: colors.map(f106632), gradientColorStops: [], gradientAngle: null, baseMix: null };
     colors = sharedClientTheme.colors;
     ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
     tmp4 = obj4;
@@ -133,7 +133,7 @@ export default function _default(message) {
     let tmp4;
     const tmp = closure_3;
     if (undefined !== sharedClientTheme) {
-      const obj = { colors: colors.map(f106616), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      const obj = { colors: colors.map(f106632), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = tmp2.colors;
       ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
       tmp4 = obj;

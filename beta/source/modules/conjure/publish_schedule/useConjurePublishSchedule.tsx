@@ -120,7 +120,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -207,7 +207,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
                   closure_129_7(false);
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 closure_129_3(tmp);
                 result = closure_129_9;
@@ -224,7 +224,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp72) {
           message = tmp72;
           if (0 === c3) {

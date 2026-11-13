@@ -63,7 +63,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "ip", onlineCount: "isArray", memberCount: "isArray" };
+      closure_6[guildId] = { activeChannelsCount: "description", onlineCount: "isArray", memberCount: "isArray" };
     }
     closure_6[guildId].memberCount = count;
   },
@@ -71,7 +71,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "ip", onlineCount: "isArray", memberCount: "isArray" };
+      closure_6[guildId] = { activeChannelsCount: "description", onlineCount: "isArray", memberCount: "isArray" };
     }
     closure_6[guildId].onlineCount = count;
   },
@@ -79,7 +79,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "ip", onlineCount: "isArray", memberCount: "isArray" };
+      closure_6[guildId] = { activeChannelsCount: "description", onlineCount: "isArray", memberCount: "isArray" };
     }
     closure_6[guildId].activeChannelsCount = count;
   }

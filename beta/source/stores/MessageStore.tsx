@@ -120,7 +120,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -168,7 +168,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         } else if (null != value) {
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else {
           c5 = 0;
         }
@@ -179,7 +179,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         obj3.commit(tmp25.receivePushNotification(closure_1, closure_2));
         closure_132_35.emitChange();
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp24) {
         tmp25 = c5;
         if (0 === c5) {

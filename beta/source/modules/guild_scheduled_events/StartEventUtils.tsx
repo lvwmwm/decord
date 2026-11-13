@@ -37,7 +37,7 @@ let obj = function _createStageChannelForEvent() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ obj = function _preStartEventActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -182,7 +182,7 @@ obj = function _preStartEventActions() {
             closure_131_1(closure_131_2[7])(null != entity_type, "could not find or create channel");
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp16) {
           c5 = 3;
           throw tmp16;

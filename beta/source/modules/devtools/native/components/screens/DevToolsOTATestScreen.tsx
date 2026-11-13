@@ -149,7 +149,7 @@ export default function DevToolsOTATestScreen() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -187,7 +187,7 @@ export default function DevToolsOTATestScreen() {
             const obj6 = tmp4(c2[12]);
             obj6.openLazy(Promise.resolve(obj7), "OtaVerificationActionSheet", obj8);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c3 = 3;

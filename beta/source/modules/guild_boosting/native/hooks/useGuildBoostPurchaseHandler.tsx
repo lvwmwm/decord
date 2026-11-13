@@ -37,7 +37,7 @@ export default function useGuildBoostPurchaseHandler(arg0) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -95,7 +95,7 @@ export default function useGuildBoostPurchaseHandler(arg0) {
           let obj = closure_0(dependencyMap[10]);
           obj.closeApplyBoostModal();
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp9) {
         c4 = 3;

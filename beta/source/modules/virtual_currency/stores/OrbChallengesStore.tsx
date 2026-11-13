@@ -67,7 +67,7 @@ class OrbChallengesStore extends Store {
     };
     const tmp22 = new tmp2(DispatcherDefault, obj, new.target, tmp2, tmp, this);
     let closure_0 = tmp22;
-    tmp22.state = { challenges: [], isFetchingChallenges: false, hasFetchedChallenges: false, fetchChallengesError: null, isClaimingChallengeMap: {}, claimChallengeErrorMap: {}, orbRewardMultiplier: null, nitroGatedOrbMultiplier: null, achievementUnreadState: null, lastFetchedPremiumType: "flexDirection", userOpenedWalletViaProfileDCF: "INVITE_SUGGESTIONS_SEARCH" };
+    tmp22.state = { challenges: [], isFetchingChallenges: false, hasFetchedChallenges: false, fetchChallengesError: null, isClaimingChallengeMap: {}, claimChallengeErrorMap: {}, orbRewardMultiplier: null, nitroGatedOrbMultiplier: null, achievementUnreadState: null, lastFetchedPremiumType: "flexDirection", userOpenedWalletViaProfileDCF: "main" };
     tmp22.challengesForOrbWalletCache = null;
     return tmp22;
   }
@@ -100,7 +100,7 @@ class OrbChallengesStore extends Store {
     }
   }
   handleReset() {
-    this.state = { challenges: [], isFetchingChallenges: false, hasFetchedChallenges: false, fetchChallengesError: null, isClaimingChallengeMap: {}, claimChallengeErrorMap: {}, orbRewardMultiplier: null, nitroGatedOrbMultiplier: null, achievementUnreadState: null, lastFetchedPremiumType: "flexDirection", userOpenedWalletViaProfileDCF: "INVITE_SUGGESTIONS_SEARCH" };
+    this.state = { challenges: [], isFetchingChallenges: false, hasFetchedChallenges: false, fetchChallengesError: null, isClaimingChallengeMap: {}, claimChallengeErrorMap: {}, orbRewardMultiplier: null, nitroGatedOrbMultiplier: null, achievementUnreadState: null, lastFetchedPremiumType: "flexDirection", userOpenedWalletViaProfileDCF: "main" };
   }
   handleConnectionOpen() {
     const hasFetchedChallenges = this.state.hasFetchedChallenges;

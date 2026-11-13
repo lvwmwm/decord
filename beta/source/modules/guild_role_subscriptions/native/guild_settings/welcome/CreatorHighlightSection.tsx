@@ -1,10 +1,10 @@
-// Module ID: 20368
-// Function ID: 20369
+// Module ID: 20371
+// Function ID: 20372
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 5170, 575, 5783, 1187, 10132, 1113, 20369, 5866, 20318, 5874, 17585, 5790, 7390, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5783, 1187, 10132, 1113, 20372, 5866, 20321, 5874, 17585, 5790, 7390, 2]
 // Exports: default
 
-// Module 20368 (CreatorHighlightSection)
+// Module 20371 (CreatorHighlightSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -82,12 +82,12 @@ function CreatorGuildCard(highlightedCreatorGuild) {
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp4 = guild_id(20369)(guild_id, 3, 60);
+  const tmp4 = guild_id(20372)(guild_id, 3, 60);
   dependencyMap = tmp4;
   const hasAllImperativeDetails = tmp4.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp4];
   if (tmp4.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(20318), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(20321), {}) };
     return closure_5(View, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp4.details;

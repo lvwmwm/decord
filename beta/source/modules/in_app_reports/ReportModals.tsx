@@ -35,7 +35,7 @@ let obj = function _submitHamReportForFirstDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _submitHamReportForFirstDM() {
               c4 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp7) {
           if (0 === c4) {
@@ -108,7 +108,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -153,7 +153,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           if (0 === c5) {

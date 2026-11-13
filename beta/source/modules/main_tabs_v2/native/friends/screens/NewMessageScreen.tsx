@@ -127,7 +127,7 @@ let obj = function _findMatchingPrivateChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -436,7 +436,7 @@ export default function NewMessageScreen(navigation) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -475,7 +475,7 @@ export default function NewMessageScreen(navigation) {
               }
               tmp8(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp17) {
             c3 = 3;
@@ -599,7 +599,7 @@ export default function NewMessageScreen(navigation) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -651,7 +651,7 @@ export default function NewMessageScreen(navigation) {
               closure_1_5(items);
               closure_1_7(false);
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c3 = 1;
               c4 = 1;

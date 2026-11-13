@@ -71,8 +71,8 @@ export default function useCardGridLayout() {
   const bound1 = Math.min(Math.max(tmp4, num), num2);
   const diff2 = num4 - 1;
   if (diff < bound1 * num4 + num3 * diff2) {
-    obj3 = { columns: 1, cardWidth: "Array", rowWidth: "ip", gap: num3 };
-    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "ip", gap: num3 };
+    obj3 = { columns: 1, cardWidth: "Array", rowWidth: "description", gap: num3 };
+    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "description", gap: num3 };
   } else {
     obj3 = { columns: num4, cardWidth: bound1, rowWidth: bound1 * num4 + num3 * diff2, gap: num3 };
   }

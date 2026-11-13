@@ -32,7 +32,7 @@ let obj = function _handleEnableSystemNotification() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ let obj = function _handleEnableSystemNotification() {
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp26) {
         c3 = 3;

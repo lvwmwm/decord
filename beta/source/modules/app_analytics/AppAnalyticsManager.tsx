@@ -1,9 +1,9 @@
-// Module ID: 19837
-// Function ID: 19838
+// Module ID: 19840
+// Function ID: 19841
 // Name: AppAnalyticsManager
 // Dependencies: [2137, 2130, 5925, 6657, 6844, 5928, 1072, 1089, 7383, 5014, 5921, 5923, 19221, 8002, 2]
 
-// Module 19837 (AppAnalyticsManager)
+// Module 19840 (AppAnalyticsManager)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import Timers from "Timers" /* 5014 */;

@@ -1,9 +1,9 @@
-// Module ID: 19734
-// Function ID: 19735
+// Module ID: 19737
+// Function ID: 19738
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 6931, 11395, 11398, 11393, 1072, 21, 5170, 575, 1624, 19735, 9105, 11394, 1652, 19612, 5756, 5452, 1705, 19621, 11401, 14094, 5408, 5422, 13060, 10242, 19736, 19572, 19737, 5231, 19741, 19743, 7055, 19746, 5793, 19557, 19769, 19587, 1259, 19770, 19771, 1108, 1627, 1493, 12646, 11421, 19742, 12667, 19772, 19714, 19745, 19773, 2]
+// Dependencies: [32, 19, 17, 6931, 11395, 11398, 11393, 1072, 21, 5170, 575, 1624, 19738, 9105, 11394, 1652, 19615, 5756, 5452, 1705, 19624, 11401, 14094, 5408, 5422, 13060, 10242, 19739, 19575, 19740, 5231, 19744, 19746, 7055, 19749, 5793, 19560, 19772, 19590, 1259, 19773, 19774, 1108, 1627, 1493, 12646, 11421, 19745, 12667, 19775, 19717, 19748, 19776, 2]
 
-// Module 19734 (VoicePanelControls)
+// Module 19737 (VoicePanelControls)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -12,14 +12,14 @@ import spring_spring from "spring/spring" /* 5793 */;
 import useRefValueDefault from "useRefValue" /* 7055 */;
 import native2 from "native" /* 9105 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19572 */;
-import useControlsLockDefault from "useControlsLock" /* 19612 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19621 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 19735 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19737 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19741 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19743 */;
-import useControlsButtonsDefault from "useControlsButtons" /* 19746 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19575 */;
+import useControlsLockDefault from "useControlsLock" /* 19615 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19624 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 19738 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19740 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19744 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19746 */;
+import useControlsButtonsDefault from "useControlsButtons" /* 19749 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

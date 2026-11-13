@@ -59,7 +59,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cal
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -126,7 +126,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cal
             obj4.hideActionSheet();
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp49) {
           onDismiss = tmp49;
           if (0 === c3) {
@@ -181,7 +181,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cal
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -292,7 +292,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cal
           obj6.hideActionSheet();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp56) {
         onDismiss = tmp56;
         if (0 === c3) {

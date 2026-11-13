@@ -317,7 +317,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
     let closure_10 = tmp5;
     setCustomGiftMessage = tmp9;
     let closure_12 = tmp26;
-    let obj6 = { orderId: "a", planId: "flexDirection", planSelection: obj7, giftInfo: 304 };
+    let obj6 = { orderId: "a", planId: "geometrisk", planSelection: obj7, giftInfo: "orange" };
     obj7 = { premiumType, planInterval: first1 };
     constants = obj.useRef(obj6);
     let closure_14 = obj.useRef(false);
@@ -434,7 +434,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -498,7 +498,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
                               if (ref.current.orderId !== closure_129_6) {
                                 needsPlanSync = 0;
                                 c5 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               } else {
                                 expectedRevision = revision.revision;
                                 needsPlanSync(revision);
@@ -519,7 +519,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
                                 if (ref.current.orderId !== closure_129_6) {
                                   needsPlanSync = 0;
                                   c5 = 3;
-                                  return { value: "HermesInternal", done: null };
+                                  return { value: "HermesInternal", done: "HermesInternal" };
                                 }
                               }
                             } else if (arg0 === 1) {
@@ -533,14 +533,14 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
                               expectedRevision = value;
                               if (ref.current.orderId !== closure_129_6) {
                                 c5 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               } else {
                                 ref.current.giftInfo = current;
                                 tmp67(expectedRevision);
                               }
                             }
                             c5 = 3;
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                           ref.current.planId = planId;
                           const obj15 = { premiumType, planInterval };
@@ -657,7 +657,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -710,7 +710,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp28) {
             closure_3 = tmp28;
             if (0 === c4) {
@@ -751,7 +751,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -796,7 +796,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
               onClose = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           if (0 === onClose) {
@@ -832,7 +832,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c5;
@@ -910,7 +910,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
                     const tmp27 = closure_1_19(false);
                   }
                   c7 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else if (2 === tmp4) {
                 c5 = 0;
@@ -958,7 +958,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
                         } else if (arg0 === 2) {
                           return { value, done: true };
                         } else {
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       } else {
                         try {
@@ -991,7 +991,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
                                 }
                               }
                               c7 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "HermesInternal" };
                             }
                           } else if (1 === c6) {
                             c4 = 0;

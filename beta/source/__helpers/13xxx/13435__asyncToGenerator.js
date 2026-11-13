@@ -23,7 +23,7 @@ let obj = function _asyncOptionalChain2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -50,7 +50,7 @@ let obj = function _asyncOptionalChain2() {
               if ("optionalAccess" === closure_4) {
                 if (null == value) {
                   c3 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               if ("access" !== closure_4) {

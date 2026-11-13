@@ -122,10 +122,10 @@ function Rt() {
   }
   return false;
 }
-const f1135972 = () => {
+const f1136152 = () => {
 
 };
-const f1135982 = () => {
+const f1136162 = () => {
 
 };
 const get = (arg0) => fn.call(fn, arg0);
@@ -407,8 +407,8 @@ c0 = () => {
 
 };
 let closure_1;
-const f113597 = f1135972;
-const f71198 = (arg0, arg1) => {
+const f113615 = f1136152;
+const f71209 = (arg0, arg1) => {
   arg1.exports = function Ca(arg0, fn) {
     let tmp = arg0;
     if (!("length" in arg0)) {
@@ -432,7 +432,7 @@ const f71198 = (arg0, arg1) => {
     }
   };
 };
-const f71199 = (arg0, arg1) => {
+const f71210 = (arg0, arg1) => {
   function ve(data, arg1) {
     let tmp2;
     const self = this;
@@ -484,7 +484,7 @@ const f71199 = (arg0, arg1) => {
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f71200 = (arg0, arg1) => {
+const f71211 = (arg0, arg1) => {
   function ae(arg0, arg1) {
     let tmp2;
     const self = this;
@@ -543,7 +543,7 @@ const f71200 = (arg0, arg1) => {
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f71201 = (arg0, arg1) => {
+const f71212 = (arg0, arg1) => {
   arg1.exports = function Ma(type) {
     let closure_0 = type;
     const self = this;
@@ -569,7 +569,7 @@ const f71201 = (arg0, arg1) => {
     }
   };
 };
-const f71202 = (arg0, arg1) => {
+const f71213 = (arg0, arg1) => {
   arg1.exports = function Ha(arg0, arg1) {
     const self = this;
     if (!this.listeners) {
@@ -585,7 +585,7 @@ const f71202 = (arg0, arg1) => {
     }
   };
 };
-const f71203 = (arg0, arg1) => {
+const f71214 = (arg0, arg1) => {
   arg1.exports = function Ba(arg0, arg1) {
     const self = this;
     if (this.listeners) {
@@ -598,10 +598,10 @@ const f71203 = (arg0, arg1) => {
     }
   };
 };
-const f71204 = (arg0, arg1) => {
+const f71215 = (arg0, arg1) => {
   let tmp;
   function br(nodeType) {
-    const f133371 = (item) => {
+    const f133407 = (item) => {
       let name;
       let value;
       ({ name, value } = item);
@@ -742,7 +742,7 @@ const f71204 = (arg0, arg1) => {
       let str18 = "";
       if (items1.length) {
         const items2 = [];
-        let item = items1.forEach(f133371);
+        let item = items1.forEach(f133407);
         let str19 = "";
         if (items2.length) {
           str19 = ` ${arr3.join(" ")}`;
@@ -759,7 +759,7 @@ const f71204 = (arg0, arg1) => {
       let str22 = "";
       if (items3.length) {
         const items4 = [];
-        const item1 = items3.forEach(f133371);
+        const item1 = items3.forEach(f133407);
         let str23 = "";
         if (items4.length) {
           str23 = ` ${arr5.join(" ")}`;
@@ -818,7 +818,7 @@ const f71204 = (arg0, arg1) => {
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f71205 = (arg0, arg1) => {
+const f71216 = (arg0, arg1) => {
   let closure_1;
   let tmp2;
   class I {
@@ -1682,19 +1682,19 @@ const f71205 = (arg0, arg1) => {
                   closure_0 = arg0.split(" ");
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this, function() { /* body not rendered: F133372 */ });
+                  tmp = closure_0(this, function() { /* body not rendered: F133408 */ });
                   return items;
                 }
                 getElementsByTagName(arg0) {
                   closure_0 = arg0.toLowerCase();
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this.childNodes, function() { /* body not rendered: F133373 */ });
+                  tmp = closure_0(this.childNodes, function() { /* body not rendered: F133409 */ });
                   return items;
                 }
                 contains(arg0) {
                   closure_0 = arg0;
-                  tmp = closure_0(this, function() { /* body not rendered: F133374 */ }) || false;
+                  tmp = closure_0(this, function() { /* body not rendered: F133410 */ }) || false;
                   return tmp;
                 }
               }
@@ -1893,19 +1893,19 @@ const f71205 = (arg0, arg1) => {
                     closure_0 = arg0.split(" ");
                     items = [];
                     closure_1 = items;
-                    tmp = closure_0(this, function() { /* body not rendered: F133372 */ });
+                    tmp = closure_0(this, function() { /* body not rendered: F133408 */ });
                     return items;
                   }
                   getElementsByTagName(arg0) {
                     closure_0 = arg0.toLowerCase();
                     items = [];
                     closure_1 = items;
-                    tmp = closure_0(this.childNodes, function() { /* body not rendered: F133373 */ });
+                    tmp = closure_0(this.childNodes, function() { /* body not rendered: F133409 */ });
                     return items;
                   }
                   contains(arg0) {
                     closure_0 = arg0;
-                    tmp = closure_0(this, function() { /* body not rendered: F133374 */ }) || false;
+                    tmp = closure_0(this, function() { /* body not rendered: F133410 */ }) || false;
                     return tmp;
                   }
                 }
@@ -2119,19 +2119,19 @@ const f71205 = (arg0, arg1) => {
                   closure_0 = arg0.split(" ");
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this, function() { /* body not rendered: F133372 */ });
+                  tmp = closure_0(this, function() { /* body not rendered: F133408 */ });
                   return items;
                 }
                 getElementsByTagName(arg0) {
                   closure_0 = arg0.toLowerCase();
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this.childNodes, function() { /* body not rendered: F133373 */ });
+                  tmp = closure_0(this.childNodes, function() { /* body not rendered: F133409 */ });
                   return items;
                 }
                 contains(arg0) {
                   closure_0 = arg0;
-                  tmp = closure_0(this, function() { /* body not rendered: F133374 */ }) || false;
+                  tmp = closure_0(this, function() { /* body not rendered: F133410 */ }) || false;
                   return tmp;
                 }
               }
@@ -2332,19 +2332,19 @@ const f71205 = (arg0, arg1) => {
                 closure_0 = arg0.split(" ");
                 items = [];
                 closure_1 = items;
-                tmp = closure_0(this, function() { /* body not rendered: F133372 */ });
+                tmp = closure_0(this, function() { /* body not rendered: F133408 */ });
                 return items;
               }
               getElementsByTagName(arg0) {
                 closure_0 = arg0.toLowerCase();
                 items = [];
                 closure_1 = items;
-                tmp = closure_0(this.childNodes, function() { /* body not rendered: F133373 */ });
+                tmp = closure_0(this.childNodes, function() { /* body not rendered: F133409 */ });
                 return items;
               }
               contains(arg0) {
                 closure_0 = arg0;
-                tmp = closure_0(this, function() { /* body not rendered: F133374 */ }) || false;
+                tmp = closure_0(this, function() { /* body not rendered: F133410 */ }) || false;
                 return tmp;
               }
             }
@@ -2545,19 +2545,19 @@ const f71205 = (arg0, arg1) => {
               closure_0 = arg0.split(" ");
               items = [];
               closure_1 = items;
-              tmp = closure_0(this, function() { /* body not rendered: F133372 */ });
+              tmp = closure_0(this, function() { /* body not rendered: F133408 */ });
               return items;
             }
             getElementsByTagName(arg0) {
               closure_0 = arg0.toLowerCase();
               items = [];
               closure_1 = items;
-              tmp = closure_0(this.childNodes, function() { /* body not rendered: F133373 */ });
+              tmp = closure_0(this.childNodes, function() { /* body not rendered: F133409 */ });
               return items;
             }
             contains(arg0) {
               closure_0 = arg0;
-              tmp = closure_0(this, function() { /* body not rendered: F133374 */ }) || false;
+              tmp = closure_0(this, function() { /* body not rendered: F133410 */ }) || false;
               return tmp;
             }
           }
@@ -2758,19 +2758,19 @@ const f71205 = (arg0, arg1) => {
             closure_0 = arg0.split(" ");
             items = [];
             closure_1 = items;
-            tmp = closure_0(this, function() { /* body not rendered: F133372 */ });
+            tmp = closure_0(this, function() { /* body not rendered: F133408 */ });
             return items;
           }
           getElementsByTagName(arg0) {
             closure_0 = arg0.toLowerCase();
             items = [];
             closure_1 = items;
-            tmp = closure_0(this.childNodes, function() { /* body not rendered: F133373 */ });
+            tmp = closure_0(this.childNodes, function() { /* body not rendered: F133409 */ });
             return items;
           }
           contains(arg0) {
             closure_0 = arg0;
-            tmp = closure_0(this, function() { /* body not rendered: F133374 */ }) || false;
+            tmp = closure_0(this, function() { /* body not rendered: F133410 */ }) || false;
             return tmp;
           }
         }
@@ -2971,19 +2971,19 @@ const f71205 = (arg0, arg1) => {
           closure_0 = arg0.split(" ");
           items = [];
           closure_1 = items;
-          tmp = closure_0(this, function() { /* body not rendered: F133372 */ });
+          tmp = closure_0(this, function() { /* body not rendered: F133408 */ });
           return items;
         }
         getElementsByTagName(arg0) {
           closure_0 = arg0.toLowerCase();
           items = [];
           closure_1 = items;
-          tmp = closure_0(this.childNodes, function() { /* body not rendered: F133373 */ });
+          tmp = closure_0(this.childNodes, function() { /* body not rendered: F133409 */ });
           return items;
         }
         contains(arg0) {
           closure_0 = arg0;
-          tmp = closure_0(this, function() { /* body not rendered: F133374 */ }) || false;
+          tmp = closure_0(this, function() { /* body not rendered: F133410 */ }) || false;
           return tmp;
         }
       }
@@ -3184,26 +3184,26 @@ const f71205 = (arg0, arg1) => {
         closure_0 = arg0.split(" ");
         items = [];
         closure_1 = items;
-        tmp = closure_0(this, function() { /* body not rendered: F133372 */ });
+        tmp = closure_0(this, function() { /* body not rendered: F133408 */ });
         return items;
       }
       getElementsByTagName(arg0) {
         closure_0 = arg0.toLowerCase();
         items = [];
         closure_1 = items;
-        tmp = closure_0(this.childNodes, function() { /* body not rendered: F133373 */ });
+        tmp = closure_0(this.childNodes, function() { /* body not rendered: F133409 */ });
         return items;
       }
       contains(arg0) {
         closure_0 = arg0;
-        tmp = closure_0(this, function() { /* body not rendered: F133374 */ }) || false;
+        tmp = closure_0(this, function() { /* body not rendered: F133410 */ }) || false;
         return tmp;
       }
     }
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f71206 = (arg0, arg1) => {
+const f71217 = (arg0, arg1) => {
   let tmp2;
   class K {
     constructor(arg0) {
@@ -3321,7 +3321,7 @@ const f71206 = (arg0, arg1) => {
         }
         toString() {
           childNodes = this.childNodes;
-          mapped = childNodes.map(function() { /* body not rendered: F133375 */ });
+          mapped = childNodes.map(function() { /* body not rendered: F133411 */ });
           return mapped.join("");
         }
       }
@@ -3364,7 +3364,7 @@ const f71206 = (arg0, arg1) => {
           }
           toString() {
             childNodes = this.childNodes;
-            mapped = childNodes.map(function() { /* body not rendered: F133375 */ });
+            mapped = childNodes.map(function() { /* body not rendered: F133411 */ });
             return mapped.join("");
           }
         }
@@ -3419,7 +3419,7 @@ const f71206 = (arg0, arg1) => {
         }
         toString() {
           childNodes = this.childNodes;
-          mapped = childNodes.map(function() { /* body not rendered: F133375 */ });
+          mapped = childNodes.map(function() { /* body not rendered: F133411 */ });
           return mapped.join("");
         }
       }
@@ -3464,14 +3464,14 @@ const f71206 = (arg0, arg1) => {
       }
       toString() {
         childNodes = this.childNodes;
-        mapped = childNodes.map(function() { /* body not rendered: F133375 */ });
+        mapped = childNodes.map(function() { /* body not rendered: F133411 */ });
         return mapped.join("");
       }
     }
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f71207 = (arg0, arg1) => {
+const f71218 = (arg0, arg1) => {
   class it {
     constructor(arg0) {
       return;
@@ -3485,7 +3485,7 @@ const f71207 = (arg0, arg1) => {
   }
   arg1.exports = it;
 };
-const f71208 = (arg0, arg1) => {
+const f71219 = (arg0, arg1) => {
   let tmp2;
   class Ue {
     constructor() {
@@ -4703,7 +4703,7 @@ const f71208 = (arg0, arg1) => {
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f71209 = function(arg0, arg1) {
+const f71220 = function(arg0, arg1) {
   let obj;
   if (typeof closure_1_21 === "function") {
     const tmp = obj;
@@ -4720,7 +4720,7 @@ const f71209 = function(arg0, arg1) {
   }
 };
 let c1;
-const f113598 = f1135982;
+const f113616 = f1136162;
 let obj = {};
 let obj2 = { default: () => ne };
 for (const key10058 in obj2) {
@@ -5261,7 +5261,7 @@ let fn2 = function r() {
     if (tmp2) {
       if ("_listeners" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_listeners", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_listeners", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._listeners = undefined;
       }
@@ -5359,7 +5359,7 @@ let items2 = [
   {
     key: "emit",
     value(arg0, arg1) {
-      const f140600 = (call) => {
+      const f140644 = (call) => {
         const obj = { type };
         call.call(self, obj, type);
       };
@@ -5372,14 +5372,14 @@ let items2 = [
         const arr3 = self._listeners[arg0] || [];
         const arr4 = self._listeners["after" + arg0] || [];
         const substr = arr.slice();
-        const item = substr.forEach(f140600);
+        const item = substr.forEach(f140644);
         const substr1 = arr2.slice();
-        const item1 = substr1.forEach(f140600);
+        const item1 = substr1.forEach(f140644);
         const substr2 = arr3.slice();
-        const item2 = substr2.forEach(f140600);
+        const item2 = substr2.forEach(f140644);
         closure_0 = tmp;
         const substr3 = arr4.slice();
-        const item3 = substr3.forEach(f140600);
+        const item3 = substr3.forEach(f140644);
       }
     }
   }
@@ -5399,19 +5399,19 @@ let fn3 = function r(pm) {
     if (tmp2) {
       if ("_playbackHeartbeatInterval" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._playbackHeartbeatInterval = undefined;
       }
       if ("_playheadShouldBeProgressing" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._playheadShouldBeProgressing = undefined;
       }
       if ("pm" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.pm = undefined;
       }
@@ -5538,7 +5538,7 @@ let fn4 = function r(on) {
     if (tmp2) {
       if ("viewErrored" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "viewErrored", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "viewErrored", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.viewErrored = undefined;
       }
@@ -5646,13 +5646,13 @@ let fn5 = function r(pm) {
     if (tmp2) {
       if ("_watchTimeTrackerLastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._watchTimeTrackerLastCheckedTime = undefined;
       }
       if ("pm" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.pm = undefined;
       }
@@ -5720,31 +5720,31 @@ let fn6 = function r(pm) {
     if (tmp2) {
       if ("_playbackTimeTrackerLastPlayheadPosition" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._playbackTimeTrackerLastPlayheadPosition = undefined;
       }
       if ("_lastTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastTime = undefined;
       }
       if ("_isAdPlaying" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_isAdPlaying", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_isAdPlaying", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._isAdPlaying = undefined;
       }
       if ("_callbackUpdatePlaybackTime" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._callbackUpdatePlaybackTime = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.pm = undefined;
       }
@@ -5889,7 +5889,7 @@ let fn7 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.pm = undefined;
       }
@@ -6058,31 +6058,31 @@ const fn9 = function r(pm) {
     if (tmp2) {
       if ("_lastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastCheckedTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastCheckedTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastCheckedTime = undefined;
       }
       if ("_lastPlayheadTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayheadTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastPlayheadTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastPlayheadTime = undefined;
       }
       if ("_lastPlayheadTimeUpdatedTime" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastPlayheadTimeUpdatedTime = undefined;
       }
       if ("_rebuffering" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_rebuffering", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_rebuffering", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._rebuffering = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.pm = undefined;
       }
@@ -6223,7 +6223,7 @@ const fn10 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.pm = undefined;
       }
@@ -6318,31 +6318,31 @@ const fn11 = function r(on) {
     if (tmp2) {
       if ("_lastPlayerHeight" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastPlayerHeight", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastPlayerHeight", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastPlayerHeight = undefined;
       }
       if ("_lastPlayerWidth" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayerWidth", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastPlayerWidth", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastPlayerWidth = undefined;
       }
       if ("_lastPlayheadPosition" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadPosition", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastPlayheadPosition", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastPlayheadPosition = undefined;
       }
       if ("_lastSourceHeight" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_lastSourceHeight", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastSourceHeight", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastSourceHeight = undefined;
       }
       if ("_lastSourceWidth" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_lastSourceWidth", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastSourceWidth", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastSourceWidth = undefined;
       }
@@ -6453,7 +6453,7 @@ const fn12 = function r(on) {
     if (tmp2) {
       if ("isSeeking" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "isSeeking", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "isSeeking", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.isSeeking = undefined;
       }
@@ -6565,7 +6565,7 @@ function Xt(arg0, arg1) {
 let closure_71 = ["adbreakstart", "adrequest", "adresponse", "adplay", "adplaying", "adpause", "adended", "adbreakend", "aderror", "adclicked", "adskipped"];
 const fn13 = function r(pm) {
   let tmp2;
-  const f113702 = (viewer_time, viewer_time2) => viewer_time.viewer_time - viewer_time2.viewer_time;
+  const f113720 = (viewer_time, viewer_time2) => viewer_time.viewer_time - viewer_time2.viewer_time;
   let closure_0 = pm;
   const self = this;
   const tmp = fn13;
@@ -6578,55 +6578,55 @@ const fn13 = function r(pm) {
     if (tmp2) {
       if ("_adHasPlayed" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_adHasPlayed", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_adHasPlayed", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._adHasPlayed = undefined;
       }
       if ("_adRequests" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_adRequests", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_adRequests", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._adRequests = undefined;
       }
       if ("_adResponses" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_adResponses", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_adResponses", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._adResponses = undefined;
       }
       if ("_currentAdRequestNumber" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_currentAdRequestNumber", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_currentAdRequestNumber", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._currentAdRequestNumber = undefined;
       }
       if ("_currentAdResponseNumber" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_currentAdResponseNumber", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_currentAdResponseNumber", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._currentAdResponseNumber = undefined;
       }
       if ("_prerollPlayTime" in self) {
         const _Object6 = Object;
-        Object.defineProperty(self, "_prerollPlayTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_prerollPlayTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._prerollPlayTime = undefined;
       }
       if ("_wouldBeNewAdPlay" in self) {
         const _Object7 = Object;
-        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._wouldBeNewAdPlay = undefined;
       }
       if ("isAdBreak" in self) {
         const _Object8 = Object;
-        Object.defineProperty(self, "isAdBreak", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "isAdBreak", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.isAdBreak = undefined;
       }
       if ("pm" in self) {
         const _Object9 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.pm = undefined;
       }
@@ -6660,7 +6660,7 @@ const fn13 = function r(pm) {
         const _adRequests = self._adRequests;
         if (typeof closure_2_70 === "function") {
           _adRequests.push(tmp2);
-          const sorted = _adRequests.sort(f113702);
+          const sorted = _adRequests.sort(f113720);
           const data = closure_0.data;
           data.view_ad_request_count = data.view_ad_request_count || 0;
           data.view_ad_request_count = data.view_ad_request_count + 1;
@@ -6684,7 +6684,7 @@ const fn13 = function r(pm) {
         const obj2 = self;
         if (typeof closure_2_70 === "function") {
           _adResponses.push(merged);
-          const sorted = _adResponses.sort(f113702);
+          const sorted = _adResponses.sort(f113720);
           const findAdRequestResult = obj2.findAdRequest(merged.ad_request_id);
           if (findAdRequestResult) {
             const data = closure_0.data;
@@ -6931,7 +6931,7 @@ const fn14 = function r(one) {
     if (tmp2) {
       if ("lastWallClockTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "lastWallClockTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "lastWallClockTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self.lastWallClockTime = undefined;
       }
@@ -7133,7 +7133,7 @@ function r() {
   }
   return obj;
 }
-const f113712 = () => {
+const f113730 = () => {
 
 };
 const fn16 = function i(arg0, arg1, arg2) {
@@ -7416,7 +7416,7 @@ const fn17 = (arg0, arg1) => {
     const _window = window;
     tmp = typeof window !== "undefined" ? window : {};
   }
-  if (typeof f113598 === "function") {
+  if (typeof f113616 === "function") {
     let _document1;
     const tmp3 = obj;
     if (!tmp3) {
@@ -7768,73 +7768,73 @@ const fn18 = function r(mux, envKey) {
         let str14;
         if ("mux" in self) {
           const _Object = Object;
-          Object.defineProperty(self, "mux", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "mux", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.mux = undefined;
         }
         if ("envKey" in self) {
           const _Object2 = Object;
-          Object.defineProperty(self, "envKey", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "envKey", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.envKey = undefined;
         }
         if ("options" in self) {
           const _Object3 = Object;
-          Object.defineProperty(self, "options", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "options", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.options = undefined;
         }
         if ("eventQueue" in self) {
           const _Object4 = Object;
-          Object.defineProperty(self, "eventQueue", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "eventQueue", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.eventQueue = undefined;
         }
         if ("sampleRate" in self) {
           const _Object5 = Object;
-          Object.defineProperty(self, "sampleRate", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "sampleRate", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.sampleRate = undefined;
         }
         if ("disableCookies" in self) {
           const _Object6 = Object;
-          Object.defineProperty(self, "disableCookies", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "disableCookies", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.disableCookies = undefined;
         }
         if ("respectDoNotTrack" in self) {
           const _Object7 = Object;
-          Object.defineProperty(self, "respectDoNotTrack", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "respectDoNotTrack", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.respectDoNotTrack = undefined;
         }
         if ("previousBeaconData" in self) {
           const _Object8 = Object;
-          Object.defineProperty(self, "previousBeaconData", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "previousBeaconData", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.previousBeaconData = undefined;
         }
         if ("lastEventTime" in self) {
           const _Object9 = Object;
-          Object.defineProperty(self, "lastEventTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "lastEventTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.lastEventTime = undefined;
         }
         if ("rateLimited" in self) {
           const _Object10 = Object;
-          Object.defineProperty(self, "rateLimited", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "rateLimited", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.rateLimited = undefined;
         }
         if ("pageLevelData" in self) {
           const _Object11 = Object;
-          Object.defineProperty(self, "pageLevelData", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "pageLevelData", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.pageLevelData = undefined;
         }
         if ("viewerData" in self) {
           const _Object12 = Object;
-          Object.defineProperty(self, "viewerData", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+          Object.defineProperty(self, "viewerData", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
         } else {
           self.viewerData = undefined;
         }
@@ -8504,7 +8504,7 @@ const fn20 = function r(on) {
     if (tmp2) {
       if ("_lastEventTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "_lastEventTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+        Object.defineProperty(self, "_lastEventTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
       } else {
         self._lastEventTime = undefined;
       }
@@ -8778,7 +8778,7 @@ const fn22 = function r(on) {
 };
 let closure_99 = ["viewstart", "ended", "loadstart", "pause", "play", "playing", "ratechange", "waiting", "adplay", "adpause", "adended", "aderror", "adplaying", "adrequest", "adresponse", "adbreakstart", "adbreakend", "adfirstquartile", "admidpoint", "adthirdquartile", "rebufferstart", "rebufferend", "seeked", "error", "hb", "requestcompleted", "requestfailed", "requestcanceled", "renditionchange", "cdnchange", "playbackmodechange"];
 const set = new Set(["requestcompleted", "requestfailed", "requestcanceled"]);
-let f113590;
+let f113608;
 class t {
   constructor(mux, id, beaconDomain) {
     let tmp2;
@@ -8802,7 +8802,7 @@ class t {
         } else {
           if ("pageLoadEndTime" in callResult) {
             const _Object = Object;
-            Object.defineProperty(callResult, "pageLoadEndTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+            Object.defineProperty(callResult, "pageLoadEndTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
           } else {
             callResult.pageLoadEndTime = undefined;
           }
@@ -8815,7 +8815,7 @@ class t {
           } else {
             if ("pageLoadInitTime" in callResult) {
               const _Object2 = Object;
-              Object.defineProperty(callResult, "pageLoadInitTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+              Object.defineProperty(callResult, "pageLoadInitTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
             } else {
               callResult.pageLoadInitTime = undefined;
             }
@@ -8828,7 +8828,7 @@ class t {
             } else {
               if ("_destroyed" in callResult) {
                 const _Object3 = Object;
-                Object.defineProperty(callResult, "_destroyed", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                Object.defineProperty(callResult, "_destroyed", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
               } else {
                 callResult._destroyed = undefined;
               }
@@ -8841,7 +8841,7 @@ class t {
               } else {
                 if ("_heartBeatTimeout" in callResult) {
                   const _Object4 = Object;
-                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                 } else {
                   callResult._heartBeatTimeout = undefined;
                 }
@@ -8854,7 +8854,7 @@ class t {
                 } else {
                   if ("adTracker" in callResult) {
                     const _Object5 = Object;
-                    Object.defineProperty(callResult, "adTracker", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                    Object.defineProperty(callResult, "adTracker", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                   } else {
                     callResult.adTracker = undefined;
                   }
@@ -8867,7 +8867,7 @@ class t {
                   } else {
                     if ("dashjs" in callResult) {
                       const _Object6 = Object;
-                      Object.defineProperty(callResult, "dashjs", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                      Object.defineProperty(callResult, "dashjs", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                     } else {
                       callResult.dashjs = undefined;
                     }
@@ -8880,7 +8880,7 @@ class t {
                     } else {
                       if ("data" in callResult) {
                         const _Object7 = Object;
-                        Object.defineProperty(callResult, "data", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                        Object.defineProperty(callResult, "data", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                       } else {
                         callResult.data = undefined;
                       }
@@ -8893,7 +8893,7 @@ class t {
                       } else {
                         if ("disablePlayheadRebufferTracking" in callResult) {
                           const _Object8 = Object;
-                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                         } else {
                           callResult.disablePlayheadRebufferTracking = undefined;
                         }
@@ -8906,7 +8906,7 @@ class t {
                         } else {
                           if ("disableRebufferTracking" in callResult) {
                             const _Object9 = Object;
-                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                           } else {
                             callResult.disableRebufferTracking = undefined;
                           }
@@ -8919,7 +8919,7 @@ class t {
                           } else {
                             if ("errorTracker" in callResult) {
                               const _Object10 = Object;
-                              Object.defineProperty(callResult, "errorTracker", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                              Object.defineProperty(callResult, "errorTracker", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                             } else {
                               callResult.errorTracker = undefined;
                             }
@@ -8932,7 +8932,7 @@ class t {
                             } else {
                               if ("errorTranslator" in callResult) {
                                 const _Object11 = Object;
-                                Object.defineProperty(callResult, "errorTranslator", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                Object.defineProperty(callResult, "errorTranslator", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                               } else {
                                 callResult.errorTranslator = undefined;
                               }
@@ -8945,7 +8945,7 @@ class t {
                               } else {
                                 if ("emitTranslator" in callResult) {
                                   const _Object12 = Object;
-                                  Object.defineProperty(callResult, "emitTranslator", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                  Object.defineProperty(callResult, "emitTranslator", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                 } else {
                                   callResult.emitTranslator = undefined;
                                 }
@@ -8958,7 +8958,7 @@ class t {
                                 } else {
                                   if ("getAdData" in callResult) {
                                     const _Object13 = Object;
-                                    Object.defineProperty(callResult, "getAdData", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                    Object.defineProperty(callResult, "getAdData", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                   } else {
                                     callResult.getAdData = undefined;
                                   }
@@ -8971,7 +8971,7 @@ class t {
                                   } else {
                                     if ("getPlayheadTime" in callResult) {
                                       const _Object14 = Object;
-                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                     } else {
                                       callResult.getPlayheadTime = undefined;
                                     }
@@ -8984,7 +8984,7 @@ class t {
                                     } else {
                                       if ("getStateData" in callResult) {
                                         const _Object15 = Object;
-                                        Object.defineProperty(callResult, "getStateData", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                        Object.defineProperty(callResult, "getStateData", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                       } else {
                                         callResult.getStateData = undefined;
                                       }
@@ -8997,7 +8997,7 @@ class t {
                                       } else {
                                         if ("stateDataTranslator" in callResult) {
                                           const _Object16 = Object;
-                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                         } else {
                                           callResult.stateDataTranslator = undefined;
                                         }
@@ -9010,7 +9010,7 @@ class t {
                                         } else {
                                           if ("hlsjs" in callResult) {
                                             const _Object17 = Object;
-                                            Object.defineProperty(callResult, "hlsjs", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                            Object.defineProperty(callResult, "hlsjs", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                           } else {
                                             callResult.hlsjs = undefined;
                                           }
@@ -9023,7 +9023,7 @@ class t {
                                           } else {
                                             if ("id" in callResult) {
                                               const _Object18 = Object;
-                                              Object.defineProperty(callResult, "id", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                              Object.defineProperty(callResult, "id", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                             } else {
                                               callResult.id = undefined;
                                             }
@@ -9036,7 +9036,7 @@ class t {
                                             } else {
                                               if ("longResumeTracker" in callResult) {
                                                 const _Object19 = Object;
-                                                Object.defineProperty(callResult, "longResumeTracker", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                Object.defineProperty(callResult, "longResumeTracker", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                               } else {
                                                 callResult.longResumeTracker = undefined;
                                               }
@@ -9049,7 +9049,7 @@ class t {
                                               } else {
                                                 if ("minimumRebufferDuration" in callResult) {
                                                   const _Object20 = Object;
-                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                 } else {
                                                   callResult.minimumRebufferDuration = undefined;
                                                 }
@@ -9062,7 +9062,7 @@ class t {
                                                 } else {
                                                   if ("mux" in callResult) {
                                                     const _Object21 = Object;
-                                                    Object.defineProperty(callResult, "mux", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                    Object.defineProperty(callResult, "mux", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                   } else {
                                                     callResult.mux = undefined;
                                                   }
@@ -9075,7 +9075,7 @@ class t {
                                                   } else {
                                                     if ("playbackEventDispatcher" in callResult) {
                                                       const _Object22 = Object;
-                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                     } else {
                                                       callResult.playbackEventDispatcher = undefined;
                                                     }
@@ -9088,7 +9088,7 @@ class t {
                                                     } else {
                                                       if ("playbackHeartbeat" in callResult) {
                                                         const _Object23 = Object;
-                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                       } else {
                                                         callResult.playbackHeartbeat = undefined;
                                                       }
@@ -9101,7 +9101,7 @@ class t {
                                                       } else {
                                                         if ("playbackHeartbeatTime" in callResult) {
                                                           const _Object24 = Object;
-                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                         } else {
                                                           callResult.playbackHeartbeatTime = undefined;
                                                         }
@@ -9114,7 +9114,7 @@ class t {
                                                         } else {
                                                           if ("playheadTime" in callResult) {
                                                             const _Object25 = Object;
-                                                            Object.defineProperty(callResult, "playheadTime", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                            Object.defineProperty(callResult, "playheadTime", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                           } else {
                                                             callResult.playheadTime = undefined;
                                                           }
@@ -9127,7 +9127,7 @@ class t {
                                                           } else {
                                                             if ("seekingTracker" in callResult) {
                                                               const _Object26 = Object;
-                                                              Object.defineProperty(callResult, "seekingTracker", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                              Object.defineProperty(callResult, "seekingTracker", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                             } else {
                                                               callResult.seekingTracker = undefined;
                                                             }
@@ -9140,7 +9140,7 @@ class t {
                                                             } else {
                                                               if ("sustainedRebufferThreshold" in callResult) {
                                                                 const _Object27 = Object;
-                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                               } else {
                                                                 callResult.sustainedRebufferThreshold = undefined;
                                                               }
@@ -9153,7 +9153,7 @@ class t {
                                                               } else {
                                                                 if ("watchTimeTracker" in callResult) {
                                                                   const _Object28 = Object;
-                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                                 } else {
                                                                   callResult.watchTimeTracker = undefined;
                                                                 }
@@ -9166,7 +9166,7 @@ class t {
                                                                 } else {
                                                                   if ("currentFragmentPDT" in callResult) {
                                                                     const _Object29 = Object;
-                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                                   } else {
                                                                     callResult.currentFragmentPDT = undefined;
                                                                   }
@@ -9179,7 +9179,7 @@ class t {
                                                                   } else {
                                                                     if ("currentFragmentStart" in callResult) {
                                                                       const _Object30 = Object;
-                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "IconComponent", enumerable: "addAll", configurable: null, writable: "flex" });
+                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "IconComponent", enumerable: "onAnimationFailureCapture", configurable: "onAnimationFailure", writable: "onAnimationLoadedCapture" });
                                                                     } else {
                                                                       callResult.currentFragmentStart = undefined;
                                                                     }
@@ -9606,11 +9606,11 @@ const obj11 = { constructor: { value: t, writable: true, configurable: true } };
 t.prototype = Object.create(fn2.prototype, obj11);
 let tmp25 = fn(t, fn2);
 closure_1 = Rt();
-f113590 = function() {
+f113608 = function() {
   let constructResult;
   let tmp9;
   const self = this;
-  const obj = fn(f113590);
+  const obj = fn(f113608);
   const tmp = t;
   if (tmp) {
     const _Reflect = Reflect;
@@ -11009,7 +11009,7 @@ const items11 = [
                     }
                   });
                 }
-                let closure_10 = { video: "ip", audio: "isArray", totalBitrate: "isArray" };
+                let closure_10 = { video: "description", audio: "isArray", totalBitrate: "isArray" };
                 fn4 = function x(newQuality, arg1, arg2) {
                   let closure_0 = newQuality;
                   if (typeof newQuality.newQuality === "number") {

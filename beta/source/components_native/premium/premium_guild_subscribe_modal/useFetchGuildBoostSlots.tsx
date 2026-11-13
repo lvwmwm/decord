@@ -53,7 +53,7 @@ export default function useFetchGuildBoostSlots() {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -97,7 +97,7 @@ export default function useFetchGuildBoostSlots() {
               } else {
                 c1(false);
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp11) {
               c2 = 3;

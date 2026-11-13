@@ -62,7 +62,7 @@ let obj = function _handleOneRecipientInDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ obj = function _handleInviteUsers() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -212,7 +212,7 @@ obj = function _handleInviteUsers() {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                         } else {
                           try {
@@ -271,7 +271,7 @@ obj = function _handleInviteUsers() {
                                 obj.call(closure_3, false, true);
                                 length(c2[16])(closure_3);
                                 c2 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               }
                               closure_3 = value;
                               length = 3;
@@ -497,7 +497,7 @@ export default function NewGroupDMScreen(navigation) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -582,7 +582,7 @@ export default function NewGroupDMScreen(navigation) {
           c3 = 0;
           closure_129_11(false);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp48) {
         locationPage = tmp48;
@@ -817,7 +817,7 @@ export default function NewGroupDMScreen(navigation) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -864,7 +864,7 @@ export default function NewGroupDMScreen(navigation) {
             closure_1_25(false);
           }
           channel = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp14) {
           channel = 3;
           throw tmp14;

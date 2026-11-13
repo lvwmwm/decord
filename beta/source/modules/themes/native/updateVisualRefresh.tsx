@@ -1,10 +1,10 @@
-// Module ID: 19468
-// Function ID: 19469
+// Module ID: 19471
+// Function ID: 19472
 // Name: react-native
 // Dependencies: [16614, 2]
 // Exports: updateVisualRefresh
 
-// Module 19468 (react-native)
+// Module 19471 (react-native)
 import react_nativeDefault from "react-native" /* 16614 */;
 import size from "module_2" /* 2 */;
 

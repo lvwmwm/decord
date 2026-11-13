@@ -119,7 +119,7 @@ class QuestContentImpression {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -228,7 +228,7 @@ class QuestContentImpression {
               closure_129_0.onImpressionCallback();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           c3 = 3;

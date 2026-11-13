@@ -115,7 +115,7 @@ function FeaturedServer(guild) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -174,7 +174,7 @@ function FeaturedServer(guild) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -221,7 +221,7 @@ function FeaturedServer(guild) {
                     const obj = c1(c2[17]);
                     const recommendedGuilds = obj.getRecommendedGuilds();
                     c2 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp13) {
                   c2 = 3;
@@ -260,7 +260,7 @@ function FeaturedServer(guild) {
         } else {
           closure_129_1(false);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp37) {
         c3 = 3;

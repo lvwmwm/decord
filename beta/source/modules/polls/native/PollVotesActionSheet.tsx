@@ -161,7 +161,7 @@ function PollVotesHeader(message) {
           let obj = { value, done: true };
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -274,11 +274,11 @@ function PollVotesHeader(message) {
               }
               ref2.current = true;
               ref = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
           ref = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp29) {
           ref = 3;
           throw tmp29;

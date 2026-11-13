@@ -43,7 +43,7 @@ let obj = function _fetchDetectedGameCommunities() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -87,7 +87,7 @@ let obj = function _fetchDetectedGameCommunities() {
           const obj7 = { type: "MOBILE_GAME_COMMUNITIES_FETCH_SUCCESS", guilds, gameIds };
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp13) {
         c3 = 3;
@@ -130,7 +130,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -162,7 +162,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c0 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     } catch (tmp7) {
       c0 = 3;
       throw tmp7;

@@ -38,7 +38,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
               obj5.sourceQuestContent = sourceQuestContent;
               trackAdContentEvent(obj5);
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
         } catch (tmp12) {
@@ -115,7 +115,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignAnalytics.tsx");
 
-export const HexagonCampaignContentSurface = { FONT_PICKER: "FONT_PICKER", PROFILE_ROW_PROMO: "PROFILE_ROW_PROMO", NON_NITRO_CARD: "NON_NITRO_CARD", THEME_PICKER: "THEME_PICKER", APP_ICON_PICKER: "APP_ICON_PICKER", USER_PROFILE: "USER_PROFILE", GUILD_PROFILE: "GUILD_PROFILE" };
+export const HexagonCampaignContentSurface = { FONT_PICKER: "FONT_PICKER", PROFILE_ROW_PROMO: "PROFILE_ROW_PROMO", NON_NITRO_CARD: "NON_NITRO_CARD", THEME_PICKER: "THEME_PICKER", APP_ICON_PICKER: "APP_ICON_PICKER", USER_PROFILE: "USER_PROFILE", GUILD_PROFILE: "GUILD_PROFILE", EXPIRING_SOON_SHEET: "EXPIRING_SOON_SHEET", EXPIRED_SHEET: "EXPIRED_SHEET" };
 export function trackHexagonCampaignContentViewed(contentSurface) {
   let content;
   let obj2;

@@ -19,8 +19,8 @@ export function getTransformedBadgeColors(primaryLuminanceWeights) {
   let secondaryLuminanceWeights;
   let secondaryTintColor;
   let secondaryTintLuminances;
-  const f111047 = () => "#000000";
-  const f111048 = (item, index) => {
+  const f111063 = () => "#000000";
+  const f111064 = (item, index) => {
     const luminanceResult = obj4.luminance((item * secondaryLuminanceWeights[index].base + closure_2 * secondaryLuminanceWeights[index].tint) / (secondaryLuminanceWeights[index].base + secondaryLuminanceWeights[index].tint));
     return luminanceResult.hex();
   };
@@ -33,9 +33,9 @@ export function getTransformedBadgeColors(primaryLuminanceWeights) {
     if (obj.valid(primaryTintColor)) {
       const obj2 = tmp(671)(primaryTintColor);
       let closure_2 = obj2.luminance();
-      mapped = primaryTintLuminances.map(f111048);
+      mapped = primaryTintLuminances.map(f111064);
     } else {
-      mapped = primaryTintLuminances.map(f111047);
+      mapped = primaryTintLuminances.map(f111063);
     }
     primaryColorsTransformed = mapped;
   }
@@ -48,9 +48,9 @@ export function getTransformedBadgeColors(primaryLuminanceWeights) {
       if (obj3.valid(secondaryTintColor)) {
         const obj4 = tmp6(671)(secondaryTintColor);
         closure_2 = obj4.luminance();
-        mapped1 = secondaryTintLuminances.map(f111048);
+        mapped1 = secondaryTintLuminances.map(f111064);
       } else {
-        mapped1 = secondaryTintLuminances.map(f111047);
+        mapped1 = secondaryTintLuminances.map(f111063);
       }
       secondaryBaseColors = mapped1;
     }

@@ -143,7 +143,7 @@ let obj = function _consumeAppOpenBadgeState() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -280,7 +280,7 @@ obj = function _trackAppUIViewedAsync() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -341,7 +341,7 @@ obj = function _trackAppUIViewedAsync() {
             }, 1000);
             scheduleTrackAppUiViewed2();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c6 = 3;
@@ -370,7 +370,7 @@ obj = function _logLegacyAppUiViewed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -430,7 +430,7 @@ obj = function _logLegacyAppUiViewed() {
           const merged2 = Object.assign(closure_0);
           track(APP_UI_VIEWED, obj8, { logEventProperties: true });
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp6) {
         c8 = 3;
@@ -487,7 +487,7 @@ obj = function _trackAppUIViewed() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -656,7 +656,7 @@ obj = function _trackAppUIViewed() {
             logToDevice(obj16);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp71) {
         c6 = 3;
@@ -702,7 +702,7 @@ obj = function _trackAppLaunchCompletedAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -743,7 +743,7 @@ obj = function _trackAppLaunchCompletedAsync() {
           obj = closure_132_1(closure_132_2[22]);
           obj.track(closure_132_11.APP_LAUNCH_COMPLETED, closure_0, { logEventProperties: true });
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp20) {
         c8 = 3;

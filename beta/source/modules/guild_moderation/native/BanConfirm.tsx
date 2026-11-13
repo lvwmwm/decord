@@ -127,7 +127,7 @@ const memoResult = react.memo(function BanConfirm(arg0) {
   let tmp4Result5;
   let tmp4Result6;
   let v8jV9fx;
-  const f106095 = () => ({ banning: false, banError: false });
+  const f106111 = () => ({ banning: false, banError: false });
   ({ guildId: require, userId: importDefault, onBan } = arg0);
   let stateFromStores1;
   c7 = undefined;
@@ -146,10 +146,10 @@ const memoResult = react.memo(function BanConfirm(arg0) {
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef(0);
   const ref2 = stateFromStores1.useRef("");
-  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f106095), 2);
+  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f106111), 2);
   const items3 = [stateFromStores, stateFromStores1, onBan];
   let tmp14Result2 = null;
-  const tmp10 = stateFromStores(stateFromStores1.useState(f106095), 2);
+  const tmp10 = stateFromStores(stateFromStores1.useState(f106111), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {

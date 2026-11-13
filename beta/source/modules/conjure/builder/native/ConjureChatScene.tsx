@@ -426,7 +426,7 @@ export default function ConjureChatScene(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -490,7 +490,7 @@ export default function ConjureChatScene(guildId) {
           let result = openConjureAppInstallModal(obj6);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp15) {
         c4 = 3;
         throw tmp15;

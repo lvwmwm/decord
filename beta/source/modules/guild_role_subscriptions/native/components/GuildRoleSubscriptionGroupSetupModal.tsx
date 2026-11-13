@@ -1,15 +1,15 @@
-// Module ID: 20433
-// Function ID: 20434
+// Module ID: 20436
+// Function ID: 20437
 // Name: GuildRoleSubscriptionGroupSetupModal
-// Dependencies: [32, 5, 19, 20392, 17551, 1072, 21, 17558, 17571, 5868, 1113, 1260, 5921, 20403, 20388, 20404, 2]
+// Dependencies: [32, 5, 19, 20395, 17551, 1072, 21, 17558, 17571, 5868, 1113, 1260, 5921, 20406, 20391, 20407, 2]
 
-// Module 20433 (GuildRoleSubscriptionGroupSetupModal)
+// Module 20436 (GuildRoleSubscriptionGroupSetupModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import ToastUtils from "ToastUtils" /* 5868 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5921 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17571 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20392 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20395 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -36,7 +36,7 @@ let obj = function _createGroupFromStore() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -102,7 +102,7 @@ let obj = function _createGroupFromStore() {
           return obj;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp12) {
         c6 = 3;
         throw tmp12;
@@ -149,7 +149,7 @@ class GuildRoleSubscriptionGroupSetupModal {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -202,7 +202,7 @@ class GuildRoleSubscriptionGroupSetupModal {
                 closure_131_0.onClose();
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             groupListingId = id;
             if (null != groupListingId) {
@@ -293,9 +293,9 @@ class GuildRoleSubscriptionGroupSetupModal {
       obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
     }, items1);
     let obj5 = { guildId, editStateId, groupListingId: null, children: memo(RoleSubscriptionSettingsDisabledContextProvider, obj6) };
-    const EditStateContextProvider = tmp3(20403).EditStateContextProvider;
+    const EditStateContextProvider = tmp3(20406).EditStateContextProvider;
     obj6 = { guildId, children: memo(tmp13, obj7) };
-    RoleSubscriptionSettingsDisabledContextProvider = tmp3(20388).RoleSubscriptionSettingsDisabledContextProvider;
+    RoleSubscriptionSettingsDisabledContextProvider = tmp3(20391).RoleSubscriptionSettingsDisabledContextProvider;
     obj7 = {
       modalKey: error,
       onDone: function handleCreateGroupAndTier() {
@@ -305,7 +305,7 @@ class GuildRoleSubscriptionGroupSetupModal {
       onClose: callback,
       stepScreenPropsMap: memo1
     };
-    tmp13 = guildId(20404);
+    tmp13 = guildId(20407);
     const merged1 = Object.assign(merged);
     return memo(EditStateContextProvider, obj5);
   }

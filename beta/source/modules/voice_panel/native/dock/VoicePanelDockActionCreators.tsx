@@ -1,10 +1,10 @@
-// Module ID: 19729
-// Function ID: 19730
+// Module ID: 19732
+// Function ID: 19733
 // Name: VoicePanelDockActionCreators
 // Dependencies: [572, 2]
 // Exports: dismissVoicePanelDockVideoPIP, dismissVoicePanelDockWatchPrompt
 
-// Module 19729 (VoicePanelDockActionCreators)
+// Module 19732 (VoicePanelDockActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

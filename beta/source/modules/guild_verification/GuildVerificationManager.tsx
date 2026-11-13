@@ -1,9 +1,9 @@
-// Module ID: 19920
-// Function ID: 19921
+// Module ID: 19923
+// Function ID: 19924
 // Name: GuildVerificationManager
 // Dependencies: [1072, 15012, 1403, 9071, 15013, 7383, 2]
 
-// Module 19920 (GuildVerificationManager)
+// Module 19923 (GuildVerificationManager)
 import Constants from "Constants" /* 1072 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import GuildInviteFlags from "GuildInviteFlags" /* 9071 */;

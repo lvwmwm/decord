@@ -135,7 +135,7 @@ const memoResult = react.memo(function GameClaimCoachmark(arg0) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -165,7 +165,7 @@ const memoResult = react.memo(function GameClaimCoachmark(arg0) {
                 return obj;
               } else {
                 c0 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp11) {
               c0 = 3;

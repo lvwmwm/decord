@@ -69,7 +69,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
             intl = tmp3(c2[14]).intl;
             open("GUILD_ENABLE_COMMUNICATION_SUCCESS", obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c2 = 3;

@@ -6,14 +6,14 @@
 // Module 13419
 
 export function flatten(arr) {
-  const f130601 = (arr) => {
+  const f130636 = (arr) => {
     if (Array.isArray(arr)) {
-      const item = arr.forEach(f130601);
+      const item = arr.forEach(f130636);
     } else {
       items.push(arr);
     }
   };
   const items = [];
-  let item = arr.forEach(f130601);
+  let item = arr.forEach(f130636);
   return items;
 }

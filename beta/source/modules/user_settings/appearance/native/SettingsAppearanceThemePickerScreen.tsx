@@ -420,7 +420,7 @@ function ThemePicker(defaultIndex) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -517,7 +517,7 @@ function ThemePicker(defaultIndex) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -556,7 +556,7 @@ function ThemePicker(defaultIndex) {
                 callback(tmp11);
                 close();
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           }
@@ -571,7 +571,7 @@ function ThemePicker(defaultIndex) {
           close();
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp18) {
         c2 = 3;
         throw tmp18;
@@ -626,7 +626,7 @@ function ThemePicker(defaultIndex) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -670,7 +670,7 @@ function ThemePicker(defaultIndex) {
               closure_1_9.dispatch(data.data.action);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp21) {
             c4 = 3;
             throw tmp21;

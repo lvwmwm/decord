@@ -18,7 +18,7 @@ export function useCardLayout() {
   let ref;
   let result4;
   let tmp3;
-  const f115196 = () => {
+  const f115214 = () => {
     const obj = ref(dependencyMap[3]);
     return obj.getWindowDimensions().width;
   };
@@ -34,8 +34,8 @@ export function useCardLayout() {
     }
     tmp.current = nativeScrollRef;
   }, []);
-  [tmp3, dependencyMap] = _slicedToArray(react.useState(f115196), 2);
-  const tmp2 = _slicedToArray(react.useState(f115196), 2);
+  [tmp3, dependencyMap] = _slicedToArray(react.useState(f115214), 2);
+  const tmp2 = _slicedToArray(react.useState(f115214), 2);
   const layoutEffect = react.useLayoutEffect(() => {
     const current = ref.current;
     if (current != null) {
@@ -57,7 +57,7 @@ export function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    return { columns: num, cardWidth: "r", rowWidth: "add", ref: callback, onLayout: callback1 };
+    return { columns: num, cardWidth: "r", rowWidth: "channel", ref: callback, onLayout: callback1 };
   } else {
     let bound;
     let num2 = 2;

@@ -71,7 +71,7 @@ obj = function _fetchGiftableEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -120,7 +120,7 @@ obj = function _fetchGiftableEntitlements() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;

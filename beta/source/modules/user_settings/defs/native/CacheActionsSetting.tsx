@@ -92,7 +92,7 @@ function CacheActionsActionSheet() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -124,7 +124,7 @@ function CacheActionsActionSheet() {
             const intl = closure_128_0(closure_128_2[8]).intl;
             closure_128_10(intl.string(closure_128_0(closure_128_2[8]).t.GgUIfl));
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c2 = 3;
@@ -170,7 +170,7 @@ function CacheActionsActionSheet() {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -206,7 +206,7 @@ function CacheActionsActionSheet() {
             const intl = closure_128_0(closure_128_2[8]).intl;
             closure_128_10(intl.string(closure_128_0(closure_128_2[8]).t["23xR5w"]));
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           c2 = 3;

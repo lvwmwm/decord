@@ -1,10 +1,10 @@
-// Module ID: 20095
-// Function ID: 20096
+// Module ID: 20098
+// Function ID: 20099
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 5100, 5041, 5102, 1385, 18572, 9188, 1072, 21, 5921, 5170, 7071, 1113, 5891, 5107, 20096, 19309, 9190, 9686, 20098, 5883, 15429, 7159, 9566, 11206, 14811, 8765, 9172, 20099, 12300, 7001, 13244, 17950, 10414, 5756, 575, 1499, 504, 9187, 20101, 7531, 7538, 5868, 8279, 6191, 19344, 1411, 20102, 5766, 2]
+// Dependencies: [19, 5100, 5041, 5102, 1385, 18572, 9188, 1072, 21, 5921, 5170, 7071, 1113, 5891, 5107, 20099, 19309, 9190, 9686, 20101, 5883, 15429, 7159, 9566, 11206, 14811, 8765, 9172, 20102, 12300, 7001, 13244, 17950, 10414, 5756, 575, 1499, 504, 9187, 20104, 7531, 7538, 5868, 8279, 6191, 19344, 1411, 20105, 5766, 2]
 // Exports: default
 
-// Module 20095 (GuildSettingsModalLanding)
+// Module 20098 (GuildSettingsModalLanding)
 import intl8 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
@@ -18,7 +18,7 @@ import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 
 import RobotIcon from "RobotIcon" /* 12300 */;
 import HammerIcon from "HammerIcon" /* 13244 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15429 */;
-import ModerationIcon from "ModerationIcon" /* 20099 */;
+import ModerationIcon from "ModerationIcon" /* 20102 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 5100 */;
 import GuildStore from "GuildStore" /* 5041 */;
@@ -104,7 +104,7 @@ function SettingsSection(guild) {
     };
     const TableRow2 = tmp2(7071).TableRow;
     intl2 = tmp2(1113).intl;
-    obj5 = { IconComponent: guild(20096).ChannelListIcon };
+    obj5 = { IconComponent: guild(20099).ChannelListIcon };
     Icon2 = tmp2(7071).TableRow.Icon;
     items.push(closure_15(TableRow2, obj4, "channels"));
   }
@@ -141,7 +141,7 @@ function SettingsSection(guild) {
     items.push(closure_15(TableRow4, obj8, "server-tag"));
   }
   if (isGuildAdmin) {
-    const tmp2Result2 = guild(20098);
+    const tmp2Result2 = guild(20101);
     isGuildAdmin = tmp2Result2.canSeeVanityUrlSettings(guild);
   }
   if (isGuildAdmin) {
@@ -558,7 +558,7 @@ function GuildSettingsModalLandingInner(guild) {
     }
   }, items2);
   ({ canManageGuild, isGuildAdmin, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
-  const obj6 = guild(20101);
+  const obj6 = guild(20104);
   const tmp11 = obj6.useChannelsAllowedToUnlink(guild.id).length > 0;
   const obj7 = guild(7531);
   const canManageGuildRoleSubscriptions = obj7.useCanManageGuildRoleSubscriptions(guild);
@@ -614,7 +614,7 @@ function GuildSettingsModalLandingInner(guild) {
   const tmp16 = closure_17;
   if (tmp17Result) {
     const obj11 = { guild, pushScreen: callback };
-    tmp17Result = tmp17(tmp3(20102), obj11);
+    tmp17Result = tmp17(tmp3(20105), obj11);
   }
   const obj12 = { children: items6 };
   items5[6] = tmp17Result;

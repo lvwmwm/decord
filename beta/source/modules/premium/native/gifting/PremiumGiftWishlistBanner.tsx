@@ -155,7 +155,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;

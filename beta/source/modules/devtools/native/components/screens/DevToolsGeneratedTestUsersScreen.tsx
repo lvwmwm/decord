@@ -81,7 +81,7 @@ function PoolIdInput(onSubmit) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -126,7 +126,7 @@ function PoolIdInput(onSubmit) {
           closure_128_5(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp26) {
         closure_2 = tmp26;
         if (0 === c3) {
@@ -277,7 +277,7 @@ export default function DevToolsGeneratedTestUsersScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -306,7 +306,7 @@ export default function DevToolsGeneratedTestUsersScreen() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c2 = 3;

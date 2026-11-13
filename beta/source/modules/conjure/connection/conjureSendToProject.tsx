@@ -31,7 +31,7 @@ let obj = function _sendConjureMessageToProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -155,7 +155,7 @@ let obj = function _sendConjureMessageToProject() {
           clearTimeout(c2);
           conjureWebSocket.close();
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp28) {
         url = tmp28;

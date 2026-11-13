@@ -82,7 +82,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           const items = [tmp];
           c2 = 2;
@@ -170,7 +170,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else if (!value) {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           const intl = title(c3[23]).intl;
           const string = intl.string;
@@ -255,7 +255,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           intl4 = title(c3[23]).intl;
           show(obj9);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp54) {
           c3 = 3;
           throw tmp54;

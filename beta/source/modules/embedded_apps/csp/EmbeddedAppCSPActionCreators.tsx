@@ -26,7 +26,7 @@ let obj = function _readPolicy() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ let obj = function _readPolicy() {
             c4 = 0;
             closure_130_4.delete(routerOrigin);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp41) {
           closure_3 = tmp41;

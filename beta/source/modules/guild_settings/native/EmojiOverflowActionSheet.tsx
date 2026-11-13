@@ -1,10 +1,10 @@
-// Module ID: 20178
-// Function ID: 20179
+// Module ID: 20181
+// Function ID: 20182
 // Name: EmojiOverflowActionSheet
 // Dependencies: [5, 19, 17, 21, 5170, 7459, 5874, 1411, 5783, 7159, 7071, 5894, 1113, 10210, 10383, 6611, 5868, 7153, 2]
 // Exports: default
 
-// Module 20178 (EmojiOverflowActionSheet)
+// Module 20181 (EmojiOverflowActionSheet)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import EmojiActionCreators from "EmojiActionCreators" /* 10210 */;
@@ -105,7 +105,7 @@ export default function EmojiOverflowActionSheet(emoji) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             let c4;
@@ -177,7 +177,7 @@ export default function EmojiOverflowActionSheet(emoji) {
                 }
                 closure_130_4();
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp38) {
               closure_3 = tmp38;

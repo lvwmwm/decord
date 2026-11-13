@@ -48,7 +48,7 @@ let obj = function _getOrResolveChannelIdFromDestinationId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -77,13 +77,13 @@ let obj = function _getOrResolveChannelIdFromDestinationId() {
               return obj6;
             } else {
               c1 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
         } else if (1 === tmp3) {
           c4 = 0;
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else if (arg0 === 1) {
           c1 = 3;
           throw value;
@@ -192,7 +192,7 @@ export default function formatResults(hasQuery) {
   let queryMode;
   let selectedDestinations;
   let targetDestination;
-  const f106315 = (type) => {
+  const f106331 = (type) => {
     obj = queryMode(dependencyMap[11]);
     let isNotNullishResult = obj.isNotNullish(type);
     const tmp = queryMode;
@@ -215,7 +215,7 @@ export default function formatResults(hasQuery) {
     if (channelFilter === undefined) {
       channelFilter = canShareToChannel;
     }
-    return tmp26(results.filter(f106315));
+    return tmp26(results.filter(f106331));
   } else {
     let tmp2 = null;
     if (null != pinnedDestinations) {
@@ -279,7 +279,7 @@ export default function formatResults(hasQuery) {
         tmp21 = canShareToChannel;
       }
       closure_1 = tmp21;
-      const found = items.filter(f106315);
+      const found = items.filter(f106331);
       if (selectedDestinations != null) {
         found1 = selectedDestinations.find((item) => {
           obj = _mod12;

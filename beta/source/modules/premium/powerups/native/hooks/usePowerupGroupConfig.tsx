@@ -43,7 +43,7 @@ export default function usePowerupGroupConfig(arg0, arg1) {
     let obj3;
     let stringResult;
     if ("guildTagsBadgePacks" === group.group) {
-      const obj2 = { title: intl.string(_modDef2696.KC9HRW), description: intl2.string(_modDef2696.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
+      const obj2 = { title: intl.string(_modDef2696.KC9HRW), description: intl2.string(_modDef2696.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "no-hide-descendants" };
       intl = intl4.intl;
       intl2 = intl4.intl;
       stringResult = undefined;

@@ -210,7 +210,7 @@ export default function ForwardModal(message) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -367,7 +367,7 @@ export default function ForwardModal(message) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp94) {
           c4 = 3;
           throw tmp94;

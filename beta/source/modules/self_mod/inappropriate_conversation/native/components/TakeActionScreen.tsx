@@ -116,7 +116,7 @@ export default function TakeActionButtons(senderId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -167,7 +167,7 @@ export default function TakeActionButtons(senderId) {
           closure_128_3(tmp3(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         setReported = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp21) {
         setReported = 3;
         throw tmp21;

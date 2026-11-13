@@ -101,7 +101,7 @@ function appendFailedUserMessage(projectId, nonce, message) {
   const result = set(nonce, id);
   const tmp6 = DispatcherDefault;
   const dispatch = tmp6.dispatch;
-  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: "ip" };
+  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: "description" };
   const currentUser1 = obj.getCurrentUser();
   id1 = undefined;
   if (currentUser1 != null) {
@@ -382,7 +382,7 @@ let obj = function _openWithFreshTicket() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -423,7 +423,7 @@ let obj = function _openWithFreshTicket() {
             c6 = 0;
             if (closure_1.disposed) {
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               closure_132_13(closure_0, "failed");
               open = closure_1;
@@ -471,7 +471,7 @@ let obj = function _openWithFreshTicket() {
             if (closure_1.disposed) {
               c6 = 0;
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const ws = closure_1.ws;
               open = ws.open;
@@ -505,7 +505,7 @@ let obj = function _openWithFreshTicket() {
             }
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp61) {
         if (0 === c6) {

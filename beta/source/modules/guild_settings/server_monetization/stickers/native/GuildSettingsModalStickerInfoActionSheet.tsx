@@ -1,10 +1,10 @@
-// Module ID: 20196
-// Function ID: 20197
+// Module ID: 20199
+// Function ID: 20200
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6925, 21, 504, 10418, 5869, 1113, 5420, 7415, 575, 7159, 7071, 10383, 20189, 5894, 2]
+// Dependencies: [5, 32, 19, 17, 6925, 21, 504, 10418, 5869, 1113, 5420, 7415, 575, 7159, 7071, 10383, 20192, 5894, 2]
 
-// Module 20196 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 20189 */;
+// Module 20199 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 20192 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -58,7 +58,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
             closure_128_4(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp34) {
           closure_2 = tmp34;
           if (0 === c3) {

@@ -52,7 +52,7 @@ export function useIsPersistentSecureFramesFingerprint(userId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let tmp47;
@@ -126,7 +126,7 @@ export function useIsPersistentSecureFramesFingerprint(userId) {
           c5 = 0;
           closure_2(false);
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp47) {
         if (0 === c5) {

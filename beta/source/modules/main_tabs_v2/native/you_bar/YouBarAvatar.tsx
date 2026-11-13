@@ -532,7 +532,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -564,7 +564,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
           value.openUserSettings();
           closure_128_2(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         _undefined = 3;

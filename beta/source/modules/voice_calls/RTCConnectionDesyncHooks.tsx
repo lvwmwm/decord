@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, desyncedParticipants, set;
 
-const f116146 = () => {
+const f116164 = () => {
   desyncedParticipants = null;
   if (closure_0 === channelId.getChannelId()) {
     desyncedParticipants = desyncedParticipants.getDesyncedParticipants();
@@ -79,7 +79,7 @@ export function useDesyncedChannelParticipants(arg0) {
   _require = arg0;
   const items = [RTCConnectionDesyncStore, RTCConnectionStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f116146);
+  return obj.useStateFromStores(items, f116164);
 }
 export function useEnsureSyncedChannelParticipants(arg0, arg1) {
   let channelId;
@@ -87,7 +87,7 @@ export function useEnsureSyncedChannelParticipants(arg0, arg1) {
   _require = arg0;
   let obj = require("get initialized");
   let items = [RTCConnectionDesyncStore, RTCConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f116146);
+  const stateFromStores = obj.useStateFromStores(items, f116164);
   const items1 = [stateFromStores, arg1];
   return react.useMemo(() => {
     let tmp3 = closure_0;

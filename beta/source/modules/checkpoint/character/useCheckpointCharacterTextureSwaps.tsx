@@ -68,7 +68,7 @@ let obj = function _swapTextures() {
                           const obj2 = { value, done: true };
                           return obj2;
                         } else {
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       } else {
                         try {
@@ -102,7 +102,7 @@ let obj = function _swapTextures() {
                               const result = closure_1_5.set(closure_0, closure_1);
                             }
                             c4 = 3;
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                         } catch (tmp16) {
                           c4 = 3;
@@ -210,7 +210,7 @@ export function useCheckpointCharacterTextureSwaps(textureManager) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -251,7 +251,7 @@ export function useCheckpointCharacterTextureSwaps(textureManager) {
                 closure_2_4(referencedAssets);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp12) {
             c2 = 3;

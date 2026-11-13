@@ -565,7 +565,7 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c3;
@@ -607,7 +607,7 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp18) {
             let closure_2 = tmp18;

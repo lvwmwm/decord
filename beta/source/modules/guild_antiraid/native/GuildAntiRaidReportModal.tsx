@@ -133,7 +133,7 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -169,7 +169,7 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
           closure_128_0();
         }
         first = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp15) {
         first = 3;
         throw tmp15;

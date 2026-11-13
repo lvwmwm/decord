@@ -456,10 +456,10 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
   }, items6);
   const items7 = [memo1];
   const memo2 = memo.useMemo(() => {
-    const f127479 = (item) => "" !== item;
+    const f127514 = (item) => "" !== item;
     const values = Object.values(memo1);
-    const items = [...new Set(values.filter(f127479))];
-    new Set(values.filter(f127479));
+    const items = [...new Set(values.filter(f127514))];
+    new Set(values.filter(f127514));
     return items;
   }, items7);
   const items8 = [flag, memo2.join(",")];

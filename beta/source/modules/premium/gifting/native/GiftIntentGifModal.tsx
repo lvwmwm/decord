@@ -50,7 +50,7 @@ let obj = function _sendGiftIntentGif() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -120,7 +120,7 @@ let obj = function _sendGiftIntentGif() {
               items[0] = closure_130_1(closure_130_2[13]).PREMIUM_GIFT_INTENT_CARD;
               track(GIFT_INTENT_MESSAGE_SENT, obj10);
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             const id = user.id;
             const sendMessage = closure_130_1(closure_130_2[10]).sendMessage;
@@ -264,7 +264,7 @@ const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIn
 
 export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f105944 = () => {
+  const f105960 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -293,7 +293,7 @@ export default function GiftIntentGifModal(arg0) {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f105944) };
-  require("react")(f105944);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f105960) };
+  require("react")(f105960);
   return closure_10(require("Navigator").Navigator, obj);
 };

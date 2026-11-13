@@ -213,7 +213,7 @@ let items = [
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           while (true) {
@@ -252,7 +252,7 @@ let items = [
             }
             if (_map === undefined) {
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c5 = 1;
               c0 = tmp11;
@@ -287,7 +287,7 @@ let items = [
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           while (true) {
@@ -325,7 +325,7 @@ let items = [
             }
             if (value === undefined) {
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c5 = 1;
               value = tmp12;
@@ -358,7 +358,7 @@ let items = [
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           while (true) {
@@ -397,7 +397,7 @@ let items = [
             }
             if (_map === undefined) {
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c5 = 1;
               c0 = tmp11;

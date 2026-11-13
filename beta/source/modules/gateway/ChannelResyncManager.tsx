@@ -1,9 +1,9 @@
-// Module ID: 19858
-// Function ID: 19859
+// Module ID: 19861
+// Function ID: 19862
 // Name: ChannelResyncManager
 // Dependencies: [5, 502, 5019, 6862, 5041, 6655, 1072, 5026, 3, 1089, 7383, 1252, 572, 7903, 15880, 1403, 1266, 2]
 
-// Module 19858 (ChannelResyncManager)
+// Module 19861 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -271,7 +271,7 @@ let obj = function _scheduleGuildResyncs() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -422,7 +422,7 @@ let obj = function _scheduleGuildResyncs() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c4 = 3;
@@ -446,7 +446,7 @@ obj = function _getResyncGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

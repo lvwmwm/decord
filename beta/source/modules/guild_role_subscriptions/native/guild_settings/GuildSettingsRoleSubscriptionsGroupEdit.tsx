@@ -1,14 +1,14 @@
-// Module ID: 20383
-// Function ID: 20384
+// Module ID: 20386
+// Function ID: 20387
 // Name: GuildSettingsRoleSubscriptionsGroupEdit
-// Dependencies: [5, 32, 19, 17, 1362, 21, 1499, 17558, 20384, 20317, 5767, 20385, 12, 7097, 7663, 1113, 5868, 575, 20387, 20391, 20396, 2]
+// Dependencies: [5, 32, 19, 17, 1362, 21, 1499, 17558, 20387, 20320, 5767, 20388, 12, 7097, 7663, 1113, 5868, 575, 20390, 20394, 20399, 2]
 // Exports: default
 
-// Module 20383 (GuildSettingsRoleSubscriptionsGroupEdit)
+// Module 20386 (GuildSettingsRoleSubscriptionsGroupEdit)
 import react_native from "react-native" /* 17 */;
 import ApplicationConstants from "ApplicationConstants" /* 1362 */;
 import ToastUtils from "ToastUtils" /* 5868 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 20396 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 20399 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -110,7 +110,7 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
           closure_128_5(null);
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp16) {
         c2 = 3;
         throw tmp16;

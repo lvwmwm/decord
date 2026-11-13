@@ -22,7 +22,7 @@ let _require;
 let c3;
 let closure_4;
 let hasOwnProperty;
-const f113468 = () => {
+const f113486 = () => {
   const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
   let value = deliveryAdDecisionByPlacement.get(closure_0);
   if (value == null) {
@@ -76,7 +76,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f113468, items1);
+  stateFromStores = obj.useStateFromStores(items, f113486, items1);
   const items2 = [stateFromStores, arg0];
   closure_3(() => {
     let current;
@@ -109,7 +109,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   const items3 = [AdDeliveryStore];
   const items4 = [arg0];
   const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items3, f113468, items4);
+  const stateFromStores1 = obj2.useStateFromStores(items3, f113486, items4);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   require("AdDecisionUtils");
@@ -147,7 +147,7 @@ export function useAdDecisionForPlacement(arg0) {
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f113468, items1);
+  return obj.useStateFromStores(items, f113486, items1);
 }
 export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   let stateFromStores;
@@ -156,7 +156,7 @@ export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   const items = [AdDeliveryStore];
   const items1 = [MOBILE_HOME_DOCK_AREA];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f113468, items1);
+  stateFromStores = obj.useStateFromStores(items, f113486, items1);
   const items2 = [stateFromStores, MOBILE_HOME_DOCK_AREA];
   closure_3(() => {
     let current;
@@ -199,7 +199,7 @@ export function useDeliveredCreativeForPlacement(MOBILE_HOME_DOCK_AREA, QUEST_BA
   let obj2 = require("get initialized");
   const items2 = [AdDeliveryStore];
   const items3 = [MOBILE_HOME_DOCK_AREA];
-  const stateFromStores1 = obj2.useStateFromStores(items2, f113468, items3);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f113486, items3);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   const tmp3 = QuestStore;

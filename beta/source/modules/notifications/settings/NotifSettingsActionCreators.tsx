@@ -44,7 +44,7 @@ let obj = function _persistPendingEdit() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c7;
@@ -90,7 +90,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Unable to take ownership of notification settings apply");
                 skipEdit(pendingEdit);
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 const obj13 = require("user_settings/UserSettingsUtils");
                 const protoToB64Result = obj13.protoToB64(require("notification_settings").DeclarativeSettings, pendingEdit.partialSettings);
@@ -112,7 +112,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Not persisting proto because there is nothing to change");
                 skipEdit(pendingEdit);
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           }
@@ -123,7 +123,7 @@ let obj = function _persistPendingEdit() {
             let body = versions;
             if (closure_133_4.applyingEdit !== pendingEdit) {
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               status = closure_133_0;
               let tmp45;
@@ -189,7 +189,7 @@ let obj = function _persistPendingEdit() {
             if (closure_133_4.applyingEdit !== pendingEdit) {
               c7 = 0;
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               resetAnyPending = status.declarative_settings_out_of_date;
               const tmp114 = resetAnyPending;
@@ -246,7 +246,7 @@ let obj = function _persistPendingEdit() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp100) {
         versions = tmp100;
         if (0 === c7) {
@@ -272,7 +272,7 @@ obj = function _reload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

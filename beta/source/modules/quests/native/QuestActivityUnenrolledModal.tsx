@@ -1,10 +1,10 @@
-// Module ID: 19554
-// Function ID: 19555
+// Module ID: 19557
+// Function ID: 19558
 // Name: QuestActivityUnenrolledModal
-// Dependencies: [5, 32, 19, 17, 7955, 19553, 6869, 21, 5170, 575, 1357, 5401, 5192, 504, 7424, 7978, 9805, 14961, 6872, 1411, 9806, 7981, 6831, 5232, 17349, 17452, 6191, 5874, 14957, 5783, 1113, 5790, 7088, 7663, 8462, 14964, 11659, 2]
+// Dependencies: [5, 32, 19, 17, 7955, 19556, 6869, 21, 5170, 575, 1357, 5401, 5192, 504, 7424, 7978, 9805, 14961, 6872, 1411, 9806, 7981, 6831, 5232, 17349, 17452, 6191, 5874, 14957, 5783, 1113, 5790, 7088, 7663, 8462, 14964, 11659, 2]
 // Exports: default
 
-// Module 19554 (QuestActivityUnenrolledModal)
+// Module 19557 (QuestActivityUnenrolledModal)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
@@ -23,7 +23,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import QuestStore from "QuestStore" /* 7955 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19553 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19556 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
@@ -104,7 +104,7 @@ function QuestActivityUnenrolledModalInner(quest) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -138,7 +138,7 @@ function QuestActivityUnenrolledModalInner(quest) {
           const arr = checked(c2[22]);
           arr.pop();
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c2 = 3;

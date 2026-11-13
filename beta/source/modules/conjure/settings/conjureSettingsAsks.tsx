@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, channel, dependencyMap, set2;
 
-const f104599 = () => set;
+const f104615 = () => set;
 function subscribe(arg0) {
   let closure_0 = arg0;
   set1.add(arg0);
@@ -102,7 +102,7 @@ let result = size.fileFinishedImporting("modules/conjure/settings/conjureSetting
 
 export { markSettingsRequestSaved };
 export function useSavedSettingsRequests() {
-  return react.useSyncExternalStore(subscribe, f104599);
+  return react.useSyncExternalStore(subscribe, f104615);
 }
 export { supersededSettingsRequests };
 export function conjureSettingsRequestDone(settingsRequest, settings, arg2) {
@@ -191,7 +191,7 @@ export function useConjureSettingsAsk(projectId, request, askId) {
   dependencyMap = request;
   _slicedToArray = askId;
   let obj = react;
-  const syncExternalStore = react.useSyncExternalStore(subscribe, f104599);
+  const syncExternalStore = react.useSyncExternalStore(subscribe, f104615);
   let tmp = _slicedToArray(react.useState(false), 2);
   [tmp2, react] = tmp;
   if (null != askId) {

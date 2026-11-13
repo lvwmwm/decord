@@ -21,7 +21,7 @@ let set;
 
 let tmp3;
 const generateSpanId = tmp3(693);
-const f80404 = (attributes) => {
+const f80420 = (attributes) => {
   let spanId;
   let traceFlags;
   let traceId;
@@ -127,7 +127,7 @@ function spanToJSON(getSpanJSON) {
       mapped = undefined;
       if (links) {
         if (links.length > 0) {
-          mapped = links.map(f80404);
+          mapped = links.map(f80420);
         }
       }
       return obj2;
@@ -173,7 +173,7 @@ export function convertSpanLinksForEnvelope(_links) {
   let mapped;
   if (_links) {
     if (_links.length > 0) {
-      mapped = _links.map(f80404);
+      mapped = _links.map(f80420);
     }
   }
   return mapped;

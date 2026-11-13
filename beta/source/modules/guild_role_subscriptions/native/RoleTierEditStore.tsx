@@ -1,10 +1,10 @@
-// Module ID: 20392
-// Function ID: 20393
+// Module ID: 20395
+// Function ID: 20396
 // Name: RoleTierEditStore
 // Dependencies: [32, 5, 1259, 1254, 7527, 5085, 5753, 17558, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 20392 (RoleTierEditStore)
+// Module 20395 (RoleTierEditStore)
 import react_native from "react-native" /* 1259 */;
 import _slicedToArray2 from "_slicedToArray" /* 5085 */;
 import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7527 */;
@@ -90,7 +90,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -146,7 +146,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0) => {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp21) {
             if (0 === c2) {

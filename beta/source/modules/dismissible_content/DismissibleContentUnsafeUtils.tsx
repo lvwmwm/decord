@@ -173,7 +173,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -226,7 +226,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
           obj = closure_132_0(closure_132_2[6]);
           const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, obj6);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp25) {
         c6 = 3;
@@ -252,7 +252,7 @@ obj = function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ obj = function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
           obj = closure_132_0(closure_132_2[6]);
           const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, closure_1);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         c6 = 3;
@@ -317,7 +317,7 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -356,7 +356,7 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
             obj = closure_133_0(closure_133_2[6]);
             const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, snowflakeId);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c7 = 3;

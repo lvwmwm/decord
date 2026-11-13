@@ -108,7 +108,7 @@ export function useRequestConjureMentionedUsers(text) {
   _require = text;
   let items = [text];
   const memo = react.useMemo(() => {
-    const f130205 = (kind) => {
+    const f130240 = (kind) => {
       let items1;
       if ("mention" === kind.kind) {
         const items = [kind.userId];
@@ -119,8 +119,8 @@ export function useRequestConjureMentionedUsers(text) {
       return items1;
     };
     const obj = splitConjureMentions(_require);
-    let items = [...new Set(obj.flatMap(f130205))];
-    new Set(obj.flatMap(f130205));
+    let items = [...new Set(obj.flatMap(f130240))];
+    new Set(obj.flatMap(f130240));
     return items;
   }, items);
   let items1 = [memo];
@@ -142,12 +142,12 @@ export function useRequestConjureMentionedUsers(text) {
 export function withConjureMentionNames(body) {
   let attachment;
   let user;
-  const f104565 = (arg0) => user.getUser(arg0);
-  const f104566 = (arg0) => attachment.getAttachment(arg0);
+  const f104581 = (arg0) => user.getUser(arg0);
+  const f104582 = (arg0) => attachment.getAttachment(arg0);
   return body.replace(closure_6, (arg0, arg1, arg2) => {
     if (null == arg1) {
       let str2 = arg2;
-      const tmp7 = f130208;
+      const tmp7 = f130243;
       if (arg2 == null) {
         str2 = "";
       }
@@ -164,7 +164,7 @@ export function withConjureMentionNames(body) {
       return "@" + name;
     } else {
       let combined = arg0;
-      const tmp3 = f130207(arg1);
+      const tmp3 = f130242(arg1);
       if (null != tmp3) {
         const _HermesInternal = HermesInternal;
         const obj = trimmed(closure_2_2[3]);
@@ -180,12 +180,12 @@ export function useConjureMentionNames(trimmed) {
   const items = [UserStore, ConjureStoredAttachmentStore];
   const items1 = [trimmed];
   return obj.useStateFromStores(items, () => {
-    const f130207 = (arg0) => user.getUser(arg0);
-    const f130208 = (arg0) => attachment.getAttachment(arg0);
+    const f130242 = (arg0) => user.getUser(arg0);
+    const f130243 = (arg0) => attachment.getAttachment(arg0);
     return trimmed.replace(re6, (arg0, arg1, arg2) => {
       if (null == arg1) {
         let str2 = arg2;
-        const tmp7 = f130208;
+        const tmp7 = f130243;
         if (arg2 == null) {
           str2 = "";
         }
@@ -202,7 +202,7 @@ export function useConjureMentionNames(trimmed) {
         return "@" + name;
       } else {
         let combined = arg0;
-        const tmp3 = f130207(arg1);
+        const tmp3 = f130242(arg1);
         if (null != tmp3) {
           const _HermesInternal = HermesInternal;
           const obj = trimmed(closure_2_2[3]);

@@ -123,7 +123,7 @@ export default function ConjureSecretsSheet(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -228,7 +228,7 @@ export default function ConjureSecretsSheet(projectId) {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp67) {
         closure_2 = tmp67;
         if (0 === c3) {

@@ -195,7 +195,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -301,7 +301,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
           c3 = 0;
           closure_129_10(false);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         const tmp31 = closure_129_4;
         if (tmp31) {

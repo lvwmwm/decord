@@ -506,7 +506,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
                   intl12 = tmp4(1113).intl;
                   obj16 = obj10;
                 } else if (canSendInvite) {
-                  const obj11 = { label: intl11.string(tmp4(1113).t["hC/Zey"]), disabled: message.author.id === id3, footerLabel: "Array" };
+                  const obj11 = { label: intl11.string(tmp4(1113).t["hC/Zey"]), disabled: message.author.id === id3, footerLabel: "r" };
                   intl11 = tmp4(1113).intl;
                   obj16 = obj11;
                 } else if (isInParty) {
@@ -643,7 +643,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "flexDirection", ctaButtonIsLoading: "Array", footerLabel: "PX_8", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "match", maxPartySize: "padding", partyMemberAvatarURIs: "__esModule", partySizeText: "hug", platformIconKeys: [], coverImageUrl: "RTCPeerConnection", detailsText: "screenshotIntegration", title: "hug" };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "flexDirection", ctaButtonIsLoading: "Array", footerLabel: "PX_8", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "add", maxPartySize: "w", partyMemberAvatarURIs: "pos", partySizeText: null, platformIconKeys: [], coverImageUrl: null, detailsText: null, title: 242.646 };
           intl = tmp4(1113).intl;
           if (contentClassificationVisibility === tmp4(13970).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1113).intl;

@@ -144,7 +144,7 @@ export function handleAddDefaultDoubleTapReaction(message, channel) {
         const result1 = obj4.convertNameToSurrogate("heart");
         let tmp11 = null;
         if ("" !== result1) {
-          obj5 = { name: result1, id: "flexDirection", animated: -522190193 };
+          obj5 = { name: result1, id: "flexDirection", animated: null };
           tmp11 = obj5;
         }
         if (null != tmp11) {

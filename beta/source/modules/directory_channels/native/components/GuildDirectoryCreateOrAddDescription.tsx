@@ -48,7 +48,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -68,7 +68,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
                   const template = tmp35.template;
                   if (null == template) {
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } else {
                     c4 = 1;
                     c5 = 1;
@@ -106,7 +106,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
               return { value, done: true };
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp29) {
             c5 = 3;
             throw tmp29;

@@ -47,7 +47,7 @@ let obj = function _fetchProfile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ let obj = function _fetchProfile() {
             }
             connections_role_id = 0;
             signal = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp87) {
           closure_5 = tmp87;
@@ -203,7 +203,7 @@ obj = function _fetchMutualFriends() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -261,7 +261,7 @@ obj = function _fetchMutualFriends() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp29) {
           closure_4 = tmp29;

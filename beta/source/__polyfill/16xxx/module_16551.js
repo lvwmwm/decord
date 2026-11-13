@@ -24,7 +24,7 @@ let obj = {
       ({ kind, index } = tmp3);
       const arr = Array.from(tmp3.target[_mod16545.implSymbol]);
       if (index >= arr.length) {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } else {
         let tmp4;
         tmp3.index = index + 1;

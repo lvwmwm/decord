@@ -1,10 +1,10 @@
-// Module ID: 19690
-// Function ID: 19691
+// Module ID: 19693
+// Function ID: 19694
 // Name: ActivitiesDebugOverlay
 // Dependencies: [19, 17, 21, 5170, 5167, 575, 16642, 16643, 1627, 5783, 2]
 // Exports: default
 
-// Module 19690 (ActivitiesDebugOverlay)
+// Module 19693 (ActivitiesDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;

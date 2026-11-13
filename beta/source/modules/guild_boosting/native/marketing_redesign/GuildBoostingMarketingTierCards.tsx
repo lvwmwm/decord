@@ -678,7 +678,7 @@ export default function GuildBoostingMarketingTierCards(guild) {
   let arr2;
   let isExpanded;
   let num;
-  const f110299 = (tier) => tier.tier === closure_0;
+  const f110315 = (tier) => tier.tier === closure_0;
   function handleCardPress() {
     if (onExpandedChange != null) {
       tmp();
@@ -701,7 +701,7 @@ export default function GuildBoostingMarketingTierCards(guild) {
         const _Math = Math;
         const scrollToIndex = current.scrollToIndex;
         premiumTier = Math.min(TIER_3.TIER_3, premiumTier.premiumTier + 1);
-        const findIndexResult = items1.findIndex(f110299);
+        const findIndexResult = items1.findIndex(f110315);
         let num3 = 0;
         if (-1 !== findIndexResult) {
           num3 = findIndexResult;
@@ -730,7 +730,7 @@ export default function GuildBoostingMarketingTierCards(guild) {
   };
   const MarketingCardsScroller = guild(onExpandedChange[35]).MarketingCardsScroller;
   let closure_0 = Math.min(BoostedGuildTiers.TIER_3, guild.premiumTier + 1);
-  let findIndexResult = items1.findIndex(f110299);
+  let findIndexResult = items1.findIndex(f110315);
   num = 0;
   arr2 = items1;
   const tmp5 = closure_9;

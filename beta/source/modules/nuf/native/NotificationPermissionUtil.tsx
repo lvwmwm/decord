@@ -21,7 +21,7 @@ import size from "module_2" /* 2 */;
 
 let c1, c2, c3, closure_3, closure_4;
 
-const f107306 = () => state.authorizationStatus;
+const f107322 = () => state.authorizationStatus;
 let obj = function _requestPushNotificationPermission() {
   obj = _asyncToGenerator(async (arg0, action_location, arg2) => {
     let closure_0 = arg0;
@@ -40,7 +40,7 @@ let obj = function _requestPushNotificationPermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ let obj = function _requestPushNotificationPermission() {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp35) {
           c6 = 3;
@@ -132,7 +132,7 @@ obj = function _enableProvisionalPushNotification() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -187,7 +187,7 @@ obj = function _enableProvisionalPushNotification() {
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         c3 = 3;
@@ -228,7 +228,7 @@ export function useShowReactivationPrompt() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -260,7 +260,7 @@ export function useShowReactivationPrompt() {
                 tmp3(true);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp11) {
             c2 = 3;
@@ -284,7 +284,7 @@ export function useCanSeePushNotificationNudge() {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f107306);
+  const stateFromStores = obj2.useStateFromStores(items, f107322);
   [tmp4, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {
@@ -319,7 +319,7 @@ export function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f107306);
+  const stateFromStores = obj2.useStateFromStores(items, f107322);
   [tmp7, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {

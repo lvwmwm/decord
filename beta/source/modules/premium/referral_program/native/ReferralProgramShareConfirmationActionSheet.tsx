@@ -49,7 +49,7 @@ function SharedUser(user) {
   if (tmp6) {
     erroredAvatar = tmp.erroredAvatar;
   }
-  let obj3 = { style: items, size: tmp5(1187).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
+  let obj3 = { style: items, size: tmp5(1187).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
   items[1] = erroredAvatar;
   items1 = [closure_5(Avatar, obj3), , ];
   if (tmp6) {

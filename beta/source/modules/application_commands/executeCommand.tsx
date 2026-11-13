@@ -52,7 +52,7 @@ let obj = function _executeCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -652,7 +652,7 @@ let obj = function _executeCommand() {
               }
             }
             c16 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         }
       }
@@ -678,7 +678,7 @@ obj = function _retryCommandMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -718,7 +718,7 @@ obj = function _retryCommandMessage() {
             closure_4(obj5);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp12) {
           c6 = 3;
           throw tmp12;
@@ -842,7 +842,7 @@ obj = function _displayInteractionLifecycleInChat() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1016,7 +1016,7 @@ obj = function _getMaxAndTotalFileSize() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {

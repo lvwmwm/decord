@@ -279,7 +279,7 @@ export default function handleSupportedURL(payload) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -336,7 +336,7 @@ export default function handleSupportedURL(payload) {
             return obj6;
           }
           inviteCode = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp22) {
           inviteCode = 3;
           throw tmp22;
@@ -493,7 +493,7 @@ export default function handleSupportedURL(payload) {
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -561,7 +561,7 @@ export default function handleSupportedURL(payload) {
                     const result = obj3.openGuildEventDetails(obj10);
                   }
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp34) {
                 c4 = 3;
@@ -592,7 +592,7 @@ export default function handleSupportedURL(payload) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -638,7 +638,7 @@ export default function handleSupportedURL(payload) {
                   obj4.disconnectRemote();
                 }
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } catch (tmp36) {
                 c2 = 3;
                 throw tmp36;
@@ -703,7 +703,7 @@ export default function handleSupportedURL(payload) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -802,7 +802,7 @@ export default function handleSupportedURL(payload) {
                   }
                 }
                 c8 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } catch (tmp29) {
                 c8 = 3;
                 throw tmp29;
@@ -885,7 +885,7 @@ export default function handleSupportedURL(payload) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     try {
@@ -934,7 +934,7 @@ export default function handleSupportedURL(payload) {
                         }
                       }
                       inviteCode = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     } catch (tmp15) {
                       inviteCode = 3;
                       throw tmp15;

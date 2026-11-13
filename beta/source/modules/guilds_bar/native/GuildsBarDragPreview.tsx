@@ -196,7 +196,7 @@ function PreviewItem(overState) {
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "flexDirection", name: "Array", color: "add", expanded: false, children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "flexDirection", name: "Array", color: "alignItems", expanded: -687865547, children: items };
         items = [tmp2];
         return element;
       }

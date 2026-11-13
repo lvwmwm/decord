@@ -62,7 +62,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
             const result = obj6.trackSearchResultClicked(obj7);
             closure_1_6(userId, channelId);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c5 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 19934
-// Function ID: 19935
+// Module ID: 19937
+// Function ID: 19938
 // Name: InteractionModalUtils
 // Dependencies: [5, 32, 19, 502, 5019, 7810, 5082, 5203, 8310, 16571, 8801, 1072, 8800, 2116, 1411, 5828, 7525, 504, 5771, 11, 572, 9901, 1113, 38, 6230, 10368, 8805, 6235, 8314, 1282, 1089, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 19934 (InteractionModalUtils)
+// Module 19937 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -33,7 +33,7 @@ let _require, c0, c1, c5, c6, importDefault, set;
 let tmp5;
 const getURLForApplicationDefault = tmp5(5828);
 function getData(arg0, arr, arg2) {
-  const f119819 = (type) => {
+  const f119854 = (type) => {
     let components;
     let items;
     let mapped;
@@ -45,7 +45,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f119819) };
+      const obj4 = { type: type.type, components: components.map(f119854) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -106,7 +106,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f119819)[0] };
+                const obj21 = { type: type.type, component: items.map(f119854)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -168,7 +168,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f119819);
+  return arr.map(f119854);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;
@@ -205,7 +205,7 @@ let obj = function _submitModal() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -297,7 +297,7 @@ let obj = function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c6 = 3;
@@ -392,7 +392,7 @@ export function useModalState(components, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -429,7 +429,7 @@ export function useModalState(components, arg1) {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;

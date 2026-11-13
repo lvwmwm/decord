@@ -80,7 +80,7 @@ const memoResult = react.memo(function QuestDockUnenrolledBody() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -152,7 +152,7 @@ const memoResult = react.memo(function QuestDockUnenrolledBody() {
             closure_128_5(constants.COLLAPSED);
           }
           isMobileActivityQuest = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp42) {
         isMobileActivityQuest = 3;

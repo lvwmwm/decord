@@ -33,7 +33,7 @@ function updateActivity(withGracePeriod) {
   let obj8;
   let timeout;
   let timeout2;
-  const f101316 = () => {
+  const f101332 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -51,7 +51,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f101316, closure_1_14);
+      timeout = setTimeout(f101332, closure_1_14);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -276,7 +276,7 @@ function updateActivity(withGracePeriod) {
         timeout2 = null;
       }
       let _setTimeout = setTimeout;
-      timeout2 = setTimeout(f101316, c14);
+      timeout2 = setTimeout(f101332, c14);
       flag = true;
     }
   }
@@ -327,7 +327,7 @@ let obj = function _fetchOwnedProjects() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -422,7 +422,7 @@ obj = function _resumeRunningProjects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -480,7 +480,7 @@ obj = function _resumeRunningProjects() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp17) {
         if (0 === c2) {
           c4 = 3;

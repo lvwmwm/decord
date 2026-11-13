@@ -1,14 +1,14 @@
-// Module ID: 19622
-// Function ID: 19623
+// Module ID: 19625
+// Function ID: 19626
 // Name: MobilePhoneXIcon
-// Dependencies: [19, 21, 575, 5873, 19623, 2]
+// Dependencies: [19, 21, 575, 5873, 19626, 2]
 // Exports: MobilePhoneXIcon
 
-// Module 19622 (MobilePhoneXIcon)
+// Module 19625 (MobilePhoneXIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 19623 */;
+import AssetRegistry from "AssetRegistry" /* 19626 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

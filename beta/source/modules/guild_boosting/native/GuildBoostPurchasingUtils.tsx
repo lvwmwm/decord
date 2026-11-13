@@ -57,7 +57,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;

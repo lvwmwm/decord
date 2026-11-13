@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, emit, passthroughCount;
 
-const f90165 = (item) => {
+const f90181 = (item) => {
   const items = [item, 0];
   return items;
 };
@@ -81,7 +81,7 @@ function explodePlayoutMetrics(obj) {
   return obj;
 }
 function zeroCounters(arr) {
-  return Object.fromEntries(arr.map(f90165));
+  return Object.fromEntries(arr.map(f90181));
 }
 function fragmentTotals(arr, arr2, outboundBaseline, lastRaw) {
   let closure_0 = outboundBaseline;
@@ -142,7 +142,7 @@ class VoiceQuality extends TypedEventEmitter {
     let histogram;
     let tmp3;
     let tmp4;
-    const f90166 = (item) => {
+    const f90182 = (item) => {
       const items = [item, { baseline: 0, lastRaw: 0 }];
       return items;
     };
@@ -414,7 +414,7 @@ class VoiceQuality extends TypedEventEmitter {
               const inboundBaselines = num.inboundBaselines;
               let tmp3 = inboundBaselines[closure_0];
               if (tmp3 == null) {
-                obj = { baseline: Object.fromEntries(closure_3_7.map(f90165)), lastRaw: Object.fromEntries(closure_3_7.map(f90165)) };
+                obj = { baseline: Object.fromEntries(closure_3_7.map(f90181)), lastRaw: Object.fromEntries(closure_3_7.map(f90181)) };
                 const _Object = Object;
                 const _Object2 = Object;
                 inboundBaselines[closure_0] = obj;
@@ -424,7 +424,7 @@ class VoiceQuality extends TypedEventEmitter {
               let tmp4 = inboundLatencyBaselines[tmp60];
               if (tmp4 == null) {
                 const _Object3 = Object;
-                const fromEntriesResult = Object.fromEntries(closure_3_10.map(f90166));
+                const fromEntriesResult = Object.fromEntries(closure_3_10.map(f90182));
                 inboundLatencyBaselines[closure_0] = fromEntriesResult;
                 tmp4 = fromEntriesResult;
               }
@@ -721,11 +721,11 @@ class VoiceQuality extends TypedEventEmitter {
     tmp5.periodicInboundStats = {};
     tmp5.inputDeviceStats = {};
     tmp5.outputDeviceStats = {};
-    let obj2 = { baseline: Object.fromEntries(closure_5.map(f90165)), lastRaw: Object.fromEntries(closure_5.map(f90165)) };
+    let obj2 = { baseline: Object.fromEntries(closure_5.map(f90181)), lastRaw: Object.fromEntries(closure_5.map(f90181)) };
     tmp5.outboundBaseline = obj2;
-    tmp5.outboundLatencyBaseline = Object.fromEntries(closure_9.map(f90166));
+    tmp5.outboundLatencyBaseline = Object.fromEntries(closure_9.map(f90182));
     let items = ["decryptionFailures", "routingFailures", ...closure_11];
-    tmp5.transportBaseline = Object.fromEntries(items.map(f90166));
+    tmp5.transportBaseline = Object.fromEntries(items.map(f90182));
     tmp5.inboundBaselines = {};
     tmp5.inboundLatencyBaselines = {};
     return tmp5;

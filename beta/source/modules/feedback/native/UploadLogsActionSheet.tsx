@@ -1,10 +1,10 @@
-// Module ID: 19901
-// Function ID: 19902
+// Module ID: 19904
+// Function ID: 19905
 // Name: UploadLogsActionSheet
 // Dependencies: [19, 17, 1072, 21, 5170, 575, 5420, 7415, 1113, 5783, 5790, 11255, 1252, 5406, 2]
 // Exports: default
 
-// Module 19901 (UploadLogsActionSheet)
+// Module 19904 (UploadLogsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;

@@ -82,7 +82,7 @@ function openIncodeAgeVerificationModal(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ function openIncodeAgeVerificationModal(arg0) {
               combined = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp21) {
           if (0 === combined) {
@@ -367,7 +367,7 @@ let obj = {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -423,7 +423,7 @@ let obj = {
                     }), {}, closure_1_6);
                   }
                   prop = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp19) {
                 prop = 3;

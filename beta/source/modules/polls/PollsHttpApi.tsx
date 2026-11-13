@@ -28,7 +28,7 @@ let obj = function _submitPollVote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -89,7 +89,7 @@ let obj = function _submitPollVote() {
         } else {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp15) {
         closure_3 = tmp15;
@@ -119,7 +119,7 @@ obj = function _endPollEarly() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -182,7 +182,7 @@ obj = function _endPollEarly() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         }
       } catch (tmp22) {

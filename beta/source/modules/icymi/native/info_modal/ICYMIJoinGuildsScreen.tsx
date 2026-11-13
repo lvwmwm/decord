@@ -386,7 +386,7 @@ export default function ICYMIJoinGuildsScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -471,7 +471,7 @@ export default function ICYMIJoinGuildsScreen() {
           const obj20 = stateFromStoresArray1(stateFromStores[29]);
           obj20.popWithKey(stateFromStoresArray(stateFromStores[30]).ICYMI_INFO_MODAL_KEY);
           stateFromStores = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp33) {
         stateFromStores = 3;

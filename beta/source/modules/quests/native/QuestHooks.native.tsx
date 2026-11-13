@@ -298,7 +298,7 @@ export function useMobileActivityQuest(quest) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ export function useMobileActivityQuest(quest) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp11) {
           c0 = 3;
           throw tmp11;

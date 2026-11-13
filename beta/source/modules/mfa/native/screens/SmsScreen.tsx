@@ -67,7 +67,7 @@ export default function SmsScreen(mfaChallenge) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -127,7 +127,7 @@ export default function SmsScreen(mfaChallenge) {
             closure_131_3(false);
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp27) {
           closure_4 = tmp27;
           if (0 === c5) {
@@ -155,7 +155,7 @@ export default function SmsScreen(mfaChallenge) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -227,7 +227,7 @@ export default function SmsScreen(mfaChallenge) {
             c4 = 0;
             closure_130_3(false);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp30) {
           closure_3 = tmp30;

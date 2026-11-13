@@ -64,7 +64,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -170,7 +170,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             c5 = 0;
             closure_132_7(null);
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp68) {
           closure_6 = tmp68;
@@ -204,7 +204,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp23) {
           c1 = 3;
           throw tmp23;

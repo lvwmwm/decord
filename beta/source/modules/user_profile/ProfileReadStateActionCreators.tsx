@@ -72,7 +72,7 @@ let obj = function _ackProfileWishlist() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -136,7 +136,7 @@ let obj = function _ackProfileWishlist() {
           closure_130_8.delete(combined);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp31) {
         closure_3 = tmp31;
         if (0 === c4) {
@@ -169,7 +169,7 @@ obj = function _sendWishlistAck() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -220,7 +220,7 @@ obj = function _sendWishlistAck() {
                 if (id !== closure_1) {
                   c6 = 0;
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   const obj7 = { type: "PROFILE_READ_STATE_ACK", ownerId, ackedAt };
                   const dispatch = closure_132_1(closure_132_2[10]).dispatch;
@@ -248,7 +248,7 @@ obj = function _sendWishlistAck() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           closure_5 = tmp16;

@@ -101,7 +101,7 @@ const memoResult = react.memo(function ForLaterMessageCard(savedMessage) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -137,7 +137,7 @@ const memoResult = react.memo(function ForLaterMessageCard(savedMessage) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -188,7 +188,7 @@ const memoResult = react.memo(function ForLaterMessageCard(savedMessage) {
                       }
                       track(FOR_LATER_SAVED_MESSAGE_JUMP, obj7);
                       c2 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } catch (tmp25) {
                     c2 = 3;
@@ -214,7 +214,7 @@ const memoResult = react.memo(function ForLaterMessageCard(savedMessage) {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;

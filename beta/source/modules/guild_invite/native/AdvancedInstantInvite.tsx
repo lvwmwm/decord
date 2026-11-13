@@ -1,10 +1,10 @@
-// Module ID: 20455
-// Function ID: 20456
+// Module ID: 20458
+// Function ID: 20459
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 5112, 1385, 21, 5170, 8707, 5808, 20456, 9235, 20457, 5406, 20458, 2118, 12453, 1113, 7053, 7079, 6191, 575, 7159, 7071, 7462, 1403, 9071, 2]
+// Dependencies: [19, 17, 5112, 1385, 21, 5170, 8707, 5808, 20459, 9235, 20460, 5406, 20461, 2118, 12453, 1113, 7053, 7079, 6191, 575, 7159, 7071, 7462, 1403, 9071, 2]
 // Exports: default
 
-// Module 20455 (AdvancedInstantInvite)
+// Module 20458 (AdvancedInstantInvite)
 import react_native from "react-native" /* 17 */;
 import intl11 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
@@ -67,7 +67,7 @@ export default function AdvancedInstantInvite(maxAge) {
   let tmp29;
   let tmp33Result;
   let tmp33Result5;
-  const f121173 = (value) => value.value === maxUses;
+  const f121208 = (value) => value.value === maxUses;
   ({ channel, guild } = maxAge);
   maxAge = maxAge.maxAge;
   const onChangeMaxAge = maxAge.onChangeMaxAge;
@@ -120,7 +120,7 @@ export default function AdvancedInstantInvite(maxAge) {
     if (tmp) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { assignableRoles, selectedRoleIds: roleIds, onSave: onChangeRoleIds };
-      obj.openLazy(asyncRequire(20458, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(20461, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
     }
   }, items);
   const items2 = [maxUses, maxUsesOptions, onChangeMaxUses];
@@ -154,12 +154,12 @@ export default function AdvancedInstantInvite(maxAge) {
     const obj4 = { count: memo };
     formatToPlainStringResult = intl.formatToPlainString(guild(onChangeMaxAge[15]).t["eXU3/V"], obj4);
   }
-  const found = maxAgeOptions.find(f121173);
+  const found = maxAgeOptions.find(f121208);
   let label;
   if (found != null) {
     label = found.label;
   }
-  const found1 = maxUsesOptions.find(f121173);
+  const found1 = maxUsesOptions.find(f121208);
   let label1;
   if (found1 != null) {
     label1 = found1.label;

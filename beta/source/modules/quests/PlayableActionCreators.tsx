@@ -1,10 +1,10 @@
-// Module ID: 20553
-// Function ID: 20554
+// Module ID: 20556
+// Function ID: 20557
 // Name: PlayableActionCreators
 // Dependencies: [5, 1072, 7750, 7975, 7951, 1282, 572, 6612, 2]
 // Exports: claimPlayableReward
 
-// Module 20553 (PlayableActionCreators)
+// Module 20556 (PlayableActionCreators)
 import Constants from "Constants" /* 1072 */;
 import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7750 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -33,7 +33,7 @@ let obj = function _claimPlayableReward() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ let obj = function _claimPlayableReward() {
             obj.dispatch(obj10);
             c7 = 0;
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp31) {
           closure_6 = tmp31;

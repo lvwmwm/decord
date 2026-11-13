@@ -167,7 +167,7 @@ export default function ICYMITopicsScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ export default function ICYMITopicsScreen() {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => v2(false), 500);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp28) {
         c3 = 3;

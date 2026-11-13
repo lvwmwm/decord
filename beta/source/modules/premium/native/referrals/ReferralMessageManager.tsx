@@ -1,12 +1,12 @@
-// Module ID: 20489
-// Function ID: 20490
+// Module ID: 20492
+// Function ID: 20493
 // Name: ReferralMessageManager
-// Dependencies: [2176, 7739, 1088, 11, 8634, 7383, 19970, 2]
+// Dependencies: [2176, 7739, 1088, 11, 8634, 7383, 19973, 2]
 
-// Module 20489 (ReferralMessageManager)
+// Module 20492 (ReferralMessageManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import MessageTypes from "MessageTypes" /* 1088 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19970 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19973 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import UserOfferStore from "UserOfferStore" /* 7739 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;

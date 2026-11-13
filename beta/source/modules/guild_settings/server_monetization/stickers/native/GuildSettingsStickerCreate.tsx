@@ -1,10 +1,10 @@
-// Module ID: 20191
-// Function ID: 20192
+// Module ID: 20194
+// Function ID: 20195
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 6884, 6925, 1072, 1388, 4998, 21, 5170, 575, 5767, 11578, 5771, 5116, 8323, 20192, 10418, 6647, 5783, 1113, 6616, 2185, 5790, 6191, 7076, 10433, 20193, 10094, 7396, 1411, 9566, 7181, 7349, 2]
+// Dependencies: [5, 32, 19, 17, 6884, 6925, 1072, 1388, 4998, 21, 5170, 575, 5767, 11578, 5771, 5116, 8323, 20195, 10418, 6647, 5783, 1113, 6616, 2185, 5790, 6191, 7076, 10433, 20196, 10094, 7396, 1411, 9566, 7181, 7349, 2]
 // Exports: default
 
-// Module 20191 (GuildSettingsStickerCreate)
+// Module 20194 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
@@ -153,7 +153,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -208,7 +208,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
               if ("Cancelled" === errorStr) {
                 c3 = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 if (null != base64) {
                   if ("image/png" === mimeType) {
@@ -225,7 +225,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp26) {
           closure_2 = tmp26;
@@ -257,7 +257,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -285,7 +285,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     let c4;
@@ -331,7 +331,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
                           c4 = 0;
                         }
                         c5 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } catch (tmp23) {
                       closure_3 = tmp23;
@@ -382,7 +382,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
                         let closure_4 = first1;
                         if (null == first1) {
                           c0 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         } else {
                           c1 = 2;
                           c0 = 1;
@@ -428,7 +428,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp7) {
           c0 = 3;
           throw tmp7;
@@ -594,7 +594,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
     obj19 = { uri: first1 };
     tmp35Result = tmp35(first, obj18);
   } else {
-    tmp35Result = tmp35(tmp34(20193).StickerPlusIcon, { size: "lg" });
+    tmp35Result = tmp35(tmp34(20196).StickerPlusIcon, { size: "lg" });
   }
   items4[1] = onPressEmoji(PressableHighlight, obj16);
   const obj20 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl7.string(stickerId(1113).t["3BQmiC"]) };

@@ -52,7 +52,7 @@ function SyncedLoadingAlertModal(onConfirm) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -92,7 +92,7 @@ function SyncedLoadingAlertModal(onConfirm) {
             c3 = 0;
             closure_128_1(false);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           closure_2 = tmp19;
@@ -171,7 +171,7 @@ export function showCheckoutOrderErrorModal(arg0, c6) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export function showCheckoutOrderErrorModal(arg0, c6) {
             tmp = value;
             closure_129_0(tmp);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           c3 = 3;

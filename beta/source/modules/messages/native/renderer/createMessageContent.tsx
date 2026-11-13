@@ -1248,7 +1248,7 @@ function createMessageContent(message) {
       }
       applicationIconSource = author.getAvatarSource(undefined);
     }
-    parseMessageMarkupResult = { content: "PX_8", hasSpoilerEmbeds: "nine", hasBailedAst: "number_9" };
+    parseMessageMarkupResult = { content: "PX_8", hasSpoilerEmbeds: "none", hasBailedAst: "URL" };
   }
 }
 const processColor = react_native.processColor;

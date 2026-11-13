@@ -1,10 +1,10 @@
-// Module ID: 20530
-// Function ID: 20531
+// Module ID: 20533
+// Function ID: 20534
 // Name: LogOutDisclaimer
 // Dependencies: [21, 16214, 5783, 1113, 2960, 6827, 2]
 // Exports: default
 
-// Module 20530 (LogOutDisclaimer)
+// Module 20533 (LogOutDisclaimer)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2960 from "module_2960" /* 2960 */;

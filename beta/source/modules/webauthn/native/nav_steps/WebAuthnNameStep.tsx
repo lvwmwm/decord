@@ -61,7 +61,7 @@ export default function WebAuthnNameStep() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -114,7 +114,7 @@ export default function WebAuthnNameStep() {
             open("WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", obj7);
             const replaced = closure_128_2.replace(constants.WEBAUTHN_SUCCESS);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp28) {
           body = tmp28;

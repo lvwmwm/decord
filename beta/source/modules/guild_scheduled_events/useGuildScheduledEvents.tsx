@@ -26,7 +26,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f95589 = () => {
+const f95605 = () => {
   let constants3;
   guildScheduledEventsByIndex = guildScheduledEventsByIndex.getGuildScheduledEventsByIndex(closure_2_8.GUILD_EVENT_UPCOMING(closure_0));
   return guildScheduledEventsByIndex.filter((entity_type) => {
@@ -142,7 +142,7 @@ export function useGuildUpcomingEvents(arg0) {
   const items = [GuildScheduledEventStore, ChannelStore, PermissionStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStoresArray(items, f95589, items1);
+  return obj.useStateFromStoresArray(items, f95605, items1);
 }
 export function useGuildUpcomingEventsNotice(arg0) {
   let closure_0;
@@ -153,7 +153,7 @@ export function useGuildUpcomingEventsNotice(arg0) {
   let obj = require("get initialized");
   const items = [GuildScheduledEventStore, ChannelStore, PermissionStore];
   const items1 = [arg0];
-  stateFromStoresArray = obj.useStateFromStoresArray(items, f95589, items1);
+  stateFromStoresArray = obj.useStateFromStoresArray(items, f95605, items1);
   let obj2 = require("get initialized");
   const items2 = [UpcomingEventNoticesStore];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items2, () => UpcomingEventNoticesStore.getAllEventDismissals());

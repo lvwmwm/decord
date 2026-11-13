@@ -28,7 +28,7 @@ let obj = function _requestGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -93,7 +93,7 @@ let obj = function _requestGuilds() {
           obj.dispatch(obj11);
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp23) {
         closure_4 = tmp23;
@@ -125,7 +125,7 @@ obj = function _fetchDiscoverableGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -198,7 +198,7 @@ obj = function _fetchDiscoverableGuilds() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           c8 = 0;

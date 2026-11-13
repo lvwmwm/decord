@@ -45,7 +45,7 @@ let obj = {
     if (value == null) {
       value = closure_4;
     }
-    const f100128 = (id) => id.id;
+    const f100144 = (id) => id.id;
     let flag = !(value.length === asks.length && value.every((item, index) => {
       const tmp = o(item);
       return tmp === o(allowedHosts[index]);

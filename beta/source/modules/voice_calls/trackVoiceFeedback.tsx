@@ -1,10 +1,10 @@
-// Module ID: 19906
-// Function ID: 19907
+// Module ID: 19909
+// Function ID: 19910
 // Name: trackVoiceFeedback
 // Dependencies: [109, 5, 2130, 6054, 1252, 2]
 // Exports: default
 
-// Module 19906 (trackVoiceFeedback)
+// Module 19909 (trackVoiceFeedback)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
@@ -34,7 +34,7 @@ let obj = function _trackVoiceFeedback() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -158,7 +158,7 @@ let obj = function _trackVoiceFeedback() {
           const merged = Object.assign(closure_21);
           track(tmp15, obj);
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp48) {
         c7 = 3;

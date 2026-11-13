@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7973 */;
 import size from "module_2" /* 2 */;
 
-const f114934 = (item) => {
+const f114952 = (item) => {
   let obj;
   [, obj] = item;
   const tmp = null == obj.predicate || obj.predicate();
@@ -24,7 +24,7 @@ function getSortedDevToolsScreens() {
     sortedScreenKeys = DevToolsSettingsStore.sortedScreenKeys;
   }
   const entries = Object.entries(DevToolsScreens.DevToolsScreens);
-  const found = entries.filter(f114934);
+  const found = entries.filter(f114952);
   return found.sort((arg0, arg1) => {
     let num2;
     let tmp;
@@ -63,7 +63,7 @@ export default function useSortedDevToolsScreens() {
     sortedScreenKeys = tmp3.sortedScreenKeys;
   }
   const entries = Object.entries(DevToolsScreens.DevToolsScreens);
-  const found = entries.filter(f114934);
+  const found = entries.filter(f114952);
   return found.sort((arg0, arg1) => {
     let num2;
     let tmp;

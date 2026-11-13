@@ -84,7 +84,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c6;
@@ -174,7 +174,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
             trackQuestEvent(obj11);
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp49) {
           closure_5 = tmp49;

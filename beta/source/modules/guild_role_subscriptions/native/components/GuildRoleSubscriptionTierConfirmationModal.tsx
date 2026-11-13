@@ -1,21 +1,21 @@
-// Module ID: 20424
-// Function ID: 20425
+// Module ID: 20427
+// Function ID: 20428
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 20392, 21, 5170, 575, 20393, 20403, 20395, 1113, 7159, 5874, 5783, 20425, 2]
+// Dependencies: [5, 32, 19, 17, 20395, 21, 5170, 575, 20396, 20406, 20398, 1113, 7159, 5874, 5783, 20428, 2]
 // Exports: default
 
-// Module 20424 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 20427 (GuildRoleSubscriptionTierConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import FormStylesDefault from "FormStyles" /* 20393 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20395 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 20403 */;
+import FormStylesDefault from "FormStyles" /* 20396 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20398 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 20406 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20392 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20395 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
           c3 = 0;
           closure_128_1(false);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp19) {
         closure_2 = tmp19;
@@ -162,6 +162,6 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     items2[1] = React4(View, obj7);
     flag = tmp14(tmp17, obj3);
   }
-  items4 = [flag, metroImportAll(tmp6(20425).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  items4 = [flag, metroImportAll(tmp6(20428).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   return React4(tmp15, obj2);
 };

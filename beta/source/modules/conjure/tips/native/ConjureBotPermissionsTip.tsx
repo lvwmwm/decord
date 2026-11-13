@@ -40,7 +40,7 @@ function BotPermissionsHint(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -69,7 +69,7 @@ function BotPermissionsHint(projectId) {
           return obj;
         }
         projectId = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         projectId = 3;
         throw tmp9;

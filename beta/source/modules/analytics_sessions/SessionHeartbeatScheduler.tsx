@@ -49,7 +49,7 @@ let obj = function _trackHeartbeat() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -120,7 +120,7 @@ let obj = function _trackHeartbeat() {
             obj.captureException(Error("Null session when tracking session heartbeat. Waited " + closure_2 - closure_0 + "ms"));
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp49) {
         c4 = 3;
@@ -145,7 +145,7 @@ function isActive() {
   return items.length > 0;
 }
 function scheduleHeartbeatTracking() {
-  const f126215 = () => {
+  const f126250 = () => {
     trackHeartbeat();
     obj = {
       type: "interval",
@@ -181,8 +181,8 @@ function scheduleHeartbeatTracking() {
       SentryUtilsDefault;
       addBreadcrumb(obj3);
       const _setTimeout = setTimeout;
-      user = { type: "timeout", id: setTimeout(f126215, num) };
-      const obj4 = { type: "timeout", id: setTimeout(f126215, num) };
+      user = { type: "timeout", id: setTimeout(f126250, num) };
+      const obj4 = { type: "timeout", id: setTimeout(f126250, num) };
     }
   } else {
     let flag = false;
@@ -260,7 +260,7 @@ obj = function _forceDispatchSessionIdUpdate() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -299,7 +299,7 @@ obj = function _forceDispatchSessionIdUpdate() {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp15) {
         c3 = 3;
@@ -414,7 +414,7 @@ obj = function _getSession() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

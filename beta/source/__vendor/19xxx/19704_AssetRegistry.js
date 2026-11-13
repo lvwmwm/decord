@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/sidebar/images", width: 24, height: 24, scales: [2, 3, 4], hash: "5be7f14768f9acc824d9e93779c75d9c", name: "icon-call", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "95d7e93c2793e11c61d9325838069af2", name: "StageModeratorIcon", type: "png" });

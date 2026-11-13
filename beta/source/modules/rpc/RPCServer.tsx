@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f127363 = function() {
+    const f127398 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -148,7 +148,7 @@ class RPCServer {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f127363).then;
-    then(f127363);
+    const then2 = then(f127398).then;
+    then(f127398);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

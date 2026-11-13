@@ -43,7 +43,7 @@ export default function createWebViewController(id, contextSource) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -85,7 +85,7 @@ export default function createWebViewController(id, contextSource) {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           closure_4 = tmp18;
@@ -118,7 +118,7 @@ export default function createWebViewController(id, contextSource) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -159,7 +159,7 @@ export default function createWebViewController(id, contextSource) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp15) {
         if (0 === c4) {

@@ -1,10 +1,10 @@
-// Module ID: 20593
-// Function ID: 20594
+// Module ID: 20596
+// Function ID: 20597
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 19796, 1072, 3, 1242, 10363, 15, 9, 15878, 1252, 1260, 19892, 5014, 2]
+// Dependencies: [5, 17, 502, 19799, 1072, 3, 1242, 10363, 15, 9, 15878, 1252, 1260, 19895, 5014, 2]
 // Exports: default
 
-// Module 20593 (executeHeadlessTask)
+// Module 20596 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
@@ -16,7 +16,7 @@ import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10363 */;
 import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15878 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NativeAppStartup from "NativeAppStartup" /* 19796 */;
+import NativeAppStartup from "NativeAppStartup" /* 19799 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_8, duration_ms, value2;
@@ -47,7 +47,7 @@ let obj = function _executeHeadlessTask() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -359,7 +359,7 @@ let obj = function _executeHeadlessTask() {
               closure_8 = closure_10;
               value.warn("Failed to submit analytics", closure_8);
               c12 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             case 13:
             {

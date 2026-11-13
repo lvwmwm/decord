@@ -193,7 +193,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -264,7 +264,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp37) {
         onDismiss = tmp37;
         if (0 === c3) {

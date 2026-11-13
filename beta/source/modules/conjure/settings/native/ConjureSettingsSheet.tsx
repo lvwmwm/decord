@@ -253,7 +253,7 @@ export default function ConjureSettingsSheet(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -343,7 +343,7 @@ export default function ConjureSettingsSheet(projectId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp30) {
         c3 = 3;
         throw tmp30;

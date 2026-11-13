@@ -1,10 +1,10 @@
-// Module ID: 20487
-// Function ID: 20488
+// Module ID: 20490
+// Function ID: 20491
 // Name: GlobalDiscoveryServersUtils
 // Dependencies: [5, 2186, 9189, 1072, 1113, 1380, 7626, 1252, 1266, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 20487 (GlobalDiscoveryServersUtils)
+// Module 20490 (GlobalDiscoveryServersUtils)
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import v1 from "v1" /* 1266 */;
@@ -42,7 +42,7 @@ let obj = function _navigateToGuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -101,7 +101,7 @@ let obj = function _navigateToGuild() {
           obj = closure_130_1(closure_130_3[7]);
           obj.track(closure_130_12.GUILD_DISCOVERY_GUILD_SELECTED, obj9);
           _location = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp27) {
         _location = 3;
@@ -259,7 +259,7 @@ export function fromDiscoverableGuildServer(id) {
   return obj;
 }
 export function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "channelId", discoverySplash: "<string:3664204034>", emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "channel", discoverySplash: true, emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

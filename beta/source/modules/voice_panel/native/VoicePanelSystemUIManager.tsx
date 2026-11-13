@@ -1,9 +1,9 @@
-// Module ID: 19713
-// Function ID: 19714
+// Module ID: 19716
+// Function ID: 19717
 // Name: VoicePanelSystemUIManager
 // Dependencies: [32, 19, 6931, 11395, 11393, 5837, 21, 11394, 1259, 1377, 551, 1652, 10242, 1705, 11384, 11898, 2]
 
-// Module 19713 (VoicePanelSystemUIManager)
+// Module 19716 (VoicePanelSystemUIManager)
 import react_native from "react-native" /* 1259 */;
 import CallConstants from "CallConstants" /* 5837 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 */;

@@ -62,7 +62,7 @@ export function useShouldShowInitialGoogleWalletBanner() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -140,7 +140,7 @@ export function useShouldShowInitialGoogleWalletBanner() {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp24) {
             if (0 === c2) {

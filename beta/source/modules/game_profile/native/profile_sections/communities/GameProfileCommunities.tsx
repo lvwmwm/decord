@@ -95,7 +95,7 @@ let closure_14 = react.memo(function GameProfileCommunityCard(gameId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -193,7 +193,7 @@ let closure_14 = react.memo(function GameProfileCommunityCard(gameId) {
             closure_130_7(currentlySelectedChannelId2, channelId);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp62) {
         if (0 === c4) {

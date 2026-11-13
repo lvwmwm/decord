@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, importDefault;
 
-const f96503 = () => () => {
+const f96519 = () => () => {
   closure_1_1.current = false;
 };
 const Image = react_native.Image;
@@ -53,7 +53,7 @@ export function useDominantRGBFromImage(arg0) {
   let first;
   _require = arg0;
   importDefault = react.useRef(true);
-  const effect = react.useEffect(f96503, []);
+  const effect = react.useEffect(f96519, []);
   let hexToRgbResult;
   const useState = react.useState;
   const obj = react;
@@ -132,7 +132,7 @@ export function useDominantColorFromImage(uri) {
   _require = uri;
   let obj = react;
   importDefault = react.useRef(true);
-  const effect = react.useEffect(f96503, []);
+  const effect = react.useEffect(f96519, []);
   let hexToRgbResult;
   const useState = react.useState;
   if (null != uri) {

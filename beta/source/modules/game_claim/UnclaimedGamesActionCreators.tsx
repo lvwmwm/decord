@@ -31,7 +31,7 @@ let obj = function _fetchUnclaimedGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -69,7 +69,7 @@ let obj = function _fetchUnclaimedGames() {
           obj = closure_129_1(closure_129_2[4]);
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         c3 = 3;

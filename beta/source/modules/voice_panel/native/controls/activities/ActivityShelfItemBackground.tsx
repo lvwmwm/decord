@@ -1,9 +1,9 @@
-// Module ID: 19692
-// Function ID: 19693
+// Module ID: 19695
+// Function ID: 19696
 // Name: ActivityShelfItemBackground
 // Dependencies: [32, 19, 21, 5170, 7056, 12648, 5874, 2]
 
-// Module 19692 (ActivityShelfItemBackground)
+// Module 19695 (ActivityShelfItemBackground)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import NativeViewDefault from "NativeView" /* 7056 */;

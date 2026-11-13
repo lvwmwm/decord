@@ -1,12 +1,12 @@
-// Module ID: 20059
-// Function ID: 20060
+// Module ID: 20062
+// Function ID: 20063
 // Name: SharedSpacesWarningManager
-// Dependencies: [5019, 5925, 5112, 15962, 15960, 20060, 1092, 15963, 7383, 2]
+// Dependencies: [5019, 5925, 5112, 15962, 15960, 20063, 1092, 15963, 7383, 2]
 
-// Module 20059 (SharedSpacesWarningManager)
+// Module 20062 (SharedSpacesWarningManager)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import showVoiceChannelBlockedUserWarning2 from "showVoiceChannelBlockedUserWarning" /* 15963 */;
-import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 20060 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 20063 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
 import RelationshipStore from "RelationshipStore" /* 5112 */;

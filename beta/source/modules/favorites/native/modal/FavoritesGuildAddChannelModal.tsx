@@ -65,7 +65,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -116,7 +116,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
             presentError(intl.string(_null(c2[14]).t.R0RpRX));
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp32) {
         c4 = 3;

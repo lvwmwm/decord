@@ -132,7 +132,7 @@ export function useNotificationCenterItemsLoader(isFocused) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -197,7 +197,7 @@ export function useNotificationCenterItemsLoader(isFocused) {
           _undefined(false);
         }
         with_mentions = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp22) {
         with_mentions = 3;
         throw tmp22;

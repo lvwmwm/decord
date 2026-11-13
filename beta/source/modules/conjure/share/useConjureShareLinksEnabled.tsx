@@ -31,7 +31,7 @@ let obj = function _readShareLinksEnabled() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -125,7 +125,7 @@ export default function useConjureShareLinksEnabled(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -163,7 +163,7 @@ export default function useConjureShareLinksEnabled(arg0) {
                 }
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp22) {
             c3 = 3;
@@ -193,7 +193,7 @@ export default function useConjureShareLinksEnabled(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -229,7 +229,7 @@ export default function useConjureShareLinksEnabled(arg0) {
               closure_129_3(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           c3 = 3;

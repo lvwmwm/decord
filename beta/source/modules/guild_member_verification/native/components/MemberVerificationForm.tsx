@@ -72,7 +72,7 @@ export default function MemberVerificationForm(guild) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -98,7 +98,7 @@ export default function MemberVerificationForm(guild) {
                 if (tmp33) {
                   showIncompleteToast();
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   _undefined2(null);
                   _undefined(true);
@@ -171,7 +171,7 @@ export default function MemberVerificationForm(guild) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp49) {
           body = tmp49;
           if (0 === c4) {

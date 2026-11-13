@@ -54,7 +54,7 @@ export default function useUserProfileActivity(arg0) {
     if (stateFromStores2 != null) {
       const entries = stateFromStores2.entries;
       found = entries.filter((extra) => {
-        const f140200 = (item) => {
+        const f140242 = (item) => {
           let result = null != item;
           if (result) {
             const obj = userProfileLiveActivities(closure_2_2[10]);
@@ -70,8 +70,8 @@ export default function useUserProfileActivity(arg0) {
           let result;
           const tmpResult = closure_2_0(stateFromStores2[9]);
           if (tmpResult.isListenedSessionEntry(extra)) {
-            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f140200);
-            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f140200);
+            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f140242);
+            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f140242);
           } else {
             const tmpResult3 = closure_2_0(stateFromStores2[9]);
             if (tmpResult3.isWatchedMediaEntry(extra)) {

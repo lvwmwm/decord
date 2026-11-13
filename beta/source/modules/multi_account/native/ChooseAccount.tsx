@@ -78,7 +78,7 @@ export default function ChooseAccount() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -130,7 +130,7 @@ export default function ChooseAccount() {
               obj2.removeAccount(closure_0.id);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           c4 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 19888
-// Function ID: 19889
+// Module ID: 19891
+// Function ID: 19892
 // Name: ExplicitMediaManager
-// Dependencies: [7875, 502, 6950, 5019, 6226, 5073, 5203, 15925, 7563, 1072, 1082, 8791, 7560, 7564, 7566, 572, 13575, 6626, 6631, 19889, 19890, 11, 6228, 6005, 7383, 2]
+// Dependencies: [7875, 502, 6950, 5019, 6226, 5073, 5203, 15925, 7563, 1072, 1082, 8791, 7560, 7564, 7566, 572, 13575, 6626, 6631, 19892, 19893, 11, 6228, 6005, 7383, 2]
 
-// Module 19888 (ExplicitMediaManager)
+// Module 19891 (ExplicitMediaManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
@@ -16,7 +16,7 @@ import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7566 
 import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7875 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8791 */;
 import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 13575 */;
-import uniqWithDefault from "uniqWith" /* 19890 */;
+import uniqWithDefault from "uniqWith" /* 19893 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 6950 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
@@ -30,7 +30,7 @@ import size from "module_2" /* 2 */;
 const ReferencedMessageStore = ReferencedMessageStore2;
 let messageByReference, set;
 
-const f119693 = (channel_id) => {
+const f119728 = (channel_id) => {
   const tmp = obj;
   if (null == obj[channel_id.channel_id]) {
     tmp[channel_id.channel_id] = { numOfAttachments: 0, numOfAttachmentsPendingScan: 0, numOfEmbeds: 0, numOfEmbedsPendingScan: 0 };
@@ -216,7 +216,7 @@ function withoutScheduledTimeout(arg0) {
 }
 function handleUnscannedMessages(found2, isMessageUpdate) {
   let found1;
-  const f119687 = (id) => id.id;
+  const f119722 = (id) => id.id;
   let obj = isMessageUpdate;
   if (isMessageUpdate == null) {
     obj = {};
@@ -305,7 +305,7 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
         if (tmp) {
           const result = obj.sendMultiChannelMessagesForScanning(found);
         } else {
-          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f119687));
+          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f119722));
         }
       }
     }, 800 * Math.random());
@@ -314,7 +314,7 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
     if (tmp) {
       let result = obj2.sendMultiChannelMessagesForScanning(found1);
     } else {
-      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f119687));
+      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f119722));
     }
   }
 }
@@ -355,14 +355,14 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     HermesBuiltin.arraySpread(items, found1, HermesBuiltin.arraySpread(items, found, 0));
     tmp3 = items;
   }
-  const arr4 = obj2(19890)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+  const arr4 = obj2(19893)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
   const found2 = arr4.filter((item) => {
     obj = obj(dependencyMap[12]);
     return obj.hasUnscannedMedia(item);
   });
   let obj = {};
   obj2 = {};
-  const item = arr4.forEach(f119693);
+  const item = arr4.forEach(f119728);
   const obj3 = obj2(11);
   const entries = obj3.entries(obj);
   const item1 = entries.forEach((item) => {
@@ -639,14 +639,14 @@ function maybeScanMessagesForChannelId(channelId) {
       HermesBuiltin.arraySpread(items, found1, HermesBuiltin.arraySpread(items, found, 0));
       tmp4 = items;
     }
-    const arr5 = obj2(19890)(tmp4, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+    const arr5 = obj2(19893)(tmp4, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
     const found2 = arr5.filter((item) => {
       obj = obj(dependencyMap[12]);
       return obj.hasUnscannedMedia(item);
     });
     let obj = {};
     obj2 = {};
-    const item = arr5.forEach(f119693);
+    const item = arr5.forEach(f119728);
     const obj3 = obj2(11);
     const entries = obj3.entries(obj);
     const item1 = entries.forEach((item) => {

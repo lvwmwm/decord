@@ -32,7 +32,7 @@ export function useCheckpointCharacterReferencedAssets(arg0) {
   let requestedDataBinding;
   let textureScale;
   let visibleDataBinding;
-  const f106493 = () => {
+  const f106509 = () => {
     const obj = { faceID: faceID2, headwearID: headwearID2, shoesID: shoesID2, wearableID: wearableID2 };
     let closure_2 = device2;
     set = new Set();
@@ -77,8 +77,8 @@ export function useCheckpointCharacterReferencedAssets(arg0) {
   let chapterID2 = requestedDataBinding.chapterID;
   const device2 = requestedDataBinding.device;
   const items1 = [faceID2, headwearID2, shoesID2, wearableID2, chapterID2, device2];
-  const memo = react.useMemo(f106493, items);
-  const memo1 = react.useMemo(f106493, items1);
+  const memo = react.useMemo(f106509, items);
+  const memo1 = react.useMemo(f106509, items1);
   let obj = textureScale(checkpointCharacterLoadedTextureNames[5]);
   checkpointCharacterLoadedTextureNames = obj.useCheckpointCharacterLoadedTextureNames({ visibleTextureNames: memo, requestedTextureNames: memo1 });
   const items2 = [checkpointCharacterLoadedTextureNames, textureScale];

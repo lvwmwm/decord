@@ -285,7 +285,7 @@ export function useProfileThemedButtonStyles(arg0) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -311,7 +311,7 @@ export function useProfileThemedButtonStyles(arg0) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -375,7 +375,7 @@ export function useButtonTextColorStyles(primary) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -401,7 +401,7 @@ export function useButtonTextColorStyles(primary) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -475,7 +475,7 @@ export function useIconTintStyles(variant, sharedValue) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -501,7 +501,7 @@ export function useIconTintStyles(variant, sharedValue) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -606,7 +606,7 @@ export function useButtonPillStyles(variant, pressed) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -632,7 +632,7 @@ export function useButtonPillStyles(variant, pressed) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;

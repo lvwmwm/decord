@@ -120,7 +120,7 @@ class MessagesConnected {
     let unloadedContentEntryMessageIds;
     let useReducedMotion;
     let version;
-    const f101004 = () => {
+    const f101020 = () => {
       const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
       return items;
     };
@@ -484,8 +484,8 @@ class MessagesConnected {
     const stateFromStoresObject4 = tmp2Result117.useStateFromStoresObject(items54, () => messageInteractionStates.getMessageInteractionStates());
     const items55 = [LocalInteractionComponentStateStore];
     const tmp2Result118 = tmp2(tmp3[59]);
-    [tmp72, tmp73] = guildId(tmp2Result118.useStateFromStores(items55, f101004, [], tmp2(tmp3[73]).isVersionEqual), 2);
-    guildId(tmp2Result118.useStateFromStores(items55, f101004, [], tmp2(tmp3[73]).isVersionEqual), 2);
+    [tmp72, tmp73] = guildId(tmp2Result118.useStateFromStores(items55, f101020, [], tmp2(tmp3[73]).isVersionEqual), 2);
+    guildId(tmp2Result118.useStateFromStores(items55, f101020, [], tmp2(tmp3[73]).isVersionEqual), 2);
     const items56 = [ExperimentStore];
     const tmp2Result119 = tmp2(tmp3[59]);
     let stateFromStores23 = tmp2Result119.useStateFromStores(items56, () => hasLoadedExperiments.hasLoadedExperiments);

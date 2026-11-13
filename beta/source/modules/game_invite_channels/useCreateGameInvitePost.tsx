@@ -137,7 +137,7 @@ export function useCreateGameInvitePost(parentChannel) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -183,7 +183,7 @@ export function useCreateGameInvitePost(parentChannel) {
           c2 = 0;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp16) {
         if (0 === c2) {
           c3 = 3;

@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f94753 = (item) => {
+const f94769 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -104,7 +104,7 @@ obj = function _resolveExternalAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -175,7 +175,7 @@ obj = function _resolveExternalAssets() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     }
   });
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f94753).length > 0) {
+  if (arr.filter(f94769).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -522,7 +522,7 @@ export { fetchAssetIds };
 export function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f94753).length > 0) {
+  if (arr.filter(f94769).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

@@ -38,7 +38,7 @@ let value = function _redeemGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ let value = function _redeemGiftCode() {
               if (obj18.getIsPaymentsBlocked()) {
                 closure_130_1(closure_130_2[3])();
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 channelId = options.channelId;
                 let tmp36 = null;

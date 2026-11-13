@@ -1,9 +1,9 @@
-// Module ID: 19684
-// Function ID: 19685
+// Module ID: 19687
+// Function ID: 19688
 // Name: VoicePanelCTACardCallerDisconnected
 // Dependencies: [32, 19, 502, 5019, 1385, 21, 5170, 575, 11394, 504, 6205, 7056, 5874, 5783, 1113, 2]
 
-// Module 19684 (VoicePanelCTACardCallerDisconnected)
+// Module 19687 (VoicePanelCTACardCallerDisconnected)
 import nativeDefault from "native" /* 575 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6205 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -43,7 +43,7 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   let tmp9;
   let tmpResult11;
   let tmpResult9;
-  const f119186 = () => {
+  const f119221 = () => {
     const user = UserStore.getUser(id);
     const user1 = UserStore.getUser(first);
     let avatarURL;
@@ -75,9 +75,9 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   let items = [UserStore];
   const items1 = [channelId, id, first];
   const obj = channelId(id[9]);
-  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f119186, items1);
+  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f119221, items1);
   const obj2 = { style: tmp3.container, children: items4 };
-  _slicedToArray(obj.useStateFromStoresArray(items, f119186, items1), 3);
+  _slicedToArray(obj.useStateFromStoresArray(items, f119221, items1), 3);
   let obj3 = { style: tmp3.avatarContainer, children: items2 };
   let tmp16Result = null != tmp9;
   const tmpResult = first(id[11]);

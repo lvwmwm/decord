@@ -39,7 +39,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -79,7 +79,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
           const result1 = showCheckpointTestingToast(string(tmp20.EkMBfH), "failure");
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } catch (tmp8) {
       c2 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 20249
-// Function ID: 20250
+// Module ID: 20252
+// Function ID: 20253
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1072, 7443, 21, 5170, 575, 5401, 11781, 1187, 1411, 5177, 7071, 1113, 7076, 7153, 7462, 20250, 1377, 5783, 6661, 7159, 2]
+// Dependencies: [32, 19, 17, 1072, 7443, 21, 5170, 575, 5401, 11781, 1187, 1411, 5177, 7071, 1113, 7076, 7153, 7462, 20253, 1377, 5783, 6661, 7159, 2]
 // Exports: default
 
-// Module 20249 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 20252 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
@@ -18,7 +18,7 @@ import PlatformsDefault from "Platforms" /* 6661 */;
 import XSmallIcon from "XSmallIcon" /* 7153 */;
 import TableRowGroup3 from "TableRowGroup" /* 7159 */;
 import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11781 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20250 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 7443 */;
@@ -77,7 +77,7 @@ function Header(arg0) {
     application2 = integration.application;
   }
   if (null != application2) {
-    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
+    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
     const Avatar2 = tmp3(1187).Avatar;
     bot = undefined;
     const tmp16 = authStore2;
@@ -99,7 +99,7 @@ function Header(arg0) {
       }
       let tmp13;
       if (null != bot1) {
-        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
+        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
         const Avatar = tmp3(1187).Avatar;
         tmp13 = authStore2(Avatar, obj2);
       }
@@ -244,7 +244,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(20250);
+  let obj = metadataField(20253);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -253,7 +253,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(20250);
+  const tmp2Result = tmp2(20253);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);

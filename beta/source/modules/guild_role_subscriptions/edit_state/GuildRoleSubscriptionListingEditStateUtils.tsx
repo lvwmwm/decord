@@ -31,9 +31,9 @@ let c10;
 let c9;
 let closure_12;
 let map1;
-const f113994 = (setListing) => setListing.setListing;
-const f114001 = (id) => id.id;
-const f133573 = () => {
+const f114012 = (setListing) => setListing.setListing;
+const f114019 = (id) => id.id;
+const f133609 = () => {
   state.setState((listings) => {
     let obj2;
     obj = { listings: obj2 };
@@ -55,14 +55,14 @@ function getRoleEmojis(arr, arg1) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(found.map(f114001));
+    set = new Set(found.map(f114019));
     return set;
   }
 }
 function clearEditState(NEW_LISTING_EDIT_STATE_ID) {
   _require = NEW_LISTING_EDIT_STATE_ID;
   obj = require("react-native");
-  obj.batchUpdates(f133573);
+  obj.batchUpdates(f133609);
 }
 let obj = function _updateListingPeripheralsFromEditState() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -83,7 +83,7 @@ let obj = function _updateListingPeripheralsFromEditState() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -259,7 +259,7 @@ let obj = function _updateListingPeripheralsFromEditState() {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           subscriptionTrial = closure_130_8.getSubscriptionTrial(id);
           let tmp26 = null != trialLimit || null != trialInterval;
@@ -306,7 +306,7 @@ obj = function _createListingFromEditState() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -456,7 +456,7 @@ export function useListingEditState(arg0, arg1, arg2) {
   let closure_1 = arg1;
   let tmp = arg2;
   let closure_2 = arg2;
-  const tmp2 = authStore(f113994);
+  const tmp2 = authStore(f114012);
   let closure_3 = tmp2;
   const items = [tmp2, arg0, arg1, arg2];
   const callback = react.useCallback((arg0) => {
@@ -498,14 +498,14 @@ export function useClearEditStateOnUnmount(arg0) {
     let state;
     closure_0 = closure_1_0;
     obj = closure_0(dependencyMap[19]);
-    obj.batchUpdates(f133573);
+    obj.batchUpdates(f133609);
   }, items);
 }
 export function useName(arg0) {
   let closure_0;
   let closure_3;
   _require = arg0;
-  const f114005 = (name) => {
+  const f114023 = (name) => {
     let str;
     if (name != null) {
       str = name.name;
@@ -518,12 +518,12 @@ export function useName(arg0) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f114005(5771)(() => f114022);
+  const tmp2 = f114023(5771)(() => f114040);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = arg0;
   const name = "name";
-  const tmp4 = closure_10(f113994);
+  const tmp4 = closure_10(f114012);
   dependencyMap = tmp4;
   const items2 = [tmp4, arg0, "name", memo];
   const callback = react.useCallback((arg0) => {
@@ -561,7 +561,7 @@ export function useName(arg0) {
 export function usePriceTier(editStateId) {
   let closure_3;
   _require = editStateId;
-  const f114006 = (arg0) => {
+  const f114024 = (arg0) => {
     let price;
     if (arg0 != null) {
       const first = arg0.subscription_plans[0];
@@ -574,12 +574,12 @@ export function usePriceTier(editStateId) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f114006(5771)(() => f114022);
+  const tmp2 = f114024(5771)(() => f114040);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = editStateId;
   const priceTier = "priceTier";
-  const tmp4 = closure_10(f113994);
+  const tmp4 = closure_10(f114012);
   dependencyMap = tmp4;
   const items2 = [tmp4, editStateId, "priceTier", memo];
   const callback = react.useCallback((arg0) => {
@@ -618,7 +618,7 @@ export function useDescription(arg0) {
   let closure_0;
   let closure_3;
   _require = arg0;
-  const f114007 = (description) => {
+  const f114025 = (description) => {
     let str;
     if (description != null) {
       str = description.description;
@@ -631,12 +631,12 @@ export function useDescription(arg0) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f114007(5771)(() => f114022);
+  const tmp2 = f114025(5771)(() => f114040);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = arg0;
   const description = "description";
-  const tmp4 = closure_10(f113994);
+  const tmp4 = closure_10(f114012);
   dependencyMap = tmp4;
   const items2 = [tmp4, arg0, "description", memo];
   const callback = react.useCallback((arg0) => {
@@ -674,7 +674,7 @@ export function useDescription(arg0) {
 export function useImage(editStateId, arg1) {
   let closure_0;
   _require = editStateId;
-  const f114008 = (image_asset) => {
+  const f114026 = (image_asset) => {
     image_asset = undefined;
     if (image_asset != null) {
       image_asset = image_asset.image_asset;
@@ -687,12 +687,12 @@ export function useImage(editStateId, arg1) {
   obj = require("get initialized");
   const items = [GuildRoleSubscriptionsStore];
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = reactDefault(() => f114022);
+  const tmp2 = reactDefault(() => f114040);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = editStateId;
   const image = "image";
-  const tmp4 = closure_10(f113994);
+  const tmp4 = closure_10(f114012);
   let closure_3 = tmp4;
   const items2 = [tmp4, editStateId, "image", memo];
   const callback = react.useCallback((arg0) => {
@@ -730,7 +730,7 @@ export function useImage(editStateId, arg1) {
 export function useApplicationId(listingId) {
   let closure_3;
   _require = listingId;
-  const f114009 = (application_id) => {
+  const f114027 = (application_id) => {
     application_id = undefined;
     if (application_id != null) {
       application_id = application_id.application_id;
@@ -740,7 +740,7 @@ export function useApplicationId(listingId) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f114009(5771)(() => f114022);
+  const tmp2 = f114027(5771)(() => f114040);
   dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
   return react.useMemo(() => closure_3(stateFromStores), items1);
@@ -763,7 +763,7 @@ export function useRoleIcon(editStateId, guildId) {
   }, items);
   let closure_0 = editStateId;
   const roleIcon = "roleIcon";
-  const tmp3 = authStore(f113994);
+  const tmp3 = authStore(f114012);
   let closure_3 = tmp3;
   const items1 = [tmp3, editStateId, "roleIcon", memo];
   const callback = react.useCallback((arg0) => {
@@ -863,7 +863,7 @@ export function useRoleColor(editStateId, guildId) {
   }, items);
   let color = editStateId;
   const roleColor = "roleColor";
-  const tmp3 = closure_10(f113994);
+  const tmp3 = closure_10(f114012);
   let closure_3 = tmp3;
   const items1 = [tmp3, editStateId, "roleColor", memo];
   const callback = react.useCallback((arg0) => {
@@ -913,7 +913,7 @@ export function useChannelAccessFormat(editStateId, guildId) {
   }, items);
   let closure_0 = editStateId;
   const channelAccessFormat = "channelAccessFormat";
-  const tmp3 = closure_10(f113994);
+  const tmp3 = closure_10(f114012);
   let closure_3 = tmp3;
   const items1 = [tmp3, editStateId, "channelAccessFormat", memo];
   const callback = react.useCallback((arg0) => {
@@ -951,7 +951,7 @@ export function useChannelAccessFormat(editStateId, guildId) {
 export function useChannelBenefits(listingId) {
   let closure_3;
   _require = listingId;
-  const f114016 = (role_benefits) => {
+  const f114034 = (role_benefits) => {
     let found;
     if (null == role_benefits) {
       found = closure_1_15;
@@ -964,12 +964,12 @@ export function useChannelBenefits(listingId) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f114016(5771)(() => f114022);
+  const tmp2 = f114034(5771)(() => f114040);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = listingId;
   const channelBenefits = "channelBenefits";
-  const tmp4 = closure_10(f113994);
+  const tmp4 = closure_10(f114012);
   dependencyMap = tmp4;
   const items2 = [tmp4, listingId, "channelBenefits", memo];
   const callback = react.useCallback((arg0) => {
@@ -1007,7 +1007,7 @@ export function useChannelBenefits(listingId) {
 export function useIntangibleBenefits(listingId) {
   let closure_3;
   _require = listingId;
-  const f114017 = (role_benefits) => {
+  const f114035 = (role_benefits) => {
     let found;
     if (null == role_benefits) {
       found = closure_1_16;
@@ -1020,12 +1020,12 @@ export function useIntangibleBenefits(listingId) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f114017(5771)(() => f114022);
+  const tmp2 = f114035(5771)(() => f114040);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = listingId;
   const intangibleBenefits = "intangibleBenefits";
-  const tmp4 = closure_10(f113994);
+  const tmp4 = closure_10(f114012);
   dependencyMap = tmp4;
   const items2 = [tmp4, listingId, "intangibleBenefits", memo];
   const callback = react.useCallback((arg0) => {
@@ -1082,14 +1082,14 @@ export function useTierEmojiIds(listingId, guildId) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        set = new Set(found.map(f114001));
+        set = new Set(found.map(f114019));
       }
     }
     return set;
   }, items2);
   _require = listingId;
   const tierEmojiIds = "tierEmojiIds";
-  const tmp4 = closure_10(f113994);
+  const tmp4 = closure_10(f114012);
   let closure_3 = tmp4;
   const items3 = [tmp4, listingId, "tierEmojiIds", memo];
   const callback = react.useCallback((arg0) => {
@@ -1141,7 +1141,7 @@ export function useTrialInterval(editStateId) {
   }
   let closure_0 = editStateId;
   const trialInterval = "trialInterval";
-  const tmp5 = authStore(f113994);
+  const tmp5 = authStore(f114012);
   let closure_3 = tmp5;
   const items = [tmp5, editStateId, "trialInterval", selectedOption];
   const callback = react.useCallback((arg0) => {
@@ -1188,7 +1188,7 @@ export function useTrialLimit(editStateId) {
   }
   let closure_0 = editStateId;
   const trialLimit = "trialLimit";
-  const tmp3 = authStore(f113994);
+  const tmp3 = authStore(f114012);
   let closure_3 = tmp3;
   const items = [tmp3, editStateId, "trialLimit", prop];
   const callback = react.useCallback((arg0) => {
@@ -1244,7 +1244,7 @@ export function useSubscriptionPlan(listingId) {
   let first;
   let memo;
   let subscriptionListing;
-  const f114022 = (arg0) => {
+  const f114040 = (arg0) => {
     first = undefined;
     if (arg0 != null) {
       first = arg0.subscription_plans[0];
@@ -1254,13 +1254,13 @@ export function useSubscriptionPlan(listingId) {
   obj = memo(504);
   const items = [GuildRoleSubscriptionsStore];
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  let tmp2 = first(5771)(() => f114022);
+  let tmp2 = first(5771)(() => f114040);
   const items1 = [stateFromStores, tmp2];
   memo = react.useMemo(() => closure_3(stateFromStores), items1);
   let closure_0 = listingId;
   const priceTier = "priceTier";
   let c2;
-  let tmp4 = closure_10(f113994);
+  let tmp4 = closure_10(f114012);
   let closure_3 = tmp4;
   const items2 = [tmp4, listingId, "priceTier", undefined];
   const callback = react.useCallback((arg0) => {
@@ -1459,7 +1459,7 @@ export function useCreateOrUpdateListingFromEditState() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1529,7 +1529,7 @@ export function useCreateOrUpdateListingFromEditState() {
               c4 = 0;
               guildId(false);
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               throw subscriptionListing;
             }

@@ -36,7 +36,7 @@ let obj = function _generateAnimationSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c9;
@@ -227,7 +227,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -381,7 +381,7 @@ export function useBurstReactionAnimationSource(channelId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -417,7 +417,7 @@ export function useBurstReactionAnimationSource(channelId) {
               closure_1_4(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp17) {
             c3 = 3;
             throw tmp17;
@@ -458,7 +458,7 @@ export function useSuperReactionAnimationSourceFromLocalImage(animationSource) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -491,7 +491,7 @@ export function useSuperReactionAnimationSourceFromLocalImage(animationSource) {
               animationSource = value;
               c2(animationSource);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp13) {
             c3 = 3;

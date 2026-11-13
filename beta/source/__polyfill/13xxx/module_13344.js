@@ -25,7 +25,7 @@ let tmp;
 const _mod13310 = tmp(13310);
 const _mod13328 = tmp(13328);
 const _mod13329 = tmp(13329);
-const f105598 = (fn) => fn();
+const f105614 = (fn) => fn();
 function createChildOrRootSpan(forceTransaction) {
   let parentSpan;
   let scope;
@@ -371,7 +371,7 @@ export function startSpan(experimental, arg1) {
           });
         }
         return withActiveSpanResult;
-      }) : f105598(function() {
+      }) : f105614(function() {
         let sentryNonRecordingSpan;
         let tmp = experimental;
         let tmp2 = closure_1_1;
@@ -486,7 +486,7 @@ export function startSpanManual(experimental, arg1) {
           });
         }
         return withActiveSpanResult;
-      }) : f105598(function() {
+      }) : f105614(function() {
         let sentryNonRecordingSpan;
         function finishAndSetSpan() {
           sentryNonRecordingSpan.end();

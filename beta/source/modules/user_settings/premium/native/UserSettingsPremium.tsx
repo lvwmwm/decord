@@ -73,7 +73,7 @@ export default function UserSettingsPremium(applicationId) {
   let tmp30Result;
   let tmp30Result5;
   let tmp9;
-  const f92628 = () => {
+  const f92644 = () => {
     const items = [premiumTrialOffer.getPremiumTypeSubscription(), premiumTrialOffer.hasFetchedSubscriptions()];
     return items;
   };
@@ -134,8 +134,8 @@ export default function UserSettingsPremium(applicationId) {
   });
   let obj2 = applicationId(504);
   const items3 = [premiumTrialOffer];
-  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f92628);
-  _slicedToArray(obj2.useStateFromStoresArray(items3, f92628), 2);
+  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f92644);
+  _slicedToArray(obj2.useStateFromStoresArray(items3, f92644), 2);
   let obj3 = applicationId(1499);
   state = obj3.useNavigation();
   const items4 = [state2];

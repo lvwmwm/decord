@@ -83,7 +83,7 @@ export function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ export function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
             found = closure_5;
             if (closure_5 instanceof sourceState(navigation[10]).CaptchaCancelError) {
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               let obj3 = sourceState(navigation[11]);
               tmp = obj3.getAuthenticationErrorsFromAPIError(closure_5);
@@ -194,7 +194,7 @@ export function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
             obj13 = { phone };
             push(VERIFY_PHONE, obj12);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp51) {
           closure_4 = tmp51;

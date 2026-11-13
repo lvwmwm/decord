@@ -87,7 +87,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -142,7 +142,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp41) {
           closure_2 = tmp41;

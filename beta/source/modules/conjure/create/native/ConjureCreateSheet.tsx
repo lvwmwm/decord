@@ -141,7 +141,7 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -197,7 +197,7 @@ export default function ConjureCreateSheet(guildId) {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp38) {
           closure_4 = tmp38;
@@ -230,7 +230,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -273,7 +273,7 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -300,7 +300,7 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ export default function ConjureCreateSheet(guildId) {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp55) {
           closure_4 = tmp55;
@@ -438,7 +438,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -578,7 +578,7 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp53) {
         if (0 === c6) {
           c8 = 3;

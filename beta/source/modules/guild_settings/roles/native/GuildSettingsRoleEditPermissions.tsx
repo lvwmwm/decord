@@ -1,10 +1,10 @@
-// Module ID: 20245
-// Function ID: 20246
+// Module ID: 20248
+// Function ID: 20249
 // Name: GuildSettingsRoleEditPermissions
-// Dependencies: [32, 19, 17, 5037, 5102, 1385, 1072, 21, 5170, 575, 5107, 38, 5783, 1113, 5406, 20246, 2118, 19323, 20243, 7315, 1252, 1084, 19327, 7462, 7159, 1187, 9180, 2]
+// Dependencies: [32, 19, 17, 5037, 5102, 1385, 1072, 21, 5170, 575, 5107, 38, 5783, 1113, 5406, 20249, 2118, 19323, 20246, 7315, 1252, 1084, 19327, 7462, 7159, 1187, 9180, 2]
 // Exports: default
 
-// Module 20245 (GuildSettingsRoleEditPermissions)
+// Module 20248 (GuildSettingsRoleEditPermissions)
 import nativeDefault from "native" /* 575 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -118,7 +118,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { permissionsEdited, onPermissionsChanged: dependencyMap, guildId: guild.id };
-          const tmp3 = asyncRequire(20246, dependencyMap.paths);
+          const tmp3 = asyncRequire(20249, dependencyMap.paths);
           openLazy(tmp3, "role-permission-templates-" + guild.id + "-" + role.id, obj);
         },
       accessibilityRole: "button"
@@ -146,7 +146,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
   const children = [, , , ];
   const tmp25 = mapped1.length > 0;
-  children[0] = closure_14(role(20243), { role });
+  children[0] = closure_14(role(20246), { role });
   let obj6 = { children: tmp19(guild(7315).SearchBar, obj7) };
   obj7 = {
     size: "md",

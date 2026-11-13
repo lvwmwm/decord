@@ -58,7 +58,7 @@ export default function HubEmailConnectionPinVerify(email) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -112,7 +112,7 @@ export default function HubEmailConnectionPinVerify(email) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp34) {
           closure_3 = tmp34;
@@ -157,7 +157,7 @@ export default function HubEmailConnectionPinVerify(email) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -216,7 +216,7 @@ export default function HubEmailConnectionPinVerify(email) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp34) {
         closure_3 = tmp34;

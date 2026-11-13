@@ -50,7 +50,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -109,7 +109,7 @@ obj = function _fetchStorefrontPromotions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _fetchStorefrontPromotions() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp29) {
           if (0 === c3) {
             c5 = 3;
@@ -199,7 +199,7 @@ obj = function _claimStorefrontPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -334,7 +334,7 @@ obj = function _fetchStorefrontPrices() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -379,7 +379,7 @@ obj = function _fetchStorefrontPrices() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp21) {
         if (0 === c2) {
           c4 = 3;

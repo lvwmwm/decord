@@ -36,7 +36,7 @@ class InputWatcher {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let closure_2;
@@ -136,7 +136,7 @@ class InputWatcher {
             _Promise.dispatch(obj);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp42) {
           closure_2 = tmp42;
           if (0 === osVolume) {
@@ -170,7 +170,7 @@ class InputWatcher {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -208,7 +208,7 @@ class InputWatcher {
             const obj2 = c1(inputDetected[10]);
             obj2.dispatch(obj6);
             inputDetected = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp11) {
             inputDetected = 3;
             throw tmp11;

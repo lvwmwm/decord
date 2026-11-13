@@ -1,18 +1,18 @@
-// Module ID: 20441
-// Function ID: 20442
+// Module ID: 20444
+// Function ID: 20445
 // Name: GuildSettingsRoleSubscriptionTierTemplateSelection
-// Dependencies: [32, 19, 17, 17578, 20392, 1072, 21, 575, 5170, 5783, 7390, 20442, 563, 17558, 17559, 12776, 20448, 1627, 1499, 1252, 5921, 20401, 10383, 1113, 7097, 6192, 1260, 20388, 1187, 2]
+// Dependencies: [32, 19, 17, 17578, 20395, 1072, 21, 575, 5170, 5783, 7390, 20445, 563, 17558, 17559, 12776, 20451, 1627, 1499, 1252, 5921, 20404, 10383, 1113, 7097, 6192, 1260, 20391, 1187, 2]
 // Exports: default
 
-// Module 20441 (GuildSettingsRoleSubscriptionTierTemplateSelection)
+// Module 20444 (GuildSettingsRoleSubscriptionTierTemplateSelection)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
 import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17559 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20392 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 20401 */;
-import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 20442 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20395 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 20404 */;
+import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 20445 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -74,7 +74,7 @@ function TierTemplatesRenderer(groupListingId) {
                   return closure_1_13(closure_1_8, obj);
                 },
           decelerationRate: "fast",
-          snapToInterval: guildId(20442).CARD_WIDTH + PX_16,
+          snapToInterval: guildId(20445).CARD_WIDTH + PX_16,
           renderItem(template) {
                   const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
                   return map1(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);

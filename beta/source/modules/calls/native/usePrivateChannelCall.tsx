@@ -76,7 +76,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -128,7 +128,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
             closure_129_2();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp24) {
           c3 = 3;
           throw tmp24;

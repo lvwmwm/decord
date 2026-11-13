@@ -83,59 +83,59 @@ export default function GiftCodeRedeemStart(giftCode) {
   let tmp32Result3;
   let tmp32Result4;
   let type;
-  const f101060 = () => {
+  const f101076 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t.JUV1tL, obj);
   };
-  const f101061 = () => {
+  const f101077 = () => {
     const intl = giftCode(soundId[10]).intl;
     return intl.string(giftCode(soundId[10]).t.iJ8823);
   };
-  const f101062 = () => {
+  const f101078 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t.SKduyh, obj);
   };
-  const f101063 = () => {
+  const f101079 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t["1w42T2"], obj);
   };
-  const f101064 = () => {
+  const f101080 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t.vFiQlU, obj);
   };
-  const f101065 = () => {
+  const f101081 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t["UH/EQL"], obj);
   };
-  const f101066 = () => {
+  const f101082 = () => {
     const intl = giftCode(soundId[10]).intl;
     return intl.string(giftCode(soundId[10]).t["2ZO6CC"]);
   };
-  const f101067 = () => {
+  const f101083 = () => {
     const intl = giftCode(soundId[10]).intl;
     return intl.string(giftCode(soundId[10]).t["2NxdjX"]);
   };
-  const f101068 = () => {
+  const f101084 = () => {
     const intl = giftCode(soundId[10]).intl;
     return intl.string(giftCode(soundId[10]).t.v7F232);
   };
-  const f128954 = (avatarDecoration) => {
+  const f128989 = (avatarDecoration) => {
     let getAvatarSource;
     const obj = { source: getAvatarSource(null, true, native.AVATAR_SIZE_MAP[native.AvatarSizes.GIFT_START]), avatarDecoration, size: native.AvatarSizes.GIFT_START, animate: true };
     const Avatar = native.Avatar;
     getAvatarSource = user.getAvatarSource;
     return authStore2(Avatar, obj);
   };
-  const f128955 = (profileEffect) => {
+  const f128990 = (profileEffect) => {
     const obj = { user, profileEffect };
     return authStore2(ProfileEffectUserPreviewDefault, obj);
   };
-  const f128956 = (profileFrame) => {
+  const f128991 = (profileFrame) => {
     const obj = { user, profileFrame };
     return authStore2(ProfileFrameUserPreviewDefault, obj);
   };
@@ -494,14 +494,14 @@ export default function GiftCodeRedeemStart(giftCode) {
     const obj30 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION };
     const _with11 = match.with;
     const obj31 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT };
-    const _with12 = _with11(obj30, f128954).with;
-    _with11(obj30, f128954);
+    const _with12 = _with11(obj30, f128989).with;
+    _with11(obj30, f128989);
     const obj32 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME };
-    const _with13 = _with12(obj31, f128955).with;
-    _with12(obj31, f128955);
+    const _with13 = _with12(obj31, f128990).with;
+    _with12(obj31, f128990);
     const obj33 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE };
-    const _with14 = _with13(obj32, f128956).with;
-    _with13(obj32, f128956);
+    const _with14 = _with13(obj32, f128991).with;
+    _with13(obj32, f128991);
     _with14Result = _with14(obj33, (nameplate) => {
       let obj2;
       const items = [hasOwnProperty.nameplateContainer, ];
@@ -528,36 +528,36 @@ export default function GiftCodeRedeemStart(giftCode) {
     const _with = match1.with;
     P = tmp2(tmp3[11]).P;
     const obj36 = { isBundle: true, sender: tmp2(tmp3[11]).P.nullish };
-    const _with2 = _with(obj35, f101060).with;
-    _with(obj35, f101060);
+    const _with2 = _with(obj35, f101076).with;
+    _with(obj35, f101076);
     const obj37 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION, sender: P2.not(tmp2(tmp3[11]).P.nullish) };
-    const _with3 = _with2(obj36, f101061).with;
-    _with2(obj36, f101061);
+    const _with3 = _with2(obj36, f101077).with;
+    _with2(obj36, f101077);
     P2 = tmp2(tmp3[11]).P;
     const obj38 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT, sender: P3.not(tmp2(tmp3[11]).P.nullish) };
-    const _with4 = _with3(obj37, f101062).with;
-    _with3(obj37, f101062);
+    const _with4 = _with3(obj37, f101078).with;
+    _with3(obj37, f101078);
     P3 = tmp2(tmp3[11]).P;
     const obj39 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE, sender: P4.not(tmp2(tmp3[11]).P.nullish) };
-    const _with5 = _with4(obj38, f101063).with;
-    _with4(obj38, f101063);
+    const _with5 = _with4(obj38, f101079).with;
+    _with4(obj38, f101079);
     P4 = tmp2(tmp3[11]).P;
     const obj40 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME, sender: P5.not(tmp2(tmp3[11]).P.nullish) };
-    const _with6 = _with5(obj39, f101064).with;
-    _with5(obj39, f101064);
+    const _with6 = _with5(obj39, f101080).with;
+    _with5(obj39, f101080);
     P5 = tmp2(tmp3[11]).P;
     const obj41 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION, sender: tmp2(tmp3[11]).P.nullish };
-    const _with7 = _with6(obj40, f101065).with;
-    _with6(obj40, f101065);
+    const _with7 = _with6(obj40, f101081).with;
+    _with6(obj40, f101081);
     const obj42 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT, sender: tmp2(tmp3[11]).P.nullish };
-    const _with8 = _with7(obj41, f101066).with;
-    _with7(obj41, f101066);
+    const _with8 = _with7(obj41, f101082).with;
+    _with7(obj41, f101082);
     const obj43 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE, sender: tmp2(tmp3[11]).P.nullish };
-    const _with9 = _with8(obj42, f101067).with;
-    _with8(obj42, f101067);
+    const _with9 = _with8(obj42, f101083).with;
+    _with8(obj42, f101083);
     const obj44 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME, sender: tmp2(tmp3[11]).P.nullish };
-    const _with10 = _with9(obj43, f101068).with;
-    _with9(obj43, f101068);
+    const _with10 = _with9(obj43, f101084).with;
+    _with9(obj43, f101084);
     const _with10Result = _with10(obj44, () => {
       const intl = giftCode(soundId[10]).intl;
       return intl.string(giftCode(soundId[10]).t["1+tgC0"]);

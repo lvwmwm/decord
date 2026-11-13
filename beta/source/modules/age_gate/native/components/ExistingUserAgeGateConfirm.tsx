@@ -1,10 +1,10 @@
-// Module ID: 19835
-// Function ID: 19836
+// Module ID: 19838
+// Function ID: 19839
 // Name: ExistingUserAgeGateConfirm
 // Dependencies: [5, 32, 19, 17, 1072, 21, 5170, 1499, 7388, 5783, 1113, 2185, 5790, 2]
 // Exports: default
 
-// Module 19835 (ExistingUserAgeGateConfirm)
+// Module 19838 (ExistingUserAgeGateConfirm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
@@ -53,7 +53,7 @@ export default function ExistingUserAgeGateConfirm(onConfirm) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -96,7 +96,7 @@ export default function ExistingUserAgeGateConfirm(onConfirm) {
             }
             closure_128_2(false);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           let closure_2 = tmp18;

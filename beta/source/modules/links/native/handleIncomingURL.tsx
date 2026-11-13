@@ -1,16 +1,16 @@
-// Module ID: 20560
-// Function ID: 20561
+// Module ID: 20563
+// Function ID: 20564
 // Name: handleIncomingURL
-// Dependencies: [5, 5019, 5925, 2117, 1072, 3, 7763, 20559, 8041, 1252, 16012, 5902, 7613, 5907, 1265, 9058, 18356, 20561, 2]
+// Dependencies: [5, 5019, 5925, 2117, 1072, 3, 7763, 20562, 8041, 1252, 16012, 5902, 7613, 5907, 1265, 9058, 18356, 20564, 2]
 // Exports: default
 
-// Module 20560 (handleIncomingURL)
+// Module 20563 (handleIncomingURL)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7763 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
 import handleSupportedURLDefault from "handleSupportedURL" /* 16012 */;
-import DeepLinkTypes from "DeepLinkTypes" /* 20559 */;
+import DeepLinkTypes from "DeepLinkTypes" /* 20562 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
@@ -53,7 +53,7 @@ let obj = function _handleIncomingURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -175,18 +175,18 @@ let obj = function _handleIncomingURL() {
                       }
                     }
                     c8 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } else {
                     const parts = url.split("voice/");
                     if (2 !== parts.length) {
                       c8 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     } else {
                       const str36 = parts[1];
                       const parts1 = str36.split("/");
                       if (0 === parts1.length) {
                         c8 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       } else if ("user" !== parts1[0]) {
                         if ("invite" === parts1[0]) {
                           const obj13 = { payload: obj14, isAppStartupNavigation };
@@ -226,7 +226,7 @@ let obj = function _handleIncomingURL() {
                 }
               }
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === tmp4) {
             c6 = 0;

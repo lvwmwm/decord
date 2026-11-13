@@ -16,7 +16,7 @@ let _require, getGuild;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f118066 = () => {
+const f118084 = () => {
   guild_id = undefined;
   getGuild = getGuild.getGuild;
   if (guild_id != null) {
@@ -31,7 +31,7 @@ export function useIsVoiceChannelAppEnabled(guild_id) {
   _require = guild_id;
   const items = [GuildStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f118066);
+  const stateFromStores = obj.useStateFromStores(items, f118084);
   guild_id = undefined;
   const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
   require("ConjureGuildExperiment");
@@ -60,7 +60,7 @@ export function useVoiceChannelApplicationId(guild_id) {
   _require = guild_id;
   const items = [GuildStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f118066);
+  const stateFromStores = obj.useStateFromStores(items, f118084);
   guild_id = undefined;
   const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
   require("ConjureGuildExperiment");
@@ -101,7 +101,7 @@ export function useCanConfigureVoiceChannelApp(channel) {
   const tmp = _require;
   const items = [GuildStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f118066);
+  const stateFromStores = obj.useStateFromStores(items, f118084);
   let guild_id;
   const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
   const tmp4 = require("ConjureGuildExperiment");

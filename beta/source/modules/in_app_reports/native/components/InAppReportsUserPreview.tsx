@@ -47,7 +47,7 @@ export default function UserPreview(user) {
   items = [_false(Text, obj3), ];
   const obj4 = { style: items1, children: items2 };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj5 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
+  const obj5 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
   const Avatar = native.Avatar;
   items2 = [_false(Avatar, obj5), ];
   let tmp7Result = null != user.globalName;

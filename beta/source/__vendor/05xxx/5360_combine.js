@@ -105,7 +105,7 @@ export function devtools(arg0, devtools) {
     let closure_129_3;
     let enabled;
     let store;
-    const f88788 = (item) => {
+    const f88804 = (item) => {
       let obj;
       let tmp;
       [tmp, obj] = item;
@@ -227,7 +227,7 @@ export function devtools(arg0, devtools) {
                   const _Object = Object;
                   const _Object2 = Object;
                   const entries = Object.entries(value.stores);
-                  fromEntriesResult = fromEntries(entries.map(f88788));
+                  fromEntriesResult = fromEntries(entries.map(f88804));
                 } else {
                   fromEntriesResult = {};
                 }
@@ -364,7 +364,7 @@ export function devtools(arg0, devtools) {
                   const _Object4 = Object;
                   const fromEntries2 = Object.fromEntries;
                   let entries = Object.entries(value.stores);
-                  fromEntries2Result = fromEntries2(entries.map(f88788));
+                  fromEntries2Result = fromEntries2(entries.map(f88804));
                 } else {
                   fromEntries2Result = {};
                 }
@@ -389,7 +389,7 @@ export function devtools(arg0, devtools) {
                   let _Object = Object;
                   let _Object2 = Object;
                   const entries1 = Object.entries(value2.stores);
-                  fromEntriesResult = fromEntries(entries1.map(f88788));
+                  fromEntriesResult = fromEntries(entries1.map(f88804));
                 } else {
                   fromEntriesResult = {};
                 }
@@ -418,7 +418,7 @@ export function devtools(arg0, devtools) {
                       const _Object = Object;
                       const _Object2 = Object;
                       const entries = Object.entries(value.stores);
-                      fromEntriesResult = fromEntries(entries.map(f88788));
+                      fromEntriesResult = fromEntries(entries.map(f88804));
                     } else {
                       fromEntriesResult = {};
                     }
@@ -539,7 +539,7 @@ export function persist(arg0, arg1) {
       let closure_10 = tmp6;
       setState.getInitialState = () => closure_10;
       function hydrate() {
-        const f88792 = (name) => {
+        const f88808 = (name) => {
           try {
             const tmp3 = closure_0(name);
             closure_0 = tmp3;
@@ -560,7 +560,7 @@ export function persist(arg0, arg1) {
               then(arg0) {
                   return this;
                 },
-              catch: f124776
+              catch: f124811
             };
           }
         };
@@ -590,7 +590,7 @@ export function persist(arg0, arg1) {
           const getItem = storage.getItem;
           if (typeof closure_9 === "function") {
             callResult = getItem.bind(storage);
-            const promise = f88792(obj.name);
+            const promise = f88808(obj.name);
             let nextPromise = promise.then((version) => {
               const tmp = version;
               if (tmp) {

@@ -1,10 +1,10 @@
-// Module ID: 20200
-// Function ID: 20201
+// Module ID: 20203
+// Function ID: 20204
 // Name: GuildSettingsServerTagColorPickerActionSheet
 // Dependencies: [32, 19, 17, 8497, 21, 575, 5170, 16797, 5167, 1493, 1652, 12090, 1113, 9092, 5406, 5420, 7415, 6191, 9408, 16081, 5783, 9327, 16798, 9176, 5790, 2]
 // Exports: default
 
-// Module 20200 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 20203 (GuildSettingsServerTagColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ColorUtils from "ColorUtils" /* 5167 */;

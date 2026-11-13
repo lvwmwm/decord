@@ -90,7 +90,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   let items = [enabled];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f142939 = () => {
+    const f142984 = () => {
       importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -98,13 +98,13 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
       if (closure_0) {
         num = closure_2_9;
       }
-      enabled = _setTimeout(f142939, num);
+      enabled = _setTimeout(f142984, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f142939, closure_1_9);
+      timeout = setTimeout(f142984, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);

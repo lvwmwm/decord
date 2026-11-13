@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap, set, token;
 
 let obj2;
-const f117375 = (text) => text.text;
+const f117393 = (text) => text.text;
 function SearchFilterPrefixRow(text) {
   text = text.text;
   const require = text;
@@ -50,7 +50,7 @@ function SearchFilterPrefixRow(text) {
   return <TableRow icon={memo} onPress={callback} label={null} subLabel={memo1} />;
 }
 function getSuggestionsKey(arr) {
-  const mapped = arr.map(f117375);
+  const mapped = arr.map(f117393);
   return mapped.join(" ");
 }
 function AnimatedEnterExitContainer(state) {
@@ -222,10 +222,10 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
               }
             });
             closure_7((arr) => {
-              const mapped = arr.map(f117375);
+              const mapped = arr.map(f117393);
               let tmp2 = closure_1;
               const joined = mapped.join(" ");
-              const mapped1 = closure_1.map(f117375);
+              const mapped1 = closure_1.map(f117393);
               if (joined === mapped1.join(" ")) {
                 tmp2 = arr;
               }

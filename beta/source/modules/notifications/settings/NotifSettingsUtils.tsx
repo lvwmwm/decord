@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f110420 = () => NotifSettingsProtoStore.getSetting(closure_0);
+const f110436 = () => NotifSettingsProtoStore.getSetting(closure_0);
 const result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsUtils.tsx");
 
 export function b64ToDeclarativeSettingsProto(declarative_settings_proto) {
@@ -28,7 +28,7 @@ export function useNotifSettingValue(arg0) {
   const items = [NotifSettingsProtoStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f110420, items1);
+  return obj.useStateFromStores(items, f110436, items1);
 }
 export function getNotifSettingToggleValue(arg0, result) {
   const tmp = result;
@@ -99,7 +99,7 @@ export function useNotifSettingRadioValue(arg0) {
   const items = [NotifSettingsProtoStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f110420, items1);
+  const stateFromStores = obj.useStateFromStores(items, f110436, items1);
   let num;
   if (stateFromStores != null) {
     num = stateFromStores.radio;

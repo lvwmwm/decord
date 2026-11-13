@@ -38,7 +38,7 @@ let obj = function _savedMessageJumpToMessage() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -85,11 +85,11 @@ let obj = function _savedMessageJumpToMessage() {
             if (null == guildId.recipients) {
               c5 = 0;
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else if (guildId.recipients.length > 1) {
               c5 = 0;
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const recipients = guildId.recipients;
               const obj2 = closure_131_1(closure_131_2[9]);
@@ -121,7 +121,7 @@ let obj = function _savedMessageJumpToMessage() {
         }
         guildId = tmp16(CHANNEL(guildId1, closure_0.saveData.channelId, closure_0.saveData.messageId), { openChannel: true });
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp24) {
         let closure_4 = tmp24;
         if (0 === c5) {

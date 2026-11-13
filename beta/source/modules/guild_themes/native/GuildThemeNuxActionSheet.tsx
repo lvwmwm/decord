@@ -153,7 +153,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -205,7 +205,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
           obj.hideActionSheet(GuildThemeNuxActionSheet_str);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp36) {
         closure_2 = tmp36;
         if (0 === v0) {

@@ -1,10 +1,10 @@
-// Module ID: 20540
-// Function ID: 20541
+// Module ID: 20543
+// Function ID: 20544
 // Name: AgeUpdateFooter
 // Dependencies: [19, 21, 5170, 5783, 1113, 2960, 8057, 6816, 2]
 // Exports: default
 
-// Module 20540 (AgeUpdateFooter)
+// Module 20543 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2960 from "module_2960" /* 2960 */;

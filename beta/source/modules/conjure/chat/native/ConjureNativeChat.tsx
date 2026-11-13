@@ -171,11 +171,11 @@ export default function ConjureNativeChat(projectId) {
   let tmp82;
   let tmp83;
   let tmp96;
-  const f104345 = () => {
+  const f104361 = () => {
     map = new Map();
     return map;
   };
-  const f104348 = () => {
+  const f104364 = () => {
     map = new Map();
     return map;
   };
@@ -397,8 +397,8 @@ export default function ConjureNativeChat(projectId) {
     const obj = ConjureSecretRequestState;
     return obj.secretRequestStatuses(memo, stateFromStores11);
   }, items29);
-  [c15, c16] = tmp20(obj4.useState(f104345), 2);
-  tmp20(obj4.useState(f104345), 2);
+  [c15, c16] = tmp20(obj4.useState(f104361), 2);
+  tmp20(obj4.useState(f104361), 2);
   onToggleChecklist = obj4.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -412,8 +412,8 @@ export default function ConjureNativeChat(projectId) {
     const obj = conjurePendingPlan;
     return obj.planVersions(memo);
   }, items30);
-  [c19, c20] = tmp20(obj4.useState(f104348), 2);
-  tmp20(obj4.useState(f104348), 2);
+  [c19, c20] = tmp20(obj4.useState(f104364), 2);
+  tmp20(obj4.useState(f104364), 2);
   onTogglePlan = obj4.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;

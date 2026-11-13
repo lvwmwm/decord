@@ -1,10 +1,10 @@
-// Module ID: 19649
-// Function ID: 19650
+// Module ID: 19652
+// Function ID: 19653
 // Name: VoicePanelDockGlow
-// Dependencies: [19, 17, 11413, 21, 11394, 1652, 5402, 5756, 575, 19637, 8134, 8948, 1493, 14268, 14267, 14269, 5167, 11421, 5747, 2]
+// Dependencies: [19, 17, 11413, 21, 11394, 1652, 5402, 5756, 575, 19640, 8134, 8948, 1493, 14268, 14267, 14269, 5167, 11421, 5747, 2]
 // Exports: VoicePanelDockBottomLine, VoicePanelDockGlow
 
-// Module 19649 (VoicePanelDockGlow)
+// Module 19652 (VoicePanelDockGlow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;

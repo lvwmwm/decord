@@ -17,7 +17,7 @@ let obj5;
 let touchableHandleBlur;
 let touchableHandleFocus;
 const jsx = Fragment.jsx;
-const f22098 = (arg0) => {
+const f22101 = (arg0) => {
 
 };
 const NOT_RESPONDER = "NOT_RESPONDER";
@@ -167,7 +167,7 @@ obj5 = {
         tmp5 = sum;
       }
       nativeEvent = nativeEvent.nativeEvent;
-      if (typeof f22098 === "function") {
+      if (typeof f22101 === "function") {
         ({ touches, changedTouches } = nativeEvent);
         const tmp13 = changedTouches && changedTouches.length > 0;
         if (!(touches && touches.length > 0)) {
@@ -321,7 +321,7 @@ obj5 = {
     let tmp7;
     let touches;
     nativeEvent = nativeEvent.nativeEvent;
-    if (typeof f22098 === "function") {
+    if (typeof f22101 === "function") {
       ({ touches, changedTouches } = nativeEvent);
       const tmp2 = changedTouches && changedTouches.length > 0;
       if (!(touches && touches.length > 0)) {

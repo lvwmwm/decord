@@ -16,7 +16,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f92616 = (numPremiumGuild) => numPremiumGuild.numPremiumGuild === numPremiumGuild.numPremiumGuild && numPremiumGuild.premiumTier === numPremiumGuild.premiumTier && numPremiumGuild.interval !== numPremiumGuild.interval && !numPremiumGuild.isDeprecated;
+const f92632 = (numPremiumGuild) => numPremiumGuild.numPremiumGuild === numPremiumGuild.numPremiumGuild && numPremiumGuild.premiumTier === numPremiumGuild.premiumTier && numPremiumGuild.interval !== numPremiumGuild.interval && !numPremiumGuild.isDeprecated;
 function getPremiumBundledItemsFromProductId(toggledIntervalProduct) {
   if (toggledIntervalProduct in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
     return ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[toggledIntervalProduct];
@@ -124,7 +124,7 @@ export function getToggledIntervalProduct(productId) {
     if (tmp6.premiumTier !== React3.TIER_1) {
       const _Object = Object;
       const values = Object.values(tmp(7702).AppStorePremiumProductIdsToPremiumBundledItems);
-      const found = values.find(f92616);
+      const found = values.find(f92632);
       productId = undefined;
       if (found != null) {
         productId = found.productId;
@@ -153,7 +153,7 @@ export function getProductIdsForBothIntervals(monthly) {
       if (tmp10.premiumTier !== React3.TIER_1) {
         const _Object = Object;
         const values = Object.values(tmp(7702).AppStorePremiumProductIdsToPremiumBundledItems);
-        const found = values.find(f92616);
+        const found = values.find(f92632);
         let productId;
         if (found != null) {
           productId = found.productId;

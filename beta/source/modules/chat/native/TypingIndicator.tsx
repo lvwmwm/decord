@@ -30,8 +30,8 @@ let currentUser;
 let closure_12;
 let closure_14;
 let map1;
-const f106677 = () => DevSettingsStore.get("preview_own_typing_indicator");
-const f106678 = () => {
+const f106693 = () => DevSettingsStore.get("preview_own_typing_indicator");
+const f106694 = () => {
   currentUser = currentUser.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -315,10 +315,10 @@ const memoResult = react.memo(function TypingIndicator(channel) {
   typingUserIds = obj.useTypingUserIds(id, 4);
   let items = [DevSettingsStore];
   const obj2 = typingUserIds(stateFromStores1[11]);
-  const stateFromStores = obj2.useStateFromStores(items, f106677);
+  const stateFromStores = obj2.useStateFromStores(items, f106693);
   const items1 = [UserStore];
   const obj3 = typingUserIds(stateFromStores1[11]);
-  stateFromStores1 = obj3.useStateFromStores(items1, f106678);
+  stateFromStores1 = obj3.useStateFromStores(items1, f106694);
   const items2 = [stateFromStores, stateFromStores1, typingUserIds];
   const memo = react.useMemo(() => {
     const tmp = stateFromStores;
@@ -366,10 +366,10 @@ export function useTypingUserIdsForDisplay(id, arg1) {
   typingUserIds = obj.useTypingUserIds(id, arg1);
   const items = [DevSettingsStore];
   const obj2 = typingUserIds(stateFromStores1[11]);
-  const stateFromStores = obj2.useStateFromStores(items, f106677);
+  const stateFromStores = obj2.useStateFromStores(items, f106693);
   const items1 = [UserStore];
   const obj3 = typingUserIds(stateFromStores1[11]);
-  stateFromStores1 = obj3.useStateFromStores(items1, f106678);
+  stateFromStores1 = obj3.useStateFromStores(items1, f106694);
   const items2 = [stateFromStores, stateFromStores1, typingUserIds];
   return react.useMemo(() => {
     const tmp = stateFromStores;

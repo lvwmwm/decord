@@ -45,7 +45,7 @@ const memoResult = react.memo(function LurkerServerPreviewJoinButton(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -130,7 +130,7 @@ const memoResult = react.memo(function LurkerServerPreviewJoinButton(guildId) {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp50) {
         loading = tmp50;
         if (0 === c3) {

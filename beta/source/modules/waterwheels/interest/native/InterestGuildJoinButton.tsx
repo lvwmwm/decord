@@ -1,10 +1,10 @@
-// Module ID: 20012
-// Function ID: 20013
+// Module ID: 20015
+// Function ID: 20016
 // Name: InterestGuildJoinButton
-// Dependencies: [5, 32, 19, 17, 5021, 21, 5170, 575, 504, 7008, 5206, 8929, 20013, 1113, 2534, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 5021, 21, 5170, 575, 504, 7008, 5206, 8929, 20016, 1113, 2534, 5790, 2]
 // Exports: default
 
-// Module 20012 (InterestGuildJoinButton)
+// Module 20015 (InterestGuildJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -64,7 +64,7 @@ export default function InterestGuildJoinButton(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -121,7 +121,7 @@ export default function InterestGuildJoinButton(guildId) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp31) {
           closure_2 = tmp31;
           if (0 === c3) {

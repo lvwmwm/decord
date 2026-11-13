@@ -46,7 +46,7 @@ let obj = function _loadWidgetConfigs() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c9;
@@ -85,7 +85,7 @@ let obj = function _loadWidgetConfigs() {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -183,7 +183,7 @@ let obj = function _loadWidgetConfigs() {
                       c4 = 0;
                     }
                     c6 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp30) {
                   closure_3 = tmp30;
@@ -202,7 +202,7 @@ let obj = function _loadWidgetConfigs() {
             closure_2 = closure_0[Symbol.iterator]();
             if (closure_2 === undefined) {
               c12 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c9 = 1;
               c3 = tmp29;

@@ -137,7 +137,7 @@ export default function GameConsoleListActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -173,7 +173,7 @@ export default function GameConsoleListActionSheet(arg0) {
             const ComponentDispatch = tmp3(c2[21]).ComponentDispatch;
             ComponentDispatch.dispatch(constants.TOGGLE_CALL_CONTROL_DRAWER);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c2 = 3;

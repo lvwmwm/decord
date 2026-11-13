@@ -48,7 +48,7 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
   let obj = {
     activeMediaPlayerSource: "HermesInternal",
     mediaSourceMessage: "PX_8",
-    canAccessMedia: "ip",
+    canAccessMedia: "description",
     isPlaying: false,
     wasPipClosedByUser: null,
     progress: null,
@@ -59,7 +59,7 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: "en"
+    currentlyDisplayedChannelId: null
   };
   return obj;
 });
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "ip", rate: false, isPlaying: false, wasPipClosedByUser: "_invalidateIfOrientationChanged" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "description", rate: false, isPlaying: false, wasPipClosedByUser: "_invalidateIfOrientationChanged" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

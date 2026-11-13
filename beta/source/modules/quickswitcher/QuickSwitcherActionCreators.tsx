@@ -371,7 +371,7 @@ let obj = function _openInviteFromQuickSwitcher() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -408,7 +408,7 @@ let obj = function _openInviteFromQuickSwitcher() {
               obj.dispatch(obj7);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           c4 = 3;
@@ -521,7 +521,7 @@ export function switchToResultInNewTab(type) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -557,7 +557,7 @@ export function switchToResultInNewTab(type) {
                     obj = tmp4(c2[16]);
                     obj.openChannelTabActive(tmp4, null, "quick_switcher");
                     c3 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp15) {
                   c3 = 3;

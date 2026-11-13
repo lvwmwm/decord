@@ -1,10 +1,10 @@
-// Module ID: 20428
-// Function ID: 20429
+// Module ID: 20431
+// Function ID: 20432
 // Name: GuildRoleSubscriptionTierDesignModal
-// Dependencies: [32, 19, 17, 17551, 1072, 21, 5170, 575, 5756, 17583, 20393, 20403, 17571, 7450, 20388, 7159, 1113, 20394, 20429, 20395, 2]
+// Dependencies: [32, 19, 17, 17551, 1072, 21, 5170, 575, 5756, 17583, 20396, 20406, 17571, 7450, 20391, 7159, 1113, 20397, 20432, 20398, 2]
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
-// Module 20428 (GuildRoleSubscriptionTierDesignModal)
+// Module 20431 (GuildRoleSubscriptionTierDesignModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import RoleIconUtils from "RoleIconUtils" /* 7450 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17551 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17571 */;
 import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 17583 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20395 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,7 +72,7 @@ function Content() {
   let role;
   let tmp7;
   let tmp8;
-  const tmp3 = role(20393)();
+  const tmp3 = role(20396)();
   let obj = require("EditStateContextProvider");
   const editStateContext = obj.useEditStateContext();
   ({ editStateId, guildId } = editStateContext);
@@ -115,16 +115,16 @@ function Content() {
     previewShape: require("FormImagePicker").PreviewShape.SQUIRCLE,
     previewResizeMode: "cover",
     setImage(icon) {
-      const obj = { icon: icon.uri, unicodeEmoji: "flexDirection" };
+      const obj = { icon: icon.uri, unicodeEmoji: "r" };
       return closure_0(obj);
     },
     disabled: roleSubscriptionSettingsDisabled
   };
-  const tmpResult = role(20394);
+  const tmpResult = role(20397);
   intl2 = tmp4(1113).intl;
   items3[1] = closure_9(tmpResult, obj9);
   items2[1] = closure_10(View, obj7);
-  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(20429), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
+  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(20432), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
   const TableRowGroup = tmp4(7159).TableRowGroup;
   intl3 = tmp4(1113).intl;
   items2[2] = closure_9(TableRowGroup, obj10);

@@ -44,7 +44,7 @@ let obj = function _handleCreateJoinGuildPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _handleCreateJoinGuildPress() {
             closure_1.openCreateGuildModal();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp27) {
         c3 = 3;
@@ -152,7 +152,7 @@ const memoResult = react.memo(function GuildsBarCreateJoinButton() {
     };
     return obj;
   }, []);
-  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: false, children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: null, children: jsx(CirclePlusIcon, obj5) };
   tmp7 = GuildsBarAnimatedItemWrapperDefault;
   intl = intl2.intl;
   CirclePlusIcon = CirclePlusIcon2.CirclePlusIcon;

@@ -1,8 +1,8 @@
-// Module ID: 20351
-// Function ID: 20352
+// Module ID: 20354
+// Function ID: 20355
 // Dependencies: [2]
 
-// Module 20351
+// Module 20354
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarLokyExample-3x.png.js");

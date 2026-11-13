@@ -38,7 +38,7 @@ let location = function _handleBoostPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let location = function _handleBoostPress() {
             const obj = closure_131_0(closure_131_2[10]);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c5 = 3;

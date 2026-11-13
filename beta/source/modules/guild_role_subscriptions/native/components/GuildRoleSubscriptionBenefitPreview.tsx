@@ -1,10 +1,10 @@
-// Module ID: 20427
-// Function ID: 20428
+// Module ID: 20430
+// Function ID: 20431
 // Name: GuildRoleSubscriptionBenefitPreview
 // Dependencies: [19, 17, 17551, 21, 5170, 17585, 7471, 5783, 17588, 17577, 5808, 1113, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 20427 (GuildRoleSubscriptionBenefitPreview)
+// Module 20430 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;

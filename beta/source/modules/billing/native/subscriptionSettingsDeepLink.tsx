@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         const tmp28 = hasGuild;
         if (tmp28) {

@@ -23,7 +23,7 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 const account_MFAUtils = tmp(17018);
-const f112567 = () => currentUser.getCurrentUser();
+const f112584 = () => currentUser.getCurrentUser();
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserFlags = Constants.UserFlags;
 let closure_5 = PhoneConstants.PHONE_VERIFICATION_MODAL_KEY;
@@ -75,7 +75,7 @@ let obj = {
     let currentUser;
     const items = [UserStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f112567);
+    const stateFromStores = obj.useStateFromStores(items, f112584);
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
       const tmpResult = account_MFAUtils;
@@ -107,7 +107,7 @@ let obj = {
   useDescription: function useAccountSMSBackupSettingDescription() {
     const items = [UserStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f112567);
+    const stateFromStores = obj.useStateFromStores(items, f112584);
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
       const tmpResult = account_MFAUtils;

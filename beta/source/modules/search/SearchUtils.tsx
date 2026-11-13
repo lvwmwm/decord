@@ -38,7 +38,7 @@ let closure_16;
 let closure_17;
 let map1;
 let unpackModuleId;
-const f107010 = (arg0, arg1) => "\\" + arg1;
+const f107026 = (arg0, arg1) => "\\" + arg1;
 const SearchTabs = SearchConstants.SearchTabs;
 ({ SearchTypes: unpackModuleId, SearchTokenTypes } = Constants);
 ({ SearchPopoutModes: map1, IS_SEARCH_ANSWER_TOKEN: closure_14, IS_SEARCH_FILTER_TOKEN: closure_15, SearchModes: closure_16, ME, GuildFeatures: closure_17 } = Constants);
@@ -523,7 +523,7 @@ export function quoteChannelName(channelName) {
   let combined = channelName;
   if (null != channelName.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + channelName.replaceAll(/([\\"])/g, f107010) + "\"";
+    combined = "\"" + channelName.replaceAll(/([\\"])/g, f107026) + "\"";
   }
   return combined;
 }
@@ -544,7 +544,7 @@ export function getFlattenedAutocompleteResults(arg0, arg1) {
             let combined = str;
             if (null != text.text.match(/([\\" ])/g)) {
               const _HermesInternal = HermesInternal;
-              combined = "\"" + str.replaceAll(/([\\"])/g, f107010) + "\"";
+              combined = "\"" + str.replaceAll(/([\\"])/g, f107026) + "\"";
             }
             tmp = combined;
           }
@@ -675,7 +675,7 @@ export function getChannelDisplayName(isDM) {
   let combined = str;
   if (null != str.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + str.replaceAll(/([\\"])/g, f107010) + "\"";
+    combined = "\"" + str.replaceAll(/([\\"])/g, f107026) + "\"";
   }
   let combined1 = combined;
   if (flag) {

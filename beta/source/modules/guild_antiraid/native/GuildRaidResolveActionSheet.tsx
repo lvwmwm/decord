@@ -93,7 +93,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -152,7 +152,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
             closure_128_8(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp41) {
           closure_2 = tmp41;
           if (0 === c3) {

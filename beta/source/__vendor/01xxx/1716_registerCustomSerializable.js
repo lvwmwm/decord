@@ -21,7 +21,7 @@ let tmp6;
 let tmp7;
 let tmp8;
 let tmp9;
-const f83413 = (item, index) => createSerializable(item, c0, c1 + 1);
+const f83429 = (item, index) => createSerializable(item, c0, c1 + 1);
 function createSerializable(__initData, c0, arg2) {
   let c5;
   let imported;
@@ -95,7 +95,7 @@ function createSerializable(__initData, c0, arg2) {
     }
     const _Array = Array;
     if (Array.isArray(__initData)) {
-      const mapped = __initData.map(f83413);
+      const mapped = __initData.map(f83429);
       const WorkletsModule13 = tmp93(tmp94[6]).WorkletsModule;
       const serializableArray = WorkletsModule13.createSerializableArray(mapped, flag);
       const serializableMappingCache20 = tmp93(tmp94[1]).serializableMappingCache;
@@ -594,7 +594,7 @@ export function createSerializableArray(arr) {
   if (value == null) {
     _require = false;
     dependencyMap = 0;
-    const mapped = arr.map(f83413);
+    const mapped = arr.map(f83429);
     const WorkletsModule = tmp(1709).WorkletsModule;
     const serializableArray = WorkletsModule.createSerializableArray(mapped, false);
     const serializableMappingCache2 = tmp(1717).serializableMappingCache;

@@ -45,7 +45,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f107870 = (result) => {
+const f107886 = (result) => {
   closure_1_7(result);
 };
 function handleNameInputScreenOrSuggestions() {
@@ -72,7 +72,7 @@ let obj = function _handleNameInputScreenOrSuggestions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp77;
@@ -243,7 +243,7 @@ let obj = function _handleNameInputScreenOrSuggestions() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp77) {
           if (0 === c6) {
@@ -272,7 +272,7 @@ obj = function _handlePhoneVerificationComplete() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -300,7 +300,7 @@ obj = function _handlePhoneVerificationComplete() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c2 = 3;
@@ -324,7 +324,7 @@ obj = function _startContactSync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -367,7 +367,7 @@ obj = function _startContactSync() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp13) {
         c1 = 3;
@@ -405,7 +405,7 @@ obj = function _bulkAddFriendSuggestions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -503,7 +503,7 @@ obj = function _bulkAddFriendSuggestions() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp64) {
           tmp65 = c4;
           if (0 === c4) {
@@ -532,7 +532,7 @@ obj = function _verifyPhone() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -729,7 +729,7 @@ export function upsellDismissed() {
 export function openContactSyncModal(initialRoutes, FRIENDS_ADD_FRIENDS_MODAL, arg2) {
   obj = ContactSyncUtils;
   const result = obj.checkContactPermissions();
-  result.then(f107870);
+  result.then(f107886);
   const tmp2 = dependencyMap;
   if (null == initialRoutes.initialRoutes) {
     authStore3(map1.NORMAL);
@@ -778,7 +778,7 @@ export function openContactSyncModalDeeplink() {
   obj = {};
   const obj2 = ContactSyncUtils;
   const result = obj2.checkContactPermissions();
-  result.then(f107870);
+  result.then(f107886);
   const tmp2 = dependencyMap;
   if (null == obj.initialRoutes) {
     authStore3(map1.NORMAL);
@@ -793,6 +793,6 @@ export function openContactSyncModalDeeplink() {
 export function refreshContactSyncPermissionStatus() {
   obj = ContactSyncUtils;
   const result = obj.checkContactPermissions();
-  result.then(f107870);
+  result.then(f107886);
 }
 export { closeContactSyncModal };

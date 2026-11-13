@@ -61,7 +61,7 @@ let obj = function _setWarningBoosts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -104,7 +104,7 @@ let obj = function _setWarningBoosts() {
           const obj2 = closure_132_0(closure_132_2[15]);
           const guildBoostEntitlements = obj2.fetchGuildBoostEntitlements(closure_0, true);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp19) {
         c6 = 3;
@@ -127,7 +127,7 @@ obj = function _sendPowerupsSystemMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -158,7 +158,7 @@ obj = function _sendPowerupsSystemMessage() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c1 = 3;

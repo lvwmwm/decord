@@ -89,7 +89,7 @@ export default function ViewModerators(channel) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ export default function ViewModerators(channel) {
             const obj3 = v1(handleRemovePermission[9]);
             obj3.hideActionSheet();
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           c2 = 3;

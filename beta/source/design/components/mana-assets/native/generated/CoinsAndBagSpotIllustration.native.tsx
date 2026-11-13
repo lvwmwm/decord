@@ -1,26 +1,26 @@
-// Module ID: 20339
-// Function ID: 20340
+// Module ID: 20342
+// Function ID: 20343
 // Name: CoinsAndBagSpotIllustration
-// Dependencies: [19, 21, 20340, 20341, 20342, 7168, 5874, 2]
+// Dependencies: [19, 21, 20343, 20344, 20345, 7168, 5874, 2]
 // Exports: CoinsAndBagSpotIllustration
 
-// Module 20339 (CoinsAndBagSpotIllustration)
+// Module 20342 (CoinsAndBagSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7168 */;
-import _modDef20340 from "module_20340" /* 20340 */;
-import _modDef20341 from "module_20341" /* 20341 */;
-import _modDef20342 from "module_20342" /* 20342 */;
+import _modDef20343 from "module_20343" /* 20343 */;
+import _modDef20344 from "module_20344" /* 20344 */;
+import _modDef20345 from "module_20345" /* 20345 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef20340 };
+let obj2 = { uri: _modDef20343 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef20341 };
+let obj3 = { uri: _modDef20344 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef20342 };
-({ uri: _modDef20342 });
+obj[3] = { uri: _modDef20345 };
+({ uri: _modDef20345 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/CoinsAndBagSpotIllustration.native.tsx");
 

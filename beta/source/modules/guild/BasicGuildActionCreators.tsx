@@ -1,10 +1,10 @@
-// Module ID: 20484
-// Function ID: 20485
+// Module ID: 20487
+// Function ID: 20488
 // Name: BasicGuildActionCreators
 // Dependencies: [5, 5041, 8517, 1072, 572, 1282, 2]
 // Exports: fetchBasicGuild
 
-// Module 20484 (BasicGuildActionCreators)
+// Module 20487 (BasicGuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -32,7 +32,7 @@ let obj = function _fetchBasicGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ let obj = function _fetchBasicGuild() {
             closure_130_7.delete(guildId);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp44) {
           closure_3 = tmp44;
           if (0 === c4) {

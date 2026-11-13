@@ -47,7 +47,7 @@ let obj = function _syncContacts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -127,7 +127,7 @@ let obj = function _syncContacts() {
           c6 = 0;
         }
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp22) {
         closure_5 = tmp22;
         if (0 === c6) {
@@ -160,7 +160,7 @@ obj = function _updateFriendSync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -223,7 +223,7 @@ obj = function _updateFriendSync() {
           c6 = 0;
         }
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp22) {
         let closure_5 = tmp22;
         if (0 === c6) {

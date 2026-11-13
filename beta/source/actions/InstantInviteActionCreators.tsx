@@ -64,7 +64,7 @@ let tmp13;
 let unpackModuleId;
 const errors_V6OrEarlierAPIErrorDefault = tmp13(4991);
 const resolveInviteDefault = tmp(15009);
-const f95222 = () => {
+const f95238 = () => {
   let c4;
   let guildScheduledEvent;
   let intent;
@@ -507,7 +507,7 @@ function generateAcceptInviteOptions(target_type) {
 function transitionToInviteChannelSync(arg0, arg1) {
   let closure_0 = arg0;
   const items = [];
-  const result = ChannelStore.addConditionalChangeListener(f95222);
+  const result = ChannelStore.addConditionalChangeListener(f95238);
 }
 let body = function _transitionToGuildFromEventInvite() {
   let obj = _asyncToGenerator(async (arg0, value) => {
@@ -523,7 +523,7 @@ let body = function _transitionToGuildFromEventInvite() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -559,7 +559,7 @@ let body = function _transitionToGuildFromEventInvite() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp11) {
         c1 = 3;
         throw tmp11;
@@ -593,7 +593,7 @@ body = {
   resolveInvite(code, arg1, arg2) {
     let closure_1;
     let nextPromise;
-    const f95224 = () => {
+    const f95240 = () => {
       let nextPromise;
       const tmp = code;
       let obj = DispatcherDefault;
@@ -601,7 +601,7 @@ body = {
       const tmp3 = closure_2;
       if (obj.isDispatching()) {
         const resolved = Promise.resolve();
-        nextPromise = resolved.then(f95224);
+        nextPromise = resolved.then(f95240);
       } else {
         let obj2 = { type: "INVITE_RESOLVE", code: tmp };
         const tmp4Result = DispatcherDefault;
@@ -632,7 +632,7 @@ body = {
     if (obj.isDispatching()) {
       const tmp5 = globalThis;
       let resolved = Promise.resolve();
-      nextPromise = resolved.then(f95224);
+      nextPromise = resolved.then(f95240);
     } else {
       let obj2 = { type: "INVITE_RESOLVE", code };
       const tmpResult = DispatcherDefault;
@@ -706,7 +706,7 @@ body = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -932,7 +932,7 @@ body = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -1004,7 +1004,7 @@ body = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           let closure_2 = tmp18;
@@ -1121,7 +1121,7 @@ body = {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -1305,7 +1305,7 @@ body = {
           if (items === undefined) {
             items = [];
           }
-          let result = ChannelStore.addConditionalChangeListener(f95222);
+          let result = ChannelStore.addConditionalChangeListener(f95238);
         }
         if (null != importDefault) {
           tmp7(channel);
@@ -1338,7 +1338,7 @@ body = {
           }
           if (null != dMFromUserId) {
             let closure_2 = [];
-            const result = ChannelStore.addConditionalChangeListener(f95222);
+            const result = ChannelStore.addConditionalChangeListener(f95238);
           }
         }
       }
@@ -1392,7 +1392,7 @@ body = {
       const id = channel.id;
       let closure_1 = tmp18;
       closure_2 = [];
-      const result2 = ChannelStore.addConditionalChangeListener(f95222);
+      const result2 = ChannelStore.addConditionalChangeListener(f95238);
     }
   },
   openNativeAppModal(inviteKey) {

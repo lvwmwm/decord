@@ -31,7 +31,7 @@ let obj = function _fetchProgramRewards() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -85,7 +85,7 @@ let obj = function _fetchProgramRewards() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         let closure_3 = tmp17;
@@ -112,7 +112,7 @@ obj = function _conditionallyFetchProgramRewards() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -143,7 +143,7 @@ obj = function _conditionallyFetchProgramRewards() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;
@@ -165,7 +165,7 @@ obj = function _conditionallyFetchProgramRewardsIgnoreCacheTTL() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -197,7 +197,7 @@ obj = function _conditionallyFetchProgramRewardsIgnoreCacheTTL() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         c0 = 3;
         throw tmp9;

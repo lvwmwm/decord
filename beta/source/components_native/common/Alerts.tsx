@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "ip", renderKey: "isArray", props: "isArray" });
+let closure_23 = Object.freeze({ renderAlert: "description", renderKey: "isArray", props: "isArray" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -336,7 +336,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "ip", renderKey: "isArray", props: "isArray" };
+        return { renderAlert: "description", renderKey: "isArray", props: "isArray" };
       }
     }
   });

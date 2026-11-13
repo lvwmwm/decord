@@ -150,7 +150,7 @@ export function useRiveFile(src, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -303,7 +303,7 @@ export function useRiveFile(src, arg1) {
             riveFile = value;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp46) {
           closure_2 = tmp46;
           if (0 === c3) {

@@ -542,7 +542,7 @@ function PlanSection(label) {
                                             const obj2 = { value, done: true };
                                             return obj2;
                                           } else {
-                                            return { value: "HermesInternal", done: null };
+                                            return { value: "HermesInternal", done: "HermesInternal" };
                                           }
                                         } else {
                                           try {
@@ -572,7 +572,7 @@ function PlanSection(label) {
                                               return obj;
                                             } else {
                                               productId = 3;
-                                              return { value: "HermesInternal", done: null };
+                                              return { value: "HermesInternal", done: "HermesInternal" };
                                             }
                                           } catch (tmp4) {
                                             productId = 3;
@@ -591,7 +591,7 @@ function PlanSection(label) {
                                             const obj3 = { value, done: true };
                                             return obj3;
                                           } else {
-                                            return { value: "HermesInternal", done: null };
+                                            return { value: "HermesInternal", done: "HermesInternal" };
                                           }
                                         } else {
                                           try {
@@ -623,7 +623,7 @@ function PlanSection(label) {
                                               return obj;
                                             } else {
                                               c0 = 3;
-                                              return { value: "HermesInternal", done: null };
+                                              return { value: "HermesInternal", done: "HermesInternal" };
                                             }
                                           } catch (tmp11) {
                                             c0 = 3;
@@ -1136,7 +1136,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1228,7 +1228,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
                 c5 = 0;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             closure_2_13(false);
           }

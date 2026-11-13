@@ -1,10 +1,10 @@
-// Module ID: 20263
-// Function ID: 20264
+// Module ID: 20266
+// Function ID: 20267
 // Name: GuildTemplateSettingsUtils
 // Dependencies: [5, 32, 19, 5019, 5102, 7746, 1072, 504, 7604, 6611, 2]
 // Exports: isGuildTemplateNameValid, useCanViewAllChannels, useGuildTemplate
 
-// Module 20263 (GuildTemplateSettingsUtils)
+// Module 20266 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -61,7 +61,7 @@ export function useGuildTemplate(guildId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c4;
@@ -107,7 +107,7 @@ export function useGuildTemplate(guildId) {
               }
               closure_1(closure_0);
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp26) {
             closure_3 = tmp26;

@@ -1,9 +1,9 @@
-// Module ID: 19488
-// Function ID: 19489
+// Module ID: 19491
+// Function ID: 19492
 // Name: UnreadBadge
 // Dependencies: [19, 17, 5914, 6864, 21, 5170, 19120, 5798, 9941, 2]
 
-// Module 19488 (UnreadBadge)
+// Module 19491 (UnreadBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useFontScale from "useFontScale" /* 5798 */;

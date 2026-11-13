@@ -54,7 +54,7 @@ class McpConnectionPanel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c2;
@@ -96,7 +96,7 @@ class McpConnectionPanel {
             c2 = 0;
             if (closure_129_1.isStale(c1)) {
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               connection = null;
               const update2 = closure_129_1.update;
@@ -137,7 +137,7 @@ class McpConnectionPanel {
               closure_129_1.armTimer(connection);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp48) {
           if (0 === c2) {

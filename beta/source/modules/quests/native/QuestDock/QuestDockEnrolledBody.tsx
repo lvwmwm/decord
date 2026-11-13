@@ -83,7 +83,7 @@ function EnrolledBodyWatchTask(quest) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -130,7 +130,7 @@ function EnrolledBodyWatchTask(quest) {
               c1(constants.COLLAPSED);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp24) {
             c2 = 3;
             throw tmp24;

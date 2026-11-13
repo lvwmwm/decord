@@ -182,7 +182,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             let c3;
@@ -237,7 +237,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                 c3 = 0;
                 constants(false);
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

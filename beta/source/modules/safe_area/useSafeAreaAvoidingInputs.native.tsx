@@ -31,7 +31,7 @@ let obj = function _calculateScrollOffset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let obj = function _calculateScrollOffset() {
                   return { value: Number.MAX_SAFE_INTEGER, done: true };
                 } else {
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
             }
@@ -168,7 +168,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -289,7 +289,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp31) {
         c3 = 3;
         throw tmp31;

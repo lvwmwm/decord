@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, set;
 
-const f109700 = (skuId) => skuId.skuId;
+const f109716 = (skuId) => skuId.skuId;
 function getCollectionQualifyingSkuCount(bundledProducts, collectionId) {
   let _Set1;
   _require = collectionId;
@@ -47,7 +47,7 @@ function getCollectionQualifyingSkuCount(bundledProducts, collectionId) {
       const self3 = this;
       const self4 = this;
       const items = [];
-      set = new Set(bundledProducts.map(f109700));
+      set = new Set(bundledProducts.map(f109716));
       HermesBuiltin.arraySpread(items, set, 0);
       items1 = items;
     } else {
@@ -99,7 +99,7 @@ export function getBundleChildSkuIds(bundledProducts) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(bundledProducts.map(f109700));
+    set = new Set(bundledProducts.map(f109716));
     HermesBuiltin.arraySpread(items, set, 0);
     return items;
   } else {

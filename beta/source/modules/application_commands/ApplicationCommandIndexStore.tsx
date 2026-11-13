@@ -42,7 +42,7 @@ let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
-const f97130 = () => {
+const f97146 = () => {
   let contextState;
   if ("channel" === closure_0.type) {
     contextState = authStore.getContextState(tmp);
@@ -51,7 +51,7 @@ const f97130 = () => {
   }
   return contextState;
 };
-const f97132 = () => authStore.getUserState();
+const f97148 = () => authStore.getUserState();
 function getIndexKey(type) {
   type = type.type;
   if ("guild" === type) {
@@ -131,7 +131,7 @@ let obj = function _getOrFetchApplicationCommandIndexForTarget() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -230,7 +230,7 @@ obj = function _updateIndexAndFetchApplicationCommandIndex() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -284,7 +284,7 @@ obj = function _updateIndexAndFetchApplicationCommandIndex() {
             c4 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         closure_5 = tmp14;
@@ -507,7 +507,7 @@ function useQueryState(type, commandTypes, allowFetch) {
   [first, _slicedToArray] = stateFromStoresObject1.useState(true);
   let obj2 = require("get initialized");
   const items = [applicationCommandIndexStore];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f97130);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f97146);
   const items1 = [stateFromStoresObject, allowFetch, type, tmp3, first];
   const effect = stateFromStoresObject1.useEffect(() => {
     const tmp = first;
@@ -617,7 +617,7 @@ function useQueryState(type, commandTypes, allowFetch) {
   [first1, closure_3] = stateFromStoresObject1.useState(true);
   let obj3 = require("get initialized");
   const items2 = [applicationCommandIndexStore];
-  stateFromStoresObject1 = obj3.useStateFromStoresObject(items2, f97132);
+  stateFromStoresObject1 = obj3.useStateFromStoresObject(items2, f97148);
   const items3 = [stateFromStoresObject1, allowFetch2, tmp3, first1];
   const effect1 = stateFromStoresObject1.useEffect(() => {
     const tmp = first1;
@@ -2008,7 +2008,7 @@ export function useContextIndexState(arg0, arg1, arg2) {
   [first, _slicedToArray] = react.useState(true);
   const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f97130);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f97146);
   const items1 = [stateFromStoresObject, arg2, arg0, arg1, first];
   const effect = react.useEffect(() => {
     const tmp = first;
@@ -2182,7 +2182,7 @@ export function useUserIndexState(arg0, arg1) {
   dependencyMap = tmp[1];
   const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  stateFromStoresObject = obj.useStateFromStoresObject(items, f97132);
+  stateFromStoresObject = obj.useStateFromStoresObject(items, f97148);
   const items1 = [stateFromStoresObject, arg1, arg0, first];
   const effect = react.useEffect(() => {
     const tmp = first1;

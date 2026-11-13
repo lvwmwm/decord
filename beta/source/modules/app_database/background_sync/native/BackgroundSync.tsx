@@ -1,10 +1,10 @@
-// Module ID: 19848
-// Function ID: 19849
+// Module ID: 19851
+// Function ID: 19852
 // Name: background_sync/BackgroundSync
 // Dependencies: [32, 5, 5023, 5019, 6930, 2117, 7767, 1072, 6925, 6884, 5041, 3, 1089, 510, 10361, 1377, 572, 1242, 1252, 5048, 1282, 11, 12, 7904, 7907, 7905, 15880, 17933, 7765, 1380, 7775, 2]
 // Exports: backgroundSync
 
-// Module 19848 (background_sync/BackgroundSync)
+// Module 19851 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
@@ -227,7 +227,7 @@ obj = function _backgroundSyncPrivateChannels() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -324,7 +324,7 @@ obj = function _backgroundSyncPrivateChannels() {
           closure_1.time_save_private_channel_messages = Date.now() - closure_2;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp41) {
         c6 = 3;
         throw tmp41;
@@ -354,7 +354,7 @@ obj = function _backgroundSyncGuildData() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -557,7 +557,7 @@ obj = function _backgroundSyncGuildData() {
             closure_0.time_save_guild_data = Date.now() - closure_1;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp45) {
         c6 = 3;
@@ -587,7 +587,7 @@ obj = function _backgroundSyncGuildChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -873,7 +873,7 @@ obj = function _backgroundSyncGuildChannels() {
           }
         }
         c22 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     }
   });
@@ -899,7 +899,7 @@ obj = function _processChannelChanges() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -962,7 +962,7 @@ obj = function _processChannelChanges() {
               }
             }
             c12 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let closure_5;

@@ -1,12 +1,12 @@
-// Module ID: 20373
-// Function ID: 20374
+// Module ID: 20376
+// Function ID: 20377
 // Name: useCreatorMonetizationEligibility
-// Dependencies: [5, 32, 19, 20320, 20323, 6612, 2]
+// Dependencies: [5, 32, 19, 20323, 20326, 6612, 2]
 // Exports: default
 
-// Module 20373 (useCreatorMonetizationEligibility)
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 20320 */;
-import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 20323 */;
+// Module 20376 (useCreatorMonetizationEligibility)
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 20323 */;
+import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 20326 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -50,7 +50,7 @@ export default function useCreatorMonetizationEligibility(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -134,7 +134,7 @@ export default function useCreatorMonetizationEligibility(arg0) {
           c4 = 0;
           closure_1(false);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp57) {
         closure_3 = tmp57;

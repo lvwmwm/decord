@@ -152,7 +152,7 @@ obj = function _rehydrateFailedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -212,7 +212,7 @@ obj = function _rehydrateFailedMessages() {
                 closure_1 = keys;
               }
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c9 = 3;
@@ -369,7 +369,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c7;
@@ -425,7 +425,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                         let obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -447,7 +447,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                             }, 0);
                           }
                           c1 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       } catch (tmp8) {
                         c1 = 3;
@@ -460,7 +460,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   applyArgumentsResult = values[Symbol.iterator]();
                   if (applyArgumentsResult === undefined) {
                     c10 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } else {
                     c7 = 1;
                     _undefined = tmp29;
@@ -720,7 +720,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -749,7 +749,7 @@ class LocalMessageCacheManager extends LifecycleManager {
               return obj;
             }
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp8) {
             c1 = 3;
             throw tmp8;
@@ -1001,7 +1001,7 @@ class LocalMessageCacheManager extends LifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -1056,7 +1056,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   let obj4 = values(closure_2[20]);
                   let subscription1 = obj4.subscribe("CACHE_LOADED", closure_132_0.handleCacheLoaded);
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   let c6 = 1;
                   values = tmp10;

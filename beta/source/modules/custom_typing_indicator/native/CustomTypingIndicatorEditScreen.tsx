@@ -237,7 +237,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (arg0 === 1) {
           c4 = 3;

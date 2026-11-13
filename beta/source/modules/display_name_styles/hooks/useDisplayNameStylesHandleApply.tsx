@@ -61,7 +61,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -99,7 +99,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -225,7 +225,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
                           closure_1_8();
                         }
                         c5 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       } catch (tmp74) {
                         closure_2 = tmp74;
                         if (0 === c3) {
@@ -323,7 +323,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp34) {
             if (0 === selectedFontId) {
               c4 = 3;

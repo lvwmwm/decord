@@ -60,7 +60,7 @@ class AuthManager extends LifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -101,7 +101,7 @@ class AuthManager extends LifecycleManager {
               onComplete();
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp18) {
             c4 = 3;
             throw tmp18;

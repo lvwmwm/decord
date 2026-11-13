@@ -131,7 +131,7 @@ export default function DMMessageStickerGreeting(channel) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -163,7 +163,7 @@ export default function DMMessageStickerGreeting(channel) {
                 v1(false);
                 showErrorToast(tmp24);
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 c3 = 1;
                 const obj4 = { channelId: channel.id, source: "In-channel greet" };
@@ -200,7 +200,7 @@ export default function DMMessageStickerGreeting(channel) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp28) {
         closure_2 = tmp28;
         if (0 === c3) {

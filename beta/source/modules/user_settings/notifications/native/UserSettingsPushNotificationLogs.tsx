@@ -81,7 +81,7 @@ export default function UserSettingsPushNotificationLogs() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -114,7 +114,7 @@ export default function UserSettingsPushNotificationLogs() {
               closure_0 = value;
               c2(closure_0);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -195,7 +195,7 @@ export default function UserSettingsPushNotificationLogs() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export default function UserSettingsPushNotificationLogs() {
             const tmp9 = tmp(c2[15]);
             showShareActionSheet(obj, "push-notification-logs");
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           c3 = 3;

@@ -30,7 +30,7 @@ let obj = function _fetchLinkedAppCallers() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -113,7 +113,7 @@ obj = function _linkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ obj = function _linkConjureApp() {
             closure_0 = value;
             if (closure_0.ok) {
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -182,7 +182,7 @@ obj = function _unlinkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -215,7 +215,7 @@ obj = function _unlinkConjureApp() {
             closure_0 = value;
             if (closure_0.ok) {
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;

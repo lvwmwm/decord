@@ -33,7 +33,7 @@ let obj = function _createTwoWayLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -193,7 +193,7 @@ let obj = function _createTwoWayLink() {
             } else {
               c8 = 0;
               c10 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c10 = 3;
@@ -244,7 +244,7 @@ obj = function _silentlyFinishTwoWayLinkError() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -281,7 +281,7 @@ obj = function _silentlyFinishTwoWayLinkError() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp10) {
         let closure_5 = tmp10;
@@ -316,7 +316,7 @@ export function useDeviceCodeAuthorizeCallback(callback, callback2, callback1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -413,7 +413,7 @@ export function useDeviceCodeAuthorizeCallback(callback, callback2, callback1) {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp31) {
         let closure_4 = tmp31;

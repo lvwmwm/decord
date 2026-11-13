@@ -137,7 +137,7 @@ export default function StartEventModal(event) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ export default function StartEventModal(event) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp10) {
           c0 = 3;
           throw tmp10;

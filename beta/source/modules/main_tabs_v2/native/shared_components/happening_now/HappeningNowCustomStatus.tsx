@@ -150,7 +150,7 @@ export function CustomStatusActivityCard(user) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -213,7 +213,7 @@ export function CustomStatusActivityCard(user) {
               closure_1_5(emojiSource);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp27) {
             c3 = 3;
             throw tmp27;

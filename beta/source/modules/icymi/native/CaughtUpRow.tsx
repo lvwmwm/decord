@@ -101,7 +101,7 @@ export default function ExploreServersRow(visible) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ export default function ExploreServersRow(visible) {
             }, 500);
           }, 100);
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c2 = 3;

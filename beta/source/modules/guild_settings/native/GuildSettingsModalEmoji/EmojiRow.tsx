@@ -1,15 +1,15 @@
-// Module ID: 20176
-// Function ID: 20177
+// Module ID: 20179
+// Function ID: 20180
 // Name: EmojiRow
-// Dependencies: [32, 19, 17, 5041, 1385, 21, 5170, 575, 1377, 7390, 504, 9133, 10210, 5120, 20177, 5422, 5783, 1187, 7071, 5869, 1113, 5874, 1411, 6205, 5226, 7076, 20179, 2]
+// Dependencies: [32, 19, 17, 5041, 1385, 21, 5170, 575, 1377, 7390, 504, 9133, 10210, 5120, 20180, 5422, 5783, 1187, 7071, 5869, 1113, 5874, 1411, 6205, 5226, 7076, 20182, 2]
 // Exports: EmojiRow
 
-// Module 20176 (EmojiRow)
+// Module 20179 (EmojiRow)
 import nativeDefault from "native" /* 575 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5120 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5422 */;
 import EmojiActionCreators from "EmojiActionCreators" /* 10210 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 20177 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 20180 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

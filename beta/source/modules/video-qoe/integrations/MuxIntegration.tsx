@@ -39,7 +39,7 @@ class MuxIntegration {
     return obj;
   }
   static getAppVersion() {
-    return "35411000000000";
+    return "35411100000000";
   }
   static getBuildChannel() {
     try {

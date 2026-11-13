@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 
 let closure_6, timestamps;
 
-const f110889 = (item) => {
+const f110905 = (item) => {
   const tmp = false !== closure_2_9(item) || closure_0;
   closure_0 = tmp;
 };
@@ -201,14 +201,14 @@ let obj = {
     let item = guilds.forEach((presences) => {
       presences = presences.presences;
       let closure_0 = false;
-      const item = presences.forEach(f110889);
+      const item = presences.forEach(f110905);
       const tmp2 = closure_0;
       if (tmp2) {
         c0 = true;
       }
     });
     let c0 = false;
-    const item1 = presences.forEach(f110889);
+    const item1 = presences.forEach(f110905);
     const tmp3 = c0;
     if (tmp3) {
       c0 = true;
@@ -226,7 +226,7 @@ let obj = {
   PRESENCES_REPLACE: function handlePresencesReplace(presences) {
     presences = presences.presences;
     let c0 = false;
-    const item = presences.forEach(f110889);
+    const item = presences.forEach(f110905);
     return c0;
   }
 };

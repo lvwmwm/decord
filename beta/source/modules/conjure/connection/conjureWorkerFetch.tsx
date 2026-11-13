@@ -30,7 +30,7 @@ let obj = function _fetchConjureWorker() {
         let obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

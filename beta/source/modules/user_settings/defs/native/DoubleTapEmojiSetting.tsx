@@ -102,7 +102,7 @@ let obj3 = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -141,7 +141,7 @@ let obj3 = {
               const obj = emoji(closure_2[15]);
               const result = obj.showDoubleTapEmojiUpdatedToast(obj16);
               constants = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp11) {
             constants = 3;

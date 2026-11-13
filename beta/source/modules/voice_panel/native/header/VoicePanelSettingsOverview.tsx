@@ -1,9 +1,9 @@
-// Module ID: 19628
-// Function ID: 19629
+// Module ID: 19631
+// Function ID: 19632
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 5018, 6931, 11900, 502, 5019, 2130, 5102, 1385, 5928, 1072, 5837, 9379, 21, 5170, 575, 504, 19629, 5808, 11359, 12091, 9397, 9359, 7056, 5783, 15004, 1113, 8771, 7, 5869, 19626, 9043, 7071, 7079, 17921, 8453, 7080, 572, 7462, 4995, 6079, 5920, 8301, 12137, 5406, 19630, 2118, 9382, 9402, 19631, 19617, 19575, 11530, 9345, 19632, 7666, 19633, 9351, 19634, 11204, 12117, 11139, 11140, 2]
+// Dependencies: [19, 5018, 6931, 11900, 502, 5019, 2130, 5102, 1385, 5928, 1072, 5837, 9379, 21, 5170, 575, 504, 19632, 5808, 11359, 12091, 9397, 9359, 7056, 5783, 15004, 1113, 8771, 7, 5869, 19629, 9043, 7071, 7079, 17921, 8453, 7080, 572, 7462, 4995, 6079, 5920, 8301, 12137, 5406, 19633, 2118, 9382, 9402, 19634, 19620, 19578, 11530, 9345, 19635, 7666, 19636, 9351, 19637, 11204, 12117, 11139, 11140, 2]
 
-// Module 19628 (VoicePanelSettingsOverview)
+// Module 19631 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -31,8 +31,8 @@ import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9397 */;
 import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11359 */;
 import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12137 */;
 import WrenchIcon from "WrenchIcon" /* 17921 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19626 */;
-import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 19629 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19629 */;
+import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 19632 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
@@ -314,7 +314,7 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   const callback4 = stateFromStores1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { channelId };
-    obj.openLazy(asyncRequire(19630, dependencyMap.paths), closure_17, obj2);
+    obj.openLazy(asyncRequire(19633, dependencyMap.paths), closure_17, obj2);
   }, items10);
   const callback5 = stateFromStores1.useCallback(() => {
     if (null != stateFromStores4) {

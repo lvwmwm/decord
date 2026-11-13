@@ -1,10 +1,10 @@
-// Module ID: 19993
-// Function ID: 19994
+// Module ID: 19996
+// Function ID: 19997
 // Name: TouchableUploadAvatar
 // Dependencies: [19, 17, 21, 5170, 575, 16024, 7076, 1113, 5874, 1187, 14651, 2]
 // Exports: default
 
-// Module 19993 (TouchableUploadAvatar)
+// Module 19996 (TouchableUploadAvatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

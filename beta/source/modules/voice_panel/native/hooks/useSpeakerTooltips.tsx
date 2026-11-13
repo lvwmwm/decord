@@ -1,18 +1,18 @@
-// Module ID: 19662
-// Function ID: 19663
+// Module ID: 19665
+// Function ID: 19666
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 19660, 11393, 5016, 21, 19663, 19576, 11358, 11394, 1652, 1705, 7674, 19612, 1113, 5003, 19665, 10109, 2]
+// Dependencies: [32, 19, 19663, 11393, 5016, 21, 19666, 19579, 11358, 11394, 1652, 1705, 7674, 19615, 1113, 5003, 19668, 10109, 2]
 // Exports: default
 
-// Module 19662 (useSpeakerTooltips)
+// Module 19665 (useSpeakerTooltips)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 19665 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 19668 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19660 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,13 +46,13 @@ export default function useSpeakerTooltips(targetRef, arg1) {
   let tmp17;
   let tmp18;
   let voiceUpsellDismissed;
-  const f119118 = () => {
+  const f119153 = () => {
     const obj = memo2;
     if (memo2.visible) {
       obj.onDismiss();
     }
   };
-  const f119119 = () => {
+  const f119154 = () => {
     const tmp = closure_1;
     if (!tmp) {
       callback1();
@@ -195,16 +195,16 @@ export default function useSpeakerTooltips(targetRef, arg1) {
     }
   }, items7);
   const items8 = [memo1];
-  const callback = obj2.useCallback(f119118, items8);
+  const callback = obj2.useCallback(f119153, items8);
   const items9 = [tmp, callback];
-  const effect1 = obj2.useEffect(f119119, items9);
+  const effect1 = obj2.useEffect(f119154, items9);
   const tmp6Result3 = require("useCoachmark");
   const coachmark = tmp6Result3.useCoachmark(targetRef, memo1);
   importDefault = tmp;
   const items10 = [memo2];
-  const callback1 = obj2.useCallback(f119118, items10);
+  const callback1 = obj2.useCallback(f119153, items10);
   const items11 = [tmp, callback1];
-  const effect2 = obj2.useEffect(f119119, items11);
+  const effect2 = obj2.useEffect(f119154, items11);
   const tmp6Result4 = require("useCoachmark");
   const coachmark1 = tmp6Result4.useCoachmark(targetRef, memo2);
 };

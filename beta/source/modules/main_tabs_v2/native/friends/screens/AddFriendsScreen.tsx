@@ -65,7 +65,7 @@ let props = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -118,7 +118,7 @@ let props = function _handleShare() {
           PJf9P9 = closure_130_0(closure_130_2[16]).t.PJf9P9;
           closure_0(obj7);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp19) {
         let closure_3 = tmp19;
@@ -134,12 +134,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f117822 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f117840 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f117822);
-    const tmp2 = arr.length === arg1.length && arr.every(f117822);
+    tmp = arr.length === arg1.length && arr.every(f117840);
+    const tmp2 = arr.length === arg1.length && arr.every(f117840);
   }
   return tmp;
 }

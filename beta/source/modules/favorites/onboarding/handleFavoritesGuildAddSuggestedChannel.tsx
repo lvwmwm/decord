@@ -27,7 +27,7 @@ let obj = function _handleFavoritesGuildAddSuggestedChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let obj = function _handleFavoritesGuildAddSuggestedChannel() {
             return obj;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp18) {
         c4 = 3;

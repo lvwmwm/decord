@@ -1,9 +1,9 @@
-// Module ID: 20040
-// Function ID: 20041
+// Module ID: 20043
+// Function ID: 20044
 // Name: MobileGiftIntentCardManager
-// Dependencies: [7910, 5019, 6226, 5073, 8649, 1387, 20041, 1093, 4995, 10764, 6192, 1260, 5014, 9264, 2]
+// Dependencies: [7910, 5019, 6226, 5073, 8649, 1387, 20044, 1093, 4995, 10764, 6192, 1260, 5014, 9264, 2]
 
-// Module 20040 (MobileGiftIntentCardManager)
+// Module 20043 (MobileGiftIntentCardManager)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import Timers from "Timers" /* 5014 */;
 import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9264 */;
@@ -13,7 +13,7 @@ import MessageStore from "MessageStore" /* 6226 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8649 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 20041 */;
+import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 20044 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

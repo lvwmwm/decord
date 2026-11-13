@@ -77,7 +77,7 @@ export function useOrbCheckoutOrder(skuId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -171,7 +171,7 @@ export function useOrbCheckoutOrder(skuId) {
               c3 = 0;
               c3(false);
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp59) {
             closure_2 = tmp59;

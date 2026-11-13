@@ -118,7 +118,7 @@ export default function ScheduleDowntimeScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -199,7 +199,7 @@ export default function ScheduleDowntimeScreen() {
             closure_128_18(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp48) {
           closure_2 = tmp48;
           if (0 === c3) {
@@ -370,7 +370,7 @@ export default function ScheduleDowntimeScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -443,7 +443,7 @@ export default function ScheduleDowntimeScreen() {
           closure_129_18(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp41) {
         closure_3 = tmp41;
         if (0 === c4) {
@@ -546,7 +546,7 @@ export default function ScheduleDowntimeScreen() {
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f133075 = (first1) => {
+          const f133110 = (first1) => {
             closure_1_12(first1);
             obj = closure_2_0(rule[17]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;

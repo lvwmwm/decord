@@ -63,7 +63,7 @@ let size;
 let size1;
 let size2;
 let unpackModuleId;
-const f106280 = () => {
+const f106296 = () => {
   currentUser = currentUser.getCurrentUser();
   let prop;
   if (currentUser != null) {
@@ -392,7 +392,7 @@ function FamilyCenterPrereqLoading(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -436,7 +436,7 @@ function FamilyCenterPrereqLoading(arg0) {
                 const replaced1 = c2.replace(tmp.section, tmp.params);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp28) {
             c3 = 3;
@@ -501,7 +501,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [UserStore];
-  const stateFromStores = obj2.useStateFromStores(items, f106280);
+  const stateFromStores = obj2.useStateFromStores(items, f106296);
   const tmp7 = stateFromStores(6819)(stateFromStores);
   dependencyMap = tmp7;
   const items1 = [stateFromStores, tmp7, navigation];
@@ -638,7 +638,7 @@ function FamilyCenterPrereqMustBeAdultScreen() {
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [UserStore];
-  const stateFromStores = obj2.useStateFromStores(items, f106280);
+  const stateFromStores = obj2.useStateFromStores(items, f106296);
   const tmp3 = stateFromStores(6819)(stateFromStores);
   dependencyMap = tmp3;
   const items1 = [stateFromStores, tmp3, navigation];

@@ -71,7 +71,7 @@ let obj = function _openInviteModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -99,7 +99,7 @@ let obj = function _openInviteModal() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -128,7 +128,7 @@ obj = function _handleInviteCodedLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -254,7 +254,7 @@ obj = function _handleInviteCodedLink() {
             return { value, done: true };
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp63) {
           c7 = 3;
           throw tmp63;
@@ -337,7 +337,7 @@ export default function getOnClick(assetURL) {
         openURLDefault(assetURL);
         return true;
       }
-      result = { applicationId: code, skuId: "flexDirection" };
+      result = { applicationId: code, skuId: "r" };
     };
   }
   if (null != findCodedLinkResult) {

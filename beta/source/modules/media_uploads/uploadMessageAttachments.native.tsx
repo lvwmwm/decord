@@ -29,7 +29,7 @@ let obj = function _uploadMessageAttachments() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _uploadMessageAttachments() {
             return obj4;
           } else if (closure_131_5.has(c2)) {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else {
             const self = this;
             const self2 = this;

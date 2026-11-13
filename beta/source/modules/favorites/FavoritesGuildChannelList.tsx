@@ -92,7 +92,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
   let closure_12;
   let closure_3;
   let closure_4;
-  const f134323 = (arg0) => {
+  const f134359 = (arg0) => {
     let position;
     let record;
     let sum;
@@ -272,7 +272,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
           activeJoinedUnreadThreadsForParent = closure_3_6.getActiveJoinedRelevantThreadsForParent(isPrivate.guild_id, isPrivate.id);
         });
         const found = mapped.filter(favoriteChannels(_undefined[26]).isNotNullish);
-        const iter = found.sortBy(f134323);
+        const iter = found.sortBy(f134359);
         closure_7 = iter.value();
       }
       return closure_7;
@@ -416,7 +416,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
               });
               let tmp4 = items;
               const found = mapped.filter(items(_undefined[26]).isNotNullish);
-              const iter = found.sortBy(f134323);
+              const iter = found.sortBy(f134359);
               closure_1 = iter.value();
             }
             return closure_1;

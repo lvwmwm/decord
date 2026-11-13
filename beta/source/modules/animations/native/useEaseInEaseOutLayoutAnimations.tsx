@@ -12,7 +12,7 @@ import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import size from "module_2" /* 2 */;
 
-const f92593 = () => useReducedMotion.useReducedMotion;
+const f92609 = () => useReducedMotion.useReducedMotion;
 const Easing = _mod1652.Easing;
 let closure_5 = Easing.inOut(_mod1652.Easing.ease);
 const result = size.fileFinishedImporting("modules/animations/native/useEaseInEaseOutLayoutAnimations.tsx");
@@ -21,7 +21,7 @@ export default function useEaseInEaseOutLayoutAnimations() {
   let stateFromStores;
   const items = [AccessibilityStore];
   const obj = stateFromStores(504);
-  stateFromStores = obj.useStateFromStores(items, f92593);
+  stateFromStores = obj.useStateFromStores(items, f92609);
   const items1 = [stateFromStores];
   return react.useMemo(() => {
     let easingResult;
@@ -29,7 +29,7 @@ export default function useEaseInEaseOutLayoutAnimations() {
     let easingResult2;
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      return { entering: "ip", exiting: "isArray", layout: "isArray" };
+      return { entering: "description", exiting: "isArray", layout: "isArray" };
     } else {
       const ReduceMotion = tmp(1652).ReduceMotion;
       const tmp4 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
@@ -54,7 +54,7 @@ export function useTriggeredLayoutTransition() {
   let useReducedMotion;
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
-  stateFromStores = obj.useStateFromStores(items, f92593);
+  stateFromStores = obj.useStateFromStores(items, f92609);
   let obj2 = react;
   const items1 = [stateFromStores];
   const layout = react.useMemo(() => {
@@ -63,7 +63,7 @@ export function useTriggeredLayoutTransition() {
     let easingResult2;
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      return { entering: "ip", exiting: "isArray", layout: "isArray" };
+      return { entering: "description", exiting: "isArray", layout: "isArray" };
     } else {
       const ReduceMotion = tmp(1652).ReduceMotion;
       const tmp4 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;

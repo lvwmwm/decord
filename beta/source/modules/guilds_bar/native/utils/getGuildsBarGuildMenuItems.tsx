@@ -39,7 +39,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -69,7 +69,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
               const items = [closure_128_0];
               value.default(items, constants.GUILD_LIST);
               paths = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp10) {
             paths = 3;

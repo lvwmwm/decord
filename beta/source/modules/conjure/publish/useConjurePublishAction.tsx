@@ -31,7 +31,7 @@ let _require, c11, c12, c4, closure_4, closure_6, intent;
 
 let closure_12;
 let unpackModuleId;
-const f102552 = () => {
+const f102568 = () => {
 
 };
 function approvalPending(projectId) {
@@ -143,7 +143,7 @@ let obj = function _requestConjureInstallConsent() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -264,7 +264,7 @@ let obj = function _requestConjureInstallConsent() {
           return obj;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp26) {
         c5 = 3;
         throw tmp26;
@@ -301,7 +301,7 @@ obj = function _startPublish() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -456,7 +456,7 @@ obj = function _startPublish() {
                       tmp(closure_1_2[24]);
                       const tmpResult3 = tmp(closure_1_2[13]);
                       const profile = fetchProfile(tmpResult3.conjureProductionBotUserId(closure_4), { withMutualGuilds: true });
-                      profile.catch(f102552);
+                      profile.catch(f102568);
                     }
                     const tmpResult4 = tmp(closure_1_2[22]);
                     result = tmpResult4.refreshPublishedProject(projectId, { isPreview: false });
@@ -505,7 +505,7 @@ obj = function _startPublish() {
               showError(intl.string(closure_133_1(closure_133_2[20])["TD/ze/"]));
             }
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp83) {
           closure_6 = tmp83;
@@ -542,7 +542,7 @@ obj = function _waitForAppChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -597,7 +597,7 @@ obj = function _waitForAppChannel() {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp18) {
         c5 = 3;
         throw tmp18;
@@ -767,7 +767,7 @@ obj = function _continuePublish() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c10;
@@ -803,13 +803,13 @@ obj = function _continuePublish() {
                   set.add(closure_0);
                   c10 = 1;
                   const requestConsent = platform.requestConsent;
-                  let f139516 = requestConsent;
+                  let f139558 = requestConsent;
                   if (requestConsent == null) {
-                    f139516 = (arg0) => closure_2_19(arg0, closure_1_4);
+                    f139558 = (arg0) => closure_2_19(arg0, closure_1_4);
                   }
                   c11 = 3;
                   c12 = 1;
-                  const obj5 = { value: f139516(closure_0), done: false };
+                  const obj5 = { value: f139558(closure_0), done: false };
                   return obj5;
                 }
               }
@@ -843,7 +843,7 @@ obj = function _continuePublish() {
             closure_136_25.delete(closure_0);
             if (closure_136_14.isProjectPublishing(closure_0)) {
               c12 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               _null = closure_136_18(closure_0, guildId);
               let integrationStatus;
@@ -883,7 +883,7 @@ obj = function _continuePublish() {
                 }
               }
               c12 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
         } else if (arg0 === 1) {
@@ -895,7 +895,7 @@ obj = function _continuePublish() {
           return obj;
         }
         c12 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp47) {
         closure_9 = tmp47;
         if (0 === c10) {
@@ -1205,7 +1205,7 @@ export default function useConjurePublishAction(arg0, arg1) {
       UserActionCreators;
       const obj2 = conjureAppInServer;
       const profile = fetchProfile(obj2.conjureProductionBotUserId(tmp), { withMutualGuilds: true });
-      profile.catch(f102552);
+      profile.catch(f102568);
     }
   }, items3);
   let application_id;

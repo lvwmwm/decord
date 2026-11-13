@@ -1,10 +1,10 @@
-// Module ID: 20447
-// Function ID: 20448
+// Module ID: 20450
+// Function ID: 20451
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
 // Dependencies: [32, 19, 17, 1083, 21, 5170, 575, 5420, 5424, 5783, 1113, 1187, 7510, 7157, 7160, 17575, 6855, 5790, 5406, 2]
 // Exports: default
 
-// Module 20447 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 20450 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;

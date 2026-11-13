@@ -30,7 +30,7 @@ let obj = function _maybeFetchGuildDiscoveryCategories() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -75,7 +75,7 @@ let obj = function _maybeFetchGuildDiscoveryCategories() {
           obj.dispatch(obj8);
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp16) {
         c3 = 3;
         throw tmp16;
@@ -125,7 +125,7 @@ obj = function _fetchSlugForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -176,7 +176,7 @@ obj = function _fetchSlugForGuild() {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           if (0 === c3) {
@@ -219,7 +219,7 @@ obj = function _saveGuildMetadata() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -304,7 +304,7 @@ obj = function _saveGuildMetadata() {
             obj8.dispatch(obj10);
             partner_actioned_timestamp = 0;
             is_published = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           closure_3 = tmp15;

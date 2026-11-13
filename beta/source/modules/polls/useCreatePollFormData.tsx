@@ -195,7 +195,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -236,7 +236,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
             callback2(first3(closure_1, closure_0(initialQuestion[9]).PollMediaUploadAttachmentStatus.ERROR), closure_0);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp24) {
         c6 = 3;
@@ -360,7 +360,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -389,7 +389,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
           return obj;
         } else {
           channel = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp4) {
         channel = 3;

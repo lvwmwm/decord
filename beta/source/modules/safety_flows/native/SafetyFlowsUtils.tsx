@@ -1,17 +1,17 @@
-// Module ID: 20529
-// Function ID: 20530
+// Module ID: 20532
+// Function ID: 20533
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1385, 20523, 20525, 6831, 20524, 5869, 1113, 2960, 1499, 20528, 2]
+// Dependencies: [5, 19, 1385, 20526, 20528, 6831, 20527, 5869, 1113, 2960, 1499, 20531, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 20529 (SafetyFlowsUtils)
+// Module 20532 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1113 */;
 import _modDef2960 from "module_2960" /* 2960 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import types from "types" /* 20523 */;
-import constants from "constants" /* 20524 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20525 */;
+import types from "types" /* 20526 */;
+import constants from "constants" /* 20527 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20528 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -36,7 +36,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ export function useOnTaskComplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ export function useOnTaskComplete() {
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c4 = 3;

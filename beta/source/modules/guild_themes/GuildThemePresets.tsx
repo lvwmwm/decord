@@ -128,7 +128,7 @@ export function getGuildThemePreset(presetId) {
   return tmp;
 }
 export function getDefaultGuildThemePresetSettings() {
-  return { presetId: mapped[0].id, customUserThemeSettings: "flexDirection" };
+  return { presetId: mapped[0].id, customUserThemeSettings: "r" };
 }
 export function getGuildThemePresetAppearance(preset, stateFromStores) {
   return stateFromStores === ThemeTypes.LIGHT ? preset.lightAppearance : preset.darkAppearance;

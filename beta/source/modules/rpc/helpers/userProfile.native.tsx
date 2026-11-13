@@ -42,7 +42,7 @@ export function openUserProfile(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c2;
@@ -93,7 +93,7 @@ export function openUserProfile(arg0) {
               return obj;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           if (null == authStore.getUser(closure_128_0)) {
             closure_128_3();

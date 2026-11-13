@@ -85,7 +85,7 @@ export default function ConjureClarificationCard(projectId) {
   let tmp71;
   let tmp72;
   let tmp8;
-  const f104767 = () => {
+  const f104783 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -130,8 +130,8 @@ export default function ConjureClarificationCard(projectId) {
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f104767), 2);
-  const tmp9 = _slicedToArray(react.useState(f104767), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f104783), 2);
+  const tmp9 = _slicedToArray(react.useState(f104783), 2);
   [tmp12, c10] = _slicedToArray(react.useState({}), 2);
   const tmp11 = _slicedToArray(react.useState({}), 2);
   [first1, closure_12] = react.useState({});

@@ -46,7 +46,7 @@ function GuildDirectoryEditDescription(entry) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function GuildDirectoryEditDescription(entry) {
             obj = closure_1(c3[7]);
             obj.close();
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c4 = 3;

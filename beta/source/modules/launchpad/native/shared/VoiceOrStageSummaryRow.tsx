@@ -1,9 +1,9 @@
-// Module ID: 19497
-// Function ID: 19498
+// Module ID: 19500
+// Function ID: 19501
 // Name: VoiceOrStageSummaryRow
 // Dependencies: [19, 17, 21, 5170, 575, 19120, 5783, 1187, 19115, 2]
 
-// Module 19497 (VoiceOrStageSummaryRow)
+// Module 19500 (VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

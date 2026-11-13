@@ -102,7 +102,7 @@ export function useHandleUseNow(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -166,7 +166,7 @@ export function useHandleUseNow(product) {
                 return obj9;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === c6) {
             c5 = 0;

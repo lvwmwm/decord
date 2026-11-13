@@ -24,7 +24,7 @@ import size from "module_2" /* 2 */;
 
 let c2;
 
-const f103767 = (str) => str.toUpperCase();
+const f103783 = (str) => str.toUpperCase();
 function useActivityAction(applicationId) {
   let context;
   let fetchesApplication;
@@ -123,7 +123,7 @@ function useOnActivityItemSelected(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -165,7 +165,7 @@ function useOnActivityItemSelected(arg0) {
               }
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp21) {
           c2 = 3;
@@ -188,7 +188,7 @@ function useOnActivityItemSelected(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -244,7 +244,7 @@ function useOnActivityItemSelected(arg0) {
             return obj;
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;
@@ -339,7 +339,7 @@ export default function useActivityShelfItem(backgroundResolution) {
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f103767);
+      replaced = str4.replace(/(^\w|\s\w)/g, f103783);
     }
     tmp16 = replaced;
   } else {
@@ -366,7 +366,7 @@ export function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f103767);
+    replaced = str4.replace(/(^\w|\s\w)/g, f103783);
   }
   return replaced;
 }

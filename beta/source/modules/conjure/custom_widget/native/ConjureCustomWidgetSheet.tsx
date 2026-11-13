@@ -80,7 +80,7 @@ export default function ConjureCustomWidgetSheet() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -164,7 +164,7 @@ export default function ConjureCustomWidgetSheet() {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp54) {
         dependencyMap = tmp54;
         if (0 === c3) {

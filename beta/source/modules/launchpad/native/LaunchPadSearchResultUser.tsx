@@ -1,9 +1,9 @@
-// Module ID: 19498
-// Function ID: 19499
+// Module ID: 19501
+// Function ID: 19502
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 5171, 2186, 5019, 5922, 13994, 6863, 1072, 6864, 21, 5170, 575, 19120, 7582, 5798, 504, 11, 6948, 19487, 7076, 19121, 19488, 1187, 8938, 19123, 5226, 11203, 5848, 19489, 18785, 17665, 2]
+// Dependencies: [19, 5171, 2186, 5019, 5922, 13994, 6863, 1072, 6864, 21, 5170, 575, 19120, 7582, 5798, 504, 11, 6948, 19490, 7076, 19121, 19491, 1187, 8938, 19123, 5226, 11203, 5848, 19492, 18785, 17665, 2]
 
-// Module 19498 (LaunchPadSearchResultUser)
+// Module 19501 (LaunchPadSearchResultUser)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,9 +16,9 @@ import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 18785 */;
 import getLayoutStylesDefault from "getLayoutStyles" /* 19120 */;
 import renderChannelWrapperDefault from "renderChannelWrapper" /* 19121 */;
 import renderChannelContentDefault from "renderChannelContent" /* 19123 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19487 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 19488 */;
-import renderChannelBadgeDefault from "renderChannelBadge" /* 19489 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19490 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 19491 */;
+import renderChannelBadgeDefault from "renderChannelBadge" /* 19492 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import LocaleStore from "LocaleStore" /* 2186 */;

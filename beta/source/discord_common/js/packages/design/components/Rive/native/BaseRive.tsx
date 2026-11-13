@@ -26,7 +26,7 @@ const react2 = tmp(5184);
 const ManaContext = tmp(5287);
 const useRivePlayback2 = tmp(5288);
 const RiveTypes = tmp(5289);
-const f88604 = () => {
+const f88620 = () => {
   ref.current = current;
 };
 function disposeRiveImageLater(arg0) {
@@ -254,7 +254,7 @@ export function useNumberBinding(chapterID, instance, chapterID2, chapterID1, pl
   let closure_1 = chapterID1;
   let closure_2 = react.useRef(chapterID1);
   const items1 = [chapterID1];
-  const effect1 = react.useEffect(f88604, items1);
+  const effect1 = react.useEffect(f88620, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -284,7 +284,7 @@ export function useStringBinding(LVL, instance, LVL2, LVL1, playIfNeeded) {
   let closure_1 = LVL1;
   let closure_2 = react.useRef(LVL1);
   const items1 = [LVL1];
-  const effect1 = react.useEffect(f88604, items1);
+  const effect1 = react.useEffect(f88620, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -314,7 +314,7 @@ export function useBooleanBinding(reducedMotion, instance, reducedMotionEnabled,
   let closure_1 = on1;
   let closure_2 = react.useRef(on1);
   const items1 = [on1];
-  const effect1 = react.useEffect(f88604, items1);
+  const effect1 = react.useEffect(f88620, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -378,7 +378,7 @@ export function useEnumBinding(device, instance, device2, device1, playIfNeeded)
   let closure_1 = device1;
   let closure_2 = react.useRef(device1);
   const items1 = [device1];
-  const effect1 = react.useEffect(f88604, items1);
+  const effect1 = react.useEffect(f88620, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -474,7 +474,7 @@ export function useImageBinding(outfit01Image, instance, outfit01Image2, outfit0
               const obj = { value, done: true };
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             let c3;
@@ -584,7 +584,7 @@ export function useImageBinding(outfit01Image, instance, outfit01Image2, outfit0
                   }
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp68) {
               closure_2 = tmp68;

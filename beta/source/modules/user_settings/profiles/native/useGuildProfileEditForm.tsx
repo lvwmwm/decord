@@ -141,7 +141,7 @@ export default function useGuildProfileEditForm() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -240,7 +240,7 @@ export default function useGuildProfileEditForm() {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

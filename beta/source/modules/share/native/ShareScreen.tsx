@@ -173,7 +173,7 @@ export default function ShareScreen(appEntryKey) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -280,7 +280,7 @@ export default function ShareScreen(appEntryKey) {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "HermesInternal", done: null };
+                                    return { value: "HermesInternal", done: "HermesInternal" };
                                   }
                                 } else {
                                   try {
@@ -414,7 +414,7 @@ export default function ShareScreen(appEntryKey) {
                 closure_129_6(false);
                 closure_129_7.current = false;
                 React = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
             closure_10 = React.lazy(() => closure_1_0(paths[25])(paths[24], paths.paths));
@@ -456,7 +456,7 @@ export default function ShareScreen(appEntryKey) {
           return obj20;
         }
         React = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp102) {
         paths = tmp102;
         if (0 === c3) {

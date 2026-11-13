@@ -1,10 +1,10 @@
-// Module ID: 19493
-// Function ID: 19494
+// Module ID: 19496
+// Function ID: 19497
 // Name: ChannelSubtitle
 // Dependencies: [19, 5914, 21, 19120, 5783, 18656, 11213, 11222, 2]
 // Exports: renderChannelSubtitle
 
-// Module 19493 (ChannelSubtitle)
+// Module 19496 (ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 */;

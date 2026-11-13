@@ -37,7 +37,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -88,7 +88,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp13) {
         c2 = 3;
         throw tmp13;
@@ -134,7 +134,7 @@ obj = function _httpGetWithCountryCodeQuery() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

@@ -62,7 +62,7 @@ let obj = function _runScrollBenchmark() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ let obj = function _runScrollBenchmark() {
             return obj;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp25) {
           c6 = 3;
           throw tmp25;
@@ -216,7 +216,7 @@ export function useBenchmark(arg0, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -259,7 +259,7 @@ export function useBenchmark(arg0, arg1) {
                   closure_2_1(closure_3);
                   closure_2_4(false);
                   c3 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
             } else if (arg0 === 1) {

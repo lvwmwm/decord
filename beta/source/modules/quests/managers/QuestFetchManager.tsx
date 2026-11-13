@@ -1,9 +1,9 @@
-// Module ID: 20474
-// Function ID: 20475
+// Module ID: 20477
+// Function ID: 20478
 // Name: QuestFetchManager
-// Dependencies: [5, 7955, 1089, 7383, 9797, 1242, 9806, 1377, 6960, 20475, 2]
+// Dependencies: [5, 7955, 1089, 7383, 9797, 1242, 9806, 1377, 6960, 20478, 2]
 
-// Module 20474 (QuestFetchManager)
+// Module 20477 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -57,7 +57,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -76,7 +76,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
                 obj._fetch("post_connect_recurring");
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp6) {
             c0 = 3;

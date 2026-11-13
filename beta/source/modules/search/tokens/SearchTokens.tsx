@@ -37,9 +37,9 @@ let closure_18;
 let closure_19;
 let hasOwnProperty;
 let metroRequire;
-const f107023 = (item) => item.toLowerCase();
-const f107024 = (item) => item.toLowerCase();
-const f107025 = (item) => item.toString();
+const f107039 = (item) => item.toLowerCase();
+const f107040 = (item) => item.toLowerCase();
+const f107041 = (item) => item.toString();
 function getShortcuts() {
   let obj = {};
   const intl = intl50.intl;
@@ -159,7 +159,7 @@ function dateValidator(getFullMatch, arg1) {
     const self8 = this;
     const obj20 = _modDef2166;
     const monthsResult = obj20.months();
-    set = new Set(monthsResult.map(f107023));
+    set = new Set(monthsResult.map(f107039));
     if (set.has(formatted)) {
       const obj17 = _modDef2166(formatted, "MMMM");
       const localResult = obj17.local();
@@ -174,7 +174,7 @@ function dateValidator(getFullMatch, arg1) {
       const self2 = this;
       const tmp26Result = _modDef2166;
       const weekdaysResult = tmp26Result.weekdays();
-      const set1 = new Set(weekdaysResult.map(f107024));
+      const set1 = new Set(weekdaysResult.map(f107040));
       if (set1.has(formatted)) {
         const obj14 = _modDef2166(formatted, "dddd");
         const localResult1 = obj14.local();
@@ -194,7 +194,7 @@ function dateValidator(getFullMatch, arg1) {
         const self6 = this;
         const tmp26Result2 = _modDef12;
         const rangeResult = tmp26Result2.range(2015, fullYear + 1);
-        set2 = new Set(rangeResult.map(f107025));
+        set2 = new Set(rangeResult.map(f107041));
         if (set2.has(formatted)) {
           const obj11 = _modDef2166(formatted, "YYYY");
           const localResult2 = obj11.local();
@@ -390,19 +390,19 @@ function isValidPinnedAutocomplete(getMatch) {
 function generateDateAutocompletions() {
   const obj = _modDef2166;
   const monthsResult = obj.months();
-  const items = [...from(new Set(monthsResult.map(f107023)))];
+  const items = [...from(new Set(monthsResult.map(f107039)))];
   const from2 = Array.from;
-  new Set(monthsResult.map(f107023));
+  new Set(monthsResult.map(f107039));
   obj2 = _modDef2166;
   const weekdaysResult = obj2.weekdays();
   const from3 = Array.from;
-  const set1 = new Set(weekdaysResult.map(f107024));
+  const set1 = new Set(weekdaysResult.map(f107040));
   const arraySpreadResult = HermesBuiltin.arraySpread(items, from2(set1), tmp2);
   const date = new Date();
   const fullYear = date.getFullYear();
   const obj4 = _modDef12;
   const rangeResult = obj4.range(2015, fullYear + 1);
-  set2 = new Set(rangeResult.map(f107025));
+  set2 = new Set(rangeResult.map(f107041));
   const arraySpreadResult3 = HermesBuiltin.arraySpread(items, from3(set2), arraySpreadResult);
   HermesBuiltin.arraySpread(items, Object.keys(getShortcuts()), arraySpreadResult3);
   return items;
@@ -743,7 +743,7 @@ function makeSearchTokenConfigs(arg0) {
   let regExp7;
   let regExp8;
   let regExp9;
-  const f107035 = (text) => ({ text });
+  const f107051 = (text) => ({ text });
   _require = arg0;
   const intl = require("intl").intl;
   let items = [intl.string(require("intl").t.tPZo4p), , ];
@@ -827,7 +827,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f107035);
+      const iter = takeResult.map(f107051);
       return iter.value();
     }
   };
@@ -889,7 +889,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f107035);
+      const iter = takeResult.map(f107051);
       const valueResult = iter.value();
       return valueResult.map((text) => {
         const obj = { group: FILTER_AFTER, key: "" + FILTER_AFTER + "-" + text.text };
@@ -921,7 +921,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f107035);
+      const iter = takeResult.map(f107051);
       const valueResult = iter.value();
       return valueResult.map((text) => {
         const obj = { group: FILTER_AFTER, key: "" + FILTER_AFTER + "-" + text.text };
@@ -955,7 +955,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f107035);
+      const iter = takeResult.map(f107051);
       const valueResult = iter.value();
       return valueResult.map((text) => {
         const obj = { group: FILTER_AFTER, key: "" + FILTER_AFTER + "-" + text.text };
@@ -1079,7 +1079,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f107035);
+      const iter = takeResult.map(f107051);
       return iter.value();
     }
   };

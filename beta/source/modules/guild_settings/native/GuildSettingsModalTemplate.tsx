@@ -1,10 +1,10 @@
-// Module ID: 20262
-// Function ID: 20263
+// Module ID: 20265
+// Function ID: 20266
 // Name: GuildSettingsModalTemplate
-// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 20263, 8279, 5783, 1113, 7304, 1499, 6128, 13448, 6611, 7097, 7663, 6191, 7181, 7349, 5790, 5766, 7073, 7434, 7191, 20264, 7451, 5868, 7182, 9105, 5887, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 20266, 8279, 5783, 1113, 7304, 1499, 6128, 13448, 6611, 7097, 7663, 6191, 7181, 7349, 5790, 5766, 7073, 7434, 7191, 20267, 7451, 5868, 7182, 9105, 5887, 2]
 // Exports: default
 
-// Module 20262 (GuildSettingsModalTemplate)
+// Module 20265 (GuildSettingsModalTemplate)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
@@ -19,7 +19,7 @@ import ClipboardUtils from "ClipboardUtils" /* 7451 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7663 */;
 import native from "native" /* 9105 */;
 import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 13448 */;
-import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 20263 */;
+import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 20266 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -92,7 +92,7 @@ function TemplateForm(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -140,7 +140,7 @@ function TemplateForm(guildId) {
             }
             closure_129_10(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp31) {
           closure_2 = tmp31;
@@ -280,7 +280,7 @@ function TemplateForm(guildId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c3;
@@ -332,7 +332,7 @@ function TemplateForm(guildId) {
               closure_1_9(false);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp32) {
             closure_2 = tmp32;
             if (0 === c3) {
@@ -582,7 +582,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -629,7 +629,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
             }
             closure_129_4(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp27) {
           closure_2 = tmp27;
@@ -662,7 +662,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -708,7 +708,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_2 = tmp25;
@@ -725,7 +725,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
   };
   [first, _slicedToArray] = react.useState(false);
   const tmp3 = dependencyMap;
-  const tmp4 = guildTemplate(20264)(guildTemplate.code);
+  const tmp4 = guildTemplate(20267)(guildTemplate.code);
   react = tmp4;
   obj = { spacing: guildTemplate(575).space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;

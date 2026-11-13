@@ -1,9 +1,9 @@
-// Module ID: 20081
-// Function ID: 20082
+// Module ID: 20084
+// Function ID: 20085
 // Name: VoiceChannelSettingsManager
 // Dependencies: [502, 16226, 5019, 5073, 16227, 1072, 572, 7383, 2]
 
-// Module 20081 (VoiceChannelSettingsManager)
+// Module 20084 (VoiceChannelSettingsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -36,7 +36,7 @@ function UserRow(userActivity) {
     const obj2 = { label: obj3.getName(user), subLabel: topUserOrGuildDescription, icon: React3(Avatar, obj4) };
     const TableRow = TableRow2.TableRow;
     obj3 = UserUtilsDefault;
-    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
+    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "r" };
     Avatar = native.Avatar;
     return React3(TableRow, obj2);
   }

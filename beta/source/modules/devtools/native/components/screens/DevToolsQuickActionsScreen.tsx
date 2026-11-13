@@ -142,7 +142,7 @@ let obj = function _handleShowAppRatingModal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -183,7 +183,7 @@ let obj = function _handleShowAppRatingModal() {
           obj = { text: str2, icon: closure_129_0(closure_129_2[36]).WrenchIcon };
           open("DEV_APP_RATING_REQUEST", obj);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         c3 = 3;
@@ -414,7 +414,7 @@ export default function DevToolsQuickActionsScreen() {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -450,7 +450,7 @@ export default function DevToolsQuickActionsScreen() {
                       obj.presentError("error");
                     }
                     c2 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp13) {
                   c2 = 3;

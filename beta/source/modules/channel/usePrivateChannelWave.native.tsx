@@ -43,7 +43,7 @@ export default function usePrivateChannelWave(id, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -102,7 +102,7 @@ export default function usePrivateChannelWave(id, arg1) {
           closure_129_2(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp39) {
         closure_2 = tmp39;
         if (0 === c3) {

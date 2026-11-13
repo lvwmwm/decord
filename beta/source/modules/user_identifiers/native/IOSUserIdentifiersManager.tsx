@@ -1,9 +1,9 @@
-// Module ID: 19948
-// Function ID: 19949
+// Module ID: 19951
+// Function ID: 19952
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1385, 1072, 7383, 1377, 19949, 1282, 1242, 1252, 2]
+// Dependencies: [5, 17, 1385, 1072, 7383, 1377, 19952, 1282, 1242, 1252, 2]
 
-// Module 19948 (IOSUserIdentifiersManager)
+// Module 19951 (IOSUserIdentifiersManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -45,7 +45,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
             return obj;
           }
           _self = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp8) {
           _self = 3;
           throw tmp8;

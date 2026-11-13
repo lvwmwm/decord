@@ -48,7 +48,7 @@ export function useCanReapplyToRejectedMemberVerificationApplication(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -91,7 +91,7 @@ export function useCanReapplyToRejectedMemberVerificationApplication(guildId) {
         c4 = 0;
         tmp(false);
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp15) {
         closure_3 = tmp15;
         if (0 === c4) {

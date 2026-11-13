@@ -46,7 +46,7 @@ let obj = function _getFriendInviteCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -124,7 +124,7 @@ obj = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -163,7 +163,7 @@ obj = function _handleShare() {
           const PJf9P9 = closure_129_0(closure_129_2[10]).t.PJf9P9;
           handleOpenShareSheet(closure_0, null, formatToPlainString(PJf9P9, obj5), closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp6) {
         c3 = 3;
@@ -188,7 +188,7 @@ obj = function _handleLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -222,7 +222,7 @@ obj = function _handleLink() {
           obj = closure_129_0(closure_129_2[11]);
           obj.handleCopy(closure_0, null, closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         c3 = 3;

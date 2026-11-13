@@ -46,7 +46,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
   let onClose;
   let right;
   let tmp8;
-  const f95391 = () => {
+  const f95407 = () => {
     obj = KeyboardManagerUtilsAll;
     const result = obj.dismissGlobalKeyboard();
     const tmp3 = first1;
@@ -84,7 +84,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -132,7 +132,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
               announce(intl.string(tmp3(guildEvent[14]).t["5HzXO5"]));
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           c2 = 3;
@@ -166,7 +166,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
     }
     return items1;
   }), 1)[0];
-  [c6, tmp8] = first1(require("LazyAPIPromise")(f95391), 2);
+  [c6, tmp8] = first1(require("LazyAPIPromise")(f95407), 2);
   constants = {
     guild,
     guildEvent,
@@ -226,7 +226,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
     },
     fullscreen: true
   };
-  const tmp7 = first1(require("LazyAPIPromise")(f95391), 2);
+  const tmp7 = first1(require("LazyAPIPromise")(f95407), 2);
   const CHANNEL_SELECTOR = guild(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR;
   const CHANNEL_SELECTOR2 = guild(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR;
   obj3[CHANNEL_SELECTOR] = obj4;

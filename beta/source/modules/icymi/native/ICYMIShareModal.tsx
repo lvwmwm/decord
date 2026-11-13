@@ -119,7 +119,7 @@ class ICYMIShareModal {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -167,7 +167,7 @@ class ICYMIShareModal {
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -213,7 +213,7 @@ class ICYMIShareModal {
                           return obj;
                         }
                         c1 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       } catch (tmp16) {
                         c1 = 3;
                         throw tmp16;
@@ -228,7 +228,7 @@ class ICYMIShareModal {
                 const arr3 = tmp2(closure_2[19]);
                 arr3.pop();
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp6) {
               c4 = 3;
@@ -334,7 +334,7 @@ export function GameShareModal(content) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -392,7 +392,7 @@ export function GameShareModal(content) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp32) {
         closure_3 = tmp32;

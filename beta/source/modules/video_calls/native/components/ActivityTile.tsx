@@ -70,7 +70,7 @@ function ActivityTileInner(participant) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ function ActivityTileInner(participant) {
             const result = obj.setOrientationLockState(closure_128_3);
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp17) {
           c2 = 3;
           throw tmp17;

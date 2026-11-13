@@ -1,9 +1,9 @@
-// Module ID: 19957
-// Function ID: 19958
+// Module ID: 19960
+// Function ID: 19961
 // Name: JSWatchdogManager
-// Dependencies: [5, 1072, 3, 1089, 7383, 19958, 1242, 1252, 7763, 7760, 7750, 2]
+// Dependencies: [5, 1072, 3, 1089, 7383, 19961, 1242, 1252, 7763, 7760, 7750, 2]
 
-// Module 19957 (JSWatchdogManager)
+// Module 19960 (JSWatchdogManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -72,7 +72,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -187,7 +187,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             c3 = 0;
             closure_129_1._pingCompleted = true;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp80) {
           closure_2 = tmp80;
@@ -217,7 +217,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -274,7 +274,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;
@@ -315,7 +315,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

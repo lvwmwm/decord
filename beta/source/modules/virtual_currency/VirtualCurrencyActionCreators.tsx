@@ -104,7 +104,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -205,7 +205,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               tmp61(billingError);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;

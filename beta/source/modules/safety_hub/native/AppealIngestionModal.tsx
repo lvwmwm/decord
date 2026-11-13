@@ -49,7 +49,7 @@ export default function AppealIngestionModal(classificationId) {
   let c0;
   let classification;
   let intl;
-  const f106204 = () => {
+  const f106220 = () => {
     let obj11;
     let obj3;
     let obj5;
@@ -154,8 +154,8 @@ export default function AppealIngestionModal(classificationId) {
   if (!flag2) {
     flag2 = false;
   }
-  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5771)(f106204), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
-  flag(5771)(f106204);
+  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5771)(f106220), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
+  flag(5771)(f106220);
   const Navigator = tmp(7264).Navigator;
   intl = tmp(1113).intl;
   return closure_12(Navigator, obj2);
@@ -289,7 +289,7 @@ export function AppealIngestionModalScreen(children) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -340,7 +340,7 @@ export function AppealIngestionModalScreen(children) {
           navigation = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp25) {
         if (0 === navigation) {
           c5 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 20070
-// Function ID: 20071
+// Module ID: 20073
+// Function ID: 20074
 // Name: SubscriptionManager
 // Dependencies: [5, 1385, 2172, 2176, 7687, 1387, 7383, 2107, 6621, 7690, 2]
 
-// Module 20070 (SubscriptionManager)
+// Module 20073 (SubscriptionManager)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -45,7 +45,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
                 }
               }
               currentUser = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === c2) {
             if (arg0 === 1) {
@@ -161,7 +161,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -194,7 +194,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
             return obj;
           }
           applyArgumentsResult = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp7) {
           applyArgumentsResult = 3;
           throw tmp7;
@@ -213,7 +213,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -259,7 +259,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
               return obj;
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c2 = 3;

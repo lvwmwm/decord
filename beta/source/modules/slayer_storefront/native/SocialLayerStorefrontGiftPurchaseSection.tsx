@@ -187,7 +187,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
               closure_128_10();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c2 = 3;

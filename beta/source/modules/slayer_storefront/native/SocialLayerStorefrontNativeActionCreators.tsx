@@ -39,7 +39,7 @@ let obj = function _toggleSocialLayerStorefrontWishlist() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _toggleSocialLayerStorefrontWishlist() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         c1 = 3;

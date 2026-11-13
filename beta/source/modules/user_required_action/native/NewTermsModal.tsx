@@ -1,10 +1,10 @@
-// Module ID: 20093
-// Function ID: 20094
+// Module ID: 20096
+// Function ID: 20097
 // Name: NewTermsModal
 // Dependencies: [5, 32, 19, 17, 5013, 1072, 21, 5170, 575, 7456, 1113, 6827, 1627, 7103, 6186, 8856, 6192, 1260, 5783, 5790, 9222, 9213, 2]
 // Exports: default
 
-// Module 20093 (NewTermsModal)
+// Module 20096 (NewTermsModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
@@ -120,7 +120,7 @@ export default function NewTermsModal() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -154,7 +154,7 @@ export default function NewTermsModal() {
           tmp = value;
           closure_129_1(tmp);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         c3 = 3;

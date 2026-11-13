@@ -1,10 +1,10 @@
-// Module ID: 19464
-// Function ID: 19465
+// Module ID: 19466
+// Function ID: 19467
 // Name: useGiftingPromotionAssetsReady
 // Dependencies: [32, 19, 10774, 2022, 2]
 // Exports: default
 
-// Module 19464 (useGiftingPromotionAssetsReady)
+// Module 19466 (useGiftingPromotionAssetsReady)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ export default function useGiftingPromotionAssetsReady(asset, asset2) {
   let first1;
   let themeAndReducedMotionAwareAssetUrl;
   let themeAndReducedMotionAwareAssetUrl1;
-  const f118541 = () => {
+  const f118570 = () => {
     let tmp;
     if (null != c0) {
       c0 = true;
@@ -54,7 +54,7 @@ export default function useGiftingPromotionAssetsReady(asset, asset2) {
   let obj2 = react;
   [first, closure_1] = react.useState(null);
   const items = [themeAndReducedMotionAwareAssetUrl];
-  const effect = react.useEffect(f118541, items);
+  const effect = react.useEffect(f118570, items);
   let asset1;
   const obj3 = { isGiftCoachmarkAssetReady: null == themeAndReducedMotionAwareAssetUrl || first === themeAndReducedMotionAwareAssetUrl, isGiftReminderAssetReady: null == themeAndReducedMotionAwareAssetUrl1 || first1 === themeAndReducedMotionAwareAssetUrl1 };
   const tmp5 = _slicedToArray;
@@ -67,6 +67,6 @@ export default function useGiftingPromotionAssetsReady(asset, asset2) {
   closure_1 = tmp5Result[1];
   const items1 = [themeAndReducedMotionAwareAssetUrl1];
   first1 = tmp5Result[0];
-  const effect1 = obj2.useEffect(f118541, items1);
+  const effect1 = obj2.useEffect(f118570, items1);
   return obj3;
 };

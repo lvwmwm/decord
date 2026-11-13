@@ -104,7 +104,7 @@ function CredentialList(navigation) {
                   let obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -171,7 +171,7 @@ function CredentialList(navigation) {
                             const obj3 = { value, done: true };
                             return obj3;
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                         } else {
                           let c3;
@@ -211,7 +211,7 @@ function CredentialList(navigation) {
                               c3 = 0;
                               setDeleting(false);
                               c4 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "HermesInternal" };
                             }
                           } catch (tmp21) {
                             closure_2 = tmp21;
@@ -232,7 +232,7 @@ function CredentialList(navigation) {
                       obj.openLazy(tmp(paths[22])(paths[21], paths.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj8);
                     }
                     setDeleting = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp45) {
                   setDeleting = 3;

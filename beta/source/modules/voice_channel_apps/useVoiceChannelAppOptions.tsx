@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, map, name, set;
 
-const f118071 = (application_id) => application_id.application_id;
+const f118089 = (application_id) => application_id.application_id;
 function voiceChannelAppCandidates(arg0, arg1, arg2) {
   map = new Map();
   const items = [...arg1];
@@ -52,7 +52,7 @@ export function voiceChannelAppIdsToFetch(arr, arg1) {
     const obj = closure_2_0(stateFromStoresArray1[5]);
     return !obj.supportsEmbeddedSurface(tmp, closure_2_0(stateFromStoresArray1[6]).EmbeddedSurfaceType.VOICE_CHANNEL);
   });
-  return found.map(f118071);
+  return found.map(f118089);
 }
 export function useVoiceChannelAppSettingOptions(guildId, application_id) {
   let closure_129_6;
@@ -100,7 +100,7 @@ export function useVoiceChannelAppSettingOptions(guildId, application_id) {
       const obj = closure_2_0(stateFromStoresArray1[5]);
       return !obj.supportsEmbeddedSurface(tmp, closure_2_0(stateFromStoresArray1[6]).EmbeddedSurfaceType.VOICE_CHANNEL);
     });
-    return found.map(f118071);
+    return found.map(f118089);
   }, items6);
   const items7 = [memo2];
   const effect1 = getOrFetchApplication.useEffect(() => {

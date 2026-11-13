@@ -80,7 +80,7 @@ export function showUserProfileActionSheetPostConnection(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -161,7 +161,7 @@ export function showUserProfileActionSheetPostConnection(arg0) {
             showUserProfileActionSheet(closure_129_0);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp37) {
         if (0 === c3) {

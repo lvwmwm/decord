@@ -73,7 +73,7 @@ export function usePopularOrbShopProducts(enabled) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c4;
@@ -146,7 +146,7 @@ export function usePopularOrbShopProducts(enabled) {
                 c4(true);
               }
               sort_type = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp30) {
             closure_3 = tmp30;

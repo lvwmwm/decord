@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 
 let c0, c1, c11, c12, set2;
 
-const f100335 = (item) => {
+const f100351 = (item) => {
   obj = /^https?:\/\//i;
   return obj.test(item);
 };
@@ -28,7 +28,7 @@ function conjureLinkUrls(arr) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f100335));
+    set = new Set(match.filter(f100351));
     HermesBuiltin.arraySpread(items, set, 0);
     return items.slice(0, 4);
   } else {
@@ -51,7 +51,7 @@ let obj = function _prefetchConjureLinkEmbeds() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -258,7 +258,7 @@ let obj = function _prefetchConjureLinkEmbeds() {
           let deleteResult2 = closure_136_7.delete(joined);
         }
         c12 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     }
   });
@@ -284,7 +284,7 @@ export function readyConjureLinkEmbeds(trimmed) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f100335));
+    set = new Set(match.filter(f100351));
     HermesBuiltin.arraySpread(items, set, 0);
     substr = items.slice(0, 4);
   } else {
@@ -315,7 +315,7 @@ export function useConjureLinkPrefetch(arg0) {
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(match.filter(f100335));
+      set = new Set(match.filter(f100351));
       const items = [];
       const tmp6 = set;
       HermesBuiltin.arraySpread(items, set, 0);
@@ -336,7 +336,7 @@ export function useConjureLinkPrefetch(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -364,7 +364,7 @@ export function useConjureLinkPrefetch(arg0) {
               return obj;
             } else {
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp6) {
             c0 = 3;

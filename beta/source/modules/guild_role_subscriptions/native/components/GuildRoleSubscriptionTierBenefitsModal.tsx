@@ -1,10 +1,10 @@
-// Module ID: 20406
-// Function ID: 20407
+// Module ID: 20409
+// Function ID: 20410
 // Name: GuildRoleSubscriptionTierBenefitsModal
-// Dependencies: [32, 19, 17, 17572, 20392, 17551, 21, 5170, 575, 7071, 11666, 1113, 5874, 1411, 20407, 17576, 38, 20388, 7159, 7462, 20408, 20409, 20403, 17558, 20384, 17571, 20411, 20412, 20420, 17575, 20421, 20395, 2]
+// Dependencies: [32, 19, 17, 17572, 20395, 17551, 21, 5170, 575, 7071, 11666, 1113, 5874, 1411, 20410, 17576, 38, 20391, 7159, 7462, 20411, 20412, 20406, 17558, 20387, 17571, 20414, 20415, 20423, 17575, 20424, 20398, 2]
 // Exports: GuildRoleSubscriptionTierChannelBenefitsModal, GuildRoleSubscriptionTierIntangibleBenefitsModal
 
-// Module 20406 (GuildRoleSubscriptionTierBenefitsModal)
+// Module 20409 (GuildRoleSubscriptionTierBenefitsModal)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -15,12 +15,12 @@ import TableRowGroup2 from "TableRowGroup" /* 7159 */;
 import CirclePlusIcon2 from "CirclePlusIcon" /* 11666 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17571 */;
 import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17572 */;
-import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 20384 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20392 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20395 */;
-import EmojiAliasDefault from "EmojiAlias" /* 20407 */;
-import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 20411 */;
-import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 20412 */;
+import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 20387 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20395 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20398 */;
+import EmojiAliasDefault from "EmojiAlias" /* 20410 */;
+import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 20414 */;
+import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 20415 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -42,7 +42,7 @@ let obj3;
 let obj4;
 let tmp10;
 let unpackModuleId;
-const AllChannelsSwitchDefault = tmp10(20421);
+const AllChannelsSwitchDefault = tmp10(20424);
 function AddBenefitRow(disabled) {
   let CirclePlusIcon;
   let TableRow;
@@ -119,7 +119,7 @@ function ListFooterSection(onChangeTrialInterval) {
     }
     tmp3(value);
   }, items);
-  const obj = onChangeTrialInterval(20388);
+  const obj = onChangeTrialInterval(20391);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   let tmp9 = !tmp6;
   if (null != selectedOption) {
@@ -133,7 +133,7 @@ function ListFooterSection(onChangeTrialInterval) {
   const obj4 = { label: intl3.string(onChangeTrialInterval(1113).t["+hTmdb"]), value: null != selectedOption, onValueChange: callback, disabled: roleSubscriptionSettingsDisabled };
   const TableSwitchRow = tmp7(7462).TableSwitchRow;
   intl3 = tmp7(1113).intl;
-  items1 = [closure_12(TableSwitchRow, obj4), closure_12(tmp2(20408), { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp9 }), closure_12(tmp2(20409), { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp9 })];
+  items1 = [closure_12(TableSwitchRow, obj4), closure_12(tmp2(20411), { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp9 }), closure_12(tmp2(20412), { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp9 })];
   return closure_12(closure_7, obj2);
 }
 function Content(arg0) {
@@ -222,7 +222,7 @@ function Content(arg0) {
   const first4 = tmp24[0];
   closure_13 = tmp27;
   const tmp26 = tmp24[1];
-  const tmp5Result = tmp5(20388);
+  const tmp5Result = tmp5(20391);
   roleSubscriptionSettingsDisabled = tmp5Result.useRoleSubscriptionSettingsDisabled();
   const tmp29 = useRoleSubscriptionEmojisDefault(guildId);
   closure_16 = tmp29;

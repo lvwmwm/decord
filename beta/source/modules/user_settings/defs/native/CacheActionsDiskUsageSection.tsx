@@ -260,7 +260,7 @@ export function useDiskUsageMeasurement() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp43;
@@ -373,7 +373,7 @@ export function useDiskUsageMeasurement() {
             closure_129_1.current = false;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp43) {
           if (0 === c3) {
             c5 = 3;

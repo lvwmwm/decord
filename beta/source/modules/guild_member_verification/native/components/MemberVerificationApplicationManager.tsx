@@ -1,9 +1,9 @@
-// Module ID: 19921
-// Function ID: 19922
+// Module ID: 19924
+// Function ID: 19925
 // Name: MemberVerificationApplicationManager
 // Dependencies: [5203, 5204, 7383, 6123, 5206, 6996, 7004, 2]
 
-// Module 19921 (MemberVerificationApplicationManager)
+// Module 19924 (MemberVerificationApplicationManager)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5206 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;

@@ -1,9 +1,9 @@
-// Module ID: 19974
-// Function ID: 19975
+// Module ID: 19977
+// Function ID: 19978
 // Name: AccountSwitchingSpinnerModal
 // Dependencies: [19, 17, 21, 5170, 1113, 7048, 1092, 2]
 
-// Module 19974 (AccountSwitchingSpinnerModal)
+// Module 19977 (AccountSwitchingSpinnerModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;

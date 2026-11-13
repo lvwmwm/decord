@@ -255,11 +255,11 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
   const items7 = [tmp14];
   const tmp9Result = tmp9(tmp10[10]);
   const stateFromStoresArray = tmp9Result.useStateFromStoresArray(items6, () => {
-    const f129084 = (applicationId) => applicationId.applicationId;
+    const f129119 = (applicationId) => applicationId.applicationId;
     const mapped = closure_7.map((item) => stateFromStoresObject1.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f129084))];
-    new Set(found.map(f129084));
+    const items = [...new Set(found.map(f129119))];
+    new Set(found.map(f129119));
     return items;
   }, items7);
   const items8 = [stateFromStoresArray, stateFromStoresObject, stateFromStoresObject1];
@@ -314,7 +314,7 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -351,7 +351,7 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
                 c2 = 0;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp7) {
             if (0 === c2) {

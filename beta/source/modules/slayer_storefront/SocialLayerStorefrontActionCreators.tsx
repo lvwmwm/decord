@@ -317,7 +317,7 @@ obj = function _fetchSocialLayerStorefrontEntries() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -395,7 +395,7 @@ obj = function _fetchSocialLayerStorefrontEntries() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp24) {
           closure_3 = tmp24;
           if (0 === c4) {
@@ -428,7 +428,7 @@ obj = function _fetchSocialLayerStorefrontById() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -547,7 +547,7 @@ obj = function _fetchSocialLayerStorefrontById() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp62) {
           storefront = tmp62;
           if (0 === c6) {
@@ -582,7 +582,7 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -639,7 +639,7 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp34) {
           closure_3 = tmp34;
@@ -668,7 +668,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -752,7 +752,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp32) {
         if (0 === c3) {
           c5 = 3;
@@ -784,7 +784,7 @@ obj = function _fetchSocialLayerStorefrontLaunchAnnouncement() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c11;
@@ -874,7 +874,7 @@ obj = function _fetchSocialLayerStorefrontLaunchAnnouncement() {
             c11 = 0;
           }
           c13 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp43) {
         closure_10 = tmp43;

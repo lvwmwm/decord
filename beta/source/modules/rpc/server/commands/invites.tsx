@@ -47,7 +47,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c2;
@@ -137,7 +137,7 @@ let obj2 = {
           } else {
             c2 = 0;
             connectedActivityLocation = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp48) {
           if (0 === c2) {

@@ -408,7 +408,7 @@ export default function QuestDockContextMenuActionSheet(creative) {
           obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -466,7 +466,7 @@ export default function QuestDockContextMenuActionSheet(creative) {
             return obj;
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp28) {
           c2 = 3;
           throw tmp28;

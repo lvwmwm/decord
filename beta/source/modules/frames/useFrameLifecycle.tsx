@@ -67,8 +67,8 @@ export default function useFrameLifecycle(applicationId) {
       obj10 = { state: obj.Loading, frame: tmp3 };
       const obj7 = { state: obj.Loading, frame: tmp3 };
     } else if (isLoading) {
-      obj10 = { state: obj.Loading, frame: "flexDirection" };
-      const obj8 = { state: obj.Loading, frame: "flexDirection" };
+      obj10 = { state: obj.Loading, frame: "r" };
+      const obj8 = { state: obj.Loading, frame: "r" };
     } else {
       if (null != data) {
         if (tmp7) {
@@ -108,7 +108,7 @@ export default function useFrameLifecycle(applicationId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -148,7 +148,7 @@ export default function useFrameLifecycle(applicationId) {
                 c2 = 0;
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp12) {
             if (0 === c2) {

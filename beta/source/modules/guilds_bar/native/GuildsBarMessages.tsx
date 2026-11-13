@@ -46,7 +46,7 @@ const memoResult = react.memo(function GuildsBarMessages() {
   const colors = nativeDefault.colors;
   GuildsBarAnimatedItemWrapperDefault;
   const intl = tmp(1113).intl;
-  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren="ondt">{"sort"}</tmp5Result>;
+  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren="APP_STATE_UPDATE">{"LOGOUT"}</tmp5Result>;
 });
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

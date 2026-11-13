@@ -1,15 +1,15 @@
-// Module ID: 19951
-// Function ID: 19952
+// Module ID: 19954
+// Function ID: 19955
 // Name: JankSessionManager
-// Dependencies: [7749, 1072, 3, 7383, 18438, 1352, 18432, 19952, 18439, 19953, 7763, 2]
+// Dependencies: [7749, 1072, 3, 7383, 18438, 1352, 18432, 19955, 18439, 19956, 7763, 2]
 
-// Module 19951 (JankSessionManager)
+// Module 19954 (JankSessionManager)
 import LoggerDefault from "Logger" /* 3 */;
 import clientLaunchId from "clientLaunchId" /* 1352 */;
 import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 18432 */;
 import react_nativeDefault from "react-native" /* 18438 */;
-import JankNavigationReporterDefault from "JankNavigationReporter" /* 19952 */;
-import attachJankPanelReportersDefault from "attachJankPanelReporters" /* 19953 */;
+import JankNavigationReporterDefault from "JankNavigationReporter" /* 19955 */;
+import attachJankPanelReportersDefault from "attachJankPanelReporters" /* 19956 */;
 import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7749 */;
 import Constants from "Constants" /* 1072 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;

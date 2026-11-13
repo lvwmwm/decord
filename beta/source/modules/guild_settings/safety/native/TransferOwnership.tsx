@@ -87,7 +87,7 @@ export default function TransferOwnership(guild) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ export default function TransferOwnership(guild) {
             closure_128_2.push(constants.CONFIRM_EMAIL_CODE);
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp22) {
           c2 = 3;
           throw tmp22;

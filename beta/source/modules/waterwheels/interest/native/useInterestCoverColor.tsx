@@ -81,7 +81,7 @@ function fetchInterestCoverColor(arg0, uri) {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c2;
@@ -206,7 +206,7 @@ export default function useInterestCoverColor(arg0, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -243,7 +243,7 @@ export default function useInterestCoverColor(arg0, arg1) {
                 c2(obj);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp16) {
             c3 = 3;

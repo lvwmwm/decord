@@ -66,7 +66,7 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let _undefined;
   let c1;
   let tmp4;
-  const f134781 = () => memo.getSearchHistory(searchContextId);
+  const f134817 = () => memo.getSearchHistory(searchContextId);
   searchContext = searchContext.searchContext;
   const onJumpToMedia = searchContext.onJumpToMedia;
   const suggestedData = searchContext.suggestedData;
@@ -89,8 +89,8 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let obj2 = searchContext(suggestedData[19]);
   const searchContextId = obj2.getSearchContextId(searchContext);
   c1 = undefined;
-  [tmp4, c1] = messages(isInitialSearchQuery.useState(f134781), 2);
-  const tmp3 = messages(isInitialSearchQuery.useState(f134781), 2);
+  [tmp4, c1] = messages(isInitialSearchQuery.useState(f134817), 2);
+  const tmp3 = messages(isInitialSearchQuery.useState(f134817), 2);
   const obj3 = searchContext(suggestedData[23]);
   let items1 = [searchContextId];
   const focusEffect = obj3.useFocusEffect(isInitialSearchQuery.useCallback(() => {
@@ -243,7 +243,7 @@ let closure_20 = react.memo(function RecentUserScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ let closure_20 = react.memo(function RecentUserScreen(searchContext) {
             const result = obj.trackSuggestedSearchClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           c4 = 3;

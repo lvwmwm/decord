@@ -102,7 +102,7 @@ function UserIcon() {
   const obj3 = { style: tmp.avatarInnerBorder };
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   items1 = [map1(View, obj3), ];
-  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
+  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "r" };
   const Avatar = native.Avatar;
   items1[1] = map1(Avatar, obj4);
   return authStore3(View, obj2);

@@ -165,7 +165,7 @@ obj = function _fetchConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ obj = function _fetchConversation() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp15) {
           if (0 === c4) {
             c6 = 3;
@@ -241,7 +241,7 @@ obj = function _hydrateSelectedConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ obj = function _hydrateSelectedConversation() {
           const obj5 = { includeReactions: true, includeMessageReferences: true, cacheType };
           closure_132_14(closure_0, closure_1, obj5);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp13) {
           c6 = 3;
           throw tmp13;
@@ -309,7 +309,7 @@ obj = function _fetchConversationMessages() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -339,7 +339,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (isFullyHydratedResult) {
                   c7 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 let hydratedMessages;
@@ -350,7 +350,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (null != hydratedMessages) {
                   c7 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               if ("preview" === cacheType) {
@@ -393,7 +393,7 @@ obj = function _fetchConversationMessages() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp29) {
           if (0 === c5) {
             c7 = 3;

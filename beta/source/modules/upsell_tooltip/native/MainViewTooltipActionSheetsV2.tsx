@@ -1,7 +1,7 @@
 // Module ID: 19427
 // Function ID: 19428
 // Name: MainViewTooltipActionSheetsV2
-// Dependencies: [32, 19, 5407, 1231, 1072, 5016, 21, 19428, 2118, 19430, 19431, 19432, 19434, 19435, 18053, 19437, 19443, 19445, 19452, 19457, 14001, 19458, 5003, 5010, 1252, 5007, 10672, 5202, 5004, 19459, 504, 10671, 2]
+// Dependencies: [32, 19, 5407, 1231, 1072, 5016, 21, 19428, 2118, 19430, 19431, 19432, 19434, 19435, 18053, 19437, 19443, 19445, 19452, 19457, 14001, 19458, 19459, 19460, 5003, 5010, 1252, 5007, 10672, 5202, 5004, 19461, 504, 10671, 2]
 // Exports: default
 
 // Module 19427 (MainViewTooltipActionSheetsV2)
@@ -25,6 +25,9 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
+function ReferralProgramEntryPointActionSheetImporter() {
+  return asyncRequire(19458, dependencyMap.paths);
+}
 function GiftingBadgesCoachmarkImporter() {
   return asyncRequire(19443, dependencyMap.paths);
 }
@@ -111,71 +114,81 @@ const constants = DismissibleContentConstants.DismissibleContentGroupName;
 const jsx = Fragment.jsx;
 const MainViewTooltipActionSheets = "MainViewTooltipActionSheets";
 let obj = {
+  id: dismissible_content.DismissibleContent.HEXAGON_CAMPAIGN_PERKS_EXPIRED_PROMO_SHEET,
+  importer: function HexagonCampaignExpiredPromoSheetImporter() {
+    return asyncRequire(19459, dependencyMap.paths);
+  }
+};
+let items = [obj, , , ];
+let obj2 = {
   id: dismissible_content.DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET,
   importer: function GooglePlayPriceChangeActionSheetImporter() {
     return asyncRequire(19432, dependencyMap.paths);
   }
 };
-let items = [obj, , ];
-let obj2 = {
+items[1] = obj2;
+let obj3 = {
   id: dismissible_content.DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET,
   importer: function PremiumDiscountOfferActionSheetImporter() {
     return asyncRequire(19435, dependencyMap.paths);
   }
 };
-items[1] = obj2;
-let obj3 = {
+items[2] = obj3;
+let obj4 = {
   id: dismissible_content.DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET,
   importer: function PremiumTrialOfferActionSheetImporter() {
     return asyncRequire(18053, dependencyMap.paths);
   }
 };
-items[2] = obj3;
+items[3] = obj4;
 let items1 = [...items];
-let obj4 = { id: dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
-items1[tmp3] = obj4;
-const sum = tmp3 + 1;
-let obj5 = { id: dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
-items1[sum] = obj5;
-const sum1 = sum + 1;
-let obj6 = {
-  id: dismissible_content.DismissibleContent.MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT,
-  importer: function ReferralProgramEntryPointActionSheetImporter() {
-    return asyncRequire(19458, dependencyMap.paths);
+let obj5 = {
+  id: dismissible_content.DismissibleContent.HEXAGON_CAMPAIGN_PERKS_EXPIRING_PROMO_SHEET,
+  importer: function HexagonCampaignExpiringPromoSheetImporter() {
+    return asyncRequire(19460, dependencyMap.paths);
   }
 };
-items1[sum1] = obj6;
+items1[tmp3] = obj5;
+const sum = tmp3 + 1;
+let obj6 = { id: dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
+items1[sum] = obj6;
+const sum1 = sum + 1;
+let obj7 = { id: dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
+items1[sum1] = obj7;
 const sum2 = sum1 + 1;
-let obj7 = { id: dismissible_content.DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, importer: GiftingPromotionCoachmarkImporter };
-items1[sum2] = obj7;
+items1[sum2] = { id: dismissible_content.DismissibleContent.MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT, importer: ReferralProgramEntryPointActionSheetImporter };
 const sum3 = sum2 + 1;
-items1[sum3] = { id: dismissible_content.DismissibleContent.GIFTING_PROMOTION_REMINDER, importer: GiftingPromotionCoachmarkImporter };
+const obj8 = { id: dismissible_content.DismissibleContent.MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT, importer: ReferralProgramEntryPointActionSheetImporter };
+items1[sum3] = { id: dismissible_content.DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, importer: GiftingPromotionCoachmarkImporter };
 const sum4 = sum3 + 1;
-const obj8 = { id: dismissible_content.DismissibleContent.GIFTING_PROMOTION_REMINDER, importer: GiftingPromotionCoachmarkImporter };
-items1[sum4] = { id: dismissible_content.DismissibleContent.NEW_GIFTING_BADGES_COACHMARK, importer: GiftingBadgesCoachmarkImporter };
+const obj9 = { id: dismissible_content.DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, importer: GiftingPromotionCoachmarkImporter };
+items1[sum4] = { id: dismissible_content.DismissibleContent.GIFTING_PROMOTION_REMINDER, importer: GiftingPromotionCoachmarkImporter };
 const sum5 = sum4 + 1;
-const obj9 = { id: dismissible_content.DismissibleContent.NEW_GIFTING_BADGES_COACHMARK, importer: GiftingBadgesCoachmarkImporter };
-items1[sum5] = { id: dismissible_content.DismissibleContent.CUSTOM_APP_ICONS_COACHMARK, importer: AppIconsCoachMarkImporter };
+({ id: dismissible_content.DismissibleContent.GIFTING_PROMOTION_REMINDER, importer: GiftingPromotionCoachmarkImporter });
+items1[sum5] = { id: dismissible_content.DismissibleContent.NEW_GIFTING_BADGES_COACHMARK, importer: GiftingBadgesCoachmarkImporter };
 const sum6 = sum5 + 1;
-({ id: dismissible_content.DismissibleContent.CUSTOM_APP_ICONS_COACHMARK, importer: AppIconsCoachMarkImporter });
-items1[sum6] = { id: dismissible_content.DismissibleContent.ROBLOX_CONNECTION_COACHMARK, importer: RobloxConnectionCoachmarkImporter };
+({ id: dismissible_content.DismissibleContent.NEW_GIFTING_BADGES_COACHMARK, importer: GiftingBadgesCoachmarkImporter });
+items1[sum6] = { id: dismissible_content.DismissibleContent.CUSTOM_APP_ICONS_COACHMARK, importer: AppIconsCoachMarkImporter };
 const sum7 = sum6 + 1;
-({ id: dismissible_content.DismissibleContent.ROBLOX_CONNECTION_COACHMARK, importer: RobloxConnectionCoachmarkImporter });
-items1[sum7] = { id: dismissible_content.DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK, importer: DisplayNameStylesFlywheelMobileActionSheetImporter };
+({ id: dismissible_content.DismissibleContent.CUSTOM_APP_ICONS_COACHMARK, importer: AppIconsCoachMarkImporter });
+items1[sum7] = { id: dismissible_content.DismissibleContent.ROBLOX_CONNECTION_COACHMARK, importer: RobloxConnectionCoachmarkImporter };
 const sum8 = sum7 + 1;
-({ id: dismissible_content.DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK, importer: DisplayNameStylesFlywheelMobileActionSheetImporter });
-items1[sum8] = { id: dismissible_content.DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT, importer: CollectiblesMobileAnnouncementActionSheetImporter };
+({ id: dismissible_content.DismissibleContent.ROBLOX_CONNECTION_COACHMARK, importer: RobloxConnectionCoachmarkImporter });
+items1[sum8] = { id: dismissible_content.DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK, importer: DisplayNameStylesFlywheelMobileActionSheetImporter };
 const sum9 = sum8 + 1;
-({ id: dismissible_content.DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT, importer: CollectiblesMobileAnnouncementActionSheetImporter });
-items1[sum9] = { id: dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT, importer: NitroFileUploadAnnouncementPromoSheetImporter };
+({ id: dismissible_content.DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK, importer: DisplayNameStylesFlywheelMobileActionSheetImporter });
+items1[sum9] = { id: dismissible_content.DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT, importer: CollectiblesMobileAnnouncementActionSheetImporter };
 const sum10 = sum9 + 1;
-({ id: dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT, importer: NitroFileUploadAnnouncementPromoSheetImporter });
-items1[sum10] = { id: dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL, importer: NitroFileUploadUpsellPromoSheetImporter };
+({ id: dismissible_content.DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT, importer: CollectiblesMobileAnnouncementActionSheetImporter });
+items1[sum10] = { id: dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT, importer: NitroFileUploadAnnouncementPromoSheetImporter };
 const sum11 = sum10 + 1;
+({ id: dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT, importer: NitroFileUploadAnnouncementPromoSheetImporter });
+items1[sum11] = { id: dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL, importer: NitroFileUploadUpsellPromoSheetImporter };
+const sum12 = sum11 + 1;
 ({ id: dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL, importer: NitroFileUploadUpsellPromoSheetImporter });
-items1[sum11] = { id: dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK, importer: CustomTypingIndicatorAnnounceActionSheetImporter };
+items1[sum12] = { id: dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK, importer: CustomTypingIndicatorAnnounceActionSheetImporter };
 ({ id: dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK, importer: CustomTypingIndicatorAnnounceActionSheetImporter });
-items1[sum11 + 1] = { id: dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_PRESETS_ACTION_SHEET, importer: CustomTypingIndicatorAnnounceActionSheetImporter };
+items1[sum12 + 1] = { id: dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_PRESETS_ACTION_SHEET, importer: CustomTypingIndicatorAnnounceActionSheetImporter };
 ({ id: dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_PRESETS_ACTION_SHEET, importer: CustomTypingIndicatorAnnounceActionSheetImporter });
 const result = size.fileFinishedImporting("modules/upsell_tooltip/native/MainViewTooltipActionSheetsV2.tsx");
 
@@ -189,7 +202,7 @@ export default function MainViewTooltipActionSheetsV2() {
   let stateFromStores;
   let str6;
   const tmp = mainViewTooltipActionSheetMap;
-  let obj = mainViewTooltipActionSheetMap(19459);
+  let obj = mainViewTooltipActionSheetMap(19461);
   mainViewTooltipActionSheetMap = obj.useMainViewTooltipActionSheetMap();
   [first, dependencyMap] = react.useState(null);
   _slicedToArray = ref(false);
@@ -233,30 +246,30 @@ export default function MainViewTooltipActionSheetsV2() {
         let tmp3 = null == tmp;
         if (!tmp3) {
           let isDismissed;
-          const obj = mainViewTooltipActionSheetMap(closure_2[23]);
+          const obj = mainViewTooltipActionSheetMap(closure_2[25]);
           if (obj.isSnowflakeBoundDismissibleContent(id)) {
             let isDismissed3 = null == tmp.newSnowflakeId;
             if (!isDismissed3) {
-              const tmp4Result = mainViewTooltipActionSheetMap(closure_2[27]);
+              const tmp4Result = mainViewTooltipActionSheetMap(closure_2[29]);
               isDismissed3 = tmp4Result.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(id, tmp.newSnowflakeId).isDismissed;
             }
             isDismissed = isDismissed3;
           } else {
-            const tmp4Result6 = mainViewTooltipActionSheetMap(closure_2[23]);
+            const tmp4Result6 = mainViewTooltipActionSheetMap(closure_2[25]);
             if (tmp4Result6.isVersionedDismissibleContent(id)) {
-              const tmp4Result7 = mainViewTooltipActionSheetMap(closure_2[28]);
+              const tmp4Result7 = mainViewTooltipActionSheetMap(closure_2[30]);
               isDismissed = tmp4Result7.isVersionedDismissibleContentDismissed(id, tmp.latestVersion).isDismissed;
             } else {
-              const tmp4Result8 = mainViewTooltipActionSheetMap(closure_2[23]);
+              const tmp4Result8 = mainViewTooltipActionSheetMap(closure_2[25]);
               if (tmp4Result8.isTimeRecurringDismissibleContent(id)) {
                 let isDismissed2 = null == tmp.cooldownConfig;
                 if (!isDismissed2) {
-                  const tmp4Result9 = mainViewTooltipActionSheetMap(closure_2[28]);
+                  const tmp4Result9 = mainViewTooltipActionSheetMap(closure_2[30]);
                   isDismissed2 = tmp4Result9.isTimeRecurringDismissibleContentDismissed(id, tmp.cooldownConfig).isDismissed;
                 }
                 isDismissed = isDismissed2;
               } else {
-                const tmp4Result10 = mainViewTooltipActionSheetMap(closure_2[27]);
+                const tmp4Result10 = mainViewTooltipActionSheetMap(closure_2[29]);
                 isDismissed = tmp4Result10.UNSAFE_isDismissibleContentDismissed(id);
               }
             }

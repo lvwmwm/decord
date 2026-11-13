@@ -103,7 +103,7 @@ let tmp;
 let tmp6;
 const DesktopNativeUtilsDefault = tmp6(7027);
 const trackVideoToggleDefault = tmp(16000);
-const f84499 = (name) => {
+const f84515 = (name) => {
   const str = name.name;
   const formatted = str.toLowerCase();
   return formatted.includes("dualsense");
@@ -120,7 +120,7 @@ let obj = function _detectH265HardwareDecode() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -765,7 +765,7 @@ obj = function _maybeProbeAudioEffects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -817,7 +817,7 @@ obj = function _maybeProbeAudioEffects() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp17) {
         closure_3 = tmp17;
         if (0 === c4) {
@@ -862,7 +862,7 @@ function setInputDevice(inputDeviceId) {
 }
 function hasHapticsOverAudioOutputDevices(arg0) {
   const values = Object.values(arg0);
-  return values.some(f84499);
+  return values.some(f84515);
 }
 function applyRemoteSettings(arg0) {
   let flag = arg0;
@@ -1101,7 +1101,7 @@ obj = function _setGamescopeVaapiEnabled() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1162,7 +1162,7 @@ obj = function _setGamescopeVaapiEnabled() {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp13) {
         c4 = 3;
         throw tmp13;
@@ -1185,7 +1185,7 @@ obj = function _setupKrispNativeModule() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -1315,7 +1315,7 @@ obj = function _setupKrispNativeModule() {
           c4 = 0;
           c106 = false;
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp69) {
         closure_3 = tmp69;
@@ -1346,7 +1346,7 @@ obj = function _downloadOpenH() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -1457,7 +1457,7 @@ obj = function _downloadOpenH() {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp48) {
         closure_2 = tmp48;
@@ -1621,11 +1621,11 @@ let c80 = 0;
 let c81 = false;
 let closure_82 = performance.now();
 let c83 = null;
-let obj4 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_INPUT, index: 0, name: "No Input Devices", disabled: true, guid: "disabled", hardwareId: "e", containerId: "isArray" };
+let obj4 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_INPUT, index: 0, name: "No Input Devices", disabled: true, guid: "ip", hardwareId: "e", containerId: "isArray" };
 const inputDevices = { [DEFAULT_DEVICE_ID]: obj4 };
-let obj5 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_OUTPUT, index: 0, name: "No Output Devices", disabled: true, guid: "channelId", hardwareId: "flex", containerId: "isArray" };
+let obj5 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_OUTPUT, index: 0, name: "No Output Devices", disabled: true, guid: "channel", hardwareId: "flex", containerId: "isArray" };
 const outputDevices = { [DEFAULT_DEVICE_ID]: obj5 };
-let obj6 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.VIDEO_INPUT, index: 0, name: "No Video Devices", disabled: true, guid: "channel_id", hardwareId: "typeName", containerId: "hash" };
+let obj6 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.VIDEO_INPUT, index: 0, name: "No Video Devices", disabled: true, guid: "channelId", hardwareId: "left", containerId: "hasDiversityParent" };
 let closure_86 = { [DEFAULT_DEVICE_ID]: obj6 };
 const timeout = new Timers.Timeout();
 let c88 = false;
@@ -2050,7 +2050,7 @@ class MediaEngineStore extends Store {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -2132,7 +2132,7 @@ class MediaEngineStore extends Store {
                 app.relaunch();
               }
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             const tmp20 = will_restart;
             if (tmp20) {
@@ -2472,7 +2472,7 @@ class MediaEngineStore extends Store {
                       obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     try {
@@ -2523,7 +2523,7 @@ class MediaEngineStore extends Store {
                         const _setTimeout = setTimeout;
                         const timerId = setTimeout(closure_129_0, periodMs);
                         c3 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } catch (tmp19) {
                       c3 = 3;
@@ -4451,8 +4451,8 @@ let obj7 = {
     let valueResult;
     let valueResult3;
     let valueResult4;
-    const f84497 = (id) => {
-      const f84496 = (containerId) => {
+    const f84513 = (id) => {
+      const f84512 = (containerId) => {
         let tmp = null != containerId.containerId && containerId.containerId === closure_0.containerId;
         if (!tmp) {
           tmp = null != containerId.hardwareId && containerId.hardwareId === closure_0.hardwareId;
@@ -4469,7 +4469,7 @@ let obj7 = {
       if ("videoinput" === id.type !== true) {
         let WEBCAM;
         closure_0 = id;
-        if (null != videoDevices.find(f84496) !== true) {
+        if (null != videoDevices.find(f84512) !== true) {
           const items = ["builtin", "displayport", "hdmi"];
           let str = id.macosTransportType;
           const includes = items.includes;
@@ -4504,7 +4504,7 @@ let obj7 = {
                     let tmp3 = "audioinput" === id.type;
                     if (tmp3) {
                       closure_0 = id;
-                      tmp3 = null != outputDevices.find(f84496);
+                      tmp3 = null != outputDevices.find(f84512);
                     }
                     if (tmp3 === true) {
                       let tmp5 = constants2;
@@ -4513,7 +4513,7 @@ let obj7 = {
                       let tmp4 = "audiooutput" === id.type;
                       if (tmp4) {
                         closure_0 = id;
-                        tmp4 = null != inputDevices.find(f84496);
+                        tmp4 = null != inputDevices.find(f84512);
                       }
                     }
                   }
@@ -4538,13 +4538,13 @@ let obj7 = {
     _require = videoDevices;
     const arr = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[AUDIO_INPUT]];
     if (0 === arr.length) {
-      obj = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_INPUT, index: 0, name: tmp5, disabled: true, guid: "channelId", hardwareId: "LengthDelimited", containerId: "status" };
+      obj = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_INPUT, index: 0, name: tmp5, disabled: true, guid: "channel", hardwareId: "it", containerId: "state" };
       obj2 = {};
       obj2[obj.id] = obj;
       valueResult = obj2;
     } else {
       const arr2 = AUDIO_INPUT(12)(arr);
-      const mapped = arr2.map(f84497);
+      const mapped = arr2.map(f84513);
       let str = "id";
       const iter = mapped.keyBy("id");
       valueResult = iter.value();
@@ -4573,13 +4573,13 @@ let obj7 = {
     _require = videoDevices;
     const arr3 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[AUDIO_OUTPUT]];
     if (0 === arr3.length) {
-      const obj3 = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_OUTPUT, index: 0, name: tmp21, disabled: true, guid: "channelId", hardwareId: "LengthDelimited", containerId: "status" };
+      const obj3 = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_OUTPUT, index: 0, name: tmp21, disabled: true, guid: "channel", hardwareId: "it", containerId: "state" };
       const obj6 = {};
       obj6[obj3.id] = obj3;
       valueResult3 = obj6;
     } else {
       const arr4 = AUDIO_INPUT(12)(arr3);
-      const mapped1 = arr4.map(f84497);
+      const mapped1 = arr4.map(f84513);
       let str2 = "id";
       const iter2 = mapped1.keyBy("id");
       valueResult3 = iter2.value();
@@ -4604,9 +4604,9 @@ let obj7 = {
       const _Object = Object;
       const values5 = Object.values(tmp20);
       const _Object2 = Object;
-      const someResult = values5.some(f84499);
+      const someResult = values5.some(f84515);
       const values6 = Object.values(valueResult3);
-      const someResult1 = values6.some(f84499);
+      const someResult1 = values6.some(f84515);
       const obj13 = closure_70;
       if (someResult !== someResult1) {
         obj13.eachConnection((context) => {
@@ -4622,13 +4622,13 @@ let obj7 = {
     _require = videoDevices;
     const arr5 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[VIDEO_INPUT]];
     if (0 === arr5.length) {
-      const obj7 = { id: DEFAULT_DEVICE_ID, deviceType: VIDEO_INPUT, index: 0, name: tmp38, disabled: true, guid: "channelId", hardwareId: "LengthDelimited", containerId: "status" };
+      const obj7 = { id: DEFAULT_DEVICE_ID, deviceType: VIDEO_INPUT, index: 0, name: tmp38, disabled: true, guid: "channel", hardwareId: "it", containerId: "state" };
       const obj8 = {};
       obj8[obj7.id] = obj7;
       valueResult4 = obj8;
     } else {
       const arr6 = AUDIO_INPUT(12)(arr5);
-      const mapped2 = arr6.map(f84497);
+      const mapped2 = arr6.map(f84513);
       let str3 = "id";
       const iter3 = mapped2.keyBy("id");
       valueResult4 = iter3.value();

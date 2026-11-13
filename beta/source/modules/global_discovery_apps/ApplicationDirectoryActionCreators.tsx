@@ -42,7 +42,7 @@ let obj = function _getEmbedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -129,7 +129,7 @@ let obj = function _getEmbedApplication() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp21) {
           closure_4 = tmp21;
           if (0 === c5) {
@@ -236,7 +236,7 @@ obj = function _getCategories() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -280,7 +280,7 @@ obj = function _getCategories() {
           obj.dispatch(obj8);
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp17) {
         c3 = 3;
         throw tmp17;
@@ -576,7 +576,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -654,7 +654,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp32) {
         if (0 === c3) {
           c5 = 3;

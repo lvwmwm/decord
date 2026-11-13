@@ -1,10 +1,10 @@
-// Module ID: 20021
-// Function ID: 20022
+// Module ID: 20024
+// Function ID: 20025
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1072, 7825, 21, 5170, 575, 1627, 20022, 1252, 7048, 5783, 1113, 2664, 17134, 5790, 2]
+// Dependencies: [19, 17, 1072, 7825, 21, 5170, 575, 1627, 20025, 1252, 7048, 5783, 1113, 2664, 17134, 5790, 2]
 // Exports: default
 
-// Module 20021 (ConnectGuardianModal)
+// Module 20024 (ConnectGuardianModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -61,7 +61,7 @@ export default function ConnectGuardianModal(route) {
   const onComplete = route.route.params.onComplete;
   const tmp = closure_9();
   const bottom = connectGuardianGate(1627)().bottom;
-  let obj = onComplete(20022);
+  let obj = onComplete(20025);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const items = [connectGuardianGate.state, onComplete];

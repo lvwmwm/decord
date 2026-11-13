@@ -33,7 +33,7 @@ let obj = function _handleForwardBreadcrumb() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -85,7 +85,7 @@ let obj = function _handleForwardBreadcrumb() {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (1 === did_lurk) {
           c4 = 0;

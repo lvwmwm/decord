@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "ip", positionPercentage: false };
+    sectionItemFromPosition = { item: "description", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;
@@ -595,7 +595,7 @@ export default function useGuildsBarGesture() {
                             const obj3 = { value, done: true };
                             return obj3;
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                         } else {
                           let c3;
@@ -632,7 +632,7 @@ export default function useGuildsBarGesture() {
                                 c3 = 0;
                               }
                               c0 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "HermesInternal" };
                             }
                           } catch (tmp8) {
                             closure_2 = tmp8;

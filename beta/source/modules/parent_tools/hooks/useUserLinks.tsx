@@ -22,12 +22,12 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f94351 = () => linkedUsers.getLinkedUsers();
-const f94353 = () => {
+const f94367 = () => linkedUsers.getLinkedUsers();
+const f94369 = () => {
   let user;
   return closure_0.map((item) => user.getUser(item));
 };
-const f94354 = (item) => null != item;
+const f94370 = (item) => null != item;
 ({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: metroRequire, FAMILY_CENTER_REQUEST_QR_CODE_URL: metroImportDefault, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: metroImportAll, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: c9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: c10, UserLinkStatus: unpackModuleId, UserLinkType: closure_12 } = FamilyCenterConstants);
 let result = size.fileFinishedImporting("modules/parent_tools/hooks/useUserLinks.tsx");
 
@@ -36,7 +36,7 @@ export function useUserIdsForLinkStatus(arg0) {
   _require = arg0;
   const items = [FamilyCenterStore];
   const obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, f94351);
+  const stateFromStores = obj.useStateFromStores(items, f94367);
   const items1 = [stateFromStores, arg0];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -56,7 +56,7 @@ export function useUsersForLinkStatus(PENDING) {
   _require = PENDING;
   const items = [FamilyCenterStore];
   const obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, f94351);
+  const stateFromStores = obj.useStateFromStores(items, f94367);
   const items1 = [stateFromStores, PENDING];
   _require = react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -72,14 +72,14 @@ export function useUsersForLinkStatus(PENDING) {
   }, items1);
   const items2 = [UserStore];
   const obj2 = require("useStateFromStores");
-  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f94353);
-  return stateFromStoresArray.filter(f94354);
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f94369);
+  return stateFromStoresArray.filter(f94370);
 }
 export function useActiveLinkUserIds() {
   const ACTIVE = constants.ACTIVE;
   const items = [FamilyCenterStore];
   const obj = ACTIVE(563);
-  const stateFromStores = obj.useStateFromStores(items, f94351);
+  const stateFromStores = obj.useStateFromStores(items, f94367);
   const items1 = [stateFromStores, ACTIVE];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -112,7 +112,7 @@ export function useActiveLinkUsers() {
   _require = undefined;
   const items = [FamilyCenterStore];
   const obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, f94351);
+  const stateFromStores = obj.useStateFromStores(items, f94367);
   const items1 = [stateFromStores, ACTIVE];
   _require = react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -128,14 +128,14 @@ export function useActiveLinkUsers() {
   }, items1);
   const items2 = [UserStore];
   const obj2 = require("useStateFromStores");
-  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f94353);
-  return stateFromStoresArray.filter(f94354);
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f94369);
+  return stateFromStoresArray.filter(f94370);
 }
 export function useHasActiveLinks() {
   const ACTIVE = constants.ACTIVE;
   const items = [FamilyCenterStore];
   const obj = ACTIVE(563);
-  const stateFromStores = obj.useStateFromStores(items, f94351);
+  const stateFromStores = obj.useStateFromStores(items, f94367);
   const items1 = [stateFromStores, ACTIVE];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -187,7 +187,7 @@ export function useHasMaxConnections() {
   const items = [FamilyCenterStore];
   const tmp = stateFromStores(8474)();
   const obj = ACTIVE(563);
-  stateFromStores = obj.useStateFromStores(items, f94351);
+  stateFromStores = obj.useStateFromStores(items, f94367);
   const items1 = [stateFromStores, ACTIVE];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -242,7 +242,7 @@ export function useAcceptedRequestsCount() {
   const ACTIVE = constants.ACTIVE;
   const items = [FamilyCenterStore];
   const obj = ACTIVE(563);
-  const stateFromStores = obj.useStateFromStores(items, f94351);
+  const stateFromStores = obj.useStateFromStores(items, f94367);
   const items1 = [stateFromStores, ACTIVE];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);

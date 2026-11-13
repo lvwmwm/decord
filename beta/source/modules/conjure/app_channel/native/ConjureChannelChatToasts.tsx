@@ -50,7 +50,7 @@ function ChatToast(message) {
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
   Card = tmp2(7073).Card;
-  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
+  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
   const Avatar = tmp2(1187).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };

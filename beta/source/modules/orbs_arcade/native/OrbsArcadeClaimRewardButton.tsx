@@ -61,7 +61,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -94,7 +94,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
           c2 = 0;
           showOrbsArcadeClaimRewardsError();
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -125,7 +125,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp20) {
         if (0 === c2) {

@@ -395,7 +395,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -439,7 +439,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
           return obj.showDoubleTapEmojiUpdatedToast(obj2);
         }, 500);
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp24) {
         c3 = 3;
         throw tmp24;

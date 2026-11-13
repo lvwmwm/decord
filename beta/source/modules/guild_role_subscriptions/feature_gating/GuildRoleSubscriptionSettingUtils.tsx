@@ -17,7 +17,7 @@ let _require;
 
 let hasOwnProperty;
 let metroRequire;
-const f92257 = () => {
+const f92273 = () => {
   const canResult = null != guild && PermissionStore.can(metroRequire.ADMINISTRATOR, tmp);
   return canResult;
 };
@@ -70,7 +70,7 @@ function useGuildRoleSubscriptionSettingsVisibility(stateFromStores) {
   const obj = require("get initialized");
   const items = [PermissionStore];
   const items1 = [stateFromStores];
-  stateFromStores = obj.useStateFromStores(items, f92257, items1);
+  stateFromStores = obj.useStateFromStores(items, f92273, items1);
   const items2 = [UserStore];
   const obj2 = require("get initialized");
   const stateFromStores1 = obj2.useStateFromStores(items2, () => {
@@ -165,7 +165,7 @@ export function useCanManageGuildRoleSubscriptions(guild) {
   const items = [PermissionStore];
   const items1 = [guild];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f92257, items1);
+  return obj.useStateFromStores(items, f92273, items1);
 }
 export function canManageGuildRoleSubscriptions(stateFromStores) {
   const canResult = null != stateFromStores && PermissionStore.can(metroRequire.ADMINISTRATOR, stateFromStores);

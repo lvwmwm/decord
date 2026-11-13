@@ -38,7 +38,7 @@ let obj = function _handleLanguageChange() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _handleLanguageChange() {
           obj = closure_130_1(closure_130_2[8]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp13) {
         c4 = 3;

@@ -418,7 +418,7 @@ function GuildStickerDetail(sticker) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -452,7 +452,7 @@ function GuildStickerDetail(sticker) {
               c3(id);
               closure_1_5(true);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp15) {
             c3 = 3;

@@ -229,7 +229,7 @@ const entry = {
               let arr;
               let obj;
               let result;
-              const f137183 = (acc, duration) => acc + duration.duration;
+              const f137225 = (acc, duration) => acc + duration.duration;
               if ("transform" === item) {
                 const _Array = Array;
                 const tmp14 = transform;
@@ -247,7 +247,7 @@ const entry = {
                         if (typeof tmp === "function") {
                           if (combined in index) {
                             if (typeof item === "function") {
-                              const obj = { duration: result - arr.reduce(f137183, 0), value: tmp7, easing: tmp9 };
+                              const obj = { duration: result - arr.reduce(f137225, 0), value: tmp7, easing: tmp9 };
                               result = tmp8 / 100 * closure_1_3;
                               arr = index[combined];
                               tmp14(obj);
@@ -275,7 +275,7 @@ const entry = {
                   const tmp7 = tmp3[item];
                   const tmp9 = getAnimationDuration;
                   if (typeof getAnimationDuration === "function") {
-                    obj = { duration: result - arr.reduce(f137183, 0), value: tmp18, easing: tmp2 };
+                    obj = { duration: result - arr.reduce(f137225, 0), value: tmp18, easing: tmp2 };
                     arr = tmp3[item];
                     result = tmp / 100 * num3;
                     tmp8(obj);

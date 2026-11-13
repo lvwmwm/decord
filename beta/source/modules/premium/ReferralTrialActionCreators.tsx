@@ -79,7 +79,7 @@ obj = function _maybeFetchRecipientEligibility() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _maybeFetchRecipientEligibility() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp23) {
           if (0 === c3) {
             c5 = 3;
@@ -166,7 +166,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {

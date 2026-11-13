@@ -435,7 +435,7 @@ class ChannelSettingsOverview extends PureComponent {
             show2(obj9);
           }
           let c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       }
       if (null != user) {
@@ -538,7 +538,7 @@ class ChannelSettingsOverview extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -596,7 +596,7 @@ class ChannelSettingsOverview extends PureComponent {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp30) {
           closure_3 = tmp30;

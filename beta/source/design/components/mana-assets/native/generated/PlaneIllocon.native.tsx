@@ -1,27 +1,27 @@
-// Module ID: 20543
-// Function ID: 20544
+// Module ID: 20546
+// Function ID: 20547
 // Name: PlaneIllocon
-// Dependencies: [19, 21, 20544, 14325, 20545, 7168, 5874, 2]
+// Dependencies: [19, 21, 20547, 14325, 20548, 7168, 5874, 2]
 // Exports: PlaneIllocon
 
-// Module 20543 (PlaneIllocon)
+// Module 20546 (PlaneIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import react_native from "react-native" /* 7168 */;
 import _modDef14325 from "module_14325" /* 14325 */;
-import _modDef20544 from "module_20544" /* 20544 */;
-import _modDef20545 from "module_20545" /* 20545 */;
+import _modDef20547 from "module_20547" /* 20547 */;
+import _modDef20548 from "module_20548" /* 20548 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef20544 };
+let obj2 = { uri: _modDef20547 };
 obj[1] = obj2;
 obj[2] = { uri: _modDef14325 };
 ({ uri: _modDef14325 });
-obj[3] = { uri: _modDef20545 };
-({ uri: _modDef20545 });
+obj[3] = { uri: _modDef20548 };
+({ uri: _modDef20548 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/PlaneIllocon.native.tsx");
 

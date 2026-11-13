@@ -178,7 +178,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -245,7 +245,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
               const obj2 = closure_0(closure_2[36]);
               obj2.closeForwardModal();
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp42) {
             tmp43 = c6;
@@ -277,7 +277,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -334,7 +334,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
             closure_128_9(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp38) {
           closure_2 = tmp38;
           if (0 === c3) {

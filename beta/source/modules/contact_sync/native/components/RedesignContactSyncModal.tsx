@@ -132,7 +132,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -179,7 +179,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
               const _setTimeout = setTimeout;
               const timerId = setTimeout(() => closure_1_1(false), 2000);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -239,7 +239,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -275,7 +275,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
             const result = obj.closeContactSyncModal(obj7);
           }
           onComplete = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         onComplete = 3;
@@ -362,7 +362,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -396,7 +396,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => v1(false), 2000);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         c3 = 3;

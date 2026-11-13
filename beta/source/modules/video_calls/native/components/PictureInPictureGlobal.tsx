@@ -233,11 +233,11 @@ let closure_18 = react.memo(function PIPContent(channel) {
 let closure_19 = react.memo(function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f118421 = () => constants.TOP_RIGHT;
+  const f118439 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f118421);
+  [tmp2, tmp3] = react.useState(f118439);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_18, { channel }) };
-  _slicedToArray(react.useState(f118421), 2);
+  _slicedToArray(react.useState(f118439), 2);
   const tmp4 = PictureInPictureDefault;
   return closure_15(tmp4, obj);
 });

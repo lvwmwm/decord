@@ -31,7 +31,7 @@ let obj = function _performRoleSubscriptionUpsellRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -122,7 +122,7 @@ obj = function _performRoleSubscriptionTeamCreationRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -150,7 +150,7 @@ obj = function _performRoleSubscriptionTeamCreationRedirect() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -173,7 +173,7 @@ obj = function _performRoleSubscriptionEditPayoutRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -201,7 +201,7 @@ obj = function _performRoleSubscriptionEditPayoutRedirect() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c1 = 3;
@@ -228,7 +228,7 @@ obj = function _performDeveloperPortalRedirectWithTokenHandoff() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

@@ -49,7 +49,7 @@ let obj = function _handleConnectionOpen() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ let obj = function _handleConnectionOpen() {
               c22 = false;
               let c24 = null;
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c4 = 3;

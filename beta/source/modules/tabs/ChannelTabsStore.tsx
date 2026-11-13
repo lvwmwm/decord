@@ -14,7 +14,7 @@ import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
 import size from "module_2" /* 2 */;
 
-const f106363 = (id) => id.id === activeTabId;
+const f106379 = (id) => id.id === activeTabId;
 function handleChannelDelete(channel) {
   let found;
   channel = channel.channel;
@@ -361,7 +361,7 @@ let obj = {
   },
   CHANNEL_TABS_BACK: function handleTabHistoryBack() {
     let closure_7;
-    const found = tabs.find(f106363);
+    const found = tabs.find(f106379);
     flag = false;
     if (null != found) {
       const sum = found.index + -1;
@@ -387,7 +387,7 @@ let obj = {
   },
   CHANNEL_TABS_FORWARD: function handleTabHistoryForward() {
     let closure_7;
-    const found = tabs.find(f106363);
+    const found = tabs.find(f106379);
     flag = false;
     if (null != found) {
       const sum = found.index + 1;

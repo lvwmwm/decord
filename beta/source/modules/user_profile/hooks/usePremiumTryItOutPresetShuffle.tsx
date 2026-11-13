@@ -38,7 +38,7 @@ export default function usePremiumTryItOutPresetShuffle() {
     UserProfileActionCreators;
     obj4 = ProfilePendingImageUtils;
     themeColors = tryItOutPresetConfig.themeColors;
-    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "fileFinishedImporting" };
+    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "fileBytes" };
     setTryItOutPreset(obj2);
   }, items);
   const items1 = [callback];

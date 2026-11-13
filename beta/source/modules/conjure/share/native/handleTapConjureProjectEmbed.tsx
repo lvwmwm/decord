@@ -55,7 +55,7 @@ let obj = function _launchOrReport() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _launchOrReport() {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           if (0 === c5) {
@@ -128,7 +128,7 @@ obj = function _handleTapConjureProjectEmbed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ obj = function _handleTapConjureProjectEmbed() {
             _default(project, guildId, str, closure_0);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp32) {
           c6 = 3;
           throw tmp32;

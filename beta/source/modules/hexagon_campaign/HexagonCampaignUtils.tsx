@@ -28,11 +28,11 @@ const user = tmp(1398);
 ({ HEXAGON_CAMPAIGN_CLIENT_THEME_PRESET_IDS: c2, HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT: c3, HEXAGON_CAMPAIGN_END_AT_MS: closure_4, HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: hasOwnProperty, HEXAGON_CAMPAIGN_PERK_MINIMUM_PREMIUM_TYPE: metroRequire, HEXAGON_CAMPAIGN_PERK_TO_PERK: metroImportDefault, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: metroImportAll, HEXAGON_CAMPAIGN_QUEST_HOME_HERO_ID: c9, HexagonCampaignPerkAvailability: c10 } = HexagonCampaignConstants);
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignUtils.tsx");
 
-export function getHexagonCampaignPerkCutoffMs(item, stateFromStores) {
-  if (null != stateFromStores) {
+export function getHexagonCampaignPerkCutoffMs(item, premiumType) {
+  if (null != premiumType) {
     let tmp5;
     const obj = PremiumTypeUtils;
-    if (obj.isPremiumAtLeast(stateFromStores, metroRequire[item])) {
+    if (obj.isPremiumAtLeast(premiumType, metroRequire[item])) {
       tmp5 = metroImportAll;
     }
     return tmp5;

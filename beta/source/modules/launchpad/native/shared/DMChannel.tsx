@@ -1,9 +1,9 @@
-// Module ID: 19495
-// Function ID: 19496
+// Module ID: 19498
+// Function ID: 19499
 // Name: shared/DMChannel
-// Dependencies: [19, 6864, 21, 5917, 10953, 5170, 575, 19120, 18785, 17665, 11, 5798, 19487, 7076, 19119, 19488, 11203, 5848, 5808, 2]
+// Dependencies: [19, 6864, 21, 5917, 10953, 5170, 575, 19120, 18785, 17665, 11, 5798, 19490, 7076, 19119, 19491, 11203, 5848, 5808, 2]
 
-// Module 19495 (shared/DMChannel)
+// Module 19498 (shared/DMChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import transitionToChannel from "transitionToChannel" /* 5917 */;
@@ -56,7 +56,7 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
   const tmp5Result = channel(5798);
   const fontScale = tmp5Result.useFontScale();
   const items = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
-  const tmp2Result3 = flag(19487);
+  const tmp2Result3 = flag(19490);
   const obj3 = {
     onPress: react.useCallback(() => {
       const obj = transitionToChannel;

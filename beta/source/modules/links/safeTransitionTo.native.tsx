@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ let obj = function _safeTransitionTo() {
             obj2.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         if (null != c2) {
           if (null != c2.guildId) {

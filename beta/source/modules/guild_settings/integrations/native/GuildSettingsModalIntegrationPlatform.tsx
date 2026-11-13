@@ -1,10 +1,10 @@
-// Module ID: 20211
-// Function ID: 20212
+// Module ID: 20214
+// Function ID: 20215
 // Name: GuildSettingsModalIntegrationPlatform
-// Dependencies: [19, 17, 9188, 1072, 21, 5170, 575, 20172, 20142, 6661, 5874, 1411, 5177, 7159, 7071, 7462, 1113, 9187, 6123, 6194, 5756, 1499, 504, 5401, 7097, 7663, 7668, 2185, 8279, 6191, 5783, 5766, 2]
+// Dependencies: [19, 17, 9188, 1072, 21, 5170, 575, 20175, 20145, 6661, 5874, 1411, 5177, 7159, 7071, 7462, 1113, 9187, 6123, 6194, 5756, 1499, 504, 5401, 7097, 7663, 7668, 2185, 8279, 6191, 5783, 5766, 2]
 // Exports: default
 
-// Module 20211 (GuildSettingsModalIntegrationPlatform)
+// Module 20214 (GuildSettingsModalIntegrationPlatform)
 import nativeDefault from "native" /* 575 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
 import AlertDefault from "Alert" /* 6194 */;
@@ -13,7 +13,7 @@ import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7663 */;
 import openUserSettings from "openUserSettings" /* 7668 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
-import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 20172 */;
+import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 20175 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9188 */;
@@ -41,7 +41,7 @@ const shared = tmp(5177);
 const TableRow2 = tmp(7071);
 const TableRowGroup2 = tmp(7159);
 const TableSwitchRow2 = tmp(7462);
-const IntegrationTypes = tmp(20142);
+const IntegrationTypes = tmp(20145);
 ({ ActivityIndicator: c3, View: closure_4 } = react_native);
 ({ GuildSettingsSections: metroRequire, HelpdeskArticles: metroImportDefault, PlatformTypes: metroImportAll, UserSettingsSections: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);

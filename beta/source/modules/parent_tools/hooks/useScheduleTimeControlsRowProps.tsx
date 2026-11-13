@@ -21,7 +21,7 @@ export default function useScheduleTimeControlsRowProps(arr) {
   let obj5;
   let tmp10;
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "flexDirection" };
+    const obj2 = { subLabel: null, trailing: "r" };
     ({ variant: "body-xs/medium", color: "text-muted", children: intl.string(_modDef2664.fOBIZH) });
     const Text = Text_Text.Text;
     intl = intl4.intl;

@@ -72,7 +72,7 @@ let PRF = function _pbkdf2Async() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c10;
@@ -128,7 +128,7 @@ let PRF = function _pbkdf2Async() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -180,7 +180,7 @@ let PRF = function _pbkdf2Async() {
                     return obj;
                   } else {
                     _undefined = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp4) {
                   _undefined = 3;

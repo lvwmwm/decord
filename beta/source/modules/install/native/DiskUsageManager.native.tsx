@@ -41,7 +41,7 @@ let obj = function _measureAndReportInstallSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -147,7 +147,7 @@ let obj = function _measureAndReportInstallSize() {
             obj3.endBackgroundTask(caches_directory_bytes);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp55) {
         closure_3 = tmp55;
@@ -199,7 +199,7 @@ class DiskUsageManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

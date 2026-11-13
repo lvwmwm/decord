@@ -67,7 +67,7 @@ let obj = function _handleDocumentSelection() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ let obj = function _handleDocumentSelection() {
             if (obj4.isErrorWithCode(code)) {
               if (code.code === closure_130_0(closure_130_2[2]).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
             const _JSON = JSON;
@@ -160,7 +160,7 @@ let obj = function _handleDocumentSelection() {
             intl4 = closure_130_0(closure_130_2[5]).intl;
             show2(obj12);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;

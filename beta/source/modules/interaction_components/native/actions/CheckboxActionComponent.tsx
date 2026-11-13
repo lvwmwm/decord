@@ -1,9 +1,9 @@
-// Module ID: 19943
-// Function ID: 19944
+// Module ID: 19946
+// Function ID: 19947
 // Name: CheckboxActionComponent
 // Dependencies: [19, 21, 8800, 38, 2116, 14885, 2]
 
-// Module 19943 (CheckboxActionComponent)
+// Module 19946 (CheckboxActionComponent)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 2116 */;

@@ -101,7 +101,7 @@ obj = function _updateVerificationForm() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ obj = function _updateVerificationForm() {
             const obj5 = closure_133_1(closure_133_2[8]);
             obj5.dispatch(obj7);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c7 = 3;
@@ -169,7 +169,7 @@ obj = function _updateVerificationFormDescription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -209,7 +209,7 @@ obj = function _updateVerificationFormDescription() {
             const obj5 = closure_131_1(closure_131_2[8]);
             obj5.dispatch(obj7);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c5 = 3;
@@ -237,7 +237,7 @@ obj = function _enableVerificationForm() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -268,7 +268,7 @@ obj = function _enableVerificationForm() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp4) {
           c2 = 3;
@@ -304,7 +304,7 @@ obj = function _submitVerificationForm() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -342,7 +342,7 @@ obj = function _submitVerificationForm() {
               const obj11 = closure_133_0(closure_133_2[10]);
               const result = obj11.updateImpersonatedData(guildId, obj6);
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c7 = 1;
               const HTTP = closure_133_0(closure_133_2[6]).HTTP;

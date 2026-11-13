@@ -16,7 +16,7 @@ const obj = {
   registerDismiss() {
     return NOOP;
   },
-  handleDismissCoachmarkOnScroll: "flexDirection"
+  handleDismissCoachmarkOnScroll: "r"
 };
 const redux = react.createContext(obj);
 const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");

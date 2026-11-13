@@ -225,7 +225,7 @@ let obj = {
     let badges;
     let closure_129_0;
     let userId;
-    const f94854 = (badge_id) => {
+    const f94870 = (badge_id) => {
       const acks = _undefined.acks;
       const value = acks.get(badge_id.badge_id);
       let value2 = null;
@@ -260,10 +260,10 @@ let obj = {
       map1 = new Map();
     }
     c1 = peekResult;
-    peekResult.badges = new Map(badges.map(f94854));
+    peekResult.badges = new Map(badges.map(f94870));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f94854));
+    new Map(badges.map(f94870));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },

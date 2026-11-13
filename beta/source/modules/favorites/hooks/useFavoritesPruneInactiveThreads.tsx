@@ -44,7 +44,7 @@ export default function useFavoritesPruneInactiveThreads() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -69,7 +69,7 @@ export default function useFavoritesPruneInactiveThreads() {
             } else if (1 === tmp3) {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else if (arg0 === 1) {
               c0 = 3;
               throw value;
@@ -81,7 +81,7 @@ export default function useFavoritesPruneInactiveThreads() {
             } else {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp6) {
             if (0 === c2) {

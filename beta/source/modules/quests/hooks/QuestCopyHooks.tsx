@@ -961,7 +961,7 @@ export function useModalCtaConfig(quest) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1002,7 +1002,7 @@ export function useModalCtaConfig(quest) {
             }
             openGameLinkDirectly(tmp18, obj5);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c2 = 3;

@@ -47,7 +47,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -111,7 +111,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
           c3 = 0;
           onUploadDebugLogsRequestFinish();
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp26) {
         closure_2 = tmp26;

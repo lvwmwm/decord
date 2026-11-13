@@ -29,7 +29,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -70,7 +70,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         } else if (1 === c5) {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -98,7 +98,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
           }
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp17) {
         if (0 === c4) {
           c6 = 3;

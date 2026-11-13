@@ -1,9 +1,9 @@
-// Module ID: 19915
-// Function ID: 19916
+// Module ID: 19918
+// Function ID: 19919
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 5075, 502, 5019, 5082, 5041, 5203, 7495, 8443, 5088, 7383, 1403, 6831, 19916, 2118, 7496, 1092, 14099, 7494, 7497, 2]
+// Dependencies: [32, 5, 5075, 502, 5019, 5082, 5041, 5203, 7495, 8443, 5088, 7383, 1403, 6831, 19919, 2118, 7496, 1092, 14099, 7494, 7497, 2]
 
-// Module 19915 (GuildOnboardingHomeManager)
+// Module 19918 (GuildOnboardingHomeManager)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -105,7 +105,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
             if (0 !== num) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;
               const obj = { initialPercent: (num - 1) / num, numActions: num };
-              const tmp11 = asyncRequire(19916, tmp2.paths);
+              const tmp11 = asyncRequire(19919, tmp2.paths);
               const obj2 = { animation: ConstantsIOS.ModalAnimation.FADE };
               const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(7496).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
               pushLazy(tmp11, obj, NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj2);
@@ -242,7 +242,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -296,7 +296,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
               const result = obj.completeNewMemberAction(closure_0, closure_1);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp30) {
           c5 = 3;
@@ -322,7 +322,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -402,7 +402,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -478,7 +478,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

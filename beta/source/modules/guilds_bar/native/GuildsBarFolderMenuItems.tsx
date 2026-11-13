@@ -36,7 +36,7 @@ export function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ export function getGuildFolderMenuItems(id) {
               value.default(guildFolderById.guildIds, constants.GUILD_LIST);
             }
             guildFolderById = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp13) {
             guildFolderById = 3;
             throw tmp13;
@@ -98,7 +98,7 @@ export function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ export function getGuildFolderMenuItems(id) {
             } else {
               const result = value.showGuildsBarFolderModal(closure_128_0);
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp9) {
             c2 = 3;

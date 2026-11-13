@@ -15,8 +15,8 @@ import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
-const f114929 = () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length;
-const f114930 = () => Object.keys(clientOverrides.getClientOverrides()).length;
+const f114947 = () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length;
+const f114948 = () => Object.keys(clientOverrides.getClientOverrides()).length;
 const jsx = Fragment.jsx;
 let obj = {
   useTitle() {
@@ -27,10 +27,10 @@ let obj = {
   useDescription: function useExperimentOverrideActiveDescription() {
     const items = [ExperimentStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f114929);
+    const stateFromStores = obj.useStateFromStores(items, f114947);
     const items1 = [ApexExperimentStore];
     const obj2 = get_initialized;
-    const str = stateFromStores + obj2.useStateFromStores(items1, f114930);
+    const str = stateFromStores + obj2.useStateFromStores(items1, f114948);
     const DevToolsContentSubLabel = DevToolsContent.DevToolsContentSubLabel;
     return <DevToolsContentSubLabel label="Experiments overridden: " value={str.toString()} />;
   },
@@ -41,10 +41,10 @@ let obj = {
     const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
     const items = [ExperimentStore];
     const obj2 = get_initialized;
-    const stateFromStores = obj2.useStateFromStores(items, f114929);
+    const stateFromStores = obj2.useStateFromStores(items, f114947);
     const items1 = [ApexExperimentStore];
     const obj3 = get_initialized;
-    const tmp3 = stateFromStores + obj3.useStateFromStores(items1, f114930) > 0 && staffOrDeveloperSettingPredicate;
+    const tmp3 = stateFromStores + obj3.useStateFromStores(items1, f114948) > 0 && staffOrDeveloperSettingPredicate;
     return tmp3;
   },
   onPress: function handleExperimentOverrideActivePress() {

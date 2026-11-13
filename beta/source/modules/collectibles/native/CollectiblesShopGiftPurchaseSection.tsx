@@ -221,7 +221,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -258,7 +258,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
               closure_128_9();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c2 = 3;

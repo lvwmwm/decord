@@ -39,7 +39,7 @@ export default function useRestorePurchases() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -95,7 +95,7 @@ export default function useRestorePurchases() {
             closure_129_2(false);
             logger.log("isRestoring false");
             logger = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp39) {
           closure_2 = tmp39;

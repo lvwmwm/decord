@@ -1,10 +1,10 @@
-// Module ID: 20180
-// Function ID: 20181
+// Module ID: 20183
+// Function ID: 20184
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 20174, 1072, 1388, 21, 5170, 575, 9133, 10210, 1252, 1113, 1266, 8323, 5790, 5783, 504, 2]
+// Dependencies: [5, 32, 19, 17, 20177, 1072, 1388, 21, 5170, 575, 9133, 10210, 1252, 1113, 1266, 8323, 5790, 5783, 504, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 20180 (HeaderRow)
+// Module 20183 (HeaderRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 20174 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 20177 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -81,7 +81,7 @@ function HeaderRow(guild) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -205,7 +205,7 @@ function HeaderRow(guild) {
             c5 = 0;
             closure_132_4(false);
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp28) {
           upload_id = tmp28;

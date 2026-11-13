@@ -152,7 +152,7 @@ let obj = function _applyTransactionFromListener() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -205,10 +205,10 @@ let obj = function _applyTransactionFromListener() {
                           const GiftACOMOrderExperiment = ACOMExperiments.GiftACOMOrderExperiment;
                           const enabled = GiftACOMOrderExperiment.getConfig({ location: "IAPTransactionListener" }).enabled;
                           c6 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         } else if (!tmp55) {
                           c6 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                         const IAPTransactionApplyExperiment = ACOMExperiments.IAPTransactionApplyExperiment;
                         if (IAPTransactionApplyExperiment.getConfig({ location: "IAPTransactionListener" }).enabled) {
@@ -251,7 +251,7 @@ let obj = function _applyTransactionFromListener() {
         } else if (1 === c5) {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else if (2 === c5) {
           c4 = 0;
           const obj14 = closure_130_1(closure_130_3[21]);
@@ -329,7 +329,7 @@ let obj = function _applyTransactionFromListener() {
           dispatch({ type: "IAP_RESTORE_PURCHASES_END" });
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp69) {
         closure_3 = tmp69;
         if (0 === c4) {
@@ -548,7 +548,7 @@ obj = function _clearAndMakeIAPRequest() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -617,7 +617,7 @@ obj = function _makeTrackedIAPRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -865,7 +865,7 @@ obj = function _updateAppleSubscription() {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -917,7 +917,7 @@ obj = function _updateAppleSubscription() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp4) {
           c1 = 3;
@@ -979,7 +979,7 @@ obj = function _cancelGenericSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1100,7 +1100,7 @@ obj = function _createGenericSubscription() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let orderId;
@@ -1328,7 +1328,7 @@ obj = function _modifyGenericSubscription() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let v0;
@@ -1658,7 +1658,7 @@ obj = function _resubscribeGenericSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp74;
@@ -1868,7 +1868,7 @@ obj = function _retryPendingPurchases() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -2044,7 +2044,7 @@ obj = function _mobilePurchaseSKU() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let giftInfoOptions;
@@ -2463,7 +2463,7 @@ obj = function _migrateToACOM() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -2578,7 +2578,7 @@ obj = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -2655,7 +2655,7 @@ obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           if (null != _undefined) {
             const obj6 = _undefined(closure_3[24]);
@@ -2704,7 +2704,7 @@ obj = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -2782,7 +2782,7 @@ obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -2879,7 +2879,7 @@ obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp42) {
           closure_3 = tmp42;
@@ -2918,7 +2918,7 @@ obj = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let application_id;
@@ -2996,7 +2996,7 @@ obj = {
                   }
                 }
                 v3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
               break;
             }
@@ -3350,7 +3350,7 @@ obj = {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c8;
@@ -3487,7 +3487,7 @@ obj = {
                           let obj4 = { value, done: true };
                           return obj4;
                         } else {
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       } else {
                         try {
@@ -3597,7 +3597,7 @@ obj = {
                               c5 = 0;
                             }
                             c7 = 3;
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                         } catch (tmp30) {
                           closure_4 = tmp30;

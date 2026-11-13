@@ -1,9 +1,9 @@
-// Module ID: 20470
-// Function ID: 20471
+// Module ID: 20473
+// Function ID: 20474
 // Name: InappropriateConversationsManager
 // Dependencies: [11192, 6020, 7383, 2]
 
-// Module 20470 (InappropriateConversationsManager)
+// Module 20473 (InappropriateConversationsManager)
 import clampDefault from "clamp" /* 6020 */;
 import SoundUtils from "SoundUtils" /* 11192 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;

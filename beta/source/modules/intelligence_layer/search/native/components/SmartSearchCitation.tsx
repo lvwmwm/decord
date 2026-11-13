@@ -45,7 +45,7 @@ export function SmartSearchCitation(smartSearchQuery) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -89,7 +89,7 @@ export function SmartSearchCitation(smartSearchQuery) {
         }
         closure_128_4(closure_128_1.channelId, closure_128_1.messageId);
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp12) {
         if (0 === index) {
           c3 = 3;

@@ -27,7 +27,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f102899 = (item) => {
+const f102915 = (item) => {
   const obj = { key: "channel:" + item, kind: "channel", label: "#" + item };
   return obj;
 };
@@ -164,13 +164,13 @@ export function useConjureRemoveTarget(projectId) {
 }
 export function conjureRemoveAppItems(target) {
   const channelNames = target.channelNames;
-  return channelNames.map(f102899);
+  return channelNames.map(f102915);
 }
 export function conjureDeleteProjectItems(target) {
   let obj = { key: "project", kind: "project", label: target.projectName };
   const items = [obj];
   const channelNames = target.channelNames;
-  const items1 = [...channelNames.map(f102899)];
+  const items1 = [...channelNames.map(f102915)];
   items.push.apply(items1);
   const previewAppName = target.previewAppName;
   let tmp2 = null;

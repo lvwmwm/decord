@@ -202,7 +202,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           if (0 === c3) {

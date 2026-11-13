@@ -465,7 +465,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -555,7 +555,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
             }
             track(ACTIVITY_SESSION_JOIN_FAILED, obj9);
             is_activity_start = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp32) {
           is_activity_start = 3;

@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let closure_7, dependencyMap, set, widgetsByTypeAndLayout;
 
 function syncProjects() {
-  const f110746 = (item, index) => item === closure_0[index];
+  const f110762 = (item, index) => item === closure_0[index];
   function getLayoutApplicationIds() {
     set = new Set();
     widgetsByTypeAndLayout = widgetsByTypeAndLayout.getWidgetsByTypeAndLayout(constants.CONJURE, OVERLAY_V3_LAYOUT_ID);
@@ -32,7 +32,7 @@ function syncProjects() {
   const ownedProjects = ConjureProjectStore.getOwnedProjects();
   found = ownedProjects.filter(set(15914).isConjureOverlayApp);
   let closure_0 = found;
-  const tmp = found.length === found.length && found.every(f110746);
+  const tmp = found.length === found.length && found.every(f110762);
   if (!tmp) {
     if (0 === found.length) {
       found = items;
@@ -49,7 +49,7 @@ function syncProjects() {
     })
   ];
   closure_0 = items;
-  let tmp3 = items.length === items.length && items.every(f110746);
+  let tmp3 = items.length === items.length && items.every(f110762);
 }
 function handleLayoutChange() {
   syncProjects();

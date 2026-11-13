@@ -67,7 +67,7 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -102,7 +102,7 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
                 closure_1_7(closure_0);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp19) {
             c4 = 3;

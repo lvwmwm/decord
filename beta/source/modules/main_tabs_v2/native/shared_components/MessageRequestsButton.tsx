@@ -22,17 +22,17 @@ const IconActionButtonDefault = IconActionButton;
 
 let metroImportAll;
 let metroImportDefault;
-const f115623 = () => messageRequestsCount.getMessageRequestsCount();
-const f115624 = () => spamChannelsCount.getSpamChannelsCount();
+const f115641 = () => messageRequestsCount.getMessageRequestsCount();
+const f115642 = () => spamChannelsCount.getSpamChannelsCount();
 function MessageRequestAnimation(color) {
   color = color.color;
   const ref = react.useRef(null);
   const items = [MessageRequestStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f115623);
+  const stateFromStores = obj.useStateFromStores(items, f115641);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
-  const stateFromStores1 = obj2.useStateFromStores(items1, f115624);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f115642);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (stateFromStores > 0) {
@@ -67,11 +67,11 @@ export default function MessageRequestsButton(alternateVariant) {
   const items = [MessageRequestStore];
   const tmp2 = closure_9();
   const obj = get_initialized;
-  const str = obj.useStateFromStores(items, f115623);
+  const str = obj.useStateFromStores(items, f115641);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
   if (0 === str) {
-    if (0 === obj2.useStateFromStores(items1, f115624)) {
+    if (0 === obj2.useStateFromStores(items1, f115642)) {
       return null;
     }
   }

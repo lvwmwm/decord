@@ -30,7 +30,7 @@ let obj = function _fetchGameAutocomplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _fetchGameAutocomplete() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp28) {
           closure_6 = tmp28;
           if (0 === c7) {

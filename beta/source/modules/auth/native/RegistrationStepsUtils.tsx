@@ -68,7 +68,7 @@ let obj = function _handleNextOrSubmitRegistration() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _handleNextOrSubmitRegistration() {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp11) {
         c3 = 3;
         throw tmp11;
@@ -136,7 +136,7 @@ obj = function _handleRegistrationSubmit() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -195,7 +195,7 @@ obj = function _handleRegistrationSubmit() {
               }
             } else {
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c8 = 3;
@@ -213,7 +213,7 @@ obj = function _handleRegistrationSubmit() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp46) {
         closure_5 = tmp46;

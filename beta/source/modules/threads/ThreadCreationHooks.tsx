@@ -174,7 +174,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -587,7 +587,7 @@ export function useCreateThreadCommon(parentChannel) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ export function useCreateThreadCommon(parentChannel) {
             obj = parentMessageId(threadSettings[20]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp41) {
           c7 = 3;
@@ -772,7 +772,7 @@ export function useCreateForumPostCommon(parentChannel) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp90;

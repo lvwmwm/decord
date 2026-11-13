@@ -245,7 +245,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -304,7 +304,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -334,7 +334,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -393,7 +393,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -423,7 +423,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -464,7 +464,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp10) {
             if (0 === c3) {
@@ -495,7 +495,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -536,7 +536,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp10) {
             if (0 === c3) {

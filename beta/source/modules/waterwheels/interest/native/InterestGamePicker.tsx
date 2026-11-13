@@ -275,8 +275,8 @@ export default function InterestGamePicker(catalog) {
   let tmp66;
   let tmp67;
   let tmp9;
-  const f116488 = (item, index) => item !== first2[index];
-  const f116503 = (game, index) => {
+  const f116506 = (item, index) => item !== first2[index];
+  const f116521 = (game, index) => {
     const hasItem = first.includes(game.id);
     const tmp2 = !hasItem && memo6.length >= authStore3;
     const obj = { row: Math.floor(index / authStore2) + 1, onRowLayout: onRowLayout.onRowLayout, game, width, selected: hasItem, unavailable: tmp2, reduceMotion: stateFromStores, styles, radius, onPress };
@@ -548,8 +548,8 @@ export default function InterestGamePicker(catalog) {
   let tmp53 = memo5.length > 0;
   const tmp52 = tmp5Result[1];
   if (tmp53) {
-    tmp53 = memo5.length !== first2.length || memo5.some(f116488);
-    memo5.length !== first2.length || memo5.some(f116488);
+    tmp53 = memo5.length !== first2.length || memo5.some(f116506);
+    memo5.length !== first2.length || memo5.some(f116506);
   }
   if (tmp53) {
     tmp52(memo5);
@@ -908,12 +908,12 @@ export default function InterestGamePicker(catalog) {
   items32[2] = tmp77Result2;
   let tmp79Result5 = !tmp46 && arr17.length > 0;
   if (tmp79Result5) {
-    const obj30 = { style: items35, children: roundToNearestPixel2Result > 0 && arr17.map(f116503) };
+    const obj30 = { style: items35, children: roundToNearestPixel2Result > 0 && arr17.map(f116521) };
     items35 = [tmp7.grid, ];
     const obj31 = { columnGap: sum };
     items35[1] = obj31;
     let str2 = "browse";
-    roundToNearestPixel2Result > 0 && arr17.map(f116503);
+    roundToNearestPixel2Result > 0 && arr17.map(f116521);
     if (tmp37) {
       str2 = "search";
     }

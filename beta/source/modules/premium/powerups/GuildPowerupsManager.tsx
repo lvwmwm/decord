@@ -1,9 +1,9 @@
-// Module ID: 19918
-// Function ID: 19919
+// Module ID: 19921
+// Function ID: 19922
 // Name: GuildPowerupsManager
 // Dependencies: [5041, 5102, 5203, 5377, 7383, 5044, 5396, 5383, 5395, 14358, 18593, 6116, 5382, 14335, 8569, 2]
 
-// Module 19918 (GuildPowerupsManager)
+// Module 19921 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 5044 */;
 import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5382 */;
 import ServerThemeExperiment2 from "ServerThemeExperiment" /* 5383 */;

@@ -132,7 +132,7 @@ export default function ActivityShareLinkModal(applicationId) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -185,7 +185,7 @@ export default function ActivityShareLinkModal(applicationId) {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -220,7 +220,7 @@ export default function ActivityShareLinkModal(applicationId) {
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -242,7 +242,7 @@ export default function ActivityShareLinkModal(applicationId) {
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

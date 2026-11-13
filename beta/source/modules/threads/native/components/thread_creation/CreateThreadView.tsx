@@ -140,7 +140,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
                   ref.current = false;
                   c5 = 0;
                   c7 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
                 v1 = 2;
                 c7 = 1;
@@ -229,7 +229,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
             ref.current = false;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp59) {
           if (0 === c5) {
             c7 = 3;

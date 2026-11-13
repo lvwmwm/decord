@@ -142,7 +142,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -262,7 +262,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
               obj.deletePendingReply(closure_0);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         }
       } catch (tmp46) {
@@ -359,7 +359,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -397,7 +397,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
               const result = obj.emitVoiceMessageRecorded(cancel(handleActionSheetChange[21]).VoiceMessageRecordingResult.CANCELLED_GESTURE_CONFLICT, tmp4.data.durationSecs, tmp4.startTimeMillis);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp20) {
             c3 = 3;
             throw tmp20;
@@ -476,7 +476,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -570,7 +570,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp51) {
           closure_2 = tmp51;
           if (0 === c3) {
@@ -644,7 +644,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -681,7 +681,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
           const result = closure_128_2.set(items);
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp12) {
         c2 = 3;
         throw tmp12;

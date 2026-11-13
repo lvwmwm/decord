@@ -607,7 +607,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -656,7 +656,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
                   quest(QUEST_HOME_MOBILE[49])(obj);
                 }
                 questContent = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
               const tmp6 = isMobileActivityQuest;
               if (tmp6) {
@@ -852,7 +852,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -882,7 +882,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c0 = 3;

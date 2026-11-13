@@ -40,7 +40,7 @@ let obj = function _emailSupport() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -74,7 +74,7 @@ let obj = function _emailSupport() {
         } else {
           openURL(value);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp10) {
         c3 = 3;

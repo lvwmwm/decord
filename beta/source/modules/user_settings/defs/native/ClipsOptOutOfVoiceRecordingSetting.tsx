@@ -26,7 +26,7 @@ let obj = function _updateClipsAllowVoiceRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -58,7 +58,7 @@ let obj = function _updateClipsAllowVoiceRecording() {
           obj = closure_129_1(closure_129_2[3]);
           obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         c3 = 3;

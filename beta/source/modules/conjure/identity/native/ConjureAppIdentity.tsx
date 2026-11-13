@@ -67,7 +67,7 @@ let value = function _pickConjureAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -203,7 +203,7 @@ class ConjureAppIconTile {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c2;
@@ -229,7 +229,7 @@ class ConjureAppIconTile {
           } else if (1 === c3) {
             c2 = 0;
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -250,7 +250,7 @@ class ConjureAppIconTile {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           if (0 === c2) {

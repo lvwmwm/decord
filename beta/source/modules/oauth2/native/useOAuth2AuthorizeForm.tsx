@@ -456,7 +456,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c3;
@@ -530,7 +530,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               c3 = 0;
               closure_1_48.current = false;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp42) {
             body = tmp42;
@@ -819,7 +819,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -909,7 +909,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           closure_130_56.current = false;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp57) {
         body = tmp57;
         if (0 === c4) {

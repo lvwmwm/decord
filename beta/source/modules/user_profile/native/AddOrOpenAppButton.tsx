@@ -96,7 +96,7 @@ function OpenAppButton(profileApplication) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -179,7 +179,7 @@ function OpenAppButton(profileApplication) {
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         tmp = application1;
         closure_130_3(false);

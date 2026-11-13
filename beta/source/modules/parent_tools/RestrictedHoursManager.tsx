@@ -1,16 +1,16 @@
-// Module ID: 20550
-// Function ID: 20551
+// Module ID: 20553
+// Function ID: 20554
 // Name: RestrictedHoursManager
-// Dependencies: [11173, 1385, 7824, 1113, 2664, 1409, 11175, 572, 19817, 7383, 2]
+// Dependencies: [11173, 1385, 7824, 1113, 2664, 1409, 11175, 572, 19820, 7383, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 20550 (RestrictedHoursManager)
+// Module 20553 (RestrictedHoursManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import FamilyCenterModels from "FamilyCenterModels" /* 1409 */;
 import _modDef2664 from "module_2664" /* 2664 */;
 import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11175 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19817 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19820 */;
 import NotificationSettingsStore from "NotificationSettingsStore" /* 11173 */;
 import UserStore from "UserStore" /* 1385 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;

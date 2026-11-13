@@ -104,7 +104,7 @@ obj = function _fetchGuildEntriesForIds() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ obj = function _fetchGuildEntriesForIds() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp13) {
           closure_4 = tmp13;
@@ -182,7 +182,7 @@ _asyncToGenerator(async (channelId, category_id) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -230,7 +230,7 @@ _asyncToGenerator(async (channelId, category_id) => {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         closure_4 = tmp17;
@@ -262,7 +262,7 @@ _asyncToGenerator(async (channelId) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -304,7 +304,7 @@ _asyncToGenerator(async (channelId) => {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         closure_3 = tmp17;
@@ -338,7 +338,7 @@ let closure_0 = _asyncToGenerator(async (channelId, query) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -391,7 +391,7 @@ let closure_0 = _asyncToGenerator(async (channelId, query) => {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp27) {
         if (0 === c5) {
           c7 = 3;

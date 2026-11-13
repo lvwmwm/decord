@@ -1,18 +1,18 @@
-// Module ID: 20330
-// Function ID: 20331
+// Module ID: 20333
+// Function ID: 20334
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 5170, 575, 5783, 1113, 20331, 1187, 20335, 20339, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5783, 1113, 20334, 1187, 20338, 20342, 2]
 // Exports: default
 
-// Module 20330 (HowItWorksSection)
+// Module 20333 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 20331 */;
-import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 20335 */;
-import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 20339 */;
+import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 20334 */;
+import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 20338 */;
+import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 20342 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;

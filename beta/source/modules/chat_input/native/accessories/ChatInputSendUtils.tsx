@@ -315,7 +315,7 @@ let obj = function _chatInputSendApplicationCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -399,7 +399,7 @@ let obj = function _chatInputSendApplicationCommand() {
               return obj13;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp36) {
           c4 = 3;
@@ -447,7 +447,7 @@ export function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "add", source: "c", params };
+                          obj = { text: require, parsedMessage, tts: "add", source: "r", params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,7 +470,7 @@ export function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "add", source: 1090584578, params };
+                          obj = { text: require, parsedMessage, tts: "add", source: true, params };
                           chatInputSendMessage(obj);
                         }
             };
@@ -478,7 +478,7 @@ export function chatInputHandleSendText(text) {
             obj5.openLazy(tmp20(2118)(14025, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "add", source: 1895890945, params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "add", source: true, params };
         chatInputSendMessage(obj6);
       }
     }

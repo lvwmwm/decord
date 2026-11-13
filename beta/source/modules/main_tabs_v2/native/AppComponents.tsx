@@ -1,9 +1,9 @@
-// Module ID: 19503
-// Function ID: 19504
+// Module ID: 19506
+// Function ID: 19507
 // Name: AppComponents
-// Dependencies: [21, 12596, 1377, 5346, 18986, 19408, 5361, 19427, 11170, 16200, 6128, 19504, 5180, 19512, 19522, 19531, 19559, 19568, 19786, 2]
+// Dependencies: [21, 12596, 1377, 5346, 18986, 19408, 5361, 19427, 11170, 16200, 6128, 19507, 5180, 19515, 19525, 19534, 19562, 19571, 19789, 2]
 
-// Module 19503 (AppComponents)
+// Module 19506 (AppComponents)
 import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 5180 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
 import PortalKeyboard from "PortalKeyboard" /* 5361 */;
@@ -13,13 +13,13 @@ import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12596 */;
 import ContextMenuContainer from "ContextMenuContainer" /* 16200 */;
 import MainShared from "MainShared" /* 19408 */;
 import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 19427 */;
-import FramePoolDefault from "FramePool" /* 19504 */;
-import ExternalPipViewDefault from "ExternalPipView" /* 19512 */;
-import ConjureAppPictureInPicturesDefault from "ConjureAppPictureInPictures" /* 19522 */;
-import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 19531 */;
-import FramePanelContainerDefault from "FramePanelContainer" /* 19559 */;
-import VoicePanelContainerDefault from "VoicePanelContainer" /* 19568 */;
-import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 19786 */;
+import FramePoolDefault from "FramePool" /* 19507 */;
+import ExternalPipViewDefault from "ExternalPipView" /* 19515 */;
+import ConjureAppPictureInPicturesDefault from "ConjureAppPictureInPictures" /* 19525 */;
+import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 19534 */;
+import FramePanelContainerDefault from "FramePanelContainer" /* 19562 */;
+import VoicePanelContainerDefault from "VoicePanelContainer" /* 19571 */;
+import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 19789 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import AppFreezer_mod from "AppFreezer" /* 18986 */;

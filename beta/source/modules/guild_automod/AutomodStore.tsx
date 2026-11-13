@@ -1,14 +1,14 @@
-// Module ID: 20115
-// Function ID: 20116
+// Module ID: 20118
+// Function ID: 20119
 // Name: AutomodStore
-// Dependencies: [32, 5, 19, 13557, 1072, 1254, 20116, 1259, 13562, 6611, 5085, 2]
+// Dependencies: [32, 5, 19, 13557, 1072, 1254, 20119, 1259, 13562, 6611, 5085, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRules, useSyncAutomodRulesEffect
 
-// Module 20115 (AutomodStore)
+// Module 20118 (AutomodStore)
 import Constants from "Constants" /* 1072 */;
 import _slicedToArray2 from "_slicedToArray" /* 5085 */;
 import Constants2 from "Constants" /* 13557 */;
-import SystemRulesUtils from "SystemRulesUtils" /* 20116 */;
+import SystemRulesUtils from "SystemRulesUtils" /* 20119 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c0, c1, c6, c7, closure_5;
 
-const f120333 = (arg0) => {
+const f120368 = (arg0) => {
   const items = [, ];
   ({ syncRules: arr[0], fetching: arr[1] } = arg0);
   return items;
@@ -133,7 +133,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -209,7 +209,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
           c4 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp27) {
         closure_5 = tmp27;
         if (0 === c4) {
@@ -242,7 +242,7 @@ export function useSyncAutomodRules(arg0) {
   let first;
   let closure_0 = arg0;
   [first, closure_1] = react.useState(false);
-  const tmp3 = _slicedToArray(withEqualityFn(f120333, _slicedToArray2.shallow), 2);
+  const tmp3 = _slicedToArray(withEqualityFn(f120368, _slicedToArray2.shallow), 2);
   const first1 = tmp3[0];
   let closure_3 = tmp5;
   const items = [first, ];
@@ -258,7 +258,7 @@ export function useSyncAutomodRules(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -304,7 +304,7 @@ export function useSyncAutomodRules(arg0) {
           closure_128_1(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp21) {
         closure_2 = tmp21;
         if (0 === c3) {
@@ -327,7 +327,7 @@ export function useSyncAutomodRulesEffect(arg0) {
   let tmp8;
   _require = arg0;
   [first, closure_1] = react.useState(false);
-  [first1, tmp5] = withEqualityFn(f120333, require("_slicedToArray").shallow);
+  [first1, tmp5] = withEqualityFn(f120368, require("_slicedToArray").shallow);
   let closure_3 = tmp5;
   let items = [first, ];
   const items1 = [arg0, tmp5, first1];
@@ -342,7 +342,7 @@ export function useSyncAutomodRulesEffect(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -388,7 +388,7 @@ export function useSyncAutomodRulesEffect(arg0) {
           closure_128_1(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp21) {
         closure_2 = tmp21;
         if (0 === c3) {
@@ -415,7 +415,7 @@ export function useSyncAutomodRulesEffect(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -443,7 +443,7 @@ export function useSyncAutomodRulesEffect(arg0) {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c0 = 3;

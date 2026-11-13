@@ -12,7 +12,7 @@ function noop() {
 
 export default function createWalker(node) {
   let obj6;
-  const f105050 = (arg0, arg1, fn, arg3) => {
+  const f105066 = (arg0, arg1, fn, arg3) => {
     let tmp;
     if (closure_3) {
       tmp = arg1[context2];
@@ -134,7 +134,7 @@ export default function createWalker(node) {
         let closure_1 = fields.slice();
         let context = tmp14.context;
         closure_3 = typeof context === "string";
-        obj4[first] = f105050;
+        obj4[first] = f105066;
         let tmp15 = obj[first];
         let c0 = true;
         let fields1 = tmp15.fields;
@@ -142,7 +142,7 @@ export default function createWalker(node) {
         let context2 = tmp15.context;
         closure_3 = typeof context2 === "string";
         let reversed = substr.reverse();
-        obj5[first] = f105050;
+        obj5[first] = f105066;
         continue;
       }
       continue;
@@ -155,7 +155,7 @@ export default function createWalker(node) {
     let obj3;
     let tmp7;
     let tmp8;
-    const f105049 = function(type, arg1, arg2) {
+    const f105065 = function(type, arg1, arg2) {
       if (type.type === visit) {
         const self = this;
         leave.call(self, type, arg1, arg2);
@@ -277,9 +277,9 @@ export default function createWalker(node) {
               throw error;
             }
           }
-          fn = f105049;
+          fn = f105065;
           const visit = enter.visit;
-          fn2 = f105049;
+          fn2 = f105065;
           obj2 = tmp5;
           obj3 = fn2;
           obj4 = fn;

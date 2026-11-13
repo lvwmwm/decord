@@ -1,15 +1,15 @@
-// Module ID: 19764
-// Function ID: 19765
+// Module ID: 19767
+// Function ID: 19768
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 5170, 575, 19748, 19735, 19749, 7056, 11587, 15779, 2]
+// Dependencies: [19, 21, 5170, 575, 19751, 19738, 19752, 7056, 11587, 15779, 2]
 // Exports: default
 
-// Module 19764 (VoicePanelDrawerToggleButton)
+// Module 19767 (VoicePanelDrawerToggleButton)
 import nativeDefault from "native" /* 575 */;
 import NativeViewDefault from "NativeView" /* 7056 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 19735 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 19748 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19749 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 19738 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 19751 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19752 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

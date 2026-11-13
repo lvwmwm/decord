@@ -60,14 +60,14 @@ export function bodySize(size) {
 }
 export function sendXMLHttpRequest(request, arg1) {
   let _true;
-  const f1279032 = () => {
+  const f1279382 = () => {
     const items = [...arguments];
     const tmp2 = c3;
     if (!tmp2) {
       try {
         const items1 = [];
         HermesBuiltin.arraySpread(items1, items, 0);
-        HermesBuiltin.apply(f97523, items1, undefined);
+        HermesBuiltin.apply(f97539, items1, undefined);
       } catch (tmp10) {
         abortController.abort();
         fail(tmp10);
@@ -114,7 +114,7 @@ export function sendXMLHttpRequest(request, arg1) {
     c6 = true;
     closure_1.onResponse(arg0, arg1, arg2);
   }
-  const f97520 = (httpStatusCode) => {
+  const f97536 = (httpStatusCode) => {
     httpStatusCode = httpStatusCode.httpStatusCode;
     const nitroHeaders = new request(closure_1[2]).NitroHeaders(httpStatusCode.allHeadersAsList);
     const obj = {};
@@ -128,7 +128,7 @@ export function sendXMLHttpRequest(request, arg1) {
       throw new TypeError("Trying to call a non-function");
     }
   };
-  let f127903 = f1279032;
+  let f127938 = f1279382;
   let c9 = null;
   let responseType = request.responseType;
   let tmp2 = "arraybuffer" === responseType;
@@ -143,7 +143,7 @@ export function sendXMLHttpRequest(request, arg1) {
       closure_1.onProgress(c9);
     }
   }
-  const f97522 = (arg0) => {
+  const f97538 = (arg0) => {
     const tmp = closure_1_6;
     if (tmp) {
       const tmp2 = closure_1_10;
@@ -155,11 +155,11 @@ export function sendXMLHttpRequest(request, arg1) {
   };
   let c13 = false;
   let c14 = 0;
-  const f97523 = (byteLength) => {
+  const f97539 = (byteLength) => {
     c9 = null;
     c13 = true;
     closure_14 = closure_14 + byteLength.byteLength;
-    const responseType = f97523.responseType;
+    const responseType = f97539.responseType;
     let tmp2 = "arraybuffer" === responseType;
     onChunk = onChunk.onChunk;
     const _Uint8Array = Uint8Array;
@@ -173,9 +173,9 @@ export function sendXMLHttpRequest(request, arg1) {
     const _Uint8Array1 = new _Uint8Array(substr);
     onChunk(_Uint8Array1, closure_14);
   };
-  f127903 = f1279032;
+  f127938 = f1279382;
   function onData(buf2stringResult) {
-    f127903(buf2stringResult);
+    f127938(buf2stringResult);
     return !c3;
   }
   const str2 = request.method;
@@ -200,7 +200,7 @@ export function sendXMLHttpRequest(request, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -282,7 +282,7 @@ export function sendXMLHttpRequest(request, arg1) {
               if (tmp89) {
                 c3 = 0;
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 const tmp26 = c6;
                 if (!tmp26) {
@@ -291,7 +291,7 @@ export function sendXMLHttpRequest(request, arg1) {
                   if (tmp33) {
                     c3 = 0;
                     c6 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 }
                 const tmp35 = closure_1_13;
@@ -299,7 +299,7 @@ export function sendXMLHttpRequest(request, arg1) {
                   tmp70("");
                   c3 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else if (fail(Uint8Array.responseType)) {
                   flushProgress();
                   _Uint8Array = Uint8Array;
@@ -334,7 +334,7 @@ export function sendXMLHttpRequest(request, arg1) {
                 if (tmp86) {
                   c3 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   closure_1.onChunk(closure_1, closure_1.byteLength);
                 }
@@ -353,7 +353,7 @@ export function sendXMLHttpRequest(request, arg1) {
               if (tmp79) {
                 c3 = 0;
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 let substr;
                 const onText = closure_1.onText;
@@ -367,7 +367,7 @@ export function sendXMLHttpRequest(request, arg1) {
                 if (tmp13) {
                   c3 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   flushProgress();
                 }
@@ -377,7 +377,7 @@ export function sendXMLHttpRequest(request, arg1) {
             c3 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp70) {
         if (0 === c3) {

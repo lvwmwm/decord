@@ -168,7 +168,7 @@ export function useParentalControlledConsent(PERSONALIZATION) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -222,7 +222,7 @@ export function useParentalControlledConsent(PERSONALIZATION) {
           c4 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp15) {
         let closure_3 = tmp15;
         if (0 === c4) {

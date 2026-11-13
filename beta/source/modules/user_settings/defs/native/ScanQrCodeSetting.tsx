@@ -29,7 +29,7 @@ const debounceResult = module_12.debounce(_asyncToGenerator(async (arg0, value) 
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     let c2;
@@ -78,7 +78,7 @@ const debounceResult = module_12.debounce(_asyncToGenerator(async (arg0, value) 
           c2 = 0;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } catch (tmp18) {
       if (0 === c2) {

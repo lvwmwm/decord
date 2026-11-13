@@ -33,7 +33,7 @@ let obj = function _waitForPublishStatus() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -215,7 +215,7 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -355,7 +355,7 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -393,7 +393,7 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
           conjureEligibleGuilds = 0;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp8) {
         if (0 === conjureEligibleGuilds) {
           c0 = 3;

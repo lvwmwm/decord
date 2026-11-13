@@ -1,10 +1,10 @@
-// Module ID: 19840
-// Function ID: 19841
+// Module ID: 19843
+// Function ID: 19844
 // Name: AutomodRemovedContentActionCreators
-// Dependencies: [5019, 5869, 1113, 5406, 19841, 2118, 2]
+// Dependencies: [5019, 5869, 1113, 5406, 19844, 2118, 2]
 // Exports: openRemovedContentModal, showRemovedMessageToast
 
-// Module 19840 (AutomodRemovedContentActionCreators)
+// Module 19843 (AutomodRemovedContentActionCreators)
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
@@ -40,5 +40,5 @@ export function showRemovedMessageToast(arg0, channel_id) {
 export function openRemovedContentModal(action) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { action };
-  obj.openLazy(asyncRequire(19841, dependencyMap.paths), "AutomodRemovedContentSheet", obj2);
+  obj.openLazy(asyncRequire(19844, dependencyMap.paths), "AutomodRemovedContentSheet", obj2);
 }

@@ -445,7 +445,7 @@ function SubscriptionAndBillingInfo(subscription) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 let c3;
@@ -485,7 +485,7 @@ function SubscriptionAndBillingInfo(subscription) {
                     c3 = 0;
                     closure_128_8(false);
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp21) {
                   stateFromStores2 = tmp21;
@@ -719,7 +719,7 @@ export default function PremiumManagePlan() {
   let items9;
   let tmp10;
   let tmp11;
-  const f110148 = () => {
+  const f110164 = () => {
     const items = [SubscriptionStore.getPremiumTypeSubscription(), SubscriptionStore.hasFetchedSubscriptions()];
     return items;
   };
@@ -741,8 +741,8 @@ export default function PremiumManagePlan() {
   const stateFromStores = obj4.useStateFromStores(items1, () => SubscriptionPlanStore.isLoadedForPremiumSKUs());
   const items2 = [SubscriptionStore];
   const obj5 = navigation(504);
-  [tmp10, tmp11] = obj5.useStateFromStoresArray(items2, f110148);
-  _slicedToArray(obj5.useStateFromStoresArray(items2, f110148), 2);
+  [tmp10, tmp11] = obj5.useStateFromStoresArray(items2, f110164);
+  _slicedToArray(obj5.useStateFromStoresArray(items2, f110164), 2);
   const items3 = [UserStore];
   const obj6 = navigation(504);
   const stateFromStores1 = obj6.useStateFromStores(items3, () => currentUser.getCurrentUser());

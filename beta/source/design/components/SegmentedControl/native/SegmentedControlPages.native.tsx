@@ -49,7 +49,7 @@ function SegmentedControlPage(reportedPageIndex) {
   let tmp6;
   let tmp7;
   let tmp9;
-  const f107749 = () => {
+  const f107765 = () => {
     let tmp2 = index >= activePageRangeStart.get();
     const tmp = index;
     if (tmp2) {
@@ -184,8 +184,8 @@ function SegmentedControlPage(reportedPageIndex) {
   SegmentedControlPagesNativeTsx17.__workletHash = 15945321321692;
   SegmentedControlPagesNativeTsx17.__initData = tmp27;
   const animatedStyle = tmp2Result5.useAnimatedStyle(SegmentedControlPagesNativeTsx17);
-  [tmp31, tmp32] = activePageRangeEnd(obj3.useState(f107749), 2);
-  activePageRangeEnd(obj3.useState(f107749), 2);
+  [tmp31, tmp32] = activePageRangeEnd(obj3.useState(f107765), 2);
+  activePageRangeEnd(obj3.useState(f107765), 2);
   const items11 = [closure_24, activePageRangeStart, activePageRangeEnd];
   c0 = undefined;
   c1 = undefined;

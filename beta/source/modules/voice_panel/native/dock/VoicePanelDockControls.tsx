@@ -1,9 +1,9 @@
-// Module ID: 19642
-// Function ID: 19643
+// Module ID: 19645
+// Function ID: 19646
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 5019, 2130, 6963, 11413, 1072, 21, 5170, 575, 504, 12168, 7631, 5756, 5408, 8131, 1113, 9353, 12169, 6793, 9989, 14374, 11394, 19640, 19643, 19644, 19646, 2]
+// Dependencies: [19, 17, 5019, 2130, 6963, 11413, 1072, 21, 5170, 575, 504, 12168, 7631, 5756, 5408, 8131, 1113, 9353, 12169, 6793, 9989, 14374, 11394, 19643, 19646, 19647, 19649, 2]
 
-// Module 19642 (VoicePanelDockControls)
+// Module 19645 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 575 */;
@@ -17,9 +17,9 @@ import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
 import VoiceActionUtils from "VoiceActionUtils" /* 12168 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14374 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19640 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 19643 */;
-import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 19646 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19643 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 19646 */;
+import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 19649 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
@@ -140,7 +140,7 @@ const memoResult = react.memo(function VoicePanelDockControls(measureGlowOffset)
   const tmp8 = authStore;
   if (obj.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK)) {
     const obj3 = { measureGlowOffset };
-    tmp10Result = tmp10(tmp2(19644), obj3);
+    tmp10Result = tmp10(tmp2(19647), obj3);
     tmp14 = tmp10;
   } else {
     const obj4 = { measureGlowOffset, hideWhilePressed: true, style: items1, children: React4(DockMuteButton, obj6) };

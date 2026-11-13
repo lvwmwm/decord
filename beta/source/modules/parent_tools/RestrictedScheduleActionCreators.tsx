@@ -71,7 +71,7 @@ obj = function _deleteRestrictedScheduleRule() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ obj = function _deleteRestrictedScheduleRule() {
             obj = closure_131_1(closure_131_2[3]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c5 = 3;

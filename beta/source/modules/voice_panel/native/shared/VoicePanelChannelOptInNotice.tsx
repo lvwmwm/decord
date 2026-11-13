@@ -1,9 +1,9 @@
-// Module ID: 19632
-// Function ID: 19633
+// Module ID: 19635
+// Function ID: 19636
 // Name: VoicePanelChannelOptInNotice
 // Dependencies: [19, 21, 7378, 7056, 7071, 1113, 7079, 16004, 2]
 
-// Module 19632 (VoicePanelChannelOptInNotice)
+// Module 19635 (VoicePanelChannelOptInNotice)
 import Fragment from "Fragment" /* 21 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7378 */;
 import react from "react" /* 19 */;

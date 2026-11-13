@@ -1,9 +1,9 @@
-// Module ID: 20486
-// Function ID: 20487
+// Module ID: 20489
+// Function ID: 20490
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 15936, 9189, 1072, 7383, 20487, 572, 1282, 1487, 20488, 7626, 2]
+// Dependencies: [5, 15936, 9189, 1072, 7383, 20490, 572, 1282, 1487, 20491, 7626, 2]
 
-// Module 20486 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 20489 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1072 */;
 import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9189 */;
 import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 15936 */;
@@ -55,7 +55,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -139,7 +139,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
             c5 = 0;
           }
           constants = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp41) {
           closure_4 = tmp41;
           if (0 === c5) {

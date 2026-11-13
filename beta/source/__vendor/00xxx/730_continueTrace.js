@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 const require = globalThis.__r;
 let _require, dependencyMap, setPropagationContext;
 
-const f80545 = (fn) => fn();
+const f80561 = (fn) => fn();
 function createChildOrRootSpan(arg0) {
   let forceTransaction;
   let parentSpan;
@@ -479,7 +479,7 @@ export function startSpan(experimental, arg1) {
           });
         }
         return withActiveSpanResult;
-      }) : f80545(function() {
+      }) : f80561(function() {
         let sentryNonRecordingSpan;
         let tmp = experimental;
         let tmp2 = closure_1_1;
@@ -605,7 +605,7 @@ export function startSpanManual(experimental, arg1) {
           });
         }
         return withActiveSpanResult;
-      }) : f80545(function() {
+      }) : f80561(function() {
         let sentryNonRecordingSpan;
         let tmp = experimental;
         let tmp2 = closure_1_1;

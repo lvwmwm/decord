@@ -41,7 +41,7 @@ let obj = function _serializeIntlData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let tmp32;
@@ -174,7 +174,7 @@ obj = function _handleUploadIntlDataSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -260,7 +260,7 @@ obj = function _handleUploadIntlDataSettingPress() {
           c3 = 0;
           onUploadIntlDataRequestFinish();
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp28) {
         url = tmp28;

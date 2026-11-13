@@ -39,7 +39,7 @@ const memoResult = react.memo(function GenericTextRow(text) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -67,7 +67,7 @@ const memoResult = react.memo(function GenericTextRow(text) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp6) {
         c0 = 3;

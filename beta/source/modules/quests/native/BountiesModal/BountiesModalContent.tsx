@@ -210,7 +210,7 @@ function BountiesModalContentInner(bounty) {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -277,7 +277,7 @@ function BountiesModalContentInner(bounty) {
           }
           let num4 = 3;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp36) {
         dismissVideoEndAppStoreOverlay = tmp36;

@@ -1,10 +1,10 @@
-// Module ID: 20394
-// Function ID: 20395
+// Module ID: 20397
+// Function ID: 20398
 // Name: FormImagePicker
 // Dependencies: [5, 19, 17, 21, 5170, 575, 8323, 1446, 9222, 1113, 5874, 12314, 10383, 5783, 5790, 2]
 // Exports: default
 
-// Module 20394 (FormImagePicker)
+// Module 20397 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
@@ -46,7 +46,7 @@ let obj = function _pickImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _pickImage() {
               size(obj);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           c4 = 3;

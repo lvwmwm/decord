@@ -1,9 +1,9 @@
-// Module ID: 20048
-// Function ID: 20049
+// Module ID: 20051
+// Function ID: 20052
 // Name: FriendsActionCreators
 // Dependencies: [1072, 572, 1099, 19228, 2]
 
-// Module 20048 (FriendsActionCreators)
+// Module 20051 (FriendsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;

@@ -29,7 +29,7 @@ export function useICYMIReloadHandler(showDot) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -98,7 +98,7 @@ export function useICYMIReloadHandler(showDot) {
           const obj = c1(c2[3]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp18) {
         c2 = 3;

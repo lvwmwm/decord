@@ -66,7 +66,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -96,7 +96,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else {
           value.openGuildVoiceModal(closure_0, "Channel List");
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -234,7 +234,7 @@ export function useOnPressConversationCitation(searchContext) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -301,7 +301,7 @@ export function useOnPressConversationCitation(searchContext) {
               }
             });
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         }
       } catch (tmp9) {
@@ -538,7 +538,7 @@ export function useOnPressGuildVoiceChannel(searchContext) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -583,7 +583,7 @@ export function useOnPressGuildVoiceChannel(searchContext) {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (arg0 === 1) {
           c3 = 3;

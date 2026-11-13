@@ -136,7 +136,7 @@ export function useBountiesModalVideoAnalytics(bountyId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -214,7 +214,7 @@ export function useBountiesModalVideoAnalytics(bountyId) {
               trackAdContentEvent(obj8);
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
         } catch (tmp30) {

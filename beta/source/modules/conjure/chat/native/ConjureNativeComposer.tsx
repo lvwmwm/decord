@@ -666,7 +666,7 @@ export default function ConjureNativeComposer(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -697,7 +697,7 @@ export default function ConjureNativeComposer(projectId) {
         } else {
           projectId(value);
           onSend = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp9) {
         onSend = 3;
@@ -738,7 +738,7 @@ export default function ConjureNativeComposer(projectId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -787,7 +787,7 @@ export default function ConjureNativeComposer(projectId) {
               }));
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           c4 = 3;
@@ -893,7 +893,7 @@ export default function ConjureNativeComposer(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -944,7 +944,7 @@ export default function ConjureNativeComposer(projectId) {
           closure_128_43();
         }
         onSend = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp23) {
         onSend = 3;
         throw tmp23;
