@@ -1,12 +1,12 @@
-// Module ID: 8953
-// Function ID: 8954
+// Module ID: 9020
+// Function ID: 9021
 // Name: uploadMessageAttachments
-// Dependencies: [5, 8954, 8955, 6311, 572, 2]
+// Dependencies: [5, 9021, 9022, 6374, 572, 2]
 // Exports: uploadMessageAttachments
 
-// Module 8953 (uploadMessageAttachments)
+// Module 9020 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UploadStore from "UploadStore" /* 8954 */;
+import UploadStore from "UploadStore" /* 9021 */;
 import size from "module_2" /* 2 */;
 
 let c5, id;
@@ -58,7 +58,7 @@ let obj = function _uploadMessageAttachments() {
             let message;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

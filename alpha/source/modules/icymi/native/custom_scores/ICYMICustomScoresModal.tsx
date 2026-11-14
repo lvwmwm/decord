@@ -1,15 +1,15 @@
-// Module ID: 19095
-// Function ID: 19096
+// Module ID: 19287
+// Function ID: 19288
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 9061, 5243, 575, 7424, 8984, 1113, 10839, 19096, 19097, 2]
+// Dependencies: [19, 21, 9128, 5306, 575, 7490, 9051, 1113, 10908, 19288, 19289, 2]
 // Exports: default
 
-// Module 19095 (ICYMICustomScoresModal)
+// Module 19287 (ICYMICustomScoresModal)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9061 */;
-import createStyles from "createStyles" /* 5243 */;
+import NativeStackView from "NativeStackView" /* 9128 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

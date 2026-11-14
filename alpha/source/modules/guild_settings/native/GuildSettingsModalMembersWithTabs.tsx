@@ -1,24 +1,24 @@
-// Module ID: 19216
-// Function ID: 19217
+// Module ID: 19408
+// Function ID: 19409
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [19, 17, 5114, 5175, 1385, 21, 5243, 575, 7929, 18803, 504, 7219, 1113, 19217, 19218, 19225, 5289, 1499, 9081, 19220, 7363, 8371, 7917, 13153, 14830, 2]
+// Dependencies: [19, 17, 5177, 5238, 1388, 21, 5306, 575, 7994, 18932, 504, 7282, 1113, 19409, 19410, 19417, 5352, 1502, 9148, 19412, 7427, 8437, 7983, 13262, 14944, 2]
 
-// Module 19216 (GuildSettingsModalMembersWithTabs)
+// Module 19408 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5289 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7219 */;
-import ContextMenu2 from "ContextMenu" /* 9081 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 19217 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 19218 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 19225 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7282 */;
+import ContextMenu2 from "ContextMenu" /* 9148 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 19409 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 19410 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 19417 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
-import UserStore from "UserStore" /* 1385 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -27,7 +27,7 @@ let c9;
 let metroImportAll;
 let obj2;
 let tmp2;
-const showMembersManagementActionSheet = tmp2(19220);
+const showMembersManagementActionSheet = tmp2(19412);
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { container: obj2, content: { flex: 1 }, tabContainer: { marginTop: 12, minHeight: 32 } };

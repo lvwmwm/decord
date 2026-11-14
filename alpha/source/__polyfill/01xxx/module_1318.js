@@ -4,4 +4,4 @@
 
 // Module 1318
 
-export default Math.floor;
+export default URIError;

@@ -1,23 +1,23 @@
-// Module ID: 7938
-// Function ID: 7939
+// Module ID: 8003
+// Function ID: 8004
 // Name: CollapsibleFloatingActionButton
-// Dependencies: [19, 21, 5879, 5243, 1652, 5876, 5877, 5874, 7939, 575, 2]
+// Dependencies: [19, 21, 5942, 5306, 1655, 5939, 5940, 5937, 8004, 575, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 7938 (CollapsibleFloatingActionButton)
+// Module 8003 (CollapsibleFloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import springPresets from "springPresets" /* 5877 */;
-import FloatingActionButton from "FloatingActionButton" /* 7939 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import springPresets from "springPresets" /* 5940 */;
+import FloatingActionButton from "FloatingActionButton" /* 8004 */;
 import react from "react" /* 19 */;
-import ButtonConstants from "ButtonConstants" /* 5879 */;
-import createStyles from "createStyles" /* 5243 */;
+import ButtonConstants from "ButtonConstants" /* 5942 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const BaseTextButton2 = tmp2(5874);
+const BaseTextButton2 = tmp2(5937);
 function CollapsableButton(arg0) {
   let state;
   let style;
@@ -33,11 +33,11 @@ function CollapsableButton(arg0) {
   const merged = Object.assign(arg0, Object.assign({ state: 0, style: 0 }));
   const collapseText = state.collapseText;
   let items = [closure_7, , , , , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[1] = ButtonConstants.FAB_BUTTON_SIZE;
   items[2] = spring_spring.withSpring;
-  items[3] = _mod1652.interpolate;
+  items[3] = _mod1655.interpolate;
   items[4] = collapseText;
   items[5] = 20;
   items[6] = buttonPadding;
@@ -98,18 +98,18 @@ export function CollapsibleFloatingActionButton(arg0) {
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(7939).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(8004).DEFAULT_POSITION_OFFSET;
   }
   const rect = { position: "absolute", right: positionRight, bottom: positionBottom };
   if (positionBottom == null) {
-    positionBottom = tmp3(7939).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(8004).DEFAULT_POSITION_OFFSET;
   }
   items[1] = rect;
   if (null != state) {
     const merged1 = Object.assign(merged);
     tmp13 = <CollapsableButton state={state} text={text} style={items} icon={cloneElementResult} />;
   } else {
-    const BaseTextButton = tmp3(5874).BaseTextButton;
+    const BaseTextButton = tmp3(5937).BaseTextButton;
     const merged2 = Object.assign(merged);
     tmp13 = <BaseTextButton text={text} size="lg" variant="primary" textVariant="body-md/semibold" icon={cloneElementResult} style={items} pillStyle={tmp2.textButtonPill} />;
   }

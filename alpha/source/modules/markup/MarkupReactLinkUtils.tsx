@@ -1,11 +1,11 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12584
+// Function ID: 12585
 // Name: MarkupReactLinkUtils
-// Dependencies: [7587, 9149, 2]
+// Dependencies: [7653, 9216, 2]
 // Exports: isLinkTrusted
 
-// Module 12488 (MarkupReactLinkUtils)
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7587 */;
+// Module 12584 (MarkupReactLinkUtils)
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/MarkupReactLinkUtils.tsx");
@@ -22,7 +22,7 @@ export function isLinkTrusted(target) {
       }
       tmp = tmp5(tmp6, title);
     }
-    const tmp2Result = tmp2(9149);
+    const tmp2Result = tmp2(9216);
     title = tmp2Result.astToString(target.content);
   }
   return tmp;

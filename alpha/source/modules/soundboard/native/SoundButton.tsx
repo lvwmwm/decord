@@ -1,25 +1,25 @@
-// Module ID: 19764
-// Function ID: 19765
+// Module ID: 19217
+// Function ID: 19218
 // Name: SoundButton
-// Dependencies: [19, 17, 19758, 21, 1652, 5243, 575, 1377, 7364, 5876, 7828, 14139, 19765, 19766, 7852, 7871, 19768, 19755, 19770, 5866, 8027, 2]
+// Dependencies: [19, 17, 19211, 21, 1655, 5306, 575, 1380, 7428, 5939, 7894, 14246, 19218, 19219, 7918, 7937, 19221, 19222, 5929, 8092, 2]
 
-// Module 19764 (SoundButton)
+// Module 19217 (SoundButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import Pressables from "Pressables" /* 7364 */;
-import EmojiDefault from "Emoji" /* 7828 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 14139 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19758 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 19770 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import Pressables from "Pressables" /* 7428 */;
+import EmojiDefault from "Emoji" /* 7894 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 14246 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19211 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 19222 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 
-const module_1652_mod = _mod1652;
+const module_1655_mod = _mod1655;
 let num2, obj1, playing, playing2, pressed2, pressed3, set, tmp4Result, tmp8, value, value1;
 
 let hasOwnProperty;
@@ -38,12 +38,12 @@ function useAnimation(arg0) {
   let tmp5;
   let tmp6;
   let tmp7;
-  const tmp = _mod1652;
+  const tmp = _mod1655;
   let items = [closure_11, arg0, , , , ];
   const useAnimatedStyle = tmp.useAnimatedStyle;
-  items[2] = _mod1652.withDelay;
+  items[2] = _mod1655.withDelay;
   items[3] = spring_spring.withSpring;
-  items[4] = _mod1652.interpolate;
+  items[4] = _mod1655.interpolate;
   items[5] = closure_8;
   let c0;
   let c1;
@@ -131,8 +131,8 @@ function SoundButtonEmoji(arg0) {
 const View = react_native.View;
 const SOUND_BUTTON_HEIGHT = SoundboardStyleConstants.SOUND_BUTTON_HEIGHT;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let module_1652 = module_1652_mod;
-let closure_7 = module_1652.createAnimatedComponent(View);
+let module_1655 = module_1655_mod;
+let closure_7 = module_1655.createAnimatedComponent(View);
 let closure_8 = { damping: 10, stiffness: 300, mass: 1 };
 let createStyles = createStyles_mod;
 let obj = { button: obj2, buttonPressed: obj3, buttonDisabled: { opacity: 0.5 }, buttonPlaying: obj4, playingBackground: rect, emoji: { height: 24, width: 24, fontSize: num, lineHeight: 28 }, emojiWrapper: size, text: { marginHorizontal: 8 }, textPlaying: { marginHorizontal: 6 }, lock: size1 };
@@ -149,14 +149,13 @@ if (PlatformUtils.isIOS()) {
 size = { display: "flex", alignItems: "center", justifyContent: "center", height: 40, width: 40, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, backgroundSize: 32, borderRadius: nativeDefault.radii.round, marginBottom: 8 };
 size1 = { position: "absolute", top: nativeDefault.space.PX_12, end: nativeDefault.space.PX_12, width: 12, height: 12, tintColor: nativeDefault.colors.WHITE };
 let closure_9 = createStyles(obj);
-module_1652 = module_1652_mod;
-let closure_10 = module_1652.createAnimatedComponent(Pressables.PressableOpacity);
+module_1655 = module_1655_mod;
+let closure_10 = module_1655.createAnimatedComponent(Pressables.PressableOpacity);
 let closure_11 = { code: "(function SoundButtonTsx1(){let[animationConfig,withDelay,withSpring,interpolate,SPRING_CONFIG]=this.__closure;var _animationConfig$play,_animationConfig$pres,_animationConfig;const isNotPressed=animationConfig.sharedValues.pressed.get()===0;const isPlaying=animationConfig.sharedValues.playing.get()>0;const shouldDoPlayingAnimation=isNotPressed&&isPlaying;const playingAnimationScaleValue=withDelay((_animationConfig$play=animationConfig.playingAnimationDelay)!==null&&_animationConfig$play!==void 0?_animationConfig$play:0,withSpring(interpolate(animationConfig.sharedValues.playing.get(),[0,1],[1,animationConfig.scaleFactors.playing]),SPRING_CONFIG));const pressedAnimationScaleValue=withSpring(interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[1,animationConfig.scaleFactors.pressed]),SPRING_CONFIG);const rotationScaleValue=interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[0,(_animationConfig$pres=(_animationConfig=animationConfig)===null||_animationConfig===void 0?void 0:_animationConfig.pressedRotationDegrees)!==null&&_animationConfig$pres!==void 0?_animationConfig$pres:0]);return{transform:[{scale:shouldDoPlayingAnimation?playingAnimationScaleValue:pressedAnimationScaleValue},{rotate:rotationScaleValue+\"deg\"}]};})" };
 const memoResult = react.memo(function SoundButtonComponent(sound) {
   let items6;
   sound = sound.sound;
   const channel = sound.channel;
-  const soundGridLocation = sound.soundGridLocation;
   let flag = sound.isSectionLocked;
   const style = sound.style;
   if (flag === undefined) {
@@ -167,51 +166,46 @@ const memoResult = react.memo(function SoundButtonComponent(sound) {
   let isLocked;
   let onLockedPress;
   let tmp = sound;
-  let obj = sound(soundGridLocation[12]);
   let tmp3 = null != sound.emojiId;
+  const obj = sound(playSoundboardSound[12]);
   const buttonWidth = obj.useSoundButtonStyleConfig().buttonWidth;
   if (!tmp3) {
     tmp3 = null != sound.emojiName;
   }
   const tmp4 = closure_9();
-  const tmp5 = channel(soundGridLocation[13])(sound, channel.id);
+  const tmp5 = channel(playSoundboardSound[13])(sound, channel.id);
   playSoundboardSound = tmp5.playSoundboardSound;
   const isPlayingSound = tmp5.isPlayingSound;
-  const tmp6 = channel(soundGridLocation[14]);
+  const tmp6 = channel(playSoundboardSound[14]);
   analyticsLocations = tmp6(channel(tmp2[15]).SOUNDBOARD_BUTTON).analyticsLocations;
-  const tmpResult = tmp(soundGridLocation[16]);
+  const tmpResult = tmp(playSoundboardSound[16]);
   const soundboardSoundLock = tmpResult.useSoundboardSoundLock(sound, channel);
   isLocked = soundboardSoundLock.isLocked;
   onLockedPress = soundboardSoundLock.onLockedPress;
-  const items = [analyticsLocations, onLockedPress, channel, soundGridLocation, playSoundboardSound, isLocked];
+  const items = [analyticsLocations, onLockedPress, playSoundboardSound, isLocked];
   const lockedAccessibilityHint = soundboardSoundLock.lockedAccessibilityHint;
-  const callback = playSoundboardSound.useCallback(() => {
-    let initialScrollLocation;
+  const callback = analyticsLocations.useCallback(() => {
     const tmp = isLocked;
     if (tmp) {
-      onLockedPress(() => {
-        const obj = sound(soundGridLocation[17]);
-        const obj2 = { channel, analyticsSource: channel(soundGridLocation[15]).PREMIUM_UPSELL, initialScrollLocation };
-        const result = obj.openSoundboardSoundPickerActionSheet(obj2);
-      });
+      onLockedPress();
     } else {
       playSoundboardSound(analyticsLocations);
     }
   }, items);
-  const tmpResult3 = tmp(soundGridLocation[4]);
+  const tmpResult3 = tmp(playSoundboardSound[4]);
   const sharedValue = tmpResult3.useSharedValue(0);
-  const tmpResult4 = tmp(soundGridLocation[4]);
+  const tmpResult4 = tmp(playSoundboardSound[4]);
   const sharedValue1 = tmpResult4.useSharedValue(0);
   const items1 = [sharedValue];
   const items2 = [sharedValue];
-  const callback1 = playSoundboardSound.useCallback(() => {
+  const callback1 = analyticsLocations.useCallback(() => {
     const result = sharedValue.set(1);
   }, items1);
   const items3 = [isPlayingSound, sharedValue1, sharedValue];
-  const callback2 = playSoundboardSound.useCallback(() => {
+  const callback2 = analyticsLocations.useCallback(() => {
     const result = sharedValue.set(0);
   }, items2);
-  const effect = playSoundboardSound.useEffect(() => {
+  const effect = analyticsLocations.useEffect(() => {
     let num = 0;
     set = sharedValue1.set;
     if (isPlayingSound) {
@@ -219,15 +213,15 @@ const memoResult = react.memo(function SoundButtonComponent(sound) {
     }
     const result = set(num);
   }, items3);
-  let obj2 = { pressed: sharedValue, playing: sharedValue1 };
+  const obj2 = { pressed: sharedValue, playing: sharedValue1 };
   const pressed = obj2.pressed;
-  const items4 = [channel, sound, soundGridLocation, analyticsLocations];
+  const items4 = [channel, sound, analyticsLocations];
   const items5 = [tmp4.button, { width: buttonWidth }, , , , , ];
   let buttonPressed = null;
   const tmp14 = useAnimation({ sharedValues: obj2, scaleFactors: { pressed: 0.95, playing: 1.05 } });
   const tmp15 = pressed.get() > 0;
-  const callback3 = playSoundboardSound.useCallback(() => {
-    openSoundboardSoundPreviewActionSheetDefault(channel, sound, analyticsLocations[analyticsLocations.length - 1], soundGridLocation);
+  const callback3 = analyticsLocations.useCallback(() => {
+    openSoundboardSoundPreviewActionSheetDefault(channel, sound, analyticsLocations[analyticsLocations.length - 1]);
   }, items4);
   const tmp19 = closure_10;
   if (tmp15) {
@@ -253,33 +247,33 @@ const memoResult = react.memo(function SoundButtonComponent(sound) {
   let tmp23 = isPlayingSound;
   if (tmp23) {
     const obj4 = { style: tmp4.playingBackground };
-    tmp23 = isLocked(tmp18, obj4);
+    tmp23 = onLockedPress(tmp18, obj4);
   }
   items6 = [tmp23, , ];
   if (tmp3) {
     const obj5 = { sharedValues: obj2, sound };
-    tmp3 = isLocked(SoundButtonEmoji, obj5);
+    tmp3 = onLockedPress(SoundButtonEmoji, obj5);
   }
   items6[1] = tmp3;
   const items7 = [tmp4.text, ];
   let textPlaying = null;
-  const Text = tmp(tmp2[19]).Text;
+  const Text = tmp(tmp2[18]).Text;
   if (isPlayingSound) {
     textPlaying = tmp4.textPlaying;
   }
   const obj6 = { lineClamp: 1, style: items7, variant: "body-sm/semibold", children: sound.name };
   items7[1] = textPlaying;
-  items6[2] = isLocked(Text, obj6);
-  const children = [onLockedPress(tmp19, obj3), ];
+  items6[2] = onLockedPress(Text, obj6);
+  const children = [closure_6(tmp19, obj3), ];
   if (isLocked) {
     isLocked = !flag;
   }
   if (isLocked) {
     const obj7 = { style: tmp4.lock };
-    isLocked = tmp27(tmp(tmp2[20]).LockIcon, obj7);
+    isLocked = tmp27(tmp(tmp2[19]).LockIcon, obj7);
   }
   children[1] = isLocked;
-  return onLockedPress(analyticsLocations, { children });
+  return closure_6(isLocked, { children });
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/soundboard/native/SoundButton.tsx");

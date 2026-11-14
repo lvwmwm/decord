@@ -1,56 +1,53 @@
-// Module ID: 9430
-// Function ID: 9431
+// Module ID: 9499
+// Function ID: 9500
 // Name: ProfileEffectLayer
-// Dependencies: [19, 17, 21, 9431, 9427, 2]
+// Dependencies: [19, 17, 21, 6020, 9496, 2]
 
-// Module 9430 (ProfileEffectLayer)
+// Module 9499 (ProfileEffectLayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9427 */;
-import APNGPlayer2 from "APNGPlayer" /* 9431 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9496 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(function ProfileEffectLayerAndroid(paused) {
+const memoResult = react.memo(function ProfileEffectLayerAndroid(layerConfig) {
   let accessibilityLabel;
   let animate;
   let items1;
-  let layerConfig;
   let num;
-  let obj4;
+  let obj3;
   let onLoad;
-  ({ layerConfig, animate } = paused);
-  paused = paused.paused;
-  const width = paused.width;
-  ({ accessibilityLabel, onLoad } = paused);
-  const ref = react.useRef(null);
-  const obj = APNGPlayer2;
-  const aPNGPlayerControls = obj.useAPNGPlayerControls(ref);
-  const items = [animate, paused, aPNGPlayerControls];
-  const effect = react.useEffect(() => {
-    const tmp = animate;
-    if (tmp) {
-      const tmp2 = paused;
-      if (!tmp2) {
-        aPNGPlayerControls.play();
-      }
+  let paused;
+  let tmp5;
+  let width;
+  layerConfig = layerConfig.layerConfig;
+  ({ animate, width, onLoad } = layerConfig);
+  const items = [layerConfig.src, onLoad];
+  ({ paused, accessibilityLabel } = layerConfig);
+  const callback = react.useCallback(() => {
+    if (onLoad != null) {
+      tmp(layerConfig.src);
     }
-    aPNGPlayerControls.pause();
   }, items);
-  const obj2 = { ref, url: layerConfig.src, autoplay: false, style: items1, ariaLabel: accessibilityLabel, onLoad };
+  const obj = { source: { uri: layerConfig.src }, paused: tmp5, resizeMode: "contain", fadeDuration: 0, style: items1, accessibilityLabel, onLoad: callback };
+  tmp5 = !animate;
+  const tmp2 = jsx;
+  const tmp4 = FastImageDefault;
+  if (animate) {
+    tmp5 = true === paused;
+  }
   items1 = [StyleSheet.absoluteFill, ];
-  size = { position: "absolute", width, height: obj4.calculateProfileEffectHeight(layerConfig, width), opacity: num };
-  const APNGPlayer = APNGPlayer2.APNGPlayer;
+  size = { position: "absolute", width, height: obj3.calculateProfileEffectHeight(layerConfig, width), opacity: num };
   num = 0;
-  obj4 = ProfileEffectUtils;
-  const tmp4 = jsx;
+  obj3 = ProfileEffectUtils;
   if (animate) {
     num = 1;
   }
   items1[1] = size;
-  return tmp4(APNGPlayer, obj2);
+  return tmp2(tmp4, obj);
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectLayer.android.tsx");

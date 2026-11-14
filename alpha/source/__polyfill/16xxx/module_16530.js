@@ -1,0 +1,12 @@
+// Module ID: 16530
+// Function ID: 16531
+// Dependencies: [16518]
+
+// Module 16530
+import _mod16518 from "module_16518" /* 16518 */;
+
+
+export default (arg0, arg1) => {
+  const tmp = new _mod16518(arg0, arg1);
+  return tmp.patch;
+};

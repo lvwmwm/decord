@@ -1,13 +1,13 @@
-// Module ID: 18883
-// Function ID: 18884
+// Module ID: 19013
+// Function ID: 19014
 // Name: WaterwheelsDiscoverAnalytics
-// Dependencies: [1072, 10156, 1252, 2]
+// Dependencies: [1072, 10225, 1256, 2]
 // Exports: getDiscoverActionParameters
 
-// Module 18883 (WaterwheelsDiscoverAnalytics)
+// Module 19013 (WaterwheelsDiscoverAnalytics)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10156 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -123,7 +123,9 @@ export function getDiscoverActionParameters(type, arg1) {
     str = "item_header";
   }
   type = type.type;
-  if (WaterwheelsCardTypes.WaterwheelsActionType.JOIN_GUILD === type) {
+  if ("guild_profile" === type) {
+    return { actionType: "press_guild_profile", gestureType: "press", targetElement: str, intentType: "navigate", destinationType: "guild_profile", guildId: type.guildId };
+  } else if (WaterwheelsCardTypes.WaterwheelsActionType.JOIN_GUILD === type) {
     return { actionType: "press_join_guild", gestureType: "press", targetElement: str, intentType: "join", destinationType: "guild", guildId: type.value.guild_id };
   } else if (WaterwheelsCardTypes.WaterwheelsActionType.OPEN_GUILD === type) {
     let str2 = "press";

@@ -1,10 +1,10 @@
-// Module ID: 5202
-// Function ID: 5203
+// Module ID: 5265
+// Function ID: 5266
 // Name: getBurstAnimation
-// Dependencies: [5, 5203, 5204, 5205, 5206, 5207, 5208, 5209, 5210, 5211, 5212, 5213, 5214, 5215, 5216, 5217, 5218, 5219, 5220, 5221, 5222, 5223, 5224, 5225, 5226, 5227, 5228, 5229, 5230, 5231, 5232, 5233, 5234, 5235, 5236, 5237, 5238, 5239, 2]
+// Dependencies: [5, 5266, 5267, 5268, 5269, 5270, 5271, 5272, 5273, 5274, 5275, 5276, 5277, 5278, 5279, 5280, 5281, 5282, 5283, 5284, 5285, 5286, 5287, 5288, 5289, 5290, 5291, 5292, 5293, 5294, 5295, 5296, 5297, 5298, 5299, 5300, 5301, 5302, 2]
 // Exports: getBurstAnimation
 
-// Module 5202 (getBurstAnimation)
+// Module 5265 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,187 +13,187 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_5203");
+    return require("module_5266");
   }
 };
 const items = [
   obj,
   {
     load() {
-      return require("module_5204");
+      return require("module_5267");
     }
   },
   {
     load() {
-      return require("module_5205");
+      return require("module_5268");
     }
   },
   {
     load() {
-      return require("module_5206");
+      return require("module_5269");
     }
   },
   {
     load() {
-      return require("module_5207");
+      return require("module_5270");
     }
   },
   {
     load() {
-      return require("module_5208");
+      return require("module_5271");
     }
   },
   {
     load() {
-      return require("module_5209");
+      return require("module_5272");
     }
   },
   {
     load() {
-      return require("module_5210");
+      return require("module_5273");
     }
   },
   {
     load() {
-      return require("module_5211");
+      return require("module_5274");
     }
   },
   {
     load() {
-      return require("module_5212");
+      return require("module_5275");
     }
   },
   {
     load() {
-      return require("module_5213");
+      return require("module_5276");
     }
   },
   {
     load() {
-      return require("module_5214");
+      return require("module_5277");
     }
   },
   {
     load() {
-      return require("module_5215");
+      return require("module_5278");
     }
   },
   {
     load() {
-      return require("module_5216");
+      return require("module_5279");
     }
   },
   {
     load() {
-      return require("module_5217");
+      return require("module_5280");
     }
   },
   {
     load() {
-      return require("module_5218");
+      return require("module_5281");
     }
   },
   {
     load() {
-      return require("module_5219");
+      return require("module_5282");
     }
   },
   {
     load() {
-      return require("module_5220");
+      return require("module_5283");
     }
   }
 ];
 const obj2 = {
   load() {
-    return require("module_5221");
+    return require("module_5284");
   }
 };
 const items1 = [
   obj2,
   {
     load() {
-      return require("module_5222");
+      return require("module_5285");
     }
   },
   {
     load() {
-      return require("module_5223");
+      return require("module_5286");
     }
   },
   {
     load() {
-      return require("module_5224");
+      return require("module_5287");
     }
   },
   {
     load() {
-      return require("module_5225");
+      return require("module_5288");
     }
   },
   {
     load() {
-      return require("module_5226");
+      return require("module_5289");
     }
   },
   {
     load() {
-      return require("module_5227");
+      return require("module_5290");
     }
   },
   {
     load() {
-      return require("module_5228");
+      return require("module_5291");
     }
   },
   {
     load() {
-      return require("module_5229");
+      return require("module_5292");
     }
   },
   {
     load() {
-      return require("module_5230");
+      return require("module_5293");
     }
   },
   {
     load() {
-      return require("module_5231");
+      return require("module_5294");
     }
   },
   {
     load() {
-      return require("module_5232");
+      return require("module_5295");
     }
   },
   {
     load() {
-      return require("module_5233");
+      return require("module_5296");
     }
   },
   {
     load() {
-      return require("module_5234");
+      return require("module_5297");
     }
   },
   {
     load() {
-      return require("module_5235");
+      return require("module_5298");
     }
   },
   {
     load() {
-      return require("module_5236");
+      return require("module_5299");
     }
   },
   {
     load() {
-      return require("module_5237");
+      return require("module_5300");
     }
   },
   {
     load() {
-      return require("module_5238");
+      return require("module_5301");
     }
   }
 ];
@@ -238,7 +238,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
             burstAnimationHash = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (arg0 === 1) {
           c7 = 3;

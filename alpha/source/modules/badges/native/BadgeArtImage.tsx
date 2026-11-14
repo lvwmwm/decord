@@ -1,18 +1,17 @@
-// Module ID: 15163
-// Function ID: 15164
+// Module ID: 15277
+// Function ID: 15278
 // Name: BadgeArtImage
-// Dependencies: [32, 5, 19, 17, 21, 5373, 1089, 6016, 8197, 1377, 9431, 5957, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5436, 1089, 6079, 8263, 6020, 2]
 // Exports: default
 
-// Module 15163 (BadgeArtImage)
+// Module 15277 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5373 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import TimeUtils from "TimeUtils" /* 6016 */;
-import inlineStyles from "inlineStyles" /* 8197 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5436 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import TimeUtils from "TimeUtils" /* 6079 */;
+import inlineStyles from "inlineStyles" /* 8263 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -236,7 +235,7 @@ function SvgArt(url) {
       let tmp11 = url;
       let tmp12 = dependencyMap;
       size = { width, height };
-      tmp9 = jsx(url(8197).SvgAst, { ast: tmp2, override: size });
+      tmp9 = jsx(url(8263).SvgAst, { ast: tmp2, override: size });
     }
     fallback = tmp9;
   }
@@ -258,8 +257,8 @@ export default function BadgeArtImage(style) {
   let onError;
   let onLoad;
   let sharesSvgLoad;
-  let tmp3;
-  let tmp6;
+  let tmp;
+  let tmp4;
   let url;
   let width;
   ({ url, height, width } = style);
@@ -279,45 +278,31 @@ export default function BadgeArtImage(style) {
   const str = url.split(/[?#]/)[0];
   const formatted = str.toLowerCase();
   if (formatted.endsWith(".svg")) {
-    let tmp17Result;
-    let tmp22;
+    let tmp6;
+    let tmp10Result;
+    let tmp15;
     if (null != fallbackUrl) {
-      if (animated) {
-        const obj7 = PlatformUtils;
-        const tmp10 = require;
-        if (obj7.isAndroid()) {
-          jsx(tmp10(9431).APNGPlayer, { url: fallbackUrl, style: size, autoplay: true, onLoad });
-        }
-      }
-      const obj4 = { uri: fallbackUrl };
-      jsx(FastImageDefault, { source: obj4, style: size, resizeMode: "contain", enableAnimation: animated, onLoadEnd: onLoad, onError });
+      const obj2 = { uri: fallbackUrl };
+      tmp6 = jsx(FastImageDefault, { source: obj2, style: size, resizeMode: "contain", enableAnimation: animated, onLoadEnd: onLoad, onError });
     }
     if (sharesSvgLoad) {
-      const size1 = { url, width, height, fallback: tmp9, onLoad };
-      tmp17Result = tmp17(SvgArt, size1, url);
-      tmp22 = tmp17;
+      const size1 = { url, width, height, fallback: tmp6, onLoad };
+      tmp10Result = tmp10(SvgArt, size1, url);
+      tmp15 = tmp10;
     } else {
-      const size2 = { uri: url, width, height, onLoad, onError: ignoreSvgError, fallback: tmp9 };
-      tmp17Result = tmp17(inlineStyles.SvgUri, size2);
-      tmp22 = tmp17;
+      const size2 = { uri: url, width, height, onLoad, onError: ignoreSvgError, fallback: tmp6 };
+      tmp10Result = tmp10(inlineStyles.SvgUri, size2);
+      tmp15 = tmp10;
     }
-    tmp3 = tmp22;
-    tmp6 = tmp17Result;
+    tmp = tmp15;
+    tmp4 = tmp10Result;
   } else {
-    if (animated) {
-      const obj3 = PlatformUtils;
-      const tmp = require;
-      if (obj3.isAndroid()) {
-        tmp6 = jsx(tmp(9431).APNGPlayer, { url, style: size, autoplay: true, onLoad });
-        tmp3 = jsx;
-      }
-    }
-    tmp3 = jsx;
-    const obj8 = { uri: url };
-    tmp6 = jsx(FastImageDefault, { source: obj8, style: size, resizeMode: "contain", enableAnimation: animated, onLoadEnd: onLoad, onError });
+    tmp = jsx;
+    const obj4 = { uri: url };
+    tmp4 = jsx(FastImageDefault, { source: obj4, style: size, resizeMode: "contain", enableAnimation: animated, onLoadEnd: onLoad, onError });
   }
-  const obj9 = { style: items, "aria-hidden": true, children: tmp6 };
+  const obj5 = { style: items, "aria-hidden": true, children: tmp4 };
   items = [size, style];
-  return tmp3(View, obj9);
+  return tmp(View, obj5);
 };
 export const COMPLEX_BADGE_ASPECT_RATIO = 1.56;

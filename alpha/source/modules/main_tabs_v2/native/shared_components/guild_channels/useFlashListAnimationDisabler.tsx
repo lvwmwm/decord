@@ -1,11 +1,11 @@
-// Module ID: 16493
-// Function ID: 16494
+// Module ID: 16616
+// Function ID: 16617
 // Name: useFlashListAnimationDisabler
-// Dependencies: [19, 1652, 2]
+// Dependencies: [19, 1655, 2]
 // Exports: useFlashListAnimationDisabler
 
-// Module 16493 (useFlashListAnimationDisabler)
-import _mod1652 from "module_1652" /* 1652 */;
+// Module 16616 (useFlashListAnimationDisabler)
+import _mod1655 from "module_1655" /* 1655 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,9 @@ export function useFlashListAnimationDisabler(userId) {
   let tmp7;
   let tmp9;
   let closure_0 = userId;
-  const obj = _mod1652;
+  const obj = _mod1655;
   const sharedValue = obj.useSharedValue(false);
-  const obj2 = _mod1652;
+  const obj2 = _mod1655;
   const sharedValue1 = obj2.useSharedValue(userId);
   const items = [sharedValue1, userId];
   const effect = react.useEffect(() => {
@@ -50,7 +50,7 @@ export function useFlashListAnimationDisabler(userId) {
   useFlashListAnimationDisablerTsx2.__closure = items4;
   useFlashListAnimationDisablerTsx2.__workletHash = 6865280416933;
   useFlashListAnimationDisablerTsx2.__initData = tmp6;
-  const obj4 = _mod1652;
+  const obj4 = _mod1655;
   const animatedReaction = obj4.useAnimatedReaction(useFlashListAnimationDisablerTsx1, useFlashListAnimationDisablerTsx2);
   const items5 = [closure_5, sharedValue];
   let c0;

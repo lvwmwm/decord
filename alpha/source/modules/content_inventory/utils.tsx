@@ -1,17 +1,17 @@
-// Module ID: 8353
-// Function ID: 8354
+// Module ID: 8419
+// Function ID: 8420
 // Name: utils
-// Dependencies: [1089, 11, 1113, 2166, 8354, 4668, 8355, 2]
+// Dependencies: [1089, 11, 1113, 2169, 8420, 4731, 8421, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8353 (utils)
+// Module 8419 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import _mod4668 from "module_4668" /* 4668 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8354 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8355 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import _mod4731 from "module_4731" /* 4731 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8420 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8421 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -107,8 +107,8 @@ function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = _modDef2166(timestamp);
-  const tmp3 = _modDef2166;
+  const obj2 = _modDef2169(timestamp);
+  const tmp3 = _modDef2169;
   const obj3 = SnowflakeUtilsDefault;
   const diffResult = obj2.diff(tmp3(obj3.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
@@ -427,8 +427,8 @@ export function getFullResurrectedBadgeText(start) {
   let num4;
   let num5;
   const obj = { start, end: new Date() };
-  const intervalToDuration = _mod4668.intervalToDuration;
-  _mod4668;
+  const intervalToDuration = _mod4731.intervalToDuration;
+  _mod4731;
   new Date();
   const intervalToDurationResult = intervalToDuration(obj);
   const months = intervalToDurationResult.months;

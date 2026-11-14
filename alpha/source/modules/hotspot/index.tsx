@@ -1,13 +1,13 @@
-// Module ID: 8381
-// Function ID: 8382
+// Module ID: 8447
+// Function ID: 8448
 // Name: HotspotStore
-// Dependencies: [8382, 2, 8383, 8384]
+// Dependencies: [8448, 2, 8449, 8450]
 
-// Module 8381 (HotspotStore)
-import HotspotActionCreators from "HotspotActionCreators" /* 8384 */;
-import HotspotStore from "hotspot/HotspotStore" /* 8382 */;
+// Module 8447 (HotspotStore)
+import HotspotActionCreators from "HotspotActionCreators" /* 8450 */;
+import HotspotStore from "hotspot/HotspotStore" /* 8448 */;
 import size from "module_2" /* 2 */;
-import Constants from "Constants" /* 8383 */;
+import Constants from "Constants" /* 8449 */;
 
 const result = size.fileFinishedImporting("modules/hotspot/index.tsx");
 for (const key10022 in Constants) {

@@ -1,20 +1,20 @@
-// Module ID: 15274
-// Function ID: 15275
+// Module ID: 15388
+// Function ID: 15389
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 2184, 21, 5243, 575, 5489, 15275, 2118, 1113, 3465, 5866, 2]
+// Dependencies: [17, 2187, 21, 5306, 575, 5552, 15389, 2121, 1113, 3513, 5929, 2]
 // Exports: default
 
-// Module 15274 (BoostingUnavailablePill)
+// Module 15388 (BoostingUnavailablePill)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2184 */;
-import _modDef3465 from "module_3465" /* 3465 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import Text_Text from "Text/Text" /* 5866 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
+import _modDef3513 from "module_3513" /* 3513 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import Text_Text from "Text/Text" /* 5929 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -27,11 +27,11 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: formatToPlainString(prop, obj2) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(15275, dependencyMap.paths);
+  const tmp2 = asyncRequire(15389, dependencyMap.paths);
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj2 = { premiumGroupProductName: closure_5() };
-  prop = _modDef3465["5xN/C1"];
+  prop = _modDef3513["5xN/C1"];
   openLazy(tmp2, "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: closure_4 } = react_native);

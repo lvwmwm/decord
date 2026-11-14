@@ -1,8 +1,8 @@
-// Module ID: 6672
-// Function ID: 6673
+// Module ID: 6735
+// Function ID: 6736
 // Dependencies: [2]
 
-// Module 6672
+// Module 6735
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/aura/radioactive.png.js");

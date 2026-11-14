@@ -1,11 +1,12 @@
-// Module ID: 13960
-// Function ID: 13961
+// Module ID: 14065
+// Function ID: 14066
 // Name: openGameOrganizationJoinModal
-// Dependencies: [5, 13961, 13965, 6785, 13969, 2118, 2]
+// Dependencies: [5, 12369, 14066, 14070, 6848, 14073, 2121, 2]
 // Exports: default
 
-// Module 13960 (openGameOrganizationJoinModal)
-import checkGameOrganizationJoinEligibilityDefault from "checkGameOrganizationJoinEligibility" /* 13961 */;
+// Module 14065 (openGameOrganizationJoinModal)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
+import checkGameOrganizationJoinEligibilityDefault from "checkGameOrganizationJoinEligibility" /* 14066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -56,24 +57,25 @@ let obj = function _openGameOrganizationJoinModal() {
             if ("noop" !== closure_1) {
               if ("eligible" === closure_1) {
                 const obj6 = { code };
-                obj = closure_130_1(closure_130_2[3]);
-                obj.pushLazy(closure_130_0(closure_130_2[5])(closure_130_2[4], closure_130_2.paths), obj6);
+                obj = closure_130_1(closure_130_2[4]);
+                obj.pushLazy(closure_130_0(closure_130_2[6])(closure_130_2[5], closure_130_2.paths), obj6, closure_130_4);
               } else {
-                closure_130_1(closure_130_2[2])(code, closure_1);
+                closure_130_1(closure_130_2[3])(code, closure_1);
               }
             }
             c4 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp23) {
+        } catch (tmp24) {
           c4 = 3;
-          throw tmp23;
+          throw tmp24;
         }
       }
     })();
   });
   return obj(...arguments);
 };
+let closure_4 = GameOrganizationInviteConstants.GAME_ORGANIZATION_JOIN_MODAL_KEY;
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/openGameOrganizationJoinModal.tsx");
 
 export default function openGameOrganizationJoinModal() {

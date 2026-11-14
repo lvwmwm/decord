@@ -1,13 +1,13 @@
-// Module ID: 13210
-// Function ID: 13211
+// Module ID: 13316
+// Function ID: 13317
 // Name: conjureChangeRows
-// Dependencies: [1113, 4079, 6955, 2]
-// Exports: conjureMakePersonalRows, conjureShareRows
+// Dependencies: [1113, 4131, 7018, 2]
+// Exports: conjureAddToAnotherServerRows, conjureMakePersonalRows, conjureShareRows
 
-// Module 13210 (conjureChangeRows)
+// Module 13316 (conjureChangeRows)
 import intl8 from "intl" /* 1113 */;
-import _modDef4079 from "module_4079" /* 4079 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6955 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/server_share/conjureChangeRows.tsx");
@@ -18,7 +18,7 @@ export function conjureShareRows(stateFromStores) {
   let intl3;
   let intl4;
   let intl5;
-  const obj = { key: "bots", text: intl.string(_modDef4079.eSpjGV) };
+  const obj = { key: "bots", text: intl.string(_modDef4131.eSpjGV) };
   intl = intl8.intl;
   const items = [obj];
   let prop;
@@ -39,7 +39,7 @@ export function conjureShareRows(stateFromStores) {
   }
   if (!usesPreviewAppResult) {
     const push = items.push;
-    const obj2 = { key: "test_app", text: intl2.string(_modDef4079["+5f47F"]) };
+    const obj2 = { key: "test_app", text: intl2.string(_modDef4131["+5f47F"]) };
     intl2 = tmp2(1113).intl;
     push(obj2);
   }
@@ -61,20 +61,41 @@ export function conjureShareRows(stateFromStores) {
   HermesBuiltin.arraySpread(items1, prop1, tmp9);
   if (items1.includes(ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET)) {
     const push2 = items.push;
-    const obj3 = { key: "profile_widget", text: intl3.string(_modDef4079.u6ckHo) };
+    const obj3 = { key: "profile_widget", text: intl3.string(_modDef4131.u6ckHo) };
     intl3 = tmp2(1113).intl;
     push2(obj3);
   }
   if (items1.includes(ConjureProjectTypes.ConjureSupportedSurface.OVERLAY)) {
     const push3 = items.push;
-    const obj4 = { key: "overlay", text: intl4.string(_modDef4079.UZHlmt) };
+    const obj4 = { key: "overlay", text: intl4.string(_modDef4131.UZHlmt) };
     intl4 = tmp2(1113).intl;
     push3(obj4);
   }
   const push4 = items.push;
-  const obj5 = { key: "collaboration", text: intl5.string(_modDef4079["s3/5nF"]) };
+  const obj5 = { key: "collaboration", text: intl5.string(_modDef4131["s3/5nF"]) };
   intl5 = tmp2(1113).intl;
   push4(obj5);
+  return items;
+}
+export function conjureAddToAnotherServerRows(stateFromStores) {
+  let intl;
+  let intl2;
+  const obj = { key: "bots", text: intl.string(_modDef4131.eSpjGV) };
+  intl = intl8.intl;
+  const items = [obj];
+  let hasItem;
+  if (stateFromStores != null) {
+    const supported_surfaces = stateFromStores.supported_surfaces;
+    if (supported_surfaces != null) {
+      hasItem = supported_surfaces.includes(tmp(7018).ConjureSupportedSurface.APP_CHANNEL);
+    }
+  }
+  if (true === hasItem) {
+    const push = items.push;
+    const obj2 = { key: "channels", text: intl2.string(_modDef4131["D8IMa/"]) };
+    intl2 = tmp(1113).intl;
+    push(obj2);
+  }
   return items;
 }
 export function conjureMakePersonalRows(preview_app_chosen, target) {
@@ -94,7 +115,7 @@ export function conjureMakePersonalRows(preview_app_chosen, target) {
     const intl6 = intl8.intl;
     const formatToPlainString = intl6.formatToPlainString;
     const canRemoveBot = target.canRemoveBot;
-    const tmp20 = _modDef4079;
+    const tmp20 = _modDef4131;
     if (canRemoveBot) {
       PDLHwR = tmp20["cU/7df"];
       tmp = tmp19;
@@ -112,7 +133,7 @@ export function conjureMakePersonalRows(preview_app_chosen, target) {
       const listFormat = new Intl.ListFormat(tmp17(1113).intl.currentLocale, { type: "conjunction" });
       const channelNames = target.channelNames;
       const push7 = items.push;
-      const obj4 = { key: "channels", text: intl7.formatToPlainString(tmp(4079).DbZ8af, obj5) };
+      const obj4 = { key: "channels", text: intl7.formatToPlainString(tmp(4131).DbZ8af, obj5) };
       const formatResult = listFormat.format(channelNames.map((item) => "#" + item));
       intl7 = tmp17(1113).intl;
       obj5 = { channels: formatResult };
@@ -123,41 +144,41 @@ export function conjureMakePersonalRows(preview_app_chosen, target) {
   const usesPreviewAppResult = obj3.usesPreviewApp(preview_app_chosen) && true !== preview_app_chosen.preview_app_chosen;
   if (usesPreviewAppResult) {
     const push = items.push;
-    const obj6 = { key: "test_app", text: intl.string(_modDef4079.jKXaUH) };
+    const obj6 = { key: "test_app", text: intl.string(_modDef4131.jKXaUH) };
     intl = tmp3(1113).intl;
     push(obj6);
   }
   const supported_surfaces = preview_app_chosen.supported_surfaces;
   let hasItem;
   if (supported_surfaces != null) {
-    hasItem = supported_surfaces.includes(tmp3(6955).ConjureSupportedSurface.PROFILE_WIDGET);
+    hasItem = supported_surfaces.includes(tmp3(7018).ConjureSupportedSurface.PROFILE_WIDGET);
   }
   if (true === hasItem) {
     const push2 = items.push;
-    const obj7 = { key: "profile_widget", text: intl2.string(_modDef4079.HHZxrL) };
+    const obj7 = { key: "profile_widget", text: intl2.string(_modDef4131.HHZxrL) };
     intl2 = tmp3(1113).intl;
     push2(obj7);
   }
   const supported_surfaces2 = preview_app_chosen.supported_surfaces;
   let hasItem1;
   if (supported_surfaces2 != null) {
-    hasItem1 = supported_surfaces2.includes(tmp3(6955).ConjureSupportedSurface.OVERLAY);
+    hasItem1 = supported_surfaces2.includes(tmp3(7018).ConjureSupportedSurface.OVERLAY);
   }
   if (true === hasItem1) {
     const push3 = items.push;
-    const obj8 = { key: "overlay", text: intl3.string(_modDef4079.rVTFDs) };
+    const obj8 = { key: "overlay", text: intl3.string(_modDef4131.rVTFDs) };
     intl3 = tmp3(1113).intl;
     push3(obj8);
   }
   const tmp3Result = ConjureProjectTypes;
   if (tmp3Result.isProjectGuildCollaborationEnabled(preview_app_chosen)) {
     const push4 = items.push;
-    const obj9 = { key: "collaboration", text: intl4.string(_modDef4079["+a1lOS"]) };
+    const obj9 = { key: "collaboration", text: intl4.string(_modDef4131["+a1lOS"]) };
     intl4 = tmp3(1113).intl;
     push4(obj9);
   }
   const push5 = items.push;
-  const obj10 = { key: "only_you", text: intl5.string(_modDef4079.TrTx1Z) };
+  const obj10 = { key: "only_you", text: intl5.string(_modDef4131.TrTx1Z) };
   intl5 = tmp3(1113).intl;
   push5(obj10);
   return items;

@@ -1,12 +1,12 @@
-// Module ID: 16269
-// Function ID: 16270
+// Module ID: 16391
+// Function ID: 16392
 // Name: GuildBadgePottedPlant
-// Dependencies: [19, 21, 16235, 8197, 2]
+// Dependencies: [19, 21, 16357, 8263, 2]
 // Exports: GuildBadgePottedPlant
 
-// Module 16269 (GuildBadgePottedPlant)
-import inlineStyles from "inlineStyles" /* 8197 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16235 */;
+// Module 16391 (GuildBadgePottedPlant)
+import inlineStyles from "inlineStyles" /* 8263 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16357 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ export function GuildBadgePottedPlant(width) {
   items[5] = React2(Path, { d: "M13 11v1H3v-1h10Z", fill: str });
   items[6] = React2(inlineStyles.Path, { d: "M4 14h-1v-2h1v2ZM5 11h-2v-1h2v1ZM2 4H1V2h1v2ZM10 4h-1v-1h1v1ZM11 3h-1V2h1v1ZM5 2H2V1h3v1ZM14 2H11V1h3v1Z", fill: "white" });
   let str2;
-  const Path2 = tmp2(8197).Path;
+  const Path2 = tmp2(8263).Path;
   if (secondaryColorsTransformed != null) {
     str2 = secondaryColorsTransformed[2];
   }
@@ -76,7 +76,7 @@ export function GuildBadgePottedPlant(width) {
   }
   items[7] = React2(Path2, { d: "M12 14H4v-2h8v2ZM13 11H5v-1h8v1Z", fill: str2 });
   let str3;
-  const Path3 = tmp2(8197).Path;
+  const Path3 = tmp2(8263).Path;
   if (secondaryColorsTransformed != null) {
     str3 = secondaryColorsTransformed[1];
   }

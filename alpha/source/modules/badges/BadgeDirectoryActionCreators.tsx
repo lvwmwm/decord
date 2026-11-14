@@ -1,13 +1,13 @@
-// Module ID: 8486
-// Function ID: 8487
+// Module ID: 8552
+// Function ID: 8553
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1385, 1072, 572, 1282, 6708, 6713, 1242, 559, 1089, 2]
+// Dependencies: [5, 1388, 1072, 572, 1285, 6771, 6776, 1242, 559, 1089, 2]
 // Exports: ackBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8486 (BadgeDirectoryActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+// Module 8552 (BadgeDirectoryActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -138,7 +138,7 @@ let obj = function _fetchBadgeDirectory() {
     if (closure_1 === undefined) {
       obj5 = {};
     }
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

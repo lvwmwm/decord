@@ -1,27 +1,27 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 7329
+// Function ID: 7330
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6952, 1385, 7266, 6954, 1072, 6896, 4, 572, 1282, 7267, 6016, 7269, 559, 7270, 7271, 7272, 7274, 7277, 7275, 5914, 6955, 6992, 7283, 7286, 7287, 2]
+// Dependencies: [109, 5, 7015, 1388, 7330, 7017, 1072, 6959, 4, 572, 1285, 7331, 6079, 7333, 559, 7334, 7335, 7336, 7338, 7341, 7339, 5977, 7018, 7055, 7347, 7350, 7351, 2]
 // Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, installConjureProjectForOwner, isConjureProjectUnavailable, loadMissingConjureProjects, makeConjureProjectPersonal, prefetchProject, refetchProjectsAfterReconnect, refreshPreviewApplication, selectGlobalChatProject, setGuildHints, setSelectedProjectForGuild, shareConjureProject, takePrefetchedRead, updateProjectSettings
 
-// Module 7265 (ConjureActionCreators)
+// Module 7329 (ConjureActionCreators)
 import logger_Logger from "logger/Logger" /* 4 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5914 */;
-import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 7271 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 7272 */;
-import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 7274 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 7275 */;
-import createProxyTicket from "createProxyTicket" /* 7277 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 7335 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 7336 */;
+import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 7338 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 7339 */;
+import createProxyTicket from "createProxyTicket" /* 7341 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6952 */;
-import UserStore from "UserStore" /* 1385 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 7266 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import UserStore from "UserStore" /* 1388 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 7330 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -326,10 +326,10 @@ function currentSession() {
   obj = { userId: id, generation: ConjureProjectStore.getSessionGeneration() };
   return obj;
 }
-function isCurrentSession(session) {
-  let tmp = session.generation === ConjureProjectStore.getSessionGeneration();
+function isCurrentSession(generation) {
+  let tmp = generation.generation === ConjureProjectStore.getSessionGeneration();
   if (tmp) {
-    const userId = session.userId;
+    const userId = generation.userId;
     const currentUser = UserStore.getCurrentUser();
     let id;
     if (currentUser != null) {

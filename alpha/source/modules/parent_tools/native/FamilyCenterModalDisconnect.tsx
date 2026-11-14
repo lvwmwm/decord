@@ -1,24 +1,24 @@
-// Module ID: 17331
-// Function ID: 17332
+// Module ID: 17454
+// Function ID: 17455
 // Name: FamilyCenterModalDisconnect
-// Dependencies: [32, 19, 17, 21, 5243, 575, 6785, 5309, 9549, 5951, 1113, 14117, 14120, 2685, 8142, 8144, 17332, 7366, 5866, 17281, 6274, 15846, 13975, 6888, 5873, 7427, 12428, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 6848, 5372, 9616, 6014, 1113, 14224, 14227, 2701, 8208, 8210, 17455, 7430, 5929, 17404, 6337, 15966, 14079, 6951, 5936, 7493, 12523, 2]
 // Exports: default
 
-// Module 17331 (FamilyCenterModalDisconnect)
+// Module 17454 (FamilyCenterModalDisconnect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
-import _modDef2685 from "module_2685" /* 2685 */;
-import UserUtilsDefault from "UserUtils" /* 5309 */;
-import ToastUtils from "ToastUtils" /* 5951 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7366 */;
-import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 17332 */;
+import _modDef2701 from "module_2701" /* 2701 */;
+import UserUtilsDefault from "UserUtils" /* 5372 */;
+import ToastUtils from "ToastUtils" /* 6014 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7430 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 17455 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -56,7 +56,7 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   }, []);
   const obj = UserUtilsDefault;
   const name = obj.useName(otherUser);
-  const obj2 = otherUser(9549);
+  const obj2 = otherUser(9616);
   const requiresParentalConsent = obj2.useRequiresParentalConsent(otherUser.id);
   [tmp9, c1] = disconnectLinkRequest(isDisconnectLoading.useState(false), 2);
   disconnectLinkRequest(isDisconnectLoading.useState(false), 2);
@@ -70,41 +70,41 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
     _undefined(false);
     c2(false);
   }, []);
-  const obj3 = otherUser(14117);
+  const obj3 = otherUser(14224);
   const familyCenterActions = obj3.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   disconnectLinkRequest = familyCenterActions.disconnectLinkRequest;
   isDisconnectLoading = familyCenterActions.isDisconnectLoading;
-  const useAgeSpecificText = otherUser(14120).useAgeSpecificText;
-  otherUser(14120);
+  const useAgeSpecificText = otherUser(14227).useAgeSpecificText;
+  otherUser(14227);
   let intl = otherUser(1113).intl;
-  const formatResult = intl.format(_modDef2685.F2lccv, { username: name });
+  const formatResult = intl.format(_modDef2701.F2lccv, { username: name });
   const intl2 = otherUser(1113).intl;
-  const ageSpecificText = useAgeSpecificText(formatResult, intl2.string(_modDef2685["WH+Gba"]));
-  const useAgeSpecificText2 = otherUser(14120).useAgeSpecificText;
-  otherUser(14120);
+  const ageSpecificText = useAgeSpecificText(formatResult, intl2.string(_modDef2701["WH+Gba"]));
+  const useAgeSpecificText2 = otherUser(14227).useAgeSpecificText;
+  otherUser(14227);
   const intl3 = otherUser(1113).intl;
-  const stringResult = intl3.string(_modDef2685.hOEHFn);
+  const stringResult = intl3.string(_modDef2701.hOEHFn);
   const intl4 = otherUser(1113).intl;
-  const ageSpecificText2 = useAgeSpecificText2(stringResult, intl4.format(_modDef2685.Or6hgl, { username: name }));
-  const useAgeSpecificText3 = otherUser(14120).useAgeSpecificText;
-  otherUser(14120);
+  const ageSpecificText2 = useAgeSpecificText2(stringResult, intl4.format(_modDef2701.Or6hgl, { username: name }));
+  const useAgeSpecificText3 = otherUser(14227).useAgeSpecificText;
+  otherUser(14227);
   const intl5 = otherUser(1113).intl;
-  const formatResult1 = intl5.format(_modDef2685.XyRW4c, { username: name });
+  const formatResult1 = intl5.format(_modDef2701.XyRW4c, { username: name });
   const intl6 = otherUser(1113).intl;
-  const ageSpecificText3 = useAgeSpecificText3(formatResult1, intl6.format(_modDef2685.PlrZal, { username: name }));
-  const useAgeSpecificText4 = otherUser(14120).useAgeSpecificText;
-  otherUser(14120);
+  const ageSpecificText3 = useAgeSpecificText3(formatResult1, intl6.format(_modDef2701.PlrZal, { username: name }));
+  const useAgeSpecificText4 = otherUser(14227).useAgeSpecificText;
+  otherUser(14227);
   const intl7 = otherUser(1113).intl;
-  const stringResult1 = intl7.string(_modDef2685.eiABQz);
+  const stringResult1 = intl7.string(_modDef2701.eiABQz);
   const intl8 = otherUser(1113).intl;
-  const ageSpecificText4 = useAgeSpecificText4(stringResult1, intl8.string(_modDef2685.PGQBnk));
-  const useAgeSpecificText5 = otherUser(14120).useAgeSpecificText;
-  otherUser(14120);
+  const ageSpecificText4 = useAgeSpecificText4(stringResult1, intl8.string(_modDef2701.PGQBnk));
+  const useAgeSpecificText5 = otherUser(14227).useAgeSpecificText;
+  otherUser(14227);
   const intl9 = otherUser(1113).intl;
-  const stringResult2 = intl9.string(_modDef2685.sCbKs4);
+  const stringResult2 = intl9.string(_modDef2701.sCbKs4);
   const intl10 = otherUser(1113).intl;
   const items = [disconnectLinkRequest, otherUser.id];
-  const ageSpecificText5 = useAgeSpecificText5(stringResult2, intl10.string(_modDef2685["0ki7+P"]));
+  const ageSpecificText5 = useAgeSpecificText5(stringResult2, intl10.string(_modDef2701["0ki7+P"]));
   const items1 = [isDisconnectLoading];
   const callback2 = isDisconnectLoading.useCallback(() => {
     disconnectLinkRequest(otherUser.id);
@@ -122,37 +122,37 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
       c2(arg0);
     }
   }, items2);
-  const ModalScreen = otherUser(8142).ModalScreen;
+  const ModalScreen = otherUser(8208).ModalScreen;
   const obj4 = { style: tmp.header, children: items3 };
-  const ModalContent = otherUser(8144).ModalContent;
+  const ModalContent = otherUser(8210).ModalContent;
   const obj5 = { otherUser, iconSrc: AssetRegistryDefault };
   const tmp34 = FamilyCenterAvatarPairDefault;
   items3 = [closure_6(tmp34, obj5), , ];
-  const obj6 = { style: tmp.title, variant: "body-lg/semibold", children: intl11.format(_modDef2685.o0JXuK, { username: name }) };
-  const Text = otherUser(5866).Text;
+  const obj6 = { style: tmp.title, variant: "body-lg/semibold", children: intl11.format(_modDef2701.o0JXuK, { username: name }) };
+  const Text = otherUser(5929).Text;
   intl11 = otherUser(1113).intl;
   items3[1] = closure_6(Text, obj6);
   const obj7 = { style: tmp.subtitle, variant: "body-sm/semibold", color: "text-default", children: ageSpecificText };
-  items3[2] = closure_6(otherUser(5866).Text, obj7);
+  items3[2] = closure_6(otherUser(5929).Text, obj7);
   const items4 = [closure_7(View, obj4), , , ];
   let tmp33Result = requiresParentalConsent;
   if (tmp33Result) {
     const obj8 = { style: tmp.warning, text: ageSpecificText2 };
-    tmp33Result = tmp33(tmp3(17281), obj8);
+    tmp33Result = tmp33(tmp3(17404), obj8);
   }
   const obj9 = { children: items4 };
   items4[1] = tmp33Result;
   const obj10 = { style: tmp.body, variant: "body-md/normal", color: "text-default", children: ageSpecificText3 };
-  items4[2] = closure_6(otherUser(5866).Text, obj10);
+  items4[2] = closure_6(otherUser(5929).Text, obj10);
   const obj11 = { spacing: nativeDefault.space.PX_12, children: items5 };
-  const Stack = tmp6(6274).Stack;
-  items5 = [closure_6(otherUser(15846).Checkbox, { label: ageSpecificText4, checked: tmp9, onToggle: callback3 }), closure_6(otherUser(15846).Checkbox, { label: ageSpecificText5, checked: tmp11, onToggle: callback4 })];
+  const Stack = tmp6(6337).Stack;
+  items5 = [closure_6(otherUser(15966).Checkbox, { label: ageSpecificText4, checked: tmp9, onToggle: callback3 }), closure_6(otherUser(15966).Checkbox, { label: ageSpecificText5, checked: tmp11, onToggle: callback4 })];
   items4[3] = closure_7(Stack, obj11);
   const items6 = [closure_7(ModalContent, obj9), ];
-  const ModalFooter = tmp6(13975).ModalFooter;
-  const ButtonGroup = tmp6(6888).ButtonGroup;
+  const ModalFooter = tmp6(14079).ModalFooter;
+  const ButtonGroup = tmp6(6951).ButtonGroup;
   let tmp36 = !tmp9;
-  const Button = tmp6(5873).Button;
+  const Button = tmp6(5936).Button;
   if (tmp9) {
     tmp36 = !tmp11;
   }
@@ -162,11 +162,11 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   const obj12 = { children: items6 };
   const obj13 = { children: closure_7(ButtonGroup, obj14) };
   obj14 = { children: items7 };
-  const obj15 = { variant: "destructive", disabled: tmp36, loading: isDisconnectLoading, text: intl12.string(_modDef2685["c5L+sl"]), onPress: callback2 };
+  const obj15 = { variant: "destructive", disabled: tmp36, loading: isDisconnectLoading, text: intl12.string(_modDef2701["c5L+sl"]), onPress: callback2 };
   intl12 = tmp6(1113).intl;
   items7 = [closure_6(Button, obj15), ];
   const obj16 = { variant: "tertiary", text: intl13.string(otherUser(1113).t["3ilveh"]), onPress: ModalActionCreatorsDefault.pop };
-  const Button2 = tmp6(5873).Button;
+  const Button2 = tmp6(5936).Button;
   intl13 = tmp6(1113).intl;
   items7[1] = closure_6(Button2, obj16);
   items6[1] = closure_6(ModalFooter, obj13);
@@ -209,7 +209,7 @@ export default function FamilyCenterModalDisconnect(otherUser) {
     return obj;
   }, items);
   let obj = { initialRouteName: "DISCONNECT", screens: memo, headerBackTitle: intl.string(otherUser(1113).t["13/7kX"]) };
-  const Modal = otherUser(12428).Modal;
+  const Modal = otherUser(12523).Modal;
   intl = otherUser(1113).intl;
   return closure_6(Modal, obj);
 };

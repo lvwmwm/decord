@@ -1,271 +1,168 @@
 // Module ID: 9750
 // Function ID: 9751
-// Dependencies: [41, 42, 9751, 9737, 9748, 9756]
-// Exports: getStackAsyncContextStrategy
+// Dependencies: [5357]
 
 // Module 9750
-import _mod9737 from "module_9737" /* 9737 */;
-import _mod9748 from "module_9748" /* 9748 */;
-import _mod9751 from "module_9751" /* 9751 */;
-import _mod9756 from "module_9756" /* 9756 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import "module_5357";
+import module_5357_mod from "module_5357" /* 5357 */;
 
-const require = globalThis.__r;
-let _require;
+let items;
+let items1;
+let items10;
+let items11;
+let items12;
+let items13;
+let items14;
+let items15;
+let items16;
+let items17;
+let items18;
+let items19;
+let items2;
+let items20;
+let items21;
+let items22;
+let items23;
+let items24;
+let items25;
+let items26;
+let items27;
+let items28;
+let items29;
+let items3;
+let items30;
+let items4;
+let items5;
+let items6;
+let items7;
+let items8;
+let items9;
+let module_5357;
+let oneOfType;
+let oneOfType10;
+let oneOfType11;
+let oneOfType12;
+let oneOfType13;
+let oneOfType14;
+let oneOfType15;
+let oneOfType16;
+let oneOfType17;
+let oneOfType18;
+let oneOfType19;
+let oneOfType2;
+let oneOfType20;
+let oneOfType21;
+let oneOfType22;
+let oneOfType23;
+let oneOfType24;
+let oneOfType25;
+let oneOfType26;
+let oneOfType27;
+let oneOfType28;
+let oneOfType29;
+let oneOfType3;
+let oneOfType30;
+let oneOfType31;
+let oneOfType4;
+let oneOfType5;
+let oneOfType6;
+let oneOfType7;
+let oneOfType8;
+let oneOfType9;
+const size = { display: module_5357.oneOf(["none", "flex"]), width: oneOfType(items), height: oneOfType2(items1), start: oneOfType3(items2), end: oneOfType4(items3), top: oneOfType5(items4), left: oneOfType6(items5), right: oneOfType7(items6), bottom: oneOfType8(items7), minWidth: oneOfType9(items8), maxWidth: oneOfType10(items9), minHeight: oneOfType11(items10), maxHeight: oneOfType12(items11), margin: oneOfType13(items12), marginVertical: oneOfType14(items13), marginHorizontal: oneOfType15(items14), marginTop: oneOfType16(items15), marginBottom: oneOfType17(items16), marginLeft: oneOfType18(items17), marginRight: oneOfType19(items18), marginStart: oneOfType20(items19), marginEnd: oneOfType21(items20), padding: oneOfType22(items21), paddingVertical: oneOfType23(items22), paddingHorizontal: oneOfType24(items23), paddingTop: oneOfType25(items24), paddingBottom: oneOfType26(items25), paddingLeft: oneOfType27(items26), paddingRight: oneOfType28(items27), paddingStart: oneOfType29(items28), paddingEnd: oneOfType30(items29), borderWidth: module_5357.number, borderTopWidth: module_5357.number, borderStartWidth: module_5357.number, borderEndWidth: module_5357.number, borderRightWidth: module_5357.number, borderBottomWidth: module_5357.number, borderLeftWidth: module_5357.number, position: module_5357.oneOf(["absolute", "relative"]), flexDirection: module_5357.oneOf(["row", "row-reverse", "column", "column-reverse"]), flexWrap: module_5357.oneOf(["wrap", "nowrap", "wrap-reverse"]), justifyContent: module_5357.oneOf(["flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly"]), alignItems: module_5357.oneOf(["flex-start", "flex-end", "center", "stretch", "baseline"]), alignSelf: module_5357.oneOf(["auto", "flex-start", "flex-end", "center", "stretch", "baseline"]), alignContent: module_5357.oneOf(["flex-start", "flex-end", "center", "stretch", "space-between", "space-around"]), overflow: module_5357.oneOf(["visible", "hidden", "scroll"]), flex: module_5357.number, flexGrow: module_5357.number, flexShrink: module_5357.number, flexBasis: oneOfType31(items30), aspectRatio: module_5357.number, zIndex: module_5357.number, direction: module_5357.oneOf(["inherit", "ltr", "rtl"]) };
+module_5357 = module_5357_mod;
+oneOfType = module_5357.oneOfType;
+items = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType2 = module_5357.oneOfType;
+items1 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType3 = module_5357.oneOfType;
+items2 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType4 = module_5357.oneOfType;
+items3 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType5 = module_5357.oneOfType;
+items4 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType6 = module_5357.oneOfType;
+items5 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType7 = module_5357.oneOfType;
+items6 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType8 = module_5357.oneOfType;
+items7 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType9 = module_5357.oneOfType;
+items8 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType10 = module_5357.oneOfType;
+items9 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType11 = module_5357.oneOfType;
+items10 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType12 = module_5357.oneOfType;
+items11 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType13 = module_5357.oneOfType;
+items12 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType14 = module_5357.oneOfType;
+items13 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType15 = module_5357.oneOfType;
+items14 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType16 = module_5357.oneOfType;
+items15 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType17 = module_5357.oneOfType;
+items16 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType18 = module_5357.oneOfType;
+items17 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType19 = module_5357.oneOfType;
+items18 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType20 = module_5357.oneOfType;
+items19 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType21 = module_5357.oneOfType;
+items20 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType22 = module_5357.oneOfType;
+items21 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType23 = module_5357.oneOfType;
+items22 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType24 = module_5357.oneOfType;
+items23 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType25 = module_5357.oneOfType;
+items24 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType26 = module_5357.oneOfType;
+items25 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType27 = module_5357.oneOfType;
+items26 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType28 = module_5357.oneOfType;
+items27 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType29 = module_5357.oneOfType;
+items28 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType30 = module_5357.oneOfType;
+items29 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
+oneOfType31 = module_5357.oneOfType;
+items30 = [module_5357.number, module_5357.string];
+module_5357 = module_5357_mod;
 
-function withScope(arg0) {
-  const obj = _mod9748;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod9748;
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = _mod9756;
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = _mod9756;
-    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(arg0);
-}
-function withSetScope(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const obj = _mod9748;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod9748;
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = _mod9756;
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = _mod9756;
-    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(() => {
-    stack.getStackTop().scope = scope;
-    return closure_1(scope);
-  });
-}
-function withIsolationScope(arg0) {
-  let closure_0;
-  _require = arg0;
-  const obj = require("module_9748");
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = require("module_9748");
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = require("module_9756");
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = require("module_9756");
-    stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(function() {
-    const obj = require("module_9748");
-    const mainCarrier = obj.getMainCarrier();
-    const obj2 = require("module_9748");
-    const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-    let stack = sentryCarrier.stack;
-    const tmp = closure_0;
-    if (!stack) {
-      const tmp2Result = require("module_9756");
-      const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
-      const self = this;
-      const self2 = this;
-      const tmp2Result2 = require("module_9756");
-      stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
-    }
-    sentryCarrier.stack = stack;
-    return tmp(stack.getIsolationScope());
-  });
-}
-class AsyncContextStack {
-  constructor(arg0, arg1) {
-    const self = this;
-    let scope = arg0;
-    _classCallCheck(this, AsyncContextStack);
-    if (!arg0) {
-      const self2 = this;
-      const self3 = this;
-      scope = new _mod9751.Scope();
-    }
-    let scope1 = arg1;
-    if (!scope1) {
-      const self4 = this;
-      const self5 = this;
-      scope1 = new _mod9751.Scope();
-    }
-    const items = [{ scope }];
-    self._stack = items;
-    self._isolationScope = scope1;
-  }
-}
-const entry = {
-  key: "withScope",
-  value: function withScope(fn) {
-    const self = this;
-    try {
-      let nextPromise;
-      const promise = fn(tmp);
-      const obj = _mod9737;
-      if (obj.isThenable(promise)) {
-        nextPromise = promise.then((result) => {
-          self._popScope();
-          return result;
-        }, (arg0) => {
-          self._popScope();
-          throw arg0;
-        });
-      } else {
-        self._popScope();
-        nextPromise = promise;
-      }
-      return nextPromise;
-    } catch (tmp9) {
-      self._popScope();
-      throw tmp9;
-    }
-  }
-};
-let items = [
-  entry,
-  {
-    key: "getClient",
-    value: function getClient() {
-      return this.getStackTop().client;
-    }
-  },
-  {
-    key: "getScope",
-    value: function getScope() {
-      return this.getStackTop().scope;
-    }
-  },
-  {
-    key: "getIsolationScope",
-    value: function getIsolationScope() {
-      return this._isolationScope;
-    }
-  },
-  {
-    key: "getStackTop",
-    value: function getStackTop() {
-      return this._stack[this._stack.length - 1];
-    }
-  },
-  {
-    key: "_pushScope",
-    value: function _pushScope() {
-      const scope = this.getScope();
-      const cloneResult = scope.clone();
-      const _stack = this._stack;
-      const obj = { client: this.getClient(), scope: cloneResult };
-      _stack.push(obj);
-      return cloneResult;
-    }
-  },
-  {
-    key: "_popScope",
-    value: function _popScope() {
-      let arr = this._stack.length > 1;
-      if (arr) {
-        const _stack = this._stack;
-        arr = _stack.pop();
-      }
-      return arr;
-    }
-  }
-];
-const _moduleResult = _createClass(AsyncContextStack, items);
-let c3 = _moduleResult;
-const AsyncContextStack_export = _moduleResult;
-
-export { AsyncContextStack_export as AsyncContextStack };
-export function getStackAsyncContextStrategy() {
-  let obj = {
-    withIsolationScope,
-    withScope,
-    withSetScope,
-    withSetIsolationScope(arg0, arg1) {
-      let closure_0 = arg1;
-      let tmp = closure_0;
-      let obj = closure_0(closure_1[4]);
-      let mainCarrier = obj.getMainCarrier();
-      let obj2 = closure_0(closure_1[4]);
-      let sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = tmp(closure_1[5]);
-        let defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        let self = this;
-        let self2 = this;
-        const tmpResult2 = tmp(closure_1[5]);
-        stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.withScope(function() {
-        const obj = require("module_9748");
-        const mainCarrier = obj.getMainCarrier();
-        const obj2 = require("module_9748");
-        const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-        let stack = sentryCarrier.stack;
-        const tmp = closure_0;
-        if (!stack) {
-          const tmp2Result = require("module_9756");
-          const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
-          const self = this;
-          const self2 = this;
-          const tmp2Result2 = require("module_9756");
-          stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
-        }
-        sentryCarrier.stack = stack;
-        return tmp(stack.getIsolationScope());
-      });
-    },
-    getCurrentScope() {
-      const obj = require("module_9748");
-      const mainCarrier = obj.getMainCarrier();
-      const obj2 = require("module_9748");
-      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = require("module_9756");
-        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        const self = this;
-        const self2 = this;
-        const tmpResult2 = require("module_9756");
-        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.getScope();
-    },
-    getIsolationScope() {
-      const obj = require("module_9748");
-      const mainCarrier = obj.getMainCarrier();
-      const obj2 = require("module_9748");
-      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = require("module_9756");
-        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        const self = this;
-        const self2 = this;
-        const tmpResult2 = require("module_9756");
-        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.getIsolationScope();
-    }
-  };
-  return obj;
-}
+export default size;

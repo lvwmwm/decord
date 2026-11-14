@@ -1,25 +1,25 @@
-// Module ID: 17256
-// Function ID: 17257
+// Module ID: 17379
+// Function ID: 17380
 // Name: IOSConversationSuggestionsSetting
-// Dependencies: [19, 17, 9135, 1254, 1259, 5158, 1377, 3, 12311, 1113, 2]
+// Dependencies: [19, 17, 9202, 1258, 1263, 5221, 1380, 3, 12406, 1113, 2]
 
-// Module 17256 (IOSConversationSuggestionsSetting)
+// Module 17379 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import _slicedToArray from "_slicedToArray" /* 5158 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import _slicedToArray from "_slicedToArray" /* 5221 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
 import react from "react" /* 19 */;
-import module_1254 from "module_1254" /* 1254 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import module_1258 from "module_1258" /* 1258 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 let conversationSuggestionsEnabled;
 
 const NativeModules = react_native.NativeModules;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let closure_4 = module_1254.createWithEqualityFn(() => ({ isEnabled: true }));
+let closure_4 = module_1258.createWithEqualityFn(() => ({ isEnabled: true }));
 const IntentsHandler = NativeModules.IntentsHandler;
 let obj = {
   useTitle() {

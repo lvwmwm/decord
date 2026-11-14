@@ -1,21 +1,21 @@
-// Module ID: 18446
-// Function ID: 18447
+// Module ID: 18571
+// Function ID: 18572
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [5114, 18438, 9135, 12312, 17223, 18441, 5068, 6205, 1113, 6277, 7747, 18447, 12311, 2]
+// Dependencies: [5177, 18563, 9202, 12407, 17346, 18566, 5131, 6268, 1113, 6340, 7813, 18572, 12406, 2]
 
-// Module 18446 (SafetyGuildSettingDirectMessages)
+// Module 18571 (SafetyGuildSettingDirectMessages)
 import intl5 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 5068 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
-import AlertDefault from "Alert" /* 6277 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 12312 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17223 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18441 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 18447 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18438 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import AlertDefault from "Alert" /* 6340 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 12407 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18566 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 18572 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18563 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -132,7 +132,7 @@ let obj = {
       } else {
         sanitizedRestrictedGuilds.add(tmp);
       }
-      let RestrictedGuildIds = tmp2(5068).RestrictedGuildIds;
+      let RestrictedGuildIds = tmp2(5131).RestrictedGuildIds;
       const _Array = Array;
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
     }

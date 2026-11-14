@@ -1,60 +1,18 @@
 // Module ID: 16757
 // Function ID: 16758
-// Dependencies: [19, 16739, 16758, 21]
-// Exports: default
+// Dependencies: [16758]
 
 // Module 16757
-import react from "react" /* 19 */;
-import module_16739_mod from "module_16739" /* 16739 */;
-import module_16758_mod from "module_16758" /* 16758 */;
-import Fragment from "Fragment" /* 21 */;
+import _mod16758 from "module_16758" /* 16758 */;
 
-let closure_0;
 
-let tmp4;
-let tmp6;
-if (react) {
-  const __esModule = react.__esModule;
-}
-let module_16739 = module_16739_mod;
-if (!module_16739) {
-  const obj = { default: module_16739 };
-  tmp4 = obj;
-} else {
-  tmp4 = module_16739;
-}
-module_16739 = tmp4;
-let module_16758 = module_16758_mod;
-if (!module_16758) {
-  let obj2 = { default: module_16758 };
-  tmp6 = obj2;
-} else {
-  tmp6 = module_16758;
-}
-module_16758 = tmp6;
-
-export default () => () => {
-  closure_0 = closure_0.default();
-  return {
-    onCommand(type) {
-      if ("storybook" === type.type) {
-        closure_0.emit("storybook", type.payload);
-      }
-    },
-    features: {
-      storybookSwitcher(arg0) {
-        closure_0 = arg0;
-        return (arg0) => {
-          closure_0 = arg0;
-          return function StorybookSwitcherContainer(arg0) {
-            const jsx = React.jsx;
-            const jsx2 = React.jsx;
-            const obj2 = {};
-            const merged = Object.assign(arg0);
-            return <_default storybookUi={emitter} emitter={emitter}>{jsx2(emitter, obj2)}</_default>;
-          };
-        };
-      }
-    }
-  };
+export default function(arg0) {
+  if (_mod16758(arg0)) {
+    const self = this;
+    const self2 = this;
+    const tmp2 = new TypeError("Can't call method on " + arg0);
+    throw tmp2;
+  } else {
+    return arg0;
+  }
 };

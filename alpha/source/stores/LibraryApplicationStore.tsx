@@ -1,16 +1,16 @@
-// Module ID: 2160
-// Function ID: 2161
+// Module ID: 2163
+// Function ID: 2164
 // Name: LibraryApplicationStore
-// Dependencies: [2161, 502, 1072, 510, 8465, 1403, 504, 12, 572, 2]
+// Dependencies: [2164, 502, 1072, 510, 8531, 1406, 504, 12, 572, 2]
 
-// Module 2160 (LibraryApplicationStore)
+// Module 2163 (LibraryApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage6 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import FlagUtilsAll from "FlagUtils" /* 1403 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 8465 */;
-import LibraryApplicationRecord from "LibraryApplicationRecord" /* 2161 */;
+import FlagUtilsAll from "FlagUtils" /* 1406 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 8531 */;
+import LibraryApplicationRecord from "LibraryApplicationRecord" /* 2164 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ class LibraryApplicationStore extends Store {
         obj2 = closure_10[comboId];
       }
       if (null != obj2) {
-        const tmp2Result = tmp2(8465);
+        const tmp2Result = tmp2(8531);
         if (tmp2Result.isUserEntitledToLibraryApplication(obj2)) {
           return obj2;
         }

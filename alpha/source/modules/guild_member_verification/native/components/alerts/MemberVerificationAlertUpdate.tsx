@@ -1,20 +1,20 @@
-// Module ID: 15942
-// Function ID: 15943
+// Module ID: 16062
+// Function ID: 16063
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 1072, 21, 5243, 6277, 1113, 5949, 5957, 15943, 5866, 2]
+// Dependencies: [19, 1072, 21, 5306, 6340, 1113, 6012, 6020, 16063, 5929, 2]
 // Exports: default
 
-// Module 15942 (MemberVerificationAlertUpdate)
+// Module 16062 (MemberVerificationAlertUpdate)
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import LinkingDefault from "Linking" /* 5949 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import AlertDefault from "Alert" /* 6277 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15943 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import LinkingDefault from "Linking" /* 6012 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import AlertDefault from "Alert" /* 6340 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16063 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

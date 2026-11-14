@@ -1,19 +1,19 @@
-// Module ID: 13687
-// Function ID: 13688
+// Module ID: 13792
+// Function ID: 13793
 // Name: conjureComposerPills
-// Dependencies: [32, 17, 1385, 13121, 11005, 5309, 13518, 1113, 4079, 13688, 2]
+// Dependencies: [32, 17, 1388, 13227, 11074, 5372, 13621, 1113, 4131, 13793, 2]
 // Exports: conjureFilePillIcon, conjurePillNodes, conjurePillText, conjureUserPillLabel, decodeConjurePills, encodeConjurePills
 
-// Module 13687 (conjureComposerPills)
+// Module 13792 (conjureComposerPills)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef4079 from "module_4079" /* 4079 */;
-import UserUtils from "UserUtils" /* 5309 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11005 */;
-import ChatInputParser from "ChatInputParser" /* 13688 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import UserUtils from "UserUtils" /* 5372 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11074 */;
+import ChatInputParser from "ChatInputParser" /* 13793 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1385 */;
-import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 13121 */;
+import UserStore from "UserStore" /* 1388 */;
+import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 13227 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -67,7 +67,7 @@ export function conjureUserPillLabel(id) {
 export function decodeConjurePills(draft) {
   map = new Map();
   let obj = {
-    text: draft.replace(map(13518).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
+    text: draft.replace(map(13621).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
       let combined;
       let uri;
       if (null != arg1) {
@@ -87,7 +87,7 @@ export function decodeConjurePills(draft) {
         }
         if (combined == null) {
           const intl = intl2.intl;
-          combined = intl.string(_modDef4079.ff9Q4C);
+          combined = intl.string(_modDef4131.ff9Q4C);
         }
       }
       const combined1 = "\u2060" + combined;

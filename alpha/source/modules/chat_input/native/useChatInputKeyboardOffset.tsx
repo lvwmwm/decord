@@ -1,21 +1,21 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14846
+// Function ID: 14847
 // Name: useChatInputKeyboardOffset
-// Dependencies: [1641, 5851, 5440, 1627, 5839, 575, 1377, 1625, 2]
+// Dependencies: [1644, 5914, 5503, 1630, 5902, 575, 1380, 1628, 2]
 // Exports: default
 
-// Module 14733 (useChatInputKeyboardOffset)
+// Module 14846 (useChatInputKeyboardOffset)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5440 */;
-import useToken from "useToken" /* 5839 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5851 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1644 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5503 */;
+import useToken from "useToken" /* 5902 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5914 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const KeyboardTypes = tmp(1625);
+const KeyboardTypes = tmp(1628);
 const result = size.fileFinishedImporting("modules/chat_input/native/useChatInputKeyboardOffset.tsx");
 
 export default function useChatInputKeyboardOffset() {

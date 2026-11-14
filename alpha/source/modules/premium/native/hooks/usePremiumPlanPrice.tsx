@@ -1,95 +1,105 @@
-// Module ID: 10887
-// Function ID: 10888
+// Module ID: 10956
+// Function ID: 10957
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 2175, 2176, 9235, 1083, 504, 9343, 9656, 10888, 8514, 1377, 5854, 559, 7209, 7190, 2]
+// Dependencies: [19, 2178, 9302, 1072, 1083, 9410, 9723, 504, 10957, 8580, 1380, 5917, 559, 7272, 7253, 2]
 // Exports: default
 
-// Module 10887 (usePremiumPlanPrice)
-import Constants from "Constants" /* 1083 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7209 */;
-import react_mod from "react" /* 19 */;
-import SubscriptionPlanStore_mod from "SubscriptionPlanStore" /* 2175 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import IAPStore from "IAPStore" /* 9235 */;
+// Module 10956 (usePremiumPlanPrice)
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 1083 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7272 */;
+import react from "react" /* 19 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
+import IAPStore from "IAPStore" /* 9302 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_5;
+let _require;
 
-let react = react_mod;
-let SubscriptionPlanStore = SubscriptionPlanStore_mod;
-const PaymentGateways = Constants.PaymentGateways;
+let closure_6 = Constants.PriceSetAssignmentPurchaseTypes;
+const PaymentGateways = Constants2.PaymentGateways;
 const PremiumPlanPriceSource = { IAP: "IAP", API: "API" };
 const result = size.fileFinishedImporting("modules/premium/native/hooks/usePremiumPlanPrice.tsx");
 
 export default function usePremiumPlanPrice(arg0) {
+  let _undefined;
   let closure_0;
-  let closure_3;
   let country;
   let country1;
-  let mobileStoreFront;
   let price;
   let priceState;
-  let tmpResult4;
+  let tmpResult6;
   _require = arg0;
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  let flag = obj.isGift;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let mobileStoreFront;
+  priceState = undefined;
+  let c4;
+  let closure_5;
   let tmp = _require;
   let tmp2 = priceState;
-  let obj = require("get initialized");
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => closure_5.getPremiumTypeSubscription());
-  const NitroACOMSubscriptionExperiment = require("ACOMExperiments").NitroACOMSubscriptionExperiment;
-  let enabled = NitroACOMSubscriptionExperiment.useConfig({ location: "usePremiumPlanPrice" }).enabled;
-  let tmp4 = mobileStoreFront;
-  const obj2 = mobileStoreFront(priceState[7]);
+  const NitroGiftACOMExperiment = require("ACOMExperiments").NitroGiftACOMExperiment;
+  const enabled = NitroGiftACOMExperiment.useConfig({ location: "usePremiumPlanPrice" }).enabled;
+  let tmp3 = mobileStoreFront;
+  const obj2 = mobileStoreFront(priceState[6]);
   mobileStoreFront = obj2.useMobileStoreFront();
-  const items1 = [SubscriptionPlanStore];
-  const items2 = [arg0];
+  const items = [c4];
+  const items1 = [arg0];
   const obj3 = require("get initialized");
-  const stateFromStores1 = obj3.useStateFromStores(items1, () => {
+  const stateFromStores = obj3.useStateFromStores(items, () => {
     let value = null;
     if (null != closure_0) {
       value = SubscriptionPlanStore.get(tmp);
     }
     return value;
-  }, items2);
-  const tmp7 = mobileStoreFront(priceState[8])(stateFromStores1, mobileStoreFront);
+  }, items1);
+  const tmp7 = mobileStoreFront(priceState[8])(stateFromStores, mobileStoreFront, flag ? tmp6.GIFT : tmp6.MOBILE);
   ({ price, priceState } = tmp7);
+  let productIdForGift = null;
   let tmp8 = null;
   if (null != arg0) {
-    tmp8 = tmp(tmp2[9]).BasePlanIdToProductId[arg0];
+    const tmpResult = tmp(tmp2[9]);
+    if (flag) {
+      productIdForGift = tmpResult.getProductIdForGift(arg0);
+    } else {
+      productIdForGift = tmpResult.BasePlanIdToProductId[arg0];
+    }
+    tmp8 = productIdForGift;
   }
-  react = tmp8;
-  const items3 = [IAPStore];
-  const items4 = [tmp8];
-  const tmpResult = tmp(tmp2[5]);
-  const stateFromStores2 = tmpResult.useStateFromStores(items3, () => {
+  const items2 = [closure_5];
+  const items3 = [tmp8];
+  const tmpResult4 = tmp(tmp2[7]);
+  const stateFromStores1 = tmpResult4.useStateFromStores(items2, () => {
     let product = null;
-    if (null != closure_3) {
+    if (null != productIdForGift) {
       product = IAPStore.getProduct(tmp);
     }
     return product;
-  }, items4);
-  const tmpResult3 = tmp(tmp2[10]);
-  let isIOSResult = tmpResult3.isIOS();
+  }, items3);
+  const tmpResult5 = tmp(tmp2[10]);
+  let isIOSResult = tmpResult5.isIOS();
   if (isIOSResult) {
-    if (!enabled) {
-      let isACOM;
-      if (stateFromStores != null) {
-        isACOM = stateFromStores.isACOM;
-      }
-      enabled = true === isACOM;
+    let tmp12 = !flag;
+    if (flag) {
+      tmp12 = enabled;
     }
-    isIOSResult = enabled;
+    isIOSResult = tmp12;
   }
-  SubscriptionPlanStore = isIOSResult;
-  const tmp12 = tmp4(tmp2[11])(() => {
+  c4 = isIOSResult;
+  const tmp13 = tmp3(tmp2[11])(() => {
     const tmp = new mobileStoreFront(priceState[12])(500, 10000);
     return tmp;
   });
-  closure_5 = tmp12;
-  const items5 = [isIOSResult, priceState, mobileStoreFront, tmp12];
-  const effect = react.useEffect(() => {
-    const tmp = closure_4;
+  closure_5 = tmp13;
+  const items4 = [isIOSResult, priceState, mobileStoreFront, tmp13];
+  const effect = productIdForGift.useEffect(() => {
+    const tmp = _undefined;
     if (tmp) {
       const tmp2 = priceState;
       const tmp3 = closure_0;
@@ -103,7 +113,7 @@ export default function usePremiumPlanPrice(arg0) {
           if (null != country) {
             let obj = closure_5;
             if (!closure_5.pending) {
-              if (!SubscriptionPlanStore.isFetchingForPremiumSKUs()) {
+              if (!_undefined.isFetchingForPremiumSKUs()) {
                 if (obj.fails < 3) {
                   const country2 = tmp7.country;
                   obj.fail(() => {
@@ -127,43 +137,43 @@ export default function usePremiumPlanPrice(arg0) {
         closure_5.succeed();
       }
     }
-  }, items5);
-  let tmp14 = null;
+  }, items4);
+  let tmp15 = null;
   if (null != arg0) {
-    let tmp15;
+    let tmp16;
     if (isIOSResult) {
-      let tmp18 = null;
+      let tmp19 = null;
       if (priceState === tmp(tmp2[8]).PriceStates.PRICE_AVAILABLE) {
-        tmp18 = null;
+        tmp19 = null;
         if (null != price) {
-          ({ amount: obj7.price, currency: obj7.currency } = price);
-          const obj4 = { price: null, currency: null, countryCode: country, priceString: tmpResult4.formatPrice(price.amount, price.currency), source: obj.API };
+          ({ amount: obj8.price, currency: obj8.currency } = price);
+          const obj4 = { price: null, currency: null, countryCode: country, priceString: tmpResult6.formatPrice(price.amount, price.currency), source: obj.API };
           country = undefined;
           if (mobileStoreFront != null) {
             country = mobileStoreFront.country;
           }
-          tmp18 = obj4;
-          tmpResult4 = tmp(tmp2[14]);
+          tmp19 = obj4;
+          tmpResult6 = tmp(tmp2[14]);
         }
       }
-      tmp15 = tmp18;
+      tmp16 = tmp19;
     } else {
-      tmp15 = null;
-      if (null != stateFromStores2) {
-        const obj5 = { price: null, currency: null, countryCode: country1, priceString: stateFromStores2.priceString, source: obj.IAP };
-        ({ price: obj6.price, currencyCode: obj6.currency } = stateFromStores2);
+      tmp16 = null;
+      if (null != stateFromStores1) {
+        const obj5 = { price: null, currency: null, countryCode: country1, priceString: stateFromStores1.priceString, source: obj.IAP };
+        ({ price: obj7.price, currencyCode: obj7.currency } = stateFromStores1);
         country1 = undefined;
         if (mobileStoreFront != null) {
           country1 = mobileStoreFront.country;
         }
         if (country1 == null) {
-          country1 = stateFromStores2.countryCode;
+          country1 = stateFromStores1.countryCode;
         }
-        tmp15 = obj5;
+        tmp16 = obj5;
       }
     }
-    tmp14 = tmp15;
+    tmp15 = tmp16;
   }
-  return tmp14;
+  return tmp15;
 };
 export { PremiumPlanPriceSource };

@@ -1,22 +1,24 @@
-// Module ID: 13146
-// Function ID: 13147
+// Module ID: 13250
+// Function ID: 13251
 // Name: ConjureLinkedAppBuildSheet
-// Dependencies: [19, 21, 5243, 575, 1627, 1113, 4079, 7885, 7847, 6274, 7679, 5489, 13139, 7681, 7887, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 7951, 7913, 7745, 5552, 7747, 2]
 // Exports: default
 
-// Module 13146 (ConjureLinkedAppBuildSheet)
-import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import react from "react" /* 19 */;
+// Module 13250 (ConjureLinkedAppBuildSheet)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import nativeDefault from "native" /* 575 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7745 */;
+import TableRadioRow from "TableRadioRow" /* 7747 */;
+import ActionSheet2 from "ActionSheet" /* 7951 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
-let c3;
-let closure_4;
-({ jsx: c3, jsxs: closure_4 } = Fragment);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0) => {
   const obj = { content: { paddingBottom: nativeDefault.space.PX_16 + arg0 } };
   ({ paddingBottom: nativeDefault.space.PX_16 + arg0 });
@@ -24,69 +26,26 @@ let closure_5 = createStyles.createStyles((arg0) => {
 });
 const result = size.fileFinishedImporting("modules/conjure/linked_apps/native/ConjureLinkedAppBuildSheet.tsx");
 
-export default function ConjureLinkedAppBuildSheet(arg0) {
-  let ActionSheetRow;
-  let Stack;
-  let intl2;
-  let items;
-  let obj2;
-  let obj5;
-  let onRemove;
-  let prop;
-  let title;
-  let tmp7;
-  let value;
-  ({ sheetKey: require, onPick: importDefault, onRemove } = arg0);
-  ({ title, value } = arg0);
-  const tmp3 = closure_5(require("useSafeAreaInsets")().bottom);
-  const intl = require("intl").intl;
-  const stringResult = intl.string(require("module_4079").Odrcmq);
-  let obj = { header: closure_3(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { title }), children: tmp7(Stack, obj2) };
-  const ActionSheet = require("ActionSheet").ActionSheet;
-  obj2 = { spacing: require("native").space.PX_16, style: tmp3.content, children: items };
-  Stack = require("Stack/Stack").Stack;
-  let obj3 = {
+export default function ConjureLinkedAppBuildSheet(title) {
+  let options;
+  let setting;
+  ({ sheetKey: require, setting, onPick: importDefault } = title);
+  title = title.title;
+  const tmp = closure_5(useSafeAreaInsetsDefault().bottom);
+  const ActionSheet = ActionSheet2.ActionSheet;
+  ({
     hasIcons: false,
-    title: stringResult,
-    accessibilityLabel: stringResult,
-    value,
+    title: setting.label,
+    accessibilityLabel: setting.label,
+    value: setting.value,
     onChange(arg0) {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet(require);
       importDefault(arg0);
     },
-    children: prop.map((value) => {
-      let obj2;
-      let obj3;
-      const obj = { value, label: obj2.linkedAppBuildLabel(value), subLabel: obj3.linkedAppBuildDescription(value) };
-      const TableRadioRow = require("TableRadioRow").TableRadioRow;
-      obj2 = require("conjureLinkedApps");
-      obj3 = require("conjureLinkedApps");
-      return closure_1_3(TableRadioRow, obj, value);
-    })
-  };
-  const TableRadioGroup = require("TableRadioGroup").TableRadioGroup;
-  prop = require("conjureLinkedApps").CONJURE_LINKED_APP_BUILDS;
-  items = [closure_3(TableRadioGroup, obj3), ];
-  let tmp6Result = null;
-  const tmp = importDefault;
-  tmp7 = closure_4;
-  if (null != onRemove) {
-    const obj4 = { hasIcons: false, children: closure_3(ActionSheetRow, obj5) };
-    const Group = tmp4(tmp2[14]).ActionSheetRow.Group;
-    obj5 = {
-      variant: "danger",
-      label: intl2.string(tmp(onRemove[6]).bN1S9T),
-      onPress() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(require);
-          onRemove();
-        }
-    };
-    ActionSheetRow = tmp4(tmp2[14]).ActionSheetRow;
-    intl2 = tmp4(tmp2[5]).intl;
-    tmp6Result = tmp6(Group, obj4);
-  }
-  items[1] = tmp6Result;
-  return closure_3(ActionSheet, obj);
+    children: options.map((data) => jsx(TableRadioRow.TableRadioRow, { value: data.data, label: data.label, subLabel: data.description, disabled: data.disabled }, data.data))
+  });
+  options = setting.options;
+  const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
+  return <ActionSheet header={null}>{null}</ActionSheet>;
 };

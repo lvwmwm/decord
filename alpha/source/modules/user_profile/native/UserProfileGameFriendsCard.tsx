@@ -1,21 +1,21 @@
-// Module ID: 15730
-// Function ID: 15731
+// Module ID: 15850
+// Function ID: 15851
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 5243, 7196, 1113, 14836, 7895, 5866, 2]
+// Dependencies: [19, 21, 5306, 7259, 1113, 14950, 7961, 5929, 2]
 // Exports: default
 
-// Module 15730 (UserProfileGameFriendsCard)
+// Module 15850 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7196 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14836 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7259 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14950 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
 
 let tmp2;
-const UserProfileCardDefault = tmp2(7895);
+const UserProfileCardDefault = tmp2(7961);
 let jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ card: { flexDirection: "column" } });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileGameFriendsCard.tsx");

@@ -1,26 +1,26 @@
-// Module ID: 14724
-// Function ID: 14725
+// Module ID: 14837
+// Function ID: 14838
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5244, 8658, 1385, 1072, 21, 1187, 5243, 575, 5839, 5866, 1113, 7364, 7582, 504, 5315, 6687, 9999, 9122, 14725, 5423, 1652, 5485, 1705, 12545, 1252, 12543, 1099, 6686, 14726, 8937, 8981, 8965, 2]
+// Dependencies: [19, 17, 5307, 8725, 1388, 1072, 21, 1187, 5306, 575, 5902, 5929, 1113, 7428, 7648, 504, 5378, 6750, 10066, 9189, 14838, 5486, 1655, 5548, 1708, 12641, 1256, 12639, 1099, 6749, 14839, 9004, 9048, 9032, 2]
 
-// Module 14724 (ChatInputContextBar)
+// Module 14837 (ChatInputContextBar)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useToken from "useToken" /* 5839 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import Pressables from "Pressables" /* 7364 */;
-import DraftStore2 from "DraftStore" /* 8658 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8937 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8965 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 8981 */;
+import useToken from "useToken" /* 5902 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import Pressables from "Pressables" /* 7428 */;
+import DraftStore2 from "DraftStore" /* 8725 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 9004 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9032 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9048 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import UserStore from "UserStore" /* 1385 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
@@ -34,7 +34,7 @@ let hasOwnProperty;
 let map1;
 let tmp4;
 let unpackModuleId;
-const AssetRegistryDefault = tmp4(7582);
+const AssetRegistryDefault = tmp4(7648);
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
   let Icon;
   let PressableOpacity;
@@ -376,16 +376,16 @@ function ContextBarItem(arg0) {
   dependencyMap = undefined;
   ({ children, ref } = arg0);
   let tmp = dependencyMap;
-  obj = sharedValue(5423);
-  backgroundColor = closure_16(obj.useGradientValue(sharedValue(5423).GradientPercentage.END)).contextBar.backgroundColor;
+  obj = sharedValue(5486);
+  backgroundColor = closure_16(obj.useGradientValue(sharedValue(5486).GradientPercentage.END)).contextBar.backgroundColor;
   let tmp2 = closure_17();
-  const obj2 = sharedValue(1652);
+  const obj2 = sharedValue(1655);
   sharedValue = obj2.useSharedValue(0);
   let items = [closure_22, backgroundColor, sharedValue];
   let c0;
   let c1;
   [tmp4, tmp5, tmp6] = items;
-  const obj3 = sharedValue(1652);
+  const obj3 = sharedValue(1655);
   class ChatInputContextBarTsx1 {
     constructor() {
       obj = { backgroundColor, maxHeight: _undefined.get() };
@@ -455,7 +455,7 @@ function ContextBarItem(arg0) {
   });
   const obj4 = { style: items3, children };
   items3 = [animatedStyle, tmp2.floatingContextBar];
-  return closure_12(ref1(1652).View, obj4);
+  return closure_12(ref1(1655).View, obj4);
 }
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const DraftType = DraftStore2.DraftType;

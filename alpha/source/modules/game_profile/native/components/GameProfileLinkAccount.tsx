@@ -1,21 +1,21 @@
-// Module ID: 10313
-// Function ID: 10314
+// Module ID: 10382
+// Function ID: 10383
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 2162, 1385, 21, 5243, 575, 7705, 10314, 10315, 7853, 504, 10217, 1113, 5957, 1187, 5866, 5873, 10317, 2]
+// Dependencies: [19, 17, 2165, 1388, 21, 5306, 575, 7771, 10383, 10384, 7919, 504, 10286, 1113, 6020, 1187, 5929, 5936, 10386, 2]
 // Exports: default
 
-// Module 10313 (GameProfileLinkAccount)
+// Module 10382 (GameProfileLinkAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7705 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10217 */;
-import GameProfileSection from "GameProfileSection" /* 10314 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 10315 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
+import GameProfileSection from "GameProfileSection" /* 10383 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 10384 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import UserStore from "UserStore" /* 1385 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -105,7 +105,7 @@ let closure_11 = react.memo(function GameProfileLinkAccountSkeleton() {
   let tmp5Result = !tmp4;
   if (tmp5Result) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(10315), obj13);
+    tmp5Result = tmp5(tmp2(10384), obj13);
   }
   items4[2] = tmp5Result;
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj) };

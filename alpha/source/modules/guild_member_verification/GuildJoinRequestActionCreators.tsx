@@ -1,17 +1,17 @@
-// Module ID: 6869
-// Function ID: 6870
+// Module ID: 6932
+// Function ID: 6933
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 5096, 6870, 5287, 1072, 5289, 572, 1282, 6871, 6205, 1113, 6872, 2]
+// Dependencies: [5, 5159, 6933, 5350, 1072, 5352, 572, 1285, 6934, 6268, 1113, 6935, 2]
 
-// Module 6869 (GuildJoinRequestActionCreators)
+// Module 6932 (GuildJoinRequestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelRecord from "ChannelRecord" /* 5096 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5287 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5289 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6871 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5350 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6870 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6933 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ let obj = function _fetchGuildJoinRequests() {
               requests = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -387,7 +387,7 @@ obj = function _updateGuildJoinRequest() {
               tmp = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -653,7 +653,7 @@ obj = function _createOrEnterJoinRequestInterview() {
             channel = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

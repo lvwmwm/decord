@@ -1,32 +1,32 @@
-// Module ID: 18694
-// Function ID: 18695
+// Module ID: 18823
+// Function ID: 18824
 // Name: RedesignChannelList
-// Dependencies: [32, 19, 17, 5244, 8662, 18607, 5114, 5146, 6011, 1072, 8670, 21, 1502, 5429, 12486, 18695, 18696, 18721, 18767, 18768, 17584, 18613, 18769, 18722, 18771, 8672, 504, 6996, 18772, 18776, 8664, 18777, 10507, 18591, 17585, 12352, 5853, 18641, 18833, 18845, 18848, 18850, 18852, 18605, 18853, 10447, 18855, 18859, 18872, 18890, 5117, 18895, 11192, 18904, 14097, 2]
+// Dependencies: [32, 19, 17, 5307, 8729, 18736, 5177, 5209, 6074, 1072, 8737, 21, 1505, 5492, 12582, 18824, 18825, 18850, 18896, 18897, 17702, 18742, 18898, 18851, 18900, 8739, 504, 7059, 18901, 18905, 8731, 18906, 10576, 18720, 17703, 12447, 5916, 18770, 18962, 18974, 18977, 18979, 18981, 18734, 18982, 10516, 18984, 18988, 19001, 19044, 5180, 19049, 11259, 19058, 14204, 2]
 
-// Module 18694 (RedesignChannelList)
+// Module 18823 (RedesignChannelList)
 import react_native from "react-native" /* 17 */;
-import ChannelListState from "ChannelListState" /* 8664 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 8670 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10507 */;
-import GuildsRenderExperiment2 from "GuildsRenderExperiment" /* 18605 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18613 */;
-import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 18722 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 18768 */;
-import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 18769 */;
-import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 18777 */;
-import useShouldRenderChannelList from "useShouldRenderChannelList" /* 18852 */;
-import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 18859 */;
-import WaterwheelsDiscoverPanelDefault from "WaterwheelsDiscoverPanel" /* 18872 */;
-import GuildsEmptyDefault from "GuildsEmpty" /* 18890 */;
-import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 18904 */;
+import ChannelListState from "ChannelListState" /* 8731 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 8737 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
+import GuildsRenderExperiment2 from "GuildsRenderExperiment" /* 18734 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18742 */;
+import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 18851 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 18897 */;
+import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 18898 */;
+import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 18906 */;
+import useShouldRenderChannelList from "useShouldRenderChannelList" /* 18981 */;
+import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 18988 */;
+import WaterwheelsDiscoverPanelDefault from "WaterwheelsDiscoverPanel" /* 19001 */;
+import GuildsEmptyDefault from "GuildsEmpty" /* 19044 */;
+import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 19058 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import ChannelListStore from "ChannelListStore" /* 8662 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 18607 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6011 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import ChannelListStore from "ChannelListStore" /* 8729 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 18736 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6074 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ let closure_17;
 let closure_18;
 let map1;
 let tmp;
-const TTIFirstContentfulPaint = tmp(14097);
+const TTIFirstContentfulPaint = tmp(14204);
 function GuildChannels(arg0) {
   let tmp2;
   const obj = useShouldRenderChannelList;
@@ -66,10 +66,10 @@ function GuildChannelsList(shouldRender) {
   const merged = Object.assign(shouldRender, Object.assign({ shouldRender: 0 }));
   let found1;
   dependencyMap = undefined;
-  const arr = found1(18853)(merged.guild);
-  const found = arr.filter(merged(18777).isMobileGuildActionRow);
+  const arr = found1(18982)(merged.guild);
+  const found = arr.filter(merged(18906).isMobileGuildActionRow);
   const hasItem = found.includes(ChannelListGuildActionRow.GUILD_CONJURE);
-  merged(10447);
+  merged(10516);
   found1 = found;
   const tmp4 = merged;
   if (hasItem) {
@@ -78,8 +78,8 @@ function GuildChannelsList(shouldRender) {
       found1 = found.filter((item) => item !== constants.GUILD_CONJURE);
     }
   }
-  ({ rows: c2, gameClaimMarkAsDismissed, applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication } = found1(18855)(merged.guild));
-  found1(18855)(merged.guild);
+  ({ rows: c2, gameClaimMarkAsDismissed, applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication } = found1(18984)(merged.guild));
+  found1(18984)(merged.guild);
   const items = [ChannelListStore];
   const tmp4Result = tmp4(504);
   const stateFromStoresObject = tmp4Result.useStateFromStoresObject(items, () => {
@@ -114,15 +114,15 @@ function ChannelsWrapper(selectedGuildId) {
   } else {
     if (null != stateFromStores) {
       if (selectedGuildId !== closure_12) {
-        const tmp2Result = selectedGuildId(5117);
+        const tmp2Result = selectedGuildId(5180);
         if (tmp2Result.isFavoritesGuildId(selectedGuildId)) {
           const obj5 = { guild: stateFromStores, selectedChannelId, selectedVoiceChannelId: stateFromStores1 };
-          const _default = selectedGuildId(18895).default;
+          const _default = selectedGuildId(19049).default;
           const merged1 = Object.assign(merged);
           return closure_16(_default, obj5);
         } else {
           let tmp6Result;
-          const tmp2Result2 = selectedGuildId(11192);
+          const tmp2Result2 = selectedGuildId(11259);
           if (tmp2Result2.shouldNSFWGateGuild(selectedGuildId)) {
             const obj6 = { style: merged.style, guildId: selectedGuildId };
             tmp6Result = tmp6(NsfwGateGuildSidebarDefault, obj6);

@@ -1,13 +1,14 @@
-// Module ID: 12442
-// Function ID: 12443
+// Module ID: 12537
+// Function ID: 12538
 // Name: getInvitableGameOrganizationsFullState
-// Dependencies: [12443, 1113, 2549, 2]
+// Dependencies: [12538, 1113, 2565, 12539, 2]
 // Exports: default, getGameOrganizationFullSubLabel, getInvitableGameOrganizationsFullSubLabel
 
-// Module 12442 (getInvitableGameOrganizationsFullState)
-import intl4 from "intl" /* 1113 */;
-import _modDef2549 from "module_2549" /* 2549 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12443 */;
+// Module 12537 (getInvitableGameOrganizationsFullState)
+import intl3 from "intl" /* 1113 */;
+import _modDef2565 from "module_2565" /* 2565 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12538 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12539 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = { kind: "available" };
@@ -35,31 +36,33 @@ export default function getInvitableGameOrganizationsFullState(arr) {
   }
   tmp = closure_3;
 };
-export function getGameOrganizationFullSubLabel(data) {
-  let intl2;
+export function getGameOrganizationFullSubLabel(data, stateFromStores) {
+  let tmp = stateFromStores;
   const name = data.name;
-  const intl = intl4.intl;
+  if (stateFromStores === undefined) {
+    tmp = null;
+  }
+  const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const obj = { orgName: name, noun: intl2.string(_modDef2549.xXXGsq) };
-  const xuM052 = _modDef2549.xuM052;
-  intl2 = intl4.intl;
+  const obj = { orgName: name, noun: getGameOrganizationDisplayNounDefault({ displayNoun: tmp, lowercase: true }) };
+  const xuM052 = _modDef2565.xuM052;
   return formatToPlainString(xuM052, obj);
 }
 export function getInvitableGameOrganizationsFullSubLabel(kind) {
-  let intl3;
+  let obj2;
   kind = kind.kind;
   if ("available" !== kind) {
     if ("single_full" === kind) {
       const name = kind.organization.name;
-      const intl2 = intl4.intl;
+      const intl2 = intl3.intl;
       const formatToPlainString = intl2.formatToPlainString;
-      const obj = { orgName: name, noun: intl3.string(_modDef2549.xXXGsq) };
-      const xuM052 = _modDef2549.xuM052;
-      intl3 = intl4.intl;
+      const obj = { orgName: name, noun: getGameOrganizationDisplayNounDefault(obj2) };
+      const xuM052 = _modDef2565.xuM052;
+      obj2 = { displayNoun: null, lowercase: true };
       return formatToPlainString(xuM052, obj);
     } else if ("all_full" === kind) {
-      const intl = intl4.intl;
-      return intl.string(_modDef2549.bY80Jh);
+      const intl = intl3.intl;
+      return intl.string(_modDef2565.bY80Jh);
     }
   }
 }

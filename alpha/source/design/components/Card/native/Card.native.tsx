@@ -1,30 +1,39 @@
-// Module ID: 7381
-// Function ID: 7382
+// Module ID: 7445
+// Function ID: 7446
 // Name: Card/Card
-// Dependencies: [109, 19, 17, 21, 1652, 575, 5243, 7382, 5839, 1377, 5876, 5877, 7383, 2]
+// Dependencies: [109, 19, 17, 21, 1655, 575, 5306, 7446, 5942, 5902, 7447, 1380, 5939, 5940, 7451, 2]
 
-// Module 7381 (Card/Card)
-import Fragment from "Fragment" /* 21 */;
+// Module 7445 (Card/Card)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useToken2 from "useToken" /* 5839 */;
-import CardTokens from "CardTokens" /* 7382 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import useToken2 from "useToken" /* 5902 */;
+import ButtonConstants from "ButtonConstants" /* 5942 */;
+import CardTokens from "CardTokens" /* 7446 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import module_1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import Fragment from "Fragment" /* 21 */;
+import module_1655 from "module_1655" /* 1655 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let Pressable;
+let c9;
+let metroImportAll;
+let metroImportDefault;
 let metroRequire;
 let tmp;
-const _mod1652 = tmp(1652);
-const spring_spring = tmp(5876);
-const springPresets = tmp(5877);
-const AnimatedPressableHighlight2 = tmp(7383);
+let tmp2;
+const _mod1655 = tmp(1655);
+const spring_spring = tmp(5939);
+const springPresets = tmp(5940);
+const DragHandle2 = tmp2(7447);
+const AnimatedPressableHighlight2 = tmp(7451);
 class Card {
   constructor(start) {
+    let children;
+    let dragHandlePressableProps;
+    let items1;
     let flag = start.start;
     if (flag === undefined) {
       flag = true;
@@ -45,33 +54,58 @@ class Card {
     if (str3 === undefined) {
       str3 = "primary";
     }
-    const merged = Object.assign(start, Object.assign({ start: 0, end: 0, shadow: 0, border: 0, variant: 0 }));
+    let str4 = start.padding;
+    if (str4 === undefined) {
+      str4 = "default";
+    }
+    let flag3 = start.draggable;
+    if (flag3 === undefined) {
+      flag3 = false;
+    }
+    ({ dragHandlePressableProps, children } = start);
+    const merged = Object.assign(start, Object.assign({ start: 0, end: 0, shadow: 0, border: 0, variant: 0, padding: 0, draggable: 0, dragHandlePressableProps: 0, children: 0 }));
     const useToken = useToken2.useToken;
     let radius = merged.radius;
     useToken2;
     if (radius == null) {
       radius = useToken(nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS);
     }
-    const items = [, , ];
-    ({ spacing: arr[0], card: arr[1] } = closure_10(flag, flag2, str3, str, str2, radius));
+    const tmp5 = closure_12(flag, flag2, str3, str, str2, str4, radius);
+    const items = [tmp5.card, , ];
+    let draggableCard;
+    if (flag3) {
+      draggableCard = tmp5.draggableCard;
+    }
+    items[1] = draggableCard;
     items[2] = merged.style;
-    closure_10(flag, flag2, str3, str, str2, radius);
+    let tmp7 = children;
+    if (flag3) {
+      const obj = { children: items1 };
+      const obj2 = { stretch: true, borderRadius: 0, style: tmp5.dragHandle };
+      const DragHandle = DragHandle2.DragHandle;
+      const merged1 = Object.assign(dragHandlePressableProps);
+      items1 = [metroImportDefault(DragHandle, obj2), ];
+      const obj3 = { style: tmp5.draggableContent, children };
+      items1[1] = metroImportDefault(metroRequire, obj3);
+      tmp7 = React4(metroImportAll, obj);
+    }
     if ("onPress" in merged) {
       if (null != merged.onPress) {
-        let str4 = merged.accessibilityRole;
-        const tmp7 = _objectWithoutProperties(merged, closure_3);
-        const tmp8 = jsx;
-        const tmp9 = PressableCard;
-        if (str4 == null) {
-          str4 = "button";
+        let str5 = merged.accessibilityRole;
+        const tmp18 = _objectWithoutProperties(merged, closure_3);
+        const tmp19 = metroImportDefault;
+        const tmp20 = PressableCard;
+        if (str5 == null) {
+          str5 = "button";
         }
-        const obj2 = { accessibilityRole: str4, start: flag, end: flag2, style: items, variant: str3, radius };
-        const merged1 = Object.assign(tmp7);
-        return tmp8(tmp9, obj2);
+        const obj4 = { accessibilityRole: str5, start: flag, end: flag2, style: items, variant: str3, radius, children: tmp7 };
+        const merged2 = Object.assign(tmp18);
+        return tmp19(tmp20, obj4);
       }
     }
-    const merged2 = Object.assign(merged);
-    return <metroRequire style={items} />;
+    const obj5 = { style: items, children: tmp7 };
+    const merged3 = Object.assign(merged);
+    return metroImportDefault(metroRequire, obj5);
   }
 }
 function PressableCard(start) {
@@ -79,6 +113,7 @@ function PressableCard(start) {
   let backgroundColorPressed;
   let children;
   let end;
+  let items5;
   let radius;
   let style;
   let tmp15;
@@ -110,16 +145,17 @@ function PressableCard(start) {
       }
       return { cornerRadius };
     }, items);
+    const obj3 = { androidRippleConfig: memo, children: children2 };
     const AnimatedPressableHighlight = AnimatedPressableHighlight2.AnimatedPressableHighlight;
     const merged1 = Object.assign(merged);
-    tmp28 = <AnimatedPressableHighlight androidRippleConfig={memo}>{children2}</AnimatedPressableHighlight>;
+    tmp28 = metroImportDefault(AnimatedPressableHighlight, obj3);
   } else {
     const onPressIn = start.onPressIn;
     const onPressOut = start.onPressOut;
     ({ radius, start, end } = start);
     ({ children, style, variant } = start);
     const merged2 = Object.assign(start, Object.assign({ children: 0, style: 0, variant: 0, onPressIn: 0, onPressOut: 0, radius: 0, start: 0, end: 0 }));
-    const tmpResult = _mod1652;
+    const tmpResult = _mod1655;
     const sharedValue = tmpResult.useSharedValue(0);
     const items1 = [sharedValue, onPressIn];
     const items2 = [sharedValue, onPressOut];
@@ -135,13 +171,13 @@ function PressableCard(start) {
         tmp2(arg0);
       }
     }, items2);
-    ({ backgroundColor, backgroundColorPressed } = closure_9(variant));
-    closure_9(variant);
-    const items3 = [closure_12, , , , , , ];
-    const useAnimatedStyle = _mod1652.useAnimatedStyle;
-    _mod1652;
+    ({ backgroundColor, backgroundColorPressed } = closure_11(variant));
+    closure_11(variant);
+    const items3 = [closure_14, , , , , , ];
+    const useAnimatedStyle = _mod1655.useAnimatedStyle;
+    _mod1655;
     items3[1] = spring_spring.withSpring;
-    items3[2] = _mod1652.interpolateColor;
+    items3[2] = _mod1655.interpolateColor;
     items3[3] = sharedValue;
     items3[4] = backgroundColor;
     items3[5] = backgroundColorPressed;
@@ -165,19 +201,20 @@ function PressableCard(start) {
     CardNativeTsx1.__closure = items4;
     CardNativeTsx1.__workletHash = 12443532750962;
     CardNativeTsx1.__initData = tmp15;
+    const obj5 = { onPressIn: callback, onPressOut: callback1, style: items5, unstable_pressDelay: 130, children };
     const animatedStyle = useAnimatedStyle(CardNativeTsx1);
     const merged3 = Object.assign(merged2);
-    const items5 = [style, animatedStyle];
-    tmp28 = <closure_8 onPressIn={callback} onPressOut={callback1} style={items5} unstable_pressDelay={130}>{children}</closure_8>;
+    items5 = [style, animatedStyle];
+    tmp28 = metroImportDefault(closure_10, obj5);
   }
   return tmp28;
 }
 let closure_3 = ["accessibilityRole"];
 ({ View: metroRequire, Pressable } = react_native);
-const jsx = Fragment.jsx;
-let closure_8 = module_1652.createAnimatedComponent(Pressable);
+({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
+let closure_10 = module_1655.createAnimatedComponent(Pressable);
 let createStyles = createStyles_mod;
-let closure_9 = createStyles.createStyleProperties((arg0) => {
+let closure_11 = createStyles.createStyleProperties((arg0) => {
   let backgroundColor;
   let backgroundColorPressed;
   if ("primary" === arg0) {
@@ -209,13 +246,15 @@ let closure_9 = createStyles.createStyleProperties((arg0) => {
   return { backgroundColor, backgroundColorPressed };
 });
 createStyles = createStyles_mod;
-const authStore = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4, arg5) => {
+const authStore2 = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4, arg5, arg6) => {
   let BACKGROUND_SURFACE_HIGH;
   let num;
-  let tmp21;
-  let tmp22;
+  let num2;
+  let num3;
   let tmp23;
   let tmp24;
+  let tmp25;
+  let tmp26;
   if ("primary" === arg2) {
     BACKGROUND_SURFACE_HIGH = nativeDefault.colors.TABLEROW_BACKGROUND_DEFAULT;
   } else if ("secondary" === arg2) {
@@ -244,32 +283,42 @@ const authStore = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4, arg5)
   if (BORDER_SUBTLE == null) {
     BORDER_SUBTLE = BACKGROUND_SURFACE_HIGH;
   }
-  const card = { borderTopStartRadius: tmp21, borderTopEndRadius: tmp22, borderBottomStartRadius: tmp23, borderBottomEndRadius: tmp24, borderColor: BORDER_SUBTLE, borderWidth: num, backgroundColor: BACKGROUND_SURFACE_HIGH };
+  const obj = { borderTopStartRadius: tmp23, borderTopEndRadius: tmp24, borderBottomStartRadius: tmp25, borderBottomEndRadius: tmp26, borderColor: BORDER_SUBTLE, borderWidth: num, backgroundColor: BACKGROUND_SURFACE_HIGH, padding: num2 };
   const obj2 = CardTokens;
   const merged = Object.assign(obj2.createCardShadowToken(arg3));
-  tmp21 = undefined;
-  if (arg0) {
-    tmp21 = arg5;
-  }
-  tmp22 = undefined;
-  if (arg0) {
-    tmp22 = arg5;
-  }
   tmp23 = undefined;
-  if (arg1) {
-    tmp23 = arg5;
+  if (arg0) {
+    tmp23 = arg6;
   }
   tmp24 = undefined;
+  if (arg0) {
+    tmp24 = arg6;
+  }
+  tmp25 = undefined;
   if (arg1) {
-    tmp24 = arg5;
+    tmp25 = arg6;
+  }
+  tmp26 = undefined;
+  if (arg1) {
+    tmp26 = arg6;
   }
   num = 0;
   if ("none" !== arg4) {
     num = 1;
   }
-  return { card, spacing: { padding: 16 } };
+  num2 = 0;
+  if ("default" === arg5) {
+    num2 = 16;
+  }
+  const obj3 = { card: obj, draggableCard: { flexDirection: "row", alignItems: "stretch", padding: 0, overflow: "hidden" }, draggableContent: { flexGrow: 0, flexShrink: 1, flexBasis: "100%", padding: num3, paddingStart: 4 }, dragHandle: { flexShrink: 1, flexGrow: 0, minWidth: ButtonConstants.MEDIUM_BUTTON_HEIGHT, height: "100%" } };
+  num3 = 0;
+  if ("default" === arg5) {
+    num3 = 16;
+  }
+  ({ flexShrink: 1, flexGrow: 0, minWidth: ButtonConstants.MEDIUM_BUTTON_HEIGHT, height: "100%" });
+  return obj3;
 });
-let closure_12 = { code: "(function CardNativeTsx1(){let[withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING]=this.__closure;const pressedColor=withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always');return{backgroundColor:pressedColor};})" };
+let closure_14 = { code: "(function CardNativeTsx1(){let[withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING]=this.__closure;const pressedColor=withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always');return{backgroundColor:pressedColor};})" };
 let result = size.fileFinishedImporting("design/components/Card/native/Card.native.tsx");
 
 export { Card };

@@ -1,22 +1,22 @@
-// Module ID: 10721
-// Function ID: 10722
+// Module ID: 10790
+// Function ID: 10791
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 5244, 21, 5243, 575, 10722, 5065, 504, 9122, 9914, 10724, 10726, 1187, 5866, 10728, 1113, 2]
+// Dependencies: [17, 5307, 21, 5306, 575, 10791, 5128, 504, 9189, 9981, 10793, 10795, 1187, 5929, 10797, 1113, 2]
 // Exports: default
 
-// Module 10721 (GuildPowerupsRecentActivitySection)
+// Module 10790 (GuildPowerupsRecentActivitySection)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import DateUtils from "DateUtils" /* 5065 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9122 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 10722 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 10728 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import DateUtils from "DateUtils" /* 5128 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9189 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 10791 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 10797 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const useMaybeGetSortedBoostsDefault = useMaybeGetSortedBoosts;
@@ -58,11 +58,11 @@ function GuildPowerupsRecentActivityRow(row) {
     const tmp2Result2 = enhanced_role_colors_EnhancedRoleColorUtils;
     const isRoleStyleAndRoleColorsEligibleForERC = tmp2Result2.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp2(9914).BoostGemIcon;
+      BoostGemSlashIcon = tmp2(9981).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp2(10724).BoostTier1Icon;
+      BoostGemSlashIcon = tmp2(10793).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp2(10726).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp2(10795).BoostGemSlashIcon;
     }
     const obj4 = { style: tmp.boostRowContainer, children: items1 };
     if ("gave" === phase) {
@@ -82,14 +82,14 @@ function GuildPowerupsRecentActivityRow(row) {
     const obj9 = { variant: "body-md/medium", color: "interactive-text-active", lineClamp: 1, style: items3, gradientColors: tmp23, children: username };
     items3 = [tmp.username, {}];
     tmp23 = undefined;
-    const Text = tmp2(5866).Text;
+    const Text = tmp2(5929).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp23 = processColorStringsArray;
     }
     items2[1] = hasOwnProperty(Text, obj9);
     items2[2] = hasOwnProperty(Text_Text.Text, { variant: "body-md/medium", color: "interactive-text-active", children: " " });
     const obj10 = { variant: "body-md/medium", lineClamp: 1, style: tmp.messageText, children: getBoostRowMessageTextDefault(row) };
-    const Text2 = tmp2(5866).Text;
+    const Text2 = tmp2(5929).Text;
     items2[3] = hasOwnProperty(Text2, obj10);
     items1[1] = metroRequire(View, obj7);
     const obj11 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.timestamp, children: calendarFormatResult };

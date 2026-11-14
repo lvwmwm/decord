@@ -1,14 +1,14 @@
-// Module ID: 12805
-// Function ID: 12806
+// Module ID: 12901
+// Function ID: 12902
 // Name: useTrackActivityVideoPip
-// Dependencies: [19, 12623, 1072, 563, 6773, 12747, 1252, 2]
+// Dependencies: [19, 12719, 1072, 563, 6836, 12843, 1256, 2]
 // Exports: default
 
-// Module 12805 (useTrackActivityVideoPip)
+// Module 12901 (useTrackActivityVideoPip)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import react_mod from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12623 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,22 +27,22 @@ export default function useTrackActivityPip(arg0) {
   let obj = require("useStateFromStores");
   const items = [ChannelCallLifecycleStore];
   const stateFromStores = obj.useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
-  const tmp2 = stateFromStores(6773)(stateFromStores);
+  const tmp2 = stateFromStores(6836)(stateFromStores);
   dependencyMap = tmp2;
-  const tmp3 = stateFromStores(12747)();
+  const tmp3 = stateFromStores(12843)();
   react = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = react.useEffect(() => {
     const tmp = closure_3;
     if (null != closure_3) {
       if (null != closure_2) {
-        if (stateFromStores !== tmp9) {
+        if (stateFromStores !== tmp2) {
           const obj3 = { channel_id: null, guild_id: null, application_id: null, activity_session_id: null };
-          const tmp4 = tmp2 ? AnalyticEvents.ACTIVITY_VIDEO_PIP_SHOWN : AnalyticEvents.ACTIVITY_VIDEO_PIP_HIDDEN;
+          const tmp5 = tmp3 ? AnalyticEvents.ACTIVITY_VIDEO_PIP_SHOWN : AnalyticEvents.ACTIVITY_VIDEO_PIP_HIDDEN;
           ({ id: obj2.channel_id, guild_id: obj2.guild_id } = closure_0);
           ({ applicationId: obj2.application_id, compositeInstanceId: obj2.activity_session_id } = tmp);
           const obj = AnalyticsUtilsDefault;
-          obj.track(tmp4, obj3);
+          obj.track(tmp5, obj3);
         }
       }
     }

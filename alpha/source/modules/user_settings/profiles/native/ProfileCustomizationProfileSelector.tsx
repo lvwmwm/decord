@@ -1,19 +1,19 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17201
+// Function ID: 17202
 // Name: ProfileCustomizationProfileSelector
-// Dependencies: [19, 17, 17079, 21, 5243, 575, 7680, 7379, 1113, 7654, 11673, 10491, 6210, 5489, 17080, 2118, 2]
+// Dependencies: [19, 17, 17202, 21, 5306, 575, 7746, 7443, 1113, 7720, 11739, 10560, 6273, 5552, 17203, 2121, 2]
 // Exports: default
 
-// Module 17078 (ProfileCustomizationProfileSelector)
+// Module 17201 (ProfileCustomizationProfileSelector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import react_nativeDefault from "react-native" /* 6210 */;
-import GuildIconDefault from "GuildIcon" /* 7654 */;
-import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 17079 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import react_nativeDefault from "react-native" /* 6273 */;
+import GuildIconDefault from "GuildIcon" /* 7720 */;
+import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 17202 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -30,18 +30,21 @@ const result = size.fileFinishedImporting("modules/user_settings/profiles/native
 export default function ProfileCustomizationProfileSelector(guild) {
   let ChevronSmallDownIcon;
   let TableRowGroup;
-  let intl2;
+  let formatToPlainString;
+  let intl4;
+  let name1;
   let obj5;
   let obj6;
   let paths;
   let tmp8;
   let tmpResult;
+  let u9XiCz;
   guild = guild.guild;
   ({ onBeforeOpen: importDefault, onSelectMainProfile: dependencyMap, onSelectGuild: View } = guild);
-  let obj = { style: closure_6().container, children: tmp(TableRowGroup, obj5) };
-  TableRowGroup = guild(7680).TableRowGroup;
+  let obj = { style: closure_6().container, children: tmp(TableRowGroup, obj6) };
+  TableRowGroup = guild(7746).TableRowGroup;
   let name;
-  const TableRow = guild(7379).TableRow;
+  const TableRow = guild(7443).TableRow;
   const tmp2 = View;
   if (guild != null) {
     name = guild.name;
@@ -54,8 +57,9 @@ export default function ProfileCustomizationProfileSelector(guild) {
     label: name,
     labelLineClamp: 1,
     icon: tmpResult,
-    trailing: tmp(ChevronSmallDownIcon, obj6),
-    accessibilityHint: intl2.string(guild(1113).t["5h07Mp"]),
+    trailing: tmp(ChevronSmallDownIcon, obj5),
+    accessibilityLabel: formatToPlainString(u9XiCz, { profileName: name1 }),
+    accessibilityHint: intl4.string(guild(1113).t["5h07Mp"]),
     onPress: function handlePress() {
       let onSelectGuild;
       let onSelectMainProfile;
@@ -75,19 +79,30 @@ export default function ProfileCustomizationProfileSelector(guild) {
     }
   };
   if (null != guild) {
-    const obj3 = { guild, size: guild(7654).GuildIconSizes.XSMALL };
+    const obj3 = { guild, size: guild(7720).GuildIconSizes.XSMALL };
     const tmp10 = GuildIconDefault;
     tmpResult = tmp(tmp10, obj3);
     tmp8 = importDefault;
   } else {
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    const ClydeIcon = tmp3(11673).ClydeIcon;
+    const ClydeIcon = tmp3(11739).ClydeIcon;
     tmpResult = tmp(ClydeIcon, obj4);
     tmp8 = importDefault;
   }
-  obj5 = { hasIcons: true, children: jsx(TableRow, obj2) };
-  obj6 = { size: "sm", color: tmp8(575).colors.ICON_SUBTLE };
-  ChevronSmallDownIcon = tmp3(10491).ChevronSmallDownIcon;
-  intl2 = tmp3(1113).intl;
+  obj5 = { size: "sm", color: tmp8(575).colors.ICON_SUBTLE };
+  ChevronSmallDownIcon = tmp3(10560).ChevronSmallDownIcon;
+  const intl2 = tmp3(1113).intl;
+  formatToPlainString = intl2.formatToPlainString;
+  name1 = undefined;
+  u9XiCz = tmp3(1113).t.u9XiCz;
+  if (guild != null) {
+    name1 = guild.name;
+  }
+  if (name1 == null) {
+    const intl3 = tmp3(1113).intl;
+    name1 = intl3.string(tmp3(1113).t["2p07FR"]);
+  }
+  obj6 = { hasIcons: true, children: jsx(TableRow, obj2) };
+  intl4 = tmp3(1113).intl;
   return jsx(tmp2, obj);
 };

@@ -1,18 +1,18 @@
-// Module ID: 9248
-// Function ID: 9249
+// Module ID: 9315
+// Function ID: 9316
 // Name: UserOfferActionCreators
-// Dependencies: [5, 9233, 9228, 9231, 1387, 1072, 1377, 572, 1252, 1282, 9249, 1242, 5285, 5076, 5073, 2]
+// Dependencies: [5, 9300, 9295, 9298, 1390, 1072, 1380, 572, 1256, 1285, 9316, 1242, 5348, 5139, 5136, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 9248 (UserOfferActionCreators)
+// Module 9315 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9233 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9228 */;
-import UserOfferStore from "UserOfferStore" /* 9231 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9300 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9295 */;
+import UserOfferStore from "UserOfferStore" /* 9298 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "Array", paymentGatewayOverride: "flexDirection" };
+                obj6 = { offerId: "disabled", paymentGatewayOverride: "isArray" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;
@@ -103,7 +103,7 @@ let obj = function _fetchUserOffer() {
               error = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {
@@ -422,7 +422,7 @@ export function triggerUserOffer(triggerType, trigger_location_stack, fn) {
     }
     const _JSON = JSON;
     const obj5 = { payment_gateway: GOOGLE, trigger_type: triggerType, trigger_location_stack, trigger_metadata: JSON.stringify(tmp6), trigger_uptime_app: obj.getUptimeForTrigger() };
-    const HTTP = tmp7(1282).HTTP;
+    const HTTP = tmp7(1285).HTTP;
     const request = { url: constants.USER_OFFER_TRIGGER, body: obj5, rejectWithError: true };
     const postResult = HTTP.post(request);
     postResult.then((body) => {

@@ -1,24 +1,25 @@
-// Module ID: 13095
-// Function ID: 13096
+// Module ID: 13194
+// Function ID: 13195
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 7301, 7311, 6954, 21, 4079, 5243, 575, 504, 13096, 13109, 13138, 7885, 1113, 7847, 7886, 6274, 13140, 13145, 13147, 5866, 7354, 5873, 7929, 7917, 13153, 11184, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 7365, 7375, 7017, 21, 4131, 5306, 575, 5552, 504, 13195, 13213, 13242, 7951, 1113, 7913, 7952, 6337, 13244, 13249, 13256, 5929, 7418, 5936, 7994, 7983, 13262, 11251, 2]
 
-// Module 13095 (ConjureSettingsSheet)
+// Module 13194 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4079 from "module_4079" /* 4079 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7301 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 7311 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6954 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 7375 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 7017 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
 let c2, c3, closure_3;
 
 let c10;
@@ -26,6 +27,396 @@ let c9;
 let closure_12;
 let map1;
 let obj3;
+function openLinkedAppSettings(projectId) {
+  let obj3;
+  obj = ActionSheetActionCreatorsDefault;
+  obj.hideActionSheet(ConjureSettingsSheet_str);
+  const obj2 = { content: authStore2(ConjureSettingsSheet, obj3, projectId), key: ConjureSettingsSheet_str };
+  const showActionSheet = ActionSheetActionCreators.showActionSheet;
+  obj3 = { projectId, initialTab: "linked" };
+  ActionSheetActionCreators;
+  showActionSheet(obj2);
+}
+class ConjureSettingsSheet {
+  constructor(projectId) {
+    let BottomSheetTitleHeader;
+    let closure_4;
+    let closure_5;
+    let fields;
+    let guildId;
+    let initialTab;
+    let intl;
+    let intl3;
+    let isPreview;
+    let items10;
+    let items9;
+    let note;
+    let notifyAgent;
+    let obj7;
+    let obj8;
+    let obj9;
+    let onSaved;
+    let scopeKeys;
+    let tmp30;
+    let tmp31;
+    projectId = projectId.projectId;
+    let stateFromStores1;
+    _asyncToGenerator = undefined;
+    _slicedToArray = undefined;
+    react = undefined;
+    let closure_6;
+    let closure_7;
+    let isScoped;
+    let loaded;
+    let closure_10;
+    let memo;
+    let closure_12;
+    let found;
+    let closure_14;
+    let canSave;
+    ({ guildId, initialTab, scopeKeys, note, notifyAgent, onSaved, isPreview } = projectId);
+    obj = react;
+    const tmp = closure_16();
+    let ref = react.useRef(null);
+    const tmp3 = projectId;
+    let tmp4 = stateFromStores1;
+    const obj2 = projectId(stateFromStores1[12]);
+    let items = [memo];
+    const items1 = [projectId];
+    const stateFromStores = obj2.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
+    let obj3 = projectId(stateFromStores1[12]);
+    const items2 = [isScoped];
+    const items3 = [projectId];
+    stateFromStores1 = obj3.useStateFromStores(items2, () => {
+      const modelSettings = ConjureModelSettingsStore.getModelSettings(projectId);
+      let tierSettings;
+      if (modelSettings != null) {
+        tierSettings = modelSettings.tierSettings;
+      }
+      return null != tierSettings;
+    }, items3);
+    let obj4 = projectId(stateFromStores1[12]);
+    const items4 = [closure_7];
+    const items5 = [projectId];
+    let tmp8 = null != stateFromStores;
+    const stateFromStores2 = obj4.useStateFromStores(items4, () => "open" === ConjureConnectionStore.getConnState(projectId), items5);
+    if (tmp8) {
+      tmp8 = closure_10(stateFromStores);
+    }
+    _asyncToGenerator = tmp8;
+    let tmp10 = null != stateFromStores && loaded(stateFromStores);
+    _slicedToArray = tmp10;
+    let guild_id;
+    const tmp13 = ref(tmp4[13]);
+    if (stateFromStores != null) {
+      guild_id = stateFromStores.guild_id;
+    }
+    if (guild_id == null) {
+      guild_id = guildId;
+    }
+    let obj5 = { readOnly: !tmp8 };
+    const tmp13Result = tmp13(projectId, guild_id, obj5);
+    react = tmp13Result;
+    const tmp16 = ref(tmp4[14])({ projectId, scopeKeys, note, notifyAgent, onSaved, isPreview });
+    closure_6 = tmp16;
+    const tmp17 = ref(tmp4[15])(projectId, tmp10);
+    closure_7 = tmp18;
+    isScoped = tmp16.isScoped;
+    loaded = tmp16.loaded;
+    if (loaded) {
+      let tmp19 = tmp16.valueCount > 0 || 0 === tmp16.secretCount;
+      loaded = tmp19;
+    }
+    closure_10 = tmp20;
+    const items6 = [tmp10, tmp18, stateFromStores1, tmp8, loaded, tmp20];
+    memo = obj.useMemo(() => {
+      const items = [];
+      const tmp2 = closure_3 || closure_4;
+      if (tmp2) {
+        items.push("project");
+      }
+      const tmp4 = loaded;
+      if (tmp4) {
+        items.push("app");
+      }
+      const tmp6 = closure_10;
+      if (tmp6) {
+        items.push("secrets");
+      }
+      const tmp8 = stateFromStores1;
+      if (tmp8) {
+        items.push("model");
+      }
+      const tmp10 = closure_7;
+      if (tmp10) {
+        items.push("linked");
+      }
+      if (closure_3) {
+        items.push("experimental");
+      }
+      return items;
+    }, items6);
+    const tmp21 = _slicedToArray(obj.useState(null), 2);
+    let tmp22 = tmp21[1];
+    closure_12 = tmp22;
+    const items7 = [tmp21[0], initialTab];
+    found = items7.find((item) => {
+      const hasItem = null != item && memo.includes(item);
+      return hasItem;
+    });
+    if (found == null) {
+      found = memo[0];
+    }
+    closure_14 = tmp24;
+    let hasItem = tmp8 || isScoped;
+    if (!hasItem) {
+      let str = "app";
+      hasItem = memo.includes("app");
+    }
+    if (!hasItem) {
+      let str2 = "secrets";
+      hasItem = memo.includes("secrets");
+    }
+    canSave = tmp16.canSave;
+    if (!canSave) {
+      canSave = !isScoped && tmp8 && tmp13Result.canSave;
+      const tmp26 = !isScoped && tmp8 && tmp13Result.canSave;
+    }
+    const items8 = [tmp16, canSave, tmp8, tmp13Result, tmp8 && tmp13Result.saving || tmp16.saving, isScoped, found, memo];
+    const callback = obj.useCallback(_asyncToGenerator(async (arg0, value) => {
+      let closure_1;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          let closure_0;
+          let closure_2;
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_0 = undefined;
+              ref = undefined;
+              closure_2 = undefined;
+              closure_3 = undefined;
+              const tmp45 = canSave;
+              if (tmp45) {
+                const tmp19 = closure_14;
+                if (!tmp19) {
+                  let validateResult = null;
+                  if (canSave.canSave) {
+                    validateResult = obj2.validate();
+                  }
+                  if (null == validateResult) {
+                    let submitResult = null;
+                    if (!isScoped) {
+                      submitResult = null;
+                      if (closure_3) {
+                        submitResult = closure_5.submit();
+                      }
+                    }
+                    const items = [submitResult, canSave.submit()];
+                    c2 = 1;
+                    c3 = 1;
+                    const obj5 = { value: all(items), done: false };
+                    return obj5;
+                  } else {
+                    const tmp22 = isScoped;
+                    if (!tmp22) {
+                      let str2 = "app";
+                      const tmp23 = closure_12;
+                      if ("secretFields" === validateResult) {
+                        str2 = "secrets";
+                      }
+                      tmp23(str2);
+                    }
+                  }
+                }
+              }
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            closure_0 = value;
+            ref = closure_1_4(closure_0, 2);
+            closure_2 = ref[0];
+            closure_3 = ref[1];
+            if (null == closure_2) {
+              const tmp6 = closure_3;
+              if (tmp6) {
+                const current = closure_129_1.current;
+                if (current != null) {
+                  current.closeActionSheet();
+                }
+              }
+            }
+            if (null != closure_2) {
+              closure_129_12(closure_2);
+            } else {
+              let str = "secrets";
+              if ("secrets" !== closure_129_13) {
+                const tmp42 = closure_129_12;
+                if (closure_129_11.includes("app")) {
+                  str = "app";
+                }
+                tmp42(str);
+              }
+            }
+          }
+          c3 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp30) {
+          c3 = 3;
+          throw tmp30;
+        }
+      }
+    }), items8);
+    const obj6 = { ref, startExpanded: true, keyboardShouldPersistTaps: "always", dismissAccessibilityLabel: intl.string(ref(tmp4[8]).bA4VU5), header: closure_12(BottomSheetTitleHeader, obj7), children: tmp30(tmp31, obj9) };
+    const ActionSheet = tmp3(tmp4[16]).ActionSheet;
+    intl = tmp3(tmp4[17]).intl;
+    BottomSheetTitleHeader = tmp3(tmp4[18]).BottomSheetTitleHeader;
+    const intl2 = tmp3(tmp4[17]).intl;
+    const string = intl2.string;
+    const tmp12Result = ref(tmp4[8]);
+    obj7 = { title: string(isScoped ? tmp12Result["jZjP+I"] : tmp12Result.I2XSKe), trailing: closure_12(tmp3(tmp4[19]).ActionSheetCloseButton, obj8) };
+    tmp30 = found;
+    let tmp28Result = null;
+    obj8 = {
+      onPress() {
+        const current = ref.current;
+        let closeActionSheetResult;
+        if (current != null) {
+          closeActionSheetResult = current.closeActionSheet();
+        }
+        return closeActionSheetResult;
+      }
+    };
+    obj9 = { style: tmp.container, children: items9 };
+    tmp31 = closure_6;
+    if (!isScoped) {
+      tmp28Result = null;
+      if (memo.length > 1) {
+        tmp28Result = null;
+        if (null != found) {
+          const obj10 = { tabs: memo, selected: found, onSelect: tmp22 };
+          tmp28Result = tmp28(SettingsTabStrip, obj10, memo.join(","));
+        }
+      }
+    }
+    items9 = [tmp28Result, , , , , , , , ];
+    if (isScoped) {
+      fields = tmp16.fields;
+    } else {
+      fields = null;
+    }
+    items9[1] = fields;
+    let tmp30Result = null;
+    if (!isScoped) {
+      tmp30Result = null;
+      if ("project" === found) {
+        const obj11 = { spacing: ref(tmp4[10]).space.PX_24, children: items10 };
+        const Stack = tmp3(tmp4[20]).Stack;
+        items10 = [tmp13Result.fields, ];
+        const obj12 = { projectId, canEdit: tmp10 };
+        items10[1] = closure_12(ref(tmp4[21]), obj12, projectId);
+        tmp30Result = tmp30(Stack, obj11);
+      }
+    }
+    items9[2] = tmp30Result;
+    let tmp28Result5 = null;
+    if (!isScoped) {
+      tmp28Result5 = null;
+      if ("linked" === found) {
+        const obj13 = { linkedApps: tmp17, onOpenSettings: openLinkedAppSettings };
+        tmp28Result5 = tmp28(tmp12(tmp4[22]), obj13);
+      }
+    }
+    items9[3] = tmp28Result5;
+    let experimentalFields = null;
+    if (!isScoped) {
+      experimentalFields = null;
+      if ("experimental" === found) {
+        experimentalFields = tmp13Result.experimentalFields;
+      }
+    }
+    items9[4] = experimentalFields;
+    let secretFields = null;
+    if (!isScoped) {
+      secretFields = null;
+      if ("secrets" === found) {
+        secretFields = tmp16.secretFields;
+      }
+    }
+    items9[5] = secretFields;
+    let tmp28Result6 = null;
+    if (!isScoped) {
+      tmp28Result6 = null;
+      if ("model" === found) {
+        const obj14 = { projectId };
+        tmp28Result6 = tmp28(tmp3(tmp4[23]).ConjureModelSettingsContent, obj14);
+      }
+    }
+    items9[6] = tmp28Result6;
+    let tmp41 = null;
+    if (!isScoped) {
+      tmp41 = null;
+      if (null == found) {
+        let tmp28Result7;
+        if (stateFromStores2) {
+          const obj15 = { variant: "body-sm/normal", color: "text-muted", children: intl3.string(ref(tmp4[8]).lJJayk) };
+          const Text = tmp3(tmp4[24]).Text;
+          intl3 = tmp3(tmp4[17]).intl;
+          tmp28Result7 = tmp28(Text, obj15);
+        } else {
+          tmp28Result7 = tmp28(tmp3(tmp4[25]).ActivityIndicator, {});
+        }
+        tmp41 = tmp28Result7;
+      }
+    }
+    items9[7] = tmp41;
+    let tmp28Result8 = null;
+    if (hasItem) {
+      if ("linked" !== found) {
+        let A7dQd9;
+        const Button = tmp3(tmp4[26]).Button;
+        const intl4 = tmp3(tmp4[17]).intl;
+        const string2 = intl4.string;
+        if (isScoped) {
+          A7dQd9 = tmp12(tmp4[8]).A7dQd9;
+        } else {
+          A7dQd9 = tmp3(tmp4[17]).t["R3BPH+"];
+        }
+        const obj16 = { text: string2(A7dQd9), variant: "primary", loading: tmp8 && tmp13Result.saving || tmp16.saving, disabled: !canSave, onPress: callback };
+        tmp28Result8 = tmp28(Button, obj16);
+      } else {
+        tmp28Result8 = null;
+      }
+    }
+    items9[8] = tmp28Result8;
+    return closure_12(ActionSheet, obj6);
+  }
+}
 function SettingsTabStrip(tabs) {
   let onLayout;
   let ref;
@@ -46,11 +437,11 @@ function SettingsTabStrip(tabs) {
   const items = [tabs];
   const memo = react.useMemo(() => tabs.map((id) => {
     let intl;
-    obj = { id, label: intl.string(closure_1_14[id]), page: null };
-    intl = tabs(index[16]).intl;
+    obj = { id, label: intl.string(closure_1_15[id]), page: null };
+    intl = tabs(index[17]).intl;
     return obj;
   }), items);
-  const tmp5 = tabs(tmp[27]);
+  const tmp5 = tabs(tmp[28]);
   obj = {
     items: memo,
     pageWidth: num,
@@ -75,10 +466,10 @@ function SettingsTabStrip(tabs) {
   const tmp10 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp9Result = tmp9(tmp4(tmp[28]).Tabs, obj3);
+    tmp9Result = tmp9(tmp4(tmp[29]).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
-    tmp9Result = tmp9(tmp4(tmp[29]).SegmentedControl, obj4);
+    tmp9Result = tmp9(tmp4(tmp[30]).SegmentedControl, obj4);
   }
   return closure_12(tmp10, obj2);
 }
@@ -90,384 +481,12 @@ let ConjureProjectStore = ConjureProjectStore_mod;
 ({ canPublishProject: c9, isProjectOwner: c10 } = ConjureProjectStore);
 ConjureProjectStore = ConjureProjectStore_mod;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let obj = { project: _modDef4079.W0eQfN, app: _modDef4079.lFaJYF, secrets: _modDef4079.vDpCPU, model: _modDef4079.Rs3qc9, linked: _modDef4079.fBEHdq, experimental: _modDef4079["0Pe9uw"] };
+const ConjureSettingsSheet_str = "ConjureSettingsSheet";
+let obj = { project: _modDef4131.W0eQfN, app: _modDef4131.lFaJYF, secrets: _modDef4131.vDpCPU, model: _modDef4131.Rs3qc9, linked: _modDef4131.fBEHdq, experimental: _modDef4131["0Pe9uw"] };
 let obj2 = { container: obj3 };
 obj3 = { gap: nativeDefault.space.PX_16 };
-let closure_15 = createStyles.createStyles(obj2);
+const authStore3 = createStyles.createStyles(obj2);
 const result = size.fileFinishedImporting("modules/conjure/settings/native/ConjureSettingsSheet.tsx");
 
-export default function ConjureSettingsSheet(projectId) {
-  let BottomSheetTitleHeader;
-  let closure_4;
-  let closure_5;
-  let fields;
-  let guildId;
-  let initialTab;
-  let intl;
-  let intl3;
-  let isPreview;
-  let items10;
-  let items9;
-  let note;
-  let notifyAgent;
-  let obj7;
-  let obj8;
-  let obj9;
-  let onSaved;
-  let scopeKeys;
-  let tmp30;
-  let tmp31;
-  projectId = projectId.projectId;
-  let stateFromStores1;
-  _asyncToGenerator = undefined;
-  _slicedToArray = undefined;
-  react = undefined;
-  let closure_6;
-  let closure_7;
-  let isScoped;
-  let loaded;
-  let closure_10;
-  let memo;
-  let closure_12;
-  let found;
-  let closure_14;
-  let canSave;
-  ({ guildId, initialTab, scopeKeys, note, notifyAgent, onSaved, isPreview } = projectId);
-  obj = react;
-  const tmp = canSave();
-  let ref = react.useRef(null);
-  const tmp3 = projectId;
-  let tmp4 = stateFromStores1;
-  const obj2 = projectId(stateFromStores1[11]);
-  let items = [memo];
-  const items1 = [projectId];
-  const stateFromStores = obj2.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
-  let obj3 = projectId(stateFromStores1[11]);
-  const items2 = [isScoped];
-  const items3 = [projectId];
-  stateFromStores1 = obj3.useStateFromStores(items2, () => {
-    const modelSettings = ConjureModelSettingsStore.getModelSettings(projectId);
-    let tierSettings;
-    if (modelSettings != null) {
-      tierSettings = modelSettings.tierSettings;
-    }
-    return null != tierSettings;
-  }, items3);
-  let obj4 = projectId(stateFromStores1[11]);
-  const items4 = [closure_7];
-  const items5 = [projectId];
-  let tmp8 = null != stateFromStores;
-  const stateFromStores2 = obj4.useStateFromStores(items4, () => "open" === ConjureConnectionStore.getConnState(projectId), items5);
-  if (tmp8) {
-    tmp8 = closure_10(stateFromStores);
-  }
-  _asyncToGenerator = tmp8;
-  let tmp10 = null != stateFromStores && loaded(stateFromStores);
-  _slicedToArray = tmp10;
-  let guild_id;
-  const tmp13 = ref(tmp4[12]);
-  if (stateFromStores != null) {
-    guild_id = stateFromStores.guild_id;
-  }
-  if (guild_id == null) {
-    guild_id = guildId;
-  }
-  let obj5 = { readOnly: !tmp8 };
-  const tmp13Result = tmp13(projectId, guild_id, obj5);
-  react = tmp13Result;
-  const tmp16 = ref(tmp4[13])({ projectId, scopeKeys, note, notifyAgent, onSaved, isPreview });
-  closure_6 = tmp16;
-  const tmp17 = ref(tmp4[14])(projectId, tmp10);
-  closure_7 = tmp18;
-  isScoped = tmp16.isScoped;
-  loaded = tmp16.loaded;
-  if (loaded) {
-    let tmp19 = tmp16.valueCount > 0 || 0 === tmp16.secretCount;
-    loaded = tmp19;
-  }
-  closure_10 = tmp20;
-  const items6 = [tmp10, tmp18, stateFromStores1, tmp8, loaded, tmp20];
-  memo = obj.useMemo(() => {
-    const items = [];
-    const tmp2 = closure_3 || closure_4;
-    if (tmp2) {
-      items.push("project");
-    }
-    const tmp4 = loaded;
-    if (tmp4) {
-      items.push("app");
-    }
-    const tmp6 = closure_10;
-    if (tmp6) {
-      items.push("secrets");
-    }
-    const tmp8 = stateFromStores1;
-    if (tmp8) {
-      items.push("model");
-    }
-    const tmp10 = closure_7;
-    if (tmp10) {
-      items.push("linked");
-    }
-    if (closure_3) {
-      items.push("experimental");
-    }
-    return items;
-  }, items6);
-  const tmp21 = _slicedToArray(obj.useState(null), 2);
-  let tmp22 = tmp21[1];
-  closure_12 = tmp22;
-  const items7 = [tmp21[0], initialTab];
-  found = items7.find((item) => {
-    const hasItem = null != item && memo.includes(item);
-    return hasItem;
-  });
-  if (found == null) {
-    found = memo[0];
-  }
-  closure_14 = tmp24;
-  let hasItem = tmp8 || isScoped;
-  if (!hasItem) {
-    let str = "app";
-    hasItem = memo.includes("app");
-  }
-  if (!hasItem) {
-    let str2 = "secrets";
-    hasItem = memo.includes("secrets");
-  }
-  canSave = tmp16.canSave;
-  if (!canSave) {
-    canSave = !isScoped && tmp8 && tmp13Result.canSave;
-    const tmp26 = !isScoped && tmp8 && tmp13Result.canSave;
-  }
-  const items8 = [tmp16, canSave, tmp8, tmp13Result, tmp8 && tmp13Result.saving || tmp16.saving, isScoped, found, memo];
-  const callback = obj.useCallback(_asyncToGenerator(async (arg0, value) => {
-    let closure_1;
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let closure_0;
-        let closure_2;
-        c3 = 2;
-        if (0 === c2) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_0 = undefined;
-            ref = undefined;
-            closure_2 = undefined;
-            closure_3 = undefined;
-            const tmp45 = canSave;
-            if (tmp45) {
-              const tmp19 = closure_14;
-              if (!tmp19) {
-                let validateResult = null;
-                if (canSave.canSave) {
-                  validateResult = obj2.validate();
-                }
-                if (null == validateResult) {
-                  let submitResult = null;
-                  if (!isScoped) {
-                    submitResult = null;
-                    if (closure_3) {
-                      submitResult = closure_5.submit();
-                    }
-                  }
-                  const items = [submitResult, canSave.submit()];
-                  c2 = 1;
-                  c3 = 1;
-                  const obj5 = { value: all(items), done: false };
-                  return obj5;
-                } else {
-                  const tmp22 = isScoped;
-                  if (!tmp22) {
-                    let str2 = "app";
-                    const tmp23 = closure_12;
-                    if ("secretFields" === validateResult) {
-                      str2 = "secrets";
-                    }
-                    tmp23(str2);
-                  }
-                }
-              }
-            }
-          }
-        } else if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          closure_0 = value;
-          ref = closure_1_4(closure_0, 2);
-          closure_2 = ref[0];
-          closure_3 = ref[1];
-          if (null == closure_2) {
-            const tmp6 = closure_3;
-            if (tmp6) {
-              const current = closure_129_1.current;
-              if (current != null) {
-                current.closeActionSheet();
-              }
-            }
-          }
-          if (null != closure_2) {
-            closure_129_12(closure_2);
-          } else {
-            let str = "secrets";
-            if ("secrets" !== closure_129_13) {
-              const tmp42 = closure_129_12;
-              if (closure_129_11.includes("app")) {
-                str = "app";
-              }
-              tmp42(str);
-            }
-          }
-        }
-        c3 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp30) {
-        c3 = 3;
-        throw tmp30;
-      }
-    }
-  }), items8);
-  const obj6 = { ref, startExpanded: true, keyboardShouldPersistTaps: "always", dismissAccessibilityLabel: intl.string(ref(tmp4[8]).bA4VU5), header: closure_12(BottomSheetTitleHeader, obj7), children: tmp30(tmp31, obj9) };
-  const ActionSheet = tmp3(tmp4[15]).ActionSheet;
-  intl = tmp3(tmp4[16]).intl;
-  BottomSheetTitleHeader = tmp3(tmp4[17]).BottomSheetTitleHeader;
-  const intl2 = tmp3(tmp4[16]).intl;
-  const string = intl2.string;
-  const tmp12Result = ref(tmp4[8]);
-  obj7 = { title: string(isScoped ? tmp12Result["jZjP+I"] : tmp12Result.I2XSKe), trailing: closure_12(tmp3(tmp4[18]).ActionSheetCloseButton, obj8) };
-  tmp30 = found;
-  let tmp28Result = null;
-  obj8 = {
-    onPress() {
-      const current = ref.current;
-      let closeActionSheetResult;
-      if (current != null) {
-        closeActionSheetResult = current.closeActionSheet();
-      }
-      return closeActionSheetResult;
-    }
-  };
-  obj9 = { style: tmp.container, children: items9 };
-  tmp31 = closure_6;
-  if (!isScoped) {
-    tmp28Result = null;
-    if (memo.length > 1) {
-      tmp28Result = null;
-      if (null != found) {
-        const obj10 = { tabs: memo, selected: found, onSelect: tmp22 };
-        tmp28Result = tmp28(SettingsTabStrip, obj10, memo.join(","));
-      }
-    }
-  }
-  items9 = [tmp28Result, , , , , , , , ];
-  if (isScoped) {
-    fields = tmp16.fields;
-  } else {
-    fields = null;
-  }
-  items9[1] = fields;
-  let tmp30Result = null;
-  if (!isScoped) {
-    tmp30Result = null;
-    if ("project" === found) {
-      const obj11 = { spacing: ref(tmp4[10]).space.PX_24, children: items10 };
-      const Stack = tmp3(tmp4[19]).Stack;
-      items10 = [tmp13Result.fields, ];
-      const obj12 = { projectId, canEdit: tmp10 };
-      items10[1] = closure_12(ref(tmp4[20]), obj12, projectId);
-      tmp30Result = tmp30(Stack, obj11);
-    }
-  }
-  items9[2] = tmp30Result;
-  let tmp28Result5 = null;
-  if (!isScoped) {
-    tmp28Result5 = null;
-    if ("linked" === found) {
-      const obj13 = { linkedApps: tmp17 };
-      tmp28Result5 = tmp28(tmp12(tmp4[21]), obj13);
-    }
-  }
-  items9[3] = tmp28Result5;
-  let experimentalFields = null;
-  if (!isScoped) {
-    experimentalFields = null;
-    if ("experimental" === found) {
-      experimentalFields = tmp13Result.experimentalFields;
-    }
-  }
-  items9[4] = experimentalFields;
-  let secretFields = null;
-  if (!isScoped) {
-    secretFields = null;
-    if ("secrets" === found) {
-      secretFields = tmp16.secretFields;
-    }
-  }
-  items9[5] = secretFields;
-  let tmp28Result6 = null;
-  if (!isScoped) {
-    tmp28Result6 = null;
-    if ("model" === found) {
-      const obj14 = { projectId };
-      tmp28Result6 = tmp28(tmp3(tmp4[22]).ConjureModelSettingsContent, obj14);
-    }
-  }
-  items9[6] = tmp28Result6;
-  let tmp40 = null;
-  if (!isScoped) {
-    tmp40 = null;
-    if (null == found) {
-      let tmp28Result7;
-      if (stateFromStores2) {
-        const obj15 = { variant: "body-sm/normal", color: "text-muted", children: intl3.string(ref(tmp4[8]).lJJayk) };
-        const Text = tmp3(tmp4[23]).Text;
-        intl3 = tmp3(tmp4[16]).intl;
-        tmp28Result7 = tmp28(Text, obj15);
-      } else {
-        tmp28Result7 = tmp28(tmp3(tmp4[24]).ActivityIndicator, {});
-      }
-      tmp40 = tmp28Result7;
-    }
-  }
-  items9[7] = tmp40;
-  let tmp28Result8 = null;
-  if (hasItem) {
-    let A7dQd9;
-    const Button = tmp3(tmp4[25]).Button;
-    const intl4 = tmp3(tmp4[16]).intl;
-    const string2 = intl4.string;
-    if (isScoped) {
-      A7dQd9 = tmp12(tmp4[8]).A7dQd9;
-    } else {
-      A7dQd9 = tmp3(tmp4[16]).t["R3BPH+"];
-    }
-    const obj16 = { text: string2(A7dQd9), variant: "primary", loading: tmp8 && tmp13Result.saving || tmp16.saving, disabled: !canSave, onPress: callback };
-    tmp28Result8 = tmp28(Button, obj16);
-  }
-  items9[8] = tmp28Result8;
-  return closure_12(ActionSheet, obj6);
-};
+export default ConjureSettingsSheet;
 export const CONJURE_SETTINGS_SHEET_KEY = "ConjureSettingsSheet";

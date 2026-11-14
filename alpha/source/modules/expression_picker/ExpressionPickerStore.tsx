@@ -1,14 +1,14 @@
-// Module ID: 19757
-// Function ID: 19758
+// Module ID: 19210
+// Function ID: 19211
 // Name: ExpressionPickerStore
-// Dependencies: [1228, 6276, 1254, 5443, 1259, 2]
+// Dependencies: [1228, 6339, 1258, 5506, 1263, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, setShowEmojiPacks, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 19757 (ExpressionPickerStore)
+// Module 19210 (ExpressionPickerStore)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import uniqueIdDefault from "uniqueId" /* 6276 */;
-import module_1254_mod from "module_1254" /* 1254 */;
-import combine from "combine" /* 5443 */;
+import uniqueIdDefault from "uniqueId" /* 6339 */;
+import module_1258_mod from "module_1258" /* 1258 */;
+import combine from "combine" /* 5506 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,15 +17,15 @@ let _require, dependencyMap;
 const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewType;
 let obj = { activeView: null, lastActiveView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, searchQuery: "", isSearchSuggestion: false, pickerId: uniqueIdDefault("uid_"), isNitroLockedSectionVisible: false, areOnlyNitroLockedSectionsVisible: false };
 let closure_3 = Object.freeze(obj);
-let module_1254 = module_1254_mod;
-module_1254 = module_1254.createWithEqualityFn();
+let module_1258 = module_1258_mod;
+module_1258 = module_1258.createWithEqualityFn();
 let obj2 = {
   name: "expression-picker-last-active-view",
   partialize(lastActiveView) {
     return { lastActiveView: lastActiveView.lastActiveView };
   }
 };
-const withEqualityFnResult = module_1254(combine.persist(() => closure_3, obj2));
+const withEqualityFnResult = module_1258(combine.persist(() => closure_3, obj2));
 const result = size.fileFinishedImporting("modules/expression_picker/ExpressionPickerStore.tsx");
 
 export function openExpressionPicker(arg0, arg1, arg2, arg3) {
@@ -65,7 +65,7 @@ export function closeExpressionPicker(arg0, arg1) {
   }
   if (!tmp2) {
     if (null !== state.activeView) {
-      const obj = state(1259);
+      const obj = state(1263);
       obj.batchUpdates(() => {
         const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, showSelectedEmojiPackId: "Array", lastActiveView: state1.activeView };
         return state.setState(obj);
@@ -84,7 +84,7 @@ export function toggleMultiExpressionPicker(arg0, arg1) {
     }
     let closure_1 = arg0;
     let closure_2 = arg1;
-    const obj3 = state1(1259);
+    const obj3 = state1(1263);
     obj3.batchUpdates(() => {
       let flag;
       let obj;
@@ -110,7 +110,7 @@ export function toggleMultiExpressionPicker(arg0, arg1) {
       if (state.activeChannelId === arg1) {
         state1 = obj.getState();
         if (null !== state1.activeView) {
-          const obj4 = state1(1259);
+          const obj4 = state1(1263);
           obj4.batchUpdates(() => {
             const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, showSelectedEmojiPackId: "Array", lastActiveView: state1.activeView };
             return state.setState(obj);
@@ -122,7 +122,7 @@ export function toggleMultiExpressionPicker(arg0, arg1) {
     closure_1 = arg0;
     closure_2 = arg1;
     let c3;
-    const obj2 = state1(1259);
+    const obj2 = state1(1263);
     obj2.batchUpdates(() => {
       let flag;
       let obj;
@@ -190,7 +190,7 @@ export function setExpressionPickerView(activeView) {
   _require = activeView;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "ip" };
+    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "disabled" };
     return withEqualityFnResult.setState(obj);
   });
 }
@@ -198,7 +198,7 @@ export function setShowEmojiPacks(showEmojiPacks) {
   _require = showEmojiPacks;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { showEmojiPacks, showSelectedEmojiPackId: "a" };
+    const obj = { showEmojiPacks, showSelectedEmojiPackId: "y" };
     return withEqualityFnResult.setState(obj);
   });
 }

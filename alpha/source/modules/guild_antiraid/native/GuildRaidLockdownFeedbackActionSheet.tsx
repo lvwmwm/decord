@@ -1,17 +1,17 @@
-// Module ID: 14025
-// Function ID: 14026
+// Module ID: 14132
+// Function ID: 14133
 // Name: GuildRaidLockdownFeedbackActionSheet
-// Dependencies: [32, 19, 1072, 21, 5243, 1113, 8654, 5489, 7885, 7847, 7408, 7680, 7667, 7793, 5873, 6004, 2]
+// Dependencies: [32, 19, 1072, 21, 5306, 1113, 8721, 5552, 7951, 7913, 7474, 7746, 7733, 7859, 5936, 6067, 2]
 // Exports: default
 
-// Module 14025 (GuildRaidLockdownFeedbackActionSheet)
+// Module 14132 (GuildRaidLockdownFeedbackActionSheet)
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, value;
@@ -52,28 +52,28 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
   const tmp3 = first1(react.useState(), 2);
   first1 = tmp3[0];
   react = tmp3[1];
-  let obj = { text: intl.string(guildId(1113).t["//3pvi"]), value: guildId(8654).RaidLockdownFeedbackType.DM_SPAM };
+  let obj = { text: intl.string(guildId(1113).t["//3pvi"]), value: guildId(8721).RaidLockdownFeedbackType.DM_SPAM };
   intl = guildId(1113).intl;
   let items = [obj, , , , , ];
-  let obj2 = { text: intl2.string(guildId(1113).t.SdVsip), value: guildId(8654).RaidLockdownFeedbackType.MENTION_SPAM };
+  let obj2 = { text: intl2.string(guildId(1113).t.SdVsip), value: guildId(8721).RaidLockdownFeedbackType.MENTION_SPAM };
   intl2 = guildId(1113).intl;
   items[1] = obj2;
-  let obj3 = { text: intl3.string(guildId(1113).t.uTiSVL), value: guildId(8654).RaidLockdownFeedbackType.CHANNEL_SPAM };
+  let obj3 = { text: intl3.string(guildId(1113).t.uTiSVL), value: guildId(8721).RaidLockdownFeedbackType.CHANNEL_SPAM };
   intl3 = guildId(1113).intl;
   items[2] = obj3;
-  const obj4 = { text: intl4.string(guildId(1113).t.GQczU8), value: guildId(8654).RaidLockdownFeedbackType.SUS_NEW_MEMBERS };
+  const obj4 = { text: intl4.string(guildId(1113).t.GQczU8), value: guildId(8721).RaidLockdownFeedbackType.SUS_NEW_MEMBERS };
   intl4 = guildId(1113).intl;
   items[3] = obj4;
-  const obj5 = { text: intl5.string(guildId(1113).t.AAgqy3), value: guildId(8654).RaidLockdownFeedbackType.CHANGING_SETTINGS };
+  const obj5 = { text: intl5.string(guildId(1113).t.AAgqy3), value: guildId(8721).RaidLockdownFeedbackType.CHANGING_SETTINGS };
   intl5 = guildId(1113).intl;
   items[4] = obj5;
-  const obj6 = { text: intl6.string(guildId(1113).t.ryPKb7), value: guildId(8654).RaidLockdownFeedbackType.OTHER };
+  const obj6 = { text: intl6.string(guildId(1113).t.ryPKb7), value: guildId(8721).RaidLockdownFeedbackType.OTHER };
   intl6 = guildId(1113).intl;
   items[5] = obj6;
   const obj7 = { startExpanded: true, header: closure_6(BottomSheetTitleHeader, obj8), children: tmp8(tmp9, obj9) };
-  const ActionSheet = guildId(7885).ActionSheet;
+  const ActionSheet = guildId(7951).ActionSheet;
   obj8 = { title: intl7.string(guildId(1113).t.f5hd9P) };
-  BottomSheetTitleHeader = guildId(7847).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = guildId(7913).BottomSheetTitleHeader;
   intl7 = guildId(1113).intl;
   obj9 = { style: tmp.container, children: items1 };
   const obj10 = {
@@ -98,10 +98,10 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
       return closure_1_6(TableCheckboxRow, obj, value);
     })
   };
-  tmp9 = raid_lockdown_feedback_type(7408);
-  const TableRowGroup = guildId(7680).TableRowGroup;
+  tmp9 = raid_lockdown_feedback_type(7474);
+  const TableRowGroup = guildId(7746).TableRowGroup;
   items1 = [closure_6(TableRowGroup, obj10), , ];
-  let hasItem = raid_lockdown_feedback_type.includes(guildId(8654).RaidLockdownFeedbackType.OTHER);
+  let hasItem = raid_lockdown_feedback_type.includes(guildId(8721).RaidLockdownFeedbackType.OTHER);
   tmp8 = closure_7;
   if (hasItem) {
     const obj11 = {
@@ -112,7 +112,7 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
           closure_4(arg0);
         }
     };
-    const TextArea = tmp5(7793).TextArea;
+    const TextArea = tmp5(7859).TextArea;
     intl8 = tmp5(1113).intl;
     hasItem = tmp7(TextArea, obj11);
   }
@@ -127,7 +127,7 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
     },
     text: intl9.string(guildId(1113).t.nAt0rE)
   };
-  const Button = tmp5(5873).Button;
+  const Button = tmp5(5936).Button;
   intl9 = tmp5(1113).intl;
   items1[2] = closure_6(Button, obj12);
   return closure_6(ActionSheet, obj7);

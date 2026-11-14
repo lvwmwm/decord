@@ -1,24 +1,24 @@
-// Module ID: 12557
-// Function ID: 12558
+// Module ID: 12653
+// Function ID: 12654
 // Name: PollsActionCreators
-// Dependencies: [5, 5176, 8677, 502, 5092, 8658, 6874, 6309, 8805, 12281, 1072, 38, 6205, 1113, 6854, 6859, 12558, 12560, 6004, 12, 504, 572, 5857, 12569, 5250, 12563, 8593, 11099, 6694, 2]
+// Dependencies: [5, 5239, 8744, 502, 5155, 8725, 6937, 6372, 8872, 12376, 1072, 38, 6268, 1113, 6917, 6922, 12654, 12656, 6067, 12, 504, 572, 5920, 12665, 5313, 12659, 8660, 11166, 6757, 2]
 
-// Module 12557 (PollsActionCreators)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6859 */;
-import DraftStore from "DraftStore" /* 8658 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 12558 */;
+// Module 12653 (PollsActionCreators)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6922 */;
+import DraftStore from "DraftStore" /* 8725 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 12654 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 5176 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 8677 */;
+import LurkingStore from "LurkingStore" /* 5239 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 8744 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6874 */;
-import MessageStore from "MessageStore" /* 6309 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8805 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 12281 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6937 */;
+import MessageStore from "MessageStore" /* 6372 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8872 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 12376 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -239,7 +239,7 @@ let obj = function _optimisticallySetAnswers() {
       await "HermesInternal";
       closure_2 = tmp;
       ({ channelId: c0, messageId: c1, answerIds: c2 } = channelId);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -400,7 +400,7 @@ obj = function _handlePollSubmitVote() {
       await "HermesInternal";
       answerIds = tmp5;
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -446,7 +446,7 @@ obj = function _handleClearPollVote() {
               channel = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -617,7 +617,7 @@ obj = function _handlePollActionTapped() {
       }
       await "HermesInternal";
       ({ channelId: c0, messageId: c1, type: c2 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -681,7 +681,7 @@ obj = function _createPoll() {
                 obj5 = undefined;
                 layout_type = 1;
                 c6 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "Path", done: true };
               }
             } else if (1 === layout_type) {
               if (arg0 === 1) {
@@ -847,7 +847,7 @@ obj = function _endPollEarly() {
       }
       await "HermesInternal";
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

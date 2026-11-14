@@ -1,13 +1,13 @@
-// Module ID: 19275
-// Function ID: 19276
+// Module ID: 19467
+// Function ID: 19468
 // Name: SearchHistoryStore
-// Dependencies: [8999, 5104, 12, 504, 572, 2]
+// Dependencies: [9066, 5167, 12, 504, 572, 2]
 
-// Module 19275 (SearchHistoryStore)
+// Module 19467 (SearchHistoryStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SearchConstants from "SearchConstants" /* 8999 */;
+import SearchConstants from "SearchConstants" /* 9066 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

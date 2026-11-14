@@ -1,28 +1,28 @@
-// Module ID: 20116
-// Function ID: 20117
+// Module ID: 20276
+// Function ID: 20277
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 5092, 8658, 1072, 21, 5243, 6699, 7379, 13207, 1113, 6313, 7864, 11057, 7922, 7483, 8591, 38, 504, 13390, 8823, 8808, 20117, 2116, 6205, 8812, 14494, 11086, 11569, 2017, 11568, 8810, 6274, 575, 7680, 2]
+// Dependencies: [5, 19, 17, 5155, 8725, 1072, 21, 5306, 6762, 7443, 13317, 1113, 6376, 7930, 11124, 7988, 7549, 8658, 38, 504, 13493, 8890, 8875, 20277, 2119, 6268, 8879, 14606, 11153, 11636, 2020, 11635, 8877, 6337, 575, 7746, 2]
 // Exports: default
 
-// Module 20116 (FileUploadActionComponent)
+// Module 20276 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6313 */;
-import FileSizeUtils from "FileSizeUtils" /* 6699 */;
-import TableRow2 from "TableRow" /* 7379 */;
-import XSmallIcon from "XSmallIcon" /* 7483 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7864 */;
-import DraftStore from "DraftStore" /* 8658 */;
-import AttachmentPreview from "AttachmentPreview" /* 11057 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11086 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11568 */;
-import FileUpIcon from "FileUpIcon" /* 13207 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6376 */;
+import FileSizeUtils from "FileSizeUtils" /* 6762 */;
+import TableRow2 from "TableRow" /* 7443 */;
+import XSmallIcon from "XSmallIcon" /* 7549 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7930 */;
+import DraftStore from "DraftStore" /* 8725 */;
+import AttachmentPreview from "AttachmentPreview" /* 11124 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11153 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11635 */;
+import FileUpIcon from "FileUpIcon" /* 13317 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const AttachmentPreviewDefault = AttachmentPreview;
@@ -97,7 +97,7 @@ function File(upload) {
     },
     accessibilityLabel: intl2.string(intl3.t.N86XcP)
   };
-  IconButton = tmp3(7922).IconButton;
+  IconButton = tmp3(7988).IconButton;
   intl2 = tmp3(1113).intl;
   return React4(TableRow, obj);
 }

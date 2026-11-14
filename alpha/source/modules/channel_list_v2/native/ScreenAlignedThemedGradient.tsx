@@ -1,19 +1,19 @@
-// Module ID: 18642
-// Function ID: 18643
+// Module ID: 18771
+// Function ID: 18772
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 5243, 10507, 8995, 10202, 18613, 1493, 1652, 2]
+// Dependencies: [17, 21, 5306, 10576, 9062, 10271, 18742, 1496, 1655, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 18642 (ScreenAlignedThemedGradient)
+// Module 18771 (ScreenAlignedThemedGradient)
 import Fragment from "Fragment" /* 21 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import useActiveTheme from "useActiveTheme" /* 8995 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10202 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10507 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18613 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import useActiveTheme from "useActiveTheme" /* 9062 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18742 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let obj1, obj4;
@@ -61,8 +61,8 @@ export function ScreenAlignedThemedGradientSliding(arg0) {
   const panelTranslateX = obj2.useHomeDrawerState().panelTranslateX;
   const height = useWindowDimensionsDefault({ ignoreKeyboard: true }).height;
   let items = [closure_7, , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[1] = roundToNearestPixelDefault;
   items[2] = offsetX;
   items[3] = panelTranslateX;
@@ -92,6 +92,6 @@ export function ScreenAlignedThemedGradientSliding(arg0) {
   ScreenAlignedThemedGradientTsx1.__initData = tmp5;
   const animatedStyle = useAnimatedStyle(ScreenAlignedThemedGradientTsx1);
   const items2 = [_false.absoluteFill, animatedStyle];
-  const View = tmp3(1652).View;
+  const View = tmp3(1655).View;
   return <View pointerEvents="none" style={items2}>{null}</View>;
 }

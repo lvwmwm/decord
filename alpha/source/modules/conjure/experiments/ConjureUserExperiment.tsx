@@ -1,11 +1,11 @@
-// Module ID: 6991
-// Function ID: 6992
+// Module ID: 7054
+// Function ID: 7055
 // Name: ConjureUserExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: isConjureUserEnabled, useIsConjureUserEnabled
 
-// Module 6991 (ConjureUserExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 7054 (ConjureUserExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-07-vibegrations-user", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

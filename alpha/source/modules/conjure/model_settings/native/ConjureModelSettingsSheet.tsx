@@ -1,23 +1,23 @@
-// Module ID: 13147
-// Function ID: 13148
+// Module ID: 13256
+// Function ID: 13257
 // Name: ConjureModelSettingsSheet
-// Dependencies: [32, 19, 17, 7301, 7311, 21, 504, 7328, 13148, 6274, 575, 13149, 5866, 1113, 4079, 7885, 7847, 2]
+// Dependencies: [32, 19, 17, 7365, 7375, 21, 504, 7392, 13257, 6337, 575, 13258, 5929, 1113, 4131, 7951, 7913, 2]
 // Exports: default
 
-// Module 13147 (ConjureModelSettingsSheet)
+// Module 13256 (ConjureModelSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef4079 from "module_4079" /* 4079 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 7328 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7847 */;
-import ActionSheet2 from "ActionSheet" /* 7885 */;
-import useConjureModelSettingsDraftDefault from "useConjureModelSettingsDraft" /* 13148 */;
-import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 13149 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 7392 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
+import ActionSheet2 from "ActionSheet" /* 7951 */;
+import useConjureModelSettingsDraftDefault from "useConjureModelSettingsDraft" /* 13257 */;
+import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 13258 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7301 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 7311 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 7375 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -62,14 +62,14 @@ function ModelSettingsPicker(projectId) {
   [tmp4, tmp5] = useConjureModelSettingsDraftDefault(tierSettings, callback);
   const obj2 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items3 };
   _slicedToArray(useConjureModelSettingsDraftDefault(tierSettings, callback), 2);
-  const Stack = projectId(6274).Stack;
+  const Stack = projectId(6337).Stack;
   items3 = [, ];
   const obj3 = { settings: tmp4, tiers: modelSettings.tiers, choices: modelSettings.choices, disabled: tmp, onChange: tmp5 };
   items3[0] = closure_8(ConjureEffortPickerDefault, obj3);
-  const Text = projectId(5866).Text;
+  const Text = projectId(5929).Text;
   const intl = projectId(1113).intl;
   const string = intl.string;
-  const tmp8 = _modDef4079;
+  const tmp8 = _modDef4131;
   const tmp6 = closure_9;
   const tmp7 = closure_8;
   if (tmp) {
@@ -92,7 +92,7 @@ export default function ConjureModelSettingsSheet(projectId) {
   projectId = projectId.projectId;
   const obj = { header: metroImportAll(BottomSheetTitleHeader, obj2), children: metroImportAll(View, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  obj2 = { title: intl.string(_modDef4079["3E7Yc0"]) };
+  obj2 = { title: intl.string(_modDef4131["3E7Yc0"]) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl2.intl;
   obj3 = { children: metroImportAll(ConjureModelSettingsContent, { projectId }) };

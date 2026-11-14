@@ -1,22 +1,23 @@
-// Module ID: 18878
-// Function ID: 18879
+// Module ID: 19007
+// Function ID: 19008
 // Name: WaterwheelsCard
-// Dependencies: [19, 17, 14712, 1072, 6839, 21, 5243, 575, 504, 18879, 5957, 5866, 5873, 10156, 7657, 1113, 7897, 2]
-// Exports: WaterwheelsCard, getWaterwheelsCardEligible, useWaterwheelsCardEligible
+// Dependencies: [19, 17, 7085, 14825, 1072, 6902, 21, 5306, 575, 10225, 504, 19008, 6020, 5929, 19009, 5936, 7723, 1113, 7963, 2]
+// Exports: WaterwheelsCard, useWaterwheelsCardEligible
 
-// Module 18878 (WaterwheelsCard)
+// Module 19007 (WaterwheelsCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6839 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10156 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18879 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 19008 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14712 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14825 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +25,6 @@ let _require, dependencyMap;
 
 let c10;
 let c3;
-let c9;
 let closure_4;
 let hasOwnProperty;
 let obj10;
@@ -39,69 +39,97 @@ let obj8;
 let obj9;
 let size;
 let size1;
+let unpackModuleId;
+function getWaterwheelsCardEligible(actions, stateFromStores, memo) {
+  let authorizationStatus = stateFromStores;
+  if (stateFromStores === undefined) {
+    authorizationStatus = PushNotificationPermissionStore.authorizationStatus;
+  }
+  let mapped = memo;
+  if (memo === undefined) {
+    const accounts = ConnectedAccountsStore.getAccounts();
+    const found = accounts.filter((revoked) => !revoked.revoked);
+    mapped = found.map((type) => type.type);
+  }
+  actions = actions.actions;
+  const iter = actions.find((type) => type.type === require("WaterwheelsCardTypes").WaterwheelsActionType.OPEN_CONNECTION);
+  let type;
+  if (iter != null) {
+    type = iter.type;
+  }
+  let tmp4 = type !== WaterwheelsCardTypes.WaterwheelsActionType.OPEN_CONNECTION || !mapped.includes(iter.value.provider);
+  if (tmp4) {
+    let tmp5 = "notifications_permission" !== actions.clientEligibility;
+    if (!tmp5) {
+      tmp5 = authorizationStatus === constants.UNDETERMINED || authorizationStatus === constants.DENIED;
+    }
+    tmp4 = tmp5;
+  }
+  return tmp4;
+}
 function WaterwheelsCardContent(card) {
   let game;
-  let items;
   let items1;
   let items2;
   let items3;
   let items4;
-  let obj16;
+  let items5;
+  let obj13;
+  let obj18;
   let obj3;
   let obj7;
   card = card.card;
   const onAction = card.onAction;
-  let first;
+  let action;
   function handleAction(arg0) {
     onAction(arg0, card);
   }
-  let tmp = closure_11();
+  let tmp = closure_12();
   dependencyMap = tmp;
   let tmp2 = card;
   let tmp3 = dependencyMap;
   let obj = card(504);
-  if (obj.useStateFromStores([], () => {
+  let items = [ConnectedAccountsStore, PushNotificationPermissionStore];
+  if (obj.useStateFromStores(items, () => {
     authorizationStatus = authorizationStatus.authorizationStatus;
-    let tmp = "notifications_permission" !== card.clientEligibility;
-    if (!tmp) {
-      tmp = authorizationStatus === constants.UNDETERMINED || authorizationStatus === constants.DENIED;
-    }
-    return tmp;
+    accounts = accounts.getAccounts();
+    const found = accounts.filter((revoked) => !revoked.revoked);
+    return getWaterwheelsCardEligible(card, authorizationStatus, found.map((type) => type.type));
   })) {
     const layout = card.layout;
     if ("server_row" === layout.type) {
-      let obj2 = { style: tmp.card, children: closure_9(WaterwheelsServerRowRenderer, obj3) };
+      let obj2 = { style: tmp.card, children: closure_10(WaterwheelsServerRowRenderer, obj3) };
       obj3 = { server: layout, onAction: handleAction };
-      return closure_9(closure_5, obj2);
+      return closure_10(closure_5, obj2);
     } else if ("carousel" === layout.type) {
-      let obj4 = { style: tmp.card, children: items2 };
-      let obj5 = { style: tmp.row, children: items };
-      let tmp10 = null;
+      let obj4 = { style: tmp.card, children: items3 };
+      let obj5 = { style: tmp.row, children: items1 };
+      let tmp15 = null;
       if (null != layout.header.iconUrl) {
         let obj6 = { style: tmp.icon, source: obj7 };
         obj7 = { uri: layout.header.iconUrl };
-        tmp10 = closure_9(onAction(5957), obj6);
+        tmp15 = closure_10(onAction(6020), obj6);
       }
-      items = [tmp10, ];
-      const obj8 = { children: items1 };
+      items1 = [tmp15, ];
+      const obj8 = { children: items2 };
       const obj9 = { variant: "heading-xs/semibold", children: layout.header.title };
-      items1 = [closure_9(tmp2(5866).Heading, obj9), ];
+      items2 = [closure_10(tmp2(5929).Heading, obj9), ];
       const obj10 = { variant: "body-sm/normal", children: layout.header.subtitle };
-      items1[1] = closure_9(tmp2(5866).Text, obj10);
-      items[1] = closure_10(closure_5, obj8);
-      items2 = [tmp8(closure_5, obj5), ];
+      items2[1] = closure_10(tmp2(5929).Text, obj10);
+      items1[1] = closure_11(closure_5, obj8);
+      items3 = [closure_11(closure_5, obj5), ];
       const obj11 = {
         horizontal: true,
         contentContainerStyle: tmp.rail,
-        children: items3.map((children) => {
+        children: items4.map((children) => {
               let items;
               let obj4;
               const obj = { style: game.game, children: items };
               items = [, , , , ];
               const obj2 = { variant: "body-xs/medium", children: children.rank };
-              items[0] = React4(Text_Text.Text, obj2);
+              items[0] = authStore(Text_Text.Text, obj2);
               let tmp4Result = null;
-              const tmp = authStore;
+              const tmp = unpackModuleId;
               const tmp2 = hasOwnProperty;
               const tmp3 = game;
               if (null != children.coverUrl) {
@@ -111,9 +139,9 @@ function WaterwheelsCardContent(card) {
               }
               items[1] = tmp4Result;
               const obj5 = { variant: "heading-sm/semibold", children: children.name };
-              items[2] = React4(Text_Text.Heading, obj5);
+              items[2] = authStore(Text_Text.Heading, obj5);
               const obj6 = { variant: "body-sm/normal", children: children.description };
-              items[3] = React4(Text_Text.Text, obj6);
+              items[3] = authStore(Text_Text.Text, obj6);
               let tmp4Result2 = null;
               if (null != children.server) {
                 const obj7 = { server: children.server, onAction: handleAction };
@@ -123,40 +151,52 @@ function WaterwheelsCardContent(card) {
               return tmp(tmp2, obj, children.gameId);
             })
       };
-      items3 = layout.items;
-      items2[1] = closure_9(first, obj11);
-      return closure_10(closure_5, obj4);
+      items4 = layout.items;
+      items3[1] = closure_10(action, obj11);
+      return closure_11(closure_5, obj4);
     } else {
-      first = card.actions[0];
-      const obj12 = { style: tmp.card, children: items4 };
-      const obj13 = { variant: "heading-sm/semibold", children: layout.title };
-      items4 = [closure_9(tmp2(5866).Heading, obj13), , , ];
-      const obj14 = { variant: "body-md/normal", children: layout.body };
-      items4[1] = closure_9(tmp2(5866).Text, obj14);
-      let tmp21Result = null;
-      const tmp19 = closure_10;
-      const tmp20 = closure_5;
-      if (null != layout.imageUrl) {
-        const obj15 = { style: tmp.media, source: obj16 };
-        obj16 = { uri: layout.imageUrl };
-        tmp21Result = tmp21(onAction(5957), obj15);
+      let tmp25Result;
+      action = card.actions[0];
+      let type;
+      if (action != null) {
+        type = action.type;
       }
-      items4[2] = tmp21Result;
-      let tmp21Result2 = null;
-      if (null != first) {
-        tmp21Result2 = null;
-        if (null != layout.actionLabel) {
-          const obj17 = {
-            text: layout.actionLabel,
-            onPress() {
-                      onAction(first, card);
-                    }
-          };
-          tmp21Result2 = tmp21(tmp2(5873).Button, obj17);
+      if (type === tmp2(10225).WaterwheelsActionType.OPEN_CONNECTION) {
+        const obj12 = { style: tmp.card, children: closure_10(onAction(19009), obj13) };
+        obj13 = { post: layout, action, onAction: handleAction };
+        tmp25Result = closure_10(closure_5, obj12);
+      } else {
+        const obj14 = { style: tmp.card, children: items5 };
+        const obj15 = { variant: "heading-sm/semibold", children: layout.title };
+        items5 = [closure_10(tmp2(5929).Heading, obj15), , , ];
+        const obj16 = { variant: "body-md/normal", children: layout.body };
+        items5[1] = closure_10(tmp2(5929).Text, obj16);
+        let tmp27Result = null;
+        const tmp25 = closure_11;
+        const tmp26 = closure_5;
+        if (null != layout.imageUrl) {
+          const obj17 = { style: tmp.media, source: obj18 };
+          obj18 = { uri: layout.imageUrl };
+          tmp27Result = tmp27(onAction(6020), obj17);
         }
+        items5[2] = tmp27Result;
+        let tmp27Result2 = null;
+        if (null != action) {
+          tmp27Result2 = null;
+          if (null != layout.actionLabel) {
+            const obj19 = {
+              text: layout.actionLabel,
+              onPress() {
+                          onAction(first, card);
+                        }
+            };
+            tmp27Result2 = tmp27(tmp2(5936).Button, obj19);
+          }
+        }
+        items5[3] = tmp27Result2;
+        tmp25Result = tmp25(tmp26, obj14);
       }
-      items4[3] = tmp21Result2;
-      return tmp19(tmp20, obj12);
+      return tmp25Result;
     }
   } else {
     const tmp4 = null;
@@ -182,7 +222,7 @@ function WaterwheelsServerRowRenderer(server) {
   let tmp6;
   server = server.server;
   const onAction = server.onAction;
-  const tmp = closure_11();
+  const tmp = closure_12();
   const joined = server.joined;
   let obj = { style: tmp.row, children: items9 };
   let obj2 = {
@@ -203,12 +243,12 @@ function WaterwheelsServerRowRenderer(server) {
   if (null != server.iconUrl) {
     const obj3 = { style: tmp.icon, source: obj4 };
     obj4 = { uri: server.iconUrl };
-    tmp6 = closure_9(onAction(joined[10]), obj3);
-    tmp5 = closure_9;
+    tmp6 = closure_10(onAction(joined[12]), obj3);
+    tmp5 = closure_10;
   } else {
-    tmp5 = closure_9;
+    tmp5 = closure_10;
     const obj5 = { style: tmp.icon };
-    tmp6 = closure_9(tmp3, obj5);
+    tmp6 = closure_10(tmp3, obj5);
   }
   items = [tmp6, , ];
   let tmp5Result = null;
@@ -219,7 +259,7 @@ function WaterwheelsServerRowRenderer(server) {
     ({ guildId: obj8.id, name: obj8.name, iconUrl: obj8.icon } = server);
     const tmp11 = onAction;
     const tmp12 = joined;
-    const tmp13 = onAction(joined[14]);
+    const tmp13 = onAction(joined[16]);
     if (server.verified) {
       const items1 = [GuildFeatures.VERIFIED];
       items2 = items1;
@@ -227,22 +267,22 @@ function WaterwheelsServerRowRenderer(server) {
       items2 = [];
     }
     ({ members: obj8.approximate_member_count, online: obj8.approximate_presence_count } = server);
-    const obj10 = { guild: obj9, size: tmp11(tmp12[14]).Sizes.REFRESH_SMALL_16, disableColor: true };
+    const obj10 = { guild: obj9, size: tmp11(tmp12[16]).Sizes.REFRESH_SMALL_16, disableColor: true };
     tmp5Result = tmp5(tmp13, obj10);
   }
   items3 = [tmp5Result, ];
   const obj11 = { variant: "body-md/semibold", lineClamp: 1, children: server.name };
-  items3[1] = tmp5(server(joined[11]).Text, obj11);
-  items4 = [closure_10(closure_5, obj7), ];
+  items3[1] = tmp5(server(joined[13]).Text, obj11);
+  items4 = [closure_11(closure_5, obj7), ];
   let tmp2Result = null;
   const obj12 = { style: tmp.serverMeta, children: items6 };
   if (null != server.online) {
     const obj13 = { style: tmp.row, children: items5 };
     const obj14 = { style: tmp.dot };
     items5 = [tmp5(closure_5, obj14), ];
-    const obj15 = { variant: "body-xs/medium", children: intl.format(server(joined[15]).t["LC+S+m"], obj16) };
-    const Text = tmp15(tmp16[11]).Text;
-    intl = tmp15(tmp16[15]).intl;
+    const obj15 = { variant: "body-xs/medium", children: intl.format(server(joined[17]).t["LC+S+m"], obj16) };
+    const Text = tmp15(tmp16[13]).Text;
+    intl = tmp15(tmp16[17]).intl;
     obj16 = { membersOnline: server.online };
     items5[1] = tmp5(Text, obj15);
     tmp2Result = tmp2(tmp3, obj13);
@@ -255,28 +295,28 @@ function WaterwheelsServerRowRenderer(server) {
     const obj17 = { style: tmp.row, children: items8 };
     ({ dot: arr8[0], mutedDot: arr8[1] } = tmp);
     items8 = [tmp5(closure_5, obj18), ];
-    const obj19 = { variant: "body-xs/medium", children: intl2.format(server(joined[15]).t.zRl6XR, obj20) };
-    const Text2 = tmp15(tmp16[11]).Text;
-    intl2 = tmp15(tmp16[15]).intl;
+    const obj19 = { variant: "body-xs/medium", children: intl2.format(server(joined[17]).t.zRl6XR, obj20) };
+    const Text2 = tmp15(tmp16[13]).Text;
+    intl2 = tmp15(tmp16[17]).intl;
     obj20 = { count: server.members };
     items8[1] = tmp5(Text2, obj19);
     tmp2Result2 = tmp2(tmp3, obj17);
   }
   items6[1] = tmp2Result2;
-  items4[1] = closure_10(closure_5, obj12);
-  items[1] = closure_10(closure_5, obj6);
+  items4[1] = closure_11(closure_5, obj12);
+  items[1] = closure_11(closure_5, obj6);
   let tmp5Result2 = null;
   if (joined) {
-    const obj21 = { size: "md", color: onAction(joined[7]).colors.INTERACTIVE_MUTED };
-    const ChevronSmallRightIcon = tmp15(tmp16[16]).ChevronSmallRightIcon;
+    const obj21 = { size: "md", color: onAction(joined[8]).colors.INTERACTIVE_MUTED };
+    const ChevronSmallRightIcon = tmp15(tmp16[18]).ChevronSmallRightIcon;
     tmp5Result2 = tmp5(ChevronSmallRightIcon, obj21);
   }
   items[2] = tmp5Result2;
-  items9 = [closure_10(tmp4, obj2), ];
-  const Button = tmp15(tmp16[12]).Button;
-  const intl3 = tmp15(tmp16[15]).intl;
+  items9 = [closure_11(tmp4, obj2), ];
+  const Button = tmp15(tmp16[15]).Button;
+  const intl3 = tmp15(tmp16[17]).intl;
   const string = intl3.string;
-  const t = tmp15(tmp16[15]).t;
+  const t = tmp15(tmp16[17]).t;
   const obj41 = {
     size: "sm",
     variant: "secondary",
@@ -290,12 +330,12 @@ function WaterwheelsServerRowRenderer(server) {
     }
   };
   items9[1] = tmp5(Button, obj41);
-  return closure_10(closure_5, obj);
+  return closure_11(closure_5, obj);
 }
 ({ Pressable: c3, ScrollView: closure_4, View: hasOwnProperty } = react_native);
 const GuildFeatures = Constants.GuildFeatures;
 const constants = NativePermissionConstants.NotificationAuthorizationStatus;
-({ jsx: c9, jsxs: c10 } = Fragment);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { card: obj2, row: obj3, identity: obj4, copy: obj5, icon: size, media: obj6, game: obj7, hero: obj8, serverMeta: obj9, dot: size1, mutedDot: obj10, rail: obj11 };
 obj2 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -311,39 +351,28 @@ obj9 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
 size1 = { width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
 obj10 = { backgroundColor: nativeDefault.colors.INTERACTIVE_MUTED };
 obj11 = { gap: nativeDefault.space.PX_12 };
-let closure_11 = createStyles(obj);
+let closure_12 = createStyles(obj);
 size = size_mod;
 const result = size.fileFinishedImporting("modules/waterwheels/cards/native/WaterwheelsCard.tsx");
 
-export function getWaterwheelsCardEligible(clientEligibility, stateFromStores) {
-  let authorizationStatus = stateFromStores;
-  if (stateFromStores === undefined) {
-    authorizationStatus = PushNotificationPermissionStore.authorizationStatus;
-  }
-  let tmp2 = "notifications_permission" !== clientEligibility.clientEligibility;
-  if (!tmp2) {
-    tmp2 = authorizationStatus === constants.UNDETERMINED || authorizationStatus === constants.DENIED;
-  }
-  return tmp2;
-}
+export { getWaterwheelsCardEligible };
 export function useWaterwheelsCardEligible(arg0) {
   let closure_0;
   _require = arg0;
+  const items = [ConnectedAccountsStore, PushNotificationPermissionStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores([], () => {
+  return obj.useStateFromStores(items, () => {
     authorizationStatus = authorizationStatus.authorizationStatus;
-    let tmp = "notifications_permission" !== card.clientEligibility;
-    if (!tmp) {
-      tmp = authorizationStatus === constants.UNDETERMINED || authorizationStatus === constants.DENIED;
-    }
-    return tmp;
+    accounts = accounts.getAccounts();
+    const found = accounts.filter((revoked) => !revoked.revoked);
+    return getWaterwheelsCardEligible(card, authorizationStatus, found.map((type) => type.type));
   });
 }
 export function WaterwheelsCard(card) {
   let obj2;
-  const obj = { fallback: null, children: React4(WaterwheelsCardContent, obj2) };
+  const obj = { fallback: null, children: authStore(WaterwheelsCardContent, obj2) };
   obj2 = {};
   const ErrorBoundary = entry_data_ErrorBoundary.ErrorBoundary;
   const merged = Object.assign(card);
-  return React4(ErrorBoundary, obj, card.card.id);
+  return authStore(ErrorBoundary, obj, card.card.id);
 }

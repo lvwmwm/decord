@@ -1,11 +1,11 @@
-// Module ID: 16045
-// Function ID: 16046
+// Module ID: 16166
+// Function ID: 16167
 // Name: EffectiveNotifSettings
-// Dependencies: [32, 16046, 2]
+// Dependencies: [32, 16167, 2]
 // Exports: legacySourceFingerprint, parseEffectiveNotifSettings
 
-// Module 16045 (EffectiveNotifSettings)
-import _mod16046 from "module_16046" /* 16046 */;
+// Module 16166 (EffectiveNotifSettings)
+import _mod16167 from "module_16167" /* 16167 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -24,41 +24,41 @@ let z2;
 let z3;
 let z4;
 let z5;
-const z = _mod16046.z;
+const z = _mod16167.z;
 const object = z.object;
 const obj = { value: z2.boolean(), source: z3.enum(["legacy_proto", "legacy_default", "declarative", "declarative_sibling", "declarative_retired", "declarative_predecessor"]), explicit: z4.boolean(), inherited: z5.boolean(), setting_id: intResult.positive(), source_setting_id: positiveResult.nullable(), legacy_path: stringResult.regex(/^[a-z][a-z_]*\.[a-z][a-z_]*$/) };
-z2 = _mod16046.z;
-z3 = _mod16046.z;
-z4 = _mod16046.z;
-z5 = _mod16046.z;
-const z6 = _mod16046.z;
+z2 = _mod16167.z;
+z3 = _mod16167.z;
+z4 = _mod16167.z;
+z5 = _mod16167.z;
+const z6 = _mod16167.z;
 const numberResult = z6.number();
 intResult = numberResult.int();
-const z7 = _mod16046.z;
+const z7 = _mod16167.z;
 const numberResult1 = z7.number();
 const intResult1 = numberResult1.int();
 positiveResult = intResult1.positive();
-const z8 = _mod16046.z;
+const z8 = _mod16167.z;
 stringResult = z8.string();
 const objectResult = object(obj);
-const z9 = _mod16046.z;
+const z9 = _mod16167.z;
 const object2 = z9.object;
 const obj2 = { contract_version: z10.literal(1), account_id: z11.string(), arm: z12.literal("treatment"), legacy_data_version: intResult2.nonnegative(), declarative_data_version: intResult3.nonnegative(), preferences: object4Result.strip() };
-z10 = _mod16046.z;
-z11 = _mod16046.z;
-z12 = _mod16046.z;
-const z13 = _mod16046.z;
+z10 = _mod16167.z;
+z11 = _mod16167.z;
+z12 = _mod16167.z;
+const z13 = _mod16167.z;
 const numberResult2 = z13.number();
 intResult2 = numberResult2.int();
-const z14 = _mod16046.z;
+const z14 = _mod16167.z;
 const numberResult3 = z14.number();
 intResult3 = numberResult3.int();
-const z15 = _mod16046.z;
+const z15 = _mod16167.z;
 const obj3 = { go_live: objectResult, voice_channel_activity: objectResult, friends_gaming: objectResult, custom_status_update: objectResult, friend_online: objectResult, profile_updates: objectResult, server_trending: objectResult, reactions: extendResult.optional(), summary_reminder: objectResult, upcoming_server_event: objectResult };
 const object3 = z15.object;
 const extend = objectResult.extend;
 const obj4 = { value: minResult.max(2) };
-const z16 = _mod16046.z;
+const z16 = _mod16167.z;
 const numberResult4 = z16.number();
 const intResult4 = numberResult4.int();
 minResult = intResult4.min(0);

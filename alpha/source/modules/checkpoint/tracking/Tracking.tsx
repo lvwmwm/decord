@@ -1,14 +1,14 @@
-// Module ID: 14144
-// Function ID: 14145
+// Module ID: 14251
+// Function ID: 14252
 // Name: Tracking
-// Dependencies: [1072, 1252, 6004, 14145, 2]
+// Dependencies: [1072, 1256, 6067, 14252, 2]
 // Exports: trackCheckpoint2026CardClicked, trackCheckpoint2026CardShared, trackCheckpoint2026CharacterChoiceSelected, trackCheckpoint2026Closed, trackCheckpoint2026Completed, trackCheckpoint2026GiftCtaClicked, trackCheckpoint2026MuteToggled, trackCheckpoint2026SidekickMessageSent, trackCheckpoint2026Started, trackCheckpoint2026StepViewed
 
-// Module 14144 (Tracking)
+// Module 14251 (Tracking)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
-import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 14145 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 14252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -68,9 +68,9 @@ export function trackCheckpoint2026Completed() {
   const merged = Object.assign(obj3.getAnalyticsProperties());
   track(CHECKPOINT_2026_COMPLETED, obj);
 }
-export function trackCheckpoint2026CharacterChoiceSelected(trait_type, option_id) {
+export function trackCheckpoint2026CharacterChoiceSelected(trait_type, option_id, traitOptionStatus, traitOptionRarity) {
   let obj2;
-  const obj = { trait_type, option_id, step_name: obj2.getStepName() };
+  const obj = { trait_type, option_id, option_lock_status: traitOptionStatus, option_rarity: traitOptionRarity, step_name: obj2.getStepName() };
   const track = AnalyticsUtilsDefault.track;
   const CHECKPOINT_2026_CHARACTER_CHOICE_SELECTED = AnalyticEvents.CHECKPOINT_2026_CHARACTER_CHOICE_SELECTED;
   AnalyticsUtilsDefault;

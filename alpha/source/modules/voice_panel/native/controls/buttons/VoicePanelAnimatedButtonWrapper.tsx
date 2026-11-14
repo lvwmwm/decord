@@ -1,20 +1,20 @@
-// Module ID: 19927
-// Function ID: 19928
+// Module ID: 20084
+// Function ID: 20085
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 11919, 21, 5243, 575, 1652, 19790, 1377, 5876, 5485, 2]
+// Dependencies: [19, 17, 11985, 21, 5306, 575, 1655, 19978, 1380, 5939, 5548, 2]
 // Exports: default
 
-// Module 19927 (VoicePanelAnimatedButtonWrapper)
+// Module 20084 (VoicePanelAnimatedButtonWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
-import module_1652 from "module_1652" /* 1652 */;
+import createStyles from "createStyles" /* 5306 */;
+import module_1655 from "module_1655" /* 1655 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj1, obj5, obj6;
@@ -26,7 +26,7 @@ let jsx = Fragment.jsx;
 let obj = { pressableWrapper: obj2 };
 obj2 = { justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.modules.button.BORDER_RADIUS_LG };
 let closure_6 = createStyles.createStyles(obj);
-let closure_7 = module_1652.createAnimatedComponent(Pressable);
+let closure_7 = module_1655.createAnimatedComponent(Pressable);
 let closure_8 = { code: "(function VoicePanelAnimatedButtonWrapperTsx1(values){let[offsetFromCenter,withSpring,MODE_CHANGE_PHYSICS,withTiming]=this.__closure;offsetFromCenter.set(values.windowWidth/2-values.targetGlobalOriginX-values.targetWidth/2);return{initialValues:{originX:values.targetOriginX+offsetFromCenter.get(),opacity:0,transform:[{scale:0.5}]},animations:{originX:withSpring(values.targetOriginX,MODE_CHANGE_PHYSICS),opacity:withTiming(1,{duration:100}),transform:[{scale:withSpring(1,MODE_CHANGE_PHYSICS)}]}};})" };
 let closure_9 = { code: "(function VoicePanelAnimatedButtonWrapperTsx2(values){let[withSpring,offsetFromCenter,MODE_CHANGE_PHYSICS,withTiming]=this.__closure;return{initialValues:{originX:values.currentOriginX,opacity:1,transform:[{scale:1}]},animations:{originX:withSpring(values.currentOriginX+offsetFromCenter.get(),MODE_CHANGE_PHYSICS),opacity:withTiming(0,{duration:100}),transform:[{scale:withSpring(0.5,MODE_CHANGE_PHYSICS)}]}};})" };
 let size = size_mod;

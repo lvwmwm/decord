@@ -1,10 +1,10 @@
-// Module ID: 10145
-// Function ID: 10146
+// Module ID: 10214
+// Function ID: 10215
 // Name: DiscoverRequestState
 // Dependencies: [2]
 // Exports: reduceDiscoverSnapshot
 
-// Module 10145 (DiscoverRequestState)
+// Module 10214 (DiscoverRequestState)
 import size from "module_2" /* 2 */;
 
 class DiscoverRequestGuard {
@@ -68,31 +68,42 @@ export { DiscoverRequestGuard };
 export const discoverRequestGuard = Object.assign({ session: 0, commit: 0, gate: 0, gateEnabled: null });
 export { EMPTY_DISCOVER_SNAPSHOT };
 export function reduceDiscoverSnapshot(tmp2Result4, type) {
+  let loadId;
   let obj;
+  let retryAfterAt;
   type = type.type;
   if ("reset" === type) {
     return obj;
   } else if ("commit" === type) {
-    let tmp9;
+    let tmp11;
     if (type.enabled) {
-      const obj3 = { status: "loading" };
-      const merged = Object.assign(tmp8);
-      tmp9 = obj3;
+      const obj2 = { status: "loading" };
+      const merged = Object.assign(tmp2Result4);
+      tmp11 = obj2;
     } else {
-      tmp9 = tmp8;
+      tmp11 = obj;
     }
-    return tmp9;
+    return tmp11;
   } else if ("start" === type) {
-    const obj4 = { status: "loading" };
+    const obj3 = { status: "loading" };
     const merged1 = Object.assign(tmp2Result4);
-    return obj4;
+    return obj3;
   } else if ("success" === type) {
-    const obj7 = { status: "success", items: null, hasSnapshot: true, loadId: null };
-    ({ items: obj2.items, loadId: obj2.loadId } = type);
-    return obj7;
+    const obj4 = { status: "success", items: type.items, hasSnapshot: true, loadId, loadedAt: Date.now() };
+    if ("none" !== type.loadId) {
+      loadId = type.loadId;
+    } else {
+      loadId = null;
+    }
+    const _Date = Date;
+    return obj4;
   } else if ("error" === type) {
-    obj = { status: "error" };
+    obj = { status: "error", retryAfterAt };
     const merged2 = Object.assign(tmp2Result4);
+    retryAfterAt = type.retryAfterAt;
+    if (retryAfterAt == null) {
+      retryAfterAt = null;
+    }
     return obj;
   }
 }

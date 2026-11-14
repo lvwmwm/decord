@@ -1,13 +1,13 @@
-// Module ID: 10382
-// Function ID: 10383
+// Module ID: 10451
+// Function ID: 10452
 // Name: useProductDisableState
-// Dependencies: [2176, 504, 1075, 1113, 2]
+// Dependencies: [2179, 504, 1075, 1113, 2]
 // Exports: useProductDisableState
 
-// Module 10382 (useProductDisableState)
+// Module 10451 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import size from "module_2" /* 2 */;
 
 let premiumSubscription;

@@ -1,27 +1,27 @@
-// Module ID: 20736
-// Function ID: 20737
+// Module ID: 19832
+// Function ID: 19833
 // Name: AccountLinkManager
-// Dependencies: [32, 5, 7158, 20737, 1072, 1089, 1282, 7816, 2]
+// Dependencies: [32, 5, 7221, 19833, 1072, 1089, 1285, 7882, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 20736 (AccountLinkManager)
+// Module 19832 (AccountLinkManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7158 */;
-import AccountLinkStore from "AccountLinkStore" /* 20737 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7221 */;
+import AccountLinkStore from "AccountLinkStore" /* 19833 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
-let postResult;
+let body;
 
 let metroImportDefault;
 let metroRequire;
 let obj = function _claimIncentivizedAccountLinkingReward() {
   obj = _asyncToGenerator(async (application_id) => {
+    let closure_1;
     let closure_2;
-    let closure_3;
     let c5 = 0;
     let c6 = 0;
     let c4 = 0;
@@ -33,13 +33,12 @@ let obj = function _claimIncentivizedAccountLinkingReward() {
       const HTTP = closure_130_0(closure_130_1[6]).HTTP;
       const request = { url: closure_130_7.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT, body: obj5, rejectWithError: true };
       obj5 = { application_id };
-      postResult = HTTP.post(request);
-      await postResult;
+      await HTTP.post(request);
       if (2 === c5) {
         c4 = 0;
-        postResult = c2;
+        let closure_4 = body;
         if (c2 != null) {
-          postResult(closure_3);
+          tmp13(closure_4);
         }
       } else if (arg0 === 1) {
         c6 = 3;
@@ -49,14 +48,26 @@ let obj = function _claimIncentivizedAccountLinkingReward() {
         c6 = 3;
         return { value, done: true };
       } else {
-        if (postResult != null) {
-          postResult();
+        body = value;
+        body = body.body;
+        let status;
+        if (body != null) {
+          status = body.status;
         }
-        c4 = 0;
+        if ("already_awarded" === status) {
+          c4 = 0;
+          c6 = 3;
+          return { value: "HermesInternal", done: null };
+        } else {
+          if (c1 != null) {
+            c1();
+          }
+          c4 = 0;
+        }
       }
       await "HermesInternal";
       ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

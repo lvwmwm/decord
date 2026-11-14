@@ -1,9 +1,9 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 7397
+// Function ID: 7398
 // Name: Constants
 // Dependencies: [2]
 
-// Module 7333 (Constants)
+// Module 7397 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/local_push_notification/native/Constants.tsx");

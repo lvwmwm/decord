@@ -1,27 +1,27 @@
-// Module ID: 18890
-// Function ID: 18891
+// Module ID: 19044
+// Function ID: 19045
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 5110, 502, 5114, 5286, 1072, 21, 5243, 575, 5866, 14912, 18891, 1113, 6274, 5873, 1500, 563, 6275, 1260, 5117, 5431, 8494, 17585, 2]
+// Dependencies: [32, 19, 17, 5173, 502, 5177, 5349, 1072, 21, 5306, 575, 5929, 15026, 19045, 1113, 6337, 5936, 1503, 563, 6338, 1264, 5180, 5494, 8560, 17703, 2]
 
-// Module 18890 (GuildsEmpty)
+// Module 19044 (GuildsEmpty)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import GuildRecord from "GuildRecord" /* 5110 */;
-import FavoritesUtils from "FavoritesUtils" /* 5117 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import components_Button_Button from "components/Button/Button" /* 5873 */;
-import Stack_Stack from "Stack/Stack" /* 6274 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14912 */;
-import CheersSpotIllustration from "CheersSpotIllustration" /* 18891 */;
+import GuildRecord from "GuildRecord" /* 5173 */;
+import FavoritesUtils from "FavoritesUtils" /* 5180 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Stack_Stack from "Stack/Stack" /* 6337 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 15026 */;
+import CheersSpotIllustration from "CheersSpotIllustration" /* 19045 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -128,7 +128,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
   selectedGuildId = undefined;
   ({ selectedGuildId, style } = arg0);
   const tmp = closure_15();
-  const obj = navigation(1500);
+  const obj = navigation(1503);
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [AuthenticationStore];
@@ -138,8 +138,8 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
     tmp6 = selectedGuildId;
   }
   selectedGuildId = tmp6;
-  let obj3 = { type: tmp2(1260).ImpressionTypes.VIEW, name: tmp2(1260).ImpressionNames.GUILDS_EMPTY_NUX };
-  const tmp7 = selectedGuildId(6275);
+  let obj3 = { type: tmp2(1264).ImpressionTypes.VIEW, name: tmp2(1264).ImpressionNames.GUILDS_EMPTY_NUX };
+  const tmp7 = selectedGuildId(6338);
   tmp7(obj3);
   const items1 = [tmp6, navigation];
   const effect = react.useEffect(() => {
@@ -191,7 +191,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
                 found = guildsArray.find((item) => !closure_1_7(item));
               }
               if (null != found) {
-                const tmp23Result = tmp23(5431);
+                const tmp23Result = tmp23(5494);
                 let closure_0 = _slicedToArray(tmp23Result.getInitialGuildState(found.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
                   const CommonActions = navigation(closure_2_2[17]).CommonActions;
@@ -204,9 +204,9 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
       }
     }
   }, items1);
-  const tmp2Result = navigation(8494);
+  const tmp2Result = navigation(8560);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  navigation(17585);
+  navigation(17703);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: items2, children: items3 };
@@ -215,7 +215,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
     let tmp15 = closure_5;
     obj6 = { style: tmp.headerInner, children: closure_13(Text, obj7) };
     obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(navigation(1113).t["7hB4kg"]) };
-    Text = tmp2(5866).Text;
+    Text = tmp2(5929).Text;
     intl = tmp2(1113).intl;
     items3 = [closure_13(closure_5, obj5), ];
     let tmp18;

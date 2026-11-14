@@ -1,11 +1,11 @@
-// Module ID: 8605
-// Function ID: 8606
+// Module ID: 8672
+// Function ID: 8673
 // Name: ClientHeartbeatPiggyback
-// Dependencies: [2137, 2]
+// Dependencies: [2140, 2]
 // Exports: getClientHeartbeatPiggybackProperties
 
-// Module 8605 (ClientHeartbeatPiggyback)
-import RunningGameStore from "RunningGameStore" /* 2137 */;
+// Module 8672 (ClientHeartbeatPiggyback)
+import RunningGameStore from "RunningGameStore" /* 2140 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/analytics_sessions/ClientHeartbeatPiggyback.tsx");

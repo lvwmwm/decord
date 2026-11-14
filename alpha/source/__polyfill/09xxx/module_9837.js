@@ -1,43 +1,41 @@
 // Module ID: 9837
 // Function ID: 9838
-// Dependencies: [9757, 9736]
-// Exports: captureFeedback
+// Dependencies: [9825, 9797]
+// Exports: parseSampleRate
 
 // Module 9837
-import _mod9736 from "module_9736" /* 9736 */;
-import _mod9757 from "module_9757" /* 9757 */;
+import _mod9825 from "module_9825" /* 9825 */;
 
 
-export function captureFeedback(arg0) {
-  let associatedEventId;
-  let email;
-  let message;
-  let name;
-  let obj4;
-  let obj6;
-  let source;
-  let tags;
-  let url;
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
+export function parseSampleRate(flag) {
+  if (typeof flag === "boolean") {
+    const _Number = Number;
+    return Number(flag);
+  } else {
+    let parsed = flag;
+    if (typeof flag === "string") {
+      const _parseFloat = parseFloat;
+      parsed = parseFloat(flag);
+    }
+    if (typeof parsed === "number") {
+      const _isNaN = isNaN;
+      if (!isNaN(parsed)) {
+        if (parsed >= 0) {
+          if (parsed <= 1) {
+            return parsed;
+          }
+        }
+      }
+    }
+    const tmp = require;
+    if (_mod9825.DEBUG_BUILD) {
+      const logger = tmp(9797).logger;
+      const _JSON = JSON;
+      const warn = logger.warn;
+      const json = JSON.stringify(flag);
+      const _JSON2 = JSON;
+      const _HermesInternal = HermesInternal;
+      warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
+    }
   }
-  let currentScope = arg2;
-  if (arg2 === undefined) {
-    const obj3 = _mod9757;
-    currentScope = obj3.getCurrentScope();
-  }
-  const obj2 = { contexts: obj4, type: "feedback", level: "info", tags };
-  obj4 = { feedback: obj6.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
-  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
-  obj6 = _mod9736;
-  let client = currentScope && currentScope.getClient();
-  if (!client) {
-    const tmp3Result = _mod9757;
-    client = tmp3Result.getClient();
-  }
-  if (client) {
-    client.emit("beforeSendFeedback", obj2, obj);
-  }
-  return currentScope.captureEvent(obj2, obj);
 }

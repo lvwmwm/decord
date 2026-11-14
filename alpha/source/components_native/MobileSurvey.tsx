@@ -1,122 +1,95 @@
-// Module ID: 19602
-// Function ID: 19603
+// Module ID: 19795
+// Function ID: 19796
 // Name: MobileSurvey
-// Dependencies: [5, 19, 6827, 1072, 21, 5243, 504, 1252, 18235, 6277, 1113, 5949, 1187, 575, 7416, 2]
+// Dependencies: [19, 6890, 1072, 21, 504, 1256, 18356, 6270, 6274, 15195, 575, 6012, 1113, 2]
 // Exports: default
 
-// Module 19602 (MobileSurvey)
-import Fragment from "Fragment" /* 21 */;
+// Module 19795 (MobileSurvey)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1187 */;
-import LinkingDefault from "Linking" /* 5949 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7416 */;
-import SurveyActionCreators from "SurveyActionCreators" /* 18235 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import LinkingDefault from "Linking" /* 6012 */;
+import useAlertStore from "useAlertStore" /* 6270 */;
 import react from "react" /* 19 */;
-import SurveyStore from "SurveyStore" /* 6827 */;
-import createStyles from "createStyles" /* 5243 */;
+import SurveyStore from "SurveyStore" /* 6890 */;
+import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c0, c1;
-
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 const AnalyticEvents = Constants.AnalyticEvents;
-const jsx = Fragment.jsx;
-let closure_8 = createStyles.createStyles({ confirmIcon: { marginLeft: 4 } });
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const result = size.fileFinishedImporting("components_native/MobileSurvey.tsx");
 
 export default function MobileSurvey() {
-  let confirmIcon;
   let currentSurvey;
-  _require = closure_8();
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("get initialized");
-  const items = [SurveyStore];
-  const stateFromStores = obj.useStateFromStores(items, () => currentSurvey.getCurrentSurvey());
+  let stateFromStores;
+  let obj = stateFromStores(504);
+  let items = [SurveyStore];
+  stateFromStores = obj.useStateFromStores(items, () => currentSurvey.getCurrentSurvey());
   const items1 = [stateFromStores];
   const effect = react.useEffect(() => {
-    function setSurveySeen() {
-      return obj(...arguments);
-    }
-    if (null != stateFromStores) {
-      let obj = function _setSurveySeen() {
-        obj = _asyncToGenerator(async (arg0, value) => {
-          let obj2;
-          if (c0 === 2) {
-            c0 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp2 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              return { value: "HermesInternal", done: null };
-            }
-          } else {
-            try {
-              c0 = 2;
-              if (0 === c1) {
-                if (arg0 === 1) {
-                  c0 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c0 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else if (null != c1) {
-                  c1 = 1;
-                  c0 = 1;
-                  const obj5 = { value: obj2.surveySeen(tmp4.key), done: false };
-                  obj2 = closure_2_0(closure_2_2[8]);
-                  return obj5;
-                }
-              } else if (arg0 === 1) {
-                c0 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c0 = 3;
-                obj = { value, done: true };
-                return obj;
-              }
-              c0 = 3;
-              return { value: "HermesInternal", done: null };
-            } catch (tmp8) {
-              c0 = 3;
-              throw tmp8;
-            }
-          }
-        });
-        return obj(...arguments);
-      };
-      const tmp2 = stateFromStores;
-      obj = stateFromStores(dependencyMap[7]);
-      const tmp4 = constants;
-      let obj2 = { type: "survey", promotion_id: tmp.id };
+    let WindowLaunchIcon;
+    let body;
+    let combined;
+    let obj7;
+    if (null != combined) {
+      let obj = AnalyticsUtilsDefault;
+      let obj2 = { type: "survey", promotion_id: combined.id };
       obj.track(constants.OPEN_MODAL, obj2);
-      setSurveySeen();
+      const obj3 = stateFromStores(dependencyMap[6]);
+      obj3.surveySeen(combined.key);
+      const _HermesInternal = HermesInternal;
+      combined = "mobile-survey-" + tmp.key;
+      const openAlert = stateFromStores(dependencyMap[7]).openAlert;
+      const obj5 = { title: null, content: body, actions: null };
+      ({ prompt: obj4.title, body } = combined);
+      const tmp10 = stateFromStores(dependencyMap[7]);
+      const AlertModal = stateFromStores(dependencyMap[8]).AlertModal;
+      const obj6 = {
+        variant: "primary",
+        text: combined.cta,
+        icon: closure_1_6(WindowLaunchIcon, obj7),
+        iconPosition: "end",
+        onPress() {
+            const obj = LinkingDefault;
+            obj.openURL(combined.url);
+            const obj2 = stateFromStores(dependencyMap[6]);
+            obj2.surveyHide(combined.key, false);
+          }
+      };
+      const AlertActionButton = tmp6(tmp3[8]).AlertActionButton;
+      obj7 = { size: "sm", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
+      WindowLaunchIcon = tmp6(tmp3[9]).WindowLaunchIcon;
+      const items = [closure_1_6(AlertActionButton, obj6), ];
+      const tmp12 = closure_1_8;
+      const tmp13 = closure_1_7;
+      if (null != combined.secondary_cta) {
+        let secondary_cta;
+        if ("" !== combined.secondary_cta) {
+          secondary_cta = tmp.secondary_cta;
+        }
+        const obj14 = {
+          variant: "secondary",
+          text: secondary_cta,
+          onPress() {
+                const obj = stateFromStores(dependencyMap[6]);
+                return obj.surveyHide(combined.key, true);
+              }
+        };
+        const obj8 = { children: items };
+        items[1] = closure_1_6(tmp14, obj14);
+        obj5.actions = tmp12(tmp13, obj8);
+        openAlert(combined, closure_1_6(AlertModal, obj5), undefined, { dismissable: false });
+        return () => {
+          const obj = useAlertStore;
+          return obj.dismissAlert(combined);
+        };
+      }
+      const intl = tmp6(tmp3[12]).intl;
+      secondary_cta = intl.string(tmp6(tmp3[12]).t.f3Pet9);
     }
   }, items1);
-  let tmp5 = null;
-  if (null != stateFromStores) {
-    ({ prompt: obj2.body, cta: obj2.confirmText } = stateFromStores);
-    const tmp8 = stateFromStores(6277);
-    const intl = tmp(1113).intl;
-    tmp5 = <tmp8 body={null} confirmText={null} cancelText={intl.string(tmp(1113).t.f3Pet9)} onConfirm={function onConfirm() {
-      const obj = LinkingDefault;
-      obj.openURL(stateFromStores.url);
-      const obj2 = SurveyActionCreators;
-      obj2.surveyHide(stateFromStores.key, false);
-    }} onCancel={function onCancel() {
-      const obj = SurveyActionCreators;
-      return obj.surveyHide(stateFromStores.key, true);
-    }} renderConfirmRightIcon={function renderConfirmRightIcon() {
-      const Icon = native.Icon;
-      return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
-    }} />;
-  }
-  return tmp5;
+  return null;
 };

@@ -1,15 +1,15 @@
-// Module ID: 1261
-// Function ID: 1262
+// Module ID: 1265
+// Function ID: 1266
 // Name: AnalyticsTrackingStore
-// Dependencies: [1083, 4, 1262, 1265, 1266, 1282, 504, 2]
+// Dependencies: [1083, 4, 1266, 1254, 1269, 1285, 504, 2]
 // Exports: analyticsTrackingStoreMaker
 
-// Module 1261 (AnalyticsTrackingStore)
+// Module 1265 (AnalyticsTrackingStore)
 import logger_Logger from "logger/Logger" /* 4 */;
-import discord_common_IdGenerator from "discord_common/IdGenerator" /* 1262 */;
-import FingerprintUtils from "FingerprintUtils" /* 1265 */;
-import v1 from "v1" /* 1266 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import FingerprintUtils from "FingerprintUtils" /* 1254 */;
+import discord_common_IdGenerator from "discord_common/IdGenerator" /* 1266 */;
+import v1 from "v1" /* 1269 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import Constants from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 
@@ -354,14 +354,14 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
       obj = {
         type: "timeout",
         id: setTimeout(() => {
-            const f143347 = () => {
+            const f144967 = () => {
               sendTelemetryEvent();
               if (typeof scheduleNextHeartbeat === "function") {
                 const result = 0.1 * scheduleDrain;
                 const _Math = Math;
                 const _Math2 = Math;
                 const _Math3 = Math;
-                ({ type: "timeout", id: setTimeout(f143347, Math.max(scheduleDrain + (Math.floor(Math.random() * result * 2) - result), drainEventsQueue)) });
+                ({ type: "timeout", id: setTimeout(f144967, Math.max(scheduleDrain + (Math.floor(Math.random() * result * 2) - result), drainEventsQueue)) });
                 const _setTimeout = setTimeout;
               } else {
                 throw new TypeError("Trying to call a non-function");
@@ -373,7 +373,7 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
               let _Math = Math;
               let _Math2 = Math;
               let _Math3 = Math;
-              obj = { type: "timeout", id: setTimeout(f143347, Math.max(c8 + (Math.floor(Math.random() * result * 2) - result), c9)) };
+              obj = { type: "timeout", id: setTimeout(f144967, Math.max(c8 + (Math.floor(Math.random() * result * 2) - result), c9)) };
               let _setTimeout = setTimeout;
             } else {
               throw new TypeError("Trying to call a non-function");

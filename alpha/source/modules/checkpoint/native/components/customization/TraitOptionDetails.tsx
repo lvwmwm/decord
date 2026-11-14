@@ -1,18 +1,18 @@
-// Module ID: 14419
-// Function ID: 14420
+// Module ID: 14541
+// Function ID: 14542
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5243, 575, 6360, 1113, 3269, 5866, 9512, 7871, 6681, 14420, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 6423, 1113, 3317, 5929, 9579, 7937, 6744, 14542, 2]
 // Exports: default
 
-// Module 14419 (TraitOptionDetails)
+// Module 14541 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3269 from "module_3269" /* 3269 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import RarityBadgeDefault from "RarityBadge" /* 14420 */;
+import _modDef3317 from "module_3317" /* 3317 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import RarityBadgeDefault from "RarityBadge" /* 14542 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,84 +22,77 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let obj2;
+let obj3;
 function AssetDescription(asset) {
+  let formatResult;
   let subscribeLink;
   asset = asset.asset;
-  const hidden = asset.hidden;
-  _require = closure_7();
-  let tmp = null;
-  if (!hidden) {
-    let formatResult;
-    if (asset.status === require("CheckpointCharacterAssets").CheckpointTraitOptionStatus.NITRO_LOCKED) {
-      const intl = tmp2(1113).intl;
-      let obj = {
-        subscribeHook(children, arg1) {
-              let obj = {
-                variant: "body-md/medium",
-                color: "text-subtle",
-                style: subscribeLink.subscribeLink,
-                onPress() {
-                  let items;
-                  const obj = { analyticsLocations: items };
-                  items = [, ];
-                  const tmp = closure_1_1(closure_1_2[9]);
-                  items[0] = closure_1_1(closure_1_2[10]).CHECKPOINT;
-                  items[1] = closure_1_1(closure_1_2[10]).CHECKPOINT_TRAIT;
-                  return tmp(obj);
-                },
-                accessibilityRole: "link",
-                children
-              };
-              return React3(Text_Text.Text, obj, arg1);
-            }
-      };
-      formatResult = intl.format(_modDef3269.E6AfCb, obj);
-    } else {
-      const tmp2Result = require("CheckpointCustomizationUtils");
-      formatResult = tmp2Result.getPlaintextAssetDescription(asset);
-    }
-    tmp = formatResult;
+  let tmp = closure_7();
+  _require = tmp;
+  if (asset.status === require("CheckpointCharacterAssets").CheckpointTraitOptionStatus.NITRO_LOCKED) {
+    const intl = tmp2(1113).intl;
+    let obj = {
+      subscribeHook(children, arg1) {
+          let obj = {
+            variant: "body-md/medium",
+            color: "text-subtle",
+            style: subscribeLink.subscribeLink,
+            onPress() {
+              let items;
+              const obj = { analyticsLocations: items };
+              items = [, ];
+              const tmp = closure_1_1(closure_1_2[9]);
+              items[0] = closure_1_1(closure_1_2[10]).CHECKPOINT;
+              items[1] = closure_1_1(closure_1_2[10]).CHECKPOINT_TRAIT;
+              return tmp(obj);
+            },
+            accessibilityRole: "link",
+            children
+          };
+          return React3(Text_Text.Text, obj, arg1);
+        }
+    };
+    formatResult = intl.format(_modDef3317.E6AfCb, obj);
+  } else {
+    const tmp2Result = require("CheckpointCustomizationUtils");
+    formatResult = tmp2Result.getPlaintextAssetDescription(asset);
   }
-  const obj2 = { variant: "body-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp, children: tmp };
+  const obj2 = { variant: "body-md/medium", color: "text-subtle", style: tmp.description, accessibilityElementsHidden: null == formatResult, children: formatResult };
   return closure_4(require("Text/Text").Text, obj2);
 }
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
-let obj = { titleRow: obj2, title: { textTransform: "capitalize" }, subscribeLink: { textDecorationLine: "underline" } };
+let createStyles = createStyles_mod;
+let obj = { titleRow: obj2, title: { textTransform: "capitalize" }, description: obj3, subscribeLink: { textDecorationLine: "underline" } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-let closure_7 = createStyles.createStyles(obj);
-let obj3 = { VISIBLE: 0, [0]: "VISIBLE", INVISIBLE: 1, [1]: "INVISIBLE", GONE: 2, [2]: "GONE" };
+createStyles = createStyles.createStyles;
+obj3 = { marginTop: nativeDefault.space.PX_4 };
+let closure_7 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/TraitOptionDetails.tsx");
 
 export default function TraitOptionDetails(arg0) {
   let asset;
-  let descriptionVisibility;
+  let hideRarity;
   let items;
-  ({ asset, descriptionVisibility } = arg0);
+  let items1;
+  ({ asset, hideRarity } = arg0);
   const tmp = closure_7();
   const obj = { style: tmp.titleRow, children: items };
   const obj2 = { variant: "body-lg/medium", color: "text-default", style: tmp.title, children: asset.getName() };
   const Text = Text_Text.Text;
   items = [React3(Text, obj2), ];
-  let tmp7Result = tmp3;
-  const tmp2 = obj3;
-  const tmp5 = metroRequire;
-  const tmp6 = View;
-  if (tmp7Result) {
-    tmp7Result = null != asset.rarity;
+  let tmp5Result = !hideRarity;
+  const tmp3 = metroRequire;
+  const tmp4 = View;
+  if (tmp5Result) {
+    tmp5Result = null != asset.rarity;
   }
-  if (tmp7Result) {
-    obj3 = { rarity: asset.rarity };
-    tmp7Result = tmp7(RarityBadgeDefault, obj3);
+  if (tmp5Result) {
+    const obj3 = { rarity: asset.rarity };
+    tmp5Result = tmp5(RarityBadgeDefault, obj3);
   }
-  items[1] = tmp7Result;
-  const children = [hasOwnProperty(tmp6, obj), ];
-  let tmp7Result2 = descriptionVisibility !== tmp2.GONE;
-  if (tmp7Result2) {
-    const obj4 = { asset, hidden: descriptionVisibility !== obj3.VISIBLE };
-    tmp7Result2 = tmp7(AssetDescription, obj4);
-  }
-  children[1] = tmp7Result2;
-  return hasOwnProperty(tmp5, { children });
+  const obj4 = { children: items1 };
+  items[1] = tmp5Result;
+  items1 = [hasOwnProperty(tmp4, obj), React3(AssetDescription, { asset })];
+  return hasOwnProperty(tmp3, obj4);
 };
-export const DescriptionVisibility = obj3;

@@ -1,23 +1,23 @@
-// Module ID: 19281
-// Function ID: 19282
+// Module ID: 19473
+// Function ID: 19474
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 8999, 21, 5243, 575, 19280, 1652, 19282, 12, 5866, 1113, 14627, 19283, 2]
+// Dependencies: [19, 17, 9066, 21, 5306, 575, 19472, 1655, 19474, 12, 5929, 1113, 14740, 19475, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 19281 (MediaGridPlaceholder)
+// Module 19473 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 14627 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 19280 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 19282 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 14740 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 19472 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 19474 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 8999 */;
+import SearchConstants from "SearchConstants" /* 9066 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -47,7 +47,7 @@ export default function MediaGridPlaceholderItem(arg0) {
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   const obj2 = { style: items, pointerEvents: "none", children: metroImportDefault(GridItemPlaceholderDefault, { height: size, width: size, style: containerStyle }) };
   items = [containerStyle, placeholderAnimatedStyle];
-  View = _modDef1652.View;
+  View = _modDef1655.View;
   return metroImportDefault(View, obj2);
 };
 export function RecentsMediaGridPlaceholder(visible) {
@@ -85,7 +85,7 @@ export function RecentsMediaGridPlaceholder(visible) {
   items2[2] = placeholderAnimatedStyle;
   const obj3 = { style: tmp.section, children: items3 };
   const obj4 = { style: tmp.sectionItem, children: closure_7(Text, obj5) };
-  View = numRows(1652).View;
+  View = numRows(1655).View;
   obj5 = { style: tmp.sectionText, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "body-sm/semibold", color: "interactive-text-default", children: intl.string(intl3.t.LBYpDH) };
   Text = Text_Text.Text;
   intl = intl3.intl;

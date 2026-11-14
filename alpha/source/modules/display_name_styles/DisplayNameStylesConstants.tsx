@@ -1,12 +1,12 @@
-// Module ID: 1394
-// Function ID: 1395
+// Module ID: 1397
+// Function ID: 1398
 // Name: DisplayNameStylesConstants
-// Dependencies: [1395, 1396, 2]
+// Dependencies: [1398, 1399, 2]
 // Exports: getColorPresetsForEffect
 
-// Module 1394 (DisplayNameStylesConstants)
-import DisplayNameFont from "DisplayNameFont" /* 1395 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
+// Module 1397 (DisplayNameStylesConstants)
+import DisplayNameFont from "DisplayNameFont" /* 1398 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
 import size from "module_2" /* 2 */;
 
 let items = [DisplayNameFont.DisplayNameFont.PLAYPEN_SANS, DisplayNameFont.DisplayNameFont.ORBITRON, DisplayNameFont.DisplayNameFont.NEW_ROCKER, DisplayNameFont.DisplayNameFont.KALAM];

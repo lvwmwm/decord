@@ -1,15 +1,15 @@
-// Module ID: 8446
-// Function ID: 8447
+// Module ID: 8512
+// Function ID: 8513
 // Name: CollectiblesShopHomeRecord
-// Dependencies: [8420, 8447, 5928, 8448, 2]
+// Dependencies: [8486, 8513, 5991, 8514, 2]
 
-// Module 8446 (CollectiblesShopHomeRecord)
-import ShopBlockType from "ShopBlockType" /* 5928 */;
-import HeroBlockRecord2 from "HeroBlockRecord" /* 8447 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 8420 */;
+// Module 8512 (CollectiblesShopHomeRecord)
+import ShopBlockType from "ShopBlockType" /* 5991 */;
+import HeroBlockRecord2 from "HeroBlockRecord" /* 8513 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 8486 */;
 import size from "module_2" /* 2 */;
 
-const f94998 = (type) => {
+const f96192 = (type) => {
   let fromServerResult;
   const tmp = require;
   const tmp2 = dependencyMap;
@@ -21,17 +21,17 @@ const f94998 = (type) => {
   }
   return fromServerResult;
 };
-const f94999 = (item) => undefined !== item;
-const f95000 = (item) => CollectiblesCategoryRecord.fromServer(item);
+const f96193 = (item) => undefined !== item;
+const f96194 = (item) => CollectiblesCategoryRecord.fromServer(item);
 const HeroBlockRecord = HeroBlockRecord2.HeroBlockRecord;
 class CollectiblesShopHomeRecord {
   constructor(shop_blocks) {
     const obj = Object.create(new.target.prototype);
     shop_blocks = shop_blocks.shop_blocks;
-    const mapped = shop_blocks.map(f94998);
-    obj.shopBlocks = mapped.filter(f94999);
+    const mapped = shop_blocks.map(f96192);
+    obj.shopBlocks = mapped.filter(f96193);
     const categories = shop_blocks.categories;
-    obj.categories = categories.map(f95000);
+    obj.categories = categories.map(f96194);
     return obj;
   }
   static fromServer(shop_blocks) {
@@ -40,10 +40,10 @@ class CollectiblesShopHomeRecord {
       let tmp2 = shop_blocks;
       const obj = Object.create(tmp.prototype);
       shop_blocks = shop_blocks.shop_blocks;
-      const mapped = shop_blocks.map(f94998);
-      obj.shopBlocks = mapped.filter(f94999);
+      const mapped = shop_blocks.map(f96192);
+      obj.shopBlocks = mapped.filter(f96193);
       const categories = shop_blocks.categories;
-      obj.categories = categories.map(f95000);
+      obj.categories = categories.map(f96194);
       return obj;
     } else {
       throw new TypeError("Trying to call a non-function");

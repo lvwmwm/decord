@@ -1,23 +1,23 @@
-// Module ID: 11020
-// Function ID: 11021
+// Module ID: 11089
+// Function ID: 11090
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 5244, 5185, 1385, 21, 5243, 575, 5866, 5891, 1093, 8004, 8006, 7968, 504, 2]
+// Dependencies: [19, 17, 5307, 5248, 1388, 21, 5306, 575, 5929, 5954, 1093, 8069, 8071, 8033, 504, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 11020 (MessageNotificationHeader)
+// Module 11089 (MessageNotificationHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import useChannelName from "useChannelName" /* 5891 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import useChannelName from "useChannelName" /* 5954 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -49,11 +49,11 @@ function LocationText(channel) {
         if (null != parentChannel) {
           let ThreadIcon;
           if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-            ThreadIcon = tmp3(8004).ChatIcon;
+            ThreadIcon = tmp3(8069).ChatIcon;
           }
           simpleChannelIconComponent = ThreadIcon;
         }
-        ThreadIcon = tmp3(8006).ThreadIcon;
+        ThreadIcon = tmp3(8071).ThreadIcon;
       } else {
         const tmp3Result = utils_ChannelUtils;
         simpleChannelIconComponent = tmp3Result.getSimpleChannelIconComponent(tmp);
@@ -190,7 +190,7 @@ export default function MessageNotificationHeader(locationTextColor) {
   if (tmp17Result) {
     const obj5 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items1, children: author.nick };
     items1 = [tmp.primaryText, tmp6];
-    tmp17Result = tmp17(tmp2(5866).Text, obj5);
+    tmp17Result = tmp17(tmp2(5929).Text, obj5);
   }
   items2 = [tmp17Result, ];
   let tmp17Result2 = null != tmp10;

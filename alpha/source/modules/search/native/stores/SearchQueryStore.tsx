@@ -1,20 +1,20 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14754
+// Function ID: 14755
 // Name: SearchQueryStore
-// Dependencies: [5092, 5185, 1385, 8999, 8998, 1072, 5891, 1113, 14634, 14642, 2158, 504, 572, 2]
+// Dependencies: [5155, 5248, 1388, 9066, 9065, 1072, 5954, 1113, 14747, 14755, 2161, 504, 572, 2]
 
-// Module 14641 (SearchQueryStore)
+// Module 14754 (SearchQueryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import TrackingConstants from "TrackingConstants" /* 8998 */;
-import SearchUtils from "SearchUtils" /* 14634 */;
-import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 14642 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
-import SearchConstants from "SearchConstants" /* 8999 */;
+import TrackingConstants from "TrackingConstants" /* 9065 */;
+import SearchUtils from "SearchUtils" /* 14747 */;
+import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 14755 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
+import SearchConstants from "SearchConstants" /* 9066 */;
 import Constants from "Constants" /* 1072 */;
-import FunctionUtils from "FunctionUtils" /* 2158 */;
+import FunctionUtils from "FunctionUtils" /* 2161 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -193,7 +193,7 @@ class SearchQueryStateManager {
       let items1;
       let channelName;
       if (null != channel) {
-        const obj2 = obj(5891);
+        const obj2 = obj(5954);
         channelName = obj2.computeChannelName(channel, UserStore, RelationshipStore);
       }
       if (null == channelName) {
@@ -205,7 +205,7 @@ class SearchQueryStateManager {
         let str = ": ";
         stringResult = intl.string(obj(1113).t.WNpFHa);
         items1 = [obj3];
-        obj4 = obj(14634);
+        obj4 = obj(14747);
       }
       items = items1;
     }

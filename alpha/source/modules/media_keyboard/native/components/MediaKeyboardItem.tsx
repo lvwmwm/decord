@@ -1,31 +1,31 @@
-// Module ID: 11581
-// Function ID: 11582
+// Module ID: 11648
+// Function ID: 11649
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8805, 11582, 21, 1652, 5243, 575, 5240, 1187, 11301, 5866, 504, 8810, 11583, 1113, 8830, 8812, 11584, 11585, 5485, 1493, 11586, 8020, 10979, 2]
+// Dependencies: [19, 17, 8872, 11649, 21, 1655, 5306, 575, 5303, 1187, 11368, 5929, 504, 8877, 11650, 1113, 8897, 8879, 11651, 11652, 5548, 1496, 11653, 8085, 11048, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 11581 (MediaKeyboardItem)
+// Module 11648 (MediaKeyboardItem)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import ImageIcon from "ImageIcon" /* 8020 */;
-import AttachmentIcon from "AttachmentIcon" /* 10979 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11301 */;
-import CameraIcon from "CameraIcon" /* 11586 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import ImageIcon from "ImageIcon" /* 8085 */;
+import AttachmentIcon from "AttachmentIcon" /* 11048 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11368 */;
+import CameraIcon from "CameraIcon" /* 11653 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8805 */;
-import DeviceConstants from "DeviceConstants" /* 11582 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8872 */;
+import DeviceConstants from "DeviceConstants" /* 11649 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
-import ColorUtils_mod from "ColorUtils" /* 5240 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import ColorUtils_mod from "ColorUtils" /* 5303 */;
 import size_mod from "module_2" /* 2 */;
 
-const module_1652 = _mod1652;
+const module_1655 = _mod1655;
 let constants;
 
 let ColorUtils;
@@ -296,19 +296,19 @@ function MediaKeyboardSpecialButton(arg0) {
   ({ size, disabled, index, totalNumItems, numItemsPerRow } = arg0);
   ({ onPress, accessibilityLabel, children } = arg0);
   let tmp = closure_12();
-  let obj = _mod1652;
+  let obj = _mod1655;
   const sharedValue = obj.useSharedValue(0);
   ({ backgroundColor, pressedBackgroundColor } = closure_16());
   const tmp3 = closure_16();
-  const tmp4 = _mod1652;
+  const tmp4 = _mod1655;
   let items = [closure_17, , , , , , ];
   const useAnimatedStyle = tmp4.useAnimatedStyle;
   items[1] = timing_timing.withTiming;
-  items[2] = _mod1652.interpolateColor;
+  items[2] = _mod1655.interpolateColor;
   items[3] = sharedValue;
   items[4] = backgroundColor;
   items[5] = pressedBackgroundColor;
-  items[6] = _mod1652.Easing;
+  items[6] = _mod1655.Easing;
   let c0;
   let c1;
   let c2;
@@ -409,7 +409,7 @@ function MediaKeyboardSpecialButton(arg0) {
 const StyleSheet = react_native.StyleSheet;
 ({ ALAssetsType: metroImportDefault, DeviceMediaType: metroImportAll } = DeviceConstants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
-let closure_11 = module_1652.createAnimatedComponent(Pressable);
+let closure_11 = module_1655.createAnimatedComponent(Pressable);
 let createStyles = createStyles_mod;
 let obj = { container: { flexDirection: "row", paddingHorizontal: 12, alignItems: "center" }, image: obj2, imageContainer: obj3, labelContainer: rect, mediaKeyboardItemLabelContainer: { right: 10 }, icon: size, checkIcon: size1, checkIconContainer: size2, selectedOverlay: obj4, specialButton: { flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 8 }, disabled: { opacity: 0.4 }, imageDisabled: { opacity: 0.2 } };
 obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };

@@ -1,18 +1,18 @@
-// Module ID: 14044
-// Function ID: 14045
+// Module ID: 14151
+// Function ID: 14152
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 5114, 1385, 21, 5243, 575, 5850, 11785, 504, 14045, 6854, 5957, 14046, 5866, 1113, 5309, 13206, 4079, 14047, 13205, 7793, 5873, 2]
+// Dependencies: [32, 19, 17, 5177, 1388, 21, 5306, 575, 5913, 11851, 504, 14152, 6917, 6020, 14153, 5929, 1113, 5372, 13209, 4131, 14154, 13208, 7859, 5936, 2]
 
-// Module 14044 (KickConfirm)
+// Module 14151 (KickConfirm)
 import nativeDefault from "native" /* 575 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import UserStore from "UserStore" /* 1385 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -74,7 +74,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let tmp7Result3;
   let tmp7Result4;
   let v1Ie87p;
-  const f107860 = () => ({ kicking: false, kickError: false });
+  const f109115 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -107,10 +107,10 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   const conjureServerApp = useConjureServerApp(guildId, result);
   const tmp14 = null != conjureServerApp && !conjureServerApp.targetIsPreview;
   ref = obj.useRef("");
-  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f107860), 2);
+  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f109115), 2);
   const items3 = [stateFromStores, onKick, stateFromStores1];
   let tmp19Result6 = null;
-  stateFromStores(stateFromStores1.useState(f107860), 2);
+  stateFromStores(stateFromStores1.useState(f109115), 2);
   if (null != stateFromStores1) {
     tmp19Result6 = null;
     if (null != stateFromStores) {

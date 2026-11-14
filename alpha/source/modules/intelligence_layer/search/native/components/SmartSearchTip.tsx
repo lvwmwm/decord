@@ -1,15 +1,15 @@
-// Module ID: 19325
-// Function ID: 19326
+// Module ID: 19517
+// Function ID: 19518
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 5243, 575, 5866, 1113, 4302, 15631, 1187, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5929, 1113, 4354, 15745, 1187, 2]
 
-// Module 19325 (SmartSearchTip)
+// Module 19517 (SmartSearchTip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -62,12 +62,12 @@ const memoResult = react.memo(function SmartSearchTip(citations) {
   let obj = { style: tmp.container, children: items3 };
   const obj2 = { style: tmp.header, children: items2 };
   const obj3 = { style: tmp.titleContainer, children: items1 };
-  const obj4 = { variant: "body-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(4302).ydAwWi) };
-  const Text = citations(5866).Text;
+  const obj4 = { variant: "body-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(4354).ydAwWi) };
+  const Text = citations(5929).Text;
   intl = citations(1113).intl;
   items1 = [closure_5(Text, obj4), ];
-  const obj5 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(4302).QIdSmb) };
-  const Text2 = citations(5866).Text;
+  const obj5 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(4354).QIdSmb) };
+  const Text2 = citations(5929).Text;
   intl2 = citations(1113).intl;
   items1[1] = closure_5(Text2, obj5);
   items2 = [closure_6(View, obj3), ];
@@ -83,12 +83,12 @@ const memoResult = react.memo(function SmartSearchTip(citations) {
           return hasOwnProperty(Avatar, obj, user.id);
         })
     };
-    const AvatarPile = tmp5(15631).AvatarPile;
+    const AvatarPile = tmp5(15745).AvatarPile;
     substr = memo.slice(0, 3);
     tmp4Result = tmp4(AvatarPile, obj6);
   }
   items2[1] = tmp4Result;
-  items3 = [tmp2(View, obj2), closure_5(citations(5866).Text, { variant: "body-md/normal", color: "text-default", children: answerText })];
+  items3 = [tmp2(View, obj2), closure_5(citations(5929).Text, { variant: "body-md/normal", color: "text-default", children: answerText })];
   return tmp2(View, obj);
 });
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchTip.tsx");

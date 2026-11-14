@@ -1,26 +1,24 @@
 // Module ID: 1752
 // Function ID: 1753
-// Dependencies: [1709, 1716]
-// Exports: createShareable
+// Dependencies: [1719, 1720]
+// Exports: callMicrotasks
 
 // Module 1752
-import WorkletsModule2 from "WorkletsModule" /* 1709 */;
-import registerCustomSerializable from "registerCustomSerializable" /* 1716 */;
+import registerCustomSerializable from "registerCustomSerializable" /* 1719 */;
+import serializableMappingFlag from "serializableMappingFlag" /* 1720 */;
 
+let tmp2;
+const items = [{ code: "(function callMicrotasks_Pnpm_deprecatedTs1(){})" }];
+[tmp2] = items;
+function callMicrotasks() {
 
-export function createShareable(arg0, __initData, arg2) {
-  let hostDecorator;
-  let initSynchronously;
-  const tmp = arg2 || {};
-  const guestDecorator = tmp.guestDecorator;
-  ({ hostDecorator, initSynchronously } = tmp);
-  const WorkletsModule = WorkletsModule2.WorkletsModule;
-  const createShareable = WorkletsModule.createShareable;
-  const obj = registerCustomSerializable;
-  const serializable = obj.createSerializable(__initData);
-  const tmp3 = !initSynchronously;
-  const obj2 = registerCustomSerializable;
-  const serializable1 = obj2.createSerializable(hostDecorator);
-  const obj3 = registerCustomSerializable;
-  return globalThis.__shareableGuestUnpacker(arg0, createShareable(arg0, serializable, !tmp3, serializable1, obj3.createSerializable(guestDecorator)), guestDecorator);
 }
+callMicrotasks.__workletHash = 2444743836321;
+callMicrotasks.__initData = tmp2;
+
+export const makeShareable = registerCustomSerializable.makeShareable;
+export const makeShareableCloneOnUIRecursive = registerCustomSerializable.makeShareableCloneOnUIRecursive;
+export const makeShareableCloneRecursive = registerCustomSerializable.createSerializable;
+export const isShareableRef = registerCustomSerializable.isSerializableRef;
+export const shareableMappingCache = serializableMappingFlag.serializableMappingCache;
+export { callMicrotasks };

@@ -1,33 +1,44 @@
 // Module ID: 16760
 // Function ID: 16761
-// Dependencies: [16743]
-// Exports: default
+// Dependencies: [16761, 16772, 16774, 16777, 16780, 16781]
 
 // Module 16760
-import ArgType from "ArgType" /* 16743 */;
+import _mod16761 from "module_16761" /* 16761 */;
+import _mod16772 from "module_16772" /* 16772 */;
+import _mod16774 from "module_16774" /* 16774 */;
+import _mod16777 from "module_16777" /* 16777 */;
+import _mod16780 from "module_16780" /* 16780 */;
+import _mod16781 from "module_16781" /* 16781 */;
 
+let closure_3 = _mod16761("toPrimitive");
 
-export default () => (arg0) => {
-  const result = ArgType.assertHasLoggerPlugin(arg0);
-  let closure_0 = arg0;
-  return {
-    onConnect() {
-      console.log = () => {
-        const items = [...arguments];
-        log(...items);
-        const items1 = [...items];
-        log.log.apply(items1);
-      };
-      console.warn = () => {
-        const items = [...arguments];
-        warn(...items);
-        log.warn(items[0]);
-      };
-      console.debug = () => {
-        const items = [...arguments];
-        debug(...items);
-        log.debug(items[0]);
-      };
+export default function(arg0, arg1) {
+  if (_mod16772(arg0)) {
+    if (!_mod16774(arg0)) {
+      let str = arg1;
+      const tmp4 = _mod16777(arg0, closure_3);
+      if (tmp4) {
+        if (undefined === str) {
+          str = "default";
+        }
+        const tmp5 = _mod16780(tmp4, arg0, str);
+        if (_mod16772(tmp5)) {
+          if (!_mod16774(tmp5)) {
+            const self = this;
+            const self2 = this;
+            const tmp7 = new TypeError("Can't convert object to primitive value");
+            throw tmp7;
+          }
+        }
+        return tmp5;
+      } else {
+        let str2 = str;
+        if (undefined === str) {
+          str2 = "number";
+        }
+        return _mod16781(arg0, str2);
+      }
     }
-  };
+  }
+  return arg0;
 };

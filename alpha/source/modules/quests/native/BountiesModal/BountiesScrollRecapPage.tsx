@@ -1,52 +1,56 @@
-// Module ID: 17474
-// Function ID: 17475
+// Module ID: 17592
+// Function ID: 17593
 // Name: BountiesScrollRecapPage
-// Dependencies: [19, 17, 5244, 21, 575, 5243, 1377, 9431, 17475, 9663, 17476, 1627, 504, 17477, 5866, 1113, 9374, 5873, 2]
+// Dependencies: [19, 17, 5307, 21, 575, 5306, 1380, 6020, 17593, 9730, 17594, 1630, 504, 17595, 5929, 1113, 9442, 5936, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 17474 (BountiesScrollRecapPage)
+// Module 17592 (BountiesScrollRecapPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import components_Button_Button from "components/Button/Button" /* 5873 */;
-import OrbsIcon from "OrbsIcon" /* 9374 */;
-import common_Video from "common/Video" /* 9663 */;
-import _modDef17475 from "module_17475" /* 17475 */;
-import _modDef17476 from "module_17476" /* 17476 */;
-import _modDef17477 from "module_17477" /* 17477 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import components_Button_Button from "components/Button/Button" /* 5936 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import OrbsIcon from "OrbsIcon" /* 9442 */;
+import _modDef17593 from "module_17593" /* 17593 */;
+import _modDef17594 from "module_17594" /* 17594 */;
+import _modDef17595 from "module_17595" /* 17595 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let metroImportDefault;
 let metroRequire;
+let tmp;
+const common_Video = tmp(9730);
 function BountiesRecapOrbsBackground(arg0) {
-  let APNGPlayer;
   let obj3;
-  let obj5;
+  let obj4;
+  let obj6;
   let reducedMotion;
   let style;
   let tmp3Result;
+  let tmp8;
   ({ style, reducedMotion } = arg0);
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    const obj2 = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: metroRequire(APNGPlayer, obj3) };
-    obj3 = { url: _modDef17475, style: _false.absoluteFillObject, autoplay: !reducedMotion };
-    APNGPlayer = tmp(9431).APNGPlayer;
+    const obj2 = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: metroRequire(tmp8, obj3) };
+    obj3 = { source: obj4, style: _false.absoluteFillObject, resizeMode: "contain", enableAnimation: !reducedMotion };
+    obj4 = { uri: _modDef17593 };
+    tmp8 = FastImageDefault;
     tmp3Result = tmp3(React3, obj2);
   } else {
-    const obj4 = { source: obj5, style, resizeMode: "contain", paused: reducedMotion, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-    obj5 = { uri: _modDef17476 };
-    const VideoComponent = tmp(9663).VideoComponent;
-    tmp3Result = tmp3(VideoComponent, obj4);
+    const obj5 = { source: obj6, style, resizeMode: "contain", paused: reducedMotion, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
+    obj6 = { uri: _modDef17594 };
+    const VideoComponent = common_Video.VideoComponent;
+    tmp3Result = tmp3(VideoComponent, obj5);
   }
   return tmp3Result;
 }
@@ -100,7 +104,7 @@ export function BountiesScrollRecapPage(orbAmount) {
   items1 = [tmp.root, style];
   const obj3 = { style: _false.absoluteFillObject, pointerEvents: "none", children: items2 };
   const obj4 = { source: obj5, style: _false.absoluteFillObject, resizeMode: "cover", paused: stateFromStores, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-  obj5 = { uri: _modDef17477 };
+  obj5 = { uri: _modDef17595 };
   const VideoComponent = common_Video.VideoComponent;
   items2 = [metroRequire(VideoComponent, obj4), ];
   const obj6 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };

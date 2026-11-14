@@ -1,21 +1,21 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 17479
+// Function ID: 17480
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 1072, 21, 5243, 2185, 17354, 1113, 5957, 17357, 5076, 7525, 2]
+// Dependencies: [19, 1072, 21, 5306, 2188, 17477, 1113, 6020, 17480, 5139, 7591, 2]
 // Exports: PlayStationTwoWayLinkUpsell
 
-// Module 17356 (PlayStationTwoWayLinkUpsell)
+// Module 17479 (PlayStationTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import dismissible_content from "dismissible_content" /* 5076 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 7525 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 17354 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17357 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 7591 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 17477 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17480 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;

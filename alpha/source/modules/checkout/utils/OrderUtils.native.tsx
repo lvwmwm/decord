@@ -1,11 +1,11 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9724
+// Function ID: 9725
 // Name: OrderUtils
-// Dependencies: [5, 5987, 9530, 2]
+// Dependencies: [5, 6050, 9597, 2]
 // Exports: discardDraftOrder
 
-// Module 9657 (OrderUtils)
-import PaymentConstants from "PaymentConstants" /* 5987 */;
+// Module 9724 (OrderUtils)
+import PaymentConstants from "PaymentConstants" /* 6050 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let obj = function _discardDraftOrder() {
     }
     await "HermesInternal";
     ({ checkoutSucceeded: c0, order: c1 } = closure_0);
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

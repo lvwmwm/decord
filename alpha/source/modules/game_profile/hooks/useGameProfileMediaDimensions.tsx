@@ -1,11 +1,11 @@
-// Module ID: 10262
-// Function ID: 10263
+// Module ID: 10331
+// Function ID: 10332
 // Name: useGameProfileMediaDimensions
-// Dependencies: [32, 19, 1453, 2]
+// Dependencies: [32, 19, 1456, 2]
 // Exports: useGameProfileMediaDimensions
 
-// Module 10262 (useGameProfileMediaDimensions)
-import LRUCacheDefault from "LRUCache" /* 1453 */;
+// Module 10331 (useGameProfileMediaDimensions)
+import LRUCacheDefault from "LRUCache" /* 1456 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;

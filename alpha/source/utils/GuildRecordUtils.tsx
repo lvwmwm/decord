@@ -1,17 +1,17 @@
-// Module ID: 5106
-// Function ID: 5107
+// Module ID: 5169
+// Function ID: 5170
 // Name: GuildRecordUtils
-// Dependencies: [5107, 5110, 1072, 5109, 5112, 38, 5113, 2]
+// Dependencies: [5170, 5173, 1072, 5172, 5175, 38, 5176, 2]
 // Exports: attachSerializedData, constructFromPartialGuildRecord, dangerouslyConstructGuildRecordFromUntypedObject, fromBackgroundSync, fromClientDiscoverableGuild, fromDirectoryGuild, fromGuild, fromGuildBasic, fromGuildDirectoryEntry, fromGuildProfile, fromInviteGuild, fromSerializedGuildRecord, fromServer, fromStoreListingGuild, fromVerificationGateGuild, isGuildRecord, toGuildProperties
 
-// Module 5106 (GuildRecordUtils)
+// Module 5169 (GuildRecordUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
-import SetUtils from "SetUtils" /* 5109 */;
-import guildIncidentsSerialization from "guildIncidentsSerialization" /* 5112 */;
-import guildThemeSerialization from "guildThemeSerialization" /* 5113 */;
-import PlainRecord from "PlainRecord" /* 5107 */;
-import GuildRecord from "GuildRecord" /* 5110 */;
+import SetUtils from "SetUtils" /* 5172 */;
+import guildIncidentsSerialization from "guildIncidentsSerialization" /* 5175 */;
+import guildThemeSerialization from "guildThemeSerialization" /* 5176 */;
+import PlainRecord from "PlainRecord" /* 5170 */;
+import GuildRecord from "GuildRecord" /* 5173 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -313,7 +313,21 @@ export function fromBackgroundSync(properties, guildTheme) {
 }
 export function fromGuild(guild, guild2) {
   let date;
+  let game_application_ids;
+  const obj = { game_application_ids };
+  const merged = Object.assign(guild);
   const tmp = fromGuildPropertiesWithAdditionalFields;
+  if (undefined !== guild.game_application_ids) {
+    game_application_ids = guild.game_application_ids;
+  } else {
+    game_application_ids = undefined;
+    if (guild2 != null) {
+      game_application_ids = guild2.gameApplicationIds;
+    }
+    if (game_application_ids == null) {
+      game_application_ids = null;
+    }
+  }
   if (null != guild.joined_at) {
     const _Date = Date;
     const self = this;
@@ -328,8 +342,8 @@ export function fromGuild(guild, guild2) {
       date = null;
     }
   }
-  const obj = { joinedAt: date, premiumSubscriberCount: guild.premium_subscription_count };
-  return tmp(guild, obj, guild2);
+  const obj2 = { joinedAt: date, premiumSubscriberCount: guild.premium_subscription_count };
+  return tmp(obj, obj2, guild2);
 }
 export function fromInviteGuild(guild) {
   let obj2;

@@ -1,15 +1,15 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 17109
+// Function ID: 17110
 // Name: useHexagonCampaignDaysLeft
-// Dependencies: [19, 1385, 5268, 1089, 504, 5271, 9372, 2]
+// Dependencies: [19, 1388, 5331, 1089, 504, 5334, 9440, 2]
 // Exports: useHexagonCampaignDaysLeft
 
-// Module 16986 (useHexagonCampaignDaysLeft)
+// Module 17109 (useHexagonCampaignDaysLeft)
 import DurationsDefault from "Durations" /* 1089 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5271 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,7 +50,7 @@ export function useHexagonCampaignDaysLeft(perk) {
     }
     return hexagonCampaignPerkCutoffMs;
   }, items1);
-  const tmp3 = stateFromStores(9372)(memo, closure_5);
+  const tmp3 = stateFromStores(9440)(memo, closure_5);
   let num = 0;
   const days = tmp3.days;
   let _Math = Math;

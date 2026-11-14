@@ -1,14 +1,14 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 12295
+// Function ID: 12296
 // Name: DoorExitIcon
-// Dependencies: [19, 21, 575, 5956, 12201, 2]
+// Dependencies: [19, 21, 575, 6019, 12296, 2]
 // Exports: DoorExitIcon
 
-// Module 12200 (DoorExitIcon)
+// Module 12295 (DoorExitIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 12201 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 12296 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17947
+// Function ID: 17948
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1072, 5089, 21, 5076, 9493, 7391, 12311, 1113, 17828, 17830, 2]
+// Dependencies: [32, 19, 1072, 5152, 21, 5139, 9560, 7459, 12406, 1113, 17948, 17950, 2]
 
-// Module 17827 (AccessibilitySetting)
+// Module 17947 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5076 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9493 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 17828 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9560 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 17948 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let dependencyMap;
 
 let tmp;
-const Badge_Badge = tmp(7391);
+const Badge_Badge = tmp(7459);
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -53,7 +53,7 @@ let obj = {
   usePreNavigationAction() {
     let closure_1;
     let first;
-    let obj = first(9493);
+    let obj = first(9560);
     const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     dependencyMap = tmp3;

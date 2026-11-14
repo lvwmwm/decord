@@ -1,20 +1,20 @@
-// Module ID: 13133
-// Function ID: 13134
+// Module ID: 13237
+// Function ID: 13238
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 5092, 5146, 5504, 21, 5243, 575, 7847, 1113, 5873, 8111, 5315, 7379, 7668, 10802, 5850, 5252, 1627, 1493, 5829, 504, 5489, 5503, 7822, 2]
+// Dependencies: [19, 17, 5155, 5209, 5567, 21, 5306, 575, 7913, 1113, 5936, 8177, 5378, 7443, 7734, 10871, 5913, 5315, 1630, 1496, 5892, 504, 5552, 5566, 7888, 2]
 // Exports: default
 
-// Module 13133 (SelectComponentActionSheet)
+// Module 13237 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 5315 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
+import react_native2 from "react-native" /* 5378 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -63,7 +63,7 @@ function SelectionHeader(renderIcon) {
     return mapped;
   }, items);
   let label;
-  const BottomSheetTitleHeader = renderIcon(7847).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = renderIcon(7913).BottomSheetTitleHeader;
   const tmp3 = closure_10;
   const tmp4 = closure_9;
   if (labelComponent != null) {
@@ -88,7 +88,7 @@ function SelectionHeader(renderIcon) {
   tmp5Result = undefined;
   if (tmp2) {
     let str = "primary";
-    const Button = tmp6(5873).Button;
+    const Button = tmp6(5936).Button;
     if (selectButtonDisabled) {
       str = "secondary";
     }
@@ -128,7 +128,7 @@ function SelectionHeader(renderIcon) {
             }
       };
       tmp5Result3 = undefined;
-      const tmp13 = selectedOptions(8111);
+      const tmp13 = selectedOptions(8177);
       if (tmp2) {
         if (0 !== memo.length) {
           tmp5Result3 = tmp5(onQueryChange, {});
@@ -203,7 +203,7 @@ function SelectionOptionItem(item) {
     trailing: tmp13(tmp14, obj3)
   };
   result = undefined;
-  const TableRow = tmp2(7379).TableRow;
+  const TableRow = tmp2(7443).TableRow;
   if (itemAccessibilityLabel != null) {
     result = itemAccessibilityLabel(item);
   }
@@ -226,7 +226,7 @@ function SelectionOptionItem(item) {
   }
   items1 = [renderOptionSuffixResult, ];
   if (clearable) {
-    const FormCheckbox = tmp2(7668).FormCheckbox;
+    const FormCheckbox = tmp2(7734).FormCheckbox;
     if (!selected) {
       selected = false;
     }
@@ -235,7 +235,7 @@ function SelectionOptionItem(item) {
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(10802).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(tmp2(10871).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;

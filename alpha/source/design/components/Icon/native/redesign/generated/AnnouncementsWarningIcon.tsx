@@ -1,14 +1,14 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8088
+// Function ID: 8089
 // Name: AnnouncementsWarningIcon
-// Dependencies: [19, 21, 575, 5956, 7983, 2]
+// Dependencies: [19, 21, 575, 6019, 8048, 2]
 // Exports: AnnouncementsWarningIcon
 
-// Module 8023 (AnnouncementsWarningIcon)
+// Module 8088 (AnnouncementsWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 7983 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 8048 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 10390
-// Function ID: 10391
+// Module ID: 10459
+// Function ID: 10460
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2186, 9383, 8436, 1072, 8516, 8515, 572, 6703, 6695, 2]
+// Dependencies: [5, 2189, 9451, 8502, 1072, 8582, 8581, 572, 6766, 6758, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 10390 (StorefrontCollectionActionCreators)
+// Module 10459 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import StoreUtils from "StoreUtils" /* 6703 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8515 */;
-import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8516 */;
+import StoreUtils from "StoreUtils" /* 6766 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8581 */;
+import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8582 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9383 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 8436 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9451 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 8502 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, fetchState, requestKey;
@@ -138,7 +138,7 @@ let obj = function _maybeFetchCollectionsWithProducts() {
       obj5 = {};
     }
     const flag4 = obj5.retryAfterError ?? false;
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };
@@ -306,7 +306,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
       obj7 = {};
     }
     flag = obj7.retryAfterError ?? false;
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };
@@ -572,7 +572,7 @@ obj = function _maybeFetchCollectionsForApplication() {
     if (includePricing === undefined) {
       includePricing = false;
     }
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

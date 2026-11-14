@@ -1,40 +1,40 @@
-// Module ID: 3757
-// Function ID: 3758
-// Dependencies: [1117, 3758, 3759, 3760, 3761, 3762, 3763, 3764, 3765, 3766, 3767, 3768, 3769, 3770, 3771, 3772, 3773, 3774, 3775, 3776, 3777, 3778, 3779, 3780, 3781, 3782, 3783, 3784, 3785, 3786, 3787, 3788, 1152, 2]
+// Module ID: 3807
+// Function ID: 3808
+// Dependencies: [1117, 3808, 3809, 3810, 3811, 3812, 3813, 3814, 3815, 3816, 3817, 3818, 3819, 3820, 3821, 3822, 3823, 3824, 3825, 3826, 3827, 3828, 3829, 3830, 3831, 3832, 3833, 3834, 3835, 3836, 3837, 3838, 1152, 2]
 
-// Module 3757
+// Module 3807
 import AssetJsonUtils from "AssetJsonUtils" /* 1117 */;
-import AssetRegistry from "AssetRegistry" /* 3758 */;
-import AssetRegistry2 from "AssetRegistry" /* 3759 */;
-import AssetRegistry3 from "AssetRegistry" /* 3760 */;
-import AssetRegistry4 from "AssetRegistry" /* 3761 */;
-import AssetRegistry5 from "AssetRegistry" /* 3762 */;
-import AssetRegistry6 from "AssetRegistry" /* 3763 */;
-import AssetRegistry7 from "AssetRegistry" /* 3764 */;
-import AssetRegistry8 from "AssetRegistry" /* 3765 */;
-import AssetRegistry9 from "AssetRegistry" /* 3766 */;
-import AssetRegistry10 from "AssetRegistry" /* 3767 */;
-import AssetRegistry11 from "AssetRegistry" /* 3768 */;
-import AssetRegistry12 from "AssetRegistry" /* 3769 */;
-import AssetRegistry13 from "AssetRegistry" /* 3770 */;
-import AssetRegistry14 from "AssetRegistry" /* 3771 */;
-import AssetRegistry15 from "AssetRegistry" /* 3772 */;
-import AssetRegistry16 from "AssetRegistry" /* 3773 */;
-import AssetRegistry17 from "AssetRegistry" /* 3774 */;
-import AssetRegistry18 from "AssetRegistry" /* 3775 */;
-import AssetRegistry19 from "AssetRegistry" /* 3776 */;
-import AssetRegistry20 from "AssetRegistry" /* 3777 */;
-import AssetRegistry21 from "AssetRegistry" /* 3778 */;
-import AssetRegistry22 from "AssetRegistry" /* 3779 */;
-import AssetRegistry23 from "AssetRegistry" /* 3780 */;
-import AssetRegistry24 from "AssetRegistry" /* 3781 */;
-import AssetRegistry25 from "AssetRegistry" /* 3782 */;
-import AssetRegistry26 from "AssetRegistry" /* 3783 */;
-import AssetRegistry27 from "AssetRegistry" /* 3784 */;
-import AssetRegistry28 from "AssetRegistry" /* 3785 */;
-import AssetRegistry29 from "AssetRegistry" /* 3786 */;
-import AssetRegistry30 from "AssetRegistry" /* 3787 */;
-import AssetRegistry31 from "AssetRegistry" /* 3788 */;
+import AssetRegistry from "AssetRegistry" /* 3808 */;
+import AssetRegistry2 from "AssetRegistry" /* 3809 */;
+import AssetRegistry3 from "AssetRegistry" /* 3810 */;
+import AssetRegistry4 from "AssetRegistry" /* 3811 */;
+import AssetRegistry5 from "AssetRegistry" /* 3812 */;
+import AssetRegistry6 from "AssetRegistry" /* 3813 */;
+import AssetRegistry7 from "AssetRegistry" /* 3814 */;
+import AssetRegistry8 from "AssetRegistry" /* 3815 */;
+import AssetRegistry9 from "AssetRegistry" /* 3816 */;
+import AssetRegistry10 from "AssetRegistry" /* 3817 */;
+import AssetRegistry11 from "AssetRegistry" /* 3818 */;
+import AssetRegistry12 from "AssetRegistry" /* 3819 */;
+import AssetRegistry13 from "AssetRegistry" /* 3820 */;
+import AssetRegistry14 from "AssetRegistry" /* 3821 */;
+import AssetRegistry15 from "AssetRegistry" /* 3822 */;
+import AssetRegistry16 from "AssetRegistry" /* 3823 */;
+import AssetRegistry17 from "AssetRegistry" /* 3824 */;
+import AssetRegistry18 from "AssetRegistry" /* 3825 */;
+import AssetRegistry19 from "AssetRegistry" /* 3826 */;
+import AssetRegistry20 from "AssetRegistry" /* 3827 */;
+import AssetRegistry21 from "AssetRegistry" /* 3828 */;
+import AssetRegistry22 from "AssetRegistry" /* 3829 */;
+import AssetRegistry23 from "AssetRegistry" /* 3830 */;
+import AssetRegistry24 from "AssetRegistry" /* 3831 */;
+import AssetRegistry25 from "AssetRegistry" /* 3832 */;
+import AssetRegistry26 from "AssetRegistry" /* 3833 */;
+import AssetRegistry27 from "AssetRegistry" /* 3834 */;
+import AssetRegistry28 from "AssetRegistry" /* 3835 */;
+import AssetRegistry29 from "AssetRegistry" /* 3836 */;
+import AssetRegistry30 from "AssetRegistry" /* 3837 */;
+import AssetRegistry31 from "AssetRegistry" /* 3838 */;
 import module_1152_mod from "module_1152" /* 1152 */;
 import size from "module_2" /* 2 */;
 

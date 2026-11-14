@@ -1,13 +1,13 @@
-// Module ID: 13504
-// Function ID: 13505
+// Module ID: 13607
+// Function ID: 13608
 // Name: ConjureBotPermissionsTip
-// Dependencies: [5, 19, 21, 13067, 13505, 11157, 1113, 4079, 13509, 2]
+// Dependencies: [5, 19, 21, 13162, 13608, 11224, 1113, 4131, 13612, 2]
 
-// Module 13504 (ConjureBotPermissionsTip)
+// Module 13607 (ConjureBotPermissionsTip)
 import Fragment from "Fragment" /* 21 */;
-import _modDef4079 from "module_4079" /* 4079 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 13505 */;
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 13509 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 13608 */;
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 13612 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ function BotPermissionsHint(projectId) {
   let closure_1;
   let closure_2;
   projectId = projectId.projectId;
-  dependencyMap = react.useContext(projectId(13067).ConjurePublishActionContext);
+  dependencyMap = react.useContext(projectId(13162).ConjurePublishActionContext);
   ConjureTipHintDefault;
   const intl = projectId(1113).intl;
   const format = intl.format;
@@ -27,7 +27,7 @@ function BotPermissionsHint(projectId) {
       return closure_1(...arguments);
     }
   };
-  const v0S9HY8 = _modDef4079["0S9HY8"];
+  const v0S9HY8 = _modDef4131["0S9HY8"];
   importDefault = _asyncToGenerator(async (arg0, value) => {
     let v3;
     if (projectId === 2) {
@@ -76,7 +76,7 @@ function BotPermissionsHint(projectId) {
       }
     }
   });
-  return <tmp icon={projectId(11157).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
+  return <tmp icon={projectId(11224).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
 }
 const jsx = Fragment.jsx;
 let obj = {

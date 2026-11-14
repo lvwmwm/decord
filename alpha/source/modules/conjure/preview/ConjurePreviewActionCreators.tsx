@@ -1,21 +1,21 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 7394
+// Function ID: 7395
 // Name: ConjurePreviewActionCreators
-// Dependencies: [5, 5096, 6954, 7331, 1072, 7332, 6955, 572, 7285, 15857, 1282, 2]
+// Dependencies: [5, 5159, 7017, 7395, 1072, 7396, 7018, 572, 7349, 15977, 1285, 2]
 // Exports: loadConjurePreviewDm, pauseConjurePreview, reloadConjureAppFrames, reloadConjureProjectFrames, resumeConjurePreview, selectConjureGameCapture, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, wakeConjurePreview
 
-// Module 7330 (ConjurePreviewActionCreators)
+// Module 7394 (ConjurePreviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelRecord from "ChannelRecord" /* 5096 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6955 */;
-import leaveFrame from "leaveFrame" /* 7285 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7332 */;
-import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 15857 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
+import leaveFrame from "leaveFrame" /* 7349 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7396 */;
+import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 15977 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
-import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 7331 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 7395 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _loadConjurePreviewDm() {
@@ -58,7 +58,7 @@ export function reloadConjureProjectFrames(projectId) {
       if (prop == null) {
         prop = null;
       }
-      const tmp2Result = tmp2(7332);
+      const tmp2Result = tmp2(7396);
       tmp2Result.reloadAppFrames(prop);
     }
   }

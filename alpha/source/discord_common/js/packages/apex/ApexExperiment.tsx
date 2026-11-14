@@ -1,10 +1,10 @@
-// Module ID: 1451
-// Function ID: 1452
+// Module ID: 1454
+// Function ID: 1455
 // Name: discord_common/apex/ApexExperiment
 // Dependencies: [32, 19, 4, 504, 2]
 // Exports: default
 
-// Module 1451 (discord_common/apex/ApexExperiment)
+// Module 1454 (discord_common/apex/ApexExperiment)
 import logger_Logger from "logger/Logger" /* 4 */;
 import react from "react" /* 19 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -50,14 +50,14 @@ export default function createApexExperimentCommon(definition, registerExperimen
       let _location;
       let revision;
       registerExperiment = location;
-      let tmp = closure_2(revision, location);
+      const tmp = closure_2(revision, location);
       closure_1 = tmp;
-      const tmp2 = closure_2("user", location);
+      let tmp2 = closure_2("user", location);
       closure_2 = tmp2;
       const items = [registerExperiment];
       const items1 = [tmp, tmp2];
       const obj = registerExperiment(closure_1[3]);
-      const tmp3 = closure_2(obj.useStateFromStoresArray(items, () => _location.getEvaluationAndAssignment(closure_5, closure_1, logger, closure_2), items1), 2);
+      const tmp3 = closure_2(obj.useStateFromStoresArray(items, () => _location.getConfigEvaluationAndAssignment(closure_5, closure_1, logger, closure_2), items1), 2);
       let first = tmp3[0];
       let variantId;
       if (tmp3[1] != null) {
@@ -102,8 +102,12 @@ export default function createApexExperimentCommon(definition, registerExperimen
       let closure_10 = tmp16;
       const items2 = [tmp16, tmp, first, trackedVariantId, revision, location.location, isOverride, prop, useAsEligibility, tmp14];
       tmp8(() => {
-        const tmp = closure_10 && null != first && null != trackedVariantId && null != revision && false === isOverride && true === prop && true !== useAsEligibility && !closure_9;
-        if (tmp) {
+        const tmp2 = closure_9 || true === useAsEligibility;
+        if (!tmp2) {
+          _location.onConfigApplied(closure_5, closure_1, logger);
+        }
+        const tmp9 = closure_10 && null != first && null != trackedVariantId && null != revision && false === isOverride && true === prop && true !== useAsEligibility && !tmp;
+        if (tmp9) {
           const result = _location.trackExperimentExposure(first, logger, _location.location, closure_5, revision, trackedVariantId, closure_1);
         }
       }, items2);
@@ -125,10 +129,9 @@ export default function createApexExperimentCommon(definition, registerExperimen
         const obj = { location: location.location };
         tmpResult = tmp("user", obj);
       }
-      [tmp7, tmp8] = registerExperiment.getEvaluationAndAssignment(tmp2, tmp3, logger, tmpResult);
+      [tmp7, tmp8] = registerExperiment.getConfigEvaluationAndAssignment(tmp2, tmp3, logger, tmpResult);
       let variantId;
-      _slicedToArray(registerExperiment.getEvaluationAndAssignment(tmp2, tmp3, logger, tmpResult), 2);
-      const tmp5 = logger;
+      _slicedToArray(registerExperiment.getConfigEvaluationAndAssignment(tmp2, tmp3, logger, tmpResult), 2);
       if (tmp8 != null) {
         variantId = tmp8.variantId;
       }
@@ -161,12 +164,16 @@ export default function createApexExperimentCommon(definition, registerExperimen
         }
         tmp13 = closure_8;
       }
+      const tmp15 = null != tmp13 && true !== useAsEligibility;
+      if (tmp15) {
+        registerExperiment.onConfigApplied(tmp2, tmp3, logger);
+      }
       autoTrackExposure = undefined;
       if (autoTrackExposure != null) {
         autoTrackExposure = autoTrackExposure.autoTrackExposure;
       }
-      const tmp16 = false !== autoTrackExposure && null != tmp7 && null != trackedVariantId && null != revision && false === isOverride && true === exposureTrackingEnabled && true !== useAsEligibility && null != tmp13;
-      if (tmp16) {
+      const tmp18 = false !== autoTrackExposure && null != tmp7 && null != trackedVariantId && null != revision && false === isOverride && true === exposureTrackingEnabled && true !== useAsEligibility && null != tmp13;
+      if (tmp18) {
         const result = obj2.trackExperimentExposure(tmp7, tmp5, location.location, tmp2, revision, trackedVariantId, tmp3);
       }
       if (null != variantId) {

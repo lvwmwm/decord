@@ -1,22 +1,22 @@
-// Module ID: 19939
-// Function ID: 19940
+// Module ID: 20096
+// Function ID: 20097
 // Name: VoicePanelScreenshareButton
-// Dependencies: [19, 5092, 21, 1624, 10662, 19802, 5243, 11918, 19926, 504, 38, 19796, 19940, 19927, 1113, 7656, 2]
+// Dependencies: [19, 5155, 21, 1627, 10731, 19190, 5306, 11984, 20083, 504, 38, 19184, 20097, 20084, 1113, 7722, 2]
 // Exports: default
 
-// Module 19939 (VoicePanelScreenshareButton)
+// Module 20096 (VoicePanelScreenshareButton)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
-import NativeViewDefault from "NativeView" /* 7656 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 10662 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11918 */;
-import useVoicePanelScreenshareToggleDefault from "useVoicePanelScreenshareToggle" /* 19796 */;
-import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 19802 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19927 */;
+import NativeViewDefault from "NativeView" /* 7722 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 10731 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
+import useVoicePanelScreenshareToggleDefault from "useVoicePanelScreenshareToggle" /* 19184 */;
+import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 19190 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 20084 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
-import createStyles from "createStyles" /* 5243 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -37,7 +37,7 @@ export default function ScreenshareButton(arg0) {
   ({ props, wrapperSpecs } = arg0);
   const channelId = react.useContext(VoicePanelStateContextDefault).channelId;
   const tmp3 = closure_7();
-  const obj = channelId(19926);
+  const obj = channelId(20083);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
   const items = [ChannelStore];
   const obj2 = channelId(504);
@@ -59,7 +59,7 @@ export default function ScreenshareButton(arg0) {
     color = voicePanelButtonStyles.iconFillSelected.color;
   }
   if (videoBlocked) {
-    let MobilePhoneDenyIcon = tmp4(19940).MobilePhoneDenyIcon;
+    let MobilePhoneDenyIcon = tmp4(20097).MobilePhoneDenyIcon;
   } else {
     MobilePhoneDenyIcon = MobilePhoneShareIcon;
   }

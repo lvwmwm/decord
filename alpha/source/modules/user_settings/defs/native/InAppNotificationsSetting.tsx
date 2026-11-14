@@ -1,19 +1,19 @@
-// Module ID: 17990
-// Function ID: 17991
+// Module ID: 18110
+// Function ID: 18111
 // Name: InAppNotificationsSetting
-// Dependencies: [9135, 1072, 5068, 10952, 1113, 3013, 1252, 12311, 16779, 17991, 2]
+// Dependencies: [9202, 1072, 5131, 11021, 1113, 3029, 1256, 12406, 16902, 18111, 2]
 
-// Module 17990 (InAppNotificationsSetting)
+// Module 18110 (InAppNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef3013 from "module_3013" /* 3013 */;
-import UserSettings from "UserSettings" /* 5068 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import FocusModeUtils from "FocusModeUtils" /* 10952 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16779 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17991 */;
-import SettingBuilders_mod from "SettingBuilders" /* 12311 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import _modDef3029 from "module_3029" /* 3029 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import FocusModeUtils from "FocusModeUtils" /* 11021 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16902 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18111 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -64,7 +64,7 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3013.sH5mu9);
+    return intl.string(_modDef3029.sH5mu9);
   },
   useDescription: function useRedesignInAppNotificationsDescription() {
     let stringResult;
@@ -75,7 +75,7 @@ const obj3 = {
     if (focusModeEnabled) {
       stringResult = string(intl2.t.cIRG0s);
     } else {
-      stringResult = string(_modDef3013["T/zMdV"]);
+      stringResult = string(_modDef3029["T/zMdV"]);
     }
     return stringResult;
   },

@@ -1,11 +1,11 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15481
+// Function ID: 15482
 // Name: useBotProfileCommands
-// Dependencies: [19, 11338, 2116, 2]
+// Dependencies: [19, 11405, 2119, 2]
 // Exports: default
 
-// Module 15367 (useBotProfileCommands)
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 11338 */;
+// Module 15481 (useBotProfileCommands)
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 11405 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

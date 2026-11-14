@@ -1,16 +1,16 @@
-// Module ID: 14985
-// Function ID: 14986
+// Module ID: 15099
+// Function ID: 15100
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 1499, 7363, 1113, 5957, 14986, 1187, 5866, 5873, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 1502, 7427, 1113, 6020, 15100, 1187, 5929, 5936, 2]
 // Exports: default
 
-// Module 14985 (HubEmailConnectionWaitlist)
+// Module 15099 (HubEmailConnectionWaitlist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -36,7 +36,7 @@ export default function HubEmailConnectionWaitlist(onClose) {
   onClose = onClose.onClose;
   const school = onClose.school;
   const tmp = closure_7();
-  let obj = onClose(1499);
+  let obj = onClose(1502);
   navigation = obj.useNavigation();
   const items = [navigation, onClose];
   const layoutEffect = react.useLayoutEffect(() => {
@@ -53,20 +53,20 @@ export default function HubEmailConnectionWaitlist(onClose) {
     navigation.setOptions(obj);
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
-  const obj3 = { source: navigation(14986), style: tmp.header };
-  const tmp4 = navigation(5957);
+  const obj3 = { source: navigation(15100), style: tmp.header };
+  const tmp4 = navigation(6020);
   items1 = [closure_5(tmp4, obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1113).t.OaloU5) };
   const LegacyText = onClose(1187).LegacyText;
   intl = onClose(1113).intl;
   items1[1] = closure_5(LegacyText, obj4);
   const obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.format(onClose(1113).t.Rs7MXJ, { school }) };
-  const Text = onClose(5866).Text;
+  const Text = onClose(5929).Text;
   intl2 = onClose(1113).intl;
   items1[2] = closure_5(Text, obj5);
   const obj6 = { style: tmp.redesignButton, children: closure_5(Button, obj7) };
   obj7 = { size: "lg", text: intl3.string(onClose(1113).t.i4jeWR), onPress: onClose };
-  Button = onClose(5873).Button;
+  Button = onClose(5936).Button;
   intl3 = onClose(1113).intl;
   items1[3] = closure_5(View, obj6);
   return closure_6(View, obj2);

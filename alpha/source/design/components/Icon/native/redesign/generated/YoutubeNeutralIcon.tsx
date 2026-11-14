@@ -1,14 +1,14 @@
-// Module ID: 10407
-// Function ID: 10408
+// Module ID: 10476
+// Function ID: 10477
 // Name: YoutubeNeutralIcon
-// Dependencies: [19, 21, 575, 5956, 10408, 2]
+// Dependencies: [19, 21, 575, 6019, 10477, 2]
 // Exports: YoutubeNeutralIcon
 
-// Module 10407 (YoutubeNeutralIcon)
+// Module 10476 (YoutubeNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10408 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 10477 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,19 @@
-// Module ID: 16281
-// Function ID: 16282
+// Module ID: 16349
+// Function ID: 16350
 // Name: GameOrganizationStore
-// Dependencies: [12275, 504, 572, 2]
+// Dependencies: [12370, 504, 572, 2]
 
-// Module 16281 (GameOrganizationStore)
+// Module 16349 (GameOrganizationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GameOrganizationModels from "GameOrganizationModels" /* 12275 */;
+import GameOrganizationModels from "GameOrganizationModels" /* 12370 */;
 import size from "module_2" /* 2 */;
 
 const React2 = {};
 const _false = {};
 const React3 = {};
 const hasOwnProperty = {};
+const metroRequire = {};
 const Store = get_initializedDefault.Store;
 class GameOrganizationStore extends Store {
   getGameOrganization(arg0) {
@@ -22,6 +23,17 @@ class GameOrganizationStore extends Store {
     let tmp = null;
     if (null != arg0) {
       let tmp3 = closure_5[arg0];
+      if (tmp3 == null) {
+        tmp3 = null;
+      }
+      tmp = tmp3;
+    }
+    return tmp;
+  }
+  getDisplayNounByGuildId(guildId) {
+    let tmp = null;
+    if (null != guildId) {
+      let tmp3 = closure_6[guildId];
       if (tmp3 == null) {
         tmp3 = null;
       }
@@ -62,8 +74,10 @@ let obj = {
     gameOrganization = gameOrganization.gameOrganization;
     closure_4[gameOrganization.id] = gameOrganization;
     closure_5[gameOrganization.guildId] = gameOrganization;
+    const displayNoun = gameOrganization.displayNoun;
     delete closure_3[gameOrganization.guildId];
     delete closure_2[gameOrganization.guildId];
+    closure_6[gameOrganization.guildId] = displayNoun;
   },
   GAME_ORGANIZATION_FETCH_FAILURE: function handleGameOrganizationFetchFailure(arg0) {
     let error;
@@ -73,13 +87,18 @@ let obj = {
     closure_3[guildId] = error;
   },
   GAME_ORGANIZATION_INVITE_RESOLVE_SUCCESS: function handleGameOrganizationInviteResolveSuccess(invite) {
-    const game_organization = invite.invite.game_organization;
+    invite = invite.invite;
+    const application_config = invite.application_config;
+    const game_organization = invite.game_organization;
     const obj = GameOrganizationModels;
     const result = obj.gameOrganizationFromServer(game_organization);
     closure_4[result.id] = result;
     closure_5[result.guildId] = result;
     delete closure_3[tmp.guildId];
     delete closure_2[tmp.guildId];
+    if (null != application_config) {
+      closure_6[result.guildId] = application_config.display_noun;
+    }
     delete closure_3[tmp.guildId];
   },
   GUILD_UPDATE: function handleGuildUpdate(guild) {
@@ -110,6 +129,7 @@ let obj = {
     if (flag) {
       delete closure_4[closure_5[guild.id].id];
       delete tmp[closure_5[guild.id].guildId];
+      delete closure_6[closure_5[guild.id].guildId];
       delete closure_3[closure_5[guild.id].guildId];
       delete closure_2[closure_5[guild.id].guildId];
       flag = true;
@@ -121,6 +141,7 @@ let obj = {
     if (flag) {
       delete closure_4[closure_5[arg0.guild.id].id];
       delete tmp[closure_5[arg0.guild.id].guildId];
+      delete closure_6[closure_5[arg0.guild.id].guildId];
       delete closure_3[closure_5[arg0.guild.id].guildId];
       delete closure_2[closure_5[arg0.guild.id].guildId];
       flag = true;

@@ -1,13 +1,13 @@
-// Module ID: 10139
-// Function ID: 10140
+// Module ID: 10208
+// Function ID: 10209
 // Name: GuildAffinitiesActionCreators
-// Dependencies: [1072, 1282, 572, 2]
+// Dependencies: [1072, 1285, 572, 2]
 // Exports: fetchGuildAffinities
 
-// Module 10139 (GuildAffinitiesActionCreators)
+// Module 10208 (GuildAffinitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

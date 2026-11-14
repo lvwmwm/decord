@@ -1,13 +1,13 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 10203
+// Function ID: 10204
 // Name: MediaModalWebVideoFile
-// Dependencies: [32, 19, 21, 10133, 6773, 8562, 8564, 2]
+// Dependencies: [32, 19, 21, 10202, 6836, 8629, 8631, 2]
 // Exports: createWebFileVideoControls
 
-// Module 10134 (MediaModalWebVideoFile)
+// Module 10203 (MediaModalWebVideoFile)
 import Fragment from "Fragment" /* 21 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8562 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 10133 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8629 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 10202 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

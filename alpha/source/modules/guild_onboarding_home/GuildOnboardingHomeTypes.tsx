@@ -1,13 +1,13 @@
-// Module ID: 7018
-// Function ID: 7019
+// Module ID: 7081
+// Function ID: 7082
 // Name: GuildOnboardingHomeTypes
-// Dependencies: [5092, 1072, 1380, 5180, 2]
+// Dependencies: [5155, 1072, 1255, 5243, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 7018 (GuildOnboardingHomeTypes)
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5180 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
+// Module 7081 (GuildOnboardingHomeTypes)
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 13287
-// Function ID: 13288
+// Module ID: 13392
+// Function ID: 13393
 // Name: SubmittingOverlay
-// Dependencies: [21, 5243, 575, 1652, 5876, 5877, 5886, 2]
+// Dependencies: [21, 5306, 575, 1655, 5939, 5940, 5949, 2]
 // Exports: SubmittingOverlay
 
-// Module 13287 (SubmittingOverlay)
+// Module 13392 (SubmittingOverlay)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import springPresets from "springPresets" /* 5877 */;
-import createStyles from "createStyles" /* 5243 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import springPresets from "springPresets" /* 5940 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 let num;
 
 let tmp2;
-const ButtonEllipsis = tmp2(5886);
+const ButtonEllipsis = tmp2(5949);
 const jsx = Fragment.jsx;
 let obj = { ellipsis: { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" } };
 ({ backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" });
@@ -34,8 +34,8 @@ export function SubmittingOverlay(submitting) {
   const style = submitting.style;
   let tmp = closure_4();
   const items = [closure_5, , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[1] = spring_spring.withSpring;
   items[2] = submitting;
   items[3] = springPresets.SUBTLE_SPRING;
@@ -60,7 +60,7 @@ export function SubmittingOverlay(submitting) {
   SubmittingOverlayTsx1.__initData = tmp5;
   const animatedStyle = useAnimatedStyle(SubmittingOverlayTsx1);
   const items2 = [style, tmp.ellipsis, animatedStyle];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   if (submitting) {
     submitting = tmp10(ButtonEllipsis.Ellipsis, { variant: "active", size: "md" });
   }

@@ -1,25 +1,25 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 12767
+// Function ID: 12768
 // Name: SuccessResultModal
-// Dependencies: [19, 17, 5092, 5175, 5146, 1072, 1498, 21, 5243, 575, 9974, 1113, 6785, 7168, 1252, 504, 5489, 5438, 1625, 7351, 5957, 12672, 5866, 5873, 2]
+// Dependencies: [19, 17, 5155, 5238, 5209, 1072, 1501, 21, 5306, 575, 10041, 1113, 6848, 7231, 1256, 504, 5552, 5501, 1628, 7415, 6020, 12768, 5929, 5936, 2]
 // Exports: default
 
-// Module 12671 (SuccessResultModal)
+// Module 12767 (SuccessResultModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import transitionToGuild2 from "transitionToGuild" /* 7168 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import transitionToGuild2 from "transitionToGuild" /* 7231 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -127,7 +127,7 @@ export default function SuccessResultModal(guild) {
       }
       transitionToGuild(id1);
       let id2;
-      const track = tmp10(1252).track;
+      const track = tmp10(1256).track;
       const OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED = React4.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED;
       AnalyticsUtilsDefault;
       if (application != null) {

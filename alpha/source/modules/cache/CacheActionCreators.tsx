@@ -1,14 +1,14 @@
-// Module ID: 18086
-// Function ID: 18087
+// Module ID: 18206
+// Function ID: 18207
 // Name: CacheActionCreators
-// Dependencies: [5, 5092, 8612, 572, 2]
+// Dependencies: [5, 5155, 8679, 572, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 18086 (CacheActionCreators)
+// Module 18206 (CacheActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 8612 */;
+import CacheStore from "CacheStore" /* 8679 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -64,7 +64,7 @@ let obj = function _writeCaches() {
     if (closure_0 === undefined) {
       flag = false;
     }
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

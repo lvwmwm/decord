@@ -1,16 +1,16 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 16061
+// Function ID: 16062
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 5989, 5287, 1072, 504, 7620, 2]
+// Dependencies: [5, 32, 19, 6052, 5350, 1072, 504, 7686, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 15941 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 16061 (useCanReapplyToRejectedMemberVerificationApplication)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 5989 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5287 */;
+import InviteStore from "InviteStore" /* 6052 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5350 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

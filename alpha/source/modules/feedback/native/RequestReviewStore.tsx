@@ -1,25 +1,25 @@
-// Module ID: 16079
-// Function ID: 16080
+// Module ID: 16200
+// Function ID: 16201
 // Name: RequestReviewStore
-// Dependencies: [5469, 1246, 5146, 1072, 1624, 16080, 6016, 16081, 5430, 5429, 7577, 16083, 1092, 510, 1252, 504, 572, 2]
+// Dependencies: [5532, 1246, 5209, 1072, 1627, 16201, 6079, 16202, 5493, 5492, 7643, 16204, 1092, 510, 1256, 504, 572, 2]
 
-// Module 16079 (RequestReviewStore)
+// Module 16200 (RequestReviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5429 */;
-import RootNavigationRef from "RootNavigationRef" /* 5430 */;
-import TimeUtils from "TimeUtils" /* 6016 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7577 */;
-import requestReviewModalDefault from "requestReviewModal" /* 16081 */;
-import InstallTime from "InstallTime" /* 16083 */;
-import ExperimentStore from "ExperimentStore" /* 5469 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
+import RootNavigationRef from "RootNavigationRef" /* 5493 */;
+import TimeUtils from "TimeUtils" /* 6079 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7643 */;
+import requestReviewModalDefault from "requestReviewModal" /* 16202 */;
+import InstallTime from "InstallTime" /* 16204 */;
+import ExperimentStore from "ExperimentStore" /* 5532 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import size from "module_2" /* 2 */;
 
 function delayShowReviewRequestModal() {
@@ -31,7 +31,7 @@ function delayShowReviewRequestModal() {
   }
   obj = MetaQuestUtils;
   if (!obj.isMetaQuest()) {
-    const RequestReviewNoTTIExperiment = tmp4(16080).RequestReviewNoTTIExperiment;
+    const RequestReviewNoTTIExperiment = tmp4(16201).RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp6 = closure_10;
     if (tmp6) {
@@ -43,7 +43,7 @@ function delayShowReviewRequestModal() {
     }
     if (tmp6) {
       const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, tmp4(6016).MS_PER_MINUTE);
+      timeout = setTimeout(showReviewRequestModal, tmp4(6079).MS_PER_MINUTE);
     }
   }
 }

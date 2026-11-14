@@ -1,19 +1,19 @@
-// Module ID: 9143
-// Function ID: 9144
+// Module ID: 9210
+// Function ID: 9211
 // Name: useIsCallActive
-// Dependencies: [6960, 6953, 5920, 504, 2]
+// Dependencies: [7023, 7016, 5983, 504, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 9143 (useIsCallActive)
-import CallConstants from "CallConstants" /* 5920 */;
-import CallStore from "CallStore" /* 6960 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
+// Module 9210 (useIsCallActive)
+import CallConstants from "CallConstants" /* 5983 */;
+import CallStore from "CallStore" /* 7023 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f96711 = (type) => type.type === constants.USER && !type.ringing;
+const f97918 = (type) => type.type === constants.USER && !type.ringing;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const result = size.fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
 
@@ -30,7 +30,7 @@ export default function useIsCallActive(arg0, arg1) {
     const tmp = closure_0;
     if (isCallActiveResult) {
       const participants = ChannelRTCStore.getParticipants(tmp);
-      isCallActiveResult = participants.some(f96711);
+      isCallActiveResult = participants.some(f97918);
     }
     return isCallActiveResult;
   }, items1);
@@ -39,7 +39,7 @@ export function checkIsCallActive(channelId, id) {
   let isCallActiveResult = CallStore.isCallActive(channelId, id);
   if (isCallActiveResult) {
     const participants = ChannelRTCStore.getParticipants(channelId);
-    isCallActiveResult = participants.some(f96711);
+    isCallActiveResult = participants.some(f97918);
   }
   return isCallActiveResult;
 }
@@ -56,7 +56,7 @@ export function useIsCallActiveNullable(id, arg1) {
       let isCallActiveResult = CallStore.isCallActive(tmp, closure_1);
       if (isCallActiveResult) {
         const participants = ChannelRTCStore.getParticipants(tmp);
-        isCallActiveResult = participants.some(f96711);
+        isCallActiveResult = participants.some(f97918);
       }
       tmp2 = isCallActiveResult;
     }

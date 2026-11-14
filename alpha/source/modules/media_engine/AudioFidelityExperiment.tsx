@@ -1,12 +1,12 @@
-// Module ID: 16391
-// Function ID: 16392
+// Module ID: 16514
+// Function ID: 16515
 // Name: AudioFidelityExperiment
-// Dependencies: [1449, 1380, 2]
+// Dependencies: [1452, 1255, 2]
 // Exports: getAudioFidelityExperimentConfig, getVoiceFidelityCaps
 
-// Module 16391 (AudioFidelityExperiment)
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 16514 (AudioFidelityExperiment)
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

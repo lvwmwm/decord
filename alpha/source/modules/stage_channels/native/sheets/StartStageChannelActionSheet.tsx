@@ -1,22 +1,22 @@
-// Module ID: 6844
-// Function ID: 6845
+// Module ID: 6907
+// Function ID: 6908
 // Name: StartStageChannelActionSheet
-// Dependencies: [5, 32, 19, 17, 5097, 6843, 1072, 5098, 21, 5243, 575, 504, 6845, 5836, 1252, 2017, 6846, 5489, 6694, 5866, 1113, 5503, 7351, 7553, 8366, 5873, 2]
+// Dependencies: [5, 32, 19, 17, 5160, 6906, 1072, 5161, 21, 5306, 575, 504, 6908, 5899, 1256, 2020, 6909, 5552, 6757, 5929, 1113, 5566, 7415, 7619, 8432, 5936, 2]
 // Exports: default
 
-// Module 6844 (StartStageChannelActionSheet)
+// Module 6907 (StartStageChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5098 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StageInstanceStore from "StageInstanceStore" /* 5097 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6843 */;
+import StageInstanceStore from "StageInstanceStore" /* 5160 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6906 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c5, dependencyMap;
@@ -186,9 +186,9 @@ export default function StartStageChannelEventActionSheet(channel) {
   const tmp8 = obj(obj2.useState(false), 2);
   [obj3, c4] = obj(obj2.useState(null), 2);
   const tmp10 = obj(obj2.useState(null), 2);
-  const tmp2Result = channel(6845);
+  const tmp2Result = channel(6908);
   const shouldAgeVerifyToSpeakForCurrentUser = tmp2Result.useShouldAgeVerifyToSpeakForCurrentUser(channel.id);
-  stateFromStores(5836)(() => {
+  stateFromStores(5899)(() => {
     let id;
     const track = AnalyticsUtilsDefault.track;
     const START_STAGE_OPENED = unpackModuleId.START_STAGE_OPENED;
@@ -201,7 +201,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   });
   let obj4 = { style: tmp.header, children: items1 };
   let obj5 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
-  const Text = tmp2(5866).Text;
+  const Text = tmp2(5929).Text;
   const tmp12 = stateFromStores;
   if (null == stateFromStores) {
     const intl2 = tmp2(1113).intl;
@@ -212,7 +212,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   }
   items1 = [tmp16(Text, obj5), ];
   let obj6 = { style: tmp.headerSubtitle, variant: "body-sm/medium", color: "text-default", children: stringResult1 };
-  const Text2 = tmp2(5866).Text;
+  const Text2 = tmp2(5929).Text;
   if (null == stateFromStores) {
     const intl4 = tmp2(1113).intl;
     stringResult1 = intl4.string(tmp2(1113).t.bqQIwa);
@@ -230,12 +230,12 @@ export default function StartStageChannelEventActionSheet(channel) {
   function handleSave() {
     return obj(...arguments);
   }
-  const BottomSheet = tmp2(5503).BottomSheet;
+  const BottomSheet = tmp2(5566).BottomSheet;
   let obj7 = { bottom: true, style: tmp.container, children: items2 };
   items2 = [tmp14Result, , , , , ];
-  const SafeAreaPaddingView = tmp2(7351).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
   let obj8 = { label: intl6.string(tmp2(1113).t["5FPBOB"]), maxLength, value, placeholder: intl7.string(tmp2(1113).t.ZwWruY), onChange: tmp7, autoFocus: true, returnKeyType: "done", clearable: true, onSubmitEditing: handleSave };
-  const TextInput = tmp2(7553).TextInput;
+  const TextInput = tmp2(7619).TextInput;
   intl6 = tmp2(1113).intl;
   intl7 = tmp2(1113).intl;
   items2[1] = closure_13(TextInput, obj8);
@@ -247,16 +247,16 @@ export default function StartStageChannelEventActionSheet(channel) {
     style: tmp.ageVerificationNotice,
     channelId: channel.id
   };
-  items2[2] = closure_13(tmp12(8366), obj9);
+  items2[2] = closure_13(tmp12(8432), obj9);
   let tmp16Result = null;
   if (null != obj3) {
     const obj10 = { style: tmp.error, variant: "body-xs/medium", color: "text-feedback-critical", children: obj3.getAnyErrorMessage() };
-    const Text3 = tmp2(5866).Text;
+    const Text3 = tmp2(5929).Text;
     tmp16Result = tmp16(Text3, obj10);
   }
   items2[3] = tmp16Result;
   const obj11 = { style: tmp.startButton, children: closure_13(Button, obj12) };
-  Button = tmp2(5873).Button;
+  Button = tmp2(5936).Button;
   if (null == stateFromStores) {
     const intl9 = tmp2(1113).intl;
     stringResult3 = intl9.string(tmp2(1113).t.s8mM8A);
@@ -269,7 +269,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   let tmp16Result2 = null != stringResult2 && !shouldAgeVerifyToSpeakForCurrentUser;
   if (tmp16Result2) {
     const obj13 = { accessible: false, style: tmp.buttonSubtitle, variant: "body-xs/medium", color: "text-default", children: intl10.string(channel(1113).t.gR66jX) };
-    const Text4 = tmp2(5866).Text;
+    const Text4 = tmp2(5929).Text;
     intl10 = tmp2(1113).intl;
     tmp16Result2 = tmp16(Text4, obj13);
   }

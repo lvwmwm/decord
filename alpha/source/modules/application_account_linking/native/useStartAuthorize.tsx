@@ -1,14 +1,12 @@
-// Module ID: 7853
-// Function ID: 7854
+// Module ID: 7919
+// Function ID: 7920
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 7854, 1072, 7855, 7856, 5949, 1252, 7857, 2]
+// Dependencies: [5, 19, 7920, 1072, 7921, 7922, 6012, 1256, 7923, 2]
 // Exports: default
 
-// Module 7853 (useStartAuthorize)
+// Module 7919 (useStartAuthorize)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import LinkingDefault from "Linking" /* 5949 */;
-import ApplicationAccountLinkingConstants from "ApplicationAccountLinkingConstants" /* 7854 */;
+import ApplicationAccountLinkingConstants from "ApplicationAccountLinkingConstants" /* 7920 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +22,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   let fetched;
   let items2;
   let prop1;
-  let tmp14;
+  let tmp13;
   let token;
   let obj = arg1;
   if (arg1 === undefined) {
@@ -34,19 +32,10 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   const debug = obj.debug;
   const tmp = undefined !== debug && debug;
   const tmp3 = dependencyMap;
-  let obj2 = authorizationApp(7855);
+  let obj2 = authorizationApp(7921);
+  const tmp2 = authorizationApp;
   authorizationApp = obj2.useAuthorizationApp(getOfficialApplicationId);
-  let prop;
-  if (authorizationApp != null) {
-    prop = authorizationApp.connectionEntrypointUrl;
-  }
-  let WEB = null;
-  if (null != prop) {
-    WEB = AuthorizeFlow.WEB;
-  }
   let parentId;
-  const useAuthorizedAppsToken = tmp2(7856).useAuthorizedAppsToken;
-  authorizationApp(7856);
   if (authorizationApp != null) {
     parentId = authorizationApp.parentId;
   }
@@ -57,7 +46,16 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     }
     parentId = id;
   }
-  const authorizedAppsToken = useAuthorizedAppsToken(parentId);
+  let prop;
+  if (authorizationApp != null) {
+    prop = authorizationApp.connectionEntrypointUrl;
+  }
+  let WEB = null;
+  if (null != prop) {
+    WEB = AuthorizeFlow.WEB;
+  }
+  const tmp2Result = tmp2(7922);
+  const authorizedAppsToken = tmp2Result.useAuthorizedAppsToken(parentId);
   ({ token, fetched } = authorizedAppsToken);
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async (arg0, value) => {
@@ -77,7 +75,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     } else {
       let c4;
       try {
-        let id;
+        let onError;
         c6 = 2;
         if (0 === c5) {
           if (arg0 === 1) {
@@ -89,30 +87,31 @@ export default function useStartAuthorize(getOfficialApplicationId) {
             return obj4;
           } else {
             let closure_2 = tmp;
-            id = closure_0;
+            onError = closure_0;
             let prop;
             if (closure_0 != null) {
-              prop = id.connectionEntrypointUrl;
+              prop = onError.connectionEntrypointUrl;
             }
-            if (null == prop) {
-              c6 = 3;
-              return { value: false, done: true };
-            } else {
-              c4 = 1;
-              const obj6 = LinkingDefault;
-              id = obj6.openURL(closure_0.connectionEntrypointUrl);
-              c5 = 2;
-              c6 = 1;
-              const obj5 = { value: id, done: false };
-              return obj5;
+            if (null != prop) {
+              if (null != onError) {
+                c4 = 1;
+                const obj6 = parentId(dependencyMap[6]);
+                onError = obj6.openURL(closure_0.connectionEntrypointUrl);
+                c5 = 2;
+                c6 = 1;
+                const obj5 = { value: onError, done: false };
+                return obj5;
+              }
             }
+            c6 = 3;
+            return { value: false, done: true };
           }
         } else if (1 === tmp4) {
           c4 = 0;
           let closure_1 = closure_3;
-          id = closure_0.onError;
-          if (id != null) {
-            id(closure_1);
+          onError = closure_0.onError;
+          if (onError != null) {
+            onError(closure_1);
           }
           c6 = 3;
           return { value: false, done: true };
@@ -125,18 +124,17 @@ export default function useStartAuthorize(getOfficialApplicationId) {
           const obj7 = { value, done: true };
           return obj7;
         } else {
-          id = closure_0;
+          onError = closure_0;
           const onConfirm = closure_0.onConfirm;
           if (onConfirm != null) {
             onConfirm();
           }
           const obj8 = { location_stack: closure_0.analyticsLocations, application_id: closure_0.id, flow_type: constants.WEB };
-          const obj = AnalyticsUtilsDefault;
+          const obj = parentId(dependencyMap[7]);
           obj.track(constants2.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, obj8);
-          id = closure_0.id;
           const obj9 = { onSuccess: closure_0.onSuccess, onError: closure_0.onError };
           const obj3 = closure_0(dependencyMap[8]);
-          const result = obj3.accountLinkAuthorizationStarted(id, obj9);
+          const result = obj3.accountLinkAuthorizationStarted(onError, obj9);
           c4 = 0;
           c6 = 3;
           return { value: true, done: true };
@@ -152,15 +150,15 @@ export default function useStartAuthorize(getOfficialApplicationId) {
       }
     }
   });
-  const items = [authorizationApp];
-  let obj3 = { fetched, hasAlreadyLinked: fetched, canStartAuthorization: tmp6, startAuthorization: callback, connectionApp: authorizationApp, chosenFlow: WEB, token, debug: tmp14 };
+  const items = [authorizationApp, parentId];
+  let obj3 = { fetched, hasAlreadyLinked: fetched, canStartAuthorization: tmp8, startAuthorization: callback, connectionApp: authorizationApp, chosenFlow: WEB, token, debug: tmp13 };
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, items);
   if (fetched) {
     fetched = null != token;
   }
-  tmp14 = undefined;
+  tmp13 = undefined;
   if (tmp) {
     let obj4 = { isSubscribedToAuthorizeRequest: false, oauth2Token: token, hasConnectionEntrypointUrl: null != prop1, validFlows: items2 };
     prop1 = undefined;
@@ -173,7 +171,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     } else {
       items2 = [];
     }
-    tmp14 = obj4;
+    tmp13 = obj4;
   }
   return obj3;
 };

@@ -1,13 +1,13 @@
-// Module ID: 10013
-// Function ID: 10014
+// Module ID: 10080
+// Function ID: 10081
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7288, 1385, 504, 7297, 10014, 2]
+// Dependencies: [7352, 1388, 504, 7361, 10081, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 10013 (useTieredTenureBadgeForUser)
-import PremiumPerkGates from "PremiumPerkGates" /* 10014 */;
-import UserProfileStore from "UserProfileStore" /* 7288 */;
-import UserStore from "UserStore" /* 1385 */;
+// Module 10080 (useTieredTenureBadgeForUser)
+import PremiumPerkGates from "PremiumPerkGates" /* 10081 */;
+import UserProfileStore from "UserProfileStore" /* 7352 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -54,7 +54,7 @@ export function useTieredTenureBadgeForUser(id) {
             earnedTenureBadge = null;
             const tmp10 = require;
             if (obj.canUseTenureBadge(currentUser)) {
-              const tmp10Result = tmp10(7297);
+              const tmp10Result = tmp10(7361);
               earnedTenureBadge = tmp10Result.getEarnedTenureBadge(premiumSince);
             }
           }

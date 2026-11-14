@@ -1,16 +1,16 @@
-// Module ID: 17000
-// Function ID: 17001
+// Module ID: 17123
+// Function ID: 17124
 // Name: useProfileEffectSections
-// Dependencies: [32, 19, 8419, 8434, 563, 8431, 1113, 15406, 2]
+// Dependencies: [32, 19, 8485, 8500, 563, 8497, 1113, 15520, 2]
 // Exports: default
 
-// Module 17000 (useProfileEffectSections)
+// Module 17123 (useProfileEffectSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1113 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8419 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8434 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8500 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, premium_purchase;
@@ -80,7 +80,7 @@ export default function useProfileEffectSections() {
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(15406)(tmp5, obj.PREVIEW);
+  return first(15520)(tmp5, obj.PREVIEW);
 };
 export { Section };
 export const NONE_ITEM = obj2;

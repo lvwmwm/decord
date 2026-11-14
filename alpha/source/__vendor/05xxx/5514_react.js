@@ -1,12 +1,24 @@
 // Module ID: 5514
 // Function ID: 5515
 // Name: react
-// Dependencies: [19]
+// Dependencies: [19, 5511]
+// Exports: usePortalState
 
 // Module 5514 (react)
 import react from "react" /* 19 */;
+import react2 from "react" /* 5511 */;
 
-const context = react.createContext(null);
+const useContext = react.useContext;
 
-export const BottomSheetContext = context;
-export const BottomSheetProvider = context.Provider;
+export const usePortalState = function(arg0) {
+  const tmp = useContext(react2.PortalStateContext);
+  if (null === tmp) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("'PortalStateContext' cannot be null, please add 'PortalProvider' to the root component.");
+    throw error;
+  } else {
+    return tmp[arg0] || [];
+  }
+};

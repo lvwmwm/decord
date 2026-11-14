@@ -1,19 +1,28 @@
 // Module ID: 13822
 // Function ID: 13823
-// Dependencies: [13823, 13824, 13825, 13826, 13828, 13829, 13831, 13832, 13834, 13835]
+// Dependencies: [13823, 13866, 13913, 13941, 13942]
 
 // Module 13822
-import _mod13823 from "module_13823" /* 13823 */;
-import _mod13824 from "module_13824" /* 13824 */;
-import _mod13825 from "module_13825" /* 13825 */;
-import _mod13826 from "module_13826" /* 13826 */;
-import _mod13828 from "module_13828" /* 13828 */;
-import _mod13829 from "module_13829" /* 13829 */;
-import _mod13831 from "module_13831" /* 13831 */;
-import _mod13832 from "module_13832" /* 13832 */;
-import _mod13834 from "module_13834" /* 13834 */;
-import _mod13835 from "module_13835" /* 13835 */;
+import _mod13941 from "module_13941" /* 13941 */;
+import _mod13942 from "module_13942" /* 13942 */;
+import create_mod from "module_13823" /* 13823 */;
+import module_13866 from "module_13866" /* 13866 */;
+import module_13913 from "module_13913" /* 13913 */;
 
-({ dir: _mod13823, has: _mod13824, lang: _mod13825, matches: _mod13826, not: _mod13828, "nth-child": _mod13829, "nth-last-child": _mod13831, "nth-last-of-type": _mod13832, "nth-of-type": _mod13834, slotted: _mod13835 });
+function merge() {
+  let num;
+  const obj = {};
+  for (let num = 0; num < arguments.length; num = num + 1) {
+    let tmp = arguments[num];
+    for (const key10011 in tmp) {
+      obj[key10011] = tmp[key10011];
+      continue;
+    }
+  }
+  return obj;
+}
+let create = create_mod;
+create = create.create;
+module.exports.version = _mod13942.version;
 
-export default { dir: _mod13823, has: _mod13824, lang: _mod13825, matches: _mod13826, not: _mod13828, "nth-child": _mod13829, "nth-last-child": _mod13831, "nth-last-of-type": _mod13832, "nth-of-type": _mod13834, slotted: _mod13835 };
+export default create(merge(module_13866, module_13913, _mod13941));

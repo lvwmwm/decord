@@ -1,18 +1,18 @@
-// Module ID: 8408
-// Function ID: 8409
+// Module ID: 8474
+// Function ID: 8475
 // Name: UserPlaceholderRow
-// Dependencies: [19, 17, 5244, 21, 5243, 575, 1652, 504, 5485, 5488, 2]
+// Dependencies: [19, 17, 5307, 21, 5306, 575, 1655, 504, 5548, 5551, 2]
 
-// Module 8408 (UserPlaceholderRow)
+// Module 8474 (UserPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import timingPresets from "timingPresets" /* 5488 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import timingPresets from "timingPresets" /* 5551 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function UserPlaceholderRow(animate) {
   let sharedValue;
   flag = undefined;
   const tmp3 = closure_8(height);
-  let obj = sharedValue(1652);
+  let obj = sharedValue(1655);
   const tmp4 = sharedValue;
   sharedValue = obj.useSharedValue(1);
   let obj2 = sharedValue(504);
@@ -62,10 +62,10 @@ const memoResult = react.memo(function UserPlaceholderRow(animate) {
   const items1 = [flag, sharedValue];
   const effect = react.useEffect(() => {
     if (flag) {
-      const withRepeat = _mod1652.withRepeat;
-      _mod1652;
-      const withSequence = _mod1652.withSequence;
-      _mod1652;
+      const withRepeat = _mod1655.withRepeat;
+      _mod1655;
+      const withSequence = _mod1655.withSequence;
+      _mod1655;
       const obj = { duration: 2 * timingPresets.timingSlowDuration };
       const withTiming = timing_timing.withTiming;
       timing_timing;
@@ -81,7 +81,7 @@ const memoResult = react.memo(function UserPlaceholderRow(animate) {
   const items2 = [closure_9, sharedValue];
   let c0;
   [tmp8, tmp9] = items2;
-  const tmp4Result = tmp4(1652);
+  const tmp4Result = tmp4(1655);
   class UserPlaceholderRowTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -96,7 +96,7 @@ const memoResult = react.memo(function UserPlaceholderRow(animate) {
   const obj3 = { style: items4, collapsable: false, children: items5 };
   items4 = [tmp3.row, animatedStyle];
   const obj4 = { style: tmp3.placeholderAvatar };
-  View = flag(1652).View;
+  View = flag(1655).View;
   items5 = [closure_6(View, obj4), ];
   const obj5 = { style: tmp3.rowInner, children: closure_6(View, obj6) };
   obj6 = { style: tmp3.rowHeaderWrapper, children: closure_6(View, obj7) };

@@ -1,16 +1,16 @@
-// Module ID: 20094
-// Function ID: 20095
+// Module ID: 20254
+// Function ID: 20255
 // Name: NewMemberActionsCompletedModal
-// Dependencies: [19, 17, 21, 5243, 575, 1652, 5485, 6785, 7018, 5866, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1655, 5548, 6848, 7081, 5929, 1113, 2]
 // Exports: default
 
-// Module 20094 (NewMemberActionsCompletedModal)
+// Module 20254 (NewMemberActionsCompletedModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1652 from "module_1652" /* 1652 */;
+import _modDef1655 from "module_1655" /* 1655 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -43,17 +43,17 @@ export default function NewMemberActionsCompleted(arg0) {
   let sharedValue;
   ({ initialPercent, numActions } = arg0);
   const tmp = closure_7();
-  let obj = sharedValue(1652);
+  let obj = sharedValue(1655);
   sharedValue = obj.useSharedValue(initialPercent);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     const result = sharedValue.set(1);
   }, items);
   const items1 = [closure_8, , , ];
-  const useAnimatedStyle = sharedValue(1652).useAnimatedStyle;
-  sharedValue(1652);
-  items1[1] = sharedValue(1652).withDelay;
-  items1[2] = sharedValue(5485).withTiming;
+  const useAnimatedStyle = sharedValue(1655).useAnimatedStyle;
+  sharedValue(1655);
+  items1[1] = sharedValue(1655).withDelay;
+  items1[2] = sharedValue(5548).withTiming;
   items1[3] = sharedValue;
   let c0;
   let c1;
@@ -79,10 +79,10 @@ export default function NewMemberActionsCompleted(arg0) {
   }, []);
   const obj3 = { style: tmp.screen, children: items3 };
   const obj4 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: intl.format(sharedValue(1113).t.pGj5u2, { count: numActions }) };
-  const Text = tmp2(5866).Text;
+  const Text = tmp2(5929).Text;
   intl = tmp2(1113).intl;
   items3 = [closure_5(Text, obj4), ];
-  const obj5 = { style: tmp.progressBackground, children: closure_5(_modDef1652.View, obj6) };
+  const obj5 = { style: tmp.progressBackground, children: closure_5(_modDef1655.View, obj6) };
   obj6 = { style: items4 };
   items4 = [tmp.progressForeground, animatedStyle];
   items3[1] = closure_5(View, obj5);

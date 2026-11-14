@@ -1,19 +1,19 @@
-// Module ID: 9447
-// Function ID: 9448
+// Module ID: 9514
+// Function ID: 9515
 // Name: NameplateCardPreview
-// Dependencies: [17, 21, 5243, 575, 38, 2111, 2108, 9440, 1187, 2]
+// Dependencies: [17, 21, 5306, 575, 38, 2114, 2111, 9507, 1187, 2]
 // Exports: default
 
-// Module 9447 (NameplateCardPreview)
+// Module 9514 (NameplateCardPreview)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import utils from "utils" /* 2108 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import NameplateDummyUserPreview6 from "NameplateDummyUserPreview" /* 9440 */;
+import utils from "utils" /* 2111 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
+import NameplateDummyUserPreview6 from "NameplateDummyUserPreview" /* 9507 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

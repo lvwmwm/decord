@@ -1,10 +1,10 @@
-// Module ID: 6150
-// Function ID: 6151
+// Module ID: 6213
+// Function ID: 6214
 // Name: device/DeviceState
-// Dependencies: [5, 3, 1441, 6151, 2]
+// Dependencies: [5, 3, 1444, 6214, 2]
 // Exports: getDeviceState
 
-// Module 6150 (device/DeviceState)
+// Module 6213 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ let obj = function _getDeviceState() {
             fallback = obj5.fallback;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else {
           let DEFAULT_DEVICE_STATE;

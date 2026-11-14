@@ -1,14 +1,14 @@
-// Module ID: 6265
-// Function ID: 6266
+// Module ID: 6328
+// Function ID: 6329
 // Name: AccessibilityView
-// Dependencies: [19, 17, 21, 6266, 1652, 2]
+// Dependencies: [19, 17, 21, 6329, 1655, 2]
 
-// Module 6265 (AccessibilityView)
+// Module 6328 (AccessibilityView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 6266 */;
+import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 6329 */;
 import react from "react" /* 19 */;
-import module_1652 from "module_1652" /* 1652 */;
+import module_1655 from "module_1655" /* 1655 */;
 import size from "module_2" /* 2 */;
 
 class AccessibilityView {
@@ -48,7 +48,7 @@ class AccessibilityView {
 }
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const animatedComponent = module_1652.createAnimatedComponent(AccessibilityView);
+const animatedComponent = module_1655.createAnimatedComponent(AccessibilityView);
 const result = size.fileFinishedImporting("design/components/AccessibilityView/AccessibilityView.native.tsx");
 
 export { AccessibilityView };

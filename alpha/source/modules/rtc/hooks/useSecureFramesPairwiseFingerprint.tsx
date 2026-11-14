@@ -1,15 +1,15 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10633
+// Function ID: 10634
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 19, 502, 6008, 504, 38, 10565, 2]
+// Dependencies: [32, 19, 502, 6071, 504, 38, 10634, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 10564 (useSecureFramesPairwiseFingerprint)
-import SecureFramesBoundPairwiseFingerprint from "SecureFramesBoundPairwiseFingerprint" /* 10565 */;
+// Module 10633 (useSecureFramesPairwiseFingerprint)
+import SecureFramesBoundPairwiseFingerprint from "SecureFramesBoundPairwiseFingerprint" /* 10634 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
 import size from "module_2" /* 2 */;
 
 let react = react_mod;

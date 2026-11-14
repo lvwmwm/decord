@@ -1,25 +1,25 @@
-// Module ID: 16312
-// Function ID: 16313
+// Module ID: 16437
+// Function ID: 16438
 // Name: Menu
-// Dependencies: [32, 19, 17, 1072, 21, 16313, 5243, 575, 1652, 1705, 5257, 1627, 1493, 1377, 5252, 1113, 6268, 5485, 6269, 16314, 16315, 5876, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 16438, 5306, 575, 1655, 1708, 5320, 1630, 1496, 1380, 5315, 1113, 6331, 5548, 6332, 16439, 16440, 5939, 2]
 // Exports: Menu
 
-// Module 16312 (Menu)
+// Module 16437 (Menu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import react_native from "react-native" /* 6268 */;
-import Easing_Easing from "Easing/Easing" /* 16313 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import react_native from "react-native" /* 6331 */;
+import Easing_Easing from "Easing/Easing" /* 16438 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj4 = { position: "absolute", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, width: 220 };
 let closure_10 = createStyles(obj2);
 const context = react.createContext({ menuClose: NOOP, menuDismiss: NOOP });
-let items = [{ code: "(function measureButtonRef_MenuTsx1(ref,setDimensions){let[measure,scheduleOnRN]=this.__closure;const measurements=measure(ref);if(measurements==null)return;scheduleOnRN(setDimensions,measurements);})" }, _mod1652.measure, _mod1705.scheduleOnRN];
+let items = [{ code: "(function measureButtonRef_MenuTsx1(ref,setDimensions){let[measure,scheduleOnRN]=this.__closure;const measurements=measure(ref);if(measurements==null)return;scheduleOnRN(setDimensions,measurements);})" }, _mod1655.measure, _mod1708.scheduleOnRN];
 let c0;
 let c1;
 [tmp6, tmp7, tmp8] = items;
@@ -124,7 +124,7 @@ export function Menu(toggleButtonRef) {
   function openMenuCallback() {
     obj = PlatformUtils;
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(5252).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(5315).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp(1113).intl;
       announce(intl.string(intl2.t.ZqK0uI));
@@ -157,7 +157,7 @@ export function Menu(toggleButtonRef) {
     }
     const tmp3 = null != current && null == size2;
     if (tmp3) {
-      obj = _mod1705;
+      obj = _mod1708;
       obj.scheduleOnUI(measureButtonRef, toggleButtonRef, closure_3);
     }
   }, items);
@@ -173,7 +173,7 @@ export function Menu(toggleButtonRef) {
     set = sharedValue.set;
     const withTiming = timing_timing.withTiming;
     timing_timing;
-    items[1] = _mod1705.scheduleOnRN;
+    items[1] = _mod1708.scheduleOnRN;
     items[2] = onClose;
     let c0;
     let c1;
@@ -388,7 +388,7 @@ export function Menu(toggleButtonRef) {
       set = sharedValue.set;
       const withSpring = spring_spring.withSpring;
       spring_spring;
-      items[1] = _mod1705.scheduleOnRN;
+      items[1] = _mod1708.scheduleOnRN;
       items[2] = openMenuCallback;
       let c0;
       let c1;

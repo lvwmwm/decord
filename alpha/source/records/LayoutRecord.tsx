@@ -1,10 +1,10 @@
-// Module ID: 16062
-// Function ID: 16063
+// Module ID: 16183
+// Function ID: 16184
 // Name: LayoutRecord
-// Dependencies: [1405, 2]
+// Dependencies: [1408, 2]
 
-// Module 16062 (LayoutRecord)
-import Record from "Record" /* 1405 */;
+// Module 16183 (LayoutRecord)
+import Record from "Record" /* 1408 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("records/LayoutRecord.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 19478
-// Function ID: 19479
+// Module ID: 19671
+// Function ID: 19672
 // Name: getCannotSwapApplicationText
-// Dependencies: [2186, 5175, 5182, 1113, 7349, 2]
+// Dependencies: [2189, 5238, 5245, 1113, 7413, 2]
 // Exports: default
 
-// Module 19478 (getCannotSwapApplicationText)
-import LocaleStore from "LocaleStore" /* 2186 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
+// Module 19671 (getCannotSwapApplicationText)
+import LocaleStore from "LocaleStore" /* 2189 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

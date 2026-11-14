@@ -1,10 +1,10 @@
-// Module ID: 6955
-// Function ID: 6956
+// Module ID: 7018
+// Function ID: 7019
 // Name: ConjureProjectTypes
 // Dependencies: [2]
-// Exports: isProjectGuildCollaborationEnabled, isProjectPublic, projectSupportsCollaboratorRoles, projectSupportsVisibility, projectUsesAppChannels, usesPreviewApp
+// Exports: conjureProjectServerIds, isProjectGuildCollaborationEnabled, isProjectPublic, projectSupportsCollaboratorRoles, projectSupportsVisibility, projectUsesAppChannels, usesPreviewApp
 
-// Module 6955 (ConjureProjectTypes)
+// Module 7018 (ConjureProjectTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ APP_CHANNEL: 1, VOICE_CHANNEL: 2, PROFILE_WIDGET: 3, AUTOMOD: 4, BOT: 5, APPLICATION_COMMANDS: 6, OVERLAY: 7, ACTIVITY: 8 });
@@ -16,6 +16,7 @@ export const MIN_PROJECT_NAME_LENGTH = 2;
 export const MAX_PROJECT_NAME_LENGTH = 128;
 export const MAX_APP_DESCRIPTION_LENGTH = 400;
 export const MAX_PROJECT_COLLABORATOR_ROLES = 25;
+export const MAX_PROJECT_SERVERS = 10;
 export const ConjureProjectFlags = frozen1;
 export function isProjectGuildCollaborationEnabled(stateFromStores) {
   let num = stateFromStores.flags;
@@ -23,6 +24,21 @@ export function isProjectGuildCollaborationEnabled(stateFromStores) {
     num = 0;
   }
   return num & frozen1.GUILD_COLLABORATION;
+}
+export function conjureProjectServerIds(project) {
+  let guild_ids;
+  if (null != project.guild_ids) {
+    guild_ids = project.guild_ids;
+  } else {
+    if ("guild" === project.install_scope) {
+      if (null != project.guild_id) {
+        const items = [project.guild_id];
+        guild_ids = items;
+      }
+    }
+    guild_ids = [];
+  }
+  return guild_ids;
 }
 export function usesPreviewApp(project) {
   return null == project.preview_application_id || project.preview_application_id !== project.application_id;

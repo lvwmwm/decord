@@ -1,19 +1,23 @@
-// Module ID: 7195
-// Function ID: 7196
+// Module ID: 7258
+// Function ID: 7259
 // Name: OrderActionCreators
-// Dependencies: [5, 1072, 3, 5063, 1282, 5055, 2]
+// Dependencies: [5, 7257, 1072, 3, 5126, 1285, 5118, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7195 (OrderActionCreators)
+// Module 7258 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import BillingError2 from "BillingError" /* 5126 */;
+import OrderConstants from "OrderConstants" /* 7257 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingError_mod from "BillingError" /* 5063 */;
 import size from "module_2" /* 2 */;
 
-let c11, c12;
+const BillingError_mod = BillingError2;
+let c11, c12, closure_10;
 
+let SPENDING_LIMIT_REACHED;
+let SPENDING_LIMIT_WILL_EXCEED;
 let obj = function _signOrder() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let c0;
@@ -69,7 +73,7 @@ let obj = function _signOrder() {
             body = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -91,7 +95,7 @@ let obj = function _signOrder() {
               body.gateway_checkout_context = gateway_checkout_context;
             }
             gateway_checkout_context = 1;
-            const HTTP = closure_130_0(closure_130_1[4]).HTTP;
+            const HTTP = closure_130_0(closure_130_1[5]).HTTP;
             const request = { url: closure_130_3.ORDER_SIGN(c0), body, context: tmp49, rejectWithError: true };
             const post = HTTP.post;
             tmp49 = undefined;
@@ -109,11 +113,11 @@ let obj = function _signOrder() {
         } else if (2 === c5) {
           gateway_checkout_context = 0;
           let closure_7 = closure_3;
-          if (closure_7 instanceof closure_130_0(closure_130_1[4]).HTTPResponseError) {
+          if (closure_7 instanceof closure_130_0(closure_130_1[5]).HTTPResponseError) {
             if (400 === closure_7.status) {
               if (isOrderShape(closure_7.body)) {
                 const self3 = this;
-                throw new closure_130_5(closure_7.body);
+                throw new closure_130_6(closure_7.body);
               }
             }
           }
@@ -202,7 +206,7 @@ obj = function _getOrder() {
             closure_130_4.error("failed to fetch order", obj7);
             const obj8 = { tags: { source: "OrderActionCreators_getOrder" }, extra: obj9 };
             obj9 = { orderId };
-            const obj4 = closure_130_0(closure_130_1[5]);
+            const obj4 = closure_130_0(closure_130_1[6]);
             const result = obj4.captureBillingException(error, obj8);
             c6 = 3;
             return { value: null, done: true };
@@ -420,7 +424,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                       } else {
                         c2 = 2;
                         c3 = 1;
-                        const obj6 = { value: closure_1_8(closure_0), done: false };
+                        const obj6 = { value: closure_1_9(closure_0), done: false };
                         return obj6;
                       }
                     } else if (c3 === 1) {
@@ -441,8 +445,8 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                   }
                 }
               };
-              let closure_2 = closure_136_10;
-              value = closure_136_10[Symbol.iterator]();
+              let closure_2 = closure_136_11;
+              value = closure_136_11[Symbol.iterator]();
               if (value !== undefined) {
                 c9 = 1;
                 c3 = tmp30;
@@ -550,15 +554,34 @@ obj = function _fetchOrderEntitlementsWithRetry() {
   });
   return obj(...arguments);
 };
+const ConstraintReasonCode = OrderConstants.ConstraintReasonCode;
 const Endpoints = Constants.Endpoints;
 let tmp2 = new LoggerDefault("OrderActionCreators");
 let closure_4 = tmp2;
+obj = { [SPENDING_LIMIT_REACHED]: BillingError2.ErrorCodes.BILLING_SPENDING_LIMIT_REACHED, [SPENDING_LIMIT_WILL_EXCEED]: BillingError2.ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED };
+({ SPENDING_LIMIT_REACHED, SPENDING_LIMIT_WILL_EXCEED } = ConstraintReasonCode);
 let BillingError = BillingError_mod;
 class OrderSigningFailedWithConstraintsError extends BillingError {
   constructor(order) {
-    const tmp2 = new tmp("Order signing failed due to unsatisfied constraints", new.target);
-    tmp2.order = order;
-    return tmp2;
+    let tmp;
+    let tmp2;
+    function getConstraintErrorCode(unsatisfied_constraints) {
+      let prop = unsatisfied_constraints.unsatisfied_constraints;
+      if (prop == null) {
+        prop = [];
+      }
+      for (const item10008 of prop) {
+        let tmp2 = closure_1_5[item10008.reason_code];
+        if (null != tmp2) {
+          obj.return();
+          return tmp2;
+        }
+      }
+      return null;
+    }
+    const tmp22 = new tmp2("Order signing failed due to unsatisfied constraints", getConstraintErrorCode(order), new.target, tmp2, tmp);
+    tmp22.order = order;
+    return tmp22;
   }
 }
 BillingError = BillingError_mod;
@@ -568,7 +591,7 @@ class OrderProcessingPendingError extends BillingError {
     return tmp2;
   }
 }
-let closure_10 = [250, 500, 1000, 1500, 2500, 4250];
+let closure_11 = [250, 500, 1000, 1500, 2500, 4250];
 let result = size.fileFinishedImporting("modules/payments/OrderActionCreators.tsx");
 
 export { OrderSigningFailedWithConstraintsError };

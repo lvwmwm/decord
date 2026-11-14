@@ -1,14 +1,14 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8092
+// Function ID: 8093
 // Name: LockIcon
-// Dependencies: [19, 21, 575, 5956, 8001, 2]
+// Dependencies: [19, 21, 575, 6019, 8066, 2]
 // Exports: LockIcon
 
-// Module 8027 (LockIcon)
+// Module 8092 (LockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 8001 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 8066 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

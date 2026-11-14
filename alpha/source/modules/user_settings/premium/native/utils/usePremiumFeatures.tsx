@@ -1,25 +1,25 @@
-// Module ID: 10890
-// Function ID: 10891
+// Module ID: 10959
+// Function ID: 10960
 // Name: usePremiumFeatures
-// Dependencies: [19, 1387, 2184, 1398, 5955, 1113, 3465, 10664, 2171, 10340, 9491, 9368, 7370, 9914, 10891, 575, 2]
+// Dependencies: [19, 1390, 2187, 1401, 6018, 1113, 3513, 10733, 2174, 10409, 9558, 9436, 7434, 9981, 10960, 575, 2]
 // Exports: default
 
-// Module 10890 (usePremiumFeatures)
+// Module 10959 (usePremiumFeatures)
 import intl11 from "intl" /* 1113 */;
-import user from "user" /* 1398 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2184 */;
-import _modDef3465 from "module_3465" /* 3465 */;
-import FriendsIcon from "FriendsIcon" /* 5955 */;
-import ScreenStreamIcon from "ScreenStreamIcon" /* 7370 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9368 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 9491 */;
-import BoostGemIcon from "BoostGemIcon" /* 9914 */;
-import ReactionIcon from "ReactionIcon" /* 10340 */;
-import UploadIcon from "UploadIcon" /* 10664 */;
-import UserSquareIcon from "UserSquareIcon" /* 10891 */;
+import user from "user" /* 1401 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
+import _modDef3513 from "module_3513" /* 3513 */;
+import FriendsIcon from "FriendsIcon" /* 6018 */;
+import ScreenStreamIcon from "ScreenStreamIcon" /* 7434 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9436 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 9558 */;
+import BoostGemIcon from "BoostGemIcon" /* 9981 */;
+import ReactionIcon from "ReactionIcon" /* 10409 */;
+import UploadIcon from "UploadIcon" /* 10733 */;
+import UserSquareIcon from "UserSquareIcon" /* 10960 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ export default function usePremiumFeatures(arg0) {
     let obj2;
     let obj5;
     let obj6;
-    let obj = { IconComponent: FriendsIcon.FriendsIcon, label: intl.formatToPlainString(_modDef3465.gsE005, obj2), premiumTypes: new Set(items), premiumGroupRoles: items1, availableOnFractional: false };
+    let obj = { IconComponent: FriendsIcon.FriendsIcon, label: intl.formatToPlainString(_modDef3513.gsE005, obj2), premiumTypes: new Set(items), premiumGroupRoles: items1, availableOnFractional: false };
     intl = intl11.intl;
     items = [hasOwnProperty.TIER_2];
     items1 = [];
@@ -88,7 +88,7 @@ export default function usePremiumFeatures(arg0) {
     new Set(items);
     items1[0] = user.PremiumSubscriptionGroupRole.PRIMARY;
     const items2 = [obj, , , , , , , , , ];
-    const obj3 = { IconComponent: FriendsIcon.FriendsIcon, label: intl2.string(_modDef3465["G6K/+s"]), premiumTypes: new Set(items3), premiumGroupRoles: items4, availableOnFractional: false };
+    const obj3 = { IconComponent: FriendsIcon.FriendsIcon, label: intl2.string(_modDef3513["G6K/+s"]), premiumTypes: new Set(items3), premiumGroupRoles: items4, availableOnFractional: false };
     intl2 = intl11.intl;
     items3 = [hasOwnProperty.TIER_2];
     items4 = [];
@@ -143,7 +143,7 @@ export default function usePremiumFeatures(arg0) {
     items14[1] = user.PremiumSubscriptionGroupRole.PRIMARY;
     items14[2] = user.PremiumSubscriptionGroupRole.MEMBER;
     items2[6] = obj10;
-    const obj11 = { IconComponent: BoostGemIcon.BoostGemIcon, label: intl8.formatToPlainString(_modDef3465.HVCRVf, obj12), premiumTypes: new Set(items15), premiumGroupRoles: items16, availableOnFractional: false };
+    const obj11 = { IconComponent: BoostGemIcon.BoostGemIcon, label: intl8.formatToPlainString(_modDef3513.HVCRVf, obj12), premiumTypes: new Set(items15), premiumGroupRoles: items16, availableOnFractional: false };
     intl8 = intl11.intl;
     items15 = [hasOwnProperty.TIER_2];
     items16 = [];

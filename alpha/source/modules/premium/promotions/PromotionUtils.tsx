@@ -1,22 +1,22 @@
-// Module ID: 9945
-// Function ID: 9946
+// Module ID: 10012
+// Function ID: 10013
 // Name: PromotionUtils
-// Dependencies: [5, 1231, 9557, 9556, 1387, 1072, 5250, 1282, 1377, 1252, 1403, 5076, 11, 5077, 9602, 2]
+// Dependencies: [5, 1231, 9624, 9623, 1390, 1072, 5313, 1285, 1380, 1256, 1406, 5139, 11, 5140, 9669, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 9945 (PromotionUtils)
+// Module 10012 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import dismissible_content from "dismissible_content" /* 5076 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5077 */;
-import shared from "shared" /* 5250 */;
-import promotions_constants from "promotions/constants" /* 9602 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
+import shared from "shared" /* 5313 */;
+import promotions_constants from "promotions/constants" /* 9669 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9557 */;
-import PromotionsStore from "PromotionsStore" /* 9556 */;
+import PromotionRecord from "PromotionRecord" /* 9624 */;
+import PromotionsStore from "PromotionsStore" /* 9623 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_4, location_stack, name, partner, promotion_id, set;
 let c10;
 let c9;
 let metroImportAll;
-const f98224 = (startDate, startDate2) => {
+const f99428 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -83,7 +83,7 @@ let obj = function _claimOutboundPromotion() {
               ANDROID = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -221,7 +221,7 @@ export function getNextUnseenOutboundPromotionId() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f98224)[0].id;
+    id = found1.sort(f99428)[0].id;
   }
   return id;
 }
@@ -262,7 +262,7 @@ export function shouldShowOutboundPromotionNotice() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f98224)[0].id;
+    id = found1.sort(f99428)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

@@ -1,12 +1,12 @@
-// Module ID: 8739
-// Function ID: 8740
+// Module ID: 8806
+// Function ID: 8807
 // Name: AdDecisionUtils
-// Dependencies: [1089, 5282, 2]
-// Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredPlayable, getDeliveredQuestId, questAdDecisionFromAdDecision, resolveResponseTtl
+// Dependencies: [1089, 5345, 2]
+// Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredPlayable, getDeliveredQuestId, isAdDecisionValid, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 8739 (AdDecisionUtils)
+// Module 8806 (AdDecisionUtils)
 import DurationsDefault from "Durations" /* 1089 */;
-import AdCreativeType from "AdCreativeType" /* 5282 */;
+import AdCreativeType from "AdCreativeType" /* 5345 */;
 import size from "module_2" /* 2 */;
 
 const result = 6 * DurationsDefault.Millis.HOUR;
@@ -62,6 +62,14 @@ export function getDeliveredPlayable(creative) {
     playable = creative.playable;
   }
   return playable;
+}
+export function isAdDecisionValid(stateFromStores) {
+  let timestamp = arg1;
+  if (arg1 === undefined) {
+    const _Date = Date;
+    timestamp = Date.now();
+  }
+  return null != stateFromStores && stateFromStores.fetchedAt + stateFromStores.ttlMillis >= timestamp;
 }
 export function resolveResponseTtl(responseTtlSeconds) {
   if (null == responseTtlSeconds) {

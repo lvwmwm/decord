@@ -1,46 +1,227 @@
 // Module ID: 1868
 // Function ID: 1869
-// Dependencies: [1869, 1827, 1705]
-// Exports: updateLayoutAnimations
+// Dependencies: [41, 42, 90, 91, 1869, 1707, 1828, 1866]
 
 // Module 1868
-import _mod1705 from "module_1705" /* 1705 */;
-import startMapper from "startMapper" /* 1827 */;
-import animationsManagerNative from "animationsManagerNative" /* 1869 */;
+import findHostInstance from "findHostInstance" /* 1707 */;
+import flattenArray from "flattenArray" /* 1828 */;
+import react_native from "react-native" /* 1869 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _classPrivateFieldBase from "_classPrivateFieldBase" /* 90 */;
+import _classPrivateFieldKey from "_classPrivateFieldKey" /* 91 */;
 
-let closure_0 = [];
-let closure_1 = [];
-let update = {
-  update(arg0, arg1) {
-    const obj = animationsManagerNative;
-    const result = obj.initializeLayoutAnimationsManager();
-    const tmp2 = arg1;
-    if (tmp2) {
-      closure_1.push(arg0);
-    } else {
-      closure_0.push(arg0);
+let closure_4 = _classPrivateFieldKey("managedComponent");
+let closure_5 = _classPrivateFieldKey("componentOptions");
+let closure_6 = _classPrivateFieldKey("eventViewTag");
+class NativeEventsManager {
+  constructor(self, _options) {
+    _classCallCheck(this, NativeEventsManager);
+    Object.defineProperty(this, closure_4, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_5, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_6, { writable: true, value: -1 });
+    _classPrivateFieldBase(this, closure_4)[closure_4] = self;
+    _classPrivateFieldBase(this, closure_5)[closure_5] = _options;
+    const tmp5 = _classPrivateFieldBase(this, closure_6);
+    tmp5[closure_6] = this.getEventViewTag();
+  }
+}
+const entry = {
+  key: "attachEvents",
+  value: function attachEvents() {
+    const props = _classPrivateFieldBase(this, closure_4)[closure_4].props;
+    for (const key10010 in props) {
+      let tmp6 = props[key10010];
+      let tmp7 = require;
+      let obj = flattenArray;
+      let hasItem = obj.has("workletEventHandler", tmp6) && tmp6.workletEventHandler instanceof tmp7(1866).WorkletEventHandler;
+      if (!hasItem) {
+        continue;
+      } else {
+        let workletEventHandler = tmp6.workletEventHandler;
+        let registerForEventsResult = workletEventHandler.registerForEvents(_classPrivateFieldBase(this, closure_6)[closure_6], key10010);
+        continue;
+      }
+      continue;
     }
-    if (closure_0.length + closure_1.length === 1) {
-      const self = this;
-      this.flush();
+  }
+};
+const items = [
+  entry,
+  {
+    key: "detachEvents",
+    value: function detachEvents() {
+      const props = _classPrivateFieldBase(this, closure_4)[closure_4].props;
+      for (const key10010 in props) {
+        let tmp6 = props[key10010];
+        let tmp7 = require;
+        let obj = flattenArray;
+        let hasItem = obj.has("workletEventHandler", tmp6) && tmp6.workletEventHandler instanceof tmp7(1866).WorkletEventHandler;
+        if (!hasItem) {
+          continue;
+        } else {
+          let workletEventHandler = tmp6.workletEventHandler;
+          let unregisterFromEventsResult = workletEventHandler.unregisterFromEvents(_classPrivateFieldBase(this, closure_6)[closure_6]);
+          continue;
+        }
+        continue;
+      }
     }
   },
-  flush() {
-    const obj = startMapper;
-    const result = obj.configureLayoutAnimationBatch(closure_0.concat(closure_1));
-    closure_0.length = 0;
-    closure_1.length = 0;
+  {
+    key: "updateEvents",
+    value: function updateEvents(current) {
+      const self = this;
+      const eventViewTag = this.getEventViewTag(true);
+      if (_classPrivateFieldBase(this, closure_6)[closure_6] !== eventViewTag) {
+        for (const key10071 in current) {
+          let tmp37 = current[key10071];
+          let tmp38 = require;
+          let obj4 = flattenArray;
+          let hasItem = obj4.has("workletEventHandler", tmp37) && tmp37.workletEventHandler instanceof tmp38(1866).WorkletEventHandler;
+          if (!hasItem) {
+            continue;
+          } else {
+            let workletEventHandler4 = tmp37.workletEventHandler;
+            let unregisterFromEventsResult = workletEventHandler4.unregisterFromEvents(_classPrivateFieldBase(self, closure_6)[closure_6]);
+            continue;
+          }
+          continue;
+        }
+        _classPrivateFieldBase(self, closure_6)[closure_6] = eventViewTag;
+        self.attachEvents();
+      } else {
+        for (const key10010 in current) {
+          let tmp29 = current[key10010];
+          let tmp30 = require;
+          let obj2 = flattenArray;
+          let hasItem1 = obj2.has("workletEventHandler", tmp29) && tmp29.workletEventHandler instanceof tmp30(1866).WorkletEventHandler;
+          if (!hasItem1) {
+            continue;
+          } else {
+            let workletEventHandler = tmp29.workletEventHandler;
+            let tmp3 = _classPrivateFieldBase;
+            let tmp5 = _classPrivateFieldBase(self, closure_4)[closure_4].props[key10010];
+            if (tmp5) {
+              let tmp30Result = tmp30(1828);
+              let hasItem2 = tmp30Result.has("workletEventHandler", tmp5) && tmp5.workletEventHandler instanceof tmp30(1866).WorkletEventHandler && tmp5.workletEventHandler !== workletEventHandler;
+              if (!hasItem2) {
+                continue;
+              } else {
+                let unregisterFromEventsResult1 = workletEventHandler.unregisterFromEvents(tmp3(self, closure_6)[closure_6]);
+                let workletEventHandler2 = tmp5.workletEventHandler;
+                let registerForEventsResult = workletEventHandler2.registerForEvents(tmp3(self, closure_6)[closure_6]);
+                continue;
+              }
+              continue;
+            } else {
+              let unregisterFromEventsResult2 = workletEventHandler.unregisterFromEvents(tmp3(self, closure_6)[closure_6]);
+              continue;
+            }
+            continue;
+          }
+          continue;
+        }
+        const props = _classPrivateFieldBase(self, closure_4)[closure_4].props;
+        for (const key10054 in props) {
+          let tmp33 = props[key10054];
+          let tmp34 = require;
+          let obj3 = flattenArray;
+          let hasItem3 = obj3.has("workletEventHandler", tmp33) && tmp33.workletEventHandler instanceof tmp34(1866).WorkletEventHandler;
+          if (!hasItem3) {
+            continue;
+          } else {
+            let workletEventHandler3 = tmp33.workletEventHandler;
+            if (current[key10054]) {
+              continue;
+            } else {
+              let registerForEventsResult1 = workletEventHandler3.registerForEvents(_classPrivateFieldBase(self, closure_6)[closure_6]);
+              continue;
+            }
+            continue;
+          }
+          continue;
+        }
+      }
+    }
+  },
+  {
+    key: "getEventViewTag",
+    value: function getEventViewTag(arg0) {
+      let flag = arg0;
+      if (arg0 === undefined) {
+        flag = false;
+      }
+      const self = this;
+      const _componentRef = _classPrivateFieldBase(this, closure_4)[closure_4]._componentRef;
+      let getScrollableNode;
+      if (_componentRef != null) {
+        getScrollableNode = _componentRef.getScrollableNode;
+      }
+      if (getScrollableNode) {
+        const scrollableNode = _componentRef.getScrollableNode();
+        let tmp13 = scrollableNode;
+        if (typeof scrollableNode !== "number") {
+          const obj5 = react_native;
+          let num5 = obj5.findNodeHandle(scrollableNode);
+          if (num5 == null) {
+            num5 = -1;
+          }
+          tmp13 = num5;
+        }
+        return tmp13;
+      } else {
+        let componentViewTag;
+        const tmp5 = _classPrivateFieldBase(self, closure_5)[closure_5];
+        let setNativeProps;
+        if (tmp5 != null) {
+          setNativeProps = tmp5.setNativeProps;
+        }
+        if (setNativeProps) {
+          const obj4 = _classPrivateFieldBase(self, closure_4)[closure_4];
+          componentViewTag = obj4.getComponentViewTag();
+        } else if (flag) {
+          let num2;
+          let __nativeTag;
+          if (_componentRef != null) {
+            __nativeTag = _componentRef.__nativeTag;
+          }
+          if (__nativeTag) {
+            let num4 = _componentRef.__nativeTag;
+            if (num4 == null) {
+              num4 = -1;
+            }
+            num2 = num4;
+          } else {
+            num2 = -1;
+            if (_componentRef) {
+              const obj2 = findHostInstance;
+              const findHostInstanceResult = obj2.findHostInstance(_classPrivateFieldBase(self, closure_4)[closure_4]);
+              let num3;
+              const tmp9 = require;
+              if (findHostInstanceResult != null) {
+                num3 = findHostInstanceResult.__nativeTag;
+              }
+              if (num3 == null) {
+                const tmp9Result = tmp9(1869);
+                num3 = tmp9Result.findNodeHandle(_componentRef);
+              }
+              if (num3 == null) {
+                num3 = -1;
+              }
+              num2 = num3;
+            }
+          }
+          componentViewTag = num2;
+        } else {
+          const obj = _classPrivateFieldBase(self, closure_4)[closure_4];
+          componentViewTag = obj.getComponentViewTag();
+        }
+        return componentViewTag;
+      }
+    }
   }
-};
+];
+const NativeEventsManager_export = _createClass(NativeEventsManager, items);
 
-export const updateLayoutAnimations = (viewTag, type, __initData, arg3, sharedTransitionTag) => {
-  let serializable;
-  const obj = { viewTag, type, config: serializable, sharedTransitionTag };
-  serializable = undefined;
-  update = update.update;
-  if (__initData) {
-    const obj2 = _mod1705;
-    serializable = obj2.createSerializable(__initData);
-  }
-  return update(obj, arg3);
-};
+export { NativeEventsManager_export as NativeEventsManager };

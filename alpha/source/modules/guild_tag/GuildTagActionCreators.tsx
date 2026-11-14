@@ -1,14 +1,14 @@
-// Module ID: 16231
-// Function ID: 16232
+// Module ID: 16353
+// Function ID: 16354
 // Name: GuildTagActionCreators
-// Dependencies: [5, 1385, 1072, 1282, 572, 2]
+// Dependencies: [5, 1388, 1072, 1285, 572, 2]
 // Exports: adoptGuildIdentity
 
-// Module 16231 (GuildTagActionCreators)
+// Module 16353 (GuildTagActionCreators)
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;

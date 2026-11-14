@@ -1,25 +1,25 @@
-// Module ID: 10592
-// Function ID: 10593
+// Module ID: 10661
+// Function ID: 10662
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2186, 502, 5155, 10593, 21, 5243, 575, 504, 8776, 11, 5106, 10323, 10322, 5952, 5489, 7168, 7654, 5866, 7364, 10321, 1113, 2]
+// Dependencies: [19, 17, 2189, 502, 5218, 10662, 21, 5306, 575, 504, 8843, 11, 5169, 10392, 10391, 6015, 5552, 7231, 7720, 5929, 7428, 10390, 1113, 2]
 // Exports: default
 
-// Module 10592 (GuildProfileHeader)
+// Module 10661 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5106 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
-import transitionToGuild from "transitionToGuild" /* 7168 */;
-import BadgeCategory from "BadgeCategory" /* 10322 */;
-import GuildTraits from "GuildTraits" /* 10323 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 10593 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import transitionToGuild from "transitionToGuild" /* 7231 */;
+import BadgeCategory from "BadgeCategory" /* 10391 */;
+import GuildTraits from "GuildTraits" /* 10392 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 10662 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;

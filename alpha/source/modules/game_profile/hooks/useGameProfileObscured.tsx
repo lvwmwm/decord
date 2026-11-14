@@ -1,13 +1,13 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9380
+// Function ID: 9381
 // Name: useGameProfileObscured
-// Dependencies: [1385, 5899, 504, 2]
+// Dependencies: [1388, 5962, 504, 2]
 // Exports: default, isGameProfileObscured
 
-// Module 9313 (useGameProfileObscured)
+// Module 9380 (useGameProfileObscured)
 import get_initialized from "get initialized" /* 504 */;
-import utils from "utils" /* 5899 */;
-import UserStore from "UserStore" /* 1385 */;
+import utils from "utils" /* 5962 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileObscured.tsx");

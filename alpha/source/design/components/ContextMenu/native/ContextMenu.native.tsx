@@ -1,21 +1,21 @@
-// Module ID: 9081
-// Function ID: 9082
+// Module ID: 9148
+// Function ID: 9149
 // Name: ContextMenu
-// Dependencies: [19, 21, 1377, 1652, 1493, 9082, 5881, 9083, 6268, 9084, 5250, 1113, 9085, 1705, 5535, 5491, 5505, 2]
+// Dependencies: [19, 21, 1380, 1655, 1496, 9149, 5944, 9150, 6331, 9151, 5313, 1113, 9152, 1708, 5598, 5554, 5568, 2]
 // Exports: ContextMenu
 
-// Module 9081 (ContextMenu)
+// Module 9148 (ContextMenu)
 import intl2 from "intl" /* 1113 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import HapticUtils from "HapticUtils" /* 5491 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5505 */;
-import react_native from "react-native" /* 6268 */;
-import ContextMenuState from "ContextMenuState" /* 9082 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9083 */;
-import UID from "UID" /* 9084 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import HapticUtils from "HapticUtils" /* 5554 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
+import react_native from "react-native" /* 6331 */;
+import ContextMenuState from "ContextMenuState" /* 9149 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9150 */;
+import UID from "UID" /* 9151 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined, _undefined2, _undefined3;
@@ -204,7 +204,7 @@ export function ContextMenu(triggerOnLongPress) {
     obj3.showContextMenu(size);
     const obj4 = PlatformUtils;
     if (obj4.isAndroid()) {
-      const AccessibilityAnnouncer = tmp3(5250).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp3(5313).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp3(1113).intl;
       announce(intl.string(intl2.t.ZqK0uI));
@@ -481,7 +481,7 @@ export function ContextMenu(triggerOnLongPress) {
     let tmp7;
     items = [closure_10, , , ];
     items[1] = contextMenuState;
-    items[2] = _mod1705.scheduleOnRN;
+    items[2] = _mod1708.scheduleOnRN;
     items[3] = callback;
     let c0;
     let c1;
@@ -497,7 +497,7 @@ export function ContextMenu(triggerOnLongPress) {
     onPanGestureEnd.__initData = tmp4;
     const tmp8 = flag;
     if (tmp8) {
-      const Gesture2 = tmp2(5535).Gesture;
+      const Gesture2 = tmp2(5598).Gesture;
       const PanResult = Gesture2.Pan();
       const items2 = [closure_11, , ];
       const onUpdate2 = PanResult.enabled(flag5).onUpdate;
@@ -519,14 +519,14 @@ export function ContextMenu(triggerOnLongPress) {
       ContextMenuNativeTsx5.__initData = tmp36;
       const onUpdate2Result = onUpdate2(ContextMenuNativeTsx5);
       const onEndResult = onUpdate2Result.onEnd(onPanGestureEnd);
-      const Gesture3 = tmp2(5535).Gesture;
+      const Gesture3 = tmp2(5598).Gesture;
       const LongPressResult = Gesture3.LongPress();
       const enabledResult1 = LongPressResult.enabled(tmp32);
       const minDurationResult = enabledResult1.minDuration(ContextMenuConstants.CONTEXT_MENU_LONG_PRESS_DURATION_MS);
       const result = minDurationResult.shouldCancelWhenOutside(false);
       const items4 = [closure_12, , , , ];
       const onStart = result.onStart;
-      items4[1] = _mod1705.scheduleOnRN;
+      items4[1] = _mod1708.scheduleOnRN;
       items4[2] = HapticUtils.triggerHapticFeedback;
       items4[3] = ContextMenuConstants.CONTEXT_MENU_OPEN_HAPTIC;
       items4[4] = callback3;
@@ -546,11 +546,11 @@ export function ContextMenu(triggerOnLongPress) {
       ContextMenuNativeTsx6.__workletHash = 14138010151587;
       ContextMenuNativeTsx6.__initData = tmp44;
       const onStartResult = onStart(ContextMenuNativeTsx6);
-      const Gesture4 = tmp2(5535).Gesture;
+      const Gesture4 = tmp2(5598).Gesture;
       return Gesture4.Simultaneous(onStartResult, onEndResult);
     } else {
       let onStartResult1;
-      const Gesture = tmp2(5535).Gesture;
+      const Gesture = tmp2(5598).Gesture;
       if (flag2) {
         const items6 = [closure_13, callback3];
         c0 = undefined;
@@ -576,7 +576,7 @@ export function ContextMenu(triggerOnLongPress) {
         const items8 = [closure_14, , , , ];
         const onBegin = PanResult1.enabled(flag5).onBegin;
         PanResult1.enabled(flag5);
-        items8[1] = _mod1705.scheduleOnRN;
+        items8[1] = _mod1708.scheduleOnRN;
         items8[2] = HapticUtils.triggerHapticFeedback;
         items8[3] = ContextMenuConstants.CONTEXT_MENU_OPEN_HAPTIC;
         class ContextMenuNativeTsx7 {
@@ -653,7 +653,7 @@ export function ContextMenu(triggerOnLongPress) {
       isAndroidResult = tmpResult.getIsScreenReaderEnabled();
     }
     if (isAndroidResult) {
-      const tmpResult2 = _mod1705;
+      const tmpResult2 = _mod1708;
       tmpResult2.scheduleOnUI(callback3);
     }
   }, items15);

@@ -1,18 +1,18 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 13417
+// Function ID: 13418
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 1187, 2116, 5866, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 1187, 2119, 5929, 1113, 2]
 // Exports: default
 
-// Module 13312 (ActivityShelfBadge)
+// Module 13417 (ActivityShelfBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import Server from "Server" /* 2116 */;
+import Server from "Server" /* 2119 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import native_mod from "native" /* 1187 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ export default function ActivityShelfBadge(arg0) {
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
     ({ variant: "body-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl.string(intl3.t.y2b7CA) });
-    const Text = tmp2(5866).Text;
+    const Text = tmp2(5929).Text;
     intl = tmp2(1113).intl;
     tmp6 = <View style={items}>{null}</View>;
   } else {
@@ -57,7 +57,7 @@ export default function ActivityShelfBadge(arg0) {
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
       ({ variant: "body-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl2.string(intl3.t["/qdhkk"]) });
-      const Text2 = tmp2(5866).Text;
+      const Text2 = tmp2(5929).Text;
       intl2 = tmp2(1113).intl;
       tmp6 = <View style={items1}>{null}</View>;
     }

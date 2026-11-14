@@ -1,15 +1,15 @@
-// Module ID: 7893
-// Function ID: 7894
+// Module ID: 7959
+// Function ID: 7960
 // Name: RoleIcon
-// Dependencies: [19, 21, 1377, 5957, 5866, 2]
+// Dependencies: [19, 21, 1380, 6020, 5929, 2]
 // Exports: default
 
-// Module 7893 (RoleIcon)
+// Module 7959 (RoleIcon)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import FastImageDefault from "FastImage" /* 5957 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import FastImageDefault from "FastImage" /* 6020 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -29,7 +29,7 @@ export default function RoleIcon(arg0) {
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "channel", textAlign: false, width: size, marginBottom: false };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "channelId", textAlign: 994646469932053700000000000000000000000000000000000000000000000000000000000000000000000, width: size, marginBottom: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010747711006347429 };
   if (null != src) {
     const obj3 = { uri: src };
     tmp = jsx(FastImageDefault, { resizeMode: "contain", source: obj3, style: size1 });

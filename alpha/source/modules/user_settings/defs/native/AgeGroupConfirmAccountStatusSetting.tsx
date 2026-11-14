@@ -1,12 +1,12 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 17260
+// Function ID: 17261
 // Name: AgeGroupConfirmAccountStatusSetting
-// Dependencies: [9135, 12311, 17132, 2]
+// Dependencies: [9202, 12406, 17255, 2]
 
-// Module 17137 (AgeGroupConfirmAccountStatusSetting)
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 17132 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+// Module 17260 (AgeGroupConfirmAccountStatusSetting)
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 17255 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

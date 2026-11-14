@@ -1,41 +1,49 @@
-// Module ID: 14180
-// Function ID: 14181
+// Module ID: 14255
+// Function ID: 14256
 // Name: CheckpointFlows
-// Dependencies: [6682, 6684, 14181, 14182, 2]
-// Exports: getCheckpointFlow, getCheckpointReplayRoute, getCheckpointRoutes
+// Dependencies: [6745, 6747, 14256, 14257, 2]
+// Exports: getCheckpointFlow, getCheckpointReplayRoute, getCheckpointRoutes, hasCheckpointSummaryRoute
 
-// Module 14180 (CheckpointFlows)
-import CheckpointNavigation from "CheckpointNavigation" /* 6682 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6684 */;
+// Module 14255 (CheckpointFlows)
+import CheckpointNavigation from "CheckpointNavigation" /* 6745 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6747 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-function getAdjacentCheckpointRoute(isCharacterCreatorEnabled) {
-  let INTRODUCTION;
+function getAdjacentCheckpointRoute(arg0) {
+  let c0;
+  let c1;
   let currentRoute;
   let direction;
   let flow;
+  let isCharacterCreatorEnabled;
   let prop;
-  let flag;
-  ({ stats: require, flow, currentRoute, direction } = isCharacterCreatorEnabled);
-  if (flag === undefined) {
-    flag = true;
+  let tmp5;
+  ({ currentRoute, direction } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ currentRoute: 0, direction: 0 }));
+  _require = undefined;
+  dependencyMap = undefined;
+  isCharacterCreatorEnabled = undefined;
+  ({ stats: c0, character: c1, isCharacterCreatorEnabled, flow } = merged);
+  if (isCharacterCreatorEnabled === undefined) {
+    isCharacterCreatorEnabled = true;
   }
-  const tmp = require;
   if (flow === require("CheckpointNavigation").CheckpointFlow.SHARED_DATA) {
-    prop = tmp(tmp2[2]).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp2(14256).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(tmp2[3]).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp2(14257).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   const found = prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
       return false;
     } else if (item === CheckpointNavigation.CheckpointRoute.CHARACTER_UNAVAILABLE) {
-      return !flag;
+      return !isCharacterCreatorEnabled;
     } else {
-      if (!flag) {
-        let result = item === tmp(6682).CheckpointRoute.INTRODUCTION;
+      let flag2 = isCharacterCreatorEnabled;
+      if (!flag2) {
+        let result = item === tmp(6745).CheckpointRoute.INTRODUCTION;
         if (!result) {
           const tmpResult = CheckpointNavigation;
           result = tmpResult.isCheckpointCustomizationRoute(item);
@@ -44,36 +52,46 @@ function getAdjacentCheckpointRoute(isCharacterCreatorEnabled) {
           return false;
         }
       }
-      if (!flag) {
-        if (item === CheckpointNavigation.CheckpointRoute.SUMMARY) {
-          if (null === require) {
-            return false;
-          }
+      if (item === CheckpointNavigation.CheckpointRoute.SUMMARY) {
+        const tmp12 = c0;
+        const tmp13 = c1;
+        if (flag2 === undefined) {
+          flag2 = true;
         }
-      }
-      if (null != obj[item]) {
-        const tmp13 = null != require && obj[item](require);
-        return tmp13;
-      } else {
-        let tmp11 = null == tmp10;
-        if (!tmp11) {
-          tmp11 = undefined === require || obj2[item](require);
-          undefined === require || obj2[item](require);
+        if (!flag2) {
+          flag2 = null != tmp13;
         }
+        if (!flag2) {
+          flag2 = null !== tmp12;
+        }
+        return flag2;
+      } else if (null != obj[item]) {
+        const tmp11 = null != c0 && obj[item](c0);
         return tmp11;
+      } else {
+        let tmp9 = null == tmp8;
+        if (!tmp9) {
+          tmp9 = undefined === c0 || obj2[item](c0);
+          undefined === c0 || obj2[item](c0);
+        }
+        return tmp9;
       }
     }
   });
   const index = found.indexOf(currentRoute);
   if (-1 === index) {
-    INTRODUCTION = tmp(tmp2[0]).CheckpointRoute.INTRODUCTION;
+    let first = found[0];
+    if (first == null) {
+      first = null;
+    }
+    tmp5 = first;
   } else {
-    INTRODUCTION = found[index + direction];
-    if (INTRODUCTION == null) {
-      INTRODUCTION = null;
+    tmp5 = found[index + direction];
+    if (tmp5 == null) {
+      tmp5 = null;
     }
   }
-  return INTRODUCTION;
+  return tmp5;
 }
 let obj = {
   [CheckpointNavigation.CheckpointRoute.VOICE_INTRO]: (voice) => {
@@ -109,27 +127,45 @@ export function getCheckpointFlow(flag) {
   const CheckpointFlow = CheckpointNavigation.CheckpointFlow;
   return flag ? CheckpointFlow.SHARED_DATA : CheckpointFlow.NO_SHARED_DATA;
 }
+export function hasCheckpointSummaryRoute(isCharacterCreatorEnabled) {
+  let character;
+  let stats;
+  let flag = isCharacterCreatorEnabled.isCharacterCreatorEnabled;
+  ({ stats, character } = isCharacterCreatorEnabled);
+  if (flag === undefined) {
+    flag = true;
+  }
+  if (!flag) {
+    flag = null != character;
+  }
+  if (!flag) {
+    flag = null !== stats;
+  }
+  return flag;
+}
 export function getCheckpointRoutes(flow) {
   let isCharacterCreatorEnabled;
   let prop;
-  ({ stats: require, isCharacterCreatorEnabled } = flow);
+  let require;
+  ({ stats: require, character: dependencyMap, isCharacterCreatorEnabled } = flow);
   flow = flow.flow;
   if (isCharacterCreatorEnabled === undefined) {
     isCharacterCreatorEnabled = true;
   }
-  if (flow === require("CheckpointNavigation").CheckpointFlow.SHARED_DATA) {
-    prop = tmp(tmp2[2]).CHECKPOINT_SHARED_DATA_FLOW;
+  if (flow === CheckpointNavigation.CheckpointFlow.SHARED_DATA) {
+    prop = tmp(14256).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(tmp2[3]).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(14257).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   return prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
       return false;
     } else if (item === CheckpointNavigation.CheckpointRoute.CHARACTER_UNAVAILABLE) {
-      return !flag;
+      return !isCharacterCreatorEnabled;
     } else {
-      if (!flag) {
-        let result = item === tmp(6682).CheckpointRoute.INTRODUCTION;
+      let flag2 = isCharacterCreatorEnabled;
+      if (!flag2) {
+        let result = item === tmp(6745).CheckpointRoute.INTRODUCTION;
         if (!result) {
           const tmpResult = CheckpointNavigation;
           result = tmpResult.isCheckpointCustomizationRoute(item);
@@ -138,34 +174,48 @@ export function getCheckpointRoutes(flow) {
           return false;
         }
       }
-      if (!flag) {
-        if (item === CheckpointNavigation.CheckpointRoute.SUMMARY) {
-          if (null === require) {
-            return false;
-          }
+      if (item === CheckpointNavigation.CheckpointRoute.SUMMARY) {
+        const tmp12 = c0;
+        const tmp13 = c1;
+        if (flag2 === undefined) {
+          flag2 = true;
         }
-      }
-      if (null != obj[item]) {
-        const tmp13 = null != require && obj[item](require);
-        return tmp13;
-      } else {
-        let tmp11 = null == tmp10;
-        if (!tmp11) {
-          tmp11 = undefined === require || obj2[item](require);
-          undefined === require || obj2[item](require);
+        if (!flag2) {
+          flag2 = null != tmp13;
         }
+        if (!flag2) {
+          flag2 = null !== tmp12;
+        }
+        return flag2;
+      } else if (null != obj[item]) {
+        const tmp11 = null != c0 && obj[item](c0);
         return tmp11;
+      } else {
+        let tmp9 = null == tmp8;
+        if (!tmp9) {
+          tmp9 = undefined === c0 || obj2[item](c0);
+          undefined === c0 || obj2[item](c0);
+        }
+        return tmp9;
       }
     }
   });
 }
 export { getAdjacentCheckpointRoute };
-export function getCheckpointReplayRoute(arg0) {
+export function getCheckpointReplayRoute(isCharacterCreatorEnabled) {
+  isCharacterCreatorEnabled = isCharacterCreatorEnabled.isCharacterCreatorEnabled;
+  if (isCharacterCreatorEnabled != null) {
+    let CHARACTER_UNAVAILABLE;
+    if (!isCharacterCreatorEnabled) {
+      CHARACTER_UNAVAILABLE = CheckpointNavigation.CheckpointRoute.CHARACTER_UNAVAILABLE;
+    }
+    return CHARACTER_UNAVAILABLE;
+  }
   obj = { currentRoute: CheckpointNavigation.CheckpointRoute.INTRODUCTION, direction: 1 };
-  const merged = Object.assign(arg0);
+  const merged = Object.assign(isCharacterCreatorEnabled);
   let INTRODUCTION = getAdjacentCheckpointRoute(obj);
   if (INTRODUCTION == null) {
     INTRODUCTION = CheckpointNavigation.CheckpointRoute.INTRODUCTION;
   }
-  return INTRODUCTION;
+  CHARACTER_UNAVAILABLE = INTRODUCTION;
 }

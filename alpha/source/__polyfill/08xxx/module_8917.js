@@ -1,82 +1,85 @@
 // Module ID: 8917
 // Function ID: 8918
-// Dependencies: [8888]
+// Dependencies: [8910, 8911]
+// Exports: isBLEND, isDOC, isELF, isEXE, isINDD, isMACHO, isORC, isPARQUET, isPCAP, isPDF, isPS, isRTF, isSQLITE, isSTL, isTTF
 
 // Module 8917
-import _modDef8888 from "module_8888" /* 8888 */;
+import _mod8910 from "module_8910" /* 8910 */;
+import _mod8911 from "module_8911" /* 8911 */;
 
 
-export default {
-  read(byteLength, sum) {
-    let str6;
-    let str7;
-    let tmp11;
-    let tmp16;
-    let tmp20;
-    let tmp24;
-    let tmp28;
-    let tmp6;
-    let tmp;
-    if (sum + 4 <= byteLength.byteLength) {
-      const obj = _modDef8888;
-      const longAt = obj.getLongAt(byteLength, sum);
-      const _HermesInternal = HermesInternal;
-      tmp = { value: longAt, description: "" + longAt + "px" };
-      const obj2 = { value: longAt, description: "" + longAt + "px" };
-    }
-    const obj3 = { "Image Width": tmp, "Image Height": tmp6, "Bit Depth": tmp11, "Color Type": tmp16, Compression: tmp20, Filter: tmp24, Interlace: tmp28 };
-    tmp6 = undefined;
-    if (sum + 4 + 4 <= byteLength.byteLength) {
-      const obj4 = _modDef8888;
-      const longAt1 = obj4.getLongAt(byteLength, sum + 4);
-      const _HermesInternal2 = HermesInternal;
-      tmp6 = { value: longAt1, description: "" + longAt1 + "px" };
-      const obj5 = { value: longAt1, description: "" + longAt1 + "px" };
-    }
-    tmp11 = undefined;
-    if (sum + 8 + 1 <= byteLength.byteLength) {
-      const obj6 = _modDef8888;
-      const byteAt = obj6.getByteAt(byteLength, sum + 8);
-      const _HermesInternal3 = HermesInternal;
-      tmp11 = { value: byteAt, description: "" + byteAt };
-      const obj7 = { value: byteAt, description: "" + byteAt };
-    }
-    tmp16 = undefined;
-    if (sum + 9 + 1 <= byteLength.byteLength) {
-      const obj8 = _modDef8888;
-      const byteAt1 = obj8.getByteAt(byteLength, sum + 9);
-      tmp16 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
-      const obj9 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
-    }
-    tmp20 = undefined;
-    if (sum + 10 + 1 <= byteLength.byteLength) {
-      const obj10 = _modDef8888;
-      const byteAt2 = obj10.getByteAt(byteLength, sum + 10);
-      const obj11 = { value: byteAt2, description: str6 };
-      str6 = "Unknown";
-      if (0 === byteAt2) {
-        str6 = "Deflate/Inflate";
-      }
-      tmp20 = obj11;
-    }
-    tmp24 = undefined;
-    if (sum + 11 + 1 <= byteLength.byteLength) {
-      const obj12 = _modDef8888;
-      const byteAt3 = obj12.getByteAt(byteLength, sum + 11);
-      const obj13 = { value: byteAt3, description: str7 };
-      str7 = "Unknown";
-      if (0 === byteAt3) {
-        str7 = "Adaptive";
-      }
-      tmp24 = obj13;
-    }
-    tmp28 = undefined;
-    if (sum + 12 + 1 <= byteLength.byteLength) {
-      const obj14 = _modDef8888;
-      const byteAt4 = obj14.getByteAt(byteLength, sum + 12);
-      tmp28 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
-      const obj15 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
-    }
-    return obj3;
-  }
-};
+export function isBLEND(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "blend");
+}
+export function isELF(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "elf");
+}
+export function isEXE(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "exe");
+}
+export function isMACHO(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "macho");
+}
+export function isINDD(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "indd");
+}
+export function isORC(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "orc");
+}
+export function isPARQUET(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "parquet");
+}
+export function isPDF(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pdf");
+}
+export function isPS(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ps");
+}
+export function isRTF(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "rtf");
+}
+export function isSQLITE(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "sqlite");
+}
+export function isSTL(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "stl");
+}
+export function isTTF(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ttf");
+}
+export function isDOC(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "doc");
+}
+export function isPCAP(fileChunk) {
+  fileChunk = _mod8910.getFileChunk(fileChunk);
+  const FileTypes = _mod8911.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pcap");
+}

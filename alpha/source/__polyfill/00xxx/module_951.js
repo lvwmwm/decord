@@ -60,7 +60,7 @@ function hookSetter(arg0, arg1, arg2, arg3) {
       set.call(this, arg0);
     }
   };
-  const f82164 = () => {
+  const f83228 = () => {
     let ownPropertyDescriptor;
     const tmp3 = ownPropertyDescriptor || {};
     closure_0 = tmp;
@@ -70,7 +70,7 @@ function hookSetter(arg0, arg1, arg2, arg3) {
     ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
     const _Object2 = window.Object;
     _Object2.defineProperty(closure_0, closure_1, tmp3);
-    return f82164;
+    return f83228;
   };
   let closure_0 = arg0;
   let closure_1 = arg1;
@@ -90,7 +90,7 @@ function hookSetter(arg0, arg1, arg2, arg3) {
     const obj = { set: set2 };
   }
   defineProperty(arg0, arg1, tmp);
-  return f82164;
+  return f83228;
 }
 function patch(arg0, arg1, fn) {
   let obj2;
@@ -124,7 +124,7 @@ function patch(arg0, arg1, fn) {
   }
 }
 function isBlocked(nodeType, arg1, arg2, arg3, arg4) {
-  const f82162 = (parentNode) => {
+  const f83226 = (parentNode) => {
     function elementClassMatchesRegex(classList, test) {
       let diff = tmp - 1;
       if (+classList.classList.length) {
@@ -182,7 +182,7 @@ function isBlocked(nodeType, arg1, arg2, arg3, arg4) {
       let tmp4 = arg3;
       let closure_0 = arg1;
       let closure_1 = arg2;
-      const fn = f82162;
+      const fn = f83226;
       if (arg4) {
         let num2 = -1;
         if (obj) {
@@ -222,7 +222,7 @@ function isBlocked(nodeType, arg1, arg2, arg3, arg4) {
             if (obj) {
               let num14 = -1;
               if (obj.nodeType === obj.ELEMENT_NODE) {
-                const fn2 = f82162;
+                const fn2 = f83226;
                 let num15 = 0;
                 if (!fn2(obj)) {
                   const parentNode2 = obj.parentNode;
@@ -470,17 +470,17 @@ function initCanvasContextObserver(HTMLCanvasElement, arg1, arg2, arg3, arg4) {
     const item = items.forEach((fn) => fn());
   };
 }
-function patchGLPrototype(headers, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
+function patchGLPrototype(exports, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
   function _loop2(item10017) {
     let tmp2;
     let type;
-    headers = item10017;
+    _exports = item10017;
     items = ["isContextLost", "canvas", "drawingBufferWidth", "drawingBufferHeight"];
     if (items.includes(item10017)) {
       return 0;
     } else {
       try {
-        if (typeof headers[item10017] !== "function") {
+        if (typeof _exports[item10017] !== "function") {
           return 0;
         } else {
           items.push(patch(tmp2, item10017, (property) => (function() {
@@ -511,10 +511,11 @@ function patchGLPrototype(headers, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
                 closure_2(this.canvas, obj);
               }
         };
-        items.push(hookSetter(headers, item10017, obj));
+        items.push(hookSetter(_exports, item10017, obj));
       }
     }
   }
+  let _exports = exports;
   let closure_1 = arg1;
   let closure_2 = arg2;
   let closure_3 = arg3;
@@ -522,7 +523,7 @@ function patchGLPrototype(headers, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
   closure_5 = arg5;
   let closure_6 = arg7;
   let items = [];
-  const ownPropertyNames = Object.getOwnPropertyNames(headers);
+  const ownPropertyNames = Object.getOwnPropertyNames(exports);
   for (const item10017 of ownPropertyNames) {
     let tmp2 = _loop2(item10017);
     continue;
@@ -1204,14 +1205,14 @@ let closure_29 = (() => {
           HermesBuiltin.arraySpread(items2, tmp2(WebGLRenderingContext.WebGL2RenderingContext.prototype, tmp3.WebGL2, bindResult, arg1, arg2, arg3, 0, WebGLRenderingContext), 0);
           HermesBuiltin.apply(push, items2, items);
         }
-        const f138389 = () => {
+        const f139971 = () => {
 
         };
         const restoreHandlers = this.restoreHandlers;
         let arr = restoreHandlers.push(() => {
           closure_0();
           closure_1();
-          if (typeof f138389 === "function") {
+          if (typeof f139971 === "function") {
             const item = closure_130_0.forEach((fn) => fn());
           } else {
             throw new TypeError("Trying to call a non-function");

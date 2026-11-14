@@ -1,22 +1,22 @@
-// Module ID: 12022
-// Function ID: 12023
+// Module ID: 12089
+// Function ID: 12090
 // Name: UserProfileWidgetContainer
-// Dependencies: [19, 17, 502, 21, 5243, 575, 504, 7895, 12023, 12028, 2]
+// Dependencies: [19, 17, 502, 21, 5306, 575, 504, 7961, 12090, 12095, 2]
 // Exports: default
 
-// Module 12022 (UserProfileWidgetContainer)
+// Module 12089 (UserProfileWidgetContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7895 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7961 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp6;
-const UserProfileWidgetReportButtonDefault = tmp6(12028);
+const UserProfileWidgetReportButtonDefault = tmp6(12095);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { actions: obj2 };
@@ -45,7 +45,7 @@ export default function UserProfileWidgetContainer(userId) {
   UserProfileCardDefault;
   const tmp2 = userId;
   if (title == null) {
-    const tmp2Result = tmp2(12023);
+    const tmp2Result = tmp2(12090);
     title = tmp2Result.getWidgetTitle(widget);
   }
   let tmp8 = null;

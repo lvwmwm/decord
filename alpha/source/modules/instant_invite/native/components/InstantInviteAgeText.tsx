@@ -1,19 +1,19 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 15073
+// Function ID: 15074
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 8396, 21, 5243, 504, 5866, 8397, 7364, 8394, 1113, 2]
+// Dependencies: [19, 17, 8462, 21, 5306, 504, 5929, 8463, 7428, 8460, 1113, 2]
 // Exports: default
 
-// Module 14959 (InstantInviteAgeText)
+// Module 15073 (InstantInviteAgeText)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8394 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 8397 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8463 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8396 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8462 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,7 +48,7 @@ export default function InstantInviteAgeText(style) {
     const obj2 = { style: items1, children: items3 };
     items1 = [tmp.inviteAgeContainer, style];
     const obj3 = { variant: "body-md/normal", children: items2 };
-    const Text = tmp2(5866).Text;
+    const Text = tmp2(5929).Text;
     items2 = [, ];
     const tmp2Result = InstantInviteUtils;
     items2[0] = tmp2Result.maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses);
@@ -70,10 +70,10 @@ export default function InstantInviteAgeText(style) {
         hitSlop: { top: 8, left: 8, bottom: 8, right: 8 },
         children: closure_5(Text2, obj5)
       };
-      const PressableOpacity = tmp2(7364).PressableOpacity;
+      const PressableOpacity = tmp2(7428).PressableOpacity;
       intl = tmp2(1113).intl;
       obj5 = { variant: "body-md/medium", color: "text-link", children: intl2.string(intl3.t["VNe8P/"]) };
-      Text2 = tmp2(5866).Text;
+      Text2 = tmp2(5929).Text;
       intl2 = tmp2(1113).intl;
       canEditInvite = closure_5(PressableOpacity, obj4);
     }

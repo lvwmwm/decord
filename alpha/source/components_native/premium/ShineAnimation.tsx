@@ -1,21 +1,21 @@
-// Module ID: 9643
-// Function ID: 9644
+// Module ID: 9710
+// Function ID: 9711
 // Name: ShineAnimation
-// Dependencies: [19, 17, 21, 5243, 575, 1652, 5485, 671, 5957, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1655, 5548, 671, 6020, 2]
 
-// Module 9643 (ShineAnimation)
+// Module 9710 (ShineAnimation)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import FastImageDefault from "FastImage" /* 5957 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import FastImageDefault from "FastImage" /* 6020 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 let set;
 
 let StyleSheet;
@@ -60,22 +60,22 @@ const memoResult = react.memo(function ShineAnimation(arg0) {
   ({ source, style } = arg0);
   const tmp = closure_8();
   const tmp2 = sharedValue;
-  let obj = sharedValue(1652);
+  let obj = sharedValue(1655);
   sharedValue = obj.useSharedValue(0);
   let items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withDelay = _mod1652.withDelay;
-    _mod1652;
-    const withRepeat = _mod1652.withRepeat;
-    _mod1652;
+    const withDelay = _mod1655.withDelay;
+    _mod1655;
+    const withRepeat = _mod1655.withRepeat;
+    _mod1655;
     const obj = timing_timing;
     const result = set(withDelay(400, withRepeat(obj.withTiming(1, { duration: 1000 }), -1, false)));
   }, items);
   let items1 = [closure_9, , ];
-  const useAnimatedStyle = sharedValue(1652).useAnimatedStyle;
-  sharedValue(1652);
-  items1[1] = sharedValue(1652).interpolate;
+  const useAnimatedStyle = sharedValue(1655).useAnimatedStyle;
+  sharedValue(1655);
+  items1[1] = sharedValue(1655).interpolate;
   items1[2] = sharedValue;
   let c0;
   let c1;
@@ -100,9 +100,9 @@ const memoResult = react.memo(function ShineAnimation(arg0) {
   const alphaResult1 = tmp14Result.alpha(1);
   const items3 = [closure_10, closure_7, , , , ];
   const hexResult1 = alphaResult1.hex();
-  const useAnimatedStyle2 = tmp2(1652).useAnimatedStyle;
-  tmp2(1652);
-  items3[2] = tmp2(1652).interpolateColor;
+  const useAnimatedStyle2 = tmp2(1655).useAnimatedStyle;
+  tmp2(1655);
+  items3[2] = tmp2(1655).interpolateColor;
   items3[3] = sharedValue;
   items3[4] = hexResult;
   items3[5] = hexResult1;
@@ -131,8 +131,8 @@ const memoResult = react.memo(function ShineAnimation(arg0) {
   const obj2 = { style: items5, children: items7 };
   items5 = [tmp.container, style, animatedStyle2];
   const obj3 = { style: tmp.shineContainer, children: items6 };
-  const View = tmp11(1652).View;
-  items6 = [closure_5(_modDef1652.View, { style: animatedStyle }), ];
+  const View = tmp11(1655).View;
+  items6 = [closure_5(_modDef1655.View, { style: animatedStyle }), ];
   const obj4 = { style: tmp.shine, children: closure_5(closure_4, obj5) };
   obj5 = { style: tmp.shineInner };
   items6[1] = closure_5(closure_4, obj4);

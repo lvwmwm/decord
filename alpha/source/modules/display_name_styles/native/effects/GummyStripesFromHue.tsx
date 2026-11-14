@@ -1,15 +1,15 @@
-// Module ID: 17849
-// Function ID: 17850
+// Module ID: 17969
+// Function ID: 17970
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 5243, 1393, 1652, 16951, 2]
+// Dependencies: [32, 19, 21, 5306, 1396, 1655, 17074, 2]
 // Exports: default
 
-// Module 17849 (GummyStripesFromHue)
-import _modDef1652 from "module_1652" /* 1652 */;
+// Module 17969 (GummyStripesFromHue)
+import _modDef1655 from "module_1655" /* 1655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,8 +35,8 @@ function AnimatedStripe(overlap) {
   ({ hue, shift, saturation, lightness } = overlap);
   let tmp = closure_6();
   const items = [closure_7, hue, shift, , , ];
-  const useAnimatedStyle = require("module_1652").useAnimatedStyle;
-  require("module_1652");
+  const useAnimatedStyle = require("module_1655").useAnimatedStyle;
+  require("module_1655");
   items[3] = require("ColorPickerUtils").hslToRgbWorklet;
   items[4] = saturation;
   items[5] = lightness;
@@ -60,7 +60,7 @@ function AnimatedStripe(overlap) {
   GummyStripesFromHueTsx1.__initData = tmp4;
   const animatedStyle = useAnimatedStyle(GummyStripesFromHueTsx1);
   const style = [tmp.stripe, , ];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   const tmp11 = c4;
   if (stripeOverlap) {
     stripeOverlap = tmp.stripeOverlap;
@@ -83,6 +83,6 @@ export default function GummyStripesFromHue(hue) {
       return l(AnimatedStripe, obj, index);
     })
   };
-  GUMMY_STRIPES = hue(1393).GUMMY_STRIPES;
+  GUMMY_STRIPES = hue(1396).GUMMY_STRIPES;
   return l(closure_5, obj);
 };

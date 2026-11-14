@@ -1,18 +1,18 @@
-// Module ID: 18755
-// Function ID: 18756
+// Module ID: 18884
+// Function ID: 18885
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 5089, 21, 5243, 8338, 1113, 2717, 5378, 9500, 2]
+// Dependencies: [19, 17, 5152, 21, 5306, 8404, 1113, 2733, 5441, 9567, 2]
 // Exports: default
 
-// Module 18755 (BoostProgressBarCoachmark)
+// Module 18884 (BoostProgressBarCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2717 from "module_2717" /* 2717 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8338 */;
+import _modDef2733 from "module_2733" /* 2733 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -48,8 +48,8 @@ export default function BoostProgressBarCoachmark(guild) {
     let intl3;
     let riveContainer;
     const obj = {
-      title: intl.string(_modDef2717.uwV2dH),
-      description: intl2.string(_modDef2717.MIwlcR),
+      title: intl.string(_modDef2733.uwV2dH),
+      description: intl2.string(_modDef2733.MIwlcR),
       visible: true,
       position: "bottom",
       offsetY: 8,
@@ -66,7 +66,7 @@ export default function BoostProgressBarCoachmark(guild) {
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  let obj = guild(9500);
+  let obj = guild(9567);
   const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
 };

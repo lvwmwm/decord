@@ -1,22 +1,22 @@
-// Module ID: 5996
-// Function ID: 5997
+// Module ID: 6059
+// Function ID: 6060
 // Name: Spoiler
-// Dependencies: [32, 19, 17, 1072, 5997, 21, 1377, 5243, 575, 561, 560, 5314, 1187, 2]
+// Dependencies: [32, 19, 17, 1072, 6060, 21, 1380, 5306, 575, 561, 560, 5377, 1187, 2]
 // Exports: SpoilerRevealProvider, default
 
-// Module 5996 (Spoiler)
+// Module 6059 (Spoiler)
 import Fragment from "Fragment" /* 21 */;
 import _mod560 from "module_560" /* 560 */;
 import _mod561 from "module_561" /* 561 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 5314 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
+import native from "native" /* 5377 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import createStyles from "createStyles" /* 5243 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -103,10 +103,12 @@ class Spoiler extends PureComponent {
   }
   render() {
     let handleTap;
+    let hiddenContent;
     let items1;
     let obj2;
     let placeholder;
-    let tmp2;
+    let spoilerRevealedStyle;
+    let spoilerStyle;
     const self = this;
     let tmp = closure_8(this.context);
     _require = tmp;
@@ -114,23 +116,26 @@ class Spoiler extends PureComponent {
     if (revealed == null) {
       revealed = self.state.revealed;
     }
-    const children = self.props.children;
+    ({ hiddenContent, spoilerStyle, spoilerRevealedStyle } = self.props);
     if (revealed) {
-      let items = [tmp.spoilerRevealed, tmp3];
+      hiddenContent = self.props.children;
+    }
+    if (revealed) {
+      let items = [tmp.spoilerRevealed, spoilerRevealedStyle];
       items1 = items;
     } else {
-      items1 = [tmp.spoiler, tmp2];
+      items1 = [tmp.spoiler, spoilerStyle];
     }
     let Children = react.Children;
-    const tmp4 = react;
-    if (0 === Children.count(children)) {
+    let tmp2 = react;
+    if (0 === Children.count(hiddenContent)) {
       return null;
     } else {
-      const Children1 = tmp4.Children;
-      let tmp10 = revealed;
-      let mapped = Children1.map(children, (type) => {
+      const Children1 = tmp2.Children;
+      let tmp6 = jsx;
+      let mapped = Children1.map(hiddenContent, (type) => {
         let validElement;
-        const f90700 = (props) => {
+        const f91888 = (props) => {
           let Children;
           let cloneElement;
           let items;
@@ -142,7 +147,7 @@ class Spoiler extends PureComponent {
             if (Array.isArray(style)) {
               flattenResult = closure_2_5.flatten(style);
             }
-            const obj = { children: Children.map(props.props.children, f90700), style: items, onPress: "Array" };
+            const obj = { children: Children.map(props.props.children, f91888), style: items, onPress: "Array" };
             ({ Children, cloneElement } = tmp);
             items = [flattenResult, spoiler.spoiler];
             return cloneElement(props, obj);
@@ -178,7 +183,7 @@ class Spoiler extends PureComponent {
             mapped = type;
             if (!revealed) {
               const Children = tmp.Children;
-              mapped = Children.map(type, f90700);
+              mapped = Children.map(type, f91888);
             }
           }
           tmp10 = mapped;
@@ -191,15 +196,14 @@ class Spoiler extends PureComponent {
       if (muted) {
         muted = tmp.muted;
       }
-      let obj = { accessibilityRole: "button", style: items2, onPress: handleTap, children: tmp8(context.Provider, obj2) };
+      let obj = { accessibilityRole: "button", style: items2, onPress: handleTap, children: tmp6(context.Provider, obj2) };
       items2[1] = muted;
       handleTap = undefined;
       if (!self.props.disableReveal) {
         handleTap = self.handleTap;
       }
-      let tmp6 = context;
       obj2 = { value: !revealed, children: mapped };
-      return jsx(LegacyText, obj);
+      return tmp6(LegacyText, obj);
     }
   }
 }

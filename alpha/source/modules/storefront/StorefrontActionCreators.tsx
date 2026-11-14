@@ -1,20 +1,20 @@
-// Module ID: 9346
-// Function ID: 9347
+// Module ID: 9413
+// Function ID: 9414
 // Name: StorefrontActionCreators
-// Dependencies: [5, 2172, 7187, 9347, 9348, 9349, 1072, 1089, 572, 1282, 6695, 7186, 2]
+// Dependencies: [5, 2175, 7250, 9414, 9415, 9416, 1072, 1089, 572, 1285, 6758, 7249, 2]
 // Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 9346 (StorefrontActionCreators)
+// Module 9413 (StorefrontActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingInfoStore from "BillingInfoStore" /* 2172 */;
-import SKUPricesStore from "SKUPricesStore" /* 7187 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9347 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9348 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9349 */;
+import BillingInfoStore from "BillingInfoStore" /* 2175 */;
+import SKUPricesStore from "SKUPricesStore" /* 7250 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9414 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9415 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9416 */;
 import size from "module_2" /* 2 */;
 
 let apiError, c1, closure_4, promotions;
@@ -292,7 +292,7 @@ obj = function _fetchStorefrontPricesForApplicationId() {
       await closure_130_18(obj5);
       await "HermesInternal";
       applicationId = applicationId.applicationId;
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -311,7 +311,7 @@ obj = function _fetchStorefrontPricesForSkuIds() {
       await closure_130_18(obj5);
       await "HermesInternal";
       skuIds = skuIds.skuIds;
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

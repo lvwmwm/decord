@@ -1,33 +1,33 @@
-// Module ID: 9619
-// Function ID: 9620
+// Module ID: 9686
+// Function ID: 9687
 // Name: GPlayActionCreators
-// Dependencies: [109, 5, 17, 9546, 502, 9235, 1072, 9236, 1387, 1083, 3, 8514, 7209, 5936, 572, 2183, 559, 1477, 1377, 1252, 6205, 1113, 1282, 5055, 2]
+// Dependencies: [109, 5, 17, 9613, 502, 9302, 1072, 9303, 1390, 1083, 3, 8580, 7272, 5999, 572, 2186, 559, 1480, 1380, 1256, 6268, 1113, 1285, 5118, 2]
 // Exports: downgradeSubscription, ensureSkusLoaded, loadUserCountry, purchase, retainInAppSkus, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
-// Module 9619 (GPlayActionCreators)
+// Module 9686 (GPlayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1083 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import NetworkUtilsDefault from "NetworkUtils" /* 1477 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2183 */;
-import BillingUtils from "BillingUtils" /* 5055 */;
-import ProductIds from "ProductIds" /* 8514 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import NetworkUtilsDefault from "NetworkUtils" /* 1480 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
+import BillingUtils from "BillingUtils" /* 5118 */;
+import ProductIds from "ProductIds" /* 8580 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9546 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9613 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IAPStore from "IAPStore" /* 9235 */;
+import IAPStore from "IAPStore" /* 9302 */;
 import Constants_mod from "Constants" /* 1072 */;
-import Constants_mod2 from "Constants" /* 9236 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import Constants_mod2 from "Constants" /* 9303 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let applyResult, c2, c21, c22, closure_31, gift_info_options, importDefault, oldProductId, v0;
+let c2, c21, c22, closure_31, gift_info_options, importDefault, oldProductId, v0;
 
 let c10;
 let c9;
@@ -36,7 +36,7 @@ let closure_15;
 let closure_18;
 let closure_19;
 let map1;
-const f97624 = async () => {
+const f98828 = async () => {
   closure_0 = [...arguments];
   let c5 = 0;
   let c6 = 0;
@@ -65,9 +65,10 @@ const f97624 = async () => {
             return { value, done: true };
           } else {
             closure_2 = tmp;
+            closure_1 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -80,26 +81,35 @@ const f97624 = async () => {
             c4 = 1;
             const items = [];
             HermesBuiltin.arraySpread(items, closure_0, 0);
-            applyResult = HermesBuiltin.apply(closure_130_0, items, undefined);
             c5 = 3;
             c6 = 1;
-            return { value: applyResult, done: false };
+            const obj5 = { value: HermesBuiltin.apply(closure_130_0, items, undefined), done: false };
+            return obj5;
           }
         } else if (2 === c5) {
           c4 = 0;
-          let closure_1 = closure_3;
-          let tmp12;
-          const tmp10 = closure_1;
-          const tmp9 = closure_1_44;
-          if (null != closure_130_2) {
-            applyResult = { source: tmp11 };
-            tmp12 = applyResult;
+          closure_2 = closure_3;
+          closure_1 = null != closure_2 && typeof closure_2 === "object";
+          const tmp10 = null != closure_2 && typeof closure_2 === "object";
+          const tmp14 = closure_1;
+          if (!tmp14) {
+            let tmp23;
+            const tmp20 = closure_1_44;
+            const tmp21 = closure_2;
+            if (null != closure_130_2) {
+              tmp23 = { source: tmp22 };
+              const obj6 = { source: tmp22 };
+            }
+            const obj7 = { tags: tmp23 };
+            tmp20(tmp21, obj7);
+            const tmp25 = closure_1;
+            if (tmp25) {
+              set.add(closure_2);
+            }
           }
-          const obj6 = { tags: tmp12 };
-          applyResult = tmp9(tmp10, obj6);
-          const tmp13 = closure_130_1;
-          if (tmp13) {
-            throw closure_1;
+          const tmp32 = closure_130_1;
+          if (tmp32) {
+            throw closure_2;
           } else {
             c6 = 3;
             return { value: "HermesInternal", done: null };
@@ -116,11 +126,11 @@ const f97624 = async () => {
           c6 = 3;
           return { value, done: true };
         }
-      } catch (tmp25) {
-        closure_3 = tmp25;
+      } catch (tmp44) {
+        closure_3 = tmp44;
         if (0 === c4) {
           c6 = 3;
-          throw tmp25;
+          throw tmp44;
         } else {
           c5 = 2;
         }
@@ -235,7 +245,7 @@ let obj = function _fetchDesktopSubscriptionSkus() {
             user = undefined;
             c21 = 1;
             c22 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -451,7 +461,7 @@ function retryFailedInAppSkus() {
     let isOnlineResult = obj.isOnline();
     if (isOnlineResult) {
       let isReadyResult;
-      const obj2 = found(2183);
+      const obj2 = found(2186);
       if (obj2.isGooglePlayBillingSupported()) {
         isReadyResult = IAPStore.isReady();
       } else {
@@ -782,7 +792,10 @@ obj = function _verifyPurchase() {
   });
   return obj(...arguments);
 };
-function captureGPlayBillingException(code, fingerprint) {
+function captureGPlayBillingException(code, tags) {
+  let extra;
+  let obj3;
+  let obj4;
   code = undefined;
   const has = set3.has;
   if (code != null) {
@@ -790,51 +803,82 @@ function captureGPlayBillingException(code, fingerprint) {
   }
   if (!has(code)) {
     let hasItem;
-    let hasItem1;
-    let code1;
-    const has2 = set2.has;
-    if (code != null) {
-      code1 = code.code;
-    }
-    const has2Result = has2(code1);
     if (code != null) {
       const message = code.message;
       if (message != null) {
         hasItem = message.includes("max attempts exceeded");
       }
     }
-    if (code != null) {
-      const message2 = code.message;
-      if (message2 != null) {
-        hasItem1 = message2.includes("returned null");
+    if (true !== hasItem) {
+      let hasItem1;
+      let code1;
+      const has2 = set2.has;
+      if (code != null) {
+        code1 = code.code;
       }
-    }
-    if (!has2Result) {
-      if (true !== hasItem) {
-        if (true !== hasItem1) {
-          obj = BillingUtils;
-          const result = obj.captureBillingException(code, fingerprint);
+      const has2Result = has2(code1);
+      if (code != null) {
+        const message2 = code.message;
+        if (message2 != null) {
+          hasItem1 = message2.includes("returned null");
         }
       }
-    }
-    const _Math = Math;
-    if (Math.random() < 0.01) {
-      if (has2Result) {
-        let code2;
+      const _Error = Error;
+      const tmp8 = code instanceof Error && typeof code.code === "string" && "userInfo" in code;
+      if (tmp8) {
+        const _Error2 = Error;
+        const self = this;
+        const self2 = this;
+        const error1 = new Error(code.message);
+        error1.name = "GPlayBillingError";
+        error1.cause = code;
+        const obj2 = { error: error1, options: obj3 };
+        obj3 = { tags: obj4, extra };
+        const merged = Object.assign(tags);
+        obj4 = { gplay_code: code.code, gplay_native_name: String(code.name) };
+        const merged1 = Object.assign(tags.tags);
         const _String = String;
-        if (code != null) {
-          code2 = code.code;
+        if (null != code.userInfo) {
+          const obj5 = { gplay_user_info: code.userInfo };
+          const merged2 = Object.assign(tags.extra);
+          extra = obj5;
+        } else {
+          extra = tags.extra;
         }
-        const items = ["gplay-billing-error", _String(code2)];
-        fingerprint = items;
+        obj = obj2;
       } else {
-        fingerprint = fingerprint.fingerprint;
+        obj = { error: code, options: tags };
       }
-      const obj2 = { fingerprint };
-      const captureBillingException = BillingUtils.captureBillingException;
-      BillingUtils;
-      const merged = Object.assign(fingerprint);
-      const result1 = captureBillingException(code, obj2);
+      if (!has2Result) {
+        if (true !== hasItem1) {
+          const obj6 = BillingUtils;
+          const result = obj6.captureBillingException(obj.error, obj.options);
+        }
+      }
+      const _Math = Math;
+      if (Math.random() < 0.01) {
+        let fingerprint;
+        if (has2Result) {
+          let code2;
+          const _String2 = String;
+          if (code != null) {
+            code2 = code.code;
+          }
+          const items = ["gplay-billing-error", _String2(code2)];
+          fingerprint = items;
+        } else {
+          const options = obj.options;
+          if (options != null) {
+            fingerprint = options.fingerprint;
+          }
+        }
+        const obj7 = { fingerprint };
+        const captureBillingException = BillingUtils.captureBillingException;
+        const error = obj.error;
+        BillingUtils;
+        const merged3 = Object.assign(obj.options);
+        const result1 = captureBillingException(error, obj7);
+      }
     }
   }
 }
@@ -892,7 +936,7 @@ _asyncToGenerator(async (arg0, value) => {
           value = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "flexDirection", done: true };
+          return { value: "Path", done: true };
         }
       } else if (1 === c5) {
         if (arg0 === 1) {
@@ -975,7 +1019,7 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSubscriptionSkus = "loadSubscriptionSkus";
-const importDefaultResultResult = _asyncToGenerator(f97624);
+const importDefaultResultResult = _asyncToGenerator(f98828);
 _asyncToGenerator(async () => {
   let closure_0 = arg0;
   let c5 = 0;
@@ -1036,7 +1080,7 @@ _asyncToGenerator(async () => {
             value = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -1118,7 +1162,7 @@ _asyncToGenerator(async () => {
   return iter;
 });
 const loadInAppSkus = "loadInAppSkus";
-const importDefaultResultResult1 = _asyncToGenerator(f97624);
+const importDefaultResultResult1 = _asyncToGenerator(f98828);
 _asyncToGenerator(async (arg0, value) => {
   if (c0 === 2) {
     c0 = 3;
@@ -1168,7 +1212,7 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSkus = "loadSkus";
-const importDefaultResultResult2 = _asyncToGenerator(f97624);
+const importDefaultResultResult2 = _asyncToGenerator(f98828);
 let tmp11 = new BackoffDefault(5000, 300000, true);
 let closure_29 = tmp11;
 let c30 = 0;
@@ -1375,13 +1419,14 @@ let _require = _asyncToGenerator(async (arg0, value) => {
 });
 let c1 = true;
 const getUserCountry = "getUserCountry";
-const importDefaultResultResult3 = _asyncToGenerator(f97624);
+const importDefaultResultResult3 = _asyncToGenerator(f98828);
 const items1 = [, , , , ];
 ({ SERVICE_DISCONNECTED: arr2[0], SERVICE_TIMEOUT: arr2[1], BILLING_UNAVAILABLE: arr2[2], BILLING_CLIENT_NOT_READY: arr2[3], DEVELOPER_ERROR: arr2[4] } = Constants.GPlayBillingResult);
 const set2 = new Set(items1.map(String));
 const items2 = [, , ];
 ({ FEATURE_NOT_SUPPORTED: arr3[0], SERVICE_UNAVAILABLE: arr3[1], NETWORK_ERROR: arr3[2] } = Constants.GPlayBillingResult);
 const set3 = new Set(items2.map(String));
+const weakSet = new WeakSet();
 let result = size.fileFinishedImporting("actions/native/GPlayActionCreators.tsx");
 const loadSubscriptionSkus_export = importDefaultResultResult;
 const loadInAppSkus_export = importDefaultResultResult1;
@@ -1412,7 +1457,7 @@ export function ensureSkusLoaded(items) {
         let isOnlineResult = obj3.isOnline();
         if (isOnlineResult) {
           let isReadyResult;
-          const tmpResult = tmp(2183);
+          const tmpResult = tmp(2186);
           if (tmpResult.isGooglePlayBillingSupported()) {
             isReadyResult = IAPStore.isReady();
           } else {
@@ -1422,7 +1467,7 @@ export function ensureSkusLoaded(items) {
         }
         if (isOnlineResult) {
           const tmp13 = (async (arg0, value) => {
-            const f140450 = (item) => null != product.getProduct(item);
+            const f142033 = (item) => null != product.getProduct(item);
             if (c5 === 2) {
               c5 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
@@ -1460,7 +1505,7 @@ export function ensureSkusLoaded(items) {
                   c3 = 0;
                   c31 = null;
                   const tmp19 = closure_2;
-                  if (closure_129_0.every(f140450)) {
+                  if (closure_129_0.every(f142033)) {
                     closure_1_29.succeed();
                     let closure_30 = 0;
                   } else {
@@ -1475,7 +1520,7 @@ export function ensureSkusLoaded(items) {
                 } else if (arg0 === 2) {
                   c3 = 0;
                   c31 = null;
-                  if (closure_129_0.every(f140450)) {
+                  if (closure_129_0.every(f142033)) {
                     closure_1_29.succeed();
                     closure_30 = 0;
                   } else {
@@ -1489,7 +1534,7 @@ export function ensureSkusLoaded(items) {
                 } else {
                   c3 = 0;
                   c31 = null;
-                  if (closure_129_0.every(f140450)) {
+                  if (closure_129_0.every(f142033)) {
                     closure_1_29.succeed();
                     closure_30 = 0;
                   } else {

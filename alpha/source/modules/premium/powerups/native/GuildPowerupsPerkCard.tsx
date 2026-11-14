@@ -1,23 +1,23 @@
-// Module ID: 10713
-// Function ID: 10714
+// Module ID: 10782
+// Function ID: 10783
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 5243, 575, 5484, 5250, 10710, 10652, 5830, 5866, 10653, 1187, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5547, 5313, 10779, 10721, 5893, 5929, 10722, 1187, 1113, 2]
 // Exports: default
 
-// Module 10713 (GuildPowerupsPerkCard)
+// Module 10782 (GuildPowerupsPerkCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import shared from "shared" /* 5250 */;
-import useThemeDefault from "useTheme" /* 5484 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 10652 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 10710 */;
+import shared from "shared" /* 5313 */;
+import useThemeDefault from "useTheme" /* 5547 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 10721 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 10779 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -89,7 +89,7 @@ export default function GuildPowerupsPerkCard(arg0) {
   items3 = [React3(Text_Text.Text, { color: "text-strong", variant: "heading-md/semibold", children: title }), React3(Text_Text.Text, { variant: "body-sm/normal", children: description })];
   items4 = [hasOwnProperty(View, obj7), ];
   const obj8 = { status };
-  const GuildPowerupsCardFooter = tmp6(10653).GuildPowerupsCardFooter;
+  const GuildPowerupsCardFooter = tmp6(10722).GuildPowerupsCardFooter;
   const merged1 = Object.assign(merged);
   items4[1] = React3(GuildPowerupsCardFooter, obj8);
   items2[1] = hasOwnProperty(View, obj6);

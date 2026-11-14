@@ -1,13 +1,13 @@
-// Module ID: 5881
-// Function ID: 5882
+// Module ID: 5944
+// Function ID: 5945
 // Name: useFontScale
-// Dependencies: [19, 1494, 1496, 2]
+// Dependencies: [19, 1497, 1499, 2]
 // Exports: getFontScale, useFontScale
 
-// Module 5881 (useFontScale)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1496 */;
+// Module 5944 (useFontScale)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1494 */;
+import DimensionsStore from "DimensionsStore" /* 1497 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/screen/native/useFontScale.tsx");

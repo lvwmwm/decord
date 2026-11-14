@@ -1,11 +1,11 @@
-// Module ID: 20187
-// Function ID: 20188
+// Module ID: 20347
+// Function ID: 20348
 // Name: InterestGuildsResource
-// Dependencies: [5, 18979, 2]
+// Dependencies: [5, 19025, 2]
 // Exports: interestGuildsKey
 
-// Module 20187 (InterestGuildsResource)
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18979 */;
+// Module 20347 (InterestGuildsResource)
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 19025 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

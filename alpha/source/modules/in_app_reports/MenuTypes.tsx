@@ -1,10 +1,10 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 12064
+// Function ID: 12065
 // Name: MenuTypes
-// Dependencies: [2, 5939]
+// Dependencies: [2, 6002]
 
-// Module 11997 (MenuTypes)
-import MediaTakedownRegulation from "MediaTakedownRegulation" /* 5939 */;
+// Module 12064 (MenuTypes)
+import MediaTakedownRegulation from "MediaTakedownRegulation" /* 6002 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/in_app_reports/MenuTypes.tsx");

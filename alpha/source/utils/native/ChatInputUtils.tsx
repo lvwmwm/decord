@@ -1,19 +1,19 @@
-// Module ID: 5438
-// Function ID: 5439
+// Module ID: 5501
+// Function ID: 5502
 // Name: ChatInputUtils
-// Dependencies: [5439, 2017, 5440, 1625, 1497, 5441, 2]
+// Dependencies: [5502, 2020, 5503, 1628, 1500, 5504, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInput, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 5438 (ChatInputUtils)
-import KeyboardUIStore from "KeyboardUIStore" /* 1497 */;
-import KeyboardTypes from "KeyboardTypes" /* 1625 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 5439 */;
-import useKeyboardType from "useKeyboardType" /* 5440 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 5441 */;
+// Module 5501 (ChatInputUtils)
+import KeyboardUIStore from "KeyboardUIStore" /* 1500 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 5502 */;
+import useKeyboardType from "useKeyboardType" /* 5503 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 5504 */;
 import size from "module_2" /* 2 */;
 
-const f89665 = (item) => {
+const f90853 = (item) => {
   let tmp = typeof item === "number";
   if (typeof item === "number") {
     const obj = ScreenIndexFrozen;
@@ -40,7 +40,7 @@ function getHighestIndexForScreenIndexMap(map1) {
             if (!obj.has("conjure-preview")) {
               const _Array = Array;
               const arr = Array.from(obj.keys());
-              const found = arr.filter(f89665);
+              const found = arr.filter(f90853);
               if (0 !== found.length) {
                 const _Math = Math;
                 const items = [];
@@ -165,7 +165,7 @@ export function getHighestActiveScreenIndex() {
     } else {
       const _Array = Array;
       const arr = Array.from(obj.keys());
-      const found = arr.filter(f89665);
+      const found = arr.filter(f90853);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];

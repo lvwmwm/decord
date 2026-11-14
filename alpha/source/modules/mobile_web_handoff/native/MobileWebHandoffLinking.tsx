@@ -1,13 +1,13 @@
-// Module ID: 10420
-// Function ID: 10421
+// Module ID: 10489
+// Function ID: 10490
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1072, 6785, 10421, 10423, 1252, 1265, 10424, 1378, 5949, 2]
+// Dependencies: [5, 502, 1072, 6848, 10490, 10492, 1256, 1254, 10493, 1381, 6012, 2]
 
-// Module 10420 (MobileWebHandoffLinking)
-import FingerprintUtils from "FingerprintUtils" /* 1265 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import SimpleLoadingModal from "SimpleLoadingModal" /* 10421 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 10423 */;
+// Module 10489 (MobileWebHandoffLinking)
+import FingerprintUtils from "FingerprintUtils" /* 1254 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import SimpleLoadingModal from "SimpleLoadingModal" /* 10490 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 10492 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const AnalyticsUtilsDefault = tmp(1252);
+const AnalyticsUtilsDefault = tmp(1256);
 function createHandoffTokenWithLoadingModal(arg0) {
   let authenticated;
   let fingerprint;
@@ -122,7 +122,7 @@ let obj = function _redirectWithHandoffToken() {
     }
     flag2 = obj7.forceExternalBrowser ?? false;
     nonce = Object.assign(obj7, Object.assign({ forceExternalBrowser: 0 }));
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

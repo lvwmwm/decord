@@ -1,15 +1,15 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 11867
+// Function ID: 11868
 // Name: MessageReactions
-// Dependencies: [19, 6309, 21, 504, 7852, 7871, 11802, 2]
+// Dependencies: [19, 6372, 21, 504, 7918, 7937, 11868, 2]
 // Exports: default
 
-// Module 11801 (MessageReactions)
+// Module 11867 (MessageReactions)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6309 */;
+import MessageStore from "MessageStore" /* 6372 */;
 import size from "module_2" /* 2 */;
 
 let count_details, message;
@@ -77,14 +77,14 @@ export default function MessageReactions(emoji) {
   });
   const sorted = items3.sort((burst_count, burst_count2) => (burst_count2.burst_count > 0 ? burst_count2.burst_count : burst_count2.count) - (burst_count.burst_count > 0 ? burst_count.burst_count : burst_count.count));
   let obj2 = { value: analyticsLocations, children: tmp9Result };
-  const AnalyticsLocationProvider = tmp4(7852).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp4(7918).AnalyticsLocationProvider;
   if (items3.length > 0) {
     let obj3 = { channelId, messageId, emoji, reactions: items3, isSelectedBurst };
-    const MessageReactionsContent = tmp4(11802).MessageReactionsContent;
+    const MessageReactionsContent = tmp4(11868).MessageReactionsContent;
     let merged1 = Object.assign(merged);
     tmp9Result = tmp9(MessageReactionsContent, obj3);
   } else {
-    tmp9Result = tmp9(tmp4(11802).MessageReactionsEmpty, {});
+    tmp9Result = tmp9(tmp4(11868).MessageReactionsEmpty, {});
   }
   return jsx(AnalyticsLocationProvider, obj2);
 };

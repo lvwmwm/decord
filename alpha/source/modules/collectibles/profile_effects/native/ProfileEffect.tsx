@@ -1,24 +1,24 @@
-// Module ID: 9424
-// Function ID: 9425
+// Module ID: 9493
+// Function ID: 9494
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 5244, 2117, 21, 5243, 1493, 9425, 9426, 9427, 9429, 504, 1092, 9430, 9428, 5957, 8523, 2]
+// Dependencies: [32, 19, 17, 5307, 2120, 21, 5306, 1496, 9494, 9495, 9496, 9498, 504, 1092, 9499, 9497, 6020, 8589, 2]
 // Exports: default, usePreloadProfileEffect
 
-// Module 9424 (ProfileEffect)
+// Module 9493 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8523 */;
-import utils from "utils" /* 9425 */;
-import profile_effects_constants from "profile_effects/constants" /* 9426 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9427 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9430 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8589 */;
+import utils from "utils" /* 9494 */;
+import profile_effects_constants from "profile_effects/constants" /* 9495 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9496 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9499 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import AppStateStore from "AppStateStore" /* 2117 */;
-import createStyles from "createStyles" /* 5243 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AppStateStore from "AppStateStore" /* 2120 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -51,7 +51,7 @@ function StaticEffect(useThumbnail) {
   ({ thumbnailPreviewSrc, accessibilityLabel } = profileEffect);
   [tmp3, c0] = thumbnailUrlOverride.useState(0);
   _slicedToArray(thumbnailUrlOverride.useState(0), 2);
-  const height = reducedMotionSrc(1493)().height;
+  const height = reducedMotionSrc(1496)().height;
   const callback = thumbnailUrlOverride.useCallback((nativeEvent) => {
     closure_0(nativeEvent.nativeEvent.layout.width);
   }, []);
@@ -78,7 +78,7 @@ function StaticEffect(useThumbnail) {
     const obj2 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback };
   } else {
     obj3 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback, children: null };
-    tmp4(5957);
+    tmp4(6020);
     if (useThumbnail) {
       reducedMotionSrc = thumbnailUrlOverride;
     }

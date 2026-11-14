@@ -1,10 +1,10 @@
-// Module ID: 6048
-// Function ID: 6049
+// Module ID: 6111
+// Function ID: 6112
 // Name: MediaSinkWantsLadder
-// Dependencies: [6012, 2]
+// Dependencies: [6075, 2]
 
-// Module 6048 (MediaSinkWantsLadder)
-import Constants from "Constants" /* 6012 */;
+// Module 6111 (MediaSinkWantsLadder)
+import Constants from "Constants" /* 6075 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;

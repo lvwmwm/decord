@@ -1,15 +1,15 @@
-// Module ID: 18025
-// Function ID: 18026
+// Module ID: 18152
+// Function ID: 18153
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [9135, 18026, 12311, 1113, 5068, 18027, 2]
+// Dependencies: [9202, 18153, 12406, 1113, 5131, 18154, 2]
 
-// Module 18025 (SummaryReminderNotificationSetting)
+// Module 18152 (SummaryReminderNotificationSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 5068 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 18026 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 18027 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 18153 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 18154 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

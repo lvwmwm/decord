@@ -1,15 +1,15 @@
-// Module ID: 19786
-// Function ID: 19787
+// Module ID: 19975
+// Function ID: 19976
 // Name: usePanelOpenState
-// Dependencies: [32, 19, 6838, 11919, 1072, 1652, 1705, 1108, 13025, 5291, 5304, 13018, 12648, 2]
+// Dependencies: [32, 19, 6901, 11985, 1072, 1655, 1708, 1108, 13121, 5354, 5367, 13114, 12744, 2]
 // Exports: default
 
-// Module 19786 (usePanelOpenState)
+// Module 19975 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelStore from "VoicePanelStore" /* 6838 */;
+import VoicePanelStore from "VoicePanelStore" /* 6901 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -54,9 +54,9 @@ export default function usePanelOpenState(arg0, arg1, arg2, arg3) {
   usePanelOpenStateTsx1.__workletHash = 11139062009940;
   usePanelOpenStateTsx1.__initData = tmp4;
   const items2 = [closure_10, , ];
-  const useAnimatedReaction = require("module_1652").useAnimatedReaction;
-  const tmp3 = require("module_1652");
-  items2[1] = tmp(1705).scheduleOnRN;
+  const useAnimatedReaction = require("module_1655").useAnimatedReaction;
+  const tmp3 = require("module_1655");
+  items2[1] = tmp(1708).scheduleOnRN;
   items2[2] = function doCloseChannel() {
     const state = VoicePanelStore.getState();
     return state.closeChannel(closure_0);

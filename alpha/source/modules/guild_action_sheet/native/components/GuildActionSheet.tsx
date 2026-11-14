@@ -1,25 +1,25 @@
-// Module ID: 16299
-// Function ID: 16300
+// Module ID: 16420
+// Function ID: 16421
 // Name: GuildActionSheet
-// Dependencies: [19, 17, 21, 5243, 575, 1627, 8493, 5503, 5507, 1377, 16294, 16300, 16227, 16301, 16304, 5838, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 8559, 5566, 5570, 1380, 16415, 16421, 16348, 16426, 16429, 5901, 2]
 
-// Module 16299 (GuildActionSheet)
+// Module 16420 (GuildActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5503 */;
-import BottomSheetModal from "BottomSheetModal" /* 5507 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5838 */;
-import react2 from "react" /* 8493 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 16227 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 16294 */;
-import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 16300 */;
-import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 16301 */;
-import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 16304 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
+import BottomSheetModal from "BottomSheetModal" /* 5570 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5901 */;
+import react2 from "react" /* 8559 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 16348 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 16415 */;
+import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 16421 */;
+import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 16426 */;
+import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 16429 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

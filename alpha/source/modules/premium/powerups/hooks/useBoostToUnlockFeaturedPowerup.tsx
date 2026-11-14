@@ -1,17 +1,17 @@
-// Module ID: 10635
-// Function ID: 10636
+// Module ID: 10704
+// Function ID: 10705
 // Name: useBoostToUnlockFeaturedPowerup
-// Dependencies: [32, 19, 5114, 5460, 5461, 1072, 5464, 504, 9174, 2]
+// Dependencies: [32, 19, 5177, 5523, 5524, 1072, 5527, 504, 9241, 2]
 // Exports: default
 
-// Module 10635 (useBoostToUnlockFeaturedPowerup)
+// Module 10704 (useBoostToUnlockFeaturedPowerup)
 import Constants from "Constants" /* 1072 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5461 */;
-import Powerups from "Powerups" /* 5464 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5524 */;
+import Powerups from "Powerups" /* 5527 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5460 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5523 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

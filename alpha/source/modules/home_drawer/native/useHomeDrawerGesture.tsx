@@ -1,26 +1,26 @@
-// Module ID: 18613
-// Function ID: 18614
+// Module ID: 18742
+// Function ID: 18743
 // Name: useHomeDrawerGesture
-// Dependencies: [32, 19, 18607, 18614, 1072, 11943, 12307, 5435, 1652, 1500, 1252, 5485, 1705, 5491, 1493, 1627, 5432, 12308, 18615, 5429, 5487, 18608, 5535, 7782, 2]
+// Dependencies: [32, 19, 18736, 18743, 1072, 12010, 12402, 5498, 1655, 1503, 1256, 5548, 1708, 5554, 1496, 1630, 5495, 12403, 18744, 5492, 5550, 18737, 5598, 7848, 2]
 // Exports: useDoesLandOnHomeDrawer, useHomeDrawerState, useHomeGesture, useIsHomeDrawerEnabled
 
-// Module 18613 (useHomeDrawerGesture)
+// Module 18742 (useHomeDrawerGesture)
 import Constants from "Constants" /* 1072 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5429 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import HapticUtils from "HapticUtils" /* 5491 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 12307 */;
-import HomeDrawerStore2 from "HomeDrawerStore" /* 18607 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18608 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import HapticUtils from "HapticUtils" /* 5554 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 12402 */;
+import HomeDrawerStore2 from "HomeDrawerStore" /* 18736 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18737 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 18614 */;
-import GestureConstants from "GestureConstants" /* 11943 */;
+import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 18743 */;
+import GestureConstants from "GestureConstants" /* 12010 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7782 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7848 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set;
@@ -632,7 +632,7 @@ export function useHomeGesture() {
     items2[4] = maxX;
     items2[5] = HomeDrawerAnimations.HOME_DRAWER_SETTLE_TIMING;
     items2[6] = snapX;
-    items2[7] = _mod1705.scheduleOnRN;
+    items2[7] = _mod1708.scheduleOnRN;
     items2[8] = NavigationRouteUtils.setHomeDrawerState;
     [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20] = items2;
     function settleDrawer(arg0) {
@@ -652,11 +652,11 @@ export function useHomeGesture() {
     settleDrawer.__initData = tmp12;
     const items4 = [closure_32, sharedValue7, sharedValue4, sharedValue5, , , , , , , , ];
     let tmp23 = sharedValue5;
-    items4[4] = _mod1652.clamp;
+    items4[4] = _mod1655.clamp;
     items4[5] = derivedValue2;
     items4[6] = 12;
     items4[7] = 16;
-    items4[8] = _mod1652.withSequence;
+    items4[8] = _mod1655.withSequence;
     items4[9] = timing_timing.withTiming;
     items4[10] = HomeDrawerAnimations.HOME_DRAWER_FLING_THROW_TIMING;
     items4[11] = HomeDrawerAnimations.HOME_DRAWER_FLING_RETURN_TIMING;
@@ -717,7 +717,7 @@ export function useHomeGesture() {
     shouldOpenFromPosition.__closure = items9;
     shouldOpenFromPosition.__workletHash = 345325928396;
     shouldOpenFromPosition.__initData = tmp47;
-    const Gesture = tmp8(5535).Gesture;
+    const Gesture = tmp8(5598).Gesture;
     const PanResult = Gesture.Pan();
     const enabledResult = PanResult.enabled(closure_24);
     const manualActivationResult = enabledResult.manualActivation(true);
@@ -822,7 +822,7 @@ export function useHomeGesture() {
     const items16 = [closure_38, sharedValue1, sharedValue, authStore, React4, sharedValue6, fireThrow, c16, , , , , , , , , ];
     const onEnd = onTouchesMoveResult.onChange(useHomeDrawerGestureTsx18).onEnd;
     onTouchesMoveResult.onChange(useHomeDrawerGestureTsx18);
-    items16[8] = _mod1705.scheduleOnRN;
+    items16[8] = _mod1708.scheduleOnRN;
     items16[9] = HapticUtils.triggerHapticFeedback;
     items16[10] = HapticUtils.HapticFeedbackTypes;
     items16[11] = shouldOpenFromPosition;
@@ -887,7 +887,7 @@ export function useHomeGesture() {
     const items18 = [closure_39, gestureState, sharedValue2, settleDrawer, shouldOpenFromPosition, isPanelTouchActive, , , , ];
     const onFinalize = onEnd(useHomeDrawerGestureTsx19).onFinalize;
     onEnd(useHomeDrawerGestureTsx19);
-    items18[6] = _mod1705.scheduleOnRN;
+    items18[6] = _mod1708.scheduleOnRN;
     items18[7] = noteInteraction;
     items18[8] = sharedValue;
     items18[9] = sharedValue1;

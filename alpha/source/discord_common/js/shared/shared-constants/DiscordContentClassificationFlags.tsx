@@ -1,9 +1,9 @@
-// Module ID: 5903
-// Function ID: 5904
+// Module ID: 5966
+// Function ID: 5967
 // Name: DiscordContentClassificationFlags
 // Dependencies: [1084, 2]
 
-// Module 5903 (DiscordContentClassificationFlags)
+// Module 5966 (DiscordContentClassificationFlags)
 import "BigFlagUtils";
 import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 12258
-// Function ID: 12259
+// Module ID: 12353
+// Function ID: 12354
 // Name: PinotMemberNoticeCaret
 // Dependencies: [2]
 
-// Module 12258 (PinotMemberNoticeCaret)
+// Module 12353 (PinotMemberNoticeCaret)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/pinot/PinotMemberNoticeCaret.tsx");

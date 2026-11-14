@@ -1,12 +1,12 @@
-// Module ID: 15491
-// Function ID: 15492
+// Module ID: 15605
+// Function ID: 15606
 // Name: PostPreviewEmbeds
-// Dependencies: [1072, 15492, 2]
+// Dependencies: [1072, 15606, 2]
 // Exports: createPostPreviewEmbeds
 
-// Module 15491 (PostPreviewEmbeds)
+// Module 15605 (PostPreviewEmbeds)
 import Constants from "Constants" /* 1072 */;
-import createMediaPostPreviewEmbedContentDefault from "createMediaPostPreviewEmbedContent" /* 15492 */;
+import createMediaPostPreviewEmbedContentDefault from "createMediaPostPreviewEmbedContent" /* 15606 */;
 import size from "module_2" /* 2 */;
 
 const MessageEmbedTypes = Constants.MessageEmbedTypes;

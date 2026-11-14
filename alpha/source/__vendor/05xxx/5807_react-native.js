@@ -1,12 +1,42 @@
 // Module ID: 5807
 // Function ID: 5808
 // Name: react-native
-// Dependencies: [17, 5746]
+// Dependencies: [17]
+// Exports: isNewArch
 
 // Module 5807 (react-native)
 import react_native from "react-native" /* 17 */;
-import FlashList from "FlashList" /* 5746 */;
 
-const Animated = react_native.Animated;
+let c1;
 
-export default Animated.createAnimatedComponent(FlashList.FlashList);
+const Platform = react_native.Platform;
+
+export function isNewArch() {
+  if (undefined !== c1) {
+    return c1;
+  } else {
+    try {
+      let __turboModuleProxy;
+      let prop;
+      const _Boolean = Boolean;
+      if (global != null) {
+        prop = tmp2.nativeFabricUIManager;
+      }
+      let flag = _Boolean(prop);
+      const _Boolean2 = Boolean;
+      if (global != null) {
+        __turboModuleProxy = tmp2.__turboModuleProxy;
+      }
+      if (!flag) {
+        flag = _Boolean2(__turboModuleProxy);
+      }
+      if (!flag) {
+        flag = false;
+      }
+      c1 = flag;
+    } catch (err) {
+      c1 = true;
+    }
+    return c1;
+  }
+}

@@ -1,13 +1,13 @@
-// Module ID: 13360
-// Function ID: 13361
+// Module ID: 13465
+// Function ID: 13466
 // Name: useCanInstallApplication
-// Dependencies: [6954, 2162, 504, 12605, 2]
+// Dependencies: [7017, 2165, 504, 12701, 2]
 // Exports: default
 
-// Module 13360 (useCanInstallApplication)
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 12605 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+// Module 13465 (useCanInstallApplication)
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 12701 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

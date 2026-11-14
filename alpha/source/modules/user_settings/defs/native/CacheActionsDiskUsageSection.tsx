@@ -1,23 +1,23 @@
-// Module ID: 18082
-// Function ID: 18083
+// Module ID: 18202
+// Function ID: 18203
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 5243, 575, 18083, 5121, 5252, 1113, 6274, 5866, 6699, 1377, 7381, 18085, 2]
+// Dependencies: [5, 32, 19, 21, 5306, 575, 18203, 5184, 5315, 1113, 6337, 5929, 6762, 1380, 7445, 18205, 2]
 // Exports: default, useDiskUsageMeasurement
 
-// Module 18082 (CacheActionsDiskUsageSection)
+// Module 18202 (CacheActionsDiskUsageSection)
 import nativeDefault from "native" /* 575 */;
 import intl24 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import Stack_Stack from "Stack/Stack" /* 6274 */;
-import FileSizeUtils from "FileSizeUtils" /* 6699 */;
-import Card_Card from "Card/Card" /* 7381 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 18085 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import Stack_Stack from "Stack/Stack" /* 6337 */;
+import FileSizeUtils from "FileSizeUtils" /* 6762 */;
+import Card_Card from "Card/Card" /* 7445 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 18205 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ function SizeRow(label) {
   const obj2 = { variant: "body-sm/normal", color: "text-subtle", style: indented ? iter.nestedLabel : iter.label, children: label };
   items[0] = metroRequire(Text_Text.Text, obj2);
   const obj3 = { variant: "body-sm/semibold", tabularNumbers: true, style: iter.value, children: formatKbSizeResult };
-  const Text = tmp2(5866).Text;
+  const Text = tmp2(5929).Text;
   const tmp = metroImportDefault;
   if (null != bytes) {
     const tmp2Result = FileSizeUtils;
@@ -211,7 +211,7 @@ export default function CacheActionsDiskUsageSection(state) {
   const Card = Card_Card.Card;
   if (tmp4Result) {
     const obj2 = { variant: "body-sm/normal", children: intl2.string(intl24.t.Ynmbie) };
-    const Text = tmp2(5866).Text;
+    const Text = tmp2(5929).Text;
     intl2 = tmp2(1113).intl;
     tmp4Result = tmp4(Text, obj2);
   }
@@ -219,7 +219,7 @@ export default function CacheActionsDiskUsageSection(state) {
   let tmp4Result3 = "error" === state.status;
   if (tmp4Result3) {
     const obj3 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(intl24.t["hj/3qI"]) };
-    const Text2 = tmp2(5866).Text;
+    const Text2 = tmp2(5929).Text;
     intl3 = tmp2(1113).intl;
     tmp4Result3 = tmp4(Text2, obj3);
   }

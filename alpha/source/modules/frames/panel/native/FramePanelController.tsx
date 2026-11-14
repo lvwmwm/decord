@@ -1,19 +1,19 @@
-// Module ID: 19738
-// Function ID: 19739
+// Module ID: 19947
+// Function ID: 19948
 // Name: FramePanelController
-// Dependencies: [19, 2162, 6956, 6957, 5896, 21, 504, 16865, 12647, 19711, 19739, 2]
+// Dependencies: [19, 2165, 7019, 7020, 5959, 21, 504, 16988, 12743, 19921, 19948, 2]
 // Exports: default
 
-// Module 19738 (FramePanelController)
+// Module 19947 (FramePanelController)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5896 */;
-import FramesConstants from "FramesConstants" /* 6957 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 12647 */;
-import conjureBackgroundFrames from "conjureBackgroundFrames" /* 16865 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19739 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5959 */;
+import FramesConstants from "FramesConstants" /* 7020 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 12743 */;
+import conjureBackgroundFrames from "conjureBackgroundFrames" /* 16988 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19948 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import FramesStore from "FramesStore" /* 6956 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import FramesStore from "FramesStore" /* 7019 */;
 import size from "module_2" /* 2 */;
 
 const asLaunched = FramesConstants.asLaunched;
@@ -76,6 +76,6 @@ export default function FramePanelController(children) {
       }
     }
   }, items1);
-  const BaseActivityPanelController = mainFrameId(19711).BaseActivityPanelController;
+  const BaseActivityPanelController = mainFrameId(19921).BaseActivityPanelController;
   return <BaseActivityPanelController context={FramePanelStateContextDefault} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={null != mainFrameId} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={callback}>{children}</BaseActivityPanelController>;
 };

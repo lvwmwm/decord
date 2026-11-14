@@ -1,18 +1,18 @@
-// Module ID: 18716
-// Function ID: 18717
+// Module ID: 18845
+// Function ID: 18846
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1385, 8344, 21, 1377, 5243, 575, 504, 8343, 10585, 5866, 2]
+// Dependencies: [19, 17, 1388, 8410, 21, 1380, 5306, 575, 504, 8409, 10654, 5929, 2]
 // Exports: default
 
-// Module 18716 (VoiceGuildTag)
+// Module 18845 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildTagConstants from "GuildTagConstants" /* 8344 */;
+import GuildTagConstants from "GuildTagConstants" /* 8410 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -52,8 +52,8 @@ export default function VoiceGuildTagChiplet(userId) {
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId), items1);
   let primaryGuild;
-  const getUserPrimaryGuild = userId(8343).getUserPrimaryGuild;
-  userId(8343);
+  const getUserPrimaryGuild = userId(8409).getUserPrimaryGuild;
+  userId(8409);
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
@@ -63,13 +63,13 @@ export default function VoiceGuildTagChiplet(userId) {
     if (null != tag) {
       const obj2 = { style: tmp.gapContainer, children: closure_6(View, obj3) };
       obj3 = { style: tmp.tagContainer, children: items2 };
-      const tmp2Result = userId(8343);
+      const tmp2Result = userId(8409);
       const guildTagBadgeUrl = tmp2Result.getGuildTagBadgeUrl(guildId, tmp8, GuildTagBadgeSize.SIZE_12);
       const obj4 = { source: obj5, size: GuildTagBadgeSize.SIZE_12 };
       obj5 = { uri: guildTagBadgeUrl };
-      items2 = [closure_5(userId(10585).GuildTagBadge, obj4), ];
+      items2 = [closure_5(userId(10654).GuildTagBadge, obj4), ];
       const obj6 = { variant: "body-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
-      items2[1] = closure_5(userId(5866).Text, obj6);
+      items2[1] = closure_5(userId(5929).Text, obj6);
       return closure_5(View, obj2);
     }
   }

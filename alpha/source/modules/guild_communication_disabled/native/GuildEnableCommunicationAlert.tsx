@@ -1,21 +1,21 @@
-// Module ID: 14037
-// Function ID: 14038
+// Module ID: 14144
+// Function ID: 14145
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1385, 5157, 1072, 21, 5243, 9137, 5836, 1252, 14036, 5952, 1113, 6277, 5866, 6288, 10844, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 5220, 1072, 21, 5306, 9204, 5899, 1256, 14143, 6015, 1113, 6340, 5929, 6351, 10913, 2]
 // Exports: default
 
-// Module 14037 (GuildEnableCommunicationAlert)
+// Module 14144 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CountDownDefault from "CountDown" /* 10844 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import CountDownDefault from "CountDown" /* 10913 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5157 */;
+import UserStore from "UserStore" /* 1388 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5220 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, dependencyMap;
@@ -116,8 +116,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const tmp2 = closure_12();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  let closure_3 = obj(userId(9137)(userId, guildId), 1)[0];
-  userId(5836)(() => {
+  let closure_3 = obj(userId(9204)(userId, guildId), 1)[0];
+  userId(5899)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type: metroImportDefault, guild_id: guildId, other_user_id: userId };
     obj.track(constants.OPEN_MODAL, obj2);
@@ -134,7 +134,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(6277);
+  const tmp7 = userId(6340);
   const merged1 = Object.assign(merged);
   intl = guildId(1113).intl;
   intl2 = guildId(1113).intl;
@@ -145,12 +145,12 @@ export default function GuildEnableCommunicationAlert(guildId) {
   intl3 = tmp9(1113).intl;
   obj2 = { style: tmp2.body, children: items };
   let obj3 = { style: tmp2.description, variant: "body-sm/medium", children: format(prop, obj4) };
-  const Text = tmp9(5866).Text;
+  const Text = tmp9(5929).Text;
   const intl4 = tmp9(1113).intl;
   format = intl4.format;
   prop = tmp9(1113).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(6288);
+  const tmp3Result = tmp3(6351);
   let str = tmp3Result.getName(guildId, null, user);
   tmp11 = closure_11;
   tmp12 = View;
@@ -175,7 +175,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   let obj5 = { style: items1, variant: "body-sm/medium", children: intl5.format(tmp9(1113).t.KtENkK, obj6) };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
-  const Text2 = tmp9(5866).Text;
+  const Text2 = tmp9(5929).Text;
   intl5 = tmp9(1113).intl;
   obj6 = { link };
   items[1] = closure_10(Text2, obj5);

@@ -83,6 +83,15 @@ class BaseApexExperimentStore extends PersistedStore {
     applyArgumentsResult.surface = "unset";
     return applyArgumentsResult;
   }
+  onAssignmentsIngested() {
+
+  }
+  resolveConfigAssignment() {
+
+  }
+  onConfigApplied() {
+
+  }
   loadStoredState(version, buildOverrideExperiments) {
     let closure_11;
     if (null != version) {
@@ -137,15 +146,15 @@ class BaseApexExperimentStore extends PersistedStore {
         let tmp9 = tmp8;
         if (null != tmp8) {
           if (null != tmp7) {
-            let tmp38 = obj[tmp7];
-            for (const key10031 in tmp9) {
-              let tmp41 = key10031;
-              let addResult = set1.add(key10031);
-              ({ evaluation_id, assignments: assignments2 } = tmp9[key10031]);
+            let tmp50 = obj[tmp7];
+            for (const key10032 in tmp9) {
+              let tmp53 = key10032;
+              let addResult = set1.add(key10032);
+              ({ evaluation_id, assignments: assignments2 } = tmp9[key10032]);
               obj = { evaluationId: evaluation_id, assignments: {} };
-              tmp38[tmp41] = obj;
-              for (const item10042 of assignments2) {
-                let tmp16 = _slicedToArray(item10042, 6);
+              tmp50[tmp53] = obj;
+              for (const item10043 of assignments2) {
+                let tmp16 = _slicedToArray(item10043, 6);
                 [tmp17, tmp18, tmp19] = tmp16;
                 let num = tmp19;
                 let tmp20 = tmp16[3];
@@ -165,8 +174,26 @@ class BaseApexExperimentStore extends PersistedStore {
         continue;
       }
     }
+    if (null != apexExperiments) {
+      const iter2 = items[Symbol.iterator]();
+      const nextResult1 = iter2.next();
+      while (iter2 !== undefined) {
+        let tmp37 = ApexTypes.UnitTypeToKind[nextResult1];
+        let obj3 = apexExperiments.assignments[nextResult1];
+        let _Object = Object;
+        if (obj3 == null) {
+          obj3 = {};
+        }
+        let keys1 = keys(obj3);
+        for (const item10112 of keys1) {
+          let result1 = self.onAssignmentsIngested(tmp37, item10112, obj[tmp37][item10112]);
+          continue;
+        }
+        continue;
+      }
+    }
     if (null != arg1) {
-      const result1 = self.setGuildExperimentAssignments(arg1);
+      const result2 = self.setGuildExperimentAssignments(arg1);
     }
     return true;
   }
@@ -178,6 +205,7 @@ class BaseApexExperimentStore extends PersistedStore {
     let tmp16;
     let tmp6;
     let tmp7;
+    const self = this;
     obj = arg0;
     const guild = obj.guild;
     const _Object = Object;
@@ -191,9 +219,10 @@ class BaseApexExperimentStore extends PersistedStore {
       [tmp6, tmp7] = tmp5;
       ({ evaluation_id, assignments } = tmp7);
       let obj2 = { evaluationId: evaluation_id, assignments: {} };
+      let tmp8 = obj2;
       guild[tmp6] = obj2;
-      for (const item10038 of assignments) {
-        let tmp13 = _slicedToArray(item10038, 5);
+      for (const item10040 of assignments) {
+        let tmp13 = _slicedToArray(item10040, 5);
         [tmp14, tmp15, tmp16] = tmp13;
         let num = tmp16;
         let tmp17 = tmp13[3];
@@ -205,6 +234,7 @@ class BaseApexExperimentStore extends PersistedStore {
         tmp8.assignments[tmp14] = obj3;
         continue;
       }
+      let result = self.onAssignmentsIngested("guild", tmp6, tmp8);
       continue;
     }
   }
@@ -287,11 +317,11 @@ class BaseApexExperimentStore extends PersistedStore {
   getRegisteredExperiments() {
     return closure_10;
   }
-  getAssignment(kind, id, name) {
+  getAssignment(installation, id, name) {
     const self = this;
     let override = this.getOverride(name);
     if (null == override) {
-      override = self.getServerAssignment(kind, id, name);
+      override = self.getServerAssignment(installation, id, name);
     }
     return override;
   }
@@ -380,14 +410,36 @@ class BaseApexExperimentStore extends PersistedStore {
       return items6;
     }
   }
-  trackExperimentExposure(evaluation_id, experiment, location, unit_type, revision, trackedVariantId, arg6) {
+  getConfigEvaluationAndAssignment(user, id, arg2, tmpResult) {
+    let evaluationAndAssignment;
     const self = this;
-    importDefault = evaluation_id;
-    dependencyMap = experiment;
+    const configAssignment = this.resolveConfigAssignment(user, id, arg2);
+    if (null != configAssignment) {
+      items = [, ];
+      ({ evaluationId: arr[0], assignment: arr[1] } = configAssignment);
+      evaluationAndAssignment = items;
+    } else {
+      evaluationAndAssignment = self.getEvaluationAndAssignment(user, id, arg2, tmpResult);
+    }
+    return evaluationAndAssignment;
+  }
+  getOverrides() {
+    obj = {};
+    const merged = Object.assign(closure_13);
+    const merged1 = Object.assign(clientOverrides);
+    const merged2 = Object.assign(closure_12);
+    return obj;
+  }
+  trackExperimentExposure(evaluationId, experimentName, location, unit_type, revision, trackedVariantId, arg6) {
+    let evaluation_id;
+    let experiment;
+    const self = this;
+    importDefault = evaluationId;
+    dependencyMap = experimentName;
     const exposure_location = location;
     const tracked_variation_id = trackedVariantId;
     let closure_0 = arg6;
-    const combined = "" + experiment + "|" + revision + "|" + trackedVariantId + "|" + location + "|" + arg6 + "|1";
+    const combined = "" + experimentName + "|" + revision + "|" + trackedVariantId + "|" + location + "|" + arg6 + "|1";
     let tmp3 = closure_20[combined];
     if (null == tmp3) {
       obj = _modDef1251;
@@ -466,24 +518,24 @@ class BaseApexExperimentStore extends PersistedStore {
       self.saveTrackedExposures(closure_19);
     }
   }
-  trackExposureSuppression(name, client_override) {
-    if (null != closure_10[name]) {
+  trackExposureSuppression(experiment, suppression_source) {
+    if (null != closure_10[experiment]) {
       const self = this;
-      if ("user" === closure_10[name].kind) {
-        obj = { experiment: name, unit_type: closure_10[name].kind, suppression_source: client_override };
-        self.track(WebAnalyticsEvents.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, obj, { flush: true });
-      } else if ("installation" === closure_10[name].kind) {
+      if ("user" === closure_10[experiment].kind) {
+        const obj2 = { experiment, unit_type: closure_10[experiment].kind, suppression_source };
+        self.track(WebAnalyticsEvents.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, obj2, { flush: true });
+      } else if ("installation" === closure_10[experiment].kind) {
         const _Object = Object;
         const first = Object.keys(obj.installation)[0];
         if (null != first) {
-          const obj2 = { experiment: name, unit_type: closure_10[name].kind, suppression_source: client_override, installation_id: first };
-          self.track(WebAnalyticsEvents.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED, obj2, { flush: true });
+          obj = { experiment, unit_type: closure_10[experiment].kind, suppression_source, installation_id: first };
+          self.track(WebAnalyticsEvents.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED, obj, { flush: true });
         }
-      } else if ("guild" === closure_10[name].kind) {
+      } else if ("guild" === closure_10[experiment].kind) {
         const _Object2 = Object;
         const first1 = Object.keys(obj.guild)[0];
         if (null != first1) {
-          const obj3 = { experiment: name, unit_type: closure_10[name].kind, suppression_source: client_override, guild_id: first1 };
+          const obj3 = { experiment, unit_type: closure_10[experiment].kind, suppression_source, guild_id: first1 };
           self.track(WebAnalyticsEvents.EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED, obj3, { flush: true });
         }
       }

@@ -1,17 +1,15 @@
-// Module ID: 10155
-// Function ID: 10156
+// Module ID: 10224
+// Function ID: 10225
 // Name: parseWaterwheelsCard
-// Dependencies: [109, 3, 12, 10156, 2]
+// Dependencies: [109, 3, 12, 10225, 2]
 // Exports: parseWaterwheelsCard
 
-// Module 10155 (parseWaterwheelsCard)
+// Module 10224 (parseWaterwheelsCard)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod12 from "module_12" /* 12 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10156 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
-
-let server;
 
 function isRecord(id) {
   const obj = _mod12;
@@ -65,17 +63,24 @@ function mapLayout(layout) {
   let members;
   let obj9;
   let online;
+  let partnered;
   const type = layout.type;
   if ("server_row" === type) {
-    ({ guild_id, icon_url, online, members } = layout);
+    const description = layout.description;
+    let tmp9 = null;
+    ({ guild_id, icon_url, online, members, partnered } = layout);
     let obj3 = {};
-    const obj4 = { guildId: guild_id, iconUrl: icon_url, online: Number(online), members: Number(members) };
-    let merged = Object.assign(Object.assign(layout, Object.assign({ guild_id: 0, icon_url: 0, online: 0, members: 0 })));
+    const obj4 = { guildId: guild_id, iconUrl: icon_url, description: tmp9, partnered: true === partnered, online: Number(online), members: Number(members) };
+    let merged = Object.assign(Object.assign(layout, Object.assign({ guild_id: 0, icon_url: 0, online: 0, members: 0, description: 0, partnered: 0 })));
+    if (typeof description === "string") {
+      tmp9 = description;
+    }
     let _Number = Number;
     let _Number2 = Number;
     return obj4;
   } else if ("post" === type) {
     const obj5 = { imageUrl: image_url, actionLabel: action_label };
+    let tmp5 = _objectWithoutProperties;
     ({ image_url, action_label } = layout);
     let merged1 = Object.assign(_objectWithoutProperties(layout, closure_2));
     return obj5;
@@ -83,31 +88,68 @@ function mapLayout(layout) {
     ({ header, items } = layout);
     let obj = {
       header: obj9,
-      items: items.map((server) => {
+      items: items.map((item) => {
           let cover_url;
+          let description;
+          let description2;
           let game_id;
           let guild_id;
+          let hero_url;
           let icon_url;
+          let l30_rank;
           let members;
           let online;
+          let partnered;
+          let server;
           let tmp2;
-          server = server.server;
-          ({ game_id, cover_url } = server);
-          const obj = { gameId: game_id, coverUrl: cover_url, server: tmp2 };
-          const merged = Object.assign(Object.assign(server, Object.assign({ game_id: 0, cover_url: 0, server: 0 })));
+          let tmp3;
+          let tmp4;
+          let tmp5;
+          let tmp9;
+          ({ server, description, hero_url, l30_rank } = item);
+          ({ game_id, cover_url } = item);
+          const obj = { gameId: game_id, description: tmp2, heroUrl: tmp3, l30Rank: tmp4, coverUrl: cover_url, server: tmp5 };
+          const merged = Object.assign(Object.assign(item, Object.assign({ game_id: 0, cover_url: 0, server: 0, description: 0, hero_url: 0, l30_rank: 0 })));
           tmp2 = null;
+          if (typeof description === "string") {
+            tmp2 = null;
+            if ("" !== description.trim()) {
+              tmp2 = description;
+            }
+          }
+          tmp3 = null;
+          if (typeof hero_url === "string") {
+            tmp3 = hero_url;
+          }
+          tmp4 = null;
+          if (typeof l30_rank === "number") {
+            const _Number3 = Number;
+            tmp4 = null;
+            if (Number.isSafeInteger(l30_rank)) {
+              tmp4 = null;
+              if (l30_rank > 0) {
+                tmp4 = l30_rank;
+              }
+            }
+          }
+          tmp5 = null;
           if (null != server) {
-            ({ guild_id, icon_url, online, members } = server);
-            const obj3 = { guildId: guild_id, iconUrl: icon_url, online: Number(online), members: Number(members) };
-            const merged1 = Object.assign(Object.assign(server, Object.assign({ guild_id: 0, icon_url: 0, online: 0, members: 0 })));
+            ({ description: description2, guild_id, icon_url, online, members, partnered } = server);
+            const obj3 = { guildId: guild_id, iconUrl: icon_url, description: tmp9, partnered: true === partnered, online: Number(online), members: Number(members) };
+            const merged1 = Object.assign(Object.assign(server, Object.assign({ guild_id: 0, icon_url: 0, online: 0, members: 0, description: 0, partnered: 0 })));
+            tmp9 = null;
+            if (typeof description2 === "string") {
+              tmp9 = description2;
+            }
             const _Number = Number;
             const _Number2 = Number;
-            tmp2 = obj3;
+            tmp5 = obj3;
           }
           return obj;
         })
     };
     let tmp2 = closure_3;
+    let tmp3 = obj;
     const merged2 = Object.assign(_objectWithoutProperties(layout, closure_3));
     obj9 = { title: null, subtitle: null, iconUrl: null };
     ({ title: obj2.title, subtitle: obj2.subtitle, icon_url: obj2.iconUrl } = header);

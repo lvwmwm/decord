@@ -1,20 +1,20 @@
-// Module ID: 17520
-// Function ID: 17521
+// Module ID: 17638
+// Function ID: 17639
 // Name: HexagonCampaignThemeLegal
-// Dependencies: [19, 17, 5268, 21, 5243, 575, 5866, 1113, 4464, 16981, 5957, 17521, 2]
+// Dependencies: [19, 17, 5331, 21, 5306, 575, 5929, 1113, 4516, 17104, 6020, 17639, 2]
 // Exports: default
 
-// Module 17520 (HexagonCampaignThemeLegal)
+// Module 17638 (HexagonCampaignThemeLegal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4464 from "module_4464" /* 4464 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17521 */;
+import _modDef4516 from "module_4516" /* 4516 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17639 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const openHexagonCampaignLearnMore = tmp2(16981);
+const openHexagonCampaignLearnMore = tmp2(17104);
 const View = react_native.View;
 ({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: closure_4, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: hasOwnProperty } = HexagonCampaignConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -51,8 +51,8 @@ export default function HexagonCampaignThemeLegal(animatedStyles) {
   let tmp2 = null != animatedStyles;
   dependencyMap = tmp2;
   let tmp5 = dependencyMap;
-  let obj = { animated: tmp2, variant: "body-xs/medium", color: str, style: items, children: intl.format(_modDef4464.y2YmJv, obj2) };
-  let Text = animatedStyles(5866).Text;
+  let obj = { animated: tmp2, variant: "body-xs/medium", color: str, style: items, children: intl.format(_modDef4516.y2YmJv, obj2) };
+  let Text = animatedStyles(5929).Text;
   let headerSecondary;
   const tmp4 = animatedStyles;
   if (animatedStyles != null) {

@@ -1,17 +1,17 @@
-// Module ID: 10014
-// Function ID: 10015
+// Module ID: 10081
+// Function ID: 10082
 // Name: PremiumPerkGates
-// Dependencies: [1387, 8780, 6699, 10015, 1398, 2107, 1391, 2]
+// Dependencies: [1390, 8847, 6762, 10082, 1401, 2110, 1394, 2]
 // Exports: canEditDiscriminator, canInstallPremiumApplications, canRedeemPremiumPerks, canStreamQuality, canUploadLargeFiles, canUseAnimatedAvatar, canUseAnimatedEmojis, canUseBadges, canUseClientThemes, canUseCollectibles, canUseCustomBackgrounds, canUseCustomCallSounds, canUseCustomStickersEverywhere, canUseEmojisEverywhere, canUseHighVideoUploadQuality, canUseIncreasedGuildCap, canUseIncreasedMessageLength, canUseMonthlyOrbs, canUseMoreQuestOrbs, canUsePremiumAppIcons, canUsePremiumGuildMemberProfile, canUsePremiumProfileCustomization, canUseQuestOrbMultiplier, canUseShopDiscounts, canUseSoundboardEverywhere, canUseTenureBadge, getMaxFileSizeForPremiumType, hasBoostDiscount, hasFreeBoosts
 
-// Module 10014 (PremiumPerkGates)
-import PerksStateUtils from "PerksStateUtils" /* 1391 */;
-import user2 from "user" /* 1398 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import FileSizeUtils from "FileSizeUtils" /* 6699 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8780 */;
-import ProductCatalog from "ProductCatalog" /* 10015 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+// Module 10081 (PremiumPerkGates)
+import PerksStateUtils from "PerksStateUtils" /* 1394 */;
+import user2 from "user" /* 1401 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
+import FileSizeUtils from "FileSizeUtils" /* 6762 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8847 */;
+import ProductCatalog from "ProductCatalog" /* 10082 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -165,10 +165,10 @@ export function canUseShopDiscounts(currentUser) {
   if (currentUser != null) {
     perks = currentUser.perks;
   }
-  let hasPerkResult = hasPerk(perks, tmp(1398).Perk.SHOP_DISCOUNTS);
+  let hasPerkResult = hasPerk(perks, tmp(1401).Perk.SHOP_DISCOUNTS);
   if (!hasPerkResult) {
     const tmpResult = ProductCatalog;
-    hasPerkResult = tmpResult.canUserUse(tmp(1398).Perk.PREMIUM_COLLECTIBLES, currentUser);
+    hasPerkResult = tmpResult.canUserUse(tmp(1401).Perk.PREMIUM_COLLECTIBLES, currentUser);
   }
   return hasPerkResult;
 }
@@ -179,7 +179,7 @@ export function canUseMoreQuestOrbs(perks) {
   if (perks != null) {
     perks = perks.perks;
   }
-  let hasPerkResult = hasPerk(perks, tmp(1398).Perk.MORE_QUEST_ORBS);
+  let hasPerkResult = hasPerk(perks, tmp(1401).Perk.MORE_QUEST_ORBS);
   if (!hasPerkResult) {
     let isPremiumExactlyResult = null != perks && !perks.isFractionalPremiumWithNoStandardSub();
     if (isPremiumExactlyResult) {

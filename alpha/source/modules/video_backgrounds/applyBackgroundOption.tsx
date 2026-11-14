@@ -1,22 +1,22 @@
-// Module ID: 6172
-// Function ID: 6173
+// Module ID: 6235
+// Function ID: 6236
 // Name: applyBackgroundOption
-// Dependencies: [5, 1385, 6173, 6174, 1072, 6175, 6033, 6180, 1411, 6185, 6178, 6177, 6186, 2]
+// Dependencies: [5, 1388, 6236, 6237, 1072, 6238, 6096, 6243, 1414, 6248, 6241, 6240, 6249, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 6172 (applyBackgroundOption)
+// Module 6235 (applyBackgroundOption)
 import Constants from "Constants" /* 1072 */;
-import AvatarUtils from "AvatarUtils" /* 1411 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 6033 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 6175 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 6177 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 6180 */;
-import getFilterImageDefault from "getFilterImage" /* 6185 */;
-import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 6186 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 6096 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 6238 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 6240 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 6243 */;
+import getFilterImageDefault from "getFilterImage" /* 6248 */;
+import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 6249 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 6173 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6174 */;
+import UserStore from "UserStore" /* 1388 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 6236 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6237 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9;
@@ -227,7 +227,7 @@ obj = function _applyBackgroundOptionLive() {
         flag = true;
       }
       location = tmp22.location;
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -262,7 +262,7 @@ obj = function _applyBackgroundOptionPreview() {
         flag = true;
       }
       location = tmp15.location;
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

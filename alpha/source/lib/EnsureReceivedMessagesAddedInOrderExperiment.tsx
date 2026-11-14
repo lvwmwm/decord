@@ -1,10 +1,10 @@
-// Module ID: 6733
-// Function ID: 6734
+// Module ID: 6796
+// Function ID: 6797
 // Name: EnsureReceivedMessagesAddedInOrderExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 6733 (EnsureReceivedMessagesAddedInOrderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 6796 (EnsureReceivedMessagesAddedInOrderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

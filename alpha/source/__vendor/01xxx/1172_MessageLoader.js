@@ -496,7 +496,7 @@ let items = [
           if (ref === undefined) {
             flag = false;
           }
-          return "flexDirection";
+          return "Path";
         })();
         iter.next();
         return iter;
@@ -543,7 +543,7 @@ let items = [
                   }
                   c4 = 1;
                   c5 = 1;
-                  return { value: "flexDirection", done: true };
+                  return { value: "Path", done: true };
                 }
               } else if (arg0 === 1) {
                 c5 = 3;

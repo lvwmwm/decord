@@ -1,20 +1,20 @@
-// Module ID: 18918
-// Function ID: 18919
+// Module ID: 19072
+// Function ID: 19073
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5883, 18906, 21, 5243, 575, 5839, 5314, 1652, 5876, 1705, 18919, 18613, 18616, 1113, 5252, 18920, 7656, 9436, 2]
+// Dependencies: [19, 5946, 19060, 21, 5306, 575, 5902, 5377, 1655, 5939, 1708, 19073, 18742, 18745, 1113, 5315, 19074, 7722, 9503, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 18918 (GuildsBarAnimatedItemWrapper)
+// Module 19072 (GuildsBarAnimatedItemWrapper)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
-import native from "native" /* 5314 */;
-import useToken from "useToken" /* 5839 */;
-import react_native from "react-native" /* 5883 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
+import native from "native" /* 5377 */;
+import useToken from "useToken" /* 5902 */;
+import react_native from "react-native" /* 5946 */;
 import react from "react" /* 19 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18906 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 19060 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,23 +1,23 @@
-// Module ID: 7824
-// Function ID: 7825
+// Module ID: 7890
+// Function ID: 7891
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 5244, 6906, 1388, 21, 1652, 5243, 575, 504, 5485, 5876, 7825, 5252, 1113, 5839, 5315, 7364, 7828, 1411, 5866, 7831, 1187, 2]
+// Dependencies: [32, 19, 17, 5307, 6969, 1391, 21, 1655, 5306, 575, 504, 5548, 5939, 7891, 5315, 1113, 5902, 5378, 7428, 7894, 1414, 5929, 7897, 1187, 2]
 // Exports: default
 
-// Module 7824 (GuildOnboardingPromptOptionButton)
+// Module 7890 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import EmojiConstants from "EmojiConstants" /* 1388 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
-import timing_timing from "timing/timing" /* 5485 */;
+import EmojiConstants from "EmojiConstants" /* 1391 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
+import timing_timing from "timing/timing" /* 5548 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import EmojiStore from "EmojiStore" /* 6906 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import EmojiStore from "EmojiStore" /* 6969 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -32,8 +32,8 @@ let react = react_mod;
 let View = react_native.View;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: c9, jsxs: c10 } = Fragment);
-let obj = { duration: 200, easing: Easing.out(_mod1652.Easing.ease) };
-Easing = _mod1652.Easing;
+let obj = { duration: 200, easing: Easing.out(_mod1655.Easing.ease) };
+Easing = _mod1655.Easing;
 let createStyles = createStyles_mod;
 let obj2 = { container: obj3, optionButton: { paddingVertical: 12, paddingHorizontal: 16, display: "flex", flexDirection: "row", alignItems: "center" }, optionTextEmoji: { fontSize: 24, lineHeight: 24, marginRight: 12, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24, marginRight: 12 }, optionText: { flexShrink: 1 }, checkIcon: size, newBadgeWrapper: { position: "absolute", top: -6, right: -6 }, newBadge: { fontWeight: "bold" }, roleCount: rect };
 obj3 = { borderRadius: nativeDefault.radii.md, borderWidth: 2, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 8 };
@@ -149,14 +149,14 @@ export default function PromptOptionButton(option) {
   let obj2 = option(504);
   let items1 = [first];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => first.useReducedMotion);
-  let tmp7 = option(1652);
+  let tmp7 = option(1655);
   let items2 = [closure_13, selected, , , , , ];
   const useAnimatedStyle = tmp7.useAnimatedStyle;
-  items2[2] = option(5485).withTiming;
-  items2[3] = option(1652).Easing;
+  items2[2] = option(5548).withTiming;
+  items2[3] = option(1655).Easing;
   items2[4] = stateFromStores1;
-  items2[5] = option(1652).withSequence;
-  items2[6] = option(5876).withSpring;
+  items2[5] = option(1655).withSequence;
+  items2[6] = option(5939).withSpring;
   let c0;
   let c1;
   let c2;
@@ -193,7 +193,7 @@ export default function PromptOptionButton(option) {
   GuildOnboardingPromptOptionButtonTsx1.__workletHash = 7034596428204;
   GuildOnboardingPromptOptionButtonTsx1.__initData = tmp8;
   const animatedStyle = useAnimatedStyle(GuildOnboardingPromptOptionButtonTsx1);
-  const tmp17 = selected(7825)(guildId);
+  const tmp17 = selected(7891)(guildId);
   react = tmp17;
   num = 0;
   if (null != tmp17) {
@@ -247,11 +247,11 @@ export default function PromptOptionButton(option) {
     }
   }, items6);
   const items7 = [closure_14, first, , , , ];
-  const useAnimatedStyle2 = tmp3(1652).useAnimatedStyle;
-  tmp3(1652);
-  items7[2] = tmp3(1652).withDelay;
-  items7[3] = tmp3(5485).withTiming;
-  items7[4] = tmp3(1652).Easing;
+  const useAnimatedStyle2 = tmp3(1655).useAnimatedStyle;
+  tmp3(1655);
+  items7[2] = tmp3(1655).withDelay;
+  items7[3] = tmp3(5548).withTiming;
+  items7[4] = tmp3(1655).Easing;
   items7[5] = stateFromStores1;
   c0 = undefined;
   c1 = undefined;
@@ -296,7 +296,7 @@ export default function PromptOptionButton(option) {
   GuildOnboardingPromptOptionButtonTsx2.__workletHash = 13064995616524;
   GuildOnboardingPromptOptionButtonTsx2.__initData = tmp29;
   const animatedStyle2 = useAnimatedStyle2(GuildOnboardingPromptOptionButtonTsx2);
-  const tmp3Result11 = tmp3(1652);
+  const tmp3Result11 = tmp3(1655);
   sharedValue = tmp3Result11.useSharedValue(1);
   let id;
   const tmp37 = canBeNew && option.isUnseen;
@@ -365,18 +365,18 @@ export default function PromptOptionButton(option) {
       title = tmp.title;
     }
   }, items9);
-  const tmp3Result12 = tmp3(5839);
+  const tmp3Result12 = tmp3(5902);
   const token = tmp3Result12.useToken(tmp16(575).colors.BORDER_SUBTLE);
-  const tmp3Result13 = tmp3(5839);
+  const tmp3Result13 = tmp3(5902);
   const token1 = tmp3Result13.useToken(tmp16(575).colors.BACKGROUND_BRAND);
-  const tmp3Result14 = tmp3(5839);
+  const tmp3Result14 = tmp3(5902);
   const token2 = tmp3Result14.useToken(tmp16(575).colors.BORDER_STRONG);
-  const tmp3Result15 = tmp3(5839);
+  const tmp3Result15 = tmp3(5902);
   const token3 = tmp3Result15.useToken(tmp16(575).colors.BACKGROUND_BASE_LOWEST);
   const items10 = [closure_15, , , ];
-  const useDerivedValue = tmp3(1652).useDerivedValue;
-  tmp3(1652);
-  items10[1] = tmp3(5485).withTiming;
+  const useDerivedValue = tmp3(1655).useDerivedValue;
+  tmp3(1655);
+  items10[1] = tmp3(5548).withTiming;
   items10[2] = selected;
   items10[3] = closure_11;
   c0 = undefined;
@@ -399,9 +399,9 @@ export default function PromptOptionButton(option) {
   GuildOnboardingPromptOptionButtonTsx3.__initData = tmp49;
   const derivedValue = useDerivedValue(GuildOnboardingPromptOptionButtonTsx3);
   const items12 = [closure_16, , , ];
-  const useDerivedValue2 = tmp3(1652).useDerivedValue;
-  tmp3(1652);
-  items12[1] = tmp3(5485).withTiming;
+  const useDerivedValue2 = tmp3(1655).useDerivedValue;
+  tmp3(1655);
+  items12[1] = tmp3(5548).withTiming;
   items12[2] = tmp37;
   items12[3] = closure_11;
   c0 = undefined;
@@ -424,9 +424,9 @@ export default function PromptOptionButton(option) {
   GuildOnboardingPromptOptionButtonTsx4.__initData = tmp55;
   const derivedValue2 = useDerivedValue2(GuildOnboardingPromptOptionButtonTsx4);
   const items14 = [closure_17, , , , , , , ];
-  const useAnimatedStyle3 = tmp3(1652).useAnimatedStyle;
-  tmp3(1652);
-  items14[1] = tmp3(1652).interpolateColor;
+  const useAnimatedStyle3 = tmp3(1655).useAnimatedStyle;
+  tmp3(1655);
+  items14[1] = tmp3(1655).interpolateColor;
   items14[2] = derivedValue2;
   items14[3] = token;
   items14[4] = token1;
@@ -462,7 +462,7 @@ export default function PromptOptionButton(option) {
   c0 = undefined;
   c1 = undefined;
   [tmp70, tmp71, tmp72] = items16;
-  const tmp3Result19 = tmp3(1652);
+  const tmp3Result19 = tmp3(1655);
   class GuildOnboardingPromptOptionButtonTsx6 {
     constructor() {
       let items;
@@ -482,12 +482,12 @@ export default function PromptOptionButton(option) {
   GuildOnboardingPromptOptionButtonTsx6.__workletHash = 14710088829666;
   GuildOnboardingPromptOptionButtonTsx6.__initData = tmp70;
   const animatedStyle1 = tmp3Result19.useAnimatedStyle(GuildOnboardingPromptOptionButtonTsx6);
-  const tmp3Result20 = tmp3(5315);
+  const tmp3Result20 = tmp3(5378);
   const checkboxA11yNative = tmp3Result20.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   let obj3 = { style: items18, children: items21 };
   items18 = [tmp2.container, animatedStyle1, animatedStyle3];
-  View = tmp16(1652).View;
+  View = tmp16(1655).View;
   let obj4 = {
     activeOpacity: 0.6,
     style: tmp2.optionButton,
@@ -502,23 +502,23 @@ export default function PromptOptionButton(option) {
     onPressIn() {
       let Easing;
       set = sharedValue.set;
-      const withSequence = _mod1652.withSequence;
-      _mod1652;
+      const withSequence = _mod1655.withSequence;
+      _mod1655;
       obj = timing_timing;
       const withTimingResult = obj.withTiming(1, { duration: 0 });
-      const obj2 = { duration: 200, easing: Easing.out(_mod1652.Easing.ease) };
+      const obj2 = { duration: 200, easing: Easing.out(_mod1655.Easing.ease) };
       const withTiming = timing_timing.withTiming;
       timing_timing;
-      Easing = _mod1652.Easing;
+      Easing = _mod1655.Easing;
       const result = set(withSequence(withTimingResult, withTiming(1.02, obj2)));
     },
     onPressOut() {
       let Easing;
       set = sharedValue.set;
-      obj = { duration: 100, easing: Easing.out(_mod1652.Easing.ease) };
+      obj = { duration: 100, easing: Easing.out(_mod1655.Easing.ease) };
       const withTiming = timing_timing.withTiming;
       timing_timing;
-      Easing = _mod1652.Easing;
+      Easing = _mod1655.Easing;
       const result = set(withTiming(1, obj));
     },
     accessibilityRole,
@@ -527,7 +527,7 @@ export default function PromptOptionButton(option) {
     children: items19
   };
   let id1;
-  const PressableOpacity = tmp3(7364).PressableOpacity;
+  const PressableOpacity = tmp3(7428).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
@@ -550,12 +550,12 @@ export default function PromptOptionButton(option) {
     obj6 = { textEmojiStyle: null, fastImageStyle: null, src: emojiURL, name: str };
     ({ optionTextEmoji: obj13.textEmojiStyle, optionImageEmoji: obj13.fastImageStyle } = tmp2);
     emojiURL = undefined;
-    tmp16Result = selected(7828);
+    tmp16Result = selected(7894);
     const tmp80 = num;
     if (null != stateFromStores) {
       const obj7 = { id: null, animated: null, size };
       ({ id: obj15.id, animated: obj15.animated } = stateFromStores);
-      const tmp16Result2 = selected(1411);
+      const tmp16Result2 = selected(1414);
       emojiURL = tmp16Result2.getEmojiURL(obj7);
     }
     str = undefined;
@@ -574,12 +574,12 @@ export default function PromptOptionButton(option) {
   const obj8 = { style: tmp2.optionText, children: items20 };
   items20 = [, ];
   const obj9 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: option.title };
-  items20[0] = ref(tmp3(5866).Text, obj9);
+  items20[0] = ref(tmp3(5929).Text, obj9);
   let tmp85Result = null != option.description && option.description.length > 0;
   const tmp84 = num;
   if (tmp85Result) {
     const obj10 = { variant: "body-xs/medium", color: "text-default", children: option.description };
-    tmp85Result = tmp85(tmp3(5866).Text, obj10);
+    tmp85Result = tmp85(tmp3(5929).Text, obj10);
   }
   items20[1] = tmp85Result;
   items19[1] = sharedValue(tmp84, obj8);
@@ -588,9 +588,9 @@ export default function PromptOptionButton(option) {
   if (num > 0) {
     const obj11 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items22, children: ref(Text, obj12) };
     items22 = [tmp2.roleCount, animatedStyle2];
-    const View2 = tmp16(1652).View;
+    const View2 = tmp16(1655).View;
     obj12 = { variant: "body-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1113).t.EgKsZA, obj14) };
-    Text = tmp3(5866).Text;
+    Text = tmp3(5929).Text;
     intl = tmp3(1113).intl;
     obj14 = { memberCount: num };
     tmp85Result2 = tmp85(View2, obj11);
@@ -598,9 +598,9 @@ export default function PromptOptionButton(option) {
   items21[1] = tmp85Result2;
   const obj16 = { style: items23, children: ref(CheckmarkSmallIcon, obj17) };
   items23 = [tmp2.checkIcon, animatedStyle];
-  const View3 = tmp16(1652).View;
+  const View3 = tmp16(1655).View;
   obj17 = { size: "xs", color: selected(575).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(7831).CheckmarkSmallIcon;
+  CheckmarkSmallIcon = tmp3(7897).CheckmarkSmallIcon;
   items21[2] = ref(View3, obj16);
   if (canBeNew) {
     canBeNew = !selected;

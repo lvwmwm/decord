@@ -1,14 +1,14 @@
-// Module ID: 9035
-// Function ID: 9036
+// Module ID: 9102
+// Function ID: 9103
 // Name: PhoneCallIcon
-// Dependencies: [19, 21, 575, 5956, 9036, 2]
+// Dependencies: [19, 21, 575, 6019, 9103, 2]
 // Exports: PhoneCallIcon
 
-// Module 9035 (PhoneCallIcon)
+// Module 9102 (PhoneCallIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 9036 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 9103 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

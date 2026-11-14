@@ -1,26 +1,26 @@
-// Module ID: 12617
-// Function ID: 12618
+// Module ID: 12713
+// Function ID: 12714
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 6953, 5092, 10934, 10935, 12618, 1072, 21, 10938, 12619, 5429, 12622, 12806, 11761, 12807, 1652, 1705, 5438, 13017, 504, 1493, 12620, 13018, 7852, 7871, 13931, 6837, 5535, 10940, 2]
+// Dependencies: [32, 19, 7016, 5155, 11003, 11004, 12714, 1072, 21, 11007, 12715, 5492, 12718, 12902, 11827, 12903, 1655, 1708, 5501, 13113, 504, 1496, 12716, 13114, 7918, 7937, 14036, 6900, 5598, 11009, 2]
 
-// Module 12617 (ChannelCallModal)
+// Module 12713 (ChannelCallModal)
 import Constants2 from "Constants" /* 1072 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5429 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6837 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10935 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 10938 */;
-import RevealProvider from "RevealProvider" /* 12619 */;
-import CameraPreviewDefault from "CameraPreview" /* 12622 */;
-import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 12806 */;
-import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 12807 */;
-import RouteManagerUtils from "RouteManagerUtils" /* 13018 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11004 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 11007 */;
+import RevealProvider from "RevealProvider" /* 12715 */;
+import CameraPreviewDefault from "CameraPreview" /* 12718 */;
+import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 12902 */;
+import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 12903 */;
+import RouteManagerUtils from "RouteManagerUtils" /* 13114 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import ChannelCallStore from "ChannelCallStore" /* 10934 */;
-import Constants from "Constants" /* 12618 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelCallStore from "ChannelCallStore" /* 11003 */;
+import Constants from "Constants" /* 12714 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -219,7 +219,7 @@ let closure_30 = react.memo(function SwipeableCallModal(channelId) {
       let c0;
       let c1;
       [tmp9, tmp10, tmp11] = items;
-      const obj = _mod1705;
+      const obj = _mod1708;
       class ChannelCallModalTsx4 {
         constructor() {
           result = closure_0.set(-closure_1);
@@ -231,7 +231,7 @@ let closure_30 = react.memo(function SwipeableCallModal(channelId) {
       ChannelCallModalTsx4.__workletHash = 17212390568465;
       ChannelCallModalTsx4.__initData = tmp9;
       obj.scheduleOnUI(ChannelCallModalTsx4);
-      const tmp3Result = _mod1705;
+      const tmp3Result = _mod1708;
       tmp3Result.scheduleOnRN(RouteManagerUtils.transitionToVoiceRoute, guildId, channelId);
     }
   }, items4);

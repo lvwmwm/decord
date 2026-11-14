@@ -1,14 +1,14 @@
-// Module ID: 19828
-// Function ID: 19829
+// Module ID: 19984
+// Function ID: 19985
 // Name: useControlsHoverGesture
-// Dependencies: [19, 11919, 11917, 11918, 1652, 5535, 1705, 2]
+// Dependencies: [19, 11985, 11983, 11984, 1655, 5598, 1708, 2]
 // Exports: default
 
-// Module 19828 (useControlsHoverGesture)
-import _mod1705 from "module_1705" /* 1705 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11917 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+// Module 19984 (useControlsHoverGesture)
+import _mod1708 from "module_1708" /* 1708 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ export default function useControlsHoverGesture() {
     const items = [closure_6, connected, mode, VoicePanelModes, controlsSpecs, VoicePanelControlsModes, , , , , ];
     const onUpdate = Gesture.Hover().onUpdate;
     Gesture.Hover();
-    items[6] = _mod1705.scheduleOnRN;
+    items[6] = _mod1708.scheduleOnRN;
     items[7] = showControls;
     items[8] = sharedValue;
     items[9] = 500;

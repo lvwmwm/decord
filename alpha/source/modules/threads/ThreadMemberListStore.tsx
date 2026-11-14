@@ -1,22 +1,22 @@
-// Module ID: 7224
-// Function ID: 7225
+// Module ID: 7288
+// Function ID: 7289
 // Name: ThreadMemberListStore
-// Dependencies: [32, 5092, 5155, 7225, 6005, 7252, 1385, 1072, 12, 11, 5180, 5309, 1380, 504, 572, 2]
+// Dependencies: [32, 5155, 5218, 7289, 6068, 7316, 1388, 1072, 12, 11, 5243, 5372, 1255, 504, 572, 2]
 
-// Module 7224 (ThreadMemberListStore)
+// Module 7288 (ThreadMemberListStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5180 */;
-import UserUtilsDefault from "UserUtils" /* 5309 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
+import UserUtilsDefault from "UserUtils" /* 5372 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7225 */;
-import PresenceStore from "PresenceStore" /* 6005 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7252 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7289 */;
+import PresenceStore from "PresenceStore" /* 6068 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

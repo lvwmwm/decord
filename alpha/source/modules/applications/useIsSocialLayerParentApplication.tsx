@@ -1,12 +1,12 @@
-// Module ID: 7344
-// Function ID: 7345
+// Module ID: 7408
+// Function ID: 7409
 // Name: useIsSocialLayerParentApplication
-// Dependencies: [19, 1072, 6994, 2]
+// Dependencies: [19, 1072, 7057, 2]
 // Exports: default, getIsSocialLayerParentApplication
 
-// Module 7344 (useIsSocialLayerParentApplication)
+// Module 7408 (useIsSocialLayerParentApplication)
 import Constants from "Constants" /* 1072 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6994 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 7057 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 19830
-// Function ID: 19831
+// Module ID: 19986
+// Function ID: 19987
 // Name: MobileGoLiveEntrypointExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 19830 (MobileGoLiveEntrypointExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 19986 (MobileGoLiveEntrypointExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

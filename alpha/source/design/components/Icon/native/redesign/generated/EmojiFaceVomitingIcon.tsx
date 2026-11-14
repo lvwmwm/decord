@@ -1,14 +1,14 @@
-// Module ID: 17875
-// Function ID: 17876
+// Module ID: 17995
+// Function ID: 17996
 // Name: EmojiFaceVomitingIcon
-// Dependencies: [19, 21, 575, 5956, 17876, 2]
+// Dependencies: [19, 21, 575, 6019, 17996, 2]
 // Exports: EmojiFaceVomitingIcon
 
-// Module 17875 (EmojiFaceVomitingIcon)
+// Module 17995 (EmojiFaceVomitingIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 17876 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 17996 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

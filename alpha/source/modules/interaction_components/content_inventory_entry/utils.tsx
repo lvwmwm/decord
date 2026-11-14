@@ -1,12 +1,12 @@
-// Module ID: 9321
-// Function ID: 9322
+// Module ID: 9388
+// Function ID: 9389
 // Name: utils
-// Dependencies: [1072, 1403, 2]
+// Dependencies: [1072, 1406, 2]
 // Exports: isContentInventoryFallbackEmbed
 
-// Module 9321 (utils)
+// Module 9388 (utils)
 import Constants from "Constants" /* 1072 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 const MessageEmbedFlags = Constants.MessageEmbedFlags;

@@ -1,27 +1,27 @@
-// Module ID: 18871
-// Function ID: 18872
+// Module ID: 19000
+// Function ID: 19001
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 5244, 5176, 5114, 1072, 21, 5243, 575, 504, 1411, 1446, 1493, 7168, 7167, 6854, 6859, 1113, 9436, 5957, 10321, 1187, 5866, 5873, 9081, 7922, 7356, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 5239, 5177, 1072, 21, 5306, 575, 504, 1414, 1449, 1496, 7231, 7230, 6917, 6922, 1113, 9503, 6020, 10390, 1187, 5929, 5936, 9148, 7988, 7420, 2]
 // Exports: default
 
-// Module 18871 (GameCommunityMultiGuildUpsellCard)
+// Module 19000 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
-import transitionToGuild from "transitionToGuild" /* 7168 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7356 */;
-import IconButton2 from "IconButton" /* 7922 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
+import transitionToGuild from "transitionToGuild" /* 7231 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7420 */;
+import IconButton2 from "IconButton" /* 7988 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import LurkingStore from "LurkingStore" /* 5176 */;
-import GuildStore from "GuildStore" /* 5114 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import LurkingStore from "LurkingStore" /* 5239 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;

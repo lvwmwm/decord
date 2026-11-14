@@ -1,15 +1,15 @@
-// Module ID: 19922
-// Function ID: 19923
+// Module ID: 20079
+// Function ID: 20080
 // Name: useControlsTranslation
-// Dependencies: [19, 11919, 11922, 11918, 1652, 5876, 2]
+// Dependencies: [19, 11985, 11988, 11984, 1655, 5939, 2]
 // Exports: default
 
-// Module 19922 (useControlsTranslation)
-import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11918 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11922 */;
+// Module 20079 (useControlsTranslation)
+import _mod1655 from "module_1655" /* 1655 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11988 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export default function useControlsTranslation(arg0, arg1, arg2) {
   let tmp7;
   let tmp8;
   const useReducedMotion = react.useContext(VoicePanelStateContextDefault).useReducedMotion;
-  let tmp = _mod1652;
+  let tmp = _mod1655;
   let items = [closure_6, , , , , , ];
   const useAnimatedStyle = tmp.useAnimatedStyle;
   items[1] = spring_spring.withSpring;

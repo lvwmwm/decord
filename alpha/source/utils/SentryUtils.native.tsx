@@ -1,14 +1,14 @@
 // Module ID: 1242
 // Function ID: 1243
 // Name: SentryUtils
-// Dependencies: [17, 3, 1243, 674, 16463, 673, 1376, 2]
+// Dependencies: [17, 3, 1243, 674, 16586, 673, 1379, 2]
 
 // Module 1242 (SentryUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 673 */;
 import _modAll674 from "module_674" /* 674 */;
-import react_nativeAll from "react-native" /* 1376 */;
+import react_nativeAll from "react-native" /* 1379 */;
 import SentryInitUtils_mod from "SentryInitUtils" /* 1243 */;
 import size from "module_2" /* 2 */;
 
@@ -60,6 +60,9 @@ let obj = {
         }
         if (null != closure_2.extra) {
           setTags.setExtras(closure_2.extra);
+        }
+        if (null != closure_2.fingerprint) {
+          setTags.setFingerprint(closure_2.fingerprint);
         }
       }
       const obj = _modAll674;

@@ -1,22 +1,22 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 10911
+// Function ID: 10912
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1072, 21, 5243, 8812, 7654, 1411, 5957, 10843, 7364, 1113, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5306, 8879, 7720, 1414, 6020, 10912, 7428, 1113, 2]
 // Exports: default
 
-// Module 10842 (IconUploader)
+// Module 10911 (IconUploader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1411 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import Pressables from "Pressables" /* 7364 */;
-import GuildIcon from "GuildIcon" /* 7654 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10843 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import Pressables from "Pressables" /* 7428 */;
+import GuildIcon from "GuildIcon" /* 7720 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10912 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

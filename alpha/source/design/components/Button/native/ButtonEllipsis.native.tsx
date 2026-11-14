@@ -1,17 +1,17 @@
-// Module ID: 5886
-// Function ID: 5887
+// Module ID: 5949
+// Function ID: 5950
 // Name: ButtonEllipsis
-// Dependencies: [19, 17, 21, 1652, 5243, 575, 5485, 5880, 5836, 2]
+// Dependencies: [19, 17, 21, 1655, 5306, 575, 5548, 5943, 5899, 2]
 // Exports: Ellipsis
 
-// Module 5886 (ButtonEllipsis)
+// Module 5949 (ButtonEllipsis)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let Easing;
@@ -85,8 +85,8 @@ function EllipsisCircle(offset) {
 }
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let obj = { duration: 500, easing: Easing.inOut(_mod1652.Easing.quad) };
-Easing = _mod1652.Easing;
+let obj = { duration: 500, easing: Easing.inOut(_mod1655.Easing.quad) };
+Easing = _mod1655.Easing;
 let closure_6 = createStyles.createStyles((arg0, arg1, backgroundColor) => {
   let num;
   let num2;
@@ -114,7 +114,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1, backgroundColor) => {
   }
   return { circle };
 });
-let items = [{ code: "(function withEllipsisAnimation_ButtonEllipsisNativeTsx1(offset,value){let[ELLIPSIS_APPEAR_DURATION,withDelay,withRepeat,withTiming,ELLIPSIS_APPEAR_TIMING]=this.__closure;const animationTimeMs=ELLIPSIS_APPEAR_DURATION;const animationStaggerTimeMs=animationTimeMs/3;return withDelay(offset*animationStaggerTimeMs,withRepeat(withTiming(value,ELLIPSIS_APPEAR_TIMING,'animate-always'),-1,true));})" }, 500, _mod1652.withDelay, _mod1652.withRepeat, timing_timing.withTiming, obj];
+let items = [{ code: "(function withEllipsisAnimation_ButtonEllipsisNativeTsx1(offset,value){let[ELLIPSIS_APPEAR_DURATION,withDelay,withRepeat,withTiming,ELLIPSIS_APPEAR_TIMING]=this.__closure;const animationTimeMs=ELLIPSIS_APPEAR_DURATION;const animationStaggerTimeMs=animationTimeMs/3;return withDelay(offset*animationStaggerTimeMs,withRepeat(withTiming(value,ELLIPSIS_APPEAR_TIMING,'animate-always'),-1,true));})" }, 500, _mod1655.withDelay, _mod1655.withRepeat, timing_timing.withTiming, obj];
 let c0;
 let c1;
 let c2;

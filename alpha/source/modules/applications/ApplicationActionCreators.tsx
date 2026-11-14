@@ -1,14 +1,14 @@
-// Module ID: 6992
-// Function ID: 6993
+// Module ID: 7055
+// Function ID: 7056
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6993, 2140, 2162, 1072, 572, 1282, 504, 2]
+// Dependencies: [5, 7056, 2143, 2165, 1072, 572, 1285, 504, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 6992 (ApplicationActionCreators)
+// Module 7055 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6993 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7056 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import Constants from "Constants" /* 1072 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
@@ -63,7 +63,7 @@ let obj = function _fetchApplication() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

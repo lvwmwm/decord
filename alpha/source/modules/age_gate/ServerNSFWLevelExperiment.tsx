@@ -1,11 +1,11 @@
-// Module ID: 5111
-// Function ID: 5112
+// Module ID: 5174
+// Function ID: 5175
 // Name: ServerNSFWLevelExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: isServerNSFWLevelEnabled
 
-// Module 5111 (ServerNSFWLevelExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 5174 (ServerNSFWLevelExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

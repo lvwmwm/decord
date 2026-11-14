@@ -1,9 +1,9 @@
-// Module ID: 10311
-// Function ID: 10312
+// Module ID: 10380
+// Function ID: 10381
 // Name: HTMLTextTypes
 // Dependencies: [2]
 
-// Module 10311 (HTMLTextTypes)
+// Module 10380 (HTMLTextTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/html_parser/HTMLTextTypes.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 10233
-// Function ID: 10234
+// Module ID: 10302
+// Function ID: 10303
 // Name: RiotGamesNeutralIcon
-// Dependencies: [19, 21, 575, 5956, 10234, 2]
+// Dependencies: [19, 21, 575, 6019, 10303, 2]
 // Exports: RiotGamesNeutralIcon
 
-// Module 10233 (RiotGamesNeutralIcon)
+// Module 10302 (RiotGamesNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10234 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 10303 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

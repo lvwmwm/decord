@@ -1,15 +1,17 @@
-// Module ID: 19814
-// Function ID: 19815
+// Module ID: 19202
+// Function ID: 19203
 // Name: VoicePanelDockStatusStore
-// Dependencies: [1385, 1254, 5158, 12, 2]
-// Exports: initDockStatus, releaseDockStatus, setDockHasStreamers, setDockSpeakingIds, showVoiceMoment, useDockHasStreamers, useDockSubject
+// Dependencies: [1388, 1258, 5221, 12, 2]
+// Exports: initDockStatus, releaseDockStatus, setDockActiveSpeakers, setDockHasStreamers, showVoiceMoment, useDockHasStreamers, useDockSubject, useDockUserPlayingSoundboardId
 
-// Module 19814 (VoicePanelDockStatusStore)
-import _slicedToArray from "_slicedToArray" /* 5158 */;
-import UserStore from "UserStore" /* 1385 */;
-import module_1254 from "module_1254" /* 1254 */;
+// Module 19202 (VoicePanelDockStatusStore)
+import _slicedToArray from "_slicedToArray" /* 5221 */;
+import UserStore from "UserStore" /* 1388 */;
+import module_1258 from "module_1258" /* 1258 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
+
+let map;
 
 function endMoment() {
   let moment;
@@ -39,7 +41,11 @@ let closure_3 = { joined: 3000, left: 1500, streaming: 3000 };
 let c4 = null;
 let closure_5 = [];
 let c6 = null;
-let closure_7 = module_1254.createWithEqualityFn(() => ({ channelId: null, moment: null, speakerUserId: null, hasStreamers: false }));
+let closure_7 = module_1258.createWithEqualityFn(() => {
+  const obj = { channelId: null, moment: null, speakerUserId: null, hasStreamers: false, playingSoundboardSounds: new Map() };
+  new Map();
+  return obj;
+});
 let module_12 = module_12_mod;
 let closure_8 = module_12.throttle((speakerUserId) => {
   const hasItem = null == speakerUserId || closure_5.includes(speakerUserId);
@@ -79,6 +85,22 @@ export function useDockHasStreamers(arg0) {
   let closure_0 = arg0;
   return closure_7((channelId) => channelId.channelId === closure_0 && channelId.hasStreamers);
 }
+export function useDockUserPlayingSoundboardId(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return closure_7((channelId) => {
+    let tmp = null;
+    if (channelId.channelId === closure_0) {
+      const playingSoundboardSounds = channelId.playingSoundboardSounds;
+      let value = playingSoundboardSounds.get(closure_1);
+      if (value == null) {
+        value = null;
+      }
+      tmp = value;
+    }
+    return tmp;
+  });
+}
 export function setDockHasStreamers(arg0, hasStreamers) {
   const obj = closure_7;
   if (closure_7.getState().channelId === arg0) {
@@ -86,9 +108,12 @@ export function setDockHasStreamers(arg0, hasStreamers) {
     obj.setState(obj2);
   }
 }
-export function setDockSpeakingIds(arg0, arr) {
+export function setDockActiveSpeakers(arg0, arr, playingSoundboardSounds) {
+  const obj = closure_7;
   if (closure_7.getState().channelId === arg0) {
     closure_5 = arr;
+    const obj2 = { playingSoundboardSounds };
+    obj.setState(obj2);
     let atResult = arr.at(-1);
     if (atResult == null) {
       atResult = null;
@@ -141,11 +166,13 @@ export function initDockStatus(channelId) {
   closure_9.cancel();
   closure_5 = [];
   c6 = null;
-  const obj = { channelId, moment: null, speakerUserId: null, hasStreamers: false };
-  closure_7.setState(obj);
+  const setState = closure_7.setState;
+  const obj = { channelId, moment: null, speakerUserId: null, hasStreamers: false, playingSoundboardSounds: new Map() };
+  new Map();
+  setState(obj);
 }
 export function releaseDockStatus(arg0) {
-  const obj = closure_7;
+  const tmp = closure_7;
   if (closure_7.getState().channelId === arg0) {
     if (null != c4) {
       const _clearTimeout = clearTimeout;
@@ -156,6 +183,12 @@ export function releaseDockStatus(arg0) {
     closure_9.cancel();
     closure_5 = [];
     c6 = null;
-    obj.setState({ channelId: null, moment: null, speakerUserId: null, hasStreamers: false });
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    const setState = tmp.setState;
+    const obj = { channelId: null, moment: null, speakerUserId: null, hasStreamers: false, playingSoundboardSounds: map };
+    map = new Map();
+    setState(obj);
   }
 }

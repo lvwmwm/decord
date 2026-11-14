@@ -1,14 +1,14 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8091
+// Function ID: 8092
 // Name: AnnouncementsIcon
-// Dependencies: [19, 21, 575, 5956, 7975, 2]
+// Dependencies: [19, 21, 575, 6019, 8040, 2]
 // Exports: AnnouncementsIcon
 
-// Module 8026 (AnnouncementsIcon)
+// Module 8091 (AnnouncementsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 7975 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 8040 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

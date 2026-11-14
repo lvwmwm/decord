@@ -1,16 +1,16 @@
-// Module ID: 2175
-// Function ID: 2176
+// Module ID: 2178
+// Function ID: 2179
 // Name: SubscriptionPlanStore
-// Dependencies: [2168, 1072, 1387, 2158, 504, 11, 572, 2]
+// Dependencies: [2171, 1072, 1390, 2161, 504, 11, 572, 2]
 
-// Module 2175 (SubscriptionPlanStore)
+// Module 2178 (SubscriptionPlanStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FunctionUtils from "FunctionUtils" /* 2158 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2168 */;
+import FunctionUtils from "FunctionUtils" /* 2161 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2171 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let set2, set3;
@@ -21,7 +21,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f85781 = (id) => {
+const f86853 = (id) => {
   const obj = { id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 };
   addSubscriptionPlan(SubscriptionPlanRecord.createFromServer(obj));
 };
@@ -81,7 +81,7 @@ function reset() {
   const obj4 = FunctionUtils;
   obj4.clearObject(closure_15);
   const items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-  const item = items.forEach(f85781);
+  const item = items.forEach(f86853);
 }
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
 ({ SubscriptionIntervalTypes, SubscriptionPlanInfo } = PremiumConstants);
@@ -94,7 +94,7 @@ let set1 = new Set();
 const gesture = {};
 let closure_15 = {};
 let items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-let item = items.forEach(f85781);
+let item = items.forEach(f86853);
 let items1 = [, , ];
 ({ DAY: arr2[0], MONTH: arr2[1], YEAR: arr2[2] } = SubscriptionIntervalTypes);
 const Store = get_initializedDefault.Store;
@@ -244,14 +244,22 @@ let obj = {
     }
   },
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: function handleEntitlementGiftsFetchSuccess(arg0) {
+    let flag = false;
     const iter = arg0.entitlements[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      if (null != nextResult.subscription_plan) {
-        let tmp5 = addSubscriptionPlanFromServer(tmp2.subscription_plan);
+      let tmp2 = nextResult;
+      let tmp3 = null != nextResult.subscription_plan;
+      if (tmp3) {
+        tmp3 = null == closure_10[tmp2.subscription_plan.id];
+      }
+      if (tmp3) {
+        let tmp8 = addSubscriptionPlanFromServer(tmp2.subscription_plan);
+        flag = true;
       }
       continue;
     }
+    return flag;
   },
   LOGOUT: reset
 };

@@ -1,17 +1,17 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 17070
+// Function ID: 17071
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1072, 1387, 21, 5243, 7852, 9539, 1252, 5873, 11103, 1113, 9368, 2]
+// Dependencies: [19, 1072, 1390, 21, 5306, 7918, 9606, 1256, 5936, 11170, 1113, 9436, 2]
 // Exports: default
 
-// Module 16947 (UserProfileUpsellButton)
+// Module 17070 (UserProfileUpsellButton)
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11103 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11170 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,8 +29,8 @@ export default function UserProfileUpsellButton(analyticsObject) {
   let analyticsLocations;
   const label = analyticsObject.label;
   const tmp = closure_10();
-  analyticsLocations = analyticsLocations(7852)().analyticsLocations;
-  let obj = analyticsObject(9539);
+  analyticsLocations = analyticsLocations(7918)().analyticsLocations;
+  let obj = analyticsObject(9606);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride();
   const items = [analyticsLocations, analyticsObject];
   const effect = react.useEffect(() => {
@@ -40,7 +40,7 @@ export default function UserProfileUpsellButton(analyticsObject) {
     const obj = AnalyticsUtilsDefault;
     obj.track(metroImportDefault.PREMIUM_UPSELL_VIEWED, obj2);
   }, items);
-  const Button = analyticsObject(5873).Button;
+  const Button = analyticsObject(5936).Button;
   if (nitroTrialCtaOverride == null) {
     nitroTrialCtaOverride = label;
   }

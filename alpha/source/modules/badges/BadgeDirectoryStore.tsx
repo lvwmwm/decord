@@ -1,18 +1,18 @@
-// Module ID: 8481
-// Function ID: 8482
+// Module ID: 8547
+// Function ID: 8548
 // Name: BadgeDirectoryStore
-// Dependencies: [1385, 1089, 1453, 8482, 559, 8486, 504, 572, 2]
+// Dependencies: [1388, 1089, 1456, 8548, 559, 8552, 504, 572, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8481 (BadgeDirectoryStore)
+// Module 8547 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import LRUCacheDefault from "LRUCache" /* 1453 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8482 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8486 */;
-import UserStore from "UserStore" /* 1385 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8548 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, set;
@@ -61,8 +61,8 @@ class BadgeDirectoryStore extends Store {
     }
     return flag;
   }
-  isCatalogStaleFor(displayedUserId) {
-    const peekResult = closure_5.peek(displayedUserId);
+  isCatalogStaleFor(id) {
+    const peekResult = closure_5.peek(id);
     let fetchedAt;
     if (peekResult != null) {
       fetchedAt = peekResult.fetchedAt;
@@ -225,7 +225,7 @@ let obj = {
     let badges;
     let closure_129_0;
     let userId;
-    const f95064 = (badge_id) => {
+    const f96258 = (badge_id) => {
       const acks = _undefined.acks;
       const value = acks.get(badge_id.badge_id);
       let value2 = null;
@@ -260,10 +260,10 @@ let obj = {
       map1 = new Map();
     }
     c1 = peekResult;
-    peekResult.badges = new Map(badges.map(f95064));
+    peekResult.badges = new Map(badges.map(f96258));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f95064));
+    new Map(badges.map(f96258));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },
@@ -320,6 +320,7 @@ let obj = {
     let badge;
     let info_label;
     let progress;
+    let stats;
     let userId;
     ({ userId, badge } = requestedAt);
     requestedAt = requestedAt.requestedAt;
@@ -347,7 +348,7 @@ let obj = {
       const value2 = badges.get(badge.badge_id);
       const badges2 = peekResult.badges;
       const badge_id = badge.badge_id;
-      const obj3 = { progress, info_label };
+      const obj3 = { progress, info_label, stats };
       set = badges2.set;
       const merged = Object.assign(badge);
       progress = badge.progress;
@@ -365,6 +366,14 @@ let obj = {
           info_label1 = value2.info_label;
         }
         info_label = info_label1;
+      }
+      stats = badge.stats;
+      if (stats == null) {
+        let stats1;
+        if (value2 != null) {
+          stats1 = value2.stats;
+        }
+        stats = stats1;
       }
       const result = set(badge_id, obj3);
       const result1 = obj.set(userId, peekResult);

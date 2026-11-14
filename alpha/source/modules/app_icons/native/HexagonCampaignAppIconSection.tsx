@@ -1,20 +1,20 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18160
+// Function ID: 18161
 // Name: HexagonCampaignAppIconSection
-// Dependencies: [19, 17, 5268, 21, 5243, 575, 5273, 16962, 5278, 5269, 5315, 1113, 4464, 5839, 5866, 16985, 5314, 16978, 16979, 17518, 7354, 7682, 16981, 2]
+// Dependencies: [19, 17, 5331, 21, 5306, 575, 5336, 17085, 5341, 5332, 5378, 1113, 4516, 5902, 5929, 17108, 5377, 17101, 17102, 17636, 7418, 7748, 17104, 2]
 // Exports: default
 
-// Module 18040 (HexagonCampaignAppIconSection)
+// Module 18160 (HexagonCampaignAppIconSection)
 import nativeDefault from "native" /* 575 */;
-import _modDef4464 from "module_4464" /* 4464 */;
-import AppIconTypes from "AppIconTypes" /* 5269 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16979 */;
-import AppIconDefault from "AppIcon" /* 17518 */;
+import _modDef4516 from "module_4516" /* 4516 */;
+import AppIconTypes from "AppIconTypes" /* 5332 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 17102 */;
+import AppIconDefault from "AppIcon" /* 17636 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -64,34 +64,34 @@ export default function HexagonCampaignAppIconSection(isPending) {
   }
   const onSelect = isPending.onSelect;
   const tmp = closure_11();
-  let obj = onSelect(5273);
+  let obj = onSelect(5336);
   const hexagonCampaignPerkAvailability = obj.useHexagonCampaignPerkAvailability(constants.APP_ICON, "HexagonCampaignAppIconSection");
-  const useTrackHexagonCampaignContentViewed = onSelect(16962).useTrackHexagonCampaignContentViewed;
-  onSelect(16962);
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(onSelect(5278).QuestContent.APP_ICON_SETTINGS, onSelect(16962).HexagonCampaignContentSurface.APP_ICON_PICKER, true);
-  const tmp8 = currentAppIcon === onSelect(5269).LimitedTimeAppIconIds.HEXAGON;
-  const obj2 = onSelect(5315);
+  const useTrackHexagonCampaignContentViewed = onSelect(17085).useTrackHexagonCampaignContentViewed;
+  onSelect(17085);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(onSelect(5341).QuestContent.APP_ICON_SETTINGS, onSelect(17085).HexagonCampaignContentSurface.APP_ICON_PICKER, true);
+  const tmp8 = currentAppIcon === onSelect(5332).LimitedTimeAppIconIds.HEXAGON;
+  const obj2 = onSelect(5378);
   const radioA11yNative = obj2.useRadioA11yNative({ selected: tmp8, busy: flag });
   const intl = onSelect(1113).intl;
-  const stringResult = intl.string(_modDef4464.JC4Pii);
+  const stringResult = intl.string(_modDef4516.JC4Pii);
   const obj4 = { style: tmp.section, children: items1 };
   const obj5 = { style: tmp.header, children: items };
-  const obj3 = onSelect(5839);
+  const obj3 = onSelect(5902);
   const token = obj3.useToken(nativeDefault.colors.WHITE);
-  const obj6 = { variant: "body-sm/semibold", color: "text-subtle", children: intl2.string(_modDef4464["2UCcmW"]) };
-  let Text = onSelect(5866).Text;
+  const obj6 = { variant: "body-sm/semibold", color: "text-subtle", children: intl2.string(_modDef4516["2UCcmW"]) };
+  let Text = onSelect(5929).Text;
   intl2 = onSelect(1113).intl;
   items = [closure_9(Text, obj6), ];
   let tmp15Result = hexagonCampaignPerkAvailability !== constants2.LOCKED;
   const tmp4 = constants;
   if (tmp15Result) {
     const obj7 = { perk: tmp4.APP_ICON };
-    tmp15Result = tmp15(tmp10(16985), obj7);
+    tmp15Result = tmp15(tmp10(17108), obj7);
   }
   items[1] = tmp15Result;
   items1 = [closure_10(closure_4, obj5), ];
-  const obj8 = { theme: onSelect(16978).ThemeTypes.DARK, children: closure_10(tmp17, obj9) };
-  const ThemeContextProvider = tmp2(5314).ThemeContextProvider;
+  const obj8 = { theme: onSelect(17101).ThemeTypes.DARK, children: closure_10(tmp17, obj9) };
+  const ThemeContextProvider = tmp2(5377).ThemeContextProvider;
   obj9 = {
     onPress() {
       return onSelect(AppIconTypes.LimitedTimeAppIconIds.HEXAGON);
@@ -102,25 +102,25 @@ export default function HexagonCampaignAppIconSection(isPending) {
   };
   const merged = Object.assign(radioA11yNative);
   items2 = [closure_9(HexagonCampaignPromoGradientDefault, { angle: 164 }), , , ];
-  const obj10 = { id: onSelect(5269).LimitedTimeAppIconIds.HEXAGON, size: 48, style: tmp.icon };
+  const obj10 = { id: onSelect(5332).LimitedTimeAppIconIds.HEXAGON, size: 48, style: tmp.icon };
   const tmp10Result = AppIconDefault;
   items2[1] = closure_9(tmp10Result, obj10);
   const obj11 = { variant: "body-md/semibold", color: "text-strong", style: tmp.label, children: stringResult };
-  items2[2] = closure_9(onSelect(5866).Text, obj11);
+  items2[2] = closure_9(onSelect(5929).Text, obj11);
   tmp17 = closure_3;
   if (flag) {
     const obj12 = { size: "small", color: token };
-    tmp15Result2 = tmp15(tmp2(7354).ActivityIndicator, obj12);
+    tmp15Result2 = tmp15(tmp2(7418).ActivityIndicator, obj12);
   } else {
     const obj13 = { selected: tmp8 };
-    tmp15Result2 = tmp15(tmp2(7682).FormRadio, obj13);
+    tmp15Result2 = tmp15(tmp2(7748).FormRadio, obj13);
   }
   const obj14 = { children: items3 };
   items2[3] = tmp15Result2;
   items3 = [closure_9(ThemeContextProvider, obj8), ];
   const obj15 = { style: tmp.legal, children: closure_9(Text2, obj16) };
-  obj16 = { variant: "body-xs/medium", color: "text-muted", children: intl3.format(_modDef4464.y2YmJv, obj17) };
-  Text2 = tmp2(5866).Text;
+  obj16 = { variant: "body-xs/medium", color: "text-muted", children: intl3.format(_modDef4516.y2YmJv, obj17) };
+  Text2 = tmp2(5929).Text;
   intl3 = tmp2(1113).intl;
   obj17 = {
     nonPremiumEndDate,

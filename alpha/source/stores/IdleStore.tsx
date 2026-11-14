@@ -1,19 +1,19 @@
-// Module ID: 6978
-// Function ID: 6979
+// Module ID: 7041
+// Function ID: 7042
 // Name: IdleStore
-// Dependencies: [502, 1072, 6012, 1377, 5068, 1089, 572, 5053, 6872, 551, 504, 2]
+// Dependencies: [502, 1072, 6075, 1380, 5131, 1089, 572, 5116, 6935, 551, 504, 2]
 
-// Module 6978 (IdleStore)
+// Module 7041 (IdleStore)
 import _mod2 from "module_2" /* 2 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import DiscordNativeDefault from "DiscordNative" /* 5053 */;
-import UserSettings from "UserSettings" /* 5068 */;
-import Constants2 from "Constants" /* 6012 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6872 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import DiscordNativeDefault from "DiscordNative" /* 5116 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import Constants2 from "Constants" /* 6075 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 
@@ -49,7 +49,7 @@ function checkIdleAFK() {
         if (diff <= Math.min(setting * DurationsDefault.Millis.SECOND, tmp)) {
           let tmp18 = c11 || c12;
           if (!tmp18) {
-            const tmp15Result = tmp15(1377);
+            const tmp15Result = tmp15(1380);
             tmp18 = tmp15Result.isAndroid() && closure_13;
             tmp15Result.isAndroid() && closure_13;
           }
@@ -103,7 +103,7 @@ if (PlatformUtils.isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(5053).powerMonitor;
+        const powerMonitor2 = tmp(5116).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(result) {

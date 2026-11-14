@@ -1,18 +1,18 @@
-// Module ID: 9525
-// Function ID: 9526
+// Module ID: 9592
+// Function ID: 9593
 // Name: NativeCheckoutStore
-// Dependencies: [5, 32, 19, 9526, 5987, 9529, 5158, 1254, 9530, 12, 7195, 5055, 9531, 2]
+// Dependencies: [5, 32, 19, 9593, 6050, 9596, 5221, 1258, 9597, 12, 7258, 5118, 9598, 2]
 // Exports: createNativeStore, useNativeCheckoutStore, useNativeCheckoutStoreOrNull
 
-// Module 9525 (NativeCheckoutStore)
-import _mod1254 from "module_1254" /* 1254 */;
-import _slicedToArray2 from "_slicedToArray" /* 5158 */;
-import PaymentConstants from "PaymentConstants" /* 5987 */;
-import ContextUtilsDefault from "ContextUtils" /* 9529 */;
+// Module 9592 (NativeCheckoutStore)
+import _mod1258 from "module_1258" /* 1258 */;
+import _slicedToArray2 from "_slicedToArray" /* 5221 */;
+import PaymentConstants from "PaymentConstants" /* 6050 */;
+import ContextUtilsDefault from "ContextUtils" /* 9596 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import OrderRecord from "OrderRecord" /* 9526 */;
+import OrderRecord from "OrderRecord" /* 9593 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, checkoutInitParameters, closure_1, country, paymentGateway;
@@ -30,7 +30,7 @@ export function useNativeCheckoutStore(arg0, shallow) {
     shallow = _slicedToArray2.shallow;
   }
   const tmp3 = closure_7();
-  const obj = _mod1254;
+  const obj = _mod1258;
   return obj.useStoreWithEqualityFn(tmp3, arg0, shallow);
 }
 export function useNativeCheckoutStoreOrNull(arg0, shallow) {
@@ -40,14 +40,14 @@ export function useNativeCheckoutStoreOrNull(arg0, shallow) {
   context = react.useContext(context);
   let storeWithEqualityFn = null;
   if ("unset_context" !== context) {
-    const obj = _mod1254;
+    const obj = _mod1258;
     storeWithEqualityFn = obj.useStoreWithEqualityFn(context, arg0, shallow);
   }
   return storeWithEqualityFn;
 }
 export function createNativeStore(arg0) {
   ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, analyticsFields: _asyncToGenerator, paymentGateway: react, orderRequired: OrderRecord, onOrderRetryCancellation: OrderStatus, initialSubscriptionFacet: closure_7 } = arg0);
-  let obj = _mod1254;
+  let obj = _mod1258;
   return obj.createWithEqualityFn((arg0, arg1) => {
     let tmp;
     let closure_0 = arg0;

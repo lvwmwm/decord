@@ -1,24 +1,24 @@
-// Module ID: 15838
-// Function ID: 15839
+// Module ID: 15958
+// Function ID: 15959
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 7344, 7243, 1113, 5955, 15839, 7374, 10500, 5866, 15841, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 7408, 7307, 1113, 6018, 15959, 7438, 10569, 5929, 15961, 2]
 // Exports: default
 
-// Module 15838 (ApplicationEducation)
+// Module 15958 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import FriendsIcon from "FriendsIcon" /* 5955 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7243 */;
-import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 7344 */;
-import GameControllerIcon from "GameControllerIcon" /* 7374 */;
-import SettingsIcon from "SettingsIcon" /* 10500 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 15839 */;
-import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 15841 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import FriendsIcon from "FriendsIcon" /* 6018 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
+import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 7408 */;
+import GameControllerIcon from "GameControllerIcon" /* 7438 */;
+import SettingsIcon from "SettingsIcon" /* 10569 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 15959 */;
+import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 15961 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -171,7 +171,7 @@ export default function ApplicationEducation(arg0) {
       tmp26 = null;
       if (arr2.length > 0) {
         const obj15 = { variant: "body-sm/normal", color: "text-default", children: arr2 };
-        tmp26 = hasOwnProperty(tmp4(5866).Text, obj15);
+        tmp26 = hasOwnProperty(tmp4(5929).Text, obj15);
       }
     }
     const obj16 = { children: items2 };

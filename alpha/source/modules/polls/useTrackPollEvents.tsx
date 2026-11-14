@@ -1,13 +1,13 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13547
+// Function ID: 13548
 // Name: useTrackPollEvents
-// Dependencies: [19, 1072, 6004, 12563, 2]
+// Dependencies: [19, 1072, 6067, 12659, 2]
 // Exports: useTrackPollCreationEvents
 
-// Module 13444 (useTrackPollEvents)
+// Module 13547 (useTrackPollEvents)
 import Constants from "Constants" /* 1072 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 12563 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 12659 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

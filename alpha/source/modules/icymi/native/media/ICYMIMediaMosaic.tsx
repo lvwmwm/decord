@@ -1,35 +1,35 @@
-// Module ID: 19137
-// Function ID: 19138
+// Module ID: 19329
+// Function ID: 19330
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 5244, 5092, 5185, 1385, 10136, 1072, 21, 5243, 575, 6298, 1092, 504, 9663, 1652, 5485, 19138, 5957, 5866, 1113, 7540, 8812, 7364, 10148, 12922, 7368, 19093, 8566, 10141, 1380, 12, 7808, 8560, 5891, 2]
+// Dependencies: [32, 19, 17, 5307, 5155, 5248, 1388, 10205, 1072, 21, 5306, 575, 6361, 1092, 504, 9730, 1655, 5548, 19330, 6020, 5929, 1113, 7606, 8879, 7428, 10217, 13018, 7432, 19285, 8633, 10210, 1255, 12, 7874, 8627, 5954, 2]
 // Exports: default
 
-// Module 19137 (ICYMIMediaMosaic)
+// Module 19329 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7808 */;
-import openMediaModal2 from "openMediaModal" /* 8560 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8566 */;
-import common_VideoDefault from "common/Video" /* 9663 */;
-import ICYMITypes from "ICYMITypes" /* 10141 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10148 */;
-import ICYMIContext from "ICYMIContext" /* 19093 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 19138 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7874 */;
+import openMediaModal2 from "openMediaModal" /* 8627 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
+import common_VideoDefault from "common/Video" /* 9730 */;
+import ICYMITypes from "ICYMITypes" /* 10210 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10217 */;
+import ICYMIContext from "ICYMIContext" /* 19285 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 19330 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
-import ICYMIStore from "ICYMIStore" /* 10136 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
+import ICYMIStore from "ICYMIStore" /* 10205 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp4;
-const useChannelName = tmp4(5891);
+const useChannelName = tmp4(5954);
 function MediaMosaicVideo(source) {
   let autoplay;
   let height;
@@ -94,9 +94,9 @@ function MediaMosaicImage(source) {
   let obj = react;
   [first, importDefault] = react.useState(false);
   const items = [closure_20, , ];
-  const useAnimatedStyle = source(1652).useAnimatedStyle;
-  source(1652);
-  items[1] = source(5485).withTiming;
+  const useAnimatedStyle = source(1655).useAnimatedStyle;
+  source(1655);
+  items[1] = source(5548).withTiming;
   items[2] = first;
   let c0;
   let c1;
@@ -128,7 +128,7 @@ function MediaMosaicImage(source) {
   }, items2);
   let obj2 = { style: items3, children: closure_15(FastImageDefault, obj3) };
   items3 = [animatedStyle, tmp.thumbhashMedia];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   obj3 = { source: memo, style: items4 };
   items4 = [style, tmp.media, dimensions];
   const items5 = [closure_15(View, obj2), ];

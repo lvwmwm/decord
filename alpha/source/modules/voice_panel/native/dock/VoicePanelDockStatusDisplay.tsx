@@ -1,20 +1,20 @@
-// Module ID: 19816
-// Function ID: 19817
+// Module ID: 19201
+// Function ID: 19202
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 19814, 11942, 21, 5866, 5243, 1652, 1113, 3205, 5485, 5876, 19817, 5314, 1705, 11918, 2]
+// Dependencies: [32, 19, 17, 19202, 12009, 21, 5929, 5306, 1655, 1113, 3253, 5548, 5939, 19203, 5377, 1708, 11984, 2]
 
-// Module 19816 (VoicePanelDockStatusDisplay)
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import spring_spring from "spring/spring" /* 5876 */;
+// Module 19201 (VoicePanelDockStatusDisplay)
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import spring_spring from "spring/spring" /* 5939 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19814 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11942 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19202 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -106,8 +106,8 @@ function StatusText(status) {
     }
   }
   let num = 0;
-  const useSharedValue = require("module_1652").useSharedValue;
-  require("module_1652");
+  const useSharedValue = require("module_1655").useSharedValue;
+  require("module_1655");
   if (null != stringResult) {
     num = 1;
   }
@@ -117,8 +117,8 @@ function StatusText(status) {
     let withDelayResult;
     set = sharedValue.set;
     if (closure_0) {
-      const withDelay = _mod1652.withDelay;
-      _mod1652;
+      const withDelay = _mod1655.withDelay;
+      _mod1655;
       const obj2 = timing_timing;
       withDelayResult = withDelay(70, obj2.withTiming(1, { duration: 175 }));
     } else {
@@ -127,9 +127,9 @@ function StatusText(status) {
     }
     const result = set(withDelayResult);
   }, items);
-  const tmp27Result = require("module_1652");
+  const tmp27Result = require("module_1655");
   sharedValue1 = tmp27Result.useSharedValue(lineHeight);
-  const tmp27Result4 = require("module_1652");
+  const tmp27Result4 = require("module_1655");
   sharedValue2 = tmp27Result4.useSharedValue(lineHeight);
   const items1 = [sharedValue1];
   const items2 = [sharedValue2];
@@ -142,7 +142,7 @@ function StatusText(status) {
   let c3;
   let c4;
   [tmp37, tmp38, tmp39, tmp40, tmp41, tmp42] = items3;
-  const tmp27Result5 = require("module_1652");
+  const tmp27Result5 = require("module_1655");
   const tmp32 = lineHeight;
   class VoicePanelDockStatusDisplayTsx1 {
     constructor() {
@@ -163,12 +163,12 @@ function StatusText(status) {
   VoicePanelDockStatusDisplayTsx1.__initData = tmp37;
   const animatedStyle = tmp27Result5.useAnimatedStyle(VoicePanelDockStatusDisplayTsx1);
   const items5 = [closure_16, sharedValue1, 1, tmp32, , , , ];
-  const useAnimatedStyle = require("module_1652").useAnimatedStyle;
-  require("module_1652");
-  items5[4] = require("module_1652").interpolate;
+  const useAnimatedStyle = require("module_1655").useAnimatedStyle;
+  require("module_1655");
+  items5[4] = require("module_1655").interpolate;
   items5[5] = sharedValue;
   items5[6] = 0.5;
-  items5[7] = require("module_1652").Extrapolation;
+  items5[7] = require("module_1655").Extrapolation;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -381,18 +381,18 @@ function StatusLayer(exit) {
         num2 = num + closure_0.fadeDelayMs;
       }
       set = sharedValue.set;
-      const withDelay = _mod1652.withDelay;
-      _mod1652;
+      const withDelay = _mod1655.withDelay;
+      _mod1655;
       const obj = spring_spring;
       const result = set(withDelay(num, obj.withSpring(point2.x, closure_0.spring)));
       set2 = sharedValue3.set;
-      const withDelay2 = _mod1652.withDelay;
-      _mod1652;
+      const withDelay2 = _mod1655.withDelay;
+      _mod1655;
       const obj2 = spring_spring;
       set2(withDelay2(num, obj2.withSpring(point2.y, closure_0.spring)));
       set3 = sharedValue5.set;
-      const withDelay3 = _mod1652.withDelay;
-      _mod1652;
+      const withDelay3 = _mod1655.withDelay;
+      _mod1655;
       const obj3 = timing_timing;
       set3(withDelay3(num2, obj3.withTiming(point2.fade, closure_3, "respect-motion-settings", VoicePanelDockStatusDisplayTsx3)));
     }
@@ -573,8 +573,8 @@ obj2 = { flexDirection: "row", alignItems: "center", gap: DOCK_GAP };
 createStyles = createStyles.createStyles;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_13 = createStyles(obj);
-let point = { x: 0, y: 0, delayMs: 0, faceLagMs: 0, textLagMs: 0, fadeStartProgress: 0.5, fadeMs: 120, fadeDelayMs: 0, fadeEasing: Easing.inOut(_mod1652.Easing.quad), spring: { mass: 0.5, stiffness: 300, damping: 15 } };
-Easing = _mod1652.Easing;
+let point = { x: 0, y: 0, delayMs: 0, faceLagMs: 0, textLagMs: 0, fadeStartProgress: 0.5, fadeMs: 120, fadeDelayMs: 0, fadeEasing: Easing.inOut(_mod1655.Easing.quad), spring: { mass: 0.5, stiffness: 300, damping: 15 } };
+Easing = _mod1655.Easing;
 let closure_15 = { code: "(function VoicePanelDockStatusDisplayTsx1(){let[SUBTEXT_GAP,nameHeight,NAME_LINE_HEIGHT,progress,subtextHeight]=this.__closure;const gap=SUBTEXT_GAP*nameHeight.get()/NAME_LINE_HEIGHT;return{transform:[{translateY:-progress.get()*(subtextHeight.get()+gap)/2}]};})" };
 let closure_16 = { code: "(function VoicePanelDockStatusDisplayTsx2(){let[nameHeight,SUBTEXT_GAP,NAME_LINE_HEIGHT,interpolate,progress,SUBTEXT_FADE_START,Extrapolation]=this.__closure;return{top:nameHeight.get()*(1+SUBTEXT_GAP/NAME_LINE_HEIGHT),opacity:interpolate(progress.get(),[SUBTEXT_FADE_START,1],[0,1],Extrapolation.CLAMP)};})" };
 let closure_18 = { code: "(function VoicePanelDockStatusDisplayTsx3(finished){let[scheduleOnRN,finishExit]=this.__closure;if(finished===true){scheduleOnRN(finishExit);}})" };
@@ -599,7 +599,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let onExited;
   let tmp11;
   let userId;
-  const f120340 = () => {
+  const f119397 = () => {
     let items;
     if ("channel" === obj2.kind) {
       items = [];
@@ -634,8 +634,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp7 = _slicedToArray(obj.useState(() => ({ status: obj2, enter: null })), 2);
   first = tmp7[0];
-  [arr, tmp11] = obj.useState(f120340);
-  _slicedToArray(obj.useState(f120340), 2);
+  [arr, tmp11] = obj.useState(f119397);
+  _slicedToArray(obj.useState(f119397), 2);
   const tmp12 = _slicedToArray(obj.useState(() => {
     map = new Map();
     return map;

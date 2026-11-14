@@ -1,50 +1,50 @@
-// Module ID: 12974
-// Function ID: 12975
+// Module ID: 13070
+// Function ID: 13071
 // Name: StageActionHeader
-// Dependencies: [19, 17, 6953, 5092, 6997, 5114, 5097, 12839, 1072, 21, 575, 5243, 5240, 5829, 1252, 6004, 11761, 6785, 6837, 504, 12862, 12975, 1113, 6003, 1187, 6886, 6880, 4209, 12976, 5866, 12977, 1627, 5891, 5830, 7951, 12978, 6840, 8360, 10913, 10912, 8394, 12841, 12842, 12843, 12846, 12979, 12980, 2]
+// Dependencies: [19, 17, 7016, 5155, 7060, 5177, 5160, 12935, 1072, 21, 575, 5306, 5303, 5892, 1256, 6067, 11827, 6848, 6900, 504, 12958, 13071, 1113, 6066, 1187, 6949, 6943, 4261, 13072, 5929, 13073, 1630, 5954, 5893, 8016, 13074, 6903, 8426, 10982, 10981, 8460, 12937, 12938, 12939, 12942, 13075, 13076, 2]
 // Exports: closeStageModal
 
-// Module 12974 (StageActionHeader)
+// Module 13070 (StageActionHeader)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4209 from "module_4209" /* 4209 */;
-import NavigatorConstants from "NavigatorConstants" /* 5829 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import useChannelNameDefault from "useChannelName" /* 5891 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6837 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6840 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6880 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6886 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7951 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8394 */;
-import StatusBarDefault from "StatusBar" /* 11761 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 12846 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 12862 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12975 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12976 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12977 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12978 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 12979 */;
-import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 12980 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _modDef4261 from "module_4261" /* 4261 */;
+import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import useChannelNameDefault from "useChannelName" /* 5954 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6903 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6943 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6949 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8016 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
+import StatusBarDefault from "StatusBar" /* 11827 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 12942 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 12958 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13071 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13072 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13073 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13074 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 13075 */;
+import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 13076 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6997 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import StageInstanceStore from "StageInstanceStore" /* 5097 */;
-import StageMusicStore from "StageMusicStore" /* 12839 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7060 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import StageInstanceStore from "StageInstanceStore" /* 5160 */;
+import StageMusicStore from "StageMusicStore" /* 12935 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
-import ColorUtils_mod from "ColorUtils" /* 5240 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import ColorUtils_mod from "ColorUtils" /* 5303 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;
@@ -104,7 +104,7 @@ function StageParticipantCounts(channelId) {
   const obj2 = StageChannelParticipantStoreHooks;
   const stageParticipantsCount = obj2.useStageParticipantsCount(channelId, StageChannelParticipants.StageChannelParticipantNamedIndex.AUDIENCE);
   const intl = intl2.intl;
-  const obj3 = { style: tmp.counts, pointerEvents: "none", accessible: true, accessibilityLabel: intl.formatToPlainString(_modDef4209.TdMGe4, { speakerCount: actualStageSpeakerCount, audienceCount: stageParticipantsCount }), children: items };
+  const obj3 = { style: tmp.counts, pointerEvents: "none", accessible: true, accessibilityLabel: intl.formatToPlainString(_modDef4261.TdMGe4, { speakerCount: actualStageSpeakerCount, audienceCount: stageParticipantsCount }), children: items };
   const obj4 = { source: AssetRegistryDefault3, size: native.Icon.Sizes.SMALL, style: tmp.icon };
   const Icon = native.Icon;
   items = [map1(Icon, obj4), map1(Text_Text.Text, { variant: "body-xs/normal", children: actualStageSpeakerCount }), , ];
@@ -166,7 +166,7 @@ class StageChannelCallHeader {
     items4 = [tmp13Result, , , ];
     let topic;
     const obj6 = { pointerEvents: "none", style: tmp.leftTitleContainer, children: items5 };
-    const Text = tmp8(5866).Text;
+    const Text = tmp8(5929).Text;
     if (stateFromStores != null) {
       topic = stateFromStores.topic;
     }
@@ -181,7 +181,7 @@ class StageChannelCallHeader {
       const Icon = tmp8(1187).Icon;
       items6 = [closure_13(Icon, obj8), ];
       const obj9 = { variant: "body-xs/normal", style: tmp.stageInfoTopic, lineClamp: 1, children: tmp7 };
-      items6[1] = closure_13(channel(5866).Text, obj9);
+      items6[1] = closure_13(channel(5929).Text, obj9);
       tmp11Result = tmp11(tmp12, obj7);
     }
     items5[1] = tmp11Result;
@@ -290,7 +290,7 @@ class MusicMuteButton {
     items = [StageMusicStore];
     stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
     let tmp6Result = null;
-    const obj2 = stateFromStores(12841);
+    const obj2 = stateFromStores(12937);
     if (obj2.useShowStageMusicMuteButton(channelId)) {
       let stringResult;
       const tmp8 = ChannelCallNavigatorIconDefault;
@@ -307,7 +307,7 @@ class MusicMuteButton {
       const obj3 = {
         accessibilityLabel: stringResult,
         containerStyle: tmp.iconBackground,
-        source: tmp7(stateFromStores ? 12842 : 12843),
+        source: tmp7(stateFromStores ? 12938 : 12939),
         onPress() {
             const obj = StageMusicActionCreators;
             return obj.updateStageMusicMuted(!stateFromStores);

@@ -1,14 +1,14 @@
-// Module ID: 18939
-// Function ID: 18940
+// Module ID: 19093
+// Function ID: 19094
 // Name: isHomeDrawerChannelMuted
-// Dependencies: [5177, 5096, 6895, 504, 2]
+// Dependencies: [5240, 5159, 6958, 504, 2]
 // Exports: useIsHomeDrawerChannelMuted
 
-// Module 18939 (isHomeDrawerChannelMuted)
+// Module 19093 (isHomeDrawerChannelMuted)
 import get_initialized from "get initialized" /* 504 */;
-import ChannelRecord from "ChannelRecord" /* 5096 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5177 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
 import size from "module_2" /* 2 */;
 
 const isThread = ChannelRecord.isThread;

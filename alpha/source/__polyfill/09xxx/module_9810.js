@@ -1,123 +1,155 @@
 // Module ID: 9810
 // Function ID: 9811
-// Dependencies: [32, 109, 9811, 9786]
+// Dependencies: [9804, 9796, 9797]
+// Exports: baggageHeaderToDynamicSamplingContext, dynamicSamplingContextToSentryBaggageHeader, parseBaggageHeader
 
 // Module 9810
-import DEFAULT_USER_INCLUDES from "DEFAULT_USER_INCLUDES" /* 9811 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import module_9786 from "module_9786" /* 9786 */;
+import _mod9796 from "module_9796" /* 9796 */;
+import _mod9804 from "module_9804" /* 9804 */;
 
-let closure_4 = ["ip", "user"];
-let obj = { include: { cookies: true, data: true, headers: true, ip: false, query_string: true, url: true, user: { id: true, username: true, email: true } }, transactionNamingScheme: "methodPath" };
-
-export const requestDataIntegration = module_9786.defineIntegration(() => {
-  obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+const f99005 = (acc, item) => {
+  let closure_0 = acc;
+  let parts = item.split(",");
+  const mapped = parts.map(f99006);
+  const entries = Object.entries(mapped.reduce(f99007, {}));
+  item = entries.forEach((item) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = item;
+    acc[tmp] = tmp2;
+  });
+  return acc;
+};
+const f99006 = (item) => {
+  const parts = item.split("=");
+  return parts.map((item) => decodeURIComponent(item.trim()));
+};
+const f99007 = (acc, item) => {
+  let tmp;
+  let tmp2;
+  [tmp, tmp2] = item;
+  const tmp3 = tmp && tmp2;
+  if (tmp3) {
+    acc[tmp] = tmp2;
   }
-  let obj2 = {};
-  let tmp = obj;
-  const merged = Object.assign(obj);
-  const merged1 = Object.assign(obj);
-  let obj3 = {};
-  const merged2 = Object.assign(obj.include);
-  const merged3 = Object.assign(obj.include);
-  if (obj.include) {
-    let user;
-    if (typeof obj.include.user === "boolean") {
-      user = obj.include.user;
+  return acc;
+};
+let c2 = "sentry-";
+let tmp2 = /^sentry-/;
+const re3 = tmp2;
+let c4 = 8192;
+
+export const BAGGAGE_HEADER_NAME = "baggage";
+export const MAX_BAGGAGE_STRING_LENGTH = 8192;
+export const SENTRY_BAGGAGE_KEY_PREFIX = "sentry-";
+export const SENTRY_BAGGAGE_KEY_PREFIX_REGEX = tmp2;
+export function baggageHeaderToDynamicSamplingContext(arr) {
+  let tmp;
+  if (arr) {
+    const tmp2 = require;
+    let tmp3 = dependencyMap;
+    const obj = _mod9804;
+    if (obj.isString(arr)) {
+      let reduced;
+      const _Array2 = Array;
+      if (Array.isArray(arr)) {
+        reduced = arr.reduce(f99005, {});
+      } else {
+        const str = ",";
+        let parts = arr.split(",");
+        let mapped = parts.map(f99006);
+        reduced = mapped.reduce(f99007, {});
+      }
+      tmp = reduced;
+    } else {
+      const _Array = Array;
     }
-    obj3.user = user;
-    obj2.include = obj3;
-    return {
-      name: "RequestData",
-      processEvent(sdkProcessingMetadata) {
-          let normalizedRequest;
-          let request;
-          function convertReqDataIntegrationOptsToAddReqDataOpts(include) {
-            let tmp15;
-            include = include.include;
-            const user = include.user;
-            const transactionNamingScheme = include.transactionNamingScheme;
-            const ip = include.ip;
-            const items = ["method"];
-            const entries = Object.entries(closure_1_3(include, closure_1_4));
-            const tmp2 = entries[Symbol.iterator]();
-            while (tmp2 !== undefined) {
-              let tmp5 = closure_1_2(tmp3, 2);
-              let first = tmp5[0];
-              if (tmp5[1]) {
-                let arr = items.push(first);
-              }
-              continue;
-            }
-            let flag = true;
-            if (undefined !== user) {
-              flag = user;
-              if (typeof user !== "boolean") {
-                const items1 = [];
-                const _Object = Object;
-                const entries1 = Object.entries(user);
-                flag = items1;
-                for (const item10032 of entries1) {
-                  let tmp11 = closure_1_2(item10032, 2);
-                  let first1 = tmp11[0];
-                  if (tmp11[1]) {
-                    let arr2 = items1.push(first1);
-                  }
-                  continue;
-                }
-              }
-            }
-            const include2 = { ip, user: flag, request: tmp15, transaction: transactionNamingScheme };
-            tmp15 = undefined;
-            if (0 !== items.length) {
-              tmp15 = items;
-            }
-            return { include: include2 };
-          }
-          let prop = sdkProcessingMetadata.sdkProcessingMetadata;
-          if (undefined === prop) {
-            prop = {};
-          }
-          ({ request, normalizedRequest } = prop);
-          const tmp = convertReqDataIntegrationOptsToAddReqDataOpts(obj2);
-          if (normalizedRequest) {
-            let tmp5;
-            if (request) {
-              let ip = request.ip;
-              if (!ip) {
-                ip = request.socket && request.socket.remoteAddress;
-              }
-              tmp5 = ip;
-            }
-            let user;
-            if (request) {
-              user = request.user;
-            }
-            const obj3 = DEFAULT_USER_INCLUDES;
-            obj = { ipAddress: tmp5, user };
-            let tmp10 = obj3;
-            let tmp11 = sdkProcessingMetadata;
-            let tmp13 = obj;
-            const result = obj3.addNormalizedRequestDataToEvent(sdkProcessingMetadata, normalizedRequest, obj, tmp);
-            return sdkProcessingMetadata;
-          } else {
-            let result1 = sdkProcessingMetadata;
-            if (request) {
-              const tmp3 = require;
-              let tmp4 = dependencyMap;
-              obj2 = DEFAULT_USER_INCLUDES;
-              result1 = obj2.addRequestDataToEvent(sdkProcessingMetadata, request, tmp);
-            }
-            return result1;
+  }
+  if (tmp) {
+    const _Object = Object;
+    let entries = Object.entries(tmp);
+    const reduced1 = entries.reduce((acc, item) => {
+      let str;
+      let tmp;
+      [str, tmp] = item;
+      if (str.match(closure_1_3)) {
+        acc[str.slice(7)] = tmp;
+      }
+      return acc;
+    }, {});
+    const _Object2 = Object;
+    let tmp9;
+    if (Object.keys(reduced1).length > 0) {
+      tmp9 = reduced1;
+    }
+    return tmp9;
+  }
+}
+export function dynamicSamplingContextToSentryBaggageHeader(arg0) {
+  const tmp = arg0;
+  if (tmp) {
+    const tmp2 = globalThis;
+    const _Object = Object;
+    const entries = Object.entries(arg0);
+    const reduced = entries.reduce((acc, item) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = item;
+      if (tmp2) {
+        const _HermesInternal = HermesInternal;
+        acc["" + closure_1_2 + tmp] = tmp2;
+      }
+      return acc;
+    }, {});
+    const _Object2 = Object;
+    let reduced1;
+    if (0 !== Object.keys(reduced).length) {
+      const _Object3 = Object;
+      const entries1 = Object.entries(reduced);
+      reduced1 = entries1.reduce((acc, item, index) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = item;
+        const encodeURIComponentResult = encodeURIComponent(tmp);
+        const combined = "" + encodeURIComponentResult + "=" + encodeURIComponent(tmp2);
+        let combined1 = combined;
+        if (0 !== index) {
+          const _HermesInternal = HermesInternal;
+          combined1 = "" + acc + "," + combined;
+        }
+        if (combined1.length > closure_1_4) {
+          combined1 = acc;
+          const tmp5 = require;
+          const tmp6 = dependencyMap;
+          if (_mod9796.DEBUG_BUILD) {
+            const logger = tmp5(tmp6[2]).logger;
+            const _HermesInternal2 = HermesInternal;
+            logger.warn("Not adding key: " + tmp + " with val: " + tmp2 + " to baggage header due to exceeding baggage size limits.");
+            combined1 = acc;
           }
         }
-    };
+        return combined1;
+      }, "");
+    }
+    return reduced1;
   }
-  user = {};
-  const merged4 = Object.assign(tmp.include.user);
-  let tmp7 = obj.include || {};
-  const merged5 = Object.assign(tmp7.user);
-});
+}
+export function parseBaggageHeader(arr) {
+  const tmp = arr;
+  if (tmp) {
+    let reduced;
+    const obj = _mod9804;
+    if (!obj.isString(arr)) {
+      const _Array = Array;
+    }
+    const _Array2 = Array;
+    if (Array.isArray(arr)) {
+      reduced = arr.reduce(f99005, {});
+    } else {
+      const parts = arr.split(",");
+      const mapped = parts.map(f99006);
+      reduced = mapped.reduce(f99007, {});
+    }
+    return reduced;
+  }
+}

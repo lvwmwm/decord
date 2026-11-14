@@ -1,16 +1,16 @@
-// Module ID: 7345
-// Function ID: 7346
+// Module ID: 7409
+// Function ID: 7410
 // Name: oauth2/actions
-// Dependencies: [5, 5092, 5146, 1072, 1282, 6781, 1081, 2]
+// Dependencies: [5, 5155, 5209, 1072, 1285, 6844, 1081, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 7345 (oauth2/actions)
+// Module 7409 (oauth2/actions)
 import utils_PathUtils from "utils/PathUtils" /* 1081 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6781 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -109,7 +109,7 @@ let obj = function _authorize() {
               ({ authorize: c0, clientId: c1, scopes: c2, responseType: c3, redirectUri: c4, codeChallenge: c5, codeChallengeMethod: c6, state: c7, permissions: c8, guildId: c9, channelId: c10, integrationType: c11, connectedAccountProvider: c12, nonce: c13 } = closure_0);
               response_type = 1;
               redirect_uri = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === response_type) {
             if (arg0 === 1) {
@@ -216,7 +216,7 @@ obj = function _fetchAuthorization() {
               ({ clientId: c0, scopes: c1, responseType: c2, redirectUri: c3, codeChallenge: c4, codeChallengeMethod: c5, state: c6, integrationType: c7, connectedAccountProvider: c8, nonce: c9, signal: c10 } = closure_0);
               redirect_uri = 1;
               code_challenge = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === redirect_uri) {
             if (arg0 === 1) {
@@ -416,11 +416,11 @@ export function startSamsungAuthorization() {
 export function fetchChannels() {
   return obj(...arguments);
 }
-export function logoutWithRedirect(pathname, TTI_test) {
+export function logoutWithRedirect(pathname, arg1) {
   const logout = AuthenticationActionCreatorsDefault.logout;
   AuthenticationActionCreatorsDefault;
   obj = utils_PathUtils;
-  logout(TTI_test, obj.getLoginPath(pathname.pathname + pathname.search, false));
+  logout(arg1, obj.getLoginPath(pathname.pathname + pathname.search, false));
 }
 export function verifyUserCode() {
   return obj(...arguments);

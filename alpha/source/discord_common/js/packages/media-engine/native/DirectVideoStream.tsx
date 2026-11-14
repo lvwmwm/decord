@@ -1,11 +1,11 @@
-// Module ID: 6039
-// Function ID: 6040
+// Module ID: 6102
+// Function ID: 6103
 // Name: DirectVideoStream
-// Dependencies: [2132, 2]
+// Dependencies: [2135, 2]
 // Exports: acquireDirectVideoStream, getDirectVideoStreamConsumerCount, supportsDirectVideoStreams
 
-// Module 6039 (DirectVideoStream)
-import inject from "inject" /* 2132 */;
+// Module 6102 (DirectVideoStream)
+import inject from "inject" /* 2135 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

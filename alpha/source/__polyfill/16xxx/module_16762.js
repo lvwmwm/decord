@@ -1,23 +1,21 @@
 // Module ID: 16762
 // Function ID: 16763
-// Dependencies: []
-// Exports: getHostFromUrl
+// Dependencies: [16763]
 
 // Module 16762
+import _mod16763 from "module_16763" /* 16763 */;
 
-export function getHostFromUrl(scriptURL) {
-  const match = scriptURL.match(/^(?:https?:\/\/)?(\[[^\]]+\]|[^/:\s]+)(?::\d+)?(?:[/?#]|$)/);
-  let tmp2;
-  if (match != null) {
-    tmp2 = match[1];
+
+export default (arg0, arg1) => {
+  let tmp3 = _mod16763[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    const tmpResult = _mod16763;
+    if (!arg1) {
+      obj = {};
+    }
+    tmpResult[arg0] = obj;
+    tmp3 = obj;
   }
-  if (typeof tmp2 !== "string") {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Invalid URL - host not found");
-    throw error;
-  } else {
-    return tmp2;
-  }
-}
+  return tmp3;
+};

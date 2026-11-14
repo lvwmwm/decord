@@ -1,13 +1,13 @@
-// Module ID: 15355
-// Function ID: 15356
+// Module ID: 15469
+// Function ID: 15470
 // Name: useIsPremiumSubscriber
-// Dependencies: [1385, 1387, 504, 2107, 2]
+// Dependencies: [1388, 1390, 504, 2110, 2]
 // Exports: useIsPremiumSubscriber
 
-// Module 15355 (useIsPremiumSubscriber)
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import UserStore from "UserStore" /* 1385 */;
+// Module 15469 (useIsPremiumSubscriber)
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;

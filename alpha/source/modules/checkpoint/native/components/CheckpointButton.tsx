@@ -1,17 +1,17 @@
-// Module ID: 14430
-// Function ID: 14431
+// Module ID: 14490
+// Function ID: 14491
 // Name: CheckpointButton
-// Dependencies: [19, 17, 6314, 21, 5243, 14400, 575, 2]
+// Dependencies: [19, 17, 6377, 21, 5306, 14491, 575, 2]
 // Exports: CheckpointButton, CheckpointShadowButton
 
-// Module 14430 (CheckpointButton)
+// Module 14490 (CheckpointButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointPressable from "CheckpointPressable" /* 14400 */;
+import CheckpointPressable from "CheckpointPressable" /* 14491 */;
 import react from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 6314 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointPressableDefault = CheckpointPressable;
@@ -34,16 +34,18 @@ export function CheckpointButton(disabled) {
   let accessibilityHint;
   let accessibilityLabel;
   let children;
+  let hitSlop;
   let onPress;
   let onPressIn;
+  let style;
   let flag = disabled.disabled;
   ({ accessibilityLabel, accessibilityHint, children, onPress, onPressIn } = disabled);
   if (flag === undefined) {
     flag = false;
   }
-  const style = disabled.style;
+  ({ hitSlop, style } = disabled);
   const items = [closure_4().button, style];
-  return <Pressable style={items} onPress={onPress} onPressIn={onPressIn} disabled={flag} accessibilityRole="button" accessibilityLabel={accessibilityLabel} accessibilityHint={accessibilityHint} accessibilityState={{ disabled: flag }}>{children}</Pressable>;
+  return <Pressable style={items} onPress={onPress} onPressIn={onPressIn} disabled={flag} hitSlop={hitSlop} accessibilityRole="button" accessibilityLabel={accessibilityLabel} accessibilityHint={accessibilityHint} accessibilityState={{ disabled: flag }}>{children}</Pressable>;
 }
 export function CheckpointShadowButton(disabled) {
   let accessibilityHint;

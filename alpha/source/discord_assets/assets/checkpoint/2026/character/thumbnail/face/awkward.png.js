@@ -1,8 +1,8 @@
-// Module ID: 6592
-// Function ID: 6593
+// Module ID: 6655
+// Function ID: 6656
 // Dependencies: [2]
 
-// Module 6592
+// Module 6655
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/face/awkward.png.js");

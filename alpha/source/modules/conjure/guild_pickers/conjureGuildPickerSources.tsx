@@ -1,18 +1,18 @@
-// Module ID: 13130
-// Function ID: 13131
+// Module ID: 13215
+// Function ID: 13216
 // Name: conjureGuildPickerSources
-// Dependencies: [19, 5155, 5149, 1385, 504, 1380, 5309, 7012, 6854, 2]
+// Dependencies: [19, 5218, 5212, 1388, 504, 1255, 5372, 7075, 6917, 2]
 // Exports: conjureMemberUsername, useConjureGuildMemberUsers, useConjureGuildRoles, useConjureMemberRequests
 
-// Module 13130 (conjureGuildPickerSources)
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import UserUtils from "UserUtils" /* 5309 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
-import GuildUtilsDefault from "GuildUtils" /* 7012 */;
+// Module 13215 (conjureGuildPickerSources)
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import UserUtils from "UserUtils" /* 5372 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import GuildUtilsDefault from "GuildUtils" /* 7075 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import GuildRoleStore from "GuildRoleStore" /* 5149 */;
-import UserStore from "UserStore" /* 1385 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildRoleStore from "GuildRoleStore" /* 5212 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,28 +64,28 @@ export function conjureMemberUsername(id, arg1) {
   }
   return getUserTag(id, { identifiable });
 }
-export function useConjureMemberRequests(conjureSettingsGuildId, result) {
+export function useConjureMemberRequests(guildId, result) {
   let member;
-  let closure_0 = conjureSettingsGuildId;
+  let closure_0 = guildId;
   let items = result;
   if (result === undefined) {
     items = [];
   }
-  const items1 = [conjureSettingsGuildId];
+  const items1 = [guildId];
   const effect = react.useEffect(() => {
-    if (null != conjureSettingsGuildId) {
+    if (null != guildId) {
       const obj = GuildUtilsDefault;
       const members = obj.requestMembers(tmp, "", 25);
     }
   }, items1);
   const joined = items.join(",");
-  const items2 = [conjureSettingsGuildId, joined];
+  const items2 = [guildId, joined];
   const effect1 = react.useEffect(() => {
-    if (null != conjureSettingsGuildId) {
+    if (null != guildId) {
       const str = joined;
       if ("" !== joined) {
         const parts = str.split(",");
-        const found = parts.filter((item) => !member.isMember(conjureSettingsGuildId, item));
+        const found = parts.filter((item) => !member.isMember(guildId, item));
         if (found.length > 0) {
           const obj = GuildActionCreatorsDefault;
           const membersById = obj.requestMembersById(tmp, found);
@@ -93,11 +93,11 @@ export function useConjureMemberRequests(conjureSettingsGuildId, result) {
       }
     }
   }, items2);
-  const items3 = [conjureSettingsGuildId];
+  const items3 = [guildId];
   return react.useCallback((str) => {
     const trimmed = str.trim();
-    let tmp3 = null != conjureSettingsGuildId;
-    const tmp2 = conjureSettingsGuildId;
+    let tmp3 = null != guildId;
+    const tmp2 = guildId;
     if (tmp3) {
       tmp3 = "" !== trimmed;
     }

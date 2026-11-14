@@ -1,11 +1,11 @@
-// Module ID: 13014
-// Function ID: 13015
+// Module ID: 13110
+// Function ID: 13111
 // Name: ModeratorStartStageHeader
-// Dependencies: [19, 21, 12979, 12974, 2]
+// Dependencies: [19, 21, 13075, 13070, 2]
 
-// Module 13014 (ModeratorStartStageHeader)
-import StageActionHeader from "StageActionHeader" /* 12974 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 12979 */;
+// Module 13110 (ModeratorStartStageHeader)
+import StageActionHeader from "StageActionHeader" /* 13070 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 13075 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ const memoResult = react.memo(function ModeratorStartStageHeader(channel) {
   const tmp4 = React3;
   if (speaker) {
     const obj2 = { channelId: channel.id };
-    speaker = _false(tmp5(12974).MusicMuteButton, obj2);
+    speaker = _false(tmp5(13070).MusicMuteButton, obj2);
   }
   items = [speaker, ];
   const obj3 = { channelId: channel.id };

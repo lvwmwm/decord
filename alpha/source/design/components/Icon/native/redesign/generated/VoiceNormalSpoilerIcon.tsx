@@ -1,14 +1,14 @@
-// Module ID: 8031
-// Function ID: 8032
+// Module ID: 8096
+// Function ID: 8097
 // Name: VoiceNormalSpoilerIcon
-// Dependencies: [19, 21, 575, 5956, 7979, 2]
+// Dependencies: [19, 21, 575, 6019, 8044, 2]
 // Exports: VoiceNormalSpoilerIcon
 
-// Module 8031 (VoiceNormalSpoilerIcon)
+// Module 8096 (VoiceNormalSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 7979 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 8044 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

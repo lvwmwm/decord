@@ -1,31 +1,32 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16927
+// Function ID: 16928
 // Name: NativeRPCImplementation
-// Dependencies: [5244, 5267, 1238, 1192, 1231, 16805, 16857, 16858, 16859, 16861, 16862, 16863, 16864, 16872, 16873, 16875, 16877, 16878, 16879, 16880, 7234, 12764, 2]
+// Dependencies: [5307, 5330, 1238, 1192, 1231, 5373, 16928, 16980, 16981, 16982, 16984, 16985, 16986, 16987, 16995, 16996, 16998, 17000, 17001, 17002, 17003, 7298, 12860, 2]
 
-// Module 16804 (NativeRPCImplementation)
-import NativeRPCServerDefault from "NativeRPCServer" /* 7234 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 12764 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 16805 */;
-import commands_activitiesDefault from "commands/activities" /* 16857 */;
-import audioSessionDefault from "audioSession" /* 16858 */;
-import authDefault from "auth" /* 16859 */;
-import screenCaptureDefault from "screenCapture" /* 16861 */;
-import setRunsInBackgroundDefault from "setRunsInBackground" /* 16862 */;
-import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 16863 */;
-import pictureInPictureInteractiveDefault from "pictureInPictureInteractive" /* 16864 */;
-import voiceSettingsDefault from "voiceSettings" /* 16872 */;
-import unsupportedDefault from "unsupported" /* 16873 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 16875 */;
-import getNativeDiscordCustomThemeDefault from "getNativeDiscordCustomTheme" /* 16878 */;
-import screenCaptureEvents from "screenCaptureEvents" /* 16879 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 16880 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5267 */;
+// Module 16927 (NativeRPCImplementation)
+import NativeRPCServerDefault from "NativeRPCServer" /* 7298 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 12860 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 16928 */;
+import commands_activitiesDefault from "commands/activities" /* 16980 */;
+import audioSessionDefault from "audioSession" /* 16981 */;
+import authDefault from "auth" /* 16982 */;
+import screenCaptureDefault from "screenCapture" /* 16984 */;
+import setRunsInBackgroundDefault from "setRunsInBackground" /* 16985 */;
+import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 16986 */;
+import pictureInPictureInteractiveDefault from "pictureInPictureInteractive" /* 16987 */;
+import voiceSettingsDefault from "voiceSettings" /* 16995 */;
+import unsupportedDefault from "unsupported" /* 16996 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 16998 */;
+import getNativeDiscordCustomThemeDefault from "getNativeDiscordCustomTheme" /* 17001 */;
+import screenCaptureEvents from "screenCaptureEvents" /* 17002 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 17003 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 16877 */;
+import StreamerModeStore from "StreamerModeStore" /* 5373 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 17000 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -56,7 +57,7 @@ const obj3 = {
 
   }
 };
-items = [ThemeStore, AccessibilityStore, UserSettingsProtoStore, ClientThemesBackgroundStore, CustomThemeMobileStore];
+items = [ThemeStore, AccessibilityStore, UserSettingsProtoStore, ClientThemesBackgroundStore, CustomThemeMobileStore, StreamerModeStore];
 items1 = [WebViewPostMessageTransportDefault];
 const result = size.fileFinishedImporting("modules/rpc/native/NativeRPCImplementation.tsx");
 

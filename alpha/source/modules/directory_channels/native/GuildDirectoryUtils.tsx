@@ -1,10 +1,10 @@
-// Module ID: 14605
-// Function ID: 14606
+// Module ID: 14718
+// Function ID: 14719
 // Name: directory_channels/GuildDirectoryUtils
-// Dependencies: [5, 19, 21, 14600, 6206, 14606, 2118, 2]
+// Dependencies: [5, 19, 21, 14713, 6269, 14719, 2121, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 14605 (directory_channels/GuildDirectoryUtils)
+// Module 14718 (directory_channels/GuildDirectoryUtils)
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -43,7 +43,7 @@ let obj = function _onAddDirectoryGuildEntry() {
     obj.openLazy(obj8);
     await "HermesInternal";
     ({ directoryChannelId: c0, directoryGuildName: c1, guild: c2, description: c3, category: c4, onClose: c5 } = closure_0);
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

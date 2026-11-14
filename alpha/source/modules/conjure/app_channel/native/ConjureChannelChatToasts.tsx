@@ -1,19 +1,19 @@
-// Module ID: 19243
-// Function ID: 19244
+// Module ID: 19435
+// Function ID: 19436
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 5243, 575, 1113, 5309, 7381, 1187, 5866, 19244, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1113, 5372, 7445, 1187, 5929, 19436, 2]
 // Exports: default
 
-// Module 19243 (ConjureChannelChatToasts)
+// Module 19435 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import UserUtils from "UserUtils" /* 5309 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 19244 */;
+import UserUtils from "UserUtils" /* 5372 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 19436 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,7 +49,7 @@ function ChatToast(message) {
   const obj2 = { style: tmp.opaque, children: metroRequire(Card, obj3) };
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
-  Card = tmp2(7381).Card;
+  Card = tmp2(7445).Card;
   const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
   const Avatar = tmp2(1187).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];

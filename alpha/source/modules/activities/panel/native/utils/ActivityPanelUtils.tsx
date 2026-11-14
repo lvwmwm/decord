@@ -1,17 +1,17 @@
-// Module ID: 19710
-// Function ID: 19711
+// Module ID: 19920
+// Function ID: 19921
 // Name: ActivityPanelUtils
-// Dependencies: [5092, 5146, 5091, 5896, 5164, 5917, 1093, 504, 2]
+// Dependencies: [5155, 5209, 5154, 5959, 5227, 5980, 1093, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText, useIsActivityPanelFullscreen, useIsConnectedToActivityInText
 
-// Module 19710 (ActivityPanelUtils)
+// Module 19920 (ActivityPanelUtils)
 import get_initialized from "get initialized" /* 504 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5164 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5896 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5917 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5959 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5980 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

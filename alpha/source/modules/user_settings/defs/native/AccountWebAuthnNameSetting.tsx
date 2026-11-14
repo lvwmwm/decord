@@ -1,13 +1,13 @@
-// Module ID: 17197
-// Function ID: 17198
+// Module ID: 17320
+// Function ID: 17321
 // Name: AccountWebAuthnNameSetting
-// Dependencies: [9135, 1072, 12311, 1113, 17198, 2]
+// Dependencies: [9202, 1072, 12406, 1113, 17321, 2]
 
-// Module 17197 (AccountWebAuthnNameSetting)
+// Module 17320 (AccountWebAuthnNameSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

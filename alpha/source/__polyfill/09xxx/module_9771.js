@@ -1,424 +1,196 @@
 // Module ID: 9771
 // Function ID: 9772
-// Dependencies: [41, 42, 9740, 9744, 9745, 9735, 9768, 9736, 9746, 9772, 9758, 9730, 9757, 9773, 9759, 9766]
+// Dependencies: [17, 9772]
+// Exports: getAndroidModuleType, getIosModule, getNativeModule, isIosStorekit2, setAndroidNativeModule, setIosNativeModule, storekit1Mode, storekit2Mode, storekitHybridMode
 
 // Module 9771
-import _mod9735 from "module_9735" /* 9735 */;
-import _mod9736 from "module_9736" /* 9736 */;
-import generatePropagationContext from "generatePropagationContext" /* 9740 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 9744 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 9745 */;
-import _slicedToArray from "_slicedToArray" /* 9746 */;
-import _mod9757 from "module_9757" /* 9757 */;
-import _mod9758 from "module_9758" /* 9758 */;
-import _mod9759 from "module_9759" /* 9759 */;
-import _mod9768 from "module_9768" /* 9768 */;
-import _mod9772 from "module_9772" /* 9772 */;
-import _mod9773 from "module_9773" /* 9773 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _createClass from "_createClass" /* 9772 */;
+import react_native from "react-native" /* 17 */;
 
-let data;
-
-function isFullFinishedSpan(start_timestamp) {
-  return start_timestamp.start_timestamp && start_timestamp.timestamp && start_timestamp.span_id && start_timestamp.trace_id;
-}
-class SentrySpan {
-  constructor() {
-    let obj = arg0;
-    if (arg0 === undefined) {
-      obj = {};
-    }
-    const self = this;
-    _classCallCheck(this, SentrySpan);
-    let traceId = obj.traceId;
-    if (!traceId) {
-      const obj2 = generatePropagationContext;
-      traceId = obj2.generateTraceId();
-    }
-    self._traceId = traceId;
-    let spanId = obj.spanId;
-    if (!spanId) {
-      const obj3 = generatePropagationContext;
-      spanId = obj3.generateSpanId();
-    }
-    self._spanId = spanId;
-    let startTimestamp = obj.startTimestamp;
-    if (!startTimestamp) {
-      const obj4 = _browserPerformanceTimeOriginMode;
-      startTimestamp = obj4.timestampInSeconds();
-    }
-    self._startTime = startTimestamp;
-    self._attributes = {};
-    const obj5 = { [closure_2_0(closure_2_1[4]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "manual" };
-    const setAttributes = self.setAttributes;
-    obj5[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP] = obj.op;
-    const merged = Object.assign(obj.attributes);
-    setAttributes(obj5);
-    self._name = obj.name;
-    if (obj.parentSpanId) {
-      self._parentSpanId = obj.parentSpanId;
-    }
-    if ("sampled" in obj) {
-      self._sampled = obj.sampled;
-    }
-    if (obj.endTimestamp) {
-      self._endTime = obj.endTimestamp;
-    }
-    self._events = [];
-    self._isStandaloneSpan = obj.isStandalone;
-    if (self._endTime) {
-      self._onSpanEnded();
+let NativeModules;
+let Platform;
+let RNIapModule;
+let c3;
+({ NativeModules, Platform } = react_native);
+let RNIapIos = NativeModules.RNIapIos;
+({ RNIapIosSk2: c3, RNIapModule } = NativeModules);
+const RNIapAmazonModule = NativeModules.RNIapAmazonModule;
+let c6 = false;
+function checkNativeAndroidAvailable() {
+  const tmp = RNIapModule;
+  if (!tmp) {
+    const tmp2 = RNIapAmazonModule;
+    if (!tmp2) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+      throw error;
     }
   }
 }
-const entry = {
-  key: "addLink",
-  value: function addLink(arg0) {
-    return this;
+function getAndroidModule() {
+  if (typeof checkNativeAndroidAvailable === "function") {
+    let tmp = RNIapModule;
+    if (!tmp) {
+      const tmp2 = RNIapAmazonModule;
+      if (!tmp2) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+        throw error;
+      }
+    }
+    let tmp8 = RNIapModule;
+    if (!tmp8) {
+      if (!tmp) {
+        tmp = RNIapAmazonModule;
+      }
+      tmp8 = tmp;
+    }
+    return tmp8;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}
+function isStorekit2Available() {
+  return c6;
+}
+
+export const isIos = false;
+export const isAndroid = true;
+export const isAmazon = RNIapAmazonModule;
+export const isPlay = RNIapModule;
+export const setAndroidNativeModule = (arg0) => {
+  RNIapModule = arg0;
+};
+export { checkNativeAndroidAvailable };
+export { getAndroidModule };
+export const getAndroidModuleType = function() {
+  if (typeof getAndroidModule === "function") {
+    if (typeof checkNativeAndroidAvailable === "function") {
+      if (!RNIapModule) {
+        const tmp3 = RNIapAmazonModule;
+        if (!tmp3) {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+          throw error;
+        }
+      }
+      let tmp9 = RNIapModule;
+      if (!tmp9) {
+        tmp9 = RNIapModule || RNIapAmazonModule;
+      }
+      if (RNIapModule === tmp9) {
+        return "android";
+      } else if (RNIapAmazonModule === tmp9) {
+        return "amazon";
+      } else {
+        return null;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
   }
 };
-let items = [
-  entry,
-  {
-    key: "addLinks",
-    value: function addLinks(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "recordException",
-    value: function recordException(arg0, arg1) {
-
-    }
-  },
-  {
-    key: "spanContext",
-    value: function spanContext() {
-      let _sampled;
-      let tmp;
-      const obj = { spanId: this._spanId, traceId: this._traceId, traceFlags: _sampled ? tmp.TRACE_FLAG_SAMPLED : tmp.TRACE_FLAG_NONE };
-      _sampled = this._sampled;
-      tmp = _mod9735;
-      return obj;
-    }
-  },
-  {
-    key: "setAttribute",
-    value: function setAttribute(arg0, arg1) {
-      const self = this;
-      if (undefined === arg1) {
-        delete self._attributes[tmp];
-      } else {
-        self._attributes[arg0] = arg1;
-      }
-      return self;
-    }
-  },
-  {
-    key: "setAttributes",
-    value: function setAttributes(arg0) {
-      const self = this;
-      let closure_0 = arg0;
-      const keys = Object.keys(arg0);
-      const item = keys.forEach((item) => self.setAttribute(item, closure_0[item]));
-      return this;
-    }
-  },
-  {
-    key: "updateStartTime",
-    value: function updateStartTime(arg0) {
-      const obj = _mod9735;
-      this._startTime = obj.spanTimeInputToSeconds(arg0);
-    }
-  },
-  {
-    key: "setStatus",
-    value: function setStatus(_status) {
-      this._status = _status;
-      return this;
-    }
-  },
-  {
-    key: "updateName",
-    value: function updateName(_name) {
-      this._name = _name;
-      const attr = this.setAttribute(SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "custom");
-      return this;
-    }
-  },
-  {
-    key: "end",
-    value: function end(arg0) {
-      const self = this;
-      if (!this._endTime) {
-        const obj = _mod9735;
-        self._endTime = obj.spanTimeInputToSeconds(arg0);
-        const obj2 = _mod9768;
-        obj2.logSpanEnd(self);
-        self._onSpanEnded();
-      }
-    }
-  },
-  {
-    key: "getSpanJSON",
-    value: function getSpanJSON() {
-      let _attributes;
-      let _isStandaloneSpan;
-      let obj2;
-      let obj3;
-      let obj4;
-      let spanId;
-      const self = this;
-      const tmp3 = _mod9736;
-      const obj = { data: this._attributes, description: this._name, op: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP], parent_span_id: this._parentSpanId, span_id: this._spanId, start_timestamp: this._startTime, status: obj2.getStatusMessage(this._status), timestamp: null, trace_id: null, origin: _attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN], _metrics_summary: obj3.getMetricSummaryJsonForSpan(this), profile_id: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_PROFILE_ID], exclusive_time: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME], measurements: obj4.timedEventsToMeasurements(this._events), is_segment: _isStandaloneSpan, segment_id: spanId };
-      const dropUndefinedKeys = tmp3.dropUndefinedKeys;
-      ({ _endTime: obj.timestamp, _traceId: obj.trace_id, _attributes } = this);
-      obj2 = _mod9735;
-      obj3 = _slicedToArray;
-      _isStandaloneSpan = this._isStandaloneSpan;
-      obj4 = _mod9772;
-      if (_isStandaloneSpan) {
-        const tmpResult = _mod9735;
-        _isStandaloneSpan = tmpResult.getRootSpan(self) === self;
-      }
-      spanId = undefined;
-      if (self._isStandaloneSpan) {
-        const tmpResult2 = _mod9735;
-        const rootSpan = tmpResult2.getRootSpan(self);
-        spanId = rootSpan.spanContext().spanId;
-      }
-      return dropUndefinedKeys(obj);
-    }
-  },
-  {
-    key: "isRecording",
-    value: function isRecording() {
-      return !this._endTime && this._sampled;
-    }
-  },
-  {
-    key: "addEvent",
-    value: function addEvent(name, num, arg2) {
-      let obj;
-      let tmpResult2;
-      if (_mod9758.DEBUG_BUILD) {
-        const logger = tmp(9730).logger;
-        logger.log("[Tracing] Adding an event to span:", name);
-      }
-      let isArray = num && typeof num === "number";
-      if (!isArray) {
-        const _Date = Date;
-        isArray = num instanceof Date;
-      }
-      if (!isArray) {
-        const _Array = Array;
-        isArray = Array.isArray(num);
-      }
-      let tmp7 = num;
-      if (!isArray) {
-        let timestampInSecondsResult = arg2;
-        if (!timestampInSecondsResult) {
-          const tmpResult = _browserPerformanceTimeOriginMode;
-          timestampInSecondsResult = tmpResult.timestampInSeconds();
-        }
-        tmp7 = timestampInSecondsResult;
-      }
-      let isArray1 = num && typeof num === "number";
-      if (!isArray1) {
-        const _Date2 = Date;
-        isArray1 = num instanceof Date;
-      }
-      if (!isArray1) {
-        const _Array2 = Array;
-        isArray1 = Array.isArray(num);
-      }
-      if (isArray1) {
-        obj = {};
-      } else {
-        obj = num || {};
-      }
-      const obj2 = { name, time: tmpResult2.spanTimeInputToSeconds(tmp7), attributes: obj };
-      const _events = this._events;
-      tmpResult2 = _mod9735;
-      _events.push(obj2);
-      return this;
-    }
-  },
-  {
-    key: "isStandaloneSpan",
-    value: function isStandaloneSpan() {
-      return this._isStandaloneSpan;
-    }
-  },
-  {
-    key: "_onSpanEnded",
-    value: function _onSpanEnded() {
-      const self = this;
-      const obj = _mod9757;
-      const client = obj.getClient();
-      if (client) {
-        client.emit("spanEnd", self);
-      }
-      if (self._isStandaloneSpan) {
-        if (self._isStandaloneSpan) {
-          if (self._sampled) {
-            const items = [self];
-            const tmpResult = _mod9773;
-            const spanEnvelope = tmpResult.createSpanEnvelope(items, client);
-            const tmpResult5 = _mod9757;
-            const client1 = tmpResult5.getClient();
-            if (client1) {
-              if (spanEnvelope[1]) {
-                if (0 !== spanEnvelope[1].length) {
-                  client1.sendEnvelope(spanEnvelope);
-                }
-              }
-              client1.recordDroppedEvent("before_send", "span");
-            }
-          } else {
-            if (_mod9758.DEBUG_BUILD) {
-              const logger = tmp(9730).logger;
-              logger.log("[Tracing] Discarding standalone span because its trace was not chosen to be sampled.");
-            }
-            if (client) {
-              client.recordDroppedEvent("sample_rate", "span");
-            }
-          }
-        } else {
-          const result = self._convertSpanToTransaction();
-          if (result) {
-            const tmpResult6 = _mod9759;
-            let scope = tmpResult6.getCapturedScopesOnSpan(self).scope;
-            if (!scope) {
-              const tmpResult7 = _mod9757;
-              scope = tmpResult7.getCurrentScope();
-            }
-            scope.captureEvent(result);
-          }
-        }
-      } else {
-        _mod9735;
-      }
-    }
-  },
-  {
-    key: "_convertSpanToTransaction",
-    value: function _convertSpanToTransaction() {
-      let obj3;
-      let obj4;
-      let obj7;
-      let substr;
-      let tmpResult12;
-      let tmpResult14;
-      let tmpResult15;
-      const self = this;
-      let tmp = self;
-      let obj = self(9735);
-      const spanToJSONResult = obj.spanToJSON(this);
-      const tmp4 = spanToJSONResult.start_timestamp && spanToJSONResult.timestamp && spanToJSONResult.span_id && spanToJSONResult.trace_id;
-      if (tmp4) {
-        if (!self._name) {
-          if (tmp(9758).DEBUG_BUILD) {
-            const logger = tmp(9730).logger;
-            logger.warn("Transaction has no name, falling back to `<unlabeled transaction>`.");
-          }
-          self._name = "<unlabeled transaction>";
-        }
-        const tmpResult = tmp(9759);
-        const capturedScopesOnSpan = tmpResult.getCapturedScopesOnSpan(self);
-        const scope = capturedScopesOnSpan.scope;
-        let currentScope = scope;
-        const isolationScope = capturedScopesOnSpan.isolationScope;
-        if (!scope) {
-          const tmpResult9 = tmp(9757);
-          currentScope = tmpResult9.getCurrentScope();
-        }
-        let client = currentScope.getClient();
-        if (!client) {
-          const tmpResult10 = tmp(9757);
-          client = tmpResult10.getClient();
-        }
-        if (true !== self._sampled) {
-          if (tmp(9758).DEBUG_BUILD) {
-            const logger3 = tmp(9730).logger;
-            logger3.log("[Tracing] Discarding transaction because its trace was not chosen to be sampled.");
-          }
-          const tmp20 = client;
-          if (tmp20) {
-            client.recordDroppedEvent("sample_rate", "transaction");
-          }
-        } else {
-          const tmpResult11 = tmp(9735);
-          const spanDescendants = tmpResult11.getSpanDescendants(self);
-          const found = spanDescendants.filter((isStandaloneSpan) => {
-            let tmp = isStandaloneSpan !== self;
-            if (tmp) {
-              tmp = !(isStandaloneSpan instanceof c3 && isStandaloneSpan.isStandaloneSpan());
-              isStandaloneSpan instanceof c3 && isStandaloneSpan.isStandaloneSpan();
-            }
-            return tmp;
-          });
-          const mapped = found.map((item) => {
-            const obj = self(dependencyMap[5]);
-            return obj.spanToJSON(item);
-          });
-          const found1 = mapped.filter(isFullFinishedSpan);
-          const tmp23 = self._attributes[tmp(undefined, 9745).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE];
-          const _attributes = self._attributes;
-          delete _attributes[tmp(undefined, 9745).SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME];
-          const item = found1.forEach((data) => {
-            if (data.data) {
-              data = data.data;
-              delete data[self(undefined, dependencyMap[4]).SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME];
-            }
-          });
-          const obj2 = { contexts: obj3, spans: substr, start_timestamp: null, timestamp: null, transaction: null, type: "transaction", sdkProcessingMetadata: obj4, _metrics_summary: tmpResult15.getMetricSummaryJsonForSpan(self) };
-          obj3 = { trace: tmpResult12.spanToTransactionTraceContext(self) };
-          substr = found1;
-          tmpResult12 = tmp(9735);
-          if (found1.length > 1000) {
-            const sorted = found1.sort((start_timestamp, start_timestamp2) => start_timestamp.start_timestamp - start_timestamp2.start_timestamp);
-            substr = sorted.slice(0, 1000);
-          }
-          ({ _startTime: obj15.start_timestamp, _endTime: obj15.timestamp, _name: obj15.transaction } = self);
-          obj4 = { capturedSpanScope: scope, capturedSpanIsolationScope: isolationScope };
-          const obj5 = { dynamicSamplingContext: tmpResult14.getDynamicSamplingContextFromSpan(self) };
-          const dropUndefinedKeys = tmp(9736).dropUndefinedKeys;
-          tmp(9736);
-          tmpResult14 = tmp(9766);
-          const merged = Object.assign(dropUndefinedKeys(obj5));
-          let tmp11 = tmp23;
-          tmpResult15 = tmp(9746);
-          if (tmp11) {
-            const obj6 = { transaction_info: obj7 };
-            tmp11 = obj6;
-            obj7 = { source: tmp23 };
-          }
-          const merged1 = Object.assign(tmp11);
-          const tmpResult16 = tmp(9772);
-          const result = tmpResult16.timedEventsToMeasurements(self._events);
-          let length = result;
-          if (length) {
-            const _Object = Object;
-            length = Object.keys(result).length;
-          }
-          if (length) {
-            if (tmp(9758).DEBUG_BUILD) {
-              const logger2 = tmp(9730).logger;
-              const _JSON = JSON;
-              logger2.log("[Measurements] Adding measurements to transaction event", JSON.stringify(result, undefined, 2));
-            }
-            obj2.measurements = result;
-          }
-          return obj2;
+export const getNativeModule = function() {
+  if (typeof getAndroidModule === "function") {
+    if (typeof checkNativeAndroidAvailable === "function") {
+      let tmp2 = RNIapModule;
+      if (!tmp2) {
+        const tmp3 = RNIapAmazonModule;
+        if (!tmp3) {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+          throw error;
         }
       }
+      let tmp9 = RNIapModule;
+      if (!tmp9) {
+        if (!tmp2) {
+          tmp2 = RNIapAmazonModule;
+        }
+        tmp9 = tmp2;
+      }
+      return tmp9;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+export { isStorekit2Available };
+export const isIosStorekit2 = () => c6;
+export const setIosNativeModule = (arg0) => {
+  RNIapIos = arg0;
+};
+export const storekit2Mode = () => {
+  RNIapIos = _false;
+  if (typeof isStorekit2Available === "function") {
+    let flag = !c6;
+    if (c6) {
+      RNIapIos.disable();
+      flag = true;
+    }
+    return flag;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+export const storekit1Mode = () => {
+  if (typeof isStorekit2Available === "function") {
+    let flag = c6;
+    if (flag) {
+      _false.disable();
+      flag = true;
+    }
+    return flag;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+export const storekitHybridMode = () => {
+  if (typeof isStorekit2Available === "function") {
+    const tmp = c6;
+    if (tmp) {
+      RNIapIos = _false;
+      const _console2 = console;
+      console.info("Using Storekit 2");
+    } else {
+      const _console = console;
+      console.info("Using Storekit 1");
+    }
+    return true;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+export const getIosModule = function() {
+  if (!RNIapIos) {
+    if (typeof isStorekit2Available === "function") {
+      const tmp3 = c6;
+      if (!tmp3) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+        throw error;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
   }
-];
-const _moduleResult = _createClass(SentrySpan, items);
-let c3 = _moduleResult;
-const SentrySpan_export = _moduleResult;
-
-export { SentrySpan_export as SentrySpan };
+  let tmp9 = RNIapIos;
+  if (!tmp9) {
+    tmp9 = _false || RNIapIos;
+  }
+  return tmp9;
+};

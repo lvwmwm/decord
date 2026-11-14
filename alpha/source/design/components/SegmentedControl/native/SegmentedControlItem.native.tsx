@@ -1,19 +1,19 @@
-// Module ID: 11185
-// Function ID: 11186
+// Module ID: 11252
+// Function ID: 11253
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 5243, 575, 11186, 1652, 5876, 1377, 1113, 5866, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 11253, 1655, 5939, 1380, 1113, 5929, 2]
 // Exports: SegmentedControlItem
 
-// Module 11185 (SegmentedControlItem)
+// Module 11252 (SegmentedControlItem)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 11186 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 11253 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -72,8 +72,8 @@ export function SegmentedControlItem(index) {
   let obj = useStateFromSharedValue;
   const derivedStateFromSharedValue = obj.useDerivedStateFromSharedValue(activeIndex, (arg0) => ({ selected: arg0 === index }));
   const items = [closure_10, tmp2, pressed, index, activeIndex, , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[5] = spring_spring.withSpring;
   items[6] = closure_7;
   let c0;
@@ -119,7 +119,7 @@ export function SegmentedControlItem(index) {
   items3 = [icon, ];
   const obj5 = { animated: true, variant: "body-sm/semibold", style: animatedStyle, lineClamp: 1, maxFontSizeMultiplier: num2, children: label };
   num2 = undefined;
-  const Text = tmp3(5866).Text;
+  const Text = tmp3(5929).Text;
   tmp18 = metroRequire;
   tmp19 = React3;
   if ("experimental_Large" === variant) {

@@ -1,15 +1,15 @@
-// Module ID: 13492
-// Function ID: 13493
+// Module ID: 13595
+// Function ID: 13596
 // Name: ConjureTipsHost
-// Dependencies: [19, 17, 21, 5243, 575, 13493, 13503, 13514, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13596, 13606, 13617, 2]
 // Exports: default
 
-// Module 13492 (ConjureTipsHost)
+// Module 13595 (ConjureTipsHost)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -28,8 +28,8 @@ export default function ConjureTipsHost(onShow) {
   let joined;
   ({ projectId, messages, draftHasText, onAskForIdeas } = onShow);
   const tmp = closure_6();
-  const tmp2 = joined(13493);
-  const tmp2Result = tmp2(onShow(13503).CONJURE_TIPS, projectId, messages, draftHasText, onAskForIdeas);
+  const tmp2 = joined(13596);
+  const tmp2Result = tmp2(onShow(13606).CONJURE_TIPS, projectId, messages, draftHasText, onAskForIdeas);
   const mapped = tmp2Result.map((tip) => "" + tip.tip.id + ":" + tip.presentation);
   joined = mapped.join(",");
   const items = [joined, onShow];

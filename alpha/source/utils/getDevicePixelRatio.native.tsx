@@ -1,10 +1,10 @@
-// Module ID: 2021
-// Function ID: 2022
+// Module ID: 2024
+// Function ID: 2025
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: default
 
-// Module 2021 (react-native)
+// Module 2024 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

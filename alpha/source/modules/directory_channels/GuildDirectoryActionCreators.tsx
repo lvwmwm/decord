@@ -1,18 +1,18 @@
-// Module ID: 14600
-// Function ID: 14601
+// Module ID: 14713
+// Function ID: 14714
 // Name: GuildDirectoryActionCreators
-// Dependencies: [5, 14587, 14589, 1072, 551, 572, 1282, 6788, 1260, 2]
+// Dependencies: [5, 14700, 14702, 1072, 551, 572, 1285, 6851, 1264, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 14600 (GuildDirectoryActionCreators)
+// Module 14713 (GuildDirectoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6788 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 14589 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6851 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 14702 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 14587 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 14700 */;
 import debounce_mod from "debounce" /* 551 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj = function _addDirectoryGuildEntry() {
       if (closure_3 === undefined) {
         UNCATEGORIZED = constants.UNCATEGORIZED;
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -81,7 +81,7 @@ obj = function _updateDirectoryEntry() {
       if (closure_3 === undefined) {
         UNCATEGORIZED = constants.UNCATEGORIZED;
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

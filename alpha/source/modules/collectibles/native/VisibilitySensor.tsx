@@ -1,12 +1,12 @@
-// Module ID: 18389
-// Function ID: 18390
+// Module ID: 18512
+// Function ID: 18513
 // Name: VisibilitySensor
-// Dependencies: [19, 17, 21, 1493, 2]
+// Dependencies: [19, 17, 21, 1496, 2]
 // Exports: default
 
-// Module 18389 (VisibilitySensor)
+// Module 18512 (VisibilitySensor)
 import react_native from "react-native" /* 17 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,18 +1,18 @@
-// Module ID: 14744
-// Function ID: 14745
+// Module ID: 14858
+// Function ID: 14859
 // Name: EmojiSuggestionBarSmall
-// Dependencies: [19, 9479, 21, 575, 5243, 14729, 1652, 11207, 11231, 5314, 2]
+// Dependencies: [19, 9546, 21, 575, 5306, 14842, 1655, 11274, 11298, 5377, 2]
 // Exports: EmojiSuggestionBarSmall
 
-// Module 14744 (EmojiSuggestionBarSmall)
+// Module 14858 (EmojiSuggestionBarSmall)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9479 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 11207 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14729 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9546 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 11274 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14842 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let locked;
@@ -31,12 +31,12 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
   ({ onOccupiedHeightChange, cleanUp } = displayEmojis);
   const tmp2 = dependencyMap;
   const tmp = closure_7(displayEmojis.anchorTop);
-  let obj = displayEmojis(14729);
+  let obj = displayEmojis(14842);
   const suggestionBarHeight = obj.useSuggestionBarHeight(transitionState, cleanUp, closure_6, onOccupiedHeightChange);
-  let tmp4 = displayEmojis(1652);
+  let tmp4 = displayEmojis(1655);
   let items = [closure_8, , , ];
   const useAnimatedStyle = tmp4.useAnimatedStyle;
-  items[1] = displayEmojis(1652).interpolate;
+  items[1] = displayEmojis(1655).interpolate;
   items[2] = suggestionBarHeight;
   items[3] = closure_6;
   let c0;
@@ -57,7 +57,7 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
   EmojiSuggestionBarSmallTsx1.__initData = tmp5;
   const animatedStyle = useAnimatedStyle(EmojiSuggestionBarSmallTsx1);
   const items2 = [tmp.containerSmall, animatedStyle];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   return <View style={items2}>{displayEmojis.map((locked, index) => {
     locked = locked.locked;
     const emoji = locked.emoji;
@@ -66,7 +66,7 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
     if (locked) {
       let openEmojiActionSheet = react;
     } else {
-      openEmojiActionSheet = tmp2(11231).openEmojiActionSheet;
+      openEmojiActionSheet = tmp2(11298).openEmojiActionSheet;
     }
     const tmp2Result = EmojiSuggestionBarUtils;
     return <EmojiEntranceAnimation key={tmp2Result.getEmojiEntranceKey(displayEmojis, arg1)} index={arg1} reducedMotion={importDefault}>{null}</EmojiEntranceAnimation>;

@@ -1,11 +1,11 @@
-// Module ID: 16376
-// Function ID: 16377
+// Module ID: 16499
+// Function ID: 16500
 // Name: PathUtils
-// Dependencies: [1377, 2]
+// Dependencies: [1380, 2]
 // Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
-// Module 16376 (PathUtils)
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+// Module 16499 (PathUtils)
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/PathUtils.tsx");

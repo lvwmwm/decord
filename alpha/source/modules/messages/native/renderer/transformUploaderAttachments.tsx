@@ -1,14 +1,14 @@
-// Module ID: 15421
-// Function ID: 15422
+// Module ID: 15535
+// Function ID: 15536
 // Name: transformUploaderAttachments
-// Dependencies: [9093, 6298, 10160, 1113, 8806, 2]
+// Dependencies: [9160, 6361, 10229, 1113, 8873, 2]
 // Exports: default
 
-// Module 15421 (transformUploaderAttachments)
-import MediaFormatTesters from "MediaFormatTesters" /* 6298 */;
-import CloudUpload from "CloudUpload" /* 8806 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 9093 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 10160 */;
+// Module 15535 (transformUploaderAttachments)
+import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
+import CloudUpload from "CloudUpload" /* 8873 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 9160 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 10229 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;

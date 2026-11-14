@@ -1,12 +1,12 @@
-// Module ID: 20462
-// Function ID: 20463
+// Module ID: 20617
+// Function ID: 20618
 // Name: useEnableCommunityModalIcons
-// Dependencies: [32, 19, 1083, 5250, 20463, 20464, 20465, 20469, 20470, 7366, 5484, 2]
+// Dependencies: [32, 19, 1083, 5313, 20618, 20619, 20620, 20624, 20625, 7430, 5547, 2]
 // Exports: default
 
-// Module 20462 (useEnableCommunityModalIcons)
+// Module 20617 (useEnableCommunityModalIcons)
 import Constants from "Constants" /* 1083 */;
-import useThemeDefault from "useTheme" /* 5484 */;
+import useThemeDefault from "useTheme" /* 5547 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -28,9 +28,9 @@ Object.defineProperty(prototype, "safetyCheck", {
     let tmpResult;
     const obj = require("shared");
     if (obj.isThemeDark(this.theme)) {
-      tmpResult = tmp(20463);
+      tmpResult = tmp(20618);
     } else {
-      tmpResult = tmp(20464);
+      tmpResult = tmp(20619);
     }
     return tmpResult;
   },
@@ -48,9 +48,9 @@ Object.defineProperty(prototype, "finishingTouches", {
     let tmpResult;
     const obj = require("shared");
     if (obj.isThemeDark(this.theme)) {
-      tmpResult = tmp(20469);
+      tmpResult = tmp(20624);
     } else {
-      tmpResult = tmp(20470);
+      tmpResult = tmp(20625);
     }
     return tmpResult;
   },

@@ -1,9 +1,9 @@
-// Module ID: 5282
-// Function ID: 5283
+// Module ID: 5345
+// Function ID: 5346
 // Name: AdCreativeType
 // Dependencies: [2]
 
-// Module 5282 (AdCreativeType)
+// Module 5345 (AdCreativeType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AdCreativeType.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 15472
-// Function ID: 15473
+// Module ID: 15586
+// Function ID: 15587
 // Name: getGameOrganizationInviteCtaState
-// Dependencies: [1113, 2549, 2]
+// Dependencies: [1113, 2565, 2]
 // Exports: default
 
-// Module 15472 (getGameOrganizationInviteCtaState)
+// Module 15586 (getGameOrganizationInviteCtaState)
 import intl6 from "intl" /* 1113 */;
-import _modDef2549 from "module_2549" /* 2549 */;
+import _modDef2565 from "module_2565" /* 2565 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/getGameOrganizationInviteCtaState.tsx");
@@ -24,7 +24,7 @@ export default function getGameOrganizationInviteCtaState(noun) {
   if (noun.accepted) {
     let obj3;
     if (noun.canGoToGuild) {
-      const obj2 = { kind: "go_to_server", label: intl5.string(_modDef2549.H1wMHV), actionable: true };
+      const obj2 = { kind: "go_to_server", label: intl5.string(_modDef2565.H1wMHV), actionable: true };
       intl5 = intl6.intl;
       obj3 = obj2;
     } else {
@@ -33,16 +33,16 @@ export default function getGameOrganizationInviteCtaState(noun) {
     }
     obj = obj3;
   } else if (tmp2) {
-    const obj4 = { kind: "full", label: intl3.formatToPlainString(_modDef2549.rMimTG, obj5), actionable: false };
+    const obj4 = { kind: "full", label: intl3.formatToPlainString(_modDef2565.rMimTG, obj5), actionable: false };
     intl3 = intl6.intl;
     obj = obj4;
     obj5 = { noun };
   } else if (tmp) {
-    const obj6 = { kind: "awaiting", label: intl2.string(_modDef2549.OkMPbI), actionable: false };
+    const obj6 = { kind: "awaiting", label: intl2.string(_modDef2565.OkMPbI), actionable: false };
     intl2 = intl6.intl;
     obj = obj6;
   } else {
-    obj = { kind: "join", label: intl.formatToPlainString(_modDef2549["Cz/ZUM"], obj7), actionable: true };
+    obj = { kind: "join", label: intl.formatToPlainString(_modDef2565["Cz/ZUM"], obj7), actionable: true };
     intl = intl6.intl;
     obj7 = { noun };
   }

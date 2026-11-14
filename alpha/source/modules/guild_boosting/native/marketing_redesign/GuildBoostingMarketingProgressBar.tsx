@@ -1,21 +1,21 @@
-// Module ID: 15887
-// Function ID: 15888
+// Module ID: 16007
+// Function ID: 16008
 // Name: GuildBoostingMarketingProgressBar
-// Dependencies: [32, 19, 17, 5244, 1072, 21, 5243, 15888, 575, 5484, 563, 1652, 1705, 9168, 5876, 5830, 5250, 2]
+// Dependencies: [32, 19, 17, 5307, 1072, 21, 5306, 16008, 575, 5547, 563, 1655, 1708, 9235, 5939, 5893, 5313, 2]
 // Exports: default
 
-// Module 15887 (GuildBoostingMarketingProgressBar)
+// Module 16007 (GuildBoostingMarketingProgressBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 9168 */;
-import GuildBoostingMarketingProgressBarMarker from "GuildBoostingMarketingProgressBarMarker" /* 15888 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 9235 */;
+import GuildBoostingMarketingProgressBarMarker from "GuildBoostingMarketingProgressBarMarker" /* 16008 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildBoostingMarketingProgressBarMarkerDefault = GuildBoostingMarketingProgressBarMarker;

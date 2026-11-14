@@ -1,22 +1,22 @@
-// Module ID: 19853
-// Function ID: 19854
+// Module ID: 20009
+// Function ID: 20010
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 11919, 11917, 19699, 11920, 21, 1652, 12707, 5243, 11918, 5876, 11266, 1705, 5491, 5535, 6134, 19788, 12702, 12700, 19778, 11923, 19696, 6118, 5839, 575, 5485, 12704, 2]
+// Dependencies: [32, 19, 17, 11985, 11983, 19909, 11986, 21, 1655, 12803, 5306, 11984, 5939, 11333, 1708, 5554, 5598, 6197, 11995, 12798, 12796, 19967, 11989, 19906, 6181, 5902, 575, 5548, 12800, 2]
 
-// Module 19853 (VoicePanelVideoRenderer)
+// Module 20009 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11917 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11920 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11923 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 12707 */;
-import VideoActionCreators from "VideoActionCreators" /* 19696 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19699 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 12803 */;
+import VideoActionCreators from "VideoActionCreators" /* 19906 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19909 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1652 from "module_1652" /* 1652 */;
-import createStyles from "createStyles" /* 5243 */;
+import module_1655 from "module_1655" /* 1655 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, diff2, diff3, failResult, set, set2, set2Result, set3, set3Result, timestamp, value1;
@@ -35,7 +35,7 @@ const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsMo
 const VoicePanelPIPModes = VoicePanelPIPConstants.VoicePanelPIPModes;
 let SCALE_PHYSICS = MorphablePanelConstants.SCALE_PHYSICS;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
-const DCDVideoRenderer = module_1652.createAnimatedComponent(DCDVideoRendererDefault);
+const DCDVideoRenderer = module_1655.createAnimatedComponent(DCDVideoRendererDefault);
 let items = [{ code: "(function getScaleChangeWithOverscroll_VoicePanelVideoRendererTsx1(currentScale,scaleChange,fitScale){let[MIN_OVERSCROLL,OVERSCOLL_INTENSITY_FACTOR]=this.__closure;if(currentScale>=fitScale){return scaleChange;}const underScale=1-currentScale;const factor=Math.max(MIN_OVERSCROLL,1-underScale*underScale*OVERSCOLL_INTENSITY_FACTOR);return 1+(scaleChange-1)*factor;})" }, 0.1, 5];
 let c1;
 [tmp4, tmp5, tmp6] = items;

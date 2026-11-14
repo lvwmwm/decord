@@ -1,20 +1,20 @@
-// Module ID: 14082
-// Function ID: 14083
+// Module ID: 14189
+// Function ID: 14190
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 8165, 8140, 1072, 21, 5243, 504, 14075, 14083, 1113, 14081, 14084, 14100, 14101, 5866, 2]
+// Dependencies: [19, 17, 8231, 8206, 1072, 21, 5306, 504, 14182, 14190, 1113, 14188, 14191, 14207, 14208, 5929, 2]
 // Exports: default
 
-// Module 14082 (AppealIngestionSpeedBump)
+// Module 14189 (AppealIngestionSpeedBump)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 14084 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 14100 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 14101 */;
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 14191 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 14207 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 14208 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8165 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8140 */;
+import SafetyHubStore from "SafetyHubStore" /* 8231 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ export default function AppealIngestionSpeedBump(arg0) {
   const stringResult = intl.string(require("intl").t["C5q+pW"]);
   const intl2 = tmp2(1113).intl;
   const stringResult1 = intl2.string(require("intl").t.URt7VI);
-  const AppealIngestionModalScreen = tmp2(14081).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(14188).AppealIngestionModalScreen;
   const items1 = [closure_8(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let tmp10Result = flagged_content.length > 0;
   const obj2 = { style: tmp.container, children: items2 };
@@ -132,7 +132,7 @@ export default function AppealIngestionSpeedBump(arg0) {
   items2[4] = tmp10Result4;
   if (isDsaEligible) {
     const obj8 = { variant: "body-xs/normal", children: intl6.format(require("intl").t.WMUgCX, {}) };
-    const Text = tmp2(5866).Text;
+    const Text = tmp2(5929).Text;
     intl6 = tmp2(1113).intl;
     isDsaEligible = tmp10(Text, obj8);
   }

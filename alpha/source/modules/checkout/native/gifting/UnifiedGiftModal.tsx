@@ -1,15 +1,15 @@
-// Module ID: 11681
-// Function ID: 11682
+// Module ID: 11747
+// Function ID: 11748
 // Name: UnifiedGiftModal
-// Dependencies: [32, 19, 21, 6785, 7424, 11682, 1113, 7427, 11683, 11714, 7852, 2]
+// Dependencies: [32, 19, 21, 6848, 7490, 11748, 1113, 7493, 11749, 11780, 7918, 2]
 // Exports: default
 
-// Module 11681 (UnifiedGiftModal)
+// Module 11747 (UnifiedGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11682 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

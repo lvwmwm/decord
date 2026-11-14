@@ -1,11 +1,11 @@
-// Module ID: 8702
-// Function ID: 8703
+// Module ID: 8769
+// Function ID: 8770
 // Name: maybeDispatchDevOnlyDummyFriendSuggestions
-// Dependencies: [1385, 2]
+// Dependencies: [1388, 2]
 // Exports: default
 
-// Module 8702 (maybeDispatchDevOnlyDummyFriendSuggestions)
-import UserStore from "UserStore" /* 1385 */;
+// Module 8769 (maybeDispatchDevOnlyDummyFriendSuggestions)
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/friend_suggestions/maybeDispatchDevOnlyDummyFriendSuggestions.tsx");

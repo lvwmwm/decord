@@ -1,11 +1,11 @@
-// Module ID: 6712
-// Function ID: 6713
+// Module ID: 6775
+// Function ID: 6776
 // Name: MonitoringAgentUtils
-// Dependencies: [1356, 2]
+// Dependencies: [1359, 2]
 // Exports: addGlobalTag, getGlobalTagsArray
 
-// Module 6712 (MonitoringAgentUtils)
-import DesignIds from "DesignIds" /* 1356 */;
+// Module 6775 (MonitoringAgentUtils)
+import DesignIds from "DesignIds" /* 1359 */;
 import size from "module_2" /* 2 */;
 
 const obj = { design_id: DesignIds.DesignIds.DESIGN_TABS_IA };

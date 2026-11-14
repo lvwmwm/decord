@@ -1,22 +1,22 @@
-// Module ID: 19548
-// Function ID: 19549
+// Module ID: 19741
+// Function ID: 19742
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [19, 17, 21, 5243, 575, 7929, 7917, 1113, 19549, 19565, 11184, 14830, 14097, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7994, 7983, 1113, 19742, 19758, 11251, 14944, 14204, 2]
 
-// Module 19548 (MessageRequestsScreenWithTabs)
+// Module 19741 (MessageRequestsScreenWithTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import SegmentedControlState from "SegmentedControlState" /* 7917 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7929 */;
-import SegmentedControl from "SegmentedControl" /* 11184 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 14097 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 14830 */;
-import MessageRequestListDefault from "MessageRequestList" /* 19549 */;
-import SpamMessageListDefault from "SpamMessageList" /* 19565 */;
+import SegmentedControlState from "SegmentedControlState" /* 7983 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
+import SegmentedControl from "SegmentedControl" /* 11251 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 14204 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 14944 */;
+import MessageRequestListDefault from "MessageRequestList" /* 19742 */;
+import SpamMessageListDefault from "SpamMessageList" /* 19758 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -28,9 +28,9 @@ const View = react_native.View;
 const constants = { REQUEST: "REQUEST", SPAM: "SPAM" };
 let createStyles = createStyles_mod;
 let obj = { container: obj2, messageRequestContent: { flex: 1 }, tabContainer: obj3 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
-obj3 = { minHeight: 32, paddingHorizontal: nativeDefault.space.PX_16 };
+obj3 = { minHeight: 32, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_4 };
 let closure_8 = createStyles(obj);
 const memoResult = react.memo(function MessageRequestsScreenWithTabs(navigation) {
   let intl;

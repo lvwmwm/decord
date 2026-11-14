@@ -1,11 +1,11 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 7452
+// Function ID: 7453
 // Name: useIOSPressEffects
-// Dependencies: [19, 1493, 1652, 1377, 5876, 2]
+// Dependencies: [19, 1496, 1655, 1380, 5939, 2]
 // Exports: useIOSPressEffects
 
-// Module 7384 (useIOSPressEffects)
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+// Module 7452 (useIOSPressEffects)
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -35,13 +35,13 @@ export function useIOSPressEffects(arg0) {
   let sharedValue;
   let sharedValue1;
   width = width(sharedValue[1])().width;
-  let obj = require("module_1652");
+  let obj = require("module_1655");
   sharedValue = obj.useSharedValue(1 - arg0 / width);
   let items = [width, arg0, sharedValue];
   const effect = sharedValue1.useEffect(() => {
     const result = sharedValue.set(1 - closure_0 / width);
   }, items);
-  let obj2 = require("module_1652");
+  let obj2 = require("module_1655");
   sharedValue1 = obj2.useSharedValue(0);
   let items1 = [sharedValue1];
   let items2 = [sharedValue1];
@@ -55,11 +55,11 @@ export function useIOSPressEffects(arg0) {
     const isIOSResult = obj.isIOS() && sharedValue1.set(0);
     return isIOSResult;
   }, items2);
-  let tmp6 = require("module_1652");
+  let tmp6 = require("module_1655");
   const items3 = [closure_5, , , , , , ];
   const useAnimatedStyle = tmp6.useAnimatedStyle;
   items3[1] = require("spring/spring").withSpring;
-  items3[2] = require("module_1652").interpolate;
+  items3[2] = require("module_1655").interpolate;
   items3[3] = sharedValue1;
   items3[4] = sharedValue;
   items3[5] = obj;

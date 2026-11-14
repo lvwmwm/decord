@@ -1,22 +1,22 @@
-// Module ID: 15881
-// Function ID: 15882
+// Module ID: 16001
+// Function ID: 16002
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 5460, 21, 5243, 575, 671, 5866, 15882, 10619, 10607, 1113, 2717, 15883, 2]
+// Dependencies: [19, 17, 5523, 21, 5306, 575, 671, 5929, 16002, 10688, 10676, 1113, 2733, 16003, 2]
 // Exports: default
 
-// Module 15881 (GuildPowerupsMarketingHeader)
+// Module 16001 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 10607 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 10619 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 15882 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 15883 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 10676 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 10688 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 16002 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 16003 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5460 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5523 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let alphaResult;
@@ -64,11 +64,11 @@ export default function GuildPowerupsMarketingHeader(guild) {
     }
     if (0 !== num) {
       ({ style: tmp.text, variant: "body-sm/semibold", children: format(v7lwpzR, obj7) });
-      const Text = guild(5866).Text;
+      const Text = guild(5929).Text;
       const intl = guild(1113).intl;
       format = intl.format;
       let str2 = "";
-      v7lwpzR = tmp2(2717)["7lwpzR"];
+      v7lwpzR = tmp2(2733)["7lwpzR"];
       const tmp8 = guild;
       if (null != arr) {
         str2 = "";
@@ -81,7 +81,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
             const intl2 = tmp8(1113).intl;
             const format2 = intl2.format;
             const obj4 = { perk1: null, perk2: null };
-            const MNO3sG = tmp2(2717).MNO3sG;
+            const MNO3sG = tmp2(2733).MNO3sG;
             format2Result = format2(MNO3sG, obj4);
           }
         }

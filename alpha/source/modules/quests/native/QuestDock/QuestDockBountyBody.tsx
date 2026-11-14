@@ -1,22 +1,22 @@
-// Module ID: 17694
-// Function ID: 17695
+// Module ID: 17814
+// Function ID: 17815
 // Name: QuestDockBountyBody
-// Dependencies: [19, 5275, 21, 17663, 17609, 17577, 17584, 10099, 1113, 15136, 8764, 10067, 10070, 5282, 8767, 5278, 17424, 17426, 10101, 17681, 10089, 17695, 7922, 12206, 2]
+// Dependencies: [19, 5338, 21, 17783, 17727, 17695, 17702, 10168, 1113, 15250, 8831, 10135, 10138, 5345, 8834, 5341, 17542, 17544, 10170, 17801, 10158, 17815, 7988, 12301, 2]
 
-// Module 17694 (QuestDockBountyBody)
+// Module 17814 (QuestDockBountyBody)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import QuestConstants from "QuestConstants" /* 5275 */;
-import QuestTypes from "QuestTypes" /* 5278 */;
-import AdCreativeType from "AdCreativeType" /* 5282 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8764 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8767 */;
-import captureAdUserAction from "captureAdUserAction" /* 10067 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10070 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10101 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 15136 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17424 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 17426 */;
+import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestTypes from "QuestTypes" /* 5341 */;
+import AdCreativeType from "AdCreativeType" /* 5345 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
+import captureAdUserAction from "captureAdUserAction" /* 10135 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10138 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10170 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 15250 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17542 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 17544 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,6 @@ const memoResult = react.memo(function QuestDockBountyBody() {
   let obj6;
   let questDockBounty;
   let setRestingQuestDockMode;
-  let str;
   let tmp12;
   let tmp = setRestingQuestDockMode;
   const isRendered = react.useContext(setRestingQuestDockMode(getQuestImpressionId[3])).isRendered;
@@ -89,11 +88,7 @@ const memoResult = react.memo(function QuestDockBountyBody() {
   if (isQuestDockExpanded) {
     isQuestDockExpanded = isRendered;
   }
-  const obj5 = { rewardTile: jsx(QuestDockBodyRewardTile, obj4), contentBadge: jsx(tmp(getQuestImpressionId[21]), {}), title: str, description: intl.string(tmp3(getQuestImpressionId[8]).t["1uzE2S"]), ctaText: memo, onCtaPress: callback, ctaButtonVariant: "primary", secondaryCta: jsx(IconButton, obj6) };
-  str = questDockBounty.productName;
-  if (str == null) {
-    str = "";
-  }
+  const obj5 = { rewardTile: jsx(QuestDockBodyRewardTile, obj4), contentBadge: jsx(tmp(getQuestImpressionId[21]), {}), title: questDockBounty.productName, description: intl.string(tmp3(getQuestImpressionId[8]).t["1uzE2S"]), ctaText: memo, onCtaPress: callback, ctaButtonVariant: "primary", secondaryCta: jsx(IconButton, obj6) };
   intl = tmp3(tmp2[8]).intl;
   obj6 = { variant: "secondary-overlay", size: "md", icon: tmp(getQuestImpressionId[23]), accessibilityLabel: questDockBounty.cta.buttonLabel, onPress: callback1 };
   IconButton = tmp3(tmp2[22]).IconButton;

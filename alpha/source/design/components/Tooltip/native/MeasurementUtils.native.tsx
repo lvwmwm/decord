@@ -1,10 +1,10 @@
-// Module ID: 9364
-// Function ID: 9365
+// Module ID: 9432
+// Function ID: 9433
 // Name: MeasurementUtils
 // Dependencies: [5, 12, 2]
 // Exports: getMeasurements
 
-// Module 9364 (MeasurementUtils)
+// Module 9432 (MeasurementUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let obj = function _retryMeasurements() {
     if (closure_4 === undefined) {
       num10 = 0;
     }
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

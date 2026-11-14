@@ -1,13 +1,13 @@
-// Module ID: 18587
-// Function ID: 18588
+// Module ID: 18716
+// Function ID: 18717
 // Name: PanelsNavigationUtils
-// Dependencies: [5430, 5429, 1504, 1266, 2]
+// Dependencies: [5493, 5492, 1507, 1269, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 18587 (PanelsNavigationUtils)
-import v1 from "v1" /* 1266 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5429 */;
-import RootNavigationRef from "RootNavigationRef" /* 5430 */;
+// Module 18716 (PanelsNavigationUtils)
+import v1 from "v1" /* 1269 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
+import RootNavigationRef from "RootNavigationRef" /* 5493 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
@@ -56,7 +56,7 @@ export function convertPortraitToLandscapeScreens() {
                   const items1 = [obj3];
                   HermesBuiltin.arraySpread(items1, substr, 1);
                   const dispatch = store.dispatch;
-                  const CommonActions = tmp2(1504).CommonActions;
+                  const CommonActions = tmp2(1507).CommonActions;
                   const reset = CommonActions.reset;
                   const obj4 = { routes: items1, index: items1.length - 1 };
                   const merged2 = Object.assign(state1);
@@ -142,7 +142,7 @@ export function convertLandscapeToPortraitScreens() {
               const items1 = [obj5];
               HermesBuiltin.arraySpread(items1, substr, 1);
               const dispatch = store.dispatch;
-              const CommonActions = tmp2(1504).CommonActions;
+              const CommonActions = tmp2(1507).CommonActions;
               const reset = CommonActions.reset;
               const obj6 = { routes: items1, index: items1.length - 1 };
               const merged2 = Object.assign(state1);

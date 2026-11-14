@@ -1,9 +1,9 @@
-// Module ID: 10282
-// Function ID: 10283
+// Module ID: 10351
+// Function ID: 10352
 // Name: HTMLParserConstants
 // Dependencies: [2]
 
-// Module 10282 (HTMLParserConstants)
+// Module 10351 (HTMLParserConstants)
 import size from "module_2" /* 2 */;
 
 const tmp2 = /[\u061c\u200e\u200f\u202a-\u202e\u2066-\u2069]/;

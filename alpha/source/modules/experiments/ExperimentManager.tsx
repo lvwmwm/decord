@@ -1,13 +1,13 @@
-// Module ID: 5474
-// Function ID: 5475
+// Module ID: 5537
+// Function ID: 5538
 // Name: ExperimentManager
-// Dependencies: [5469, 5470, 572, 2]
+// Dependencies: [5532, 5533, 572, 2]
 // Exports: overrideBucket, registerGuildExperiment, registerUserExperiment, trackExposureToExperiment
 
-// Module 5474 (ExperimentManager)
+// Module 5537 (ExperimentManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ExperimentStore2 from "ExperimentStore" /* 5469 */;
-import ExperimentConstants from "ExperimentConstants" /* 5470 */;
+import ExperimentStore2 from "ExperimentStore" /* 5532 */;
+import ExperimentConstants from "ExperimentConstants" /* 5533 */;
 import size from "module_2" /* 2 */;
 
 const ExperimentStore = ExperimentStore2;

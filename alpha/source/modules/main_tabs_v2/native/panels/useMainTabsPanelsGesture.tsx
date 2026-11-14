@@ -1,18 +1,18 @@
-// Module ID: 18589
-// Function ID: 18590
+// Module ID: 18718
+// Function ID: 18719
 // Name: useMainTabsPanelsGesture
-// Dependencies: [19, 12307, 1377, 18590, 12308, 1627, 1493, 1652, 1705, 5485, 5488, 5876, 18591, 5535, 2]
+// Dependencies: [19, 12402, 1380, 18719, 12403, 1630, 1496, 1655, 1708, 5548, 5551, 5939, 18720, 5598, 2]
 // Exports: default
 
-// Module 18589 (useMainTabsPanelsGesture)
-import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import timingPresets from "timingPresets" /* 5488 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 12307 */;
+// Module 18718 (useMainTabsPanelsGesture)
+import _mod1708 from "module_1708" /* 1708 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import timingPresets from "timingPresets" /* 5551 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 12402 */;
 import react from "react" /* 19 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
-import PanelsConfig from "PanelsConfig" /* 18590 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
+import PanelsConfig from "PanelsConfig" /* 18719 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -117,7 +117,7 @@ export default function useMainTabsPanelsGesture(canDrag) {
     let tmp9;
     ref.current = foldSeam;
     const current = ref.current;
-    const tmp = _mod1705;
+    const tmp = _mod1708;
     const items = [closure_7, sharedValue1, sharedValue, PlatformUtils, , , , ];
     const scheduleOnUI = tmp.scheduleOnUI;
     items[4] = timing_timing.withTiming;
@@ -403,7 +403,7 @@ export default function useMainTabsPanelsGesture(canDrag) {
     const onStart = onTouchesMove(useMainTabsPanelsGestureTsx7).onStart;
     const tmp28 = sharedValue1;
     onTouchesMove(useMainTabsPanelsGestureTsx7);
-    items4[2] = _mod1705.scheduleOnRN;
+    items4[2] = _mod1708.scheduleOnRN;
     items4[3] = callback;
     items4[4] = onDragStart;
     [tmp30, tmp31, tmp32, tmp33, tmp34] = items4;
@@ -444,7 +444,7 @@ export default function useMainTabsPanelsGesture(canDrag) {
     const items8 = [closure_16, tmp28, tmp13, sharedValue4, , , , , , ];
     const onFinalize = onStartResult.onChange(useMainTabsPanelsGestureTsx9).onFinalize;
     onStartResult.onChange(useMainTabsPanelsGestureTsx9);
-    items8[4] = _mod1705.scheduleOnRN;
+    items8[4] = _mod1708.scheduleOnRN;
     items8[5] = callback;
     items8[6] = closure_6;
     items8[7] = callback1;

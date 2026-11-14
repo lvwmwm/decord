@@ -1,17 +1,17 @@
-// Module ID: 9330
-// Function ID: 9331
+// Module ID: 9397
+// Function ID: 9398
 // Name: useTrackCollectiblesItemTryOut
-// Dependencies: [19, 8419, 1072, 1387, 2111, 563, 1252, 8431, 2]
+// Dependencies: [19, 8485, 1072, 1390, 2114, 563, 1256, 8497, 2]
 // Exports: default
 
-// Module 9330 (useTrackCollectiblesItemTryOut)
+// Module 9397 (useTrackCollectiblesItemTryOut)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8419 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,19 +1,19 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 13312
+// Function ID: 13313
 // Name: showConjureShareToServerSheet
-// Dependencies: [5, 19, 17, 6954, 21, 5243, 575, 504, 13090, 1113, 4079, 5489, 5952, 7885, 7847, 7679, 7681, 13212, 13210, 5866, 5873, 2]
+// Dependencies: [5, 19, 17, 7017, 21, 5306, 575, 504, 13189, 1113, 4131, 5552, 6015, 7951, 7913, 7745, 7747, 13313, 13316, 5929, 5936, 2]
 // Exports: default
 
-// Module 13223 (showConjureShareToServerSheet)
+// Module 13312 (showConjureShareToServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5489 */;
-import TableRadioRow from "TableRadioRow" /* 7681 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import TableRadioRow from "TableRadioRow" /* 7747 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, closure_2, dependencyMap;
@@ -22,19 +22,24 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 function ShareToServerSheet(projectId) {
+  let addingToAnother;
   let guild;
   let guildId;
   let guilds;
   let intl2;
   let intl3;
-  let intl4;
+  let intl5;
   let items2;
   let obj3;
   let publishOptions;
-  let tmp10;
+  let result;
   let tmp11;
-  let tmp2Result;
+  let tmp12;
   projectId = projectId.projectId;
+  ({ guildId, publishOptions, addingToAnother } = projectId);
+  if (addingToAnother === undefined) {
+    addingToAnother = false;
+  }
   dependencyMap = undefined;
   guild = undefined;
   let sharing;
@@ -139,7 +144,6 @@ function ShareToServerSheet(projectId) {
     });
     return obj(...arguments);
   };
-  ({ guildId, publishOptions } = projectId);
   const tmp3 = dependencyMap;
   const tmp = closure_10();
   obj = projectId(504);
@@ -153,13 +157,15 @@ function ShareToServerSheet(projectId) {
   if (str == null) {
     str = "";
   }
-  const tmp6 = str(13090)(projectId, guildId, publishOptions);
+  const tmp6 = str(13189)(projectId, guildId, publishOptions, addingToAnother);
   dependencyMap = tmp6;
   ({ guilds, guild } = tmp6);
   sharing = tmp6.sharing;
   const error = tmp6.error;
   let intl = tmp2(1113).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(str(4079).N3Ryqz, { app: str });
+  let formatToPlainString = intl.formatToPlainString;
+  const tmp7 = str(4131);
+  const formatToPlainStringResult = formatToPlainString(addingToAnother ? tmp7["Aet9+Z"] : tmp7.N3Ryqz, { app: str });
   closure_5 = sharing.useRef(false);
   const effect = sharing.useEffect(() => {
     closure_5.current = false;
@@ -167,17 +173,16 @@ function ShareToServerSheet(projectId) {
       closure_1_5.current = true;
     };
   }, []);
-  let obj2 = { header: closure_7(tmp2(7847).BottomSheetTitleHeader, { title: formatToPlainStringResult }), children: tmp10(tmp11, obj3) };
-  const ActionSheet = tmp2(7885).ActionSheet;
+  let obj2 = { header: closure_7(tmp2(7913).BottomSheetTitleHeader, { title: formatToPlainStringResult }), children: tmp11(tmp12, obj3) };
+  const ActionSheet = tmp2(7951).ActionSheet;
   obj3 = { style: tmp.content, children: items2 };
-  let tmp9Result = null;
-  tmp10 = closure_8;
-  tmp11 = closure_5;
+  let tmp10Result = null;
+  tmp11 = closure_8;
+  tmp12 = closure_5;
   if (null != guild) {
-    tmp9Result = null;
-    if (guilds.length > 1) {
+    if (addingToAnother) {
       let obj4 = {
-        title: intl2.string(tmp5(4079).Uq5hU9),
+        title: intl2.string(tmp5(4131).Uq5hU9),
         hasIcons: false,
         value: guild.id,
         onChange: tmp6.pickGuild,
@@ -186,46 +191,62 @@ function ShareToServerSheet(projectId) {
               return metroImportDefault(TableRadioRow.TableRadioRow, obj, id.id);
             })
       };
-      const TableRadioGroup = tmp2(7679).TableRadioGroup;
+      const TableRadioGroup = tmp2(7745).TableRadioGroup;
       intl2 = tmp2(1113).intl;
-      tmp9Result = tmp9(TableRadioGroup, obj4);
+      tmp10Result = tmp10(TableRadioGroup, obj4);
+    } else {
+      tmp10Result = null;
     }
   }
-  items2 = [tmp9Result, , , , ];
-  let obj5 = { rows: tmp2Result.conjureShareRows(stateFromStores) };
-  const tmp5Result = str(13212);
-  tmp2Result = projectId(13210);
-  items2[1] = closure_7(tmp5Result, obj5);
-  let tmp9Result2 = null;
+  items2 = [tmp10Result, , , , , ];
+  const tmp5Result = str(13313);
+  const tmp2Result = projectId(13316);
+  if (addingToAnother) {
+    result = tmp2Result.conjureAddToAnotherServerRows(stateFromStores);
+  } else {
+    result = tmp2Result.conjureShareRows(stateFromStores);
+  }
+  items2[1] = closure_7(tmp5Result, { rows: result });
+  let tmp10Result3 = null;
+  if (addingToAnother) {
+    let obj5 = { variant: "body-sm/normal", color: "text-muted", children: intl3.string(tmp5(4131).Ewprwt) };
+    const Text = tmp2(5929).Text;
+    intl3 = tmp2(1113).intl;
+    tmp10Result3 = tmp10(Text, obj5);
+  }
+  items2[2] = tmp10Result3;
+  let tmp10Result4 = null;
   if (null != error) {
     let obj6 = { variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp9Result2 = tmp9(tmp2(5866).Text, obj6);
+    tmp10Result4 = tmp10(tmp2(5929).Text, obj6);
   }
-  items2[2] = tmp9Result2;
+  items2[3] = tmp10Result4;
+  const Button = tmp2(5936).Button;
+  const intl4 = tmp2(1113).intl;
+  const string = intl4.string;
+  const tmp5Result2 = str(4131);
   let obj7 = {
     variant: "primary",
-    text: intl3.string(tmp5(4079)["+ysSG7"]),
+    text: string(addingToAnother ? tmp5Result2["+uQwxA"] : tmp5Result2["+ysSG7"]),
     loading: sharing,
     disabled: null == guild,
     onPress: function confirm() {
       return obj(...arguments);
     }
   };
-  const Button = tmp2(5873).Button;
-  intl3 = tmp2(1113).intl;
-  items2[3] = closure_7(Button, obj7);
+  items2[4] = closure_7(Button, obj7);
   let obj8 = {
     variant: "secondary",
-    text: intl4.string(tmp2(1113).t["ETE/oC"]),
+    text: intl5.string(tmp2(1113).t["ETE/oC"]),
     disabled: sharing,
     onPress() {
       obj = str(closure_2[11]);
       return obj.hideActionSheet(ConjureShareToServerSheet);
     }
   };
-  const Button2 = tmp2(5873).Button;
-  intl4 = tmp2(1113).intl;
-  items2[4] = closure_7(Button2, obj8);
+  const Button2 = tmp2(5936).Button;
+  intl5 = tmp2(1113).intl;
+  items2[5] = closure_7(Button2, obj8);
   return closure_7(ActionSheet, obj2);
 }
 const View = react_native.View;
@@ -234,7 +255,7 @@ const ConjureShareToServerSheet = "ConjureShareToServerSheet";
 let obj = { content: obj2 };
 obj2 = { gap: nativeDefault.space.PX_16 };
 let closure_10 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/conjure/server_share/native/showConjureShareToServerSheet.tsx");
+let result = size.fileFinishedImporting("modules/conjure/server_share/native/showConjureShareToServerSheet.tsx");
 
 export default function showConjureShareToServerSheet(arg0) {
   let obj2;

@@ -1,11 +1,11 @@
-// Module ID: 10373
-// Function ID: 10374
+// Module ID: 10442
+// Function ID: 10443
 // Name: Stripe3DSChallenge
-// Dependencies: [5, 6718, 2]
+// Dependencies: [5, 6781, 2]
 // Exports: authenticateStripePaymentIntent
 
-// Module 10373 (Stripe3DSChallenge)
-import StripeUtils from "StripeUtils" /* 6718 */;
+// Module 10442 (Stripe3DSChallenge)
+import StripeUtils from "StripeUtils" /* 6781 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -221,7 +221,7 @@ obj = function _authenticateStripePaymentIntent() {
     closure_3 = tmp4;
     ({ client_secret: c0, payment_method_id: c1 } = closure_0);
     closure_2 = closure_1;
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

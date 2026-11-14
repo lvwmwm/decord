@@ -1,23 +1,23 @@
-// Module ID: 6769
-// Function ID: 6770
+// Module ID: 6832
+// Function ID: 6833
 // Name: AgeVerificationConstants
-// Dependencies: [6770, 3273, 2]
+// Dependencies: [6833, 3321, 2]
 
-// Module 6769 (AgeVerificationConstants)
-import _modDef3273 from "module_3273" /* 3273 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6770 */;
+// Module 6832 (AgeVerificationConstants)
+import _modDef3321 from "module_3321" /* 3321 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6833 */;
 import size from "module_2" /* 2 */;
 
 const items = [AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.NSFW_GUILD];
 const obj = { FACIAL_AGE_ESTIMATION: 1, [1]: "FACIAL_AGE_ESTIMATION", ID_VERIFICATION: 2, [2]: "ID_VERIFICATION", MODULAR: 3, [3]: "MODULAR", GOOGLE_WALLET: 9, [9]: "GOOGLE_WALLET" };
 const obj2 = {};
 const set = new Set(items);
-obj2[obj.FACIAL_AGE_ESTIMATION] = { title: _modDef3273["2yLvkS"], description: _modDef3273.eJmat5 };
-({ title: _modDef3273["2yLvkS"], description: _modDef3273.eJmat5 });
-obj2[obj.ID_VERIFICATION] = { title: _modDef3273.dwkwo0, description: _modDef3273.ZdmRwW };
-({ title: _modDef3273.dwkwo0, description: _modDef3273.ZdmRwW });
-obj2[obj.GOOGLE_WALLET] = { title: _modDef3273.Y9sLpR, description: _modDef3273.dah4bF };
-({ title: _modDef3273.Y9sLpR, description: _modDef3273.dah4bF });
+obj2[obj.FACIAL_AGE_ESTIMATION] = { title: _modDef3321["2yLvkS"], description: _modDef3321.eJmat5 };
+({ title: _modDef3321["2yLvkS"], description: _modDef3321.eJmat5 });
+obj2[obj.ID_VERIFICATION] = { title: _modDef3321.dwkwo0, description: _modDef3321.ZdmRwW };
+({ title: _modDef3321.dwkwo0, description: _modDef3321.ZdmRwW });
+obj2[obj.GOOGLE_WALLET] = { title: _modDef3321.Y9sLpR, description: _modDef3321.dah4bF };
+({ title: _modDef3321.Y9sLpR, description: _modDef3321.dah4bF });
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationConstants.tsx");
 
 export const FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS = set;

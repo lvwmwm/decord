@@ -1,10 +1,10 @@
-// Module ID: 6289
-// Function ID: 6290
+// Module ID: 6352
+// Function ID: 6353
 // Name: StaticRouteRendering
 // Dependencies: [1113, 2]
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 6289 (StaticRouteRendering)
+// Module 6352 (StaticRouteRendering)
 import intl5 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

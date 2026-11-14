@@ -1,11 +1,11 @@
-// Module ID: 20355
-// Function ID: 20356
+// Module ID: 20510
+// Function ID: 20511
 // Name: EmojiRecord
-// Dependencies: [1405, 1404, 2]
+// Dependencies: [1408, 1407, 2]
 
-// Module 20355 (EmojiRecord)
-import Record from "Record" /* 1405 */;
-import UserRecord from "UserRecord" /* 1404 */;
+// Module 20510 (EmojiRecord)
+import Record from "Record" /* 1408 */;
+import UserRecord from "UserRecord" /* 1407 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("records/EmojiRecord.tsx");

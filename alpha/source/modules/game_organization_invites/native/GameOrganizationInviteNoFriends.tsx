@@ -1,21 +1,21 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16407
+// Function ID: 16408
 // Name: GameOrganizationInviteNoFriends
-// Dependencies: [19, 21, 5243, 575, 5489, 5430, 1113, 2549, 6274, 5866, 5873, 2]
+// Dependencies: [19, 21, 5306, 575, 5552, 5493, 6337, 5929, 1113, 2565, 5936, 2]
 // Exports: default
 
-// Module 16286 (GameOrganizationInviteNoFriends)
+// Module 16407 (GameOrganizationInviteNoFriends)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import _modDef2549 from "module_2549" /* 2549 */;
-import RootNavigationRef from "RootNavigationRef" /* 5430 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import components_Button_Button from "components/Button/Button" /* 5873 */;
-import Stack_Stack from "Stack/Stack" /* 6274 */;
+import intl4 from "intl" /* 1113 */;
+import _modDef2565 from "module_2565" /* 2565 */;
+import RootNavigationRef from "RootNavigationRef" /* 5493 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Stack_Stack from "Stack/Stack" /* 6337 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -37,31 +37,30 @@ obj2 = { alignItems: "center", padding: nativeDefault.space.PX_48 };
 let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationInviteNoFriends.tsx");
 
-export default function GameOrganizationInviteNoFriends() {
+export default function GameOrganizationInviteNoFriends(noun) {
+  let intl;
   let intl2;
   let intl3;
-  let intl4;
   let items;
   let items1;
+  noun = noun.noun;
   const tmp = closure_5();
-  const intl = intl5.intl;
   const obj = { spacing: nativeDefault.space.PX_16, style: tmp.container, children: items1 };
-  const stringResult = intl.string(_modDef2549.xXXGsq);
   const Stack = Stack_Stack.Stack;
   const obj2 = { spacing: nativeDefault.space.PX_8, children: items };
   const Stack2 = Stack_Stack.Stack;
-  const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl2.string(_modDef2549["3qrm/9"]) };
+  const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl.string(_modDef2565["3qrm/9"]) };
   const Heading = Text_Text.Heading;
-  intl2 = intl5.intl;
+  intl = intl4.intl;
   items = [_false(Heading, obj3), ];
-  const obj4 = { variant: "body-md/medium", color: "text-muted", style: tmp.centeredText, children: intl3.formatToPlainString(_modDef2549["NyR+6P"], { noun: stringResult }) };
+  const obj4 = { variant: "body-md/medium", color: "text-muted", style: tmp.centeredText, children: intl2.formatToPlainString(_modDef2565["NyR+6P"], { noun }) };
   const Text = Text_Text.Text;
-  intl3 = intl5.intl;
+  intl2 = intl4.intl;
   items[1] = _false(Text, obj4);
   items1 = [React3(Stack2, obj2), ];
-  const obj5 = { text: intl4.string(_modDef2549.kdLF2T), onPress: handleAddFriends };
+  const obj5 = { text: intl3.string(_modDef2565.kdLF2T), onPress: handleAddFriends };
   const Button = components_Button_Button.Button;
-  intl4 = intl5.intl;
+  intl3 = intl4.intl;
   items1[1] = _false(Button, obj5);
   return React3(Stack, obj);
 };

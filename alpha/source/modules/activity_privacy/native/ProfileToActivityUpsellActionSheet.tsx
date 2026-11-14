@@ -1,13 +1,13 @@
-// Module ID: 17259
-// Function ID: 17260
+// Module ID: 17382
+// Function ID: 17383
 // Name: ProfileToActivityUpsellActionSheet
-// Dependencies: [19, 21, 17258, 5068, 5489, 17260, 2]
+// Dependencies: [19, 21, 17381, 5131, 5552, 17383, 2]
 // Exports: default
 
-// Module 17259 (ProfileToActivityUpsellActionSheet)
+// Module 17382 (ProfileToActivityUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import UserSettings from "UserSettings" /* 5068 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 17258 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 17381 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

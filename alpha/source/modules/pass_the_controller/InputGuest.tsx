@@ -1,12 +1,12 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 16116
+// Function ID: 16117
 // Name: InputGuest
-// Dependencies: [5, 3, 15990, 572, 2]
+// Dependencies: [5, 3, 16111, 572, 2]
 
-// Module 15995 (InputGuest)
+// Module 16116 (InputGuest)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import InputEvent from "InputEvent" /* 15990 */;
+import InputEvent from "InputEvent" /* 16111 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -231,6 +231,8 @@ class InputGuest {
   }
   shutdown() {
     this.isShutdown = true;
+    const logger = this.logger;
+    logger.log("Sending drop to " + this._host);
     const connection = this.connection;
     connection.sendDrop(this.sessionId);
     this._releaseMouse();

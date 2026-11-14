@@ -1,14 +1,14 @@
-// Module ID: 8186
-// Function ID: 8187
+// Module ID: 8252
+// Function ID: 8253
 // Name: CreditCardIcon
-// Dependencies: [19, 21, 575, 5956, 8187, 2]
+// Dependencies: [19, 21, 575, 6019, 8253, 2]
 // Exports: CreditCardIcon
 
-// Module 8186 (CreditCardIcon)
+// Module 8252 (CreditCardIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 8187 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 8253 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

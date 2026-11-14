@@ -1,20 +1,20 @@
-// Module ID: 13931
-// Function ID: 13932
+// Module ID: 14036
+// Function ID: 14037
 // Name: useModalPanGesture
-// Dependencies: [1652, 5535, 1705, 5876, 6785, 2]
+// Dependencies: [1655, 5598, 1708, 5939, 6848, 2]
 // Exports: default
 
-// Module 13931 (useModalPanGesture)
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
+// Module 14036 (useModalPanGesture)
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
 import size from "module_2" /* 2 */;
 
 let _undefined;
 
 let tmp;
-const spring_spring = tmp(5876);
+const spring_spring = tmp(5939);
 let closure_3 = { code: "(function useModalPanGestureTsx1(){let[onStart,scheduleOnRN,start,translateY]=this.__closure;if(onStart!=null){scheduleOnRN(onStart);}start.set({y:translateY.get()});})" };
 let closure_4 = { code: "(function useModalPanGestureTsx2({translationY:translationY}){let[translateY,interpolate,start,maxTranslate,Extrapolate]=this.__closure;translateY.set(interpolate(start.get().y+translationY,[0,maxTranslate],[0,maxTranslate],Extrapolate.CLAMP));})" };
 let closure_5 = { code: "(function useModalPanGestureTsx3(){let[scheduleOnRN,ModalActionCreators]=this.__closure;scheduleOnRN(ModalActionCreators.pop);})" };
@@ -58,14 +58,14 @@ export default function useModalPanGesture(thresholdVelocity) {
   const translateY = thresholdVelocity.translateY;
   const tmp = require;
   ({ gestureEnabled, maxTranslate, thresholdTranslate, height, onStart, onEnd, onClose } = thresholdVelocity);
-  let obj = _mod1652;
+  let obj = _mod1655;
   const sharedValue = obj.useSharedValue({ y: 0 });
   const Gesture = LegacyBaseButton.Gesture;
   const PanResult = Gesture.Pan();
   let items = [closure_3, onStart, , , ];
   const onStart2 = PanResult.enabled(gestureEnabled).onStart;
   PanResult.enabled(gestureEnabled);
-  items[2] = _mod1705.scheduleOnRN;
+  items[2] = _mod1708.scheduleOnRN;
   items[3] = sharedValue;
   items[4] = translateY;
   [tmp5, tmp6, tmp7, tmp8, tmp9] = items;
@@ -83,10 +83,10 @@ export default function useModalPanGesture(thresholdVelocity) {
   const items2 = [closure_4, translateY, , , , ];
   const onUpdate = onStart2(useModalPanGestureTsx1).onUpdate;
   onStart2(useModalPanGestureTsx1);
-  items2[2] = _mod1652.interpolate;
+  items2[2] = _mod1655.interpolate;
   items2[3] = sharedValue;
   items2[4] = maxTranslate;
-  items2[5] = _mod1652.Extrapolate;
+  items2[5] = _mod1655.Extrapolate;
   [tmp11, tmp12, tmp13, tmp14, tmp15, tmp16] = items2;
   function useModalPanGestureTsx2(translationY) {
     const items = [0, c3];
@@ -103,7 +103,7 @@ export default function useModalPanGesture(thresholdVelocity) {
   items4[4] = spring_spring.withSpring;
   items4[5] = height;
   items4[6] = closure_5;
-  items4[7] = _mod1705.scheduleOnRN;
+  items4[7] = _mod1708.scheduleOnRN;
   items4[8] = ModalActionCreatorsDefault;
   items4[9] = onClose;
   items4[10] = onEnd;

@@ -1,15 +1,15 @@
-// Module ID: 13197
-// Function ID: 13198
+// Module ID: 13305
+// Function ID: 13306
 // Name: conjureChatMoreSections
-// Dependencies: [6954, 1113, 4079, 10500, 10907, 13198, 13200, 10927, 7268, 5979, 11028, 7718, 5966, 13202, 5972, 13207, 13216, 13218, 11562, 12200, 13204, 7567, 13215, 5977, 2]
+// Dependencies: [7017, 1113, 4131, 10569, 10976, 13306, 13308, 10996, 7332, 6042, 11095, 7784, 6029, 13310, 6035, 13317, 13322, 13324, 11629, 10939, 13206, 12295, 13207, 7633, 13321, 6040, 2]
 // Exports: conjureChatMoreSections
 
-// Module 13197 (conjureChatMoreSections)
-import conjureProjectMute from "conjureProjectMute" /* 7268 */;
-import conjureProjectActions from "conjureProjectActions" /* 13202 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 13204 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 13215 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
+// Module 13305 (conjureChatMoreSections)
+import conjureProjectMute from "conjureProjectMute" /* 7332 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 13207 */;
+import conjureProjectActions from "conjureProjectActions" /* 13310 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 13321 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let c3;
 let closure_4;
 ({ canRemixProject: c3, isProjectOwner: closure_4 } = ConjureProjectStore);
-const result = size.fileFinishedImporting("modules/conjure/builder/native/conjureChatMoreSections.tsx");
+let result = size.fileFinishedImporting("modules/conjure/builder/native/conjureChatMoreSections.tsx");
 
 export function conjureChatMoreSections(project) {
   let annotate;
@@ -29,6 +29,7 @@ export function conjureChatMoreSections(project) {
   let intl14;
   let intl15;
   let intl16;
+  let intl17;
   let intl2;
   let intl4;
   let intl5;
@@ -37,7 +38,7 @@ export function conjureChatMoreSections(project) {
   let intl8;
   let intl9;
   let managedCopy;
-  let obj12;
+  let obj13;
   let onConnectTool;
   let onDebug;
   let onHistory;
@@ -53,35 +54,44 @@ export function conjureChatMoreSections(project) {
     managedCopy = false;
   }
   const removeTarget = project.removeTarget;
+  let serverRemoveTarget = project.serverRemoveTarget;
+  if (serverRemoveTarget === undefined) {
+    serverRemoveTarget = removeTarget;
+  }
+  let flag = project.canAddToAnotherServer;
+  if (flag === undefined) {
+    flag = false;
+  }
   ({ annotate, onRefresh, onDebug, onConnectTool, preview } = project);
   ({ onOpenSettings, onRemix, onHistory } = project);
-  const tmp = closure_4(project);
-  let obj = { kind: "action", key: "settings", label: intl.string(require("module_4079").I2XSKe), IconComponent: project(removeTarget[3]).SettingsIcon, onPress: onOpenSettings };
+  const tmp = preview(project);
+  let obj = { kind: "action", key: "settings", label: intl.string(require("module_4131").I2XSKe), IconComponent: project(removeTarget[3]).SettingsIcon, onPress: onOpenSettings };
   const tmp2 = project;
+  const tmp3 = removeTarget;
   intl = project(removeTarget[1]).intl;
   const items = [obj];
-  const tmp5 = preview(project) && !managedCopy;
+  const tmp5 = serverRemoveTarget(project) && !managedCopy;
   if (tmp5) {
     const push = items.push;
-    const obj2 = { kind: "action", key: "remix", label: intl2.string(require("module_4079")["276ll6"]), IconComponent: tmp2(removeTarget[4]).PaperPlusIcon, onPress: onRemix };
+    const obj2 = { kind: "action", key: "remix", label: intl2.string(require("module_4131")["276ll6"]), IconComponent: tmp2(tmp3[4]).PaperPlusIcon, onPress: onRemix };
     intl2 = tmp2(tmp3[1]).intl;
     push(obj2);
   }
   if (null != annotate) {
-    const entry = { kind: "switch", key: "annotate", label: intl16.string(tmp4(tmp3[2])["6GOFLB"]), IconComponent: tmp2(tmp3[5]).ExperimentalDirectSelectIcon, value: null, disabled: null, subLabel: stringResult, closesOnEnable: true, onValueChange: annotate.onToggle };
-    const push11 = items.push;
-    intl16 = tmp2(tmp3[1]).intl;
-    ({ active: obj17.value, busy: obj17.disabled } = annotate);
+    const entry = { kind: "switch", key: "annotate", label: intl17.string(tmp4(tmp3[2])["6GOFLB"]), IconComponent: tmp2(tmp3[5]).ExperimentalDirectSelectIcon, value: null, disabled: null, subLabel: stringResult, closesOnEnable: true, onValueChange: annotate.onToggle };
+    const push12 = items.push;
+    intl17 = tmp2(tmp3[1]).intl;
+    ({ active: obj19.value, busy: obj19.disabled } = annotate);
     stringResult = undefined;
     if (annotate.busy) {
       const intl3 = tmp2(tmp3[1]).intl;
       stringResult = intl3.string(tmp4(tmp3[2]).bcdhe6);
     }
-    push11(entry);
+    push12(entry);
   }
   if (null != onRefresh) {
     const push2 = items.push;
-    const obj3 = { kind: "action", key: "refresh", label: intl4.string(require("module_4079")["p4B/7M"]), IconComponent: tmp2(removeTarget[6]).RefreshIcon, onPress: onRefresh };
+    const obj3 = { kind: "action", key: "refresh", label: intl4.string(require("module_4131")["p4B/7M"]), IconComponent: tmp2(tmp3[6]).RefreshIcon, onPress: onRefresh };
     intl4 = tmp2(tmp3[1]).intl;
     push2(obj3);
   }
@@ -98,7 +108,7 @@ export function conjureChatMoreSections(project) {
   };
   const push3 = items.push;
   intl5 = tmp2(tmp3[1]).intl;
-  const obj4 = { kind: "action", key: "history", label: intl6.string(require("module_4079")["3hIVou"]), IconComponent: tmp2(removeTarget[9]).ClockIcon, onPress: onHistory };
+  const obj4 = { kind: "action", key: "history", label: intl6.string(require("module_4131")["3hIVou"]), IconComponent: tmp2(tmp3[9]).ClockIcon, onPress: onHistory };
   intl6 = tmp2(tmp3[1]).intl;
   push3(entry1, obj4);
   let items1;
@@ -111,8 +121,8 @@ export function conjureChatMoreSections(project) {
   const obj5 = {
     kind: "action",
     key: "copy-link",
-    label: intl7.string(tmp2(removeTarget[1]).t.WqhZss),
-    IconComponent: tmp2(removeTarget[12]).LinkIcon,
+    label: intl7.string(tmp2(tmp3[1]).t.WqhZss),
+    IconComponent: tmp2(tmp3[12]).LinkIcon,
     onPress() {
       const obj = conjureProjectActions;
       return obj.copyConjureProjectLink(project, importDefault);
@@ -147,8 +157,8 @@ export function conjureChatMoreSections(project) {
   const obj6 = {
     kind: "action",
     key: "export",
-    label: intl8.string(require("module_4079").WsEEP7),
-    IconComponent: tmp2(removeTarget[14]).DownloadIcon,
+    label: intl8.string(require("module_4131").WsEEP7),
+    IconComponent: tmp2(tmp3[14]).DownloadIcon,
     onPress() {
       const obj = conjureProjectActions;
       return obj.exportConjureProject(project);
@@ -162,8 +172,8 @@ export function conjureChatMoreSections(project) {
     const obj7 = {
       kind: "action",
       key: "import",
-      label: intl9.string(require("module_4079").rWGY3e),
-      IconComponent: tmp2(removeTarget[15]).FileUpIcon,
+      label: intl9.string(require("module_4131").rWGY3e),
+      IconComponent: tmp2(tmp3[15]).FileUpIcon,
       onPress() {
           const obj = conjureProjectActions;
           return obj.importConjureProject(project);
@@ -175,13 +185,13 @@ export function conjureChatMoreSections(project) {
   const items3 = [];
   if (null != onDebug) {
     const push5 = items3.push;
-    const obj8 = { kind: "action", key: "debug", label: intl10.string(require("module_4079")["Q4FN+H"]), IconComponent: tmp2(removeTarget[16]).BugIcon, onPress: onDebug };
+    const obj8 = { kind: "action", key: "debug", label: intl10.string(require("module_4131")["Q4FN+H"]), IconComponent: tmp2(tmp3[16]).BugIcon, onPress: onDebug };
     intl10 = tmp2(tmp3[1]).intl;
     push5(obj8);
   }
   if (null != onConnectTool) {
     const push6 = items3.push;
-    const obj9 = { kind: "action", key: "connect-tool", label: intl11.string(require("module_4079").yOIql5), IconComponent: tmp2(removeTarget[17]).LinkPlusIcon, onPress: onConnectTool };
+    const obj9 = { kind: "action", key: "connect-tool", label: intl11.string(require("module_4131").yOIql5), IconComponent: tmp2(tmp3[17]).LinkPlusIcon, onPress: onConnectTool };
     intl11 = tmp2(tmp3[1]).intl;
     push6(obj9);
   }
@@ -189,8 +199,8 @@ export function conjureChatMoreSections(project) {
   const obj10 = {
     kind: "action",
     key: "copy-project-id",
-    label: intl12.string(require("module_4079")["nm/zuU"]),
-    IconComponent: tmp2(removeTarget[18]).IdIcon,
+    label: intl12.string(require("module_4131")["nm/zuU"]),
+    IconComponent: tmp2(tmp3[18]).IdIcon,
     onPress() {
       const obj = conjureProjectActions;
       return obj.copyConjureProjectId(project);
@@ -198,58 +208,74 @@ export function conjureChatMoreSections(project) {
   };
   intl12 = tmp2(tmp3[1]).intl;
   push7(obj10);
-  let canRemoveBot;
-  if (removeTarget != null) {
-    canRemoveBot = removeTarget.canRemoveBot;
-  }
-  if (true === canRemoveBot) {
+  if (flag) {
     const push8 = items3.push;
     const obj11 = {
       kind: "action",
-      key: "remove-from-server",
-      label: intl13.formatToPlainString(require("module_4079")["3gKG2j"], obj12),
-      IconComponent: tmp2(removeTarget[19]).DoorExitIcon,
-      destructive: true,
+      key: "add-to-another-server",
+      label: intl13.string(require("module_4131").RBPj0b),
+      IconComponent: tmp2(tmp3[19]).ServerIcon,
       onPress() {
-          const obj = { project, target: removeTarget, action: "remove" };
-          return openConjureRemoveAppAlertDefault(obj);
+          const obj = conjureProjectActions;
+          return obj.openConjureAddToAnotherServerSheet(project.id, importDefault);
         }
     };
     intl13 = tmp2(tmp3[1]).intl;
-    obj12 = { server: removeTarget.guildName };
     push8(obj11);
   }
-  const tmp2Result = tmp2(removeTarget[13]);
-  if (tmp2Result.canUnpublishConjureUserApp(project)) {
+  let result = null != serverRemoveTarget;
+  if (result) {
+    const tmp2Result = tmp2(tmp3[20]);
+    result = tmp2Result.canRemoveConjureAppFromServer(serverRemoveTarget, tmp);
+  }
+  if (result) {
     const push9 = items3.push;
-    const obj13 = {
+    const obj12 = {
+      kind: "action",
+      key: "remove-from-server",
+      label: intl14.formatToPlainString(require("module_4131")["3gKG2j"], obj13),
+      IconComponent: tmp2(tmp3[21]).DoorExitIcon,
+      destructive: true,
+      onPress() {
+          const obj = { project, target: serverRemoveTarget, action: "remove" };
+          return openConjureRemoveAppAlertDefault(obj);
+        }
+    };
+    intl14 = tmp2(tmp3[1]).intl;
+    obj13 = { server: serverRemoveTarget.guildName };
+    push9(obj12);
+  }
+  const tmp2Result2 = tmp2(tmp3[13]);
+  if (tmp2Result2.canUnpublishConjureUserApp(project)) {
+    const push10 = items3.push;
+    const obj14 = {
       kind: "action",
       key: "unpublish",
-      label: intl14.string(require("module_4079").jYAR58),
-      IconComponent: tmp2(removeTarget[21]).EyeSlashIcon,
+      label: intl15.string(require("module_4131").jYAR58),
+      IconComponent: tmp2(tmp3[23]).EyeSlashIcon,
       destructive: true,
       onPress() {
           return openConjureUnpublishUserAppAlertDefault(project);
         }
     };
-    intl14 = tmp2(tmp3[1]).intl;
-    push9(obj13);
+    intl15 = tmp2(tmp3[1]).intl;
+    push10(obj14);
   }
   if (tmp) {
-    const push10 = items3.push;
-    const obj14 = {
+    const push11 = items3.push;
+    const obj15 = {
       kind: "action",
       key: "delete",
-      label: intl15.string(tmp2(removeTarget[1]).t.oyYWHE),
-      IconComponent: tmp2(removeTarget[23]).TrashIcon,
+      label: intl16.string(tmp2(tmp3[1]).t.oyYWHE),
+      IconComponent: tmp2(tmp3[25]).TrashIcon,
       destructive: true,
       onPress() {
           const obj = conjureProjectActions;
           return obj.deleteConjureProject(project, removeTarget);
         }
     };
-    intl15 = tmp2(tmp3[1]).intl;
-    push10(obj14);
+    intl16 = tmp2(tmp3[1]).intl;
+    push11(obj15);
   }
   const items4 = [items, mapped, items2, items3];
   return items4.filter((item) => item.length > 0);

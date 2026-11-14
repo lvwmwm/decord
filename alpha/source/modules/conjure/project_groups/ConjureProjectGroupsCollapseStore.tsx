@@ -1,12 +1,12 @@
-// Module ID: 10487
-// Function ID: 10488
+// Module ID: 10556
+// Function ID: 10557
 // Name: ConjureProjectGroupsCollapseStore
-// Dependencies: [10488, 504, 572, 2]
+// Dependencies: [10557, 504, 572, 2]
 
-// Module 10487 (ConjureProjectGroupsCollapseStore)
+// Module 10556 (ConjureProjectGroupsCollapseStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureProjectGroupsTypes from "ConjureProjectGroupsTypes" /* 10488 */;
+import ConjureProjectGroupsTypes from "ConjureProjectGroupsTypes" /* 10557 */;
 import size from "module_2" /* 2 */;
 
 let obj = { collapsedByKey: {} };

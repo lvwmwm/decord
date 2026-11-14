@@ -1,10 +1,10 @@
-// Module ID: 16730
-// Function ID: 16731
+// Module ID: 16853
+// Function ID: 16854
 // Name: ReactotronConfig
-// Dependencies: [16731, 2]
+// Dependencies: [16854, 2]
 
-// Module 16730 (ReactotronConfig)
-import reactNativeCorePlugins from "reactNativeCorePlugins" /* 16731 */;
+// Module 16853 (ReactotronConfig)
+import reactNativeCorePlugins from "reactNativeCorePlugins" /* 16854 */;
 import size from "module_2" /* 2 */;
 
 const configureResult = reactNativeCorePlugins.configure({});

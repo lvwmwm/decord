@@ -1,9 +1,9 @@
-// Module ID: 5906
-// Function ID: 5907
+// Module ID: 5969
+// Function ID: 5970
 // Name: ContentRatingGOPClassification
 // Dependencies: [2]
 
-// Module 5906 (ContentRatingGOPClassification)
+// Module 5969 (ContentRatingGOPClassification)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1]), IS_ADULT: new Set([1]) };

@@ -1,11 +1,11 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8797
+// Function ID: 8798
 // Name: activityBookmarkUtils
-// Dependencies: [1378, 2]
+// Dependencies: [1381, 2]
 // Exports: extractActivityBookmarkParams, getLinkChannelId
 
-// Module 8730 (activityBookmarkUtils)
-import URLUtilsDefault from "URLUtils" /* 1378 */;
+// Module 8797 (activityBookmarkUtils)
+import URLUtilsDefault from "URLUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/message_embed/utils/activityBookmarkUtils.tsx");

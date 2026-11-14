@@ -1,21 +1,21 @@
-// Module ID: 17620
-// Function ID: 17621
+// Module ID: 17738
+// Function ID: 17739
 // Name: VideoQuestPlayer
-// Dependencies: [32, 19, 8743, 5275, 21, 17614, 10063, 10077, 5158, 17436, 17621, 8764, 17623, 1376, 15135, 10065, 17631, 17451, 2]
+// Dependencies: [32, 19, 8810, 5338, 21, 17732, 10131, 10146, 5221, 17554, 17739, 8831, 17741, 1379, 15249, 10133, 17749, 17569, 1380, 2]
 
-// Module 17620 (VideoQuestPlayer)
+// Module 17738 (VideoQuestPlayer)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 1376 */;
-import QuestConstants from "QuestConstants" /* 5275 */;
-import QuestActionCreators from "QuestActionCreators" /* 10065 */;
-import AssetUtils from "AssetUtils" /* 10077 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 15135 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17436 */;
-import SimpleMuxWrapper from "SimpleMuxWrapper" /* 17623 */;
-import VideoQuestCaptions2 from "VideoQuestCaptions" /* 17631 */;
+import react_native from "react-native" /* 1379 */;
+import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestActionCreators from "QuestActionCreators" /* 10133 */;
+import AssetUtils from "AssetUtils" /* 10146 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 15249 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 17554 */;
+import SimpleMuxWrapper from "SimpleMuxWrapper" /* 17741 */;
+import VideoQuestCaptions2 from "VideoQuestCaptions" /* 17749 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 8743 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 8810 */;
 import size from "module_2" /* 2 */;
 
 let constants, nativeEvent;
@@ -32,6 +32,7 @@ const memoResult = react.memo(function VideoQuestPlayer(onLoad) {
   let sourceQuestContent;
   let str2;
   let style;
+  let tmpResult2;
   onLoad = onLoad.onLoad;
   const onEnd = onLoad.onEnd;
   const onToggleFullscreen = onLoad.onToggleFullscreen;
@@ -460,14 +461,16 @@ const memoResult = react.memo(function VideoQuestPlayer(onLoad) {
   if (null == memo2) {
     return null;
   } else {
-    let obj5 = { source: memo2, initialProgress: tmp13, contentDuration: targetSeconds, allowUnrestrictedSeeking: tmp6, disableResumeOnLoad: tmp6, style, isFullscreen, externallyPaused, contentInsets, renderCaptions: callback14, onLoadStart: callback7, onLoad: callback2, onReadyForDisplay: callback1, onSeekStart: callback3, onSeek: callback4, onBuffer: callback13, onError: callback8, onEnd: callback6, onPlayerStateChange: callback, onResumePlayback: callback11, onPausePlayback: callback12, onProgress: callback5, onVideoTracks: callback9, onVideoLayout: callback10, videoRef: ref, bufferingSpinnerPlacement: str2, captionsEnabled: flag, showCaptionsButton: "landscape" === orientation && hasCaptionAsset, showTranscriptButton: "landscape" === orientation && flag2, showFullscreenButton: "landscape" === orientation, showProgress: "landscape" === orientation, onToggleCaptions: handleToggleCaptions, onOpenTranscript: handleOpenTranscript, onToggleFullscreen: tmp40 };
+    let obj5 = { source: memo2, initialProgress: tmp13, contentDuration: targetSeconds, allowUnrestrictedSeeking: tmp6, disableResumeOnLoad: tmp6, style, isFullscreen, externallyPaused, contentInsets, renderCaptions: callback14, onLoadStart: callback7, onLoad: callback2, onReadyForDisplay: callback1, onSeekStart: callback3, onSeek: callback4, onBuffer: callback13, onError: callback8, onEnd: callback6, onPlayerStateChange: callback, onResumePlayback: callback11, onPausePlayback: callback12, onProgress: callback5, onVideoTracks: callback9, onVideoLayout: callback10, videoRef: ref, bufferingSpinnerPlacement: str2, captionsEnabled: flag, disableNativeCaptions: tmpResult2.isIOS() && hasCaptionAsset, showCaptionsButton: "landscape" === orientation && hasCaptionAsset, showTranscriptButton: "landscape" === orientation && flag2, showFullscreenButton: "landscape" === orientation, showProgress: "landscape" === orientation, onToggleCaptions: handleToggleCaptions, onOpenTranscript: handleOpenTranscript, onToggleFullscreen: tmp40 };
     str2 = "top-left";
     const AdVideoPlayer = tmp(tmp2[17]).AdVideoPlayer;
-    const tmp42 = questTaskDetails;
+    const tmp43 = questTaskDetails;
     if ("landscape" === orientation) {
       str2 = "center";
     }
-    return tmp42(AdVideoPlayer, obj5);
+    tmpResult2 = tmp(tmp2[18]);
+    tmpResult2.isIOS() && hasCaptionAsset;
+    return tmp43(AdVideoPlayer, obj5);
   }
 });
 let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");

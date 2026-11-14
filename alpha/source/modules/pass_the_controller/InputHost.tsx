@@ -1,12 +1,13 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 16113
+// Function ID: 16114
 // Name: InputHost
-// Dependencies: [5, 15990, 15993, 15994, 6014, 2]
+// Dependencies: [5, 3, 16111, 16114, 16115, 6077, 2]
 
-// Module 15992 (InputHost)
-import RTCConnection from "RTCConnection" /* 6014 */;
-import InputEvent from "InputEvent" /* 15990 */;
-import PassTheControllerExperimentDefault from "PassTheControllerExperiment" /* 15994 */;
+// Module 16113 (InputHost)
+import LoggerDefault from "Logger" /* 3 */;
+import RTCConnection from "RTCConnection" /* 6077 */;
+import InputEvent from "InputEvent" /* 16111 */;
+import PassTheControllerExperimentDefault from "PassTheControllerExperiment" /* 16115 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -14,12 +15,13 @@ let c1, c2;
 
 const result = size.fileFinishedImporting("modules/pass_the_controller/InputHost.tsx");
 class InputHost {
-  constructor(connection, pid, guildId, onHolderChange) {
+  constructor(connection, pid, guildId, onGrab, onDrop) {
     const merged = Object.assign({ holderSessionId: null, holderUserId: null });
     merged.pid = pid;
     merged.connection = connection;
     merged.guildId = guildId;
-    merged.onHolderChange = onHolderChange;
+    merged.onGrab = onGrab;
+    merged.onDrop = onDrop;
     merged.hook = null;
     merged._connectHook(pid);
     const _handleKey = merged._handleKey;
@@ -32,6 +34,8 @@ class InputHost {
     merged.grabHandler = _handleGrab.bind(merged);
     const _handleDrop = merged._handleDrop;
     merged.dropHandler = _handleDrop.bind(merged);
+    merged.logger = new LoggerDefault("InputHost");
+    new LoggerDefault("InputHost");
     connection.on(InputEvent.InputEvent.Key, merged.keyHandler);
     connection.on(InputEvent.InputEvent.MouseButton, merged.mouseButtonHandler);
     connection.on(InputEvent.InputEvent.MouseMove, merged.mouseMoveHandler);
@@ -71,7 +75,7 @@ class InputHost {
               pid = self;
               const _handleHookConnect = self._handleHookConnect;
               c1 = 1;
-              const obj2 = pid(c2[2]);
+              const obj2 = pid(c2[3]);
               c2 = 1;
               const obj5 = {
                 value: obj2.connectToHook(pid, _handleHookConnect.bind(self), () => {
@@ -131,16 +135,18 @@ class InputHost {
     self.holderUserId = holderUserId;
     const connection4 = self.connection;
     connection4.sendGrabAllow(holderSessionId);
-    const onHolderChange = self.onHolderChange;
+    const onGrab = self.onGrab;
     const obj3 = RTCConnection;
-    onHolderChange(obj3.castUserId(holderUserId.toString()));
+    onGrab(obj3.castUserId(holderUserId.toString()));
   }
   _handleDrop(arg0) {
     const self = this;
+    const logger = this.logger;
+    logger.log("Received drop for session " + arg0);
     if (arg0 === this.holderSessionId) {
       self.holderSessionId = null;
       self.holderUserId = null;
-      self.onHolderChange(null);
+      self.onDrop();
     }
   }
   takeBackController() {
@@ -150,7 +156,7 @@ class InputHost {
       connection.sendDrop(self.holderSessionId);
       self.holderSessionId = null;
       self.holderUserId = null;
-      self.onHolderChange(null);
+      self.onDrop();
     }
   }
   _handleKey(arg0, keycode, down) {

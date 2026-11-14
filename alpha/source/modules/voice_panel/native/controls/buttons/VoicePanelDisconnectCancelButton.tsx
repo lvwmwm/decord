@@ -1,27 +1,27 @@
-// Module ID: 19936
-// Function ID: 19937
+// Module ID: 20093
+// Function ID: 20094
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 5091, 6757, 5092, 6838, 11919, 21, 5243, 575, 11918, 6962, 1652, 1705, 12651, 6003, 6799, 12848, 6840, 6872, 12200, 19906, 9037, 19927, 1113, 2]
+// Dependencies: [32, 19, 5154, 6820, 5155, 6901, 11985, 21, 5306, 575, 11984, 7025, 1655, 1708, 12747, 6066, 6862, 12944, 6903, 6935, 12295, 20054, 9104, 20084, 1113, 2]
 // Exports: default
 
-// Module 19936 (VoicePanelDisconnectCancelButton)
+// Module 20093 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
-import StreamActionCreators from "StreamActionCreators" /* 6799 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6840 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6872 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6962 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 12651 */;
-import shouldShowEndStageModalDefault from "shouldShowEndStageModal" /* 12848 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
+import StreamActionCreators from "StreamActionCreators" /* 6862 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6903 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 7025 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 12747 */;
+import shouldShowEndStageModalDefault from "shouldShowEndStageModal" /* 12944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import VoicePanelStore from "VoicePanelStore" /* 6838 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import VoicePanelStore from "VoicePanelStore" /* 6901 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -105,7 +105,7 @@ export default function DisconnectCancelButton(props) {
   let c1;
   let c2;
   [tmp10, tmp11, tmp12, tmp13] = items;
-  const tmp9 = require("module_1652");
+  const tmp9 = require("module_1655");
   class VoicePanelDisconnectCancelButtonTsx1 {
     constructor() {
       let tmp = null;

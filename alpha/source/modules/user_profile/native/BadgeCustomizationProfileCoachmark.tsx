@@ -1,15 +1,15 @@
-// Module ID: 19452
-// Function ID: 19453
+// Module ID: 19644
+// Function ID: 19645
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1385, 5089, 504, 2171, 5257, 19453, 1113, 5321, 9500, 2]
+// Dependencies: [19, 1388, 5152, 504, 2174, 5320, 19645, 1113, 5384, 9567, 2]
 // Exports: default
 
-// Module 19452 (BadgeCustomizationProfileCoachmark)
+// Module 19644 (BadgeCustomizationProfileCoachmark)
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
-import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5321 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5384 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

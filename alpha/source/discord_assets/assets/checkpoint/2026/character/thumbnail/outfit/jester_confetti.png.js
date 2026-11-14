@@ -1,8 +1,8 @@
-// Module ID: 6515
-// Function ID: 6516
+// Module ID: 6578
+// Function ID: 6579
 // Dependencies: [2]
 
-// Module 6515
+// Module 6578
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/jester_confetti.png.js");

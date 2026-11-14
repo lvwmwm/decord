@@ -1,22 +1,22 @@
-// Module ID: 12751
-// Function ID: 12752
+// Module ID: 12847
+// Function ID: 12848
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2140, 5092, 5114, 5175, 1385, 5918, 5091, 12748, 12683, 6205, 1113, 6992, 6775, 12638, 12615, 2]
+// Dependencies: [5, 2143, 5155, 5177, 5238, 1388, 5981, 5154, 12844, 12779, 6268, 1113, 7055, 6838, 12734, 12711, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 12751 (handlePressJoinActivity)
+// Module 12847 (handlePressJoinActivity)
 import intl11 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 12683 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 12748 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 12779 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 12844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
-import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5918 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import UserStore from "UserStore" /* 1388 */;
+import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;
@@ -220,7 +220,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
         });
         return obj(...arguments);
       };
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

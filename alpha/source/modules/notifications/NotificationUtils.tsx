@@ -1,17 +1,17 @@
-// Module ID: 11017
-// Function ID: 11018
+// Module ID: 11086
+// Function ID: 11087
 // Name: notifications/NotificationUtils
-// Dependencies: [6895, 1072, 1082, 1113, 11, 1403, 5178, 504, 2]
+// Dependencies: [6958, 1072, 1082, 1113, 11, 1406, 5241, 504, 2]
 // Exports: filterOverrides, getMuteTimeOptions, useShouldUseNewNotificationSystem
 
-// Module 11017 (notifications/NotificationUtils)
+// Module 11086 (notifications/NotificationUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import FlagUtilsAll from "FlagUtils" /* 1403 */;
-import MuteTimers from "MuteTimers" /* 5178 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import FlagUtilsAll from "FlagUtils" /* 1406 */;
+import MuteTimers from "MuteTimers" /* 5241 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ export function filterOverrides(channelOverrides, arg1) {
     const tmp5 = metroImportDefault;
     if (!hasFlagResult) {
       let num2 = tmp[item].flags;
-      const hasFlag2 = tmp2(1403).hasFlag;
+      const hasFlag2 = tmp2(1406).hasFlag;
       FlagUtilsAll;
       if (num2 == null) {
         num2 = 0;

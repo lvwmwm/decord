@@ -1,13 +1,13 @@
-// Module ID: 9292
-// Function ID: 9293
+// Module ID: 9359
+// Function ID: 9360
 // Name: XNeutralIcon
-// Dependencies: [19, 21, 5956, 9293, 2]
+// Dependencies: [19, 21, 6019, 9360, 2]
 // Exports: XNeutralIcon
 
-// Module 9292 (XNeutralIcon)
+// Module 9359 (XNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 9293 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 9360 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 9996
-// Function ID: 9997
+// Module ID: 10063
+// Function ID: 10064
 // Name: NameplatePreview
-// Dependencies: [19, 17, 5244, 5155, 21, 5243, 575, 2108, 6964, 9329, 504, 5309, 6687, 1187, 8546, 9441, 9997, 9998, 5866, 2]
+// Dependencies: [19, 17, 5307, 5218, 21, 5306, 575, 2111, 7027, 9396, 504, 5372, 6750, 1187, 8613, 9508, 10064, 10065, 5929, 2]
 // Exports: NameplatePreview
 
-// Module 9996 (NameplatePreview)
+// Module 10063 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const profile_customization_ProfileCustomizationUtils = tmp(8546);
+const profile_customization_ProfileCustomizationUtils = tmp(8613);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

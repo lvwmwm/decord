@@ -1,13 +1,13 @@
-// Module ID: 20384
-// Function ID: 20385
+// Module ID: 20539
+// Function ID: 20540
 // Name: getGuildTagBadgeLabel
-// Dependencies: [8344, 1113, 1380, 2]
+// Dependencies: [8410, 1113, 1255, 2]
 // Exports: default
 
-// Module 20384 (getGuildTagBadgeLabel)
+// Module 20539 (getGuildTagBadgeLabel)
 import intl42 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import GuildTagConstants from "GuildTagConstants" /* 8344 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import GuildTagConstants from "GuildTagConstants" /* 8410 */;
 import size from "module_2" /* 2 */;
 
 const GuildTagBadgeKind = GuildTagConstants.GuildTagBadgeKind;

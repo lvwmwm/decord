@@ -1,18 +1,18 @@
-// Module ID: 16303
-// Function ID: 16304
+// Module ID: 16428
+// Function ID: 16429
 // Name: GuildProgressBar
-// Dependencies: [19, 17, 21, 5243, 14791, 575, 1652, 5485, 5488, 2]
+// Dependencies: [19, 17, 21, 5306, 14905, 575, 1655, 5548, 5551, 2]
 // Exports: default
 
-// Module 16303 (GuildProgressBar)
+// Module 16428 (GuildProgressBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import timingPresets from "timingPresets" /* 5488 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 14791 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import timingPresets from "timingPresets" /* 5551 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 14905 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -36,7 +36,7 @@ export default function GuildProgressBar(percent) {
   percent = percent.percent;
   const style = percent.style;
   const tmp = closure_6();
-  let obj = percent(1652);
+  let obj = percent(1655);
   const sharedValue = obj.useSharedValue(0);
   const items = [percent, sharedValue];
   const effect = react.useEffect(() => {
@@ -47,7 +47,7 @@ export default function GuildProgressBar(percent) {
   const items1 = [closure_7, sharedValue];
   let c0;
   [tmp5, tmp6] = items1;
-  const obj2 = percent(1652);
+  const obj2 = percent(1655);
   class GuildProgressBarTsx1 {
     constructor() {
       const obj = { width: "" + _undefined.get() + "%" };

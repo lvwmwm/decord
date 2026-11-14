@@ -1,10 +1,10 @@
-// Module ID: 18534
-// Function ID: 18535
+// Module ID: 18663
+// Function ID: 18664
 // Name: formatDateForAPI
 // Dependencies: [2]
 // Exports: default
 
-// Module 18534 (formatDateForAPI)
+// Module 18663 (formatDateForAPI)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/date/formatDateForAPI.tsx");

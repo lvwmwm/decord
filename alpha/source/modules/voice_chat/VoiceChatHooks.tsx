@@ -1,12 +1,12 @@
-// Module ID: 10938
-// Function ID: 10939
+// Module ID: 11007
+// Function ID: 11008
 // Name: VoiceChatHooks
-// Dependencies: [502, 5918, 504, 2]
+// Dependencies: [502, 5981, 504, 2]
 // Exports: useIsConnectedToVoiceChannel, useIsConnectedToVoiceChannelForId
 
-// Module 10938 (VoiceChatHooks)
+// Module 11007 (VoiceChatHooks)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 5918 */;
+import VoiceStateStore from "VoiceStateStore" /* 5981 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,11 +1,11 @@
-// Module ID: 6153
-// Function ID: 6154
+// Module ID: 6216
+// Function ID: 6217
 // Name: Avx512EntropyHistogramExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: getIsAvx512EntropyHistogramEnabled
 
-// Module 6153 (Avx512EntropyHistogramExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 6216 (Avx512EntropyHistogramExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-avx512-entropy-histogram", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

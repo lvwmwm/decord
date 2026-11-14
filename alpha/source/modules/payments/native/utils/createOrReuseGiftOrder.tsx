@@ -1,14 +1,14 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11669
+// Function ID: 11670
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 5987, 1387, 1083, 3, 1377, 9343, 9656, 9530, 2166, 5055, 2]
+// Dependencies: [5, 19, 6050, 1390, 1083, 3, 1380, 9410, 9723, 9597, 2169, 5118, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 11602 (createOrReuseGiftOrder)
+// Module 11669 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1083 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import PaymentConstants from "PaymentConstants" /* 5987 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PaymentConstants from "PaymentConstants" /* 6050 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let result = size.fileFinishedImporting("modules/payments/native/utils/createOrR
 
 export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
   let mobileStoreFront;
-  let obj = mobileStoreFront(9656);
+  let obj = mobileStoreFront(9723);
   mobileStoreFront = obj.useMobileStoreFront();
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async function(arg0, value) {
@@ -95,7 +95,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
             country = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else {
           let error;

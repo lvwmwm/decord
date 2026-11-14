@@ -1,21 +1,21 @@
-// Module ID: 19825
-// Function ID: 19826
+// Module ID: 19231
+// Function ID: 19232
 // Name: VoicePanelDockPTTFloatingContent
-// Dependencies: [19, 17, 11942, 21, 575, 5243, 19818, 5484, 1652, 5843, 5250, 12952, 2]
+// Dependencies: [19, 17, 12009, 21, 575, 5306, 19204, 5547, 1655, 5906, 5313, 13048, 2]
 // Exports: default
 
-// Module 19825 (VoicePanelDockPTTFloatingContent)
+// Module 19231 (VoicePanelDockPTTFloatingContent)
 import native from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import shared from "shared" /* 5250 */;
-import useThemeDefault from "useTheme" /* 5484 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5843 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11942 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19818 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import shared from "shared" /* 5313 */;
+import useThemeDefault from "useTheme" /* 5547 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5906 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19204 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const nativeDefault = native;
@@ -81,9 +81,9 @@ export default function VoicePanelDockPTTFloatingContent(arg0) {
   const tmp4Result = tmp4(native.Shadow.SHADOW_HIGH);
   const tmp7 = useThemeDefault();
   let items = [closure_10, anchor, progress, 76, , , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  items[4] = _mod1652.interpolate;
-  items[5] = _mod1652.Extrapolation;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  items[4] = _mod1655.interpolate;
+  items[5] = _mod1655.Extrapolation;
   items[6] = dragX;
   items[7] = dragY;
   items[8] = 0.5;
@@ -143,10 +143,10 @@ export default function VoicePanelDockPTTFloatingContent(arg0) {
   VoicePanelDockPTTFloatingContentTsx1.__initData = tmp9;
   const animatedStyle = useAnimatedStyle(VoicePanelDockPTTFloatingContentTsx1);
   let items2 = [closure_11, anchor, progress, 56, , , , , , ];
-  const useAnimatedStyle2 = tmp5(1652).useAnimatedStyle;
-  _mod1652;
-  items2[4] = _mod1652.interpolate;
-  items2[5] = _mod1652.Extrapolation;
+  const useAnimatedStyle2 = tmp5(1655).useAnimatedStyle;
+  _mod1655;
+  items2[4] = _mod1655.interpolate;
+  items2[5] = _mod1655.Extrapolation;
   items2[6] = dragX;
   items2[7] = closure_7;
   items2[8] = dragY;
@@ -216,7 +216,7 @@ export default function VoicePanelDockPTTFloatingContent(arg0) {
   const animatedStyle2 = useAnimatedStyle2(VoicePanelDockPTTFloatingContentTsx2);
   let obj2 = { style: items4, children: items5 };
   items4 = [tmp.indicator, animatedStyle];
-  View = tmp2(1652).View;
+  View = tmp2(1655).View;
   let str = "light";
   const tmp2Result = VisualEffectViewDefault;
   const tmp5Result2 = shared;
@@ -230,9 +230,9 @@ export default function VoicePanelDockPTTFloatingContent(arg0) {
   items6 = [metroRequire(View, obj2), ];
   const obj5 = { style: items7, children: hasOwnProperty(MicrophoneIcon, obj6) };
   items7 = [tmp.tile, { boxShadow: tmp4Result }, animatedStyle2];
-  const View2 = tmp2(1652).View;
+  const View2 = tmp2(1655).View;
   obj6 = { size: "md", color: nativeDefault.colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
-  MicrophoneIcon = tmp5(12952).MicrophoneIcon;
+  MicrophoneIcon = tmp5(13048).MicrophoneIcon;
   items6[1] = hasOwnProperty(View2, obj5);
   return metroRequire(View, obj);
 };

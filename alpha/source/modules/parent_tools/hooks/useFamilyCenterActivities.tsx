@@ -1,19 +1,19 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17424
+// Function ID: 17425
 // Name: useFamilyCenterActivities
-// Dependencies: [8673, 8674, 563, 9552, 7190, 2]
+// Dependencies: [8740, 8741, 563, 9619, 7253, 2]
 // Exports: useActionTotalsForDisplayType, useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
 
-// Module 17301 (useFamilyCenterActivities)
+// Module 17424 (useFamilyCenterActivities)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8674 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f113947 = () => FamilyCenterStore.getTotalForDisplayType(displayType);
+const f115247 = () => FamilyCenterStore.getTotalForDisplayType(displayType);
 const TeenActionDisplayType = FamilyCenterConstants.TeenActionDisplayType;
 let result = size.fileFinishedImporting("modules/parent_tools/hooks/useFamilyCenterActivities.tsx");
 
@@ -27,7 +27,7 @@ export function useActionTotalsForDisplayType(displayType) {
   _require = displayType;
   const items = [FamilyCenterStore];
   const obj = require("useStateFromStores");
-  return obj.useStateFromStores(items, f113947);
+  return obj.useStateFromStores(items, f115247);
 }
 export function useHasActionForAnyDisplayType() {
   const items = [FamilyCenterStore];
@@ -42,7 +42,7 @@ export function useFormattedTotalForDisplayType(displayType) {
   _require = displayType;
   const items = [FamilyCenterStore];
   const obj = require("useStateFromStores");
-  let num = obj.useStateFromStores(items, f113947);
+  let num = obj.useStateFromStores(items, f115247);
   if (num == null) {
     num = 0;
   }

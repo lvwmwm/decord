@@ -2,7 +2,7 @@
 // Function ID: 1100
 // Name: router_utils
 // Dependencies: [1072, 3, 1100, 1108, 1111, 2]
-// Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, shouldNavigate, transitionToGuild
+// Exports: addNavigationBlocker, back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, shouldNavigate, transitionToGuild
 
 // Module 1099 (router_utils)
 import LoggerDefault from "Logger" /* 3 */;
@@ -110,15 +110,23 @@ const RelativeMarketingURLs = Constants.RelativeMarketingURLs;
 const logger = new LoggerDefault("Routing/Utils");
 const items = [RelativeMarketingURLs.DEVELOPER_PORTAL];
 const tmp3 = new LoggerDefault("Routing/Utils");
+const set = new Set();
 let module_1100 = module_1100_mod;
 module_1100 = module_1100.createMemoryHistory();
-let closure_10 = module_1100.listen((arg0, arg1) => {
+let closure_11 = module_1100.listen((arg0, arg1) => {
   if ("REPLACE" !== arg1) {
-    closure_10();
+    closure_11();
   }
 });
 const result = size.fileFinishedImporting("modules/routing/router_utils.tsx");
 
+export function addNavigationBlocker(arg0) {
+  let closure_0 = arg0;
+  set.add(arg0);
+  return () => {
+    set.delete(closure_0);
+  };
+}
 export function shouldNavigate() {
   const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
   return !ComponentDispatch.hasSubscribers(metroImportDefault.MODAL_CLOSE);

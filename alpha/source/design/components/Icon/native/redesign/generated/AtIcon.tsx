@@ -1,14 +1,14 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8087
+// Function ID: 8088
 // Name: AtIcon
-// Dependencies: [19, 21, 575, 5956, 7974, 2]
+// Dependencies: [19, 21, 575, 6019, 8039, 2]
 // Exports: AtIcon
 
-// Module 8022 (AtIcon)
+// Module 8087 (AtIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 7974 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 8039 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

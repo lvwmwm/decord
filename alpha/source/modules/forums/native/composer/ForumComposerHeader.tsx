@@ -1,22 +1,22 @@
-// Module ID: 11170
-// Function ID: 11171
+// Module ID: 11237
+// Function ID: 11238
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 5243, 575, 5891, 7364, 1113, 7483, 8021, 5866, 8008, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5954, 7428, 1113, 7549, 8086, 5929, 8073, 2]
 // Exports: default
 
-// Module 11170 (ForumComposerHeader)
+// Module 11237 (ForumComposerHeader)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import useChannelNameDefault from "useChannelName" /* 5891 */;
-import Pressables from "Pressables" /* 7364 */;
-import XSmallIcon from "XSmallIcon" /* 7483 */;
-import BookCheckIcon from "BookCheckIcon" /* 8008 */;
-import ForumIcon from "ForumIcon" /* 8021 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import useChannelNameDefault from "useChannelName" /* 5954 */;
+import Pressables from "Pressables" /* 7428 */;
+import XSmallIcon from "XSmallIcon" /* 7549 */;
+import BookCheckIcon from "BookCheckIcon" /* 8073 */;
+import ForumIcon from "ForumIcon" /* 8086 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -85,7 +85,7 @@ export default function ForumComposerHeader(height) {
   let tmp6Result = null;
   if (length > 0) {
     const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-    const PressableOpacity2 = tmp7(7364).PressableOpacity;
+    const PressableOpacity2 = tmp7(7428).PressableOpacity;
     intl3 = tmp7(1113).intl;
     tmp6Result = tmp6(PressableOpacity2, obj5);
   }

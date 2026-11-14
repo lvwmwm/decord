@@ -1,29 +1,29 @@
-// Module ID: 20429
-// Function ID: 20430
+// Module ID: 20584
+// Function ID: 20585
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1072, 7359, 21, 5243, 575, 5484, 12385, 1187, 1411, 5250, 7379, 1113, 7364, 7483, 7888, 20430, 1377, 5866, 7024, 7680, 2]
+// Dependencies: [32, 19, 17, 1072, 7423, 21, 5306, 575, 5547, 12480, 1187, 1414, 5313, 7443, 1113, 7428, 7549, 7954, 20585, 1380, 5929, 7087, 7746, 2]
 // Exports: default
 
-// Module 20429 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 20584 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import AvatarUtils from "AvatarUtils" /* 1411 */;
-import shared from "shared" /* 5250 */;
-import useThemeDefault from "useTheme" /* 5484 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import PlatformsDefault from "Platforms" /* 7024 */;
-import XSmallIcon from "XSmallIcon" /* 7483 */;
-import TableRowGroup3 from "TableRowGroup" /* 7680 */;
-import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 12385 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20430 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import shared from "shared" /* 5313 */;
+import useThemeDefault from "useTheme" /* 5547 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import PlatformsDefault from "Platforms" /* 7087 */;
+import XSmallIcon from "XSmallIcon" /* 7549 */;
+import TableRowGroup3 from "TableRowGroup" /* 7746 */;
+import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 12480 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20585 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7359 */;
+import Constants from "Constants" /* 7423 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, map;
@@ -120,7 +120,7 @@ function Header(arg0) {
     tmp9Result = authStore2(Icon, obj3);
   }
   const obj4 = { icon: tmp9Result, label: format(Nj0a3j, { platformName: name2 }), trailing: authStore2(PressableOpacity, obj5) };
-  const TableRow = tmp3(7379).TableRow;
+  const TableRow = tmp3(7443).TableRow;
   const intl = tmp3(1113).intl;
   format = intl.format;
   name2 = undefined;
@@ -132,7 +132,7 @@ function Header(arg0) {
     name2 = name;
   }
   obj5 = { "aria-label": intl2.string(intl3.t.N86XcP), onPress: onRemove, disabled: locked, children: authStore2(XSmallIcon.XSmallIcon, {}) };
-  PressableOpacity = tmp3(7364).PressableOpacity;
+  PressableOpacity = tmp3(7428).PressableOpacity;
   intl2 = tmp3(1113).intl;
   return authStore2(TableRow, obj4);
 }
@@ -181,7 +181,7 @@ function BooleanConfigRule(metadataField) {
     }
   };
   value = undefined;
-  const TableSwitchRow = metadataField(7888).TableSwitchRow;
+  const TableSwitchRow = metadataField(7954).TableSwitchRow;
   const tmp2 = closure_12;
   if (existingPendingConfiguration != null) {
     value = existingPendingConfiguration.configuration.value;
@@ -244,7 +244,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(20430);
+  let obj = metadataField(20585);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -253,7 +253,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(20430);
+  const tmp2Result = tmp2(20585);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);
@@ -269,7 +269,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   }
   closure_11 = tmp15;
   if (undefined !== fieldTextHook) {
-    const tmp2Result2 = tmp2(1377);
+    const tmp2Result2 = tmp2(1380);
     closure_13 = tmp2Result2.isIOS() ? tmp.numericalInputContainerIOSInline : tmp.numericalInputContainerAndroidInline;
     const intl = tmp2(1113).intl;
     let obj2 = {
@@ -320,7 +320,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
     items[1] = numericalInputDisabled;
     items1 = [onInputValueChange(closure_5, obj5, "_numericalInputContainer"), ];
     const obj7 = { variant: "body-md/semibold", style: tmp.appNumericalInputText, children: fieldText };
-    items1[1] = onInputValueChange(tmp2(5866).Text, obj7);
+    items1[1] = onInputValueChange(tmp2(5929).Text, obj7);
     tmp19Result = tmp19(tmp20, obj4);
   }
   const obj8 = {
@@ -358,7 +358,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       tmp10(tmp3, num);
     }
   };
-  return onInputValueChange(tmp2(7888).TableSwitchRow, obj8, metadataField);
+  return onInputValueChange(tmp2(7954).TableSwitchRow, obj8, metadataField);
 }
 function BlueskyMetadataRules(arg0) {
   let configMetadataMap;

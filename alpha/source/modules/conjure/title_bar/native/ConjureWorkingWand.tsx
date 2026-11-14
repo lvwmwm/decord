@@ -1,25 +1,25 @@
-// Module ID: 10461
-// Function ID: 10462
+// Module ID: 10530
+// Function ID: 10531
 // Name: ConjureWorkingWand
-// Dependencies: [19, 17, 5244, 21, 1652, 671, 575, 8197, 5243, 504, 5485, 10462, 2]
+// Dependencies: [19, 17, 5307, 21, 1655, 671, 575, 8263, 5306, 504, 5548, 10531, 2]
 // Exports: default
 
-// Module 10461 (ConjureWorkingWand)
+// Module 10530 (ConjureWorkingWand)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import inlineStyles from "inlineStyles" /* 8197 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import inlineStyles from "inlineStyles" /* 8263 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const inlineStylesDefault = inlineStyles;
-const module_1652 = _mod1652;
+const module_1655 = _mod1655;
 let _require, set, set2, set3, value;
 
 let c9;
@@ -43,7 +43,7 @@ function WandPart(color) {
   color = color.color;
   const str = react.useId();
   const replaced = str.replace(/:/g, "");
-  let obj = _mod1652;
+  let obj = _mod1655;
   const items = [closure_19, band, c11];
   let c0;
   let c1;
@@ -74,18 +74,18 @@ function WandPart(color) {
   if (null != band) {
     obj2 = { children: items5 };
     const obj3 = { children: items4 };
-    const Defs = tmp2(8197).Defs;
+    const Defs = tmp2(8263).Defs;
     const _HermesInternal = HermesInternal;
     const obj4 = { id: "" + replaced + "band", x1: "0", y1: "0", x2: "1", y2: "0", children: null };
-    const LinearGradient = tmp2(8197).LinearGradient;
+    const LinearGradient = tmp2(8263).LinearGradient;
     const obj5 = { offset: "0", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 0 };
-    const Stop = tmp2(8197).Stop;
+    const Stop = tmp2(8263).Stop;
     const items3 = [metroImportDefault(Stop, obj5), , ];
     const obj6 = { offset: "0.5", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 1 };
-    const Stop2 = tmp2(8197).Stop;
+    const Stop2 = tmp2(8263).Stop;
     items3[1] = metroImportDefault(Stop2, obj6);
     const obj7 = { offset: "1", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 0 };
-    const Stop3 = tmp2(8197).Stop;
+    const Stop3 = tmp2(8263).Stop;
     items3[2] = metroImportDefault(Stop3, obj7);
     class ConjureWorkingWandTsx2 {
       constructor() {
@@ -103,14 +103,14 @@ function WandPart(color) {
     items4 = [metroImportAll(LinearGradient, obj4), ];
     const size2 = { id: "" + replaced + "mask", maskUnits: "userSpaceOnUse", x: 0, y: 0, width: 24, height: 24, children: metroImportDefault(closure_15, size3) };
     const _HermesInternal2 = HermesInternal;
-    const Mask = tmp2(8197).Mask;
+    const Mask = tmp2(8263).Mask;
     size3 = { animatedProps, y: 0, width: 19.200000000000003, height: 24, fill: "url(#" + replaced + "band)" };
     const _HermesInternal3 = HermesInternal;
     items4[1] = metroImportDefault(Mask, size2);
     items5 = [metroImportAll(Defs, obj3), ];
     const _HermesInternal4 = HermesInternal;
     const obj8 = { d: path, fill, mask: "url(#" + replaced + "mask)" };
-    const Path = tmp2(8197).Path;
+    const Path = tmp2(8263).Path;
     items5[1] = metroImportDefault(Path, obj8);
     tmp8Result = tmp8(React4, obj2);
   }
@@ -119,7 +119,7 @@ function WandPart(color) {
 }
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
-const Easing = _mod1652.Easing;
+const Easing = _mod1655.Easing;
 let closure_10 = Easing.bezier(0.42, 0, 0.58, 1);
 let c11 = -33.6;
 let obj = _modDef671(nativeDefault.unsafe_rawColors.ILLO_PURPLE_40);
@@ -134,7 +134,7 @@ let obj7 = _modDef671(nativeDefault.unsafe_rawColors.ILLO_PINK_40);
 const result4 = obj7.set("oklch.l", "*0.95");
 const result5 = result4.set("oklch.c", "*0.8");
 const fill = result5.hex();
-let closure_15 = module_1652.createAnimatedComponent(inlineStyles.Rect);
+let closure_15 = module_1655.createAnimatedComponent(inlineStyles.Rect);
 let closure_16 = createStyles.createStyles((width) => ({ root: { width, height: width }, sparkleSmall: { transformOrigin: "33.6% 18.6%" }, sparkleLarge: { transformOrigin: "75% 75%" } }));
 let items = [{ code: "(function twinkle_ConjureWorkingWandTsx1(peak){return{opacity:0.35+0.65*peak,transform:[{scale:0.55+0.7*peak},{rotate:45*peak+\"deg\"}]};})" }];
 [tmp4] = items;
@@ -188,11 +188,11 @@ export default function ConjureWorkingWand(arg0) {
   const items = [AccessibilityStore];
   let tmp4 = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion) || paused;
   _require = tmp4;
-  const tmp2Result = require("module_1652");
+  const tmp2Result = require("module_1655");
   const sharedValue = tmp2Result.useSharedValue(0);
-  const tmp2Result5 = require("module_1652");
+  const tmp2Result5 = require("module_1655");
   sharedValue1 = tmp2Result5.useSharedValue(1);
-  const tmp2Result6 = require("module_1652");
+  const tmp2Result6 = require("module_1655");
   const sharedValue2 = tmp2Result6.useSharedValue(c11);
   const items1 = [tmp4, sharedValue, sharedValue1, sharedValue2];
   const effect = sharedValue2.useEffect(() => {
@@ -201,21 +201,21 @@ export default function ConjureWorkingWand(arg0) {
       let obj = { duration: 1000, easing };
       const result = sharedValue.set(0);
       set = sharedValue.set;
-      const withRepeat = _mod1652.withRepeat;
-      _mod1652;
+      const withRepeat = _mod1655.withRepeat;
+      _mod1655;
       obj2 = timing_timing;
       const result1 = set(withRepeat(obj2.withTiming(1, obj), -1, true));
       const result2 = sharedValue1.set(1);
       set2 = sharedValue1.set;
-      const withRepeat2 = _mod1652.withRepeat;
-      _mod1652;
+      const withRepeat2 = _mod1655.withRepeat;
+      _mod1655;
       let obj3 = timing_timing;
       set2(withRepeat2(obj3.withTiming(0, obj), -1, true));
       const result3 = sharedValue2.set(c11);
       set3 = sharedValue2.set;
-      const withRepeat3 = _mod1652.withRepeat;
-      _mod1652;
-      const obj4 = { duration: 2000, easing: _mod1652.Easing.linear };
+      const withRepeat3 = _mod1655.withRepeat;
+      _mod1655;
+      const obj4 = { duration: 2000, easing: _mod1655.Easing.linear };
       const withTiming = timing_timing.withTiming;
       timing_timing;
       set3(withRepeat3(withTiming(38.4, obj4), -1, false));
@@ -235,7 +235,7 @@ export default function ConjureWorkingWand(arg0) {
   let c2;
   let c3;
   [tmp11, tmp12, tmp13, tmp14, tmp15] = items2;
-  const tmp2Result7 = require("module_1652");
+  const tmp2Result7 = require("module_1655");
   class ConjureWorkingWandTsx3 {
     constructor() {
       let tmp4;
@@ -259,7 +259,7 @@ export default function ConjureWorkingWand(arg0) {
   c2 = undefined;
   c3 = undefined;
   [tmp17, tmp18, tmp19, tmp20, tmp21] = items4;
-  const tmp2Result8 = require("module_1652");
+  const tmp2Result8 = require("module_1655");
   class ConjureWorkingWandTsx4 {
     constructor() {
       let tmp4;

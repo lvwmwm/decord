@@ -1,10 +1,10 @@
-// Module ID: 8952
-// Function ID: 8953
+// Module ID: 9019
+// Function ID: 9020
 // Name: RequestToStreamNonGamesExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 8952 (RequestToStreamNonGamesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 9019 (RequestToStreamNonGamesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

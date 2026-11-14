@@ -1,12 +1,12 @@
-// Module ID: 11885
-// Function ID: 11886
+// Module ID: 11951
+// Function ID: 11952
 // Name: StageChannelUnifiedCallExperiment
-// Dependencies: [1072, 1449, 2]
+// Dependencies: [1072, 1452, 2]
 // Exports: isStageUnifiedCall, useIsStageUnifiedCall
 
-// Module 11885 (StageChannelUnifiedCallExperiment)
+// Module 11951 (StageChannelUnifiedCallExperiment)
 import Constants from "Constants" /* 1072 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1449 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

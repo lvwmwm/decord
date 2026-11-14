@@ -1,25 +1,25 @@
-// Module ID: 17087
-// Function ID: 17088
+// Module ID: 17210
+// Function ID: 17211
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 5185, 1385, 1072, 6847, 21, 5243, 575, 17088, 1113, 8537, 504, 7749, 7674, 7379, 5873, 2]
+// Dependencies: [19, 17, 5248, 1388, 1072, 6910, 21, 5306, 575, 17211, 1113, 8604, 504, 7815, 7740, 7443, 5936, 2]
 
-// Module 17087 (SettingsAccountHeader)
+// Module 17210 (SettingsAccountHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl from "intl" /* 1113 */;
-import components_Button_Button from "components/Button/Button" /* 5873 */;
-import Constants2 from "Constants" /* 6847 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7674 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7749 */;
-import openUserSettings from "openUserSettings" /* 8537 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 17088 */;
+import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Constants2 from "Constants" /* 6910 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7740 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7815 */;
+import openUserSettings from "openUserSettings" /* 8604 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 17211 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -77,7 +77,7 @@ const memoResult = react.memo(function SettingsAccountHeader() {
     if (null != bannerText) {
       ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
       const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj10), start: true, end: true };
-      const TableRow = tmp2(7379).TableRow;
+      const TableRow = tmp2(7443).TableRow;
       obj10 = { text: null, accessibilityLabel: null, onPress: callback };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       tmp14 = React4(TableRow, obj9);

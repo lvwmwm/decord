@@ -1,8 +1,8 @@
-// Module ID: 19451
-// Function ID: 19452
+// Module ID: 19643
+// Function ID: 19644
 // Dependencies: [2]
 
-// Module 19451
+// Module 19643
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisplayNameLockeAbstractUI-3x.png.js");

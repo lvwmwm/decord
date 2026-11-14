@@ -1,19 +1,19 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17185
+// Function ID: 17186
 // Name: UserProfilePremiumTryItOutUpsell
-// Dependencies: [19, 7896, 21, 5243, 17039, 1627, 1652, 5876, 1113, 2]
+// Dependencies: [19, 7962, 21, 5306, 17162, 1630, 1655, 5939, 1113, 2]
 // Exports: default
 
-// Module 17062 (UserProfilePremiumTryItOutUpsell)
+// Module 17185 (UserProfilePremiumTryItOutUpsell)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import Constants from "Constants" /* 7896 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 17039 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import Constants from "Constants" /* 7962 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 17162 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const UserProfileUpsellCardV2Default = UserProfileUpsellCardV2;
@@ -48,8 +48,8 @@ export default function UserProfilePremiumTryItOutUpsell(isVisible) {
   const onPreviewPremium = isVisible.onPreviewPremium;
   const tmp3 = closure_6(useSafeAreaInsetsDefault().bottom);
   let items = [closure_7, isVisible, , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[2] = spring_spring.withSpring;
   items[3] = closure_5;
   items[4] = 60;
@@ -95,7 +95,7 @@ export default function UserProfilePremiumTryItOutUpsell(isVisible) {
   const items2 = [closure_8, isVisible];
   c0 = undefined;
   [tmp13, tmp14] = items2;
-  const tmp4Result = _mod1652;
+  const tmp4Result = _mod1655;
   class UserProfilePremiumTryItOutUpsellTsx2 {
     constructor() {
       value = closure_0.get();
@@ -118,7 +118,7 @@ export default function UserProfilePremiumTryItOutUpsell(isVisible) {
   UserProfilePremiumTryItOutUpsellTsx2.__initData = tmp13;
   const animatedProps = tmp4Result.useAnimatedProps(UserProfilePremiumTryItOutUpsellTsx2);
   const items4 = [tmp3.container, animatedStyle];
-  const View = tmp(1652).View;
+  const View = tmp(1655).View;
   const obj2 = { style: tmp3.card, text: intl.string(intl3.t["MswR/h"]), buttonText: intl2.string(intl3.t.PxUx8e), onButtonPress: onPreviewPremium, buttonVariant: "primary" };
   UserProfileUpsellCardV2Default;
   intl = tmp4(1113).intl;

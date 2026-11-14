@@ -1,16 +1,16 @@
-// Module ID: 12042
-// Function ID: 12043
+// Module ID: 12104
+// Function ID: 12105
 // Name: UserProfileGameWidgetConstants
-// Dependencies: [575, 12043, 12044, 9075, 9077, 5955, 2]
+// Dependencies: [575, 12105, 12106, 9142, 9144, 6018, 2]
 // Exports: getWidgetGameTagMetadata
 
-// Module 12042 (UserProfileGameWidgetConstants)
+// Module 12104 (UserProfileGameWidgetConstants)
 import nativeDefault from "native" /* 575 */;
-import FriendsIcon from "FriendsIcon" /* 5955 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 9075 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 9077 */;
-import RibbonIcon from "RibbonIcon" /* 12044 */;
-import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 12043 */;
+import FriendsIcon from "FriendsIcon" /* 6018 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 9142 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 9144 */;
+import RibbonIcon from "RibbonIcon" /* 12106 */;
+import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 12105 */;
 import size from "module_2" /* 2 */;
 
 const sm = nativeDefault.radii.sm;
@@ -29,6 +29,7 @@ export const GAME_COVER_ASPECT_RATIO = 0.75;
 export const GAME_COVER_BORDER_RADIUS = sm;
 export const GAME_COVER_GRID_GAP = PX_16;
 export const GAME_COVER_DETAILS_GAP = PX_12;
+export const WIDGET_FOCUS_DELAY_MS = 100;
 export const WIDGET_GAME_TAG_METADATA = widgetGameTagMetadata;
 export function getWidgetGameTagMetadata(item) {
   let tmp2 = null;

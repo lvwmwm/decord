@@ -1,16 +1,16 @@
-// Module ID: 19031
-// Function ID: 19032
+// Module ID: 19167
+// Function ID: 19168
 // Name: YouBarButton
-// Dependencies: [19, 17, 17583, 21, 5243, 575, 9436, 8990, 7922, 2]
+// Dependencies: [19, 17, 17701, 21, 5306, 575, 9503, 9057, 7988, 2]
 
-// Module 19031 (YouBarButton)
+// Module 19167 (YouBarButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import IconButton2 from "IconButton" /* 7922 */;
+import IconButton2 from "IconButton" /* 7988 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 17583 */;
+import YouBarConstants from "YouBarConstants" /* 17701 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -70,7 +70,7 @@ class YouBarButtonIcon {
     let items1 = [size2, badgeSize, num4, num3];
     const items2 = [memo, hasBadge];
     const memo1 = obj2.useMemo(() => {
-      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "paddingHorizontal", bottom: "y", padding: "HTTP", minWidth: "r" };
+      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "HermesInternal", bottom: "channel_id", padding: "hash", minWidth: "padding" };
       return rect;
     }, items1);
     const obj4 = { style: { position: "relative", height: tmp, width: tmp }, children: items3 };
@@ -85,14 +85,14 @@ class YouBarButtonIcon {
       }
       return items1;
     }, items2);
-    items3 = [closure_7(memo(9436), { cutouts: memo2, children: icon }), ];
+    items3 = [closure_7(memo(9503), { cutouts: memo2, children: icon }), ];
     const tmp5 = closure_8;
     const tmp6 = View;
     const tmp7 = closure_7;
     const tmp8 = memo;
     if (hasBadge) {
       const obj5 = { style: memo1, size: 8, badgeStyle };
-      hasBadge = tmp7(tmp8(8990), obj5);
+      hasBadge = tmp7(tmp8(9057), obj5);
     }
     items3[1] = hasBadge;
     return tmp5(tmp6, obj4);

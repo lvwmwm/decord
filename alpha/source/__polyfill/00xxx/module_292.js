@@ -226,7 +226,7 @@ const items = [
       };
       let obj3 = self(27);
       if (obj3.shouldPressibilityUseW3CPointerEventsForHover()) {
-        const obj4 = { onPointerEnter: "Array", onPointerLeave: "flexDirection" };
+        const obj4 = { onPointerEnter: "disabled", onPointerLeave: "isArray" };
         const _config = this._config;
         const onHoverIn = _config.onHoverIn;
         const onHoverOut = _config.onHoverOut;

@@ -1,10 +1,10 @@
-// Module ID: 11606
-// Function ID: 11607
+// Module ID: 11673
+// Function ID: 11674
 // Name: GiftingBadgeExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 11606 (GiftingBadgeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 11673 (GiftingBadgeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

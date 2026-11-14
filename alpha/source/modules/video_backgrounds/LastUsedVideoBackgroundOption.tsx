@@ -1,16 +1,16 @@
-// Module ID: 6177
-// Function ID: 6178
+// Module ID: 6240
+// Function ID: 6241
 // Name: LastUsedVideoBackgroundOption
-// Dependencies: [19, 1194, 1231, 1385, 6178, 2171, 504, 2]
+// Dependencies: [19, 1194, 1231, 1388, 6241, 2174, 504, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 6177 (LastUsedVideoBackgroundOption)
-import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 6178 */;
+// Module 6240 (LastUsedVideoBackgroundOption)
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 6241 */;
 import react from "react" /* 19 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
@@ -66,7 +66,7 @@ export function useLastUsedVideoBackgroundOption() {
           tmp8 = tmp3;
         } else {
           tmp8 = null;
-          tmp4(6178);
+          tmp4(6241);
         }
         tmp7 = tmp8;
       } else {

@@ -1,14 +1,14 @@
-// Module ID: 18049
-// Function ID: 18050
+// Module ID: 18169
+// Function ID: 18170
 // Name: SupportUtils
-// Dependencies: [5, 2186, 1376, 5200, 5949, 2185, 2]
+// Dependencies: [5, 2189, 1379, 5263, 6012, 2188, 2]
 // Exports: emailSupport
 
-// Module 18049 (SupportUtils)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import LinkingDefault from "Linking" /* 5949 */;
+// Module 18169 (SupportUtils)
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import LinkingDefault from "Linking" /* 6012 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, constants;

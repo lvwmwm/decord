@@ -1,19 +1,19 @@
-// Module ID: 17399
-// Function ID: 17400
+// Module ID: 17522
+// Function ID: 17523
 // Name: PremiumGiftingSetting
-// Dependencies: [19, 1072, 21, 9518, 9721, 10441, 1187, 12311, 1113, 11751, 2183, 15317, 2]
+// Dependencies: [19, 1072, 21, 9585, 9788, 10510, 1187, 12406, 1113, 11817, 2186, 15431, 2]
 
-// Module 17399 (PremiumGiftingSetting)
+// Module 17522 (PremiumGiftingSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2183 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 9518 */;
-import PromotionsHooks from "PromotionsHooks" /* 10441 */;
-import GiftIcon from "GiftIcon" /* 11751 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 9585 */;
+import PromotionsHooks from "PromotionsHooks" /* 10510 */;
+import GiftIcon from "GiftIcon" /* 11817 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

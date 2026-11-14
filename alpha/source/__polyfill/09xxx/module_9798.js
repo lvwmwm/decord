@@ -1,28 +1,24 @@
 // Module ID: 9798
 // Function ID: 9799
-// Dependencies: []
-// Exports: isSentryRequestUrl
+// Dependencies: [9799]
+// Exports: getGlobalSingleton
 
 // Module 9798
+import _mod9799 from "module_9799" /* 9799 */;
 
-export function isSentryRequestUrl(arr, getDsn) {
-  const tmp = getDsn && getDsn.getDsn();
-  arr = getDsn && getDsn.getOptions().tunnel;
-  let tmp2 = tmp && arr.includes(tmp.host);
-  if (!tmp2) {
-    let flag = false;
-    if (arr) {
-      let substr = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr = arr.slice(0, -1);
-      }
-      let substr1 = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr1 = arr.slice(0, -1);
-      }
-      flag = substr === substr1;
-    }
-    tmp2 = flag;
+
+export const GLOBAL_OBJ = globalThis;
+export function getGlobalSingleton(arg0, fn, arg2) {
+  const tmp2 = (arg2 || globalThis).__SENTRY__ || {};
+  (arg2 || globalThis).__SENTRY__ = tmp2;
+  const SDK_VERSION = _mod9799.SDK_VERSION;
+  const tmp3 = tmp2[_mod9799.SDK_VERSION] || {};
+  tmp2[SDK_VERSION] = tmp3;
+  let tmp4 = tmp3[arg0];
+  if (!tmp4) {
+    const tmp6 = fn();
+    tmp3[arg0] = tmp6;
+    tmp4 = tmp6;
   }
-  return tmp2;
+  return tmp4;
 }

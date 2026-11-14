@@ -1,19 +1,19 @@
-// Module ID: 8139
-// Function ID: 8140
+// Module ID: 8205
+// Function ID: 8206
 // Name: SafetyHubUtils
-// Dependencies: [502, 8140, 1072, 2166, 6298, 1113, 8141, 1089, 11, 504, 2]
+// Dependencies: [502, 8206, 1072, 2169, 6361, 1113, 8207, 1089, 11, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isAppealWindowExpired, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 8139 (SafetyHubUtils)
+// Module 8205 (SafetyHubUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl5 from "intl" /* 1113 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6298 */;
-import SafetyHubModels from "SafetyHubModels" /* 8141 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
+import SafetyHubModels from "SafetyHubModels" /* 8207 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8140 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -62,8 +62,8 @@ let c10 = result;
 const result1 = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef2166();
-  return obj.to(_modDef2166(timestamp));
+  const obj = _modDef2169();
+  return obj.to(_modDef2169(timestamp));
 }
 export function getSpoilerFlagsForAttachment(filename) {
   let num;

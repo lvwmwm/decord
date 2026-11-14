@@ -1,30 +1,30 @@
-// Module ID: 6756
-// Function ID: 6757
+// Module ID: 6819
+// Function ID: 6820
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 6757, 5092, 5146, 1072, 2142, 3, 5087, 5068, 572, 1282, 6798, 2120, 2132, 38, 6799, 6003, 6745, 1493, 1377, 12885, 12824, 1113, 2]
+// Dependencies: [5, 17, 6820, 5155, 5209, 1072, 2145, 3, 5150, 5131, 572, 1285, 6861, 2123, 2135, 38, 6862, 6066, 6808, 1496, 1380, 12981, 12920, 1113, 2]
 
-// Module 6756 (VoiceEngineStreamingManager)
+// Module 6819 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useWindowDimensions from "useWindowDimensions" /* 1493 */;
-import inject from "inject" /* 2132 */;
-import Constants2 from "Constants" /* 2142 */;
-import UserSettings from "UserSettings" /* 5068 */;
-import Timers from "Timers" /* 5087 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
-import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 6798 */;
-import StreamActionCreators from "StreamActionCreators" /* 6799 */;
-import PushNotificationDefault from "PushNotification" /* 12824 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
+import inject from "inject" /* 2135 */;
+import Constants2 from "Constants" /* 2145 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import Timers from "Timers" /* 5150 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
+import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 6861 */;
+import StreamActionCreators from "StreamActionCreators" /* 6862 */;
+import PushNotificationDefault from "PushNotification" /* 12920 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import Constants from "Constants" /* 1072 */;
-import LifecycleManager from "LifecycleManager" /* 2120 */;
+import LifecycleManager from "LifecycleManager" /* 2123 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ let c9;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const useScreenshareUtils = tmp2(12885);
+const useScreenshareUtils = tmp2(12981);
 function handleThumbnailUpload() {
   return obj(...arguments);
 }

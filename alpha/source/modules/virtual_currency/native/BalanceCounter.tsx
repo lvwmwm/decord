@@ -1,14 +1,14 @@
-// Module ID: 9985
-// Function ID: 9986
+// Module ID: 10052
+// Function ID: 10053
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 1652, 5257, 5876, 1705, 9986, 5866, 2]
+// Dependencies: [32, 19, 21, 1655, 5320, 5939, 1708, 10053, 5929, 2]
 
-// Module 9985 (BalanceCounter)
+// Module 10052 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import react2 from "react" /* 5257 */;
-import spring_spring from "spring/spring" /* 5876 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import react2 from "react" /* 5320 */;
+import spring_spring from "spring/spring" /* 5939 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5866);
+const Text_Text = tmp(5929);
 let react = react_mod;
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
 react = react_mod;
@@ -69,7 +69,7 @@ class BalanceCounter {
     dependencyMap = c6(null);
     const tmp2 = dependencyMap;
     let tmp = require;
-    let obj = _mod1652;
+    let obj = _mod1655;
     const sharedValue = obj.useSharedValue(0);
     const ref2 = c6(null);
     const enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
@@ -81,7 +81,7 @@ class BalanceCounter {
     const tmp9 = sharedValue(ref2(false), 2);
     let closure_7 = tmp9[1];
     const first = tmp9[0];
-    const tmp11 = closure_7((set, point2, duration) => {
+    const tmp11 = closure_7((set, channelDockHeight, duration) => {
       let tmp3;
       let tmp4;
       let tmp5;
@@ -92,7 +92,7 @@ class BalanceCounter {
       items[0] = closure_10;
       const withSpring = spring_spring.withSpring;
       spring_spring;
-      items[1] = _mod1705.scheduleOnRN;
+      items[1] = _mod1708.scheduleOnRN;
       items[2] = closure_7;
       let c0;
       let c1;
@@ -107,7 +107,7 @@ class BalanceCounter {
       BalanceCounterTsx1.__closure = items1;
       BalanceCounterTsx1.__workletHash = 2321092596604;
       BalanceCounterTsx1.__initData = tmp3;
-      const result = set(withSpring(point2, obj, "respect-motion-settings", BalanceCounterTsx1));
+      const result = set(withSpring(channelDockHeight, obj, "respect-motion-settings", BalanceCounterTsx1));
     }, []);
     react = tmp11;
     let items = [value, onValueChange, onValueReached, sharedValue, tmp11, enabled];
@@ -150,8 +150,8 @@ class BalanceCounter {
         ref.current = duration;
       }
     }, items);
-    _mod1652;
-    let items1 = [closure_11, first, sharedValue, _mod1705.scheduleOnRN, tmp5, tmp8];
+    _mod1655;
+    let items1 = [closure_11, first, sharedValue, _mod1708.scheduleOnRN, tmp5, tmp8];
     let c0;
     let c1;
     let c2;
@@ -181,7 +181,7 @@ class BalanceCounter {
       items3 = [tmp20, ];
       const obj4 = { minWidth: 7 * tmp7 };
       items3[1] = obj4;
-      const View = onValueChange(1652).View;
+      const View = onValueChange(1655).View;
       obj5 = { variant: str, color: textColor, style, maxFontSizeMultiplier: 2, children: obj2.toFixed(0) };
       Text = Text_Text.Text;
       tmp21 = clearAnimationTimeout(View, obj3);

@@ -1,12 +1,12 @@
-// Module ID: 7161
-// Function ID: 7162
+// Module ID: 7224
+// Function ID: 7225
 // Name: compareChannelsByScoreAndPosition
-// Dependencies: [5092, 1072, 2]
+// Dependencies: [5155, 1072, 2]
 // Exports: default
 
-// Module 7161 (compareChannelsByScoreAndPosition)
+// Module 7224 (compareChannelsByScoreAndPosition)
 import Constants from "Constants" /* 1072 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

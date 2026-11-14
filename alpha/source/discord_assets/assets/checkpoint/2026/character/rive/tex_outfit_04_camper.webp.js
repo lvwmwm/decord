@@ -1,8 +1,8 @@
-// Module ID: 14275
-// Function ID: 14276
+// Module ID: 14382
+// Function ID: 14383
 // Dependencies: [2]
 
-// Module 14275
+// Module 14382
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_04_camper.webp.js");

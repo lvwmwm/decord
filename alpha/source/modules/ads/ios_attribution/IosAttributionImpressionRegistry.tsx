@@ -1,21 +1,21 @@
-// Module ID: 15131
-// Function ID: 15132
+// Module ID: 15245
+// Function ID: 15246
 // Name: IosAttributionImpressionRegistry
-// Dependencies: [5, 15132, 3, 15129, 15133, 15134, 2]
+// Dependencies: [5, 15246, 3, 15243, 15247, 15248, 2]
 // Exports: endImpression, getStoreKitCredential, registerViewThroughImpression
 
-// Module 15131 (IosAttributionImpressionRegistry)
+// Module 15245 (IosAttributionImpressionRegistry)
 import LoggerDefault from "Logger" /* 3 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 15129 */;
-import IosAttributionFramework from "IosAttributionFramework" /* 15132 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 15133 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 15243 */;
+import IosAttributionFramework from "IosAttributionFramework" /* 15246 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 15247 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let impressionToken;
 
 let obj3;
-const f110075 = () => {
+const f111352 = () => {
 
 };
 function isCurrentImpression(arg0, arg1) {
@@ -31,7 +31,7 @@ function endImpressionToken(arg0) {
   if (null != arg0) {
     obj = IosAttributionNativeModule;
     const endImpressionResult = obj.endImpression(arg0);
-    endImpressionResult.catch(f110075);
+    endImpressionResult.catch(f111352);
   }
 }
 let obj = function _startNativeImpression() {
@@ -94,7 +94,7 @@ let obj = function _startNativeImpression() {
               token = undefined;
               signAbort = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === signAbort) {
             if (arg0 === 1) {
@@ -315,7 +315,7 @@ obj = function _getStoreKitCredential() {
               impressionToken = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -413,7 +413,7 @@ export function endImpression(arg0) {
     if (null != token) {
       const obj2 = IosAttributionNativeModule;
       const endImpressionResult = obj2.endImpression(token);
-      endImpressionResult.catch(f110075);
+      endImpressionResult.catch(f111352);
     }
   }
 }

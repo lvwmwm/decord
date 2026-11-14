@@ -1,9 +1,9 @@
-// Module ID: 10130
-// Function ID: 10131
+// Module ID: 10199
+// Function ID: 10200
 // Name: PortalViewNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 10130 (PortalViewNativeComponent)
+// Module 10199 (PortalViewNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

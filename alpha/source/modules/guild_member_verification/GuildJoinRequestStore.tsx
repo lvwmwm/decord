@@ -1,18 +1,18 @@
-// Module ID: 6870
-// Function ID: 6871
+// Module ID: 6933
+// Function ID: 6934
 // Name: GuildJoinRequestStore
-// Dependencies: [1385, 5287, 2166, 5289, 5170, 5288, 1089, 504, 572, 2]
+// Dependencies: [1388, 5350, 2169, 5352, 5233, 5351, 1089, 504, 572, 2]
 
-// Module 6870 (GuildJoinRequestStore)
+// Module 6933 (GuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 5170 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5287 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5288 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5289 */;
-import UserStore from "UserStore" /* 1385 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 5233 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5350 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5351 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatus) {
@@ -21,12 +21,12 @@ function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatu
       const tmp12 = require;
       if (DELETED === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED) {
         closure_6[guildId] = closure_6[guildId] + 1;
-        const result = map.set(guildId, _modDef2166());
+        const result = map.set(guildId, _modDef2169());
       }
-      if (applicationStatus === tmp12(5289).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (applicationStatus === tmp12(5352).GuildJoinRequestApplicationStatuses.SUBMITTED) {
         const _Math = Math;
         closure_6[guildId] = Math.max(0, closure_6[guildId] - 1);
-        const result1 = map.set(guildId, _modDef2166());
+        const result1 = map.set(guildId, _modDef2169());
       }
     }
   }
@@ -82,7 +82,7 @@ function handleGuildJoinRequestCreateOrUpdate(guildId) {
         secondaryIndexMap2.delete(tmp.joinRequestId);
         const result1 = secondaryIndexMap1.set(tmp.joinRequestId, tmp);
       }
-      const tmp8Result = tmp8(5288);
+      const tmp8Result = tmp8(5351);
       if (tmp8Result.isActionedApplicationStatus(tmp.applicationStatus)) {
         secondaryIndexMap1.delete(tmp.joinRequestId);
         const result2 = secondaryIndexMap2.set(tmp.joinRequestId, tmp);
@@ -129,7 +129,7 @@ class GuildJoinRequestStoreV2 extends Store {
       if (obj.isActionedApplicationStatus(applicationStatus)) {
         values = secondaryIndexMap2.values(combined);
       } else {
-        const tmp5Result = tmp5(5288);
+        const tmp5Result = tmp5(5351);
         if (tmp5Result.isSubmittedApplicationStatus(applicationStatus)) {
           values = secondaryIndexMap1.values(combined);
         } else {
@@ -153,7 +153,7 @@ class GuildJoinRequestStoreV2 extends Store {
       const value = obj.get(arg0);
       let tmp3 = null != value;
       if (tmp3) {
-        const obj2 = _modDef2166();
+        const obj2 = _modDef2169();
         tmp3 = obj2.diff(value, "seconds") < closure_20;
       }
       return tmp3;
@@ -231,7 +231,7 @@ let obj = {
       let tmp2 = closure_6;
       closure_6[guildId] = total;
       let tmp3 = map;
-      let result = map.set(guildId, _modDef2166());
+      let result = map.set(guildId, _modDef2169());
     }
     const item = requests.forEach((joinRequestId) => {
       closure_1_19[joinRequestId.joinRequestId] = joinRequestId;
@@ -291,7 +291,7 @@ let obj = {
       if (obj.isActionedApplicationStatus(applicationStatus)) {
         secondaryIndexMap2.clear();
       }
-      const tmpResult = tmp(5288);
+      const tmpResult = tmp(5351);
       if (tmpResult.isSubmittedApplicationStatus(applicationStatus)) {
         secondaryIndexMap1.clear();
       }

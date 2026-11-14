@@ -1,27 +1,27 @@
-// Module ID: 19036
-// Function ID: 19037
+// Module ID: 19172
+// Function ID: 19173
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 16069, 17583, 1072, 21, 5243, 575, 1113, 5839, 19037, 19039, 5866, 671, 1652, 7467, 5830, 504, 1252, 17582, 5876, 1705, 16070, 2]
+// Dependencies: [32, 19, 17, 16190, 17701, 1072, 21, 5306, 575, 1113, 5902, 19173, 19175, 5929, 671, 1655, 7533, 5893, 504, 1256, 17700, 5939, 1708, 16191, 2]
 // Exports: default
 
-// Module 19036 (ConnectionBanner)
+// Module 19172 (ConnectionBanner)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import useToken from "useToken" /* 5839 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import _modDef7467 from "module_7467" /* 7467 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 16069 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import useToken from "useToken" /* 5902 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import _modDef7533 from "module_7533" /* 7533 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 16190 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import YouBarConstants from "YouBarConstants" /* 17583 */;
+import YouBarConstants from "YouBarConstants" /* 17701 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp2;
-const _mod1705 = tmp2(1705);
+const _mod1708 = tmp2(1708);
 function ConnectionBannerIcon(state) {
   let ConnectionFineIcon;
   let ConnectionUnknownIcon;
@@ -53,12 +53,12 @@ function ConnectionBannerIcon(state) {
   } else if (constants.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: authStore2(ConnectionUnknownIcon, obj5) };
     obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    ConnectionUnknownIcon = tmp2(19037).ConnectionUnknownIcon;
+    ConnectionUnknownIcon = tmp2(19173).ConnectionUnknownIcon;
     return authStore2(metroRequire, obj4);
   } else if (constants.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: authStore2(ConnectionFineIcon, obj6) };
     obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    ConnectionFineIcon = tmp2(19039).ConnectionFineIcon;
+    ConnectionFineIcon = tmp2(19175).ConnectionFineIcon;
     return authStore2(metroRequire, obj);
   }
 }
@@ -99,7 +99,7 @@ function BackOnlineGlow(progress) {
   let token;
   progress = progress.progress;
   const tmp = closure_21();
-  let obj = token(5839);
+  let obj = token(5902);
   token = obj.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
   const memo = react.useMemo(() => {
@@ -117,11 +117,11 @@ function BackOnlineGlow(progress) {
   }, items);
   const obj2 = { style: items1, pointerEvents: "none", children: closure_12(tmp4, obj3) };
   items1 = [tmp.glow, { opacity: progress }];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   obj3 = { style: tmp.glow, maskElement: closure_12(LinearGradientDefault, obj4), children: closure_12(LinearGradientDefault, obj5) };
   obj4 = { style: tmp.glowMaskGradient, colors, locations, start, end };
   obj5 = { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 };
-  tmp4 = _modDef7467;
+  tmp4 = _modDef7533;
   return closure_12(View, obj2);
 }
 function ConnectionBannerInner() {
@@ -179,7 +179,7 @@ function ConnectionBannerInner() {
     if (closure_0) {
       num = 1;
     }
-    const items = [closure_25, tmp5, _mod1705.scheduleOnRN, _slicedToArray];
+    const items = [closure_25, tmp5, _mod1708.scheduleOnRN, _slicedToArray];
     let c0;
     let c1;
     let c2;
@@ -236,7 +236,7 @@ function ConnectionBannerInner() {
   const obj3 = { pointerEvents: "none", style: items5, children: items6 };
   items5 = [tmp.container, { height: youBarBottomMargin + CONNECTION_BANNER_HEIGHT }, animatedStyle];
   let tmp25 = null;
-  const View = require("module_1652").View;
+  const View = require("module_1655").View;
   const tmp24 = closure_13;
   if (tmp12 === tmp6.BACK_ONLINE) {
     const obj5 = { progress: sharedValue };
@@ -278,7 +278,7 @@ export default function ConnectionBanner() {
   let ref;
   let state;
   let stateFromStores;
-  let obj = stateFromStores(16070);
+  let obj = stateFromStores(16191);
   const config = obj.useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   const timeoutMs = config.timeoutMs;

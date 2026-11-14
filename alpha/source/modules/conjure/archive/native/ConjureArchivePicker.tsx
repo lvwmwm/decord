@@ -1,16 +1,16 @@
-// Module ID: 13203
-// Function ID: 13204
+// Module ID: 13311
+// Function ID: 13312
 // Name: ConjureArchivePicker
-// Dependencies: [5, 7301, 11045, 13086, 1113, 4079, 13122, 2]
+// Dependencies: [5, 7365, 11112, 13185, 1113, 4131, 13228, 2]
 // Exports: describeConjureArchiveRejection, pickConjureArchive, sendConjureArchiveImport
 
-// Module 13203 (ConjureArchivePicker)
-import _modDef4079 from "module_4079" /* 4079 */;
-import FilePickerUtils from "FilePickerUtils" /* 11045 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 13086 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 13122 */;
+// Module 13311 (ConjureArchivePicker)
+import _modDef4131 from "module_4131" /* 4131 */;
+import FilePickerUtils from "FilePickerUtils" /* 11112 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 13185 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 13228 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7301 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, c6;
@@ -208,7 +208,7 @@ export function describeConjureArchiveRejection(bytes) {
     const intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { size: formatConjureAttachmentLimit(tmpResult2.conjureAttachmentLimit(bytes.contentType)) };
-    const ThxcOX = _modDef4079.ThxcOX;
+    const ThxcOX = _modDef4131.ThxcOX;
     formatConjureAttachmentLimit = ConjureAttachmentTypes.formatConjureAttachmentLimit;
     ConjureAttachmentTypes;
     tmpResult2 = ConjureAttachmentTypes;

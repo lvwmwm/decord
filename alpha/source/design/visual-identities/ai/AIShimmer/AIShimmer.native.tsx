@@ -1,24 +1,24 @@
-// Module ID: 13661
-// Function ID: 13662
+// Module ID: 13765
+// Function ID: 13766
 // Name: AIShimmer
-// Dependencies: [32, 19, 17, 21, 5243, 13662, 5314, 5866, 13663, 1652, 13664, 13665, 1705, 13246, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 13766, 5377, 5929, 13767, 1655, 13768, 13769, 1708, 13351, 2]
 
-// Module 13661 (AIShimmer)
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import AIGlyphText from "AIGlyphText" /* 13246 */;
-import AIShimmerTypes from "AIShimmerTypes" /* 13662 */;
-import waveTransition2 from "waveTransition" /* 13663 */;
-import createWaveTransition2 from "createWaveTransition" /* 13665 */;
+// Module 13765 (AIShimmer)
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import AIGlyphText from "AIGlyphText" /* 13351 */;
+import AIShimmerTypes from "AIShimmerTypes" /* 13766 */;
+import waveTransition2 from "waveTransition" /* 13767 */;
+import createWaveTransition2 from "createWaveTransition" /* 13769 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 let bandStart, fontScale, incomingTextEnd, obj1, outgoingTextStart, rounded;
 
 let c9;
@@ -220,13 +220,13 @@ function ShimmerLayers(pass) {
   const clippingWindowWidth2 = obj4.clippingWindowWidth;
   ({ animationProgress: animationProgress2, crossFadeOpacity: crossFadeOpacity2, animationWidth: animationWidth2, overshoot: overshoot2 } = obj4);
   let items = [closure_24, animationProgress2, , , , , ];
-  const useDerivedValue = pass(1652).useDerivedValue;
-  pass(1652);
-  items[2] = pass(13663).bandEdgesAt;
+  const useDerivedValue = pass(1655).useDerivedValue;
+  pass(1655);
+  items[2] = pass(13767).bandEdgesAt;
   items[3] = animationWidth2;
   items[4] = overshoot2;
-  items[5] = pass(13663).glyphLayerOpacityAt;
-  items[6] = pass(13663).easeTail;
+  items[5] = pass(13767).glyphLayerOpacityAt;
+  items[6] = pass(13767).easeTail;
   let c0;
   let c1;
   let c2;
@@ -251,7 +251,7 @@ function ShimmerLayers(pass) {
   const items2 = [closure_25, crossFadeOpacity2];
   c0 = undefined;
   [tmp17, tmp18] = items2;
-  const tmp6Result = pass(1652);
+  const tmp6Result = pass(1655);
   class AIShimmerNativeTsx10 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -266,7 +266,7 @@ function ShimmerLayers(pass) {
   const items4 = [closure_26, derivedValue];
   c0 = undefined;
   [tmp20, tmp21] = items4;
-  const tmp6Result4 = pass(1652);
+  const tmp6Result4 = pass(1655);
   class AIShimmerNativeTsx11 {
     constructor() {
       let items;
@@ -287,7 +287,7 @@ function ShimmerLayers(pass) {
   c0 = undefined;
   c1 = undefined;
   [tmp23, tmp24, tmp25] = items6;
-  const tmp6Result5 = pass(1652);
+  const tmp6Result5 = pass(1655);
   class AIShimmerNativeTsx12 {
     constructor() {
       let items;
@@ -308,7 +308,7 @@ function ShimmerLayers(pass) {
   c0 = undefined;
   c1 = undefined;
   [tmp27, tmp28, tmp29] = items8;
-  const tmp6Result6 = pass(1652);
+  const tmp6Result6 = pass(1655);
   class AIShimmerNativeTsx13 {
     constructor() {
       let items;
@@ -336,20 +336,20 @@ function ShimmerLayers(pass) {
   const obj5 = { style: items12, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items13 };
   items12 = [styles.layer, { width: animationWidth }, animatedStyle];
   const obj6 = { text: pass.slotA, shiftedText: memo, variant, color, animationWidth, clippingWindowWidth, animatedStyles: tmp2, styles };
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   items13 = [closure_7(ShimmerTextSlot, obj6), , ];
   const obj7 = { text: pass.slotB, shiftedText: memo1, variant, color, animationWidth, clippingWindowWidth, animatedStyles: tmp4, styles };
   items13[1] = closure_7(ShimmerTextSlot, obj7);
   const obj8 = { style: items14, children: closure_7(View3, obj9) };
   items14 = [styles.window, { width: clippingWindowWidth }, animatedStyle1];
-  const View2 = _modDef1652.View;
+  const View2 = _modDef1655.View;
   obj9 = { style: items15, children: closure_7(View4, obj10) };
   items15 = [styles.window, { width: clippingWindowWidth }, animatedStyle2];
-  View3 = _modDef1652.View;
+  View3 = _modDef1655.View;
   obj10 = { style: items16, children: closure_7(closure_16, obj11) };
   items16 = [styles.layer, { width: glyphCount * glyphFontSize }, animatedStyle3];
   obj11 = { animationProgress, slotCount: glyphCount, overshootInSlots: overshoot / glyphFontSize, glyphChoices: pass.band, fontSize: glyphFontSize, color: glyphColor, style: styles.glyphLayer };
-  View4 = _modDef1652.View;
+  View4 = _modDef1655.View;
   items13[2] = closure_7(View2, obj8);
   return closure_8(View, obj5);
 }
@@ -379,20 +379,20 @@ function ShimmerTextSlot(arg0) {
   ({ text, shiftedText } = arg0);
   const obj2 = { style: items, children: metroImportDefault(View2, obj3) };
   items = [styles.window, { width: clippingWindowWidth }, animatedStyles.plainWindow];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   obj3 = { style: items1, children: metroImportDefault(Text_Text.Text, { variant, color, lineClamp: 1, ellipsizeMode: "clip", children: text }) };
   items1 = [styles.layer, { width: animationWidth }, animatedStyles.plainText];
-  View2 = _modDef1652.View;
+  View2 = _modDef1655.View;
   items2 = [metroImportDefault(View, obj2), ];
   const obj4 = { style: items3, children: metroImportDefault(View4, obj5) };
   items3 = [styles.window, { width: clippingWindowWidth }, animatedStyles.shiftedOuterWindow];
-  const View3 = _modDef1652.View;
+  const View3 = _modDef1655.View;
   obj5 = { style: items4, children: metroImportDefault(View5, obj6) };
   items4 = [styles.window, { width: clippingWindowWidth }, animatedStyles.shiftedInnerWindow];
-  View4 = _modDef1652.View;
+  View4 = _modDef1655.View;
   obj6 = { style: items5, children: metroImportDefault(Text_Text.Text, { variant, color, lineClamp: 1, ellipsizeMode: "clip", children: shiftedText }) };
   items5 = [styles.layer, { width: animationWidth }, animatedStyles.shiftedText];
-  View5 = _modDef1652.View;
+  View5 = _modDef1655.View;
   items2[1] = metroImportDefault(View3, obj4);
   return metroImportAll(React4, obj);
 }
@@ -426,7 +426,7 @@ function useAnimatedSlotStyles(clippingWindowWidth) {
   clippingWindowWidth = clippingWindowWidth.clippingWindowWidth;
   let tmp2 = dependencyMap;
   ({ animationProgress, slot, animationWidth, overshoot } = clippingWindowWidth);
-  const tmp3 = _mod1652;
+  const tmp3 = _mod1655;
   let items = [closure_17, animationProgress, , , , , ];
   const useDerivedValue = tmp3.useDerivedValue;
   items[2] = waveTransition2.bandEdgesAt;
@@ -460,7 +460,7 @@ function useAnimatedSlotStyles(clippingWindowWidth) {
   c0 = undefined;
   c1 = undefined;
   [tmp12, tmp13, tmp14] = items2;
-  const tmpResult = _mod1652;
+  const tmpResult = _mod1655;
   class AIShimmerNativeTsx4 {
     constructor() {
       value = closure_0.get();
@@ -485,7 +485,7 @@ function useAnimatedSlotStyles(clippingWindowWidth) {
   c0 = undefined;
   c1 = undefined;
   [tmp16, tmp17, tmp18] = items4;
-  const tmpResult5 = _mod1652;
+  const tmpResult5 = _mod1655;
   class AIShimmerNativeTsx5 {
     constructor() {
       value = closure_0.get();
@@ -508,8 +508,8 @@ function useAnimatedSlotStyles(clippingWindowWidth) {
   AIShimmerNativeTsx5.__initData = tmp16;
   const animatedStyle1 = tmpResult5.useAnimatedStyle(AIShimmerNativeTsx5);
   const items6 = [closure_20, derivedValue, ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items6[2] = waveTransition2.SHIFTED_OPACITY;
   c0 = undefined;
   c1 = undefined;
@@ -537,7 +537,7 @@ function useAnimatedSlotStyles(clippingWindowWidth) {
   c0 = undefined;
   c1 = undefined;
   [tmp25, tmp26, tmp27] = items8;
-  const tmpResult7 = _mod1652;
+  const tmpResult7 = _mod1655;
   class AIShimmerNativeTsx7 {
     constructor() {
       value = closure_0.get();
@@ -558,7 +558,7 @@ function useAnimatedSlotStyles(clippingWindowWidth) {
   c0 = undefined;
   c1 = undefined;
   [tmp29, tmp30, tmp31] = items10;
-  const tmpResult8 = _mod1652;
+  const tmpResult8 = _mod1655;
   class AIShimmerNativeTsx8 {
     constructor() {
       value = closure_0.get();
@@ -639,8 +639,8 @@ let closure_16 = react.memo(function GlyphBand(glyphChoices) {
   [tmp2, tmp3] = _slicedToArray(react.useState(glyphChoices), 2);
   const items = [closure_14, animationProgress, 30, , , , ];
   const tmp = _slicedToArray(react.useState(glyphChoices), 2);
-  const useAnimatedReaction = _mod1652.useAnimatedReaction;
-  _mod1652;
+  const useAnimatedReaction = _mod1655.useAnimatedReaction;
+  _mod1655;
   items[3] = waveTransition2.bandGlyphsAt;
   items[4] = slotCount;
   items[5] = glyphChoices;
@@ -662,7 +662,7 @@ let closure_16 = react.memo(function GlyphBand(glyphChoices) {
   AIShimmerNativeTsx1.__closure = items1;
   AIShimmerNativeTsx1.__workletHash = 11538958195002;
   AIShimmerNativeTsx1.__initData = tmp7;
-  const items2 = [closure_15, _mod1705.scheduleOnRN, tmp3];
+  const items2 = [closure_15, _mod1708.scheduleOnRN, tmp3];
   c0 = undefined;
   c1 = undefined;
   [tmp14, tmp15, tmp16] = items2;

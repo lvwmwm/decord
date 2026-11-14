@@ -1,18 +1,18 @@
-// Module ID: 19166
-// Function ID: 19167
+// Module ID: 19358
+// Function ID: 19359
 // Name: MainTabsContentScrim
-// Dependencies: [17, 21, 5243, 575, 1652, 2]
+// Dependencies: [17, 21, 5306, 575, 1655, 2]
 // Exports: MainTabsContentScrim
 
-// Module 19166 (MainTabsContentScrim)
+// Module 19358 (MainTabsContentScrim)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 
 let obj2;
 const StyleSheet = react_native.StyleSheet;
@@ -37,12 +37,12 @@ export function MainTabsContentScrim(arg0) {
   ({ translateX, maxWidth } = arg0);
   let items = [closure_5, , , , ];
   const tmp = closure_4();
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
-  items[1] = _mod1652.interpolate;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
+  items[1] = _mod1655.interpolate;
   items[2] = translateX;
   items[3] = maxWidth;
-  items[4] = _mod1652.Extrapolation;
+  items[4] = _mod1655.Extrapolation;
   let c0;
   let c1;
   let c2;
@@ -64,5 +64,5 @@ export function MainTabsContentScrim(arg0) {
   MainTabsContentScrimTsx1.__initData = tmp4;
   const animatedStyle = useAnimatedStyle(MainTabsContentScrimTsx1);
   const items2 = [tmp.scrim, animatedStyle];
-  return jsx(_modDef1652.View, { style: items2, pointerEvents: "none" });
+  return jsx(_modDef1655.View, { style: items2, pointerEvents: "none" });
 }

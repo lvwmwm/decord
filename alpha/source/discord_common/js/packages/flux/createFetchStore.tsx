@@ -72,7 +72,7 @@ export function createFetchStore(ApplicationStore, arg1) {
   let closure_5;
   let getUseStoreState;
   let retryConfig;
-  const f123620 = () => {
+  const f125022 = () => {
     obj = { isLoading: false, error: null, backoff: closure_1_7(), lastSuccessAt: null, failureLockedUntil: null };
     return obj;
   };
@@ -101,7 +101,7 @@ export function createFetchStore(ApplicationStore, arg1) {
       obj = map;
       if (null == value) {
         const obj2 = module_560;
-        const obj3 = obj2.create(f123620);
+        const obj3 = obj2.create(f125022);
         const result = obj.set(arg0, obj3);
         value = obj3;
       }
@@ -337,7 +337,7 @@ export function createFetchStore(ApplicationStore, arg1) {
           refetch = false;
         }
         useStoreState = tmp99.useStoreState ?? getUseStoreState(queryId);
-        return "flexDirection";
+        return "Path";
       })();
       iter.next();
       return iter;
@@ -377,7 +377,7 @@ export function createFetchStore(ApplicationStore, arg1) {
       const obj2 = map;
       if (null == value) {
         const obj3 = ApplicationStore(dependencyMap[5]);
-        const obj7 = obj3.create(f123620);
+        const obj7 = obj3.create(f125022);
         const result1 = obj2.set(tmp10, obj7);
         value = obj7;
       }
@@ -460,7 +460,7 @@ export function createFetchStore(ApplicationStore, arg1) {
       await "HermesInternal";
       useStoreState = tmp5;
       queryId = tmp;
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -483,7 +483,7 @@ export function createFetchStore(ApplicationStore, arg1) {
           const obj2 = closure_1_11;
           if (null == value) {
             const obj3 = closure_0(c2[5]);
-            const obj4 = obj3.create(f123620);
+            const obj4 = obj3.create(f125022);
             const result = obj2.set(tmp, obj4);
             value = obj4;
           }
@@ -491,7 +491,7 @@ export function createFetchStore(ApplicationStore, arg1) {
         return tmp2(obj);
       }));
       await "HermesInternal";
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -512,7 +512,7 @@ export function createFetchStore(ApplicationStore, arg1) {
           value = closure_1_11.get(tmp);
           if (null == value) {
             const obj3 = closure_0(c2[5]);
-            const obj2 = obj3.create(f123620);
+            const obj2 = obj3.create(f125022);
             const result = obj.set(tmp, obj2);
             value = obj2;
           }
@@ -524,7 +524,7 @@ export function createFetchStore(ApplicationStore, arg1) {
         return closure_1_13(obj4);
       }));
       await "HermesInternal";
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

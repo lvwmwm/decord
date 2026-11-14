@@ -1,0 +1,10 @@
+// Module ID: 8949
+// Function ID: 8950
+// Dependencies: []
+// Exports: get64BitValue
+
+// Module 8949
+
+export function get64BitValue(getUint32, sum4) {
+  return getUint32.getUint32(sum4 + 4);
+}

@@ -1,9 +1,9 @@
-// Module ID: 2170
-// Function ID: 2171
+// Module ID: 2173
+// Function ID: 2174
 // Name: EntitlementTypes
 // Dependencies: [2]
 
-// Module 2170 (EntitlementTypes)
+// Module 2173 (EntitlementTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { GIFTS: new Set([3, 6]), PREMIUM_APPS: new Set([1, 3, 4, 5, 6, 8]) };

@@ -1,11 +1,11 @@
-// Module ID: 14812
-// Function ID: 14813
+// Module ID: 14926
+// Function ID: 14927
 // Name: openConjureProjectInBuilder
-// Dependencies: [10467, 2]
+// Dependencies: [10536, 2]
 // Exports: default
 
-// Module 14812 (openConjureProjectInBuilder)
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 10467 */;
+// Module 14926 (openConjureProjectInBuilder)
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 10536 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/projects/openConjureProjectInBuilder.native.tsx");

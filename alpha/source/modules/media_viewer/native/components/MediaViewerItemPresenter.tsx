@@ -1,23 +1,23 @@
-// Module ID: 15120
-// Function ID: 15121
+// Module ID: 15234
+// Function ID: 15235
 // Name: MediaViewerItemPresenter
-// Dependencies: [19, 17, 21, 1377, 5200, 15119, 8565, 15118, 1652, 15099, 15121, 2]
+// Dependencies: [19, 17, 21, 1380, 5263, 15233, 8632, 15232, 1655, 15213, 15235, 2]
 // Exports: default
 
-// Module 15120 (MediaViewerItemPresenter)
+// Module 15234 (MediaViewerItemPresenter)
 import Fragment from "Fragment" /* 21 */;
-import DeviceUtils from "DeviceUtils" /* 5200 */;
-import MediaViewerEntranceJankExperiment from "MediaViewerEntranceJankExperiment" /* 15099 */;
-import MediaViewerItemTransformPresenterDefault from "MediaViewerItemTransformPresenter" /* 15121 */;
+import DeviceUtils from "DeviceUtils" /* 5263 */;
+import MediaViewerEntranceJankExperiment from "MediaViewerEntranceJankExperiment" /* 15213 */;
+import MediaViewerItemTransformPresenterDefault from "MediaViewerItemTransformPresenter" /* 15235 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
 let closure_4;
 let tmp;
-const MediaViewerItemTransformPresenter = tmp(15121);
+const MediaViewerItemTransformPresenter = tmp(15235);
 function MediaViewerItemPresenter(windowHeight) {
   let diff;
   let diff1;

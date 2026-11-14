@@ -1,15 +1,15 @@
-// Module ID: 15743
-// Function ID: 15744
+// Module ID: 15863
+// Function ID: 15864
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [32, 19, 7288, 5089, 1089, 504, 9493, 5076, 2]
+// Dependencies: [32, 19, 7352, 5152, 1089, 504, 9560, 5139, 2]
 // Exports: default
 
-// Module 15743 (useWishlistSuggestionsDismissibleContent)
+// Module 15863 (useWishlistSuggestionsDismissibleContent)
 import DurationsDefault from "Durations" /* 1089 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7288 */;
+import UserProfileStore from "UserProfileStore" /* 7352 */;
 import size from "module_2" /* 2 */;
 
 let _slicedToArray = _slicedToArray_mod;

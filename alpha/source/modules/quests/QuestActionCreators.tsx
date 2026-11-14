@@ -1,36 +1,36 @@
-// Module ID: 10065
-// Function ID: 10066
+// Module ID: 10133
+// Function ID: 10134
 // Name: QuestActionCreators
-// Dependencies: [5, 8738, 10066, 6856, 6147, 6893, 8741, 8743, 5275, 1072, 5278, 1282, 572, 6695, 1113, 8750, 1242, 6788, 1260, 10067, 10070, 5282, 10071, 8737, 6826, 6833, 10072, 8598, 8761, 5304, 10073, 10074, 10075, 10091, 8739, 10092, 1252, 8714, 10093, 10077, 1089, 10094, 2]
-// Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
+// Dependencies: [5, 8805, 10134, 6919, 6210, 6956, 8808, 8810, 5338, 1072, 5341, 1285, 572, 6758, 1113, 8817, 1242, 6851, 1264, 10135, 10138, 5345, 10139, 8804, 6889, 6896, 10140, 8665, 8828, 5367, 10141, 10142, 10143, 8806, 10161, 1256, 8781, 10162, 10146, 1089, 10163, 2]
+// Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockExpandedOnScreen, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 10065 (QuestActionCreators)
+// Module 10133 (QuestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import QuestConstants from "QuestConstants" /* 5275 */;
-import QuestTypes from "QuestTypes" /* 5278 */;
-import AdCreativeType from "AdCreativeType" /* 5282 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6788 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8598 */;
-import QuestDataUtils from "QuestDataUtils" /* 8737 */;
-import VideoQuestUIStore2 from "VideoQuestUIStore" /* 8743 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 10066 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 10067 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10070 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 10071 */;
-import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 10093 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestTypes from "QuestTypes" /* 5341 */;
+import AdCreativeType from "AdCreativeType" /* 5345 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6851 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8665 */;
+import QuestDataUtils from "QuestDataUtils" /* 8804 */;
+import VideoQuestUIStore2 from "VideoQuestUIStore" /* 8810 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 10134 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 10135 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10138 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 10139 */;
+import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 10162 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8738 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6856 */;
-import NetworkStore from "NetworkStore" /* 6147 */;
-import SortedGuildStore from "SortedGuildStore" /* 6893 */;
-import QuestStore from "QuestStore" /* 8741 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8805 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6919 */;
+import NetworkStore from "NetworkStore" /* 6210 */;
+import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import QuestStore from "QuestStore" /* 8808 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let _null, ad_content_id, bounty, closure_5, content, noFillAdContentId, playable, quest, stack_trace, text;
+let _null, ad_content_id, closure_5, content, noFillAdContentId, quest, stack_trace, text;
 
 let closure_14;
 let map1;
@@ -83,7 +83,7 @@ let obj = function _manuallyStartConsoleQuest() {
             message = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -505,7 +505,7 @@ obj = function _sendHeartbeat() {
       terminal = false;
     }
     ({ executablePath: c4, executableFingerprint: c5 } = tmp59);
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };
@@ -1069,7 +1069,7 @@ obj = function _completeQuestPreview() {
       if (closure_1 === undefined) {
         num7 = 1;
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -1352,13 +1352,13 @@ obj = function _fetchQuestToDeliver() {
       let creative_type2;
       let creative_type3;
       let folderExpanded;
-      let obj21;
-      let obj25;
-      let obj31;
-      let obj36;
-      let obj42;
-      let tmp165;
-      let tmp242;
+      let obj20;
+      let obj22;
+      let obj28;
+      let obj33;
+      let obj39;
+      let tmp154;
+      let tmp231;
       if (c10 === 2) {
         c10 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -1371,7 +1371,7 @@ obj = function _fetchQuestToDeliver() {
           return { value: "HermesInternal", done: null };
         }
       } else {
-        let tmp246;
+        let tmp235;
         try {
           let flag;
           let closure_4;
@@ -1382,7 +1382,7 @@ obj = function _fetchQuestToDeliver() {
           let body;
           let result1;
           let creative1;
-          let obj32;
+          let obj29;
           let creative_content;
           let id;
           let user_status;
@@ -1405,7 +1405,7 @@ obj = function _fetchQuestToDeliver() {
               closure_4 = undefined;
               closure_5 = undefined;
               tmp = undefined;
-              tmp246 = undefined;
+              tmp235 = undefined;
               items = undefined;
               let node;
               closure_10 = undefined;
@@ -1414,19 +1414,17 @@ obj = function _fetchQuestToDeliver() {
               let enabled;
               result1 = undefined;
               creative1 = undefined;
-              obj32 = undefined;
+              obj29 = undefined;
               noFillAdContentId = undefined;
               creative_content = undefined;
               id = undefined;
               user_status = undefined;
               closure_22 = undefined;
-              bounty = undefined;
-              playable = undefined;
               quest = undefined;
               ad_content_id = undefined;
               c9 = 1;
               c10 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c9) {
             if (arg0 === 1) {
@@ -1438,29 +1436,29 @@ obj = function _fetchQuestToDeliver() {
             } else {
               const _Date = Date;
               _null = Date.now();
-              const obj39 = closure_134_1(closure_134_2[26]);
-              closure_4 = obj39.recordQuestRequestAttempt("/quests/decision", caller_source, placement);
-              const obj7 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN", placement };
-              const obj40 = closure_134_1(closure_134_2[12]);
-              obj40.dispatch(obj7);
+              const obj36 = closure_134_1(closure_134_2[26]);
+              closure_4 = obj36.recordQuestRequestAttempt("/quests/decision", caller_source, placement);
+              const obj8 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN", placement };
+              const obj37 = closure_134_1(closure_134_2[12]);
+              obj37.dispatch(obj8);
               c8 = 1;
               c9 = 3;
               c10 = 1;
-              const obj9 = { value: obj42.getSession(), done: false };
-              obj42 = closure_134_0(closure_134_2[27]);
+              const obj9 = { value: obj39.getSession(), done: false };
+              obj39 = closure_134_0(closure_134_2[27]);
               return obj9;
             }
           } else {
             if (2 === c9) {
               c8 = 0;
-              const obj11 = { wasSuccessful: false, currentFetchedAt: _null };
-              const obj28 = closure_134_1(closure_134_2[26]);
-              const result = obj28.recordQuestRequestApiResponse(closure_4, obj11);
-              const obj12 = { reason: _null, api_error: obj31.getAnyErrorMessage(), caller_source };
-              const track2 = closure_134_1(closure_134_2[36]).track;
+              const obj10 = { wasSuccessful: false, currentFetchedAt: _null };
+              const obj25 = closure_134_1(closure_134_2[26]);
+              const result = obj25.recordQuestRequestApiResponse(closure_4, obj10);
+              const obj11 = { reason: _null, api_error: obj28.getAnyErrorMessage(), caller_source };
+              const track2 = closure_134_1(closure_134_2[35]).track;
               const QUEST_DECISION_ROUNDTRIP_ERROR = closure_134_13.QUEST_DECISION_ROUNDTRIP_ERROR;
-              closure_134_1(closure_134_2[36]);
-              const merged = Object.assign(closure_134_1(closure_134_2[37])());
+              closure_134_1(closure_134_2[35]);
+              const merged = Object.assign(closure_134_1(closure_134_2[36])());
               message = undefined;
               if (message != null) {
                 message = message.message;
@@ -1471,15 +1469,15 @@ obj = function _fetchQuestToDeliver() {
               }
               const self3 = this;
               const self4 = this;
-              obj31 = new closure_134_1(closure_134_2[13])(message);
-              track2(QUEST_DECISION_ROUNDTRIP_ERROR, obj12);
-              const obj13 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", error: tmp242, placement };
+              obj28 = new closure_134_1(closure_134_2[13])(message);
+              track2(QUEST_DECISION_ROUNDTRIP_ERROR, obj11);
+              const obj14 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", error: tmp231, placement };
               const dispatch2 = closure_134_1(closure_134_2[12]).dispatch;
               const self5 = this;
               const self6 = this;
               closure_134_1(closure_134_2[12]);
-              tmp242 = new closure_134_1(closure_134_2[13])(message);
-              dispatch2(obj13);
+              tmp231 = new closure_134_1(closure_134_2[13])(message);
+              dispatch2(obj14);
             } else if (3 === c9) {
               if (arg0 === 1) {
                 c10 = 3;
@@ -1492,9 +1490,9 @@ obj = function _fetchQuestToDeliver() {
                 closure_5 = value;
                 c9 = 4;
                 c10 = 1;
-                const obj17 = { value: obj25.getOrRefreshAdSession(), done: false };
-                obj25 = closure_134_0(closure_134_2[28]);
-                return obj17;
+                const obj16 = { value: obj22.getOrRefreshAdSession(), done: false };
+                obj22 = closure_134_0(closure_134_2[28]);
+                return obj16;
               }
             } else if (4 === c9) {
               if (arg0 === 1) {
@@ -1506,9 +1504,9 @@ obj = function _fetchQuestToDeliver() {
                 return { value, done: true };
               } else {
                 tmp = value;
-                tmp246 = closure_134_5();
-                if (null != tmp246) {
-                  items = tmp246();
+                tmp235 = closure_134_5();
+                if (null != tmp235) {
+                  items = tmp235();
                 } else {
                   items = [];
                 }
@@ -1532,8 +1530,8 @@ obj = function _fetchQuestToDeliver() {
                 const _String3 = String;
                 const self = this;
                 const self2 = this;
-                const obj19 = { placement: String(placement) };
-                uRLSearchParams = new URLSearchParams(obj19);
+                const obj18 = { placement: String(placement) };
+                uRLSearchParams = new URLSearchParams(obj18);
                 let uuid;
                 if (closure_5 != null) {
                   uuid = closure_5.uuid;
@@ -1548,12 +1546,12 @@ obj = function _fetchQuestToDeliver() {
                 const HTTP = closure_134_0(closure_134_2[11]).HTTP;
                 const get = HTTP.get;
                 const _HermesInternal = HermesInternal;
-                const obj20 = { url: "" + closure_134_14.QUEST_FETCH_QUEST_TO_DELIVER + "?" + uRLSearchParams.toString(), rejectWithError: false, context: obj21 };
+                const obj19 = { url: "" + closure_134_14.QUEST_FETCH_QUEST_TO_DELIVER + "?" + uRLSearchParams.toString(), rejectWithError: false, context: obj20 };
                 c9 = 5;
                 c10 = 1;
-                obj21 = { connection_type: closure_134_7.getType() };
-                const obj22 = { value: get(obj20), done: false };
-                return obj22;
+                obj20 = { connection_type: closure_134_7.getType() };
+                const obj21 = { value: get(obj19), done: false };
+                return obj21;
               }
             } else {
               if (5 === c9) {
@@ -1584,7 +1582,7 @@ obj = function _fetchQuestToDeliver() {
                   } else {
                     creative1 = null;
                   }
-                  obj32 = null;
+                  obj29 = null;
                   noFillAdContentId = null;
                   if (null != creative1) {
                     const creative_type = creative1.creative_type;
@@ -1593,27 +1591,27 @@ obj = function _fetchQuestToDeliver() {
                       id = creative_content.id;
                       user_status = body.user_status;
                       closure_22 = null != user_status && user_status.quest_id !== id;
-                      const tmp61 = null != user_status && user_status.quest_id !== id;
-                      const tmp66 = flag;
-                      if (tmp66) {
+                      const tmp50 = null != user_status && user_status.quest_id !== id;
+                      const tmp55 = flag;
+                      if (tmp55) {
                         if (undefined !== user_status) {
                           let config;
-                          const tmp68 = closure_22;
-                          if (!tmp68) {
+                          const tmp57 = closure_22;
+                          if (!tmp57) {
                             const obj24 = { id, config: creative_content, user_status, targeted_content: [], preview: false, traffic_metadata_sealed: body.traffic_metadata_sealed };
-                            const obj8 = closure_134_0(closure_134_2[15]);
-                            result1 = obj8.questWithUserStatusFromServer(obj24);
+                            const obj5 = closure_134_0(closure_134_2[15]);
+                            result1 = obj5.questWithUserStatusFromServer(obj24);
                             config = result1.config;
                           }
                           quest = config;
-                          obj32 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.QUEST, questId: quest.id };
-                          let tmp86 = flag;
+                          obj29 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.QUEST, questId: quest.id };
+                          let tmp75 = flag;
                           const obj26 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.QUEST, questId: quest.id };
-                          if (tmp86) {
-                            tmp86 = undefined === user_status || closure_22;
-                            const tmp89 = undefined === user_status || closure_22;
+                          if (tmp75) {
+                            tmp75 = undefined === user_status || closure_22;
+                            const tmp78 = undefined === user_status || closure_22;
                           }
-                          if (tmp86) {
+                          if (tmp75) {
                             c9 = 6;
                             c10 = 1;
                             const obj27 = { value: closure_134_19(), done: false };
@@ -1621,42 +1619,40 @@ obj = function _fetchQuestToDeliver() {
                           }
                         }
                       }
-                      const obj10 = closure_134_0(closure_134_2[15]);
-                      config = obj10.questConfigFromServer(creative_content);
-                    } else if (closure_134_0(closure_134_2[21]).AdCreativeType.BOUNTY === creative_type) {
-                      const obj6 = closure_134_0(closure_134_2[32]);
-                      bounty = obj6.bountyFromServer(creative1.creative_content);
-                      obj32 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.BOUNTY, bounty };
-                      const obj29 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.BOUNTY, bounty };
-                    } else if (closure_134_0(closure_134_2[21]).AdCreativeType.PLAYABLE === creative_type) {
-                      const obj4 = closure_134_0(closure_134_2[33]);
-                      playable = obj4.playableFromServer(creative1.creative_content);
-                      obj32 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.PLAYABLE, playable };
-                      const obj30 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.PLAYABLE, playable };
-                    } else if (closure_134_0(closure_134_2[21]).AdCreativeType.NO_FILL === creative_type) {
-                      creative_content = creative1.creative_content;
-                      ad_content_id = undefined;
-                      if (creative_content != null) {
-                        ad_content_id = creative_content.ad_content_id;
+                      const obj7 = closure_134_0(closure_134_2[15]);
+                      config = obj7.questConfigFromServer(creative_content);
+                    } else {
+                      if (closure_134_0(closure_134_2[21]).AdCreativeType.BOUNTY !== creative_type) {
+                        if (closure_134_0(closure_134_2[21]).AdCreativeType.PLAYABLE !== creative_type) {
+                          if (closure_134_0(closure_134_2[21]).AdCreativeType.NO_FILL === creative_type) {
+                            creative_content = creative1.creative_content;
+                            ad_content_id = undefined;
+                            if (creative_content != null) {
+                              ad_content_id = creative_content.ad_content_id;
+                            }
+                            c4 = ad_content_id;
+                            if (ad_content_id == null) {
+                              c4 = null;
+                            }
+                            noFillAdContentId = c4;
+                          }
+                        }
                       }
-                      c4 = ad_content_id;
-                      if (ad_content_id == null) {
-                        c4 = null;
-                      }
-                      noFillAdContentId = c4;
+                      const obj4 = closure_134_0(closure_134_2[32]);
+                      obj29 = obj4.adCreativeFromServer(creative1);
                     }
                   } else {
                     quest = body.quest;
                     if (null != quest) {
-                      const obj37 = closure_134_0(closure_134_2[15]);
-                      quest = obj37.questConfigFromServer(quest);
-                      obj32 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.QUEST, questId: quest.id };
-                      const tmp274 = flag;
-                      if (tmp274) {
+                      const obj34 = closure_134_0(closure_134_2[15]);
+                      quest = obj34.questConfigFromServer(quest);
+                      obj29 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.QUEST, questId: quest.id };
+                      const tmp263 = flag;
+                      if (tmp263) {
                         c9 = 7;
                         c10 = 1;
-                        const obj33 = { value: closure_134_19(), done: false };
-                        return obj33;
+                        const obj30 = { value: closure_134_19(), done: false };
+                        return obj30;
                       }
                     }
                   }
@@ -1679,7 +1675,7 @@ obj = function _fetchQuestToDeliver() {
                 obj = { value, done: true };
                 return obj;
               }
-              const obj35 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS", questWithUserStatus: result1, quest, creative: obj32, isNoFill: creative_type2 === closure_134_0(closure_134_2[21]).AdCreativeType.NO_FILL, noFillAdContentId, adDecisionData: obj36, metadataSealed: body.metadata_sealed, trafficMetadataSealed: body.traffic_metadata_sealed, provenanceMetadataSealed: body.provenance_metadata_sealed, adContext: body.ad_context, responseTtlSeconds: body.response_ttl_seconds, placement, fetchedAt: _null };
+              const obj32 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS", questWithUserStatus: result1, quest, creative: obj29, isNoFill: creative_type2 === closure_134_0(closure_134_2[21]).AdCreativeType.NO_FILL, noFillAdContentId, adDecisionData: obj33, metadataSealed: body.metadata_sealed, trafficMetadataSealed: body.traffic_metadata_sealed, provenanceMetadataSealed: body.provenance_metadata_sealed, adContext: body.ad_context, responseTtlSeconds: body.response_ttl_seconds, placement, fetchedAt: _null };
               creative_type2 = undefined;
               const dispatch = closure_134_1(closure_134_2[12]).dispatch;
               closure_134_1(closure_134_2[12]);
@@ -1692,7 +1688,7 @@ obj = function _fetchQuestToDeliver() {
                 ad_id = ad_identifiers.ad_id;
               }
               const ad_identifiers2 = body.ad_identifiers;
-              obj36 = { ad_id, adset_id, ad_set_id, campaign_id, creative_id, creative_type: creative_type3, decision_id: body.request_id, is_targeted: null != body.ad_identifiers };
+              obj33 = { ad_id, adset_id, ad_set_id, campaign_id, creative_id, creative_type: creative_type3, decision_id: body.request_id, is_targeted: null != body.ad_identifiers };
               adset_id = undefined;
               if (ad_identifiers2 != null) {
                 adset_id = ad_identifiers2.adset_id;
@@ -1717,31 +1713,31 @@ obj = function _fetchQuestToDeliver() {
               if (ad_identifiers6 != null) {
                 creative_type3 = ad_identifiers6.creative_type;
               }
-              dispatch(obj35);
+              dispatch(obj32);
               const _String = String;
-              const obj38 = { wasSuccessful: true, adRequestId: String(body.request_id), currentCreative: obj32, currentFetchedAt: _null };
+              const obj35 = { wasSuccessful: true, adRequestId: String(body.request_id), currentCreative: obj29, currentFetchedAt: _null };
               const recordQuestRequestApiResponse = closure_134_1(closure_134_2[26]).recordQuestRequestApiResponse;
               closure_134_1(closure_134_2[26]);
-              const result2 = recordQuestRequestApiResponse(closure_4, obj38);
-              const obj15 = closure_134_0(closure_134_2[34]);
-              ad_content_id = obj15.getDeliveredAdCreativeId(obj32);
-              if (null != obj32) {
+              const result2 = recordQuestRequestApiResponse(closure_4, obj35);
+              const obj12 = closure_134_0(closure_134_2[33]);
+              ad_content_id = obj12.getDeliveredAdCreativeId(obj29);
+              if (null != obj29) {
                 if (null != ad_content_id) {
                   if (placement === closure_134_0(closure_134_2[10]).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
-                    const obj16 = closure_134_1(closure_134_2[35]);
-                    obj16.startTracking(ad_content_id, obj32.type);
+                    const obj13 = closure_134_1(closure_134_2[34]);
+                    obj13.startTracking(ad_content_id, obj29.type);
                   }
-                  const obj41 = { quest_id: tmp165, ad_content_id, creative_type: obj32.type, caller_source, ad_request_id: String(body.request_id) };
-                  const track = closure_134_1(closure_134_2[36]).track;
+                  const obj38 = { quest_id: tmp154, ad_content_id, creative_type: obj29.type, caller_source, ad_request_id: String(body.request_id) };
+                  const track = closure_134_1(closure_134_2[35]).track;
                   const QUEST_DECISION_RECEIVED = closure_134_13.QUEST_DECISION_RECEIVED;
-                  closure_134_1(closure_134_2[36]);
-                  const merged1 = Object.assign(closure_134_1(closure_134_2[37])());
-                  tmp165 = null;
-                  if (obj32.type === closure_134_0(closure_134_2[21]).AdCreativeType.QUEST) {
-                    tmp165 = ad_content_id;
+                  closure_134_1(closure_134_2[35]);
+                  const merged1 = Object.assign(closure_134_1(closure_134_2[36])());
+                  tmp154 = null;
+                  if (obj29.type === closure_134_0(closure_134_2[21]).AdCreativeType.QUEST) {
+                    tmp154 = ad_content_id;
                   }
                   const _String2 = String;
-                  track(QUEST_DECISION_RECEIVED, obj41);
+                  track(QUEST_DECISION_RECEIVED, obj38);
                   c8 = 0;
                 }
               }
@@ -1752,10 +1748,10 @@ obj = function _fetchQuestToDeliver() {
             c10 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp246) {
+        } catch (tmp235) {
           if (0 === c8) {
             c10 = 3;
-            throw tmp246;
+            throw tmp235;
           } else {
             c9 = 2;
           }
@@ -1855,7 +1851,7 @@ obj = function _fetchEarnedQuestToDeliver() {
             c7 = 0;
             let closure_11 = closure_6;
             const obj7 = { wasSuccessful: false, fetchedAt: _null };
-            const obj6 = closure_133_1(closure_133_2[38]);
+            const obj6 = closure_133_1(closure_133_2[37]);
             const result = obj6.recordEarnedRequestApiResponse(closure_4, obj7);
             get = closure_133_1(closure_133_2[12]).dispatch;
             const self = this;
@@ -1926,8 +1922,8 @@ obj = function _fetchEarnedQuestToDeliver() {
             get = closure_4;
             const request_id = closure_7.body.request_id;
             _null = request_id;
-            const recordEarnedRequestApiResponse = closure_133_1(closure_133_2[38]).recordEarnedRequestApiResponse;
-            closure_133_1(closure_133_2[38]);
+            const recordEarnedRequestApiResponse = closure_133_1(closure_133_2[37]).recordEarnedRequestApiResponse;
+            closure_133_1(closure_133_2[37]);
             if (request_id == null) {
               _null = null;
             }
@@ -2040,8 +2036,8 @@ obj = function _fetchVideoTranscript() {
           c7 = 3;
           return { value, done: true };
         } else {
-          const obj15 = closure_131_0(closure_131_2[39]);
-          questAsset = obj15.getQuestAsset(user, closure_131_0(closure_131_2[39]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, flag);
+          const obj15 = closure_131_0(closure_131_2[38]);
+          questAsset = obj15.getQuestAsset(user, closure_131_0(closure_131_2[38]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, flag);
           if (null != questAsset) {
             const state = closure_131_10.getState();
             const obj4 = { questId: user.id, fetchStatus: closure_131_11.FETCHING };
@@ -2085,7 +2081,7 @@ obj = function _fetchVideoTranscript() {
       if (closure_1 === undefined) {
         flag = false;
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -2428,7 +2424,7 @@ obj = function _fetchQuestHomeHero() {
             tmp11 = creative_type === closure_131_0(closure_131_2[21]).AdCreativeType.QUEST_HOME_HERO;
           }
           if (tmp11) {
-            obj = closure_131_0(closure_131_2[41]);
+            obj = closure_131_0(closure_131_2[40]);
             questHomeHero = obj.questHomeHeroFromServer(creative_type);
           }
           dispatch = closure_131_1(closure_131_2[12]).dispatch;
@@ -2631,7 +2627,7 @@ obj = function _fetchQuestHomeHeroPreview() {
           questHomeHero = null;
           const tmp12 = null != creative_type && creative_type.creative_type === closure_132_0(closure_132_2[21]).AdCreativeType.QUEST_HOME_HERO;
           if (tmp12) {
-            obj = closure_132_0(closure_132_2[41]);
+            obj = closure_132_0(closure_132_2[40]);
             questHomeHero = obj.questHomeHeroFromServer(creative_type);
           }
           dispatch = closure_132_1(closure_132_2[12]);
@@ -2808,9 +2804,9 @@ export function resetOptimisticProgress(questId) {
 export function fetchQuestToDeliver() {
   return obj(...arguments);
 }
-export function clearQuestAdDecision(placement, ttlMillis) {
+export function clearQuestAdDecision(current, ttlMillis) {
   obj = DispatcherDefault;
-  const obj2 = { type: "QUESTS_CLEAR_EXPIRED_QUEST_TO_DELIVER", placement, fetchedAt: Date.now(), responseTtlSeconds: ttlMillis / 1000 };
+  const obj2 = { type: "QUESTS_CLEAR_EXPIRED_QUEST_TO_DELIVER", placement: current, fetchedAt: Date.now(), responseTtlSeconds: ttlMillis / 1000 };
   obj.dispatch(obj2);
 }
 export function fetchEarnedQuestToDeliver() {
@@ -2831,6 +2827,11 @@ export function updateQuestDockVisibilityEligibility(isEligibleToBeVisible) {
   isEligibleToBeVisible = isEligibleToBeVisible.isEligibleToBeVisible;
   obj = DispatcherDefault;
   obj.dispatch({ type: "QUESTS_DOCK_VISIBILITY_ELIGIBILITY_UPDATE", isEligibleToBeVisible });
+}
+export function updateQuestDockExpandedOnScreen(isExpandedOnScreen) {
+  isExpandedOnScreen = isExpandedOnScreen.isExpandedOnScreen;
+  obj = DispatcherDefault;
+  obj.dispatch({ type: "QUESTS_DOCK_EXPANDED_ON_SCREEN_UPDATE", isExpandedOnScreen });
 }
 export function fetchQuest() {
   return obj(...arguments);

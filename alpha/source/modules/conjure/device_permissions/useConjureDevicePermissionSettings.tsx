@@ -1,13 +1,13 @@
-// Module ID: 15513
-// Function ID: 15514
+// Module ID: 15627
+// Function ID: 15628
 // Name: useConjureDevicePermissionSettings
-// Dependencies: [19, 13057, 15510, 504, 572, 2]
+// Dependencies: [19, 13152, 15624, 504, 572, 2]
 // Exports: default
 
-// Module 15513 (useConjureDevicePermissionSettings)
+// Module 15627 (useConjureDevicePermissionSettings)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import react from "react" /* 19 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 13057 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 13152 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

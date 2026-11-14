@@ -1,11 +1,11 @@
-// Module ID: 15552
-// Function ID: 15553
+// Module ID: 15666
+// Function ID: 15667
 // Name: MobileRoadblockOfferCtaExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: getMobileRoadblockOfferCtaEnabled
 
-// Module 15552 (MobileRoadblockOfferCtaExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 15666 (MobileRoadblockOfferCtaExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const config = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-09-mobile-roadblock-offer-cta", defaultConfig: false, variations: { 0: false, 1: true } });

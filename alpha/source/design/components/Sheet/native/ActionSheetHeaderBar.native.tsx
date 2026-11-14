@@ -1,19 +1,19 @@
-// Module ID: 5838
-// Function ID: 5839
+// Module ID: 5901
+// Function ID: 5902
 // Name: ActionSheetHeaderBar
-// Dependencies: [19, 17, 21, 5243, 575, 1113, 1493, 5839, 5505, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1113, 1496, 5902, 5568, 2]
 // Exports: ActionSheetHeaderBar
 
-// Module 5838 (ActionSheetHeaderBar)
+// Module 5901 (ActionSheetHeaderBar)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5505 */;
-import useToken from "useToken" /* 5839 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
+import useToken from "useToken" /* 5902 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;

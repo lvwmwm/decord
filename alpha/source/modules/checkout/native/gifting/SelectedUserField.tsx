@@ -1,21 +1,21 @@
-// Module ID: 11712
-// Function ID: 11713
+// Module ID: 11778
+// Function ID: 11779
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 5243, 575, 7573, 1113, 5309, 7760, 1187, 5866, 7563, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7639, 1113, 5372, 7826, 1187, 5929, 7629, 2]
 // Exports: default
 
-// Module 11712 (SelectedUserField)
+// Module 11778 (SelectedUserField)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5309 */;
-import CircleXIcon from "CircleXIcon" /* 7563 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7573 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7760 */;
+import UserUtilsDefault from "UserUtils" /* 5372 */;
+import CircleXIcon from "CircleXIcon" /* 7629 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7639 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7826 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -91,13 +91,13 @@ export default function SelectedUserField(onPress) {
     const Avatar = tmp4(1187).Avatar;
     items2 = [hasOwnProperty(Avatar, obj7), ];
     const obj8 = { variant: "body-md/medium", style: tmp.userPillText, children: obj10.getName(selectedUser) };
-    const Text2 = tmp4(5866).Text;
+    const Text2 = tmp4(5929).Text;
     obj10 = UserUtilsDefault;
     items2[1] = hasOwnProperty(Text2, obj8);
     tmp2Result1 = tmp6(tmp3, obj6);
   } else {
     const obj9 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.userPillText, children: intl4.string(intl6.t.R0vK0N) };
-    const Text = tmp4(5866).Text;
+    const Text = tmp4(5929).Text;
     intl4 = tmp4(1113).intl;
     tmp2Result1 = tmp2(Text, obj9);
   }

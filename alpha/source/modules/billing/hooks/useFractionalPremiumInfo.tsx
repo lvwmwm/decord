@@ -1,24 +1,24 @@
-// Module ID: 8463
-// Function ID: 8464
+// Module ID: 8529
+// Function ID: 8530
 // Name: useFractionalPremiumInfo
-// Dependencies: [32, 19, 1385, 2176, 8464, 1072, 1387, 2166, 38, 5055, 8466, 2171, 504, 5836, 8467, 2170, 12, 2]
+// Dependencies: [32, 19, 1388, 2179, 8530, 1072, 1390, 2169, 38, 5118, 8532, 2174, 504, 5899, 8533, 2173, 12, 2]
 // Exports: default
 
-// Module 8463 (useFractionalPremiumInfo)
+// Module 8529 (useFractionalPremiumInfo)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import EntitlementTypes from "EntitlementTypes" /* 2170 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import BillingUtils from "BillingUtils" /* 5055 */;
-import EntitlementSourceTypes from "EntitlementSourceTypes" /* 8466 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 8467 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import EntitlementTypes from "EntitlementTypes" /* 2173 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import BillingUtils from "BillingUtils" /* 5118 */;
+import EntitlementSourceTypes from "EntitlementSourceTypes" /* 8532 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 8533 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import EntitlementStore from "EntitlementStore" /* 8464 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import UserStore from "UserStore" /* 1388 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import EntitlementStore from "EntitlementStore" /* 8530 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ function calculateFractionalPremiumInfo(isFetching) {
     flag = false;
   }
   ({ entitlements, unactivatedFractionalPremiumUnits, premiumSubscription, fetchedAllEntitlements, excludeReverseTrialFromCountdown } = isFetching);
-  const obj = { isFractionalPremiumActive: false, fractionalState: constants.NONE, startsAt: _modDef2166(0), endsAt: _modDef2166(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef2166(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
+  const obj = { isFractionalPremiumActive: false, fractionalState: constants.NONE, startsAt: _modDef2169(0), endsAt: _modDef2169(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef2169(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
   let tmp = constants;
   let tmp2 = importDefault;
   const currentUser = isFetching.currentUser;
@@ -108,25 +108,25 @@ function calculateFractionalPremiumInfo(isFetching) {
       }
       const obj7 = { isFractionalPremiumActive: null != first, fractionalState: NONE, startsAt: tmp10, endsAt: tmp2ResultResult, currentEntitlementId: str, currentEntitlementEndsAt: tmp17, unactivatedUnits: unactivatedFractionalPremiumUnits, fetched: fetchedAllEntitlements };
       if (null != first) {
-        tmp10 = _modDef2166(first.startsAt);
+        tmp10 = _modDef2169(first.startsAt);
       } else {
-        tmp10 = _modDef2166(0);
+        tmp10 = _modDef2169(0);
       }
       if (null != first) {
-        const tmp2Result = _modDef2166;
+        const tmp2Result = _modDef2169;
         const obj4 = PremiumUtils;
         tmp2ResultResult = tmp2Result(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
       } else {
-        tmp2ResultResult = _modDef2166(0);
+        tmp2ResultResult = _modDef2169(0);
       }
       str = "";
       if (null != first) {
         str = first.id;
       }
       if (null != first) {
-        tmp17 = _modDef2166(first.endsAt);
+        tmp17 = _modDef2169(first.endsAt);
       } else {
-        tmp17 = _modDef2166(0);
+        tmp17 = _modDef2169(0);
       }
       return obj7;
     }

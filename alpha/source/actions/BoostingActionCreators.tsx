@@ -1,17 +1,17 @@
-// Module ID: 9171
-// Function ID: 9172
+// Module ID: 9238
+// Function ID: 9239
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 9172, 9173, 2176, 1072, 1282, 572, 6694, 2]
+// Dependencies: [5, 9239, 9240, 2179, 1072, 1285, 572, 6757, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 9171 (actions/BoostingActionCreators)
+// Module 9238 (actions/BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 9172 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 9173 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 9239 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 9240 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import size from "module_2" /* 2 */;
 
 let boostId, closure_3, closure_4, closure_5;
@@ -57,7 +57,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
               tmp = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {
@@ -145,7 +145,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
             tmp = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -351,7 +351,7 @@ obj = function _applyToGuild() {
               appliedGuildBoostError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

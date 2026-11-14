@@ -1,14 +1,14 @@
-// Module ID: 14665
-// Function ID: 14666
+// Module ID: 14778
+// Function ID: 14779
 // Name: SmartSearchExperiments
-// Dependencies: [5114, 1072, 1449, 9052, 504, 2]
+// Dependencies: [5177, 1072, 1452, 9119, 504, 2]
 // Exports: isNlpSearchEnabled, useIsNlpSearchEnabled
 
-// Module 14665 (SmartSearchExperiments)
+// Module 14778 (SmartSearchExperiments)
 import Constants from "Constants" /* 1072 */;
-import ConversationExperiments from "ConversationExperiments" /* 9052 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1449 */;
+import ConversationExperiments from "ConversationExperiments" /* 9119 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

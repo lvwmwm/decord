@@ -1,28 +1,28 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15720
+// Function ID: 15721
 // Name: Badges
-// Dependencies: [19, 17, 2186, 21, 575, 5243, 15604, 8353, 5866, 504, 7374, 12459, 15607, 1113, 15609, 15611, 10598, 11028, 10255, 1089, 2]
+// Dependencies: [19, 17, 2189, 21, 575, 5306, 15718, 8419, 5929, 504, 7438, 12555, 15721, 1113, 15723, 15725, 10667, 11095, 10324, 1089, 2]
 // Exports: BadgesContainer, CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 15606 (Badges)
+// Module 15720 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import utils from "utils" /* 8353 */;
-import TrophyIcon from "TrophyIcon" /* 10255 */;
-import FireIcon from "FireIcon" /* 10598 */;
-import RetryIcon from "RetryIcon" /* 11028 */;
-import TimerIcon2 from "TimerIcon" /* 12459 */;
-import NewUserIcon from "NewUserIcon" /* 15607 */;
-import FlashIcon from "FlashIcon" /* 15609 */;
-import TrendingType from "TrendingType" /* 15611 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import utils from "utils" /* 8419 */;
+import TrophyIcon from "TrophyIcon" /* 10324 */;
+import FireIcon from "FireIcon" /* 10667 */;
+import RetryIcon from "RetryIcon" /* 11095 */;
+import TimerIcon2 from "TimerIcon" /* 12555 */;
+import NewUserIcon from "NewUserIcon" /* 15721 */;
+import FlashIcon from "FlashIcon" /* 15723 */;
+import TrendingType from "TrendingType" /* 15725 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -31,19 +31,19 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const GameControllerIcon = tmp3(7374);
+const GameControllerIcon = tmp3(7438);
 class ActiveTimestamp {
   constructor(entry) {
     entry = entry.entry;
     const style = entry.style;
-    obj = entry(15604);
+    obj = entry(15718);
     const now = obj.useTimestampTickedNow().now;
     const items = [entry, now];
     const children = react.useMemo(() => {
       obj = utils;
       return obj.formatActiveTimestamp(entry, now);
     }, items);
-    return closure_6(entry(5866).Text, { style, variant: "body-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
+    return closure_6(entry(5929).Text, { style, variant: "body-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
   }
 }
 function ContentTimestamp(entry) {
@@ -61,7 +61,7 @@ function ContentTimestamp(entry) {
     tmp7Result = tmp7(ActiveTimestamp, obj2);
   } else {
     const obj3 = { variant: "body-sm/medium", color: tmp.text, children: tmp2Result.formatEndedTimestamp(entry, tmp6) };
-    const Text = tmp2(5866).Text;
+    const Text = tmp2(5929).Text;
     tmp2Result = utils;
     tmp7Result = tmp7(Text, obj3);
   }

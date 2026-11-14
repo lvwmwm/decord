@@ -1,24 +1,24 @@
-// Module ID: 7701
-// Function ID: 7702
+// Module ID: 7767
+// Function ID: 7768
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 7702, 502, 1072, 21, 5243, 7364, 5866, 6206, 1113, 1377, 7703, 7704, 1499, 504, 1502, 6781, 7706, 6207, 7707, 7708, 7709, 6694, 7710, 7714, 7715, 7717, 7711, 5873, 7718, 1624, 7720, 7722, 7553, 7726, 6274, 7730, 7583, 2]
+// Dependencies: [5, 32, 19, 17, 7768, 502, 1072, 21, 5306, 7428, 5929, 6269, 1113, 1380, 7769, 7770, 1502, 504, 1505, 6844, 7772, 6270, 7773, 7774, 7775, 6757, 7776, 7780, 7781, 7783, 7777, 5936, 7784, 1627, 7786, 7788, 7619, 7792, 6337, 7796, 7649, 2]
 // Exports: default
 
-// Module 7701 (Login)
+// Module 7767 (Login)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
-import Pressables from "Pressables" /* 7364 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import Pressables from "Pressables" /* 7428 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7702 */;
+import PhoneStore from "PhoneStore" /* 7768 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -319,7 +319,7 @@ export default function Login(isMultiAccount) {
               authenticationErrorsFromV6OrEarlierAPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

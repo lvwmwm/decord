@@ -1,13 +1,13 @@
-// Module ID: 13479
-// Function ID: 13480
+// Module ID: 13582
+// Function ID: 13583
 // Name: useConjureManualAppBuildRequest
-// Dependencies: [32, 19, 1113, 4079, 13480, 2]
+// Dependencies: [32, 19, 1113, 4131, 13583, 2]
 // Exports: default
 
-// Module 13479 (useConjureManualAppBuildRequest)
+// Module 13582 (useConjureManualAppBuildRequest)
 import intl2 from "intl" /* 1113 */;
-import _modDef4079 from "module_4079" /* 4079 */;
-import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 13480 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 13583 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ export default function useConjureManualAppBuildRequest(projectId) {
     let obj2;
     let trimmed;
     const obj = { projectId, request: obj2, clearComposer };
-    obj2 = { id: "manual:" + projectId + ":" + Date.now(), summary: intl.string(_modDef4079["o2++BO"]), prompt: trimmed.slice(0, ConjureAppBuildRequest.CONJURE_APP_BUILD_PROMPT_MAX_LENGTH) };
+    obj2 = { id: "manual:" + projectId + ":" + Date.now(), summary: intl.string(_modDef4131["o2++BO"]), prompt: trimmed.slice(0, ConjureAppBuildRequest.CONJURE_APP_BUILD_PROMPT_MAX_LENGTH) };
     intl = intl2.intl;
     trimmed = str.trim();
     return callback(obj);

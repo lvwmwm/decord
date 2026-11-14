@@ -1,13 +1,13 @@
-// Module ID: 5201
-// Function ID: 5202
+// Module ID: 5264
+// Function ID: 5265
 // Name: burst_reactions/BurstReactionEffectUtils
-// Dependencies: [5, 32, 19, 17, 5193, 5202, 2022, 1377, 5239, 2]
+// Dependencies: [5, 32, 19, 17, 5256, 5265, 2025, 1380, 5302, 2]
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage
 
-// Module 5201 (burst_reactions/BurstReactionEffectUtils)
+// Module 5264 (burst_reactions/BurstReactionEffectUtils)
 import react_native from "react-native" /* 17 */;
-import EmojiUtils from "EmojiUtils" /* 5193 */;
-import getBurstAnimation from "getBurstAnimation" /* 5202 */;
+import EmojiUtils from "EmojiUtils" /* 5256 */;
+import getBurstAnimation from "getBurstAnimation" /* 5265 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -260,7 +260,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
               b = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {

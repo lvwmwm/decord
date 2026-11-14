@@ -1,35 +1,35 @@
-// Module ID: 7253
-// Function ID: 7254
+// Module ID: 7317
+// Function ID: 7318
 // Name: LocalActivityStore
-// Dependencies: [32, 5091, 2162, 2137, 7254, 7255, 7226, 1231, 6757, 5092, 2156, 15866, 5146, 6010, 1072, 5068, 9462, 6006, 12, 15867, 15868, 6749, 1342, 7406, 12599, 1403, 504, 572, 2]
+// Dependencies: [32, 5154, 2165, 2140, 7318, 7319, 7290, 1231, 6820, 5155, 2159, 15986, 5209, 6073, 1072, 5131, 9529, 6069, 12, 15987, 15988, 6812, 1345, 7472, 12695, 1406, 504, 572, 2]
 
-// Module 7253 (LocalActivityStore)
+// Module 7317 (LocalActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import _modDef1342 from "module_1342" /* 1342 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import ActivityTypes from "ActivityTypes" /* 6006 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7406 */;
+import _modDef1345 from "module_1345" /* 1345 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
+import ActivityTypes from "ActivityTypes" /* 6069 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7472 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import RunningGameStore from "RunningGameStore" /* 2137 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7254 */;
-import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 7255 */;
-import SpotifyStore from "SpotifyStore" /* 7226 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import RunningGameStore from "RunningGameStore" /* 2140 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7318 */;
+import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 7319 */;
+import SpotifyStore from "SpotifyStore" /* 7290 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import DetectableGameStore from "DetectableGameStore" /* 2156 */;
-import ExternalStreamingStore from "ExternalStreamingStore" /* 15866 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import SessionsStore from "SessionsStore" /* 6010 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import DetectableGameStore from "DetectableGameStore" /* 2159 */;
+import ExternalStreamingStore from "ExternalStreamingStore" /* 15986 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import SessionsStore from "SessionsStore" /* 6073 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ActivityFlagUtils = tmp(12599);
+const ActivityFlagUtils = tmp(12695);
 function updateActivities() {
   let id;
   let obj3;
@@ -305,7 +305,7 @@ let obj = {
         let tmp = activity.platform === ActivityGamePlatforms.ActivityGamePlatforms.EMBEDDED;
         const tmp11 = require;
         if (tmp) {
-          const tmp11Result = tmp11(12599);
+          const tmp11Result = tmp11(12695);
           tmp = !tmp11Result.isContextlessEmbeddedActivity(activity);
         }
         if (tmp) {
@@ -325,7 +325,7 @@ let obj = {
       tmp7 = null == closure_19[socketId];
     } else {
       const items = [pid, activity, partyPrivacy];
-      tmp7 = _modDef1342(closure_19[socketId], items);
+      tmp7 = _modDef1345(closure_19[socketId], items);
     }
     if (!tmp7) {
       if (null != activity) {

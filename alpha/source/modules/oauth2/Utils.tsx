@@ -1,13 +1,13 @@
-// Module ID: 7343
-// Function ID: 7344
+// Module ID: 7407
+// Function ID: 7408
 // Name: Utils
-// Dependencies: [1072, 7344, 1113, 5899, 2]
+// Dependencies: [1072, 7408, 1113, 5962, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 7343 (Utils)
+// Module 7407 (Utils)
 import Constants from "Constants" /* 1072 */;
-import utils from "utils" /* 5899 */;
-import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 7344 */;
+import utils from "utils" /* 5962 */;
+import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 7408 */;
 import size from "module_2" /* 2 */;
 
 const MarketingURLs = Constants.MarketingURLs;

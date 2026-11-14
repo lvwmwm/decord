@@ -1,11 +1,11 @@
-// Module ID: 7775
-// Function ID: 7776
+// Module ID: 7841
+// Function ID: 7842
 // Name: useFastestListPropsScrollReporting
-// Dependencies: [1652, 2]
+// Dependencies: [1655, 2]
 // Exports: default
 
-// Module 7775 (useFastestListPropsScrollReporting)
-import _mod1652 from "module_1652" /* 1652 */;
+// Module 7841 (useFastestListPropsScrollReporting)
+import _mod1655 from "module_1655" /* 1655 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = { code: "(function useFastestListPropsScrollReportingNativeTsx1(event){let[scrollPosition,horizontal]=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}})" };
@@ -19,7 +19,7 @@ export default function useFastestListPropsScrollReporting(scrollReporting, arg1
   if ("animatedScrollPosition" === scrollReporting.scrollReporting) {
     scrollPosition = scrollReporting.scrollPosition;
   }
-  _mod1652;
+  _mod1655;
   const items = [closure_2, scrollPosition, arg1];
   let c0;
   let c1;

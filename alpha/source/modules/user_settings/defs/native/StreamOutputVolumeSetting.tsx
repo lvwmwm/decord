@@ -1,20 +1,20 @@
-// Module ID: 17751
-// Function ID: 17752
+// Module ID: 17871
+// Function ID: 17872
 // Name: StreamOutputVolumeSetting
-// Dependencies: [6757, 502, 2130, 9135, 504, 6033, 38, 6162, 12906, 12311, 1113, 2]
+// Dependencies: [6820, 502, 2133, 9202, 504, 6096, 38, 6225, 13002, 12406, 1113, 2]
 
-// Module 17751 (StreamOutputVolumeSetting)
+// Module 17871 (StreamOutputVolumeSetting)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 6033 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6162 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 12906 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 6096 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6225 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 13002 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -68,7 +68,7 @@ let obj = {
   },
   usePredicate: function useHasStreamVolumeSetting() {
     const obj = MobileAudioOutputExperimentDefault;
-    const audioOutputPresent = obj.getConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
+    const audioOutputPresent = obj.useConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
     const obj2 = get_initialized;
     let items = [ApplicationStreamingStore, AuthenticationStore];
     const tmp = obj2.useStateFromStores(items, () => {

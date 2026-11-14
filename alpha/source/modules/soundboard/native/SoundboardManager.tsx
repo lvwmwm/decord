@@ -1,18 +1,18 @@
-// Module ID: 16898
-// Function ID: 16899
+// Module ID: 17021
+// Function ID: 17022
 // Name: SoundboardManager
-// Dependencies: [5, 2130, 5146, 6306, 3, 16899, 16900, 16901, 10964, 7163, 2]
+// Dependencies: [5, 2133, 5209, 6369, 3, 17022, 17023, 17024, 11033, 7226, 2]
 
-// Module 16898 (SoundboardManager)
+// Module 17021 (SoundboardManager)
 import LoggerDefault from "Logger" /* 3 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7163 */;
-import SoundUtils from "SoundUtils" /* 10964 */;
-import getVolumeForSoundDefault from "getVolumeForSound" /* 16900 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7226 */;
+import SoundUtils from "SoundUtils" /* 11033 */;
+import getVolumeForSoundDefault from "getVolumeForSound" /* 17023 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import SoundboardStore from "SoundboardStore" /* 6306 */;
-import BaseSoundboardManager from "BaseSoundboardManager" /* 16899 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import SoundboardStore from "SoundboardStore" /* 6369 */;
+import BaseSoundboardManager from "BaseSoundboardManager" /* 17022 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;
@@ -46,7 +46,7 @@ class SoundboardManager extends BaseSoundboardManager {
             if (null != value) {
               value.stop();
             }
-            const tmp14 = tmp6(16901)(soundId);
+            const tmp14 = tmp6(17024)(soundId);
             const obj2 = SoundUtils;
             const sound = obj2.createSound(tmp14, "soundboard_sound", tmp8);
             sound.volume = tmp8;
@@ -95,7 +95,7 @@ class SoundboardManager extends BaseSoundboardManager {
       await "HermesInternal";
       closure_2 = tmp;
       ({ sound: c0, soundKey: c1, soundId: c2, userId: c3 } = closure_0);
-      return "flexDirection";
+      return "Path";
     });
     applyArgumentsResult._playSoundWithListener = function() {
       return closure_0(...arguments);

@@ -1,17 +1,17 @@
-// Module ID: 10315
-// Function ID: 10316
+// Module ID: 10384
+// Function ID: 10385
 // Name: GameProfileSkeleton
-// Dependencies: [19, 17, 21, 5243, 575, 10316, 1652, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 10385, 1655, 2]
 // Exports: GameProfileSkeletonButton, GameProfileSkeletonContainer
 
-// Module 10315 (GameProfileSkeleton)
+// Module 10384 (GameProfileSkeleton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 10316 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 10385 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -51,7 +51,7 @@ export function GameProfileSkeletonContainer(animationDelayMs) {
   const obj = GameProfileSkeletonPulse;
   const skeletonPulseStyle = obj.useSkeletonPulseStyle(num);
   const items = [style, skeletonPulseStyle];
-  return jsx(_modDef1652.View, { style: items, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children });
+  return jsx(_modDef1655.View, { style: items, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children });
 }
 export function GameProfileSkeletonButton(size) {
   let str = size.size;

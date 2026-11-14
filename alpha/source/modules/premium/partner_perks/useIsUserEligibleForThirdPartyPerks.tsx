@@ -1,15 +1,15 @@
-// Module ID: 9921
-// Function ID: 9922
+// Module ID: 9988
+// Function ID: 9989
 // Name: useIsUserEligibleForThirdPartyPerks
-// Dependencies: [1385, 2176, 504, 2107, 9922, 2]
+// Dependencies: [1388, 2179, 504, 2110, 9989, 2]
 // Exports: useIsUserEligibleForThirdPartyPerks
 
-// Module 9921 (useIsUserEligibleForThirdPartyPerks)
+// Module 9988 (useIsUserEligibleForThirdPartyPerks)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import ThirdPartyPerkUtils from "ThirdPartyPerkUtils" /* 9922 */;
-import UserStore from "UserStore" /* 1385 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
+import ThirdPartyPerkUtils from "ThirdPartyPerkUtils" /* 9989 */;
+import UserStore from "UserStore" /* 1388 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/partner_perks/useIsUserEligibleForThirdPartyPerks.tsx");

@@ -1,23 +1,23 @@
-// Module ID: 15804
-// Function ID: 15805
+// Module ID: 15924
+// Function ID: 15925
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1072, 21, 5243, 6763, 575, 1187, 1113, 7364, 5489, 5430, 5866, 14953, 5850, 7822, 2]
+// Dependencies: [19, 1072, 21, 5306, 6826, 575, 1187, 1113, 7428, 5552, 5493, 5929, 15067, 5913, 7888, 2]
 // Exports: default
 
-// Module 15804 (InstantInviteFriendsList)
+// Module 15924 (InstantInviteFriendsList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import RootNavigationRef from "RootNavigationRef" /* 5430 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import Pressables from "Pressables" /* 7364 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 14953 */;
+import RootNavigationRef from "RootNavigationRef" /* 5493 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import Pressables from "Pressables" /* 7428 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 15067 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
-import TextStyles_mod from "TextStyles" /* 6763 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import TextStyles_mod from "TextStyles" /* 6826 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

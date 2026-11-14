@@ -1,20 +1,20 @@
-// Module ID: 17464
-// Function ID: 17465
+// Module ID: 17582
+// Function ID: 17583
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 5488, 5243, 575, 1652, 5485, 1705, 5830, 17465, 5866, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5551, 5306, 575, 1655, 5548, 1708, 5893, 17583, 5929, 1113, 2]
 // Exports: default
 
-// Module 17464 (BountiesScrollIndicatorOverlay)
+// Module 17582 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import timingPresets from "timingPresets" /* 5488 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17465 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import timingPresets from "timingPresets" /* 5551 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17583 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,7 +90,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   let items = [enabled];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f144437 = () => {
+    const f146063 = () => {
       importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -98,13 +98,13 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
       if (closure_0) {
         num = closure_2_9;
       }
-      enabled = _setTimeout(f144437, num);
+      enabled = _setTimeout(f146063, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f144437, closure_1_9);
+      timeout = setTimeout(f146063, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);
@@ -122,15 +122,15 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
     closure_0(false);
   }, []);
   let items1 = [closure_12, , , , , , , , ];
-  const useAnimatedStyle = require("module_1652").useAnimatedStyle;
-  require("module_1652");
+  const useAnimatedStyle = require("module_1655").useAnimatedStyle;
+  require("module_1655");
   items1[1] = require("timing/timing").withTiming;
   items1[2] = enabled && first;
   items1[3] = enabled;
   items1[4] = require("timingPresets").timingSlow;
   items1[5] = require("timingPresets").timingStandard;
   items1[6] = closure_11;
-  items1[7] = require("module_1705").scheduleOnRN;
+  items1[7] = require("module_1708").scheduleOnRN;
   items1[8] = callback;
   let c0;
   let c1;
@@ -177,8 +177,8 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   BountiesScrollIndicatorOverlayTsx2.__initData = tmp21;
   const animatedStyle = useAnimatedStyle(BountiesScrollIndicatorOverlayTsx2);
   const items3 = [closure_13, , , , , , ];
-  const useAnimatedStyle2 = require("module_1652").useAnimatedStyle;
-  require("module_1652");
+  const useAnimatedStyle2 = require("module_1655").useAnimatedStyle;
+  require("module_1655");
   items3[1] = require("timing/timing").withTiming;
   items3[2] = enabled && first;
   items3[3] = isEndCardVisible;
@@ -221,8 +221,8 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   BountiesScrollIndicatorOverlayTsx3.__initData = tmp32;
   const animatedStyle2 = useAnimatedStyle2(BountiesScrollIndicatorOverlayTsx3);
   const items5 = [closure_14, , , ];
-  const useAnimatedStyle3 = require("module_1652").useAnimatedStyle;
-  require("module_1652");
+  const useAnimatedStyle3 = require("module_1655").useAnimatedStyle;
+  require("module_1655");
   items5[1] = require("timing/timing").withTiming;
   items5[2] = enabled && first;
   items5[3] = require("timingPresets").timingStandard;
@@ -250,20 +250,20 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   const animatedStyle3 = useAnimatedStyle3(BountiesScrollIndicatorOverlayTsx4);
   const obj2 = { style: items7, pointerEvents: "none", children: items9 };
   items7 = [tmp.scrollIndicator, opacityStyle];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   const obj3 = { style: items8, children: closure_6(LinearGradientDefault, obj4) };
   items8 = [StyleSheet.absoluteFill, animatedStyle2];
-  const View2 = _modDef1652.View;
+  const View2 = _modDef1655.View;
   obj4 = { colors, style: StyleSheet.absoluteFill };
   items9 = [closure_6(View2, obj3), ];
   const obj5 = { style: items10, children: items12 };
   items10 = [tmp.scrollIndicatorContent, ];
   const items11 = [animatedStyle, animatedStyle3];
   items10[1] = items11;
-  const View3 = _modDef1652.View;
+  const View3 = _modDef1655.View;
   items12 = [closure_6(BountiesScrollIndicatorAnimationDefault, { visible: enabled && first, isFadingInContent: first1 }), ];
   const obj6 = { variant: "body-sm/semibold", color: "text-default", style: tmp.scrollIndicatorText, children: intl.string(require("intl").t.eafsh4) };
-  const Text = tmp18(5866).Text;
+  const Text = tmp18(5929).Text;
   intl = tmp18(1113).intl;
   items12[1] = closure_6(Text, obj6);
   items9[1] = closure_7(View3, obj5);

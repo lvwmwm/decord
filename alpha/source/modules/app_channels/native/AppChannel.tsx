@@ -1,31 +1,31 @@
-// Module ID: 19237
-// Function ID: 19238
+// Module ID: 19429
+// Function ID: 19430
 // Name: AppChannel
-// Dependencies: [19, 17, 19238, 21, 5243, 575, 2020, 5850, 13240, 19239, 16865, 13239, 13241, 7197, 6000, 13250, 13254, 19242, 7330, 19243, 19246, 1113, 6992, 5957, 1411, 10477, 5873, 5914, 19247, 9001, 6989, 19248, 11911, 2]
+// Dependencies: [19, 17, 19430, 21, 5306, 575, 2023, 5913, 13345, 19431, 16988, 13344, 13346, 7260, 6063, 13355, 13359, 19434, 7394, 19435, 19438, 1113, 7055, 6020, 1414, 10546, 5936, 5977, 19439, 9068, 7052, 19440, 11977, 2]
 // Exports: default
 
-// Module 19237 (AppChannel)
+// Module 19429 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5914 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import transitionToChannel from "transitionToChannel" /* 6000 */;
-import conjureDMAppChannel from "conjureDMAppChannel" /* 6989 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6992 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7330 */;
-import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9001 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 10477 */;
-import useChannelContentGate from "useChannelContentGate" /* 11911 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 13240 */;
-import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19238 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 19246 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 19247 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19248 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import transitionToChannel from "transitionToChannel" /* 6063 */;
+import conjureDMAppChannel from "conjureDMAppChannel" /* 7052 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7055 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7394 */;
+import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9068 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 10546 */;
+import useChannelContentGate from "useChannelContentGate" /* 11977 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 13345 */;
+import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19430 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 19438 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 19439 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19440 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -183,7 +183,7 @@ function ClosedAppChannel(arg0) {
     name = data.name;
   }
   obj15 = { text: intl.string(intl6.t.PPYvuv), onPress: onLaunch };
-  Button = tmp2(5873).Button;
+  Button = tmp2(5936).Button;
   intl = tmp2(1113).intl;
   return metroRequire(FrameSurfaceExplanation, obj14);
 }
@@ -250,7 +250,7 @@ export default function ConnectedAppChannel(channel) {
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(19246).FrameSurfaceExplanation;
+    const FrameSurfaceExplanation = tmp(19438).FrameSurfaceExplanation;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     result = metroRequire(FrameSurfaceExplanation, obj2);

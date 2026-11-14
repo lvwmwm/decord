@@ -1,11 +1,11 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15281
+// Function ID: 15282
 // Name: BadgeUnlockColorUtils
-// Dependencies: [5240, 2]
-// Exports: getBadgeHaloColor, pickBadgeColor
+// Dependencies: [5303, 2]
+// Exports: pickBadgeColor
 
-// Module 15168 (BadgeUnlockColorUtils)
-import ColorUtils from "ColorUtils" /* 5240 */;
+// Module 15281 (BadgeUnlockColorUtils)
+import ColorUtils from "ColorUtils" /* 5303 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/badges/BadgeUnlockColorUtils.tsx");
@@ -38,19 +38,4 @@ export function pickBadgeColor(arr) {
     rgbToHexResult = obj.rgbToHex(found1[0], found1[1], found1[2]);
   }
   return rgbToHexResult;
-}
-export function getBadgeHaloColor(PRIMARY_800) {
-  let b;
-  let g;
-  let hue;
-  let r;
-  let saturation;
-  const obj = ColorUtils;
-  ({ r, g, b } = obj.hexToRgb(PRIMARY_800));
-  obj.hexToRgb(PRIMARY_800);
-  const obj2 = ColorUtils;
-  ({ hue, saturation } = obj2.rawRgbToHsl(r, g, b));
-  obj2.rawRgbToHsl(r, g, b);
-  const obj3 = ColorUtils;
-  return obj3.hslToHex(hue, 100 * saturation, 70);
 }

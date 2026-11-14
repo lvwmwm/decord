@@ -1,84 +1,26 @@
 // Module ID: 9782
 // Function ID: 9783
-// Dependencies: [9731]
-// Exports: getDebugImagesForResources
+// Dependencies: [9774, 9775, 9776, 9783]
 
 // Module 9782
-const require = globalThis.__r;
-let _require, obj;
+import RNIapAmazonModule from "RNIapAmazonModule" /* 9774 */;
+import RNIapModule from "RNIapModule" /* 9775 */;
+import _mod9776 from "module_9776" /* 9776 */;
+import _mod9783 from "module_9783" /* 9783 */;
 
-function getFilenameToDebugIdMap(arg0) {
-  let _sentryDebugIds;
-  let closure_0;
-  let length;
-  let reduced;
-  _require = arg0;
-  _sentryDebugIds = require("module_9731").GLOBAL_OBJ._sentryDebugIds;
-  if (_sentryDebugIds) {
-    let tmp = globalThis;
-    const _Object = Object;
-    const keys = Object.keys(_sentryDebugIds);
-    const tmp2 = reduced;
-    if (tmp2) {
-      return reduced;
-    }
-    reduced = keys.reduce((acc, item) => {
-      let tmp7;
-      let tmp9;
-      let tmp = obj;
-      if (!tmp) {
-        obj = {};
-        tmp = obj;
-      }
-      if (tmp[item]) {
-        acc[tmp[item][0]] = tmp[item][1];
-      } else {
-        const arr = closure_0(item);
-        let diff = arr.length - 1;
-        if (0 <= diff) {
-          while (true) {
-            let tmp5 = arr[diff];
-            tmp7 = tmp5 && tmp5.filename;
-            tmp9 = _sentryDebugIds[item];
-            if (tmp7) {
-              if (tmp9) {
-                break;
-              }
-            }
-            diff = diff - 1;
-          }
-          acc[tmp7] = tmp9;
-          const items = [tmp7, tmp9];
-          obj[item] = items;
-        }
-      }
-      return acc;
-    }, {});
-  } else {
-    return {};
-  }
+for (const key10013 in RNIapAmazonModule) {
+  exports[key10013] = RNIapAmazonModule[key10013];
+  continue;
 }
-
-export function getDebugImagesForResources(arg0, arg1) {
-  const tmp = getFilenameToDebugIdMap(arg0);
-  const items = [];
-  if (tmp) {
-    const iter = arg1[Symbol.iterator]();
-    let nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp7 = nextResult;
-      if (tmp7) {
-        nextResult = tmp[tmp7];
-      }
-      if (nextResult) {
-        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
-        let arr = items.push(obj);
-      }
-      continue;
-    }
-    return items;
-  } else {
-    return items;
-  }
+for (const key10017 in RNIapModule) {
+  exports[key10017] = RNIapModule[key10017];
+  continue;
 }
-export { getFilenameToDebugIdMap };
+for (const key10021 in _mod9776) {
+  exports[key10021] = _mod9776[key10021];
+  continue;
+}
+for (const key10025 in _mod9783) {
+  exports[key10025] = _mod9783[key10025];
+  continue;
+}

@@ -1,20 +1,20 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 13081
+// Function ID: 13082
 // Name: StageChannelCallView
-// Dependencies: [19, 21, 12817, 5243, 1627, 12986, 12987, 1652, 11761, 12988, 2]
+// Dependencies: [19, 21, 12913, 5306, 1630, 13082, 13083, 1655, 11827, 13084, 2]
 // Exports: default
 
-// Module 12985 (StageChannelCallView)
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import StatusBarDefault from "StatusBar" /* 11761 */;
-import FocusedControls from "FocusedControls" /* 12817 */;
-import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 12986 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 12987 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 12988 */;
+// Module 13081 (StageChannelCallView)
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import StatusBarDefault from "StatusBar" /* 11827 */;
+import FocusedControls from "FocusedControls" /* 12913 */;
+import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 13082 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 13083 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 13084 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -30,7 +30,7 @@ function StageChannelCallBackground(arg0) {
   const top = useSafeAreaInsetsDefault().top;
   const obj = StageChannelAnimationUtils;
   const stageActionBarAnimation = obj.useStageActionBarAnimation(channelId, FocusedControls.FOCUSED_CONTROLS_HEADER_HEIGHT + top);
-  const obj2 = { children: _false(_modDef1652.View, obj3) };
+  const obj2 = { children: _false(_modDef1655.View, obj3) };
   obj3 = { style: items, children };
   items = [tmp.container, stageActionBarAnimation];
   const tmp3 = StageChannelBackgroundDefault;

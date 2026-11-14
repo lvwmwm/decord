@@ -1,21 +1,21 @@
-// Module ID: 15640
-// Function ID: 15641
+// Module ID: 15754
+// Function ID: 15755
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 6757, 502, 21, 1652, 5873, 5243, 575, 13005, 504, 6745, 5485, 5957, 5866, 1113, 2]
+// Dependencies: [19, 17, 6820, 502, 21, 1655, 5936, 5306, 575, 13101, 504, 6808, 5548, 6020, 5929, 1113, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 15640 (VoicePanelStreamPreview)
+// Module 15754 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 575 */;
-import components_Button_Button from "components/Button/Button" /* 5873 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 13005 */;
+import components_Button_Button from "components/Button/Button" /* 5936 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 13101 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1652_mod from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import module_1655_mod from "module_1655" /* 1655 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let Pressable;
@@ -27,13 +27,13 @@ let obj2;
 let obj3;
 let size;
 let tmp2;
-const FastImageDefault = tmp2(5957);
+const FastImageDefault = tmp2(6020);
 ({ StyleSheet: c3, View: closure_4, Pressable } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let module_1652 = module_1652_mod;
-let closure_9 = module_1652.createAnimatedComponent(Pressable);
-module_1652 = module_1652_mod;
-let closure_10 = module_1652.createAnimatedComponent(components_Button_Button.Button);
+let module_1655 = module_1655_mod;
+let closure_9 = module_1655.createAnimatedComponent(Pressable);
+module_1655 = module_1655_mod;
+let closure_10 = module_1655.createAnimatedComponent(components_Button_Button.Button);
 let closure_11 = { duration: 200 };
 let createStyles = createStyles_mod;
 let obj = { roundedCard: size, streamPreviewImage: { position: "absolute", width: "100%", height: "100%", opacity: 0.5 }, ownStreamTextContainer: obj2, ownStreamText: obj3 };
@@ -97,9 +97,9 @@ export function VoicePanelStreamPreview(stream) {
     return tmp2;
   }, items1);
   const items2 = [closure_13, mode, , ];
-  const useAnimatedStyle = stream(1652).useAnimatedStyle;
-  stream(1652);
-  items2[2] = stream(5485).withTiming;
+  const useAnimatedStyle = stream(1655).useAnimatedStyle;
+  stream(1655);
+  items2[2] = stream(5548).withTiming;
   items2[3] = closure_11;
   let c0;
   let c1;
@@ -137,20 +137,20 @@ export function VoicePanelStreamPreview(stream) {
   let tmp19 = null;
   if (null != previewUrl) {
     const obj3 = { layout, style: tmp.streamPreviewImage, children: closure_7(FastImageDefault, obj4) };
-    const View = module_1652.View;
+    const View = module_1655.View;
     obj4 = { source: obj5, style: absoluteFill.absoluteFill, resizeMode: "cover" };
     obj5 = { uri: previewUrl };
     tmp19 = closure_7(View, obj3);
   }
   items4 = [tmp19, ];
   const obj6 = { layout, children: closure_7(View3, obj7) };
-  const View2 = module_1652.View;
+  const View2 = module_1655.View;
   obj7 = { style: animatedStyle, children: tmp22Result };
-  View3 = module_1652.View;
+  View3 = module_1655.View;
   if (stateFromStores) {
     const obj8 = { style: tmp.ownStreamTextContainer, children: closure_7(Text, obj9) };
     obj9 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(stream(1113).t["ro/HN8"]) };
-    Text = tmp8(5866).Text;
+    Text = tmp8(5929).Text;
     intl2 = tmp8(1113).intl;
     tmp22Result = tmp22(closure_4, obj8);
   } else {

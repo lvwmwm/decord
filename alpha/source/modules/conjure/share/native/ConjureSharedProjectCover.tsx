@@ -1,18 +1,18 @@
-// Module ID: 13678
-// Function ID: 13679
+// Module ID: 13783
+// Function ID: 13784
 // Name: ConjureSharedProjectCover
-// Dependencies: [19, 17, 21, 5243, 575, 5957, 13679, 5873, 7540, 1113, 4079, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 6020, 13784, 5936, 7606, 1113, 4131, 2]
 // Exports: default
 
-// Module 13678 (ConjureSharedProjectCover)
+// Module 13783 (ConjureSharedProjectCover)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import components_Button_Button from "components/Button/Button" /* 5873 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 13679 */;
+import components_Button_Button from "components/Button/Button" /* 5936 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 13784 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -66,13 +66,13 @@ export default function ConjureSharedProjectCover(onPress) {
       let tmp6Result;
       const Button = components_Button_Button.Button;
       if ("launch" === action) {
-        tmp6Result = tmp6(tmp16(7540).PlayIcon, {});
+        tmp6Result = tmp6(tmp16(7606).PlayIcon, {});
       }
       const obj5 = { variant: "primary-overlay", size: "md", icon: tmp6Result, text: stringResult, loading: launching, onPress };
       const intl = tmp16(1113).intl;
       const string = intl.string;
       if ("launch" === action) {
-        stringResult = string(tmp10(4079)["1cF7L4"]);
+        stringResult = string(tmp10(4131)["1cF7L4"]);
       } else {
         stringResult = string(tmp16(1113).t["3xjX0U"]);
       }

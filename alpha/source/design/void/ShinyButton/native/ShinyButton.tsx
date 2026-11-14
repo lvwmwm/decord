@@ -1,17 +1,17 @@
-// Module ID: 16466
-// Function ID: 16467
+// Module ID: 16589
+// Function ID: 16590
 // Name: ShinyButton
-// Dependencies: [32, 19, 17, 5244, 21, 5243, 504, 1652, 5485, 1190, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 5306, 504, 1655, 5548, 1190, 2]
 // Exports: default
 
-// Module 16466 (ShinyButton)
+// Module 16589 (ShinyButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _modDef1652 from "module_1652" /* 1652 */;
+import _modDef1655 from "module_1655" /* 1655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import createStyles from "createStyles" /* 5243 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -139,9 +139,9 @@ export default function ShinyButton(disabled) {
               tmp = null;
               if (c8) {
                 const items = [closure_5.shineContainer, closure_10];
-                const View = _modDef1652.View;
+                const View = _modDef1655.View;
                 const items1 = [closure_5.shine, _slicedToArray];
-                const View2 = _modDef1652.View;
+                const View2 = _modDef1655.View;
                 const items2 = [closure_5.shineInner, react];
                 tmp = <View onLayout={handleLayout} style={items}>{null}</View>;
               }

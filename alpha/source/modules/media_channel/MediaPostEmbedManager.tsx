@@ -1,19 +1,19 @@
-// Module ID: 20640
-// Function ID: 20641
+// Module ID: 20795
+// Function ID: 20796
 // Name: MediaPostEmbedManager
-// Dependencies: [5147, 502, 5155, 12279, 1072, 1094, 6296, 1403, 13690, 7816, 20149, 2]
+// Dependencies: [5210, 502, 5218, 12374, 1072, 1094, 6359, 1406, 13795, 7882, 20309, 2]
 
-// Module 20640 (MediaPostEmbedManager)
+// Module 20795 (MediaPostEmbedManager)
 import Constants from "Constants" /* 1072 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6296 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 12279 */;
-import MediaChannelActionCreators from "MediaChannelActionCreators" /* 13690 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 20149 */;
-import GatedChannelStore from "GatedChannelStore" /* 5147 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6359 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 12374 */;
+import MediaChannelActionCreators from "MediaChannelActionCreators" /* 13795 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 20309 */;
+import GatedChannelStore from "GatedChannelStore" /* 5210 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let first_message, id, isMember;

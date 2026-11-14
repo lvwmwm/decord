@@ -1,9 +1,9 @@
-// Module ID: 7632
-// Function ID: 7633
+// Module ID: 7698
+// Function ID: 7699
 // Name: LanguageDetector
-// Dependencies: [7633, 2]
+// Dependencies: [7699, 2]
 
-// Module 7632 (LanguageDetector)
+// Module 7698 (LanguageDetector)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/spellcheck/LanguageDetector.tsx");

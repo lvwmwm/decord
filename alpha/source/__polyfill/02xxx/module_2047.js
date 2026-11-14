@@ -4,25 +4,22 @@
 
 // Module 2047
 const obj = {
-  locale: "hu",
+  locale: "fi",
   pluralRuleFunction(arg0, arg1) {
-    let str;
-    const tmp = arg1;
-    if (tmp) {
-      let str2;
+    let str2 = "other";
+    const str = String(arg0);
+    const tmp = str.split(".")[1];
+    if (!arg1) {
+      let str3 = "other";
       if (1 == arg0) {
-        str2 = "one";
-      } else {
-        str2 = "other";
+        str3 = "other";
+        if (!tmp) {
+          str3 = "one";
+        }
       }
-      str = str2;
-    } else {
-      str = "other";
-      if (1 == arg0) {
-        str = "one";
-      }
+      str2 = str3;
     }
-    return str;
+    return str2;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);

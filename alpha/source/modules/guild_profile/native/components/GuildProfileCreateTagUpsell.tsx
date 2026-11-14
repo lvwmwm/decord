@@ -1,17 +1,17 @@
-// Module ID: 10604
-// Function ID: 10605
+// Module ID: 10673
+// Function ID: 10674
 // Name: GuildProfileCreateTagUpsell
-// Dependencies: [19, 17, 21, 5243, 10605, 10608, 5489, 10609, 7871, 5866, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 10674, 10677, 5552, 10678, 7937, 5929, 1113, 2]
 // Exports: default
 
-// Module 10604 (GuildProfileCreateTagUpsell)
+// Module 10673 (GuildProfileCreateTagUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 10609 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 10678 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const Pressable = react_native.Pressable;
@@ -25,13 +25,13 @@ export default function GuildProfileCreateTagUpsell(guildId) {
   let creatableGuilds;
   let tmp2 = guildId;
   const tmp = closure_5();
-  let obj = guildId(10605);
-  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(10608));
+  let obj = guildId(10674);
+  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(10677));
   creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   let tmp5 = null;
   if (guildTagCreationUpsell.isUpsellVisible) {
     ({ variant: "body-md/medium", color: "text-muted", children: intl.string(tmp2(1113).t.J0YWRq) });
-    const Text = tmp2(5866).Text;
+    const Text = tmp2(5929).Text;
     intl = tmp2(1113).intl;
     tmp5 = <Pressable style={tmp.upsell} role="button" onPress={function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;

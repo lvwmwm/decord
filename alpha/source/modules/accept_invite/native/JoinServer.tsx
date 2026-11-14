@@ -1,20 +1,20 @@
-// Module ID: 7730
-// Function ID: 7731
+// Module ID: 7796
+// Function ID: 7797
 // Name: JoinServer
-// Dependencies: [19, 17, 7731, 21, 5243, 575, 5866, 1113, 5850, 1499, 1493, 7551, 5873, 2]
+// Dependencies: [19, 17, 7797, 21, 5306, 575, 5929, 1113, 5913, 1502, 1496, 7617, 5936, 2]
 // Exports: default
 
-// Module 7730 (JoinServer)
+// Module 7796 (JoinServer)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5850 */;
-import Text_Text from "Text/Text" /* 5866 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
+import Text_Text from "Text/Text" /* 5929 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7731 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7797 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -32,7 +32,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const FreeFormInputGroupDefault = tmp2(7551);
+const FreeFormInputGroupDefault = tmp2(7617);
 class OrSeparator {
   constructor() {
     let intl;
@@ -92,7 +92,7 @@ export default function JoinServer(arg0) {
   ({ error, inviteString, onInviteChange } = arg0);
   const tmp = closure_11();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
-  let obj = navigation(1499);
+  let obj = navigation(1502);
   navigation = obj.useNavigation();
   items = [navigation];
   const height = useWindowDimensionsDefault().height;
@@ -108,11 +108,11 @@ export default function JoinServer(arg0) {
   if (height > closure_6) {
     const obj4 = { children: items2 };
     const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1113).t.jlfuFW) };
-    const Text = tmp4(5866).Text;
+    const Text = tmp4(5929).Text;
     intl = tmp4(1113).intl;
     items2 = [closure_8(Text, obj5), ];
     const obj6 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(navigation(1113).t.lVvN3A) };
-    const Text2 = tmp4(5866).Text;
+    const Text2 = tmp4(5929).Text;
     intl2 = tmp4(1113).intl;
     items2[1] = closure_8(Text2, obj6);
     tmp7Result = tmp7(closure_10, obj4);
@@ -125,7 +125,7 @@ export default function JoinServer(arg0) {
   intl4 = tmp4(1113).intl;
   items3[1] = closure_8(tmp2Result, obj8);
   const obj9 = { style: tmp.exampleText, variant: "body-sm/medium", color: "text-muted", children: intl5.format(navigation(1113).t.vwWaTe, obj10) };
-  const Text3 = tmp4(5866).Text;
+  const Text3 = tmp4(5929).Text;
   intl5 = tmp4(1113).intl;
   obj10 = {
     example1: items[0],
@@ -143,13 +143,13 @@ export default function JoinServer(arg0) {
   const obj12 = { style: tmp.growSpacing };
   items5[0] = closure_8(closure_4, obj12);
   const obj13 = { size: "lg", text: intl6.string(navigation(1113).t["+H/coT"]), accessibilityLabel: intl7.string(navigation(1113).t["+H/coT"]), loading: submitting, disabled: submitting, onPress: onDone };
-  const Button = tmp4(5873).Button;
+  const Button = tmp4(5936).Button;
   intl6 = tmp4(1113).intl;
   intl7 = tmp4(1113).intl;
   items5[1] = closure_8(Button, obj13);
   items5[2] = closure_8(OrSeparator, {});
   const obj14 = { size: "lg", variant: "secondary", text: intl8.string(navigation(1113).t["MOqX/G"]), accessibilityLabel: intl9.string(navigation(1113).t["MOqX/G"]), onPress: callback };
-  const Button2 = tmp4(5873).Button;
+  const Button2 = tmp4(5936).Button;
   intl8 = tmp4(1113).intl;
   intl9 = tmp4(1113).intl;
   items5[3] = closure_8(Button2, obj14);

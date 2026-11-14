@@ -1,25 +1,25 @@
-// Module ID: 9398
-// Function ID: 9399
+// Module ID: 9467
+// Function ID: 9468
 // Name: BaseWishlistItemRecord
-// Dependencies: [1405, 2164, 2]
+// Dependencies: [1408, 2167, 2]
 
-// Module 9398 (BaseWishlistItemRecord)
-import Record from "Record" /* 1405 */;
-import SKURecord from "SKURecord" /* 2164 */;
+// Module 9467 (BaseWishlistItemRecord)
+import Record from "Record" /* 1408 */;
+import SKURecord from "SKURecord" /* 2167 */;
 import size from "module_2" /* 2 */;
 
 class BaseWishlistItemRecord extends Record {
-  constructor(shop_expires_at) {
+  constructor(shop_unpublished_at) {
     const tmp3 = new BaseWishlistItemRecord(tmp2, tmp, new.target);
-    ({ sku_id: tmp3.skuId, sku_product_line: tmp3.skuProductLine, sku_name: tmp3.skuName, is_owned: tmp3.isOwned, gifter_user_id: tmp3.gifterUserId, sku: tmp3.sku, added_at: tmp3.addedAt } = shop_expires_at);
+    ({ sku_id: tmp3.skuId, sku_product_line: tmp3.skuProductLine, sku_name: tmp3.skuName, is_owned: tmp3.isOwned, gifter_user_id: tmp3.gifterUserId, sku: tmp3.sku, added_at: tmp3.addedAt } = shop_unpublished_at);
     let date;
-    if (null != shop_expires_at.shop_expires_at) {
+    if (null != shop_unpublished_at.shop_unpublished_at) {
       const _Date = Date;
       const self = this;
       const self2 = this;
-      date = new Date(shop_expires_at.shop_expires_at);
+      date = new Date(shop_unpublished_at.shop_unpublished_at);
     }
-    tmp3.shopExpiresAt = date;
+    tmp3.shopUnpublishedAt = date;
     return tmp3;
   }
   static fromServer(arg0) {
@@ -47,13 +47,13 @@ class BaseWishlistItemRecord extends Record {
       const tmp8 = new BaseWishlistItemRecord(obj, merged1, merged, merged2, sku_id);
       ({ sku_id: tmp8.skuId, sku_product_line: tmp8.skuProductLine, sku_name: tmp8.skuName, is_owned: tmp8.isOwned, gifter_user_id: tmp8.gifterUserId, sku: tmp8.sku, added_at: tmp8.addedAt } = obj);
       let date;
-      if (null != obj.shop_expires_at) {
+      if (null != obj.shop_unpublished_at) {
         const _Date = Date;
         const self3 = this;
         const self4 = this;
-        date = new Date(obj.shop_expires_at);
+        date = new Date(obj.shop_unpublished_at);
       }
-      tmp8.shopExpiresAt = date;
+      tmp8.shopUnpublishedAt = date;
       return tmp8;
     } else {
       throw new TypeError("Trying to call a non-function");

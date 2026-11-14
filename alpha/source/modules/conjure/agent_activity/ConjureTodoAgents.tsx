@@ -1,11 +1,11 @@
-// Module ID: 13486
-// Function ID: 13487
+// Module ID: 13589
+// Function ID: 13590
 // Name: ConjureTodoAgents
-// Dependencies: [13471, 2]
+// Dependencies: [13574, 2]
 // Exports: groupAgentsByTodo, runningTodoAgents, splitAgentOverflow
 
-// Module 13486 (ConjureTodoAgents)
-import ConjureTimelineTree from "ConjureTimelineTree" /* 13471 */;
+// Module 13589 (ConjureTodoAgents)
+import ConjureTimelineTree from "ConjureTimelineTree" /* 13574 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -14,7 +14,7 @@ let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureT
 
 export const MAX_SHOWN_AGENTS = 3;
 export function runningTodoAgents(tasks) {
-  let obj;
+  let obj2;
   let taskId;
   const items = [];
   const iter = tasks[Symbol.iterator]();
@@ -22,14 +22,14 @@ export function runningTodoAgents(tasks) {
   while (iter !== undefined) {
     let tmp2 = nextResult;
     if ("running" === nextResult.task.status) {
-      let obj2 = { key: tmp2.taskId, name: taskId, task: obj.describeNode(tmp2.task), todoId: tmp2.task.todoId };
+      let obj = { key: tmp2.taskId, name: taskId, task: obj2.describeNode(tmp2.task), todoId: tmp2.task.todoId };
       taskId = tmp2.task.helperName;
       let push = items.push;
       if (taskId == null) {
         taskId = tmp2.taskId;
       }
-      obj = ConjureTimelineTree;
-      let arr = push(obj2);
+      obj2 = ConjureTimelineTree;
+      let arr = push(obj);
     }
     continue;
   }

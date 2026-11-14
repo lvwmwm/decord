@@ -1,16 +1,16 @@
-// Module ID: 9441
-// Function ID: 9442
+// Module ID: 9508
+// Function ID: 9509
 // Name: Nameplate
-// Dependencies: [19, 5244, 21, 5243, 504, 5484, 1652, 5485, 2108, 9442, 5830, 1377, 9431, 5957, 2]
+// Dependencies: [19, 5307, 21, 5306, 504, 5547, 1655, 5548, 2111, 9509, 5893, 6020, 2]
 // Exports: default
 
-// Module 9441 (Nameplate)
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
+// Module 9508 (Nameplate)
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -21,6 +21,7 @@ function NameplateInner(isFocused) {
   let isPressed;
   let items4;
   let items5;
+  let items6;
   let nameplate;
   let point;
   let tmp10;
@@ -67,9 +68,9 @@ function NameplateInner(isFocused) {
   const tmp4 = closure_7(flag3, isPressed, flag, flag2, flag5);
   const tmp5 = sharedValue;
   let num = 1;
-  const tmp6 = sharedValue(5484)();
-  const useSharedValue = flag6(1652).useSharedValue;
-  flag6(1652);
+  const tmp6 = sharedValue(5547)();
+  const useSharedValue = flag6(1655).useSharedValue;
+  flag6(1655);
   if (flag6) {
     num = 0;
   }
@@ -80,17 +81,17 @@ function NameplateInner(isFocused) {
     const tmp = flag6;
     if (tmp) {
       set = sharedValue.set;
-      const obj = { duration: 100, easing: Easing.in(_mod1652.Easing.ease) };
+      const obj = { duration: 100, easing: Easing.in(_mod1655.Easing.ease) };
       const withTiming = timing_timing.withTiming;
       timing_timing;
-      Easing = _mod1652.Easing;
+      Easing = _mod1655.Easing;
       const result = set(withTiming(1, obj));
     }
   }, items1);
   const items2 = [closure_8, sharedValue];
   let c0;
   [tmp10, tmp11] = items2;
-  const tmpResult = tmp(1652);
+  const tmpResult = tmp(1655);
   class NameplateTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -102,10 +103,10 @@ function NameplateInner(isFocused) {
   NameplateTsx1.__workletHash = 2118555458479;
   NameplateTsx1.__initData = tmp10;
   const animatedStyle = tmpResult.useAnimatedStyle(NameplateTsx1);
-  const tmpResult4 = tmp(2108);
-  const backgroundGradientColors = tmpResult4.getBackgroundGradientColors(nameplate.palette, tmp6);
-  const tmpResult5 = tmp(9442);
-  const nameplateAssets = tmpResult5.getNameplateAssets(nameplate);
+  const tmpResult3 = tmp(2111);
+  const backgroundGradientColors = tmpResult3.getBackgroundGradientColors(nameplate.palette, tmp6);
+  const tmpResult4 = tmp(9509);
+  const nameplateAssets = tmpResult4.getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp15 = true === flag7;
   const animatedImageUrl = nameplateAssets.animatedImageUrl;
@@ -121,16 +122,16 @@ function NameplateInner(isFocused) {
   if (str == null) {
     str = "";
   }
-  const obj2 = { style: items4, children: null };
+  const obj2 = { style: items4, children: items6 };
   items4 = [tmp4.container, style, animatedStyle];
   let tmp18Result = null;
-  const View = tmp5(1652).View;
+  const View = tmp5(1655).View;
   const tmp16 = closure_6;
   if (null != backgroundGradientColors) {
     let num2 = 0;
     const obj3 = { style: tmp4.gradient, start: point, end: { x: 1, y: 0 }, colors: items5 };
     const tmp18 = closure_5;
-    const tmp5Result = tmp5(5830);
+    const tmp5Result = tmp5(5893);
     if (flag4) {
       num2 = -2;
     }
@@ -139,20 +140,10 @@ function NameplateInner(isFocused) {
     ({ left: arr6[0], right: arr6[1] } = backgroundGradientColors);
     tmp18Result = tmp18(tmp5Result, obj3);
   }
-  const items6 = [tmp18Result, ];
-  const tmpResult6 = tmp(1377);
-  if (tmpResult6.isAndroid()) {
-    let tmp20;
-    if (tmp15) {
-      const obj4 = { url: str, style: tmp4.img, autoplay: true };
-      tmp20 = closure_5(tmp(9431).APNGPlayer, obj4);
-    }
-    items6[1] = tmp20;
-    obj2.children = items6;
-    return tmp16(View, obj2);
-  }
-  const obj5 = { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" };
-  tmp20 = closure_5(tmp5(5957), obj5);
+  items6 = [tmp18Result, ];
+  const obj4 = { source: { uri: str }, style: tmp4.img, accessibilityRole: "image", enableAnimation: tmp15 };
+  items6[1] = closure_5(tmp5(6020), obj4);
+  return tmp16(View, obj2);
 }
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4) => {

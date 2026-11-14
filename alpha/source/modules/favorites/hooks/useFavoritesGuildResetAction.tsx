@@ -1,19 +1,19 @@
-// Module ID: 18728
-// Function ID: 18729
+// Module ID: 18857
+// Function ID: 18858
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 5286, 1072, 5068, 5117, 1099, 10875, 1113, 3629, 2]
+// Dependencies: [19, 5349, 1072, 5131, 5180, 1099, 10944, 1113, 3679, 2]
 // Exports: default
 
-// Module 18728 (useFavoritesGuildResetAction)
+// Module 18857 (useFavoritesGuildResetAction)
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef3629 from "module_3629" /* 3629 */;
-import UserSettings from "UserSettings" /* 5068 */;
-import FavoritesUtils from "FavoritesUtils" /* 5117 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10875 */;
+import _modDef3679 from "module_3679" /* 3679 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import FavoritesUtils from "FavoritesUtils" /* 5180 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10944 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -26,7 +26,7 @@ export default function useFavoritesGuildResetAction() {
   let intl2;
   const DeveloperMode = UserSettings.DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = { isAvailable: setting, label: intl.string(_modDef3629.YkET6R), subLabel: intl2.string(_modDef3629.ZzcwNk), perform: callback };
+  let obj = { isAvailable: setting, label: intl.string(_modDef3679.YkET6R), subLabel: intl2.string(_modDef3679.ZzcwNk), perform: callback };
   callback = react.useCallback(() => {
     const obj = FavoritesUtils;
     if (obj.isFavoritesGuildId(guildId.getGuildId())) {

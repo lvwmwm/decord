@@ -1,13 +1,13 @@
-// Module ID: 5384
-// Function ID: 5385
+// Module ID: 5447
+// Function ID: 5448
 // Name: CameraRive
-// Dependencies: [109, 19, 21, 5322, 5385, 5375, 2]
+// Dependencies: [109, 19, 21, 5385, 5448, 5438, 2]
 // Exports: CameraRive
 
-// Module 5384 (CameraRive)
+// Module 5447 (CameraRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5322 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5375 */;
+import BaseRive2 from "BaseRive" /* 5385 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5438 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -69,7 +69,7 @@ let closure_8 = {
     }
     const colorBinding = useColorBinding("fill", instance, fill, fill1, playIfNeeded);
     let on;
-    const useBooleanBinding = tmp(5322).useBooleanBinding;
+    const useBooleanBinding = tmp(5385).useBooleanBinding;
     BaseRive2;
     if (dataBinding != null) {
       on = dataBinding.on;

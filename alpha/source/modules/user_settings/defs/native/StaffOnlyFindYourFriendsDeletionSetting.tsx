@@ -1,23 +1,23 @@
-// Module ID: 17248
-// Function ID: 17249
+// Module ID: 17371
+// Function ID: 17372
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 9135, 21, 1254, 1259, 5158, 14883, 1336, 5952, 12311, 17249, 2]
+// Dependencies: [5, 17, 9202, 21, 1258, 1263, 5221, 14997, 1339, 6015, 12406, 17372, 2]
 
-// Module 17248 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 17371 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _slicedToArray from "_slicedToArray" /* 5158 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17249 */;
+import _slicedToArray from "_slicedToArray" /* 5221 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17372 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1254 from "module_1254" /* 1254 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import module_1258 from "module_1258" /* 1258 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
-const f113844 = (isLoading) => isLoading.isLoading;
+const f115144 = (isLoading) => isLoading.isLoading;
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -124,14 +124,14 @@ let obj = function _onFindYourFriendsDeletionPress() {
 const ActivityIndicator = react_native.ActivityIndicator;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-let closure_6 = module_1254.createWithEqualityFn(() => ({ isLoading: false }));
+let closure_6 = module_1258.createWithEqualityFn(() => ({ isLoading: false }));
 obj = {
   useTitle() {
     return "STAFF ONLY - Find your friends deletion";
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return closure_6(f113844, _slicedToArray.shallow);
+    return closure_6(f115144, _slicedToArray.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     return obj(...arguments);
@@ -139,7 +139,7 @@ obj = {
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (closure_6(f113844, _slicedToArray.shallow)) {
+    if (closure_6(f115144, _slicedToArray.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;

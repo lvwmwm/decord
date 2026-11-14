@@ -1,12 +1,12 @@
-// Module ID: 6125
-// Function ID: 6126
+// Module ID: 6188
+// Function ID: 6189
 // Name: trackVoiceAndVideoSettingsUpdate
-// Dependencies: [1072, 1252, 2]
+// Dependencies: [1072, 1256, 2]
 // Exports: default
 
-// Module 6125 (trackVoiceAndVideoSettingsUpdate)
+// Module 6188 (trackVoiceAndVideoSettingsUpdate)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

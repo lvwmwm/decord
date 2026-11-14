@@ -1,109 +1,594 @@
 // Module ID: 9831
 // Function ID: 9832
-// Dependencies: [32, 9736]
-// Exports: getBucketKey, sanitizeMetricKey, sanitizeTags, sanitizeUnit, serializeMetricBuckets, simpleHash
+// Dependencies: [32, 9824, 9830, 9819, 9832, 9802, 9814, 9815, 9816, 9809, 9807, 9825, 9797, 9829, 9833, 9835, 9826, 9836, 9838, 9812]
+// Exports: continueTrace, startInactiveSpan, startNewTrace, startSpan, startSpanManual, suppressTracing, withActiveSpan
 
 // Module 9831
-import _mod9736 from "module_9736" /* 9736 */;
+import _mod9802 from "module_9802" /* 9802 */;
+import generatePropagationContext from "generatePropagationContext" /* 9807 */;
+import _mod9809 from "module_9809" /* 9809 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 9812 */;
+import _mod9819 from "module_9819" /* 9819 */;
+import _mod9824 from "module_9824" /* 9824 */;
+import _mod9825 from "module_9825" /* 9825 */;
+import _mod9826 from "module_9826" /* 9826 */;
+import _mod9829 from "module_9829" /* 9829 */;
+import _mod9833 from "module_9833" /* 9833 */;
+import _mod9835 from "module_9835" /* 9835 */;
+import _mod9836 from "module_9836" /* 9836 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let hasOwnProperty;
+const require = globalThis.__r;
+let _require, dependencyMap, setPropagationContext;
 
-let items = [["\n", "\\n"], ["\r", "\\r"], ["\t", "\\t"], ["\\", "\\\\"], ["|", "\\u{7c}"], [",", "\\u{2c}"]];
+let tmp;
+const _mod9797 = tmp(9797);
+const _mod9815 = tmp(9815);
+const _mod9816 = tmp(9816);
+const f99095 = (fn) => fn();
+function createChildOrRootSpan(forceTransaction) {
+  let parentSpan;
+  let scope;
+  let spanArguments;
+  let spanId;
+  let spanId2;
+  let traceId;
+  let traceId2;
+  ({ parentSpan, spanArguments, scope } = forceTransaction);
+  forceTransaction = forceTransaction.forceTransaction;
+  const obj = _mod9829;
+  if (obj.hasTracingEnabled()) {
+    let sentrySpan;
+    const tmpResult = _mod9824;
+    const isolationScope = tmpResult.getIsolationScope();
+    if (parentSpan) {
+      if (!forceTransaction) {
+        ({ traceId, spanId } = parentSpan.spanContext());
+        parentSpan.spanContext();
+        let spanIsSampledResult = !scope.getScopeData().sdkProcessingMetadata[__SENTRY_SUPPRESS_TRACING__];
+        if (spanIsSampledResult) {
+          const tmpResult11 = _mod9802;
+          spanIsSampledResult = tmpResult11.spanIsSampled(parentSpan);
+        }
+        if (spanIsSampledResult) {
+          const obj2 = { parentSpanId: spanId, traceId, sampled: spanIsSampledResult };
+          const SentrySpan = tmp(9838).SentrySpan;
+          const merged = Object.assign(spanArguments);
+          const self5 = this;
+          const self6 = this;
+          sentrySpan = new SentrySpan(obj2);
+        } else {
+          const self3 = this;
+          const self4 = this;
+          const obj3 = { traceId };
+          sentrySpan = new tmp(9830).SentryNonRecordingSpan(obj3);
+        }
+        const tmpResult12 = _mod9802;
+        tmpResult12.addChildSpanToSpan(parentSpan, sentrySpan);
+        const tmpResult13 = _mod9824;
+        const client = tmpResult13.getClient();
+        if (client) {
+          client.emit("spanStart", sentrySpan);
+          if (spanArguments.endTimestamp) {
+            client.emit("spanEnd", sentrySpan);
+          }
+        }
+        const tmpResult14 = _mod9802;
+        tmpResult14.addChildSpanToSpan(parentSpan, sentrySpan);
+      }
+      const tmpResult15 = _mod9835;
+      tmpResult15.logSpanStart(sentrySpan);
+      const tmpResult16 = _mod9826;
+      const result = tmpResult16.setCapturedScopesOnSpan(sentrySpan, scope, isolationScope);
+      return sentrySpan;
+    }
+    if (parentSpan) {
+      const tmpResult17 = _mod9833;
+      const dynamicSamplingContextFromSpan = tmpResult17.getDynamicSamplingContextFromSpan(parentSpan);
+      ({ traceId: traceId2, spanId: spanId2 } = parentSpan.spanContext());
+      parentSpan.spanContext();
+      const obj4 = { traceId: traceId2, parentSpanId: spanId2 };
+      const tmpResult18 = _mod9802;
+      const spanIsSampledResult1 = tmpResult18.spanIsSampled(parentSpan);
+      const merged1 = Object.assign(spanArguments);
+      const tmp35 = _startRootSpan(obj4, scope, spanIsSampledResult1);
+      const tmpResult19 = _mod9833;
+      tmpResult19.freezeDscOnSpan(tmp35, dynamicSamplingContextFromSpan);
+      sentrySpan = tmp35;
+    } else {
+      const obj5 = {};
+      const merged2 = Object.assign(isolationScope.getPropagationContext());
+      const merged3 = Object.assign(scope.getPropagationContext());
+      const dsc = obj5.dsc;
+      const obj6 = { traceId: null, parentSpanId: null };
+      ({ traceId: obj12.traceId, parentSpanId: obj12.parentSpanId } = obj5);
+      const sampled = obj5.sampled;
+      const merged4 = Object.assign(spanArguments);
+      const tmp26 = _startRootSpan(obj6, scope, sampled);
+      sentrySpan = tmp26;
+      if (dsc) {
+        const tmpResult20 = _mod9833;
+        tmpResult20.freezeDscOnSpan(tmp26, dsc);
+        sentrySpan = tmp26;
+      }
+    }
+  } else {
+    const self = this;
+    const self2 = this;
+    const sentryNonRecordingSpan = new tmp(9830).SentryNonRecordingSpan();
+    return sentryNonRecordingSpan;
+  }
+}
+function _startRootSpan(name, arg1, parentSampled) {
+  let obj3;
+  let obj5;
+  let sampleSpanResult;
+  let tmp7;
+  let tmp8;
+  const obj = _mod9824;
+  const client = obj.getClient();
+  name = name.name;
+  let str = "";
+  const tmp3 = client && client.getOptions() || {};
+  if (undefined !== name) {
+    str = name;
+  }
+  const attributes = name.attributes;
+  if (arg1.getScopeData().sdkProcessingMetadata[__SENTRY_SUPPRESS_TRACING__]) {
+    const items = [false];
+    sampleSpanResult = items;
+  } else {
+    const obj2 = { name: str, parentSampled, attributes, transactionContext: obj3 };
+    obj3 = { name: str, parentSampled };
+    const tmpResult = _mod9836;
+    sampleSpanResult = tmpResult.sampleSpan(tmp3, obj2);
+  }
+  [tmp7, tmp8] = sampleSpanResult;
+  const obj4 = { attributes: obj5, sampled: tmp7 };
+  _slicedToArray(sampleSpanResult, 2);
+  const SentrySpan = tmp(9838).SentrySpan;
+  const merged = Object.assign(name);
+  obj5 = { [SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "custom" };
+  const merged1 = Object.assign(name.attributes);
+  const sentrySpan = new SentrySpan(obj4);
+  if (undefined !== tmp8) {
+    const attr = sentrySpan.setAttribute(tmp(9812).SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE, tmp8);
+  }
+  if (client) {
+    client.emit("spanStart", sentrySpan);
+  }
+  return sentrySpan;
+}
+const __SENTRY_SUPPRESS_TRACING__ = "__SENTRY_SUPPRESS_TRACING__";
 
-export function getBucketKey(metricType, sanitizeMetricKeyResult, sanitizeUnitResult, sanitizeTagsResult) {
-  const obj = _mod9736;
-  const entries1 = entries(obj.dropUndefinedKeys(sanitizeTagsResult));
-  return "" + metricType + sanitizeMetricKeyResult + sanitizeUnitResult + entries1.sort((arg0, arg1) => {
-    const first = arg0[0];
-    return first.localeCompare(arg1[0]);
+export const continueTrace = (arg0, arg1) => {
+  let closure_0;
+  _require = arg1;
+  let obj = require("module_9815");
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = require("module_9816");
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  const tmp = _require;
+  if (asyncContextStrategy.continueTrace) {
+    return asyncContextStrategy.continueTrace(arg0, arg1);
+  } else {
+    ({ sentryTrace: dependencyMap, baggage: _slicedToArray } = arg0);
+    const tmpResult = tmp(9824);
+    return tmpResult.withScope((setPropagationContext) => {
+      const obj = _mod9809;
+      const result = setPropagationContext.setPropagationContext(obj.propagationContextFromHeaders(dependencyMap, _slicedToArray));
+      return closure_0();
+    });
+  }
+};
+export function startInactiveSpan(experimental) {
+  let forceTransaction;
+  let obj4;
+  let parentSpan;
+  let tmp4;
+  let tmpResult;
+  _require = experimental;
+  let tmp = _require;
+  let tmp2 = obj4;
+  let obj = require("module_9815");
+  let mainCarrier = obj.getMainCarrier();
+  let obj2 = require("module_9816");
+  let asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (asyncContextStrategy.startInactiveSpan) {
+    return asyncContextStrategy.startInactiveSpan(experimental);
+  } else {
+    let fn;
+    let obj3 = { isStandalone: tmp4.standalone };
+    let tmp5 = obj3;
+    tmp4 = experimental.experimental || {};
+    const merged = Object.assign(experimental);
+    let tmp8 = obj3;
+    if (experimental.startTime) {
+      obj4 = { startTimestamp: tmpResult.spanTimeInputToSeconds(experimental.startTime) };
+      const merged1 = Object.assign(obj3);
+      tmpResult = tmp(tmp2[5]);
+      delete obj5["startTime"];
+      tmp8 = obj4;
+    }
+    obj4 = tmp8;
+    ({ forceTransaction: _slicedToArray, parentSpan } = experimental);
+    if (experimental.scope) {
+      fn = (arg0) => {
+        const obj = _mod9824;
+        return obj.withScope(experimental.scope, arg0);
+      };
+    } else {
+      fn = undefined !== parentSpan ? ((arg0) => {
+        let withActiveSpanResult;
+        let closure_0 = parentSpan;
+        let closure_1 = arg0;
+        const obj = _mod9815;
+        const mainCarrier = obj.getMainCarrier();
+        const obj2 = _mod9816;
+        const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+        const tmp = parentSpan;
+        if (asyncContextStrategy.withActiveSpan) {
+          withActiveSpanResult = asyncContextStrategy.withActiveSpan(tmp, arg0);
+        } else {
+          const tmp2Result = _mod9824;
+          withActiveSpanResult = tmp2Result.withScope((arg0) => {
+            const _setSpanForScope = closure_2_0(closure_2_1[3])._setSpanForScope;
+            closure_2_0(closure_2_1[3]);
+            _setSpanForScope(arg0, c0);
+            return closure_1(arg0);
+          });
+        }
+        return withActiveSpanResult;
+      }) : ((fn) => fn());
+    }
+    return fn(function() {
+      const obj = _mod9824;
+      const currentScope = obj.getCurrentScope();
+      const obj2 = _mod9819;
+      const _getSpanForScopeResult = obj2._getSpanForScope(currentScope);
+      let tmp5;
+      if (_getSpanForScopeResult) {
+        let options;
+        const tmpResult = _mod9824;
+        const client = tmpResult.getClient();
+        if (client) {
+          options = client.getOptions();
+        } else {
+          options = {};
+        }
+        let rootSpan = _getSpanForScopeResult;
+        if (options.parentSpanIsAlwaysRootSpan) {
+          const tmpResult2 = _mod9802;
+          rootSpan = tmpResult2.getRootSpan(_getSpanForScopeResult);
+        }
+        tmp5 = rootSpan;
+      }
+      if (experimental.onlyIfParent) {
+        let sentryNonRecordingSpan;
+        if (!tmp5) {
+          const self = this;
+          const self2 = this;
+          sentryNonRecordingSpan = new tmp(9830).SentryNonRecordingSpan();
+        }
+        return sentryNonRecordingSpan;
+      }
+      const obj3 = { parentSpan: tmp5, spanArguments: obj4, forceTransaction: _slicedToArray, scope: currentScope };
+      sentryNonRecordingSpan = createChildOrRootSpan(obj3);
+    });
+  }
+}
+export function startNewTrace(arg0) {
+  let closure_0;
+  _require = arg0;
+  let obj = require("module_9824");
+  return obj.withScope((setPropagationContext) => {
+    let obj2;
+    let withActiveSpanResult;
+    setPropagationContext = setPropagationContext.setPropagationContext;
+    const obj = { traceId: obj2.generateTraceId() };
+    obj2 = generatePropagationContext;
+    const result = setPropagationContext(obj);
+    if (_mod9825.DEBUG_BUILD) {
+      const logger = _mod9797.logger;
+      const _HermesInternal = HermesInternal;
+      logger.info("Starting a new trace with id " + setPropagationContext.getPropagationContext().traceId);
+    }
+    let c0 = null;
+    let closure_1 = closure_0;
+    const tmpResult = _mod9815;
+    const mainCarrier = tmpResult.getMainCarrier();
+    const tmpResult3 = _mod9816;
+    const asyncContextStrategy = tmpResult3.getAsyncContextStrategy(mainCarrier);
+    const tmp6 = closure_0;
+    if (asyncContextStrategy.withActiveSpan) {
+      withActiveSpanResult = asyncContextStrategy.withActiveSpan(null, tmp6);
+    } else {
+      const tmpResult4 = _mod9824;
+      withActiveSpanResult = tmpResult4.withScope((arg0) => {
+        const _setSpanForScope = closure_2_0(closure_2_1[3])._setSpanForScope;
+        closure_2_0(closure_2_1[3]);
+        _setSpanForScope(arg0, c0);
+        return closure_1(arg0);
+      });
+    }
+    return withActiveSpanResult;
   });
 }
-export function sanitizeMetricKey(str) {
-  return str.replace(/[^\w\-.]+/gi, "_");
-}
-export function sanitizeTags(tags) {
-  let obj = {};
-  for (const key10007 in tags) {
-    let tmp5 = key10007;
-    let _Object = Object;
-    hasOwnProperty = Object.prototype.hasOwnProperty;
-    if (!hasOwnProperty.call(tags, key10007)) {
-      continue;
-    } else {
-      let _String = String;
-      let replaced = key10007.replace(/[^\w\-./]+/gi, "");
-      items = [];
-      let tmp3 = items;
-      let arraySpreadResult = HermesBuiltin.arraySpread(items, String(tags[key10007]), 0);
-      obj[replaced] = items.reduce((acc, item) => {
-        function getCharOrReplacement(item) {
-          const obj = closure_1_3[Symbol.iterator]();
-          while (obj !== undefined) {
-            let tmp4 = closure_1_2(tmp2, 2);
-            if (item === tmp4[0]) {
-              obj.return();
-              return tmp5;
-            }
-          }
-          return item;
+export function startSpan(experimental, arg1) {
+  let closure_1;
+  let tmp4;
+  let tmpResult;
+  _require = experimental;
+  dependencyMap = arg1;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("module_9815");
+  const mainCarrier = obj.getMainCarrier();
+  let obj2 = require("module_9816");
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (asyncContextStrategy.startSpan) {
+    return asyncContextStrategy.startSpan(experimental, arg1);
+  } else {
+    let obj3 = { isStandalone: tmp4.standalone };
+    let tmp5 = obj3;
+    let tmp6 = experimental;
+    tmp4 = experimental.experimental || {};
+    const merged = Object.assign(experimental);
+    let tmp8 = obj3;
+    if (experimental.startTime) {
+      let obj4 = { startTimestamp: tmpResult.spanTimeInputToSeconds(experimental.startTime) };
+      const merged1 = Object.assign(obj3);
+      tmpResult = tmp(9802);
+      delete obj5["startTime"];
+      tmp8 = obj4;
+    }
+    obj4 = tmp8;
+    ({ forceTransaction: __SENTRY_SUPPRESS_TRACING__, parentSpan: createChildOrRootSpan } = experimental);
+    const tmpResult2 = tmp(9824);
+    return tmpResult2.withScope(experimental.scope, () => {
+      let forceTransaction;
+      let spanArguments;
+      let closure_0 = createChildOrRootSpan;
+      return undefined !== createChildOrRootSpan ? ((arg0) => {
+        let withActiveSpanResult;
+        closure_1 = arg0;
+        const obj = experimental(closure_2_1[7]);
+        const mainCarrier = obj.getMainCarrier();
+        const obj2 = experimental(closure_2_1[8]);
+        const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+        const tmp = closure_0;
+        const tmp2 = experimental;
+        const tmp3 = closure_2_1;
+        if (asyncContextStrategy.withActiveSpan) {
+          withActiveSpanResult = asyncContextStrategy.withActiveSpan(tmp, arg0);
+        } else {
+          const tmp2Result = tmp2(tmp3[1]);
+          withActiveSpanResult = tmp2Result.withScope((arg0) => {
+            const _setSpanForScope = closure_2_0(closure_2_1[3])._setSpanForScope;
+            closure_2_0(closure_2_1[3]);
+            _setSpanForScope(arg0, c0);
+            return closure_1(arg0);
+          });
         }
-        return acc + getCharOrReplacement(item);
-      }, "");
-      continue;
-    }
-    continue;
-  }
-  return obj;
-}
-export function sanitizeUnit(none) {
-  return none.replace(/[^\w]+/gi, "_");
-}
-export function serializeMetricBuckets(arg0) {
-  let str = "";
-  const iter = arg0[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let tmp2 = nextResult;
-    let _Object = Object;
-    let entries = Object.entries(nextResult.tags);
-    let arr2 = entries;
-    let str2 = "";
-    if (entries.length > 0) {
-      let mapped = arr2.map((item) => {
-        let tmp;
-        let tmp2;
-        [tmp, tmp2] = item;
-        return "" + tmp + ":" + tmp2;
+        return withActiveSpanResult;
+      }) : f99095(function() {
+        let sentryNonRecordingSpan;
+        let tmp = experimental;
+        let tmp2 = closure_1_1;
+        let obj = experimental(closure_1_1[1]);
+        const currentScope = obj.getCurrentScope();
+        let obj2 = experimental(closure_1_1[3]);
+        const _getSpanForScopeResult = obj2._getSpanForScope(currentScope);
+        let tmp5;
+        if (_getSpanForScopeResult) {
+          let options;
+          const tmpResult = tmp(tmp2[1]);
+          const client = tmpResult.getClient();
+          if (client) {
+            options = client.getOptions();
+          } else {
+            options = {};
+          }
+          let rootSpan = _getSpanForScopeResult;
+          if (options.parentSpanIsAlwaysRootSpan) {
+            const tmpResult4 = tmp(tmp2[5]);
+            rootSpan = tmpResult4.getRootSpan(_getSpanForScopeResult);
+          }
+          tmp5 = rootSpan;
+        }
+        if (sentryNonRecordingSpan.onlyIfParent) {
+          if (!tmp5) {
+            const self = this;
+            const self2 = this;
+            sentryNonRecordingSpan = new tmp(tmp2[2]).SentryNonRecordingSpan();
+          }
+          const tmpResult5 = tmp(tmp2[3]);
+          tmpResult5._setSpanForScope(currentScope, sentryNonRecordingSpan);
+          const tmpResult6 = tmp(tmp2[4]);
+          return tmpResult6.handleCallbackErrors(() => closure_2_1(sentryNonRecordingSpan), () => {
+            const obj = sentryNonRecordingSpan(closure_1[5]);
+            const status = obj.spanToJSON(sentryNonRecordingSpan).status;
+            const isRecordingResult = sentryNonRecordingSpan.isRecording();
+            let tmp5 = !isRecordingResult;
+            const tmp = sentryNonRecordingSpan;
+            const tmp2 = closure_1;
+            const tmp3 = sentryNonRecordingSpan;
+            if (isRecordingResult) {
+              tmp5 = status && "ok" !== status;
+              const tmp6 = status && "ok" !== status;
+            }
+            if (!tmp5) {
+              const setStatus = tmp3.setStatus;
+              const obj2 = { code: tmp(tmp2[6]).SPAN_STATUS_ERROR, message: "internal_error" };
+              setStatus(obj2);
+            }
+          }, () => sentryNonRecordingSpan.end());
+        }
+        const obj3 = { parentSpan: tmp5, spanArguments, forceTransaction, scope: currentScope };
+        sentryNonRecordingSpan = closure_1_4(obj3);
       });
-      let _HermesInternal = HermesInternal;
-      str2 = "|#" + mapped.join(",");
-    }
-    let _HermesInternal2 = HermesInternal;
-    let str3 = "";
-    let str4 = "@";
-    let str5 = ":";
-    let str6 = "|";
-    let str7 = "|T";
-    let str8 = "\n";
-    str = str + "" + tmp2.name + "@" + tmp2.unit + ":" + tmp2.metric + "|" + tmp2.metricType + str2 + "|T" + tmp2.timestamp + "\n";
-    continue;
+    });
   }
-  return str;
 }
-export function simpleHash(item) {
-  let length;
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < item.length) {
-    do {
-      let sum = (num2 << 5) - num2 + item.charCodeAt(num);
-      num2 = sum & sum;
-      num = num + 1;
-      num3 = num2;
-      length = item.length;
-    } while (num < length);
+export function startSpanManual(experimental, arg1) {
+  let tmp4;
+  let tmpResult;
+  _require = experimental;
+  dependencyMap = arg1;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("module_9815");
+  let mainCarrier = obj.getMainCarrier();
+  let obj2 = require("module_9816");
+  let asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (asyncContextStrategy.startSpanManual) {
+    return asyncContextStrategy.startSpanManual(experimental, arg1);
+  } else {
+    let obj3 = { isStandalone: tmp4.standalone };
+    let tmp5 = obj3;
+    let tmp6 = experimental;
+    tmp4 = experimental.experimental || {};
+    const merged = Object.assign(experimental);
+    let tmp8 = obj3;
+    if (experimental.startTime) {
+      let obj4 = { startTimestamp: tmpResult.spanTimeInputToSeconds(experimental.startTime) };
+      const merged1 = Object.assign(obj3);
+      tmpResult = tmp(9802);
+      delete obj5["startTime"];
+      tmp8 = obj4;
+    }
+    obj4 = tmp8;
+    ({ forceTransaction: __SENTRY_SUPPRESS_TRACING__, parentSpan: createChildOrRootSpan } = experimental);
+    const tmpResult2 = tmp(9824);
+    return tmpResult2.withScope(experimental.scope, () => {
+      let forceTransaction;
+      let spanArguments;
+      let closure_0 = createChildOrRootSpan;
+      return undefined !== createChildOrRootSpan ? ((arg0) => {
+        let withActiveSpanResult;
+        closure_1 = arg0;
+        const obj = experimental(closure_2_1[7]);
+        const mainCarrier = obj.getMainCarrier();
+        const obj2 = experimental(closure_2_1[8]);
+        const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+        const tmp = closure_0;
+        const tmp2 = experimental;
+        const tmp3 = closure_2_1;
+        if (asyncContextStrategy.withActiveSpan) {
+          withActiveSpanResult = asyncContextStrategy.withActiveSpan(tmp, arg0);
+        } else {
+          const tmp2Result = tmp2(tmp3[1]);
+          withActiveSpanResult = tmp2Result.withScope((arg0) => {
+            const _setSpanForScope = closure_2_0(closure_2_1[3])._setSpanForScope;
+            closure_2_0(closure_2_1[3]);
+            _setSpanForScope(arg0, c0);
+            return closure_1(arg0);
+          });
+        }
+        return withActiveSpanResult;
+      }) : f99095(function() {
+        let sentryNonRecordingSpan;
+        function finishAndSetSpan() {
+          sentryNonRecordingSpan.end();
+        }
+        let tmp = experimental;
+        let tmp2 = closure_1_1;
+        let obj = experimental(closure_1_1[1]);
+        const currentScope = obj.getCurrentScope();
+        let obj2 = experimental(closure_1_1[3]);
+        const _getSpanForScopeResult = obj2._getSpanForScope(currentScope);
+        let tmp5;
+        if (_getSpanForScopeResult) {
+          let options;
+          const tmpResult = tmp(tmp2[1]);
+          const client = tmpResult.getClient();
+          if (client) {
+            options = client.getOptions();
+          } else {
+            options = {};
+          }
+          let rootSpan = _getSpanForScopeResult;
+          if (options.parentSpanIsAlwaysRootSpan) {
+            const tmpResult4 = tmp(tmp2[5]);
+            rootSpan = tmpResult4.getRootSpan(_getSpanForScopeResult);
+          }
+          tmp5 = rootSpan;
+        }
+        if (sentryNonRecordingSpan.onlyIfParent) {
+          if (!tmp5) {
+            const self = this;
+            const self2 = this;
+            sentryNonRecordingSpan = new tmp(tmp2[2]).SentryNonRecordingSpan();
+          }
+          const tmpResult5 = tmp(tmp2[3]);
+          tmpResult5._setSpanForScope(currentScope, sentryNonRecordingSpan);
+          const tmpResult6 = tmp(tmp2[4]);
+          return tmpResult6.handleCallbackErrors(() => closure_2_1(sentryNonRecordingSpan, finishAndSetSpan), () => {
+            const obj = sentryNonRecordingSpan(finishAndSetSpan[5]);
+            const status = obj.spanToJSON(sentryNonRecordingSpan).status;
+            const isRecordingResult = sentryNonRecordingSpan.isRecording();
+            let tmp5 = !isRecordingResult;
+            const tmp = sentryNonRecordingSpan;
+            const tmp2 = finishAndSetSpan;
+            const tmp3 = sentryNonRecordingSpan;
+            if (isRecordingResult) {
+              tmp5 = status && "ok" !== status;
+              const tmp6 = status && "ok" !== status;
+            }
+            if (!tmp5) {
+              const setStatus = tmp3.setStatus;
+              const obj2 = { code: tmp(tmp2[6]).SPAN_STATUS_ERROR, message: "internal_error" };
+              setStatus(obj2);
+            }
+          });
+        }
+        const obj3 = { parentSpan: tmp5, spanArguments, forceTransaction, scope: currentScope };
+        sentryNonRecordingSpan = closure_1_4(obj3);
+      });
+    });
   }
-  return num3 >>> 0;
+}
+export function suppressTracing(arg0) {
+  let closure_0;
+  let suppressTracingResult;
+  _require = arg0;
+  const obj = require("module_9815");
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = require("module_9816");
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  const tmp = _require;
+  if (asyncContextStrategy.suppressTracing) {
+    suppressTracingResult = asyncContextStrategy.suppressTracing(arg0);
+  } else {
+    const tmpResult = tmp(9824);
+    suppressTracingResult = tmpResult.withScope((setSDKProcessingMetadata) => {
+      const result = setSDKProcessingMetadata.setSDKProcessingMetadata({ [closure_2_3]: true });
+      return closure_0();
+    });
+  }
+  return suppressTracingResult;
+}
+export function withActiveSpan(arg0, arg1) {
+  let closure_0;
+  let closure_1;
+  let withActiveSpanResult;
+  _require = arg0;
+  dependencyMap = arg1;
+  const obj = require("module_9815");
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = require("module_9816");
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  const tmp = _require;
+  if (asyncContextStrategy.withActiveSpan) {
+    withActiveSpanResult = asyncContextStrategy.withActiveSpan(arg0, arg1);
+  } else {
+    const tmpResult = tmp(9824);
+    withActiveSpanResult = tmpResult.withScope((arg0) => {
+      const _setSpanForScope = closure_2_0(closure_2_1[3])._setSpanForScope;
+      closure_2_0(closure_2_1[3]);
+      _setSpanForScope(arg0, c0);
+      return closure_1(arg0);
+    });
+  }
+  return withActiveSpanResult;
 }

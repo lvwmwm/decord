@@ -1,13 +1,13 @@
-// Module ID: 20781
-// Function ID: 20782
+// Module ID: 20935
+// Function ID: 20936
 // Name: ToggleSelfMute
-// Dependencies: [5092, 20777, 12926, 12950, 2]
+// Dependencies: [5155, 20931, 13022, 13046, 2]
 
-// Module 20781 (ToggleSelfMute)
-import useMuteStates from "useMuteStates" /* 12926 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 12950 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20777 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
+// Module 20935 (ToggleSelfMute)
+import useMuteStates from "useMuteStates" /* 13022 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 13046 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20931 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/headless_tasks/android/ToggleSelfMute.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 13306
-// Function ID: 13307
+// Module ID: 13411
+// Function ID: 13412
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 5244, 1377, 2020, 5440, 1625, 1493, 11948, 5854, 11947, 2]
+// Dependencies: [19, 5307, 1380, 2023, 5503, 1628, 1496, 12015, 5917, 12014, 2]
 // Exports: default
 
-// Module 13306 (useCustomKeyboardBottomSheetConfig)
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import KeyboardTypes from "KeyboardTypes" /* 1625 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2020 */;
-import useKeyboardType from "useKeyboardType" /* 5440 */;
+// Module 13411 (useCustomKeyboardBottomSheetConfig)
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2023 */;
+import useKeyboardType from "useKeyboardType" /* 5503 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   let obj2;
   let str;
   let styles;
-  const f106068 = () => {
+  const f107315 = () => {
     const obj = { initialPosition: styles.height - minimum, animateOnMount: false };
     let tmp3 = obj;
     const obj2 = PlatformUtils;
@@ -64,8 +64,8 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   minimum = tmp3.minimum;
   const maximum = tmp3.maximum;
   let items = [flag, maximum, minimum];
-  ({ initialPosition, animateOnMount } = require("react")(f106068));
-  const tmp4 = require("react")(f106068);
+  ({ initialPosition, animateOnMount } = require("react")(f107315));
+  const tmp4 = require("react")(f107315);
   let obj = { animateOnMount, enablePanDownToClose: flag2, accessible: obj2.isAndroid() && undefined, contentHeight: maximum, containerHeight: tmp2.height, enableDynamicSizing: false, initialPosition, keyboardBehavior: "extend", android_keyboardInputMode: str, snapPoints: memo };
   memo = maximum.useMemo(() => {
     let items1;

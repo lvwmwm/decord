@@ -1,10 +1,10 @@
-// Module ID: 10370
-// Function ID: 10371
+// Module ID: 10439
+// Function ID: 10440
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 10371, 7195, 9973, 1113, 2]
+// Dependencies: [5, 32, 19, 10440, 7258, 10040, 1113, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 10370 (useRedeemVirtualCurrency)
+// Module 10439 (useRedeemVirtualCurrency)
 import intl3 from "intl" /* 1113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -1,11 +1,11 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 15987
+// Function ID: 15988
 // Name: SocialSdkGameResolver
-// Dependencies: [2156, 2]
+// Dependencies: [2159, 2]
 // Exports: withProcessIdentity
 
-// Module 15867 (SocialSdkGameResolver)
-import DetectableGameStore from "DetectableGameStore" /* 2156 */;
+// Module 15987 (SocialSdkGameResolver)
+import DetectableGameStore from "DetectableGameStore" /* 2159 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -149,12 +149,12 @@ class SocialSdkGameResolver {
 const prototype = SocialSdkGameResolver.prototype;
 
 export { SdkCanonicalGameResolutionType };
-export function withProcessIdentity(processGame) {
-  processGame = processGame.processGame;
-  let tmp = processGame;
+export function withProcessIdentity(gameForPID) {
+  const processGame = gameForPID.processGame;
+  let tmp = gameForPID;
   if (null != processGame) {
     const obj = { processGame: undefined };
-    const merged = Object.assign(processGame);
+    const merged = Object.assign(gameForPID);
     ({ id: obj.id, name: obj.name } = processGame);
     tmp = obj;
   }

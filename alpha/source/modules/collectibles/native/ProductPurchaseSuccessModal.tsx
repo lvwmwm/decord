@@ -1,26 +1,26 @@
-// Module ID: 9954
-// Function ID: 9955
+// Module ID: 10021
+// Function ID: 10022
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5244, 1072, 21, 5243, 575, 2111, 9953, 7434, 7483, 1113, 1652, 5876, 5485, 5491, 8429, 9955, 5839, 5830, 9342, 9957, 504, 9958, 9962, 9971, 9974, 9335, 5957, 7351, 9976, 9420, 9433, 9460, 9995, 9996, 5866, 8431, 5873, 2]
+// Dependencies: [32, 717, 19, 17, 5307, 1072, 21, 5306, 575, 2114, 10020, 7500, 7549, 1113, 1655, 5939, 5548, 5554, 8495, 10022, 5902, 5893, 9409, 10024, 504, 10025, 10029, 10038, 10041, 9402, 6020, 7415, 10043, 9489, 9500, 9527, 10062, 10063, 5929, 8497, 5936, 2]
 // Exports: default
 
-// Module 9954 (ProductPurchaseSuccessModal)
+// Module 10021 (ProductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import HapticUtils from "HapticUtils" /* 5491 */;
-import _mod7434 from "module_7434" /* 7434 */;
-import XSmallIcon from "XSmallIcon" /* 7483 */;
-import _modDef8429 from "module_8429" /* 8429 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9953 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
+import HapticUtils from "HapticUtils" /* 5554 */;
+import _mod7500 from "module_7500" /* 7500 */;
+import XSmallIcon from "XSmallIcon" /* 7549 */;
+import _modDef8495 from "module_8495" /* 8495 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10020 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ function CancelButton(arg0) {
     accessibilityLabel: intl.string(intl5.t.cpT0Cq),
     displayMode: "minimal"
   };
-  const HeaderBackButton = _mod7434.HeaderBackButton;
+  const HeaderBackButton = _mod7500.HeaderBackButton;
   intl = intl5.intl;
   return closure_11(HeaderBackButton, obj);
 }
@@ -178,7 +178,7 @@ let closure_17 = { code: "(function ProductPurchaseSuccessModalTsx1(){let[interp
 let closure_18 = { code: "(function ProductPurchaseSuccessModalTsx2(){let[interpolate,springInput]=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0.75,1])}]};})" };
 let closure_19 = { code: "(function ProductPurchaseSuccessModalTsx3(){let[interpolate,linearInput]=this.__closure;return{opacity:interpolate(linearInput.get(),[0,1],[0.5,0])};})" };
 let closure_20 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
-let obj5 = _modDef8429("black");
+let obj5 = _modDef8495("black");
 let closure_21 = obj5.toHexString();
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessModal.tsx");
@@ -247,7 +247,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const stageCollectibleChangeForEditProfile = orbBalancePriorToPurchase.stageCollectibleChangeForEditProfile;
   let obj = require("useCurrentUser");
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(9955)(product.styles).backgroundColors;
+  const backgroundColors = callback(10022)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -294,9 +294,9 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const tmp2Result14 = require("get initialized");
   const stateFromStores = tmp2Result14.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   const tmp12 = product.type === require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT || product.type === require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME;
-  const tmp2Result15 = require("module_1652");
+  const tmp2Result15 = require("module_1655");
   const sharedValue = tmp2Result15.useSharedValue(0);
-  const tmp2Result16 = require("module_1652");
+  const tmp2Result16 = require("module_1655");
   const sharedValue1 = tmp2Result16.useSharedValue(0);
   const items2 = [sharedValue, stateFromStores, sharedValue1];
   const effect1 = obj4.useEffect(() => {
@@ -323,9 +323,9 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     set2(num4);
   }, items2);
   const items3 = [closure_17, , , ];
-  const useAnimatedStyle = tmp2(1652).useAnimatedStyle;
-  require("module_1652");
-  items3[1] = require("module_1652").interpolate;
+  const useAnimatedStyle = tmp2(1655).useAnimatedStyle;
+  require("module_1655");
+  items3[1] = require("module_1655").interpolate;
   items3[2] = sharedValue;
   items3[3] = tmp12;
   let c0;
@@ -355,9 +355,9 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   ProductPurchaseSuccessModalTsx1.__initData = tmp17;
   const animatedStyle = useAnimatedStyle(ProductPurchaseSuccessModalTsx1);
   const items5 = [closure_18, , ];
-  const useAnimatedStyle2 = tmp2(1652).useAnimatedStyle;
-  require("module_1652");
-  items5[1] = require("module_1652").interpolate;
+  const useAnimatedStyle2 = tmp2(1655).useAnimatedStyle;
+  require("module_1655");
+  items5[1] = require("module_1655").interpolate;
   items5[2] = sharedValue;
   c0 = undefined;
   c1 = undefined;
@@ -377,9 +377,9 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   ProductPurchaseSuccessModalTsx2.__initData = tmp23;
   const animatedStyle2 = useAnimatedStyle2(ProductPurchaseSuccessModalTsx2);
   const items7 = [closure_19, , ];
-  const useAnimatedStyle3 = tmp2(1652).useAnimatedStyle;
-  require("module_1652");
-  items7[1] = require("module_1652").interpolate;
+  const useAnimatedStyle3 = tmp2(1655).useAnimatedStyle;
+  require("module_1655");
+  items7[1] = require("module_1655").interpolate;
   items7[2] = sharedValue1;
   c0 = undefined;
   c1 = undefined;
@@ -428,14 +428,14 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     if (null != mobileBgUrl) {
       let obj3 = { source: obj5, style: tmp6.imageBackground };
       obj5 = { uri: mobileBgUrl };
-      tmp42 = closure_11(tmp4(5957), obj3);
+      tmp42 = closure_11(tmp4(6020), obj3);
       tmp43 = closure_11;
       tmp44 = closure_11;
     }
     const items9 = [tmp42, , ];
     const items10 = [tmp6.main, ];
     let str;
-    const SafeAreaPaddingView = tmp2(7351).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
     if (useCategoryImage) {
       str = "rgba(0, 0, 0, 0.3)";
     }
@@ -446,7 +446,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const obj8 = { style: tmp6.headerLeading, children: showOrbBalancePill };
     if (showOrbBalancePill) {
       const obj9 = { initialRenderedBalance: prop, balance };
-      showOrbBalancePill = tmp44(tmp2(9976).BalanceWidgetPill, obj9);
+      showOrbBalancePill = tmp44(tmp2(10043).BalanceWidgetPill, obj9);
     }
     items11 = [tmp44(closure_7, obj8), ];
     let toHexStringResult;
@@ -465,7 +465,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     items13 = [tmp6.preview, animatedStyle];
     const type = product.type;
     const obj11 = { style: { flex: 1 }, contentContainerStyle: tmp6.body, alwaysBounceVertical: false, children: items14 };
-    const View = tmp4(1652).View;
+    const View = tmp4(1655).View;
     const tmp48 = closure_6;
     if (require("CollectiblesItemType").CollectiblesItemType.BUNDLE === type) {
       const obj13 = { style: tmp6.previewBundle, onLayout: tmp39, children: tmp43Result };
@@ -473,39 +473,39 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       if (tmp43Result) {
         const obj14 = { deco: null, pfx: null, nameplate: null, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp38 };
         ({ firstAvatarDecoration: obj28.deco, firstProfileEffect: obj28.pfx, firstNameplate: obj28.nameplate } = shopProductItems);
-        tmp43Result = tmp43(tmp4(9420), obj14);
+        tmp43Result = tmp43(tmp4(9489), obj14);
       }
       tmp43Result2 = tmp43(tmp41, obj13);
     } else if (require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj15 = { item: first, size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-      tmp43Result2 = tmp43(tmp4(9433), obj15);
+      tmp43Result2 = tmp43(tmp4(9500), obj15);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj16 = { user: currentUser, profileEffect: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(9460), obj16);
+      tmp43Result2 = tmp43(tmp4(9527), obj16);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
       const obj17 = { user: currentUser, profileFrame: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(9995), obj17);
+      tmp43Result2 = tmp43(tmp4(10062), obj17);
     } else {
       tmp43Result2 = null;
       if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
         const obj18 = { user: currentUser, nameplate: product.items[0], animate: true };
-        tmp43Result2 = tmp43(tmp2(9996).NameplatePreview, obj18);
+        tmp43Result2 = tmp43(tmp2(10063).NameplatePreview, obj18);
       }
     }
     items14 = [tmp44(View, obj12), ];
     const obj19 = { style: items15, children: renderMessagesResult };
     items15 = [tmp6.messages, animatedStyle2];
-    const View2 = tmp4(1652).View;
+    const View2 = tmp4(1655).View;
     if (null != renderMessages) {
       renderMessagesResult = renderMessages();
     } else {
       const obj20 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp6.title, children: intl3.format(require("intl").t.YNaxMp, obj21) };
-      const Text = tmp2(5866).Text;
+      const Text = tmp2(5929).Text;
       intl3 = tmp2(1113).intl;
       obj21 = { itemName: product.name };
       const items16 = [tmp44(Text, obj20), ];
       const obj22 = { variant: "body-md/medium", color: "text-overlay-light", style: tmp6.title, children: formatResult };
-      const Text2 = tmp2(5866).Text;
+      const Text2 = tmp2(5929).Text;
       const tmp2Result24 = require("CollectiblesUtils");
       let result = tmp2Result24.isPremiumCollectiblesProduct(product);
       const intl4 = tmp2(1113).intl;
@@ -527,7 +527,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     items12[1] = closure_12(tmp48, obj11);
     const obj26 = { style: tmp6.footer, children: tmp44(closure_7, obj27) };
     obj27 = { style: tmp6.cta, children: tmp44(Button, obj30) };
-    Button = tmp2(5873).Button;
+    Button = tmp2(5936).Button;
     if (canUseNow) {
       const obj29 = { loading: isApplying, disabled: isApplying, onPress: handleUseNow, text: intl2.string(require("intl").t.MAS7uK), size: "lg", grow: true };
       intl2 = tmp2(1113).intl;
@@ -540,7 +540,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     items9[1] = closure_12(SafeAreaPaddingView, rect);
     const obj31 = { style: items17, pointerEvents: "none" };
     items17 = [tmp6.curtain, animatedStyle3];
-    items9[2] = tmp44(callback(1652).View, obj31);
+    items9[2] = tmp44(callback(1655).View, obj31);
     obj2.children = items9;
     class ProductPurchaseSuccessModalTsx1 {
       constructor() {

@@ -1,8 +1,8 @@
-// Module ID: 20535
-// Function ID: 20536
+// Module ID: 20690
+// Function ID: 20691
 // Dependencies: [2]
 
-// Module 20535
+// Module 20690
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarGraggleExample-3x.png.js");

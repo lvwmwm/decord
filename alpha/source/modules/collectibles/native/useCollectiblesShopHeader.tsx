@@ -1,27 +1,27 @@
-// Module ID: 18402
-// Function ID: 18403
+// Module ID: 18525
+// Function ID: 18526
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1385, 1074, 1072, 5275, 8413, 21, 5243, 575, 10496, 5866, 1113, 504, 9971, 10064, 17403, 8418, 7871, 7831, 1252, 5489, 10060, 5278, 6785, 8410, 9976, 7922, 9389, 9081, 18403, 1499, 2]
+// Dependencies: [19, 17, 1388, 1074, 1072, 5338, 8479, 21, 5306, 575, 10565, 5929, 1113, 504, 10038, 10132, 17526, 8484, 7937, 7897, 1256, 5552, 10128, 5341, 6848, 8476, 10043, 7988, 9458, 9148, 18526, 1502, 2]
 // Exports: default
 
-// Module 18402 (useCollectiblesShopHeader)
+// Module 18525 (useCollectiblesShopHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import QuestConstants from "QuestConstants" /* 5275 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import Constants2 from "Constants" /* 8413 */;
-import ShopIcon from "ShopIcon" /* 10496 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import QuestConstants from "QuestConstants" /* 5338 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import Constants2 from "Constants" /* 8479 */;
+import ShopIcon from "ShopIcon" /* 10565 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -33,7 +33,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const CheckmarkSmallIcon3 = tmp(7831);
+const CheckmarkSmallIcon3 = tmp(7897);
 function CollectiblesShopHeaderTitle(currentScreen) {
   let items;
   let stringResult;
@@ -65,6 +65,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
   currentScreen = currentScreen.currentScreen;
   let openBalanceWidgetActionSheet;
   let id;
+  let tmp3 = openBalanceWidgetActionSheet;
   let tmp = closure_13();
   let obj = currentScreen(openBalanceWidgetActionSheet[13]);
   let items = [UserStore];
@@ -152,7 +153,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
     let intl2;
     let obj2;
     let obj3;
-    let obj = { balance, primaryButtonConfig: obj2, secondaryButtonConfig: obj3, source: AnalyticsLocationDefault.COLLECTIBLES_SHOP, analyticsPage: COLLECTIBLES_SHOP };
+    let obj = { balance, primaryButtonConfig: obj2, secondaryButtonConfig: obj3, source: AnalyticsLocationDefault.COLLECTIBLES_SHOP, analyticsPage: COLLECTIBLES_SHOP, openCtaObject: AnalyticsLocationDefault.ORB_WALLET_OPEN_FROM_BALANCE_PILL };
     obj2 = {
       buttonText: intl.string(intl4.t.SymzJC),
       onButtonPress() {
@@ -202,7 +203,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const items4 = [tmp15, , ];
     let tmp14Result = null != stateFromStores;
     if (tmp14Result) {
-      const obj7 = { accessibilityLabel: intl.string(currentScreen(openBalanceWidgetActionSheet[12]).t["7lZ31J"]), variant: "tertiary", size: "sm", icon: tmp14(currentScreen(openBalanceWidgetActionSheet[28]).HeartIcon, { size: "sm", color: "redesign-button-tertiary-text" }), onPress: tmp10 };
+      const obj7 = { accessibilityLabel: intl.string(currentScreen(tmp3[12]).t["7lZ31J"]), variant: "tertiary", size: "sm", icon: tmp14(currentScreen(tmp3[28]).HeartIcon, { size: "sm", color: "redesign-button-tertiary-text" }), onPress: tmp10 };
       let IconButton = tmp2(tmp3[27]).IconButton;
       intl = tmp2(tmp3[12]).intl;
       tmp14Result = tmp14(IconButton, obj7);
@@ -211,7 +212,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const obj8 = {
       items: memo,
       align: "below",
-      title: intl2.string(currentScreen(openBalanceWidgetActionSheet[12]).t.nSFuC0),
+      title: intl2.string(currentScreen(tmp3[12]).t.nSFuC0),
       keyboardShouldPersistTaps: "handled",
       children(ref) {
           let intl;
@@ -253,7 +254,7 @@ export default function useCollectiblesShopHeader() {
     obj = {};
   }
   const currentScreen = obj.currentScreen;
-  const obj2 = currentScreen(1499);
+  const obj2 = currentScreen(1502);
   navigation = obj2.useNavigation();
   const items = [navigation, currentScreen];
   const layoutEffect = react.useLayoutEffect(() => {

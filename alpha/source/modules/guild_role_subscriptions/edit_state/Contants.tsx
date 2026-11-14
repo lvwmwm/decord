@@ -1,11 +1,11 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 17847
+// Function ID: 17848
 // Name: Contants
-// Dependencies: [1072, 5151, 2]
+// Dependencies: [1072, 5214, 2]
 
-// Module 17727 (Contants)
+// Module 17847 (Contants)
 import Constants from "Constants" /* 1072 */;
-import GuildRoleRecordUtils from "GuildRoleRecordUtils" /* 5151 */;
+import GuildRoleRecordUtils from "GuildRoleRecordUtils" /* 5214 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

@@ -1,10 +1,10 @@
-// Module ID: 9438
-// Function ID: 9439
+// Module ID: 9505
+// Function ID: 9506
 // Name: shared/colors
 // Dependencies: [671, 2]
 // Exports: flattenColorOverOpaqueBackground
 
-// Module 9438 (shared/colors)
+// Module 9505 (shared/colors)
 import _modDef671 from "module_671" /* 671 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 7557
-// Function ID: 7558
+// Module ID: 7623
+// Function ID: 7624
 // Name: CircleErrorIcon
-// Dependencies: [19, 17, 21, 575, 5956, 7558, 7559, 2]
+// Dependencies: [19, 17, 21, 575, 6019, 7624, 7625, 2]
 // Exports: CircleErrorIcon
 
-// Module 7557 (CircleErrorIcon)
+// Module 7623 (CircleErrorIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage3 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 7558 */;
-import AssetRegistry2 from "AssetRegistry" /* 7559 */;
+import BaseIconImage3 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 7624 */;
+import AssetRegistry2 from "AssetRegistry" /* 7625 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

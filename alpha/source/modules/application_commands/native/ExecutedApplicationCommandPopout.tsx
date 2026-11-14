@@ -1,41 +1,41 @@
-// Module ID: 12495
-// Function ID: 12496
+// Module ID: 12591
+// Function ID: 12592
 // Name: ExecutedApplicationCommandPopout
-// Dependencies: [19, 17, 5244, 5092, 5149, 5114, 6309, 5185, 1385, 11339, 6282, 1072, 1498, 6283, 21, 5243, 575, 2116, 1187, 5489, 8410, 5309, 5866, 5891, 1113, 7852, 504, 6687, 9999, 9122, 5957, 1414, 7381, 12496, 5951, 7379, 1625, 5922, 6274, 7680, 7871, 11335, 5503, 2]
+// Dependencies: [19, 17, 5307, 5155, 5212, 5177, 6372, 5248, 1388, 11406, 6345, 1072, 1501, 6346, 21, 5306, 575, 2119, 1187, 5552, 8476, 5372, 5929, 5954, 1113, 7918, 504, 6750, 10066, 9189, 6020, 1417, 7445, 12592, 6014, 7443, 1628, 5985, 6337, 7746, 7937, 11402, 5566, 2]
 // Exports: default
 
-// Module 12495 (ExecutedApplicationCommandPopout)
+// Module 12591 (ExecutedApplicationCommandPopout)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
-import KeyboardTypes from "KeyboardTypes" /* 1625 */;
-import Server from "Server" /* 2116 */;
-import UserUtilsDefault from "UserUtils" /* 5309 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import useChannelName from "useChannelName" /* 5891 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5922 */;
-import ToastUtils from "ToastUtils" /* 5951 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 11335 */;
-import react_nativeDefault from "react-native" /* 12496 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import Server from "Server" /* 2119 */;
+import UserUtilsDefault from "UserUtils" /* 5372 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import useChannelName from "useChannelName" /* 5954 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
+import ToastUtils from "ToastUtils" /* 6014 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 11402 */;
+import react_nativeDefault from "react-native" /* 12592 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildRoleStore from "GuildRoleStore" /* 5149 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import MessageStore from "MessageStore" /* 6309 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11339 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildRoleStore from "GuildRoleStore" /* 5212 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import MessageStore from "MessageStore" /* 6372 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6283 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_16;
@@ -81,8 +81,8 @@ function getCommandOptionComponents(option) {
     const _HermesInternal = HermesInternal;
     combined = " " + name_localized;
   }
-  if (iter.type !== iter(2116).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (iter.type !== iter(2116).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (iter.type !== iter(2119).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (iter.type !== iter(2119).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       if (null != iter.value) {
         let userComponent;
         function getUserComponent(user, styles) {
@@ -114,14 +114,14 @@ function getCommandOptionComponents(option) {
           return authStore5(Text_Text.Text, obj, "optionValue-" + iter.name);
         }
         const type = iter.type;
-        if (iter(2116).ApplicationCommandOptionType.USER === type) {
+        if (iter(2119).ApplicationCommandOptionType.USER === type) {
           const str5 = iter.value;
           const user = UserStore.getUser(str5.toString());
           userComponent = null;
           if (null != user) {
             userComponent = getUserComponent(user, styles);
           }
-        } else if (iter(2116).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (iter(2119).ApplicationCommandOptionType.CHANNEL === type) {
           const str3 = iter.value;
           const channel1 = ChannelStore.getChannel(str3.toString());
           userComponent = null;
@@ -129,7 +129,7 @@ function getCommandOptionComponents(option) {
             let obj = { style: styles.commandOptionMentionText, children: items1 };
             items1 = [closure_19, ];
             let LegacyText = tmp6(1187).LegacyText;
-            const tmp6Result = iter(5891);
+            const tmp6Result = iter(5954);
             items1[1] = tmp6Result.computeChannelName(channel1, UserStore, RelationshipStore);
             const _HermesInternal3 = HermesInternal;
             userComponent = closure_23(LegacyText, obj, "optionValue-" + iter.name);
@@ -141,7 +141,7 @@ function getCommandOptionComponents(option) {
             items = [closure_21, role.name];
             return sidebars(native.LegacyText, obj, "optionValue-" + iter.name);
           }
-          if (iter(2116).ApplicationCommandOptionType.ROLE === type) {
+          if (iter(2119).ApplicationCommandOptionType.ROLE === type) {
             const value = iter.value;
             let role;
             if (null != guild) {
@@ -151,7 +151,7 @@ function getCommandOptionComponents(option) {
             if (null != role) {
               userComponent = getRoleComponent(role);
             }
-          } else if (iter(2116).ApplicationCommandOptionType.MENTIONABLE === type) {
+          } else if (iter(2119).ApplicationCommandOptionType.MENTIONABLE === type) {
             const str2 = iter.value;
             const str1 = str2.toString();
             let role1;
@@ -169,7 +169,7 @@ function getCommandOptionComponents(option) {
             }
           } else {
             userComponent = null;
-            if (iter(2116).ApplicationCommandOptionType.ATTACHMENT === type) {
+            if (iter(2119).ApplicationCommandOptionType.ATTACHMENT === type) {
               const intl = tmp6(1113).intl;
               userComponent = getCommandValueText(intl.string(tmp6(1113).t.nONJVc));
             }
@@ -736,8 +736,8 @@ export default function ExecutedCommandPopout(channelId) {
   const stateFromStores = obj.useStateFromStores(items, () => MessageStore.getMessage(channelId, messageId));
   const items1 = [channelId, messageId, ];
   let interactionData;
-  const tmp5 = messageId(7852);
-  const analyticsLocations = tmp5(messageId(7871).EXECUTED_COMMAND).analyticsLocations;
+  const tmp5 = messageId(7918);
+  const analyticsLocations = tmp5(messageId(7937).EXECUTED_COMMAND).analyticsLocations;
   const useEffect = react.useEffect;
   if (stateFromStores != null) {
     interactionData = stateFromStores.interactionData;
@@ -770,10 +770,10 @@ export default function ExecutedCommandPopout(channelId) {
     }
   }, items1);
   const obj2 = { value: analyticsLocations, children: closure_22(BottomSheet, obj3) };
-  const AnalyticsLocationProvider = tmp2(7852).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp2(7918).AnalyticsLocationProvider;
   let interactionData1;
   obj3 = { startExpanded: true, bodyStyles: tmp.container, children: tmp9Result };
-  BottomSheet = tmp2(5503).BottomSheet;
+  BottomSheet = tmp2(5566).BottomSheet;
   if (stateFromStores != null) {
     interactionData1 = stateFromStores.interactionData;
   }

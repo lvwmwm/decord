@@ -1,17 +1,17 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14777
+// Function ID: 14778
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 5185, 14631, 14628, 1072, 14630, 14665, 14666, 14651, 572, 1282, 14632, 6311, 2]
+// Dependencies: [5, 5248, 14744, 14741, 1072, 14743, 14778, 14779, 14764, 572, 1285, 14745, 6374, 2]
 // Exports: fetchAnswer, setResultFeedback
 
-// Module 14664 (SmartSearchActionCreators)
+// Module 14777 (SmartSearchActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 14631 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14651 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 14744 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14764 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 14628 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 14741 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchAnswer() {
@@ -148,7 +148,7 @@ let obj = function _fetchAnswer() {
     await "HermesInternal";
     let closure_2 = tmp;
     ({ searchContext: c0, searchQueryString: c1, SearchSessionAnalyticsManager: c2 } = closure_0);
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

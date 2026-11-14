@@ -1,14 +1,14 @@
-// Module ID: 17589
-// Function ID: 17590
+// Module ID: 17707
+// Function ID: 17708
 // Name: WreathIcon
-// Dependencies: [19, 21, 575, 5956, 17590, 2]
+// Dependencies: [19, 21, 575, 6019, 17708, 2]
 // Exports: default
 
-// Module 17589 (WreathIcon)
+// Module 17707 (WreathIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 17590 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 17708 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

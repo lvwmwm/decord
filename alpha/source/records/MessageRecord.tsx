@@ -1,16 +1,16 @@
-// Module ID: 5186
-// Function ID: 5187
+// Module ID: 5249
+// Function ID: 5250
 // Name: MessageRecord
-// Dependencies: [1405, 1072, 1403, 5187, 5889, 5857, 5890, 2]
+// Dependencies: [1408, 1072, 1406, 5250, 5952, 5920, 5953, 2]
 // Exports: ModeratorReport, isMessageComponentsV2
 
-// Module 5186 (MessageRecord)
-import FlagUtils from "FlagUtils" /* 1403 */;
-import ReactionUtils from "ReactionUtils" /* 5187 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5857 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5889 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5890 */;
-import Record from "Record" /* 1405 */;
+// Module 5249 (MessageRecord)
+import FlagUtils from "FlagUtils" /* 1406 */;
+import ReactionUtils from "ReactionUtils" /* 5250 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5920 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5952 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5953 */;
+import Record from "Record" /* 1408 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

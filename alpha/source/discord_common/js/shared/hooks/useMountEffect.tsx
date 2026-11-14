@@ -1,10 +1,10 @@
-// Module ID: 5837
-// Function ID: 5838
+// Module ID: 5900
+// Function ID: 5901
 // Name: react
 // Dependencies: [19, 2]
 // Exports: default, useMountLayoutEffect, useUnmountEffect
 
-// Module 5837 (react)
+// Module 5900 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

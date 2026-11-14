@@ -1,23 +1,23 @@
-// Module ID: 20015
-// Function ID: 20016
+// Module ID: 20173
+// Function ID: 20174
 // Name: AppAnalyticsManager
-// Dependencies: [2137, 2130, 6008, 7252, 6878, 6011, 1072, 1089, 7816, 5087, 6004, 6006, 19397, 6749, 2]
+// Dependencies: [2140, 2133, 6071, 7316, 6941, 6074, 1072, 1089, 7882, 5150, 6067, 6069, 19589, 6812, 2]
 
-// Module 20015 (AppAnalyticsManager)
+// Module 20173 (AppAnalyticsManager)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import Timers from "Timers" /* 5087 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
-import ActivityTypes from "ActivityTypes" /* 6006 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6749 */;
-import getGamePlatformDefault from "getGamePlatform" /* 19397 */;
-import RunningGameStore from "RunningGameStore" /* 2137 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7252 */;
-import SpeakingStore from "SpeakingStore" /* 6878 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6011 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7816 */;
+import Timers from "Timers" /* 5150 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import ActivityTypes from "ActivityTypes" /* 6069 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6812 */;
+import getGamePlatformDefault from "getGamePlatform" /* 19589 */;
+import RunningGameStore from "RunningGameStore" /* 2140 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
+import SpeakingStore from "SpeakingStore" /* 6941 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6074 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let map;

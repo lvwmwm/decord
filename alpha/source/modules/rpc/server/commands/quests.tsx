@@ -1,19 +1,19 @@
-// Module ID: 16854
-// Function ID: 16855
+// Module ID: 16977
+// Function ID: 16978
 // Name: quests
-// Dependencies: [8741, 1072, 16799, 7243, 12773, 8764, 7239, 1252, 572, 15138, 2]
+// Dependencies: [8808, 1072, 16922, 7307, 12869, 8831, 7303, 1256, 572, 15252, 2]
 
-// Module 16854 (quests)
+// Module 16977 (quests)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import RPCErrorDefault from "RPCError" /* 7239 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7243 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8764 */;
-import RPCHelpers from "RPCHelpers" /* 12773 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 15138 */;
-import QuestStore from "QuestStore" /* 8741 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import RPCErrorDefault from "RPCError" /* 7303 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
+import RPCHelpers from "RPCHelpers" /* 12869 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 15252 */;
+import QuestStore from "QuestStore" /* 8808 */;
 import Constants from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16799 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16922 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -117,68 +117,41 @@ CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
 let obj4 = {
   scope: OAuth2Scopes.OAuth2Scopes.IDENTIFY,
   handler(socket) {
+    let completedAt;
+    let enrolledAt;
+    let userStatus;
     socket = socket.socket;
-    let obj = RPCHelpers;
+    const obj = RPCHelpers;
     const result = obj.validatePostMessageTransport(socket.transport);
     const obj2 = RPCHelpers;
     const validateApplicationResult = obj2.validateApplication(socket.application);
     const obj3 = QuestMatchingUtils;
-    const eligibleQuestsForApplicationId = obj3.getEligibleQuestsForApplicationId(QuestStore.quests, validateApplicationResult, true);
-    if (0 === eligibleQuestsForApplicationId.length) {
-      let self = this;
-      let self2 = this;
-      const obj4 = { errorCode: constants.INVALID_COMMAND };
-      const tmp7 = new RPCErrorDefault(obj4, "No eligible quests found");
-      throw tmp7;
+    const activityQuestForApplicationId = obj3.getActivityQuestForApplicationId(QuestStore.quests, validateApplicationResult);
+    if (null == activityQuestForApplicationId) {
+      const self = this;
+      const self2 = this;
+      const obj5 = { errorCode: constants.INVALID_COMMAND };
+      const tmp10 = new RPCErrorDefault(obj5, "No eligible quests found");
+      throw tmp10;
     } else {
-      const mapped = eligibleQuestsForApplicationId.map((id) => {
-        let completedAt;
-        let enrolledAt;
-        const userStatus = id.userStatus;
-        const obj = { quest_id: id.id, enrolled_at: enrolledAt, completed_at: completedAt, external_cta_url: id.config.ctaConfig.link };
-        enrolledAt = undefined;
-        if (userStatus != null) {
-          enrolledAt = userStatus.enrolledAt;
-        }
-        if (enrolledAt == null) {
-          enrolledAt = null;
-        }
-        const userStatus2 = id.userStatus;
-        completedAt = undefined;
-        if (userStatus2 != null) {
-          completedAt = userStatus2.completedAt;
-        }
-        if (completedAt == null) {
-          completedAt = null;
-        }
-        return obj;
-      });
-      return mapped.sort(function(enrolled_at, enrolled_at2) {
-        let num;
-        if (null != enrolled_at.enrolled_at) {
-          let num2 = 1;
-          if (null != enrolled_at.enrolled_at) {
-            let num3 = -1;
-            if (null != enrolled_at2.enrolled_at) {
-              const _Date = Date;
-              const self = this;
-              const self2 = this;
-              const _Date2 = Date;
-              const self3 = this;
-              const self4 = this;
-              const date = new Date(enrolled_at.enrolled_at);
-              const time = date.getTime();
-              const date1 = new Date(enrolled_at2.enrolled_at);
-              num3 = time - date1.getTime();
-            }
-            num2 = num3;
-          }
-          num = num2;
-        } else {
-          num = 0;
-        }
-        return num;
-      })[0];
+      const obj7 = { quest_id: null, enrolled_at: enrolledAt, completed_at: completedAt, external_cta_url: activityQuestForApplicationId.config.ctaConfig.link };
+      ({ id: obj4.quest_id, userStatus } = activityQuestForApplicationId);
+      enrolledAt = undefined;
+      if (userStatus != null) {
+        enrolledAt = userStatus.enrolledAt;
+      }
+      if (enrolledAt == null) {
+        enrolledAt = null;
+      }
+      const userStatus2 = activityQuestForApplicationId.userStatus;
+      completedAt = undefined;
+      if (userStatus2 != null) {
+        completedAt = userStatus2.completedAt;
+      }
+      if (completedAt == null) {
+        completedAt = null;
+      }
+      return obj7;
     }
   }
 };

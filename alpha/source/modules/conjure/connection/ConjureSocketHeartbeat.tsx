@@ -1,9 +1,9 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15983
+// Function ID: 15984
 // Name: ConjureSocketHeartbeat
 // Dependencies: [2]
 
-// Module 15863 (ConjureSocketHeartbeat)
+// Module 15983 (ConjureSocketHeartbeat)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureSocketHeartbeat.tsx");

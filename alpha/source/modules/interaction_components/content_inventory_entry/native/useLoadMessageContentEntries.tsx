@@ -1,19 +1,19 @@
-// Module ID: 12330
-// Function ID: 12331
+// Module ID: 12425
+// Function ID: 12426
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 2162, 2142, 5373, 7286, 6992, 8472, 38, 7249, 2116, 12331, 5889, 2]
+// Dependencies: [32, 5, 19, 2165, 2145, 5436, 7350, 7055, 8538, 38, 7313, 2119, 12426, 5952, 2]
 // Exports: default
 
-// Module 12330 (useLoadMessageContentEntries)
+// Module 12425 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 2116 */;
-import Constants from "Constants" /* 2142 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5373 */;
-import useAvatarColor from "useAvatarColor" /* 8472 */;
+import Server from "Server" /* 2119 */;
+import Constants from "Constants" /* 2145 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5436 */;
+import useAvatarColor from "useAvatarColor" /* 8538 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -679,7 +679,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(12331);
+      let tmp3Result = tmp3(12426);
       obj = { component: obj2, message };
       obj2 = { contentInventoryEntry: tmp2.contentInventoryEntry };
       if (null == tmp3Result.transformToRowGeneratedContentInventoryEntryComponent(obj)) {

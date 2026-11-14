@@ -1,17 +1,17 @@
-// Module ID: 13514
-// Function ID: 13515
+// Module ID: 13617
+// Function ID: 13618
 // Name: ConjureTipSwap
-// Dependencies: [19, 21, 1652, 5485, 2]
+// Dependencies: [19, 21, 1655, 5548, 2]
 // Exports: default
 
-// Module 13514 (ConjureTipSwap)
+// Module 13617 (ConjureTipSwap)
 import Fragment from "Fragment" /* 21 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 let set;
 
 function TipFade(children) {
@@ -19,16 +19,16 @@ function TipFade(children) {
   let tmp5;
   let sharedValue;
   children = children.children;
-  let obj = sharedValue(1652);
+  let obj = sharedValue(1655);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     let Easing;
     set = sharedValue.set;
-    let obj = { duration: 260, easing: Easing.out(_mod1652.Easing.ease) };
+    let obj = { duration: 260, easing: Easing.out(_mod1655.Easing.ease) };
     const withTiming = timing_timing.withTiming;
     timing_timing;
-    Easing = _mod1652.Easing;
+    Easing = _mod1655.Easing;
     const result = set(withTiming(1, obj));
     return () => {
       const obj = sharedValue(dependencyMap[2]);
@@ -38,7 +38,7 @@ function TipFade(children) {
   const items1 = [closure_5, sharedValue];
   let c0;
   [tmp4, tmp5] = items1;
-  const obj2 = sharedValue(1652);
+  const obj2 = sharedValue(1655);
   class ConjureTipSwapTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -50,7 +50,7 @@ function TipFade(children) {
   ConjureTipSwapTsx1.__workletHash = 17472917410134;
   ConjureTipSwapTsx1.__initData = tmp4;
   const style = obj2.useAnimatedStyle(ConjureTipSwapTsx1);
-  return jsx(_modDef1652.View, { style, children });
+  return jsx(_modDef1655.View, { style, children });
 }
 const jsx = Fragment.jsx;
 let closure_5 = { code: "(function ConjureTipSwapTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };

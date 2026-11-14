@@ -1,20 +1,20 @@
-// Module ID: 16061
-// Function ID: 16062
+// Module ID: 16182
+// Function ID: 16183
 // Name: LayoutStore
-// Dependencies: [16062, 16063, 1072, 16064, 16065, 1266, 16066, 12, 504, 510, 572, 2]
+// Dependencies: [16183, 16184, 1072, 16185, 16186, 1269, 16187, 12, 504, 510, 572, 2]
 
-// Module 16061 (LayoutStore)
+// Module 16182 (LayoutStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import v1 from "v1" /* 1266 */;
-import LayoutStoreTypes from "LayoutStoreTypes" /* 16065 */;
-import LayoutUtils from "LayoutUtils" /* 16066 */;
-import LayoutRecord from "LayoutRecord" /* 16062 */;
-import WidgetRecord from "WidgetRecord" /* 16063 */;
-import OverlayLayoutConstants from "OverlayLayoutConstants" /* 16064 */;
+import v1 from "v1" /* 1269 */;
+import LayoutStoreTypes from "LayoutStoreTypes" /* 16186 */;
+import LayoutUtils from "LayoutUtils" /* 16187 */;
+import LayoutRecord from "LayoutRecord" /* 16183 */;
+import WidgetRecord from "WidgetRecord" /* 16184 */;
+import OverlayLayoutConstants from "OverlayLayoutConstants" /* 16185 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,36 +30,36 @@ const OVERLAY_LEGACY_LAYOUT_VERSION = OverlayLayoutConstants.OVERLAY_LEGACY_LAYO
 ({ OVERLAY_V3_LAYOUT_VERSION, CONJURE_OVERLAY_WIDGET_CHROME } = OverlayLayoutConstants);
 const migrated = "migrated";
 let obj = {};
-let obj2 = { resizeX: false, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL, defaultSettings: { anchor: { left: 0.175, top: 0.05, bottom: "match", right: "intl" }, size: { width: "auto", height: 0.65 }, pinned: false, minSize: { width: 312, height: 300 } }, version: OVERLAY_LEGACY_LAYOUT_VERSION };
+let obj2 = { resizeX: false, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL, defaultSettings: { anchor: { left: 0.175, top: 0.05, bottom: "__d", right: "indexOf" }, size: { width: "auto", height: 0.65 }, pinned: false, minSize: { width: 312, height: 300 } }, version: OVERLAY_LEGACY_LAYOUT_VERSION };
 obj[OverlayWidgets.GUILDS] = obj2;
-let obj3 = { resizeX: true, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL, defaultSettings: { anchor: { left: 0.26, top: 0.05, bottom: "match", right: "c" }, size: { width: 0.565, height: 0.65 }, pinned: true, minSize: { width: 430, height: 300 } }, version: OVERLAY_LEGACY_LAYOUT_VERSION };
+let obj3 = { resizeX: true, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL, defaultSettings: { anchor: { left: 0.26, top: 0.05, bottom: "__d", right: "c" }, size: { width: 0.565, height: 0.65 }, pinned: true, minSize: { width: 430, height: 300 } }, version: OVERLAY_LEGACY_LAYOUT_VERSION };
 obj[OverlayWidgets.TEXT] = obj3;
-let obj4 = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.011, top: 0.011, bottom: "description", right: "T" }, size: { width: "auto", height: "auto" }, pinned: true, minSize: { width: 272, height: 100 } }, version: OVERLAY_LEGACY_LAYOUT_VERSION };
+let obj4 = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.011, top: 0.011, bottom: "ip", right: "T" }, size: { width: "auto", height: "auto" }, pinned: true, minSize: { width: 272, height: 100 } }, version: OVERLAY_LEGACY_LAYOUT_VERSION };
 obj[OverlayWidgets.VOICE] = obj4;
-let obj5 = { resizeX: true, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: "WireType", top: true, bottom: true, right: true }, size: { width: 0.6, height: 0.45 }, pinned: false, minSize: { height: 300, width: 610 } }, version: OVERLAY_LEGACY_LAYOUT_VERSION };
+let obj5 = { resizeX: true, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: "__closure", top: true, bottom: true, right: true }, size: { width: 0.6, height: 0.45 }, pinned: false, minSize: { height: 300, width: 610 } }, version: OVERLAY_LEGACY_LAYOUT_VERSION };
 obj[OverlayWidgets.GUILDS_TEXT] = obj5;
-obj[OverlayWidgets.VOICE_V3] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.01, top: 0.35, bottom: "description", right: "T" }, size: { width: "auto", height: "auto" }, pinned: true, minSize: { width: 272, height: 24 } }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.01, top: 0.35, bottom: "description", right: "T" }, size: { width: "auto", height: "auto" }, pinned: true, minSize: { width: 272, height: 24 } }, version: OVERLAY_V3_LAYOUT_VERSION });
-obj[OverlayWidgets.VIDEO] = { resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: 0.01, top: "WireType", bottom: -515396076, right: 1631556730 }, size: { fixed: true, width: 408, height: 128 }, pinned: true, minSize: { width: 128, height: 128 } }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: 0.01, top: "WireType", bottom: -515396076, right: 1631556730 }, size: { fixed: true, width: 408, height: 128 }, pinned: true, minSize: { width: 128, height: 128 } }, version: OVERLAY_V3_LAYOUT_VERSION });
-obj[OverlayWidgets.GO_LIVE] = { resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: "match", top: "duration", bottom: true, right: true }, size: { fixed: true, width: 256, height: 144 }, pinned: false, minSize: { width: 276, height: 164 } }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: "match", top: "duration", bottom: true, right: true }, size: { fixed: true, width: 256, height: 144 }, pinned: false, minSize: { width: 276, height: 164 } }, version: OVERLAY_V3_LAYOUT_VERSION });
-obj[OverlayWidgets.QUICK_ACTIONS] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.34, top: 0.02, bottom: "description", right: "skuId" }, size: { width: "auto", height: "auto" }, pinned: false, minSize: { width: 216, height: 56 } }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.34, top: 0.02, bottom: "description", right: "skuId" }, size: { width: "auto", height: "auto" }, pinned: false, minSize: { width: 216, height: 56 } }, version: OVERLAY_V3_LAYOUT_VERSION });
-obj[OverlayWidgets.NOTIFICATIONS] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.01, top: 0.02, bottom: "HermesInternal", right: "description" }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 320, height: 100 } }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.01, top: 0.02, bottom: "HermesInternal", right: "description" }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 320, height: 100 } }, version: OVERLAY_V3_LAYOUT_VERSION });
-obj[OverlayWidgets.ACTIVITY] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "WireType", top: "count", bottom: "count", right: "count" }, size: { height: "auto", width: "auto" }, pinned: false, minSize: { width: 320, height: 100 } }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "WireType", top: "count", bottom: "count", right: "count" }, size: { height: "auto", width: "auto" }, pinned: false, minSize: { width: 320, height: 100 } }, version: OVERLAY_V3_LAYOUT_VERSION });
-obj[OverlayWidgets.TEXT_CHAT_V3] = { resizeX: true, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "WireType", top: "mode", bottom: "Object", right: "ind" }, size: { fixed: true, height: 372, width: 500 }, minSize: { width: 350, height: 100 }, pinned: false }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: true, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "WireType", top: "mode", bottom: "Object", right: "ind" }, size: { fixed: true, height: 372, width: 500 }, minSize: { width: 350, height: 100 }, pinned: false }, version: OVERLAY_V3_LAYOUT_VERSION });
-obj[OverlayWidgets.FRIENDS] = { resizeX: false, resizeY: true, dragAnywhere: true, constrainAutoSizeToExplicitResizeEvents: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "__closure", top: "mode", bottom: "Object", right: "ind" }, size: { fixed: true, height: "auto", width: 350 }, minSize: { width: 350, height: 350 }, pinned: false }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: false, resizeY: true, dragAnywhere: true, constrainAutoSizeToExplicitResizeEvents: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "__closure", top: "mode", bottom: "Object", right: "ind" }, size: { fixed: true, height: "auto", width: 350 }, minSize: { width: 350, height: 350 }, pinned: false }, version: OVERLAY_V3_LAYOUT_VERSION });
-obj[OverlayWidgets.CLICK_ZONE_DEBUG] = { resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.DEBUG, defaultSettings: { anchor: { left: "WireType", top: "count", bottom: "count", right: "count" }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 50, height: 50 } }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.DEBUG, defaultSettings: { anchor: { left: "WireType", top: "count", bottom: "count", right: "count" }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 50, height: 50 } }, version: OVERLAY_V3_LAYOUT_VERSION });
-obj[OverlayWidgets.PERFORMANCE_DEBUG] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.DEBUG, defaultSettings: { anchor: { left: "WireType", top: true, bottom: true, right: true }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 120, height: 300 } }, version: OVERLAY_V3_LAYOUT_VERSION };
-({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.DEBUG, defaultSettings: { anchor: { left: "WireType", top: true, bottom: true, right: true }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 120, height: 300 } }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.VOICE_V3] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.01, top: 0.35, bottom: "ip", right: "T" }, size: { width: "auto", height: "auto" }, pinned: true, minSize: { width: 272, height: 24 } }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.01, top: 0.35, bottom: "ip", right: "T" }, size: { width: "auto", height: "auto" }, pinned: true, minSize: { width: 272, height: 24 } }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.VIDEO] = { resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: 0.01, top: "__closure", bottom: -515396076, right: 1631556730 }, size: { fixed: true, width: 408, height: 128 }, pinned: true, minSize: { width: 128, height: 128 } }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: 0.01, top: "__closure", bottom: -515396076, right: 1631556730 }, size: { fixed: true, width: 408, height: 128 }, pinned: true, minSize: { width: 128, height: 128 } }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.GO_LIVE] = { resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: "__d", top: "enabled", bottom: true, right: true }, size: { fixed: true, width: 256, height: 144 }, pinned: false, minSize: { width: 276, height: 164 } }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL_DEFAULT, defaultSettings: { anchor: { left: "__d", top: "enabled", bottom: true, right: true }, size: { fixed: true, width: 256, height: 144 }, pinned: false, minSize: { width: 276, height: 164 } }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.QUICK_ACTIONS] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.34, top: 0.02, bottom: "ip", right: "skuId" }, size: { width: "auto", height: "auto" }, pinned: false, minSize: { width: 216, height: 56 } }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.34, top: 0.02, bottom: "ip", right: "skuId" }, size: { width: "auto", height: "auto" }, pinned: false, minSize: { width: 216, height: 56 } }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.NOTIFICATIONS] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.01, top: 0.02, bottom: "HermesInternal", right: "ip" }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 320, height: 100 } }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: 0.01, top: 0.02, bottom: "HermesInternal", right: "ip" }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 320, height: 100 } }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.ACTIVITY] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "__closure", top: "create", bottom: "create", right: "create" }, size: { height: "auto", width: "auto" }, pinned: false, minSize: { width: 320, height: 100 } }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "__closure", top: "create", bottom: "create", right: "create" }, size: { height: "auto", width: "auto" }, pinned: false, minSize: { width: 320, height: 100 } }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.TEXT_CHAT_V3] = { resizeX: true, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "__closure", top: "mode", bottom: "Object", right: "flags" }, size: { fixed: true, height: 372, width: 500 }, minSize: { width: 350, height: 100 }, pinned: false }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: true, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "__closure", top: "mode", bottom: "Object", right: "flags" }, size: { fixed: true, height: 372, width: 500 }, minSize: { width: 350, height: 100 }, pinned: false }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.FRIENDS] = { resizeX: false, resizeY: true, dragAnywhere: true, constrainAutoSizeToExplicitResizeEvents: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "__esModule", top: "mode", bottom: "Object", right: "flags" }, size: { fixed: true, height: "auto", width: 350 }, minSize: { width: 350, height: 350 }, pinned: false }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: false, resizeY: true, dragAnywhere: true, constrainAutoSizeToExplicitResizeEvents: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.REQUIRED, defaultSettings: { anchor: { left: "__esModule", top: "mode", bottom: "Object", right: "flags" }, size: { fixed: true, height: "auto", width: 350 }, minSize: { width: 350, height: 350 }, pinned: false }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.CLICK_ZONE_DEBUG] = { resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.DEBUG, defaultSettings: { anchor: { left: "__closure", top: "create", bottom: "create", right: "create" }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 50, height: 50 } }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: true, resizeY: true, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.DEBUG, defaultSettings: { anchor: { left: "__closure", top: "create", bottom: "create", right: "create" }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 50, height: 50 } }, version: OVERLAY_V3_LAYOUT_VERSION });
+obj[OverlayWidgets.PERFORMANCE_DEBUG] = { resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.DEBUG, defaultSettings: { anchor: { left: "__closure", top: true, bottom: true, right: true }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 120, height: 300 } }, version: OVERLAY_V3_LAYOUT_VERSION };
+({ resizeX: false, resizeY: false, dragAnywhere: true, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.DEBUG, defaultSettings: { anchor: { left: "__closure", top: true, bottom: true, right: true }, size: { height: "auto", width: "auto" }, pinned: true, minSize: { width: 120, height: 300 } }, version: OVERLAY_V3_LAYOUT_VERSION });
 const obj16 = { resizeX: true, resizeY: true, dragAnywhere: false, layoutPolicy: LayoutStoreTypes.OverlayWidgetLayoutPolicy.OPTIONAL, defaultSettings: obj17, version: OVERLAY_V3_LAYOUT_VERSION };
-obj17 = { anchor: { left: 0.35, top: 0.2, bottom: "description", right: "c" }, size, pinned: false, minSize: size1 };
+obj17 = { anchor: { left: 0.35, top: 0.2, bottom: "ip", right: "c" }, size, pinned: false, minSize: size1 };
 size = { fixed: true, width: 400 + CONJURE_OVERLAY_WIDGET_CHROME.width, height: 300 + CONJURE_OVERLAY_WIDGET_CHROME.height };
 size1 = { width: 160 + CONJURE_OVERLAY_WIDGET_CHROME.width, height: 120 + CONJURE_OVERLAY_WIDGET_CHROME.height };
 obj[OverlayWidgets.CONJURE] = obj16;
@@ -302,7 +302,7 @@ let items = [
     let closure_129_1;
     let items2;
     let pinnedWidgets;
-    const f133771 = (id) => {
+    const f135291 = (id) => {
       let rect = null;
       if (null != closure_1_0) {
         rect = closure_1_0[id];
@@ -332,9 +332,9 @@ let items = [
         let items = [];
         const items1 = [migrated, ];
         obj2 = { layouts: items2, widgets: items };
-        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f133771) };
+        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f135291) };
         items2 = [items1];
-        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f133771) };
+        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f135291) };
         return obj2;
       }
     }

@@ -1,16 +1,13 @@
-// Module ID: 2027
-// Function ID: 2028
+// Module ID: 2030
+// Function ID: 2031
 // Name: i18n
-// Dependencies: [2028, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 568, 2065, 1348, 2]
+// Dependencies: [2031, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 2065, 2066, 2067, 568, 2068, 1351, 2]
 
-// Module 2027 (i18n)
+// Module 2030 (i18n)
 import _mod568 from "module_568" /* 568 */;
-import react_native from "react-native" /* 1348 */;
-import _modDef2028 from "module_2028" /* 2028 */;
-import parse from "parse" /* 2065 */;
-import module_2037 from "module_2037" /* 2037 */;
-import module_2038 from "module_2038" /* 2038 */;
-import module_2039 from "module_2039" /* 2039 */;
+import react_native from "react-native" /* 1351 */;
+import _modDef2031 from "module_2031" /* 2031 */;
+import parse from "parse" /* 2068 */;
 import module_2040 from "module_2040" /* 2040 */;
 import module_2041 from "module_2041" /* 2041 */;
 import module_2042 from "module_2042" /* 2042 */;
@@ -36,11 +33,14 @@ import module_2061 from "module_2061" /* 2061 */;
 import module_2062 from "module_2062" /* 2062 */;
 import module_2063 from "module_2063" /* 2063 */;
 import module_2064 from "module_2064" /* 2064 */;
+import module_2065 from "module_2065" /* 2065 */;
+import module_2066 from "module_2066" /* 2066 */;
+import module_2067 from "module_2067" /* 2067 */;
 import size from "module_2" /* 2 */;
 
 let _instance_members_initializer_I18N_;
 
-global.IntlMessageFormat = _modDef2028;
+global.IntlMessageFormat = _modDef2031;
 delete global["IntlMessageFormat"];
 const React2 = "en-US";
 class Provider {
@@ -167,15 +167,15 @@ class I18N extends EventEmitter {
     let getLanguages;
     let initialLocale;
     let tmp8;
-    const f85111 = (resolveLanguageLoaded) => {
+    const f86183 = (resolveLanguageLoaded) => {
       obj.resolveLanguageLoaded = resolveLanguageLoaded;
     };
     ({ initialLocale, getLanguages } = getMessages);
     getMessages = getMessages.getMessages;
     const obj = new I18N(tmp4, tmp3, new.target, this, tmp2, tmp, getLanguages);
     _instance_members_initializer_I18N_();
-    obj.initialLanguageLoad = new Promise(f85111);
-    new Promise(f85111);
+    obj.initialLanguageLoad = new Promise(f86183);
+    new Promise(f86183);
     obj._languages = getLanguages();
     if (null != window.Proxy) {
       const self2 = this;

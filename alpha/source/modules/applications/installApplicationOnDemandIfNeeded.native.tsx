@@ -1,14 +1,14 @@
-// Module ID: 12667
-// Function ID: 12668
+// Module ID: 12763
+// Function ID: 12764
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2140, 2162, 1072, 12605, 6992, 5890, 6004, 5438, 12668, 2]
+// Dependencies: [5, 2143, 2165, 1072, 12701, 7055, 5953, 6067, 5501, 12764, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 12667 (installApplicationOnDemandIfNeeded)
+// Module 12763 (installApplicationOnDemandIfNeeded)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -65,7 +65,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
             let scopes;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else {
           if (1 === tmp4) {

@@ -1,31 +1,31 @@
-// Module ID: 14627
-// Function ID: 14628
+// Module ID: 14740
+// Function ID: 14741
 // Name: SearchPlatformUtils
-// Dependencies: [14628, 6974, 14641, 8999, 14643, 1072, 14629, 14634, 8566, 1403, 7577, 1377, 2017, 5966, 1378, 11673, 575, 5068, 14648, 14652, 14659, 14649, 14664, 12, 14630, 14666, 558, 2]
+// Dependencies: [14741, 7037, 14754, 9066, 14756, 1072, 14742, 14747, 8633, 1406, 7643, 1380, 2020, 6029, 1381, 11739, 575, 5131, 14761, 14765, 14772, 14762, 14777, 12, 14743, 14779, 558, 2]
 // Exports: delayUntilNavigationComplete, getFiles, getGridItemSpacingStyles, getLinks, getMedia, getMediaGridItemStyles, getUrlIcon, performKeyboardAwareNavigation, toSearchBarTag
 
-// Module 14627 (SearchPlatformUtils)
+// Module 14740 (SearchPlatformUtils)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import URLUtilsDefault from "URLUtils" /* 1378 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import LinkIcon from "LinkIcon" /* 5966 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7577 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8566 */;
-import ClydeIcon from "ClydeIcon" /* 11673 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 14629 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 14630 */;
-import SearchUtils from "SearchUtils" /* 14634 */;
-import TrackingDefault from "Tracking" /* 14648 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14652 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 14659 */;
-import SmartSearchActionCreatorsAll from "SmartSearchActionCreators" /* 14664 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 14628 */;
-import SearchMessageStore from "SearchMessageStore" /* 6974 */;
-import SearchQueryStore from "SearchQueryStore" /* 14641 */;
-import SearchConstants from "SearchConstants" /* 8999 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 14643 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import URLUtilsDefault from "URLUtils" /* 1381 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
+import LinkIcon from "LinkIcon" /* 6029 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7643 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
+import ClydeIcon from "ClydeIcon" /* 11739 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 14742 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 14743 */;
+import SearchUtils from "SearchUtils" /* 14747 */;
+import TrackingDefault from "Tracking" /* 14761 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14765 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 14772 */;
+import SmartSearchActionCreatorsAll from "SmartSearchActionCreators" /* 14777 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 14741 */;
+import SearchMessageStore from "SearchMessageStore" /* 7037 */;
+import SearchQueryStore from "SearchQueryStore" /* 14754 */;
+import SearchConstants from "SearchConstants" /* 9066 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 14756 */;
 import Constants from "Constants" /* 1072 */;
 import "module_12";
 import module_12_mod from "module_12" /* 12 */;
@@ -49,7 +49,7 @@ let metroImportDefault;
 let module_12;
 let tmp6;
 let unpackModuleId;
-const SuggestedSearchActionCreators = tmp6(14666);
+const SuggestedSearchActionCreators = tmp6(14779);
 function performKeyboardAwareNavigation(fn) {
   let closure_0 = fn;
   const obj = useKeyboardIsOpen;
@@ -77,7 +77,7 @@ function getUrlIcon(target) {
     if (null == obj.safeParseWithQuery(target)) {
       return LinkIcon.LinkIcon;
     } else {
-      const tmp10Result = tmp10(1378);
+      const tmp10Result = tmp10(1381);
       if (tmp10Result.isDiscordUrl(target)) {
         return ClydeIcon.ClydeIcon;
       } else {
@@ -210,10 +210,10 @@ function fetchInitialMessages(searchContext) {
   const searchTabFetchId = obj.getSearchTabFetchId(searchContext, tmp3[0], queryString);
   const obj2 = SearchMessageStore;
   if (!SearchMessageStore.getIsFetching(searchTabFetchId)) {
-    const obj3 = queryString(14659);
+    const obj3 = queryString(14772);
     const result = obj3.clearAllSearchMesssages();
     const obj5 = { searchContext };
-    const obj4 = queryString(14648);
+    const obj4 = queryString(14761);
     obj4.trackSearchStarted(obj5);
     const obj6 = {
       searchContext,
@@ -229,10 +229,10 @@ function fetchInitialMessages(searchContext) {
       pagination: obj7,
       trackExactTotalHits: SearchResultExactCountEnabled.getSetting(),
       searchMode: constants5.NEWEST,
-      searchAnalyticsIds: tmp5Result.getSearchAnalyticsIds(searchContext, queryString(14649))
+      searchAnalyticsIds: tmp5Result.getSearchAnalyticsIds(searchContext, queryString(14762))
     };
-    const fetchTabMessages = queryString(14659).fetchTabMessages;
-    queryString(14659);
+    const fetchTabMessages = queryString(14772).fetchTabMessages;
+    queryString(14772);
     let cursor = obj2.getCursor(searchTabFetchId);
     if (cursor == null) {
       cursor = null;
@@ -241,7 +241,7 @@ function fetchInitialMessages(searchContext) {
     SearchResultExactCountEnabled = require("UserSettings").SearchResultExactCountEnabled;
     tmp5Result = require("SearchUtils");
     const tabMessages = fetchTabMessages(obj6);
-    const obj8 = { searchContext, searchQueryString: queryString, SearchSessionAnalyticsManager: queryString(14649) };
+    const obj8 = { searchContext, searchQueryString: queryString, SearchSessionAnalyticsManager: queryString(14762) };
     const fetchAnswer = SmartSearchActionCreatorsAll.fetchAnswer;
     SmartSearchActionCreatorsAll;
     const answer = fetchAnswer(obj8);
@@ -322,11 +322,11 @@ let obj = {
         pagination: obj5,
         trackExactTotalHits: SearchResultExactCountEnabled2.getSetting(),
         searchMode: constants5.NEWEST,
-        searchAnalyticsIds: tmp2Result.getSearchAnalyticsIds(searchContext, tmp17(14649))
+        searchAnalyticsIds: tmp2Result.getSearchAnalyticsIds(searchContext, tmp17(14762))
       };
       items = [tab];
-      const fetchTabMessages = queryString(14659).fetchTabMessages;
-      queryString(14659);
+      const fetchTabMessages = queryString(14772).fetchTabMessages;
+      queryString(14772);
       let cursor1 = obj3.getCursor(searchTabFetchId);
       tmp17 = queryString;
       if (cursor1 == null) {
@@ -353,9 +353,9 @@ let obj = {
       const hasSuggestionsResult = SuggestedSearchStore.hasSuggestions(smartSearchQuery);
       const tmp6Result = SuggestedSearchActionCreators;
       if (hasSuggestionsResult) {
-        const result2 = tmp6Result.advanceSuggestedSearches(smartSearchQuery, tmp(14649), closure_19);
+        const result2 = tmp6Result.advanceSuggestedSearches(smartSearchQuery, tmp(14762), closure_19);
       } else {
-        const initialSuggestedSearches = tmp6Result.fetchInitialSuggestedSearches(smartSearchQuery, tmp(14649));
+        const initialSuggestedSearches = tmp6Result.fetchInitialSuggestedSearches(smartSearchQuery, tmp(14762));
       }
     }
     const obj4 = { searchContext };
@@ -367,10 +367,10 @@ let obj = {
     let closure_2 = fn2;
     let tmp = arg3;
     function callback() {
-      const tmp = f108665(SearchQueryStore.getManager(searchContext));
+      const tmp = f109938(SearchQueryStore.getManager(searchContext));
       if (null == closure_3) {
         closure_3 = tmp;
-        f108666(tmp, closure_3);
+        f109939(tmp, closure_3);
       }
     }
     const tmp2 = fn(SearchQueryStore.getManager(searchContext));
@@ -388,11 +388,11 @@ let obj = {
   subscribeTextInputValue(searchContext, debounceResult, arg2) {
     let flag = arg2;
     let closure_0 = searchContext;
-    const f108665 = (getTextInputValue) => {
+    const f109938 = (getTextInputValue) => {
       const obj = { textInputValue: getTextInputValue.getTextInputValue(), textInputChangedFromInput: getTextInputValue.getTextValueChangedFromInput() };
       return obj;
     };
-    const f108666 = (textInputValue, textInputValue2) => {
+    const f109939 = (textInputValue, textInputValue2) => {
       let textInputValue1;
       textInputValue = textInputValue.textInputValue;
       const tmp = closure_0;
@@ -402,10 +402,10 @@ let obj = {
       tmp(textInputValue, textInputValue1, textInputValue.textInputChangedFromInput);
     };
     function callback() {
-      const tmp = f108665(SearchQueryStore.getManager(searchContext));
+      const tmp = f109938(SearchQueryStore.getManager(searchContext));
       if (null == closure_3) {
         closure_3 = tmp;
-        f108666(tmp, closure_3);
+        f109939(tmp, closure_3);
       }
     }
     let obj = SearchQueryStore;
@@ -428,7 +428,7 @@ let result = size.fileFinishedImporting("modules/search/native/SearchPlatformUti
 export default obj;
 export function getMedia(searchContext, items1) {
   let guildIdFromSearchContext;
-  let obj = guildIdFromSearchContext(14634);
+  let obj = guildIdFromSearchContext(14747);
   guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
   const items = [];
   let item = items1.forEach((getContentMessage) => {

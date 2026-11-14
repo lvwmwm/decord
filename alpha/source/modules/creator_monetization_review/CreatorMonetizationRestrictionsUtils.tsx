@@ -1,14 +1,14 @@
-// Module ID: 5167
-// Function ID: 5168
+// Module ID: 5230
+// Function ID: 5231
 // Name: CreatorMonetizationRestrictionsUtils
-// Dependencies: [5168, 5114, 5169, 1072, 2]
+// Dependencies: [5231, 5177, 5232, 1072, 2]
 // Exports: isRestrictedFromMonetizationReapplication, isRestrictedFromShowingGuildPurchaseEntryPoints, isRestrictedFromUpdatingCreatorMonetizationSettings, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 5167 (CreatorMonetizationRestrictionsUtils)
+// Module 5230 (CreatorMonetizationRestrictionsUtils)
 import Constants from "Constants" /* 1072 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5168 */;
-import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 5169 */;
-import GuildStore from "GuildStore" /* 5114 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5231 */;
+import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 5232 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;

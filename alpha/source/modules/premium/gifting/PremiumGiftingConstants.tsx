@@ -1,11 +1,11 @@
-// Module ID: 11738
-// Function ID: 11739
+// Module ID: 11804
+// Function ID: 11805
 // Name: PremiumGiftingConstants
-// Dependencies: [1387, 2749, 2]
+// Dependencies: [1390, 2765, 2]
 
-// Module 11738 (PremiumGiftingConstants)
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import _modDef2749 from "module_2749" /* 2749 */;
+// Module 11804 (PremiumGiftingConstants)
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import _modDef2765 from "module_2765" /* 2765 */;
 import size from "module_2" /* 2 */;
 
 let BOX;
@@ -21,7 +21,7 @@ let SEASONAL_STANDARD_BOX;
 let SNOWGLOBE;
 let STANDARD_BOX;
 const PremiumGiftStyles = PremiumConstants.PremiumGiftStyles;
-const obj = { [SNOWGLOBE]: _modDef2749.M6cPwB, [BOX]: _modDef2749.B9XqQk, [CUP]: _modDef2749["6dCq/u"], [STANDARD_BOX]: _modDef2749.GzPel1, [CAKE]: _modDef2749.AJ4iir, [CHEST]: _modDef2749.P5keo3, [COFFEE]: _modDef2749.w84vET, [SEASONAL_STANDARD_BOX]: _modDef2749["vd1fu/"], [SEASONAL_CAKE]: _modDef2749.aubYGR, [SEASONAL_CHEST]: _modDef2749.vjxYqU, [SEASONAL_COFFEE]: _modDef2749.bHuJLa, [NITROWEEN_STANDARD]: _modDef2749["+HMF8k"] };
+const obj = { [SNOWGLOBE]: _modDef2765.M6cPwB, [BOX]: _modDef2765.B9XqQk, [CUP]: _modDef2765["6dCq/u"], [STANDARD_BOX]: _modDef2765.GzPel1, [CAKE]: _modDef2765.AJ4iir, [CHEST]: _modDef2765.P5keo3, [COFFEE]: _modDef2765.w84vET, [SEASONAL_STANDARD_BOX]: _modDef2765["vd1fu/"], [SEASONAL_CAKE]: _modDef2765.aubYGR, [SEASONAL_CHEST]: _modDef2765.vjxYqU, [SEASONAL_COFFEE]: _modDef2765.bHuJLa, [NITROWEEN_STANDARD]: _modDef2765["+HMF8k"] };
 ({ SNOWGLOBE, BOX, CUP, STANDARD_BOX, CAKE, CHEST, COFFEE, SEASONAL_STANDARD_BOX, SEASONAL_CAKE, SEASONAL_CHEST, SEASONAL_COFFEE, NITROWEEN_STANDARD } = PremiumGiftStyles);
 const result = size.fileFinishedImporting("modules/premium/gifting/PremiumGiftingConstants.tsx");
 

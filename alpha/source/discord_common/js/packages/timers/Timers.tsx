@@ -1,10 +1,10 @@
-// Module ID: 5087
-// Function ID: 5088
+// Module ID: 5150
+// Function ID: 5151
 // Name: Timers
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 5087 (Timers)
+// Module 5150 (Timers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

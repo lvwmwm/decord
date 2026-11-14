@@ -1,17 +1,17 @@
-// Module ID: 13895
-// Function ID: 13896
+// Module ID: 14000
+// Function ID: 14001
 // Name: ConjureNumberBadge
-// Dependencies: [19, 17, 21, 575, 5243, 5830, 1187, 2]
+// Dependencies: [19, 17, 21, 575, 5306, 5893, 1187, 2]
 // Exports: default
 
-// Module 13895 (ConjureNumberBadge)
+// Module 14000 (ConjureNumberBadge)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;

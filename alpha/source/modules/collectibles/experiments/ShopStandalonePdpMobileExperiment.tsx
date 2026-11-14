@@ -1,11 +1,11 @@
-// Module ID: 9338
-// Function ID: 9339
+// Module ID: 9405
+// Function ID: 9406
 // Name: ShopStandalonePdpMobileExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: useIsShopStandalonePdpMobileEnabled
 
-// Module 9338 (ShopStandalonePdpMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 9405 (ShopStandalonePdpMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-08-shop-standalone-pdp-mobile", kind: "user", defaultConfig: { standalonePdpEnabled: false }, variations: { 0: { standalonePdpEnabled: false }, 1: { standalonePdpEnabled: true } } };

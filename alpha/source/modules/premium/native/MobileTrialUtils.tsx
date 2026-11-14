@@ -1,16 +1,16 @@
-// Module ID: 9539
-// Function ID: 9540
+// Module ID: 9606
+// Function ID: 9607
 // Name: MobileTrialUtils
-// Dependencies: [1387, 9243, 5285, 5076, 2171, 1113, 2]
+// Dependencies: [1390, 9310, 5348, 5139, 2174, 1113, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 9539 (MobileTrialUtils)
+// Module 9606 (MobileTrialUtils)
 import intl2 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import dismissible_content from "dismissible_content" /* 5076 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5285 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 9243 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 9310 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = PremiumConstants.PremiumSubscriptionSKUToPremiumType;

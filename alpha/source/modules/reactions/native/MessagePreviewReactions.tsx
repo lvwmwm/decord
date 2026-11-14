@@ -1,15 +1,15 @@
-// Module ID: 11812
-// Function ID: 11813
+// Module ID: 11878
+// Function ID: 11879
 // Name: MessagePreviewReactions
-// Dependencies: [19, 8678, 8681, 10159, 21, 504, 7852, 7871, 11802, 2]
+// Dependencies: [19, 8745, 8748, 10228, 21, 504, 7918, 7937, 11868, 2]
 // Exports: default
 
-// Module 11812 (MessagePreviewReactions)
+// Module 11878 (MessagePreviewReactions)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8678 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8681 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 10159 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8745 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8748 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 10228 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -36,14 +36,14 @@ export default function MessagePreviewReactions(emoji) {
     }
     return null != message ? message.reactions : closure_7;
   }, items1);
-  const tmp3 = messageId(7852);
-  const obj2 = { value: tmp3(messageId(7871).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: tmp4Result };
-  const AnalyticsLocationProvider = channelId(7852).AnalyticsLocationProvider;
+  const tmp3 = messageId(7918);
+  const obj2 = { value: tmp3(messageId(7937).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: tmp4Result };
+  const AnalyticsLocationProvider = channelId(7918).AnalyticsLocationProvider;
   if (stateFromStores.length > 0) {
     const obj3 = { channelId, messageId, emoji, reactions: stateFromStores };
-    tmp4Result = tmp4(tmp(11802).MessageReactionsContent, obj3);
+    tmp4Result = tmp4(tmp(11868).MessageReactionsContent, obj3);
   } else {
-    tmp4Result = tmp4(tmp(11802).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(11868).MessageReactionsEmpty, {});
   }
   return jsx(AnalyticsLocationProvider, obj2);
 };

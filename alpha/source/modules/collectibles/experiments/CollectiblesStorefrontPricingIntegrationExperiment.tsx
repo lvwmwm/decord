@@ -1,11 +1,11 @@
-// Module ID: 9380
-// Function ID: 9381
+// Module ID: 9448
+// Function ID: 9449
 // Name: CollectiblesStorefrontPricingIntegrationExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: getCollectiblesStorefrontPricingIntegrationEnabled, useCollectiblesStorefrontPricingIntegrationEnabled
 
-// Module 9380 (CollectiblesStorefrontPricingIntegrationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 9448 (CollectiblesStorefrontPricingIntegrationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-collectibles-storefront-pricing-integration", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

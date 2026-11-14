@@ -1,18 +1,18 @@
-// Module ID: 13934
-// Function ID: 13935
+// Module ID: 14039
+// Function ID: 14040
 // Name: joinFrameActivity
-// Dependencies: [5, 2162, 5092, 5918, 6957, 1072, 12610, 572, 12601, 5914, 12662, 12657, 1113, 12684, 13935, 12315, 12652, 6695, 13936, 12661, 7230, 8069, 7246, 2]
+// Dependencies: [5, 2165, 5155, 5981, 7020, 1072, 12706, 572, 12697, 5977, 12758, 12753, 1113, 12780, 14040, 12410, 12748, 6758, 14041, 12757, 7294, 8134, 7310, 2]
 // Exports: default
 
-// Module 13934 (joinFrameActivity)
-import FramesConstants from "FramesConstants" /* 6957 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 7246 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8069 */;
-import Constants2 from "Constants" /* 12610 */;
+// Module 14039 (joinFrameActivity)
+import FramesConstants from "FramesConstants" /* 7020 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 7310 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
+import Constants2 from "Constants" /* 12706 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import VoiceStateStore from "VoiceStateStore" /* 5918 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import VoiceStateStore from "VoiceStateStore" /* 5981 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ let obj = function _joinFrameActivity() {
                 };
                 preferredChannelId = 1;
                 c10 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "Path", done: true };
               }
               break;
             }

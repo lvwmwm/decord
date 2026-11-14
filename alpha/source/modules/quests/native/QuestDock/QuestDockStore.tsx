@@ -1,19 +1,20 @@
-// Module ID: 17578
-// Function ID: 17579
+// Module ID: 17696
+// Function ID: 17697
 // Name: QuestDockStore
-// Dependencies: [5275, 504, 17579, 572, 2]
+// Dependencies: [5338, 504, 17697, 572, 2]
 
-// Module 17578 (QuestDockStore)
+// Module 17696 (QuestDockStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import QuestConstants from "QuestConstants" /* 5275 */;
-import QuestDockUtils from "QuestDockUtils" /* 17579 */;
+import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestDockUtils from "QuestDockUtils" /* 17697 */;
 import size from "module_2" /* 2 */;
 
 const QuestDockMode = QuestConstants.QuestDockMode;
 let COLLAPSED = QuestDockMode.COLLAPSED;
 const _false = null;
 let isEligibleToBeVisible = false;
+let isExpandedOnScreen = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class QuestDockStore extends PersistedStore {
   initialize(questDockSoftDismissedAt) {
@@ -46,6 +47,12 @@ Object.defineProperty(prototype, "isEligibleToBeVisible", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "isExpandedOnScreen", {
+  get: function isExpandedOnScreen() {
+    return isExpandedOnScreen;
+  },
+  set: undefined
+});
 QuestDockStore.displayName = "QuestDockStore";
 QuestDockStore.persistKey = "QuestDockStore";
 let obj = {
@@ -67,6 +74,16 @@ let obj = {
   },
   QUESTS_DOCK_VISIBILITY_ELIGIBILITY_UPDATE: function handleQuestDockEligibilityUpdate(isEligibleToBeVisible) {
     isEligibleToBeVisible = isEligibleToBeVisible.isEligibleToBeVisible;
+    if (!isEligibleToBeVisible) {
+      isExpandedOnScreen = false;
+    }
+  },
+  QUESTS_DOCK_EXPANDED_ON_SCREEN_UPDATE: function handleQuestDockExpandedOnScreenUpdate(isExpandedOnScreen) {
+    if (isExpandedOnScreen.isExpandedOnScreen === isExpandedOnScreen) {
+      return false;
+    } else {
+      isExpandedOnScreen = isExpandedOnScreen.isExpandedOnScreen;
+    }
   }
 };
 const questDockStore = new QuestDockStore(DispatcherDefault, obj);

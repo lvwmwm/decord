@@ -1,20 +1,20 @@
-// Module ID: 15521
-// Function ID: 15522
+// Module ID: 15635
+// Function ID: 15636
 // Name: useAppDMChatInputState
-// Dependencies: [19, 11339, 2162, 7288, 2140, 1385, 1072, 2116, 504, 8417, 572, 7196, 2]
+// Dependencies: [19, 11406, 2165, 7352, 2143, 1388, 1072, 2119, 504, 8483, 572, 7259, 2]
 // Exports: default
 
-// Module 15521 (useAppDMChatInputState)
+// Module 15635 (useAppDMChatInputState)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import Server from "Server" /* 2116 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8417 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11339 */;
+import Server from "Server" /* 2119 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import UserProfileStore from "UserProfileStore" /* 7288 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import UserStore from "UserStore" /* 1385 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import UserProfileStore from "UserProfileStore" /* 7352 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const useQueryState = ApplicationCommandIndexStore.useQueryState;

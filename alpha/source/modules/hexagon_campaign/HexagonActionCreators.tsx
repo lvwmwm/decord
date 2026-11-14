@@ -1,18 +1,18 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 17084
+// Function ID: 17085
 // Name: HexagonActionCreators
-// Dependencies: [5, 1385, 5268, 3, 1089, 1282, 5271, 572, 2]
-// Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousAppIcon, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
+// Dependencies: [5, 1388, 5331, 3, 1089, 1285, 5334, 572, 2]
+// Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignExpiredClientThemeRestored, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousAppIcon, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
 
-// Module 16961 (HexagonActionCreators)
+// Module 17084 (HexagonActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5271 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2, c5, c6, closure_3;
@@ -307,6 +307,10 @@ export function clearHexagonCampaignAppliedPerks() {
 export function markHexagonCampaignDisplayNameStylesVisited() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "HEXAGON_CAMPAIGN_DISPLAY_NAME_STYLES_VISITED" });
+}
+export function markHexagonCampaignExpiredClientThemeRestored() {
+  obj = DispatcherDefault;
+  obj.dispatch({ type: "HEXAGON_CAMPAIGN_EXPIRED_CLIENT_THEME_RESTORED" });
 }
 export function saveHexagonCampaignPreviousPerkValues(previousPerkValues) {
   obj = DispatcherDefault;

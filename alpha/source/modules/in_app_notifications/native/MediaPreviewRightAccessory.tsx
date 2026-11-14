@@ -1,36 +1,36 @@
-// Module ID: 11022
-// Function ID: 11023
+// Module ID: 11091
+// Function ID: 11092
 // Name: MediaPreviewRightAccessory
-// Dependencies: [19, 17, 5244, 10957, 21, 5243, 575, 7540, 5866, 5839, 1377, 5843, 8014, 7569, 563, 8786, 11023, 11001, 10160, 8566, 1492, 5957, 8567, 8573, 9663, 11024, 1187, 9436, 2]
+// Dependencies: [19, 17, 5307, 11026, 21, 5306, 575, 7606, 5929, 5902, 1380, 5906, 8079, 7635, 563, 8853, 11092, 11070, 10229, 8633, 1495, 6020, 8634, 8640, 9730, 11093, 1187, 9503, 2]
 // Exports: MediaPreviewRightAccessory
 
-// Module 11022 (MediaPreviewRightAccessory)
+// Module 11091 (MediaPreviewRightAccessory)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1492 */;
-import useToken from "useToken" /* 5839 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import PlayIcon from "PlayIcon" /* 7540 */;
-import EyeIcon from "EyeIcon" /* 7569 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8566 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8567 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8573 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8786 */;
-import ClipView from "ClipView" /* 9436 */;
-import common_VideoDefault from "common/Video" /* 9663 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 10160 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10957 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 11001 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 11023 */;
-import StickerDefault from "Sticker" /* 11024 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1495 */;
+import useToken from "useToken" /* 5902 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import PlayIcon from "PlayIcon" /* 7606 */;
+import EyeIcon from "EyeIcon" /* 7635 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8634 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8640 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8853 */;
+import ClipView from "ClipView" /* 9503 */;
+import common_VideoDefault from "common/Video" /* 9730 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 10229 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11026 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 11070 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 11092 */;
+import StickerDefault from "Sticker" /* 11093 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
@@ -48,7 +48,7 @@ let obj8;
 let size;
 let size1;
 let tmp4;
-const VisualEffectViewDefault = tmp4(5843);
+const VisualEffectViewDefault = tmp4(5906);
 function VideoBadge() {
   let obj2;
   const tmp = closure_11();
@@ -97,7 +97,7 @@ function ObscuredMediaOverlay(isSpoiler) {
   items[2] = tmp11;
   const obj4 = { style: tmp.spoilerIconContainer, children: tmp14Result };
   if (isObscured) {
-    tmp14Result = tmp14(tmp2(8014).ImageWarningIcon, { size: "sm", color: "white" });
+    tmp14Result = tmp14(tmp2(8079).ImageWarningIcon, { size: "sm", color: "white" });
   } else {
     const obj5 = { style: tmp.spoilerPill, children: metroImportAll(EyeIcon.EyeIcon, { size: "sm", color: "white" }) };
     tmp14Result = tmp14(tmp15, obj5);

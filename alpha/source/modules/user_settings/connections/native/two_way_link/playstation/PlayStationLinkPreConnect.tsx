@@ -1,15 +1,15 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 7596
+// Function ID: 7597
 // Name: PlayStationLinkPreConnect
-// Dependencies: [19, 7527, 21, 5243, 1499, 7531, 7399, 1113, 2]
+// Dependencies: [19, 7593, 21, 5306, 1502, 7597, 7465, 1113, 2]
 // Exports: PlayStationLinkPreConnect
 
-// Module 7530 (PlayStationLinkPreConnect)
+// Module 7596 (PlayStationLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7527 */;
-import _modDef7531 from "module_7531" /* 7531 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7593 */;
+import _modDef7597 from "module_7597" /* 7597 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -25,7 +25,7 @@ export function PlayStationLinkPreConnect(arg0) {
   navigation = undefined;
   ({ platformType, autoStart } = arg0);
   const tmp = closure_6();
-  let obj = navigation(1499);
+  let obj = navigation(1502);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -36,10 +36,10 @@ export function PlayStationLinkPreConnect(arg0) {
     navigation.push(constants.ERROR, {});
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef7531 };
+    const obj = { uri: _modDef7597 };
     return obj;
   }, []);
-  const TwoWayLinkPreConnect = navigation(7399).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(7465).TwoWayLinkPreConnect;
   const intl = navigation(1113).intl;
   const intl2 = navigation(1113).intl;
   return <TwoWayLinkPreConnect platformType={platformType} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1113).t["6n+UPR"])} body={intl2.string(navigation(1113).t.JaaqIf)} autoStart={autoStart} />;

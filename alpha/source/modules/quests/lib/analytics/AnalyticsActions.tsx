@@ -1,29 +1,29 @@
-// Module ID: 8758
-// Function ID: 8759
+// Module ID: 8825
+// Function ID: 8826
 // Name: AnalyticsActions
-// Dependencies: [5, 8759, 1359, 8741, 1072, 8598, 8761, 8737, 8762, 8764, 8767, 5282, 6004, 1252, 8768, 8714, 1377, 1266, 8773, 5278, 2]
+// Dependencies: [5, 8826, 1362, 8808, 1072, 8665, 8828, 8804, 8829, 8831, 8834, 5345, 6067, 1256, 8835, 8781, 1380, 1269, 8840, 5341, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAdSessionProperties, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAdContentRenderingFailure, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestContentRenderingFailure, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 8758 (AnalyticsActions)
+// Module 8825 (AnalyticsActions)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import QuestTypes from "QuestTypes" /* 5278 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
-import QuestDataUtils from "QuestDataUtils" /* 8737 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 8761 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8762 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8764 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8767 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import QuestTypes from "QuestTypes" /* 5341 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import QuestDataUtils from "QuestDataUtils" /* 8804 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 8828 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8829 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8759 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1359 */;
-import QuestStore from "QuestStore" /* 8741 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8826 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
+import QuestStore from "QuestStore" /* 8808 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
 
 let tmp;
-const SessionHeartbeatScheduler = tmp(8598);
+const SessionHeartbeatScheduler = tmp(8665);
 function getCommonProperties(adContentId, sourceQuestContent, QUEST, shouldExtendSession) {
   let creative_type;
   obj = SessionAdGenerator;
@@ -80,7 +80,7 @@ function trackQuestEvent(questId) {
     obj = {};
     const id = value.id;
     tmp21Result = AnalyticsTypes;
-    const merged = Object.assign(getCommonProperties(id, sourceQuestContent, tmp21(5282).AdCreativeType.QUEST, shouldExtendSession));
+    const merged = Object.assign(getCommonProperties(id, sourceQuestContent, tmp21(5345).AdCreativeType.QUEST, shouldExtendSession));
     const merged1 = Object.assign(obj2);
     const merged2 = Object.assign(properties);
     const preview = value.preview;
@@ -241,7 +241,7 @@ let obj = function _getCommonClickEventProperties() {
             closure_7 = undefined;
             impression_id = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === impression_id) {
           if (arg0 === 1) {
@@ -360,7 +360,7 @@ obj = function _trackQuestContentClicked() {
       sourceQuestContent(obj6);
       await "HermesInternal";
       ({ questId: c0, questContent: c1, questContentCTA: c2, questContentPosition: c3, questContentRowIndex: c4, impressionId: c5, clickId: c6, trackGuildAndChannelMetadata: c7, sourceQuestContent: c8 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -398,7 +398,7 @@ obj = function _trackAdContentClicked() {
       adCreativeType(obj5);
       await "HermesInternal";
       ({ adContentId: c0, relatedQuestId: c1, adCreativeType: c2, questContent: c3, questContentCTA: c4, questContentPosition: c5, questContentRowIndex: c6, impressionId: c7, trackGuildAndChannelMetadata: c8, sourceQuestContent: c9 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

@@ -1,22 +1,22 @@
-// Module ID: 8796
-// Function ID: 8797
+// Module ID: 8863
+// Function ID: 8864
 // Name: ReactionActionCreators
-// Dependencies: [5, 502, 5092, 6309, 1072, 1089, 6205, 1113, 1108, 572, 5857, 1282, 8797, 1252, 6004, 5250, 5199, 5193, 2]
+// Dependencies: [5, 502, 5155, 6372, 1072, 1089, 6268, 1113, 1108, 572, 5920, 1285, 8864, 1256, 6067, 5313, 5262, 5256, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 8796 (ReactionActionCreators)
+// Module 8863 (ReactionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl4 from "intl" /* 1113 */;
-import EmojiUtils from "EmojiUtils" /* 5193 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5857 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8797 */;
+import EmojiUtils from "EmojiUtils" /* 5256 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5920 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import MessageStore from "MessageStore" /* 6309 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import MessageStore from "MessageStore" /* 6372 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -174,7 +174,7 @@ let obj = function _getReactors() {
               body = undefined;
               limit = 1;
               after = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === limit) {
             if (arg0 === 1) {
@@ -293,7 +293,7 @@ obj = function _addReaction() {
               colors = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -806,7 +806,7 @@ obj = function _removeReaction() {
         _location = constants.MESSAGE;
       }
       ({ userId: c4, options: c5 } = tmp58);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

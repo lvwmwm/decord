@@ -16,7 +16,7 @@ let closure_52;
 let closure_53;
 let closure_54;
 let closure_55;
-const f81691 = (__h) => {
+const f82755 = (__h) => {
   let closure_0 = __h;
   try {
     __h = __h.__h;
@@ -478,7 +478,7 @@ class C$1 {
         if (obj.__c) {
           let __cResult1 = obj3.__c(tmp8, items);
         }
-        let someResult = items.some(f81691);
+        let someResult = items.some(f82755);
         items.length = 0;
         items1.length = 0;
         let sorted1 = arr3.sort(H);
@@ -502,7 +502,7 @@ class C$1 {
       if (obj.__c) {
         obj4.__c(tmp4, items);
       }
-      items.some(f81691);
+      items.some(f82755);
     }
     C$1.__r = 0;
   }
@@ -1937,14 +1937,14 @@ let shouldComponentUpdate = function y(t, fn, fn2) {
       __c.u = true;
       let closure_2 = __c.shouldComponentUpdate;
       const componentWillUpdate = __c.componentWillUpdate;
-      __c.componentWillUpdate = function(buffer, keys, length) {
+      __c.componentWillUpdate = function(arg0, arg1, arg2) {
         const self = this;
         if (this.__e) {
           closure_2 = undefined;
-          fn(buffer, keys, length);
+          fn(arg0, arg1, arg2);
         }
         if (componentWillUpdate) {
-          componentWillUpdate.call(self, buffer, keys, length);
+          componentWillUpdate.call(self, arg0, arg1, arg2);
         }
       };
       __c.shouldComponentUpdate = shouldComponentUpdate;
@@ -2196,12 +2196,12 @@ function Form(onSubmitError) {
     input = screenshotInput.input;
   }
   [tmp12, c14] = tmp3(tmp(tmp2, null), 2);
-  const f81699 = (arg0) => {
+  const f82763 = (arg0) => {
     _undefined(arg0);
     closure_1_13(false);
   };
   items = [emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel];
-  const f81700 = (name) => {
+  const f82764 = (name) => {
     let tmp2 = isEmailRequired;
     let tmp3 = isNameRequired;
     const tmp = emailLabel;
@@ -2233,8 +2233,8 @@ function Form(onSubmitError) {
   };
   c46 = 8;
   tmp3(tmp(tmp2, null), 2);
-  const tmp14 = fn2(() => f81704, []);
-  closure_15 = fn2(() => f81704, items);
+  const tmp14 = fn2(() => f82768, []);
+  closure_15 = fn2(() => f82768, items);
   let closure_0 = screenshotInput(function*(arg0, value) {
     let closure_2;
     let tmp33;
@@ -2391,11 +2391,11 @@ function Form(onSubmitError) {
     screenshotInput = first;
   }
   const items1 = [screenshotInput, onSubmitSuccess, onSubmitError];
-  const f123878 = function(arg0) {
-    return f123878(...arguments);
+  const f125280 = function(arg0) {
+    return f125280(...arguments);
   };
   c46 = 8;
-  obj = { class: "form", onSubmit: tmp13(() => f81704, items1) };
+  obj = { class: "form", onSubmit: tmp13(() => f82768, items1) };
   let tmp15Result = null;
   if (input) {
     tmp15Result = null;
@@ -2542,16 +2542,16 @@ function Dialog(onFormSubmitted) {
   first = tmp3[0];
   let closure_3 = tmp3[1];
   items = [first];
-  const f81703 = () => {
+  const f82767 = () => {
     if (first) {
       const _clearTimeout = clearTimeout;
       clearTimeout(tmp);
       closure_1_3(null);
     }
-    f81703();
+    f82767();
   };
   [][0] = onFormSubmitted;
-  const f81704 = (arg0, arg1) => {
+  const f82768 = (arg0, arg1) => {
     merged.onSubmitSuccess(arg0, arg1);
     closure_1_3(setTimeout(() => {
       closure_1_0();
@@ -2559,7 +2559,7 @@ function Dialog(onFormSubmitted) {
     }, 5000));
   };
   c46 = 8;
-  const tmp5 = fn2(() => f81704, items);
+  const tmp5 = fn2(() => f82768, items);
   const tmp8 = g$1;
   if (first) {
     const obj2 = { class: "success__position", onClick: tmp5 };
@@ -2872,14 +2872,14 @@ let closure_47 = [];
 const __V = [];
 ({ __b: closure_50, __r: closure_51, diffed: closure_52, __c: closure_53, unmount: closure_54, __: closure_55 } = obj);
 let closure_60 = typeof requestAnimationFrame === "function";
-const fn3 = function p(keys) {
+const fn3 = function p(arg0) {
   c46 = 1;
-  return fn(D, keys);
+  return fn(D, arg0);
 };
 const fn4 = function x(arg0, arg1) {
   let closure_0 = arg0;
   c46 = 8;
-  return fn2(() => f81704, arg1);
+  return fn2(() => f82768, arg1);
 };
 let merged = Object.assign({ useCallback: null, useContext: null, useDebugValue: null, useEffect: null, useErrorBoundary: null, useId: null, useImperativeHandle: null, useLayoutEffect: null, useMemo: null, useReducer: null, useRef: null, useState: null });
 merged[0] = fn4;
@@ -4219,7 +4219,7 @@ export const feedbackModalIntegration = () => {
         if (closure_2_13.__c) {
           obj3.__c(tmpResult2, __h);
         }
-        __h.some(f81691);
+        __h.some(f82755);
       };
       return obj2;
     }

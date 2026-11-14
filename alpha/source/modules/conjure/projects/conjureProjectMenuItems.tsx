@@ -1,12 +1,12 @@
-// Module ID: 13192
-// Function ID: 13193
+// Module ID: 13301
+// Function ID: 13302
 // Name: conjureProjectMenuItems
-// Dependencies: [1113, 4079, 2]
+// Dependencies: [1113, 4131, 2]
 // Exports: previewMenuItems
 
-// Module 13192 (conjureProjectMenuItems)
+// Module 13301 (conjureProjectMenuItems)
 import intl4 from "intl" /* 1113 */;
-import _modDef4079 from "module_4079" /* 4079 */;
+import _modDef4131 from "module_4131" /* 4131 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/projects/conjureProjectMenuItems.tsx");
@@ -23,7 +23,7 @@ export function previewMenuItems(canRefresh) {
   const items = [];
   if (canRefresh.canRefresh) {
     const push = items.push;
-    const obj = { id: "preview-refresh", label: intl.string(_modDef4079["/nOi5n"]), kind: "refresh", disabled: tmp };
+    const obj = { id: "preview-refresh", label: intl.string(_modDef4131["/nOi5n"]), kind: "refresh", disabled: tmp };
     intl = intl4.intl;
     push(obj);
   }
@@ -34,13 +34,13 @@ export function previewMenuItems(canRefresh) {
     let connection = nextResult.connection;
     let push2 = items.push;
     if ("authorize" === nextResult.offer) {
-      let obj2 = { id: "preview-connect-" + connection.type, label: intl2.formatToPlainString(_modDef4079.DEwmI5, obj3), kind: "connect", connectionType: connection.type, disabled: connectPending.has(connection.type) };
+      let obj2 = { id: "preview-connect-" + connection.type, label: intl2.formatToPlainString(_modDef4131.DEwmI5, obj3), kind: "connect", connectionType: connection.type, disabled: connectPending.has(connection.type) };
       let _HermesInternal = HermesInternal;
       intl2 = intl4.intl;
       obj3 = { label: connection.label };
       obj4 = obj2;
     } else {
-      obj4 = { id: "preview-connect-" + connection.type, label: intl3.formatToPlainString(_modDef4079.GnHcWc, obj5), kind: "connect", connectionType: connection.type, disabled: true };
+      obj4 = { id: "preview-connect-" + connection.type, label: intl3.formatToPlainString(_modDef4131.GnHcWc, obj5), kind: "connect", connectionType: connection.type, disabled: true };
       let _HermesInternal2 = HermesInternal;
       intl3 = intl4.intl;
       obj5 = { label: connection.label };

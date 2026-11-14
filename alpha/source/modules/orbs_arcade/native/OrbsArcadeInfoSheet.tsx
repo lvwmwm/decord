@@ -1,15 +1,15 @@
-// Module ID: 17558
-// Function ID: 17559
+// Module ID: 17676
+// Function ID: 17677
 // Name: OrbsArcadeInfoSheet
-// Dependencies: [19, 17529, 21, 504, 10644, 17559, 1113, 17549, 17539, 2]
+// Dependencies: [19, 17647, 21, 504, 10713, 17677, 1113, 17667, 17657, 2]
 // Exports: default
 
-// Module 17558 (OrbsArcadeInfoSheet)
+// Module 17676 (OrbsArcadeInfoSheet)
 import Fragment from "Fragment" /* 21 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17549 */;
-import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17559 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17667 */;
+import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17677 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17529 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17647 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -26,9 +26,9 @@ export default function OrbsArcadeInfoSheet(gameId) {
   const stateFromStores = obj.useStateFromStores(items, () => OrbsArcadeStore.getGame(gameId), items1);
   let tmp5Result2 = null;
   if (null != stateFromStores) {
-    const PromoSheet = tmp(10644).PromoSheet;
+    const PromoSheet = tmp(10713).PromoSheet;
     let tmp5Result;
-    const tmpResult = gameId(17559);
+    const tmpResult = gameId(17677);
     if (tmpResult.hasOrbsArcadeGameGraphic(stateFromStores)) {
       const obj2 = { game: stateFromStores };
       tmp5Result = tmp5(OrbsArcadeGameGraphicDefault, obj2);
@@ -36,7 +36,7 @@ export default function OrbsArcadeInfoSheet(gameId) {
     const obj3 = { gradientColor: "blue", illustration: tmp5Result, title: intl.string(gameId(1113).t["3AT3DL"]), description: intl2.string(gameId(1113).t.GSj8gp), actions: null };
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
-    ({ game: stateFromStores, sheetKey: "OrbsArcadeInfoSheet", location: gameId(17539).OrbsArcadeCtaLocation.INFO_SHEET, surface, secondaryAction: gameId(17549).OrbsArcadeSheetSecondaryAction.CLOSE, direction: "vertical" });
+    ({ game: stateFromStores, sheetKey: "OrbsArcadeInfoSheet", location: gameId(17657).OrbsArcadeCtaLocation.INFO_SHEET, surface, secondaryAction: gameId(17667).OrbsArcadeSheetSecondaryAction.CLOSE, direction: "vertical" });
     OrbsArcadeSheetActionsDefault;
     tmp5Result2 = tmp5(PromoSheet, obj3);
   }

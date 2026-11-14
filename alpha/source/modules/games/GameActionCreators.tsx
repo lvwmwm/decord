@@ -1,16 +1,16 @@
-// Module ID: 9467
-// Function ID: 9468
+// Module ID: 9534
+// Function ID: 9535
 // Name: GameActionCreators
-// Dependencies: [5, 2138, 1072, 1282, 572, 5087, 12, 2]
+// Dependencies: [5, 2141, 1072, 1285, 572, 5150, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 9467 (GameActionCreators)
+// Module 9534 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Timers from "Timers" /* 5087 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Timers from "Timers" /* 5150 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameStore from "GameStore" /* 2138 */;
+import GameStore from "GameStore" /* 2141 */;
 import size from "module_2" /* 2 */;
 
 let c1;
@@ -136,7 +136,7 @@ obj = function _fetchGamesWithSupplementalData() {
       if (closure_1 === undefined) {
         flag = false;
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

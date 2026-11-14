@@ -1,17 +1,17 @@
-// Module ID: 7196
-// Function ID: 7197
+// Module ID: 7259
+// Function ID: 7260
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 2162, 1072, 558, 6992, 12, 1380, 504, 2]
+// Dependencies: [19, 2165, 1072, 558, 7055, 12, 1255, 504, 2]
 // Exports: default, useGetOrFetchApplication
 
-// Module 7196 (useGetOrFetchApplications)
+// Module 7259 (useGetOrFetchApplications)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6992 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7055 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

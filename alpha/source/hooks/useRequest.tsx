@@ -1,10 +1,10 @@
-// Module ID: 13440
-// Function ID: 13441
+// Module ID: 13543
+// Function ID: 13544
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1113, 6695, 2]
+// Dependencies: [5, 32, 19, 1113, 6758, 2]
 // Exports: default
 
-// Module 13440 (useRequest)
+// Module 13543 (useRequest)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -55,7 +55,7 @@ export default function useRequest(arg0) {
                 closure_2 = tmp;
                 c5 = 1;
                 c6 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "Path", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

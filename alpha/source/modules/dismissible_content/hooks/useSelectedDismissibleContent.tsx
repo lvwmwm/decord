@@ -1,13 +1,13 @@
-// Module ID: 9493
-// Function ID: 9494
+// Module ID: 9560
+// Function ID: 9561
 // Name: useSelectedDismissibleContent
-// Dependencies: [32, 9494, 9499, 9496, 2]
+// Dependencies: [32, 9561, 9566, 9563, 2]
 // Exports: useSelectedDismissibleContent, useSelectedScopedDismissibleContent, useSelectedSingleUseGuildDismissibleContent, useSelectedSnowflakeBoundDismissibleContent, useSelectedSnowflakeBoundGuildDismissibleContent, useSelectedTimeRecurringDismissibleContent, useSelectedTimeRecurringGuildDismissibleContent, useSelectedTimeRecurringSnowflakeBoundDismissibleContent, useSelectedVersionedDismissibleContent
 
-// Module 9493 (useSelectedDismissibleContent)
-import useGetDismissibleContent from "useGetDismissibleContent" /* 9494 */;
-import DismissibleContentScope from "DismissibleContentScope" /* 9496 */;
-import useSelectedDismissibleContentShared2 from "useSelectedDismissibleContentShared" /* 9499 */;
+// Module 9560 (useSelectedDismissibleContent)
+import useGetDismissibleContent from "useGetDismissibleContent" /* 9561 */;
+import DismissibleContentScope from "DismissibleContentScope" /* 9563 */;
+import useSelectedDismissibleContentShared2 from "useSelectedDismissibleContentShared" /* 9566 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -26,8 +26,9 @@ export function useSelectedScopedDismissibleContent(items1) {
   if (bypassAutoDismiss === undefined) {
     bypassAutoDismiss = false;
   }
+  const deduplicateImpressions = obj.deduplicateImpressions;
   const obj2 = useGetDismissibleContent;
-  const scopedDismissibleContentSelection = obj2.useScopedDismissibleContentSelection(items1, groupName);
+  const scopedDismissibleContentSelection = obj2.useScopedDismissibleContentSelection(items1, groupName, deduplicateImpressions);
   ({ visibleContent, markAsDismissed } = scopedDismissibleContentSelection);
   let candidate = null;
   if (null != visibleContent) {
@@ -65,8 +66,9 @@ export function useSelectedDismissibleContent(items, arg1) {
   if (bypassAutoDismiss === undefined) {
     bypassAutoDismiss = false;
   }
+  const deduplicateImpressions = obj.deduplicateImpressions;
   const obj2 = useGetDismissibleContent;
-  const scopedDismissibleContentSelection = obj2.useScopedDismissibleContentSelection(flatMapResult, groupName);
+  const scopedDismissibleContentSelection = obj2.useScopedDismissibleContentSelection(flatMapResult, groupName, deduplicateImpressions);
   ({ visibleContent, markAsDismissed } = scopedDismissibleContentSelection);
   let candidate = null;
   if (null != visibleContent) {

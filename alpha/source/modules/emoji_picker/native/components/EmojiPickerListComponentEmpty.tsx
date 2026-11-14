@@ -1,17 +1,17 @@
-// Module ID: 11215
-// Function ID: 11216
+// Module ID: 11282
+// Function ID: 11283
 // Name: EmojiPickerListComponentEmpty
-// Dependencies: [19, 17, 21, 5243, 575, 11216, 11220, 5507, 1187, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 11283, 11287, 5570, 1187, 1113, 2]
 
-// Module 11215 (EmojiPickerListComponentEmpty)
+// Module 11282 (EmojiPickerListComponentEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import SearchEmpty from "SearchEmpty" /* 11216 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 11220 */;
+import SearchEmpty from "SearchEmpty" /* 11283 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 11287 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -38,7 +38,7 @@ const memoResult = react.memo(function EmojiPickerListComponentEmpty(insetBottom
   const obj2 = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = obj2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(5507).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(5570).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

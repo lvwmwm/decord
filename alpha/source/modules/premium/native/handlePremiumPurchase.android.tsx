@@ -1,18 +1,18 @@
-// Module ID: 9545
-// Function ID: 9546
+// Module ID: 9612
+// Function ID: 9613
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 9546, 502, 2176, 9235, 1072, 1083, 1282, 9547, 6694, 9548, 1113, 5063, 6205, 8514, 504, 9243, 9554, 9555, 9617, 9618, 7191, 5055, 9619, 1252, 2]
+// Dependencies: [109, 5, 19, 9613, 502, 2179, 9302, 1072, 1083, 1285, 9614, 6757, 9615, 1113, 5126, 6268, 8580, 504, 9310, 9621, 9622, 9684, 9685, 7254, 5118, 9686, 1256, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 9545 (handlePremiumPurchase)
+// Module 9612 (handlePremiumPurchase)
 import Constants2 from "Constants" /* 1083 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9546 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9613 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import IAPStore from "IAPStore" /* 9235 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import IAPStore from "IAPStore" /* 9302 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let obj = function _validatePurchase() {
               ({ productId: c0, premiumSubscription: c1, offerId: c2, currency: c3, price: c4, isGift: c5 } = closure_0);
               is_gift = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else {
             let self;
@@ -485,7 +485,7 @@ export function useHandlePremiumPurchase() {
     flag = tmp207.isOneTimePurchase ?? false;
     flag2 = tmp207.allowPlanChange ?? true;
     ({ applicationId: c9, giftInfoOptions: c10, googleOfferId: c11, onPurchaseComplete: c12, onPurchaseError: c13 } = premiumSubscription);
-    return "flexDirection";
+    return "Path";
   });
   const items1 = [tmp5, paymentGatewayPlanId, prop, id, premiumTrialOffer, premiumDiscountOffer, stateFromStores, isEligibleForBogoOffer];
   return useCallback(function() {

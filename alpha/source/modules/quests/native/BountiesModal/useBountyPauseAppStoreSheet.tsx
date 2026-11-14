@@ -1,18 +1,18 @@
-// Module ID: 17441
-// Function ID: 17442
+// Module ID: 17559
+// Function ID: 17560
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 5275, 1072, 10073, 10099, 17439, 1108, 5280, 8767, 10101, 8758, 5282, 15130, 17436, 2]
+// Dependencies: [19, 5338, 1072, 10141, 10168, 17557, 1108, 5343, 8834, 10170, 8825, 5345, 15244, 17554, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 17441 (useBountyPauseAppStoreSheet)
+// Module 17559 (useBountyPauseAppStoreSheet)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import QuestConstants from "QuestConstants" /* 5275 */;
-import AdCreativeType from "AdCreativeType" /* 5282 */;
-import AnalyticsActions from "AnalyticsActions" /* 8758 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 15130 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17436 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 17439 */;
+import QuestConstants from "QuestConstants" /* 5338 */;
+import AdCreativeType from "AdCreativeType" /* 5345 */;
+import AnalyticsActions from "AnalyticsActions" /* 8825 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 15244 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 17554 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 17557 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export function useBountyPauseAppStoreSheet(bounty) {
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(10073).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(10141).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

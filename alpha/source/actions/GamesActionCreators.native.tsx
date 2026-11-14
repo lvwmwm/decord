@@ -1,14 +1,14 @@
-// Module ID: 12609
-// Function ID: 12610
+// Module ID: 12705
+// Function ID: 12706
 // Name: GamesActionCreators
-// Dependencies: [5, 1072, 12610, 12611, 1092, 8404, 5949, 572, 1282, 12612, 12614, 12615, 2]
+// Dependencies: [5, 1072, 12706, 12707, 1092, 8470, 6012, 572, 1285, 12708, 12710, 12711, 2]
 
-// Module 12609 (GamesActionCreators)
+// Module 12705 (GamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LinkingDefault from "Linking" /* 5949 */;
-import Constants2 from "Constants" /* 12610 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12611 */;
-import fetchDetectableGamesDefault from "fetchDetectableGames" /* 12612 */;
+import LinkingDefault from "Linking" /* 6012 */;
+import Constants2 from "Constants" /* 12706 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12707 */;
+import fetchDetectableGamesDefault from "fetchDetectableGames" /* 12708 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

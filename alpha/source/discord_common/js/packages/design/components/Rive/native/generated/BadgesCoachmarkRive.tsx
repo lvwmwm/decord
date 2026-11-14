@@ -1,13 +1,13 @@
-// Module ID: 5321
-// Function ID: 5322
+// Module ID: 5384
+// Function ID: 5385
 // Name: BadgesCoachmarkRive
-// Dependencies: [109, 19, 21, 5322, 5374, 5375, 2]
+// Dependencies: [109, 19, 21, 5385, 5437, 5438, 2]
 // Exports: BadgesCoachmarkRive
 
-// Module 5321 (BadgesCoachmarkRive)
+// Module 5384 (BadgesCoachmarkRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5322 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5375 */;
+import BaseRive2 from "BaseRive" /* 5385 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5438 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

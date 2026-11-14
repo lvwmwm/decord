@@ -1,11 +1,11 @@
-// Module ID: 13315
-// Function ID: 13316
+// Module ID: 13420
+// Function ID: 13421
 // Name: useClickOnHomeActivityOpensAppDetails
-// Dependencies: [5068, 2]
+// Dependencies: [5131, 2]
 // Exports: useClickOnHomeActivityOpensAppDetails
 
-// Module 13315 (useClickOnHomeActivityOpensAppDetails)
-import UserSettings from "UserSettings" /* 5068 */;
+// Module 13420 (useClickOnHomeActivityOpensAppDetails)
+import UserSettings from "UserSettings" /* 5131 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/hooks/useClickOnHomeActivityOpensAppDetails.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 8113
-// Function ID: 8114
+// Module ID: 8179
+// Function ID: 8180
 // Name: void/TextInput/TextInput
-// Dependencies: [19, 17, 1072, 21, 5243, 575, 5250, 1377, 5240, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5313, 1380, 5303, 2]
 
-// Module 8113 (void/TextInput/TextInput)
+// Module 8179 (void/TextInput/TextInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ColorUtils from "ColorUtils" /* 5240 */;
-import shared from "shared" /* 5250 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import ColorUtils from "ColorUtils" /* 5303 */;
+import shared from "shared" /* 5313 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;

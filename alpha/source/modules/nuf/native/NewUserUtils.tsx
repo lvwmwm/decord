@@ -1,29 +1,29 @@
-// Module ID: 20178
-// Function ID: 20179
+// Module ID: 20338
+// Function ID: 20339
 // Name: NewUserUtils
-// Dependencies: [5, 18532, 7022, 1385, 14713, 1072, 14881, 6839, 18580, 14883, 1377, 8133, 18581, 14714, 1242, 18975, 8394, 572, 1500, 14886, 6785, 20177, 1099, 14997, 2]
+// Dependencies: [5, 18661, 7085, 1388, 14826, 1072, 14995, 6902, 18709, 14997, 1380, 8199, 18710, 14827, 1242, 19029, 8460, 572, 1503, 15000, 6848, 20337, 1099, 15111, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 20178 (NewUserUtils)
+// Module 20338 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import Link from "Link" /* 1500 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6839 */;
-import react_nativeDefault from "react-native" /* 8133 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8394 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14881 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14886 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14997 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18580 */;
-import InterestPickerExperiment from "InterestPickerExperiment" /* 18975 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 20177 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import Link from "Link" /* 1503 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
+import react_nativeDefault from "react-native" /* 8199 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14995 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 15000 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 15111 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18709 */;
+import InterestPickerExperiment from "InterestPickerExperiment" /* 19029 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 20337 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 18532 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7022 */;
-import UserStore from "UserStore" /* 1385 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14713 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 18661 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
+import UserStore from "UserStore" /* 1388 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14826 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ obj = function _getNextOnboardingStep() {
               transitionStep = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {

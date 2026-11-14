@@ -1,10 +1,10 @@
-// Module ID: 8467
-// Function ID: 8468
+// Module ID: 8533
+// Function ID: 8534
 // Name: EntitlementActionCreators
-// Dependencies: [5, 1072, 572, 1282, 6703, 2]
+// Dependencies: [5, 1072, 572, 1285, 6766, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 8467 (EntitlementActionCreators)
+// Module 8533 (EntitlementActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -51,7 +51,7 @@ let obj = function _fetchUserEntitlements() {
       }
       await "HermesInternal";
       entitlementType = tmp36.entitlementType;
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

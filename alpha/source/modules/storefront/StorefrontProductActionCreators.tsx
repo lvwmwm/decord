@@ -1,17 +1,17 @@
-// Module ID: 8511
-// Function ID: 8512
+// Module ID: 8577
+// Function ID: 8578
 // Name: StorefrontProductActionCreators
-// Dependencies: [5, 2186, 8512, 8438, 1072, 8515, 572, 6703, 6695, 8516, 2]
+// Dependencies: [5, 2189, 8578, 8504, 1072, 8581, 572, 6766, 6758, 8582, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus, shouldFetchProductBySku
 
-// Module 8511 (StorefrontProductActionCreators)
+// Module 8577 (StorefrontProductActionCreators)
 import Constants from "Constants" /* 1072 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8515 */;
-import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8516 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8581 */;
+import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8582 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8512 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 8438 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8578 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 8504 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _maybeFetchProductsWithSkus() {
@@ -92,7 +92,7 @@ let obj = function _maybeFetchProductsWithSkus() {
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };
@@ -201,7 +201,7 @@ obj = function _maybeFetchProductsBySkuIds() {
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

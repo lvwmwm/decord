@@ -1,10 +1,10 @@
-// Module ID: 2110
-// Function ID: 2111
+// Module ID: 2113
+// Function ID: 2114
 // Name: BaseCollectiblesItemRecord
-// Dependencies: [1405, 2]
+// Dependencies: [1408, 2]
 
-// Module 2110 (BaseCollectiblesItemRecord)
-import Record from "Record" /* 1405 */;
+// Module 2113 (BaseCollectiblesItemRecord)
+import Record from "Record" /* 1408 */;
 import size from "module_2" /* 2 */;
 
 let sku_id;

@@ -1,37 +1,37 @@
-// Module ID: 8492
-// Function ID: 8493
+// Module ID: 8558
+// Function ID: 8559
 // Name: UserProfileActionSheet
-// Dependencies: [32, 19, 17, 5092, 5155, 1385, 8476, 7896, 1072, 5504, 21, 5243, 5507, 1652, 1627, 504, 8416, 7852, 7871, 8493, 5068, 8479, 8494, 8495, 8507, 8508, 8509, 8517, 8501, 8523, 8524, 8527, 1493, 5829, 8521, 5484, 5839, 575, 8490, 8528, 7286, 5144, 8417, 1252, 5430, 5432, 8529, 5489, 1499, 8410, 5503, 1187, 8530, 1113, 5314, 8534, 1377, 8537, 8539, 15557, 15660, 9424, 5838, 15763, 1196, 2]
+// Dependencies: [32, 19, 17, 5155, 5218, 1388, 8542, 7962, 1072, 5567, 21, 5306, 5570, 1655, 1630, 504, 8482, 7918, 7937, 8559, 5131, 8545, 8560, 8561, 8573, 8574, 8575, 8583, 8567, 8589, 8590, 8593, 1496, 5892, 8587, 5547, 5902, 575, 8556, 8594, 7350, 5207, 8483, 1256, 5493, 5495, 8595, 5552, 1502, 8476, 5566, 1187, 8596, 1113, 5377, 8600, 1380, 8603, 8604, 8606, 15671, 15779, 9493, 5901, 15883, 1196, 2]
 
-// Module 8492 (UserProfileActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import isChangelogUserDefault from "isChangelogUser" /* 5144 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
-import BottomSheetModal from "BottomSheetModal" /* 5507 */;
-import UserActionCreators from "UserActionCreators" /* 7286 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import Constants2 from "Constants" /* 7896 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8417 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8501 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8517 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8521 */;
-import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8528 */;
-import openUserSettings from "openUserSettings" /* 8537 */;
+// Module 8558 (UserProfileActionSheet)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import isChangelogUserDefault from "isChangelogUser" /* 5207 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
+import BottomSheetModal from "BottomSheetModal" /* 5570 */;
+import UserActionCreators from "UserActionCreators" /* 7350 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import Constants2 from "Constants" /* 7962 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8567 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8583 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8587 */;
+import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8594 */;
+import openUserSettings from "openUserSettings" /* 8604 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import UserStore from "UserStore" /* 1385 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8476 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import UserStore from "UserStore" /* 1388 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 let constants, navigation, num, obj1, set;
 
 let closure_12;
@@ -52,7 +52,7 @@ function UseAnimatedPosition(animatedPosition) {
   const items = [closure_19, animatedPosition2];
   let c0;
   [tmp, tmp2] = items;
-  const obj2 = _mod1652;
+  const obj2 = _mod1655;
   class UserProfileActionSheetTsx1 {
     constructor() {
       return closure_0.get();
@@ -91,11 +91,11 @@ function ActionSheetAlignedView(arg0) {
   let tmp8;
   ({ animatedPosition, animatedIndex, safeAreaTop, children } = arg0);
   let items = [closure_22, animatedPosition, safeAreaTop, , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
-  items[3] = _mod1652.interpolate;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
+  items[3] = _mod1655.interpolate;
   items[4] = animatedIndex;
-  items[5] = _mod1652.Extrapolation;
+  items[5] = _mod1655.Extrapolation;
   let c0;
   let c1;
   let c2;
@@ -120,7 +120,7 @@ function ActionSheetAlignedView(arg0) {
   const animatedStyle = useAnimatedStyle(UserProfileActionSheetTsx3);
   let obj = { style: items2, pointerEvents: "box-none", children };
   items2 = [hasOwnProperty.absoluteFill, animatedStyle];
-  return authStore3(_modDef1652.View, obj);
+  return authStore3(_modDef1655.View, obj);
 }
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
 const UserProfileThemeTypes = Constants2.UserProfileThemeTypes;
@@ -166,11 +166,11 @@ const memoResult = react.memo(function UserProfileActionSheet(userId) {
   let obj14;
   let obj15;
   let obj20;
-  let obj28;
   let obj29;
-  let obj31;
-  let obj35;
-  let obj37;
+  let obj30;
+  let obj32;
+  let obj36;
+  let obj38;
   let openedAt;
   let pendingAvatarDecoration;
   let pendingProfileEffect;
@@ -183,6 +183,7 @@ const memoResult = react.memo(function UserProfileActionSheet(userId) {
   let showGuildProfile;
   let skuId;
   let theme;
+  let tmp111Result5;
   let tmp24;
   let tmp25;
   let tmp56;
@@ -573,7 +574,7 @@ const memoResult = react.memo(function UserProfileActionSheet(userId) {
         if (atResult === AnalyticsLocationDefault.COLLECTIBLES_SHOP_PROFILE_PREVIEW) {
           const obj = { type: "Collectibles Shop Details Modal Expanded", location_stack: tmp, sku_id: skuId };
           skuId = undefined;
-          const track = tmp3(1252).track;
+          const track = tmp3(1256).track;
           const OPEN_MODAL = guild_id.OPEN_MODAL;
           AnalyticsUtilsDefault;
           if (avatarDecoration != null) {
@@ -664,7 +665,6 @@ const memoResult = react.memo(function UserProfileActionSheet(userId) {
         intl2 = tmp3(tmp4[53]).intl;
         tmp111Result9 = tmp107(AnalyticsLocationProvider, obj9);
       } else {
-        let tmp111Result5;
         const obj13 = { theme, primaryColor, secondaryColor, children: sharedValue2(AnalyticsLocationProvider2, obj14) };
         const ThemeContextProvider2 = tmp3(tmp4[54]).ThemeContextProvider;
         obj14 = { value: analyticsLocations, children: first(UserProfileAnalyticsProvider2, obj15) };
@@ -694,7 +694,7 @@ const memoResult = react.memo(function UserProfileActionSheet(userId) {
         const obj18 = { gradientHeight: diff, bannerHeight: tmp59 };
         items17[1] = sharedValue2(tmp7(tmp4[55]), obj18);
         let str2;
-        const obj19 = { scrollsToTop: false, style: tmp2.container, contentContainerStyle: obj20, scrollEventsHandlersHook: tmp81, ref, children: sharedValue2(prop, obj29) };
+        const obj19 = { scrollsToTop: false, style: tmp2.container, contentContainerStyle: obj20, scrollEventsHandlersHook: tmp81, ref, children: sharedValue2(prop, obj30) };
         const BottomSheetScrollView = tmp3(tmp4[12]).BottomSheetScrollView;
         if (isPreviewingChanges) {
           str2 = "none";
@@ -705,7 +705,7 @@ const memoResult = react.memo(function UserProfileActionSheet(userId) {
         if (tmp3Result23.isIOS()) {
           tmp81 = memo;
         }
-        const obj22 = {
+        const obj23 = {
           user: obj4,
           channel: stateFromStores1,
           guildId: tmp83,
@@ -740,6 +740,8 @@ const memoResult = react.memo(function UserProfileActionSheet(userId) {
         };
         tmp83 = undefined;
         const obj21 = { style: tmp2.profileContainer, onLayout: callback, children: items18 };
+        const obj22 = { value: ref, children: tmp111Result5 };
+        const Provider = tmp7(tmp4[57]).Provider;
         if (showGuildProfile) {
           tmp83 = guild_id;
         }
@@ -753,74 +755,74 @@ const memoResult = react.memo(function UserProfileActionSheet(userId) {
           tmp85 = sharedValue2;
         }
         if (obj4.isNonUserBot()) {
-          const obj23 = {};
-          const tmp7Result15 = tmp7(tmp4[58]);
-          let merged = Object.assign(obj22);
-          tmp111Result5 = tmp111(tmp7Result15, obj23);
-        } else if (obj4.bot) {
           const obj24 = {};
-          const tmp7Result16 = tmp7(tmp4[59]);
-          const merged1 = Object.assign(obj22);
-          tmp111Result5 = tmp111(tmp7Result16, obj24);
-        } else {
+          const tmp7Result15 = tmp7(tmp4[59]);
+          let merged = Object.assign(obj23);
+          tmp111Result5 = tmp111(tmp7Result15, obj24);
+        } else if (obj4.bot) {
           const obj25 = {};
-          const tmp7Result17 = tmp7(tmp4[60]);
-          const merged2 = Object.assign(obj22);
-          tmp111Result5 = tmp111(tmp7Result17, obj25);
+          const tmp7Result16 = tmp7(tmp4[60]);
+          const merged1 = Object.assign(obj23);
+          tmp111Result5 = tmp111(tmp7Result16, obj25);
+        } else {
+          const obj26 = {};
+          const tmp7Result17 = tmp7(tmp4[61]);
+          const merged2 = Object.assign(obj23);
+          tmp111Result5 = tmp111(tmp7Result17, obj26);
         }
-        items18 = [tmp111Result5, ];
+        items18 = [sharedValue2(Provider, obj22), ];
         let tmp111Result6 = null != tmp52Result;
         if (tmp111Result6) {
-          const obj26 = { style: items19, pointerEvents: "none", children: sharedValue2(tmp7(tmp4[61]), obj28) };
+          const obj27 = { style: items19, pointerEvents: "none", children: sharedValue2(tmp7(tmp4[62]), obj29) };
           items19 = [tmp2.profileEffect, , ];
-          const obj27 = { height: diff };
-          items19[1] = obj27;
+          const obj28 = { height: diff };
+          items19[1] = obj28;
           items19[2] = animatedStyle;
           const View = tmp7(tmp4[13]).View;
-          obj28 = { skuId: tmp52Result.skuId, bannerAdjustment: 0 };
-          tmp111Result6 = tmp111(View, obj26);
+          obj29 = { skuId: tmp52Result.skuId, bannerAdjustment: 0 };
+          tmp111Result6 = tmp111(View, obj27);
         }
         items18[1] = tmp111Result6;
-        obj29 = { children: first(prop, obj21) };
+        obj30 = { children: first(prop, obj21) };
         items17[2] = sharedValue2(BottomSheetScrollView, obj19);
         let tmp111Result7 = !tmp112Result;
         if (tmp111Result7) {
-          const obj30 = { variant: "floating", tabStyle: obj31, onPress: bottomSheetClose };
-          obj31 = { backgroundColor: token };
-          tmp111Result7 = tmp111(tmp3(tmp4[62]).ActionSheetHeaderBar, obj30);
+          const obj31 = { variant: "floating", tabStyle: obj32, onPress: bottomSheetClose };
+          obj32 = { backgroundColor: token };
+          tmp111Result7 = tmp111(tmp3(tmp4[63]).ActionSheetHeaderBar, obj31);
         }
         items17[3] = tmp111Result7;
         items20 = [first(BottomSheet, obj16), , ];
         if (tmp112Result) {
           let tmp111Result8 = null != tmp7Result2Result;
-          const obj32 = { animatedPosition: sharedValue, safeAreaTop: top, animatedIndex: sharedValue1, children: items21 };
+          const obj33 = { animatedPosition: sharedValue, safeAreaTop: top, animatedIndex: sharedValue1, children: items21 };
           const tmp101 = profileFrame1;
           if (tmp111Result8) {
-            const obj33 = { frame: tmp7Result2Result, profileThemeType: obj4.ACTION_SHEET, frameOrder: tmp3(tmp4[28]).ProfileFrameLayerOrder.FRONT, containerWidth: first1 };
+            const obj34 = { frame: tmp7Result2Result, profileThemeType: obj4.ACTION_SHEET, frameOrder: tmp3(tmp4[28]).ProfileFrameLayerOrder.FRONT, containerWidth: first1 };
             const tmp7Result18 = tmp7(tmp4[27]);
-            tmp111Result8 = tmp111(tmp7Result18, obj33);
+            tmp111Result8 = tmp111(tmp7Result18, obj34);
           }
           items21 = [tmp111Result8, ];
-          const obj34 = { variant: "floating", tabStyle: obj35, onPress: bottomSheetClose };
-          obj35 = { backgroundColor: token };
-          items21[1] = sharedValue2(tmp3(tmp4[62]).ActionSheetHeaderBar, obj34);
-          tmp112Result = tmp112(tmp101, obj32);
+          const obj35 = { variant: "floating", tabStyle: obj36, onPress: bottomSheetClose };
+          obj36 = { backgroundColor: token };
+          items21[1] = sharedValue2(tmp3(tmp4[63]).ActionSheetHeaderBar, obj35);
+          tmp112Result = tmp112(tmp101, obj33);
         }
         items20[1] = tmp112Result;
         if (isPreviewingChanges) {
           let mNZcD8;
-          const obj36 = { theme: tmp63, primaryColor: null, secondaryColor: null, children: sharedValue2(ActionSheetBackdropToast, obj37) };
+          const obj37 = { theme: tmp63, primaryColor: null, secondaryColor: null, children: sharedValue2(ActionSheetBackdropToast, obj38) };
           const ThemeContextProvider = tmp3(tmp4[54]).ThemeContextProvider;
-          ActionSheetBackdropToast = tmp3(tmp4[63]).ActionSheetBackdropToast;
+          ActionSheetBackdropToast = tmp3(tmp4[64]).ActionSheetBackdropToast;
           const intl = tmp3(tmp4[53]).intl;
           const string = intl.string;
-          if (setting === tmp3(tmp4[64]).ProfileVisibility.FRIENDS_ONLY) {
+          if (setting === tmp3(tmp4[65]).ProfileVisibility.FRIENDS_ONLY) {
             mNZcD8 = tmp3(tmp4[53]).t.mNZcD8;
           } else {
             mNZcD8 = tmp3(tmp4[53]).t["wSnI/0"];
           }
-          obj37 = { text: string(mNZcD8), isExpanded: true };
-          isPreviewingChanges = tmp111(ThemeContextProvider, obj36);
+          obj38 = { text: string(mNZcD8), isExpanded: true };
+          isPreviewingChanges = tmp111(ThemeContextProvider, obj37);
         }
         items20[2] = isPreviewingChanges;
         tmp111Result9 = tmp111(ThemeContextProvider2, obj13);

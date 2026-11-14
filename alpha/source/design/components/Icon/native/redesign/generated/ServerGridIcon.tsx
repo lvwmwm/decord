@@ -1,14 +1,14 @@
-// Module ID: 15893
-// Function ID: 15894
+// Module ID: 16013
+// Function ID: 16014
 // Name: ServerGridIcon
-// Dependencies: [19, 21, 575, 5956, 15894, 2]
+// Dependencies: [19, 21, 575, 6019, 16014, 2]
 // Exports: ServerGridIcon
 
-// Module 15893 (ServerGridIcon)
+// Module 16013 (ServerGridIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 15894 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 16014 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 5914
-// Function ID: 5915
+// Module ID: 5977
+// Function ID: 5978
 // Name: EmbeddedSurfaceType
 // Dependencies: [2]
 
-// Module 5914 (EmbeddedSurfaceType)
+// Module 5977 (EmbeddedSurfaceType)
 import size from "module_2" /* 2 */;
 
 const obj = { SETTABLE: new Set([0, 1, 2]) };

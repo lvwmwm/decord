@@ -1,16 +1,16 @@
-// Module ID: 8699
-// Function ID: 8700
+// Module ID: 8766
+// Function ID: 8767
 // Name: UserSearchUtils
-// Dependencies: [8700, 5155, 5185, 1072, 2150, 5309, 2]
+// Dependencies: [8767, 5218, 5248, 1072, 2153, 5372, 2]
 // Exports: cleanString, getNames, getRelationshipType
 
-// Module 8699 (UserSearchUtils)
+// Module 8766 (UserSearchUtils)
 import Constants from "Constants" /* 1072 */;
-import StringUtils from "StringUtils" /* 2150 */;
-import UserUtilsDefault from "UserUtils" /* 5309 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 8700 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
+import StringUtils from "StringUtils" /* 2153 */;
+import UserUtilsDefault from "UserUtils" /* 5372 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 8767 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import size from "module_2" /* 2 */;
 
 const RelationshipTypes = Constants.RelationshipTypes;
@@ -37,7 +37,7 @@ export function getNames(user) {
   const nick = RelationshipStore.getNickname(user.id);
   if (null != nick) {
     const tmp = names;
-    const obj3 = names(2150);
+    const obj3 = names(2153);
     let str = obj3.stripDiacritics(nick.toLocaleLowerCase());
     let str2 = str.trim();
     names[nick] = str2.split(" ");
@@ -46,14 +46,14 @@ export function getNames(user) {
   const globalName = obj4.getGlobalName(user);
   const tmp4 = null != globalName && null == names[globalName];
   if (tmp4) {
-    const obj6 = names(2150);
+    const obj6 = names(2153);
     const str4 = obj6.stripDiacritics(globalName.toLocaleLowerCase());
     const str5 = str4.trim();
     names[globalName] = str5.split(" ");
   }
   const username2 = user.username;
   const username = user.username;
-  const obj7 = names(2150);
+  const obj7 = names(2153);
   const str7 = obj7.stripDiacritics(username2.toLocaleLowerCase());
   const str8 = str7.trim();
   names[username] = str8.split(" ");

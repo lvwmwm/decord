@@ -1,24 +1,24 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12379
+// Function ID: 12380
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 2162, 8419, 8427, 1072, 1387, 572, 6692, 6992, 8418, 6694, 5064, 1242, 1282, 12285, 12286, 2]
+// Dependencies: [5, 2165, 8485, 8493, 1072, 1390, 572, 6755, 7055, 8484, 6757, 5127, 1242, 1285, 12380, 12381, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 12284 (GiftCodeActionCreators)
+// Module 12379 (GiftCodeActionCreators)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 5064 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 8427 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 12285 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 12286 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 5127 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 8493 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 12380 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 12381 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8419 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let giftCode;
+let closure_2, giftCode;
 
 let c9;
 let metroImportAll;
@@ -28,18 +28,17 @@ function resolveGiftCode() {
 }
 let obj = function _resolveGiftCode() {
   obj = _asyncToGenerator(async (code) => {
-    let closure_4;
+    let closure_3;
     let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c7 = 0;
-    let c8 = 0;
     let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
     const iter = (async function(arg0, value) {
-      let obj20;
+      let obj21;
       let obj7;
       let obj9;
-      if (c8 === 2) {
-        c8 = 3;
+      if (c7 === 2) {
+        c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -52,141 +51,135 @@ let obj = function _resolveGiftCode() {
       } else {
         try {
           let product;
-          let flag2;
-          let flag;
-          c8 = 2;
-          if (0 === c7) {
+          let obj5;
+          c7 = 2;
+          if (0 === c6) {
             if (arg0 === 1) {
-              c8 = 3;
+              c7 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c8 = 3;
+              c7 = 3;
               return { value, done: true };
             } else {
               product = tmp;
               giftCode = tmp4;
-              flag2 = undefined;
-              flag = closure_1;
+              obj5 = closure_1;
               if (closure_1 === undefined) {
-                flag = false;
-              }
-              flag2 = closure_2;
-              if (closure_2 === undefined) {
-                flag2 = false;
+                obj5 = {};
               }
               giftCode = undefined;
               product = undefined;
+              c6 = 1;
               c7 = 1;
-              c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
-          } else if (1 === c7) {
+          } else if (1 === c6) {
             if (arg0 === 1) {
-              c8 = 3;
+              c7 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c8 = 3;
+              c7 = 3;
               return { value, done: true };
             } else {
-              const obj6 = { type: "GIFT_CODE_RESOLVE", code };
-              const obj18 = closure_132_1(closure_132_2[6]);
-              obj18.dispatch(obj6);
-              c6 = 1;
-              c7 = 3;
-              c8 = 1;
-              const obj8 = { value: obj20.resolveGiftCode(code, flag, flag2), done: false };
-              obj20 = closure_132_0(closure_132_2[7]);
-              return obj8;
+              const obj8 = { type: "GIFT_CODE_RESOLVE", code };
+              const obj19 = closure_131_1(closure_131_2[6]);
+              obj19.dispatch(obj8);
+              c5 = 1;
+              c6 = 3;
+              c7 = 1;
+              const obj10 = { value: obj21.resolveGiftCode(code, obj5), done: false };
+              obj21 = closure_131_0(closure_131_2[7]);
+              return obj10;
             }
-          } else if (2 === c7) {
-            c6 = 0;
-            const obj10 = { type: "GIFT_CODE_RESOLVE_FAILURE", code, error };
-            const obj12 = closure_132_1(closure_132_2[6]);
-            obj12.dispatch(obj10);
+          } else if (2 === c6) {
+            c5 = 0;
+            const obj11 = { type: "GIFT_CODE_RESOLVE_FAILURE", code, error };
+            const obj12 = closure_131_1(closure_131_2[6]);
+            obj12.dispatch(obj11);
             throw error;
           } else {
-            if (3 === c7) {
+            if (3 === c6) {
               if (arg0 === 1) {
-                c8 = 3;
+                c7 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c6 = 0;
-                c8 = 3;
+                c5 = 0;
+                c7 = 3;
                 return { value, done: true };
               } else {
                 giftCode = value;
                 if (null != giftCode.application_id) {
-                  if (giftCode.application_id !== closure_132_10) {
-                    if (null == closure_132_4.getApplication(giftCode.application_id)) {
-                      c6 = 2;
-                      c7 = 5;
-                      c8 = 1;
-                      const obj13 = { value: obj9.fetchApplication(giftCode.application_id), done: false };
-                      obj9 = closure_132_1(closure_132_2[8]);
-                      return obj13;
+                  if (giftCode.application_id !== closure_131_10) {
+                    if (null == closure_131_4.getApplication(giftCode.application_id)) {
+                      c5 = 2;
+                      c6 = 5;
+                      c7 = 1;
+                      const obj14 = { value: obj9.fetchApplication(giftCode.application_id), done: false };
+                      obj9 = closure_131_1(closure_131_2[8]);
+                      return obj14;
                     }
                   }
                 }
               }
-            } else if (4 === c7) {
-              c6 = 1;
+            } else if (4 === c6) {
+              c5 = 1;
             } else {
-              if (5 === c7) {
+              if (5 === c6) {
                 if (arg0 === 1) {
-                  c8 = 3;
+                  c7 = 3;
                   throw value;
                 } else if (arg0 === 2) {
-                  c6 = 0;
-                  c8 = 3;
+                  c5 = 0;
+                  c7 = 3;
                   return { value, done: true };
                 } else {
-                  c6 = 1;
+                  c5 = 1;
                 }
               } else if (arg0 === 1) {
-                c8 = 3;
+                c7 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c6 = 0;
-                c8 = 3;
+                c5 = 0;
+                c7 = 3;
                 return { value, done: true };
               } else {
-                product = closure_132_5.getProduct(giftCode.sku_id);
+                product = closure_131_5.getProduct(giftCode.sku_id);
                 let someResult;
                 if (product != null) {
                   const items = tmp60.items;
-                  someResult = items.some(closure_132_6);
+                  someResult = items.some(closure_131_6);
                 }
                 if (true === someResult) {
                   const self = this;
                   const self2 = this;
-                  const clientOutdatedAcceptGiftError = new closure_132_0(closure_132_2[10]).ClientOutdatedAcceptGiftError("Client update required to redeem this gift");
+                  const clientOutdatedAcceptGiftError = new closure_131_0(closure_131_2[10]).ClientOutdatedAcceptGiftError("Client update required to redeem this gift");
                   throw clientOutdatedAcceptGiftError;
                 }
               }
-              const obj15 = { type: "GIFT_CODE_RESOLVE_SUCCESS", giftCode };
-              const obj3 = closure_132_1(closure_132_2[6]);
-              obj3.dispatch(obj15);
-              c6 = 0;
-              c8 = 3;
+              const obj16 = { type: "GIFT_CODE_RESOLVE_SUCCESS", giftCode };
+              const obj3 = closure_131_1(closure_131_2[6]);
+              obj3.dispatch(obj16);
+              c5 = 0;
+              c7 = 3;
               return { value: { giftCode }, done: true };
             }
-            if (giftCode.application_id === closure_132_7) {
-              c7 = 6;
-              c8 = 1;
-              const obj19 = { value: obj7.fetchCollectiblesProduct(giftCode.sku_id), done: false };
-              obj7 = closure_132_0(closure_132_2[9]);
-              return obj19;
+            if (giftCode.application_id === closure_131_7) {
+              c6 = 6;
+              c7 = 1;
+              const obj20 = { value: obj7.fetchCollectiblesProduct(giftCode.sku_id), done: false };
+              obj7 = closure_131_0(closure_131_2[9]);
+              return obj20;
             }
           }
         } catch (tmp49) {
           error = tmp49;
-          if (0 === c6) {
-            c8 = 3;
+          if (0 === c5) {
+            c7 = 3;
             throw tmp49;
           } else if (1 === tmp51) {
-            c7 = 2;
+            c6 = 2;
           } else {
-            c7 = 4;
+            c6 = 4;
           }
         }
       }

@@ -1,51 +1,51 @@
-// Module ID: 8040
-// Function ID: 8041
+// Module ID: 8105
+// Function ID: 8106
 // Name: CreateChannelModal
-// Dependencies: [32, 19, 17, 5096, 5110, 5092, 5114, 5175, 5185, 1385, 1072, 6849, 21, 5243, 575, 8013, 8021, 7368, 7952, 8026, 8020, 8036, 8011, 8019, 8029, 8028, 8025, 8018, 8035, 1113, 5866, 2185, 5315, 7379, 7682, 8041, 1187, 5850, 504, 38, 5891, 6875, 8058, 8059, 1499, 8060, 8066, 6004, 7427, 8078, 7363, 8079, 12, 8081, 6274, 7553, 7680, 8083, 8090, 7888, 8027, 8094, 8097, 6293, 8105, 1260, 8120, 5854, 7424, 2]
+// Dependencies: [32, 19, 17, 5159, 5173, 5155, 5177, 5238, 5248, 1388, 1072, 6912, 21, 5306, 575, 8078, 8086, 7432, 8017, 8091, 8085, 8101, 8076, 8084, 8094, 8093, 8090, 8083, 8100, 1113, 5929, 2188, 5378, 7443, 7748, 8106, 1187, 5913, 504, 38, 5954, 6938, 8123, 8124, 1502, 8125, 8131, 6067, 7493, 8143, 7427, 8144, 12, 8146, 6337, 7619, 7746, 8148, 8155, 7954, 8092, 8159, 8162, 6356, 8171, 1264, 8186, 5917, 7490, 2]
 // Exports: default
 
-// Module 8040 (CreateChannelModal)
+// Module 8105 (CreateChannelModal)
 import nativeDefault from "native" /* 575 */;
 import intl16 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import ChannelRecord from "ChannelRecord" /* 5096 */;
-import GuildRecord from "GuildRecord" /* 5110 */;
-import react_native from "react-native" /* 5315 */;
-import reactDefault from "react" /* 5854 */;
-import ChannelUtils from "ChannelUtils" /* 6293 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6849 */;
-import HeaderActionButton from "HeaderActionButton" /* 7363 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 7368 */;
-import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import FormRadio from "FormRadio" /* 7682 */;
-import StageIcon from "StageIcon" /* 7952 */;
-import TextLockIcon from "TextLockIcon" /* 8011 */;
-import TextIcon from "TextIcon" /* 8013 */;
-import ImageLockIcon from "ImageLockIcon" /* 8018 */;
-import ForumLockIcon from "ForumLockIcon" /* 8019 */;
-import ImageIcon from "ImageIcon" /* 8020 */;
-import ForumIcon from "ForumIcon" /* 8021 */;
-import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 8025 */;
-import AnnouncementsIcon from "AnnouncementsIcon" /* 8026 */;
-import StageLockIcon from "StageLockIcon" /* 8028 */;
-import VoiceLockIcon from "VoiceLockIcon" /* 8029 */;
-import AppsLockIcon from "AppsLockIcon" /* 8035 */;
-import AppsIcon from "AppsIcon" /* 8036 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8078 */;
-import sanitizeChannelNameDefault from "sanitizeChannelName" /* 8081 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import GuildRecord from "GuildRecord" /* 5173 */;
+import react_native from "react-native" /* 5378 */;
+import reactDefault from "react" /* 5917 */;
+import ChannelUtils from "ChannelUtils" /* 6356 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6912 */;
+import HeaderActionButton from "HeaderActionButton" /* 7427 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 7432 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import FormRadio from "FormRadio" /* 7748 */;
+import StageIcon from "StageIcon" /* 8017 */;
+import TextLockIcon from "TextLockIcon" /* 8076 */;
+import TextIcon from "TextIcon" /* 8078 */;
+import ImageLockIcon from "ImageLockIcon" /* 8083 */;
+import ForumLockIcon from "ForumLockIcon" /* 8084 */;
+import ImageIcon from "ImageIcon" /* 8085 */;
+import ForumIcon from "ForumIcon" /* 8086 */;
+import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 8090 */;
+import AnnouncementsIcon from "AnnouncementsIcon" /* 8091 */;
+import StageLockIcon from "StageLockIcon" /* 8093 */;
+import VoiceLockIcon from "VoiceLockIcon" /* 8094 */;
+import AppsLockIcon from "AppsLockIcon" /* 8100 */;
+import AppsIcon from "AppsIcon" /* 8101 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8143 */;
+import sanitizeChannelNameDefault from "sanitizeChannelName" /* 8146 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import PermissionStore_mod from "PermissionStore" /* 5175 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore_mod from "PermissionStore" /* 5238 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -134,11 +134,11 @@ function ChannelTypeRow(selected) {
     intl13 = tmp2(1113).intl;
     obj9 = { children: items };
     const obj10 = { variant: "body-xs/normal", color: "text-muted", children: intl14.string(intl16.t.JyCrwS) };
-    const Text = tmp2(5866).Text;
+    const Text = tmp2(5929).Text;
     intl14 = tmp2(1113).intl;
     items = [closure_20(Text, obj10), ];
     obj11 = { variant: "body-xs/normal", children: format(v2Sapx1, obj12) };
-    const Text2 = tmp2(5866).Text;
+    const Text2 = tmp2(5929).Text;
     const intl15 = tmp2(1113).intl;
     format = intl15.format;
     obj12 = { hcArticleUrl: obj15.getCreatorSupportArticleURL(constants3.MEDIA_CHANNEL) };
@@ -164,13 +164,13 @@ function ChannelTypeRow(selected) {
     subLabel: description
   };
   obj14 = { style: tmp.flexRow, children: closure_20(IconComponent, {}) };
-  const TableRow = tmp2(7379).TableRow;
+  const TableRow = tmp2(7443).TableRow;
   tmp9 = label;
   const tmp8 = metroRequire;
   if (true === isBeta) {
     const obj16 = { style: tmp.horizontalContainer, children: items1 };
     const obj17 = { text: label };
-    items1 = [closure_20(tmp2(8041).FormLabel, obj17), ];
+    items1 = [closure_20(tmp2(8106).FormLabel, obj17), ];
     const obj18 = { size: native.BetaSizes.SMALL };
     const BetaTag = tmp2(1187).BetaTag;
     items1[1] = closure_20(BetaTag, obj18);

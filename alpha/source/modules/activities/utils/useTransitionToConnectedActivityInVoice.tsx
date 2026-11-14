@@ -1,16 +1,16 @@
-// Module ID: 19748
-// Function ID: 19749
+// Module ID: 19957
+// Function ID: 19958
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 5092, 5146, 1072, 5164, 5917, 12684, 12616, 1108, 2]
+// Dependencies: [5, 19, 5155, 5209, 1072, 5227, 5980, 12780, 12712, 1108, 2]
 // Exports: default
 
-// Module 19748 (useTransitionToConnectedActivityInVoice)
+// Module 19957 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import size from "module_2" /* 2 */;
 
 let channelId, guild_id;
@@ -61,7 +61,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                   guild_id = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "flexDirection", done: true };
+                  return { value: "Path", done: true };
                 }
               } else {
                 if (1 === c3) {

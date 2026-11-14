@@ -1,11 +1,11 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15224
+// Function ID: 15225
 // Name: MediaViewerVideoPerfExperiment
-// Dependencies: [1449, 1377, 2]
+// Dependencies: [1452, 1380, 2]
 
-// Module 15110 (MediaViewerVideoPerfExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+// Module 15224 (MediaViewerVideoPerfExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,28 +1,28 @@
-// Module ID: 18707
-// Function ID: 18708
+// Module ID: 18836
+// Function ID: 18837
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 6005, 5185, 1385, 1072, 5099, 6896, 21, 5243, 575, 6898, 14676, 1411, 5957, 18708, 8008, 7968, 504, 1187, 6292, 18709, 5891, 1099, 2]
+// Dependencies: [109, 19, 17, 6068, 5248, 1388, 1072, 5162, 6959, 21, 5306, 575, 6961, 14789, 1414, 6020, 18837, 8073, 8033, 504, 1187, 6355, 18838, 5954, 1099, 2]
 
-// Module 18707 (ChannelItem)
+// Module 18836 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import ChannelConstants from "ChannelConstants" /* 5099 */;
-import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 8008 */;
-import BaseChannelItem from "BaseChannelItem" /* 14676 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18708 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import LegacyTokens from "LegacyTokens" /* 6961 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 8073 */;
+import BaseChannelItem from "BaseChannelItem" /* 14789 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18837 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6005 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
+import PresenceStore from "PresenceStore" /* 6068 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -94,7 +94,7 @@ function ChannelIcon(arg0) {
       const tmp5 = importDefault;
       if (null != channelIconSource) {
         const obj5 = { style: tmp.groupDmAvatar, source: channelIconSource };
-        return map1(tmp5(5957), obj5);
+        return map1(tmp5(6020), obj5);
       }
     }
     if (tmp2) {
@@ -113,7 +113,7 @@ function ChannelIcon(arg0) {
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(14676).BaseChannelIcon;
+    const BaseChannelIcon = tmp10(14789).BaseChannelIcon;
     const tmp17 = map1;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;

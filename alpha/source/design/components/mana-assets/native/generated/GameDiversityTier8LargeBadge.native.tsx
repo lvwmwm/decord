@@ -1,26 +1,26 @@
-// Module ID: 15681
-// Function ID: 15682
+// Module ID: 15800
+// Function ID: 15801
 // Name: GameDiversityTier8LargeBadge
-// Dependencies: [19, 21, 15682, 15683, 15684, 7689, 5957, 2]
+// Dependencies: [19, 21, 15801, 15802, 15803, 7755, 6020, 2]
 // Exports: GameDiversityTier8LargeBadge
 
-// Module 15681 (GameDiversityTier8LargeBadge)
+// Module 15800 (GameDiversityTier8LargeBadge)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7689 */;
-import _modDef15682 from "module_15682" /* 15682 */;
-import _modDef15683 from "module_15683" /* 15683 */;
-import _modDef15684 from "module_15684" /* 15684 */;
+import react_native from "react-native" /* 7755 */;
+import _modDef15801 from "module_15801" /* 15801 */;
+import _modDef15802 from "module_15802" /* 15802 */;
+import _modDef15803 from "module_15803" /* 15803 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15682 };
+let obj2 = { uri: _modDef15801 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15683 };
+let obj3 = { uri: _modDef15802 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15684 };
-({ uri: _modDef15684 });
+obj[3] = { uri: _modDef15803 };
+({ uri: _modDef15803 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier8LargeBadge.native.tsx");
 

@@ -1,19 +1,19 @@
-// Module ID: 15866
-// Function ID: 15867
+// Module ID: 15986
+// Function ID: 15987
 // Name: ExternalStreamingStore
-// Dependencies: [5, 7022, 5310, 1072, 1089, 1282, 7400, 572, 7249, 7024, 1342, 504, 2]
+// Dependencies: [5, 7085, 5373, 1072, 1089, 1285, 7466, 572, 7313, 7087, 1345, 504, 2]
 
-// Module 15866 (ExternalStreamingStore)
+// Module 15986 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import _modDef1342 from "module_1342" /* 1342 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7400 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import _modDef1345 from "module_1345" /* 1345 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7466 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7022 */;
-import StreamerModeStore from "StreamerModeStore" /* 5310 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
+import StreamerModeStore from "StreamerModeStore" /* 5373 */;
 import size from "module_2" /* 2 */;
 
 let _null, c7, c8, closure_11, constants;
@@ -528,7 +528,7 @@ const prototype2 = ExternalStreamingStore.prototype;
 ExternalStreamingStore.displayName = "ExternalStreamingStore";
 obj = {
   STREAMING_UPDATE: function streamUpdate(stream) {
-    if (_modDef1342(stream.stream, stream)) {
+    if (_modDef1345(stream.stream, stream)) {
       return false;
     } else {
       stream = stream.stream;

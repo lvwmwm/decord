@@ -1,27 +1,27 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 11246
+// Function ID: 11247
 // Name: PortalKeyboardFooterIOS
-// Dependencies: [19, 21, 5243, 575, 1627, 5503, 1493, 1641, 5440, 1652, 1625, 1092, 5445, 2]
+// Dependencies: [19, 21, 5306, 575, 1630, 5566, 1496, 1644, 5503, 1655, 1628, 1092, 5508, 2]
 // Exports: default
 
-// Module 11179 (PortalKeyboardFooterIOS)
+// Module 11246 (PortalKeyboardFooterIOS)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import KeyboardTypes from "KeyboardTypes" /* 1625 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import useKeyboardType from "useKeyboardType" /* 5440 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5503 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1644 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import useKeyboardType from "useKeyboardType" /* 5503 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let rect;
 let tmp2;
-const _modDef1652 = tmp2(1652);
+const _modDef1655 = tmp2(1655);
 const jsx = Fragment.jsx;
 let obj = { keyboardStickyFooter: rect };
 rect = { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1, flex: 1, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
@@ -70,8 +70,8 @@ export default function PortalKeyboardFooterIOS(portalHostName) {
   let obj3 = useKeyboardType;
   const keyboardTypeSharedValue = obj3.useKeyboardTypeSharedValue();
   let items = [closure_6, , , , , , , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  items[1] = _mod1652.interpolate;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  items[1] = _mod1655.interpolate;
   items[2] = progress;
   items[3] = bottom;
   items[4] = flag;
@@ -125,6 +125,6 @@ export default function PortalKeyboardFooterIOS(portalHostName) {
     const items = [keyboardStickyFooter.keyboardStickyFooter, animatedStyle, flag2 && bottomSheetContainerStyle];
     return items;
   }, items2);
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   return <View style={memo}>{null}</View>;
 };

@@ -1,10 +1,10 @@
-// Module ID: 6981
-// Function ID: 6982
+// Module ID: 7044
+// Function ID: 7045
 // Name: networkAwareRetry
-// Dependencies: [5, 502, 5087, 1477, 2]
+// Dependencies: [5, 502, 5150, 1480, 2]
 // Exports: default
 
-// Module 6981 (networkAwareRetry)
+// Module 7044 (networkAwareRetry)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -104,7 +104,7 @@ let obj = function _networkAwareRetry() {
     if (closure_1 === undefined) {
       num14 = 3;
     }
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

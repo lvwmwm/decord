@@ -1,28 +1,28 @@
-// Module ID: 6704
-// Function ID: 6705
+// Module ID: 6767
+// Function ID: 6768
 // Name: actions/BillingActionCreators
-// Dependencies: [109, 5, 2174, 2172, 2176, 1072, 2181, 1083, 572, 1282, 6694, 5063, 2166, 2171, 6705, 6715, 5055, 6722, 6723, 1252, 2]
+// Dependencies: [109, 5, 2177, 2175, 2179, 1072, 2184, 1083, 572, 1285, 6757, 5126, 2169, 2174, 6768, 6778, 5118, 6785, 6786, 1256, 2]
 // Exports: cancelPaymentAuthentication, cancelSubscription, changePaymentSource, changeSubscriptionCurrency, clearAndFetchPaymentSourceCreationContext, clearPaymentAuthenticationError, clearRemovePaymentSourceError, clearUpdatePaymentSourceError, createSubscription, deletePaymentSource, deleteRenewalMutation, fetchIpCountryCode, fetchIpLocation, fetchMostRecentSubscription, fetchPaymentSource, fetchPaymentSourceCreationContext, fetchPaymentSources, fetchSubscriptions, fetchWalletInformation, getPerksRelevance, payInvoiceManually, popupBridgeCallback, redeemReactivationOffer, redeemUserDiscountOffer, redirectedPaymentSucceeded, resetPaymentIntentId, resetSubscriptionStore, resubscribeToSubscription, startBrowserCheckout, updatePaymentSource, upgradeSubscription, voidPendingPayment
 
-// Module 6704 (actions/BillingActionCreators)
+// Module 6767 (actions/BillingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import BillingConstants from "BillingConstants" /* 2181 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6705 */;
-import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 6715 */;
-import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 6723 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import BillingConstants from "BillingConstants" /* 2184 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6768 */;
+import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 6778 */;
+import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 6786 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 2174 */;
-import BillingInfoStore from "BillingInfoStore" /* 2172 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 2177 */;
+import BillingInfoStore from "BillingInfoStore" /* 2175 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import Constants_mod from "Constants" /* 1072 */;
 import Constants_mod2 from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 
-let closure_10, closure_4, closure_5, closure_9, id2, lastLazyPerkSync, planId;
+let closure_10, closure_5, closure_9, id2, lastLazyPerkSync, planId;
 
 let c10;
 let c9;
@@ -514,12 +514,12 @@ obj = function _fetchSubscriptions() {
             let tmp30 = null == lastLazyPerkSync;
             const tmp49 = constants2;
             if (!tmp30) {
-              const obj6 = _modDef2166();
+              const obj6 = _modDef2169();
               tmp30 = obj6.diff(lastLazyPerkSync, "hours") >= 1;
             }
             if (tmp30) {
               FULL_RESYNC = tmp49.FULL_RESYNC;
-              lastLazyPerkSync = _modDef2166();
+              lastLazyPerkSync = _modDef2169();
             }
             HTTP = HTTPUtils.HTTP;
             const request = { url: constants.BILLING_SUBSCRIPTIONS, oldFormErrors: true, rejectWithError: false, query: obj4 };
@@ -764,7 +764,7 @@ obj = function _createSubscription() {
             billingError = undefined;
             expected_renewal_price = 1;
             c11 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else {
           if (1 === expected_renewal_price) {
@@ -824,7 +824,7 @@ obj = function _createSubscription() {
                 const self2 = this;
                 billingError = new closure_134_0(closure_134_2[10]).BillingError(closure_15);
               }
-              const obj7 = { type: "BILLING_SUBSCRIPTION_UPDATE_FAIL", error: billingError };
+              const obj7 = { type: "BILLING_SUBSCRIPTION_UPDATE_FAIL", loadId: load_id, error: billingError };
               const obj9 = closure_134_1(closure_134_2[8]);
               obj9.dispatch(obj7);
               if (billingError.code !== closure_134_0(closure_134_2[11]).ErrorCodes.CONFIRMATION_REQUIRED) {
@@ -930,11 +930,11 @@ obj = function _createSubscription() {
             return obj25;
           }
         }
-      } catch (tmp99) {
-        closure_9 = tmp99;
+      } catch (tmp100) {
+        closure_9 = tmp100;
         if (0 === gift_info_options) {
           c11 = 3;
-          throw tmp99;
+          throw tmp100;
         } else {
           expected_renewal_price = 3;
         }
@@ -944,10 +944,11 @@ obj = function _createSubscription() {
   return obj(...arguments);
 };
 obj = function _payInvoiceManually() {
-  obj = _asyncToGenerator(async (arg0, arg1, arg2, currency, load_id) => {
+  obj = _asyncToGenerator(async (arg0, arg1, arg2, currency, arg4) => {
     let id = arg0;
     let closure_1 = arg1;
     let closure_2 = arg2;
+    let closure_4 = arg4;
     let c14 = 0;
     let c15 = 0;
     let c12 = 0;
@@ -982,10 +983,10 @@ obj = function _payInvoiceManually() {
               code = undefined;
               return_url = null;
               if (null != closure_2) {
-                code = set.has(tmp95.type);
+                code = set.has(tmp96.type);
                 if (code) {
                   const obj15 = BillingSharedActionCreators;
-                  code = obj15.popupBridgeState(tmp95.type);
+                  code = obj15.popupBridgeState(tmp96.type);
                   c14 = 1;
                   c15 = 1;
                   return { value: code, done: false };
@@ -1030,7 +1031,7 @@ obj = function _payInvoiceManually() {
               code = tmp18;
               code = code.code;
               if (code !== closure_138_0(closure_138_2[11]).ErrorCodes.CONFIRMATION_REQUIRED) {
-                const obj8 = { type: "BILLING_SUBSCRIPTION_UPDATE_FAIL", error: code };
+                const obj8 = { type: "BILLING_SUBSCRIPTION_UPDATE_FAIL", loadId: load_id, error: code };
                 const obj5 = closure_138_1(closure_138_2[8]);
                 code = obj5.dispatch(obj8);
                 throw code;
@@ -1107,11 +1108,11 @@ obj = function _payInvoiceManually() {
             obj13 = closure_138_0(closure_138_2[15]);
             return obj21;
           }
-        } catch (tmp77) {
-          closure_13 = tmp77;
+        } catch (tmp78) {
+          closure_13 = tmp78;
           if (0 === c12) {
             c15 = 3;
-            throw tmp77;
+            throw tmp78;
           } else {
             c14 = 2;
           }
@@ -1264,9 +1265,10 @@ function updateSubscription() {
   return obj(...arguments);
 }
 obj = function _updateSubscription() {
-  obj = _asyncToGenerator(async (arg0, arg1, expected_invoice_price, expected_renewal_price, location_stack, _location, load_id) => {
+  obj = _asyncToGenerator(async (arg0, arg1, expected_invoice_price, expected_renewal_price, location_stack, _location, arg6) => {
     let id = arg0;
     let closure_1 = arg1;
+    let closure_6 = arg6;
     let c13 = 0;
     let c14 = 0;
     let c11 = 0;
@@ -1312,11 +1314,11 @@ obj = function _updateSubscription() {
               if (paymentSource != null) {
                 id = paymentSource.id;
               }
-              id = null != tmp107.paymentSource;
+              id = null != tmp108.paymentSource;
               tmp46 = null;
               if (id) {
                 const obj21 = BillingPaymentGatewayActionCreators;
-                id = obj21.createPaymentSourceToken(tmp107.paymentSource);
+                id = obj21.createPaymentSourceToken(tmp108.paymentSource);
                 c13 = 2;
                 c14 = 1;
                 return { value: id, done: false };
@@ -1336,7 +1338,7 @@ obj = function _updateSubscription() {
               tmp59 = id;
             }
             id = tmp59;
-            const obj7 = { type: "BILLING_SUBSCRIPTION_UPDATE_FAIL", error: id };
+            const obj7 = { type: "BILLING_SUBSCRIPTION_UPDATE_FAIL", loadId: load_id, error: id };
             const obj16 = closure_138_1(closure_138_2[8]);
             obj16.dispatch(obj7);
             id = id.code;
@@ -1458,11 +1460,11 @@ obj = function _updateSubscription() {
           const obj23 = { value: obj19.createGatewayCheckoutContext(id), done: false };
           obj19 = closure_138_0(closure_138_2[16]);
           return obj23;
-        } catch (tmp90) {
-          closure_12 = tmp90;
+        } catch (tmp91) {
+          closure_12 = tmp91;
           if (0 === c11) {
             c14 = 3;
-            throw tmp90;
+            throw tmp91;
           } else {
             c13 = 1;
           }
@@ -1566,7 +1568,7 @@ obj = function _fetchIpCountryCode() {
             country_code = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -1679,7 +1681,7 @@ obj = function _fetchIpLocation() {
             subdivision_code = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -2050,7 +2052,7 @@ export function popupBridgeCallback(paymentSourceType) {
   ({ state, path, query, insecure } = paymentSourceType);
   obj = DispatcherDefault;
   obj.dispatch({ type: "BILLING_POPUP_BRIDGE_CALLBACK_START", paymentSourceType });
-  const HTTP = paymentSourceType(1282).HTTP;
+  const HTTP = paymentSourceType(1285).HTTP;
   const request = { url: closure_10.BILLING_POPUP_BRIDGE_CALLBACK(paymentSourceType), body: { state, path, query, insecure }, oldFormErrors: true, rejectWithError: false };
   const postResult = HTTP.post(request);
   return postResult.then((result) => {

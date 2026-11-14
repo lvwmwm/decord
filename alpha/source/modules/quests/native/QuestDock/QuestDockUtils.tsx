@@ -1,14 +1,14 @@
-// Module ID: 17579
-// Function ID: 17580
+// Module ID: 17697
+// Function ID: 17698
 // Name: QuestDockUtils
-// Dependencies: [17, 17580, 1089, 5876, 2]
+// Dependencies: [17, 17698, 1089, 5939, 2]
 // Exports: dimensionsLayoutTransition, getQuestDockClosedWidth, getQuestDockCollapsedWidth, getQuestDockExpandedHeightLimits, getQuestDockExpandedWidth, isSoftDismissed, roundToNearestPixel
 
-// Module 17579 (QuestDockUtils)
+// Module 17697 (QuestDockUtils)
 import react_native from "react-native" /* 17 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import QuestDockConstants from "QuestDockConstants" /* 17580 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import QuestDockConstants from "QuestDockConstants" /* 17698 */;
 import size_mod from "module_2" /* 2 */;
 
 let QUEST_DOCK_COLLAPSED_HEIGHT;

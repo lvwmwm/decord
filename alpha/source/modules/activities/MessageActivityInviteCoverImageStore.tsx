@@ -1,12 +1,12 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15601
+// Function ID: 15602
 // Name: MessageActivityInviteCoverImageStore
-// Dependencies: [1453, 504, 572, 2]
+// Dependencies: [1456, 504, 572, 2]
 
-// Module 15487 (MessageActivityInviteCoverImageStore)
+// Module 15601 (MessageActivityInviteCoverImageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LRUCacheDefault from "LRUCache" /* 1453 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
 import size from "module_2" /* 2 */;
 
 const React = new LRUCacheDefault({ max: 500 });

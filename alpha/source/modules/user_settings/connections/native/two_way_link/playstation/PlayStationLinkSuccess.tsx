@@ -1,21 +1,21 @@
-// Module ID: 7534
-// Function ID: 7535
+// Module ID: 7600
+// Function ID: 7601
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 5243, 7378, 7418, 5957, 5866, 1113, 7351, 5873, 2]
+// Dependencies: [19, 17, 21, 5306, 7442, 7484, 6020, 5929, 1113, 7415, 5936, 2]
 // Exports: PlayStationLinkSuccess
 
-// Module 7534 (PlayStationLinkSuccess)
+// Module 7600 (PlayStationLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import components_Button_Button from "components/Button/Button" /* 5873 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7351 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 7378 */;
-import _modDef7418 from "module_7418" /* 7418 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import components_Button_Button from "components/Button/Button" /* 5936 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 7442 */;
+import _modDef7484 from "module_7484" /* 7484 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -41,7 +41,7 @@ export function PlayStationLinkSuccess(onClose) {
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
   const obj3 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef7418 };
+    const obj = { uri: _modDef7484 };
     return obj;
   }, []);
   items = [, , ];

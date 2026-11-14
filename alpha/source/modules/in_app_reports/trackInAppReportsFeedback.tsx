@@ -1,12 +1,12 @@
-// Module ID: 20088
-// Function ID: 20089
+// Module ID: 20248
+// Function ID: 20249
 // Name: trackInAppReportsFeedback
-// Dependencies: [1072, 1252, 2]
+// Dependencies: [1072, 1256, 2]
 // Exports: default
 
-// Module 20088 (trackInAppReportsFeedback)
+// Module 20248 (trackInAppReportsFeedback)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

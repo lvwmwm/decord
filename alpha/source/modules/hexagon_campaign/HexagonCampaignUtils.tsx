@@ -1,17 +1,18 @@
-// Module ID: 5271
-// Function ID: 5272
+// Module ID: 5334
+// Function ID: 5335
 // Name: HexagonCampaignUtils
-// Dependencies: [5268, 2107, 5269, 1396, 1395, 1391, 1398, 5272, 2]
-// Exports: getHexagonCampaignPerkAvailability, getHexagonCampaignPerkCutoffMs, getHexagonCampaignRestoredDisplayNameStyles, hasHexagonCampaignDisplayNameFont, isEnrolledInHexagonCampaign, isHexagonCampaignAppIcon, isHexagonCampaignClientThemePreset, isHexagonCampaignDisplayNameStyle, isHexagonCampaignHero, isHexagonCampaignOver, isHexagonCampaignPerkExpired, isHexagonCampaignPerkPremiumOnly, isHexagonCampaignTakeoverOver
+// Dependencies: [5331, 1089, 2110, 5332, 1399, 1398, 1394, 1401, 5335, 2]
+// Exports: getHexagonCampaignPerkAvailability, getHexagonCampaignPerkCutoffMs, getHexagonCampaignRestoredDisplayNameStyles, hasHexagonCampaignDisplayNameFont, isEnrolledInHexagonCampaign, isHexagonCampaignAppIcon, isHexagonCampaignClientThemePreset, isHexagonCampaignDisplayNameStyle, isHexagonCampaignHero, isHexagonCampaignOver, isHexagonCampaignPerkExpired, isHexagonCampaignPerkPremiumOnly, isHexagonCampaignTakeoverOver, isWithinHexagonCampaignExpiringSoonWindow
 
-// Module 5271 (HexagonCampaignUtils)
-import PerksStateUtils from "PerksStateUtils" /* 1391 */;
-import DisplayNameFont from "DisplayNameFont" /* 1395 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import AppIconTypes from "AppIconTypes" /* 5269 */;
-import QuestHomeHeroFeatures from "QuestHomeHeroFeatures" /* 5272 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
+// Module 5334 (HexagonCampaignUtils)
+import DurationsDefault from "Durations" /* 1089 */;
+import PerksStateUtils from "PerksStateUtils" /* 1394 */;
+import DisplayNameFont from "DisplayNameFont" /* 1398 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
+import AppIconTypes from "AppIconTypes" /* 5332 */;
+import QuestHomeHeroFeatures from "QuestHomeHeroFeatures" /* 5335 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -24,15 +25,16 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const user = tmp(1398);
+const user = tmp(1401);
 ({ HEXAGON_CAMPAIGN_CLIENT_THEME_PRESET_IDS: c2, HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT: c3, HEXAGON_CAMPAIGN_END_AT_MS: closure_4, HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: hasOwnProperty, HEXAGON_CAMPAIGN_PERK_MINIMUM_PREMIUM_TYPE: metroRequire, HEXAGON_CAMPAIGN_PERK_TO_PERK: metroImportDefault, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: metroImportAll, HEXAGON_CAMPAIGN_QUEST_HOME_HERO_ID: c9, HexagonCampaignPerkAvailability: c10 } = HexagonCampaignConstants);
+let closure_11 = 3 * DurationsDefault.Millis.DAY;
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignUtils.tsx");
 
-export function getHexagonCampaignPerkCutoffMs(item, stateFromStores) {
-  if (null != stateFromStores) {
+export function getHexagonCampaignPerkCutoffMs(item, premiumType) {
+  if (null != premiumType) {
     let tmp5;
     const obj = PremiumTypeUtils;
-    if (obj.isPremiumAtLeast(stateFromStores, metroRequire[item])) {
+    if (obj.isPremiumAtLeast(premiumType, metroRequire[item])) {
       tmp5 = metroImportAll;
     }
     return tmp5;
@@ -70,6 +72,14 @@ export function isHexagonCampaignPerkExpired(CLIENT_THEME, premiumType, arg2) {
     return timestamp >= tmp7;
   }
   tmp7 = hasOwnProperty;
+}
+export function isWithinHexagonCampaignExpiringSoonWindow(item, arg1) {
+  let timestamp = arg1;
+  if (arg1 === undefined) {
+    const _Date = Date;
+    timestamp = Date.now();
+  }
+  return timestamp >= item - closure_11 && timestamp < item;
 }
 export function isHexagonCampaignClientThemePreset(id) {
   const hasItem = null != id && set.has(id);
@@ -127,7 +137,7 @@ export function getHexagonCampaignRestoredDisplayNameStyles(canUsePremiumProfile
       const tmp5 = require;
       if (obj.fontId === DisplayNameFont.DisplayNameFont.DEFAULT) {
         let tmp7;
-        if (obj.effectId === tmp5(1396).DisplayNameEffect.SOLID) {
+        if (obj.effectId === tmp5(1399).DisplayNameEffect.SOLID) {
           tmp7 = null;
         }
         return tmp7;

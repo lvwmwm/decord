@@ -1,12 +1,12 @@
-// Module ID: 15860
-// Function ID: 15861
+// Module ID: 15980
+// Function ID: 15981
 // Name: conjureProjectConnection
-// Dependencies: [6954, 572, 7265, 2]
+// Dependencies: [7017, 572, 7329, 2]
 
-// Module 15860 (conjureProjectConnection)
+// Module 15980 (conjureProjectConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7265 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

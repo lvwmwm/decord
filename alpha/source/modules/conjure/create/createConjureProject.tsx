@@ -1,12 +1,12 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13973
+// Function ID: 13974
 // Name: createConjureProject
-// Dependencies: [5, 7301, 7265, 13869, 2]
+// Dependencies: [5, 7365, 7329, 13974, 2]
 // Exports: default
 
-// Module 13868 (createConjureProject)
+// Module 13973 (createConjureProject)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7301 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, guild_id, templateId;
@@ -60,7 +60,7 @@ let obj = function _createConjureProject() {
               value = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {

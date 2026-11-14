@@ -1,10 +1,10 @@
-// Module ID: 15633
-// Function ID: 15634
+// Module ID: 15747
+// Function ID: 15748
 // Name: ChannelAnimationConstants
-// Dependencies: [5876, 2]
+// Dependencies: [5939, 2]
 
-// Module 15633 (ChannelAnimationConstants)
-import spring_spring from "spring/spring" /* 5876 */;
+// Module 15747 (ChannelAnimationConstants)
+import spring_spring from "spring/spring" /* 5939 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

@@ -1,24 +1,24 @@
-// Module ID: 17961
-// Function ID: 17962
+// Module ID: 18081
+// Function ID: 18082
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1385, 2176, 9135, 1072, 21, 5243, 575, 1499, 563, 2171, 5866, 1113, 7381, 1187, 11302, 7743, 12311, 17090, 2]
+// Dependencies: [19, 17, 1388, 2179, 9202, 1072, 21, 5306, 575, 1502, 563, 2174, 5929, 1113, 7445, 1187, 11369, 7809, 12406, 17213, 2]
 // Exports: default
 
-// Module 17961 (SettingsChatScreen)
+// Module 18081 (SettingsChatScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl14 from "intl" /* 1113 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7743 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11302 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
-import SettingLayoutDefault from "SettingLayout" /* 17090 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11369 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingLayoutDefault from "SettingLayout" /* 17213 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import UserStore from "UserStore" /* 1388 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,12 +56,12 @@ function VideoUploadQualityNitroUpsell() {
     const obj4 = { style: tmp3.card, children: closure_9(Card, obj5) };
     obj5 = { border: "none", shadow: "none", children: closure_10(View, obj6) };
     obj6 = { style: tmp3.cardContent, children: items2 };
-    Card = tmp(7381).Card;
+    Card = tmp(7445).Card;
     const obj7 = { style: tmp3.cardIcon, source: AssetRegistryDefault, size: require("native").Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1187).Icon;
     items2 = [closure_9(Icon, obj7), ];
     const obj8 = { variant: "body-sm/medium", color: "text-muted", children: intl2.format(require("intl").t.uW1zul, obj9) };
-    const Text2 = tmp(5866).Text;
+    const Text2 = tmp(5929).Text;
     intl2 = tmp(1113).intl;
     obj9 = {
       onClick() {

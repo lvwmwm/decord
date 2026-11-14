@@ -1,16 +1,16 @@
-// Module ID: 12445
-// Function ID: 12446
+// Module ID: 12541
+// Function ID: 12542
 // Name: GroupDMNitroUpsellModel
-// Dependencies: [1385, 1072, 1387, 2107, 504, 1113, 2]
+// Dependencies: [1388, 1072, 1390, 2110, 504, 1113, 2]
 // Exports: getGroupDMAddMembersEntryAction, getGroupDMNitroAudience, getGroupDMNitroCapCTAMessage, getGroupDMNitroUpsellRoute, isGroupDMNitroUpsellAudience, shouldUseGroupDMParticipantLimitUI, useGroupDMNitroAudience
 
-// Module 12445 (GroupDMNitroUpsellModel)
+// Module 12541 (GroupDMNitroUpsellModel)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import UserStore from "UserStore" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

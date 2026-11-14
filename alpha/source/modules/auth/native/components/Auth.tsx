@@ -1,30 +1,30 @@
-// Module ID: 18516
-// Function ID: 18517
+// Module ID: 18645
+// Function ID: 18646
 // Name: Auth
-// Dependencies: [32, 19, 17, 14716, 1072, 21, 18517, 18518, 7427, 18528, 7485, 7711, 5243, 575, 18571, 7704, 18523, 1641, 7648, 18572, 7646, 7727, 7424, 1357, 1113, 18573, 8611, 18582, 2]
+// Dependencies: [32, 19, 17, 14829, 1072, 21, 18646, 18647, 7493, 18657, 7551, 7777, 5306, 575, 18700, 7770, 18652, 1644, 7714, 18701, 7712, 7793, 7490, 1360, 1113, 18702, 8678, 18711, 2]
 
-// Module 18516 (Auth)
+// Module 18645 (Auth)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
-import _mod7485 from "module_7485" /* 7485 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7648 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7704 */;
-import MFAUtils from "MFAUtils" /* 7711 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 18517 */;
-import useShouldShowChooseAccountDefault from "useShouldShowChooseAccount" /* 18523 */;
-import RegistrationUtils from "RegistrationUtils" /* 18528 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18571 */;
-import AssetRegistry from "AssetRegistry" /* 18572 */;
-import AuthManagerDefault from "AuthManager" /* 18573 */;
-import useOrientationLockDefault from "useOrientationLock" /* 18582 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1644 */;
+import _mod7551 from "module_7551" /* 7551 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7714 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7770 */;
+import MFAUtils from "MFAUtils" /* 7777 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 18646 */;
+import useShouldShowChooseAccountDefault from "useShouldShowChooseAccount" /* 18652 */;
+import RegistrationUtils from "RegistrationUtils" /* 18657 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18700 */;
+import AssetRegistry from "AssetRegistry" /* 18701 */;
+import AuthManagerDefault from "AuthManager" /* 18702 */;
+import useOrientationLockDefault from "useOrientationLock" /* 18711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MultiAccountStore from "MultiAccountStore" /* 14716 */;
+import MultiAccountStore from "MultiAccountStore" /* 14829 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 18518 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 18647 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault, set;
@@ -40,9 +40,9 @@ let size;
 let tmp;
 let unpackModuleId;
 const intl2 = tmp(1113);
-const utils_PlatformUtils = tmp(1357);
-const Navigator3 = tmp(7424);
-const react2 = tmp(7727);
+const utils_PlatformUtils = tmp(1360);
+const Navigator3 = tmp(7490);
+const react2 = tmp(7793);
 function getInitialAuthRouteStack() {
   let items1;
   obj = RegistrationHandoff;
@@ -112,7 +112,7 @@ function NavigatorWithCaptchaHook() {
     if (tmp9 === AuthStates.WELCOME) {
       tmp19Result = null;
       if (tmp7) {
-        tmp19Result = tmp19(tmp4(7646), {});
+        tmp19Result = tmp19(tmp4(7712), {});
       }
     }
   }
@@ -219,8 +219,8 @@ const screens = fromEntries(RegistrationStepsUtils.map((item) => {
   let tmp8 = null;
   set = new Set(items1);
   if (set.has(tmp)) {
-    tmp8 = { cardStyleInterpolator: _mod7485.CardStyleInterpolators.forFadeFromCenter };
-    const obj4 = { cardStyleInterpolator: _mod7485.CardStyleInterpolators.forFadeFromCenter };
+    tmp8 = { cardStyleInterpolator: _mod7551.CardStyleInterpolators.forFadeFromCenter };
+    const obj4 = { cardStyleInterpolator: _mod7551.CardStyleInterpolators.forFadeFromCenter };
   }
   const merged3 = Object.assign(tmp8);
   items[1] = obj;

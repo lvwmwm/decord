@@ -1,17 +1,17 @@
-// Module ID: 20572
-// Function ID: 20573
+// Module ID: 20727
+// Function ID: 20728
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1259, 1254, 7208, 5158, 5836, 17711, 2]
+// Dependencies: [32, 5, 1263, 1258, 7271, 5221, 5899, 17831, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 20572 (RoleTierEditStore)
-import react_native from "react-native" /* 1259 */;
-import _slicedToArray2 from "_slicedToArray" /* 5158 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7208 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17711 */;
+// Module 20727 (RoleTierEditStore)
+import react_native from "react-native" /* 1263 */;
+import _slicedToArray2 from "_slicedToArray" /* 5221 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7271 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17831 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ function usePriceTiers(guildId) {
     return items;
   }, require("_slicedToArray").shallow);
   let closure_2 = tmp3;
-  tiers(5836)(() => {
+  tiers(5899)(() => {
     let tmp2 = null == first;
     const tmp = guildId;
     if (tmp2) {
@@ -53,7 +53,7 @@ function usePriceTiers(guildId) {
 }
 const LoadingState = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
 let closure_7 = Object.freeze({ currentScene: null, groupCover: null, groupDescription: "", groupIsFullGate: false });
-const withEqualityFn = module_1254.createWithEqualityFn((arg0) => {
+const withEqualityFn = module_1258.createWithEqualityFn((arg0) => {
   let obj;
   function nestedUpdate(arg0) {
     closure_0 = arg0;

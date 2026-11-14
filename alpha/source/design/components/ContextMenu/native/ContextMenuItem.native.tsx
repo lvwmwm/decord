@@ -1,19 +1,19 @@
-// Module ID: 16354
-// Function ID: 16355
+// Module ID: 16477
+// Function ID: 16478
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 1652, 5243, 9083, 575, 9082, 5876, 5877, 5875, 1705, 5866, 2]
+// Dependencies: [19, 17, 21, 1655, 5306, 9150, 575, 9149, 5939, 5940, 5938, 1708, 5929, 2]
 // Exports: ContextMenuItem
 
-// Module 16354 (ContextMenuItem)
+// Module 16477 (ContextMenuItem)
 import nativeDefault from "native" /* 575 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import ContextMenuState from "ContextMenuState" /* 9082 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9083 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import ContextMenuState from "ContextMenuState" /* 9149 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9150 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1652 from "module_1652" /* 1652 */;
-import createStyles from "createStyles" /* 5243 */;
+import module_1655 from "module_1655" /* 1655 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let Pressable;
@@ -22,7 +22,7 @@ let hasOwnProperty;
 let metroRequire;
 ({ View: closure_4, Pressable } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = module_1652.createAnimatedComponent(Pressable);
+let closure_7 = module_1655.createAnimatedComponent(Pressable);
 let closure_8 = createStyles.createStyles((arg0) => {
   let TEXT_STRONG;
   const obj = { container: { padding: ContextMenuConstants.CONTEXT_MENU_ITEM_PADDING, minHeight: ContextMenuConstants.CONTEXT_MENU_ITEM_BASE_HEIGHT, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 8 }, containerRefresh: { justifyContent: "flex-start" }, roundedTop: { borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg }, roundedBottom: { borderBottomLeftRadius: nativeDefault.radii.lg, borderBottomRightRadius: nativeDefault.radii.lg }, border: { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE }, pressed: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE }, icon: { width: 20, height: 20, tintColor: TEXT_STRONG }, label: { flexShrink: 1 }, trailingIndicator: { marginLeft: "auto" } };
@@ -258,7 +258,7 @@ export function ContextMenuItem(accessibilityRole) {
     let c0;
     let c1;
     [tmp, tmp2, tmp3] = items;
-    const obj = _mod1705;
+    const obj = _mod1708;
     class ContextMenuItemNativeTsx5 {
       constructor() {
         result = closure_0.set(closure_1);

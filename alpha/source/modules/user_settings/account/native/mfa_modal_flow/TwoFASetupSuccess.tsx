@@ -1,25 +1,25 @@
-// Module ID: 17169
-// Function ID: 17170
+// Module ID: 17292
+// Function ID: 17293
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 5243, 575, 6789, 1113, 17158, 7709, 17159, 5957, 17170, 5866, 1187, 5873, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 6852, 1113, 17281, 7775, 17282, 6020, 17293, 5929, 1187, 5936, 2]
 // Exports: default
 
-// Module 17169 (TwoFASetupSuccess)
+// Module 17292 (TwoFASetupSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import components_Button_Button from "components/Button/Button" /* 5873 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7709 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 17159 */;
-import AssetRegistry from "AssetRegistry" /* 17170 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import components_Button_Button from "components/Button/Button" /* 5936 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7775 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 17282 */;
+import AssetRegistry from "AssetRegistry" /* 17293 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -86,7 +86,7 @@ export default function TwoFASetupSuccess() {
         }
         await "HermesInternal";
         ({ ticket: c0, credential: c1 } = closure_0);
-        return "flexDirection";
+        return "Path";
       });
       return obj(...arguments);
     };

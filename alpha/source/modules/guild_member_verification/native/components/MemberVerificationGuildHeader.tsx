@@ -1,26 +1,26 @@
-// Module ID: 7653
-// Function ID: 7654
+// Module ID: 7719
+// Function ID: 7720
 // Name: MemberVerificationGuildHeader
-// Dependencies: [19, 17, 7642, 21, 5243, 575, 1627, 1652, 5957, 1411, 5830, 7654, 7657, 5866, 1113, 2]
+// Dependencies: [19, 17, 7708, 21, 5306, 575, 1630, 1655, 6020, 1414, 5893, 7720, 7723, 5929, 1113, 2]
 // Exports: MemberVerificationGuildBanner, default
 
-// Module 7653 (MemberVerificationGuildHeader)
+// Module 7719 (MemberVerificationGuildHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import GuildIcon from "GuildIcon" /* 7654 */;
-import GuildBadgeDefault from "GuildBadge" /* 7657 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import GuildIcon from "GuildIcon" /* 7720 */;
+import GuildBadgeDefault from "GuildBadge" /* 7723 */;
 import react from "react" /* 19 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 7642 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 7708 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 const GuildIconDefault = GuildIcon;
 let obj1;
 
@@ -73,7 +73,7 @@ export default function MemberVerificationGuildHeader(scrollTop) {
   scrollTop = scrollTop.scrollTop;
   const tmp = closure_8();
   const tmp2 = hasOwnProperty();
-  let obj = _mod1652;
+  let obj = _mod1655;
   let items = [closure_11, scrollTop];
   let c0;
   [tmp5, tmp6] = items;
@@ -88,9 +88,9 @@ export default function MemberVerificationGuildHeader(scrollTop) {
   MemberVerificationGuildHeaderTsx3.__initData = tmp5;
   const derivedValue = obj.useDerivedValue(MemberVerificationGuildHeaderTsx3);
   let items2 = [closure_12, , , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
-  items2[1] = _mod1652.interpolate;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
+  items2[1] = _mod1655.interpolate;
   items2[2] = derivedValue;
   items2[3] = tmp2;
   items2[4] = 1.20225424859375;
@@ -132,7 +132,7 @@ export default function MemberVerificationGuildHeader(scrollTop) {
   const animatedStyle = useAnimatedStyle(MemberVerificationGuildHeaderTsx4);
   const obj4 = { style: items4, children: items5 };
   items4 = [tmp.avatarContainer, animatedStyle];
-  View = _modDef1652.View;
+  View = _modDef1655.View;
   const obj5 = { style: tmp.avatar, guild, size: GuildIcon.GuildIconSizes.XLARGE, animate: true };
   const tmp19 = GuildIconDefault;
   items5 = [metroRequire(tmp19, obj5), ];
@@ -140,7 +140,7 @@ export default function MemberVerificationGuildHeader(scrollTop) {
   items5[1] = metroRequire(GuildBadgeDefault, obj6);
   items6 = [metroImportDefault(View, obj4), , ];
   const obj7 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: formatResult };
-  const Heading = tmp3(5866).Heading;
+  const Heading = tmp3(5929).Heading;
   const intl = tmp3(1113).intl;
   const format = intl.format;
   const t = tmp3(1113).t;
@@ -154,7 +154,7 @@ export default function MemberVerificationGuildHeader(scrollTop) {
   }
   items6[1] = metroRequire(Heading, obj7);
   const obj10 = { style: tmp.headerDescription, variant: "body-sm/medium", color: "text-default", children: stringResult };
-  const Text = tmp3(5866).Text;
+  const Text = tmp3(5929).Text;
   const intl2 = tmp3(1113).intl;
   const string = intl2.string;
   const t2 = tmp3(1113).t;
@@ -184,7 +184,7 @@ export function MemberVerificationGuildBanner(arg0) {
   const tmp = closure_8();
   const tmp2 = hasOwnProperty();
   const top = useSafeAreaInsetsDefault().top;
-  let obj = _mod1652;
+  let obj = _mod1655;
   let items = [closure_9, scrollTop];
   let c0;
   [tmp6, tmp7] = items;
@@ -198,8 +198,8 @@ export function MemberVerificationGuildBanner(arg0) {
   MemberVerificationGuildHeaderTsx1.__workletHash = 246931836658;
   MemberVerificationGuildHeaderTsx1.__initData = tmp6;
   const derivedValue = obj.useDerivedValue(MemberVerificationGuildHeaderTsx1);
-  _mod1652;
-  let items2 = [closure_10, tmp2, _mod1652.interpolate, scrollTop, top, derivedValue];
+  _mod1655;
+  let items2 = [closure_10, tmp2, _mod1655.interpolate, scrollTop, top, derivedValue];
   c0 = undefined;
   let c1;
   let c2;
@@ -239,7 +239,7 @@ export function MemberVerificationGuildBanner(arg0) {
     tmp19 = metroRequire(View, obj2);
   } else {
     const obj4 = { style: tmp16, children: null };
-    View = tmp3(1652).View;
+    View = tmp3(1655).View;
     const obj5 = { style: size, resizeMode: "cover", source: tmp3Result2.getGuildBannerSource(guild) };
     size = { width: "100%", height: tmp2 };
     const tmp3Result = FastImageDefault;

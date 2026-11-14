@@ -1,9 +1,9 @@
-// Module ID: 10446
-// Function ID: 10447
+// Module ID: 10515
+// Function ID: 10516
 // Name: ConjureYouBarPinStore
 // Dependencies: [502, 504, 572, 2]
 
-// Module 10446 (ConjureYouBarPinStore)
+// Module 10515 (ConjureYouBarPinStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

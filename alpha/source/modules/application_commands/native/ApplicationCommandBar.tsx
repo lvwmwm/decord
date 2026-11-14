@@ -1,23 +1,23 @@
-// Module ID: 14706
-// Function ID: 14707
+// Module ID: 14819
+// Function ID: 14820
 // Name: ApplicationCommandBar
-// Dependencies: [32, 19, 17, 5155, 21, 5243, 575, 6898, 7364, 1113, 1187, 504, 14528, 5957, 5866, 8041, 6773, 14707, 2]
+// Dependencies: [32, 19, 17, 5218, 21, 5306, 575, 6961, 7428, 1113, 1187, 504, 14640, 6020, 5929, 8106, 6836, 14820, 2]
 // Exports: default
 
-// Module 14706 (ApplicationCommandBar)
+// Module 14819 (ApplicationCommandBar)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import usePreviousDefault from "usePrevious" /* 6773 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import Pressables from "Pressables" /* 7364 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14528 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import usePreviousDefault from "usePrevious" /* 6836 */;
+import LegacyTokens from "LegacyTokens" /* 6961 */;
+import Pressables from "Pressables" /* 7428 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -41,7 +41,7 @@ let size1;
 let tmp2;
 let tmp4;
 const native = tmp4(1187);
-const DescriptionEllipsisDefault = tmp2(14707);
+const DescriptionEllipsisDefault = tmp2(14820);
 function ApplicationCommandOptionItem(arg0) {
   let LegacyText;
   let intl;
@@ -341,11 +341,11 @@ export default function _default(command) {
   const tmp21 = closure_6;
   if (tmp22) {
     const obj4 = { style: tmp.applicationIcon, source: memo };
-    tmp22 = ref(section(5957), obj4);
+    tmp22 = ref(section(6020), obj4);
   }
   items5 = [tmp22, , , ];
   const obj5 = { style: tmp.applicationName, lineClamp: 1, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
-  items5[1] = ref(command(5866).Text, obj5);
+  items5[1] = ref(command(5929).Text, obj5);
   let options = command.options;
   let mapped;
   if (options != null) {
@@ -385,7 +385,7 @@ export default function _default(command) {
     items6[1] = applicationOptionalOptionsDividerWithNoRequired;
     const items7 = [ref(onPressOption, obj6), , ];
     const obj7 = { style: tmp.applicationOptionalOptionsIndicator, lineClamp: 1, variant: "body-sm/medium", color: "text-muted", children: intl.string(command(1113).t.U19GM3) };
-    const Text = tmp12(5866).Text;
+    const Text = tmp12(5929).Text;
     intl = tmp12(1113).intl;
     items7[1] = ref(Text, obj7);
     const options1 = command.options;
@@ -417,9 +417,9 @@ export default function _default(command) {
   items5[3] = tmp19Result;
   items8 = [c10(tmp21, obj3), , , ];
   const obj9 = { style: tmp.applicationDescriptionDivider };
-  items8[1] = ref(command(8041).FormDivider, obj9);
+  items8[1] = ref(command(8106).FormDivider, obj9);
   items8[2] = ref(stateFromStores, { command, option: currentOption, optionState: tmp17 });
   const obj10 = { style: tmp.applicationDescriptionDivider };
-  items8[3] = ref(command(8041).FormDivider, obj10);
+  items8[3] = ref(command(8106).FormDivider, obj10);
   return c10(onPressOption, obj2);
 };

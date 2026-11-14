@@ -1,16 +1,16 @@
-// Module ID: 12940
-// Function ID: 12941
+// Module ID: 13036
+// Function ID: 13037
 // Name: KrispLogo
-// Dependencies: [19, 17, 1192, 1072, 21, 2185, 1252, 1113, 5949, 504, 5250, 12941, 12942, 5957, 5866, 2]
+// Dependencies: [19, 17, 1192, 1072, 21, 2188, 1256, 1113, 6012, 504, 5313, 13037, 13038, 6020, 5929, 2]
 // Exports: default
 
-// Module 12940 (KrispLogo)
+// Module 13036 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import shared from "shared" /* 5250 */;
-import LinkingDefault from "Linking" /* 5949 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import shared from "shared" /* 5313 */;
+import LinkingDefault from "Linking" /* 6012 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
@@ -62,21 +62,21 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(12941);
+    tmp4Result = tmp4(13037);
     tmp6 = tmp4;
   } else {
-    tmp4Result = tmp4(12942);
+    tmp4Result = tmp4(13038);
     tmp6 = tmp4;
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };
   const obj4 = { style: closure_12.logo, source: tmp4Result, accessibilityLabel: intl.string(intl4.t.vFiCSx) };
-  const tmp6Result = tmp6(5957);
+  const tmp6Result = tmp6(6020);
   intl = tmp(1113).intl;
   items1 = [authStore(tmp6Result, obj4), ];
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: authStore(Text, obj6) };
   intl2 = tmp(1113).intl;
   obj6 = { variant: "body-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-  Text = tmp(5866).Text;
+  Text = tmp(5929).Text;
   intl3 = tmp(1113).intl;
   items1[1] = authStore(React3, obj5);
   return unpackModuleId(_false, obj3);

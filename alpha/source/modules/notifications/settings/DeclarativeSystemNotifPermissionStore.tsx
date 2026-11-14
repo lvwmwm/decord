@@ -1,24 +1,25 @@
-// Module ID: 18492
-// Function ID: 18493
+// Module ID: 18620
+// Function ID: 18621
 // Name: DeclarativeSystemNotifPermissionStore
-// Dependencies: [32, 504, 18493, 18494, 572, 2]
+// Dependencies: [32, 504, 18621, 18622, 572, 2]
 
-// Module 18492 (DeclarativeSystemNotifPermissionStore)
+// Module 18620 (DeclarativeSystemNotifPermissionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 18493 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 18494 */;
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 18621 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 18622 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-function handlePermissionsUpdated(result) {
+function handlePermissionsUpdated(disabledCategories) {
   obj = {};
-  const iter = result.disabledSettings[Symbol.iterator]();
+  disabledCategories = disabledCategories.disabledCategories;
+  const iter = disabledCategories.disabledSettings[Symbol.iterator]();
   while (iter !== undefined) {
     obj[iter.next()] = true;
     continue;
   }
-  const obj2 = { disabledSettings: obj };
+  const obj2 = { disabledSettings: obj, disabledCategories };
   const merged = Object.assign(obj);
   obj = obj2;
 }
@@ -44,6 +45,14 @@ class DeclarativeSystemNotifPermissionStore extends DeviceSettingsStore {
   }
   isDisabled(arg0) {
     return true === obj.disabledSettings[arg0];
+  }
+  isCategoryDisabled(arg0) {
+    const disabledCategories = obj.disabledCategories;
+    let hasItem;
+    if (disabledCategories != null) {
+      hasItem = disabledCategories.includes(arg0);
+    }
+    return true === hasItem;
   }
   getDisabledSettings() {
     const items = [];

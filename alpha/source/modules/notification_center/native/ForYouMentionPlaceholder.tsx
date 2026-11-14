@@ -1,17 +1,17 @@
-// Module ID: 19055
-// Function ID: 19056
+// Module ID: 19247
+// Function ID: 19248
 // Name: ForYouMentionPlaceholder
-// Dependencies: [19, 17, 5244, 21, 5243, 575, 504, 1652, 5485, 2]
+// Dependencies: [19, 17, 5307, 21, 5306, 575, 504, 1655, 5548, 2]
 // Exports: ForYouMentionPlaceholder
 
-// Module 19055 (ForYouMentionPlaceholder)
+// Module 19247 (ForYouMentionPlaceholder)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1652 from "module_1652" /* 1652 */;
+import _modDef1655 from "module_1655" /* 1655 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,21 +52,21 @@ export function ForYouMentionPlaceholder() {
   let obj = require("get initialized");
   let items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const obj2 = require("module_1652");
+  const obj2 = require("module_1655");
   const sharedValue = obj2.useSharedValue(0.3);
   set = sharedValue.set;
-  const withRepeat = require("module_1652").withRepeat;
-  require("module_1652");
-  const obj3 = { duration: 1000, easing: Easing.inOut(require("module_1652").Easing.ease) };
+  const withRepeat = require("module_1655").withRepeat;
+  require("module_1655");
+  const obj3 = { duration: 1000, easing: Easing.inOut(require("module_1655").Easing.ease) };
   const withTiming = require("timing/timing").withTiming;
   require("timing/timing");
-  Easing = require("module_1652").Easing;
+  Easing = require("module_1655").Easing;
   const result = set(withRepeat(withTiming(0.7, obj3), -1, true));
   const items1 = [closure_9, stateFromStores, sharedValue];
   let c0;
   let c1;
   [tmp8, tmp9, tmp10] = items1;
-  const obj4 = require("module_1652");
+  const obj4 = require("module_1655");
   class ForYouMentionPlaceholderTsx1 {
     constructor() {
       let opacity = 0.7;
@@ -84,7 +84,7 @@ export function ForYouMentionPlaceholder() {
   const obj5 = { style: items3, children: items4 };
   items3 = [tmp.placeholder, animatedStyle];
   const obj6 = { style: tmp.placeholderImage };
-  View = _modDef1652.View;
+  View = _modDef1655.View;
   items4 = [closure_5(View, obj6), ];
   const obj7 = { children: items5 };
   items5 = [, ];

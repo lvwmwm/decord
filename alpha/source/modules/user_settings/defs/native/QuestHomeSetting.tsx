@@ -1,16 +1,16 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17523
+// Function ID: 17524
 // Name: QuestHomeSetting
-// Dependencies: [1072, 12311, 1113, 10064, 10493, 17401, 8762, 5280, 2]
+// Dependencies: [1072, 12406, 1113, 10132, 10562, 17524, 8829, 5343, 2]
 
-// Module 17400 (QuestHomeSetting)
+// Module 17523 (QuestHomeSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import QuestContent from "QuestContent" /* 5280 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8762 */;
-import QuestsEligibility from "QuestsEligibility" /* 10064 */;
-import QuestsIcon from "QuestsIcon" /* 10493 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import QuestContent from "QuestContent" /* 5343 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8829 */;
+import QuestsEligibility from "QuestsEligibility" /* 10132 */;
+import QuestsIcon from "QuestsIcon" /* 10562 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

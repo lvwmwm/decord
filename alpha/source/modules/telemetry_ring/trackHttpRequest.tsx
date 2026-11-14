@@ -1,14 +1,14 @@
-// Module ID: 19981
-// Function ID: 19982
+// Module ID: 20139
+// Function ID: 20140
 // Name: trackHttpRequest
-// Dependencies: [1072, 19982, 19983, 1252, 2]
+// Dependencies: [1072, 20140, 20141, 1256, 2]
 // Exports: default
 
-// Module 19981 (trackHttpRequest)
+// Module 20139 (trackHttpRequest)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HttpRequestSampleExperiment from "HttpRequestSampleExperiment" /* 19982 */;
-import trackZoomedInHttpRequestDefault from "trackZoomedInHttpRequest" /* 19983 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import HttpRequestSampleExperiment from "HttpRequestSampleExperiment" /* 20140 */;
+import trackZoomedInHttpRequestDefault from "trackZoomedInHttpRequest" /* 20141 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -28,7 +28,7 @@ export default function trackHttpRequest(url) {
   const obj2 = HttpRequestSampleExperiment;
   if (random < obj2.getHttpRequestSampleRate()) {
     const obj3 = { source: "sample" };
-    const track = tmp3(1252).track;
+    const track = tmp3(1256).track;
     const HTTP_REQUEST = AnalyticEvents.HTTP_REQUEST;
     AnalyticsUtilsDefault;
     const merged1 = Object.assign(obj);

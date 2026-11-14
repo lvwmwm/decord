@@ -1,8 +1,8 @@
-// Module ID: 16510
-// Function ID: 16511
-// Dependencies: [1117, 1118, 1120, 1121, 1122, 1123, 1124, 1126, 1125, 1127, 1128, 1148, 1129, 1130, 1150, 1131, 1132, 1133, 1134, 1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 16511, 1152, 2]
+// Module ID: 16633
+// Function ID: 16634
+// Dependencies: [1117, 1118, 1120, 1121, 1122, 1123, 1124, 1126, 1125, 1127, 1128, 1148, 1129, 1130, 1150, 1131, 1132, 1133, 1134, 1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 16634, 1152, 2]
 
-// Module 16510
+// Module 16633
 import AssetJsonUtils from "AssetJsonUtils" /* 1117 */;
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 import AssetRegistry2 from "AssetRegistry" /* 1120 */;
@@ -35,7 +35,7 @@ import AssetRegistry28 from "AssetRegistry" /* 1146 */;
 import AssetRegistry29 from "AssetRegistry" /* 1147 */;
 import AssetRegistry30 from "AssetRegistry" /* 1148 */;
 import AssetRegistry31 from "AssetRegistry" /* 1150 */;
-import AssetRegistry32 from "AssetRegistry" /* 16511 */;
+import AssetRegistry32 from "AssetRegistry" /* 16634 */;
 import module_1152_mod from "module_1152" /* 1152 */;
 import size from "module_2" /* 2 */;
 

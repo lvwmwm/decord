@@ -1,11 +1,11 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 10077
+// Function ID: 10078
 // Name: NitroHomeBadgeDirectoryExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: useIsNitroHomeBadgeDirectoryEnabled
 
-// Module 10010 (NitroHomeBadgeDirectoryExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 10077 (NitroHomeBadgeDirectoryExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-nitro-home-badge-directory", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

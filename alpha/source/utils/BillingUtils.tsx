@@ -1,16 +1,16 @@
-// Module ID: 5055
-// Function ID: 5056
+// Module ID: 5118
+// Function ID: 5119
 // Name: BillingUtils
-// Dependencies: [5, 5056, 1083, 5057, 1242, 1282, 5063, 2]
+// Dependencies: [5, 5119, 1083, 5120, 1242, 1285, 5126, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError, isOfTypeStripeError, shouldReportExpressCheckoutError
 
-// Module 5055 (BillingUtils)
+// Module 5118 (BillingUtils)
 import Constants from "Constants" /* 1083 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Constants2 from "Constants" /* 5056 */;
-import BraintreeUtils from "BraintreeUtils" /* 5057 */;
-import BillingErrorDefault from "BillingError" /* 5063 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants2 from "Constants" /* 5119 */;
+import BraintreeUtils from "BraintreeUtils" /* 5120 */;
+import BillingErrorDefault from "BillingError" /* 5126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -94,15 +94,15 @@ export function getLocalizedDisplayMonth(arg0, arg1) {
 export function createGatewayCheckoutContext() {
   return obj(...arguments);
 }
-export function captureBillingException(error, tags) {
+export function captureBillingException(error, options) {
   let obj2;
   obj = { tags: obj2 };
   const captureException = SentryUtilsDefault.captureException;
   SentryUtilsDefault;
-  const merged = Object.assign(tags);
-  tags = undefined;
-  if (tags != null) {
-    tags = tags.tags;
+  const merged = Object.assign(options);
+  let tags;
+  if (options != null) {
+    tags = options.tags;
   }
   obj2 = { app_context: "billing" };
   const merged1 = Object.assign(tags);
@@ -123,12 +123,12 @@ export function isOfTypeStripeError(type) {
 export function shouldReportExpressCheckoutError(code) {
   let tmp6;
   if (code instanceof BillingErrorDefault) {
-    let tmp8 = code.code !== tmp(5063).ErrorCodes.INVALID_PAYMENT_SOURCE;
+    let tmp8 = code.code !== tmp(5126).ErrorCodes.INVALID_PAYMENT_SOURCE;
     if (tmp8) {
       let tmp10 = code instanceof HTTPUtils.HTTPResponseError && code.status >= 400 && code.status < 500;
       if (!tmp10) {
-        tmp10 = code instanceof tmp(5063) && null != code.status && code.status >= 400 && code.status < 500;
-        const tmp11 = code instanceof tmp(5063) && null != code.status && code.status >= 400 && code.status < 500;
+        tmp10 = code instanceof tmp(5126) && null != code.status && code.status >= 400 && code.status < 500;
+        const tmp11 = code instanceof tmp(5126) && null != code.status && code.status >= 400 && code.status < 500;
       }
       tmp8 = !tmp10;
     }

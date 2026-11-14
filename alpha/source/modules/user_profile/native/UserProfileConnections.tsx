@@ -1,35 +1,35 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 15851
+// Function ID: 15852
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2186, 5310, 7896, 1072, 7359, 21, 1187, 5243, 575, 12399, 5839, 5250, 12404, 12405, 8479, 7401, 7024, 1411, 7587, 6004, 5949, 5491, 7877, 5951, 1113, 5866, 7379, 5956, 8327, 5314, 504, 15732, 7895, 7680, 15735, 2]
+// Dependencies: [19, 17, 2189, 5373, 7962, 1072, 7423, 21, 1187, 5306, 575, 12494, 5902, 5313, 12499, 12500, 8545, 7467, 7087, 1414, 7653, 6067, 6012, 5554, 7943, 6014, 1113, 5929, 7443, 6019, 8393, 5377, 504, 15852, 7961, 7746, 15855, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 15731 (UserProfileConnections)
+// Module 15851 (UserProfileConnections)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import shared from "shared" /* 5250 */;
-import HapticUtils from "HapticUtils" /* 5491 */;
-import useToken from "useToken" /* 5839 */;
-import ToastUtils from "ToastUtils" /* 5951 */;
-import Constants2 from "Constants" /* 7359 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7587 */;
-import TableRowGroup from "TableRowGroup" /* 7680 */;
-import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 12399 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12404 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12405 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 15735 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import shared from "shared" /* 5313 */;
+import HapticUtils from "HapticUtils" /* 5554 */;
+import useToken from "useToken" /* 5902 */;
+import ToastUtils from "ToastUtils" /* 6014 */;
+import Constants2 from "Constants" /* 7423 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
+import TableRowGroup from "TableRowGroup" /* 7746 */;
+import ClipboardUtils from "ClipboardUtils" /* 7943 */;
+import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 12494 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12499 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12500 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 15855 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import StreamerModeStore from "StreamerModeStore" /* 5310 */;
-import Constants_mod from "Constants" /* 7896 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import StreamerModeStore from "StreamerModeStore" /* 5373 */;
+import Constants_mod from "Constants" /* 7962 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import native_mod from "native" /* 1187 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -46,7 +46,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const UserProfileCardDefault = tmp2(7895);
+const UserProfileCardDefault = tmp2(7961);
 function VerifiedIcon(arg0) {
   let isTwitterVerifiedAccount;
   let items;
@@ -409,7 +409,7 @@ const memoResult = react.memo(function UserAccountConnection(applicationRoleConn
     tmp7 = null;
     if (null != applicationRoleConnection.platform_username) {
       const obj4 = { variant: "body-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
-      tmp7 = authStore2(tmp2(5866).Text, obj4);
+      tmp7 = authStore2(tmp2(5929).Text, obj4);
     }
   }
   const items = [tmp7, , ];
@@ -425,7 +425,7 @@ const memoResult = react.memo(function UserAccountConnection(applicationRoleConn
   items[1] = tmp9;
   const obj7 = { style: tmp.poweredByContainer, children: authStore2(Text, obj8) };
   obj8 = { variant: "body-xs/medium", color: "text-muted", children: intl.format(intl3.t.zIT9YA, obj9) };
-  Text = tmp2(5866).Text;
+  Text = tmp2(5929).Text;
   intl = tmp2(1113).intl;
   obj9 = {
     applicationHook() {
@@ -435,7 +435,7 @@ const memoResult = react.memo(function UserAccountConnection(applicationRoleConn
   items[2] = authStore2(View, obj7);
   let name = applicationRoleConnection.platform_name;
   const tmp5Result = tmp5(tmp6, obj6);
-  const TableRow = tmp2(7379).TableRow;
+  const TableRow = tmp2(7443).TableRow;
   if (name == null) {
     name = applicationRoleConnection.platform_username;
   }
@@ -460,7 +460,7 @@ export function UserProfileAccountConnectionsCard(userId) {
   userId = userId.userId;
   const style = userId.style;
   const tmp2 = closure_16();
-  let obj = userId(5314);
+  let obj = userId(5377);
   const theme = obj.useThemeContext().theme;
   const items = [LocaleStore];
   const obj2 = userId(504);
@@ -468,8 +468,8 @@ export function UserProfileAccountConnectionsCard(userId) {
   const items1 = [StreamerModeStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-  ({ connections, appIdentities } = theme(15732)(userId));
-  theme(15732)(userId);
+  ({ connections, appIdentities } = theme(15852)(userId));
+  theme(15852)(userId);
   const tmp6 = theme;
   if (!stateFromStores) {
     const items2 = [];
@@ -482,8 +482,8 @@ export function UserProfileAccountConnectionsCard(userId) {
       const obj = { identity, application: application.application };
       return closure_1_12(closure_1_19, obj, "" + identity.application_id + "-" + identity.provider_issued_user_id);
     }), arraySpreadResult);
-    const obj4 = { title: intl.string(userId(1113).t["3fe7U5"]), style, titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(7680).TableRowGroup, obj5) };
-    const tmp6Result = tmp6(7895);
+    const obj4 = { title: intl.string(userId(1113).t["3fe7U5"]), style, titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(7746).TableRowGroup, obj5) };
+    const tmp6Result = tmp6(7961);
     intl = tmp3(1113).intl;
     obj5 = { hasIcons: true, children: items2 };
     return closure_12(tmp6Result, obj4);

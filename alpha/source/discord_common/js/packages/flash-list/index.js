@@ -1,16 +1,16 @@
-// Module ID: 7822
-// Function ID: 7823
+// Module ID: 7888
+// Function ID: 7889
 // Name: defaultMVCPConfig
-// Dependencies: [19, 17, 21, 1377, 5743, 1652, 5742, 5507, 2]
+// Dependencies: [19, 17, 21, 1380, 5806, 1655, 5805, 5570, 2]
 // Exports: AnimatedFlashList, BottomSheetFlashList, BottomSheetMasonryFlashList, FlashList, MasonryFlashList
 
-// Module 7822 (defaultMVCPConfig)
+// Module 7888 (defaultMVCPConfig)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod5743 from "module_5743" /* 5743 */;
+import _mod5806 from "module_5806" /* 5806 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import module_1652_mod from "module_1652" /* 1652 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import module_1655_mod from "module_1655" /* 1655 */;
 import size from "module_2" /* 2 */;
 
 let obj;
@@ -24,13 +24,13 @@ if (PlatformUtils.isAndroid()) {
 function noop() {
 
 }
-let module_1652 = module_1652_mod;
-let closure_8 = module_1652.createAnimatedComponent(_mod5743.FlashList);
-module_1652 = module_1652_mod;
-let closure_9 = module_1652.createAnimatedComponent(_mod5743.FlashList);
+let module_1655 = module_1655_mod;
+let closure_8 = module_1655.createAnimatedComponent(_mod5806.FlashList);
+module_1655 = module_1655_mod;
+let closure_9 = module_1655.createAnimatedComponent(_mod5806.FlashList);
 const result = size.fileFinishedImporting("../discord_common/js/packages/flash-list/index.js");
-for (const key10048 in _mod5743) {
-  exports[key10048] = _mod5743[key10048];
+for (const key10048 in _mod5806) {
+  exports[key10048] = _mod5806[key10048];
   continue;
 }
 
@@ -39,7 +39,7 @@ export const FlashList = (ref) => {
   let maintainVisibleContentPosition;
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   maintainVisibleContentPosition = { maintainVisibleContentPosition, ref };
-  const FlashList = _mod5743.FlashList;
+  const FlashList = _mod5806.FlashList;
   const merged1 = Object.assign(merged);
   return <FlashList maintainVisibleContentPosition={maintainVisibleContentPosition} ref={arg0.ref} />;
 };
@@ -53,7 +53,7 @@ export const MasonryFlashList = (ref) => {
   let maintainVisibleContentPosition;
   const merged = Object.assign(ref, Object.assign({ preventNativeModalDismiss: 0, ref: 0 }));
   maintainVisibleContentPosition = { ref, maintainVisibleContentPosition, masonry: true };
-  const FlashList = _mod5743.FlashList;
+  const FlashList = _mod5806.FlashList;
   const merged1 = Object.assign(merged);
   return <FlashList ref={arg0.ref} maintainVisibleContentPosition={maintainVisibleContentPosition} masonry />;
 };
@@ -79,7 +79,7 @@ export const BottomSheetFlashList = (ref) => {
     return tmp2;
   }, items);
   maintainVisibleContentPosition = { ref, maintainVisibleContentPosition, refreshControl: memo };
-  refreshControl(5742);
+  refreshControl(5805);
   const merged1 = Object.assign(merged);
   return <tmp3 ref={arg0.ref} maintainVisibleContentPosition={maintainVisibleContentPosition} refreshControl={memo} />;
 };
@@ -91,7 +91,7 @@ export const BottomSheetMasonryFlashList = (ref) => {
   ({ preventNativeModalDismiss, refreshControl } = ref);
   const merged = Object.assign(ref, Object.assign({ preventNativeModalDismiss: 0, refreshControl: 0, ref: 0 }));
   const items = [preventNativeModalDismiss, refreshControl];
-  maintainVisibleContentPosition = { ref, maintainVisibleContentPosition, masonry: true, renderScrollComponent: preventNativeModalDismiss(5507).BottomSheetScrollView, refreshControl: memo };
+  maintainVisibleContentPosition = { ref, maintainVisibleContentPosition, masonry: true, renderScrollComponent: preventNativeModalDismiss(5570).BottomSheetScrollView, refreshControl: memo };
   memo = react.useMemo(() => {
     let tmp2 = refreshControl;
     if (null == refreshControl) {
@@ -107,5 +107,5 @@ export const BottomSheetMasonryFlashList = (ref) => {
     return tmp2;
   }, items);
   const merged1 = Object.assign(merged);
-  return <closure_9 ref={arg0.ref} maintainVisibleContentPosition={maintainVisibleContentPosition} masonry renderScrollComponent={preventNativeModalDismiss(5507).BottomSheetScrollView} refreshControl={memo} />;
+  return <closure_9 ref={arg0.ref} maintainVisibleContentPosition={maintainVisibleContentPosition} masonry renderScrollComponent={preventNativeModalDismiss(5570).BottomSheetScrollView} refreshControl={memo} />;
 };

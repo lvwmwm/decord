@@ -1,13 +1,13 @@
-// Module ID: 13463
-// Function ID: 13464
+// Module ID: 13566
+// Function ID: 13567
 // Name: useConjureSpendLimitNotice
-// Dependencies: [7316, 504, 2185, 1113, 4079, 2]
+// Dependencies: [7380, 504, 2188, 1113, 4131, 2]
 // Exports: default
 
-// Module 13463 (useConjureSpendLimitNotice)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import _modDef4079 from "module_4079" /* 4079 */;
-import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 7316 */;
+// Module 13566 (useConjureSpendLimitNotice)
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 7380 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,11 +38,11 @@ export default function useConjureSpendLimitNotice(arg0) {
       if (null == formatResult) {
         const intl2 = tmp(1113).intl;
         const obj3 = { helpdeskURL: submitRequestURL };
-        formatResult1 = intl2.format(tmp6(4079)["bw/n4C"], obj3);
+        formatResult1 = intl2.format(tmp6(4131)["bw/n4C"], obj3);
       } else {
         const intl = tmp(1113).intl;
         const obj4 = { limit: formatResult, helpdeskURL: submitRequestURL };
-        formatResult1 = intl.format(tmp6(4079).GYqJXH, obj4);
+        formatResult1 = intl.format(tmp6(4131).GYqJXH, obj4);
       }
       return { blocked: true, message: formatResult1 };
     } else {
@@ -51,7 +51,7 @@ export default function useConjureSpendLimitNotice(arg0) {
           if (stateFromStores.limitUsd > 0) {
             const _Math = Math;
             const _Math2 = Math;
-            const obj6 = { blocked: false, message: intl3.formatToPlainString(_modDef4079.GHgG2B, obj7) };
+            const obj6 = { blocked: false, message: intl3.formatToPlainString(_modDef4131.GHgG2B, obj7) };
             const bound = Math.min(99, Math.floor(stateFromStores.spentUsd / stateFromStores.limitUsd * 100));
             intl3 = tmp(1113).intl;
             return obj6;

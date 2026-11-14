@@ -1,30 +1,30 @@
-// Module ID: 8812
-// Function ID: 8813
+// Module ID: 8879
+// Function ID: 8880
 // Name: utils/UploadUtils
-// Dependencies: [109, 5, 17, 1194, 6147, 1385, 1072, 6839, 3, 8813, 8126, 8779, 8819, 1377, 5951, 1113, 1441, 2171, 8783, 1149, 8820, 8822, 8823, 8808, 5200, 38, 8824, 8825, 8826, 1380, 8827, 8828, 8829, 6320, 8830, 2]
+// Dependencies: [109, 5, 17, 1194, 6210, 1388, 1072, 6902, 3, 8880, 8192, 8846, 8886, 1380, 6014, 1113, 1444, 2174, 8850, 1149, 8887, 8889, 8890, 8875, 5263, 38, 8891, 8892, 8893, 1255, 8894, 8895, 8896, 6383, 8897, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 8812 (utils/UploadUtils)
+// Module 8879 (utils/UploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react_nativeDefault from "react-native" /* 1149 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import react_nativeDefault2 from "react-native" /* 1441 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6839 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 8126 */;
-import UploadPlatform from "UploadPlatform" /* 8783 */;
-import FileUtils from "FileUtils" /* 8808 */;
-import ImagePickerDefault from "ImagePicker" /* 8813 */;
-import ImageConversionDecision from "ImageConversionDecision" /* 8820 */;
-import VideoUploadUtils from "VideoUploadUtils" /* 8822 */;
-import UploadLimits from "UploadLimits" /* 8823 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8830 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import react_nativeDefault2 from "react-native" /* 1444 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 8192 */;
+import UploadPlatform from "UploadPlatform" /* 8850 */;
+import FileUtils from "FileUtils" /* 8875 */;
+import ImagePickerDefault from "ImagePicker" /* 8880 */;
+import ImageConversionDecision from "ImageConversionDecision" /* 8887 */;
+import VideoUploadUtils from "VideoUploadUtils" /* 8889 */;
+import UploadLimits from "UploadLimits" /* 8890 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8897 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1194 */;
-import NetworkStore from "NetworkStore" /* 6147 */;
-import UserStore from "UserStore" /* 1385 */;
+import NetworkStore from "NetworkStore" /* 6210 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,8 +41,8 @@ let closure_17;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const DeviceUtils = tmp(5200);
-const UploadUtils = tmp(8779);
+const DeviceUtils = tmp(5263);
+const UploadUtils = tmp(8846);
 function openImagePickerUnhandled() {
   return obj(...arguments);
 }
@@ -535,7 +535,7 @@ obj = function _mediaManager() {
               closure_3 = tmp;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -1324,7 +1324,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj4 = { uri: require, overrideType: "a" };
+                  const obj4 = { uri: require, overrideType: "y" };
                   const tmp12Result8 = UploadUtils;
                   isVideo = tmp12Result8.getFile(obj4).isVideo;
                 }
@@ -1350,7 +1350,7 @@ function convertVideo(videoMetadata) {
                 } else {
                   isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                   if (isVideo2) {
-                    obj6 = { uri: require, overrideType: "a" };
+                    obj6 = { uri: require, overrideType: "y" };
                     const tmp12Result11 = UploadUtils;
                     isVideo2 = tmp12Result11.getFile(obj6).isVideo;
                   }
@@ -1550,7 +1550,7 @@ obj = function _processVideoUpload() {
             encodingConfig = undefined;
             fileSize = 1;
             spoiler = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === fileSize) {
           if (arg0 === 1) {
@@ -1750,7 +1750,7 @@ obj = function _processImageOrFileUpload() {
             closure_26 = undefined;
             i = 1;
             width = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -2021,7 +2021,7 @@ obj = function _tryConvertImage() {
               path3 = undefined;
               useJpegliEncoder = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
             break;
           }

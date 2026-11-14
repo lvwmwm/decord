@@ -1,11 +1,11 @@
-// Module ID: 13186
-// Function ID: 13187
+// Module ID: 13295
+// Function ID: 13296
 // Name: useConjureDebugAccess
-// Dependencies: [5068, 2]
+// Dependencies: [5131, 2]
 // Exports: useConjureDebugPaneEnabled, useConjureTraceTabEnabled
 
-// Module 13186 (useConjureDebugAccess)
-import UserSettings from "UserSettings" /* 5068 */;
+// Module 13295 (useConjureDebugAccess)
+import UserSettings from "UserSettings" /* 5131 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/debug/useConjureDebugAccess.tsx");

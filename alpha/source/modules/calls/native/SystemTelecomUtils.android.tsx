@@ -1,13 +1,13 @@
-// Module ID: 16772
-// Function ID: 16773
+// Module ID: 16895
+// Function ID: 16896
 // Name: SystemTelecomUtils
-// Dependencies: [5092, 1072, 16770, 2]
+// Dependencies: [5155, 1072, 16893, 2]
 // Exports: isSystemTelecomEnabled, isSystemTelecomEnabledForChannel
 
-// Module 16772 (SystemTelecomUtils)
+// Module 16895 (SystemTelecomUtils)
 import Constants from "Constants" /* 1072 */;
-import react_nativeDefault from "react-native" /* 16770 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
+import react_nativeDefault from "react-native" /* 16893 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

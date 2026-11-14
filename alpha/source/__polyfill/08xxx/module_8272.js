@@ -1,70 +1,91 @@
 // Module ID: 8272
 // Function ID: 8273
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8273, 8274, 8221]
+// Dependencies: []
+// Exports: appendTransform, reset, toArray
 
 // Module 8272
-import Fragment from "Fragment" /* 21 */;
-import multiplyMatricesDefault from "multiplyMatrices" /* 8221 */;
-import _modDef8273 from "module_8273" /* 8273 */;
-import extractGradientDefault from "extractGradient" /* 8274 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
-
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const jsx = Fragment.jsx;
-class LinearGradient {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, LinearGradient);
-    const obj = _getPrototypeOf(LinearGradient);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+function append(arg0, arg1, arg2, arg3, arg4, arg5) {
+  if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
+    const tmp3 = c8;
+    if (tmp3) {
+      c8 = false;
+      c2 = arg0;
+      c3 = arg1;
+      c4 = arg2;
+      c5 = arg3;
+      closure_6 = arg4;
+      closure_7 = arg5;
     } else {
-      constructResult = obj(...arguments);
+      if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
+        c2 = tmp4 * arg0 + tmp6 * arg1;
+        c3 = tmp5 * arg0 + tmp7 * arg1;
+        c4 = tmp4 * arg2 + tmp6 * arg3;
+        c5 = tmp5 * arg2 + tmp7 * arg3;
+      }
+      if (0 !== arg4 || 0 !== arg5) {
+        closure_6 = tmp4 * arg4 + tmp6 * arg5 + closure_6;
+        closure_7 = tmp5 * arg4 + tmp7 * arg5 + closure_7;
+      }
     }
-    return tmp3(self, constructResult);
   }
 }
-_inherits(LinearGradient, multiplyMatricesDefault);
-const entry = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const props = this.props;
-    const obj = { x1: props.x1, y1: props.y1, x2: props.x2, y2: props.y2 };
-    _modDef8273;
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(extractGradientDefault(props, this));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
-  }
-};
-const items = [entry];
-const importDefaultResultResult = _createClass(LinearGradient, items);
-importDefaultResultResult.displayName = "LinearGradient";
-importDefaultResultResult.defaultProps = { x1: "0%", y1: "0%", x2: "100%", y2: "0%" };
+let closure_0 = Math.PI / 180;
+let items = [1, 0, 0, 1, 0, 0];
+let c2 = 1;
+let c3 = 0;
+let c4 = 0;
+let c5 = 1;
+let closure_6 = 0;
+let closure_7 = 0;
+let c8 = true;
 
-export default importDefaultResultResult;
+export const identity = items;
+export function reset() {
+  const tmp = c8;
+  if (!tmp) {
+    c5 = 1;
+    c2 = 1;
+    closure_7 = 0;
+    closure_6 = 0;
+    c4 = 0;
+    c3 = 0;
+    c8 = true;
+  }
+}
+export function toArray() {
+  const tmp = c8;
+  if (!tmp) {
+    items = [c2, c3, c4, c5, closure_6, closure_7];
+  }
+  return items;
+}
+export { append };
+export function appendTransform(arg0, arg1, scaleX, scaleY, rotation, skewX, skewY, originX, originY) {
+  let num2 = 1;
+  let num3 = 0;
+  if (rotation % 360) {
+    const result = rotation * closure_0;
+    const _Math = Math;
+    num2 = Math.cos(result);
+    const _Math2 = Math;
+    num3 = Math.sin(result);
+  }
+  const result1 = num2 * scaleX;
+  const result2 = num3 * scaleX;
+  const result3 = -num3 * scaleY;
+  const result4 = num2 * scaleY;
+  if (!skewX) {
+    if (!skewY) {
+      append(result1, result2, result3, result4, arg0, arg1);
+    }
+    const tmp19 = originX || originY;
+    if (tmp19) {
+      closure_6 = closure_6 - (originX * c2 + originY * c4);
+      closure_7 = closure_7 - (originX * c3 + originY * c5);
+      c8 = false;
+    }
+  }
+  const tanResult = Math.tan(skewY * closure_0);
+  const tanResult1 = Math.tan(skewX * closure_0);
+  append(result1 + tanResult1 * result2, tanResult * result1 + result2, result3 + tanResult1 * result4, tanResult * result3 + result4, arg0, arg1);
+}

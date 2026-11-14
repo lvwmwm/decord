@@ -1,13 +1,13 @@
-// Module ID: 7184
-// Function ID: 7185
+// Module ID: 7247
+// Function ID: 7248
 // Name: SocialLayerStorefrontConstants
-// Dependencies: [1072, 1402, 2185, 2]
+// Dependencies: [1072, 1405, 2188, 2]
 // Exports: getChannelsGameShopPrefix, getGameShopTermsUrl, isGameShopPath
 
-// Module 7184 (SocialLayerStorefrontConstants)
+// Module 7247 (SocialLayerStorefrontConstants)
 import Constants from "Constants" /* 1072 */;
-import UserStoreConstants from "UserStoreConstants" /* 1402 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import UserStoreConstants from "UserStoreConstants" /* 1405 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;

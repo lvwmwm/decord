@@ -1,22 +1,22 @@
-// Module ID: 10109
-// Function ID: 10110
+// Module ID: 10178
+// Function ID: 10179
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 575, 5243, 10110, 1113, 10111, 5866, 1377, 5535, 8758, 8767, 2]
+// Dependencies: [19, 17, 21, 575, 5306, 10179, 1113, 10180, 5929, 1380, 5598, 8825, 8834, 2]
 // Exports: default
 
-// Module 10109 (AppStoreOverlayStatsCarousel)
+// Module 10178 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import AnalyticsActions from "AnalyticsActions" /* 8758 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 10110 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 10111 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import AnalyticsActions from "AnalyticsActions" /* 8825 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 10179 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 10180 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -122,7 +122,7 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const tmp26 = metroRequire;
     if (null == secondaryContent) {
       const obj9 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp24(tmp21(5866).Text, obj9);
+      secondaryContent = tmp24(tmp21(5929).Text, obj9);
     }
     tmp24Result = tmp24(tmp26, obj8);
   }
@@ -193,9 +193,9 @@ export default function AppStoreOverlayStatsCarousel(arg0) {
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(8767).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(8834).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(8767).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(8834).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

@@ -1,13 +1,13 @@
-// Module ID: 7291
-// Function ID: 7292
+// Module ID: 7355
+// Function ID: 7356
 // Name: UserProfileWidgetConstants
-// Dependencies: [2162, 7289, 1113, 2]
-// Exports: widgetSupportsComment, widgetSupportsTags
+// Dependencies: [2165, 7353, 1113, 2]
+// Exports: widgetShowsGameDetails, widgetSupportsComment, widgetSupportsTags
 
-// Module 7291 (UserProfileWidgetConstants)
+// Module 7355 (UserProfileWidgetConstants)
 import intl2 from "intl" /* 1113 */;
-import WidgetType from "WidgetType" /* 7289 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import WidgetType from "WidgetType" /* 7353 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 const items = [WidgetType.WidgetType.PERSONAL, WidgetType.WidgetType.CLIPS_GALLERY, WidgetType.WidgetType.APPLICATION, WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.PLAYED_GAMES, WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES];
@@ -62,4 +62,8 @@ export function widgetSupportsComment(arg0) {
 }
 export function widgetSupportsTags(arg0) {
   return items2.includes(arg0);
+}
+export function widgetShowsGameDetails(type) {
+  const hasItem = items1.includes(type) || items2.includes(type);
+  return hasItem;
 }

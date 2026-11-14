@@ -1,10 +1,10 @@
-// Module ID: 20301
-// Function ID: 20302
+// Module ID: 20456
+// Function ID: 20457
 // Name: AutomodExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 20301 (AutomodExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 20456 (AutomodExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

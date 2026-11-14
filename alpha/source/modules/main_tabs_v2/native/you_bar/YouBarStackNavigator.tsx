@@ -1,17 +1,17 @@
-// Module ID: 18602
-// Function ID: 18603
+// Module ID: 18731
+// Function ID: 18732
 // Name: YouBarStackNavigator
-// Dependencies: [19, 17, 5146, 5286, 9963, 21, 9061, 18603, 19041, 19089, 504, 19162, 10151, 7424, 5853, 2]
+// Dependencies: [19, 17, 5209, 5349, 10030, 21, 9128, 18732, 19233, 19281, 504, 19354, 10220, 7490, 5916, 2]
 
-// Module 18602 (YouBarStackNavigator)
-import MainTabsConstants from "MainTabsConstants" /* 9963 */;
-import Notifications from "Notifications" /* 19041 */;
+// Module 18731 (YouBarStackNavigator)
+import MainTabsConstants from "MainTabsConstants" /* 10030 */;
+import Notifications from "Notifications" /* 19233 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9061 */;
+import NativeStackView from "NativeStackView" /* 9128 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

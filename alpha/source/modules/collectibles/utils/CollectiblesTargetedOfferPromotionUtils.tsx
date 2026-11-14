@@ -1,14 +1,15 @@
-// Module ID: 9384
-// Function ID: 9385
+// Module ID: 9452
+// Function ID: 9453
 // Name: CollectiblesTargetedOfferPromotionUtils
-// Dependencies: [9350, 7188, 8431, 8430, 1113, 2]
+// Dependencies: [9417, 7251, 8497, 8496, 9453, 1113, 2]
 // Exports: getTargetedOfferPromotionFlavorModalGradient, getTargetedOfferPromotionFlavorStyleOTPCheckout, getTargetedOfferPromotionForCollectiblesProduct, getTargetedOfferPromotionPurchaseCtaText, hasFiatExclusiveTargetedOfferPromotion, isCollectiblesTargetedOfferPromotion
 
-// Module 9384 (CollectiblesTargetedOfferPromotionUtils)
-import StorefrontTypes from "StorefrontTypes" /* 7188 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8430 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8431 */;
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9350 */;
+// Module 9452 (CollectiblesTargetedOfferPromotionUtils)
+import StorefrontTypes from "StorefrontTypes" /* 7251 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9417 */;
+import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 9453 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesTargetedOfferPromotionUtils.tsx");
@@ -109,32 +110,23 @@ export function getTargetedOfferPromotionPurchaseCtaText(targetedOfferPromotionF
   }
   let tmp4 = null;
   if (type === StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.TARGETED_OFFER) {
-    let discount1;
+    let discount;
     if (targetedOfferPromotionForCollectiblesProduct != null) {
       const rewardConfig = targetedOfferPromotionForCollectiblesProduct.rewardConfig;
       if (rewardConfig != null) {
-        discount1 = rewardConfig.discount;
+        discount = rewardConfig.discount;
       }
     }
     tmp4 = null;
-    if (null != discount1) {
+    if (null != discount) {
       let stringResult;
-      const rewardConfig2 = targetedOfferPromotionForCollectiblesProduct.rewardConfig;
-      let type1;
-      if (rewardConfig2 != null) {
-        const discount = rewardConfig2.discount;
-        if (discount != null) {
-          type1 = discount.type;
-        }
-      }
-      const tmp7 = type1 === tmp2(7188).StorefrontDiscountTypes.PERCENT && 100 === targetedOfferPromotionForCollectiblesProduct.rewardConfig.discount.amount;
-      const intl = tmp2(1113).intl;
-      const string = intl.string;
-      const t = tmp2(1113).t;
-      if (tmp7) {
-        stringResult = string(t["302tKP"]);
+      const tmp2Result = CollectiblesPromotionDiscountUtils;
+      if (100 === tmp2Result.getPromotionPercentOff(targetedOfferPromotionForCollectiblesProduct)) {
+        const intl2 = tmp2(1113).intl;
+        stringResult = intl2.string(tmp2(1113).t["302tKP"]);
       } else {
-        stringResult = string(t["7EGhnE"]);
+        const intl = tmp2(1113).intl;
+        stringResult = intl.string(tmp2(1113).t["7EGhnE"]);
       }
       tmp4 = stringResult;
     }
@@ -152,18 +144,21 @@ export function hasFiatExclusiveTargetedOfferPromotion(targetedOfferPromotionFor
       }
     }
   }
-  if (type === StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.TARGETED_OFFER) {
-    let discount;
+  let tmp2 = type === StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.TARGETED_OFFER;
+  if (tmp2) {
+    let fiatEnabled;
     if (targetedOfferPromotionForCollectiblesProduct != null) {
       const rewardConfig = targetedOfferPromotionForCollectiblesProduct.rewardConfig;
       if (rewardConfig != null) {
-        discount = rewardConfig.discount;
+        const discount = rewardConfig.discount;
+        if (discount != null) {
+          fiatEnabled = discount.fiatEnabled;
+        }
       }
     }
-    return null != discount && discount.fiatEnabled;
-  } else {
-    return false;
+    tmp2 = true === fiatEnabled;
   }
+  return tmp2;
 }
 export function getTargetedOfferPromotionFlavorStyleOTPCheckout(arg0) {
   let str = "collectibles";

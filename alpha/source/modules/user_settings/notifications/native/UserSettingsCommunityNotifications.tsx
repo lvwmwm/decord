@@ -1,24 +1,28 @@
-// Module ID: 18032
-// Function ID: 18033
+// Module ID: 18130
+// Function ID: 18131
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 10944, 21, 5243, 504, 11, 8041, 6274, 7680, 7888, 1113, 5073, 2]
+// Dependencies: [19, 11013, 21, 5306, 575, 504, 11, 8106, 6337, 7746, 7954, 1113, 5136, 2]
 // Exports: default
 
-// Module 18032 (UserSettingsCommunityNotifications)
+// Module 18130 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import TableRowGroup2 from "TableRowGroup" /* 7680 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7888 */;
+import TableRowGroup2 from "TableRowGroup" /* 7746 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7954 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10944 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
+let obj2;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let closure_6 = createStyles.createStyles({ container: { paddingHorizontal: 16 } });
+let obj = { container: obj2 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24 };
+let closure_6 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsCommunityNotifications.tsx");
 
 export default function UserSettingsCommunityNotifications() {
@@ -35,7 +39,7 @@ export default function UserSettingsCommunityNotifications() {
   let tmp5 = null;
   if (0 !== keys.length) {
     let obj3 = { children: closure_4(Stack, obj4) };
-    const Form = tmp2(8041).Form;
+    const Form = tmp2(8106).Form;
     obj4 = {
       spacing: 24,
       style: tmp.container,
@@ -50,10 +54,10 @@ export default function UserSettingsCommunityNotifications() {
             label: intl.string(intl3.t.u6dc5B),
             value: !stateFromStores[item].disableRaidAlertNag,
             onValueChange() {
-              const obj = stateFromStores(closure_2_2[11]);
+              const obj = stateFromStores(closure_2_2[12]);
               const result = obj.updateUserGuildSettings(closure_0, (disableRaidAlertNag) => {
                 disableRaidAlertNag.disableRaidAlertNag = !disableRaidAlertNag.disableRaidAlertNag;
-              }, stateFromStores(closure_2_2[11]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+              }, stateFromStores(closure_2_2[12]).UserSettingsDelay.INFREQUENT_USER_ACTION);
             }
           };
           const TableSwitchRow = TableSwitchRow3.TableSwitchRow;
@@ -63,10 +67,10 @@ export default function UserSettingsCommunityNotifications() {
             label: intl2.string(intl3.t.P8MG6q),
             value: !stateFromStores[item].disableRaidAlertPush,
             onValueChange() {
-              const obj = stateFromStores(closure_2_2[11]);
+              const obj = stateFromStores(closure_2_2[12]);
               const result = obj.updateUserGuildSettings(closure_0, (disableRaidAlertPush) => {
                 disableRaidAlertPush.disableRaidAlertPush = !disableRaidAlertPush.disableRaidAlertPush;
-              }, stateFromStores(closure_2_2[11]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+              }, stateFromStores(closure_2_2[12]).UserSettingsDelay.INFREQUENT_USER_ACTION);
             }
           };
           const TableSwitchRow2 = TableSwitchRow3.TableSwitchRow;
@@ -75,7 +79,7 @@ export default function UserSettingsCommunityNotifications() {
           return hasOwnProperty(TableRowGroup, obj, item);
         })
     };
-    Stack = tmp2(6274).Stack;
+    Stack = tmp2(6337).Stack;
     tmp5 = closure_4(Form, obj3);
   }
   return tmp5;

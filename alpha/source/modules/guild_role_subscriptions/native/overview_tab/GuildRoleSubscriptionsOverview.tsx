@@ -1,22 +1,22 @@
-// Module ID: 19181
-// Function ID: 19182
+// Module ID: 19373
+// Function ID: 19374
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 6737, 5290, 5114, 21, 5866, 19182, 1113, 9656, 17712, 19183, 563, 7203, 6944, 6206, 1099, 2]
+// Dependencies: [19, 6800, 5353, 5177, 21, 5929, 19374, 1113, 9723, 17832, 19375, 563, 7266, 7007, 6269, 1099, 2]
 // Exports: default
 
-// Module 19181 (GuildRoleSubscriptionsOverview)
+// Module 19373 (GuildRoleSubscriptionsOverview)
 import Fragment from "Fragment" /* 21 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9656 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17712 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 19182 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9723 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17832 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 19374 */;
 import react_mod from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5290 */;
-import GuildStore from "GuildStore" /* 5114 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5353 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 function serverNameHook(children) {

@@ -1,10 +1,10 @@
-// Module ID: 19127
-// Function ID: 19128
+// Module ID: 19319
+// Function ID: 19320
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 19, 16728, 10148, 2]
+// Dependencies: [5, 19, 16851, 10217, 2]
 // Exports: useICYMIReloadHandler
 
-// Module 19127 (useICYMIReloadHandler)
+// Module 19319 (useICYMIReloadHandler)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 11186
-// Function ID: 11187
+// Module ID: 11253
+// Function ID: 11254
 // Name: useStateFromSharedValue
-// Dependencies: [32, 19, 1259, 1705, 2]
+// Dependencies: [32, 19, 1263, 1708, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 11186 (useStateFromSharedValue)
-import _mod1705 from "module_1705" /* 1705 */;
+// Module 11253 (useStateFromSharedValue)
+import _mod1708 from "module_1708" /* 1708 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -88,7 +88,7 @@ export default function useStateFromSharedValue(arg0) {
         }
         useStateFromSharedValueTsx2.__workletHash = 7876346397934;
         useStateFromSharedValueTsx2.__initData = tmp3;
-        const obj = _mod1705;
+        const obj = _mod1708;
         obj.scheduleOnUI(useStateFromSharedValueTsx2, tmp.listenerId, activeIndex);
         map.delete(activeIndex);
       }
@@ -176,7 +176,7 @@ export function useDerivedStateFromSharedValue(activeIndex, set) {
         }
         useStateFromSharedValueTsx2.__workletHash = 7876346397934;
         useStateFromSharedValueTsx2.__initData = tmp3;
-        const obj = _mod1705;
+        const obj = _mod1708;
         obj.scheduleOnUI(useStateFromSharedValueTsx2, tmp.listenerId, activeIndex);
         map.delete(activeIndex);
       }

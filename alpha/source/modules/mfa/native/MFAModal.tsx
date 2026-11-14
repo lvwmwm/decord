@@ -1,17 +1,17 @@
-// Module ID: 18181
-// Function ID: 18182
+// Module ID: 18301
+// Function ID: 18302
 // Name: MFAModal
-// Dependencies: [5, 19, 17, 21, 7711, 6785, 1113, 18182, 7363, 7366, 7427, 18183, 18184, 18189, 18192, 18193, 18194, 7424, 6206, 2]
+// Dependencies: [5, 19, 17, 21, 7777, 6848, 1113, 18302, 7427, 7430, 7493, 18303, 18304, 18309, 18312, 18313, 18314, 7490, 6269, 2]
 // Exports: openMFAModal
 
-// Module 18181 (MFAModal)
+// Module 18301 (MFAModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import MFAUtils from "MFAUtils" /* 7711 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 18182 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import MFAUtils from "MFAUtils" /* 7777 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 18302 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -62,7 +62,7 @@ class MFAModal {
         yield "HermesInternal";
         data = tmp;
         ({ mfaType: c0, data: c1 } = closure_0);
-        return "flexDirection";
+        return "Path";
       })();
       iter.next();
       return iter;

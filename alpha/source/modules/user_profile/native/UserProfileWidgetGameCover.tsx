@@ -1,19 +1,19 @@
-// Module ID: 12061
-// Function ID: 12062
+// Module ID: 12111
+// Function ID: 12112
 // Name: UserProfileWidgetGameCover
-// Dependencies: [19, 17, 21, 5243, 575, 12059, 1113, 12062, 12063, 12060, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 12110, 1113, 12112, 12113, 12114, 2]
 
-// Module 12061 (UserProfileWidgetGameCover)
+// Module 12111 (UserProfileWidgetGameCover)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12059 */;
-import useWidgetGamePressDefault from "useWidgetGamePress" /* 12060 */;
-import GameCoverImageDefault from "GameCoverImage" /* 12062 */;
-import UserProfileWidgetRemoveGameButtonDefault from "UserProfileWidgetRemoveGameButton" /* 12063 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12110 */;
+import GameCoverImageDefault from "GameCoverImage" /* 12112 */;
+import UserProfileWidgetRemoveGameButtonDefault from "UserProfileWidgetRemoveGameButton" /* 12113 */;
+import useWidgetGamePressDefault from "useWidgetGamePress" /* 12114 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -21,6 +21,15 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+function InteractiveGameCover(userId) {
+  let tmp2;
+  userId = userId.userId;
+  const merged = Object.assign(userId, Object.assign({ userId: 0 }));
+  const obj = { onGamePress: tmp2 };
+  tmp2 = useWidgetGamePressDefault(userId, merged.game.gameId);
+  const merged1 = Object.assign(merged);
+  return metroRequire(c9, obj);
+}
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { removeGameButton: obj2 };
@@ -30,18 +39,21 @@ const memoResult = react.memo(function UserProfileWidgetGameCoverContent(game) {
   let coverWidth;
   let disableInteraction;
   let editableWidgetType;
-  let formatToPlainStringResult;
+  let intl;
   let obj3;
-  let obj5;
+  let obj4;
+  let obj6;
   let onGamePress;
   let onRemoveGame;
   let registerCoverRef;
+  let tmp14;
+  let tmp15;
   let tmp2Result;
   game = game.game;
-  ({ editableWidgetType, registerCoverRef } = game);
+  ({ coverWidth, editableWidgetType, registerCoverRef } = game);
   onGamePress = undefined;
-  ({ coverWidth, disableInteraction, onRemoveGame, onGamePress } = game);
-  let tmp = closure_8();
+  ({ disableInteraction, onRemoveGame, onGamePress } = game);
+  const tmp = closure_8();
   const tmp4 = useGameNameAndCoverImageDefault(game.gameId);
   const gameName = tmp4.gameName;
   let tmp5;
@@ -50,56 +62,61 @@ const memoResult = react.memo(function UserProfileWidgetGameCoverContent(game) {
   }
   onGamePress = tmp5;
   const items = [registerCoverRef, game.gameId];
-  const obj = {
-    ref: react.useCallback((arg0) => {
-      let tmpResult;
-      if (registerCoverRef != null) {
-        tmpResult = tmp(game.gameId, arg0);
-      }
-      return tmpResult;
-    }, items),
-    onPress() {
-      let tmp;
-      if (onGamePress != null) {
-        tmp = onGamePress();
-      }
-      return tmp;
-    },
-    disabled: null == tmp5,
-    accessibilityRole: "button",
-    accessibilityLabel: formatToPlainStringResult,
-    children: metroRequire(tmp2Result, obj3)
-  };
-  formatToPlainStringResult = gameName;
-  const tmp6 = metroImportDefault;
-  const tmp9 = React3;
+  const callback = react.useCallback((arg0) => {
+    let tmpResult;
+    if (registerCoverRef != null) {
+      tmpResult = tmp(game.gameId, arg0);
+    }
+    return tmpResult;
+  }, items);
+  const tmp7 = metroImportDefault;
   if (null != tmp5) {
-    const intl = intl2.intl;
-    const obj2 = { gameName };
-    formatToPlainStringResult = intl.formatToPlainString(intl2.t["8QLQB+"], obj2);
+    const obj2 = {
+      ref: callback,
+      onPress() {
+          return onGamePress();
+        },
+      accessibilityRole: "button",
+      accessibilityLabel: intl.formatToPlainString(intl2.t["8QLQB+"], obj3),
+      children: metroRequire(tmp2Result, obj4)
+    };
+    intl = intl2.intl;
+    obj3 = { gameName };
+    obj4 = { width: coverWidth, accessible: false };
+    tmp2Result = GameCoverImageDefault;
+    const merged = Object.assign(tmp4);
+    tmp14 = metroRequire(React3, obj2);
+    tmp15 = metroRequire;
+  } else {
+    const obj = { ref: callback, width: coverWidth };
+    const tmp2Result2 = GameCoverImageDefault;
+    const merged1 = Object.assign(tmp4);
+    tmp14 = metroRequire(tmp2Result2, obj);
+    tmp15 = metroRequire;
   }
-  obj3 = { width: coverWidth };
-  tmp2Result = GameCoverImageDefault;
-  const merged = Object.assign(tmp4);
-  const children = [metroRequire(tmp9, obj), ];
-  let tmp8Result = null != editableWidgetType;
-  if (tmp8Result) {
-    const obj4 = { style: tmp.removeGameButton, children: metroRequire(UserProfileWidgetRemoveGameButtonDefault, obj5) };
-    obj5 = { widgetType: editableWidgetType, gameId: game.gameId, gameName, onRemove: onRemoveGame };
-    tmp8Result = tmp8(tmp7, obj4);
+  const children = [tmp14, ];
+  let tmp15Result = null != editableWidgetType;
+  if (tmp15Result) {
+    const obj5 = { style: tmp.removeGameButton, children: tmp15(UserProfileWidgetRemoveGameButtonDefault, obj6) };
+    obj6 = { widgetType: editableWidgetType, gameId: game.gameId, gameName, onRemove: onRemoveGame };
+    tmp15Result = tmp15(tmp8, obj5);
   }
-  children[1] = tmp8Result;
-  return tmp6(hasOwnProperty, { children });
+  children[1] = tmp15Result;
+  return tmp7(hasOwnProperty, { children });
 });
 let c9 = memoResult;
-const memoResult1 = react.memo(function UserProfileWidgetGameCover(userId) {
-  let tmp2;
-  userId = userId.userId;
-  const merged = Object.assign(userId, Object.assign({ userId: 0 }));
-  const obj = { onGamePress: tmp2 };
-  tmp2 = useWidgetGamePressDefault(userId, merged.game.gameId);
-  const merged1 = Object.assign(merged);
-  return metroRequire(c9, obj);
+const memoResult1 = react.memo(function UserProfileWidgetGameCover(disableInteraction) {
+  let tmpResult;
+  if (disableInteraction.disableInteraction) {
+    const obj2 = {};
+    const merged = Object.assign(disableInteraction);
+    tmpResult = tmp(c9, obj2);
+  } else {
+    const obj = {};
+    const merged1 = Object.assign(disableInteraction);
+    tmpResult = tmp(InteractiveGameCover, obj);
+  }
+  return tmpResult;
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetGameCover.tsx");
 

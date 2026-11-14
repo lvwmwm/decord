@@ -1,18 +1,18 @@
-// Module ID: 14720
-// Function ID: 14721
+// Module ID: 14833
+// Function ID: 14834
 // Name: MultiAccountActionCreators
-// Dependencies: [5, 502, 5146, 14716, 1072, 3, 1098, 572, 1282, 1252, 6781, 2]
+// Dependencies: [5, 502, 5209, 14829, 1072, 3, 1098, 572, 1285, 1256, 6844, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 14720 (MultiAccountActionCreators)
+// Module 14833 (MultiAccountActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TokenManagerAll from "TokenManager" /* 1098 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import MultiAccountStore from "MultiAccountStore" /* 14716 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import MultiAccountStore from "MultiAccountStore" /* 14829 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -138,7 +138,7 @@ export function validateMultiAccountTokens() {
     closure_3 = tmp;
     closure_2 = tmp4;
     id = closure_0.id;
-    return "flexDirection";
+    return "Path";
   });
   const item = forEach(function() {
     return closure_0(...arguments);
@@ -167,7 +167,7 @@ export function switchAccount(id, switchSynchronously, CHOOSE_ACCOUNT) {
       tmp4 = null;
     }
     dispatch(obj5);
-    const tmp5Result = tmp5(6781);
+    const tmp5Result = tmp5(6844);
     resolved = tmp5Result.switchAccountToken(token, switchSynchronously);
   }
   return resolved;

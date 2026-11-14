@@ -1,17 +1,17 @@
-// Module ID: 19084
-// Function ID: 19085
+// Module ID: 19276
+// Function ID: 19277
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 5243, 19085, 5866, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 19277, 5929, 1113, 2]
 // Exports: ForYouEmptyState
 
-// Module 19084 (ForYouEmptyState)
+// Module 19276 (ForYouEmptyState)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import MailboxSpotIllustration from "MailboxSpotIllustration" /* 19085 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import MailboxSpotIllustration from "MailboxSpotIllustration" /* 19277 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;

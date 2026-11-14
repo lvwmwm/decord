@@ -1,11 +1,11 @@
-// Module ID: 7556
-// Function ID: 7557
+// Module ID: 7622
+// Function ID: 7623
 // Name: ErrorText
-// Dependencies: [19, 21, 5418, 5250, 6274, 7557, 5866, 2]
+// Dependencies: [19, 21, 5481, 5313, 6337, 7623, 5929, 2]
 // Exports: ErrorText
 
-// Module 7556 (ErrorText)
-import shared from "shared" /* 5250 */;
+// Module 7622 (ErrorText)
+import shared from "shared" /* 5313 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ export function ErrorText(children) {
   children = children.children;
   let nodeText;
   const style = children.style;
-  const obj = nodeText(5418);
+  const obj = nodeText(5481);
   nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = react.useEffect(() => {
@@ -31,7 +31,7 @@ export function ErrorText(children) {
     }
   }, items);
   const obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", style, children: items1 };
-  const Stack = nodeText(6274).Stack;
-  items1 = [closure_3(nodeText(7557).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(5866).Text, { variant: "body-xs/medium", color: "text-feedback-critical", children })];
+  const Stack = nodeText(6337).Stack;
+  items1 = [closure_3(nodeText(7623).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(5929).Text, { variant: "body-xs/medium", color: "text-feedback-critical", children })];
   return closure_4(Stack, obj2);
 }

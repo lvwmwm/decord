@@ -1,30 +1,30 @@
-// Module ID: 11726
-// Function ID: 11727
+// Module ID: 11792
+// Function ID: 11793
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5244, 7007, 7184, 1072, 21, 5243, 575, 1652, 5876, 5485, 5491, 1493, 504, 8494, 7181, 5866, 5873, 1113, 5957, 5830, 7351, 7434, 7483, 9448, 7196, 7853, 11727, 7871, 1252, 5836, 11663, 3949, 10317, 5309, 2]
+// Dependencies: [32, 717, 19, 17, 5307, 7070, 7247, 1072, 21, 5306, 575, 1655, 5939, 5548, 5554, 1496, 504, 8560, 7244, 5929, 5936, 1113, 6020, 5893, 7415, 7500, 7549, 9515, 7259, 7919, 11793, 7937, 1256, 5899, 11729, 4031, 10386, 5372, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 11726 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 11792 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef3949 from "module_3949" /* 3949 */;
-import UserUtilsDefault from "UserUtils" /* 5309 */;
-import HapticUtils from "HapticUtils" /* 5491 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7181 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7184 */;
-import XSmallIcon from "XSmallIcon" /* 7483 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11663 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import _modDef4031 from "module_4031" /* 4031 */;
+import UserUtilsDefault from "UserUtils" /* 5372 */;
+import HapticUtils from "HapticUtils" /* 5554 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7244 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7247 */;
+import XSmallIcon from "XSmallIcon" /* 7549 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11729 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import SKUStore from "SKUStore" /* 7007 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import SKUStore from "SKUStore" /* 7070 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -389,7 +389,7 @@ function PurchaseSuccessModalBase(sku) {
   items22[2] = closure_15(SafeAreaPaddingView, rect);
   const obj20 = { style: items28, pointerEvents: "none" };
   items28 = [tmp.curtain, animatedStyle3];
-  items22[3] = closure_14(require("module_1652").View, obj20);
+  items22[3] = closure_14(require("module_1655").View, obj20);
   return closure_15(closure_7, obj10);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -608,7 +608,7 @@ export function SocialLayerStorefrontProductSelfPurchaseSuccessModal(skuId) {
         formatToPlainString2Result = formatToPlainString(prop, obj3);
       } else {
         let str;
-        const eNNnIG = _modDef3949.eNNnIG;
+        const eNNnIG = _modDef4031.eNNnIG;
         if (getOrFetchApplication != null) {
           str = getOrFetchApplication.name;
         }

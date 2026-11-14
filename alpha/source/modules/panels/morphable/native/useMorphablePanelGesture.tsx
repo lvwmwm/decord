@@ -1,14 +1,14 @@
-// Module ID: 19720
-// Function ID: 19721
+// Module ID: 19930
+// Function ID: 19931
 // Name: useMorphablePanelGesture
-// Dependencies: [19, 11920, 1493, 1627, 1652, 5535, 11923, 19718, 1705, 19721, 5491, 2]
+// Dependencies: [19, 11986, 1496, 1630, 1655, 5598, 11989, 19928, 1708, 19931, 5554, 2]
 // Exports: default
 
-// Module 19720 (useMorphablePanelGesture)
-import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11923 */;
+// Module 19930 (useMorphablePanelGesture)
+import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
 import react from "react" /* 19 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11920 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -21,10 +21,10 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let tmp7;
-const _mod1705 = tmp(1705);
-const HapticUtils = tmp(5491);
-const MorphablePanelUtils = tmp(19718);
-const triggerIOSHapticDefault = tmp7(19721);
+const _mod1708 = tmp(1708);
+const HapticUtils = tmp(5554);
+const MorphablePanelUtils = tmp(19928);
+const triggerIOSHapticDefault = tmp7(19931);
 ({ IS_IOS: closure_4, MIN_PAN_GESTURE_MOVE: hasOwnProperty, MorphablePanelModes } = MorphablePanelConstants);
 ({ PANEL_TAP_GESTURE_MAX_DISTANCE: metroImportDefault, PIP_POP_HEIGHT: metroImportAll, POP_RESISTANCE: c9 } = MorphablePanelConstants);
 let closure_10 = { code: "(function useMorphablePanelGestureTsx1(){let[onTapGestureStart]=this.__closure;var _onTapGestureStart;(_onTapGestureStart=onTapGestureStart)===null||_onTapGestureStart===void 0||_onTapGestureStart();})" };
@@ -171,7 +171,7 @@ export default function useMorphablePanelGesture(mode) {
     items4[5] = mode;
     items4[6] = MorphablePanelModes;
     items4[7] = hasOwnProperty;
-    items4[8] = _mod1705.scheduleOnRN;
+    items4[8] = _mod1708.scheduleOnRN;
     items4[9] = triggerIOSHapticDefault;
     items4[10] = updateSharedValueIfChangedDefault;
     items4[11] = tmp8;
@@ -225,7 +225,7 @@ export default function useMorphablePanelGesture(mode) {
     const items6 = [closure_13, tmp20, tmp21, tmp11, tmp9, React4, metroImportAll, , , , , ];
     const onChange = onTouchesMove(useMorphablePanelGestureTsx3).onChange;
     onTouchesMove(useMorphablePanelGestureTsx3);
-    items6[7] = _mod1705.scheduleOnRN;
+    items6[7] = _mod1708.scheduleOnRN;
     items6[8] = HapticUtils.triggerHapticFeedback;
     items6[9] = HapticUtils.HapticFeedbackTypes;
     items6[10] = updateSharedValueIfChangedDefault;

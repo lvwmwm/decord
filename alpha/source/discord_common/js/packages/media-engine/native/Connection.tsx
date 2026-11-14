@@ -1,22 +1,22 @@
-// Module ID: 6045
-// Function ID: 6046
+// Module ID: 6108
+// Function ID: 6109
 // Name: Connection
-// Dependencies: [32, 5, 6012, 6035, 6046, 2132, 4, 6050, 6094, 6095, 6096, 6044, 6098, 6047, 6099, 6051, 6100, 6103, 2]
+// Dependencies: [32, 5, 6075, 6098, 6109, 2135, 4, 6113, 6157, 6158, 6159, 6107, 6161, 6110, 6162, 6114, 6163, 6166, 2]
 
-// Module 6045 (Connection)
-import inject from "inject" /* 2132 */;
-import VideoQualityManager from "VideoQualityManager" /* 6047 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 6050 */;
-import cloneDeepDefault from "cloneDeep" /* 6051 */;
-import VideoCodecUtils from "VideoCodecUtils" /* 6094 */;
-import isEqualDefault from "isEqual" /* 6098 */;
-import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 6099 */;
-import reduceDefault from "reduce" /* 6100 */;
+// Module 6108 (Connection)
+import inject from "inject" /* 2135 */;
+import VideoQualityManager from "VideoQualityManager" /* 6110 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 6113 */;
+import cloneDeepDefault from "cloneDeep" /* 6114 */;
+import VideoCodecUtils from "VideoCodecUtils" /* 6157 */;
+import isEqualDefault from "isEqual" /* 6161 */;
+import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 6162 */;
+import reduceDefault from "reduce" /* 6163 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 6012 */;
-import Constants_mod2 from "Constants" /* 6035 */;
-import BaseConnection from "BaseConnection" /* 6046 */;
+import Constants_mod from "Constants" /* 6075 */;
+import Constants_mod2 from "Constants" /* 6098 */;
+import BaseConnection from "BaseConnection" /* 6109 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -78,11 +78,11 @@ class Connection extends BaseConnection {
     let obj2 = require("inject");
     let DISABLED = obj2.getVoiceEngine().DegradationPreference.MAINTAIN_FRAMERATE_AND_RESOLUTION;
     if (DISABLED == null) {
-      const tmp11Result = tmp11(2132);
+      const tmp11Result = tmp11(2135);
       DISABLED = tmp11Result.getVoiceEngine().DegradationPreference.DISABLED;
     }
     tmp8.sourceDesktopDegradationPreference = DISABLED;
-    const tmp11Result2 = tmp11(2132);
+    const tmp11Result2 = tmp11(2135);
     tmp8.videoDegradationPreference = tmp11Result2.getVoiceEngine().DegradationPreference.BALANCED;
     tmp8.localPans = {};
     tmp8.remoteAudioSSRCs = {};
@@ -151,7 +151,7 @@ class Connection extends BaseConnection {
           tmp11 = false === obj.soundshareSentSpeakingEvent;
         }
         if (tmp11) {
-          closure_0.emit(tmp3(6050).BaseConnectionEvent.SoundshareSpeaking);
+          closure_0.emit(tmp3(6113).BaseConnectionEvent.SoundshareSpeaking);
           closure_0.soundshareSentSpeakingEvent = true;
         }
       }
@@ -404,7 +404,7 @@ class Connection extends BaseConnection {
               if (diff1 >= 0) {
                 let num = 1;
                 let num2 = 100;
-                const tmp6 = tmp24(6103)(diff1 / (diff + diff1), 0, 1);
+                const tmp6 = tmp24(6166)(diff1 / (diff + diff1), 0, 1);
                 closure_0.emit(discord_common_BaseConnectionEvent.BaseConnectionEvent.OutboundLossRate, 100 * tmp6);
               }
             }
@@ -546,7 +546,7 @@ class Connection extends BaseConnection {
     let items = [obj, ...this.videoStreamParameters];
     address.streamParameters = items;
     address.context = this.context;
-    let obj2 = createVoiceConnection(2132);
+    let obj2 = createVoiceConnection(2135);
     const voiceEngine = obj2.getVoiceEngine();
     if (null != voiceEngine.createOwnStreamConnectionWithOptions) {
       if (self.context === tmp3.STREAM) {
@@ -1712,7 +1712,7 @@ class Connection extends BaseConnection {
           FIXED = constants7.FIXED;
         }
         const emit = self.emit;
-        const Video = tmp8(6050).BaseConnectionEvent.Video;
+        const Video = tmp8(6113).BaseConnectionEvent.Video;
         ({ userId, audioSSRC } = self);
         const ssrc = self.videoStreamParameters[num5].ssrc;
         const ssrc2 = self.videoStreamParameters[num5].ssrc;
@@ -2076,7 +2076,7 @@ class Connection extends BaseConnection {
         tmp7.params["hardware-h264"] = "1";
         let experimentFlags5 = self.experimentFlags;
         if (experimentFlags5.has(tmp8.USE_LIBOPENH264_DECODER)) {
-          let tmp25Result = tmp25(2132);
+          let tmp25Result = tmp25(2135);
           let openH264LibraryPath = tmp25Result.getOpenH264LibraryPath();
           if (null != openH264LibraryPath) {
             tmp7.params.libopenh264 = "1";

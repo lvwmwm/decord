@@ -1,11 +1,11 @@
-// Module ID: 5133
-// Function ID: 5134
+// Module ID: 5196
+// Function ID: 5197
 // Name: GuildDao
-// Dependencies: [5126, 5128, 2]
+// Dependencies: [5189, 5191, 2]
 
-// Module 5133 (GuildDao)
-import Table from "Table" /* 5126 */;
-import TableId from "TableId" /* 5128 */;
+// Module 5196 (GuildDao)
+import Table from "Table" /* 5189 */;
+import TableId from "TableId" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 class GuildDao {

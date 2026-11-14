@@ -1,9 +1,9 @@
-// Module ID: 5504
-// Function ID: 5505
+// Module ID: 5567
+// Function ID: 5568
 // Name: ActionSheetConstants
 // Dependencies: [2]
 
-// Module 5504 (ActionSheetConstants)
+// Module 5567 (ActionSheetConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/action_sheet/native/ActionSheetConstants.tsx");

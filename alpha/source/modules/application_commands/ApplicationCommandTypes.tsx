@@ -1,9 +1,9 @@
-// Module ID: 5922
-// Function ID: 5923
+// Module ID: 5985
+// Function ID: 5986
 // Name: ApplicationCommandTypes
 // Dependencies: [2]
 
-// Module 5922 (ApplicationCommandTypes)
+// Module 5985 (ApplicationCommandTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandTypes.tsx");

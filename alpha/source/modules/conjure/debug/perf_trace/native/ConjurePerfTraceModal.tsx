@@ -1,24 +1,24 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 14003
+// Function ID: 14004
 // Name: ConjurePerfTraceModal
-// Dependencies: [19, 17, 7302, 21, 5243, 575, 13899, 7897, 10491, 5866, 8095, 13900, 13902, 1627, 13903, 7323, 5873, 504, 7427, 6785, 12428, 2]
+// Dependencies: [19, 17, 7366, 21, 5306, 575, 14004, 7963, 10560, 5929, 8160, 14005, 14007, 1630, 14008, 7387, 5936, 504, 7493, 6848, 12523, 2]
 // Exports: default
 
-// Module 13898 (ConjurePerfTraceModal)
+// Module 14003 (ConjurePerfTraceModal)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7897 */;
-import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 13899 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13900 */;
-import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 13902 */;
-import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 13903 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7963 */;
+import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 14004 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 14005 */;
+import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 14007 */;
+import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 14008 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 7302 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 7366 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -76,12 +76,12 @@ function WaterfallRow(node) {
   const detail = tmp;
   let tmp2 = node;
   let tmp3 = dependencyMap;
-  let obj = node(13899);
+  let obj = node(14004);
   const perfCategoryColors = obj.usePerfCategoryColors();
   if (collapsed) {
-    ChevronSmallDownIcon = tmp2(7897).ChevronSmallRightIcon;
+    ChevronSmallDownIcon = tmp2(7963).ChevronSmallRightIcon;
   } else {
-    ChevronSmallDownIcon = tmp2(10491).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp2(10560).ChevronSmallDownIcon;
   }
   if (node.failed) {
     running = tmp.failed;
@@ -144,35 +144,35 @@ function WaterfallRow(node) {
   let tmp14Result = null;
   if (node.descendants > 0) {
     const obj9 = { variant: "body-xs/normal", color: "text-muted", children: node.descendants };
-    tmp14Result = tmp14(tmp2(5866).Text, obj9);
+    tmp14Result = tmp14(tmp2(5929).Text, obj9);
   }
   items2[1] = tmp14Result;
   const obj10 = { style: items3 };
   items3 = [tmp.swatch, perfCategoryColors[node.category]];
   items2[2] = tmp14(closure_6, obj10);
   const obj11 = { variant: "body-xs/semibold", color: "text-strong", children: node.service };
-  items2[3] = tmp14(tmp2(5866).Text, obj11);
+  items2[3] = tmp14(tmp2(5929).Text, obj11);
   const obj12 = { variant: "body-xs/normal", color: "text-default", style: tmp.operation, lineClamp: 1, children: node.operation };
-  items2[4] = tmp14(tmp2(5866).Text, obj12);
+  items2[4] = tmp14(tmp2(5929).Text, obj12);
   let tmp14Result4 = null;
   if (node.count > 1) {
     const obj13 = { style: tmp.badge, children: tmp14(Text, obj14) };
     const _HermesInternal = HermesInternal;
     obj14 = { variant: "footnote/semibold", color: "text-default", children: "\u00D7" + node.count };
-    Text = tmp2(5866).Text;
+    Text = tmp2(5929).Text;
     tmp14Result4 = tmp14(tmp10, obj13);
   }
   items2[5] = tmp14Result4;
   let tmp14Result5 = null;
   if (node.failed) {
     const obj15 = { size: "xs", color: selected(575).colors.STATUS_DANGER };
-    const WarningIcon = tmp2(8095).WarningIcon;
+    const WarningIcon = tmp2(8160).WarningIcon;
     tmp14Result5 = tmp14(WarningIcon, obj15);
   }
   items2[6] = tmp14Result5;
   const obj16 = { variant: "body-xs/normal", color: "text-muted", children: tmp2Result.perfNodeDuration(node) };
-  const Text2 = tmp2(5866).Text;
-  tmp2Result = tmp2(13900);
+  const Text2 = tmp2(5929).Text;
+  tmp2Result = tmp2(14005);
   items2[7] = tmp14(Text2, obj16);
   items4 = [tmp6(closure_6, obj4), , ];
   const obj17 = { style: tmp.track, children: tmp14(closure_6, obj18) };
@@ -232,7 +232,7 @@ function WaterfallRow(node) {
     items6 = [tmp.detail, ];
     items6[1] = { paddingLeft: node.depth * selected(575).space.PX_12 };
     const obj21 = { paddingLeft: node.depth * selected(575).space.PX_12 };
-    const tmp2Result2 = tmp2(13900);
+    const tmp2Result2 = tmp2(14005);
     perfNodeSectionsResult = tmp2Result2.perfNodeSections(node);
     tmp14Result6 = tmp14(tmp10, obj20);
   }
@@ -338,14 +338,14 @@ function Waterfall(trace) {
   if (null != trace.started_by) {
     const _HermesInternal = HermesInternal;
     const obj9 = { variant: "body-sm/normal", color: "text-muted", children: "Started by " + trace.started_by.trace_name };
-    const Text3 = tmp4(5866).Text;
+    const Text3 = tmp4(5929).Text;
     tmp8Result = tmp8(Text3, obj9);
   }
   items1[2] = tmp8Result;
   let tmp8Result2 = null;
   if (0 !== trace.dropped) {
     const obj10 = { variant: "body-sm/normal", color: "text-feedback-warning", children: "" + tmp4Result.formatSpanCount(trace.dropped) + " not recorded" };
-    const Text4 = tmp4(5866).Text;
+    const Text4 = tmp4(5929).Text;
     const _HermesInternal2 = HermesInternal;
     tmp4Result = require("ConjurePerfTraceFormat");
     tmp8Result2 = tmp8(Text4, obj10);
@@ -392,7 +392,7 @@ function PerfTraceScreen(projectId) {
   const stateFromStores = obj.useStateFromStores(items, () => ConjureDebugStore.getTimingTrace(projectId, traceId), items1);
   const tmp = projectId;
   if (null == stateFromStores) {
-    tmp6 = closure_8(tmp(5866).Text, { variant: "body-sm/normal", color: "text-muted", children: "This trace is no longer available." });
+    tmp6 = closure_8(tmp(5929).Text, { variant: "body-sm/normal", color: "text-muted", children: "This trace is no longer available." });
   } else {
     const obj2 = { trace: stateFromStores };
     tmp6 = closure_8(Waterfall, obj2);

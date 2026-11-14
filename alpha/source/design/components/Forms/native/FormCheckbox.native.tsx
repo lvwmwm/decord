@@ -1,23 +1,23 @@
-// Module ID: 7668
-// Function ID: 7669
+// Module ID: 7734
+// Function ID: 7735
 // Name: FormCheckbox
-// Dependencies: [19, 21, 5243, 575, 1652, 5875, 5257, 7669, 5876, 5877, 2]
+// Dependencies: [19, 21, 5306, 575, 1655, 5938, 5320, 7735, 5939, 5940, 2]
 // Exports: FormCheckbox
 
-// Module 7668 (FormCheckbox)
+// Module 7734 (FormCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import react2 from "react" /* 5257 */;
-import IconDefault from "Icon" /* 5875 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import springPresets from "springPresets" /* 5877 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7669 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import react2 from "react" /* 5320 */;
+import IconDefault from "Icon" /* 5938 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import springPresets from "springPresets" /* 5940 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7735 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const module_1652 = _mod1652;
+const module_1655 = _mod1655;
 let backgroundColor, borderColor, num, num2, num3, obj1, tmp2;
 
 let obj2;
@@ -31,7 +31,7 @@ obj2 = { backgroundColor: nativeDefault.colors.CHECKBOX_BACKGROUND_DEFAULT, bord
 ({ borderColor: nativeDefault.colors.CHECKBOX_BORDER_SELECTED_DEFAULT, backgroundColor: nativeDefault.colors.CHECKBOX_BACKGROUND_SELECTED_DEFAULT });
 ({ tintColor: nativeDefault.colors.CHECKBOX_ICON_ACTIVE });
 let closure_5 = createStyles(obj);
-const Icon = module_1652.createAnimatedComponent(IconDefault);
+const Icon = module_1655.createAnimatedComponent(IconDefault);
 let closure_7 = { code: "(function FormCheckboxNativeTsx1(){let[withSpring,checked,selected,unselected,SUBTLE_SPRING]=this.__closure;const defaultAnimation={borderColor:withSpring(checked?selected.borderColor:unselected.borderColor,SUBTLE_SPRING,'animate-always'),backgroundColor:withSpring(checked?selected.backgroundColor:unselected.backgroundColor,SUBTLE_SPRING,'animate-always')};return defaultAnimation;})" };
 let closure_8 = { code: "(function FormCheckboxNativeTsx2(){let[useReducedMotion,withSpring,checked,SUBTLE_SPRING]=this.__closure;const uncheckedScale=useReducedMotion?1:0.5;return{opacity:withSpring(checked?1:0,SUBTLE_SPRING,'animate-always'),transform:[{scale:withSpring(checked?1:uncheckedScale,SUBTLE_SPRING)}]};})" };
 size = size_mod;
@@ -58,7 +58,7 @@ export function FormCheckbox(checked) {
   const enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
   ({ selected, unselected } = closure_5());
   const tmp4 = closure_5();
-  let tmp5 = _mod1652;
+  let tmp5 = _mod1655;
   let items = [closure_7, , , , , ];
   const useAnimatedStyle = tmp5.useAnimatedStyle;
   items[1] = spring_spring.withSpring;
@@ -102,8 +102,8 @@ export function FormCheckbox(checked) {
   FormCheckboxNativeTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(FormCheckboxNativeTsx1);
   const items2 = [closure_8, enabled, , , ];
-  const useAnimatedStyle2 = tmp2(1652).useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle2 = tmp2(1655).useAnimatedStyle;
+  _mod1655;
   items2[2] = spring_spring.withSpring;
   items2[3] = checked;
   items2[4] = springPresets.SUBTLE_SPRING;
@@ -144,7 +144,7 @@ export function FormCheckbox(checked) {
   const animatedStyle2 = useAnimatedStyle2(FormCheckboxNativeTsx2);
   const items4 = [tmp.checkbox, animatedStyle];
   const obj2 = { source: AssetRegistryDefault, size: IconDefault.Sizes.SMALL_20, style: items5 };
-  const View = module_1652.View;
+  const View = module_1655.View;
   items5 = [tmp.checkmark, animatedStyle2];
   return <View style={items4}>{null}</View>;
 }

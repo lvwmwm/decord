@@ -1,13 +1,13 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11413
+// Function ID: 11414
 // Name: ApplicationCommandFrecencyHooks
-// Dependencies: [19, 11341, 1082, 5073, 504, 2]
+// Dependencies: [19, 11408, 1082, 5136, 504, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 11346 (ApplicationCommandFrecencyHooks)
+// Module 11413 (ApplicationCommandFrecencyHooks)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import react from "react" /* 19 */;
-import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 11341 */;
+import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 11408 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

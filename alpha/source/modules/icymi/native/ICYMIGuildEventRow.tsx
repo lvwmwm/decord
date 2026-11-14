@@ -1,23 +1,23 @@
-// Module ID: 19154
-// Function ID: 19155
+// Module ID: 19346
+// Function ID: 19347
 // Name: ICYMIGuildEventRow
-// Dependencies: [19, 17, 6966, 5092, 5114, 21, 19092, 575, 7914, 1113, 7906, 5891, 7909, 8351, 10148, 7899, 7168, 7902, 19133, 11, 5866, 8356, 7372, 1187, 504, 2]
+// Dependencies: [19, 17, 7029, 5155, 5177, 21, 19284, 575, 7980, 1113, 7972, 5954, 7975, 8417, 10217, 7965, 7231, 7968, 19325, 11, 5929, 8422, 7436, 1187, 504, 2]
 // Exports: default
 
-// Module 19154 (ICYMIGuildEventRow)
+// Module 19346 (ICYMIGuildEventRow)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import transitionToGuild from "transitionToGuild" /* 7168 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 7899 */;
-import ScheduleUtils from "ScheduleUtils" /* 7906 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10148 */;
+import transitionToGuild from "transitionToGuild" /* 7231 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 7965 */;
+import ScheduleUtils from "ScheduleUtils" /* 7972 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10217 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6966 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildStore from "GuildStore" /* 5114 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7029 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19092 */;
+import createICYMIStyles from "createICYMIStyles" /* 19284 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -52,7 +52,7 @@ function ICYMIGuildEventRow(event) {
   ({ channel, guild } = event);
   react = undefined;
   const tmp = closure_13();
-  const tmp4 = guild(7914)(event, null);
+  const tmp4 = guild(7980)(event, null);
   const tmp5 = closure_7(event);
   dependencyMap = tmp5;
   let toISOStringResult;
@@ -75,14 +75,14 @@ function ICYMIGuildEventRow(event) {
     }
     return eventTimeData;
   }, items).startDateTimeString;
-  const tmp7 = guild(5891)(channel);
-  let obj = event(7909);
+  const tmp7 = guild(5954)(channel);
+  let obj = event(7975);
   const locationFromEvent = obj.getLocationFromEvent(event);
-  let obj2 = event(8351);
+  let obj2 = event(8417);
   const eventLocationIconSource = obj2.getEventLocationIconSource(event, channel, true);
-  let obj3 = event(8351);
+  let obj3 = event(8417);
   const eventLocationIconComponent = obj3.getEventLocationIconComponent(event, channel, true);
-  let obj4 = event(7906);
+  let obj4 = event(7972);
   const items1 = [event];
   const nextRecurrenceIdInEvent = obj4.getNextRecurrenceIdInEvent(event);
   const items2 = [guild.id, event.id];
@@ -107,7 +107,7 @@ function ICYMIGuildEventRow(event) {
   }, items2);
   let title = null != event.description && event.description.length > 0;
   let guild_id;
-  const tmp2Result = guild(7902);
+  const tmp2Result = guild(7968);
   if (event != null) {
     guild_id = event.guild_id;
   }
@@ -117,7 +117,7 @@ function ICYMIGuildEventRow(event) {
   }
   let obj5 = { actionLabel: intl.string(event(1113).t["6pFsLQ"]), id: event.id, interactionType: "guild_event", channelId: id1, guildId: guild.id, timestamp: tmp2Result4.extractTimestamp(event.id), onHeaderPress: callback1, onHeaderLongPress: callback1, children: closure_12(tmp23, obj6) };
   const tmp2ResultResult = tmp2Result(guild_id, id, nextRecurrenceIdInEvent);
-  const tmp2Result3 = guild(19133);
+  const tmp2Result3 = guild(19325);
   intl = tmp8(1113).intl;
   id1 = undefined;
   if (channel != null) {
@@ -127,13 +127,13 @@ function ICYMIGuildEventRow(event) {
   tmp2Result4 = guild(11);
   const obj7 = { style: tmp.timeAndUserPillContainer, children: closure_11(Text, { variant: "body-sm/semibold", color: str, children: startDateTimeString }) };
   str = "text-brand";
-  Text = tmp8(5866).Text;
+  Text = tmp8(5929).Text;
   tmp23 = closure_4;
   if (tmp5) {
     str = "status-positive";
   }
   items3 = [closure_11(closure_5, obj7), , , , ];
-  const Text2 = tmp8(5866).Text;
+  const Text2 = tmp8(5929).Text;
   if (title) {
     title = tmp.title;
   }
@@ -142,9 +142,9 @@ function ICYMIGuildEventRow(event) {
   let tmp19Result = null != event.description && event.description.length > 0;
   if (tmp19Result) {
     const obj9 = { variant: "body-md/normal", color: "text-subtle", lineClamp: 5, children: tmp8Result.guildEventDetailsParser(event.description, true, obj10) };
-    const Text3 = tmp8(5866).Text;
+    const Text3 = tmp8(5929).Text;
     obj10 = { guildId: guild.id };
-    tmp8Result = event(8356);
+    tmp8Result = event(8422);
     tmp19Result = tmp19(Text3, obj9);
   }
   items3[2] = tmp19Result;
@@ -154,9 +154,9 @@ function ICYMIGuildEventRow(event) {
   items4 = [, ];
   const obj12 = { style: tmp.infoContainer, children: items5 };
   const obj14 = { size: "xs", style: tmp.eventsChannelIcon };
-  items4[0] = closure_11(event(7372).GroupIcon, obj14);
+  items4[0] = closure_11(event(7436).GroupIcon, obj14);
   const obj15 = { lineClamp: 1, variant: "body-xs/normal", color: "text-muted", children: intl2.format(event(1113).t["+DLsD8"], { count: tmp2ResultResult }) };
-  const Text4 = tmp8(5866).Text;
+  const Text4 = tmp8(5929).Text;
   intl2 = tmp8(1113).intl;
   items4[1] = closure_11(Text4, obj15);
   items5 = [closure_12(closure_5, obj13), ];
@@ -174,11 +174,11 @@ function ICYMIGuildEventRow(event) {
   }
   items6 = [tmp19Result2, ];
   let tmp27 = tmp7;
-  const Text5 = tmp8(5866).Text;
+  const Text5 = tmp8(5929).Text;
   if (tmp7 == null) {
     let result = null;
     if (null != locationFromEvent) {
-      const tmp8Result2 = event(8356);
+      const tmp8Result2 = event(8422);
       result = tmp8Result2.guildEventLocationParser(locationFromEvent, true);
     }
     tmp27 = result;

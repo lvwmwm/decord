@@ -1,19 +1,19 @@
-// Module ID: 17229
-// Function ID: 17230
+// Module ID: 17352
+// Function ID: 17353
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 6847, 21, 8576, 17089, 5949, 2185, 8124, 6770, 575, 8094, 1113, 5866, 2]
+// Dependencies: [19, 17, 6910, 21, 8643, 17212, 6012, 2188, 8190, 6833, 575, 8159, 1113, 5929, 2]
 // Exports: default
 
-// Module 17229 (AgeConfirmationNotice)
+// Module 17352 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import LinkingDefault from "Linking" /* 5949 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 17089 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import LinkingDefault from "Linking" /* 6012 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 17212 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 6847 */;
+import Constants from "Constants" /* 6910 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -32,7 +32,7 @@ export default function AgeConfirmationNotice() {
   let obj6;
   let onPress;
   let sensitiveContentFilterHelpArticle;
-  let obj = sensitiveContentFilterHelpArticle(8576);
+  let obj = sensitiveContentFilterHelpArticle(8643);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = react.useEffect(() => {
     const obj = sensitiveContentFilterHelpArticle(dependencyMap[5]);
@@ -56,7 +56,7 @@ export default function AgeConfirmationNotice() {
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
   ({ type: "info", message: intl.format(sensitiveContentFilterHelpArticle(1113).t.mFgsfg, obj5), role: "status", action: obj6 });
-  const InlineNotice = sensitiveContentFilterHelpArticle(8094).InlineNotice;
+  const InlineNotice = sensitiveContentFilterHelpArticle(8159).InlineNotice;
   intl = sensitiveContentFilterHelpArticle(1113).intl;
   obj5 = {
     hook(children) {

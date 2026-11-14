@@ -1,16 +1,16 @@
-// Module ID: 9656
-// Function ID: 9657
+// Module ID: 9723
+// Function ID: 9724
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 502, 9235, 3, 504, 12, 9619, 5055, 2183, 2]
+// Dependencies: [5, 32, 19, 502, 9302, 3, 504, 12, 9686, 2186, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useLoadedGoogleSkuIds, useMobileStoreFront, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 9656 (NativePaymentHooks)
+// Module 9723 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IAPStore from "IAPStore" /* 9235 */;
+import IAPStore from "IAPStore" /* 9302 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,7 +55,7 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
     let obj = function _fetch() {
       let logger;
       obj = _asyncToGenerator(async (arg0, value) => {
-        let obj5;
+        let obj4;
         let v3;
         if (c5 === 2) {
           c5 = 3;
@@ -79,8 +79,8 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
                 throw value;
               } else if (arg0 === 2) {
                 c5 = 3;
-                const obj6 = { value, done: true };
-                return obj6;
+                const obj5 = { value, done: true };
+                return obj5;
               } else {
                 closure_1 = tmp;
                 let closure_0 = tmp10;
@@ -88,8 +88,8 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
                 if (closure_1) {
                   ref.current = [];
                 }
-                const obj4 = closure_2_1(flag[7]);
-                const differenceResult = obj4.difference(closure_0, ref.current);
+                const obj3 = closure_2_1(flag[7]);
+                const differenceResult = obj3.difference(closure_0, ref.current);
                 c0 = differenceResult;
                 const arr = closure_0;
                 if (!c3) {
@@ -99,9 +99,9 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
                         c3 = 1;
                         ref = 2;
                         c5 = 1;
-                        const obj7 = { value: obj5.loadInAppSkus(differenceResult), done: false };
-                        obj5 = closure_2_0(flag[8]);
-                        return obj7;
+                        const obj6 = { value: obj4.loadInAppSkus(differenceResult), done: false };
+                        obj4 = closure_2_0(flag[8]);
+                        return obj6;
                       }
                     }
                   }
@@ -112,16 +112,14 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
               closure_1 = closure_2;
               logger.error("Unable to fetch product IDs from google play store: ", closure_1);
               c5("Unable to fetch");
-              const obj3 = closure_2_0(flag[9]);
-              const result = obj3.captureBillingException(closure_1);
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
               c5 = 3;
-              const obj8 = { value, done: true };
-              return obj8;
+              const obj7 = { value, done: true };
+              return obj7;
             } else {
               obj = closure_2_1(flag[7]);
               ref.current = obj.union(ref.current, c0);
@@ -130,11 +128,11 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
             }
             c5 = 3;
             return { value: "HermesInternal", done: null };
-          } catch (tmp34) {
-            closure_2 = tmp34;
+          } catch (tmp30) {
+            closure_2 = tmp30;
             if (0 === c3) {
               c5 = 3;
-              throw tmp34;
+              throw tmp30;
             } else {
               ref = 1;
             }
@@ -163,7 +161,7 @@ function useLoadedGoogleSkuIds(memo1) {
     memo1,
     obj.useStateFromStores(items, () => {
       let isReadyResult;
-      const obj = memo1(closure_2[10]);
+      const obj = memo1(closure_2[9]);
       if (obj.isGooglePlayBillingSupported()) {
         isReadyResult = ready.isReady();
       } else {
@@ -268,7 +266,7 @@ let react = react_mod;
 let tmp2 = new LoggerDefault("NativePaymentHooks.android.tsx");
 let closure_8 = tmp2;
 let closure_9 = { nativePaymentsConnected: true, storeFront: null, canMakePayments: true };
-let result = size.fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.android.tsx");
+const result = size.fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.android.tsx");
 
 export default { useNativeIAPPayments, useGoogleSkuIds, useLoadedGoogleSkuIds, useCreateSubscription, useCancelSubscription, useResubscribeSubscription, useMobileStoreFront };
 export { useNativeIAPPayments };

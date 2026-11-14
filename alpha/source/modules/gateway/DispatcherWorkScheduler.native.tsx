@@ -1,14 +1,14 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16126
+// Function ID: 16127
 // Name: DispatcherWorkScheduler
-// Dependencies: [16004, 1072, 16006, 572, 2]
+// Dependencies: [16125, 1072, 16127, 572, 2]
 // Exports: createDispatcherWorkScheduler
 
-// Module 16005 (DispatcherWorkScheduler)
+// Module 16126 (DispatcherWorkScheduler)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import BasicWorkScheduler2 from "BasicWorkScheduler" /* 16006 */;
-import DispatcherWorkConstants from "DispatcherWorkConstants" /* 16004 */;
+import BasicWorkScheduler2 from "BasicWorkScheduler" /* 16127 */;
+import DispatcherWorkConstants from "DispatcherWorkConstants" /* 16125 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -17,7 +17,7 @@ let c2;
 let c3;
 let closure_4;
 let hasOwnProperty;
-const f111545 = (state) => {
+const f112843 = (state) => {
   const result = closure_0._trackAppBackgrounded(state.state === AppStates.BACKGROUND);
 };
 ({ DISPATCHER_CALLBACK_MAX_TIME_REMAINING_MS: c2, NATIVE_WORK_BACKOFF_MS: c3, NATIVE_WORK_DEADLINE_MS: closure_4, WorkIdleDeadline: hasOwnProperty } = DispatcherWorkConstants);
@@ -29,7 +29,7 @@ class DispatcherWorkScheduler extends BasicWorkScheduler {
     const tmp3 = new DispatcherWorkScheduler(tmp2, tmp, new.target, this, undefined);
     importDefault = tmp3;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("APP_STATE_UPDATE", f111545);
+    const subscription = obj.subscribe("APP_STATE_UPDATE", f112843);
     return tmp3;
   }
   _queueIdleCallback() {
@@ -71,7 +71,7 @@ export function createDispatcherWorkScheduler() {
     const tmp5 = new DispatcherWorkScheduler(tmp2, tmp, tmp3, this, undefined);
     importDefault = tmp5;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("APP_STATE_UPDATE", f111545);
+    const subscription = obj.subscribe("APP_STATE_UPDATE", f112843);
     return tmp5;
   } else {
     throw new TypeError("Trying to call a non-function");

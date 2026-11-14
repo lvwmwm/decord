@@ -1,12 +1,12 @@
-// Module ID: 5860
-// Function ID: 5861
+// Module ID: 5923
+// Function ID: 5924
 // Name: LottieAnimationView
-// Dependencies: [109, 19, 17, 21, 5861, 2]
+// Dependencies: [109, 19, 17, 21, 5924, 2]
 
-// Module 5860 (LottieAnimationView)
+// Module 5923 (LottieAnimationView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import LottieViewDefault from "LottieView" /* 5861 */;
+import LottieViewDefault from "LottieView" /* 5924 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

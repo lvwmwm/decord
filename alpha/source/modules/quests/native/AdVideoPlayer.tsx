@@ -1,21 +1,21 @@
-// Module ID: 17451
-// Function ID: 17452
+// Module ID: 17569
+// Function ID: 17570
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 2117, 1072, 21, 575, 9664, 5243, 671, 17436, 1652, 5876, 5877, 5485, 5488, 1108, 504, 1377, 1242, 1627, 1113, 7364, 17452, 17454, 17456, 17458, 17459, 11028, 7540, 12223, 17460, 17461, 2]
+// Dependencies: [32, 19, 17, 2120, 1072, 21, 575, 9731, 5306, 671, 17554, 1655, 5939, 5940, 5548, 5551, 1108, 504, 1380, 1242, 1630, 1113, 7428, 17570, 17572, 17574, 17576, 17577, 11095, 7606, 12318, 17578, 17579, 2]
 
-// Module 17451 (AdVideoPlayer)
+// Module 17569 (AdVideoPlayer)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import media_playback_VideoDefault from "media_playback/Video" /* 9664 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17436 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import media_playback_VideoDefault from "media_playback/Video" /* 9731 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 17554 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppStateStore from "AppStateStore" /* 2117 */;
+import AppStateStore from "AppStateStore" /* 2120 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import module_671 from "module_671" /* 671 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,6 +48,7 @@ let unpackModuleId;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let rect = { left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, top: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16 };
 const Video = react.memo(media_playback_VideoDefault);
+let closure_15 = { type: "disabled" };
 let items = [{ code: "(function hasVideoEnded_AdVideoPlayerTsx1(currentTime,videoDuration){return currentTime>=videoDuration-1;})" }];
 [tmp5] = items;
 function hasVideoEnded(arg0, arg1) {
@@ -90,10 +91,10 @@ rect2 = { position: "absolute", bottom: 0, right: 0, left: 0, justifyContent: "f
 obj7 = { height: 1, backgroundColor: nativeDefault.colors.WHITE, shadowOffset: { width: 0, height: 0 }, shadowRadius: 6, shadowOpacity: 1, elevation: 5, shadowColor: nativeDefault.colors.WHITE };
 obj8 = { color: nativeDefault.colors.TEXT_DEFAULT };
 obj9 = { padding: nativeDefault.space.PX_8 };
-let closure_17 = createStyles(obj);
-let closure_18 = { code: "(function shouldShowControls_AdVideoPlayerTsx3(){let[hasLoaded,hideControls,showControls,playerState,PlayerState,isVideoEnded]=this.__closure;return hasLoaded&&!hideControls&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded);})" };
-let closure_19 = { code: "(function AdVideoPlayerTsx4(){let[shouldShowControls,withSpring,SUBTLE_SPRING]=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};})" };
-let closure_20 = { code: "(function AdVideoPlayerTsx5(){let[withTiming,progressSharedValue,timingFast]=this.__closure;return{width:withTiming(progressSharedValue.get()*100+\"%\",timingFast,'animate-always')};})" };
+let closure_18 = createStyles(obj);
+let closure_19 = { code: "(function shouldShowControls_AdVideoPlayerTsx3(){let[hasLoaded,hideControls,showControls,playerState,PlayerState,isVideoEnded]=this.__closure;return hasLoaded&&!hideControls&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded);})" };
+let closure_20 = { code: "(function AdVideoPlayerTsx4(){let[shouldShowControls,withSpring,SUBTLE_SPRING]=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};})" };
+let closure_21 = { code: "(function AdVideoPlayerTsx5(){let[withTiming,progressSharedValue,timingFast]=this.__closure;return{width:withTiming(progressSharedValue.get()*100+\"%\",timingFast,'animate-always')};})" };
 const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   let ClosedCaptionsOutlineIcon;
   let PressableOpacity3;
@@ -162,6 +163,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   let tmp43;
   let tmp73;
   let tmp82Result5;
+  let tmp88;
   let videoRef;
   initialProgress = initialProgress.initialProgress;
   let num = initialProgress.contentDuration;
@@ -181,6 +183,10 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   if (captionsEnabled === undefined) {
     captionsEnabled = false;
   }
+  let flag3 = initialProgress.disableNativeCaptions;
+  if (flag3 === undefined) {
+    flag3 = false;
+  }
   ({ renderCaptions, onLoadStart } = initialProgress);
   const onLoad = initialProgress.onLoad;
   const onReadyForDisplay = initialProgress.onReadyForDisplay;
@@ -196,29 +202,29 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   if (bufferingSpinnerPlacement === undefined) {
     bufferingSpinnerPlacement = "top-left";
   }
-  let flag3 = initialProgress.showCaptionsButton;
-  if (flag3 === undefined) {
-    flag3 = false;
-  }
-  let flag4 = initialProgress.showTranscriptButton;
+  let flag4 = initialProgress.showCaptionsButton;
   if (flag4 === undefined) {
     flag4 = false;
   }
-  let flag5 = initialProgress.showFullscreenButton;
+  let flag5 = initialProgress.showTranscriptButton;
   if (flag5 === undefined) {
     flag5 = false;
   }
-  let flag6 = initialProgress.showProgress;
+  let flag6 = initialProgress.showFullscreenButton;
   if (flag6 === undefined) {
     flag6 = false;
   }
-  let flag7 = initialProgress.showSkipButtons;
+  let flag7 = initialProgress.showProgress;
   if (flag7 === undefined) {
-    flag7 = true;
+    flag7 = false;
   }
-  let flag8 = initialProgress.hideControls;
+  let flag8 = initialProgress.showSkipButtons;
   if (flag8 === undefined) {
-    flag8 = false;
+    flag8 = true;
+  }
+  let flag9 = initialProgress.hideControls;
+  if (flag9 === undefined) {
+    flag9 = false;
   }
   ({ repeat, httpEngine, automaticallyWaitsToMinimizeStalling, maxBitRate, bufferConfig, preferredForwardBufferDuration } = initialProgress);
   if (repeat === undefined) {
@@ -226,11 +232,11 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   }
   videoRef = undefined;
   let first;
-  closure_17 = undefined;
+  let closure_17;
   let first1;
   closure_19 = undefined;
   let first2;
-  let closure_21;
+  closure_21 = undefined;
   c22 = undefined;
   let ref2;
   let ref3;
@@ -249,7 +255,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   let closure_38;
   let callback17;
   let ref = initialProgress.ref;
-  let tmp = closure_17();
+  let tmp = first1();
   let obj = onLoad;
   if (videoRef == null) {
     videoRef = onLoad.useRef(null);
@@ -283,8 +289,8 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   }, items);
   let tmp15 = tmp13 && first2 === tmp8(tmp9[10]).PlayerState.ENDED;
   if (tmp15) {
-    const tmp16 = videoRef;
-    if (typeof videoRef === "function") {
+    const tmp16 = first;
+    if (typeof first === "function") {
       tmp15 = tmp17 >= tmp18 - 1;
     } else {
       throw new TypeError("Trying to call a non-function");
@@ -293,7 +299,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   closure_27 = tmp15;
   const tmp8Result = tmp8(tmp9[11]);
   sharedValue = tmp8Result.useSharedValue(false);
-  let items1 = [first1, tmp13, flag8, sharedValue, first2, tmp8(tmp9[10]).PlayerState, tmp15];
+  let items1 = [closure_19, tmp13, flag9, sharedValue, first2, tmp8(tmp9[10]).PlayerState, tmp15];
   let c3;
   let c4;
   let c5;
@@ -310,7 +316,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   shouldShowControls.__closure = items2;
   shouldShowControls.__workletHash = 7564458846587;
   shouldShowControls.__initData = tmp20;
-  const items3 = [closure_19, shouldShowControls, , ];
+  const items3 = [first2, shouldShowControls, , ];
   const useAnimatedStyle = tmp8(tmp9[11]).useAnimatedStyle;
   tmp8(tmp9[11]);
   items3[2] = tmp8(tmp9[12]).withSpring;
@@ -350,7 +356,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   }
   const tmp8Result6 = tmp8(tmp9[11]);
   sharedValue1 = tmp8Result6.useSharedValue(0);
-  const items5 = [first2, , , ];
+  const items5 = [closure_21, , , ];
   const useAnimatedStyle2 = tmp8(tmp9[11]).useAnimatedStyle;
   tmp8(tmp9[11]);
   items5[1] = tmp8(tmp9[14]).withTiming;
@@ -576,9 +582,9 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   let tmp55 = first2 === tmp8(tmp9[10]).PlayerState.ERRORED;
   if (!tmp55) {
     let timestampSec = first1.timestampSec;
-    if (typeof first === "function") {
-      let tmp61 = !closure_144_0(timestampSec, tmp58);
-      closure_144_0(timestampSec, tmp58);
+    if (typeof closure_17 === "function") {
+      let tmp61 = !closure_145_0(timestampSec, tmp58);
+      closure_145_0(timestampSec, tmp58);
       if (tmp61) {
         if (!flag) {
           flag = timestampSec <= tmp57 - 1;
@@ -716,7 +722,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
     } else {
       const tmp2 = require;
       if (first2 !== AdsVideoTypes.PlayerState.LOADING) {
-        tmp2(1377);
+        tmp2(1380);
       }
       callback17(true);
     }
@@ -751,8 +757,13 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   let tmp82Result = first2 !== tmp8(tmp9[10]).PlayerState.ERRORED;
   const tmp85 = onProgress;
   if (tmp82Result) {
-    const obj7 = { mixWithOthers: "inherit", httpEngine, automaticallyWaitsToMinimizeStalling, maxBitRate, bufferConfig, preferredForwardBufferDuration, ref: videoRef, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: tmp.video, paused: tmp71, repeat, source, onBuffer: callback18, onPlaybackStalled: callback19, onPlaybackResume: callback20, onLoad: callback5, onSeek: callback11, onProgress: callback13, onLoadStart: callback15, onEnd: callback14, onError: callback16, onReadyForDisplay: callback3, onVideoTracks, onLayout: onVideoLayout, resizeMode: "contain" };
-    tmp82Result = tmp82(repeat, obj7);
+    const obj7 = { mixWithOthers: "inherit", httpEngine, automaticallyWaitsToMinimizeStalling, maxBitRate, bufferConfig, preferredForwardBufferDuration, ref: videoRef, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: tmp.video, paused: tmp71, repeat, source, onBuffer: callback18, onPlaybackStalled: callback19, onPlaybackResume: callback20, onLoad: callback5, onSeek: callback11, onProgress: callback13, onLoadStart: callback15, onEnd: callback14, onError: callback16, onReadyForDisplay: callback3, onVideoTracks, onLayout: onVideoLayout, resizeMode: "contain", selectedTextTrack: tmp88 };
+    tmp88 = undefined;
+    const tmp87 = repeat;
+    if (flag3) {
+      tmp88 = videoRef;
+    }
+    tmp82Result = tmp82(tmp87, obj7);
   }
   const items32 = [tmp82Result, , , , , ];
   let renderCaptionsResult;
@@ -784,7 +795,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
       }
       items33[1] = rect1;
       const obj8 = { animating: true, style: items33, color: flag(tmp9[6]).unsafe_rawColors.WHITE };
-      tmp82Result5 = onPlayerStateChange(tmp89, obj8);
+      tmp82Result5 = onPlayerStateChange(tmp90, obj8);
     }
     rect1 = tmp.bufferingSpinnerCentered;
   }
@@ -797,17 +808,17 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   items32[3] = tmp82Result6;
   const obj10 = { style: items34, accessible: false, children: null };
   items34 = [tmp.controls, animatedStyle];
-  let tmp84Result = flag3;
+  let tmp84Result = flag4;
   const View = tmp78(tmp9[11]).View;
-  if (!flag3) {
-    tmp84Result = flag4;
+  if (!flag4) {
+    tmp84Result = flag5;
   }
   if (tmp84Result) {
     const obj11 = { style: items35, children: items36 };
     items35 = [, , ];
     ({ controlsTopBottom: arr36[0], controlsTop: arr36[1] } = tmp);
     items35[2] = tmp79;
-    if (flag3) {
+    if (flag4) {
       const obj12 = { accessibilityRole: "togglebutton", accessibilityState: obj13, accessibilityLabel: intl2.string(tmp8(tmp9[21]).t.bDSZO1), onPress: onToggleCaptions, style: tmp.controlButton, children: onPlayerStateChange(ClosedCaptionsOutlineIcon, obj14) };
       obj13 = { checked: captionsEnabled };
       const PressableOpacity = tmp8(tmp9[22]).PressableOpacity;
@@ -818,22 +829,22 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
         ClosedCaptionsOutlineIcon = tmp8(tmp9[24]).ClosedCaptionsOutlineIcon;
       }
       obj14 = { color: tmp.icon.color };
-      flag3 = tmp82(PressableOpacity, obj12);
+      flag4 = tmp82(PressableOpacity, obj12);
     }
-    items36 = [flag3, ];
-    if (flag4) {
+    items36 = [flag4, ];
+    if (flag5) {
       const obj15 = { accessibilityRole: "button", accessibilityLabel: intl3.string(tmp8(tmp9[21]).t.KCzjTi), onPress: onOpenTranscript, style: tmp.controlButton, children: onPlayerStateChange(tmp8(tmp9[25]).TranscriptOutlineIcon, obj16) };
       const PressableOpacity2 = tmp8(tmp9[22]).PressableOpacity;
       intl3 = tmp8(tmp9[21]).intl;
       obj16 = { color: tmp.icon.color };
-      flag4 = tmp82(PressableOpacity2, obj15);
+      flag5 = tmp82(PressableOpacity2, obj15);
     }
-    items36[1] = flag4;
+    items36[1] = flag5;
     tmp84Result = tmp84(tmp83, obj11);
   }
   const items37 = [tmp84Result, , ];
   const obj17 = { style: tmp.controlsMiddle, children: null };
-  let tmp82Result7 = flag7;
+  let tmp82Result7 = flag8;
   if (tmp82Result7) {
     const obj18 = { disabled: first2 === tmp8(tmp9[10]).PlayerState.ERRORED, accessibilityRole: "button", accessibilityLabel: intl4.string(tmp8(tmp9[21]).t.r9s3Uv), onPress: callback1Result, children: onPlayerStateChange(tmp8(tmp9[27]).SkipBackwardIcon, size) };
     const VideoQuestPlayerControlButton = tmp8(tmp9[26]).VideoQuestPlayerControlButton;
@@ -850,7 +861,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
       const t2 = tmp8(tmp9[21]).t;
       K0e7M9 = tmp71 ? t2.R3aFPe : t2.fTMEUi;
     }
-    const obj19 = { accessibilityRole: "button", accessibilityLabel: tmp94(K0e7M9), onPress: callback7, children: null };
+    const obj19 = { accessibilityRole: "button", accessibilityLabel: tmp95(K0e7M9), onPress: callback7, children: null };
     if (!tmp15) {
       let tmp82Result8;
       if (first2 !== tmp8(tmp9[10]).PlayerState.ERRORED) {
@@ -864,17 +875,17 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
       }
       obj19.children = tmp82Result8;
       items38[1] = onPlayerStateChange(VideoQuestPlayerControlButton2, obj19);
-      if (flag7) {
+      if (flag8) {
         const obj20 = { disabled: tmp55, accessibilityRole: "button", accessibilityLabel: intl6.string(tmp8(tmp9[21]).t.zWDcNP), onPress: callback1Result1, children: onPlayerStateChange(tmp8(tmp9[31]).SkipForwardIcon, size1) };
         const VideoQuestPlayerControlButton3 = tmp8(tmp9[26]).VideoQuestPlayerControlButton;
         intl6 = tmp8(tmp9[21]).intl;
         size1 = { color: tmp.icon.color, width: 16, height: 16 };
-        flag7 = tmp82(VideoQuestPlayerControlButton3, obj20);
+        flag8 = tmp82(VideoQuestPlayerControlButton3, obj20);
       }
-      items38[2] = flag7;
+      items38[2] = flag8;
       obj17.children = items38;
       items37[1] = onPausePlayback(onReadyForDisplay, obj17);
-      if (flag5) {
+      if (flag6) {
         const obj21 = { style: items39, children: onPlayerStateChange(PressableOpacity3, obj22) };
         items39 = [, , ];
         ({ controlsTopBottom: arr40[0], controlsBottom: arr40[1] } = tmp);
@@ -882,18 +893,18 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
         obj22 = { accessibilityRole: "button", accessibilityLabel: intl7.string(tmp8(tmp9[21]).t.vKZT5t), onPress: onToggleFullscreen, style: tmp.controlButton, children: onPlayerStateChange(tmp8(tmp9[32]).FullscreenEnterIcon, {}) };
         PressableOpacity3 = tmp8(tmp9[22]).PressableOpacity;
         intl7 = tmp8(tmp9[21]).intl;
-        flag5 = tmp82(tmp83, obj21);
+        flag6 = tmp82(tmp83, obj21);
       }
-      items37[2] = flag5;
+      items37[2] = flag6;
       obj10.children = items37;
       items32[4] = onPausePlayback(View, obj10);
-      if (flag6) {
+      if (flag7) {
         const obj23 = { style: tmp.progressContainer, children: onPlayerStateChange(flag(tmp9[11]).View, obj24) };
         obj24 = { style: items40 };
         items40 = [tmp.progress, animatedStyle2];
-        flag6 = tmp82(tmp83, obj23);
+        flag7 = tmp82(tmp83, obj23);
       }
-      items32[5] = flag6;
+      items32[5] = flag7;
       obj6.children = items32;
       obj5.children = onPausePlayback(tmp85, obj6);
       return onPlayerStateChange(onReadyForDisplay, obj5);

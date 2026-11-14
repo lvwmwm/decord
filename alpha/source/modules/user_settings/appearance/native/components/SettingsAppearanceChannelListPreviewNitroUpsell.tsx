@@ -1,26 +1,26 @@
-// Module ID: 17802
-// Function ID: 17803
+// Module ID: 17922
+// Function ID: 17923
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
-// Dependencies: [19, 17, 5244, 1072, 21, 1652, 5830, 5876, 5877, 5243, 575, 7852, 7871, 9512, 10885, 5873, 1113, 1187, 504, 9363, 2]
+// Dependencies: [19, 17, 5307, 1072, 21, 1655, 5893, 5939, 5940, 5306, 575, 7918, 7937, 9579, 10954, 5936, 1113, 1187, 504, 9431, 2]
 
-// Module 17802 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 17922 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import springPresets from "springPresets" /* 5877 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9363 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9512 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10885 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import springPresets from "springPresets" /* 5940 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9431 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10954 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import module_1655 from "module_1655" /* 1655 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -51,10 +51,10 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   theme = theme.theme;
   let tmp = closure_16();
   const items = [closure_17, theme, closure_9, StyleSheet, , ];
-  const useAnimatedStyle = analyticsLocations(1652).useAnimatedStyle;
-  analyticsLocations(1652);
-  items[4] = analyticsLocations(5876).withSpring;
-  items[5] = analyticsLocations(5877).springStandard;
+  const useAnimatedStyle = analyticsLocations(1655).useAnimatedStyle;
+  analyticsLocations(1655);
+  items[4] = analyticsLocations(5939).withSpring;
+  items[5] = analyticsLocations(5940).springStandard;
   let c0;
   let c1;
   let c2;
@@ -91,7 +91,7 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   }, items2);
   items3 = [closure_10(LinearGradient, obj2), ];
   const obj3 = { text: intl.string(analyticsLocations(1113).t.pj0XBN), icon: closure_10(analyticsLocations(1187).NitroWheel, obj4), variant: "active", onPress: callback, size: "md" };
-  const Button = tmp2(5873).Button;
+  const Button = tmp2(5936).Button;
   intl = tmp2(1113).intl;
   obj4 = { style: tmp.nitroWheelIcon };
   items3[1] = closure_10(Button, obj3);
@@ -101,7 +101,7 @@ const StyleSheet = react_native.StyleSheet;
 let View = react_native.View;
 ({ AnalyticsPages: metroImportDefault, AnalyticsSections: metroImportAll, ThemeTypes: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-const LinearGradient = module_1652.createAnimatedComponent(LinearGradientDefault);
+const LinearGradient = module_1655.createAnimatedComponent(LinearGradientDefault);
 const colors = ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 1)"];
 let items = [{ code: "(function animationEntering_SettingsAppearanceChannelListPreviewNitroUpsellTsx1(visible){let[withSpring,springStandard]=this.__closure;return{opacity:withSpring(visible,springStandard)};})" }, spring_spring.withSpring, springPresets.springStandard];
 [tmp5, tmp6, tmp7] = items;
@@ -162,7 +162,7 @@ const memoResult = react.memo(function SettingsAppearanceChannelListPreviewNitro
     let tmpResult;
     const obj = { style, pointerEvents: "box-none", children: tmpResult };
     tmpResult = null;
-    View = module_1652.View;
+    View = module_1655.View;
     if (null != arg0) {
       const obj2 = {};
       const merged = Object.assign(arg0);

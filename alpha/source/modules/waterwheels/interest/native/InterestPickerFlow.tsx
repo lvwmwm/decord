@@ -1,14 +1,14 @@
-// Module ID: 20185
-// Function ID: 20186
+// Module ID: 20345
+// Function ID: 20346
 // Name: InterestPickerFlow
-// Dependencies: [32, 19, 1072, 21, 20181, 20186, 18976, 1252, 20188, 18978, 1113, 2553, 2]
+// Dependencies: [32, 19, 1072, 21, 20341, 20346, 19030, 1256, 20348, 19032, 1113, 2569, 2]
 // Exports: default
 
-// Module 20185 (InterestPickerFlow)
+// Module 20345 (InterestPickerFlow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import InterestPickerCatalogs from "InterestPickerCatalogs" /* 18976 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import InterestPickerCatalogs from "InterestPickerCatalogs" /* 19030 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,6 +20,7 @@ const result = size.fileFinishedImporting("modules/waterwheels/interest/native/I
 export default function InterestPickerFlow(arm) {
   let intl;
   let intl2;
+  let obj4;
   let tmp16;
   arm = arm.arm;
   const onComplete = arm.onComplete;
@@ -89,6 +90,7 @@ export default function InterestPickerFlow(arm) {
   } else {
     const obj3 = {
       catalog,
+      performanceContext: obj4,
       onRowSeen: callback,
       title: intl.string(onComplete(tmp2[11])["5MUKTF"]),
       subtitle: intl2.string(onComplete(tmp2[11])["z/57xV"]),
@@ -134,7 +136,9 @@ export default function InterestPickerFlow(arm) {
           closure_5("guilds");
         }
     };
+    obj4 = { surface: "onboarding" };
     const tmp19 = onComplete(tmp2[9]);
+    let merged = Object.assign(memo);
     intl = tmp(tmp2[10]).intl;
     intl2 = tmp(tmp2[10]).intl;
     tmp16 = first1(tmp19, obj3);

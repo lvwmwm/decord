@@ -1,18 +1,18 @@
-// Module ID: 18487
-// Function ID: 18488
+// Module ID: 18615
+// Function ID: 18616
 // Name: MobileNotifSettingsRoutes
-// Dependencies: [12311, 1113, 10927, 16779, 18488, 18489, 3013, 17991, 18497, 18498, 18499, 18500, 18501, 16041, 16776, 18502, 2]
+// Dependencies: [12406, 1113, 10996, 16902, 18616, 18617, 3029, 18111, 18626, 18627, 18628, 18629, 18630, 16162, 16899, 18631, 2]
 
-// Module 18487 (MobileNotifSettingsRoutes)
+// Module 18615 (MobileNotifSettingsRoutes)
 import intl4 from "intl" /* 1113 */;
-import _modDef3013 from "module_3013" /* 3013 */;
-import BellIcon from "BellIcon" /* 10927 */;
-import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 16041 */;
-import NotifSettings from "NotifSettings" /* 16776 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16779 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17991 */;
-import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 18488 */;
-import SettingBuilders_mod from "SettingBuilders" /* 12311 */;
+import _modDef3029 from "module_3029" /* 3029 */;
+import BellIcon from "BellIcon" /* 10996 */;
+import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 16162 */;
+import NotifSettings from "NotifSettings" /* 16899 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16902 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18111 */;
+import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 18616 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,11 +60,11 @@ const createRoute2 = SettingBuilders.createRoute;
 const obj3 = {
   useTitle() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013.gbaIfD);
+    return intl.string(_modDef3029.gbaIfD);
   },
   useDescription() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013.MjXONr);
+    return intl.string(_modDef3029.MjXONr);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -80,11 +80,11 @@ const createRoute3 = SettingBuilders.createRoute;
 const obj5 = {
   useTitle() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013["ZwNQS+"]);
+    return intl.string(_modDef3029["ZwNQS+"]);
   },
   useDescription() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013.BBFiVq);
+    return intl.string(_modDef3029.BBFiVq);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -100,11 +100,11 @@ const createRoute4 = SettingBuilders.createRoute;
 const obj7 = {
   useTitle() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013.BBcVf5);
+    return intl.string(_modDef3029.BBcVf5);
   },
   useDescription() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013.eI4aPM);
+    return intl.string(_modDef3029.eI4aPM);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -120,7 +120,7 @@ const createRoute5 = SettingBuilders.createRoute;
 const obj9 = {
   useTitle() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013.vcrTV5);
+    return intl.string(_modDef3029.vcrTV5);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY,
   usePredicate() {
@@ -136,11 +136,11 @@ const createRoute6 = SettingBuilders.createRoute;
 const obj11 = {
   useTitle() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013.qxdDqr);
+    return intl.string(_modDef3029.qxdDqr);
   },
   useDescription() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013.r60oLi);
+    return intl.string(_modDef3029.r60oLi);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -156,20 +156,20 @@ const createRoute7 = SettingBuilders.createRoute;
 const obj13 = {
   useTitle() {
     const intl = intl4.intl;
-    return intl.string(_modDef3013.wv4QHR);
+    return intl.string(_modDef3029.wv4QHR);
   },
   useTrailing() {
     const obj = settings_NotifSettingsUtils;
     const notifSettingRadioValue = obj.useNotifSettingRadioValue(NotifSettings.NotifSettings.REACTIONS_CHOICE);
     if (2 === notifSettingRadioValue) {
       const intl3 = tmp(1113).intl;
-      return intl3.string(_modDef3013.jUZVYn);
+      return intl3.string(_modDef3029.jUZVYn);
     } else if (1 === notifSettingRadioValue) {
       const intl2 = tmp(1113).intl;
-      return intl2.string(_modDef3013.qggLZW);
+      return intl2.string(_modDef3029.qggLZW);
     } else if (0 === notifSettingRadioValue) {
       const intl = tmp(1113).intl;
-      return intl.string(_modDef3013.FLSQ8z);
+      return intl.string(_modDef3029.FLSQ8z);
     } else {
       return null;
     }

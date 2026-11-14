@@ -1,17 +1,17 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 15669
+// Function ID: 15670
 // Name: MediaSlider
-// Dependencies: [32, 19, 17, 21, 5243, 1377, 15110, 5854, 12, 671, 8830, 7364, 1113, 7540, 12223, 5866, 12911, 15556, 575, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 1380, 15224, 5917, 12, 671, 8897, 7428, 1113, 7606, 12318, 5929, 13007, 15670, 575, 2]
 // Exports: default
 
-// Module 15555 (MediaSlider)
+// Module 15669 (MediaSlider)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -46,6 +46,7 @@ export default function MediaSlider(controls) {
   let alphaResult4;
   let c5;
   let c7;
+  let intl2;
   let items5;
   let items6;
   let items7;
@@ -171,7 +172,7 @@ export default function MediaSlider(controls) {
   items7 = [tmp.centerText, { width: first1 }];
   items6[1] = closure_6(controls(setPaused[15]).Text, obj5);
   const obj6 = { style: tmp.sliderContainer, children: items9 };
-  const obj7 = { pointerEvents: "none", style: tmp.progressSliderContainer, children: items8 };
+  const obj7 = { pointerEvents: "none", style: tmp.progressSliderContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items8 };
   const obj8 = { style: tmp.timelineBackgroundSlider, value: 1, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult.hex(), minimumTrackTintColor: alphaResult1.hex(), maximumTrackTintColor: alphaResult2.hex() };
   const tmp13Result = paused(setPaused[16]);
   const obj10 = paused(setPaused[9])("#FFFFFF");
@@ -189,8 +190,9 @@ export default function MediaSlider(controls) {
   alphaResult4 = obj19.alpha(0.2);
   items8[1] = closure_6(tmp13Result3, obj9);
   items9 = [c7(c5, obj7), ];
-  const obj11 = { style: tmp.playbackSlider, value: tmp3, thumbImage: paused(setPaused[17]), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(setPaused[18]).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp14, onSlidingStart: callback1, onSlidingComplete: callback2 };
+  const obj11 = { style: tmp.playbackSlider, accessibilityLabel: intl2.string(controls(setPaused[12]).t["v//dvn"]), value: tmp3, thumbImage: paused(setPaused[17]), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(setPaused[18]).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp14, onSlidingStart: callback1, onSlidingComplete: callback2 };
   const tmp13Result4 = paused(setPaused[16]);
+  intl2 = tmp11(tmp12[12]).intl;
   items9[1] = closure_6(tmp13Result4, obj11);
   items6[2] = c7(c5, obj6);
   const obj13 = {

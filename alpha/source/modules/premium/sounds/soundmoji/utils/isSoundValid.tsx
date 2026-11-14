@@ -1,16 +1,16 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15994
+// Function ID: 15995
 // Name: isSoundValid
-// Dependencies: [5092, 5175, 1385, 6308, 1083, 2171, 2]
+// Dependencies: [5155, 5238, 1388, 6371, 1083, 2174, 2]
 // Exports: default
 
-// Module 15874 (isSoundValid)
+// Module 15994 (isSoundValid)
 import Constants from "Constants" /* 1083 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import SoundboardConstants from "SoundboardConstants" /* 6308 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
-import UserStore from "UserStore" /* 1385 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import SoundboardConstants from "SoundboardConstants" /* 6371 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const DEFAULT_SOUND_GUILD_ID = SoundboardConstants.DEFAULT_SOUND_GUILD_ID;

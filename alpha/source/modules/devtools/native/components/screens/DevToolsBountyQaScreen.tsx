@@ -1,21 +1,21 @@
-// Module ID: 18177
-// Function ID: 18178
+// Module ID: 18297
+// Function ID: 18298
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 8738, 21, 5243, 575, 5952, 1627, 504, 5278, 8739, 15142, 10065, 5866, 7679, 7681, 7680, 7379, 13160, 17592, 7569, 5282, 2]
+// Dependencies: [5, 32, 19, 17, 8805, 21, 5306, 575, 6015, 1630, 504, 5341, 8806, 15256, 10133, 5929, 7745, 7747, 7746, 7443, 13269, 17710, 7635, 5345, 2]
 // Exports: default
 
-// Module 18177 (DevToolsBountyQaScreen)
+// Module 18297 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AdCreativeType from "AdCreativeType" /* 5282 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
-import QuestActionCreators from "QuestActionCreators" /* 10065 */;
+import AdCreativeType from "AdCreativeType" /* 5345 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import QuestActionCreators from "QuestActionCreators" /* 10133 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8738 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8805 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3;
@@ -41,6 +41,7 @@ let closure_11 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBountyQaScreen.tsx");
 
 export default function DevToolsBountyQaScreen() {
+  let adDecisionsForPlacement;
   let first;
   let items4;
   let items5;
@@ -151,13 +152,15 @@ export default function DevToolsBountyQaScreen() {
   obj = stateFromStores(obj[10]);
   items = [AdDeliveryStore];
   stateFromStores = obj.useStateFromStores(items, () => {
-    const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
-    const value = deliveryAdDecisionByPlacement.get(stateFromStores(obj[11]).AdPlacement.MOBILE_HOME_DOCK_AREA);
+    let first = adDecisionsForPlacement.getAdDecisionsForPlacement(stateFromStores(obj[11]).AdPlacement.MOBILE_HOME_DOCK_AREA)[0];
+    if (first == null) {
+      first = null;
+    }
     let creative;
-    const getDeliveredBounty = stateFromStores(obj[12]).getDeliveredBounty;
+    const getDeliveredBounty = tmp(tmp2[12]).getDeliveredBounty;
     stateFromStores(obj[12]);
-    if (value != null) {
-      creative = value.creative;
+    if (first != null) {
+      creative = first.creative;
     }
     const deliveredBounty = getDeliveredBounty(creative);
     let id;

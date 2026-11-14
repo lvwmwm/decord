@@ -1,20 +1,16 @@
 // Module ID: 16750
 // Function ID: 16751
-// Dependencies: []
-// Exports: default
+// Dependencies: [16751]
 
 // Module 16750
+import _mod16751 from "module_16751" /* 16751 */;
 
-export default () => (arg0) => {
-  let closure_0 = arg0;
-  let obj = {
-    features: {
-      apiResponse(request, response, tmp4Result) {
-        const obj = { request, response, duration: tmp4Result };
-        const tmp = response && response.status && typeof response.status === "number" && response.status >= 200 && response.status <= 299;
-        closure_0.send("api.response", obj, !tmp);
-      }
+
+export default !_mod16751(() => {
+  const obj = {
+    get() {
+      return 7;
     }
   };
-  return obj;
-};
+  return 7 !== Object.defineProperty({}, 1, obj)[1];
+});

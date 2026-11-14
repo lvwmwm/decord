@@ -1,11 +1,11 @@
-// Module ID: 8064
-// Function ID: 8065
+// Module ID: 8129
+// Function ID: 8130
 // Name: createResolvedGuildTemplate
-// Dependencies: [8065, 2]
+// Dependencies: [8130, 2]
 // Exports: default
 
-// Module 8064 (createResolvedGuildTemplate)
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 8065 */;
+// Module 8129 (createResolvedGuildTemplate)
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 8130 */;
 import size from "module_2" /* 2 */;
 
 const GuildTemplateStates = GuildTemplatesConstants.GuildTemplateStates;

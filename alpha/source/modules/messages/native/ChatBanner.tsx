@@ -1,27 +1,27 @@
-// Module ID: 12266
-// Function ID: 12267
+// Module ID: 12361
+// Function ID: 12362
 // Name: ChatBanner
-// Dependencies: [19, 17, 6737, 6952, 12267, 1072, 21, 5243, 575, 12268, 12269, 504, 11, 1252, 6004, 7811, 5866, 1113, 5873, 7223, 8797, 7364, 7808, 12270, 2]
+// Dependencies: [19, 17, 6800, 7015, 12362, 1072, 21, 5306, 575, 12363, 12364, 504, 11, 1256, 6067, 7877, 5929, 1113, 5936, 7287, 8864, 7428, 7874, 12365, 2]
 // Exports: default
 
-// Module 12266 (ChatBanner)
+// Module 12361 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7808 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7811 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8797 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 12267 */;
-import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 12268 */;
-import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 12269 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7874 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7877 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8864 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 12362 */;
+import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 12363 */;
+import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 12364 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
-import ReadStateStore from "ReadStateStore" /* 6952 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -83,12 +83,12 @@ class OptInChannelBanner {
     let obj = { style: items2, children: items3 };
     items2[1] = topBorder1;
     let obj2 = { lineClamp: 2, style: tmp.optInChannelBannerText, variant: "body-sm/semibold", children: intl.string(channel(1113).t.iOWmmB) };
-    const Text = channel(5866).Text;
+    const Text = channel(5929).Text;
     intl = channel(1113).intl;
     items3 = [closure_12(Text, obj2), ];
     let obj3 = { style: tmp.optInChannelBannerButtonContainer, children: closure_12(Button, obj4) };
     obj4 = { onPress: callback, size: "sm", text: intl2.string(channel(1113).t["TD/+zP"]) };
-    Button = channel(5873).Button;
+    Button = channel(5936).Button;
     let merged = Object.assign(ctaProps);
     intl2 = channel(1113).intl;
     items3[1] = closure_12(closure_4, obj3);
@@ -115,11 +115,11 @@ function ArchivedLockedThreadChatBanner(channel) {
     const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
     track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(7223);
+  let obj = channel(7287);
   let canUnarchiveThread = obj.useCanUnarchiveThread(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: items1 };
   let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "body-sm/medium", color: "text-default", children: stringResult };
-  const Text = channel(5866).Text;
+  const Text = channel(5929).Text;
   const isForumPostResult = channel.isForumPost();
   const intl = channel(1113).intl;
   const string = intl.string;
@@ -151,7 +151,7 @@ function ArchivedLockedThreadChatBanner(channel) {
           obj4.unarchiveThread(channel, false);
         }
     };
-    Button = tmp3(5873).Button;
+    Button = tmp3(5936).Button;
     intl2 = tmp3(1113).intl;
     canUnarchiveThread = tmp8(tmp7, obj4);
   }
@@ -178,11 +178,11 @@ function LockedThreadChatBanner(channel) {
     const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
     track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(7223);
+  let obj = channel(7287);
   let isThreadModerator = obj.useIsThreadModerator(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: items1 };
   let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "body-sm/medium", color: "text-default", children: stringResult };
-  const Text = channel(5866).Text;
+  const Text = channel(5929).Text;
   const isForumPostResult = channel.isForumPost();
   const intl = channel(1113).intl;
   const string = intl.string;
@@ -214,7 +214,7 @@ function LockedThreadChatBanner(channel) {
           obj4.unlockThread(channel);
         }
     };
-    Button = tmp3(5873).Button;
+    Button = tmp3(5936).Button;
     intl2 = tmp3(1113).intl;
     isThreadModerator = tmp8(tmp7, obj4);
   }
@@ -248,9 +248,9 @@ function NewMessagesChatBar(channel) {
       let obj2 = { style: tmp.newMessageBar, children: items1 };
       const obj3 = { accessibilityRole: "button", style: tmp.newMessageBarTextContainer, onPress: handleScrollToNewMessages, children: closure_12(Text, obj4) };
       const tmp8 = isEstimatedResult ? t.wvtbbG : t["BctFH/"];
-      const PressableOpacity = tmp2(7364).PressableOpacity;
+      const PressableOpacity = tmp2(7428).PressableOpacity;
       obj4 = { variant: "body-sm/semibold", color: "text-overlay-light", children: intl.format(tmp8, obj5) };
-      Text = tmp2(5866).Text;
+      Text = tmp2(5929).Text;
       intl = tmp2(1113).intl;
       obj5 = { count: unreadCount, timestamp: oldestUnreadTimestamp };
       items1 = [closure_12(PressableOpacity, obj3), ];
@@ -265,10 +265,10 @@ function NewMessagesChatBar(channel) {
             },
         children: closure_12(XSmallBoldIcon, obj7)
       };
-      const PressableOpacity2 = tmp2(7364).PressableOpacity;
+      const PressableOpacity2 = tmp2(7428).PressableOpacity;
       intl2 = tmp2(1113).intl;
       obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
-      XSmallBoldIcon = tmp2(12270).XSmallBoldIcon;
+      XSmallBoldIcon = tmp2(12365).XSmallBoldIcon;
       items1[1] = closure_12(PressableOpacity2, obj6);
       tmp5 = closure_13(closure_4, obj2);
     }

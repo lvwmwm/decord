@@ -1,9 +1,9 @@
-// Module ID: 15990
-// Function ID: 15991
+// Module ID: 16111
+// Function ID: 16112
 // Name: InputEvent
 // Dependencies: [2]
 
-// Module 15990 (InputEvent)
+// Module 16111 (InputEvent)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/pass_the_controller/InputEvent.tsx");

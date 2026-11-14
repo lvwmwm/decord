@@ -1,25 +1,25 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17468
+// Function ID: 17469
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5489, 7954, 2118, 5243, 575, 8094, 1113, 2685, 1499, 7746, 10947, 563, 17346, 17347, 5951, 5977, 5866, 7680, 7888, 7379, 7351, 5873, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 1072, 21, 5552, 8019, 2121, 5306, 575, 8159, 1113, 2701, 1502, 7812, 11016, 563, 17469, 17470, 6014, 6040, 5929, 7746, 7954, 7443, 7415, 5936, 2]
 // Exports: default
 
-// Module 17345 (ScheduleDowntimeScreen)
+// Module 17468 (ScheduleDowntimeScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import _modDef2685 from "module_2685" /* 2685 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import InlineNotice2 from "InlineNotice" /* 8094 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10947 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import _modDef2701 from "module_2701" /* 2701 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import InlineNotice2 from "InlineNotice" /* 8159 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11016 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ function OverlappingSchedulesWarning(conflictingEntries) {
   conflictingEntries = conflictingEntries.conflictingEntries;
   let tmp = null;
   if (0 !== conflictingEntries.length) {
-    const obj = { type: "warning", message: intl.string(_modDef2685["26A0Df"]), messageList: conflictingEntries.map((dayLabel) => "" + dayLabel.dayLabel + "  " + dayLabel.timeRange), role: "status" };
+    const obj = { type: "warning", message: intl.string(_modDef2701["26A0Df"]), messageList: conflictingEntries.map((dayLabel) => "" + dayLabel.dayLabel + "  " + dayLabel.timeRange), role: "status" };
     const InlineNotice = InlineNotice2.InlineNotice;
     intl = intl11.intl;
     tmp = unpackModuleId(InlineNotice, obj);
@@ -546,14 +546,14 @@ export default function ScheduleDowntimeScreen() {
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f134471 = (first1) => {
+          const f135992 = (first1) => {
             closure_1_12(first1);
             obj = closure_2_0(rule[17]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;
             const time = { hours: Math.floor(result / 60), minutes: result % 60 };
             closure_1_14(time);
           };
-          const stringResult = intl.string(_modDef2685["8bLRt0"]);
+          const stringResult = intl.string(_modDef2701["8bLRt0"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -565,7 +565,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(7954, dependencyMap.paths);
+          const tmp3 = asyncRequire(8019, dependencyMap.paths);
           new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeStartTimePicker", obj);
         }
@@ -583,7 +583,7 @@ export default function ScheduleDowntimeScreen() {
       onPress: function handleEndTimePress() {
           const intl = intl11.intl;
           closure_0 = closure_14;
-          const stringResult = intl.string(_modDef2685["+JkWJV"]);
+          const stringResult = intl.string(_modDef2701["+JkWJV"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -595,7 +595,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(7954, dependencyMap.paths);
+          const tmp3 = asyncRequire(8019, dependencyMap.paths);
           new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeEndTimePicker", obj);
         }

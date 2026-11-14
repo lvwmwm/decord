@@ -1,14 +1,14 @@
-// Module ID: 8095
-// Function ID: 8096
+// Module ID: 8160
+// Function ID: 8161
 // Name: WarningIcon
-// Dependencies: [19, 21, 575, 5956, 8096, 2]
+// Dependencies: [19, 21, 575, 6019, 8161, 2]
 // Exports: WarningIcon
 
-// Module 8095 (WarningIcon)
+// Module 8160 (WarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 8096 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 8161 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

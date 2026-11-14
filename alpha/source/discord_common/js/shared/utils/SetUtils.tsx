@@ -1,10 +1,10 @@
-// Module ID: 5109
-// Function ID: 5110
+// Module ID: 5172
+// Function ID: 5173
 // Name: SetUtils
 // Dependencies: [2]
 // Exports: areSetsEqual, toSetInplace
 
-// Module 5109 (SetUtils)
+// Module 5172 (SetUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/SetUtils.tsx");

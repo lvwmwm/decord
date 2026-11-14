@@ -1,11 +1,11 @@
-// Module ID: 17316
-// Function ID: 17317
+// Module ID: 17439
+// Function ID: 17440
 // Name: useLoadTeenSettings
-// Dependencies: [19, 17300, 8675, 2]
+// Dependencies: [19, 17423, 8742, 2]
 // Exports: default
 
-// Module 17316 (useLoadTeenSettings)
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8675 */;
+// Module 17439 (useLoadTeenSettings)
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8742 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

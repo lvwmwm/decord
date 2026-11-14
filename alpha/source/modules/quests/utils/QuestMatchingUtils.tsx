@@ -1,23 +1,21 @@
-// Module ID: 15138
-// Function ID: 15139
+// Module ID: 15252
+// Function ID: 15253
 // Name: QuestMatchingUtils
-// Dependencies: [32, 2162, 7254, 5275, 2142, 7406, 8764, 8748, 8762, 15023, 2]
-// Exports: getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
+// Dependencies: [32, 2165, 7318, 5338, 2145, 7472, 8831, 8815, 8829, 15137, 2]
+// Exports: getActivityQuestForApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 15138 (QuestMatchingUtils)
-import Constants from "Constants" /* 2142 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7406 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 8748 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8762 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8764 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 15023 */;
+// Module 15252 (QuestMatchingUtils)
+import Constants from "Constants" /* 2145 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7472 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 8815 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8829 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 15137 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7254 */;
-import QuestConstants from "QuestConstants" /* 5275 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7318 */;
+import QuestConstants from "QuestConstants" /* 5338 */;
 import size from "module_2" /* 2 */;
-
-let userStatus;
 
 let metroImportAll;
 let metroImportDefault;
@@ -28,7 +26,7 @@ function questMatchesActivity(application_id, id) {
     const tmp3 = application_id.application_id === closure_9 || application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.XBOX;
     if (!tmp3) {
       let tmp10;
-      const tmp9 = application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_4 || application_id.platform === tmp7(7406).ActivityGamePlatforms.PLAYSTATION_5;
+      const tmp9 = application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_4 || application_id.platform === tmp7(7472).ActivityGamePlatforms.PLAYSTATION_5;
       if (!tmp9) {
         tmp10 = null != id && id.id === metroImportDefault && application_id.application_id === metroImportAll;
         if (!tmp10) {
@@ -129,13 +127,10 @@ export function getQuestsFromActivities(result, arg1) {
   }
   return null;
 }
-export function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
+export function getEligibleQuestsForApplicationId(quests, applicationId) {
+  let flag;
   let items;
   let closure_0 = applicationId;
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
   if (null == applicationId) {
     items = [];
   } else {
@@ -154,7 +149,7 @@ export function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
         canLaunchActivityResult = !tmpResult2.isQuestExpired(userStatus);
       }
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = activityApplicationId === applicationId;
+        canLaunchActivityResult = activityApplicationId === closure_0;
       }
       if (canLaunchActivityResult) {
         canLaunchActivityResult = activityApplicationId !== metroRequire;
@@ -165,7 +160,7 @@ export function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
         if (userStatus != null) {
           completedAt = userStatus.completedAt;
         }
-        canLaunchActivityResult = null == completedAt || flag;
+        canLaunchActivityResult = null == completedAt || c1;
       }
       if (canLaunchActivityResult) {
         const userStatus2 = userStatus.userStatus;
@@ -173,12 +168,95 @@ export function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
         if (userStatus2 != null) {
           enrolledAt = userStatus2.enrolledAt;
         }
-        canLaunchActivityResult = null == enrolledAt || flag;
+        canLaunchActivityResult = null == enrolledAt || c1;
       }
       return canLaunchActivityResult;
     });
   }
   return items;
+}
+export function getActivityQuestForApplicationId(quests, validateApplicationResult) {
+  let items;
+  let closure_0 = validateApplicationResult;
+  let c1 = true;
+  if (null == validateApplicationResult) {
+    items = [];
+  } else {
+    const _Array = Array;
+    const arr = Array.from(quests.values());
+    items = arr.filter((userStatus) => {
+      const obj = QuestTaskUtils;
+      const activityApplicationId = obj.getActivityApplicationId(userStatus);
+      let canLaunchActivityResult = null != userStatus;
+      if (canLaunchActivityResult) {
+        const tmpResult = utils_QuestUtils;
+        canLaunchActivityResult = tmpResult.canLaunchActivity(userStatus);
+      }
+      if (canLaunchActivityResult) {
+        const tmpResult2 = QuestExpirationUtils;
+        canLaunchActivityResult = !tmpResult2.isQuestExpired(userStatus);
+      }
+      if (canLaunchActivityResult) {
+        canLaunchActivityResult = activityApplicationId === closure_0;
+      }
+      if (canLaunchActivityResult) {
+        canLaunchActivityResult = activityApplicationId !== metroRequire;
+      }
+      if (canLaunchActivityResult) {
+        userStatus = userStatus.userStatus;
+        let completedAt;
+        if (userStatus != null) {
+          completedAt = userStatus.completedAt;
+        }
+        canLaunchActivityResult = null == completedAt || c1;
+      }
+      if (canLaunchActivityResult) {
+        const userStatus2 = userStatus.userStatus;
+        let enrolledAt;
+        if (userStatus2 != null) {
+          enrolledAt = userStatus2.enrolledAt;
+        }
+        canLaunchActivityResult = null == enrolledAt || c1;
+      }
+      return canLaunchActivityResult;
+    });
+  }
+  return items.sort(function(userStatus, userStatus2) {
+    let enrolledAt;
+    let num;
+    userStatus = userStatus.userStatus;
+    let enrolledAt1;
+    if (userStatus != null) {
+      enrolledAt1 = userStatus.enrolledAt;
+    }
+    userStatus2 = userStatus2.userStatus;
+    if (userStatus2 != null) {
+      enrolledAt = userStatus2.enrolledAt;
+    }
+    if (null != enrolledAt1) {
+      let num2 = 1;
+      if (null != enrolledAt1) {
+        let num3 = -1;
+        if (null != enrolledAt) {
+          const _Date = Date;
+          const self = this;
+          const self2 = this;
+          const _Date2 = Date;
+          const self3 = this;
+          const self4 = this;
+          const date = new Date(enrolledAt1);
+          const time = date.getTime();
+          const date1 = new Date(enrolledAt);
+          num3 = time - date1.getTime();
+        }
+        num2 = num3;
+      }
+      num = num2;
+    } else {
+      num = 0;
+    }
+    return num;
+  })[0];
 }
 export function getQuestApplicationIdsForRunningGame(pid, arg1) {
   const obj = getApplicationIdsForGameDefault(arg1);

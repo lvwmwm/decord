@@ -1,21 +1,21 @@
-// Module ID: 17353
-// Function ID: 17354
+// Module ID: 17476
+// Function ID: 17477
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1072, 21, 5243, 2185, 17354, 1113, 5957, 17355, 5076, 7360, 2]
+// Dependencies: [19, 1072, 21, 5306, 2188, 17477, 1113, 6020, 17478, 5139, 7424, 2]
 // Exports: XboxTwoWayLinkUpsell
 
-// Module 17353 (XboxTwoWayLinkUpsell)
+// Module 17476 (XboxTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import dismissible_content from "dismissible_content" /* 5076 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7360 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 17354 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17355 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7424 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 17477 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17478 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,25 +1,25 @@
-// Module ID: 18436
-// Function ID: 18437
+// Module ID: 18561
+// Function ID: 18562
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 9135, 1072, 21, 5243, 575, 1113, 2185, 18437, 17221, 14883, 18442, 8576, 12311, 17219, 17090, 18443, 5866, 2]
+// Dependencies: [32, 19, 17, 9202, 1072, 21, 5306, 575, 1113, 2188, 18562, 17344, 14997, 18567, 8643, 12406, 17342, 17213, 18568, 5929, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 18436 (ContentAndSocialScreen)
+// Module 18561 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl16 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14883 */;
-import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 18437 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 18443 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14997 */;
+import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 18562 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 18568 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -42,7 +42,7 @@ let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/ContentAndSocialScreen.tsx");
 
 export default function ContentAndSocialSettings(route) {
-  const f116518 = () => {
+  const f117822 = () => {
     let tab;
     if (route != null) {
       const params = route.params;
@@ -62,9 +62,9 @@ export default function ContentAndSocialSettings(route) {
     ({ CONTENT_AND_SOCIAL_DISCORD: arr[0], CONNECTED_GAMES: arr[1] } = MobileUserSettings);
     return items;
   }, []);
-  const defaultIndex = _slicedToArray(react.useState(f116518), 2)[0];
+  const defaultIndex = _slicedToArray(react.useState(f117822), 2)[0];
   let items = [defaultIndex, memo];
-  _slicedToArray(react.useState(f116518), 2);
+  _slicedToArray(react.useState(f117822), 2);
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { defaultIndex, settings: memo };
@@ -104,21 +104,22 @@ export function DiscordPermissionsPage() {
     let items;
     let items10;
     let items11;
-    let items13;
+    let items12;
     let items14;
     let items15;
     let items16;
     let items17;
     let items18;
+    let items19;
     let items2;
     let items3;
     let items4;
     let items7;
     let items9;
     let lunaRv;
-    let obj19;
     let obj2;
-    let obj21;
+    let obj20;
+    let obj22;
     let obj3;
     let obj5;
     let obj6;
@@ -166,7 +167,7 @@ export function DiscordPermissionsPage() {
     const tmp9 = null != ageNoticeMessageRequestsNoticeVariant;
     intl7 = intl16.intl;
     items7 = [MobileUserSettings.ACTIVITY_PRIVACY_SHARE_MY_ACTIVITY];
-    const items8 = [obj11, , , , , , , , , , ];
+    const items8 = [obj11, , , , , , , , , , , ];
     const obj12 = { settings: items9 };
     items9 = [MobileUserSettings.ACTIVITY_PRIVACY_DEFAULT_SHARING];
     items8[1] = obj12;
@@ -174,61 +175,64 @@ export function DiscordPermissionsPage() {
     items10 = [MobileUserSettings.NOTIFY_FRIENDS_ON_COME_ONLINE];
     items8[2] = obj13;
     const obj14 = { settings: items11 };
-    items11 = [MobileUserSettings.NOTIFY_SERVER_MEMBERS_ON_GO_LIVE];
+    items11 = [MobileUserSettings.NOTIFY_FRIENDS_ON_CUSTOM_STATUS_UPDATE];
     items8[3] = obj14;
-    const obj15 = { label: intl8.string(intl16.t.MeYuqs), settings: tmp10, subLabel: tmp16 };
+    const obj15 = { settings: items12 };
+    items12 = [MobileUserSettings.NOTIFY_SERVER_MEMBERS_ON_GO_LIVE];
+    items8[4] = obj15;
+    const obj16 = { label: intl8.string(intl16.t.MeYuqs), settings: tmp10, subLabel: tmp16 };
     intl8 = intl16.intl;
     tmp10 = items6;
     const tmp6 = HelpdeskArticles;
     if (!allServersOptionSelected) {
-      const items12 = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(items12, items6, 0);
-      HermesBuiltin.arraySpread(items12, SafetyGuildSettingGuildSelect.GUILD_SPECIFIC_SETTINGS, arraySpreadResult);
-      tmp10 = items12;
+      const items13 = [];
+      const arraySpreadResult = HermesBuiltin.arraySpread(items13, items6, 0);
+      HermesBuiltin.arraySpread(items13, SafetyGuildSettingGuildSelect.GUILD_SPECIFIC_SETTINGS, arraySpreadResult);
+      tmp10 = items13;
     }
     tmp16 = undefined;
     if (allServersOptionSelected) {
       if (tmp9) {
-        tmp16 = React4(tmp3(17221).MessageRequestsNotice, {});
+        tmp16 = React4(tmp3(17344).MessageRequestsNotice, {});
       }
     }
-    items8[4] = obj15;
-    const obj16 = { label: intl9.string(intl16.t.XlGG9c), settings: items13 };
-    intl9 = tmp3(1113).intl;
-    items13 = [, , ];
-    ({ SAFETY_SEND_FRIEND_REQUESTS_EVERYONE: arr14[0], SAFETY_SEND_FRIEND_REQUESTS_MUTUAL_FRIENDS: arr14[1], SAFETY_SEND_FRIEND_REQUESTS_MUTUAL_GUILDS: arr14[2] } = MobileUserSettings);
     items8[5] = obj16;
-    const obj17 = { settings: items14 };
-    items14 = [MobileUserSettings.FRIEND_REQUEST_NOTES];
+    const obj17 = { label: intl9.string(intl16.t.XlGG9c), settings: items14 };
+    intl9 = tmp3(1113).intl;
+    items14 = [, , ];
+    ({ SAFETY_SEND_FRIEND_REQUESTS_EVERYONE: arr15[0], SAFETY_SEND_FRIEND_REQUESTS_MUTUAL_FRIENDS: arr15[1], SAFETY_SEND_FRIEND_REQUESTS_MUTUAL_GUILDS: arr15[2] } = MobileUserSettings);
     items8[6] = obj17;
-    const obj18 = { label: intl10.string(intl16.t["3wRort"]), settings: items15, subLabel: format4(v0aNQo9, obj19) };
+    const obj18 = { settings: items15 };
+    items15 = [MobileUserSettings.FRIEND_REQUEST_NOTES];
+    items8[7] = obj18;
+    const obj19 = { label: intl10.string(intl16.t["3wRort"]), settings: items16, subLabel: format4(v0aNQo9, obj20) };
     intl10 = tmp3(1113).intl;
-    items15 = [, ];
-    ({ ACCOUNT_BLOCKED_USERS_V2: arr16[0], ACCOUNT_IGNORED_USERS: arr16[1] } = MobileUserSettings);
+    items16 = [, ];
+    ({ ACCOUNT_BLOCKED_USERS_V2: arr17[0], ACCOUNT_IGNORED_USERS: arr17[1] } = MobileUserSettings);
     const intl11 = tmp3(1113).intl;
     format4 = intl11.format;
-    obj19 = { helpArticle: tmp5Result.getArticleURL(tmp6.STEALTH_REMEDIATION_FEATURE_GUIDE) };
+    obj20 = { helpArticle: tmp5Result.getArticleURL(tmp6.STEALTH_REMEDIATION_FEATURE_GUIDE) };
     v0aNQo9 = tmp3(1113).t["0aNQo9"];
-    items8[7] = obj18;
+    items8[8] = obj19;
     tmp5Result = HelpdeskUtilsDefault;
-    const obj20 = { label: intl12.string(intl16.t.bGSsnc), settings: items16, subLabel: format5(prop, obj21) };
+    const obj21 = { label: intl12.string(intl16.t.bGSsnc), settings: items17, subLabel: format5(prop, obj22) };
     intl12 = tmp3(1113).intl;
-    items16 = [, , ];
-    ({ SYNC_CONTACTS: arr17[0], SYNC_CONTACTS_NAME: arr17[1], STAFF_ONLY_FIND_YOUR_FRIENDS_DELETION: arr17[2] } = MobileUserSettings);
+    items17 = [, , ];
+    ({ SYNC_CONTACTS: arr18[0], SYNC_CONTACTS_NAME: arr18[1], STAFF_ONLY_FIND_YOUR_FRIENDS_DELETION: arr18[2] } = MobileUserSettings);
     const intl13 = tmp3(1113).intl;
     format5 = intl13.format;
-    obj21 = { onClick: ContactSyncUtils.handleOpenLearnMoreLink };
+    obj22 = { onClick: ContactSyncUtils.handleOpenLearnMoreLink };
     prop = tmp3(1113).t["TWz/S+"];
-    items8[8] = obj20;
-    const obj22 = { label: intl14.string(intl16.t["aBZ/oQ"]), settings: items17 };
+    items8[9] = obj21;
+    const obj23 = { label: intl14.string(intl16.t["aBZ/oQ"]), settings: items18 };
     intl14 = tmp3(1113).intl;
-    items17 = [, ];
-    ({ DISCOVERY_BY_PHONE: arr18[0], DISCOVERY_BY_EMAIL: arr18[1] } = MobileUserSettings);
-    items8[9] = obj22;
-    const obj23 = { label: intl15.string(intl16.t["+KNdnt"]), settings: items18 };
-    intl15 = tmp3(1113).intl;
-    items18 = [MobileUserSettings.IOS_CONVERSATION_SUGGESTIONS];
+    items18 = [, ];
+    ({ DISCOVERY_BY_PHONE: arr19[0], DISCOVERY_BY_EMAIL: arr19[1] } = MobileUserSettings);
     items8[10] = obj23;
+    const obj24 = { label: intl15.string(intl16.t["+KNdnt"]), settings: items19 };
+    intl15 = tmp3(1113).intl;
+    items19 = [MobileUserSettings.IOS_CONVERSATION_SUGGESTIONS];
+    items8[11] = obj24;
     HermesBuiltin.arraySpread(items5, items8, tmp7);
     return items5;
   }, items);
@@ -278,7 +282,7 @@ export function ConnectedGamesPage() {
     tmp7 = unpackModuleId(metroRequire, obj3);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React4(tmp2(17090), obj);
+    tmp7 = React4(tmp2(17213), obj);
   }
   return tmp7;
 }

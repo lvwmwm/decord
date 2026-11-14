@@ -1,17 +1,17 @@
-// Module ID: 15387
-// Function ID: 15388
+// Module ID: 15501
+// Function ID: 15502
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1072, 1083, 21, 15388, 6274, 15390, 15392, 10071, 9647, 1252, 6785, 8142, 8144, 13975, 38, 1266, 15393, 1113, 7427, 12428, 2]
+// Dependencies: [19, 1072, 1083, 21, 15502, 6337, 15504, 15506, 10139, 9714, 1256, 6848, 8208, 8210, 14079, 38, 1269, 15507, 1113, 7493, 12523, 2]
 // Exports: default
 
-// Module 15387 (OrbCheckoutModal)
+// Module 15501 (OrbCheckoutModal)
 import Constants2 from "Constants" /* 1083 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Stack_Stack from "Stack/Stack" /* 6274 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 10071 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15388 */;
-import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 15390 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Stack_Stack from "Stack/Stack" /* 6337 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 10139 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15502 */;
+import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 15504 */;
 import "react";
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -40,12 +40,12 @@ function OrbCheckoutModalContent(orbBalance) {
   const tmp4 = authStore2;
   if (tmp5) {
     const obj2 = { error: orbCheckoutErrorMessage };
-    tmp5 = unpackModuleId(tmp(15390).OrbCheckoutErrorCard, obj2);
+    tmp5 = unpackModuleId(tmp(15504).OrbCheckoutErrorCard, obj2);
   }
   const items = [tmp5, , ];
   const obj3 = { skuId, orbPriceAmount };
   orbPriceAmount = undefined;
-  const OrbCheckoutOrderSummary = tmp(15390).OrbCheckoutOrderSummary;
+  const OrbCheckoutOrderSummary = tmp(15504).OrbCheckoutOrderSummary;
   if (orbProductContext != null) {
     orbPriceAmount = orbProductContext.orbPriceAmount;
   }

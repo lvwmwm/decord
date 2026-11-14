@@ -1,14 +1,14 @@
-// Module ID: 7408
-// Function ID: 7409
+// Module ID: 7474
+// Function ID: 7475
 // Name: KeyboardAwareView
-// Dependencies: [32, 19, 17, 1495, 21, 2020, 5440, 1625, 5851, 7409, 1652, 2]
+// Dependencies: [32, 19, 17, 1498, 21, 2023, 5503, 1628, 5914, 7475, 1655, 2]
 
-// Module 7408 (KeyboardAwareView)
+// Module 7474 (KeyboardAwareView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;
@@ -37,14 +37,14 @@ const memoResult = react.memo(function KeyboardAwareView(keyboardHeightOffset) {
   let tmp = num;
   const useRef = react.useRef;
   let _Math = Math;
-  const obj2 = num(2020);
+  const obj2 = num(2023);
   let systemKeyboardHeight = obj2.getSystemKeyboardHeight();
   if (0 === systemKeyboardHeight) {
-    const tmpResult = tmp(5440);
+    const tmpResult = tmp(5503);
     let keyboardType = tmpResult.getKeyboardType();
     let num2 = 0;
-    if (keyboardType !== tmp(1625).KeyboardTypes.SYSTEM) {
-      const tmpResult3 = tmp(5851);
+    if (keyboardType !== tmp(1628).KeyboardTypes.SYSTEM) {
+      const tmpResult3 = tmp(5914);
       num2 = tmpResult3.getCustomKeyboardHeight();
     }
     systemKeyboardHeight = num2;
@@ -73,7 +73,7 @@ const memoResult = react.memo(function KeyboardAwareView(keyboardHeightOffset) {
       closure_1_2(maxResult);
     }
   }), items);
-  const tmp10 = ref(7409)(first, animated);
+  const tmp10 = ref(7475)(first, animated);
   const flattenResult = StyleSheet.flatten(style);
   let marginBottom;
   const tmp9 = ref;
@@ -88,7 +88,7 @@ const memoResult = react.memo(function KeyboardAwareView(keyboardHeightOffset) {
   let c0;
   let c1;
   [tmp13, tmp14, tmp15] = items1;
-  const tmpResult4 = tmp(1652);
+  const tmpResult4 = tmp(1655);
   class KeyboardAwareViewTsx1 {
     constructor() {
       const obj = { marginBottom: c0 + _undefined.get() };
@@ -101,7 +101,7 @@ const memoResult = react.memo(function KeyboardAwareView(keyboardHeightOffset) {
   KeyboardAwareViewTsx1.__initData = tmp13;
   const animatedStyle = tmpResult4.useAnimatedStyle(KeyboardAwareViewTsx1);
   const items3 = [style, animatedStyle];
-  return jsx(tmp9(1652).View, { style: items3, pointerEvents, children });
+  return jsx(tmp9(1655).View, { style: items3, pointerEvents, children });
 });
 const result = size.fileFinishedImporting("modules/keyboard/native/KeyboardAwareView.tsx");
 

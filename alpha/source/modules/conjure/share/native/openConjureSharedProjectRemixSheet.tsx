@@ -1,14 +1,14 @@
-// Module ID: 13685
-// Function ID: 13686
+// Module ID: 13790
+// Function ID: 13791
 // Name: openConjureSharedProjectRemixSheet
-// Dependencies: [19, 21, 10467, 5489, 10909, 2]
+// Dependencies: [19, 21, 10536, 5552, 10978, 2]
 // Exports: default
 
-// Module 13685 (openConjureSharedProjectRemixSheet)
+// Module 13790 (openConjureSharedProjectRemixSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5489 */;
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 10467 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 10909 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 10536 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 10978 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

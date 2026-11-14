@@ -1,253 +1,325 @@
 // Module ID: 9846
 // Function ID: 9847
-// Dependencies: [9733]
-// Exports: filenameIsInApp, node, nodeStackLineParser
+// Dependencies: [9808, 9811, 9824, 9847, 9848, 9834, 9806, 9849, 9842, 9818]
+// Exports: parseEventHintOrCaptureContext, prepareEvent
 
 // Module 9846
-import _mod9733 from "module_9733" /* 9733 */;
+import _mod9806 from "module_9806" /* 9806 */;
+import _mod9818 from "module_9818" /* 9818 */;
+import _mod9834 from "module_9834" /* 9834 */;
+import _mod9842 from "module_9842" /* 9842 */;
+import _mod9849 from "module_9849" /* 9849 */;
 
+let breadcrumbs, data, filename, integrations;
 
-export function filenameIsInApp(str) {
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
+function applyClientOptions(environment, environment2) {
+  let dist;
+  let maxValueLength;
+  let release;
+  ({ release, dist, maxValueLength } = environment2);
+  let num = 250;
+  environment = environment2.environment;
+  if (undefined !== maxValueLength) {
+    num = maxValueLength;
   }
-  if (!flag) {
-    flag = str && !str.startsWith("/") && !str.match(/^[A-Z]:/) && !str.startsWith(".") && !str.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-    const tmp = str && !str.startsWith("/") && !str.match(/^[A-Z]:/) && !str.startsWith(".") && !str.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
+  const DEFAULT_ENVIRONMENT = environment.environment || environment || _mod9834.DEFAULT_ENVIRONMENT;
+  environment.environment = DEFAULT_ENVIRONMENT;
+  const tmp3 = !environment.release && release;
+  if (tmp3) {
+    environment.release = release;
   }
-  const tmp2 = !flag && undefined !== str && !str.includes("node_modules/");
-  return tmp2;
+  const tmp4 = !environment.dist && dist;
+  if (tmp4) {
+    environment.dist = dist;
+  }
+  if (environment.message) {
+    const obj = _mod9806;
+    environment.message = obj.truncate(environment.message, num);
+  }
+  const tmp7 = environment.exception && environment.exception.values && environment.exception.values[0] && (environment.exception && environment.exception.values && environment.exception.values[0]).value;
+  if (tmp7) {
+    const obj2 = _mod9806;
+    (environment.exception && environment.exception.values && environment.exception.values[0]).value = obj2.truncate((environment.exception && environment.exception.values && environment.exception.values[0]).value, num);
+  }
+  const request = environment.request;
+  const tmp10 = request && request.url;
+  if (tmp10) {
+    const obj3 = _mod9806;
+    request.url = obj3.truncate(request.url, num);
+  }
 }
-export function node(arg0) {
-  let closure_0 = arg0;
-  const re1 = /^\s*[-]{4,}$/;
-  const re2 = /at (?:async )?(?:(.+?)\s+\()?(?:(.+):(\d+):(\d+)?|([^)]+))\)?/;
-  return (filename) => {
-    let _parseInt;
-    let _parseInt2;
-    let str10;
-    let str9;
-    let tmp25;
-    let tmp30;
-    const match = filename.match(re2);
-    if (match) {
-      let UNKNOWN_FUNCTION;
-      let tmp3;
-      let tmp4;
-      if (match[1]) {
-        const lastIndexOfResult = match[1].lastIndexOf(".");
-        let diff = lastIndexOfResult;
-        if ("." === match[1][lastIndexOfResult - 1]) {
-          diff = lastIndexOfResult - 1;
+function applyDebugIds(exception, arg1) {
+  const obj = _mod9849;
+  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((filename) => {
+        filename = closure_1_0 && filename.filename;
+        if (filename) {
+          filename.debug_id = closure_1_0[filename.filename];
         }
-        let substr2 = arr;
-        let tmp9;
-        let substr3;
-        if (diff > 0) {
-          const substr = arr.slice(0, diff);
-          const substr1 = arr.slice(diff + 1);
-          const index = substr.indexOf(".Module");
-          substr2 = arr;
-          tmp9 = substr1;
-          substr3 = substr;
-          if (index > 0) {
-            substr2 = arr.slice(index + 1);
-            substr3 = substr.slice(0, index);
-            tmp9 = substr1;
+      });
+    });
+  } catch (err) {
+  }
+}
+function applyDebugMeta(exception) {
+  const obj = {};
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((debug_id) => {
+        if (debug_id.debug_id) {
+          if (debug_id.abs_path) {
+            obj[debug_id.abs_path] = debug_id.debug_id;
+          } else if (debug_id.filename) {
+            obj[debug_id.filename] = debug_id.debug_id;
           }
+          delete tmp["debug_id"];
         }
-        tmp3 = substr2;
-        tmp4 = tmp9;
-      }
-      if (tmp4) {
-        UNKNOWN_FUNCTION = tmp4;
-      }
-      if (undefined === tmp3) {
-        if (!UNKNOWN_FUNCTION) {
-          UNKNOWN_FUNCTION = _mod9733.UNKNOWN_FUNCTION;
-        }
-        let combined = UNKNOWN_FUNCTION;
-        if (tmp13) {
-          const _HermesInternal = HermesInternal;
-          combined = "" + tmp13 + "." + UNKNOWN_FUNCTION;
-        }
-        tmp3 = combined;
-      }
-      if (match[2]) {
-        let str7;
-        const obj2 = match[2];
-        if (obj2.startsWith("file://")) {
-          const arr3 = match[2];
-          str7 = arr3.slice(7);
-        }
-        let match1 = str7;
-        const tmp18 = match[5];
-        if (str7) {
-          match1 = str7.match(/\/[A-Z]:/);
-        }
-        let substr4 = str7;
-        if (match1) {
-          substr4 = str7.slice(1);
-        }
-        let tmp21 = substr4 || !match[5];
-        let tmp22 = "native" === tmp18;
-        if (!tmp21) {
-          tmp21 = tmp22;
-        }
-        if (!tmp21) {
-          substr4 = match[5];
-        }
-        let decodeURIResult;
-        if (substr4) {
-          const _decodeURI = decodeURI;
-          decodeURIResult = decodeURI(substr4);
-        }
-        const obj3 = { filename: decodeURIResult, module: tmp25, function: tmp3, lineno: _parseInt(str9, 10) || undefined, colno: _parseInt2(str10, 10) || undefined, in_app: tmp30 };
-        tmp25 = undefined;
-        if (closure_0) {
-          tmp25 = closure_0(substr4);
-        }
-        str9 = match[3];
-        _parseInt = parseInt;
-        if (!str9) {
-          str9 = "";
-        }
-        str10 = match[4];
-        _parseInt2 = parseInt;
-        _parseInt(str9, 10) || undefined;
-        if (!str10) {
-          str10 = "";
-        }
-        _parseInt2(str10, 10) || undefined;
-        if (!tmp22) {
-          tmp22 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-          const tmp29 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-        }
-        tmp30 = !tmp22 && undefined !== str11 && !str11.includes("node_modules/");
-        return obj3;
-      }
-      str7 = match[2];
-    } else if (filename.match(re1)) {
-      return { filename };
+      });
+    });
+  } catch (err) {
+  }
+  if (0 !== Object.keys(obj).length) {
+    exception.debug_meta = exception.debug_meta || {};
+    let images = exception.debug_meta.images;
+    const debug_meta = exception.debug_meta;
+    if (!images) {
+      images = [];
     }
-  };
+    debug_meta.images = images;
+    images = exception.debug_meta.images;
+    const _Object = Object;
+    const entries = Object.entries(obj);
+    const item1 = entries.forEach((item) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = item;
+      images.push({ type: "sourcemap", code_file: tmp, debug_id: tmp2 });
+    });
+  }
 }
-export function nodeStackLineParser(arg0) {
-  let closure_0 = arg0;
-  const re1 = /^\s*[-]{4,}$/;
-  const re2 = /at (?:async )?(?:(.+?)\s+\()?(?:(.+):(\d+):(\d+)?|([^)]+))\)?/;
-  const items = [
-    90,
-    (filename) => {
-      let _parseInt;
-      let _parseInt2;
-      let str10;
-      let str9;
-      let tmp25;
-      let tmp30;
-      const match = filename.match(re2);
-      if (match) {
-        let UNKNOWN_FUNCTION;
-        let tmp3;
-        let tmp4;
-        if (match[1]) {
-          const lastIndexOfResult = match[1].lastIndexOf(".");
-          let diff = lastIndexOfResult;
-          if ("." === match[1][lastIndexOfResult - 1]) {
-            diff = lastIndexOfResult - 1;
+let closure_5 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "requestSession", "propagationContext"];
+
+export { applyClientOptions };
+export { applyDebugIds };
+export { applyDebugMeta };
+export function parseEventHintOrCaptureContext(captureContext) {
+  if (captureContext) {
+    let tmp5;
+    const tmp3 = captureContext instanceof _mod9818.Scope || typeof captureContext === "function";
+    if (tmp3) {
+      tmp5 = { captureContext };
+      const obj = { captureContext };
+    } else {
+      const _Object = Object;
+      const keys = Object.keys(captureContext);
+      tmp5 = captureContext;
+    }
+    return tmp5;
+  }
+}
+export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, getScopeData) {
+  let timestamp;
+  let uuid4Result;
+  normalizeDepth = normalizeDepth.normalizeDepth;
+  let num = 3;
+  if (undefined !== normalizeDepth) {
+    num = normalizeDepth;
+  }
+  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
+  let num2 = 1000;
+  if (undefined !== normalizeMaxBreadth) {
+    num2 = normalizeMaxBreadth;
+  }
+  let obj = { event_id: uuid4Result, timestamp };
+  let merged = Object.assign(event_id);
+  uuid4Result = event_id.event_id || event_id2.event_id;
+  if (!uuid4Result) {
+    const tmp4 = num;
+    let tmp5 = num2;
+    let obj2 = num(num2[0]);
+    uuid4Result = obj2.uuid4();
+  }
+  timestamp = event_id.timestamp;
+  if (!timestamp) {
+    let obj3 = num(num2[1]);
+    timestamp = obj3.dateTimestampInSeconds();
+  }
+  integrations = event_id2.integrations;
+  if (!integrations) {
+    const integrations1 = normalizeDepth.integrations;
+    integrations = integrations1.map((name) => name.name);
+  }
+  applyClientOptions(obj, normalizeDepth);
+  if (integrations.length > 0) {
+    obj.sdk = obj.sdk || {};
+    let integrations2 = obj.sdk.integrations;
+    const sdk = obj.sdk;
+    if (!integrations2) {
+      integrations2 = [];
+    }
+    const items = [];
+    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
+    sdk.integrations = items;
+  }
+  const tmp14 = emit;
+  if (tmp14) {
+    emit.emit("applyFrameMetadata", event_id);
+  }
+  if (undefined === event_id.type) {
+    applyDebugIds(obj, normalizeDepth.stackParser);
+  }
+  const captureContext = event_id2.captureContext;
+  let obj4 = clone;
+  if (captureContext) {
+    let cloneResult;
+    if (clone) {
+      cloneResult = clone.clone();
+    } else {
+      const self = this;
+      const self2 = this;
+      cloneResult = new num(num2[9]).Scope();
+    }
+    cloneResult.update(captureContext);
+    obj4 = cloneResult;
+  }
+  if (event_id2.mechanism) {
+    const obj6 = num(num2[0]);
+    const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
+  }
+  if (emit) {
+    let eventProcessors = emit.getEventProcessors();
+  } else {
+    eventProcessors = [];
+  }
+  const obj7 = num(num2[2]);
+  const globalScope = obj7.getGlobalScope();
+  const scopeData = globalScope.getScopeData();
+  if (getScopeData) {
+    const scopeData1 = getScopeData.getScopeData();
+    const tmp24Result = num(num2[3]);
+    tmp24Result.mergeScopeData(scopeData, scopeData1);
+  }
+  if (obj4) {
+    const scopeData2 = obj4.getScopeData();
+    const tmp24Result4 = num(num2[3]);
+    tmp24Result4.mergeScopeData(scopeData, scopeData2);
+  }
+  let tmp31 = event_id2.attachments || [];
+  const items1 = [...scopeData.attachments];
+  if (items1.length) {
+    event_id2.attachments = items1;
+  }
+  const tmp24Result5 = num(num2[3]);
+  const result1 = tmp24Result5.applyScopeDataToEvent(obj, scopeData);
+  const items2 = [...scopeData.eventProcessors];
+  const tmp24Result6 = num(num2[4]);
+  const result2 = tmp24Result6.notifyEventProcessors(items2, obj, event_id2);
+  return result2.then((breadcrumbs) => {
+    let breadcrumbs1;
+    let normalizer;
+    let normalizer2;
+    let normalizer3;
+    const tmp = breadcrumbs;
+    if (tmp) {
+      applyDebugMeta(breadcrumbs);
+    }
+    let tmp5 = breadcrumbs;
+    if (typeof num === "number") {
+      num2 = 0;
+      tmp5 = breadcrumbs;
+      if (num > 0) {
+        let closure_0 = tmp4;
+        let closure_1 = num2;
+        let tmp31 = null;
+        if (breadcrumbs) {
+          let obj = {};
+          let merged = Object.assign(breadcrumbs);
+          breadcrumbs = breadcrumbs.breadcrumbs;
+          if (breadcrumbs) {
+            let obj2 = {
+              breadcrumbs: breadcrumbs1.map((data) => {
+                        let normalizer;
+                        const obj = {};
+                        const merged = Object.assign(data);
+                        data = data.data;
+                        if (data) {
+                          const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                          normalizer = num(num2[8]);
+                          data = obj2;
+                        }
+                        const merged1 = Object.assign(data);
+                        return obj;
+                      })
+            };
+            breadcrumbs1 = breadcrumbs.breadcrumbs;
+            breadcrumbs = obj2;
           }
-          let substr2 = arr;
-          let tmp9;
-          let substr3;
-          if (diff > 0) {
-            const substr = arr.slice(0, diff);
-            const substr1 = arr.slice(diff + 1);
-            const index = substr.indexOf(".Module");
-            substr2 = arr;
-            tmp9 = substr1;
-            substr3 = substr;
-            if (index > 0) {
-              substr2 = arr.slice(index + 1);
-              substr3 = substr.slice(0, index);
-              tmp9 = substr1;
+          let merged1 = Object.assign(breadcrumbs);
+          let user = breadcrumbs.user;
+          if (user) {
+            const obj3 = { user: normalizer.normalize(breadcrumbs.user, num, num2) };
+            normalizer = _mod9842;
+            user = obj3;
+          }
+          const merged2 = Object.assign(user);
+          let contexts = breadcrumbs.contexts;
+          if (contexts) {
+            const obj4 = { contexts: normalizer2.normalize(breadcrumbs.contexts, num, num2) };
+            normalizer2 = _mod9842;
+            contexts = obj4;
+          }
+          const merged3 = Object.assign(contexts);
+          let extra = breadcrumbs.extra;
+          if (extra) {
+            const obj5 = { extra: normalizer3.normalize(breadcrumbs.extra, num, num2) };
+            normalizer3 = _mod9842;
+            extra = obj5;
+          }
+          const merged4 = Object.assign(extra);
+          const tmp27 = breadcrumbs.contexts && breadcrumbs.contexts.trace && obj.contexts;
+          if (tmp27) {
+            obj.contexts.trace = breadcrumbs.contexts.trace;
+            if (breadcrumbs.contexts.trace.data) {
+              const trace = obj.contexts.trace;
+              const normalizer4 = _mod9842;
+              trace.data = normalizer4.normalize(breadcrumbs.contexts.trace.data, num, num2);
             }
           }
-          tmp3 = substr2;
-          tmp4 = tmp9;
+          if (breadcrumbs.spans) {
+            const spans = breadcrumbs.spans;
+            obj.spans = spans.map((data) => {
+              let normalizer;
+              const obj = {};
+              const merged = Object.assign(data);
+              data = data.data;
+              if (data) {
+                const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                normalizer = num(num2[8]);
+                data = obj2;
+              }
+              const merged1 = Object.assign(data);
+              return obj;
+            });
+          }
+          tmp31 = obj;
+          const tmp30 = breadcrumbs.contexts && breadcrumbs.contexts.flags && obj.contexts;
+          if (tmp30) {
+            const contexts2 = obj.contexts;
+            const normalizer5 = _mod9842;
+            num = 3;
+            contexts2.flags = normalizer5.normalize(breadcrumbs.contexts.flags, 3, num2);
+            tmp31 = obj;
+          }
         }
-        if (tmp4) {
-          UNKNOWN_FUNCTION = tmp4;
-        }
-        if (undefined === tmp3) {
-          if (!UNKNOWN_FUNCTION) {
-            UNKNOWN_FUNCTION = _mod9733.UNKNOWN_FUNCTION;
-          }
-          let combined = UNKNOWN_FUNCTION;
-          if (tmp13) {
-            const _HermesInternal = HermesInternal;
-            combined = "" + tmp13 + "." + UNKNOWN_FUNCTION;
-          }
-          tmp3 = combined;
-        }
-        if (match[2]) {
-          let str7;
-          const obj2 = match[2];
-          if (obj2.startsWith("file://")) {
-            const arr3 = match[2];
-            str7 = arr3.slice(7);
-          }
-          let match1 = str7;
-          const tmp18 = match[5];
-          if (str7) {
-            match1 = str7.match(/\/[A-Z]:/);
-          }
-          let substr4 = str7;
-          if (match1) {
-            substr4 = str7.slice(1);
-          }
-          let tmp21 = substr4 || !match[5];
-          let tmp22 = "native" === tmp18;
-          if (!tmp21) {
-            tmp21 = tmp22;
-          }
-          if (!tmp21) {
-            substr4 = match[5];
-          }
-          let decodeURIResult;
-          if (substr4) {
-            const _decodeURI = decodeURI;
-            decodeURIResult = decodeURI(substr4);
-          }
-          const obj3 = { filename: decodeURIResult, module: tmp25, function: tmp3, lineno: _parseInt(str9, 10) || undefined, colno: _parseInt2(str10, 10) || undefined, in_app: tmp30 };
-          tmp25 = undefined;
-          if (closure_0) {
-            tmp25 = closure_0(substr4);
-          }
-          str9 = match[3];
-          _parseInt = parseInt;
-          if (!str9) {
-            str9 = "";
-          }
-          str10 = match[4];
-          _parseInt2 = parseInt;
-          _parseInt(str9, 10) || undefined;
-          if (!str10) {
-            str10 = "";
-          }
-          _parseInt2(str10, 10) || undefined;
-          if (!tmp22) {
-            tmp22 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-            const tmp29 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-          }
-          tmp30 = !tmp22 && undefined !== str11 && !str11.includes("node_modules/");
-          return obj3;
-        }
-        str7 = match[2];
-      } else if (filename.match(re1)) {
-        return { filename };
+        tmp5 = tmp31;
       }
     }
-  ];
-  return items;
+    return tmp5;
+  });
 }

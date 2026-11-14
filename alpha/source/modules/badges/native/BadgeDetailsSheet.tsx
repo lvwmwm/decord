@@ -1,39 +1,41 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10111
+// Function ID: 10112
 // Name: BadgeDetailsSheet
-// Dependencies: [5, 32, 19, 17, 5244, 1385, 8481, 1072, 5504, 21, 5243, 575, 5974, 5866, 1652, 10045, 504, 10046, 10047, 10048, 1705, 10049, 2150, 1389, 10050, 10059, 15158, 5489, 10043, 15159, 8537, 1113, 15166, 15163, 15170, 5873, 15171, 8486, 5485, 1627, 10009, 11753, 15164, 8493, 5834, 5503, 5507, 5838, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 1388, 10112, 8547, 1072, 5567, 21, 5306, 575, 6037, 5929, 1655, 10113, 504, 10114, 10115, 10116, 1708, 10117, 2153, 1392, 10118, 10127, 15272, 5552, 10110, 15273, 8604, 1113, 7459, 15279, 15277, 15284, 5936, 15285, 8552, 5548, 1630, 10076, 15278, 11819, 8559, 5897, 5566, 5570, 5901, 2]
 // Exports: default
 
-// Module 10044 (BadgeDetailsSheet)
+// Module 10111 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5504 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5974 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8486 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10043 */;
-import BadgeUtils from "BadgeUtils" /* 10045 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15158 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 6037 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10110 */;
+import BadgeUtils from "BadgeUtils" /* 10113 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15272 */;
+import useBadgeDirectoryBadgeIndicators from "useBadgeDirectoryBadgeIndicators" /* 15278 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import UserStore from "UserStore" /* 1385 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8481 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import UserStore from "UserStore" /* 1388 */;
+import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 10112 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8547 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 let c2, set;
 
 let Platform;
-let closure_12;
 let closure_14;
+let closure_15;
 let map1;
 let metroRequire;
 let obj10;
@@ -51,7 +53,7 @@ let rect;
 let size;
 function BadgeAccessoryLine(segments) {
   segments = segments.segments;
-  let tmp = closure_15();
+  let tmp = closure_16();
   const accessoryDot = tmp;
   let obj = {
     style: tmp.accessoryLine,
@@ -62,29 +64,29 @@ function BadgeAccessoryLine(segments) {
       let tmp2 = index > 0;
       ({ key, node } = item);
       const Fragment = react.Fragment;
-      const tmp = map1;
+      const tmp = gesture;
       if (tmp2) {
         const obj = { style: accessoryDot.accessoryDot, "aria-hidden": true };
-        tmp2 = authStore2(metroRequire, obj);
+        tmp2 = map1(metroRequire, obj);
       }
       const obj2 = { children: items };
       items = [tmp2, node];
       return tmp(Fragment, obj2, key);
     })
   };
-  return closure_12(closure_6, obj);
+  return closure_13(closure_6, obj);
 }
 function InfoNotice(children) {
   let items;
   children = children.children;
-  const tmp = closure_15();
+  const tmp = closure_16();
   const obj = { style: tmp.notice, children: items };
   const obj2 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_INFO, style: tmp.noticeIcon };
   const CircleInformationIcon = CircleInformationIcon2.CircleInformationIcon;
-  items = [authStore2(CircleInformationIcon, obj2), ];
+  items = [map1(CircleInformationIcon, obj2), ];
   const obj3 = { variant: "body-xs/medium", color: "text-default", style: tmp.noticeText, children };
-  items[1] = authStore2(Text_Text.Text, obj3);
-  return map1(metroRequire, obj);
+  items[1] = map1(Text_Text.Text, obj3);
+  return gesture(metroRequire, obj);
 }
 function BadgeUnlockLabel(unlock) {
   let Text;
@@ -95,9 +97,9 @@ function BadgeUnlockLabel(unlock) {
   let tmp5;
   unlock = unlock.unlock;
   const opacity = unlock.opacity;
-  const tmp = closure_15();
-  let obj = _mod1652;
-  const items = [closure_18, opacity];
+  const tmp = closure_16();
+  let obj = _mod1655;
+  const items = [closure_19, opacity];
   let c0;
   [tmp4, tmp5] = items;
   class BadgeDetailsSheetTsx1 {
@@ -111,18 +113,18 @@ function BadgeUnlockLabel(unlock) {
   BadgeDetailsSheetTsx1.__workletHash = 3063648354188;
   BadgeDetailsSheetTsx1.__initData = tmp4;
   const animatedStyle = obj.useAnimatedStyle(BadgeDetailsSheetTsx1);
-  const obj2 = { style: items2, pointerEvents: "none", "aria-hidden": true, children: authStore2(Text, obj3) };
+  const obj2 = { style: items2, pointerEvents: "none", "aria-hidden": true, children: map1(Text, obj3) };
   items2 = [tmp.unlockLabel, animatedStyle];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   obj3 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.centeredText, children: tmp2Result.getBadgeUnlockLabel(unlock.badge, unlock.previousTierKey) };
-  Text = tmp2(5866).Text;
+  Text = tmp2(5929).Text;
   tmp2Result = BadgeUtils;
-  return authStore2(View, obj2);
+  return map1(View, obj2);
 }
 function BadgeDetailsSheetContent(badge) {
   let Heading;
   let Text;
-  let View6;
+  let View7;
   let animatedUrl;
   let contentOpacity;
   let displayName;
@@ -133,6 +135,7 @@ function BadgeDetailsSheetContent(badge) {
   let intl2;
   let intl3;
   let isNitro;
+  let isViewerOwnershipKnown;
   let items12;
   let items13;
   let items14;
@@ -141,25 +144,27 @@ function BadgeDetailsSheetContent(badge) {
   let items17;
   let items18;
   let items19;
-  let items21;
+  let items20;
   let items22;
   let items23;
   let items24;
   let items25;
+  let items26;
   let num2;
   let obj11;
   let obj14;
-  let obj17;
-  let obj19;
-  let obj24;
-  let obj27;
+  let obj18;
+  let obj20;
+  let obj25;
   let obj28;
-  let obj32;
-  let obj40;
+  let obj29;
+  let obj33;
   let obj41;
+  let obj42;
   let obj7;
   let obj9;
   let sheetIndex;
+  let showNewTag;
   let startsHidden;
   let targetUsername;
   let titleScale;
@@ -186,14 +191,14 @@ function BadgeDetailsSheetContent(badge) {
   badge = badge.badge;
   ({ unlock, contentOpacity, titleScale, unlockLabelOpacity, viewerBadge, displayedUserId } = badge);
   const isViewingOtherUser = badge.isViewingOtherUser;
-  const isViewerOwnershipKnown = badge.isViewerOwnershipKnown;
+  ({ isViewerOwnershipKnown, showNewTag } = badge);
   let badgeDetailsCta;
   ({ sheetIndex, startsHidden, targetUsername } = badge);
-  const tmp = closure_15();
-  let obj = badge(isViewingOtherUser[16]);
+  const tmp = closure_16();
+  let obj = badge(isViewingOtherUser[17]);
   let items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = badge(isViewingOtherUser[16]);
+  let obj2 = badge(isViewingOtherUser[17]);
   const items1 = [UserStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     currentUser = currentUser.getCurrentUser();
@@ -203,11 +208,11 @@ function BadgeDetailsSheetContent(badge) {
     }
     return premiumType;
   });
-  const tmp7 = displayedUserId(isViewingOtherUser[17])(badge.badge_id);
-  const tmp8 = displayedUserId(isViewingOtherUser[18])({ badge, viewerBadge, isViewingOtherUser });
-  let tmp34Result12 = displayedUserId(isViewingOtherUser[19])({ badge, isViewingOtherUser });
-  let obj3 = badge(isViewingOtherUser[14]);
-  const items2 = [closure_20, contentOpacity];
+  const tmp7 = displayedUserId(isViewingOtherUser[18])(badge.badge_id);
+  const tmp8 = displayedUserId(isViewingOtherUser[19])({ badge, viewerBadge, isViewingOtherUser });
+  let tmp34Result12 = displayedUserId(isViewingOtherUser[20])({ badge, isViewingOtherUser });
+  let obj3 = badge(isViewingOtherUser[15]);
+  const items2 = [closure_21, contentOpacity];
   let c0;
   [tmp10, tmp11] = items2;
   class BadgeDetailsSheetTsx2 {
@@ -221,10 +226,10 @@ function BadgeDetailsSheetContent(badge) {
   BadgeDetailsSheetTsx2.__workletHash = 4967119618479;
   BadgeDetailsSheetTsx2.__initData = tmp10;
   const animatedStyle = obj3.useAnimatedStyle(BadgeDetailsSheetTsx2);
-  const items4 = [closure_21, titleScale];
+  const items4 = [closure_22, titleScale];
   c0 = undefined;
   [tmp13, tmp14] = items4;
-  const tmp2Result = badge(isViewingOtherUser[14]);
+  const tmp2Result = badge(isViewingOtherUser[15]);
   class BadgeDetailsSheetTsx3 {
     constructor() {
       let items;
@@ -241,10 +246,10 @@ function BadgeDetailsSheetContent(badge) {
   const animatedStyle1 = tmp2Result.useAnimatedStyle(BadgeDetailsSheetTsx3);
   [tmp17, tmp18] = react.useState(!startsHidden);
   _slicedToArray(react.useState(!startsHidden), 2);
-  const items6 = [closure_22, contentOpacity];
+  const items6 = [closure_23, contentOpacity];
   c0 = undefined;
   [tmp20, tmp21] = items6;
-  const tmp2Result14 = badge(isViewingOtherUser[14]);
+  const tmp2Result14 = badge(isViewingOtherUser[15]);
   class BadgeDetailsSheetTsx4 {
     constructor() {
       return _undefined.get() > 0;
@@ -254,9 +259,9 @@ function BadgeDetailsSheetContent(badge) {
   BadgeDetailsSheetTsx4.__closure = items7;
   BadgeDetailsSheetTsx4.__workletHash = 4791037630466;
   BadgeDetailsSheetTsx4.__initData = tmp20;
-  const items8 = [closure_23, , ];
+  const items8 = [closure_24, , ];
   const useAnimatedReaction = tmp2Result14.useAnimatedReaction;
-  items8[1] = badge(isViewingOtherUser[20]).scheduleOnRN;
+  items8[1] = badge(isViewingOtherUser[21]).scheduleOnRN;
   items8[2] = tmp18;
   c0 = undefined;
   let c1;
@@ -277,9 +282,9 @@ function BadgeDetailsSheetContent(badge) {
   if (!tmp17) {
     obj4 = { pointerEvents: "none", "aria-hidden": true };
   }
-  const tmp2Result15 = badge(isViewingOtherUser[15]);
+  const tmp2Result15 = badge(isViewingOtherUser[16]);
   const displayTier = tmp2Result15.getDisplayTier(badge);
-  const tmp2Result16 = badge(isViewingOtherUser[21]);
+  const tmp2Result16 = badge(isViewingOtherUser[22]);
   const badgeArtUrls = tmp2Result16.getBadgeArtUrls(badge, displayTier, stateFromStores);
   ({ animatedUrl, imageUrl } = badgeArtUrls);
   let rarity;
@@ -289,12 +294,12 @@ function BadgeDetailsSheetContent(badge) {
   if (rarity == null) {
     rarity = badge.rarity;
   }
-  const tmp2Result17 = badge(isViewingOtherUser[21]);
+  const tmp2Result17 = badge(isViewingOtherUser[22]);
   const badgeTitle = tmp2Result17.getBadgeTitle(badge, displayTier);
   ({ isNitro, eyebrow, displayName } = badgeTitle);
   const tiers = badge.tiers;
   let num;
-  const tmp2Result18 = badge(isViewingOtherUser[21]);
+  const tmp2Result18 = badge(isViewingOtherUser[22]);
   const isLegacyDisplayBadgeResult = tmp2Result18.isLegacyDisplayBadge(badge);
   if (tiers != null) {
     num = tiers.length;
@@ -311,33 +316,33 @@ function BadgeDetailsSheetContent(badge) {
     flag = false;
   }
   const items10 = [];
-  const tmp2Result19 = badge(isViewingOtherUser[22]);
+  const tmp2Result19 = badge(isViewingOtherUser[23]);
   if (!tmp2Result19.isNullOrEmpty(badge.info_label)) {
     const push = items10.push;
-    const obj6 = { key: "info", node: closure_12(badge(isViewingOtherUser[13]).Text, obj7) };
+    const obj6 = { key: "info", node: closure_13(badge(isViewingOtherUser[14]).Text, obj7) };
     obj7 = { variant: "body-md/medium", color: "text-subtle", children: badge.info_label };
     push(obj6);
   }
   const push2 = items10.push;
-  const obj8 = { key: "status", node: closure_12(Text, obj9) };
+  const obj8 = { key: "status", node: closure_13(Text, obj9) };
   obj9 = { variant: "body-md/medium", color: "text-subtle", children: tmp2Result20.getBadgeStatusText(badge, tmp7) };
-  Text = tmp2(tmp3[13]).Text;
-  tmp2Result20 = badge(isViewingOtherUser[21]);
+  Text = tmp2(tmp3[14]).Text;
+  tmp2Result20 = badge(isViewingOtherUser[22]);
   push2(obj8);
-  const tmp36 = badge.owned && null != rarity && rarity !== badge(isViewingOtherUser[23]).BadgeRarity.COMMON;
+  const tmp36 = badge.owned && null != rarity && rarity !== badge(isViewingOtherUser[24]).BadgeRarity.COMMON;
   if (tmp36) {
     const push3 = items10.push;
-    const obj10 = { key: "rarity", node: closure_12(displayedUserId(isViewingOtherUser[24]), obj11) };
+    const obj10 = { key: "rarity", node: closure_13(displayedUserId(isViewingOtherUser[25]), obj11) };
     obj11 = { rarity };
     push3(obj10);
   }
-  const tmp2Result21 = badge(isViewingOtherUser[21]);
+  const tmp2Result21 = badge(isViewingOtherUser[22]);
   let result = tmp2Result21.isUpgradeableNitroViewer(badge, stateFromStores1);
-  const tmp2Result22 = badge(isViewingOtherUser[21]);
+  const tmp2Result22 = badge(isViewingOtherUser[22]);
   const badgeDescriptionText = tmp2Result22.getBadgeDescriptionText({ badge, viewerBadge, isViewerOnUpgradeableNitro: result });
-  const tmp2Result23 = badge(isViewingOtherUser[22]);
+  const tmp2Result23 = badge(isViewingOtherUser[23]);
   const isNullOrEmptyResult = tmp2Result23.isNullOrEmpty(badgeDescriptionText);
-  const tmp2Result24 = badge(isViewingOtherUser[25]);
+  const tmp2Result24 = badge(isViewingOtherUser[26]);
   badgeDetailsCta = tmp2Result24.getBadgeDetailsCta(badge.badge_id);
   const items11 = [badge, badgeDetailsCta, displayedUserId, isViewingOtherUser];
   const callback = obj5.useCallback(() => {
@@ -351,26 +356,26 @@ function BadgeDetailsSheetContent(badge) {
     }
   }, items11);
   const callback1 = obj5.useCallback(() => {
-    const obj = displayedUserId(isViewingOtherUser[27]);
-    obj.hideActionSheet(badge(isViewingOtherUser[28]).BADGE_DETAILS_SHEET_KEY);
-    const obj2 = badge(isViewingOtherUser[29]);
+    const obj = displayedUserId(isViewingOtherUser[28]);
+    obj.hideActionSheet(badge(isViewingOtherUser[29]).BADGE_DETAILS_SHEET_KEY);
+    const obj2 = badge(isViewingOtherUser[30]);
     const result = obj2.closeBadgeDirectoryScreen();
-    const obj3 = badge(isViewingOtherUser[30]);
+    const obj3 = badge(isViewingOtherUser[31]);
     const obj4 = { screen: constants.DATA_AND_PRIVACY };
     obj3.openUserSettings(obj4);
   }, []);
   let result1 = isViewerOwnershipKnown;
   const callback2 = obj5.useCallback(() => {
-    const obj = displayedUserId(isViewingOtherUser[27]);
-    obj.hideActionSheet(badge(isViewingOtherUser[28]).BADGE_DETAILS_SHEET_KEY);
-    const obj2 = badge(isViewingOtherUser[29]);
+    const obj = displayedUserId(isViewingOtherUser[28]);
+    obj.hideActionSheet(badge(isViewingOtherUser[29]).BADGE_DETAILS_SHEET_KEY);
+    const obj2 = badge(isViewingOtherUser[30]);
     const result = obj2.closeBadgeDirectoryScreen();
-    const obj3 = badge(isViewingOtherUser[29]);
+    const obj3 = badge(isViewingOtherUser[30]);
     const result1 = obj3.openBadgeDirectoryScreen();
   }, []);
   if (isViewerOwnershipKnown) {
     const obj12 = { badge, isViewingOtherUser, viewerOwnsBadge: flag };
-    const tmp2Result25 = badge(isViewingOtherUser[21]);
+    const tmp2Result25 = badge(isViewingOtherUser[22]);
     result1 = tmp2Result25.shouldShowLegacyUnavailableNotice(obj12);
   }
   let tmp46 = badge;
@@ -383,128 +388,136 @@ function BadgeDetailsSheetContent(badge) {
   }
   let tmp34Result = null;
   if (result1) {
-    const obj13 = { children: intl.format(badge(isViewingOtherUser[31]).t.vFekBs, obj14) };
-    intl = tmp2(tmp3[31]).intl;
+    const obj13 = { children: intl.format(badge(isViewingOtherUser[32]).t.vFekBs, obj14) };
+    intl = tmp2(tmp3[32]).intl;
     obj14 = { onViewBadges: callback2 };
     tmp34Result = tmp34(InfoNotice, obj13);
   }
   const obj15 = { style: tmp.header, children: items13 };
+  if (showNewTag) {
+    const obj16 = { style: items12, children: closure_13(badge(isViewingOtherUser[33]).Badge, { type: "new", variant: "primary" }) };
+    items12 = [tmp.newTag, animatedStyle];
+    const View = tmp6(tmp3[15]).View;
+    const merged = Object.assign(obj4);
+    showNewTag = tmp34(View, obj16);
+  }
+  items13 = [showNewTag, , ];
   if (null != unlock) {
-    const obj16 = { style: tmp.graphic, children: closure_12(tmp6Result, obj17, "" + unlock.badge.badge_id + ":" + unlock.badge.current_tier) };
-    obj17 = { userId: displayedUserId, sheetIndex, contentOpacity, titleScale, unlockLabelOpacity };
-    tmp6Result = displayedUserId(isViewingOtherUser[32]);
-    const merged = Object.assign(unlock);
+    const obj17 = { style: tmp.graphic, children: closure_13(tmp6Result, obj18, "" + unlock.badge.badge_id + ":" + unlock.badge.current_tier) };
+    obj18 = { userId: displayedUserId, sheetIndex, contentOpacity, titleScale, unlockLabelOpacity };
+    tmp6Result = displayedUserId(isViewingOtherUser[34]);
+    const merged1 = Object.assign(unlock);
     const _HermesInternal = HermesInternal;
-    tmp34Result9 = tmp34(tmp52, obj16);
+    tmp34Result9 = tmp34(tmp52, obj17);
   } else {
     tmp34Result9 = null != imageUrl;
     if (tmp34Result9) {
-      const obj18 = { style: animatedStyle, children: closure_12(tmp6Result2, obj19) };
-      const View = tmp6(tmp3[14]).View;
-      const merged1 = Object.assign(obj4);
-      obj19 = { url: imageUrl, height: num2, animated: null != animatedUrl, style: items12 };
+      const obj19 = { style: animatedStyle, children: closure_13(tmp6Result2, obj20) };
+      const View2 = tmp6(tmp3[15]).View;
+      const merged2 = Object.assign(obj4);
+      obj20 = { url: imageUrl, height: num2, animated: null != animatedUrl, style: items14 };
       num2 = 120;
-      tmp6Result2 = displayedUserId(isViewingOtherUser[33]);
+      tmp6Result2 = displayedUserId(isViewingOtherUser[35]);
       if (null != animatedUrl) {
         num2 = 180;
       }
-      items12 = [tmp.graphic, null != animatedUrl && tmp.graphicAnimated];
-      tmp34Result9 = tmp34(View, obj18);
+      items14 = [tmp.graphic, null != animatedUrl && tmp.graphicAnimated];
+      tmp34Result9 = tmp34(View2, obj19);
     }
   }
-  items13 = [tmp34Result9, ];
-  const obj21 = { style: items14, children: items16 };
-  items14 = [tmp.identity, animatedStyle];
-  const obj20 = { style: tmp.identityArea, children: items19 };
-  const View2 = tmp6(tmp3[14]).View;
-  const merged2 = Object.assign(obj4);
+  items13[1] = tmp34Result9;
+  const obj22 = { style: items15, children: items17 };
+  items15 = [tmp.identity, animatedStyle];
+  const obj21 = { style: tmp.identityArea, children: items20 };
+  const View3 = tmp6(tmp3[15]).View;
+  const merged3 = Object.assign(obj4);
   let tmp34Result10 = null != eyebrow;
   if (tmp34Result10) {
-    const obj22 = { variant: "body-md/medium", color: "text-subtle", style: items15, children: eyebrow };
-    items15 = [, ];
-    ({ centeredText: arr17[0], eyebrow: arr17[1] } = tmp);
-    tmp34Result10 = tmp34(tmp2(tmp3[13]).Text, obj22);
+    const obj23 = { variant: "body-md/medium", color: "text-subtle", style: items16, children: eyebrow };
+    items16 = [, ];
+    ({ centeredText: arr18[0], eyebrow: arr18[1] } = tmp);
+    tmp34Result10 = tmp34(tmp2(tmp3[14]).Text, obj23);
   }
-  items16 = [tmp34Result10, , ];
-  const obj23 = { style: items17, children: closure_12(Heading, obj24) };
-  items17 = [tmp.title, animatedStyle1];
-  const View3 = tmp6(tmp3[14]).View;
+  items17 = [tmp34Result10, , ];
+  const obj24 = { style: items18, children: closure_13(Heading, obj25) };
+  items18 = [tmp.title, animatedStyle1];
+  const View4 = tmp6(tmp3[15]).View;
   let str3 = "display-sm";
-  Heading = tmp2(tmp3[13]).Heading;
+  Heading = tmp2(tmp3[14]).Heading;
   if (isNitro) {
     str3 = "nitro-sm";
   }
-  obj24 = { variant: str3, color: "text-strong", style: items18, children: displayName };
-  items18 = [tmp.centeredText, isNitro && tmp.uppercase];
-  items16[1] = closure_12(View3, obj23);
-  items16[2] = closure_12(BadgeAccessoryLine, { segments: items10 });
-  items19 = [closure_13(View2, obj21), ];
+  obj25 = { variant: str3, color: "text-strong", style: items19, children: displayName };
+  items19 = [tmp.centeredText, isNitro && tmp.uppercase];
+  items17[1] = closure_13(View4, obj24);
+  items17[2] = closure_13(BadgeAccessoryLine, { segments: items10 });
+  items20 = [closure_14(View3, obj22), ];
   let tmp34Result11 = null != unlock;
   if (tmp34Result11) {
-    const obj25 = { unlock, opacity: unlockLabelOpacity };
-    tmp34Result11 = tmp34(BadgeUnlockLabel, obj25);
+    const obj26 = { unlock, opacity: unlockLabelOpacity };
+    tmp34Result11 = tmp34(BadgeUnlockLabel, obj26);
   }
-  items19[1] = tmp34Result11;
-  items13[1] = closure_13(closure_6, obj20);
-  const items20 = [closure_13(closure_6, obj15), , ];
+  items20[1] = tmp34Result11;
+  items13[2] = closure_14(closure_6, obj21);
+  const items21 = [closure_14(closure_6, obj15), , ];
   if (tmp34Result12) {
-    const obj26 = { style: animatedStyle, children: closure_12(InfoNotice, obj27) };
-    const View4 = tmp6(tmp3[14]).View;
-    const merged3 = Object.assign(obj4);
-    obj27 = { children: intl2.format(badge(isViewingOtherUser[31]).t.Zh44ni, obj28) };
-    intl2 = tmp2(tmp3[31]).intl;
-    obj28 = { onGoToSettings: callback1 };
-    tmp34Result12 = tmp34(View4, obj26);
+    const obj27 = { style: animatedStyle, children: closure_13(InfoNotice, obj28) };
+    const View5 = tmp6(tmp3[15]).View;
+    const merged4 = Object.assign(obj4);
+    obj28 = { children: intl2.format(badge(isViewingOtherUser[32]).t.Zh44ni, obj29) };
+    intl2 = tmp2(tmp3[32]).intl;
+    obj29 = { onGoToSettings: callback1 };
+    tmp34Result12 = tmp34(View5, obj27);
   }
-  items20[1] = tmp34Result12;
+  items21[1] = tmp34Result12;
   if (!tmp8) {
     if (isNullOrEmptyResult) {
       let tmp34Result13;
       if (!tmp50Result4) {
         tmp34Result13 = null != tmp34Result;
         if (tmp34Result13) {
-          const obj29 = { style: animatedStyle, children: tmp34Result };
-          const View5 = tmp6(tmp3[14]).View;
-          const merged4 = Object.assign(obj4);
-          tmp34Result13 = tmp34(View5, obj29);
+          const obj30 = { style: animatedStyle, children: tmp34Result };
+          const View6 = tmp6(tmp3[15]).View;
+          const merged5 = Object.assign(obj4);
+          tmp34Result13 = tmp34(View6, obj30);
         }
       }
-      const obj30 = { children: items20 };
-      items20[2] = tmp34Result13;
-      return closure_13(closure_14, obj30);
+      const obj31 = { children: items21 };
+      items21[2] = tmp34Result13;
+      return closure_14(closure_15, obj31);
     }
   }
-  const obj31 = { style: tmp.card, children: closure_13(View6, obj32) };
-  obj32 = { style: items21, children: items23 };
-  items21 = [tmp.cardContent, animatedStyle];
-  View6 = tmp6(tmp3[14]).View;
-  const merged5 = Object.assign(obj4);
+  const obj32 = { style: tmp.card, children: closure_14(View7, obj33) };
+  obj33 = { style: items22, children: items24 };
+  items22 = [tmp.cardContent, animatedStyle];
+  View7 = tmp6(tmp3[15]).View;
+  const merged6 = Object.assign(obj4);
   let tmp50Result = tmp8;
   if (tmp50Result) {
-    const obj33 = { children: items22 };
-    const obj34 = { badge, viewerBadge };
-    items22 = [closure_12(tmp6(tmp3[34]), obj34), ];
-    const obj35 = { style: tmp.divider };
-    items22[1] = closure_12(closure_6, obj35);
-    tmp50Result = tmp50(tmp51, obj33);
+    const obj34 = { children: items23 };
+    const obj35 = { badge, viewerBadge };
+    items23 = [closure_13(tmp6(tmp3[36]), obj35), ];
+    const obj36 = { style: tmp.divider };
+    items23[1] = closure_13(closure_6, obj36);
+    tmp50Result = tmp50(tmp51, obj34);
   }
-  items23 = [tmp50Result, , , , ];
+  items24 = [tmp50Result, , , , ];
   let tmp50Result3 = tmp41;
   if (!isNullOrEmptyResult) {
     let tmp34Result14 = isLegacyDisplayBadgeResult;
-    const obj36 = { style: tmp.descriptionGroup, children: items24 };
+    const obj37 = { style: tmp.descriptionGroup, children: items25 };
     if (tmp34Result14) {
-      const obj37 = { variant: "body-sm/medium", color: "text-subtle", children: intl3.string(badge(isViewingOtherUser[31]).t["/Gmn3f"]) };
-      const Text2 = tmp2(tmp3[13]).Text;
-      intl3 = tmp2(tmp3[31]).intl;
-      tmp34Result14 = tmp34(Text2, obj37);
+      const obj38 = { variant: "body-sm/medium", color: "text-subtle", children: intl3.string(badge(isViewingOtherUser[32]).t["/Gmn3f"]) };
+      const Text2 = tmp2(tmp3[14]).Text;
+      intl3 = tmp2(tmp3[32]).intl;
+      tmp34Result14 = tmp34(Text2, obj38);
     }
-    items24 = [tmp34Result14, ];
-    const obj38 = { variant: "body-md/medium", color: "text-default", children: badgeDescriptionText };
-    items24[1] = closure_12(badge(isViewingOtherUser[13]).Text, obj38);
-    tmp50Result3 = tmp50(tmp52, obj36);
+    items25 = [tmp34Result14, ];
+    const obj39 = { variant: "body-md/medium", color: "text-default", children: badgeDescriptionText };
+    items25[1] = closure_13(badge(isViewingOtherUser[14]).Text, obj39);
+    tmp50Result3 = tmp50(tmp52, obj37);
   }
-  items23[1] = tmp50Result3;
+  items24[1] = tmp50Result3;
   let tmp34Result15 = tmp41;
   if (!isNullOrEmptyResult) {
     tmp34Result15 = null != badgeDetailsCta;
@@ -513,29 +526,29 @@ function BadgeDetailsSheetContent(badge) {
     tmp34Result15 = isViewerOwnershipKnown;
   }
   if (tmp34Result15) {
-    const obj39 = { variant: tmp2Result26.getBadgeCtaVariant(obj40), size: "md", onPress: callback, text: badgeDetailsCta.ctaLabel(obj41) };
-    const Button = tmp2(tmp3[35]).Button;
-    obj40 = { isNitro, isViewerOnUpgradeableNitro: result, viewerOwnsBadge: flag };
-    obj41 = { owned: flag, isViewerOnUpgradeableNitro: result };
-    tmp2Result26 = badge(isViewingOtherUser[21]);
-    tmp34Result15 = tmp34(Button, obj39);
+    const obj40 = { variant: tmp2Result26.getBadgeCtaVariant(obj41), size: "md", onPress: callback, text: badgeDetailsCta.ctaLabel(obj42) };
+    const Button = tmp2(tmp3[37]).Button;
+    obj41 = { isNitro, isViewerOnUpgradeableNitro: result, viewerOwnsBadge: flag };
+    obj42 = { owned: flag, isViewerOnUpgradeableNitro: result };
+    tmp2Result26 = badge(isViewingOtherUser[22]);
+    tmp34Result15 = tmp34(Button, obj40);
   }
-  items23[2] = tmp34Result15;
+  items24[2] = tmp34Result15;
   if (tmp50Result4) {
     let tmp34Result16 = !tmp8 && tmp41;
     if (tmp34Result16) {
-      const obj42 = { style: tmp.divider };
-      tmp34Result16 = tmp34(tmp52, obj42);
+      const obj43 = { style: tmp.divider };
+      tmp34Result16 = tmp34(tmp52, obj43);
     }
-    const obj43 = { children: items25 };
-    items25 = [tmp34Result16, ];
-    const obj44 = { badge: tmp46, isViewingOtherUser, targetUsername, isViewerOnUpgradeableNitro: result };
-    items25[1] = closure_12(displayedUserId(isViewingOtherUser[36]), obj44);
-    tmp50Result4 = tmp50(tmp51, obj43);
+    const obj44 = { children: items26 };
+    items26 = [tmp34Result16, ];
+    const obj45 = { badge: tmp46, isViewingOtherUser, targetUsername, isViewerOnUpgradeableNitro: result };
+    items26[1] = closure_13(displayedUserId(isViewingOtherUser[38]), obj45);
+    tmp50Result4 = tmp50(tmp51, obj44);
   }
-  items23[3] = tmp50Result4;
-  items23[4] = tmp34Result;
-  tmp34Result13 = tmp34(tmp52, obj31);
+  items24[3] = tmp50Result4;
+  items24[4] = tmp34Result;
+  tmp34Result13 = tmp34(tmp52, obj32);
 }
 function BadgeDetailsPage(badgeId) {
   let badge1;
@@ -546,6 +559,7 @@ function BadgeDetailsPage(badgeId) {
   let isViewingOtherUser;
   let obj7;
   let sheetIndex;
+  let showNewTag;
   let source;
   let targetUsername;
   let tmp24;
@@ -557,13 +571,13 @@ function BadgeDetailsPage(badgeId) {
   hasUpdates = undefined;
   let sharedValue;
   let sharedValue2;
-  ({ isUnlockReady, sheetIndex, isViewingOtherUser, targetUsername, isViewerOwnershipKnown, source } = badgeId);
-  let tmp = closure_15();
-  let obj = badgeId(currentUserId[16]);
+  ({ isUnlockReady, sheetIndex, isViewingOtherUser, targetUsername, isViewerOwnershipKnown, source, showNewTag } = badgeId);
+  let tmp = closure_16();
+  let obj = badgeId(currentUserId[17]);
   const items = [BadgeDirectoryStore];
   const items1 = [badgeId, displayedUserId];
   const stateFromStores = obj.useStateFromStores(items, () => BadgeDirectoryStore.getBadgeById(badgeId, displayedUserId), items1);
-  const obj2 = badgeId(currentUserId[16]);
+  const obj2 = badgeId(currentUserId[17]);
   const items2 = [BadgeDirectoryStore];
   const items3 = [badgeId, currentUserId];
   const stateFromStores1 = obj2.useStateFromStores(items2, () => {
@@ -574,7 +588,7 @@ function BadgeDetailsPage(badgeId) {
     return badgeById;
   }, items3);
   const items4 = [sharedValue];
-  const obj3 = badgeId(currentUserId[16]);
+  const obj3 = badgeId(currentUserId[17]);
   const stateFromStores2 = obj3.useStateFromStores(items4, () => sharedValue.useReducedMotion);
   const tmp7 = stateFromStores2(unlock.useState(null), 2);
   unlock = tmp7[0];
@@ -611,20 +625,20 @@ function BadgeDetailsPage(badgeId) {
   }
   let num = 1;
   let num2 = 1;
-  const useSharedValue = tmp2(tmp3[14]).useSharedValue;
-  badgeId(currentUserId[14]);
+  const useSharedValue = tmp2(tmp3[15]).useSharedValue;
+  badgeId(currentUserId[15]);
   if (hasUpdates) {
     num2 = 0;
   }
   sharedValue = useSharedValue(num2);
-  const useSharedValue2 = tmp2(tmp3[14]).useSharedValue;
-  badgeId(currentUserId[14]);
+  const useSharedValue2 = tmp2(tmp3[15]).useSharedValue;
+  badgeId(currentUserId[15]);
   if (hasUpdates) {
     num = 1.2;
   }
   sharedValue2 = useSharedValue2(num);
   const items7 = [sharedValue, hasUpdates, sharedValue2, unlock];
-  const tmp2Result4 = badgeId(currentUserId[14]);
+  const tmp2Result4 = badgeId(currentUserId[15]);
   const sharedValue1 = tmp2Result4.useSharedValue(0);
   const effect2 = obj4.useEffect(() => {
     if (null == first) {
@@ -657,8 +671,8 @@ function BadgeDetailsPage(badgeId) {
     if (badge == null) {
       badge = stateFromStores;
     }
-    const obj6 = { style: tmp.page, children: closure_12(tmp24, obj7) };
-    obj7 = { badge, unlock, sheetIndex, contentOpacity: sharedValue, titleScale: sharedValue2, unlockLabelOpacity: sharedValue1, startsHidden: hasUpdates, viewerBadge: badge1, displayedUserId, isViewingOtherUser, targetUsername, isViewerOwnershipKnown };
+    const obj6 = { style: tmp.page, children: closure_13(tmp24, obj7) };
+    obj7 = { badge, unlock, sheetIndex, contentOpacity: sharedValue, titleScale: sharedValue2, unlockLabelOpacity: sharedValue1, startsHidden: hasUpdates, viewerBadge: badge1, displayedUserId, isViewingOtherUser, targetUsername, isViewerOwnershipKnown, showNewTag };
     badge1 = undefined;
     const tmp23 = hasUpdates;
     tmp24 = BadgeDetailsSheetContent;
@@ -668,17 +682,16 @@ function BadgeDetailsPage(badgeId) {
     if (badge1 == null) {
       badge1 = stateFromStores1;
     }
-    return closure_12(tmp23, obj6);
+    return closure_13(tmp23, obj6);
   }
 }
-let react = react_mod;
 ({ Platform, View: metroRequire } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
-let closure_11 = ActionSheetConstants.ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
+let closure_12 = ActionSheetConstants.ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
 let Fragment = Fragment_mod;
-({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
+({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { content: { flexGrow: 1 }, page: obj2, header: obj3, graphic: obj4, graphicAnimated: obj5, identity: { alignItems: "center" }, centeredText: { textAlign: "center" }, eyebrow: obj6, title: { transformOrigin: "bottom" }, identityArea: { alignSelf: "stretch" }, unlockLabel: rect, uppercase: { textTransform: "uppercase" }, accessoryLine: obj7, accessoryDot: size, card: obj8, cardContent: obj9, descriptionGroup: obj10, divider: obj11, notice: obj12, noticeIcon: { marginTop: 2 }, noticeText: { flex: 1 } };
+let obj = { content: { flexGrow: 1 }, page: obj2, header: obj3, newTag: { alignSelf: "flex-start" }, graphic: obj4, graphicAnimated: obj5, identity: { alignItems: "center" }, centeredText: { textAlign: "center" }, eyebrow: obj6, title: { transformOrigin: "bottom" }, identityArea: { alignSelf: "stretch" }, unlockLabel: rect, uppercase: { textTransform: "uppercase" }, accessoryLine: obj7, accessoryDot: size, card: obj8, cardContent: obj9, descriptionGroup: obj10, divider: obj11, notice: obj12, noticeIcon: { marginTop: 2 }, noticeText: { flex: 1 } };
 obj2 = { flexGrow: 1, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
 createStyles = createStyles.createStyles;
 obj3 = { alignItems: "center", paddingTop: nativeDefault.space.PX_8 };
@@ -693,12 +706,12 @@ obj9 = { gap: nativeDefault.space.PX_16 };
 obj10 = { gap: nativeDefault.space.PX_4 };
 obj11 = { height: 1, marginTop: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj12 = { flexDirection: "row", gap: nativeDefault.space.PX_4, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_INFO, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
-let closure_15 = createStyles(obj);
-let closure_18 = { code: "(function BadgeDetailsSheetTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
-let closure_20 = { code: "(function BadgeDetailsSheetTsx2(){let[contentOpacity]=this.__closure;return{opacity:contentOpacity.get()};})" };
-let closure_21 = { code: "(function BadgeDetailsSheetTsx3(){let[titleScale]=this.__closure;return{transform:[{scale:titleScale.get()}]};})" };
-let closure_22 = { code: "(function BadgeDetailsSheetTsx4(){let[contentOpacity]=this.__closure;return contentOpacity.get()>0;})" };
-let closure_23 = { code: "(function BadgeDetailsSheetTsx5(isShown,wasShown){let[scheduleOnRN,setIsContentShown]=this.__closure;if(wasShown!=null)scheduleOnRN(setIsContentShown,isShown);})" };
+let closure_16 = createStyles(obj);
+let closure_19 = { code: "(function BadgeDetailsSheetTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
+let closure_21 = { code: "(function BadgeDetailsSheetTsx2(){let[contentOpacity]=this.__closure;return{opacity:contentOpacity.get()};})" };
+let closure_22 = { code: "(function BadgeDetailsSheetTsx3(){let[titleScale]=this.__closure;return{transform:[{scale:titleScale.get()}]};})" };
+let closure_23 = { code: "(function BadgeDetailsSheetTsx4(){let[contentOpacity]=this.__closure;return contentOpacity.get()>0;})" };
+let closure_24 = { code: "(function BadgeDetailsSheetTsx5(isShown,wasShown){let[scheduleOnRN,setIsContentShown]=this.__closure;if(wasShown!=null)scheduleOnRN(setIsContentShown,isShown);})" };
 size = size_mod;
 let result = size.fileFinishedImporting("modules/badges/native/BadgeDetailsSheet.tsx");
 
@@ -707,43 +720,42 @@ export default function BadgeDetailsSheet(badgeId) {
   let _undefined;
   let bottomSheetClose;
   let bottomSheetRef;
-  let closure_5;
   let intl2;
-  let items16;
-  let items17;
   let items18;
+  let items19;
+  let items20;
   let name;
-  let obj8;
-  let tmp31;
-  let tmp32;
-  let tmp39Result1;
+  let obj10;
+  let tmp42;
+  let tmp43;
+  let tmp50Result3;
   badgeId = badgeId.badgeId;
   const displayedUserId = badgeId.displayedUserId;
   const isViewingOtherUser = badgeId.isViewingOtherUser;
   const source = badgeId.source;
-  react = undefined;
+  let combined;
+  let closure_6;
   let hasUnreadIndicator;
   let ref;
-  let combined;
   let c9;
   const targetUsername = badgeId.targetUsername;
-  let tmp = closure_15();
+  let tmp = closure_16();
   let tmp3 = isViewingOtherUser;
   let tmp2 = displayedUserId;
   let tmp5 = badgeId;
-  const sum = Math.max(displayedUserId(isViewingOtherUser[39])().bottom, closure_11) + 4;
-  let obj = badgeId(isViewingOtherUser[16]);
-  const items = [combined];
+  const sum = Math.max(displayedUserId(isViewingOtherUser[41])().bottom, closure_12) + 4;
+  let obj = badgeId(isViewingOtherUser[17]);
+  const items = [ref];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const currentUser = combined.getCurrentUser();
+    const currentUser = ref.getCurrentUser();
     let id;
     if (currentUser != null) {
       id = currentUser.id;
     }
     return id;
   });
-  let obj2 = badgeId(isViewingOtherUser[16]);
-  const items1 = [c9];
+  let obj2 = badgeId(isViewingOtherUser[17]);
+  const items1 = [BadgeDirectoryStore];
   const items2 = [stateFromStores, isViewingOtherUser];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let tmp = !isViewingOtherUser;
@@ -753,14 +765,14 @@ export default function BadgeDetailsSheet(badgeId) {
     }
     return tmp;
   }, items2);
-  let obj3 = badgeId(isViewingOtherUser[40]);
+  let obj3 = badgeId(isViewingOtherUser[42]);
   const isBadgeDirectoryUpdatesEnabled = obj3.useIsBadgeDirectoryUpdatesEnabled({ location: "BadgeDetailsSheet" });
-  let obj4 = badgeId(isViewingOtherUser[16]);
-  const items3 = [c9];
+  let obj4 = badgeId(isViewingOtherUser[17]);
+  const items3 = [BadgeDirectoryStore];
   const items4 = [displayedUserId];
   const stateFromStores2 = obj4.useStateFromStores(items3, () => BadgeDirectoryStore.hasCatalogFor(displayedUserId), items4);
-  let obj5 = badgeId(isViewingOtherUser[16]);
-  const items5 = [c9];
+  let obj5 = badgeId(isViewingOtherUser[17]);
+  const items5 = [BadgeDirectoryStore];
   const items6 = [badgeId, displayedUserId];
   const stateFromStores3 = obj5.useStateFromStores(items5, () => BadgeDirectoryStore.getBadgeById(badgeId, displayedUserId), items6);
   let tmp12 = !isViewingOtherUser;
@@ -771,21 +783,57 @@ export default function BadgeDetailsSheet(badgeId) {
     }
     tmp12 = true === has_updates;
   }
-  const tmp5Result = tmp5(tmp3[41]);
-  const isBadgeUnreadStateEnabled = tmp5Result.useIsBadgeUnreadStateEnabled({ location: "BadgeDetailsSheet", hasUnread: tmp12 });
-  const items7 = [tmp7];
-  const items8 = [displayedUserId];
-  const tmp5Result6 = tmp5(tmp3[16]);
-  let stateFromStores4 = tmp5Result6.useStateFromStores(items7, () => BadgeDirectoryStore.hasCatalogFetchErrorFor(displayedUserId), items8);
+  const items7 = [c9];
+  const items8 = [badgeId, isViewingOtherUser];
+  const tmp5Result = tmp5(tmp3[17]);
+  const stateFromStores4 = tmp5Result.useStateFromStores(items7, () => {
+    let result = !isViewingOtherUser;
+    if (result) {
+      const obj = useBadgeDirectoryBadgeIndicators;
+      result = obj.isNewIndicatorBadgeId(badgeId);
+    }
+    if (result) {
+      const seenBadgeIndicators = BadgeDirectorySeenStore.getSeenBadgeIndicators();
+      result = !seenBadgeIndicators.has(badgeId);
+    }
+    return result;
+  }, items8);
+  combined = "" + displayedUserId + ":" + badgeId;
+  const tmp18 = stateFromStores(combined.useState(null), 2);
+  const first = tmp18[0];
+  let pageKey;
+  const tmp20 = tmp18[1];
+  if (first != null) {
+    pageKey = first.pageKey;
+  }
+  if (pageKey !== combined) {
+    const obj6 = { pageKey: combined, hadNewIndicator: stateFromStores4 };
+    tmp20(obj6);
+  }
+  let pageKey1;
+  if (first != null) {
+    pageKey1 = first.pageKey;
+  }
+  let tmp26 = tmp12;
+  const useIsBadgeUnreadStateEnabled = tmp5(tmp3[44]).useIsBadgeUnreadStateEnabled;
+  tmp5(tmp3[44]);
+  if (!tmp12) {
+    tmp26 = tmp24;
+  }
+  let isBadgeUnreadStateEnabled = useIsBadgeUnreadStateEnabled({ location: "BadgeDetailsSheet", hasUnread: tmp26 });
   const items9 = [tmp7];
   const items10 = [displayedUserId];
-  const tmp5Result7 = tmp5(tmp3[16]);
-  let stateFromStores5 = tmp5Result7.useStateFromStores(items9, () => !BadgeDirectoryStore.isCatalogStaleFor(displayedUserId), items10);
-  const tmp19 = stateFromStores(react.useState(false), 2);
-  react = tmp19[1];
-  const items11 = [displayedUserId];
-  const first = tmp19[0];
-  const effect = react.useEffect(() => {
+  const tmp5Result8 = tmp5(tmp3[17]);
+  const stateFromStores5 = tmp5Result8.useStateFromStores(items9, () => BadgeDirectoryStore.hasCatalogFetchErrorFor(displayedUserId), items10);
+  const items11 = [tmp7];
+  const items12 = [displayedUserId];
+  const tmp5Result9 = tmp5(tmp3[17]);
+  let stateFromStores6 = tmp5Result9.useStateFromStores(items11, () => !BadgeDirectoryStore.isCatalogStaleFor(displayedUserId), items12);
+  const tmp17Result = stateFromStores(combined.useState(false), 2);
+  closure_6 = tmp17Result[1];
+  const items13 = [displayedUserId];
+  const first1 = tmp17Result[0];
+  const effect = obj7.useEffect(() => {
     function refetch() {
       return obj(...arguments);
     }
@@ -820,7 +868,7 @@ export default function BadgeDetailsSheet(badgeId) {
                 c1 = 1;
                 c2 = 1;
                 const obj5 = { value: obj2.fetchBadgeDirectory(c1), done: false };
-                obj2 = closure_2_0(isViewingOtherUser[37]);
+                obj2 = closure_2_0(isViewingOtherUser[39]);
                 return obj5;
               }
             } else if (arg0 === 1) {
@@ -831,7 +879,7 @@ export default function BadgeDetailsSheet(badgeId) {
               obj = { value, done: true };
               return obj;
             } else {
-              closure_1_5(true);
+              closure_1_6(true);
               c2 = 3;
               return { value: "HermesInternal", done: null };
             }
@@ -843,19 +891,19 @@ export default function BadgeDetailsSheet(badgeId) {
       });
       return obj(...arguments);
     };
-    obj = _undefined;
-    const tmp2 = _undefined.hasCatalogFor(displayedUserId) && !obj.isCatalogStaleFor(displayedUserId);
+    obj = BadgeDirectoryStore;
+    const tmp2 = BadgeDirectoryStore.hasCatalogFor(displayedUserId) && !obj.isCatalogStaleFor(displayedUserId);
     if (!tmp2) {
       const tmp3 = refetch();
     }
-  }, items11);
-  const items12 = [displayedUserId];
-  const items13 = [stateFromStores, isViewingOtherUser];
-  const callback = react.useCallback(() => {
+  }, items13);
+  const items14 = [displayedUserId];
+  const items15 = [stateFromStores, isViewingOtherUser];
+  const callback = obj7.useCallback(() => {
     const obj = BadgeDirectoryActionCreators;
     const badgeDirectory = obj.fetchBadgeDirectory(displayedUserId, { isRetry: true });
-  }, items12);
-  const effect1 = react.useEffect(() => {
+  }, items14);
+  const effect1 = obj7.useEffect(() => {
     const tmp = isViewingOtherUser && null != stateFromStores;
     if (tmp) {
       const tmp5 = stateFromStores;
@@ -864,11 +912,11 @@ export default function BadgeDetailsSheet(badgeId) {
         const badgeDirectory = obj.fetchBadgeDirectory(tmp5);
       }
     }
-  }, items13);
-  hasUnreadIndicator = tmp24;
-  ref = obj9.useRef(null);
-  const items14 = [badgeId, displayedUserId, "directory" === source && isBadgeUnreadStateEnabled && tmp12, isViewingOtherUser, source];
-  const effect2 = obj9.useEffect(() => {
+  }, items15);
+  hasUnreadIndicator = tmp35;
+  ref = obj7.useRef(null);
+  const items16 = [badgeId, displayedUserId, "directory" === source && isBadgeUnreadStateEnabled && tmp12, isViewingOtherUser, source];
+  const effect2 = obj7.useEffect(() => {
     combined = "" + displayedUserId + ":" + badgeId;
     const tmp2 = badgeId;
     if (ref.current !== combined) {
@@ -879,33 +927,30 @@ export default function BadgeDetailsSheet(badgeId) {
         trackBadgeDirectoryActionDefault(obj);
       }
     }
-  }, items14);
-  const obj6 = { badgeId, enabled: !isViewingOtherUser };
-  const tmp5Result8 = tmp5(tmp3[42]);
-  const dismissBadgeDirectoryBadgeIndicator = tmp5Result8.useDismissBadgeDirectoryBadgeIndicator(obj6);
-  if (!stateFromStores4) {
-    stateFromStores4 = stateFromStores2;
-  }
-  const tmp5Result9 = tmp5(tmp3[14]);
-  const sharedValue = tmp5Result9.useSharedValue(-1);
-  combined = "" + displayedUserId + ":" + badgeId;
-  [tmp31, tmp32] = stateFromStores(react.useState(null), 2);
-  c9 = tmp32;
-  stateFromStores(react.useState(null), 2);
-  const tmp33 = null != tmp31 && tmp31 !== combined;
-  if (tmp33) {
-    tmp32(null);
-  }
-  const items15 = [combined];
-  let tmp39Result = tmp27;
-  const callback1 = obj9.useCallback(() => _undefined(combined), items15);
-  if (!(isBadgeUnreadStateEnabled && tmp12)) {
-    tmp39Result = tmp31 === combined;
-  }
+  }, items16);
+  const obj8 = { badgeId, enabled: !isViewingOtherUser };
   const tmp5Result10 = tmp5(tmp3[43]);
-  const bottomSheetRef1 = tmp5Result10.useBottomSheetRef();
+  const dismissBadgeDirectoryBadgeIndicator = tmp5Result10.useDismissBadgeDirectoryBadgeIndicator(obj8);
+  let tmp50Result2 = stateFromStores5 || stateFromStores2;
+  const tmp5Result11 = tmp5(tmp3[15]);
+  const sharedValue = tmp5Result11.useSharedValue(-1);
+  [tmp42, tmp43] = stateFromStores(combined.useState(null), 2);
+  c9 = tmp43;
+  stateFromStores(combined.useState(null), 2);
+  const tmp44 = null != tmp42 && tmp42 !== combined;
+  if (tmp44) {
+    tmp43(null);
+  }
+  const items17 = [combined];
+  let tmp50Result = tmp39;
+  const callback1 = obj7.useCallback(() => _undefined(combined), items17);
+  if (!(isBadgeUnreadStateEnabled && tmp12)) {
+    tmp50Result = tmp42 === combined;
+  }
+  const tmp5Result12 = tmp5(tmp3[45]);
+  const bottomSheetRef1 = tmp5Result12.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
-  const context = obj9.useContext(tmp2(tmp3[44]));
+  const context = obj7.useContext(tmp2(tmp3[46]));
   let str;
   if (context != null) {
     str = context.transitionState;
@@ -913,53 +958,56 @@ export default function BadgeDetailsSheet(badgeId) {
   if (str == null) {
     str = "visible";
   }
-  const obj7 = { startExpanded: !isBadgeDirectoryUpdatesEnabled, scrollable: true, dismissAccessibilityLabel: name, ref: bottomSheetRef, handleDisabled: tmp39Result, animatedIndex: sharedValue, children: closure_13(BottomSheetScrollView, obj8) };
+  const obj9 = { startExpanded: !isBadgeDirectoryUpdatesEnabled, scrollable: true, dismissAccessibilityLabel: name, ref: bottomSheetRef, handleDisabled: tmp50Result, animatedIndex: sharedValue, children: closure_14(BottomSheetScrollView, obj10) };
   name = undefined;
-  const BottomSheet = tmp5(tmp3[45]).BottomSheet;
+  const BottomSheet = tmp5(tmp3[47]).BottomSheet;
   if (stateFromStores3 != null) {
     name = stateFromStores3.name;
   }
-  obj8 = { contentContainerStyle: items16, children: items17 };
-  items16 = [tmp.content, { paddingBottom: sum }];
-  BottomSheetScrollView = tmp5(tmp3[46]).BottomSheetScrollView;
-  if (tmp39Result) {
+  obj10 = { contentContainerStyle: items18, children: items19 };
+  items18 = [tmp.content, { paddingBottom: sum }];
+  BottomSheetScrollView = tmp5(tmp3[48]).BottomSheetScrollView;
+  if (tmp50Result) {
     let name1;
-    const ActionSheetHeaderBar = tmp5(tmp3[47]).ActionSheetHeaderBar;
+    const ActionSheetHeaderBar = tmp5(tmp3[49]).ActionSheetHeaderBar;
     if (stateFromStores3 != null) {
       name1 = stateFromStores3.name;
     }
-    const obj10 = { accessibilityLabel: name1, onPress: bottomSheetClose };
-    tmp39Result = tmp39(ActionSheetHeaderBar, obj10);
+    const obj11 = { accessibilityLabel: name1, onPress: bottomSheetClose };
+    tmp50Result = tmp50(ActionSheetHeaderBar, obj11);
   }
-  items17 = [tmp39Result, ];
+  items19 = [tmp50Result, ];
   if (null == stateFromStores3) {
-    const obj11 = { style: tmp.page, children: items18 };
-    const Text = tmp5(tmp3[13]).Text;
-    const intl = tmp5(tmp3[31]).intl;
+    const obj12 = { style: tmp.page, children: items20 };
+    const Text = tmp5(tmp3[14]).Text;
+    const intl = tmp5(tmp3[32]).intl;
     const string = intl.string;
-    const t = tmp5(tmp3[31]).t;
-    const obj12 = { variant: "body-md/medium", color: "text-default", children: string(stateFromStores4 ? t.eAn6z2 : t.ZTNur7) };
-    items18 = [closure_12(Text, obj12), ];
-    const tmp45 = hasUnreadIndicator;
-    if (stateFromStores4) {
-      const obj13 = { variant: "secondary", size: "sm", onPress: callback, text: intl2.string(tmp5(tmp3[31]).t["7NqTJn"]) };
-      const Button = tmp5(tmp3[35]).Button;
-      intl2 = tmp5(tmp3[31]).intl;
-      stateFromStores4 = tmp39(Button, obj13);
+    const t = tmp5(tmp3[32]).t;
+    const obj13 = { variant: "body-md/medium", color: "text-default", children: string(tmp50Result2 ? t.eAn6z2 : t.ZTNur7) };
+    items20 = [closure_13(Text, obj13), ];
+    const tmp56 = closure_6;
+    if (tmp50Result2) {
+      const obj14 = { variant: "secondary", size: "sm", onPress: callback, text: intl2.string(tmp5(tmp3[32]).t["7NqTJn"]) };
+      const Button = tmp5(tmp3[37]).Button;
+      intl2 = tmp5(tmp3[32]).intl;
+      tmp50Result2 = tmp50(Button, obj14);
     }
-    items18[1] = stateFromStores4;
-    tmp39Result1 = tmp41(tmp45, obj11);
+    items20[1] = tmp50Result2;
+    tmp50Result3 = tmp52(tmp56, obj12);
   } else {
-    const obj14 = { badgeId, hasUpdates: isBadgeUnreadStateEnabled && tmp12, isUnlockReady: stateFromStores5, sheetIndex: sharedValue, displayedUserId, currentUserId: stateFromStores, isViewingOtherUser, targetUsername, isViewerOwnershipKnown: stateFromStores1, onUnlock: callback1, source };
-    const tmp43 = BadgeDetailsPage;
-    if (!stateFromStores5) {
-      stateFromStores5 = first;
+    const obj15 = { badgeId, hasUpdates: isBadgeUnreadStateEnabled && tmp12, isUnlockReady: stateFromStores6, sheetIndex: sharedValue, displayedUserId, currentUserId: stateFromStores, isViewingOtherUser, targetUsername, isViewerOwnershipKnown: stateFromStores1, onUnlock: callback1, source, showNewTag: isBadgeUnreadStateEnabled };
+    const tmp54 = BadgeDetailsPage;
+    if (!stateFromStores6) {
+      stateFromStores6 = first1;
     }
-    if (stateFromStores5) {
-      stateFromStores5 = "visible" === str;
+    if (stateFromStores6) {
+      stateFromStores6 = "visible" === str;
     }
-    tmp39Result1 = tmp39(tmp43, obj14, combined);
+    if (isBadgeUnreadStateEnabled) {
+      isBadgeUnreadStateEnabled = tmp24;
+    }
+    tmp50Result3 = tmp50(tmp54, obj15, combined);
   }
-  items17[1] = tmp39Result1;
-  return closure_12(BottomSheet, obj7);
+  items19[1] = tmp50Result3;
+  return closure_13(BottomSheet, obj9);
 };

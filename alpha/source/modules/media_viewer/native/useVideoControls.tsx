@@ -1,19 +1,19 @@
-// Module ID: 8563
-// Function ID: 8564
+// Module ID: 8630
+// Function ID: 8631
 // Name: useVideoControls
-// Dependencies: [32, 19, 5244, 21, 560, 1259, 8564, 5243, 504, 8565, 6773, 8566, 8561, 15555, 2]
+// Dependencies: [32, 19, 5307, 21, 560, 1263, 8631, 5306, 504, 8632, 6836, 8633, 8628, 15669, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8563 (useVideoControls)
+// Module 8630 (useVideoControls)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 1259 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8561 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8564 */;
+import react_native from "react-native" /* 1263 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8628 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8631 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import module_560 from "module_560" /* 560 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let _require, importDefault;
 
 let _slicedToArray = _slicedToArray_mod;
 const jsx = Fragment.jsx;
-const useVideoStateStore = module_560.create(() => ({ controls: "flexDirection", paused: true }));
+const useVideoStateStore = module_560.create(() => ({ controls: "Path", paused: true }));
 let closure_8 = createStyles.createStyles({ slider: { marginBottom: 8 } });
 let result = size.fileFinishedImporting("modules/media_viewer/native/useVideoControls.tsx");
 
@@ -82,7 +82,7 @@ export function initVideoStateStore() {
   let state;
   const obj = react_native;
   obj.batchUpdates(() => {
-    state.setState({ controls: "flexDirection", paused: true });
+    state.setState({ controls: "Path", paused: true });
   });
 }
 export function setMuted(isMuted) {

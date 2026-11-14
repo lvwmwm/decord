@@ -4,4 +4,4 @@
 
 // Module 1317
 
-export default Math.abs;
+export default SyntaxError;

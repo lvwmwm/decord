@@ -1,11 +1,11 @@
-// Module ID: 9345
-// Function ID: 9346
+// Module ID: 9412
+// Function ID: 9413
 // Name: useMaybeFetchPromotionsForApplication
-// Dependencies: [19, 9346, 2]
+// Dependencies: [19, 9413, 2]
 // Exports: default
 
-// Module 9345 (useMaybeFetchPromotionsForApplication)
-import StorefrontActionCreators from "StorefrontActionCreators" /* 9346 */;
+// Module 9412 (useMaybeFetchPromotionsForApplication)
+import StorefrontActionCreators from "StorefrontActionCreators" /* 9413 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

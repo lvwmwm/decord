@@ -1,10 +1,10 @@
-// Module ID: 10096
-// Function ID: 10097
+// Module ID: 10165
+// Function ID: 10166
 // Name: RenewableEndDateSortExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 10096 (RenewableEndDateSortExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 10165 (RenewableEndDateSortExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-07-renewable-end-date-sort", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

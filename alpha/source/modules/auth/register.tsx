@@ -1,21 +1,21 @@
-// Module ID: 18531
-// Function ID: 18532
+// Module ID: 18660
+// Function ID: 18661
 // Name: register
-// Dependencies: [5, 18532, 502, 1072, 1097, 2166, 1252, 6788, 1260, 6695, 6706, 572, 18533, 18534, 18535, 2]
+// Dependencies: [5, 18661, 502, 1072, 1097, 2169, 1256, 6851, 1264, 6758, 6769, 572, 18662, 18663, 18664, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 18531 (register)
+// Module 18660 (register)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import APIErrorDefault from "APIError" /* 6695 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6706 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6788 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18533 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 18535 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import APIErrorDefault from "APIError" /* 6758 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6769 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6851 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18662 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 18664 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 18532 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 18661 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
@@ -142,7 +142,7 @@ obj = function _registerPhone() {
               phone = phone.phone;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -245,7 +245,7 @@ function registerFull(giftCodeSKUId) {
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     const tmp4Result = AnalyticsUtilsDefault;
     tmp4Result.track(metroRequire.AGE_GATE_ACTION, obj2);
-    const obj10 = _modDef2166();
+    const obj10 = _modDef2169();
     const diffResult = obj10.diff(birthday, "years");
     const tmp15 = metroRequire;
     if (diffResult >= 13) {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(18534)(birthday);
+    tmp9 = tmp4(18663)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

@@ -1,11 +1,11 @@
-// Module ID: 20032
-// Function ID: 20033
+// Module ID: 20190
+// Function ID: 20191
 // Name: react-native
-// Dependencies: [20033, 2]
+// Dependencies: [20191, 2]
 // Exports: getClientVersionForChangelog
 
-// Module 20032 (react-native)
-import react_native from "react-native" /* 20033 */;
+// Module 20190 (react-native)
+import react_native from "react-native" /* 20191 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/changelog/getClientVersionForChangelog.native.tsx");

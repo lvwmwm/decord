@@ -1,14 +1,14 @@
-// Module ID: 12945
-// Function ID: 12946
+// Module ID: 13041
+// Function ID: 13042
 // Name: BlurBackgroundIcon
-// Dependencies: [19, 21, 575, 5956, 12946, 2]
+// Dependencies: [19, 21, 575, 6019, 13042, 2]
 // Exports: BlurBackgroundIcon
 
-// Module 12945 (BlurBackgroundIcon)
+// Module 13041 (BlurBackgroundIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 12946 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 13042 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

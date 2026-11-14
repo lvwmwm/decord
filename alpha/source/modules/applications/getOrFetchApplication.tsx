@@ -1,13 +1,13 @@
-// Module ID: 12611
-// Function ID: 12612
+// Module ID: 12707
+// Function ID: 12708
 // Name: getOrFetchApplication
-// Dependencies: [5, 2162, 6992, 2]
+// Dependencies: [5, 2165, 7055, 2]
 // Exports: default
 
-// Module 12611 (getOrFetchApplication)
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6992 */;
+// Module 12707 (getOrFetchApplication)
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

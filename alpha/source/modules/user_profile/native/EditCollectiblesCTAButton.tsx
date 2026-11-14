@@ -1,22 +1,22 @@
-// Module ID: 9336
-// Function ID: 9337
+// Module ID: 9403
+// Function ID: 9404
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 5244, 1074, 1623, 21, 5243, 1627, 504, 9337, 1652, 5876, 2171, 8431, 9338, 1113, 5491, 9339, 9340, 8418, 5489, 5873, 2]
+// Dependencies: [19, 5307, 1074, 1626, 21, 5306, 1630, 504, 9404, 1655, 5939, 2174, 8497, 9405, 1113, 5554, 9406, 9407, 8484, 5552, 5936, 2]
 
-// Module 9336 (EditCollectiblesCTAButton)
+// Module 9403 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl4 from "intl" /* 1113 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import HapticUtils from "HapticUtils" /* 5491 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8418 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 9339 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 9340 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import HapticUtils from "HapticUtils" /* 5554 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 9406 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 9407 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import createStyles from "createStyles" /* 5243 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = CollectiblesShopConstants.CollectiblesMobileShopScreen;

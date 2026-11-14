@@ -1,9 +1,9 @@
-// Module ID: 18223
-// Function ID: 18224
+// Module ID: 18344
+// Function ID: 18345
 // Name: BillingFlows
 // Dependencies: [17, 21, 2]
 
-// Module 18223 (BillingFlows)
+// Module 18344 (BillingFlows)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

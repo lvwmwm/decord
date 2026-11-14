@@ -1,23 +1,23 @@
-// Module ID: 19539
-// Function ID: 19540
+// Module ID: 19732
+// Function ID: 19733
 // Name: SearchNavigatorScreen
-// Dependencies: [19, 17, 21, 5243, 575, 19252, 5434, 19540, 7364, 1113, 7431, 10202, 19000, 19254, 19263, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 19444, 5497, 19733, 7428, 1113, 7497, 10271, 19136, 19446, 19455, 2]
 // Exports: default
 
-// Module 19539 (SearchNavigatorScreen)
+// Module 19732 (SearchNavigatorScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5434 */;
-import Pressables from "Pressables" /* 7364 */;
-import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 7431 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10202 */;
-import SearchScreenSearchBarDefault from "SearchScreenSearchBar" /* 19254 */;
-import SearchScreenLayoutDefault from "SearchScreenLayout" /* 19263 */;
-import useSearchLayoutInsetTopDefault from "useSearchLayoutInsetTop" /* 19540 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5497 */;
+import Pressables from "Pressables" /* 7428 */;
+import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 7497 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
+import SearchScreenSearchBarDefault from "SearchScreenSearchBar" /* 19446 */;
+import SearchScreenLayoutDefault from "SearchScreenLayout" /* 19455 */;
+import useSearchLayoutInsetTopDefault from "useSearchLayoutInsetTop" /* 19733 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -53,7 +53,7 @@ export default function SearchNavigatorScreen(navigation) {
   const searchContext = navigation.route.params.searchContext;
   const tmp = closure_8();
   importDefault = tmp;
-  let obj = navigation(19252);
+  let obj = navigation(19444);
   const searchSuggestionsGesture = obj.useSearchSuggestionsGesture(searchContext);
   ({ gesture, detectorRef, suggestionsContext } = searchSuggestionsGesture);
   const width = useBaseAppContainerDimensionsDefault().width;
@@ -76,11 +76,11 @@ export default function SearchNavigatorScreen(navigation) {
   }, items);
   items1 = [closure_5(ThemedGradientDefault, { absolute: true, wide: true, tall: true }), ];
   let obj3 = { value: suggestionsContext, children: closure_5(NonCollapsableGestureDetector, obj4) };
-  const SearchSuggestionsProvider = navigation(19252).SearchSuggestionsProvider;
+  const SearchSuggestionsProvider = navigation(19444).SearchSuggestionsProvider;
   obj4 = { gesture, children: closure_6(View, obj5) };
   obj5 = { ref: detectorRef, style: items2, children: items3 };
   items2 = [tmp.wrapper, { paddingTop: tmp3 }];
-  NonCollapsableGestureDetector = navigation(19000).NonCollapsableGestureDetector;
+  NonCollapsableGestureDetector = navigation(19136).NonCollapsableGestureDetector;
   items3 = [closure_5(SearchScreenSearchBarDefault, { searchContext, backButton: memo }), ];
   const obj6 = { style: tmp.tabs, children: closure_5(SearchScreenLayoutDefault, { searchContext, width }) };
   items3[1] = closure_5(View, obj6);

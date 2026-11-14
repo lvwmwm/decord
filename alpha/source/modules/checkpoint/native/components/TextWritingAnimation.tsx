@@ -1,16 +1,16 @@
-// Module ID: 14370
-// Function ID: 14371
+// Module ID: 14497
+// Function ID: 14498
 // Name: TextWritingAnimation
-// Dependencies: [32, 19, 17, 5244, 21, 5243, 14156, 504, 14161, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 5306, 14266, 504, 14271, 2]
 // Exports: default
 
-// Module 14370 (TextWritingAnimation)
+// Module 14497 (TextWritingAnimation)
 import react_native from "react-native" /* 17 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;
@@ -24,17 +24,19 @@ let _slicedToArray = _slicedToArray_mod;
 ({ useContext: closure_4, useEffect: hasOwnProperty, useState: metroRequire } = react);
 const View = react_native.View;
 ({ jsx: c9, jsxs: c10 } = Fragment);
-let closure_11 = createStyles.createStyles({ hiddenText: { opacity: 0 }, animatedText: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 } });
+let closure_11 = createStyles.createStyles({ hiddenText: { opacity: 0 }, animatedText: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }, unrevealedText: { color: "transparent" } });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/TextWritingAnimation.tsx");
 
 export default function TextWritingAnimation(isStepHeading) {
+  let accessibilityLabel;
   let adjustsFontSizeToFit;
-  let closure_3;
+  let c3;
   let delay;
-  let first;
   let items2;
   let items3;
   let items4;
+  let items5;
+  let items6;
   let lineClamp;
   let obj3;
   let str;
@@ -43,12 +45,14 @@ export default function TextWritingAnimation(isStepHeading) {
   let text;
   let textStyle;
   let tmp12;
+  let tmp18;
+  let tmp7;
   let tmp9Result;
   let useReducedMotion;
   let variant;
   ({ style, textStyle, text } = isStepHeading);
   require = text;
-  ({ variant, adjustsFontSizeToFit, lineClamp, delay } = isStepHeading);
+  ({ accessibilityLabel, variant, adjustsFontSizeToFit, lineClamp, delay } = isStepHeading);
   if (delay === undefined) {
     delay = 0;
   }
@@ -65,8 +69,9 @@ export default function TextWritingAnimation(isStepHeading) {
   const tmp4 = closure_4(delay(stateFromStores[6]));
   const obj = require("get initialized");
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  [first, _slicedToArray] = closure_6(0);
+  [tmp7, c3] = closure_6(0);
   const items1 = [delay, stateFromStores, text];
+  _slicedToArray(closure_6(0), 2);
   closure_5(() => {
     let handleAnimationFrame;
     const tmp = handleAnimationFrame;
@@ -76,7 +81,7 @@ export default function TextWritingAnimation(isStepHeading) {
       let _requestAnimationFrame = requestAnimationFrame;
       handleAnimationFrame = function handleAnimationFrame() {
         const bound = Math.max(Math.min((Date.now() - closure_0) / 400, 1), 0);
-        closure_3(Math.floor(bound * require.length));
+        c3(Math.floor(bound * require.length));
         if (bound < 1) {
           const _requestAnimationFrame = requestAnimationFrame;
           closure_1 = requestAnimationFrame(handleAnimationFrame);
@@ -88,12 +93,11 @@ export default function TextWritingAnimation(isStepHeading) {
   }, items1);
   if (stateFromStores) {
     const obj2 = { style, children: closure_9(tmp2(tmp3[8]), obj3) };
-    obj3 = { isStepHeading: flag, style: textStyle, variant, adjustsFontSizeToFit, lineClamp, children: text };
+    obj3 = { isStepHeading: flag, accessibilityLabel, style: textStyle, variant, adjustsFontSizeToFit, lineClamp, children: text };
     tmp9Result = closure_9(View, obj2);
   } else {
     let tmp11;
     const tmp10 = View;
-    const tmp9 = closure_10;
     if (flag) {
       tmp11 = tmp4;
     }
@@ -104,21 +108,35 @@ export default function TextWritingAnimation(isStepHeading) {
     }
     tmp12 = undefined;
     if (flag) {
-      tmp12 = text;
+      let tmp14 = accessibilityLabel;
+      if (accessibilityLabel == null) {
+        tmp14 = text;
+      }
+      tmp12 = tmp14;
     }
-    const tmp15 = !flag;
-    const obj5 = { accessible: tmp15, accessibilityElementsHidden: flag, importantForAccessibility: str2, style: items2, variant, adjustsFontSizeToFit, lineClamp, children: text };
-    str2 = undefined;
+    const tmp17 = !flag;
+    const obj5 = { accessible: tmp17, accessibilityLabel: tmp18, accessibilityElementsHidden: flag, importantForAccessibility: str2, style: items2, variant, adjustsFontSizeToFit, lineClamp, children: text };
+    tmp18 = undefined;
     const tmp2Result = tmp2(tmp3[8]);
+    if (!flag) {
+      tmp18 = accessibilityLabel;
+    }
+    str2 = undefined;
     if (flag) {
       str2 = "no-hide-descendants";
     }
     items2 = [tmp.hiddenText, textStyle];
     items3 = [closure_9(tmp2Result, obj5), ];
-    const obj6 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", style: items4, variant, adjustsFontSizeToFit, lineClamp, children: text.substring(0, first) };
+    const obj6 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", style: items4, variant, adjustsFontSizeToFit, lineClamp, children: items5 };
     items4 = [tmp.animatedText, textStyle];
-    const tmp2Result2 = tmp2(tmp3[8]);
-    items3[1] = closure_9(tmp2Result2, obj6);
+    items5 = [, ];
+    const tmp2Result3 = tmp2(tmp3[8]);
+    items5[0] = text.substring(0, tmp7);
+    const obj7 = { variant, style: items6, children: text.substring(tmp7) };
+    items6 = [textStyle, tmp.unrevealedText];
+    const tmp2Result4 = tmp2(tmp3[8]);
+    items5[1] = closure_9(tmp2Result4, obj7);
+    items3[1] = closure_10(tmp2Result3, obj6);
     tmp9Result = tmp9(tmp10, obj4);
   }
   return tmp9Result;

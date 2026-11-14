@@ -1,12 +1,12 @@
-// Module ID: 10483
-// Function ID: 10484
+// Module ID: 10552
+// Function ID: 10553
 // Name: useConjureProjectShareTarget
-// Dependencies: [5114, 504, 1113, 4079, 2]
+// Dependencies: [5177, 504, 1113, 4131, 2]
 // Exports: default, isConjureProjectWithoutServer, useConjureProjectShareTargetDetails
 
-// Module 10483 (useConjureProjectShareTarget)
-import _modDef4079 from "module_4079" /* 4079 */;
-import GuildStore from "GuildStore" /* 5114 */;
+// Module 10552 (useConjureProjectShareTarget)
+import _modDef4131 from "module_4131" /* 4131 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectShareTarget.tsx");
@@ -36,7 +36,7 @@ export default function useConjureProjectShareTarget(guild_id) {
   if (null != guild_id) {
     let tmp6;
     if ("user" === guild_id.install_scope) {
-      const obj2 = { kind: "user", label: intl.string(_modDef4079.KxFFKT) };
+      const obj2 = { kind: "user", label: intl.string(_modDef4131.KxFFKT) };
       intl = tmp2(1113).intl;
       tmp6 = obj2;
     } else {
@@ -82,7 +82,7 @@ export function useConjureProjectShareTargetDetails(project) {
   if (null != project) {
     let tmp6;
     if ("user" === project.install_scope) {
-      const obj2 = { kind: "user", label: intl.string(_modDef4079.KxFFKT) };
+      const obj2 = { kind: "user", label: intl.string(_modDef4131.KxFFKT) };
       intl = tmp2(1113).intl;
       tmp6 = obj2;
     } else {

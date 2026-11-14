@@ -61,8 +61,8 @@ let obj = {
   TurboModuleRegistry,
   AppRegistry,
   ReactNative: {
-    requireNativeComponent(APNGStickerView) {
-      return react_native.requireNativeComponent(APNGStickerView);
+    requireNativeComponent(DCDImageWithThumbhashPlaceholderView) {
+      return react_native.requireNativeComponent(DCDImageWithThumbhashPlaceholderView);
     }
   }
 };

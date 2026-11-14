@@ -1,13 +1,13 @@
-// Module ID: 6192
-// Function ID: 6193
+// Module ID: 6255
+// Function ID: 6256
 // Name: getReportedPresetResolution
-// Dependencies: [1385, 6108, 6156, 2]
+// Dependencies: [1388, 6171, 6219, 2]
 // Exports: default
 
-// Module 6192 (getReportedPresetResolution)
-import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 6156 */;
-import UserStore from "UserStore" /* 1385 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6108 */;
+// Module 6255 (getReportedPresetResolution)
+import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 6219 */;
+import UserStore from "UserStore" /* 1388 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 6171 */;
 import size from "module_2" /* 2 */;
 
 let c3;

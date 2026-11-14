@@ -1,12 +1,12 @@
-// Module ID: 14765
-// Function ID: 14766
+// Module ID: 14879
+// Function ID: 14880
 // Name: ChatInputGuardSpamMessageRequest
-// Dependencies: [19, 1385, 21, 1499, 504, 14766, 14758, 5952, 1113, 14764, 6000, 2]
+// Dependencies: [19, 1388, 21, 1502, 504, 14880, 14872, 6015, 1113, 14878, 6063, 2]
 
-// Module 14765 (ChatInputGuardSpamMessageRequest)
+// Module 14879 (ChatInputGuardSpamMessageRequest)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
@@ -30,18 +30,18 @@ const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel)
   react = undefined;
   c4 = undefined;
   const tmp = channel;
-  let obj = channel(1499);
+  let obj = channel(1502);
   navigation = obj.useNavigation();
   const items = [c4];
   const obj2 = channel(504);
   const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  const obj3 = channel(14766);
+  const obj3 = channel(14880);
   dependencyMap = obj3.useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
   const callback = react.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj4 = channel(14758);
+  const obj4 = channel(14872);
   const obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {
@@ -80,7 +80,7 @@ const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel)
     buttonSecondaryDisabled: isRejectLoading || isUserProfileLoading || isOptimisticRejected,
     buttonSecondaryLoading: isUserProfileLoading
   };
-  const tmp9 = navigation(14764);
+  const tmp9 = navigation(14878);
   intl = tmp(1113).intl;
   intl2 = tmp(1113).intl;
   intl3 = tmp(1113).intl;

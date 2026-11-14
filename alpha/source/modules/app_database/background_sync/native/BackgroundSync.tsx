@@ -1,32 +1,32 @@
-// Module ID: 20026
-// Function ID: 20027
+// Module ID: 20184
+// Function ID: 20185
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 5096, 5092, 6952, 2117, 8615, 1072, 6947, 6906, 5114, 3, 1089, 510, 8789, 1377, 572, 1242, 1252, 5121, 1282, 5122, 11, 12, 8693, 8696, 8694, 16033, 18086, 8613, 1380, 8623, 2]
+// Dependencies: [32, 5, 5159, 5155, 7015, 2120, 8682, 1072, 7010, 6969, 5177, 3, 1089, 510, 8856, 1380, 572, 1242, 1256, 5184, 1285, 5185, 11, 12, 8760, 8763, 8761, 16154, 18206, 8680, 1255, 8690, 2]
 // Exports: backgroundSync
 
-// Module 20026 (background_sync/BackgroundSync)
+// Module 20184 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 5121 */;
-import modules_Messages from "modules/Messages" /* 8613 */;
-import GuildVersionsDefault from "GuildVersions" /* 8693 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 8694 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 8696 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 5184 */;
+import modules_Messages from "modules/Messages" /* 8680 */;
+import GuildVersionsDefault from "GuildVersions" /* 8760 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 8761 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 8763 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 5096 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 6952 */;
-import AppStateStore from "AppStateStore" /* 2117 */;
-import FileSystemStore from "FileSystemStore" /* 8615 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import AppStateStore from "AppStateStore" /* 2120 */;
+import FileSystemStore from "FileSystemStore" /* 8682 */;
 import Constants from "Constants" /* 1072 */;
-import StickersStore from "StickersStore" /* 6947 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import EmojiStore from "EmojiStore" /* 6906 */;
-import GuildStore from "GuildStore" /* 5114 */;
+import StickersStore from "StickersStore" /* 7010 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import EmojiStore from "EmojiStore" /* 6969 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 let c1, c11, c12, c21, c22, closure_13, config, readStatesByChannel;
@@ -195,7 +195,7 @@ let obj = function _backgroundSync() {
       }
       await "HermesInternal";
       closure_3 = tmp;
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -286,7 +286,7 @@ obj = function _backgroundSyncPrivateChannels() {
               closure_1.size_private_channel_messages = JSON.stringify(body).length;
               if (null != body.latest_message_id) {
                 const Storage = closure_132_0(closure_132_2[13]).Storage;
-                let result = Storage.set(closure_132_18, body.latest_message_id);
+                const result = Storage.set(closure_132_18, body.latest_message_id);
               }
               closure_6 = {};
               const obj6 = closure_132_1(closure_132_2[22]);

@@ -1,15 +1,15 @@
-// Module ID: 11598
-// Function ID: 11599
+// Module ID: 11665
+// Function ID: 11666
 // Name: GiftCodeRecord
-// Dependencies: [1405, 9229, 9557, 2168, 1387, 2166, 1403, 2]
+// Dependencies: [1408, 9296, 9624, 2171, 1390, 2169, 1406, 2]
 
-// Module 11598 (GiftCodeRecord)
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import Record from "Record" /* 1405 */;
-import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 9229 */;
-import PromotionRecord from "PromotionRecord" /* 9557 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2168 */;
+// Module 11665 (GiftCodeRecord)
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import Record from "Record" /* 1408 */;
+import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 9296 */;
+import PromotionRecord from "PromotionRecord" /* 9624 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2171 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ const frozen = Object.freeze({ PAYMENT_SOURCE_REQUIRED: 1, EXISTING_PREMIUM_SUBS
 class GiftCodeRecord extends Record {
   constructor(arg0) {
     const tmp = new GiftCodeRecord(new.target, this);
-    ({ userId: tmp.userId, code: tmp.code, skuId: tmp.skuId, applicationId: tmp.applicationId, uses: tmp.uses, maxUses: tmp.maxUses, expiresAt: tmp.expiresAt, redeemed: tmp.redeemed, storeListingId: tmp.storeListingId, subscriptionPlanId: tmp.subscriptionPlanId, subscriptionPlan: tmp.subscriptionPlan, revoked: tmp.revoked, entitlementBranches: tmp.entitlementBranches, flags: tmp.flags, subscriptionTrial: tmp.subscriptionTrial, promotion: tmp.promotion, giftStyle: tmp.giftStyle } = arg0);
+    ({ userId: tmp.userId, code: tmp.code, skuId: tmp.skuId, applicationId: tmp.applicationId, uses: tmp.uses, maxUses: tmp.maxUses, expiresAt: tmp.expiresAt, redeemed: tmp.redeemed, storeListingId: tmp.storeListingId, subscriptionPlanId: tmp.subscriptionPlanId, subscriptionPlan: tmp.subscriptionPlan, revoked: tmp.revoked, entitlementBranches: tmp.entitlementBranches, flags: tmp.flags, subscriptionTrial: tmp.subscriptionTrial, promotion: tmp.promotion, giftStyle: tmp.giftStyle, giftSubscriptionAgreement: tmp.giftSubscriptionAgreement } = arg0);
     return tmp;
   }
   static createFromServer(user) {
@@ -29,7 +29,6 @@ class GiftCodeRecord extends Record {
     let sku_id;
     let subscription_plan_id;
     let tmp12;
-    let tmp13;
     let uses;
     let id = null;
     if (null != user.user) {
@@ -42,7 +41,7 @@ class GiftCodeRecord extends Record {
     }
     let tmp5 = null;
     if (null != user.expires_at) {
-      tmp5 = _modDef2166(user.expires_at);
+      tmp5 = _modDef2169(user.expires_at);
     }
     const redeemed = user.redeemed;
     if (null != user.subscription_plan) {
@@ -65,37 +64,37 @@ class GiftCodeRecord extends Record {
     let fromServer1 = null;
     const gift_style = user.gift_style;
     if (null != user.subscription_trial) {
-      fromServer1 = SubscriptionTrialRecord.createFromServer(user.subscription_trial);
       tmp12 = SubscriptionTrialRecord;
+      fromServer1 = SubscriptionTrialRecord.createFromServer(user.subscription_trial);
     }
-    const promotion = user.promotion;
     let fromServer2 = null;
-    if (null != promotion) {
+    if (null != user.promotion) {
+      tmp12 = PromotionRecord;
       fromServer2 = PromotionRecord.createFromServer(user.promotion);
-      tmp13 = PromotionRecord;
     }
     if (typeof GiftCodeRecord === "function") {
       const self = this;
       const self2 = this;
-      const tmp16 = new GiftCodeRecord(tmp, tmp12, tmp13, promotion, GiftCodeRecord, this, id, code, sku_id, application_id, uses, max_uses, tmp5, redeemed, id1, subscription_plan_id, fromServer, entitlement_branches);
-      tmp16.userId = id;
-      tmp16.code = code;
-      tmp16.skuId = sku_id;
-      tmp16.applicationId = application_id;
-      tmp16.uses = uses;
-      tmp16.maxUses = max_uses;
-      tmp16.expiresAt = tmp5;
-      tmp16.redeemed = redeemed;
-      tmp16.storeListingId = id1;
-      tmp16.subscriptionPlanId = subscription_plan_id;
-      tmp16.subscriptionPlan = fromServer;
-      tmp16.revoked = false;
-      tmp16.entitlementBranches = entitlement_branches;
-      tmp16.flags = num;
-      tmp16.subscriptionTrial = fromServer1;
-      tmp16.promotion = fromServer2;
-      tmp16.giftStyle = gift_style;
-      return tmp16;
+      const tmp17 = new GiftCodeRecord(tmp, tmp12, tmp13, GiftCodeRecord, this, id, code, sku_id, application_id, uses, max_uses, tmp5, redeemed, id1, subscription_plan_id, fromServer, entitlement_branches, num, fromServer1);
+      tmp17.userId = id;
+      tmp17.code = code;
+      tmp17.skuId = sku_id;
+      tmp17.applicationId = application_id;
+      tmp17.uses = uses;
+      tmp17.maxUses = max_uses;
+      tmp17.expiresAt = tmp5;
+      tmp17.redeemed = redeemed;
+      tmp17.storeListingId = id1;
+      tmp17.subscriptionPlanId = subscription_plan_id;
+      tmp17.subscriptionPlan = fromServer;
+      tmp17.revoked = false;
+      tmp17.entitlementBranches = entitlement_branches;
+      tmp17.flags = num;
+      tmp17.subscriptionTrial = fromServer1;
+      tmp17.promotion = fromServer2;
+      tmp17.giftStyle = gift_style;
+      tmp17.giftSubscriptionAgreement = tmp15;
+      return tmp17;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -104,7 +103,7 @@ class GiftCodeRecord extends Record {
     const expiresAt = this.expiresAt;
     let isAfterResult = null != expiresAt;
     if (isAfterResult) {
-      const obj = _modDef2166();
+      const obj = _modDef2169();
       isAfterResult = obj.isAfter(expiresAt);
     }
     return isAfterResult;

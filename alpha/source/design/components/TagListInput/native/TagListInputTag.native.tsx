@@ -1,24 +1,24 @@
-// Module ID: 8114
-// Function ID: 8115
+// Module ID: 8180
+// Function ID: 8181
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 5243, 575, 1113, 8115, 7364, 5866, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1113, 8181, 7428, 5929, 2]
 // Exports: TagListInputTagComponent
 
-// Module 8114 (TagListInputTag)
+// Module 8180 (TagListInputTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Pressables from "Pressables" /* 7364 */;
-import reactDefault from "react" /* 8115 */;
+import Pressables from "Pressables" /* 7428 */;
+import reactDefault from "react" /* 8181 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp2;
-const Text_Text = tmp2(5866);
+const Text_Text = tmp2(5929);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {
@@ -40,7 +40,7 @@ export function TagListInputTagComponent(end) {
   let start;
   let str;
   let tag;
-  const f94179 = () => closure_1_0("remove");
+  const f95373 = () => closure_1_0("remove");
   ({ tag, selected, onPress: closure_129_0, start } = end);
   if (start === undefined) {
     start = false;
@@ -53,10 +53,10 @@ export function TagListInputTagComponent(end) {
   const intl = intl2.intl;
   const obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = reactDefault(f94179, formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = reactDefault(f95373, formatToPlainStringResult));
   const items = [tmp.tagWrapper, , , ];
   let prop;
-  reactDefault(f94179, formatToPlainStringResult);
+  reactDefault(f95373, formatToPlainStringResult);
   const PressableOpacity = Pressables.PressableOpacity;
   const tmp6 = hasOwnProperty;
   if (selected) {

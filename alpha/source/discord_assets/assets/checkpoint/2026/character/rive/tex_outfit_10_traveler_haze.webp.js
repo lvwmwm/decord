@@ -1,8 +1,8 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14414
+// Function ID: 14415
 // Dependencies: [2]
 
-// Module 14307
+// Module 14414
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_10_traveler_haze.webp.js");

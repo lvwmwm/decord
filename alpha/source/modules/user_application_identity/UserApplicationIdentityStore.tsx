@@ -1,14 +1,14 @@
-// Module ID: 12171
-// Function ID: 12172
+// Module ID: 12267
+// Function ID: 12268
 // Name: UserApplicationIdentityStore
 // Dependencies: [504, 572, 2]
 
-// Module 12171 (UserApplicationIdentityStore)
+// Module 12267 (UserApplicationIdentityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
-const f103464 = (application_id) => {
+const f104668 = (application_id) => {
   const items = [application_id.application_id, application_id];
   return items;
 };
@@ -60,7 +60,7 @@ let obj2 = {
     let identities;
     const result = map1.set(userId.userId, obj.FETCHED);
     ({ userId, identities } = userId);
-    map = new Map(identities.map(f103464));
+    map = new Map(identities.map(f104668));
     const result1 = map.set(userId, { identities, byApplication: map });
     const result2 = map1.set(userId, obj.FETCHED);
   },
@@ -68,18 +68,18 @@ let obj2 = {
     const result = map1.set(userId.userId, obj.FETCHED);
   },
   USER_APPLICATION_IDENTITY_REMOVE: function handleRemoveIdentity(user_id) {
-    let closure_0 = user_id;
+    let c0 = user_id;
     const value = map.get(user_id.user_id);
     if (null == value) {
       return false;
     } else {
       user_id = user_id.user_id;
       const identities = value.identities;
-      const found = identities.filter((application_id) => application_id.application_id !== application_id.application_id);
+      const found = identities.filter((application_id) => application_id.application_id !== _true.application_id);
       const _Map = Map;
       const self = this;
       const self2 = this;
-      map = new Map(found.map(f103464));
+      map = new Map(found.map(f104668));
       const obj2 = { identities: found, byApplication: map };
       const result = obj.set(user_id, obj2);
       const result1 = map1.set(user_id, obj.FETCHED);

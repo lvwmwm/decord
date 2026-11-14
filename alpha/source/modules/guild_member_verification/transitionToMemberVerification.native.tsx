@@ -1,40 +1,45 @@
-// Module ID: 6860
-// Function ID: 6861
+// Module ID: 6923
+// Function ID: 6924
 // Name: transitionToMemberVerification
-// Dependencies: [5114, 5287, 1099, 5289, 6861, 7618, 2]
+// Dependencies: [5177, 5350, 1099, 5352, 6924, 7684, 2]
 // Exports: transitionToMemberVerification
 
-// Module 6860 (transitionToMemberVerification)
+// Module 6923 (transitionToMemberVerification)
 import router_utils from "router_utils" /* 1099 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5289 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6861 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7618 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5287 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6924 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7684 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5350 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_member_verification/transitionToMemberVerification.native.tsx");
 
 export function transitionToMemberVerification(guildId) {
-  if (null == GuildStore.getGuild(guildId)) {
+  const guild = GuildStore.getGuild(guildId);
+  let joinedAt;
+  if (guild != null) {
+    joinedAt = guild.joinedAt;
+  }
+  if (null == joinedAt) {
     const request = UserGuildJoinRequestStore.getRequest(guildId);
     let applicationStatus;
     if (request != null) {
       applicationStatus = request.applicationStatus;
     }
     if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-      const tmp7Result = MemberVerificationAlertActionCreators;
-      const result = tmp7Result.openMemberVerificationPendingAlert(guildId);
+      const tmp9Result = MemberVerificationAlertActionCreators;
+      const result = tmp9Result.openMemberVerificationPendingAlert(guildId);
     } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
       const obj2 = { guildId, canWithdraw: true };
-      const tmp7Result4 = MemberVerificationAlertActionCreators;
-      const result1 = tmp7Result4.openMemberVerificationRejectedAlert(obj2);
+      const tmp9Result4 = MemberVerificationAlertActionCreators;
+      const result1 = tmp9Result4.openMemberVerificationRejectedAlert(obj2);
     } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
-      const tmp7Result5 = router_utils;
-      tmp7Result5.transitionToGuild(guildId);
+      const tmp9Result5 = router_utils;
+      tmp9Result5.transitionToGuild(guildId);
     } else {
-      const tmp7Result6 = MemberVerificationModalActionCreators;
-      const result2 = tmp7Result6.openMemberVerificationModal(guildId);
+      const tmp9Result6 = MemberVerificationModalActionCreators;
+      const result2 = tmp9Result6.openMemberVerificationModal(guildId);
     }
   } else {
     const obj = router_utils;

@@ -1,8 +1,8 @@
-// Module ID: 14267
-// Function ID: 14268
+// Module ID: 14374
+// Function ID: 14375
 // Dependencies: [2]
 
-// Module 14267
+// Module 14374
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_02_trash_bubblegum.webp.js");

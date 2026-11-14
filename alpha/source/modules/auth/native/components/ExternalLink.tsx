@@ -1,15 +1,15 @@
-// Module ID: 18555
-// Function ID: 18556
+// Module ID: 18684
+// Function ID: 18685
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 5243, 575, 7704, 1499, 7728, 1113, 5866, 6888, 5873, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7770, 1502, 7794, 1113, 5929, 6951, 5936, 2]
 // Exports: default
 
-// Module 18555 (ExternalLink)
+// Module 18684 (ExternalLink)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

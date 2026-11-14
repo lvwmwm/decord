@@ -1,23 +1,23 @@
-// Module ID: 18796
-// Function ID: 18797
+// Module ID: 18925
+// Function ID: 18926
 // Name: GuildActionRows
-// Dependencies: [19, 17, 8668, 6952, 5997, 7800, 6896, 21, 5243, 575, 7160, 5285, 5076, 563, 8664, 6785, 12371, 2118, 14676, 14575, 1113, 16156, 2]
+// Dependencies: [19, 17, 8735, 7015, 6060, 7866, 6959, 21, 5306, 575, 7223, 5348, 5139, 563, 8731, 6848, 12466, 2121, 14789, 14688, 1113, 16277, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 18796 (GuildActionRows)
+// Module 18925 (GuildActionRows)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
-import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7800 */;
-import ChannelListState from "ChannelListState" /* 8664 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7866 */;
+import ChannelListState from "ChannelListState" /* 8731 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 8668 */;
-import ReadStateStore from "ReadStateStore" /* 6952 */;
-import createStyles from "createStyles" /* 5243 */;
+import NewChannelsStore from "NewChannelsStore" /* 8735 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -37,11 +37,11 @@ export function GuildRolesAndChannelsRow(guild) {
   const selected = guild.selected;
   let id;
   const tmp = closure_10();
-  const tmp4 = id(7160)(guild);
+  const tmp4 = id(7223)(guild);
   const tmp2 = id;
   id = guild.id;
-  let obj = guild(5285);
-  const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(5076).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
+  let obj = guild(5348);
+  const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(5139).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
   let obj2 = guild(563);
   const items = [ReadStateStore];
   const stateFromStores = obj2.useStateFromStores(items, () => ReadStateStore.hasUnread(guild.id, ReadStateTypes.GUILD_ONBOARDING_QUESTION));
@@ -52,11 +52,11 @@ export function GuildRolesAndChannelsRow(guild) {
   const callback = react.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { guildId: id };
-    obj.pushLazy(asyncRequire(12371, dependencyMap.paths), obj2, closure_7);
+    obj.pushLazy(asyncRequire(12466, dependencyMap.paths), obj2, closure_7);
   }, items2);
-  let SELECTED = guild(14676).ChannelModes.DEFAULT;
+  let SELECTED = guild(14789).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = tmp5(14676).ChannelModes.SELECTED;
+    SELECTED = tmp5(14789).ChannelModes.SELECTED;
   }
   let tmp10 = !result;
   if (result) {
@@ -67,9 +67,9 @@ export function GuildRolesAndChannelsRow(guild) {
   }
   let tmp11 = null;
   if (tmp10) {
-    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(14575).NewBadge, {})}</View>;
+    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(14688).NewBadge, {})}</View>;
   }
-  tmp2(14676);
+  tmp2(14789);
   const intl = tmp5(1113).intl;
   const string = intl.string;
   const t = tmp5(1113).t;
@@ -78,7 +78,7 @@ export function GuildRolesAndChannelsRow(guild) {
   } else {
     stringResult = string(t.et6wav);
   }
-  const BaseChannelName = tmp5(14676).BaseChannelName;
+  const BaseChannelName = tmp5(14789).BaseChannelName;
   const intl2 = tmp5(1113).intl;
   const string2 = intl2.string;
   const t2 = tmp5(1113).t;
@@ -87,7 +87,7 @@ export function GuildRolesAndChannelsRow(guild) {
   } else {
     string2(t2.et6wav);
   }
-  ({ mode: SELECTED, IconComponent: guild(16156).ChannelListMagnifyingGlassIcon });
-  const BaseChannelIcon = tmp5(14676).BaseChannelIcon;
+  ({ mode: SELECTED, IconComponent: guild(16277).ChannelListMagnifyingGlassIcon });
+  const BaseChannelIcon = tmp5(14789).BaseChannelIcon;
   return <tmp2Result onPress={callback} style={tmp.container} accessible accessibilityLabel={stringResult} accessibilityState={{ selected }} mode={SELECTED} name={null} icon={null} channelInfo={tmp11} />;
 }

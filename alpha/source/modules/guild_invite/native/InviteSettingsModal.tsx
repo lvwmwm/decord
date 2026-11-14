@@ -1,27 +1,27 @@
-// Module ID: 20633
-// Function ID: 20634
+// Module ID: 20788
+// Function ID: 20789
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 5092, 8396, 5114, 5175, 1072, 21, 5243, 575, 1499, 504, 38, 12, 20634, 8405, 6205, 1113, 5836, 7363, 8041, 20635, 8397, 1260, 7427, 7424, 2]
+// Dependencies: [32, 19, 5155, 8462, 5177, 5238, 1072, 21, 5306, 575, 1502, 504, 38, 12, 20789, 8471, 6268, 1113, 5899, 7427, 8106, 20790, 8463, 1264, 7493, 7490, 2]
 // Exports: default
 
-// Module 20633 (InviteSettingsModal)
+// Module 20788 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
-import Navigator from "Navigator" /* 7424 */;
-import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8405 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20634 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import Navigator from "Navigator" /* 7490 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8471 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20789 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8396 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8462 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, getGuild, navigation;
@@ -38,7 +38,7 @@ function AdvancedInstantInviteScreen() {
   let inviteSettings;
   let settings;
   let tmp = closure_12();
-  let obj = navigation(1499);
+  let obj = navigation(1502);
   navigation = obj.useNavigation();
   let obj2 = navigation(504);
   const items = [ChannelStore, CreateInviteModalStore, GuildStore];
@@ -97,7 +97,7 @@ function AdvancedInstantInviteScreen() {
       }
     }
   }, items1);
-  const tmp2Result2 = navigation(5836);
+  const tmp2Result2 = navigation(5899);
   const unmountEffect = tmp2Result2.useUnmountEffect(() => {
     const obj = channel(closure_2[15]);
     obj.resetSettings();
@@ -162,9 +162,9 @@ function AdvancedInstantInviteScreen() {
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(8041).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8397).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(20635);
+  const Form = tmp2(8106).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8463).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(20790);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 }

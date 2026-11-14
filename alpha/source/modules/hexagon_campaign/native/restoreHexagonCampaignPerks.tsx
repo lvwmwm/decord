@@ -1,34 +1,35 @@
-// Module ID: 17517
-// Function ID: 17518
+// Module ID: 17635
+// Function ID: 17636
 // Name: restoreHexagonCampaignPerks
-// Dependencies: [1192, 1385, 5268, 5312, 17511, 17513, 17512, 15200, 17516, 5271, 2171, 2]
-// Exports: restoreHexagonCampaignPerk
+// Dependencies: [5, 1193, 1192, 1388, 16845, 5331, 5375, 17629, 17631, 17630, 15314, 17634, 5334, 2174, 17084, 2]
+// Exports: restoreExpiredHexagonCampaignClientTheme, restoreExpiredHexagonCampaignDisplayNameStyle, restoreExpiredHexagonCampaignPerks
 
-// Module 17517 (restoreHexagonCampaignPerks)
-import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5271 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 5312 */;
-import AppIconUtils from "AppIconUtils" /* 15200 */;
-import getAppliedHexagonCampaignPerks from "getAppliedHexagonCampaignPerks" /* 17511 */;
-import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 17512 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 17513 */;
-import saveHexagonCampaignDisplayNameStyles2 from "saveHexagonCampaignDisplayNameStyles" /* 17516 */;
+// Module 17635 (restoreHexagonCampaignPerks)
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 5375 */;
+import AppIconUtils from "AppIconUtils" /* 15314 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 17084 */;
+import getAppliedHexagonCampaignPerks from "getAppliedHexagonCampaignPerks" /* 17629 */;
+import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 17630 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 17631 */;
+import saveHexagonCampaignDisplayNameStyles2 from "saveHexagonCampaignDisplayNameStyles" /* 17634 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
+import UserStore from "UserStore" /* 1388 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16845 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import size from "module_2" /* 2 */;
 
-let hasOwnProperty;
-let metroRequire;
-({ DEFAULT_HEXAGON_CAMPAIGN_APP_ICON_ID: hasOwnProperty, HexagonCampaignPerk: metroRequire } = HexagonCampaignConstants);
-let result = size.fileFinishedImporting("modules/hexagon_campaign/native/restoreHexagonCampaignPerks.tsx");
-
-export function restoreHexagonCampaignPerk(arg0, arg1) {
+let c9;
+let metroImportAll;
+function restoreHexagonCampaignPerk(arg0, arg1) {
   let analyticsLocations;
   let obj2;
   let previousPerkValues;
   ({ previousPerkValues, analyticsLocations } = arg1);
-  if (metroRequire.CLIENT_THEME === arg0) {
+  if (constants.CLIENT_THEME === arg0) {
     const obj3 = isPerModeThemingActive;
     if (obj3.isPerModeThemingActive()) {
       const tmp23Result = getAppliedHexagonCampaignPerks;
@@ -56,15 +57,15 @@ export function restoreHexagonCampaignPerk(arg0, arg1) {
       handleSaveTheme(getHexagonCampaignClientThemeItem(clientTheme), analyticsLocations, tmp2);
       return Promise.resolve(true);
     }
-  } else if (metroRequire.APP_ICON === arg0) {
+  } else if (constants.APP_ICON === arg0) {
     let appIconId = previousPerkValues.appIconId;
     const setAppIcon = AppIconUtils.setAppIcon;
     AppIconUtils;
     if (appIconId == null) {
-      appIconId = hasOwnProperty;
+      appIconId = metroImportAll;
     }
     return setAppIcon(appIconId, tmp, { showErrorToast: false });
-  } else if (metroRequire.DISPLAY_NAME_STYLE === arg0) {
+  } else if (constants.DISPLAY_NAME_STYLE === arg0) {
     const currentUser = UserStore.getCurrentUser();
     const saveHexagonCampaignDisplayNameStyles = saveHexagonCampaignDisplayNameStyles2.saveHexagonCampaignDisplayNameStyles;
     saveHexagonCampaignDisplayNameStyles2;
@@ -74,8 +75,109 @@ export function restoreHexagonCampaignPerk(arg0, arg1) {
     if (currentUser != null) {
       displayNameStyles = currentUser.displayNameStyles;
     }
-    const obj = { currentDisplayNameStyles: displayNameStyles, previousDisplayNameStyles: previousPerkValues.displayNameStyles, canUsePremiumProfileCustomization: obj2.canUsePremiumProfileCustomization(currentUser) };
+    obj = { currentDisplayNameStyles: displayNameStyles, previousDisplayNameStyles: previousPerkValues.displayNameStyles, canUsePremiumProfileCustomization: obj2.canUsePremiumProfileCustomization(currentUser) };
     obj2 = PremiumUtilsDefault;
     return saveHexagonCampaignDisplayNameStyles(getHexagonCampaignRestoredDisplayNameStyles(obj));
   }
+}
+function getRestoreHexagonCampaignPerkParams(analyticsLocations) {
+  let premiumType;
+  obj = { previousPerkValues: HexagonCampaignPersistedStore.previousPerkValues, premiumType, isThemeSynced: SelectivelySyncedUserSettingsStore.shouldSync("appearance"), analyticsLocations };
+  const currentUser = UserStore.getCurrentUser();
+  premiumType = undefined;
+  if (currentUser != null) {
+    premiumType = currentUser.premiumType;
+  }
+  return obj;
+}
+let obj = function _restoreExpiredHexagonCampaignPerks() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c1;
+    let c2;
+    let closure_0 = arg0;
+    const tmp11 = getRestoreHexagonCampaignPerkParams(closure_0);
+    closure_0 = tmp11;
+    const premiumType = tmp11.premiumType;
+    const obj4 = {};
+    const CLIENT_THEME = constants.CLIENT_THEME;
+    const obj7 = getAppliedHexagonCampaignPerks;
+    obj4[CLIENT_THEME] = obj7.isHexagonCampaignClientThemeApplied();
+    const DISPLAY_NAME_STYLE = constants.DISPLAY_NAME_STYLE;
+    const obj8 = getAppliedHexagonCampaignPerks;
+    obj4[DISPLAY_NAME_STYLE] = obj8.isHexagonCampaignDisplayNameStyleApplied();
+    const items = [, ];
+    ({ CLIENT_THEME: arr[0], DISPLAY_NAME_STYLE: arr[1] } = constants);
+    const found = items.filter((item) => {
+      let result = true === obj4[item];
+      if (result) {
+        obj = closure_2_0(closure_2_2[12]);
+        result = obj.isHexagonCampaignPerkExpired(item, premiumType);
+      }
+      return result;
+    });
+    await all(found.map((item) => closure_2_10(item, closure_0)));
+    const tmp4 = globalThis;
+    const _Boolean = Boolean;
+    return arg1.every(Boolean);
+  });
+  return obj(...arguments);
+};
+({ DEFAULT_HEXAGON_CAMPAIGN_APP_ICON_ID: metroImportAll, HexagonCampaignPerk: c9 } = HexagonCampaignConstants);
+let result = size.fileFinishedImporting("modules/hexagon_campaign/native/restoreHexagonCampaignPerks.tsx");
+
+export { restoreHexagonCampaignPerk };
+export function restoreExpiredHexagonCampaignClientTheme(analyticsLocations) {
+  let premiumType;
+  const currentUser = UserStore.getCurrentUser();
+  let result = null != currentUser;
+  obj = UserStore;
+  if (result) {
+    const obj2 = getAppliedHexagonCampaignPerks;
+    result = obj2.isHexagonCampaignClientThemeApplied();
+  }
+  if (result) {
+    const obj3 = HexagonCampaignUtils;
+    result = obj3.isHexagonCampaignPerkExpired(constants.CLIENT_THEME, currentUser.premiumType);
+  }
+  if (result) {
+    const CLIENT_THEME = constants.CLIENT_THEME;
+    const obj4 = { previousPerkValues: HexagonCampaignPersistedStore.previousPerkValues, premiumType, isThemeSynced: SelectivelySyncedUserSettingsStore.shouldSync("appearance"), analyticsLocations };
+    const currentUser1 = obj.getCurrentUser();
+    premiumType = undefined;
+    const tmp8 = restoreHexagonCampaignPerk;
+    if (currentUser1 != null) {
+      premiumType = currentUser1.premiumType;
+    }
+    tmp8(CLIENT_THEME, obj4);
+    const obj5 = HexagonActionCreators;
+    const result1 = obj5.markHexagonCampaignExpiredClientThemeRestored();
+  }
+}
+export function restoreExpiredHexagonCampaignDisplayNameStyle(analyticsLocations) {
+  let premiumType;
+  const currentUser = UserStore.getCurrentUser();
+  let result = null != currentUser;
+  obj = UserStore;
+  if (result) {
+    const obj2 = getAppliedHexagonCampaignPerks;
+    result = obj2.isHexagonCampaignDisplayNameStyleApplied();
+  }
+  if (result) {
+    const obj3 = HexagonCampaignUtils;
+    result = obj3.isHexagonCampaignPerkExpired(constants.DISPLAY_NAME_STYLE, currentUser.premiumType);
+  }
+  if (result) {
+    const DISPLAY_NAME_STYLE = constants.DISPLAY_NAME_STYLE;
+    const obj4 = { previousPerkValues: HexagonCampaignPersistedStore.previousPerkValues, premiumType, isThemeSynced: SelectivelySyncedUserSettingsStore.shouldSync("appearance"), analyticsLocations };
+    const currentUser1 = obj.getCurrentUser();
+    premiumType = undefined;
+    const tmp8 = restoreHexagonCampaignPerk;
+    if (currentUser1 != null) {
+      premiumType = currentUser1.premiumType;
+    }
+    tmp8(DISPLAY_NAME_STYLE, obj4);
+  }
+}
+export function restoreExpiredHexagonCampaignPerks() {
+  return obj(...arguments);
 }

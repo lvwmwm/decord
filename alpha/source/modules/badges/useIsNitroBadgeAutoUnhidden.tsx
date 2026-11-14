@@ -1,14 +1,14 @@
-// Module ID: 19455
-// Function ID: 19456
+// Module ID: 19647
+// Function ID: 19648
 // Name: useIsNitroBadgeAutoUnhidden
-// Dependencies: [1385, 8481, 504, 8414, 2]
+// Dependencies: [1388, 8547, 504, 8480, 2]
 // Exports: default
 
-// Module 19455 (useIsNitroBadgeAutoUnhidden)
+// Module 19647 (useIsNitroBadgeAutoUnhidden)
 import get_initialized from "get initialized" /* 504 */;
-import BadgeId from "BadgeId" /* 8414 */;
-import UserStore from "UserStore" /* 1385 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8481 */;
+import BadgeId from "BadgeId" /* 8480 */;
+import UserStore from "UserStore" /* 1388 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8547 */;
 import size from "module_2" /* 2 */;
 
 let badgeById, currentUser;

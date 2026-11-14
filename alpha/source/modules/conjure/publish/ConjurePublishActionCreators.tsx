@@ -1,21 +1,21 @@
-// Module ID: 13063
-// Function ID: 13064
+// Module ID: 13158
+// Function ID: 13159
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1385, 6954, 7313, 1072, 7319, 1282, 7265, 572, 7286, 12175, 7330, 13064, 2]
+// Dependencies: [5, 1388, 7017, 7377, 1072, 7383, 1285, 7329, 572, 7350, 12270, 7394, 13159, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 13063 (ConjurePublishActionCreators)
+// Module 13158 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7265 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 7319 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7330 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 12175 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 13064 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 7383 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7394 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 12270 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 13159 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7313 */;
+import UserStore from "UserStore" /* 1388 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7377 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_4, delete_channels, ok;
@@ -63,7 +63,7 @@ let obj = function _unpublishProject() {
               ({ guildId: c1, alsoRemovePreviewBot: c2, deleteChannels: c3 } = closure_1);
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -262,7 +262,7 @@ obj = function _refreshPublishedProject() {
             obj8 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

@@ -1,17 +1,17 @@
-// Module ID: 1393
-// Function ID: 1394
+// Module ID: 1396
+// Function ID: 1397
 // Name: DisplayNameStylesUtils
-// Dependencies: [32, 1394, 558, 1397, 1396, 671, 1090, 2]
+// Dependencies: [32, 1397, 558, 1400, 1399, 671, 1090, 2]
 // Exports: areDisplayNameStylesEqual, buildGummyColors, createColorPaletteList, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, normalizeDisplayNameStylesForApply, parseServerDisplayNameStyles, rebuildGummySourceColor, toEditorDisplayNameStyles, wrapHue
 
-// Module 1393 (DisplayNameStylesUtils)
+// Module 1396 (DisplayNameStylesUtils)
 import shallowEqual from "shallowEqual" /* 558 */;
 import _modDef671 from "module_671" /* 671 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import ColorPaletteUtils from "ColorPaletteUtils" /* 1397 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
+import ColorPaletteUtils from "ColorPaletteUtils" /* 1400 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,6 +21,10 @@ let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
+function isValidDisplayNameColor(arg0) {
+  const isIntegerResult = Number.isInteger(arg0) && arg0 >= 0 && arg0 <= 16777215;
+  return isIntegerResult;
+}
 ({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_4, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: hasOwnProperty, getColorPresetsForEffect: metroRequire, HEXAGON_CAMPAIGN_FONTS: metroImportDefault } = DisplayNameStylesConstants);
 let items = [DisplayNameEffect.DisplayNameEffect.NEON, DisplayNameEffect.DisplayNameEffect.TOON, DisplayNameEffect.DisplayNameEffect.POP, DisplayNameEffect.DisplayNameEffect.GUMMY];
 const set = new Set(items);
@@ -170,11 +174,13 @@ export function hueToGummyColor(sharedValue) {
   const hslResult = obj.hsl(sharedValue, hasOwnProperty, React3);
   return hslResult.num();
 }
+export { isValidDisplayNameColor };
 export function parseServerDisplayNameStyles(display_name_styles) {
+  let colors;
   let tmp = null;
   if (null != display_name_styles) {
-    const obj = { fontId: null, effectId: null, colors: null };
-    ({ font_id: obj.fontId, effect_id: obj.effectId, colors: obj.colors } = display_name_styles);
+    const obj = { fontId: null, effectId: null, colors: colors.filter(isValidDisplayNameColor) };
+    ({ font_id: obj.fontId, effect_id: obj.effectId, colors } = display_name_styles);
     tmp = obj;
   }
   return tmp;

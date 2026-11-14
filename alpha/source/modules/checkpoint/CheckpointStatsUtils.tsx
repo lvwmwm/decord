@@ -1,14 +1,14 @@
-// Module ID: 6684
-// Function ID: 6685
+// Module ID: 6747
+// Function ID: 6748
 // Name: CheckpointStatsUtils
-// Dependencies: [1404, 2150, 1113, 5106, 11, 2]
+// Dependencies: [1407, 2153, 1113, 5169, 11, 2]
 // Exports: formatCheckpointCompactNumber, formatCheckpointPeakHour, getCheckpointOdysseyCopies, getCheckpointTopPercent, getGuildAcronymCharacter, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGameDays, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 6684 (CheckpointStatsUtils)
+// Module 6747 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import StringUtils from "StringUtils" /* 2150 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5106 */;
-import UserRecord from "UserRecord" /* 1404 */;
+import StringUtils from "StringUtils" /* 2153 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
+import UserRecord from "UserRecord" /* 1407 */;
 import size from "module_2" /* 2 */;
 
 let game, guild;
@@ -42,9 +42,9 @@ export function getGuildAcronymCharacter(guildName) {
   }
   return toLocaleUpperCaseResult;
 }
-export function formatCheckpointCompactNumber(stateFromStores1) {
+export function formatCheckpointCompactNumber(checkpointOdysseyCopies) {
   const numberFormat = new Intl.NumberFormat(intl.intl.currentLocale, { notation: "compact", compactDisplay: "long" });
-  return numberFormat.format(stateFromStores1);
+  return numberFormat.format(checkpointOdysseyCopies);
 }
 export function getCheckpointOdysseyCopies(stateFromStores1) {
   return stateFromStores1 / 87765;

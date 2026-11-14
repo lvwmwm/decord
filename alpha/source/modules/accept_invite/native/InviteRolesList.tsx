@@ -1,16 +1,16 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 15081
+// Function ID: 15082
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 5243, 5153, 6274, 5866, 1113, 10866, 2]
+// Dependencies: [19, 17, 21, 5306, 5216, 6337, 5929, 1113, 10935, 2]
 // Exports: default
 
-// Module 14967 (InviteRolesList)
+// Module 15081 (InviteRolesList)
 import react_native from "react-native" /* 17 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 5153 */;
-import RolePillDefault from "RolePill" /* 10866 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 5216 */;
+import RolePillDefault from "RolePill" /* 10935 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -51,9 +51,9 @@ export default function InviteRolesList(invite) {
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style, children: items1 };
-      const Stack = guild(6274).Stack;
+      const Stack = guild(6337).Stack;
       const obj2 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(guild(1113).t.stcSfI) };
-      const Text = guild(5866).Text;
+      const Text = guild(5929).Text;
       intl = guild(1113).intl;
       items1 = [closure_5(Text, obj2), ];
       const obj3 = {

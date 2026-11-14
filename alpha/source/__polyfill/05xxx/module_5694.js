@@ -1,90 +1,52 @@
 // Module ID: 5694
 // Function ID: 5695
-// Dependencies: [19, 38, 5511]
-// Exports: usePropsValidator
+// Dependencies: [5669, 5686, 5660]
+// Exports: usePinchGesture
 
 // Module 5694
-import react from "react" /* 19 */;
-import _modDef38 from "module_38" /* 38 */;
+import ComposedGestureName from "ComposedGestureName" /* 5660 */;
+import _mod5669 from "module_5669" /* 5669 */;
+import _mod5686 from "module_5686" /* 5686 */;
 
-const useMemo = react.useMemo;
+let tmp2;
+let tmp3;
+function transformPinchProps(arg0) {
+  const obj = _mod5669;
+  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
+  arg0.fillInDefaultValues = fillInDefaultValues;
+  return arg0;
+}
+const items = [{ code: "(function diffCalculator_Pnpm_usePinchGestureTs1(current,previous){return{scaleChange:previous?current.scale/previous.scale:current.scale};})" }];
+[tmp2] = items;
+function diffCalculator(scale, scale2) {
+  let scaleChange;
+  scale = scale.scale;
+  if (scale2) {
+    scaleChange = scale / scale2.scale;
+  } else {
+    scaleChange = scale;
+  }
+  return { scaleChange };
+}
+diffCalculator.__workletHash = 797719799396;
+diffCalculator.__initData = tmp2;
+const items1 = [{ code: "(function fillInDefaultValues_Pnpm_usePinchGestureTs2(event){event.scaleChange=1;})" }];
+[tmp3] = items1;
+function fillInDefaultValues(arg0) {
+  arg0.scaleChange = 1;
+}
+fillInDefaultValues.__workletHash = 16688050895505;
+fillInDefaultValues.__initData = tmp3;
+const map = new Map();
+let closure_6 = {};
 
-export const usePropsValidator = (index) => {
-  index = index.index;
-  const snapPoints = index.snapPoints;
-  const enableDynamicSizing = index.enableDynamicSizing;
-  const topInset = index.topInset;
-  const bottomInset = index.bottomInset;
-  let items = [index, snapPoints, topInset, bottomInset, enableDynamicSizing];
-  topInset(() => {
-    let items;
-    if (snapPoints) {
-      let value = obj;
-      if ("get" in snapPoints) {
-        value = obj.get();
-      }
-      items = value;
-    } else {
-      items = [];
-    }
-    let tmp2 = importDefault;
-    let tmp3 = dependencyMap;
-    let tmp5 = items;
-    let tmp4 = _modDef38;
-    if (!items) {
-      tmp5 = enableDynamicSizing;
-    }
-    tmp4(tmp5, "'snapPoints' was not provided! please provide at least one snap point.");
-    const mapped = items.map((item) => {
-      let parsed = item;
-      if (typeof item !== "number") {
-        const _Number = Number;
-        parsed = Number.parseInt(item.replace("%", ""), 10);
-      }
-      let tmp4 = parsed > 0;
-      const tmp2 = enableDynamicSizing;
-      const tmp3 = snapPoints(enableDynamicSizing[1]);
-      if (!tmp4) {
-        tmp4 = parsed === index(tmp2[2]).INITIAL_SNAP_POINT;
-      }
-      tmp3(tmp4, "Snap point '" + item + "' is invalid. if you want to allow user to close the sheet, Please use 'enablePanDownToClose' prop.");
-    });
-    let tmp9 = "value" in items;
-    const tmp2Result = _modDef38;
-    if (!tmp9) {
-      tmp9 = items.length > 0;
-    }
-    if (!tmp9) {
-      tmp9 = enableDynamicSizing;
-    }
-    tmp2Result(tmp9, "'snapPoints' was provided with no points! please provide at least one snap point.");
-    let tmp13 = typeof index === "number";
-    const tmp2Result5 = _modDef38;
-    if (typeof index !== "number") {
-      tmp13 = undefined === tmp12;
-    }
-    tmp2Result5(tmp13, "'index' was provided but with wrong type ! expected type is a number.");
-    let tmp16 = enableDynamicSizing;
-    const tmp2Result6 = _modDef38;
-    if (!enableDynamicSizing) {
-      tmp16 = typeof tmp12 !== "number";
-    }
-    if (!tmp16) {
-      tmp16 = tmp12 >= -1 && tmp12 <= items.length - 1;
-      const tmp17 = tmp12 >= -1 && tmp12 <= items.length - 1;
-    }
-    tmp2Result6(tmp16, `'index' was provided but out of the provided snap points range! expected value to be between -1, ${arr.length - 1}`);
-    let tmp20 = typeof topInset === "number";
-    const tmp2Result7 = _modDef38;
-    if (typeof topInset !== "number") {
-      tmp20 = undefined === topInset;
-    }
-    tmp2Result7(tmp20, "'topInset' was provided but with wrong type ! expected type is a number.");
-    let tmp23 = typeof bottomInset === "number";
-    const tmp2Result8 = _modDef38;
-    if (typeof bottomInset !== "number") {
-      tmp23 = undefined === bottomInset;
-    }
-    tmp2Result8(tmp23, "'bottomInset' was provided but with wrong type ! expected type is a number.");
-  }, items);
-};
+export function usePinchGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_6;
+  }
+  const obj = _mod5669;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPinchProps);
+  const obj2 = _mod5686;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pinch, clonedAndRemappedConfig);
+}

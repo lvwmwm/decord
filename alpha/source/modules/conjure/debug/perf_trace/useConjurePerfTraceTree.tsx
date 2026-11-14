@@ -1,11 +1,11 @@
-// Module ID: 13903
-// Function ID: 13904
+// Module ID: 14008
+// Function ID: 14009
 // Name: useConjurePerfTraceTree
-// Dependencies: [32, 19, 7323, 2]
+// Dependencies: [32, 19, 7387, 2]
 // Exports: default
 
-// Module 13903 (useConjurePerfTraceTree)
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 7323 */;
+// Module 14008 (useConjurePerfTraceTree)
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 7387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

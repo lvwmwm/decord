@@ -1,16 +1,16 @@
-// Module ID: 18414
-// Function ID: 18415
+// Module ID: 18539
+// Function ID: 18540
 // Name: EncryptionSetting
-// Dependencies: [6026, 9135, 1072, 504, 18415, 1113, 12311, 18416, 2]
+// Dependencies: [6089, 9202, 1072, 504, 18540, 1113, 12406, 18541, 2]
 
-// Module 18414 (EncryptionSetting)
+// Module 18539 (EncryptionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 18415 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 6026 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 18540 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 6089 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

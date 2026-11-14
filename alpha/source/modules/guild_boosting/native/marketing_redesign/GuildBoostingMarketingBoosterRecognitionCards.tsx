@@ -1,25 +1,25 @@
-// Module ID: 15902
-// Function ID: 15903
+// Module ID: 16022
+// Function ID: 16023
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 5243, 575, 5866, 1113, 15903, 9914, 15904, 15284, 15905, 8107, 15906, 9389, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5929, 1113, 16023, 9981, 16024, 15398, 16025, 8173, 16026, 9458, 2]
 // Exports: default
 
-// Module 15902 (GuildBoostingMarketingBoosterRecognitionCards)
+// Module 16022 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8107 */;
-import HeartIcon from "HeartIcon" /* 9389 */;
-import BoostGemIcon from "BoostGemIcon" /* 9914 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 15284 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15903 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15904 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15905 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15906 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8173 */;
+import HeartIcon from "HeartIcon" /* 9458 */;
+import BoostGemIcon from "BoostGemIcon" /* 9981 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 15398 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16023 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16024 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16025 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16026 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

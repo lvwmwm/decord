@@ -1,17 +1,17 @@
-// Module ID: 11914
-// Function ID: 11915
+// Module ID: 11980
+// Function ID: 11981
 // Name: GuildNSFW
-// Dependencies: [109, 19, 5114, 21, 504, 6775, 6854, 8124, 6770, 1113, 11915, 2]
+// Dependencies: [109, 19, 5177, 21, 504, 6838, 6917, 8190, 6833, 1113, 11981, 2]
 // Exports: default
 
-// Module 11914 (GuildNSFW)
+// Module 11980 (GuildNSFW)
 import Fragment from "Fragment" /* 21 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6854 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8124 */;
-import GatedContentDefault from "GatedContent" /* 11915 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
+import GatedContentDefault from "GatedContent" /* 11981 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5114 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

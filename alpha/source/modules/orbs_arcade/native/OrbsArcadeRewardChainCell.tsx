@@ -1,20 +1,20 @@
-// Module ID: 17543
-// Function ID: 17544
+// Module ID: 17661
+// Function ID: 17662
 // Name: OrbsArcadeRewardChainCell
-// Dependencies: [32, 19, 17, 5244, 21, 5243, 575, 1652, 504, 5485, 5250, 5839, 17530, 1705, 671, 5830, 17544, 10355, 17545, 7864, 5860, 17546, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 5306, 575, 1655, 504, 5548, 5313, 5902, 17648, 1708, 671, 5893, 17662, 10424, 17663, 7930, 5923, 17664, 2]
 // Exports: default, useOrbsArcadeRewardChainRowStyle, useOrbsArcadeRewardChainTimeline
 
-// Module 17543 (OrbsArcadeRewardChainCell)
+// Module 17661 (OrbsArcadeRewardChainCell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import _mod1652 from "module_1652" /* 1652 */;
+import _mod1655 from "module_1655" /* 1655 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { borderWidth: 1.6666666666666667, borderColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 obj4 = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE, opacity: 0.4 };
 let closure_14 = createStyles(obj);
-let items = [{ code: "(function getWindowProgress_OrbsArcadeRewardChainCellTsx1(timeMs,startMs,durationMs){let[interpolate,Extrapolation]=this.__closure;if(startMs==null){return 1;}return interpolate(timeMs,[startMs,startMs+durationMs],[0,1],Extrapolation.CLAMP);})" }, _mod1652.interpolate, _mod1652.Extrapolation];
+let items = [{ code: "(function getWindowProgress_OrbsArcadeRewardChainCellTsx1(timeMs,startMs,durationMs){let[interpolate,Extrapolation]=this.__closure;if(startMs==null){return 1;}return interpolate(timeMs,[startMs,startMs+durationMs],[0,1],Extrapolation.CLAMP);})" }, _mod1655.interpolate, _mod1655.Extrapolation];
 let c0;
 let c1;
 [tmp6, tmp7, tmp8] = items;
@@ -131,13 +131,13 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   ({ status, isFocused, focusRingAtMs } = arg0);
   let tmp = closure_14();
   let tmp2 = token1;
-  let obj = token1(5250);
+  let obj = token1(5313);
   const theme = obj.useThemeContext().theme;
-  let obj2 = token1(5839);
+  let obj2 = token1(5902);
   const token = obj2.useToken(ref(575).colors.ICON_STRONG);
-  let obj3 = token1(5839);
+  let obj3 = token1(5902);
   token1 = obj3.useToken(ref(575).colors.STATUS_POSITIVE);
-  const LOCKED = token1(17530).OrbsArcadeRewardStatus.LOCKED;
+  const LOCKED = token1(17648).OrbsArcadeRewardStatus.LOCKED;
   ref = react.useRef(null);
   let sum = null;
   if (null != grantAtMs) {
@@ -159,7 +159,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   let c2;
   let c3;
   [tmp12, tmp13, tmp14, tmp15, tmp16] = items;
-  const tmp2Result = tmp2(1652);
+  const tmp2Result = tmp2(1655);
   class OrbsArcadeRewardChainCellTsx3 {
     constructor() {
       return _undefined(_undefined2.get(), c2, c3);
@@ -176,7 +176,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   c2 = undefined;
   c3 = undefined;
   [tmp18, tmp19, tmp20, tmp21, tmp22] = items2;
-  const tmp2Result8 = tmp2(1652);
+  const tmp2Result8 = tmp2(1655);
   class OrbsArcadeRewardChainCellTsx4 {
     constructor() {
       return _undefined(_undefined2.get(), c2, c3);
@@ -193,7 +193,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   c2 = undefined;
   c3 = undefined;
   [tmp24, tmp25, tmp26, tmp27, tmp28] = items4;
-  const tmp2Result9 = tmp2(1652);
+  const tmp2Result9 = tmp2(1655);
   class OrbsArcadeRewardChainCellTsx5 {
     constructor() {
       return _undefined(_undefined2.get(), c2, c3);
@@ -216,7 +216,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   c0 = undefined;
   c1 = undefined;
   [tmp32, tmp33, tmp34] = items6;
-  const tmp2Result10 = tmp2(1652);
+  const tmp2Result10 = tmp2(1655);
   class OrbsArcadeRewardChainCellTsx6 {
     constructor() {
       const tmp2 = null != c0 && _undefined.get() >= tmp;
@@ -229,7 +229,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   OrbsArcadeRewardChainCellTsx6.__initData = tmp32;
   const items8 = [closure_21, , ];
   const useAnimatedReaction = tmp2Result10.useAnimatedReaction;
-  items8[1] = tmp2(1705).scheduleOnRN;
+  items8[1] = tmp2(1708).scheduleOnRN;
   items8[2] = callback;
   c0 = undefined;
   c1 = undefined;
@@ -270,7 +270,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   const items12 = [closure_22, derivedValue];
   c0 = undefined;
   [tmp41, tmp42] = items12;
-  const tmp2Result11 = tmp2(1652);
+  const tmp2Result11 = tmp2(1655);
   class OrbsArcadeRewardChainCellTsx8 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -283,9 +283,9 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   OrbsArcadeRewardChainCellTsx8.__initData = tmp41;
   const animatedStyle = tmp2Result11.useAnimatedStyle(OrbsArcadeRewardChainCellTsx8);
   const items14 = [closure_23, , , , , , ];
-  const useAnimatedStyle = tmp2(1652).useAnimatedStyle;
-  tmp2(1652);
-  items14[1] = tmp2(1652).interpolate;
+  const useAnimatedStyle = tmp2(1655).useAnimatedStyle;
+  tmp2(1655);
+  items14[1] = tmp2(1655).interpolate;
   items14[2] = getWindowProgress;
   items14[3] = timeline;
   items14[4] = sum;
@@ -312,7 +312,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   OrbsArcadeRewardChainCellTsx9.__workletHash = 15751771266873;
   OrbsArcadeRewardChainCellTsx9.__initData = tmp45;
   const animatedStyle1 = useAnimatedStyle(OrbsArcadeRewardChainCellTsx9);
-  tmp2(1652);
+  tmp2(1655);
   const items16 = [closure_24, stemLength, derivedValue2];
   c0 = undefined;
   c1 = undefined;
@@ -344,7 +344,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   if (null != stemLength) {
     const items18 = [tmp.stem, , ];
     let grantedStem;
-    View = tmp4(1652).View;
+    View = tmp4(1655).View;
     if (isStemTargetGranted) {
       grantedStem = tmp.grantedStem;
     }
@@ -354,7 +354,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     tmp61Result = null;
     if (!isStemTargetGranted) {
       const obj7 = { style: StyleSheet.absoluteFill, start, end, colors: memo1 };
-      tmp61Result = tmp61(tmp4(5830), obj7);
+      tmp61Result = tmp61(tmp4(5893), obj7);
     }
     tmp61Result2 = tmp61(View, obj6);
   }
@@ -365,7 +365,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   items19[1] = closure_8(View, obj8);
   if (isFocused) {
     const obj9 = { color: token, progress: derivedValue1, rewardSize: 50, strokeWidth };
-    tmp68Result = tmp68(tmp4(17544), obj9);
+    tmp68Result = tmp68(tmp4(17662), obj9);
   } else {
     tmp68Result = null;
   }
@@ -373,34 +373,34 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   let tmp58Result = null;
   if (status !== LOCKED) {
     let tmp68Result5 = null;
-    const tmp2Result14 = tmp2(5250);
+    const tmp2Result14 = tmp2(5313);
     const tmp72 = closure_9;
     if (!tmp2Result14.isThemeLight(theme)) {
       const obj10 = { style: items21 };
       items21 = [tmp.circle, memo, animatedStyle];
-      tmp68Result5 = tmp68(tmp4(1652).View, obj10);
+      tmp68Result5 = tmp68(tmp4(1655).View, obj10);
     }
     const obj11 = { children: items22 };
     items22 = [tmp68Result5, ];
     const obj12 = { color: token1, progress: derivedValue, rewardSize: 50, strokeWidth };
-    items22[1] = closure_8(ref(17544), obj12);
+    items22[1] = closure_8(ref(17662), obj12);
     tmp58Result = tmp58(tmp72, obj11);
   }
   items19[3] = tmp58Result;
-  if (reward.type === tmp2(17530).OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
-    tmp68Result6 = tmp68(tmp2(10355).NitroCoinSpotIllustration, { height: 30 });
+  if (reward.type === tmp2(17648).OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
+    tmp68Result6 = tmp68(tmp2(10424).NitroCoinSpotIllustration, { height: 30 });
   } else {
     const obj13 = { reward, size: 38 };
-    tmp68Result6 = tmp68(tmp4(17545), obj13);
+    tmp68Result6 = tmp68(tmp4(17663), obj13);
   }
   items19[4] = tmp68Result6;
   let tmp68Result7 = null;
   if (status !== LOCKED) {
     const obj14 = { style: items23, children: closure_8(CircleCheckIcon, obj15) };
     items23 = [tmp.checkBadge, animatedStyle1];
-    const View2 = tmp4(1652).View;
+    const View2 = tmp4(1655).View;
     obj15 = { size: "xs", color: ref(575).colors.STATUS_POSITIVE, secondaryColor: ref(575).colors.WHITE };
-    CircleCheckIcon = tmp2(7864).CircleCheckIcon;
+    CircleCheckIcon = tmp2(7930).CircleCheckIcon;
     tmp68Result7 = tmp68(View2, obj14);
   }
   items19[5] = tmp68Result7;
@@ -409,8 +409,8 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     tmp68Result8 = null;
     if (null != grantAtMs) {
       const obj16 = { pointerEvents: "none", style: tmp.confetti, children: closure_8(tmp4Result, obj17) };
-      obj17 = { ref, source: tmp2(17546), autoPlay: false, loop: false };
-      tmp4Result = ref(5860);
+      obj17 = { ref, source: tmp2(17664), autoPlay: false, loop: false };
+      tmp4Result = ref(5923);
       tmp68Result8 = tmp68(tmp59, obj16);
     }
   }
@@ -432,10 +432,10 @@ export function useOrbsArcadeRewardChainRowStyle(arg0) {
   let tmp8;
   let tmp9;
   ({ isGranted, isFocused, timeline, focusRingAtMs } = arg0);
-  let tmp = _mod1652;
+  let tmp = _mod1655;
   let items = [closure_16, isGranted, isFocused, 0.4, getWindowProgress, timeline, focusRingAtMs, 500, ];
   const useAnimatedStyle = tmp.useAnimatedStyle;
-  items[8] = _mod1652.interpolate;
+  items[8] = _mod1655.interpolate;
   let c0;
   let c1;
   let c2;
@@ -520,7 +520,7 @@ export function useOrbsArcadeRewardChainTimeline(arg0) {
       return obj;
     }
   }), 1)[0];
-  let obj2 = _mod1652;
+  let obj2 = _mod1655;
   const sharedValue = obj2.useSharedValue(0);
   const items1 = [first, sharedValue];
   const effect = first.useEffect(() => {
@@ -528,7 +528,7 @@ export function useOrbsArcadeRewardChainTimeline(arg0) {
       const _requestAnimationFrame = requestAnimationFrame;
       let closure_0 = requestAnimationFrame(() => {
         const obj = require("timing/timing");
-        const obj2 = { duration: first.endMs, easing: require("module_1652").Easing.linear };
+        const obj2 = { duration: first.endMs, easing: require("module_1655").Easing.linear };
         return set.set(obj.withTiming(first.endMs, obj2));
       });
       return () => cancelAnimationFrame(closure_0);

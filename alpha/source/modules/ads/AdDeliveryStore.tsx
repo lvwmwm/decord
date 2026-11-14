@@ -1,23 +1,24 @@
-// Module ID: 8738
-// Function ID: 8739
+// Module ID: 8805
+// Function ID: 8806
 // Name: AdDeliveryStore
-// Dependencies: [1089, 8739, 559, 5282, 504, 5281, 572, 2]
+// Dependencies: [1089, 8806, 559, 5345, 504, 5344, 572, 2]
 
-// Module 8738 (AdDeliveryStore)
+// Module 8805 (AdDeliveryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import AdPlacement from "AdPlacement" /* 5281 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 8739 */;
+import AdPlacement from "AdPlacement" /* 5344 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 8806 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const AdCreativeType = tmp(5282);
-let closure_9 = 30 * DurationsDefault.Millis.SECOND;
-let closure_10 = 10 * DurationsDefault.Millis.MINUTE;
+const AdCreativeType = tmp(5345);
+let closure_9 = [];
+let closure_10 = 30 * DurationsDefault.Millis.SECOND;
+let closure_11 = 10 * DurationsDefault.Millis.MINUTE;
 new Map();
 let closure_4 = 0;
 let map1 = new Map();
@@ -25,26 +26,26 @@ let map2 = new Map();
 let map = map2;
 const map3 = new Map();
 const map4 = new Map();
-let closure_11 = null;
-let c12 = false;
+let closure_12 = null;
+let c13 = false;
 const Store = get_initializedDefault.Store;
 class AdDeliveryStore extends Store {
-  isFetchingAdToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP) {
+  isFetchingAdToDeliverByPlacement(current) {
     let flag;
     const obj = map;
     if (map != null) {
-      flag = obj.get(QUEST_HOME_BANNER_DESKTOP);
+      flag = obj.get(current);
     }
     if (flag == null) {
       flag = false;
     }
     return flag;
   }
-  canRefreshAd(QUEST_HOME_BANNER_DESKTOP) {
+  canRefreshAd(current) {
     let value;
     const obj = map4;
     if (map4 != null) {
-      value = obj.get(QUEST_HOME_BANNER_DESKTOP);
+      value = obj.get(current);
     }
     let tmp3 = null == value;
     if (!tmp3) {
@@ -52,6 +53,13 @@ class AdDeliveryStore extends Store {
       tmp3 = Date.now() >= value;
     }
     return tmp3;
+  }
+  getAdDecisionsForPlacement(MOBILE_HOME_DOCK_AREA) {
+    let value = map1.get(MOBILE_HOME_DOCK_AREA);
+    if (value == null) {
+      value = closure_9;
+    }
+    return value;
   }
   getNoFillForPlacement(arg0) {
     const value = map.get(arg0);
@@ -68,16 +76,16 @@ class AdDeliveryStore extends Store {
     return tmp2;
   }
   isFetchingQuestHomeHero() {
-    return c12;
+    return c13;
   }
   getLastFetchedQuestHomeHero() {
-    return closure_11;
+    return closure_12;
   }
   getQuestHomeHero() {
-    const value = map1.get(AdPlacement.AdPlacement.QUEST_HOME_BANNER_DESKTOP);
+    const first = this.getAdDecisionsForPlacement(AdPlacement.AdPlacement.QUEST_HOME_BANNER_DESKTOP)[0];
     let creative;
-    if (value != null) {
-      creative = value.creative;
+    if (first != null) {
+      creative = first.creative;
     }
     let type;
     if (creative != null) {
@@ -113,8 +121,8 @@ let obj = {
     new Map();
     new Map();
     new Map();
-    closure_11 = null;
-    c12 = false;
+    closure_12 = null;
+    c13 = false;
   },
   QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: function handleFetchQuestToDeliverBegin(placement) {
     placement = placement.placement;
@@ -170,7 +178,8 @@ let obj = {
         obj6 = AdDecisionUtils;
         map2 = new Map(map1);
         map1 = map2;
-        const result2 = map2.set(placement, obj2);
+        const items = [obj2];
+        const result2 = map2.set(placement, items);
       }
     }
     map.delete(placement);
@@ -187,7 +196,7 @@ let obj = {
     if (null == value) {
       const self = this;
       const self2 = this;
-      const tmp7 = new BackoffDefault(closure_9, closure_10);
+      const tmp7 = new BackoffDefault(closure_10, closure_11);
       const result1 = map3.set(placement, tmp7);
       value = tmp7;
     }
@@ -206,18 +215,19 @@ let obj = {
     const obj = { creative: null, fetchedAt, ttlMillis: obj3.resolveResponseTtl(responseTtlSeconds) };
     obj3 = AdDecisionUtils;
     map1 = new Map(map1);
-    const result1 = map1.set(placement, obj);
+    const items = [obj];
+    const result1 = map1.set(placement, items);
   },
   QUESTS_FETCH_QUEST_HOME_HERO_BEGIN: function handleFetchQuestHomeHeroBegin(placement) {
-    c12 = true;
+    c13 = true;
     placement = placement.placement;
     map = new Map(map);
     const result = map.set(placement, true);
   },
   QUESTS_FETCH_QUEST_HOME_HERO_SUCCESS: function handleFetchQuestHomeHeroSuccess(fetchedAt) {
     let obj5;
-    c12 = false;
-    closure_11 = Date.now();
+    c13 = false;
+    closure_12 = Date.now();
     const placement = fetchedAt.placement;
     map = new Map(map);
     const result = map.set(placement, false);
@@ -235,18 +245,19 @@ let obj = {
     ({ adDecisionData: obj4.adDecisionData, adContext: obj4.adContext, metadataSealed: obj4.metadataSealed, trafficMetadataSealed: obj4.trafficMetadataSealed, provenanceMetadataSealed: obj4.provenanceMetadataSealed } = fetchedAt);
     obj5 = AdDecisionUtils;
     map1 = new Map(map1);
-    const result1 = map1.set(fetchedAt.placement, obj2);
+    const items = [obj2];
+    const result1 = map1.set(fetchedAt.placement, items);
   },
   QUESTS_FETCH_QUEST_HOME_HERO_FAILURE: function handleFetchQuestHomeHeroFailure(placement) {
     placement = placement.placement;
-    c12 = false;
+    c13 = false;
     map = new Map(map);
     const result = map.set(placement, false);
     let value = map3.get(placement);
     if (null == value) {
       const self = this;
       const self2 = this;
-      const tmp6 = new BackoffDefault(closure_9, closure_10);
+      const tmp6 = new BackoffDefault(closure_10, closure_11);
       const result1 = map3.set(placement, tmp6);
       value = tmp6;
     }

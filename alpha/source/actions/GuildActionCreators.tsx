@@ -1,33 +1,33 @@
-// Module ID: 6854
-// Function ID: 6855
+// Module ID: 6917
+// Function ID: 6918
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 6855, 502, 6856, 5173, 5114, 5146, 5286, 1385, 1072, 1097, 6205, 1113, 572, 6857, 6859, 1282, 6860, 7799, 2118, 6780, 14005, 15818, 7169, 7199, 7613, 6788, 1260, 5180, 1084, 8062, 5064, 1252, 15947, 1099, 6775, 6795, 2]
+// Dependencies: [109, 5, 6918, 502, 6919, 5236, 5177, 5209, 5349, 1388, 1072, 1097, 6268, 1113, 572, 6920, 6922, 1285, 6923, 7865, 2121, 6843, 14112, 15938, 7232, 7262, 7679, 6851, 1264, 5243, 1084, 8127, 5127, 1256, 16067, 1099, 6838, 6858, 2]
 
-// Module 6854 (GuildActionCreators)
+// Module 6917 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl3 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6205 */;
-import AgeGateUtils from "AgeGateUtils" /* 6775 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6788 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6795 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7613 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 8062 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 15947 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import AgeGateUtils from "AgeGateUtils" /* 6838 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6851 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6858 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7679 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 8127 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 16067 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 6855 */;
+import BulkBanStore from "BulkBanStore" /* 6918 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6856 */;
-import GuildChannelStore from "GuildChannelStore" /* 5173 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
-import UserStore from "UserStore" /* 1385 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6919 */;
+import GuildChannelStore from "GuildChannelStore" /* 5236 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -72,8 +72,8 @@ let obj = function _joinGuild() {
       let obj11;
       let obj29;
       let sessionId;
-      let tmp190;
-      let tmp197;
+      let tmp192;
+      let tmp199;
       function showGuildAtCapacityAlert() {
         let intl;
         let intl2;
@@ -133,7 +133,7 @@ let obj = function _joinGuild() {
               closure_11 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -150,7 +150,7 @@ let obj = function _joinGuild() {
               closure_6 = undefined === autoNavigate || autoNavigate;
               lurker = obj4.lurker;
               c2 = lurker;
-              const tmp144 = undefined === autoNavigate || autoNavigate;
+              const tmp146 = undefined === autoNavigate || autoNavigate;
               if (lurker == null) {
                 c2 = false;
               }
@@ -182,20 +182,20 @@ let obj = function _joinGuild() {
                 const HTTP = closure_132_0(closure_132_3[17]).HTTP;
                 const request = { url: closure_132_16.GUILD_JOIN(guildId), query: obj10, context: obj11, oldFormErrors: true, body: {}, rejectWithError: obj29.rejectWithMigratedError() };
                 const put = HTTP.put;
-                obj10 = { lurker, session_id: sessionId, recommendation_load_id: loadId, location: tmp190, from_directory: tmp197 };
+                obj10 = { lurker, session_id: sessionId, recommendation_load_id: loadId, location: tmp192, from_directory: tmp199 };
                 sessionId = null;
                 if (lurker) {
                   sessionId = closure_132_8.getSessionId();
                 }
-                tmp190 = null;
+                tmp192 = null;
                 if (lurker) {
-                  tmp190 = null;
+                  tmp192 = null;
                   if (null != lurkLocation) {
-                    tmp190 = lurkLocation;
+                    tmp192 = lurkLocation;
                   }
                 }
                 obj11 = { source };
-                tmp197 = source === closure_132_17.DIRECTORY_ENTRY || null;
+                tmp199 = source === closure_132_17.DIRECTORY_ENTRY || null;
                 c7 = 3;
                 c8 = 1;
                 obj29 = closure_132_0(closure_132_3[17]);
@@ -251,16 +251,16 @@ let obj = function _joinGuild() {
                   const joinGuildRefusedError3 = new closure_132_0(closure_132_3[16]).JoinGuildRefusedError(obj17);
                   throw joinGuildRefusedError3;
                 } else {
-                  let tmp73 = lurker;
-                  if (tmp73) {
+                  let tmp75 = lurker;
+                  if (tmp75) {
                     const body2 = cause.body;
                     let code3;
                     if (body2 != null) {
                       code3 = body2.code;
                     }
-                    tmp73 = code3 === closure_132_15.UNKNOWN_GUILD;
+                    tmp75 = code3 === closure_132_15.UNKNOWN_GUILD;
                   }
-                  if (tmp73) {
+                  if (tmp75) {
                     closure_132_25(guildId);
                   }
                   const body3 = cause.body;
@@ -269,8 +269,8 @@ let obj = function _joinGuild() {
                     code4 = body3.code;
                   }
                   if (code4 === closure_132_15.USER_GUILD_JOIN_AGE_RESTRICTED_IOS_DISALLOWED) {
-                    const tmp87 = lurker;
-                    if (tmp87) {
+                    const tmp89 = lurker;
+                    if (tmp89) {
                       closure_132_25(guildId);
                     }
                     const obj16 = closure_132_0(closure_132_3[23]);
@@ -301,10 +301,15 @@ let obj = function _joinGuild() {
                   const obj5 = closure_132_1(closure_132_3[14]);
                   obj5.dispatch(obj22);
                 }
-                if (null == closure_132_11.getGuild(guildId)) {
+                const guild = closure_132_11.getGuild(guildId);
+                let joinedAt;
+                if (guild != null) {
+                  joinedAt = guild.joinedAt;
+                }
+                if (null == joinedAt) {
                   if (value.body.show_verification_form) {
-                    const tmp23 = closure_6;
-                    if (tmp23) {
+                    const tmp25 = closure_6;
+                    if (tmp25) {
                       const obj13 = closure_132_0(closure_132_3[18]);
                       const result1 = obj13.transitionToMemberVerification(guildId);
                       c6 = 0;
@@ -323,10 +328,10 @@ let obj = function _joinGuild() {
                   const obj9 = closure_132_1(closure_132_3[14]);
                   obj9.dispatch(obj27);
                 }
-                const tmp43 = lurker;
-                if (!tmp43) {
-                  const tmp44 = closure_6;
-                  if (tmp44) {
+                const tmp45 = lurker;
+                if (!tmp45) {
+                  const tmp46 = closure_6;
+                  if (tmp46) {
                     c7 = 4;
                     c8 = 1;
                     const obj28 = { value: closure_132_0(closure_132_3[20])(closure_132_3[19], closure_132_3.paths), done: false };
@@ -363,11 +368,11 @@ let obj = function _joinGuild() {
             c8 = 3;
             return { value, done: true };
           }
-        } catch (tmp212) {
-          closure_5 = tmp212;
+        } catch (tmp214) {
+          closure_5 = tmp214;
           if (0 === c6) {
             c8 = 3;
-            throw tmp212;
+            throw tmp214;
           } else {
             c7 = 2;
           }
@@ -1064,24 +1069,31 @@ obj = {
       if (null != guildId) {
         const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
         if (null != defaultChannel) {
-          const obj3 = AgeGateUtils;
-          if (!obj3.isChannelContentGated(defaultChannel)) {
-            const tmp10Result = SpoilerChannelUtils;
-            if (!tmp10Result.isChannelSpoilerGated(defaultChannel)) {
-              const tmp10Result2 = router_utils;
-              tmp10Result2.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
+          const obj2 = AgeGateUtils;
+          if (!obj2.isChannelContentGated(defaultChannel)) {
+            const tmp12Result = SpoilerChannelUtils;
+            if (!tmp12Result.isChannelSpoilerGated(defaultChannel)) {
+              const tmp12Result2 = router_utils;
+              tmp12Result2.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
             }
           }
         }
-        const obj6 = router_utils;
-        obj6.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
+        const obj5 = router_utils;
+        obj5.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
       } else {
-        const obj2 = router_utils;
-        obj2.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
+        obj = router_utils;
+        obj.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
       }
     } else {
-      obj = router_utils;
-      obj.transitionTo(tmp2);
+      const opensChannel = tmp2.opensChannel;
+      const transitionTo = router_utils.transitionTo;
+      const path = tmp2.path;
+      router_utils;
+      if (opensChannel) {
+        transitionTo(path);
+      } else {
+        transitionTo(path, { navigationReplace: true });
+      }
     }
   },
   spoilerAgree(channelId) {

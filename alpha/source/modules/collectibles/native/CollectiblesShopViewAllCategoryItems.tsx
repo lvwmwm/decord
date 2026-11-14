@@ -1,32 +1,34 @@
-// Module ID: 18410
-// Function ID: 18411
+// Module ID: 18535
+// Function ID: 18536
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [5, 32, 19, 17, 5869, 9383, 9235, 1074, 1072, 21, 5243, 575, 1499, 18411, 504, 2183, 10364, 9619, 7871, 10377, 18412, 1113, 5866, 5873, 18363, 9955, 7852, 1627, 17494, 1652, 5876, 5877, 1252, 8468, 9352, 11677, 18413, 18392, 2]
+// Dependencies: [5, 32, 19, 17, 5932, 9451, 9302, 1074, 1072, 21, 5306, 575, 1502, 18536, 504, 2186, 10433, 9686, 7937, 10446, 18537, 1113, 5929, 5936, 18486, 10022, 7918, 1630, 17612, 1655, 5939, 5940, 1256, 8534, 9420, 11743, 18538, 18515, 18530, 2]
 
-// Module 18410 (CollectiblesShopViewAllCategoryItems)
+// Module 18535 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 575 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 8468 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 10364 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 8534 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 10433 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5869 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9383 */;
-import IAPStore from "IAPStore" /* 9235 */;
+import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9451 */;
+import IAPStore from "IAPStore" /* 9302 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, constants, set;
 
+let closure_12;
 let closure_14;
 let closure_15;
 let closure_16;
+let closure_17;
 let map1;
 let metroImportAll;
 let metroImportDefault;
@@ -36,8 +38,8 @@ let obj3;
 let obj4;
 let tmp;
 let tmp2;
-const springPresets = tmp2(5877);
-const AnalyticsLocationDefault = tmp(7871);
+const springPresets = tmp2(5940);
+const AnalyticsLocationDefault = tmp(7937);
 function CategoryItemsBySku(categorySkuId) {
   let _undefined;
   let _undefined2;
@@ -68,7 +70,7 @@ function CategoryItemsBySku(categorySkuId) {
   let closure_11;
   constants = undefined;
   ({ categoryName, analyticsContext } = categorySkuId);
-  let tmp = closure_17();
+  let tmp = closure_18();
   let tmp2 = categorySkuId;
   let tmp3 = category;
   let obj = categorySkuId(category[12]);
@@ -283,7 +285,7 @@ function CategoryItemsBySku(categorySkuId) {
     const tmp = stateFromStores1;
     if (tmp) {
       const replace = stackNavigation.replace;
-      const COLLECTIBLES_SHOP = constants.COLLECTIBLES_SHOP;
+      const COLLECTIBLES_SHOP = constants2.COLLECTIBLES_SHOP;
       const obj = { screen: constants.ORBS, analyticsSource: AnalyticsLocationDefault.COLLECTIBLES_SHOP };
       const replaced = replace(COLLECTIBLES_SHOP, obj);
     }
@@ -304,10 +306,10 @@ function CategoryItemsBySku(categorySkuId) {
       if (!tmp22) {
         let tmp34Result2;
         if (!stateFromStores1) {
-          let obj3 = { value: true, children: closure_15(CategoryItemsContent, obj4) };
+          let obj3 = { value: true, children: closure_16(CategoryItemsContent, obj4) };
           obj4 = { category, analyticsContext };
           const ImprovedMobileShopLoadingProvider = tmp2(tmp3[19]).ImprovedMobileShopLoadingProvider;
-          tmp34Result2 = closure_15(ImprovedMobileShopLoadingProvider, obj3);
+          tmp34Result2 = closure_16(ImprovedMobileShopLoadingProvider, obj3);
         }
         return tmp34Result2;
       }
@@ -331,13 +333,13 @@ function CategoryItemsBySku(categorySkuId) {
     const intl = tmp2(tmp3[21]).intl;
     name = intl.string(tmp2(tmp3[21]).t.ZTNur7);
   }
-  items11 = [closure_15(tmp5Result, obj7), ];
+  items11 = [closure_16(tmp5Result, obj7), ];
   if (tmp30) {
     const obj8 = { style: tmp.errorContainer, children: items12 };
     const obj9 = { variant: "body-md/medium", color: "text-default", accessibilityLiveRegion: "polite", children: intl2.string(tmp2(tmp3[21]).t.eAn6z2) };
     const Text = tmp2(tmp3[22]).Text;
     intl2 = tmp2(tmp3[21]).intl;
-    items12 = [closure_15(Text, obj9), ];
+    items12 = [closure_16(Text, obj9), ];
     let tmp36Result = !tmp29;
     if (tmp36Result) {
       const obj10 = { variant: "secondary", text: intl3.string(tmp2(tmp3[21]).t["+hivLW"]), onPress: callback };
@@ -361,20 +363,21 @@ function CategoryItemsContent(category) {
   let items6;
   let logoUrl;
   let mobileBgUrl;
-  let obj14;
+  let obj15;
   let obj6;
   let obj7;
   let obj8;
   let obj9;
   let tmp10;
   let tmp11;
+  let tmp15Result;
   let tmp17;
   let tmp18;
   let toHexStringResult;
   category = category.category;
   const analyticsContext = category.analyticsContext;
   let analyticsLocations;
-  let tmp = closure_17();
+  let tmp = closure_18();
   let tmp2 = analyticsContext;
   const tmp3 = analyticsLocations;
   ({ mobileBgUrl, logoUrl } = category);
@@ -400,7 +403,7 @@ function CategoryItemsContent(category) {
     }
     const result = set(withSpring(num, springPresets.Reanimated3DefaultSpringConfig));
   }, items1);
-  const items2 = [closure_19, sharedValue];
+  const items2 = [closure_20, sharedValue];
   let c0;
   [tmp10, tmp11] = items2;
   const obj4 = category(analyticsLocations[29]);
@@ -426,7 +429,7 @@ function CategoryItemsContent(category) {
     const obj = { location_stack: analyticsLocations, page_session_id: sessionId, source: AnalyticsLocationDefault.COLLECTIBLES_SHOP, page_type: "index", category: category.name };
     sessionId = undefined;
     const track = AnalyticsUtilsDefault.track;
-    const COLLECTIBLES_SHOP_VIEWED = map1.COLLECTIBLES_SHOP_VIEWED;
+    const COLLECTIBLES_SHOP_VIEWED = constants2.COLLECTIBLES_SHOP_VIEWED;
     AnalyticsUtilsDefault;
     if (analyticsContext != null) {
       sessionId = tmp4.sessionId;
@@ -438,12 +441,12 @@ function CategoryItemsContent(category) {
     if (analyticsContext != null) {
       sessionId1 = tmp4.sessionId;
     }
-    const obj2 = { sessionId: sessionId1, checkpoint: CollectiblesPerfLogging.CollectiblesShopPerfCheckpoint.SHOP_MOUNTED, tab: map1.SHOP_ALL, unpublishedCategoriesShown: false, cacheDisabled: false };
+    const obj2 = { sessionId: sessionId1, checkpoint: CollectiblesPerfLogging.CollectiblesShopPerfCheckpoint.SHOP_MOUNTED, tab: constants.SHOP_ALL, unpublishedCategoriesShown: false, cacheDisabled: false };
     trackShopPerf(obj2);
   }, items4);
-  const obj5 = { value: analyticsLocations, children: closure_15(CollectiblesAnalyticsProvider, obj6) };
+  const obj5 = { value: analyticsLocations, children: closure_16(CollectiblesAnalyticsProvider, obj6) };
   const AnalyticsLocationProvider = tmp5(tmp3[26]).AnalyticsLocationProvider;
-  obj6 = { newValue: obj7, children: closure_15(NativePaymentContextProvider, obj8) };
+  obj6 = { newValue: obj7, children: closure_16(NativePaymentContextProvider, obj8) };
   obj7 = { pageCategory: category.name };
   CollectiblesAnalyticsProvider = tmp5(tmp3[34]).CollectiblesAnalyticsProvider;
   const merged = Object.assign(analyticsContext);
@@ -452,49 +455,54 @@ function CategoryItemsContent(category) {
   NativePaymentContextProvider = tmp5(tmp3[35]).NativePaymentContextProvider;
   items5 = [, , , ];
   const obj10 = { source: { uri: mobileBgUrl }, style: absoluteFill.absoluteFill };
-  items5[0] = closure_15(category(tmp3[36]).CollectiblesProgressiveImage, obj10);
+  items5[0] = closure_16(category(tmp3[36]).CollectiblesProgressiveImage, obj10);
   const obj11 = { logoUrl, buttonColor: toHexStringResult, categoryName: category.name };
   toHexStringResult = undefined;
-  tmp17 = closure_16;
+  tmp17 = closure_17;
   tmp18 = closure_7;
   const tmp2Result = tmp2(tmp3[20]);
   if (backgroundColors != null) {
     const label = backgroundColors.label;
     toHexStringResult = label.toHexString();
   }
-  items5[1] = closure_15(tmp2Result, obj11);
+  items5[1] = closure_16(tmp2Result, obj11);
   const obj12 = { style: items6 };
   items6 = [tmp.border, animatedStyle];
-  items5[2] = closure_15(tmp2(tmp3[29]).View, obj12);
-  const obj13 = { category, products: filteredAndSortedProducts, scrollEnabled: true, onScroll: callback, paddingTop: tmp2(tmp3[11]).space.PX_16, paddingBottom: bottom + tmp2(tmp3[11]).space.PX_16, muteBundleStaticBackground: true, accessibilityLabel: intl.formatToPlainString(category(tmp3[21]).t.FNtLb3, obj14) };
+  items5[2] = closure_16(tmp2(tmp3[29]).View, obj12);
+  const obj13 = { category, products: filteredAndSortedProducts, scrollEnabled: true, onScroll: callback, paddingTop: tmp2(tmp3[11]).space.PX_16, paddingBottom: bottom + tmp2(tmp3[11]).space.PX_16, muteBundleStaticBackground: true, header: tmp15Result, accessibilityLabel: intl.formatToPlainString(category(tmp3[21]).t.FNtLb3, obj15) };
+  tmp15Result = undefined;
   const tmp2Result2 = tmp2(tmp3[37]);
+  if (category.skuId === closure_13) {
+    const obj14 = { collectionSkuId: category.skuId };
+    tmp15Result = tmp15(tmp5(tmp3[38]).TwelveDaysIndexNotice, obj14);
+  }
   intl = tmp5(tmp3[21]).intl;
-  obj14 = { category: category.name };
-  items5[3] = closure_15(tmp2Result2, obj13);
-  return closure_15(AnalyticsLocationProvider, obj5);
+  obj15 = { category: category.name };
+  items5[3] = closure_16(tmp2Result2, obj13);
+  return closure_16(AnalyticsLocationProvider, obj5);
 }
 ({ NativeModules: metroRequire, View: metroImportDefault, StyleSheet: metroImportAll } = react_native);
-let closure_12 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
-({ AnalyticEvents: map1, UserSettingsSections: closure_14 } = Constants);
-({ jsx: closure_15, jsxs: closure_16 } = Fragment);
+({ CollectiblesMobileShopScreen: closure_12, TWELVE_DAYS_COLLECTION_SKU_ID: map1 } = CollectiblesShopConstants);
+({ AnalyticEvents: closure_14, UserSettingsSections: closure_15 } = Constants);
+({ jsx: closure_16, jsxs: closure_17 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { rootContainer: obj2, border: obj3, errorContainer: obj4 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj4 = { flex: 1, justifyContent: "center", alignItems: "center", padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
-let closure_17 = createStyles(obj);
-let closure_19 = { code: "(function CollectiblesShopViewAllCategoryItemsTsx1(){let[borderOpacity]=this.__closure;return{opacity:borderOpacity.get()};})" };
+let closure_18 = createStyles(obj);
+let closure_20 = { code: "(function CollectiblesShopViewAllCategoryItemsTsx1(){let[borderOpacity]=this.__closure;return{opacity:borderOpacity.get()};})" };
 const memoResult = react.memo(function CollectiblesShopViewAllCategoryItems(category) {
   let tmp6;
   if (null != category.category) {
     const obj3 = { category: null, analyticsContext: null };
     ({ category: obj2.category, analyticsContext: obj2.analyticsContext } = category);
-    tmp6 = closure_15(CategoryItemsContent, obj3);
+    tmp6 = authStore3(CategoryItemsContent, obj3);
   } else {
     const obj = {};
     const merged = Object.assign(category);
-    tmp6 = closure_15(CategoryItemsBySku, obj);
+    tmp6 = authStore3(CategoryItemsBySku, obj);
   }
   return tmp6;
 });

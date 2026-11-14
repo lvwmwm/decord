@@ -1,21 +1,23 @@
-// Module ID: 18031
-// Function ID: 18032
+// Module ID: 18129
+// Function ID: 18130
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [10944, 9135, 1072, 504, 1113, 12311, 18032, 2]
+// Dependencies: [11013, 9202, 1072, 504, 1113, 12406, 18130, 18111, 2]
 
-// Module 18031 (CommunityActivityAlertsSetting)
+// Module 18129 (CommunityActivityAlertsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10944 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18111 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11013 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
+let SettingBuilders = SettingBuilders_mod;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -40,6 +42,12 @@ let obj = {
   }
 };
 const route = SettingBuilders.createRoute(obj);
+SettingBuilders = SettingBuilders_mod;
+const createRoute = SettingBuilders.createRoute;
+const obj2 = { parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_SERVERS };
+const merged = Object.assign(route);
+const route1 = createRoute(obj2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/CommunityActivityAlertsSetting.tsx");
 
 export default route;
+export const RedesignCommunityActivityAlertsSetting = route1;

@@ -1,20 +1,20 @@
-// Module ID: 18495
-// Function ID: 18496
+// Module ID: 18624
+// Function ID: 18625
 // Name: EffectiveNotifSettingsLayout
-// Dependencies: [19, 1231, 502, 16042, 21, 5243, 575, 18496, 6274, 8094, 1113, 3013, 16056, 504, 572, 17090, 2]
+// Dependencies: [19, 1231, 502, 16163, 21, 5306, 575, 18625, 6337, 8159, 1113, 3029, 16177, 504, 572, 17213, 2]
 // Exports: default
 
-// Module 18495 (EffectiveNotifSettingsLayout)
+// Module 18624 (EffectiveNotifSettingsLayout)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3013 from "module_3013" /* 3013 */;
-import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 18496 */;
+import _modDef3029 from "module_3029" /* 3029 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 18625 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 16042 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 16163 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -52,16 +52,16 @@ function EffectiveSettingsHeader() {
   let tmp9Result = null;
   if (unavailable) {
     let obj = { style: tmp.notice, children: closure_7(InlineNotice, obj2) };
-    const Stack = loading(6274).Stack;
+    const Stack = loading(6337).Stack;
     let str = "warning";
-    InlineNotice = loading(8094).InlineNotice;
+    InlineNotice = loading(8159).InlineNotice;
     if (loading) {
       str = "info";
     }
     obj2 = { type: str, role: "status", message: string(loading ? tmp13.Ns127F : tmp13.Nu2TMI), action: obj3 };
     const intl = tmp10(1113).intl;
     string = intl.string;
-    tmp13 = _modDef3013;
+    tmp13 = _modDef3029;
     obj3 = { text: intl2.string(loading(1113).t["5911Lb"]), onPress: callback, loading };
     intl2 = tmp10(1113).intl;
     tmp9Result = tmp9(Stack, obj);

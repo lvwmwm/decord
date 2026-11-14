@@ -1,19 +1,19 @@
-// Module ID: 12210
-// Function ID: 12211
+// Module ID: 12305
+// Function ID: 12306
 // Name: useHelpLineVisibility
-// Dependencies: [19, 2186, 8673, 9550, 563, 10918, 2]
+// Dependencies: [19, 2189, 8740, 9617, 563, 10987, 2]
 // Exports: useShouldShowHelplineLink, useShouldShowThroughlineLink
 
-// Module 12210 (useHelpLineVisibility)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9550 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10918 */;
+// Module 12305 (useHelpLineVisibility)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9617 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10987 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8673 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import size from "module_2" /* 2 */;
 
-const f103531 = () => userCountry.getUserCountry();
-const f103532 = () => locale.locale;
+const f104733 = () => userCountry.getUserCountry();
+const f104734 = () => locale.locale;
 const set = new Set(["US"]);
 const set1 = new Set(["en-US", "es-ES"]);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useHelpLineVisibility.tsx");
@@ -23,11 +23,11 @@ export function useShouldShowHelplineLink() {
   const items = [FamilyCenterStore];
   const tmp = useIsInAdultAgeGroupDefault();
   const obj = stateFromStores(563);
-  stateFromStores = obj.useStateFromStores(items, f103531);
+  stateFromStores = obj.useStateFromStores(items, f104733);
   const items1 = [LocaleStore];
   const items2 = [stateFromStores];
   const obj2 = stateFromStores(563);
-  const stateFromStores1 = obj2.useStateFromStores(items1, f103532);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f104734);
   const effect = react.useEffect(() => {
     if (null == stateFromStores) {
       const obj = MessageRequestActionCreators;
@@ -45,11 +45,11 @@ export function useShouldShowThroughlineLink() {
   const tmp2 = useIsInAdultAgeGroupDefault();
   let obj = stateFromStores(563);
   const items = [FamilyCenterStore];
-  stateFromStores = obj.useStateFromStores(items, f103531);
+  stateFromStores = obj.useStateFromStores(items, f104733);
   const items1 = [LocaleStore];
   const items2 = [stateFromStores];
   const obj2 = stateFromStores(563);
-  const stateFromStores1 = obj2.useStateFromStores(items1, f103532);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f104734);
   const effect = react.useEffect(() => {
     if (null == stateFromStores) {
       const obj = MessageRequestActionCreators;

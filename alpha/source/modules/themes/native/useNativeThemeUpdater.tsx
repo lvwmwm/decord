@@ -1,10 +1,10 @@
-// Module ID: 19645
-// Function ID: 19646
+// Module ID: 19855
+// Function ID: 19856
 // Name: useNativeThemeUpdater
-// Dependencies: [19, 1192, 19646, 19647, 2]
+// Dependencies: [19, 1192, 19856, 19857, 2]
 // Exports: default
 
-// Module 19645 (useNativeThemeUpdater)
+// Module 19855 (useNativeThemeUpdater)
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import size from "module_2" /* 2 */;

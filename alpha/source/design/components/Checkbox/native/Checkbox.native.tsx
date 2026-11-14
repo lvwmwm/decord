@@ -1,16 +1,16 @@
-// Module ID: 15846
-// Function ID: 15847
+// Module ID: 15966
+// Function ID: 15967
 // Name: Checkbox
-// Dependencies: [17, 21, 5243, 5315, 1113, 6274, 7668, 5866, 2]
+// Dependencies: [17, 21, 5306, 5378, 1113, 6337, 7734, 5929, 2]
 // Exports: Checkbox
 
-// Module 15846 (Checkbox)
+// Module 15966 (Checkbox)
 import intl3 from "intl" /* 1113 */;
-import react_native from "react-native" /* 5315 */;
-import FormCheckbox from "FormCheckbox" /* 7668 */;
+import react_native from "react-native" /* 5378 */;
+import FormCheckbox from "FormCheckbox" /* 7734 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -64,15 +64,15 @@ export function Checkbox(onToggle) {
     const _HermesInternal2 = HermesInternal;
     str = ", " + description;
   }
-  Stack = tmp2(6274).Stack;
+  Stack = tmp2(6337).Stack;
   const items = [React3(FormCheckbox.FormCheckbox, { checked }), ];
   const obj3 = { style: tmp.textContainer, children: items2 };
   const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "body-md/medium", children: items1 }) };
   items1 = [label, ];
-  Text = tmp2(5866).Text;
+  Text = tmp2(5929).Text;
   if (required) {
     const obj5 = { variant: "body-md/semibold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-    const Text2 = tmp2(5866).Text;
+    const Text2 = tmp2(5929).Text;
     intl2 = tmp2(1113).intl;
     required = tmp10(Text2, obj5);
   }
@@ -81,7 +81,7 @@ export function Checkbox(onToggle) {
   let tmp5Result = null != description;
   if (tmp5Result) {
     const obj6 = { variant: "body-sm/normal", color: "text-subtle", children: description };
-    tmp5Result = tmp5(tmp2(5866).Text, obj6);
+    tmp5Result = tmp5(tmp2(5929).Text, obj6);
   }
   obj7 = { direction: "horizontal", children: items };
   items2[1] = tmp5Result;

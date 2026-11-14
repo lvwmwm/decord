@@ -1,18 +1,18 @@
-// Module ID: 20013
-// Function ID: 20014
+// Module ID: 20171
+// Function ID: 20172
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5243, 1499, 7351, 5866, 1113, 2185, 5873, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5306, 1502, 7415, 5929, 1113, 2188, 5936, 2]
 // Exports: default
 
-// Module 20013 (ExistingUserAgeGateConfirm)
+// Module 20171 (ExistingUserAgeGateConfirm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, dependencyMap, importDefault;
@@ -113,18 +113,18 @@ export default function ExistingUserAgeGateConfirm(onConfirm) {
   };
   const age = onConfirm.age;
   const tmp = closure_10();
-  obj = onConfirm(1499);
+  obj = onConfirm(1502);
   importDefault = obj.useNavigation();
   [tmp3, c2] = _slicedToArray(react.useState(false), 2);
   let obj2 = { top: true, style: tmp.container, children: items };
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  const SafeAreaPaddingView = onConfirm(7351).SafeAreaPaddingView;
+  const SafeAreaPaddingView = onConfirm(7415).SafeAreaPaddingView;
   let obj3 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.format(onConfirm(1113).t.wumolR, { age }) };
-  const Heading = onConfirm(5866).Heading;
+  const Heading = onConfirm(5929).Heading;
   intl = onConfirm(1113).intl;
   items = [closure_8(Heading, obj3), , ];
   let obj4 = { style: tmp.body, variant: "body-md/medium", color: "interactive-text-default", children: format(n3QjDE, obj5) };
-  const Text = onConfirm(5866).Text;
+  const Text = onConfirm(5929).Text;
   const intl2 = onConfirm(1113).intl;
   format = intl2.format;
   obj5 = { helpURL: obj6.getArticleURL(HelpdeskArticles.AGE_GATE) };
@@ -141,7 +141,7 @@ export default function ExistingUserAgeGateConfirm(onConfirm) {
     },
     grow: true
   };
-  Button = onConfirm(5873).Button;
+  Button = onConfirm(5936).Button;
   intl3 = onConfirm(1113).intl;
   items[2] = closure_8(View, obj7);
   return closure_9(SafeAreaPaddingView, obj2);

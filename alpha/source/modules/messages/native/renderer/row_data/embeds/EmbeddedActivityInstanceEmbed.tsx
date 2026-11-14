@@ -1,26 +1,26 @@
-// Module ID: 15473
-// Function ID: 15474
+// Module ID: 15587
+// Function ID: 15588
 // Name: EmbeddedActivityInstanceEmbed
-// Dependencies: [5091, 2162, 502, 5092, 6005, 1385, 11825, 14438, 1113, 14439, 15455, 15474, 14440, 14441, 6992, 13358, 2]
+// Dependencies: [5154, 2165, 502, 5155, 6068, 1388, 11891, 14550, 1113, 14551, 15569, 15588, 14552, 14553, 7055, 13463, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 15473 (EmbeddedActivityInstanceEmbed)
+// Module 15587 (EmbeddedActivityInstanceEmbed)
 import intl10 from "intl" /* 1113 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6992 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 11825 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 13358 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 14438 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 14439 */;
-import getPlayInContext from "getPlayInContext" /* 14440 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 14441 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15455 */;
-import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 15474 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7055 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 11891 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 13463 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 14550 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 14551 */;
+import getPlayInContext from "getPlayInContext" /* 14552 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 14553 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15569 */;
+import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 15588 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import PresenceStore from "PresenceStore" /* 6005 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import PresenceStore from "PresenceStore" /* 6068 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;

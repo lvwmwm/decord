@@ -1,9 +1,9 @@
-// Module ID: 9668
-// Function ID: 9669
+// Module ID: 9735
+// Function ID: 9736
 // Name: MediaPlaybackViewNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 9668 (MediaPlaybackViewNativeComponent)
+// Module 9735 (MediaPlaybackViewNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 let obj2;
 const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "DCDMediaPlaybackView", directEventTypes: { topPlaybackEvent: { registrationName: "onPlaybackEvent" } }, validAttributes: obj2 };
-obj2 = { sourceId: true, sourceUri: true, sourceHeaders: true, resizeMode: true, disableFocus: true, httpEngine: true, bufferConfig: true, paused: true, muted: true, volume: true, rate: true, repeat: true, controls: true, audioPolicy: true, playInBackground: true, playWhenInactive: true, pictureInPicture: true, preventsDisplaySleepDuringVideoPlayback: true, automaticallyWaitsToMinimizeStalling: true, maxBitRate: true, preferredForwardBufferDuration: true };
+obj2 = { sourceId: true, sourceUri: true, sourceHeaders: true, resizeMode: true, disableFocus: true, disableTextTracks: true, httpEngine: true, bufferConfig: true, paused: true, muted: true, volume: true, rate: true, repeat: true, controls: true, audioPolicy: true, playInBackground: true, playWhenInactive: true, pictureInPicture: true, preventsDisplaySleepDuringVideoPlayback: true, automaticallyWaitsToMinimizeStalling: true, maxBitRate: true, preferredForwardBufferDuration: true };
 const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onPlaybackEvent: true }));
 const obj3 = {
   seek(arg0, arg1, arg2) {

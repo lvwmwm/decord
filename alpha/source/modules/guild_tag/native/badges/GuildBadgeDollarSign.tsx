@@ -1,12 +1,12 @@
-// Module ID: 16266
-// Function ID: 16267
+// Module ID: 16388
+// Function ID: 16389
 // Name: GuildBadgeDollarSign
-// Dependencies: [19, 21, 16235, 8197, 2]
+// Dependencies: [19, 21, 16357, 8263, 2]
 // Exports: GuildBadgeDollarSign
 
-// Module 16266 (GuildBadgeDollarSign)
-import inlineStyles from "inlineStyles" /* 8197 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16235 */;
+// Module 16388 (GuildBadgeDollarSign)
+import inlineStyles from "inlineStyles" /* 8263 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16357 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

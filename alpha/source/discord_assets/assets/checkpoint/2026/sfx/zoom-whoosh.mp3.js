@@ -1,8 +1,8 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 14297
+// Function ID: 14298
 // Dependencies: [2]
 
-// Module 14190
+// Module 14297
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/sfx/zoom-whoosh.mp3.js");

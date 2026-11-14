@@ -1,21 +1,21 @@
-// Module ID: 18236
-// Function ID: 18237
+// Module ID: 18357
+// Function ID: 18358
 // Name: DevToolsTogglesScreen
-// Dependencies: [32, 19, 17, 7430, 5869, 21, 7010, 5243, 575, 7379, 5952, 7889, 504, 7680, 18213, 5850, 16357, 6274, 18237, 7759, 2]
+// Dependencies: [32, 19, 17, 7496, 5932, 21, 7073, 5306, 575, 7443, 6015, 7955, 504, 7746, 18334, 5913, 16480, 6337, 18358, 7825, 2]
 // Exports: default
 
-// Module 18236 (DevToolsTogglesScreen)
+// Module 18357 (DevToolsTogglesScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5850 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 5869 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5952 */;
-import fuzzysearchDefault from "fuzzysearch" /* 7010 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 5932 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import fuzzysearchDefault from "fuzzysearch" /* 7073 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DesignTogglesStore from "DesignTogglesStore" /* 7430 */;
+import DesignTogglesStore from "DesignTogglesStore" /* 7496 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const DevSettingsStore = DevSettingsStore2;
@@ -32,7 +32,7 @@ function fuzzySearchToggle(str, str2, str3) {
     let tmp3ResultResult = tmp5(formatted, str2.toLowerCase());
     const tmp3 = importDefault;
     if (!tmp3ResultResult) {
-      const tmp3Result = tmp3(7010);
+      const tmp3Result = tmp3(7073);
       const formatted1 = str.toLowerCase();
       tmp3ResultResult = tmp3Result(formatted1, str3.toLowerCase());
     }
@@ -56,9 +56,9 @@ function ToggleTableRow(toggleName) {
       const obj2 = { text: description };
       obj.open(toggleName, obj2);
     },
-    trailing: closure_9(toggleName(7889).FormSwitch, { value, onValueChange })
+    trailing: closure_9(toggleName(7955).FormSwitch, { value, onValueChange })
   };
-  const TableRow = toggleName(7379).TableRow;
+  const TableRow = toggleName(7443).TableRow;
   return closure_9(TableRow, obj, toggleName);
 }
 function DevTogglesForCategory(title) {
@@ -100,7 +100,7 @@ function DevTogglesForCategory(title) {
           return closure_9(closure_13, obj, tmp);
         })
     };
-    const TableRowGroup = tmp(7680).TableRowGroup;
+    const TableRowGroup = tmp(7746).TableRowGroup;
     tmp3 = closure_9(TableRowGroup, obj2);
   }
   return tmp3;
@@ -128,7 +128,7 @@ export default function DevToolsTogglesScreen() {
   let tmp2 = dependencyMap;
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
   [query, tmp5] = react.useState("");
-  let obj = query(16357);
+  let obj = query(16480);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
   let obj2 = query(504);
   const items = [DesignTogglesStore];
@@ -160,9 +160,9 @@ export default function DevToolsTogglesScreen() {
   const obj3 = { style: tmp.wrap, contentContainerStyle: items2, children: tmp10(Stack, obj9) };
   items2 = [tmp.container, { paddingBottom: nativeDefault.space.PX_16 + insets.bottom }];
   ({ paddingBottom: nativeDefault.space.PX_16 + insets.bottom });
-  Stack = query(6274).Stack;
+  Stack = query(6337).Stack;
   const obj5 = { title: "Actions", hasIcons: false, children: items3 };
-  const TableRowGroup = query(7680).TableRowGroup;
+  const TableRowGroup = query(7746).TableRowGroup;
   items3 = [, ];
   const obj6 = {
     label: "Clear All",
@@ -175,9 +175,9 @@ export default function DevToolsTogglesScreen() {
     },
     arrow: true
   };
-  items3[0] = closure_9(query(7379).TableRow, obj6);
-  const obj7 = { label: closure_9(query(7759).SearchBar, { size: "md", placeholder: "Search design toggles", onChange: tmp5 }) };
-  const TableRow = query(7379).TableRow;
+  items3[0] = closure_9(query(7443).TableRow, obj6);
+  const obj7 = { label: closure_9(query(7825).SearchBar, { size: "md", placeholder: "Search design toggles", onChange: tmp5 }) };
+  const TableRow = query(7443).TableRow;
   items3[1] = closure_9(TableRow, obj7);
   const items4 = [closure_10(TableRowGroup, obj5), , ];
   let tmp8Result = null;
@@ -205,7 +205,7 @@ export default function DevToolsTogglesScreen() {
           return closure_9(closure_13, obj, tmp);
         })
     };
-    const TableRowGroup2 = tmp6(7680).TableRowGroup;
+    const TableRowGroup2 = tmp6(7746).TableRowGroup;
     tmp8Result = tmp8(TableRowGroup2, obj8);
   }
   obj9 = { spacing: 16, children: items4 };

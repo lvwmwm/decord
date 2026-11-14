@@ -1,21 +1,21 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 8724
+// Function ID: 8725
 // Name: ApplicationCommandUtils
-// Dependencies: [5096, 8658, 6282, 1072, 1083, 8660, 2116, 5922, 1084, 12, 38, 14, 6004, 2]
+// Dependencies: [5159, 8725, 6345, 1072, 1083, 8727, 2119, 5985, 1084, 12, 38, 14, 6067, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 8657 (ApplicationCommandUtils)
+// Module 8724 (ApplicationCommandUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef14 from "module_14" /* 14 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants2 from "Constants" /* 1083 */;
-import Server from "Server" /* 2116 */;
-import ChannelRecord from "ChannelRecord" /* 5096 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5922 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
-import DraftStore from "DraftStore" /* 8658 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 8660 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
+import Server from "Server" /* 2119 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import DraftStore from "DraftStore" /* 8725 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 8727 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtils from "BigFlagUtils" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ function buildCommand(arg0) {
   let rootCommand;
   let subCommandPath;
   let useKeyedPermissions;
-  const f95544 = (choices) => {
+  const f96742 = (choices) => {
     let description;
     let mapped;
     let mapped1;
@@ -63,7 +63,7 @@ function buildCommand(arg0) {
     const options = choices.options;
     mapped1 = undefined;
     if (options != null) {
-      mapped1 = options.map(f95544);
+      mapped1 = options.map(f96742);
     }
     ({ name_localized: obj.serverLocalizedName, name_localized } = choices);
     if (name_localized == null) {
@@ -147,7 +147,7 @@ function buildCommand(arg0) {
   ({ description: obj3.untranslatedDescription, options } = command);
   mapped2 = undefined;
   if (options != null) {
-    mapped2 = options.map(f95544);
+    mapped2 = options.map(f96742);
   }
   deserializeResult = undefined;
   if (null != rootCommand.default_member_permissions) {
@@ -186,7 +186,7 @@ function buildSubCommands(arg0) {
   } else {
     const tmp2 = require;
     if (command.type !== Server.ApplicationCommandOptionType.SUB_COMMAND) {
-      if (command.type !== tmp2(2116).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+      if (command.type !== tmp2(2119).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
         const obj = { rootCommand, command, applicationId, subCommandPath, useKeyedPermissions };
         const items1 = [buildCommand(obj)];
         return items1;
@@ -338,8 +338,8 @@ export function getApplicationCommandOptionQueryOptions(activeOption) {
   const STRING = Server.ApplicationCommandOptionType.STRING;
   const type2 = activeOption.type;
   const CHANNEL = Server.ApplicationCommandOptionType.CHANNEL;
-  const tmp3 = activeOption.type === Server.ApplicationCommandOptionType.USER || activeOption.type === tmp(2116).ApplicationCommandOptionType.MENTIONABLE;
-  const tmp4 = activeOption.type === tmp(2116).ApplicationCommandOptionType.ROLE || activeOption.type === tmp(2116).ApplicationCommandOptionType.MENTIONABLE;
+  const tmp3 = activeOption.type === Server.ApplicationCommandOptionType.USER || activeOption.type === tmp(2119).ApplicationCommandOptionType.MENTIONABLE;
+  const tmp4 = activeOption.type === tmp(2119).ApplicationCommandOptionType.ROLE || activeOption.type === tmp(2119).ApplicationCommandOptionType.MENTIONABLE;
   return { canMentionEveryone: type === STRING || tmp4, canMentionHere: type === STRING, canMentionChannels: type === STRING || type2 === CHANNEL, canMentionUsers: type === STRING || tmp3, canMentionRoles: type === STRING || tmp4, canMentionAnyGuildUser: tmp3, canMentionNonMentionableRoles: tmp4, canMentionOtherGlobals: type === STRING };
 }
 export function allChannelsSentinel(contextGuildId) {

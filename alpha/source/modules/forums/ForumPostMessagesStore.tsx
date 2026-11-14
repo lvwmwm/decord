@@ -1,15 +1,15 @@
-// Module ID: 8800
-// Function ID: 8801
+// Module ID: 8867
+// Function ID: 8868
 // Name: ForumPostMessagesStore
-// Dependencies: [7225, 1385, 11, 6311, 504, 572, 2]
+// Dependencies: [7289, 1388, 11, 6374, 504, 572, 2]
 
-// Module 8800 (ForumPostMessagesStore)
+// Module 8867 (ForumPostMessagesStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6311 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7225 */;
-import UserStore from "UserStore" /* 1385 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6374 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7289 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let closure_5;

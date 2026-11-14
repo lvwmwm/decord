@@ -1,16 +1,16 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12284
+// Function ID: 12285
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [19, 17, 21, 5243, 575, 12, 5866, 11999, 1113, 2819, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 12, 5929, 12066, 1113, 2835, 2]
 // Exports: default
 
-// Module 12189 (InAppReportsBreadCrumbs)
+// Module 12284 (InAppReportsBreadCrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5866 */;
+import Text_Text from "Text/Text" /* 5929 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ export default function Breadcrumbs(element) {
         const tmp8 = View;
         const tmp9 = closure_4;
         if (hasItem) {
-          stringResult = string(tmp5(2819)["6mx/DP"]);
+          stringResult = string(tmp5(2835)["6mx/DP"]);
         } else {
           stringResult = string(tmp10(1113).t["+3V9Tp"]);
         }

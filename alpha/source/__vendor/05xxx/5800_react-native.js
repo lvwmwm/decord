@@ -6,6 +6,6 @@
 // Module 5800 (react-native)
 import react_native from "react-native" /* 17 */;
 
+const StyleSheet = react_native.StyleSheet;
 
-export const CompatScroller = react_native.ScrollView;
-export const CompatAnimatedScroller = react_native.Animated.ScrollView;
+export const styles = StyleSheet.create({ container: { flex: 1, overflow: "visible" } });

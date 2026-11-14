@@ -1,12 +1,12 @@
-// Module ID: 5943
-// Function ID: 5944
+// Module ID: 6006
+// Function ID: 6007
 // Name: makeDateFormatter
-// Dependencies: [5068, 1196, 5941, 5944, 2166, 2]
+// Dependencies: [5131, 1196, 6004, 6007, 2169, 2]
 // Exports: default
 
-// Module 5943 (makeDateFormatter)
-import _modDef2166 from "module_2166" /* 2166 */;
-import SystemDateFormatter from "SystemDateFormatter" /* 5941 */;
+// Module 6006 (makeDateFormatter)
+import _modDef2169 from "module_2169" /* 2169 */;
+import SystemDateFormatter from "SystemDateFormatter" /* 6004 */;
 import size from "module_2" /* 2 */;
 
 function defaultMeridiem(arg0, arg1, arg2) {
@@ -40,13 +40,13 @@ function getLocaleData() {
   let weekdays;
   let weekdaysMin;
   let weekdaysShort;
-  const f90622 = (arg0, arg1) => {
+  const f91810 = (arg0, arg1) => {
     let closure_0 = arg0;
     const obj = { [closure_1_0]: () => closure_0 };
     return closure_2(obj, arg1);
   };
-  const f90623 = (arg0) => weekdaysMin[arg0];
-  let obj = _modDef2166;
+  const f91811 = (arg0) => weekdaysMin[arg0];
+  let obj = _modDef2169;
   const _config = obj.localeData()._config;
   ({ months, monthsShort, weekdays, weekdaysShort, weekdaysMin, meridiem } = _config);
   if (undefined === meridiem) {
@@ -58,9 +58,9 @@ function getLocaleData() {
   }
   let month = "month";
   if (typeof months === "function") {
-    const tmpResult = _modDef2166;
+    const tmpResult = _modDef2169;
     let closure_2 = months.bind(tmpResult.localeData());
-    fn = f90622;
+    fn = f91810;
   } else {
     const _Array = Array;
     let format = months;
@@ -68,14 +68,14 @@ function getLocaleData() {
       format = months.format;
     }
     months = format;
-    fn = f90623;
+    fn = f91811;
   }
   month = "month";
   const obj2 = { months: fn, monthsShort: fn2, weekdays: fn3, weekdaysShort: fn4, weekdaysMin: fn5, meridiem, ordinal, longDateFormat, longFormatters: [], week };
   if (typeof monthsShort === "function") {
-    const tmpResult5 = _modDef2166;
+    const tmpResult5 = _modDef2169;
     closure_2 = monthsShort.bind(tmpResult5.localeData());
-    fn2 = f90622;
+    fn2 = f91810;
   } else {
     const _Array2 = Array;
     let format2 = monthsShort;
@@ -83,13 +83,13 @@ function getLocaleData() {
       format2 = monthsShort.format;
     }
     monthsShort = format2;
-    fn2 = f90623;
+    fn2 = f91811;
   }
   let day = "day";
   if (typeof weekdays === "function") {
-    const tmpResult6 = _modDef2166;
+    const tmpResult6 = _modDef2169;
     closure_2 = weekdays.bind(tmpResult6.localeData());
-    fn3 = f90622;
+    fn3 = f91810;
   } else {
     const _Array3 = Array;
     let format3 = weekdays;
@@ -97,13 +97,13 @@ function getLocaleData() {
       format3 = weekdays.format;
     }
     weekdays = format3;
-    fn3 = f90623;
+    fn3 = f91811;
   }
   day = "day";
   if (typeof weekdaysShort === "function") {
-    const tmpResult7 = _modDef2166;
+    const tmpResult7 = _modDef2169;
     closure_2 = weekdaysShort.bind(tmpResult7.localeData());
-    fn4 = f90622;
+    fn4 = f91810;
   } else {
     const _Array4 = Array;
     let format4 = weekdaysShort;
@@ -111,13 +111,13 @@ function getLocaleData() {
       format4 = weekdaysShort.format;
     }
     weekdaysShort = format4;
-    fn4 = f90623;
+    fn4 = f91811;
   }
   day = "day";
   if (typeof weekdaysMin === "function") {
-    const tmpResult8 = _modDef2166;
+    const tmpResult8 = _modDef2169;
     closure_2 = weekdaysMin.bind(tmpResult8.localeData());
-    fn5 = f90622;
+    fn5 = f91810;
   } else {
     const _Array5 = Array;
     let format5 = weekdaysMin;
@@ -125,7 +125,7 @@ function getLocaleData() {
       format5 = weekdaysMin.format;
     }
     weekdaysMin = format5;
-    fn5 = f90623;
+    fn5 = f91811;
   }
   if (typeof ordinal === "string") {
     ordinal = (arg0) => ordinal.replace("%d", "" + arg0);

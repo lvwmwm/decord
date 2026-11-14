@@ -1,23 +1,23 @@
-// Module ID: 13702
-// Function ID: 13703
+// Module ID: 13807
+// Function ID: 13808
 // Name: useChatInputMaxHeight
-// Dependencies: [32, 19, 1495, 13699, 2020, 5851, 5440, 1625, 1493, 13703, 13704, 13705, 5485, 5488, 1652, 2]
+// Dependencies: [32, 19, 1498, 13804, 2023, 5914, 5503, 1628, 1496, 13808, 13809, 13810, 5548, 5551, 1655, 2]
 // Exports: default, getChatInputHeightAnimationTiming, getChatInputHeightAnimationTimingWorklet, getChatInputMaxHeightWorklet, getChatInputMinHeight
 
-// Module 13702 (useChatInputMaxHeight)
-import KeyboardTypes from "KeyboardTypes" /* 1625 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2020 */;
-import useKeyboardType from "useKeyboardType" /* 5440 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import timingPresets from "timingPresets" /* 5488 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5851 */;
-import ChatInputConstants from "ChatInputConstants" /* 13699 */;
-import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 13703 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 13704 */;
+// Module 13807 (useChatInputMaxHeight)
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2023 */;
+import useKeyboardType from "useKeyboardType" /* 5503 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import timingPresets from "timingPresets" /* 5551 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5914 */;
+import ChatInputConstants from "ChatInputConstants" /* 13804 */;
+import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 13808 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 13809 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -32,7 +32,7 @@ let tmp6;
 let tmp7;
 let tmp8;
 let tmp9;
-const useWindowDimensions = tmp(1493);
+const useWindowDimensions = tmp(1496);
 function getChatInputMaxHeight() {
   const obj = useSystemKeyboardHeight;
   let systemKeyboardHeight = obj.getSystemKeyboardHeight();
@@ -62,7 +62,7 @@ const items1 = [tmp3, tmp4, tmp5, tmp6, tmp7];
 getChatInputMaxHeightWorklet.__closure = items1;
 getChatInputMaxHeightWorklet.__workletHash = 12937272049735;
 getChatInputMaxHeightWorklet.__initData = tmp2;
-const items2 = [{ code: "(function getChatInputHeightAnimationTimingWorklet_useChatInputMaxHeightTsx2(contentSize,minHeight){let[getChatInputMaxHeightWorklet,withTiming,timingFastDuration,Easing]=this.__closure;const value=Math.min(Math.max(contentSize,minHeight),getChatInputMaxHeightWorklet());return withTiming(value,{duration:timingFastDuration,easing:Easing.linear});})" }, getChatInputMaxHeightWorklet, timing_timing.withTiming, timingPresets.timingFastDuration, _mod1652.Easing];
+const items2 = [{ code: "(function getChatInputHeightAnimationTimingWorklet_useChatInputMaxHeightTsx2(contentSize,minHeight){let[getChatInputMaxHeightWorklet,withTiming,timingFastDuration,Easing]=this.__closure;const value=Math.min(Math.max(contentSize,minHeight),getChatInputMaxHeightWorklet());return withTiming(value,{duration:timingFastDuration,easing:Easing.linear});})" }, getChatInputMaxHeightWorklet, timing_timing.withTiming, timingPresets.timingFastDuration, _mod1655.Easing];
 let c0;
 let c1;
 let c2;
@@ -141,7 +141,7 @@ export function getChatInputHeightAnimationTiming(height, arg1) {
   const tmp2Result = useWindowDimensions;
   const minResult = min(bound, Math.min(200, Math.max(2 * CHAT_INPUT_PILL_CONTENT_SIZE, tmp2Result.getWindowDimensions({ ignoreKeyboard: true }).height - systemKeyboardHeight - 200)));
   const tmp2Result2 = timing_timing;
-  const obj4 = { duration: timingPresets.timingFastDuration, easing: _mod1652.Easing.linear };
+  const obj4 = { duration: timingPresets.timingFastDuration, easing: _mod1655.Easing.linear };
   return tmp2Result2.withTiming(minResult, obj4);
 }
 export { getChatInputHeightAnimationTimingWorklet };

@@ -1,32 +1,32 @@
-// Module ID: 6011
-// Function ID: 6012
+// Module ID: 6074
+// Function ID: 6075
 // Name: SortedVoiceStateStore
-// Dependencies: [32, 5095, 1404, 502, 5092, 5155, 1385, 5918, 1072, 5309, 5170, 11, 1196, 12, 504, 5117, 572, 2]
+// Dependencies: [32, 5158, 1407, 502, 5155, 5218, 1388, 5981, 1072, 5372, 5233, 11, 1196, 12, 504, 5180, 572, 2]
 // Exports: getComparator, makeMemberAndComparator
 
-// Module 6011 (SortedVoiceStateStore)
+// Module 6074 (SortedVoiceStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import FavoritesUtils from "FavoritesUtils" /* 5117 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 5170 */;
-import UserUtilsDefault from "UserUtils" /* 5309 */;
+import FavoritesUtils from "FavoritesUtils" /* 5180 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 5233 */;
+import UserUtilsDefault from "UserUtils" /* 5372 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FavoriteStore from "FavoriteStore" /* 5095 */;
-import UserRecord from "UserRecord" /* 1404 */;
+import FavoriteStore from "FavoriteStore" /* 5158 */;
+import UserRecord from "UserRecord" /* 1407 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5918 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import UserStore from "UserStore" /* 1388 */;
+import VoiceStateStore from "VoiceStateStore" /* 5981 */;
 import size from "module_2" /* 2 */;
 
 let favoriteChannels, map, set, unknownChannels;
 
-const f90751 = (voiceState) => {
+const f91939 = (voiceState) => {
   let items1;
   const channelId = voiceState.voiceState.channelId;
   if (null != channelId) {
@@ -37,7 +37,7 @@ const f90751 = (voiceState) => {
   }
   return items1;
 };
-const f90752 = (comparator) => comparator.comparator;
+const f91940 = (comparator) => comparator.comparator;
 function getVoiceStatesForGuild(guildId) {
   let tmp = closure_13[guildId];
   if (null == tmp) {
@@ -51,7 +51,7 @@ function getVoiceStatesForGuild(guildId) {
       const self3 = this;
       const self4 = this;
       set = new Set();
-      const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+      const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
       merged[1] = secondaryIndexMap;
       merged.guildId = guildId;
       closure_13[guildId] = merged;
@@ -137,7 +137,7 @@ class SortedVoiceStates {
     const merged = Object.assign({ _pending: null, _voiceStates: null });
     merged[0] = new Set();
     new Set();
-    const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+    const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
     merged[1] = secondaryIndexMap;
     merged.guildId = guildId;
     return merged;
@@ -346,7 +346,7 @@ class SortedVoiceStateStore extends Store {
             const self3 = this;
             const self4 = this;
             set = new Set();
-            const secondaryIndexMap = new allVoiceStates(closure_2_2[10]).SecondaryIndexMap(f90751, f90752);
+            const secondaryIndexMap = new allVoiceStates(closure_2_2[10]).SecondaryIndexMap(f91939, f91940);
             merged[1] = secondaryIndexMap;
             merged.guildId = tmp;
             closure_2_13[tmp] = merged;
@@ -467,7 +467,7 @@ class SortedVoiceStateStore extends Store {
           merged[0] = set;
           const self3 = this;
           const self4 = this;
-          const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+          const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
           let tmp11 = secondaryIndexMap;
           merged[1] = secondaryIndexMap;
           merged.guildId = tmp4;
@@ -503,7 +503,7 @@ class SortedVoiceStateStore extends Store {
         const self3 = this;
         const self4 = this;
         set = new Set();
-        const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+        const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
         merged[1] = secondaryIndexMap;
         merged.guildId = guildId;
         closure_13[guildId] = merged;
@@ -531,7 +531,7 @@ class SortedVoiceStateStore extends Store {
         const self3 = this;
         const self4 = this;
         set = new Set();
-        const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+        const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
         merged[1] = secondaryIndexMap;
         merged.guildId = tmp;
         closure_13[tmp] = merged;
@@ -562,7 +562,7 @@ class SortedVoiceStateStore extends Store {
           const self3 = this;
           const self4 = this;
           set = new Set();
-          const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+          const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
           merged[1] = secondaryIndexMap;
           merged.guildId = guildId;
           closure_13[guildId] = merged;
@@ -592,7 +592,7 @@ class SortedVoiceStateStore extends Store {
         const self3 = this;
         const self4 = this;
         set = new Set();
-        const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+        const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
         merged[1] = secondaryIndexMap;
         merged.guildId = tmp;
         closure_13[tmp] = merged;
@@ -637,7 +637,7 @@ let obj = {
             const self3 = this;
             const self4 = this;
             set = new Set();
-            const secondaryIndexMap = new allVoiceStates(closure_2_2[10]).SecondaryIndexMap(f90751, f90752);
+            const secondaryIndexMap = new allVoiceStates(closure_2_2[10]).SecondaryIndexMap(f91939, f91940);
             merged[1] = secondaryIndexMap;
             merged.guildId = tmp;
             closure_2_13[tmp] = merged;
@@ -670,7 +670,7 @@ let obj = {
           const self3 = this;
           const self4 = this;
           set = new Set();
-          const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+          const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
           merged[1] = secondaryIndexMap;
           merged.guildId = guildId;
           closure_13[guildId] = merged;
@@ -703,7 +703,7 @@ let obj = {
           const self3 = this;
           const self4 = this;
           set = new Set();
-          const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+          const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
           merged[1] = secondaryIndexMap;
           merged.guildId = guildId;
           closure_1_13[guildId] = merged;
@@ -731,7 +731,7 @@ let obj = {
         const self3 = this;
         const self4 = this;
         set = new Set();
-        const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f90751, f90752);
+        const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(f91939, f91940);
         merged[1] = secondaryIndexMap;
         merged.guildId = guildId;
         closure_13[guildId] = merged;

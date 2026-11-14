@@ -1,26 +1,26 @@
-// Module ID: 6291
-// Function ID: 6292
+// Module ID: 6354
+// Function ID: 6355
 // Name: MarkupChannelMentionRule
-// Dependencies: [5147, 5092, 5114, 5175, 5185, 1385, 1072, 2150, 1411, 1113, 6292, 6293, 5891, 6302, 5893, 6290, 2067, 2]
+// Dependencies: [5210, 5155, 5177, 5238, 5248, 1388, 1072, 2153, 1414, 1113, 6355, 6356, 5954, 6365, 5956, 6353, 2070, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 6291 (MarkupChannelMentionRule)
+// Module 6354 (MarkupChannelMentionRule)
 import intl3 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import _modDef2067 from "module_2067" /* 2067 */;
-import StringUtils from "StringUtils" /* 2150 */;
-import useChannelName from "useChannelName" /* 5891 */;
-import LinkUtils from "LinkUtils" /* 5893 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 6290 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6292 */;
-import ChannelUtils from "ChannelUtils" /* 6293 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 6302 */;
-import GatedChannelStore from "GatedChannelStore" /* 5147 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import _modDef2070 from "module_2070" /* 2070 */;
+import StringUtils from "StringUtils" /* 2153 */;
+import useChannelName from "useChannelName" /* 5954 */;
+import LinkUtils from "LinkUtils" /* 5956 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 6353 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6355 */;
+import ChannelUtils from "ChannelUtils" /* 6356 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 6365 */;
+import GatedChannelStore from "GatedChannelStore" /* 5210 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -157,7 +157,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, url) {
           obj11 = obj4;
           obj20 = StringUtils;
         } else if (null != url) {
-          const obj9 = { type: "link", content: items4, target: url, title: "channel" };
+          const obj9 = { type: "link", content: items4, target: url, title: "channelId" };
           items4 = [{ type: "text", content: url }];
           obj11 = obj9;
           const obj10 = { type: "text", content: url };
@@ -313,7 +313,7 @@ obj2 = {
   }
 };
 obj3 = {
-  order: _modDef2067.defaultRules.url.order - 0.5,
+  order: _modDef2070.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE;
@@ -343,7 +343,7 @@ obj3 = {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     LinkUtils;
     if (null == tmp3) {
-      const obj = { type: "link", content: items, target: tmp, title: "channel" };
+      const obj = { type: "link", content: items, target: tmp, title: "channelId" };
       items = [{ type: "text", content: tmp }];
       return obj;
     } else {
@@ -377,7 +377,7 @@ obj3 = {
   }
 };
 obj4 = {
-  order: _modDef2067.defaultRules.url.order - 0.5,
+  order: _modDef2070.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const MEDIA_POST_URL_RE = LinkUtils.MEDIA_POST_URL_RE;
@@ -427,7 +427,7 @@ obj4 = {
         }
       }
     }
-    const obj = { type: "link", content: items, target: tmp, title: "channel" };
+    const obj = { type: "link", content: items, target: tmp, title: "channelId" };
     items = [{ type: "text", content: tmp }];
     return obj;
   }

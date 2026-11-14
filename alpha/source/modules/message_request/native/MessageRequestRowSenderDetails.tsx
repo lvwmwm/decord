@@ -1,20 +1,20 @@
-// Module ID: 19550
-// Function ID: 19551
+// Module ID: 19743
+// Function ID: 19744
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 5185, 21, 5243, 1187, 575, 504, 5309, 19551, 1414, 5866, 1113, 19552, 19553, 2]
+// Dependencies: [19, 17, 5248, 21, 5306, 1187, 575, 504, 5372, 19744, 1417, 5929, 1113, 19745, 19746, 2]
 // Exports: default
 
-// Module 19550 (MessageRequestRowSenderDetails)
+// Module 19743 (MessageRequestRowSenderDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1414 */;
-import UserUtilsDefault from "UserUtils" /* 5309 */;
-import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 19553 */;
+import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1417 */;
+import UserUtilsDefault from "UserUtils" /* 5372 */;
+import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 19746 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -65,7 +65,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     }
     return tmp2;
   });
-  const obj2 = otherUser(19551);
+  const obj2 = otherUser(19744);
   const messageRequestRelativeTimestampText = obj2.useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
   const obj3 = { style: tmp.avatarContainer, children: closure_5(Avatar, obj5) };
@@ -87,10 +87,10 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   const obj6 = { style: tmp.detailsContainer, children: items5 };
   const obj7 = { style: tmp.messageDetails, children: items4 };
   const obj8 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.usernameTextContainer, children: items2 };
-  const Text = tmp2(5866).Text;
+  const Text = tmp2(5929).Text;
   const obj9 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.username, children: stringResult };
   stringResult = stateFromStores;
-  const Text2 = tmp2(5866).Text;
+  const Text2 = tmp2(5929).Text;
   if (stateFromStores == null) {
     let username;
     if (otherUser != null) {
@@ -106,22 +106,22 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   let tmp10Result = null != stateFromStores;
   if (tmp10Result) {
     const obj10 = { variant: "body-md/medium", color: "text-muted", children: items3 };
-    const Text3 = tmp2(5866).Text;
+    const Text3 = tmp2(5929).Text;
     items3 = [" "];
-    const tmp2Result = tmp2(5309);
+    const tmp2Result = tmp2(5372);
     items3[1] = tmp2Result.getUserTag(otherUser);
     tmp10Result = tmp10(Text3, obj10);
   }
   items2[1] = tmp10Result;
   items4 = [closure_6(Text, obj8), , ];
   const obj11 = { style: tmp.timestampSeparator, variant: "body-xs/medium", color: "text-muted", children: "\u00B7" };
-  items4[1] = closure_5(tmp2(5866).Text, obj11);
-  items4[2] = closure_5(tmp2(5866).Text, { variant: "body-xs/semibold", color: "text-muted", children: messageRequestRelativeTimestampText });
+  items4[1] = closure_5(tmp2(5929).Text, obj11);
+  items4[2] = closure_5(tmp2(5929).Text, { variant: "body-xs/semibold", color: "text-muted", children: messageRequestRelativeTimestampText });
   items5 = [closure_6(View, obj7), , ];
   let tmp12Result = !flag;
   if (tmp12Result) {
     const obj12 = { style: tmp.messagePreview, channel };
-    tmp12Result = tmp12(tmp7(19552), obj12);
+    tmp12Result = tmp12(tmp7(19745), obj12);
   }
   items5[1] = tmp12Result;
   if (flag) {

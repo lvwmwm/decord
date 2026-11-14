@@ -1,26 +1,26 @@
-// Module ID: 18506
-// Function ID: 18507
+// Module ID: 18635
+// Function ID: 18636
 // Name: DevWidget
-// Dependencies: [19, 8759, 573, 21, 5243, 575, 1652, 11945, 13704, 5535, 1705, 5876, 5877, 7364, 16934, 18091, 18507, 18090, 2]
+// Dependencies: [19, 8826, 573, 21, 5306, 575, 1655, 12012, 13809, 5598, 1708, 5939, 5940, 7428, 17057, 18211, 18636, 18210, 2]
 // Exports: default
 
-// Module 18506 (DevWidget)
+// Module 18635 (DevWidget)
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import springPresets from "springPresets" /* 5877 */;
-import Pressables from "Pressables" /* 7364 */;
-import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11945 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13704 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 18091 */;
-import VEVOODefault from "VEVOO" /* 18507 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import springPresets from "springPresets" /* 5940 */;
+import Pressables from "Pressables" /* 7428 */;
+import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 12012 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13809 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 18211 */;
+import VEVOODefault from "VEVOO" /* 18636 */;
 import react from "react" /* 19 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8759 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8826 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp6;
-const _modDef1652 = tmp6(1652);
+const _modDef1655 = tmp6(1655);
 function DraggableContainer(arg0) {
   let children;
   let contentHeight;
@@ -77,15 +77,15 @@ function DraggableContainer(arg0) {
   }
   ({ onChangePosition, children } = arg0);
   const tmp = closure_9();
-  let obj = _mod1652;
+  let obj = _mod1655;
   const sharedValue = obj.useSharedValue(x.get());
-  const obj2 = _mod1652;
+  const obj2 = _mod1655;
   const sharedValue1 = obj2.useSharedValue(y.get());
   const tmp7 = useSafeAreaInsetsSharedValueDefault();
   const tmp8 = useWindowDimensionsSharedValueDefault();
   let items = [closure_10, tmp8, tmp7, , , , ];
   const useCallback = react.useCallback;
-  items[3] = _mod1652.clamp;
+  items[3] = _mod1655.clamp;
   items[4] = dragBoundsPadding;
   items[5] = contentWidth;
   items[6] = contentHeight;
@@ -153,7 +153,7 @@ function DraggableContainer(arg0) {
   DevWidgetTsx3.__initData = tmp24;
   const items7 = [closure_13, , , , ];
   const usePanGesture = tmp2Result.usePanGesture;
-  items7[1] = _mod1705.scheduleOnRN;
+  items7[1] = _mod1708.scheduleOnRN;
   items7[2] = onChangePosition;
   items7[3] = x;
   items7[4] = y;
@@ -175,8 +175,8 @@ function DraggableContainer(arg0) {
   DevWidgetTsx4.__initData = tmp30;
   const panGesture = usePanGesture(obj3);
   const items9 = [closure_14, callback, x, y, , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items9[4] = spring_spring.withSpring;
   items9[5] = springPresets.springUnclamped;
   c0 = undefined;
@@ -204,8 +204,8 @@ function DraggableContainer(arg0) {
   DevWidgetTsx5.__workletHash = 4562461506226;
   DevWidgetTsx5.__initData = tmp37;
   const animatedStyle = useAnimatedStyle(DevWidgetTsx5);
-  const obj4 = { gesture: panGesture, children: metroRequire(_modDef1652.View, obj5) };
-  const GestureDetector = tmp2(5535).GestureDetector;
+  const obj4 = { gesture: panGesture, children: metroRequire(_modDef1655.View, obj5) };
+  const GestureDetector = tmp2(5598).GestureDetector;
   obj5 = { style: items11, children };
   items11 = [tmp.widgetContainer, animatedStyle];
   return metroRequire(GestureDetector, obj4);
@@ -243,9 +243,9 @@ let result = size.fileFinishedImporting("modules/devtools/native/components/DevW
 
 export default function DevWidget() {
   let items;
-  let obj = _mod1652;
+  let obj = _mod1655;
   const sharedValue = obj.useSharedValue(DevToolsSettingsStore.devWidgetPosition.x);
-  let obj2 = _mod1652;
+  let obj2 = _mod1655;
   const sharedValue1 = obj2.useSharedValue(DevToolsSettingsStore.devWidgetPosition.y);
   const obj3 = { children: items };
   items = [metroRequire(VEVOODefault, { x: sharedValue, y: sharedValue1 }), ];

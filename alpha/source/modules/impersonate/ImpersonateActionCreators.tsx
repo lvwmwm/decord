@@ -1,23 +1,23 @@
-// Module ID: 7625
-// Function ID: 7626
+// Module ID: 7691
+// Function ID: 7692
 // Name: ImpersonateActionCreators
-// Dependencies: [5092, 5173, 5155, 5149, 5175, 5146, 6895, 5148, 1072, 5099, 1252, 6004, 5154, 572, 1099, 2]
+// Dependencies: [5155, 5236, 5218, 5212, 5238, 5209, 6958, 5211, 1072, 5162, 1256, 6067, 5217, 572, 1099, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 7625 (ImpersonateActionCreators)
+// Module 7691 (ImpersonateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ChannelConstants from "ChannelConstants" /* 5099 */;
-import ImpersonateTypes from "ImpersonateTypes" /* 5154 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildChannelStore from "GuildChannelStore" /* 5173 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import GuildRoleStore from "GuildRoleStore" /* 5149 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
-import ImpersonateStore from "ImpersonateStore" /* 5148 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import ImpersonateTypes from "ImpersonateTypes" /* 5217 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildChannelStore from "GuildChannelStore" /* 5236 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildRoleStore from "GuildRoleStore" /* 5212 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import ImpersonateStore from "ImpersonateStore" /* 5211 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

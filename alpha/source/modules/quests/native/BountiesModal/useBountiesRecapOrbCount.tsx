@@ -1,13 +1,13 @@
-// Module ID: 17434
-// Function ID: 17435
+// Module ID: 17552
+// Function ID: 17553
 // Name: useBountiesRecapOrbCount
-// Dependencies: [32, 19, 1652, 17433, 1705, 2]
+// Dependencies: [32, 19, 1655, 17551, 1708, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 17434 (useBountiesRecapOrbCount)
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import useBountiesRecapScroll from "useBountiesRecapScroll" /* 17433 */;
+// Module 17552 (useBountiesRecapOrbCount)
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import useBountiesRecapScroll from "useBountiesRecapScroll" /* 17551 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -72,8 +72,8 @@ export function useBountiesRecapOrbCount(arg0) {
     _undefined(0);
   }, []);
   const items = [closure_5, enabled, recapRevealHeight, , , , , , ];
-  const useAnimatedReaction = _mod1652.useAnimatedReaction;
-  _mod1652;
+  const useAnimatedReaction = _mod1655.useAnimatedReaction;
+  _mod1655;
   items[3] = useBountiesRecapScroll.getRevealProgress;
   items[4] = scrollY;
   items[5] = lastBountyScrollOffset;
@@ -106,7 +106,7 @@ export function useBountiesRecapOrbCount(arg0) {
   useBountiesRecapOrbCountTsx2.__closure = items1;
   useBountiesRecapOrbCountTsx2.__workletHash = 758066957163;
   useBountiesRecapOrbCountTsx2.__initData = tmp8;
-  const items2 = [closure_6, _mod1705.scheduleOnRN, callback1, callback];
+  const items2 = [closure_6, _mod1708.scheduleOnRN, callback1, callback];
   c0 = undefined;
   let c1;
   let c2;

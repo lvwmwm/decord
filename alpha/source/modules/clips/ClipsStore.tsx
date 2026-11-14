@@ -1,23 +1,23 @@
-// Module ID: 2136
-// Function ID: 2137
+// Module ID: 2139
+// Function ID: 2140
 // Name: ClipsStore
-// Dependencies: [5, 2137, 502, 8778, 1072, 6108, 16375, 5053, 16376, 1403, 16377, 16379, 16380, 504, 572, 2]
+// Dependencies: [5, 2140, 502, 8845, 1072, 6171, 16498, 5116, 16499, 1406, 16500, 16502, 16503, 504, 572, 2]
 
-// Module 2136 (ClipsStore)
+// Module 2139 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import DiscordNativeDefault from "DiscordNative" /* 5053 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16375 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 16377 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16379 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16380 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
+import DiscordNativeDefault from "DiscordNative" /* 5116 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16498 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 16500 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16502 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16503 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2137 */;
+import RunningGameStore from "RunningGameStore" /* 2140 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8778 */;
+import ClipsConstants from "ClipsConstants" /* 8845 */;
 import Constants from "Constants" /* 1072 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6108 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 6171 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2;
@@ -307,7 +307,7 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_36 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "flexDirection", showPovClipsInGallery: true };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "Path", showPovClipsInGallery: true };
 let obj2 = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationVersion: 0, clipsDefaultSettingsState: ClipsDefaultSettingsUtils.INITIAL_CLIPS_DEFAULT_SETTINGS_STATE, hasAutoEnabledClipsForHardware: false, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 obj = obj2;
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;

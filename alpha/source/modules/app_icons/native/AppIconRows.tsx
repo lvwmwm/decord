@@ -1,24 +1,24 @@
-// Module ID: 18038
-// Function ID: 18039
+// Module ID: 18158
+// Function ID: 18159
 // Name: AppIconRows
-// Dependencies: [32, 19, 17, 1385, 21, 5243, 5269, 7680, 1113, 18039, 15200, 504, 2107, 5271, 18040, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 5306, 5332, 7746, 1113, 18159, 15314, 504, 2110, 5334, 18160, 2]
 // Exports: default
 
-// Module 18038 (AppIconRows)
+// Module 18158 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import AppIconTypes from "AppIconTypes" /* 5269 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5271 */;
-import AppIconUtils from "AppIconUtils" /* 15200 */;
-import AppIconRowDefault from "AppIconRow" /* 18039 */;
-import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 18040 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
+import AppIconTypes from "AppIconTypes" /* 5332 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
+import AppIconUtils from "AppIconUtils" /* 15314 */;
+import AppIconRowDefault from "AppIconRow" /* 18159 */;
+import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 18160 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const react = react2;
@@ -65,7 +65,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
         })
     };
     onLongPress(react.useState(false), 2);
-    TableRowGroup = merged(7680).TableRowGroup;
+    TableRowGroup = merged(7746).TableRowGroup;
     intl = merged(1113).intl;
     return closure_8(View, obj);
   }

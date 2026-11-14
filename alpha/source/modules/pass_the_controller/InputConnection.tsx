@@ -1,13 +1,13 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16110
+// Function ID: 16111
 // Name: InputConnection
-// Dependencies: [6036, 3, 15990, 15991, 6126, 2]
+// Dependencies: [6099, 3, 16111, 16112, 6189, 2]
 
-// Module 15989 (InputConnection)
+// Module 16110 (InputConnection)
 import LoggerDefault from "Logger" /* 3 */;
-import RTCConnectionEvent from "RTCConnectionEvent" /* 6126 */;
-import InputEvent from "InputEvent" /* 15990 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 6036 */;
+import RTCConnectionEvent from "RTCConnectionEvent" /* 6189 */;
+import InputEvent from "InputEvent" /* 16111 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 6099 */;
 import size from "module_2" /* 2 */;
 
 const _false = { Closed: 0, [0]: "Closed", Connecting: 1, [1]: "Connecting", Connected: 2, [2]: "Connected" };
@@ -25,14 +25,14 @@ class InputConnection extends TypedEventEmitter {
     const onWebTransportAck = obj.onWebTransportAck;
     new LoggerDefault("InputConnection");
     obj.webTransportAck = onWebTransportAck.bind(obj);
-    obj.on(obj(15990).InputEvent.Connect, () => {
+    obj.on(obj(16111).InputEvent.Connect, () => {
       obj.state = Connected.Connected;
     });
     ({ on, onDisconnect } = obj);
-    on(obj(15990).InputEvent.Disconnect, onDisconnect.bind(obj));
+    on(obj(16111).InputEvent.Disconnect, onDisconnect.bind(obj));
     ({ on: on2, onLogMessage } = obj);
-    on2(obj(15990).InputEvent.Log, onLogMessage.bind(obj));
-    const obj2 = obj(15991);
+    on2(obj(16111).InputEvent.Log, onLogMessage.bind(obj));
+    const obj2 = obj(16112);
     obj.worker = obj2.createInputWorker();
     if (null != obj.worker) {
       obj.worker.onmessage = (data) => {
@@ -47,7 +47,7 @@ class InputConnection extends TypedEventEmitter {
     const self = this;
     this.state = Connecting.Connecting;
     let rtc = this.rtc;
-    rtc.on(self(6126).RTCConnectionEvent.WebTransportAck, this.webTransportAck);
+    rtc.on(self(6189).RTCConnectionEvent.WebTransportAck, this.webTransportAck);
     const rtc2 = this.rtc;
     rtc2.startWebTransport();
     const timerId = setTimeout(() => {

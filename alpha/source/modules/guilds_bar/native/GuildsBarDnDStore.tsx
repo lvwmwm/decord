@@ -1,15 +1,15 @@
-// Module ID: 18909
-// Function ID: 18910
+// Module ID: 19063
+// Function ID: 19064
 // Name: GuildsBarDnDStore
-// Dependencies: [6893, 1254, 1652, 1259, 1242, 5158, 2]
+// Dependencies: [6956, 1258, 1655, 1263, 1242, 5221, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 18909 (GuildsBarDnDStore)
+// Module 19063 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import react_native from "react-native" /* 1259 */;
-import _slicedToArray from "_slicedToArray" /* 5158 */;
-import SortedGuildStore from "SortedGuildStore" /* 6893 */;
-import module_1254 from "module_1254" /* 1254 */;
+import react_native from "react-native" /* 1263 */;
+import _slicedToArray from "_slicedToArray" /* 5221 */;
+import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ let _require, set;
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
-const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1258.createWithEqualityFn((arg0, arg1) => {
   let closure_5;
   let obj;
   let obj2;
@@ -30,14 +30,14 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "delete",
+    overSpecs: "description",
     dropSpecs: "isArray",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
     dragDropInProgress: obj4.makeMutable(false),
     listInsets: obj5.makeMutable({ start: 0, end: 0 }),
     scrollPosition: obj6.makeMutable(0),
-    windowSize: "r",
+    windowSize: true,
     setStateShallow(obj) {
       closure_0 = obj;
       const tmp = closure_1();
@@ -77,7 +77,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "isArray" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "channel_id" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -124,11 +124,11 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       }
     }
   };
-  obj2 = require("module_1652");
-  obj3 = require("module_1652");
-  obj4 = require("module_1652");
-  obj5 = require("module_1652");
-  obj6 = require("module_1652");
+  obj2 = require("module_1655");
+  obj3 = require("module_1655");
+  obj4 = require("module_1655");
+  obj5 = require("module_1655");
+  obj6 = require("module_1655");
   return obj;
 });
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
@@ -149,7 +149,7 @@ export function useItemDragState(guildId, flag) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "delete", overState: "isArray", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "description", overState: "isArray", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

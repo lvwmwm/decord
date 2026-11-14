@@ -1,14 +1,14 @@
-// Module ID: 10470
-// Function ID: 10471
+// Module ID: 10539
+// Function ID: 10540
 // Name: PinIcon
-// Dependencies: [19, 21, 575, 5956, 10471, 2]
+// Dependencies: [19, 21, 575, 6019, 10540, 2]
 // Exports: PinIcon
 
-// Module 10470 (PinIcon)
+// Module 10539 (PinIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10471 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 10540 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

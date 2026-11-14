@@ -1,13 +1,13 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5368
+// Function ID: 5369
 // Name: RouteParam
-// Dependencies: [1073, 5099, 1081, 5306, 2]
+// Dependencies: [1073, 5162, 1081, 5369, 2]
 
-// Module 5305 (RouteParam)
+// Module 5368 (RouteParam)
 import RouteConstants from "RouteConstants" /* 1073 */;
 import utils_PathUtils from "utils/PathUtils" /* 1081 */;
-import ChannelConstants from "ChannelConstants" /* 5099 */;
-import escapeRegExpDefault from "escapeRegExp" /* 5306 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import escapeRegExpDefault from "escapeRegExp" /* 5369 */;
 import size from "module_2" /* 2 */;
 
 const PSEUDO_GUILD_IDS = RouteConstants.PSEUDO_GUILD_IDS;

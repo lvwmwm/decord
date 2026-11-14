@@ -1,11 +1,11 @@
-// Module ID: 9281
-// Function ID: 9282
+// Module ID: 9348
+// Function ID: 9349
 // Name: useLabFeature
-// Dependencies: [9279, 504, 2]
+// Dependencies: [9346, 504, 2]
 // Exports: default
 
-// Module 9281 (useLabFeature)
-import LabFeatureStore from "LabFeatureStore" /* 9279 */;
+// Module 9348 (useLabFeature)
+import LabFeatureStore from "LabFeatureStore" /* 9346 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

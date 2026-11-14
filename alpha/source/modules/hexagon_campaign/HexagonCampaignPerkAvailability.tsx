@@ -1,14 +1,14 @@
-// Module ID: 5273
-// Function ID: 5274
+// Module ID: 5336
+// Function ID: 5337
 // Name: HexagonCampaignPerkAvailability
-// Dependencies: [1385, 5274, 504, 5271, 2]
+// Dependencies: [1388, 5337, 504, 5334, 2]
 // Exports: getHexagonCampaignPerkAvailabilityForCurrentUser, isHexagonCampaignPerkExpiredForCurrentUser, useHexagonCampaignPerkAvailability
 
-// Module 5273 (HexagonCampaignPerkAvailability)
+// Module 5336 (HexagonCampaignPerkAvailability)
 import get_initialized from "get initialized" /* 504 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5271 */;
-import HexagonCampaignExperiment from "HexagonCampaignExperiment" /* 5274 */;
-import UserStore from "UserStore" /* 1385 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
+import HexagonCampaignExperiment from "HexagonCampaignExperiment" /* 5337 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignPerkAvailability.tsx");

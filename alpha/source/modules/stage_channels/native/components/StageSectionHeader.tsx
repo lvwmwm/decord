@@ -1,22 +1,22 @@
-// Module ID: 12997
-// Function ID: 12998
+// Module ID: 13093
+// Function ID: 13094
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 5243, 575, 1652, 5485, 5866, 1187, 7848, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1655, 5548, 5929, 1187, 7914, 2]
 // Exports: default
 
-// Module 12997 (StageSectionHeader)
+// Module 13093 (StageSectionHeader)
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7848 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7914 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 let obj1, str;
 
 let c3;
@@ -57,8 +57,8 @@ export default function StageSectionHeader(children) {
   ({ label, count, collapsed, onToggleCollapse } = children);
   const tmp = closure_7();
   let items = [closure_8, , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[1] = timing_timing.withTiming;
   items[2] = collapsed;
   let c0;
@@ -99,7 +99,7 @@ export default function StageSectionHeader(children) {
   items3[1] = tmp9Result;
   const obj5 = { style: tmp.collapseButton, children: metroRequire(View, obj6) };
   obj6 = { style: animatedStyle, children: metroRequire(Icon, obj7) };
-  View = _modDef1652.View;
+  View = _modDef1655.View;
   obj7 = { source: AssetRegistryDefault, style: tmp.collapseIcon };
   Icon = tmp2(1187).Icon;
   items3[2] = metroRequire(React3, obj5);

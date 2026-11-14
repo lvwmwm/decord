@@ -1,16 +1,16 @@
-// Module ID: 13112
-// Function ID: 13113
+// Module ID: 13218
+// Function ID: 13219
 // Name: conjureSettingsConnection
-// Dependencies: [5, 7315, 572, 7330, 13113, 559, 13111, 2]
+// Dependencies: [5, 7379, 572, 7394, 13219, 559, 13216, 2]
 // Exports: requestProjectRebuild, retryFailedOverlayProjectSettings, submitProjectSettings
 
-// Module 13112 (conjureSettingsConnection)
+// Module 13218 (conjureSettingsConnection)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7330 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 13113 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7394 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 13219 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 7315 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 7379 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2, closure_5, closure_6, importDefault, rebuild_required, secrets, set, values;
@@ -64,14 +64,14 @@ let obj = function _fetchProjectSettings() {
               values = undefined;
               value = map.get(projectId);
               c1 = value;
-              const tmp59 = projectId;
+              const tmp60 = projectId;
               if (value == null) {
                 c1 = 0;
               }
               closure_1 = c1;
               c7 = 1;
               c8 = 1;
-              const obj4 = { value: obj8.fetchConjureWorker(tmp59, "/agent/settings"), done: false };
+              const obj4 = { value: obj8.fetchConjureWorker(tmp60, "/agent/settings"), done: false };
               obj8 = conjureWorkerFetch;
               return obj4;
             }
@@ -121,7 +121,7 @@ let obj = function _fetchProjectSettings() {
               if (isArray(schema)) {
                 if (0 !== values.schema.length) {
                   const obj9 = { type: "CONJURE_SETTINGS_SET", projectId, settings: obj10 };
-                  obj10 = { schema: values.schema, values, secrets, connections: values.connections };
+                  obj10 = { schema: values.schema, values, server_values: values.server_values, secrets, connections: values.connections };
                   values = values.values;
                   const dispatch = closure_134_1(closure_134_2[2]).dispatch;
                   closure_134_1(closure_134_2[2]);
@@ -139,9 +139,9 @@ let obj = function _fetchProjectSettings() {
             c8 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp46) {
+        } catch (tmp47) {
           c8 = 3;
-          throw tmp46;
+          throw tmp47;
         }
       }
     })();
@@ -228,8 +228,9 @@ obj = function _submitProjectSettings() {
     let c4 = 0;
     return (async function(arg0, value) {
       let obj11;
+      let obj12;
       let obj4;
-      let obj9;
+      let obj7;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -242,8 +243,8 @@ obj = function _submitProjectSettings() {
           return { value: "HermesInternal", done: null };
         }
       } else {
-        let c4;
         try {
+          let settings;
           c6 = 2;
           if (0 === c5) {
             if (arg0 === 1) {
@@ -255,12 +256,12 @@ obj = function _submitProjectSettings() {
             } else {
               closure_2 = undefined;
               rebuild_required = undefined;
-              values = undefined;
+              settings = undefined;
               c5 = 1;
               c6 = 1;
               const obj5 = { method: "PUT", json };
-              const obj6 = { value: obj9.fetchConjureWorker(projectId, "/agent/settings", obj5), done: false };
-              obj9 = conjureWorkerFetch;
+              const obj6 = { value: obj12.fetchConjureWorker(projectId, "/agent/settings", obj5), done: false };
+              obj12 = conjureWorkerFetch;
               return obj6;
             }
           } else if (1 === c5) {
@@ -277,8 +278,8 @@ obj = function _submitProjectSettings() {
                 c4 = 1;
                 c5 = 3;
                 c6 = 1;
-                const obj8 = { value: closure_2.json(), done: false };
-                return obj8;
+                const obj9 = { value: closure_2.json(), done: false };
+                return obj9;
               } else {
                 const _Error = Error;
                 const _HermesInternal = HermesInternal;
@@ -303,15 +304,28 @@ obj = function _submitProjectSettings() {
               c4 = 0;
             }
             closure_131_6(projectId);
-            values = closure_131_4.getSettings(projectId);
-            const tmp14 = null != values && null != json.values;
-            if (tmp14) {
+            settings = closure_131_4.getSettings(projectId);
+            let tmp14 = null == settings;
+            if (!tmp14) {
+              tmp14 = null == json.values && null == json.server_values;
+              const tmp17 = null == json.values && null == json.server_values;
+            }
+            if (!tmp14) {
+              let obj14;
               const obj10 = { type: "CONJURE_SETTINGS_SET", projectId, settings: obj11 };
-              obj11 = { values: obj4.mergeSubmittedSettingValues(values.values, json.values) };
+              obj11 = { values: obj4.mergeSubmittedSettingValues(settings.values, json.values) };
               const dispatch = closure_131_1(closure_131_2[2]).dispatch;
               closure_131_1(closure_131_2[2]);
-              const merged = Object.assign(values);
+              const merged = Object.assign(settings);
               obj4 = closure_131_0(closure_131_2[6]);
+              if (null != json.server_values) {
+                const obj13 = { server_values: obj7.mergeSubmittedServerValues(settings.server_values, json.server_values) };
+                obj14 = obj13;
+                obj7 = closure_131_0(closure_131_2[6]);
+              } else {
+                obj14 = {};
+              }
+              const merged1 = Object.assign(obj14);
               dispatch(obj10);
             }
             rebuild_required = undefined;
@@ -321,10 +335,10 @@ obj = function _submitProjectSettings() {
             c6 = 3;
             return { value: { rebuildRequired: true === rebuild_required }, done: true };
           }
-        } catch (tmp41) {
+        } catch (tmp54) {
           if (0 === c4) {
             c6 = 3;
-            throw tmp41;
+            throw tmp54;
           } else {
             c5 = 2;
           }
@@ -337,6 +351,8 @@ obj = function _submitProjectSettings() {
 const map = new Map();
 obj = {
   settings(schema, projectId) {
+    let obj4;
+    let server_values;
     projectId = projectId.projectId;
     set = map.set;
     let num = map.get(projectId);
@@ -344,9 +360,21 @@ obj = {
       num = 0;
     }
     const result = set(projectId, num + 1);
-    obj = DispatcherDefault;
-    const obj2 = { type: "CONJURE_SETTINGS_SET", projectId, settings: { schema: schema.schema, values: schema.values, secrets: schema.secrets, connections: schema.connections } };
-    obj.dispatch(obj2);
+    obj = { type: "CONJURE_SETTINGS_SET", projectId, settings: obj4 };
+    obj4 = { schema: schema.schema, values: schema.values, server_values, secrets: null, connections: null };
+    server_values = schema.server_values;
+    const dispatch = DispatcherDefault.dispatch;
+    DispatcherDefault;
+    if (server_values == null) {
+      const settings = ConjureSettingsStore.getSettings(projectId);
+      let server_values1;
+      if (settings != null) {
+        server_values1 = settings.server_values;
+      }
+      server_values = server_values1;
+    }
+    ({ secrets: obj2.secrets, connections: obj2.connections } = schema);
+    dispatch(obj);
     if (true === schema.values_changed) {
       const obj3 = ConjurePreviewActionCreators;
       const result1 = obj3.reloadConjureProjectFrames(projectId);

@@ -1,13 +1,13 @@
-// Module ID: 9952
-// Function ID: 9953
+// Module ID: 10019
+// Function ID: 10020
 // Name: showMarketingMomentRewardScreen
-// Dependencies: [5, 8419, 8418, 9953, 2]
+// Dependencies: [5, 8485, 8484, 10020, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 9952 (showMarketingMomentRewardScreen)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8418 */;
+// Module 10019 (showMarketingMomentRewardScreen)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8419 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;

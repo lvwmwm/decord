@@ -1,17 +1,17 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11989
+// Function ID: 11990
 // Name: updateSharedValueIfChanged
-// Dependencies: [1705, 2]
+// Dependencies: [1708, 2]
 
-// Module 11923 (updateSharedValueIfChanged)
-import _mod1705 from "module_1705" /* 1705 */;
+// Module 11989 (updateSharedValueIfChanged)
+import _mod1708 from "module_1708" /* 1708 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
 let tmp3;
 let tmp4;
 let tmp5;
-const items = [{ code: "(function updateSharedValueIfChanged_updateSharedValueIfChangedNativeTsx1(sharedValue,value){const updateSharedValueIfChanged_updateSharedValueIfChangedNativeTsx1=this._recur;let[scheduleOnUI]=this.__closure;if(!_WORKLET){scheduleOnUI(updateSharedValueIfChanged_updateSharedValueIfChangedNativeTsx1,sharedValue,value);}else{const _sharedValue=sharedValue.get();const newValue={..._sharedValue,...value};for(const key in newValue){if(_sharedValue[key]!==newValue[key]){sharedValue.set(newValue);break;}}}})" }, _mod1705.scheduleOnUI];
+const items = [{ code: "(function updateSharedValueIfChanged_updateSharedValueIfChangedNativeTsx1(sharedValue,value){const updateSharedValueIfChanged_updateSharedValueIfChangedNativeTsx1=this._recur;let[scheduleOnUI]=this.__closure;if(!_WORKLET){scheduleOnUI(updateSharedValueIfChanged_updateSharedValueIfChangedNativeTsx1,sharedValue,value);}else{const _sharedValue=sharedValue.get();const newValue={..._sharedValue,...value};for(const key in newValue){if(_sharedValue[key]!==newValue[key]){sharedValue.set(newValue);break;}}}})" }, _mod1708.scheduleOnUI];
 [tmp2, tmp3] = items;
 function updateSharedValueIfChanged(get, arg1) {
   if (globalThis._WORKLET) {
@@ -36,7 +36,7 @@ const items1 = [tmp3];
 updateSharedValueIfChanged.__closure = items1;
 updateSharedValueIfChanged.__workletHash = 7240397684674;
 updateSharedValueIfChanged.__initData = tmp2;
-const items2 = [{ code: "(function updateSharedValueArrayIfChanged_updateSharedValueIfChangedNativeTsx2(sharedValue,value){const updateSharedValueArrayIfChanged_updateSharedValueIfChangedNativeTsx2=this._recur;let[scheduleOnUI]=this.__closure;if(!_WORKLET){scheduleOnUI(updateSharedValueArrayIfChanged_updateSharedValueIfChangedNativeTsx2,sharedValue,value);}else{const _sharedValue=sharedValue.get();if(_sharedValue.length!==value.length){sharedValue.set(value);}for(let i=0;i<value.length;i++){if(_sharedValue[i]!==value[i]){sharedValue.set(value);}}}})" }, _mod1705.scheduleOnUI];
+const items2 = [{ code: "(function updateSharedValueArrayIfChanged_updateSharedValueIfChangedNativeTsx2(sharedValue,value){const updateSharedValueArrayIfChanged_updateSharedValueIfChangedNativeTsx2=this._recur;let[scheduleOnUI]=this.__closure;if(!_WORKLET){scheduleOnUI(updateSharedValueArrayIfChanged_updateSharedValueIfChangedNativeTsx2,sharedValue,value);}else{const _sharedValue=sharedValue.get();if(_sharedValue.length!==value.length){sharedValue.set(value);}for(let i=0;i<value.length;i++){if(_sharedValue[i]!==value[i]){sharedValue.set(value);}}}})" }, _mod1708.scheduleOnUI];
 let c0;
 [tmp4, tmp5] = items2;
 function updateSharedValueArrayIfChanged(sharedValue, arg1) {

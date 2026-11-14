@@ -1,23 +1,23 @@
-// Module ID: 15691
-// Function ID: 15692
+// Module ID: 15810
+// Function ID: 15811
 // Name: useAddableWidgets
-// Dependencies: [19, 12174, 1385, 7291, 12157, 5068, 563, 12048, 15692, 15693, 15694, 7871, 12175, 7293, 15695, 7289, 1380, 7294, 7296, 7290, 2]
+// Dependencies: [19, 12266, 1388, 7355, 12251, 5131, 563, 12121, 15811, 15812, 15813, 7937, 12270, 7357, 15814, 7353, 1255, 7358, 7360, 7354, 2]
 // Exports: default
 
-// Module 15691 (useAddableWidgets)
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7291 */;
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 12157 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 12175 */;
+// Module 15810 (useAddableWidgets)
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7355 */;
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 12251 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 12270 */;
 import react from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 12174 */;
-import UserStore from "UserStore" /* 1385 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 12266 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let importDefault, set;
 
 function hasAddableApplicationWidgetSurfaces(arg0) {
-  const tmp3 = null != arg0.surfaces[ApplicationWidgetConfigSurface.ApplicationWidgetConfigSurface.WIDGET_TOP] && null != arg0.surfaces[tmp(undefined, 12157).ApplicationWidgetConfigSurface.WIDGET_BOTTOM] && null != arg0.surfaces[tmp(undefined, 12157).ApplicationWidgetConfigSurface.ADD_WIDGET_PREVIEW];
+  const tmp3 = null != arg0.surfaces[ApplicationWidgetConfigSurface.ApplicationWidgetConfigSurface.WIDGET_TOP] && null != arg0.surfaces[tmp(undefined, 12251).ApplicationWidgetConfigSurface.WIDGET_BOTTOM] && null != arg0.surfaces[tmp(undefined, 12251).ApplicationWidgetConfigSurface.ADD_WIDGET_PREVIEW];
   return tmp3;
 }
 const WIDGET_SORT_ORDER = UserProfileWidgetConstants.WIDGET_SORT_ORDER;

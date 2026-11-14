@@ -1,12 +1,13 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 10067
+// Function ID: 10068
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 5244, 504, 1396, 10001, 5240, 671, 2]
+// Dependencies: [19, 5307, 504, 1399, 10068, 1396, 5303, 671, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 10000 (useDisplayNameStylesAccessibleColors)
+// Module 10067 (useDisplayNameStylesAccessibleColors)
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1396 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesAccessibleColors.tsx");
@@ -45,15 +46,18 @@ export function useDisplayNameStylesAccessibleColors(displayNameStyles) {
       items = [];
     } else {
       const colors = tmp.colors;
-      items = colors.map((item) => {
+      let tmp2 = require;
+      const tmp3 = dependencyMap;
+      const found = colors.filter(DisplayNameStylesUtils.isValidDisplayNameColor);
+      items = found.map((item) => {
         let tmp5;
-        const tmp2 = displayNameStyles(stateFromStores[5]);
+        const tmp2 = displayNameStyles(stateFromStores[6]);
         const getAccessibleForegroundColor = tmp2.getAccessibleForegroundColor;
-        const obj = { foreground: backgroundColor(stateFromStores[6])(item), background: tmp5, ratio: minContrastRatio.minContrastRatio, saturationFactor };
+        const obj = { foreground: backgroundColor(stateFromStores[7])(item), background: tmp5, ratio: minContrastRatio.minContrastRatio, saturationFactor };
         if (effectId === displayNameStyles(stateFromStores[3]).DisplayNameEffect.TOON) {
-          tmp5 = tmp3(tmp[6])("#333");
+          tmp5 = tmp3(tmp[7])("#333");
         } else {
-          tmp5 = tmp3(tmp[6])(closure_1_1);
+          tmp5 = tmp3(tmp[7])(closure_1_1);
         }
         const accessibleForegroundColor = getAccessibleForegroundColor(obj);
         return accessibleForegroundColor.hex();

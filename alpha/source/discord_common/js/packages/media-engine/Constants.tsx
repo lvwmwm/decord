@@ -1,10 +1,10 @@
-// Module ID: 6012
-// Function ID: 6013
+// Module ID: 6075
+// Function ID: 6076
 // Name: Constants
-// Dependencies: [2, 6013]
+// Dependencies: [2, 6076]
 
-// Module 6012 (Constants)
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 6013 */;
+// Module 6075 (Constants)
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 6076 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");

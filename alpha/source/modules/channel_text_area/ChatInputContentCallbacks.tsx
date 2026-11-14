@@ -1,17 +1,17 @@
-// Module ID: 14492
-// Function ID: 14493
+// Module ID: 14604
+// Function ID: 14605
 // Name: ChatInputContentCallbacks
-// Dependencies: [32, 19, 7251, 12431, 12432, 11090, 12, 2]
+// Dependencies: [32, 19, 7315, 12526, 12527, 11157, 12, 2]
 // Exports: tryUpdateSubscriptionForHereMention, useHereMentionCallback
 
-// Module 14492 (ChatInputContentCallbacks)
+// Module 14604 (ChatInputContentCallbacks)
 import _modDef12 from "module_12" /* 12 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 11090 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 12431 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12432 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 11157 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 12526 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12527 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7251 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7315 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;

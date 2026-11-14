@@ -1,18 +1,18 @@
-// Module ID: 8697
-// Function ID: 8698
+// Module ID: 8764
+// Function ID: 8765
 // Name: UserSearchItems
-// Dependencies: [5, 8698, 8487, 5185, 1385, 1072, 3, 5121, 8699, 2]
+// Dependencies: [5, 8765, 8553, 5248, 1388, 1072, 3, 5184, 8766, 2]
 
-// Module 8697 (UserSearchItems)
+// Module 8764 (UserSearchItems)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 5121 */;
-import UserSearchUtils from "UserSearchUtils" /* 8699 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 5184 */;
+import UserSearchUtils from "UserSearchUtils" /* 8766 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 8698 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8487 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 8765 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8553 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const RelationshipTypes = Constants.RelationshipTypes;

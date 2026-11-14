@@ -1,15 +1,15 @@
-// Module ID: 17510
-// Function ID: 17511
+// Module ID: 17628
+// Function ID: 17629
 // Name: applyHexagonCampaignPerks
-// Dependencies: [5, 1385, 16722, 5268, 1240, 15200, 17511, 5271, 17512, 16961, 17513, 5269, 17516, 17517, 2]
+// Dependencies: [5, 1388, 16845, 5331, 1240, 15314, 17629, 5334, 17630, 17084, 17631, 5332, 17634, 17635, 2]
 // Exports: applyHexagonCampaignPerks
 
-// Module 17510 (applyHexagonCampaignPerks)
+// Module 17628 (applyHexagonCampaignPerks)
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5268 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16722 */;
+import UserStore from "UserStore" /* 1388 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16845 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;
@@ -148,7 +148,7 @@ let obj = function _applyHexagonCampaignPerks() {
             };
             analyticsLocations = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

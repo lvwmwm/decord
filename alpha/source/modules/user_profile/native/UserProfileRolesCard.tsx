@@ -1,24 +1,24 @@
-// Module ID: 7874
-// Function ID: 7875
+// Module ID: 7940
+// Function ID: 7941
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 5155, 5149, 1072, 21, 5243, 575, 7875, 5068, 5932, 7877, 5951, 1113, 7876, 7882, 7891, 5866, 7893, 7364, 504, 7894, 7895, 2]
+// Dependencies: [19, 17, 5218, 5212, 1072, 21, 5306, 575, 7941, 5131, 5995, 7943, 6014, 1113, 7942, 7948, 7957, 5929, 7959, 7428, 504, 7960, 7961, 2]
 // Exports: default
 
-// Module 7874 (UserProfileRolesCard)
+// Module 7940 (UserProfileRolesCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import ToastUtils from "ToastUtils" /* 5951 */;
-import ClipboardUtils from "ClipboardUtils" /* 7877 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7891 */;
-import RoleIconDefault from "RoleIcon" /* 7893 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7894 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import ToastUtils from "ToastUtils" /* 6014 */;
+import ClipboardUtils from "ClipboardUtils" /* 7943 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7957 */;
+import RoleIconDefault from "RoleIcon" /* 7959 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7960 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import GuildRoleStore from "GuildRoleStore" /* 5149 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -193,7 +193,7 @@ export default function UserProfileRolesCard(userId) {
   let tmp4 = null;
   if (0 !== roles.length) {
     const obj2 = { title: intl.string(userId(1113).t["LPJmL/"]), style, children: closure_9(RolesList, obj3) };
-    const tmp7 = guildId(7895);
+    const tmp7 = guildId(7961);
     intl = tmp(1113).intl;
     obj3 = { guildId, guildMemberRoleIds: roles };
     tmp4 = closure_9(tmp7, obj2);

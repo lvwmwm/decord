@@ -1,39 +1,39 @@
-// Module ID: 8611
-// Function ID: 8612
+// Module ID: 8678
+// Function ID: 8679
 // Name: TTIAnalyticsUtils
-// Dependencies: [32, 5, 8612, 5469, 1192, 502, 5092, 1359, 1072, 8708, 5099, 21, 5200, 6136, 1266, 1376, 3, 5430, 5429, 5436, 10, 1242, 1252, 8709, 8711, 9, 1089, 1371, 1377, 8712, 8713, 6206, 6277, 2118, 2]
+// Dependencies: [32, 5, 8679, 5532, 1192, 502, 5155, 1362, 1072, 8775, 5162, 21, 5263, 6199, 1269, 1379, 3, 5493, 5492, 5499, 10, 1242, 1256, 8776, 8778, 9, 1089, 1374, 1380, 8779, 8780, 6269, 6340, 2121, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 8611 (TTIAnalyticsUtils)
+// Module 8678 (TTIAnalyticsUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ChannelConstants from "ChannelConstants" /* 5099 */;
-import DeviceUtils from "DeviceUtils" /* 5200 */;
-import RootNavigationRef from "RootNavigationRef" /* 5430 */;
-import react_nativeDefault from "react-native" /* 5436 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 6136 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 8708 */;
-import AppStartInfo2 from "AppStartInfo" /* 8709 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import DeviceUtils from "DeviceUtils" /* 5263 */;
+import RootNavigationRef from "RootNavigationRef" /* 5493 */;
+import react_nativeDefault from "react-native" /* 5499 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 6199 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 8775 */;
+import AppStartInfo2 from "AppStartInfo" /* 8776 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 8612 */;
-import ExperimentStore from "ExperimentStore" /* 5469 */;
+import CacheStore from "CacheStore" /* 8679 */;
+import ExperimentStore from "ExperimentStore" /* 5532 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1359 */;
-import v1 from "v1" /* 1266 */;
-import react_native from "react-native" /* 1376 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
+import v1 from "v1" /* 1269 */;
+import react_native from "react-native" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, c8;
 
 let tmp;
-const NavigationRouteUtils = tmp(5429);
+const NavigationRouteUtils = tmp(5492);
 function getDeviceMetadata() {
   let obj2;
   let obj3;

@@ -1,20 +1,20 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15876
+// Function ID: 15877
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 5185, 1072, 21, 5243, 575, 8540, 563, 5866, 1113, 8072, 2]
+// Dependencies: [19, 17, 5248, 1072, 21, 5306, 575, 8607, 563, 5929, 1113, 8137, 2]
 // Exports: default
 
-// Module 15756 (UserProfileRemediatedNotice)
+// Module 15876 (UserProfileRemediatedNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8072 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8540 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8607 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -55,7 +55,7 @@ export default function RemediatedUserNotice(user) {
     const tmp9 = View;
     if (isBlocked) {
       const obj3 = { variant: "body-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1113).t["oC/fU6"]) };
-      const Text = tmp4(5866).Text;
+      const Text = tmp4(5929).Text;
       intl = tmp4(1113).intl;
       isBlocked = closure_6(Text, obj3);
     }
@@ -63,9 +63,9 @@ export default function RemediatedUserNotice(user) {
     if (isIgnored) {
       const obj4 = { children: items3 };
       const obj5 = { variant: "body-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1113).t.HXz5An) };
-      const Text2 = tmp4(5866).Text;
+      const Text2 = tmp4(5929).Text;
       intl2 = tmp4(1113).intl;
-      items3 = [closure_6(Text2, obj5), closure_6(user(5866).Text, { variant: "body-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      items3 = [closure_6(Text2, obj5), closure_6(user(5929).Text, { variant: "body-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1113).intl;
       const obj6 = {
         unignoreHook(children) {

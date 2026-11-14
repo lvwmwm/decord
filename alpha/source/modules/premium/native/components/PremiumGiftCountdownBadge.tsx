@@ -1,17 +1,17 @@
-// Module ID: 11621
-// Function ID: 11622
+// Module ID: 11687
+// Function ID: 11688
 // Name: PremiumGiftCountdownBadge
-// Dependencies: [19, 17, 21, 5243, 575, 1377, 5866, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1380, 5929, 2]
 // Exports: default
 
-// Module 11621 (PremiumGiftCountdownBadge)
+// Module 11687 (PremiumGiftCountdownBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import Text_Text from "Text/Text" /* 5866 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import Text_Text from "Text/Text" /* 5929 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

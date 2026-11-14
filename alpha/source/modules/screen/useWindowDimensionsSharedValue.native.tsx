@@ -1,27 +1,27 @@
-// Module ID: 13704
-// Function ID: 13705
+// Module ID: 13809
+// Function ID: 13810
 // Name: useWindowDimensionsSharedValue
-// Dependencies: [1652, 1493, 13705, 11923, 2]
+// Dependencies: [1655, 1496, 13810, 11989, 2]
 // Exports: default, getWindowDimensionsWorklet
 
-// Module 13704 (useWindowDimensionsSharedValue)
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11923 */;
-import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 13705 */;
-import module_1652_mod from "module_1652" /* 1652 */;
-import useWindowDimensions_mod from "useWindowDimensions" /* 1493 */;
+// Module 13809 (useWindowDimensionsSharedValue)
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
+import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 13810 */;
+import module_1655_mod from "module_1655" /* 1655 */;
+import useWindowDimensions_mod from "useWindowDimensions" /* 1496 */;
 import size from "module_2" /* 2 */;
 
 let tmp10;
 let tmp11;
 let tmp9;
-let module_1652 = module_1652_mod;
-const makeMutable = module_1652.makeMutable;
+let module_1655 = module_1655_mod;
+const makeMutable = module_1655.makeMutable;
 const obj = {};
 let useWindowDimensions = useWindowDimensions_mod;
 const merged = Object.assign(useWindowDimensions.getWindowDimensions());
 const mutable = makeMutable(obj);
-module_1652 = module_1652_mod;
-const makeMutable2 = module_1652.makeMutable;
+module_1655 = module_1655_mod;
+const makeMutable2 = module_1655.makeMutable;
 const obj2 = {};
 useWindowDimensions = useWindowDimensions_mod;
 const merged1 = Object.assign(useWindowDimensions.getWindowDimensions({ ignoreKeyboard: true }));

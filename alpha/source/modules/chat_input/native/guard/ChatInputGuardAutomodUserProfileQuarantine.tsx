@@ -1,17 +1,17 @@
-// Module ID: 14781
-// Function ID: 14782
+// Module ID: 14895
+// Function ID: 14896
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 5155, 5161, 21, 504, 5181, 14058, 1113, 14764, 14782, 2]
+// Dependencies: [19, 502, 5218, 5224, 21, 504, 5244, 14165, 1113, 14878, 14896, 2]
 
-// Module 14781 (ChatInputGuardAutomodUserProfileQuarantine)
+// Module 14895 (ChatInputGuardAutomodUserProfileQuarantine)
 import Fragment from "Fragment" /* 21 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5161 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5181 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 14058 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 14764 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5244 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 14165 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14878 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -44,7 +44,7 @@ const memoResult = react.memo(function ChatInputGuardAutomodUserProfileQuarantin
     const obj = GuildAutomodActionActionCreators;
     const result = obj.openAutomodProfileQuarantineAlert(guildId);
   }, items2);
-  const obj2 = guildId(5181);
+  const obj2 = guildId(5244);
   const automodReason = obj2.getAutomodReason(stateFromStores);
   const tmp6 = GuildMemberFlags;
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {

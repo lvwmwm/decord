@@ -1,10 +1,10 @@
-// Module ID: 18848
-// Function ID: 18849
+// Module ID: 18977
+// Function ID: 18978
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 18849, 1652, 1705, 7781, 15063, 2]
+// Dependencies: [19, 21, 18978, 1655, 1708, 7847, 15177, 2]
 
-// Module 18848 (ChannelListLegendList)
-import FastList from "FastList" /* 7781 */;
+// Module 18977 (ChannelListLegendList)
+import FastList from "FastList" /* 7847 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let hasOwnProperty;
 let metroRequire;
 ({ Fragment: closure_4, jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = [];
-let closure_8 = { item: "delete", positionPercentage: false };
+let closure_8 = { item: "description", positionPercentage: false };
 let closure_9 = { zIndex: 5 };
 let closure_10 = { code: "(function ChannelListLegendListTsx1(event){let[scrollPosValue,onScrollWorklet,onScroll,scheduleOnRN]=this.__closure;scrollPosValue.set(event.contentOffset.y);onScrollWorklet(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);if(onScroll!=null){scheduleOnRN(onScroll);}})" };
 const memoResult = react.memo(function ChannelListLegendList(listViewportHeight) {
@@ -96,7 +96,7 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
       return Math.max(0, Math.min(diff, contentSize + insetEnd - listViewportHeight));
     }
   }, []);
-  let obj2 = require("module_1652");
+  let obj2 = require("module_1655");
   const sharedValue = obj2.useSharedValue(memo);
   const ref2 = listViewportHeight.useRef(tmp3);
   ref2.current = tmp3;
@@ -302,10 +302,10 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
   }, items);
   const items1 = [memo1];
   const imperativeHandle = listViewportHeight.useImperativeHandle(ref, () => memo1, items1);
-  const tmp11 = require("module_1652");
+  const tmp11 = require("module_1655");
   const items2 = [getIndex, sharedValue, onScrollWorklet, onScroll, ];
   const useAnimatedScrollHandler = tmp11.useAnimatedScrollHandler;
-  items2[4] = require("module_1705").scheduleOnRN;
+  items2[4] = require("module_1708").scheduleOnRN;
   let c0;
   let c1;
   let c2;

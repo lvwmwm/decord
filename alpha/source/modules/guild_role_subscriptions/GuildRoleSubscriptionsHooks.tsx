@@ -1,19 +1,19 @@
-// Module ID: 17711
-// Function ID: 17712
+// Module ID: 17831
+// Function ID: 17832
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 6737, 5168, 504, 7207, 7352, 17712, 17713, 13440, 1380, 2]
+// Dependencies: [5, 32, 19, 6800, 5231, 504, 7270, 7416, 17832, 17833, 13543, 1255, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 17711 (GuildRoleSubscriptionsHooks)
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5168 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7207 */;
-import useRequestDefault from "useRequest" /* 13440 */;
-import subscriptionUtils from "subscriptionUtils" /* 17713 */;
+// Module 17831 (GuildRoleSubscriptionsHooks)
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5231 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7270 */;
+import useRequestDefault from "useRequest" /* 13543 */;
+import subscriptionUtils from "subscriptionUtils" /* 17833 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -588,7 +588,7 @@ export function usePublishSubscriptionListing() {
                 ({ guildId: c0, groupListingId: c1, listingId: c2 } = closure_0);
                 c5 = 1;
                 c6 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "Path", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

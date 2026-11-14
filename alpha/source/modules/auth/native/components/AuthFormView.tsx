@@ -1,18 +1,18 @@
-// Module ID: 7726
-// Function ID: 7727
+// Module ID: 7792
+// Function ID: 7793
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 5243, 575, 7704, 7727, 7728, 7648, 7729, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7770, 7793, 7794, 7714, 7795, 2]
 // Exports: default
 
-// Module 7726 (AuthFormView)
+// Module 7792 (AuthFormView)
 import nativeDefault from "native" /* 575 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7704 */;
-import react2 from "react" /* 7727 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7729 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7770 */;
+import react2 from "react" /* 7793 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7795 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -93,7 +93,7 @@ export default function AuthFormView(arg0) {
     const tmp14 = hasOwnProperty;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp16 = metroRequire(tmp(7728), obj3);
+      tmp16 = metroRequire(tmp(7794), obj3);
     }
     items1 = [tmp16, , ];
     let tmp18 = null;
@@ -110,7 +110,7 @@ export default function AuthFormView(arg0) {
     ({ container: arr[0], flex: arr[1] } = tmp4);
     if (background == null) {
       const obj5 = { backgroundImageSource, backgroundImageCover };
-      background = metroRequire(tmp(7648), obj5);
+      background = metroRequire(tmp(7714), obj5);
     }
     items3 = [background, metroRequire(AuthNavbarPlaceholderDefault, {}), ];
     const obj6 = { contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: tmp4.flex, contentContainerStyle: items4, children: items5 };
@@ -121,7 +121,7 @@ export default function AuthFormView(arg0) {
     const tmp10 = hasOwnProperty;
     if (null != headerText) {
       const obj7 = { children: headerText };
-      tmp9Result = tmp9(tmp(7728), obj7);
+      tmp9Result = tmp9(tmp(7794), obj7);
     }
     items5 = [tmp9Result, , ];
     let tmp9Result2 = null;

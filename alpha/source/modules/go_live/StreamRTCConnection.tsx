@@ -1,36 +1,36 @@
-// Module ID: 6742
-// Function ID: 6743
+// Module ID: 6805
+// Function ID: 6806
 // Name: StreamRTCConnection
-// Dependencies: [2136, 6027, 6190, 502, 5092, 6743, 2130, 6147, 6008, 6107, 1072, 6012, 1089, 6014, 6744, 5087, 6745, 6746, 12, 572, 6747, 6126, 6033, 6748, 1252, 5249, 6754, 6016, 6191, 6755, 6756, 15988, 6136, 2]
+// Dependencies: [2139, 6090, 6253, 502, 5155, 6806, 2133, 6210, 6071, 6170, 1072, 6075, 1089, 6077, 6807, 5150, 6808, 6809, 12, 572, 6810, 6189, 6096, 6811, 1256, 5312, 6817, 6079, 6254, 6818, 6819, 16108, 6199, 2]
 
-// Module 6742 (StreamRTCConnection)
+// Module 6805 (StreamRTCConnection)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5249 */;
-import Constants2 from "Constants" /* 6012 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 6027 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 6033 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 6191 */;
-import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 6744 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
-import VideoStreamStatsDefault from "VideoStreamStats" /* 6746 */;
-import _slicedToArrayDefault from "_slicedToArray" /* 6747 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 6748 */;
-import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 6754 */;
-import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 6755 */;
-import ClipsStore from "ClipsStore" /* 2136 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6190 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5312 */;
+import Constants2 from "Constants" /* 6075 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 6090 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 6096 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 6254 */;
+import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 6807 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
+import VideoStreamStatsDefault from "VideoStreamStats" /* 6809 */;
+import _slicedToArrayDefault from "_slicedToArray" /* 6810 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 6811 */;
+import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 6817 */;
+import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 6818 */;
+import ClipsStore from "ClipsStore" /* 2139 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6253 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import HookErrorStore from "HookErrorStore" /* 6743 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import NetworkStore from "NetworkStore" /* 6147 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
-import RTCRegionStore from "RTCRegionStore" /* 6107 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import HookErrorStore from "HookErrorStore" /* 6806 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import NetworkStore from "NetworkStore" /* 6210 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCRegionStore from "RTCRegionStore" /* 6170 */;
 import Constants from "Constants" /* 1072 */;
-import RTCConnection from "RTCConnection" /* 6014 */;
+import RTCConnection from "RTCConnection" /* 6077 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -797,7 +797,7 @@ class StreamRTCConnection extends RTCConnection {
         tmp = null;
         obj3 = CrossPlatformNativeUtilsDefault;
         if (self.isOwner) {
-          tmp = tmp30(6136)();
+          tmp = tmp30(6199)();
         }
         tmp30Result = CrossPlatformNativeUtilsDefault;
         push(obj);
@@ -833,7 +833,7 @@ class StreamRTCConnection extends RTCConnection {
         tmp2 = null;
         const tmp30 = importDefault;
         if (self.isOwner) {
-          tmp2 = tmp30(6136)();
+          tmp2 = tmp30(6199)();
         }
         const result = set(item, obj);
       }

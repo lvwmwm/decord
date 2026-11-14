@@ -1,17 +1,17 @@
-// Module ID: 11938
-// Function ID: 11939
+// Module ID: 12006
+// Function ID: 12007
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [19, 17, 21, 1652, 5488, 11939, 5485, 5851, 11951, 11953, 5853, 11954, 2]
+// Dependencies: [19, 17, 21, 1655, 5551, 12007, 5548, 5914, 12018, 12020, 5916, 12021, 2]
 // Exports: default
 
-// Module 11938 (ChatViewWrapperAnimatedKeyboard)
+// Module 12006 (ChatViewWrapperAnimatedKeyboard)
 import react_native from "react-native" /* 17 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timingPresets from "timingPresets" /* 5488 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5851 */;
-import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 11939 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11951 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 11953 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timingPresets from "timingPresets" /* 5551 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5914 */;
+import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 12007 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 12018 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 12020 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -23,13 +23,13 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 let tmp4;
-const _modDef1652 = tmp(1652);
-const timing_timing = tmp4(5485);
-const LayerScope2 = tmp4(5853);
-const StickyWrapper2 = tmp4(11954);
+const _modDef1655 = tmp(1655);
+const timing_timing = tmp4(5548);
+const LayerScope2 = tmp4(5916);
+const StickyWrapper2 = tmp4(12021);
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const Easing = _mod1652.Easing;
+const Easing = _mod1655.Easing;
 let obj = { duration: timingPresets.timingStandardDuration, easing: bezierResult };
 let closure_8 = { code: "(function ChatViewWrapperAnimatedKeyboardTsx1(){let[animatedHeight]=this.__closure;return animatedHeight.get();})" };
 let closure_9 = { code: "(function ChatViewWrapperAnimatedKeyboardTsx2(height,heightPrev){let[animatedAdjustedMargin,animatedAdjustedMarginPending]=this.__closure;if(heightPrev==null){return;}if(height<heightPrev){animatedAdjustedMargin.set(height);animatedAdjustedMarginPending.set(-1);}else{animatedAdjustedMarginPending.set(height);}})" };
@@ -81,14 +81,14 @@ export default function ChatViewWrapperAnimatedKeyboard(arg0) {
   const tmp3 = useChatViewPointerEventsDefault(channelId);
   obj = useChannelSafeAreaHeightSharedValueDefault();
   const tmp4 = require;
-  let obj2 = _mod1652;
+  let obj2 = _mod1655;
   const sharedValue = obj2.useSharedValue(obj.get());
-  const obj3 = _mod1652;
+  const obj3 = _mod1655;
   const sharedValue1 = obj3.useSharedValue(-1);
   let items = [closure_8, obj];
   let c0;
   [tmp7, tmp8] = items;
-  const obj4 = _mod1652;
+  const obj4 = _mod1655;
   class ChatViewWrapperAnimatedKeyboardTsx1 {
     constructor() {
       return closure_0.get();
@@ -126,8 +126,8 @@ export default function ChatViewWrapperAnimatedKeyboard(arg0) {
   ChatViewWrapperAnimatedKeyboardTsx2.__initData = tmp9;
   const animatedReaction = obj4.useAnimatedReaction(ChatViewWrapperAnimatedKeyboardTsx1, ChatViewWrapperAnimatedKeyboardTsx2);
   const items4 = [closure_11, sharedValue, , , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items4[2] = timing_timing.withTiming;
   items4[3] = obj;
   items4[4] = obj;
@@ -195,7 +195,7 @@ export default function ChatViewWrapperAnimatedKeyboard(arg0) {
   obj6 = { header: stickyHeader, style, pointerEvents: tmp3, children: metroRequire(View, obj7) };
   obj7 = { style: animatedStyle, children: items6 };
   StickyWrapper = StickyWrapper2.StickyWrapper;
-  View = _modDef1652.View;
+  View = _modDef1655.View;
   items6 = [hasOwnProperty(View, { style, children }), hasOwnProperty(closure_12, { channelId })];
   return hasOwnProperty(LayerScope, obj5);
 };

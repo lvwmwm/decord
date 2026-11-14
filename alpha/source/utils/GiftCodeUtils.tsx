@@ -1,27 +1,27 @@
-// Module ID: 6692
-// Function ID: 6693
+// Module ID: 6755
+// Function ID: 6756
 // Name: GiftCodeUtils
-// Dependencies: [5, 32, 6693, 1385, 1072, 1387, 5895, 6199, 6703, 1252, 5064, 6724, 1113, 6725, 1380, 504, 2171, 2]
+// Dependencies: [5, 32, 6756, 1388, 1072, 1390, 5958, 6262, 6766, 1256, 5127, 6787, 1113, 6788, 1255, 504, 2174, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 6692 (GiftCodeUtils)
+// Module 6755 (GiftCodeUtils)
 import intl12 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6199 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6724 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 6262 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6787 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6693 */;
-import UserStore from "UserStore" /* 1385 */;
+import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6756 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import RegexUtils from "RegexUtils" /* 5895 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import RegexUtils from "RegexUtils" /* 5958 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_3, closure_4, closure_5, set;
+let _require, closure_2, closure_3, closure_4, set;
 
 let c10;
 let c9;
@@ -32,18 +32,17 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f91363 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
+const f92551 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
 let obj = function _resolveGiftCode() {
   obj = _asyncToGenerator(async (gift_code) => {
     let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c7 = 0;
-    let c8 = 0;
     let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
     const iter = (async function(arg0, value) {
-      let obj6;
-      if (c8 === 2) {
-        c8 = 3;
+      let obj7;
+      if (c7 === 2) {
+        c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -55,85 +54,87 @@ let obj = function _resolveGiftCode() {
         }
       } else {
         try {
-          let flag2;
           let flag;
+          let flag2;
+          let flag3;
           let body;
-          c8 = 2;
-          if (0 === c7) {
+          c7 = 2;
+          if (0 === c6) {
             if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              closure_4 = tmp;
-              closure_3 = tmp4;
-              flag2 = undefined;
-              flag = closure_1;
-              if (closure_1 === undefined) {
-                flag = false;
-              }
-              flag2 = closure_2;
-              if (closure_2 === undefined) {
-                flag2 = false;
-              }
-              body = undefined;
-              c7 = 1;
-              c8 = 1;
-              return { value: "flexDirection", done: true };
-            }
-          } else if (1 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              c6 = 1;
-              const request = { url: closure_132_7.GIFT_CODE_RESOLVE(gift_code), query: obj6, oldFormErrors: true, rejectWithError: false };
-              const httpGetWithCountryCodeQuery = closure_132_0(closure_132_2[8]).httpGetWithCountryCodeQuery;
-              closure_132_0(closure_132_2[8]);
               c7 = 3;
-              c8 = 1;
-              obj6 = { with_application: flag, with_subscription_plan: flag2 };
-              const obj7 = { value: httpGetWithCountryCodeQuery(request), done: false };
-              return obj7;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp;
+              closure_2 = tmp4;
+              flag = undefined;
+              flag2 = undefined;
+              flag3 = undefined;
+              let obj5 = closure_1;
+              if (closure_1 === undefined) {
+                obj5 = {};
+              }
+              flag = obj5.withApplication ?? false;
+              flag2 = obj5.withSubscriptionPlan ?? false;
+              flag3 = obj5.withGiftSubscriptionAgreement ?? false;
+              body = undefined;
+              c6 = 1;
+              c7 = 1;
+              return { value: "Path", done: true };
             }
-          } else if (2 === c7) {
-            c6 = 0;
-            closure_4 = closure_5;
-            const obj8 = { resolved: false, gift_code };
-            const obj3 = closure_132_1(closure_132_2[9]);
-            obj3.track(closure_132_8.GIFT_CODE_RESOLVED, obj8);
+          } else if (1 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              c5 = 1;
+              const request = { url: closure_131_7.GIFT_CODE_RESOLVE(gift_code), query: obj7, oldFormErrors: true, rejectWithError: false };
+              const httpGetWithCountryCodeQuery = closure_131_0(closure_131_2[8]).httpGetWithCountryCodeQuery;
+              closure_131_0(closure_131_2[8]);
+              c6 = 3;
+              c7 = 1;
+              obj7 = { with_application: flag, with_subscription_plan: flag2, with_gift_subscription_agreement: flag3 };
+              const obj8 = { value: httpGetWithCountryCodeQuery(request), done: false };
+              return obj8;
+            }
+          } else if (2 === c6) {
+            c5 = 0;
+            let closure_5 = closure_4;
+            const obj9 = { resolved: false, gift_code };
+            const obj3 = closure_131_1(closure_131_2[9]);
+            obj3.track(closure_131_8.GIFT_CODE_RESOLVED, obj9);
             const self = this;
             const self2 = this;
-            const tmp17 = new closure_132_1(closure_132_2[10])(closure_4);
+            const tmp17 = new closure_131_1(closure_131_2[10])(closure_5);
             throw tmp17;
           } else if (arg0 === 1) {
-            c8 = 3;
+            c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c6 = 0;
-            c8 = 3;
+            c5 = 0;
+            c7 = 3;
             return { value, done: true };
           } else {
             body = value.body;
-            const obj11 = { resolved: true, gift_code: body.code, gift_code_max_uses: body.max_uses, sku_id: body.store_listing.sku.id, sku_type: body.store_listing.sku.type, application_id: body.store_listing.sku.application_id, store_title: body.store_listing.sku.name };
-            const obj9 = closure_132_1(closure_132_2[9]);
-            obj9.track(closure_132_8.GIFT_CODE_RESOLVED, obj11, { flush: true });
-            c6 = 0;
-            c8 = 3;
+            const obj12 = { resolved: true, gift_code: body.code, gift_code_max_uses: body.max_uses, sku_id: body.store_listing.sku.id, sku_type: body.store_listing.sku.type, application_id: body.store_listing.sku.application_id, store_title: body.store_listing.sku.name };
+            const obj10 = closure_131_1(closure_131_2[9]);
+            obj10.track(closure_131_8.GIFT_CODE_RESOLVED, obj12, { flush: true });
+            c5 = 0;
+            c7 = 3;
             return { value: body, done: true };
           }
-        } catch (tmp20) {
-          closure_5 = tmp20;
-          if (0 === c6) {
-            c8 = 3;
-            throw tmp20;
+        } catch (tmp19) {
+          closure_4 = tmp19;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp19;
           } else {
-            c7 = 2;
+            c6 = 2;
           }
         }
       }
@@ -212,16 +213,16 @@ const items3 = [
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const ArrayResult = Array(4);
 const fillResult = ArrayResult.fill(undefined);
-let mapped = fillResult.map(f91363);
+let mapped = fillResult.map(f92551);
 const items4 = [mapped.join("-?"), , , ];
 const ArrayResult1 = Array(6);
 const fillResult1 = ArrayResult1.fill(undefined);
-const mapped1 = fillResult1.map(f91363);
+const mapped1 = fillResult1.map(f92551);
 items4[1] = mapped1.join("-?");
 let c0 = 5;
 const ArrayResult2 = Array(3);
 const fillResult2 = ArrayResult2.fill(undefined);
-const mapped2 = fillResult2.map(f91363);
+const mapped2 = fillResult2.map(f92551);
 items4[2] = mapped2.join("-?");
 items4[3] = "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}";
 const regExp2 = new RegExp("^(WUMP-?)?(" + items4.join("|") + ")$");
@@ -614,7 +615,7 @@ export function getBodyText(arg0) {
   } else if (constants3.SUCCESS === step) {
     let otherwiseResult;
     if (null != subscriptionPlan) {
-      const str = subscriptionPlan(6725);
+      const str = subscriptionPlan(6788);
       const match = str.match(subscriptionPlan);
       const obj3 = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
       const obj4 = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };

@@ -1,9 +1,9 @@
-// Module ID: 9419
-// Function ID: 9420
+// Module ID: 9488
+// Function ID: 9489
 // Name: IndicatorDotShared
 // Dependencies: [2]
 
-// Module 9419 (IndicatorDotShared)
+// Module 9488 (IndicatorDotShared)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/IndicatorDot/shared/IndicatorDotShared.tsx");

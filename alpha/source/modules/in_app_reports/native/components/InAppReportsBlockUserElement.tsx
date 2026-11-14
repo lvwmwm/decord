@@ -1,19 +1,19 @@
-// Module ID: 12196
-// Function ID: 12197
+// Module ID: 12291
+// Function ID: 12292
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 5092, 5185, 1072, 21, 504, 6288, 6004, 8072, 6852, 12192, 1113, 9090, 2]
+// Dependencies: [19, 5155, 5248, 1072, 21, 504, 6351, 6067, 8137, 6915, 12287, 1113, 9157, 2]
 // Exports: default
 
-// Module 12196 (InAppReportsBlockUserElement)
+// Module 12291 (InAppReportsBlockUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6004 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6852 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8072 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6915 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

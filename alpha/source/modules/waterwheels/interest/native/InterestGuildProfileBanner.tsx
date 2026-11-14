@@ -1,22 +1,22 @@
-// Module ID: 20191
-// Function ID: 20192
+// Module ID: 19016
+// Function ID: 19017
 // Name: InterestGuildProfileBanner
-// Dependencies: [19, 17, 5114, 1072, 21, 5243, 1411, 8547, 1493, 504, 5106, 10590, 5957, 2]
+// Dependencies: [19, 17, 5177, 1072, 21, 5306, 1414, 8614, 1496, 504, 5169, 10659, 6020, 2]
 // Exports: default
 
-// Module 20191 (InterestGuildProfileBanner)
+// Module 19016 (InterestGuildProfileBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5106 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import VideoBackground from "VideoBackground" /* 8547 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 10590 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import VideoBackground from "VideoBackground" /* 8614 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 10659 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import createStyles from "createStyles" /* 5243 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 function InterestGuildProfileSolidBanner(profile) {

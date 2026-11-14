@@ -1,29 +1,29 @@
-// Module ID: 18908
-// Function ID: 18909
+// Module ID: 19062
+// Function ID: 19063
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 5114, 6893, 18909, 18906, 1652, 551, 5491, 5250, 12, 1242, 1113, 7781, 18613, 5839, 575, 5158, 10507, 1259, 6854, 6179, 9082, 1377, 1627, 5505, 18910, 18911, 9082, 17584, 5535, 1705, 2]
+// Dependencies: [5, 19, 17, 5177, 6956, 19063, 19060, 1655, 551, 5554, 5313, 12, 1242, 1113, 7847, 18742, 5902, 575, 5221, 10576, 1263, 6917, 6242, 9149, 1380, 1630, 5568, 19064, 19065, 9149, 17702, 5598, 1708, 2]
 // Exports: default
 
-// Module 18908 (useGuildsBarGesture)
+// Module 19062 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import react_native2 from "react-native" /* 1259 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import shared from "shared" /* 5250 */;
-import HapticUtils from "HapticUtils" /* 5491 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5505 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5535 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6893 */;
-import FastList from "FastList" /* 7781 */;
-import ContextMenuState from "ContextMenuState" /* 9082 */;
+import react_native2 from "react-native" /* 1263 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import shared from "shared" /* 5313 */;
+import HapticUtils from "HapticUtils" /* 5554 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6956 */;
+import FastList from "FastList" /* 7847 */;
+import ContextMenuState from "ContextMenuState" /* 9149 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18909 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18906 */;
-import "module_1652";
-import module_1652_mod from "module_1652" /* 1652 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 19063 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 19060 */;
+import "module_1655";
+import module_1655_mod from "module_1655" /* 1655 */;
 import debounce from "debounce" /* 551 */;
 import module_12_mod from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ const SortedGuildStore = SortedGuildStore2;
 let _undefined, closure_1, closure_2, gesture, importDefault, set, set2;
 
 let c10;
-let module_1652;
+let module_1655;
 let unpackModuleId;
 function getDropIndex(dragNode, dragNode2, overState) {
   let tmp = dragNode2;
@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "delete", positionPercentage: false };
+    sectionItemFromPosition = { item: "description", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;
@@ -285,7 +285,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
             if (null != element) {
               tmp7 = element;
             }
-          } else if (tmp10(7781).FastListItemTypes.ITEM === type) {
+          } else if (tmp10(7847).FastListItemTypes.ITEM === type) {
             if (element.type !== GuildsNodeType.ROOT) {
               let tmp13 = element;
               if (element.type !== GuildsNodeType.FOLDER) {
@@ -309,8 +309,8 @@ const Dimensions = react_native.Dimensions;
 const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 ({ FastListRenderSections: c10, useGuildWrapperSize: unpackModuleId } = GuildsBarConstants);
 let c12 = 160;
-let obj = { pan: module_1652.makeMutable(-1), itemMeasurements: module_1652.makeMutable([]), activeIndex: module_1652.makeMutable(-1) };
-module_1652 = module_1652_mod;
+let obj = { pan: module_1655.makeMutable(-1), itemMeasurements: module_1655.makeMutable([]), activeIndex: module_1655.makeMutable(-1) };
+module_1655 = module_1655_mod;
 let closure_15 = debounce(HapticUtils.triggerHapticFeedback, 16);
 let closure_16 = debounce((intl) => {
   const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
@@ -702,7 +702,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "Array", overSpecs: "flexDirection" });
+    setStateShallow({ dragSpecs: "disabled", overSpecs: "isArray" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };
@@ -904,7 +904,7 @@ export default function useGuildsBarGesture() {
         id1 = node.id;
       }
       if (id !== id1) {
-        const ContextMenuStore = tmp66(9082).ContextMenuStore;
+        const ContextMenuStore = tmp66(9149).ContextMenuStore;
         if (null != ContextMenuStore.getState().menu) {
           const tmp66Result = ContextMenuState;
           tmp66Result.hideContextMenu();
@@ -1181,7 +1181,7 @@ export default function useGuildsBarGesture() {
     items[3] = dragRegion;
     const onTouchesDown = Gesture2.LongPress().onTouchesDown;
     Gesture2.LongPress();
-    items[4] = _mod1705.scheduleOnRN;
+    items[4] = _mod1708.scheduleOnRN;
     items[5] = callback1;
     [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10] = items;
     function useGuildsBarGestureTsx2(changedTouches, fail) {
@@ -1227,7 +1227,7 @@ export default function useGuildsBarGesture() {
     const items4 = [closure_26, tmp4, , ];
     const onStart = onTouchesDownResult.onTouchesMove(useGuildsBarGestureTsx3).onStart;
     onTouchesDownResult.onTouchesMove(useGuildsBarGestureTsx3);
-    items4[2] = _mod1705.scheduleOnRN;
+    items4[2] = _mod1708.scheduleOnRN;
     items4[3] = callback2;
     [tmp14, tmp15, tmp16, tmp17] = items4;
     function useGuildsBarGestureTsx4(arg0) {
@@ -1245,7 +1245,7 @@ export default function useGuildsBarGesture() {
     const items6 = [closure_27, tmp4, , ];
     const onEnd = onStart(useGuildsBarGestureTsx4).onEnd;
     onStart(useGuildsBarGestureTsx4);
-    items6[2] = _mod1705.scheduleOnRN;
+    items6[2] = _mod1708.scheduleOnRN;
     items6[3] = callback;
     [tmp20, tmp21, tmp22, tmp23] = items6;
     function useGuildsBarGestureTsx5() {
@@ -1260,7 +1260,7 @@ export default function useGuildsBarGesture() {
     const items8 = [closure_28, tmp4, , ];
     const onTouchesCancelled = onEnd(useGuildsBarGestureTsx5).onTouchesCancelled;
     onEnd(useGuildsBarGestureTsx5);
-    items8[2] = _mod1705.scheduleOnRN;
+    items8[2] = _mod1708.scheduleOnRN;
     items8[3] = callback;
     [tmp25, tmp26, tmp27, tmp28] = items8;
     function useGuildsBarGestureTsx6() {
@@ -1285,7 +1285,7 @@ export default function useGuildsBarGesture() {
     let result1 = result.shouldCancelWhenOutside(false);
     const items10 = [closure_29, tmp4, dragDropInProgress, 10, , , ];
     const onTouchesMove = result1.onTouchesMove;
-    items10[4] = _mod1705.scheduleOnRN;
+    items10[4] = _mod1708.scheduleOnRN;
     items10[5] = callback3;
     items10[6] = callback4;
     [tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39] = items10;
@@ -1334,7 +1334,7 @@ export default function useGuildsBarGesture() {
     const items12 = [closure_30, tmp4, listInsets, c12, windowSize, , , ];
     const onUpdate = onTouchesMove(useGuildsBarGestureTsx7).onUpdate;
     onTouchesMove(useGuildsBarGestureTsx7);
-    items12[5] = _mod1705.scheduleOnRN;
+    items12[5] = _mod1708.scheduleOnRN;
     items12[6] = callback4;
     items12[7] = callback3;
     let c3;
@@ -1378,7 +1378,7 @@ export default function useGuildsBarGesture() {
     const items14 = [closure_31, tmp4, , ];
     const onEnd2 = onUpdate(useGuildsBarGestureTsx8).onEnd;
     onUpdate(useGuildsBarGestureTsx8);
-    items14[2] = _mod1705.scheduleOnRN;
+    items14[2] = _mod1708.scheduleOnRN;
     items14[3] = callback;
     let c2;
     [tmp50, tmp51, tmp52, tmp53] = items14;
@@ -1399,7 +1399,7 @@ export default function useGuildsBarGesture() {
     const items16 = [closure_32, , ];
     const onTouchesCancelled2 = onEnd2(useGuildsBarGestureTsx9).onTouchesCancelled;
     onEnd2(useGuildsBarGestureTsx9);
-    items16[1] = _mod1705.scheduleOnRN;
+    items16[1] = _mod1708.scheduleOnRN;
     items16[2] = callback;
     let c0;
     let c1;

@@ -377,7 +377,7 @@ export function makeOfflineTransport(arg0) {
         if (closure_1 === undefined) {
           flag = false;
         }
-        return "flexDirection";
+        return "Path";
       });
       return obj(...arguments);
     };

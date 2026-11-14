@@ -1,20 +1,20 @@
-// Module ID: 15010
-// Function ID: 15011
+// Module ID: 15124
+// Function ID: 15125
 // Name: TabsGradient
-// Dependencies: [19, 1072, 21, 1652, 5830, 5243, 5876, 2]
+// Dependencies: [19, 1072, 21, 1655, 5893, 5306, 5939, 2]
 // Exports: default
 
-// Module 15010 (TabsGradient)
+// Module 15124 (TabsGradient)
 import Constants from "Constants" /* 1072 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import spring_spring from "spring/spring" /* 5876 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import spring_spring from "spring/spring" /* 5939 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-const module_1652 = _mod1652;
+const module_1655 = _mod1655;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,7 +24,7 @@ function useGradientAnimatedStyle(tmpResult) {
   let tmp3;
   let tmp4;
   let tmp5;
-  let tmp = _mod1652;
+  let tmp = _mod1655;
   const items = [closure_10, , , ];
   const useAnimatedStyle = tmp.useAnimatedStyle;
   items[1] = spring_spring.withSpring;
@@ -53,7 +53,7 @@ function useGradientAnimatedStyle(tmpResult) {
 }
 const HorizontalGradient = Constants.HorizontalGradient;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const LinearGradient = module_1652.createAnimatedComponent(LinearGradientDefault);
+const LinearGradient = module_1655.createAnimatedComponent(LinearGradientDefault);
 let closure_8 = { mass: 1, damping: 30, stiffness: 250 };
 let closure_9 = createStyles.createStyles({ gradient: { width: 50, position: "absolute", top: 0, bottom: 0, zIndex: 100 }, left: { left: 0 }, right: { right: 0 } });
 let closure_10 = { code: "(function TabsGradientNativeTsx1(){let[withSpring,visible,SPRING_CONFIG]=this.__closure;return{opacity:withSpring(visible.get()?1:0,SPRING_CONFIG)};})" };
@@ -90,7 +90,7 @@ export default function TabsGradient(arg0) {
   let c0;
   let c1;
   [tmp3, tmp4, tmp5] = items;
-  const obj = _mod1652;
+  const obj = _mod1655;
   class TabsGradientNativeTsx2 {
     constructor() {
       value = closure_0.get();
@@ -116,7 +116,7 @@ export default function TabsGradient(arg0) {
   c1 = undefined;
   let c2;
   [tmp7, tmp8, tmp9, tmp10] = items2;
-  const tmpResult = _mod1652;
+  const tmpResult = _mod1655;
   class TabsGradientNativeTsx3 {
     constructor() {
       const tmp = _undefined.get() > 0 && _undefined2.get() > c2;
@@ -134,7 +134,7 @@ export default function TabsGradient(arg0) {
   [tmp13, tmp14, tmp15, tmp16] = items4;
   const tmp12 = useGradientAnimatedStyle(tmpResult.useDerivedValue(TabsGradientNativeTsx3));
   const tmp11 = useGradientAnimatedStyle;
-  const tmpResult2 = _mod1652;
+  const tmpResult2 = _mod1655;
   class TabsGradientNativeTsx4 {
     constructor() {
       const value = _undefined.get();

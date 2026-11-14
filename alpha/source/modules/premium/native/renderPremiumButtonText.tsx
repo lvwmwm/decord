@@ -1,20 +1,20 @@
-// Module ID: 15342
-// Function ID: 15343
+// Module ID: 15456
+// Function ID: 15457
 // Name: renderPremiumButtonText
-// Dependencies: [19, 17, 1387, 21, 5243, 5240, 575, 2171, 1113, 1187, 2]
+// Dependencies: [19, 17, 1390, 21, 5306, 5303, 575, 2174, 1113, 1187, 2]
 // Exports: default
 
-// Module 15342 (renderPremiumButtonText)
+// Module 15456 (renderPremiumButtonText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
-import ColorUtils_mod from "ColorUtils" /* 5240 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import ColorUtils_mod from "ColorUtils" /* 5303 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;
@@ -31,11 +31,12 @@ function PremiumText(basePlanId) {
   let isGift;
   let items;
   let obj9;
+  let priceString;
   let product;
   let style;
   let text;
   let title;
-  ({ style, isCurrentPlan, isGift, product, text } = basePlanId);
+  ({ style, isCurrentPlan, isGift, product, priceString, text } = basePlanId);
   basePlanId = basePlanId.basePlanId;
   const tmp = closure_9();
   const obj = PremiumUtilsDefault;
@@ -51,9 +52,12 @@ function PremiumText(basePlanId) {
   }
   if (text == null) {
     let formatToPlainStringResult;
-    let priceString;
-    if (product != null) {
-      priceString = product.priceString;
+    if (priceString == null) {
+      let priceString1;
+      if (product != null) {
+        priceString1 = product.priceString;
+      }
+      priceString = priceString1;
     }
     if (priceString == null) {
       priceString = hasOwnProperty;

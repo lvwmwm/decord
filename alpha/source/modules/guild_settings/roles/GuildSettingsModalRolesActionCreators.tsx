@@ -1,9 +1,9 @@
-// Module ID: 20408
-// Function ID: 20409
+// Module ID: 20563
+// Function ID: 20564
 // Name: GuildSettingsModalRolesActionCreators
-// Dependencies: [5, 1072, 1282, 8062, 572, 2]
+// Dependencies: [5, 1072, 1285, 8127, 572, 2]
 
-// Module 20408 (GuildSettingsModalRolesActionCreators)
+// Module 20563 (GuildSettingsModalRolesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -64,7 +64,7 @@ let obj = function _updateGuildRole() {
             value = undefined;
             c4 = 1;
             hoist = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

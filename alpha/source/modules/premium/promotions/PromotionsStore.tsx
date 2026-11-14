@@ -1,29 +1,29 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 9623
+// Function ID: 9624
 // Name: PromotionsStore
-// Dependencies: [2186, 1231, 9557, 1385, 1386, 9558, 9602, 2158, 9603, 12, 504, 9559, 9560, 9611, 572, 2]
+// Dependencies: [2189, 1231, 9624, 1388, 1389, 9625, 9669, 2161, 9670, 12, 504, 9626, 9627, 9678, 572, 2]
 
-// Module 9556 (PromotionsStore)
+// Module 9623 (PromotionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9559 */;
-import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9603 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9611 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9626 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9670 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9678 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9557 */;
-import UserStore from "UserStore" /* 1385 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1386 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9558 */;
-import FunctionUtils from "FunctionUtils" /* 2158 */;
+import PromotionRecord from "PromotionRecord" /* 9624 */;
+import UserStore from "UserStore" /* 1388 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1389 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9625 */;
+import FunctionUtils from "FunctionUtils" /* 2161 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let closure_14, hasBogoReward;
 
 let tmp;
-const MarketingSurfaceType = tmp(9560);
+const MarketingSurfaceType = tmp(9627);
 function createEmptyPromotionsByType() {
   return { [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
 }

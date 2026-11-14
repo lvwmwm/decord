@@ -1041,7 +1041,7 @@ let fn = (fn) => {
   function m(next) {
     let fn2;
     let fn3;
-    const f138454 = function(arg0) {
+    const f140036 = function(arg0) {
       let obj;
       closure_1 = !closure_1;
       if (closure_1) {
@@ -1085,7 +1085,7 @@ let fn = (fn) => {
     next = "next";
     next = undefined;
     if (next.next) {
-      next = f138454;
+      next = f140036;
     }
     let obj = { next, throw: fn2, return: fn3 };
     fn2 = (arg0) => {
@@ -1093,13 +1093,13 @@ let fn = (fn) => {
     };
     const _throw = "throw";
     if (next.throw) {
-      fn2 = f138454;
+      fn2 = f140036;
     }
     const _return = "return";
     let c1;
     fn3 = undefined;
     if (next.return) {
-      fn3 = f138454;
+      fn3 = f140036;
     }
     obj[Symbol.iterator] = function() {
       return this;
@@ -1108,7 +1108,7 @@ let fn = (fn) => {
   }
   function j(arg0) {
     let tmp8;
-    const f138455 = (arg0) => {
+    const f140037 = (arg0) => {
       let iter = arg0;
       const promise = new Promise((arg0, arg1) => {
         iter = closure_3_0[return_str](iter);
@@ -1177,11 +1177,11 @@ let fn = (fn) => {
             throw _TypeError21;
           }
           const next_str = "next";
-          callResult = { next: tmp8, throw: callResult1.throw && f138455, return: callResult1.return && f138455 };
+          callResult = { next: tmp8, throw: callResult1.throw && f140037, return: callResult1.return && f140037 };
           const throw_str = "throw";
           const return_str = "return";
           const _Symbol3 = Symbol;
-          tmp8 = callResult1.next && f138455;
+          tmp8 = callResult1.next && f140037;
           callResult[Symbol.asyncIterator] = function() {
             return this;
           };
@@ -1598,10 +1598,10 @@ if (typeof globalThis.define === "function") {
         }
       }
       closure_0 = tmp2;
-      const f124378 = (arg0, arg1) => {
+      const f125780 = (arg0, arg1) => {
         let tmp2Result = arg1;
         const tmp = closure_0;
-        if (f124378) {
+        if (f125780) {
           tmp2Result = tmp2(arg0, arg1);
         }
         tmp[arg0] = tmp2Result;
@@ -1611,7 +1611,7 @@ if (typeof globalThis.define === "function") {
       tmp((arg0, arg1) => {
         let tmp2Result = arg1;
         const tmp = closure_0;
-        if (f124378) {
+        if (f125780) {
           tmp2Result = tmp2(arg0, arg1);
         }
         tmp[arg0] = tmp2Result;
@@ -1634,10 +1634,10 @@ if (typeof module === "object") {
       }
     }
     _self1 = tmp;
-    let f124378 = (arg0, arg1) => {
+    let f125780 = (arg0, arg1) => {
       let tmp2Result = arg1;
       const tmp = closure_0;
-      if (f124378) {
+      if (f125780) {
         tmp2Result = tmp2(arg0, arg1);
       }
       tmp[arg0] = tmp2Result;
@@ -1647,7 +1647,7 @@ if (typeof module === "object") {
     fn((arg0, arg1) => {
       let tmp2Result = arg1;
       const tmp = closure_0;
-      if (f124378) {
+      if (f125780) {
         tmp2Result = tmp2(arg0, arg1);
       }
       tmp[arg0] = tmp2Result;
@@ -1660,7 +1660,7 @@ _self1 = tmp;
 fn((arg0, arg1) => {
   let tmp2Result = arg1;
   const tmp = closure_0;
-  if (f124378) {
+  if (f125780) {
     tmp2Result = tmp2(arg0, arg1);
   }
   tmp[arg0] = tmp2Result;

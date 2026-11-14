@@ -1,12 +1,12 @@
-// Module ID: 12054
-// Function ID: 12055
+// Module ID: 12103
+// Function ID: 12104
 // Name: useGameCoverLayout
-// Dependencies: [7929, 12042, 2]
+// Dependencies: [7994, 12104, 2]
 // Exports: default
 
-// Module 12054 (useGameCoverLayout)
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7929 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12042 */;
+// Module 12103 (useGameCoverLayout)
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12104 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/native/useGameCoverLayout.tsx");
@@ -23,6 +23,6 @@ export default function useGameCoverLayout() {
   }
   const sum = num + UserProfileGameWidgetConstants.GAME_COVER_GRID_GAP;
   const maxResult = max(3, ceil(sum / (120 + UserProfileGameWidgetConstants.GAME_COVER_GRID_GAP)));
-  const obj = { ref, onLayout, isMeasured: num > 0, columns: maxResult, coverWidth: (num - UserProfileGameWidgetConstants.GAME_COVER_GRID_GAP * (maxResult - 1)) / maxResult };
+  const obj = { ref, onLayout, width: num, isMeasured: num > 0, columns: maxResult, coverWidth: (num - UserProfileGameWidgetConstants.GAME_COVER_GRID_GAP * (maxResult - 1)) / maxResult };
   return obj;
 };

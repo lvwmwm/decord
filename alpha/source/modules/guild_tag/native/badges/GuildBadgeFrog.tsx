@@ -1,12 +1,12 @@
-// Module ID: 16259
-// Function ID: 16260
+// Module ID: 16381
+// Function ID: 16382
 // Name: GuildBadgeFrog
-// Dependencies: [19, 21, 16235, 8197, 2]
+// Dependencies: [19, 21, 16357, 8263, 2]
 // Exports: GuildBadgeFrog
 
-// Module 16259 (GuildBadgeFrog)
-import inlineStyles from "inlineStyles" /* 8197 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16235 */;
+// Module 16381 (GuildBadgeFrog)
+import inlineStyles from "inlineStyles" /* 8263 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16357 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,24 +1,24 @@
-// Module ID: 7889
-// Function ID: 7890
+// Module ID: 7955
+// Function ID: 7956
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 1652, 5243, 575, 5875, 5257, 5876, 5877, 5839, 7669, 7890, 5491, 5492, 2]
+// Dependencies: [32, 19, 17, 21, 1655, 5306, 575, 5938, 5320, 5939, 5940, 5902, 7735, 7956, 5554, 5555, 2]
 // Exports: FormSwitch
 
-// Module 7889 (FormSwitch)
+// Module 7955 (FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import HapticUtils from "HapticUtils" /* 5491 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5492 */;
-import IconDefault from "Icon" /* 5875 */;
-import spring_spring from "spring/spring" /* 5876 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import HapticUtils from "HapticUtils" /* 5554 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
+import IconDefault from "Icon" /* 5938 */;
+import spring_spring from "spring/spring" /* 5939 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const module_1652_mod = _mod1652;
+const module_1655_mod = _mod1655;
 let set;
 
 let obj2;
@@ -26,11 +26,11 @@ let obj3;
 let size;
 let size1;
 let tmp3;
-const springPresets = tmp3(5877);
+const springPresets = tmp3(5940);
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
-let module_1652 = module_1652_mod;
-let closure_6 = module_1652.createAnimatedComponent(Pressable);
+let module_1655 = module_1655_mod;
+let closure_6 = module_1655.createAnimatedComponent(Pressable);
 let createStyles = createStyles_mod;
 let obj = { switch: size, unselectedIcon: obj2, selectedIcon: obj3, knob: size1 };
 size = { width: nativeDefault.modules.mobile.CONTROL_SWITCH_WIDTH, height: nativeDefault.modules.mobile.CONTROL_SWITCH_HEIGHT, padding: nativeDefault.space.PX_4 - 1, flexGrow: 0, flexShrink: 0, borderRadius: nativeDefault.radii.lg, borderWidth: 1, backgroundColor: nativeDefault.colors.SWITCH_BACKGROUND_DEFAULT, borderColor: nativeDefault.colors.SWITCH_BORDER_DEFAULT };
@@ -39,8 +39,8 @@ obj2 = { tintColor: nativeDefault.colors.SWITCH_THUMB_ICON_DEFAULT };
 obj3 = { tintColor: nativeDefault.colors.SWITCH_THUMB_ICON_ACTIVE };
 size1 = { height: nativeDefault.modules.mobile.CONTROL_SWITCH_KNOB_SIZE, width: nativeDefault.modules.mobile.CONTROL_SWITCH_KNOB_SIZE, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.SWITCH_THUMB_BACKGROUND_DEFAULT };
 let closure_7 = createStyles(obj);
-module_1652 = module_1652_mod;
-const Icon = module_1652.createAnimatedComponent(IconDefault);
+module_1655 = module_1655_mod;
+const Icon = module_1655.createAnimatedComponent(IconDefault);
 let closure_9 = { code: "(function FormSwitchNativeTsx1(){let[progress,interpolateColor,trackColor,trackSelectedColor,trackBorderColor,trackBorderSelectedColor]=this.__closure;const t=progress.get();return{backgroundColor:interpolateColor(t,[0,1],[trackColor,trackSelectedColor]),borderColor:interpolateColor(t,[0,1],[trackBorderColor,trackBorderSelectedColor])};})" };
 let closure_10 = { code: "(function FormSwitchNativeTsx2(){let[progress,interpolate,knobCheckedLeft,interpolateColor,knobBackgroundColor,knobSelectedBackgroundColor]=this.__closure;const t=progress.get();return{left:interpolate(t,[0,1],[0,knobCheckedLeft]),backgroundColor:interpolateColor(t,[0,1],[knobBackgroundColor,knobSelectedBackgroundColor])};})" };
 let closure_11 = { code: "(function FormSwitchNativeTsx3(){let[progress,interpolate,off,on,useReducedMotion]=this.__closure;const t=progress.get();const opacity=interpolate(t,[0,1],[off,on]);const scale=useReducedMotion?1:interpolate(t,[0,1],[off,on]);return{opacity:opacity,transform:[{scale:scale}]};})" };
@@ -84,7 +84,7 @@ export function FormSwitch(onValueChange) {
   const switchIconsEnabled = context.switchIconsEnabled;
   const tmp5 = _slicedToArray(sharedValue.useState(value), 2);
   [tmp6, _slicedToArray] = tmp5;
-  const tmp7 = require("module_1652");
+  const tmp7 = require("module_1655");
   let num = 0;
   const useSharedValue = tmp7.useSharedValue;
   if (value) {
@@ -172,9 +172,9 @@ export function FormSwitch(onValueChange) {
     let tmp6;
     let tmp7;
     let items = [closure_11, sharedValue, , , , ];
-    const useAnimatedStyle = _mod1652.useAnimatedStyle;
-    _mod1652;
-    items[2] = _mod1652.interpolate;
+    const useAnimatedStyle = _mod1655.useAnimatedStyle;
+    _mod1655;
+    items[2] = _mod1655.interpolate;
     items[3] = arg1;
     items[4] = arg0;
     items[5] = enabled;

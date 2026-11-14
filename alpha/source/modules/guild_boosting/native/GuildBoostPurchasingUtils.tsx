@@ -1,17 +1,17 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 10745
+// Function ID: 10746
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2176, 1072, 1387, 6206, 1113, 1252, 6704, 9911, 9544, 8514, 9901, 2171, 2]
+// Dependencies: [5, 2179, 1072, 1390, 6269, 1113, 1256, 6767, 9978, 9611, 8580, 9968, 2174, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 10676 (GuildBoostPurchasingUtils)
+// Module 10745 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let allowYearlyBundles, analyticsLocation, analyticsLocations, guildId, onBack, onPaymentDismiss, onPaymentSuccess;
@@ -89,7 +89,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               allowYearlyBundles = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else {
             if (1 === onPaymentDismiss) {

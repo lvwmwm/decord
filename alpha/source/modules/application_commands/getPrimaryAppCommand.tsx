@@ -1,18 +1,18 @@
-// Module ID: 12666
-// Function ID: 12667
+// Module ID: 12762
+// Function ID: 12763
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 5092, 11339, 2116, 11345, 11343, 5890, 2]
+// Dependencies: [5, 19, 5155, 11406, 2119, 11412, 11410, 5953, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
-// Module 12666 (getPrimaryAppCommand)
-import Server from "Server" /* 2116 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5890 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 11343 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 11345 */;
+// Module 12762 (getPrimaryAppCommand)
+import Server from "Server" /* 2119 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5953 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 11410 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 11412 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 11339 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 11406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

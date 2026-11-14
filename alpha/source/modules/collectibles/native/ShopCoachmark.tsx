@@ -1,17 +1,17 @@
-// Module ID: 19442
-// Function ID: 19443
+// Module ID: 19634
+// Function ID: 19635
 // Name: ShopCoachmark
-// Dependencies: [19, 5089, 21, 5243, 1187, 575, 1113, 9500, 2]
+// Dependencies: [19, 5152, 21, 5306, 1187, 575, 1113, 9567, 2]
 // Exports: default
 
-// Module 19442 (ShopCoachmark)
+// Module 19634 (ShopCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5089 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 function CoachmarkImg(arg0) {

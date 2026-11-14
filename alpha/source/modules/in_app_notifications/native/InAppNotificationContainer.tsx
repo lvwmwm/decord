@@ -1,33 +1,33 @@
-// Module ID: 10971
-// Function ID: 10972
+// Module ID: 11040
+// Function ID: 11041
 // Name: InAppNotificationContainer
-// Dependencies: [32, 19, 17, 10972, 10957, 1072, 21, 1652, 5243, 10973, 11027, 11030, 11031, 11075, 11076, 11837, 11878, 11881, 11882, 1357, 11889, 10956, 504, 5836, 5485, 1705, 1252, 5535, 5876, 1187, 7351, 11008, 2]
+// Dependencies: [32, 19, 17, 11041, 11026, 1072, 21, 1655, 5306, 11042, 11094, 11097, 11098, 11142, 11143, 11903, 11944, 11947, 11948, 1360, 11955, 11025, 504, 5899, 5548, 1708, 1256, 5598, 5939, 1187, 7415, 11077, 2]
 // Exports: default
 
-// Module 10971 (InAppNotificationContainer)
+// Module 11040 (InAppNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5485 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10956 */;
-import MessageNotificationDefault from "MessageNotification" /* 10973 */;
-import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11027 */;
-import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11030 */;
-import BugReporterNotification from "BugReporterNotification" /* 11031 */;
-import AlertNotificationDefault from "AlertNotification" /* 11075 */;
-import ReactionNotificationDefault from "ReactionNotification" /* 11076 */;
-import ReminderNotificationDefault from "ReminderNotification" /* 11837 */;
-import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11878 */;
-import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11881 */;
-import StageSpeakInviteNotificationDefault from "StageSpeakInviteNotification" /* 11882 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import timing_timing from "timing/timing" /* 5548 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;
+import MessageNotificationDefault from "MessageNotification" /* 11042 */;
+import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11094 */;
+import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11097 */;
+import BugReporterNotification from "BugReporterNotification" /* 11098 */;
+import AlertNotificationDefault from "AlertNotification" /* 11142 */;
+import ReactionNotificationDefault from "ReactionNotification" /* 11143 */;
+import ReminderNotificationDefault from "ReminderNotification" /* 11903 */;
+import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11944 */;
+import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11947 */;
+import StageSpeakInviteNotificationDefault from "StageSpeakInviteNotification" /* 11948 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10972 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10957 */;
+import NativeMenuStore from "NativeMenuStore" /* 11041 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11026 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -77,8 +77,8 @@ const StyleSheet = react_native.StyleSheet;
 ({ DEFAULT_ANIMATION_TIMING: metroImportDefault, extrapolateConfig: metroImportAll, MIN_SWIPE_DISTANCE: c9, MIN_SWIPE_VELOCITY: c10, PAN_INPUT_RANGE: unpackModuleId, NOTIFICATION_CONTAINER_MARGIN } = InAppNotificationConstants);
 ({ InAppNotificationTypes: closure_12, AnalyticEvents: map1 } = Constants);
 const jsx = Fragment.jsx;
-let obj = { duration: 200, easing: Easing.in(_mod1652.Easing.ease) };
-Easing = _mod1652.Easing;
+let obj = { duration: 200, easing: Easing.in(_mod1655.Easing.ease) };
+Easing = _mod1655.Easing;
 let obj2 = { safeAreaContainer: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8, top: 0, bottom: 0 }, animatedContainer: { marginLeft: NOTIFICATION_CONTAINER_MARGIN, marginRight: NOTIFICATION_CONTAINER_MARGIN } };
 let closure_16 = createStyles.createStyles(obj2);
 let closure_18 = { code: "(function InAppNotificationContainerTsx1(){let[scheduleOnRN,setInitialized]=this.__closure;return scheduleOnRN(setInitialized,true);})" };
@@ -194,7 +194,7 @@ export default function InAppNotificationContainer(notification) {
     set = sharedValue3.set;
     const withTiming = timing_timing.withTiming;
     timing_timing;
-    items[1] = _mod1705.scheduleOnRN;
+    items[1] = _mod1708.scheduleOnRN;
     items[2] = closure_9;
     let c0;
     let c1;

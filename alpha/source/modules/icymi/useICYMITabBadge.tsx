@@ -1,12 +1,12 @@
-// Module ID: 19033
-// Function ID: 19034
+// Module ID: 19169
+// Function ID: 19170
 // Name: useICYMITabBadge
-// Dependencies: [10136, 504, 2]
+// Dependencies: [10205, 504, 2]
 // Exports: default, icymiTabBadgeShown
 
-// Module 19033 (useICYMITabBadge)
+// Module 19169 (useICYMITabBadge)
 import get_initialized from "get initialized" /* 504 */;
-import ICYMIStore from "ICYMIStore" /* 10136 */;
+import ICYMIStore from "ICYMIStore" /* 10205 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/useICYMITabBadge.tsx");

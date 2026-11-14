@@ -1,52 +1,55 @@
-// Module ID: 19852
-// Function ID: 19853
+// Module ID: 20008
+// Function ID: 20009
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 6306, 6757, 6008, 6878, 11919, 11917, 19699, 11922, 1072, 5920, 11920, 21, 1652, 5866, 5830, 1187, 5243, 575, 504, 6799, 6745, 7656, 1113, 5873, 11918, 1705, 12692, 6033, 15640, 12694, 12691, 19853, 12701, 19695, 15620, 5485, 5876, 9449, 19854, 5957, 5839, 19856, 10507, 11266, 5314, 7852, 19788, 19832, 19698, 19857, 19858, 8410, 5535, 6120, 19859, 11921, 19860, 19861, 19862, 19863, 19864, 19865, 19875, 2]
+// Dependencies: [32, 19, 17, 6369, 6820, 6071, 6941, 15763, 11985, 11983, 19909, 11988, 1072, 5983, 11986, 21, 1655, 5929, 5893, 1187, 5306, 575, 504, 6862, 6808, 7722, 1113, 5936, 11984, 1708, 12788, 6096, 15754, 12790, 12787, 20009, 12797, 20010, 19905, 15734, 5548, 5939, 9516, 20011, 6020, 5902, 20013, 10576, 11333, 5377, 7918, 11995, 19988, 19908, 20014, 20015, 8476, 5598, 6183, 20016, 11987, 20017, 20018, 20019, 20020, 20021, 20022, 20032, 2]
 
-// Module 19852 (VoicePanelCard)
+// Module 20008 (VoicePanelCard)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import useToken from "useToken" /* 5839 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import CallConstants from "CallConstants" /* 5920 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6745 */;
-import StreamActionCreators from "StreamActionCreators" /* 6799 */;
-import NativeViewDefault from "NativeView" /* 7656 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11917 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11918 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11920 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11922 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19699 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19854 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 19856 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import useToken from "useToken" /* 5902 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import CallConstants from "CallConstants" /* 5983 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
+import StreamActionCreators from "StreamActionCreators" /* 6862 */;
+import NativeViewDefault from "NativeView" /* 7722 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11988 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19909 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 20011 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 20013 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 6306 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
-import SpeakingStore from "SpeakingStore" /* 6878 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+import SoundboardStore from "SoundboardStore" /* 6369 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import SpeakingStore from "SpeakingStore" /* 6941 */;
+import StreamVolumeMovedStore from "StreamVolumeMovedStore" /* 15763 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const module_1652_mod = _mod1652;
+const module_1655_mod = _mod1655;
 let PANEL, currentUserActiveStream, importDefault, set;
 
 let closure_12;
 let closure_14;
 let closure_15;
-let closure_22;
-let closure_23;
+let closure_16;
+let closure_17;
 let closure_24;
+let closure_25;
+let closure_26;
 let map1;
 let obj3;
 let obj4;
@@ -59,10 +62,10 @@ let rect;
 let size;
 let size1;
 let tmp;
-let tmp14;
 let tmp15;
+let tmp16;
 let unpackModuleId;
-const roundToNearestPixelDefault = tmp(10507);
+const roundToNearestPixelDefault = tmp(10576);
 function SelfStreamCard(stream) {
   let intl3;
   let items4;
@@ -76,7 +79,7 @@ function SelfStreamCard(stream) {
   stream = stream.stream;
   const isFocused = stream.isFocused;
   const sharedCoords = stream.sharedCoords;
-  const tmp = closure_30();
+  const tmp = closure_32();
   obj = stream(504);
   const items = [ApplicationStreamingStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -96,11 +99,11 @@ function SelfStreamCard(stream) {
       stopStream(obj.encodeStreamKey(tmp));
     }
   }, items1);
-  const items2 = [closure_31, isFocused, sharedCoords];
+  const items2 = [closure_33, isFocused, sharedCoords];
   let c0;
   let c1;
   [tmp6, tmp7, tmp8] = items2;
-  const obj2 = stream(1652);
+  const obj2 = stream(1655);
   class VoicePanelCardTsx1 {
     constructor() {
       let str;
@@ -126,12 +129,12 @@ function SelfStreamCard(stream) {
   const tmp12 = NativeViewDefault;
   if (isFocused) {
     const obj4 = { style: tmp.blackBackground };
-    tmp13 = closure_22(NativeViewDefault, obj4);
+    tmp13 = closure_24(NativeViewDefault, obj4);
   }
   items4 = [tmp13, , ];
   const obj5 = { style: animatedStyle, variant: str, color: "text-overlay-light", children: stringResult };
   str = "body-sm/semibold";
-  const tmp16 = closure_25;
+  const tmp16 = closure_27;
   if (isFocused) {
     str = "body-lg/semibold";
   }
@@ -143,30 +146,30 @@ function SelfStreamCard(stream) {
   } else {
     stringResult = string(t.gMOwov);
   }
-  items4[1] = closure_22(tmp16, obj5);
+  items4[1] = closure_24(tmp16, obj5);
   let tmp10Result = null;
   if (isFocused) {
     const obj6 = { style: tmp.selfStreamFocusedSubtitle, variant: "body-sm/medium", color: "text-overlay-light", children: string2Result };
-    const Text = tmp2(5866).Text;
+    const Text = tmp2(5929).Text;
     const intl2 = tmp2(1113).intl;
     const string2 = intl2.string;
     const t2 = tmp2(1113).t;
-    const tmp19 = closure_23;
+    const tmp19 = closure_25;
     if (stateFromStores) {
       string2Result = string2(t2.LV1NSN);
     } else {
       string2Result = string2(t2.dKeLGt);
     }
     const obj7 = { children: items5 };
-    items5 = [closure_22(Text, obj6), ];
+    items5 = [closure_24(Text, obj6), ];
     const obj8 = { size: "lg", variant: "primary-overlay", onPress: callback, text: intl3.string(stream(1113).t.CpkXwZ) };
-    const Button = tmp2(5873).Button;
+    const Button = tmp2(5936).Button;
     intl3 = tmp2(1113).intl;
-    items5[1] = closure_22(Button, obj8);
+    items5[1] = closure_24(Button, obj8);
     tmp10Result = tmp10(tmp19, obj7);
   }
   items4[2] = tmp10Result;
-  return closure_24(tmp12, obj3);
+  return closure_26(tmp12, obj3);
 }
 function useCardPanelMode() {
   let isDockEnabled;
@@ -177,12 +180,12 @@ function useCardPanelMode() {
   let tmp5;
   const context = react.useContext(VoicePanelStateContextDefault);
   ({ mode, isDockEnabled } = context);
-  const items = [closure_36, isDockEnabled, mode, authStore2];
+  const items = [closure_38, isDockEnabled, mode, gesture];
   let c0;
   let c1;
   let c2;
   [tmp2, tmp3, tmp4, tmp5] = items;
-  obj = _mod1652;
+  obj = _mod1655;
   class VoicePanelCardTsx4 {
     constructor() {
       tmp = closure_0;
@@ -254,7 +257,7 @@ function SpeakingIndicator(arg0) {
   let tmp = importDefault;
   const focused = react.useContext(VoicePanelStateContextDefault).focused;
   const tmp3 = useCardPanelMode();
-  const tmp4 = closure_30();
+  const tmp4 = closure_32();
   obj = useToken;
   const token = obj.useToken(nativeDefault.modules.mobile.VOICE_TILE_BORDER_RADIUS);
   let obj2 = useToken;
@@ -262,16 +265,16 @@ function SpeakingIndicator(arg0) {
   let obj3 = get_initialized;
   const items = [SoundboardStore];
   const stateFromStores = obj3.useStateFromStores(items, () => SoundboardStore.isUserPlayingSounds(_require));
-  const items1 = [closure_41, tmp3, , , , , , , , ];
-  items1[2] = closure_12;
+  const items1 = [closure_43, tmp3, , , , , , , , ];
+  items1[2] = closure_14;
   items1[3] = focused;
   items1[4] = id;
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
   items1[5] = spring_spring.withSpring;
   items1[6] = computeCardBorderRadiusDefault;
   items1[7] = isSelf;
   items1[8] = token;
-  items1[9] = closure_14;
+  items1[9] = closure_16;
   let c0;
   let c1;
   let c2;
@@ -329,14 +332,14 @@ function SpeakingIndicator(arg0) {
   VoicePanelCardTsx7.__workletHash = 2180139685709;
   VoicePanelCardTsx7.__initData = tmp12;
   const animatedStyle = useAnimatedStyle(VoicePanelCardTsx7);
-  const items3 = [closure_42, tmp3, tmp10, focused, id, , , , , , , , , ];
-  const useAnimatedStyle2 = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const items3 = [closure_44, tmp3, tmp10, focused, id, , , , , , , , , ];
+  const useAnimatedStyle2 = _mod1655.useAnimatedStyle;
+  _mod1655;
   items3[5] = spring_spring.withSpring;
   items3[6] = computeCardBorderRadiusDefault;
   items3[7] = isSelf;
   items3[8] = token;
-  items3[9] = closure_14;
+  items3[9] = closure_16;
   items3[10] = speakingOrPlayingSoundboard;
   items3[11] = roundToNearestPixelDefault;
   items3[12] = 3;
@@ -404,14 +407,14 @@ function SpeakingIndicator(arg0) {
   VoicePanelCardTsx8.__workletHash = 14127200655182;
   VoicePanelCardTsx8.__initData = tmp24;
   const animatedStyle2 = useAnimatedStyle2(VoicePanelCardTsx8);
-  const items5 = [closure_43, tmp3, tmp10, focused, id, , , , , , , ];
-  const useAnimatedStyle3 = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const items5 = [closure_45, tmp3, tmp10, focused, id, , , , , , , ];
+  const useAnimatedStyle3 = _mod1655.useAnimatedStyle;
+  _mod1655;
   items5[5] = spring_spring.withSpring;
   items5[6] = computeCardBorderRadiusDefault;
   items5[7] = isSelf;
   items5[8] = token;
-  items5[9] = closure_14;
+  items5[9] = closure_16;
   items5[10] = speakingOrPlayingSoundboard;
   items5[11] = 3;
   c0 = undefined;
@@ -476,25 +479,25 @@ function SpeakingIndicator(arg0) {
   VoicePanelCardTsx9.__initData = tmp40;
   const animatedStyle3 = useAnimatedStyle3(VoicePanelCardTsx9);
   const obj4 = { style: tmp4.speakingIndicatorWrapper, layout, pointerEvents: "none", children: tmp54(View2, obj5) };
-  const View = module_1652.View;
+  const View = module_1655.View;
   obj5 = { style: items7, layout, children: items9 };
   items7 = [tmp4.speakingIndicatorClip, animatedStyle];
-  View2 = module_1652.View;
+  View2 = module_1655.View;
   const obj6 = { style: items8, layout };
   items8 = [tmp4.speakingIndicatorUnderlay, animatedStyle2];
-  items9 = [closure_22(module_1652.View, obj6), ];
+  items9 = [closure_24(module_1655.View, obj6), ];
   const items10 = [tmp4.speakingIndicatorBar, , ];
   let tmp55 = null;
-  const View3 = module_1652.View;
-  tmp54 = closure_24;
+  const View3 = module_1655.View;
+  tmp54 = closure_26;
   if (stateFromStores) {
     tmp55 = { borderColor: token1 };
     const obj7 = { borderColor: token1 };
   }
   items10[1] = tmp55;
   items10[2] = animatedStyle3;
-  items9[1] = closure_22(View3, { style: items10, layout });
-  return closure_22(View, obj4);
+  items9[1] = closure_24(View3, { style: items10, layout });
+  return closure_24(View, obj4);
 }
 function AnimatedWrapper(arg0) {
   let View;
@@ -521,18 +524,22 @@ function AnimatedWrapper(arg0) {
   let isScrollVisible;
   let items24;
   let layoutPhysics;
+  let longPressProgress;
   let mountedCards;
   let obj6;
   let pipAvoidanceSpecs;
+  let pipCardSize;
   let pipHandoff;
   let safeArea;
   let scrollPosition;
   let sharedVisible;
+  let thawing;
   let tmp100;
   let tmp101;
   let tmp102;
   let tmp103;
   let tmp104;
+  let tmp113;
   let tmp114;
   let tmp115;
   let tmp116;
@@ -581,7 +588,7 @@ function AnimatedWrapper(arg0) {
   let tmp67;
   let tmp68;
   let tmp69;
-  let tmp6Result24;
+  let tmp6Result22;
   let tmp70;
   let tmp71;
   let tmp72;
@@ -632,36 +639,36 @@ function AnimatedWrapper(arg0) {
   let callback1;
   let tmp = layoutPhysics;
   let tmp2 = analyticsLocations;
-  ({ children, coords } = arg0);
-  analyticsLocations = layoutPhysics(analyticsLocations[48])().analyticsLocations;
+  ({ children, coords, longPressProgress } = arg0);
+  analyticsLocations = layoutPhysics(analyticsLocations[50])().analyticsLocations;
   obj = react;
-  const tmp3 = closure_30();
-  const context = react.useContext(layoutPhysics(analyticsLocations[27]));
+  const tmp3 = closure_32();
+  const context = react.useContext(layoutPhysics(analyticsLocations[28]));
   const channelId = context.channelId;
   ({ contentDimensions, controlsSpecs: c4, focused } = context);
   ({ hideControls: c6, isDockEnabled, mountedCards, safeArea, setFocused: c7, showControls: c8, windowDimensions, wrapperDimensions, wrapperOffset, pipHandoff } = context);
   ({ connected, guildId, pipAvoidanceSpecs, scrollPosition } = context);
   const tmp5 = useCardPanelMode();
   let tmp6 = id;
-  const obj2 = id(analyticsLocations[49]);
+  const obj2 = id(analyticsLocations[51]);
   const pIPState = obj2.usePIPState();
-  const tmp8 = layoutPhysics(analyticsLocations[50])(id, channelId, guildId);
-  let obj3 = id(analyticsLocations[50]);
+  const tmp8 = layoutPhysics(analyticsLocations[52])(id, channelId, guildId);
+  let obj3 = id(analyticsLocations[52]);
   let tmp9 = tmp8;
   if (!obj3.isStableParticipantWithUser(tmp8)) {
-    tmp9 = closure_50;
+    tmp9 = closure_52;
   }
   isSelf = tmp9.isSelf;
   id2 = tmp9.user.id;
-  let items = [closure_52, id, pIPState, tmp5, ];
-  const tmp11 = sharedValue1;
-  items[4] = sharedValue1;
+  let items = [closure_54, id, pIPState, tmp5, ];
+  const tmp11 = closure_14;
+  items[4] = closure_14;
   let c0;
   let c1;
   let c2;
   let c3;
   [tmp12, tmp13, tmp14, tmp15, tmp16] = items;
-  const tmp6Result = tmp6(tmp2[15]);
+  const tmp6Result = tmp6(tmp2[16]);
   class VoicePanelCardTsx15 {
     constructor() {
       const tmp = c0 === _undefined.id && _undefined2.get() === _undefined3.PIP;
@@ -673,14 +680,14 @@ function AnimatedWrapper(arg0) {
   VoicePanelCardTsx15.__workletHash = 15256278978202;
   VoicePanelCardTsx15.__initData = tmp12;
   const derivedValue = tmp6Result.useDerivedValue(VoicePanelCardTsx15);
-  let items2 = [closure_53, focused, id, tmp5, tmp11, scrollPosition];
+  let items2 = [closure_55, focused, id, tmp5, tmp11, scrollPosition];
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
   c3 = undefined;
   react = undefined;
   [tmp18, tmp19, tmp20, tmp21, tmp22, tmp23] = items2;
-  const tmp6Result13 = tmp6(tmp2[15]);
+  const tmp6Result12 = tmp6(tmp2[16]);
   class VoicePanelCardTsx16 {
     constructor() {
       let num;
@@ -701,8 +708,8 @@ function AnimatedWrapper(arg0) {
   VoicePanelCardTsx16.__closure = items3;
   VoicePanelCardTsx16.__workletHash = 11655933282959;
   VoicePanelCardTsx16.__initData = tmp18;
-  const derivedValue1 = tmp6Result13.useDerivedValue(VoicePanelCardTsx16);
-  const items4 = [closure_54, connected, EDGE_GUTTER, safeArea, windowDimensions, contentDimensions, wrapperDimensions];
+  const derivedValue1 = tmp6Result12.useDerivedValue(VoicePanelCardTsx16);
+  const items4 = [closure_56, connected, EDGE_GUTTER, safeArea, windowDimensions, contentDimensions, wrapperDimensions];
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -710,7 +717,7 @@ function AnimatedWrapper(arg0) {
   react = undefined;
   let c5;
   [tmp25, tmp26, tmp27, tmp28, tmp29, tmp30, tmp31] = items4;
-  const tmp6Result14 = tmp6(tmp2[15]);
+  const tmp6Result13 = tmp6(tmp2[16]);
   class VoicePanelCardTsx17 {
     constructor() {
       let maxResult;
@@ -729,9 +736,9 @@ function AnimatedWrapper(arg0) {
   VoicePanelCardTsx17.__workletHash = 15075734874118;
   VoicePanelCardTsx17.__initData = tmp25;
   importDefault = tmp8;
-  const derivedValue2 = tmp6Result14.useDerivedValue(VoicePanelCardTsx17);
-  const tmp6Result15 = tmp6(tmp2[15]);
-  const sharedValue = tmp6Result15.useSharedValue(transitionState);
+  const derivedValue2 = tmp6Result13.useDerivedValue(VoicePanelCardTsx17);
+  const tmp6Result14 = tmp6(tmp2[16]);
+  const sharedValue = tmp6Result14.useSharedValue(transitionState);
   const tmp34 = channelId(obj.useState(true), 2);
   react = tmp34[1];
   let type;
@@ -750,10 +757,10 @@ function AnimatedWrapper(arg0) {
       closure_4(arg0 !== id);
     }
   }, items6);
-  const items7 = [closure_46, focused];
+  const items7 = [closure_48, focused];
   c0 = undefined;
   [tmp39, tmp40] = items7;
-  const tmp6Result16 = tmp6(tmp2[15]);
+  const tmp6Result15 = tmp6(tmp2[16]);
   class VoicePanelCardTsx10 {
     constructor() {
       const value = _undefined.get();
@@ -768,9 +775,9 @@ function AnimatedWrapper(arg0) {
   VoicePanelCardTsx10.__closure = items8;
   VoicePanelCardTsx10.__workletHash = 13460061917882;
   VoicePanelCardTsx10.__initData = tmp39;
-  const items9 = [closure_47, , ];
-  const useAnimatedReaction = tmp6Result16.useAnimatedReaction;
-  items9[1] = tmp6(tmp2[28]).scheduleOnRN;
+  const items9 = [closure_49, , ];
+  const useAnimatedReaction = tmp6Result15.useAnimatedReaction;
+  items9[1] = tmp6(tmp2[29]).scheduleOnRN;
   items9[2] = callback;
   c0 = undefined;
   c1 = undefined;
@@ -787,12 +794,12 @@ function AnimatedWrapper(arg0) {
   VoicePanelCardTsx11.__workletHash = 15970315567352;
   VoicePanelCardTsx11.__initData = tmp41;
   const animatedReaction = useAnimatedReaction(VoicePanelCardTsx10, VoicePanelCardTsx11);
-  const items11 = [closure_48, tmp5, focused, sharedValue];
+  const items11 = [closure_50, tmp5, focused, sharedValue];
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
   [tmp46, tmp47, tmp48, tmp49] = items11;
-  const tmp6Result17 = tmp6(tmp2[15]);
+  const tmp6Result16 = tmp6(tmp2[16]);
   class VoicePanelCardTsx12 {
     constructor() {
       obj = { mode: _undefined.get(), focused: _undefined2.get(), transitionState: _undefined3.get() };
@@ -803,14 +810,14 @@ function AnimatedWrapper(arg0) {
   VoicePanelCardTsx12.__closure = items12;
   VoicePanelCardTsx12.__workletHash = 13478324363917;
   VoicePanelCardTsx12.__initData = tmp46;
-  const items13 = [closure_49, , , , , , , , ];
-  const useAnimatedReaction2 = tmp6Result17.useAnimatedReaction;
-  items13[1] = tmp6(tmp2[46]).cheapWorkletShallowEqual;
+  const items13 = [closure_51, , , , , , , , ];
+  const useAnimatedReaction2 = tmp6Result16.useAnimatedReaction;
+  items13[1] = tmp6(tmp2[48]).cheapWorkletShallowEqual;
   items13[2] = tmp11;
-  items13[3] = tmp6(tmp2[47]).TransitionStates;
+  items13[3] = tmp6(tmp2[49]).TransitionStates;
   items13[4] = sharedVisible;
   items13[5] = isScrollVisible;
-  items13[6] = tmp6(tmp2[28]).scheduleOnRN;
+  items13[6] = tmp6(tmp2[29]).scheduleOnRN;
   items13[7] = cleanUp;
   items13[8] = id;
   c0 = undefined;
@@ -875,25 +882,25 @@ function AnimatedWrapper(arg0) {
     const result = sharedValue.set(transitionState);
   });
   closure_11 = tmp61;
-  const tmp6Result18 = tmp6(tmp2[43]);
-  const token = tmp6Result18.useToken(tmp(tmp2[20]).modules.mobile.VOICE_TILE_BORDER_RADIUS);
-  const items15 = [closure_56, coords, focused, id, tmp61, pIPState, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-  const useAnimatedStyle = tmp6(tmp2[15]).useAnimatedStyle;
-  tmp6(tmp2[15]);
-  items15[6] = tmp6(tmp2[51]).getScaledPIPContainerHeight;
-  items15[7] = tmp6(tmp2[51]).getClampedPIPPosition;
+  const tmp6Result17 = tmp6(tmp2[45]);
+  const token = tmp6Result17.useToken(tmp(tmp2[21]).modules.mobile.VOICE_TILE_BORDER_RADIUS);
+  const items15 = [closure_58, coords, focused, id, tmp61, pIPState, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+  const useAnimatedStyle = tmp6(tmp2[16]).useAnimatedStyle;
+  tmp6(tmp2[16]);
+  items15[6] = tmp6(tmp2[53]).getScaledPIPContainerHeight;
+  items15[7] = tmp6(tmp2[53]).getClampedPIPPosition;
   items15[8] = wrapperDimensions;
   items15[9] = windowDimensions;
   items15[10] = safeArea;
   items15[11] = pipAvoidanceSpecs;
   items15[12] = derivedValue1;
   items15[13] = derivedValue2;
-  items15[14] = tmp(tmp2[52]);
+  items15[14] = tmp(tmp2[54]);
   items15[15] = contentDimensions;
   items15[16] = sharedValue;
-  items15[17] = tmp6(tmp2[47]).TransitionStates;
+  items15[17] = tmp6(tmp2[49]).TransitionStates;
   items15[18] = derivedValue;
-  items15[19] = tmp(tmp2[44]);
+  items15[19] = tmp(tmp2[46]);
   items15[20] = tmp5;
   items15[21] = isSelf;
   items15[22] = token;
@@ -901,16 +908,16 @@ function AnimatedWrapper(arg0) {
   items15[24] = isRTCConnected;
   items15[25] = 0.75;
   items15[26] = wrapperOffset;
-  items15[27] = tmp6(tmp2[15]).withDelay;
-  items15[28] = tmp6(tmp2[38]).withTiming;
-  items15[29] = closure_29;
-  items15[30] = closure_28;
+  items15[27] = tmp6(tmp2[16]).withDelay;
+  items15[28] = tmp6(tmp2[40]).withTiming;
+  items15[29] = closure_31;
+  items15[30] = closure_30;
   items15[31] = isScrollVisible;
-  items15[32] = closure_55;
-  items15[33] = tmp6(tmp2[28]).scheduleOnRN;
+  items15[32] = closure_57;
+  items15[33] = tmp6(tmp2[29]).scheduleOnRN;
   items15[34] = cleanUp;
   items15[35] = isDockEnabled && !isRTCConnected;
-  items15[36] = tmp6(tmp2[39]).withSpring;
+  items15[36] = tmp6(tmp2[41]).withSpring;
   items15[37] = layoutPhysics;
   items15[38] = obj;
   items15[39] = SCALE_PHYSICS;
@@ -1140,7 +1147,9 @@ function AnimatedWrapper(arg0) {
   const animatedStyle = useAnimatedStyle(VoicePanelCardTsx19);
   let obj4 = {
     gesturesEnabled: first,
+    longPressProgress,
     onSingleTap() {
+      unpackModuleId(id);
       if (_undefined.get().mode === VoicePanelControlsModes.HIDDEN) {
         _undefined4({ debounce: true });
       } else {
@@ -1150,9 +1159,9 @@ function AnimatedWrapper(arg0) {
     onDoubleTap: fn,
     onLongPress: fn2
   };
-  const tmpResult = tmp(tmp2[53]);
-  const tmp6Result20 = tmp6(tmp2[50]);
-  if (tmp6Result20.isStableActivityParticipant(tmp8)) {
+  const tmpResult = tmp(tmp2[55]);
+  const tmp6Result19 = tmp6(tmp2[52]);
+  if (tmp6Result19.isStableActivityParticipant(tmp8)) {
     fn = () => {
       const value = focused.get();
       id = undefined;
@@ -1166,13 +1175,14 @@ function AnimatedWrapper(arg0) {
       }
     };
   } else if (isSelf) {
-    tmp6(tmp2[50]);
+    tmp6(tmp2[52]);
   }
   fn2 = undefined;
   if (null != id2) {
     fn2 = () => {
+      authStore2(id, id2);
       obj = { userId: id2, channelId, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations };
-      return showUserProfileActionSheetDefault(obj);
+      showUserProfileActionSheetDefault(obj);
     };
   }
   const items17 = [pipHandoff, id, tmp61];
@@ -1182,8 +1192,8 @@ function AnimatedWrapper(arg0) {
   }, items17);
   const items18 = [pipHandoff, id];
   const effect = obj.useEffect(() => () => pipHandoff.removeCard(id), items18);
-  const tmp6Result22 = tmp6(tmp2[15]);
-  sharedValue1 = tmp6Result22.useSharedValue(0);
+  const tmp6Result21 = tmp6(tmp2[16]);
+  sharedValue1 = tmp6Result21.useSharedValue(0);
   const items19 = [pipHandoff, id];
   callback1 = obj.useCallback(() => pipHandoff.setCardArrivedInPIP(id), items19);
   const items20 = [tmp61, layoutPhysics, sharedValue1, callback1];
@@ -1195,9 +1205,9 @@ function AnimatedWrapper(arg0) {
     if (tmp) {
       const result = sharedValue1.set(0);
       set = sharedValue1.set;
-      const items = [closure_57, , ];
+      const items = [closure_59, , ];
       const withSpring = spring_spring.withSpring;
-      items[1] = _mod1705.scheduleOnRN;
+      items[1] = _mod1708.scheduleOnRN;
       items[2] = callback1;
       let c0;
       let c1;
@@ -1215,92 +1225,96 @@ function AnimatedWrapper(arg0) {
       VoicePanelCardTsx20.__initData = tmp11;
       const result1 = set(withSpring(1, tmp7, "animate-always", VoicePanelCardTsx20));
       return () => {
-        obj = id(analyticsLocations[15]);
+        obj = id(analyticsLocations[16]);
         return obj.cancelAnimation(sharedValue1);
       };
     }
   }, items20);
-  let scale = pIPState.scale;
-  const tmp6Result23 = tmp6(tmp2[15]);
-  const sharedValue2 = tmp6Result23.useSharedValue(scale.get());
-  const items21 = [closure_58, pIPState, sharedValue2, tmp10, , , ];
+  ({ thawing, pipCardSize } = pipHandoff.cardThaw);
+  const items21 = [closure_60, tmp61, pipCardSize, tmp10, thawing, , , ];
   const useCallback2 = obj.useCallback;
-  items21[4] = tmp6(tmp2[39]).withSpring;
-  items21[5] = layoutPhysics;
-  items21[6] = wrapperOffset;
+  items21[5] = tmp6(tmp2[41]).withSpring;
+  items21[6] = layoutPhysics;
+  items21[7] = wrapperOffset;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
   c3 = undefined;
   react = undefined;
   c5 = undefined;
-  [tmp114, tmp115, tmp116, tmp117, tmp118, tmp119, tmp120] = items21;
+  c6 = undefined;
+  [tmp113, tmp114, tmp115, tmp116, tmp117, tmp118, tmp119, tmp120] = items21;
   class VoicePanelCardTsx21 {
     constructor(currentOriginX) {
-      let size1;
-      let scale = _undefined.scale;
-      let value = scale.get();
-      let result = value / _undefined2.get();
-      size = { originX: currentOriginX.currentOriginX, originY: currentOriginX.currentOriginY, width: currentOriginX.currentWidth * result, height: currentOriginX.currentHeight * result };
-      let str = "respect-motion-settings";
-      if (c2) {
+      let size2;
+      let str;
+      size = { originX: currentOriginX.currentOriginX, originY: currentOriginX.currentOriginY, width: currentOriginX.currentWidth, height: currentOriginX.currentHeight };
+      const tmp = c0;
+      if (tmp) {
+        const size1 = { width: null, height: null };
+        ({ targetWidth: obj2.width, targetHeight: obj2.height } = currentOriginX);
+        let result = _undefined.set(size1);
+      }
+      const tmp4 = c2;
+      if (tmp4) {
         str = "animate-never";
+      } else {
+        str = "respect-motion-settings";
       }
       obj = {
-        animations: size1,
+        animations: size2,
         initialValues: size,
         callback() {
-          const value = closure_1_5.get();
+          const value = closure_1_6.get();
           let gestureActive = value.gestureActive;
-          obj = closure_1_5;
+          obj = closure_1_6;
           if (!gestureActive) {
             gestureActive = 0 === value.y;
           }
           if (!gestureActive) {
             const result = obj.set({ gestureActive: false, x: 0, y: 0 });
           }
-          scale = scale.scale;
-          const result1 = _undefined2.set(scale.get());
         }
       };
-      size1 = { originX: _undefined3(currentOriginX.targetOriginX, c4, str), originY: _undefined3(currentOriginX.targetOriginY, c4, str), width: _undefined3(currentOriginX.targetWidth, c4, str), height: _undefined3(currentOriginX.targetHeight, c4, str) };
+      size2 = { originX: _undefined3(currentOriginX.targetOriginX, c5, str), originY: _undefined3(currentOriginX.targetOriginY, c5, str), width: _undefined3(currentOriginX.targetWidth, c5, str), height: _undefined3(currentOriginX.targetHeight, c5, str) };
       return obj;
     }
   }
-  const items22 = [tmp115, tmp116, tmp117, tmp118, tmp119, tmp120];
+  const items22 = [tmp114, tmp115, tmp116, tmp117, tmp118, tmp119, tmp120];
   VoicePanelCardTsx21.__closure = items22;
-  VoicePanelCardTsx21.__workletHash = 15285426827618;
-  VoicePanelCardTsx21.__initData = tmp114;
-  const items23 = [tmp10, layoutPhysics, wrapperOffset, sharedValue2, pIPState.scale];
+  VoicePanelCardTsx21.__workletHash = 7671746057522;
+  VoicePanelCardTsx21.__initData = tmp113;
+  const items23 = [tmp10, tmp61, layoutPhysics, pipCardSize, thawing, wrapperOffset];
   const callback2 = useCallback2(VoicePanelCardTsx21, items23);
-  let obj5 = { gesture: tmpResultResult, children: closure_22(View, obj6) };
-  const GestureDetector = tmp6(tmp2[55]).GestureDetector;
-  obj6 = { nativeID: tmp6Result24.getExternalPipTileNativeId("card", id), style: items24, layout: callback2, children };
-  View = tmp(tmp2[15]).View;
+  let obj5 = { gesture: tmpResultResult, children: closure_24(View, obj6) };
+  const GestureDetector = tmp6(tmp2[57]).GestureDetector;
+  obj6 = { nativeID: tmp6Result22.getExternalPipTileNativeId("card", id), style: items24, layout: callback2, children };
+  View = tmp(tmp2[16]).View;
   items24 = [tmp3.positionWrapper, animatedStyle];
-  tmp6Result24 = tmp6(tmp2[56]);
-  return closure_22(GestureDetector, obj5);
+  tmp6Result22 = tmp6(tmp2[58]);
+  return closure_24(GestureDetector, obj5);
 }
 let react = react_mod;
 const StyleSheet = react_native.StyleSheet;
 const Pressable = react_native.Pressable;
-({ VoicePanelCTACard: unpackModuleId, VoicePanelModes: closure_12, MODE_CHANGE_PHYSICS: map1, SPEAKING_PHYSICS: closure_14, VoicePanelCardItemType: closure_15 } = VoicePanelConstants);
+({ clearStreamVolumeMovedHint: unpackModuleId, consumeStreamVolumeMovedHint: closure_12 } = StreamVolumeMovedStore);
+({ VoicePanelCTACard: map1, VoicePanelModes: closure_14, MODE_CHANGE_PHYSICS: closure_15, SPEAKING_PHYSICS: closure_16, VoicePanelCardItemType: closure_17 } = VoicePanelConstants);
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const VoicePanelPIPModes = VoicePanelPIPConstants.VoicePanelPIPModes;
 const EDGE_GUTTER = VoicePanelCardConstants.EDGE_GUTTER;
 const ApplicationStreamStates = Constants.ApplicationStreamStates;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const SCALE_PHYSICS = MorphablePanelConstants.SCALE_PHYSICS;
-({ jsx: closure_22, Fragment: closure_23, jsxs: closure_24 } = Fragment);
-let module_1652 = module_1652_mod;
-let closure_25 = module_1652.createAnimatedComponent(Text_Text.Text);
-module_1652 = module_1652_mod;
-const LinearGradient = module_1652.createAnimatedComponent(LinearGradientDefault);
-let tmp5 = native.AVATAR_SIZE_MAP[native.AvatarSizes.XXLARGE];
+({ jsx: closure_24, Fragment: closure_25, jsxs: closure_26 } = Fragment);
+let module_1655 = module_1655_mod;
+let closure_27 = module_1655.createAnimatedComponent(Text_Text.Text);
+module_1655 = module_1655_mod;
+const LinearGradient = module_1655.createAnimatedComponent(LinearGradientDefault);
+let tmp6 = native.AVATAR_SIZE_MAP[native.AvatarSizes.XXLARGE];
 let obj = { stiffness: 150 };
 let merged = Object.assign(SCALE_PHYSICS);
-let closure_28 = { duration: 200 };
-let closure_29 = { duration: 0 };
+let closure_30 = { duration: 200 };
+let closure_31 = { duration: 0 };
 let createStyles = createStyles_mod;
 let obj2 = { positionWrapper: rect, userRoundedCard: { position: "absolute", top: -4, left: -4, bottom: -4, right: -4 }, userRoundedCardContent: obj3, nonUserRoundedCard: size, blackBackground: obj4, selfStreamFocusedSubtitle: { textAlign: "center", marginTop: 4, marginBottom: 40 }, avatarImageMaskStyles: obj5, avatarPlaceholder: size1, image: { maxWidth: 80, maxHeight: 80 }, speakingIndicatorWrapper: obj6, speakingIndicatorClip: obj7, speakingIndicatorUnderlay: obj8, speakingIndicatorBar: obj9 };
 rect = { position: "absolute", top: 0, left: 0, overflow: "hidden", backgroundColor: nativeDefault.colors.BLACK };
@@ -1311,7 +1325,7 @@ size = { position: "absolute", alignItems: "center", justifyContent: "center", w
 obj4 = { backgroundColor: "black" };
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj5 = { position: "relative", borderRadius: nativeDefault.radii.round, overflow: "hidden" };
-size1 = { width: tmp5, height: tmp5, borderRadius: nativeDefault.radii.round, backgroundColor: "rgba(0,0,0,0.3)" };
+size1 = { width: tmp6, height: tmp6, borderRadius: nativeDefault.radii.round, backgroundColor: "rgba(0,0,0,0.3)" };
 obj6 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 obj7 = { overflow: "hidden" };
@@ -1320,11 +1334,11 @@ obj8 = { borderColor: nativeDefault.colors.BLACK };
 const merged5 = Object.assign(StyleSheet.absoluteFillObject);
 obj9 = { borderColor: nativeDefault.colors.STATUS_SPEAKING };
 const merged6 = Object.assign(StyleSheet.absoluteFillObject);
-let closure_30 = createStyles(obj2);
-let closure_31 = { code: "(function VoicePanelCardTsx1(){let[isFocused,sharedCoords]=this.__closure;return{textAlign:'center',paddingHorizontal:16,paddingVertical:isFocused?0:16,width:isFocused?'auto':sharedCoords.get().width};})" };
-let closure_33 = { code: "(function VoicePanelCardTsx2(){let[focused,id]=this.__closure;var _focused$get;return((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;})" };
-let closure_34 = { code: "(function VoicePanelCardTsx3(isFocused,lastIsFocused){let[scheduleOnRN,setIsFocused]=this.__closure;if(isFocused!==lastIsFocused){scheduleOnRN(setIsFocused,isFocused);}})" };
-let closure_35 = react.memo(function AnimatedStreamCard(arg0) {
+let closure_32 = createStyles(obj2);
+let closure_33 = { code: "(function VoicePanelCardTsx1(){let[isFocused,sharedCoords]=this.__closure;return{textAlign:'center',paddingHorizontal:16,paddingVertical:isFocused?0:16,width:isFocused?'auto':sharedCoords.get().width};})" };
+let closure_35 = { code: "(function VoicePanelCardTsx2(){let[focused,id]=this.__closure;var _focused$get;return((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;})" };
+let closure_36 = { code: "(function VoicePanelCardTsx3(isFocused,lastIsFocused){let[scheduleOnRN,setIsFocused]=this.__closure;if(isFocused!==lastIsFocused){scheduleOnRN(setIsFocused,isFocused);}})" };
+let closure_37 = react.memo(function AnimatedStreamCard(arg0) {
   let focused;
   let id;
   let intl;
@@ -1333,6 +1347,7 @@ let closure_35 = react.memo(function AnimatedStreamCard(arg0) {
   let isScrollVisible;
   let items7;
   let layout;
+  let longPressProgress;
   let mode;
   let obj7;
   let sharedCoords;
@@ -1353,11 +1368,11 @@ let closure_35 = react.memo(function AnimatedStreamCard(arg0) {
   ({ streamId, streamGuildId } = arg0);
   ({ sharedCoords, layout } = arg0);
   let setFocused;
-  ({ userNick, isSelf, isScrollVisible } = arg0);
-  const context = react.useContext(streamGuildId(setFocused[27]));
+  ({ userNick, isSelf, isScrollVisible, longPressProgress } = arg0);
+  const context = react.useContext(streamGuildId(setFocused[28]));
   setFocused = context.setFocused;
   ({ focused, mode } = context);
-  obj = userId(setFocused[21]);
+  obj = userId(setFocused[22]);
   const items = [ApplicationStreamingStore];
   const items1 = [userId, streamGuildId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -1377,11 +1392,11 @@ let closure_35 = react.memo(function AnimatedStreamCard(arg0) {
   }, items2);
   [tmp8, tmp9] = stream(react.useState(false), 2);
   stream(react.useState(false), 2);
-  const items3 = [closure_33, focused, id];
+  const items3 = [closure_35, focused, id];
   let c0;
   let c1;
   [tmp11, tmp12, tmp13] = items3;
-  const tmp10 = userId(setFocused[15]);
+  const tmp10 = userId(setFocused[16]);
   class VoicePanelCardTsx2 {
     constructor() {
       const value = _undefined.get();
@@ -1396,9 +1411,9 @@ let closure_35 = react.memo(function AnimatedStreamCard(arg0) {
   VoicePanelCardTsx2.__closure = items4;
   VoicePanelCardTsx2.__workletHash = 10075488097657;
   VoicePanelCardTsx2.__initData = tmp11;
-  const items5 = [closure_34, , ];
+  const items5 = [closure_36, , ];
   const useAnimatedReaction = tmp10.useAnimatedReaction;
-  items5[1] = userId(setFocused[28]).scheduleOnRN;
+  items5[1] = userId(setFocused[29]).scheduleOnRN;
   items5[2] = tmp9;
   c0 = undefined;
   c1 = undefined;
@@ -1415,63 +1430,64 @@ let closure_35 = react.memo(function AnimatedStreamCard(arg0) {
   VoicePanelCardTsx3.__workletHash = 10405109597495;
   VoicePanelCardTsx3.__initData = tmp14;
   const animatedReaction = useAnimatedReaction(VoicePanelCardTsx2, VoicePanelCardTsx3);
-  const tmpResult = streamGuildId(setFocused[29]);
-  const tmpResultResult = tmpResult(userId(setFocused[30]).MediaEngineContextTypes.STREAM, userId);
+  const tmpResult = streamGuildId(setFocused[30]);
+  const tmpResultResult = tmpResult(userId(setFocused[31]).MediaEngineContextTypes.STREAM, userId);
   if (isSelf) {
     let obj2 = { sharedCoords, stream, isFocused: tmp8 };
-    return closure_22(SelfStreamCard, obj2);
+    return closure_24(SelfStreamCard, obj2);
   } else if (null == activeStream) {
     const obj3 = { mode, stream, onPress: callback, disabled: false, layout };
-    return closure_22(userId(setFocused[31]).VoicePanelStreamPreview, obj3);
+    return closure_24(userId(setFocused[32]).VoicePanelStreamPreview, obj3);
   } else {
     if (null == tmpResultResult) {
       if (activeStream.state !== ApplicationStreamStates.FAILED) {
         if (activeStream.state === ApplicationStreamStates.ENDED) {
-          const obj4 = { stream: activeStream, removeSplashImage: !tmp8, type: userId(setFocused[32]).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
-          const tmpResult4 = streamGuildId(setFocused[32]);
-          return closure_22(tmpResult4, obj4);
+          const obj4 = { stream: activeStream, removeSplashImage: !tmp8, type: userId(setFocused[33]).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
+          const tmpResult4 = streamGuildId(setFocused[33]);
+          return closure_24(tmpResult4, obj4);
         } else {
           let tmp22;
           if (activeStream.state === ApplicationStreamStates.RECONNECTING) {
-            const obj5 = { title: intl.string(userId(setFocused[25]).t["pdFFK+"]) };
-            const StreamTextOverlay = tmp4(tmp2[33]).StreamTextOverlay;
-            intl = tmp4(tmp2[25]).intl;
-            tmp22 = closure_22(StreamTextOverlay, obj5);
+            const obj5 = { title: intl.string(userId(setFocused[26]).t["pdFFK+"]) };
+            const StreamTextOverlay = tmp4(tmp2[34]).StreamTextOverlay;
+            intl = tmp4(tmp2[26]).intl;
+            tmp22 = closure_24(StreamTextOverlay, obj5);
           } else {
             tmp22 = null;
             if (activeStream.state === ApplicationStreamStates.PAUSED) {
-              const obj6 = { title: intl2.string(userId(setFocused[25]).t["5q17w5"]), subtext: intl3.formatToPlainString(userId(setFocused[25]).t.meVVlb, obj7) };
-              const StreamTextOverlay2 = tmp4(tmp2[33]).StreamTextOverlay;
-              intl2 = tmp4(tmp2[25]).intl;
-              intl3 = tmp4(tmp2[25]).intl;
+              const obj6 = { title: intl2.string(userId(setFocused[26]).t["5q17w5"]), subtext: intl3.formatToPlainString(userId(setFocused[26]).t.meVVlb, obj7) };
+              const StreamTextOverlay2 = tmp4(tmp2[34]).StreamTextOverlay;
+              intl2 = tmp4(tmp2[26]).intl;
+              intl3 = tmp4(tmp2[26]).intl;
               obj7 = { username: userNick };
-              tmp22 = closure_22(StreamTextOverlay2, obj6);
+              tmp22 = closure_24(StreamTextOverlay2, obj6);
             }
           }
-          const obj8 = { layout, id, streamId, userId, streamKey: tmp4Result.encodeStreamKey(activeStream), isScrollVisible, videoSpinnerContext: userId(setFocused[35]).VideoSpinnerContext.REMOTE_STREAM, sharedCoords, isCamera: false, paused: activeStream.state === ApplicationStreamStates.PAUSED };
-          const tmp23 = closure_24;
-          const tmp24 = closure_23;
-          const tmp25 = closure_22;
-          const tmpResult5 = streamGuildId(setFocused[34]);
+          const obj8 = { layout, id, streamId, userId, streamKey: tmp4Result.encodeStreamKey(activeStream), isScrollVisible, videoSpinnerContext: userId(setFocused[36]).VideoSpinnerContext.REMOTE_STREAM, sharedCoords, isCamera: false, paused: activeStream.state === ApplicationStreamStates.PAUSED };
+          const tmp23 = closure_26;
+          const tmp24 = closure_25;
+          const tmpResult5 = streamGuildId(setFocused[35]);
           if (streamId == null) {
             streamId = null;
           }
           const obj9 = { children: items7 };
-          tmp4Result = userId(setFocused[23]);
-          items7 = [tmp25(tmpResult5, obj8), tmp22];
+          tmp4Result = userId(setFocused[24]);
+          items7 = [closure_24(tmpResult5, obj8), tmp22, ];
+          const obj10 = { streamKey: id, longPressProgress };
+          items7[2] = closure_24(streamGuildId(setFocused[37]), obj10);
           return tmp23(tmp24, obj9);
         }
       }
     }
-    const obj10 = { avError: tmpResultResult, stream: activeStream, removeSplashImage: !tmp8, type: userId(setFocused[32]).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
-    const tmpResult6 = streamGuildId(setFocused[32]);
-    return closure_22(tmpResult6, obj10);
+    const obj11 = { avError: tmpResultResult, stream: activeStream, removeSplashImage: !tmp8, type: userId(setFocused[33]).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
+    const tmpResult6 = streamGuildId(setFocused[33]);
+    return closure_24(tmpResult6, obj11);
   }
 });
-let closure_36 = { code: "(function VoicePanelCardTsx4(){let[isDockEnabled,mode,VoicePanelModes]=this.__closure;return isDockEnabled&&mode.get()===VoicePanelModes.PIP?VoicePanelModes.PANEL:mode.get();})" };
-let closure_38 = { code: "(function VoicePanelCardTsx5(){let[withTiming,isRinging,CONNECTING_OPACITY,backgroundColor]=this.__closure;return{opacity:withTiming(isRinging?CONNECTING_OPACITY:1,{duration:100},'animate-always'),backgroundColor:backgroundColor};})" };
-let closure_39 = { code: "(function VoicePanelCardTsx6(){let[withSpring,mode,VoicePanelModes,layoutPhysics]=this.__closure;return{transform:[{scale:withSpring(mode.get()===VoicePanelModes.PIP?64/80:1,layoutPhysics)}]};})" };
-let closure_40 = react.memo(function AnimatedUserCardInner(guildId) {
+let closure_38 = { code: "(function VoicePanelCardTsx4(){let[isDockEnabled,mode,VoicePanelModes]=this.__closure;return isDockEnabled&&mode.get()===VoicePanelModes.PIP?VoicePanelModes.PANEL:mode.get();})" };
+let closure_40 = { code: "(function VoicePanelCardTsx5(){let[withTiming,isRinging,CONNECTING_OPACITY,backgroundColor]=this.__closure;return{opacity:withTiming(isRinging?CONNECTING_OPACITY:1,{duration:100},'animate-always'),backgroundColor:backgroundColor};})" };
+let closure_41 = { code: "(function VoicePanelCardTsx6(){let[withSpring,mode,VoicePanelModes,layoutPhysics]=this.__closure;return{transform:[{scale:withSpring(mode.get()===VoicePanelModes.PIP?64/80:1,layoutPhysics)}]};})" };
+let closure_42 = react.memo(function AnimatedUserCardInner(guildId) {
   let View2;
   let View4;
   let avatarDecoration;
@@ -1504,25 +1520,25 @@ let closure_40 = react.memo(function AnimatedUserCardInner(guildId) {
   guildId = guildId.guildId;
   const channelId = guildId.channelId;
   ({ isRinging, layoutPhysics } = guildId);
-  let tmp = closure_30();
+  let tmp = closure_32();
   obj = react;
   let tmp2 = guildId;
-  const controlsSpecs = react.useContext(guildId(channelId[27])).controlsSpecs;
+  const controlsSpecs = react.useContext(guildId(channelId[28])).controlsSpecs;
   const tmp4 = useCardPanelMode();
-  const tmp5 = guildId(channelId[36])({ userId, guildId, avatarURI, location: "VoicePanelCard-native" });
+  const tmp5 = guildId(channelId[38])({ userId, guildId, avatarURI, location: "VoicePanelCard-native" });
   const gradientStops = tmp5.gradientStops;
   const backgroundColor = tmp5.backgroundColor;
-  const MobileRequestToStreamExperiment = userId(channelId[37]).MobileRequestToStreamExperiment;
+  const MobileRequestToStreamExperiment = userId(channelId[39]).MobileRequestToStreamExperiment;
   let str = guildId;
   const useConfig = MobileRequestToStreamExperiment.useConfig;
   if (guildId == null) {
     str = "";
   }
   const enabled = useConfig({ guildId: str, location: "VoicePanelCard" }).enabled;
-  let items = [closure_38, , , , ];
-  const useAnimatedStyle = tmp6(tmp3[15]).useAnimatedStyle;
-  userId(channelId[15]);
-  items[1] = userId(channelId[38]).withTiming;
+  let items = [closure_40, , , , ];
+  const useAnimatedStyle = tmp6(tmp3[16]).useAnimatedStyle;
+  userId(channelId[16]);
+  items[1] = userId(channelId[40]).withTiming;
   items[2] = isRinging;
   items[3] = 0.75;
   items[4] = backgroundColor;
@@ -1547,12 +1563,12 @@ let closure_40 = react.memo(function AnimatedUserCardInner(guildId) {
   VoicePanelCardTsx5.__workletHash = 3534867939077;
   VoicePanelCardTsx5.__initData = tmp8;
   const animatedStyle = useAnimatedStyle(VoicePanelCardTsx5);
-  const items2 = [closure_39, , , , ];
-  const useAnimatedStyle2 = tmp6(tmp3[15]).useAnimatedStyle;
-  userId(channelId[15]);
-  items2[1] = userId(channelId[39]).withSpring;
+  const items2 = [closure_41, , , , ];
+  const useAnimatedStyle2 = tmp6(tmp3[16]).useAnimatedStyle;
+  userId(channelId[16]);
+  items2[1] = userId(channelId[41]).withSpring;
   items2[2] = tmp4;
-  items2[3] = closure_12;
+  items2[3] = closure_14;
   items2[4] = layoutPhysics;
   c0 = undefined;
   c1 = undefined;
@@ -1579,7 +1595,7 @@ let closure_40 = react.memo(function AnimatedUserCardInner(guildId) {
   let cachedSourceFromURI;
   const animatedStyle2 = useAnimatedStyle2(VoicePanelCardTsx6);
   if (null != avatarURI) {
-    const tmp6Result4 = userId(channelId[40]);
+    const tmp6Result4 = userId(channelId[42]);
     cachedSourceFromURI = tmp6Result4.getCachedSourceFromURI(avatarURI);
   }
   const items4 = [guildId, channelId, userId, controlsSpecs];
@@ -1601,23 +1617,23 @@ let closure_40 = react.memo(function AnimatedUserCardInner(guildId) {
     }
   }, items4);
   if (null != avatarDecoration) {
-    const obj2 = { source: cachedSourceFromURI, size: tmp6(tmp3[18]).AvatarSizes.XXLARGE, avatarDecoration };
-    const Avatar = tmp6(tmp3[18]).Avatar;
-    tmp23Result = closure_22(Avatar, obj2);
-    tmp27 = closure_22;
+    const obj2 = { source: cachedSourceFromURI, size: tmp6(tmp3[19]).AvatarSizes.XXLARGE, avatarDecoration };
+    const Avatar = tmp6(tmp3[19]).Avatar;
+    tmp23Result = closure_24(Avatar, obj2);
+    tmp27 = closure_24;
   } else {
     size = { source: cachedSourceFromURI, resizeMode: "stretch", width: 80, height: 80, style: tmp.image };
-    const tmp2Result = tmp2(channelId[42]);
+    const tmp2Result = tmp2(channelId[44]);
     tmp23Result = tmp23(tmp2Result, size);
     tmp27 = tmp23;
   }
   const obj3 = { style: tmp.userRoundedCard, layout, children: tmp29(View2, obj4) };
-  const View = tmp2(tmp3[15]).View;
+  const View = tmp2(tmp3[16]).View;
   obj4 = { style: items5, layout, children: items6 };
   items5 = [tmp.userRoundedCardContent, animatedStyle];
   let tmp27Result = null;
-  View2 = tmp2(tmp3[15]).View;
-  tmp29 = closure_24;
+  View2 = tmp2(tmp3[16]).View;
+  tmp29 = closure_26;
   if (null != gradientStops) {
     const obj5 = { colors: gradientStops, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: StyleSheet.absoluteFill, layout, pointerEvents: "none" };
     tmp27Result = tmp27(LinearGradient, obj5);
@@ -1625,12 +1641,12 @@ let closure_40 = react.memo(function AnimatedUserCardInner(guildId) {
   items6 = [tmp27Result, ];
   if (null == cachedSourceFromURI) {
     const obj6 = { style: tmp.avatarPlaceholder };
-    tmp27Result3 = tmp27(tmp2(tmp3[24]), obj6);
+    tmp27Result3 = tmp27(tmp2(tmp3[25]), obj6);
   } else {
     const obj7 = { layout, children: tmp27(View4, obj8) };
-    const View3 = tmp2(tmp3[15]).View;
+    const View3 = tmp2(tmp3[16]).View;
     let prop;
-    View4 = tmp2(tmp3[15]).View;
+    View4 = tmp2(tmp3[16]).View;
     if (null == avatarDecoration) {
       prop = tmp.avatarImageMaskStyles;
     }
@@ -1646,10 +1662,10 @@ let closure_40 = react.memo(function AnimatedUserCardInner(guildId) {
   items6[1] = tmp27Result3;
   return tmp27(View, obj3);
 });
-let closure_41 = { code: "(function VoicePanelCardTsx7(){let[mode,VoicePanelModes,focused,id,withSpring,computeCardBorderRadius,isSelf,defaultBorderRadius,SPEAKING_PHYSICS]=this.__closure;var _focused$get,_focused$get2;const disable=mode.get()!==VoicePanelModes.PIP&&((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;return{opacity:disable?0:1,borderRadius:withSpring(disable?0:computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius}),SPEAKING_PHYSICS,!disable?'animate-always':'animate-never')};})" };
-let closure_42 = { code: "(function VoicePanelCardTsx8(){let[mode,VoicePanelModes,focused,id,withSpring,computeCardBorderRadius,isSelf,defaultBorderRadius,SPEAKING_PHYSICS,speakingOrPlayingSoundboard,roundToNearestPixel,SPEAKING_BORDER_SIZE,SPEAKING_INSET]=this.__closure;var _focused$get,_focused$get2;const disable=mode.get()===VoicePanelModes.PIP||((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;return{borderRadius:withSpring(!disable?computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius}):0,SPEAKING_PHYSICS,!disable?'animate-always':'animate-never'),borderWidth:withSpring(!disable&&speakingOrPlayingSoundboard.get()?roundToNearestPixel(SPEAKING_BORDER_SIZE+SPEAKING_INSET):0,SPEAKING_PHYSICS,!disable?'animate-always':'animate-never')};})" };
-let closure_43 = { code: "(function VoicePanelCardTsx9(){let[mode,VoicePanelModes,focused,id,withSpring,computeCardBorderRadius,isSelf,defaultBorderRadius,SPEAKING_PHYSICS,speakingOrPlayingSoundboard,SPEAKING_BORDER_SIZE]=this.__closure;var _focused$get,_focused$get2;const disable=mode.get()===VoicePanelModes.PIP||((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;return{borderRadius:withSpring(!disable?computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius}):0,SPEAKING_PHYSICS,!disable?'animate-always':'animate-never'),borderWidth:withSpring(!disable&&speakingOrPlayingSoundboard.get()?SPEAKING_BORDER_SIZE:0,SPEAKING_PHYSICS,!disable?'animate-always':'animate-never')};})" };
-let closure_45 = react.memo(function LazySpeakingIndicator(id) {
+let closure_43 = { code: "(function VoicePanelCardTsx7(){let[mode,VoicePanelModes,focused,id,withSpring,computeCardBorderRadius,isSelf,defaultBorderRadius,SPEAKING_PHYSICS]=this.__closure;var _focused$get,_focused$get2;const disable=mode.get()!==VoicePanelModes.PIP&&((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;return{opacity:disable?0:1,borderRadius:withSpring(disable?0:computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius}),SPEAKING_PHYSICS,!disable?'animate-always':'animate-never')};})" };
+let closure_44 = { code: "(function VoicePanelCardTsx8(){let[mode,VoicePanelModes,focused,id,withSpring,computeCardBorderRadius,isSelf,defaultBorderRadius,SPEAKING_PHYSICS,speakingOrPlayingSoundboard,roundToNearestPixel,SPEAKING_BORDER_SIZE,SPEAKING_INSET]=this.__closure;var _focused$get,_focused$get2;const disable=mode.get()===VoicePanelModes.PIP||((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;return{borderRadius:withSpring(!disable?computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius}):0,SPEAKING_PHYSICS,!disable?'animate-always':'animate-never'),borderWidth:withSpring(!disable&&speakingOrPlayingSoundboard.get()?roundToNearestPixel(SPEAKING_BORDER_SIZE+SPEAKING_INSET):0,SPEAKING_PHYSICS,!disable?'animate-always':'animate-never')};})" };
+let closure_45 = { code: "(function VoicePanelCardTsx9(){let[mode,VoicePanelModes,focused,id,withSpring,computeCardBorderRadius,isSelf,defaultBorderRadius,SPEAKING_PHYSICS,speakingOrPlayingSoundboard,SPEAKING_BORDER_SIZE]=this.__closure;var _focused$get,_focused$get2;const disable=mode.get()===VoicePanelModes.PIP||((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;return{borderRadius:withSpring(!disable?computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius}):0,SPEAKING_PHYSICS,!disable?'animate-always':'animate-never'),borderWidth:withSpring(!disable&&speakingOrPlayingSoundboard.get()?SPEAKING_BORDER_SIZE:0,SPEAKING_PHYSICS,!disable?'animate-always':'animate-never')};})" };
+let closure_47 = react.memo(function LazySpeakingIndicator(id) {
   let speaking;
   let userPlayingSounds;
   let tmp = id(react.useState(() => {
@@ -1692,54 +1708,44 @@ let closure_45 = react.memo(function LazySpeakingIndicator(id) {
   if (first) {
     obj = {};
     const merged = Object.assign(id);
-    tmp4 = closure_22(SpeakingIndicator, obj);
+    tmp4 = closure_24(SpeakingIndicator, obj);
   }
   return tmp4;
 });
-let closure_46 = { code: "(function VoicePanelCardTsx10(){let[focused]=this.__closure;var _focused$get;return(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id;})" };
-let closure_47 = { code: "(function VoicePanelCardTsx11(focusedId,previous){let[scheduleOnRN,handleFocusedParticipantChange]=this.__closure;if(focusedId===previous)return;scheduleOnRN(handleFocusedParticipantChange,focusedId);})" };
-let closure_48 = { code: "(function VoicePanelCardTsx12(){let[mode,focused,sharedTransitionState]=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};})" };
-let closure_49 = { code: "(function VoicePanelCardTsx13(props,previous){let[cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,scheduleOnRN,cleanUp,id]=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{scheduleOnRN(cleanUp);}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}})" };
-let closure_50 = { isSelf: false, hasVideo: false, user: { id: "r" } };
-let items = [{ code: "(function layoutTransitionFunction_VoicePanelCardTsx14(values,physics,scale,lastScale,disableAnimation=false){let[withSpring]=this.__closure;const scaleAdjustment=scale.get()/lastScale.get();const shouldAnimate=!disableAnimation?'respect-motion-settings':'animate-never';return{animations:{originX:withSpring(values.targetOriginX,physics,shouldAnimate),originY:withSpring(values.targetOriginY,physics,shouldAnimate),width:withSpring(values.targetWidth,physics,shouldAnimate),height:withSpring(values.targetHeight,physics,shouldAnimate)},initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth*scaleAdjustment,height:values.currentHeight*scaleAdjustment},callback:function(){lastScale.set(scale.get());}};})" }, spring_spring.withSpring];
+let closure_48 = { code: "(function VoicePanelCardTsx10(){let[focused]=this.__closure;var _focused$get;return(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id;})" };
+let closure_49 = { code: "(function VoicePanelCardTsx11(focusedId,previous){let[scheduleOnRN,handleFocusedParticipantChange]=this.__closure;if(focusedId===previous)return;scheduleOnRN(handleFocusedParticipantChange,focusedId);})" };
+let closure_50 = { code: "(function VoicePanelCardTsx12(){let[mode,focused,sharedTransitionState]=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};})" };
+let closure_51 = { code: "(function VoicePanelCardTsx13(props,previous){let[cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,scheduleOnRN,cleanUp,id]=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{scheduleOnRN(cleanUp);}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}})" };
+let closure_52 = { isSelf: false, hasVideo: false, user: { id: "r" } };
+let items = [{ code: "(function layoutTransitionFunction_VoicePanelCardTsx14(values,physics,disableAnimation=false){let[withSpring]=this.__closure;const shouldAnimate=!disableAnimation?'respect-motion-settings':'animate-never';return{animations:{originX:withSpring(values.targetOriginX,physics,shouldAnimate),originY:withSpring(values.targetOriginY,physics,shouldAnimate),width:withSpring(values.targetWidth,physics,shouldAnimate),height:withSpring(values.targetHeight,physics,shouldAnimate)},initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight}};})" }, spring_spring.withSpring];
 let c0;
-[tmp14, tmp15] = items;
-function layoutTransitionFunction(originX, arg1, get, get2) {
-  let closure_0 = get;
-  let closure_1 = get2;
-  let flag = arg4;
-  if (arg4 === undefined) {
+[tmp15, tmp16] = items;
+function layoutTransitionFunction(originX, arg1) {
+  let flag = arg2;
+  if (arg2 === undefined) {
     flag = false;
   }
-  const value = get.get();
-  let result = value / get2.get();
   let str = "respect-motion-settings";
   if (flag) {
     str = "animate-never";
   }
-  obj = {
-    animations: size,
-    initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth * result, height: originX.currentHeight * result },
-    callback() {
-      const result = closure_1.set(closure_0.get());
-    }
-  };
+  obj = { animations: size, initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight } };
   size = { originX: _undefined(originX.targetOriginX, arg1, str), originY: _undefined(originX.targetOriginY, arg1, str), width: _undefined(originX.targetWidth, arg1, str), height: _undefined(originX.targetHeight, arg1, str) };
   return obj;
 }
-let items1 = [tmp15];
+let items1 = [tmp16];
 layoutTransitionFunction.__closure = items1;
-layoutTransitionFunction.__workletHash = 17158796626665;
-layoutTransitionFunction.__initData = tmp14;
-let closure_52 = { code: "(function VoicePanelCardTsx15(){let[id,pipState,mode,VoicePanelModes]=this.__closure;if(id===pipState.id&&mode.get()===VoicePanelModes.PIP){return true;}return false;})" };
-let closure_53 = { code: "(function VoicePanelCardTsx16(){let[focused,id,mode,VoicePanelModes,scrollPosition]=this.__closure;var _focused$get;return((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id||mode.get()===VoicePanelModes.PIP?scrollPosition.get():0;})" };
-let closure_54 = { code: "(function VoicePanelCardTsx17(){let[connected,EDGE_GUTTER,safeArea,windowDimensions,contentDimensions,wrapperDimensions]=this.__closure;return connected.get()?Math.max(EDGE_GUTTER,safeArea.get().left,(windowDimensions.get().width-contentDimensions.get().width)/2):wrapperDimensions.get().drawerWidth/2;})" };
-let closure_55 = { code: "(function VoicePanelCardTsx18(finished){let[sharedVisible,sharedTransitionState,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;if(finished&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){scheduleOnRN(cleanUp);}})" };
-let closure_56 = { code: "(function VoicePanelCardTsx19(){let[coords,focused,id,isPIP,pipState,getScaledPIPContainerHeight,getClampedPIPPosition,wrapperDimensions,windowDimensions,safeArea,pipAvoidanceSpecs,derivedScrollValue,xOffset,calculateContentCenterOffset,contentDimensions,sharedTransitionState,TransitionStates,zIndexOverride,computeCardBorderRadius,mode,isSelf,defaultBorderRadius,sharedVisible,isRTCConnected,CONNECTING_OPACITY,wrapperOffset,withDelay,withTiming,ZINDEX_TIMING,OPACITY_TIMING,isScrollVisible,_worklet_5099113999013_init_data,scheduleOnRN,cleanUp,holdPosition,withSpring,layoutPhysics,CARD_SCALE_PHYSICS,SCALE_PHYSICS]=this.__closure;var _focused$get,_focused$get2,_focused$get3,_focused$get4;let{zIndex:zIndex,width:width,height:height,x:x,y:y}=coords.get();const isFocused=((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;if(isPIP){const pipScale=pipState.scale.get();width=pipState.width*pipScale;height=pipState.height*pipScale;const pipHeight=getScaledPIPContainerHeight({height:pipState.height,containerHeight:pipState.containerHeight,showSecondaryPIP:pipState.showSecondaryPIP,scale:pipScale});const pipPosition=getClampedPIPPosition({pipX:wrapperDimensions.get().pipX,pipY:wrapperDimensions.get().pipY,width:width,height:pipHeight,windowDimensions:windowDimensions.get(),safeArea:safeArea.get(),bottomAvoidanceRegion:pipAvoidanceSpecs.get().bottom,topAvoidanceRegion:pipAvoidanceSpecs.get().top});x=pipPosition.x;y=derivedScrollValue.get()+pipPosition.y;}else if(focused.get()!=null){if(isFocused){zIndex=1;width=windowDimensions.get().width;height=windowDimensions.get().height;x=0;y=derivedScrollValue.get();}else{zIndex=0;}}else{x+=xOffset.get();y+=calculateContentCenterOffset({contentHeight:contentDimensions.get().height,windowHeight:windowDimensions.get().height,safeArea:safeArea.get()});if(sharedTransitionState.get()===TransitionStates.YEETED){y+=height/4;}}if(zIndexOverride.get()){zIndex=9001;}const borderRadius=computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius});const opacity=sharedVisible.get()===0&&((_focused$get3=focused.get())===null||_focused$get3===void 0?void 0:_focused$get3.id)!==id?0:!isFocused&&!isRTCConnected?CONNECTING_OPACITY:1;const gestureActive=wrapperOffset.get().gestureActive;const scaleTarget=sharedVisible.get()===1||((_focused$get4=focused.get())===null||_focused$get4===void 0?void 0:_focused$get4.id)===id?1:0.8;return{zIndex:withDelay(zIndexOverride.get()?0:100,withTiming(zIndex,ZINDEX_TIMING)),opacity:withTiming(opacity,OPACITY_TIMING,isScrollVisible.get()?'animate-always':'animate-never',function VoicePanelCardTsx18Factory([_worklet_5099113999013_init_data,sharedVisible,sharedTransitionState,TransitionStates,scheduleOnRN,cleanUp]){const VoicePanelCardTsx18=function(finished){if(finished&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){scheduleOnRN(cleanUp);}};VoicePanelCardTsx18.__closure=[sharedVisible,sharedTransitionState,TransitionStates,scheduleOnRN,cleanUp];VoicePanelCardTsx18.__workletHash=5099113999013;VoicePanelCardTsx18.__initData=_worklet_5099113999013_init_data;return VoicePanelCardTsx18;}([_worklet_5099113999013_init_data,sharedVisible,sharedTransitionState,TransitionStates,scheduleOnRN,cleanUp])),width:width,height:height,transform:[{translateX:gestureActive||holdPosition?x:withSpring(x,layoutPhysics,'respect-motion-settings')},{translateY:gestureActive||holdPosition?y:withSpring(y,layoutPhysics,'respect-motion-settings')},{scale:withSpring(scaleTarget,CARD_SCALE_PHYSICS)}],borderRadius:withSpring(borderRadius,SCALE_PHYSICS)};})" };
-let closure_57 = { code: "(function VoicePanelCardTsx20(finished){let[scheduleOnRN,reportPIPArrival]=this.__closure;if(finished===true){scheduleOnRN(reportPIPArrival);}})" };
-let closure_58 = { code: "(function VoicePanelCardTsx21(values){let[pipState,lastPIPScale,holdPosition,withSpring,layoutPhysics,wrapperOffset]=this.__closure;const scaleAdjustment=pipState.scale.get()/lastPIPScale.get();const initialValues={originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth*scaleAdjustment,height:values.currentHeight*scaleAdjustment};const motion=holdPosition?'animate-never':'respect-motion-settings';return{animations:{originX:withSpring(values.targetOriginX,layoutPhysics,motion),originY:withSpring(values.targetOriginY,layoutPhysics,motion),width:withSpring(values.targetWidth,layoutPhysics,motion),height:withSpring(values.targetHeight,layoutPhysics,motion)},initialValues:initialValues,callback:function(){const _wrapperOffset=wrapperOffset.get();if(!_wrapperOffset.gestureActive&&_wrapperOffset.y!==0){wrapperOffset.set({gestureActive:false,x:0,y:0});}lastPIPScale.set(pipState.scale.get());}};})" };
-let closure_60 = { code: "(function VoicePanelCardTsx22(){let[EDGE_GUTTER,coords,scrollPosition,windowDimensions]=this.__closure;const yPos=EDGE_GUTTER+coords.get().y;return yPos>scrollPosition.get()-coords.get().height&&yPos<scrollPosition.get()+windowDimensions.get().height;})" };
-let closure_61 = { code: "(function VoicePanelCardTsx23(values,disableAnimation=false){let[layoutTransitionFunction,physics,pipState,lastPipScale,holdPosition]=this.__closure;return layoutTransitionFunction(values,physics,pipState.scale,lastPipScale,disableAnimation||holdPosition);})" };
+layoutTransitionFunction.__workletHash = 8511050440717;
+layoutTransitionFunction.__initData = tmp15;
+let closure_54 = { code: "(function VoicePanelCardTsx15(){let[id,pipState,mode,VoicePanelModes]=this.__closure;if(id===pipState.id&&mode.get()===VoicePanelModes.PIP){return true;}return false;})" };
+let closure_55 = { code: "(function VoicePanelCardTsx16(){let[focused,id,mode,VoicePanelModes,scrollPosition]=this.__closure;var _focused$get;return((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id||mode.get()===VoicePanelModes.PIP?scrollPosition.get():0;})" };
+let closure_56 = { code: "(function VoicePanelCardTsx17(){let[connected,EDGE_GUTTER,safeArea,windowDimensions,contentDimensions,wrapperDimensions]=this.__closure;return connected.get()?Math.max(EDGE_GUTTER,safeArea.get().left,(windowDimensions.get().width-contentDimensions.get().width)/2):wrapperDimensions.get().drawerWidth/2;})" };
+let closure_57 = { code: "(function VoicePanelCardTsx18(finished){let[sharedVisible,sharedTransitionState,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;if(finished&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){scheduleOnRN(cleanUp);}})" };
+let closure_58 = { code: "(function VoicePanelCardTsx19(){let[coords,focused,id,isPIP,pipState,getScaledPIPContainerHeight,getClampedPIPPosition,wrapperDimensions,windowDimensions,safeArea,pipAvoidanceSpecs,derivedScrollValue,xOffset,calculateContentCenterOffset,contentDimensions,sharedTransitionState,TransitionStates,zIndexOverride,computeCardBorderRadius,mode,isSelf,defaultBorderRadius,sharedVisible,isRTCConnected,CONNECTING_OPACITY,wrapperOffset,withDelay,withTiming,ZINDEX_TIMING,OPACITY_TIMING,isScrollVisible,_worklet_5099113999013_init_data,scheduleOnRN,cleanUp,holdPosition,withSpring,layoutPhysics,CARD_SCALE_PHYSICS,SCALE_PHYSICS]=this.__closure;var _focused$get,_focused$get2,_focused$get3,_focused$get4;let{zIndex:zIndex,width:width,height:height,x:x,y:y}=coords.get();const isFocused=((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;if(isPIP){const pipScale=pipState.scale.get();width=pipState.width*pipScale;height=pipState.height*pipScale;const pipHeight=getScaledPIPContainerHeight({height:pipState.height,containerHeight:pipState.containerHeight,showSecondaryPIP:pipState.showSecondaryPIP,scale:pipScale});const pipPosition=getClampedPIPPosition({pipX:wrapperDimensions.get().pipX,pipY:wrapperDimensions.get().pipY,width:width,height:pipHeight,windowDimensions:windowDimensions.get(),safeArea:safeArea.get(),bottomAvoidanceRegion:pipAvoidanceSpecs.get().bottom,topAvoidanceRegion:pipAvoidanceSpecs.get().top});x=pipPosition.x;y=derivedScrollValue.get()+pipPosition.y;}else if(focused.get()!=null){if(isFocused){zIndex=1;width=windowDimensions.get().width;height=windowDimensions.get().height;x=0;y=derivedScrollValue.get();}else{zIndex=0;}}else{x+=xOffset.get();y+=calculateContentCenterOffset({contentHeight:contentDimensions.get().height,windowHeight:windowDimensions.get().height,safeArea:safeArea.get()});if(sharedTransitionState.get()===TransitionStates.YEETED){y+=height/4;}}if(zIndexOverride.get()){zIndex=9001;}const borderRadius=computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius});const opacity=sharedVisible.get()===0&&((_focused$get3=focused.get())===null||_focused$get3===void 0?void 0:_focused$get3.id)!==id?0:!isFocused&&!isRTCConnected?CONNECTING_OPACITY:1;const gestureActive=wrapperOffset.get().gestureActive;const scaleTarget=sharedVisible.get()===1||((_focused$get4=focused.get())===null||_focused$get4===void 0?void 0:_focused$get4.id)===id?1:0.8;return{zIndex:withDelay(zIndexOverride.get()?0:100,withTiming(zIndex,ZINDEX_TIMING)),opacity:withTiming(opacity,OPACITY_TIMING,isScrollVisible.get()?'animate-always':'animate-never',function VoicePanelCardTsx18Factory([_worklet_5099113999013_init_data,sharedVisible,sharedTransitionState,TransitionStates,scheduleOnRN,cleanUp]){const VoicePanelCardTsx18=function(finished){if(finished&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){scheduleOnRN(cleanUp);}};VoicePanelCardTsx18.__closure=[sharedVisible,sharedTransitionState,TransitionStates,scheduleOnRN,cleanUp];VoicePanelCardTsx18.__workletHash=5099113999013;VoicePanelCardTsx18.__initData=_worklet_5099113999013_init_data;return VoicePanelCardTsx18;}([_worklet_5099113999013_init_data,sharedVisible,sharedTransitionState,TransitionStates,scheduleOnRN,cleanUp])),width:width,height:height,transform:[{translateX:gestureActive||holdPosition?x:withSpring(x,layoutPhysics,'respect-motion-settings')},{translateY:gestureActive||holdPosition?y:withSpring(y,layoutPhysics,'respect-motion-settings')},{scale:withSpring(scaleTarget,CARD_SCALE_PHYSICS)}],borderRadius:withSpring(borderRadius,SCALE_PHYSICS)};})" };
+let closure_59 = { code: "(function VoicePanelCardTsx20(finished){let[scheduleOnRN,reportPIPArrival]=this.__closure;if(finished===true){scheduleOnRN(reportPIPArrival);}})" };
+let closure_60 = { code: "(function VoicePanelCardTsx21(values){let[isPIP,pipCardSize,holdPosition,thawing,withSpring,layoutPhysics,wrapperOffset]=this.__closure;const initialValues={originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight};if(isPIP){pipCardSize.set({width:values.targetWidth,height:values.targetHeight});}const motion=holdPosition||thawing.get()?'animate-never':'respect-motion-settings';return{animations:{originX:withSpring(values.targetOriginX,layoutPhysics,motion),originY:withSpring(values.targetOriginY,layoutPhysics,motion),width:withSpring(values.targetWidth,layoutPhysics,motion),height:withSpring(values.targetHeight,layoutPhysics,motion)},initialValues:initialValues,callback:function(){const _wrapperOffset=wrapperOffset.get();if(!_wrapperOffset.gestureActive&&_wrapperOffset.y!==0){wrapperOffset.set({gestureActive:false,x:0,y:0});}}};})" };
+let closure_62 = { code: "(function VoicePanelCardTsx22(){let[EDGE_GUTTER,coords,scrollPosition,windowDimensions]=this.__closure;const yPos=EDGE_GUTTER+coords.get().y;return yPos>scrollPosition.get()-coords.get().height&&yPos<scrollPosition.get()+windowDimensions.get().height;})" };
+let closure_63 = { code: "(function VoicePanelCardTsx23(values,disableAnimation=false){let[layoutTransitionFunction,physics,holdPosition,thawing]=this.__closure;return layoutTransitionFunction(values,physics,disableAnimation||holdPosition||thawing.get());})" };
 const memoResult = react.memo(function VoicePanelCard(cleanUp) {
   let DEFAULT;
   let VideoSpinnerContext;
@@ -1755,19 +1761,18 @@ const memoResult = react.memo(function VoicePanelCard(cleanUp) {
   let num;
   let scrollPosition;
   let streamId;
-  let tmp24;
   let tmp25;
   let tmp26;
   let tmp27;
   let tmp28;
+  let tmp29;
+  let tmp32;
   let tmp33;
   let tmp34;
   let tmp35;
   let tmp36;
-  let tmp37;
-  let tmp38;
-  let tmp42;
-  let tmp43;
+  let tmp40;
+  let tmp41;
   let transitionState;
   let user;
   let userAvatarDecoration;
@@ -1781,56 +1786,61 @@ const memoResult = react.memo(function VoicePanelCard(cleanUp) {
   let tmp = sharedValue2;
   let tmp2 = dependencyMap;
   cleanUp = cleanUp.cleanUp;
-  const context = react.useContext(sharedValue2(11918));
-  ({ channelId, guildId, isCall, isDockEnabled, mountedCards, layoutManager, scrollPosition, windowDimensions } = context);
-  const tmp4 = sharedValue2(19832)(id, channelId, guildId);
-  let tmp6 = tmp4;
-  const obj2 = id2(19832);
-  if (!obj2.isStableParticipantWithUser(tmp4)) {
-    tmp6 = closure_50;
+  const context = react.useContext(sharedValue2(11984));
+  ({ channelId, guildId, isCall, isDockEnabled, mountedCards } = context);
+  const thawing = context.pipHandoff.cardThaw.thawing;
+  const tmp4 = id2;
+  ({ layoutManager, scrollPosition, windowDimensions } = context);
+  const obj2 = id2(1655);
+  const sharedValue = obj2.useSharedValue(0);
+  const tmp6 = sharedValue2(19988)(id, channelId, guildId);
+  let tmp7 = tmp6;
+  const obj3 = id2(19988);
+  if (!obj3.isStableParticipantWithUser(tmp6)) {
+    tmp7 = closure_52;
   }
-  isSelf = tmp6.isSelf;
-  id2 = tmp6.user.id;
+  isSelf = tmp7.isSelf;
+  id2 = tmp7.user.id;
   const items = [RTCConnectionStore];
-  const tmp5Result = id2(504);
-  const stateFromStores = tmp5Result.useStateFromStores(items, () => connected.isConnected());
-  const tmp5Result10 = id2(19832);
-  const tmp8 = tmp5Result10.isStableUserParticipant(tmp4) && tmp4.ringing;
+  const tmp4Result = tmp4(504);
+  const stateFromStores = tmp4Result.useStateFromStores(items, () => connected.isConnected());
+  const tmp4Result8 = tmp4(19988);
+  const tmp9 = tmp4Result8.isStableUserParticipant(tmp6) && tmp6.ringing;
   let str = "";
-  if (null != tmp4) {
+  if (null != tmp6) {
     str = "";
-    if ("user" in tmp4) {
-      str = tmp4.user.id;
+    if ("user" in tmp6) {
+      str = tmp6.user.id;
     }
   }
   let type1;
-  const tmpResult = tmp(12692);
-  if (tmp4 != null) {
-    type1 = tmp4.type;
+  const tmpResult = tmp(12788);
+  if (tmp6 != null) {
+    type1 = tmp6.type;
   }
   if (type1 === ParticipantTypes.STREAM) {
-    DEFAULT = tmp5(6033).MediaEngineContextTypes.STREAM;
+    DEFAULT = tmp4(6096).MediaEngineContextTypes.STREAM;
   } else {
-    DEFAULT = tmp5(6033).MediaEngineContextTypes.DEFAULT;
+    DEFAULT = tmp4(6096).MediaEngineContextTypes.DEFAULT;
   }
   const tmpResultResult = tmpResult(DEFAULT, str);
-  const tmp13 = tmp(19859)(str);
-  const useSharedValue = tmp5(1652).useSharedValue;
-  id2(1652);
-  if (transitionState === id2(5314).TransitionStates.MOUNTED) {
+  const tmp14 = tmp(20016)(str);
+  const useSharedValue = tmp4(1655).useSharedValue;
+  tmp4(1655);
+  if (transitionState === tmp4(5377).TransitionStates.MOUNTED) {
     num = 1;
   } else {
     num = 0;
   }
-  const sharedValue = useSharedValue(num);
-  let tmp17 = null != id2;
-  const useSharedValue2 = tmp5(1652).useSharedValue;
-  id2(1652);
-  if (tmp17) {
+  const sharedValue1 = useSharedValue(num);
+  let tmp18 = null != id2;
+  const useSharedValue2 = tmp4(1655).useSharedValue;
+  tmp4(1655);
+  if (tmp18) {
     let isSpeakingResult = SpeakingStore.isSpeaking(id2) || SoundboardStore.isUserPlayingSounds(id2);
-    tmp17 = isSpeakingResult;
+    tmp18 = isSpeakingResult;
   }
-  sharedValue2 = useSharedValue2(tmp17);
+  sharedValue2 = useSharedValue2(tmp18);
   const items1 = [id2, sharedValue2];
   const layoutEffect = obj.useLayoutEffect(() => {
     function handleChange() {
@@ -1859,15 +1869,15 @@ const memoResult = react.memo(function VoicePanelCard(cleanUp) {
       const result1 = SoundboardStore.removeReactChangeListener(handleChange);
     };
   }, items1);
-  const tmp5Result13 = id2(11921);
-  const cardLayoutCoordsSubscription = tmp5Result13.useCardLayoutCoordsSubscription(id, layoutManager);
-  const items2 = [closure_60, EDGE_GUTTER, cardLayoutCoordsSubscription, scrollPosition, windowDimensions];
+  const tmp4Result11 = tmp4(11987);
+  const cardLayoutCoordsSubscription = tmp4Result11.useCardLayoutCoordsSubscription(id, layoutManager);
+  const items2 = [closure_62, EDGE_GUTTER, cardLayoutCoordsSubscription, scrollPosition, windowDimensions];
   let c0;
   let c1;
   let c2;
   let c3;
-  [tmp24, tmp25, tmp26, tmp27, tmp28] = items2;
-  const tmp5Result14 = id2(1652);
+  [tmp25, tmp26, tmp27, tmp28, tmp29] = items2;
+  const tmp4Result12 = tmp4(1655);
   class VoicePanelCardTsx22 {
     constructor() {
       const sum = c0 + _undefined.get().y;
@@ -1881,144 +1891,139 @@ const memoResult = react.memo(function VoicePanelCard(cleanUp) {
       return tmp3;
     }
   }
-  const items3 = [tmp25, tmp26, tmp27, tmp28];
+  const items3 = [tmp26, tmp27, tmp28, tmp29];
   VoicePanelCardTsx22.__closure = items3;
   VoicePanelCardTsx22.__workletHash = 8849523770324;
-  VoicePanelCardTsx22.__initData = tmp24;
-  const derivedValue = tmp5Result14.useDerivedValue(VoicePanelCardTsx22);
-  const tmp5Result15 = id2(19788);
-  const pIPState = tmp5Result15.usePIPState();
-  let scale = pIPState.scale;
-  const tmp5Result16 = id2(1652);
-  const sharedValue1 = tmp5Result16.useSharedValue(scale.get());
+  VoicePanelCardTsx22.__initData = tmp25;
+  const derivedValue = tmp4Result12.useDerivedValue(VoicePanelCardTsx22);
   if (isDockEnabled) {
     isDockEnabled = !stateFromStores;
   }
   const memo = obj.useMemo(() => {
-    obj = { mass: closure_1_13.mass, damping: sharedValue2(dependencyMap[59])(closure_1_13.damping - 2, closure_1_13.damping + 2), stiffness: sharedValue2(dependencyMap[59])(closure_1_13.stiffness - 20, closure_1_13.stiffness + 20) };
+    obj = { mass: closure_1_15.mass, damping: sharedValue2(dependencyMap[61])(closure_1_15.damping - 2, closure_1_15.damping + 2), stiffness: sharedValue2(dependencyMap[61])(closure_1_15.stiffness - 20, closure_1_15.stiffness + 20) };
     return obj;
   }, []);
-  const items4 = [closure_61, layoutTransitionFunction, memo, pIPState, sharedValue1, isDockEnabled];
+  const items4 = [closure_63, layoutTransitionFunction, memo, isDockEnabled, thawing];
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
   c3 = undefined;
-  let c4;
-  [tmp33, tmp34, tmp35, tmp36, tmp37, tmp38] = items4;
+  [tmp32, tmp33, tmp34, tmp35, tmp36] = items4;
   class VoicePanelCardTsx23 {
     constructor(arg0) {
       let flag = arg1;
       if (arg1 === undefined) {
         flag = false;
       }
-      const scale = _undefined.scale;
       const tmp = c0;
       const tmp2 = c1;
-      const tmp3 = c3;
       if (!flag) {
-        flag = c4;
+        flag = c2;
       }
-      return tmp(arg0, tmp2, scale, tmp3, flag);
+      if (!flag) {
+        flag = _undefined.get();
+      }
+      return tmp(arg0, tmp2, flag);
     }
   }
-  const items5 = [tmp34, tmp35, tmp36, tmp37, tmp38];
+  const items5 = [tmp33, tmp34, tmp35, tmp36];
   VoicePanelCardTsx23.__closure = items5;
-  VoicePanelCardTsx23.__workletHash = 8963961843367;
-  VoicePanelCardTsx23.__initData = tmp33;
-  const items6 = [isDockEnabled, memo, pIPState.scale, sharedValue1];
+  VoicePanelCardTsx23.__workletHash = 5615584998884;
+  VoicePanelCardTsx23.__initData = tmp32;
+  const items6 = [isDockEnabled, memo, thawing];
   const callback = obj.useCallback(VoicePanelCardTsx23, items6);
-  if (item.type === closure_15.CTA) {
+  if (item.type === closure_17.CTA) {
     const id3 = item.id;
-    if (closure_11.NO_VIDEO_PARTICIPANTS === id3) {
-      tmp42 = closure_22(tmp(19861), {});
-      tmp43 = closure_22;
-    } else if (closure_11.CALLER_DISCONNECTED === id3) {
-      tmp42 = closure_22(tmp(19862), {});
-      tmp43 = closure_22;
-    } else if (closure_11.NO_STAGE_SPEAKERS === id3) {
-      tmp42 = closure_22(tmp(19863), {});
-      tmp43 = closure_22;
+    if (closure_13.NO_VIDEO_PARTICIPANTS === id3) {
+      tmp40 = closure_24(tmp(20018), {});
+      tmp41 = closure_24;
+    } else if (closure_13.CALLER_DISCONNECTED === id3) {
+      tmp40 = closure_24(tmp(20019), {});
+      tmp41 = closure_24;
+    } else if (closure_13.NO_STAGE_SPEAKERS === id3) {
+      tmp40 = closure_24(tmp(20020), {});
+      tmp41 = closure_24;
     }
-    const obj3 = { cleanUp, coords: cardLayoutCoordsSubscription, id, isRTCConnected: stateFromStores, isScrollVisible: derivedValue, layoutPhysics: memo, transitionState, sharedVisible: sharedValue, children: items7 };
-    items7 = [tmp42, , ];
-    let tmp43Result = null != tmp4;
-    const tmp57 = closure_24;
-    const tmp58 = AnimatedWrapper;
-    if (tmp43Result) {
-      const obj4 = { isRinging: tmp8, participant: tmp4, label: userNick, layout: callback };
+    const obj4 = { cleanUp, coords: cardLayoutCoordsSubscription, id, isRTCConnected: stateFromStores, isScrollVisible: derivedValue, layoutPhysics: memo, transitionState, sharedVisible: sharedValue1, longPressProgress: sharedValue, children: items7 };
+    items7 = [tmp40, , ];
+    let tmp41Result = null != tmp6;
+    const tmp55 = closure_26;
+    const tmp56 = AnimatedWrapper;
+    if (tmp41Result) {
+      const obj5 = { isRinging: tmp9, participant: tmp6, label: userNick, layout: callback };
       userNick = undefined;
-      const tmpResult3 = tmp(19875);
-      const tmp5Result17 = id2(19832);
-      if (tmp5Result17.isStableParticipantWithUser(tmp4)) {
-        userNick = tmp4.userNick;
+      const tmpResult3 = tmp(20032);
+      const tmp4Result13 = tmp4(19988);
+      if (tmp4Result13.isStableParticipantWithUser(tmp6)) {
+        userNick = tmp6.userNick;
       }
-      tmp43Result = tmp43(tmpResult3, obj4);
+      tmp41Result = tmp41(tmpResult3, obj5);
     }
-    items7[1] = tmp43Result;
-    const tmp5Result18 = id2(19832);
-    let result = tmp5Result18.isStableParticipantWithUser(tmp4);
+    items7[1] = tmp41Result;
+    const tmp4Result14 = tmp4(19988);
+    let result = tmp4Result14.isStableParticipantWithUser(tmp6);
     if (result) {
-      const obj5 = { speakingOrPlayingSoundboard: sharedValue2, id, userId: tmp4.user.id, isSelf, layout: callback };
-      result = tmp43(closure_45, obj5);
+      const obj6 = { speakingOrPlayingSoundboard: sharedValue2, id, userId: tmp6.user.id, isSelf, layout: callback };
+      result = tmp41(closure_47, obj6);
     }
     items7[2] = result;
-    return tmp57(tmp58, obj3);
-  } else if (null != tmp4) {
+    return tmp55(tmp56, obj4);
+  } else if (null != tmp6) {
     const type = item.type;
-    const type2 = tmp4.type;
+    const type2 = tmp6.type;
     if (ParticipantTypes.USER === type2) {
-      let tmp45;
-      ({ streamId, user } = tmp4);
-      if (tmp4.hasVideo) {
+      let tmp43;
+      ({ streamId, user } = tmp6);
+      if (tmp6.hasVideo) {
         if (stateFromStores) {
-          let tmp45Result;
-          if (tmp4.canRenderVideo) {
-            let tmp48;
+          let tmp43Result;
+          if (tmp6.canRenderVideo) {
+            let tmp46;
             if (null != tmpResultResult) {
-              let tmp48Result;
-              if (null == tmp13) {
-                const obj6 = { avError: tmpResultResult, userId: user.id, style: StyleSheet.absoluteFill };
-                tmp48Result = closure_22(tmp(19864), obj6);
-                tmp48 = closure_22;
+              let tmp46Result;
+              if (null == tmp14) {
+                const obj7 = { avError: tmpResultResult, userId: user.id, style: StyleSheet.absoluteFill };
+                tmp46Result = closure_24(tmp(20021), obj7);
+                tmp46 = closure_24;
               }
-              tmp45 = tmp48;
-              tmp45Result = tmp48Result;
+              tmp43 = tmp46;
+              tmp43Result = tmp46Result;
             }
-            tmp48 = closure_22;
-            const obj7 = { id: tmp44, userId: user.id, streamId, isScrollVisible: derivedValue, videoSpinnerContext: isSelf ? VideoSpinnerContext.SELF_VIDEO : VideoSpinnerContext.REMOTE_VIDEO, sharedCoords: cardLayoutCoordsSubscription, isCamera: true, focusOnReady: isCall, layout: callback };
-            const tmpResult4 = tmp(19853);
+            tmp46 = closure_24;
+            const obj9 = { id: tmp42, userId: user.id, streamId, isScrollVisible: derivedValue, videoSpinnerContext: isSelf ? VideoSpinnerContext.SELF_VIDEO : VideoSpinnerContext.REMOTE_VIDEO, sharedCoords: cardLayoutCoordsSubscription, isCamera: true, focusOnReady: isCall, layout: callback };
+            const tmpResult4 = tmp(20009);
             if (streamId == null) {
               streamId = null;
             }
-            VideoSpinnerContext = tmp5(12701).VideoSpinnerContext;
+            VideoSpinnerContext = tmp4(12797).VideoSpinnerContext;
             if (isCall) {
               isCall = !isSelf;
             }
-            tmp48Result = tmp48(tmpResult4, obj7);
+            tmp46Result = tmp46(tmpResult4, obj9);
           }
-          tmp43 = tmp45;
-          tmp42 = tmp45Result;
+          tmp41 = tmp43;
+          tmp40 = tmp43Result;
         }
       }
-      tmp45 = closure_22;
+      tmp43 = closure_24;
       let flag = false;
-      const obj8 = { isRinging: tmp8, avatarURI: user.getAvatarURL(guildId, 80, false), avatarDecoration: userAvatarDecoration, layout: callback, layoutPhysics: memo, userId: user.id, guildId, channelId };
-      userAvatarDecoration = tmp4.userAvatarDecoration;
-      tmp45Result = tmp45(closure_40, obj8);
+      const obj10 = { isRinging: tmp9, avatarURI: user.getAvatarURL(guildId, 80, false), avatarDecoration: userAvatarDecoration, layout: callback, layoutPhysics: memo, userId: user.id, guildId, channelId };
+      userAvatarDecoration = tmp6.userAvatarDecoration;
+      tmp43Result = tmp43(closure_42, obj10);
     } else if (ParticipantTypes.STREAM === type2) {
-      const obj10 = { userId: tmp4.user.id, id: null, streamGuildId: null, streamId: null, userNick: null, isSelf, sharedCoords: cardLayoutCoordsSubscription, isScrollVisible: derivedValue, layout: callback };
-      ({ id: obj9.id, streamGuildId: obj9.streamGuildId, streamId: obj9.streamId, userNick: obj9.userNick } = tmp4);
-      tmp42 = closure_22(closure_35, obj10);
-      tmp43 = closure_22;
+      const obj11 = { userId: tmp6.user.id, id: null, streamGuildId: null, streamId: null, userNick: null, isSelf, sharedCoords: cardLayoutCoordsSubscription, isScrollVisible: derivedValue, layout: callback, longPressProgress: sharedValue };
+      ({ id: obj8.id, streamGuildId: obj8.streamGuildId, streamId: obj8.streamId, userNick: obj8.userNick } = tmp6);
+      tmp40 = closure_24(closure_37, obj11);
+      tmp41 = closure_24;
     } else if (ParticipantTypes.ACTIVITY === type2) {
-      const obj11 = { sharedVisible: sharedValue, applicationId: tmp4.applicationId, layout: callback };
-      tmp42 = closure_22(tmp(19865), obj11, tmp4.id);
-      tmp43 = closure_22;
+      const obj12 = { sharedVisible: sharedValue1, applicationId: tmp6.applicationId, layout: callback };
+      tmp40 = closure_24(tmp(20022), obj12, tmp6.id);
+      tmp41 = closure_24;
     }
   }
-  const obj12 = { isRinging: tmp8, avatarURI: "a", avatarDecoration: "isArray", layout: callback, layoutPhysics: memo, channelId };
-  tmp42 = closure_22(closure_40, obj12);
-  tmp43 = closure_22;
+  const obj13 = { isRinging: tmp9, avatarURI: "a", avatarDecoration: "isArray", layout: callback, layoutPhysics: memo, channelId };
+  tmp40 = closure_24(closure_42, obj13);
+  tmp41 = closure_24;
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCard.tsx");

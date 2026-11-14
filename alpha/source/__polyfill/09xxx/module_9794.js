@@ -1,83 +1,28 @@
 // Module ID: 9794
 // Function ID: 9795
-// Dependencies: [9754, 9787]
-// Exports: makePromiseBuffer
+// Dependencies: [9795, 9798]
+// Exports: addGlobalErrorInstrumentationHandler
 
 // Module 9794
-import _mod9754 from "module_9754" /* 9754 */;
+import _mod9795 from "module_9795" /* 9795 */;
+import _mod9798 from "module_9798" /* 9798 */;
 
-let diff;
-
-
-export function makePromiseBuffer(arg0) {
-  let closure_0 = arg0;
-  const items = [];
-  let obj = {
-    $: items,
-    add(fn) {
-      let promise;
-      const tmp2 = undefined === promise || items.length < tmp;
-      if (tmp2) {
-        promise = fn();
-        const arr = items;
-        if (-1 === items.indexOf(promise)) {
-          arr.push(promise);
-        }
-        const nextPromise = promise.then(() => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first;
-        });
-        nextPromise.then(null, () => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const self = this;
-        const self2 = this;
-        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      let length;
-      closure_0 = arg0;
-      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        let closure_3;
-        closure_0 = fn;
-        let closure_1 = arg1;
-        const arr = length;
-        if (length.length) {
-          const tmp = globalThis;
-          const _setTimeout = setTimeout;
-          let tmp2 = closure_0;
-          const timeout = setTimeout(() => {
-            const tmp2 = closure_0 && tmp > 0;
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            const obj = _mod9754;
-            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
-            resolvedSyncPromiseResult.then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
-              }
-            }, closure_1);
-          });
-        } else {
-          return fn(true);
-        }
-      });
-      return syncPromise;
-    }
+function instrumentError() {
+  onerror = _mod9798.GLOBAL_OBJ.onerror;
+  _mod9798.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
+    const obj = { column, error, line, msg, url };
+    const obj2 = _mod9795;
+    obj2.triggerHandlers("error", obj);
+    const applyResult = onerror && onerror(...arguments);
+    return applyResult;
   };
-  return obj;
+  _mod9798.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
+}
+let onerror = null;
+
+export function addGlobalErrorInstrumentationHandler(arg0) {
+  const obj = _mod9795;
+  obj.addHandler("error", arg0);
+  const obj2 = _mod9795;
+  obj2.maybeInstrument("error", instrumentError);
 }

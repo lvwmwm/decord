@@ -1,11 +1,11 @@
-// Module ID: 15558
-// Function ID: 15559
+// Module ID: 15672
+// Function ID: 15673
 // Name: useConjureBotApplication
-// Dependencies: [2162, 6990, 504, 6992, 2]
+// Dependencies: [2165, 7053, 504, 7055, 2]
 // Exports: default
 
-// Module 15558 (useConjureBotApplication)
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+// Module 15672 (useConjureBotApplication)
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

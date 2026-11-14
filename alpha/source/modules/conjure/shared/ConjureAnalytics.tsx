@@ -1,18 +1,18 @@
-// Module ID: 7319
-// Function ID: 7320
+// Module ID: 7383
+// Function ID: 7384
 // Name: ConjureAnalytics
-// Dependencies: [6954, 1072, 7197, 6004, 1377, 6955, 7320, 1252, 2]
+// Dependencies: [7017, 1072, 7260, 6067, 1380, 7018, 7384, 1256, 2]
 // Exports: trackConjureBuilderOpened, trackConjureErrored, trackConjurePublishActionClicked, trackConjureRatingFeedbackSubmitted, trackConjureRatingSubmitted, trackConjureRatingViewed, trackConjureTurnResulted
 
-// Module 7319 (ConjureAnalytics)
+// Module 7383 (ConjureAnalytics)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6954 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6955 */;
-import ConjureUtils from "ConjureUtils" /* 7197 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 7320 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
+import ConjureUtils from "ConjureUtils" /* 7260 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 7384 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;
@@ -105,7 +105,7 @@ function ratingPromptFields(projectId) {
   let surface;
   let tmp11;
   let turnId;
-  const f92857 = (item) => null != item;
+  const f94049 = (item) => null != item;
   projectId = projectId.projectId;
   const obj = { turn_id: turnId, publish_reason: publishReason, surface, client_platform: str };
   ({ turnId, publishReason, surface } = projectId);
@@ -147,8 +147,8 @@ function ratingPromptFields(projectId) {
   }
   HermesBuiltin.arraySpread(items, prop, tmp8);
   const mapped = items.map((item) => closure_1_8[item]);
-  items1 = [...new Set(mapped.filter(f92857))];
-  new Set(mapped.filter(f92857));
+  items1 = [...new Set(mapped.filter(f94049))];
+  new Set(mapped.filter(f94049));
   const publishState = projectId.publishState;
   tmp11 = null == publishState;
   const projectId2 = projectId.projectId;

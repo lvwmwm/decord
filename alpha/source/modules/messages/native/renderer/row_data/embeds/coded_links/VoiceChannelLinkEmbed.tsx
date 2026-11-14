@@ -1,26 +1,26 @@
-// Module ID: 15461
-// Function ID: 15462
+// Module ID: 15575
+// Function ID: 15576
 // Name: VoiceChannelLinkEmbed
-// Dependencies: [32, 17, 5110, 5092, 5114, 5175, 5185, 1385, 1072, 8775, 9103, 1411, 1377, 1113, 7968, 5891, 2]
+// Dependencies: [32, 17, 5173, 5155, 5177, 5238, 5248, 1388, 1072, 8842, 9170, 1414, 1380, 1113, 8033, 5954, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 15461 (VoiceChannelLinkEmbed)
+// Module 15575 (VoiceChannelLinkEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import GuildRecord from "GuildRecord" /* 5110 */;
-import useChannelName from "useChannelName" /* 5891 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
-import Constants2 from "Constants" /* 8775 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9103 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import GuildRecord from "GuildRecord" /* 5173 */;
+import useChannelName from "useChannelName" /* 5954 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
+import Constants2 from "Constants" /* 8842 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9170 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -60,7 +60,7 @@ export function createVoiceChannelLinkEmbed(code, arg1) {
             }
             if (null != icon) {
               let id;
-              const getGuildIconURL = tmp5(1411).getGuildIconURL;
+              const getGuildIconURL = tmp5(1414).getGuildIconURL;
               AvatarUtilsDefault;
               if (guild != null) {
                 id = guild.id;

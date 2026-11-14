@@ -1,10 +1,10 @@
-// Module ID: 6132
-// Function ID: 6133
+// Module ID: 6195
+// Function ID: 6196
 // Name: WebStreamingOptimizationsExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 6132 (WebStreamingOptimizationsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 6195 (WebStreamingOptimizationsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

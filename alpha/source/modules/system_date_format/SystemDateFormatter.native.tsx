@@ -1,12 +1,12 @@
-// Module ID: 5941
-// Function ID: 5942
+// Module ID: 6004
+// Function ID: 6005
 // Name: SystemDateFormatter
-// Dependencies: [5942, 1377, 2]
+// Dependencies: [6005, 1380, 2]
 // Exports: supportsSystemDateFormatter
 
-// Module 5941 (SystemDateFormatter)
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import react_native from "react-native" /* 5942 */;
+// Module 6004 (SystemDateFormatter)
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import react_native from "react-native" /* 6005 */;
 import size from "module_2" /* 2 */;
 
 let activateResult;

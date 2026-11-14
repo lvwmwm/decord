@@ -1,30 +1,30 @@
-// Module ID: 12602
-// Function ID: 12603
+// Module ID: 12698
+// Function ID: 12699
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 11339, 2140, 12603, 1072, 6282, 5248, 1113, 2148, 5914, 6994, 5921, 1377, 2116, 5922, 11330, 8719, 8593, 6205, 1411, 12483, 12604, 8657, 12605, 2]
+// Dependencies: [109, 5, 11406, 2143, 12699, 1072, 6345, 5311, 1113, 2151, 5977, 7057, 5984, 1380, 2119, 5985, 11397, 8786, 8660, 6268, 1414, 12579, 12700, 8724, 12701, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getConjureProjectId, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getInstallableApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isConjureAppWithoutIcon, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 12602 (AppLauncherUtils)
+// Module 12698 (AppLauncherUtils)
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import Server from "Server" /* 2116 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2148 */;
-import MessageConstants from "MessageConstants" /* 5248 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5914 */;
-import getPlatformDefault from "getPlatform" /* 5921 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6282 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6994 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8657 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 12483 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12604 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 12605 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import Server from "Server" /* 2119 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2151 */;
+import MessageConstants from "MessageConstants" /* 5311 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import getPlatformDefault from "getPlatform" /* 5984 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 7057 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12700 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 12701 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11339 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import AppLauncherStore from "AppLauncherStore" /* 12603 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import AppLauncherStore from "AppLauncherStore" /* 12699 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

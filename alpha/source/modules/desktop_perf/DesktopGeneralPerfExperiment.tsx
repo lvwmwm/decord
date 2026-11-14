@@ -1,12 +1,12 @@
-// Module ID: 6127
-// Function ID: 6128
+// Module ID: 6190
+// Function ID: 6191
 // Name: DesktopGeneralPerfExperiment
-// Dependencies: [1449, 1377, 2]
+// Dependencies: [1452, 1380, 2]
 // Exports: getDesktopGeneralPerfExperimentConfig, getIsQuestRingVisibleStepsEnabled
 
-// Module 6127 (DesktopGeneralPerfExperiment)
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 6190 (DesktopGeneralPerfExperiment)
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-desktop-general-perf", kind: "user", defaultConfig: { skipSilentDelayEstimatorFfts: false, processPollingPerf: false, keepRendererLogFileOpen: false, questRingVisibleSteps: false }, variations: { 0: { skipSilentDelayEstimatorFfts: false, processPollingPerf: false, keepRendererLogFileOpen: false, questRingVisibleSteps: false }, 1: { skipSilentDelayEstimatorFfts: true, processPollingPerf: true, keepRendererLogFileOpen: true, questRingVisibleSteps: true } } };

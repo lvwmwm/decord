@@ -1,32 +1,31 @@
-// Module ID: 8969
-// Function ID: 8970
+// Module ID: 9036
+// Function ID: 9037
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 5244, 1192, 6008, 5286, 1385, 1387, 1072, 6108, 8964, 21, 5243, 575, 5839, 2171, 8970, 8823, 8808, 1113, 8971, 8975, 8979, 8980, 5489, 8968, 8981, 15547, 9898, 1092, 11193, 1377, 9431, 5957, 5830, 504, 7852, 11103, 9243, 9246, 15551, 1252, 11212, 5438, 7885, 15553, 5866, 5873, 9224, 2]
+// Dependencies: [19, 17, 5307, 1192, 6071, 5349, 1388, 1390, 1072, 6171, 9031, 21, 5306, 575, 5902, 2174, 9037, 8890, 8875, 1113, 9038, 9042, 9046, 9047, 5552, 9035, 9048, 15661, 9965, 1092, 11260, 6020, 5893, 504, 7918, 11170, 9310, 9313, 15665, 1256, 11279, 5501, 7951, 15667, 5929, 5936, 9291, 2]
 // Exports: default
 
-// Module 8969 (PremiumUpsellActionSheet)
+// Module 9036 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import ChatInputUtils from "ChatInputUtils" /* 5438 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import LinearGradientDefault from "LinearGradient" /* 5830 */;
-import FastImageDefault from "FastImage" /* 5957 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6108 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8964 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8968 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import ChatInputUtils from "ChatInputUtils" /* 5501 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import FastImageDefault from "FastImage" /* 6020 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 6171 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9031 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9035 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6008 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
-import UserStore from "UserStore" /* 1385 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import UserStore from "UserStore" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let guildId;
@@ -45,27 +44,14 @@ let obj4;
 let obj5;
 let obj6;
 let obj7;
-let tmp;
 let unpackModuleId;
-const APNGPlayer = tmp(9431);
 function PremiumUpsellImage(arg0) {
   let image;
   let style;
   let useReducedMotion;
   ({ image, style, useReducedMotion } = arg0);
-  const obj = PlatformUtils;
-  if (obj.isAndroid()) {
-    if (!useReducedMotion) {
-      let tmp5;
-      if (null != image.uri) {
-        const obj2 = { url: image.uri, style, autoplay: true };
-        tmp5 = authStore4(APNGPlayer.APNGPlayer, obj2);
-      }
-      return tmp5;
-    }
-  }
-  const obj3 = { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false };
-  tmp5 = authStore4(FastImageDefault, obj3);
+  const obj = { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false };
+  return authStore4(FastImageDefault, obj);
 }
 function PremiumUpsellHero(arg0) {
   let items;
@@ -169,18 +155,17 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
   let useTier0UpsellContent;
   let onViewAllPerks;
   let closure_4;
-  const onDismiss = analyticsLocations.onDismiss;
   const tmp = closure_21();
   const tmp2 = legacyProps;
   const tmp3 = useTier0UpsellContent;
-  let obj = legacyProps(useTier0UpsellContent[35]);
+  let obj = legacyProps(useTier0UpsellContent[33]);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const tmp5 = analyticsLocations;
-  analyticsLocations = analyticsLocations(useTier0UpsellContent[36])(analyticsLocations1).analyticsLocations;
+  analyticsLocations = analyticsLocations(useTier0UpsellContent[34])(analyticsLocations1).analyticsLocations;
   let initialUpsellKey;
-  const usePremiumUpsellConfig = legacyProps(useTier0UpsellContent[37]).usePremiumUpsellConfig;
-  legacyProps(useTier0UpsellContent[37]);
+  const usePremiumUpsellConfig = legacyProps(useTier0UpsellContent[35]).usePremiumUpsellConfig;
+  legacyProps(useTier0UpsellContent[35]);
   const tmp7 = analyticsLocations1;
   if (legacyProps != null) {
     initialUpsellKey = legacyProps.initialUpsellKey;
@@ -192,20 +177,20 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
   const premiumUpsellConfig = usePremiumUpsellConfig(initialUpsellKey, analyticsLocations);
   useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
   onViewAllPerks = premiumUpsellConfig.onViewAllPerks;
-  const tmp2Result14 = tmp2(tmp3[38]);
+  const tmp2Result14 = tmp2(tmp3[36]);
   const premiumTrialOffer = tmp2Result14.usePremiumTrialOffer();
-  tmp2(tmp3[39]);
+  tmp2(tmp3[37]);
   let mobileRoadblockButtonText = null;
   if (!useTier0UpsellContent) {
     let obj2 = { subscriptionTier: TIER_2.TIER_2, trialOffer: premiumTrialOffer, discountOffer: tmp12 };
-    const tmp2Result16 = tmp2(tmp3[40]);
+    const tmp2Result16 = tmp2(tmp3[38]);
     mobileRoadblockButtonText = tmp2Result16.getMobileRoadblockButtonText(obj2);
   }
   const items1 = [ThemeStore];
-  const tmp2Result17 = tmp2(tmp3[35]);
+  const tmp2Result17 = tmp2(tmp3[33]);
   const stateFromStores1 = tmp2Result17.useStateFromStores(items1, () => theme.theme);
   const items2 = [SelectedGuildStore];
-  const tmp2Result18 = tmp2(tmp3[35]);
+  const tmp2Result18 = tmp2(tmp3[33]);
   const stateFromStores2 = tmp2Result18.useStateFromStores(items2, () => guildId.getGuildId());
   const tmp18 = useTier0UpsellContent ? closure_11.TIER_0 : closure_11.TIER_2;
   const tmp2Result19 = tmp2(tmp3[14]);
@@ -291,7 +276,7 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
   closure_4 = tmp25;
   const items4 = [AccessibilityStore];
   const items5 = [obj3[featureName], analyticsLocations, useTier0UpsellContent, legacyProps];
-  const tmp2Result25 = tmp2(tmp3[35]);
+  const tmp2Result25 = tmp2(tmp3[33]);
   const stateFromStores3 = tmp2Result25.useStateFromStores(items4, () => useReducedMotion.useReducedMotion);
   const effect = onViewAllPerks.useEffect(() => {
     let analyticsPage;
@@ -321,35 +306,34 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
     }
     track(PREMIUM_UPSELL_VIEWED, obj);
   }, items5);
-  const tmp28 = tmp5(tmp3[42])(useTier0UpsellContent, onViewAllPerks, obj3[featureName].analyticsPage, undefined, tmp7);
+  const tmp28 = tmp5(tmp3[40])(useTier0UpsellContent, onViewAllPerks, obj3[featureName].analyticsPage, undefined, tmp7);
   const loading = tmp28.loading;
   [][0] = onViewAllPerks;
   const onPress = tmp28.onPress;
   let tmp24Result2 = null;
   if (null != obj3[featureName]) {
-    const obj21 = { startExpanded: true, onDismiss, children: closure_20(closure_4, obj29) };
-    const obj22 = { pageConfig: obj3[featureName], styles: tmp, useReducedMotion: stateFromStores3 };
-    const ActionSheet = tmp2(tmp3[44]).ActionSheet;
-    const items6 = [closure_18(PremiumUpsellHero, obj22), , ];
+    const obj21 = { pageConfig: obj3[featureName], styles: tmp, useReducedMotion: stateFromStores3 };
+    const ActionSheet = tmp2(tmp3[42]).ActionSheet;
+    const items6 = [closure_18(PremiumUpsellHero, obj21), , ];
     let tmp24Result = null;
-    const obj23 = { style: tmp.textContainer, children: items7 };
+    const obj22 = { style: tmp.textContainer, children: items7 };
     if (true === obj3[featureName].showBetaBadge) {
-      const obj24 = { size: tmp2(tmp3[45]).BetaSizes.SMALL, gradient: true, style: tmp.betaTag };
-      const tmp5Result = tmp5(tmp3[45]);
-      tmp24Result = tmp24(tmp5Result, obj24);
+      const obj23 = { size: tmp2(tmp3[43]).BetaSizes.SMALL, gradient: true, style: tmp.betaTag };
+      const tmp5Result = tmp5(tmp3[43]);
+      tmp24Result = tmp24(tmp5Result, obj23);
     }
     items7 = [tmp24Result, , ];
-    const obj25 = { style: tmp.text, variant: "heading-lg/semibold", accessibilityRole: "header", children: obj3[featureName].title };
-    items7[1] = closure_18(tmp2(tmp3[46]).Text, obj25);
-    const obj26 = { style: items8, variant: "body-sm/normal", children: obj3[featureName].description };
+    const obj24 = { style: tmp.text, variant: "heading-lg/semibold", accessibilityRole: "header", children: obj3[featureName].title };
+    items7[1] = closure_18(tmp2(tmp3[44]).Text, obj24);
+    const obj25 = { style: items8, variant: "body-sm/normal", children: obj3[featureName].description };
     items8 = [, ];
     ({ text: arr10[0], description: arr10[1] } = tmp);
-    items7[2] = closure_18(tmp2(tmp3[46]).Text, obj26);
-    items6[1] = closure_20(closure_4, obj23);
-    const obj27 = { style: tmp.buttonContainer, children: items9 };
-    const obj28 = { loading, onPress: tmp36, text: mobileRoadblockButtonText, icon: tmp5(tmp3[48]), variant: str2 };
+    items7[2] = closure_18(tmp2(tmp3[44]).Text, obj25);
+    items6[1] = closure_20(closure_4, obj22);
+    const obj26 = { style: tmp.buttonContainer, children: items9 };
+    const obj27 = { loading, onPress: tmp36, text: mobileRoadblockButtonText, icon: tmp5(tmp3[46]), variant: str2 };
     tmp36 = null;
-    const Button = tmp2(tmp3[47]).Button;
+    const Button = tmp2(tmp3[45]).Button;
     if (!loading) {
       tmp36 = onPress;
     }
@@ -369,14 +353,15 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
       }
       str2 = str3;
     }
+    const obj28 = { startExpanded: true, children: closure_20(closure_4, obj29) };
     obj29 = { children: items6 };
-    items9 = [closure_18(Button, obj28), ];
+    items9 = [closure_18(Button, obj27), ];
     const obj30 = { variant: "secondary", text: intl20.string(tmp2(tmp3[19]).t.PcTCB7), onPress: tmp29 };
-    const Button2 = tmp2(tmp3[47]).Button;
+    const Button2 = tmp2(tmp3[45]).Button;
     intl20 = tmp2(tmp3[19]).intl;
     items9[1] = closure_18(Button2, obj30);
-    items6[2] = closure_20(closure_4, obj27);
-    tmp24Result2 = tmp24(ActionSheet, obj21);
+    items6[2] = closure_20(closure_4, obj26);
+    tmp24Result2 = tmp24(ActionSheet, obj28);
   }
   return tmp24Result2;
 };

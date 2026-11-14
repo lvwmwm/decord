@@ -1,16 +1,16 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 16084
+// Function ID: 16085
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [19, 21, 15965, 1113, 15966, 15957, 2017, 6872, 2]
+// Dependencies: [19, 21, 16085, 1113, 16086, 16077, 2020, 6935, 2]
 // Exports: default
 
-// Module 15964 (NUFVoiceChannelsTemplate)
+// Module 16084 (NUFVoiceChannelsTemplate)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6872 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 15957 */;
-import NUFTemplateDefault from "NUFTemplate" /* 15965 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15966 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 16077 */;
+import NUFTemplateDefault from "NUFTemplate" /* 16085 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16086 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

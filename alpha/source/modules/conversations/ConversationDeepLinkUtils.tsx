@@ -1,15 +1,15 @@
-// Module ID: 9079
-// Function ID: 9080
+// Module ID: 9146
+// Function ID: 9147
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 7595, 8681, 5894, 6293, 9054, 5893, 11, 9080, 2]
+// Dependencies: [5, 7661, 8748, 5957, 6356, 9121, 5956, 11, 9147, 2]
 // Exports: consumeConversationFocusParam, getConversationPermalink
 
-// Module 9079 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5894 */;
-import ChannelUtils from "ChannelUtils" /* 6293 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7595 */;
+// Module 9146 (ConversationDeepLinkUtils)
+import ConversationConstants from "ConversationConstants" /* 5957 */;
+import ChannelUtils from "ChannelUtils" /* 6356 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7661 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8681 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8748 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -58,7 +58,7 @@ let obj = function _resolveConversationFocusLink() {
             conversation = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {

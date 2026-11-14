@@ -1,41 +1,45 @@
-// Module ID: 14427
-// Function ID: 14428
+// Module ID: 14486
+// Function ID: 14487
 // Name: CheckpointNavigationControls
-// Dependencies: [5, 17, 14146, 6314, 1072, 21, 5243, 575, 5839, 14428, 14429, 14430, 1113, 7540, 14161, 3269, 5949, 2185, 14431, 14432, 11028, 10851, 6358, 14150, 5951, 14434, 14426, 504, 6338, 12194, 14191, 6681, 6682, 1627, 2]
-// Exports: default
+// Dependencies: [5, 17, 14253, 6377, 1072, 21, 560, 5306, 575, 5902, 14485, 14487, 14489, 14490, 1113, 7606, 14271, 3317, 6012, 2188, 14492, 14493, 11095, 10920, 6421, 14260, 6014, 14495, 14496, 504, 6401, 12289, 14298, 6744, 6745, 1630, 2]
+// Exports: default, useCheckpointHomeControlsHeight
 
-// Module 14427 (CheckpointNavigationControls)
+// Module 14486 (CheckpointNavigationControls)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef3269 from "module_3269" /* 3269 */;
-import useToken from "useToken" /* 5839 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6338 */;
-import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 10851 */;
-import RetryIcon from "RetryIcon" /* 11028 */;
-import ShareIcon from "ShareIcon" /* 12194 */;
-import CheckpointTextDefault from "CheckpointText" /* 14161 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 14426 */;
-import useCheckpointPressSoundDefault from "useCheckpointPressSound" /* 14428 */;
-import _modDef14429 from "module_14429" /* 14429 */;
-import CheckpointButton2 from "CheckpointButton" /* 14430 */;
-import _modDef14431 from "module_14431" /* 14431 */;
-import ArrowSmallLeftIcon from "ArrowSmallLeftIcon" /* 14432 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _modDef3317 from "module_3317" /* 3317 */;
+import useToken from "useToken" /* 5902 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6401 */;
+import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 10920 */;
+import RetryIcon from "RetryIcon" /* 11095 */;
+import ShareIcon from "ShareIcon" /* 12289 */;
+import CheckpointTextDefault from "CheckpointText" /* 14271 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 14485 */;
+import useCheckpointPressSoundDefault from "useCheckpointPressSound" /* 14487 */;
+import _modDef14489 from "module_14489" /* 14489 */;
+import CheckpointButton2 from "CheckpointButton" /* 14490 */;
+import _modDef14492 from "module_14492" /* 14492 */;
+import ArrowSmallLeftIcon from "ArrowSmallLeftIcon" /* 14493 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 14496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 14146 */;
-import CheckpointConstants from "CheckpointConstants" /* 6314 */;
+import CheckpointStore from "CheckpointStore" /* 14253 */;
+import CheckpointConstants from "CheckpointConstants" /* 6377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import module_560 from "module_560" /* 560 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c2;
 
 let CHECKPOINT_CONTROL_ICON_SIZE;
+let CHECKPOINT_CONTROL_SIZE;
 let CHECKPOINT_PRIMARY;
+let CHECKPOINT_WIDE_HOME_START_GAP;
 let c10;
 let c9;
 let closure_4;
@@ -44,52 +48,73 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
+let obj6;
+let obj7;
 let rect;
 let unpackModuleId;
+function handleHomeControlsLayout(height) {
+  const obj = { height: height.nativeEvent.layout.height };
+  state.setState(obj);
+}
 function HomeControls(onStart) {
   let intl;
   let intl2;
   let intl3;
-  let items;
   let items1;
   let items2;
+  let items3;
+  let items4;
   let link;
   let obj7;
   let onPressIn;
   let onPressWithSound;
   onStart = onStart.onStart;
-  const tmp = closure_12();
+  const tmp = closure_14();
   _require = tmp;
-  let obj = { source: _modDef14429, onPress: onStart };
-  const tmp2 = useCheckpointPressSoundDefault;
-  const obj2 = { style: tmp.homeControls, children: items2 };
-  ({ onPressIn, onPressWithSound } = tmp2(obj));
-  const obj3 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(require("intl").t.I0v0Qv), style: tmp.labelButton, children: items };
-  tmp2(obj);
+  const tmp4 = useIsCheckpointWideDefault();
+  let obj = { source: _modDef14489, onPress: onStart };
+  const tmp5 = useCheckpointPressSoundDefault;
+  const items = [tmp.homeControls, ];
+  let wideHomeControls = tmp4;
+  ({ onPressIn, onPressWithSound } = tmp5(obj));
+  tmp5(obj);
+  const tmp8 = closure_5;
+  if (tmp4) {
+    wideHomeControls = tmp.wideHomeControls;
+  }
+  const obj2 = { style: items, onLayout: handleHomeControlsLayout, children: items4 };
+  items[1] = wideHomeControls;
+  const obj3 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(require("intl").t.I0v0Qv), style: items1, children: items2 };
   const CheckpointShadowButton = require("CheckpointButton").CheckpointShadowButton;
   intl = require("intl").intl;
-  items = [, ];
+  items1 = [tmp.labelButton, tmp4 && tmp.wideStart];
+  items2 = [, ];
   const obj4 = { size: "custom", color: CHECKPOINT_PRIMARY, style: tmp.icon };
-  items[0] = closure_9(require("PlayIcon").PlayIcon, obj4);
-  const obj5 = { variant: "mono-md/normal", style: items1, children: intl2.string(require("intl").t.I0v0Qv) };
-  items1 = [, ];
-  ({ label: arr2[0], startLabel: arr2[1] } = tmp);
-  const tmp4 = CheckpointTextDefault;
-  intl2 = require("intl").intl;
-  items[1] = closure_9(tmp4, obj5);
-  items2 = [closure_10(CheckpointShadowButton, obj3), ];
-  const obj6 = { variant: "body-sm/medium", children: intl3.format(_modDef3269.hcNhyq, obj7) };
-  const tmp5 = CheckpointTextDefault;
-  intl3 = require("intl").intl;
+  items2[0] = closure_9(require("PlayIcon").PlayIcon, obj4);
+  const obj5 = { variant: "mono-md/normal", style: items3, children: intl2.string(require("intl").t.I0v0Qv) };
+  items3 = [, ];
+  ({ label: arr4[0], primaryLabel: arr4[1] } = tmp);
+  const tmp2Result = CheckpointTextDefault;
+  intl2 = tmp9(1113).intl;
+  items2[1] = closure_9(tmp2Result, obj5);
+  items4 = [closure_10(CheckpointShadowButton, obj3), ];
+  let wideDisclaimer;
+  const tmp10 = closure_9;
+  const tmp2Result2 = CheckpointTextDefault;
+  if (tmp4) {
+    wideDisclaimer = tmp.wideDisclaimer;
+  }
+  const obj6 = { variant: "body-sm/medium", style: wideDisclaimer, children: intl3.format(_modDef3317["SntY/v"], obj7) };
+  intl3 = tmp9(1113).intl;
   obj7 = {
     learnMoreHook(children, arg1) {
       let obj = {
         variant: "body-sm/medium",
         style: link.link,
         onPress() {
-          const openURL = closure_1_1(closure_1_2[16]).openURL;
-          closure_1_1(closure_1_2[16]);
-          const obj = closure_1_1(closure_1_2[17]);
+          const openURL = closure_1_1(closure_1_2[18]).openURL;
+          closure_1_1(closure_1_2[18]);
+          const obj = closure_1_1(closure_1_2[19]);
           return openURL(obj.getArticleURL(constants.CHECKPOINT));
         },
         accessibilityRole: "link",
@@ -98,22 +123,24 @@ function HomeControls(onStart) {
       return React4(CheckpointTextDefault, obj, arg1);
     }
   };
-  items2[1] = closure_9(tmp5, obj6);
-  return closure_10(closure_5, obj2);
+  items4[1] = tmp10(tmp2Result2, obj6);
+  return closure_10(tmp8, obj2);
 }
 function BackButton(disabled) {
+  let hitSlop;
   let intl;
   let obj4;
   let onPressIn;
   let onPressWithSound;
+  let style;
   let flag = disabled.disabled;
   const onPress = disabled.onPress;
   if (flag === undefined) {
     flag = false;
   }
   let color = disabled.color;
-  const style = disabled.style;
-  const tmp = closure_12();
+  ({ hitSlop, style } = disabled);
+  const tmp = closure_14();
   if (color === undefined) {
     color = CHECKPOINT_PRIMARY;
   }
@@ -121,12 +148,12 @@ function BackButton(disabled) {
   if (flag) {
     color = obj.useToken("text-subtle");
   }
-  const obj2 = { source: _modDef14431, onPress, disabled: flag };
+  const obj2 = { source: _modDef14492, onPress, disabled: flag };
   const tmp4 = useCheckpointPressSoundDefault;
   ({ onPressIn, onPressWithSound } = tmp4(obj2));
-  const obj3 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(intl4.t["13/7kX"]), disabled: flag, style, children: React4(ArrowSmallLeftIcon.ArrowSmallLeftIcon, obj4) };
+  const obj3 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(intl4.t["13/7kX"]), disabled: flag, hitSlop, style, children: React4(ArrowSmallLeftIcon.ArrowSmallLeftIcon, obj4) };
   tmp4(obj2);
-  const CheckpointButton = tmp2(14430).CheckpointButton;
+  const CheckpointButton = tmp2(14490).CheckpointButton;
   intl = tmp2(1113).intl;
   obj4 = { size: "custom", color, style: tmp.icon };
   return React4(CheckpointButton, obj3);
@@ -140,11 +167,11 @@ function ReplayButton(arg0) {
   let onPressWithSound;
   let style;
   ({ onPress, color, style } = arg0);
-  const obj = { source: _modDef14429, onPress };
-  const tmp = closure_12();
+  const obj = { source: _modDef14489, onPress };
+  const tmp = closure_14();
   const tmp2 = useCheckpointPressSoundDefault;
   ({ onPressIn, onPressWithSound } = tmp2(obj));
-  const obj2 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(_modDef3269.u40i9u), style, children: React4(RetryIcon.RetryIcon, obj3) };
+  const obj2 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(_modDef3317.u40i9u), style, children: React4(RetryIcon.RetryIcon, obj3) };
   tmp2(obj);
   const CheckpointButton = CheckpointButton2.CheckpointButton;
   intl = intl4.intl;
@@ -160,21 +187,47 @@ function NextButton(disabled) {
   let onPressWithSound;
   disabled = disabled.disabled;
   ({ onPress, accessibilityHint } = disabled);
-  const tmp = closure_12();
+  const tmp = closure_14();
   let token = CHECKPOINT_PRIMARY;
   const obj = useToken;
   if (disabled) {
     token = obj.useToken("text-subtle");
   }
-  const obj2 = { source: _modDef14429, onPress, disabled };
+  const obj2 = { source: _modDef14489, onPress, disabled };
   const tmp5 = useCheckpointPressSoundDefault;
   ({ onPressIn, onPressWithSound } = tmp5(obj2));
   const obj3 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(intl4.t.PDTjLN), accessibilityHint, disabled, style: tmp.iconButton, children: React4(ArrowSmallRightIcon.ArrowSmallRightIcon, obj4) };
   tmp5(obj2);
-  const CheckpointShadowButton = tmp3(14430).CheckpointShadowButton;
+  const CheckpointShadowButton = tmp3(14490).CheckpointShadowButton;
   intl = tmp3(1113).intl;
   obj4 = { size: "custom", color: token, style: tmp.icon };
   return React4(CheckpointShadowButton, obj3);
+}
+function DoneButton(onPress) {
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let onPressIn;
+  let onPressWithSound;
+  onPress = onPress.onPress;
+  const tmp = closure_14();
+  const obj = { source: _modDef14489, onPress };
+  const tmp2 = useCheckpointPressSoundDefault;
+  ({ onPressIn, onPressWithSound } = tmp2(obj));
+  const obj2 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(intl4.t.i4jeWR), style: tmp.labelButton, children: items1 };
+  tmp2(obj);
+  const CheckpointShadowButton = CheckpointButton2.CheckpointShadowButton;
+  intl = intl4.intl;
+  const obj3 = { variant: "mono-md/normal", style: items, children: intl2.string(intl4.t.i4jeWR) };
+  items = [, ];
+  ({ label: arr[0], primaryLabel: arr[1] } = tmp);
+  const tmp4 = CheckpointTextDefault;
+  intl2 = intl4.intl;
+  items1 = [React4(tmp4, obj3), ];
+  const obj4 = { size: "custom", color: CHECKPOINT_PRIMARY, style: tmp.icon };
+  items1[1] = React4(ArrowSmallRightIcon.ArrowSmallRightIcon, obj4);
+  return authStore(CheckpointShadowButton, obj2);
 }
 function FinalizeCharacterSaveButton(blockedTrait) {
   let intl;
@@ -215,10 +268,10 @@ function FinalizeCharacterSaveButton(blockedTrait) {
               const obj5 = { value, done: true };
               return obj5;
             } else {
-              const obj2 = tmp3(c2[22]);
+              const obj2 = tmp3(c2[24]);
               const characterFromTraits = obj2.getCharacterFromTraits(closure_1_6.selectedCharacterTraits);
               c1 = 1;
-              const obj3 = tmp3(c2[23]);
+              const obj3 = tmp3(c2[25]);
               c2 = 1;
               const obj6 = { value: obj3.completeCheckpoint(characterFromTraits), done: false };
               return obj6;
@@ -234,10 +287,10 @@ function FinalizeCharacterSaveButton(blockedTrait) {
             if (value) {
               closure_128_0();
             } else {
-              const presentError = tmp3(c2[24]).presentError;
-              const tmp6 = tmp3(c2[24]);
-              const intl = tmp3(c2[12]).intl;
-              presentError(intl.string(tmp3(c2[12]).t.fEptJP));
+              const presentError = tmp3(c2[26]).presentError;
+              const tmp6 = tmp3(c2[26]);
+              const intl = tmp3(c2[14]).intl;
+              presentError(intl.string(tmp3(c2[14]).t.fEptJP));
             }
             c2 = 3;
             return { value: "HermesInternal", done: null };
@@ -251,7 +304,7 @@ function FinalizeCharacterSaveButton(blockedTrait) {
     return obj(...arguments);
   };
   const accessibilityHint = blockedTrait.accessibilityHint;
-  let tmp = closure_12();
+  let tmp = closure_14();
   let tmp2 = isSaving;
   if (!tmp2) {
     const tmp3 = null;
@@ -264,7 +317,7 @@ function FinalizeCharacterSaveButton(blockedTrait) {
     token = obj.useToken("text-subtle");
   }
   let obj2 = {
-    source: isSaving(tmp6[25]),
+    source: isSaving(tmp6[27]),
     onPress: function handlePress() {
       function handleSave() {
         return obj(...arguments);
@@ -280,16 +333,16 @@ function FinalizeCharacterSaveButton(blockedTrait) {
     },
     disabled: tmp2
   };
-  const tmp7 = isSaving(tmp6[9]);
+  const tmp7 = isSaving(tmp6[11]);
   ({ onPressIn, onPressWithSound } = tmp7(obj2));
-  let obj3 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(tmp5(tmp6[12]).t["R3BPH+"]), accessibilityHint, disabled: tmp2, style: tmp.labelButton, children: items1 };
+  let obj3 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(tmp5(tmp6[14]).t["R3BPH+"]), accessibilityHint, disabled: tmp2, style: tmp.labelButton, children: items1 };
   tmp7(obj2);
-  const CheckpointShadowButton = tmp5(tmp6[11]).CheckpointShadowButton;
-  intl = tmp5(tmp6[12]).intl;
-  let obj4 = { variant: "mono-md/normal", style: items, children: intl2.string(tmp5(tmp6[12]).t["R3BPH+"]) };
+  const CheckpointShadowButton = tmp5(tmp6[13]).CheckpointShadowButton;
+  intl = tmp5(tmp6[14]).intl;
+  let obj4 = { variant: "mono-md/normal", style: items, children: intl2.string(tmp5(tmp6[14]).t["R3BPH+"]) };
   items = [tmp.label, { color: token }];
-  const tmp11 = isSaving(tmp6[14]);
-  intl2 = tmp5(tmp6[12]).intl;
+  const tmp11 = isSaving(tmp6[16]);
+  intl2 = tmp5(tmp6[14]).intl;
   items1 = [closure_9(tmp11, obj4), ];
   const tmp9 = closure_10;
   if (isSaving) {
@@ -297,7 +350,7 @@ function FinalizeCharacterSaveButton(blockedTrait) {
     tmp10Result = tmp10(closure_4, obj5);
   } else {
     let obj6 = { size: "custom", color: token, style: tmp.icon };
-    tmp10Result = tmp10(tmp5(tmp6[21]).ArrowSmallRightIcon, obj6);
+    tmp10Result = tmp10(tmp5(tmp6[23]).ArrowSmallRightIcon, obj6);
   }
   items1[1] = tmp10Result;
   return tmp9(CheckpointShadowButton, obj3);
@@ -317,7 +370,7 @@ function SummaryControls(arg0) {
   let primaryBackgroundColor;
   let shadowColor;
   ({ onBack, onReplay, onShare } = arg0);
-  const tmp = closure_12();
+  const tmp = closure_14();
   const items = [CheckpointStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => character.character);
@@ -349,9 +402,9 @@ function SummaryControls(arg0) {
 }
 function RouteControls(arg0) {
   let activeRoute;
+  let isLastRoute;
   let isSaving;
   let items1;
-  let items2;
   let nitroLockedMessage;
   let onBack;
   let onNext;
@@ -360,70 +413,82 @@ function RouteControls(arg0) {
   let onShare;
   ({ activeRoute, onBack, onNext } = arg0);
   let checkpointRouteBlockedTrait;
-  const tmp = dependencyMap;
-  ({ onSave, onReplay, onShare } = arg0);
-  const tmp2 = checkpointRouteBlockedTrait(14191)();
-  const obj = onNext(6681);
-  checkpointRouteBlockedTrait = obj.getCheckpointRouteBlockedTrait(activeRoute, tmp2);
+  ({ isLastRoute, onSave, onReplay, onShare } = arg0);
+  const tmp = closure_14();
+  const tmp4 = checkpointRouteBlockedTrait(14298)();
+  const obj = onNext(6744);
+  checkpointRouteBlockedTrait = obj.getCheckpointRouteBlockedTrait(activeRoute, tmp4);
   if (null != checkpointRouteBlockedTrait) {
-    const tmp3Result = onNext(6681);
-    nitroLockedMessage = tmp3Result.getNitroLockedMessage(checkpointRouteBlockedTrait);
+    const tmp5Result = onNext(6744);
+    nitroLockedMessage = tmp5Result.getNitroLockedMessage(checkpointRouteBlockedTrait);
   }
   const items = [CheckpointStore];
-  const tmp3Result2 = onNext(504);
-  const stateFromStores = tmp3Result2.useStateFromStores(items, () => isSaving.isSaving);
-  if (onNext(6682).CheckpointRoute.HOME === activeRoute) {
+  const tmp5Result2 = onNext(504);
+  const stateFromStores = tmp5Result2.useStateFromStores(items, () => isSaving.isSaving);
+  if (onNext(6745).CheckpointRoute.HOME === activeRoute) {
     const obj2 = { onStart: onNext };
     return closure_9(HomeControls, obj2);
-  } else if (onNext(6682).CheckpointRoute.FINALIZE_CHARACTER === activeRoute) {
+  } else if (onNext(6745).CheckpointRoute.FINALIZE_CHARACTER === activeRoute) {
     const obj3 = { children: items1 };
-    const obj4 = { onPress: onBack, disabled: stateFromStores };
+    const obj4 = { onPress: onBack, disabled: stateFromStores, hitSlop: checkpointRouteBlockedTrait(575).space.PX_4, style: tmp.noBorderBackButton };
     items1 = [closure_9(BackButton, obj4), ];
     const obj5 = { onSave, isSaving: stateFromStores, blockedTrait: checkpointRouteBlockedTrait, accessibilityHint: nitroLockedMessage };
     items1[1] = closure_9(FinalizeCharacterSaveButton, obj5);
     return closure_10(closure_11, obj3);
-  } else if (onNext(6682).CheckpointRoute.SUMMARY === activeRoute) {
+  } else if (onNext(6745).CheckpointRoute.SUMMARY === activeRoute) {
     const obj6 = { onBack, onReplay, onShare };
     return closure_9(SummaryControls, obj6);
   } else {
-    const obj7 = { children: items2 };
-    const obj8 = { onPress: onBack };
-    items2 = [closure_9(BackButton, obj8), ];
-    const obj9 = {
-      onPress: function handleNext() {
-          if (null != checkpointRouteBlockedTrait) {
-            showNitroLockedToastDefault(tmp);
-          } else {
-            onNext();
-          }
-        },
-      accessibilityHint: nitroLockedMessage,
-      disabled: null != checkpointRouteBlockedTrait
-    };
-    items2[1] = closure_9(NextButton, obj9);
-    return closure_10(closure_11, obj7);
+    let tmp23Result;
+    const obj7 = { onPress: onBack, hitSlop: checkpointRouteBlockedTrait(575).space.PX_4, style: tmp.noBorderBackButton };
+    const items2 = [closure_9(BackButton, obj7), ];
+    const tmp21 = closure_10;
+    const tmp22 = closure_11;
+    if (isLastRoute) {
+      const obj8 = { onPress: onNext };
+      tmp23Result = tmp23(DoneButton, obj8);
+    } else {
+      const obj9 = {
+        onPress: function handleNext() {
+              if (null != checkpointRouteBlockedTrait) {
+                showNitroLockedToastDefault(tmp);
+              } else {
+                onNext();
+              }
+            },
+        accessibilityHint: nitroLockedMessage,
+        disabled: null != checkpointRouteBlockedTrait
+      };
+      tmp23Result = tmp23(NextButton, obj9);
+    }
+    const obj10 = { children: items2 };
+    items2[1] = tmp23Result;
+    return tmp21(tmp22, obj10);
   }
 }
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
 ({ CHECKPOINT_CONTROL_ICON_SIZE, CHECKPOINT_PRIMARY } = CheckpointConstants);
-const CHECKPOINT_CONTROL_SIZE = CheckpointConstants.CHECKPOINT_CONTROL_SIZE;
+({ CHECKPOINT_CONTROL_SIZE, CHECKPOINT_WIDE_HOME_START_GAP } = CheckpointConstants);
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
+const state = module_560.create(() => ({ height: 0 }));
 let createStyles = createStyles_mod;
-let obj = { container: rect, icon: { width: CHECKPOINT_CONTROL_ICON_SIZE, height: CHECKPOINT_CONTROL_ICON_SIZE }, iconButton: { width: CHECKPOINT_CONTROL_SIZE, paddingHorizontal: 0 }, labelButton: obj2, homeControls: obj3, startLabel: { color: CHECKPOINT_PRIMARY }, link: { textDecorationLine: "underline" }, summaryActions: obj4, summaryControl: { borderWidth: 1, backgroundColor: "rgba(0, 0, 0, 0.05)" }, share: obj5, label: { textTransform: "uppercase", fontSize: 18, lineHeight: 24 } };
+let obj = { container: rect, icon: { width: CHECKPOINT_CONTROL_ICON_SIZE, height: CHECKPOINT_CONTROL_ICON_SIZE }, noBorderBackButton: obj2, iconButton: { width: CHECKPOINT_CONTROL_SIZE, paddingHorizontal: 0 }, labelButton: obj3, homeControls: obj4, wideHomeControls: { alignItems: "center", gap: CHECKPOINT_WIDE_HOME_START_GAP }, wideStart: obj5, wideDisclaimer: { maxWidth: 464, textAlign: "center" }, primaryLabel: { color: CHECKPOINT_PRIMARY }, link: { textDecorationLine: "underline" }, summaryActions: obj6, summaryControl: { borderWidth: 1, backgroundColor: "rgba(0, 0, 0, 0.05)" }, share: obj7, label: { textTransform: "uppercase", fontSize: 18, lineHeight: 24 } };
 rect = { position: "absolute", left: nativeDefault.space.PX_24, right: nativeDefault.space.PX_24, bottom: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 createStyles = createStyles.createStyles;
-obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
-obj3 = { flex: 1, gap: nativeDefault.space.PX_24 };
-obj4 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
-obj5 = { paddingHorizontal: nativeDefault.space.PX_40, borderColor: nativeDefault.colors.BLACK };
-let closure_12 = createStyles(obj);
+obj2 = { marginLeft: -nativeDefault.space.PX_12 };
+obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
+obj4 = { flex: 1, gap: nativeDefault.space.PX_24 };
+obj5 = { paddingHorizontal: nativeDefault.space.PX_64 };
+obj6 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
+obj7 = { paddingHorizontal: nativeDefault.space.PX_40, borderColor: nativeDefault.colors.BLACK };
+let closure_14 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointNavigationControls.tsx");
 
 export default function CheckpointNavigationControls(arg0) {
   let items;
   let obj2;
-  const tmp = closure_12();
+  const tmp = closure_14();
   const rect = useSafeAreaInsetsDefault();
   const obj = { style: items, children: React4(RouteControls, obj2) };
   items = [tmp.container, { marginLeft: rect.left, marginRight: rect.right, marginBottom: rect.bottom }];
@@ -431,3 +496,6 @@ export default function CheckpointNavigationControls(arg0) {
   const merged = Object.assign(arg0);
   return React4(hasOwnProperty, obj);
 };
+export function useCheckpointHomeControlsHeight() {
+  return state((height) => height.height);
+}

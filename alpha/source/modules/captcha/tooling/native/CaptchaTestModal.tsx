@@ -1,20 +1,20 @@
-// Module ID: 18202
-// Function ID: 18203
+// Module ID: 18323
+// Function ID: 18324
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 5243, 575, 18203, 18204, 5952, 5866, 1187, 7351, 5873, 6785, 7427, 7424, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 18324, 18325, 6015, 5929, 1187, 7415, 5936, 6848, 7493, 7490, 1113, 2]
 // Exports: default
 
-// Module 18202 (CaptchaTestModal)
+// Module 18323 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 18203 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 18204 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 18324 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 18325 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,16 @@
-// Module ID: 9667
-// Function ID: 9668
+// Module ID: 9734
+// Function ID: 9735
 // Name: NativeVideo
-// Dependencies: [109, 32, 19, 17, 21, 5243, 81, 9668, 5957, 2]
+// Dependencies: [109, 32, 19, 17, 21, 5306, 81, 9735, 6020, 2]
 // Exports: default
 
-// Module 9667 (NativeVideo)
+// Module 9734 (NativeVideo)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_10, dependencyMap, sum;
@@ -42,12 +42,13 @@ export default function NativeVideo(ref) {
   let items1;
   let items2;
   let obj3;
-  let obj8;
+  let obj9;
   let source;
   let str2;
   let tmp21;
   let tmp6;
-  const f97690 = (item) => {
+  let type;
+  const f98894 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -94,7 +95,7 @@ export default function NativeVideo(ref) {
   }
   const tmp4Result = str(obj.useState(() => {
     let entries;
-    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f97690) };
+    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f98894) };
     c10 = c10 + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -108,7 +109,7 @@ export default function NativeVideo(ref) {
   }
   if (!tmp15) {
     const _JSON2 = JSON;
-    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f97690) };
+    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f98894) };
     const _String = String;
     sum = closure_10 + 1;
     closure_10 = sum;
@@ -198,15 +199,16 @@ export default function NativeVideo(ref) {
     resizeMode: obj2.resizeMode,
     audioPolicy: obj2.mixWithOthers,
     disableFocus: obj2.disableFocus,
-    httpEngine: obj2.httpEngine,
-    bufferConfig: obj2.bufferConfig,
-    playInBackground: obj2.playInBackground,
-    playWhenInactive: obj2.playWhenInactive,
-    pictureInPicture: obj2.pictureInPicture,
-    preventsDisplaySleepDuringVideoPlayback: obj2.preventsDisplaySleepDuringVideoPlayback,
-    automaticallyWaitsToMinimizeStalling: obj2.automaticallyWaitsToMinimizeStalling,
-    maxBitRate: obj2.maxBitRate,
-    preferredForwardBufferDuration: obj2.preferredForwardBufferDuration,
+    disableTextTracks: "disabled" === type,
+    httpEngine: null,
+    bufferConfig: null,
+    playInBackground: null,
+    playWhenInactive: null,
+    pictureInPicture: null,
+    preventsDisplaySleepDuringVideoPlayback: null,
+    automaticallyWaitsToMinimizeStalling: null,
+    maxBitRate: null,
+    preferredForwardBufferDuration: null,
     onPlaybackEvent: function handleEvent(nativeEvent) {
       let obj19;
       let str2;
@@ -351,17 +353,23 @@ export default function NativeVideo(ref) {
       }
     }
   };
-  items2 = [ref(ref1(9668), obj6), ];
-  let tmp26Result = null != obj2.poster && tmp21 !== id;
+  const selectedTextTrack = obj2.selectedTextTrack;
+  type = undefined;
   const tmp24 = closure_9;
   const tmp25 = c7;
-  const tmp26 = ref;
   const tmp27 = ref1;
+  const tmp29 = ref1(9735);
+  if (selectedTextTrack != null) {
+    type = selectedTextTrack.type;
+  }
+  ({ httpEngine: obj7.httpEngine, bufferConfig: obj7.bufferConfig, playInBackground: obj7.playInBackground, playWhenInactive: obj7.playWhenInactive, pictureInPicture: obj7.pictureInPicture, preventsDisplaySleepDuringVideoPlayback: obj7.preventsDisplaySleepDuringVideoPlayback, automaticallyWaitsToMinimizeStalling: obj7.automaticallyWaitsToMinimizeStalling, maxBitRate: obj7.maxBitRate, preferredForwardBufferDuration: obj7.preferredForwardBufferDuration } = obj2);
+  items2 = [ref(tmp29, obj6), ];
+  let tmp26Result = null != obj2.poster && tmp21 !== id;
   if (tmp26Result) {
-    let obj7 = { accessible: false, style: tmp2.content, source: obj8, resizeMode: str2 };
-    obj8 = { uri: obj2.poster };
+    let obj8 = { accessible: false, style: tmp2.content, source: obj9, resizeMode: str2 };
+    obj9 = { uri: obj2.poster };
     str2 = "center";
-    const tmp27Result = tmp27(5957);
+    const tmp27Result = tmp27(6020);
     if ("none" !== obj2.posterResizeMode) {
       let str4 = obj2.posterResizeMode;
       if (str4 == null) {
@@ -369,7 +377,7 @@ export default function NativeVideo(ref) {
       }
       str2 = str4;
     }
-    tmp26Result = tmp26(tmp27Result, obj7);
+    tmp26Result = tmp26(tmp27Result, obj8);
   }
   items2[1] = tmp26Result;
   return tmp24(tmp25, obj5);

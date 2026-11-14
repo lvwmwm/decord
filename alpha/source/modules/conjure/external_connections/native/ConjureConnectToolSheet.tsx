@@ -1,20 +1,20 @@
-// Module ID: 13156
-// Function ID: 13157
+// Module ID: 13265
+// Function ID: 13266
 // Name: ConjureConnectToolSheet
-// Dependencies: [19, 17, 21, 5243, 575, 13157, 7877, 5951, 6211, 1113, 4079, 7885, 7847, 5866, 7381, 5873, 13158, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13266, 7943, 6014, 6274, 1113, 4131, 7951, 7913, 5929, 7445, 5936, 13267, 2]
 // Exports: default
 
-// Module 13156 (ConjureConnectToolSheet)
+// Module 13265 (ConjureConnectToolSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
-import _modDef4079 from "module_4079" /* 4079 */;
-import ToastUtils from "ToastUtils" /* 5951 */;
-import AlertModal from "AlertModal" /* 6211 */;
-import ClipboardUtils from "ClipboardUtils" /* 7877 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ToastUtils from "ToastUtils" /* 6014 */;
+import AlertModal from "AlertModal" /* 6274 */;
+import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -69,7 +69,7 @@ export default function ConjureConnectToolSheet(projectId) {
   mint = undefined;
   projectId = projectId.projectId;
   let tmp = closure_7();
-  let obj = connection(13157);
+  let obj = connection(13266);
   const mcpConnectionPanel = obj.useMcpConnectionPanel(projectId);
   connection = mcpConnectionPanel.connection;
   ({ loading, mint } = mcpConnectionPanel);
@@ -92,9 +92,9 @@ export default function ConjureConnectToolSheet(projectId) {
     const showConfirmModal = tmp.showConfirmModal;
     const obj = {
       key: "ConjureConnectToolRegenerate",
-      title: intl.string(_modDef4079.avUWNd),
-      content: intl2.string(_modDef4079.YSh8bL),
-      confirmText: intl3.string(_modDef4079.Ise9RO),
+      title: intl.string(_modDef4131.avUWNd),
+      content: intl2.string(_modDef4131.YSh8bL),
+      confirmText: intl3.string(_modDef4131.Ise9RO),
       onConfirm() {
         mint(true);
       }
@@ -105,51 +105,51 @@ export default function ConjureConnectToolSheet(projectId) {
     showConfirmModal(obj);
   }, items1);
   let obj2 = { header: closure_5(BottomSheetTitleHeader, obj3), children: closure_6(View, obj4) };
-  const ActionSheet = connection(7885).ActionSheet;
-  obj3 = { title: intl.string(mint(4079)["7937yd"]) };
-  BottomSheetTitleHeader = connection(7847).BottomSheetTitleHeader;
+  const ActionSheet = connection(7951).ActionSheet;
+  obj3 = { title: intl.string(mint(4131)["7937yd"]) };
+  BottomSheetTitleHeader = connection(7913).BottomSheetTitleHeader;
   intl = connection(1113).intl;
   obj4 = { style: tmp.content, children: items2 };
-  const obj5 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(mint(4079).WltAg2) };
-  const Text = connection(5866).Text;
+  const obj5 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(mint(4131).WltAg2) };
+  const Text = connection(5929).Text;
   intl2 = connection(1113).intl;
   items2 = [closure_5(Text, obj5), , ];
   if (null != connection) {
     const obj6 = { style: tmp.section, children: items3 };
-    const obj7 = { variant: "body-xs/semibold", color: "text-muted", children: intl4.string(mint(4079).UCwV3L) };
-    const Text3 = tmp2(5866).Text;
+    const obj7 = { variant: "body-xs/semibold", color: "text-muted", children: intl4.string(mint(4131).UCwV3L) };
+    const Text3 = tmp2(5929).Text;
     intl4 = tmp2(1113).intl;
     items3 = [closure_5(Text3, obj7), , , ];
-    const obj8 = { variant: "primary", children: closure_5(connection(5866).Text, obj9) };
-    const Card = tmp2(7381).Card;
+    const obj8 = { variant: "primary", children: closure_5(connection(5929).Text, obj9) };
+    const Card = tmp2(7445).Card;
     obj9 = { variant: "body-sm/normal", color: "text-default", selectable: true, children: connection.url };
     items3[1] = closure_5(Card, obj8);
     const obj10 = { style: tmp.actions, children: items4 };
     const obj11 = { style: tmp.action, children: closure_5(Button, obj12) };
     obj12 = { variant: "primary", size: "md", text: intl5.string(connection(1113).t.OpuAlK), onPress: callback };
-    Button = tmp2(5873).Button;
+    Button = tmp2(5936).Button;
     intl5 = tmp2(1113).intl;
     items4 = [closure_5(View, obj11), ];
     const obj13 = { style: tmp.action, children: closure_5(Button2, obj14) };
-    obj14 = { variant: "secondary", size: "md", text: intl6.string(mint(4079).FBKOBq), loading, onPress: callback1 };
-    Button2 = tmp2(5873).Button;
+    obj14 = { variant: "secondary", size: "md", text: intl6.string(mint(4131).FBKOBq), loading, onPress: callback1 };
+    Button2 = tmp2(5936).Button;
     intl6 = tmp2(1113).intl;
     items4[1] = closure_5(View, obj13);
     items3[2] = closure_6(View, obj10);
     const obj15 = { variant: "body-xs/normal", color: "text-muted", children: format(EQ8k1i, obj16) };
-    const Text4 = tmp2(5866).Text;
+    const Text4 = tmp2(5929).Text;
     const intl7 = tmp2(1113).intl;
     format = intl7.format;
     obj16 = { time: tmp2Result.formatMcpConnectionExpiry(connection) };
-    EQ8k1i = tmp8(4079).EQ8k1i;
-    tmp2Result = connection(13158);
+    EQ8k1i = tmp8(4131).EQ8k1i;
+    tmp2Result = connection(13267);
     items3[3] = closure_5(Text4, obj15);
     tmp7Result = tmp9(tmp10, obj6);
   } else {
     tmp7Result = null;
     if (loading) {
-      const obj17 = { variant: "body-sm/normal", color: "text-muted", children: intl3.string(mint(4079).Q6xQTM) };
-      const Text2 = tmp2(5866).Text;
+      const obj17 = { variant: "body-sm/normal", color: "text-muted", children: intl3.string(mint(4131).Q6xQTM) };
+      const Text2 = tmp2(5929).Text;
       intl3 = tmp2(1113).intl;
       tmp7Result = tmp7(Text2, obj17);
     }
@@ -159,20 +159,20 @@ export default function ConjureConnectToolSheet(projectId) {
   if (failed) {
     const obj18 = { style: tmp.failedRow, accessibilityRole: "alert", children: items5 };
     const obj19 = { style: tmp.failedText, children: closure_5(Text5, obj20) };
-    obj20 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl8.string(mint(4079).IAF2eN) };
-    Text5 = tmp2(5866).Text;
+    obj20 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl8.string(mint(4131).IAF2eN) };
+    Text5 = tmp2(5929).Text;
     intl8 = tmp2(1113).intl;
     items5 = [closure_5(View, obj19), ];
     const obj21 = {
       variant: "secondary",
       size: "sm",
-      text: intl9.string(mint(4079)["eHMX/v"]),
+      text: intl9.string(mint(4131)["eHMX/v"]),
       loading,
       onPress() {
           mint(false);
         }
     };
-    const Button3 = tmp2(5873).Button;
+    const Button3 = tmp2(5936).Button;
     intl9 = tmp2(1113).intl;
     items5[1] = closure_5(Button3, obj21);
     tmp9Result2 = tmp9(tmp10, obj18);

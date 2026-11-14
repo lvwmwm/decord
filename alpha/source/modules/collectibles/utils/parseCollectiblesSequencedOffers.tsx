@@ -1,15 +1,15 @@
-// Module ID: 8471
-// Function ID: 8472
+// Module ID: 8537
+// Function ID: 8538
 // Name: parseCollectiblesSequencedOffers
 // Dependencies: [2]
 // Exports: default
 
-// Module 8471 (parseCollectiblesSequencedOffers)
+// Module 8537 (parseCollectiblesSequencedOffers)
 import size from "module_2" /* 2 */;
 
 function parseSequencedOffer(assets) {
   assets = assets.assets;
-  return { position: assets.position, cardShape: assets.card_shape, assets: { locked: assets.locked, hint: assets.hint, idleAnimation: assets.idle_animation, revealAnimation: assets.reveal_animation } };
+  return { position: assets.position, cardShape: assets.card_shape, assets: { locked: assets.locked, calendarLocked: assets.calendar_locked, hint: assets.hint, idleAnimation: assets.idle_animation, revealAnimation: assets.reveal_animation } };
 }
 const result = size.fileFinishedImporting("modules/collectibles/utils/parseCollectiblesSequencedOffers.tsx");
 

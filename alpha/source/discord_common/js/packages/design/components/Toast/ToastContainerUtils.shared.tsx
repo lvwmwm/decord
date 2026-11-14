@@ -1,14 +1,14 @@
-// Module ID: 16363
-// Function ID: 16364
+// Module ID: 16486
+// Function ID: 16487
 // Name: DEFAULT_TOAST_POSITION
-// Dependencies: [32, 19, 5254, 5954, 5257, 5252, 2]
+// Dependencies: [32, 19, 5317, 6017, 5320, 5315, 2]
 // Exports: useToastContainer
 
-// Module 16363 (DEFAULT_TOAST_POSITION)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5252 */;
+// Module 16486 (DEFAULT_TOAST_POSITION)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_5254 from "module_5254" /* 5254 */;
+import module_5317 from "module_5317" /* 5317 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ let _require, containerIdsBySurface, set;
 
 let _slicedToArray = _slicedToArray_mod;
 const top = "top";
-let closure_5 = module_5254.create(() => {
+let closure_5 = module_5317.create(() => {
   const obj = { containerIdsBySurface: new Map() };
   new Map();
   return obj;
@@ -69,7 +69,7 @@ export function useToastContainer(app) {
     const value = containerIdsBySurface.get(closure_0);
     return null != value && value[value.length - 1] === id;
   });
-  const obj2 = require("module_5954");
+  const obj2 = require("module_6017");
   const tmp5 = entry;
   entry = undefined;
   const tmp4 = _require;

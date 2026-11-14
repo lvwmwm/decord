@@ -1,10 +1,10 @@
-// Module ID: 14366
-// Function ID: 14367
+// Module ID: 14473
+// Function ID: 14474
 // Name: useCheckpointCharacterTextureSwaps
 // Dependencies: [32, 5, 19, 2]
 // Exports: useCheckpointCharacterTextureSwaps
 
-// Module 14366 (useCheckpointCharacterTextureSwaps)
+// Module 14473 (useCheckpointCharacterTextureSwaps)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -155,7 +155,7 @@ let obj = function _swapTextures() {
     }
     let closure_1 = tmp;
     ({ textureManager: c0, shownUrls: c1, referencedAssets: c2, isStale: c3 } = closure_0);
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

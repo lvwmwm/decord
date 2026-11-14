@@ -1,14 +1,13 @@
-// Module ID: 13035
-// Function ID: 13036
+// Module ID: 13131
+// Function ID: 13132
 // Name: AnimatedKeyboardProviderController
-// Dependencies: [19, 21, 1652, 13036, 1641, 2]
+// Dependencies: [19, 21, 1655, 1644, 2]
 
-// Module 13035 (AnimatedKeyboardProviderController)
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
-import KeyboardPreloadExperiment2 from "KeyboardPreloadExperiment" /* 13036 */;
+// Module 13131 (AnimatedKeyboardProviderController)
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1644 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1652_mod from "module_1652" /* 1652 */;
+import module_1655_mod from "module_1655" /* 1655 */;
 import size from "module_2" /* 2 */;
 
 let OPEN, result1, set, tmp, tmp2, tmp3;
@@ -16,10 +15,10 @@ let OPEN, result1, set, tmp, tmp2, tmp3;
 let c2;
 let c3;
 ({ jsx: c2, jsxs: c3 } = Fragment);
-let module_1652 = module_1652_mod;
-const mutable = module_1652.makeMutable(0);
-module_1652 = module_1652_mod;
-const mutable1 = module_1652.makeMutable(module_1652.KeyboardState.UNKNOWN);
+let module_1655 = module_1655_mod;
+const mutable = module_1655.makeMutable(0);
+module_1655 = module_1655_mod;
+const mutable1 = module_1655.makeMutable(module_1655.KeyboardState.UNKNOWN);
 let closure_6 = { code: "(function AnimatedKeyboardProviderControllerTsx1(e){let[animatedKeyboardState,KeyboardState]=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);})" };
 let closure_7 = { code: "(function AnimatedKeyboardProviderControllerTsx2(e){let[animatedKeyboardHeight]=this.__closure;animatedKeyboardHeight.set(e.height);})" };
 let closure_8 = { code: "(function AnimatedKeyboardProviderControllerTsx3(e){let[animatedKeyboardState,KeyboardState,animatedKeyboardHeight]=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);animatedKeyboardHeight.set(e.height);})" };
@@ -35,7 +34,7 @@ let closure_9 = react.memo(function ComponentInner() {
   let tmp9;
   const items = [closure_6, mutable1, ];
   const useKeyboardHandler = KeyboardChatScrollView.useKeyboardHandler;
-  items[2] = module_1652.KeyboardState;
+  items[2] = module_1655.KeyboardState;
   let c0;
   let c1;
   [tmp5, tmp6, tmp7] = items;
@@ -73,7 +72,7 @@ let closure_9 = react.memo(function ComponentInner() {
   AnimatedKeyboardProviderControllerTsx2.__closure = items3;
   AnimatedKeyboardProviderControllerTsx2.__workletHash = 2792046606466;
   AnimatedKeyboardProviderControllerTsx2.__initData = tmp9;
-  const items4 = [closure_8, tmp4, module_1652.KeyboardState, mutable];
+  const items4 = [closure_8, tmp4, module_1655.KeyboardState, mutable];
   c0 = undefined;
   c1 = undefined;
   let c2;
@@ -104,10 +103,8 @@ let closure_9 = react.memo(function ComponentInner() {
 let obj = {
   Component(children) {
     let items;
-    children = children.children;
-    const KeyboardPreloadExperiment = KeyboardPreloadExperiment2.KeyboardPreloadExperiment;
-    const obj = { enabled: true, navigationBarTranslucent: true, preload: !KeyboardPreloadExperiment.useConfig({ location: "AnimatedKeyboardProviderController" }).disablePreload, preserveEdgeToEdge: true, statusBarTranslucent: true, children: items };
-    items = [children, ];
+    const obj = { enabled: true, navigationBarTranslucent: true, preload: false, preserveEdgeToEdge: true, statusBarTranslucent: true, children: items };
+    items = [children.children, ];
     const KeyboardProvider = KeyboardChatScrollView.KeyboardProvider;
     items[1] = React2(closure_9, {});
     return _false(KeyboardProvider, obj);

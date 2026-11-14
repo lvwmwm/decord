@@ -1,21 +1,21 @@
-// Module ID: 6275
-// Function ID: 6276
+// Module ID: 6338
+// Function ID: 6339
 // Name: useTrackImpression
-// Dependencies: [19, 5092, 5146, 5286, 1253, 1260, 1252, 572, 6004, 1342, 6276, 5836, 2]
+// Dependencies: [19, 5155, 5209, 5349, 1257, 1264, 1256, 572, 6067, 1345, 6339, 5899, 2]
 // Exports: default
 
-// Module 6275 (useTrackImpression)
+// Module 6338 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtils2 from "AnalyticsUtils" /* 1252 */;
-import _modDef1342 from "module_1342" /* 1342 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6004 */;
-import uniqueIdDefault from "uniqueId" /* 6276 */;
+import AnalyticsUtils2 from "AnalyticsUtils" /* 1256 */;
+import _modDef1345 from "module_1345" /* 1345 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import uniqueIdDefault from "uniqueId" /* 6339 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
-import ImpressionStore from "ImpressionStore" /* 1253 */;
-import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import ImpressionStore from "ImpressionStore" /* 1257 */;
+import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -97,16 +97,16 @@ export default function useTrackImpression(current) {
   react = undefined;
   react = react.useRef(undefined);
   const ref2 = react.useRef(undefined);
-  const tmp = obj(5836)(() => {
+  const tmp = obj(5899)(() => {
     if (obj.trackOnInitialLoad) {
       let fn;
-      const tmp6 = _modDef1342(ref.current, current);
+      const tmp6 = _modDef1345(ref.current, current);
       const tmp4 = ref;
       const tmp7 = !tmp6;
       if (tmp7) {
         tmp4.current = current;
       }
-      const tmp11 = !_modDef1342(ref2.current, closure_2);
+      const tmp11 = !_modDef1345(ref2.current, closure_2);
       const tmp8 = ref2;
       const tmp9 = closure_2;
       if (tmp11) {
@@ -128,20 +128,20 @@ export default function useTrackImpression(current) {
   const effect = react.useEffect(() => {
     if (!obj.trackOnInitialLoad) {
       let fn;
-      const tmp6 = _modDef1342(ref.current, current);
+      const tmp6 = _modDef1345(ref.current, current);
       const tmp4 = ref;
       const tmp7 = !tmp6;
       if (tmp7) {
         tmp4.current = current;
       }
-      const tmp11 = !_modDef1342(ref2.current, closure_2);
+      const tmp11 = !_modDef1345(ref2.current, closure_2);
       const tmp8 = ref2;
       const tmp9 = closure_2;
       if (tmp11) {
         tmp8.current = tmp9;
       }
       if (!tmp6) {
-        obj = { sequenceId: tmp2(6276)("impression_") };
+        obj = { sequenceId: tmp2(6339)("impression_") };
         const merged = Object.assign(tmp5);
         trackImpression(obj, tmp.disableTrack);
         fn = () => {

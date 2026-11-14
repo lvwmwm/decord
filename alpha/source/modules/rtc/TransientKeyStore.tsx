@@ -1,9 +1,9 @@
-// Module ID: 10541
-// Function ID: 10542
+// Module ID: 10610
+// Function ID: 10611
 // Name: TransientKeyStore
 // Dependencies: [504, 572, 2]
 
-// Module 10541 (TransientKeyStore)
+// Module 10610 (TransientKeyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 19891
-// Function ID: 19892
+// Module ID: 20048
+// Function ID: 20049
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 6953, 11919, 11917, 5920, 21, 11918, 1259, 1377, 551, 1652, 11266, 1705, 11761, 12621, 2]
+// Dependencies: [32, 19, 7016, 11985, 11983, 5983, 21, 11984, 1263, 1380, 551, 1655, 11333, 1708, 11827, 12717, 2]
 
-// Module 19891 (VoicePanelSystemUIManager)
-import react_native from "react-native" /* 1259 */;
-import CallConstants from "CallConstants" /* 5920 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11917 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11918 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+// Module 20048 (VoicePanelSystemUIManager)
+import react_native from "react-native" /* 1263 */;
+import CallConstants from "CallConstants" /* 5983 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -22,8 +22,8 @@ let c10;
 let c9;
 let tmp;
 let unpackModuleId;
-const StatusBarDefault = tmp(11761);
-const HomeIndicatorDefault = tmp(12621);
+const StatusBarDefault = tmp(11827);
+const HomeIndicatorDefault = tmp(12717);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const ParticipantTypes = CallConstants.ParticipantTypes;
@@ -171,7 +171,7 @@ const memoResult = react.memo(function VoicePanelSystemUIManager() {
   let c2;
   let c3;
   [tmp16, tmp17, tmp18, tmp19, tmp20] = items2;
-  const tmp15 = channelId(1652);
+  const tmp15 = channelId(1655);
   class VoicePanelSystemUIManagerTsx1 {
     constructor() {
       const value = _undefined.get();
@@ -189,8 +189,8 @@ const memoResult = react.memo(function VoicePanelSystemUIManager() {
   VoicePanelSystemUIManagerTsx1.__initData = tmp16;
   const items4 = [closure_13, , , ];
   const useAnimatedReaction = tmp15.useAnimatedReaction;
-  items4[1] = tmp14(11266).cheapWorkletShallowEqual;
-  items4[2] = tmp14(1705).scheduleOnRN;
+  items4[1] = tmp14(11333).cheapWorkletShallowEqual;
+  items4[2] = tmp14(1708).scheduleOnRN;
   items4[3] = handleStateChange;
   c0 = undefined;
   c1 = undefined;

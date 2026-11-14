@@ -1,96 +1,103 @@
 // Module ID: 13853
 // Function ID: 13854
-// Dependencies: [13839]
-// Exports: compile, generate
+// Dependencies: [13826, 13831]
 
 // Module 13853
-import _mod13839 from "module_13839" /* 13839 */;
+import TokenStream from "TokenStream" /* 13826 */;
+import tokenize from "tokenize" /* 13831 */;
 
-let fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+function prepareTokens(arg0, items) {
+  let node1 = null;
+  if (items) {
+    node1 = items[0].node;
   }
-  return tmp2;
-});
-const module_13839 = fn(_mod13839);
-
-export function compile(arg0) {
-  const first = arg0[0];
-  const diff = arg0[1] - 1;
-  if (diff < 0) {
-    if (first <= 0) {
-      return module_13839.default.falseFunc;
-    }
-  }
-  if (-1 === first) {
-    return (arg0) => arg0 <= diff;
-  } else if (0 === first) {
-    return (arg0) => arg0 === diff;
-  } else if (1 === first) {
-    let fn;
-    if (diff < 0) {
-      fn = module_13839.default.trueFunc;
-    } else {
-      fn = (arg0) => arg0 >= diff;
-    }
-    return fn;
-  } else {
-    const _Math = Math;
-    const absolute = Math.abs(first);
-    let closure_2 = (diff % absolute + absolute) % absolute;
-    return first > 1 ? ((arg0) => arg0 >= diff && arg0 % absolute === closure_2) : ((arg0) => arg0 <= diff && arg0 % absolute === closure_2);
-  }
-}
-export function generate(arg0) {
-  const first = arg0[0];
-  const diff = arg0[1] - 1;
-  let closure_1 = diff;
-  let closure_2 = 0;
-  if (first < 0) {
-    let closure_3 = tmp4;
-    let closure_4 = (diff % tmp4 + tmp4) % tmp4;
-    return () => {
-      closure_2 = tmp + 1;
-      const sum = closure_4 + closure_3 * tmp;
-      let tmp3 = null;
-      if (sum <= closure_1) {
-        tmp3 = sum;
-      }
-      return tmp3;
-    };
-  } else {
-    let fn;
-    if (0 === first) {
-      let fn2;
-      if (diff < 0) {
-        fn2 = () => null;
-      } else {
-        fn2 = () => {
-          closure_2 = tmp + 1;
-          let tmp2 = null;
-          if (0 == +closure_2) {
-            tmp2 = closure_1;
+  items = [];
+  tokenize(arg0, closure_2);
+  let num = 0;
+  let num2 = 0;
+  while (!closure_2.eof) {
+    let tmp6 = node1;
+    let tmp7 = num;
+    let tmp8 = num2;
+    if (items) {
+      tmp6 = node1;
+      tmp7 = num;
+      tmp8 = num2;
+      if (num < items.length) {
+        let tmp12 = num;
+        let tmp13 = num2;
+        tmp6 = node1;
+        tmp7 = num;
+        tmp8 = num2;
+        if (num2 + items[num].len <= closure_2.tokenStart) {
+          let sum = tmp12 + 1;
+          let sum1 = tmp13 + items[tmp12].len;
+          let node = items[sum].node;
+          tmp6 = node;
+          tmp8 = sum1;
+          tmp7 = sum;
+          while (sum < items.length) {
+            tmp12 = sum;
+            tmp13 = sum1;
+            tmp6 = node;
+            tmp7 = sum;
+            tmp8 = sum1;
+            if (sum1 + items[sum].len > closure_2.tokenStart) {
+              break;
+            }
           }
-          return tmp2;
-        };
+        }
       }
-      fn = fn2;
-    } else {
-      if (diff < 0) {
-        let tmp3 = globalThis;
-        const _Math = Math;
-        closure_1 = diff + first * Math.ceil(-diff / first);
-      }
-      fn = () => {
-        closure_2 = tmp + 1;
-        return first * +closure_2 + closure_1;
-      };
     }
-    return fn;
+    let obj = { type: closure_2.tokenType, value: closure_2.getTokenValue(), index: closure_2.tokenIndex, balance: closure_2.balance[closure_2.tokenIndex], node: tmp6 };
+    let push = items.push;
+    let arr = push(obj);
+    let nextResult = closure_2.next();
+    node1 = tmp6;
+    num = tmp7;
+    num2 = tmp8;
   }
+  return items;
 }
+let tmp = new TokenStream();
+let closure_2 = tmp;
+let closure_3 = {
+  decorator(children) {
+    let node = null;
+    let obj = { len: 0, node: null };
+    const items = [obj];
+    let closure_4 = "";
+    return {
+      children: children.children,
+      node(arg0) {
+        let closure_1 = arg0;
+        node = children.node;
+        node.call(this, arg0);
+        const tmp = closure_1;
+        closure_1 = tmp;
+      },
+      chunk(arg0) {
+        closure_4 = closure_4 + arg0;
+        if (obj.node !== node) {
+          obj = { len: arg0.length, node };
+          items.push(obj);
+        } else {
+          obj.len = obj.len + arg0.length;
+        }
+      },
+      result() {
+        return prepareTokens(closure_4, items);
+      }
+    };
+  }
+};
+
+export default (str, generate) => {
+  let generateResult;
+  if (typeof str === "string") {
+    generateResult = prepareTokens(str, null);
+  } else {
+    generateResult = generate.generate(str, closure_3);
+  }
+  return generateResult;
+};

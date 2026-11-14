@@ -1,31 +1,31 @@
-// Module ID: 9427
-// Function ID: 9428
+// Module ID: 9496
+// Function ID: 9497
 // Name: ProfileEffectUtils
-// Dependencies: [9428, 2]
+// Dependencies: [9497, 2]
 // Exports: calculateProfileEffectHeight, shouldAnimate
 
-// Module 9427 (ProfileEffectUtils)
-import getAssetWHRatio from "getAssetWHRatio" /* 9428 */;
+// Module 9496 (ProfileEffectUtils)
+import getAssetWHRatio from "getAssetWHRatio" /* 9497 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectUtils.tsx");
 
-export function shouldAnimate(aPNGPlayerControls, current) {
-  if (current >= aPNGPlayerControls.start) {
-    if (!aPNGPlayerControls.loop) {
-      if (current > aPNGPlayerControls.duration + aPNGPlayerControls.start) {
+export function shouldAnimate(dependencyMap, current) {
+  if (current >= dependencyMap.start) {
+    if (!dependencyMap.loop) {
+      if (current > dependencyMap.duration + dependencyMap.start) {
         return false;
       }
     }
-    if (aPNGPlayerControls.loop) {
-      if (undefined !== aPNGPlayerControls.loopDelay) {
-        if (aPNGPlayerControls.loopDelay > 0) {
+    if (dependencyMap.loop) {
+      if (undefined !== dependencyMap.loopDelay) {
+        if (dependencyMap.loopDelay > 0) {
           let loopDelay;
-          const duration = aPNGPlayerControls.duration;
-          if (aPNGPlayerControls != null) {
-            loopDelay = aPNGPlayerControls.loopDelay;
+          const duration = dependencyMap.duration;
+          if (dependencyMap != null) {
+            loopDelay = dependencyMap.loopDelay;
           }
-          if ((current - aPNGPlayerControls.start) % (duration + loopDelay) > aPNGPlayerControls.duration) {
+          if ((current - dependencyMap.start) % (duration + loopDelay) > dependencyMap.duration) {
             return false;
           }
         }

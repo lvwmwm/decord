@@ -1,37 +1,36 @@
-// Module ID: 19595
-// Function ID: 19596
+// Module ID: 19788
+// Function ID: 19789
 // Name: Alerts
-// Dependencies: [19, 17, 5244, 16134, 16724, 6827, 12366, 21, 19596, 19597, 19601, 19602, 5243, 575, 504, 1652, 5314, 5485, 1705, 5876, 5877, 6206, 6269, 6264, 7408, 6212, 558, 2]
+// Dependencies: [19, 17, 5307, 16255, 16847, 12461, 21, 19789, 19790, 19794, 5306, 575, 504, 1655, 5377, 5548, 1708, 5939, 5940, 6269, 6332, 6327, 7474, 6275, 558, 19795, 2]
 
-// Module 19595 (Alerts)
+// Module 19788 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5314 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6206 */;
-import OverlayViewDefault from "OverlayView" /* 6212 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19596 */;
+import native from "native" /* 5377 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import OverlayViewDefault from "OverlayView" /* 6275 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19789 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5244 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 16134 */;
-import PermissionVADStore from "PermissionVADStore" /* 16724 */;
-import SurveyStore from "SurveyStore" /* 6827 */;
-import AlertStore from "AlertStore" /* 12366 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 16255 */;
+import PermissionVADStore from "PermissionVADStore" /* 16847 */;
+import AlertStore from "AlertStore" /* 12461 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, _undefined, openModal, set, tmp2;
+let _require, _undefined, openModal, set, tmp2, tmp4;
 
 let closure_12;
 let hasOwnProperty;
 let items;
 let items2;
-let items3;
 let map1;
 let metroRequire;
-let obj5;
+let obj4;
+let unpackModuleId;
 function AlertWrapper(item) {
   let items7;
   let items8;
@@ -55,7 +54,8 @@ function AlertWrapper(item) {
   let tmp24;
   let tmp25;
   let tmp26;
-  let tmp31;
+  let tmp27;
+  let tmp32;
   let tmp9;
   let useReducedMotion;
   item = item.item;
@@ -66,13 +66,13 @@ function AlertWrapper(item) {
   const cleanUp = item.cleanUp;
   let tmp = closure_15();
   let tmp3 = sharedValue;
-  let obj = isDismissable(sharedValue[14]);
+  let obj = isDismissable(sharedValue[12]);
   let items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const tmp5 = isDismissable(sharedValue[15]);
+  const tmp5 = isDismissable(sharedValue[13]);
   const useSharedValue = tmp5.useSharedValue;
   let num = 0;
-  if (transitionState === isDismissable(sharedValue[16]).TransitionStates.MOUNTED) {
+  if (transitionState === isDismissable(sharedValue[14]).TransitionStates.MOUNTED) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
@@ -87,14 +87,14 @@ function AlertWrapper(item) {
     const result = set(num);
   }, items1);
   const items2 = [closure_17, sharedValue, , , , , , , ];
-  const useAnimatedStyle = tmp2(tmp3[15]).useAnimatedStyle;
-  isDismissable(tmp3[15]);
-  items2[2] = isDismissable(tmp3[17]).withTiming;
-  items2[3] = isDismissable(tmp3[15]).Easing;
+  const useAnimatedStyle = tmp2(tmp3[13]).useAnimatedStyle;
+  isDismissable(tmp3[13]);
+  items2[2] = isDismissable(tmp3[15]).withTiming;
+  items2[3] = isDismissable(tmp3[13]).Easing;
   items2[4] = closure_16;
   items2[5] = transitionState;
-  items2[6] = isDismissable(tmp3[16]).TransitionStates;
-  items2[7] = isDismissable(tmp3[18]).scheduleOnRN;
+  items2[6] = isDismissable(tmp3[14]).TransitionStates;
+  items2[7] = isDismissable(tmp3[16]).scheduleOnRN;
   items2[8] = cleanUp;
   let c0;
   let c1;
@@ -170,47 +170,59 @@ function AlertWrapper(item) {
   AlertsTsx2.__workletHash = 13015713816035;
   AlertsTsx2.__initData = tmp9;
   const animatedStyle = useAnimatedStyle(AlertsTsx2);
-  const items4 = [closure_18, stateFromStores, sharedValue, , , , ];
-  const useAnimatedStyle2 = tmp2(tmp3[15]).useAnimatedStyle;
-  isDismissable(tmp3[15]);
-  items4[3] = isDismissable(tmp3[19]).withSpring;
-  items4[4] = isDismissable(tmp3[20]).SUBTLE_SPRING;
-  items4[5] = isDismissable(tmp3[17]).withTiming;
-  items4[6] = isDismissable(tmp3[15]).Easing;
+  const items4 = [closure_18, stateFromStores, sharedValue, , , , , ];
+  const useAnimatedStyle2 = tmp2(tmp3[13]).useAnimatedStyle;
+  isDismissable(tmp3[13]);
+  items4[3] = isDismissable(tmp3[15]).withTiming;
+  items4[4] = isDismissable(tmp3[13]).Easing;
+  items4[5] = isDismissable(tmp3[17]).withSpring;
+  items4[6] = isDismissable(tmp3[18]).SUBTLE_SPRING;
+  items4[7] = 0.7;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
   c3 = undefined;
   c4 = undefined;
   c5 = undefined;
-  [tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26] = items4;
+  c6 = undefined;
+  [tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26, tmp27] = items4;
   class AlertsTsx3 {
     constructor() {
-      let tmp7;
-      const obj = { transform: null };
-      if (c0) {
-        const items = [{ scale: 1 }];
-        obj.transform = items;
-        tmp7 = obj;
+      let items;
+      let items1;
+      let obj4;
+      const tmp = c0;
+      if (tmp) {
+        const obj2 = { transform: items };
+        items = [{ scale: 1 }];
+        return obj2;
       } else {
-        let tmp4;
-        if (1 === _undefined.get()) {
-          tmp4 = _undefined2(1, c3);
-        } else {
-          const obj2 = { duration: 100, easing: _undefined4.in(_undefined4.ease) };
-          tmp4 = _undefined3(0, obj2);
+        let tmp4Result;
+        const tmp3 = 1 === _undefined.get();
+        let num2 = 0;
+        if (tmp3) {
+          num2 = 1;
         }
-        const items1 = [{ scale: tmp4 }];
-        const obj3 = { scale: tmp4 };
-        obj.transform = items1;
-        tmp7 = obj;
+        let num3 = 100;
+        if (tmp3) {
+          num3 = 150;
+        }
+        const obj = { opacity: _undefined(num2, obj4), transform: items1 };
+        obj4 = { duration: num3, easing: _undefined2.linear };
+        if (tmp3) {
+          tmp4Result = _undefined3(1, c5);
+        } else {
+          const obj5 = { duration: 100, easing: _undefined2.in(_undefined2.ease) };
+          tmp4Result = tmp4(c6, obj5);
+        }
+        items1 = [{ scale: tmp4Result }];
+        return obj;
       }
-      return tmp7;
     }
   }
-  const items5 = [tmp21, tmp22, tmp23, tmp24, tmp25, tmp26];
+  const items5 = [tmp21, tmp22, tmp23, tmp24, tmp25, tmp26, tmp27];
   AlertsTsx3.__closure = items5;
-  AlertsTsx3.__workletHash = 14456934053891;
+  AlertsTsx3.__workletHash = 2489423342319;
   AlertsTsx3.__initData = tmp20;
   const items6 = [isDismissable];
   const animatedStyle2 = useAnimatedStyle2(AlertsTsx3);
@@ -222,33 +234,33 @@ function AlertWrapper(item) {
     }
     return true;
   }, items6);
-  transitionState(tmp3[22])(callback);
-  let obj3 = { onClose: transitionState(tmp3[21]).close };
-  const obj4 = { dialogKey: renderKey, onDismiss: callback, children: closure_13(tmp31, obj5) };
+  transitionState(tmp3[20])(callback);
+  const obj3 = { onClose: transitionState(tmp3[19]).close };
+  let obj4 = { dialogKey: renderKey, onDismiss: callback, children: closure_12(tmp32, obj5) };
   const renderAlertResult = renderAlert(obj3);
-  const Dialog = tmp2(tmp3[23]).Dialog;
+  const Dialog = tmp2(tmp3[21]).Dialog;
   obj5 = { style: items7, children: items9 };
   items7 = [StyleSheet.absoluteFill, tmp.alertContentWrapper];
-  const obj6 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", accessible: false, onPress: callback, children: closure_12(transitionState(tmp3[15]).View, obj7) };
+  const obj6 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", accessible: false, onPress: callback, children: closure_11(transitionState(tmp3[13]).View, obj7) };
   obj7 = { style: items8 };
   items8 = [tmp.alertWrapper, animatedStyle];
-  tmp31 = transitionState(tmp3[24]);
-  items9 = [closure_12(closure_5, obj6), closure_12(transitionState(tmp3[15]).View, { style: animatedStyle2, children: renderAlertResult })];
-  return closure_12(Dialog, obj4);
+  tmp32 = transitionState(tmp3[22]);
+  items9 = [closure_11(closure_5, obj6), closure_11(transitionState(tmp3[13]).View, { style: animatedStyle2, children: renderAlertResult })];
+  return closure_11(Dialog, obj4);
 }
 function getAlertItemKey(renderKey) {
   return renderKey.renderKey;
 }
 function wrapAlerts(children) {
   let obj2;
-  const obj = { style: StyleSheet.absoluteFill, children: authStore2(metroRequire, obj2) };
+  const obj = { style: StyleSheet.absoluteFill, children: unpackModuleId(metroRequire, obj2) };
   obj2 = { style: StyleSheet.absoluteFill, children };
   const tmp = OverlayViewDefault;
-  return authStore2(tmp, obj);
+  return unpackModuleId(tmp, obj);
 }
 const StyleSheet = react_native.StyleSheet;
 ({ TouchableWithoutFeedback: hasOwnProperty, View: metroRequire } = react_native);
-({ jsx: closure_12, jsxs: map1 } = Fragment);
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 let obj = {
   stores: items,
   center: true,
@@ -260,7 +272,7 @@ let obj = {
   }
 };
 items = [PermissionSpeakStore];
-let items1 = [obj, , ];
+let items1 = [obj, ];
 let obj2 = {
   stores: items2,
   center: true,
@@ -273,40 +285,29 @@ let obj2 = {
 };
 items2 = [PermissionVADStore];
 items1[1] = obj2;
-let obj3 = {
-  stores: items3,
-  center: true,
-  isOpen() {
-    return null != SurveyStore.getCurrentSurvey();
-  },
-  getComponent() {
-    return require("MobileSurvey").default;
-  }
-};
-items3 = [SurveyStore];
-items1[2] = obj3;
-let tmp7 = new ModalRegistryDefault(items1);
-const stores = tmp7;
+let tmp6 = new ModalRegistryDefault(items1);
+const stores = tmp6;
 let createStyles = createStyles_mod;
-let obj4 = { alertWrapper: obj5, alertContentWrapper: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } };
-obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" };
+let obj3 = { alertWrapper: obj4, alertContentWrapper: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" };
 createStyles = createStyles.createStyles;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-let closure_15 = createStyles(obj4);
+let closure_15 = createStyles(obj3);
 let closure_16 = { code: "(function AlertsTsx1(finished){let[visible,transitionState,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;if(finished&&visible.get()===0&&transitionState===TransitionStates.YEETED){scheduleOnRN(cleanUp);}})" };
 let closure_17 = { code: "(function AlertsTsx2(){let[visible,withTiming,Easing,_worklet_9983200573389_init_data,transitionState,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;const isVisible=visible.get()===1;return{opacity:withTiming(visible.get(),{duration:isVisible?250:100,easing:Easing.linear},'animate-always',function AlertsTsx1Factory([_worklet_9983200573389_init_data,visible,transitionState,TransitionStates,scheduleOnRN,cleanUp]){const AlertsTsx1=function(finished){if(finished&&visible.get()===0&&transitionState===TransitionStates.YEETED){scheduleOnRN(cleanUp);}};AlertsTsx1.__closure=[visible,transitionState,TransitionStates,scheduleOnRN,cleanUp];AlertsTsx1.__workletHash=9983200573389;AlertsTsx1.__initData=_worklet_9983200573389_init_data;return AlertsTsx1;}([_worklet_9983200573389_init_data,visible,transitionState,TransitionStates,scheduleOnRN,cleanUp]))};})" };
-let closure_18 = { code: "(function AlertsTsx3(){let[useReducedMotion,visible,withSpring,SUBTLE_SPRING,withTiming,Easing]=this.__closure;if(useReducedMotion){return{transform:[{scale:1}]};}return{transform:[{scale:visible.get()===1?withSpring(1,SUBTLE_SPRING):withTiming(0,{duration:100,easing:Easing.in(Easing.ease)})}]};})" };
+let closure_18 = { code: "(function AlertsTsx3(){let[useReducedMotion,visible,withTiming,Easing,withSpring,SUBTLE_SPRING,HIDDEN_CONTENT_SCALE]=this.__closure;if(useReducedMotion){return{transform:[{scale:1}]};}const isVisible=visible.get()===1;return{opacity:withTiming(isVisible?1:0,{duration:isVisible?150:100,easing:Easing.linear}),transform:[{scale:isVisible?withSpring(1,SUBTLE_SPRING):withTiming(HIDDEN_CONTENT_SCALE,{duration:100,easing:Easing.in(Easing.ease)})}]};})" };
 function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
-  return authStore2(AlertWrapper, obj, arg0);
+  return unpackModuleId(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "a", renderKey: "isArray", props: "isArray" });
+let closure_23 = Object.freeze({ renderAlert: "channel_id", renderKey: "flex", props: "analyticsLocations" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
   let renderAlert;
   let stateFromStores;
   _require = renderAlert.useRef(closure_23);
+  const tmp = stateFromStores;
   let obj = require("get initialized");
   let items = [AlertStore, ...closure_14.getStores()];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -336,7 +337,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "a", renderKey: "isArray", props: "isArray" };
+        return { renderAlert: "channel_id", renderKey: "flex", props: "analyticsLocations" };
       }
     }
   });
@@ -361,7 +362,16 @@ const memoResult = react.memo(function Alerts() {
     return items1;
   }, items2);
   const obj3 = { items: memo, renderItem: renderAlertItem, getItemKey: getAlertItemKey, wrapChildren: wrapAlerts };
-  return closure_12(require("native").TransitionGroup, obj3);
+  const children = [closure_11(require("native").TransitionGroup, obj3), ];
+  let tmp8Result = null;
+  const tmp6 = closure_12;
+  const tmp7 = closure_13;
+  const tmp8 = closure_11;
+  if (null == renderAlert) {
+    tmp8Result = tmp8(stateFromStoresObject(tmp[25]), {});
+  }
+  children[1] = tmp8Result;
+  return tmp6(tmp7, { children });
 });
 let result = size.fileFinishedImporting("components_native/common/Alerts.tsx");
 

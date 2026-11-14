@@ -1,16 +1,16 @@
-// Module ID: 20383
-// Function ID: 20384
+// Module ID: 20538
+// Function ID: 20539
 // Name: GuildSettingsServerTagPickerCell
-// Dependencies: [19, 17, 21, 5243, 575, 5315, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5378, 2]
 // Exports: default
 
-// Module 20383 (GuildSettingsServerTagPickerCell)
+// Module 20538 (GuildSettingsServerTagPickerCell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 5315 */;
+import react_native2 from "react-native" /* 5378 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,25 +1,25 @@
-// Module ID: 8066
-// Function ID: 8067
+// Module ID: 8131
+// Function ID: 8132
 // Name: ChannelPermissionsUtils
-// Dependencies: [5096, 5110, 5150, 5155, 1385, 6849, 1072, 5153, 1113, 1084, 11, 5309, 1380, 5180, 8067, 2116, 6293, 2]
+// Dependencies: [5159, 5173, 5213, 5218, 1388, 6912, 1072, 5216, 1113, 1084, 11, 5372, 1255, 5243, 8132, 2119, 6356, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8066 (ChannelPermissionsUtils)
+// Module 8131 (ChannelPermissionsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import intl8 from "intl" /* 1113 */;
-import Server from "Server" /* 2116 */;
-import ChannelRecord from "ChannelRecord" /* 5096 */;
-import GuildRecord from "GuildRecord" /* 5110 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 5153 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5180 */;
-import UserUtilsDefault from "UserUtils" /* 5309 */;
-import ChannelUtils from "ChannelUtils" /* 6293 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6849 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8067 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 5150 */;
-import GuildMemberStore from "GuildMemberStore" /* 5155 */;
-import UserStore from "UserStore" /* 1385 */;
+import Server from "Server" /* 2119 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import GuildRecord from "GuildRecord" /* 5173 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 5216 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
+import UserUtilsDefault from "UserUtils" /* 5372 */;
+import ChannelUtils from "ChannelUtils" /* 6356 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6912 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8132 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5213 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

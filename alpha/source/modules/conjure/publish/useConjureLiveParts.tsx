@@ -1,15 +1,15 @@
-// Module ID: 13080
-// Function ID: 13081
+// Module ID: 13179
+// Function ID: 13180
 // Name: useConjureLiveParts
-// Dependencies: [2162, 5173, 5473, 5114, 6954, 504, 7197, 2]
+// Dependencies: [2165, 5236, 5536, 5177, 7017, 504, 7260, 2]
 // Exports: default
 
-// Module 13080 (useConjureLiveParts)
-import GuildChannelStore2 from "GuildChannelStore" /* 5173 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5473 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6954 */;
+// Module 13179 (useConjureLiveParts)
+import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

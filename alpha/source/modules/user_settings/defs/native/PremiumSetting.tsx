@@ -1,20 +1,20 @@
-// Module ID: 17386
-// Function ID: 17387
+// Module ID: 17509
+// Function ID: 17510
 // Name: PremiumSetting
-// Dependencies: [19, 1385, 2176, 1072, 21, 2171, 1113, 9518, 9721, 17387, 12311, 9368, 17390, 2]
+// Dependencies: [19, 1388, 2179, 1072, 21, 2174, 1113, 9585, 9788, 17510, 12406, 9436, 17513, 2]
 
-// Module 17386 (PremiumSetting)
+// Module 17509 (PremiumSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9368 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 9518 */;
-import PremiumTabBadgeDefault from "PremiumTabBadge" /* 17387 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9436 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 9585 */;
+import PremiumTabBadgeDefault from "PremiumTabBadge" /* 17510 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
+import UserStore from "UserStore" /* 1388 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,14 +1,14 @@
-// Module ID: 10979
-// Function ID: 10980
+// Module ID: 11048
+// Function ID: 11049
 // Name: AttachmentIcon
-// Dependencies: [19, 21, 575, 5956, 10980, 2]
+// Dependencies: [19, 21, 575, 6019, 11049, 2]
 // Exports: AttachmentIcon
 
-// Module 10979 (AttachmentIcon)
+// Module 11048 (AttachmentIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 10980 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 11049 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

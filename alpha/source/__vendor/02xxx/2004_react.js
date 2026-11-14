@@ -1,25 +1,18 @@
 // Module ID: 2004
 // Function ID: 2005
 // Name: react
-// Dependencies: [19]
-// Exports: useToolbarContext
+// Dependencies: [19, 21]
+// Exports: default
 
 // Module 2004 (react)
 import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
 
-const useContext = react.useContext;
-const context = react.createContext(undefined);
+let _window;
+let map;
+({ Fragment: _window, jsx: map } = Fragment);
 
-export const ToolbarContext = context;
-export const useToolbarContext = function() {
-  const tmp = useContext(context);
-  if (tmp) {
-    return tmp;
-  } else {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("KeyboardToolbar.* component must be used inside <KeyboardToolbar>");
-    throw error;
-  }
+export default function _default(children) {
+  const obj = { children: children.children };
+  return map(React, obj);
 };

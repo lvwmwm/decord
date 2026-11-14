@@ -1,12 +1,12 @@
-// Module ID: 9279
-// Function ID: 9280
+// Module ID: 9346
+// Function ID: 9347
 // Name: LabFeatureStore
-// Dependencies: [504, 9280, 572, 2]
+// Dependencies: [504, 9347, 572, 2]
 
-// Module 9279 (LabFeatureStore)
+// Module 9346 (LabFeatureStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LabFeatures from "LabFeatures" /* 9280 */;
+import LabFeatures from "LabFeatures" /* 9347 */;
 import size from "module_2" /* 2 */;
 
 const LabFeaturesDefault = LabFeatures;

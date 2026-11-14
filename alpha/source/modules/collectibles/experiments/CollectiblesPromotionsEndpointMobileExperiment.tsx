@@ -1,11 +1,11 @@
-// Module ID: 9344
-// Function ID: 9345
+// Module ID: 9411
+// Function ID: 9412
 // Name: CollectiblesPromotionsEndpointMobileExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: useCollectiblesPromotionEndpointReferenceMobile
 
-// Module 9344 (CollectiblesPromotionsEndpointMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 9411 (CollectiblesPromotionsEndpointMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-collectibles-promotion-endpoint-reference-mobile", kind: "user", defaultConfig: { useEndpoint: false }, variations: { 0: { useEndpoint: false }, 1: { useEndpoint: true } } };

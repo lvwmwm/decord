@@ -1,20 +1,20 @@
-// Module ID: 20274
-// Function ID: 20275
+// Module ID: 20429
+// Function ID: 20430
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 5114, 8339, 1072, 21, 18734, 8338, 1260, 1113, 7427, 20275, 20285, 20293, 20294, 20313, 20332, 20337, 20352, 20353, 20365, 20377, 20379, 19514, 19523, 20387, 20391, 20392, 19525, 18735, 20393, 20394, 20414, 20435, 20439, 20442, 20445, 14029, 14044, 14048, 20446, 20451, 20452, 20474, 20496, 20562, 20563, 20577, 20614, 20617, 20618, 20621, 20629, 20630, 1627, 5854, 504, 7424, 2]
+// Dependencies: [32, 19, 5177, 8405, 1072, 21, 18863, 8404, 1264, 1113, 7493, 20430, 20440, 20448, 20449, 20468, 20487, 20492, 20507, 20508, 20520, 20532, 20534, 19707, 19716, 20542, 20546, 20547, 19718, 18864, 20548, 20549, 20569, 20590, 20594, 20597, 20600, 14136, 14151, 14155, 20601, 20606, 20607, 20629, 20651, 20717, 20718, 20732, 20769, 20772, 20773, 20776, 20784, 20785, 1630, 5917, 504, 7490, 2]
 // Exports: default
 
-// Module 20274 (GuildSettingsModal)
+// Module 20429 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import intl42 from "intl" /* 1113 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import NavigatorHeader from "NavigatorHeader" /* 7427 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8338 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18734 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18863 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8339 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8405 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

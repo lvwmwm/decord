@@ -1,10 +1,10 @@
-// Module ID: 9910
-// Function ID: 9911
+// Module ID: 9977
+// Function ID: 9978
 // Name: BillingInformation
-// Dependencies: [5, 1072, 9902, 2171, 1357, 1113, 9696, 2]
+// Dependencies: [5, 1072, 9969, 2174, 1360, 1113, 9763, 2]
 // Exports: useBillingInformationNative
 
-// Module 9910 (BillingInformation)
+// Module 9977 (BillingInformation)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -36,10 +36,10 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
   if (null == subscriptionPeriodStart) {
     return null;
   } else {
-    const tmp2Result = tmp2(2171);
+    const tmp2Result = tmp2(2174);
     const billingInformationString = tmp2Result.getBillingInformationString(subscription, subscriptionPeriodStart, tmp, flag, fractionalPremiumInfo);
     let formatResult = billingInformationString;
-    const tmp2Result2 = tmp2(1357);
+    const tmp2Result2 = tmp2(1360);
     if (tmp2Result2.isIOS()) {
       formatResult = billingInformationString;
       if (subscription.isPurchasedViaApple) {

@@ -1,18 +1,18 @@
-// Module ID: 10687
-// Function ID: 10688
+// Module ID: 10756
+// Function ID: 10757
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 5114, 504, 8343, 1113, 2717, 10688, 10689, 1380, 2]
+// Dependencies: [19, 5177, 504, 8409, 1113, 2733, 10757, 10758, 1255, 2]
 // Exports: default
 
-// Module 10687 (usePowerupGroupConfig)
+// Module 10756 (usePowerupGroupConfig)
 import intl4 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import _modDef2717 from "module_2717" /* 2717 */;
-import GuildTagUtils from "GuildTagUtils" /* 8343 */;
-import _modDef10688 from "module_10688" /* 10688 */;
-import _modDef10689 from "module_10689" /* 10689 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import _modDef2733 from "module_2733" /* 2733 */;
+import GuildTagUtils from "GuildTagUtils" /* 8409 */;
+import _modDef10757 from "module_10757" /* 10757 */;
+import _modDef10758 from "module_10758" /* 10758 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5114 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,15 +43,15 @@ export default function usePowerupGroupConfig(arg0, arg1) {
     let obj3;
     let stringResult;
     if ("guildTagsBadgePacks" === group.group) {
-      const obj2 = { title: intl.string(_modDef2717.KC9HRW), description: intl2.string(_modDef2717.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
+      const obj2 = { title: intl.string(_modDef2733.KC9HRW), description: intl2.string(_modDef2733.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
       intl = intl4.intl;
       intl2 = intl4.intl;
       stringResult = undefined;
-      obj3 = { staticUrl: _modDef10688, animatedUrl: _modDef10689 };
+      obj3 = { staticUrl: _modDef10757, animatedUrl: _modDef10758 };
       const tmp7 = importDefault;
       if (!stateFromStores) {
         const intl3 = intl4.intl;
-        stringResult = intl3.string(tmp7(2717).lvk1Gc);
+        stringResult = intl3.string(tmp7(2733).lvk1Gc);
       }
       return obj2;
     } else {

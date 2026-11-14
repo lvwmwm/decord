@@ -1,14 +1,14 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8075
+// Function ID: 8076
 // Name: TextSpoilerIcon
-// Dependencies: [19, 21, 575, 5956, 7982, 2]
+// Dependencies: [19, 21, 575, 6019, 8047, 2]
 // Exports: TextSpoilerIcon
 
-// Module 8010 (TextSpoilerIcon)
+// Module 8075 (TextSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 7982 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 8047 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 14864
-// Function ID: 14865
+// Module ID: 14978
+// Function ID: 14979
 // Name: useWelcomeScreenEnabled
-// Dependencies: [5096, 5092, 5114, 5146, 1072, 504, 2]
+// Dependencies: [5159, 5155, 5177, 5209, 1072, 504, 2]
 // Exports: default
 
-// Module 14864 (useWelcomeScreenEnabled)
+// Module 14978 (useWelcomeScreenEnabled)
 import Constants from "Constants" /* 1072 */;
-import ChannelRecord from "ChannelRecord" /* 5096 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5146 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

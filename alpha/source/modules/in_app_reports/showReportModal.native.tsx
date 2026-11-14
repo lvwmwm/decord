@@ -1,11 +1,11 @@
-// Module ID: 11998
-// Function ID: 11999
+// Module ID: 12065
+// Function ID: 12066
 // Name: showReportModal
-// Dependencies: [5, 11999, 12000, 6785, 12001, 2118, 2]
+// Dependencies: [5, 12066, 12067, 6848, 12068, 2121, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 11998 (showReportModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6785 */;
+// Module 12065 (showReportModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let obj = function _showReportModal() {
               menu = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {

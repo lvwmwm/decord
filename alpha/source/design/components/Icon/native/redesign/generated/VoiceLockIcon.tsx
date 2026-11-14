@@ -1,14 +1,14 @@
-// Module ID: 8029
-// Function ID: 8030
+// Module ID: 8094
+// Function ID: 8095
 // Name: VoiceLockIcon
-// Dependencies: [19, 21, 575, 5956, 7977, 2]
+// Dependencies: [19, 21, 575, 6019, 8042, 2]
 // Exports: VoiceLockIcon
 
-// Module 8029 (VoiceLockIcon)
+// Module 8094 (VoiceLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5956 */;
-import AssetRegistry from "AssetRegistry" /* 7977 */;
+import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import AssetRegistry from "AssetRegistry" /* 8042 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

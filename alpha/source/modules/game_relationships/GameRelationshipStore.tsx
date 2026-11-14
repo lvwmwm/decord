@@ -1,19 +1,19 @@
-// Module ID: 8698
-// Function ID: 8699
+// Module ID: 8765
+// Function ID: 8766
 // Name: GameRelationshipStore
-// Dependencies: [5185, 1072, 5170, 504, 572, 2]
+// Dependencies: [5248, 1072, 5233, 504, 572, 2]
 
-// Module 8698 (GameRelationshipStore)
+// Module 8765 (GameRelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 5170 */;
-import RelationshipStore from "RelationshipStore" /* 5185 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 5233 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;
 
-const f95784 = (item) => {
+const f96991 = (item) => {
   let id;
   let type;
   ({ type, id } = item);
@@ -35,7 +35,7 @@ function recountRelationshipTypes() {
   let c1 = 0;
   let c2 = 0;
   const values = secondaryIndexMap.values();
-  const item = values.forEach(f95784);
+  const item = values.forEach(f96991);
   let closure_7 = c0;
   let closure_8 = c1;
   let closure_9 = c2;
@@ -162,7 +162,7 @@ let obj = {
     let c1 = 0;
     let c2 = 0;
     const values = secondaryIndexMap.values();
-    const item1 = values.forEach(f95784);
+    const item1 = values.forEach(f96991);
     let closure_7 = c0;
     let closure_8 = c1;
     let closure_9 = c2;
@@ -177,7 +177,7 @@ let obj = {
       let c1 = 0;
       c2 = 0;
       const values = obj.values();
-      const item = values.forEach(f95784);
+      const item = values.forEach(f96991);
       let closure_7 = c0;
       let closure_8 = c1;
       let closure_9 = c2;
@@ -194,7 +194,7 @@ let obj = {
       let closure_1 = 0;
       closure_2 = 0;
       const values = obj.values();
-      const item = values.forEach(f95784);
+      const item = values.forEach(f96991);
       let closure_7 = closure_0;
       let closure_8 = closure_1;
       let closure_9 = closure_2;

@@ -1,10 +1,10 @@
-// Module ID: 18882
-// Function ID: 18883
+// Module ID: 19012
+// Function ID: 19013
 // Name: WaterwheelsDiscoverAnalyticsSession
-// Dependencies: [5, 32, 1266, 2]
+// Dependencies: [5, 32, 1269, 2]
 
-// Module 18882 (WaterwheelsDiscoverAnalyticsSession)
-import v1 from "v1" /* 1266 */;
+// Module 19012 (WaterwheelsDiscoverAnalyticsSession)
+import v1 from "v1" /* 1269 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -107,15 +107,15 @@ class WaterwheelsDiscoverAnalyticsSession {
       });
     }
   }
-  trackAction(dependencyMap, discoverActionParameters, arg2) {
+  trackAction(dependencyMap, discoverActionParameters, identity) {
     let obj2;
     let obj3;
     let sessionId;
     let sum;
     const self = this;
     const parameters = discoverActionParameters;
-    let flag = arg2;
-    if (arg2 === undefined) {
+    let flag = identity;
+    if (identity === undefined) {
       flag = false;
     }
     let c3;

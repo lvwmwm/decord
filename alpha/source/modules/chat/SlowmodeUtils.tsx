@@ -1,15 +1,15 @@
-// Module ID: 8726
-// Function ID: 8727
+// Module ID: 8793
+// Function ID: 8794
 // Name: SlowmodeUtils
-// Dependencies: [5175, 1072, 504, 1113, 1089, 2166, 2]
-// Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode
+// Dependencies: [5238, 1072, 504, 1113, 1089, 2169, 2]
+// Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText, getSlowmodeTooltipLabel, useCanBypassSlowmode
 
-// Module 8726 (SlowmodeUtils)
+// Module 8793 (SlowmodeUtils)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,8 +21,8 @@ const result = size.fileFinishedImporting("modules/chat/SlowmodeUtils.tsx");
 export function canBypassSlowmodeHelper(rateLimitPerUser, can) {
   return can.can(Permissions.BYPASS_SLOWMODE, rateLimitPerUser);
 }
-export function canBypassSlowmode(channel) {
-  return PermissionStore.can(Permissions.BYPASS_SLOWMODE, channel);
+export function canBypassSlowmode(PressableOpacity) {
+  return PermissionStore.can(Permissions.BYPASS_SLOWMODE, PressableOpacity);
 }
 export function useCanBypassSlowmode(channel) {
   _require = channel;
@@ -36,7 +36,7 @@ export function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
     const intl2 = intl4.intl;
     return intl2.string(intl4.t["8+NidX"]);
   } else if (stateFromStores >= DurationsDefault.Millis.HOUR) {
-    const tmp3Result = _modDef2166;
+    const tmp3Result = _modDef2169;
     const time2 = tmp3Result.duration(stateFromStores);
     const _HermesInternal3 = HermesInternal;
     const combined = "" + time2.minutes();
@@ -47,7 +47,7 @@ export function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
     const padStartResult1 = combined1.padStart(2, "0");
     return "" + time2.hours() + ":" + padStartResult + ":" + padStartResult1;
   } else if (stateFromStores > 0) {
-    const tmp3Result2 = _modDef2166;
+    const tmp3Result2 = _modDef2169;
     const time = tmp3Result2.duration(stateFromStores);
     const _HermesInternal = HermesInternal;
     const combined2 = "" + time.seconds();
@@ -59,37 +59,57 @@ export function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
     return intl.string(intl4.t.Icu3bf);
   }
 }
-export function getSlowmodeDescription(rateLimitPerUser) {
+export function getSlowmodeDescription(seconds) {
+  let formatToPlainString3Result;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  if (rateLimitPerUser >= DurationsDefault.Seconds.HOUR) {
-    const _Math2 = Math;
-    const rounded = Math.floor(rateLimitPerUser / tmp(1089).Seconds.HOUR);
-    const _Math3 = Math;
-    const diff = rateLimitPerUser - rounded * tmp(1089).Seconds.HOUR;
-    const floorResult = floor(diff / DurationsDefault.Seconds.MINUTE);
-    const diff1 = rateLimitPerUser - rounded * tmp(1089).Seconds.HOUR;
-    const diff2 = diff1 - floorResult * tmp(1089).Seconds.MINUTE;
+  const rounded = Math.floor(seconds / DurationsDefault.Seconds.HOUR);
+  const diff = seconds - rounded * DurationsDefault.Seconds.HOUR;
+  const floorResult = floor(diff / DurationsDefault.Seconds.MINUTE);
+  const diff1 = seconds - rounded * DurationsDefault.Seconds.HOUR;
+  const diff2 = diff1 - floorResult * DurationsDefault.Seconds.MINUTE;
+  if (rounded > 0) {
     const intl3 = intl4.intl;
     const formatToPlainString3 = intl3.formatToPlainString;
     const t3 = intl4.t;
     const time = { hours: rounded, minutes: floorResult, seconds: diff2 };
-    return formatToPlainString3(flag ? t3.oEwLez : t3["3hz51F"], time);
-  } else if (rateLimitPerUser >= 60) {
-    const _Math = Math;
-    const rounded1 = Math.floor(rateLimitPerUser / 60);
+    formatToPlainString3Result = formatToPlainString3(flag ? t3.oEwLez : t3["3hz51F"], time);
+  } else if (floorResult > 0) {
     const intl2 = intl4.intl;
     const formatToPlainString2 = intl2.formatToPlainString;
     const t2 = intl4.t;
-    const time1 = { minutes: rounded1, seconds: rateLimitPerUser - 60 * rounded1 };
-    return formatToPlainString2(flag ? t2.DARKYm : t2.sY3wlG, time1);
+    const time1 = { minutes: floorResult, seconds: diff2 };
+    formatToPlainString3Result = formatToPlainString2(flag ? t2.DARKYm : t2.sY3wlG, time1);
   } else {
     const intl = intl4.intl;
     const formatToPlainString = intl.formatToPlainString;
     const t = intl4.t;
-    const obj = { seconds: rateLimitPerUser };
-    return formatToPlainString(flag ? t["9yE8Ga"] : t.IWntYg, obj);
+    const obj = { seconds };
+    formatToPlainString3Result = formatToPlainString(flag ? t["9yE8Ga"] : t.IWntYg, obj);
   }
+  return formatToPlainString3Result;
+}
+export function getSlowmodeTooltipLabel(rateLimitPerUser) {
+  let formatToPlainStringResult;
+  const rounded = Math.floor(rateLimitPerUser / DurationsDefault.Seconds.HOUR);
+  const diff = rateLimitPerUser - rounded * DurationsDefault.Seconds.HOUR;
+  const floorResult = floor(diff / DurationsDefault.Seconds.MINUTE);
+  const diff1 = rateLimitPerUser - rounded * DurationsDefault.Seconds.HOUR;
+  const diff2 = diff1 - floorResult * DurationsDefault.Seconds.MINUTE;
+  if (rounded > 0) {
+    const intl3 = intl4.intl;
+    const time = { hours: rounded, minutes: floorResult, seconds: diff2 };
+    formatToPlainStringResult = intl3.formatToPlainString(intl4.t.YiNO8W, time);
+  } else if (floorResult > 0) {
+    const intl2 = intl4.intl;
+    const time1 = { minutes: floorResult, seconds: diff2 };
+    formatToPlainStringResult = intl2.formatToPlainString(intl4.t.oSzkf2, time1);
+  } else {
+    const intl = intl4.intl;
+    const obj = { seconds: rateLimitPerUser };
+    formatToPlainStringResult = intl.formatToPlainString(intl4.t.uaRDmS, obj);
+  }
+  return formatToPlainStringResult;
 }

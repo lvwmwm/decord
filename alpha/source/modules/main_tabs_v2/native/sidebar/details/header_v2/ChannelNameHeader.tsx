@@ -1,28 +1,28 @@
-// Module ID: 19382
-// Function ID: 19383
+// Module ID: 19574
+// Function ID: 19575
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 5092, 5114, 5175, 6005, 1385, 1072, 21, 5243, 575, 504, 1187, 5891, 1499, 6000, 7364, 5866, 1113, 6293, 4015, 10822, 7968, 9997, 7852, 8410, 2]
+// Dependencies: [19, 17, 5155, 5177, 5238, 6068, 1388, 1072, 21, 5306, 575, 504, 1187, 5954, 1502, 6063, 7428, 5929, 1113, 6356, 4067, 10891, 8033, 10064, 7918, 8476, 2]
 
-// Module 19382 (ChannelNameHeader)
+// Module 19574 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import _modDef4015 from "module_4015" /* 4015 */;
-import Text_Text from "Text/Text" /* 5866 */;
-import transitionToChannel from "transitionToChannel" /* 6000 */;
-import ChannelUtils from "ChannelUtils" /* 6293 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7968 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8410 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10822 */;
+import _modDef4067 from "module_4067" /* 4067 */;
+import Text_Text from "Text/Text" /* 5929 */;
+import transitionToChannel from "transitionToChannel" /* 6063 */;
+import ChannelUtils from "ChannelUtils" /* 6356 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10891 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import GuildStore from "GuildStore" /* 5114 */;
-import PermissionStore from "PermissionStore" /* 5175 */;
-import PresenceStore from "PresenceStore" /* 6005 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import PresenceStore from "PresenceStore" /* 6068 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -127,9 +127,9 @@ function ChannelSubtitle(channel) {
     let stringResult;
     if (channel.isGameInvitesChannel()) {
       const intl = tmp(1113).intl;
-      stringResult = intl.string(_modDef4015["D+2/QP"]);
+      stringResult = intl.string(_modDef4067["D+2/QP"]);
     } else {
-      const tmpResult = tmp(6293);
+      const tmpResult = tmp(6356);
       stringResult = tmpResult.channelTypeString(channel);
     }
     stateFromStores = stringResult;
@@ -139,7 +139,7 @@ function ChannelSubtitle(channel) {
     tmp6 = null;
     if ("" !== stateFromStores) {
       const obj2 = { variant: "body-sm/medium", color: "text-muted", lineClamp: 1, children: stateFromStores };
-      tmp6 = closure_12(tmp(5866).Text, obj2);
+      tmp6 = closure_12(tmp(5929).Text, obj2);
     }
   }
   return tmp6;
@@ -255,7 +255,7 @@ function DMChannelNameHeader(channel) {
   let analyticsLocations;
   const containerStyle = channel.containerStyle;
   let tmp = closure_15();
-  analyticsLocations = analyticsLocations(7852)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7918)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = react.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -267,7 +267,7 @@ function DMChannelNameHeader(channel) {
   }, items);
   let obj = { style: items1, onPress: callback, children: closure_12(ChannelNameHeaderContent, { channel }) };
   items1 = [tmp.container, containerStyle];
-  const PressableOpacity = channel(7364).PressableOpacity;
+  const PressableOpacity = channel(7428).PressableOpacity;
   return closure_12(PressableOpacity, obj);
 }
 function DefaultChannelNameHeader(arg0) {

@@ -1,19 +1,19 @@
-// Module ID: 14868
-// Function ID: 14869
+// Module ID: 14982
+// Function ID: 14983
 // Name: GuildInviteIcon
-// Dependencies: [19, 17, 21, 5243, 575, 5314, 1113, 1411, 5957, 2150, 1187, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5377, 1113, 1414, 6020, 2153, 1187, 2]
 
-// Module 14868 (GuildInviteIcon)
+// Module 14982 (GuildInviteIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import StringUtils from "StringUtils" /* 2150 */;
-import native from "native" /* 5314 */;
-import FastImageDefault from "FastImage" /* 5957 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import StringUtils from "StringUtils" /* 2153 */;
+import native from "native" /* 5377 */;
+import FastImageDefault from "FastImage" /* 6020 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj3;

@@ -1,182 +1,216 @@
 // Module ID: 1881
 // Function ID: 1882
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 1877, 1878, 1866, 1827]
+// Dependencies: []
+// Exports: getViewInfo, getViewTagFromInstance
 
 // Module 1881
-import Fragment from "Fragment" /* 21 */;
-import startMapper from "startMapper" /* 1827 */;
-import react_native from "react-native" /* 1866 */;
-import react2 from "react" /* 1877 */;
-import _mod1878 from "module_1878" /* 1878 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
 
-let Component;
-let c10;
-let c9;
-let createContext;
-let hasOwnProperty;
-let metroImportAll;
-let metroImportDefault;
-let metroRequire;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-function SkipEntering(children) {
-  const tmp = authStore(children.shouldSkip);
-  let closure_0 = tmp;
-  const items = [tmp];
-  React4(() => {
-    closure_0.current = false;
-  }, items);
-  return <context value={tmp}>{arg0.children}</context>;
-}
-({ Children: hasOwnProperty, cloneElement: metroRequire, Fragment: metroImportDefault, isValidElement: metroImportAll, useEffect: c9, useRef: c10, Component, createContext } = react);
-const jsx = Fragment.jsx;
-const context = createContext(null);
-class LayoutAnimationConfig {
-  constructor() {
-    let constructResult;
-    const self = this;
-    const items = [...arguments];
-    let closure_0;
-    _classCallCheck(this, LayoutAnimationConfig);
-    const items1 = [...items];
-    const obj = _getPrototypeOf(LayoutAnimationConfig);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
+export function getViewInfo(findHostInstanceResult) {
+  let __nativeTag;
+  let uiViewClassName;
+  if (findHostInstanceResult != null) {
+    const __viewConfig = findHostInstanceResult.__viewConfig;
+    if (__viewConfig != null) {
+      uiViewClassName = __viewConfig.uiViewClassName;
     }
-    const tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result._childInstance = null;
-    tmp3Result._setChildInstance = (_childInstance) => {
-      closure_0._childInstance = _childInstance;
-    };
-    return tmp3Result;
   }
-}
-_inherits(LayoutAnimationConfig, Component);
-const entry = {
-  key: "_getMergedRef",
-  value: function _getMergedRef(ref) {
-    const self = this;
-    const tmp = this._mergedRef && self._mergedRefSource === ref;
-    if (!tmp) {
-      self._mergedRefSource = ref;
-      const obj = react2;
-      self._mergedRef = obj.mergeRefs(ref, self._setChildInstance);
-    }
-    return self._mergedRef;
-  }
-};
-let items = [
-  entry,
-  {
-    key: "getComponentViewTag",
-    value: function getComponentViewTag() {
-      const obj = _mod1878;
-      let num = obj.getViewTagFromInstance(this._childInstance);
-      if (num == null) {
-        num = -1;
+  if (uiViewClassName == null) {
+    let uiViewClassName1;
+    if (findHostInstanceResult != null) {
+      const _viewConfig = findHostInstanceResult._viewConfig;
+      if (_viewConfig != null) {
+        uiViewClassName1 = _viewConfig.uiViewClassName;
       }
-      return num;
     }
-  },
-  {
-    key: "getMaybeWrappedChildren",
-    value: function getMaybeWrappedChildren() {
-      const self = this;
-      const arr = hasOwnProperty;
-      if (hasOwnProperty.count(this.props.children) > 1) {
-        let mapped;
-        if (self.props.skipExiting) {
-          mapped = arr.map(self.props.children, (children) => <LayoutAnimationConfig skipExiting>{arg0}</LayoutAnimationConfig>);
+    uiViewClassName = uiViewClassName1;
+  }
+  if (uiViewClassName == null) {
+    let type;
+    if (findHostInstanceResult != null) {
+      const __internalInstanceHandle = findHostInstanceResult.__internalInstanceHandle;
+      if (__internalInstanceHandle != null) {
+        type = __internalInstanceHandle.type;
+      }
+    }
+    uiViewClassName = type;
+  }
+  if (uiViewClassName == null) {
+    let elementType;
+    if (findHostInstanceResult != null) {
+      const __internalInstanceHandle2 = findHostInstanceResult.__internalInstanceHandle;
+      if (__internalInstanceHandle2 != null) {
+        elementType = __internalInstanceHandle2.elementType;
+      }
+    }
+    uiViewClassName = elementType;
+  }
+  const obj = { reactViewName: uiViewClassName, viewTag: __nativeTag };
+  __nativeTag = undefined;
+  if (findHostInstanceResult != null) {
+    __nativeTag = findHostInstanceResult.__nativeTag;
+  }
+  return obj;
+}
+export function getViewTagFromInstance(_childInstance) {
+  const tmp = _childInstance;
+  if (tmp) {
+    if (typeof _childInstance.getComponentViewTag === "function") {
+      const componentViewTag = _childInstance.getComponentViewTag();
+      if (-1 !== componentViewTag) {
+        return componentViewTag;
+      }
+    }
+    let uiViewClassName;
+    if (_childInstance != null) {
+      const __viewConfig = _childInstance.__viewConfig;
+      if (__viewConfig != null) {
+        uiViewClassName = __viewConfig.uiViewClassName;
+      }
+    }
+    if (uiViewClassName == null) {
+      let uiViewClassName1;
+      if (_childInstance != null) {
+        const _viewConfig = _childInstance._viewConfig;
+        if (_viewConfig != null) {
+          uiViewClassName1 = _viewConfig.uiViewClassName;
         }
-        return mapped;
       }
-      mapped = self.getMaybeRefTrackedChild();
+      uiViewClassName = uiViewClassName1;
     }
-  },
-  {
-    key: "getMaybeRefTrackedChild",
-    value: function getMaybeRefTrackedChild() {
-      const self = this;
-      const children = this.props.children;
-      let tmp = children;
-      if (undefined !== this.props.skipExiting) {
-        tmp = children;
-        if (metroImportAll(children)) {
-          tmp = children;
-          if (children.type !== metroImportDefault) {
-            const obj = { ref: self._getMergedRef(children.props.ref) };
-            tmp = metroRequire(children, obj);
+    if (uiViewClassName == null) {
+      let type;
+      if (_childInstance != null) {
+        const __internalInstanceHandle = _childInstance.__internalInstanceHandle;
+        if (__internalInstanceHandle != null) {
+          type = __internalInstanceHandle.type;
+        }
+      }
+      uiViewClassName = type;
+    }
+    if (uiViewClassName == null) {
+      if (_childInstance != null) {
+        const __internalInstanceHandle2 = _childInstance.__internalInstanceHandle;
+        if (__internalInstanceHandle2 != null) {
+          const elementType = __internalInstanceHandle2.elementType;
+        }
+      }
+    }
+    let __nativeTag;
+    if (_childInstance != null) {
+      __nativeTag = _childInstance.__nativeTag;
+    }
+    if (undefined !== __nativeTag) {
+      return __nativeTag;
+    } else {
+      const getNativeScrollRef = _childInstance.getNativeScrollRef;
+      let nativeScrollRef;
+      if (getNativeScrollRef != null) {
+        nativeScrollRef = getNativeScrollRef();
+      }
+      if (nativeScrollRef) {
+        let uiViewClassName2;
+        if (nativeScrollRef != null) {
+          const __viewConfig3 = nativeScrollRef.__viewConfig;
+          if (__viewConfig3 != null) {
+            uiViewClassName2 = __viewConfig3.uiViewClassName;
           }
         }
-      }
-      return tmp;
-    }
-  },
-  {
-    key: "setShouldAnimateExiting",
-    value: function setShouldAnimateExiting() {
-      const self = this;
-      if (1 === hasOwnProperty.count(this.props.children)) {
-        const obj = _mod1878;
-        let viewTagFromInstance = obj.getViewTagFromInstance(self._childInstance);
-        if (viewTagFromInstance == null) {
-          const tmpResult = react_native;
-          viewTagFromInstance = tmpResult.findNodeHandle(self);
+        if (uiViewClassName2 == null) {
+          let uiViewClassName3;
+          if (nativeScrollRef != null) {
+            const _viewConfig3 = nativeScrollRef._viewConfig;
+            if (_viewConfig3 != null) {
+              uiViewClassName3 = _viewConfig3.uiViewClassName;
+            }
+          }
+          uiViewClassName2 = uiViewClassName3;
         }
-        if (viewTagFromInstance) {
-          const tmpResult2 = startMapper;
-          const result = tmpResult2.setShouldAnimateExitingForTag(viewTagFromInstance, !self.props.skipExiting);
+        if (uiViewClassName2 == null) {
+          let type1;
+          if (nativeScrollRef != null) {
+            const __internalInstanceHandle5 = nativeScrollRef.__internalInstanceHandle;
+            if (__internalInstanceHandle5 != null) {
+              type1 = __internalInstanceHandle5.type;
+            }
+          }
+          uiViewClassName2 = type1;
         }
+        if (uiViewClassName2 == null) {
+          if (nativeScrollRef != null) {
+            const __internalInstanceHandle6 = nativeScrollRef.__internalInstanceHandle;
+            if (__internalInstanceHandle6 != null) {
+              const elementType3 = __internalInstanceHandle6.elementType;
+            }
+          }
+        }
+        let __nativeTag1;
+        if (nativeScrollRef != null) {
+          __nativeTag1 = nativeScrollRef.__nativeTag;
+        }
+        if (__nativeTag1 == null) {
+          __nativeTag1 = null;
+        }
+        return __nativeTag1;
+      } else {
+        const getScrollableNode = _childInstance.getScrollableNode;
+        let scrollableNode;
+        if (getScrollableNode != null) {
+          scrollableNode = getScrollableNode();
+        }
+        let tmp10 = scrollableNode;
+        if (typeof scrollableNode !== "number") {
+          let tmp15 = null;
+          if (scrollableNode) {
+            let uiViewClassName4;
+            if (scrollableNode != null) {
+              const __viewConfig2 = scrollableNode.__viewConfig;
+              if (__viewConfig2 != null) {
+                uiViewClassName4 = __viewConfig2.uiViewClassName;
+              }
+            }
+            if (uiViewClassName4 == null) {
+              let uiViewClassName5;
+              if (scrollableNode != null) {
+                const _viewConfig2 = scrollableNode._viewConfig;
+                if (_viewConfig2 != null) {
+                  uiViewClassName5 = _viewConfig2.uiViewClassName;
+                }
+              }
+              uiViewClassName4 = uiViewClassName5;
+            }
+            if (uiViewClassName4 == null) {
+              let type2;
+              if (scrollableNode != null) {
+                const __internalInstanceHandle3 = scrollableNode.__internalInstanceHandle;
+                if (__internalInstanceHandle3 != null) {
+                  type2 = __internalInstanceHandle3.type;
+                }
+              }
+              uiViewClassName4 = type2;
+            }
+            if (uiViewClassName4 == null) {
+              if (scrollableNode != null) {
+                const __internalInstanceHandle4 = scrollableNode.__internalInstanceHandle;
+                if (__internalInstanceHandle4 != null) {
+                  const elementType2 = __internalInstanceHandle4.elementType;
+                }
+              }
+            }
+            let __nativeTag2;
+            if (scrollableNode != null) {
+              __nativeTag2 = scrollableNode.__nativeTag;
+            }
+            if (__nativeTag2 == null) {
+              __nativeTag2 = null;
+            }
+            tmp15 = __nativeTag2;
+          }
+          tmp10 = tmp15;
+        }
+        return tmp10;
       }
     }
-  },
-  {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      const self = this;
-      if (undefined !== this.props.skipExiting) {
-        const result = self.setShouldAnimateExiting();
-      }
-    }
-  },
-  {
-    key: "render",
-    value: function render() {
-      const maybeWrappedChildren = this.getMaybeWrappedChildren();
-      let tmp2 = maybeWrappedChildren;
-      if (undefined !== this.props.skipEntering) {
-        tmp2 = <SkipEntering shouldSkip={this.props.skipEntering}>{maybeWrappedChildren}</SkipEntering>;
-      }
-      return tmp2;
-    }
+  } else {
+    return null;
   }
-];
-const LayoutAnimationConfig_export = _createClass(LayoutAnimationConfig, items);
-
-export const SkipEnteringContext = context;
-export { LayoutAnimationConfig_export as LayoutAnimationConfig };
+}

@@ -1,14 +1,14 @@
-// Module ID: 15534
-// Function ID: 15535
+// Module ID: 15648
+// Function ID: 15649
 // Name: ChannelMemberCountStore
-// Dependencies: [6737, 5092, 11, 504, 572, 2]
+// Dependencies: [6800, 5155, 11, 504, 572, 2]
 
-// Module 15534 (ChannelMemberCountStore)
+// Module 15648 (ChannelMemberCountStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6737 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;

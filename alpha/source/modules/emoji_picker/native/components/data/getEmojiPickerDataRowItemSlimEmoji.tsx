@@ -1,11 +1,11 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11272
+// Function ID: 11273
 // Name: getEmojiPickerDataRowItemSlimEmoji
-// Dependencies: [11200, 5192, 2]
+// Dependencies: [11267, 5255, 2]
 // Exports: default
 
-// Module 11205 (getEmojiPickerDataRowItemSlimEmoji)
-import EmojiTypes from "EmojiTypes" /* 5192 */;
+// Module 11272 (getEmojiPickerDataRowItemSlimEmoji)
+import EmojiTypes from "EmojiTypes" /* 5255 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

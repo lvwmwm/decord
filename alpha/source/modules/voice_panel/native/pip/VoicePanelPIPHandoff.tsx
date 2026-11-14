@@ -1,10 +1,11 @@
-// Module ID: 11927
-// Function ID: 11928
+// Module ID: 11993
+// Function ID: 11994
 // Name: VoicePanelPIPHandoff
-// Dependencies: [19, 2]
+// Dependencies: [19, 11994, 2]
 // Exports: usePIPCardsSettled, usePIPPanelLayoutCommitted
 
-// Module 11927 (VoicePanelPIPHandoff)
+// Module 11993 (VoicePanelPIPHandoff)
+import VoicePanelPIPCardThawDefault from "VoicePanelPIPCardThaw" /* 11994 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,6 +20,8 @@ class VoicePanelPIPHandoff {
     obj.listeners = new Set();
     obj.inPIPLayout = 0;
     obj.inFlight = 0;
+    new Set();
+    obj.cardThaw = new VoicePanelPIPCardThawDefault();
     obj.subscribe = function subscribe(arg0) {
       let closure_0;
       listeners = arg0;
@@ -29,7 +32,7 @@ class VoicePanelPIPHandoff {
         listeners.delete(closure_0);
       };
     };
-    new Set();
+    new VoicePanelPIPCardThawDefault();
     return obj;
   }
   syncCardPIPLayout(id, inPIPLayout) {

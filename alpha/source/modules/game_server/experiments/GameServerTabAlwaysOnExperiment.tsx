@@ -1,11 +1,11 @@
-// Module ID: 18854
-// Function ID: 18855
+// Module ID: 18983
+// Function ID: 18984
 // Name: GameServerTabAlwaysOnExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: useIsGameServerTabAlwaysOnEnabled
 
-// Module 18854 (GameServerTabAlwaysOnExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 18983 (GameServerTabAlwaysOnExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

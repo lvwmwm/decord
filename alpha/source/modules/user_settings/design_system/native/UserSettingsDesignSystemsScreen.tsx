@@ -1,14 +1,14 @@
-// Module ID: 18126
-// Function ID: 18127
+// Module ID: 18246
+// Function ID: 18247
 // Name: UserSettingsDesignSystemsScreen
-// Dependencies: [19, 9135, 21, 12311, 17090, 2]
+// Dependencies: [19, 9202, 21, 12406, 17213, 2]
 // Exports: default
 
-// Module 18126 (UserSettingsDesignSystemsScreen)
+// Module 18246 (UserSettingsDesignSystemsScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingsConstants from "SettingsConstants" /* 9135 */;
-import SettingBuilders from "SettingBuilders" /* 12311 */;
-import SettingLayoutDefault from "SettingLayout" /* 17090 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingLayoutDefault from "SettingLayout" /* 17213 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -25,9 +25,9 @@ export default function SettingsDesignSystemsScreen() {
     let items4;
     let items5;
     const obj3 = { label: "Components", settings: items };
-    items = [, , , , , , , , , , , , , , , , ];
+    items = [, , , , , , , , , , , , , , , , , ];
     const obj2 = { sections: items1 };
-    ({ DESIGN_SYSTEMS_TEXT: arr[0], DESIGN_SYSTEMS_BUTTON: arr[1], DESIGN_SYSTEMS_BUTTON_GROUP: arr[2], DESIGN_SYSTEMS_ROW_BUTTON: arr[3], DESIGN_SYSTEMS_TABLE_ROW: arr[4], DESIGN_SYSTEMS_ALERT_MODAL: arr[5], DESIGN_SYSTEMS_SHADOWS: arr[6], DESIGN_SYSTEM_SEGMENTED_CONTROL: arr[7], DESIGN_SYSTEMS_TABS: arr[8], DESIGN_SYSTEM_BACKDROP: arr[9], DESIGN_SYSTEMS_TOOLTIP: arr[10], DESIGN_SYSTEMS_COACHMARK: arr[11], DESIGN_SYSTEM_FORM_PRIMITIVES: arr[12], DESIGN_SYSTEMS_TEXT_INPUT: arr[13], DESIGN_SYSTEM_PILE: arr[14], DESIGN_SYSTEM_TAG_GROUP: arr[15], DESIGN_SYSTEM_HAPTICS: arr[16] } = constants);
+    ({ DESIGN_SYSTEMS_TEXT: arr[0], DESIGN_SYSTEMS_BUTTON: arr[1], DESIGN_SYSTEMS_BUTTON_GROUP: arr[2], DESIGN_SYSTEMS_ROW_BUTTON: arr[3], DESIGN_SYSTEMS_TABLE_ROW: arr[4], DESIGN_SYSTEM_DRAG_HANDLE: arr[5], DESIGN_SYSTEMS_ALERT_MODAL: arr[6], DESIGN_SYSTEMS_SHADOWS: arr[7], DESIGN_SYSTEM_SEGMENTED_CONTROL: arr[8], DESIGN_SYSTEMS_TABS: arr[9], DESIGN_SYSTEM_BACKDROP: arr[10], DESIGN_SYSTEMS_TOOLTIP: arr[11], DESIGN_SYSTEMS_COACHMARK: arr[12], DESIGN_SYSTEM_FORM_PRIMITIVES: arr[13], DESIGN_SYSTEMS_TEXT_INPUT: arr[14], DESIGN_SYSTEM_PILE: arr[15], DESIGN_SYSTEM_TAG_GROUP: arr[16], DESIGN_SYSTEM_HAPTICS: arr[17] } = constants);
     items1 = [obj3, , , , ];
     const obj4 = { label: "AI Visual Identity", settings: items2 };
     items2 = [, ];

@@ -1,18 +1,18 @@
-// Module ID: 19862
-// Function ID: 19863
+// Module ID: 20019
+// Function ID: 20020
 // Name: VoicePanelCTACardCallerDisconnected
-// Dependencies: [32, 19, 502, 5092, 1385, 21, 5243, 575, 11918, 504, 6288, 7656, 5957, 5866, 1113, 2]
+// Dependencies: [32, 19, 502, 5155, 1388, 21, 5306, 575, 11984, 504, 6351, 7722, 6020, 5929, 1113, 2]
 
-// Module 19862 (VoicePanelCTACardCallerDisconnected)
+// Module 20019 (VoicePanelCTACardCallerDisconnected)
 import nativeDefault from "native" /* 575 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6288 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -43,7 +43,7 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   let tmp9;
   let tmpResult11;
   let tmpResult9;
-  const f120494 = () => {
+  const f121919 = () => {
     const user = UserStore.getUser(id);
     const user1 = UserStore.getUser(first);
     let avatarURL;
@@ -75,9 +75,9 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   let items = [UserStore];
   const items1 = [channelId, id, first];
   const obj = channelId(id[9]);
-  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f120494, items1);
+  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f121919, items1);
   const obj2 = { style: tmp3.container, children: items4 };
-  _slicedToArray(obj.useStateFromStoresArray(items, f120494, items1), 3);
+  _slicedToArray(obj.useStateFromStoresArray(items, f121919, items1), 3);
   let obj3 = { style: tmp3.avatarContainer, children: items2 };
   let tmp16Result = null != tmp9;
   const tmpResult = first(id[11]);

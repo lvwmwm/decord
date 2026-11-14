@@ -194,7 +194,7 @@ function createCompositeKeyForArray(arr2) {
   }
   return tmp2;
 }
-function createCompositeKeyForObject(arr2, buffer) {
+function createCompositeKeyForObject(arr2, arg1) {
   const keys = Object.keys(arr2);
   let num = 0;
   let tmp = null;
@@ -203,7 +203,7 @@ function createCompositeKeyForObject(arr2, buffer) {
     do {
       let tmp7;
       let tmp3 = keys[num];
-      if (null == buffer) {
+      if (null == arg1) {
         arr2 = arr2[tmp3];
         let tmp10 = arr2;
         if (!(arr2 instanceof _modDef367)) {
@@ -310,23 +310,23 @@ function createCompositeKeyForObject(arr2, buffer) {
   }
   return tmp2;
 }
-function areCompositeKeysEqual(arg0, buffer, arg2) {
-  if (arg0 === buffer) {
+function areCompositeKeysEqual(arg0, arg1, arg2) {
+  if (arg0 === arg1) {
     return true;
   } else {
     if (null !== arg0) {
-      if (null !== buffer) {
+      if (null !== arg1) {
         const _Object = Object;
         const keys = Object.keys(arg0);
         const _Object2 = Object;
-        if (keys.length !== Object.keys(buffer).length) {
+        if (keys.length !== Object.keys(arg1).length) {
           return false;
         } else {
           let num = 0;
           if (0 < keys.length) {
-            while (fn(buffer, keys[num])) {
+            while (fn(arg1, keys[num])) {
               let tmp4 = arg0[tmp];
-              let tmp5 = buffer[tmp];
+              let tmp5 = arg1[tmp];
               if ("style" === tmp) {
                 if (!areCompositeKeyComponentsEqual(tmp4, tmp5)) {
                   let flag5 = false;
@@ -362,22 +362,22 @@ function areCompositeKeysEqual(arg0, buffer, arg2) {
     return false;
   }
 }
-function areCompositeKeyComponentsEqual(arg0, buffer) {
-  if (arg0 === buffer) {
+function areCompositeKeyComponentsEqual(arg0, arg1) {
+  if (arg0 === arg1) {
     return true;
   } else if (arg0 instanceof _modDef367) {
-    return arg0 === buffer;
+    return arg0 === arg1;
   } else {
     const _Array = Array;
     if (Array.isArray(arg0)) {
       const _Array2 = Array;
-      if (Array.isArray(buffer)) {
-        if (arg0.length !== buffer.length) {
+      if (Array.isArray(arg1)) {
+        if (arg0.length !== arg1.length) {
           return false;
         } else {
           let num6 = 0;
           if (0 < arg0.length) {
-            while (areCompositeKeyComponentsEqual(arg0[num6], buffer[num6])) {
+            while (areCompositeKeyComponentsEqual(arg0[num6], arg1[num6])) {
               num6 = num6 + 1;
             }
             return false;
@@ -392,17 +392,17 @@ function areCompositeKeyComponentsEqual(arg0, buffer) {
       const tmp5 = require;
       if (obj.isPlainObject(arg0)) {
         const tmp5Result = tmp5(382);
-        if (tmp5Result.isPlainObject(buffer)) {
+        if (tmp5Result.isPlainObject(arg1)) {
           const _Object = Object;
           const keys = Object.keys(arg0);
           const _Object2 = Object;
-          if (keys.length !== Object.keys(buffer).length) {
+          if (keys.length !== Object.keys(arg1).length) {
             return false;
           } else {
             let num3 = 0;
             if (0 < keys.length) {
-              while (fn(nullthrowsDefault(buffer), keys[num3])) {
-                if (!areCompositeKeyComponentsEqual(arg0[tmp6], buffer[tmp6])) {
+              while (fn(nullthrowsDefault(arg1), keys[num3])) {
+                if (!areCompositeKeyComponentsEqual(arg0[tmp6], arg1[tmp6])) {
                   break;
                 } else {
                   num3 = num3 + 1;

@@ -1,26 +1,26 @@
-// Module ID: 12622
-// Function ID: 12623
+// Module ID: 12718
+// Function ID: 12719
 // Name: CameraPreview
-// Dependencies: [32, 19, 17, 5091, 6953, 11799, 6757, 502, 12623, 10934, 10935, 1072, 5920, 21, 5535, 1705, 1187, 504, 12624, 12619, 12632, 12620, 8494, 1627, 12630, 9974, 6773, 12625, 5829, 1652, 5485, 12642, 1113, 12643, 12685, 12686, 12627, 10937, 6962, 12804, 12805, 2]
+// Dependencies: [32, 19, 17, 5154, 7016, 11865, 6820, 502, 12719, 11003, 11004, 1072, 5983, 21, 5598, 1708, 1187, 504, 12720, 12715, 12728, 12716, 8560, 1630, 12726, 10041, 6836, 12721, 5892, 1655, 5548, 12738, 1113, 12739, 12781, 12782, 12723, 11006, 7025, 12900, 12901, 2]
 // Exports: default
 
-// Module 12622 (CameraPreview)
+// Module 12718 (CameraPreview)
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import NavigatorConstants from "NavigatorConstants" /* 5829 */;
-import ChannelCallStore from "ChannelCallStore" /* 10934 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11799 */;
-import PictureInPicture from "PictureInPicture" /* 12625 */;
+import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import ChannelCallStore from "ChannelCallStore" /* 11003 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11865 */;
+import PictureInPicture from "PictureInPicture" /* 12721 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5091 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6953 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6757 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12623 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10935 */;
-import CallConstants from "CallConstants" /* 5920 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11004 */;
+import CallConstants from "CallConstants" /* 5983 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -89,32 +89,32 @@ function CameraPreview(arg0) {
   const items = [c12];
   const stateFromStores = obj.useStateFromStores(items, () => _undefined2.isReactingToThermalState());
   const tmp4 = stateFromStores;
-  let tmp6 = reveal(stateFromStores(12624)(), 2);
+  let tmp6 = reveal(stateFromStores(12720)(), 2);
   dependencyMap = tmp8;
   const first = tmp6[0];
-  reveal = react.useContext(participantScreenIsFocused(12619).RevealContext).reveal;
-  const tmp9 = stateFromStores(12632)();
+  reveal = react.useContext(participantScreenIsFocused(12715).RevealContext).reveal;
+  const tmp9 = stateFromStores(12728)();
   react = tmp9;
   const tmp10 = closure_9();
   let closure_5 = tmp10;
-  const tmp11 = stateFromStores(12620)(channel.id);
+  const tmp11 = stateFromStores(12716)(channel.id);
   let closure_6 = tmp11;
-  const obj3 = participantScreenIsFocused(8494);
+  const obj3 = participantScreenIsFocused(8560);
   const isScreenLandscape = obj3.useIsScreenLandscape();
-  const rect = stateFromStores(1627)();
+  const rect = stateFromStores(1630)();
   const bottom = rect.bottom;
   const top = rect.top;
   ({ left, right } = rect);
-  const obj4 = participantScreenIsFocused(12630);
+  const obj4 = participantScreenIsFocused(12726);
   const obj5 = { channelId: channel.id };
   let isViewingActivity = obj4.useIsViewingActivity(obj5);
   const items1 = [c12];
   const obj6 = participantScreenIsFocused(504);
   const tmp14 = obj6.useStateFromStores(items1, () => _undefined2.getVoiceCallOverlayLayoutStates())[constants.CAMERA_PREVIEW_PICTURE_IN_PICTURE];
-  const OrientationType = participantScreenIsFocused(9974).OrientationType;
+  const OrientationType = participantScreenIsFocused(10041).OrientationType;
   const tmp15 = isScreenLandscape ? OrientationType.LANDSCAPE : OrientationType.PORTRAIT;
   closure_9 = tmp15;
-  const tmp16 = tmp4(6773)(tmp15);
+  const tmp16 = tmp4(6836)(tmp15);
   let tmp17 = tmp16;
   if (tmp16 == null) {
     screenOrientation = undefined;
@@ -159,9 +159,9 @@ function CameraPreview(arg0) {
     _undefined2(sum3);
   }, items3);
   const items4 = [closure_27, , , , ];
-  const useAnimatedStyle = tmp(1652).useAnimatedStyle;
-  tmp(1652);
-  items4[1] = tmp(5485).withTiming;
+  const useAnimatedStyle = tmp(1655).useAnimatedStyle;
+  tmp(1655);
+  items4[1] = tmp(5548).withTiming;
   items4[2] = tmp21;
   items4[3] = obj;
   items4[4] = tmp23;
@@ -194,7 +194,7 @@ function CameraPreview(arg0) {
     const items6 = [obj7];
     items8 = items6;
   } else if (tmp35.HANDLE_THERMAL_EVENT === tmp34) {
-    const obj8 = { text: intl.string(tmp(1113).t["1fRDnT"]), onClick: tmp(12643).openIgnoreThermalStateAlert };
+    const obj8 = { text: intl.string(tmp(1113).t["1fRDnT"]), onClick: tmp(12739).openIgnoreThermalStateAlert };
     intl = tmp(1113).intl;
     const items7 = [obj8];
     items8 = items7;
@@ -208,7 +208,7 @@ function CameraPreview(arg0) {
   if (null != tmp34) {
     const obj9 = { gesture: tmp36, children: closure_21(closure_6, obj10) };
     obj10 = { style: closure_5.absoluteFill };
-    const GestureDetector = tmp(5535).GestureDetector;
+    const GestureDetector = tmp(5598).GestureDetector;
     tmp39 = closure_21(GestureDetector, obj9);
   }
   const items9 = [tmp39, ];
@@ -218,12 +218,12 @@ function CameraPreview(arg0) {
   const obj13 = { flex: 1, marginLeft: left + closure_15, marginRight: right + closure_15 };
   items10[0] = obj13;
   items10[1] = animatedStyle;
-  View = tmp4(1652).View;
+  View = tmp4(1655).View;
   obj14 = { channel, preferredPosition: first, onMove: tmp6[1], isInCallScreen: true, marginTop: tmp21, marginBottom: tmp23, children: closure_21(tmp4Result2, obj15) };
   obj15 = {
     ref,
     disabled: !isViewingActivity,
-    trigger: closure_21(tmp4(12686), { channel, selfParticipant, pipParticipant: nonSelfPipParticipant }),
+    trigger: closure_21(tmp4(12782), { channel, selfParticipant, pipParticipant: nonSelfPipParticipant }),
     rows: items8,
     onOpen() {
       _undefined3(stateFromStores ? constants3.HANDLE_THERMAL_EVENT : constants3.HIDE_PIP);
@@ -232,9 +232,9 @@ function CameraPreview(arg0) {
       _undefined3(null);
     }
   };
-  tmp4Result = tmp4(12625);
+  tmp4Result = tmp4(12721);
   const tmp44 = closure_6;
-  tmp4Result2 = tmp4(12685);
+  tmp4Result2 = tmp4(12781);
   if (isViewingActivity) {
     isViewingActivity = stateFromStores;
   }
@@ -278,7 +278,7 @@ export default function CameraPreviewContainer(channel) {
   let id;
   let tmp = flag;
   let tmp2 = dependencyMap;
-  const tmp3 = flag(10937)(channel);
+  const tmp3 = flag(11006)(channel);
   dependencyMap = tmp3;
   let tmp4 = channel;
   obj = channel(504);
@@ -345,10 +345,10 @@ export default function CameraPreviewContainer(channel) {
   if (!tmp9) {
     tmp12 = stateFromStores1;
   }
-  const tmp4Result = tmp4(12804);
+  const tmp4Result = tmp4(12900);
   const isStreamFocused = tmp4Result.useIsStreamFocused(channel.id);
   const obj4 = { channelId: channel.id };
-  const tmp4Result7 = tmp4(12630);
+  const tmp4Result7 = tmp4(12726);
   const isViewingActivity = tmp4Result7.useIsViewingActivity(obj4);
   const items2 = [tmp5, obj2];
   const tmp4Result8 = tmp4(504);
@@ -455,7 +455,7 @@ export default function CameraPreviewContainer(channel) {
   const items5 = [tmp5];
   const tmp4Result11 = tmp4(504);
   const stateFromStores5 = tmp4Result11.useStateFromStores(items5, () => selectedParticipant.getSelectedParticipant(channel.id));
-  const tmp19 = tmp(12627)(channel.id);
+  const tmp19 = tmp(12723)(channel.id);
   let tmp20 = null;
   if (null != tmp19) {
     tmp20 = null;
@@ -497,7 +497,7 @@ export default function CameraPreviewContainer(channel) {
   if (flag2) {
     flag2 = flag;
   }
-  tmp(12805)(channel);
+  tmp(12901)(channel);
   if (tmp9) {
     if (!stateFromStores6) {
       tmp25 = null;

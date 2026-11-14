@@ -1,17 +1,17 @@
-// Module ID: 7318
-// Function ID: 7319
+// Module ID: 7382
+// Function ID: 7383
 // Name: conjureChatConnection
-// Dependencies: [572, 7261, 1113, 4079, 7319, 7271, 7265, 2]
+// Dependencies: [572, 7325, 1113, 4131, 7383, 7335, 7329, 2]
 // Exports: appendTurnStep, sendFailedStep, sendQueuedMessageAction
 
-// Module 7318 (conjureChatConnection)
+// Module 7382 (conjureChatConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef4079 from "module_4079" /* 4079 */;
-import conjureAgentReaction from "conjureAgentReaction" /* 7261 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7265 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 7271 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 7319 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import conjureAgentReaction from "conjureAgentReaction" /* 7325 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 7335 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -120,7 +120,7 @@ let obj2 = {
       obj5.dispatch(obj);
     } else {
       const intl = intl2.intl;
-      const stringResult = intl.string(_modDef4079["913RMa"]);
+      const stringResult = intl.string(_modDef4131["913RMa"]);
       let tmp = obj4;
       const tmp13 = importDefault;
       if (obj4 === undefined) {
@@ -131,7 +131,7 @@ let obj2 = {
       const tmp13Result = tmp13(572);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(7319).trackConjureErrored;
+      const trackConjureErrored = tmp11(7383).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -221,7 +221,7 @@ let obj2 = {
       obj5.dispatch(obj);
     } else {
       const intl = intl2.intl;
-      const stringResult = intl.string(_modDef4079["0+RUWx"]);
+      const stringResult = intl.string(_modDef4131["0+RUWx"]);
       let tmp = obj4;
       const tmp13 = importDefault;
       if (obj4 === undefined) {
@@ -232,7 +232,7 @@ let obj2 = {
       const tmp13Result = tmp13(572);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(7319).trackConjureErrored;
+      const trackConjureErrored = tmp11(7383).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);

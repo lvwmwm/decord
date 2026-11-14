@@ -1,11 +1,11 @@
-// Module ID: 10595
-// Function ID: 10596
+// Module ID: 10664
+// Function ID: 10665
 // Name: useOpenGameProfileModal
-// Dependencies: [10392, 10212, 2]
+// Dependencies: [10461, 10281, 2]
 // Exports: default
 
-// Module 10595 (useOpenGameProfileModal)
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10212 */;
+// Module 10664 (useOpenGameProfileModal)
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10281 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,8 +39,9 @@ export default function useOpenGameProfileModal(arg0) {
         GameProfileActionCreatorsDefault;
         const merged = Object.assign(closure_0);
         openGameProfileModal(obj);
+        const tmp5 = gameId;
         if (onOpened != null) {
-          onOpened();
+          onOpened(tmp5);
         }
       };
     }

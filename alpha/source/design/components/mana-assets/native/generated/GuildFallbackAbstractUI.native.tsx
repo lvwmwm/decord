@@ -1,26 +1,26 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 14089
+// Function ID: 14090
 // Name: GuildFallbackAbstractUI
-// Dependencies: [19, 21, 13988, 13989, 13990, 7689, 5957, 2]
+// Dependencies: [19, 21, 14090, 14091, 14092, 7755, 6020, 2]
 // Exports: GuildFallbackAbstractUI
 
-// Module 13987 (GuildFallbackAbstractUI)
+// Module 14089 (GuildFallbackAbstractUI)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7689 */;
-import _modDef13988 from "module_13988" /* 13988 */;
-import _modDef13989 from "module_13989" /* 13989 */;
-import _modDef13990 from "module_13990" /* 13990 */;
+import react_native from "react-native" /* 7755 */;
+import _modDef14090 from "module_14090" /* 14090 */;
+import _modDef14091 from "module_14091" /* 14091 */;
+import _modDef14092 from "module_14092" /* 14092 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13988 };
+let obj2 = { uri: _modDef14090 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef13989 };
+let obj3 = { uri: _modDef14091 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef13990 };
-({ uri: _modDef13990 });
+obj[3] = { uri: _modDef14092 };
+({ uri: _modDef14092 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GuildFallbackAbstractUI.native.tsx");
 

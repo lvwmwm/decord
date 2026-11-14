@@ -1,9 +1,9 @@
-// Module ID: 2143
-// Function ID: 2144
+// Module ID: 2146
+// Function ID: 2147
 // Name: EmbeddedActivityOrientationLockState
 // Dependencies: [2]
 
-// Module 2143 (EmbeddedActivityOrientationLockState)
+// Module 2146 (EmbeddedActivityOrientationLockState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/EmbeddedActivityOrientationLockState.tsx");

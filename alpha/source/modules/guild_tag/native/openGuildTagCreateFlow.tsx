@@ -1,14 +1,14 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 10678
+// Function ID: 10679
 // Name: openGuildTagCreateFlow
-// Dependencies: [10610, 5464, 5489, 10732, 2118, 2]
+// Dependencies: [10679, 5527, 5552, 10801, 2121, 2]
 // Exports: default
 
-// Module 10609 (openGuildTagCreateFlow)
-import asyncRequire from "asyncRequire" /* 2118 */;
-import Powerups from "Powerups" /* 5464 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5489 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 10610 */;
+// Module 10678 (openGuildTagCreateFlow)
+import asyncRequire from "asyncRequire" /* 2121 */;
+import Powerups from "Powerups" /* 5527 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 10679 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_tag/native/openGuildTagCreateFlow.tsx");
@@ -17,7 +17,7 @@ export default function openGuildTagCreateFlow(guilds, analyticsLocation) {
   if (1 !== guilds.length) {
     const obj3 = { guilds, analyticsLocation };
     const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.openLazy(asyncRequire(10732, dependencyMap.paths), "GuildTagCreateGuildListBottomSheet", obj3);
+    obj2.openLazy(asyncRequire(10801, dependencyMap.paths), "GuildTagCreateGuildListBottomSheet", obj3);
   } else {
     const obj = { guildId: guilds[0].id, autoOpenPerkId: Powerups.GUILD_POWERUP_TAG_SKU_ID, analyticsLocation };
     const tmp3 = openGuildPowerupsModalDefault;

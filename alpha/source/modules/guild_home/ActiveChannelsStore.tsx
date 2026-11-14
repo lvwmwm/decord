@@ -1,16 +1,16 @@
-// Module ID: 16090
-// Function ID: 16091
+// Module ID: 16211
+// Function ID: 16212
 // Name: ActiveChannelsStore
-// Dependencies: [5092, 5286, 5099, 11, 12, 504, 572, 2]
+// Dependencies: [5155, 5349, 5162, 11, 12, 504, 572, 2]
 
-// Module 16090 (ActiveChannelsStore)
+// Module 16211 (ActiveChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 5099 */;
-import ChannelStore from "ChannelStore" /* 5092 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5286 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, closure_7, closure_9, importDefault, set;

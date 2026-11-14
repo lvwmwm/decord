@@ -1,11 +1,11 @@
-// Module ID: 18609
-// Function ID: 18610
+// Module ID: 18738
+// Function ID: 18739
 // Name: useGuildsRouteGuildId
-// Dependencies: [1500, 2]
+// Dependencies: [1503, 2]
 // Exports: default, useGuildsRouteGuildAndChannelId
 
-// Module 18609 (useGuildsRouteGuildId)
-import Link from "Link" /* 1500 */;
+// Module 18738 (useGuildsRouteGuildId)
+import Link from "Link" /* 1503 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/navigator/useGuildsRouteGuildId.tsx");

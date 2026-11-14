@@ -1,21 +1,21 @@
-// Module ID: 7682
-// Function ID: 7683
+// Module ID: 7748
+// Function ID: 7749
 // Name: FormRadio
-// Dependencies: [19, 21, 5243, 575, 5257, 1652, 5876, 5877, 2]
+// Dependencies: [19, 21, 5306, 575, 5320, 1655, 5939, 5940, 2]
 // Exports: FormRadio
 
-// Module 7682 (FormRadio)
+// Module 7748 (FormRadio)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import react2 from "react" /* 5257 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import springPresets from "springPresets" /* 5877 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import react2 from "react" /* 5320 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import springPresets from "springPresets" /* 5940 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles(() => {
@@ -65,15 +65,15 @@ export function FormRadio(selected) {
   const enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
   ({ selected: selected2, unselected } = closure_5());
   closure_5();
-  let obj = _mod1652;
+  let obj = _mod1655;
   const sharedValue = obj.useSharedValue(selected);
   let items = [selected, sharedValue];
   const effect = react.useEffect(() => {
     const result = sharedValue.set(selected);
   }, items);
   const items1 = [closure_6, , , , , ];
-  const useDerivedValue = _mod1652.useDerivedValue;
-  _mod1652;
+  const useDerivedValue = _mod1655.useDerivedValue;
+  _mod1655;
   items1[1] = spring_spring.withSpring;
   items1[2] = sharedValue;
   items1[3] = selected2;
@@ -103,8 +103,8 @@ export function FormRadio(selected) {
   FormRadioNativeTsx1.__initData = tmp8;
   const derivedValue = useDerivedValue(FormRadioNativeTsx1);
   const items3 = [closure_7, , , , , ];
-  const useDerivedValue2 = tmp2(1652).useDerivedValue;
-  _mod1652;
+  const useDerivedValue2 = tmp2(1655).useDerivedValue;
+  _mod1655;
   items3[1] = spring_spring.withSpring;
   items3[2] = sharedValue;
   items3[3] = selected2;
@@ -137,7 +137,7 @@ export function FormRadio(selected) {
   c0 = undefined;
   c1 = undefined;
   [tmp23, tmp24, tmp25] = items5;
-  const tmp2Result3 = _mod1652;
+  const tmp2Result3 = _mod1655;
   class FormRadioNativeTsx3 {
     constructor() {
       const obj = { borderColor: _undefined.get(), backgroundColor: _undefined2.get() };
@@ -150,8 +150,8 @@ export function FormRadio(selected) {
   FormRadioNativeTsx3.__initData = tmp23;
   const animatedStyle = tmp2Result3.useAnimatedStyle(FormRadioNativeTsx3);
   const items7 = [closure_9, enabled, , , ];
-  const useAnimatedStyle = tmp2(1652).useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = tmp2(1655).useAnimatedStyle;
+  _mod1655;
   items7[2] = spring_spring.withSpring;
   items7[3] = selected;
   items7[4] = springPresets.SUBTLE_SPRING;
@@ -187,7 +187,7 @@ export function FormRadio(selected) {
   FormRadioNativeTsx4.__initData = tmp28;
   const animatedStyle1 = useAnimatedStyle(FormRadioNativeTsx4);
   const items9 = [tmp.radio, animatedStyle];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   const items10 = [tmp.dot, animatedStyle1];
   return <View style={items9}>{null}</View>;
 }

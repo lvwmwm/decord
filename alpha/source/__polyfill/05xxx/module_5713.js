@@ -1,13 +1,17 @@
 // Module ID: 5713
 // Function ID: 5714
-// Dependencies: [5714, 5716]
+// Dependencies: [5714, 5660]
+// Exports: useCompetingGestures
 
 // Module 5713
-import BottomSheetFooter from "BottomSheetFooter" /* 5714 */;
-import BottomSheetFooterContainer from "BottomSheetFooterContainer" /* 5716 */;
+import ComposedGestureName from "ComposedGestureName" /* 5660 */;
+import _mod5714 from "module_5714" /* 5714 */;
 
-const BottomSheetFooter_export = BottomSheetFooter.BottomSheetFooter;
-const BottomSheetFooterContainer_export = BottomSheetFooterContainer.BottomSheetFooterContainer;
 
-export { BottomSheetFooter_export as BottomSheetFooter };
-export { BottomSheetFooterContainer_export as BottomSheetFooterContainer };
+export function useCompetingGestures() {
+  const items = [...arguments];
+  const useComposedGesture = _mod5714.useComposedGesture;
+  _mod5714;
+  const items1 = [ComposedGestureName.ComposedGestureName.Race, ...items];
+  return useComposedGesture.apply(items1);
+}

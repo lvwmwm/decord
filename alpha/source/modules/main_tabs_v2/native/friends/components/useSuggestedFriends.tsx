@@ -1,15 +1,15 @@
-// Module ID: 18636
-// Function ID: 18637
+// Module ID: 18765
+// Function ID: 18766
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 8700, 14903, 563, 12, 5309, 2]
+// Dependencies: [32, 19, 8767, 15017, 563, 12, 5372, 2]
 // Exports: default
 
-// Module 18636 (useSuggestedFriends)
+// Module 18765 (useSuggestedFriends)
 import _modDef12 from "module_12" /* 12 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 14903 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 15017 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 8700 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 8767 */;
 import size from "module_2" /* 2 */;
 
 const SuggestedFriendSource = FriendsScreenConstants.SuggestedFriendSource;

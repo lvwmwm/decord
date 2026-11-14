@@ -1,18 +1,18 @@
-// Module ID: 19867
-// Function ID: 19868
+// Module ID: 20024
+// Function ID: 20025
 // Name: ActivityAccessibilityLayer
-// Dependencies: [32, 19, 17, 11919, 21, 5243, 6268, 1113, 6265, 5505, 2]
+// Dependencies: [32, 19, 17, 11985, 21, 5306, 6331, 1113, 6328, 5568, 2]
 // Exports: default
 
-// Module 19867 (ActivityAccessibilityLayer)
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5505 */;
-import react_native from "react-native" /* 6268 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11919 */;
+// Module 20024 (ActivityAccessibilityLayer)
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
+import react_native from "react-native" /* 6331 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

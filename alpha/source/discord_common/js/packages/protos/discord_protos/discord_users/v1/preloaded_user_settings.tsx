@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite10, internalBinaryWrite17, internalBinaryWrite18, internalBinaryWrite19, internalBinaryWrite20, internalBinaryWrite21, internalBinaryWrite22, internalBinaryWrite23, internalBinaryWrite24, internalBinaryWrite25, internalBinaryWrite27, internalBinaryWrite29, internalBinaryWrite30, internalBinaryWrite31;
+let internalBinaryWrite10, internalBinaryWrite17, internalBinaryWrite18, internalBinaryWrite19, internalBinaryWrite20, internalBinaryWrite21, internalBinaryWrite22, internalBinaryWrite23, internalBinaryWrite24, internalBinaryWrite25, internalBinaryWrite26, internalBinaryWrite29, internalBinaryWrite30, internalBinaryWrite31, internalBinaryWrite8;
 
 let tmp;
 let tmp2;
@@ -3436,7 +3436,7 @@ const textAndImagesSettingsType = new TextAndImagesSettings$Type();
 const MessageType19 = _mod1197.MessageType;
 class NotificationSettings$Type extends MessageType19 {
   constructor() {
-    let items = [, , , , , , , , , , , , , , , , , , , , , , , , , ];
+    let items = [, , , , , , , , , , , , , , , , , , , , , , , , , , ];
     const obj = {
       no: 1,
       name: "show_in_app_notifications",
@@ -3619,16 +3619,24 @@ class NotificationSettings$Type extends MessageType19 {
         return require("wrappers").BoolValue;
       }
     };
-    const obj2 = { no: 25, name: "notify_friends_on_come_online", kind: "message", T };
+    items[24] = {
+      no: 25,
+      name: "notify_friends_on_come_online",
+      kind: "message",
+      T() {
+        return require("wrappers").BoolValue;
+      }
+    };
+    const obj2 = { no: 26, name: "notify_server_members_on_go_live", kind: "message", T };
     class T {
       constructor() {
         return require("wrappers").BoolValue;
       }
     }
-    items[24] = obj2;
-    items[25] = {
-      no: 26,
-      name: "notify_server_members_on_go_live",
+    items[25] = obj2;
+    items[26] = {
+      no: 27,
+      name: "notify_friends_on_custom_status_update",
       kind: "message",
       T() {
         return require("wrappers").BoolValue;
@@ -3848,6 +3856,14 @@ class NotificationSettings$Type extends MessageType19 {
       const tagResult25 = tag.tag(26, _mod1197.WireType.LengthDelimited);
       const result11 = internalBinaryWrite21(notifyServerMembersOnGoLive, tagResult25.fork(), writeUnknownFields);
       const joined20 = result11.join();
+    }
+    if (showInAppNotifications.notifyFriendsOnCustomStatusUpdate) {
+      const BoolValue22 = wrappers.BoolValue;
+      internalBinaryWrite22 = BoolValue22.internalBinaryWrite;
+      const notifyFriendsOnCustomStatusUpdate = showInAppNotifications.notifyFriendsOnCustomStatusUpdate;
+      const tagResult26 = tag.tag(27, _mod1197.WireType.LengthDelimited);
+      const result12 = internalBinaryWrite22(notifyFriendsOnCustomStatusUpdate, tagResult26.fork(), writeUnknownFields);
+      const joined21 = result12.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
@@ -7408,7 +7424,7 @@ const items37 = [];
 const obj52 = { no: 1, name: "current_tab", kind: "enum", T: T54 };
 items37[0] = obj52;
 const tmp51 = new "binaryReadMap12"("discord_protos.discord_users.v1.ForLaterSettings", items37, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let internalBinaryWrite26 = tmp51;
+internalBinaryWrite6 = tmp51;
 const MessageType45 = _mod1197.MessageType;
 class ICYMISettings$Type extends MessageType45 {
   constructor() {
@@ -7489,7 +7505,7 @@ class ICYMISettings$Type extends MessageType45 {
 const prototype45 = ICYMISettings$Type.prototype;
 const items38 = [{ no: 1, name: "feed_generated_at", kind: "scalar", T: 6 }];
 const tmp52 = new "binaryReadMap12"("discord_protos.discord_users.v1.ICYMISettings", items38, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-internalBinaryWrite6 = tmp52;
+let internalBinaryWrite27 = tmp52;
 const MessageType46 = _mod1197.MessageType;
 class AllApplicationSettings$Type extends MessageType46 {
   constructor() {
@@ -7883,7 +7899,7 @@ class ApplicationSharingSettings$Type extends MessageType49 {
 const prototype49 = ApplicationSharingSettings$Type.prototype;
 const items42 = [{ no: 1, name: "disable_application_activity_sharing", kind: "scalar", T: 8 }];
 const tmp56 = new "binaryReadMap12"("discord_protos.discord_users.v1.ApplicationSharingSettings", items42, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const goLiveSource = tmp56;
+let closure_72 = tmp56;
 const MessageType50 = _mod1197.MessageType;
 class AdsSettings$Type extends MessageType50 {
   constructor() {
@@ -7963,7 +7979,7 @@ class AdsSettings$Type extends MessageType50 {
 const prototype50 = AdsSettings$Type.prototype;
 const items43 = [{ no: 1, name: "always_deliver", kind: "scalar", T: 8 }];
 const tmp57 = new "binaryReadMap12"("discord_protos.discord_users.v1.AdsSettings", items43, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let internalBinaryWrite7 = tmp57;
+const goLiveSource = tmp57;
 const MessageType51 = _mod1197.MessageType;
 class InAppFeedbackState$Type extends MessageType51 {
   constructor() {
@@ -8065,7 +8081,7 @@ const obj55 = { no: 1, name: "last_impression_time", kind: "message", T: T58 };
 items44[0] = obj55;
 items44[1] = { no: 2, name: "opt_out_expiry_time", kind: "message", T: T59 };
 const tmp58 = new "binaryReadMap12"("discord_protos.discord_users.v1.InAppFeedbackState", items44, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const navigation = tmp58;
+let closure_74 = tmp58;
 const MessageType52 = _mod1197.MessageType;
 class DefaultReactionEmoji$Type extends MessageType52 {
   constructor() {
@@ -8206,7 +8222,7 @@ items45[2] = {
 };
 items45[3] = { no: 4, name: "disable_double_tap", kind: "message", T: T62 };
 const tmp59 = new "binaryReadMap12"("discord_protos.discord_users.v1.DefaultReactionEmoji", items45, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let internalBinaryWrite8 = tmp59;
+const navigation = tmp59;
 const MessageType53 = _mod1197.MessageType;
 class InAppFeedbackSettings$Type extends MessageType53 {
   constructor() {
@@ -8341,7 +8357,7 @@ const prototype53 = InAppFeedbackSettings$Type.prototype;
 const obj57 = { no: 1, name: "in_app_feedback_states", kind: "map", K: 5, V: { kind: "message", T: T63 } };
 const items46 = [obj57];
 const tmp60 = new "binaryReadMap12"("discord_protos.discord_users.v1.InAppFeedbackSettings", items46, tmp6, tmp5, "create", InAppFeedbackSettings$Type, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, obj20, obj21, obj22, obj23, obj24, obj25, obj26, preloadedUserSettingsType, tmp9, tmp10, tmp11, guildSettingsType, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, textAndImagesSettingsType, notificationSettingsType, privacySettingsType, tmp28, tmp29, tmp30, tmp31, tmp32, tmp33, appearanceSettingsType, tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, "binaryReadMap12", items46, this, exports, obj57, undefined, 8, 4);
-internalBinaryWrite9 = tmp60;
+let internalBinaryWrite7 = tmp60;
 const MessageType54 = _mod1197.MessageType;
 class AppVersionSettings$Type extends MessageType54 {
   constructor() {

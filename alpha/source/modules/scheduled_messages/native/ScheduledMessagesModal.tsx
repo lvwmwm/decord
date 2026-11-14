@@ -1,33 +1,33 @@
-// Module ID: 8982
-// Function ID: 8983
+// Module ID: 9049
+// Function ID: 9050
 // Name: ScheduledMessagesModal
-// Dependencies: [32, 19, 17, 8983, 1072, 1387, 8964, 21, 7871, 5243, 575, 1627, 1113, 1652, 5876, 5877, 7434, 8984, 1377, 7427, 6785, 8962, 504, 15542, 8963, 7354, 15544, 7822, 7852, 11103, 1092, 11212, 2171, 15545, 2]
+// Dependencies: [32, 19, 17, 9050, 1072, 1390, 9031, 21, 7937, 5306, 575, 1630, 1113, 1655, 5939, 5940, 7500, 9051, 1380, 7493, 6848, 9029, 504, 15656, 9030, 7418, 15658, 7888, 7918, 11170, 1092, 11279, 2174, 15659, 2]
 // Exports: default
 
-// Module 8982 (ScheduledMessagesModal)
+// Module 9049 (ScheduledMessagesModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl2 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import spring_spring from "spring/spring" /* 5876 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7852 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7871 */;
-import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 8962 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8964 */;
-import HeaderShared from "HeaderShared" /* 8984 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 11103 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11212 */;
-import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 15542 */;
-import NitroLimitUpsellBarDefault from "NitroLimitUpsellBar" /* 15545 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import spring_spring from "spring/spring" /* 5939 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 9029 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9031 */;
+import HeaderShared from "HeaderShared" /* 9051 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 11170 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11279 */;
+import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 15656 */;
+import NitroLimitUpsellBarDefault from "NitroLimitUpsellBar" /* 15659 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ScheduledMessageStore from "ScheduledMessageStore" /* 8983 */;
+import ScheduledMessageStore from "ScheduledMessageStore" /* 9050 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5243 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let _require, item, set;
@@ -41,10 +41,10 @@ let size;
 let tmp2;
 let tmp4;
 let unpackModuleId;
-const PlatformUtils = tmp4(1377);
-const springPresets = tmp2(5877);
-const NavigatorHeader = tmp4(7427);
-const _mod7434 = tmp4(7434);
+const PlatformUtils = tmp4(1380);
+const springPresets = tmp2(5940);
+const NavigatorHeader = tmp4(7493);
+const _mod7500 = tmp4(7500);
 function keyExtractor(scheduledMessageId) {
   return scheduledMessageId.scheduledMessageId;
 }
@@ -189,11 +189,11 @@ export default function ScheduledMessagesModal() {
   let tmp9;
   const tmp = closure_14();
   let tmp2 = sharedValue;
-  const top = sharedValue(1627)().top;
+  const top = sharedValue(1630)().top;
   const intl = intl2.intl;
   const stringResult = intl.string(intl2.t.SZVs3K);
   const require = stringResult;
-  let obj = _mod1652;
+  let obj = _mod1655;
   sharedValue = obj.useSharedValue(0);
   items = [sharedValue];
   const callback = react.useCallback((nativeEvent) => {
@@ -209,7 +209,7 @@ export default function ScheduledMessagesModal() {
   const items1 = [closure_15, sharedValue];
   let c0;
   [tmp8, tmp9] = items1;
-  const obj2 = _mod1652;
+  const obj2 = _mod1655;
   class ScheduledMessagesModalTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -230,11 +230,11 @@ export default function ScheduledMessagesModal() {
     },
     headerTitleAlign: "center",
     headerStatusBarHeight: num + tmp2(575).space.PX_8,
-    headerLeft: tmp4Result2.getHeaderCloseButton(tmp2(6785).pop),
+    headerLeft: tmp4Result2.getHeaderCloseButton(tmp2(6848).pop),
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = _mod7434.Header;
+  const Header = _mod7500.Header;
   num = 0;
   const tmp11 = closure_11;
   const tmp12 = View;
@@ -247,7 +247,7 @@ export default function ScheduledMessagesModal() {
   items3 = [closure_10(Header, obj5), , ];
   const obj6 = { style: items4 };
   items4 = [tmp.headerBorder, animatedStyle];
-  items3[1] = closure_10(tmp2(1652).View, obj6);
+  items3[1] = closure_10(tmp2(1655).View, obj6);
   items3[2] = closure_10(ScheduledMessagesPage, { handleScroll: callback });
   return tmp11(tmp12, obj3);
 };

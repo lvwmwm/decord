@@ -1,16 +1,16 @@
-// Module ID: 13971
-// Function ID: 13972
+// Module ID: 14075
+// Function ID: 14076
 // Name: ViewStep
-// Dependencies: [32, 19, 12274, 13970, 21, 5243, 1499, 13967, 13964, 13968, 8142, 8144, 6274, 575, 13972, 5866, 1113, 2549, 7372, 13973, 13975, 5873, 2]
+// Dependencies: [32, 19, 12369, 14074, 21, 5306, 1502, 14072, 14069, 12539, 8208, 8210, 6337, 575, 14076, 5929, 1113, 2565, 7436, 14077, 14079, 5936, 2]
 // Exports: ViewStep
 
-// Module 13971 (ViewStep)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12274 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13970 */;
+// Module 14075 (ViewStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 14074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5243 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -89,10 +89,10 @@ export function ViewStep(code) {
     const Stack4 = tmp2(tmp3[12]).Stack;
     const obj6 = { iconUrl: organization.iconUrl, size: 64 };
     items = [closure_7(tmp4(tmp3[14]), obj6), ];
-    const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(require("module_2549").gptW7Y, obj8) };
+    const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(require("module_2565").gptW7Y, obj8) };
     const Text2 = tmp2(tmp3[15]).Text;
     intl3 = tmp2(tmp3[16]).intl;
-    obj8 = { noun: tmp16, orgName: organization.name };
+    obj8 = { noun: tmp16, orgName: organization.name, gameName: application.name };
     items[1] = closure_7(Text2, obj7);
     items1 = [closure_8(Stack4, obj5), ];
     const obj9 = { direction: "horizontal", align: "center", justify: "center", spacing: require("native").space.PX_16, children: items3 };
@@ -112,7 +112,7 @@ export function ViewStep(code) {
       const obj14 = { size: "xs", color: require("native").colors.ICON_MUTED };
       const GroupIcon = tmp2(tmp3[18]).GroupIcon;
       items4 = [closure_7(GroupIcon, obj14), ];
-      const obj15 = { variant: "heading-sm/medium", children: intl.formatToPlainString(require("module_2549").VuENGl, obj16) };
+      const obj15 = { variant: "heading-sm/medium", children: intl.formatToPlainString(require("module_2565").VuENGl, obj16) };
       const Text = tmp2(tmp3[15]).Text;
       intl = tmp2(tmp3[16]).intl;
       obj16 = { count: memberCount, max: maxMembers };

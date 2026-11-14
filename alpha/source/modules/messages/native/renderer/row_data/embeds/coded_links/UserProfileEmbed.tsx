@@ -1,16 +1,16 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15582
+// Function ID: 15583
 // Name: UserProfileEmbed
-// Dependencies: [7288, 1385, 8775, 9103, 1113, 15469, 2]
+// Dependencies: [7352, 1388, 8842, 9170, 1113, 15583, 2]
 // Exports: createUserProfileEmbed
 
-// Module 15468 (UserProfileEmbed)
+// Module 15582 (UserProfileEmbed)
 import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 8775 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9103 */;
-import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 15469 */;
-import UserProfileStore from "UserProfileStore" /* 7288 */;
-import UserStore from "UserStore" /* 1385 */;
+import Constants from "Constants" /* 8842 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9170 */;
+import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 15583 */;
+import UserProfileStore from "UserProfileStore" /* 7352 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const InviteTypes = Constants.InviteTypes;
