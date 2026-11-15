@@ -1,10 +1,10 @@
-// Module ID: 14678
-// Function ID: 14679
+// Module ID: 14679
+// Function ID: 14680
 // Name: useAppChannelRunningApp
-// Dependencies: [6934, 1072, 6935, 504, 14679, 1113, 2]
+// Dependencies: [6934, 1072, 6935, 504, 14680, 1113, 2]
 // Exports: default
 
-// Module 14678 (useAppChannelRunningApp)
+// Module 14679 (useAppChannelRunningApp)
 import Constants from "Constants" /* 1072 */;
 import FramesStore from "FramesStore" /* 6934 */;
 import FramesConstants from "FramesConstants" /* 6935 */;
@@ -49,7 +49,7 @@ export default function useAppChannelRunningApp(arg0) {
     }
     return tmp4;
   }, items1);
-  let tmp4 = stateFromStores(14679)(stateFromStores);
+  let tmp4 = stateFromStores(14680)(stateFromStores);
   const items2 = [FramesStore];
   const items3 = [stateFromStores];
   const obj2 = require("get initialized");

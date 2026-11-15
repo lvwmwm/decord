@@ -1,15 +1,15 @@
-// Module ID: 12777
-// Function ID: 12778
+// Module ID: 12776
+// Function ID: 12777
 // Name: PollsActionCreators
-// Dependencies: [5, 5103, 7875, 502, 5019, 7810, 6795, 6226, 8310, 11541, 1072, 38, 6122, 1113, 6990, 6994, 12778, 12780, 5921, 12, 504, 572, 5774, 12789, 5177, 12783, 7745, 9903, 6611, 2]
+// Dependencies: [5, 5103, 7875, 502, 5019, 7810, 6795, 6226, 8310, 11540, 1072, 38, 6122, 1113, 6990, 6994, 12777, 12779, 5921, 12, 504, 572, 5774, 12788, 5177, 12782, 7745, 9903, 6611, 2]
 
-// Module 12777 (PollsActionCreators)
+// Module 12776 (PollsActionCreators)
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5921 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
 import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6994 */;
 import DraftStore from "DraftStore" /* 7810 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 12778 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 12777 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LurkingStore from "LurkingStore" /* 5103 */;
 import ReferencedMessageStore from "ReferencedMessageStore" /* 7875 */;
@@ -18,7 +18,7 @@ import ChannelStore from "ChannelStore" /* 5019 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 6795 */;
 import MessageStore from "MessageStore" /* 6226 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8310 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11541 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11540 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -426,7 +426,7 @@ obj = function _handleClearPollVote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -485,7 +485,7 @@ obj = function _handleClearPollVote() {
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -653,7 +653,7 @@ obj = function _createPoll() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -786,7 +786,7 @@ obj = function _createPoll() {
                 duration = 0;
               }
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp33) {
             closure_3 = tmp33;

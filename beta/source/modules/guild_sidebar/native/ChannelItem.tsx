@@ -1,9 +1,9 @@
-// Module ID: 18546
-// Function ID: 18547
+// Module ID: 18547
+// Function ID: 18548
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5922, 5112, 1385, 1072, 5026, 6864, 21, 5170, 575, 6866, 14203, 1411, 5874, 18547, 8751, 8707, 504, 1187, 6209, 18548, 5808, 1099, 2]
+// Dependencies: [109, 19, 17, 5922, 5112, 1385, 1072, 5026, 6864, 21, 5170, 575, 6866, 14203, 1411, 5874, 18548, 8751, 8707, 504, 1187, 6209, 18549, 5808, 1099, 2]
 
-// Module 18546 (ChannelItem)
+// Module 18547 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -14,7 +14,7 @@ import LegacyTokens from "LegacyTokens" /* 6866 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8707 */;
 import BookCheckIcon2 from "BookCheckIcon" /* 8751 */;
 import BaseChannelItem from "BaseChannelItem" /* 14203 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18547 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18548 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5922 */;

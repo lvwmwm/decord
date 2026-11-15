@@ -1,12 +1,12 @@
-// Module ID: 19537
-// Function ID: 19538
+// Module ID: 19595
+// Function ID: 19596
 // Name: applyActivityOrientationLock
-// Dependencies: [2143, 14970, 2]
+// Dependencies: [2143, 14971, 2]
 // Exports: default
 
-// Module 19537 (applyActivityOrientationLock)
+// Module 19595 (applyActivityOrientationLock)
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2143 */;
-import applyOrientationLock from "applyOrientationLock" /* 14970 */;
+import applyOrientationLock from "applyOrientationLock" /* 14971 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/activities/native/applyActivityOrientationLock.tsx");

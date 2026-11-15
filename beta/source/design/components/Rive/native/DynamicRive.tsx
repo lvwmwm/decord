@@ -1,10 +1,10 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14074
+// Function ID: 14075
 // Name: DynamicRive
 // Dependencies: [19, 21, 5292, 5239, 2]
 // Exports: DynamicRive
 
-// Module 14075 (DynamicRive)
+// Module 14074 (DynamicRive)
 import Fragment from "Fragment" /* 21 */;
 import BaseRive2 from "BaseRive" /* 5239 */;
 import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5292 */;

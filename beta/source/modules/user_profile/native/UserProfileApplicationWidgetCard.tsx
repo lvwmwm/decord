@@ -1,12 +1,12 @@
-// Module ID: 12477
-// Function ID: 12478
+// Module ID: 12476
+// Function ID: 12477
 // Name: UserProfileApplicationWidgetCard
-// Dependencies: [19, 17, 2186, 502, 21, 5170, 575, 12478, 12479, 12570, 12571, 12572, 12573, 504, 12480, 7424, 7577, 9430, 9454, 12574, 7421, 12577, 12410, 12280, 5874, 9017, 7469, 12578, 12594, 5783, 1113, 7076, 11247, 2]
+// Dependencies: [19, 17, 2186, 502, 21, 5170, 575, 12477, 12478, 12569, 12570, 12571, 12572, 504, 12479, 7424, 7577, 9430, 9454, 12573, 7421, 12576, 12409, 12279, 5874, 9017, 7469, 12577, 12593, 5783, 1113, 7076, 11247, 2]
 // Exports: default
 
-// Module 12477 (UserProfileApplicationWidgetCard)
+// Module 12476 (UserProfileApplicationWidgetCard)
 import nativeDefault from "native" /* 575 */;
-import _mod12480 from "module_12480" /* 12480 */;
+import _mod12479 from "module_12479" /* 12479 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
@@ -84,7 +84,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   const items1 = [stateFromStores];
   const memo = token.useMemo(() => {
-    const obj = _mod12480;
+    const obj = _mod12479;
     return obj.createCompactNumberFormat(stateFromStores);
   }, items1);
   const items2 = [AuthenticationStore];
@@ -120,17 +120,17 @@ export default function UserProfileApplicationWidgetCard(userId) {
   dependencyMap = tmp11Result;
   let tmp14 = rendererProps;
   if (rendererProps == null) {
-    tmp14 = tmp10(12574)(userId, widget.applicationId);
+    tmp14 = tmp10(12573)(userId, widget.applicationId);
   }
   ({ surfaceConfigs, resolutionContext, isLoading, hasIdentity } = tmp14);
   const tmp15 = stateFromStores(7421)(getOrFetchApplication);
   token = tmp15.token;
   ({ fetched, canStartAuthorization } = tmp15);
-  const tmp16 = stateFromStores(12577)(widget.applicationId, stateFromStores1);
-  ({ pending, refresh } = stateFromStores(12410)(widget.applicationId));
-  stateFromStores(12410)(widget.applicationId);
-  const tmp18 = surfaceConfigs[userId(undefined, 12280).ApplicationWidgetConfigSurface.WIDGET_TOP];
-  const tmp19 = surfaceConfigs[userId(undefined, 12280).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+  const tmp16 = stateFromStores(12576)(widget.applicationId, stateFromStores1);
+  ({ pending, refresh } = stateFromStores(12409)(widget.applicationId));
+  stateFromStores(12409)(widget.applicationId);
+  const tmp18 = surfaceConfigs[userId(undefined, 12279).ApplicationWidgetConfigSurface.WIDGET_TOP];
+  const tmp19 = surfaceConfigs[userId(undefined, 12279).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
   let tmp20 = null;
   if (null != iconURL) {
     const obj5 = { source: obj6, style: tmp.appIcon };
@@ -170,11 +170,11 @@ export default function UserProfileApplicationWidgetCard(userId) {
         const tmp10Result = stateFromStores(7469);
         if (isEditing) {
           const obj8 = { widget };
-          tmp26Result = tmp26(tmp10(12578), obj8);
+          tmp26Result = tmp26(tmp10(12577), obj8);
         }
         obj9 = { style: tmp.stillSyncing, children: items3 };
         const obj10 = { size: "xs", color: stateFromStores(575).colors.TEXT_MUTED };
-        const HourglassIcon = tmp2(12594).HourglassIcon;
+        const HourglassIcon = tmp2(12593).HourglassIcon;
         items3 = [closure_8(HourglassIcon, obj10), ];
         const obj11 = { variant: "body-sm/medium", color: "text-muted", children: intl.string(userId(1113).t.z5K4Uv) };
         const Text = tmp2(5783).Text;
@@ -184,7 +184,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
       }
     }
   }
-  const tmp2Result2 = userId(12480);
+  const tmp2Result2 = userId(12479);
   const result = tmp2Result2.bindResolveFieldValue(resolutionContext);
   const obj12 = {
     style: tmp.header,
@@ -207,7 +207,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
     const obj13 = { style: tmp.editingHeader, children: items5 };
     items5 = [tmp34, ];
     const obj14 = { widget };
-    items5[1] = closure_8(stateFromStores(12578), obj14);
+    items5[1] = closure_8(stateFromStores(12577), obj14);
     tmp32Result = tmp32(closure_5, obj13);
   }
   if (tmp18 != null) {
@@ -215,14 +215,14 @@ export default function UserProfileApplicationWidgetCard(userId) {
   }
   let tmp33Result = null;
   if (null != tmp18) {
-    if (userId(12478).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
+    if (userId(12477).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
       const obj15 = { header: tmp32Result, topConfig: tmp18, resolveFieldValue: result, numberFormat: memo };
-      tmp33Result = tmp33(tmp10(12479), obj15);
+      tmp33Result = tmp33(tmp10(12478), obj15);
     } else {
       tmp33Result = null;
-      if (userId(12478).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
+      if (userId(12477).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
         const obj16 = { header: tmp32Result, topConfig: tmp18, resolveFieldValue: result, numberFormat: memo };
-        tmp33Result = tmp33(tmp10(12570), obj16);
+        tmp33Result = tmp33(tmp10(12569), obj16);
       }
     }
   }
@@ -231,17 +231,17 @@ export default function UserProfileApplicationWidgetCard(userId) {
   }
   let tmp33Result2 = null;
   if (null != tmp19) {
-    if (userId(12478).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
+    if (userId(12477).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
       const obj17 = { bottomConfig: tmp19, resolveFieldValue: result, numberFormat: memo };
-      tmp33Result2 = tmp33(tmp10(12571), obj17);
-    } else if (userId(12478).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
+      tmp33Result2 = tmp33(tmp10(12570), obj17);
+    } else if (userId(12477).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
       const obj18 = { bottomConfig: tmp19, resolveFieldValue: result };
-      tmp33Result2 = tmp33(tmp10(12572), obj18);
+      tmp33Result2 = tmp33(tmp10(12571), obj18);
     } else {
       tmp33Result2 = null;
-      if (userId(12478).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
+      if (userId(12477).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
         const obj19 = { bottomConfig: tmp19, resolveFieldValue: result };
-        tmp33Result2 = tmp33(tmp10(12573), obj19);
+        tmp33Result2 = tmp33(tmp10(12572), obj19);
       }
     }
   }

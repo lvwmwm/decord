@@ -1,14 +1,14 @@
-// Module ID: 12984
-// Function ID: 12985
+// Module ID: 12983
+// Function ID: 12984
 // Name: useConjureScopeCards
-// Dependencies: [5, 32, 19, 6932, 1113, 4026, 12818, 504, 12321, 2]
+// Dependencies: [5, 32, 19, 6932, 1113, 4026, 12817, 504, 12320, 2]
 // Exports: useConjureScopeSetupCard, useConjureScopeSwitchCard
 
-// Module 12984 (useConjureScopeCards)
+// Module 12983 (useConjureScopeCards)
 import intl8 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6932 */;
-import conjureScopeSetup from "conjureScopeSetup" /* 12818 */;
+import conjureScopeSetup from "conjureScopeSetup" /* 12817 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -62,7 +62,7 @@ export function useConjureScopeSetupCard(projectId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -115,7 +115,7 @@ export function useConjureScopeSetupCard(projectId) {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp27) {
           closure_4 = tmp27;
@@ -276,7 +276,7 @@ export function useConjureScopeSetupCard(projectId) {
       }
     }
     let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-    tmpResult = tmp(12818);
+    tmpResult = tmp(12817);
     return obj5;
   }
 }
@@ -319,7 +319,7 @@ export function useConjureScopeSwitchCard(merged) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -368,7 +368,7 @@ export function useConjureScopeSwitchCard(merged) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp26) {
           closure_3 = tmp26;
@@ -390,7 +390,7 @@ export function useConjureScopeSwitchCard(merged) {
   let items = [c6];
   let items1 = [projectId];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
-  let obj2 = projectId(12321);
+  let obj2 = projectId(12320);
   const conjureEligibleGuilds = obj2.useConjureEligibleGuilds("ConjureScopeSwitchCard");
   let obj3 = conjureEligibleGuilds;
   [tmp6, c6] = feature(conjureEligibleGuilds.useState(false), 2);
@@ -510,6 +510,6 @@ export function useConjureScopeSwitchCard(merged) {
     }
   }
   let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-  tmpResult = tmp(12818);
+  tmpResult = tmp(12817);
   return obj5;
 }

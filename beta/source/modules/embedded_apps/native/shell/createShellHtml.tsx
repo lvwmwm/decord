@@ -1,19 +1,19 @@
-// Module ID: 12028
-// Function ID: 12029
+// Module ID: 12027
+// Function ID: 12028
 // Name: createShellHtml
-// Dependencies: [11079, 12029, 11998, 1377, 2]
+// Dependencies: [11079, 12028, 11997, 1377, 2]
 // Exports: createShellHtml
 
-// Module 12028 (createShellHtml)
+// Module 12027 (createShellHtml)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import _modDef12029 from "module_12029" /* 12029 */;
+import _modDef12028 from "module_12028" /* 12028 */;
 import EmbeddedAppConstants from "EmbeddedAppConstants" /* 11079 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp4;
-const bridgeProtocol = tmp4(11998);
+const bridgeProtocol = tmp4(11997);
 ({ EMBEDDED_APP_DISALLOWED_NAVIGATION_MESSAGE: c3, EMBEDDED_APP_FRAME_ELEMENT_ID: closure_4 } = EmbeddedAppConstants);
 const result = size.fileFinishedImporting("modules/embedded_apps/native/shell/createShellHtml.tsx");
 
@@ -43,7 +43,7 @@ export function createShellHtml(shimVersion) {
   }
   if (null != shellBridgeSecret) {
     const _JSON2 = JSON;
-    const tmp9 = _modDef12029;
+    const tmp9 = _modDef12028;
     const SHELL_BRIDGE_GLOBAL = bridgeProtocol.SHELL_BRIDGE_GLOBAL;
     const _JSON3 = JSON;
     const json = JSON.stringify(shellBridgeSecret);

@@ -1,10 +1,10 @@
-// Module ID: 18143
-// Function ID: 18144
+// Module ID: 18144
+// Function ID: 18145
 // Name: UserSettingsDesignSystemAlertModal
 // Dependencies: [5, 19, 17, 21, 6128, 6124, 5170, 5790, 2]
 // Exports: default
 
-// Module 18143 (UserSettingsDesignSystemAlertModal)
+// Module 18144 (UserSettingsDesignSystemAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import useAlertStore from "useAlertStore" /* 6124 */;
 import AlertModal2 from "AlertModal" /* 6128 */;
@@ -30,7 +30,7 @@ function DemoModal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -61,7 +61,7 @@ function DemoModal() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = 3;

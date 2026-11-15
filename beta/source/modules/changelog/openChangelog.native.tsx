@@ -1,10 +1,10 @@
-// Module ID: 19859
-// Function ID: 19860
+// Module ID: 19864
+// Function ID: 19865
 // Name: openChangelog
-// Dependencies: [5072, 5346, 6831, 17901, 2118, 2]
+// Dependencies: [5072, 5346, 6831, 17902, 2118, 2]
 // Exports: openChangelog
 
-// Module 19859 (openChangelog)
+// Module 19864 (openChangelog)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ChangelogConstants from "ChangelogConstants" /* 5072 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
@@ -26,6 +26,6 @@ export function openChangelog() {
   }
   if (!isModalOpenResult) {
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(17901, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
+    obj2.pushLazy(asyncRequire(17902, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
   }
 }

@@ -1,9 +1,9 @@
-// Module ID: 18836
-// Function ID: 18837
+// Module ID: 18837
+// Function ID: 18838
 // Name: ManageAccountsModal
-// Dependencies: [32, 5, 19, 17, 502, 5227, 1385, 14243, 14244, 18837, 1072, 21, 10009, 5170, 575, 504, 1187, 6123, 1113, 14247, 7076, 17660, 18364, 1652, 5402, 6819, 1252, 7388, 18838, 18365, 14253, 18839, 7086, 8279, 11666, 7264, 9935, 10297, 18390, 6827, 7212, 18389, 2]
+// Dependencies: [32, 5, 19, 17, 502, 5227, 1385, 14243, 14244, 18838, 1072, 21, 10009, 5170, 575, 504, 1187, 6123, 1113, 14247, 7076, 17661, 18365, 1652, 5402, 6819, 1252, 7388, 18839, 18366, 14253, 18840, 7086, 8279, 11665, 7264, 9935, 10297, 18391, 6827, 7212, 18390, 2]
 
-// Module 18836 (ManageAccountsModal)
+// Module 18837 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import HeaderShared from "HeaderShared" /* 9935 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10297 */;
 import MultiAccountStore from "MultiAccountStore" /* 14243 */;
 import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14247 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 18837 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 18838 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -68,7 +68,7 @@ function RemoveMultiAccountUserButton(user) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ function RemoveMultiAccountUserButton(user) {
               obj.removeAccount(closure_128_0.id);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -152,7 +152,7 @@ function RemoveMultiAccountUserButton(user) {
     const PressableOpacity = tmp(7076).PressableOpacity;
     intl = tmp(1113).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(17660).CircleMinusIcon;
+    CircleMinusIcon = tmp(17661).CircleMinusIcon;
     return closure_18(PressableOpacity, obj3);
   }
 }

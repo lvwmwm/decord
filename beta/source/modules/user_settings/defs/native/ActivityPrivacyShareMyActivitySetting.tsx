@@ -1,14 +1,14 @@
-// Module ID: 18316
-// Function ID: 18317
+// Module ID: 18317
+// Function ID: 18318
 // Name: ActivityPrivacyShareMyActivitySetting
-// Dependencies: [8536, 11717, 1113, 2832, 4995, 2]
+// Dependencies: [8536, 11716, 1113, 2832, 4995, 2]
 
-// Module 18316 (ActivityPrivacyShareMyActivitySetting)
+// Module 18317 (ActivityPrivacyShareMyActivitySetting)
 import intl2 from "intl" /* 1113 */;
 import _modDef2832 from "module_2832" /* 2832 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

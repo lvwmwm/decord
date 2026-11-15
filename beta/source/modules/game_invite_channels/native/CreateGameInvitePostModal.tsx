@@ -1,10 +1,10 @@
-// Module ID: 14648
-// Function ID: 14649
+// Module ID: 14649
+// Function ID: 14650
 // Name: CreateGameInvitePostModal
-// Dependencies: [32, 19, 17, 5019, 7939, 21, 5170, 575, 7420, 504, 7103, 14647, 5767, 14649, 5917, 5406, 11303, 2118, 1113, 7076, 7153, 5783, 3962, 7349, 7550, 7159, 7071, 7462, 14014, 5790, 2]
+// Dependencies: [32, 19, 17, 5019, 7939, 21, 5170, 575, 7420, 504, 7103, 14648, 5767, 14650, 5917, 5406, 11303, 2118, 1113, 7076, 7153, 5783, 3962, 7349, 7550, 7159, 7071, 7462, 14013, 5790, 2]
 // Exports: default
 
-// Module 14648 (CreateGameInvitePostModal)
+// Module 14649 (CreateGameInvitePostModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -82,7 +82,7 @@ function CreateGameInvitePostContent(parentChannel) {
     set = new Set(first.map((id) => id.id));
     return set;
   }, items);
-  let obj = parentChannel(14649);
+  let obj = parentChannel(14650);
   let obj2 = {
     parentChannel,
     description: tmp5,
@@ -188,7 +188,7 @@ function CreateGameInvitePostContent(parentChannel) {
   items8 = [tmp.footer, { marginBottom: insets.bottom }];
   let tmp15Result4 = null;
   if (isSlowmodeEnabled) {
-    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(14014), obj17) };
+    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(14013), obj17) };
     obj17 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp15Result4 = tmp15(tmp14, obj16);
   }

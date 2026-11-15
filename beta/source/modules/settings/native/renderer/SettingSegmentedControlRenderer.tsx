@@ -1,17 +1,17 @@
-// Module ID: 16951
-// Function ID: 16952
+// Module ID: 16952
+// Function ID: 16953
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 16938, 11718, 21, 5170, 575, 9102, 16941, 16783, 38, 16940, 9092, 9327, 14464, 2]
+// Dependencies: [32, 19, 17, 16939, 11717, 21, 5170, 575, 9102, 16942, 16784, 38, 16941, 9092, 9327, 14465, 2]
 // Exports: default
 
-// Module 16951 (SettingSegmentedControlRenderer)
+// Module 16952 (SettingSegmentedControlRenderer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11718 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 16941 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11717 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 16942 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16938 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16939 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

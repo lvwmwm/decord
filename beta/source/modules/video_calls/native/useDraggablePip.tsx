@@ -1,13 +1,13 @@
-// Module ID: 11908
-// Function ID: 11909
+// Module ID: 11907
+// Function ID: 11908
 // Name: useDraggablePip
-// Dependencies: [32, 11162, 11895, 1652, 5402, 1187, 10242, 5452, 1705, 5793, 2]
+// Dependencies: [32, 11162, 11894, 1652, 5402, 1187, 10242, 5452, 1705, 5793, 2]
 // Exports: useDraggablePip
 
-// Module 11908 (useDraggablePip)
+// Module 11907 (useDraggablePip)
 import ChannelCallStore from "ChannelCallStore" /* 11162 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 11895 */;
+import Constants from "Constants" /* 11894 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

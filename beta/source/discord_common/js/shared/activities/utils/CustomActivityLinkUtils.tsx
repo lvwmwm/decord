@@ -1,10 +1,10 @@
-// Module ID: 15021
-// Function ID: 15022
+// Module ID: 15022
+// Function ID: 15023
 // Name: utils/CustomActivityLinkUtils
 // Dependencies: [32, 2]
 // Exports: decodeCustomActivityLink
 
-// Module 15021 (utils/CustomActivityLinkUtils)
+// Module 15022 (utils/CustomActivityLinkUtils)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 12990
-// Function ID: 12991
+// Module ID: 12989
+// Function ID: 12990
 // Name: useConjureSafetyAlertsChannelPick
-// Dependencies: [19, 5100, 5082, 5041, 6932, 1072, 1084, 504, 11048, 6990, 7516, 5107, 12822, 2]
+// Dependencies: [19, 5100, 5082, 5041, 6932, 1072, 1084, 504, 11048, 6990, 7516, 5107, 12821, 2]
 // Exports: default
 
-// Module 12990 (useConjureSafetyAlertsChannelPick)
+// Module 12989 (useConjureSafetyAlertsChannelPick)
 import Constants from "Constants" /* 1072 */;
-import ConjureClarification from "ConjureClarification" /* 12822 */;
+import ConjureClarification from "ConjureClarification" /* 12821 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 5100 */;
 import GuildMemberStore from "GuildMemberStore" /* 5082 */;

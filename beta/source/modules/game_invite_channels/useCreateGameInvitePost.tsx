@@ -1,19 +1,19 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 14650
+// Function ID: 14651
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 11702, 6657, 7939, 1072, 5026, 7550, 14650, 504, 11881, 9899, 7940, 2]
+// Dependencies: [5, 32, 19, 11701, 6657, 7939, 1072, 5026, 7550, 14651, 504, 11880, 9899, 7940, 2]
 // Exports: useCreateGameInvitePost
 
-// Module 14649 (useCreateGameInvitePost)
+// Module 14650 (useCreateGameInvitePost)
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 5026 */;
 import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7550 */;
 import SlowmodeStore2 from "SlowmodeStore" /* 7939 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11881 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11880 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11702 */;
+import LocalActivityStore from "LocalActivityStore" /* 11701 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6657 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export function useCreateGameInvitePost(parentChannel) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -183,7 +183,7 @@ export function useCreateGameInvitePost(parentChannel) {
           c2 = 0;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         if (0 === c2) {
           c3 = 3;

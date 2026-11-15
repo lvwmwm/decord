@@ -1,12 +1,12 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14404
+// Function ID: 14405
 // Name: useGetExpiringGuildPowerups
-// Dependencies: [19, 5377, 504, 14340, 1380, 2]
+// Dependencies: [19, 5377, 504, 14341, 1380, 2]
 // Exports: default
 
-// Module 14403 (useGetExpiringGuildPowerups)
+// Module 14404 (useGetExpiringGuildPowerups)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 14340 */;
+import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 14341 */;
 import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5377 */;
 import size from "module_2" /* 2 */;

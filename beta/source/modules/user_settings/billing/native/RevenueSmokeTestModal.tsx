@@ -1,13 +1,13 @@
-// Module ID: 18069
-// Function ID: 18070
+// Module ID: 18070
+// Function ID: 18071
 // Name: RevenueSmokeTestModal
-// Dependencies: [19, 21, 10009, 7264, 10840, 9935, 10297, 18070, 2]
+// Dependencies: [19, 21, 10009, 7264, 10840, 9935, 10297, 18071, 2]
 
-// Module 18069 (RevenueSmokeTestModal)
+// Module 18070 (RevenueSmokeTestModal)
 import Fragment from "Fragment" /* 21 */;
 import HeaderShared from "HeaderShared" /* 9935 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10297 */;
-import BillingFlowsDefault from "BillingFlows" /* 18070 */;
+import BillingFlowsDefault from "BillingFlows" /* 18071 */;
 import react from "react" /* 19 */;
 import NativeStackView from "NativeStackView" /* 10009 */;
 import size from "module_2" /* 2 */;

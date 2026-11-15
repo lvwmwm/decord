@@ -1,10 +1,10 @@
-// Module ID: 14337
-// Function ID: 14338
+// Module ID: 14338
+// Function ID: 14339
 // Name: storeListingToGuildPowerup
 // Dependencies: [1387, 5378, 1388, 2]
 // Exports: default
 
-// Module 14337 (storeListingToGuildPowerup)
+// Module 14338 (storeListingToGuildPowerup)
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5378 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;

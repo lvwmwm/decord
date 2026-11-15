@@ -1,10 +1,10 @@
-// Module ID: 16136
-// Function ID: 16137
+// Module ID: 16137
+// Function ID: 16138
 // Name: GuildAntiRaidReportModal
-// Dependencies: [5, 32, 19, 17, 16137, 21, 5170, 575, 1627, 5783, 5866, 1113, 7159, 7070, 5790, 7097, 10299, 7235, 13522, 7264, 2]
+// Dependencies: [5, 32, 19, 17, 16138, 21, 5170, 575, 1627, 5783, 5866, 1113, 7159, 7070, 5790, 7097, 10299, 7235, 13521, 7264, 2]
 // Exports: default
 
-// Module 16136 (GuildAntiRaidReportModal)
+// Module 16137 (GuildAntiRaidReportModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -16,7 +16,7 @@ import TableRowGroup2 from "TableRowGroup" /* 7159 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 16137 */;
+import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 16138 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -133,7 +133,7 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -169,7 +169,7 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
           closure_128_0();
         }
         first = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         first = 3;
         throw tmp15;

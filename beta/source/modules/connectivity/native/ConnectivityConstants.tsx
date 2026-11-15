@@ -1,9 +1,9 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12052
+// Function ID: 12053
 // Name: ConnectivityConstants
 // Dependencies: [2]
 
-// Module 12053 (ConnectivityConstants)
+// Module 12052 (ConnectivityConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/connectivity/native/ConnectivityConstants.tsx");

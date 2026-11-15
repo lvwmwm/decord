@@ -1,23 +1,23 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17095
+// Function ID: 17096
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8536, 21, 1254, 1259, 5085, 14515, 1336, 5869, 11717, 17095, 2]
+// Dependencies: [5, 17, 8536, 21, 1254, 1259, 5085, 14516, 1336, 5869, 11716, 17096, 2]
 
-// Module 17094 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 17095 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 5085 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17095 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17096 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
-const f112674 = (isLoading) => isLoading.isLoading;
+const f112696 = (isLoading) => isLoading.isLoading;
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -43,7 +43,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -105,7 +105,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
           closure_129_7(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp35) {
         closure_2 = tmp35;
         if (0 === c3) {
@@ -131,7 +131,7 @@ obj = {
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return closure_6(f112674, _slicedToArray.shallow);
+    return closure_6(f112696, _slicedToArray.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     return obj(...arguments);
@@ -139,7 +139,7 @@ obj = {
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (closure_6(f112674, _slicedToArray.shallow)) {
+    if (closure_6(f112696, _slicedToArray.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;

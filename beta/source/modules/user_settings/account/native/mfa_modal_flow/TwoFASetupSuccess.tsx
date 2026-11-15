@@ -1,10 +1,10 @@
-// Module ID: 17015
-// Function ID: 17016
+// Module ID: 17016
+// Function ID: 17017
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 6835, 1113, 17004, 7220, 17005, 5874, 17016, 5783, 1187, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 6835, 1113, 17005, 7220, 17006, 5874, 17017, 5783, 1187, 5790, 2]
 // Exports: default
 
-// Module 17015 (TwoFASetupSuccess)
+// Module 17016 (TwoFASetupSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import NativeCeremoniesDefault from "NativeCeremonies" /* 7220 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 17005 */;
-import AssetRegistry from "AssetRegistry" /* 17016 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 17006 */;
+import AssetRegistry from "AssetRegistry" /* 17017 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 12039
-// Function ID: 12040
+// Module ID: 12038
+// Function ID: 12039
 // Name: useIsStreamFocused
 // Dependencies: [6931, 5837, 504, 2]
 // Exports: useIsStreamFocused
 
-// Module 12039 (useIsStreamFocused)
+// Module 12038 (useIsStreamFocused)
 import CallConstants from "CallConstants" /* 5837 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
 import size from "module_2" /* 2 */;

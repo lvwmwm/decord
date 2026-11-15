@@ -1,13 +1,13 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16710
+// Function ID: 16711
 // Name: frameRelaunchDeepLink
-// Dependencies: [6615, 1072, 16645, 16637, 9447, 7613, 11037, 2]
+// Dependencies: [6615, 1072, 16646, 16638, 9447, 7613, 11037, 2]
 
-// Module 16709 (frameRelaunchDeepLink)
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16637 */;
+// Module 16710 (frameRelaunchDeepLink)
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16638 */;
 import Constants_mod from "Constants" /* 6615 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16645 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16646 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

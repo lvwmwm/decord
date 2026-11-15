@@ -1,10 +1,10 @@
-// Module ID: 18732
-// Function ID: 18733
+// Module ID: 18733
+// Function ID: 18734
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 6860, 1072, 7345, 1113, 16126, 2118, 7666, 18733, 2]
+// Dependencies: [5, 6860, 1072, 7345, 1113, 16127, 2118, 7666, 18734, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 18732 (GuildsBarFolderMenuItems)
+// Module 18733 (GuildsBarFolderMenuItems)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SortedGuildStore from "SortedGuildStore" /* 6860 */;
@@ -36,7 +36,7 @@ export function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ export function getGuildFolderMenuItems(id) {
               value.default(guildFolderById.guildIds, constants.GUILD_LIST);
             }
             guildFolderById = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp13) {
             guildFolderById = 3;
             throw tmp13;
@@ -98,7 +98,7 @@ export function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ export function getGuildFolderMenuItems(id) {
             } else {
               const result = value.showGuildsBarFolderModal(closure_128_0);
               c2 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp9) {
             c2 = 3;

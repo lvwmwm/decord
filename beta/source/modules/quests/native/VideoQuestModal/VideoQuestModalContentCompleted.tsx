@@ -1,15 +1,15 @@
-// Module ID: 17490
-// Function ID: 17491
+// Module ID: 17491
+// Function ID: 17492
 // Name: VideoQuestModalContentCompleted
-// Dependencies: [19, 17, 21, 5170, 575, 17466, 17461, 9818, 17488, 17457, 14760, 9805, 1652, 5793, 7976, 9043, 9828, 14970, 17428, 8948, 9102, 7388, 6191, 5783, 1113, 17482, 17483, 5790, 17452, 7076, 11247, 6872, 5874, 12442, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 17467, 17462, 9818, 17489, 17458, 14761, 9805, 1652, 5793, 7976, 9043, 9828, 14971, 17429, 8948, 9102, 7388, 6191, 5783, 1113, 17483, 17484, 5790, 17453, 7076, 11247, 6872, 5874, 12441, 2]
 
-// Module 17490 (VideoQuestModalContentCompleted)
+// Module 17491 (VideoQuestModalContentCompleted)
 import nativeDefault from "native" /* 575 */;
 import QuestTypes from "QuestTypes" /* 6872 */;
 import showShareActionSheet2 from "showShareActionSheet" /* 9043 */;
 import AssetUtils from "AssetUtils" /* 9818 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9828 */;
-import QuestProgressIndicator from "QuestProgressIndicator" /* 17466 */;
+import QuestProgressIndicator from "QuestProgressIndicator" /* 17467 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

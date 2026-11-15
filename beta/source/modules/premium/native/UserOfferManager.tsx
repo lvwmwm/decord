@@ -1,9 +1,9 @@
-// Module ID: 20083
-// Function ID: 20084
+// Module ID: 20088
+// Function ID: 20089
 // Name: UserOfferManager
 // Dependencies: [1385, 7739, 1083, 7383, 10064, 2107, 8634, 2]
 
-// Module 20083 (UserOfferManager)
+// Module 20088 (UserOfferManager)
 import Constants from "Constants" /* 1083 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
 import UserOfferActionCreators from "UserOfferActionCreators" /* 8634 */;

@@ -1,10 +1,10 @@
-// Module ID: 14885
-// Function ID: 14886
+// Module ID: 14886
+// Function ID: 14887
 // Name: Checkbox
 // Dependencies: [17, 21, 5170, 5232, 1113, 6191, 7088, 5783, 2]
 // Exports: Checkbox
 
-// Module 14885 (Checkbox)
+// Module 14886 (Checkbox)
 import intl3 from "intl" /* 1113 */;
 import react_native from "react-native" /* 5232 */;
 import FormCheckbox from "FormCheckbox" /* 7088 */;

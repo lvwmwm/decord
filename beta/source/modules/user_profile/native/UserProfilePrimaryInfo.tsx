@@ -1,10 +1,10 @@
-// Module ID: 11586
-// Function ID: 11587
+// Module ID: 11585
+// Function ID: 11586
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 8867, 1385, 8858, 7470, 1072, 8497, 8869, 21, 575, 5170, 1377, 10923, 10924, 9315, 7076, 11587, 5783, 11589, 5347, 11620, 1113, 11622, 8859, 5874, 11623, 7668, 5869, 8922, 9808, 9811, 6872, 11625, 11626, 5756, 504, 11628, 8865, 11629, 11630, 11634, 11660, 1493, 8134, 11661, 8840, 9408, 5226, 2]
+// Dependencies: [19, 17, 8867, 1385, 8858, 7470, 1072, 8497, 8869, 21, 575, 5170, 1377, 10923, 10924, 9315, 7076, 11586, 5783, 11588, 5347, 11619, 1113, 11621, 8859, 5874, 11622, 7668, 5869, 8922, 9808, 9811, 6872, 11624, 11625, 5756, 504, 11627, 8865, 11628, 11629, 11633, 11659, 1493, 8134, 11660, 8840, 9408, 5226, 2]
 // Exports: default
 
-// Module 11586 (UserProfilePrimaryInfo)
+// Module 11585 (UserProfilePrimaryInfo)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import UserUtilsDefault from "UserUtils" /* 5226 */;
@@ -23,9 +23,9 @@ import GuildTagDefault from "GuildTag" /* 9408 */;
 import captureAdUserAction2 from "captureAdUserAction" /* 9808 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9811 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10923 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 11629 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11630 */;
-import BadgeUtils from "BadgeUtils" /* 11634 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 11628 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11629 */;
+import BadgeUtils from "BadgeUtils" /* 11633 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8867 */;
@@ -115,7 +115,7 @@ class DisplayName {
       const tmp13 = user;
       const tmp15 = closure_14;
       if (showChevron) {
-        showChevron = tmp15(tmp13(11587).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+        showChevron = tmp15(tmp13(11586).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
       }
       items1[2] = showChevron;
       tmp12Result = tmp12(PressableOpacity, obj7);

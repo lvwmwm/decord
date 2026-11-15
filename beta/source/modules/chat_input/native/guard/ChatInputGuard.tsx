@@ -1,10 +1,10 @@
-// Module ID: 14292
-// Function ID: 14293
+// Module ID: 14293
+// Function ID: 14294
 // Name: ChatInputGuard
 // Dependencies: [19, 17, 10050, 21, 5170, 575, 669, 9945, 14085, 14084, 10887, 1377, 14090, 7071, 8131, 10962, 10302, 5783, 5790, 6855, 9105, 2]
 // Exports: ChatInputGuardContainer, default
 
-// Module 14292 (ChatInputGuard)
+// Module 14293 (ChatInputGuard)
 import nativeDefault from "native" /* 575 */;
 import Radius from "Radius" /* 669 */;
 import Text_Text from "Text/Text" /* 5783 */;

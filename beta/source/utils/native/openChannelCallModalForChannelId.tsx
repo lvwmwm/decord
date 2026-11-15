@@ -1,10 +1,10 @@
-// Module ID: 13440
-// Function ID: 13441
+// Module ID: 13439
+// Function ID: 13440
 // Name: openChannelCallModalForChannelId
 // Dependencies: [5019, 8052, 8041, 2]
 // Exports: default
 
-// Module 13440 (openChannelCallModalForChannelId)
+// Module 13439 (openChannelCallModalForChannelId)
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8052 */;
 import ChannelStore from "ChannelStore" /* 5019 */;

@@ -1,10 +1,10 @@
-// Module ID: 14372
-// Function ID: 14373
+// Module ID: 14373
+// Function ID: 14374
 // Name: GuildBoostingMarketingUtils
-// Dependencies: [1387, 9566, 14373, 10411, 14375, 14377, 10071, 9172, 13049, 10216, 8773, 11206, 2]
+// Dependencies: [1387, 9566, 14374, 10411, 14376, 14378, 10071, 9172, 13048, 10216, 8773, 11206, 2]
 // Exports: getIconForPerk
 
-// Module 14372 (GuildBoostingMarketingUtils)
+// Module 14373 (GuildBoostingMarketingUtils)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import StageIcon from "StageIcon" /* 8773 */;
 import ShieldUserIcon from "ShieldUserIcon" /* 9172 */;
@@ -13,10 +13,10 @@ import UploadIcon from "UploadIcon" /* 10071 */;
 import StarIcon from "StarIcon" /* 10216 */;
 import GifIcon from "GifIcon" /* 10411 */;
 import StickerIcon from "StickerIcon" /* 11206 */;
-import ImagesIcon from "ImagesIcon" /* 13049 */;
-import SoundboardIcon from "SoundboardIcon" /* 14373 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 14375 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 14377 */;
+import ImagesIcon from "ImagesIcon" /* 13048 */;
+import SoundboardIcon from "SoundboardIcon" /* 14374 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 14376 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 14378 */;
 import size from "module_2" /* 2 */;
 
 const PerkIcons = PremiumConstants.PerkIcons;

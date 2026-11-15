@@ -1,10 +1,10 @@
-// Module ID: 13555
-// Function ID: 13556
+// Module ID: 13554
+// Function ID: 13555
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [5, 32, 19, 17, 1072, 7587, 21, 5170, 575, 1113, 7806, 5406, 5921, 13522, 7601, 7459, 7049, 5783, 8279, 1187, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 7587, 21, 5170, 575, 1113, 7806, 5406, 5921, 13521, 7601, 7459, 7049, 5783, 8279, 1187, 5790, 2]
 // Exports: default
 
-// Module 13555 (GuildRaidResolveActionSheet)
+// Module 13554 (GuildRaidResolveActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -93,7 +93,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -152,7 +152,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
             closure_128_8(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp41) {
           closure_2 = tmp41;
           if (0 === c3) {

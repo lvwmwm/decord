@@ -402,7 +402,7 @@ class TimeOut {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -590,12 +590,12 @@ export function getTimeUnit(arg0, arg1) {
     max = max.max;
     return max.unit === obj.NONE && rounded === max || rounded < max;
   });
-  const tmp2 = createFindDefault(items, (unit) => f89952(unit.unit), findIndexResult);
+  const tmp2 = createFindDefault(items, (unit) => f89968(unit.unit), findIndexResult);
   const arr = items;
   if (null != tmp2) {
     return tmp2.unit;
   } else {
-    const found = arr.find((unit) => f89952(unit.unit));
+    const found = arr.find((unit) => f89968(unit.unit));
     let unit = null;
     if (null != found) {
       unit = found.unit;
@@ -611,17 +611,17 @@ export function getTimeAndUnit(rounded, items) {
   } else {
     let unit;
     closure_0 = rounded;
-    const f89952 = (dependencyMap) => closure_0.includes(dependencyMap);
+    const f89968 = (dependencyMap) => closure_0.includes(dependencyMap);
     const findIndexResult = items.findIndex((max) => {
       max = max.max;
       return max.unit === obj.NONE && rounded === max || rounded < max;
     });
-    const tmp11 = f89952(5935)(items, (unit) => f89952(unit.unit), findIndexResult);
+    const tmp11 = f89968(5935)(items, (unit) => f89968(unit.unit), findIndexResult);
     const arr = items;
     if (null != tmp11) {
       unit = tmp11.unit;
     } else {
-      const found = arr.find((unit) => f89952(unit.unit));
+      const found = arr.find((unit) => f89968(unit.unit));
       unit = null;
       if (null != found) {
         unit = found.unit;

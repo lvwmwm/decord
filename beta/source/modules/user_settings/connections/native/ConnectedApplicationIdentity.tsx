@@ -1,10 +1,10 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17196
+// Function ID: 17197
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 5170, 17196, 1113, 1187, 5783, 11564, 6122, 17203, 6194, 1411, 5792, 11111, 8131, 9400, 7072, 7071, 7462, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 17197, 1113, 1187, 5783, 11563, 6122, 17204, 6194, 1411, 5792, 11111, 8131, 9400, 7072, 7071, 7462, 2]
 // Exports: default
 
-// Module 17195 (ConnectedApplicationIdentity)
+// Module 17196 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import Icon from "Icon" /* 5792 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
 import AlertDefault from "Alert" /* 6194 */;
-import InfoBoxDefault from "InfoBox" /* 11564 */;
+import InfoBoxDefault from "InfoBox" /* 11563 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -160,7 +160,7 @@ export default function ConnectedApplicationIdentity(identity) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export default function ConnectedApplicationIdentity(identity) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           if (0 === c3) {

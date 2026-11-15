@@ -1,7 +1,36 @@
 // Module ID: 16453
 // Function ID: 16454
-// Dependencies: []
+// Dependencies: [16374, 16454]
+// Exports: getSupportedCalendars
 
 // Module 16453
+const require = globalThis.__r;
+let _require;
 
-export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];
+
+export function getSupportedCalendars(locale) {
+  _require = locale;
+  const calendars = require("module_16454").calendars;
+  return calendars.filter((item) => {
+    function isSupportedCalendar(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const concat = "".concat;
+        const createMemoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat;
+        const combined = "".concat(str, "-u-ca-");
+        const memoizedDateTimeFormat = createMemoizedDateTimeFormat(combined.concat(item));
+        if ("gregory" === item) {
+          if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
+    }
+    return isSupportedCalendar(item, locale);
+  });
+}

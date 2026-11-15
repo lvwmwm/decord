@@ -1,17 +1,17 @@
-// Module ID: 13487
-// Function ID: 13488
+// Module ID: 13486
+// Function ID: 13487
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 5170, 7073, 6191, 5874, 5783, 1493, 13488, 10170, 1113, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 575, 5170, 7073, 6191, 5874, 5783, 1493, 13487, 10170, 1113, 1187, 2]
 // Exports: default
 
-// Module 13487 (GameOrganizationBenefitsCarousel)
+// Module 13486 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import Card_Card from "Card/Card" /* 7073 */;
-import GameOrganizationBenefits from "GameOrganizationBenefits" /* 13488 */;
+import GameOrganizationBenefits from "GameOrganizationBenefits" /* 13487 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

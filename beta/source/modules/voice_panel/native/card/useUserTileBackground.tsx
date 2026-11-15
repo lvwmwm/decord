@@ -1,10 +1,10 @@
-// Module ID: 19520
-// Function ID: 19521
+// Module ID: 19578
+// Function ID: 19579
 // Name: useUserTileBackground
 // Dependencies: [9639, 8931, 2]
 // Exports: default
 
-// Module 19520 (useUserTileBackground)
+// Module 19578 (useUserTileBackground)
 import useProfileTileGradientDefault from "useProfileTileGradient" /* 8931 */;
 import DominantColorUtils from "DominantColorUtils" /* 9639 */;
 import size from "module_2" /* 2 */;

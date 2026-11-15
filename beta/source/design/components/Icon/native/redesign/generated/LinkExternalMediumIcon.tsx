@@ -1,14 +1,14 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15488
+// Function ID: 15489
 // Name: LinkExternalMediumIcon
-// Dependencies: [19, 21, 575, 5873, 15488, 2]
+// Dependencies: [19, 21, 575, 5873, 15489, 2]
 // Exports: LinkExternalMediumIcon
 
-// Module 15487 (LinkExternalMediumIcon)
+// Module 15488 (LinkExternalMediumIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 15488 */;
+import AssetRegistry from "AssetRegistry" /* 15489 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

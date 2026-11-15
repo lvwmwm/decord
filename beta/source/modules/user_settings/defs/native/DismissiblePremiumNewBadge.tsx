@@ -1,10 +1,10 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 16972
+// Function ID: 16973
 // Name: DismissiblePremiumNewBadge
 // Dependencies: [19, 7726, 21, 5170, 575, 10671, 1377, 1187, 5747, 1092, 2]
 // Exports: default
 
-// Module 16971 (DismissiblePremiumNewBadge)
+// Module 16972 (DismissiblePremiumNewBadge)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;

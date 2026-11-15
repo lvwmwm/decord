@@ -1,9 +1,9 @@
-// Module ID: 15148
-// Function ID: 15149
+// Module ID: 15149
+// Function ID: 15150
 // Name: CutoutableAvatarImage
-// Dependencies: [19, 17, 15149, 21, 3, 1411, 15150, 15151, 9626, 5874, 1652, 5793, 1266, 8134, 558, 2]
+// Dependencies: [19, 17, 15150, 21, 3, 1411, 15151, 15152, 9626, 5874, 1652, 5793, 1266, 8134, 558, 2]
 
-// Module 15148 (CutoutableAvatarImage)
+// Module 15149 (CutoutableAvatarImage)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import v1 from "v1" /* 1266 */;
@@ -13,9 +13,9 @@ import spring_spring from "spring/spring" /* 5793 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import inlineStyles from "inlineStyles" /* 8134 */;
 import ClipView from "ClipView" /* 9626 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 15149 */;
-import getChannelIcon from "getChannelIcon" /* 15150 */;
-import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 15151 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 15150 */;
+import getChannelIcon from "getChannelIcon" /* 15151 */;
+import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 15152 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 16671
-// Function ID: 16672
+// Module ID: 16672
+// Function ID: 16673
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 5019, 1385, 5018, 10878, 5175, 21, 5170, 575, 504, 13648, 12697, 16670, 7424, 1380, 16672, 7745, 7933, 5869, 1113, 7451, 5868, 1493, 1377, 13658, 7663, 5883, 10887, 13659, 13683, 2]
+// Dependencies: [5, 32, 19, 17, 5019, 1385, 5018, 10878, 5175, 21, 5170, 575, 504, 13647, 12696, 16671, 7424, 1380, 16673, 7745, 7933, 5869, 1113, 7451, 5868, 1493, 1377, 13657, 7663, 5883, 10887, 13658, 13682, 2]
 // Exports: default
 
-// Module 16671 (ActivityShareLinkModal)
+// Module 16672 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -15,9 +15,9 @@ import LinkIcon from "LinkIcon" /* 5883 */;
 import ClipboardUtils from "ClipboardUtils" /* 7451 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7663 */;
 import UserRowConstants from "UserRowConstants" /* 10878 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12697 */;
-import formatResults from "formatResults" /* 13648 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 16670 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12696 */;
+import formatResults from "formatResults" /* 13647 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 16671 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -132,7 +132,7 @@ export default function ActivityShareLinkModal(applicationId) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -185,7 +185,7 @@ export default function ActivityShareLinkModal(applicationId) {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -220,7 +220,7 @@ export default function ActivityShareLinkModal(applicationId) {
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -242,7 +242,7 @@ export default function ActivityShareLinkModal(applicationId) {
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

@@ -1,9 +1,9 @@
-// Module ID: 19660
-// Function ID: 19661
+// Module ID: 19665
+// Function ID: 19666
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 2162, 5024, 5019, 5837, 21, 5170, 575, 15004, 1113, 5791, 7408, 504, 5808, 9359, 9105, 11394, 6205, 19661, 6191, 8712, 19555, 19658, 6853, 6847, 12170, 5783, 8765, 11359, 12091, 8716, 8948, 1093, 19657, 19629, 2]
+// Dependencies: [19, 17, 2162, 5024, 5019, 5837, 21, 5170, 575, 15005, 1113, 5791, 7408, 504, 5808, 9359, 9105, 11394, 6205, 19666, 6191, 8712, 19613, 19663, 6853, 6847, 12169, 5783, 8765, 11359, 12090, 8716, 8948, 1093, 19662, 18878, 2]
 
-// Module 19660 (VoicePanelTitleButton)
+// Module 19665 (VoicePanelTitleButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -19,13 +19,13 @@ import AssetRegistryDefault2 from "AssetRegistry" /* 8712 */;
 import GroupIcon2 from "GroupIcon" /* 8765 */;
 import native from "native" /* 9105 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import useStageSummaryDefault from "useStageSummary" /* 12091 */;
-import MicrophoneIcon2 from "MicrophoneIcon" /* 12170 */;
-import ShieldLockIcon2 from "ShieldLockIcon" /* 15004 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 19555 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19629 */;
-import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19658 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19661 */;
+import useStageSummaryDefault from "useStageSummary" /* 12090 */;
+import MicrophoneIcon2 from "MicrophoneIcon" /* 12169 */;
+import ShieldLockIcon2 from "ShieldLockIcon" /* 15005 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 18878 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 19613 */;
+import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19663 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19666 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import StageInstanceStore from "StageInstanceStore" /* 5024 */;
@@ -239,7 +239,7 @@ const memoResult = react.memo(function VoicePanelTitleButton() {
     return id;
   });
   const GUILD_STAGE_VOICE = guildId(1093).ChannelTypes.GUILD_STAGE_VOICE;
-  const tmp3 = channelId(19657)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(19662)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = react.useCallback(() => {
     const obj = VoicePanelSettingsActionCreators;

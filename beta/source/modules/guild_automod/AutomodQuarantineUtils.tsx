@@ -1,18 +1,18 @@
-// Module ID: 13566
-// Function ID: 13567
+// Module ID: 13565
+// Function ID: 13566
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 11633, 502, 5082, 5041, 5102, 5203, 1072, 5088, 1082, 563, 5108, 1113, 11696, 11697, 7668, 2]
+// Dependencies: [19, 11632, 502, 5082, 5041, 5102, 5203, 1072, 5088, 1082, 563, 5108, 1113, 11695, 11696, 7668, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 13566 (AutomodQuarantineUtils)
+// Module 13565 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl4 from "intl" /* 1113 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5088 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5108 */;
 import openUserSettings2 from "openUserSettings" /* 7668 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11697 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11696 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11633 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11632 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import GuildStore from "GuildStore" /* 5041 */;

@@ -1,10 +1,10 @@
-// Module ID: 18358
-// Function ID: 18359
+// Module ID: 18359
+// Function ID: 18360
 // Name: RegistrationUIStore
 // Dependencies: [560, 1259, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 18358 (RegistrationUIStore)
+// Module 18359 (RegistrationUIStore)
 import react_native from "react-native" /* 1259 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const useRegistrationUIStore = module_560.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "channel_id" }));
+const useRegistrationUIStore = module_560.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "category" }));
 const result = size.fileFinishedImporting("modules/auth/native/RegistrationUIStore.tsx");
 
 export { useRegistrationUIStore };

@@ -1,18 +1,17 @@
 // Module ID: 16496
 // Function ID: 16497
-// Dependencies: []
+// Dependencies: [16497]
 
 // Module 16496
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  let fn;
-  if (undefined !== all) {
-    fn = (fn) => typeof fn === "function" || fn === all;
+import _mod16497 from "module_16497" /* 16497 */;
+
+
+export default (obj) => {
+  let tmp2;
+  if (typeof obj === "object") {
+    tmp2 = null !== obj;
+  } else {
+    tmp2 = _mod16497(obj);
   }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+  return tmp2;
+};

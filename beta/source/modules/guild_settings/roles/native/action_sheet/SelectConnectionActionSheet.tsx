@@ -1,10 +1,10 @@
-// Module ID: 20254
-// Function ID: 20255
+// Module ID: 20259
+// Function ID: 20260
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 11781, 7071, 1187, 5401, 7415, 1113, 7791, 1411, 5177, 5406, 9092, 7459, 9327, 5424, 7388, 7159, 2]
+// Dependencies: [32, 19, 17, 21, 11780, 7071, 1187, 5401, 7415, 1113, 7791, 1411, 5177, 5406, 9092, 7459, 9327, 5424, 7388, 7159, 2]
 // Exports: default
 
-// Module 20254 (SelectConnectionActionSheet)
+// Module 20259 (SelectConnectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -14,7 +14,7 @@ import useThemeDefault from "useTheme" /* 5401 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import TableRow2 from "TableRow" /* 7071 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7415 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11781 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11780 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

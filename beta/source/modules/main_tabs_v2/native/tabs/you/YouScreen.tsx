@@ -1,10 +1,10 @@
-// Module ID: 19256
-// Function ID: 19257
+// Module ID: 19314
+// Function ID: 19315
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 7881, 2186, 16938, 6974, 1385, 18831, 1072, 1074, 5016, 7470, 21, 1652, 8925, 5170, 1357, 575, 671, 5347, 563, 1113, 7076, 16922, 9102, 8909, 6192, 1260, 8861, 1627, 8906, 5401, 8923, 5349, 1493, 4995, 1500, 19257, 1411, 8927, 7216, 9745, 8865, 8877, 8878, 8890, 7445, 8903, 5127, 5003, 7674, 5874, 19258, 13996, 5770, 19266, 19267, 5231, 19268, 8899, 8884, 8917, 1090, 10699, 9614, 19270, 13600, 8862, 9587, 7668, 7828, 11570, 7763, 2]
+// Dependencies: [32, 19, 17, 7881, 2186, 16939, 6974, 1385, 18832, 1072, 1074, 5016, 7470, 21, 1652, 8925, 5170, 1357, 575, 671, 5347, 563, 1113, 7076, 16923, 9102, 8909, 6192, 1260, 8861, 1627, 8906, 5401, 8923, 5349, 1493, 4995, 1500, 19315, 1411, 8927, 7216, 9745, 8865, 8877, 8878, 8890, 7445, 8903, 5127, 5003, 7674, 5874, 19316, 13995, 5770, 19324, 19325, 5231, 19326, 8899, 8884, 8917, 1090, 10699, 9614, 19328, 13599, 8862, 9587, 7668, 7828, 11569, 7763, 2]
 // Exports: default
 
-// Module 19256 (YouScreen)
+// Module 19314 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -17,16 +17,16 @@ import RootNavigationRef from "RootNavigationRef" /* 5347 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
 import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8925 */;
 import YouBannerDecorations from "YouBannerDecorations" /* 9745 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 16922 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 16923 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileStore from "UserProfileStore" /* 7881 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16938 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16939 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6974 */;
 import UserStore from "UserStore" /* 1385 */;
-import YouConstants from "YouConstants" /* 18831 */;
+import YouConstants from "YouConstants" /* 18832 */;
 import Constants from "Constants" /* 7470 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652_mod from "module_1652" /* 1652 */;

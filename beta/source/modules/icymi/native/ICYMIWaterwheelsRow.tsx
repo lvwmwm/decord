@@ -1,13 +1,13 @@
-// Module ID: 18980
-// Function ID: 18981
+// Module ID: 19038
+// Function ID: 19039
 // Name: ICYMIWaterwheelsRow
-// Dependencies: [19, 21, 18981, 18947, 2]
+// Dependencies: [19, 21, 19039, 19005, 2]
 // Exports: default
 
-// Module 18980 (ICYMIWaterwheelsRow)
+// Module 19038 (ICYMIWaterwheelsRow)
 import Fragment from "Fragment" /* 21 */;
-import WaterwheelsCard from "WaterwheelsCard" /* 18947 */;
-import useWaterwheelsActions from "useWaterwheelsActions" /* 18981 */;
+import WaterwheelsCard from "WaterwheelsCard" /* 19005 */;
+import useWaterwheelsActions from "useWaterwheelsActions" /* 19039 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

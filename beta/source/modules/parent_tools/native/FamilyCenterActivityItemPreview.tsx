@@ -1,10 +1,10 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 17157
+// Function ID: 17158
 // Name: FamilyCenterActivityItemPreview
-// Dependencies: [19, 17, 8900, 21, 5170, 17155, 575, 5874, 9632, 8878, 9635, 12703, 10075, 9645, 2111, 2108, 2]
+// Dependencies: [19, 17, 8900, 21, 5170, 17156, 575, 5874, 9632, 8878, 9635, 12702, 10075, 9645, 2111, 2108, 2]
 // Exports: default
 
-// Module 17156 (FamilyCenterActivityItemPreview)
+// Module 17157 (FamilyCenterActivityItemPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,7 +15,7 @@ import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8878
 import ProfileFrameConstants from "ProfileFrameConstants" /* 8900 */;
 import NameplateUtils from "NameplateUtils" /* 9632 */;
 import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9635 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17155 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17156 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;

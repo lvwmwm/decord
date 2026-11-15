@@ -1,9 +1,9 @@
-// Module ID: 16663
-// Function ID: 16664
+// Module ID: 16664
+// Function ID: 16665
 // Name: invites
-// Dependencies: [5, 5018, 5019, 6615, 1072, 1083, 16645, 9017, 9448, 11929, 16664, 1093, 11921, 2]
+// Dependencies: [5, 5018, 5019, 6615, 1072, 1083, 16646, 9017, 9448, 11928, 16665, 1093, 11920, 2]
 
-// Module 16663 (invites)
+// Module 16664 (invites)
 import Constants2 from "Constants" /* 1072 */;
 import Constants3 from "Constants" /* 6615 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;
@@ -11,7 +11,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import Constants from "Constants" /* 1083 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16645 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16646 */;
 import size from "module_2" /* 2 */;
 
 let connectedActivityLocation, userId;
@@ -47,7 +47,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -137,7 +137,7 @@ let obj2 = {
           } else {
             c2 = 0;
             connectedActivityLocation = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp48) {
           if (0 === c2) {

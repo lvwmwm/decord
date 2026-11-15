@@ -99,7 +99,7 @@ function MethodsScreen(onClose) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ function MethodsScreen(onClose) {
             closure_1_9(null);
           }
           v3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp38) {
           closure_4 = tmp38;
           if (0 === c5) {

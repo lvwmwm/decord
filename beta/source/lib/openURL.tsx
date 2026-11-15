@@ -27,7 +27,7 @@ let obj = function _openURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _openURL() {
             obj = { skipExtensionCheck, analyticsLocations: [] };
             value.default(closure_0, obj);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c4 = 3;

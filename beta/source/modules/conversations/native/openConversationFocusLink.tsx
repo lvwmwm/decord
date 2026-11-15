@@ -29,7 +29,7 @@ let obj = function _openConversationFocusLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _openConversationFocusLink() {
               const result = value.openConversationNavigator(obj);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c4 = 3;

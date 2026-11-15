@@ -1,10 +1,10 @@
-// Module ID: 12186
-// Function ID: 12187
+// Module ID: 12185
+// Function ID: 12186
 // Name: GameConsoleDeviceListActionSheet
-// Dependencies: [5, 32, 19, 17, 5926, 1072, 21, 5170, 575, 7388, 5790, 1113, 12187, 5874, 5783, 12188, 504, 12177, 38, 12179, 5406, 1108, 1187, 11564, 5420, 7415, 5424, 2]
+// Dependencies: [5, 32, 19, 17, 5926, 1072, 21, 5170, 575, 7388, 5790, 1113, 12186, 5874, 5783, 12187, 504, 12176, 38, 12178, 5406, 1108, 1187, 11563, 5420, 7415, 5424, 2]
 // Exports: default
 
-// Module 12186 (GameConsoleDeviceListActionSheet)
+// Module 12185 (GameConsoleDeviceListActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,9 +12,9 @@ import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7388 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 12177 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12187 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12188 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 12176 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12186 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12187 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -137,7 +137,7 @@ export default function GameConsoleListActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -173,7 +173,7 @@ export default function GameConsoleListActionSheet(arg0) {
             const ComponentDispatch = tmp3(c2[21]).ComponentDispatch;
             ComponentDispatch.dispatch(constants.TOGGLE_CALL_CONTROL_DRAWER);
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c2 = 3;

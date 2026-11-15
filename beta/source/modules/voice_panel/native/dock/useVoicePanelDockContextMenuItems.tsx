@@ -1,10 +1,10 @@
-// Module ID: 19619
-// Function ID: 19620
+// Module ID: 18867
+// Function ID: 18868
 // Name: useVoicePanelDockContextMenuItems
-// Dependencies: [19, 1072, 11394, 19620, 12107, 19578, 19621, 19622, 11364, 6799, 1108, 19624, 1113, 5877, 19625, 19627, 3184, 15166, 11204, 12302, 8747, 7666, 19629, 2]
+// Dependencies: [19, 1072, 11394, 18868, 12106, 18869, 18870, 18871, 11364, 6799, 1108, 18873, 1113, 5877, 18874, 18876, 3184, 15167, 11204, 12301, 8747, 7666, 18878, 2]
 // Exports: default
 
-// Module 19619 (useVoicePanelDockContextMenuItems)
+// Module 18867 (useVoicePanelDockContextMenuItems)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl6 from "intl" /* 1113 */;
@@ -12,8 +12,8 @@ import _modDef3184 from "module_3184" /* 3184 */;
 import UserPlusIcon from "UserPlusIcon" /* 5877 */;
 import SettingsIcon from "SettingsIcon" /* 7666 */;
 import ChatIcon from "ChatIcon" /* 8747 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 12302 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19624 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 12301 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18873 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -89,9 +89,9 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       const obj2 = { label: closure_6.text, IconComponent: MobilePhoneShareIcon, action: tmp14.onPress };
       tmp14 = closure_6;
       if (closure_6.isActive) {
-        MobilePhoneShareIcon = tmp15(19625).MobilePhoneXIcon;
+        MobilePhoneShareIcon = tmp15(18874).MobilePhoneXIcon;
       } else {
-        MobilePhoneShareIcon = tmp15(19627).MobilePhoneShareIcon;
+        MobilePhoneShareIcon = tmp15(18876).MobilePhoneShareIcon;
       }
       push2(obj2);
     }
@@ -116,7 +116,7 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       }
       const obj3 = { label: stringResult, IconComponent: VideoIcon, action: closure_7.onPress };
       if (closure_7.isVideoEnabled) {
-        VideoIcon = tmp28(15166).VideoSlashIcon;
+        VideoIcon = tmp28(15167).VideoSlashIcon;
       } else {
         VideoIcon = tmp28(11204).VideoIcon;
       }

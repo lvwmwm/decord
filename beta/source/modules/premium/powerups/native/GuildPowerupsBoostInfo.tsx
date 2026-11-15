@@ -1,16 +1,16 @@
-// Module ID: 14398
-// Function ID: 14399
+// Module ID: 14399
+// Function ID: 14400
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 5378, 21, 5170, 575, 14399, 10075, 5783, 2]
+// Dependencies: [17, 5378, 21, 5170, 575, 14400, 10075, 5783, 2]
 // Exports: default
 
-// Module 14398 (GuildPowerupsBoostInfo)
+// Module 14399 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5378 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import BoostGemIcon2 from "BoostGemIcon" /* 10075 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 14399 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 14400 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

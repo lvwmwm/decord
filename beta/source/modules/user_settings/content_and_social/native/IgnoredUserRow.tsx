@@ -1,10 +1,10 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17060
+// Function ID: 17061
 // Name: IgnoredUserRow
-// Dependencies: [5, 19, 1385, 21, 7585, 7420, 1113, 8854, 7071, 1187, 17056, 5790, 504, 8856, 2]
+// Dependencies: [5, 19, 1385, 21, 7585, 7420, 1113, 8854, 7071, 1187, 17057, 5790, 504, 8856, 2]
 // Exports: default
 
-// Module 17059 (IgnoredUserRow)
+// Module 17060 (IgnoredUserRow)
 import Fragment from "Fragment" /* 21 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7585 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
@@ -77,7 +77,7 @@ export default function ConnectedIgnoredUserRow(userId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -102,7 +102,7 @@ export default function ConnectedIgnoredUserRow(userId) {
             } else if (1 === tmp3) {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else if (arg0 === 1) {
               c0 = 3;
               throw value;
@@ -114,7 +114,7 @@ export default function ConnectedIgnoredUserRow(userId) {
             } else {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp7) {
             if (0 === c2) {

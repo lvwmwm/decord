@@ -1,10 +1,10 @@
-// Module ID: 19824
-// Function ID: 19825
+// Module ID: 19829
+// Function ID: 19830
 // Name: useIsInRestrictedHours
 // Dependencies: [1385, 7824, 504, 2]
 // Exports: default
 
-// Module 19824 (useIsInRestrictedHours)
+// Module 19829 (useIsInRestrictedHours)
 import get_initialized from "get initialized" /* 504 */;
 import UserStore from "UserStore" /* 1385 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;

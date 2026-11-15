@@ -1,10 +1,10 @@
-// Module ID: 12771
-// Function ID: 12772
+// Module ID: 12770
+// Function ID: 12771
 // Name: PollCreationModalActionCreators
-// Dependencies: [6831, 12772, 2118, 2]
+// Dependencies: [6831, 12771, 2118, 2]
 // Exports: closeCreatePollModal, openCreatePollModal
 
-// Module 12771 (PollCreationModalActionCreators)
+// Module 12770 (PollCreationModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/polls/native/PollCreationModa
 
 export function openCreatePollModal(merged) {
   const obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(12772, dependencyMap.paths), merged, c3);
+  obj.pushLazy(asyncRequire(12771, dependencyMap.paths), merged, c3);
 }
 export function closeCreatePollModal() {
   const obj = ModalActionCreatorsDefault;

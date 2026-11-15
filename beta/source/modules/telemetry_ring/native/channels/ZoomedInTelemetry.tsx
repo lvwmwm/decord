@@ -50,7 +50,7 @@ class ZoomedInTelemetryImpl extends BaseTelemetryExportChannel {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {

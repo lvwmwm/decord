@@ -1,17 +1,17 @@
-// Module ID: 13562
-// Function ID: 13563
+// Module ID: 13561
+// Function ID: 13562
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 5076, 5041, 5102, 1072, 13563, 1380, 11, 1282, 13556, 5921, 7806, 572, 2]
+// Dependencies: [5, 5076, 5041, 5102, 1072, 13562, 1380, 11, 1282, 13555, 5921, 7806, 572, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 13562 (GuildAutomodActionCreators)
+// Module 13561 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
 import AutomodFeedback from "AutomodFeedback" /* 7806 */;
-import DataUtils from "DataUtils" /* 13563 */;
+import DataUtils from "DataUtils" /* 13562 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildRoleStore from "GuildRoleStore" /* 5076 */;
 import GuildStore from "GuildStore" /* 5041 */;
@@ -116,7 +116,7 @@ let obj = function _validateAutomodRule() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _executeAlertAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ obj = function _executeAlertAction() {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp7) {
         c3 = 3;
         throw tmp7;

@@ -1,7 +1,7 @@
 // Module ID: 14210
 // Function ID: 14211
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 8449, 6884, 6655, 6925, 1072, 6199, 10376, 6200, 10460, 1388, 21, 8785, 7303, 10471, 5170, 1377, 575, 14211, 1493, 5767, 5746, 504, 5756, 5915, 14218, 14219, 4995, 7158, 10459, 14220, 10375, 6986, 10095, 14221, 7809, 14020, 2116, 7934, 1625, 5921, 9256, 9732, 9257, 14222, 14223, 9908, 8704, 14058, 1652, 14224, 5839, 14231, 5783, 1113, 7390, 8285, 14232, 14233, 2]
+// Dependencies: [32, 19, 17, 8449, 6884, 6655, 6925, 1072, 6199, 10376, 6200, 10460, 1388, 21, 8785, 7303, 10471, 5170, 1377, 575, 14211, 1493, 5767, 5746, 504, 5756, 5915, 14218, 14219, 4995, 7158, 10459, 14220, 10375, 6986, 10095, 14221, 7809, 14019, 2116, 7934, 1625, 5921, 9256, 9732, 9257, 14222, 14223, 9908, 8704, 14057, 1652, 14224, 5839, 14231, 5783, 1113, 7390, 8285, 14232, 14233, 2]
 
 // Module 14210 (AutocompleteWrapper)
 import nativeDefault from "native" /* 575 */;
@@ -58,7 +58,7 @@ let map1;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const application_commands_ApplicationCommandUtils = tmp(14058);
+const application_commands_ApplicationCommandUtils = tmp(14057);
 function getItemKey(type, arg1) {
   type = type.type;
   if (unpackModuleId.USER === type) {
@@ -168,7 +168,7 @@ class ACWrapper {
     let tmp38;
     let tmp46;
     let tmp95Result4;
-    const f107184 = (arg0) => {
+    const f107202 = (arg0) => {
       closure_0 = arg0;
       if (arg0 > 0) {
         let tmp = commandsDisabled;
@@ -609,7 +609,7 @@ class ACWrapper {
       let tmp35 = tmp34[1](autocompleteType);
       tmp33(null);
     }
-    const items7 = [first2, obj5.useCallback(f107184, [])];
+    const items7 = [first2, obj5.useCallback(f107202, [])];
     [tmp38, c42] = keyboardType(items7, 2);
     keyboardType(items7, 2);
     const tmp11Result9 = keyboardType(obj5.useState(null), 2);
@@ -621,7 +621,7 @@ class ACWrapper {
       tmp11Result10[1](autocompleteType);
       tmp41(null);
     }
-    const items8 = [first3, obj5.useCallback(f107184, [])];
+    const items8 = [first3, obj5.useCallback(f107202, [])];
     [tmp46, c43] = keyboardType(items8, 2);
     keyboardType(items8, 2);
     const tmp11Result12 = keyboardType(obj5.useState(null), 2);
@@ -633,7 +633,7 @@ class ACWrapper {
       let tmp51 = tmp11Result13[1](autocompleteType);
       tmp49(null);
     }
-    const items9 = [first4, obj5.useCallback(f107184, [])];
+    const items9 = [first4, obj5.useCallback(f107202, [])];
     const tmp11Result14 = keyboardType(items9, 2);
     first5 = tmp11Result14[0];
     closure_45 = tmp11Result14[1];

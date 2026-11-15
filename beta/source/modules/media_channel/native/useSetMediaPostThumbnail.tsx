@@ -1,10 +1,10 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 14787
+// Function ID: 14788
 // Name: useSetMediaPostThumbnail
 // Dependencies: [19, 7810, 8310, 563, 8313, 9901, 5406, 2]
 // Exports: default
 
-// Module 14786 (useSetMediaPostThumbnail)
+// Module 14787 (useSetMediaPostThumbnail)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import DraftStore from "DraftStore" /* 7810 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9901 */;

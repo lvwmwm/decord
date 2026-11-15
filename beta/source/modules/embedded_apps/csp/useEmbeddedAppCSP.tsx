@@ -1,10 +1,10 @@
-// Module ID: 12017
-// Function ID: 12018
+// Module ID: 12016
+// Function ID: 12017
 // Name: useEmbeddedAppCSP
 // Dependencies: [5, 11041, 504, 11043, 11042, 5828, 2]
 // Exports: default
 
-// Module 12017 (useEmbeddedAppCSP)
+// Module 12016 (useEmbeddedAppCSP)
 import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 11042 */;
 import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 11043 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -50,7 +50,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -79,7 +79,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

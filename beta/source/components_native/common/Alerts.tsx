@@ -1,20 +1,20 @@
-// Module ID: 19415
-// Function ID: 19416
+// Module ID: 19473
+// Function ID: 19474
 // Name: Alerts
-// Dependencies: [19, 17, 5171, 15981, 16570, 7593, 10288, 21, 19416, 19417, 19421, 19422, 5170, 575, 504, 1652, 5231, 5402, 1705, 5793, 5794, 6123, 6186, 6181, 7049, 6129, 558, 2]
+// Dependencies: [19, 17, 5171, 15982, 16571, 7593, 10288, 21, 19474, 19475, 19479, 19480, 5170, 575, 504, 1652, 5231, 5402, 1705, 5793, 5794, 6123, 6186, 6181, 7049, 6129, 558, 2]
 
-// Module 19415 (Alerts)
+// Module 19473 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 5231 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
 import OverlayViewDefault from "OverlayView" /* 6129 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19416 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19474 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 15981 */;
-import PermissionVADStore from "PermissionVADStore" /* 16570 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 15982 */;
+import PermissionVADStore from "PermissionVADStore" /* 16571 */;
 import SurveyStore from "SurveyStore" /* 7593 */;
 import AlertStore from "AlertStore" /* 10288 */;
 import Fragment from "Fragment" /* 21 */;
@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "description", renderKey: "isArray", props: "isArray" });
+let closure_23 = Object.freeze({ renderAlert: "Boolean", renderKey: "description", props: "isArray" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -336,7 +336,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "description", renderKey: "isArray", props: "isArray" };
+        return { renderAlert: "Boolean", renderKey: "description", props: "isArray" };
       }
     }
   });

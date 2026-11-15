@@ -1,12 +1,12 @@
-// Module ID: 18227
-// Function ID: 18228
+// Module ID: 18228
+// Function ID: 18229
 // Name: FeaturedFirstCardCoachmarkAnchor
-// Dependencies: [19, 17, 21, 18228, 2]
+// Dependencies: [19, 17, 21, 18229, 2]
 // Exports: default
 
-// Module 18227 (FeaturedFirstCardCoachmarkAnchor)
+// Module 18228 (FeaturedFirstCardCoachmarkAnchor)
 import react_native from "react-native" /* 17 */;
-import WishlistButtonCoachmarkDefault from "WishlistButtonCoachmark" /* 18228 */;
+import WishlistButtonCoachmarkDefault from "WishlistButtonCoachmark" /* 18229 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

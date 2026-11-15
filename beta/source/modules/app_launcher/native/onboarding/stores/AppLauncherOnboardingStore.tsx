@@ -1,9 +1,9 @@
-// Module ID: 12608
-// Function ID: 12609
+// Module ID: 12607
+// Function ID: 12608
 // Name: AppLauncherOnboardingStore
-// Dependencies: [1385, 11, 12606, 5839, 504, 572, 2]
+// Dependencies: [1385, 11, 12605, 5839, 504, 572, 2]
 
-// Module 12608 (AppLauncherOnboardingStore)
+// Module 12607 (AppLauncherOnboardingStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

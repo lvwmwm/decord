@@ -1,10 +1,10 @@
-// Module ID: 12000
-// Function ID: 12001
+// Module ID: 11999
+// Function ID: 12000
 // Name: stripSensitiveLoggingData
 // Dependencies: [1072, 2]
 // Exports: default
 
-// Module 12000 (stripSensitiveLoggingData)
+// Module 11999 (stripSensitiveLoggingData)
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

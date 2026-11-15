@@ -1,14 +1,14 @@
-// Module ID: 15181
-// Function ID: 15182
+// Module ID: 15182
+// Function ID: 15183
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 5112, 1072, 21, 5170, 575, 12586, 7461, 7153, 1187, 5783, 15182, 7424, 6205, 7585, 5868, 5406, 7459, 7415, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 5112, 1072, 21, 5170, 575, 12585, 7461, 7153, 1187, 5783, 15183, 7424, 6205, 7585, 5868, 5406, 7459, 7415, 1113, 2]
 // Exports: default
 
-// Module 15181 (UserProfileGameFriendActionSheet)
+// Module 15182 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12586 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12585 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -135,7 +135,7 @@ export default function UserProfileGameFriendActionSheet(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -185,7 +185,7 @@ export default function UserProfileGameFriendActionSheet(user) {
           c3 = 0;
           closure_128_5(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         memo = tmp30;

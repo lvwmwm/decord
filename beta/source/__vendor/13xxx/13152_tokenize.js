@@ -1,67 +1,62 @@
 // Module ID: 13152
 // Function ID: 13153
 // Name: tokenize
-// Dependencies: [13082]
+// Dependencies: [13081]
 
 // Module 13152 (tokenize)
-import tokenize from "tokenize" /* 13082 */;
+import tokenize from "tokenize" /* 13081 */;
 
-let items;
-let obj2;
-const Ident = tokenize.TYPE.Ident;
-const Function = tokenize.TYPE.Function;
-const Colon = tokenize.TYPE.Colon;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
+let rect;
+function consumeNumber() {
+  let num;
+  const self = this;
+  const scanner = this.scanner;
+  scanner.skipWS();
+  const consumeResult = this.consume(Number);
+  for (let num = 0; num < consumeResult.length; num = num + 1) {
+    let charCodeAtResult = consumeResult.charCodeAt(num);
+    let obj = tokenize;
+    let isDigitResult = obj.isDigit(charCodeAtResult);
+    if (!isDigitResult) {
+      isDigitResult = 46 === charCodeAtResult;
+    }
+    if (!isDigitResult) {
+      let errorResult = self.error("Unsigned number is expected", self.scanner.tokenStart - consumeResult.length + num);
+    }
+  }
+  if (0 === Number(consumeResult)) {
+    self.error("Zero number is not allowed", self.scanner.tokenStart - consumeResult.length);
+  }
+  return consumeResult;
+}
+const Number = tokenize.TYPE.Number;
+const Delim = tokenize.TYPE.Delim;
 let obj = {
-  name: "PseudoElementSelector",
-  structure: obj2,
+  name: "Ratio",
+  structure: rect,
   parse() {
-    let consumeResult;
-    let tmp5;
+    let callResult1;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(Colon);
-    this.eat(Colon);
-    if (this.scanner.tokenType === Function) {
-      let list;
-      const str = self.consumeFunctionName();
-      const formatted = str.toLowerCase();
-      const pseudo = self.pseudo;
-      if (pseudo.hasOwnProperty(formatted)) {
-        const scanner = self.scanner;
-        scanner.skipSC();
-        const scanner2 = self.scanner;
-        const obj = self.pseudo[formatted];
-        const callResult = obj.call(self);
-        scanner2.skipSC();
-        list = callResult;
-      } else {
-        list = self.createList();
-        list.push(self.Raw(self.scanner.tokenIndex, null, false));
-      }
-      self.eat(RightParenthesis);
-      tmp5 = list;
-      consumeResult = str;
-    } else {
-      consumeResult = self.consume(Ident);
-      tmp5 = null;
+    const scanner = self.scanner;
+    const callResult = consumeNumber.call(self);
+    scanner.skipWS();
+    const scanner2 = self.scanner;
+    const obj = consumeNumber;
+    if (!scanner2.isDelim(47)) {
+      self.error("Solidus is expected");
     }
-    const element = { type: "PseudoElementSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp5 };
-    return element;
+    self.eat(Delim);
+    const rect = { type: "Ratio", loc: self.getLocation(tokenStart, self.scanner.tokenStart), left: callResult, right: callResult1 };
+    callResult1 = obj.call(self);
+    return rect;
   },
-  generate(name) {
-    const self = this;
-    this.chunk("::");
-    this.chunk(name.name);
-    if (null !== name.children) {
-      self.chunk("(");
-      self.children(name);
-      self.chunk(")");
-    }
-  },
-  walkContext: "function"
+  generate(left) {
+    this.chunk(left.left);
+    this.chunk("/");
+    this.chunk(left.right);
+  }
 };
-obj2 = { name: String, children: items };
-items = [["Raw"], null];
+rect = { left: String, right: String };
 
 export default obj;

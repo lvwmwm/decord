@@ -1,10 +1,10 @@
-// Module ID: 14638
-// Function ID: 14639
+// Module ID: 14639
+// Function ID: 14640
 // Name: ForumChannel
-// Dependencies: [19, 17, 5103, 6949, 5019, 7810, 6795, 14028, 1072, 11413, 1083, 21, 5170, 575, 6810, 9944, 5783, 1113, 9991, 7572, 504, 14639, 7550, 9, 9431, 9454, 7076, 9434, 7428, 5406, 14641, 2118, 5790, 12717, 14642, 9686, 9995, 14643, 5808, 14055, 14027, 14644, 7390, 8306, 10887, 5869, 5891, 7540, 7420, 7445, 8736, 11530, 11491, 11519, 9993, 14647, 8446, 10353, 10382, 5408, 5409, 10380, 7032, 5767, 11412, 11528, 5796, 14635, 9112, 14651, 14101, 2]
+// Dependencies: [19, 17, 5103, 6949, 5019, 7810, 6795, 14027, 1072, 11412, 1083, 21, 5170, 575, 6810, 9944, 5783, 1113, 9991, 7572, 504, 14640, 7550, 9, 9431, 9454, 7076, 9434, 7428, 5406, 14642, 2118, 5790, 12716, 14643, 9686, 9995, 14644, 5808, 14054, 14026, 14645, 7390, 8306, 10887, 5869, 5891, 7540, 7420, 7445, 8736, 11529, 11490, 11518, 9993, 14648, 8446, 10353, 10382, 5408, 5409, 10380, 7032, 5767, 11411, 11527, 5796, 14636, 9112, 14652, 14101, 2]
 // Exports: default
 
-// Module 14638 (ForumChannel)
+// Module 14639 (ForumChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
@@ -20,11 +20,11 @@ import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9434
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9454 */;
 import ClientThemesOverrides from "ClientThemesOverrides" /* 9944 */;
 import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10353 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
-import ForumPostDefault from "ForumPost" /* 14027 */;
-import ForumChannelStore from "ForumChannelStore" /* 14028 */;
-import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 14055 */;
-import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 14647 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11412 */;
+import ForumPostDefault from "ForumPost" /* 14026 */;
+import ForumChannelStore from "ForumChannelStore" /* 14027 */;
+import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 14054 */;
+import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 14648 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 5103 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6949 */;
@@ -187,7 +187,7 @@ function SortAndViewOptions(channel) {
         obj.hideActionSheet(combined);
       }
     };
-    obj.openLazy(asyncRequire(14641, dependencyMap.paths), combined, obj2);
+    obj.openLazy(asyncRequire(14642, dependencyMap.paths), combined, obj2);
   }, items);
   const isMediaChannelResult = channel.isMediaChannel();
   const Button = id(5790).Button;
@@ -200,7 +200,7 @@ function SortAndViewOptions(channel) {
   } else {
     stringResult = string(t.xyYt8A);
   }
-  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(12717).ArrowsUpDownIcon, { size: "xxs" }) };
+  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(12716).ArrowsUpDownIcon, { size: "xxs" }) };
   return closure_15(Button, obj);
 }
 function TagFilter(channel) {
@@ -212,7 +212,7 @@ function TagFilter(channel) {
     onPress: function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel };
-      obj.openLazy(asyncRequire(14642, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
+      obj.openLazy(asyncRequire(14643, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
     },
     size: "sm",
     icon: closure_15(channel(9686).TagIcon, { size: "xxs" })
@@ -559,18 +559,18 @@ export default function ForumChannel(channel) {
   const tmp2Result = tmp2(tmp3[18]);
   let obj3 = { channelId: channel.id };
   searchQuery = tmp2Result.useForumSearchState(obj3).searchQuery;
-  const tmp2Result6 = tmp2(tmp3[50]);
-  showMemberVerificationGate = tmp2Result6.useShowMemberVerificationGate(channel.guild_id);
+  const tmp2Result7 = tmp2(tmp3[50]);
+  showMemberVerificationGate = tmp2Result7.useShowMemberVerificationGate(channel.guild_id);
   const items1 = [DraftStore];
   const items2 = [channel.id];
-  const tmp2Result7 = tmp2(tmp3[20]);
-  stateFromStores1 = tmp2Result7.useStateFromStores(items1, () => DraftStore.getThreadSettings(channel.id), items2);
+  const tmp2Result8 = tmp2(tmp3[20]);
+  stateFromStores1 = tmp2Result8.useStateFromStores(items1, () => DraftStore.getThreadSettings(channel.id), items2);
   const tmp11 = require("useShowChannelOptInNotice")(channel);
-  const tmp2Result8 = tmp2(tmp3[52]);
-  const pinotMemberNotice = tmp2Result8.usePinotMemberNotice(channel, "mobile_forum_channel");
+  const tmp2Result9 = tmp2(tmp3[52]);
+  const pinotMemberNotice = tmp2Result9.usePinotMemberNotice(channel, "mobile_forum_channel");
   const items3 = [channel.id];
-  const tmp2Result9 = tmp2(tmp3[53]);
-  const isForumChannelSearchActive = tmp2Result9.useIsForumChannelSearchActive(channel.id);
+  const tmp2Result10 = tmp2(tmp3[53]);
+  const isForumChannelSearchActive = tmp2Result10.useIsForumChannelSearchActive(channel.id);
   const effect = searchQuery.useEffect(() => {
     let id;
     return () => {
@@ -668,10 +668,11 @@ export default function ForumChannel(channel) {
     tmp17 = !canStartThread && !showMemberVerificationGate;
   }
   const insets = tmp7(tmp3[63])({ includeKeyboardHeight: true }).insets;
-  const tmp2Result10 = tmp2(tmp3[15]);
-  const clientThemesOverride = tmp2Result10.useClientThemesOverride(tmp.noHeight);
-  const tmp21 = tmp7(tmp3[64])() > 0;
-  if (tmp21) {
+  const tmp2Result11 = tmp2(tmp3[15]);
+  const clientThemesOverride = tmp2Result11.useClientThemesOverride(tmp.noHeight);
+  const tmp2Result12 = tmp2(tmp3[64]);
+  const chatDockHeight = tmp2Result12.useChatDockHeight();
+  if (chatDockHeight > 0) {
     const _Math = Math;
     bottom = Math.max(tmp22, insets.bottom);
   } else {
@@ -713,7 +714,7 @@ export default function ForumChannel(channel) {
   const obj12 = { style: tmp.container, children: closure_15(tmp37, obj13) };
   obj13 = { channel, paddingBottom: bottom2 + require("native").space.PX_16, searchQuery };
   tmp37 = ForumChannelContent;
-  if (tmp21) {
+  if (chatDockHeight > 0) {
     bottom2 = sum + tmp2(tmp3[66]).FAB_BUTTON_SIZE;
   } else {
     bottom2 = insets.bottom;

@@ -1,10 +1,10 @@
-// Module ID: 11973
-// Function ID: 11974
+// Module ID: 11972
+// Function ID: 11973
 // Name: UserTile
-// Dependencies: [32, 19, 17, 6223, 11974, 502, 5019, 2130, 1072, 5837, 5929, 21, 5170, 575, 5167, 504, 8928, 1187, 11975, 5783, 1113, 11960, 11962, 11976, 11977, 11978, 11979, 9348, 6940, 11400, 11980, 11168, 11950, 5452, 11981, 2]
+// Dependencies: [32, 19, 17, 6223, 11973, 502, 5019, 2130, 1072, 5837, 5929, 21, 5170, 575, 5167, 504, 8928, 1187, 11974, 5783, 1113, 11959, 11961, 11975, 11976, 11977, 11978, 9348, 6940, 11400, 11979, 11168, 11949, 5452, 11980, 2]
 // Exports: default
 
-// Module 11973 (UserTile)
+// Module 11972 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,13 +13,13 @@ import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import CallConstants from "CallConstants" /* 5837 */;
 import Constants2 from "Constants" /* 5929 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11974 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11975 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11976 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11977 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11978 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11979 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11980 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11973 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11974 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11975 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11976 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11977 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11978 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11979 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SoundboardStore from "SoundboardStore" /* 6223 */;

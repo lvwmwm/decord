@@ -1,14 +1,14 @@
-// Module ID: 13576
-// Function ID: 13577
+// Module ID: 13575
+// Function ID: 13576
 // Name: ClassificationDetailModal
-// Dependencies: [19, 21, 5170, 575, 6831, 7097, 13577, 13612, 13613, 13579, 1500, 7264, 1113, 2]
+// Dependencies: [19, 21, 5170, 575, 6831, 7097, 13576, 13611, 13612, 13578, 1500, 7264, 1113, 2]
 // Exports: default
 
-// Module 13576 (ClassificationDetailModal)
+// Module 13575 (ClassificationDetailModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import NavigatorHeader from "NavigatorHeader" /* 7097 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13579 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13578 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ export default function ClassificationDetailModal(classificationId) {
   }
   let tmp = closure_7();
   dependencyMap = tmp;
-  let obj = classificationId(13613);
+  let obj = classificationId(13612);
   const safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {

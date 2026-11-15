@@ -1,17 +1,17 @@
-// Module ID: 15163
-// Function ID: 15164
+// Module ID: 15164
+// Function ID: 15165
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 6223, 2130, 5102, 5925, 1072, 1083, 21, 5170, 8865, 504, 6212, 9397, 12147, 6079, 7469, 1113, 9355, 12170, 15164, 14373, 1252, 15166, 11204, 7185, 5783, 12586, 15004, 8279, 5406, 9382, 9378, 2]
+// Dependencies: [19, 17, 6223, 2130, 5102, 5925, 1072, 1083, 21, 5170, 8865, 504, 6212, 9397, 12146, 6079, 7469, 1113, 9355, 12169, 15165, 14374, 1252, 15167, 11204, 7185, 5783, 12585, 15005, 8279, 5406, 9382, 9378, 2]
 // Exports: default
 
-// Module 15163 (UserProfileVoiceSettings)
+// Module 15164 (UserProfileVoiceSettings)
 import react_native from "react-native" /* 17 */;
 import Constants2 from "Constants" /* 1083 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 6079 */;
 import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9382 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12586 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12585 */;
 import react from "react" /* 19 */;
 import SoundboardStore from "SoundboardStore" /* 6223 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
@@ -304,7 +304,7 @@ function CurrentUserVoiceSettings(channel) {
       if (stateFromStores) {
         MicrophoneIcon = tmp2(9355).MicrophoneSlashIcon;
       } else {
-        MicrophoneIcon = tmp2(12170).MicrophoneIcon;
+        MicrophoneIcon = tmp2(12169).MicrophoneIcon;
       }
       obj6 = { children: closure_11(UserProfileFormRow, obj5, "mute") };
       tmp9Result = tmp9(tmp6Result, obj4);

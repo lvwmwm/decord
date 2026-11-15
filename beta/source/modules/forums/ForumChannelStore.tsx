@@ -1,10 +1,10 @@
-// Module ID: 14028
-// Function ID: 14029
+// Module ID: 14027
+// Function ID: 14028
 // Name: ForumChannelStore
 // Dependencies: [5019, 5029, 5028, 5030, 1259, 38, 8437, 560, 504, 2]
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 14028 (ForumChannelStore)
+// Module 14027 (ForumChannelStore)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 5028 */;
 import ForumLayout from "ForumLayout" /* 5029 */;

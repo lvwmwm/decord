@@ -1,17 +1,17 @@
-// Module ID: 11446
-// Function ID: 11447
+// Module ID: 11445
+// Function ID: 11446
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 10955, 1072, 21, 5170, 575, 11447, 5783, 1113, 11452, 7663, 6831, 8462, 1187, 1627, 563, 11441, 6626, 6631, 7264, 2]
+// Dependencies: [19, 17, 10955, 1072, 21, 5170, 575, 11446, 5783, 1113, 11451, 7663, 6831, 8462, 1187, 1627, 563, 11440, 6626, 6631, 7264, 2]
 // Exports: default
 
-// Module 11446 (MoreTipsModal)
+// Module 11445 (MoreTipsModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6626 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11441 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11447 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11440 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11446 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10955 */;
@@ -30,7 +30,7 @@ let obj5;
 let tmp;
 let tmp6;
 const MetricEvents = tmp(6631);
-const WasThisHelpfulSectionDefault = tmp6(11452);
+const WasThisHelpfulSectionDefault = tmp6(11451);
 function MoreTipsModalScreen(learnMore) {
   let actionItems;
   let channelId;

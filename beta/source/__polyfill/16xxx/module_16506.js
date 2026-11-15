@@ -1,26 +1,20 @@
 // Module ID: 16506
 // Function ID: 16507
-// Dependencies: [16495, 16470]
+// Dependencies: [16474, 16475, 16507]
 
 // Module 16506
-import _mod16470 from "module_16470" /* 16470 */;
-import module_16495 from "module_16495" /* 16495 */;
+import _mod16475 from "module_16475" /* 16475 */;
+import _mod16507 from "module_16507" /* 16507 */;
+import getOwnPropertyDescriptor from "module_16474" /* 16474 */;
 
-let _moduleResult = module_16495(_mod16470.document);
-if (_moduleResult) {
-  const _module1 = module_16495;
-  _moduleResult = _module1(_mod16470.document.createElement);
-}
-let c2 = _moduleResult;
-
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod16470.document;
-    element = _document.createElement(arg0);
-  } else {
-    element = {};
-  }
-  return element;
+const f68512 = () => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty(_mod16507("div"), "a", obj).a;
 };
+!getOwnPropertyDescriptor && !_mod16475(f68512);
+
+export default !getOwnPropertyDescriptor && !_mod16475(f68512);

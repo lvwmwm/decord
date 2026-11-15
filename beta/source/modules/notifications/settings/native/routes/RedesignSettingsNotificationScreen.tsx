@@ -1,20 +1,20 @@
-// Module ID: 18329
-// Function ID: 18330
+// Module ID: 18330
+// Function ID: 18331
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 17832, 8536, 21, 18330, 1113, 2992, 17833, 11717, 17835, 5753, 18331, 18335, 2]
+// Dependencies: [19, 17833, 8536, 21, 18331, 1113, 2992, 17834, 11716, 17836, 5753, 18332, 18336, 2]
 
-// Module 18329 (RedesignSettingsNotificationScreen)
+// Module 18330 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2992 from "module_2992" /* 2992 */;
 import useMountEffectDefault from "useMountEffect" /* 5753 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17832 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17833 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17835 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18330 */;
-import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18335 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17833 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17834 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17836 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18331 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18336 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 18727
-// Function ID: 18728
+// Module ID: 18728
+// Function ID: 18729
 // Name: GuildsBarConstants
 // Dependencies: [5756, 575, 2]
 // Exports: useGuildWrapperSize
 
-// Module 18727 (GuildsBarConstants)
+// Module 18728 (GuildsBarConstants)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5756 */;
 import size from "module_2" /* 2 */;

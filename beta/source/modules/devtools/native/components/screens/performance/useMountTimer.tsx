@@ -1,10 +1,10 @@
-// Module ID: 18105
-// Function ID: 18106
+// Module ID: 18106
+// Function ID: 18107
 // Name: useMountTimer
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 18105 (useMountTimer)
+// Module 18106 (useMountTimer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

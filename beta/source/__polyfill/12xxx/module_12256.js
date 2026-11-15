@@ -1,32 +1,93 @@
 // Module ID: 12256
 // Function ID: 12257
-// Dependencies: [5214, 12257, 12258, 12259, 12260]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 5214]
 
 // Module 12256
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import MemoryRouter from "MemoryRouter" /* 5214 */;
-import _modDef12257 from "module_12257" /* 12257 */;
-import _modDef12258 from "module_12258" /* 12258 */;
-import _modDef12259 from "module_12259" /* 12259 */;
-import NativeRouterDefault from "NativeRouter" /* 12260 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
 
-const MemoryRouter_export = MemoryRouter.MemoryRouter;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export { MemoryRouter_export as MemoryRouter };
-export const Prompt = MemoryRouter.Prompt;
-export const Redirect = MemoryRouter.Redirect;
-export const Route = MemoryRouter.Route;
-export const Router = MemoryRouter.Router;
-export const StaticRouter = MemoryRouter.StaticRouter;
-export const Switch = MemoryRouter.Switch;
-export const generatePath = MemoryRouter.generatePath;
-export const matchPath = MemoryRouter.matchPath;
-export const withRouter = MemoryRouter.withRouter;
-export const useHistory = MemoryRouter.useHistory;
-export const useLocation = MemoryRouter.useLocation;
-export const useParams = MemoryRouter.useParams;
-export const useRouteMatch = MemoryRouter.useRouteMatch;
-export const BackButton = _modDef12257;
-export const AndroidBackButton = _modDef12257;
-export const DeepLinking = _modDef12258;
-export const Link = _modDef12259;
-export const NativeRouter = NativeRouterDefault;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const BackHandler = react_native.BackHandler;
+const jsx = Fragment.jsx;
+class BackButton {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    _classCallCheck(this, BackButton);
+    const items1 = [...items];
+    const obj = _getPrototypeOf(BackButton);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.handleBack = () => {
+      let flag = 0 !== closure_0.history.index;
+      if (flag) {
+        const history = closure_0.history;
+        history.goBack();
+        flag = true;
+      }
+      return flag;
+    };
+    return tmp3Result;
+  }
+}
+_inherits(BackButton, react.Component);
+const entry = {
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    const listener = BackHandler.addEventListener("hardwareBackPress", this.handleBack);
+  }
+};
+let items = [
+  entry,
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      const removed = BackHandler.removeEventListener("hardwareBackPress", this.handleBack);
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      return jsx(MemoryRouter.__HistoryContext.Consumer, {
+        children(history) {
+          self.history = history;
+          return self.props.children || null;
+        }
+      });
+    }
+  }
+];
+
+export default _createClass(BackButton, items);

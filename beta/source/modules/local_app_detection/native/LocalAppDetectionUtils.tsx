@@ -1,11 +1,11 @@
-// Module ID: 15944
-// Function ID: 15945
+// Module ID: 15945
+// Function ID: 15946
 // Name: LocalAppDetectionUtils
-// Dependencies: [5, 6829, 1072, 15943, 1357, 8005, 1252, 572, 2]
+// Dependencies: [5, 6829, 1072, 15944, 1357, 8005, 1252, 572, 2]
 // Exports: detectLocalApps
 
-// Module 15944 (LocalAppDetectionUtils)
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15943 */;
+// Module 15945 (LocalAppDetectionUtils)
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15944 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConsentStore from "ConsentStore" /* 6829 */;
 import Constants from "Constants" /* 1072 */;
@@ -67,7 +67,7 @@ let obj = function _detectLocalApps() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -114,7 +114,7 @@ let obj = function _detectLocalApps() {
               let obj7 = { type: "LOCAL_APP_DETECTION_COMPLETE", result };
               let dispatchResult = obj6.dispatch(obj7);
               c8 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp5) {
             c6 = 0;

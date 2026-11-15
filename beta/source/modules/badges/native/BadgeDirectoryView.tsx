@@ -1,21 +1,21 @@
-// Module ID: 11632
-// Function ID: 11633
+// Module ID: 11631
+// Function ID: 11632
 // Name: BadgeDirectoryView
-// Dependencies: [19, 17, 11633, 1385, 8867, 1072, 21, 5170, 575, 1493, 5783, 9105, 1113, 11623, 11625, 1627, 504, 8872, 11634, 11628, 11635, 11630, 7668, 11637, 5790, 7048, 2]
+// Dependencies: [19, 17, 11632, 1385, 8867, 1072, 21, 5170, 575, 1493, 5783, 9105, 1113, 11622, 11624, 1627, 504, 8872, 11633, 11627, 11634, 11629, 7668, 11636, 5790, 7048, 2]
 // Exports: default
 
-// Module 11632 (BadgeDirectoryView)
+// Module 11631 (BadgeDirectoryView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8872 */;
 import native from "native" /* 9105 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11623 */;
-import BadgeUtils from "BadgeUtils" /* 11634 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11637 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11622 */;
+import BadgeUtils from "BadgeUtils" /* 11633 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11636 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11633 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11632 */;
 import UserStore from "UserStore" /* 1385 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8867 */;
 import Fragment from "Fragment" /* 21 */;
@@ -156,7 +156,7 @@ export default function BadgeDirectoryView(arg0) {
   let badgeIndicatorIds;
   let tmp = targetUsername;
   let tmp2 = dependencyMap;
-  let obj = targetUsername(11625);
+  let obj = targetUsername(11624);
   let isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: "BadgeDirectoryView" });
   const tmp4 = closure_12();
   const diff = stateFromStores(1493)().width - 2 * stateFromStores(575).space.PX_16;
@@ -232,13 +232,13 @@ export default function BadgeDirectoryView(arg0) {
   ({ owned, earnable } = memo);
   let tmp36Result = !tmp8;
   let someResult = tmp36Result;
-  const useIsBadgeUnreadStateEnabled = tmp(11628).useIsBadgeUnreadStateEnabled;
-  tmp(11628);
+  const useIsBadgeUnreadStateEnabled = tmp(11627).useIsBadgeUnreadStateEnabled;
+  tmp(11627);
   if (!(null != targetUserId && targetUserId !== stateFromStores)) {
     someResult = stateFromStoresArray.some((has_updates) => true === has_updates.has_updates);
   }
   isBadgeUnreadStateEnabled = useIsBadgeUnreadStateEnabled({ location: "BadgeDirectoryView", hasUnread: someResult });
-  const tmpResult8 = tmp(11635);
+  const tmpResult8 = tmp(11634);
   badgeIndicatorIds = tmpResult8.useBadgeDirectoryBadgeIndicators({ badges: stateFromStoresArray, enabled: tmp36Result }).badgeIndicatorIds;
   const items11 = [stateFromStoresArray, isBadgeUnreadStateEnabled, tmp8, badgeIndicatorIds];
   const memo1 = obj8.useMemo(function() {

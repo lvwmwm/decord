@@ -1,10 +1,10 @@
-// Module ID: 19443
-// Function ID: 19444
+// Module ID: 19501
+// Function ID: 19502
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8867, 5016, 21, 5170, 575, 10768, 5406, 5347, 5420, 10770, 5783, 1113, 2760, 5790, 10709, 7445, 5874, 19444, 13629, 504, 8859, 2]
+// Dependencies: [19, 17, 8867, 5016, 21, 5170, 575, 10768, 5406, 5347, 5420, 10770, 5783, 1113, 2760, 5790, 10709, 7445, 5874, 19502, 13628, 504, 8859, 2]
 // Exports: default
 
-// Module 19443 (GiftingBadgesCoachmarkActionSheet)
+// Module 19501 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,7 +17,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
 import BadgeId from "BadgeId" /* 8859 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10709 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10770 */;
-import _modDef19444 from "module_19444" /* 19444 */;
+import _modDef19502 from "module_19502" /* 19502 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8867 */;
 import Fragment from "Fragment" /* 21 */;
@@ -147,7 +147,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   const obj3 = { style: tmp.graphicContainer, children: closure_7(tmp4, obj4) };
   const BottomSheet = markAsDismissed(5420).BottomSheet;
   obj4 = { source: obj5, style: tmp.newBadgeImage };
-  obj5 = { uri: _modDef19444 };
+  obj5 = { uri: _modDef19502 };
   tmp4 = FastImageDefault;
   items2 = [closure_7(View, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };
@@ -165,7 +165,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   Button = markAsDismissed(5790).Button;
   intl3 = markAsDismissed(1113).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = markAsDismissed(13629).GiftIcon;
+  GiftIcon = markAsDismissed(13628).GiftIcon;
   items2[2] = closure_7(View, obj9);
   return closure_7(BottomSheet, obj);
 }

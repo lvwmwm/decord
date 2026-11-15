@@ -1,10 +1,10 @@
-// Module ID: 18072
-// Function ID: 18073
+// Module ID: 18073
+// Function ID: 18074
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1231, 14407, 5041, 5203, 18073, 1072, 21, 5170, 575, 1282, 2166, 8569, 14335, 17975, 7462, 14341, 5000, 5003, 1627, 504, 5783, 7159, 7071, 2]
+// Dependencies: [5, 19, 17, 1231, 14408, 5041, 5203, 18074, 1072, 21, 5170, 575, 1282, 2166, 8569, 14336, 17976, 7462, 14342, 5000, 5003, 1627, 504, 5783, 7159, 7071, 2]
 // Exports: default
 
-// Module 18072 (DevToolsGuildPowerupsScreen)
+// Module 18073 (DevToolsGuildPowerupsScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -13,16 +13,16 @@ import _modDef2166 from "module_2166" /* 2166 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
 import dismissible_content from "dismissible_content" /* 5003 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7462 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 14341 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17975 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 14342 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17976 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14407 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14408 */;
 import GuildStore from "GuildStore" /* 5041 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 18073 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 18074 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ let obj = function _setWarningBoosts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -104,7 +104,7 @@ let obj = function _setWarningBoosts() {
           const obj2 = closure_132_0(closure_132_2[15]);
           const guildBoostEntitlements = obj2.fetchGuildBoostEntitlements(closure_0, true);
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         c6 = 3;
@@ -127,7 +127,7 @@ obj = function _sendPowerupsSystemMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -158,7 +158,7 @@ obj = function _sendPowerupsSystemMessage() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c1 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14475
+// Function ID: 14476
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 5019, 1072, 5869, 1113, 7518, 5406, 7004, 5206, 14475, 2118, 2]
+// Dependencies: [5, 32, 19, 5019, 1072, 5869, 1113, 7518, 5406, 7004, 5206, 14476, 2118, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 14474 (useJoinRequestButtonActions)
+// Module 14475 (useJoinRequestButtonActions)
 import Constants from "Constants" /* 1072 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
@@ -59,7 +59,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cal
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -126,7 +126,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cal
             obj4.hideActionSheet();
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp49) {
           onDismiss = tmp49;
           if (0 === c3) {
@@ -157,7 +157,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cal
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(14475, dependencyMap.paths);
+        const tmp10 = asyncRequire(14476, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),
@@ -181,7 +181,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cal
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -292,7 +292,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cal
           obj6.hideActionSheet();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp56) {
         onDismiss = tmp56;
         if (0 === c3) {

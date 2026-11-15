@@ -1,19 +1,18 @@
 // Module ID: 16273
 // Function ID: 16274
-// Dependencies: [16270]
+// Dependencies: [16271]
 
 // Module 16273
-import _mod16270 from "module_16270" /* 16270 */;
-
-let set;
+import _mod16271 from "module_16271" /* 16271 */;
 
 
-export default (arg0, arg1) => {
-  set = new _mod16270(arg0, arg1).set;
-  return set.map((arr) => {
-    const mapped = arr.map((value) => value.value);
-    const str = mapped.join(" ");
-    const str2 = str.trim();
-    return str2.split(" ");
-  });
+export default function(arg0, arg1, arg2) {
+  try {
+    const self = this;
+    const self2 = this;
+    const tmp5 = new _mod16271(arg1, arg2);
+    return tmp5.test(arg0);
+  } catch (err) {
+    return false;
+  }
 };

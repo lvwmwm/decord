@@ -1,9 +1,9 @@
-// Module ID: 18299
-// Function ID: 18300
+// Module ID: 18300
+// Function ID: 18301
 // Name: DoubleTapEmojiSetting
-// Dependencies: [5, 19, 8536, 1072, 1388, 21, 5170, 575, 4995, 8530, 1411, 7396, 10094, 1252, 7445, 10106, 11717, 1113, 2]
+// Dependencies: [5, 19, 8536, 1072, 1388, 21, 5170, 575, 4995, 8530, 1411, 7396, 10094, 1252, 7445, 10106, 11716, 1113, 2]
 
-// Module 18299 (DoubleTapEmojiSetting)
+// Module 18300 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -17,7 +17,7 @@ import SettingsConstants from "SettingsConstants" /* 8536 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -102,7 +102,7 @@ let obj3 = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -141,7 +141,7 @@ let obj3 = {
               const obj = emoji(closure_2[15]);
               const result = obj.showDoubleTapEmojiUpdatedToast(obj16);
               constants = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             constants = 3;

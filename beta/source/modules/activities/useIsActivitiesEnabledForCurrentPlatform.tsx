@@ -1,10 +1,10 @@
-// Module ID: 11915
-// Function ID: 11916
+// Module ID: 11914
+// Function ID: 11915
 // Name: useIsActivitiesEnabledForCurrentPlatform
 // Dependencies: [6116, 2]
 // Exports: getIsActivitiesEnabledForCurrentPlatform, useIsActivitiesEnabledForCurrentPlatform
 
-// Module 11915 (useIsActivitiesEnabledForCurrentPlatform)
+// Module 11914 (useIsActivitiesEnabledForCurrentPlatform)
 import shared_PlatformUtils from "shared/PlatformUtils" /* 6116 */;
 import size from "module_2" /* 2 */;
 

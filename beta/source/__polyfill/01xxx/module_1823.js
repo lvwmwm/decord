@@ -592,8 +592,8 @@ let items = [
       let combined;
       let current;
       let items;
-      const f83636 = (item) => !(item && "viewDescriptors" in item);
-      const f83637 = (viewDescriptors) => {
+      const f83652 = (item) => !(item && "viewDescriptors" in item);
+      const f83653 = (viewDescriptors) => {
         let tmp = viewDescriptors;
         if (Array.isArray(viewDescriptors)) {
           let tmp2 = viewDescriptors;
@@ -601,8 +601,8 @@ let items = [
             let mapped;
             const _Array = Array;
             if (Array.isArray(viewDescriptors)) {
-              const found = viewDescriptors.filter(f83636);
-              mapped = found.map(f83637);
+              const found = viewDescriptors.filter(f83652);
+              mapped = found.map(f83653);
             } else {
               viewDescriptors = undefined;
               if (viewDescriptors != null) {
@@ -638,8 +638,8 @@ let items = [
             let mapped;
             let _Array = Array;
             if (Array.isArray(style1)) {
-              let found = style1.filter(f83636);
-              mapped = found.map(f83637);
+              let found = style1.filter(f83652);
+              mapped = found.map(f83653);
             } else {
               let viewDescriptors;
               if (style1 != null) {

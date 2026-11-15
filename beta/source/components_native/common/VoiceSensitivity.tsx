@@ -1,10 +1,10 @@
-// Module ID: 12145
-// Function ID: 12146
+// Module ID: 12144
+// Function ID: 12145
 // Name: VoiceSensitivity
 // Dependencies: [5, 32, 19, 17, 2130, 6844, 2117, 1072, 8042, 21, 5170, 575, 5167, 1493, 504, 8059, 5950, 5179, 1113, 1187, 8279, 8959, 1377, 2]
 // Exports: default
 
-// Module 12145 (VoiceSensitivity)
+// Module 12144 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -140,7 +140,7 @@ export default function VoiceSensitivity(auto) {
             obj = { value, done: true };
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -175,7 +175,7 @@ export default function VoiceSensitivity(auto) {
                 mediaEngine.on(_true(first[16]).MediaEngineEvent.VoiceActivity, closure_1_12);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp16) {
             c2 = 3;

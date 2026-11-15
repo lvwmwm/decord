@@ -1,17 +1,17 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 12993
+// Function ID: 12994
 // Name: ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 12349, 8757, 5783, 1113, 4026, 5874, 5232, 7073, 7088, 7161, 12992, 8131, 5894, 12995, 9102, 12347, 8940, 12997, 5790, 12314, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 12348, 8757, 5783, 1113, 4026, 5874, 5232, 7073, 7088, 7161, 12991, 8131, 5894, 12994, 9102, 12346, 8940, 12996, 5790, 12313, 2]
 // Exports: default
 
-// Module 12994 (ConjureImageOptions)
+// Module 12993 (ConjureImageOptions)
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import react_native from "react-native" /* 5232 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import openMediaModal from "openMediaModal" /* 8940 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12349 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 12992 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12348 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 12991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -251,7 +251,7 @@ function ImageOptionTile(option) {
       if (null != onRemove) {
         MaximizeIcon = tmp2(5894).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(12995).MaximizeIcon;
+        MaximizeIcon = tmp2(12994).MaximizeIcon;
       }
       obj19 = { icon: tmp13(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef4026.JGjZMs, obj20) };
       if (null == onRemove) {
@@ -498,7 +498,7 @@ export default function ConjureImageOptions(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -538,7 +538,7 @@ export default function ConjureImageOptions(projectId) {
             onUpload(obj.uploadConjurePickedFile(closure_129_0, closure_1));
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         c3 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 16067
-// Function ID: 16068
+// Module ID: 16068
+// Function ID: 16069
 // Name: ShareUtils
 // Dependencies: [5, 7810, 5175, 5869, 5891, 9901, 8446, 8313, 8311, 7933, 9888, 7745, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 16067 (ShareUtils)
+// Module 16068 (ShareUtils)
 import MessageConstants from "MessageConstants" /* 5175 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
@@ -31,7 +31,7 @@ let obj = function _sendShareMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

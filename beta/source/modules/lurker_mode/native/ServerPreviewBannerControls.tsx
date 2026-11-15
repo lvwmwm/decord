@@ -1,10 +1,10 @@
-// Module ID: 18604
-// Function ID: 18605
+// Module ID: 18605
+// Function ID: 18606
 // Name: ServerPreviewBannerControls
-// Dependencies: [19, 17, 1072, 21, 5170, 575, 7627, 8131, 7102, 1113, 18605, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 575, 7627, 8131, 7102, 1113, 18606, 2]
 // Exports: default
 
-// Module 18604 (ServerPreviewBannerControls)
+// Module 18605 (ServerPreviewBannerControls)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,7 +12,7 @@ import intl2 from "intl" /* 1113 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7102 */;
 import transitionToGuild from "transitionToGuild" /* 7627 */;
 import IconButton2 from "IconButton" /* 8131 */;
-import ServerPreviewPillDefault from "ServerPreviewPill" /* 18605 */;
+import ServerPreviewPillDefault from "ServerPreviewPill" /* 18606 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

@@ -1,9 +1,9 @@
-// Module ID: 11460
-// Function ID: 11461
+// Module ID: 11459
+// Function ID: 11460
 // Name: BlockConfirmationActionSheet
-// Dependencies: [5, 32, 19, 17, 5019, 5112, 1385, 7586, 11459, 1072, 7587, 21, 5170, 575, 8860, 1113, 5893, 7159, 7071, 1187, 1627, 7420, 7445, 10299, 504, 8856, 5420, 1252, 5424, 8875, 5783, 6205, 7196, 5406, 11461, 2118, 1260, 5790, 7585, 5422, 7600, 7601, 2185, 5866, 2]
+// Dependencies: [5, 32, 19, 17, 5019, 5112, 1385, 7586, 11458, 1072, 7587, 21, 5170, 575, 8860, 1113, 5893, 7159, 7071, 1187, 1627, 7420, 7445, 10299, 504, 8856, 5420, 1252, 5424, 8875, 5783, 6205, 7196, 5406, 11460, 2118, 1260, 5790, 7585, 5422, 7600, 7601, 2185, 5866, 2]
 
-// Module 11460 (BlockConfirmationActionSheet)
+// Module 11459 (BlockConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
@@ -27,7 +27,7 @@ import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11459 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11458 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -277,7 +277,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
               obj.track(constants3.USER_REMEDIATION_ACTION, obj2);
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
               ActionSheetActionCreatorsDefault;
-              const tmp3 = asyncRequire(11461, dependencyMap.paths);
+              const tmp3 = asyncRequire(11460, dependencyMap.paths);
               const obj3 = { userId, channelId, onBlock: dependencyMap, onSuccess: _slicedToArray, onIgnore: _asyncToGenerator, impressionName: discord_common_AnalyticsUtils.ImpressionNames.IGNORE_USER_CONFIRMATION };
               openLazy(tmp3, authStore2, obj3, "replaceTopSheet");
             },
@@ -320,7 +320,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -361,7 +361,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
                 const obj3 = c1(c2[33]);
                 obj3.hideActionSheet(closure_1_11);
                 c2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } catch (tmp23) {
                 c2 = 3;
                 throw tmp23;

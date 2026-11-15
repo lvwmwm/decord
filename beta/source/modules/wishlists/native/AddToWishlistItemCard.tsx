@@ -1,10 +1,10 @@
-// Module ID: 15306
-// Function ID: 15307
+// Module ID: 15307
+// Function ID: 15308
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5170, 575, 15304, 9583, 9652, 1252, 9595, 5869, 1113, 9584, 9580, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5170, 575, 15305, 9583, 9652, 1252, 9595, 5869, 1113, 9584, 9580, 2]
 // Exports: default
 
-// Module 15306 (AddToWishlistItemCard)
+// Module 15307 (AddToWishlistItemCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -85,7 +85,7 @@ export default function AddToWishlistItemCard(sku) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -150,7 +150,7 @@ export default function AddToWishlistItemCard(sku) {
           closure_128_7(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp33) {
         analyticsLocations = tmp33;
         if (0 === c3) {

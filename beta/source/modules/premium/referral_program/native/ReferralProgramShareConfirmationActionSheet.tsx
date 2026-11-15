@@ -1,10 +1,10 @@
-// Module ID: 15641
-// Function ID: 15642
+// Module ID: 15642
+// Function ID: 15643
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1072, 21, 5170, 575, 5226, 7742, 1187, 5783, 1113, 5790, 8747, 5406, 7582, 2185, 5420, 7415, 6191, 15642, 2]
+// Dependencies: [17, 1072, 21, 5170, 575, 5226, 7742, 1187, 5783, 1113, 5790, 8747, 5406, 7582, 2185, 5420, 7415, 6191, 15643, 2]
 // Exports: default
 
-// Module 15641 (ReferralProgramShareConfirmationActionSheet)
+// Module 15642 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -131,7 +131,7 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   const formatResult = format(AwGSWl, obj);
   const BottomSheet = tmp5(5420).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(15642).FistBumpSpotIllustration, {}) };
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(15643).FistBumpSpotIllustration, {}) };
   Stack = tmp5(6191).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };

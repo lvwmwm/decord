@@ -1,10 +1,10 @@
-// Module ID: 14289
-// Function ID: 14290
+// Module ID: 14290
+// Function ID: 14291
 // Name: useIsStricterMessageRequests
 // Dependencies: [14249, 2]
 // Exports: default
 
-// Module 14289 (useIsStricterMessageRequests)
+// Module 14290 (useIsStricterMessageRequests)
 import RegionalTeenUtils from "RegionalTeenUtils" /* 14249 */;
 import size from "module_2" /* 2 */;
 

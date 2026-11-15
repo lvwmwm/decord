@@ -1,10 +1,10 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 14670
+// Function ID: 14671
 // Name: useFavoritesGuildChannelFilter
 // Dependencies: [19, 5019, 5102, 5022, 1072, 504, 9248, 5044, 1380, 2]
 // Exports: default
 
-// Module 14669 (useFavoritesGuildChannelFilter)
+// Module 14670 (useFavoritesGuildChannelFilter)
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import FavoritesUtils from "FavoritesUtils" /* 5044 */;

@@ -1,10 +1,10 @@
-// Module ID: 18038
-// Function ID: 18039
+// Module ID: 18039
+// Function ID: 18040
 // Name: ClipboardCopyInput
 // Dependencies: [5, 19, 17, 2117, 1072, 21, 5170, 504, 7235, 7303, 7451, 7181, 2]
 // Exports: default
 
-// Module 18038 (ClipboardCopyInput)
+// Module 18039 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
@@ -71,7 +71,7 @@ export default function ClipboardCopyInput(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -149,7 +149,7 @@ export default function ClipboardCopyInput(arg0) {
                 }
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp26) {
             c3 = 3;

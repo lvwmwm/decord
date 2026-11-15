@@ -1,9 +1,9 @@
-// Module ID: 18412
-// Function ID: 18413
+// Module ID: 18413
+// Function ID: 18414
 // Name: AuthManager
-// Dependencies: [5, 17, 14239, 1072, 8042, 14541, 2120, 572, 5015, 8065, 18413, 1377, 14242, 9231, 14624, 18419, 14540, 7627, 15527, 2]
+// Dependencies: [5, 17, 14239, 1072, 8042, 14542, 2120, 572, 5015, 8065, 18414, 1377, 14242, 9231, 14625, 18420, 14541, 7627, 15528, 2]
 
-// Module 18412 (AuthManager)
+// Module 18413 (AuthManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -11,11 +11,11 @@ import transitionToGuild from "transitionToGuild" /* 7627 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9231 */;
 import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14239 */;
-import NUFActionCreators from "NUFActionCreators" /* 14540 */;
-import NUFConstants from "NUFConstants" /* 14541 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14624 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15527 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18419 */;
+import NUFActionCreators from "NUFActionCreators" /* 14541 */;
+import NUFConstants from "NUFConstants" /* 14542 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14625 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15528 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18420 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
@@ -60,7 +60,7 @@ class AuthManager extends LifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -101,7 +101,7 @@ class AuthManager extends LifecycleManager {
               onComplete();
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp18) {
             c4 = 3;
             throw tmp18;

@@ -1,9 +1,9 @@
-// Module ID: 16776
-// Function ID: 16777
+// Module ID: 16777
+// Function ID: 16778
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11534, 21, 5170, 504, 13462, 5790, 1113, 5231, 1242, 572, 1187, 9266, 5783, 2]
+// Dependencies: [5, 32, 19, 17, 11533, 21, 5170, 504, 13461, 5790, 1113, 5231, 1242, 572, 1187, 9266, 5783, 2]
 
-// Module 16776 (components_native/ErrorBoundary)
+// Module 16777 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -15,7 +15,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11534 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11533 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ function MaybeClearBuildOverride() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -84,7 +84,7 @@ function MaybeClearBuildOverride() {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           closure_2 = tmp13;

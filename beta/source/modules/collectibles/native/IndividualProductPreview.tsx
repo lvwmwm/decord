@@ -1,18 +1,18 @@
-// Module ID: 15335
-// Function ID: 15336
+// Module ID: 15336
+// Function ID: 15337
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1074, 21, 5170, 575, 5747, 8853, 11565, 11683, 15336, 15337, 2111, 1075, 15338, 15341, 2]
+// Dependencies: [19, 17, 1074, 21, 5170, 575, 5747, 8853, 11564, 11682, 15337, 15338, 2111, 1075, 15339, 15342, 2]
 // Exports: IndividualProductPreview
 
-// Module 15335 (IndividualProductPreview)
+// Module 15336 (IndividualProductPreview)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import LinearGradientDefault from "LinearGradient" /* 5747 */;
 import useCurrentUser from "useCurrentUser" /* 8853 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11565 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11683 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 15336 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 15337 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11564 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11682 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 15337 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 15338 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
@@ -151,11 +151,11 @@ export function IndividualProductPreview(arg0) {
     let tmp5;
     const ALL = tmp(1075).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      tmp5 = metroImportDefault(tmp(15338).FractionalNitroPreview, {});
+      tmp5 = metroImportDefault(tmp(15339).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === hasOwnProperty.ORB_PROFILE_BADGE) {
-        tmp5 = metroImportDefault(tmp(15341).OrbBadgePreview, {});
+        tmp5 = metroImportDefault(tmp(15342).OrbBadgePreview, {});
       }
     }
     return tmp5;

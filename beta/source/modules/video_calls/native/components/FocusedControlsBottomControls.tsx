@@ -1,10 +1,10 @@
-// Module ID: 12060
-// Function ID: 12061
+// Module ID: 12059
+// Function ID: 12060
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 11162, 11163, 1072, 21, 1377, 5170, 575, 6810, 1187, 1627, 1652, 12061, 1092, 1113, 5755, 5402, 5452, 1705, 10402, 1493, 11911, 1108, 5231, 5760, 5177, 11382, 2]
+// Dependencies: [32, 19, 17, 11162, 11163, 1072, 21, 1377, 5170, 575, 6810, 1187, 1627, 1652, 12060, 1092, 1113, 5755, 5402, 5452, 1705, 10402, 1493, 11910, 1108, 5231, 5760, 5177, 11382, 2]
 // Exports: default
 
-// Module 12060 (FocusedControlsBottomControls)
+// Module 12059 (FocusedControlsBottomControls)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
@@ -14,7 +14,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5402 */;
 import CallPTTButton from "CallPTTButton" /* 11382 */;
-import useCanShowTooltip from "useCanShowTooltip" /* 12061 */;
+import useCanShowTooltip from "useCanShowTooltip" /* 12060 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

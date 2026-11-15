@@ -1,10 +1,10 @@
-// Module ID: 14622
-// Function ID: 14623
+// Module ID: 14623
+// Function ID: 14624
 // Name: CreateGuildActionCreators
 // Dependencies: [5100, 1072, 9231, 2]
 // Exports: showInstantInviteModal
 
-// Module 14622 (CreateGuildActionCreators)
+// Module 14623 (CreateGuildActionCreators)
 import Constants from "Constants" /* 1072 */;
 import GuildChannelStore from "GuildChannelStore" /* 5100 */;
 import size from "module_2" /* 2 */;

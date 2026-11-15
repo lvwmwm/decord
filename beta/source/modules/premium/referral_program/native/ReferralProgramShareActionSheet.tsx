@@ -1,10 +1,10 @@
-// Module ID: 15637
-// Function ID: 15638
+// Module ID: 15638
+// Function ID: 15639
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1385, 7741, 1072, 21, 5170, 575, 504, 15638, 38, 1380, 10881, 15639, 1113, 5179, 15640, 7420, 7445, 1252, 7742, 5406, 15641, 2118, 5868, 7415, 5783, 5874, 15646, 15647, 10882, 7048, 5790, 5420, 9175, 10884, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7741, 1072, 21, 5170, 575, 504, 15639, 38, 1380, 10881, 15640, 1113, 5179, 15641, 7420, 7445, 1252, 7742, 5406, 15642, 2118, 5868, 7415, 5783, 5874, 15647, 15648, 10882, 7048, 5790, 5420, 9175, 10884, 2]
 // Exports: default
 
-// Module 15637 (ReferralProgramShareActionSheet)
+// Module 15638 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,7 +12,7 @@ import intl8 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
 import makeUserListPillDataDefault from "makeUserListPillData" /* 10881 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15640 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15641 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -202,7 +202,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           if (0 === c3) {

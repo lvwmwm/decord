@@ -1,15 +1,15 @@
-// Module ID: 18728
-// Function ID: 18729
+// Module ID: 18729
+// Function ID: 18730
 // Name: GuildsBar
-// Dependencies: [19, 21, 5170, 1377, 6035, 18729, 18737, 18607, 11753, 5452, 7056, 7337, 18819, 2]
+// Dependencies: [19, 21, 5170, 1377, 6035, 18730, 18738, 18608, 11752, 5452, 7056, 7337, 18820, 2]
 
-// Module 18728 (GuildsBar)
+// Module 18729 (GuildsBar)
 import NativeViewDefault from "NativeView" /* 7056 */;
 import FastListDefault from "FastList" /* 7337 */;
-import StartupProfilerDefault from "StartupProfiler" /* 11753 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 18607 */;
-import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 18729 */;
-import useGuildsBarPropsDefault from "useGuildsBarProps" /* 18737 */;
+import StartupProfilerDefault from "StartupProfiler" /* 11752 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 18608 */;
+import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 18730 */;
+import useGuildsBarPropsDefault from "useGuildsBarProps" /* 18738 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp2;
-const GuildsBarDragPreviewDefault = tmp2(18819);
+const GuildsBarDragPreviewDefault = tmp2(18820);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ wrapper: { position: "relative", overflow: "visible", flex: 1 } });
 const memoResult = react.memo(function GuildsBar(enableHome) {
@@ -101,7 +101,7 @@ const memoResult = react.memo(function GuildsBar(enableHome) {
       }
     }
   }, items1);
-  let obj = { profile: fastListRef(11753).Profiles.Guilds, children: closure_4(GestureDetector, obj2) };
+  let obj = { profile: fastListRef(11752).Profiles.Guilds, children: closure_4(GestureDetector, obj2) };
   const tmp10 = StartupProfilerDefault;
   obj2 = { gesture, children: tmp11(tmp12, obj3) };
   GestureDetector = fastListRef(5452).GestureDetector;

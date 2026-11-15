@@ -1,10 +1,10 @@
-// Module ID: 12312
-// Function ID: 12313
+// Module ID: 12311
+// Function ID: 12312
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 575, 5170, 8314, 8324, 12313, 1113, 4026, 1490, 12309, 7073, 12314, 5874, 12316, 6191, 7181, 6933, 5783, 7349, 2]
+// Dependencies: [32, 5, 19, 17, 21, 575, 5170, 8314, 8324, 12312, 1113, 4026, 1490, 12308, 7073, 12313, 5874, 12315, 6191, 7181, 6933, 5783, 7349, 2]
 // Exports: ConjureAppIdentitySection
 
-// Module 12312 (ConjureAppIdentity)
+// Module 12311 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
@@ -67,7 +67,7 @@ let value = function _pickConjureAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -203,7 +203,7 @@ class ConjureAppIconTile {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -229,7 +229,7 @@ class ConjureAppIconTile {
           } else if (1 === c3) {
             c2 = 0;
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -250,7 +250,7 @@ class ConjureAppIconTile {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           if (0 === c2) {
@@ -276,7 +276,7 @@ class ConjureAppIconTile {
     t = tmp7(1113).t;
     if (null == iconURL) {
       let obj3 = { size: "md", color: onError(575).colors.ICON_MUTED };
-      const ImagePlusIcon = tmp7(12314).ImagePlusIcon;
+      const ImagePlusIcon = tmp7(12313).ImagePlusIcon;
       tmp6Result = tmp6(ImagePlusIcon, obj3);
       tmp9 = onError;
     } else {
@@ -291,7 +291,7 @@ class ConjureAppIconTile {
       tmp6Result2 = null;
       if (!disabled) {
         const obj6 = { style: tmp.editIcon };
-        tmp6Result2 = tmp6(tmp9(12316), obj6);
+        tmp6Result2 = tmp6(tmp9(12315), obj6);
       }
     }
     items2[1] = tmp6Result2;

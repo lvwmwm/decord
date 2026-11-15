@@ -1,15 +1,15 @@
-// Module ID: 11464
-// Function ID: 11465
+// Module ID: 11463
+// Function ID: 11464
 // Name: InappropriateConversationWarningBanner
-// Dependencies: [19, 5112, 10955, 21, 11441, 504, 11442, 6123, 11465, 2118, 11468, 11443, 1113, 2]
+// Dependencies: [19, 5112, 10955, 21, 11440, 504, 11441, 6123, 11464, 2118, 11467, 11442, 1113, 2]
 
-// Module 11464 (InappropriateConversationWarningBanner)
+// Module 11463 (InappropriateConversationWarningBanner)
 import Fragment from "Fragment" /* 21 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10955 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11441 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11442 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11468 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11440 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11441 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11467 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5112 */;
 import size from "module_2" /* 2 */;

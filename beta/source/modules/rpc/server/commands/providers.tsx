@@ -1,14 +1,14 @@
-// Module ID: 16676
-// Function ID: 16677
+// Module ID: 16677
+// Function ID: 16678
 // Name: providers
-// Dependencies: [5, 6659, 6615, 1072, 2142, 1083, 7441, 9447, 12005, 12008, 6661, 572, 1108, 9843, 2]
+// Dependencies: [5, 6659, 6615, 1072, 2142, 1083, 7441, 9447, 12004, 12007, 6661, 572, 1108, 9843, 2]
 
-// Module 16676 (providers)
+// Module 16677 (providers)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7441 */;
 import RPCErrorDefault from "RPCError" /* 9447 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12005 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12004 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
 import Constants_mod from "Constants" /* 6615 */;
@@ -47,7 +47,7 @@ let value = function _refreshProviderAccessToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ let closure_11 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

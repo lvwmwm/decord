@@ -1,9 +1,9 @@
-// Module ID: 18464
-// Function ID: 18465
+// Module ID: 18465
+// Function ID: 18466
 // Name: MessagesItemChannelAvatar
-// Dependencies: [19, 5171, 502, 5922, 13994, 1385, 5914, 21, 5170, 575, 1187, 504, 10950, 2]
+// Dependencies: [19, 5171, 502, 5922, 13993, 1385, 5914, 21, 5170, 575, 1187, 504, 10950, 2]
 
-// Module 18464 (MessagesItemChannelAvatar)
+// Module 18465 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 */;
@@ -12,7 +12,7 @@ import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 5922 */;
-import TypingStore from "TypingStore" /* 13994 */;
+import TypingStore from "TypingStore" /* 13993 */;
 import UserStore from "UserStore" /* 1385 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

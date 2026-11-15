@@ -1,7 +1,7 @@
 // Module ID: 9899
 // Function ID: 9900
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7573, 502, 5019, 7810, 6226, 7939, 1112, 1072, 5175, 7540, 7933, 7552, 1113, 9900, 11, 1282, 8446, 9901, 7935, 1403, 8314, 9903, 8306, 5921, 7745, 6122, 572, 5177, 1089, 10466, 14874, 2]
+// Dependencies: [32, 5, 19, 7573, 502, 5019, 7810, 6226, 7939, 1112, 1072, 5175, 7540, 7933, 7552, 1113, 9900, 11, 1282, 8446, 9901, 7935, 1403, 8314, 9903, 8306, 5921, 7745, 6122, 572, 5177, 1089, 10466, 14875, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
 // Module 9899 (ThreadCreationHooks)
@@ -174,7 +174,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -587,7 +587,7 @@ export function useCreateThreadCommon(parentChannel) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ export function useCreateThreadCommon(parentChannel) {
             obj = parentMessageId(threadSettings[20]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp41) {
           c7 = 3;
@@ -772,7 +772,7 @@ export function useCreateForumPostCommon(parentChannel) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp90;

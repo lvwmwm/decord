@@ -1,9 +1,9 @@
-// Module ID: 11804
-// Function ID: 11805
+// Module ID: 11803
+// Function ID: 11804
 // Name: contentHandlers
-// Dependencies: [5, 10334, 9984, 9056, 5866, 11805, 10338, 8854, 7445, 5406, 11810, 2118, 11, 4995, 1113, 7451, 5868, 6122, 11854, 2]
+// Dependencies: [5, 10334, 9984, 9056, 5866, 11804, 10338, 8854, 7445, 5406, 11809, 2118, 11, 4995, 1113, 7451, 5868, 6122, 11853, 2]
 
-// Module 11804 (contentHandlers)
+// Module 11803 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import ToastUtils from "ToastUtils" /* 5868 */;
@@ -12,7 +12,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
 import ClipboardUtils from "ClipboardUtils" /* 7451 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
 import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10334 */;
-import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 11854 */;
+import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 11853 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ let obj = {
         if (null != guildId) {
           const obj3 = { guildId, roleId, channelId };
           const obj7 = ActionSheetActionCreatorsDefault;
-          obj7.openLazy(parsedUserId(2118)(11810, dependencyMap.paths), "RoleMembersActionSheet", obj3);
+          obj7.openLazy(parsedUserId(2118)(11809, dependencyMap.paths), "RoleMembersActionSheet", obj3);
         }
       }
       if ("@everyone" === roleName) {
@@ -72,7 +72,7 @@ let obj = {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           const obj4 = { guildId, roleId: obj6.castGuildIdAsEveryoneGuildRoleId(guildId), channelId };
           ActionSheetActionCreatorsDefault;
-          const tmp12 = parsedUserId(2118)(11810, dependencyMap.paths);
+          const tmp12 = parsedUserId(2118)(11809, dependencyMap.paths);
           obj6 = SnowflakeUtilsDefault;
           openLazy(tmp12, "RoleMembersActionSheet", obj4);
         }

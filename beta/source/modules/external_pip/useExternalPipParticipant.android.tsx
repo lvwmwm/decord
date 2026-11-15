@@ -1,16 +1,16 @@
-// Module ID: 19522
-// Function ID: 19523
+// Module ID: 19580
+// Function ID: 19581
 // Name: useExternalPipParticipant
-// Dependencies: [19, 6931, 15971, 6801, 502, 2130, 5925, 5837, 11395, 19523, 11400, 504, 2]
+// Dependencies: [19, 6931, 15972, 6801, 502, 2130, 5925, 5837, 11395, 19581, 11400, 504, 2]
 // Exports: default
 
-// Module 19522 (useExternalPipParticipant)
+// Module 19580 (useExternalPipParticipant)
 import CallConstants from "CallConstants" /* 5837 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19523 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19581 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 15971 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 15972 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;

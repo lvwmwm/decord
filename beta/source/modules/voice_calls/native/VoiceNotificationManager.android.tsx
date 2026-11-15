@@ -1,9 +1,9 @@
-// Module ID: 16629
-// Function ID: 16630
+// Module ID: 16630
+// Function ID: 16631
 // Name: VoiceNotificationManager
-// Dependencies: [32, 17, 5018, 2162, 6801, 5019, 2130, 5925, 5112, 1385, 1072, 575, 10364, 10362, 12219, 10912, 5808, 1113, 16630, 2120, 2]
+// Dependencies: [32, 17, 5018, 2162, 6801, 5019, 2130, 5925, 5112, 1385, 1072, 575, 10364, 10362, 12218, 10912, 5808, 1113, 16631, 2120, 2]
 
-// Module 16629 (VoiceNotificationManager)
+// Module 16630 (VoiceNotificationManager)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,8 +12,8 @@ import useChannelName from "useChannelName" /* 5808 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10362 */;
 import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 10364 */;
 import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 10912 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 12219 */;
-import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 16630 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 12218 */;
+import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 16631 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;

@@ -1,10 +1,10 @@
-// Module ID: 11521
-// Function ID: 11522
+// Module ID: 11520
+// Function ID: 11521
 // Name: ForumPostActionBar
-// Dependencies: [19, 17, 5103, 5104, 5019, 1072, 21, 5170, 575, 504, 7572, 10049, 9944, 11522, 7076, 1113, 7092, 5783, 9321, 5883, 7745, 11, 5397, 11523, 2]
+// Dependencies: [19, 17, 5103, 5104, 5019, 1072, 21, 5170, 575, 504, 7572, 10049, 9944, 11521, 7076, 1113, 7092, 5783, 9321, 5883, 7745, 11, 5397, 11522, 2]
 // Exports: default
 
-// Module 11521 (ForumPostActionBar)
+// Module 11520 (ForumPostActionBar)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -74,7 +74,7 @@ export default function ForumPostActionBar(channel) {
   items3[1] = obj5.useGradientTop();
   let tmp9 = null != firstMessage;
   if (tmp9) {
-    const obj7 = { style: tmp.reactionRow, children: closure_8(channel(11522).ForumPostActionBarReactions, obj8) };
+    const obj7 = { style: tmp.reactionRow, children: closure_8(channel(11521).ForumPostActionBarReactions, obj8) };
     obj8 = { thread: channel, parentChannel: stateFromStores, firstMessage };
     tmp9 = closure_8(tmp8, obj7);
   }
@@ -150,7 +150,7 @@ export default function ForumPostActionBar(channel) {
       obj2 = SnowflakeUtilsDefault;
       jumpToMessage(obj);
     },
-    children: closure_8(channel(11523).ArrowLargeUpIcon, { size: "xs" })
+    children: closure_8(channel(11522).ArrowLargeUpIcon, { size: "xs" })
   };
   const PressableOpacity3 = tmp2(7076).PressableOpacity;
   intl5 = tmp2(1113).intl;

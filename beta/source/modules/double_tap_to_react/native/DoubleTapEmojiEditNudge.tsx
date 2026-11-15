@@ -1,10 +1,10 @@
-// Module ID: 14808
-// Function ID: 14809
+// Module ID: 14809
+// Function ID: 14810
 // Name: DoubleTapEmojiEditNudge
 // Dependencies: [5, 19, 17, 5171, 1494, 1072, 1388, 21, 5170, 575, 4995, 8530, 1496, 504, 1411, 10094, 1252, 10106, 5783, 1113, 7396, 7076, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 14808 (DoubleTapEmojiEditNudge)
+// Module 14809 (DoubleTapEmojiEditNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -84,7 +84,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -124,7 +124,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
             const obj = emoji(closure_2_2[17]);
             const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c4 = 3;

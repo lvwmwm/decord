@@ -1,11 +1,11 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13445
+// Function ID: 13446
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 5019, 1385, 11935, 5833, 12707, 11921, 2]
+// Dependencies: [5, 5019, 1385, 11934, 5833, 12706, 11920, 2]
 // Exports: default
 
-// Module 13446 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 11935 */;
+// Module 13445 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 11934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -31,7 +31,7 @@ let obj = function _handleUsePrimaryEntryPointAppCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -132,7 +132,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

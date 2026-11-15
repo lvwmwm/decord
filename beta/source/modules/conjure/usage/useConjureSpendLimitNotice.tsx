@@ -1,10 +1,10 @@
-// Module ID: 12812
-// Function ID: 12813
+// Module ID: 12811
+// Function ID: 12812
 // Name: useConjureSpendLimitNotice
 // Dependencies: [11022, 504, 2185, 1113, 4026, 2]
 // Exports: default
 
-// Module 12812 (useConjureSpendLimitNotice)
+// Module 12811 (useConjureSpendLimitNotice)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 11022 */;

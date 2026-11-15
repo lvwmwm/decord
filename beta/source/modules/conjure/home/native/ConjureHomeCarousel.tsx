@@ -1,9 +1,9 @@
-// Module ID: 13066
-// Function ID: 13067
+// Module ID: 13065
+// Function ID: 13066
 // Name: ConjureHomeCarousel
-// Dependencies: [19, 17, 5171, 2117, 1072, 21, 575, 9850, 8782, 13067, 9708, 11453, 12300, 5170, 1652, 13069, 5874, 1411, 5783, 13070, 13213, 13221, 504, 1500, 9102, 1113, 4026, 2]
+// Dependencies: [19, 17, 5171, 2117, 1072, 21, 575, 9850, 8782, 13066, 9708, 11452, 12299, 5170, 1652, 13068, 5874, 1411, 5783, 13069, 13212, 13220, 504, 1500, 9102, 1113, 4026, 2]
 
-// Module 13066 (ConjureHomeCarousel)
+// Module 13065 (ConjureHomeCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,11 +12,11 @@ import FastImageDefault from "FastImage" /* 5874 */;
 import AppsIcon from "AppsIcon" /* 8782 */;
 import ScreenIcon from "ScreenIcon" /* 9708 */;
 import GameControllerIcon from "GameControllerIcon" /* 9850 */;
-import ShieldIcon from "ShieldIcon" /* 11453 */;
-import RobotIcon from "RobotIcon" /* 12300 */;
-import WidgetsIcon from "WidgetsIcon" /* 13067 */;
-import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 13069 */;
-import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 13213 */;
+import ShieldIcon from "ShieldIcon" /* 11452 */;
+import RobotIcon from "RobotIcon" /* 12299 */;
+import WidgetsIcon from "WidgetsIcon" /* 13066 */;
+import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 13068 */;
+import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 13212 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
@@ -41,8 +41,8 @@ let size1;
 let tmp3;
 const AvatarUtils = tmp3(1411);
 const Text_Text = tmp3(5783);
-const SvgCss = tmp3(13070);
-const conjureHomeInspirationEntries = tmp3(13221);
+const SvgCss = tmp3(13069);
+const conjureHomeInspirationEntries = tmp3(13220);
 let View = react_native.View;
 const AppStates = Constants.AppStates;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

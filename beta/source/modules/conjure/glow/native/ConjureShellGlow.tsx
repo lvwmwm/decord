@@ -1,10 +1,10 @@
-// Module ID: 12841
-// Function ID: 12842
+// Module ID: 12840
+// Function ID: 12841
 // Name: ConjureShellGlow
-// Dependencies: [32, 19, 17, 5171, 1192, 21, 1377, 575, 671, 5170, 504, 5178, 1652, 5402, 5747, 12842, 7137, 2]
+// Dependencies: [32, 19, 17, 5171, 1192, 21, 1377, 575, 671, 5170, 504, 5178, 1652, 5402, 5747, 12841, 7137, 2]
 // Exports: default
 
-// Module 12841 (ConjureShellGlow)
+// Module 12840 (ConjureShellGlow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1652 from "module_1652" /* 1652 */;

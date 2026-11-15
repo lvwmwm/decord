@@ -1,10 +1,10 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13571
+// Function ID: 13572
 // Name: useExplicitMediaAttachmentsForMessage
 // Dependencies: [6226, 563, 11245, 7560, 7566, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 13572 (useExplicitMediaAttachmentsForMessage)
+// Module 13571 (useExplicitMediaAttachmentsForMessage)
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7560 */;
 import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7566 */;
 import MessageStore from "MessageStore" /* 6226 */;

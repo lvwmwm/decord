@@ -1,9 +1,9 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 14775
+// Function ID: 14776
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 1652, 5184, 5793, 1705, 14775, 5783, 2]
+// Dependencies: [32, 19, 21, 1652, 5184, 5793, 1705, 14776, 5783, 2]
 
-// Module 14774 (BalanceCounter)
+// Module 14775 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
@@ -81,7 +81,7 @@ class BalanceCounter {
     const tmp9 = sharedValue(ref2(false), 2);
     let closure_7 = tmp9[1];
     const first = tmp9[0];
-    const tmp11 = closure_7((set, point2, duration) => {
+    const tmp11 = closure_7((set, channelDockHeight, duration) => {
       let tmp3;
       let tmp4;
       let tmp5;
@@ -107,7 +107,7 @@ class BalanceCounter {
       BalanceCounterTsx1.__closure = items1;
       BalanceCounterTsx1.__workletHash = 2321092596604;
       BalanceCounterTsx1.__initData = tmp3;
-      const result = set(withSpring(point2, obj, "respect-motion-settings", BalanceCounterTsx1));
+      const result = set(withSpring(channelDockHeight, obj, "respect-motion-settings", BalanceCounterTsx1));
     }, []);
     react = tmp11;
     let items = [value, onValueChange, onValueReached, sharedValue, tmp11, enabled];

@@ -1,14 +1,14 @@
-// Module ID: 12745
-// Function ID: 12746
+// Module ID: 12744
+// Function ID: 12745
 // Name: ImageFileIcon
-// Dependencies: [19, 21, 575, 5873, 12746, 2]
+// Dependencies: [19, 21, 575, 5873, 12745, 2]
 // Exports: ImageFileIcon
 
-// Module 12745 (ImageFileIcon)
+// Module 12744 (ImageFileIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 12746 */;
+import AssetRegistry from "AssetRegistry" /* 12745 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

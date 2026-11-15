@@ -1,20 +1,15 @@
 // Module ID: 16492
 // Function ID: 16493
-// Dependencies: [16477]
+// Dependencies: [16471]
 
 // Module 16492
-import _mod16477 from "module_16477" /* 16477 */;
+import _mod16471 from "module_16471" /* 16471 */;
 
-let _window = 0;
-let closure_1 = Math.random();
-let closure_2 = _mod16477((1).toString);
+const tmp = _mod16471.navigator && _mod16471.navigator.userAgent;
+let str = "";
+if (tmp) {
+  const _String = String;
+  str = String(tmp);
+}
 
-export default (arg0) => {
-  let _window;
-  let str = "";
-  if (undefined !== arg0) {
-    str = arg0;
-  }
-  _window = _window + 1;
-  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
-};
+export default str;

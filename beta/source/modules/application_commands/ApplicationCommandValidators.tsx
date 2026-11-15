@@ -1,9 +1,9 @@
-// Module ID: 12723
-// Function ID: 12724
+// Module ID: 12722
+// Function ID: 12723
 // Name: ApplicationCommandValidators
 // Dependencies: [2186, 8310, 2116, 10464, 38, 1113, 10462, 7809, 10465, 2]
 
-// Module 12723 (ApplicationCommandValidators)
+// Module 12722 (ApplicationCommandValidators)
 import _modDef38 from "module_38" /* 38 */;
 import intl5 from "intl" /* 1113 */;
 import Server from "Server" /* 2116 */;

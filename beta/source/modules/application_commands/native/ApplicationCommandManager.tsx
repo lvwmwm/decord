@@ -1,7 +1,7 @@
 // Module ID: 14236
 // Function ID: 14237
 // Name: ApplicationCommandManager
-// Dependencies: [32, 7810, 8449, 1072, 6200, 1623, 13045, 14020, 8447, 7809, 10467, 5839, 10462, 2116, 9901, 5357, 1625, 12722, 12, 12670, 14021, 5812, 12724, 12671, 5408, 5921, 10375, 2]
+// Dependencies: [32, 7810, 8449, 1072, 6200, 1623, 13044, 14019, 8447, 7809, 10467, 5839, 10462, 2116, 9901, 5357, 1625, 12721, 12, 12669, 14020, 5812, 12723, 12670, 5408, 5921, 10375, 2]
 
 // Module 14236 (ApplicationCommandManager)
 import _modDef12 from "module_12" /* 12 */;
@@ -17,10 +17,10 @@ import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreator
 import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10375 */;
 import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 10462 */;
 import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10467 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12671 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12724 */;
-import ChatInputParser from "ChatInputParser" /* 13045 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14020 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12670 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12723 */;
+import ChatInputParser from "ChatInputParser" /* 13044 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14019 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApplicationCommandStore from "ApplicationCommandStore" /* 8449 */;
 import Constants from "Constants" /* 1072 */;
@@ -593,7 +593,7 @@ class ApplicationCommandManager {
               return null;
             } else {
               let obj3 = { channel, type: "channel" };
-              const tmp3Result = tmp3(12670);
+              const tmp3Result = tmp3(12669);
               const commandContext = tmp3Result.getCommandContext(obj3);
               let preferredCommandType;
               if (preferredCommand != null) {
@@ -616,7 +616,7 @@ class ApplicationCommandManager {
                   return tmp20;
                 }
               } else {
-                const tmp3Result2 = tmp3(14021);
+                const tmp3Result2 = tmp3(14020);
                 const draftCommand = tmp3Result2.resolveDraftCommand(channel, text, DraftStore.getDraftCommand(channel.id, DraftType.ChannelMessage));
                 if (null != draftCommand) {
                   const obj8 = { command: obj9, section: draftCommand.section };
@@ -1232,7 +1232,7 @@ class ApplicationCommandManager {
       }
       if (tmp92) {
         self.optionValues = self.getAllCommandOptionValues(activeCommand, editId.text);
-        const obj7 = obj11(12722);
+        const obj7 = obj11(12721);
         self.optionValidationResults = obj7.getValidationResults(activeCommand, self.optionValues, editId.channel.guild_id, editId.channel.id, false);
         const chatInputNodes = self.chatInputNodes;
         self.chatInputNodes = chatInputNodes.map((type) => {
@@ -1613,7 +1613,7 @@ class ApplicationCommandManager {
       let tmp28 = currentOption(tmp26, 2);
       let first = tmp28[0];
       let tmp30 = tmp28[1];
-      let obj3 = obj11(14020);
+      let obj3 = obj11(14019);
       let hasItem = 0 !== obj3.findGameMentionTokens(editId.text, tmp30.name, mapped).locations.length;
       if (!hasItem) {
         let text3 = editId.text;
@@ -1642,14 +1642,14 @@ class ApplicationCommandManager {
           const result = optionsToNodes.set(type.data.option.name, type);
         }
       }
-      let tmp5 = type.type === tmp(13045).ChatInputNodeType.COMMAND_OPTION_WITH_VALUE;
+      let tmp5 = type.type === tmp(13044).ChatInputNodeType.COMMAND_OPTION_WITH_VALUE;
       if (tmp5) {
         const data2 = type.data;
         let type1;
         if (data2 != null) {
           type1 = data2.type;
         }
-        tmp5 = type1 === tmp(13045).ChatInputParseResultDataType.COMMAND_OPTION;
+        tmp5 = type1 === tmp(13044).ChatInputParseResultDataType.COMMAND_OPTION;
       }
       if (tmp5) {
         const optionValueNodes = self.optionValueNodes;

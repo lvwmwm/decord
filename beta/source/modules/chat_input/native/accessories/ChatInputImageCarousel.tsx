@@ -1,9 +1,9 @@
-// Module ID: 14061
-// Function ID: 14062
+// Module ID: 14060
+// Function ID: 14061
 // Name: ChatInputImageCarousel
 // Dependencies: [19, 8449, 7810, 8310, 10050, 21, 504, 10677, 2]
 
-// Module 14061 (ChatInputImageCarousel)
+// Module 14060 (ChatInputImageCarousel)
 import Fragment from "Fragment" /* 21 */;
 import DraftStore from "DraftStore" /* 7810 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10050 */;

@@ -1,10 +1,10 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17703
+// Function ID: 17704
 // Name: getDisplayNameStylesGradientLocations
 // Dependencies: [1394, 1396, 558, 2]
 // Exports: default
 
-// Module 17702 (getDisplayNameStylesGradientLocations)
+// Module 17703 (getDisplayNameStylesGradientLocations)
 import shallowEqual from "shallowEqual" /* 558 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
 import size from "module_2" /* 2 */;

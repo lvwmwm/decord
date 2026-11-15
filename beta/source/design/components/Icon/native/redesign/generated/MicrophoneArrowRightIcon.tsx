@@ -1,14 +1,14 @@
-// Module ID: 12084
-// Function ID: 12085
+// Module ID: 12083
+// Function ID: 12084
 // Name: MicrophoneArrowRightIcon
-// Dependencies: [19, 21, 575, 5873, 12085, 2]
+// Dependencies: [19, 21, 575, 5873, 12084, 2]
 // Exports: MicrophoneArrowRightIcon
 
-// Module 12084 (MicrophoneArrowRightIcon)
+// Module 12083 (MicrophoneArrowRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 12085 */;
+import AssetRegistry from "AssetRegistry" /* 12084 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

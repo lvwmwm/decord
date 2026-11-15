@@ -1,10 +1,10 @@
-// Module ID: 12326
-// Function ID: 12327
+// Module ID: 12325
+// Function ID: 12326
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6932, 504, 12327, 12308, 12330, 11052, 6933, 7516, 12331, 11048, 12292, 1113, 4026, 12311, 11028, 2]
+// Dependencies: [5, 32, 19, 6932, 504, 12326, 12307, 12329, 11052, 6933, 7516, 12330, 11048, 12291, 1113, 4026, 12310, 11028, 2]
 // Exports: default
 
-// Module 12326 (useConjureProjectSettingsDraft)
+// Module 12325 (useConjureProjectSettingsDraft)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -252,7 +252,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -397,7 +397,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -456,7 +456,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
           c3 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         tmp14 = c3;
         if (0 === c3) {
@@ -499,7 +499,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

@@ -1,10 +1,10 @@
-// Module ID: 17566
-// Function ID: 17567
+// Module ID: 17567
+// Function ID: 17568
 // Name: LabeledDataBlock
 // Dependencies: [19, 17, 21, 5170, 575, 5783, 7076, 2]
 // Exports: default
 
-// Module 17566 (LabeledDataBlock)
+// Module 17567 (LabeledDataBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;

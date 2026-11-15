@@ -1,15 +1,15 @@
-// Module ID: 17917
-// Function ID: 17918
+// Module ID: 17918
+// Function ID: 17919
 // Name: DeviceInfoSetting
-// Dependencies: [17916, 5127, 11717, 1113, 17918, 4995, 2]
+// Dependencies: [17917, 5127, 11716, 1113, 17919, 4995, 2]
 
-// Module 17917 (DeviceInfoSetting)
+// Module 17918 (DeviceInfoSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import DeviceUtils from "DeviceUtils" /* 5127 */;
-import CopyClientInfoSetting from "CopyClientInfoSetting" /* 17916 */;
-import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 17918 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import CopyClientInfoSetting from "CopyClientInfoSetting" /* 17917 */;
+import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 17919 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

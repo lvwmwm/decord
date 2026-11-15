@@ -1,10 +1,10 @@
-// Module ID: 12820
-// Function ID: 12821
+// Module ID: 12819
+// Function ID: 12820
 // Name: ConjureChatActionCreators
 // Dependencies: [572, 2]
 // Exports: setComposerDraft
 
-// Module 12820 (ConjureChatActionCreators)
+// Module 12819 (ConjureChatActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

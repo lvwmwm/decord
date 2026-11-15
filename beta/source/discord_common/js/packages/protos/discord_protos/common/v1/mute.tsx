@@ -1,9 +1,9 @@
-// Module ID: 15891
-// Function ID: 15892
+// Module ID: 15892
+// Function ID: 15893
 // Name: mute
 // Dependencies: [32, 1197, 1226, 1227, 2]
 
-// Module 15891 (mute)
+// Module 15892 (mute)
 import _mod1197 from "module_1197" /* 1197 */;
 import timestamp from "timestamp" /* 1226 */;
 import wrappers from "wrappers" /* 1227 */;

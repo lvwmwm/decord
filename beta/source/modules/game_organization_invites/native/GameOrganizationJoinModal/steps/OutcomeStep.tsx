@@ -1,16 +1,16 @@
-// Module ID: 13489
-// Function ID: 13490
+// Module ID: 13488
+// Function ID: 13489
 // Name: OutcomeStep
-// Dependencies: [32, 19, 5041, 11536, 13478, 21, 5170, 1113, 2530, 13475, 504, 7627, 13476, 13480, 8076, 6191, 575, 5783, 13484, 5790, 2]
+// Dependencies: [32, 19, 5041, 11535, 13477, 21, 5170, 1113, 2530, 13474, 504, 7627, 13475, 13479, 8076, 6191, 575, 5783, 13483, 5790, 2]
 // Exports: OutcomeStep
 
-// Module 13489 (OutcomeStep)
+// Module 13488 (OutcomeStep)
 import transitionToGuild from "transitionToGuild" /* 7627 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13478 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13477 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5041 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11536 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11535 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ export function OutcomeStep(code) {
   code = code.code;
   let tmp = closure_12();
   let tmp2 = stateFromStores;
-  const tmp4 = stateFromStores(13475)(code);
+  const tmp4 = stateFromStores(13474)(code);
   let guildId;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -117,7 +117,7 @@ export function OutcomeStep(code) {
     }
   }, items2);
   let displayNoun;
-  const tmp2Result = tmp2(13476);
+  const tmp2Result = tmp2(13475);
   if (tmp4 != null) {
     displayNoun = tmp4.displayNoun;
   }
@@ -208,7 +208,7 @@ export function OutcomeStep(code) {
   }
   ({ subtitle, cta } = obj22);
   const title = obj22.title;
-  const tmp2Result2 = tmp2(13480);
+  const tmp2Result2 = tmp2(13479);
   const ModalContent = tmp6(8076).ModalContent;
   const obj23 = { spacing: tmp2(575).space.PX_8, children: items3 };
   const Stack = tmp6(6191).Stack;
@@ -226,7 +226,7 @@ export function OutcomeStep(code) {
   const obj27 = { children: closure_11(Stack, obj23) };
   items4[0] = closure_10(ModalContent, obj27);
   const obj28 = { children: closure_10(guildId(5790).Button, obj29) };
-  const ModalFooter = tmp6(13484).ModalFooter;
+  const ModalFooter = tmp6(13483).ModalFooter;
   obj29 = { text: cta.text, size: "lg", onPress: cta.onPress, disabled: tmp9 };
   items4[1] = closure_10(ModalFooter, obj28);
   return closure_11(tmp2Result2, obj26);

@@ -1,9 +1,9 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13265
+// Function ID: 13266
 // Name: ConjureProjectGroupsTypes
 // Dependencies: [2]
 
-// Module 13266 (ConjureProjectGroupsTypes)
+// Module 13265 (ConjureProjectGroupsTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/project_groups/ConjureProjectGroupsTypes.tsx");

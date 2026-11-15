@@ -1,9 +1,9 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 17898
+// Function ID: 17899
 // Name: UploadDebugLogsSetting
-// Dependencies: [5, 17, 1072, 21, 560, 1259, 1377, 11255, 5869, 1113, 5891, 11717, 2]
+// Dependencies: [5, 17, 1072, 21, 560, 1259, 1377, 11255, 5869, 1113, 5891, 11716, 2]
 
-// Module 17897 (UploadDebugLogsSetting)
+// Module 17898 (UploadDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,7 +13,7 @@ import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
 import DebugUploadManager from "DebugUploadManager" /* 11255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_560 from "module_560" /* 560 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -47,7 +47,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -111,7 +111,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
           c3 = 0;
           onUploadDebugLogsRequestFinish();
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp26) {
         closure_2 = tmp26;

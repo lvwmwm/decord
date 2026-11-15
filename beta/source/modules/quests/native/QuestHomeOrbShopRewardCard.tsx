@@ -1,10 +1,10 @@
-// Module ID: 17351
-// Function ID: 17352
+// Module ID: 17352
+// Function ID: 17353
 // Name: QuestHomeOrbShopRewardCard
-// Dependencies: [19, 17, 1385, 1074, 21, 5170, 575, 9573, 504, 2171, 9574, 7420, 9576, 9640, 7840, 9688, 5406, 8851, 17352, 9667, 7076, 2]
+// Dependencies: [19, 17, 1385, 1074, 21, 5170, 575, 9573, 504, 2171, 9574, 7420, 9576, 9640, 7840, 9688, 5406, 8851, 17353, 9667, 7076, 2]
 // Exports: default
 
-// Module 17351 (QuestHomeOrbShopRewardCard)
+// Module 17352 (QuestHomeOrbShopRewardCard)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;

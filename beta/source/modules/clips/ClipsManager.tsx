@@ -1,9 +1,9 @@
-// Module ID: 20465
-// Function ID: 20466
+// Module ID: 20470
+// Function ID: 20471
 // Name: clips/ClipsManager
-// Dependencies: [32, 5, 5944, 1231, 502, 5019, 2130, 5925, 7995, 1385, 2136, 8317, 1072, 6802, 5929, 20466, 7383, 15213, 5950, 6804, 1252, 4995, 572, 20467, 20468, 15525, 2]
+// Dependencies: [32, 5, 5944, 1231, 502, 5019, 2130, 5925, 7995, 1385, 2136, 8317, 1072, 6802, 5929, 20471, 7383, 15214, 5950, 6804, 1252, 4995, 572, 20472, 20473, 15526, 2]
 
-// Module 20465 (clips/ClipsManager)
+// Module 20470 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import UserSettings from "UserSettings" /* 4995 */;
@@ -12,8 +12,8 @@ import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5944 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5950 */;
 import Constants3 from "Constants" /* 6802 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6804 */;
-import ClipsExperiment from "ClipsExperiment" /* 15213 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20467 */;
+import ClipsExperiment from "ClipsExperiment" /* 15214 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20472 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
@@ -40,7 +40,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(15525);
+const isClipsEnabled = tmp(15526);
 function getCodecSurvey() {
   return obj(...arguments);
 }
@@ -57,7 +57,7 @@ let obj = function _getCodecSurvey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -349,7 +349,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -415,7 +415,7 @@ class ClipsManager extends AutomaticLifecycleManager {
               track(CLIPS_DEFAULT_SETTINGS_APPLIED, obj);
             }
             was_hardware_classified = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp42) {
           was_hardware_classified = 3;
@@ -438,7 +438,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -469,7 +469,7 @@ class ClipsManager extends AutomaticLifecycleManager {
             obj = c1(dependencyMap[22]);
             obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c2 = 3;
@@ -500,7 +500,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp7 = tmp6 && classification === tmp.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmp2Result = tmp2(20468);
+            const tmp2Result = tmp2(20473);
             allowDefaultOn = tmp2Result.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp7, enableAutoclipping: tmp7, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };
@@ -559,7 +559,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -623,7 +623,7 @@ class ClipsManager extends AutomaticLifecycleManager {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           closure_2 = tmp25;
@@ -650,7 +650,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -691,7 +691,7 @@ class ClipsManager extends AutomaticLifecycleManager {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           closure_2 = tmp13;
@@ -722,7 +722,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -792,7 +792,7 @@ class ClipsManager extends AutomaticLifecycleManager {
               return obj;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp34) {
           c3 = 3;

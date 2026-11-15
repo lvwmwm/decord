@@ -1,7 +1,7 @@
 // Module ID: 5863
 // Function ID: 5864
 // Name: handleURL
-// Dependencies: [5, 17, 5407, 1072, 3, 5864, 5865, 5866, 5867, 2067, 5868, 1113, 5898, 1377, 5406, 5901, 1381, 5902, 7613, 16012, 2]
+// Dependencies: [5, 17, 5407, 1072, 3, 5864, 5865, 5866, 5867, 2067, 5868, 1113, 5898, 1377, 5406, 5901, 1381, 5902, 7613, 16013, 2]
 // Exports: default
 
 // Module 5863 (handleURL)
@@ -163,7 +163,7 @@ let obj = function _handleURL() {
             }
             openInBrowser();
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else {
             tryHandleUniversalLink = closure_132_1(closure_132_2[15])(tryHandleUniversalLink);
             let obj6 = /^https?:/i;
@@ -218,7 +218,7 @@ let obj = function _handleURL() {
         let tmp12 = tmp62;
         c6 = 0;
         c8 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;

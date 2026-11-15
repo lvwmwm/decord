@@ -1,10 +1,10 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12455
+// Function ID: 12456
 // Name: ConjureModeTabBar
 // Dependencies: [19, 17, 21, 5170, 575, 5756, 1652, 5793, 1377, 8948, 1113, 5783, 2]
 // Exports: default
 
-// Module 12456 (ConjureModeTabBar)
+// Module 12455 (ConjureModeTabBar)
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import useStateFromSharedValue from "useStateFromSharedValue" /* 8948 */;

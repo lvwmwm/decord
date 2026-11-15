@@ -1,9 +1,9 @@
-// Module ID: 19841
-// Function ID: 19842
+// Module ID: 19846
+// Function ID: 19847
 // Name: AppIconPremiumManager
-// Dependencies: [5, 16568, 1385, 10134, 1072, 5195, 3, 5196, 7383, 1377, 15654, 5198, 5200, 5202, 5003, 2171, 1252, 2]
+// Dependencies: [5, 16569, 1385, 10134, 1072, 5195, 3, 5196, 7383, 1377, 15655, 5198, 5200, 5202, 5003, 2171, 1252, 2]
 
-// Module 19841 (AppIconPremiumManager)
+// Module 19846 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,7 +12,7 @@ import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
 import AppIconTypes from "AppIconTypes" /* 5196 */;
 import AppIconConstants from "AppIconConstants" /* 10134 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16568 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16569 */;
 import UserStore from "UserStore" /* 1385 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
@@ -69,7 +69,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -147,7 +147,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
                     id = _undefined2.id;
                   } else {
                     c7 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 }
               }
@@ -191,7 +191,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp88) {
           c7 = 3;

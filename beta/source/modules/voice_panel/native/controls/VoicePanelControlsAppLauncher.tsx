@@ -1,15 +1,15 @@
-// Module ID: 19788
-// Function ID: 19789
+// Module ID: 19793
+// Function ID: 19794
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 5019, 11393, 1072, 21, 5170, 9944, 11394, 8948, 504, 38, 14094, 1108, 11678, 11679, 1652, 12644, 14095, 1113, 2]
+// Dependencies: [19, 5019, 11393, 1072, 21, 5170, 9944, 11394, 8948, 504, 38, 14094, 1108, 11677, 11678, 1652, 12643, 14095, 1113, 2]
 
-// Module 19788 (VoicePanelControlsAppLauncher)
+// Module 19793 (VoicePanelControlsAppLauncher)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8948 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12644 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12643 */;
 import VoicePanelControlsDrawerTitleDefault from "VoicePanelControlsDrawerTitle" /* 14095 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
@@ -75,10 +75,10 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
     const obj = { mode: hasOwnProperty.HIDDEN };
     setControlsMode(obj);
   }, items1);
-  const obj4 = setControlsMode(11678);
+  const obj4 = setControlsMode(11677);
   const appLauncherChatInputRefDummy = obj4.useAppLauncherChatInputRefDummy({ noop: true });
-  const VOICE = setControlsMode(11679).AppLauncherEntrypoint.VOICE;
-  const ref = react.useRef(setControlsMode(11678).AppLauncherKeyboardCloseReason.DISMISSED);
+  const VOICE = setControlsMode(11678).AppLauncherEntrypoint.VOICE;
+  const ref = react.useRef(setControlsMode(11677).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = react.useRef(undefined);
   const obj5 = setControlsMode(1652);
   const sharedValue = obj5.useSharedValue(0);

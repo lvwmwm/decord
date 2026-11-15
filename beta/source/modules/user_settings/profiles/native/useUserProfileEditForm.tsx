@@ -1,10 +1,10 @@
-// Module ID: 16806
-// Function ID: 16807
+// Module ID: 16807
+// Function ID: 16808
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 32, 19, 8835, 7881, 12582, 1385, 1072, 5195, 504, 7247, 16807, 11693, 5198, 7254, 16808, 6872, 7257, 16809, 6611, 1113, 8842, 572, 16810, 8856, 8872, 15282, 4995, 12584, 7883, 8866, 16079, 2]
+// Dependencies: [109, 5, 32, 19, 8835, 7881, 12581, 1385, 1072, 5195, 504, 7247, 16808, 11692, 5198, 7254, 16809, 6872, 7257, 16810, 6611, 1113, 8842, 572, 16811, 8856, 8872, 15283, 4995, 12583, 7883, 8866, 16080, 2]
 // Exports: default
 
-// Module 16806 (useUserProfileEditForm)
+// Module 16807 (useUserProfileEditForm)
 import Constants from "Constants" /* 1072 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
 import UserProfileStore from "UserProfileStore" /* 7881 */;
-import WidgetStore from "WidgetStore" /* 12582 */;
+import WidgetStore from "WidgetStore" /* 12581 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ export default function useUserProfileEditForm() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       c13 = 2;
@@ -84,7 +84,7 @@ export default function useUserProfileEditForm() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -130,7 +130,7 @@ export default function useUserProfileEditForm() {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         c3 = 3;
         throw tmp15;

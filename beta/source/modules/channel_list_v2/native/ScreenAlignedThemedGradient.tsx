@@ -1,17 +1,17 @@
-// Module ID: 18481
-// Function ID: 18482
+// Module ID: 18482
+// Function ID: 18483
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 5170, 12646, 9946, 10887, 18452, 1493, 1652, 2]
+// Dependencies: [17, 21, 5170, 12645, 9946, 10887, 18453, 1493, 1652, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 18481 (ScreenAlignedThemedGradient)
+// Module 18482 (ScreenAlignedThemedGradient)
 import Fragment from "Fragment" /* 21 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import useActiveTheme from "useActiveTheme" /* 9946 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10887 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12646 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18452 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12645 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18453 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;

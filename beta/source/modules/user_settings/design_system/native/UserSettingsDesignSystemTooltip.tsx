@@ -1,10 +1,10 @@
-// Module ID: 18159
-// Function ID: 18160
+// Module ID: 18160
+// Function ID: 18161
 // Name: UserSettingsDesignSystemTooltip
 // Dependencies: [32, 19, 17, 21, 5170, 9010, 10110, 5790, 7462, 7157, 7160, 5783, 7388, 5770, 2]
 // Exports: default, useCanRotate
 
-// Module 18159 (UserSettingsDesignSystemTooltip)
+// Module 18160 (UserSettingsDesignSystemTooltip)
 import react_native from "react-native" /* 17 */;
 import LayerScope2 from "LayerScope" /* 5770 */;
 import Text_Text from "Text/Text" /* 5783 */;

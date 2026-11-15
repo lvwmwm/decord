@@ -1,14 +1,14 @@
-// Module ID: 13609
-// Function ID: 13610
+// Module ID: 13608
+// Function ID: 13609
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 8072, 21, 5170, 13586, 1113, 13584, 5874, 13610, 5783, 13604, 2]
+// Dependencies: [19, 17, 8072, 21, 5170, 13585, 1113, 13583, 5874, 13609, 5783, 13603, 2]
 // Exports: default
 
-// Module 13609 (AppealIngestionRequestSent)
+// Module 13608 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5874 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13604 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13610 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13603 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13609 */;
 import react from "react" /* 19 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 8072 */;
 import Fragment from "Fragment" /* 21 */;

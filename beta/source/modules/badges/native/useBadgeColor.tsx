@@ -1,10 +1,10 @@
-// Module ID: 11654
-// Function ID: 11655
+// Module ID: 11653
+// Function ID: 11654
 // Name: useBadgeColor
-// Dependencies: [5, 32, 19, 575, 1453, 5290, 11655, 2022, 2]
+// Dependencies: [5, 32, 19, 575, 1453, 5290, 11654, 2022, 2]
 // Exports: useBadgeColor
 
-// Module 11654 (useBadgeColor)
+// Module 11653 (useBadgeColor)
 import nativeDefault from "native" /* 575 */;
 import LRUCacheDefault from "LRUCache" /* 1453 */;
 import utils_FunctionUtils from "utils/FunctionUtils" /* 5290 */;
@@ -47,7 +47,7 @@ export function useBadgeColor(rasterUrl) {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -81,7 +81,7 @@ export function useBadgeColor(rasterUrl) {
                                 const obj2 = { value, done: true };
                                 return obj2;
                               } else {
-                                return { value: "HermesInternal", done: "HermesInternal" };
+                                return { value: "HermesInternal", done: null };
                               }
                             } else {
                               try {
@@ -157,7 +157,7 @@ export function useBadgeColor(rasterUrl) {
                 const tmp16 = closure_1(closure_0);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp20) {
             if (0 === c3) {

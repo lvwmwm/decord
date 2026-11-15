@@ -1,10 +1,10 @@
-// Module ID: 19719
-// Function ID: 19720
+// Module ID: 19724
+// Function ID: 19725
 // Name: VoiceControlsToggleNuxActionSheet
 // Dependencies: [32, 19, 17, 5171, 5016, 21, 5170, 575, 8877, 504, 5420, 8980, 5783, 1113, 5790, 2]
 // Exports: default
 
-// Module 19719 (VoiceControlsToggleNuxActionSheet)
+// Module 19724 (VoiceControlsToggleNuxActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;

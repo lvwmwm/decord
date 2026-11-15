@@ -1,9 +1,9 @@
-// Module ID: 18250
-// Function ID: 18251
+// Module ID: 18251
+// Function ID: 18252
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [5, 32, 19, 17, 5786, 9701, 7706, 1074, 1072, 21, 5170, 575, 1499, 18251, 504, 2183, 9668, 10066, 7445, 9689, 18252, 1113, 5783, 5790, 18203, 14762, 7420, 1627, 17340, 1652, 5793, 5794, 1252, 7872, 9576, 10840, 18253, 18232, 2]
+// Dependencies: [5, 32, 19, 17, 5786, 9701, 7706, 1074, 1072, 21, 5170, 575, 1499, 18252, 504, 2183, 9668, 10066, 7445, 9689, 18253, 1113, 5783, 5790, 18204, 14763, 7420, 1627, 17341, 1652, 5793, 5794, 1252, 7872, 9576, 10840, 18254, 18233, 2]
 
-// Module 18250 (CollectiblesShopViewAllCategoryItems)
+// Module 18251 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -185,7 +185,7 @@ function CategoryItemsBySku(categorySkuId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -231,7 +231,7 @@ function CategoryItemsBySku(categorySkuId) {
                 c2 = 0;
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp17) {
             if (0 === c2) {

@@ -34,11 +34,11 @@ class NativeWorklets {
     let code6;
     const self = this;
     _classCallCheck(this, NativeWorklets);
-    Object.defineProperty(this, closure_4, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_5, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_6, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_7, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_8, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_4, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_6, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_7, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_8, { writable: true, value: "a" });
     const obj = bundleModeNative;
     const isBundleModeEnabledResult = obj.isBundleModeEnabled();
     globalThis._WORKLETS_VERSION_JS = _mod1711.jsVersion;

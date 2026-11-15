@@ -1,10 +1,10 @@
-// Module ID: 12694
-// Function ID: 12695
+// Module ID: 12693
+// Function ID: 12694
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 9885, 1498, 1072, 6199, 21, 5170, 12695, 575, 12617, 7071, 11678, 12669, 7809, 11932, 1113, 1627, 10467, 2116, 12699, 9884, 5839, 12614, 1377, 12701, 5783, 12703, 12666, 12705, 9883, 1187, 12713, 12715, 5406, 5921, 11067, 2]
+// Dependencies: [5, 19, 17, 9885, 1498, 1072, 6199, 21, 5170, 12694, 575, 12616, 7071, 11677, 12668, 7809, 11931, 1113, 1627, 10467, 2116, 12698, 9884, 5839, 12613, 1377, 12700, 5783, 12702, 12665, 12704, 9883, 1187, 12712, 12714, 5406, 5921, 11067, 2]
 // Exports: default
 
-// Module 12694 (AppDetailContent)
+// Module 12693 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -16,13 +16,13 @@ import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6199 */
 import TableRow2 from "TableRow" /* 7071 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7809 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9884 */;
-import AppLauncherContext from "AppLauncherContext" /* 11678 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12614 */;
-import react2 from "react" /* 12617 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 12669 */;
-import Header from "Header" /* 12695 */;
-import BillIcon from "BillIcon" /* 12701 */;
-import ShopIcon from "ShopIcon" /* 12703 */;
+import AppLauncherContext from "AppLauncherContext" /* 11677 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12613 */;
+import react2 from "react" /* 12616 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 12668 */;
+import Header from "Header" /* 12694 */;
+import BillIcon from "BillIcon" /* 12700 */;
+import ShopIcon from "ShopIcon" /* 12702 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9885 */;
@@ -92,7 +92,7 @@ class CommandRow {
     let onPressSend;
     ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = command);
     let tmp = command;
-    let obj = command(11678);
+    let obj = command(11677);
     const entrypoint = obj.useAppLauncherContext().entrypoint;
     const tmp3 = onPressSend(true, true);
     hasOptions(context, true, true);
@@ -112,8 +112,8 @@ class CommandRow {
       sectionName
     };
     fn = undefined;
-    const useCommandRowSend = command(12669).useCommandRowSend;
-    const tmp5 = command(12669);
+    const useCommandRowSend = command(12668).useCommandRowSend;
+    const tmp5 = command(12668);
     if (installOnDemand) {
       let closure_0 = _asyncToGenerator(async (arg0, value) => {
         let obj5;
@@ -129,7 +129,7 @@ class CommandRow {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -170,7 +170,7 @@ class CommandRow {
                 closure_0();
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             c3 = 3;

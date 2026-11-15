@@ -1,10 +1,10 @@
-// Module ID: 20419
-// Function ID: 20420
+// Module ID: 20424
+// Function ID: 20425
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 5019, 7376, 5041, 5102, 5112, 1385, 1072, 21, 5170, 575, 5808, 17588, 5406, 7160, 7071, 1627, 504, 1113, 5420, 7415, 7315, 7390, 11661, 6831, 9139, 2118, 9142, 9147, 5783, 2]
+// Dependencies: [32, 19, 17, 5019, 7376, 5041, 5102, 5112, 1385, 1072, 21, 5170, 575, 5808, 17589, 5406, 7160, 7071, 1627, 504, 1113, 5420, 7415, 7315, 7390, 11660, 6831, 9139, 2118, 9142, 9147, 5783, 2]
 // Exports: default
 
-// Module 20419 (ChannelSelectorActionSheet)
+// Module 20424 (ChannelSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -41,7 +41,7 @@ function ChannelRow(channel) {
   const onChannelSelected = channel.onChannelSelected;
   ({ selected, guild, start, end } = channel);
   let str = onChannelSelected(5808)(channel);
-  let obj = channel(17588);
+  let obj = channel(17589);
   const items = [onChannelSelected, channel];
   const channelIconComponentOrDefault = obj.getChannelIconComponentOrDefault(channel, guild);
   const callback = react.useCallback(() => {
@@ -204,7 +204,7 @@ export default function ChannelSelectorActionSheet(guildId) {
         }
     };
     TableRow = tmp7(7071).TableRow;
-    obj9 = { IconComponent: tmp7(11661).PlusMediumIcon };
+    obj9 = { IconComponent: tmp7(11660).PlusMediumIcon };
     Icon = tmp7(7071).TableRow.Icon;
     intl3 = tmp7(1113).intl;
     tmp10Result = tmp10(tmp11, obj7);

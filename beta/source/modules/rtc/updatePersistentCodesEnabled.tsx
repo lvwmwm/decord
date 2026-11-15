@@ -1,10 +1,10 @@
-// Module ID: 18259
-// Function ID: 18260
+// Module ID: 18260
+// Function ID: 18261
 // Name: updatePersistentCodesEnabled
 // Dependencies: [5, 502, 5019, 5835, 9379, 1072, 572, 9378, 6611, 6122, 1113, 9382, 6793, 2]
 // Exports: updatePersistentCodesEnabled
 
-// Module 18259 (updatePersistentCodesEnabled)
+// Module 18260 (updatePersistentCodesEnabled)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -39,7 +39,7 @@ let obj = function _savePersistentCodesEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _savePersistentCodesEnabled() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp38) {
           closure_5 = tmp38;
           if (0 === c6) {
@@ -160,7 +160,7 @@ obj = function _updatePersistentCodesEnabled() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -221,7 +221,7 @@ obj = function _updatePersistentCodesEnabled() {
                     let obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -257,7 +257,7 @@ obj = function _updatePersistentCodesEnabled() {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp6) {
                     c0 = 3;
@@ -282,7 +282,7 @@ obj = function _updatePersistentCodesEnabled() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;

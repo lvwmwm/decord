@@ -1,10 +1,10 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12718
+// Function ID: 12719
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5171, 9885, 5076, 1498, 1072, 1623, 21, 1652, 5747, 5170, 575, 12720, 504, 5402, 5405, 1705, 5408, 5167, 5791, 1113, 5885, 11678, 5921, 5767, 12722, 5839, 6819, 12614, 1259, 12670, 12724, 2116, 9884, 12671, 11932, 1493, 11419, 7050, 10681, 12725, 10682, 8323, 2017, 8312, 12726, 11679, 5424, 5783, 12727, 12728, 12762, 1187, 38, 12693, 10467, 7809, 9890, 10468, 12763, 12764, 12679, 12680, 2]
+// Dependencies: [5, 32, 19, 17, 5171, 9885, 5076, 1498, 1072, 1623, 21, 1652, 5747, 5170, 575, 12719, 504, 5402, 5405, 1705, 5408, 5167, 5791, 1113, 5885, 11677, 5921, 5767, 12721, 5839, 6819, 12613, 1259, 12669, 12723, 2116, 9884, 12670, 11931, 1493, 11418, 7050, 10681, 12724, 10682, 8323, 2017, 8312, 12725, 11678, 5424, 5783, 12726, 12727, 12761, 1187, 38, 12692, 10467, 7809, 9890, 10468, 12762, 12763, 12678, 12679, 2]
 // Exports: default
 
-// Module 12719 (AppLauncherCommandViewScreen)
+// Module 12718 (AppLauncherCommandViewScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -18,18 +18,18 @@ import utils_UploadUtils from "utils/UploadUtils" /* 8323 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9884 */;
 import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10681 */;
 import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10682 */;
-import AppLauncherContext from "AppLauncherContext" /* 11678 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11679 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12614 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12671 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12679 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12680 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12720 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12722 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12724 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 12727 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12763 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12764 */;
+import AppLauncherContext from "AppLauncherContext" /* 11677 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11678 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12613 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12670 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12678 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12679 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12719 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12721 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12723 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 12726 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12762 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12763 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -731,7 +731,7 @@ function AppLauncherCommandViewInner(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -749,7 +749,7 @@ function AppLauncherCommandViewInner(command) {
             if (tmp14) {
               if (null == command) {
                 c2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 const obj4 = { applicationId: command.applicationId, channel: context.channel, commandIntegrationTypes: command.integration_types, appLauncherContext: obj6 };
                 obj6 = { entrypoint, location: analyticsLocation, sectionName };
@@ -770,11 +770,11 @@ function AppLauncherCommandViewInner(command) {
           return obj;
         } else if (!value.isAuthorized) {
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
         closure_128_49();
         c2 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c2 = 3;
         throw tmp10;

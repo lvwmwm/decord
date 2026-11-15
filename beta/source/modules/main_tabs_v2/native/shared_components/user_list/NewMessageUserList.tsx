@@ -1,7 +1,7 @@
 // Module ID: 14182
 // Function ID: 14183
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 5019, 5112, 1385, 10878, 21, 5170, 575, 6987, 5226, 5808, 12, 10880, 1113, 5783, 10882, 10884, 13667, 14183, 2]
+// Dependencies: [32, 19, 17, 5019, 5112, 1385, 10878, 21, 5170, 575, 6987, 5226, 5808, 12, 10880, 1113, 5783, 10882, 10884, 13666, 14183, 2]
 // Exports: default, useSearchGDMNames
 
 // Module 14182 (NewMessageUserList)

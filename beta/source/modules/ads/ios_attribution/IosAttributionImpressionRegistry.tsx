@@ -1,21 +1,21 @@
-// Module ID: 14945
-// Function ID: 14946
+// Module ID: 14946
+// Function ID: 14947
 // Name: IosAttributionImpressionRegistry
-// Dependencies: [5, 14946, 3, 14943, 14947, 14948, 2]
+// Dependencies: [5, 14947, 3, 14944, 14948, 14949, 2]
 // Exports: endImpression, getStoreKitCredential, registerViewThroughImpression
 
-// Module 14945 (IosAttributionImpressionRegistry)
+// Module 14946 (IosAttributionImpressionRegistry)
 import LoggerDefault from "Logger" /* 3 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14943 */;
-import IosAttributionFramework from "IosAttributionFramework" /* 14946 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 14947 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14944 */;
+import IosAttributionFramework from "IosAttributionFramework" /* 14947 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 14948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let impressionToken;
 
 let obj3;
-const f108879 = () => {
+const f108901 = () => {
 
 };
 function isCurrentImpression(arg0, arg1) {
@@ -31,7 +31,7 @@ function endImpressionToken(arg0) {
   if (null != arg0) {
     obj = IosAttributionNativeModule;
     const endImpressionResult = obj.endImpression(arg0);
-    endImpressionResult.catch(f108879);
+    endImpressionResult.catch(f108901);
   }
 }
 let obj = function _startNativeImpression() {
@@ -66,7 +66,7 @@ let obj = function _startNativeImpression() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ let obj = function _startNativeImpression() {
                 const result = obj11.trackIosAttributionImpression(closure_130_0(closure_130_1[4]).IosAttributionImpressionResult.NO_FRAMEWORK, c2);
                 closure_130_7(impressionId, signAbort);
                 c4 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 const obj8 = { metadataSealed, impressionId, specs: items, signal: signAbort.signAbort.signal };
                 items = [viewThroughSpec];
@@ -183,7 +183,7 @@ let obj = function _startNativeImpression() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp83) {
           c4 = 3;
@@ -210,7 +210,7 @@ obj = function _getImpressionToken() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -295,7 +295,7 @@ obj = function _getStoreKitCredential() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -336,7 +336,7 @@ obj = function _getStoreKitCredential() {
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -413,7 +413,7 @@ export function endImpression(arg0) {
     if (null != token) {
       const obj2 = IosAttributionNativeModule;
       const endImpressionResult = obj2.endImpression(token);
-      endImpressionResult.catch(f108879);
+      endImpressionResult.catch(f108901);
     }
   }
 }

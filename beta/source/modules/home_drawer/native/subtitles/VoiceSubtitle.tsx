@@ -1,10 +1,10 @@
-// Module ID: 18766
-// Function ID: 18767
+// Module ID: 18767
+// Function ID: 18768
 // Name: VoiceSubtitle
 // Dependencies: [19, 21, 5783, 1113, 6205, 2]
 // Exports: default
 
-// Module 18766 (VoiceSubtitle)
+// Module 18767 (VoiceSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;

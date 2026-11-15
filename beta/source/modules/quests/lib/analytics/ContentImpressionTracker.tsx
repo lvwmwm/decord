@@ -1,10 +1,10 @@
-// Module ID: 14965
-// Function ID: 14966
+// Module ID: 14966
+// Function ID: 14967
 // Name: ContentImpressionTracker
-// Dependencies: [5, 19, 7955, 9810, 1072, 21, 1266, 6876, 7951, 14942, 14943, 14947, 14945, 7982, 7981, 7962, 9806, 9811, 9808, 7963, 7972, 6626, 6631, 9840, 504, 5753, 9841, 2]
+// Dependencies: [5, 19, 7955, 9810, 1072, 21, 1266, 6876, 7951, 14943, 14944, 14948, 14946, 7982, 7981, 7962, 9806, 9811, 9808, 7963, 7972, 6626, 6631, 9840, 504, 5753, 9841, 2]
 // Exports: QuestContentImpressionTracker
 
-// Module 14965 (ContentImpressionTracker)
+// Module 14966 (ContentImpressionTracker)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6626 */;
@@ -14,10 +14,10 @@ import QuestDataUtils from "QuestDataUtils" /* 7951 */;
 import getQuestLogger from "getQuestLogger" /* 7963 */;
 import AnalyticsActions from "AnalyticsActions" /* 7972 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
-import IosAttributionEligibility from "IosAttributionEligibility" /* 14942 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14943 */;
-import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14945 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 14947 */;
+import IosAttributionEligibility from "IosAttributionEligibility" /* 14943 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14944 */;
+import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14946 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 14948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import QuestStore from "QuestStore" /* 7955 */;
@@ -94,15 +94,15 @@ class QuestContentImpression {
                 const result = tmp2Result7.registerViewThroughImpression(obj2);
               } else {
                 const tmp2Result8 = IosAttributionMetrics;
-                const result1 = tmp2Result8.trackIosAttributionImpression(tmp2(14947).IosAttributionImpressionResult.NOT_SKAN_ENABLED, activeIosAttributionFramework, tmp.id);
+                const result1 = tmp2Result8.trackIosAttributionImpression(tmp2(14948).IosAttributionImpressionResult.NOT_SKAN_ENABLED, activeIosAttributionFramework, tmp.id);
               }
             } else {
               const tmp2Result9 = IosAttributionMetrics;
-              const result2 = tmp2Result9.trackIosAttributionImpression(tmp2(14947).IosAttributionImpressionResult.NO_METADATA, activeIosAttributionFramework, tmp.id);
+              const result2 = tmp2Result9.trackIosAttributionImpression(tmp2(14948).IosAttributionImpressionResult.NO_METADATA, activeIosAttributionFramework, tmp.id);
             }
           } else {
             const tmp2Result10 = IosAttributionMetrics;
-            const result3 = tmp2Result10.trackIosAttributionImpression(tmp2(14947).IosAttributionImpressionResult.NO_FRAMEWORK, activeIosAttributionFramework, tmp.id);
+            const result3 = tmp2Result10.trackIosAttributionImpression(tmp2(14948).IosAttributionImpressionResult.NO_FRAMEWORK, activeIosAttributionFramework, tmp.id);
           }
         }
       }
@@ -119,7 +119,7 @@ class QuestContentImpression {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -228,7 +228,7 @@ class QuestContentImpression {
               closure_129_0.onImpressionCallback();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;

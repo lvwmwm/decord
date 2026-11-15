@@ -1,10 +1,10 @@
-// Module ID: 14016
-// Function ID: 14017
+// Module ID: 14015
+// Function ID: 14016
 // Name: RefreshChatInputCoachmark
 // Dependencies: [32, 19, 5016, 7674, 5003, 1113, 5323, 10109, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 14016 (RefreshChatInputCoachmark)
+// Module 14015 (RefreshChatInputCoachmark)
 import intl3 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
 import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 5323 */;

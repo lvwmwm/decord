@@ -1,9 +1,9 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 16963
+// Function ID: 16964
 // Name: AccountPhoneSetting
-// Dependencies: [1385, 8536, 7308, 504, 6831, 7307, 2118, 7310, 11717, 1113, 2]
+// Dependencies: [1385, 8536, 7308, 504, 6831, 7307, 2118, 7310, 11716, 1113, 2]
 
-// Module 16962 (AccountPhoneSetting)
+// Module 16963 (AccountPhoneSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -12,7 +12,7 @@ import PhoneConstants from "PhoneConstants" /* 7308 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 7310 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import UserStore from "UserStore" /* 1385 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

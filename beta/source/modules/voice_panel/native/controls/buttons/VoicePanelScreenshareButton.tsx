@@ -1,18 +1,18 @@
-// Module ID: 19764
-// Function ID: 19765
+// Module ID: 19769
+// Function ID: 19770
 // Name: VoicePanelScreenshareButton
-// Dependencies: [19, 5019, 21, 1624, 14377, 19627, 5170, 11394, 19751, 504, 38, 19621, 19765, 19752, 1113, 7056, 2]
+// Dependencies: [19, 5019, 21, 1624, 14378, 18876, 5170, 11394, 19756, 504, 38, 18870, 19770, 19757, 1113, 7056, 2]
 // Exports: default
 
-// Module 19764 (VoicePanelScreenshareButton)
+// Module 19769 (VoicePanelScreenshareButton)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import NativeViewDefault from "NativeView" /* 7056 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 14377 */;
-import useVoicePanelScreenshareToggleDefault from "useVoicePanelScreenshareToggle" /* 19621 */;
-import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 19627 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19752 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 14378 */;
+import useVoicePanelScreenshareToggleDefault from "useVoicePanelScreenshareToggle" /* 18870 */;
+import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 18876 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19757 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
@@ -37,7 +37,7 @@ export default function ScreenshareButton(arg0) {
   ({ props, wrapperSpecs } = arg0);
   const channelId = react.useContext(VoicePanelStateContextDefault).channelId;
   const tmp3 = closure_7();
-  const obj = channelId(19751);
+  const obj = channelId(19756);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
   const items = [ChannelStore];
   const obj2 = channelId(504);
@@ -59,7 +59,7 @@ export default function ScreenshareButton(arg0) {
     color = voicePanelButtonStyles.iconFillSelected.color;
   }
   if (videoBlocked) {
-    let MobilePhoneDenyIcon = tmp4(19765).MobilePhoneDenyIcon;
+    let MobilePhoneDenyIcon = tmp4(19770).MobilePhoneDenyIcon;
   } else {
     MobilePhoneDenyIcon = MobilePhoneShareIcon;
   }

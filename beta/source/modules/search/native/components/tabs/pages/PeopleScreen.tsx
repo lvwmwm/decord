@@ -1,9 +1,9 @@
-// Module ID: 19162
-// Function ID: 19163
+// Module ID: 19220
+// Function ID: 19221
 // Name: PeopleScreen
-// Dependencies: [5, 19, 14181, 14166, 9950, 9949, 21, 14159, 504, 19104, 19100, 7582, 14173, 19163, 19096, 19108, 2]
+// Dependencies: [5, 19, 14181, 14166, 9950, 9949, 21, 14159, 504, 19162, 19158, 7582, 14173, 19221, 19154, 19166, 2]
 
-// Module 19162 (PeopleScreen)
+// Module 19220 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
 import TrackingConstants from "TrackingConstants" /* 9949 */;
 import TrackingDefault from "Tracking" /* 14173 */;
@@ -62,7 +62,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
             const result = obj6.trackSearchResultClicked(obj7);
             closure_1_6(userId, channelId);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c5 = 3;

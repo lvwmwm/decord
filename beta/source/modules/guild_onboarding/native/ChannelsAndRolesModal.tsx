@@ -1,10 +1,10 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11766
+// Function ID: 11767
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 5041, 7365, 21, 5170, 575, 563, 7619, 9092, 1113, 9327, 11768, 11774, 10296, 2]
+// Dependencies: [32, 19, 17, 5041, 7365, 21, 5170, 575, 563, 7619, 9092, 1113, 9327, 11767, 11773, 10296, 2]
 // Exports: default
 
-// Module 11767 (ChannelsAndRolesModal)
+// Module 11766 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;

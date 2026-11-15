@@ -1,14 +1,14 @@
-// Module ID: 12052
-// Function ID: 12053
+// Module ID: 12051
+// Function ID: 12052
 // Name: useGlobalStatusIndicatorState
-// Dependencies: [5019, 5925, 12053, 1072, 11904, 12054, 504, 11357, 12050, 5346, 8041, 11358, 12055, 2]
+// Dependencies: [5019, 5925, 12052, 1072, 11903, 12053, 504, 11357, 12049, 5346, 8041, 11358, 12054, 2]
 // Exports: useGlobalStatusIndicatorState
 
-// Module 12052 (useGlobalStatusIndicatorState)
+// Module 12051 (useGlobalStatusIndicatorState)
 import Constants from "Constants" /* 1072 */;
 import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11357 */;
-import ConnectivityConstants from "ConnectivityConstants" /* 12053 */;
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 12054 */;
+import ConnectivityConstants from "ConnectivityConstants" /* 12052 */;
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 12053 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let importDefault;
 
 let tmp4;
-const useMyCurrentStageChannelDefault = tmp4(12055);
+const useMyCurrentStageChannelDefault = tmp4(12054);
 const RTC_PANEL_HEIGHT = ConnectivityConstants.RTC_PANEL_HEIGHT;
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 const result = size.fileFinishedImporting("modules/connectivity/native/useGlobalStatusIndicatorState.tsx");
@@ -28,7 +28,7 @@ export function useGlobalStatusIndicatorState(flag) {
   }
   let stateFromStores;
   importDefault = undefined;
-  const obj = stateFromStores(11904);
+  const obj = stateFromStores(11903);
   let hasPipParticipant = obj.useHasPipParticipant({ isActivityViewFocused: false });
   const tmp5 = useVoiceStateForRemoteSessionDefault();
   const items = [RTCConnectionStore];
@@ -50,7 +50,7 @@ export function useGlobalStatusIndicatorState(flag) {
     }
     return isGuildStageVoiceResult;
   }, items2);
-  const obj4 = stateFromStores(12050);
+  const obj4 = stateFromStores(12049);
   let num = obj4.useGetStageRTCPanelHeight(stateFromStores);
   stateFromStores(5346);
   let tmp12 = null != tmp5;

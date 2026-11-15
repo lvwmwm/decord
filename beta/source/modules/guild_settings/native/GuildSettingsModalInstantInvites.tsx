@@ -1,10 +1,10 @@
-// Module ID: 20262
-// Function ID: 20263
+// Module ID: 20267
+// Function ID: 20268
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 11172, 8303, 5019, 5041, 9188, 1072, 21, 5170, 575, 1113, 2185, 7070, 5783, 7079, 15815, 14195, 504, 12, 8588, 8586, 5406, 13520, 2118, 5869, 10959, 7304, 1187, 20263, 7390, 5766, 2]
+// Dependencies: [32, 19, 17, 11172, 8303, 5019, 5041, 9188, 1072, 21, 5170, 575, 1113, 2185, 7070, 5783, 7079, 15816, 14195, 504, 12, 8588, 8586, 5406, 13519, 2118, 5869, 10959, 7304, 1187, 20268, 7390, 5766, 2]
 // Exports: default
 
-// Module 20262 (GuildSettingsModalInstantInvites)
+// Module 20267 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8586 */;
 import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8588 */;
 import InstantInvite from "InstantInvite" /* 10959 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15815 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15816 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -186,7 +186,7 @@ function GuildSettingsModalInstantInvites(invites) {
         obj2 = GuildAntiRaidUtils;
         const obj4 = { guild, analyticsData: obj };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(13520, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+        obj3.openLazy(asyncRequire(13519, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         closure_7(false);
       } catch (tmp16) {
         closure_7(false);

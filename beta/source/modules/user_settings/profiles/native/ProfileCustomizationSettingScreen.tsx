@@ -1,27 +1,27 @@
-// Module ID: 16785
-// Function ID: 16786
+// Module ID: 16786
+// Function ID: 16787
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 11633, 8835, 12582, 6860, 1082, 1072, 21, 5170, 575, 1113, 16786, 16910, 7247, 12584, 16919, 15204, 5756, 5231, 9102, 1499, 7259, 9092, 11580, 16806, 16911, 504, 5921, 11697, 16921, 7097, 7663, 1500, 12253, 16924, 12374, 14464, 2]
+// Dependencies: [5, 109, 32, 19, 17, 11632, 8835, 12581, 6860, 1082, 1072, 21, 5170, 575, 1113, 16787, 16911, 7247, 12583, 16920, 15205, 5756, 5231, 9102, 1499, 7259, 9092, 11579, 16807, 16912, 504, 5921, 11696, 16922, 7097, 7663, 1500, 12252, 16925, 12373, 14465, 2]
 
-// Module 16785 (ProfileCustomizationSettingScreen)
+// Module 16786 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl2 from "intl" /* 1113 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5921 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7247 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11580 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11697 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12584 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16786 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16910 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11579 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11696 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12583 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16787 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16911 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11633 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11632 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
-import WidgetStore from "WidgetStore" /* 12582 */;
+import WidgetStore from "WidgetStore" /* 12581 */;
 import SortedGuildStore from "SortedGuildStore" /* 6860 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -275,7 +275,7 @@ const memoResult = react.memo(function ProfileCustomizationSettingScreen() {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -307,7 +307,7 @@ const memoResult = react.memo(function ProfileCustomizationSettingScreen() {
                     closure_128_3(true);
                   }
                   c2 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp8) {
                 c2 = 3;

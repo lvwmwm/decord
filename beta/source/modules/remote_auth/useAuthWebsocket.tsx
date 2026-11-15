@@ -1,13 +1,13 @@
-// Module ID: 18404
-// Function ID: 18405
+// Module ID: 18405
+// Function ID: 18406
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1072, 3, 18403, 559, 7235, 15848, 18405, 1108, 1282, 6827, 18407, 2]
+// Dependencies: [5, 32, 19, 1072, 3, 18404, 559, 7235, 15849, 18406, 1108, 1282, 6827, 18408, 2]
 // Exports: useAuthWebsocket
 
-// Module 18404 (useAuthWebsocket)
+// Module 18405 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
-import typing from "typing" /* 18403 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 18405 */;
+import typing from "typing" /* 18404 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 18406 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -137,7 +137,7 @@ export function useAuthWebsocket(callback, arg1) {
               obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -226,7 +226,7 @@ export function useAuthWebsocket(callback, arg1) {
                               obj2 = { value, done: true };
                               return obj2;
                             } else {
-                              return { value: "HermesInternal", done: "HermesInternal" };
+                              return { value: "HermesInternal", done: null };
                             }
                           } else {
                             try {
@@ -313,7 +313,7 @@ export function useAuthWebsocket(callback, arg1) {
                                 closure_0(closure_1);
                               }
                               c4 = 3;
-                              return { value: "HermesInternal", done: "HermesInternal" };
+                              return { value: "HermesInternal", done: null };
                             } catch (tmp23) {
                               c4 = 3;
                               throw tmp23;
@@ -374,11 +374,11 @@ export function useAuthWebsocket(callback, arg1) {
                   } else if ("heartbeat_ack" === op) {
                     user = true;
                     c4 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     !warn("received unsupported message");
                     c4 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 }
               } else if (2 === tmp4) {
@@ -464,7 +464,7 @@ export function useAuthWebsocket(callback, arg1) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -537,7 +537,7 @@ export function useAuthWebsocket(callback, arg1) {
                   closure_129_2.send(JSON.stringify(obj12));
                   getKeyPair.current = current;
                   c3 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             }

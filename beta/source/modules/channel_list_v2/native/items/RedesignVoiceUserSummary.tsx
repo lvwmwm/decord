@@ -1,10 +1,10 @@
-// Module ID: 18559
-// Function ID: 18560
+// Module ID: 18560
+// Function ID: 18561
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 5073, 5928, 21, 504, 6210, 18558, 2]
+// Dependencies: [19, 5073, 5928, 21, 504, 6210, 18559, 2]
 // Exports: default
 
-// Module 18559 (RedesignVoiceUserSummary)
+// Module 18560 (RedesignVoiceUserSummary)
 import Fragment from "Fragment" /* 21 */;
 import ChannelUtils from "ChannelUtils" /* 6210 */;
 import react from "react" /* 19 */;

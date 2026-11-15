@@ -1,10 +1,10 @@
-// Module ID: 19409
-// Function ID: 19410
+// Module ID: 19467
+// Function ID: 19468
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 5018, 6931, 10050, 502, 2130, 1072, 5837, 21, 5170, 1187, 575, 11904, 504, 6939, 11897, 8041, 11903, 8877, 11906, 9010, 11948, 11952, 11960, 11973, 11982, 11893, 11949, 11902, 6961, 1652, 5402, 5746, 19410, 1627, 2]
+// Dependencies: [32, 19, 17, 5018, 6931, 10050, 502, 2130, 1072, 5837, 21, 5170, 1187, 575, 11903, 504, 6939, 11896, 8041, 11902, 8877, 11905, 9010, 11947, 11951, 11959, 11972, 11981, 11892, 11948, 11901, 6961, 1652, 5402, 5746, 19468, 1627, 2]
 // Exports: default
 
-// Module 19409 (PictureInPictureGlobal)
+// Module 19467 (PictureInPictureGlobal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
@@ -16,9 +16,9 @@ import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6939 */;
 import isChannelFocused from "isChannelFocused" /* 6961 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10050 */;
-import transitionToActivityDefault from "transitionToActivity" /* 11893 */;
-import PictureInPictureDefault from "PictureInPicture" /* 11902 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19410 */;
+import transitionToActivityDefault from "transitionToActivity" /* 11892 */;
+import PictureInPictureDefault from "PictureInPicture" /* 11901 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19468 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -233,11 +233,11 @@ let closure_18 = react.memo(function PIPContent(channel) {
 let closure_19 = react.memo(function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f118439 = () => constants.TOP_RIGHT;
+  const f118648 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f118439);
+  [tmp2, tmp3] = react.useState(f118648);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_18, { channel }) };
-  _slicedToArray(react.useState(f118439), 2);
+  _slicedToArray(react.useState(f118648), 2);
   const tmp4 = PictureInPictureDefault;
   return closure_15(tmp4, obj);
 });

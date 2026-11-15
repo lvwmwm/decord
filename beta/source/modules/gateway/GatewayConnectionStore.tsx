@@ -1,7 +1,7 @@
 // Module ID: 6655
 // Function ID: 6656
 // Name: GatewayConnectionStore
-// Dependencies: [5, 1231, 502, 6656, 5019, 2130, 5925, 6024, 5073, 6657, 7995, 1072, 1082, 15843, 15886, 3, 510, 15993, 6793, 1377, 6960, 15878, 12, 6804, 15857, 504, 572, 2]
+// Dependencies: [5, 1231, 502, 6656, 5019, 2130, 5925, 6024, 5073, 6657, 7995, 1072, 1082, 15844, 15887, 3, 510, 15994, 6793, 1377, 6960, 15879, 12, 6804, 15858, 504, 572, 2]
 
 // Module 6655 (GatewayConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -11,10 +11,10 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import DiscordAppStateDefault from "DiscordAppState" /* 6960 */;
-import GatewaySocketSingleton from "GatewaySocketSingleton" /* 15843 */;
-import ConnectionStateDefault from "ConnectionState" /* 15857 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15878 */;
-import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 15886 */;
+import GatewaySocketSingleton from "GatewaySocketSingleton" /* 15844 */;
+import ConnectionStateDefault from "ConnectionState" /* 15858 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15879 */;
+import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 15887 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -49,7 +49,7 @@ let obj = function _handleConnectionOpen() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ let obj = function _handleConnectionOpen() {
               c22 = false;
               let c24 = null;
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -257,9 +257,9 @@ obj = {
     const socket2 = GatewaySocketSingleton.socket;
     let connectResult = socket2.isSessionEstablished();
     if (connectResult) {
-      const socket3 = tmp(15843).socket;
+      const socket3 = tmp(15844).socket;
       socket3.close();
-      const socket4 = tmp(15843).socket;
+      const socket4 = tmp(15844).socket;
       connectResult = socket4.connect();
     }
     return connectResult;
@@ -287,12 +287,12 @@ obj = {
         tmp6 = obj2.getState() !== constants2.BACKGROUND;
       }
       if (!tmp6) {
-        tmp6 = null != tmp(15843).localVoiceState.channelId;
+        tmp6 = null != tmp(15844).localVoiceState.channelId;
       }
       if (tmp6) {
         const obj3 = PauseGatewaySocketAll;
         obj3.setIsPaused(false);
-        const socket2 = tmp(15843).socket;
+        const socket2 = tmp(15844).socket;
         socket2.connect();
       }
     }
@@ -339,14 +339,14 @@ obj = {
     const isIOSResult = tmpResult.isIOS() && state === constants2.BACKGROUND;
     if (isIOSResult) {
       if (null == guildId.channelId) {
-        const socket3 = tmp(15843).socket;
+        const socket3 = tmp(15844).socket;
         socket3.close(true);
       } else {
-        const socket = tmp(15843).socket;
+        const socket = tmp(15844).socket;
         if (socket.isClosed()) {
           const obj3 = PauseGatewaySocketAll;
           obj3.setIsPaused(false);
-          const socket2 = tmp(15843).socket;
+          const socket2 = tmp(15844).socket;
           socket2.connect();
         }
       }
@@ -414,20 +414,20 @@ obj = {
         if (state === constants2.INACTIVE) {
           if (state.state === constants2.BACKGROUND) {
             if (null == GatewaySocketSingleton.localVoiceState.channelId) {
-              const socket4 = tmp(15843).socket;
+              const socket4 = tmp(15844).socket;
               socket4.close(true);
             }
           }
         }
         let isClosedResult = state === tmp7.BACKGROUND && state.state === tmp7.ACTIVE;
         if (isClosedResult) {
-          const socket2 = tmp(15843).socket;
+          const socket2 = tmp(15844).socket;
           isClosedResult = socket2.isClosed();
         }
         if (isClosedResult) {
           const obj2 = PauseGatewaySocketAll;
           obj2.setIsPaused(false);
-          const socket3 = tmp(15843).socket;
+          const socket3 = tmp(15844).socket;
           socket3.connect();
         }
       }
@@ -436,7 +436,7 @@ obj = {
       const obj3 = PauseGatewaySocketAll;
       obj3.setIsPaused(false);
       if (AuthenticationStore.isAuthenticated()) {
-        const socket = tmp(15843).socket;
+        const socket = tmp(15844).socket;
         socket.resetBackoff("App state is active");
       }
     }
@@ -456,7 +456,7 @@ obj = {
           const guildMembers = socket.requestGuildMembers(userIds.guildIds, obj);
         });
       } else {
-        const socket2 = tmp(15843).socket;
+        const socket2 = tmp(15844).socket;
         obj = { query: null, limit: null, presences: userIds.presences };
         ({ query: obj.query, limit: obj.limit } = userIds);
         let guildMembers = socket2.requestGuildMembers(userIds.guildIds, obj);
@@ -563,7 +563,7 @@ obj = {
           }
         });
       }
-      let socket2 = tmp(15843).socket;
+      let socket2 = tmp(15844).socket;
       socket2.streamWatch(streamKey);
     }
     return false;
@@ -572,10 +572,10 @@ obj = {
     streamKey = streamKey.streamKey;
     const socket = GatewaySocketSingleton.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = tmp(15843).socket;
+      const socket2 = tmp(15844).socket;
       socket2.streamDelete(streamKey);
     }
-    const localVoiceState = tmp(15843).localVoiceState;
+    const localVoiceState = tmp(15844).localVoiceState;
     localVoiceState.update();
     return false;
   },

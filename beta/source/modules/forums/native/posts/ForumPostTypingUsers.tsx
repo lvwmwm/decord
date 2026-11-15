@@ -1,10 +1,10 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14046
+// Function ID: 14047
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 5170, 575, 9991, 13997, 14048, 1652, 1187, 5783, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 9991, 13996, 14047, 1652, 1187, 5783, 2]
 // Exports: default
 
-// Module 14047 (ForumPostTypingUsers)
+// Module 14046 (ForumPostTypingUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

@@ -1,21 +1,20 @@
-// Module ID: 19647
-// Function ID: 19648
+// Module ID: 18914
+// Function ID: 18915
 // Name: VoicePanelDockPTTButton
-// Dependencies: [19, 17, 5019, 2130, 11413, 21, 575, 5170, 11394, 1652, 19643, 504, 12168, 7631, 12201, 5402, 5793, 5408, 11383, 19648, 7235, 5452, 1705, 19649, 8131, 1113, 12171, 5362, 19650, 2]
+// Dependencies: [19, 17, 5019, 2130, 11412, 21, 575, 5170, 11394, 1652, 18890, 504, 12167, 7631, 12200, 5402, 5793, 5408, 11383, 18915, 7235, 5452, 1705, 18917, 8131, 1113, 12170, 5362, 18918, 2]
 
-// Module 19647 (VoicePanelDockPTTButton)
+// Module 18914 (VoicePanelDockPTTButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import timing_timing from "timing/timing" /* 5402 */;
-import HapticUtils from "HapticUtils" /* 5408 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
 import spring_spring from "spring/spring" /* 5793 */;
 import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11383 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11412 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
@@ -177,18 +176,22 @@ const memoResult = react.memo(function VoicePanelDockPTTButton(measureGlowOffset
         if (onPress2 != null) {
           tmp11();
         }
-        const obj = HapticUtils;
-        let result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        const obj2 = MediaEngineActionCreators;
-        obj2.setPushToTalkState(MediaEngineStore.getMediaEngine(), true);
+        const obj = channelId(dockPTTMeasureHostRef[17]);
+        let result = obj.triggerHapticFeedback(channelId(dockPTTMeasureHostRef[17]).HapticFeedbackTypes.IMPACT_MEDIUM);
+        const obj2 = channelId(dockPTTMeasureHostRef[18]);
+        obj2.setPushToTalkState(onPress2.getMediaEngine(), true);
         const current2 = dockPTTMeasureHostRef.current;
         if (null != current2) {
-          current.measureLayout(current2, (x, y, width, height) => {
-            if (ref.current) {
-              size = { x, y, width, height };
-              const result = sharedValue1.set(size);
-              callback(1);
-            }
+          current2.measureInWindow((arg0, arg1) => {
+            let closure_0 = arg0;
+            let closure_1 = arg1;
+            current.measureInWindow((arg0, arg1, width, height) => {
+              if (ref.current) {
+                size = { x: arg0 - closure_0, y: arg1 - closure_1, width, height };
+                const result = closure_2_4.set(size);
+                closure_2_11(1);
+              }
+            });
           });
         }
       }

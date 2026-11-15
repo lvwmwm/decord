@@ -1,14 +1,14 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12352
+// Function ID: 12353
 // Name: conjureGamePickerOptions
-// Dependencies: [19, 2137, 2156, 11886, 504, 7616, 12354, 2]
+// Dependencies: [19, 2137, 2156, 11885, 504, 7616, 12353, 2]
 // Exports: conjureGamePickerOptions, useConjureGameNameLookup, useConjureGameOptions
 
-// Module 12353 (conjureGamePickerOptions)
+// Module 12352 (conjureGamePickerOptions)
 import get_initialized from "get initialized" /* 504 */;
 import _extends from "_extends" /* 7616 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11886 */;
-import useConjureSettingPickerOptions from "useConjureSettingPickerOptions" /* 12354 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11885 */;
+import useConjureSettingPickerOptions from "useConjureSettingPickerOptions" /* 12353 */;
 import react from "react" /* 19 */;
 import RunningGameStore from "RunningGameStore" /* 2137 */;
 import DetectableGameStore from "DetectableGameStore" /* 2156 */;

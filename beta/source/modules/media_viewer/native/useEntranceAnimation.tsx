@@ -1,10 +1,10 @@
-// Module ID: 15067
-// Function ID: 15068
+// Module ID: 15068
+// Function ID: 15069
 // Name: useEntranceAnimation
 // Dependencies: [32, 19, 1187, 560, 1259, 5402, 1705, 2]
 // Exports: useEntranceAnimation
 
-// Module 15067 (useEntranceAnimation)
+// Module 15068 (useEntranceAnimation)
 import native from "native" /* 1187 */;
 import react_native from "react-native" /* 1259 */;
 import _mod1705 from "module_1705" /* 1705 */;

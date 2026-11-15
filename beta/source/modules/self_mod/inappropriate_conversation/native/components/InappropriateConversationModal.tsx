@@ -1,10 +1,10 @@
-// Module ID: 18092
-// Function ID: 18093
+// Module ID: 18093
+// Function ID: 18094
 // Name: InappropriateConversationModal
-// Dependencies: [32, 19, 17, 1385, 11428, 21, 5170, 575, 504, 5226, 1499, 7164, 5783, 1113, 5790, 11441, 18093, 11447, 18094, 7097, 11471, 6831, 11442, 7264, 2]
+// Dependencies: [32, 19, 17, 1385, 11427, 21, 5170, 575, 504, 5226, 1499, 7164, 5783, 1113, 5790, 11440, 18094, 11446, 18095, 7097, 11470, 6831, 11441, 7264, 2]
 // Exports: default
 
-// Module 18092 (InappropriateConversationModal)
+// Module 18093 (InappropriateConversationModal)
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,14 +15,14 @@ import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 7164 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11441 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11442 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11447 */;
-import TakeActionScreenDefault from "TakeActionScreen" /* 18093 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11440 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11441 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11446 */;
+import TakeActionScreenDefault from "TakeActionScreen" /* 18094 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants from "Constants" /* 11428 */;
+import Constants from "Constants" /* 11427 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -160,7 +160,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = closure_15();
   const obj = { style: tmp.container, children: items };
-  items = [closure_13(trackAnalyticsEvent(18094).SafetyChatSpotIllustration, {}), , ];
+  items = [closure_13(trackAnalyticsEvent(18095).SafetyChatSpotIllustration, {}), , ];
   const obj2 = { style: tmp.warningText, children: items1 };
   const obj3 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: intl.string(trackAnalyticsEvent(1113).t.NUMAsF) };
   const Text = trackAnalyticsEvent(5783).Text;

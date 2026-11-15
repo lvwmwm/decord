@@ -1,7 +1,7 @@
 // Module ID: 8009
 // Function ID: 8010
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 6801, 5019, 5073, 1072, 2142, 3, 5014, 4995, 572, 1282, 8010, 2120, 2132, 38, 8011, 5920, 6804, 1493, 1377, 12118, 11072, 1113, 2]
+// Dependencies: [5, 17, 6801, 5019, 5073, 1072, 2142, 3, 5014, 4995, 572, 1282, 8010, 2120, 2132, 38, 8011, 5920, 6804, 1493, 1377, 12117, 11072, 1113, 2]
 
 // Module 8009 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -35,7 +35,7 @@ let c9;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const useScreenshareUtils = tmp2(12118);
+const useScreenshareUtils = tmp2(12117);
 function handleThumbnailUpload() {
   return obj(...arguments);
 }
@@ -55,7 +55,7 @@ let obj = function _handleThumbnailUpload() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -111,7 +111,7 @@ let obj = function _handleThumbnailUpload() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp21) {
         closure_4 = tmp21;
         if (0 === c5) {

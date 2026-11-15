@@ -1,18 +1,18 @@
-// Module ID: 14516
-// Function ID: 14517
+// Module ID: 14517
+// Function ID: 14518
 // Name: ContactSyncManager
-// Dependencies: [5, 6659, 1385, 14514, 14513, 1072, 510, 14515, 7383, 7303, 2]
+// Dependencies: [5, 6659, 1385, 14515, 14514, 1072, 510, 14516, 7383, 7303, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 14516 (ContactSyncManager)
+// Module 14517 (ContactSyncManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14513 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14515 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14514 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14516 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
 import UserStore from "UserStore" /* 1385 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14514 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14515 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj = function _requestAndSyncContacts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -75,7 +75,7 @@ let obj = function _requestAndSyncContacts() {
               if (null == phone) {
                 c4 = 0;
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 set = ContactSyncUtils;
                 c5 = 2;
@@ -128,7 +128,7 @@ let obj = function _requestAndSyncContacts() {
           const result = set(closure_130_10, timestamp);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp29) {
         let closure_3 = tmp29;
         if (0 === c4) {

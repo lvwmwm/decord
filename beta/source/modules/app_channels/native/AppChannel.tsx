@@ -1,10 +1,10 @@
-// Module ID: 19062
-// Function ID: 19063
+// Module ID: 19120
+// Function ID: 19121
 // Name: AppChannel
-// Dependencies: [19, 17, 19063, 21, 5170, 575, 2020, 5767, 12459, 19064, 16711, 12458, 12460, 7516, 5917, 12469, 12473, 19067, 11058, 19068, 19071, 1113, 6969, 5874, 1411, 11512, 5790, 5831, 19072, 9952, 6966, 19073, 11387, 2]
+// Dependencies: [19, 17, 19121, 21, 5170, 575, 2020, 5767, 12458, 19122, 16712, 12457, 12459, 7516, 5917, 12468, 12472, 19125, 11058, 19126, 19129, 1113, 6969, 5874, 1411, 11511, 5790, 5831, 19130, 9952, 6966, 19131, 11387, 2]
 // Exports: default
 
-// Module 19062 (AppChannel)
+// Module 19120 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -17,12 +17,12 @@ import ApplicationActionCreators from "ApplicationActionCreators" /* 6969 */;
 import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9952 */;
 import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11058 */;
 import useChannelContentGate from "useChannelContentGate" /* 11387 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11512 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12459 */;
-import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19063 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 19071 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 19072 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19073 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11511 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12458 */;
+import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19121 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 19129 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 19130 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19131 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -250,7 +250,7 @@ export default function ConnectedAppChannel(channel) {
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(19071).FrameSurfaceExplanation;
+    const FrameSurfaceExplanation = tmp(19129).FrameSurfaceExplanation;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     result = metroRequire(FrameSurfaceExplanation, obj2);

@@ -1,12 +1,12 @@
-// Module ID: 15547
-// Function ID: 15548
+// Module ID: 15548
+// Function ID: 15549
 // Name: acomRetry
-// Dependencies: [5, 502, 15542, 559, 1477, 5014, 2]
+// Dependencies: [5, 502, 15543, 559, 1477, 5014, 2]
 // Exports: retryACOMRequest
 
-// Module 15547 (acomRetry)
+// Module 15548 (acomRetry)
 import BackoffDefault from "Backoff" /* 559 */;
-import ErrorUtilsAll from "ErrorUtils" /* 15542 */;
+import ErrorUtilsAll from "ErrorUtils" /* 15543 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ let obj = function _retryACOMRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

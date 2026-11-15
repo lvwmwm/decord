@@ -1,10 +1,10 @@
-// Module ID: 18994
-// Function ID: 18995
+// Module ID: 19052
+// Function ID: 19053
 // Name: VisibleChannelScreenStore
 // Dependencies: [560, 2]
 // Exports: setVisibleChannelScreen
 
-// Module 18994 (VisibleChannelScreenStore)
+// Module 19052 (VisibleChannelScreenStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

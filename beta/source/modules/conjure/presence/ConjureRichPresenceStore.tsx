@@ -1,9 +1,9 @@
-// Module ID: 11705
-// Function ID: 11706
+// Module ID: 11704
+// Function ID: 11705
 // Name: ConjureRichPresenceStore
-// Dependencies: [32, 5, 109, 502, 6792, 5073, 5203, 11002, 11706, 6932, 5026, 10908, 7489, 11003, 5923, 11028, 2118, 6967, 11001, 504, 572, 2]
+// Dependencies: [32, 5, 109, 502, 6792, 5073, 5203, 11002, 11705, 6932, 5026, 10908, 7489, 11003, 5923, 11028, 2118, 6967, 11001, 504, 572, 2]
 
-// Module 11705 (ConjureRichPresenceStore)
+// Module 11704 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ChannelConstants from "ChannelConstants" /* 5026 */;
@@ -19,7 +19,7 @@ import IdleStore from "IdleStore" /* 6792 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
 import ConjureChatStore from "ConjureChatStore" /* 11002 */;
-import ConjurePagesStore from "ConjurePagesStore" /* 11706 */;
+import ConjurePagesStore from "ConjurePagesStore" /* 11705 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ function updateActivity(withGracePeriod) {
   let obj8;
   let timeout;
   let timeout2;
-  const f101332 = () => {
+  const f101348 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -51,7 +51,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f101332, closure_1_14);
+      timeout = setTimeout(f101348, closure_1_14);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -276,7 +276,7 @@ function updateActivity(withGracePeriod) {
         timeout2 = null;
       }
       let _setTimeout = setTimeout;
-      timeout2 = setTimeout(f101332, c14);
+      timeout2 = setTimeout(f101348, c14);
       flag = true;
     }
   }
@@ -327,7 +327,7 @@ let obj = function _fetchOwnedProjects() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -422,7 +422,7 @@ obj = function _resumeRunningProjects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -480,7 +480,7 @@ obj = function _resumeRunningProjects() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         if (0 === c2) {
           c4 = 3;

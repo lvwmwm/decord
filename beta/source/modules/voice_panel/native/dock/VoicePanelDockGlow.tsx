@@ -1,23 +1,22 @@
-// Module ID: 19652
-// Function ID: 19653
+// Module ID: 18864
+// Function ID: 18865
 // Name: VoicePanelDockGlow
-// Dependencies: [19, 17, 11413, 21, 11394, 1652, 5402, 5756, 575, 19640, 8134, 8948, 1493, 14268, 14267, 14269, 5167, 11421, 5747, 2]
+// Dependencies: [19, 17, 11412, 21, 11394, 1652, 5402, 5756, 575, 18865, 8134, 8948, 14268, 14267, 14270, 5167, 11420, 5747, 2]
 // Exports: VoicePanelDockBottomLine, VoicePanelDockGlow
 
-// Module 19652 (VoicePanelDockGlow)
+// Module 18864 (VoicePanelDockGlow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import ColorUtils from "ColorUtils" /* 5167 */;
 import timing_timing from "timing/timing" /* 5402 */;
 import inlineStyles from "inlineStyles" /* 8134 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8948 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11412 */;
 import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 14267 */;
 import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 14268 */;
-import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 14269 */;
+import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 14270 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
@@ -42,26 +41,24 @@ let closure_12 = { code: "(function VoicePanelDockGlowTsx1(){let[dockPressed]=th
 let closure_13 = { code: "(function VoicePanelDockGlowTsx2(isPressed,wasPressed){let[pressGate,withTiming,GLOW_SETTLE_IN_TIMING]=this.__closure;if(isPressed===wasPressed){return;}pressGate.set(isPressed?0:withTiming(1,GLOW_SETTLE_IN_TIMING));})" };
 let closure_14 = { code: "(function VoicePanelDockGlowTsx3(){let[isDockConnected,wrapperOffset,dockMinimizeProgress,dockPressProgress]=this.__closure;const settledProgress=0.15;const pressCleared=0.01;return isDockConnected.get()&&!wrapperOffset.get().gestureActive&&1-dockMinimizeProgress.get()<=settledProgress&&dockPressProgress.get()<=pressCleared;})" };
 let closure_15 = { code: "(function VoicePanelDockGlowTsx4(isSettled,wasSettled){let[settledGate,withTiming,GLOW_SETTLE_IN_TIMING,GLOW_SETTLE_OUT_TIMING]=this.__closure;if(isSettled===wasSettled){return;}settledGate.set(isSettled?withTiming(1,GLOW_SETTLE_IN_TIMING):withTiming(0,GLOW_SETTLE_OUT_TIMING));})" };
-let closure_16 = react.memo(function DockGlowGradient(arg0) {
+let closure_16 = react.memo(function DockGlowGradient(dockHeight) {
   let RadialGradient;
-  let dockHeight;
   let obj4;
   let stopColor;
-  let width;
-  ({ width, dockHeight } = arg0);
+  dockHeight = dockHeight.dockHeight;
   _require = undefined;
   let obj = require("useToken");
   _require = obj.useToken(nativeDefault.colors.ICON_VOICE_SPEAKING);
   const obj2 = require("useMeasureDockGlowOffset");
-  const point = obj2.getDockGlowHotSpot({ width, height: dockHeight });
-  size = { width, height: dockHeight, style: StyleSheet.absoluteFill, children: items };
-  const tmp = inlineStylesDefault;
+  const dockGlowHotSpot = obj2.getDockGlowHotSpot({ width: 0, height: dockHeight });
+  size = { width: "100%", height: dockHeight, style: StyleSheet.absoluteFill, children: items };
+  const tmp2 = inlineStylesDefault;
   const obj3 = { children: closure_6(RadialGradient, obj4) };
   const Defs = require("inlineStyles").Defs;
   obj4 = {
     id: "dockGlow",
-    cx: `${point.x / width * 100}%`,
-    cy: "" + Math.round(point.y / dockHeight * 100) + "%",
+    cx: "50%",
+    cy: "" + Math.round(dockGlowHotSpot.y / dockHeight * 100) + "%",
     rx: "80%",
     ry: "110.00000000000001%",
     children: items.map((item) => {
@@ -74,13 +71,13 @@ let closure_16 = react.memo(function DockGlowGradient(arg0) {
     })
   };
   RadialGradient = require("inlineStyles").RadialGradient;
-  items = [closure_6(Defs, obj3), closure_6(require("inlineStyles").Rect, { x: 0, y: 0, width, height: dockHeight, fill: "url(#dockGlow)" })];
-  return closure_7(tmp, size);
+  items = [closure_6(Defs, obj3), closure_6(require("inlineStyles").Rect, { x: 0, y: 0, width: "100%", height: dockHeight, fill: "url(#dockGlow)" })];
+  return closure_7(tmp2, size);
 });
 let closure_17 = { code: "(function VoicePanelDockGlowTsx5(){let[settledGate,pressGate,micLive,dockEntryProgress,sheetExitProgress]=this.__closure;return{opacity:settledGate.get()*pressGate.get()*micLive.get()*dockEntryProgress.get()*(1-sheetExitProgress.get())};})" };
 let closure_18 = { code: "(function VoicePanelDockGlowTsx6(){let[settledGate,pressGate,micLive]=this.__closure;return settledGate.get()*pressGate.get()*micLive.get();})" };
 let closure_19 = { code: "(function VoicePanelDockGlowTsx7(value){let[voicePanelDockRimOpacity]=this.__closure;voicePanelDockRimOpacity.set(value);})" };
-let closure_20 = { code: "(function VoicePanelDockGlowTsx8(){let[getDockInset,dockPressProgress,isDockConnected,wrapperDimensions,getDockRowOpacity,dockMinimizeProgress,isDockExpanding,dockContentSwap,sheetExitProgress,micLive]=this.__closure;const inset=getDockInset(dockPressProgress.get());const isDockShowing=isDockConnected.get()&&wrapperDimensions.get().drawerHeight>0;const rowOpacity=getDockRowOpacity(1-dockMinimizeProgress.get(),isDockExpanding.get(),dockContentSwap.get());return{left:inset,right:inset,opacity:isDockShowing?rowOpacity*(1-sheetExitProgress.get())*micLive.get():0};})" };
+let closure_20 = { code: "(function VoicePanelDockGlowTsx8(){let[getDockInset,dockPressProgress,isDockConnected,wrapperDimensions,getDockRowOpacity,dockMinimizeProgress,isDockExpanding,dockContentSwap,dockSheetWidth,sheetExitProgress,micLive]=this.__closure;const inset=getDockInset(dockPressProgress.get());const isDockShowing=isDockConnected.get()&&wrapperDimensions.get().drawerHeight>0;const rowOpacity=getDockRowOpacity(1-dockMinimizeProgress.get(),isDockExpanding.get(),dockContentSwap.get());const{drawerWidth:drawerWidth}=wrapperDimensions.get();const sheetWidth=dockSheetWidth.get();return{left:inset,right:inset+Math.max(drawerWidth-sheetWidth,0),opacity:isDockShowing?rowOpacity*(1-sheetExitProgress.get())*micLive.get():0};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockGlow.tsx");
 
@@ -130,7 +127,6 @@ export function VoicePanelDockGlow(micLive) {
   const context = react.useContext(VoicePanelStateContextDefault);
   ({ dockEntryProgress, dockHeight, sheetExitProgress } = context);
   const tmp4 = useStateFromSharedValueDefault(dockHeight);
-  const width = useWindowDimensionsDefault().width;
   const context1 = react.useContext(VoicePanelStateContextDefault);
   ({ dockMinimizeProgress, dockPressProgress, dockPressed, isDockConnected, wrapperOffset } = context1);
   let obj = _mod1652;
@@ -318,7 +314,7 @@ export function VoicePanelDockGlow(micLive) {
     obj4 = { style: StyleSheet.absoluteFill, minOpacity: VoicePanelDockRimLight.DOCK_GLOW_REST_OPACITY, maxOpacity: 1, children: metroRequire(closure_16, obj5) };
     tmpResult = LiveVoiceLevelViewDefault;
     const merged = Object.assign(voicePanelDockGlowLevelProps);
-    obj5 = { width, dockHeight: tmp4 };
+    obj5 = { dockHeight: tmp4 };
     tmp46 = metroRequire(View, obj2);
   }
   return tmp46;
@@ -327,6 +323,7 @@ export function VoicePanelDockBottomLine(micLive) {
   let dockContentSwap;
   let dockMinimizeProgress;
   let dockPressProgress;
+  let dockSheetWidth;
   let isDockConnected;
   let isDockExpanding;
   let items3;
@@ -342,6 +339,7 @@ export function VoicePanelDockBottomLine(micLive) {
   let tmp16;
   let tmp17;
   let tmp18;
+  let tmp19;
   let tmp8;
   let tmp9;
   let tmpResult;
@@ -350,7 +348,7 @@ export function VoicePanelDockBottomLine(micLive) {
   let tmp = importDefault;
   micLive = micLive.micLive;
   const context = react.useContext(VoicePanelStateContextDefault);
-  ({ dockContentSwap, dockMinimizeProgress, dockPressProgress, isDockConnected, isDockExpanding, sheetExitProgress, wrapperDimensions } = context);
+  ({ dockContentSwap, dockMinimizeProgress, dockPressProgress, isDockConnected, isDockExpanding, sheetExitProgress, wrapperDimensions, dockSheetWidth } = context);
   let obj = token(5756);
   token = obj.useToken(nativeDefault.colors.ICON_VOICE_SPEAKING);
   items = [token];
@@ -365,15 +363,16 @@ export function VoicePanelDockBottomLine(micLive) {
   }, items);
   let obj2 = token(14268);
   const voicePanelDockGlowLevelProps = obj2.useVoicePanelDockGlowLevelProps();
-  const items1 = [closure_20, getDockInset, dockPressProgress, isDockConnected, wrapperDimensions, , , , , , ];
+  const items1 = [closure_20, getDockInset, dockPressProgress, isDockConnected, wrapperDimensions, , , , , , , ];
   const useAnimatedStyle = token(1652).useAnimatedStyle;
   const tmp7 = token(1652);
-  items1[5] = token(11421).getDockRowOpacity;
+  items1[5] = token(11420).getDockRowOpacity;
   items1[6] = dockMinimizeProgress;
   items1[7] = isDockExpanding;
   items1[8] = dockContentSwap;
-  items1[9] = sheetExitProgress;
-  items1[10] = micLive;
+  items1[9] = dockSheetWidth;
+  items1[10] = sheetExitProgress;
+  items1[11] = micLive;
   let c0;
   let c1;
   let c2;
@@ -384,26 +383,28 @@ export function VoicePanelDockBottomLine(micLive) {
   let c7;
   let c8;
   let c9;
-  [tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18] = items1;
+  let c10;
+  [tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19] = items1;
   class VoicePanelDockGlowTsx8 {
     constructor() {
       let num2;
       const tmp = _undefined(_undefined2.get());
       const value = _undefined3.get() && _undefined4.get().drawerHeight > 0;
-      const diff = 1 - _undefined5.get();
-      const value2 = _undefined6.get();
-      const rect = { left: tmp, right: tmp, opacity: num2 };
+      const diff = 1 - _undefined6.get();
+      const value2 = _undefined7.get();
+      const tmp6 = _undefined5(diff, value2, _undefined8.get());
+      const rect = { left: tmp, right: tmp + Math.max(_undefined4.get().drawerWidth - _undefined9.get(), 0), opacity: num2 };
       num2 = 0;
       if (value) {
-        const result = tmp6 * (1 - _undefined7.get());
-        num2 = result * _undefined8.get();
+        const result = tmp6 * (1 - _undefined10.get());
+        num2 = result * _undefined11.get();
       }
       return rect;
     }
   }
-  const items2 = [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18];
+  const items2 = [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19];
   VoicePanelDockGlowTsx8.__closure = items2;
-  VoicePanelDockGlowTsx8.__workletHash = 791728825001;
+  VoicePanelDockGlowTsx8.__workletHash = 559055664937;
   VoicePanelDockGlowTsx8.__initData = tmp8;
   const animatedStyle = useAnimatedStyle(VoicePanelDockGlowTsx8);
   const obj3 = { style: items3, pointerEvents: "none", children: closure_6(tmpResult, obj4) };

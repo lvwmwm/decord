@@ -72,7 +72,7 @@ let tmp;
 let tmp9;
 const SnowflakeUtilsDefault = tmp9(11);
 const KeyboardTypes = tmp(1625);
-const f97726 = (id) => id.id;
+const f97742 = (id) => id.id;
 function getVisibleMessages(arg0) {
   let chatManager;
   let firstVisibleMessagePercentVisible;
@@ -156,7 +156,7 @@ let obj = function _handleTapNavBar() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -191,7 +191,7 @@ let obj = function _handleTapNavBar() {
                   const findMessageIndexResult = findMessageIndex(tmp9Result3.castChannelIdAsMessageId(channel.id));
                   if (null == findMessageIndexResult) {
                     c3 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     const obj8 = { animated: !useReducedMotion };
                     const tmp9Result4 = NativeChatUtilsDefault;
@@ -215,7 +215,7 @@ let obj = function _handleTapNavBar() {
           const timerId1 = setTimeout(() => closure_1_1(!closure_1_0), 50);
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         c3 = 3;
         throw tmp16;
@@ -581,7 +581,7 @@ export function startOrCancelChannelLatestMessagesLoad(hasJumpedToOriginalPost) 
 export function recordTimings(channelId, hasFetched) {
   const recordMessageRender = TTITrackerDefault.recordMessageRender;
   TTITrackerDefault;
-  const mapped = hasFetched.map(f97726);
+  const mapped = hasFetched.map(f97742);
   hasFetched = hasFetched.hasFetched;
   if (!hasFetched) {
     hasFetched = hasFetched.ready && !hasFetched.cached;
@@ -830,7 +830,7 @@ export function syncMessageDisplay(messages) {
   }
   const recordMessageRender = oldestUnreadMessageId(scrollToMessageId[39]).recordMessageRender;
   oldestUnreadMessageId(scrollToMessageId[39]);
-  const mapped = messages.map(f97726);
+  const mapped = messages.map(f97742);
   let hasFetched = messages.hasFetched;
   if (!hasFetched) {
     hasFetched = messages.ready && !messages.cached;

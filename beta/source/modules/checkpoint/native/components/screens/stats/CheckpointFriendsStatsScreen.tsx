@@ -1,10 +1,10 @@
-// Module ID: 13944
-// Function ID: 13945
+// Module ID: 13943
+// Function ID: 13944
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 5171, 1385, 13700, 6231, 21, 575, 5405, 1652, 1357, 5170, 1411, 504, 13945, 13946, 13908, 5226, 6599, 5307, 13910, 1113, 3248, 3216, 5872, 13929, 8747, 13913, 12170, 12270, 1493, 5350, 1641, 5402, 13947, 13702, 5868, 1187, 13698, 10709, 7445, 13629, 5885, 2]
+// Dependencies: [5, 32, 19, 17, 5171, 1385, 13699, 6231, 21, 575, 5405, 1652, 1357, 5170, 1411, 504, 13944, 13945, 13907, 5226, 6599, 5307, 13909, 1113, 3248, 3216, 5872, 13928, 8747, 13912, 12169, 12269, 1493, 5350, 1641, 5402, 13946, 13701, 5868, 1187, 13697, 10709, 7445, 13628, 5885, 2]
 // Exports: default
 
-// Module 13944 (CheckpointFriendsStatsScreen)
+// Module 13943 (CheckpointFriendsStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -14,18 +14,18 @@ import FriendsIcon from "FriendsIcon" /* 5872 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
 import ChatIcon from "ChatIcon" /* 8747 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10709 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12170 */;
-import Tracking from "Tracking" /* 13698 */;
-import CheckpointTextDefault from "CheckpointText" /* 13910 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13913 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13929 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12169 */;
+import Tracking from "Tracking" /* 13697 */;
+import CheckpointTextDefault from "CheckpointText" /* 13909 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13912 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13928 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import UserStore from "UserStore" /* 1385 */;
-import CheckpointStore from "CheckpointStore" /* 13700 */;
+import CheckpointStore from "CheckpointStore" /* 13699 */;
 import CheckpointConstants from "CheckpointConstants" /* 6231 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
@@ -157,7 +157,7 @@ function SidekickMessageInput(user) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ function SidekickMessageInput(user) {
             closure_128_4(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp37) {
           closure_2 = tmp37;
           if (0 === c3) {
@@ -239,7 +239,7 @@ function SidekickMessageInput(user) {
   ref = ref.useRef(null);
   obj2 = user(1652);
   const sharedValue = obj2.useSharedValue(0);
-  const tmp13 = value(12270)();
+  const tmp13 = value(12269)();
   let obj3 = user(1357);
   const isIOSResult = obj3.isIOS();
   size = value(1493)({ ignoreKeyboard: true });
@@ -305,7 +305,7 @@ function SidekickMessageInput(user) {
     }
   }, items4);
   let tmp33 = null != value;
-  const tmp32 = value(13947)(user.id);
+  const tmp32 = value(13946)(user.id);
   if (tmp33) {
     tmp33 = value.length > 0;
   }
@@ -362,7 +362,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(user(1113).t.Ve9Ge6),
-      children: closure_13(user(13629).GiftIcon, obj12)
+      children: closure_13(user(13628).GiftIcon, obj12)
     };
     intl2 = tmp9(1113).intl;
     obj12 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };

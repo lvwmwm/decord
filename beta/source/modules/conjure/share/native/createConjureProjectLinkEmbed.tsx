@@ -1,16 +1,16 @@
-// Module ID: 15439
-// Function ID: 15440
+// Module ID: 15440
+// Function ID: 15441
 // Name: createConjureProjectLinkEmbed
-// Dependencies: [10270, 5170, 575, 1113, 4026, 11747, 8498, 13971, 2]
+// Dependencies: [10270, 5170, 575, 1113, 4026, 11746, 8498, 13970, 2]
 // Exports: default
 
-// Module 15439 (createConjureProjectLinkEmbed)
+// Module 15440 (createConjureProjectLinkEmbed)
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8498 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10270 */;
-import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11747 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 13971 */;
+import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11746 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 13970 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ export default function createConjureProjectLinkEmbed(applicationId, ticket, arg
       }
       const obj4 = { displayType: "ready" === conjureProjectLinkCard.type ? ConjureProjectEmbedDisplayType.READY : ConjureProjectEmbedDisplayType.INFO_ONLY, title: application.name, description: tmp19, creatorText: formatToPlainStringResult, noticeText: stringResult1, iconUrl: iconURL, coverUrl: coverImageURL, installLabel: stringResult2, remixLabel: stringResult3, coverAction, coverActionLabel: stringResult4, accessibilityLabel: intl7.formatToPlainString(_modDef4026.c8DqSD, obj6) };
       const merged3 = Object.assign(obj2);
-      ConjureProjectEmbedDisplayType = tmp(13971).ConjureProjectEmbedDisplayType;
+      ConjureProjectEmbedDisplayType = tmp(13970).ConjureProjectEmbedDisplayType;
       tmp19 = null;
       if ("" !== str3) {
         tmp19 = str3;

@@ -1,13 +1,13 @@
-// Module ID: 17888
-// Function ID: 17889
+// Module ID: 17889
+// Function ID: 17890
 // Name: AdvancedSetting
-// Dependencies: [1072, 11717, 1113, 7666, 17889, 2]
+// Dependencies: [1072, 11716, 1113, 7666, 17890, 2]
 
-// Module 17888 (AdvancedSetting)
+// Module 17889 (AdvancedSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsIcon from "SettingsIcon" /* 7666 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

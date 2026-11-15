@@ -1,10 +1,10 @@
-// Module ID: 15460
-// Function ID: 15461
+// Module ID: 15461
+// Function ID: 15462
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 5786, 5019, 5041, 5203, 1385, 11539, 6213, 5810, 1113, 8522, 8524, 575, 6215, 6217, 15461, 8791, 6813, 6214, 2]
+// Dependencies: [17, 5786, 5019, 5041, 5203, 1385, 11538, 6213, 5810, 1113, 8522, 8524, 575, 6215, 6217, 15462, 8791, 6813, 6214, 2]
 // Exports: default
 
-// Module 15460 (createMediaPostPreviewEmbedContent)
+// Module 15461 (createMediaPostPreviewEmbedContent)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import LinkUtils from "LinkUtils" /* 5810 */;
@@ -16,7 +16,7 @@ import AgeVerificationUtils from "AgeVerificationUtils" /* 6813 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8522 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8524 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8791 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11539 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11538 */;
 import react_native from "react-native" /* 17 */;
 import DevSettingsStore from "DevSettingsStore" /* 5786 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
@@ -110,7 +110,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 mediaPostEmbedCommonData.coverImage = tmpResult12.withMediaFormat(mediaPostEmbedCommonData.coverImage, "webp");
               }
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
-                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(15461)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
+                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(15462)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
                 const merged = Object.assign(mediaPostEmbedCommonData);
                 return obj5;
               } else {

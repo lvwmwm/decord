@@ -1,9 +1,9 @@
-// Module ID: 18996
-// Function ID: 18997
+// Module ID: 19054
+// Function ID: 19055
 // Name: NavigationTTIExperiment
 // Dependencies: [1449, 2]
 
-// Module 18996 (NavigationTTIExperiment)
+// Module 19054 (NavigationTTIExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

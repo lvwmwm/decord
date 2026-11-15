@@ -1,10 +1,10 @@
-// Module ID: 12744
-// Function ID: 12745
+// Module ID: 12743
+// Function ID: 12744
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [19, 21, 5170, 575, 12736, 8279, 5783, 7080, 2]
+// Dependencies: [19, 21, 5170, 575, 12735, 8279, 5783, 7080, 2]
 // Exports: default
 
-// Module 12744 (AppLauncherSelectOptionFormRow)
+// Module 12743 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;

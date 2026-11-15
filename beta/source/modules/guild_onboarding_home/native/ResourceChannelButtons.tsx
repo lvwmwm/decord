@@ -1,7 +1,7 @@
 // Module ID: 14097
 // Function ID: 14098
 // Name: ResourceChannelButtons
-// Dependencies: [32, 19, 17, 21, 5170, 575, 1500, 14098, 14099, 5790, 1187, 11799, 14100, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 1500, 14098, 14099, 5790, 1187, 11798, 14100, 2]
 // Exports: default
 
 // Module 14097 (ResourceChannelButtons)

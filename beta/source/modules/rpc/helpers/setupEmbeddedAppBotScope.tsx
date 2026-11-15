@@ -1,10 +1,10 @@
-// Module ID: 12006
-// Function ID: 12007
+// Module ID: 12005
+// Function ID: 12006
 // Name: setupEmbeddedAppBotScope
 // Dependencies: [5082, 9451, 9017, 6990, 2]
 // Exports: default
 
-// Module 12006 (setupEmbeddedAppBotScope)
+// Module 12005 (setupEmbeddedAppBotScope)
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;
 import GuildMemberStore_mod from "GuildMemberStore" /* 5082 */;

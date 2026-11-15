@@ -1,10 +1,10 @@
-// Module ID: 11743
-// Function ID: 11744
+// Module ID: 11742
+// Function ID: 11743
 // Name: useFetchSocialLayerStorefrontEmbedWishlist
 // Dependencies: [19, 7881, 9588, 502, 1385, 504, 8862, 9595, 9594, 2]
 // Exports: useFetchSocialLayerStorefrontEmbedWishlist
 
-// Module 11743 (useFetchSocialLayerStorefrontEmbedWishlist)
+// Module 11742 (useFetchSocialLayerStorefrontEmbedWishlist)
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
 import WishlistFetchSource from "WishlistFetchSource" /* 9594 */;
 import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9595 */;

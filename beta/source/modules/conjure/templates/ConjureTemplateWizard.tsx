@@ -1,14 +1,14 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13245
+// Function ID: 13246
 // Name: ConjureTemplateWizard
-// Dependencies: [5, 11001, 1113, 4026, 13247, 7516, 2]
+// Dependencies: [5, 11001, 1113, 4026, 13246, 7516, 2]
 // Exports: canLeaveConjureWizardQuestion, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardQuestions, conjureWizardServerCopy, conjureWizardServerStep, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake, startConjureTemplateWizard
 
-// Module 13246 (ConjureTemplateWizard)
+// Module 13245 (ConjureTemplateWizard)
 import intl3 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import ConjureUtils from "ConjureUtils" /* 7516 */;
-import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 13247 */;
+import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 13246 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let obj = function _startConjureTemplateWizard() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

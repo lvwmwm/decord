@@ -1,10 +1,10 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15371
+// Function ID: 15372
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1072, 3, 14699, 7828, 5406, 14760, 1624, 7608, 4983, 5869, 1113, 2]
+// Dependencies: [5, 32, 19, 1072, 3, 14700, 7828, 5406, 14761, 1624, 7608, 4983, 5869, 1113, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 15370 (useHandleBuyNow)
+// Module 15371 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -42,7 +42,7 @@ function useHandleBuyNow(product) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function useHandleBuyNow(product) {
             const obj2 = c1(c2[8]);
             obj2.open(obj8);
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c2 = 3;
@@ -106,7 +106,7 @@ function useHandleBuyNow(product) {
     },
     orderId
   };
-  const tmp3 = onBuySettled(14699)(obj);
+  const tmp3 = onBuySettled(14700)(obj);
   react = tmp3;
   let obj2 = {
     handleBuyNow: react.useCallback(isBuying(function*(arg0, value) {
@@ -127,7 +127,7 @@ function useHandleBuyNow(product) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -232,7 +232,7 @@ function useHandleBuyNow(product) {
             return obj;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp52) {
           closure_2 = tmp52;
           if (0 === c3) {

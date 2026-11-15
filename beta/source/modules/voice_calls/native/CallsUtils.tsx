@@ -1,7 +1,7 @@
 // Module ID: 9334
 // Function ID: 9335
 // Name: CallsUtils
-// Dependencies: [32, 5, 19, 17, 6801, 5019, 2130, 5073, 5835, 5945, 9335, 8042, 9337, 6123, 1113, 8059, 6079, 6111, 2017, 8041, 6793, 12, 9338, 9339, 9340, 1377, 504, 9341, 9336, 12136, 5946, 2]
+// Dependencies: [32, 5, 19, 17, 6801, 5019, 2130, 5073, 5835, 5945, 9335, 8042, 9337, 6123, 1113, 8059, 6079, 6111, 2017, 8041, 6793, 12, 9338, 9339, 9340, 1377, 504, 9341, 9336, 12135, 5946, 2]
 // Exports: getAudioDeviceToDisplayText, handleDisconnect, handleToggleSelfDeaf, handleToggleSelfMute, handleToggleVideo, showCameraDisabledAlert, showMinOSScreenshareRequirementAlert, showScreenshareDisabledAlert, showServerDeafenAlert, showServerMuteAlert, showSuppressedAlert, showTabletRequirementAlert, useImmediateMaskedSpeakerStates
 
 // Module 9334 (CallsUtils)
@@ -18,7 +18,7 @@ import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9338 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 9339 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 9340 */;
-import useIsVideoModeDefault from "useIsVideoMode" /* 12136 */;
+import useIsVideoModeDefault from "useIsVideoMode" /* 12135 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

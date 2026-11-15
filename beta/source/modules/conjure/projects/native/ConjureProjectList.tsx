@@ -1,10 +1,10 @@
-// Module ID: 13230
-// Function ID: 13231
+// Module ID: 13229
+// Function ID: 13230
 // Name: ConjureProjectList
-// Dependencies: [19, 17, 1231, 6932, 21, 5170, 575, 1627, 1499, 13231, 13234, 12282, 5406, 13235, 10999, 12425, 11031, 12416, 12324, 7457, 7104, 11661, 1113, 5783, 4026, 5790, 11028, 13250, 7159, 7071, 13252, 11030, 504, 6948, 12317, 13269, 12438, 9879, 2]
+// Dependencies: [19, 17, 1231, 6932, 21, 5170, 575, 1627, 1499, 13230, 13233, 12281, 5406, 13234, 10999, 12424, 11031, 12415, 12323, 7457, 7104, 11660, 1113, 5783, 4026, 5790, 11028, 13249, 7159, 7071, 13251, 11030, 504, 6948, 12316, 13268, 12437, 9879, 2]
 // Exports: default
 
-// Module 13230 (ConjureProjectList)
+// Module 13229 (ConjureProjectList)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
@@ -13,11 +13,11 @@ import Text_Text from "Text/Text" /* 5783 */;
 import TableRowGroup2 from "TableRowGroup" /* 7159 */;
 import ConjureRemixSheet from "ConjureRemixSheet" /* 10999 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12282 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12317 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12324 */;
-import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 12438 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 13235 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12281 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12316 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12323 */;
+import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 12437 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 13234 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
@@ -86,7 +86,7 @@ function ProjectRow(project) {
     const obj5 = { style: tmp.projectRowTrailing, children: items2 };
     if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
       const obj6 = { value: conjureProjectBadge };
-      tmp14Result3 = tmp14(tmp18(13269), obj6);
+      tmp14Result3 = tmp14(tmp18(13268), obj6);
     }
     items2 = [tmp14Result3, ];
     const obj7 = { IconComponent: project(9879).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1113).t["UKOtz+"]) };

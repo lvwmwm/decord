@@ -1,28 +1,58 @@
 // Module ID: 13307
 // Function ID: 13308
-// Dependencies: [13308, 13311]
-// Exports: addGlobalErrorInstrumentationHandler
+// Dependencies: [13308, 13309, 13312]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 13307
 import _mod13308 from "module_13308" /* 13308 */;
-import _mod13311 from "module_13311" /* 13311 */;
+import _mod13312 from "module_13312" /* 13312 */;
 
-function instrumentError() {
-  onerror = _mod13311.GLOBAL_OBJ.onerror;
-  _mod13311.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
-    const obj = { column, error, line, msg, url };
-    const obj2 = _mod13308;
-    obj2.triggerHandlers("error", obj);
-    const applyResult = onerror && onerror(...arguments);
-    return applyResult;
-  };
-  _mod13311.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
+let closure_2 = {};
+let closure_3 = {};
+
+export function addHandler(arg0, arg1) {
+  const tmp2 = closure_2[arg0] || [];
+  closure_2[arg0] = tmp2;
+  const arr = closure_2[arg0];
+  arr.push(arg1);
 }
-let onerror = null;
-
-export function addGlobalErrorInstrumentationHandler(arg0) {
-  const obj = _mod13308;
-  obj.addHandler("error", arg0);
-  const obj2 = _mod13308;
-  obj2.maybeInstrument("error", instrumentError);
+export function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp[arg0] = true;
+    try {
+      fn();
+    } catch (tmp4) {
+      const tmp5 = require;
+      if (_mod13308.DEBUG_BUILD) {
+        const logger = tmp5(13309).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + arg0, tmp4);
+      }
+    }
+  }
+}
+export function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    closure_1_2[item] = undefined;
+  });
+}
+export function triggerHandlers(arg0, arg1) {
+  if (arg0 && closure_2[arg0]) {
+    const iter = (arg0 && closure_2[arg0])[Symbol.iterator]();
+    const nextResult = iter.next();
+    if (iter !== undefined) {
+      try {
+        nextResult(arg1);
+      } catch (tmp11) {
+        if (_mod13308.DEBUG_BUILD) {
+          const logger = tmp12(13309).logger;
+          const error = logger.error;
+          const _HermesInternal = HermesInternal;
+          const tmp12Result = _mod13312;
+          error("Error while triggering instrumentation handler.\nType: " + arg0 + "\nName: " + tmp12Result.getFunctionName(nextResult) + "\nError:", tmp11);
+        }
+      }
+    }
+  }
 }

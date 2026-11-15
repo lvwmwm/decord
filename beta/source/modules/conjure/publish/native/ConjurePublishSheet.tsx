@@ -1,10 +1,10 @@
-// Module ID: 12299
-// Function ID: 12300
+// Module ID: 12298
+// Function ID: 12299
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6932, 21, 9708, 8777, 6933, 12300, 12302, 12304, 11453, 5170, 575, 5869, 5406, 12292, 504, 12306, 6186, 5751, 8781, 8782, 1113, 4026, 7459, 12312, 12317, 7181, 7349, 5783, 7053, 12318, 5790, 7462, 5808, 2]
+// Dependencies: [5, 19, 17, 6932, 21, 9708, 8777, 6933, 12299, 12301, 12303, 11452, 5170, 575, 5869, 5406, 12291, 504, 12305, 6186, 5751, 8781, 8782, 1113, 4026, 7459, 12311, 12316, 7181, 7349, 5783, 7053, 12317, 5790, 7462, 5808, 2]
 // Exports: default
 
-// Module 12299 (ConjurePublishSheet)
+// Module 12298 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
@@ -17,11 +17,11 @@ import TableSwitchRow2 from "TableSwitchRow" /* 7462 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 8777 */;
 import AppsIcon2 from "AppsIcon" /* 8782 */;
 import ScreenIcon from "ScreenIcon" /* 9708 */;
-import ShieldIcon from "ShieldIcon" /* 11453 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12292 */;
-import RobotIcon from "RobotIcon" /* 12300 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 12302 */;
-import BadgeIcon from "BadgeIcon" /* 12304 */;
+import ShieldIcon from "ShieldIcon" /* 11452 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12291 */;
+import RobotIcon from "RobotIcon" /* 12299 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 12301 */;
+import BadgeIcon from "BadgeIcon" /* 12303 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
@@ -140,7 +140,7 @@ function PublishSheetBody(entryPoint) {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -172,7 +172,7 @@ function PublishSheetBody(entryPoint) {
             c3 = 0;
             closure_128_3.current = false;
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -199,11 +199,11 @@ function PublishSheetBody(entryPoint) {
               }
             } else {
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp32) {
           closure_2 = tmp32;
           if (0 === c3) {
@@ -221,7 +221,7 @@ function PublishSheetBody(entryPoint) {
   };
   const tmp = closure_13();
   const tmp3 = dependencyMap;
-  const tmp4 = entryPoint(12306)(project, publish);
+  const tmp4 = entryPoint(12305)(project, publish);
   dependencyMap = tmp4;
   entryPoint(6186)(() => true, tmp4.saving);
   obj = react;
@@ -299,10 +299,10 @@ function PublishSheetBody(entryPoint) {
           }
         }
     };
-    tmp15Result = tmp15(tmp12(12312).ConjureAppIconTile, obj4);
+    tmp15Result = tmp15(tmp12(12311).ConjureAppIconTile, obj4);
   } else {
     const obj5 = { project, size: "dialog" };
-    tmp15Result = tmp15(tmp2(12317), obj5);
+    tmp15Result = tmp15(tmp2(12316), obj5);
   }
   items2 = [tmp15Result, , , , , , ];
   if (editable) {
@@ -370,7 +370,7 @@ function PublishSheetBody(entryPoint) {
     } else {
       const obj20 = { style: tmp.onlyMeIcon, children: obj(UserIcon, obj21) };
       obj21 = { size: "xs", color: entryPoint(575).colors.ICON_DEFAULT };
-      UserIcon = tmp12(12318).UserIcon;
+      UserIcon = tmp12(12317).UserIcon;
       tmp15Result8 = tmp15(tmp17, obj20);
     }
     items6 = [tmp15Result8, ];

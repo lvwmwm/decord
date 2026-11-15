@@ -1,7 +1,7 @@
 // Module ID: 14101
 // Function ID: 14102
 // Name: MemberActionChatInputBanner
-// Dependencies: [32, 19, 17, 5171, 6884, 5019, 5082, 1072, 1388, 21, 5170, 575, 563, 5808, 5783, 1113, 1187, 13460, 5874, 1411, 5116, 14102, 7496, 1652, 5402, 14103, 7076, 1099, 14100, 7494, 2]
+// Dependencies: [32, 19, 17, 5171, 6884, 5019, 5082, 1072, 1388, 21, 5170, 575, 563, 5808, 5783, 1113, 1187, 13459, 5874, 1411, 5116, 14102, 7496, 1652, 5402, 14103, 7076, 1099, 14100, 7494, 2]
 
 // Module 14101 (MemberActionChatInputBanner)
 import react_native from "react-native" /* 17 */;
@@ -16,7 +16,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import useChannelNameDefault from "useChannelName" /* 5808 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import Pressables from "Pressables" /* 7076 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13460 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13459 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14100 */;
 import MemberActionUtils from "MemberActionUtils" /* 14102 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 14103 */;

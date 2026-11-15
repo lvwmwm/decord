@@ -1,10 +1,10 @@
-// Module ID: 19229
-// Function ID: 19230
+// Module ID: 19287
+// Function ID: 19288
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 5023, 5019, 5112, 7492, 10878, 1072, 21, 1652, 5783, 5170, 575, 1377, 7582, 7493, 572, 504, 1252, 19230, 5402, 19231, 9935, 1113, 11386, 12596, 7420, 7445, 5767, 5753, 11821, 11819, 11818, 9947, 1099, 11822, 5868, 11140, 11139, 5878, 5877, 13667, 5790, 14182, 19168, 2]
+// Dependencies: [5, 32, 19, 17, 5023, 5019, 5112, 7492, 10878, 1072, 21, 1652, 5783, 5170, 575, 1377, 7582, 7493, 572, 504, 1252, 19288, 5402, 19289, 9935, 1113, 11386, 12595, 7420, 7445, 5767, 5753, 11820, 11818, 11817, 9947, 1099, 11821, 5868, 11140, 11139, 5878, 5877, 13666, 5790, 14182, 19226, 2]
 // Exports: default
 
-// Module 19229 (NewMessageScreen)
+// Module 19287 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -27,9 +27,9 @@ import UserRowConstants from "UserRowConstants" /* 10878 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 11139 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11140 */;
 import ChatViewDefault from "ChatView" /* 11386 */;
-import NoResultsDefault from "NoResults" /* 13667 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 19230 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19231 */;
+import NoResultsDefault from "NoResults" /* 13666 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 19288 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19289 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -57,10 +57,10 @@ let obj2;
 let obj3;
 let str;
 let tmp2;
-const getGroupDMRecipientLimitDefault = tmp2(11819);
-const GroupDMNitroCapExperimentDefault = tmp2(11821);
+const getGroupDMRecipientLimitDefault = tmp2(11818);
+const GroupDMNitroCapExperimentDefault = tmp2(11820);
 const NewMessageUserListDefault = tmp2(14182);
-const GroupDMNitroUpsellBannerDefault = tmp2(19168);
+const GroupDMNitroUpsellBannerDefault = tmp2(19226);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -127,7 +127,7 @@ let obj = function _findMatchingPrivateChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -293,7 +293,7 @@ function ChatPreview(channelId) {
   const obj3 = { guildId, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: tagListInputRef };
   items2[0] = closure_17(ChatViewDefault, obj3);
   const obj4 = { portal: obj5.isAndroid() };
-  const PortalKeyboardRenderer = channelId(12596).PortalKeyboardRenderer;
+  const PortalKeyboardRenderer = channelId(12595).PortalKeyboardRenderer;
   obj5 = channelId(1377);
   items2[1] = closure_17(PortalKeyboardRenderer, obj4);
   return closure_17(View, obj);
@@ -436,7 +436,7 @@ export default function NewMessageScreen(navigation) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -475,7 +475,7 @@ export default function NewMessageScreen(navigation) {
               }
               tmp8(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID);
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp17) {
             c3 = 3;
@@ -523,9 +523,9 @@ export default function NewMessageScreen(navigation) {
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "a", parent_id: "sa" } };
           obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(closure_1_2[18]);
-          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" });
+          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "a", parent_id: "sa" });
           obj.dispatch(obj2);
         };
       }
@@ -545,13 +545,13 @@ export default function NewMessageScreen(navigation) {
   const config = tmp2Result.useConfig({ location: "NewMessageScreen" });
   const tmp20 = getGroupDMRecipientLimitDefault({ useNitroCapExperiment: true });
   relationshipCount = tmp20;
-  let obj4 = navigation(11818);
+  let obj4 = navigation(11817);
   const result = obj4.shouldUseGroupDMParticipantLimitUI(config.enabled, tmp20);
   c10 = result;
-  navigation(11818);
+  navigation(11817);
   enabled = config.enabled;
   if (enabled) {
-    const tmp13Result = navigation(11818);
+    const tmp13Result = navigation(11817);
     enabled = tmp13Result.isGroupDMNitroUpsellAudience(tmp23);
   }
   const items7 = [navigation, selectedUserIds.length, FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, tmp20, result];
@@ -599,7 +599,7 @@ export default function NewMessageScreen(navigation) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -651,7 +651,7 @@ export default function NewMessageScreen(navigation) {
               closure_1_5(items);
               closure_1_7(false);
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               c3 = 1;
               c4 = 1;

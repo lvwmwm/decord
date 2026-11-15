@@ -1,10 +1,10 @@
-// Module ID: 14271
-// Function ID: 14272
+// Module ID: 14272
+// Function ID: 14273
 // Name: EmojiSuggestionBarSmall
 // Dependencies: [19, 10097, 21, 575, 5170, 14256, 1652, 10179, 10203, 5231, 2]
 // Exports: EmojiSuggestionBarSmall
 
-// Module 14271 (EmojiSuggestionBarSmall)
+// Module 14272 (EmojiSuggestionBarSmall)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;

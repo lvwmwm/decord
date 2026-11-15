@@ -1,14 +1,14 @@
-// Module ID: 20395
-// Function ID: 20396
+// Module ID: 20400
+// Function ID: 20401
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1259, 1254, 7527, 5085, 5753, 17558, 2]
+// Dependencies: [32, 5, 1259, 1254, 7527, 5085, 5753, 17559, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 20395 (RoleTierEditStore)
+// Module 20400 (RoleTierEditStore)
 import react_native from "react-native" /* 1259 */;
 import _slicedToArray2 from "_slicedToArray" /* 5085 */;
 import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7527 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17558 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17559 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
@@ -90,7 +90,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -146,7 +146,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0) => {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp21) {
             if (0 === c2) {

@@ -1,14 +1,14 @@
-// Module ID: 19058
-// Function ID: 19059
+// Module ID: 19116
+// Function ID: 19117
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 7810, 7939, 1072, 21, 5170, 575, 9899, 8446, 7420, 7445, 1627, 5767, 10887, 8749, 19059, 7462, 1113, 19061, 14014, 13987, 14483, 11423, 1500, 1252, 5921, 5354, 1099, 10358, 19060, 5355, 2]
+// Dependencies: [5, 32, 19, 17, 7810, 7939, 1072, 21, 5170, 575, 9899, 8446, 7420, 7445, 1627, 5767, 10887, 8749, 19117, 7462, 1113, 19119, 14013, 13986, 14484, 11422, 1500, 1252, 5921, 5354, 1099, 10358, 19118, 5355, 2]
 
-// Module 19058 (CreateThreadView)
+// Module 19116 (CreateThreadView)
 import nativeDefault from "native" /* 575 */;
 import DraftStore from "DraftStore" /* 7810 */;
 import SlowmodeStore from "SlowmodeStore" /* 7939 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 8446 */;
-import useCreateThreadViewPropsDefault from "useCreateThreadViewProps" /* 11423 */;
+import useCreateThreadViewPropsDefault from "useCreateThreadViewProps" /* 11422 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -140,7 +140,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
                   ref.current = false;
                   c5 = 0;
                   c7 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
                 v1 = 2;
                 c7 = 1;
@@ -229,7 +229,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
             ref.current = false;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp59) {
           if (0 === c5) {
             c7 = 3;
@@ -268,7 +268,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
   obj9 = { style: tmp.options, children: items7 };
   let obj10 = { style: tmp.optionsInner, children: items6 };
   const obj11 = { style: tmp.threadIconContainer, children: closure_13(tmp2(8749).ThreadIcon, { size: "lg" }) };
-  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(19059), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
+  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(19117), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
   let tmp23Result = null;
   const tmp25 = closure_7;
   if (!isForumLikeChannelResult) {
@@ -309,22 +309,22 @@ function CreateThreadViewInner(threadSettingsDraft) {
     const obj15 = { style: tmp.border };
     items8 = [tmp23(tmp24, obj15), ];
     const obj16 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items8[1] = closure_13(threadSettingsDraft(19061).ThreadCreationStarterMessage, obj16);
+    items8[1] = closure_13(threadSettingsDraft(19119).ThreadCreationStarterMessage, obj16);
     tmp22Result = tmp22(tmp24, obj14);
   }
   items7[1] = tmp22Result;
   items5[1] = closure_13(tmp25, obj8);
   let tmp23Result2 = null;
   if (parentChannel.rateLimitPerUser > 0) {
-    const obj17 = { style: tmp.typingWrapper, children: closure_13(parentChannel(14014), obj18) };
+    const obj17 = { style: tmp.typingWrapper, children: closure_13(parentChannel(14013), obj18) };
     obj18 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp23Result2 = tmp23(tmp24, obj17);
   }
   items5[2] = tmp23Result2;
   const obj19 = { ref, channel: parentChannel, onJumpToPresent, screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: callback1 };
-  items5[3] = closure_13(parentChannel(13987), obj19);
+  items5[3] = closure_13(parentChannel(13986), obj19);
   const obj20 = { channelId: parentChannel.id };
-  items5[4] = closure_13(parentChannel(14483), obj20);
+  items5[4] = closure_13(parentChannel(14484), obj20);
   items3[1] = closure_14(tmp24, obj6);
   return closure_14(AnalyticsLocationProvider, obj5);
 }

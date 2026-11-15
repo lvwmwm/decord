@@ -1,10 +1,10 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 17125
+// Function ID: 17126
 // Name: useSelectedTab
 // Dependencies: [7824, 7825, 1072, 563, 7826, 1252, 2]
 // Exports: default
 
-// Module 17124 (useSelectedTab)
+// Module 17125 (useSelectedTab)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

@@ -1,18 +1,11 @@
 // Module ID: 16480
 // Function ID: 16481
-// Dependencies: [16481]
+// Dependencies: [16478]
 
 // Module 16480
-import _mod16481 from "module_16481" /* 16481 */;
+import _mod16478 from "module_16478" /* 16478 */;
 
+let closure_0 = _mod16478({}.toString);
+let closure_1 = _mod16478("".slice);
 
-export default function(arg0) {
-  if (_mod16481(arg0)) {
-    const self = this;
-    const self2 = this;
-    const tmp2 = new TypeError("Can't call method on " + arg0);
-    throw tmp2;
-  } else {
-    return arg0;
-  }
-};
+export default (arg0) => closure_1(closure_0(arg0), 8, -1);

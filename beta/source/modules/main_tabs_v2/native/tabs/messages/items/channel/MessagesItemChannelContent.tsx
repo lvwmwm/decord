@@ -1,9 +1,9 @@
-// Module ID: 18465
-// Function ID: 18466
+// Module ID: 18466
+// Function ID: 18467
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 6930, 6864, 21, 5170, 575, 1187, 8875, 7196, 11237, 11142, 5192, 5401, 504, 17665, 2166, 6981, 18466, 11, 5808, 18467, 5756, 10923, 10924, 5783, 9408, 9315, 11203, 5848, 10896, 1113, 18469, 2]
+// Dependencies: [19, 17, 6930, 6864, 21, 5170, 575, 1187, 8875, 7196, 11237, 11142, 5192, 5401, 504, 17666, 2166, 6981, 18467, 11, 5808, 18468, 5756, 10923, 10924, 5783, 9408, 9315, 11203, 5848, 10896, 1113, 18470, 2]
 
-// Module 18465 (MessagesItemChannelContent)
+// Module 18466 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -20,8 +20,8 @@ import ActivityStatusDefault from "ActivityStatus" /* 10896 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10923 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 11142 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 11237 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 17665 */;
-import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 18467 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 17666 */;
+import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 18468 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6930 */;
 import Fragment from "Fragment" /* 21 */;
@@ -171,8 +171,8 @@ const memoResult = react.memo(function MessagesItemChannelContent(channel) {
   if (tmp12) {
     tmp12 = !tmp3(6981)(channel.id);
   }
-  const useRelativeTimestamp = channel(18466).useRelativeTimestamp;
-  channel(18466);
+  const useRelativeTimestamp = channel(18467).useRelativeTimestamp;
+  channel(18467);
   let id = stateFromStores;
   const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
   SnowflakeUtilsDefault;
@@ -318,7 +318,7 @@ const memoResult = react.memo(function MessagesItemChannelContent(channel) {
       const tmp43 = closure_8;
       if (waveShouldShow) {
         const obj23 = { wavePressed, hasNameplate };
-        tmp22Result8 = tmp22(tmp3(18469), obj23);
+        tmp22Result8 = tmp22(tmp3(18470), obj23);
       }
       const obj24 = { children: items9 };
       items9[1] = tmp22Result8;

@@ -1,17 +1,17 @@
-// Module ID: 16064
-// Function ID: 16065
+// Module ID: 16065
+// Function ID: 16066
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 5023, 5019, 5102, 1072, 13647, 10878, 21, 5170, 575, 1113, 16065, 13648, 16066, 16067, 1252, 9953, 5917, 1377, 9044, 9903, 13686, 2118, 6124, 16068, 16069, 7104, 13658, 1624, 13659, 16070, 2]
+// Dependencies: [5, 32, 19, 17, 5023, 5019, 5102, 1072, 13646, 10878, 21, 5170, 575, 1113, 16066, 13647, 16067, 16068, 1252, 9953, 5917, 1377, 9044, 9903, 13685, 2118, 6124, 16069, 16070, 7104, 13657, 1624, 13658, 16071, 2]
 // Exports: default
 
-// Module 16064 (ShareScreen)
+// Module 16065 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import UserRowConstants from "UserRowConstants" /* 10878 */;
-import ForwardConstants from "ForwardConstants" /* 13647 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 16068 */;
-import ShareEmbedDefault from "ShareEmbed" /* 16069 */;
+import ForwardConstants from "ForwardConstants" /* 13646 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 16069 */;
+import ShareEmbedDefault from "ShareEmbed" /* 16070 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -173,7 +173,7 @@ export default function ShareScreen(appEntryKey) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -280,7 +280,7 @@ export default function ShareScreen(appEntryKey) {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "HermesInternal", done: "HermesInternal" };
+                                    return { value: "HermesInternal", done: null };
                                   }
                                 } else {
                                   try {
@@ -414,7 +414,7 @@ export default function ShareScreen(appEntryKey) {
                 closure_129_6(false);
                 closure_129_7.current = false;
                 React = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             }
             closure_10 = React.lazy(() => closure_1_0(paths[25])(paths[24], paths.paths));
@@ -456,7 +456,7 @@ export default function ShareScreen(appEntryKey) {
           return obj20;
         }
         React = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp102) {
         paths = tmp102;
         if (0 === c3) {

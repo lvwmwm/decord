@@ -1,12 +1,12 @@
-// Module ID: 16621
-// Function ID: 16622
+// Module ID: 16622
+// Function ID: 16623
 // Name: NotificationSettingsConstants
-// Dependencies: [2992, 16622, 16623, 2]
+// Dependencies: [2992, 16623, 16624, 2]
 
-// Module 16621 (NotificationSettingsConstants)
+// Module 16622 (NotificationSettingsConstants)
 import _modDef2992 from "module_2992" /* 2992 */;
-import NotifSettings from "NotifSettings" /* 16622 */;
-import NotifTypes from "NotifTypes" /* 16623 */;
+import NotifSettings from "NotifSettings" /* 16623 */;
+import NotifTypes from "NotifTypes" /* 16624 */;
 import size from "module_2" /* 2 */;
 
 const obj = { badge: true, visibility: "popup", vibrate: true, sound: true };

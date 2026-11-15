@@ -1,12 +1,12 @@
-// Module ID: 11983
-// Function ID: 11984
+// Module ID: 11982
+// Function ID: 11983
 // Name: useCurrentEmbeddedApplication
-// Dependencies: [32, 11984, 7424, 2]
+// Dependencies: [32, 11983, 7424, 2]
 // Exports: default
 
-// Module 11983 (useCurrentEmbeddedApplication)
+// Module 11982 (useCurrentEmbeddedApplication)
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7424 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11984 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11983 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

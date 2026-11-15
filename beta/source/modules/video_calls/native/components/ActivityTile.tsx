@@ -1,17 +1,17 @@
-// Module ID: 11982
-// Function ID: 11983
+// Module ID: 11981
+// Function ID: 11982
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 5018, 1385, 1072, 1191, 11887, 21, 1187, 5170, 575, 504, 1380, 7424, 6205, 5226, 11983, 7420, 7445, 10202, 1113, 11985, 11892, 11987, 11988, 7076, 11989, 12036, 5783, 5791, 5231, 2]
+// Dependencies: [5, 32, 19, 17, 5018, 1385, 1072, 1191, 11886, 21, 1187, 5170, 575, 504, 1380, 7424, 6205, 5226, 11982, 7420, 7445, 10202, 1113, 11984, 11891, 11986, 11987, 7076, 11988, 12035, 5783, 5791, 5231, 2]
 // Exports: default
 
-// Module 11982 (ActivityTile)
+// Module 11981 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import native2 from "native" /* 5231 */;
-import Constants2 from "Constants" /* 11887 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11988 */;
+import Constants2 from "Constants" /* 11886 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11987 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -70,7 +70,7 @@ function ActivityTileInner(participant) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ function ActivityTileInner(participant) {
             const result = obj.setOrientationLockState(closure_128_3);
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp17) {
           c2 = 3;
           throw tmp17;

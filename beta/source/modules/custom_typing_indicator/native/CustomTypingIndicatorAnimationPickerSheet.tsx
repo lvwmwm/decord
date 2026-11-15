@@ -1,10 +1,10 @@
-// Module ID: 17710
-// Function ID: 17711
+// Module ID: 17711
+// Function ID: 17712
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 5170, 575, 7073, 5783, 1398, 1113, 4028, 7459, 14011, 6191, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 7073, 5783, 1398, 1113, 4028, 7459, 14010, 6191, 2]
 // Exports: default
 
-// Module 17710 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 17711 (CustomTypingIndicatorAnimationPickerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Stack_Stack from "Stack/Stack" /* 6191 */;
@@ -95,7 +95,7 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
   const obj6 = { style: tmp.previewRow, children: closure_6(tmp4, obj7) };
   obj7 = { config: obj8, size: 54 };
   obj8 = { emojis, animation, typingSuggestion: onChange(1398).TypingSuggestion.UNSPECIFIED };
-  tmp4 = animation(14011);
+  tmp4 = animation(14010);
   items1 = [closure_6(View, obj6), ];
   const obj9 = {
     spacing: 8,

@@ -1,10 +1,10 @@
-// Module ID: 13241
-// Function ID: 13242
+// Module ID: 13240
+// Function ID: 13241
 // Name: ConjureTemplateWizardSheet
-// Dependencies: [5, 32, 19, 17, 5041, 5102, 11002, 11001, 21, 5170, 575, 13242, 13244, 8765, 504, 13246, 11028, 11032, 13248, 5406, 5783, 7048, 7459, 7415, 1113, 4026, 7157, 7160, 7349, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 5041, 5102, 11002, 11001, 21, 5170, 575, 13241, 13243, 8765, 504, 13245, 11028, 11032, 13247, 5406, 5783, 7048, 7459, 7415, 1113, 4026, 7157, 7160, 7349, 5790, 2]
 // Exports: default
 
-// Module 13241 (ConjureTemplateWizardSheet)
+// Module 13240 (ConjureTemplateWizardSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
@@ -13,9 +13,9 @@ import TableRadioRow from "TableRadioRow" /* 7160 */;
 import GroupIcon from "GroupIcon" /* 8765 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
 import ConjureCreateErrors from "ConjureCreateErrors" /* 11032 */;
-import ChatShieldIcon from "ChatShieldIcon" /* 13242 */;
-import HammerIcon from "HammerIcon" /* 13244 */;
-import ConjureTemplateWizard from "ConjureTemplateWizard" /* 13246 */;
+import ChatShieldIcon from "ChatShieldIcon" /* 13241 */;
+import HammerIcon from "HammerIcon" /* 13243 */;
+import ConjureTemplateWizard from "ConjureTemplateWizard" /* 13245 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -234,7 +234,7 @@ export default function ConjureTemplateWizardSheet(template) {
   }, items4);
   let tmp26 = null == tmp12;
   let id = template.id;
-  const tmp25 = guildId(13248);
+  const tmp25 = guildId(13247);
   if (tmp26) {
     tmp26 = null != stateFromStores1;
   }
@@ -258,13 +258,13 @@ export default function ConjureTemplateWizardSheet(template) {
       tmp9(tmp10, current);
     }
   }, items5);
-  const tmp2Result7 = tmp2(13246);
+  const tmp2Result7 = tmp2(13245);
   const conjureWizardIntroResult = tmp2Result7.conjureWizardIntro(tmp22);
-  const tmp2Result8 = tmp2(13246);
+  const tmp2Result8 = tmp2(13245);
   let result = tmp2Result8.conjureWizardServerCopy(tmp22);
-  const tmp2Result9 = tmp2(13246);
+  const tmp2Result9 = tmp2(13245);
   result1 = tmp2Result9.conjureWizardQuestions(tmp22);
-  const tmp2Result10 = tmp2(13246);
+  const tmp2Result10 = tmp2(13245);
   const result2 = tmp2Result10.conjureTemplateWizardSteps(result1, first1);
   const tmp32 = result2[Math.min(Math, tmp5, result2.length - 1)];
   length = result2.length;
@@ -314,7 +314,7 @@ export default function ConjureTemplateWizardSheet(template) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -388,7 +388,7 @@ export default function ConjureTemplateWizardSheet(template) {
           return obj;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp48) {
         closure_2 = tmp48;
         if (0 === c3) {
@@ -577,7 +577,7 @@ export default function ConjureTemplateWizardSheet(template) {
       intl5 = tmp2(1113).intl;
       tmp57 = null == first2 || null == first;
       if (!tmp57) {
-        const tmp2Result11 = tmp2(13246);
+        const tmp2Result11 = tmp2(13245);
         tmp57 = !tmp2Result11.isConjureWizardComplete(result1, first3);
       }
       obj24 = obj23;
@@ -599,7 +599,7 @@ export default function ConjureTemplateWizardSheet(template) {
       if (!tmp49) {
         let tmp56 = typeof tmp32 === "object";
         if (typeof tmp32 === "object") {
-          const tmp2Result12 = tmp2(13246);
+          const tmp2Result12 = tmp2(13245);
           tmp56 = !tmp2Result12.canLeaveConjureWizardQuestion(tmp33, str);
         }
         tmp49 = tmp56;

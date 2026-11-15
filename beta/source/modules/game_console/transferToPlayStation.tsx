@@ -1,15 +1,15 @@
-// Module ID: 12180
-// Function ID: 12181
+// Module ID: 12179
+// Function ID: 12180
 // Name: transferToPlayStation
-// Dependencies: [5, 1072, 12181, 12177, 12184, 572, 1282, 12185, 2]
+// Dependencies: [5, 1072, 12180, 12176, 12183, 572, 1282, 12184, 2]
 // Exports: transferToPlayStation
 
-// Module 12180 (transferToPlayStation)
+// Module 12179 (transferToPlayStation)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 12181 */;
-import ConsoleCommands from "ConsoleCommands" /* 12185 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 12180 */;
+import ConsoleCommands from "ConsoleCommands" /* 12184 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _transferToPlayStation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ let obj = function _transferToPlayStation() {
           } else {
             closure_132_1(closure_132_2[4])(id.id, closure_0);
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           c6 = 3;
@@ -139,7 +139,7 @@ obj = function _sendConnectVoiceCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

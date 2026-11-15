@@ -1,10 +1,10 @@
-// Module ID: 11921
-// Function ID: 11922
+// Module ID: 11920
+// Function ID: 11921
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 9885, 2162, 6931, 8012, 502, 5019, 5041, 5102, 1385, 5835, 5018, 2142, 1072, 1362, 5016, 11922, 10466, 11093, 11923, 11924, 11928, 11929, 572, 11039, 11040, 11930, 11044, 6612, 6234, 2148, 5831, 9073, 11931, 2116, 11932, 11934, 10461, 1252, 11935, 11943, 6821, 11944, 6122, 1113, 5834, 11945, 1260, 6834, 5091, 6939, 5920, 1282, 9058, 7990, 7745, 7582, 7933, 5004, 5003, 2]
+// Dependencies: [32, 5, 9885, 2162, 6931, 8012, 502, 5019, 5041, 5102, 1385, 5835, 5018, 2142, 1072, 1362, 5016, 11921, 10466, 11093, 11922, 11923, 11927, 11928, 572, 11039, 11040, 11929, 11044, 6612, 6234, 2148, 5831, 9073, 11930, 2116, 11931, 11933, 10461, 1252, 11934, 11942, 6821, 11943, 6122, 1113, 5834, 11944, 1260, 6834, 5091, 6939, 5920, 1282, 9058, 7990, 7745, 7582, 7933, 5004, 5003, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 11921 (EmbeddedActivitiesActionCreators)
+// Module 11920 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ApplicationConstants from "ApplicationConstants" /* 1362 */;
@@ -101,7 +101,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c15;
@@ -474,7 +474,7 @@ obj = function _maybeSendPrimaryAppCommand() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -785,7 +785,7 @@ obj = function _joinEmbeddedActivity() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1110,7 +1110,7 @@ obj = function _uploadImageAttachment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -1234,7 +1234,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1326,7 +1326,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
             const obj2 = closure_130_1(closure_130_2[56]);
             obj2.sendInvite(closure_7, code.code, c3, c4, content);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp30) {
@@ -1350,7 +1350,7 @@ obj = function _validateTestMode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -1420,7 +1420,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

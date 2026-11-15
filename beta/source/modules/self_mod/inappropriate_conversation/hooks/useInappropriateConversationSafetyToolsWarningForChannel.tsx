@@ -1,13 +1,13 @@
-// Module ID: 11472
-// Function ID: 11473
+// Module ID: 11471
+// Function ID: 11472
 // Name: useInappropriateConversationSafetyToolsWarningForChannel
-// Dependencies: [11435, 11436, 11433, 2]
+// Dependencies: [11434, 11435, 11432, 2]
 // Exports: useInappropriateConversationSafetyToolsWarningForChannel
 
-// Module 11472 (useInappropriateConversationSafetyToolsWarningForChannel)
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11433 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11435 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 11436 */;
+// Module 11471 (useInappropriateConversationSafetyToolsWarningForChannel)
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11432 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11434 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 11435 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationSafetyToolsWarningForChannel.tsx");

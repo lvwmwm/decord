@@ -1,9 +1,9 @@
-// Module ID: 19076
-// Function ID: 19077
+// Module ID: 19134
+// Function ID: 19135
 // Name: ChannelDetails
-// Dependencies: [19, 17, 14166, 5019, 9948, 10290, 21, 575, 5170, 504, 14113, 19077, 7420, 7445, 1499, 14264, 5422, 7216, 1627, 1377, 5127, 7763, 14177, 14152, 1652, 5402, 5405, 5793, 14186, 5355, 5452, 19078, 19088, 19204, 19206, 19207, 19208, 19209, 6153, 2]
+// Dependencies: [19, 17, 14166, 5019, 9948, 10290, 21, 575, 5170, 504, 14113, 19135, 7420, 7445, 1499, 14264, 5422, 7216, 1627, 1377, 5127, 7763, 14177, 14152, 1652, 5402, 5405, 5793, 14186, 5355, 5452, 19136, 19146, 19262, 19264, 19265, 19266, 19267, 6153, 2]
 
-// Module 19076 (ChannelDetails)
+// Module 19134 (ChannelDetails)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14152 */;

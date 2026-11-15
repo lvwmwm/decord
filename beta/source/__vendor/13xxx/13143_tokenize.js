@@ -1,75 +1,82 @@
 // Module ID: 13143
 // Function ID: 13144
 // Name: tokenize
-// Dependencies: [13082]
+// Dependencies: [13081]
 
 // Module 13143 (tokenize)
-import tokenize from "tokenize" /* 13082 */;
+import tokenize from "tokenize" /* 13081 */;
 
+let items;
 let obj2;
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+const Comment = tokenize.TYPE.Comment;
 const Ident = tokenize.TYPE.Ident;
-const Number = tokenize.TYPE.Number;
-const Dimension = tokenize.TYPE.Dimension;
 const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
-const Colon = tokenize.TYPE.Colon;
-const Delim = tokenize.TYPE.Delim;
-let obj = {
-  name: "MediaFeature",
+const obj = {
+  name: "MediaQuery",
   structure: obj2,
   parse() {
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftParenthesis);
     const scanner = this.scanner;
     scanner.skipSC();
-    const scanner2 = this.scanner;
-    const consumeResult = this.consume(Ident);
-    scanner2.skipSC();
-    let tmp7 = null;
-    const tmp3 = Ident;
-    const tmp6 = RightParenthesis;
-    if (this.scanner.tokenType !== RightParenthesis) {
-      let DimensionResult;
-      self.eat(Colon);
-      const scanner4 = self.scanner;
-      scanner4.skipSC();
-      const tokenType = self.scanner.tokenType;
-      if (Number === tokenType) {
-        let RatioResult;
-        if (self.lookupNonWSType(1) === Delim) {
-          RatioResult = self.Ratio();
+    const list = this.createList();
+    let tmp2 = null;
+    let tmp3 = null;
+    let tmp4 = null;
+    if (!this.scanner.eof) {
+      while (true) {
+        let WhiteSpaceResult;
+        let IdentifierResult;
+        let tokenType = self.scanner.tokenType;
+        if (Comment === tokenType) {
+          let iter = self.scanner;
+          let nextResult = iter.next();
+          WhiteSpaceResult = tmp2;
+          IdentifierResult = tmp3;
         } else {
-          RatioResult = self.Number();
+          if (WhiteSpace === tokenType) {
+            WhiteSpaceResult = self.WhiteSpace();
+            IdentifierResult = tmp3;
+          } else {
+            if (Ident === tokenType) {
+              IdentifierResult = self.Identifier();
+              WhiteSpaceResult = tmp2;
+              if (null !== tmp2) {
+                let arr = list.push(tmp2);
+                WhiteSpaceResult = null;
+              }
+              let arr3 = list.push(IdentifierResult);
+            } else {
+              tmp4 = tmp3;
+              if (LeftParenthesis !== tokenType) {
+                break;
+              } else {
+                IdentifierResult = self.MediaFeature();
+              }
+            }
+            break;
+          }
+          break;
         }
-        DimensionResult = RatioResult;
-      } else if (Dimension === tokenType) {
-        DimensionResult = self.Dimension();
-      } else if (tmp3 === tokenType) {
-        DimensionResult = self.Identifier();
-      } else {
-        self.error("Number, dimension, ratio or identifier is expected");
-        DimensionResult = null;
+        tmp2 = WhiteSpaceResult;
+        tmp3 = IdentifierResult;
+        tmp4 = IdentifierResult;
+        if (self.scanner.eof) {
+          break;
+        }
       }
-      const scanner3 = self.scanner;
-      scanner3.skipSC();
-      tmp7 = DimensionResult;
     }
-    self.eat(tmp6);
-    const obj = { type: "MediaFeature", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, value: tmp7 };
-    return obj;
+    if (null === tmp4) {
+      self.error("Identifier or parenthesis is expected");
+    }
+    const element = { type: "MediaQuery", loc: self.getLocationFromList(list), children: list };
+    return element;
   },
-  generate(name) {
-    const self = this;
-    this.chunk("(");
-    this.chunk(name.name);
-    if (null !== name.value) {
-      self.chunk(":");
-      self.node(name.value);
-    }
-    self.chunk(")");
+  generate(arg0) {
+    this.children(arg0);
   }
 };
-obj2 = { name: String, value: ["Identifier", "Number", "Dimension", "Ratio", null] };
+obj2 = { children: items };
+items = [["Identifier", "MediaFeature", "WhiteSpace"]];
 
 export default obj;

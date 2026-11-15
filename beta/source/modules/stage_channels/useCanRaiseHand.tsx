@@ -1,10 +1,10 @@
-// Module ID: 12102
-// Function ID: 12103
+// Module ID: 12101
+// Function ID: 12102
 // Name: useCanRaiseHand
 // Dependencies: [5102, 1083, 504, 2]
 // Exports: useCanRaiseHand
 
-// Module 12102 (useCanRaiseHand)
+// Module 12101 (useCanRaiseHand)
 import Constants from "Constants" /* 1083 */;
 import PermissionStore from "PermissionStore" /* 5102 */;
 import size from "module_2" /* 2 */;

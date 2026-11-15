@@ -1,9 +1,9 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 11758
+// Function ID: 11759
 // Name: ChannelLatestMessageLoadingStatsManager
 // Dependencies: [1072, 7754, 2]
 
-// Module 11759 (ChannelLatestMessageLoadingStatsManager)
+// Module 11758 (ChannelLatestMessageLoadingStatsManager)
 import Constants from "Constants" /* 1072 */;
 import Clickstream from "Clickstream" /* 7754 */;
 import size from "module_2" /* 2 */;

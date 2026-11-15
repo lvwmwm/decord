@@ -1,75 +1,41 @@
 // Module ID: 13349
 // Function ID: 13350
-// Dependencies: [13342, 13337, 13350, 13338, 13310]
-// Exports: sampleSpan
+// Dependencies: [13337, 13309]
+// Exports: parseSampleRate
 
 // Module 13349
 import _mod13337 from "module_13337" /* 13337 */;
-import _mod13338 from "module_13338" /* 13338 */;
-import _mod13342 from "module_13342" /* 13342 */;
-import _mod13350 from "module_13350" /* 13350 */;
 
 
-export function sampleSpan(tracesSampler, normalizedRequest) {
-  const obj = _mod13342;
-  if (obj.hasTracingEnabled(tracesSampler)) {
-    let num;
-    let items3;
-    const tmpResult = _mod13337;
-    const isolationScope = tmpResult.getIsolationScope();
-    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
-    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
-    const merged = Object.assign(normalizedRequest);
-    if (typeof tracesSampler.tracesSampler === "function") {
-      num = tracesSampler.tracesSampler(obj2);
-    } else if (undefined !== obj2.parentSampled) {
-      num = obj2.parentSampled;
-    } else {
-      num = 1;
-      if (undefined !== tracesSampler.tracesSampleRate) {
-        num = tracesSampler.tracesSampleRate;
-      }
-    }
-    const tmpResult2 = _mod13350;
-    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
-    if (undefined === parseSampleRateResult) {
-      if (_mod13338.DEBUG_BUILD) {
-        const logger3 = tmp(13310).logger;
-        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
-      }
-      const items = [false];
-      items3 = items;
-    } else if (parseSampleRateResult) {
-      let items2;
-      const _Math = Math;
-      if (Math.random() < parseSampleRateResult) {
-        const items1 = [true, parseSampleRateResult];
-        items2 = items1;
-      } else {
-        if (_mod13338.DEBUG_BUILD) {
-          const logger2 = tmp(13310).logger;
-          const _Number = Number;
-          const _HermesInternal = HermesInternal;
-          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
-        }
-        items2 = [false, parseSampleRateResult];
-      }
-      items3 = items2;
-    } else {
-      if (_mod13338.DEBUG_BUILD) {
-        const logger = tmp(13310).logger;
-        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
-        const log = logger.log;
-        if (typeof tracesSampler.tracesSampler === "function") {
-          str = "tracesSampler returned 0 or false";
-        }
-        log(`[Tracing] Discarding transaction because ${str}`);
-      }
-      items3 = [false, parseSampleRateResult];
-    }
-    return items3;
+export function parseSampleRate(flag) {
+  if (typeof flag === "boolean") {
+    const _Number = Number;
+    return Number(flag);
   } else {
-    const items4 = [false];
-    return items4;
+    let parsed = flag;
+    if (typeof flag === "string") {
+      const _parseFloat = parseFloat;
+      parsed = parseFloat(flag);
+    }
+    if (typeof parsed === "number") {
+      const _isNaN = isNaN;
+      if (!isNaN(parsed)) {
+        if (parsed >= 0) {
+          if (parsed <= 1) {
+            return parsed;
+          }
+        }
+      }
+    }
+    const tmp = require;
+    if (_mod13337.DEBUG_BUILD) {
+      const logger = tmp(13309).logger;
+      const _JSON = JSON;
+      const warn = logger.warn;
+      const json = JSON.stringify(flag);
+      const _JSON2 = JSON;
+      const _HermesInternal = HermesInternal;
+      warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
+    }
   }
 }

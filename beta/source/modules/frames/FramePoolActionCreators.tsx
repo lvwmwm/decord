@@ -1,10 +1,10 @@
-// Module ID: 12474
-// Function ID: 12475
+// Module ID: 12473
+// Function ID: 12474
 // Name: FramePoolActionCreators
 // Dependencies: [572, 2]
 // Exports: updateFramePoolVisibility
 
-// Module 12474 (FramePoolActionCreators)
+// Module 12473 (FramePoolActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

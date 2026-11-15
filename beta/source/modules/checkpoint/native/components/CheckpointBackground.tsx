@@ -1,10 +1,10 @@
-// Module ID: 13904
-// Function ID: 13905
+// Module ID: 13903
+// Function ID: 13904
 // Name: CheckpointBackground
-// Dependencies: [19, 6231, 1072, 21, 5170, 5747, 5874, 13905, 2]
+// Dependencies: [19, 6231, 1072, 21, 5170, 5747, 5874, 13904, 2]
 // Exports: default
 
-// Module 13904 (CheckpointBackground)
+// Module 13903 (CheckpointBackground)
 import Constants from "Constants" /* 1072 */;
 import CheckpointConstants from "CheckpointConstants" /* 6231 */;
 import react from "react" /* 19 */;
@@ -39,7 +39,7 @@ export default function CheckpointBackground(gradientStartColor) {
   const obj2 = { colors: memo, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp2.background };
   items1[0] = closure_5(gradientStartColor(5747), obj2);
   const obj3 = { source: obj4, style: tmp2.background, resizeMode: "cover" };
-  obj4 = { uri: gradientStartColor(13905) };
+  obj4 = { uri: gradientStartColor(13904) };
   const tmp4 = gradientStartColor(5874);
   items1[1] = closure_5(tmp4, obj3);
   return closure_7(closure_6, obj);

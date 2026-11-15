@@ -1,15 +1,15 @@
-// Module ID: 15297
-// Function ID: 15298
+// Module ID: 15298
+// Function ID: 15299
 // Name: ProfileReadStateActionCreators
-// Dependencies: [5, 9588, 1385, 7881, 3, 15277, 7892, 1282, 15298, 7893, 572, 2]
+// Dependencies: [5, 9588, 1385, 7881, 3, 15278, 7892, 1282, 15299, 7893, 572, 2]
 // Exports: ackProfileWishlist
 
-// Module 15297 (ProfileReadStateActionCreators)
+// Module 15298 (ProfileReadStateActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7892 */;
 import ProfileReadStateSection from "ProfileReadStateSection" /* 7893 */;
-import ProfileReadStateEndpoints2 from "ProfileReadStateEndpoints" /* 15298 */;
+import ProfileReadStateEndpoints2 from "ProfileReadStateEndpoints" /* 15299 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import WishlistStore from "WishlistStore" /* 9588 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -72,7 +72,7 @@ let obj = function _ackProfileWishlist() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -136,7 +136,7 @@ let obj = function _ackProfileWishlist() {
           closure_130_8.delete(combined);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp31) {
         closure_3 = tmp31;
         if (0 === c4) {
@@ -169,7 +169,7 @@ obj = function _sendWishlistAck() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -220,7 +220,7 @@ obj = function _sendWishlistAck() {
                 if (id !== closure_1) {
                   c6 = 0;
                   c8 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   const obj7 = { type: "PROFILE_READ_STATE_ACK", ownerId, ackedAt };
                   const dispatch = closure_132_1(closure_132_2[10]).dispatch;
@@ -248,7 +248,7 @@ obj = function _sendWishlistAck() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           closure_5 = tmp16;

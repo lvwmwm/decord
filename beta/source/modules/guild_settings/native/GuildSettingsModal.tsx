@@ -1,16 +1,16 @@
-// Module ID: 20097
-// Function ID: 20098
+// Module ID: 20102
+// Function ID: 20103
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 5041, 9188, 1072, 21, 18573, 9187, 1260, 1113, 7097, 20098, 20108, 20116, 20117, 20136, 20155, 20160, 20175, 20176, 20188, 20200, 20202, 19334, 19343, 20210, 20214, 20215, 19345, 18574, 20216, 20217, 20237, 20258, 20262, 20265, 20268, 13528, 13542, 13546, 20269, 20274, 20275, 20297, 20319, 20385, 20386, 20400, 20437, 20440, 20441, 20444, 20452, 20453, 1627, 5771, 504, 7264, 2]
+// Dependencies: [32, 19, 5041, 9188, 1072, 21, 18574, 9187, 1260, 1113, 7097, 20103, 20113, 20121, 20122, 20141, 20160, 20165, 20180, 20181, 20193, 20205, 20207, 19392, 19401, 20215, 20219, 20220, 19403, 18575, 20221, 20222, 20242, 20263, 20267, 20270, 20273, 13527, 13541, 13545, 20274, 20279, 20280, 20302, 20324, 20390, 20391, 20405, 20442, 20445, 20446, 20449, 20457, 20458, 1627, 5771, 504, 7264, 2]
 // Exports: default
 
-// Module 20097 (GuildSettingsModal)
+// Module 20102 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import intl42 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18573 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18574 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5041 */;

@@ -1,10 +1,10 @@
-// Module ID: 11694
-// Function ID: 11695
+// Module ID: 11693
+// Function ID: 11694
 // Name: getCurrentUserProfile
 // Dependencies: [1385, 7881, 2]
 // Exports: default
 
-// Module 11694 (getCurrentUserProfile)
+// Module 11693 (getCurrentUserProfile)
 import UserStore from "UserStore" /* 1385 */;
 import UserProfileStore from "UserProfileStore" /* 7881 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 13273
-// Function ID: 13274
+// Module ID: 13272
+// Function ID: 13273
 // Name: ConjurePerfTraceStatsHeader
-// Dependencies: [19, 17, 21, 5170, 575, 13274, 11051, 5783, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 13273, 11051, 5783, 2]
 // Exports: default
 
-// Module 13273 (ConjurePerfTraceStatsHeader)
+// Module 13272 (ConjurePerfTraceStatsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13274 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13273 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -57,7 +57,7 @@ export default function ConjurePerfTraceStatsHeader(stats) {
   let items;
   stats = stats.stats;
   let tmp = stats;
-  let obj = stats(13274);
+  let obj = stats(13273);
   const perfModelSummaryResult = obj.perfModelSummary(stats);
   let tmp4 = closure_6();
   dependencyMap = tmp4;

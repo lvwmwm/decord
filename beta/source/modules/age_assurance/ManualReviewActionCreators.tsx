@@ -61,7 +61,7 @@ obj = function _handleManualReviewCta() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -133,7 +133,7 @@ obj = function _handleManualReviewCta() {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === c4) {
           c3 = 0;

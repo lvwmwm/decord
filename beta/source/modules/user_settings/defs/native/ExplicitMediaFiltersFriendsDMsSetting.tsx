@@ -1,17 +1,17 @@
-// Module ID: 17077
-// Function ID: 17078
+// Module ID: 17078
+// Function ID: 17079
 // Name: ExplicitMediaFiltersFriendsDMsSetting
-// Dependencies: [8536, 17078, 8791, 7567, 1113, 17079, 11717, 17081, 2]
+// Dependencies: [8536, 17079, 8791, 7567, 1113, 17080, 11716, 17082, 2]
 
-// Module 17077 (ExplicitMediaFiltersFriendsDMsSetting)
+// Module 17078 (ExplicitMediaFiltersFriendsDMsSetting)
 import intl4 from "intl" /* 1113 */;
 import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7567 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8791 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 17078 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17079 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 17081 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 17079 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17080 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 17082 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

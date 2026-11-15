@@ -1,14 +1,14 @@
-// Module ID: 12421
-// Function ID: 12422
+// Module ID: 12420
+// Function ID: 12421
 // Name: ExperimentalDirectSelectIcon
-// Dependencies: [19, 21, 575, 5873, 12422, 2]
+// Dependencies: [19, 21, 575, 5873, 12421, 2]
 // Exports: ExperimentalDirectSelectIcon
 
-// Module 12421 (ExperimentalDirectSelectIcon)
+// Module 12420 (ExperimentalDirectSelectIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 12422 */;
+import AssetRegistry from "AssetRegistry" /* 12421 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

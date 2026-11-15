@@ -1,15 +1,15 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 19270
+// Function ID: 19271
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 5170, 575, 11734, 1627, 10983, 19213, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 11733, 1627, 10983, 19271, 2]
 // Exports: default
 
-// Module 19212 (MainTabsEmptyChatPanel)
+// Module 19270 (MainTabsEmptyChatPanel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import FavoritesHooks from "FavoritesHooks" /* 10983 */;
-import useDrawerWidth from "useDrawerWidth" /* 11734 */;
+import useDrawerWidth from "useDrawerWidth" /* 11733 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 5170 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp3;
-const FavoritesEmptyStateDefault = tmp3(19213);
+const FavoritesEmptyStateDefault = tmp3(19271);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((left, marginTop) => {

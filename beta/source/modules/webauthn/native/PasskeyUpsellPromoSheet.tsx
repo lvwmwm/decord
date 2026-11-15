@@ -1,16 +1,16 @@
-// Module ID: 18043
-// Function ID: 18044
+// Module ID: 18044
+// Function ID: 18045
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 1072, 5016, 21, 5874, 18044, 10988, 1113, 1377, 18045, 6855, 5790, 18042, 7220, 7668, 2]
+// Dependencies: [19, 1072, 5016, 21, 5874, 18045, 10988, 1113, 1377, 18046, 6855, 5790, 18043, 7220, 7668, 2]
 // Exports: default
 
-// Module 18043 (PasskeyUpsellPromoSheet)
+// Module 18044 (PasskeyUpsellPromoSheet)
 import Constants from "Constants" /* 1072 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import NativeCeremoniesDefault from "NativeCeremonies" /* 7220 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 18042 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 18045 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 18043 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 18046 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

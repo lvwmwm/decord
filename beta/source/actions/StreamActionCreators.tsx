@@ -37,6 +37,7 @@ let closure_14;
 let closure_15;
 let map1;
 function watchStream(stream, forceMultiple) {
+  let analyticsLocations;
   let channelId;
   let guildId;
   let id;
@@ -54,10 +55,15 @@ function watchStream(stream, forceMultiple) {
         const allActiveStreamsForChannel = ApplicationStreamingStore.getAllActiveStreamsForChannel(channelId);
         forceMultiple = allActiveStreamsForChannel.filter((ownerId) => ownerId.ownerId !== id.getId()).length >= MAX_VALUE;
       }
-      const obj4 = { type: "STREAM_WATCH", streamKey: encodeStreamKeyResult, allowMultiple: forceMultiple };
-      const obj3 = DispatcherDefault;
-      obj3.dispatch(obj4);
+      const obj3 = { type: "STREAM_WATCH", streamKey: encodeStreamKeyResult, allowMultiple: forceMultiple, analyticsLocations };
+      analyticsLocations = undefined;
+      const dispatch = DispatcherDefault.dispatch;
+      DispatcherDefault;
       const tmp18 = importDefault;
+      if (forceMultiple != null) {
+        analyticsLocations = forceMultiple.analyticsLocations;
+      }
+      dispatch(obj3);
       if (null != guildId) {
         const tmp12Result = tmp12(8014);
         const result = tmp12Result.maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
@@ -66,8 +72,8 @@ function watchStream(stream, forceMultiple) {
       if (forceMultiple != null) {
         forceFocus = forceMultiple.forceFocus;
       }
-      let tmp22 = true !== forceFocus;
-      if (tmp22) {
+      let tmp24 = true !== forceFocus;
+      if (tmp24) {
         if (!forceMultiple) {
           let noFocus;
           if (forceMultiple != null) {
@@ -75,9 +81,9 @@ function watchStream(stream, forceMultiple) {
           }
           forceMultiple = noFocus;
         }
-        tmp22 = forceMultiple;
+        tmp24 = forceMultiple;
       }
-      if (!tmp22) {
+      if (!tmp24) {
         const tmp18Result = tmp18(5920);
         const participant = tmp18Result.selectParticipant(stream.channelId, encodeStreamKeyResult);
       }
@@ -113,7 +119,7 @@ let obj = function _fetchStreamPreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -186,7 +192,7 @@ let obj = function _fetchStreamPreview() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp40) {
           closure_5 = tmp40;
           if (0 === c6) {
@@ -215,7 +221,7 @@ obj = function _notifyStreamStart() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -254,7 +260,7 @@ obj = function _notifyStreamStart() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         let closure_3 = tmp5;

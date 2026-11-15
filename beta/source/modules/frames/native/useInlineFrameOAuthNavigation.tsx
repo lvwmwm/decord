@@ -1,10 +1,10 @@
-// Module ID: 12460
-// Function ID: 12461
+// Module ID: 12459
+// Function ID: 12460
 // Name: useInlineFrameOAuthNavigation
 // Dependencies: [5, 19, 6934, 6935, 1072, 11068, 6831, 11063, 2118, 1108, 2]
 // Exports: default
 
-// Module 12460 (useInlineFrameOAuthNavigation)
+// Module 12459 (useInlineFrameOAuthNavigation)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
@@ -54,7 +54,7 @@ export default function useInlineFrameOAuthNavigation(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -98,7 +98,7 @@ export default function useInlineFrameOAuthNavigation(arg0) {
                 }
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } catch (tmp20) {
               c3 = 3;
               throw tmp20;

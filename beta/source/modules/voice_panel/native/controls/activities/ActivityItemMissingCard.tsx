@@ -1,9 +1,9 @@
-// Module ID: 19694
-// Function ID: 19695
+// Module ID: 19699
+// Function ID: 19700
 // Name: ActivityItemMissingCard
-// Dependencies: [5, 19, 17, 21, 5170, 575, 11394, 7420, 11988, 12037, 7076, 19695, 19696, 7056, 2]
+// Dependencies: [5, 19, 17, 21, 5170, 575, 11394, 7420, 11987, 12036, 7076, 19700, 19701, 7056, 2]
 
-// Module 19694 (ActivityItemMissingCard)
+// Module 19699 (ActivityItemMissingCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import NativeViewDefault from "NativeView" /* 7056 */;
@@ -46,7 +46,7 @@ function ActivityItemEmptyCard(activity) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -76,7 +76,7 @@ function ActivityItemEmptyCard(activity) {
           return obj;
         } else {
           activity = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         activity = 3;

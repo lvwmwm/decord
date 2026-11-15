@@ -1,10 +1,10 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18562
+// Function ID: 18563
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 5171, 5407, 5914, 1072, 21, 9945, 5401, 5177, 5798, 18562, 5044, 18534, 5915, 5756, 575, 5796, 12646, 5170, 1652, 10887, 18563, 1493, 504, 1500, 5793, 5794, 16072, 1411, 1113, 5874, 18604, 2]
+// Dependencies: [19, 17, 5171, 5407, 5914, 1072, 21, 9945, 5401, 5177, 5798, 18563, 5044, 18535, 5915, 5756, 575, 5796, 12645, 5170, 1652, 10887, 18564, 1493, 504, 1500, 5793, 5794, 16073, 1411, 1113, 5874, 18605, 2]
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 18561 (RedesignGuildHeader)
+// Module 18562 (RedesignGuildHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
@@ -18,11 +18,11 @@ import useFontScale from "useFontScale" /* 5798 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5915 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9945 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10887 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12646 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 16072 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 18534 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 18562 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18563 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12645 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 16073 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 18535 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 18563 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18564 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;

@@ -1,9 +1,9 @@
-// Module ID: 11708
-// Function ID: 11709
+// Module ID: 11707
+// Function ID: 11708
 // Name: ExternalStreamingStore
 // Dependencies: [5, 6659, 5227, 1072, 1089, 1282, 7441, 572, 8825, 6661, 1342, 504, 2]
 
-// Module 11708 (ExternalStreamingStore)
+// Module 11707 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -126,7 +126,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c6;
@@ -315,7 +315,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;

@@ -1,14 +1,20 @@
 // Module ID: 16493
 // Function ID: 16494
-// Dependencies: [16477, 16494]
+// Dependencies: [16478]
 
 // Module 16493
-import _mod16477 from "module_16477" /* 16477 */;
-import _mod16494 from "module_16494" /* 16494 */;
+import _mod16478 from "module_16478" /* 16478 */;
 
-let closure_2 = _mod16477({}.hasOwnProperty);
-const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
-  return closure_2(_mod16494(arg0), arg1);
-});
+let _window = 0;
+let closure_1 = Math.random();
+let closure_2 = _mod16478((1).toString);
 
-export default tmp;
+export default (arg0) => {
+  let _window;
+  let str = "";
+  if (undefined !== arg0) {
+    str = arg0;
+  }
+  _window = _window + 1;
+  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+};

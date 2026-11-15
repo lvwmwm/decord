@@ -1,12 +1,12 @@
-// Module ID: 18614
-// Function ID: 18615
+// Module ID: 18615
+// Function ID: 18616
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [5019, 9203, 18613, 2]
+// Dependencies: [5019, 9203, 18614, 2]
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 18614 (useActiveEventOrStageInstanceChannel)
+// Module 18615 (useActiveEventOrStageInstanceChannel)
 import useGuildScheduledEvents from "useGuildScheduledEvents" /* 9203 */;
-import useLiveStageChannelsDefault from "useLiveStageChannels" /* 18613 */;
+import useLiveStageChannelsDefault from "useLiveStageChannels" /* 18614 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
 

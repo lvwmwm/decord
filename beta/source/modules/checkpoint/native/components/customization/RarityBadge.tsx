@@ -1,10 +1,10 @@
-// Module ID: 13958
-// Function ID: 13959
+// Module ID: 13957
+// Function ID: 13958
 // Name: RarityBadge
 // Dependencies: [32, 19, 17, 6231, 21, 5170, 575, 6232, 8134, 6598, 5783, 1113, 9645, 2]
 // Exports: default
 
-// Module 13958 (RarityBadge)
+// Module 13957 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6232 */;

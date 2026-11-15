@@ -1,9 +1,9 @@
-// Module ID: 12196
-// Function ID: 12197
+// Module ID: 12195
+// Function ID: 12196
 // Name: StageChannelExpandedControls
-// Dependencies: [19, 17, 6801, 502, 5041, 21, 5170, 5167, 575, 11364, 11166, 504, 6799, 9337, 12197, 2]
+// Dependencies: [19, 17, 6801, 502, 5041, 21, 5170, 5167, 575, 11364, 11166, 504, 6799, 9337, 12196, 2]
 
-// Module 12196 (StageChannelExpandedControls)
+// Module 12195 (StageChannelExpandedControls)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -61,12 +61,12 @@ const memoResult = react.memo(function StageChannelExpandedControls(channel) {
   const stageHasMedia = tmp5Result.useStageHasMedia(channel.id);
   const items5 = [];
   const reachedLimit = useChannelVideoLimitDefault(channel).reachedLimit;
-  items5.push(jsx(channel(12197).StreamVolumeItem, {}));
+  items5.push(jsx(channel(12196).StreamVolumeItem, {}));
   const tmp11 = num > 0 && tmp4;
   if (tmp11) {
     const push = items5.push;
     let tmp12 = stateFromStoresArray.length > 0;
-    const ScreenshareButton = tmp5(12197).ScreenshareButton;
+    const ScreenshareButton = tmp5(12196).ScreenshareButton;
     if (tmp12) {
       tmp12 = null == stateFromStoresArray.find((ownerId) => ownerId.ownerId === closure_1);
     }
@@ -75,8 +75,8 @@ const memoResult = react.memo(function StageChannelExpandedControls(channel) {
     }
     push(<ScreenshareButton channel={channel} disabled={tmp12} />);
   }
-  items5.push(jsx(channel(12197).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
-  items5.push(jsx(channel(12197).DeafenButton, { channel }));
+  items5.push(jsx(channel(12196).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
+  items5.push(jsx(channel(12196).DeafenButton, { channel }));
   return <View style={tmp.container}>{items5.map((children, index) => <View key={arg1}>{arg0}</View>)}</View>;
 });
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageChannelExpandedControls.tsx");

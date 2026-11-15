@@ -1,17 +1,17 @@
-// Module ID: 15711
-// Function ID: 15712
+// Module ID: 15712
+// Function ID: 15713
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1072, 21, 5170, 575, 15712, 15716, 15717, 15718, 8572, 5874, 8567, 12455, 5783, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 575, 15713, 15717, 15718, 15719, 8572, 5874, 8567, 12454, 5783, 2]
 // Exports: default
 
-// Module 15711 (BoostedGuildTierProgressCircle)
+// Module 15712 (BoostedGuildTierProgressCircle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8567 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8572 */;
-import ProgressCircleDefault from "ProgressCircle" /* 12455 */;
-import Tier048Px from "Tier048Px" /* 15712 */;
+import ProgressCircleDefault from "ProgressCircle" /* 12454 */;
+import Tier048Px from "Tier048Px" /* 15713 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -75,11 +75,11 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       if (guild.premiumTier !== hasOwnProperty.NONE) {
         const premiumTier = guild.premiumTier;
         if (hasOwnProperty.TIER_1 === premiumTier) {
-          tmp2Result4 = tmp2(15716);
-        } else if (hasOwnProperty.TIER_2 === premiumTier) {
           tmp2Result4 = tmp2(15717);
-        } else if (hasOwnProperty.TIER_3 === premiumTier) {
+        } else if (hasOwnProperty.TIER_2 === premiumTier) {
           tmp2Result4 = tmp2(15718);
+        } else if (hasOwnProperty.TIER_3 === premiumTier) {
+          tmp2Result4 = tmp2(15719);
         }
       }
       const obj5 = { source: tmp2Result4, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };

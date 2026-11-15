@@ -1,9 +1,9 @@
-// Module ID: 13534
-// Function ID: 13535
+// Module ID: 13533
+// Function ID: 13534
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 5084, 1072, 21, 1113, 5170, 575, 5767, 11578, 5753, 1252, 13535, 5869, 6205, 5783, 7157, 7160, 7349, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 5084, 1072, 21, 1113, 5170, 575, 5767, 11577, 5753, 1252, 13534, 5869, 6205, 5783, 7157, 7160, 7349, 5790, 2]
 
-// Module 13534 (GuildDisableCommunication)
+// Module 13533 (GuildDisableCommunication)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import components_Button_Button from "components/Button/Button" /* 5790 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 7157 */;
 import TableRadioRow2 from "TableRadioRow" /* 7160 */;
 import TextArea2 from "TextArea" /* 7349 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11578 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11577 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -135,7 +135,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -179,7 +179,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
             open("GUILD_COMMUNICATION_DISABLED_SUCCESS", obj);
             closure_129_2();
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c3 = 3;

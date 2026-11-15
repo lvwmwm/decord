@@ -1,10 +1,10 @@
-// Module ID: 13646
-// Function ID: 13647
+// Module ID: 13645
+// Function ID: 13646
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7876, 7879, 9013, 5019, 6226, 9042, 13647, 10878, 21, 5170, 575, 1493, 13648, 504, 13644, 13643, 7103, 13650, 5869, 1113, 1380, 13652, 6124, 13653, 9953, 5917, 13654, 13655, 6210, 5408, 5409, 5868, 7451, 1377, 13658, 7663, 5883, 10887, 13659, 13668, 13683, 2]
+// Dependencies: [5, 32, 19, 17, 7876, 7879, 9013, 5019, 6226, 9042, 13646, 10878, 21, 5170, 575, 1493, 13647, 504, 13643, 13642, 7103, 13649, 5869, 1113, 1380, 13651, 6124, 13652, 9953, 5917, 13653, 13654, 6210, 5408, 5409, 5868, 7451, 1377, 13657, 7663, 5883, 10887, 13658, 13667, 13682, 2]
 // Exports: default
 
-// Module 13646 (ForwardModal)
+// Module 13645 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
@@ -17,11 +17,11 @@ import ChannelUtils from "ChannelUtils" /* 6210 */;
 import ClipboardUtils from "ClipboardUtils" /* 7451 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7663 */;
 import UserRowConstants from "UserRowConstants" /* 10878 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13643 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 13644 */;
-import ForwardConstants from "ForwardConstants" /* 13647 */;
-import formatResults from "formatResults" /* 13648 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 13650 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13642 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 13643 */;
+import ForwardConstants from "ForwardConstants" /* 13646 */;
+import formatResults from "formatResults" /* 13647 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 13649 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -210,7 +210,7 @@ export default function ForwardModal(message) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -367,7 +367,7 @@ export default function ForwardModal(message) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp94) {
           c4 = 3;
           throw tmp94;

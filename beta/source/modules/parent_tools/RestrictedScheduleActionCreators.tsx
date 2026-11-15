@@ -1,10 +1,10 @@
-// Module ID: 17192
-// Function ID: 17193
+// Module ID: 17193
+// Function ID: 17194
 // Name: RestrictedScheduleActionCreators
 // Dependencies: [5, 1072, 1282, 572, 2]
 // Exports: addRestrictedScheduleRule, deleteRestrictedScheduleRule, updateRestrictedScheduleRule
 
-// Module 17192 (RestrictedScheduleActionCreators)
+// Module 17193 (RestrictedScheduleActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -71,7 +71,7 @@ obj = function _deleteRestrictedScheduleRule() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ obj = function _deleteRestrictedScheduleRule() {
             obj = closure_131_1(closure_131_2[3]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c5 = 3;

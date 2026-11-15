@@ -1,14 +1,14 @@
-// Module ID: 12571
-// Function ID: 12572
+// Module ID: 12570
+// Function ID: 12571
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 5170, 575, 12480, 12566, 5783, 12567, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 12479, 12565, 5783, 12566, 2]
 // Exports: default
 
-// Module 12571 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 12570 (UserProfileApplicationWidgetBottomStatsLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod12480 from "module_12480" /* 12480 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12566 */;
+import _mod12479 from "module_12479" /* 12479 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12565 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -35,8 +35,8 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
   const stat = tmp;
   let items = [1, 2, 3, 4, 5, 6];
   const mapped = items.map((item) => {
-    const resolveStatComponentValues = _mod12480.resolveStatComponentValues;
-    _mod12480;
+    const resolveStatComponentValues = _mod12479.resolveStatComponentValues;
+    _mod12479;
     return resolveStatComponentValues(require.components["stat_" + item], dependencyMap, View, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   let obj = {
@@ -57,7 +57,7 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {
-            tmp5Result = tmp5(tmp6(12567).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(tmp6(12566).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;

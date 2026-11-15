@@ -1,7 +1,7 @@
 // Module ID: 14233
 // Function ID: 14234
 // Name: ApplicationCommandBar
-// Dependencies: [32, 19, 17, 5082, 21, 5170, 575, 6866, 7076, 1113, 1187, 504, 14058, 5874, 5783, 8279, 6819, 14234, 2]
+// Dependencies: [32, 19, 17, 5082, 21, 5170, 575, 6866, 7076, 1113, 1187, 504, 14057, 5874, 5783, 8279, 6819, 14234, 2]
 // Exports: default
 
 // Module 14233 (ApplicationCommandBar)
@@ -11,7 +11,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import usePreviousDefault from "usePrevious" /* 6819 */;
 import LegacyTokens from "LegacyTokens" /* 6866 */;
 import Pressables from "Pressables" /* 7076 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14058 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14057 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

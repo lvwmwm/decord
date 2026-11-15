@@ -1,10 +1,10 @@
-// Module ID: 11528
-// Function ID: 11529
+// Module ID: 11527
+// Function ID: 11528
 // Name: ChatBanner
-// Dependencies: [19, 17, 6655, 6930, 11529, 1072, 21, 5170, 575, 11530, 11531, 504, 11, 1252, 5921, 7378, 5783, 1113, 5790, 7540, 8304, 7076, 7375, 11532, 2]
+// Dependencies: [19, 17, 6655, 6930, 11528, 1072, 21, 5170, 575, 11529, 11530, 504, 11, 1252, 5921, 7378, 5783, 1113, 5790, 7540, 8304, 7076, 7375, 11531, 2]
 // Exports: default
 
-// Module 11528 (ChatBanner)
+// Module 11527 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,9 +12,9 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7375 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7378 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8304 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 11529 */;
-import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 11530 */;
-import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 11531 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 11528 */;
+import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 11529 */;
+import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 11530 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
@@ -268,7 +268,7 @@ function NewMessagesChatBar(channel) {
       const PressableOpacity2 = tmp2(7076).PressableOpacity;
       intl2 = tmp2(1113).intl;
       obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
-      XSmallBoldIcon = tmp2(11532).XSmallBoldIcon;
+      XSmallBoldIcon = tmp2(11531).XSmallBoldIcon;
       items1[1] = closure_12(PressableOpacity2, obj6);
       tmp5 = closure_13(closure_4, obj2);
     }

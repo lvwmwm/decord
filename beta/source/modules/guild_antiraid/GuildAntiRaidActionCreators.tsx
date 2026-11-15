@@ -1,10 +1,10 @@
-// Module ID: 13522
-// Function ID: 13523
+// Module ID: 13521
+// Function ID: 13522
 // Name: GuildAntiRaidActionCreators
 // Dependencies: [5, 5041, 8587, 1072, 1252, 5921, 9187, 2166, 1282, 11189, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 13522 (GuildAntiRaidActionCreators)
+// Module 13521 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _modDef2166 from "module_2166" /* 2166 */;
@@ -39,7 +39,7 @@ let obj = function _setGuildRaidAlerts() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _setGuildRaidAlerts() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -175,7 +175,7 @@ obj = function _handleReportRaid() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,88 +1,41 @@
 // Module ID: 16276
 // Function ID: 16277
-// Dependencies: [16270, 16241, 16261]
+// Dependencies: [16271, 16242]
 
 // Module 16276
-import _mod16241 from "module_16241" /* 16241 */;
+import _mod16242 from "module_16242" /* 16242 */;
 
-let tmp;
-const _mod16261 = tmp(16261);
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
 
-export default function(arg0, arg1) {
-  let obj;
-  let tmp = obj;
-  obj = new obj(16270)(arg0, arg1);
-  const tmp3 = new obj(16241)("0.0.0");
-  if (obj.test(tmp3)) {
-    return tmp3;
-  } else {
+
+export default function(arr, arg1, arg2) {
+  let closure_0;
+  _require = arg2;
+  dependencyMap = null;
+  let closure_2 = null;
+  let regex = null;
+  try {
+    let tmp = arg1;
     let self = this;
     let self2 = this;
-    const tmp4 = new tmp(16241)("0.0.0-0");
-    if (obj.test(tmp4)) {
-      return tmp4;
-    } else {
-      let num = 0;
-      let num3 = 0;
-      let tmp7 = null;
-      let tmp8 = null;
-      if (0 < obj.set.length) {
-        do {
-          let arr = obj.set[num3];
-          obj = null;
-          let item = arr.forEach(function(semver) {
-            obj = new _mod16241(semver.semver.version);
-            const operator = semver.operator;
-            if (">" === operator) {
-              if (0 === obj.prerelease.length) {
-                obj.patch = obj.patch + 1;
-              } else {
-                const prerelease = obj.prerelease;
-                prerelease.push(0);
-              }
-              obj.raw = obj.format();
-            } else if ("" !== operator) {
-              if (">=" !== operator) {
-                if ("<" !== operator) {
-                  if ("<=" !== operator) {
-                    const _Error = Error;
-                    const _HermesInternal = HermesInternal;
-                    const self = this;
-                    const self2 = this;
-                    const error = new Error("Unexpected operation: " + semver.operator);
-                    throw error;
-                  }
-                }
-              }
-            }
-            obj && !_mod16261(obj, obj);
-          });
-          let tmp11 = !obj;
-          let tmp12 = tmp7;
-          if (obj) {
-            let tmp14 = tmp12;
-            if (tmp14) {
-              tmp14 = !obj(16261)(tmp12, obj);
-            }
-            tmp11 = tmp14;
-          }
-          if (!tmp11) {
-            tmp12 = obj;
-          }
-          num3 = num + 1;
-          tmp7 = tmp12;
-          tmp8 = tmp12;
-          num = num3;
-        } while (num3 < obj.set.length);
-      }
-      let tmp18 = null;
-      if (tmp8) {
-        tmp18 = null;
-        if (obj.test(tmp8)) {
-          tmp18 = tmp8;
+    const tmp6 = new require("module_16271")(arg1, arg2);
+    let tmp7 = tmp6;
+    regex = tmp6;
+    const item = arr.forEach(function(item) {
+      if (regex.test(item)) {
+        const tmp = c1 && 1 !== closure_2.compare(item);
+        if (!tmp) {
+          c1 = item;
+          const self = this;
+          const self2 = this;
+          closure_2 = new _mod16242(c1, closure_0);
+          const tmp7 = new _mod16242(c1, closure_0);
         }
       }
-      return tmp18;
-    }
+    });
+    return dependencyMap;
+  } catch (err) {
+    return null;
   }
 };

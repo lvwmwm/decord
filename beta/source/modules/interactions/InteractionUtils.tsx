@@ -70,7 +70,7 @@ let obj = function _executeMessageComponentInteraction() {
       } else if (2 === tmp4) {
         custom_id = 0;
         application_id = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           application_id = 3;

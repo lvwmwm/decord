@@ -33,7 +33,7 @@ let obj = function _addOrUpdateSavedMessage() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ let obj = function _addOrUpdateSavedMessage() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp43) {
           c4 = 3;
@@ -209,7 +209,7 @@ obj = function _removeSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -309,7 +309,7 @@ obj = function _removeSavedMessage() {
             stringResult = intl2.string(closure_130_0(closure_130_2[6]).t.D0tS02);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp49) {
         c4 = 3;

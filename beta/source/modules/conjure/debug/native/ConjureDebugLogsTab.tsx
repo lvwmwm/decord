@@ -1,15 +1,15 @@
-// Module ID: 13281
-// Function ID: 13282
+// Module ID: 13280
+// Function ID: 13281
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 11013, 21, 5170, 575, 13282, 11587, 7471, 5783, 13275, 1113, 4026, 7076, 7073, 1627, 504, 9092, 13283, 9327, 7315, 13285, 13286, 7390, 2]
+// Dependencies: [32, 19, 17, 11013, 21, 5170, 575, 13281, 11586, 7471, 5783, 13274, 1113, 4026, 7076, 7073, 1627, 504, 9092, 13282, 9327, 7315, 13284, 13285, 7390, 2]
 // Exports: default
 
-// Module 13281 (ConjureDebugLogsTab)
+// Module 13280 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureDebugJson from "ConjureDebugJson" /* 13282 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 13283 */;
+import ConjureDebugJson from "ConjureDebugJson" /* 13281 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 13282 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConjureDebugLogStore from "ConjureDebugLogStore" /* 11013 */;
@@ -68,7 +68,7 @@ let closure_11 = react.memo(function LogRow(entry) {
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp3(11587).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp3(11586).ChevronSmallDownIcon;
     tmp6 = tmp3;
   } else {
     ChevronSmallRightIcon = tmp3(7471).ChevronSmallRightIcon;
@@ -77,7 +77,7 @@ let closure_11 = react.memo(function LogRow(entry) {
   let obj = { style: tmp.row, children: items2 };
   const obj2 = { style: tmp.rowHead, children: items1 };
   const Text = tmp6(5783).Text;
-  const tmp6Result = tmp6(13275);
+  const tmp6Result = tmp6(13274);
   let ts = tmp6Result.formatClockTime(entry.ts);
   if (ts == null) {
     ts = entry.ts;

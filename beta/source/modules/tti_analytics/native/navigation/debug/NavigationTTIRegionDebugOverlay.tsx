@@ -1,14 +1,14 @@
-// Module ID: 19005
-// Function ID: 19006
+// Module ID: 19063
+// Function ID: 19064
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 5170, 575, 13594, 13595, 19003, 13597, 5783, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 13593, 13594, 19061, 13596, 5783, 2]
 // Exports: NavigationTTIRegionDebugOverlay
 
-// Module 19005 (NavigationTTIRegionDebugOverlay)
+// Module 19063 (NavigationTTIRegionDebugOverlay)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13595 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 13597 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13594 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 13596 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -274,14 +274,14 @@ export function NavigationTTIRegionDebugOverlay(name) {
   let tmp = closure_11();
   let tmp3 = dependencyMap;
   let tmp2 = name;
-  let obj = name(13594);
+  let obj = name(13593);
   const navTTISurface = obj.useNavTTISurface();
   [tmp6, c2] = _slicedToArray(react.useState(false), 2);
   const useSyncExternalStore = react.useSyncExternalStore;
   const tmp5 = _slicedToArray(react.useState(false), 2);
-  const subscribeNavigationTTIDebugFreezeTarget = name(13597).subscribeNavigationTTIDebugFreezeTarget;
-  const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, name(13597).getNavigationTTIDebugFreezeTarget, name(13597).getNavigationTTIDebugFreezeTarget);
-  let obj2 = name(13594);
+  const subscribeNavigationTTIDebugFreezeTarget = name(13596).subscribeNavigationTTIDebugFreezeTarget;
+  const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, name(13596).getNavigationTTIDebugFreezeTarget, name(13596).getNavigationTTIDebugFreezeTarget);
+  let obj2 = name(13593);
   const navTTISurface1 = obj2.useNavTTISurface();
   const items = [name, regionId, navTTISurface1, tracking];
   const callback = react.useCallback((arg0) => {

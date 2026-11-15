@@ -1,10 +1,10 @@
-// Module ID: 20434
-// Function ID: 20435
+// Module ID: 20439
+// Function ID: 20440
 // Name: FormPriceTier
-// Dependencies: [19, 20395, 1072, 21, 1113, 16062, 7510, 38, 5406, 9115, 2118, 2]
+// Dependencies: [19, 20400, 1072, 21, 1113, 16063, 7510, 38, 5406, 9115, 2118, 2]
 // Exports: default
 
-// Module 20434 (FormPriceTier)
+// Module 20439 (FormPriceTier)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,7 +12,7 @@ import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20395 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20400 */;
 import size from "module_2" /* 2 */;
 
 let c3;

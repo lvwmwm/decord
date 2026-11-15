@@ -1,10 +1,10 @@
-// Module ID: 16150
-// Function ID: 16151
+// Module ID: 16151
+// Function ID: 16152
 // Name: RowGroup
 // Dependencies: [19, 17, 21, 5170, 575, 6191, 7159, 2]
 // Exports: RowGroup
 
-// Module 16150 (RowGroup)
+// Module 16151 (RowGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Stack_Stack from "Stack/Stack" /* 6191 */;

@@ -1,10 +1,10 @@
-// Module ID: 14054
-// Function ID: 14055
+// Module ID: 14053
+// Function ID: 14054
 // Name: GameInviteVoiceCount
 // Dependencies: [19, 17, 5928, 21, 5170, 504, 8777, 575, 5783, 2]
 // Exports: default
 
-// Module 14054 (GameInviteVoiceCount)
+// Module 14053 (GameInviteVoiceCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;

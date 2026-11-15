@@ -1,11 +1,11 @@
-// Module ID: 18560
-// Function ID: 18561
+// Module ID: 18561
+// Function ID: 18562
 // Name: useChannelListSpecs
-// Dependencies: [19, 5914, 18561, 1493, 18449, 5798, 1627, 12646, 2]
+// Dependencies: [19, 5914, 18562, 1493, 18450, 5798, 1627, 12645, 2]
 // Exports: default
 
-// Module 18560 (useChannelListSpecs)
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12646 */;
+// Module 18561 (useChannelListSpecs)
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12645 */;
 import react from "react" /* 19 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 */;
 import size from "module_2" /* 2 */;
@@ -21,10 +21,10 @@ export default function useChannelListSpecs(banner) {
   let closure_2;
   let height;
   let redesignGuildHeaderHeight;
-  let obj = redesignGuildHeaderHeight(18561);
+  let obj = redesignGuildHeaderHeight(18562);
   redesignGuildHeaderHeight = obj.useRedesignGuildHeaderHeight(banner);
   height = height(1493)({ ignoreKeyboard: true }).height;
-  const tmp2 = height(18449)();
+  const tmp2 = height(18450)();
   dependencyMap = tmp2;
   const obj2 = redesignGuildHeaderHeight(5798);
   const fontScale = obj2.useFontScale();

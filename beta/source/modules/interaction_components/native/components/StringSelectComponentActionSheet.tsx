@@ -1,10 +1,10 @@
-// Module ID: 13515
-// Function ID: 13516
+// Module ID: 13514
+// Function ID: 13515
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 5170, 575, 8807, 2116, 5406, 12358, 7396, 5783, 1113, 2]
+// Dependencies: [32, 19, 21, 5170, 575, 8807, 2116, 5406, 12357, 7396, 5783, 1113, 2]
 // Exports: default
 
-// Module 13515 (StringSelectComponentActionSheet)
+// Module 13514 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2116 */;
@@ -150,7 +150,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(12358);
+  const tmp10 = onSubmit(12357);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

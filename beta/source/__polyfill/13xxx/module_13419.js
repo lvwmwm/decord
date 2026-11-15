@@ -1,19 +1,24 @@
 // Module ID: 13419
 // Function ID: 13420
 // Dependencies: []
-// Exports: flatten
+// Exports: getBreadcrumbLogLevelFromHttpStatusCode
 
 // Module 13419
 
-export function flatten(arr) {
-  const f130636 = (arr) => {
-    if (Array.isArray(arr)) {
-      const item = arr.forEach(f130636);
+export function getBreadcrumbLogLevelFromHttpStatusCode(arg0) {
+  let tmp;
+  if (undefined !== arg0) {
+    let str;
+    if (arg0 < 400) {
+      let str2;
+      if (arg0 >= 500) {
+        str2 = "error";
+      }
+      str = str2;
     } else {
-      items.push(arr);
+      str = "warning";
     }
-  };
-  const items = [];
-  let item = arr.forEach(f130636);
-  return items;
+    tmp = str;
+  }
+  return tmp;
 }

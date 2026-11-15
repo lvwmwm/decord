@@ -1,14 +1,14 @@
-// Module ID: 16740
-// Function ID: 16741
+// Module ID: 16741
+// Function ID: 16742
 // Name: FramesManager
-// Dependencies: [5023, 6934, 1072, 7383, 16654, 11047, 5831, 16741, 1252, 2]
+// Dependencies: [5023, 6934, 1072, 7383, 16655, 11047, 5831, 16742, 1252, 2]
 
-// Module 16740 (FramesManager)
+// Module 16741 (FramesManager)
 import ChannelRecord from "ChannelRecord" /* 5023 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
 import leaveFrame from "leaveFrame" /* 11047 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16654 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16741 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16655 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16742 */;
 import FramesStore from "FramesStore" /* 6934 */;
 import Constants from "Constants" /* 1072 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;

@@ -1,9 +1,9 @@
-// Module ID: 11707
-// Function ID: 11708
+// Module ID: 11706
+// Function ID: 11707
 // Name: StageChannelSelfRichPresenceStore
 // Dependencies: [5019, 5041, 5925, 5112, 5073, 1385, 6800, 5024, 6796, 1072, 5107, 10914, 6847, 5808, 6799, 5923, 1342, 504, 572, 2]
 
-// Module 11707 (StageChannelSelfRichPresenceStore)
+// Module 11706 (StageChannelSelfRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1342 from "module_1342" /* 1342 */;

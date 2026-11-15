@@ -1,15 +1,15 @@
-// Module ID: 20520
-// Function ID: 20521
+// Module ID: 20525
+// Function ID: 20526
 // Name: NativeIntentsManager
-// Dependencies: [32, 5019, 5041, 5102, 5112, 5073, 1385, 1072, 20521, 20522, 5808, 15150, 1411, 1380, 5226, 7383, 2]
+// Dependencies: [32, 5019, 5041, 5102, 5112, 5073, 1385, 1072, 20526, 20527, 5808, 15151, 1411, 1380, 5226, 7383, 2]
 
-// Module 20520 (NativeIntentsManager)
+// Module 20525 (NativeIntentsManager)
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import UserUtilsDefault from "UserUtils" /* 5226 */;
 import useChannelName from "useChannelName" /* 5808 */;
-import getChannelIcon from "getChannelIcon" /* 15150 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 20521 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 20522 */;
+import getChannelIcon from "getChannelIcon" /* 15151 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 20526 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 20527 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import GuildStore from "GuildStore" /* 5041 */;

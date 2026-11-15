@@ -1,12 +1,12 @@
-// Module ID: 18163
-// Function ID: 18164
+// Module ID: 18164
+// Function ID: 18165
 // Name: DesignSystemStackSetting
-// Dependencies: [8536, 1072, 11717, 18164, 2]
+// Dependencies: [8536, 1072, 11716, 18165, 2]
 
-// Module 18163 (DesignSystemStackSetting)
+// Module 18164 (DesignSystemStackSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

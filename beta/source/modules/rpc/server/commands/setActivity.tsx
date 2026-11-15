@@ -1,9 +1,9 @@
-// Module ID: 16678
-// Function ID: 16679
+// Module ID: 16679
+// Function ID: 16680
 // Name: setActivity
-// Dependencies: [32, 109, 5, 2162, 6615, 1072, 16645, 9017, 16638, 9447, 572, 16673, 5923, 9861, 11711, 11882, 12, 1089, 8825, 1252, 2]
+// Dependencies: [32, 109, 5, 2162, 6615, 1072, 16646, 9017, 16639, 9447, 572, 16674, 5923, 9861, 11710, 11881, 12, 1089, 8825, 1252, 2]
 
-// Module 16678 (setActivity)
+// Module 16679 (setActivity)
 import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -11,7 +11,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Constants_mod from "Constants" /* 6615 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16645 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16646 */;
 import size from "module_2" /* 2 */;
 
 let c13, c14, c15, constants;
@@ -60,7 +60,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

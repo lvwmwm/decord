@@ -1,10 +1,10 @@
-// Module ID: 18478
-// Function ID: 18479
+// Module ID: 18479
+// Function ID: 18480
 // Name: useMessagesReconnectToCallsEffect
 // Dependencies: [32, 19, 6655, 5019, 7492, 572, 2]
 // Exports: default
 
-// Module 18478 (useMessagesReconnectToCallsEffect)
+// Module 18479 (useMessagesReconnectToCallsEffect)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

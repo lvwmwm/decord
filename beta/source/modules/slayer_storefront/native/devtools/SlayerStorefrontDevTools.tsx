@@ -1,10 +1,10 @@
-// Module ID: 18090
-// Function ID: 18091
+// Module ID: 18091
+// Function ID: 18092
 // Name: SlayerStorefrontDevTools
 // Dependencies: [32, 5, 19, 17, 1385, 6984, 7706, 1072, 21, 5170, 575, 1282, 5767, 504, 10821, 1377, 10820, 10066, 6191, 7159, 7181, 7071, 2]
 // Exports: default
 
-// Module 18090 (SlayerStorefrontDevTools)
+// Module 18091 (SlayerStorefrontDevTools)
 import nativeDefault from "native" /* 575 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import GPlayActionCreators from "GPlayActionCreators" /* 10066 */;
@@ -44,7 +44,7 @@ let obj = function _describeStorefrontSkuFailure() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;
@@ -235,7 +235,7 @@ export default function SlayerStorefrontDevTools() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -296,7 +296,7 @@ export default function SlayerStorefrontDevTools() {
           closure_1(value);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp29) {
         c5 = 3;
         throw tmp29;

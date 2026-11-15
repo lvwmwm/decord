@@ -1,14 +1,14 @@
-// Module ID: 17226
-// Function ID: 17227
+// Module ID: 17227
+// Function ID: 17228
 // Name: ClipsOptOutOfVoiceRecordingSetting
-// Dependencies: [5, 8536, 4995, 572, 11717, 1113, 2]
+// Dependencies: [5, 8536, 4995, 572, 11716, 1113, 2]
 
-// Module 17226 (ClipsOptOutOfVoiceRecordingSetting)
+// Module 17227 (ClipsOptOutOfVoiceRecordingSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4995 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -26,7 +26,7 @@ let obj = function _updateClipsAllowVoiceRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -58,7 +58,7 @@ let obj = function _updateClipsAllowVoiceRecording() {
           obj = closure_129_1(closure_129_2[3]);
           obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;

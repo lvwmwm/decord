@@ -1,9 +1,9 @@
-// Module ID: 20026
-// Function ID: 20027
+// Module ID: 20031
+// Function ID: 20032
 // Name: NotificationsManager
-// Dependencies: [5, 5104, 502, 5019, 6863, 14239, 1072, 8042, 14240, 5406, 20027, 2118, 1260, 2166, 8065, 14242, 11177, 1252, 1377, 7383, 17833, 1092, 2]
+// Dependencies: [5, 5104, 502, 5019, 6863, 14239, 1072, 8042, 14240, 5406, 20032, 2118, 1260, 2166, 8065, 14242, 11177, 1252, 1377, 7383, 17834, 1092, 2]
 
-// Module 20026 (NotificationsManager)
+// Module 20031 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import _modDef2166 from "module_2166" /* 2166 */;
@@ -60,7 +60,7 @@ let obj = function _shouldShowPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ obj = function _shouldShowReactivationPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(20027, dependencyMap.paths);
+    const tmp3 = asyncRequire(20032, dependencyMap.paths);
     openLazy(tmp3, authStore3, obj2);
   }, arg2);
 }
@@ -202,7 +202,7 @@ obj = function _logNotificationPermissionStatus2() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -248,7 +248,7 @@ obj = function _logNotificationPermissionStatus2() {
           }
           track(NOTIFICATION_PERMISSION_STATUS, obj7);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c3 = 3;
@@ -302,7 +302,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           c2 = 3;
@@ -371,7 +371,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -422,7 +422,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                     }
                   }
                   c4 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -466,7 +466,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -516,7 +516,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                     }
                   }
                   c5 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (2 === c4) {
                 if (arg0 === 1) {
@@ -637,7 +637,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -701,7 +701,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 return obj;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
             if (state === closure_0(closure_2[21]).AppStates.ACTIVE) {
               c3 = 3;
@@ -732,7 +732,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -766,7 +766,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
             obj = tmp(c2[15]);
             const result = obj.updateNotificationAuthorizationStatus(tmp);
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c3 = 3;

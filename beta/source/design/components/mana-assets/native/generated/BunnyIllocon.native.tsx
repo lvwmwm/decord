@@ -1,27 +1,27 @@
-// Module ID: 12917
-// Function ID: 12918
+// Module ID: 12916
+// Function ID: 12917
 // Name: BunnyIllocon
-// Dependencies: [19, 21, 12918, 12919, 12920, 7168, 5874, 2]
+// Dependencies: [19, 21, 12917, 12918, 12919, 7168, 5874, 2]
 // Exports: BunnyIllocon
 
-// Module 12917 (BunnyIllocon)
+// Module 12916 (BunnyIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import react_native from "react-native" /* 7168 */;
+import _modDef12917 from "module_12917" /* 12917 */;
 import _modDef12918 from "module_12918" /* 12918 */;
 import _modDef12919 from "module_12919" /* 12919 */;
-import _modDef12920 from "module_12920" /* 12920 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12918 };
+let obj2 = { uri: _modDef12917 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12919 };
+obj[2] = { uri: _modDef12918 };
+({ uri: _modDef12918 });
+obj[3] = { uri: _modDef12919 };
 ({ uri: _modDef12919 });
-obj[3] = { uri: _modDef12920 };
-({ uri: _modDef12920 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BunnyIllocon.native.tsx");
 

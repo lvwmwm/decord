@@ -1,9 +1,9 @@
-// Module ID: 13654
-// Function ID: 13655
+// Module ID: 13653
+// Function ID: 13654
 // Name: ForwardActionCreators
-// Dependencies: [32, 5, 5019, 5102, 1072, 5175, 9026, 7933, 1095, 7935, 1403, 7745, 13650, 2]
+// Dependencies: [32, 5, 5019, 5102, 1072, 5175, 9026, 7933, 1095, 7935, 1403, 7745, 13649, 2]
 
-// Module 13654 (ForwardActionCreators)
+// Module 13653 (ForwardActionCreators)
 import Constants from "Constants" /* 1072 */;
 import MessageConstants from "MessageConstants" /* 5175 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -34,7 +34,7 @@ let obj = {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -161,7 +161,7 @@ let obj = {
               return obj;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp56) {
           c3 = 3;

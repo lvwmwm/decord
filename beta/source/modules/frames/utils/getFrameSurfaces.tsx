@@ -1,10 +1,10 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 11881
+// Function ID: 11882
 // Name: getFrameSurfaces
 // Dependencies: [1072, 9884, 2148, 5831, 6971, 2]
 // Exports: canOpenFrame, isFrameApp
 
-// Module 11882 (getFrameSurfaces)
+// Module 11881 (getFrameSurfaces)
 import Constants from "Constants" /* 1072 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2148 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;

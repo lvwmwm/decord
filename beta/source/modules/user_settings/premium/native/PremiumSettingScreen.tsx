@@ -1,10 +1,10 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17237
+// Function ID: 17238
 // Name: PremiumSettingScreen
 // Dependencies: [19, 21, 7259, 1499, 7256, 7705, 2]
 // Exports: default
 
-// Module 17236 (PremiumSettingScreen)
+// Module 17237 (PremiumSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import useNavigation from "useNavigation" /* 1499 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7256 */;

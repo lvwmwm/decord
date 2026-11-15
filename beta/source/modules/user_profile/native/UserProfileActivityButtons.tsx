@@ -1,10 +1,10 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 15153
+// Function ID: 15154
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 5018, 5019, 6659, 5390, 5041, 11702, 5102, 5112, 5073, 6657, 5835, 1072, 9018, 21, 5170, 575, 7420, 5091, 563, 15153, 6821, 15154, 7993, 5790, 1113, 8782, 5406, 6831, 11886, 10913, 1187, 8828, 11867, 5866, 15156, 8938, 5347, 8052, 8041, 6661, 1411, 9843, 7668, 9022, 11871, 1378, 9052, 2]
+// Dependencies: [5, 19, 5018, 5019, 6659, 5390, 5041, 11701, 5102, 5112, 5073, 6657, 5835, 1072, 9018, 21, 5170, 575, 7420, 5091, 563, 15154, 6821, 15155, 7993, 5790, 1113, 8782, 5406, 6831, 11885, 10913, 1187, 8828, 11866, 5866, 15157, 8938, 5347, 8052, 8041, 6661, 1411, 9843, 7668, 9022, 11870, 1378, 9052, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 15152 (UserProfileActivityButtons)
+// Module 15153 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -21,10 +21,10 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8052 */;
 import isStreamingDefault from "isStreaming" /* 8938 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9843 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11886 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 15153 */;
-import getActivityJoinability from "getActivityJoinability" /* 15154 */;
-import getStreamURLDefault from "getStreamURL" /* 15156 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11885 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 15154 */;
+import getActivityJoinability from "getActivityJoinability" /* 15155 */;
+import getStreamURLDefault from "getStreamURL" /* 15157 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
@@ -32,7 +32,7 @@ import ChannelStore from "ChannelStore" /* 5019 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5390 */;
 import GuildStore from "GuildStore" /* 5041 */;
-import LocalActivityStore from "LocalActivityStore" /* 11702 */;
+import LocalActivityStore from "LocalActivityStore" /* 11701 */;
 import PermissionStore from "PermissionStore" /* 5102 */;
 import RelationshipStore from "RelationshipStore" /* 5112 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
@@ -232,7 +232,7 @@ export function PlayOnSpotifyButton(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -259,7 +259,7 @@ export function PlayOnSpotifyButton(arg0) {
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -491,7 +491,7 @@ export function CustomActivityButton(index) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 let tmp17;
@@ -537,13 +537,13 @@ export function CustomActivityButton(index) {
                       if (id.button_urls.length <= closure_129_2) {
                         c3 = 0;
                         c5 = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       } else {
                         tmp = id.button_urls[closure_129_2];
                         if (typeof tmp !== "string") {
                           c3 = 0;
                           c5 = 3;
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         } else {
                           const obj8 = tmp(tmp17[47]);
                           tmp17 = obj8.safeParseWithQuery(tmp);
@@ -574,12 +574,12 @@ export function CustomActivityButton(index) {
                           }
                           c3 = 0;
                           c5 = 3;
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         }
                       }
                     }
                     c5 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp17) {
                   if (0 === c3) {

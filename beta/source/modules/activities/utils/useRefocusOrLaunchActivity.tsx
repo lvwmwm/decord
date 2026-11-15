@@ -1,10 +1,10 @@
-// Module ID: 14954
-// Function ID: 14955
+// Module ID: 14955
+// Function ID: 14956
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 6934, 5018, 6935, 6969, 504, 11093, 11893, 11886, 2]
+// Dependencies: [5, 19, 6934, 5018, 6935, 6969, 504, 11093, 11892, 11885, 2]
 // Exports: default
 
-// Module 14954 (useRefocusOrLaunchActivity)
+// Module 14955 (useRefocusOrLaunchActivity)
 import FramesConstants from "FramesConstants" /* 6935 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -45,7 +45,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -113,7 +113,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp22) {
         runBeforeLaunchAttempt = tmp22;
         if (0 === c3) {

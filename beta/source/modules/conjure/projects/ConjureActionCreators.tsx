@@ -57,7 +57,7 @@ let obj = function _listProjects() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -160,7 +160,7 @@ let obj = function _listProjects() {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp53) {
           if (0 === c4) {
             c6 = 3;
@@ -196,7 +196,7 @@ obj = function _forgetMissingProjects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -247,7 +247,7 @@ obj = function _forgetMissingProjects() {
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp5) {
           c5 = 0;
@@ -276,7 +276,7 @@ obj = function _forgetMissingProjects() {
             c5 = 0;
             closure_0.return();
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           if (3 === tmp5) {
@@ -313,7 +313,7 @@ obj = function _forgetMissingProjects() {
             c5 = 0;
             closure_0.return();
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         }
         c5 = 0;
@@ -453,7 +453,7 @@ obj = function _fetchMissingConjureProjectNow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -499,7 +499,7 @@ obj = function _fetchMissingConjureProjectNow() {
             dispatch(obj);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp24) {
           c4 = 3;
           throw tmp24;
@@ -525,7 +525,7 @@ obj = function _drainMissingProjects() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -566,7 +566,7 @@ obj = function _drainMissingProjects() {
                 let succeedResult = closure_132_24.succeed();
               }
               c8 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               let c6 = 1;
               c1 = tmp12;
@@ -624,7 +624,7 @@ obj = function _requestProjectLimit() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -686,7 +686,7 @@ obj = function _requestProjectLimit() {
             obj2.dispatch(obj7);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp34) {
         closure_3 = tmp34;
@@ -723,7 +723,7 @@ obj = function _getProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -847,7 +847,7 @@ obj = function _postProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -960,7 +960,7 @@ obj = function _fetchConjureApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -999,7 +999,7 @@ obj = function _fetchConjureApplication() {
             obj.dispatch(obj7);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         c4 = 3;
@@ -1022,7 +1022,7 @@ obj = function _refreshPreviewApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1057,7 +1057,7 @@ obj = function _refreshPreviewApplication() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;
@@ -1117,7 +1117,7 @@ obj = function _shareConjureProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -1198,7 +1198,7 @@ obj = function _shareConjureProject() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp25) {
         tmp26 = c4;
@@ -1226,7 +1226,7 @@ obj = function _fetchApplicationChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -1299,7 +1299,7 @@ obj = function _deleteProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

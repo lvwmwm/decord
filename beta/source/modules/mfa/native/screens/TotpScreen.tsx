@@ -1,12 +1,12 @@
-// Module ID: 18036
-// Function ID: 18037
+// Module ID: 18037
+// Function ID: 18038
 // Name: TotpScreen
-// Dependencies: [5, 32, 19, 21, 18037, 18032, 1113, 18038, 18035, 2]
+// Dependencies: [5, 32, 19, 21, 18038, 18033, 1113, 18039, 18036, 2]
 // Exports: default
 
-// Module 18036 (TotpScreen)
+// Module 18037 (TotpScreen)
 import Fragment from "Fragment" /* 21 */;
-import MFA from "MFA" /* 18037 */;
+import MFA from "MFA" /* 18038 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -76,7 +76,7 @@ export default function TotpScreen(finish) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -136,7 +136,7 @@ export default function TotpScreen(finish) {
           message2(false);
         }
         c7 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp26) {
         if (0 === c5) {
           c7 = 3;

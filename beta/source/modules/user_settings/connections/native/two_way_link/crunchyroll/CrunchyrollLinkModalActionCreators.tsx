@@ -1,9 +1,9 @@
-// Module ID: 14911
-// Function ID: 14912
+// Module ID: 14912
+// Function ID: 14913
 // Name: CrunchyrollLinkModalActionCreators
-// Dependencies: [6831, 14912, 2118, 2]
+// Dependencies: [6831, 14913, 2118, 2]
 
-// Module 14911 (CrunchyrollLinkModalActionCreators)
+// Module 14912 (CrunchyrollLinkModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ let obj = {
   showModal(locationStack) {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { locationStack };
-    obj.pushLazy(asyncRequire(14912, dependencyMap.paths), obj2, USER_SETTINGS_CONNECTIONS_CRUNCHYROLL_LINK_MODAL_KEY);
+    obj.pushLazy(asyncRequire(14913, dependencyMap.paths), obj2, USER_SETTINGS_CONNECTIONS_CRUNCHYROLL_LINK_MODAL_KEY);
   },
   hideModal() {
     const obj = ModalActionCreatorsDefault;

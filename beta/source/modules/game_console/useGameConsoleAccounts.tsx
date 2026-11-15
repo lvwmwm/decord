@@ -1,10 +1,10 @@
-// Module ID: 12174
-// Function ID: 12175
+// Module ID: 12173
+// Function ID: 12174
 // Name: useGameConsoleAccounts
 // Dependencies: [6659, 1072, 504, 1380, 2]
 // Exports: default
 
-// Module 12174 (useGameConsoleAccounts)
+// Module 12173 (useGameConsoleAccounts)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;

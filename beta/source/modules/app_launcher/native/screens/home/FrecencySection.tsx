@@ -1,10 +1,10 @@
-// Module ID: 12615
-// Function ID: 12616
+// Module ID: 12614
+// Function ID: 12615
 // Name: FrecencySection
-// Dependencies: [32, 19, 17, 5018, 12616, 1072, 21, 5170, 575, 9884, 1380, 7424, 12617, 11678, 504, 11679, 5921, 1652, 5402, 1113, 9316, 12618, 12614, 2116, 9105, 12619, 5783, 10029, 11587, 7076, 12620, 5839, 5874, 12623, 2]
+// Dependencies: [32, 19, 17, 5018, 12615, 1072, 21, 5170, 575, 9884, 1380, 7424, 12616, 11677, 504, 11678, 5921, 1652, 5402, 1113, 9316, 12617, 12613, 2116, 9105, 12618, 5783, 10029, 11586, 7076, 12619, 5839, 5874, 12622, 2]
 // Exports: default
 
-// Module 12615 (FrecencySection)
+// Module 12614 (FrecencySection)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,10 +12,10 @@ import _modDef1652 from "module_1652" /* 1652 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9884 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11679 */;
-import FrecencySectionStore2 from "FrecencySectionStore" /* 12616 */;
-import react2 from "react" /* 12617 */;
-import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 12618 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11678 */;
+import FrecencySectionStore2 from "FrecencySectionStore" /* 12615 */;
+import react2 from "react" /* 12616 */;
+import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 12617 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -42,7 +42,7 @@ let size1;
 let size2;
 let tmp6;
 let unpackModuleId;
-const ChevronSmallDownIcon = tmp6(11587);
+const ChevronSmallDownIcon = tmp6(11586);
 function Placeholder() {
   let items;
   let items1;
@@ -72,7 +72,7 @@ function FrecentActivityOneClickCTA(context) {
   let onActivityItemSelected;
   let tmp6;
   let tmp7;
-  const f103766 = () => {
+  const f103782 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -92,8 +92,8 @@ function FrecentActivityOneClickCTA(context) {
   let id = react.useId();
   let items = [EmbeddedActivitiesStore];
   const obj3 = context(handleActivityItemSelected[14]);
-  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f103766);
-  _slicedToArray(obj3.useStateFromStoresArray(items, f103766), 2);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f103782);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f103782), 2);
   let isLaunching = null != tmp7;
   const obj4 = context(handleActivityItemSelected[30]);
   const obj5 = { context, applicationId: app.applicationId };
@@ -135,7 +135,7 @@ function FrecentApp(app) {
   if (null == app.section) {
     return null;
   } else {
-    const obj4 = app(12614);
+    const obj4 = app(12613);
     const appLauncherIconSource = obj4.getAppLauncherIconSource(app.section.application);
     let obj = {
       style: disabled ? tmp.appContainerDisabled : tmp.appContainer,
@@ -171,7 +171,7 @@ function FrecentApp(app) {
     }
     items = [tmp3, ];
     const obj3 = { submitting, style: tmp.submittingOverlay };
-    items[1] = closure_11(tmp7(12623).SubmittingOverlay, obj3);
+    items[1] = closure_11(tmp7(12622).SubmittingOverlay, obj3);
     return tmp10(PressableOpacity, obj, app.applicationId);
   }
 }
@@ -282,9 +282,9 @@ export default function FrecencySection(loading) {
         }
         const obj = { num: length, section_name: RECENT_COMMANDS, location: AppLauncherTypes.AppLauncherLocations.HOME };
         if (tmp9 === tmp10.APPS) {
-          RECENT_COMMANDS = tmp5(11679).AppLauncherSectionName.RECENT_APPS;
+          RECENT_COMMANDS = tmp5(11678).AppLauncherSectionName.RECENT_APPS;
         } else {
-          RECENT_COMMANDS = tmp5(11679).AppLauncherSectionName.RECENT_COMMANDS;
+          RECENT_COMMANDS = tmp5(11678).AppLauncherSectionName.RECENT_COMMANDS;
         }
         trackWithMetadata(APP_LAUNCHER_FRECENTS_SEEN, obj);
       }

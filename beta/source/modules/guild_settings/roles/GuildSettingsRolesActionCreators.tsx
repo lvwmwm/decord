@@ -1,10 +1,10 @@
-// Module ID: 20238
-// Function ID: 20239
+// Module ID: 20243
+// Function ID: 20244
 // Name: GuildSettingsRolesActionCreators
-// Dependencies: [5, 1072, 572, 6990, 11793, 1108, 2]
+// Dependencies: [5, 1072, 572, 6990, 11792, 1108, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 20238 (GuildSettingsRolesActionCreators)
+// Module 20243 (GuildSettingsRolesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
@@ -160,7 +160,7 @@ let obj = function _saveRoleSettings() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ let obj = function _saveRoleSettings() {
                     obj19.dispatch({ type: "GUILD_SETTINGS_ROLES_SAVE_SUCCESS" });
                     c18 = 0;
                     c21 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     c18 = 2;
                     c7 = tmp137;

@@ -62,7 +62,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
           return obj;
         } else {
           isChangeEmail = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         isChangeEmail = 3;

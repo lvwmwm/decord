@@ -1,9 +1,9 @@
-// Module ID: 16847
-// Function ID: 16848
+// Module ID: 16848
+// Function ID: 16849
 // Name: EditProfileEffectSection
-// Dependencies: [19, 17, 7835, 9611, 21, 5170, 15379, 16846, 15380, 7445, 8905, 5874, 9636, 9614, 2]
+// Dependencies: [19, 17, 7835, 9611, 21, 5170, 15380, 16847, 15381, 7445, 8905, 5874, 9636, 9614, 2]
 
-// Module 16847 (EditProfileEffectSection)
+// Module 16848 (EditProfileEffectSection)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
@@ -12,9 +12,9 @@ import useProfileEffectDefault from "useProfileEffect" /* 8905 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9611 */;
 import ProfileEffectDefault from "ProfileEffect" /* 9614 */;
 import _modDef9636 from "module_9636" /* 9636 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15379 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15380 */;
-import useProfileEffectSections from "useProfileEffectSections" /* 16846 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15380 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15381 */;
+import useProfileEffectSections from "useProfileEffectSections" /* 16847 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -63,7 +63,7 @@ const memoResult = react.memo((size) => {
         return metroRequire(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (item === useProfileEffectSections.SHOP_ITEM) {
         const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_EFFECT_SHEET };
-        const EditCollectiblesListItemShop = tmp(15380).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(15381).EditCollectiblesListItemShop;
         return metroRequire(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileEffectRecord(item)) {
         const obj4 = { item, isSelected: require === item.skuId, setSelectedProfileEffect, isTryItOut, size };

@@ -1,10 +1,10 @@
-// Module ID: 18710
-// Function ID: 18711
+// Module ID: 18711
+// Function ID: 18712
 // Name: GameCommunityMultiGuildUpsellCard
 // Dependencies: [5, 32, 19, 17, 5171, 5103, 5041, 1072, 21, 5170, 575, 504, 1411, 1446, 1493, 7627, 7626, 6990, 6994, 1113, 9626, 5874, 9420, 1187, 5783, 5790, 10029, 8131, 9879, 2]
 // Exports: default
 
-// Module 18710 (GameCommunityMultiGuildUpsellCard)
+// Module 18711 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
@@ -193,7 +193,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -264,7 +264,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp37) {
         onDismiss = tmp37;
         if (0 === c3) {

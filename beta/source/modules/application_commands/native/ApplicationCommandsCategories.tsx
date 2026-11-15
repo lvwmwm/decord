@@ -1,7 +1,7 @@
 // Module ID: 14228
 // Function ID: 14229
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 5082, 14225, 21, 5170, 575, 504, 14058, 5874, 7076, 1113, 5408, 5409, 7390, 2]
+// Dependencies: [19, 17, 5082, 14225, 21, 5170, 575, 504, 14057, 5874, 7076, 1113, 5408, 5409, 7390, 2]
 // Exports: default
 
 // Module 14228 (ApplicationCommandsCategories)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5408 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5409 */;
 import FastImageDefault from "FastImage" /* 5874 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14058 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14057 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 14225 */;

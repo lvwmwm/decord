@@ -1,13 +1,13 @@
-// Module ID: 13042
-// Function ID: 13043
+// Module ID: 13041
+// Function ID: 13042
 // Name: ConjureScopeSetupCard
-// Dependencies: [19, 21, 12984, 12985, 2]
+// Dependencies: [19, 21, 12983, 12984, 2]
 // Exports: default
 
-// Module 13042 (ConjureScopeSetupCard)
+// Module 13041 (ConjureScopeSetupCard)
 import Fragment from "Fragment" /* 21 */;
-import useConjureScopeCards from "useConjureScopeCards" /* 12984 */;
-import ConjureScopeCardViewDefault from "ConjureScopeCardView" /* 12985 */;
+import useConjureScopeCards from "useConjureScopeCards" /* 12983 */;
+import ConjureScopeCardViewDefault from "ConjureScopeCardView" /* 12984 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 14023
+// Function ID: 14024
 // Name: ChatInputSendUtils
-// Dependencies: [5, 7810, 7939, 8310, 1385, 1072, 5175, 1387, 9901, 8446, 1242, 14023, 14020, 7933, 7745, 10352, 9903, 9898, 2171, 9908, 6122, 1113, 1252, 10370, 9038, 5406, 14025, 2118, 8319, 7445, 11932, 10461, 12670, 5839, 2]
+// Dependencies: [5, 7810, 7939, 8310, 1385, 1072, 5175, 1387, 9901, 8446, 1242, 14022, 14019, 7933, 7745, 10352, 9903, 9898, 2171, 9908, 6122, 1113, 1252, 10370, 9038, 5406, 14024, 2118, 8319, 7445, 11931, 10461, 12669, 5839, 2]
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand
 
-// Module 14024 (ChatInputSendUtils)
+// Module 14023 (ChatInputSendUtils)
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -22,7 +22,7 @@ import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreator
 import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9903 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9908 */;
 import ChatRestrictions from "ChatRestrictions" /* 10370 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14020 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SlowmodeStore from "SlowmodeStore" /* 7939 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8310 */;
@@ -99,7 +99,7 @@ function chatInputSendMessage(params) {
   if (current2 != null) {
     current2.showSideActions();
   }
-  let obj3 = channel(14023);
+  let obj3 = channel(14022);
   const handleLegacyCommandsResult = obj3.handleLegacyCommands(text, { channel, isEdit: false });
   let tmp15 = tts;
   parsed = parsedMessage;
@@ -131,7 +131,7 @@ function chatInputSendMessage(params) {
   if (null != mentionTimestamps) {
     result = tmp17;
     if (mentionTimestamps.size > 0) {
-      const tmp13Result = channel(14020);
+      const tmp13Result = channel(14019);
       result = tmp13Result.serializeComposerTimestampMentions(tmp17, mentionTimestamps);
     }
   }
@@ -315,7 +315,7 @@ let obj = function _chatInputSendApplicationCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -399,7 +399,7 @@ let obj = function _chatInputSendApplicationCommand() {
               return obj13;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp36) {
           c4 = 3;
@@ -447,7 +447,7 @@ export function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "add", source: "r", params };
+                          obj = { text: require, parsedMessage, tts: "add", source: true, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,12 +470,12 @@ export function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "add", source: true, params };
+                          obj = { text: require, parsedMessage, tts: "add", source: null, params };
                           chatInputSendMessage(obj);
                         }
             };
             const obj5 = params(5406);
-            obj5.openLazy(tmp20(2118)(14025, tmp21.paths), "add-media-to-original-forum-post", obj4);
+            obj5.openLazy(tmp20(2118)(14024, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
         const obj6 = { text, parsedMessage: tmp2, tts: "add", source: true, params };

@@ -1,7 +1,7 @@
 // Module ID: 10954
 // Function ID: 10955
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10955, 6842, 5024, 6949, 5023, 7382, 5019, 7815, 5041, 5102, 6930, 5112, 5073, 6863, 1385, 1072, 10290, 21, 8052, 2118, 8041, 1113, 10956, 8854, 5881, 7582, 5808, 9896, 10383, 10291, 5883, 6831, 10958, 3608, 9881, 1099, 10979, 8750, 10981, 10996, 4026, 10997, 5406, 10999, 11136, 11137, 11139, 9231, 11141, 7378, 5347, 7153, 11143, 8129, 11144, 11145, 11147, 11149, 11150, 11152, 7197, 7375, 11154, 9321, 7384, 7379, 11156, 8301, 8749, 11158, 11159, 8773, 8747, 11160, 14659, 5920, 8043, 10237, 8455, 14660, 14661, 12078, 14662, 7195, 6990, 7666, 5887, 9147, 10675, 7451, 5868, 7420, 7445, 10983, 504, 5027, 6973, 9990, 4995, 7053, 1187, 14665, 11307, 14666, 14672, 7516, 14677, 14678, 1449, 12020, 14680, 9800, 7459, 1624, 11308, 7461, 2]
+// Dependencies: [5, 19, 10955, 6842, 5024, 6949, 5023, 7382, 5019, 7815, 5041, 5102, 6930, 5112, 5073, 6863, 1385, 1072, 10290, 21, 8052, 2118, 8041, 1113, 10956, 8854, 5881, 7582, 5808, 9896, 10383, 10291, 5883, 6831, 10958, 3608, 9881, 1099, 10979, 8750, 10981, 10996, 4026, 10997, 5406, 10999, 11136, 11137, 11139, 9231, 11141, 7378, 5347, 7153, 11143, 8129, 11144, 11145, 11147, 11149, 11150, 11152, 7197, 7375, 11154, 9321, 7384, 7379, 11156, 8301, 8749, 11158, 11159, 8773, 8747, 11160, 14660, 5920, 8043, 10237, 8455, 14661, 14662, 12077, 14663, 7195, 6990, 7666, 5887, 9147, 10675, 7451, 5868, 7420, 7445, 10983, 504, 5027, 6973, 9990, 4995, 7053, 1187, 14666, 11307, 14667, 14673, 7516, 14678, 14679, 1449, 12019, 14681, 9800, 7459, 1624, 11308, 7461, 2]
 // Exports: default
 
 // Module 10954 (ChannelLongPressActionSheet)
@@ -11,7 +11,7 @@ import StageChannelPermissions from "StageChannelPermissions" /* 5027 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 7461 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10290 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10955 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 12020 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 12019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6842 */;
@@ -65,7 +65,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
               value.connectAndOpen(guildStageVoice);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c3 = 3;
@@ -952,7 +952,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -981,7 +981,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                     } else {
                       value.openEndStageModal(closure_128_0);
                       paths = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp9) {
                     paths = 3;

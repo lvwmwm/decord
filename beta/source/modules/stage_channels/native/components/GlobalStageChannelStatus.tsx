@@ -1,10 +1,10 @@
-// Module ID: 12058
-// Function ID: 12059
+// Module ID: 12057
+// Function ID: 12058
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5407, 5024, 1072, 21, 5170, 575, 5808, 1113, 504, 5753, 11072, 8277, 12050, 6846, 8057, 6816, 8047, 8043, 1187, 5783, 12059, 5791, 5790, 11357, 11364, 5401, 5192, 11384, 8707, 2]
+// Dependencies: [5, 32, 19, 17, 5407, 5024, 1072, 21, 5170, 575, 5808, 1113, 504, 5753, 11072, 8277, 12049, 6846, 8057, 6816, 8047, 8043, 1187, 5783, 12058, 5791, 5790, 11357, 11364, 5401, 5192, 11384, 8707, 2]
 // Exports: default
 
-// Module 12058 (GlobalStageChannelStatus)
+// Module 12057 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -80,7 +80,7 @@ class StageChannelRaiseHandAck {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -132,7 +132,7 @@ class StageChannelRaiseHandAck {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp27) {
             if (0 === c3) {
               c4 = 3;
@@ -188,7 +188,7 @@ class StageChannelRaiseHandAck {
       id2 = channel.id;
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-    channel(12050);
+    channel(12049);
     if (channel != null) {
       const id = channel.id;
     }
@@ -206,7 +206,7 @@ class StageChannelRaiseHandAck {
       items3 = [closure_10(View, obj4), , ];
       if (stageBlockedUsersCount > 0) {
         const obj6 = { style: tmp.row, children: closure_10(Text, obj7) };
-        obj7 = { variant: "body-xs/medium", color: "text-overlay-light", children: tmp2(12059)(stageBlockedUsersCount, stageIgnoredUsersCount) };
+        obj7 = { variant: "body-xs/medium", color: "text-overlay-light", children: tmp2(12058)(stageBlockedUsersCount, stageIgnoredUsersCount) };
         Text = tmp6(5783).Text;
         tmp22Result = tmp22(tmp21, obj6);
       } else {

@@ -1,10 +1,10 @@
-// Module ID: 14069
-// Function ID: 14070
+// Module ID: 14068
+// Function ID: 14069
 // Name: AppLauncherButtonIcon
 // Dependencies: [19, 17, 21, 5357, 1625, 10979, 8782, 2]
 // Exports: AppLauncherButtonIcon
 
-// Module 14069 (AppLauncherButtonIcon)
+// Module 14068 (AppLauncherButtonIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;

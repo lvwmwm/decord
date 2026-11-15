@@ -1,15 +1,15 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 12984
+// Function ID: 12985
 // Name: ConjureScopeCardView
-// Dependencies: [19, 17, 21, 5170, 575, 12986, 12991, 5783, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 12985, 12990, 5783, 2]
 // Exports: default
 
-// Module 12985 (ConjureScopeCardView)
+// Module 12984 (ConjureScopeCardView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import ConjureScopeServerCardDefault from "ConjureScopeServerCard" /* 12986 */;
-import ConjureClarificationCardDefault from "ConjureClarificationCard" /* 12991 */;
+import ConjureScopeServerCardDefault from "ConjureScopeServerCard" /* 12985 */;
+import ConjureClarificationCardDefault from "ConjureClarificationCard" /* 12990 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

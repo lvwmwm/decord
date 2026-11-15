@@ -1,9 +1,9 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 12040
+// Function ID: 12041
 // Name: ChannelCallModalManager
 // Dependencies: [1385, 5835, 2120, 8041, 2]
 
-// Module 12041 (ChannelCallModalManager)
+// Module 12040 (ChannelCallModalManager)
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
 import UserStore from "UserStore" /* 1385 */;
 import VoiceStateStore from "VoiceStateStore" /* 5835 */;

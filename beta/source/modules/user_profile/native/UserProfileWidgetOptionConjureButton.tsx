@@ -1,10 +1,10 @@
-// Module ID: 15228
-// Function ID: 15229
+// Module ID: 15229
+// Function ID: 15230
 // Name: UserProfileWidgetOptionConjureButton
-// Dependencies: [19, 17, 21, 5170, 575, 5406, 15229, 11137, 5783, 1113, 4026, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5406, 15230, 11137, 5783, 1113, 4026, 2]
 // Exports: default
 
-// Module 15228 (UserProfileWidgetOptionConjureButton)
+// Module 15229 (UserProfileWidgetOptionConjureButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

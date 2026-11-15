@@ -1,10 +1,10 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12015
+// Function ID: 12016
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [32, 5, 19, 5830, 1072, 21, 5170, 3, 12017, 12018, 8082, 12019, 12020, 1376, 12004, 12021, 12022, 1378, 12023, 12024, 1252, 563, 6122, 1113, 12030, 11078, 6819, 2]
+// Dependencies: [32, 5, 19, 5830, 1072, 21, 5170, 3, 12016, 12017, 8082, 12018, 12019, 1376, 12003, 12020, 12021, 1378, 12022, 12023, 1252, 563, 6122, 1113, 12029, 11078, 6819, 2]
 // Exports: BaseEmbeddedAppWebView
 
-// Module 12016 (BaseEmbeddedAppWebView)
+// Module 12015 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,7 +13,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
 import WebView2 from "WebView" /* 8082 */;
-import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 12017 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 12016 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -352,7 +352,7 @@ function BaseEmbeddedAppWebViewContent(deepLinkQueryParams) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               let c7;
@@ -460,7 +460,7 @@ function BaseEmbeddedAppWebViewContent(deepLinkQueryParams) {
                   c7 = 0;
                 }
                 c9 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } catch (tmp31) {
                 closure_6 = tmp31;
                 if (0 === c7) {

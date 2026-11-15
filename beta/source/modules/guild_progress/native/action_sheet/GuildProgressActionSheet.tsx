@@ -1,10 +1,10 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14321
+// Function ID: 14322
 // Name: GuildProgressActionSheet
-// Dependencies: [5, 19, 17, 9188, 5100, 14313, 1072, 21, 5170, 575, 504, 14318, 5868, 1252, 14321, 14322, 9231, 14323, 1113, 9187, 8323, 14324, 5917, 5406, 1108, 14325, 14326, 7445, 14433, 5783, 5790, 7076, 7459, 1187, 2]
+// Dependencies: [5, 19, 17, 9188, 5100, 14314, 1072, 21, 5170, 575, 504, 14319, 5868, 1252, 14322, 14323, 9231, 14324, 1113, 9187, 8323, 14325, 5917, 5406, 1108, 14326, 14327, 7445, 14434, 5783, 5790, 7076, 7459, 1187, 2]
 // Exports: default
 
-// Module 14320 (GuildProgressActionSheet)
+// Module 14321 (GuildProgressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
@@ -16,14 +16,14 @@ import ToastUtils from "ToastUtils" /* 5868 */;
 import transitionToChannel from "transitionToChannel" /* 5917 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9231 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 14318 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14321 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14326 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 14319 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14322 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14327 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9188 */;
 import GuildChannelStore from "GuildChannelStore" /* 5100 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 14313 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 14314 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
@@ -105,7 +105,7 @@ export default function GuildProgressActionSheet(guild) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ export default function GuildProgressActionSheet(guild) {
               obj.updateIcon(closure_129_5, base64);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -205,7 +205,7 @@ export default function GuildProgressActionSheet(guild) {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.INVITE
   };
-  obj5 = { uri: require("module_14323") };
+  obj5 = { uri: require("module_14324") };
   const tmp10 = require("ProgressItem");
   intl = guild(numFinished[18]).intl;
   const tmp11 = closure_14(tmp10, obj4);
@@ -219,7 +219,7 @@ export default function GuildProgressActionSheet(guild) {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.PERSONALIZE_SERVER
   };
-  obj7 = { uri: require("module_14324") };
+  obj7 = { uri: require("module_14325") };
   const tmp12 = require("ProgressItem");
   intl2 = guild(numFinished[18]).intl;
   const tmp13 = closure_14(tmp12, obj6);
@@ -245,7 +245,7 @@ export default function GuildProgressActionSheet(guild) {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.SEND_MESSAGE
   };
-  obj9 = { uri: require("module_14325") };
+  obj9 = { uri: require("module_14326") };
   const tmp14 = require("ProgressItem");
   intl3 = guild(numFinished[18]).intl;
   const tmp15 = closure_14(tmp14, obj8);
@@ -263,7 +263,7 @@ export default function GuildProgressActionSheet(guild) {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.BOOST
   };
-  obj11 = { uri: require("module_14433") };
+  obj11 = { uri: require("module_14434") };
   const tmp16 = require("ProgressItem");
   intl4 = guild(numFinished[18]).intl;
   const obj12 = { style: tmp.container, children: items5 };

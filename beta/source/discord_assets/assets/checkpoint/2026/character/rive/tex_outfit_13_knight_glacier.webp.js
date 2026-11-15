@@ -1,8 +1,8 @@
-// Module ID: 13857
-// Function ID: 13858
+// Module ID: 13856
+// Function ID: 13857
 // Dependencies: [2]
 
-// Module 13857
+// Module 13856
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_13_knight_glacier.webp.js");

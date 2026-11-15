@@ -1,36 +1,30 @@
 // Module ID: 13149
 // Function ID: 13150
 // Name: tokenize
-// Dependencies: [13082]
+// Dependencies: [13081, 13077]
 
 // Module 13149 (tokenize)
-import tokenize from "tokenize" /* 13082 */;
+import keys2 from "keys2" /* 13077 */;
+import tokenize from "tokenize" /* 13081 */;
 
-let items;
 let obj2;
-const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
-const obj = {
-  name: "Parentheses",
+const Percentage = tokenize.TYPE.Percentage;
+let obj = {
+  name: "Percentage",
   structure: obj2,
-  parse(call, arg1) {
-    const self = this;
+  parse() {
     const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftParenthesis);
-    const callResult = call.call(self, arg1);
-    if (!self.scanner.eof) {
-      self.eat(RightParenthesis);
-    }
-    const element = { type: "Parentheses", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
-    return element;
+    const obj = keys2;
+    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
+    this.eat(Percentage);
+    const obj2 = { type: "Percentage", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult) };
+    return obj2;
   },
-  generate(arg0) {
-    this.chunk("(");
-    this.children(arg0);
-    this.chunk(")");
+  generate(value) {
+    this.chunk(value.value);
+    this.chunk("%");
   }
 };
-obj2 = { children: items };
-items = [[]];
+obj2 = { value: String };
 
 export default obj;

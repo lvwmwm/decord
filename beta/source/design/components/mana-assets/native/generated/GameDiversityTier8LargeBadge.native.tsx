@@ -1,26 +1,26 @@
-// Module ID: 15199
-// Function ID: 15200
+// Module ID: 15200
+// Function ID: 15201
 // Name: GameDiversityTier8LargeBadge
-// Dependencies: [19, 21, 15200, 15201, 15202, 7168, 5874, 2]
+// Dependencies: [19, 21, 15201, 15202, 15203, 7168, 5874, 2]
 // Exports: GameDiversityTier8LargeBadge
 
-// Module 15199 (GameDiversityTier8LargeBadge)
+// Module 15200 (GameDiversityTier8LargeBadge)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7168 */;
-import _modDef15200 from "module_15200" /* 15200 */;
 import _modDef15201 from "module_15201" /* 15201 */;
 import _modDef15202 from "module_15202" /* 15202 */;
+import _modDef15203 from "module_15203" /* 15203 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15200 };
+let obj2 = { uri: _modDef15201 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15201 };
+let obj3 = { uri: _modDef15202 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15202 };
-({ uri: _modDef15202 });
+obj[3] = { uri: _modDef15203 };
+({ uri: _modDef15203 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier8LargeBadge.native.tsx");
 

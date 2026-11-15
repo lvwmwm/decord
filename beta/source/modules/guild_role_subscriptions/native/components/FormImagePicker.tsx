@@ -1,10 +1,10 @@
-// Module ID: 20397
-// Function ID: 20398
+// Module ID: 20402
+// Function ID: 20403
 // Name: FormImagePicker
-// Dependencies: [5, 19, 17, 21, 5170, 575, 8323, 1446, 9222, 1113, 5874, 12314, 10383, 5783, 5790, 2]
+// Dependencies: [5, 19, 17, 21, 5170, 575, 8323, 1446, 9222, 1113, 5874, 12313, 10383, 5783, 5790, 2]
 // Exports: default
 
-// Module 20397 (FormImagePicker)
+// Module 20402 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
@@ -46,7 +46,7 @@ let obj = function _pickImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _pickImage() {
               size(obj);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c4 = 3;
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_6;
-      tmp12Result = closure_6(tmp9(12314).ImagePlusIcon, {});
+      tmp12Result = closure_6(tmp9(12313).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;

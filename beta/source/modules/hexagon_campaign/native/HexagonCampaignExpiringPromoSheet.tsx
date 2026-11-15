@@ -1,10 +1,10 @@
-// Module ID: 19460
-// Function ID: 19461
+// Module ID: 19518
+// Function ID: 19519
 // Name: HexagonCampaignExpiringPromoSheet
-// Dependencies: [19, 5195, 1072, 5016, 21, 16808, 6872, 5753, 7981, 10060, 10061, 16827, 10988, 17370, 1113, 4411, 5783, 10441, 2]
+// Dependencies: [19, 5195, 1072, 5016, 21, 16809, 6872, 5753, 7981, 10060, 10061, 16828, 10988, 17371, 1113, 4411, 5783, 10441, 2]
 // Exports: default
 
-// Module 19460 (HexagonCampaignExpiringPromoSheet)
+// Module 19518 (HexagonCampaignExpiringPromoSheet)
 import Fragment from "Fragment" /* 21 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
@@ -13,7 +13,7 @@ import QuestTypes from "QuestTypes" /* 6872 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
 import openPremiumModalDefault from "openPremiumModal" /* 10060 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10061 */;
-import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 16808 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 16809 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

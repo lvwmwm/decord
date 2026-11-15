@@ -1,7 +1,7 @@
 // Module ID: 9893
 // Function ID: 9894
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 5019, 5102, 1385, 6199, 1072, 9894, 5084, 5175, 5839, 1113, 9895, 2116, 4995, 9897, 9898, 7540, 9899, 1093, 9900, 7745, 7933, 6990, 5226, 1089, 13527, 2166, 7582, 38, 7519, 14876, 2]
+// Dependencies: [5, 5019, 5102, 1385, 6199, 1072, 9894, 5084, 5175, 5839, 1113, 9895, 2116, 4995, 9897, 9898, 7540, 9899, 1093, 9900, 7745, 7933, 6990, 5226, 1089, 13526, 2166, 7582, 38, 7519, 14877, 2]
 // Exports: getBuiltInCommands
 
 // Module 9893 (ApplicationCommandBuiltIns)
@@ -592,7 +592,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -661,7 +661,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
           const obj7 = closure_133_1(closure_133_2[21]);
           sendMessage(id, obj7.parse(id, closure_3), true, obj8);
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         c7 = 3;
@@ -707,7 +707,7 @@ const obj21 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -772,7 +772,7 @@ const obj21 = {
               sendBotMessage(id2, formatToPlainString(v9wzHDV, obj5));
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp20) {
             c4 = 3;
             throw tmp20;
@@ -894,7 +894,7 @@ const obj24 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -971,7 +971,7 @@ const obj24 = {
               sendBotMessage(id, formatToPlainString(YflWdM, obj7));
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp29) {
             c5 = 3;
             throw tmp29;
@@ -1159,7 +1159,7 @@ const obj28 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -1237,7 +1237,7 @@ const obj28 = {
               sendBotMessage(id, formatToPlainString(BbRV6o, obj7));
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp19) {
             c5 = 3;
             throw tmp19;
@@ -1383,7 +1383,7 @@ const obj32 = {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -1426,7 +1426,7 @@ const obj32 = {
               const obj7 = tmp(c2[21]);
               sendMessage(id, obj7.parse(tmp, closure_129_2), true, obj8);
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp8) {
             c3 = 3;

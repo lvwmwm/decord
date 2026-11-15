@@ -1,17 +1,17 @@
-// Module ID: 12896
-// Function ID: 12897
+// Module ID: 12895
+// Function ID: 12896
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 5041, 5112, 1385, 21, 5170, 575, 12897, 5406, 11372, 1113, 4026, 7459, 7415, 7349, 5783, 5808, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 5041, 5112, 1385, 21, 5170, 575, 12896, 5406, 11372, 1113, 4026, 7459, 7415, 7349, 5783, 5808, 5790, 2]
 // Exports: default
 
-// Module 12896 (ConjurePublishNotesSheet)
+// Module 12895 (ConjurePublishNotesSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5406 */;
 import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11372 */;
-import useConjurePatchNotesComposerDefault from "useConjurePatchNotesComposer" /* 12897 */;
+import useConjurePatchNotesComposerDefault from "useConjurePatchNotesComposer" /* 12896 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -136,7 +136,7 @@ export default function ConjurePublishNotesSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -171,7 +171,7 @@ export default function ConjurePublishNotesSheet(guildId) {
             closure_128_2(true);
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c2 = 3;

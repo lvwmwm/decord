@@ -1,10 +1,10 @@
-// Module ID: 20237
-// Function ID: 20238
+// Module ID: 20242
+// Function ID: 20243
 // Name: GuildSettingsRoleEdit
-// Dependencies: [109, 5, 19, 17, 5077, 502, 5082, 5076, 5041, 9188, 20224, 20219, 1072, 20226, 21, 5170, 575, 5231, 7097, 7663, 1113, 5921, 20228, 12, 1252, 9144, 20238, 5869, 6990, 11793, 6122, 1187, 7159, 7071, 8128, 20239, 20248, 20250, 20251, 6191, 8279, 1499, 504, 5107, 5766, 2]
+// Dependencies: [109, 5, 19, 17, 5077, 502, 5082, 5076, 5041, 9188, 20229, 20224, 1072, 20231, 21, 5170, 575, 5231, 7097, 7663, 1113, 5921, 20233, 12, 1252, 9144, 20243, 5869, 6990, 11792, 6122, 1187, 7159, 7071, 8128, 20244, 20253, 20255, 20256, 6191, 8279, 1499, 504, 5107, 5766, 2]
 // Exports: default
 
-// Module 20237 (GuildSettingsRoleEdit)
+// Module 20242 (GuildSettingsRoleEdit)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -24,16 +24,16 @@ import TableRowGroup2 from "TableRowGroup" /* 7159 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7663 */;
 import InlineNotice2 from "InlineNotice" /* 8128 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9144 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11793 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 20219 */;
-import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 20224 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20226 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20228 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 20238 */;
-import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 20239 */;
-import GuildSettingsRoleEditPermissionsDefault from "GuildSettingsRoleEditPermissions" /* 20248 */;
-import GuildSettingsRoleMembersDefault from "GuildSettingsRoleMembers" /* 20250 */;
-import GuildSettingsRoleEditConnectionsControlsDefault from "GuildSettingsRoleEditConnectionsControls" /* 20251 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11792 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 20224 */;
+import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 20229 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20231 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20233 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 20243 */;
+import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 20244 */;
+import GuildSettingsRoleEditPermissionsDefault from "GuildSettingsRoleEditPermissions" /* 20253 */;
+import GuildSettingsRoleMembersDefault from "GuildSettingsRoleMembers" /* 20255 */;
+import GuildSettingsRoleEditConnectionsControlsDefault from "GuildSettingsRoleEditConnectionsControls" /* 20256 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -340,7 +340,7 @@ class GuildSettingsRoleEdit extends PureComponent {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -379,7 +379,7 @@ class GuildSettingsRoleEdit extends PureComponent {
             obj2.deleteRole(closure_128_1.id, closure_128_2.id);
             closure_128_3.pop();
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp17) {
             c2 = 3;
             throw tmp17;

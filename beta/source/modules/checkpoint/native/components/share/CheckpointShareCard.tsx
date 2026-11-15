@@ -1,20 +1,20 @@
-// Module ID: 13706
-// Function ID: 13707
+// Module ID: 13705
+// Function ID: 13706
 // Name: CheckpointShareCard
-// Dependencies: [19, 17, 21, 13707, 575, 13709, 5170, 6254, 6255, 13711, 13713, 13714, 13715, 13712, 2]
+// Dependencies: [19, 17, 21, 13706, 575, 13708, 5170, 6254, 6255, 13710, 13712, 13713, 13714, 13711, 2]
 // Exports: default, getCheckpointShareCardSize
 
-// Module 13706 (CheckpointShareCard)
+// Module 13705 (CheckpointShareCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointCardTypes from "CheckpointCardTypes" /* 6254 */;
 import CheckpointCardColors from "CheckpointCardColors" /* 6255 */;
-import CheckpointCardFrame from "CheckpointCardFrame" /* 13707 */;
-import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 13709 */;
-import CheckpointShareCardYear from "CheckpointShareCardYear" /* 13711 */;
-import CheckpointShareCardStatsDefault from "CheckpointShareCardStats" /* 13713 */;
-import CheckpointShareCardPowerBarDefault from "CheckpointShareCardPowerBar" /* 13714 */;
-import CheckpointShareCardFooterDefault from "CheckpointShareCardFooter" /* 13715 */;
+import CheckpointCardFrame from "CheckpointCardFrame" /* 13706 */;
+import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 13708 */;
+import CheckpointShareCardYear from "CheckpointShareCardYear" /* 13710 */;
+import CheckpointShareCardStatsDefault from "CheckpointShareCardStats" /* 13712 */;
+import CheckpointShareCardPowerBarDefault from "CheckpointShareCardPowerBar" /* 13713 */;
+import CheckpointShareCardFooterDefault from "CheckpointShareCardFooter" /* 13714 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -121,7 +121,7 @@ export default function CheckpointShareCard(arg0) {
     if (tmp32Result) {
       const obj14 = { stats, layout, style: null, rowStyle: null };
       ({ portraitStats: obj3.style, statRow: obj3.rowStyle } = tmp);
-      tmp32Result = tmp32(tmp33(13713), obj14);
+      tmp32Result = tmp32(tmp33(13712), obj14);
     }
     const obj15 = { children: items3 };
     items3[1] = tmp32Result;
@@ -130,7 +130,7 @@ export default function CheckpointShareCard(arg0) {
   }
   const items4 = [tmp.card, ];
   const obj16 = { value: cardColors, children: React3(View, obj17) };
-  const Provider = tmp2(13712).CheckpointShareCardColorsContext.Provider;
+  const Provider = tmp2(13711).CheckpointShareCardColorsContext.Provider;
   obj17 = { style: items4, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp18Result2 };
   items4[1] = cardType === CheckpointCardTypes.CheckpointCardTypes.DEFAULT ? tmp.characterAndStatsCard : tmp.portraitCard;
   return React3(Provider, obj16);

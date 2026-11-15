@@ -1,13 +1,13 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 12768
+// Function ID: 12769
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1623, 1072, 8507, 12770, 7540, 9073, 10681, 2116, 2]
+// Dependencies: [19, 1623, 1072, 8507, 12769, 7540, 9073, 10681, 2116, 2]
 // Exports: default
 
-// Module 12769 (useMediaKeyboardConfig)
+// Module 12768 (useMediaKeyboardConfig)
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
 import Server from "Server" /* 2116 */;
-import useUploadDisabledDefault from "useUploadDisabled" /* 12770 */;
+import useUploadDisabledDefault from "useUploadDisabled" /* 12769 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

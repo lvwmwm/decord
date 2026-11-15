@@ -1,27 +1,27 @@
-// Module ID: 12933
-// Function ID: 12934
+// Module ID: 12932
+// Function ID: 12933
 // Name: DogIllocon
-// Dependencies: [19, 21, 12934, 12935, 12936, 7168, 5874, 2]
+// Dependencies: [19, 21, 12933, 12934, 12935, 7168, 5874, 2]
 // Exports: DogIllocon
 
-// Module 12933 (DogIllocon)
+// Module 12932 (DogIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import react_native from "react-native" /* 7168 */;
+import _modDef12933 from "module_12933" /* 12933 */;
 import _modDef12934 from "module_12934" /* 12934 */;
 import _modDef12935 from "module_12935" /* 12935 */;
-import _modDef12936 from "module_12936" /* 12936 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12934 };
+let obj2 = { uri: _modDef12933 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12935 };
+obj[2] = { uri: _modDef12934 };
+({ uri: _modDef12934 });
+obj[3] = { uri: _modDef12935 };
 ({ uri: _modDef12935 });
-obj[3] = { uri: _modDef12936 };
-({ uri: _modDef12936 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/DogIllocon.native.tsx");
 

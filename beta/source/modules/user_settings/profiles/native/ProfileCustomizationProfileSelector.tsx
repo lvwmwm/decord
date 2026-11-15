@@ -1,17 +1,17 @@
-// Module ID: 16924
-// Function ID: 16925
+// Module ID: 16925
+// Function ID: 16926
 // Name: ProfileCustomizationProfileSelector
-// Dependencies: [19, 17, 16925, 21, 5170, 575, 7159, 7071, 1113, 7053, 10836, 11587, 6127, 5406, 16926, 2118, 2]
+// Dependencies: [19, 17, 16926, 21, 5170, 575, 7159, 7071, 1113, 7053, 10836, 11586, 6127, 5406, 16927, 2118, 2]
 // Exports: default
 
-// Module 16924 (ProfileCustomizationProfileSelector)
+// Module 16925 (ProfileCustomizationProfileSelector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import react_nativeDefault from "react-native" /* 6127 */;
 import GuildIconDefault from "GuildIcon" /* 7053 */;
-import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 16925 */;
+import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 16926 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ export default function ProfileCustomizationProfileSelector(guild) {
   }
   obj5 = { hasIcons: true, children: jsx(TableRow, obj2) };
   obj6 = { size: "sm", color: tmp8(575).colors.ICON_SUBTLE };
-  ChevronSmallDownIcon = tmp3(11587).ChevronSmallDownIcon;
+  ChevronSmallDownIcon = tmp3(11586).ChevronSmallDownIcon;
   intl2 = tmp3(1113).intl;
   return jsx(tmp2, obj);
 };

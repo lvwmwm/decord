@@ -1,10 +1,10 @@
-// Module ID: 12888
-// Function ID: 12889
+// Module ID: 12887
+// Function ID: 12888
 // Name: useConjureVoiceChannelPin
 // Dependencies: [5, 32, 19, 5019, 5100, 5102, 5112, 1385, 6932, 11023, 1072, 504, 5808, 11120, 2]
 // Exports: useConjureVoiceChannelPinForm, useConjureVoiceChannelPinOutcome
 
-// Module 12888 (useConjureVoiceChannelPin)
+// Module 12887 (useConjureVoiceChannelPin)
 import GuildChannelStore2 from "GuildChannelStore" /* 5100 */;
 import useChannelName from "useChannelName" /* 5808 */;
 import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 11120 */;
@@ -125,7 +125,7 @@ export function useConjureVoiceChannelPinForm(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -173,7 +173,7 @@ export function useConjureVoiceChannelPinForm(projectId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp26) {
         c3 = 3;
         throw tmp26;

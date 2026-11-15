@@ -1,10 +1,10 @@
-// Module ID: 14713
-// Function ID: 14714
+// Module ID: 14714
+// Function ID: 14715
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8867, 14714, 5016, 21, 5170, 575, 1627, 6831, 5347, 5790, 13629, 1113, 2760, 14715, 5783, 10768, 504, 8859, 11628, 5408, 5409, 8872, 10770, 14716, 5202, 5003, 2]
+// Dependencies: [19, 17, 8867, 14715, 5016, 21, 5170, 575, 1627, 6831, 5347, 5790, 13628, 1113, 2760, 14716, 5783, 10768, 504, 8859, 11627, 5408, 5409, 8872, 10770, 14717, 5202, 5003, 2]
 // Exports: default
 
-// Module 14713 (GiftBadgePostPurchase)
+// Module 14714 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,10 +17,10 @@ import Text_Text from "Text/Text" /* 5783 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import BadgeId from "BadgeId" /* 8859 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8872 */;
-import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14715 */;
+import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14716 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8867 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14714 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14715 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const GiftingBadgeIconDefault = tmp(10770);
-const GiftingBadgeLevelUpProgressDefault = tmp(14716);
+const GiftingBadgeLevelUpProgressDefault = tmp(14717);
 function PostPurchaseFooter(onSendGift) {
   let GiftIcon;
   let intl;
@@ -62,7 +62,7 @@ function PostPurchaseFooter(onSendGift) {
   const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2760.g86YiI), onPress: callback };
   const Button = onSendGift(5790).Button;
   obj3 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = onSendGift(13629).GiftIcon;
+  GiftIcon = onSendGift(13628).GiftIcon;
   intl = onSendGift(1113).intl;
   items1 = [closure_10(Button, obj2), ];
   const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2760["sa/cfM"]), onPress: callback1 };
@@ -137,7 +137,7 @@ function LevelUpScreen(newTier) {
     }
     return true === has_updates && badgeById.current_tier === newTier.key;
   }, items1);
-  const obj3 = newTier(11628);
+  const obj3 = newTier(11627);
   const tmp7 = stateFromStores && obj3.useIsBadgeUnreadStateEnabled({ location: "GiftBadgePostPurchase", hasUnread: stateFromStores });
   importDefault = tmp7;
   const effect = react.useEffect(() => {

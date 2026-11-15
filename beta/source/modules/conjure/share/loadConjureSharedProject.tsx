@@ -1,18 +1,18 @@
-// Module ID: 11751
-// Function ID: 11752
+// Module ID: 11750
+// Function ID: 11751
 // Name: loadConjureSharedProject
-// Dependencies: [5, 2162, 6932, 11745, 1072, 11028, 572, 11746, 559, 6969, 11033, 2]
+// Dependencies: [5, 2162, 6932, 11744, 1072, 11028, 572, 11745, 559, 6969, 11033, 2]
 // Exports: default
 
-// Module 11751 (loadConjureSharedProject)
+// Module 11750 (loadConjureSharedProject)
 import Constants from "Constants" /* 1072 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6969 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
-import conjureProjectLink from "conjureProjectLink" /* 11746 */;
+import conjureProjectLink from "conjureProjectLink" /* 11745 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11745 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11744 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = function _load() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -144,7 +144,7 @@ let obj = function _load() {
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           let hasItem;
           if (closure_132_8 != null) {
@@ -194,7 +194,7 @@ obj = function _resolveStatus() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;

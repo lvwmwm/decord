@@ -1,18 +1,18 @@
-// Module ID: 11872
-// Function ID: 11873
+// Module ID: 11871
+// Function ID: 11872
 // Name: getCanJoin
-// Dependencies: [1072, 11873, 11875, 11876, 11877, 11878, 11879, 11880, 7580, 1377, 2]
+// Dependencies: [1072, 11872, 11874, 11875, 11876, 11877, 11878, 11879, 7580, 1377, 2]
 // Exports: getCanJoin, getCanSync
 
-// Module 11872 (getCanJoin)
+// Module 11871 (getCanJoin)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import isInviteActiveDefault from "isInviteActive" /* 11873 */;
-import _slicedToArray from "_slicedToArray" /* 11875 */;
-import hasPartySize from "hasPartySize" /* 11876 */;
-import isPartyFull from "isPartyFull" /* 11877 */;
-import getIsInParty from "getIsInParty" /* 11878 */;
-import getIsAskToJoin from "getIsAskToJoin" /* 11879 */;
-import getRemoteJoinableActivityPlatform from "getRemoteJoinableActivityPlatform" /* 11880 */;
+import isInviteActiveDefault from "isInviteActive" /* 11872 */;
+import _slicedToArray from "_slicedToArray" /* 11874 */;
+import hasPartySize from "hasPartySize" /* 11875 */;
+import isPartyFull from "isPartyFull" /* 11876 */;
+import getIsInParty from "getIsInParty" /* 11877 */;
+import getIsAskToJoin from "getIsAskToJoin" /* 11878 */;
+import getRemoteJoinableActivityPlatform from "getRemoteJoinableActivityPlatform" /* 11879 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ export function getCanSync(activity, tmp7Result, arg2, id) {
         let isPlatformEmbedded = PlatformUtils.isPlatformEmbedded;
         const tmp9 = require;
         if (isPlatformEmbedded) {
-          const tmp9Result = tmp9(11878);
+          const tmp9Result = tmp9(11877);
           isPlatformEmbedded = !tmp9Result.getIsInParty(tmp7Result, activity);
         }
         tmp8 = isPlatformEmbedded;

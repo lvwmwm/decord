@@ -1,12 +1,10 @@
 // Module ID: 13191
 // Function ID: 13192
-// Dependencies: []
+// Dependencies: [13122]
 
 // Module 13191
-const obj = {
-  parse: function compoundSelector() {
-    return this.createSingleNodeList(this.Selector());
-  }
-};
+import _mod13122 from "module_13122" /* 13122 */;
 
-export default obj;
+({ node: _mod13122 });
+
+export default { node: _mod13122 };

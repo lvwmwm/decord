@@ -1,7 +1,7 @@
 // Module ID: 8970
 // Function ID: 8971
 // Name: MediaModal
-// Dependencies: [19, 17, 8971, 2117, 1072, 21, 8941, 8972, 8943, 504, 1377, 8946, 8949, 8977, 8979, 8980, 2017, 9010, 5408, 5409, 5406, 9012, 2118, 15032, 8944, 15051, 15053, 15058, 15062, 15063, 2]
+// Dependencies: [19, 17, 8971, 2117, 1072, 21, 8941, 8972, 8943, 504, 1377, 8946, 8949, 8977, 8979, 8980, 2017, 9010, 5408, 5409, 5406, 9012, 2118, 15033, 8944, 15052, 15054, 15059, 15063, 15064, 2]
 // Exports: default
 
 // Module 8970 (MediaModal)
@@ -18,11 +18,11 @@ import MediaModalPortal from "MediaModalPortal" /* 8949 */;
 import MediaModalTiktok from "MediaModalTiktok" /* 8977 */;
 import MediaModalWebVideoFile from "MediaModalWebVideoFile" /* 8979 */;
 import common_Video from "common/Video" /* 8980 */;
-import MediaModalOverlayDefault from "MediaModalOverlay" /* 15032 */;
-import MediaModalYoutubeDefault from "MediaModalYoutube" /* 15051 */;
-import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 15053 */;
-import MediaModalVideoDefault from "MediaModalVideo" /* 15058 */;
-import MediaModalImageDefault from "MediaModalImage" /* 15062 */;
+import MediaModalOverlayDefault from "MediaModalOverlay" /* 15033 */;
+import MediaModalYoutubeDefault from "MediaModalYoutube" /* 15052 */;
+import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 15054 */;
+import MediaModalVideoDefault from "MediaModalVideo" /* 15059 */;
+import MediaModalImageDefault from "MediaModalImage" /* 15063 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AppFreezeStore from "AppFreezeStore" /* 8971 */;

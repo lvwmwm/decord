@@ -1,15 +1,15 @@
-// Module ID: 12857
-// Function ID: 12858
+// Module ID: 12856
+// Function ID: 12857
 // Name: ConjureTipHint
-// Dependencies: [19, 17, 21, 5170, 575, 5783, 12858, 8131, 7153, 1113, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5783, 12857, 8131, 7153, 1113, 2]
 // Exports: default
 
-// Module 12857 (ConjureTipHint)
+// Module 12856 (ConjureTipHint)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12858 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12857 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;

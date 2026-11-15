@@ -1,14 +1,14 @@
-// Module ID: 15209
-// Function ID: 15210
+// Module ID: 15210
+// Function ID: 15211
 // Name: useConjureServerWidgetOffers
-// Dependencies: [5, 19, 11109, 5041, 1385, 6932, 559, 6933, 11108, 1282, 504, 1449, 7516, 11028, 15206, 7886, 15210, 15211, 2]
+// Dependencies: [5, 19, 11109, 5041, 1385, 6932, 559, 6933, 11108, 1282, 504, 1449, 7516, 11028, 15207, 7886, 15211, 15212, 2]
 // Exports: default
 
-// Module 15209 (useConjureServerWidgetOffers)
+// Module 15210 (useConjureServerWidgetOffers)
 import BackoffDefault from "Backoff" /* 559 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7886 */;
-import useAddableWidgets from "useAddableWidgets" /* 15211 */;
+import useAddableWidgets from "useAddableWidgets" /* 15212 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11109 */;
@@ -46,7 +46,7 @@ let obj = function _loadWidgetConfigs() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c9;
@@ -85,7 +85,7 @@ let obj = function _loadWidgetConfigs() {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -183,7 +183,7 @@ let obj = function _loadWidgetConfigs() {
                       c4 = 0;
                     }
                     c6 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp30) {
                   closure_3 = tmp30;
@@ -202,7 +202,7 @@ let obj = function _loadWidgetConfigs() {
             closure_2 = closure_0[Symbol.iterator]();
             if (closure_2 === undefined) {
               c12 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               c9 = 1;
               c3 = tmp29;

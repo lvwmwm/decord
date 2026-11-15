@@ -1,10 +1,10 @@
-// Module ID: 18729
-// Function ID: 18730
+// Module ID: 18730
+// Function ID: 18731
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 5041, 6860, 18730, 18727, 1652, 551, 5408, 5177, 12, 1242, 1113, 7337, 18452, 5756, 575, 5085, 12646, 1259, 6990, 6096, 10030, 1377, 1627, 5422, 18731, 18732, 10030, 17431, 5452, 1705, 2]
+// Dependencies: [5, 19, 17, 5041, 6860, 18731, 18728, 1652, 551, 5408, 5177, 12, 1242, 1113, 7337, 18453, 5756, 575, 5085, 12645, 1259, 6990, 6096, 10030, 1377, 1627, 5422, 18732, 18733, 10030, 17432, 5452, 1705, 2]
 // Exports: default
 
-// Module 18729 (useGuildsBarGesture)
+// Module 18730 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -20,8 +20,8 @@ import ContextMenuState from "ContextMenuState" /* 10030 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5041 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18730 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18727 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18731 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18728 */;
 import "module_1652";
 import module_1652_mod from "module_1652" /* 1652 */;
 import debounce from "debounce" /* 551 */;
@@ -595,7 +595,7 @@ export default function useGuildsBarGesture() {
                             const obj3 = { value, done: true };
                             return obj3;
                           } else {
-                            return { value: "HermesInternal", done: "HermesInternal" };
+                            return { value: "HermesInternal", done: null };
                           }
                         } else {
                           let c3;
@@ -632,7 +632,7 @@ export default function useGuildsBarGesture() {
                                 c3 = 0;
                               }
                               c0 = 3;
-                              return { value: "HermesInternal", done: "HermesInternal" };
+                              return { value: "HermesInternal", done: null };
                             }
                           } catch (tmp8) {
                             closure_2 = tmp8;

@@ -45,7 +45,7 @@ let obj = function _validatePurchase() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ let obj = function _validatePurchase() {
             } else {
               price = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp19) {

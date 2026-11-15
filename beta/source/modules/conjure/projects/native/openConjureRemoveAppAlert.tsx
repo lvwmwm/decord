@@ -1,10 +1,10 @@
-// Module ID: 12427
-// Function ID: 12428
+// Module ID: 12426
+// Function ID: 12427
 // Name: openConjureRemoveAppAlert
-// Dependencies: [5, 32, 19, 21, 5170, 12416, 1113, 4026, 12428, 11028, 11107, 5869, 6128, 5783, 6191, 6124, 2]
+// Dependencies: [5, 32, 19, 21, 5170, 12415, 1113, 4026, 12427, 11028, 11107, 5869, 6128, 5783, 6191, 6124, 2]
 // Exports: default
 
-// Module 12427 (openConjureRemoveAppAlert)
+// Module 12426 (openConjureRemoveAppAlert)
 import useAlertStore from "useAlertStore" /* 6124 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -63,7 +63,7 @@ function ConjureRemoveAppAlert(action) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ function ConjureRemoveAppAlert(action) {
                 open("CONJURE_APP_REMOVED", obj);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp36) {

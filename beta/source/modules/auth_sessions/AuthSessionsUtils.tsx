@@ -1,15 +1,15 @@
-// Module ID: 17033
-// Function ID: 17034
+// Module ID: 17034
+// Function ID: 17035
 // Name: AuthSessionsUtils
-// Dependencies: [19, 502, 17034, 504, 1113, 2166, 2]
+// Dependencies: [19, 502, 17035, 504, 1113, 2166, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 17033 (AuthSessionsUtils)
+// Module 17034 (AuthSessionsUtils)
 import intl2 from "intl" /* 1113 */;
 import _modDef2166 from "module_2166" /* 2166 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AuthSessionsStore from "AuthSessionsStore" /* 17034 */;
+import AuthSessionsStore from "AuthSessionsStore" /* 17035 */;
 import size from "module_2" /* 2 */;
 
 let approx_last_used_time;

@@ -1,10 +1,10 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13011
+// Function ID: 13012
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6932, 504, 11121, 11122, 1113, 4026, 12365, 2]
+// Dependencies: [5, 32, 19, 6932, 504, 11121, 11122, 1113, 4026, 12364, 2]
 // Exports: default
 
-// Module 13012 (useConjurePublishScheduleProposal)
+// Module 13011 (useConjurePublishScheduleProposal)
 import _modDef4026 from "module_4026" /* 4026 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6932 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -56,7 +56,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -108,7 +108,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp35) {
         dependencyMap = tmp35;
@@ -127,12 +127,12 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
     const orZDqY = _modDef4026.orZDqY;
-    tmpResult = tmp(12365);
+    tmpResult = tmp(12364);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(12365);
+  tmpResult2 = tmp(12364);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

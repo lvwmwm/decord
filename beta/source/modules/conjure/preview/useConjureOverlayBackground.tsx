@@ -1,10 +1,10 @@
-// Module ID: 12961
-// Function ID: 12962
+// Module ID: 12960
+// Function ID: 12961
 // Name: useConjureOverlayBackground
 // Dependencies: [5, 32, 19, 11018, 504, 11057, 2]
 // Exports: default
 
-// Module 12961 (useConjureOverlayBackground)
+// Module 12960 (useConjureOverlayBackground)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -76,7 +76,7 @@ export default function useConjureOverlayBackground(arg0, arg1) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;
@@ -122,7 +122,7 @@ export default function useConjureOverlayBackground(arg0, arg1) {
                 c4(closure_0);
               }
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp19) {
             if (0 === c4) {

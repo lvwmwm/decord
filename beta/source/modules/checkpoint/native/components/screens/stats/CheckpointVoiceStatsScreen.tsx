@@ -1,18 +1,18 @@
-// Module ID: 13919
-// Function ID: 13920
+// Module ID: 13918
+// Function ID: 13919
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [19, 17, 13700, 6231, 21, 5170, 575, 504, 6601, 1113, 3248, 13908, 13915, 13920, 13921, 12170, 13910, 13922, 13923, 13924, 2]
+// Dependencies: [19, 17, 13699, 6231, 21, 5170, 575, 504, 6601, 1113, 3248, 13907, 13914, 13919, 13920, 12169, 13909, 13921, 13922, 13923, 2]
 // Exports: default
 
-// Module 13919 (CheckpointVoiceStatsScreen)
+// Module 13918 (CheckpointVoiceStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3248 from "module_3248" /* 3248 */;
 import CheckpointConstants from "CheckpointConstants" /* 6231 */;
 import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6601 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13924 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13923 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13700 */;
+import CheckpointStore from "CheckpointStore" /* 13699 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -112,36 +112,36 @@ export default function CheckpointVoiceStatsScreen() {
   }
   const obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.imageContainer, children: closure_7(tmp14Result4, obj6) };
-  obj6 = { animatedUri: tmp14(13920), staticUri: tmp14(13921), style: tmp.image };
-  const tmp14Result = tmp14(13908);
-  tmp14Result4 = tmp14(13915);
+  obj6 = { animatedUri: tmp14(13919), staticUri: tmp14(13920), style: tmp.image };
+  const tmp14Result = tmp14(13907);
+  tmp14Result4 = tmp14(13914);
   items3 = [closure_7(View, obj5), ];
   const obj8 = { style: tmp.title, children: items4 };
   items4 = [, ];
   const obj7 = { style: tmp.copy, children: items5 };
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items4[0] = closure_7(stateFromStores1(12170).MicrophoneIcon, obj9);
+  items4[0] = closure_7(stateFromStores1(12169).MicrophoneIcon, obj9);
   const obj10 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp14Result5 = tmp14(13910);
+  const tmp14Result5 = tmp14(13909);
   items4[1] = closure_7(tmp14Result5, obj10);
   items5 = [closure_8(View, obj8), , , ];
   let tmp16Result = tmp7 && null != memo;
   if (tmp16Result) {
     const obj11 = { value: null, accessibilityLabel: null };
     ({ value: obj12.value, label: obj12.accessibilityLabel } = memo);
-    tmp16Result = tmp16(tmp14(13922), obj11);
+    tmp16Result = tmp16(tmp14(13921), obj11);
   }
   items5[1] = tmp16Result;
   let tmp16Result2 = !tmp7;
   if (tmp16Result2) {
     const _HermesInternal = HermesInternal;
-    const obj13 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: closure_7(tmp14(13923), obj14) };
+    const obj13 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: closure_7(tmp14(13922), obj14) };
     obj14 = { end: roundResult };
     tmp16Result2 = tmp16(tmp19, obj13);
   }
   items5[2] = tmp16Result2;
   const obj15 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: stringResult1 };
-  const tmp14Result6 = tmp14(13910);
+  const tmp14Result6 = tmp14(13909);
   if (roundResult <= 0) {
     const intl5 = tmp2(1113).intl;
     stringResult1 = intl5.string(tmp14(3248).huiTne);

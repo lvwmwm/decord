@@ -1,14 +1,14 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15019
+// Function ID: 15020
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 15019, 1072, 15021, 1282, 572, 2]
+// Dependencies: [5, 15020, 1072, 15022, 1282, 572, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 15018 (CustomActivityLinkUtils)
+// Module 15019 (CustomActivityLinkUtils)
 import Constants from "Constants" /* 1072 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 15021 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 15022 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 15019 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 15020 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -30,7 +30,7 @@ let obj = function _fetchCustomActivityLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -132,7 +132,7 @@ obj = function _getCustomActivityLinkParams() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

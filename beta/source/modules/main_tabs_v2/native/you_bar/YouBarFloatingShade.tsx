@@ -1,9 +1,9 @@
-// Module ID: 18856
-// Function ID: 18857
+// Module ID: 18857
+// Function ID: 18858
 // Name: YouBarFloatingShade
-// Dependencies: [19, 17, 5194, 17430, 18727, 21, 5170, 504, 5756, 575, 17432, 1493, 5349, 18449, 5340, 1090, 5747, 2]
+// Dependencies: [19, 17, 5194, 17431, 18728, 21, 5170, 504, 5756, 575, 17433, 1493, 5349, 18450, 5340, 1090, 5747, 2]
 
-// Module 18856 (YouBarFloatingShade)
+// Module 18857 (YouBarFloatingShade)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
@@ -12,9 +12,9 @@ import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /*
 import useChatLayoutDefault from "useChatLayout" /* 5349 */;
 import LinearGradientDefault from "LinearGradient" /* 5747 */;
 import useToken2 from "useToken" /* 5756 */;
-import YouBarConstants from "YouBarConstants" /* 17430 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17432 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18727 */;
+import YouBarConstants from "YouBarConstants" /* 17431 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17433 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18728 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5194 */;
 import Fragment from "Fragment" /* 21 */;

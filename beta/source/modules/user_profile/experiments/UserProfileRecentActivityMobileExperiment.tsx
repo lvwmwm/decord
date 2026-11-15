@@ -1,10 +1,10 @@
-// Module ID: 15283
-// Function ID: 15284
+// Module ID: 15284
+// Function ID: 15285
 // Name: UserProfileRecentActivityMobileExperiment
 // Dependencies: [1449, 2]
 // Exports: useIsRecentActivityMobileEnabled
 
-// Module 15283 (UserProfileRecentActivityMobileExperiment)
+// Module 15284 (UserProfileRecentActivityMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

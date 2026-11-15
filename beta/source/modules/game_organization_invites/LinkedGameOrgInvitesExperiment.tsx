@@ -1,10 +1,10 @@
-// Module ID: 11815
-// Function ID: 11816
+// Module ID: 11814
+// Function ID: 11815
 // Name: LinkedGameOrgInvitesExperiment
 // Dependencies: [1449, 2]
 // Exports: getLinkedGameOrgInvitesEnabled, useLinkedGameOrgInvitesEnabled
 
-// Module 11815 (LinkedGameOrgInvitesExperiment)
+// Module 11814 (LinkedGameOrgInvitesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12184
-// Function ID: 12185
+// Module ID: 12183
+// Function ID: 12184
 // Name: trackVoiceCallTransfer
 // Dependencies: [5019, 5925, 5927, 1072, 1252, 2]
 // Exports: default
 
-// Module 12184 (trackVoiceCallTransfer)
+// Module 12183 (trackVoiceCallTransfer)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ChannelStore from "ChannelStore" /* 5019 */;

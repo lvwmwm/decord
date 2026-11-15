@@ -1,17 +1,17 @@
-// Module ID: 17087
-// Function ID: 17088
+// Module ID: 17088
+// Function ID: 17089
 // Name: DirectMessageSafetyAlertsSetting
-// Dependencies: [8536, 13570, 11435, 11437, 11717, 1113, 11436, 17088, 2]
+// Dependencies: [8536, 13569, 11434, 11436, 11716, 1113, 11435, 17089, 2]
 
-// Module 17087 (DirectMessageSafetyAlertsSetting)
+// Module 17088 (DirectMessageSafetyAlertsSetting)
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11435 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 11436 */;
-import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 11437 */;
-import useUserIsConsideredAdultDefault from "useUserIsConsideredAdult" /* 13570 */;
-import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 17088 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11434 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 11435 */;
+import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 11436 */;
+import useUserIsConsideredAdultDefault from "useUserIsConsideredAdult" /* 13569 */;
+import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 17089 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

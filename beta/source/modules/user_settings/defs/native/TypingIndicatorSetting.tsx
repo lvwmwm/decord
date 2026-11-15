@@ -1,22 +1,22 @@
-// Module ID: 17704
-// Function ID: 17705
+// Module ID: 17705
+// Function ID: 17706
 // Name: TypingIndicatorSetting
-// Dependencies: [19, 1072, 21, 17705, 16972, 5003, 16971, 5000, 11717, 1113, 4028, 17706, 13996, 17708, 2]
+// Dependencies: [19, 1072, 21, 17706, 16973, 5003, 16972, 5000, 11716, 1113, 4028, 17707, 13995, 17709, 2]
 
-// Module 17704 (TypingIndicatorSetting)
+// Module 17705 (TypingIndicatorSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4028 from "module_4028" /* 4028 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
 import dismissible_content from "dismissible_content" /* 5003 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13996 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16971 */;
-import CustomTypingIndicatorNewPresetsExperiment from "CustomTypingIndicatorNewPresetsExperiment" /* 17705 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 17706 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13995 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16972 */;
+import CustomTypingIndicatorNewPresetsExperiment from "CustomTypingIndicatorNewPresetsExperiment" /* 17706 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 17707 */;
 import react from "react" /* 19 */;
-import DismissibleBadgeUtils_mod from "DismissibleBadgeUtils" /* 16972 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import DismissibleBadgeUtils_mod from "DismissibleBadgeUtils" /* 16973 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ let obj = {
   usePreNavigationAction() {
     let closure_2;
     let enabled;
-    let obj = enabled(17705);
+    let obj = enabled(17706);
     enabled = obj.useCustomTypingIndicatorNewPresetsConfig(TypingIndicatorSetting).enabled;
     const tmp = closure_6();
     let closure_1 = tmp;

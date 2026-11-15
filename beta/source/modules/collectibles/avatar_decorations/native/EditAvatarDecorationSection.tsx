@@ -1,17 +1,17 @@
-// Module ID: 15378
-// Function ID: 15379
+// Module ID: 15379
+// Function ID: 15380
 // Name: EditAvatarDecorationSection
-// Dependencies: [19, 17, 7834, 1412, 21, 5170, 15379, 15372, 15380, 7445, 9625, 2]
+// Dependencies: [19, 17, 7834, 1412, 21, 5170, 15380, 15373, 15381, 7445, 9625, 2]
 
-// Module 15378 (EditAvatarDecorationSection)
+// Module 15379 (EditAvatarDecorationSection)
 import react_native from "react-native" /* 17 */;
 import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1412 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
 import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7834 */;
 import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9625 */;
-import useAvatarDecorationSections from "useAvatarDecorationSections" /* 15372 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15379 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15380 */;
+import useAvatarDecorationSections from "useAvatarDecorationSections" /* 15373 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15380 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15381 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -60,7 +60,7 @@ const memoResult = react.memo((size) => {
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (avatarDecoration === useAvatarDecorationSections.SHOP_ITEM) {
         const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_AVATAR_DECORATION_SHEET };
-        const EditCollectiblesListItemShop = tmp(15380).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(15381).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isAvatarDecorationRecord(avatarDecoration)) {
         const obj4 = { avatarDecoration, isSelected: require === avatarDecoration.skuId, setSelectedAvatarDecoration, isTryItOut, size };

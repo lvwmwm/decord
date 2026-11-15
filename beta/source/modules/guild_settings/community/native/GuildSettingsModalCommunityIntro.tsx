@@ -1,15 +1,15 @@
-// Module ID: 20275
-// Function ID: 20276
+// Module ID: 20280
+// Function ID: 20281
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 5041, 5102, 9188, 1072, 21, 5170, 575, 10414, 1113, 5783, 10227, 5891, 1499, 504, 9187, 20276, 5874, 2185, 5790, 20280, 5868, 5766, 2]
+// Dependencies: [19, 17, 5041, 5102, 9188, 1072, 21, 5170, 575, 10414, 1113, 5783, 10227, 5891, 1499, 504, 9187, 20281, 5874, 2185, 5790, 20285, 5868, 5766, 2]
 // Exports: default
 
-// Module 20275 (GuildSettingsModalCommunityIntro)
+// Module 20280 (GuildSettingsModalCommunityIntro)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import ToastUtils from "ToastUtils" /* 5868 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20280 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20285 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 5041 */;

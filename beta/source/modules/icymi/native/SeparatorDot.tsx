@@ -1,10 +1,10 @@
-// Module ID: 18974
-// Function ID: 18975
+// Module ID: 19032
+// Function ID: 19033
 // Name: SeparatorDot
 // Dependencies: [19, 17, 21, 5170, 575, 2]
 // Exports: default
 
-// Module 18974 (SeparatorDot)
+// Module 19032 (SeparatorDot)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

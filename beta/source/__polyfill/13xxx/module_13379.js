@@ -1,17 +1,34 @@
 // Module ID: 13379
 // Function ID: 13380
-// Dependencies: []
-// Exports: parameterize
+// Dependencies: [13311]
+// Exports: applySdkMetadata
 
 // Module 13379
+import _mod13311 from "module_13311" /* 13311 */;
 
-export function parameterize(join) {
-  const substr = [...arguments].slice();
-  const items = [join, ...substr];
-  const string = new String(String.raw.apply(items));
-  const str = join.join("\0");
-  const str2 = str.replace(/%/g, "%%");
-  string.__sentry_template_string__ = str2.replace(/\0/g, "%s");
-  string.__sentry_template_values__ = substr;
-  return string;
+
+export function applySdkMetadata(_metadata, arg1) {
+  let arr = arg2;
+  if (arg2 === undefined) {
+    const items = [arg1];
+    arr = items;
+  }
+  let str = arg3;
+  if (arg3 === undefined) {
+    str = "npm";
+  }
+  const tmp = _metadata._metadata || {};
+  if (!tmp.sdk) {
+    let obj = {
+      name: "sentry.javascript." + arg1,
+      packages: arr.map((item) => {
+          const obj = { name: "" + str + ":@sentry/" + item, version: _mod13311.SDK_VERSION };
+          return obj;
+        }),
+      version: str(13311).SDK_VERSION
+    };
+    const _HermesInternal = HermesInternal;
+    tmp.sdk = obj;
+  }
+  _metadata._metadata = tmp;
 }

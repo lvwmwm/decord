@@ -1,10 +1,10 @@
-// Module ID: 18943
-// Function ID: 18944
+// Module ID: 19001
+// Function ID: 19002
 // Name: ICYMIJoinGuildsScreen
-// Dependencies: [5, 32, 19, 17, 5171, 5041, 18942, 1072, 21, 18913, 575, 7053, 9881, 1652, 5402, 7320, 504, 1411, 9626, 5874, 7076, 5783, 5790, 7434, 1113, 1627, 16574, 9031, 5869, 6831, 18928, 7390, 2]
+// Dependencies: [5, 32, 19, 17, 5171, 5041, 19000, 1072, 21, 18971, 575, 7053, 9881, 1652, 5402, 7320, 504, 1411, 9626, 5874, 7076, 5783, 5790, 7434, 1113, 1627, 16575, 9031, 5869, 6831, 18986, 7390, 2]
 // Exports: default
 
-// Module 18943 (ICYMIJoinGuildsScreen)
+// Module 19001 (ICYMIJoinGuildsScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
@@ -12,17 +12,17 @@ import GuildIcon from "GuildIcon" /* 7053 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9031 */;
 import ClipViewDefault from "ClipView" /* 9626 */;
 import ServerIcon2 from "ServerIcon" /* 9881 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16574 */;
-import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 18928 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16575 */;
+import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 18986 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import GuildStore from "GuildStore" /* 5041 */;
-import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 18942 */;
+import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 19000 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18913 */;
+import createICYMIStyles from "createICYMIStyles" /* 18971 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -386,7 +386,7 @@ export default function ICYMIJoinGuildsScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -471,7 +471,7 @@ export default function ICYMIJoinGuildsScreen() {
           const obj20 = stateFromStoresArray1(stateFromStores[29]);
           obj20.popWithKey(stateFromStoresArray(stateFromStores[30]).ICYMI_INFO_MODAL_KEY);
           stateFromStores = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp33) {
         stateFromStores = 3;

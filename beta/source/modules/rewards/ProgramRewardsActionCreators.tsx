@@ -1,17 +1,17 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17261
+// Function ID: 17262
 // Name: ProgramRewardsActionCreators
-// Dependencies: [5, 15954, 1072, 572, 1282, 17257, 15955, 2]
+// Dependencies: [5, 15955, 1072, 572, 1282, 17258, 15956, 2]
 // Exports: conditionallyFetchProgramRewardsIgnoreCacheTTL, default
 
-// Module 17260 (ProgramRewardsActionCreators)
+// Module 17261 (ProgramRewardsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15955 */;
-import getShouldFetchProgramRewards from "getShouldFetchProgramRewards" /* 17257 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15956 */;
+import getShouldFetchProgramRewards from "getShouldFetchProgramRewards" /* 17258 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ProgramRewardsStore from "ProgramRewardsStore" /* 15954 */;
+import ProgramRewardsStore from "ProgramRewardsStore" /* 15955 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c5, c6;
@@ -31,7 +31,7 @@ let obj = function _fetchProgramRewards() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -85,7 +85,7 @@ let obj = function _fetchProgramRewards() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         let closure_3 = tmp17;
@@ -112,7 +112,7 @@ obj = function _conditionallyFetchProgramRewards() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -143,7 +143,7 @@ obj = function _conditionallyFetchProgramRewards() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;
@@ -165,7 +165,7 @@ obj = function _conditionallyFetchProgramRewardsIgnoreCacheTTL() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -197,7 +197,7 @@ obj = function _conditionallyFetchProgramRewardsIgnoreCacheTTL() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         c0 = 3;
         throw tmp9;

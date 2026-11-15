@@ -1,18 +1,18 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14820
+// Function ID: 14821
 // Name: ChannelOverflowMenu
-// Dependencies: [19, 1072, 21, 7516, 10029, 14820, 9879, 1113, 14821, 2]
+// Dependencies: [19, 1072, 21, 7516, 10029, 14821, 9879, 1113, 14822, 2]
 // Exports: default, useHasChannelOverflowMenu
 
-// Module 14819 (ChannelOverflowMenu)
+// Module 14820 (ChannelOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import ConjureUtils from "ConjureUtils" /* 7516 */;
 import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9879 */;
 import ContextMenu from "ContextMenu" /* 10029 */;
-import IconActionButtonDefault from "IconActionButton" /* 14820 */;
-import useAppChannelOverflowMenuItemsDefault from "useAppChannelOverflowMenuItems" /* 14821 */;
+import IconActionButtonDefault from "IconActionButton" /* 14821 */;
+import useAppChannelOverflowMenuItemsDefault from "useAppChannelOverflowMenuItems" /* 14822 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

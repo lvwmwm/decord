@@ -1,10 +1,10 @@
-// Module ID: 13507
-// Function ID: 13508
+// Module ID: 13506
+// Function ID: 13507
 // Name: PremiumGiftingIntentUtils
 // Dependencies: [1387, 1072, 2]
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 13507 (PremiumGiftingIntentUtils)
+// Module 13506 (PremiumGiftingIntentUtils)
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 13002
-// Function ID: 13003
+// Module ID: 13001
+// Function ID: 13002
 // Name: ConjureSecretsSheet
-// Dependencies: [5, 32, 19, 17, 11001, 21, 5170, 575, 7451, 12826, 13003, 1113, 4026, 7459, 7415, 7460, 12341, 5783, 5790, 7181, 2]
+// Dependencies: [5, 32, 19, 17, 11001, 21, 5170, 575, 7451, 12825, 13002, 1113, 4026, 7459, 7415, 7460, 12340, 5783, 5790, 7181, 2]
 // Exports: default
 
-// Module 13002 (ConjureSecretsSheet)
+// Module 13001 (ConjureSecretsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
@@ -123,7 +123,7 @@ export default function ConjureSecretsSheet(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -228,7 +228,7 @@ export default function ConjureSecretsSheet(projectId) {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp67) {
         closure_2 = tmp67;
         if (0 === c3) {
@@ -264,7 +264,7 @@ export default function ConjureSecretsSheet(projectId) {
     tmp13Result = null;
     if ("" !== request.note) {
       let obj5 = { text: request.note, variant: "body-sm/normal", color: "text-default" };
-      tmp13Result = tmp13(tmp16(12341), obj5);
+      tmp13Result = tmp13(tmp16(12340), obj5);
     }
   }
   items1 = [tmp13Result, , , , , , ];

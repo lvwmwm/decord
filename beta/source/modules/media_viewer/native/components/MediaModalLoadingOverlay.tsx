@@ -1,9 +1,9 @@
-// Module ID: 15060
-// Function ID: 15061
+// Module ID: 15061
+// Function ID: 15062
 // Name: MediaModalLoadingOverlay
 // Dependencies: [19, 17, 21, 5170, 575, 5783, 1113, 2]
 
-// Module 15060 (MediaModalLoadingOverlay)
+// Module 15061 (MediaModalLoadingOverlay)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;

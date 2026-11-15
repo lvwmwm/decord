@@ -1,12 +1,12 @@
-// Module ID: 11745
-// Function ID: 11746
+// Module ID: 11744
+// Function ID: 11745
 // Name: ConjureSharedProjectStore
-// Dependencies: [504, 11746, 572, 2]
+// Dependencies: [504, 11745, 572, 2]
 
-// Module 11745 (ConjureSharedProjectStore)
+// Module 11744 (ConjureSharedProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectLink from "conjureProjectLink" /* 11746 */;
+import conjureProjectLink from "conjureProjectLink" /* 11745 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

@@ -1,9 +1,9 @@
-// Module ID: 13990
-// Function ID: 13991
+// Module ID: 13989
+// Function ID: 13990
 // Name: VoiceMessageConstants
 // Dependencies: [2]
 
-// Module 13990 (VoiceMessageConstants)
+// Module 13989 (VoiceMessageConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_messages/VoiceMessageConstants.tsx");

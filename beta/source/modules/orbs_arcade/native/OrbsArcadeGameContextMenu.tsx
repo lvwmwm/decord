@@ -1,15 +1,15 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 17419
+// Function ID: 17420
 // Name: OrbsArcadeGameContextMenu
-// Dependencies: [5, 19, 1385, 21, 17381, 5869, 1113, 504, 14781, 17385, 17386, 12423, 10029, 8131, 9320, 2]
+// Dependencies: [5, 19, 1385, 21, 17382, 5869, 1113, 504, 14782, 17386, 17387, 12422, 10029, 8131, 9320, 2]
 // Exports: default
 
-// Module 17418 (OrbsArcadeGameContextMenu)
+// Module 17419 (OrbsArcadeGameContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import RefreshIcon from "RefreshIcon" /* 12423 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 14781 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17381 */;
+import RefreshIcon from "RefreshIcon" /* 12422 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 14782 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17382 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -32,7 +32,7 @@ let obj = function _handleResetGame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -75,7 +75,7 @@ let obj = function _handleResetGame() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         if (0 === c3) {

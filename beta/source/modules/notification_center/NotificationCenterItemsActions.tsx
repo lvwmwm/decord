@@ -1,10 +1,10 @@
-// Module ID: 18873
-// Function ID: 18874
+// Module ID: 18931
+// Function ID: 18932
 // Name: NotificationCenterItemsActions
 // Dependencies: [5, 6946, 1072, 572, 6834, 1260, 5031, 6948, 1282, 4995, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 18873 (NotificationCenterItemsActions)
+// Module 18931 (NotificationCenterItemsActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
@@ -44,7 +44,7 @@ let obj = function _fetchNotificationCenterItems() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -156,7 +156,7 @@ let obj = function _fetchNotificationCenterItems() {
             return obj;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp21) {
           closure_4 = tmp21;
           if (0 === c5) {
@@ -189,7 +189,7 @@ obj = function _markNotificationCenterRemoteItemAcked() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -238,7 +238,7 @@ obj = function _markNotificationCenterRemoteItemAcked() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;
@@ -267,7 +267,7 @@ obj = function _bulkMarkNotificationCenterItemsAcked() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -325,7 +325,7 @@ obj = function _bulkMarkNotificationCenterItemsAcked() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;
@@ -359,7 +359,7 @@ obj = function _deleteNotificationCenterItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -414,7 +414,7 @@ obj = function _deleteNotificationCenterItem() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           closure_3 = tmp16;

@@ -1,10 +1,10 @@
-// Module ID: 18981
-// Function ID: 18982
+// Module ID: 19039
+// Function ID: 19040
 // Name: useWaterwheelsActions
 // Dependencies: [5, 19, 5041, 14239, 1072, 8042, 5869, 9040, 7626, 1113, 2534, 9052, 9843, 6994, 8066, 14248, 6990, 2]
 // Exports: useWaterwheelsActions
 
-// Module 18981 (useWaterwheelsActions)
+// Module 19039 (useWaterwheelsActions)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
@@ -44,7 +44,7 @@ let obj = function _requestNotifications() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -75,7 +75,7 @@ let obj = function _requestNotifications() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         c0 = 3;
         throw tmp9;
@@ -117,7 +117,7 @@ obj = function _joinGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -175,7 +175,7 @@ obj = function _joinGuild() {
             set.delete(closure_1);
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp33) {
           closure_4 = tmp33;
           if (0 === c5) {
@@ -209,7 +209,7 @@ obj = function _runGuarded() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -249,7 +249,7 @@ obj = function _runGuarded() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         if (0 === c4) {

@@ -1,9 +1,9 @@
-// Module ID: 19498
-// Function ID: 19499
+// Module ID: 19556
+// Function ID: 19557
 // Name: shared/DMChannel
-// Dependencies: [19, 6864, 21, 5917, 10953, 5170, 575, 19120, 18785, 17665, 11, 5798, 19490, 7076, 19119, 19491, 11203, 5848, 5808, 2]
+// Dependencies: [19, 6864, 21, 5917, 10953, 5170, 575, 19178, 18786, 17666, 11, 5798, 19548, 7076, 19177, 19549, 11203, 5848, 5808, 2]
 
-// Module 19498 (shared/DMChannel)
+// Module 19556 (shared/DMChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import transitionToChannel from "transitionToChannel" /* 5917 */;
@@ -36,11 +36,11 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
     flag = false;
   }
   const tmp = closure_6();
-  const tmp4 = flag(19120)();
-  let obj = channel(18785);
+  const tmp4 = flag(19178)();
+  let obj = channel(18786);
   const baseChannelUnreadBadgeState = obj.useBaseChannelUnreadBadgeState(channel, muted);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
-  const tmp7 = flag(17665)(channel, { unread });
+  const tmp7 = flag(17666)(channel, { unread });
   let extractTimestampResult;
   if (null != tmp7) {
     const tmp2Result = flag(11);
@@ -56,7 +56,7 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
   const tmp5Result = channel(5798);
   const fontScale = tmp5Result.useFontScale();
   const items = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
-  const tmp2Result3 = flag(19490);
+  const tmp2Result3 = flag(19548);
   const obj3 = {
     onPress: react.useCallback(() => {
       const obj = transitionToChannel;
@@ -74,7 +74,7 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
   const merged = Object.assign(obj3);
   const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: tmp11Result, latestMessageTimestamp: extractTimestampResult, channelName: flag(5808)(channel), fontScale };
   tmp11Result = null != tmp7;
-  const tmp2Result4 = flag(19119);
+  const tmp2Result4 = flag(19177);
   if (tmp11Result) {
     const obj6 = { channel, message: tmp7, color: str, muted, layout: channel(5848).ChannelListLayoutTypes.COMPACT };
     const ChannelRowPreview = tmp5(11203).ChannelRowPreview;

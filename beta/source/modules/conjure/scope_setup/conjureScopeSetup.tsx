@@ -1,22 +1,22 @@
-// Module ID: 12818
-// Function ID: 12819
+// Module ID: 12817
+// Function ID: 12818
 // Name: conjureScopeSetup
-// Dependencies: [109, 5, 11002, 12819, 11001, 6932, 1072, 510, 10466, 12820, 12821, 1113, 4026, 1282, 572, 11028, 11027, 2]
+// Dependencies: [109, 5, 11002, 12818, 11001, 6932, 1072, 510, 10466, 12819, 12820, 1113, 4026, 1282, 572, 11028, 11027, 2]
 // Exports: getHeldConjurePromptGuildId, keepConjureInstallScope, ownerOnlyClarification, reconcileHeldConjurePrompt, serverQuestionFields, settleConjureInstallScope, startConjurePrompt, switchConjureInstallScope
 
-// Module 12818 (conjureScopeSetup)
+// Module 12817 (conjureScopeSetup)
 import Storage6 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 11027 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12820 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12821 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12819 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12820 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureChatStore from "ConjureChatStore" /* 11002 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12819 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12818 */;
 import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 11001 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f104430 = function*(arg0, value) {
+const f104446 = function*(arg0, value) {
   if (c5 === 2) {
     c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -38,7 +38,7 @@ const f104430 = function*(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     let c3;
@@ -76,7 +76,7 @@ const f104430 = function*(arg0, value) {
       } else {
         c3 = 0;
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp14) {
       closure_2 = tmp14;
@@ -161,7 +161,7 @@ let obj = function _putInstallScope() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ let obj = function _putInstallScope() {
             obj = closure_132_1(closure_132_2[14]);
             obj.dispatch(obj9);
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c6 = 3;
@@ -400,7 +400,7 @@ export function settleConjureInstallScope(arg0, arg1, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -457,7 +457,7 @@ export function settleConjureInstallScope(arg0, arg1, arg2) {
             return obj;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         closure_2 = tmp19;
@@ -474,7 +474,7 @@ export function settleConjureInstallScope(arg0, arg1, arg2) {
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f104430)();
+    value = tmp2(f104446)();
   }
   const result = obj.set(combined, value);
   return value;
@@ -494,7 +494,7 @@ export function switchConjureInstallScope(arg0, id, arg2, arg3) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -531,7 +531,7 @@ export function switchConjureInstallScope(arg0, id, arg2, arg3) {
           const intl = tmp(c2[11]).intl;
           if (closure_1_8(closure_129_0, intl.string(prop))) {
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else {
             const _Error = Error;
             const self = this;
@@ -550,7 +550,7 @@ export function switchConjureInstallScope(arg0, id, arg2, arg3) {
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f104430)();
+    value = tmp2(f104446)();
   }
   const result = obj.set(combined, value);
   return value;

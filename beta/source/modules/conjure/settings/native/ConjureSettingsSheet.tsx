@@ -1,10 +1,10 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 12323
+// Function ID: 12324
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 11001, 11017, 6932, 21, 4026, 5170, 575, 504, 12325, 12338, 12361, 7459, 1113, 7415, 7460, 6191, 12363, 12366, 12368, 5783, 7048, 5790, 9102, 9092, 12374, 9327, 2]
+// Dependencies: [5, 32, 19, 17, 11001, 11017, 6932, 21, 4026, 5170, 575, 504, 12324, 12337, 12360, 7459, 1113, 7415, 7460, 6191, 12362, 12365, 12367, 5783, 7048, 5790, 9102, 9092, 12373, 9327, 2]
 // Exports: default
 
-// Module 12324 (ConjureSettingsSheet)
+// Module 12323 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
@@ -253,7 +253,7 @@ export default function ConjureSettingsSheet(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -343,7 +343,7 @@ export default function ConjureSettingsSheet(projectId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp30) {
         c3 = 3;
         throw tmp30;

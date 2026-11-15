@@ -1,9 +1,9 @@
-// Module ID: 19631
-// Function ID: 19632
+// Module ID: 18880
+// Function ID: 18881
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 5018, 6931, 11900, 502, 5019, 2130, 5102, 1385, 5928, 1072, 5837, 9379, 21, 5170, 575, 504, 19632, 5808, 11359, 12091, 9397, 9359, 7056, 5783, 15004, 1113, 8771, 7, 5869, 19629, 9043, 7071, 7079, 17921, 8453, 7080, 572, 7462, 4995, 6079, 5920, 8301, 12137, 5406, 19633, 2118, 9382, 9402, 19634, 19620, 19578, 11530, 9345, 19635, 7666, 19636, 9351, 19637, 11204, 12117, 11139, 11140, 2]
+// Dependencies: [19, 5018, 6931, 11899, 502, 5019, 2130, 5102, 1385, 5928, 1072, 5837, 9379, 21, 5170, 575, 504, 18881, 5808, 11359, 12090, 9397, 9359, 7056, 5783, 15005, 1113, 8771, 7, 5869, 18878, 9043, 7071, 7079, 17922, 8453, 7080, 572, 7462, 4995, 6079, 5920, 8301, 12136, 5406, 18882, 2118, 9382, 9402, 18883, 18868, 18869, 11529, 9345, 18884, 7666, 18885, 9351, 18886, 11204, 12116, 11139, 11140, 2]
 
-// Module 19631 (VoicePanelSettingsOverview)
+// Module 18880 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -29,14 +29,14 @@ import SecureFramesConstants from "SecureFramesConstants" /* 9379 */;
 import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9382 */;
 import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9397 */;
 import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11359 */;
-import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12137 */;
-import WrenchIcon from "WrenchIcon" /* 17921 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19629 */;
-import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 19632 */;
+import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12136 */;
+import WrenchIcon from "WrenchIcon" /* 17922 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 18878 */;
+import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 18881 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11900 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11899 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
@@ -83,7 +83,7 @@ class VoicePanelSettingsOverviewHeader {
     const tmp7 = channelId(5808)(stateFromStores1);
     const obj3 = StageChannelUnifiedCallExperiment;
     const isStageUnifiedCall = obj3.useIsStageUnifiedCall(stateFromStores1, "VoicePanelSettingsOverviewHeader");
-    const tmp9 = channelId(12091)(channelId);
+    const tmp9 = channelId(12090)(channelId);
     const obj4 = useIsSecureFramesUIEnabled;
     let isSecureFramesUIEnabled = obj4.useIsSecureFramesUIEnabled({ channelId });
     const obj5 = useIsSecureFramesVerified;
@@ -98,7 +98,7 @@ class VoicePanelSettingsOverviewHeader {
     const tmp6 = channelId;
     if (isCallSecureFramesVerified) {
       const obj9 = { style: tmp.secureFramesIcon, size: "xs", accessibilityLabel: intl.string(intl18.t.mR9cf3) };
-      const ShieldLockIcon = tmp2(15004).ShieldLockIcon;
+      const ShieldLockIcon = tmp2(15005).ShieldLockIcon;
       intl = tmp2(1113).intl;
       isCallSecureFramesVerified = tmp15(ShieldLockIcon, obj9);
     }
@@ -314,7 +314,7 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   const callback4 = stateFromStores1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { channelId };
-    obj.openLazy(asyncRequire(19633, dependencyMap.paths), closure_17, obj2);
+    obj.openLazy(asyncRequire(18882, dependencyMap.paths), closure_17, obj2);
   }, items10);
   const callback5 = stateFromStores1.useCallback(() => {
     if (null != stateFromStores4) {

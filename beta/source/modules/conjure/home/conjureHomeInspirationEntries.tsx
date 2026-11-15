@@ -1,10 +1,10 @@
-// Module ID: 13221
-// Function ID: 13222
+// Module ID: 13220
+// Function ID: 13221
 // Name: conjureHomeInspirationEntries
 // Dependencies: [1113, 4026, 2]
 // Exports: conjureHomeCategoryLabel, conjureHomeInspirationEntries
 
-// Module 13221 (conjureHomeInspirationEntries)
+// Module 13220 (conjureHomeInspirationEntries)
 import intl22 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import size from "module_2" /* 2 */;

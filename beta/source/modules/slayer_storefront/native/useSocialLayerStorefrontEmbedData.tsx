@@ -1,10 +1,10 @@
-// Module ID: 11737
-// Function ID: 11738
+// Module ID: 11736
+// Function ID: 11737
 // Name: useSocialLayerStorefrontEmbedData
-// Dependencies: [32, 5, 19, 6984, 7503, 11738, 5909, 11740, 11741, 11742, 504, 1380, 558, 6969, 11743, 11739, 2]
+// Dependencies: [32, 5, 19, 6984, 7503, 11737, 5909, 11739, 11740, 11741, 504, 1380, 558, 6969, 11742, 11738, 2]
 // Exports: collectSocialLayerStorefrontEmbedLinks, shouldRefreshSocialLayerStorefrontEmbed, useSocialLayerStorefrontEmbedData
 
-// Module 11737 (useSocialLayerStorefrontEmbedData)
+// Module 11736 (useSocialLayerStorefrontEmbedData)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import CodedLink from "CodedLink" /* 5909 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -12,7 +12,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SKUStore from "SKUStore" /* 6984 */;
 import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7503 */;
-import SocialLayerStorefrontEmbedStore from "SocialLayerStorefrontEmbedStore" /* 11738 */;
+import SocialLayerStorefrontEmbedStore from "SocialLayerStorefrontEmbedStore" /* 11737 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -255,11 +255,11 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
   const items7 = [tmp14];
   const tmp9Result = tmp9(tmp10[10]);
   const stateFromStoresArray = tmp9Result.useStateFromStoresArray(items6, () => {
-    const f129119 = (applicationId) => applicationId.applicationId;
+    const f129138 = (applicationId) => applicationId.applicationId;
     const mapped = closure_7.map((item) => stateFromStoresObject1.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f129119))];
-    new Set(found.map(f129119));
+    const items = [...new Set(found.map(f129138))];
+    new Set(found.map(f129138));
     return items;
   }, items7);
   const items8 = [stateFromStoresArray, stateFromStoresObject, stateFromStoresObject1];
@@ -314,7 +314,7 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -351,7 +351,7 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
                 c2 = 0;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp7) {
             if (0 === c2) {

@@ -1,10 +1,10 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12306
+// Function ID: 12307
 // Name: useConjureLiveParts
 // Dependencies: [2162, 5100, 5390, 5041, 6932, 504, 7516, 2]
 // Exports: default
 
-// Module 12307 (useConjureLiveParts)
+// Module 12306 (useConjureLiveParts)
 import GuildChannelStore2 from "GuildChannelStore" /* 5100 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5390 */;

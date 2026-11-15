@@ -1,7 +1,7 @@
 // Module ID: 14257
 // Function ID: 14258
 // Name: useEmojiSuggestions
-// Dependencies: [32, 19, 6884, 14258, 1388, 5119, 6867, 13991, 504, 2]
+// Dependencies: [32, 19, 6884, 14258, 1388, 5119, 6867, 13990, 504, 2]
 // Exports: default
 
 // Module 14257 (useEmojiSuggestions)

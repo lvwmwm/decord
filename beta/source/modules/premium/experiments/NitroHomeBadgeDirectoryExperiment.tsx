@@ -1,10 +1,10 @@
-// Module ID: 15626
-// Function ID: 15627
+// Module ID: 15627
+// Function ID: 15628
 // Name: NitroHomeBadgeDirectoryExperiment
 // Dependencies: [1449, 2]
 // Exports: useIsNitroHomeBadgeDirectoryEnabled
 
-// Module 15626 (NitroHomeBadgeDirectoryExperiment)
+// Module 15627 (NitroHomeBadgeDirectoryExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 19750
-// Function ID: 19751
+// Module ID: 19755
+// Function ID: 19756
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 5926, 5075, 502, 5019, 2130, 5102, 1385, 5835, 21, 3, 5170, 504, 7631, 12168, 12201, 11394, 1652, 19615, 5408, 11383, 5452, 1705, 19751, 19752, 1113, 12170, 5783, 9353, 12169, 2]
+// Dependencies: [32, 19, 5926, 5075, 502, 5019, 2130, 5102, 1385, 5835, 21, 3, 5170, 504, 7631, 12167, 12200, 11394, 1652, 19652, 5408, 11383, 5452, 1705, 19756, 19757, 1113, 12169, 5783, 9353, 12168, 2]
 // Exports: MicButton, PTTButton
 
-// Module 19750 (VoicePanelMicButton)
+// Module 19755 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import HapticUtils from "HapticUtils" /* 5408 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
 import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11383 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 12168 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 12167 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5926 */;
@@ -338,7 +338,7 @@ export function MicButton(arg0) {
       tmp3Result = map1(tmp(9353).MicrophoneDenyIcon, obj2);
     } else {
       let color;
-      const VoicePanelRiveMicButton = tmp(12169).VoicePanelRiveMicButton;
+      const VoicePanelRiveMicButton = tmp(12168).VoicePanelRiveMicButton;
       const tmp3 = map1;
       if (mute) {
         color = tmp5.iconFillRed.color;

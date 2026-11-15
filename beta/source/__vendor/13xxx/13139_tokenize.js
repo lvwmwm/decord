@@ -1,44 +1,29 @@
 // Module ID: 13139
 // Function ID: 13140
 // Name: tokenize
-// Dependencies: [13082]
+// Dependencies: [13081]
 
 // Module 13139 (tokenize)
-import tokenize from "tokenize" /* 13082 */;
+import tokenize from "tokenize" /* 13081 */;
 
-let items;
 let obj2;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
+const Hash = tokenize.TYPE.Hash;
 let obj = {
-  name: "Function",
+  name: "Hash",
   structure: obj2,
-  parse(call, arg1) {
-    let callResult;
-    const self = this;
+  parse() {
+    let scanner;
     const tokenStart = this.scanner.tokenStart;
-    const str = this.consumeFunctionName();
-    const formatted = str.toLowerCase();
-    if (arg1.hasOwnProperty(formatted)) {
-      const obj = arg1[formatted];
-      callResult = obj.call(self, arg1);
-    } else {
-      callResult = call.call(self, arg1);
-    }
-    if (!self.scanner.eof) {
-      self.eat(RightParenthesis);
-    }
-    const element = { type: "Function", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, children: callResult };
-    return element;
+    this.eat(Hash);
+    const obj = { type: "Hash", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: scanner.substrToCursor(tokenStart + 1) };
+    scanner = this.scanner;
+    return obj;
   },
-  generate(name) {
-    this.chunk(name.name);
-    this.chunk("(");
-    this.children(name);
-    this.chunk(")");
-  },
-  walkContext: "function"
+  generate(value) {
+    this.chunk("#");
+    this.chunk(value.value);
+  }
 };
-obj2 = { name: String, children: items };
-items = [[]];
+obj2 = { value: String };
 
 export default obj;

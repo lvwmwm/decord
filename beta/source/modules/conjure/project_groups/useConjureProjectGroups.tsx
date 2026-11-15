@@ -1,12 +1,12 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 13252
+// Function ID: 13253
 // Name: useConjureProjectGroups
-// Dependencies: [19, 6860, 1385, 6932, 13232, 504, 13254, 13255, 2]
+// Dependencies: [19, 6860, 1385, 6932, 13231, 504, 13253, 13254, 2]
 // Exports: default
 
-// Module 13253 (useConjureProjectGroups)
-import conjureProjectGroups from "conjureProjectGroups" /* 13254 */;
-import filterConjureProjectsByName from "filterConjureProjectsByName" /* 13255 */;
+// Module 13252 (useConjureProjectGroups)
+import conjureProjectGroups from "conjureProjectGroups" /* 13253 */;
+import filterConjureProjectsByName from "filterConjureProjectsByName" /* 13254 */;
 import react from "react" /* 19 */;
 import SortedGuildStore from "SortedGuildStore" /* 6860 */;
 import UserStore from "UserStore" /* 1385 */;

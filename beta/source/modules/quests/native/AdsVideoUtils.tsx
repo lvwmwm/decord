@@ -1,10 +1,10 @@
-// Module ID: 17293
-// Function ID: 17294
+// Module ID: 17294
+// Function ID: 17295
 // Name: AdsVideoUtils
 // Dependencies: [1377, 2]
 // Exports: isSourceError
 
-// Module 17293 (AdsVideoUtils)
+// Module 17294 (AdsVideoUtils)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 14226
 // Function ID: 14227
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 5082, 21, 5170, 575, 504, 14058, 1113, 5874, 5783, 2]
+// Dependencies: [19, 17, 5082, 21, 5170, 575, 504, 14057, 1113, 5874, 5783, 2]
 // Exports: default
 
 // Module 14226 (ApplicationSectionHeader)
@@ -49,7 +49,7 @@ export default function ApplicationSectionHeader(section) {
       }
     }
   });
-  const obj2 = section(14058);
+  const obj2 = section(14057);
   const applicationCommandsIconSource = obj2.getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {

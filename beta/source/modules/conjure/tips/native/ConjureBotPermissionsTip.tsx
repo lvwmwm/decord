@@ -1,13 +1,13 @@
-// Module ID: 12856
-// Function ID: 12857
+// Module ID: 12855
+// Function ID: 12856
 // Name: ConjureBotPermissionsTip
-// Dependencies: [5, 19, 21, 12292, 12857, 11453, 1113, 4026, 12861, 2]
+// Dependencies: [5, 19, 21, 12291, 12856, 11452, 1113, 4026, 12860, 2]
 
-// Module 12856 (ConjureBotPermissionsTip)
+// Module 12855 (ConjureBotPermissionsTip)
 import Fragment from "Fragment" /* 21 */;
 import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12857 */;
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12861 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12856 */;
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12860 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ function BotPermissionsHint(projectId) {
   let closure_1;
   let closure_2;
   projectId = projectId.projectId;
-  dependencyMap = react.useContext(projectId(12292).ConjurePublishActionContext);
+  dependencyMap = react.useContext(projectId(12291).ConjurePublishActionContext);
   ConjureTipHintDefault;
   const intl = projectId(1113).intl;
   const format = intl.format;
@@ -40,7 +40,7 @@ function BotPermissionsHint(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -69,14 +69,14 @@ function BotPermissionsHint(projectId) {
           return obj;
         }
         projectId = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         projectId = 3;
         throw tmp9;
       }
     }
   });
-  return <tmp icon={projectId(11453).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
+  return <tmp icon={projectId(11452).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
 }
 const jsx = Fragment.jsx;
 let obj = {

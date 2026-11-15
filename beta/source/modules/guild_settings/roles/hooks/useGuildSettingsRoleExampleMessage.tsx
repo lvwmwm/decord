@@ -1,10 +1,10 @@
-// Module ID: 20245
-// Function ID: 20246
+// Module ID: 20250
+// Function ID: 20251
 // Name: useGuildSettingsRoleExampleMessage
 // Dependencies: [19, 1404, 1072, 6228, 10470, 1113, 8856, 11351, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 20245 (useGuildSettingsRoleExampleMessage)
+// Module 20250 (useGuildSettingsRoleExampleMessage)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6228 */;

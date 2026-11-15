@@ -1,9 +1,9 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17094
+// Function ID: 17095
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8536, 7482, 6821, 7483, 6813, 1377, 8057, 6816, 4995, 11717, 1113, 2]
+// Dependencies: [8536, 7482, 6821, 7483, 6813, 1377, 8057, 6816, 4995, 11716, 1113, 2]
 
-// Module 17093 (AndroidViewNsfwDmCommandsSetting)
+// Module 17094 (AndroidViewNsfwDmCommandsSetting)
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6813 */;
@@ -13,7 +13,7 @@ import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils
 import useNSFWAllowed from "useNSFWAllowed" /* 7483 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8057 */;
 import SettingsConstants from "SettingsConstants" /* 8536 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 11716 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

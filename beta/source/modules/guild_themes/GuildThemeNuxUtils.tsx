@@ -1,10 +1,10 @@
-// Module ID: 18588
-// Function ID: 18589
+// Module ID: 18589
+// Function ID: 18590
 // Name: GuildThemeNuxUtils
 // Dependencies: [5, 1231, 5397, 5000, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 18588 (GuildThemeNuxUtils)
+// Module 18589 (GuildThemeNuxUtils)
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
 import flow_Client from "flow/Client" /* 5397 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -29,7 +29,7 @@ let obj = function _saveGuildThemeNuxPreference() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let obj = function _saveGuildThemeNuxPreference() {
           return obj;
         } else {
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c5 = 3;

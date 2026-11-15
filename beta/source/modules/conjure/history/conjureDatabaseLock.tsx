@@ -1,10 +1,10 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12386
+// Function ID: 12387
 // Name: conjureDatabaseLock
 // Dependencies: [5, 19, 2]
 // Exports: useConjureDatabaseBusy, withConjureDatabaseLock
 
-// Module 12387 (conjureDatabaseLock)
+// Module 12386 (conjureDatabaseLock)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let obj = function _withConjureDatabaseLock() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;

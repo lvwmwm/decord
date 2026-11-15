@@ -1,10 +1,10 @@
-// Module ID: 15105
-// Function ID: 15106
+// Module ID: 15106
+// Function ID: 15107
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 9885, 1072, 1498, 21, 12711, 11067, 5406, 7451, 12697, 5868, 1378, 8264, 9692, 1113, 5790, 575, 6969, 7582, 5355, 1625, 1252, 2]
+// Dependencies: [5, 32, 19, 9885, 1072, 1498, 21, 12710, 11067, 5406, 7451, 12696, 5868, 1378, 8264, 9692, 1113, 5790, 575, 6969, 7582, 5355, 1625, 1252, 2]
 // Exports: default
 
-// Module 15105 (AddOrOpenAppButton)
+// Module 15106 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
@@ -13,8 +13,8 @@ import ToastUtils from "ToastUtils" /* 5868 */;
 import ClipboardUtils from "ClipboardUtils" /* 7451 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9885 */;
 import ApplicationUtils from "ApplicationUtils" /* 11067 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12697 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12711 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12696 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12710 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -96,7 +96,7 @@ function OpenAppButton(profileApplication) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -179,7 +179,7 @@ function OpenAppButton(profileApplication) {
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
         tmp = application1;
         closure_130_3(false);

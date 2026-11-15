@@ -1,10 +1,10 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 16812
+// Function ID: 16813
 // Name: UserProfilePremiumTryItOutMobileRefreshExperiment
 // Dependencies: [1449, 2]
 // Exports: useTryItOutMobileRefreshConfig
 
-// Module 16811 (UserProfilePremiumTryItOutMobileRefreshExperiment)
+// Module 16812 (UserProfilePremiumTryItOutMobileRefreshExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

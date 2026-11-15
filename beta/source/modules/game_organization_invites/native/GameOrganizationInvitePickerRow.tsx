@@ -1,15 +1,15 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11840
+// Function ID: 11841
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 9312, 7989, 21, 5170, 575, 11842, 7071, 5874, 7432, 6191, 8765, 5783, 1113, 2530, 9317, 2]
+// Dependencies: [19, 9312, 7989, 21, 5170, 575, 11841, 7071, 5874, 7432, 6191, 8765, 5783, 1113, 2530, 9317, 2]
 
-// Module 11841 (GameOrganizationInvitePickerRow)
+// Module 11840 (GameOrganizationInvitePickerRow)
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import TableRow2 from "TableRow" /* 7071 */;
 import Constants from "Constants" /* 7989 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9312 */;
-import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 11842 */;
+import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 11841 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

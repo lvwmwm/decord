@@ -1,10 +1,10 @@
-// Module ID: 20098
-// Function ID: 20099
+// Module ID: 20103
+// Function ID: 20104
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 5100, 5041, 5102, 1385, 18572, 9188, 1072, 21, 5921, 5170, 7071, 1113, 5891, 5107, 20099, 19309, 9190, 9686, 20101, 5883, 15429, 7159, 9566, 11206, 14811, 8765, 9172, 20102, 12300, 7001, 13244, 17950, 10414, 5756, 575, 1499, 504, 9187, 20104, 7531, 7538, 5868, 8279, 6191, 19344, 1411, 20105, 5766, 2]
+// Dependencies: [19, 5100, 5041, 5102, 1385, 18573, 9188, 1072, 21, 5921, 5170, 7071, 1113, 5891, 5107, 20104, 19367, 9190, 9686, 20106, 5883, 15430, 7159, 9566, 11206, 14812, 8765, 9172, 20107, 12299, 7001, 13243, 17951, 10414, 5756, 575, 1499, 504, 9187, 20109, 7531, 7538, 5868, 8279, 6191, 19402, 1411, 20110, 5766, 2]
 // Exports: default
 
-// Module 20098 (GuildSettingsModalLanding)
+// Module 20103 (GuildSettingsModalLanding)
 import intl8 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
@@ -15,16 +15,16 @@ import TableRow7 from "TableRow" /* 7071 */;
 import TableRowGroup2 from "TableRowGroup" /* 7159 */;
 import ShieldUserIcon from "ShieldUserIcon" /* 9172 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
-import RobotIcon from "RobotIcon" /* 12300 */;
-import HammerIcon from "HammerIcon" /* 13244 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15429 */;
-import ModerationIcon from "ModerationIcon" /* 20102 */;
+import RobotIcon from "RobotIcon" /* 12299 */;
+import HammerIcon from "HammerIcon" /* 13243 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15430 */;
+import ModerationIcon from "ModerationIcon" /* 20107 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 5100 */;
 import GuildStore from "GuildStore" /* 5041 */;
 import PermissionStore from "PermissionStore" /* 5102 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18572 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18573 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9188 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -104,7 +104,7 @@ function SettingsSection(guild) {
     };
     const TableRow2 = tmp2(7071).TableRow;
     intl2 = tmp2(1113).intl;
-    obj5 = { IconComponent: guild(20099).ChannelListIcon };
+    obj5 = { IconComponent: guild(20104).ChannelListIcon };
     Icon2 = tmp2(7071).TableRow.Icon;
     items.push(closure_15(TableRow2, obj4, "channels"));
   }
@@ -120,7 +120,7 @@ function SettingsSection(guild) {
     };
     const TableRow3 = tmp2(7071).TableRow;
     intl3 = tmp2(1113).intl;
-    obj7 = { IconComponent: guild(19309).PuzzlePieceIcon };
+    obj7 = { IconComponent: guild(19367).PuzzlePieceIcon };
     Icon3 = tmp2(7071).TableRow.Icon;
     items.push(closure_15(TableRow3, obj6, "integrations"));
   }
@@ -141,7 +141,7 @@ function SettingsSection(guild) {
     items.push(closure_15(TableRow4, obj8, "server-tag"));
   }
   if (isGuildAdmin) {
-    const tmp2Result2 = guild(20101);
+    const tmp2Result2 = guild(20106);
     isGuildAdmin = tmp2Result2.canSeeVanityUrlSettings(guild);
   }
   if (isGuildAdmin) {
@@ -236,7 +236,7 @@ function ExpressionSection(pushScreen) {
     };
     const TableRow3 = pushScreen(7071).TableRow;
     intl3 = pushScreen(1113).intl;
-    obj6 = { IconComponent: pushScreen(14811).StampIcon };
+    obj6 = { IconComponent: pushScreen(14812).StampIcon };
     Icon3 = pushScreen(7071).TableRow.Icon;
     items.push(closure_15(TableRow3, obj5, "official-messages"));
   }
@@ -440,7 +440,7 @@ function CommunitySection(pushScreen) {
     const t = pushScreen(1113).t;
     if (hasItem) {
       obj.label = string(t.nRtNqn);
-      const obj2 = { IconComponent: pushScreen(17950).TreehouseIcon };
+      const obj2 = { IconComponent: pushScreen(17951).TreehouseIcon };
       const Icon2 = tmp3(7071).TableRow.Icon;
       obj.icon = closure_15(Icon2, obj2);
       obj.onPress = function onPress() {
@@ -449,7 +449,7 @@ function CommunitySection(pushScreen) {
       tmp2Result = tmp2(TableRow, obj, "community-overview");
     } else {
       obj.label = string(t.ElKTeb);
-      const obj3 = { IconComponent: pushScreen(17950).TreehouseIcon };
+      const obj3 = { IconComponent: pushScreen(17951).TreehouseIcon };
       const Icon = tmp3(7071).TableRow.Icon;
       obj.icon = closure_15(Icon, obj3);
       obj.onPress = function onPress() {
@@ -558,7 +558,7 @@ function GuildSettingsModalLandingInner(guild) {
     }
   }, items2);
   ({ canManageGuild, isGuildAdmin, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
-  const obj6 = guild(20104);
+  const obj6 = guild(20109);
   const tmp11 = obj6.useChannelsAllowedToUnlink(guild.id).length > 0;
   const obj7 = guild(7531);
   const canManageGuildRoleSubscriptions = obj7.useCanManageGuildRoleSubscriptions(guild);
@@ -604,7 +604,7 @@ function GuildSettingsModalLandingInner(guild) {
     text: guild.name,
     textAccessibilityRole: "header"
   };
-  items5[0] = closure_15(tmp3(19344), obj10);
+  items5[0] = closure_15(tmp3(19402), obj10);
   items5[1] = closure_15(SettingsSection, { guild, categories: stateFromStores, isGuildAdmin, canManageGuild, canManageChannels, canUnlinkChannelLobbies: tmp11, canManageWebhooks, pushScreen: callback });
   items5[2] = closure_15(ExpressionSection, { canManageGuildExpressions, canConfigureOfficialMessages: result, pushScreen: callback });
   items5[3] = closure_15(PeopleSection, { canManageGuild, canManageRoles, pushScreen: callback });
@@ -614,7 +614,7 @@ function GuildSettingsModalLandingInner(guild) {
   const tmp16 = closure_17;
   if (tmp17Result) {
     const obj11 = { guild, pushScreen: callback };
-    tmp17Result = tmp17(tmp3(20105), obj11);
+    tmp17Result = tmp17(tmp3(20110), obj11);
   }
   const obj12 = { children: items6 };
   items5[6] = tmp17Result;

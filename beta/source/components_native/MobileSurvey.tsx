@@ -1,17 +1,17 @@
-// Module ID: 19422
-// Function ID: 19423
+// Module ID: 19480
+// Function ID: 19481
 // Name: MobileSurvey
-// Dependencies: [5, 19, 7593, 1072, 21, 5170, 504, 1252, 18077, 6194, 1113, 5866, 1187, 575, 12192, 2]
+// Dependencies: [5, 19, 7593, 1072, 21, 5170, 504, 1252, 18078, 6194, 1113, 5866, 1187, 575, 12191, 2]
 // Exports: default
 
-// Module 19422 (MobileSurvey)
+// Module 19480 (MobileSurvey)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import LinkingDefault from "Linking" /* 5866 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12192 */;
-import SurveyActionCreators from "SurveyActionCreators" /* 18077 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12191 */;
+import SurveyActionCreators from "SurveyActionCreators" /* 18078 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SurveyStore from "SurveyStore" /* 7593 */;
@@ -54,7 +54,7 @@ export default function MobileSurvey() {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -83,7 +83,7 @@ export default function MobileSurvey() {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } catch (tmp8) {
               c0 = 3;
               throw tmp8;

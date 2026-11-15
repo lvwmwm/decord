@@ -1,9 +1,9 @@
-// Module ID: 20082
-// Function ID: 20083
+// Module ID: 20087
+// Function ID: 20088
 // Name: UserSettingsManager
 // Dependencies: [7383, 4995, 2]
 
-// Module 20082 (UserSettingsManager)
+// Module 20087 (UserSettingsManager)
 import UserSettings from "UserSettings" /* 4995 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;

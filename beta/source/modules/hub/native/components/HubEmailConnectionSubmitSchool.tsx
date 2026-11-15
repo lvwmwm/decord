@@ -1,10 +1,10 @@
-// Module ID: 14614
-// Function ID: 14615
+// Module ID: 14615
+// Function ID: 14616
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 14593, 1072, 21, 5170, 575, 1499, 5767, 14606, 6611, 14601, 1187, 1113, 5783, 7180, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 14594, 1072, 21, 5170, 575, 1499, 5767, 14607, 6611, 14602, 1187, 1113, 5783, 7180, 5790, 2]
 // Exports: default
 
-// Module 14614 (HubEmailConnectionSubmitSchool)
+// Module 14615 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
@@ -13,8 +13,8 @@ import useNavigation from "useNavigation" /* 1499 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5767 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7180 */;
-import HubConstants from "HubConstants" /* 14593 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 14601 */;
+import HubConstants from "HubConstants" /* 14594 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 14602 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -87,7 +87,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -142,7 +142,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp41) {
           closure_2 = tmp41;

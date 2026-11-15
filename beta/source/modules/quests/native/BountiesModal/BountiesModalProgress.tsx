@@ -1,10 +1,10 @@
-// Module ID: 17295
-// Function ID: 17296
+// Module ID: 17296
+// Function ID: 17297
 // Name: BountiesModalProgress
 // Dependencies: [32, 19, 17, 21, 5170, 575, 1652, 5402, 5405, 2]
 // Exports: default
 
-// Module 17295 (BountiesModalProgress)
+// Module 17296 (BountiesModalProgress)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5402 */;

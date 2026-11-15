@@ -1,10 +1,10 @@
-// Module ID: 19306
-// Function ID: 19307
+// Module ID: 19364
+// Function ID: 19365
 // Name: VoiceChannelAppIcon
-// Dependencies: [19, 17, 21, 5170, 575, 9154, 11512, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 9154, 11511, 2]
 // Exports: default
 
-// Module 19306 (VoiceChannelAppIcon)
+// Module 19364 (VoiceChannelAppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

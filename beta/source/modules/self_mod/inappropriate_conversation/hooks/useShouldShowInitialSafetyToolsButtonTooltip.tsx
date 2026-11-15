@@ -1,10 +1,10 @@
-// Module ID: 11473
-// Function ID: 11474
+// Module ID: 11472
+// Function ID: 11473
 // Name: useShouldShowInitialSafetyToolsButtonTooltip
-// Dependencies: [10955, 11472, 504, 2]
+// Dependencies: [10955, 11471, 504, 2]
 // Exports: useShouldShowInitialSafetyToolsButtonTooltip
 
-// Module 11473 (useShouldShowInitialSafetyToolsButtonTooltip)
+// Module 11472 (useShouldShowInitialSafetyToolsButtonTooltip)
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10955 */;
 import size from "module_2" /* 2 */;
 

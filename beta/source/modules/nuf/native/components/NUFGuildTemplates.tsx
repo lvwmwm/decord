@@ -1,10 +1,10 @@
-// Module ID: 14542
-// Function ID: 14543
+// Module ID: 14543
+// Function ID: 14544
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 5207, 1072, 14543, 7244, 21, 6990, 14318, 11681, 14544, 14622, 1252, 1260, 7097, 14518, 1099, 14546, 14575, 14147, 1113, 14589, 14590, 14623, 14601, 7264, 2]
+// Dependencies: [5, 19, 17, 5207, 1072, 14544, 7244, 21, 6990, 14319, 11680, 14545, 14623, 1252, 1260, 7097, 14519, 1099, 14547, 14576, 14147, 1113, 14590, 14591, 14624, 14602, 7264, 2]
 // Exports: default
 
-// Module 14542 (NUFGuildTemplates)
+// Module 14543 (NUFGuildTemplates)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 126
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
 import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import Navigator2 from "Navigator" /* 7264 */;
-import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14543 */;
+import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14544 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import DefaultRouteStore from "DefaultRouteStore" /* 5207 */;
@@ -43,7 +43,7 @@ let obj = function _onCreateGuild() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -84,7 +84,7 @@ let obj = function _onCreateGuild() {
           const obj9 = closure_130_1(closure_130_2[13]);
           obj9.track(closure_130_7.USER_FLOW_TRANSITION, obj10);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c4 = 3;
@@ -111,7 +111,7 @@ obj = function _onCreateServer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ obj = function _onCreateServer() {
             return { value, done: true };
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           c3 = 3;
           throw tmp7;

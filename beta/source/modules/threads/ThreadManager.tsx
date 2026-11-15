@@ -1,9 +1,9 @@
-// Module ID: 20076
-// Function ID: 20077
+// Module ID: 20081
+// Function ID: 20082
 // Name: ThreadManager
 // Dependencies: [502, 5019, 7383, 504, 572, 9993, 2]
 
-// Module 20076 (ThreadManager)
+// Module 20081 (ThreadManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ForumActionCreatorsDefault from "ForumActionCreators" /* 9993 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

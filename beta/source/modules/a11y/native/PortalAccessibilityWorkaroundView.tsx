@@ -1,13 +1,13 @@
-// Module ID: 14476
-// Function ID: 14477
+// Module ID: 14477
+// Function ID: 14478
 // Name: PortalAccessibilityWorkaroundView
-// Dependencies: [19, 17, 21, 1377, 14477, 2]
+// Dependencies: [19, 17, 21, 1377, 14478, 2]
 // Exports: default
 
-// Module 14476 (PortalAccessibilityWorkaroundView)
+// Module 14477 (PortalAccessibilityWorkaroundView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NonRecycledViewNativeComponent from "NonRecycledViewNativeComponent" /* 14477 */;
+import NonRecycledViewNativeComponent from "NonRecycledViewNativeComponent" /* 14478 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;

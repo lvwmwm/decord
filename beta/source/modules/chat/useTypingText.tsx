@@ -1,10 +1,10 @@
-// Module ID: 13997
-// Function ID: 13998
+// Module ID: 13996
+// Function ID: 13997
 // Name: useTypingText
 // Dependencies: [32, 1385, 504, 6205, 1113, 2]
 // Exports: default
 
-// Module 13997 (useTypingText)
+// Module 13996 (useTypingText)
 import NicknameUtilsDefault from "NicknameUtils" /* 6205 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1385 */;

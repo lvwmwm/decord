@@ -1,10 +1,10 @@
-// Module ID: 12094
-// Function ID: 12095
+// Module ID: 12093
+// Function ID: 12094
 // Name: ChannelCallNavigatorIcon
 // Dependencies: [19, 17, 11162, 1072, 21, 5170, 575, 7076, 5177, 5760, 1187, 2]
 // Exports: default
 
-// Module 12094 (ChannelCallNavigatorIcon)
+// Module 12093 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import shared from "shared" /* 5177 */;

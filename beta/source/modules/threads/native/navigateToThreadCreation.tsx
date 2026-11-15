@@ -1,10 +1,10 @@
-// Module ID: 14283
-// Function ID: 14284
+// Module ID: 14284
+// Function ID: 14285
 // Name: navigateToThreadCreation
 // Dependencies: [8304, 5346, 5917, 2]
 // Exports: navigateToThreadCreation
 
-// Module 14283 (navigateToThreadCreation)
+// Module 14284 (navigateToThreadCreation)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8304 */;
 import size from "module_2" /* 2 */;

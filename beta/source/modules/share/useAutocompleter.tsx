@@ -1,10 +1,10 @@
-// Module ID: 13666
-// Function ID: 13667
+// Module ID: 13665
+// Function ID: 13666
 // Name: useAutocompleter
 // Dependencies: [32, 19, 5771, 9248, 2]
 // Exports: default
 
-// Module 13666 (useAutocompleter)
+// Module 13665 (useAutocompleter)
 import _modDef9248 from "module_9248" /* 9248 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -48,13 +48,13 @@ export default function useAutocompleter(searchOptions) {
     search: react.useCallback((arg0) => {
       let query;
       let resultTypes;
-      const f139935 = (item) => resultTypes2.has(item);
+      const f139975 = (item) => resultTypes2.has(item);
       ({ query, resultTypes } = arg0);
       let tmp = null != options.resultTypes;
       if (tmp) {
         const resultTypes2 = obj.resultTypes;
-        tmp = resultTypes.length === resultTypes2.size && resultTypes.every(f139935);
-        resultTypes.length === resultTypes2.size && resultTypes.every(f139935);
+        tmp = resultTypes.length === resultTypes2.size && resultTypes.every(f139975);
+        resultTypes.length === resultTypes2.size && resultTypes.every(f139975);
       }
       if (!tmp) {
         options.setResultTypes(resultTypes);

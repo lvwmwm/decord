@@ -1,15 +1,15 @@
-// Module ID: 11850
-// Function ID: 11851
+// Module ID: 11849
+// Function ID: 11850
 // Name: sendGameOrganizationInvite
-// Dependencies: [5, 9312, 7989, 5177, 1113, 11851, 2]
+// Dependencies: [5, 9312, 7989, 5177, 1113, 11850, 2]
 // Exports: default
 
-// Module 11850 (sendGameOrganizationInvite)
+// Module 11849 (sendGameOrganizationInvite)
 import intl4 from "intl" /* 1113 */;
 import shared from "shared" /* 5177 */;
 import Constants from "Constants" /* 7989 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9312 */;
-import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 11851 */;
+import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 11850 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _sendGameOrganizationInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ let obj = function _sendGameOrganizationInvite() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           AccessibilityAnnouncer = closure_4;
           c7 = 3;

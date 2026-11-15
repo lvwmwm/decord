@@ -1,10 +1,10 @@
-// Module ID: 11931
-// Function ID: 11932
+// Module ID: 11930
+// Function ID: 11931
 // Name: getPrimaryAppCommand
 // Dependencies: [5, 19, 5019, 9885, 2116, 9891, 9889, 5807, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
-// Module 11931 (getPrimaryAppCommand)
+// Module 11930 (getPrimaryAppCommand)
 import Server from "Server" /* 2116 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5807 */;
 import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9889 */;
@@ -35,7 +35,7 @@ let obj = function _getPrimaryAppCommand() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

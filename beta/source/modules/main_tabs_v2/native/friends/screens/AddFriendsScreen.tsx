@@ -1,20 +1,20 @@
-// Module ID: 19234
-// Function ID: 19235
+// Module ID: 19292
+// Function ID: 19293
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7909, 5112, 1385, 14535, 1072, 14513, 21, 5170, 575, 14511, 9058, 5868, 1113, 9242, 14515, 1377, 7420, 7445, 7314, 19235, 5753, 1252, 8854, 563, 12, 5226, 18475, 7424, 10887, 9272, 7048, 10884, 7071, 5872, 8766, 19236, 19237, 19239, 19240, 2]
+// Dependencies: [32, 5, 19, 17, 7909, 5112, 1385, 14536, 1072, 14514, 21, 5170, 575, 14512, 9058, 5868, 1113, 9242, 14516, 1377, 7420, 7445, 7314, 19293, 5753, 1252, 8854, 563, 12, 5226, 18476, 7424, 10887, 9272, 7048, 10884, 7071, 5872, 8766, 19294, 19295, 19297, 19298, 2]
 // Exports: default
 
-// Module 19234 (AddFriendsScreen)
+// Module 19292 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9058 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14511 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14513 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 14535 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 19237 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 19239 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14512 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14514 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 14536 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 19295 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 19297 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -65,7 +65,7 @@ let props = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -118,7 +118,7 @@ let props = function _handleShare() {
           PJf9P9 = closure_130_0(closure_130_2[16]).t.PJf9P9;
           closure_0(obj7);
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         let closure_3 = tmp19;
@@ -134,12 +134,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f117840 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f118049 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f117840);
-    const tmp2 = arr.length === arg1.length && arr.every(f117840);
+    tmp = arr.length === arg1.length && arr.every(f118049);
+    const tmp2 = arr.length === arg1.length && arr.every(f118049);
   }
   return tmp;
 }

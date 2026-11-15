@@ -1,14 +1,14 @@
-// Module ID: 13442
-// Function ID: 13443
+// Module ID: 13441
+// Function ID: 13442
 // Name: joinFrameActivity
-// Dependencies: [5, 2162, 5019, 5835, 6935, 1072, 11887, 572, 11926, 11882, 5831, 11927, 11103, 1113, 11945, 13443, 11721, 11098, 6612, 13444, 9438, 7582, 11871, 2]
+// Dependencies: [5, 2162, 5019, 5835, 6935, 1072, 11886, 572, 11925, 11881, 5831, 11926, 11103, 1113, 11944, 13442, 11720, 11098, 6612, 13443, 9438, 7582, 11870, 2]
 // Exports: default
 
-// Module 13442 (joinFrameActivity)
+// Module 13441 (joinFrameActivity)
 import FramesConstants from "FramesConstants" /* 6935 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11871 */;
-import Constants2 from "Constants" /* 11887 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11870 */;
+import Constants2 from "Constants" /* 11886 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
@@ -46,7 +46,7 @@ let obj = function _joinFrameActivity() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c8;
@@ -476,7 +476,7 @@ obj = function _getVoiceChannelAppChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -566,7 +566,7 @@ obj = function _getActivityChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -593,7 +593,7 @@ obj = function _getActivityChannelId() {
         } else if (1 === c3) {
           c4 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;

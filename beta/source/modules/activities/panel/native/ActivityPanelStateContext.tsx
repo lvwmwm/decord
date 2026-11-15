@@ -1,9 +1,9 @@
-// Module ID: 19540
-// Function ID: 19541
+// Module ID: 19598
+// Function ID: 19599
 // Name: ActivityPanelStateContext
 // Dependencies: [19, 5813, 7338, 2]
 
-// Module 19540 (ActivityPanelStateContext)
+// Module 19598 (ActivityPanelStateContext)
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
 import react from "react" /* 19 */;
 import "ReanimatedHelperTypes";

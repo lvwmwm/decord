@@ -1,10 +1,10 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14019
+// Function ID: 14020
 // Name: ChatInputCommandOptionParser
-// Dependencies: [32, 17, 5171, 6884, 5076, 5102, 1072, 6200, 1388, 13045, 5120, 12671, 2149, 2150, 8247, 8704, 10375, 4995, 575, 5808, 2]
+// Dependencies: [32, 17, 5171, 6884, 5076, 5102, 1072, 6200, 1388, 13044, 5120, 12670, 2149, 2150, 8247, 8704, 10375, 4995, 575, 5808, 2]
 // Exports: formatTimestampPillText, getChannelHighlightNodes, getCommandOptionValueEnd, getEmojiHighlightNodes, getGameHighlightNodes, getGameMentionInputNodes, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getTimestampHighlightNodes, getTimestampMentionInputNodes, getUsernameHighlightNodes, serializeComposerGameMentions, serializeComposerTimestampMentions, uniqueTimestampPillText
 
-// Module 14020 (ChatInputCommandOptionParser)
+// Module 14019 (ChatInputCommandOptionParser)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
@@ -12,8 +12,8 @@ import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2149 */;
 import StringUtils from "StringUtils" /* 2150 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5120 */;
 import useChannelName from "useChannelName" /* 5808 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12671 */;
-import ChatInputParser from "ChatInputParser" /* 13045 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12670 */;
+import ChatInputParser from "ChatInputParser" /* 13044 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import EmojiStore from "EmojiStore" /* 6884 */;
@@ -351,32 +351,32 @@ export function getEmojiHighlightNodes(channel, arg1) {
   }
 }
 export function getUsernameHighlightNodes(channel, arg1) {
-  const f139973 = (text) => _require(text.text) === closure_0;
+  const f140013 = (text) => _require(text.text) === closure_0;
   const items = [];
   const obj = ApplicationCommandOptionValueParser;
   const users = obj.getUsers(channel);
-  const f106739 = (arg0) => arg0;
+  const f106755 = (arg0) => arg0;
   let match = re17.exec(arg1);
   const obj2 = re17;
   if (null != match) {
     do {
       let str = match[1];
       let closure_0 = str.trim();
-      if (null != users.find(f139973)) {
+      if (null != users.find(f140013)) {
         let obj3 = { location: match.index, length: match[0].length };
         let arr = items.push(obj3);
       }
       match = obj2.exec(arg1);
     } while (null != match);
   }
-  const f106740 = (arg0) => arg0.split("#")[0];
+  const f106756 = (arg0) => arg0.split("#")[0];
   let match1 = re18.exec(arg1);
   const obj4 = re18;
   if (null != match1) {
     do {
       let str2 = match1[1];
       closure_0 = str2.trim();
-      if (null != users.find(f139973)) {
+      if (null != users.find(f140013)) {
         let obj5 = { location: match1.index, length: match1[0].length };
         let arr2 = items.push(obj5);
       }

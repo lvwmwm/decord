@@ -1,17 +1,17 @@
-// Module ID: 12903
-// Function ID: 12904
+// Module ID: 12902
+// Function ID: 12903
 // Name: ConjureActivityBox
-// Dependencies: [32, 19, 17, 1072, 21, 5170, 12868, 575, 12904, 12825, 12296, 1113, 4026, 12859, 12950, 5783, 12313, 8129, 12951, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5170, 12867, 575, 12903, 12824, 12295, 1113, 4026, 12858, 12949, 5783, 12312, 8129, 12950, 2]
 // Exports: default, stretchOf
 
-// Module 12903 (ConjureActivityBox)
+// Module 12902 (ConjureActivityBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12859 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12868 */;
-import ConjureSubagentMark from "ConjureSubagentMark" /* 12904 */;
+import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12858 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12867 */;
+import ConjureSubagentMark from "ConjureSubagentMark" /* 12903 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -30,7 +30,7 @@ let obj5;
 let tmp2;
 let tmp5;
 const WarningIcon2 = tmp2(8129);
-const ConjureNativeStepImagesDefault = tmp5(12951);
+const ConjureNativeStepImagesDefault = tmp5(12950);
 function TurnStatusLine(epoch) {
   let _undefined;
   let c3;
@@ -252,7 +252,7 @@ function TimelineRow(inGutter) {
   let obj = { line: obj2.describeNode(node), live: flag2, settled: tmp9, failed: "failed" === node.status, presentation: str2, crestColor, inGutter: flag, epoch, trailing: tmp4Result };
   let tmp8 = node;
   let tmp7 = ConjureNativeStatusLineDefault;
-  obj2 = node(12825);
+  obj2 = node(12824);
   str2 = "detail";
   tmp9 = !flag2 && "failed" !== node.status;
   if (flag2) {
@@ -262,7 +262,7 @@ function TimelineRow(inGutter) {
   if (null != node.durationMs) {
     let obj3 = { variant: "body-xs/normal", color: "text-subtle", children: tmp8Result.describeDuration(node.durationMs) };
     let Text = tmp8(5783).Text;
-    tmp8Result = tmp8(12296);
+    tmp8Result = tmp8(12295);
     tmp4Result = tmp4(Text, obj3);
   }
   const children = [tmp4(tmp7, obj), , ];

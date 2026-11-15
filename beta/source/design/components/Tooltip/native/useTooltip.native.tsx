@@ -79,7 +79,7 @@ export function useTooltip(ref, memo) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -130,7 +130,7 @@ export function useTooltip(ref, memo) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -205,7 +205,7 @@ export function useTooltipHelper(ref, targetRef, callback) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -256,7 +256,7 @@ export function useTooltipHelper(ref, targetRef, callback) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp18) {
               closure_3 = tmp18;

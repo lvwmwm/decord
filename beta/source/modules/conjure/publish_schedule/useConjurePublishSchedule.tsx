@@ -1,10 +1,10 @@
-// Module ID: 12364
-// Function ID: 12365
+// Module ID: 12363
+// Function ID: 12364
 // Name: useConjurePublishSchedule
 // Dependencies: [5, 32, 19, 11001, 504, 11121, 1113, 4026, 11122, 2]
 // Exports: default
 
-// Module 12364 (useConjurePublishSchedule)
+// Module 12363 (useConjurePublishSchedule)
 import intl3 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
 import ConjureConnectionStore2 from "ConjureConnectionStore" /* 11001 */;
@@ -120,7 +120,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -207,7 +207,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
                   closure_129_7(false);
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 closure_129_3(tmp);
                 result = closure_129_9;
@@ -224,7 +224,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp72) {
           message = tmp72;
           if (0 === c3) {

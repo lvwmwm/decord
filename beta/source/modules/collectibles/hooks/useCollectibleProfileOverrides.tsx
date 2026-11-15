@@ -1,10 +1,10 @@
-// Module ID: 15326
-// Function ID: 15327
+// Module ID: 15327
+// Function ID: 15328
 // Name: useCollectibleProfileOverrides
 // Dependencies: [19, 7834, 7835, 7836, 8846, 2111, 2]
 // Exports: useCollectibleProfileOverrides
 
-// Module 15326 (useCollectibleProfileOverrides)
+// Module 15327 (useCollectibleProfileOverrides)
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7834 */;
 import ProfileEffectRecord from "ProfileEffectRecord" /* 7835 */;

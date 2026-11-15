@@ -1,10 +1,10 @@
-// Module ID: 18668
-// Function ID: 18669
+// Module ID: 18669
+// Function ID: 18670
 // Name: useStageChannelSpeakerVoiceStates
 // Dependencies: [32, 5022, 5019, 5928, 6800, 504, 5044, 11, 1380, 6847, 6854, 2]
 // Exports: default
 
-// Module 18668 (useStageChannelSpeakerVoiceStates)
+// Module 18669 (useStageChannelSpeakerVoiceStates)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import FavoritesUtils from "FavoritesUtils" /* 5044 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5928 */;

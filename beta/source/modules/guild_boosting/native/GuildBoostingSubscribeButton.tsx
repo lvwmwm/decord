@@ -1,7 +1,7 @@
 // Module ID: 7693
 // Function ID: 7694
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 7694, 1072, 6858, 1387, 21, 7695, 6831, 6856, 15780, 1499, 7420, 563, 1398, 14383, 5790, 1113, 8771, 2]
+// Dependencies: [5, 19, 17, 7694, 1072, 6858, 1387, 21, 7695, 6831, 6856, 15781, 1499, 7420, 563, 1398, 14384, 5790, 1113, 8771, 2]
 // Exports: default
 
 // Module 7693 (GuildBoostingSubscribeButton)
@@ -38,7 +38,7 @@ let location = function _handleBoostPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let location = function _handleBoostPress() {
             const obj = closure_131_0(closure_131_2[10]);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c5 = 3;

@@ -1,19 +1,19 @@
-// Module ID: 11471
-// Function ID: 11472
+// Module ID: 11470
+// Function ID: 11471
 // Name: useShouldShowSafetyToolsButtonTooltipForChannel
-// Dependencies: [10955, 1089, 11472, 11433, 11473, 11474, 2]
+// Dependencies: [10955, 1089, 11471, 11432, 11472, 11473, 2]
 // Exports: useSafetyToolsButtonTooltipForChannel
 
-// Module 11471 (useShouldShowSafetyToolsButtonTooltipForChannel)
+// Module 11470 (useShouldShowSafetyToolsButtonTooltipForChannel)
 import DurationsDefault from "Durations" /* 1089 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10955 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11433 */;
-import useInappropriateConversationSafetyToolsWarningForChannel from "useInappropriateConversationSafetyToolsWarningForChannel" /* 11472 */;
-import useShouldShowInitialSafetyToolsButtonTooltip from "useShouldShowInitialSafetyToolsButtonTooltip" /* 11473 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11432 */;
+import useInappropriateConversationSafetyToolsWarningForChannel from "useInappropriateConversationSafetyToolsWarningForChannel" /* 11471 */;
+import useShouldShowInitialSafetyToolsButtonTooltip from "useShouldShowInitialSafetyToolsButtonTooltip" /* 11472 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const InappropriateConversationUtils = tmp(11474);
+const InappropriateConversationUtils = tmp(11473);
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
 const HOUR = DurationsDefault.Millis.HOUR;
 let closure_4 = 12 * DurationsDefault.Millis.HOUR;

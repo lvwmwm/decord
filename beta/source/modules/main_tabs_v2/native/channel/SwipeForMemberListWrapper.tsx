@@ -1,10 +1,10 @@
-// Module ID: 19074
-// Function ID: 19075
+// Module ID: 19132
+// Function ID: 19133
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 9948, 9936, 1072, 21, 3, 5170, 575, 5921, 11415, 5349, 1652, 5753, 5401, 7303, 5355, 11732, 1108, 18428, 8948, 18439, 12262, 5347, 5346, 6186, 1500, 18998, 14264, 18432, 18437, 18434, 5452, 19075, 13984, 18991, 10887, 5770, 19076, 2]
+// Dependencies: [32, 19, 17, 9948, 9936, 1072, 21, 3, 5170, 575, 5921, 11414, 5349, 1652, 5753, 5401, 7303, 5355, 11731, 1108, 18429, 8948, 18440, 12261, 5347, 5346, 6186, 1500, 19056, 14264, 18433, 18438, 18435, 5452, 19133, 13983, 19049, 10887, 5770, 19134, 14636, 2]
 // Exports: default
 
-// Module 19074 (SwipeForMemberListWrapper)
+// Module 19132 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
@@ -13,7 +13,7 @@ import RootNavigationRef from "RootNavigationRef" /* 5347 */;
 import useChatLayout from "useChatLayout" /* 5349 */;
 import ChatInputUtils from "ChatInputUtils" /* 5355 */;
 import react_native from "react-native" /* 9936 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18439 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18440 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -559,15 +559,16 @@ export default function _default(channelId) {
   const obj8 = { style: items33, accessibilityElementsHidden: tmp71, importantForAccessibility: str2, children: items34 };
   items33[3] = onyxRightOverflow;
   tmp71 = !derivedStateFromSharedValue;
-  items34 = [navigation(tmp2(tmp3[37]), { absolute: true, withOverlay: true, overlayOpacity: 0.5 }), , ];
+  items34 = [navigation(tmp2(tmp3[37]), { absolute: true, withOverlay: true, overlayOpacity: 0.5 }), , , ];
   let obj9 = { children: navigation(tmp2(tmp3[39]), { isShowing: derivedStateFromSharedValue, channelId: first, isSearchLocked: false, onBackPress: callback5, componentWidth: tmp9, onChannelDeleted: callback4 }) };
   const LayerScope = tmp13(tmp3[38]).LayerScope;
   items34[1] = navigation(LayerScope, obj9);
+  items34[2] = navigation(tmp2(tmp3[40]), {});
   const obj10 = { style: items35, children: navigation(panelGestureContext, obj11) };
   items35 = [StyleSheet.absoluteFill, animatedStyle];
   obj11 = { style: tmp.memberListPreview };
   const View2 = tmp2(tmp3[13]).View;
-  items34[2] = navigation(View2, obj10);
+  items34[3] = navigation(View2, obj10);
   items32[1] = closure_14(View, obj8);
   items30[1] = navigation(GestureDetector, obj5);
   return closure_14(Provider, obj3);

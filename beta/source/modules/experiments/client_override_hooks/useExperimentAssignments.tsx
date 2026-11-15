@@ -1,10 +1,10 @@
-// Module ID: 13501
-// Function ID: 13502
+// Module ID: 13500
+// Function ID: 13501
 // Name: useExperimentAssignments
 // Dependencies: [32, 5386, 1246, 504, 5391, 2]
 // Exports: getExperimentServerAssignment, useExperimentAssignment, useExperimentServerAssignment
 
-// Module 13501 (useExperimentAssignments)
+// Module 13500 (useExperimentAssignments)
 import ExperimentManager from "ExperimentManager" /* 5391 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ExperimentStore from "ExperimentStore" /* 5386 */;

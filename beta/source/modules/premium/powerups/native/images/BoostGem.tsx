@@ -1,10 +1,10 @@
-// Module ID: 14367
-// Function ID: 14368
+// Module ID: 14368
+// Function ID: 14369
 // Name: BoostGem
 // Dependencies: [19, 21, 8134, 2]
 // Exports: default
 
-// Module 14367 (BoostGem)
+// Module 14368 (BoostGem)
 import inlineStyles from "inlineStyles" /* 8134 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

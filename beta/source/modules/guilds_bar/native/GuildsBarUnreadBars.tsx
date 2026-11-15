@@ -1,9 +1,9 @@
-// Module ID: 18813
-// Function ID: 18814
+// Module ID: 18814
+// Function ID: 18815
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6974, 5203, 6860, 18727, 17430, 21, 5170, 7337, 1627, 17422, 17432, 551, 558, 504, 1652, 1705, 18814, 2]
+// Dependencies: [32, 19, 17, 6974, 5203, 6860, 18728, 17431, 21, 5170, 7337, 1627, 17423, 17433, 551, 558, 504, 1652, 1705, 18815, 2]
 
-// Module 18813 (GuildsBarUnreadBars)
+// Module 18814 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -14,8 +14,8 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6974 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18727 */;
-import YouBarConstants from "YouBarConstants" /* 17430 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18728 */;
+import YouBarConstants from "YouBarConstants" /* 17431 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
@@ -227,7 +227,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               return tmp37;
             }
-            let obj6 = { beforeItem: obj7, afterItem: "r" };
+            let obj6 = { beforeItem: obj7, afterItem: "a" };
             obj7 = { section: sum, row: tmp32.item, mention: true };
             return obj6;
           }
@@ -246,7 +246,7 @@ const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
 let closure_17 = { beforeItem: "Array", afterItem: "flexDirection" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "a" };
 let closure_20 = { code: "(function GuildsBarUnreadBarsTsx1(){let[scrollPosValue]=this.__closure;return scrollPosValue.get();})" };
 let closure_21 = { code: "(function GuildsBarUnreadBarsTsx2(position,lastPosition){let[scheduleOnRN,debouncedUpdate]=this.__closure;if(position!==lastPosition){scheduleOnRN(debouncedUpdate);}})" };
 const memoResult = react.memo(function GuildsBarUnreadBars(fastList) {
@@ -354,11 +354,11 @@ const memoResult = react.memo(function GuildsBarUnreadBars(fastList) {
   const tmp16 = closure_15();
   _require = tmp16;
   const top2 = tmp(1627)().top;
-  const tmp8Result = fastList(17422);
+  const tmp8Result = fastList(17423);
   const mobileQuestDockHeight = tmp8Result.useMobileQuestDockHeight();
   let num = 8;
-  const useYouBarTotalHeight = fastList(17432).useYouBarTotalHeight;
-  fastList(17432);
+  const useYouBarTotalHeight = fastList(17433).useYouBarTotalHeight;
+  fastList(17433);
   if (mobileQuestDockHeight > 0) {
     num = 0;
   }

@@ -1,10 +1,10 @@
-// Module ID: 12330
-// Function ID: 12331
+// Module ID: 12329
+// Function ID: 12330
 // Name: ConjureSmartContext
 // Dependencies: [32, 19, 11002, 11001, 11012, 504, 11126, 1113, 4026, 11053, 2]
 // Exports: useConjureContextSwitchRow, useConjureSmartContextSetting
 
-// Module 12330 (ConjureSmartContext)
+// Module 12329 (ConjureSmartContext)
 import conjureSmartContextConnection from "conjureSmartContextConnection" /* 11126 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

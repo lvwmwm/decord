@@ -1,12 +1,12 @@
-// Module ID: 18263
-// Function ID: 18264
+// Module ID: 18264
+// Function ID: 18265
 // Name: useAdPersonalizationTogglesDisabled
-// Dependencies: [15905, 504, 2]
+// Dependencies: [15906, 504, 2]
 // Exports: useAdPersonalizationTogglesDisabled
 
-// Module 18263 (useAdPersonalizationTogglesDisabled)
+// Module 18264 (useAdPersonalizationTogglesDisabled)
 import get_initialized from "get initialized" /* 504 */;
-import AdPersonalizationStore from "AdPersonalizationStore" /* 15905 */;
+import AdPersonalizationStore from "AdPersonalizationStore" /* 15906 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/hooks/useAdPersonalizationTogglesDisabled.tsx");

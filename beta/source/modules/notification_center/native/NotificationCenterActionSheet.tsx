@@ -1,13 +1,13 @@
-// Module ID: 18866
-// Function ID: 18867
+// Module ID: 18924
+// Function ID: 18925
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 6975, 1072, 21, 504, 18867, 5406, 11314, 9930, 7668, 7459, 7415, 1113, 7461, 8766, 14252, 9321, 18868, 11325, 10343, 5896, 12795, 7666, 2]
+// Dependencies: [19, 6975, 1072, 21, 504, 18925, 5406, 11314, 9930, 7668, 7459, 7415, 1113, 7461, 8766, 14252, 9321, 18926, 11325, 10343, 5896, 12794, 7666, 2]
 // Exports: default
 
-// Module 18866 (NotificationCenterActionSheet)
+// Module 18924 (NotificationCenterActionSheet)
 import Constants from "Constants" /* 1072 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 10343 */;
-import MentionActionCreatorsDefault from "MentionActionCreators" /* 18867 */;
+import MentionActionCreatorsDefault from "MentionActionCreators" /* 18925 */;
 import react_mod from "react" /* 19 */;
 import RecentMentionsStore from "RecentMentionsStore" /* 6975 */;
 import Fragment from "Fragment" /* 21 */;
@@ -117,7 +117,7 @@ export default function NotificationCenterActionSheet() {
   const ActionSheetSwitchRow2 = roleFilter(7461).ActionSheetSwitchRow;
   intl3 = roleFilter(1113).intl;
   intl4 = roleFilter(1113).intl;
-  obj8 = { IconComponent: roleFilter(9321).BellIcon, source: everyoneFilter(18868) };
+  obj8 = { IconComponent: roleFilter(9321).BellIcon, source: everyoneFilter(18926) };
   Icon2 = roleFilter(7461).ActionSheetRow.Icon;
   items2[1] = closure_6(ActionSheetSwitchRow2, obj7);
   items3 = [closure_7(Group, obj4), ];
@@ -151,7 +151,7 @@ export default function NotificationCenterActionSheet() {
   items4[1] = closure_6(ActionSheetRow2, obj12, "reminders");
   const obj14 = { icon: closure_6(Icon5, obj15), label: intl7.string(roleFilter(1113).t.SZVs3K), onPress: callback, arrow: true };
   const ActionSheetRow3 = roleFilter(7461).ActionSheetRow;
-  obj15 = { IconComponent: roleFilter(12795).CalendarPlusIcon };
+  obj15 = { IconComponent: roleFilter(12794).CalendarPlusIcon };
   Icon5 = roleFilter(7461).ActionSheetRow.Icon;
   intl7 = roleFilter(1113).intl;
   items4[2] = closure_6(ActionSheetRow3, obj14, "scheduled-messages");

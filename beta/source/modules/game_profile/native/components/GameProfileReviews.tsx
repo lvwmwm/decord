@@ -139,7 +139,7 @@ function OpenCriticReview(url) {
     opencritic = reviews.opencritic;
   }
   if (opencritic == null) {
-    opencritic = { topCriticRating: "description", topCriticRatingCount: "isArray", tier: "isArray" };
+    opencritic = { topCriticRating: "Boolean", topCriticRatingCount: "description", tier: "isArray" };
   }
   ({ tier, topCriticRating } = opencritic);
   if (topCriticRating == null) {

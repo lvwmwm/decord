@@ -1,17 +1,17 @@
 // Module ID: 14261
 // Function ID: 14262
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 13055, 21, 5170, 575, 5756, 5231, 14262, 1625, 12741, 13056, 1652, 13054, 14070, 2]
+// Dependencies: [32, 19, 17, 13054, 21, 5170, 575, 5756, 5231, 14262, 1625, 12740, 13055, 1652, 13053, 14069, 2]
 
 // Module 14261 (ChatInputRightActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import native from "native" /* 5231 */;
-import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13054 */;
-import ChatInputConstants from "ChatInputConstants" /* 13055 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13056 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14070 */;
+import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13053 */;
+import ChatInputConstants from "ChatInputConstants" /* 13054 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13055 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14069 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -85,7 +85,7 @@ class ChatInputRightActions {
       tmp19 = closure_7(EmojiSuggestionChatButton, obj5);
     } else {
       const obj6 = { active: keyboardType === channel(1625).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
-      const tmp3Result = tmp3(12741);
+      const tmp3Result = tmp3(12740);
       tmp19 = closure_7(tmp3Result, obj6);
     }
     items1[1] = tmp19;

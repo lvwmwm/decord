@@ -1,10 +1,10 @@
-// Module ID: 16807
-// Function ID: 16808
+// Module ID: 16808
+// Function ID: 16809
 // Name: HexagonActionCreators
 // Dependencies: [5, 1385, 5195, 3, 1089, 1282, 5198, 572, 2]
 // Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignExpiredClientThemeRestored, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousAppIcon, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
 
-// Module 16807 (HexagonActionCreators)
+// Module 16808 (HexagonActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -33,7 +33,7 @@ let obj = function _enrollInHexagonCampaign() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ let obj = function _enrollInHexagonCampaign() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = 3;
@@ -116,7 +116,7 @@ obj = function _enrollAndWaitForHexagonCampaignPerk() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -211,7 +211,7 @@ obj = function _enrollAndClearPendingHexagonCampaignEnrollment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

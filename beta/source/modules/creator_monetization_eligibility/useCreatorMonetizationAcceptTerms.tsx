@@ -1,10 +1,10 @@
-// Module ID: 20325
-// Function ID: 20326
+// Module ID: 20330
+// Function ID: 20331
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 5037, 5041, 1385, 504, 7532, 20326, 6612, 2]
+// Dependencies: [5, 32, 19, 5037, 5041, 1385, 504, 7532, 20331, 6612, 2]
 // Exports: default
 
-// Module 20325 (useCreatorMonetizationAcceptTerms)
+// Module 20330 (useCreatorMonetizationAcceptTerms)
 import GuildRecord from "GuildRecord" /* 5037 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -60,7 +60,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -135,7 +135,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
             closure_129_4(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp41) {
           if (0 === c3) {
             c5 = 3;

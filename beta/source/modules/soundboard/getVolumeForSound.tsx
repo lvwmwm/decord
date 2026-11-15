@@ -1,10 +1,10 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16747
+// Function ID: 16748
 // Name: getVolumeForSound
 // Dependencies: [2130, 6087, 4995, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 16746 (getVolumeForSound)
+// Module 16747 (getVolumeForSound)
 import UserSettings from "UserSettings" /* 4995 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6087 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;

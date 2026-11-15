@@ -1,14 +1,14 @@
-// Module ID: 14794
-// Function ID: 14795
+// Module ID: 14795
+// Function ID: 14796
 // Name: KeyboardIcon
-// Dependencies: [19, 21, 575, 5873, 12742, 2]
+// Dependencies: [19, 21, 575, 5873, 12741, 2]
 // Exports: KeyboardIcon
 
-// Module 14794 (KeyboardIcon)
+// Module 14795 (KeyboardIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 12742 */;
+import AssetRegistry from "AssetRegistry" /* 12741 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

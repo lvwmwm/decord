@@ -1,10 +1,10 @@
-// Module ID: 14021
-// Function ID: 14022
+// Module ID: 14020
+// Function ID: 14021
 // Name: DraftCommandUtils
 // Dependencies: [6200, 7811, 10467, 2]
 // Exports: resolveDraftCommand, toDraftCommand
 
-// Module 14021 (DraftCommandUtils)
+// Module 14020 (DraftCommandUtils)
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6200 */;
 import DraftCommand from "DraftCommand" /* 7811 */;
 import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10467 */;

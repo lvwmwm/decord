@@ -1,16 +1,16 @@
-// Module ID: 17262
-// Function ID: 17263
+// Module ID: 17263
+// Function ID: 17264
 // Name: OrbChallengeListItem
-// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 15969, 1113, 2298, 14958, 9830, 5790, 7471, 5783, 9649, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 15970, 1113, 2298, 14959, 9830, 5790, 7471, 5783, 9649, 2]
 // Exports: OrbChallengeListItem
 
-// Module 17262 (OrbChallengeListItem)
+// Module 17263 (OrbChallengeListItem)
 import nativeDefault from "native" /* 575 */;
 import _modDef2298 from "module_2298" /* 2298 */;
 import OrbsIcon2 from "OrbsIcon" /* 9649 */;
 import _modDef9830 from "module_9830" /* 9830 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14958 */;
-import OrbChallengeTypes from "OrbChallengeTypes" /* 15969 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14959 */;
+import OrbChallengeTypes from "OrbChallengeTypes" /* 15970 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -106,7 +106,7 @@ export function OrbChallengeListItem(achievementIdentifier) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -149,7 +149,7 @@ export function OrbChallengeListItem(achievementIdentifier) {
           closure_128_5(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp20) {
         closure_2 = tmp20;
         if (0 === c3) {

@@ -1,9 +1,9 @@
-// Module ID: 13581
-// Function ID: 13582
+// Module ID: 13580
+// Function ID: 13581
 // Name: AutomatedUnderageAppealModalActionCreators
-// Dependencies: [5, 8072, 6815, 21, 13579, 572, 5406, 13582, 2118, 8071, 8096, 6816, 8102, 8057, 6831, 8109, 8260, 2]
+// Dependencies: [5, 8072, 6815, 21, 13578, 572, 5406, 13581, 2118, 8071, 8096, 6816, 8102, 8057, 6831, 8109, 8260, 2]
 
-// Module 13581 (AutomatedUnderageAppealModalActionCreators)
+// Module 13580 (AutomatedUnderageAppealModalActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -29,7 +29,7 @@ let obj = {
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { classificationId, onClose };
-    obj2.openLazy(asyncRequire(13582, dependencyMap.paths), React3, obj3);
+    obj2.openLazy(asyncRequire(13581, dependencyMap.paths), React3, obj3);
   },
   openV2(classificationId, onClose) {
     _require = classificationId;
@@ -64,7 +64,7 @@ let obj = {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -135,7 +135,7 @@ let obj = {
                   }), obj8, closure_1_6);
                 }
                 c3 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp23) {
               c3 = 3;

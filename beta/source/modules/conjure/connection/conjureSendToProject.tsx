@@ -1,10 +1,10 @@
-// Module ID: 12834
-// Function ID: 12835
+// Module ID: 12833
+// Function ID: 12834
 // Name: conjureSendToProject
 // Dependencies: [5, 11034, 11131, 2]
 // Exports: sendConjureMessageToProject
 
-// Module 12834 (conjureSendToProject)
+// Module 12833 (conjureSendToProject)
 import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11034 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _sendConjureMessageToProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -155,7 +155,7 @@ let obj = function _sendConjureMessageToProject() {
           clearTimeout(c2);
           conjureWebSocket.close();
           c8 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         url = tmp28;

@@ -1,14 +1,14 @@
-// Module ID: 19659
-// Function ID: 19660
+// Module ID: 19664
+// Function ID: 19665
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 6845, 5019, 5925, 5835, 5837, 11394, 9347, 563, 12200, 5950, 12141, 18665, 11359, 19575, 5869, 1113, 7185, 575, 2]
+// Dependencies: [19, 6845, 5019, 5925, 5835, 5837, 11394, 9347, 563, 12199, 5950, 12140, 18666, 11359, 19632, 5869, 1113, 7185, 575, 2]
 // Exports: default
 
-// Module 19659 (useVoicePanelCardUserStateIcons)
+// Module 19664 (useVoicePanelCardUserStateIcons)
 import CallConstants from "CallConstants" /* 5837 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9347 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19575 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19632 */;
 import react from "react" /* 19 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 6845 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(12141);
-const useMuteAwareLocalVolumeDefault = tmp2(12200);
+const MobileAudioOutputExperimentDefault = tmp2(12140);
+const useMuteAwareLocalVolumeDefault = tmp2(12199);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON", STAGE_MODERATOR_ICON: "STAGE_MODERATOR_ICON" };
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelCardUserStateIcons.tsx");
@@ -97,7 +97,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result9 = tmp4(18665);
+  const tmp4Result9 = tmp4(18666);
   isRTCDisconnectedUIVisible = tmp4Result9.useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [videoIconState];
   const items4 = [tmp];

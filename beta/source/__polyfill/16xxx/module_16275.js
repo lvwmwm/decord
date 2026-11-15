@@ -1,9 +1,9 @@
 // Module ID: 16275
 // Function ID: 16276
-// Dependencies: [16270, 16241]
+// Dependencies: [16271, 16242]
 
 // Module 16275
-import _mod16241 from "module_16241" /* 16241 */;
+import _mod16242 from "module_16242" /* 16242 */;
 
 const require = globalThis.__r;
 let _require, c1, dependencyMap;
@@ -19,18 +19,18 @@ export default function(arr, arg1, arg2) {
     let tmp = arg1;
     let self = this;
     let self2 = this;
-    const tmp6 = new require("module_16270")(arg1, arg2);
+    const tmp6 = new require("module_16271")(arg1, arg2);
     let tmp7 = tmp6;
     regex = tmp6;
     const item = arr.forEach(function(item) {
       if (regex.test(item)) {
-        const tmp = c1 && 1 !== closure_2.compare(item);
+        const tmp = c1 && -1 !== closure_2.compare(item);
         if (!tmp) {
           c1 = item;
           const self = this;
           const self2 = this;
-          closure_2 = new _mod16241(c1, closure_0);
-          const tmp7 = new _mod16241(c1, closure_0);
+          closure_2 = new _mod16242(c1, closure_0);
+          const tmp7 = new _mod16242(c1, closure_0);
         }
       }
     });

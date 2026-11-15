@@ -1,18 +1,18 @@
 // Module ID: 16522
 // Function ID: 16523
-// Dependencies: [16495]
+// Dependencies: [16520]
 
 // Module 16522
-import _mod16495 from "module_16495" /* 16495 */;
+import _mod16520 from "module_16520" /* 16520 */;
 
 
-export default function(arg0) {
-  if (_mod16495(arg0)) {
-    return arg0;
+export default (arg0, arg1) => {
+  let tmp3;
+  const tmp = _mod16520(arg0);
+  if (tmp < 0) {
+    tmp3 = max(tmp + arg1, 0);
   } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
+    tmp3 = min(tmp, arg1);
   }
+  return tmp3;
 };

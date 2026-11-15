@@ -1,10 +1,10 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17469
+// Function ID: 17470
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [5, 19, 17, 6064, 1072, 9840, 7982, 7981, 6874, 17292, 7972, 7928, 1377, 7951, 7963, 14949, 17469, 17282, 7958, 6872, 17293, 6626, 6631, 6876, 2]
+// Dependencies: [5, 19, 17, 6064, 1072, 9840, 7982, 7981, 6874, 17293, 7972, 7928, 1377, 7951, 7963, 14950, 17470, 17283, 7958, 6872, 17294, 6626, 6631, 6876, 2]
 // Exports: default
 
-// Module 17468 (useVideoQuestPlayerAnalytics)
+// Module 17469 (useVideoQuestPlayerAnalytics)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6626 */;
@@ -16,9 +16,9 @@ import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7958 */;
 import AnalyticsActions from "AnalyticsActions" /* 7972 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
 import AdDataUtils from "AdDataUtils" /* 7982 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 14949 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17282 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 17293 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 14950 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 17283 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 17294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import NetworkStore from "NetworkStore" /* 6064 */;
@@ -84,7 +84,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c6;
@@ -174,7 +174,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
             trackQuestEvent(obj11);
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp49) {
           closure_5 = tmp49;

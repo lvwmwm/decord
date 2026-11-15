@@ -1,10 +1,10 @@
-// Module ID: 19314
-// Function ID: 19315
+// Module ID: 19372
+// Function ID: 19373
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 19315, 5019, 5082, 5076, 5041, 5102, 5112, 1385, 8049, 1072, 21, 5170, 575, 1499, 11837, 504, 9144, 9145, 9146, 1113, 5808, 6122, 9171, 5107, 6191, 7159, 7462, 8128, 7071, 11666, 11835, 7103, 5921, 9092, 9327, 19316, 19318, 2]
+// Dependencies: [32, 5, 19, 17, 19373, 5019, 5082, 5076, 5041, 5102, 5112, 1385, 8049, 1072, 21, 5170, 575, 1499, 11836, 504, 9144, 9145, 9146, 1113, 5808, 6122, 9171, 5107, 6191, 7159, 7462, 8128, 7071, 11665, 11834, 7103, 5921, 9092, 9327, 19374, 19376, 2]
 // Exports: default
 
-// Module 19314 (EasyChannelPermissionSettings)
+// Module 19372 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 575 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5921 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
@@ -12,12 +12,12 @@ import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8049 */
 import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9144 */;
 import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9145 */;
 import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9171 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11835 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11834 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19315 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19373 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import GuildRoleStore from "GuildRoleStore" /* 5076 */;
@@ -82,7 +82,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           const items = [tmp];
           c2 = 2;
@@ -170,7 +170,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else if (!value) {
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           const intl = title(c3[23]).intl;
           const string = intl.string;
@@ -255,7 +255,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           intl4 = title(c3[23]).intl;
           show(obj9);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp54) {
           c3 = 3;
           throw tmp54;

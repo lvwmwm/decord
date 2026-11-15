@@ -1,9 +1,9 @@
-// Module ID: 15657
-// Function ID: 15658
+// Module ID: 15658
+// Function ID: 15659
 // Name: OpenNitroTriggerPoint
 // Dependencies: [5387, 10829, 2]
 
-// Module 15657 (OpenNitroTriggerPoint)
+// Module 15658 (OpenNitroTriggerPoint)
 import ExperimentConstants from "ExperimentConstants" /* 5387 */;
 import Helpers from "Helpers" /* 10829 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 16717
-// Function ID: 16718
+// Module ID: 16718
+// Function ID: 16719
 // Name: isLeftBuilderPreviewFrame
 // Dependencies: [11084, 11037, 6942, 2]
 // Exports: default
 
-// Module 16717 (isLeftBuilderPreviewFrame)
+// Module 16718 (isLeftBuilderPreviewFrame)
 import isConjureApplicationDefault from "isConjureApplication" /* 6942 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 11037 */;
 import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11084 */;

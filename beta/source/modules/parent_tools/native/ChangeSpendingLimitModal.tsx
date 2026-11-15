@@ -1,10 +1,10 @@
-// Module ID: 17160
-// Function ID: 17161
+// Module ID: 17161
+// Function ID: 17162
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 7825, 21, 5170, 575, 8129, 5783, 1113, 2664, 6831, 17161, 5869, 5868, 8074, 8076, 7048, 13484, 5790, 7510, 6191, 7181, 6855, 7097, 11659, 2]
+// Dependencies: [5, 19, 17, 7825, 21, 5170, 575, 8129, 5783, 1113, 2664, 6831, 17162, 5869, 5868, 8074, 8076, 7048, 13483, 5790, 7510, 6191, 7181, 6855, 7097, 11658, 2]
 // Exports: default
 
-// Module 17160 (ChangeSpendingLimitModal)
+// Module 17161 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import NavigatorHeader from "NavigatorHeader" /* 7097 */;
@@ -80,7 +80,7 @@ function ChangeSpendingLimitScreen(teenId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -127,7 +127,7 @@ function ChangeSpendingLimitScreen(teenId) {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           if (0 === c2) {
@@ -224,7 +224,7 @@ function ChangeSpendingLimitScreen(teenId) {
     const obj15 = { children: closure_8(Stack, obj2) };
     items[1] = closure_8(Stack2, obj4);
     const items4 = [tmp19(ModalContent2, obj15), ];
-    const ModalFooter2 = tmp2(13484).ModalFooter;
+    const ModalFooter2 = tmp2(13483).ModalFooter;
     const ButtonGroup = tmp2(6855).ButtonGroup;
     const Button2 = tmp2(5790).Button;
     if (tmp9) {
@@ -257,7 +257,7 @@ function ChangeSpendingLimitScreen(teenId) {
     const ModalContent = tmp2(8076).ModalContent;
     items6 = [closure_7(ModalContent, obj23), ];
     const obj25 = { children: closure_7(Button, obj26) };
-    const ModalFooter = tmp2(13484).ModalFooter;
+    const ModalFooter = tmp2(13483).ModalFooter;
     obj26 = { variant: "tertiary", text: intl.string(require("intl").t["ETE/oC"]), onPress: obj(6831).pop };
     Button = tmp2(5790).Button;
     intl = tmp2(1113).intl;
@@ -306,7 +306,7 @@ export default function ChangeSpendingLimitModal(teenId) {
     return obj;
   }, items);
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo, headerBackTitle: intl.string(teenId(1113).t["13/7kX"]) };
-  const Modal = teenId(11659).Modal;
+  const Modal = teenId(11658).Modal;
   intl = teenId(1113).intl;
   return closure_7(Modal, obj);
 };

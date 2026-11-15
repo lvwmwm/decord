@@ -1,16 +1,16 @@
-// Module ID: 12596
-// Function ID: 12597
+// Module ID: 12595
+// Function ID: 12596
 // Name: PortalKeyboardRenderer
-// Dependencies: [19, 1495, 21, 5231, 5357, 1625, 1377, 12597, 5358, 5347, 7493, 6961, 1497, 5361, 10193, 2]
+// Dependencies: [19, 1495, 21, 5231, 5357, 1625, 1377, 12596, 5358, 5347, 7493, 6961, 1497, 5361, 10193, 2]
 // Exports: PortalKeyboardRenderer
 
-// Module 12596 (PortalKeyboardRenderer)
+// Module 12595 (PortalKeyboardRenderer)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import native from "native" /* 5231 */;
 import useKeyboardType from "useKeyboardType" /* 5357 */;
 import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 5358 */;
-import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 12597 */;
+import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 12596 */;
 import react from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
 import size from "module_2" /* 2 */;

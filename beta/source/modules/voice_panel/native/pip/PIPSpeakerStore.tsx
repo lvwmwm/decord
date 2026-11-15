@@ -1,9 +1,9 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 15972
+// Function ID: 15973
 // Name: PIPSpeakerStore
 // Dependencies: [6931, 5925, 6844, 550, 504, 572, 2]
 
-// Module 15971 (PIPSpeakerStore)
+// Module 15972 (PIPSpeakerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import throttleDefault from "throttle" /* 550 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

@@ -1,10 +1,10 @@
-// Module ID: 11948
-// Function ID: 11949
+// Module ID: 11947
+// Function ID: 11948
 // Name: isWatchTogetherApplication
 // Dependencies: [2142, 2]
 // Exports: default
 
-// Module 11948 (isWatchTogetherApplication)
+// Module 11947 (isWatchTogetherApplication)
 import Constants from "Constants" /* 2142 */;
 import size from "module_2" /* 2 */;
 

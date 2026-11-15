@@ -1,10 +1,10 @@
-// Module ID: 14944
-// Function ID: 14945
+// Module ID: 14945
+// Function ID: 14946
 // Name: trackAppStoreOverlaySurfaceClicked
 // Dependencies: [7972, 9808, 9811, 7981, 6872, 6876, 2]
 // Exports: trackAppStoreOverlaySurfaceClickedForAdContent, trackAppStoreOverlaySurfaceClickedForQuest
 
-// Module 14944 (trackAppStoreOverlaySurfaceClicked)
+// Module 14945 (trackAppStoreOverlaySurfaceClicked)
 import QuestTypes from "QuestTypes" /* 6872 */;
 import AdCreativeType from "AdCreativeType" /* 6876 */;
 import AnalyticsActions from "AnalyticsActions" /* 7972 */;

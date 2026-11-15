@@ -146,7 +146,7 @@ let obj = function _getReactors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -262,7 +262,7 @@ obj = function _addReaction() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -325,7 +325,7 @@ obj = function _addReaction() {
                   intl3 = closure_134_0(closure_134_2[7]).intl;
                   show(obj5);
                   c8 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
               c7 = 2;
@@ -503,7 +503,7 @@ obj = function _removeAllReactions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -548,7 +548,7 @@ obj = function _removeAllReactions() {
               closure_2_12(error, () => closure_2_18(closure_1_0, closure_1_1, { isRetry: true }), obj);
             });
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c6 = 3;
@@ -582,7 +582,7 @@ obj = function _removeEmojiReactions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -634,7 +634,7 @@ obj = function _removeEmojiReactions() {
               closure_2_12(error, () => closure_2_20(closure_1_0, closure_1_1, closure_1_2, { isRetry: true }), obj);
             });
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp24) {
           c7 = 3;
@@ -723,7 +723,7 @@ obj = function _removeReaction() {
                 let obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -781,7 +781,7 @@ obj = function _removeReaction() {
                   }
                 }
                 userId = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } catch (tmp21) {
                 userId = 3;
                 throw tmp21;
@@ -833,7 +833,7 @@ obj = function _getOptimisticEmojiColors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

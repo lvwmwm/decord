@@ -1,10 +1,10 @@
-// Module ID: 11945
-// Function ID: 11946
+// Module ID: 11944
+// Function ID: 11945
 // Name: selectAndWaitForVoiceChannelJoin
 // Dependencies: [5, 5073, 6793, 2]
 // Exports: default
 
-// Module 11945 (selectAndWaitForVoiceChannelJoin)
+// Module 11944 (selectAndWaitForVoiceChannelJoin)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let obj = function _selectAndWaitForVoiceChannelJoin() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

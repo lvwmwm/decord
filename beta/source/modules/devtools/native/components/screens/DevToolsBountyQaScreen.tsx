@@ -1,10 +1,10 @@
-// Module ID: 18024
-// Function ID: 18025
+// Module ID: 18025
+// Function ID: 18026
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7952, 21, 5170, 575, 5869, 1627, 504, 6872, 7953, 14956, 9806, 5783, 7157, 7160, 7159, 7071, 12381, 17439, 7197, 6876, 2]
+// Dependencies: [5, 32, 19, 17, 7952, 21, 5170, 575, 5869, 1627, 504, 6872, 7953, 14957, 9806, 5783, 7157, 7160, 7159, 7071, 12380, 17440, 7197, 6876, 2]
 // Exports: default
 
-// Module 18024 (DevToolsBountyQaScreen)
+// Module 18025 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
@@ -62,7 +62,7 @@ export default function DevToolsBountyQaScreen() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -83,7 +83,7 @@ export default function DevToolsBountyQaScreen() {
                   closure_1_12("No dock bounty in memory. Pick a lookback window.", "bounty-qa-missing-id");
                   c2 = 0;
                   c3 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   c1 = 3;
                   c3 = 1;
@@ -131,7 +131,7 @@ export default function DevToolsBountyQaScreen() {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp26) {
           if (0 === c2) {

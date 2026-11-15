@@ -1,9 +1,9 @@
-// Module ID: 18844
-// Function ID: 18845
+// Module ID: 18845
+// Function ID: 18846
 // Name: YouBarBackground
-// Dependencies: [19, 17, 17430, 21, 5170, 575, 7137, 5747, 671, 5756, 17512, 1652, 5793, 2]
+// Dependencies: [19, 17, 17431, 21, 5170, 575, 7137, 5747, 671, 5756, 17513, 1652, 5793, 2]
 
-// Module 18844 (YouBarBackground)
+// Module 18845 (YouBarBackground)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,9 +12,9 @@ import LinearGradientDefault from "LinearGradient" /* 5747 */;
 import useToken2 from "useToken" /* 5756 */;
 import spring_spring from "spring/spring" /* 5793 */;
 import _modDef7137 from "module_7137" /* 7137 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 17512 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 17513 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 17430 */;
+import YouBarConstants from "YouBarConstants" /* 17431 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;

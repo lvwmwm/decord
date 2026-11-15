@@ -1,17 +1,17 @@
-// Module ID: 17555
-// Function ID: 17556
+// Module ID: 17556
+// Function ID: 17557
 // Name: UserSettingsGuildRoleSubscriptions
-// Dependencies: [19, 17, 21, 5170, 5783, 1113, 1187, 17556, 17557, 17558, 17561, 17562, 2]
+// Dependencies: [19, 17, 21, 5170, 5783, 1113, 1187, 17557, 17558, 17559, 17562, 17563, 2]
 // Exports: default
 
-// Module 17555 (UserSettingsGuildRoleSubscriptions)
+// Module 17556 (UserSettingsGuildRoleSubscriptions)
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5783 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 17556 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 17557 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17558 */;
-import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 17562 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 17557 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 17558 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17559 */;
+import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 17563 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const LoadingIndicatorDefault = tmp2(17561);
+const LoadingIndicatorDefault = tmp2(17562);
 function GuildRoleSubscriptionsSectionHeader() {
   let intl;
   let intl2;

@@ -1,24 +1,24 @@
-// Module ID: 19987
-// Function ID: 19988
+// Module ID: 19992
+// Function ID: 19993
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 19988, 19989, 19990, 19991, 19992, 19993, 19994, 19995, 1113, 5170, 575, 5783, 7076, 5874, 2]
+// Dependencies: [19, 17, 21, 19993, 19994, 19995, 19996, 19997, 19998, 19999, 20000, 1113, 5170, 575, 5783, 7076, 5874, 2]
 // Exports: default
 
-// Module 19987 (PresetAvatarSelect)
+// Module 19992 (PresetAvatarSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import Pressables from "Pressables" /* 7076 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 19988 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 19989 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 19990 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 19991 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 19992 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 19993 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 19994 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 19995 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 19993 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 19994 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 19995 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 19996 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 19997 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 19998 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 19999 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 20000 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;

@@ -1,16 +1,16 @@
-// Module ID: 20113
-// Function ID: 20114
+// Module ID: 20118
+// Function ID: 20119
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1072, 21, 5170, 575, 5231, 8323, 7076, 1113, 5874, 20114, 20115, 1187, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5170, 575, 5231, 8323, 7076, 1113, 5874, 20119, 20120, 1187, 2]
 
-// Module 20113 (AssetChooser)
+// Module 20118 (AssetChooser)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 5231 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import Pressables from "Pressables" /* 7076 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20115 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20120 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -59,7 +59,7 @@ class AssetChooser extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -161,7 +161,7 @@ class AssetChooser extends PureComponent {
     const tmp10 = FastImageDefault;
     const tmp4 = React4;
     if (null == source) {
-      tmp9Result = tmp9(20114);
+      tmp9Result = tmp9(20119);
     }
     items = [, ];
     const obj3 = { source: tmp9Result, style: tmp.assetImage };

@@ -1,9 +1,9 @@
-// Module ID: 12051
-// Function ID: 12052
+// Module ID: 12050
+// Function ID: 12051
 // Name: FocusedControls
-// Dependencies: [19, 17, 1072, 21, 5170, 1187, 1652, 11357, 5402, 7388, 1493, 8134, 12052, 12056, 11896, 5422, 7420, 7445, 11984, 12060, 1252, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 1187, 1652, 11357, 5402, 7388, 1493, 8134, 12051, 12055, 11895, 5422, 7420, 7445, 11983, 12059, 1252, 2]
 
-// Module 12051 (FocusedControls)
+// Module 12050 (FocusedControls)
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -13,9 +13,9 @@ import timing_timing from "timing/timing" /* 5402 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5422 */;
 import inlineStyles from "inlineStyles" /* 8134 */;
 import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11357 */;
-import RevealProvider from "RevealProvider" /* 11896 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 12052 */;
-import GlobalStatusIndicator from "GlobalStatusIndicator" /* 12056 */;
+import RevealProvider from "RevealProvider" /* 11895 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 12051 */;
+import GlobalStatusIndicator from "GlobalStatusIndicator" /* 12055 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -246,7 +246,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
   const animatedStyle = useAnimatedStyle(FocusedControlsTsx5);
   const tmp5Result = analyticsLocations(7420);
   analyticsLocations = tmp5Result(tmp5(7445).FOCUSED_VOICE_CONTROLS).analyticsLocations;
-  dependencyMap = tmp5(11984)();
+  dependencyMap = tmp5(11983)();
   const View = tmp5(1652).View;
   const tmp23 = closure_8;
   if (containerStyle == null) {
@@ -294,7 +294,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
         reveal,
         children
       };
-      tmp28Result = tmp28(tmp5(12060), obj5);
+      tmp28Result = tmp28(tmp5(12059), obj5);
     }
   }
   items7[2] = tmp28Result;

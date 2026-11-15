@@ -1,10 +1,10 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 13997
+// Function ID: 13998
 // Name: CustomTypingIndicatorUtils
 // Dependencies: [6884, 8835, 5019, 6860, 1385, 1072, 1388, 1398, 4028, 5116, 5120, 1407, 1084, 5107, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis, useCurrentCustomTypingIndicatorConfig
 
-// Module 13998 (CustomTypingIndicatorUtils)
+// Module 13997 (CustomTypingIndicatorUtils)
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;

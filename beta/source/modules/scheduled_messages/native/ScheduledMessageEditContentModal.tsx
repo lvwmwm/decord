@@ -1,10 +1,10 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 14863
+// Function ID: 14864
 // Name: ScheduledMessageEditContentModal
 // Dependencies: [5, 32, 19, 17, 5019, 21, 5170, 575, 1627, 9898, 504, 7933, 9931, 9930, 6831, 1113, 7104, 9935, 1377, 7097, 7076, 5783, 7349, 2]
 // Exports: default
 
-// Module 14862 (ScheduledMessageEditContentModal)
+// Module 14863 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -84,7 +84,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -120,7 +120,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
             arr.pop();
           }
           stateFromStores = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         stateFromStores = 3;

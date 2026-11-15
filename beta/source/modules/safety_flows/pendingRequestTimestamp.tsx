@@ -1,10 +1,10 @@
-// Module ID: 20545
-// Function ID: 20546
+// Module ID: 20550
+// Function ID: 20551
 // Name: pendingRequestTimestamp
 // Dependencies: [1113, 2960, 8476, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 20545 (pendingRequestTimestamp)
+// Module 20550 (pendingRequestTimestamp)
 import intl3 from "intl" /* 1113 */;
 import _modDef2960 from "module_2960" /* 2960 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8476 */;

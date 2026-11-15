@@ -1,10 +1,10 @@
-// Module ID: 16673
-// Function ID: 16674
+// Module ID: 16674
+// Function ID: 16675
 // Name: getFrameChannelId
 // Dependencies: [5019, 1072, 6937, 2]
 // Exports: default
 
-// Module 16673 (getFrameChannelId)
+// Module 16674 (getFrameChannelId)
 import Constants from "Constants" /* 1072 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6937 */;
 import ChannelStore from "ChannelStore" /* 5019 */;

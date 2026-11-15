@@ -1,10 +1,10 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12324
+// Function ID: 12325
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 5076, 1072, 21, 5170, 575, 504, 6933, 5406, 1113, 4026, 7459, 5783, 7415, 9123, 7315, 7159, 7070, 12326, 12322, 12332, 12312, 12334, 7071, 12335, 2]
+// Dependencies: [5, 32, 19, 17, 5076, 1072, 21, 5170, 575, 504, 6933, 5406, 1113, 4026, 7459, 5783, 7415, 9123, 7315, 7159, 7070, 12325, 12321, 12331, 12311, 12333, 7071, 12334, 2]
 // Exports: default
 
-// Module 12325 (useConjureProjectSettingsForm)
+// Module 12324 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -303,7 +303,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   handleRoleSelectionChange = undefined;
   const tmp = closure_12();
   const tmp3 = dependencyMap;
-  const tmp4 = selectedRoleIds(12326)(projectId, arg1);
+  const tmp4 = selectedRoleIds(12325)(projectId, arg1);
   ({ liveReload, isGuildCollaboration, selectedRoleIds } = tmp4);
   ({ supportsVisibility, saving, saveError, experimentalError, handleFlagChange: c2, handleRoleSelectionChange } = tmp4);
   const ensureAppInGuild = tmp4.ensureAppInGuild;
@@ -330,7 +330,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -357,7 +357,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
         } else if (1 === tmp4) {
           c2 = 0;
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -387,11 +387,11 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
             showActionSheet(obj);
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp20) {
         if (0 === c2) {
           c4 = 3;
@@ -411,11 +411,11 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   items1 = [tmp11, , , , , , , , ];
   if (isConjureManagedCopy) {
     let obj5 = { projectId };
-    tmp13Result = tmp13(tmp2(12332), obj5);
+    tmp13Result = tmp13(tmp2(12331), obj5);
     tmp15 = tmp13;
   } else {
     let obj6 = { iconURL, onIconChange: handleIconChange, name, nameError, onNameChange: handleNameChange, description, onDescriptionChange: handleDescriptionChange, disabled: tmp5 };
-    tmp13Result = tmp13(tmp6(12312).ConjureAppIdentitySection, obj6);
+    tmp13Result = tmp13(tmp6(12311).ConjureAppIdentitySection, obj6);
     tmp15 = tmp13;
   }
   items1[1] = tmp13Result;
@@ -444,7 +444,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let tmp15Result8 = null;
   if (!flag) {
     const obj9 = { projectId };
-    tmp15Result8 = tmp15(tmp2(12334), obj9);
+    tmp15Result8 = tmp15(tmp2(12333), obj9);
   }
   items1[3] = tmp15Result8;
   let tmp15Result9 = null;

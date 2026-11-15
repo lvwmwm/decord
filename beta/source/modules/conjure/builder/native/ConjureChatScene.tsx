@@ -1,10 +1,10 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 12267
+// Function ID: 12268
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 2162, 11001, 11029, 6932, 11019, 6935, 21, 5170, 575, 1499, 12269, 1627, 12270, 1641, 1705, 504, 12274, 11028, 6969, 12275, 11114, 12281, 12282, 5828, 12283, 11060, 12284, 12278, 1652, 12285, 1113, 4026, 11587, 12286, 1493, 9092, 11058, 11045, 12287, 12297, 12320, 12322, 12323, 5406, 12324, 10999, 12377, 5869, 12381, 12383, 5868, 12385, 12386, 12388, 12406, 12407, 11037, 12408, 11092, 1500, 12409, 12416, 12417, 12436, 12437, 12438, 9881, 12439, 12442, 12443, 10071, 12454, 9879, 10887, 5783, 5790, 12456, 12457, 12292, 12343, 12810, 7103, 2]
+// Dependencies: [5, 32, 19, 17, 2162, 11001, 11029, 6932, 11019, 6935, 21, 5170, 575, 1499, 12268, 1627, 12269, 1641, 1705, 504, 12273, 11028, 6969, 12274, 11114, 12280, 12281, 5828, 12282, 11060, 12283, 12277, 1652, 12284, 1113, 4026, 11586, 12285, 1493, 9092, 11058, 11045, 12286, 12296, 12319, 12321, 12322, 5406, 12323, 10999, 12376, 5869, 12380, 12382, 5868, 12384, 12385, 12387, 12405, 12406, 11037, 12407, 11092, 1500, 12408, 12415, 12416, 12435, 12436, 12437, 9881, 12438, 12441, 12442, 10071, 12453, 9879, 10887, 5783, 5790, 12455, 12456, 12291, 12342, 12809, 7103, 2]
 // Exports: default
 
-// Module 12268 (ConjureChatScene)
+// Module 12267 (ConjureChatScene)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import _modDef4026 from "module_4026" /* 4026 */;
@@ -17,14 +17,14 @@ import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 11037 */;
 import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11058 */;
 import restartFrames from "restartFrames" /* 11092 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12282 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 12285 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12324 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12377 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 12388 */;
-import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 12417 */;
-import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 12439 */;
-import openConjureShareSheetDefault from "openConjureShareSheet" /* 12443 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12281 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 12284 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12323 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12376 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 12387 */;
+import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 12416 */;
+import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 12438 */;
+import openConjureShareSheetDefault from "openConjureShareSheet" /* 12442 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -426,7 +426,7 @@ export default function ConjureChatScene(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -490,7 +490,7 @@ export default function ConjureChatScene(guildId) {
           let result = openConjureAppInstallModal(obj6);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         c4 = 3;
         throw tmp15;

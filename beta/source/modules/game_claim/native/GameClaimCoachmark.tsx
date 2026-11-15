@@ -1,18 +1,18 @@
-// Module ID: 18617
-// Function ID: 18618
+// Module ID: 18618
+// Function ID: 18619
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1072, 5016, 21, 575, 18618, 5915, 5796, 5170, 18619, 15223, 1113, 7073, 7076, 7153, 5783, 5790, 8264, 7608, 7612, 2]
+// Dependencies: [5, 19, 17, 1072, 5016, 21, 575, 18619, 5915, 5796, 5170, 18620, 15224, 1113, 7073, 7076, 7153, 5783, 5790, 8264, 7608, 7612, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 18617 (GameClaimCoachmark)
+// Module 18618 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
 import ButtonConstants from "ButtonConstants" /* 5796 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5915 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15223 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 18618 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18619 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15224 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 18619 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18620 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -40,7 +40,7 @@ const Card_Card = tmp2(7073);
 const Pressables = tmp2(7076);
 const XSmallIcon = tmp2(7153);
 const LinkExternalSmallIcon = tmp2(8264);
-const GameClaimCardStackDefault = tmp5(18618);
+const GameClaimCardStackDefault = tmp5(18619);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -135,7 +135,7 @@ const memoResult = react.memo(function GameClaimCoachmark(arg0) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -165,7 +165,7 @@ const memoResult = react.memo(function GameClaimCoachmark(arg0) {
                 return obj;
               } else {
                 c0 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp11) {
               c0 = 3;

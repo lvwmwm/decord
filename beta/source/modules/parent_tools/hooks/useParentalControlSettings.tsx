@@ -1,18 +1,18 @@
-// Module ID: 17069
-// Function ID: 17070
+// Module ID: 17070
+// Function ID: 17071
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 7827, 7587, 8475, 17070, 17073, 1196, 7569, 7260, 8473, 504, 7826, 7601, 2]
+// Dependencies: [5, 19, 7827, 7587, 8475, 17071, 17074, 1196, 7569, 7260, 8473, 504, 7826, 7601, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnlyForTeen, useDefaultGuildsRestricted, useIsParentallyControlled, useParentalControlledConsent, useParentalControlledExplicitContentSettings, useParentalControlledGoreContentSettings
 
-// Module 17069 (useParentalControlSettings)
+// Module 17070 (useParentalControlSettings)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7260 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7569 */;
 import Constants from "Constants" /* 7587 */;
 import useUserLinks from "useUserLinks" /* 8473 */;
 import useSelectedTeen from "useSelectedTeen" /* 8475 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17070 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17073 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17071 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17074 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7827 */;
@@ -126,7 +126,7 @@ export function useAllowFriendsFromMutualGuildsOnlyForTeen() {
   let controlledSetting;
   let obj = controlledSetting(8475);
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(17070).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(17071).ParentalControlledFriendSourceFlags;
   let id;
   const useControlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting;
   if (selectedTeen != null) {
@@ -168,7 +168,7 @@ export function useParentalControlledConsent(PERSONALIZATION) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -222,7 +222,7 @@ export function useParentalControlledConsent(PERSONALIZATION) {
           c4 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         let closure_3 = tmp15;
         if (0 === c4) {

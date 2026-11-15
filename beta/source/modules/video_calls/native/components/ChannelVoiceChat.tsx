@@ -1,7 +1,7 @@
 // Module ID: 11161
 // Function ID: 11162
 // Name: ChannelVoiceChat
-// Dependencies: [19, 17, 11162, 21, 5170, 575, 9953, 1627, 11168, 12, 11166, 5401, 10887, 11169, 11384, 5177, 11386, 7076, 1113, 1187, 11799, 14652, 2]
+// Dependencies: [19, 17, 11162, 21, 5170, 575, 9953, 1627, 11168, 12, 11166, 5401, 10887, 11169, 11384, 5177, 11386, 7076, 1113, 1187, 11798, 14653, 2]
 
 // Module 11161 (ChannelVoiceChat)
 import react_native from "react-native" /* 17 */;
@@ -132,10 +132,10 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   const obj10 = { accessibilityRole: "button", onPress: openVoice, accessibilityLabel: intl.string(id(1113).t["13/7kX"]), style: tmp.chatHeaderBackIconContainer, children: closure_6(Icon, obj11) };
   const PressableOpacity = tmp7(7076).PressableOpacity;
   intl = tmp7(1113).intl;
-  obj11 = { source: guild_id(11799), size: id(1187).Icon.Sizes.MEDIUM };
+  obj11 = { source: guild_id(11798), size: id(1187).Icon.Sizes.MEDIUM };
   Icon = tmp7(1187).Icon;
   items7 = [closure_6(PressableOpacity, obj10), ];
-  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(14652).ChannelTitle, { guildId: guild_id, channelId: id }) };
+  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(14653).ChannelTitle, { guildId: guild_id, channelId: id }) };
   items7[1] = closure_6(View, obj12);
   items3[4] = closure_7(View, obj9);
   items2[1] = closure_7(ChannelContainer, obj5);

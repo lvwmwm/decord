@@ -1,10 +1,10 @@
-// Module ID: 14680
-// Function ID: 14681
+// Module ID: 14681
+// Function ID: 14682
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 6932, 21, 7517, 504, 14681, 13037, 1113, 4026, 5226, 2]
+// Dependencies: [19, 6932, 21, 7517, 504, 14682, 13036, 1113, 4026, 5226, 2]
 // Exports: default
 
-// Module 14680 (useConjureAppChannelSheet)
+// Module 14681 (useConjureAppChannelSheet)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import UserUtils from "UserUtils" /* 5226 */;

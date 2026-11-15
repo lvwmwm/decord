@@ -1,10 +1,10 @@
-// Module ID: 13451
-// Function ID: 13452
+// Module ID: 13450
+// Function ID: 13451
 // Name: AcceptGuildTemplate
-// Dependencies: [19, 17, 5023, 5077, 1072, 7606, 21, 5170, 575, 6810, 7048, 1187, 13452, 1113, 38, 1627, 5078, 5783, 13454, 7181, 5790, 8285, 12, 9118, 13459, 13460, 10975, 1090, 2]
+// Dependencies: [19, 17, 5023, 5077, 1072, 7606, 21, 5170, 575, 6810, 7048, 1187, 13451, 1113, 38, 1627, 5078, 5783, 13453, 7181, 5790, 8285, 12, 9118, 13458, 13459, 10975, 1090, 2]
 // Exports: default
 
-// Module 13451 (AcceptGuildTemplate)
+// Module 13450 (AcceptGuildTemplate)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,8 +17,8 @@ import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 5078 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7048 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7606 */;
 import RolePillDefault from "RolePill" /* 10975 */;
-import InvalidLink from "InvalidLink" /* 13452 */;
-import GuildIconUploaderDefault from "GuildIconUploader" /* 13454 */;
+import InvalidLink from "InvalidLink" /* 13451 */;
+import GuildIconUploaderDefault from "GuildIconUploader" /* 13453 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -192,9 +192,9 @@ function Channels(channels) {
     if (isGuildVocalChannelType(type)) {
       tmp10Result = tmp10(9118);
     } else if (type === tmp.GUILD_CATEGORY) {
-      tmp10Result = tmp10(13459);
+      tmp10Result = tmp10(13458);
     } else {
-      tmp10Result = tmp10(13460);
+      tmp10Result = tmp10(13459);
     }
     items1 = [unpackModuleId(Icon, obj2), ];
     const items2 = [closure_0.channelName, ];

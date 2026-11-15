@@ -1,10 +1,10 @@
-// Module ID: 14001
-// Function ID: 14002
+// Module ID: 14000
+// Function ID: 14001
 // Name: CustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [32, 19, 17, 1072, 5016, 21, 1398, 1113, 4028, 13998, 5170, 575, 7420, 7445, 5000, 5003, 7668, 5420, 7388, 5755, 14002, 14003, 14004, 14005, 14006, 14007, 14008, 14009, 1187, 5783, 5790, 2]
+// Dependencies: [32, 19, 17, 1072, 5016, 21, 1398, 1113, 4028, 13997, 5170, 575, 7420, 7445, 5000, 5003, 7668, 5420, 7388, 5755, 14001, 14002, 14003, 14004, 14005, 14006, 14007, 14008, 1187, 5783, 5790, 2]
 // Exports: default
 
-// Module 14001 (CustomTypingIndicatorAnnounceActionSheet)
+// Module 14000 (CustomTypingIndicatorAnnounceActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

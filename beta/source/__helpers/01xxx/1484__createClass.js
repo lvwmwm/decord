@@ -47,7 +47,7 @@ class InternetReachability {
     };
     this._checkInternetReachability = () => {
       let catchPromise;
-      const f123238 = (arg0, arg1) => {
+      const f123257 = (arg0, arg1) => {
         closure_0 = arg1;
         cancel = function cancel() {
           return closure_0("canceled");
@@ -71,8 +71,8 @@ class InternetReachability {
         }),
         cancel
       };
-      const items = [response, promise, new Promise(f123238)];
-      new Promise(f123238);
+      const items = [response, promise, new Promise(f123257)];
+      new Promise(f123257);
       const racePromise = Promise.race(items);
       const nextPromise = racePromise.then((result) => {
         const _configuration = closure_0._configuration;

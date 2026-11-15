@@ -1,10 +1,10 @@
-// Module ID: 19086
-// Function ID: 19087
+// Module ID: 19144
+// Function ID: 19145
 // Name: useValidFilterTokens
 // Dependencies: [5227, 504, 14165, 5036, 2]
 // Exports: useValidFilterTokens, useValidOrderedFilterTokens
 
-// Module 19086 (useValidFilterTokens)
+// Module 19144 (useValidFilterTokens)
 import SearchTokenStreamerModeUtils from "SearchTokenStreamerModeUtils" /* 14165 */;
 import StreamerModeStore from "StreamerModeStore" /* 5227 */;
 import size from "module_2" /* 2 */;

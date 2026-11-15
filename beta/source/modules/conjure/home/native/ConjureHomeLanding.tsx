@@ -1,12 +1,12 @@
-// Module ID: 13065
-// Function ID: 13066
+// Module ID: 13064
+// Function ID: 13065
 // Name: ConjureHomeLanding
-// Dependencies: [5, 32, 19, 17, 11002, 21, 575, 5170, 13066, 1499, 1627, 12270, 1652, 13222, 12321, 12820, 13223, 13224, 12997, 11028, 12818, 1500, 12282, 1113, 4026, 11032, 5869, 13226, 7083, 5783, 13227, 13043, 13229, 2]
+// Dependencies: [5, 32, 19, 17, 11002, 21, 575, 5170, 13065, 1499, 1627, 12269, 1652, 13221, 12320, 12819, 13222, 13223, 12996, 11028, 12817, 1500, 12281, 1113, 4026, 11032, 5869, 13225, 7083, 5783, 13226, 13042, 13228, 2]
 // Exports: default
 
-// Module 13065 (ConjureHomeLanding)
+// Module 13064 (ConjureHomeLanding)
 import nativeDefault from "native" /* 575 */;
-import ConjureHomeCarousel from "ConjureHomeCarousel" /* 13066 */;
+import ConjureHomeCarousel from "ConjureHomeCarousel" /* 13065 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -178,12 +178,12 @@ export default function ConjureHomeLanding(focusRequest) {
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f143908 = (role) => "user" === role.role;
+        const f143970 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
           const messages = ref.getMessages(closure_0);
           const obj = ref;
-          if (messages.some(f143908)) {
+          if (messages.some(f143970)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -198,7 +198,7 @@ export default function ConjureHomeLanding(focusRequest) {
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f143908)) {
+        if (messages.some(f143970)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);
@@ -219,7 +219,7 @@ export default function ConjureHomeLanding(focusRequest) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

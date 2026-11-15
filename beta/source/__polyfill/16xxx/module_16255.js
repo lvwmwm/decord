@@ -6,9 +6,14 @@
 import _mod16241 from "module_16241" /* 16241 */;
 
 
-export default (arg0, arg1, arg2) => {
-  const compare = new _mod16241(arg0, arg2).compare;
-  new _mod16241(arg0, arg2);
-  const tmp2 = new _mod16241(arg1, arg2);
-  return compare(tmp2);
+export default (arg0, arg1) => {
+  const tmp = _mod16241(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
+    }
+  }
+  return prerelease;
 };

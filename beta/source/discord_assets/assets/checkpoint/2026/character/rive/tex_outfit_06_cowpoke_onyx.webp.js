@@ -1,8 +1,8 @@
-// Module ID: 13824
-// Function ID: 13825
+// Module ID: 13823
+// Function ID: 13824
 // Dependencies: [2]
 
-// Module 13824
+// Module 13823
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_06_cowpoke_onyx.webp.js");

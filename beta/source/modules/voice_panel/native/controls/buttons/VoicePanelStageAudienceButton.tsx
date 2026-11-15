@@ -1,15 +1,15 @@
-// Module ID: 19769
-// Function ID: 19770
+// Module ID: 19774
+// Function ID: 19775
 // Name: VoicePanelStageAudienceButton
-// Dependencies: [19, 1189, 21, 5170, 11394, 19751, 6797, 6853, 6847, 19752, 19770, 1113, 4156, 19760, 7056, 8765, 1187, 2]
+// Dependencies: [19, 1189, 21, 5170, 11394, 19756, 6797, 6853, 6847, 19757, 19775, 1113, 4156, 19765, 7056, 8765, 1187, 2]
 // Exports: default
 
-// Module 19769 (VoicePanelStageAudienceButton)
+// Module 19774 (VoicePanelStageAudienceButton)
 import NativeViewDefault from "NativeView" /* 7056 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19752 */;
-import CircleWithCutoutDefault from "CircleWithCutout" /* 19760 */;
-import openStageAudienceSheetDefault from "openStageAudienceSheet" /* 19770 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19757 */;
+import CircleWithCutoutDefault from "CircleWithCutout" /* 19765 */;
+import openStageAudienceSheetDefault from "openStageAudienceSheet" /* 19775 */;
 import react from "react" /* 19 */;
 import BadgeConstants from "BadgeConstants" /* 1189 */;
 import Fragment from "Fragment" /* 21 */;
@@ -36,7 +36,7 @@ export default function StageAudienceButton(props) {
   const wrapperSpecs = props.wrapperSpecs;
   const channelId = react.useContext(VoicePanelStateContextDefault).channelId;
   const tmp3 = closure_8();
-  const obj = channelId(19751);
+  const obj = channelId(19756);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
   const obj2 = channelId(6797);
   const canModerateRequestToSpeak = obj2.useCanModerateRequestToSpeak(channelId);

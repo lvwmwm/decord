@@ -1,13 +1,13 @@
-// Module ID: 12966
-// Function ID: 12967
+// Module ID: 12965
+// Function ID: 12966
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2186, 6932, 12480, 12967, 12968, 12280, 12347, 504, 2]
+// Dependencies: [32, 19, 2186, 6932, 12479, 12966, 12967, 12279, 12346, 504, 2]
 // Exports: useConjurePlanWidget
 
-// Module 12966 (conjurePlanWidget)
-import _mod12480 from "module_12480" /* 12480 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 12967 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12968 */;
+// Module 12965 (conjurePlanWidget)
+import _mod12479 from "module_12479" /* 12479 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 12966 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12967 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
@@ -119,19 +119,19 @@ function sampleValues(surfaces, sample_data, arg2) {
       let _String = String;
       let tmp13 = arg2[String(undefined, tmp8)];
       if (null != tmp13) {
-        let obj3 = { type: _mod12480.ResolvedValueType.MEDIA, media: size };
+        let obj3 = { type: _mod12479.ResolvedValueType.MEDIA, media: size };
         size = { url: tmp14, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
     } else {
       let obj5;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod12480.ResolvedValueType.NUMBER, value: tmp8 };
+        let obj4 = { type: _mod12479.ResolvedValueType.NUMBER, value: tmp8 };
         let tmp10 = dependencyMap;
         let tmp11 = tmp8;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod12480.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod12479.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }

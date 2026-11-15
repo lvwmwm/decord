@@ -1,15 +1,15 @@
-// Module ID: 18846
-// Function ID: 18847
+// Module ID: 18847
+// Function ID: 18848
 // Name: YouBarUser
-// Dependencies: [19, 17, 1385, 17430, 21, 5170, 575, 504, 1652, 5793, 5226, 18847, 18848, 18849, 2]
+// Dependencies: [19, 17, 1385, 17431, 21, 5170, 575, 504, 1652, 5793, 5226, 18848, 18849, 18850, 2]
 
-// Module 18846 (YouBarUser)
+// Module 18847 (YouBarUser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import spring_spring from "spring/spring" /* 5793 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import YouBarConstants from "YouBarConstants" /* 17430 */;
+import YouBarConstants from "YouBarConstants" /* 17431 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
@@ -84,8 +84,8 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
     if (null != name) {
       obj3 = { style: tmp.youButton, children: items4 };
       const obj5 = { isLargeAvatar: !isCondensed, onPress: onAvatarPress };
-      items4 = [closure_9(sharedValue(18848), obj5), ];
-      const obj6 = { style: items5, children: closure_9(sharedValue(18849), obj7) };
+      items4 = [closure_9(sharedValue(18849), obj5), ];
+      const obj6 = { style: items5, children: closure_9(sharedValue(18850), obj7) };
       items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       const View2 = tmp11(1652).View;
       obj7 = { userId: stateFromStores.id, username: name };
@@ -94,7 +94,7 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
     return tmp13(View, obj3);
   }
   const obj8 = { style: tmp.youButton, children: items6 };
-  items6 = [closure_9(sharedValue(18847), { isLarge: !isCondensed }), ];
+  items6 = [closure_9(sharedValue(18848), { isLarge: !isCondensed }), ];
   const obj9 = { style: items7, children: closure_9(View, obj10) };
   items7 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj10 = { style: tmp.placeholder };

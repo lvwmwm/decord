@@ -1,14 +1,14 @@
-// Module ID: 20127
-// Function ID: 20128
+// Module ID: 20132
+// Function ID: 20133
 // Name: RuleRow
-// Dependencies: [19, 17, 13557, 21, 5170, 575, 20128, 5783, 5756, 20130, 20125, 20122, 5790, 1113, 7071, 2]
+// Dependencies: [19, 17, 13556, 21, 5170, 575, 20133, 5783, 5756, 20135, 20130, 20127, 5790, 1113, 7071, 2]
 // Exports: default
 
-// Module 20127 (RuleRow)
+// Module 20132 (RuleRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 13557 */;
-import getActionInfo from "getActionInfo" /* 20128 */;
+import Constants from "Constants" /* 13556 */;
+import getActionInfo from "getActionInfo" /* 20133 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -85,7 +85,7 @@ export default function RuleRow(triggerType) {
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
   const obj2 = triggerType(5756);
   const token1 = obj2.useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_COLOR);
-  const obj3 = triggerType(20130);
+  const obj3 = triggerType(20135);
   const ruleInfo = obj3.getRuleInfo(triggerType, rule);
   if (null == ruleInfo) {
     return null;
@@ -94,14 +94,14 @@ export default function RuleRow(triggerType) {
     let tmp16Result;
     ({ headerText, headerSubtext, icon, descriptionText } = ruleInfo);
     if (null != rule) {
-      const tmp2Result = triggerType(20125);
+      const tmp2Result = triggerType(20130);
       const ruleActionsInOrder = tmp2Result.getRuleActionsInOrder(rule);
       mapped = ruleActionsInOrder.map((actionType) => {
         const obj = { actionType: actionType.type, action: actionType, triggerType };
         return hasOwnProperty(ActionPill, obj, actionType.type);
       });
     } else {
-      const tmp2Result2 = triggerType(20122);
+      const tmp2Result2 = triggerType(20127);
       const availableActionTypes = tmp2Result2.getAvailableActionTypes(triggerType);
       mapped = availableActionTypes.map((actionType) => {
         const obj = { actionType, triggerType };

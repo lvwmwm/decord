@@ -1,10 +1,10 @@
-// Module ID: 18477
-// Function ID: 18478
+// Module ID: 18478
+// Function ID: 18479
 // Name: useMessagesScrollToTop
-// Dependencies: [19, 5171, 5346, 11682, 1500, 2]
+// Dependencies: [19, 5171, 5346, 11681, 1500, 2]
 // Exports: default
 
-// Module 18477 (useMessagesScrollToTop)
+// Module 18478 (useMessagesScrollToTop)
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import size from "module_2" /* 2 */;

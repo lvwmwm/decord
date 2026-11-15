@@ -1,9 +1,9 @@
-// Module ID: 11461
-// Function ID: 11462
+// Module ID: 11460
+// Function ID: 11461
 // Name: IgnoreConfirmationActionSheet
-// Dependencies: [32, 19, 17, 5019, 1385, 7586, 11459, 1072, 21, 5170, 575, 8860, 1113, 5893, 7159, 7071, 1187, 1627, 7420, 7445, 504, 1252, 8856, 5420, 5424, 7196, 5783, 6205, 8875, 5406, 11460, 2118, 1260, 5790, 7585, 2185, 5866, 2]
+// Dependencies: [32, 19, 17, 5019, 1385, 7586, 11458, 1072, 21, 5170, 575, 8860, 1113, 5893, 7159, 7071, 1187, 1627, 7420, 7445, 504, 1252, 8856, 5420, 5424, 7196, 5783, 6205, 8875, 5406, 11459, 2118, 1260, 5790, 7585, 2185, 5866, 2]
 
-// Module 11461 (IgnoreConfirmationActionSheet)
+// Module 11460 (IgnoreConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import UserStore from "UserStore" /* 1385 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11459 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11458 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -260,7 +260,7 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
           obj.track(unpackModuleId.USER_REMEDIATION_ACTION, obj2);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(11460, dependencyMap.paths);
+          const tmp3 = asyncRequire(11459, dependencyMap.paths);
           const obj3 = { userId, channelId, onBlock: dependencyMap, onIgnore: _slicedToArray, onSuccess: react, impressionName: discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION };
           openLazy(tmp3, React4, obj3, "replaceTopSheet");
         },

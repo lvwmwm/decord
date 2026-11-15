@@ -1,13 +1,13 @@
-// Module ID: 11578
-// Function ID: 11579
+// Module ID: 11577
+// Function ID: 11578
 // Name: useSafeAreaAvoidingInputs
-// Dependencies: [5, 19, 1493, 575, 11579, 7051, 2]
+// Dependencies: [5, 19, 1493, 575, 11578, 7051, 2]
 // Exports: default
 
-// Module 11578 (useSafeAreaAvoidingInputs)
+// Module 11577 (useSafeAreaAvoidingInputs)
 import nativeDefault from "native" /* 575 */;
 import useKeyboardDuration from "useKeyboardDuration" /* 7051 */;
-import ViewMeasureUtils from "ViewMeasureUtils" /* 11579 */;
+import ViewMeasureUtils from "ViewMeasureUtils" /* 11578 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _calculateScrollOffset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let obj = function _calculateScrollOffset() {
                   return { value: Number.MAX_SAFE_INTEGER, done: true };
                 } else {
                   c6 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             }
@@ -168,7 +168,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -289,7 +289,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp31) {
         c3 = 3;
         throw tmp31;

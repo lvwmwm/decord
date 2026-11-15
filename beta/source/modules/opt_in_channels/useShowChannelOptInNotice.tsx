@@ -1,10 +1,10 @@
-// Module ID: 11530
-// Function ID: 11531
+// Module ID: 11529
+// Function ID: 11530
 // Name: useShowChannelOptInNotice
 // Dependencies: [6863, 1072, 5026, 6973, 504, 7494, 2]
 // Exports: default
 
-// Module 11530 (useShowChannelOptInNotice)
+// Module 11529 (useShowChannelOptInNotice)
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 5026 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;

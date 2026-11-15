@@ -1,10 +1,10 @@
-// Module ID: 13536
-// Function ID: 13537
+// Module ID: 13535
+// Function ID: 13536
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1385, 5084, 1072, 21, 5170, 8538, 5753, 1252, 13535, 5869, 1113, 6194, 5783, 6205, 10302, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 5084, 1072, 21, 5170, 8538, 5753, 1252, 13534, 5869, 1113, 6194, 5783, 6205, 10302, 2]
 // Exports: default
 
-// Module 13536 (GuildEnableCommunicationAlert)
+// Module 13535 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import CountDownDefault from "CountDown" /* 10302 */;
@@ -69,7 +69,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
             intl = tmp3(c2[14]).intl;
             open("GUILD_ENABLE_COMMUNICATION_SUCCESS", obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c2 = 3;

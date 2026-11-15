@@ -1,10 +1,10 @@
-// Module ID: 17943
-// Function ID: 17944
+// Module ID: 17944
+// Function ID: 17945
 // Name: openBuildOverridesSettings
 // Dependencies: [8536, 5406, 6831, 7668, 2]
 // Exports: openBuildOverridesSettings
 
-// Module 17943 (openBuildOverridesSettings)
+// Module 17944 (openBuildOverridesSettings)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import openUserSettings from "openUserSettings" /* 7668 */;

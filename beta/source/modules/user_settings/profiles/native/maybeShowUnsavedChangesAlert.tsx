@@ -1,10 +1,10 @@
-// Module ID: 11580
-// Function ID: 11581
+// Module ID: 11579
+// Function ID: 11580
 // Name: maybeShowUnsavedChangesAlert
-// Dependencies: [5, 32, 19, 21, 6124, 6128, 1113, 5355, 11581, 5406, 6123, 2]
+// Dependencies: [5, 32, 19, 21, 6124, 6128, 1113, 5355, 11580, 5406, 6123, 2]
 // Exports: default
 
-// Module 11580 (maybeShowUnsavedChangesAlert)
+// Module 11579 (maybeShowUnsavedChangesAlert)
 import intl5 from "intl" /* 1113 */;
 import AlertModal2 from "AlertModal" /* 6128 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -43,7 +43,7 @@ function UnsavedChangesSavePromptAlert(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -94,7 +94,7 @@ function UnsavedChangesSavePromptAlert(arg0) {
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp24) {
           closure_2 = tmp24;
@@ -156,7 +156,7 @@ export default function maybeShowUnsavedChangesAlert(onReset) {
   if (onReset.hasUnsavedChanges) {
     let obj = onReset(5355);
     obj.dismissKeyboard();
-    const obj2 = onReset(11581);
+    const obj2 = onReset(11580);
     if (obj2.getIsUserProfileMobileSavePromptEnabled(tmp)) {
       const tmp7Result = onContinue(5406);
       tmp7Result.hideActionSheet();

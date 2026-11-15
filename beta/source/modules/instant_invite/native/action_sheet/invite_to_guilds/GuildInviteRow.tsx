@@ -1,14 +1,14 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15083
+// Function ID: 15084
 // Name: GuildInviteRow
-// Dependencies: [19, 17, 15078, 7989, 21, 15077, 9317, 7053, 5783, 1113, 7071, 2]
+// Dependencies: [19, 17, 15079, 7989, 21, 15078, 9317, 7053, 5783, 1113, 7071, 2]
 
-// Module 15082 (GuildInviteRow)
+// Module 15083 (GuildInviteRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 7989 */;
-import GuildInviteUtils from "GuildInviteUtils" /* 15077 */;
-import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 15078 */;
+import GuildInviteUtils from "GuildInviteUtils" /* 15078 */;
+import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 15079 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

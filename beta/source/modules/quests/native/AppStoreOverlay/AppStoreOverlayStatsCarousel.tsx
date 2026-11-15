@@ -1,18 +1,18 @@
-// Module ID: 14933
-// Function ID: 14934
+// Module ID: 14934
+// Function ID: 14935
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 575, 5170, 14934, 1113, 14935, 5783, 1377, 5452, 7972, 7981, 2]
+// Dependencies: [19, 17, 21, 575, 5170, 14935, 1113, 14936, 5783, 1377, 5452, 7972, 7981, 2]
 // Exports: default
 
-// Module 14933 (AppStoreOverlayStatsCarousel)
+// Module 14934 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import AnalyticsActions from "AnalyticsActions" /* 7972 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14934 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14935 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14935 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14936 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

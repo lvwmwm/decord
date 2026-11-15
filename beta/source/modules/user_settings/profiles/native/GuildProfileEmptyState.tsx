@@ -1,15 +1,15 @@
-// Module ID: 16913
-// Function ID: 16914
+// Module ID: 16914
+// Function ID: 16915
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 5170, 16914, 5783, 1113, 5790, 14544, 2118, 2]
+// Dependencies: [5, 19, 17, 21, 5170, 16915, 5783, 1113, 5790, 14545, 2118, 2]
 // Exports: default
 
-// Module 16913 (GuildProfileEmptyState)
+// Module 16914 (GuildProfileEmptyState)
 import intl5 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import components_Button_Button from "components/Button/Button" /* 5790 */;
-import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 16914 */;
+import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 16915 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -64,7 +64,7 @@ export default function GuildProfileEmptyState() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ export default function GuildProfileEmptyState() {
             const _default = value.default;
             _default.openCreateGuildModal();
             c0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           c0 = 3;
@@ -120,7 +120,7 @@ export default function GuildProfileEmptyState() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -150,7 +150,7 @@ export default function GuildProfileEmptyState() {
             const _default = value.default;
             const result = _default.openGuildJoinServerScreen();
             c0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           c0 = 3;

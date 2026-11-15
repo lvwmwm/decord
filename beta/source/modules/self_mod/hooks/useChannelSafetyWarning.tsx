@@ -1,10 +1,10 @@
-// Module ID: 11432
-// Function ID: 11433
+// Module ID: 11431
+// Function ID: 11432
 // Name: useChannelSafetyWarning
 // Dependencies: [10955, 504, 2]
 // Exports: useChannelSafetyWarning
 
-// Module 11432 (useChannelSafetyWarning)
+// Module 11431 (useChannelSafetyWarning)
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10955 */;
 import size from "module_2" /* 2 */;
 

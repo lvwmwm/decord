@@ -1,27 +1,27 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14556
+// Function ID: 14557
 // Name: HeartIllocon
-// Dependencies: [19, 21, 14556, 14557, 14558, 7168, 5874, 2]
+// Dependencies: [19, 21, 14557, 14558, 14559, 7168, 5874, 2]
 // Exports: HeartIllocon
 
-// Module 14555 (HeartIllocon)
+// Module 14556 (HeartIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import react_native from "react-native" /* 7168 */;
-import _modDef14556 from "module_14556" /* 14556 */;
 import _modDef14557 from "module_14557" /* 14557 */;
 import _modDef14558 from "module_14558" /* 14558 */;
+import _modDef14559 from "module_14559" /* 14559 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14556 };
+let obj2 = { uri: _modDef14557 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef14557 };
-({ uri: _modDef14557 });
-obj[3] = { uri: _modDef14558 };
+obj[2] = { uri: _modDef14558 };
 ({ uri: _modDef14558 });
+obj[3] = { uri: _modDef14559 };
+({ uri: _modDef14559 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/HeartIllocon.native.tsx");
 

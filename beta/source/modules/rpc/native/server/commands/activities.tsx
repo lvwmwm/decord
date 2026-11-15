@@ -1,18 +1,18 @@
-// Module ID: 16703
-// Function ID: 16704
+// Module ID: 16704
+// Function ID: 16705
 // Name: commands/activities
-// Dependencies: [5, 6615, 1072, 8042, 16645, 9017, 16664, 9447, 9231, 9441, 6937, 11037, 8324, 8059, 11921, 6612, 2]
+// Dependencies: [5, 6615, 1072, 8042, 16646, 9017, 16665, 9447, 9231, 9441, 6937, 11037, 8324, 8059, 11920, 6612, 2]
 
-// Module 16703 (commands/activities)
+// Module 16704 (commands/activities)
 import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9231 */;
 import RPCErrorDefault from "RPCError" /* 9447 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 16664 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 16665 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 6615 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16645 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16646 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -84,7 +84,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

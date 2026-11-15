@@ -1,10 +1,10 @@
-// Module ID: 16808
-// Function ID: 16809
+// Module ID: 16809
+// Function ID: 16810
 // Name: HexagonCampaignAnalytics
 // Dependencies: [5, 19, 5195, 1072, 7972, 6876, 7981, 7928, 1252, 2]
 // Exports: trackHexagonCampaignContentClicked, trackHexagonCampaignContentViewed, trackHexagonCampaignPerkAction, useTrackHexagonCampaignContentViewed
 
-// Module 16808 (HexagonCampaignAnalytics)
+// Module 16809 (HexagonCampaignAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AdCreativeType from "AdCreativeType" /* 6876 */;
@@ -38,7 +38,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
               obj5.sourceQuestContent = sourceQuestContent;
               trackAdContentEvent(obj5);
               c7 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp12) {

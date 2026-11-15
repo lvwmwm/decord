@@ -1,10 +1,10 @@
-// Module ID: 15425
-// Function ID: 15426
+// Module ID: 15426
+// Function ID: 15427
 // Name: EmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 5018, 8826, 2162, 502, 5019, 5906, 5112, 1385, 10270, 7990, 572, 8825, 8498, 8707, 1113, 5808, 15426, 2]
+// Dependencies: [32, 17, 5018, 8826, 2162, 502, 5019, 5906, 5112, 1385, 10270, 7990, 572, 8825, 8498, 8707, 1113, 5808, 15427, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 15425 (EmbeddedActivityInviteEmbed)
+// Module 15426 (EmbeddedActivityInviteEmbed)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl6 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import utils_ChannelUtils from "utils/ChannelUtils" /* 8707 */;
 import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8825 */;
 import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8826 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10270 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15426 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15427 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;

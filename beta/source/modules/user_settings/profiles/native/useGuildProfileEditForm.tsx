@@ -1,10 +1,10 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 16912
+// Function ID: 16913
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8835, 7881, 5082, 5041, 6860, 1385, 1072, 5195, 504, 13566, 5014, 11697, 16912, 11693, 5198, 7254, 16808, 6872, 16809, 6611, 1113, 8842, 2]
+// Dependencies: [109, 5, 19, 8835, 7881, 5082, 5041, 6860, 1385, 1072, 5195, 504, 13565, 5014, 11696, 16913, 11692, 5198, 7254, 16809, 6872, 16810, 6611, 1113, 8842, 2]
 // Exports: default
 
-// Module 16911 (useGuildProfileEditForm)
+// Module 16912 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1072 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
 import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8835 */;
@@ -141,7 +141,7 @@ export default function useGuildProfileEditForm() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -240,7 +240,7 @@ export default function useGuildProfileEditForm() {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

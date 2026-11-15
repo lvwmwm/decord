@@ -1,10 +1,10 @@
-// Module ID: 18251
-// Function ID: 18252
+// Module ID: 18252
+// Function ID: 18253
 // Name: useCollectiblesShopCollection
 // Dependencies: [19, 9701, 7830, 8898, 9702, 504, 9700, 9703, 2]
 // Exports: default
 
-// Module 18251 (useCollectiblesShopCollection)
+// Module 18252 (useCollectiblesShopCollection)
 import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9702 */;
 import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9703 */;
 import react from "react" /* 19 */;

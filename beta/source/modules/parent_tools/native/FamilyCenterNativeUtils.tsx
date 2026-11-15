@@ -1,16 +1,16 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 13619
+// Function ID: 13620
 // Name: FamilyCenterNativeUtils
-// Dependencies: [11540, 7825, 1072, 1252, 7826, 6831, 13621, 2118, 2]
+// Dependencies: [11539, 7825, 1072, 1252, 7826, 6831, 13620, 2118, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 13620 (FamilyCenterNativeUtils)
+// Module 13619 (FamilyCenterNativeUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7826 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11540 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11539 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7825 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export function handleFamilyCenterQRCodeScan(pathname, FamilyCenterQRCodeScan) {
     obj3.setPendingConnection(match[1], match[2]);
     const obj5 = { userId: match[1], linkCode: match[2] };
     const obj4 = ModalActionCreatorsDefault;
-    obj4.pushLazy(asyncRequire(13621, dependencyMap.paths), obj5, c7);
+    obj4.pushLazy(asyncRequire(13620, dependencyMap.paths), obj5, c7);
   }
 }
 export function resumeFamilyCenterConnection() {
@@ -46,7 +46,7 @@ export function resumeFamilyCenterConnection() {
     const obj4 = { userId: null, linkCode: null };
     ({ teenId: obj3.userId, linkCode: obj3.linkCode } = pendingConnection);
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(13621, dependencyMap.paths), obj4, c7);
+    obj2.pushLazy(asyncRequire(13620, dependencyMap.paths), obj4, c7);
     flag = true;
   }
   return flag;

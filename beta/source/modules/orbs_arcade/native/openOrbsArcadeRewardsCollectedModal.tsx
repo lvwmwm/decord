@@ -1,10 +1,10 @@
-// Module ID: 17391
-// Function ID: 17392
+// Module ID: 17392
+// Function ID: 17393
 // Name: openOrbsArcadeRewardsCollectedModal
-// Dependencies: [5, 5406, 6831, 17392, 2118, 2]
+// Dependencies: [5, 5406, 6831, 17393, 2118, 2]
 // Exports: closeOrbsArcadeRewardsCollectedModal, openOrbsArcadeRewardsCollectedModal
 
-// Module 17391 (openOrbsArcadeRewardsCollectedModal)
+// Module 17392 (openOrbsArcadeRewardsCollectedModal)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

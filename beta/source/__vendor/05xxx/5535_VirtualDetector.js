@@ -96,7 +96,7 @@ export function VirtualDetector(children) {
           if (obj.gesture.config.shouldUseReanimatedDetector) {
             setMode(children(register[4]).InterceptingDetectorMode.REANIMATED);
           }
-          obj = { viewTag: tmp, handlerTags, methods: obj.gesture.detectorCallbacks, viewRef: "a", userSelect: false, touchAction: false, enableContextMenu: false };
+          obj = { viewTag: tmp, handlerTags, methods: obj.gesture.detectorCallbacks, viewRef: "a", userSelect: "Array", touchAction: "KGZ", enableContextMenu: "$ZodPromise" };
           ({ userSelect: obj.userSelect, touchAction: obj.touchAction, enableContextMenu: obj.enableContextMenu } = obj);
           register(obj);
           return () => {

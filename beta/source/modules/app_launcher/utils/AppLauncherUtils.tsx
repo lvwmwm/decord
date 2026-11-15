@@ -1,7 +1,7 @@
 // Module ID: 9884
 // Function ID: 9885
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9885, 2140, 12651, 1072, 6199, 5175, 1113, 2148, 5831, 6971, 5838, 1377, 2116, 5839, 10461, 7933, 7745, 6122, 1411, 11679, 12687, 7809, 11933, 2]
+// Dependencies: [109, 5, 9885, 2140, 12650, 1072, 6199, 5175, 1113, 2148, 5831, 6971, 5838, 1377, 2116, 5839, 10461, 7933, 7745, 6122, 1411, 11678, 12686, 7809, 11932, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isConjureAppWithoutIcon, isPartnerApplication, isPromotedApplication, isRealApplication
 
 // Module 9884 (AppLauncherUtils)
@@ -17,14 +17,14 @@ import getPlatformDefault from "getPlatform" /* 5838 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6199 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6971 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7809 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11679 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11933 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12687 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11678 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11932 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12686 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9885 */;
 import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import AppLauncherStore from "AppLauncherStore" /* 12651 */;
+import AppLauncherStore from "AppLauncherStore" /* 12650 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -198,7 +198,7 @@ export function executeAppLauncherCommand(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -274,7 +274,7 @@ export function executeAppLauncherCommand(arg0) {
           }
           maxSizeCallback = 0;
           commandOrigin = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp37) {
         commandTargetId = tmp37;

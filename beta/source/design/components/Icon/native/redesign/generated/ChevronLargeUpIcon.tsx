@@ -1,14 +1,14 @@
-// Module ID: 15797
-// Function ID: 15798
+// Module ID: 15798
+// Function ID: 15799
 // Name: ChevronLargeUpIcon
-// Dependencies: [19, 21, 575, 5873, 15798, 2]
+// Dependencies: [19, 21, 575, 5873, 15799, 2]
 // Exports: ChevronLargeUpIcon
 
-// Module 15797 (ChevronLargeUpIcon)
+// Module 15798 (ChevronLargeUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 15798 */;
+import AssetRegistry from "AssetRegistry" /* 15799 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

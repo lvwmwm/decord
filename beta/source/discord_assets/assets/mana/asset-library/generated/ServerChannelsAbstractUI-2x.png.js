@@ -1,8 +1,8 @@
-// Module ID: 15498
-// Function ID: 15499
+// Module ID: 15499
+// Function ID: 15500
 // Dependencies: [2]
 
-// Module 15498
+// Module 15499
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerChannelsAbstractUI-2x.png.js");

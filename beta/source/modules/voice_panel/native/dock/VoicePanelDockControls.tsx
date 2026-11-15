@@ -1,9 +1,9 @@
-// Module ID: 19645
-// Function ID: 19646
+// Module ID: 18892
+// Function ID: 18893
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 5019, 2130, 6963, 11413, 1072, 21, 5170, 575, 504, 12168, 7631, 5756, 5408, 8131, 1113, 9353, 12169, 6793, 9989, 14374, 11394, 19643, 19646, 19647, 19649, 2]
+// Dependencies: [19, 17, 5019, 2130, 6963, 11412, 1072, 21, 5170, 575, 504, 12167, 7631, 5756, 5408, 8131, 1113, 9353, 12168, 6793, 9989, 14375, 11394, 18890, 18893, 18914, 18917, 2]
 
-// Module 19645 (VoicePanelDockControls)
+// Module 18892 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 575 */;
@@ -14,12 +14,12 @@ import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators"
 import IconButton2 from "IconButton" /* 8131 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9989 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 12168 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14374 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19643 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 19646 */;
-import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 19649 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11412 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 12167 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14375 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 18890 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 18893 */;
+import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 18917 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
@@ -140,7 +140,7 @@ const memoResult = react.memo(function VoicePanelDockControls(measureGlowOffset)
   const tmp8 = authStore;
   if (obj.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK)) {
     const obj3 = { measureGlowOffset };
-    tmp10Result = tmp10(tmp2(19647), obj3);
+    tmp10Result = tmp10(tmp2(18914), obj3);
     tmp14 = tmp10;
   } else {
     const obj4 = { measureGlowOffset, hideWhilePressed: true, style: items1, children: React4(DockMuteButton, obj6) };

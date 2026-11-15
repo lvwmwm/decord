@@ -1,8 +1,8 @@
-// Module ID: 13892
-// Function ID: 13893
+// Module ID: 13891
+// Function ID: 13892
 // Dependencies: [2]
 
-// Module 13892
+// Module 13891
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_11_deviantTail_smoke_idle_spritesheet.webp.js");

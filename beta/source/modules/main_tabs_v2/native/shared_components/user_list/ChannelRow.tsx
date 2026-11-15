@@ -1,7 +1,7 @@
 // Module ID: 10952
 // Function ID: 10953
 // Name: ChannelRow
-// Dependencies: [19, 17, 5019, 5041, 6930, 5112, 1385, 10878, 6864, 21, 5170, 575, 504, 5808, 10953, 13687, 8764, 8756, 5783, 4992, 2166, 7070, 7071, 2]
+// Dependencies: [19, 17, 5019, 5041, 6930, 5112, 1385, 10878, 6864, 21, 5170, 575, 504, 5808, 10953, 13686, 8764, 8756, 5783, 4992, 2166, 7070, 7071, 2]
 
 // Module 10952 (ChannelRow)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import useChannelName from "useChannelName" /* 5808 */;
 import ReadStateConstants from "ReadStateConstants" /* 6864 */;
 import UserRowConstants from "UserRowConstants" /* 10878 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10953 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 13687 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 13686 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import GuildStore from "GuildStore" /* 5041 */;

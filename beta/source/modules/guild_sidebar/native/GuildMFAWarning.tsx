@@ -1,10 +1,10 @@
-// Module ID: 18626
-// Function ID: 18627
+// Module ID: 18627
+// Function ID: 18628
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1072, 21, 5170, 575, 5915, 2185, 2118, 5866, 7076, 5874, 18627, 5783, 1113, 1187, 2]
+// Dependencies: [5, 19, 1072, 21, 5170, 575, 5915, 2185, 2118, 5866, 7076, 5874, 18628, 5783, 1113, 1187, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 18626 (GuildMFAWarning)
+// Module 18627 (GuildMFAWarning)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5783 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5915 */;
 import Pressables from "Pressables" /* 7076 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18627 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18628 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -45,7 +45,7 @@ let obj = function _handlePress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -79,7 +79,7 @@ let obj = function _handlePress() {
           obj = closure_129_1(closure_129_2[9]);
           obj.openURL(articleURL.getArticleURL(closure_129_4.SETTING_UP_TWO_FACTOR));
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp16) {
         c3 = 3;

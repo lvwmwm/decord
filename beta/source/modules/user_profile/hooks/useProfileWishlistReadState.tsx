@@ -1,12 +1,12 @@
-// Module ID: 15296
-// Function ID: 15297
+// Module ID: 15297
+// Function ID: 15298
 // Name: useProfileWishlistReadState
-// Dependencies: [32, 19, 9588, 7881, 15277, 504, 7893, 15297, 2]
+// Dependencies: [32, 19, 9588, 7881, 15278, 504, 7893, 15298, 2]
 // Exports: default
 
-// Module 15296 (useProfileWishlistReadState)
+// Module 15297 (useProfileWishlistReadState)
 import ProfileReadStateSection from "ProfileReadStateSection" /* 7893 */;
-import ProfileReadStateActionCreators from "ProfileReadStateActionCreators" /* 15297 */;
+import ProfileReadStateActionCreators from "ProfileReadStateActionCreators" /* 15298 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import WishlistStore from "WishlistStore" /* 9588 */;

@@ -1,9 +1,9 @@
-// Module ID: 17506
-// Function ID: 17507
+// Module ID: 17507
+// Function ID: 17508
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 32, 19, 17, 7955, 1083, 21, 5170, 575, 9805, 504, 9806, 7457, 1113, 7451, 17507, 17508, 8131, 12423, 15041, 5783, 2]
+// Dependencies: [5, 32, 19, 17, 7955, 1083, 21, 5170, 575, 9805, 504, 9806, 7457, 1113, 7451, 17508, 17509, 8131, 12422, 15042, 5783, 2]
 
-// Module 17506 (MobileQuestPreviewControlBar)
+// Module 17507 (MobileQuestPreviewControlBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -113,7 +113,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -154,7 +154,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp24) {
           refreshQuest = tmp24;
           if (0 === v0) {
@@ -182,7 +182,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -223,7 +223,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp24) {
           refreshQuest = tmp24;
           if (0 === v0) {
@@ -251,7 +251,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp25) {
           refreshQuest = tmp25;
           if (0 === v0) {

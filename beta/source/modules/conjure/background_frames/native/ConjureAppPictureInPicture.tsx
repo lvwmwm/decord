@@ -1,19 +1,19 @@
-// Module ID: 19530
-// Function ID: 19531
+// Module ID: 19588
+// Function ID: 19589
 // Name: ConjureAppPictureInPicture
-// Dependencies: [19, 17, 6934, 5041, 1072, 19405, 6935, 11396, 21, 5127, 5170, 575, 19529, 9451, 504, 7053, 5783, 14818, 12148, 8777, 7424, 12020, 19531, 16716, 1652, 14662, 5408, 5452, 1705, 5402, 5793, 1113, 4026, 5231, 12469, 12473, 2]
+// Dependencies: [19, 17, 6934, 5041, 1072, 19463, 6935, 11396, 21, 5127, 5170, 575, 19587, 9451, 504, 7053, 5783, 14819, 12147, 8777, 7424, 12019, 19589, 16717, 1652, 14663, 5408, 5452, 1705, 5402, 5793, 1113, 4026, 5231, 12468, 12472, 2]
 
-// Module 19530 (ConjureAppPictureInPicture)
+// Module 19588 (ConjureAppPictureInPicture)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
 import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9451 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11396 */;
-import conjureFrameSound from "conjureFrameSound" /* 14818 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19405 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19529 */;
-import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19531 */;
+import conjureFrameSound from "conjureFrameSound" /* 14819 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19463 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19587 */;
+import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19589 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6934 */;
 import GuildStore from "GuildStore" /* 5041 */;
@@ -74,7 +74,7 @@ function SoundBadge(frame) {
   if (obj.showsFrameSoundToggle(frame)) {
     let VoiceNormalIcon;
     if (frame.data.userMuted) {
-      VoiceNormalIcon = tmp2(12148).VoiceXIcon;
+      VoiceNormalIcon = tmp2(12147).VoiceXIcon;
     } else {
       VoiceNormalIcon = tmp2(8777).VoiceNormalIcon;
     }

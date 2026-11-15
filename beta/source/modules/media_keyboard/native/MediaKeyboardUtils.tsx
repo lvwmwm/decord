@@ -1,7 +1,7 @@
 // Module ID: 10681
 // Function ID: 10682
 // Name: MediaKeyboardUtils
-// Dependencies: [5, 1194, 5019, 7810, 5073, 8310, 1623, 1072, 8042, 8312, 9901, 8321, 8323, 8059, 1252, 8324, 8313, 1377, 5127, 10682, 1108, 10709, 6185, 14283, 11263, 12, 2]
+// Dependencies: [5, 1194, 5019, 7810, 5073, 8310, 1623, 1072, 8042, 8312, 9901, 8321, 8323, 8059, 1252, 8324, 8313, 1377, 5127, 10682, 1108, 10709, 6185, 14284, 11263, 12, 2]
 // Exports: addAttachmentForCommand, addImagesFromPicker, animatedIndexThreshold, cropResultToUploadItem, getMediaKeyboardDraftType, handleCameraDialog, handleSelectGift, handleSelectThread, handleViewAllDialog, mediaNodeToUploadItem
 
 // Module 10681 (MediaKeyboardUtils)
@@ -43,7 +43,7 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const DeviceUtils = tmp(5127);
-const f99441 = (item) => {
+const f99457 = (item) => {
   obj = { origin };
   const merged = Object.assign(item);
   return obj;
@@ -67,7 +67,7 @@ let obj = function _handleLimitedPickerDialog() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -115,7 +115,7 @@ let obj = function _handleLimitedPickerDialog() {
         } else {
           tmp();
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         c4 = 3;
@@ -152,7 +152,7 @@ obj = function _handleAttachFile() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -280,7 +280,7 @@ obj = function _handleAttachFile() {
             const tmp8 = c5(closure_7);
           }
           v32 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         v32 = 3;
@@ -362,7 +362,7 @@ function addImagesFromPicker(id, items, IMAGE_PICKER) {
       }
       return tmp2;
     });
-    const mapped = found.map(f99441);
+    const mapped = found.map(f99457);
     const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
     const obj3 = UploadAttachmentActionCreatorsDefault;
     obj3.addFiles(obj2);
@@ -648,7 +648,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f99441);
+            const mapped = found.map(f99457);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -705,7 +705,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f99441);
+            const mapped = found.map(f99457);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -859,7 +859,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f99441);
+            const mapped = found.map(f99457);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -1116,7 +1116,7 @@ export function handleSelectThread(channel, chatInput) {
       const current2 = chatInput.current;
       current2.blur();
     }
-    const tmp7Result = tmp7(14283);
+    const tmp7Result = tmp7(14284);
     const result = tmp7Result.navigateToThreadCreation(channel, "Plus Button");
   }
 }

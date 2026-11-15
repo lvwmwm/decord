@@ -26,7 +26,7 @@ let c1;
 let c2;
 let c3;
 [tmp2, tmp3, tmp4, tmp5, tmp6] = items;
-function withSpring(point2, Reanimated3DefaultSpringConfig, arg2, BalanceCounterTsx1) {
+function withSpring(channelDockHeight, Reanimated3DefaultSpringConfig, arg2, BalanceCounterTsx1) {
   let tmp3;
   let str = arg2;
   if (arg2 === undefined) {
@@ -47,7 +47,7 @@ function withSpring(point2, Reanimated3DefaultSpringConfig, arg2, BalanceCounter
   } else {
     tmp3 = c1;
   }
-  return _undefined2(point2, tmp3, BalanceCounterTsx1);
+  return _undefined2(channelDockHeight, tmp3, BalanceCounterTsx1);
 }
 const items1 = [tmp3, tmp4, tmp5, tmp6];
 withSpring.__closure = items1;

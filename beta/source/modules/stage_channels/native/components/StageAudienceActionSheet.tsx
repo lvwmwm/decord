@@ -1,10 +1,10 @@
-// Module ID: 12087
-// Function ID: 12088
+// Module ID: 12086
+// Function ID: 12087
 // Name: StageAudienceActionSheet
-// Dependencies: [32, 19, 17, 5019, 5082, 21, 5170, 575, 12088, 7462, 1113, 7420, 504, 6212, 8047, 7071, 1187, 8854, 6191, 10038, 7195, 10075, 8131, 12084, 7153, 5783, 4156, 6797, 6853, 12089, 12091, 7459, 7415, 7390, 7159, 7445, 2]
+// Dependencies: [32, 19, 17, 5019, 5082, 21, 5170, 575, 12087, 7462, 1113, 7420, 504, 6212, 8047, 7071, 1187, 8854, 6191, 10038, 7195, 10075, 8131, 12083, 7153, 5783, 4156, 6797, 6853, 12088, 12090, 7459, 7415, 7390, 7159, 7445, 2]
 // Exports: default
 
-// Module 12087 (StageAudienceActionSheet)
+// Module 12086 (StageAudienceActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -16,8 +16,8 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7462 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 8047 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 12088 */;
-import useStageSummaryDefault from "useStageSummary" /* 12091 */;
+import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 12087 */;
+import useStageSummaryDefault from "useStageSummary" /* 12090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
@@ -96,7 +96,7 @@ function StageAudienceActionSheetContent(channel) {
   const canToggleRequestToSpeak = obj2.useCanToggleRequestToSpeak(channel);
   let obj3 = channel(6853);
   const sortedRequestToSpeakParticipants = obj3.useSortedRequestToSpeakParticipants(channel.id);
-  let obj4 = channel(12089);
+  let obj4 = channel(12088);
   const throttledStageAudience = obj4.useThrottledStageAudience(channel.id);
   let items = [canToggleRequestToSpeak, sortedRequestToSpeakParticipants, throttledStageAudience];
   const memo = react.useMemo(() => {

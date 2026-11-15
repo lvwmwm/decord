@@ -1,10 +1,10 @@
-// Module ID: 14515
-// Function ID: 14516
+// Module ID: 14516
+// Function ID: 14517
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 6659, 14514, 14513, 1072, 1357, 6834, 1260, 572, 14516, 4995, 1242, 504, 1403, 2185, 5866, 6831, 2]
+// Dependencies: [5, 17, 6659, 14515, 14514, 1072, 1357, 6834, 1260, 572, 14517, 4995, 1242, 504, 1403, 2185, 5866, 6831, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 14515 (ContactSyncUtils)
+// Module 14516 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -16,11 +16,11 @@ import UserSettings from "UserSettings" /* 4995 */;
 import LinkingDefault from "Linking" /* 5866 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6834 */;
-import ContactSyncManager from "ContactSyncManager" /* 14516 */;
+import ContactSyncManager from "ContactSyncManager" /* 14517 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14514 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14513 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14515 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14514 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let obj = function _uploadContacts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

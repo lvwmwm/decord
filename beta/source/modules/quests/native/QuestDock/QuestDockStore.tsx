@@ -1,19 +1,20 @@
-// Module ID: 17425
-// Function ID: 17426
+// Module ID: 17426
+// Function ID: 17427
 // Name: QuestDockStore
-// Dependencies: [6869, 504, 17426, 572, 2]
+// Dependencies: [6869, 504, 17427, 572, 2]
 
-// Module 17425 (QuestDockStore)
+// Module 17426 (QuestDockStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import QuestConstants from "QuestConstants" /* 6869 */;
-import QuestDockUtils from "QuestDockUtils" /* 17426 */;
+import QuestDockUtils from "QuestDockUtils" /* 17427 */;
 import size from "module_2" /* 2 */;
 
 const QuestDockMode = QuestConstants.QuestDockMode;
 let COLLAPSED = QuestDockMode.COLLAPSED;
 const _false = null;
 let isEligibleToBeVisible = false;
+let isExpandedOnScreen = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class QuestDockStore extends PersistedStore {
   initialize(questDockSoftDismissedAt) {
@@ -46,6 +47,12 @@ Object.defineProperty(prototype, "isEligibleToBeVisible", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "isExpandedOnScreen", {
+  get: function isExpandedOnScreen() {
+    return isExpandedOnScreen;
+  },
+  set: undefined
+});
 QuestDockStore.displayName = "QuestDockStore";
 QuestDockStore.persistKey = "QuestDockStore";
 let obj = {
@@ -67,6 +74,16 @@ let obj = {
   },
   QUESTS_DOCK_VISIBILITY_ELIGIBILITY_UPDATE: function handleQuestDockEligibilityUpdate(isEligibleToBeVisible) {
     isEligibleToBeVisible = isEligibleToBeVisible.isEligibleToBeVisible;
+    if (!isEligibleToBeVisible) {
+      isExpandedOnScreen = false;
+    }
+  },
+  QUESTS_DOCK_EXPANDED_ON_SCREEN_UPDATE: function handleQuestDockExpandedOnScreenUpdate(isExpandedOnScreen) {
+    if (isExpandedOnScreen.isExpandedOnScreen === isExpandedOnScreen) {
+      return false;
+    } else {
+      isExpandedOnScreen = isExpandedOnScreen.isExpandedOnScreen;
+    }
   }
 };
 const questDockStore = new QuestDockStore(DispatcherDefault, obj);

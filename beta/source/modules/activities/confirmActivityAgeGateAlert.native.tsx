@@ -1,17 +1,17 @@
-// Module ID: 11939
-// Function ID: 11940
+// Module ID: 11938
+// Function ID: 11939
 // Name: confirmActivityAgeGateAlert
-// Dependencies: [19, 17, 21, 5170, 575, 11940, 5783, 1113, 6122, 1187, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 11939, 5783, 1113, 6122, 1187, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 11939 (confirmActivityAgeGateAlert)
+// Module 11938 (confirmActivityAgeGateAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
-import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 11940 */;
+import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 11939 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;

@@ -1,8 +1,8 @@
-// Module ID: 16865
-// Function ID: 16866
+// Module ID: 16866
+// Function ID: 16867
 // Dependencies: [2]
 
-// Module 16865
+// Module 16866
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/upsells/profiles/headers/above_the_clouds_header.png.js");

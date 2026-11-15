@@ -1,10 +1,10 @@
-// Module ID: 14605
-// Function ID: 14606
+// Module ID: 14606
+// Function ID: 14607
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 5019, 14593, 1072, 21, 5170, 575, 1499, 5767, 14606, 6611, 1113, 14601, 14607, 5783, 5406, 14611, 2118, 7180, 1187, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 5019, 14594, 1072, 21, 5170, 575, 1499, 5767, 14607, 6611, 1113, 14602, 14608, 5783, 5406, 14612, 2118, 7180, 1187, 5790, 2]
 // Exports: default
 
-// Module 14605 (HubEmailConnectionContent)
+// Module 14606 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
-import HubConstants from "HubConstants" /* 14593 */;
+import HubConstants from "HubConstants" /* 14594 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ export default function HubEmailConnectionContent(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -216,7 +216,7 @@ export default function HubEmailConnectionContent(arg0) {
             c5 = 0;
             closure_131_4(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp78) {
           closure_4 = tmp78;
@@ -269,10 +269,10 @@ export default function HubEmailConnectionContent(arg0) {
   let obj4 = { ref, contentContainerStyle: items, children: items2 };
   items = [tmp.scrollViewContainer, ];
   let obj5 = { paddingBottom: insets.bottom + tmp10(575).space.PX_16 };
-  const HubEmailConnectionScreen = tmp2(14601).HubEmailConnectionScreen;
+  const HubEmailConnectionScreen = tmp2(14602).HubEmailConnectionScreen;
   items[1] = obj5;
   let obj6 = { style: tmp.container, children: items1 };
-  let obj7 = { style: tmp.header, children: closure_12(tmp2(14607).InkQuillSpotIllustration, { scale: 0.75 }) };
+  let obj7 = { style: tmp.header, children: closure_12(tmp2(14608).InkQuillSpotIllustration, { scale: 0.75 }) };
   items1 = [closure_12(ref, obj7), , , ];
   let obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult };
   items1[1] = closure_12(Text_Text.Text, obj8);

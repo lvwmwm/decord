@@ -1,10 +1,10 @@
-// Module ID: 11723
-// Function ID: 11724
+// Module ID: 11722
+// Function ID: 11723
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 10269, 10050, 6862, 5041, 5922, 504, 12, 558, 6969, 1380, 7988, 11724, 10049, 11725, 2]
+// Dependencies: [32, 19, 17, 10269, 10050, 6862, 5041, 5922, 504, 12, 558, 6969, 1380, 7988, 11723, 10049, 11724, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 11723 (MessagesHooks)
+// Module 11722 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 558 */;
@@ -12,7 +12,7 @@ import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6969
 import InviteTypeUtils from "InviteTypeUtils" /* 7988 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 10049 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10050 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11725 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11724 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10269 */;
@@ -128,7 +128,7 @@ export function useFetchVoiceChannelInviteStartTimes(stateFromStores4) {
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11724);
+            let tmp4Result = tmp4(11723);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

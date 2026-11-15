@@ -1,18 +1,18 @@
-// Module ID: 19040
-// Function ID: 19041
+// Module ID: 19098
+// Function ID: 19099
 // Name: StandaloneMembersView
-// Dependencies: [19, 17, 21, 5170, 575, 9946, 10887, 1499, 1627, 9187, 7097, 1113, 19041, 13528, 13542, 13546, 7264, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 9946, 10887, 1499, 1627, 9187, 7097, 1113, 19099, 13527, 13541, 13545, 7264, 2]
 // Exports: default
 
-// Module 19040 (StandaloneMembersView)
+// Module 19098 (StandaloneMembersView)
 import nativeDefault from "native" /* 575 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
 import useActiveTheme from "useActiveTheme" /* 9946 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10887 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 13528 */;
-import KickConfirmDefault from "KickConfirm" /* 13542 */;
-import BanConfirmDefault from "BanConfirm" /* 13546 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 19041 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 13527 */;
+import KickConfirmDefault from "KickConfirm" /* 13541 */;
+import BanConfirmDefault from "BanConfirm" /* 13545 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 19099 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

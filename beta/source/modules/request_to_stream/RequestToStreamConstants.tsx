@@ -1,9 +1,9 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15142
+// Function ID: 15143
 // Name: RequestToStreamConstants
 // Dependencies: [1089, 2]
 
-// Module 15141 (RequestToStreamConstants)
+// Module 15142 (RequestToStreamConstants)
 import DurationsDefault from "Durations" /* 1089 */;
 import size from "module_2" /* 2 */;
 

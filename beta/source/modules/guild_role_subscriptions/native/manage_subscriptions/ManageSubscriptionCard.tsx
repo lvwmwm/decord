@@ -1,10 +1,10 @@
-// Module ID: 17562
-// Function ID: 17563
+// Module ID: 17563
+// Function ID: 17564
 // Name: ManageSubscriptionCard
-// Dependencies: [32, 5, 19, 17, 1072, 5026, 21, 5170, 575, 1113, 5783, 7076, 7053, 11587, 17563, 6123, 17564, 2118, 10065, 7420, 6621, 7185, 1187, 17566, 5891, 5868, 7159, 7071, 5866, 2171, 1099, 10131, 17567, 1499, 7073, 2]
+// Dependencies: [32, 5, 19, 17, 1072, 5026, 21, 5170, 575, 1113, 5783, 7076, 7053, 11586, 17564, 6123, 17565, 2118, 10065, 7420, 6621, 7185, 1187, 17567, 5891, 5868, 7159, 7071, 5866, 2171, 1099, 10131, 17568, 1499, 7073, 2]
 // Exports: default
 
-// Module 17562 (ManageSubscriptionCard)
+// Module 17563 (ManageSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -16,8 +16,8 @@ import LinkingDefault from "Linking" /* 5866 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
 import GuildIconDefault from "GuildIcon" /* 7053 */;
 import Pressables from "Pressables" /* 7076 */;
-import FormSeparatorDefault from "FormSeparator" /* 17563 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17567 */;
+import FormSeparatorDefault from "FormSeparator" /* 17564 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17568 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -123,7 +123,7 @@ function Header(guild) {
   items2[1] = unpackModuleId(Text, { variant: "body-sm/medium", color: "interactive-text-default", children: name });
   items1[1] = authStore2(View, obj3);
   let expandIconExpanded;
-  const ChevronSmallDownIcon = tmp3(11587).ChevronSmallDownIcon;
+  const ChevronSmallDownIcon = tmp3(11586).ChevronSmallDownIcon;
   if (expanded) {
     expandIconExpanded = tmp.expandIconExpanded;
   }
@@ -210,7 +210,7 @@ function CardBody(isTrial) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ function CardBody(isTrial) {
             closure_129_4(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp31) {
           if (0 === c3) {
             c5 = 3;

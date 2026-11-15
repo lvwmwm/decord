@@ -1,10 +1,10 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17181
+// Function ID: 17182
 // Name: FamilyCenterModalAccept
-// Dependencies: [19, 17, 21, 5170, 575, 6831, 5868, 1113, 13623, 8074, 8076, 17177, 5884, 5783, 2664, 17145, 13625, 13484, 6855, 5790, 7097, 11659, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 6831, 5868, 1113, 13622, 8074, 8076, 17178, 5884, 5783, 2664, 17146, 13624, 13483, 6855, 5790, 7097, 11658, 2]
 // Exports: default
 
-// Module 17180 (FamilyCenterModalAccept)
+// Module 17181 (FamilyCenterModalAccept)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
@@ -45,7 +45,7 @@ function FamilyCenterModalAcceptScreen(otherUser) {
     const intl = otherUser(dependencyMap[7]).intl;
     presentFailedToast(intl.string(otherUser(dependencyMap[7]).t.R0RpRX));
   }, []);
-  const obj = otherUser(13623);
+  const obj = otherUser(13622);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   const acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   const isAcceptLoading = familyCenterActions.isAcceptLoading;
@@ -59,14 +59,14 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   const obj4 = { style: tmp.header, children: items1 };
   const ModalContent = otherUser(8076).ModalContent;
   const obj5 = { otherUser, iconSrc: acceptLinkRequest(5884), iconStyles: tmp.icon };
-  const tmp6 = acceptLinkRequest(17177);
+  const tmp6 = acceptLinkRequest(17178);
   items1 = [closure_5(tmp6, obj5), , ];
   const obj6 = { style: tmp.headerText, variant: "body-lg/semibold", children: intl.string(acceptLinkRequest(2664).rlNJwZ) };
   const Text = otherUser(5783).Text;
   intl = otherUser(1113).intl;
   items1[1] = closure_5(Text, obj6);
-  items1[2] = closure_5(acceptLinkRequest(17145), { user: otherUser });
-  items2 = [closure_6(View, obj4), closure_5(acceptLinkRequest(13625), {}), ];
+  items1[2] = closure_5(acceptLinkRequest(17146), { user: otherUser });
+  items2 = [closure_6(View, obj4), closure_5(acceptLinkRequest(13624), {}), ];
   const obj7 = { style: tmp.disclaimer, variant: "body-xs/normal", color: "text-default", children: intl2.format(acceptLinkRequest(2664).snlFqR, obj8) };
   const Text2 = otherUser(5783).Text;
   intl2 = otherUser(1113).intl;
@@ -74,7 +74,7 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   items2[2] = closure_5(Text2, obj7);
   items3 = [closure_6(ModalContent, obj3), ];
   const obj9 = { children: closure_6(ButtonGroup, obj10) };
-  const ModalFooter = otherUser(13484).ModalFooter;
+  const ModalFooter = otherUser(13483).ModalFooter;
   obj10 = { children: items4 };
   ButtonGroup = otherUser(6855).ButtonGroup;
   const obj11 = { variant: "primary", disabled: isAcceptLoading, loading: isAcceptLoading, text: intl3.string(acceptLinkRequest(2664)["wI/jo3"]), onPress: callback2 };
@@ -125,7 +125,7 @@ export default function FamilyCenterModalAccept(otherUser) {
     return obj;
   }, items);
   let obj = { initialRouteName: "ACCEPT", screens: memo, headerBackTitle: intl.string(otherUser(1113).t["13/7kX"]) };
-  const Modal = otherUser(11659).Modal;
+  const Modal = otherUser(11658).Modal;
   intl = otherUser(1113).intl;
   return closure_5(Modal, obj);
 };

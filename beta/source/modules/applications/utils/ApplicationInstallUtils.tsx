@@ -1,16 +1,16 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11932
+// Function ID: 11933
 // Name: ApplicationInstallUtils
 // Dependencies: [9885, 6199, 5807, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 11933 (ApplicationInstallUtils)
+// Module 11932 (ApplicationInstallUtils)
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5807 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6199 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9885 */;
 import size from "module_2" /* 2 */;
 
-const f101921 = (oauth2_install_params) => {
+const f101937 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -36,7 +36,7 @@ export function canInstallApplication(application) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f101921);
+      someResult = values.some(f101937);
     }
     tmp = someResult;
   }
@@ -50,7 +50,7 @@ export function isAppUserInstallable(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f101921);
+      someResult = values.some(f101937);
     }
     tmp = someResult;
   }

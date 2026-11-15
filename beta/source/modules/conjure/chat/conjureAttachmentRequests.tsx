@@ -1,10 +1,10 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 12346
+// Function ID: 12347
 // Name: conjureAttachmentRequests
 // Dependencies: [5, 11113, 11086, 2]
 // Exports: deleteStagedAttachment, importAttachmentFromUrl, isAttachmentAvailable, listStoredAttachments, uploadAttachment
 
-// Module 12347 (conjureAttachmentRequests)
+// Module 12346 (conjureAttachmentRequests)
 import conjureWorkerFetch from "conjureWorkerFetch" /* 11113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ let obj = function _listStoredAttachments() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -107,7 +107,7 @@ obj = function _importAttachmentFromUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -247,7 +247,7 @@ obj = function _deleteStagedAttachment() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -280,7 +280,7 @@ obj = function _deleteStagedAttachment() {
           closure_0 = value;
           if (closure_0.ok) {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -318,7 +318,7 @@ obj = function _getAttachmentUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -414,7 +414,7 @@ obj = function _isAttachmentAvailable() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

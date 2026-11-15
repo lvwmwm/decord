@@ -1,12 +1,12 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16696
+// Function ID: 16697
 // Name: soundboard
-// Dependencies: [5, 6223, 1385, 6615, 1083, 9017, 7622, 7623, 12005, 7659, 7630, 9447, 7661, 7445, 2]
+// Dependencies: [5, 6223, 1385, 6615, 1083, 9017, 7622, 7623, 12004, 7659, 7630, 9447, 7661, 7445, 2]
 
-// Module 16695 (soundboard)
+// Module 16696 (soundboard)
 import SoundboardActionCreators from "SoundboardActionCreators" /* 7622 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12005 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12004 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SoundboardStore from "SoundboardStore" /* 6223 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -43,7 +43,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ let obj4 = {
                   playSound(tmp4, id, items);
                 }
                 c3 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 const obj8 = { errorCode: constants.INVALID_PERMISSIONS };
                 const self3 = this;

@@ -1,10 +1,10 @@
-// Module ID: 13948
-// Function ID: 13949
+// Module ID: 13947
+// Function ID: 13948
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [19, 17, 5171, 13700, 6231, 21, 575, 5170, 1357, 504, 6255, 13908, 9102, 1411, 8246, 7053, 5783, 6601, 13949, 1113, 3248, 3216, 5116, 7396, 5874, 13910, 13913, 2]
+// Dependencies: [19, 17, 5171, 13699, 6231, 21, 575, 5170, 1357, 504, 6255, 13907, 9102, 1411, 8246, 7053, 5783, 6601, 13948, 1113, 3248, 3216, 5116, 7396, 5874, 13909, 13912, 2]
 // Exports: default
 
-// Module 13948 (CheckpointSummaryStatsScreen)
+// Module 13947 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -19,13 +19,13 @@ import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6601 */;
 import GuildIcon from "GuildIcon" /* 7053 */;
 import EmojiDefault from "Emoji" /* 7396 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9102 */;
-import CheckpointScreen from "CheckpointScreen" /* 13908 */;
-import CheckpointTextDefault from "CheckpointText" /* 13910 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13913 */;
-import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13949 */;
+import CheckpointScreen from "CheckpointScreen" /* 13907 */;
+import CheckpointTextDefault from "CheckpointText" /* 13909 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13912 */;
+import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13948 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import CheckpointStore from "CheckpointStore" /* 13700 */;
+import CheckpointStore from "CheckpointStore" /* 13699 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;

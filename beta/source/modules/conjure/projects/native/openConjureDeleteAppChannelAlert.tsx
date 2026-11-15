@@ -1,10 +1,10 @@
-// Module ID: 19298
-// Function ID: 19299
+// Module ID: 19356
+// Function ID: 19357
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 13543, 13545, 1113, 4026, 6128, 12428, 6191, 5783, 6124, 2]
+// Dependencies: [5, 32, 19, 21, 13542, 13544, 1113, 4026, 6128, 12427, 6191, 5783, 6124, 2]
 // Exports: default
 
-// Module 19298 (openConjureDeleteAppChannelAlert)
+// Module 19356 (openConjureDeleteAppChannelAlert)
 import useAlertStore from "useAlertStore" /* 6124 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -52,7 +52,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
             throw error;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;

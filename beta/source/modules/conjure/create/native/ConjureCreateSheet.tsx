@@ -1,16 +1,16 @@
-// Module ID: 13235
-// Function ID: 13236
+// Module ID: 13234
+// Function ID: 13235
 // Name: ConjureCreateSheet
-// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 11134, 13236, 12321, 13225, 13237, 13224, 5406, 11032, 12818, 12426, 1113, 4026, 11028, 13238, 7457, 12370, 13240, 13241, 7459, 7415, 7349, 7159, 7071, 5783, 12371, 13249, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 11134, 13235, 12320, 13224, 13236, 13223, 5406, 11032, 12817, 12425, 1113, 4026, 11028, 13237, 7457, 12369, 13239, 13240, 7459, 7415, 7349, 7159, 7071, 5783, 12370, 13248, 5790, 2]
 // Exports: default
 
-// Module 13235 (ConjureCreateSheet)
+// Module 13234 (ConjureCreateSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5406 */;
-import ConjureEffortPicker from "ConjureEffortPicker" /* 12370 */;
-import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 13225 */;
-import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 13241 */;
+import ConjureEffortPicker from "ConjureEffortPicker" /* 12369 */;
+import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 13224 */;
+import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 13240 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -141,7 +141,7 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -197,7 +197,7 @@ export default function ConjureCreateSheet(guildId) {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp38) {
           closure_4 = tmp38;
@@ -230,7 +230,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -273,7 +273,7 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -300,7 +300,7 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ export default function ConjureCreateSheet(guildId) {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp55) {
           closure_4 = tmp55;
@@ -438,7 +438,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -578,7 +578,7 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         c8 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp53) {
         if (0 === c6) {
           c8 = 3;

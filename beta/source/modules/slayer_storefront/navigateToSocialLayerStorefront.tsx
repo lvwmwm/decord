@@ -1,10 +1,10 @@
-// Module ID: 15622
-// Function ID: 15623
+// Module ID: 15623
+// Function ID: 15624
 // Name: navigateToSocialLayerStorefront
 // Dependencies: [5, 5041, 7503, 1072, 10821, 7501, 1099, 7626, 9058, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 15622 (navigateToSocialLayerStorefront)
+// Module 15623 (navigateToSocialLayerStorefront)
 import router_utils from "router_utils" /* 1099 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7501 */;
 import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10821 */;
@@ -40,7 +40,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -121,7 +121,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
                 }
               } else {
                 c4 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (2 === c3) {

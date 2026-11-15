@@ -1,10 +1,10 @@
-// Module ID: 16830
-// Function ID: 16831
+// Module ID: 16831
+// Function ID: 16832
 // Name: useHexagonCampaignDisplayNameStyleToggle
-// Dependencies: [5, 32, 19, 1385, 5195, 8841, 6604, 5198, 5753, 8839, 16807, 2]
+// Dependencies: [5, 32, 19, 1385, 5195, 8841, 6604, 5198, 5753, 8839, 16808, 2]
 // Exports: useHexagonCampaignDisplayNameStyleToggle
 
-// Module 16830 (useHexagonCampaignDisplayNameStyleToggle)
+// Module 16831 (useHexagonCampaignDisplayNameStyleToggle)
 import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6604 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8839 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -63,7 +63,7 @@ export function useHexagonCampaignDisplayNameStyleToggle(user, showEnrollmentErr
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

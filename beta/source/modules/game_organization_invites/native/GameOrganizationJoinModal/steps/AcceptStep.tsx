@@ -1,14 +1,14 @@
-// Module ID: 13485
-// Function ID: 13486
+// Module ID: 13484
+// Function ID: 13485
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 13478, 21, 5170, 13475, 1499, 11847, 5869, 1113, 13480, 8076, 6191, 575, 5783, 2530, 13486, 13487, 13484, 6855, 5790, 2]
+// Dependencies: [5, 32, 19, 13477, 21, 5170, 13474, 1499, 11846, 5869, 1113, 13479, 8076, 6191, 575, 5783, 2530, 13485, 13486, 13483, 6855, 5790, 2]
 // Exports: AcceptStep
 
-// Module 13485 (AcceptStep)
+// Module 13484 (AcceptStep)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13478 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13477 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
@@ -59,7 +59,7 @@ export function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -139,7 +139,7 @@ export function AcceptStep(code) {
             c4 = 0;
             closure_130_3(false);
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -158,7 +158,7 @@ export function AcceptStep(code) {
   };
   const tmp = closure_10();
   const tmp3 = dependencyMap;
-  const tmp4 = character(13475)(code);
+  const tmp4 = character(13474)(code);
   obj = code(1499);
   dependencyMap = obj.useNavigation();
   [tmp7, c3] = obj(react.useState(false), 2);
@@ -168,7 +168,7 @@ export function AcceptStep(code) {
   } else {
     let str = tmp4.displayNoun;
     const linkedGuild = tmp4.linkedGuild;
-    const tmp2Result = character(13480);
+    const tmp2Result = character(13479);
     const ModalContent = tmp5(8076).ModalContent;
     let obj2 = { spacing: tmp2(575).space.PX_48, children: items1 };
     const Stack2 = tmp5(6191).Stack;
@@ -187,18 +187,18 @@ export function AcceptStep(code) {
     obj7 = { displayNoun: str };
     items = [tmp11(Text2, obj4), ];
     const obj8 = { linkedGuild };
-    items[1] = closure_8(character(13486), obj8);
+    items[1] = closure_8(character(13485), obj8);
     items1 = [tmp9(Stack3, obj3), ];
     const obj9 = { spacing: character(575).space.PX_24, children: items2 };
     const Stack = tmp5(6191).Stack;
     const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(2530).yFqGy8) };
     const Text = tmp5(5783).Text;
     intl = tmp5(1113).intl;
-    items2 = [tmp11(Text, obj10), tmp11(tmp2(13487), {})];
+    items2 = [tmp11(Text, obj10), tmp11(tmp2(13486), {})];
     items1[1] = closure_9(Stack, obj9);
     items3 = [tmp11(ModalContent, obj6), ];
     const obj11 = { children: closure_9(ButtonGroup, obj12) };
-    const ModalFooter = tmp5(13484).ModalFooter;
+    const ModalFooter = tmp5(13483).ModalFooter;
     obj12 = { style: tmp.buttonGroup, children: items4 };
     ButtonGroup = tmp5(6855).ButtonGroup;
     const obj13 = {

@@ -1,15 +1,15 @@
-// Module ID: 18374
-// Function ID: 18375
+// Module ID: 18375
+// Function ID: 18376
 // Name: AgeGateActionCreators
-// Dependencies: [1097, 1072, 18372, 1252, 1282, 18373, 572, 2]
+// Dependencies: [1097, 1072, 18373, 1252, 1282, 18374, 572, 2]
 // Exports: logoutUnderageNewUser, preventUnderageRegistration, submitDateOfBirth
 
-// Module 18374 (AgeGateActionCreators)
+// Module 18375 (AgeGateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18372 */;
-import formatDateForAPIDefault from "formatDateForAPI" /* 18373 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18373 */;
+import formatDateForAPIDefault from "formatDateForAPI" /* 18374 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

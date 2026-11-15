@@ -1,10 +1,10 @@
-// Module ID: 18357
-// Function ID: 18358
+// Module ID: 18358
+// Function ID: 18359
 // Name: RegistrationStepsUtils
-// Dependencies: [5, 19, 16957, 6828, 18358, 18359, 1072, 21, 1260, 18360, 18367, 18368, 18380, 18381, 18387, 7212, 18389, 18390, 7313, 7310, 18394, 18395, 18401, 18402, 1500, 2150, 18370, 6611, 7219, 18409, 2]
+// Dependencies: [5, 19, 16958, 6828, 18359, 18360, 1072, 21, 1260, 18361, 18368, 18369, 18381, 18382, 18388, 7212, 18390, 18391, 7313, 7310, 18395, 18396, 18402, 18403, 1500, 2150, 18371, 6611, 7219, 18410, 2]
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, getPreviousAuthState, getPreviousRegistrationTransitionStep, getRegistrationSteps, handleNextOrSubmitRegistration
 
-// Module 18357 (RegistrationStepsUtils)
+// Module 18358 (RegistrationStepsUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
@@ -12,24 +12,24 @@ import Link from "Link" /* 1500 */;
 import StringUtils from "StringUtils" /* 2150 */;
 import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6828 */;
 import LoginDefault from "Login" /* 7212 */;
-import WelcomeDefault from "Welcome" /* 18360 */;
-import RegistrationUtils from "RegistrationUtils" /* 18367 */;
-import RegisterIdentity from "RegisterIdentity" /* 18368 */;
-import register from "register" /* 18370 */;
-import RegisterDisplayNameDefault from "RegisterDisplayName" /* 18380 */;
-import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 18381 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 18387 */;
-import components_MFADefault from "components/MFA" /* 18389 */;
-import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 18390 */;
-import ExternalLinkDefault from "ExternalLink" /* 18394 */;
-import RegisterAgeGateDefault from "RegisterAgeGate" /* 18395 */;
-import AgeGateUnderageDefault from "AgeGateUnderage" /* 18401 */;
-import CompanionRemoteAuth from "CompanionRemoteAuth" /* 18402 */;
+import WelcomeDefault from "Welcome" /* 18361 */;
+import RegistrationUtils from "RegistrationUtils" /* 18368 */;
+import RegisterIdentity from "RegisterIdentity" /* 18369 */;
+import register from "register" /* 18371 */;
+import RegisterDisplayNameDefault from "RegisterDisplayName" /* 18381 */;
+import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 18382 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 18388 */;
+import components_MFADefault from "components/MFA" /* 18390 */;
+import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 18391 */;
+import ExternalLinkDefault from "ExternalLink" /* 18395 */;
+import RegisterAgeGateDefault from "RegisterAgeGate" /* 18396 */;
+import AgeGateUnderageDefault from "AgeGateUnderage" /* 18402 */;
+import CompanionRemoteAuth from "CompanionRemoteAuth" /* 18403 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16957 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18358 */;
-import RegistrationConstants from "RegistrationConstants" /* 18359 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16958 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18359 */;
+import RegistrationConstants from "RegistrationConstants" /* 18360 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c7, c8, state;
@@ -68,7 +68,7 @@ let obj = function _handleNextOrSubmitRegistration() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _handleNextOrSubmitRegistration() {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp11) {
         c3 = 3;
         throw tmp11;
@@ -136,7 +136,7 @@ obj = function _handleRegistrationSubmit() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -195,7 +195,7 @@ obj = function _handleRegistrationSubmit() {
               }
             } else {
               c8 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c8 = 3;
@@ -213,7 +213,7 @@ obj = function _handleRegistrationSubmit() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp46) {
         closure_5 = tmp46;

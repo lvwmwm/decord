@@ -1,10 +1,10 @@
-// Module ID: 20328
-// Function ID: 20329
+// Module ID: 20333
+// Function ID: 20334
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1072, 20329, 20330, 1113, 2185, 5862, 20331, 2]
+// Dependencies: [5, 19, 1072, 20334, 20335, 1113, 2185, 5862, 20336, 2]
 // Exports: default
 
-// Module 20328 (useCreatorMonetizationEligibilityItems)
+// Module 20333 (useCreatorMonetizationEligibilityItems)
 import Constants from "Constants" /* 1072 */;
 import intl27 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
@@ -43,7 +43,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -111,7 +111,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
           tmp12();
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         c2 = 3;
         throw tmp15;
@@ -217,7 +217,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
         intl9 = tmp23(1113).intl;
         const intl10 = tmp23(1113).intl;
         formatToPlainString = intl10.formatToPlainString;
-        obj8 = { minimumAge: tmp25(20331)(tmp.minimumAgeInDays) };
+        obj8 = { minimumAge: tmp25(20336)(tmp.minimumAgeInDays) };
         Zwv84O = tmp23(1113).t.Zwv84O;
         push3(obj7);
       }

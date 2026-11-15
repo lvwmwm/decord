@@ -1,17 +1,17 @@
-// Module ID: 12147
-// Function ID: 12148
+// Module ID: 12146
+// Function ID: 12147
 // Name: VolumeSlider
-// Dependencies: [19, 17, 5929, 21, 1377, 5170, 575, 5756, 12148, 8959, 6087, 1113, 8777, 2]
+// Dependencies: [19, 17, 5929, 21, 1377, 5170, 575, 5756, 12147, 8959, 6087, 1113, 8777, 2]
 // Exports: default
 
-// Module 12147 (VolumeSlider)
+// Module 12146 (VolumeSlider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useToken2 from "useToken" /* 5756 */;
 import Constants from "Constants" /* 5929 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6087 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 8777 */;
-import VoiceXIcon from "VoiceXIcon" /* 12148 */;
+import VoiceXIcon from "VoiceXIcon" /* 12147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;

@@ -1,16 +1,16 @@
-// Module ID: 15529
-// Function ID: 15530
+// Module ID: 15530
+// Function ID: 15531
 // Name: PoggermodeStore
-// Dependencies: [502, 5073, 7929, 7930, 1072, 5097, 5014, 15530, 1108, 504, 572, 2]
+// Dependencies: [502, 5073, 7929, 7930, 1072, 5097, 5014, 15531, 1108, 504, 572, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 15529 (PoggermodeStore)
+// Module 15530 (PoggermodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import SecondaryIndexMap from "SecondaryIndexMap" /* 5097 */;
-import PoggermodeUtils from "PoggermodeUtils" /* 15530 */;
+import PoggermodeUtils from "PoggermodeUtils" /* 15531 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7929 */;

@@ -1,10 +1,10 @@
-// Module ID: 14668
-// Function ID: 14669
+// Module ID: 14669
+// Function ID: 14670
 // Name: FavoritesGuildAddChannelModal
-// Dependencies: [5, 32, 19, 17, 5032, 10878, 21, 5170, 575, 14669, 14670, 13648, 1380, 5868, 1113, 10982, 14667, 1493, 1377, 13658, 3608, 10887, 13659, 13683, 14671, 2]
+// Dependencies: [5, 32, 19, 17, 5032, 10878, 21, 5170, 575, 14670, 14671, 13647, 1380, 5868, 1113, 10982, 14668, 1493, 1377, 13657, 3608, 10887, 13658, 13682, 14672, 2]
 // Exports: default
 
-// Module 14668 (FavoritesGuildAddChannelModal)
+// Module 14669 (FavoritesGuildAddChannelModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -46,8 +46,8 @@ export default function FavoritesGuildAddChannelModal(parentId) {
   const source = parentId.source;
   const tmp = closure_11();
   const tmp3 = dependencyMap;
-  const tmp4 = first(14669)();
-  first(14670)(source);
+  const tmp4 = first(14670)();
+  first(14671)(source);
   const tmp2 = first;
   [first, dependencyMap] = react.useState([]);
   const callback = react.useCallback((arg0) => {
@@ -65,7 +65,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -116,7 +116,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
             presentError(intl.string(_null(c2[14]).t.R0RpRX));
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp32) {
         c4 = 3;
@@ -134,22 +134,22 @@ export default function FavoritesGuildAddChannelModal(parentId) {
     }, items1),
     children: items2
   };
-  let obj2 = { title: intl.string(first(3608).Rp35U1), onClose: parentId(14667).closeFavoritesGuildAddChannelModal };
-  const tmp12 = first(13658);
+  let obj2 = { title: intl.string(first(3608).Rp35U1), onClose: parentId(14668).closeFavoritesGuildAddChannelModal };
+  const tmp12 = first(13657);
   intl = parentId(1113).intl;
   items2 = [closure_9(tmp12, obj2), ];
   let obj3 = { style: tmp.container, children: items3 };
   items3 = [closure_9(first(10887), { absolute: true }), , ];
   let obj4 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp4, insetEnd: num, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 };
   num = 0;
-  const tmp14 = first(13659);
+  const tmp14 = first(13658);
   if (first.length > 0) {
     num = tmp2(575).space.PX_80;
   }
   items3[1] = closure_9(tmp14, obj4);
   let obj5 = { isVisible: length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: tmp13Result.getFavoritesAddButtonLabel(first.length), onPress: callback1 };
-  const ModalFloatingAction = tmp13(13683).ModalFloatingAction;
-  tmp13Result = parentId(14671);
+  const ModalFloatingAction = tmp13(13682).ModalFloatingAction;
+  tmp13Result = parentId(14672);
   items3[2] = closure_9(ModalFloatingAction, obj5);
   items2[1] = closure_10(View, obj3);
   return closure_10(View, obj);

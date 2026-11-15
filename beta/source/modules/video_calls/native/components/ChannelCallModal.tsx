@@ -1,26 +1,26 @@
-// Module ID: 11894
-// Function ID: 11895
+// Module ID: 11893
+// Function ID: 11894
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 6931, 5019, 11162, 11163, 11895, 1072, 21, 11166, 11896, 5346, 11899, 12041, 11384, 12042, 1652, 1705, 5355, 12254, 504, 1493, 11897, 12255, 7420, 7445, 13439, 8041, 5452, 11168, 2]
+// Dependencies: [32, 19, 6931, 5019, 11162, 11163, 11894, 1072, 21, 11166, 11895, 5346, 11898, 12040, 11384, 12041, 1652, 1705, 5355, 12253, 504, 1493, 11896, 12254, 7420, 7445, 13438, 8041, 5452, 11168, 2]
 
-// Module 11894 (ChannelCallModal)
+// Module 11893 (ChannelCallModal)
 import Constants2 from "Constants" /* 1072 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
 import ChannelCallConstants from "ChannelCallConstants" /* 11163 */;
 import VoiceChatHooks from "VoiceChatHooks" /* 11166 */;
-import RevealProvider from "RevealProvider" /* 11896 */;
-import CameraPreviewDefault from "CameraPreview" /* 11899 */;
-import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 12041 */;
-import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 12042 */;
-import RouteManagerUtils from "RouteManagerUtils" /* 12255 */;
+import RevealProvider from "RevealProvider" /* 11895 */;
+import CameraPreviewDefault from "CameraPreview" /* 11898 */;
+import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 12040 */;
+import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 12041 */;
+import RouteManagerUtils from "RouteManagerUtils" /* 12254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import ChannelCallStore from "ChannelCallStore" /* 11162 */;
-import Constants from "Constants" /* 11895 */;
+import Constants from "Constants" /* 11894 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 

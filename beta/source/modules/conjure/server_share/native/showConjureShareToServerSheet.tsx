@@ -1,10 +1,10 @@
-// Module ID: 12439
-// Function ID: 12440
+// Module ID: 12438
+// Function ID: 12439
 // Name: showConjureShareToServerSheet
-// Dependencies: [5, 19, 17, 6932, 21, 5170, 575, 504, 12320, 1113, 4026, 5406, 5869, 7459, 7415, 7157, 7160, 6191, 5783, 12300, 12440, 8765, 5790, 2]
+// Dependencies: [5, 19, 17, 6932, 21, 5170, 575, 504, 12319, 1113, 4026, 5406, 5869, 7459, 7415, 7157, 7160, 6191, 5783, 12299, 12439, 8765, 5790, 2]
 // Exports: default
 
-// Module 12439 (showConjureShareToServerSheet)
+// Module 12438 (showConjureShareToServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5406 */;
@@ -68,7 +68,7 @@ function ShareToServerSheet(projectId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ function ShareToServerSheet(projectId) {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           c4 = 3;

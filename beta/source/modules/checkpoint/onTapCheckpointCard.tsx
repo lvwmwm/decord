@@ -1,13 +1,13 @@
-// Module ID: 13697
-// Function ID: 13698
+// Module ID: 13696
+// Function ID: 13697
 // Name: onTapCheckpointCard
-// Dependencies: [5019, 6602, 13698, 13701, 2]
+// Dependencies: [5019, 6602, 13697, 13700, 2]
 // Exports: onTapCheckpointCard
 
-// Module 13697 (onTapCheckpointCard)
+// Module 13696 (onTapCheckpointCard)
 import CheckpointExperiments from "CheckpointExperiments" /* 6602 */;
-import Tracking from "Tracking" /* 13698 */;
-import openCheckpoint from "openCheckpoint" /* 13701 */;
+import Tracking from "Tracking" /* 13697 */;
+import openCheckpoint from "openCheckpoint" /* 13700 */;
 import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
 

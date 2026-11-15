@@ -1,10 +1,10 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14506
+// Function ID: 14507
 // Name: GuildDirectoryRowGenerator
 // Dependencies: [14119, 14118, 1113, 2]
 // Exports: generateDirectoryRows
 
-// Module 14505 (GuildDirectoryRowGenerator)
+// Module 14506 (GuildDirectoryRowGenerator)
 import GuildDirectoryConstants from "GuildDirectoryConstants" /* 14119 */;
 import size from "module_2" /* 2 */;
 

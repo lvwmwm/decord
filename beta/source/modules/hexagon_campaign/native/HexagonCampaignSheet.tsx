@@ -1,10 +1,10 @@
-// Module ID: 17355
-// Function ID: 17356
+// Module ID: 17356
+// Function ID: 17357
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1385, 16568, 5195, 5421, 1240, 1083, 21, 1395, 1396, 9403, 5170, 575, 5200, 504, 7420, 7445, 15654, 5198, 9102, 1627, 2171, 5196, 16808, 6872, 17356, 5869, 1113, 5406, 17354, 4411, 5753, 10887, 5783, 17364, 5420, 7415, 16831, 5790, 17365, 7159, 7462, 17366, 2]
+// Dependencies: [5, 32, 19, 17, 1193, 1385, 16569, 5195, 5421, 1240, 1083, 21, 1395, 1396, 9403, 5170, 575, 5200, 504, 7420, 7445, 15655, 5198, 9102, 1627, 2171, 5196, 16809, 6872, 17357, 5869, 1113, 5406, 17355, 4411, 5753, 10887, 5783, 17365, 5420, 7415, 16832, 5790, 17366, 7159, 7462, 17367, 2]
 // Exports: default
 
-// Module 17355 (HexagonCampaignSheet)
+// Module 17356 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
@@ -18,7 +18,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16568 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16569 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5170 */;
@@ -184,7 +184,7 @@ export default function HexagonCampaignSheet() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ export default function HexagonCampaignSheet() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp59) {
           if (0 === analyticsLocations) {
             c4 = 3;
@@ -409,7 +409,7 @@ export default function HexagonCampaignSheet() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -465,7 +465,7 @@ export default function HexagonCampaignSheet() {
             open("HEXAGON_CAMPAIGN_APPLY_ERROR", obj);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         c3 = 3;

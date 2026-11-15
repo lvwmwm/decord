@@ -1,9 +1,9 @@
-// Module ID: 13535
-// Function ID: 13536
+// Module ID: 13534
+// Function ID: 13535
 // Name: CommunicationDisabledActionCreators
 // Dependencies: [5, 2166, 6990, 2]
 
-// Module 13535 (CommunicationDisabledActionCreators)
+// Module 13534 (CommunicationDisabledActionCreators)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ let obj = {
             return obj;
           } else {
             guildId = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           guildId = 3;

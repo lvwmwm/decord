@@ -1,10 +1,10 @@
-// Module ID: 16648
-// Function ID: 16649
+// Module ID: 16649
+// Function ID: 16650
 // Name: discord_common/helpers
 // Dependencies: [1083, 2]
 // Exports: joiReqObj
 
-// Module 16648 (discord_common/helpers)
+// Module 16649 (discord_common/helpers)
 import Constants from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 

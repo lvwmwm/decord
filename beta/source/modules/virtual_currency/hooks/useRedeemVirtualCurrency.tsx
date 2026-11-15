@@ -70,7 +70,7 @@ export function useRedeemVirtualCurrency(useOrdersAPI) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -153,7 +153,7 @@ export function useRedeemVirtualCurrency(useOrdersAPI) {
               closure_1_10(false);
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp52) {
           closure_5 = tmp52;

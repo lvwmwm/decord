@@ -1,10 +1,10 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17363
+// Function ID: 17364
 // Name: saveHexagonCampaignDisplayNameStyles
 // Dependencies: [5, 7247, 2]
 // Exports: saveHexagonCampaignDisplayNameStyles
 
-// Module 17362 (saveHexagonCampaignDisplayNameStyles)
+// Module 17363 (saveHexagonCampaignDisplayNameStyles)
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7247 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let obj = function _saveHexagonCampaignDisplayNameStyles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

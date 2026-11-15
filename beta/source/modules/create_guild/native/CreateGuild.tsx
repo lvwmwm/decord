@@ -1,7 +1,7 @@
 // Module ID: 14148
 // Function ID: 14149
 // Name: CreateGuild
-// Dependencies: [19, 17, 1385, 1072, 21, 5170, 575, 5422, 6185, 6191, 5783, 1113, 13454, 7181, 7462, 5790, 7211, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5170, 575, 5422, 6185, 6191, 5783, 1113, 13453, 7181, 7462, 5790, 7211, 2]
 // Exports: default
 
 // Module 14148 (CreateGuild)
@@ -91,7 +91,7 @@ export default function CreateGuild(arg0) {
   }
   items1[1] = closure_7(Text2, obj4);
   const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
-  items1[2] = closure_7(ref(13454), obj5);
+  items1[2] = closure_7(ref(13453), obj5);
   const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1113).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
   const TextInput = tmp4(7181).TextInput;
   intl3 = tmp4(1113).intl;

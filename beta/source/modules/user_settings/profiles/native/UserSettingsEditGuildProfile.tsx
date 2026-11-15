@@ -1,14 +1,14 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 16911
+// Function ID: 16912
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8835, 1385, 21, 5170, 575, 7420, 7445, 504, 16911, 11697, 8862, 16913, 7071, 7053, 11580, 5406, 16915, 2118, 16916, 2]
+// Dependencies: [19, 17, 8835, 1385, 21, 5170, 575, 7420, 7445, 504, 16912, 11696, 8862, 16914, 7071, 7053, 11579, 5406, 16916, 2118, 16917, 2]
 // Exports: default
 
-// Module 16910 (UserSettingsEditGuildProfile)
+// Module 16911 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 575 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11580 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11697 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11579 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11696 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
@@ -67,7 +67,7 @@ export default function UserSettingsEditGuildProfile(arg0) {
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp7 = guild(16911)();
+  const tmp7 = guild(16912)();
   guild = tmp7.guild;
   ({ resetPending: c2, handleSubmit: c3 } = tmp7);
   let obj2 = stateFromStores(504);
@@ -129,12 +129,12 @@ export default function UserSettingsEditGuildProfile(arg0) {
       items3 = [showGuildSelector, ];
       const _HermesInternal = HermesInternal;
       const obj7 = { currentUser: stateFromStores, header };
-      const tmp2Result2 = tmp2(16916);
+      const tmp2Result2 = tmp2(16917);
       items3[1] = tmp11(tmp2Result2, obj7, "" + stateFromStores.id + "-" + guild.id);
       return tmp15(AnalyticsLocationProvider, obj6);
     }
   }
   const obj8 = { children: items4 };
-  items4 = [header, closure_7(tmp2(16913), {})];
+  items4 = [header, closure_7(tmp2(16914), {})];
   return closure_9(closure_8, obj8);
 };

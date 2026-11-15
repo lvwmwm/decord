@@ -1,10 +1,10 @@
-// Module ID: 12320
-// Function ID: 12321
+// Module ID: 12319
+// Function ID: 12320
 // Name: useConjureShareToServer
-// Dependencies: [5, 32, 19, 5102, 6932, 11019, 1072, 6933, 504, 12321, 1113, 4026, 11106, 11028, 12292, 11026, 2]
+// Dependencies: [5, 32, 19, 5102, 6932, 11019, 1072, 6933, 504, 12320, 1113, 4026, 11106, 11028, 12291, 11026, 2]
 // Exports: default
 
-// Module 12320 (useConjureShareToServer)
+// Module 12319 (useConjureShareToServer)
 import Constants from "Constants" /* 1072 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6932 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
@@ -33,7 +33,7 @@ let obj = function _waitForPublishStatus() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -215,7 +215,7 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -355,7 +355,7 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -393,7 +393,7 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
           conjureEligibleGuilds = 0;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp8) {
         if (0 === conjureEligibleGuilds) {
           c0 = 3;

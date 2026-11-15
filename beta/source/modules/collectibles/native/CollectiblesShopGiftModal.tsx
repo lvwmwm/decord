@@ -1,10 +1,10 @@
-// Module ID: 14693
-// Function ID: 14694
+// Module ID: 14694
+// Function ID: 14695
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 17, 7829, 1072, 1083, 21, 10064, 1377, 2183, 14694, 14692, 10840, 10827, 10844, 14695, 14698, 7264, 1113, 7097, 1187, 8912, 10763, 8872, 8859, 504, 9700, 7420, 7445, 2150, 7828, 10843, 2]
+// Dependencies: [19, 17, 7829, 1072, 1083, 21, 10064, 1377, 2183, 14695, 14693, 10840, 10827, 10844, 14696, 14699, 7264, 1113, 7097, 1187, 8912, 10763, 8872, 8859, 504, 9700, 7420, 7445, 2150, 7828, 10843, 2]
 // Exports: default
 
-// Module 14693 (CollectiblesShopGiftModal)
+// Module 14694 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
@@ -16,9 +16,9 @@ import Navigator2 from "Navigator" /* 7264 */;
 import BadgeId from "BadgeId" /* 8859 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8872 */;
 import NoResults from "NoResults" /* 8912 */;
-import openGiftModal from "openGiftModal" /* 14692 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14695 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14698 */;
+import openGiftModal from "openGiftModal" /* 14693 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14696 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14699 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7829 */;

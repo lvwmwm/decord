@@ -1,14 +1,14 @@
-// Module ID: 13578
-// Function ID: 13579
+// Module ID: 13577
+// Function ID: 13578
 // Name: useSafetyHubClassifications
-// Dependencies: [19, 8097, 8072, 504, 11, 8071, 8073, 13579, 2]
+// Dependencies: [19, 8097, 8072, 504, 11, 8071, 8073, 13578, 2]
 // Exports: useActiveSafetyHubClassifications, useExpiredSafetyHubClassifications, useSafetyHubAppealSignal, useSafetyHubClassification, useSafetyHubClassifications
 
-// Module 13578 (useSafetyHubClassifications)
+// Module 13577 (useSafetyHubClassifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 8072 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13579 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13578 */;
 import react from "react" /* 19 */;
 import SafetyHubStore from "SafetyHubStore" /* 8097 */;
 import size from "module_2" /* 2 */;
@@ -16,8 +16,8 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f106191 = () => classifications.getClassifications();
-const f106192 = (id, id2) => {
+const f106207 = () => classifications.getClassifications();
+const f106208 = (id, id2) => {
   const obj = SnowflakeUtilsDefault;
   const extractTimestampResult = obj.extractTimestamp(id2.id);
   const obj2 = SnowflakeUtilsDefault;
@@ -29,8 +29,8 @@ const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHub
 export function useSafetyHubClassifications() {
   const items = [SafetyHubStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f106191);
-  return stateFromStoresArray.sort(f106192);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f106207);
+  return stateFromStoresArray.sort(f106208);
 }
 export function useSafetyHubClassification(classificationId) {
   let USER;
@@ -85,8 +85,8 @@ export function useSafetyHubClassification(classificationId) {
 export function useActiveSafetyHubClassifications() {
   const items = [SafetyHubStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f106191);
-  const sorted = stateFromStoresArray.sort(f106192);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f106207);
+  const sorted = stateFromStoresArray.sort(f106208);
   let date = new Date();
   return sorted.filter((max_expiration_time) => {
     date = new Date(max_expiration_time.max_expiration_time);
@@ -97,8 +97,8 @@ export function useExpiredSafetyHubClassifications() {
   let classifications;
   let obj = get_initialized;
   const items = [SafetyHubStore];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f106191);
-  const sorted = stateFromStoresArray.sort(f106192);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f106207);
+  const sorted = stateFromStoresArray.sort(f106208);
   let date = new Date();
   return sorted.filter((max_expiration_time) => {
     date = new Date(max_expiration_time.max_expiration_time);

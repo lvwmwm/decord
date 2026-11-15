@@ -1,10 +1,10 @@
-// Module ID: 18060
-// Function ID: 18061
+// Module ID: 18061
+// Function ID: 18062
 // Name: DevSettingsActions
 // Dependencies: [5786, 572, 2]
 // Exports: clearAll, toggle
 
-// Module 18060 (DevSettingsActions)
+// Module 18061 (DevSettingsActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DevSettingsStore from "DevSettingsStore" /* 5786 */;
 import size from "module_2" /* 2 */;

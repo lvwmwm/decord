@@ -1,10 +1,10 @@
-// Module ID: 14619
-// Function ID: 14620
+// Module ID: 14620
+// Function ID: 14621
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 14593, 21, 5170, 575, 5874, 14620, 5783, 1113, 1499, 6987, 1627, 14606, 6611, 7097, 7662, 7390, 1187, 14615, 2]
+// Dependencies: [5, 32, 19, 17, 14594, 21, 5170, 575, 5874, 14621, 5783, 1113, 1499, 6987, 1627, 14607, 6611, 7097, 7662, 7390, 1187, 14616, 2]
 // Exports: default
 
-// Module 14619 (HubEmailConnectionGuildSelectSearch)
+// Module 14620 (HubEmailConnectionGuildSelectSearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -14,8 +14,8 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import Text_Text from "Text/Text" /* 5783 */;
 import FastImageDefault from "FastImage" /* 5874 */;
 import fuzzysearchDefault from "fuzzysearch" /* 6987 */;
-import HubConstants from "HubConstants" /* 14593 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14620 */;
+import HubConstants from "HubConstants" /* 14594 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14621 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -148,7 +148,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c3;
@@ -205,7 +205,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
                 c3 = 0;
                 constants(false);
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

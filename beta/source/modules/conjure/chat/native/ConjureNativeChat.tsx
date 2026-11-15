@@ -1,10 +1,10 @@
-// Module ID: 12810
-// Function ID: 12811
+// Module ID: 12809
+// Function ID: 12810
 // Name: ConjureNativeChat
-// Dependencies: [32, 19, 17, 2117, 11001, 11019, 11021, 11002, 21, 575, 671, 5170, 504, 12811, 12812, 12813, 12322, 1627, 11030, 12814, 12815, 12816, 12817, 12822, 12824, 12826, 12827, 12828, 12829, 12821, 1113, 4026, 12830, 12831, 5869, 12832, 11003, 12825, 1377, 12835, 7205, 5355, 12836, 12837, 12838, 12839, 12840, 11081, 12841, 12336, 7390, 12844, 12335, 5783, 12867, 13013, 13015, 13018, 13028, 8128, 12999, 13042, 13043, 7137, 5747, 2]
+// Dependencies: [32, 19, 17, 2117, 11001, 11019, 11021, 11002, 21, 575, 671, 5170, 504, 12810, 12811, 12812, 12321, 1627, 11030, 12813, 12814, 12815, 12816, 12821, 12823, 12825, 12826, 12827, 12828, 12820, 1113, 4026, 12829, 12830, 5869, 12831, 11003, 12824, 1377, 12834, 7205, 5355, 12835, 12836, 12837, 12838, 12839, 11081, 12840, 12335, 7390, 12843, 12334, 5783, 12866, 13012, 13014, 13017, 13027, 8128, 12998, 13041, 13042, 7137, 5747, 2]
 // Exports: default
 
-// Module 12810 (ConjureNativeChat)
+// Module 12809 (ConjureNativeChat)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -16,21 +16,21 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
 import _modDef7137 from "module_7137" /* 7137 */;
 import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7205 */;
 import conjureChatTurns from "conjureChatTurns" /* 11003 */;
-import conjurePublishCard from "conjurePublishCard" /* 12814 */;
-import conjureQueuedMessage from "conjureQueuedMessage" /* 12815 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12821 */;
-import ConjureClarification from "ConjureClarification" /* 12822 */;
-import ConjureTodoState from "ConjureTodoState" /* 12824 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12825 */;
-import ConjureSecretRequestState from "ConjureSecretRequestState" /* 12826 */;
-import conjureCardOverrides from "conjureCardOverrides" /* 12827 */;
-import conjurePendingPlan from "conjurePendingPlan" /* 12828 */;
-import ConjureChatGrouping from "ConjureChatGrouping" /* 12829 */;
-import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 12832 */;
-import conjureTranscriptScroll from "conjureTranscriptScroll" /* 12835 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12838 */;
-import ConjureRepliedMessage from "ConjureRepliedMessage" /* 12839 */;
-import ConjureMessageRowDefault from "ConjureMessageRow" /* 12867 */;
+import conjurePublishCard from "conjurePublishCard" /* 12813 */;
+import conjureQueuedMessage from "conjureQueuedMessage" /* 12814 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12820 */;
+import ConjureClarification from "ConjureClarification" /* 12821 */;
+import ConjureTodoState from "ConjureTodoState" /* 12823 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12824 */;
+import ConjureSecretRequestState from "ConjureSecretRequestState" /* 12825 */;
+import conjureCardOverrides from "conjureCardOverrides" /* 12826 */;
+import conjurePendingPlan from "conjurePendingPlan" /* 12827 */;
+import ConjureChatGrouping from "ConjureChatGrouping" /* 12828 */;
+import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 12831 */;
+import conjureTranscriptScroll from "conjureTranscriptScroll" /* 12834 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12837 */;
+import ConjureRepliedMessage from "ConjureRepliedMessage" /* 12838 */;
+import ConjureMessageRowDefault from "ConjureMessageRow" /* 12866 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
@@ -171,11 +171,11 @@ export default function ConjureNativeChat(projectId) {
   let tmp82;
   let tmp83;
   let tmp96;
-  const f104361 = () => {
+  const f104377 = () => {
     map = new Map();
     return map;
   };
-  const f104364 = () => {
+  const f104380 = () => {
     map = new Map();
     return map;
   };
@@ -262,12 +262,12 @@ export default function ConjureNativeChat(projectId) {
   items = [memo];
   const stateFromStores = obj.useStateFromStores(items, () => "active" === memo.getState(), []);
   let tmp5 = num;
-  let tmp6 = num(12811)(projectId);
-  const tmp7 = num(12812)(projectId);
-  let tmp8 = num(12813)(projectId);
-  let obj2 = projectId(12322);
+  let tmp6 = num(12810)(projectId);
+  const tmp7 = num(12811)(projectId);
+  let tmp8 = num(12812)(projectId);
+  let obj2 = projectId(12321);
   const isConjureManagedCopy = obj2.useIsConjureManagedCopy(projectId);
-  let obj3 = projectId(12813);
+  let obj3 = projectId(12812);
   const conjureRemixStartedAt = obj3.useConjureRemixStartedAt(projectId);
   const obj4 = stateFromStores1;
   const items1 = [stateFromStores, projectId];
@@ -355,12 +355,12 @@ export default function ConjureNativeChat(projectId) {
   const items24 = [projectId];
   const tmp2Result17 = tmp2(504);
   const stateFromStores10 = tmp2Result17.useStateFromStores(items23, () => ConjureChatStore.isHistoryUnavailable(projectId), items24);
-  const tmp2Result18 = tmp2(12816);
+  const tmp2Result18 = tmp2(12815);
   const chatEmptyStateResult = tmp2Result18.chatEmptyState({ historyLoaded: stateFromStores9, historyUnavailable: stateFromStores10, connState: stateFromStores8 });
-  const tmp2Result19 = tmp2(12817);
+  const tmp2Result19 = tmp2(12816);
   const conjureScopeSetupPending = tmp2Result19.useConjureScopeSetupPending(projectId);
   render_id = null;
-  const tmp2Result20 = tmp2(12817);
+  const tmp2Result20 = tmp2(12816);
   const conjureHeldPrompt = tmp2Result20.useConjureHeldPrompt(projectId);
   if (memo.length > 0) {
     let num2 = 1;
@@ -397,8 +397,8 @@ export default function ConjureNativeChat(projectId) {
     const obj = ConjureSecretRequestState;
     return obj.secretRequestStatuses(memo, stateFromStores11);
   }, items29);
-  [c15, c16] = tmp20(obj4.useState(f104361), 2);
-  tmp20(obj4.useState(f104361), 2);
+  [c15, c16] = tmp20(obj4.useState(f104377), 2);
+  tmp20(obj4.useState(f104377), 2);
   onToggleChecklist = obj4.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -412,8 +412,8 @@ export default function ConjureNativeChat(projectId) {
     const obj = conjurePendingPlan;
     return obj.planVersions(memo);
   }, items30);
-  [c19, c20] = tmp20(obj4.useState(f104364), 2);
-  tmp20(obj4.useState(f104364), 2);
+  [c19, c20] = tmp20(obj4.useState(f104380), 2);
+  tmp20(obj4.useState(f104380), 2);
   onTogglePlan = obj4.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -467,9 +467,9 @@ export default function ConjureNativeChat(projectId) {
     obj.sendConjureCardReply(projectId, implementation_prompt.implementation_prompt);
   }, items33);
   const items34 = [projectId];
-  [tmp42, tmp43] = tmp20(tmp5(12830)(projectId), 2);
+  [tmp42, tmp43] = tmp20(tmp5(12829)(projectId), 2);
   const items35 = [projectId];
-  tmp20(tmp5(12830)(projectId), 2);
+  tmp20(tmp5(12829)(projectId), 2);
   const callback1 = obj4.useCallback(() => {
     const intl = intl5.intl;
     authStore(projectId, intl.string(_modDef4026["t5CN3+"]));
@@ -484,7 +484,7 @@ export default function ConjureNativeChat(projectId) {
   const tmp20Result14 = tmp20(obj4.useState(null), 2);
   dismissedAppBuildRequestId = tmp20Result14[0];
   onDismissAppBuildRequest = tmp20Result14[1];
-  const tmp48 = tmp5(12831)(projectId);
+  const tmp48 = tmp5(12830)(projectId);
   sent = tmp48.sent;
   const request = tmp48.request;
   id = undefined;
@@ -957,12 +957,12 @@ export default function ConjureNativeChat(projectId) {
   }
   let checklistLiveResult = null == tmp103;
   if (!checklistLiveResult) {
-    const tmp2Result23 = tmp2(12824);
+    const tmp2Result23 = tmp2(12823);
     checklistLiveResult = tmp2Result23.checklistLive(tmp103);
   }
   let conjureTurnStartedAtResult;
   if (null != tmp103) {
-    const tmp2Result24 = tmp2(12837);
+    const tmp2Result24 = tmp2(12836);
     conjureTurnStartedAtResult = tmp2Result24.conjureTurnStartedAt(tmp103);
   }
   const items54 = [memo7];
@@ -1132,16 +1132,16 @@ export default function ConjureNativeChat(projectId) {
     metroImportAll(projectId);
   }, items61);
   if ("open" !== stateFromStores8) {
-    const tmp2Result25 = tmp2(12840);
+    const tmp2Result25 = tmp2(12839);
     connectionLabelResult = tmp2Result25.connectionLabel(stateFromStores8);
   }
   const obj7 = { style: tmp.container, children: null };
   const tmp2Result26 = tmp2(11081);
   const conjureControlActive = tmp2Result26.useConjureControlActive(projectId);
-  const items62 = [c15(tmp5(12841), { thinking: stateFromStores3, bleedBottom: bottom }), , ];
+  const items62 = [c15(tmp5(12840), { thinking: stateFromStores3, bleedBottom: bottom }), , ];
   const obj14 = { style: tmp.transcriptArea, onTouchEnd: callback21, onTouchCancel: callback20, children: onToggleChecklist(Provider, obj15) };
   obj15 = { value: callback19, children: items66 };
-  Provider = tmp2(12336).ConjureCardTouchContext.Provider;
+  Provider = tmp2(12335).ConjureCardTouchContext.Provider;
   if (first1) {
     const obj16 = { clearance: tmp63, children: c15(FlashList, obj17) };
     obj17 = {
@@ -1286,20 +1286,20 @@ export default function ConjureNativeChat(projectId) {
     let AUTOSCROLL_THRESHOLD;
     const obj23 = { paddingBottom: bound + tmp5(575).space.PX_8 };
     if (!tmp88) {
-      AUTOSCROLL_THRESHOLD = tmp2(12835).AUTOSCROLL_THRESHOLD;
+      AUTOSCROLL_THRESHOLD = tmp2(12834).AUTOSCROLL_THRESHOLD;
     }
     const obj25 = { projectId, messages: memo, draftHasText: tmp42, onAskForIdeas: tmp137, onShow: callback18 };
     tmp137 = undefined;
     obj24 = { startRenderingFromBottom: true, autoscrollToBottomThreshold: AUTOSCROLL_THRESHOLD };
     tmp135 = c16;
-    const tmp5Result = tmp5(12844);
+    const tmp5Result = tmp5(12843);
     if (tmp52) {
       tmp137 = callback1;
     }
     obj26 = { children: items65 };
     items65 = [c15(tmp5Result, obj25), ];
     const obj27 = { projectId };
-    items65[1] = c15(tmp2(12335).ConjureHostApprovalCards, obj27);
+    items65[1] = c15(tmp2(12334).ConjureHostApprovalCards, obj27);
     tmp126Result11 = null;
     if ("loading" !== chatEmptyStateResult) {
       let AyiQEp;
@@ -1324,13 +1324,13 @@ export default function ConjureNativeChat(projectId) {
   let tmp126Result13 = null;
   if (tmp28) {
     const obj31 = { projectId };
-    tmp126Result13 = tmp126(tmp5(13013), obj31);
+    tmp126Result13 = tmp126(tmp5(13012), obj31);
   }
   items66[1] = tmp126Result13;
   let tmp126Result14 = null;
   if (null != tmp112) {
     const obj32 = { line: tmp112, onJumpToActivity: callback17, bottom: tmp5(575).space.PX_12 + tmp63, todos: memo10, todosLive: checklistLiveResult, agents: memo11 };
-    const tmp5Result4 = tmp5(13015);
+    const tmp5Result4 = tmp5(13014);
     tmp126Result14 = tmp126(tmp5Result4, obj32);
   }
   items66[2] = tmp126Result14;
@@ -1338,7 +1338,7 @@ export default function ConjureNativeChat(projectId) {
   const obj33 = { style: tmp.bottomStack, onLayout: callback3, children: null };
   const obj34 = { projectId, thinking: stateFromStores3, turnStartedAt: conjureTurnStartedAtResult, remixStartedAt: conjureRemixStartedAt, compacting: stateFromStores4, saving: stateFromStores5, recalling: tmp143, activity: stateFromStores6, projectUsage: stateFromStores7, connLabel: connectionLabelResult, controlling: conjureControlActive, connFailed: "failed" === stateFromStores8, thinkingOpen: tmp28, onToggleThinking: callback, queuedCount: memo1.length };
   tmp143 = "loading" === chatEmptyStateResult;
-  const tmp5Result5 = tmp5(13018);
+  const tmp5Result5 = tmp5(13017);
   if (tmp143) {
     tmp143 = 0 === memo.length;
   }
@@ -1350,7 +1350,7 @@ export default function ConjureNativeChat(projectId) {
           let tmp126Result15 = null;
           const obj35 = { style: notices, children: items68 };
           if (isConjureManagedCopy) {
-            const obj36 = { style: tmp.notice, children: c15(tmp5(13028), obj37) };
+            const obj36 = { style: tmp.notice, children: c15(tmp5(13027), obj37) };
             obj37 = { projectId };
             tmp126Result15 = tmp126(tmp125, obj36);
           }
@@ -1389,14 +1389,14 @@ export default function ConjureNativeChat(projectId) {
           items68[3] = tmp126Result18;
           let tmp126Result19 = null;
           if (null != tmp48.request) {
-            const obj45 = { style: tmp.notice, children: c15(tmp5(12999), obj46, tmp48.request.id) };
+            const obj45 = { style: tmp.notice, children: c15(tmp5(12998), obj46, tmp48.request.id) };
             obj46 = { projectId, request: tmp48.request, canSend: tmp52, onDismiss: tmp48.close, onSent: callback2 };
             tmp126Result19 = tmp126(tmp125, obj45);
           }
           items68[4] = tmp126Result19;
           let tmp126Result20 = null;
           if (conjureScopeSetupPending) {
-            const obj47 = { style: tmp.notice, children: c15(tmp5(13042), obj48) };
+            const obj47 = { style: tmp.notice, children: c15(tmp5(13041), obj48) };
             obj48 = { projectId };
             tmp126Result20 = tmp126(tmp125, obj47);
           }
@@ -1404,7 +1404,7 @@ export default function ConjureNativeChat(projectId) {
           items67[1] = onToggleChecklist(stateFromStores2, obj35);
           const obj49 = { projectId, canSend: tmp52, inputLocked: conjureScopeSetupPending, aiPaused: true === blocked, managedCopy: isConjureManagedCopy, running: stateFromStores3, onSend: callback22, onInterrupt: tmp152, onDraftHasTextChange: tmp43, hidden, onSendToOtherProjects: open };
           blocked = undefined;
-          const tmp5Result6 = tmp5(13043);
+          const tmp5Result6 = tmp5(13042);
           if (tmp7 != null) {
             blocked = tmp7.blocked;
           }

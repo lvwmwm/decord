@@ -1,9 +1,9 @@
-// Module ID: 11962
-// Function ID: 11963
+// Module ID: 11961
+// Function ID: 11962
 // Name: VideoSpinnerTimer
 // Dependencies: [502, 5019, 6064, 5925, 5835, 1072, 3, 5933, 1252, 2]
 
-// Module 11962 (VideoSpinnerTimer)
+// Module 11961 (VideoSpinnerTimer)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

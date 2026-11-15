@@ -1,26 +1,26 @@
-// Module ID: 18445
-// Function ID: 18446
+// Module ID: 18446
+// Function ID: 18447
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 18446, 1072, 18435, 21, 18448, 7055, 5170, 575, 18423, 5349, 1627, 18449, 18450, 18451, 18533, 18726, 1652, 18452, 18432, 18437, 18434, 18821, 5352, 11753, 2]
+// Dependencies: [32, 19, 17, 18447, 1072, 18436, 21, 18449, 7055, 5170, 575, 18424, 5349, 1627, 18450, 18451, 18452, 18534, 18727, 1652, 18453, 18433, 18438, 18435, 18822, 5352, 11752, 2]
 
-// Module 18445 (MainChannels)
+// Module 18446 (MainChannels)
 import nativeDefault from "native" /* 575 */;
 import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5352 */;
-import StartupProfiler from "StartupProfiler" /* 11753 */;
-import useAppFrameDefault from "useAppFrame" /* 18423 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 18432 */;
-import getJankScreenName from "getJankScreenName" /* 18434 */;
-import JankScreenConstants from "JankScreenConstants" /* 18435 */;
-import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 18437 */;
-import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 18448 */;
-import messages_MessagesDefault from "messages/Messages" /* 18451 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18452 */;
-import RedesignChannelListDefault from "RedesignChannelList" /* 18533 */;
-import HomePanelContent from "HomePanelContent" /* 18726 */;
+import StartupProfiler from "StartupProfiler" /* 11752 */;
+import useAppFrameDefault from "useAppFrame" /* 18424 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 18433 */;
+import getJankScreenName from "getJankScreenName" /* 18435 */;
+import JankScreenConstants from "JankScreenConstants" /* 18436 */;
+import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 18438 */;
+import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 18449 */;
+import messages_MessagesDefault from "messages/Messages" /* 18452 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18453 */;
+import RedesignChannelListDefault from "RedesignChannelList" /* 18534 */;
+import HomePanelContent from "HomePanelContent" /* 18727 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 18446 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 18447 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5170 */;
@@ -74,9 +74,9 @@ function LeftPanelContent(panelStyles) {
     const items = [closure_0.side, isChatBesideChannelList && closure_0.sideTablet];
     return items;
   }, items2);
-  const sum = metroImportAll + tmp(18449)();
+  const sum = metroImportAll + tmp(18450)();
   let num = 0;
-  const NativeFreezeScreens = tmp4(18450).NativeFreezeScreens;
+  const NativeFreezeScreens = tmp4(18451).NativeFreezeScreens;
   if (null != first && first !== React4) {
     num = 1;
   }
@@ -141,7 +141,7 @@ function LeftPanelHomeDrawerContainer() {
   }
   items = [tmp7, ];
   const obj5 = { gesture, children: unpackModuleId(LeftPanelContent, { panelStyles }) };
-  const NonCollapsableGestureDetector = tmp(18821).NonCollapsableGestureDetector;
+  const NonCollapsableGestureDetector = tmp(18822).NonCollapsableGestureDetector;
   items[1] = unpackModuleId(NonCollapsableGestureDetector, obj5);
   return tmp6(Provider, obj2);
 }

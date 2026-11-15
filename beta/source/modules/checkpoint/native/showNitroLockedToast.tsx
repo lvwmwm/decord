@@ -1,10 +1,10 @@
-// Module ID: 13964
-// Function ID: 13965
+// Module ID: 13963
+// Function ID: 13964
 // Name: showNitroLockedToast
 // Dependencies: [6598, 5868, 2]
 // Exports: default
 
-// Module 13964 (showNitroLockedToast)
+// Module 13963 (showNitroLockedToast)
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6598 */;
 import size from "module_2" /* 2 */;
 

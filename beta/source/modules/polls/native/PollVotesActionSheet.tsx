@@ -1,10 +1,10 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12778
+// Function ID: 12779
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 5171, 6884, 5019, 6226, 1385, 21, 5170, 575, 504, 1411, 7396, 1113, 7076, 5783, 8507, 5452, 12780, 7420, 12786, 10247, 5774, 6205, 5226, 7071, 1187, 9314, 8854, 1652, 5402, 7390, 5401, 5874, 5177, 12787, 12788, 7445, 5406, 5420, 2]
+// Dependencies: [32, 5, 19, 17, 5171, 6884, 5019, 6226, 1385, 21, 5170, 575, 504, 1411, 7396, 1113, 7076, 5783, 8507, 5452, 12779, 7420, 12785, 10247, 5774, 6205, 5226, 7071, 1187, 9314, 8854, 1652, 5402, 7390, 5401, 5874, 5177, 12786, 12787, 7445, 5406, 5420, 2]
 // Exports: default
 
-// Module 12779 (PollVotesActionSheet)
+// Module 12778 (PollVotesActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
@@ -17,7 +17,7 @@ import Pressables from "Pressables" /* 7076 */;
 import EmojiDefault from "Emoji" /* 7396 */;
 import PollsUtils from "PollsUtils" /* 8507 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 12780 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 12779 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -161,7 +161,7 @@ function PollVotesHeader(message) {
           let obj = { value, done: true };
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -274,11 +274,11 @@ function PollVotesHeader(message) {
               }
               ref2.current = true;
               ref = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
           ref = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp29) {
           ref = 3;
           throw tmp29;
@@ -462,9 +462,9 @@ function NoResults() {
   const tmp5 = authStore3;
   const tmp6 = metroRequire;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(12787);
+    tmp2Result = tmp2(12786);
   } else {
-    tmp2Result = tmp2(12788);
+    tmp2Result = tmp2(12787);
   }
   items = [map1(tmp8, obj2), , ];
   const obj4 = { style: tmp.noResultsTitle, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };

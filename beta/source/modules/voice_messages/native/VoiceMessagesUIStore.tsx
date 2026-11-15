@@ -1,14 +1,14 @@
-// Module ID: 13989
-// Function ID: 13990
+// Module ID: 13988
+// Function ID: 13989
 // Name: VoiceMessagesUIStore
-// Dependencies: [13990, 560, 1652, 1259, 5793, 5794, 2]
+// Dependencies: [13989, 560, 1652, 1259, 5793, 5794, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 13989 (VoiceMessagesUIStore)
+// Module 13988 (VoiceMessagesUIStore)
 import react_native from "react-native" /* 1259 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import spring_spring from "spring/spring" /* 5793 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13990 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13989 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c3;
 let obj = module_560.create(() => {
   let items;
   let obj2;
-  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "flexDirection", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "PX_8", showVoiceMessagesTooltip: "auto", savedVoiceMessageUploadData: "80%", isVoiceMessageButtonMounted: "hidden", isUsingHoldGesture: "auto" };
+  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "flexDirection", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "PX_8", showVoiceMessagesTooltip: "SpatialAudioStore", savedVoiceMessageUploadData: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START", isVoiceMessageButtonMounted: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR", isUsingHoldGesture: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE" };
   items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = React2);
   obj2 = _mod1652;

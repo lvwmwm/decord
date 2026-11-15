@@ -1,7 +1,7 @@
 // Module ID: 14238
 // Function ID: 14239
 // Name: ChatInputNotificationNudge
-// Dependencies: [32, 19, 17, 5104, 6863, 14239, 1072, 5016, 14240, 21, 5170, 575, 1252, 11154, 5783, 7076, 14241, 1113, 14242, 7153, 504, 12711, 14250, 7674, 5003, 2]
+// Dependencies: [32, 19, 17, 5104, 6863, 14239, 1072, 5016, 14240, 21, 5170, 575, 1252, 11154, 5783, 7076, 14241, 1113, 14242, 7153, 504, 12710, 14250, 7674, 5003, 2]
 // Exports: default
 
 // Module 14238 (ChatInputNotificationNudge)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12711 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12710 */;
 import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14239 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14241 */;
 import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14242 */;

@@ -123,7 +123,7 @@ export default function useWithPostLoginRouting(arg0, handleLogin) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -162,7 +162,7 @@ export default function useWithPostLoginRouting(arg0, handleLogin) {
                 closure_0.pop();
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp16) {
             c4 = 3;

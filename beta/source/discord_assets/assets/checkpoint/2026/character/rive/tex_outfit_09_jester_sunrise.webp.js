@@ -1,8 +1,8 @@
-// Module ID: 13840
-// Function ID: 13841
+// Module ID: 13839
+// Function ID: 13840
 // Dependencies: [2]
 
-// Module 13840
+// Module 13839
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_09_jester_sunrise.webp.js");

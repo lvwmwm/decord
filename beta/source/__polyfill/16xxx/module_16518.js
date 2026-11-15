@@ -6,11 +6,4 @@
 import _mod16519 from "module_16519" /* 16519 */;
 
 
-export default (arg0) => {
-  const tmp = _mod16519(arg0);
-  let num = 0;
-  if (tmp > 0) {
-    num = min(tmp, 9007199254740991);
-  }
-  return num;
-};
+export default (arg0) => _mod16519(arg0.length);

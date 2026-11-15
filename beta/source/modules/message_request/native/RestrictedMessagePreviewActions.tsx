@@ -1,10 +1,10 @@
-// Module ID: 19391
-// Function ID: 19392
+// Module ID: 19449
+// Function ID: 19450
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 5112, 1072, 11459, 21, 5170, 575, 14437, 504, 7585, 10891, 12586, 5226, 5406, 11460, 2118, 8455, 7582, 5790, 1113, 5783, 2]
+// Dependencies: [19, 17, 5112, 1072, 11458, 21, 5170, 575, 14438, 504, 7585, 10891, 12585, 5226, 5406, 11459, 2118, 8455, 7582, 5790, 1113, 5783, 2]
 // Exports: default
 
-// Module 19391 (RestrictedMessagePreviewActions)
+// Module 19449 (RestrictedMessagePreviewActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -13,8 +13,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7585 */;
 import ReportModals from "ReportModals" /* 8455 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10891 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11459 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12586 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11458 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12585 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5112 */;
 import Constants from "Constants" /* 1072 */;
@@ -111,7 +111,7 @@ export default function RestrictedMessagePreviewActions(channel) {
   const callback4 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { userId: user.id, channelId: channel.id };
-    obj.openLazy(asyncRequire(11460, dependencyMap.paths), closure_8, obj2);
+    obj.openLazy(asyncRequire(11459, dependencyMap.paths), closure_8, obj2);
   }, items6);
   const items8 = [message, channel.id];
   const callback5 = react.useCallback(() => {
